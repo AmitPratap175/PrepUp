@@ -185,6 +185,137 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Community Initiative Section */}
+        <section className="py-20 px-4 lg:px-8 bg-gradient-to-br from-primary/5 to-accent/10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+                Our Initiative: Learn More, Earn More
+              </h2>
+              <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
+                We build a collaborative exam-preparation community where every contribution matters and everyone benefits.
+              </p>
+            </div>
+
+            {/* How it Works */}
+            <div className="grid gap-8 md:grid-cols-3 mb-16">
+              <Card className="text-center hover-elevate">
+                <CardContent className="p-8">
+                  <div className="flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary mx-auto mb-6">
+                    <span className="material-symbols-outlined text-2xl">upload</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">1. Upload Questions & Solutions</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Students upload questions or their solutions for community review. Reviewed and accepted submissions become part of the shared learning pool. Accepted contributions earn credits, stars, or other community benefits.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center hover-elevate">
+                <CardContent className="p-8">
+                  <div className="flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary mx-auto mb-6">
+                    <span className="material-symbols-outlined text-2xl">groups</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">2. Review & Improve Together</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Members can submit alternate solutions to existing problems. Accepted solutions receive recognition and rewards. Multiple solutions provide varied approaches and deepen understanding for everyone.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center hover-elevate">
+                <CardContent className="p-8">
+                  <div className="flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary mx-auto mb-6">
+                    <span className="material-symbols-outlined text-2xl">star</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">3. Star System & Benefits</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    A star/points system recognizes contributions and quality. Increased participation unlocks benefits such as access to top-rated content, peer support, and community recognition.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Star System Features */}
+            <div className="grid gap-8 lg:grid-cols-2 mb-16">
+              <Card className="hover-elevate">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-primary">military_tech</span>
+                    Levels & Badges
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Stars accumulate toward levels: Beginner → Explorer → Mentor → Master</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Badges mark achievements like Top Reviewer, Problem Creator, Community Helper</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Weekly and monthly leaderboards highlight top contributors</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover-elevate">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-primary">workspace_premium</span>
+                    Collaboration Benefits
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Access to premium-quality questions and solutions</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Entry to exclusive discussion groups</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Early access to new problem sets and content</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">Peer recognition and community upvotes</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Community Challenges */}
+            <Card className="bg-gradient-to-br from-primary/10 to-accent/20 border-primary/20 hover-elevate">
+              <CardContent className="p-8 text-center">
+                <span className="material-symbols-outlined text-4xl text-primary mb-4 block">
+                  emoji_events
+                </span>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Community Challenges & Milestones</h3>
+                <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
+                  Participate in topic-focused challenges and achieve milestones to earn rewards. From advanced study tips to curated problem sets, every contribution is recognized and celebrated in our collaborative learning environment.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    Join Community
+                  </Button>
+                  <Button variant="outline">
+                    Learn More About Stars
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Courses Section */}
         <section className="py-20 px-4 lg:px-8 bg-muted/30">
           <div className="max-w-6xl mx-auto">
