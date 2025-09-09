@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "qid": "cat-di-1",
+      "passage_text": "The following table shows the sales data of five products (A, B, C, D, E) across four quarters of a year:\n\nProduct | Q1 | Q2 | Q3 | Q4\nA       | 120| 140| 160| 180\nB       | 200| 180| 220| 240\nC       | 150| 160| 140| 170\nD       | 100| 120| 110| 130\nE       | 80 | 90 | 100| 110",
+      "question_text": "Which product showed the highest percentage increase from Q1 to Q4?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Product A",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Product B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Product D",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Product E",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Calculate percentage increase for each product: A: (180-120)/120 × 100 = 50%, B: (240-200)/200 × 100 = 20%, C: (170-150)/150 × 100 = 13.33%, D: (130-100)/100 × 100 = 30%, E: (110-80)/80 × 100 = 37.5%. Product A has the highest percentage increase at 50%.",
+      "full_markdown": "### Question\n\n**Data Table:**\nProduct | Q1 | Q2 | Q3 | Q4\nA       | 120| 140| 160| 180\nB       | 200| 180| 220| 240\nC       | 150| 160| 140| 170\nD       | 100| 120| 110| 130\nE       | 80 | 90 | 100| 110\n\n**Question:** Which product showed the highest percentage increase from Q1 to Q4?\n\n**Options:**\n- A. Product A\n- B. Product B\n- C. Product D\n- D. Product E ✅"
+    },
+    {
+      "qid": "cat-di-2",
+      "passage_text": "A company's revenue breakdown by department for 2023:\nSales: 40%\nMarketing: 25% \nR&D: 20%\nOperations: 10%\nHR: 5%\nTotal Revenue: $2,000,000",
+      "question_text": "If the Marketing department's revenue increased by 20% in 2024 while other departments remained constant, what would be the new total revenue?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2,100,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2,200,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2,150,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2,400,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Marketing revenue in 2023 = 25% of $2,000,000 = $500,000. After 20% increase = $500,000 × 1.20 = $600,000. Increase = $100,000. New total revenue = $2,000,000 + $100,000 = $2,100,000.",
+      "full_markdown": "### Question\n\n**Revenue Breakdown (2023):**\n- Sales: 40%\n- Marketing: 25%\n- R&D: 20%\n- Operations: 10%\n- HR: 5%\n- Total Revenue: $2,000,000\n\n**Question:** If the Marketing department's revenue increased by 20% in 2024 while other departments remained constant, what would be the new total revenue?\n\n**Options:**\n- A. $2,100,000 ✅\n- B. $2,200,000\n- C. $2,150,000\n- D. $2,400,000"
+    },
+    {
+      "qid": "cat-di-3",
+      "passage_text": "The following bar chart data shows smartphone sales (in thousands) for three brands across four cities:\n\nCity/Brand | Apple | Samsung | OnePlus\nMumbai     | 45    | 60      | 25\nDelhi      | 55    | 50      | 30\nBangalore  | 40    | 65      | 35\nChennai    | 35    | 55      | 20",
+      "question_text": "Which city has the highest total smartphone sales across all three brands?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Mumbai",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Delhi",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Bangalore",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Chennai",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Calculate total sales for each city: Mumbai: 45+60+25 = 130, Delhi: 55+50+30 = 135, Bangalore: 40+65+35 = 140, Chennai: 35+55+20 = 110. Bangalore has the highest total sales at 140 thousand units.",
+      "full_markdown": "### Question\n\n**Smartphone Sales Data (in thousands):**\nCity/Brand | Apple | Samsung | OnePlus\nMumbai     | 45    | 60      | 25\nDelhi      | 55    | 50      | 30\nBangalore  | 40    | 65      | 35\nChennai    | 35    | 55      | 20\n\n**Question:** Which city has the highest total smartphone sales across all three brands?\n\n**Options:**\n- A. Mumbai\n- B. Delhi\n- C. Bangalore ✅\n- D. Chennai"
+    },
+    {
+      "qid": "cat-di-4",
+      "passage_text": "Study the following pie chart data showing the distribution of a company's expenses:\nSalaries: 45%\nRent: 20%\nUtilities: 15%\nMarketing: 12%\nMiscellaneous: 8%\nTotal Expenses: $500,000",
+      "question_text": "What is the difference between the amount spent on Salaries and the combined amount spent on Rent and Utilities?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$50,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$75,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$25,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$100,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Salaries = 45% of $500,000 = $225,000. Rent + Utilities = (20% + 15%) of $500,000 = 35% of $500,000 = $175,000. Difference = $225,000 - $175,000 = $50,000.",
+      "full_markdown": "### Question\n\n**Company Expenses Distribution:**\n- Salaries: 45%\n- Rent: 20%\n- Utilities: 15%\n- Marketing: 12%\n- Miscellaneous: 8%\n- Total Expenses: $500,000\n\n**Question:** What is the difference between the amount spent on Salaries and the combined amount spent on Rent and Utilities?\n\n**Options:**\n- A. $50,000 ✅\n- B. $75,000\n- C. $25,000\n- D. $100,000"
+    },
+    {
+      "qid": "cat-di-5",
+      "passage_text": "The following line graph data shows the monthly profit (in lakhs) of a company over 6 months:\nJan: 12, Feb: 15, Mar: 18, Apr: 14, May: 20, Jun: 25",
+      "question_text": "What is the average monthly profit over the 6-month period?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "17.33 lakhs",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16.50 lakhs",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18.00 lakhs",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "17.00 lakhs",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Total profit = 12 + 15 + 18 + 14 + 20 + 25 = 104 lakhs. Average = 104 ÷ 6 = 17.33 lakhs.",
+      "full_markdown": "### Question\n\n**Monthly Profit Data (in lakhs):**\n- Jan: 12\n- Feb: 15\n- Mar: 18\n- Apr: 14\n- May: 20\n- Jun: 25\n\n**Question:** What is the average monthly profit over the 6-month period?\n\n**Options:**\n- A. 17.33 lakhs ✅\n- B. 16.50 lakhs\n- C. 18.00 lakhs\n- D. 17.00 lakhs"
+    }
+  ]
+}
