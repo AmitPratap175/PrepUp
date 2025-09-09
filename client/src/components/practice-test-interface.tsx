@@ -233,7 +233,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
             </span>
             <span className="text-sm text-muted-foreground">
-              Multiple Choice Question
+              {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
             </span>
           </div>
 
@@ -266,34 +266,50 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               </div>
 
               <div className="space-y-3">
-                {currentQuestion.options.map((option) => {
-                  const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
-                  return (
-                    <label 
-                      key={option.data_option}
-                      className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
-                        isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
-                      }`}
-                    >
-                      <input 
-                        type="radio" 
-                        name={`question-${currentQuestion.qid}`}
-                        value={option.data_option}
-                        checked={isSelected}
-                        onChange={() => handleAnswerSelect(option.data_option)}
-                        className="sr-only"
-                        data-testid={`option-${option.label.toLowerCase()}`}
-                      />
-                      <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
-                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
-                      </div>
-                      <span className="font-medium text-foreground">{option.label}.</span>
-                      <span className="text-foreground preserve-whitespace">
-                        <Latex>{option.option_text}</Latex>
-                      </span>
+                {currentQuestion.options.length > 0 ? (
+                  currentQuestion.options.map((option) => {
+                    const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
+                    return (
+                      <label 
+                        key={option.data_option}
+                        className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
+                          isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
+                        }`}
+                      >
+                        <input 
+                          type="radio" 
+                          name={`question-${currentQuestion.qid}`}
+                          value={option.data_option}
+                          checked={isSelected}
+                          onChange={() => handleAnswerSelect(option.data_option)}
+                          className="sr-only"
+                          data-testid={`option-${option.label.toLowerCase()}`}
+                        />
+                        <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
+                          <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
+                        </div>
+                        <span className="font-medium text-foreground">{option.label}.</span>
+                        <span className="text-foreground preserve-whitespace">
+                          <Latex>{option.option_text}</Latex>
+                        </span>
+                      </label>
+                    );
+                  })
+                ) : (
+                  <div>
+                    <label htmlFor="answer-input" className="block text-sm font-medium text-muted-foreground mb-2">
+                      Your Answer:
                     </label>
-                  );
-                })}
+                    <input
+                      type="text"
+                      id="answer-input"
+                      value={testState.answers[currentQuestion.qid] || ''}
+                      onChange={(e) => handleAnswerSelect(e.target.value)}
+                      className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
+                      data-testid="answer-input"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>
