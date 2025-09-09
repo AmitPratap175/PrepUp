@@ -14,13 +14,13 @@ interface QuizInterfaceProps {
 export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isAnswered, setIsAnswered] = useState(false);
+  const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [timeElapsed, setTimeElapsed] = useState(0);
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+  const isAnswered = answers[currentQuestion.qid] !== undefined;
 
   // Timer effect
   useEffect(() => {
@@ -39,20 +39,24 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
 
   const handleAnswerSelect = (answer: string) => {
     if (isAnswered) return;
-    setSelectedAnswer(answer);
-    setIsAnswered(true);
+    setAnswers(prev => ({ ...prev, [currentQuestion.qid]: answer }));
   };
 
   const handleNext = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
-      setSelectedAnswer(null);
-      setIsAnswered(false);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1);
     }
   };
 
   const getOptionClassName = (option: any) => {
-    if (!isAnswered) return 'hover:bg-accent';
+    const selectedAnswer = answers[currentQuestion.qid];
+    if (!selectedAnswer) return 'hover:bg-accent';
 
     const isCorrect = option.data_option === currentQuestion.correct_option_data;
     const isSelected = selectedAnswer === option.data_option;
@@ -111,20 +115,28 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
           <div className="lg:w-1/8 bg-muted/30 p-6 border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
             <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
-              {questions.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentQuestionIndex(index)}
-                  className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
-                    index === currentQuestionIndex
-                      ? 'bg-primary text-primary-foreground'
-                      : 'bg-card border border-border text-foreground hover:bg-accent'
-                  }`}
-                  data-testid={`question-nav-${index + 1}`}
-                >
-                  {index + 1}
-                </button>
-              ))}
+              {questions.map((question, index) => {
+                const isAnswered = answers[question.qid] !== undefined;
+                const isCorrect = isAnswered && answers[question.qid] === question.correct_option_data;
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentQuestionIndex(index)}
+                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
+                      index === currentQuestionIndex
+                        ? 'bg-primary text-primary-foreground'
+                        : isAnswered
+                        ? isCorrect
+                          ? 'bg-green-500 text-white'
+                          : 'bg-red-500 text-white'
+                        : 'bg-card border border-border text-foreground hover:bg-accent'
+                    }`}
+                    data-testid={`question-nav-${index + 1}`}
+                  >
+                    {index + 1}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}
@@ -177,7 +189,7 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
                       onClick={() => handleAnswerSelect(option.data_option)}
                     >
                       <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
-                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${selectedAnswer === option.data_option ? 'opacity-100' : 'opacity-0'}`}></div>
+                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${answers[currentQuestion.qid] === option.data_option ? 'opacity-100' : 'opacity-0'}`}></div>
                       </div>
                       <span className="font-medium text-foreground">{option.label}.</span>
                       <span className="text-foreground preserve-whitespace">
@@ -193,7 +205,7 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
                     <input
                       type="text"
                       id="answer-input"
-                      value={selectedAnswer || ''}
+                      value={answers[currentQuestion.qid] || ''}
                       onChange={(e) => handleAnswerSelect(e.target.value)}
                       className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
                       data-testid="answer-input"
@@ -213,7 +225,13 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
             </div>
           </div>
 
-          <div className="flex justify-end pt-6 border-t border-border">
+          <div className="flex justify-between pt-6 border-t border-border">
+            <Button 
+              onClick={handlePrevious}
+              disabled={currentQuestionIndex === 0}
+            >
+              Previous Question
+            </Button>
             <Button 
               onClick={handleNext}
               disabled={currentQuestionIndex === questions.length - 1}
