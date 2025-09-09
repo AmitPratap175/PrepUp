@@ -180,9 +180,9 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
       <div className="flex flex-1 overflow-hidden">
         {/* Question Navigation (Scrollable) */}
         {isPaletteVisible && (
-          <div className="lg:w-1/4 bg-muted/30 p-6 border-r border-border overflow-y-auto">
+          <div className="lg:w-1/8 bg-muted/30 p-6 border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 lg:grid-cols-6 gap-2 mb-6">
+            <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
               {questions.map((_, index) => {
                 const status = getQuestionStatus(index);
                 return (
