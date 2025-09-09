@@ -15,12 +15,12 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
+  const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
-  const isAnswered = answers[currentQuestion.qid] !== undefined;
 
   // Timer effect
   useEffect(() => {
@@ -38,8 +38,15 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
   };
 
   const handleAnswerSelect = (answer: string) => {
-    if (isAnswered) return;
+    if (submittedAnswers.has(currentQuestion.qid)) return;
     setAnswers(prev => ({ ...prev, [currentQuestion.qid]: answer }));
+    if (currentQuestion.options.length > 0) {
+      setSubmittedAnswers(prev => new Set(prev).add(currentQuestion.qid));
+    }
+  };
+
+  const handleSubmitTextAnswer = () => {
+    setSubmittedAnswers(prev => new Set(prev).add(currentQuestion.qid));
   };
 
   const handleNext = () => {
@@ -55,15 +62,23 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
   };
 
   const getOptionClassName = (option: any) => {
-    const selectedAnswer = answers[currentQuestion.qid];
-    if (!selectedAnswer) return 'hover:bg-accent';
+    if (!submittedAnswers.has(currentQuestion.qid)) return 'hover:bg-accent';
 
-    const isCorrect = option.data_option === currentQuestion.correct_option_data;
-    const isSelected = selectedAnswer === option.data_option;
+    const isCorrect = option.is_correct;
+    const isSelected = answers[currentQuestion.qid] === option.data_option;
 
     if (isCorrect) return 'bg-green-200 border-green-500';
     if (isSelected && !isCorrect) return 'bg-red-200 border-red-500';
     return 'hover:bg-accent';
+  };
+
+  const getTextInputClassName = () => {
+    if (!submittedAnswers.has(currentQuestion.qid)) return 'bg-input';
+
+    const userAnswer = answers[currentQuestion.qid];
+    const correctAnswer = currentQuestion.correct_option_data || currentQuestion.solution_text;
+
+    return userAnswer === correctAnswer ? 'bg-green-200 border-green-500' : 'bg-red-200 border-red-500';
   };
 
   return (
@@ -117,7 +132,8 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
             <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
               {questions.map((question, index) => {
                 const isAnswered = answers[question.qid] !== undefined;
-                const isCorrect = isAnswered && answers[question.qid] === question.correct_option_data;
+                const correctOption = question.options.find(opt => opt.is_correct);
+                const isCorrect = isAnswered && correctOption && answers[question.qid] === correctOption.data_option;
                 return (
                   <button
                     key={index}
@@ -198,27 +214,34 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
                     </label>
                   ))
                 ) : (
-                  <div>
-                    <label htmlFor="answer-input" className="block text-sm font-medium text-muted-foreground mb-2">
-                      Your Answer:
-                    </label>
+                  <div className="flex items-center gap-2">
                     <input
                       type="text"
                       id="answer-input"
                       value={answers[currentQuestion.qid] || ''}
                       onChange={(e) => handleAnswerSelect(e.target.value)}
-                      className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
+                      className={`block w-full p-2 border border-border rounded-lg text-foreground ${getTextInputClassName()}`}
                       data-testid="answer-input"
-                      disabled={isAnswered}
+                      disabled={submittedAnswers.has(currentQuestion.qid)}
                     />
+                    <Button 
+                      onClick={handleSubmitTextAnswer}
+                      disabled={submittedAnswers.has(currentQuestion.qid)}
+                    >
+                      Submit
+                    </Button>
                   </div>
                 )}
               </div>
-              {isAnswered && (
+              {submittedAnswers.has(currentQuestion.qid) && (
                 <div className="mt-4 p-4 rounded-lg bg-muted/50">
                   <h4 className="font-semibold text-foreground mb-2">Solution</h4>
                   <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
-                    <Latex>{currentQuestion.solution_text || "No solution provided."}</Latex>
+                    <Latex>
+                      {currentQuestion.options.length === 0
+                        ? currentQuestion.correct_option_data || currentQuestion.solution_text || "No solution provided."
+                        : currentQuestion.solution_text || "No solution provided."}
+                    </Latex>
                   </div>
                 </div>
               )}
