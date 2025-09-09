@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
-import { AppHeader } from "@/components/app-header";
 
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
@@ -136,7 +135,6 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
 
   return (
     <div className="flex flex-col h-screen bg-background">
-      <AppHeader />
       {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-6 border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
