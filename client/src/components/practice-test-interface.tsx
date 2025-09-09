@@ -50,7 +50,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   };
 
   const getQuestionStatus = (questionIndex: number): QuestionStatus => {
-    const questionId = questions[questionIndex].id;
+    const questionId = questions[questionIndex].qid;
     return {
       answered: testState.answers[questionId] !== undefined,
       visited: questionIndex <= testState.currentQuestionIndex,
@@ -64,7 +64,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
       ...prev,
       answers: {
         ...prev.answers,
-        [currentQuestion.id]: answer,
+        [currentQuestion.qid]: answer,
       },
     }));
   };
@@ -72,10 +72,10 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   const handleMarkForReview = () => {
     setTestState(prev => {
       const newMarked = new Set(prev.markedForReview);
-      if (newMarked.has(currentQuestion.id)) {
-        newMarked.delete(currentQuestion.id);
+      if (newMarked.has(currentQuestion.qid)) {
+        newMarked.delete(currentQuestion.qid);
       } else {
-        newMarked.add(currentQuestion.id);
+        newMarked.add(currentQuestion.qid);
       }
       return { ...prev, markedForReview: newMarked };
     });
@@ -84,7 +84,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   const handleClearResponse = () => {
     setTestState(prev => {
       const newAnswers = { ...prev.answers };
-      delete newAnswers[currentQuestion.id];
+      delete newAnswers[currentQuestion.qid];
       return { ...prev, answers: newAnswers };
     });
   };
@@ -109,10 +109,10 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
 
   const handleSubmit = () => {
     const userAnswers: UserAnswer[] = questions.map(question => ({
-      questionId: question.id,
-      selectedAnswer: (testState.answers[question.id] as 'a' | 'b' | 'c' | 'd') || null,
+      questionId: question.qid,
+      selectedAnswer: testState.answers[question.qid] || null,
       timeSpent: 0, // This would need to be tracked per question in a real implementation
-      isMarkedForReview: testState.markedForReview.has(question.id),
+      isMarkedForReview: testState.markedForReview.has(question.qid),
     }));
 
     const totalTimeSpent = test.duration * 60 - testState.timeRemaining;
@@ -218,41 +218,47 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
                 Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
               </span>
               <span className="text-sm text-muted-foreground">
-                Marks: +{currentQuestion.marks}, -{currentQuestion.negativeMarks}
+                Multiple Choice Question
               </span>
             </div>
             
             <div className="prose max-w-none mb-6">
+              {currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually" && (
+                <div className="bg-muted/50 p-4 rounded-lg mb-4">
+                  <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
+                  <p className="text-foreground leading-relaxed">{currentQuestion.passage_text}</p>
+                </div>
+              )}
               <p className="text-foreground leading-relaxed mb-4" data-testid="question-text">
-                {currentQuestion.text}
+                {currentQuestion.question_text}
               </p>
             </div>
 
             {/* Answer Options */}
             <div className="space-y-3">
-              {Object.entries(currentQuestion.options).map(([optionKey, optionText]) => {
-                const isSelected = testState.answers[currentQuestion.id] === optionKey;
+              {currentQuestion.options.map((option) => {
+                const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
                 return (
                   <label 
-                    key={optionKey}
+                    key={option.data_option}
                     className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
                       isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
                     }`}
                   >
                     <input 
                       type="radio" 
-                      name={`question-${currentQuestion.id}`}
-                      value={optionKey}
+                      name={`question-${currentQuestion.qid}`}
+                      value={option.data_option}
                       checked={isSelected}
-                      onChange={() => handleAnswerSelect(optionKey)}
+                      onChange={() => handleAnswerSelect(option.data_option)}
                       className="sr-only"
-                      data-testid={`option-${optionKey}`}
+                      data-testid={`option-${option.label.toLowerCase()}`}
                     />
                     <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
                       <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
                     </div>
-                    <span className="font-medium text-foreground">{optionKey.toUpperCase()}.</span>
-                    <span className="text-foreground">{optionText}</span>
+                    <span className="font-medium text-foreground">{option.label}.</span>
+                    <span className="text-foreground">{option.option_text}</span>
                   </label>
                 );
               })}
@@ -265,7 +271,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               <Button 
                 variant="outline" 
                 onClick={handleClearResponse}
-                disabled={!testState.answers[currentQuestion.id]}
+                disabled={!testState.answers[currentQuestion.qid]}
                 data-testid="button-clear-response"
               >
                 Clear Response
@@ -273,10 +279,10 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               <Button 
                 variant="outline" 
                 onClick={handleMarkForReview}
-                className={testState.markedForReview.has(currentQuestion.id) ? 'bg-orange-100 border-orange-300' : ''}
+                className={testState.markedForReview.has(currentQuestion.qid) ? 'bg-orange-100 border-orange-300' : ''}
                 data-testid="button-mark-review"
               >
-                {testState.markedForReview.has(currentQuestion.id) ? 'Unmark' : 'Mark for Review'}
+                {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
               </Button>
             </div>
             <div className="space-x-3">
