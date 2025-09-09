@@ -31,3 +31,17 @@ export const signup = async (name, email, password, exam_type) => {
 
   return response.json();
 };
+
+export const getUser = async (token) => {
+  const response = await fetch(`${API_URL}/user/`, {
+    headers: {
+      Authorization: `Token ${token}`,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch user");
+  }
+
+  return response.json();
+};

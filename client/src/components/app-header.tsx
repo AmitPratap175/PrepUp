@@ -37,9 +37,14 @@ const navigation = [
 ];
 
 export function AppHeader() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isAuthenticated, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    setLocation("/");
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
@@ -100,7 +105,7 @@ export function AppHeader() {
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
                 <Link href="/dashboard">Dashboard</Link>
               </Button>
-              <Button onClick={logout} className="hidden sm:flex" size="sm">
+              <Button onClick={handleLogout} className="hidden sm:flex" size="sm">
                 Logout
               </Button>
             </>

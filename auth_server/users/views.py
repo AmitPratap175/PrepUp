@@ -3,6 +3,7 @@ from rest_framework import generics, status
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
 from .serializers import UserSerializer
 
 User = get_user_model()
@@ -56,3 +57,15 @@ class LogoutView(APIView):
                 {'error': 'You are not logged in.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+class UserDetailsView(APIView):
+    """
+    API view for getting user details.
+
+    This view returns the details of the authenticated user.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        serializer = UserSerializer(request.user)
+        return Response(serializer.data)

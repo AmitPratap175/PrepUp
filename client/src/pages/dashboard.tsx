@@ -6,26 +6,36 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import type { User, Course, TestSession, UserProgress } from "@shared/schema";
+import type { Course, TestSession, UserProgress } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
+
+async function fetchDashboardData(url: string) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}`);
+  }
+  return response.json();
+}
 
 export default function Dashboard() {
-  // In a real app, we'd get the user ID from authentication context
-  const mockUserId = "user-123";
-
-  const { data: user } = useQuery<User>({
-    queryKey: ["/api/users", mockUserId],
-  });
+  const { user } = useAuth();
 
   const { data: courses } = useQuery<Course[]>({
-    queryKey: ["/api/courses"],
+    queryKey: ["/api/courses", { examType: user?.exam_type }],
+    queryFn: () => fetchDashboardData(`/api/courses?examType=${user?.exam_type}`),
+    enabled: !!user,
   });
 
   const { data: testSessions } = useQuery<TestSession[]>({
-    queryKey: ["/api/users", mockUserId, "test-sessions"],
+    queryKey: ["/api/users", user?.id, "test-sessions"],
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions`),
+    enabled: !!user,
   });
 
   const { data: userProgress } = useQuery<UserProgress[]>({
-    queryKey: ["/api/users", mockUserId, "progress"],
+    queryKey: ["/api/users", user?.id, "progress"],
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
+    enabled: !!user,
   });
 
   // Calculate stats
@@ -34,48 +44,6 @@ export default function Dashboard() {
   const averageScore = completedTests > 0 
     ? Math.round((testSessions?.filter(s => s.isCompleted && s.score).reduce((sum, s) => sum + (s.score || 0), 0) || 0) / completedTests)
     : 0;
-
-  // Mock data for demonstration (this would come from the backend in a real app)
-  const mockUserData = {
-    name: "Priya",
-    lastLogin: "Today, 2:30 PM",
-    currentStreak: 15,
-    totalScore: 1250,
-  };
-
-  const mockProgressData = [
-    {
-      courseName: "CAT Preparation",
-      progress: 68,
-      nextLesson: "Verbal Ability - Reading Comprehension"
-    },
-    {
-      courseName: "GATE Electronics", 
-      progress: 34,
-      nextLesson: "Digital Circuits - Sequential Logic"
-    }
-  ];
-
-  const mockRecentTests = [
-    {
-      name: "CAT Mock Test #15",
-      subject: "Quantitative Aptitude",
-      score: 85,
-      maxScore: 100
-    },
-    {
-      name: "GATE Mock Test #8",
-      subject: "Digital Electronics", 
-      score: 78,
-      maxScore: 100
-    }
-  ];
-
-  const mockSchedule = [
-    { subject: "Math Practice", time: "10:00 AM" },
-    { subject: "English Grammar", time: "2:00 PM" },
-    { subject: "Mock Test", time: "4:00 PM" }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -99,22 +67,22 @@ export default function Dashboard() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div>
                   <h2 className="text-2xl font-bold text-foreground" data-testid="welcome-message">
-                    Welcome back, {user?.name || mockUserData.name}!
+                    Welcome back, {user?.name}!
                   </h2>
                   <p className="text-muted-foreground" data-testid="last-login">
-                    Last login: {mockUserData.lastLogin}
+                    Let's get started!
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-foreground" data-testid="current-streak">
-                      {user?.currentStreak || mockUserData.currentStreak}
+                      {user?.currentStreak || 0}
                     </div>
                     <div className="text-xs text-muted-foreground">Day Streak</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary" data-testid="total-score">
-                      {user?.totalScore || mockUserData.totalScore}
+                      {user?.totalScore || 0}
                     </div>
                     <div className="text-xs text-muted-foreground">Total Points</div>
                   </div>
@@ -131,16 +99,16 @@ export default function Dashboard() {
                   
                   {/* Course Progress */}
                   <div className="space-y-4 mb-6">
-                    {mockProgressData.map((course, index) => (
+                    {userProgress?.map((progress, index) => (
                       <Card key={index} className="bg-muted/30">
                         <CardContent className="p-4">
                           <div className="flex items-center justify-between mb-2">
-                            <span className="font-medium text-foreground">{course.courseName}</span>
-                            <span className="text-sm text-muted-foreground">{course.progress}% Complete</span>
+                            <span className="font-medium text-foreground">{courses?.find(c => c.id === progress.courseId)?.title}</span>
+                            <span className="text-sm text-muted-foreground">{progress.progress}% Complete</span>
                           </div>
-                          <Progress value={course.progress} className="mb-2" data-testid={`progress-${index}`} />
+                          <Progress value={progress.progress} className="mb-2" data-testid={`progress-${index}`} />
                           <div className="text-xs text-muted-foreground">
-                            Next: {course.nextLesson}
+                            Next: {progress.nextLesson}
                           </div>
                         </CardContent>
                       </Card>
@@ -154,11 +122,11 @@ export default function Dashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-3">
-                        {mockRecentTests.map((test, index) => (
+                        {testSessions?.slice(0, 3).map((test, index) => (
                           <div key={index} className="flex items-center justify-between">
                             <div>
                               <div className="font-medium text-foreground text-sm" data-testid={`test-name-${index}`}>
-                                {test.name}
+                                {test.testId}
                               </div>
                               <div className="text-xs text-muted-foreground">{test.subject}</div>
                             </div>
@@ -253,14 +221,7 @@ export default function Dashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-2 text-sm">
-                        {mockSchedule.map((item, index) => (
-                          <div key={index} className="flex items-center justify-between" data-testid={`schedule-item-${index}`}>
-                            <span className="text-foreground">{item.subject}</span>
-                            <Badge variant="outline" className="text-primary border-primary">
-                              {item.time}
-                            </Badge>
-                          </div>
-                        ))}
+                        {/* This would come from a calendar or schedule API */}
                       </div>
                     </CardContent>
                   </Card>

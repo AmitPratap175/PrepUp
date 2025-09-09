@@ -1,7 +1,16 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { getUser } from '@/lib/auth';
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  exam_type: string;
+}
 
 interface AuthContextType {
   isAuthenticated: boolean;
+  user: User | null;
   login: (token: string) => void;
   logout: () => void;
 }
@@ -22,26 +31,37 @@ interface AuthProviderProps {
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      setIsAuthenticated(true);
+      getUser(token)
+        .then((data) => {
+          setUser(data);
+          setIsAuthenticated(true);
+        })
+        .catch(() => {
+          localStorage.removeItem('token');
+        });
     }
   }, []);
 
-  const login = (token: string) => {
+  const login = async (token: string) => {
     localStorage.setItem('token', token);
+    const data = await getUser(token);
+    setUser(data);
     setIsAuthenticated(true);
   };
 
   const logout = () => {
     localStorage.removeItem('token');
     setIsAuthenticated(false);
+    setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
