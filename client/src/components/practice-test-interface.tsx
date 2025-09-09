@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
+import { PanelLeftClose, PanelRightClose } from "lucide-react";
 
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
@@ -12,6 +13,7 @@ interface PracticeTestInterfaceProps {
 }
 
 export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceProps) {
+  const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
@@ -140,6 +142,15 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
             <p className="text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
           <div className="flex items-center gap-6">
+            <Button 
+              variant="outline" 
+              size="sm"
+              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
+              className="hidden lg:flex"
+            >
+              {isPaletteVisible ? <PanelLeftClose className="h-4 w-4 mr-2" /> : <PanelRightClose className="h-4 w-4 mr-2" />}
+              {isPaletteVisible ? "Hide Palette" : "Show Palette"}
+            </Button>
             <div className="text-center">
               <div className="text-lg font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
@@ -164,55 +175,57 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 min-h-[500px]">
+      <div className={`grid ${isPaletteVisible ? 'lg:grid-cols-4' : 'lg:grid-cols-1'} min-h-[500px]`}>
         {/* Question Navigation */}
-        <div className="lg:col-span-1 bg-muted/30 p-6 border-r border-border">
-          <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-          <div className="grid grid-cols-5 lg:grid-cols-6 gap-2 mb-6">
-            {questions.map((_, index) => {
-              const status = getQuestionStatus(index);
-              return (
-                <button
-                  key={index}
-                  onClick={() => navigateToQuestion(index)}
-                  className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
-                    status.isCurrent
-                      ? 'bg-primary text-primary-foreground'
-                      : status.answered
-                      ? 'bg-secondary text-secondary-foreground'
-                      : status.markedForReview
-                      ? 'bg-orange-500 text-white'
-                      : 'bg-card border border-border text-foreground hover:bg-accent'
-                  }`}
-                  data-testid={`question-nav-${index + 1}`}
-                >
-                  {index + 1}
-                </button>
-              );
-            })}
+        {isPaletteVisible && (
+          <div className="lg:col-span-1 bg-muted/30 p-6 border-r border-border">
+            <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
+            <div className="grid grid-cols-5 lg:grid-cols-6 gap-2 mb-6">
+              {questions.map((_, index) => {
+                const status = getQuestionStatus(index);
+                return (
+                  <button
+                    key={index}
+                    onClick={() => navigateToQuestion(index)}
+                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
+                      status.isCurrent
+                        ? 'bg-primary text-primary-foreground'
+                        : status.answered
+                        ? 'bg-secondary text-secondary-foreground'
+                        : status.markedForReview
+                        ? 'bg-orange-500 text-white'
+                        : 'bg-card border border-border text-foreground hover:bg-accent'
+                    }`}
+                    data-testid={`question-nav-${index + 1}`}
+                  >
+                    {index + 1}
+                  </button>
+                );
+              })}
+            </div>
+            <div className="space-y-2 text-xs">
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-primary rounded"></div>
+                <span>Current</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-secondary rounded"></div>
+                <span>Answered</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-orange-500 rounded"></div>
+                <span>Marked for Review</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-card border border-border rounded"></div>
+                <span>Not Visited</span>
+              </div>
+            </div>
           </div>
-          <div className="space-y-2 text-xs">
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-primary rounded"></div>
-              <span>Current</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-secondary rounded"></div>
-              <span>Answered</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-orange-500 rounded"></div>
-              <span>Marked for Review</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-card border border-border rounded"></div>
-              <span>Not Visited</span>
-            </div>
-          </div>
-        </div>
+        )}
 
         {/* Question Content */}
-        <div className="lg:col-span-3 p-8">
+        <div className={`${isPaletteVisible ? 'lg:col-span-3' : 'lg:col-span-4'} p-8`}>
           <div className="mb-6">
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
