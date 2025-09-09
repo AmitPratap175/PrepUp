@@ -133,8 +133,8 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   }
 
   return (
-    <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden">
-      {/* Test Header */}
+    <div className="flex flex-col h-screen bg-card border border-border rounded-2xl shadow-xl overflow-hidden">
+      {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-6 border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div>
@@ -175,10 +175,11 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
         </div>
       </div>
 
-      <div className={`grid ${isPaletteVisible ? 'lg:grid-cols-4' : 'lg:grid-cols-1'} min-h-[500px]`}>
-        {/* Question Navigation */}
+      {/* Main Content */}
+      <div className="flex flex-1 overflow-hidden">
+        {/* Question Navigation (Scrollable) */}
         {isPaletteVisible && (
-          <div className="lg:col-span-1 bg-muted/30 p-6 border-r border-border">
+          <div className="lg:w-1/4 bg-muted/30 p-6 border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
             <div className="grid grid-cols-5 lg:grid-cols-6 gap-2 mb-6">
               {questions.map((_, index) => {
@@ -224,8 +225,8 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
           </div>
         )}
 
-        {/* Question Content */}
-        <div className={`${isPaletteVisible ? 'lg:col-span-3' : 'lg:col-span-4'} p-8`}>
+        {/* Question Content (Scrollable) */}
+        <div className="flex-1 p-8 overflow-y-auto">
           <div className="mb-6">
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
