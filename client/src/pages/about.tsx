@@ -150,7 +150,7 @@ export default function About() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary flex-shrink-0">
-                    <span className="material-symbols-outlined">innovation</span>
+                    <span className="material-symbols-outlined">emoji_people</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Innovation</h4>
