@@ -22,7 +22,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
     isCompleted: false,
   });
 
-  const questions = test.questions as Question[];
+  const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[testState.currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
@@ -238,18 +238,27 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
           </div>
 
           <div className="flex-1 flex overflow-hidden">
-            {hasPassage && (
+            {(hasPassage || currentQuestion.image_url) && (
               <div className="w-[65%] pr-4 overflow-y-auto">
                 <div className="bg-muted/50 p-4 rounded-lg h-full">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
-                  <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
-                    <Latex>{currentQuestion.passage_text}</Latex>
-                  </div>
+                  {hasPassage && (
+                    <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
+                      <Latex>{currentQuestion.passage_text}</Latex>
+                    </div>
+                  )}
+                  {currentQuestion.image_url && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {currentQuestion.image_url.split(',').map((url, i) => (
+                        <img key={i} src={url.trim()} alt={`Passage image ${i + 1}`} className="max-w-full h-auto rounded-lg" />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             )}
 
-            <div className={`${hasPassage ? 'w-[35%] pl-4' : 'w-full'} overflow-y-auto`}>
+            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-[35%] pl-4' : 'w-full'} overflow-y-auto`}>
               <div className="prose max-w-none mb-6">
                 <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
                   <Latex>{currentQuestion.question_text}</Latex>
