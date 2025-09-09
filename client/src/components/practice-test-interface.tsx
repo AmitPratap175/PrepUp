@@ -239,7 +239,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
 
           <div className="flex-1 flex overflow-hidden">
             {hasPassage && (
-              <div className="w-1/2 pr-4 overflow-y-auto">
+              <div className="w-[65%] pr-4 overflow-y-auto">
                 <div className="bg-muted/50 p-4 rounded-lg h-full">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
                   <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
@@ -249,7 +249,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               </div>
             )}
 
-            <div className={`${hasPassage ? 'w-1/2 pl-4' : 'w-full'} overflow-y-auto`}>
+            <div className={`${hasPassage ? 'w-[35%] pl-4' : 'w-full'} overflow-y-auto`}>
               <div className="prose max-w-none mb-6">
                 <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
                   <Latex>{currentQuestion.question_text}</Latex>
