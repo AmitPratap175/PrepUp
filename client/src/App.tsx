@@ -18,6 +18,9 @@ import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
 import Cookies from "@/pages/cookies";
 import Refund from "@/pages/refund";
+import LoginPage from "@/pages/login";
+import SignupPage from "@/pages/signup";
+import { AuthProvider } from "@/contexts/auth-context";
 
 function Router() {
   return (
@@ -36,6 +39,8 @@ function Router() {
       <Route path="/terms" component={Terms} />
       <Route path="/cookies" component={Cookies} />
       <Route path="/refund" component={Refund} />
+      <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component={SignupPage} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -45,8 +50,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Router />
+        <AuthProvider>
+          <Toaster />
+          <Router />
+        </AuthProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );

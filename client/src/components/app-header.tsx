@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useAuth } from "@/contexts/auth-context";
 
 const navigation = [
   { title: "Home", href: "/" },
@@ -38,6 +39,7 @@ const navigation = [
 export function AppHeader() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isAuthenticated, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
@@ -93,21 +95,25 @@ export function AppHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button 
-            variant="secondary" 
-            className="hidden sm:flex" 
-            size="sm"
-            data-testid="button-login"
-          >
-            Login
-          </Button>
-          <Button 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground" 
-            size="sm"
-            data-testid="button-get-started"
-          >
-            Get Started
-          </Button>
+          {isAuthenticated ? (
+            <>
+              <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
+                <Link href="/dashboard">Dashboard</Link>
+              </Button>
+              <Button onClick={logout} className="hidden sm:flex" size="sm">
+                Logout
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
+                <Link href="/login" data-testid="button-login">Login</Link>
+              </Button>
+              <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground" size="sm">
+                <Link href="/signup" data-testid="button-get-started">Sign Up</Link>
+              </Button>
+            </>
+          )}
           
           {/* Mobile menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

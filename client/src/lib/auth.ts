@@ -1,0 +1,33 @@
+const API_URL = "http://localhost:8000/api/auth";
+
+export const login = async (email, password) => {
+  const response = await fetch(`${API_URL}/login/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, password }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Login failed");
+  }
+
+  return response.json();
+};
+
+export const signup = async (name, email, password, exam_type) => {
+  const response = await fetch(`${API_URL}/signup/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, email, password, exam_type }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Signup failed");
+  }
+
+  return response.json();
+};
