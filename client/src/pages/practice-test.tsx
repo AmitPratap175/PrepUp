@@ -110,15 +110,10 @@ export default function PracticeTestPage() {
   // If test is started and we have a current test, show the test interface
   if (testStarted && currentTest) {
     return (
-      <div className="min-h-screen bg-background">
-        <AppHeader />
-        <main className="container mx-auto px-4 py-8">
-          <PracticeTestInterface 
-            test={currentTest} 
-            onSubmit={handleSubmitTest}
-          />
-        </main>
-      </div>
+      <PracticeTestInterface 
+        test={currentTest} 
+        onSubmit={handleSubmitTest}
+      />
     );
   }
 
