@@ -14,6 +14,8 @@ import {
   type Question
 } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { readFileSync } from "fs";
+import { join } from "path";
 
 export interface IStorage {
   // User methods
@@ -71,6 +73,18 @@ export class MemStorage implements IStorage {
     this.userProgress = new Map();
     
     this.seedData();
+  }
+
+  private loadQuestionsFromFile(filePath: string): Question[] {
+    try {
+      const fullPath = join(process.cwd(), filePath);
+      const fileContent = readFileSync(fullPath, 'utf-8');
+      const data = JSON.parse(fileContent);
+      return data.questions;
+    } catch (error) {
+      console.warn(`Failed to load questions from ${filePath}:`, error);
+      return [];
+    }
   }
 
   private seedData() {
@@ -154,48 +168,68 @@ export class MemStorage implements IStorage {
       this.studyMaterials.set(material.id, material);
     });
 
-    // Seed practice test
-    const sampleQuestions: Question[] = [
+    // Seed practice tests from JSON files
+    const practiceTestsData = [
       {
-        id: "q1",
-        text: "If the ratio of the areas of two circles is 4:9, what is the ratio of their circumferences?",
-        options: {
-          a: "2:3",
-          b: "4:9", 
-          c: "1:2",
-          d: "16:81"
-        },
-        correctAnswer: "a",
-        marks: 3,
-        negativeMarks: 1,
-        explanation: "If areas are in ratio 4:9, then radii are in ratio 2:3. Since circumference = 2πr, the ratio of circumferences is also 2:3."
+        title: "CAT Quantitative Aptitude Test",
+        examType: "cat",
+        subject: "Quantitative Aptitude",
+        duration: 90,
+        filePath: "data/cat/quantitative-aptitude.json"
       },
       {
-        id: "q2",
-        text: "What is the square root of 144?",
-        options: {
-          a: "11",
-          b: "12",
-          c: "13", 
-          d: "14"
-        },
-        correctAnswer: "b",
-        marks: 3,
-        negativeMarks: 1
+        title: "CAT Verbal Ability Test",
+        examType: "cat", 
+        subject: "Verbal Ability",
+        duration: 60,
+        filePath: "data/cat/verbal-ability.json"
+      },
+      {
+        title: "CAT Data Interpretation Test",
+        examType: "cat",
+        subject: "Data Interpretation",
+        duration: 60,
+        filePath: "data/cat/data-interpretation.json"
+      },
+      {
+        title: "GATE Mathematics Test",
+        examType: "gate",
+        subject: "Mathematics",
+        duration: 90,
+        filePath: "data/gate/mathematics.json"
+      },
+      {
+        title: "GATE General Aptitude Test",
+        examType: "gate",
+        subject: "General Aptitude", 
+        duration: 60,
+        filePath: "data/gate/general-aptitude.json"
+      },
+      {
+        title: "GATE Computer Science Test",
+        examType: "gate",
+        subject: "Computer Science",
+        duration: 120,
+        filePath: "data/gate/computer-science.json"
       }
     ];
 
-    const practiceTest: PracticeTest = {
-      id: randomUUID(),
-      title: "CAT Mock Test - 2024",
-      examType: "cat",
-      subject: "Quantitative Aptitude",
-      duration: 180, // 3 hours in minutes
-      totalQuestions: 30,
-      questions: sampleQuestions
-    };
-
-    this.practiceTests.set(practiceTest.id, practiceTest);
+    practiceTestsData.forEach(testData => {
+      const questions = this.loadQuestionsFromFile(testData.filePath);
+      if (questions.length > 0) {
+        const practiceTest: PracticeTest = {
+          id: randomUUID(),
+          title: testData.title,
+          examType: testData.examType,
+          subject: testData.subject,
+          duration: testData.duration,
+          totalQuestions: questions.length,
+          questions: questions
+        };
+        
+        this.practiceTests.set(practiceTest.id, practiceTest);
+      }
+    });
   }
 
   // User methods

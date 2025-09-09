@@ -132,26 +132,29 @@ export type InsertTestSession = z.infer<typeof insertTestSessionSchema>;
 export type UserProgress = typeof userProgress.$inferSelect;
 export type InsertUserProgress = z.infer<typeof insertUserProgressSchema>;
 
-// Question interface
+// Question option interface
+export interface QuestionOption {
+  data_option: string;
+  label: string;
+  option_text: string;
+  is_correct: boolean;
+}
+
+// Question interface matching JSON format
 export interface Question {
-  id: string;
-  text: string;
-  options: {
-    a: string;
-    b: string;
-    c: string;
-    d: string;
-  };
-  correctAnswer: 'a' | 'b' | 'c' | 'd';
-  marks: number;
-  negativeMarks: number;
-  explanation?: string;
+  qid: string;
+  passage_text: string;
+  question_text: string;
+  options: QuestionOption[];
+  correct_option_data: string;
+  solution_text: string | null;
+  full_markdown: string;
 }
 
 // User answer interface
 export interface UserAnswer {
-  questionId: string;
-  selectedAnswer: 'a' | 'b' | 'c' | 'd' | null;
+  questionId: string; // maps to Question.qid
+  selectedAnswer: string | null; // maps to QuestionOption.data_option
   timeSpent: number; // in seconds
   isMarkedForReview: boolean;
 }
