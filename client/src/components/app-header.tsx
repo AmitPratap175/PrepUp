@@ -17,6 +17,7 @@ const navigation = [
     items: [
       { title: "CAT Courses", href: "/courses?exam=cat" },
       { title: "Practice Tests", href: "/practice-test?exam=cat" },
+      { title: "Quizzes", href: "/quiz?exam=cat" },
       { title: "Study Materials", href: "/study-materials?exam=cat" },
     ]
   },
@@ -26,6 +27,7 @@ const navigation = [
     items: [
       { title: "GATE Courses", href: "/courses?exam=gate" },
       { title: "Practice Tests", href: "/practice-test?exam=gate" },
+      { title: "Quizzes", href: "/quiz?exam=gate" },
       { title: "Study Materials", href: "/study-materials?exam=gate" },
     ]
   },
