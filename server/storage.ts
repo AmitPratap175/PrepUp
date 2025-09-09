@@ -215,7 +215,8 @@ export class MemStorage implements IStorage {
       enrollmentDate: new Date(),
       isTrialUser: true,
       currentStreak: 0,
-      totalScore: 0
+      totalScore: 0,
+      hashedPassword: insertUser.hashedPassword || null
     };
     this.users.set(id, user);
     return user;
@@ -245,7 +246,13 @@ export class MemStorage implements IStorage {
 
   async createCourse(insertCourse: InsertCourse): Promise<Course> {
     const id = randomUUID();
-    const course: Course = { ...insertCourse, id };
+    const course: Course = { 
+      ...insertCourse, 
+      id,
+      originalPrice: insertCourse.originalPrice || null,
+      imageUrl: insertCourse.imageUrl || null,
+      isPopular: insertCourse.isPopular || null
+    };
     this.courses.set(id, course);
     return course;
   }
@@ -273,7 +280,11 @@ export class MemStorage implements IStorage {
       ...insertMaterial, 
       id,
       rating: 0,
-      reviewCount: 0
+      reviewCount: 0,
+      imageUrl: insertMaterial.imageUrl || null,
+      pages: insertMaterial.pages || null,
+      isPremium: insertMaterial.isPremium || null,
+      downloadUrl: insertMaterial.downloadUrl || null
     };
     this.studyMaterials.set(id, material);
     return material;

@@ -8,6 +8,15 @@ import Home from "@/pages/home";
 import PracticeTest from "@/pages/practice-test";
 import Dashboard from "@/pages/dashboard";
 import StudyMaterials from "@/pages/study-materials";
+import Courses from "@/pages/courses";
+import About from "@/pages/about";
+import Contact from "@/pages/contact";
+import Help from "@/pages/help";
+import Careers from "@/pages/careers";
+import Privacy from "@/pages/privacy";
+import Terms from "@/pages/terms";
+import Cookies from "@/pages/cookies";
+import Refund from "@/pages/refund";
 
 function Router() {
   return (
@@ -16,6 +25,15 @@ function Router() {
       <Route path="/practice-test/:testId?" component={PracticeTest} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/study-materials" component={StudyMaterials} />
+      <Route path="/courses" component={Courses} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/help" component={Help} />
+      <Route path="/careers" component={Careers} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/cookies" component={Cookies} />
+      <Route path="/refund" component={Refund} />
       <Route component={NotFound} />
     </Switch>
   );
