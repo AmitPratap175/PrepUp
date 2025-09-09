@@ -81,12 +81,14 @@ export default function Home() {
           />
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6 text-black">
-              Ace Your Exams with <span className="text-black font-bold">PrepUp</span>
-            </h1>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-black mb-8">
-              Prepare for CAT and GATE exams with our comprehensive study materials, practice tests, and expert guidance. Join thousands of successful students who have achieved their goals with PrepUp.
-            </p>
+            <div className="backdrop-blur-lg bg-white/20 rounded-2xl p-8 mb-8">
+              <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6 text-black">
+                Ace Your Exams with <span className="text-black font-bold">PrepUp</span>
+              </h1>
+              <p className="max-w-2xl mx-auto text-lg md:text-xl text-black mb-8">
+                Prepare for CAT and GATE exams with our comprehensive study materials, practice tests, and expert guidance. Join thousands of successful students who have achieved their goals with PrepUp.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button 
                 size="lg" 
