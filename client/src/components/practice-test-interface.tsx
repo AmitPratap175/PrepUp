@@ -24,6 +24,7 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
 
   const questions = test.questions as Question[];
   const currentQuestion = questions[testState.currentQuestionIndex];
+  const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
   // Timer effect
   useEffect(() => {
@@ -226,65 +227,68 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
         )}
 
         {/* Question Content (Scrollable) */}
-        <div className="flex-1 p-8 overflow-y-auto">
-          <div className="mb-6">
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
-                Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
-              </span>
-              <span className="text-sm text-muted-foreground">
-                Multiple Choice Question
-              </span>
-            </div>
-            
-            <div className="prose max-w-none mb-6">
-              {currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually" && (
-                <div className="bg-muted/50 p-4 rounded-lg mb-4">
-                  <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
-                  <p className="text-foreground leading-relaxed preserve-whitespace">
-                    <Latex>{currentQuestion.passage_text}</Latex>
-                  </p>
-                </div>
-              )}
-              <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
-                <Latex>{currentQuestion.question_text}</Latex>
-              </p>
-            </div>
+        <div className="flex-1 flex flex-col p-8 overflow-hidden">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
+              Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
+            </span>
+            <span className="text-sm text-muted-foreground">
+              Multiple Choice Question
+            </span>
+          </div>
 
-            {/* Answer Options */}
-            <div className="space-y-3">
-              {currentQuestion.options.map((option) => {
-                const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
-                return (
-                  <label 
-                    key={option.data_option}
-                    className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
-                      isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
-                    }`}
-                  >
-                    <input 
-                      type="radio" 
-                      name={`question-${currentQuestion.qid}`}
-                      value={option.data_option}
-                      checked={isSelected}
-                      onChange={() => handleAnswerSelect(option.data_option)}
-                      className="sr-only"
-                      data-testid={`option-${option.label.toLowerCase()}`}
-                    />
-                    <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
-                      <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
-                    </div>
-                    <span className="font-medium text-foreground">{option.label}.</span>
-                    <span className="text-foreground preserve-whitespace">
-                      <Latex>{option.option_text}</Latex>
-                    </span>
-                  </label>
-                );
-              })}
+          <div className="flex-1 flex overflow-hidden">
+            {hasPassage && (
+              <div className="w-1/2 pr-4 overflow-y-auto">
+                <div className="bg-muted/50 p-4 rounded-lg h-full">
+                  <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
+                  <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
+                    <Latex>{currentQuestion.passage_text}</Latex>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className={`${hasPassage ? 'w-1/2 pl-4' : 'w-full'} overflow-y-auto`}>
+              <div className="prose max-w-none mb-6">
+                <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
+                  <Latex>{currentQuestion.question_text}</Latex>
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                {currentQuestion.options.map((option) => {
+                  const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
+                  return (
+                    <label 
+                      key={option.data_option}
+                      className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
+                        isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
+                      }`}
+                    >
+                      <input 
+                        type="radio" 
+                        name={`question-${currentQuestion.qid}`}
+                        value={option.data_option}
+                        checked={isSelected}
+                        onChange={() => handleAnswerSelect(option.data_option)}
+                        className="sr-only"
+                        data-testid={`option-${option.label.toLowerCase()}`}
+                      />
+                      <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
+                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
+                      </div>
+                      <span className="font-medium text-foreground">{option.label}.</span>
+                      <span className="text-foreground preserve-whitespace">
+                        <Latex>{option.option_text}</Latex>
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
-          {/* Question Actions */}
           <div className="flex justify-between pt-6 border-t border-border">
             <div className="space-x-3">
               <Button 
