@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -226,11 +227,13 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
               {currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually" && (
                 <div className="bg-muted/50 p-4 rounded-lg mb-4">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
-                  <p className="text-foreground leading-relaxed">{currentQuestion.passage_text}</p>
+                  <p className="text-foreground leading-relaxed preserve-whitespace">
+                    <Latex>{currentQuestion.passage_text}</Latex>
+                  </p>
                 </div>
               )}
-              <p className="text-foreground leading-relaxed mb-4" data-testid="question-text">
-                {currentQuestion.question_text}
+              <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
+                <Latex>{currentQuestion.question_text}</Latex>
               </p>
             </div>
 
@@ -258,7 +261,9 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
                       <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
                     </div>
                     <span className="font-medium text-foreground">{option.label}.</span>
-                    <span className="text-foreground">{option.option_text}</span>
+                    <span className="text-foreground preserve-whitespace">
+                      <Latex>{option.option_text}</Latex>
+                    </span>
                   </label>
                 );
               })}
