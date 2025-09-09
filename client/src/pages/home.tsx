@@ -72,7 +72,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
           <div 
-            className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"
+            className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/50 to-white/70"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')",
               backgroundSize: "cover",
@@ -80,9 +80,9 @@ export default function Home() {
             }}
           />
           
-          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6">
-              Ace Your Exams with <span className="text-white font-bold">PrepUp</span>
+          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6 text-black">
+              Ace Your Exams with <span className="text-black font-bold">PrepUp</span>
             </h1>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-black mb-8">
               Prepare for CAT and GATE exams with our comprehensive study materials, practice tests, and expert guidance. Join thousands of successful students who have achieved their goals with PrepUp.
