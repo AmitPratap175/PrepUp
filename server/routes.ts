@@ -1,5 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import { WebSocketServer, WebSocket } from "ws";
 import { storage } from "./storage";
 import { 
   insertUserSchema, 
@@ -7,6 +8,30 @@ import {
   type UserAnswer
 } from "@shared/schema";
 import { z } from "zod";
+
+// WebSocket connection store
+const clients = new Map<string, WebSocket[]>();
+
+// Function to broadcast bookmark changes to all clients for a user
+function broadcastBookmarkUpdate(userId: string, action: 'create' | 'delete', bookmark: any) {
+  const userClients = clients.get(userId);
+  if (userClients) {
+    const message = JSON.stringify({
+      type: 'bookmark_update',
+      action,
+      data: bookmark
+    });
+    
+    userClients.forEach(client => {
+      if (client.readyState === WebSocket.OPEN) {
+        client.send(message);
+      }
+    });
+    
+    // Clean up closed connections
+    clients.set(userId, userClients.filter(client => client.readyState === WebSocket.OPEN));
+  }
+}
 
 export async function registerRoutes(app: Express): Promise<Server> {
   
@@ -186,6 +211,109 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Bookmark proxy routes that broadcast changes
+  app.post("/api/bookmarks/create", async (req, res) => {
+    try {
+      const { userId, subject, question_id } = req.body;
+      
+      // Forward to Django auth server
+      const authResponse = await fetch(`http://localhost:8000/api/auth/bookmarks/create/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': req.headers.authorization || '',
+        },
+        body: JSON.stringify({ subject, question_id }),
+      });
+      
+      if (!authResponse.ok) {
+        return res.status(authResponse.status).json({ error: 'Failed to create bookmark' });
+      }
+      
+      const bookmark = await authResponse.json();
+      
+      // Broadcast to all clients for this user
+      if (userId) {
+        broadcastBookmarkUpdate(userId, 'create', { subject, question_id });
+      }
+      
+      res.json(bookmark);
+    } catch (error) {
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+  
+  app.delete("/api/bookmarks/delete/:questionId", async (req, res) => {
+    try {
+      const { questionId } = req.params;
+      const { userId, subject } = req.query;
+      
+      // Forward to Django auth server
+      const authResponse = await fetch(`http://localhost:8000/api/auth/bookmarks/delete/${questionId}/?subject=${subject}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': req.headers.authorization || '',
+        },
+      });
+      
+      if (!authResponse.ok) {
+        return res.status(authResponse.status).json({ error: 'Failed to delete bookmark' });
+      }
+      
+      // Broadcast to all clients for this user
+      if (userId) {
+        broadcastBookmarkUpdate(userId as string, 'delete', { subject, question_id: questionId });
+      }
+      
+      res.status(204).send();
+    } catch (error) {
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
   const httpServer = createServer(app);
+  
+  // Setup WebSocket server
+  const wss = new WebSocketServer({ server: httpServer });
+  
+  wss.on('connection', (ws, req) => {
+    console.log('New WebSocket connection');
+    
+    ws.on('message', (data) => {
+      try {
+        const message = JSON.parse(data.toString());
+        
+        if (message.type === 'auth' && message.userId) {
+          // Associate this WebSocket connection with a user
+          const userId = message.userId;
+          if (!clients.has(userId)) {
+            clients.set(userId, []);
+          }
+          clients.get(userId)!.push(ws);
+          
+          console.log(`WebSocket authenticated for user: ${userId}`);
+          
+          // Send confirmation
+          ws.send(JSON.stringify({ type: 'auth_success', userId }));
+        }
+      } catch (error) {
+        console.error('WebSocket message error:', error);
+      }
+    });
+    
+    ws.on('close', () => {
+      console.log('WebSocket connection closed');
+      // Clean up this connection from all user lists
+      for (const [userId, userClients] of clients.entries()) {
+        const filteredClients = userClients.filter(client => client !== ws);
+        if (filteredClients.length === 0) {
+          clients.delete(userId);
+        } else {
+          clients.set(userId, filteredClients);
+        }
+      }
+    });
+  });
+  
   return httpServer;
 }

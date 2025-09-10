@@ -22,6 +22,12 @@ import LoginPage from "@/pages/login";
 import SignupPage from "@/pages/signup";
 import BookmarksPage from "@/pages/bookmarks";
 import { AuthProvider } from "@/contexts/auth-context";
+import { useWebSocket } from "@/hooks/use-websocket";
+
+function WebSocketProvider({ children }: { children: React.ReactNode }) {
+  useWebSocket();
+  return <>{children}</>;
+}
 
 function Router() {
   return (
@@ -53,8 +59,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <AuthProvider>
-          <Toaster />
-          <Router />
+          <WebSocketProvider>
+            <Toaster />
+            <Router />
+          </WebSocketProvider>
         </AuthProvider>
       </TooltipProvider>
     </QueryClientProvider>

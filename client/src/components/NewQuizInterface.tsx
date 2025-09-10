@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useAuth } from "@/contexts/auth-context";
 
 interface QuizInterfaceProps {
   test: PracticeTest;
