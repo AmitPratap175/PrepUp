@@ -1,15 +1,23 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useLocation } from "wouter";
+import { useLocation, Redirect } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
-import { QuizInterface } from "@/components/quiz-interface";
+import { NewQuizInterface } from "@/components/NewQuizInterface";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
 
 export default function QuizPage() {
+  const { isAuthenticated } = useAuth();
   const [location, setLocation] = useLocation();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
   const [quizStarted, setQuizStarted] = useState(false);
@@ -39,6 +47,10 @@ export default function QuizPage() {
     setLocation("/quiz");
   };
 
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
+
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
@@ -55,7 +67,7 @@ export default function QuizPage() {
   }
 
   if (quizStarted && currentTest) {
-    return <QuizInterface test={currentTest} onExit={handleExitQuiz} />;
+    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} />;
   }
 
   return (

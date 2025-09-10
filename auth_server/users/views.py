@@ -4,7 +4,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
-from .serializers import UserSerializer
+from .serializers import UserSerializer, BookmarkSerializer
+from .models import Bookmark
 
 User = get_user_model()
 
@@ -69,3 +70,46 @@ class UserDetailsView(APIView):
     def get(self, request, *args, **kwargs):
         serializer = UserSerializer(request.user)
         return Response(serializer.data)
+
+class BookmarkListView(generics.ListAPIView):
+    """
+    API view for listing user bookmarks.
+    """
+    serializer_class = BookmarkSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        user = self.request.user
+        subject = self.request.query_params.get('subject')
+        if subject:
+            return Bookmark.objects.filter(user=user, subject=subject)
+        return Bookmark.objects.filter(user=user)
+
+class BookmarkCreateView(generics.CreateAPIView):
+    """
+    API view for creating a new bookmark.
+    """
+    queryset = Bookmark.objects.all()
+    serializer_class = BookmarkSerializer
+    permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+class BookmarkDeleteView(generics.DestroyAPIView):
+    """
+    API view for deleting a bookmark.
+    """
+    queryset = Bookmark.objects.all()
+    serializer_class = BookmarkSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        queryset = self.get_queryset()
+        obj = generics.get_object_or_404(
+            queryset,
+            question_id=self.kwargs["question_id"],
+            subject=self.request.query_params.get('subject'),
+            user=self.request.user
+        )
+        return obj

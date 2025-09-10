@@ -40,3 +40,18 @@ class User(AbstractUser):
         String representation of the User object.
         """
         return self.email
+
+class Bookmark(models.Model):
+    """
+    Model to store user bookmarks for quiz questions.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=255)
+    question_id = models.CharField(max_length=255)
+
+    class Meta:
+        unique_together = ('user', 'subject', 'question_id')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.subject} - {self.question_id}'

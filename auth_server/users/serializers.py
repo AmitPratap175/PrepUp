@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
+from .models import Bookmark
 
 User = get_user_model()
 
@@ -27,3 +28,9 @@ class UserSerializer(serializers.ModelSerializer):
             exam_type=validated_data['exam_type']
         )
         return user
+
+class BookmarkSerializer(serializers.ModelSerializer):
+    user = serializers.ReadOnlyField(source='user.email')
+    class Meta:
+        model = Bookmark
+        fields = ['id', 'user', 'subject', 'question_id']

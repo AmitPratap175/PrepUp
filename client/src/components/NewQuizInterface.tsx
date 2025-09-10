@@ -4,19 +4,20 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
 }
 
-export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
+export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
+  const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
@@ -29,6 +30,31 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  // Load bookmarks from the backend
+  useEffect(() => {
+    const fetchBookmarks = async () => {
+      const token = localStorage.getItem('token');
+      console.log("Token:", token);
+      if (token) {
+        try {
+          const response = await fetch(`http://localhost:8000/api/auth/bookmarks/?subject=${test.subject}`, {
+            headers: {
+              Authorization: `Token ${token}`,
+            },
+          });
+          if (response.ok) {
+            const bookmarks = await response.json();
+            console.log("Bookmarks:", bookmarks);
+            setBookmarkedQuestions(new Set(bookmarks.map(b => b.question_id)));
+          }
+        } catch (error) {
+          console.error("Failed to fetch bookmarks:", error);
+        }
+      }
+    };
+    fetchBookmarks();
+  }, [test.subject]);
 
   const formatTime = (seconds: number) => {
     const hours = Math.floor(seconds / 3600);
@@ -58,6 +84,50 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prev => prev - 1);
+    }
+  };
+
+  const handleBookmarkToggle = async (qid: string) => {
+    console.log("Toggling bookmark for qid:", qid);
+    const token = localStorage.getItem('token');
+    console.log("Token:", token);
+    if (!token) return;
+
+    const newBookmarks = new Set(bookmarkedQuestions);
+    if (newBookmarks.has(qid)) {
+      console.log("Deleting bookmark");
+      try {
+        const response = await fetch(`http://localhost:8000/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
+          method: 'DELETE',
+          headers: {
+            Authorization: `Token ${token}`,
+          },
+        });
+        if (response.ok) {
+          newBookmarks.delete(qid);
+          setBookmarkedQuestions(newBookmarks);
+        }
+      } catch (error) {
+        console.error("Failed to delete bookmark:", error);
+      }
+    } else {
+      console.log("Creating bookmark");
+      try {
+        const response = await fetch(`http://localhost:8000/api/auth/bookmarks/create/`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Token ${token}`,
+          },
+          body: JSON.stringify({ subject: test.subject, question_id: qid }),
+        });
+        if (response.ok) {
+          newBookmarks.add(qid);
+          setBookmarkedQuestions(newBookmarks);
+        }
+      } catch (error) {
+        console.error("Failed to create bookmark:", error);
+      }
     }
   };
 
@@ -134,11 +204,12 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
                 const isAnswered = answers[question.qid] !== undefined;
                 const correctOption = question.options.find(opt => opt.is_correct);
                 const isCorrect = isAnswered && correctOption && answers[question.qid] === correctOption.data_option;
+                const isBookmarked = bookmarkedQuestions.has(question.qid);
                 return (
                   <button
                     key={index}
                     onClick={() => setCurrentQuestionIndex(index)}
-                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
+                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${
                       index === currentQuestionIndex
                         ? 'bg-primary text-primary-foreground'
                         : isAnswered
@@ -149,6 +220,7 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
                     }`}
                     data-testid={`question-nav-${index + 1}`}
                   >
+                    {isBookmarked && <Bookmark className="absolute top-0 right-0 h-3 w-3 text-yellow-400" />}
                     {index + 1}
                   </button>
                 );
@@ -160,9 +232,14 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
         {/* Question Content (Scrollable) */}
         <div className="flex-1 flex flex-col p-8 overflow-hidden">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
-              Question {currentQuestionIndex + 1} of {test.totalQuestions}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
+                Question {currentQuestionIndex + 1} of {test.totalQuestions}
+              </span>
+              <Button variant="ghost" size="icon" onClick={() => handleBookmarkToggle(currentQuestion.qid)}>
+                <Bookmark className={`h-5 w-5 ${bookmarkedQuestions.has(currentQuestion.qid) ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'}`} />
+              </Button>
+            </div>
             <span className="text-sm text-muted-foreground">
               {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
             </span>
