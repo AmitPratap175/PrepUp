@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 interface QuizInterfaceProps {
   test: PracticeTest;
@@ -18,6 +19,7 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
+  const queryClient = useQueryClient();
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
@@ -35,7 +37,6 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
   useEffect(() => {
     const fetchBookmarks = async () => {
       const token = localStorage.getItem('token');
-      console.log("Token:", token);
       if (token) {
         try {
           const response = await fetch(`http://localhost:8000/api/auth/bookmarks/?subject=${test.subject}`, {
@@ -45,7 +46,6 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
           });
           if (response.ok) {
             const bookmarks = await response.json();
-            console.log("Bookmarks:", bookmarks);
             setBookmarkedQuestions(new Set(bookmarks.map(b => b.question_id)));
           }
         } catch (error) {
@@ -87,47 +87,64 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
     }
   };
 
-  const handleBookmarkToggle = async (qid: string) => {
-    console.log("Toggling bookmark for qid:", qid);
-    const token = localStorage.getItem('token');
-    console.log("Token:", token);
-    if (!token) return;
+  const deleteBookmarkMutation = useMutation({
+    mutationFn: async (qid: string) => {
+      const token = localStorage.getItem('token');
+      if (!token) throw new Error("Not authenticated");
+      const response = await fetch(`http://localhost:8000/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
+        method: 'DELETE',
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      });
+      if (!response.ok) {
+        throw new Error("Failed to delete bookmark");
+      }
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+    },
+  });
 
+  const createBookmarkMutation = useMutation({
+    mutationFn: async (qid: string) => {
+      const token = localStorage.getItem('token');
+      if (!token) throw new Error("Not authenticated");
+      const response = await fetch(`http://localhost:8000/api/auth/bookmarks/create/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify({ subject: test.subject, question_id: qid }),
+      });
+      if (!response.ok) {
+        throw new Error("Failed to create bookmark");
+      }
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+    },
+  });
+
+  const handleBookmarkToggle = async (qid: string) => {
     const newBookmarks = new Set(bookmarkedQuestions);
     if (newBookmarks.has(qid)) {
-      console.log("Deleting bookmark");
-      try {
-        const response = await fetch(`http://localhost:8000/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
-          method: 'DELETE',
-          headers: {
-            Authorization: `Token ${token}`,
-          },
-        });
-        if (response.ok) {
+      deleteBookmarkMutation.mutate(qid, {
+        onSuccess: () => {
           newBookmarks.delete(qid);
           setBookmarkedQuestions(newBookmarks);
+          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
         }
-      } catch (error) {
-        console.error("Failed to delete bookmark:", error);
-      }
+      });
     } else {
-      console.log("Creating bookmark");
-      try {
-        const response = await fetch(`http://localhost:8000/api/auth/bookmarks/create/`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Token ${token}`,
-          },
-          body: JSON.stringify({ subject: test.subject, question_id: qid }),
-        });
-        if (response.ok) {
+      createBookmarkMutation.mutate(qid, {
+        onSuccess: () => {
           newBookmarks.add(qid);
           setBookmarkedQuestions(newBookmarks);
+          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
         }
-      } catch (error) {
-        console.error("Failed to create bookmark:", error);
-      }
+      });
     }
   };
 
