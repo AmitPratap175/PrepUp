@@ -32,6 +32,7 @@ const navigation = [
       { title: "Study Materials", href: "/study-materials?exam=gate" },
     ]
   },
+  { title: "Bookmarks", href: "/bookmarks" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];
@@ -104,6 +105,9 @@ export function AppHeader() {
             <>
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
                 <Link href="/dashboard">Dashboard</Link>
+              </Button>
+              <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
+                <Link href="/bookmarks">Bookmarks</Link>
               </Button>
               <Button onClick={handleLogout} className="hidden sm:flex" size="sm">
                 Logout

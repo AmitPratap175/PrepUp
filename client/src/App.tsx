@@ -20,6 +20,7 @@ import Cookies from "@/pages/cookies";
 import Refund from "@/pages/refund";
 import LoginPage from "@/pages/login";
 import SignupPage from "@/pages/signup";
+import BookmarksPage from "@/pages/bookmarks";
 import { AuthProvider } from "@/contexts/auth-context";
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/study-materials" component={StudyMaterials} />
       <Route path="/courses" component={Courses} />
+      <Route path="/bookmarks" component={BookmarksPage} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/help" component={Help} />
