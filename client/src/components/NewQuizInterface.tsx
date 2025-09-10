@@ -39,7 +39,7 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const response = await fetch(`http://localhost:8000/api/auth/bookmarks/?subject=${test.subject}`, {
+          const response = await fetch(`http://${window.location.hostname}:8000/api/auth/bookmarks/?subject=${test.subject}`, {
             headers: {
               Authorization: `Token ${token}`,
             },
@@ -91,7 +91,7 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
     mutationFn: async (qid: string) => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error("Not authenticated");
-      const response = await fetch(`http://localhost:8000/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
+      const response = await fetch(`http://${window.location.hostname}:8000/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Token ${token}`,
@@ -110,7 +110,7 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
     mutationFn: async (qid: string) => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error("Not authenticated");
-      const response = await fetch(`http://localhost:8000/api/auth/bookmarks/create/`, {
+      const response = await fetch(`http://${window.location.hostname}:8000/api/auth/bookmarks/create/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
