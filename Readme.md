@@ -77,12 +77,31 @@ Follow these instructions to get the project up and running on your local machin
 
 3.  **Set up environment variables:**
 
-    Create a `.env` file in the root of the project and add your PostgreSQL database connection string:
+    Create a `.env` file in the root of the project and add your PostgreSQL database connection string. For local development, it might look like this:
     ```env
-    DATABASE_URL="postgresql://user:password@host:port/dbname?sslmode=require"
+    DATABASE_URL="postgresql://user:password@localhost:5432/user?sslmode=disable"
     ```
 
-4.  **Sync the database schema:**
+4.  **Running Locally with Docker/Podman**
+
+    If you are running the database in a container (e.g., with Docker or Podman), you will need to ensure the application container can connect to the database container.
+
+    1.  **Start the database container:**
+        ```bash
+        podman run --name prepup-db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -p 5432:5432 -d docker.io/library/postgres
+        ```
+
+    2.  **Run the application:**
+        When running the application, you need to make sure it can connect to the database. If the application is also running in a container, `localhost` will not work. You may need to use a specific IP address or a container network.
+
+        For example, if you are running the application in a container on the same network as the database, you might use the database container's name as the host in the `DATABASE_URL`:
+        ```env
+        DATABASE_URL="postgresql://user:password@prepup-db:5432/user?sslmode=disable"
+        ```
+
+        Alternatively, you can connect to the host machine from the container. The IP address for this can vary depending on your setup.
+
+5.  **Sync the database schema:**
 
     Push the schema defined in `shared/schema.ts` to your database using Drizzle Kit.
     ```bash

@@ -75,6 +75,14 @@ export const userProgress = pgTable("user_progress", {
   completedLessons: jsonb("completed_lessons").default([]),
 });
 
+export const bookmarks = pgTable("bookmarks", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  userId: varchar("user_id").references(() => users.id).notNull(),
+  testId: varchar("test_id").references(() => practiceTests.id).notNull(),
+  questionId: text("question_id").notNull(),
+  createdAt: timestamp("created_at").default(sql`now()`),
+});
+
 // Insert schemas
 export const insertUserSchema = createInsertSchema(users).omit({
   id: true,
@@ -113,6 +121,11 @@ export const insertUserProgressSchema = createInsertSchema(userProgress).omit({
   completedLessons: true,
 });
 
+export const insertBookmarkSchema = createInsertSchema(bookmarks).omit({
+  id: true,
+  createdAt: true,
+});
+
 // Types
 export type User = typeof users.$inferSelect;
 export type InsertUser = z.infer<typeof insertUserSchema>;
@@ -131,6 +144,9 @@ export type InsertTestSession = z.infer<typeof insertTestSessionSchema>;
 
 export type UserProgress = typeof userProgress.$inferSelect;
 export type InsertUserProgress = z.infer<typeof insertUserProgressSchema>;
+
+export type Bookmark = typeof bookmarks.$inferSelect;
+export type InsertBookmark = z.infer<typeof insertBookmarkSchema>;
 
 // Question option interface
 export interface QuestionOption {

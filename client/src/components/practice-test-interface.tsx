@@ -3,17 +3,22 @@ import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
+import type { PracticeTest, Question, UserAnswer, Bookmark } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
-import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
+import { useAuth } from "@/contexts/auth-context";
+import { apiClient } from "@/lib/api-client";
 
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
   onSubmit: (answers: UserAnswer[], timeSpent: number) => void;
+  initialQuestionId?: string | null;
 }
 
-export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceProps) {
+export function PracticeTestInterface({ test, onSubmit, initialQuestionId }: PracticeTestInterfaceProps) {
+  const { user } = useAuth();
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
+  const [bookmarks, setBookmarks] = useState<Map<string, Bookmark>>(new Map());
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
@@ -25,6 +30,28 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[testState.currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+
+  // Fetch bookmarks effect
+  useEffect(() => {
+    if (user) {
+      apiClient.get<Bookmark[]>(`/users/${user.id}/bookmarks`)
+        .then(data => {
+          const bookmarkMap = new Map(data.map(b => [b.questionId, b]));
+          setBookmarks(bookmarkMap);
+        })
+        .catch(error => console.error("Failed to fetch bookmarks:", error));
+    }
+  }, [user]);
+
+  // Set initial question from bookmark
+  useEffect(() => {
+    if (initialQuestionId) {
+      const questionIndex = questions.findIndex(q => q.qid === initialQuestionId);
+      if (questionIndex !== -1) {
+        setTestState(prev => ({ ...prev, currentQuestionIndex: questionIndex }));
+      }
+    }
+  }, [initialQuestionId, questions]);
 
   // Timer effect
   useEffect(() => {
@@ -91,6 +118,37 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
       delete newAnswers[currentQuestion.qid];
       return { ...prev, answers: newAnswers };
     });
+  };
+
+  const handleBookmark = async () => {
+    if (!user) return;
+
+    const questionId = currentQuestion.qid;
+    const existingBookmark = bookmarks.get(questionId);
+
+    if (existingBookmark) {
+      try {
+        await apiClient.delete(`/bookmarks/${existingBookmark.id}`);
+        setBookmarks(prev => {
+          const newBookmarks = new Map(prev);
+          newBookmarks.delete(questionId);
+          return newBookmarks;
+        });
+      } catch (error) {
+        console.error("Failed to remove bookmark:", error);
+      }
+    } else {
+      try {
+        const newBookmark = await apiClient.post<Bookmark>("/bookmarks", {
+          userId: user.id,
+          testId: test.id,
+          questionId,
+        });
+        setBookmarks(prev => new Map(prev).set(questionId, newBookmark));
+      } catch (error) {
+        console.error("Failed to add bookmark:", error);
+      }
+    }
   };
 
   const navigateToQuestion = (questionIndex: number) => {
@@ -331,6 +389,14 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
                 data-testid="button-mark-review"
               >
                 {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
+              </Button>
+              <Button
+                variant="outline"
+                onClick={handleBookmark}
+                data-testid="button-bookmark"
+              >
+                <Bookmark className={`h-4 w-4 mr-2 ${bookmarks.has(currentQuestion.qid) ? 'fill-current' : ''}`} />
+                {bookmarks.has(currentQuestion.qid) ? 'Bookmarked' : 'Bookmark'}
               </Button>
             </div>
             <div className="space-x-3">

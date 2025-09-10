@@ -20,7 +20,15 @@ export default function PracticeTestPage() {
   // Extract test ID from URL if provided
   const urlParams = new URLSearchParams(location.split('?')[1] || '');
   const testIdFromUrl = urlParams.get('testId');
+  const questionIdFromUrl = urlParams.get('question');
   const examTypeFromUrl = urlParams.get('exam');
+
+  useEffect(() => {
+    if (testIdFromUrl) {
+      setSelectedTestId(testIdFromUrl);
+      setTestStarted(true);
+    }
+  }, [testIdFromUrl]);
 
   const { data: practiceTests, isLoading } = useQuery<PracticeTest[]>({
     queryKey: ["/api/practice-tests", ...(examTypeFromUrl ? [`?examType=${examTypeFromUrl}`] : [])],
@@ -113,6 +121,7 @@ export default function PracticeTestPage() {
       <PracticeTestInterface 
         test={currentTest} 
         onSubmit={handleSubmitTest}
+        initialQuestionId={questionIdFromUrl}
       />
     );
   }

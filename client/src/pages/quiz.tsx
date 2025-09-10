@@ -7,11 +7,17 @@ import { QuizInterface } from "@/components/quiz-interface";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest } from "@shared/schema";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
+import type { PracticeTest, TestSession } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
+import { apiClient } from "@/lib/api-client";
 
 export default function QuizPage() {
+  const { user } = useAuth();
   const [location, setLocation] = useLocation();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
+  const [session, setSession] = useState<TestSession | null>(null);
+  const [showResumeDialog, setShowResumeDialog] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
 
   // Extract test ID from URL if provided
@@ -28,9 +34,57 @@ export default function QuizPage() {
     enabled: !!(selectedTestId || testIdFromUrl),
   });
 
-  const handleStartQuiz = (testId: string) => {
+  const handleStartQuiz = async (testId: string) => {
+    if (!user) return; // Or prompt to login
+
     setSelectedTestId(testId);
+    const test = practiceTests?.find(t => t.id === testId);
+    if (!test) return;
+
+    try {
+      const existingSession = await apiClient.post<TestSession>("/test-sessions", {
+        userId: user.id,
+        testId: test.id,
+        totalQuestions: test.totalQuestions,
+        answers: [],
+      });
+
+      if (existingSession.answers && Object.keys(existingSession.answers).length > 0 && !existingSession.isCompleted) {
+        setSession(existingSession);
+        setShowResumeDialog(true);
+      } else {
+        setSession(existingSession);
+        setQuizStarted(true);
+      }
+    } catch (error) {
+      console.error("Failed to start quiz session:", error);
+    }
+  };
+
+  const handleResume = () => {
+    setShowResumeDialog(false);
     setQuizStarted(true);
+  };
+
+  const handleStartAgain = async () => {
+    if (!user || !selectedTestId) return;
+
+    const test = practiceTests?.find(t => t.id === selectedTestId);
+    if (!test) return;
+
+    try {
+      const newSession = await apiClient.post<TestSession>(`/test-sessions?force=true`, {
+        userId: user.id,
+        testId: selectedTestId,
+        totalQuestions: test.totalQuestions,
+        answers: [],
+      });
+      setSession(newSession);
+      setShowResumeDialog(false);
+      setQuizStarted(true);
+    } catch (error) {
+      console.error("Failed to start new quiz session:", error);
+    }
   };
 
   const handleExitQuiz = () => {
@@ -54,8 +108,8 @@ export default function QuizPage() {
     );
   }
 
-  if (quizStarted && currentTest) {
-    return <QuizInterface test={currentTest} onExit={handleExitQuiz} />;
+  if (quizStarted && currentTest && session) {
+    return <QuizInterface test={currentTest} session={session} onExit={handleExitQuiz} />;
   }
 
   return (
@@ -120,6 +174,21 @@ export default function QuizPage() {
       </main>
 
       <AppFooter />
+
+      <Dialog open={showResumeDialog} onOpenChange={setShowResumeDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Resume Quiz?</DialogTitle>
+            <DialogDescription>
+              You have an incomplete quiz session. Would you like to resume where you left off or start a new session?
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={handleStartAgain}>Start Again</Button>
+            <Button onClick={handleResume}>Resume</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

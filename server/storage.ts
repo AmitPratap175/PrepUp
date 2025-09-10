@@ -11,7 +11,9 @@ import {
   type InsertTestSession,
   type UserProgress,
   type InsertUserProgress,
-  type Question
+  type Question,
+  type Bookmark,
+  type InsertBookmark
 } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { readFileSync } from "fs";
@@ -46,6 +48,7 @@ export interface IStorage {
   // Test session methods
   getTestSession(id: string): Promise<TestSession | undefined>;
   getTestSessionsByUser(userId: string): Promise<TestSession[]>;
+  getIncompleteTestSession(userId: string, testId: string): Promise<TestSession | undefined>;
   createTestSession(session: InsertTestSession): Promise<TestSession>;
   updateTestSession(id: string, updates: Partial<TestSession>): Promise<TestSession | undefined>;
 
@@ -54,6 +57,11 @@ export interface IStorage {
   getUserProgressByCourse(userId: string, courseId: string): Promise<UserProgress | undefined>;
   createUserProgress(progress: InsertUserProgress): Promise<UserProgress>;
   updateUserProgress(id: string, updates: Partial<UserProgress>): Promise<UserProgress | undefined>;
+
+  // Bookmark methods
+  getBookmarksByUser(userId: string): Promise<Bookmark[]>;
+  createBookmark(bookmark: InsertBookmark): Promise<Bookmark>;
+  deleteBookmark(bookmarkId: string): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -63,6 +71,7 @@ export class MemStorage implements IStorage {
   private practiceTests: Map<string, PracticeTest>;
   private testSessions: Map<string, TestSession>;
   private userProgress: Map<string, UserProgress>;
+  private bookmarks: Map<string, Bookmark>;
 
   constructor() {
     this.users = new Map();
@@ -71,6 +80,7 @@ export class MemStorage implements IStorage {
     this.practiceTests = new Map();
     this.testSessions = new Map();
     this.userProgress = new Map();
+    this.bookmarks = new Map();
     
     this.seedData();
   }
@@ -353,6 +363,12 @@ export class MemStorage implements IStorage {
     return Array.from(this.testSessions.values()).filter(session => session.userId === userId);
   }
 
+  async getIncompleteTestSession(userId: string, testId: string): Promise<TestSession | undefined> {
+    return Array.from(this.testSessions.values()).find(
+      session => session.userId === userId && session.testId === testId && !session.isCompleted
+    );
+  }
+
   async createTestSession(insertSession: InsertTestSession): Promise<TestSession> {
     const id = randomUUID();
     const session: TestSession = { 
@@ -408,6 +424,26 @@ export class MemStorage implements IStorage {
     const updatedProgress = { ...progress, ...updates };
     this.userProgress.set(id, updatedProgress);
     return updatedProgress;
+  }
+
+  // Bookmark methods
+  async getBookmarksByUser(userId: string): Promise<Bookmark[]> {
+    return Array.from(this.bookmarks.values()).filter(bookmark => bookmark.userId === userId);
+  }
+
+  async createBookmark(insertBookmark: InsertBookmark): Promise<Bookmark> {
+    const id = randomUUID();
+    const bookmark: Bookmark = {
+      ...insertBookmark,
+      id,
+      createdAt: new Date()
+    };
+    this.bookmarks.set(id, bookmark);
+    return bookmark;
+  }
+
+  async deleteBookmark(bookmarkId: string): Promise<void> {
+    this.bookmarks.delete(bookmarkId);
   }
 }
 

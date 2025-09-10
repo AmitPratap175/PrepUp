@@ -3,18 +3,28 @@ import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
+import type { PracticeTest, Question, UserAnswer, TestSession } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { apiClient } from "@/lib/api-client";
 
 interface QuizInterfaceProps {
   test: PracticeTest;
+  session: TestSession;
   onExit: () => void;
 }
 
-export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
+export function QuizInterface({ test, session, onExit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [answers, setAnswers] = useState<{[key: string]: string}>({});
+  const [answers, setAnswers] = useState<{[key: string]: string}>(() => {
+    if (session.answers && typeof session.answers === 'object') {
+      return Object.entries(session.answers).reduce((acc, [qid, ans]) => {
+        acc[qid] = (ans as UserAnswer).selectedAnswer || '';
+        return acc;
+      }, {} as {[key: string]: string});
+    }
+    return {};
+  });
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
 
@@ -29,6 +39,23 @@ export function QuizInterface({ test, onExit }: QuizInterfaceProps) {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  // Autosave effect
+  useEffect(() => {
+    const autosaveTimer = setInterval(() => {
+      const userAnswers: UserAnswer[] = Object.entries(answers).map(([questionId, selectedAnswer]) => ({
+        questionId,
+        selectedAnswer,
+        timeSpent: 0, // This would need more detailed tracking
+        isMarkedForReview: false,
+      }));
+
+      apiClient.patch(`/test-sessions/${session.id}`, { answers: userAnswers })
+        .catch(error => console.error("Failed to save progress:", error));
+    }, 10000); // Save every 10 seconds
+
+    return () => clearInterval(autosaveTimer);
+  }, [answers, session.id]);
 
   const formatTime = (seconds: number) => {
     const hours = Math.floor(seconds / 3600);

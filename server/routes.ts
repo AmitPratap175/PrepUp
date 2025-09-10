@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { 
   insertUserSchema, 
   insertTestSessionSchema,
+  insertBookmarkSchema,
   type UserAnswer
 } from "@shared/schema";
 import { z } from "zod";
@@ -120,6 +121,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/test-sessions", async (req, res) => {
     try {
       const sessionData = insertTestSessionSchema.parse(req.body);
+      const force = req.query.force === 'true';
+
+      if (!force) {
+        const existingSession = await storage.getIncompleteTestSession(sessionData.userId, sessionData.testId);
+        if (existingSession) {
+          return res.json(existingSession);
+        }
+      }
+
       const session = await storage.createTestSession(sessionData);
       res.json(session);
     } catch (error) {
@@ -181,6 +191,35 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(404).json({ error: "Progress not found" });
       }
       res.json(progress);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
+  // Bookmark routes
+  app.get("/api/users/:userId/bookmarks", async (req, res) => {
+    try {
+      const bookmarks = await storage.getBookmarksByUser(req.params.userId);
+      res.json(bookmarks);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
+  app.post("/api/bookmarks", async (req, res) => {
+    try {
+      const bookmarkData = insertBookmarkSchema.parse(req.body);
+      const bookmark = await storage.createBookmark(bookmarkData);
+      res.json(bookmark);
+    } catch (error) {
+      res.status(400).json({ error: "Invalid bookmark data" });
+    }
+  });
+
+  app.delete("/api/bookmarks/:bookmarkId", async (req, res) => {
+    try {
+      await storage.deleteBookmark(req.params.bookmarkId);
+      res.status(204).send();
     } catch (error) {
       res.status(500).json({ error: "Internal server error" });
     }

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import type { Course, TestSession, UserProgress } from "@shared/schema";
+import type { Course, TestSession, UserProgress, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 
 async function fetchDashboardData(url: string) {
@@ -35,6 +35,12 @@ export default function Dashboard() {
   const { data: userProgress } = useQuery<UserProgress[]>({
     queryKey: ["/api/users", user?.id, "progress"],
     queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
+    enabled: !!user,
+  });
+
+  const { data: bookmarks } = useQuery<Bookmark[]>({
+    queryKey: ["/api/users", user?.id, "bookmarks"],
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/bookmarks`),
     enabled: !!user,
   });
 
@@ -212,6 +218,33 @@ export default function Dashboard() {
                       <span className="material-symbols-outlined">analytics</span>
                       View Analytics
                     </Button>
+                  </div>
+
+                  {/* Bookmarks */}
+                  <div className="mt-6">
+                    <h3 className="font-semibold text-foreground mb-4">Bookmarked Questions</h3>
+                    <Card className="bg-muted/30">
+                      <CardContent className="p-4">
+                        {bookmarks && bookmarks.length > 0 ? (
+                          <div className="space-y-3">
+                            {bookmarks.map((bookmark) => (
+                              <Link key={bookmark.id} href={`/practice-test/${bookmark.testId}?question=${bookmark.questionId}`}>
+                                <a className="block p-2 rounded-lg hover:bg-accent">
+                                  <div className="font-medium text-foreground text-sm">
+                                    Test: {bookmark.testId.substring(0, 8)}...
+                                  </div>
+                                  <div className="text-xs text-muted-foreground">
+                                    Question: {bookmark.questionId}
+                                  </div>
+                                </a>
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-sm text-muted-foreground">No bookmarks yet.</p>
+                        )}
+                      </CardContent>
+                    </Card>
                   </div>
 
                   {/* Study Schedule */}
