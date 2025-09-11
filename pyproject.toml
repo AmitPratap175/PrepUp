@@ -10,6 +10,9 @@ dependencies = [
     "django-cors-headers>=4.8.0",
     "django-restframework>=0.0.1",
     "djangorestframework>=3.16.1",
+    "groq>=0.31.1",
+    "html5lib>=1.1",
+    "langchain-openai>=0.3.33",
     "playwright>=1.55.0",
     "psycopg2-binary>=2.9.10",
 ]

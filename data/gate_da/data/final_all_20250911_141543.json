@@ -1,0 +1,3500 @@
+{
+  "questions": [
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, ∀𝑧 ∈ ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "For the first hidden layer (h1), let the neurons be h11,h12,h13h11=1&sdot;x1+1&sdot;x2=x1+x2h12=1&sdot;x1+1&sdot;x3=x1+x3h13=1&sdot;x1+1&sdot;x2+1&sdot;x3=x1+x2+x3For the second hidden layer (h2), let the neurons be h21,h22h21=h22=2&sdot;h11+2&sdot;h12+2&sdot;h13 =2(3x1+2x2+2x3)For the output layer, the final output is:y=3&sdot;h21+3&sdot;h22=3(h21+h22) =12(3x1+2x2+2x3) = 36x1 + 24x2 + 24x3Comparing with resultant artificial neural network, p=36, q=24 and r=24",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, &forall;𝑧 &isin; ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "(B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "(C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "(D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "(A) 𝑝 = 36, 𝑞 = 24,𝑟 = 24",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is (A) 𝑝 = 36, 𝑞 = 24,𝑟 = 24"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "For the first hidden layer (h1), let the neurons be h11,h12,h13h11=1&sdot;x1+1&sdot;x2=x1+x2h12=1&sdot;x1+1&sdot;x3=x1+x3h13=1&sdot;x1+1&sdot;x2+1&sdot;x3=x1+x2+x3For the second hidden layer (h2), let the neurons be h21,h22h21=h22=2&sdot;h11+2&sdot;h12+2&sdot;h13 =2(3x1+2x2+2x3)For the output layer, the final output is:y=3&sdot;h21+3&sdot;h22=3(h21+h22) =12(3x1+2x2+2x3) = 36x1 + 24x2 + 24x3Comparing with resultant artificial neural network, p=36, q=24 and r=24"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, ∀𝑧 ∈ ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?\n\n**Options:**\n- **A**. (B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36 ✅\n- **B**. (C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24\n- **C**. (D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Three fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T ∧ S) ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The event T&and;S (two or more heads and two or more tails) cannot occur simultaneously, as having two or more heads leaves at most one tail and vice versa. Hence, the probability of T&and;ST is 0.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Three fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T &and; S) ?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "0.5",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "0.25",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The event T&and;S (two or more heads and two or more tails) cannot occur simultaneously, as having two or more heads leaves at most one tail and vice versa. Hence, the probability of T&and;ST is 0."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nThree fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T ∧ S) ?\n\n**Options:**\n- **A**. 0.5 ✅\n- **B**. 0.25\n- **C**. 1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following Python function:1 Python def fun(D, s1, s2): if s1 &lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "It finds the smallest element in D from index s1 to s2, both inclusive.&nbsp;",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&nbsp;",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&nbsp;",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given function recursively swaps elements at indices s1 and s2, incrementing s1 and decrementing s2, effectively reversing the sublist between s1 and s2, inclusive.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following Python function:1 Python def fun(D, s1, s2): if s1 &amp;lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "It finds the smallest element in D from index s1 to s2, both inclusive.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "It reverses the list D between indices s1 and s2, both inclusive",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is It reverses the list D between indices s1 and s2, both inclusive"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The given function recursively swaps elements at indices s1 and s2, incrementing s1 and decrementing s2, effectively reversing the sublist between s1 and s2, inclusive."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following Python function:1 Python def fun(D, s1, s2): if s1 &lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&nbsp;\n\n**Options:**\n- **A**. It finds the smallest element in D from index s1 to s2, both inclusive.&nbsp;\n- **B**. It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&nbsp;\n- **C**. It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&nbsp; ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Let F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "F(n)=F(⌊n/2⌋)+F(⌈n/2⌉)",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "F(n)=F(⌊n/2⌋)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "F(n)=F(n-1)+1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In binary search, the maximum number of comparisons for an array of size n is determined by halving the array at each step and adding one comparison for each level of recursion.Hence, The recurrence relation is F(n)=F(&lfloor;n/2&rfloor;)+1",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Let F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "F(n)=F(&lfloor;n/2&rfloor;)+F(&lceil;n/2&rceil;)",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "F(n)=F(&lfloor;n/2&rfloor;)",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "F(n)=F(n-1)+1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "F(n)=F(&lfloor;n/2&rfloor;)+1",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is F(n)=F(&lfloor;n/2&rfloor;)+1"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "In binary search, the maximum number of comparisons for an array of size n is determined by halving the array at each step and adding one comparison for each level of recursion.Hence, The recurrence relation is F(n)=F(&lfloor;n/2&rfloor;)+1"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nLet F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?\n\n**Options:**\n- **A**. F(n)=F(⌊n/2⌋)+F(⌈n/2⌉) ✅\n- **B**. F(n)=F(⌊n/2⌋)\n- **C**. F(n)=F(n-1)+1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] ← 1for 𝑖 ←2 to length(X) 𝑆[𝑖] ← 1 if 𝑋[𝑖 − 1] ≤ 𝑋[𝑖] 𝑆[𝑖] ← 𝑆[𝑖] + 𝑆[𝑖 − 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "[1,1,2,3,4]",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "[1,1,2,3,3]",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "[1,1,2,1,5]",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The function computeS(X) initializes S[1] to 1 and iterates through the array X. For each i from 2 to the length of X, if X[i-1] &amp;lt;= X[i], it updates S[i] by adding S[i-1]. Otherwise, S[i] is set to 1.For X=[6,3,5,4,10]:S[1]=1X[1]&amp;gt;X[2], so S[2]=1X[2]&amp;lt;X[3], so S[3]=S[2]+1=2X[3]&amp;gt;X[4], so S[4]=1X[4]&amp;lt;X[5], so S[5]=S[4]+1=2Output: [1, 1, 2, 1, 2]",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] &larr; 1for 𝑖 &larr;2 to length(X) 𝑆[𝑖] &larr; 1 if 𝑋[𝑖 &minus; 1] &le; 𝑋[𝑖] 𝑆[𝑖] &larr; 𝑆[𝑖] + 𝑆[𝑖 &minus; 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "[1,1,2,3,4]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "[1,1,2,3,3]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "[1,1,2,1,5]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "[1,1,2,1,2]",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is [1,1,2,1,2]"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The function computeS(X) initializes S[1] to 1 and iterates through the array X. For each i from 2 to the length of X, if X[i-1] &amp;lt;= X[i], it updates S[i] by adding S[i-1]. Otherwise, S[i] is set to 1.For X=[6,3,5,4,10]:S[1]=1X[1]&amp;gt;X[2], so S[2]=1X[2]&amp;lt;X[3], so S[3]=S[2]+1=2X[3]&amp;gt;X[4], so S[4]=1X[4]&amp;lt;X[5], so S[5]=S[4]+1=2Output: [1, 1, 2, 1, 2]"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] ← 1for 𝑖 ←2 to length(X) 𝑆[𝑖] ← 1 if 𝑋[𝑖 − 1] ≤ 𝑋[𝑖] 𝑆[𝑖] ← 𝑆[𝑖] + 𝑆[𝑖 − 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?\n\n**Options:**\n- **A**. [1,1,2,3,4]\n- **B**. [1,1,2,3,3]\n- **C**. [1,1,2,1,5] ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The function recursively counts all leaf nodes in the tree-like structure defined by child_dict.Starting from key 0, it processes [1, 2].Key 1 expands to [3, 4, 5] (all leaves).Key 2 expands to [6, 7, 8] (all leaves).Leaves: 3, 4, 5, 6, 7, 8 + 1, 2 (2 root connections) = 9.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 4,
+          "text": "9",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 9"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The function recursively counts all leaf nodes in the tree-like structure defined by child_dict.Starting from key 0, it processes [1, 2].Key 1 expands to [3, 4, 5] (all leaves).Key 2 expands to [6, 7, 8] (all leaves).Leaves: 3, 4, 5, 6, 7, 8 + 1, 2 (2 root connections) = 9."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?\n\n**Options:**\n- **A**. 6\n- **B**. 1\n- **C**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "A fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let E[X} be the expected number of throws. If the first roll is odd (1/2 probability), as one toss is wasted the expected throws are E[X]+1. If it starts with an even followed by an odd (1/4 probability), it takes E[X]+2. If the first two are even (1/4} probability), it takes 2 throws. So, E[X]=1/2(E[X]+1)+1/4(E[X]+2)+1/4(2)E[X] = 6.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "A fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "6",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 6"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Let E[X} be the expected number of throws. If the first roll is odd (1/2 probability), as one toss is wasted the expected throws are E[X]+1. If it starts with an even followed by an odd (1/4 probability), it takes E[X]+2. If the first two are even (1/4} probability), it takes 2 throws. So, E[X]=1/2(E[X]+1)+1/4(E[X]+2)+1/4(2)E[X] = 6."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nA fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&nbsp;\n\n**Options:**\n- **A**. 2\n- **B**. 4\n- **C**. 8 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "$$ ext{Let } M = begin{bmatrix} 1 &amp; 2 &amp; 3 3 &amp; 1 &amp; 3 4 &amp; 3 &amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have |M| = 0. Since, |A+B| &amp;lt;= |A| + |B|&there4;&amp;nbsp;|M2&amp;nbsp;+ 12M| &amp;lt;= |M2| + |12M|RHS of which is :&amp;nbsp;|M|2&amp;nbsp;+ 123|M| (By properties of determinants)= 0 + 0 = 0",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "$$ ext{Let } M = begin{bmatrix} 1 &amp;amp; 2 &amp;amp; 3 3 &amp;amp; 1 &amp;amp; 3 4 &amp;amp; 3 &amp;amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We have |M| = 0. Since, |A+B| &amp;lt;= |A| + |B|&there4;&amp;nbsp;|M2&amp;nbsp;+ 12M| &amp;lt;= |M2| + |12M|RHS of which is :&amp;nbsp;|M|2&amp;nbsp;+ 123|M| (By properties of determinants)= 0 + 0 = 0"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\n$$ ext{Let } M = begin{bmatrix} 1 &amp; 2 &amp; 3 3 &amp; 1 &amp; 3 4 &amp; 3 &amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given array is already sorted in ascending order. In QuickSort, no swaps are required for a sorted array when using the last element as the pivot, resulting in 0 swap",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The given array is already sorted in ascending order. In QuickSort, no swaps are required for a sorted array when using the last element as the pivot, resulting in 0 swap"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(ii) only&nbsp;",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Preorder + Inorder (Option A): Preorder identifies the root nodes, and Inorder specifies the left and right subtrees. Together, they uniquely reconstruct the tree.Inorder + Postorder (Option B): Postorder identifies the root nodes in reverse, and Inorder specifies the subtrees. This combination also uniquely reconstructs the tree.Preorder + Postorder (Option C): For full binary trees, Preorder and Postorder can uniquely reconstruct the tree, as every internal node in a full binary tree has exactly two children.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "(ii) only&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "(i) and (iii)",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is (i) and (iii)"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Preorder + Inorder (Option A): Preorder identifies the root nodes, and Inorder specifies the left and right subtrees. Together, they uniquely reconstruct the tree.Inorder + Postorder (Option B): Postorder identifies the root nodes in reverse, and Inorder specifies the subtrees. This combination also uniquely reconstructs the tree.Preorder + Postorder (Option C): For full binary trees, Preorder and Postorder can uniquely reconstruct the tree, as every internal node in a full binary tree has exactly two children."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?\n\n**Options:**\n- **A**. (ii) only&nbsp;\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, ∀𝑧 ∈ ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "For the first hidden layer (h1), let the neurons be h11,h12,h13h11=1&sdot;x1+1&sdot;x2=x1+x2h12=1&sdot;x1+1&sdot;x3=x1+x3h13=1&sdot;x1+1&sdot;x2+1&sdot;x3=x1+x2+x3For the second hidden layer (h2), let the neurons be h21,h22h21=h22=2&sdot;h11+2&sdot;h12+2&sdot;h13 =2(3x1+2x2+2x3)For the output layer, the final output is:y=3&sdot;h21+3&sdot;h22=3(h21+h22) =12(3x1+2x2+2x3) = 36x1 + 24x2 + 24x3Comparing with resultant artificial neural network, p=36, q=24 and r=24",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, &forall;𝑧 &isin; ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "(B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "(C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "(D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "(A) 𝑝 = 36, 𝑞 = 24,𝑟 = 24",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is (A) 𝑝 = 36, 𝑞 = 24,𝑟 = 24"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "For the first hidden layer (h1), let the neurons be h11,h12,h13h11=1&sdot;x1+1&sdot;x2=x1+x2h12=1&sdot;x1+1&sdot;x3=x1+x3h13=1&sdot;x1+1&sdot;x2+1&sdot;x3=x1+x2+x3For the second hidden layer (h2), let the neurons be h21,h22h21=h22=2&sdot;h11+2&sdot;h12+2&sdot;h13 =2(3x1+2x2+2x3)For the output layer, the final output is:y=3&sdot;h21+3&sdot;h22=3(h21+h22) =12(3x1+2x2+2x3) = 36x1 + 24x2 + 24x3Comparing with resultant artificial neural network, p=36, q=24 and r=24"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈 activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, ∀𝑧 ∈ ℝ). ℝ denotes the set of real numbers. The connections and their corresponding weights are shown in the Figures. The biases at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs equivalent, when 𝑥1 ,𝑥2 , 𝑥3 are positive?\n\n**Options:**\n- **A**. (B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36 ✅\n- **B**. (C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24\n- **C**. (D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Three fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T ∧ S) ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The event T&and;S (two or more heads and two or more tails) cannot occur simultaneously, as having two or more heads leaves at most one tail and vice versa. Hence, the probability of T&and;ST is 0.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Three fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T &and; S) ?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "0.5",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "0.25",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The event T&and;S (two or more heads and two or more tails) cannot occur simultaneously, as having two or more heads leaves at most one tail and vice versa. Hence, the probability of T&and;ST is 0."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nThree fair coins are tossed independently. T is the event that two or more tosses result in heads. S is the event that two or more tosses result in tails. What is the probability of the event that (T ∧ S) ?\n\n**Options:**\n- **A**. 0.5 ✅\n- **B**. 0.25\n- **C**. 1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following Python function:1 Python def fun(D, s1, s2): if s1 &lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "It finds the smallest element in D from index s1 to s2, both inclusive.&nbsp;",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&nbsp;",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&nbsp;",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given function recursively swaps elements at indices s1 and s2, incrementing s1 and decrementing s2, effectively reversing the sublist between s1 and s2, inclusive.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following Python function:1 Python def fun(D, s1, s2): if s1 &amp;lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "It finds the smallest element in D from index s1 to s2, both inclusive.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "It reverses the list D between indices s1 and s2, both inclusive",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is It reverses the list D between indices s1 and s2, both inclusive"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The given function recursively swaps elements at indices s1 and s2, incrementing s1 and decrementing s2, effectively reversing the sublist between s1 and s2, inclusive."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following Python function:1 Python def fun(D, s1, s2): if s1 &lt; s2: D[s1], D[s2] = D[s2], D[s1] fun(D, s1+1, s2- What does this Python function fun() do? Select the ONE appropriate option below.&nbsp;\n\n**Options:**\n- **A**. It finds the smallest element in D from index s1 to s2, both inclusive.&nbsp;\n- **B**. It performs a merge sort in-place on this list D between indices s1 and s2, both inclusive.&nbsp;\n- **C**. It swaps the elements in D at indices s1 and s2, and leaves the remaining elements unchanged.&nbsp; ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Let F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "F(n)=F(⌊n/2⌋)+F(⌈n/2⌉)",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "F(n)=F(⌊n/2⌋)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "F(n)=F(n-1)+1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In binary search, the maximum number of comparisons for an array of size n is determined by halving the array at each step and adding one comparison for each level of recursion.Hence, The recurrence relation is F(n)=F(&lfloor;n/2&rfloor;)+1",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Let F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "F(n)=F(&lfloor;n/2&rfloor;)+F(&lceil;n/2&rceil;)",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "F(n)=F(&lfloor;n/2&rfloor;)",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "F(n)=F(n-1)+1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "F(n)=F(&lfloor;n/2&rfloor;)+1",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is F(n)=F(&lfloor;n/2&rfloor;)+1"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "In binary search, the maximum number of comparisons for an array of size n is determined by halving the array at each step and adding one comparison for each level of recursion.Hence, The recurrence relation is F(n)=F(&lfloor;n/2&rfloor;)+1"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nLet F(n) denote the maximum number of comparisons made while searching for an entry in a sorted array of size 𝑛 using binary search. Which ONE of the following options is TRUE?\n\n**Options:**\n- **A**. F(n)=F(⌊n/2⌋)+F(⌈n/2⌉) ✅\n- **B**. F(n)=F(⌊n/2⌋)\n- **C**. F(n)=F(n-1)+1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] ← 1for 𝑖 ←2 to length(X) 𝑆[𝑖] ← 1 if 𝑋[𝑖 − 1] ≤ 𝑋[𝑖] 𝑆[𝑖] ← 𝑆[𝑖] + 𝑆[𝑖 − 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "[1,1,2,3,4]",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "[1,1,2,3,3]",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "[1,1,2,1,5]",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The function computeS(X) initializes S[1] to 1 and iterates through the array X. For each i from 2 to the length of X, if X[i-1] &amp;lt;= X[i], it updates S[i] by adding S[i-1]. Otherwise, S[i] is set to 1.For X=[6,3,5,4,10]:S[1]=1X[1]&amp;gt;X[2], so S[2]=1X[2]&amp;lt;X[3], so S[3]=S[2]+1=2X[3]&amp;gt;X[4], so S[4]=1X[4]&amp;lt;X[5], so S[5]=S[4]+1=2Output: [1, 1, 2, 1, 2]",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] &larr; 1for 𝑖 &larr;2 to length(X) 𝑆[𝑖] &larr; 1 if 𝑋[𝑖 &minus; 1] &le; 𝑋[𝑖] 𝑆[𝑖] &larr; 𝑆[𝑖] + 𝑆[𝑖 &minus; 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "[1,1,2,3,4]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "[1,1,2,3,3]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "[1,1,2,1,5]",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "[1,1,2,1,2]",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is [1,1,2,1,2]"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The function computeS(X) initializes S[1] to 1 and iterates through the array X. For each i from 2 to the length of X, if X[i-1] &amp;lt;= X[i], it updates S[i] by adding S[i-1]. Otherwise, S[i] is set to 1.For X=[6,3,5,4,10]:S[1]=1X[1]&amp;gt;X[2], so S[2]=1X[2]&amp;lt;X[3], so S[3]=S[2]+1=2X[3]&amp;gt;X[4], so S[4]=1X[4]&amp;lt;X[5], so S[5]=S[4]+1=2Output: [1, 1, 2, 1, 2]"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the function computeS(X) whose pseudocode is given below:computeS(X)𝑆[1] ← 1for 𝑖 ←2 to length(X) 𝑆[𝑖] ← 1 if 𝑋[𝑖 − 1] ≤ 𝑋[𝑖] 𝑆[𝑖] ← 𝑆[𝑖] + 𝑆[𝑖 − 1] end if end for return S which ONE of the following values is returned by the function computeS(x) for X=[6,3,5,4,10]?\n\n**Options:**\n- **A**. [1,1,2,3,4]\n- **B**. [1,1,2,3,3]\n- **C**. [1,1,2,1,5] ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The function recursively counts all leaf nodes in the tree-like structure defined by child_dict.Starting from key 0, it processes [1, 2].Key 1 expands to [3, 4, 5] (all leaves).Key 2 expands to [6, 7, 8] (all leaves).Leaves: 3, 4, 5, 6, 7, 8 + 1, 2 (2 root connections) = 9.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 4,
+          "text": "9",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 9"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The function recursively counts all leaf nodes in the tree-like structure defined by child_dict.Starting from key 0, it processes [1, 2].Key 1 expands to [3, 4, 5] (all leaves).Key 2 expands to [6, 7, 8] (all leaves).Leaves: 3, 4, 5, 6, 7, 8 + 1, 2 (2 root connections) = 9."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following python code: Python def count(child_dict, i): if i not in child_dict.keys(): return 1 ans = 1 for j in child_dict[i]: ans += count(child_dict, j) return ans child_dict = dict() child_dict[0] = [1,2] child_dict[1] = [3,4,5] child_dict[2] = [6,7,8] print(count(child_dict,0)) Which ONE of the following is the output of this code?\n\n**Options:**\n- **A**. 6\n- **B**. 1\n- **C**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "A fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let E[X} be the expected number of throws. If the first roll is odd (1/2 probability), as one toss is wasted the expected throws are E[X]+1. If it starts with an even followed by an odd (1/4 probability), it takes E[X]+2. If the first two are even (1/4} probability), it takes 2 throws. So, E[X]=1/2(E[X]+1)+1/4(E[X]+2)+1/4(2)E[X] = 6.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "A fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "6",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 6"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Let E[X} be the expected number of throws. If the first roll is odd (1/2 probability), as one toss is wasted the expected throws are E[X]+1. If it starts with an even followed by an odd (1/4 probability), it takes E[X]+2. If the first two are even (1/4} probability), it takes 2 throws. So, E[X]=1/2(E[X]+1)+1/4(E[X]+2)+1/4(2)E[X] = 6."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nA fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown Independently. What is the expected number of times the die is thrown until two consecutive throws of even numbers are seen?&nbsp;\n\n**Options:**\n- **A**. 2\n- **B**. 4\n- **C**. 8 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "$$ ext{Let } M = begin{bmatrix} 1 &amp; 2 &amp; 3 3 &amp; 1 &amp; 3 4 &amp; 3 &amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have |M| = 0. Since, |A+B| &amp;lt;= |A| + |B|&there4;&amp;nbsp;|M2&amp;nbsp;+ 12M| &amp;lt;= |M2| + |12M|RHS of which is :&amp;nbsp;|M|2&amp;nbsp;+ 123|M| (By properties of determinants)= 0 + 0 = 0",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "$$ ext{Let } M = begin{bmatrix} 1 &amp;amp; 2 &amp;amp; 3 3 &amp;amp; 1 &amp;amp; 3 4 &amp;amp; 3 &amp;amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We have |M| = 0. Since, |A+B| &amp;lt;= |A| + |B|&there4;&amp;nbsp;|M2&amp;nbsp;+ 12M| &amp;lt;= |M2| + |12M|RHS of which is :&amp;nbsp;|M|2&amp;nbsp;+ 123|M| (By properties of determinants)= 0 + 0 = 0"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\n$$ ext{Let } M = begin{bmatrix} 1 &amp; 2 &amp; 3 3 &amp; 1 &amp; 3 4 &amp; 3 &amp; 6 end{bmatrix}$$. $$ ext{Find } det(M^2 + 12M)$$\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given array is already sorted in ascending order. In QuickSort, no swaps are required for a sorted array when using the last element as the pivot, resulting in 0 swap",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "0",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 0"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "The given array is already sorted in ascending order. In QuickSort, no swaps are required for a sorted array when using the last element as the pivot, resulting in 0 swap"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider sorting the following array of integers in ascending order using an in-place Quicksort algorithm that uses the last element as the pivot.60708090100The minimum number of swaps perfoemed during this quicksort ?\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2024",
+      "passage_text": "",
+      "question_text": "Consider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(ii) only&nbsp;",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Preorder + Inorder (Option A): Preorder identifies the root nodes, and Inorder specifies the left and right subtrees. Together, they uniquely reconstruct the tree.Inorder + Postorder (Option B): Postorder identifies the root nodes in reverse, and Inorder specifies the subtrees. This combination also uniquely reconstructs the tree.Preorder + Postorder (Option C): For full binary trees, Preorder and Postorder can uniquely reconstruct the tree, as every internal node in a full binary tree has exactly two children.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2024",
+        "text": "Consider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "(ii) only&amp;nbsp;",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "(i) and (iii)",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is (i) and (iii)"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Preorder + Inorder (Option A): Preorder identifies the root nodes, and Inorder specifies the left and right subtrees. Together, they uniquely reconstruct the tree.Inorder + Postorder (Option B): Postorder identifies the root nodes in reverse, and Inorder specifies the subtrees. This combination also uniquely reconstructs the tree.Preorder + Postorder (Option C): For full binary trees, Preorder and Postorder can uniquely reconstruct the tree, as every internal node in a full binary tree has exactly two children."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2024)\n\nConsider the following tree traversals on a full binary tree:1.PreOrder2.Inorder3.PostOrderWhich of the following traversal options is/are suffiecient to uniquely reconstruct the full Binary Tree?\n\n**Options:**\n- **A**. (ii) only&nbsp;\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Courage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Yelling",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Yawning",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Glaring",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "(A) LongingYearning and Longing are synonyms, just like Courage and Bravery.(B) Yelling&amp;nbsp;Yelling means shouting, which is unrelated to yearning.(C) Yawning&amp;nbsp;Yawning is a physical action associated with tiredness, not related to yearning.(D) Glaring&amp;nbsp;Glaring means staring intensely, which does not fit the analogy.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Courage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "Yelling",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "Yawning",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "Glaring",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "Longing",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is Longing"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "(A) LongingYearning and Longing are synonyms, just like Courage and Bravery.(B) Yelling&amp;nbsp;Yelling means shouting, which is unrelated to yearning.(C) Yawning&amp;nbsp;Yawning is a physical action associated with tiredness, not related to yearning.(D) Glaring&amp;nbsp;Glaring means staring intensely, which does not fit the analogy."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nCourage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.\n\n**Options:**\n- **A**. Yelling ✅\n- **B**. Yawning\n- **C**. Glaring\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "We __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "have been playing",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "would have been playing",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "could be playing",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "(A) have been playing&amp;nbsp;Present perfect continuous tense, used when an action started in the past and continues into the present.Incorrect, because the sentence refers to a past event.(B) had been playing&amp;nbsp;Past perfect continuous tense, used to describe an ongoing action that was interrupted by another past action.Correct choice, as it fits the timeline of events.(C) would have been playing&amp;nbsp;Used for hypothetical situations in the past (conditional).Incorrect, because there is no conditional clause.(D) could be playing&amp;nbsp;Incorrect, as it suggests possibility rather than a past continuous action.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "We __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "have been playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "would have been playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "could be playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "had been playing",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is had been playing"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "(A) have been playing&amp;nbsp;Present perfect continuous tense, used when an action started in the past and continues into the present.Incorrect, because the sentence refers to a past event.(B) had been playing&amp;nbsp;Past perfect continuous tense, used to describe an ongoing action that was interrupted by another past action.Correct choice, as it fits the timeline of events.(C) would have been playing&amp;nbsp;Used for hypothetical situations in the past (conditional).Incorrect, because there is no conditional clause.(D) could be playing&amp;nbsp;Incorrect, as it suggests possibility rather than a past continuous action."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nWe __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&nbsp;\n\n**Options:**\n- **A**. have been playing\n- **B**. would have been playing ✅\n- **C**. could be playing\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A 4 × 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 ≤ 4 is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Step 1: List all pixels[0102473355426732] 0456 1757 0343 2322 Step 2: Count values &le;4&le;4Values &le; 4 are:Row 1: 0, 1, 0, 2 &rarr; 4 valuesRow 2: 4, 3, 3 &rarr; 3 valuesRow 3: 4, 2 &rarr; 2 valuesRow 4: 3, 2 &rarr; 2 valuesTotal = 4 + 3 + 2 + 2 = 11",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A 4 &times; 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 &le; 4 is:",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "9",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "11",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 11"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Step 1: List all pixels[0102473355426732] 0456 1757 0343 2322 Step 2: Count values &le;4&le;4Values &le; 4 are:Row 1: 0, 1, 0, 2 &rarr; 4 valuesRow 2: 4, 3, 3 &rarr; 3 valuesRow 3: 4, 2 &rarr; 2 valuesRow 4: 3, 2 &rarr; 2 valuesTotal = 4 + 3 + 2 + 2 = 11"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA 4 × 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 ≤ 4 is:\n\n**Options:**\n- **A**. 3\n- **B**. 8\n- **C**. 9 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "In the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P = 5; Q = 6; R = 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "P = 3; Q = 6; R = 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "P = 5; Q = 3; R = 6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that:Rectangle is represented by 1Triangle is represented by 2Ellipse is represented by 3We need to identify the regions P, Q, and R based on which shapes they belong to.now : R comes in rectangle and triangle R = 1+2 = 3 Q comes in triangle and ellipse Q = 2+3 = 5 p comes in triangle ,rectangle and ellipse. p = 1+2+3 = 6P = 6; Q = 5; R = 3",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "In the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "P = 5; Q = 6; R = 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "P = 3; Q = 6; R = 6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "P = 5; Q = 3; R = 6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "P = 6; Q = 5; R = 3",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is P = 6; Q = 5; R = 3"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We are given that:Rectangle is represented by 1Triangle is represented by 2Ellipse is represented by 3We need to identify the regions P, Q, and R based on which shapes they belong to.now : R comes in rectangle and triangle R = 1+2 = 3 Q comes in triangle and ellipse Q = 2+3 = 5 p comes in triangle ,rectangle and ellipse. p = 1+2+3 = 6P = 6; Q = 5; R = 3"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nIn the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?\n\n**Options:**\n- **A**. P = 5; Q = 6; R = 3 ✅\n- **B**. P = 3; Q = 6; R = 6\n- **C**. P = 5; Q = 3; R = 6\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A rectangle has a length L and a width W, where L &gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Perimeter increases by 10%.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Length of the diagonals increases by 10%.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The rectangle becomes a square.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "If the width W is increased by 10%, the new W will become 1.10 W:New&amp;nbsp;Area = L&times;1.10W=1.10&times;(L&times;W)New Area = 1.10 (Old Area)So, the area increases by 10%.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A rectangle has a length L and a width W, where L &amp;gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "Perimeter increases by 10%.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "Length of the diagonals increases by 10%.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "The rectangle becomes a square.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "Area increases by 10%.",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is Area increases by 10%."
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "If the width W is increased by 10%, the new W will become 1.10 W:New&amp;nbsp;Area = L&times;1.10W=1.10&times;(L&times;W)New Area = 1.10 (Old Area)So, the area increases by 10%."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA rectangle has a length L and a width W, where L &gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?\n\n**Options:**\n- **A**. Perimeter increases by 10%.\n- **B**. Length of the diagonals increases by 10%.\n- **C**. The rectangle becomes a square. ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P – 2; Q – 3; R – 1; S – 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "P – 4; Q – 1; R – 2; S – 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "P – 1; Q – 2; R – 4; S – 3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "P. \"This house is in a mess.\"Best response: Not explicitly mentioned in responses, but indirectly fits none well.(No direct match, so we skip for now).Q. \"I am not happy with the marks given to me.\"Best response: \"Don&rsquo;t worry, I will take it up with your teacher.\" (4)So, Q &rarr; 4.R. \"Politics is a subject I avoid talking about.\"Best response: \"Alright, I won&rsquo;t bring it up during our conversations.\" (1)So, R &rarr; 1.S. \"I don&rsquo;t know what this word means.\"Best response: \"Well, you can easily look it up.\" (2)So, S &rarr; 2.Now, for P, by elimination, the best remaining response is:\"No problem, let me clear it up for you.\" (3)So, P &rarr; 3.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "P &ndash; 2; Q &ndash; 3; R &ndash; 1; S &ndash; 4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "P &ndash; 4; Q &ndash; 1; R &ndash; 2; S &ndash; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "P &ndash; 1; Q &ndash; 2; R &ndash; 4; S &ndash; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "P &ndash; 3; Q &ndash; 4; R &ndash; 1; S &ndash; 2",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is P &ndash; 3; Q &ndash; 4; R &ndash; 1; S &ndash; 2"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "P. \"This house is in a mess.\"Best response: Not explicitly mentioned in responses, but indirectly fits none well.(No direct match, so we skip for now).Q. \"I am not happy with the marks given to me.\"Best response: \"Don&rsquo;t worry, I will take it up with your teacher.\" (4)So, Q &rarr; 4.R. \"Politics is a subject I avoid talking about.\"Best response: \"Alright, I won&rsquo;t bring it up during our conversations.\" (1)So, R &rarr; 1.S. \"I don&rsquo;t know what this word means.\"Best response: \"Well, you can easily look it up.\" (2)So, S &rarr; 2.Now, for P, by elimination, the best remaining response is:\"No problem, let me clear it up for you.\" (3)So, P &rarr; 3."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nColumn-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.\n\n**Options:**\n- **A**. P – 2; Q – 3; R – 1; S – 4\n- **B**. P – 4; Q – 1; R – 2; S – 3 ✅\n- **C**. P – 1; Q – 2; R – 4; S – 3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Weight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "𝑎1 &lt; 𝑎2 &lt; 50",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 &lt; 𝑎1 &lt; 𝑎2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Either 𝑎1 = 50 or 𝑎2 = 50",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given:Weight increases until age 50, then decreases.Both brothers have the same weight function.a1&amp;lt;a2a_1 &amp;lt; a_2a1&amp;lt;a2 and they attain same weight.Key Idea:Since the function is symmetric around age 50, same weight occurs when:a1+a2=100&rArr;One&amp;nbsp;brother&amp;nbsp;is&amp;nbsp;younger&amp;nbsp;than&amp;nbsp;50,&amp;nbsp;the&amp;nbsp;other&amp;nbsp;older.Correct Option: (B) a1&amp;lt;50&amp;lt;a2",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Weight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &amp;lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "𝑎1 &amp;lt; 𝑎2 &amp;lt; 50",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "50 &amp;lt; 𝑎1 &amp;lt; 𝑎2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "Either 𝑎1 = 50 or 𝑎2 = 50",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "𝑎1 &amp;lt; 50 &amp;lt; 𝑎2",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 𝑎1 &amp;lt; 50 &amp;lt; 𝑎2"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We are given:Weight increases until age 50, then decreases.Both brothers have the same weight function.a1&amp;lt;a2a_1 &amp;lt; a_2a1&amp;lt;a2 and they attain same weight.Key Idea:Since the function is symmetric around age 50, same weight occurs when:a1+a2=100&rArr;One&amp;nbsp;brother&amp;nbsp;is&amp;nbsp;younger&amp;nbsp;than&amp;nbsp;50,&amp;nbsp;the&amp;nbsp;other&amp;nbsp;older.Correct Option: (B) a1&amp;lt;50&amp;lt;a2"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nWeight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?\n\n**Options:**\n- **A**. 𝑎1 &lt; 𝑎2 &lt; 50\n- **B**. 50 &lt; 𝑎1 &lt; 𝑎2 ✅\n- **C**. Either 𝑎1 = 50 or 𝑎2 = 50\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4; 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3; 3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3; 2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Each triangle is used only once to form squares.The squares have side length r, which is the radius of the circle.We need to determine how many such squares can be formed and how many triangles are required per square.Each square is likely formed by 4 triangles because:The dodecagon is divided into 12 triangles.Each square uses 4 triangles.The total number of squares that can be formed = Total triangles (12) / Triangles per square (4) = 3.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "4; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "3; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "3; 2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "3; 4",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 3; 4"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Each triangle is used only once to form squares.The squares have side length r, which is the radius of the circle.We need to determine how many such squares can be formed and how many triangles are required per square.Each square is likely formed by 4 triangles because:The dodecagon is divided into 12 triangles.Each square uses 4 triangles.The total number of squares that can be formed = Total triangles (12) / Triangles per square (4) = 3."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.\n\n**Options:**\n- **A**. 4; 3 ✅\n- **B**. 3; 3\n- **C**. 3; 2\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "If a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2-1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "215",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since $$ begin{aligned}3^{x^2} &amp;amp;= 3^3 imes (3^2)^x (3^2)^x &amp;amp;= 3^{2x} Rightarrow quad 3^{x^2} &amp;amp;= 3^3 imes 3^{2x} &amp;amp;= 3^{2x + 3} ext{Since bases match:} quad x^2 &amp;amp;= 2x + 3 end{aligned}$$hence x = 1 ,-3 therefore , c is the correct option .",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "If a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "2-1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "20",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "215",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "23",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 23"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Since $$ begin{aligned}3^{x^2} &amp;amp;= 3^3 imes (3^2)^x (3^2)^x &amp;amp;= 3^{2x} Rightarrow quad 3^{x^2} &amp;amp;= 3^3 imes 3^{2x} &amp;amp;= 3^{2x + 3} ext{Since bases match:} quad x^2 &amp;amp;= 2x + 3 end{aligned}$$hence x = 1 ,-3 therefore , c is the correct option ."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nIf a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:\n\n**Options:**\n- **A**. 2-1\n- **B**. 20\n- **C**. 215 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "The number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 − 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6,300",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6,500",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Dr. Gita's earnings per shift depend on the number of patients she consults, with the formula for her earnings being ₹1000(X - 0.2), where XXX is the number of patients. By analyzing the provided data on the number of shifts and patients:For 5 patients per shift: 20 shifts contributed ₹100.For 6 patients per shift: 40 shifts contributed ₹240.For 7 patients per shift: 30 shifts contributed ₹210.For 8 patients per shift: 10 shifts contributed ₹80.average no. of patient per shift= total patients/ total shifts= 630/100=6.3Average amt earned= 1000(6.3-0.2)1000 x 6.1=6100Adding these amounts gives the total earnings of ₹610,000 across the 100 shifts. The average will be ₹6100",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "The number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 &minus; 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "6,300",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "6,000",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "6,500",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "6,100",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 6,100"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Dr. Gita's earnings per shift depend on the number of patients she consults, with the formula for her earnings being ₹1000(X - 0.2), where XXX is the number of patients. By analyzing the provided data on the number of shifts and patients:For 5 patients per shift: 20 shifts contributed ₹100.For 6 patients per shift: 40 shifts contributed ₹240.For 7 patients per shift: 30 shifts contributed ₹210.For 8 patients per shift: 10 shifts contributed ₹80.average no. of patient per shift= total patients/ total shifts= 630/100=6.3Average amt earned= 1000(6.3-0.2)1000 x 6.1=6100Adding these amounts gives the total earnings of ₹610,000 across the 100 shifts. The average will be ₹6100"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nThe number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 − 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative\n\n**Options:**\n- **A**. 6,300 ✅\n- **B**. 6,000\n- **C**. 6,500\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Courage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Yelling",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Yawning",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Glaring",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "(A) LongingYearning and Longing are synonyms, just like Courage and Bravery.(B) Yelling&amp;nbsp;Yelling means shouting, which is unrelated to yearning.(C) Yawning&amp;nbsp;Yawning is a physical action associated with tiredness, not related to yearning.(D) Glaring&amp;nbsp;Glaring means staring intensely, which does not fit the analogy.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Courage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "Yelling",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "Yawning",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "Glaring",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "Longing",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is Longing"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "(A) LongingYearning and Longing are synonyms, just like Courage and Bravery.(B) Yelling&amp;nbsp;Yelling means shouting, which is unrelated to yearning.(C) Yawning&amp;nbsp;Yawning is a physical action associated with tiredness, not related to yearning.(D) Glaring&amp;nbsp;Glaring means staring intensely, which does not fit the analogy."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nCourage : Bravery :: Yearning : __________ Select the most appropriate option to complete the analogy.\n\n**Options:**\n- **A**. Yelling ✅\n- **B**. Yawning\n- **C**. Glaring\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "We __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&nbsp;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "have been playing",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "would have been playing",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "could be playing",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "(A) have been playing&amp;nbsp;Present perfect continuous tense, used when an action started in the past and continues into the present.Incorrect, because the sentence refers to a past event.(B) had been playing&amp;nbsp;Past perfect continuous tense, used to describe an ongoing action that was interrupted by another past action.Correct choice, as it fits the timeline of events.(C) would have been playing&amp;nbsp;Used for hypothetical situations in the past (conditional).Incorrect, because there is no conditional clause.(D) could be playing&amp;nbsp;Incorrect, as it suggests possibility rather than a past continuous action.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "We __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&amp;nbsp;",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "have been playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "would have been playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "could be playing",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "had been playing",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is had been playing"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "(A) have been playing&amp;nbsp;Present perfect continuous tense, used when an action started in the past and continues into the present.Incorrect, because the sentence refers to a past event.(B) had been playing&amp;nbsp;Past perfect continuous tense, used to describe an ongoing action that was interrupted by another past action.Correct choice, as it fits the timeline of events.(C) would have been playing&amp;nbsp;Used for hypothetical situations in the past (conditional).Incorrect, because there is no conditional clause.(D) could be playing&amp;nbsp;Incorrect, as it suggests possibility rather than a past continuous action."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nWe __________ tennis in the lawn when it suddenly started to rain. Select the most appropriate option to complete the above sentence.&nbsp;\n\n**Options:**\n- **A**. have been playing\n- **B**. would have been playing ✅\n- **C**. could be playing\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A 4 × 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 ≤ 4 is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Step 1: List all pixels[0102473355426732] 0456 1757 0343 2322 Step 2: Count values &le;4&le;4Values &le; 4 are:Row 1: 0, 1, 0, 2 &rarr; 4 valuesRow 2: 4, 3, 3 &rarr; 3 valuesRow 3: 4, 2 &rarr; 2 valuesRow 4: 3, 2 &rarr; 2 valuesTotal = 4 + 3 + 2 + 2 = 11",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A 4 &times; 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 &le; 4 is:",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "8",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "9",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "11",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 11"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Step 1: List all pixels[0102473355426732] 0456 1757 0343 2322 Step 2: Count values &le;4&le;4Values &le; 4 are:Row 1: 0, 1, 0, 2 &rarr; 4 valuesRow 2: 4, 3, 3 &rarr; 3 valuesRow 3: 4, 2 &rarr; 2 valuesRow 4: 3, 2 &rarr; 2 valuesTotal = 4 + 3 + 2 + 2 = 11"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA 4 × 4 digital image has pixel intensities (𝑈) as shown in the figure. The number of pixels with 𝑈 ≤ 4 is:\n\n**Options:**\n- **A**. 3\n- **B**. 8\n- **C**. 9 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "In the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P = 5; Q = 6; R = 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "P = 3; Q = 6; R = 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "P = 5; Q = 3; R = 6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that:Rectangle is represented by 1Triangle is represented by 2Ellipse is represented by 3We need to identify the regions P, Q, and R based on which shapes they belong to.now : R comes in rectangle and triangle R = 1+2 = 3 Q comes in triangle and ellipse Q = 2+3 = 5 p comes in triangle ,rectangle and ellipse. p = 1+2+3 = 6P = 6; Q = 5; R = 3",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "In the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "P = 5; Q = 6; R = 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "P = 3; Q = 6; R = 6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "P = 5; Q = 3; R = 6",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "P = 6; Q = 5; R = 3",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is P = 6; Q = 5; R = 3"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We are given that:Rectangle is represented by 1Triangle is represented by 2Ellipse is represented by 3We need to identify the regions P, Q, and R based on which shapes they belong to.now : R comes in rectangle and triangle R = 1+2 = 3 Q comes in triangle and ellipse Q = 2+3 = 5 p comes in triangle ,rectangle and ellipse. p = 1+2+3 = 6P = 6; Q = 5; R = 3"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nIn the given figure, the numbers associated with the rectangle, triangle, and ellipse are 1, 2, and 3, respectively. Which one among the given options is the most appropriate combination of P, Q, and R?\n\n**Options:**\n- **A**. P = 5; Q = 6; R = 3 ✅\n- **B**. P = 3; Q = 6; R = 6\n- **C**. P = 5; Q = 3; R = 6\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A rectangle has a length L and a width W, where L &gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Perimeter increases by 10%.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Length of the diagonals increases by 10%.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The rectangle becomes a square.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "If the width W is increased by 10%, the new W will become 1.10 W:New&amp;nbsp;Area = L&times;1.10W=1.10&times;(L&times;W)New Area = 1.10 (Old Area)So, the area increases by 10%.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A rectangle has a length L and a width W, where L &amp;gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "Perimeter increases by 10%.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "Length of the diagonals increases by 10%.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "The rectangle becomes a square.",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "Area increases by 10%.",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is Area increases by 10%."
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "If the width W is increased by 10%, the new W will become 1.10 W:New&amp;nbsp;Area = L&times;1.10W=1.10&times;(L&times;W)New Area = 1.10 (Old Area)So, the area increases by 10%."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA rectangle has a length L and a width W, where L &gt; W. If the width, W, is increased by 10%, which one of the following statements is correct for all values of L and W?\n\n**Options:**\n- **A**. Perimeter increases by 10%.\n- **B**. Length of the diagonals increases by 10%.\n- **C**. The rectangle becomes a square. ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P – 2; Q – 3; R – 1; S – 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "P – 4; Q – 1; R – 2; S – 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "P – 1; Q – 2; R – 4; S – 3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "P. \"This house is in a mess.\"Best response: Not explicitly mentioned in responses, but indirectly fits none well.(No direct match, so we skip for now).Q. \"I am not happy with the marks given to me.\"Best response: \"Don&rsquo;t worry, I will take it up with your teacher.\" (4)So, Q &rarr; 4.R. \"Politics is a subject I avoid talking about.\"Best response: \"Alright, I won&rsquo;t bring it up during our conversations.\" (1)So, R &rarr; 1.S. \"I don&rsquo;t know what this word means.\"Best response: \"Well, you can easily look it up.\" (2)So, S &rarr; 2.Now, for P, by elimination, the best remaining response is:\"No problem, let me clear it up for you.\" (3)So, P &rarr; 3.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "P &ndash; 2; Q &ndash; 3; R &ndash; 1; S &ndash; 4",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "P &ndash; 4; Q &ndash; 1; R &ndash; 2; S &ndash; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "P &ndash; 1; Q &ndash; 2; R &ndash; 4; S &ndash; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "P &ndash; 3; Q &ndash; 4; R &ndash; 1; S &ndash; 2",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is P &ndash; 3; Q &ndash; 4; R &ndash; 1; S &ndash; 2"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "P. \"This house is in a mess.\"Best response: Not explicitly mentioned in responses, but indirectly fits none well.(No direct match, so we skip for now).Q. \"I am not happy with the marks given to me.\"Best response: \"Don&rsquo;t worry, I will take it up with your teacher.\" (4)So, Q &rarr; 4.R. \"Politics is a subject I avoid talking about.\"Best response: \"Alright, I won&rsquo;t bring it up during our conversations.\" (1)So, R &rarr; 1.S. \"I don&rsquo;t know what this word means.\"Best response: \"Well, you can easily look it up.\" (2)So, S &rarr; 2.Now, for P, by elimination, the best remaining response is:\"No problem, let me clear it up for you.\" (3)So, P &rarr; 3."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nColumn-I has statements made by Shanthala; and, Column-II has responses given by Kanishk.Column - IColumn - IIP.This house is in a mess.1.Alright, I won't bring it up during our conversationsQ.I am not happy with the marks given to me.2.Well, you can easily look it up.R.Politics is a subject I avoid talking about.3.No problem, let me clear it up for you.S.I don't know what this word means.4.Don't worry, I will take it up with your teacher.\n\n**Options:**\n- **A**. P – 2; Q – 3; R – 1; S – 4\n- **B**. P – 4; Q – 1; R – 2; S – 3 ✅\n- **C**. P – 1; Q – 2; R – 4; S – 3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "Weight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "𝑎1 &lt; 𝑎2 &lt; 50",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 &lt; 𝑎1 &lt; 𝑎2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Either 𝑎1 = 50 or 𝑎2 = 50",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given:Weight increases until age 50, then decreases.Both brothers have the same weight function.a1&amp;lt;a2a_1 &amp;lt; a_2a1&amp;lt;a2 and they attain same weight.Key Idea:Since the function is symmetric around age 50, same weight occurs when:a1+a2=100&rArr;One&amp;nbsp;brother&amp;nbsp;is&amp;nbsp;younger&amp;nbsp;than&amp;nbsp;50,&amp;nbsp;the&amp;nbsp;other&amp;nbsp;older.Correct Option: (B) a1&amp;lt;50&amp;lt;a2",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "Weight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &amp;lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "𝑎1 &amp;lt; 𝑎2 &amp;lt; 50",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "50 &amp;lt; 𝑎1 &amp;lt; 𝑎2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "Either 𝑎1 = 50 or 𝑎2 = 50",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 2,
+          "text": "𝑎1 &amp;lt; 50 &amp;lt; 𝑎2",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 𝑎1 &amp;lt; 50 &amp;lt; 𝑎2"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "We are given:Weight increases until age 50, then decreases.Both brothers have the same weight function.a1&amp;lt;a2a_1 &amp;lt; a_2a1&amp;lt;a2 and they attain same weight.Key Idea:Since the function is symmetric around age 50, same weight occurs when:a1+a2=100&rArr;One&amp;nbsp;brother&amp;nbsp;is&amp;nbsp;younger&amp;nbsp;than&amp;nbsp;50,&amp;nbsp;the&amp;nbsp;other&amp;nbsp;older.Correct Option: (B) a1&amp;lt;50&amp;lt;a2"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nWeight of a person can be expressed as a function of their age. The function usually varies from person to person. Suppose this function is identical for two brothers, and it monotonically increases till the age of 50 years and then it monotonically decreases. Let 𝑎1 and 𝑎2 (in years) denote the ages of the brothers and 𝑎1 &lt; 𝑎2. Which one of the following statements is correct about their age on the day when they attain the same weight?\n\n**Options:**\n- **A**. 𝑎1 &lt; 𝑎2 &lt; 50\n- **B**. 50 &lt; 𝑎1 &lt; 𝑎2 ✅\n- **C**. Either 𝑎1 = 50 or 𝑎2 = 50\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "A regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4; 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3; 3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3; 2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Each triangle is used only once to form squares.The squares have side length r, which is the radius of the circle.We need to determine how many such squares can be formed and how many triangles are required per square.Each square is likely formed by 4 triangles because:The dodecagon is divided into 12 triangles.Each square uses 4 triangles.The total number of squares that can be formed = Total triangles (12) / Triangles per square (4) = 3.",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "A regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "4; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "3; 3",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "3; 2",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "3; 4",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 3; 4"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Each triangle is used only once to form squares.The squares have side length r, which is the radius of the circle.We need to determine how many such squares can be formed and how many triangles are required per square.Each square is likely formed by 4 triangles because:The dodecagon is divided into 12 triangles.Each square uses 4 triangles.The total number of squares that can be formed = Total triangles (12) / Triangles per square (4) = 3."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nA regular dodecagon (12-sided regular polygon) is inscribed in a circle of radius r cm as shown in the figure. The side of the dodecagon is d cm. All the triangles (numbered 1 to 12) in the figure are used to form squares of side r cm and each numbered triangle is used only once to form a square. The number of squares that can be formed and the number of triangles required to form each square, respectively, are: Note: The figure shown is representative.\n\n**Options:**\n- **A**. 4; 3 ✅\n- **B**. 3; 3\n- **C**. 3; 2\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "If a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2-1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "215",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since $$ begin{aligned}3^{x^2} &amp;amp;= 3^3 imes (3^2)^x (3^2)^x &amp;amp;= 3^{2x} Rightarrow quad 3^{x^2} &amp;amp;= 3^3 imes 3^{2x} &amp;amp;= 3^{2x + 3} ext{Since bases match:} quad x^2 &amp;amp;= 2x + 3 end{aligned}$$hence x = 1 ,-3 therefore , c is the correct option .",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "If a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 1,
+            "text": "2-1",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "20",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "215",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 3,
+          "text": "23",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 23"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Since $$ begin{aligned}3^{x^2} &amp;amp;= 3^3 imes (3^2)^x (3^2)^x &amp;amp;= 3^{2x} Rightarrow quad 3^{x^2} &amp;amp;= 3^3 imes 3^{2x} &amp;amp;= 3^{2x + 3} ext{Since bases match:} quad x^2 &amp;amp;= 2x + 3 end{aligned}$$hence x = 1 ,-3 therefore , c is the correct option ."
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nIf a real variable 𝑥 satisfies $$3^{x^{2}}=27 imes9^{x}$$, then the value of $$ frac{2^{x^{2}}}{(2^{x})^{2}}$$ is:\n\n**Options:**\n- **A**. 2-1\n- **B**. 20\n- **C**. 215 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "Question on GATE DA 2025",
+      "passage_text": "",
+      "question_text": "The number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 − 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6,300",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6,500",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Dr. Gita's earnings per shift depend on the number of patients she consults, with the formula for her earnings being ₹1000(X - 0.2), where XXX is the number of patients. By analyzing the provided data on the number of shifts and patients:For 5 patients per shift: 20 shifts contributed ₹100.For 6 patients per shift: 40 shifts contributed ₹240.For 7 patients per shift: 30 shifts contributed ₹210.For 8 patients per shift: 10 shifts contributed ₹80.average no. of patient per shift= total patients/ total shifts= 630/100=6.3Average amt earned= 1000(6.3-0.2)1000 x 6.1=6100Adding these amounts gives the total earnings of ₹610,000 across the 100 shifts. The average will be ₹6100",
+      "image_url": "",
+      "math_latex_list": [],
+      "raw_jsonld": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": "Question on GATE DA 2025",
+        "text": "The number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 &minus; 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative",
+        "encodingFormat": "text/HTML",
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "position": 2,
+            "text": "6,300",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 3,
+            "text": "6,000",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          },
+          {
+            "@type": "Answer",
+            "position": 4,
+            "text": "6,500",
+            "comment": {
+              "@type": "Comment",
+              "text": "This is not the correct answer"
+            },
+            "encodingFormat": "text/plain"
+          }
+        ],
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "position": 1,
+          "text": "6,100",
+          "comment": {
+            "@type": "Comment",
+            "text": "The correct answer is 6,100"
+          },
+          "answerExplanation": {
+            "@type": "Comment",
+            "text": "Dr. Gita's earnings per shift depend on the number of patients she consults, with the formula for her earnings being ₹1000(X - 0.2), where XXX is the number of patients. By analyzing the provided data on the number of shifts and patients:For 5 patients per shift: 20 shifts contributed ₹100.For 6 patients per shift: 40 shifts contributed ₹240.For 7 patients per shift: 30 shifts contributed ₹210.For 8 patients per shift: 10 shifts contributed ₹80.average no. of patient per shift= total patients/ total shifts= 630/100=6.3Average amt earned= 1000(6.3-0.2)1000 x 6.1=6100Adding these amounts gives the total earnings of ₹610,000 across the 100 shifts. The average will be ₹6100"
+          },
+          "encodingFormat": "text/plain"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "This quiz is designed to test your knowledge on the subject matter."
+        },
+        "typicalAgeRange": "15-60"
+      },
+      "full_markdown": "### Question (qid: Question on GATE DA 2025)\n\nThe number of patients per shift (𝑋) consulting Dr. Gita in her past 100 shifts is shown in the figure. If the amount she earns is ₹ 1000(𝑋 − 0.2), what is the average amount (in ₹) she has earned per shift in the past 100 shifts? Note: The figure shown is representative\n\n**Options:**\n- **A**. 6,300 ✅\n- **B**. 6,000\n- **C**. 6,500\n\n**Correct Answer:** null"
+    }
+  ]
+}
