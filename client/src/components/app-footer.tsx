@@ -44,6 +44,7 @@ export function AppFooter() {
               <Link href="/courses?exam=gate" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-gate-preparation">GATE Preparation</Link>
               <Link href="/practice-test" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-practice-tests">Practice Tests</Link>
               <Link href="/study-materials" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-study-materials">Study Materials</Link>
+              <Link href="/current-affairs" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-current-affairs">Current Affairs</Link>
             </div>
           </div>
 

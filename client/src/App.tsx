@@ -21,6 +21,8 @@ import Refund from "@/pages/refund";
 import LoginPage from "@/pages/login";
 import SignupPage from "@/pages/signup";
 import BookmarksPage from "@/pages/bookmarks";
+import CurrentAffairsPage from "@/pages/current-affairs";
+import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
 import { AuthProvider } from "@/contexts/auth-context";
 
 function Router() {
@@ -33,6 +35,8 @@ function Router() {
       <Route path="/study-materials" component={StudyMaterials} />
       <Route path="/courses" component={Courses} />
       <Route path="/bookmarks" component={BookmarksPage} />
+      <Route path="/current-affairs" component={CurrentAffairsPage} />
+      <Route path="/current-affairs/:articleId" component={CurrentAffairsArticlePage} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/help" component={Help} />
