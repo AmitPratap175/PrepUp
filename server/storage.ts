@@ -14,7 +14,7 @@ import {
   type Question
 } from "@shared/schema";
 import { randomUUID } from "crypto";
-import { readFileSync } from "fs";
+import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 
 export interface IStorage {
@@ -238,27 +238,22 @@ export class MemStorage implements IStorage {
     });
 
     // Seed mock tests from JSON files
-    const mockTestsData = [
-      {
-        title: "CAT Mock Test 1",
-        examType: "cat",
-        subject: "General",
-        duration: 120,
-        filePath: "data/cat/mock-test-1.json"
-      }
-    ];
+    const mockTestDir = join(process.cwd(), 'data', 'cat', 'mocks');
+    const mockTestFiles = readdirSync(mockTestDir).filter(file => file.startsWith('mock-test-') && file.endsWith('.json'));
 
-    mockTestsData.forEach(testData => {
-      const fileContent = readFileSync(join(process.cwd(), testData.filePath), 'utf-8');
+    mockTestFiles.forEach(file => {
+      const filePath = join('data', 'cat', 'mocks', file);
+      const fileContent = readFileSync(join(process.cwd(), filePath), 'utf-8');
       const data = JSON.parse(fileContent);
       const questions = data.questions;
+
       if (questions.length > 0) {
         const mockTest: PracticeTest = {
           id: data.id,
-          title: testData.title,
-          examType: testData.examType,
-          subject: testData.subject,
-          duration: testData.duration,
+          title: data.title,
+          examType: data.examType,
+          subject: data.subject,
+          duration: data.duration,
           totalQuestions: questions.length,
           questions: questions
         };

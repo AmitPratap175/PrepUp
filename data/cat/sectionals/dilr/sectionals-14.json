@@ -1,0 +1,677 @@
+{
+  "id": "mock-test-14",
+  "title": "CAT Mock Test 14",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 68,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "dilr-287",
+      "question_text": "How many days between Sep 1 and Sep 14 (both inclusive) had no booking from this client considering all the above categories?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": null,
+      "passage_text": " The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period. For example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders. ",
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question\n\nHow many days between Sep 1 and Sep 14 (both inclusive) had no booking from this client considering all the above categories?\n\n**Options:** \n\n**Correct Answer:** 6",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-288",
+      "question_text": "What was the average processing time of all orders in the categories which had only one type of ship mode?",
+      "options": [],
+      "correct_option_data": "11",
+      "solution_text": null,
+      "passage_text": " The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period. For example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders. ",
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question\n\nWhat was the average processing time of all orders in the categories which had only one type of ship mode?\n\n**Options:** \n\n**Correct Answer:** 11",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-289",
+      "question_text": "The sequence of categories -- Art, Binders, Paper and Phones -- in decreasing order of average processing time of their orders in this period is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Art, Binders, Paper, Phones",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Phones, Art, Binders, Paper",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Phones, Binders, Art, Paper",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Paper, Binders, Art, Phones",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period. For example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders. ",
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386421)\n\nThe sequence of categories -- Art, Binders, Paper and Phones -- in decreasing order of average processing time of their orders in this period is:\n\n**Options:**\n- **A**. Art, Binders, Paper, Phones\n- **B**. Phones, Art, Binders, Paper \u2705\n- **C**. Phones, Binders, Art, Paper\n- **D**. Paper, Binders, Art, Phones\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-290",
+      "question_text": "Approximately what percentage of orders had a processing time of one day during the period Sep 1 to Sep 22 (both dates inclusive)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "22%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period. For example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders. ",
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386422)\n\nApproximately what percentage of orders had a processing time of one day during the period Sep 1 to Sep 22 (both dates inclusive)?\n\n**Options:**\n- **A**. 22%\n- **B**. 16%\n- **C**. 20% \u2705\n- **D**. 25%\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-291",
+      "question_text": "What BEST can be said about object o8?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "o8 was given to Amar, Charles, or Disha",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "o8 was given to Disha",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "o8 was given to Charles",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "o8 was given to Charles or Disha",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question (qid: 386423)\n\nWhat BEST can be said about object o8?\n\n**Options:**\n- **A**. o8 was given to Amar, Charles, or Disha\n- **B**. o8 was given to Disha\n- **C**. o8 was given to Charles \u2705\n- **D**. o8 was given to Charles or Disha\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-292",
+      "question_text": "Who among the following envies someone else?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Barat",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Charles",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Amar",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Elise",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question (qid: 386424)\n\nWho among the following envies someone else?\n\n**Options:**\n- **A**. Barat\n- **B**. Charles\n- **C**. Amar \u2705\n- **D**. Elise\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-293",
+      "question_text": "What is Amar\u2019s value for his own bundle?",
+      "options": [],
+      "correct_option_data": "12",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question\n\nWhat is Amar\u2019s value for his own bundle?\n\n**Options:** \n\n**Correct Answer:** 12",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-294",
+      "question_text": "Object o4 was given to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Elise",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Barat",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Charles",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Disha",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question (qid: 386426)\n\nObject o4 was given to\n\n**Options:**\n- **A**. Elise\n- **B**. Barat\n- **C**. Charles\n- **D**. Disha \u2705\n\n**Correct Answer:** 4",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-295",
+      "question_text": "Object o5 was given to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Disha",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Elise",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Amar",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Charles",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question (qid: 386427)\n\nObject o5 was given to\n\n**Options:**\n- **A**. Disha\n- **B**. Elise \u2705\n- **C**. Amar\n- **D**. Charles\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-296",
+      "question_text": "What BEST can be said about the distribution of object o1?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "o1 was given to Disha",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "o1 was given to Charles",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "o1 was given to Charles, Disha, or Elise",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "o1 was given to Charles or Disha",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Ten objects o1, o2, \u2026, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle. The following table shows how each person values each object. The value of any bundle by a person is the sum of that person\u2019s values of the objects in that bundle. A person X envies another person Y if X values Y\u2019s bundle more than X\u2019s own bundle. For example, hypothetically suppose Amar\u2019s bundle consists of o1 and o2, and Barat\u2019s bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat\u2019s bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar\u2019s bundle at 5 + 9 = 14. Hence Barat envies Amar. The following facts are known about the actual distribution of the objects among the five people.\n\n1. If someone\u2019s value for an object is 10, then she/he received that object.\n\n 2. Objects o1, o2, and o3 were given to three different people.\n\n 3. Objects o1 and o8 were given to different people.\n\n 4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.\n\n 5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.\n\n 6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_489_yQ9zfzQ.png",
+      "full_markdown": "### Question (qid: 386428)\n\nWhat BEST can be said about the distribution of object o1?\n\n**Options:**\n- **A**. o1 was given to Disha \u2705\n- **B**. o1 was given to Charles\n- **C**. o1 was given to Charles, Disha, or Elise\n- **D**. o1 was given to Charles or Disha\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-297",
+      "question_text": "Who among the following was DEFINITELY NOT ranked first in his/her group?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Dipen",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Aruna",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Brij",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Chitra",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb. Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final. The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship. It is known that:\n\n 1. Chitra did not win the championship.\n\n 2. Aruna did not play against Arif. Brij did not play against Brinda.\n\n 3. Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386429)\n\nWho among the following was DEFINITELY NOT ranked first in his/her group?\n\n**Options:**\n- **A**. Dipen \u2705\n- **B**. Aruna\n- **C**. Brij\n- **D**. Chitra\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-298",
+      "question_text": "Which of the following pairs must have played against each other in the championship?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Deb, Donna",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Azul, Biju",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Donna, Chetan",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Chitra, Dipen",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": null,
+      "passage_text": " The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb. Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final. The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship. It is known that:\n\n 1. Chitra did not win the championship.\n\n 2. Aruna did not play against Arif. Brij did not play against Brinda.\n\n 3. Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386430)\n\nWhich of the following pairs must have played against each other in the championship?\n\n**Options:**\n- **A**. Deb, Donna\n- **B**. Azul, Biju\n- **C**. Donna, Chetan\n- **D**. Chitra, Dipen \u2705\n\n**Correct Answer:** 4",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-299",
+      "question_text": "Who won the championship?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Chitra",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Aruna",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Brij",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb. Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final. The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship. It is known that:\n\n 1. Chitra did not win the championship.\n\n 2. Aruna did not play against Arif. Brij did not play against Brinda.\n\n 3. Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386431)\n\nWho won the championship?\n\n**Options:**\n- **A**. Chitra\n- **B**. Aruna \u2705\n- **C**. Brij\n- **D**. Cannot be determined\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-300",
+      "question_text": "Who among the following did NOT play against Chitra in the championship?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Aruna",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Chetan",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Dipen",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Biju",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": null,
+      "passage_text": " The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb. Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final. The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship. It is known that:\n\n 1. Chitra did not win the championship.\n\n 2. Aruna did not play against Arif. Brij did not play against Brinda.\n\n 3. Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386432)\n\nWho among the following did NOT play against Chitra in the championship?\n\n**Options:**\n- **A**. Aruna\n- **B**. Chetan\n- **C**. Dipen\n- **D**. Biju \u2705\n\n**Correct Answer:** 4",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-301",
+      "question_text": "What was the minimum rating that Ravi received from any customer in any parameter?",
+      "options": [],
+      "correct_option_data": "5",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question\n\nWhat was the minimum rating that Ravi received from any customer in any parameter?\n\n**Options:** \n\n**Correct Answer:** 5",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-302",
+      "question_text": "The COMPLETE list of customers who gave the maximum total rating points to Ravi is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Atal",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Bihari",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Bihari and Chirag",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Atal and Bihari",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386434)\n\nThe COMPLETE list of customers who gave the maximum total rating points to Ravi is\n\n**Options:**\n- **A**. Atal\n- **B**. Bihari\n- **C**. Bihari and Chirag \u2705\n- **D**. Atal and Bihari\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-303",
+      "question_text": "What rating did Atal give on Timeliness?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question\n\nWhat rating did Atal give on Timeliness?\n\n**Options:** \n\n**Correct Answer:** 6",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-304",
+      "question_text": "What BEST can be concluded about the tip amount given by Deepak?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Either \u20b90 or \u20b930 or \u20b950",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Either \u20b930 or \u20b950",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "\u20b950",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "\u20b930",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386436)\n\nWhat BEST can be concluded about the tip amount given by Deepak?\n\n**Options:**\n- **A**. Either \u20b90 or \u20b930 or \u20b950\n- **B**. Either \u20b930 or \u20b950 \u2705\n- **C**. \u20b950\n- **D**. \u20b930\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-305",
+      "question_text": "In which parameter did Atal give the maximum rating points to Ravi?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Hygiene",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Behaviour",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Timeliness",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Packaging",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386437)\n\nIn which parameter did Atal give the maximum rating points to Ravi?\n\n**Options:**\n- **A**. Hygiene\n- **B**. Behaviour \u2705\n- **C**. Timeliness\n- **D**. Packaging\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-306",
+      "question_text": "What rating did Deepak give on Packaging?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters - Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of \u20b920 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either \u20b930 or \u20b950. One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag, and Deepak, and received a total of \u20b9120 in bonus and tips. He did not get both a bonus and a tip from the same customer. The following additional facts are also known.\n\n1. In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.\n\n 2. Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.\n\n 3. Chirag gave the same rating points for Packaging and Hygiene.\n\n 4. Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.\n\n 5. Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.\n\n 6. If the customers are ranked based on ratings given by them in individual parameters, then Atal\u2019s rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 386438)\n\nWhat rating did Deepak give on Packaging?\n\n**Options:**\n- **A**. 7 \u2705\n- **B**. 8\n- **C**. 5\n- **D**. 6\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-307",
+      "question_text": "Assume that only one client's order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while a previous order is being prepared. At what time is the order placed by Client 1 completely served?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10:17",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10:10",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10:15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10:20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Healthy Bites is a fastfood joint serving three items, burgers, fries and ice cream. It has two employees Anish and Bani who prepare the items ordered by the clients. Preparation time is 10 minutes for a burger and 2 minutes for an order of Ice cream. An employee can prepare only one of these items at a time. The fries are prepared in an automatic fryer which can prepare upto to 3 portions of fries at a time, and takes 5 minutes irrespective of the number of portions. The fryer does not need an employee to constantly attend to it, and we can ignore the time taken by an employee to start and stop the fryer; thus, an employee can be engaged in preparing other items while the frying is on. However fries cannot be prepared in anticipation of future orders. Healthy Bites wishes to serve the orders as early as possible. The individual items in any order are served as and when ready; however,the order is considered to be completely served only when all the items of that order are served. The table below gives the orders of three clients and the times at which they placed their orders: ",
+      "image_url": "https://cracku.in/media/uploads/question%201%20image.png",
+      "full_markdown": "### Question (qid: 98110)\n\nAssume that only one client's order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while a previous order is being prepared. At what time is the order placed by Client 1 completely served?\n\n**Options:**\n- **A**. 10:17\n- **B**. 10:10 \u2705\n- **C**. 10:15\n- **D**. 10:20\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-308",
+      "question_text": "Assume that only one client's order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while a previous order is being prepared. At what time is the order placed by Client 3 completely served?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10:35",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10:22",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10:25",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10:17",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " Healthy Bites is a fastfood joint serving three items, burgers, fries and ice cream. It has two employees Anish and Bani who prepare the items ordered by the clients. Preparation time is 10 minutes for a burger and 2 minutes for an order of Ice cream. An employee can prepare only one of these items at a time. The fries are prepared in an automatic fryer which can prepare upto to 3 portions of fries at a time, and takes 5 minutes irrespective of the number of portions. The fryer does not need an employee to constantly attend to it, and we can ignore the time taken by an employee to start and stop the fryer; thus, an employee can be engaged in preparing other items while the frying is on. However fries cannot be prepared in anticipation of future orders. Healthy Bites wishes to serve the orders as early as possible. The individual items in any order are served as and when ready; however,the order is considered to be completely served only when all the items of that order are served. The table below gives the orders of three clients and the times at which they placed their orders: ",
+      "image_url": "https://cracku.in/media/uploads/question%201%20image.png",
+      "full_markdown": "### Question (qid: 98111)\n\nAssume that only one client's order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while a previous order is being prepared. At what time is the order placed by Client 3 completely served?\n\n**Options:**\n- **A**. 10:35\n- **B**. 10:22\n- **C**. 10:25 \u2705\n- **D**. 10:17\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    }
+  ]
+}
