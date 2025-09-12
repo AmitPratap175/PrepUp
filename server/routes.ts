@@ -138,6 +138,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Sectional test routes
+  app.get("/api/sectional-tests", async (req, res) => {
+    try {
+      const tests = await storage.getSectionalTests();
+      res.json(tests);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
+  app.get("/api/sectional-tests/:id", async (req, res) => {
+    try {
+      const test = await storage.getSectionalTest(req.params.id);
+      if (!test) {
+        return res.status(404).json({ error: "Sectional test not found" });
+      }
+      res.json(test);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
   // Test session routes
   app.post("/api/test-sessions", async (req, res) => {
     try {

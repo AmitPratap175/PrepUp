@@ -47,6 +47,10 @@ export interface IStorage {
   getMockTests(): Promise<PracticeTest[]>;
   getMockTest(id: string): Promise<PracticeTest | undefined>;
 
+  // Sectional test methods
+  getSectionalTests(): Promise<PracticeTest[]>;
+  getSectionalTest(id: string): Promise<PracticeTest | undefined>;
+
   // Test session methods
   getTestSession(id: string): Promise<TestSession | undefined>;
   getTestSessionsByUser(userId: string): Promise<TestSession[]>;
@@ -66,6 +70,7 @@ export class MemStorage implements IStorage {
   private studyMaterials: Map<string, StudyMaterial>;
   private practiceTests: Map<string, PracticeTest>;
   private mockTests: Map<string, PracticeTest>;
+  private sectionalTests: Map<string, PracticeTest>;
   private testSessions: Map<string, TestSession>;
   private userProgress: Map<string, UserProgress>;
 
@@ -75,6 +80,7 @@ export class MemStorage implements IStorage {
     this.studyMaterials = new Map();
     this.practiceTests = new Map();
     this.mockTests = new Map();
+    this.sectionalTests = new Map();
     this.testSessions = new Map();
     this.userProgress = new Map();
     
@@ -261,6 +267,44 @@ export class MemStorage implements IStorage {
         this.mockTests.set(mockTest.id, mockTest);
       }
     });
+
+    // Seed sectional tests from JSON files
+    const sectionalTestDir = join(process.cwd(), 'data', 'cat', 'sectionals');
+    const sectionalTestTypes = ['varc', 'dilr', 'quants'];
+    const sectionalTestsData: { [key: string]: PracticeTest } = {};
+
+    sectionalTestTypes.forEach(type => {
+      const typeDir = join(sectionalTestDir, type);
+      const testFiles = readdirSync(typeDir).filter(file => file.startsWith('sectionals-') && file.endsWith('.json'));
+
+      testFiles.forEach(file => {
+        const filePath = join('data', 'cat', 'sectionals', type, file);
+        const fileContent = readFileSync(join(process.cwd(), filePath), 'utf-8');
+        const data = JSON.parse(fileContent);
+        const questions = data.questions;
+        const testNumber = file.match(/sectionals-(\d+)/)![1];
+        const testId = `sectional-test-${testNumber}`;
+
+        if (!sectionalTestsData[testId]) {
+          sectionalTestsData[testId] = {
+            id: testId,
+            title: `CAT Sectional Test ${testNumber}`,
+            examType: 'cat',
+            subject: 'Mixed',
+            duration: 120,
+            totalQuestions: 0,
+            questions: []
+          };
+        }
+
+        sectionalTestsData[testId].questions.push(...questions);
+        sectionalTestsData[testId].totalQuestions += questions.length;
+      });
+    });
+
+    Object.values(sectionalTestsData).forEach(test => {
+      this.sectionalTests.set(test.id, test);
+    });
   }
 
   // User methods
@@ -382,6 +426,15 @@ export class MemStorage implements IStorage {
 
   async getMockTest(id: string): Promise<PracticeTest | undefined> {
     return this.mockTests.get(id);
+  }
+
+  // Sectional test methods
+  async getSectionalTests(): Promise<PracticeTest[]> {
+    return Array.from(this.sectionalTests.values());
+  }
+
+  async getSectionalTest(id: string): Promise<PracticeTest | undefined> {
+    return this.sectionalTests.get(id);
   }
 
   // Test session methods

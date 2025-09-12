@@ -18,6 +18,7 @@ const navigation = [
     items: [
       { title: "CAT Courses", href: "/courses?exam=cat" },
       { title: "Mock Tests", href: "/mock-tests?exam=cat" },
+      { title: "Sectional Tests", href: "/sectional-tests?exam=cat" },
       { title: "Practice Tests", href: "/practice-test?exam=cat" },
       { title: "Quizzes", href: "/quiz?exam=cat" },
       { title: "Study Materials", href: "/study-materials?exam=cat" },
