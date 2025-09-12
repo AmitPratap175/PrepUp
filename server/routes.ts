@@ -116,6 +116,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Mock test routes
+  app.get("/api/mock-tests", async (req, res) => {
+    try {
+      const tests = await storage.getMockTests();
+      res.json(tests);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
+  app.get("/api/mock-tests/:id", async (req, res) => {
+    try {
+      const test = await storage.getMockTest(req.params.id);
+      if (!test) {
+        return res.status(404).json({ error: "Mock test not found" });
+      }
+      res.json(test);
+    } catch (error) {
+      res.status(500).json({ error: "Internal server error" });
+    }
+  });
+
   // Test session routes
   app.post("/api/test-sessions", async (req, res) => {
     try {

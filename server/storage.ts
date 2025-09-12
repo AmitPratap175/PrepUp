@@ -43,6 +43,10 @@ export interface IStorage {
   getPracticeTestsByExamType(examType: string): Promise<PracticeTest[]>;
   createPracticeTest(test: InsertPracticeTest): Promise<PracticeTest>;
 
+  // Mock test methods
+  getMockTests(): Promise<PracticeTest[]>;
+  getMockTest(id: string): Promise<PracticeTest | undefined>;
+
   // Test session methods
   getTestSession(id: string): Promise<TestSession | undefined>;
   getTestSessionsByUser(userId: string): Promise<TestSession[]>;
@@ -61,6 +65,7 @@ export class MemStorage implements IStorage {
   private courses: Map<string, Course>;
   private studyMaterials: Map<string, StudyMaterial>;
   private practiceTests: Map<string, PracticeTest>;
+  private mockTests: Map<string, PracticeTest>;
   private testSessions: Map<string, TestSession>;
   private userProgress: Map<string, UserProgress>;
 
@@ -69,6 +74,7 @@ export class MemStorage implements IStorage {
     this.courses = new Map();
     this.studyMaterials = new Map();
     this.practiceTests = new Map();
+    this.mockTests = new Map();
     this.testSessions = new Map();
     this.userProgress = new Map();
     
@@ -230,6 +236,36 @@ export class MemStorage implements IStorage {
         this.practiceTests.set(practiceTest.id, practiceTest);
       }
     });
+
+    // Seed mock tests from JSON files
+    const mockTestsData = [
+      {
+        title: "CAT Mock Test 1",
+        examType: "cat",
+        subject: "General",
+        duration: 120,
+        filePath: "data/cat/mock-test-1.json"
+      }
+    ];
+
+    mockTestsData.forEach(testData => {
+      const fileContent = readFileSync(join(process.cwd(), testData.filePath), 'utf-8');
+      const data = JSON.parse(fileContent);
+      const questions = data.questions;
+      if (questions.length > 0) {
+        const mockTest: PracticeTest = {
+          id: data.id,
+          title: testData.title,
+          examType: testData.examType,
+          subject: testData.subject,
+          duration: testData.duration,
+          totalQuestions: questions.length,
+          questions: questions
+        };
+
+        this.mockTests.set(mockTest.id, mockTest);
+      }
+    });
   }
 
   // User methods
@@ -342,6 +378,15 @@ export class MemStorage implements IStorage {
     const test: PracticeTest = { ...insertTest, id };
     this.practiceTests.set(id, test);
     return test;
+  }
+
+  // Mock test methods
+  async getMockTests(): Promise<PracticeTest[]> {
+    return Array.from(this.mockTests.values());
+  }
+
+  async getMockTest(id: string): Promise<PracticeTest | undefined> {
+    return this.mockTests.get(id);
   }
 
   // Test session methods

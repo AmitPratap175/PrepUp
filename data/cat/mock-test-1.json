@@ -1,0 +1,64 @@
+{
+  "id": "mock-test-1",
+  "title": "CAT Mock Test 1",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 6,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "varc-1",
+      "question_text": "This is a sample verbal ability question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": true },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": false }
+      ],
+      "type": "varc"
+    },
+    {
+      "qid": "varc-2",
+      "question_text": "This is another sample verbal ability question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": false },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": true }
+      ],
+      "type": "varc"
+    },
+    {
+      "qid": "dilr-1",
+      "question_text": "This is a sample DILR question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": true },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": false }
+      ],
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-2",
+      "question_text": "This is another sample DILR question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": false },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": true }
+      ],
+      "type": "dilr"
+    },
+    {
+      "qid": "quants-1",
+      "question_text": "This is a sample quants question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": true },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": false }
+      ],
+      "type": "quants"
+    },
+    {
+      "qid": "quants-2",
+      "question_text": "This is another sample quants question.",
+      "options": [
+        { "data_option": "1", "label": "A", "option_text": "Option A", "is_correct": false },
+        { "data_option": "2", "label": "B", "option_text": "Option B", "is_correct": true }
+      ],
+      "type": "quants"
+    }
+  ]
+}
