@@ -219,8 +219,16 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
             <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
               {questions.map((question, index) => {
                 const isAnswered = answers[question.qid] !== undefined;
-                const correctOption = question.options.find(opt => opt.is_correct);
-                const isCorrect = isAnswered && correctOption && answers[question.qid] === correctOption.data_option;
+                let isCorrect = false;
+                if (isAnswered) {
+                  if (question.options.length > 0) {
+                    const correctOption = question.options.find(opt => opt.is_correct);
+                    isCorrect = !!correctOption && answers[question.qid] === correctOption.data_option;
+                  } else {
+                    const correctAnswer = question.correct_option_data || question.solution_text;
+                    isCorrect = answers[question.qid] === correctAnswer;
+                  }
+                }
                 const isBookmarked = bookmarkedQuestions.has(question.qid);
                 return (
                   <button
