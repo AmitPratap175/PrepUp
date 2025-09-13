@@ -13,6 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import type { Question } from "@shared/schema";
+import QuestionReview from "@/components/question-review";
 
 interface ResultData {
   answers: Record<string, string>;
@@ -76,78 +77,68 @@ export default function SectionalTestResultPage() {
             Test Result: {testId} - {section?.toUpperCase()}
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div>
+        <CardContent className="p-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-8">
+            <div className="p-4 bg-muted/50 rounded-lg">
               <p className="text-sm text-muted-foreground">Score</p>
-              <p className="text-2xl font-bold">{score}</p>
+              <p className="text-3xl font-bold text-primary">{score}</p>
             </div>
-            <div>
+            <div className="p-4 bg-muted/50 rounded-lg">
               <p className="text-sm text-muted-foreground">Accuracy</p>
-              <p className="text-2xl font-bold">{accuracy.toFixed(2)}%</p>
+              <p className="text-3xl font-bold text-green-500">{accuracy.toFixed(2)}%</p>
             </div>
-            <div>
+            <div className="p-4 bg-muted/50 rounded-lg">
               <p className="text-sm text-muted-foreground">Time Taken</p>
-              <p className="text-2xl font-bold">{formatTime(timeTaken)}</p>
+              <p className="text-3xl font-bold">{formatTime(timeTaken)}</p>
+            </div>
+            <div className="p-4 bg-muted/50 rounded-lg">
+              <p className="text-sm text-muted-foreground">Percentile</p>
+              <p className="text-3xl font-bold">95. percentile</p>
             </div>
           </div>
-          <div className="mt-6">
-            <Progress value={(attemptedQuestions / totalQuestions) * 100} />
-            <div className="flex justify-between text-sm text-muted-foreground mt-2">
-              <span>
-                Attempted: {attemptedQuestions}/{totalQuestions}
-              </span>
-              <span>
-                Correct: {correctAnswers} | Incorrect: {incorrectAnswers}
-              </span>
-            </div>
-          </div>
+
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[200px]">Statistic</TableHead>
+                <TableHead>Value</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell className="font-medium">Total Questions</TableCell>
+                <TableCell>{totalQuestions}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Attempted Questions</TableCell>
+                <TableCell>{attemptedQuestions}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Correct Answers</TableCell>
+                <TableCell className="text-green-600">{correctAnswers}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Incorrect Answers</TableCell>
+                <TableCell className="text-red-600">{incorrectAnswers}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">Unanswered Questions</TableCell>
+                <TableCell>{totalQuestions - attemptedQuestions}</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
         </CardContent>
       </Card>
 
       <h2 className="text-2xl font-bold mb-4">Question Review</h2>
       <div className="space-y-6">
         {questions.map((question, index) => (
-          <Card key={question.qid}>
-            <CardHeader>
-                <p className="font-bold"><Latex>{`Question ${index + 1}: ${question.question_text}`}</Latex></p>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                {question.options.map((option) => {
-                  const isSelected = answers[question.qid] === option.data_option;
-                  const isCorrect = option.data_option === question.correct_answer;
-
-                  let bgClass = "bg-transparent";
-                  if (isSelected && isCorrect) {
-                    bgClass = "bg-green-100";
-                  } else if (isSelected && !isCorrect) {
-                    bgClass = "bg-red-100";
-                  } else if (isCorrect) {
-                    bgClass = "bg-green-100";
-                  }
-
-                  return (
-                    <div key={option.data_option} className={`p-2 rounded-lg ${bgClass}`}>
-                      <Latex>{`${option.label}. ${option.option_text}`}</Latex>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="mt-4">
-                <p>Your answer: <Latex>{getOptionText(question, answers[question.qid])}</Latex></p>
-                <p>Correct answer: <Latex>{getOptionText(question, question.correct_answer)}</Latex></p>
-              </div>
-              {question.explanation && (
-                <div className="mt-4 p-4 bg-muted/50 rounded-lg">
-                  <h4 className="font-semibold mb-2">Explanation</h4>
-                  <div className="prose max-w-none">
-                    <Latex>{question.explanation}</Latex>
-                  </div>
-                </div>
-              )}
-            </CardContent>
-          </Card>
+          <QuestionReview
+            key={question.qid}
+            question={question}
+            userAnswer={answers[question.qid]}
+            questionIndex={index}
+          />
         ))}
       </div>
     </div>

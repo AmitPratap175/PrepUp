@@ -446,7 +446,7 @@ export class MemStorage implements IStorage {
 
     try {
       const fileContent = readFileSync(filePath, 'utf-8');
-      const data = JSON.parse(fileContent);
+      const data = JSON.parse(fileContent) as any;
 
       const test: PracticeTest = {
         id: `${testId}-${section}`,
@@ -457,7 +457,6 @@ export class MemStorage implements IStorage {
         totalQuestions: data.questions.length,
         questions: data.questions
       };
-
       return test;
     } catch (error) {
       console.warn(`Failed to load sectional test section from ${filePath}:`, error);
