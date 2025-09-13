@@ -92,7 +92,7 @@ export class MemStorage implements IStorage {
     try {
       const fullPath = join(process.cwd(), filePath);
       const fileContent = readFileSync(fullPath, 'utf-8');
-      const data = JSON.parse(fileContent);
+      const data = JSON.parse(fileContent) as { questions: Question[] };
       return data.questions;
     } catch (error) {
       console.warn(`Failed to load questions from ${filePath}:`, error);
@@ -483,7 +483,9 @@ export class MemStorage implements IStorage {
       endTime: null,
       score: null,
       correctAnswers: 0,
-      isCompleted: false
+      isCompleted: false,
+      subject: null,
+      maxScore: null,
     };
     this.testSessions.set(id, session);
     return session;
@@ -516,7 +518,9 @@ export class MemStorage implements IStorage {
       id,
       progressPercentage: 0,
       lastAccessedAt: new Date(),
-      completedLessons: []
+      completedLessons: [],
+      progress: null,
+      nextLesson: null,
     };
     this.userProgress.set(id, progress);
     return progress;

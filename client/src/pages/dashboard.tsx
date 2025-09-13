@@ -76,13 +76,13 @@ export default function Dashboard() {
                 <div className="flex items-center gap-4">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-foreground" data-testid="current-streak">
-                      {user?.currentStreak || 0}
+                      {(user as any)?.currentStreak || 0}
                     </div>
                     <div className="text-xs text-muted-foreground">Day Streak</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary" data-testid="total-score">
-                      {user?.totalScore || 0}
+                      {(user as any)?.totalScore || 0}
                     </div>
                     <div className="text-xs text-muted-foreground">Total Points</div>
                   </div>
@@ -132,10 +132,10 @@ export default function Dashboard() {
                             </div>
                             <div className="text-right">
                               <div className="font-bold text-primary" data-testid={`test-score-${index}`}>
-                                {test.score}/{test.maxScore}
+                                {test.score || 0}/{test.maxScore || 0}
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                {Math.round((test.score / test.maxScore) * 100)}%
+                                {test.score && test.maxScore ? Math.round((test.score / test.maxScore) * 100) : 0}%
                               </div>
                             </div>
                           </div>

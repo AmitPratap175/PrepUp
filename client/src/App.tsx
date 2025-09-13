@@ -41,7 +41,7 @@ function Router() {
       <Route path="/sectional-tests" component={SectionalTestsPage} />
       <Route path="/sectional-test/:id" component={SectionalTestPage} />
       <Route path="/sectional-test/:id/:section" component={SectionalTestSectionPage} />
-      <Route path="/sectional-test-result" component={SectionalTestResultPage} />
+      <Route path="/sectional-test/result/:testId/:section" component={SectionalTestResultPage} />
       <Route path="/quiz/:testId?" component={QuizPage} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/study-materials" component={StudyMaterials} />

@@ -67,7 +67,7 @@ export default function QuizPage() {
   }
 
   if (quizStarted && currentTest) {
-    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} />;
+    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} onSubmit={() => {}} />;
   }
 
   return (

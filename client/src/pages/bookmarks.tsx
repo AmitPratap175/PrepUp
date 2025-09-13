@@ -109,6 +109,7 @@ export default function BookmarksPage() {
       <NewQuizInterface
         test={test}
         onExit={() => setSelectedSubject(null)}
+        onSubmit={() => {}}
       />
     );
   }

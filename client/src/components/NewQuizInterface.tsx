@@ -47,7 +47,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
           });
           if (response.ok) {
             const bookmarks = await response.json();
-            setBookmarkedQuestions(new Set(bookmarks.map(b => b.question_id)));
+            setBookmarkedQuestions(new Set(bookmarks.map((b: any) => b.question_id)));
           }
         } catch (error) {
           console.error("Failed to fetch bookmarks:", error);

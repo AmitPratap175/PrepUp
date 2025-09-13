@@ -64,6 +64,8 @@ export const testSessions = pgTable("test_sessions", {
   correctAnswers: integer("correct_answers").default(0),
   answers: jsonb("answers").notNull(), // array of user answers
   isCompleted: boolean("is_completed").default(false),
+  subject: text("subject"),
+  maxScore: integer("max_score"),
 });
 
 export const userProgress = pgTable("user_progress", {
@@ -73,6 +75,8 @@ export const userProgress = pgTable("user_progress", {
   progressPercentage: integer("progress_percentage").default(0),
   lastAccessedAt: timestamp("last_accessed_at").default(sql`now()`),
   completedLessons: jsonb("completed_lessons").default([]),
+  progress: integer("progress"),
+  nextLesson: text("next_lesson"),
 });
 
 // Insert schemas
@@ -149,6 +153,9 @@ export interface Question {
   correct_option_data: string;
   solution_text: string | null;
   full_markdown: string;
+  image_url?: string;
+  correct_answer?: string;
+  explanation?: string;
 }
 
 // User answer interface
@@ -157,4 +164,9 @@ export interface UserAnswer {
   selectedAnswer: string | null; // maps to QuestionOption.data_option
   timeSpent: number; // in seconds
   isMarkedForReview: boolean;
+}
+
+export interface Bookmark {
+  subject: string;
+  question_id: string;
 }

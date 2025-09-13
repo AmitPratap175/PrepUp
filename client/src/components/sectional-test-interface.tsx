@@ -60,7 +60,15 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
       title: "Section Finished!",
       description: `You have completed the ${section.toUpperCase()} section.`,
     });
-    navigate(`/sectional-test/${testId}`);
+
+    const resultData = {
+      answers: testState.answers,
+      questions: questions,
+      timeTaken: SECTION_TIME - testState.timeRemaining,
+    };
+
+    localStorage.setItem(`sectionalTestResult-${testId}-${section}`, JSON.stringify(resultData));
+    navigate(`/sectional-test/result/${testId}/${section}`);
   };
 
   const formatTime = (seconds: number) => {

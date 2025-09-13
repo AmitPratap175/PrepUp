@@ -1,6 +1,6 @@
 const API_URL = `http://${window.location.hostname}:8000/api/auth`;
 
-export const login = async (email, password) => {
+export const login = async (email: any, password: any) => {
   const response = await fetch(`${API_URL}/login/`, {
     method: "POST",
     headers: {
@@ -16,7 +16,7 @@ export const login = async (email, password) => {
   return response.json();
 };
 
-export const signup = async (name, email, password, exam_type) => {
+export const signup = async (name: any, email: any, password: any, exam_type: any) => {
   const response = await fetch(`${API_URL}/signup/`, {
     method: "POST",
     headers: {
@@ -32,7 +32,7 @@ export const signup = async (name, email, password, exam_type) => {
   return response.json();
 };
 
-export const getUser = async (token) => {
+export const getUser = async (token: any) => {
   const response = await fetch(`${API_URL}/user/`, {
     headers: {
       Authorization: `Token ${token}`,
