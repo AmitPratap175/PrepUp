@@ -48,13 +48,16 @@ export default function SectionalTestResultPage() {
 
   const totalQuestions = questions.length;
   const attemptedQuestions = Object.keys(answers).length;
-  const correctAnswers = questions.filter(
-    (q) => answers[q.qid] === q.correct_answer
-  ).length;
+  const correctAnswers = questions.filter((q) => {
+    const answer = answers[q.qid];
+    if (!answer) return false;
+    const option = q.options.find(o => o.data_option === answer);
+    return option?.is_correct || false;
+  }).length;
   const incorrectAnswers = attemptedQuestions - correctAnswers;
   const accuracy =
     attemptedQuestions > 0 ? (correctAnswers / attemptedQuestions) * 100 : 0;
-  const score = correctAnswers * 3 - incorrectAnswers;
+  const score = correctAnswers * 3 - incorrectAnswers * 1;
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
@@ -62,7 +65,11 @@ export default function SectionalTestResultPage() {
     return `${minutes}m ${secs}s`;
   };
 
-  const getOptionText = (question: Question, data_option: string | undefined) => {
+  const getOptionText = (question: Question, data_option: string | undefined, isCorrect: boolean = false) => {
+    if (isCorrect) {
+      const correctOption = question.options.find(o => o.is_correct);
+      return correctOption ? correctOption.option_text : "N/A";
+    }
     if (!data_option) return "Not Answered";
     const option = question.options.find(o => o.data_option === data_option);
     return option ? option.option_text : "N/A";
@@ -116,7 +123,7 @@ export default function SectionalTestResultPage() {
               <div className="space-y-2">
                 {question.options.map((option) => {
                   const isSelected = answers[question.qid] === option.data_option;
-                  const isCorrect = option.data_option === question.correct_answer;
+                  const isCorrect = option.is_correct;
 
                   let bgClass = "bg-transparent";
                   if (isSelected && isCorrect) {
@@ -136,7 +143,7 @@ export default function SectionalTestResultPage() {
               </div>
               <div className="mt-4">
                 <p>Your answer: <Latex>{getOptionText(question, answers[question.qid])}</Latex></p>
-                <p>Correct answer: <Latex>{getOptionText(question, question.correct_answer)}</Latex></p>
+                <p>Correct answer: <Latex>{getOptionText(question, undefined, true)}</Latex></p>
               </div>
               {question.explanation && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg">
