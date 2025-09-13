@@ -5,6 +5,16 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
@@ -12,12 +22,9 @@ import { useToast } from "@/hooks/use-toast";
 
 interface SectionalTestInterfaceProps {
   testId: string;
-  section: 'varc' | 'dilr' | 'quants';
 }
 
-const SECTION_TIME = 40 * 60; // 40 minutes in seconds
-
-export default function SectionalTestInterface({ testId, section }: SectionalTestInterfaceProps) {
+export default function SectionalTestInterface({ testId }: SectionalTestInterfaceProps) {
   const [, navigate] = useLocation();
   const { toast } = useToast();
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
@@ -25,22 +32,27 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
   });
 
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
+  const [isConfirmOpen, setIsConfirmOpen] = useState(false);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
     markedForReview: new Set(),
-    timeRemaining: SECTION_TIME,
+    timeRemaining: test?.duration ? test.duration * 60 : 0,
     isCompleted: false,
   });
 
-  const questions = useMemo(() => {
-    return (test?.questions as (Question & { type: string })[])?.filter(
-      (q) => q.type === section
-    ) || [];
-  }, [test, section]);
-
+  const questions = test?.questions || [];
   const currentQuestion = questions[testState.currentQuestionIndex];
   const hasPassage = currentQuestion?.passage_text && currentQuestion?.passage_text !== "For the following questions answer them individually";
+
+  useEffect(() => {
+    if (test?.duration && testState.timeRemaining === 0) {
+      setTestState(prev => ({
+        ...prev,
+        timeRemaining: test.duration * 60,
+      }));
+    }
+  }, [test]);
 
   useEffect(() => {
     if (testState.timeRemaining <= 0) {
@@ -58,17 +70,17 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
     setTestState(prev => ({ ...prev, isCompleted: true }));
     toast({
       title: "Section Finished!",
-      description: `You have completed the ${section.toUpperCase()} section.`,
+      description: `You have completed the ${test?.subject.toUpperCase()} section.`,
     });
 
     const resultData = {
       answers: testState.answers,
       questions: questions,
-      timeTaken: SECTION_TIME - testState.timeRemaining,
+      timeTaken: (test?.duration || 0) * 60 - testState.timeRemaining,
     };
 
-    localStorage.setItem(`sectionalTestResult-${testId}-${section}`, JSON.stringify(resultData));
-    navigate(`/sectional-test/result/${testId}/${section}`);
+    localStorage.setItem(`sectionalTestResult-${testId}`, JSON.stringify(resultData));
+    navigate(`/sectional-test/result/${testId}`);
   };
 
   const formatTime = (seconds: number) => {
@@ -157,8 +169,8 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
     return (
       <div className="text-center py-20">
         <h2 className="text-2xl font-bold mb-4">Section Finished!</h2>
-        <p className="text-muted-foreground">You have completed the {section.toUpperCase()} section.</p>
-        <Button onClick={() => navigate(`/sectional-test/${testId}`)}>Back to Test Overview</Button>
+        <p className="text-muted-foreground">You have completed the {test.subject.toUpperCase()} section.</p>
+        <Button onClick={() => navigate(`/sectional-tests`)}>Back to Tests</Button>
       </div>
     );
   }
@@ -178,7 +190,7 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div>
             <h3 className="text-xl font-bold text-foreground">{test.title}</h3>
-            <p className="text-sm text-muted-foreground">{section.toUpperCase()} Section</p>
+            <p className="text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
           <div className="flex items-center gap-6">
             <Button
@@ -205,7 +217,7 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
             <Button
               variant="destructive"
               size="sm"
-              onClick={finishTest}
+              onClick={() => setIsConfirmOpen(true)}
               data-testid="button-submit-test"
             >
               Submit Section
@@ -213,6 +225,21 @@ export default function SectionalTestInterface({ testId, section }: SectionalTes
           </div>
         </div>
       </div>
+
+      <AlertDialog open={isConfirmOpen} onOpenChange={setIsConfirmOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you sure you want to submit?</AlertDialogTitle>
+            <AlertDialogDescription>
+              This action cannot be undone. You will not be able to change your answers after submitting.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction onClick={finishTest}>Submit</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
 
       <div className="flex flex-1 overflow-hidden">
         {isPaletteVisible && (

@@ -26,8 +26,7 @@ import BookmarksPage from "@/pages/bookmarks";
 import CurrentAffairsPage from "@/pages/current-affairs";
 import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
 import SectionalTestsPage from "@/pages/sectional-tests";
-import SectionalTestPage from "@/pages/sectional-test";
-import SectionalTestSectionPage from "@/pages/sectional-test-section";
+import SectionalTestPage from "@/pages/sectional-test-page";
 import SectionalTestResultPage from "@/pages/sectional-test-result";
 import { AuthProvider } from "@/contexts/auth-context";
 
@@ -40,8 +39,7 @@ function Router() {
       <Route path="/mock-test/:testId" component={MockTestPage} />
       <Route path="/sectional-tests" component={SectionalTestsPage} />
       <Route path="/sectional-test/:id" component={SectionalTestPage} />
-      <Route path="/sectional-test/:id/:section" component={SectionalTestSectionPage} />
-      <Route path="/sectional-test/result/:testId/:section" component={SectionalTestResultPage} />
+      <Route path="/sectional-test/result/:testId" component={SectionalTestResultPage} />
       <Route path="/quiz/:testId?" component={QuizPage} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/study-materials" component={StudyMaterials} />

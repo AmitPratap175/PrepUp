@@ -2,18 +2,17 @@ import { useQuery } from "@tanstack/react-query";
 import { useRoute, useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
-import { NewQuizInterface } from "@/components/NewQuizInterface";
+import SectionalTestInterface from "@/components/sectional-test-interface";
 import type { PracticeTest } from "@shared/schema";
 
-export default function SectionalTestSectionPage() {
-  const [, params] = useRoute("/sectional-test/:id/:section");
+export default function SectionalTestPage() {
+  const [, params] = useRoute("/sectional-test/:id");
   const testId = params?.id;
-  const section = params?.section;
   const [, navigate] = useLocation();
 
   const { data: test, isLoading } = useQuery<PracticeTest>({
-    queryKey: [`/api/sectional-tests/${testId}/${section}`],
-    enabled: !!testId && !!section,
+    queryKey: [`/api/sectional-tests/${testId}`],
+    enabled: !!testId,
   });
 
   if (isLoading) {
@@ -22,7 +21,7 @@ export default function SectionalTestSectionPage() {
         <AppHeader />
         <div className="flex items-center justify-center min-h-[50vh]">
           <div className="text-center">
-            <div className="text-lg font-semibold mb-2">Loading test section...</div>
+            <div className="text-lg font-semibold mb-2">Loading test...</div>
             <div className="text-muted-foreground">Please wait</div>
           </div>
         </div>
@@ -37,8 +36,8 @@ export default function SectionalTestSectionPage() {
         <AppHeader />
         <div className="flex items-center justify-center min-h-[50vh]">
           <div className="text-center">
-            <div className="text-lg font-semibold mb-2">Test section not found</div>
-            <div className="text-muted-foreground">This test section does not exist or could not be loaded.</div>
+            <div className="text-lg font-semibold mb-2">Test not found</div>
+            <div className="text-muted-foreground">This test does not exist or could not be loaded.</div>
           </div>
         </div>
         <AppFooter />
@@ -46,15 +45,12 @@ export default function SectionalTestSectionPage() {
     );
   }
 
-  const handleExit = () => {
-    //
-    // By default, it will show a confirmation dialog
-    navigate(`/sectional-test/${testId}`);
-  };
-
   const handleSubmit = (userAnswers: any) => {
-    navigate('/sectional-test-result', { state: { test, userAnswers } });
+    // In a real app, we would save the answers to the server
+    // and then navigate to the results page.
+    // For now, we'll just navigate to the results page with the answers.
+    navigate(`/sectional-test/result/${testId}`, { state: { test, userAnswers } });
   };
 
-  return <NewQuizInterface test={test} onExit={handleExit} onSubmit={handleSubmit} />;
+  return <SectionalTestInterface testId={test.id} section={test.subject} />;
 }

@@ -21,17 +21,17 @@ interface ResultData {
 }
 
 export default function SectionalTestResultPage() {
-  const { testId, section } = useParams<{ testId: string; section: string }>();
+  const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
 
   useEffect(() => {
     const storedResults = localStorage.getItem(
-      `sectionalTestResult-${testId}-${section}`
+      `sectionalTestResult-${testId}`
     );
     if (storedResults) {
       setResultData(JSON.parse(storedResults));
     }
-  }, [testId, section]);
+  }, [testId]);
 
   if (!resultData) {
     return (
@@ -48,13 +48,20 @@ export default function SectionalTestResultPage() {
 
   const totalQuestions = questions.length;
   const attemptedQuestions = Object.keys(answers).length;
-  const correctAnswers = questions.filter(
-    (q) => answers[q.qid] === q.correct_answer
-  ).length;
+  const correctAnswers = questions.filter((q) => {
+    const answer = answers[q.qid];
+    if (!answer) return false;
+    if (q.options.length > 0) {
+      const option = q.options.find(o => o.data_option === answer);
+      return option?.is_correct || false;
+    } else {
+      return answer === q.correct_option_data;
+    }
+  }).length;
   const incorrectAnswers = attemptedQuestions - correctAnswers;
   const accuracy =
     attemptedQuestions > 0 ? (correctAnswers / attemptedQuestions) * 100 : 0;
-  const score = correctAnswers * 3 - incorrectAnswers;
+  const score = correctAnswers * 3 - incorrectAnswers * 1;
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
@@ -62,7 +69,11 @@ export default function SectionalTestResultPage() {
     return `${minutes}m ${secs}s`;
   };
 
-  const getOptionText = (question: Question, data_option: string | undefined) => {
+  const getOptionText = (question: Question, data_option: string | undefined, isCorrect: boolean = false) => {
+    if (isCorrect) {
+      const correctOption = question.options.find(o => o.is_correct);
+      return correctOption ? correctOption.option_text : "N/A";
+    }
     if (!data_option) return "Not Answered";
     const option = question.options.find(o => o.data_option === data_option);
     return option ? option.option_text : "N/A";
@@ -73,7 +84,7 @@ export default function SectionalTestResultPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle className="text-3xl font-bold text-center">
-            Test Result: {testId} - {section?.toUpperCase()}
+            Test Result: {testId}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -113,31 +124,40 @@ export default function SectionalTestResultPage() {
                 <p className="font-bold"><Latex>{`Question ${index + 1}: ${question.question_text}`}</Latex></p>
             </CardHeader>
             <CardContent>
-              <div className="space-y-2">
-                {question.options.map((option) => {
-                  const isSelected = answers[question.qid] === option.data_option;
-                  const isCorrect = option.data_option === question.correct_answer;
+              {question.options.length > 0 ? (
+                <div className="space-y-2">
+                  {question.options.map((option) => {
+                    const isSelected = answers[question.qid] === option.data_option;
+                    const isCorrect = option.is_correct;
 
-                  let bgClass = "bg-transparent";
-                  if (isSelected && isCorrect) {
-                    bgClass = "bg-green-100";
-                  } else if (isSelected && !isCorrect) {
-                    bgClass = "bg-red-100";
-                  } else if (isCorrect) {
-                    bgClass = "bg-green-100";
-                  }
+                    let bgClass = "bg-transparent";
+                    if (isSelected && isCorrect) {
+                      bgClass = "bg-green-100";
+                    } else if (isSelected && !isCorrect) {
+                      bgClass = "bg-red-100";
+                    } else if (isCorrect) {
+                      bgClass = "bg-green-100";
+                    }
 
-                  return (
-                    <div key={option.data_option} className={`p-2 rounded-lg ${bgClass}`}>
-                      <Latex>{`${option.label}. ${option.option_text}`}</Latex>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="mt-4">
-                <p>Your answer: <Latex>{getOptionText(question, answers[question.qid])}</Latex></p>
-                <p>Correct answer: <Latex>{getOptionText(question, question.correct_answer)}</Latex></p>
-              </div>
+                    return (
+                      <div key={option.data_option} className={`p-2 rounded-lg ${bgClass}`}>
+                        <Latex>{`${option.label}. ${option.option_text}`}</Latex>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div>
+                  <p>Your answer: {answers[question.qid] || "Not Answered"}</p>
+                  <p>Correct answer: {question.correct_option_data}</p>
+                </div>
+              )}
+              {question.options.length > 0 && (
+                <div className="mt-4">
+                  <p>Your answer: <Latex>{getOptionText(question, answers[question.qid])}</Latex></p>
+                  <p>Correct answer: <Latex>{getOptionText(question, undefined, true)}</Latex></p>
+                </div>
+              )}
               {question.explanation && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg">
                   <h4 className="font-semibold mb-2">Explanation</h4>
