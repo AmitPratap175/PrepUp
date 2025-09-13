@@ -56,40 +56,11 @@ export default function PracticeTestPage() {
     },
   });
 
-  const submitTestMutation = useMutation({
-    mutationFn: async ({ answers, timeSpent }: { answers: UserAnswer[]; timeSpent: number }) => {
-      // In a real app, we'd update the existing test session
-      // For now, we'll just log the results
-      console.log("Test submitted:", { answers, timeSpent });
-      return Promise.resolve();
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["/api/test-sessions"] });
-      toast({
-        title: "Test Submitted",
-        description: "Your test has been submitted successfully!",
-      });
-      setTestStarted(false);
-      setSelectedTestId(null);
-    },
-    onError: () => {
-      toast({
-        title: "Error",
-        description: "Failed to submit test. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
   const handleStartTest = (testId: string) => {
     setSelectedTestId(testId);
     // In a real app, we'd get the user ID from authentication context
     const mockUserId = "user-123";
     startTestMutation.mutate({ testId, userId: mockUserId });
-  };
-
-  const handleSubmitTest = (answers: UserAnswer[], timeSpent: number) => {
-    submitTestMutation.mutate({ answers, timeSpent });
   };
 
   if (isLoading) {
@@ -112,7 +83,6 @@ export default function PracticeTestPage() {
     return (
       <PracticeTestInterface 
         test={currentTest} 
-        onSubmit={handleSubmitTest}
       />
     );
   }

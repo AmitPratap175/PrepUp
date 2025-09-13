@@ -20,13 +20,13 @@ interface ResultData {
   timeTaken: number;
 }
 
-export default function SectionalTestResultPage() {
+export default function PracticeTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
 
   useEffect(() => {
     const storedResults = localStorage.getItem(
-      `sectionalTestResult-${testId}`
+      `practiceTestResult-${testId}`
     );
     if (storedResults) {
       setResultData(JSON.parse(storedResults));
@@ -45,7 +45,6 @@ export default function SectionalTestResultPage() {
   }
 
   const { questions, answers, timeTaken } = resultData;
-
   const totalQuestions = questions.length;
   const attemptedQuestions = Object.keys(answers).length;
   const correctAnswers = questions.filter((q) => {

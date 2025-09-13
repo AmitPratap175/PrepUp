@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Latex from "react-latex-next";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,10 +10,10 @@ import { PanelLeftClose, PanelRightClose } from "lucide-react";
 
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
-  onSubmit: (answers: UserAnswer[], timeSpent: number) => void;
 }
 
-export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceProps) {
+export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
+  const [, navigate] = useLocation();
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
@@ -112,16 +113,16 @@ export function PracticeTestInterface({ test, onSubmit }: PracticeTestInterfaceP
   };
 
   const handleSubmit = () => {
-    const userAnswers: UserAnswer[] = questions.map(question => ({
-      questionId: question.qid,
-      selectedAnswer: testState.answers[question.qid] || null,
-      timeSpent: 0, // This would need to be tracked per question in a real implementation
-      isMarkedForReview: testState.markedForReview.has(question.qid),
-    }));
-
-    const totalTimeSpent = test.duration * 60 - testState.timeRemaining;
-    onSubmit(userAnswers, totalTimeSpent);
     setTestState(prev => ({ ...prev, isCompleted: true }));
+
+    const resultData = {
+      answers: testState.answers,
+      questions: questions,
+      timeTaken: test.duration * 60 - testState.timeRemaining,
+    };
+
+    localStorage.setItem(`practiceTestResult-${test.id}`, JSON.stringify(resultData));
+    navigate(`/practice-test/result/${test.id}`);
   };
 
   if (testState.isCompleted) {

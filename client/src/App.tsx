@@ -28,12 +28,14 @@ import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
 import SectionalTestsPage from "@/pages/sectional-tests";
 import SectionalTestPage from "@/pages/sectional-test-page";
 import SectionalTestResultPage from "@/pages/sectional-test-result";
+import PracticeTestResultPage from "@/pages/practice-test-result";
 import { AuthProvider } from "@/contexts/auth-context";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/practice-test/result/:testId" component={PracticeTestResultPage} />
       <Route path="/practice-test/:testId?" component={PracticeTest} />
       <Route path="/mock-tests" component={MockTestsPage} />
       <Route path="/mock-test/:testId" component={MockTestPage} />
