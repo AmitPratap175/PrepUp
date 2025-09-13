@@ -10,9 +10,10 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
+  onSubmit: (answers: UserAnswer[]) => void;
 }
 
-export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
+export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
@@ -205,6 +206,12 @@ export function NewQuizInterface({ test, onExit }: QuizInterfaceProps) {
               onClick={onExit}
             >
               Exit
+            </Button>
+            <Button
+              size="sm"
+              onClick={() => onSubmit(Object.entries(answers).map(([questionId, selectedAnswer]) => ({ questionId, selectedAnswer, timeSpent: 0, isMarkedForReview: false })))}
+            >
+              Submit Test
             </Button>
           </div>
         </div>

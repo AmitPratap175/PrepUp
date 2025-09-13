@@ -25,6 +25,10 @@ import SignupPage from "@/pages/signup";
 import BookmarksPage from "@/pages/bookmarks";
 import CurrentAffairsPage from "@/pages/current-affairs";
 import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
+import SectionalTestsPage from "@/pages/sectional-tests";
+import SectionalTestPage from "@/pages/sectional-test";
+import SectionalTestSectionPage from "@/pages/sectional-test-section";
+import SectionalTestResultPage from "@/pages/sectional-test-result";
 import { AuthProvider } from "@/contexts/auth-context";
 
 function Router() {
@@ -34,6 +38,10 @@ function Router() {
       <Route path="/practice-test/:testId?" component={PracticeTest} />
       <Route path="/mock-tests" component={MockTestsPage} />
       <Route path="/mock-test/:testId" component={MockTestPage} />
+      <Route path="/sectional-tests" component={SectionalTestsPage} />
+      <Route path="/sectional-test/:id" component={SectionalTestPage} />
+      <Route path="/sectional-test/:id/:section" component={SectionalTestSectionPage} />
+      <Route path="/sectional-test-result" component={SectionalTestResultPage} />
       <Route path="/quiz/:testId?" component={QuizPage} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/study-materials" component={StudyMaterials} />
