@@ -544,13 +544,13 @@
           "data_option": "1",
           "label": "A",
           "option_text": "$20^{21}$",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
           "option_text": "$21^{20}$",
-          "is_correct": true
+          "is_correct": false
         }
       ],
       "correct_option_data": "2",
@@ -634,7 +634,7 @@
     {
       "qid": "67",
       "passage_text": null,
-      "question_text": "If a, b, c are three distinct positive real numbers, then $\\frac{a^{2}(b+c)^{2}+b^{2}(c+a)^{2}+c^{2}(a+b)^{2}}{abc(a+b+c)}$ is always",
+      "question_text": "If a, b, c are three distinct positive real numbers, then $\\frac{a^{2}(b+c)+b^{2}(c+a)+c^{2}(a+b)}{abc(a+b+c)}$ is always",
       "options": [
         {
           "data_option": "1",

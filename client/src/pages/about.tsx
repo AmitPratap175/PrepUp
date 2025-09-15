@@ -68,16 +68,14 @@ export default function About() {
           <Card className="mb-12 hover-elevate">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold text-foreground text-center mb-8">Our Team</h2>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-1">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">AS</span>
-                  </div>
-                  <h4 className="font-semibold text-foreground">Dr. Arjun Sharma</h4>
-                  <p className="text-sm text-muted-foreground">Founder & CEO</p>
-                  <p className="text-xs text-muted-foreground mt-2">Former IIT Professor with 15+ years of teaching experience</p>
+                  <img src="/amit.jpeg" alt="Amit Pratap" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+                  <h4 className="text-lg font-semibold text-foreground">Amit Pratap</h4>
+                  <p className="text-base text-muted-foreground">Founder & CEO</p>
+                  <p className="text-sm text-muted-foreground mt-2">EdTech veteran with expertise in AI and machine learning. CAT 99.9 percentiler</p>
                 </div>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">PK</span>
                   </div>
@@ -92,7 +90,7 @@ export default function About() {
                   <h4 className="font-semibold text-foreground">Rajesh Gupta</h4>
                   <p className="text-sm text-muted-foreground">Chief Technology Officer</p>
                   <p className="text-xs text-muted-foreground mt-2">EdTech veteran with expertise in AI and machine learning</p>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>

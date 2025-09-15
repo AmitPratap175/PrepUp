@@ -16864,7 +16864,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "33",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -17369,13 +17369,13 @@
           "data_option": "1",
           "label": "A",
           "option_text": "$20^{21}$",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
           "option_text": "$21^{20}$",
-          "is_correct": true
+          "is_correct": false
         }
       ],
       "correct_option_data": "2",
@@ -17456,7 +17456,7 @@
     {
       "qid": "67",
       "passage_text": null,
-      "question_text": "If a, b, c are three distinct positive real numbers, then $\\frac{a^{2}(b+c)^{2}+b^{2}(c+a)^{2}+c^{2}(a+b)^{2}}{abc(a+b+c)}$ is always",
+      "question_text": "If a, b, c are three distinct positive real numbers, then $\\frac{a^{2}(b+c)+b^{2}(c+a)+c^{2}(a+b)}{abc(a+b+c)}$ is always",
       "options": [
         {
           "data_option": "1",
@@ -19415,6 +19415,166 @@
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 348351)\n\n**Passage:**\nIf f ( 5 + x ) = f ( 5 − x ) f(5+x)=f(5-x) f ( 5 + x ) = f ( 5 − x ) for every real x, and f ( x ) = 0 f(x)=0 f ( x ) = 0 has four distinct real roots, then the sum of these roots is\n\n0\n\n40\n\n10\n\n20\n\nIf f ( 5 + x ) = f ( 5 − x ) f(5+x)=f(5-x) f ( 5 + x ) = f ( 5 − x ) for every real x, and f ( x ) = 0 f(x)=0 f ( x ) = 0 has four distinct real roots, then the sum of these roots is\n\n**Options:**\n- **A**. 0\n- **B**. 40\n- **C**. 10\n- **D**. 20\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-754",
+      "passage_text": null,
+      "question_text": "How many distinct scalene triangles with integral sides are possible whose perimeter is less than 15 units?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "For odd perimeter $P$: - Total triangles: $<(P+3)^2/48>$ - Scalene triangles: $<(P-3)^2/48>$\n For even perimeter $P$: - Total triangles: $<P^2/48>$ - Scalene triangles: $<(P-6)^2/48>$\n\n<..> is the nearest integer",
+      "image_url": null,
+      "full_markdown": "### Question 1\nHow many distinct scalene triangles with integral sides are possible whose perimeter is less than 15 units?\nSolution:\nLet the perimeter $P < 15$. For a triangle with integer sides $a < b < c$, the triangle inequality $a + b > c$ must hold.\nCheck all possible integer values for $P$ from $8$ to $14$:\nP = 14: 1\nP = 13: 2\nP = 12: 1\nP = 11: 1\nP = 10: 0\nP = 9: 1\nP = 8: 0\nSum of valid cases for all $P$: $1 + 2 + 1 + 1 + 0 + 1 + 0 = 6$\nTherefore, only 6 distinct scalene triangles with integer sides and perimeter less than 15 units are possible."
+    },
+    {
+      "qid": "288639",
+      "passage_text": "",
+      "question_text": "$x$ is a real number such that $3^{2x+3}+ 2\\times\\ 3^{x+1}=1$, then the value of $x$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "an irrational number",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "a positive integer",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "a negative integer",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "a rational number which is not an integer",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 288639)\n\n**Passage:**\nx x x is a real number such that 3 2 x + 3 3^{2x+3} 3 2 x + 3 + 2 × 3 x + 1 \\times\\ 3^{x+1} × 3 x + 1 =1, then the value of x is\n\nan irrational number\n\na positive integer\n\na negative integer\n\na rational number which is not an integer\n\nx x x is a real number such that 3 2 x + 3 3^{2x+3} 3 2 x + 3 + 2 × 3 x + 1 \\times\\ 3^{x+1} × 3 x + 1 =1, then the value of x is\n\n**Options:**\n- **A**. an irrational number\n- **B**. a positive integer\n- **C**. a negative integer\n- **D**. a rational number which is not an integer\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "290349",
+      "passage_text": null,
+      "question_text": "A value of x satisfies the following equation: $2^{\\left( \\dfrac{\\log_9 x}{\\log_{81} 2^{1/3}} \\right) + 2} = \\dfrac{1}{16}$. Find the value of $12x$.",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290349)\n\n**Passage:**\nA value of x satisfies the following equation:\n\n2 ( log ⁡ 9 x log ⁡ 81 2 1 / 3 ) + 2 = 1 16 2^{\\left( \\dfrac{\\log_9 x}{\\log_{81} 2^{1/3}} \\right) + 2} = \\dfrac{1}{16} 2 ( l o g 8 1 ​ 2 1 / 3 l o g 9 ​ x ​ ) + 2 = 1 6 1 ​ . Find the value of 12x.\n\nA value of x satisfies the following equation: 2 ( log ⁡ 9 x log ⁡ 81 2 1 / 3 ) + 2 = 1 16 2^{\\left( \\dfrac{\\log_9 x}{\\log_{81} 2^{1/3}} \\right) + 2} = \\dfrac{1}{16} 2 ( l o g 8 1 ​ 2 1 / 3 l o g 9 ​ x ​ ) + 2 = 1 6 1 ​ . Find the value of 12x.\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "290513",
+      "passage_text": "",
+      "question_text": "Find the value of x which satisfies the following equation: $5\\times\\ 5^3\\times\\ 5^5\\times\\ .....................5^{2x-1}=\\left(0.0016\\right)^{-16}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290513)\n\n**Passage:**\nFind the value of x which satisfies the following equation: 5 × 5 3 × 5 5 × . . . . . . . . . . . . . . . . . . . . . 5 2 x − 1 5\\times\\ 5^3\\times\\ 5^5\\times\\ .....................5^{2x-1} 5 × 5 3 × 5 5 × . . . . . . . . . . . . . . . . . . . . . 5 2 x − 1 = ( 0.0016 ) − 16 \\left(0.0016\\right)^{-16} ( 0 . 0 0 1 6 ) − 1 6\n\n2\n\n4\n\n8\n\n16\n\nFind the value of x which satisfies the following equation: 5 × 5 3 × 5 5 × . . . . . . . . . . . . . . . . . . . . . 5 2 x − 1 5\\times\\ 5^3\\times\\ 5^5\\times\\ .....................5^{2x-1} 5 × 5 3 × 5 5 × . . . . . . . . . . . . . . . . . . . . . 5 2 x − 1 = ( 0.0016 ) − 16 \\left(0.0016\\right)^{-16} ( 0 . 0 0 1 6 ) − 1 6\n\n**Options:**\n- **A**. 2\n- **B**. 4\n- **C**. 8\n- **D**. 16\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "292860",
+      "passage_text": "",
+      "question_text": "If the value of $log 2 = 0.3010$, then the number of zeroes after the decimal point till the first non-zero digit in $0.16^{20}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 292860)\n\n**Passage:**\nIf the value of log 2 = 0.3010, then the number of zeroes after the decimal point till the first non-zero digit in 0.1 6 20 0.16^{20} 0 . 1 6 2 0 is\n\n13\n\n14\n\n15\n\n16\n\nIf the value of log 2 = 0.3010, then the number of zeroes after the decimal point till the first non-zero digit in 0.1 6 20 0.16^{20} 0 . 1 6 2 0 is\n\n**Options:**\n- **A**. 13\n- **B**. 14\n- **C**. 15\n- **D**. 16\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "293662",
+      "passage_text": "",
+      "question_text": "For $x$, $y>0$, find the value of $x$, if $\\log_{0.5}x+\\log_4y\\ =-1$ and $xy=4$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt[\\ 3]{16}$​",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$4\\sqrt{2}$​",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt[\\ 3]{4}$​",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 293662)\n\n**Passage:**\nFor x, y>0, find the value of x, if log ⁡ 0.5 x + log ⁡ 4 y = − 1 \\log_{0.5}x+\\log_4y\\ =-1 lo g 0 . 5 ​ x + lo g 4 ​ y = − 1 and xy=4?\n\n16 3 \\sqrt[\\ 3]{16} 3 1 6 ​\n\n4 2 4\\sqrt{2} 4 2 ​\n\n2 \\sqrt{2} 2 ​\n\n4 3 \\sqrt[\\ 3]{4} 3 4 ​\n\nFor x, y>0, find the value of x, if log ⁡ 0.5 x + log ⁡ 4 y = − 1 \\log_{0.5}x+\\log_4y\\ =-1 lo g 0 . 5 ​ x + lo g 4 ​ y = − 1 and xy=4?\n\n**Options:**\n- **A**. 163\\sqrt[\\ 3]{16}316​\n- **B**. 424\\sqrt{2}42​\n- **C**. 2\\sqrt{2}2​\n- **D**. 43\\sqrt[\\ 3]{4}34​\n\n**Correct Answer:** null"
     }
   ]
 }
