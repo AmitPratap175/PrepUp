@@ -2,6 +2,7 @@
 FROM python:3.12-slim
 
 # Install uv
+RUN apt-get update && apt-get install -y netcat-openbsd && rm -rf /var/lib/apt/lists/*
 RUN pip install uv
 
 # Set the working directory
@@ -11,10 +12,10 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 # Install dependencies
-RUN uv sync --system
+RUN uv sync
 
 # Copy the rest of the application code
-COPY . .
+COPY auth_server/ .
 
 # Expose the port the app runs on
 EXPOSE 8000

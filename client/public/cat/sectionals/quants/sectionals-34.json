@@ -1,0 +1,745 @@
+{
+  "id": "mock-test-34",
+  "title": "CAT Mock Test 34",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 68,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "24",
+      "passage_text": null,
+      "question_text": "A bag contains 5 identical white balls, 6 identical green balls and 4 identical red balls. In how many ways can these balls be arranged in a row such that all the red balls are together and no two green balls are together?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "42",
+      "image_url": null,
+      "full_markdown": "### Question 24\nA bag contains 5 identical white balls, 6 identical green balls and 4 identical red balls. In how many ways can these balls be arranged ...?\nSolution: 42",
+      "type": "quants"
+    },
+    {
+      "qid": "25",
+      "passage_text": null,
+      "question_text": "The letters of the word BANANA are permuted in all possible ways and listed in alphabetical order as in a dictionary. What is the rank of the word NANAAB?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "39",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "51",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "49",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question 25\nThe letters of the word BANANA are permuted in all possible ways and listed in alphabetical order as in a dictionary. What is the rank of the word NANAAB?\nA. 50\nB. 39\nC. 51\nD. 49\nCorrect Answer: A",
+      "type": "quants"
+    },
+    {
+      "qid": "26",
+      "passage_text": null,
+      "question_text": "Bag $A$ contains 7 maths books, bag $B$ contains 5 physics books and bag $C$ contains $x$ chemistry books. The number of ways of selecting three books such that two books are from one bag and the third book is from a different bag is 541. The value of $x$ is ______.",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "6",
+      "image_url": null,
+      "full_markdown": "### Question 26\nBag $A$ contains 7 maths books, bag $B$ contains 5 physics books and bag $C$ contains $x$ chemistry books. The number of ways ... is 541. The value of $x$ is ______.\nSolution: 6",
+      "type": "quants"
+    },
+    {
+      "qid": "27",
+      "passage_text": null,
+      "question_text": "My mother gave me 5 rasgullas and went out at 7:00 P.M. She is expected to return at 8:00 P.M. She knew that I would eat them all and so she told me to give a gap of at least 5 minutes between any two rasgullas. If I can instantaneously eat a rasgulla and I eat them only at the middle of a minute, what is the number of combinations of times at which I could have eaten my rasgullas (of course only during that one hour)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$^{39}C_5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$^{40}C_5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$^{41}C_{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$^{44}C_5$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Let the first Rasgulla be consumed \u2018a\u2019 minutes after 7:00 p.m. Let the last Rasgulla be consumed \u2018b\u2019 minutes before 8:00 p.m.\nLet the time gap between the 1$^{st}$ and 2$^{nd}$, 2$^{nd}$ and 3$^{rd}$, 3$^{rd}$ and 4$^{th}$, 4$^{th}$ and 5$^{th}$ Rasgullas be $c, d, e$ and $f$, respectively.\na + b + c + d + e + f = 55\nWhere $c, d, e, f \\geq 4$ and $a, b \\geq 0$.\nLet $c = c_1 + 4$, $d = d_1 + 4$, $e = e_1 + 4$, $f = f_1 + 4$.\nWhere $c_1, d_1, e_1, f_1 \\geq 0$\n$\\therefore a + b + c_1 + d_1 + e_1 + f_1 = 39$\nNumber of non-negative integral solutions of $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = n$ is ${n+5 \\\\choose 5}$.\nApplying the same, the Rasgullas can be consumed at $^{44}C_5$ different time combinations.",
+      "image_url": null,
+      "full_markdown": "### Question 27\nMy mother gave me 5 rasgullas ... what is the number of combinations of times ...?\nA. 39C5\nB. 40C5\nC. 41C5\nD. 46C5\nCorrect Answer: D",
+      "type": "quants"
+    },
+    {
+      "qid": "28",
+      "passage_text": null,
+      "question_text": "Five boys including Suresh and five girls including Suneeta are to be seated around a circular table such that no two boys are adjacent and Suneeta is not adjacent to Suresh. In how many ways can this be done?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4! \u00d7 5!",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4!",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3 \u00d7 (4!)\u00b2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(3 \u00d7 (5!)\u00b2)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question 28\nFive boys including Suresh ... and Suneeta is not adjacent to Suresh. In how many ways ...?\nA. 4! \u00d7 5!\nB. 4!\nC. 3 \u00d7 (4!)\u00b2\nD. (3 \u00d7 (4!)\u00b2)\nCorrect Answer: C",
+      "type": "quants"
+    },
+    {
+      "qid": "29",
+      "passage_text": null,
+      "question_text": "Find the number of ways in which 14 boys and 10 girls can be seated in a row such that no two girls sit adjacent to each other and a particular boy and a particular girl sit adjacent to each other.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$(14!)^2 / 60$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(14! \u00d7 13!) / 60$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$(14!)^2 / 120$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$(14! \u00d7 13!) / 60$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question 29\nFind the number of ways in which 14 boys and 10 girls can be seated in a row ...?\nA. $(14!)^2 / 60$\nB. $(14! \u00d7 13!) / 60$\nC. $(14!)^2 / 120$\nD. $(14! \u00d7 13!) / 60$\nCorrect Answer: A",
+      "type": "quants"
+    },
+    {
+      "qid": "30",
+      "passage_text": null,
+      "question_text": "How many 9-digit multiples of 6 can be formed using only the digits 8 or 9?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "85",
+      "image_url": null,
+      "full_markdown": "### Question 30\nHow many 9-digit multiples of 6 can be formed using only the digits 8 or 9?\nSolution: 85",
+      "type": "quants"
+    },
+    {
+      "qid": "20",
+      "passage_text": "",
+      "question_text": "Ajay and Vijay have Rs. 68 each in coins. They have coins of denomination 10, 5 and 1 only. If Ajay has the maximum number of coins possible and Vijay has the minimum number of coins possible, what is the total number of coins both have?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "68",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "78",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "60",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 20)\n\n**Passage:**\nAjay and Vijay have Rs. 68 each in coins. They have coins of denomination 10, 5 and 1 only. If Ajay has the maximum number of coins possible and Vijay has the minimum number of coins possible, what is the total number of coins both have?\n\n68\n\n78\n\n72\n\n60\n\nAjay and Vijay have Rs. 68 each in coins. They have coins of denomination 10, 5 and 1 only. If Ajay has the maximum number of coins possible and Vijay has the minimum number of coins possible, what is the total number of coins both have?\n\n**Options:**\n- **A**. 68\n- **B**. 78\n- **C**. 72\n- **D**. 60\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "45758",
+      "passage_text": "",
+      "question_text": "Let $p$ $q$ and $r$ be three distinct real numbers. Let $f(x) = ax^3 + bx^2 + cx + d$ . Suppose $f(p) = p$, $f(q)=q$ and $f(r) = r$. Which of the following statements is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$f(x) - f(2x) = x$ has at least three real roots.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "If $p>qp>qp>q$ , $f(f(p)) < f(f(q))$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$f(f(x))=x$ has at least three real roots.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$f(x^2) > f(x)$for all real $x$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 45758)\n\n**Passage:**\nLet p , q p, q p , q and r r r be three distinct real numbers. Let f ( x ) = a x 3 + b x 2 + c x + d f(x) = ax^3 + bx^2 + cx + d f ( x ) = a x 3 + b x 2 + c x + d . Suppose f ( p ) = p , f ( q ) = q f(p) = p, f(q)=q f ( p ) = p , f ( q ) = q and f ( r ) = r f(r) = r f ( r ) = r . Which of the following statements is true?\n\nf ( x ) \u2212 f ( 2 x ) = x f(x) - f(2x) = x f ( x ) \u2212 f ( 2 x ) = x has at least three real roots.\n\nIf p > q p>q p > q , f ( f ( p ) ) < f ( f ( q ) ) f(f(p)) < f(f(q)) f ( f ( p ) ) < f ( f ( q ) )\n\nf ( f ( x ) ) = x f(f(x))=x f ( f ( x ) ) = x has at least three real roots.\n\nf ( x 2 ) > f ( x ) f(x^2) > f(x) f ( x 2 ) > f ( x ) for all real x x x\n\nLet p , q p, q p , q and r r r be three distinct real numbers. Let f ( x ) = a x 3 + b x 2 + c x + d f(x) = ax^3 + bx^2 + cx + d f ( x ) = a x 3 + b x 2 + c x + d . Suppose f ( p ) = p , f ( q ) = q f(p) = p, f(q)=q f ( p ) = p , f ( q ) = q and f ( r ) = r f(r) = r f ( r ) = r . Which of the following statements is true?\n\n**Options:**\n- **A**. f(x)\u2212f(2x)=xf(x) - f(2x) = xf(x)\u2212f(2x)=xhas at least three real roots.\n- **B**. Ifp>qp>qp>q,f(f(p))<f(f(q))f(f(p)) < f(f(q))f(f(p))<f(f(q))\n- **C**. f(f(x))=xf(f(x))=xf(f(x))=xhas at least three real roots.\n- **D**. f(x2)>f(x)f(x^2) > f(x)f(x2)>f(x)for all realxxx\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "4003",
+      "passage_text": "",
+      "question_text": "A confused bank teller transposed the rupees and paise when he cashed a cheque for Shailaja, giving her rupees instead of paise and paise instead of rupees. After buying a toffee for 50 paise, Shailaja noticed that she was left with exactly three times as much as the amount on the cheque. Which of the following is a valid statement about the cheque amount?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Over Rupees 13 but less than Rupees 14",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Over Rupees 7 but less than Rupees 8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Over Rupees 22 but less than Rupees 23",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Over Rupees 18 but less than Rupees 19",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "Over Rupees 4 but less than Rupees 5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 4003)\n\n**Passage:**\nA confused bank teller transposed the rupees and paise when he cashed a cheque for Shailaja, giving her rupees instead of paise and paise instead of rupees. After buying a toffee for 50 paise, Shailaja noticed that she was left with exactly three times as much as the amount on the cheque. Which of the following is a valid statement about the cheque amount?\n\nOver Rupees 13 but less than Rupees 14\n\nOver Rupees 7 but less than Rupees 8\n\nOver Rupees 22 but less than Rupees 23\n\nOver Rupees 18 but less than Rupees 19\n\nOver Rupees 4 but less than Rupees 5\n\nA confused bank teller transposed the rupees and paise when he cashed a cheque for Shailaja, giving her rupees instead of paise and paise instead of rupees. After buying a toffee for 50 paise, Shailaja noticed that she was left with exactly three times as much as the amount on the cheque. Which of the following is a valid statement about the cheque amount?\n\n**Options:**\n- **A**. Over Rupees 13 but less than Rupees 14\n- **B**. Over Rupees 7 but less than Rupees 8\n- **C**. Over Rupees 22 but less than Rupees 23\n- **D**. Over Rupees 18 but less than Rupees 19\n- **E**. Over Rupees 4 but less than Rupees 5\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "33034",
+      "passage_text": "",
+      "question_text": "$x^2+(p+2)x+2p =0$ has real and equal roots. What is the value of p?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "The equation can\u2019t have real and equal roots for any value of p.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 33034)\n\n**Passage:**\nx 2 + ( p + 2 ) x + 2 p = 0 x^2+(p+2)x+2p =0 x 2 + ( p + 2 ) x + 2 p = 0 has real and equal roots. What is the value of p?\n\n0\n\n1\n\n2\n\nThe equation can\u2019t have real and equal roots for any value of p.\n\nx 2 + ( p + 2 ) x + 2 p = 0 x^2+(p+2)x+2p =0 x 2 + ( p + 2 ) x + 2 p = 0 has real and equal roots. What is the value of p?\n\n**Options:**\n- **A**. 0\n- **B**. 1\n- **C**. 2\n- **D**. The equation can\u2019t have real and equal roots for any value of p.\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "13449",
+      "passage_text": "",
+      "question_text": "If a,b ( $a \\neq b$ ) are the real roots of the equation $(k+1)(x^2 + x + 1)^2 + (k-1)(x^4 + x^2 + 1) = 0$, $k \\neq 1,0$. Then the product of the roots is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{k+1}{k-1}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{k^2-1}{k^2+1}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13449)\n\n**Passage:**\nIf a,b ( a \u2260 b a \\neq b a \ue020 \u200b = b ) are the real roots of the equation ( k + 1 ) ( x 2 + x + 1 ) 2 (k+1)(x^2 + x + 1)^2 ( k + 1 ) ( x 2 + x + 1 ) 2 + ( k \u2212 1 ) ( x 4 + x 2 + 1 ) = 0 (k-1)(x^4 + x^2 + 1) = 0 ( k \u2212 1 ) ( x 4 + x 2 + 1 ) = 0 , k \u2260 1 , 0 k \\neq 1,0 k \ue020 \u200b = 1 , 0 . Then the product of the roots is\n\nk + 1 k \u2212 1 \\frac{k+1}{k-1} k \u2212 1 k + 1 \u200b\n\n1 1 1\n\nk 2 \u2212 1 k 2 + 1 \\frac{k^2-1}{k^2+1} k 2 + 1 k 2 \u2212 1 \u200b\n\n2 2 2\n\nIf a,b ( a \u2260 b a \\neq b a \ue020 \u200b = b ) are the real roots of the equation ( k + 1 ) ( x 2 + x + 1 ) 2 (k+1)(x^2 + x + 1)^2 ( k + 1 ) ( x 2 + x + 1 ) 2 + ( k \u2212 1 ) ( x 4 + x 2 + 1 ) = 0 (k-1)(x^4 + x^2 + 1) = 0 ( k \u2212 1 ) ( x 4 + x 2 + 1 ) = 0 , k \u2260 1 , 0 k \\neq 1,0 k \ue020 \u200b = 1 , 0 . Then the product of the roots is\n\n**Options:**\n- **A**. k+1k\u22121\\frac{k+1}{k-1}k\u22121k+1\u200b\n- **B**. 111\n- **C**. k2\u22121k2+1\\frac{k^2-1}{k^2+1}k2+1k2\u22121\u200b\n- **D**. 222\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "57699",
+      "passage_text": "",
+      "question_text": "Infinite circles are drawn touching the sides of the isosceles triangle with equal sides as 29 cm and unequal side as 40 cm as shown in the figure. Find the sum of radius of all such circles?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10.5 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12.5 cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Note this will just be the half of the height of the triangle.",
+      "image_url": "https://cracku.in/media/uploads/Capture_dpMW5FB.JPG",
+      "full_markdown": "### Question (qid: 57699)\n\n**Passage:**\nInfinite circles are drawn touching the sides of the isosceles triangle with equal sides as 29 cm and unequal side as 40 cm as shown in the figure. Find the sum of radius of all such circles?\n\n12 cm\n\n10.5 cm\n\n11 cm\n\n12.5 cm\n\nInfinite circles are drawn touching the sides of the isosceles triangle with equal sides as 29 cm and unequal side as 40 cm as shown in the figure. Find the sum of radius of all such circles?\n\n**Options:**\n- **A**. 12 cm\n- **B**. 10.5 cm\n- **C**. 11 cm\n- **D**. 12.5 cm\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "8339",
+      "passage_text": "",
+      "question_text": "In triangle MNQ; MN=15cm and NQ = 14 cm. NM is extended to O, NQ is extended to P, such that MP bisects the angle OMQ. If QP= 7cm, find QM?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question (qid: 8339)\n\n**Passage:**\nIn triangle MNQ; MN=15cm and NQ = 14 cm. NM is extended to O, NQ is extended to P, such that MP bisects the angle OMQ. If QP= 7cm, find QM?\n\n4 cm\n\n5 cm\n\n6cm\n\n7cm\n\nIn triangle MNQ; MN=15cm and NQ = 14 cm. NM is extended to O, NQ is extended to P, such that MP bisects the angle OMQ. If QP= 7cm, find QM?\n\n**Options:**\n- **A**. 4 cm\n- **B**. 5 cm\n- **C**. 6cm\n- **D**. 7cm\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "302965",
+      "passage_text": "",
+      "question_text": "In an obtuse-angled triangle, the difference between the obtuse angle and one of the acute angles is $24^{\\circ}$ . The difference between the two acute angles is $54^{\\circ}$ . Then which among the following cannot be the sum of the angles taken two at a time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "154",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "86",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "164",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question (qid: 302965)\n\n**Passage:**\nIn an obtuse-angled triangle, the difference between the obtuse angle and one of the acute angles is 2 4 0 24^0 2 4 0 . The difference between the two acute angles is 5 4 0 54^0 5 4 0 . Then which among the following cannot be the sum of the angles taken two at a time?\n\n154\n\n110\n\n86\n\n164\n\nIn an obtuse-angled triangle, the difference between the obtuse angle and one of the acute angles is 2 4 0 24^0 2 4 0 . The difference between the two acute angles is 5 4 0 54^0 5 4 0 . Then which among the following cannot be the sum of the angles taken two at a time?\n\n**Options:**\n- **A**. 154\n- **B**. 110\n- **C**. 86\n- **D**. 164\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "31770",
+      "passage_text": "",
+      "question_text": "A circle having a diameter of 16 cm is cut by a chord of length 8cm. Find the length of the smaller arc of the circle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{2\\pi}{3}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{16\\pi}{3}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{4\\pi}{3}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{8\\pi}{3}$\u200b",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "$\\frac{12\\pi}{3}$\u200b",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question (qid: 31770)\n\n**Passage:**\nA circle having a diameter of 16 cm is cut by a chord of length 8cm. Find the length of the smaller arc of the circle.\n\n2 \u03c0 3 \\frac{2\\pi}{3} 3 2 \u03c0 \u200b\n\n16 \u03c0 3 \\frac{16\\pi}{3} 3 1 6 \u03c0 \u200b\n\n4 \u03c0 3 \\frac{4\\pi}{3} 3 4 \u03c0 \u200b\n\n8 \u03c0 3 \\frac{8\\pi}{3} 3 8 \u03c0 \u200b\n\n12 \u03c0 3 \\frac{12\\pi}{3} 3 1 2 \u03c0 \u200b\n\nA circle having a diameter of 16 cm is cut by a chord of length 8cm. Find the length of the smaller arc of the circle.\n\n**Options:**\n- **A**. 2\u03c03\\frac{2\\pi}{3}32\u03c0\u200b\n- **B**. 16\u03c03\\frac{16\\pi}{3}316\u03c0\u200b\n- **C**. 4\u03c03\\frac{4\\pi}{3}34\u03c0\u200b\n- **D**. 8\u03c03\\frac{8\\pi}{3}38\u03c0\u200b\n- **E**. 12\u03c03\\frac{12\\pi}{3}312\u03c0\u200b\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "1000",
+      "passage_text": "",
+      "question_text": "XYWZ is a trapezium with XY parallel to WZ. If XY is 10 cm; XZ is 8 cm, $\\angle XZW$ is 45 degrees and YW is perpendicular to ZW, find the length of WZ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "14 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$14\\sqrt{2}$ \u200bcm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$10 + 4\\sqrt2\u200b$ cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2 cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": null,
+      "full_markdown": "### Question (qid: 1000)\n\n**Passage:**\nXYWZ is a trapezium with XY parallel to WZ. If XY is 10 cm; XZ is 8 cm, \u2220 X Z W \\angle XZW \u2220 X Z W is 45 degrees and YW is perpendicular to ZW, find the length of WZ?\n\n14 14 1 4 cm\n\n14 2 14\\sqrt{2} 1 4 2 \u200b cm\n\n10 + 4 2 \\sqrt2 2 \u200b\n\n2 2 2 cm\n\nXYWZ is a trapezium with XY parallel to WZ. If XY is 10 cm; XZ is 8 cm, \u2220 X Z W \\angle XZW \u2220 X Z W is 45 degrees and YW is perpendicular to ZW, find the length of WZ?\n\n**Options:**\n- **A**. 141414cm\n- **B**. 14214\\sqrt{2}142\u200bcm\n- **C**. 10 + 42\\sqrt22\u200b\n- **D**. 222cm\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "2632",
+      "passage_text": "",
+      "question_text": "Amit takes 1 hour less than Bindu to complete a project. If both of them work together, they complete the project in 2(2/9) hours. Find the time taken by Amit to complete the project if he works alone.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4 hours",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2632)\n\n**Passage:**\nAmit takes 1 hour less than Bindu to complete a project. If both of them work together, they complete the project in 2(2/9) hours. Find the time taken by Amit to complete the project if he works alone.\n\n3 hours\n\n6 hours\n\n5 hours\n\n4 hours\n\nAmit takes 1 hour less than Bindu to complete a project. If both of them work together, they complete the project in 2(2/9) hours. Find the time taken by Amit to complete the project if he works alone.\n\n**Options:**\n- **A**. 3 hours\n- **B**. 6 hours\n- **C**. 5 hours\n- **D**. 4 hours\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "348433",
+      "passage_text": "",
+      "question_text": "A and B are two railway stations 90 km apart. A train leaves A at 9:00 am, heading towards B at a speed of 40 km/hr. Another train leaves B at 10:30 am, heading towards A at a speed of 20 km/hr. The trains meet each other at",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "11 : 45 am",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11 : 20 am",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11 : 00 am",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10 : 45 am",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348433)\n\n**Passage:**\nA and B are two railway stations 90 km apart. A train leaves A at 9:00 am, heading towards B at a speed of 40 km/hr. Another train leaves B at 10:30 am, heading towards A at a speed of 20 km/hr. The trains meet each other at\n\n11 : 45 am\n\n11 : 20 am\n\n11 : 00 am\n\n10 : 45 am\n\nA and B are two railway stations 90 km apart. A train leaves A at 9:00 am, heading towards B at a speed of 40 km/hr. Another train leaves B at 10:30 am, heading towards A at a speed of 20 km/hr. The trains meet each other at\n\n**Options:**\n- **A**. 11 : 45 am\n- **B**. 11 : 20 am\n- **C**. 11 : 00 am\n- **D**. 10 : 45 am\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "348438",
+      "passage_text": "",
+      "question_text": "Anil, Sunil, and Ravi run along a circular path of length 3 km, starting from the same point at the same time, and going in the clockwise direction. If they run at speeds of 15 km/hr, 10 km/hr, and 8 km/hr, respectively, how much distance in km will Ravi have run when Anil and Sunil meet again for the first time at the starting point?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4.8",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4.6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5.2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4.2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348438)\n\n**Passage:**\nAnil, Sunil, and Ravi run along a circular path of length 3 km, starting from the same point at the same time, and going in the clockwise direction. If they run at speeds of 15 km/hr, 10 km/hr, and 8 km/hr, respectively, how much distance in km will Ravi have run when Anil and Sunil meet again for the first time at the starting point?\n\n4.8\n\n4.6\n\n5.2\n\n4.2\n\nAnil, Sunil, and Ravi run along a circular path of length 3 km, starting from the same point at the same time, and going in the clockwise direction. If they run at speeds of 15 km/hr, 10 km/hr, and 8 km/hr, respectively, how much distance in km will Ravi have run when Anil and Sunil meet again for the first time at the starting point?\n\n**Options:**\n- **A**. 4.8\n- **B**. 4.6\n- **C**. 5.2\n- **D**. 4.2\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "348529",
+      "passage_text": "",
+      "question_text": "A and B are two points on a straight line. Ram runs from A to B while Rahim runs from B to A. After crossing each other. Ram and Rahim reach their destination in one minute and four minutes, respectively. if they start at the same time, then the ratio of Ram's speed to Rahim's speed is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{2}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{2}$\u200b",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2\\sqrt{2}$\u200b",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348529)\n\n**Passage:**\nA and B are two points on a straight line. Ram runs from A to B while Rahim runs from B to A. After crossing each other. Ram and Rahim reach their destination in one minute and four minutes, respectively. if they start at the same time, then the ratio of Ram's speed to Rahim's speed is\n\n1 2 \\frac{1}{2} 2 1 \u200b\n\n2 \\sqrt{2} 2 \u200b\n\n2 2 2\n\n2 2 2\\sqrt{2} 2 2 \u200b\n\nA and B are two points on a straight line. Ram runs from A to B while Rahim runs from B to A. After crossing each other. Ram and Rahim reach their destination in one minute and four minutes, respectively. if they start at the same time, then the ratio of Ram's speed to Rahim's speed is\n\n**Options:**\n- **A**. 12\\frac{1}{2}21\u200b\n- **B**. 2\\sqrt{2}2\u200b\n- **C**. 222\n- **D**. 222\\sqrt{2}22\u200b\n\n**Correct Answer:** null",
+      "type": "quants"
+    },
+    {
+      "qid": "3134",
+      "passage_text": "",
+      "question_text": "Ram, Shyam and Hari went out for a 100 km journey. Ram and Hari started the journey in Ram\u2019s car at the rate of 25 kmph, while Shyam walked at 5 kmph. After sometime, Hari got off and started walking at the rate of 5 kmph and Ram went back to pick up Shyam. All three reached the destination simultaneously. The number of hours required for the trip was:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 3134)\n\n**Passage:**\nRam, Shyam and Hari went out for a 100 km journey. Ram and Hari started the journey in Ram\u2019s car at the rate of 25 kmph, while Shyam walked at 5 kmph. After sometime, Hari got off and started walking at the rate of 5 kmph and Ram went back to pick up Shyam. All three reached the destination simultaneously. The number of hours required for the trip was:\n\n8\n\n7\n\n6\n\n5\n\n4\n\nRam, Shyam and Hari went out for a 100 km journey. Ram and Hari started the journey in Ram\u2019s car at the rate of 25 kmph, while Shyam walked at 5 kmph. After sometime, Hari got off and started walking at the rate of 5 kmph and Ram went back to pick up Shyam. All three reached the destination simultaneously. The number of hours required for the trip was:\n\n**Options:**\n- **A**. 8\n- **B**. 7\n- **C**. 6\n- **D**. 5\n- **E**. 4\n\n**Correct Answer:** null",
+      "type": "quants"
+    }
+  ]
+}

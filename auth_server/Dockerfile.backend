@@ -1,0 +1,28 @@
+# Backend Dockerfile
+FROM python:3.12-slim
+
+# Install uv
+RUN pip install uv
+
+# Set the working directory
+WORKDIR /app
+
+# Copy dependency files
+COPY pyproject.toml ./
+
+# Install dependencies using uv
+RUN uv pip install --system --no-cache -r pyproject.toml
+
+# Copy the rest of the application code
+COPY . /app/src
+
+# Set the working directory to the Django project
+WORKDIR /app/src
+
+# Expose the port the app runs on
+EXPOSE 8000
+
+# CMD ["python", "manage.py", "migrate" ]
+
+# Run the application
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

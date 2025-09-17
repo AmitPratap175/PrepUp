@@ -1,0 +1,702 @@
+{
+  "id": "mock-test-15",
+  "title": "CAT Mock Test 15",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 68,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "dilr-309",
+      "question_text": "Suppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier. At what time is the order placed by Client 2 completely served?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10:10",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10:12",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10:15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10:17",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Healthy Bites is a fastfood joint serving three items, burgers, fries and ice cream. It has two employees Anish and Bani who prepare the items ordered by the clients. Preparation time is 10 minutes for a burger and 2 minutes for an order of Ice cream. An employee can prepare only one of these items at a time. The fries are prepared in an automatic fryer which can prepare upto to 3 portions of fries at a time, and takes 5 minutes irrespective of the number of portions. The fryer does not need an employee to constantly attend to it, and we can ignore the time taken by an employee to start and stop the fryer; thus, an employee can be engaged in preparing other items while the frying is on. However fries cannot be prepared in anticipation of future orders. Healthy Bites wishes to serve the orders as early as possible. The individual items in any order are served as and when ready; however,the order is considered to be completely served only when all the items of that order are served. The table below gives the orders of three clients and the times at which they placed their orders: ",
+      "image_url": "https://cracku.in/media/uploads/question%201%20image.png",
+      "full_markdown": "### Question (qid: 98112)\n\nSuppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier. At what time is the order placed by Client 2 completely served?\n\n**Options:**\n- **A**. 10:10 \u2705\n- **B**. 10:12\n- **C**. 10:15\n- **D**. 10:17\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-310",
+      "question_text": "Suppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier. Also assume that the fourth client came in only at 10:35. Between 10:00 and 10:30, for how many minutes is exactly one of the employees idle?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "23",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Healthy Bites is a fastfood joint serving three items, burgers, fries and ice cream. It has two employees Anish and Bani who prepare the items ordered by the clients. Preparation time is 10 minutes for a burger and 2 minutes for an order of Ice cream. An employee can prepare only one of these items at a time. The fries are prepared in an automatic fryer which can prepare upto to 3 portions of fries at a time, and takes 5 minutes irrespective of the number of portions. The fryer does not need an employee to constantly attend to it, and we can ignore the time taken by an employee to start and stop the fryer; thus, an employee can be engaged in preparing other items while the frying is on. However fries cannot be prepared in anticipation of future orders. Healthy Bites wishes to serve the orders as early as possible. The individual items in any order are served as and when ready; however,the order is considered to be completely served only when all the items of that order are served. The table below gives the orders of three clients and the times at which they placed their orders: ",
+      "image_url": "https://cracku.in/media/uploads/question%201%20image.png",
+      "full_markdown": "### Question (qid: 98113)\n\nSuppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier. Also assume that the fourth client came in only at 10:35. Between 10:00 and 10:30, for how many minutes is exactly one of the employees idle?\n\n**Options:**\n- **A**. 7\n- **B**. 10 \u2705\n- **C**. 15\n- **D**. 23\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-311",
+      "question_text": "What percentage of kids from S were studying in P?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "37%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "79%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "56%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " A study to look at the early learning of rural kids was carried out in a number of villages spanning three states, chosen from the North East (NE), the West (W) and the South (S). 50 four-year old kids each were sampled from each of the 150 villages from NE, 250 villages from W and 200 villages from S. It was found that of the 30000 surveyed kids 55% studied in primary schools run by government (G), 37% in private schools (P) while the remaining 8% did not go to school (O). The kids surveyed were further divided into two groups based on whether their mothers dropped out of school before completing primary education or not.. The table below gives the number of kids in different types of schools for mothers who dropped out of school before completing primary education:   It is also known that:\n\n 1. In S, 60% of the surveyed kids were in G. Moreover, In S, all surveyed kids whose mothers had completed primary education were in school.\n\n 2. In NE, among the O kids, 50% had mothers who had dropped out before completing primary education.\n\n 3. The number of kids in G in NE was the same as the number of kids in G in W. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202019-09-03%2011.52.47.png",
+      "full_markdown": "### Question (qid: 98114)\n\nWhat percentage of kids from S were studying in P?\n\n**Options:**\n- **A**. 37% \u2705\n- **B**. 6%\n- **C**. 79%\n- **D**. 56%\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-312",
+      "question_text": "Among the kids in W whose mothers had completed primary education, how many were not in school?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "300",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1050",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1500",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " A study to look at the early learning of rural kids was carried out in a number of villages spanning three states, chosen from the North East (NE), the West (W) and the South (S). 50 four-year old kids each were sampled from each of the 150 villages from NE, 250 villages from W and 200 villages from S. It was found that of the 30000 surveyed kids 55% studied in primary schools run by government (G), 37% in private schools (P) while the remaining 8% did not go to school (O). The kids surveyed were further divided into two groups based on whether their mothers dropped out of school before completing primary education or not.. The table below gives the number of kids in different types of schools for mothers who dropped out of school before completing primary education:   It is also known that:\n\n 1. In S, 60% of the surveyed kids were in G. Moreover, In S, all surveyed kids whose mothers had completed primary education were in school.\n\n 2. In NE, among the O kids, 50% had mothers who had dropped out before completing primary education.\n\n 3. The number of kids in G in NE was the same as the number of kids in G in W. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202019-09-03%2011.52.47.png",
+      "full_markdown": "### Question (qid: 98115)\n\nAmong the kids in W whose mothers had completed primary education, how many were not in school?\n\n**Options:**\n- **A**. 300 \u2705\n- **B**. 1200\n- **C**. 1050\n- **D**. 1500\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-313",
+      "question_text": "In a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in one region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools. What number of the surveyed kids now were in G in W?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5250",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6750",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6300",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " A study to look at the early learning of rural kids was carried out in a number of villages spanning three states, chosen from the North East (NE), the West (W) and the South (S). 50 four-year old kids each were sampled from each of the 150 villages from NE, 250 villages from W and 200 villages from S. It was found that of the 30000 surveyed kids 55% studied in primary schools run by government (G), 37% in private schools (P) while the remaining 8% did not go to school (O). The kids surveyed were further divided into two groups based on whether their mothers dropped out of school before completing primary education or not.. The table below gives the number of kids in different types of schools for mothers who dropped out of school before completing primary education:   It is also known that:\n\n 1. In S, 60% of the surveyed kids were in G. Moreover, In S, all surveyed kids whose mothers had completed primary education were in school.\n\n 2. In NE, among the O kids, 50% had mothers who had dropped out before completing primary education.\n\n 3. The number of kids in G in NE was the same as the number of kids in G in W. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202019-09-03%2011.52.47.png",
+      "full_markdown": "### Question (qid: 98116)\n\nIn a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in one region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools. What number of the surveyed kids now were in G in W?\n\n**Options:**\n- **A**. 6000 \u2705\n- **B**. 5250\n- **C**. 6750\n- **D**. 6300\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-314",
+      "question_text": "In a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in on.e region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools. What percentage of the surveyed kids in S, whose mothers had dropped out before completing primary education, were in G now?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "94.7%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "89.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "93.4%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined from the given information",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " A study to look at the early learning of rural kids was carried out in a number of villages spanning three states, chosen from the North East (NE), the West (W) and the South (S). 50 four-year old kids each were sampled from each of the 150 villages from NE, 250 villages from W and 200 villages from S. It was found that of the 30000 surveyed kids 55% studied in primary schools run by government (G), 37% in private schools (P) while the remaining 8% did not go to school (O). The kids surveyed were further divided into two groups based on whether their mothers dropped out of school before completing primary education or not.. The table below gives the number of kids in different types of schools for mothers who dropped out of school before completing primary education:   It is also known that:\n\n 1. In S, 60% of the surveyed kids were in G. Moreover, In S, all surveyed kids whose mothers had completed primary education were in school.\n\n 2. In NE, among the O kids, 50% had mothers who had dropped out before completing primary education.\n\n 3. The number of kids in G in NE was the same as the number of kids in G in W. ",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202019-09-03%2011.52.47.png",
+      "full_markdown": "### Question (qid: 98117)\n\nIn a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in on.e region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools. What percentage of the surveyed kids in S, whose mothers had dropped out before completing primary education, were in G now?\n\n**Options:**\n- **A**. 94.7% \u2705\n- **B**. 89.5%\n- **C**. 93.4%\n- **D**. Cannot be determined from the given information\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-315",
+      "question_text": "What best can be concluded about the number of candidates sitting for the separate test for BIE who were at or above the 90th percentile overall in CET?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3 or 10",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7 or 10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Applicants for the doctoral programmes of Ambi Institute of Engineering (AIE) and Bambi Institute of Engineering (BIE) have to appear for a Common Entrance Test (CET). The test has three sections: Physics (P), Chemistry (C), and Maths (M). Among those appearing for CET, those at or above the 80th percentile in at least two sections, and at or above the 90th percentile overall, are selected for Advanced Entrance Test (AET) conducted by AIE. AET is used by AIE for final selection. For the 200 candidates who are at or above the 90th percentile overall based on CET, the following are known about their performance in CET:\n\n 1. No one is below the 80th percentile in all 3 sections.\n\n 2. 150 are at or above the 80th percentile in exactly two sections.\n\n 3. The number of candidates at or above the 80th percentile only in P is the same as the number of candidates at or above the 80th percentile only in C. The same is the number of candidates at or above the 80th percentile only in M.\n\n 4. Number of candidates below 80th percentile in P: Number of candidates below 80th percentile in C: Number of candidates below 80th percentile in M = 4:2:1. BIE uses a different process for selection. If any candidate is appearing in the AET by AIE, BIE considers their AET score for final selection provided the candidate is at or above the 80th percentile in P. Any other candidate at or above the 80th percentile in P in CET, but who is not eligible for the AET, is required to appear in a separate test to be conducted by BIE for being considered for final selection. Altogether, there are 400 candidates this year who are at or above the 80th percentile in P. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98118)\n\nWhat best can be concluded about the number of candidates sitting for the separate test for BIE who were at or above the 90th percentile overall in CET?\n\n**Options:**\n- **A**. 3 or 10 \u2705\n- **B**. 10\n- **C**. 5\n- **D**. 7 or 10\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-316",
+      "question_text": "If the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, what is the number of candidates who are at or above the 90th percentile overall and at or above the 80th percentile in both P and M in CET?",
+      "options": [],
+      "correct_option_data": "60",
+      "solution_text": null,
+      "passage_text": " Applicants for the doctoral programmes of Ambi Institute of Engineering (AIE) and Bambi Institute of Engineering (BIE) have to appear for a Common Entrance Test (CET). The test has three sections: Physics (P), Chemistry (C), and Maths (M). Among those appearing for CET, those at or above the 80th percentile in at least two sections, and at or above the 90th percentile overall, are selected for Advanced Entrance Test (AET) conducted by AIE. AET is used by AIE for final selection. For the 200 candidates who are at or above the 90th percentile overall based on CET, the following are known about their performance in CET:\n\n 1. No one is below the 80th percentile in all 3 sections.\n\n 2. 150 are at or above the 80th percentile in exactly two sections.\n\n 3. The number of candidates at or above the 80th percentile only in P is the same as the number of candidates at or above the 80th percentile only in C. The same is the number of candidates at or above the 80th percentile only in M.\n\n 4. Number of candidates below 80th percentile in P: Number of candidates below 80th percentile in C: Number of candidates below 80th percentile in M = 4:2:1. BIE uses a different process for selection. If any candidate is appearing in the AET by AIE, BIE considers their AET score for final selection provided the candidate is at or above the 80th percentile in P. Any other candidate at or above the 80th percentile in P in CET, but who is not eligible for the AET, is required to appear in a separate test to be conducted by BIE for being considered for final selection. Altogether, there are 400 candidates this year who are at or above the 80th percentile in P. ",
+      "image_url": null,
+      "full_markdown": "### Question\n\nIf the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, what is the number of candidates who are at or above the 90th percentile overall and at or above the 80th percentile in both P and M in CET?\n\n**Options:** \n\n**Correct Answer:** 60",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-317",
+      "question_text": "If the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, then how many candidates were shortlisted for the AET for AIE?",
+      "options": [],
+      "correct_option_data": "170",
+      "solution_text": null,
+      "passage_text": " Applicants for the doctoral programmes of Ambi Institute of Engineering (AIE) and Bambi Institute of Engineering (BIE) have to appear for a Common Entrance Test (CET). The test has three sections: Physics (P), Chemistry (C), and Maths (M). Among those appearing for CET, those at or above the 80th percentile in at least two sections, and at or above the 90th percentile overall, are selected for Advanced Entrance Test (AET) conducted by AIE. AET is used by AIE for final selection. For the 200 candidates who are at or above the 90th percentile overall based on CET, the following are known about their performance in CET:\n\n 1. No one is below the 80th percentile in all 3 sections.\n\n 2. 150 are at or above the 80th percentile in exactly two sections.\n\n 3. The number of candidates at or above the 80th percentile only in P is the same as the number of candidates at or above the 80th percentile only in C. The same is the number of candidates at or above the 80th percentile only in M.\n\n 4. Number of candidates below 80th percentile in P: Number of candidates below 80th percentile in C: Number of candidates below 80th percentile in M = 4:2:1. BIE uses a different process for selection. If any candidate is appearing in the AET by AIE, BIE considers their AET score for final selection provided the candidate is at or above the 80th percentile in P. Any other candidate at or above the 80th percentile in P in CET, but who is not eligible for the AET, is required to appear in a separate test to be conducted by BIE for being considered for final selection. Altogether, there are 400 candidates this year who are at or above the 80th percentile in P. ",
+      "image_url": null,
+      "full_markdown": "### Question\n\nIf the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, then how many candidates were shortlisted for the AET for AIE?\n\n**Options:** \n\n**Correct Answer:** 170",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-318",
+      "question_text": "If the number of candidates who are at or above the 90th percentile overall and also are at or above the 80th percentile in P in CET, is more than 100, how many candidates had to sit for the separate test for BIE?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "299",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "310",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "321",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "330",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Applicants for the doctoral programmes of Ambi Institute of Engineering (AIE) and Bambi Institute of Engineering (BIE) have to appear for a Common Entrance Test (CET). The test has three sections: Physics (P), Chemistry (C), and Maths (M). Among those appearing for CET, those at or above the 80th percentile in at least two sections, and at or above the 90th percentile overall, are selected for Advanced Entrance Test (AET) conducted by AIE. AET is used by AIE for final selection. For the 200 candidates who are at or above the 90th percentile overall based on CET, the following are known about their performance in CET:\n\n 1. No one is below the 80th percentile in all 3 sections.\n\n 2. 150 are at or above the 80th percentile in exactly two sections.\n\n 3. The number of candidates at or above the 80th percentile only in P is the same as the number of candidates at or above the 80th percentile only in C. The same is the number of candidates at or above the 80th percentile only in M.\n\n 4. Number of candidates below 80th percentile in P: Number of candidates below 80th percentile in C: Number of candidates below 80th percentile in M = 4:2:1. BIE uses a different process for selection. If any candidate is appearing in the AET by AIE, BIE considers their AET score for final selection provided the candidate is at or above the 80th percentile in P. Any other candidate at or above the 80th percentile in P in CET, but who is not eligible for the AET, is required to appear in a separate test to be conducted by BIE for being considered for final selection. Altogether, there are 400 candidates this year who are at or above the 80th percentile in P. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98121)\n\nIf the number of candidates who are at or above the 90th percentile overall and also are at or above the 80th percentile in P in CET, is more than 100, how many candidates had to sit for the separate test for BIE?\n\n**Options:**\n- **A**. 299 \u2705\n- **B**. 310\n- **C**. 321\n- **D**. 330\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-319",
+      "question_text": "What is Amda's score in F?",
+      "options": [],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " Simple Happiness index (SHI) of a country is computed on the basis of three, parameters: social support (S),freedom to life choices (F) and corruption perception (C). Each of these three parameters is measured on a scale of 0 to 8 (integers only). A country is then categorised based on the total score obtained by summing the scores of all the three parameters, as shown in the following table: Following diagram depicts the frequency distribution of the scores in S, F and C of 10 countries - Amda, Benga, Calla, Delma, Eppa, Varsa, Wanna, Xanda,Yanga and Zooma: Further, the following are known.\n\n1. Amda and Calla jointly have the lowest total score, 7, with identical scores in all the three parameters.\n\n 2. Zooma has a total score of 17.\n\n 3. All the 3 countries, which are categorised as happy, have the highest score ln exactly one parameter. ",
+      "image_url": "https://cracku.in/media/uploads/bar%20graph_3v2WA4j.png",
+      "full_markdown": "### Question\n\nWhat is Amda's score in F?\n\n**Options:** \n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-320",
+      "question_text": "What is Zooma's score in S?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": null,
+      "passage_text": " Simple Happiness index (SHI) of a country is computed on the basis of three, parameters: social support (S),freedom to life choices (F) and corruption perception (C). Each of these three parameters is measured on a scale of 0 to 8 (integers only). A country is then categorised based on the total score obtained by summing the scores of all the three parameters, as shown in the following table: Following diagram depicts the frequency distribution of the scores in S, F and C of 10 countries - Amda, Benga, Calla, Delma, Eppa, Varsa, Wanna, Xanda,Yanga and Zooma: Further, the following are known.\n\n1. Amda and Calla jointly have the lowest total score, 7, with identical scores in all the three parameters.\n\n 2. Zooma has a total score of 17.\n\n 3. All the 3 countries, which are categorised as happy, have the highest score ln exactly one parameter. ",
+      "image_url": "https://cracku.in/media/uploads/bar%20graph_3v2WA4j.png",
+      "full_markdown": "### Question\n\nWhat is Zooma's score in S?\n\n**Options:** \n\n**Correct Answer:** 6",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-321",
+      "question_text": "Benga and Delma, two countries categorized as happy, are tied with the same total score. What is the maximum score they can have?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "17",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Simple Happiness index (SHI) of a country is computed on the basis of three, parameters: social support (S),freedom to life choices (F) and corruption perception (C). Each of these three parameters is measured on a scale of 0 to 8 (integers only). A country is then categorised based on the total score obtained by summing the scores of all the three parameters, as shown in the following table: Following diagram depicts the frequency distribution of the scores in S, F and C of 10 countries - Amda, Benga, Calla, Delma, Eppa, Varsa, Wanna, Xanda,Yanga and Zooma: Further, the following are known.\n\n1. Amda and Calla jointly have the lowest total score, 7, with identical scores in all the three parameters.\n\n 2. Zooma has a total score of 17.\n\n 3. All the 3 countries, which are categorised as happy, have the highest score ln exactly one parameter. ",
+      "image_url": "https://cracku.in/media/uploads/bar%20graph_3v2WA4j.png",
+      "full_markdown": "### Question (qid: 98124)\n\nBenga and Delma, two countries categorized as happy, are tied with the same total score. What is the maximum score they can have?\n\n**Options:**\n- **A**. 14\n- **B**. 15 \u2705\n- **C**. 16\n- **D**. 17\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-322",
+      "question_text": "If Benga scores 16 and Delma scores 15, then what is the maximum number of countries with a score of 13?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " Simple Happiness index (SHI) of a country is computed on the basis of three, parameters: social support (S),freedom to life choices (F) and corruption perception (C). Each of these three parameters is measured on a scale of 0 to 8 (integers only). A country is then categorised based on the total score obtained by summing the scores of all the three parameters, as shown in the following table: Following diagram depicts the frequency distribution of the scores in S, F and C of 10 countries - Amda, Benga, Calla, Delma, Eppa, Varsa, Wanna, Xanda,Yanga and Zooma: Further, the following are known.\n\n1. Amda and Calla jointly have the lowest total score, 7, with identical scores in all the three parameters.\n\n 2. Zooma has a total score of 17.\n\n 3. All the 3 countries, which are categorised as happy, have the highest score ln exactly one parameter. ",
+      "image_url": "https://cracku.in/media/uploads/bar%20graph_3v2WA4j.png",
+      "full_markdown": "### Question (qid: 98125)\n\nIf Benga scores 16 and Delma scores 15, then what is the maximum number of countries with a score of 13?\n\n**Options:**\n- **A**. 0\n- **B**. 1 \u2705\n- **C**. 2\n- **D**. 3\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-323",
+      "question_text": "The number of times in which the composition of team T2 and the number of times in which composition of team T4 remained unchanged in two successive months are:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(2,1)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(1,0)",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(0,0)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(1,1)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " There are 21 employees working in a division, out of whom 10 are special-skilled employees (SE) and the remaining are regular-skilled employees (RE). During the next five months, the division has to complete five projects every month. Out of the 25 projects, 5 projects are \"challenging\", while the remaining ones are \"standard\". Each of the challenging projects has to be completed in different months. Every month, five teams \u2014 T1 T2, T3, T4 and T5, work on one project each. T1, T2, T3, T4 and T5 are allotted the challenging project in the first, second, third, fourth and fifth month, respectively. The team assigned the challenging project has one more employee than the rest. In the first month, T1 has one more SE than T2, T2 has one more SE than T3, T 3 has one more SE than T4, and T4 has one more SE than T5. Between two successive months, the composition of the teams changes as follows: a. The team allotted the challenging project, gets two SE from the team which was allotted the challenging project in the previous month. In exchange, one RE is shifted from the former team to the latter team. b. After the above exchange, if T1 has any SE and T5 has any RE, then one SE is shifted from T1 to T5, and one RE is shifted from T5 to T1. Also, if T2 has any SE and T4 has any RE, then one SE is shifted from T2 to T4, and one RE is shifted from T4 to T2. Each standard project has a total of 100 credit points, while each challenging project has 200 credit points. The credit points are equally shared between the employees included in that team. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98126)\n\nThe number of times in which the composition of team T2 and the number of times in which composition of team T4 remained unchanged in two successive months are:\n\n**Options:**\n- **A**. (2,1)\n- **B**. (1,0) \u2705\n- **C**. (0,0)\n- **D**. (1,1)\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-324",
+      "question_text": "The number of SE in T1 and T5 for the projects in the third month are, respectively:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(0,2)",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(0,3)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(1,2)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(1,3)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": null,
+      "passage_text": " There are 21 employees working in a division, out of whom 10 are special-skilled employees (SE) and the remaining are regular-skilled employees (RE). During the next five months, the division has to complete five projects every month. Out of the 25 projects, 5 projects are \"challenging\", while the remaining ones are \"standard\". Each of the challenging projects has to be completed in different months. Every month, five teams \u2014 T1 T2, T3, T4 and T5, work on one project each. T1, T2, T3, T4 and T5 are allotted the challenging project in the first, second, third, fourth and fifth month, respectively. The team assigned the challenging project has one more employee than the rest. In the first month, T1 has one more SE than T2, T2 has one more SE than T3, T 3 has one more SE than T4, and T4 has one more SE than T5. Between two successive months, the composition of the teams changes as follows: a. The team allotted the challenging project, gets two SE from the team which was allotted the challenging project in the previous month. In exchange, one RE is shifted from the former team to the latter team. b. After the above exchange, if T1 has any SE and T5 has any RE, then one SE is shifted from T1 to T5, and one RE is shifted from T5 to T1. Also, if T2 has any SE and T4 has any RE, then one SE is shifted from T2 to T4, and one RE is shifted from T4 to T2. Each standard project has a total of 100 credit points, while each challenging project has 200 credit points. The credit points are equally shared between the employees included in that team. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98127)\n\nThe number of SE in T1 and T5 for the projects in the third month are, respectively:\n\n**Options:**\n- **A**. (0,2) \u2705\n- **B**. (0,3)\n- **C**. (1,2)\n- **D**. (1,3)\n\n**Correct Answer:** 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-325",
+      "question_text": "Which of the following CANNOT be the total credit points earned by any employee from the projects?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "140",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "150",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "170",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "200",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": null,
+      "passage_text": " There are 21 employees working in a division, out of whom 10 are special-skilled employees (SE) and the remaining are regular-skilled employees (RE). During the next five months, the division has to complete five projects every month. Out of the 25 projects, 5 projects are \"challenging\", while the remaining ones are \"standard\". Each of the challenging projects has to be completed in different months. Every month, five teams \u2014 T1 T2, T3, T4 and T5, work on one project each. T1, T2, T3, T4 and T5 are allotted the challenging project in the first, second, third, fourth and fifth month, respectively. The team assigned the challenging project has one more employee than the rest. In the first month, T1 has one more SE than T2, T2 has one more SE than T3, T 3 has one more SE than T4, and T4 has one more SE than T5. Between two successive months, the composition of the teams changes as follows: a. The team allotted the challenging project, gets two SE from the team which was allotted the challenging project in the previous month. In exchange, one RE is shifted from the former team to the latter team. b. After the above exchange, if T1 has any SE and T5 has any RE, then one SE is shifted from T1 to T5, and one RE is shifted from T5 to T1. Also, if T2 has any SE and T4 has any RE, then one SE is shifted from T2 to T4, and one RE is shifted from T4 to T2. Each standard project has a total of 100 credit points, while each challenging project has 200 credit points. The credit points are equally shared between the employees included in that team. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98128)\n\nWhich of the following CANNOT be the total credit points earned by any employee from the projects?\n\n**Options:**\n- **A**. 140\n- **B**. 150 \u2705\n- **C**. 170\n- **D**. 200\n\n**Correct Answer:** 2",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-326",
+      "question_text": "One of the employees named Aneek scored 185 points. Which of the following CANNOT be true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Aneek worked only in teams T1, T2, T3, and T4.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Aneek worked only in teams T1,T2, T4, and T5.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Aneek worked only in teams T2,T3, T4, and T5.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Aneek worked only in teams T1,T3, T4, and T5.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": null,
+      "passage_text": " There are 21 employees working in a division, out of whom 10 are special-skilled employees (SE) and the remaining are regular-skilled employees (RE). During the next five months, the division has to complete five projects every month. Out of the 25 projects, 5 projects are \"challenging\", while the remaining ones are \"standard\". Each of the challenging projects has to be completed in different months. Every month, five teams \u2014 T1 T2, T3, T4 and T5, work on one project each. T1, T2, T3, T4 and T5 are allotted the challenging project in the first, second, third, fourth and fifth month, respectively. The team assigned the challenging project has one more employee than the rest. In the first month, T1 has one more SE than T2, T2 has one more SE than T3, T 3 has one more SE than T4, and T4 has one more SE than T5. Between two successive months, the composition of the teams changes as follows: a. The team allotted the challenging project, gets two SE from the team which was allotted the challenging project in the previous month. In exchange, one RE is shifted from the former team to the latter team. b. After the above exchange, if T1 has any SE and T5 has any RE, then one SE is shifted from T1 to T5, and one RE is shifted from T5 to T1. Also, if T2 has any SE and T4 has any RE, then one SE is shifted from T2 to T4, and one RE is shifted from T4 to T2. Each standard project has a total of 100 credit points, while each challenging project has 200 credit points. The credit points are equally shared between the employees included in that team. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 98129)\n\nOne of the employees named Aneek scored 185 points. Which of the following CANNOT be true?\n\n**Options:**\n- **A**. Aneek worked only in teams T1, T2, T3, and T4.\n- **B**. Aneek worked only in teams T1,T2, T4, and T5.\n- **C**. Aneek worked only in teams T2,T3, T4, and T5.\n- **D**. Aneek worked only in teams T1,T3, T4, and T5. \u2705\n\n**Correct Answer:** 4",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-327",
+      "question_text": "How many individuals in this layout can be reached by just one individual?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below: Individuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met; (i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A. Thus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5. Rows in the layout are numbered from top to bottom and columns are numbered from left to right. ",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98130)\n\nHow many individuals in this layout can be reached by just one individual?\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 7 \u2705\n- **D**. 8\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-328",
+      "question_text": "Which of the following is true for any individual at a platform of height 1 m in this layout?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "They can be reached by all the individuals in their own row and column.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "They can be reached by at least 4 individuals.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "They can be reached by at least one individual.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "They cannot be reached by anyone.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": null,
+      "passage_text": " In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below: Individuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met; (i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A. Thus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5. Rows in the layout are numbered from top to bottom and columns are numbered from left to right. ",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98131)\n\nWhich of the following is true for any individual at a platform of height 1 m in this layout?\n\n**Options:**\n- **A**. They can be reached by all the individuals in their own row and column.\n- **B**. They can be reached by at least 4 individuals.\n- **C**. They can be reached by at least one individual.\n- **D**. They cannot be reached by anyone. \u2705\n\n**Correct Answer:** 4",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-329",
+      "question_text": "We can find two individuals who cannot be reached by anyone in",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "the last row.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "the fourth row.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "the fourth column.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "the middle column.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below: Individuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met; (i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A. Thus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5. Rows in the layout are numbered from top to bottom and columns are numbered from left to right. ",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98132)\n\nWe can find two individuals who cannot be reached by anyone in\n\n**Options:**\n- **A**. the last row.\n- **B**. the fourth row.\n- **C**. the fourth column. \u2705\n- **D**. the middle column.\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-330",
+      "question_text": "Which of the following statements is true about this layout?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Each row has an individual who can be reached by 5 or more individuals.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Each row has an individual who cannot be reached by anyone.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Each row has at least two individuals who can be reached by an equal number of individuals.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "All individuals at the height of 9 m can be reached by at least 5 individuals.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below: Individuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met; (i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A. Thus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5. Rows in the layout are numbered from top to bottom and columns are numbered from left to right. ",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98133)\n\nWhich of the following statements is true about this layout?\n\n**Options:**\n- **A**. Each row has an individual who can be reached by 5 or more individuals.\n- **B**. Each row has an individual who cannot be reached by anyone.\n- **C**. Each row has at least two individuals who can be reached by an equal number of individuals. \u2705\n- **D**. All individuals at the height of 9 m can be reached by at least 5 individuals.\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    }
+  ]
+}
