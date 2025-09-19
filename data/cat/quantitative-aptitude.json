@@ -19750,6 +19750,312 @@
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 176400)\n\n**Passage:**\nA number N is randomly selected between 1 and 249 (both inclusive). What is the probability that the HCF of N and 249 is 1?\n\n164 249 \\dfrac{164}{249} 2 4 9 1 6 4 ​\n\n163 249 \\dfrac{163}{249} 2 4 9 1 6 3 ​\n\n2 3 \\dfrac{2}{3} 3 2 ​\n\nNone of these\n\nA number N is randomly selected between 1 and 249 (both inclusive). What is the probability that the HCF of N and 249 is 1?\n\n**Options:**\n- **A**. 164249\\dfrac{164}{249}249164​\n- **B**. 163249\\dfrac{163}{249}249163​\n- **C**. 23\\dfrac{2}{3}32​\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-765",
+      "passage_text": "",
+      "question_text": "From a can of 50 litres of milk, 10 litres are withdrawn and replaced with water. Again, 8 litres are removed and replaced with water. Similarly, the quantity of mixture withdrawn and replaced by water is decreased by 2 litres and repeated until the step when 2 litres of the mixture is removed and replaced with water. What will be the quantity of milk left in the final mixture?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{2 * 24!}{19!} * \\frac{1}{25^{4} }$​",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{24!}{19!} * \\frac{1}{50^{4} }$​",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{2^5*24!}{9!} * \\frac{1}{25^{9} }$​",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{2^5 * 24!}{9!} * \\frac{1}{50^{9} }$​",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 156810)\n\n**Passage:**\nFrom a can of 50 litres of milk, 10 litres are withdrawn and replaced with water. Again, 8 litres are removed and replaced with water. Similarly, the quantity of mixture withdrawn and replaced by water is decreased by 2 litres and repeated until the step when 2 litres of the mixture is removed and replaced with water. What will be the quantity of milk left in the final mixture?\n\n2 ∗ 24 ! 19 ! ∗ 1 2 5 4 \\frac{2 * 24!}{19!} * \\frac{1}{25^{4} } 1 9 ! 2 ∗ 2 4 ! ​ ∗ 2 5 4 1 ​\n\n24 ! 19 ! ∗ 1 5 0 4 \\frac{24!}{19!} * \\frac{1}{50^{4} } 1 9 ! 2 4 ! ​ ∗ 5 0 4 1 ​\n\n2 5 ∗ 24 ! 9 ! ∗ 1 2 5 9 \\frac{2^5*24!}{9!} * \\frac{1}{25^{9} } 9 ! 2 5 ∗ 2 4 ! ​ ∗ 2 5 9 1 ​\n\n2 5 ∗ 24 ! 9 ! ∗ 1 5 0 9 \\frac{2^5 * 24!}{9!} * \\frac{1}{50^{9} } 9 ! 2 5 ∗ 2 4 ! ​ ∗ 5 0 9 1 ​\n\nFrom a can of 50 litres of milk, 10 litres are withdrawn and replaced with water. Again, 8 litres are removed and replaced with water. Similarly, the quantity of mixture withdrawn and replaced by water is decreased by 2 litres and repeated until the step when 2 litres of the mixture is removed and replaced with water. What will be the quantity of milk left in the final mixture?\n\n**Options:**\n- **A**. 2∗24!19!∗1254\\frac{2 * 24!}{19!} * \\frac{1}{25^{4} }19!2∗24!​∗2541​\n- **B**. 24!19!∗1504\\frac{24!}{19!} * \\frac{1}{50^{4} }19!24!​∗5041​\n- **C**. 25∗24!9!∗1259\\frac{2^5*24!}{9!} * \\frac{1}{25^{9} }9!25∗24!​∗2591​\n- **D**. 25∗24!9!∗1509\\frac{2^5 * 24!}{9!} * \\frac{1}{50^{9} }9!25∗24!​∗5091​\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-766",
+      "passage_text": "",
+      "question_text": "A container was half-filled with liquid A having p and q in the ratio 3:5. Liquid p evaporates at the rate of 2 liters per minute and Liquid q evaporates at the rate of 3 liters per minute for half an hour. After half an hour, the same container was totally filled with liquid B having q and p in the ratio 2:3. If the ratio p:q is 11:9 after the addition of liquid B, then what is the capacity of the container (in liter)?",
+      "options": [],
+      "correct_option_data": "480",
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176594)\n\n**Passage:**\nA container was half-filled with liquid A having p and q in the ratio 3:5. Liquid p evaporates at the rate of 2 liters per minute and Liquid q evaporates at the rate of 3 liters per minute for half an hour. After half an hour, the same container was totally filled with liquid B having q and p in the ratio 2:3. If the ratio p:q is 11:9 after the addition of liquid B, then what is the capacity of the container (in liter)?\n\nA container was half-filled with liquid A having p and q in the ratio 3:5. Liquid p evaporates at the rate of 2 liters per minute and Liquid q evaporates at the rate of 3 liters per minute for half an hour. After half an hour, the same container was totally filled with liquid B having q and p in the ratio 2:3. If the ratio p:q is 11:9 after the addition of liquid B, then what is the capacity of the container (in liter)?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-767",
+      "passage_text": "",
+      "question_text": "In a certain infinite geometric progression, the sum of any three consecutive terms equals 26 times the sum of all the terms that follow them. What is the ratio of any term of the progression to the sum of all the terms that follow it?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 58111)\n\n**Passage:**\nIn a certain infinite geometric progression, the sum of any three consecutive terms equals 26 times the sum of all the terms that follow them. What is the ratio of any term of the progression to the sum of all the terms that follow it?\n\n1\n\n1/2\n\n2\n\n-1\n\nIn a certain infinite geometric progression, the sum of any three consecutive terms equals 26 times the sum of all the terms that follow them. What is the ratio of any term of the progression to the sum of all the terms that follow it?\n\n**Options:**\n- **A**. 1\n- **B**. 1/2\n- **C**. 2\n- **D**. -1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-768",
+      "passage_text": "",
+      "question_text": "Mohan had recently appeared for SAT examination. The exam consisted of 160 questions and each question carried 4 marks. For each wrong answer one-fourth of the marks allotted to that question were deducted. No marks were deducted for un-attempted questions. It is known that Mohan scored 70 percent of the total marks. There are several possible ways in which he can get this score. Let A be the case where he scores these marks by getting maximum number of correct answers. Let B be another case where he scores these marks with minimum possible number of correct answers. What is the difference between the number of correct answers in case A and the number of correct answers in case B.",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 91725)\n\n**Passage:**\nMohan had recently appeared for SAT examination. The exam consisted of 160 questions and each question carried 4 marks. For each wrong answer one-fourth of the marks allotted to that question were deducted. No marks were deducted for un-attempted questions. It is known that Mohan scored 70 percent of the total marks. There are several possible ways in which he can get this score. Let A be the case where he scores these marks by getting maximum number of correct answers. Let B be another case where he scores these marks with minimum possible number of correct answers. What is the difference between the number of correct answers in case A and the number of correct answers in case B.\n\nMohan had recently appeared for SAT examination. The exam consisted of 160 questions and each question carried 4 marks. For each wrong answer one-fourth of the marks allotted to that question were deducted. No marks were deducted for un-attempted questions. It is known that Mohan scored 70 percent of the total marks. There are several possible ways in which he can get this score. Let A be the case where he scores these marks by getting maximum number of correct answers. Let B be another case where he scores these marks with minimum possible number of correct answers. What is the difference between the number of correct answers in case A and the number of correct answers in case B.\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-769",
+      "passage_text": "",
+      "question_text": "Ajay and Varun have books in ratio 2 : 3 and Varun and Shobhit have books in ratio 4 : 5. If Ajay gives 3 books to Varun, the ratio of books with Ajay and Varun changes to 1 : 3. What is the number of books that they have altogether?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "22",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 130450)\n\n**Passage:**\nAjay and Varun have books in ratio 2 : 3 and Varun and Shobhit have books in ratio 4 : 5. If Ajay gives 3 books to Varun, the ratio of books with Ajay and Varun changes to 1 : 3. What is the number of books that they have altogether?\n\n35\n\n27\n\n24\n\n22\n\nAjay and Varun have books in ratio 2 : 3 and Varun and Shobhit have books in ratio 4 : 5. If Ajay gives 3 books to Varun, the ratio of books with Ajay and Varun changes to 1 : 3. What is the number of books that they have altogether?\n\n**Options:**\n- **A**. 35\n- **B**. 27\n- **C**. 24\n- **D**. 22\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-770",
+      "passage_text": "",
+      "question_text": "If two irrational numbers are written as A = 13 − 11 13 + 11 \\dfrac{\\sqrt{13}-\\sqrt{11}}{\\sqrt{13}+\\sqrt{11}} 1 3 ​ + 1 1 ​ 1 3 ​ − 1 1 ​ ​ , B = 13 + 11 13 − 11 \\dfrac{\\sqrt{13}+\\sqrt{11}}{\\sqrt{13}-\\sqrt{11}} 1 3 ​ − 1 1 ​ 1 3 ​ + 1 1 ​ ​ , then find out the value of ( 1 + t + 1 t ) (1+t+\\dfrac{1}{t}) ( 1 + t + t 1 ​ ) where t = B A t = \\dfrac{B}{A} t = A B ​ .",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "431",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "287",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "575",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "325",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "425",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 208991)\n\n**Passage:**\nIf two irrational numbers are written as A = 13 − 11 13 + 11 \\dfrac{\\sqrt{13}-\\sqrt{11}}{\\sqrt{13}+\\sqrt{11}} 1 3 ​ + 1 1 ​ 1 3 ​ − 1 1 ​ ​ , B = 13 + 11 13 − 11 \\dfrac{\\sqrt{13}+\\sqrt{11}}{\\sqrt{13}-\\sqrt{11}} 1 3 ​ − 1 1 ​ 1 3 ​ + 1 1 ​ ​ , then find out the value of ( 1 + t + 1 t ) (1+t+\\dfrac{1}{t}) ( 1 + t + t 1 ​ ) where t = B A t = \\dfrac{B}{A} t = A B ​ .\n\n431\n\n287\n\n575\n\n325\n\n425\n\nIf two irrational numbers are written as A = 13 − 11 13 + 11 \\dfrac{\\sqrt{13}-\\sqrt{11}}{\\sqrt{13}+\\sqrt{11}} 1 3 ​ + 1 1 ​ 1 3 ​ − 1 1 ​ ​ , B = 13 + 11 13 − 11 \\dfrac{\\sqrt{13}+\\sqrt{11}}{\\sqrt{13}-\\sqrt{11}} 1 3 ​ − 1 1 ​ 1 3 ​ + 1 1 ​ ​ , then find out the value of ( 1 + t + 1 t ) (1+t+\\dfrac{1}{t}) ( 1 + t + t 1 ​ ) where t = B A t = \\dfrac{B}{A} t = A B ​ .\n\n**Options:**\n- **A**. 431\n- **B**. 287\n- **C**. 575\n- **D**. 325\n- **E**. 425\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-771",
+      "passage_text": "",
+      "question_text": "A family bought three big cakes weighing 15.6 Kg, 12.6 Kg and 13.8 Kg for a party having seven guests. The cakes were cut into smaller cakes of equal weight. If all guests had equal number of small cakes, what is the minimum number of cakes each guest had?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 456)\n\n**Passage:**\nA family bought three big cakes weighing 15.6 Kg, 12.6 Kg and 13.8 Kg for a party having seven guests. The cakes were cut into smaller cakes of equal weight. If all guests had equal number of small cakes, what is the minimum number of cakes each guest had?\n\n1\n\n30\n\n60\n\n10\n\nA family bought three big cakes weighing 15.6 Kg, 12.6 Kg and 13.8 Kg for a party having seven guests. The cakes were cut into smaller cakes of equal weight. If all guests had equal number of small cakes, what is the minimum number of cakes each guest had?\n\n**Options:**\n- **A**. 1\n- **B**. 30\n- **C**. 60\n- **D**. 10\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-772",
+      "passage_text": "",
+      "question_text": "How many natural number solutions exist for the equation 1/X + 5/Y = 1/10 if Y < 70",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 497)\n\n**Passage:**\nHow many natural number solutions exist for the equation 1/X + 5/Y = 1/10 if Y < 70\n\n2\n\n3\n\n4\n\n5\n\nHow many natural number solutions exist for the equation 1/X + 5/Y = 1/10 if Y < 70\n\n**Options:**\n- **A**. 2\n- **B**. 3\n- **C**. 4\n- **D**. 5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-773",
+      "passage_text": "",
+      "question_text": "The sum of four consecutive two digit even numbers is a perfect square. How such quartets are possible?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 517)\n\n**Passage:**\nThe sum of four consecutive two digit even numbers is a perfect square. How such quartets are possible?\n\n1\n\n2\n\n3\n\n4\n\nThe sum of four consecutive two digit even numbers is a perfect square. How such quartets are possible?\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-774",
+      "passage_text": "",
+      "question_text": "The average of twenty distinct natural numbers is 150 and the minimum number amongst them is 108. What is the maximum possible value of the largest of the twenty numbers?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "948",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "777",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "192",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "347",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2149)\n\n**Passage:**\nThe average of twenty distinct natural numbers is 150 and the minimum number amongst them is 108. What is the maximum possible value of the largest of the twenty numbers?\n\n948\n\n777\n\n192\n\n347\n\nThe average of twenty distinct natural numbers is 150 and the minimum number amongst them is 108. What is the maximum possible value of the largest of the twenty numbers?\n\n**Options:**\n- **A**. 948\n- **B**. 777\n- **C**. 192\n- **D**. 347\n\n**Correct Answer:** null"
     }
   ]
 }
