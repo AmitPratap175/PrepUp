@@ -1,20 +1,24 @@
-# Frontend Dockerfile for Development
-FROM node:20-alpine
+# Stage 1: Build the React application
+FROM docker.io/library/node:18-alpine as build
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+COPY package.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the frontend code
-COPY . /app
+COPY . .
 
-# Expose the port for the development server
+RUN npm run build
+
+# Stage 2: Serve the application with Nginx
+FROM docker.io/library/nginx:1.21.3-alpine
+
+COPY --from=build /app/dist/public /usr/share/nginx/html
+
+# Copy nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 5000
 
-# Start the development server
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+CMD ["nginx", "-g", "daemon off;"]
