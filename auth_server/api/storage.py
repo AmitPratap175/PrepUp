@@ -106,42 +106,42 @@ class MemStorage:
                 "examType": "cat",
                 "subject": "Quantitative Aptitude",
                 "duration": 90,
-                "filePath": "frontend/data/cat/quantitative-aptitude.json"
+                "filePath": "data/cat/quantitative-aptitude.json"
             },
             {
                 "title": "CAT Verbal Ability Test",
                 "examType": "cat",
                 "subject": "Verbal Ability",
                 "duration": 60,
-                "filePath": "frontend/data/cat/verbal-ability.json"
+                "filePath": "data/cat/verbal-ability.json"
             },
             {
                 "title": "CAT Data Interpretation Test",
                 "examType": "cat",
                 "subject": "Data Interpretation",
                 "duration": 60,
-                "filePath": "frontend/data/cat/data-interpretation.json"
+                "filePath": "data/cat/data-interpretation.json"
             },
             {
                 "title": "GATE Mathematics Test",
                 "examType": "gate",
                 "subject": "Mathematics",
                 "duration": 90,
-                "filePath": "frontend/data/gate/mathematics.json"
+                "filePath": "data/gate/mathematics.json"
             },
             {
                 "title": "GATE General Aptitude Test",
                 "examType": "gate",
                 "subject": "General Aptitude",
                 "duration": 60,
-                "filePath": "frontend/data/gate/general-aptitude.json"
+                "filePath": "data/gate/general-aptitude.json"
             },
             {
                 "title": "GATE Computer Science Test",
                 "examType": "gate",
                 "subject": "Computer Science",
                 "duration": 120,
-                "filePath": "frontend/data/gate/computer-science.json"
+                "filePath": "data/gate/computer-science.json"
             }
         ]
 
@@ -160,7 +160,7 @@ class MemStorage:
                 self.practice_tests[practice_test["id"]] = practice_test
 
         # Seed mock tests from JSON files
-        mock_test_dir = 'frontend/data/cat/mocks'
+        mock_test_dir = 'data/cat/mocks'
         if os.path.exists(mock_test_dir):
             for file_name in os.listdir(mock_test_dir):
                 if file_name.startswith('mock-test-') and file_name.endswith('.json'):
@@ -184,7 +184,7 @@ class MemStorage:
                         print(f"Failed to load mock test from {file_path}: {e}")
 
         # Seed sectional tests from JSON files
-        sectional_test_dir = 'frontend/data/cat/sectionals'
+        sectional_test_dir = 'data/cat/sectionals'
         sectional_test_types = ['varc', 'dilr', 'quants']
         if os.path.exists(sectional_test_dir):
             for test_type in sectional_test_types:

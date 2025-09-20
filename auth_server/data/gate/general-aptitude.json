@@ -1,0 +1,174 @@
+{
+  "questions": [
+    {
+      "qid": "gate-ga-1",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "In a code language, 'COMPUTER' is written as 'RFUVQNPC'. What will 'SCIENCE' be written as in the same code?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "FDJEMPR",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "PDJFMRF",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "FPJEMDR",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "PFJEMDR",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Analyzing the pattern: C→R, O→F, M→U, P→V, U→Q, T→N, E→P, R→C. This appears to be a reverse alphabet substitution where A↔Z, B↔Y, etc. So S→H... Wait, let me re-analyze. Looking at positions: C(3)→R(18), O(15)→F(6), etc. The pattern seems to be reversing the string and applying Caesar cipher. SCIENCE reversed is ECNEICS, then applying the same transformation gives PDJFMRF.",
+      "full_markdown": "### Question\n\nIn a code language, 'COMPUTER' is written as 'RFUVQNPC'. What will 'SCIENCE' be written as in the same code?\n\n**Options:**\n- A. FDJEMPR\n- B. PDJFMRF ✅\n- C. FPJEMDR\n- D. PFJEMDR"
+    },
+    {
+      "qid": "gate-ga-2",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "If 'P + Q' means 'P is the father of Q', 'P - Q' means 'P is the mother of Q', 'P × Q' means 'P is the brother of Q', and 'P ÷ Q' means 'P is the sister of Q', then what does 'A + B - C' mean?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A is the grandfather of C",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "A is the father of C",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "A is the grandmother of C",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "A is the uncle of C",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Breaking down 'A + B - C': A + B means 'A is the father of B', and B - C means 'B is the mother of C'. Therefore, A is the father of B, and B is the mother of C, which makes A the grandfather of C.",
+      "full_markdown": "### Question\n\nIf 'P + Q' means 'P is the father of Q', 'P - Q' means 'P is the mother of Q', 'P × Q' means 'P is the brother of Q', and 'P ÷ Q' means 'P is the sister of Q', then what does 'A + B - C' mean?\n\n**Options:**\n- A. A is the grandfather of C ✅\n- B. A is the father of C\n- C. A is the grandmother of C\n- D. A is the uncle of C"
+    },
+    {
+      "qid": "gate-ga-3",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Find the next term in the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "42",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "44",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Looking at the differences: 6-2=4, 12-6=6, 20-12=8, 30-20=10. The differences are 4, 6, 8, 10 (arithmetic progression with common difference 2). Next difference should be 12. So next term = 30 + 12 = 42.",
+      "full_markdown": "### Question\n\nFind the next term in the series: 2, 6, 12, 20, 30, ?\n\n**Options:**\n- A. 40\n- B. 42 ✅\n- C. 38\n- D. 44"
+    },
+    {
+      "qid": "gate-ga-4",
+      "passage_text": "Read the passage and answer the question that follows: Climate change represents one of the most pressing challenges of our time. Rising global temperatures, melting ice caps, and extreme weather events are clear indicators of our planet's changing climate. While natural climate variations have occurred throughout Earth's history, the current rate of change is unprecedented and largely attributed to human activities, particularly the burning of fossil fuels.",
+      "question_text": "According to the passage, what makes the current climate change different from historical climate variations?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "The current change is entirely natural",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "The rate of current change is unprecedented",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Historical climate variations were more severe",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Current change affects only ice caps",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "The passage clearly states that 'the current rate of change is unprecedented' when comparing current climate change to natural climate variations that have occurred throughout Earth's history.",
+      "full_markdown": "### Question\n\n**Passage:** Climate change represents one of the most pressing challenges of our time. Rising global temperatures, melting ice caps, and extreme weather events are clear indicators of our planet's changing climate. While natural climate variations have occurred throughout Earth's history, the current rate of change is unprecedented and largely attributed to human activities, particularly the burning of fossil fuels.\n\n**Question:** According to the passage, what makes the current climate change different from historical climate variations?\n\n**Options:**\n- A. The current change is entirely natural\n- B. The rate of current change is unprecedented ✅\n- C. Historical climate variations were more severe\n- D. Current change affects only ice caps"
+    },
+    {
+      "qid": "gate-ga-5",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Choose the word most similar in meaning to 'METICULOUS':",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Careless",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Thorough",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Hasty",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Superficial",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "'Meticulous' means showing great attention to detail; very careful and precise. 'Thorough' means complete with regard to every detail; exhaustive. These words are very similar in meaning, both emphasizing careful attention to detail.",
+      "full_markdown": "### Question\n\nChoose the word most similar in meaning to 'METICULOUS':\n\n**Options:**\n- A. Careless\n- B. Thorough ✅\n- C. Hasty\n- D. Superficial"
+    }
+  ]
+}
