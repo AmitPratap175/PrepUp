@@ -36,8 +36,8 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: Dockerfile.frontend.dev
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
     volumes:
