@@ -31,7 +31,7 @@ export default function BookmarksPage() {
       if (!token) {
         throw new Error("Not authenticated");
       }
-      const response = await fetch(`http://${window.location.hostname}:8000/api/auth/bookmarks/`, {
+      const response = await fetch(`/api/auth/bookmarks/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
