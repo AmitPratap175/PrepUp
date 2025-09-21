@@ -22,7 +22,8 @@ WORKDIR /app/src
 # Expose the port the app runs on
 EXPOSE 8000
 
-# CMD ["python", "manage.py", "migrate" ]
+# Make the render-start.sh script executable
+RUN chmod +x /app/src/render-start.sh
 
 # Run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["/app/src/render-start.sh"]

@@ -16,9 +16,14 @@ FROM docker.io/library/nginx:1.21.3-alpine
 
 COPY --from=build /app/dist/public /usr/share/nginx/html
 
-# Copy nginx config
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy nginx config template
+COPY nginx.conf.template /etc/nginx/conf.d/default.conf.template
+
+# Copy and grant permissions to the entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 EXPOSE 5000
 
-CMD ["nginx", "-g", "daemon off;"]
+# Set the entrypoint
+CMD ["/entrypoint.sh"]
