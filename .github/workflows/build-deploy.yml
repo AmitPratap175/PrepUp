@@ -1,0 +1,45 @@
+name: Build and Push Images
+
+on: [push, pull_request]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set owner name to lowercase
+        id: owner_lowercase
+        run: echo "name=${{ github.repository_owner,, }}" >> $GITHUB_OUTPUT
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push auth_server image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./auth_server/Dockerfile
+          push: true
+          tags: |
+            ghcr.io/${{ steps.owner_lowercase.outputs.name }}/prepup-auth_server:latest
+            ghcr.io/${{ steps.owner_lowercase.outputs.name }}/prepup-auth_server:${{ github.sha }}
+
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend
+          file: ./frontend/Dockerfile
+          push: true
+          tags: |
+            ghcr.io/${{ steps.owner_lowercase.outputs.name }}/prepup-frontend:latest
+            ghcr.io/${{ steps.owner_lowercase.outputs.name }}/prepup-frontend:${{ github.sha }}

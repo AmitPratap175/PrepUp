@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: docker.io/library/postgres
+    environment:
+      - POSTGRES_DB=auth_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - ./pg_data_new:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  auth_server:
+    build:
+      context: .
+      dockerfile: auth_server/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./frontend/data:/app/frontend/data:ro
+    environment:
+      - DB_HOST=postgres
+      - DB_NAME=auth_db
+      - DB_USER=user
+      - DB_PASS=password
+    depends_on:
+      - postgres
+    command: >
+      sh -c "
+        echo 'Waiting for postgres...' &&
+        while ! nc -z postgres 5432; do
+          sleep 0.1;
+        done;
+        echo 'PostgreSQL started';
+        python manage.py migrate &&
+        python manage.py runserver 0.0.0.0:8000
+      "
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    depends_on:
+      - auth_server
+    ports:
+      - "5000:5000"
+    command: nginx -g 'daemon off;'
+
+volumes:
+  pg_data_new:

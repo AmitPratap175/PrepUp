@@ -1,3 +1,4 @@
+
 # PrepUp - Online Test Preparation Platform
 
 PrepUp is a full-stack web application designed to help students prepare for competitive examinations like CAT (Common Admission Test) and GATE (Graduate Aptitude Test in Engineering). It provides a modern, clean, and intuitive interface for taking practice tests and quizzes.

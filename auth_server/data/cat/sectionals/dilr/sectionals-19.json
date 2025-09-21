@@ -1,0 +1,652 @@
+{
+  "id": "mock-test-19",
+  "title": "CAT Mock Test 19",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 68,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "dilr-397",
+      "question_text": "What was Mathew\u2019s score in the test?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": null,
+      "passage_text": " There are only three female students - Amala, Koli and Rini - and only three male students - Biman, Mathew and Shyamal - in a course. The course has two evaluation components, a project and a test. The aggregate score in the course is a weighted average of the two components, with the weights being positive and adding to 1. The projects are done in groups of two, with each group consisting of a female and a male student. Both the group members obtain the same score in the project. The following additional facts are known about the scores in the project and the test.\n\n1. The minimum, maximum and the average of both project and test scores were identical - 40, 80 and 60, respectively.\n\n 2. The test scores of the students were all multiples of 10; four of them were distinct and the remaining two were equal to the average test scores.\n\n 3. Amala\u2019s score in the project was double that of Koli in the same, but Koli scored 20 more than Amala in the test. Yet Amala had the highest aggregate score.\n\n 4. Shyamal scored the second highest in the test. He scored two more than Koli, but two less than Amala in the aggregate.\n\n 5. Biman scored the second lowest in the test and the lowest in the aggregate.\n\n 6. Mathew scored more than Rini in the project, but less than her in the test. ",
+      "image_url": null,
+      "full_markdown": "### Question\n\nWhat was Mathew\u2019s score in the test?\n\n**Options:** \n\n**Correct Answer:** 40",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-398",
+      "question_text": "Which of the following pairs of students were part of the same project team? i) Amala and Biman ii) Koli and Mathew",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Only ii)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only i)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Neither i) nor ii)",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Both i) and ii)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": null,
+      "passage_text": " There are only three female students - Amala, Koli and Rini - and only three male students - Biman, Mathew and Shyamal - in a course. The course has two evaluation components, a project and a test. The aggregate score in the course is a weighted average of the two components, with the weights being positive and adding to 1. The projects are done in groups of two, with each group consisting of a female and a male student. Both the group members obtain the same score in the project. The following additional facts are known about the scores in the project and the test.\n\n1. The minimum, maximum and the average of both project and test scores were identical - 40, 80 and 60, respectively.\n\n 2. The test scores of the students were all multiples of 10; four of them were distinct and the remaining two were equal to the average test scores.\n\n 3. Amala\u2019s score in the project was double that of Koli in the same, but Koli scored 20 more than Amala in the test. Yet Amala had the highest aggregate score.\n\n 4. Shyamal scored the second highest in the test. He scored two more than Koli, but two less than Amala in the aggregate.\n\n 5. Biman scored the second lowest in the test and the lowest in the aggregate.\n\n 6. Mathew scored more than Rini in the project, but less than her in the test. ",
+      "image_url": null,
+      "full_markdown": "### Question (qid: 449524)\n\nWhich of the following pairs of students were part of the same project team? i) Amala and Biman ii) Koli and Mathew\n\n**Options:**\n- **A**. Only ii)\n- **B**. Only i)\n- **C**. Neither i) nor ii) \u2705\n- **D**. Both i) and ii)\n\n**Correct Answer:** 3",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-399",
+      "passage_text": "The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.",
+      "question_text": "How many days between Sep 1 and Sep 14 (both inclusive) had no booking from this client considering all the above categories?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": null,
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386419)\n\n**Passage:**\nThe different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.\n\nHow many days between Sep 1 and Sep 14 (both inclusive) had no booking from this client considering all the above categories?\n\n**Options:**\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-400",
+      "passage_text": "The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.",
+      "question_text": "What was the average processing time of all orders in the categories which had only one type of ship mode?",
+      "options": [],
+      "correct_option_data": "11",
+      "solution_text": null,
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386420)\n\n**Passage:**\nThe different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.\n\nWhat was the average processing time of all orders in the categories which had only one type of ship mode?\n\n**Options:**\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-401",
+      "passage_text": "The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.",
+      "question_text": "The sequence of categories -- Art, Binders, Paper and Phones -- in decreasing order of average processing time of their orders in this period is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Art, Binders, Paper, Phones",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Phones, Art, Binders, Paper",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Phones, Binders, Art, Paper",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Paper, Binders, Art, Phones",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386421)\n\n**Passage:**\nThe different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.\n\nThe sequence of categories -- Art, Binders, Paper and Phones -- in decreasing order of average processing time of their orders in this period is:\n\n**Options:**\n- **A**. Art, Binders, Paper, Phones\n- **B**. Phones, Art, Binders, Paper\n- **C**. Phones, Binders, Art, Paper\n- **D**. Paper, Binders, Art, Phones\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-402",
+      "passage_text": "The different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.",
+      "question_text": "Approximately what percentage of orders had a processing time of one day during the period Sep 1 to Sep 22 (both dates inclusive)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "22%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://media-cdn.cracku.in/uploads/Screenshot_58_rAsi3YZ.png",
+      "full_markdown": "### Question (qid: 386422)\n\n**Passage:**\nThe different bars in the diagram above provide information about different orders in various categories (Art, Binders, \u2026.) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.\n\nFor example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.\n\nApproximately what percentage of orders had a processing time of one day during the period Sep 1 to Sep 22 (both dates inclusive)?\n\n**Options:**\n- **A**. 22%\n- **B**. 16%\n- **C**. 20%\n- **D**. 25%\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-403",
+      "passage_text": "Amar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.",
+      "question_text": "Who is from AltCity?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ajit",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Sujit",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Ranjit",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 400821)\n\n**Passage:**\nAmar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.\n\nWho is from AltCity?\n\n**Options:**\n- **A**. Ajit\n- **B**. Sujit\n- **C**. Ranjit\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-404",
+      "passage_text": "Amar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.",
+      "question_text": "Who is a doctor?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ajit",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Sujit",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Ranjit",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 400822)\n\n**Passage:**\nAmar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.\n\nWho is a doctor?\n\n**Options:**\n- **A**. Ajit\n- **B**. Sujit\n- **C**. Ranjit\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-405",
+      "passage_text": "Amar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.",
+      "question_text": "Who is 31 years old?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ajit",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Sujit",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Ranjit",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 400823)\n\n**Passage:**\nAmar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.\n\nWho is 31 years old?\n\n**Options:**\n- **A**. Ajit\n- **B**. Sujit\n- **C**. Ranjit\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-406",
+      "passage_text": "Amar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.",
+      "question_text": "Which region does Ranjit belong to?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Truthdom",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Liar-Liar",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "AltCity",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 400824)\n\n**Passage:**\nAmar went to the Island of Mischief for a convention. He met three friends, Ajit, Sujit and Ranjit, each from a different island region, namely Truthdom, Liar-Liar and AltCity. Amar had read that the people from Truthdom always tell the truth, from Liar-Liar lie and AltCity alternate between truth and lie. He asked them about their profession, age and the region to which they belong. They told him that one of them was a doctor, a businessman, and the other a scientist, and their ages were 27, 31 and 37. When Amar asked which one was which, they answered as given below.\n\nAjit: I am a doctor. Sujit is the youngest. I am from AltCity.\n\nSujit: I am from AltCity. Ranjit is a businessman. The doctor is younger than the scientist.\n\nRanjit: I am a doctor. Ajit is 31 years old. Ajit is a businessman.\n\nAnswer the following questions.\n\nWhich region does Ranjit belong to?\n\n**Options:**\n- **A**. Truthdom\n- **B**. Liar-Liar\n- **C**. AltCity\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-407",
+      "passage_text": "An event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.",
+      "question_text": "Which team has planned the maximum number of events?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Team K",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Team L",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Team M",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Team N",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/image_mOEKDrh.png",
+      "full_markdown": "### Question (qid: 401000)\n\n**Passage:**\nAn event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.\n\nWhich team has planned the maximum number of events?\n\n**Options:**\n- **A**. Team K\n- **B**. Team L\n- **C**. Team M\n- **D**. Team N\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-408",
+      "passage_text": "An event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.",
+      "question_text": "Which team has planned minimum number of events received from the cities Kolkata, Bhopal, Mumbai and Chennai?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Team K",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Team L",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Team M",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Team N",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/image_mOEKDrh.png",
+      "full_markdown": "### Question (qid: 401001)\n\n**Passage:**\nAn event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.\n\nWhich team has planned minimum number of events received from the cities Kolkata, Bhopal, Mumbai and Chennai?\n\n**Options:**\n- **A**. Team K\n- **B**. Team L\n- **C**. Team M\n- **D**. Team N\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-409",
+      "passage_text": "An event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.",
+      "question_text": "What percentage of events had a planning duration of more than five days?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "44.2%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "53.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "48.8%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "51.3%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/image_mOEKDrh.png",
+      "full_markdown": "### Question (qid: 401002)\n\n**Passage:**\nAn event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.\n\nWhat percentage of events had a planning duration of more than five days?\n\n**Options:**\n- **A**. 44.2%\n- **B**. 53.5%\n- **C**. 48.8%\n- **D**. 51.3%\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-410",
+      "passage_text": "An event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.",
+      "question_text": "Which team worked on the maximum number of events simultaneously?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Team K and Team\u00a0N",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Team L and Team\u00a0M",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Team L and Team\u00a0N",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Team K and Team\u00a0M",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/image_mOEKDrh.png",
+      "full_markdown": "### Question (qid: 401003)\n\n**Passage:**\nAn event planning company \u2018SHUBHAM\u2019 has received several orders from different places in the month of January, as shown below. There are four teams in the company. Each team can plan multiple events at a time. The left endpoint of the bar indicates the start date of planning the event, and the right end of the bar indicates the end date. The number of days between start date and end date of planning is termed as 'Planning duration of the event'. Planning of all the orders received in January are done by January 31.\n\nFor example, in Kolkata, there was an event organized by Team N from Jan 1- Jan 2 and then Team K organized a different event from Jan 2 to Jan 4. Also, there was one more event organized by team N, which ended on Jan 25.\n\nWhich team worked on the maximum number of events simultaneously?\n\n**Options:**\n- **A**. Team K and Team\u00a0N\n- **B**. Team L and Team\u00a0M\n- **C**. Team L and Team\u00a0N\n- **D**. Team K and Team\u00a0M\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-411",
+      "passage_text": "Answer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.",
+      "question_text": "In the year 2017, how many classes had pass percentage greater than overall pass percentage of the school?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Nice puzzle \u2014 I solved it. Here's a clean walk-through and the unique solution.\n Setup:\n Let $f_1,...,f_7$ be the number of students who failed in classes 1\u20137 in 2017 (each is a distinct single-digit natural number).\n Let $N$ be the number of new entrants into 1st class for 2018.\n Rules $\rightarrow$ relations:\n Students who pass class $i$ in 2017 (that's $40-f_1$ for class 1, $48-f_2$ for class 2, etc.) move to class $i+1$ in 2018.\n Students who fail stay in the same class next year.\n New students only enter 1st class.\n So the equations for 2018 counts (using the table values) are:\n $N + f_1 = 50$\n $(40 - f_1) + f_2 = 41$\n $(48 - f_2) + f_3 = 46$\n $(53 - f_3) + f_4 = 58$\n $(70 - f_4) + f_5 = 64$\n $(32 - f_5) + f_6 = 36$\n $(44 - f_6) + f_7 = 48$\n Each $f_i$ is in ${1,2,...,9}$ and all are distinct.\n Solution (by solving the system / checking integer possibilities):\n The unique solution that satisfies all equations and the distinct single-digit condition is:\n $f_1 = 3$\n $f_2 = 4$\n $f_3 = 2$\n $f_4 = 7$\n $f_5 = 1$\n $f_6 = 5$\n $f_7 = 9$\n From equation (1), $N = 50 - f_1 = 50 - 3 = 47$. So 47 new students entered 1st class in 2018.\n Extra checks (passes in 2017):\n Number who passed each class in 2017 (i.e., moved forward):\n class 1: $40 - 3 = 37$\n class 2: $48 - 4 = 44$\n class 3: $53 - 2 = 51$\n class 4: $70 - 7 = 63$\n class 5: $32 - 1 = 31$\n class 6: $44 - 5 = 39$\n class 7: $72 - 9 = 63$ (these 63 passed 7th and left the school)\n These produce the given 2018 numbers when combined with the failures and new entries \u2014 so the solution is consistent and unique.\n If you want, I can show the algebra step-by-step or produce a small script that brute-forces the possibilities and prints the same result. Which would you prefer?\n",
+      "image_url": "https://cracku.in/media/uploads/di1_h8tDYDO.PNG",
+      "full_markdown": "### Question (qid: 91892)\n\n**Passage:**\nAnswer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.\n\nIn the year 2017, how many classes had pass percentage greater than overall pass percentage of the school?\n\n**Options:**\n- **A**. 2\n- **B**. 3\n- **C**. 4\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-412",
+      "passage_text": "Answer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.",
+      "question_text": "The total number of students who failed in the year 2017 in all the classes are? (Enter \u20180\u2019 if the answer is cannot be determined)",
+      "options": [],
+      "correct_option_data": "31",
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/di1_h8tDYDO.PNG",
+      "full_markdown": "### Question (qid: 91893)\n\n**Passage:**\nAnswer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.\n\nThe total number of students who failed in the year 2017 in all the classes are? (Enter \u20180\u2019 if the answer is cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-413",
+      "passage_text": "Answer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.",
+      "question_text": "What is the number of new students who joined Himalaya Primary School in the year 2018? (Enter \u20180\u2019 if the answer is cannot be determined)",
+      "options": [],
+      "correct_option_data": "47",
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/di1_h8tDYDO.PNG",
+      "full_markdown": "### Question (qid: 91894)\n\n**Passage:**\nAnswer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.\n\nWhat is the number of new students who joined Himalaya Primary School in the year 2018? (Enter \u20180\u2019 if the answer is cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-414",
+      "passage_text": "Answer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.",
+      "question_text": "What is the number of students who passed out from the Himalaya Primary School in the year 2017? (Enter \u20180\u2019 if the answer is cannot be determined)",
+      "options": [],
+      "correct_option_data": "63",
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/di1_h8tDYDO.PNG",
+      "full_markdown": "### Question (qid: 91895)\n\n**Passage:**\nAnswer the questions on the basis of the information given below.\n\nInformation on the number of students studying in 1st to 7th class at Himalaya Primary School in the years 2017 and 2018 is given in the table below. Students enter the school only in 1st class and leave only after passing the 7th class. No new student can enter or leave in any other class.\n\nStudents who clear the examination for any class advance to next higher class in the next year. Students who fail to clear the examination for any class continue in the same class in the next year. Also, the number of students failing in any class is a distinct single digit natural number.\n\nWhat is the number of students who passed out from the Himalaya Primary School in the year 2017? (Enter \u20180\u2019 if the answer is cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-415",
+      "passage_text": "Five friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.",
+      "question_text": "Where does Bipul live?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "BTM",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Annanagar",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Kolkata",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Delhi",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/blob_aazQe0W",
+      "full_markdown": "### Question (qid: 228610)\n\n**Passage:**\nFive friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.\n\nWhere does Bipul live?\n\n**Options:**\n- **A**. BTM\n- **B**. Annanagar\n- **C**. Kolkata\n- **D**. Delhi\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-416",
+      "passage_text": "Five friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.",
+      "question_text": "Pawan works in",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Mumbai",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Delhi",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Kolkata",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/blob_aazQe0W",
+      "full_markdown": "### Question (qid: 228611)\n\n**Passage:**\nFive friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.\n\nPawan works in\n\n**Options:**\n- **A**. Mumbai\n- **B**. Delhi\n- **C**. Kolkata\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-417",
+      "passage_text": "Five friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.",
+      "question_text": "Suresh is from",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Delhi",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Bangalore",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Kolkata",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Chennai",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/blob_aazQe0W",
+      "full_markdown": "### Question (qid: 228612)\n\n**Passage:**\nFive friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.\n\nSuresh is from\n\n**Options:**\n- **A**. Delhi\n- **B**. Bangalore\n- **C**. Kolkata\n- **D**. Chennai\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-418",
+      "passage_text": "Five friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.",
+      "question_text": "The friend living in Karol Bagh is from",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Mumbai",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Chennai",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Bangalore",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "https://cracku.in/media/uploads/blob_aazQe0W",
+      "full_markdown": "### Question (qid: 228613)\n\n**Passage:**\nFive friends, Bipul, Arpita, Suresh, Ayesha and Pawan are from different cities viz. Delhi, Mumbai, Kolkata, Chennai and Bangalore, not necessarily in that order. Each of them works in different cities as mentioned above such that nobody works in the same city to which he/she belongs. Following table mentions two different areas in each of the cities. The friend working in a particular city lives in one of the areas and works in the another, not in any particular order.\n\nFurther, it is known that: 1. The friend from Kolkata works in the city where the friend working in Whitefield belongs to. 2. The friend from Delhi works in the city where the friend working in Garia belongs to. 3. The friend who works in Bangalore is from the place where the friend from Kolkata works. 4. The friend who works in Punjabi Bagh is from a place where the friend from Mumbai works. 5. Bipul is from Mumbai, Arpita works in Chennai, and Suresh lives in Salt Lake.\n\nThe friend living in Karol Bagh is from\n\n**Options:**\n- **A**. Mumbai\n- **B**. Chennai\n- **C**. Bangalore\n- **D**. Cannot be determined\n\n**Correct Answer:** null",
+      "type": "dilr"
+    }
+  ]
+}

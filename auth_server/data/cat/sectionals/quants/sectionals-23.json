@@ -1,0 +1,580 @@
+{
+  "id": "mock-test-23",
+  "title": "CAT Mock Test 23",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 68,
+  "examType": "CAT",
+  "questions": [
+    {
+      "qid": "quant-485",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Rahul invested a total of 10,000 rupees in two banks. Bank A offers simple interest at 6% pa and Bank B offers compound interest at 8% pa. After 2 years he terminates both the deposits. He calculated his total interest as Rs. 1432. What was the amount he invested in Bank A?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "7000",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "5000",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "4500",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "7500",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Let A be the amount invested in Bank A. B is the amount invested in Bank B. A+ B = 10,000   A*6*2/100 + B(1.08)*(1.08) - B = 1432   .12A + .1664 B =1432   .12A+ .12B = 1200   So, 0.0464B = 232 or B = 5000   A = 5000.",
+      "full_markdown": "### Question (qid: quant-3)\n\nPassage:\nFor the following questions answer them individually\n\nRahul invested a total of 10,000 rupees in two banks. Bank A offers simple interest at 6% pa and Bank B offers compound interest at 8% pa. After 2 years he terminates both the deposits. He calculated his total interest as Rs. 1432. What was the amount he invested in Bank A?\n\nOptions:\n- A. 7000\n- B. 5000 \u2705\n- C. 4500\n- D. 7500\n\n**Solution:** Let A be the amount invested in Bank A. B is the amount invested in Bank B. A+ B = 10,000   A*6*2/100 + B(1.08)*(1.08) - B = 1432   .12A + .1664 B =1432   .12A+ .12B = 1200   So, 0.0464B = 232 or B = 5000   A = 5000.\n\nCorrect Answer: 2",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-486",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "The product of 4 consecutive odd natural numbers is 156009. Find the sum of these 4 odd integers.",
+      "options": [],
+      "correct_option_data": "80",
+      "solution_text": "The given number can be broken into 7*3*7429 = 21*7429   Now if we take the value of 20420^4204 = 160000 which is close to the given number.   Divide 7429 with 19, we find that it is perfectly divisible by 19.   7429 = 19*17*23   156009 = 17*19*21*23   Sum = 17+19+21+23 = 80",
+      "full_markdown": "### Question (qid: quant-4)\n\nPassage:\nFor the following questions answer them individually\n\nThe product of 4 consecutive odd natural numbers is 156009. Find the sum of these 4 odd integers.\n\n\n**Solution:** The given number can be broken into 7*3*7429 = 21*7429   Now if we take the value of 20420^4204 = 160000 which is close to the given number.   Divide 7429 with 19, we find that it is perfectly divisible by 19.   7429 = 19*17*23   156009 = 17*19*21*23   Sum = 17+19+21+23 = 80\n\nCorrect Answer: 80",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-487",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Find the number of ways in which the number $6561^2$ can be written as a product of 3 factors.",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "153",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "120",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "60",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "30",
+          "data_option": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "656126561^265612 can be written as 3163^{16}316. Let a, b and c be the three factors => abc = 3163^{16}316 If x, y and z are the powers of 3 in a, b and c respectively, then x + y + z = 16 => 18C2^{18}C_218C2\u200b solutions => 153 solutions. But, we have to find the unordered solutions => remove cases (k,k,k) and (k,k,m), divide the resulting number by 6 and then add the removed cases again. Case (k, k, k): As 16 is not divisible by 3, there will be no (k,k,k) cases.  Case (k, k, m): Here 2k + m = 16. k can go from 0 to 8 and correspondingly m will go from 16 to 0. Hence, there will be a total of 9 cases. So, there are 0 (k,k,k) cases and 9 (k,k,m) cases => 9*3 = 27 solutions have to be removed => 153 - 27 = 126 cases are of the form (k,m,n). 126/6 = 21 => 21 + 9 = 30 unordered solutions. **Note:** In the question we have not been asked to find the number of ordered solutions. Every solution of the form (k,m,n) can be arranged in 3! = 6 ways. But only one of them should be counted when counting the number of unordered solutions. So they have been divided by 6. So 126/6 = 21. Also every solution of the form (k,k,m) can be arranged in 3 ways. So they have been divided by 3 to get 27/3 = 9. Thus, the total number of solutions = 21+9 = 30.",
+      "full_markdown": "### Question (qid: quant-5)\n\nPassage:\nFor the following questions answer them individually\n\nFind the number of ways in which the number 656126561^265612 can be written as a product of 3 factors.\n\nOptions:\n- A. 153\n- B. 120\n- C. 60\n- D. 30 \u2705\n\n**Solution:** 656126561^265612 can be written as 3163^{16}316. Let a, b and c be the three factors => abc = 3163^{16}316 If x, y and z are the powers of 3 in a, b and c respectively, then x + y + z = 16 => 18C2^{18}C_218C2\u200b solutions => 153 solutions. But, we have to find the unordered solutions => remove cases (k,k,k) and (k,k,m), divide the resulting number by 6 and then add the removed cases again. Case (k, k, k): As 16 is not divisible by 3, there will be no (k,k,k) cases.  Case (k, k, m): Here 2k + m = 16. k can go from 0 to 8 and correspondingly m will go from 16 to 0. Hence, there will be a total of 9 cases. So, there are 0 (k,k,k) cases and 9 (k,k,m) cases => 9*3 = 27 solutions have to be removed => 153 - 27 = 126 cases are of the form (k,m,n). 126/6 = 21 => 21 + 9 = 30 unordered solutions. **Note:** In the question we have not been asked to find the number of ordered solutions. Every solution of the form (k,m,n) can be arranged in 3! = 6 ways. But only one of them should be counted when counting the number of unordered solutions. So they have been divided by 6. So 126/6 = 21. Also every solution of the form (k,k,m) can be arranged in 3 ways. So they have been divided by 3 to get 27/3 = 9. Thus, the total number of solutions = 21+9 = 30.\n\nCorrect Answer: 4",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-488",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "We are told that f(x) is a polynomial function such that $f(a)f(b) = f(a) + f(b) + f(ab) - 2$ and $f(4) = 17$, find the value of f(7).",
+      "options": [],
+      "correct_option_data": "50",
+      "solution_text": "f(a)f(b) = f(a) + f(b) + f(ab) - 2   Put a = b = 1.   [f(1)]2=3f(1)\u22122[f(1)]^2 = 3f(1) - 2[f(1)]2=3f(1)\u22122 => f(1) = 1 (or) 2.   Let's assume f(1) = 1   Now, put b = 1.   f(a) = 2f(a) - 1   => f(a) = 1 => For all values of a, f(a) = 1.   This is false because f(4) = 17.   => f(1) = 2 is the correct value.   Now put b = 1/a   f(a)f(1/a) = f(a) + f(1/a) + 2 - 2   => f(a)f(1/a) = f(a) + f(1/a)       So taking RHS terms to LHS and adding 1 to both sides we get   f(a)f(1/a) - f(a) - f(1/a) +1 = 1   (f(a) - 1) (f(1/a)-1) = 1   Let g(x) = f(x)-1   So g(x)*g(1/x) = 1   So g(x) is of the form \u00b1xn\\pm x^n\u00b1xn   So f(x) is of the form \u00b1xn+1\\pm x^n + 1\u00b1xn+1. f(a) = \u00b1an+1\\pm a^n + 1\u00b1an+1 satisfies the above condition.   \u22124n+1-4^n + 1\u22124n+1 = 17 => \u22124n-4^n\u22124n = 16, which is not possible.   4a+14^a + 14a+1 = 17 => n = 2   => f(a) = a2+1a^2 + 1a2+1   => f(7) = 72+17^2 + 172+1 = 50",
+      "full_markdown": "### Question (qid: quant-6)\n\nPassage:\nFor the following questions answer them individually\n\nWe are told that f(x) is a polynomial function such that f(a)f(b) = f(a) + f(b) + f(ab) - 2 and f(4) = 17, find the value of f(7).\n\n\n**Solution:** f(a)f(b) = f(a) + f(b) + f(ab) - 2   Put a = b = 1.   [f(1)]2=3f(1)\u22122[f(1)]^2 = 3f(1) - 2[f(1)]2=3f(1)\u22122 => f(1) = 1 (or) 2.   Let's assume f(1) = 1   Now, put b = 1.   f(a) = 2f(a) - 1   => f(a) = 1 => For all values of a, f(a) = 1.   This is false because f(4) = 17.   => f(1) = 2 is the correct value.   Now put b = 1/a   f(a)f(1/a) = f(a) + f(1/a) + 2 - 2   => f(a)f(1/a) = f(a) + f(1/a)       So taking RHS terms to LHS and adding 1 to both sides we get   f(a)f(1/a) - f(a) - f(1/a) +1 = 1   (f(a) - 1) (f(1/a)-1) = 1   Let g(x) = f(x)-1   So g(x)*g(1/x) = 1   So g(x) is of the form \u00b1xn\\pm x^n\u00b1xn   So f(x) is of the form \u00b1xn+1\\pm x^n + 1\u00b1xn+1. f(a) = \u00b1an+1\\pm a^n + 1\u00b1an+1 satisfies the above condition.   \u22124n+1-4^n + 1\u22124n+1 = 17 => \u22124n-4^n\u22124n = 16, which is not possible.   4a+14^a + 14a+1 = 17 => n = 2   => f(a) = a2+1a^2 + 1a2+1   => f(7) = 72+17^2 + 172+1 = 50\n\nCorrect Answer: 50",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-489",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "In a school, every student likes one of the three sports - Cricket, Football, Rugby. 65% of the students like Cricket, 86% like Football and 57% of the students like Rugby. What is the maximum percentage of students who like exactly two sports?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "92%",
+          "data_option": "1",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "option_text": "80%",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "54%",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "46%",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Let the percentage of students who like all three sports be c, the percentage of students who like exactly two sports be b and the percentage of students who like exactly one sport be a.   So, a + b + c = 100   a + 2b + 3c = 65 + 86 + 57 = 208   => b + 2c = 108   To get the maximum percentage of students who like exactly two sports, we have to maximize b, so the c has to minimum   b + 2c = 108   b + c = 100   So, we get C = 8   Thus the minimum value of c which satisfies these equations is 8   Thus the maximum value of b = 92   Hence the correct answer is 92",
+      "full_markdown": "### Question (qid: quant-7)\n\nPassage:\nFor the following questions answer them individually\n\nIn a school, every student likes one of the three sports - Cricket, Football, Rugby. 65% of the students like Cricket, 86% like Football and 57% of the students like Rugby. What is the maximum percentage of students who like exactly two sports?\n\nOptions:\n- A. 92% \u2705\n- B. 80%\n- C. 54%\n- D. 46%\n\n**Solution:** Let the percentage of students who like all three sports be c, the percentage of students who like exactly two sports be b and the percentage of students who like exactly one sport be a.   So, a + b + c = 100   a + 2b + 3c = 65 + 86 + 57 = 208   => b + 2c = 108   To get the maximum percentage of students who like exactly two sports, we have to maximize b, so the c has to minimum   b + 2c = 108   b + c = 100   So, we get C = 8   Thus the minimum value of c which satisfies these equations is 8   Thus the maximum value of b = 92   Hence the correct answer is 92\n\nCorrect Answer: 1",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-490",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Which condition will a,b,c satisfy if the set of equations 3x + 4y + z = a, 2x + 6y + 4z = b and x - y - 2z = c has atleast 1 solution ? Also $a + b + c \\neq 0$.",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "$5b + 2c = 4a$",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "$a + b + 2c = 0$",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "$a + b = 6c$",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "7b + 10c = 8a",
+          "data_option": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "3x + 4y + z = a --> (1) 2x + 6y + 4z = b --> (2) x - y - 2z = c --> (3) Eliminating z from (1) and (2) , (1)x4 - (2) : 12x + 16y + 4z - (2x + 6y + 4z) = 4a - b 10x + 10 y = 4a - b   => x + y = (4a - b)/10 - (4)       Eliminating z from (1) and (3), (1)x2 + 3 = 6x + 8y + 2z + (x - y - 2z) = 2a + c   => x + y = (2a + c)/7 - (5)    Equating equations (4) and (5), we get, (4a - b)/10 = (2a + c)/7   28a - 7b = 20a + 10c   Thus, 8a = 7b + 10c",
+      "full_markdown": "### Question (qid: quant-8)\n\nPassage:\nFor the following questions answer them individually\n\nWhich condition will a,b,c satisfy if the set of equations 3x + 4y + z = a, 2x + 6y + 4z = b and x - y - 2z = c has atleast 1 solution ? Also a + b + c \u2260\\neq\ue020\u200b= 0.\n\nOptions:\n- A. 5b + 2c = 4a\n- B. a + b + 2c = 0\n- C. a + b = 6c\n- D. 7b + 10c = 8a \u2705\n\n**Solution:** 3x + 4y + z = a --> (1) 2x + 6y + 4z = b --> (2) x - y - 2z = c --> (3) Eliminating z from (1) and (2) , (1)x4 - (2) : 12x + 16y + 4z - (2x + 6y + 4z) = 4a - b 10x + 10 y = 4a - b   => x + y = (4a - b)/10 - (4)       Eliminating z from (1) and (3), (1)x2 + 3 = 6x + 8y + 2z + (x - y - 2z) = 2a + c   => x + y = (2a + c)/7 - (5)    Equating equations (4) and (5), we get, (4a - b)/10 = (2a + c)/7   28a - 7b = 20a + 10c   Thus, 8a = 7b + 10c\n\nCorrect Answer: 4",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-491",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "A man can complete a job in 40 days working 6 hours a day. He started the work and on the second day, another person who can complete the job in half the time as the first person joined him. On the third day, a person who can complete the job thrice as fast as the first person joined them. This process continues till the entire work is completed. After how many days from the start will the work be completed (Every day consists of 8 hours of work)?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "6",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "5",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "4",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "7",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Total number of man-hours required to complete the job if the first person works alone = 240   Number of man-hours put in by the first person in a day = 8   Number of man-hours put in by the second person in a day = 16   Number of man-hours put in by the third person in a day = 24 and so on   Let the work be completed in \u2018n\u2019 days   8*n + 16*(n-1) + 24*(n-2) + \u2026 + 8n*(n-(n-1)) = 240    => 8n + 16(n-1) + 24(n-2) + \u2026 + 8n*1 = 240 If n = 6, the expression on the left hand side becomes 8*6 + 16*5 + 24*4 + 32*3 + 40*2 + 48 = 48*2 + 80*2 + 96*2 = 448   If n = 5, the expression becomes 8*5 + 16*4 + 24*3 + 32*2 + 40 = 280   If n = 4, the expression becomes 8*4 + 16*3 + 24*2 + 32*1 = 160   So, n = 5 is the correct answer",
+      "full_markdown": "### Question (qid: quant-9)\n\nPassage:\nFor the following questions answer them individually\n\nA man can complete a job in 40 days working 6 hours a day. He started the work and on the second day, another person who can complete the job in half the time as the first person joined him. On the third day, a person who can complete the job thrice as fast as the first person joined them. This process continues till the entire work is completed. After how many days from the start will the work be completed (Every day consists of 8 hours of work)?\n\nOptions:\n- A. 6\n- B. 5 \u2705\n- C. 4\n- D. 7\n\n**Solution:** Total number of man-hours required to complete the job if the first person works alone = 240   Number of man-hours put in by the first person in a day = 8   Number of man-hours put in by the second person in a day = 16   Number of man-hours put in by the third person in a day = 24 and so on   Let the work be completed in \u2018n\u2019 days   8*n + 16*(n-1) + 24*(n-2) + \u2026 + 8n*(n-(n-1)) = 240    => 8n + 16(n-1) + 24(n-2) + \u2026 + 8n*1 = 240 If n = 6, the expression on the left hand side becomes 8*6 + 16*5 + 24*4 + 32*3 + 40*2 + 48 = 48*2 + 80*2 + 96*2 = 448   If n = 5, the expression becomes 8*5 + 16*4 + 24*3 + 32*2 + 40 = 280   If n = 4, the expression becomes 8*4 + 16*3 + 24*2 + 32*1 = 160   So, n = 5 is the correct answer\n\nCorrect Answer: 2",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-492",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "The cost of 4 pens, 10 pencils and 14 erasers at a stationery shop is Rs 120. At the same shop, the cost of 6 pens and 10 erasers is Rs 60 more than 12 pencils. By how much amount (in Rs.) does the cost of 78 pencils and 2 erasers exceed the cost of 12 pens?",
+      "options": [],
+      "correct_option_data": "120",
+      "solution_text": "Let the cost of a pen be x, the cost of a pencil be y and the cost of an eraser be z.   4x + 10y + 14z = 120   => 2x + 5y + 7z = 60 \u2192 (1)   6x + 10z = 60 + 12y   => 6x - 12y + 10z = 60   => 3x - 6y + 5z = 30 \u2192 (2)   We need the value of 78y + 2z - 12x = 2*(-6x + 39y + z)   3*(1) - 4*(2) gives 6x + 15y + 21z - 12x + 24y - 20z = 180 - 120   => -6x + 39y + z = 60   So, the required value is 2*60 = 120",
+      "full_markdown": "### Question (qid: quant-10)\n\nPassage:\nFor the following questions answer them individually\n\nThe cost of 4 pens, 10 pencils and 14 erasers at a stationery shop is Rs 120. At the same shop, the cost of 6 pens and 10 erasers is Rs 60 more than 12 pencils. By how much amount (in Rs.) does the cost of 78 pencils and 2 erasers exceed the cost of 12 pens?\n\n\n**Solution:** Let the cost of a pen be x, the cost of a pencil be y and the cost of an eraser be z.   4x + 10y + 14z = 120   => 2x + 5y + 7z = 60 \u2192 (1)   6x + 10z = 60 + 12y   => 6x - 12y + 10z = 60   => 3x - 6y + 5z = 30 \u2192 (2)   We need the value of 78y + 2z - 12x = 2*(-6x + 39y + z)   3*(1) - 4*(2) gives 6x + 15y + 21z - 12x + 24y - 20z = 180 - 120   => -6x + 39y + z = 60   So, the required value is 2*60 = 120\n\nCorrect Answer: 120",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-493",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "A shopkeeper sells 1 kg rice to two customers Rani and Vani. For Rani he charges exactly the cost price but under weighs the quantity by 10%. For Vani he sells at 20% more than cost price but over weighs the quantity by 10%. What is his overall profit/ loss percentage?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "10% loss",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "10% profit",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "9.1% loss",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "9.1% profit",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Let the cost price of 1 kg of rice be C.   For Rani he sells at C but only sells 0.9 kg instead of 1 kg.   For Vani he sells at 1.2C but sells 1.1 kg instead of 1 kg.   Overall he sold 2 kg rice together and the cost price for it is 2C.   His net revenue after both the transactions is C+1.2C = 2.2C   His profit = 0.2C   Profit % = (0.2C2C)\u00d7100 (\\frac{0.2C}{2C})\\times100(2C0.2C\u200b)\u00d7100 = 10% profit.",
+      "full_markdown": "### Question (qid: quant-11)\n\nPassage:\nFor the following questions answer them individually\n\nA shopkeeper sells 1 kg rice to two customers Rani and Vani. For Rani he charges exactly the cost price but under weighs the quantity by 10%. For Vani he sells at 20% more than cost price but over weighs the quantity by 10%. What is his overall profit/ loss percentage?\n\nOptions:\n- A. 10% loss\n- B. 10% profit \u2705\n- C. 9.1% loss\n- D. 9.1% profit\n\n**Solution:** Let the cost price of 1 kg of rice be C.   For Rani he sells at C but only sells 0.9 kg instead of 1 kg.   For Vani he sells at 1.2C but sells 1.1 kg instead of 1 kg.   Overall he sold 2 kg rice together and the cost price for it is 2C.   His net revenue after both the transactions is C+1.2C = 2.2C   His profit = 0.2C   Profit % = (0.2C2C)\u00d7100 (\\frac{0.2C}{2C})\\times100(2C0.2C\u200b)\u00d7100 = 10% profit.\n\nCorrect Answer: 2",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-494",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "207 people who attend \u201cBold Gym\u201d in Kondapur take four types juices Apple, Orange, Pomegranate and Mango. There are a few people who do not take any of the juices. It is known that for every person in the Gym who takes atleast \u2018N\u2019 types of juices there are 2 persons who take atleast \u2018N-1\u2019 juices for N = 2, 3 and 4. If the number of people who take all four types of juices is equal to the number of people who do not take any juice at all, what is the number of people who take exactly 2 types of juices?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "23",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "46",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "69",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "92",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Let the number of persons who do not take any juice and the number of persons who take all 4 types of juices be \u2018x\u2019.   As there are \u2018x\u2019 people who take atleast 4 types of juices there should be \u20182x\u2019 people who take atleast 3 types of juices.    This means the number of people who take exactly 3 types of juices = 2x - x = x.   As there are \u20182x\u2019 people who take atleast 3 types of juices there should be \u20184x\u2019 people who take atleast 2 types of juices.    This means the number of people who take exactly 2 types of juices = 4x - x - x = 2x.   As there are \u20184x\u2019 people who take atleast 2 types of juices there should be \u20188x\u2019 people who take atleast 1 type of juices.    This means the number of people who take exactly 1 type of juices = 8x - 4x = 4x.    Thus the total number of people in the Gym = x + 4x + 2x + x + x = 9x.   9x = 207 => x = 23.   The number of people who take exactly 2 types of juices = 2x = 46.",
+      "full_markdown": "### Question (qid: quant-12)\n\nPassage:\nFor the following questions answer them individually\n\n207 people who attend \u201cBold Gym\u201d in Kondapur take four types juices Apple, Orange, Pomegranate and Mango. There are a few people who do not take any of the juices. It is known that for every person in the Gym who takes atleast \u2018N\u2019 types of juices there are 2 persons who take atleast \u2018N-1\u2019 juices for N = 2, 3 and 4. If the number of people who take all four types of juices is equal to the number of people who do not take any juice at all, what is the number of people who take exactly 2 types of juices?\n\nOptions:\n- A. 23\n- B. 46 \u2705\n- C. 69\n- D. 92\n\n**Solution:** Let the number of persons who do not take any juice and the number of persons who take all 4 types of juices be \u2018x\u2019.   As there are \u2018x\u2019 people who take atleast 4 types of juices there should be \u20182x\u2019 people who take atleast 3 types of juices.    This means the number of people who take exactly 3 types of juices = 2x - x = x.   As there are \u20182x\u2019 people who take atleast 3 types of juices there should be \u20184x\u2019 people who take atleast 2 types of juices.    This means the number of people who take exactly 2 types of juices = 4x - x - x = 2x.   As there are \u20184x\u2019 people who take atleast 2 types of juices there should be \u20188x\u2019 people who take atleast 1 type of juices.    This means the number of people who take exactly 1 type of juices = 8x - 4x = 4x.    Thus the total number of people in the Gym = x + 4x + 2x + x + x = 9x.   9x = 207 => x = 23.   The number of people who take exactly 2 types of juices = 2x = 46.\n\nCorrect Answer: 2",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-495",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Jay has 3 types of boxes Large, medium and small. He first puts 10 large boxes on a table. He leaves some of these boxes empty and in all the other boxes puts 7 empty medium sized boxes. He then leaves some of the medium sized boxes empty and places 7 empty small boxes in the other medium sized boxes. If 82 boxes on the table were empty, then what is the total number of boxes he used? (All large boxes are of the same size, all medium boxes are of the same size and all small boxes are of the same size)",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "88",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "90",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "94",
+          "data_option": "3",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "option_text": "98",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Let the number of large boxes, in which Jay places medium boxes, be m. Hence, m<10. Let the number of medium boxes, in which Jay places small boxes, be n. Hence, n<m After adding 7*m medium boxes, the number of empty boxes = (10-m) large boxes + 7m medium boxes = 10+6m. Once a large box gets 7 medium boxes, it is no longer empty. After adding the 7*n small boxes, the number of empty boxes = (10-m) large boxes + (7m-n) medium boxes + 7n small boxes = 10+6m+6n = 10+6(m+n) We know that 10+6(m+n) = 82 6(m+n) = 72 => m+n = 12 Now the total number of boxes used = 10 + 7m + 7n = 10+7(m+n) = 10+ 7*12 = 94",
+      "full_markdown": "### Question (qid: quant-13)\n\nPassage:\nFor the following questions answer them individually\n\nJay has 3 types of boxes Large, medium and small. He first puts 10 large boxes on a table. He leaves some of these boxes empty and in all the other boxes puts 7 empty medium sized boxes. He then leaves some of the medium sized boxes empty and places 7 empty small boxes in the other medium sized boxes. If 82 boxes on the table were empty, then what is the total number of boxes he used? (All large boxes are of the same size, all medium boxes are of the same size and all small boxes are of the same size)\n\nOptions:\n- A. 88\n- B. 90\n- C. 94 \u2705\n- D. 98\n\n**Solution:** Let the number of large boxes, in which Jay places medium boxes, be m. Hence, m<10. Let the number of medium boxes, in which Jay places small boxes, be n. Hence, n<m After adding 7*m medium boxes, the number of empty boxes = (10-m) large boxes + 7m medium boxes = 10+6m. Once a large box gets 7 medium boxes, it is no longer empty. After adding the 7*n small boxes, the number of empty boxes = (10-m) large boxes + (7m-n) medium boxes + 7n small boxes = 10+6m+6n = 10+6(m+n) We know that 10+6(m+n) = 82 6(m+n) = 72 => m+n = 12 Now the total number of boxes used = 10 + 7m + 7n = 10+7(m+n) = 10+ 7*12 = 94\n\nCorrect Answer: 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-496",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "Ramesh and his son were born on the same date and the age of Ramesh was 4 times that of his son when he was as old as his son is now. What could be the sum of present ages of Ramesh and his son on their birthdays, if Ramesh is at-least 45 years old and his son is not more than 30 years old?",
+      "options": [],
+      "correct_option_data": "77",
+      "solution_text": "Let the present age of Ramesh's son be x   When Ramesh was x, his son was x/4. Thus, the no. of years before from the present during which Ramesh's son's age was x = x - x/4 = 3x/4   Thus, the present age of Ramesh = x + 3x/4 = 7x/4   Thus, the ratio of ages of Ramesh and his son = 7x/4x = 7/4   Thus, since, Ramesh age is at-least 45, his ages could be 49, 56 etc(only integers are possible as we need the ratio on their birth days). When Ramesh is 49 his son is 4/7 x 49 = 28. If Ramesh's age is greater than 49, his son's age would be greater than 30 which is not possible .   Thus, the age of Ramesh is 49 and his son's age is 28   Thus, the required sum = 49 + 28 = 77",
+      "full_markdown": "### Question (qid: quant-14)\n\nPassage:\nFor the following questions answer them individually\n\nRamesh and his son were born on the same date and the age of Ramesh was 4 times that of his son when he was as old as his son is now. What could be the sum of present ages of Ramesh and his son on their birthdays, if Ramesh is at-least 45 years old and his son is not more than 30 years old?\n\n\n**Solution:** Let the present age of Ramesh's son be x   When Ramesh was x, his son was x/4. Thus, the no. of years before from the present during which Ramesh's son's age was x = x - x/4 = 3x/4   Thus, the present age of Ramesh = x + 3x/4 = 7x/4   Thus, the ratio of ages of Ramesh and his son = 7x/4x = 7/4   Thus, since, Ramesh age is at-least 45, his ages could be 49, 56 etc(only integers are possible as we need the ratio on their birth days). When Ramesh is 49 his son is 4/7 x 49 = 28. If Ramesh's age is greater than 49, his son's age would be greater than 30 which is not possible .   Thus, the age of Ramesh is 49 and his son's age is 28   Thus, the required sum = 49 + 28 = 77\n\nCorrect Answer: 77",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-497",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "In a farm, thirty men can do a work in fifteen days.All of them started working on the first day.On every alternate day starting from the second day, some men didn\u2019t turn up. The number of number of men who did not turn up is equal to number of the day(i.e. number of men who didn\u2019t turn up on second day was 2 and on fourth day was 4 and so on). In how many days can they complete total work?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "20",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "18",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "16",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "19",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Here, let us assume that each man will do 1 unit of work everyday.   Total work = 30*(15) = 450 units.   According to the question 28 men were there on second day,26 on fourth and so on    Work done on first 20 days = 30+28+30+26+30+24\u2026\u2026\u2026\u2026 = (30+28)+(30+26)+(30+24)\u2026\u2026\u2026\u2026   =58+56\u2026\u2026..+42 =102\u2217(2(58)+(10\u22121)(\u22122))\\frac{10}{2}*(2(58)+(10-1)(-2))210\u200b\u2217(2(58)+(10\u22121)(\u22122)) = 490   But, 30units is done on 19th day and 10units on 20th day.    The total work of 450 units will be done in first 18 days.",
+      "full_markdown": "### Question (qid: quant-15)\n\nPassage:\nFor the following questions answer them individually\n\nIn a farm, thirty men can do a work in fifteen days.All of them started working on the first day.On every alternate day starting from the second day, some men didn\u2019t turn up. The number of number of men who did not turn up is equal to number of the day(i.e. number of men who didn\u2019t turn up on second day was 2 and on fourth day was 4 and so on). In how many days can they complete total work?\n\nOptions:\n- A. 20\n- B. 18 \u2705\n- C. 16\n- D. 19\n\n**Solution:** Here, let us assume that each man will do 1 unit of work everyday.   Total work = 30*(15) = 450 units.   According to the question 28 men were there on second day,26 on fourth and so on    Work done on first 20 days = 30+28+30+26+30+24\u2026\u2026\u2026\u2026 = (30+28)+(30+26)+(30+24)\u2026\u2026\u2026\u2026   =58+56\u2026\u2026..+42 =102\u2217(2(58)+(10\u22121)(\u22122))\\frac{10}{2}*(2(58)+(10-1)(-2))210\u200b\u2217(2(58)+(10\u22121)(\u22122)) = 490   But, 30units is done on 19th day and 10units on 20th day.    The total work of 450 units will be done in first 18 days.\n\nCorrect Answer: 2",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-498",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "How many values of (a, b) satisfy the following equations. $a + |b| = 12$ and $|a| + b = 9$",
+      "options": [],
+      "correct_option_data": "1",
+      "solution_text": "The first equation can be written as   a + b = 12 (when b > 0) I   and a - b = 12 (when b < 0) II {a \u226412\\leq 12\u226412, for these relations to be valid}   Similarly, for second equation   a + b = 9 (a > 0) III   b - a = 9 (a < 0) IV   In this case, b will always be less than or equal to 9.   On checking the slopes, we can see that lines I and III are parallel and similarly, lines II and IV are also parallel.   I and IV will intersect at b = 10.5 and a = 1.5. This is not possible since < 0 in equation IV. Hence this pair won\u2019t given any solution.   II and III will intersect at a = 10.5 and b = -1.5   This satisfies both the equations and is also true as per the given conditions.   Hence there is the only common solution for both the equations.",
+      "full_markdown": "### Question (qid: quant-16)\n\nPassage:\nFor the following questions answer them individually\n\nHow many values of (a, b) satisfy the following equations. a + |b| = 12 and |a| + b = 9\n\n\n**Solution:** The first equation can be written as   a + b = 12 (when b > 0) I   and a - b = 12 (when b < 0) II {a \u226412\\leq 12\u226412, for these relations to be valid}   Similarly, for second equation   a + b = 9 (a > 0) III   b - a = 9 (a < 0) IV   In this case, b will always be less than or equal to 9.   On checking the slopes, we can see that lines I and III are parallel and similarly, lines II and IV are also parallel.   I and IV will intersect at b = 10.5 and a = 1.5. This is not possible since < 0 in equation IV. Hence this pair won\u2019t given any solution.   II and III will intersect at a = 10.5 and b = -1.5   This satisfies both the equations and is also true as per the given conditions.   Hence there is the only common solution for both the equations.\n\nCorrect Answer: 1",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-499",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "N is a positive integer such that (N+1) is a factor of N!. If it is known that $1 \\leq N \\leq 100$",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "76",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "75",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "74",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "73",
+          "data_option": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "From Wilson\u2019s theorem, we know that    (p - 1)! mod p = p-1, where p is a prime number.   So when (N+1) will be a prime number than N! will not be divisible by (N+1).There are 26 prime numbers from 1 to 101. Hence for these 26 values, (N+1) will not be a factor of N!. Moreover, 3! is also not divisible by 4. Hence when N = 3, then also the given statement does not hold true. For all other values of N, N! will be divisible by (N+1). There are 100 numbers from 1 to 100. From these, for 27 numbers can be excluded. Thus, for 73 values of \u2018N\u2019, the given relation will hold true.",
+      "full_markdown": "### Question (qid: quant-17)\n\nPassage:\nFor the following questions answer them individually\n\nN is a positive integer such that (N+1) is a factor of N!. If it is known that 1\u2264N\u22641001 \\leq N \\leq 1001\u2264N\u2264100, then how many values of \u2018N\u2019 are possible?\n\nOptions:\n- A. 76\n- B. 75\n- C. 74\n- D. 73 \u2705\n\n**Solution:** From Wilson\u2019s theorem, we know that    (p - 1)! mod p = p-1, where p is a prime number.   So when (N+1) will be a prime number than N! will not be divisible by (N+1).There are 26 prime numbers from 1 to 101. Hence for these 26 values, (N+1) will not be a factor of N!. Moreover, 3! is also not divisible by 4. Hence when N = 3, then also the given statement does not hold true. For all other values of N, N! will be divisible by (N+1). There are 100 numbers from 1 to 100. From these, for 27 numbers can be excluded. Thus, for 73 values of \u2018N\u2019, the given relation will hold true.\n\nCorrect Answer: 4",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-500",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "The distance between point P and point Q is 1600 meters. Aman starts to walk from point P towards point Q. He has a dog with him who starts from point P and runs towards point Q. As soon as the dog reaches point Q, it turns back and heads towards P. After reaching P, it again turns back and moves towards point Q. The process keeps on repeating till Aman reaches point Q. If the ratio of Aman\u2019s speed and the dog\u2019s speed is $1:7$, then at how many distinct points does the dog meet Aman when both of them are travelling in same direction (exclude the starting point)?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "The speed of the dog is 7 times the speed of Aman. So in the time that Aman completes his journey from P to Q once, the dog will cover the distance 7 times. Both dog and Aman start at the same point. Now when Aman has covered some distance, the dog will be returning back and meeting Aman. When dog is moving from P to Q, it will again meet Aman at a different point. Hence each time the dog crosses Aman, he will do so at a different point. The dog will cross Aman 6 times. Out of these at 3 points both will be moving in the same direction and at the other three points both will be moving in different directions.",
+      "full_markdown": "### Question (qid: quant-18)\n\nPassage:\nFor the following questions answer them individually\n\nThe distance between point P and point Q is 1600 meters. Aman starts to walk from point P towards point Q. He has a dog with him who starts from point P and runs towards point Q. As soon as the dog reaches point Q, it turns back and heads towards P. After reaching P, it again turns back and moves towards point Q. The process keeps on repeating till Aman reaches point Q. If the ratio of Aman\u2019s speed and the dog\u2019s speed is 1:7, then at how many distinct points does the dog meet Aman when both of them are travelling in same direction (exclude the starting point)?\n\n\n**Solution:** The speed of the dog is 7 times the speed of Aman. So in the time that Aman completes his journey from P to Q once, the dog will cover the distance 7 times. Both dog and Aman start at the same point. Now when Aman has covered some distance, the dog will be returning back and meeting Aman. When dog is moving from P to Q, it will again meet Aman at a different point. Hence each time the dog crosses Aman, he will do so at a different point. The dog will cross Aman 6 times. Out of these at 3 points both will be moving in the same direction and at the other three points both will be moving in different directions.\n\nCorrect Answer: 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-501",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "If the real root of the cubic equation $8a^3-12a^2-6a-1=0$ is expressed as $\\frac{\\sqrt[3]{p}+\\sqrt[3]{q}+1}{r}$ where $p,q,r$ are natural numbers, what is the value of $p+q+r$",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "We know that 8a3\u221212a2\u22126a\u22121=08a^3-12a^2-6a-1=08a3\u221212a2\u22126a\u22121=0   Therefore, \u22128a3+12a2+6a+1=0-8a^3 + 12a^2 + 6a + 1 = 0\u22128a3+12a2+6a+1=0   Or, 8a3+12a2+6a+1=16a38a^3 + 12a^2+ 6a + 1 = 16a^38a3+12a2+6a+1=16a3   Therefore, (2a+1)3=16a3(2a+1)^3 = 16a^3(2a+1)3=16a3   Or, (2+1/a)3=16(2+1/a)^3 = 16(2+1/a)3=16   Therefore, 1/a=163\u221221/a = \\sqrt[3]{16}-21/a=316\u200b\u22122   Hence, a=1163\u22122=2563+1283+416\u22128a = \\frac{1}{\\sqrt[3]{16}-2} = \\frac{\\sqrt[3]{256}+\\sqrt[3]{128}+4}{16-8}a=316\u200b\u221221\u200b=16\u221283256\u200b+3128\u200b+4\u200b   Therefore, a=43+23+12a = \\frac{\\sqrt[3]{4}+\\sqrt[3]{2}+1}{2}a=234\u200b+32\u200b+1\u200b   Hence, p=4,q=2,r=2p=4,q=2,r=2p=4,q=2,r=2 and the required sum equals 8",
+      "full_markdown": "### Question (qid: quant-19)\n\nPassage:\nFor the following questions answer them individually\n\nIf the real root of the cubic equation 8a3\u221212a2\u22126a\u22121=08a^3-12a^2-6a-1=08a3\u221212a2\u22126a\u22121=0 is expressed as p3+q3+1r\\frac{\\sqrt[3]{p}+\\sqrt[3]{q}+1}{r}r3p\u200b+3q\u200b+1\u200b where p,q,rp,q,rp,q,r are natural numbers, what is the value of p+q+rp+q+rp+q+r\n\n\n**Solution:** We know that 8a3\u221212a2\u22126a\u22121=08a^3-12a^2-6a-1=08a3\u221212a2\u22126a\u22121=0   Therefore, \u22128a3+12a2+6a+1=0-8a^3 + 12a^2 + 6a + 1 = 0\u22128a3+12a2+6a+1=0   Or, 8a3+12a2+6a+1=16a38a^3 + 12a^2+ 6a + 1 = 16a^38a3+12a2+6a+1=16a3   Therefore, (2a+1)3=16a3(2a+1)^3 = 16a^3(2a+1)3=16a3   Or, (2+1/a)3=16(2+1/a)^3 = 16(2+1/a)3=16   Therefore, 1/a=163\u221221/a = \\sqrt[3]{16}-21/a=316\u200b\u22122   Hence, a=1163\u22122=2563+1283+416\u22128a = \\frac{1}{\\sqrt[3]{16}-2} = \\frac{\\sqrt[3]{256}+\\sqrt[3]{128}+4}{16-8}a=316\u200b\u221221\u200b=16\u221283256\u200b+3128\u200b+4\u200b   Therefore, a=43+23+12a = \\frac{\\sqrt[3]{4}+\\sqrt[3]{2}+1}{2}a=234\u200b+32\u200b+1\u200b   Hence, p=4,q=2,r=2p=4,q=2,r=2p=4,q=2,r=2 and the required sum equals 8\n\nCorrect Answer: 8",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-502",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "$x(x+1)(x+2)(x+3)=168$ For the above equation the sum of all possible real roots is P. What is the absolute value of P?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "We have,   x(x+1)(x+2)(x+3)=168x(x+1)(x+2)(x+3) = 168x(x+1)(x+2)(x+3)=168   (x)(x+3)\u2217(x+1)(x+2)=168(x)(x+3)*(x+1)(x+2) = 168(x)(x+3)\u2217(x+1)(x+2)=168   (x2+3x)\u2217(x2+3x+2)=168 (x^2 + 3x)*(x^2 + 3x + 2) = 168 (x2+3x)\u2217(x2+3x+2)=168   (x2+3x)2+2(x2+3x)=168 (x^2 + 3x)^2 + 2(x^2 + 3x) = 168 (x2+3x)2+2(x2+3x)=168   (x2+3x)2+2(x2+3x)+1=169 (x^2 + 3x)^2 + 2(x^2 + 3x) + 1 = 169 (x2+3x)2+2(x2+3x)+1=169   Let y=x2+3x y = x^2 + 3x y=x2+3x   So, y2+2y+1=169 y^2 + 2y + 1 = 169 y2+2y+1=169   (y+1)2=132 (y+1)^2 = 13^2 (y+1)2=132    So, y+1=13y + 1 = 13y+1=13 and y+1=\u221213y + 1 = -13y+1=\u221213   y=12y = 12y=12 or y=\u221214y = -14y=\u221214   So, x2+3x=12 x^2 + 3x = 12 x2+3x=12 or x2+3x=\u221214 x^2 + 3x = -14 x2+3x=\u221214   Considering,    x2+3x=\u221214 x^2 + 3x = -14 x2+3x=\u221214   x2+3x+94=\u221214+94 x^2 + 3x + \\frac{9}{4} = -14 + \\frac{9}{4} x2+3x+49\u200b=\u221214+49\u200b   (x+32)2=\u2212474 (x + \\frac{3}{2})^2 = - \\frac{47}{4} (x+23\u200b)2=\u2212447\u200b   This will give imaginary roots. Hence can be ignored.    Considering,    x2+3x=12 x^2 + 3x = 12 x2+3x=12   x2+3x+94=12+94 x^2 + 3x + \\frac{9}{4} = 12 + \\frac{9}{4} x2+3x+49\u200b=12+49\u200b   (x+32)2=574 (x + \\frac{3}{2})^2 = \\frac{57}{4} (x+23\u200b)2=457\u200b   (x+32)=\u00b1572 (x + \\frac{3}{2}) = \\pm \\frac{\\sqrt{57}}{2} (x+23\u200b)=\u00b1257\u200b\u200b   Thus, x=57\u221232 x = \\frac{\\sqrt{57} - 3}{2}x=257\u200b\u22123\u200b or x=\u221257\u221232x = \\frac{-\\sqrt{57} - 3}{2} x=2\u221257\u200b\u22123\u200b   Thus, 2 real roots are possible.   Required sum = 57\u221232+\u221257\u221232 \\frac{\\sqrt{57} - 3}{2} + \\frac{-\\sqrt{57} - 3}{2} 257\u200b\u22123\u200b+2\u221257\u200b\u22123\u200b = \u221262=\u22123 \\frac{-6}{2} = -3 2\u22126\u200b=\u22123",
+      "full_markdown": "### Question (qid: quant-20)\n\nPassage:\nFor the following questions answer them individually\n\nx(x+1)(x+2)(x+3)=168x(x+1)(x+2)(x+3) = 168 x(x+1)(x+2)(x+3)=168 For the above equation the sum of all possible real roots is P. What is the absolute value of P?\n\n\n**Solution:** We have,   x(x+1)(x+2)(x+3)=168x(x+1)(x+2)(x+3) = 168x(x+1)(x+2)(x+3)=168   (x)(x+3)\u2217(x+1)(x+2)=168(x)(x+3)*(x+1)(x+2) = 168(x)(x+3)\u2217(x+1)(x+2)=168   (x2+3x)\u2217(x2+3x+2)=168 (x^2 + 3x)*(x^2 + 3x + 2) = 168 (x2+3x)\u2217(x2+3x+2)=168   (x2+3x)2+2(x2+3x)=168 (x^2 + 3x)^2 + 2(x^2 + 3x) = 168 (x2+3x)2+2(x2+3x)=168   (x2+3x)2+2(x2+3x)+1=169 (x^2 + 3x)^2 + 2(x^2 + 3x) + 1 = 169 (x2+3x)2+2(x2+3x)+1=169   Let y=x2+3x y = x^2 + 3x y=x2+3x   So, y2+2y+1=169 y^2 + 2y + 1 = 169 y2+2y+1=169   (y+1)2=132 (y+1)^2 = 13^2 (y+1)2=132    So, y+1=13y + 1 = 13y+1=13 and y+1=\u221213y + 1 = -13y+1=\u221213   y=12y = 12y=12 or y=\u221214y = -14y=\u221214   So, x2+3x=12 x^2 + 3x = 12 x2+3x=12 or x2+3x=\u221214 x^2 + 3x = -14 x2+3x=\u221214   Considering,    x2+3x=\u221214 x^2 + 3x = -14 x2+3x=\u221214   x2+3x+94=\u221214+94 x^2 + 3x + \\frac{9}{4} = -14 + \\frac{9}{4} x2+3x+49\u200b=\u221214+49\u200b   (x+32)2=\u2212474 (x + \\frac{3}{2})^2 = - \\frac{47}{4} (x+23\u200b)2=\u2212447\u200b   This will give imaginary roots. Hence can be ignored.    Considering,    x2+3x=12 x^2 + 3x = 12 x2+3x=12   x2+3x+94=12+94 x^2 + 3x + \\frac{9}{4} = 12 + \\frac{9}{4} x2+3x+49\u200b=12+49\u200b   (x+32)2=574 (x + \\frac{3}{2})^2 = \\frac{57}{4} (x+23\u200b)2=457\u200b   (x+32)=\u00b1572 (x + \\frac{3}{2}) = \\pm \\frac{\\sqrt{57}}{2} (x+23\u200b)=\u00b1257\u200b\u200b   Thus, x=57\u221232 x = \\frac{\\sqrt{57} - 3}{2}x=257\u200b\u22123\u200b or x=\u221257\u221232x = \\frac{-\\sqrt{57} - 3}{2} x=2\u221257\u200b\u22123\u200b   Thus, 2 real roots are possible.   Required sum = 57\u221232+\u221257\u221232 \\frac{\\sqrt{57} - 3}{2} + \\frac{-\\sqrt{57} - 3}{2} 257\u200b\u22123\u200b+2\u221257\u200b\u22123\u200b = \u221262=\u22123 \\frac{-6}{2} = -3 2\u22126\u200b=\u22123\n\nCorrect Answer: 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-503",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "X! has 3 more trailing zeroes than (X-2)!. How many values can X take if it is known that X lies between 1000 and 2000 (both inclusive)?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "18",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "17",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "13",
+          "data_option": "3",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "option_text": "14",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "We know that X! has 3 more trailing zeroes than (X-2)!. Also, we know that the number of zeroes is determined by the powers of 5 present in the number. Therefore, for one number to have 3 more zeroes than the other, the larger number must contain 3 additional powers of 5.  This is possible only in 2 cases - X is a multiple of 125 or X-1 is not a multiple of 125.   Eg) 125! has 3 more trailing zeroes than 123! and 126! has 3 more trailing zeroes than 124!.    Therefore, for each multiple of 125 present in the given range, 2 numbers are possible.    From 1000 to 2000, there are 9 multiples of 125. However, X cannot take the value 2001 as it falls outside the given bracket. Therefore, total number of possible values for which the number of zeroes increases at least by 3 = 2*9 - 1 = 17.    Among these 17 numbers, there are 2 multiples of 625. Since 625 is the fourth power of 5, the number of zeroes will increase by 4 in these cases. Therefore, we have to subtract these 4 cases (2 for each number). Therefore, the total number number of values for which the given condition is satisfied = 17-4 = 13.   Therefore, option C is the right answer.",
+      "full_markdown": "### Question (qid: quant-21)\n\nPassage:\nFor the following questions answer them individually\n\nX! has 3 more trailing zeroes than (X-2)!. How many values can X take if it is known that X lies between 1000 and 2000 (both inclusive)?\n\nOptions:\n- A. 18\n- B. 17\n- C. 13 \u2705\n- D. 14\n\n**Solution:** We know that X! has 3 more trailing zeroes than (X-2)!. Also, we know that the number of zeroes is determined by the powers of 5 present in the number. Therefore, for one number to have 3 more zeroes than the other, the larger number must contain 3 additional powers of 5.  This is possible only in 2 cases - X is a multiple of 125 or X-1 is not a multiple of 125.   Eg) 125! has 3 more trailing zeroes than 123! and 126! has 3 more trailing zeroes than 124!.    Therefore, for each multiple of 125 present in the given range, 2 numbers are possible.    From 1000 to 2000, there are 9 multiples of 125. However, X cannot take the value 2001 as it falls outside the given bracket. Therefore, total number of possible values for which the number of zeroes increases at least by 3 = 2*9 - 1 = 17.    Among these 17 numbers, there are 2 multiples of 625. Since 625 is the fourth power of 5, the number of zeroes will increase by 4 in these cases. Therefore, we have to subtract these 4 cases (2 for each number). Therefore, the total number number of values for which the given condition is satisfied = 17-4 = 13.   Therefore, option C is the right answer.\n\nCorrect Answer: 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-504",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "If T = $\\frac{3}{5} + \\frac{6}{5^2} + \\frac{11}{5^3} + \\frac{18}{5^4} + \\frac{27}{5^5} + \\frac{38}{5^6} + \u2026$ What is the value of T?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "$\\frac{102}{107}$",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "$\\frac{70}{77}$",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "$\\frac{155}{172}$",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "$\\frac{31}{32}$",
+          "data_option": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "T = 35+652+1153+1854+2755+3856+\u2026\\frac{3}{5} + \\frac{6}{5^2} + \\frac{11}{5^3} + \\frac{18}{5^4} + \\frac{27}{5^5} + \\frac{38}{5^6} + \u2026 53\u200b+526\u200b+5311\u200b+5418\u200b+5527\u200b+5638\u200b+\u2026 Substitute 15=x\\frac{1}{5} = x51\u200b=x T = 3x+6x2+11x3+18x4+27x5+38x6+\u20263x + 6x^2 + 11x^3 + 18x^4 + 27x^5 + 38x^6 + \u20263x+6x2+11x3+18x4+27x5+38x6+\u2026 (1) T*x = 3x2+6x3+11x4+18x5+27x6+38x7+\u20263x^2 + 6x^3 + 11x^4 + 18x^5 + 27x^6 + 38x^7 + \u20263x2+6x3+11x4+18x5+27x6+38x7+\u2026 (2) Subtract equation (2) from equation (1) T*(1 - x) = 3x+3x2+5x3+7x4+9x5+11x6+\u20263x + 3x^2 + 5x^3 + 7x^4 + 9x^5 + 11x^6 + \u20263x+3x2+5x3+7x4+9x5+11x6+\u2026 (3) T*(1 - x)x = 3x2+3x3+5x4+7x5+9x6+11x7+\u20263x^2 + 3x^3 + 5x^4 + 7x^5 + 9x^6 + 11x^7 + \u20263x2+3x3+5x4+7x5+9x6+11x7+\u2026 (4) Subtract equation (4) from equation (3)    T*(1-x)*(1-x) = 3x+0+2x3+2x4+2x5+2x6+\u20263x + 0 +2x^3 + 2x^4 + 2x^5 + 2x^6 + \u20263x+0+2x3+2x4+2x5+2x6+\u2026 T*(1-x)*(1-x) = 3x+2(x3+x4+x5+x6+\u2026)3x +2(x^3 + x^4 + x^5 + x^6 + \u2026)3x+2(x3+x4+x5+x6+\u2026) T*(1-x)*(1-x) = 3x+2(x31\u2212x)3x +2(\\frac{x^3}{1-x})3x+2(1\u2212xx3\u200b) Resubstitute x=15x = \\frac{1}{5} x=51\u200b T*4\u221745\u22175=35+2\u22171/534/5\\frac{4*4}{5*5} = \\frac{3}{5} + 2*\\frac{1/5^3}{4/5}5\u221754\u22174\u200b=53\u200b+2\u22174/51/53\u200b T = 1516+2\u2217164\\frac{15}{16} + 2*\\frac{1}{64}1615\u200b+2\u2217641\u200b T = 1516+132\\frac{15}{16} + \\frac{1}{32}1615\u200b+321\u200b T = 1516+132\\frac{15}{16} + \\frac{1}{32}1615\u200b+321\u200b T = 3132\\frac{31}{32}3231\u200b Hence, option D is the right choice.",
+      "full_markdown": "### Question (qid: quant-22)\n\nPassage:\nFor the following questions answer them individually\n\nIf T = 35+652+1153+1854+2755+3856+\u2026\\frac{3}{5} + \\frac{6}{5^2} + \\frac{11}{5^3} + \\frac{18}{5^4} + \\frac{27}{5^5} + \\frac{38}{5^6} + \u2026 53\u200b+526\u200b+5311\u200b+5418\u200b+5527\u200b+5638\u200b+\u2026 What is the value of T?\n\nOptions:\n- A. 102107\\frac{102}{107}107102\u200b\n- B. 7077\\frac{70}{77}7770\u200b\n- C. 155172\\frac{155}{172}172155\u200b\n- D. 3132\\frac{31}{32}3231\u200b \u2705\n\n**Solution:** T = 35+652+1153+1854+2755+3856+\u2026\\frac{3}{5} + \\frac{6}{5^2} + \\frac{11}{5^3} + \\frac{18}{5^4} + \\frac{27}{5^5} + \\frac{38}{5^6} + \u2026 53\u200b+526\u200b+5311\u200b+5418\u200b+5527\u200b+5638\u200b+\u2026 Substitute 15=x\\frac{1}{5} = x51\u200b=x T = 3x+6x2+11x3+18x4+27x5+38x6+\u20263x + 6x^2 + 11x^3 + 18x^4 + 27x^5 + 38x^6 + \u20263x+6x2+11x3+18x4+27x5+38x6+\u2026 (1) T*x = 3x2+6x3+11x4+18x5+27x6+38x7+\u20263x^2 + 6x^3 + 11x^4 + 18x^5 + 27x^6 + 38x^7 + \u20263x2+6x3+11x4+18x5+27x6+38x7+\u2026 (2) Subtract equation (2) from equation (1) T*(1 - x) = 3x+3x2+5x3+7x4+9x5+11x6+\u20263x + 3x^2 + 5x^3 + 7x^4 + 9x^5 + 11x^6 + \u20263x+3x2+5x3+7x4+9x5+11x6+\u2026 (3) T*(1 - x)x = 3x2+3x3+5x4+7x5+9x6+11x7+\u20263x^2 + 3x^3 + 5x^4 + 7x^5 + 9x^6 + 11x^7 + \u20263x2+3x3+5x4+7x5+9x6+11x7+\u2026 (4) Subtract equation (4) from equation (3)    T*(1-x)*(1-x) = 3x+0+2x3+2x4+2x5+2x6+\u20263x + 0 +2x^3 + 2x^4 + 2x^5 + 2x^6 + \u20263x+0+2x3+2x4+2x5+2x6+\u2026 T*(1-x)*(1-x) = 3x+2(x3+x4+x5+x6+\u2026)3x +2(x^3 + x^4 + x^5 + x^6 + \u2026)3x+2(x3+x4+x5+x6+\u2026) T*(1-x)*(1-x) = 3x+2(x31\u2212x)3x +2(\\frac{x^3}{1-x})3x+2(1\u2212xx3\u200b) Resubstitute x=15x = \\frac{1}{5} x=51\u200b T*4\u221745\u22175=35+2\u22171/534/5\\frac{4*4}{5*5} = \\frac{3}{5} + 2*\\frac{1/5^3}{4/5}5\u221754\u22174\u200b=53\u200b+2\u22174/51/53\u200b T = 1516+2\u2217164\\frac{15}{16} + 2*\\frac{1}{64}1615\u200b+2\u2217641\u200b T = 1516+132\\frac{15}{16} + \\frac{1}{32}1615\u200b+321\u200b T = 1516+132\\frac{15}{16} + \\frac{1}{32}1615\u200b+321\u200b T = 3132\\frac{31}{32}3231\u200b Hence, option D is the right choice.\n\nCorrect Answer: 4",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-505",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "If the roots of the equation $ax^2+bx+c=0$ are of different signs, then which of the following statements is definitely false?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "a is positive, b is positive and c is negative",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "a is negative, b is positive and c is positive",
+          "data_option": "2",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "option_text": "a is positive, b is negative and c is positive",
+          "data_option": "3",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "option_text": "a is negative, b is negative and c is positive",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Roots of the equation ax2+bx+c=0ax^2 + bx + c = 0ax2+bx+c=0 are \u2212b\u00b1b2\u22124ac2a\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a}2a\u2212b\u00b1b2\u22124ac\u200b\u200b.   We know that the sign of the roots are different. One of the roots must be positive and the other must be negative. Let us evaluate the options one by one.     Option A:   aaa is positive, bbb is positive and ccc is negative Since ccc is negative, b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Therefore, the root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be negative and \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be positive.  Option B:   aaa is negative, bbb is positive and ccc is positive Since aaa is negative, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Therefore, the root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be positive (Since aaa is negative) and the root \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be negative.  Option D:   aaa is negative, bbb is negative and ccc is positive Since aaa is negative, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Also, bbb is negative. Therefore the term \u2212b-b\u2212b will be positive.  The root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be positive (Since aaa is negative) and the root \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be negative.  Option C: aaa is positive, bbb is negative and ccc is positive Since both aaa and ccc are positive, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be less than bbb. Also, bbb is negative.  Therefore, both the roots \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b and \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be positive.   Option C is definitely false and hence, option C is the right answer.",
+      "full_markdown": "### Question (qid: quant-23)\n\nPassage:\nFor the following questions answer them individually\n\nIf the roots of the equation ax2+bx+c=0ax^2 + bx + c = 0ax2+bx+c=0 are of different signs, then which of the following statements is definitely false?\n\nOptions:\n- A. aaa is positive, bbb is positive and ccc is negative\n- B. aaa is negative, bbb is positive and ccc is positive\n- C. aaa is positive, bbb is negative and ccc is positive \u2705\n- D. aaa is negative, bbb is negative and ccc is positive\n\n**Solution:** Roots of the equation ax2+bx+c=0ax^2 + bx + c = 0ax2+bx+c=0 are \u2212b\u00b1b2\u22124ac2a\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a}2a\u2212b\u00b1b2\u22124ac\u200b\u200b.   We know that the sign of the roots are different. One of the roots must be positive and the other must be negative. Let us evaluate the options one by one.     Option A:   aaa is positive, bbb is positive and ccc is negative Since ccc is negative, b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Therefore, the root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be negative and \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be positive.  Option B:   aaa is negative, bbb is positive and ccc is positive Since aaa is negative, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Therefore, the root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be positive (Since aaa is negative) and the root \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be negative.  Option D:   aaa is negative, bbb is negative and ccc is positive Since aaa is negative, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be greater than bbb. Also, bbb is negative. Therefore the term \u2212b-b\u2212b will be positive.  The root \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b will be positive (Since aaa is negative) and the root \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be negative.  Option C: aaa is positive, bbb is negative and ccc is positive Since both aaa and ccc are positive, the term b2\u22124ac\\sqrt{b^2-4ac}b2\u22124ac\u200b will be less than bbb. Also, bbb is negative.  Therefore, both the roots \u2212b\u2212b2\u22124ac2a\\frac{-b - \\sqrt{b^2-4ac}}{2a}2a\u2212b\u2212b2\u22124ac\u200b\u200b and \u2212b+b2\u22124ac2a\\frac{-b + \\sqrt{b^2-4ac}}{2a}2a\u2212b+b2\u22124ac\u200b\u200b will be positive.   Option C is definitely false and hence, option C is the right answer.\n\nCorrect Answer: 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-506",
+      "passage_text": "For the following questions answer them individually",
+      "question_text": "A shopkeeper buys 50 earphones at Rs 100 each. After buying, he realizes that x number of earphones are not working and cannot be sold. He marks up the price of the remaining earphones to Rs. M where M is a natural number. y number of earphones are not properly packed, and hence, the shopkeeper offered a 50% discount on them. If he sells the remaining earphones at the marked price and earns a total profit of 20%, which of the following cannot be the value of x and y?",
+      "options": [
+        {
+          "label": "A",
+          "option_text": "x = 9, y = 2",
+          "data_option": "1",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "option_text": "x = 7, y = 8",
+          "data_option": "2",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "option_text": "x = 13, y = 24",
+          "data_option": "3",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "option_text": "x = 8 , y = 24",
+          "data_option": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Let the amount at which he sells earphones in good condition be Rs n.    Therefore, he sells (50\u2212x\u2212y)(50 - x - y )(50\u2212x\u2212y) earphones at Rs n each i.e. he earns Rs (50\u2212x\u2212y)n(50 - x - y)n(50\u2212x\u2212y)n after selling earphones in good condition also it is given that y number of earphones are not properly packed and could only be sold after giving a 50% discount. Therefore, he sells these y earphones at Rs n/2 each earning Rs yn/2. His total profit is 20%, i.e. he sells all the items at 50*100*1.2 = Rs 6000.   Therefore, (50\u2212x\u2212y)n+yn/2=6000(50 - x - y)n + yn/2 = 6000(50\u2212x\u2212y)n+yn/2=6000   50n\u2212xn\u2212yn+yn/2=600050n - xn - yn + yn/2 = 600050n\u2212xn\u2212yn+yn/2=6000   50n\u2212xn\u2212yn/2=600050n - xn - yn/2 = 6000 50n\u2212xn\u2212yn/2=6000   100n\u22122xn\u2212yn=12000100n - 2xn - yn = 12000100n\u22122xn\u2212yn=12000   n=12000100\u22122x\u2212yn = \\frac{12000}{100-2x-y} n=100\u22122x\u2212y12000\u200b   When, x = 9 and y = 2 we get n = 150   When, x = 7 and y = 8 we get n = 153.84 which is not an integer and hence x = 7 and y = 8 cannot be the answer.   When, x = 8 and y = 24 we get n = 200   When, x = 13 and y = 24 we get n = 240   Therefore, option B is the correct answer.",
+      "full_markdown": "### Question (qid: quant-24)\n\nPassage:\nFor the following questions answer them individually\n\nA shopkeeper buys 50 earphones at Rs 100 each. After buying, he realizes that x number of earphones are not working and cannot be sold. He marks up the price of the remaining earphones to Rs. M where M is a natural number. y number of earphones are not properly packed, and hence, the shopkeeper offered a 50% discount on them. If he sells the remaining earphones at the marked price and earns a total profit of 20%, which of the following cannot be the value of x and y?\n\nOptions:\n- A. x = 9, y = 2\n- B. x = 7, y = 8 \u2705\n- C. x = 13, y = 24\n- D. x = 8 , y = 24\n\n**Solution:** Let the amount at which he sells earphones in good condition be Rs n.    Therefore, he sells (50\u2212x\u2212y)(50 - x - y )(50\u2212x\u2212y) earphones at Rs n each i.e. he earns Rs (50\u2212x\u2212y)n(50 - x - y)n(50\u2212x\u2212y)n after selling earphones in good condition also it is given that y number of earphones are not properly packed and could only be sold after giving a 50% discount. Therefore, he sells these y earphones at Rs n/2 each earning Rs yn/2. His total profit is 20%, i.e. he sells all the items at 50*100*1.2 = Rs 6000.   Therefore, (50\u2212x\u2212y)n+yn/2=6000(50 - x - y)n + yn/2 = 6000(50\u2212x\u2212y)n+yn/2=6000   50n\u2212xn\u2212yn+yn/2=600050n - xn - yn + yn/2 = 600050n\u2212xn\u2212yn+yn/2=6000   50n\u2212xn\u2212yn/2=600050n - xn - yn/2 = 6000 50n\u2212xn\u2212yn/2=6000   100n\u22122xn\u2212yn=12000100n - 2xn - yn = 12000100n\u22122xn\u2212yn=12000   n=12000100\u22122x\u2212yn = \\frac{12000}{100-2x-y} n=100\u22122x\u2212y12000\u200b   When, x = 9 and y = 2 we get n = 150   When, x = 7 and y = 8 we get n = 153.84 which is not an integer and hence x = 7 and y = 8 cannot be the answer.   When, x = 8 and y = 24 we get n = 200   When, x = 13 and y = 24 we get n = 240   Therefore, option B is the correct answer.\n\nCorrect Answer: 2",
+      "type": "quants"
+    }
+  ]
+}
