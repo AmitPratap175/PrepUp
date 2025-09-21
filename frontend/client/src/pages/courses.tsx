@@ -89,7 +89,7 @@ export default function Courses() {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex justify-center gap-2 mb-12">
+          <div className="hidden sm:flex justify-center gap-2 mb-12">
             <Button 
               variant={selectedExamType === "all" ? "default" : "outline"}
               onClick={() => setSelectedExamType("all")}
@@ -161,7 +161,7 @@ export default function Courses() {
                       ))}
                     </div>
                     
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                       <div>
                         <span className="text-2xl font-bold text-foreground">₹{course.price.toLocaleString()}</span>
                         {course.originalPrice && (

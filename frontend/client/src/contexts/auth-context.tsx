@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('auth_token');
     if (token) {
       getUser(token)
         .then((data) => {
@@ -42,20 +42,20 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           setIsAuthenticated(true);
         })
         .catch(() => {
-          localStorage.removeItem('token');
+          localStorage.removeItem('auth_token');
         });
     }
   }, []);
 
   const login = async (token: string) => {
-    localStorage.setItem('token', token);
+    localStorage.setItem('auth_token', token);
     const data = await getUser(token);
     setUser(data);
     setIsAuthenticated(true);
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem('auth_token');
     setIsAuthenticated(false);
     setUser(null);
   };

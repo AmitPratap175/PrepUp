@@ -3,7 +3,9 @@ from rest_framework import generics, status
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from dj_rest_auth.registration.views import SocialLoginView
+from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from .serializers import UserSerializer, BookmarkSerializer
 from .models import Bookmark
 
@@ -18,6 +20,7 @@ class SignupView(generics.CreateAPIView):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [AllowAny]
 
 class LoginView(APIView):
     """
@@ -113,3 +116,6 @@ class BookmarkDeleteView(generics.DestroyAPIView):
             user=self.request.user
         )
         return obj
+
+class GoogleLogin(SocialLoginView):
+    adapter_class = GoogleOAuth2Adapter

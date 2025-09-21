@@ -10,10 +10,11 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { login as loginUser } from "@/lib/auth";
+import { login as loginUser, googleLogin } from "@/lib/auth";
 import { useToast } from "@/hooks/use-toast";
 import { useLocation } from "wouter";
 import { useAuth } from "@/contexts/auth-context";
+import { useGoogleLogin } from "@react-oauth/google";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -29,7 +30,7 @@ export default function LoginPage() {
         title: "Login Successful",
         description: "You have been successfully logged in.",
       });
-      login(data.token);
+      login(data.key);
       navigate("/dashboard");
     } catch (error) {
       toast({
@@ -39,6 +40,33 @@ export default function LoginPage() {
       });
     }
   };
+
+  const handleGoogleLogin = useGoogleLogin({
+    onSuccess: async (tokenResponse) => {
+      try {
+        const data = await googleLogin(tokenResponse.access_token);
+        toast({
+          title: "Login Successful",
+          description: "You have been successfully logged in with Google.",
+        });
+        login(data.key);
+        navigate("/dashboard");
+      } catch (error) {
+        toast({
+          title: "Google Login Failed",
+          description: "Could not log in with Google. Please try again.",
+          variant: "destructive",
+        });
+      }
+    },
+    onError: () => {
+      toast({
+        title: "Google Login Failed",
+        description: "Could not log in with Google. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-950">
@@ -72,9 +100,26 @@ export default function LoginPage() {
             />
           </div>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="flex flex-col gap-4">
           <Button className="w-full" onClick={handleLogin}>
             Sign in
+          </Button>
+          <div className="relative w-full">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-card px-2 text-muted-foreground">
+                Or continue with
+              </span>
+            </div>
+          </div>
+          <Button
+            variant="outline"
+            className="w-full"
+            onClick={() => handleGoogleLogin()}
+          >
+            Sign in with Google
           </Button>
         </CardFooter>
       </Card>

@@ -73,7 +73,7 @@ export default function Dashboard() {
                     Let's get started!
                   </p>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col sm:flex-row items-center gap-4">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-foreground" data-testid="current-streak">
                       {(user as any)?.currentStreak || 0}
@@ -94,7 +94,7 @@ export default function Dashboard() {
             <CardContent className="p-6">
               <div className="grid gap-6 lg:grid-cols-3">
                 {/* Progress Overview */}
-                <div className="lg:col-span-2">
+                <div className="lg:col-span-2 order-last lg:order-none">
                   <h3 className="font-semibold text-foreground mb-4">Progress Overview</h3>
                   
                   {/* Course Progress */}
@@ -182,7 +182,7 @@ export default function Dashboard() {
                 </div>
 
                 {/* Quick Actions */}
-                <div>
+                <div className="order-first lg:order-none">
                   <h3 className="font-semibold text-foreground mb-4">Quick Actions</h3>
                   <div className="space-y-3">
                     <Link href="/practice-test">
