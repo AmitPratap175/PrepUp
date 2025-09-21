@@ -6,7 +6,7 @@ services:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
     volumes:
-      - pg_data_new:/var/lib/postgresql/data/
+      - ./pg_data:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
 
@@ -40,8 +40,11 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    depends_on:
+      - auth_server
     ports:
       - "5000:5000"
+    command: nginx -g 'daemon off;'
 
 volumes:
   pg_data_new:
