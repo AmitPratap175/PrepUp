@@ -56,6 +56,7 @@ export function AppFooter() {
               <Link href="/contact" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-contact-us">Contact Us</Link>
               <Link href="/about" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-about-us">About Us</Link>
               <Link href="/careers" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-careers">Careers</Link>
+              <Link href="/settings" className="block text-sm text-muted-foreground hover:text-foreground transition-colors" data-testid="footer-link-settings">Settings</Link>
             </div>
           </div>
 

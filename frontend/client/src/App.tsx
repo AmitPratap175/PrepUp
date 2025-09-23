@@ -30,6 +30,10 @@ import SectionalTestPage from "@/pages/sectional-test-page";
 import SectionalTestResultPage from "@/pages/sectional-test-result";
 import PracticeTestResultPage from "@/pages/practice-test-result";
 import { AuthProvider } from "@/contexts/auth-context";
+import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
+import AddQuestionPage from "@/pages/AddQuestion";
+import SettingsPage from "./pages/Settings";
+import { useEffect } from "react";
 
 function Router() {
   return (
@@ -59,22 +63,53 @@ function Router() {
       <Route path="/refund" component={Refund} />
       <Route path="/login" component={LoginPage} />
       <Route path="/signup" component={SignupPage} />
+      <Route path="/add-question" component={AddQuestionPage} />
+      <Route path="/settings" component={SettingsPage} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
 function App() {
+  const { settings } = useSettings();
+
+  useEffect(() => {
+    if (settings) {
+      const root = window.document.documentElement;
+      root.classList.remove('light', 'dark');
+      root.classList.add(settings.theme);
+
+      // remove all text size classes
+      root.classList.forEach(className => {
+        if (className.startsWith('text-')) {
+          root.classList.remove(className);
+        }
+      });
+      root.classList.add(`text-${settings.text_size}`);
+
+    }
+  }, [settings]);
+
+  return (
+    <>
+      <Toaster />
+      <Router />
+    </>
+  );
+}
+
+function WrappedApp() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <AuthProvider>
-          <Toaster />
-          <Router />
+          <SettingsProvider>
+            <App />
+          </SettingsProvider>
         </AuthProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
 }
 
-export default App;
+export default WrappedApp;

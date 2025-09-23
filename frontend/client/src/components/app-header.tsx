@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Settings } from "lucide-react";
 import { 
   DropdownMenu,
   DropdownMenuContent,
@@ -111,6 +112,15 @@ export function AppHeader() {
               </Button>
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
                 <Link href="/bookmarks">Bookmarks</Link>
+              </Button>
+              <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
+                <Link href="/add-question">Add Question</Link>
+              </Button>
+              <Button asChild variant="ghost" className="hidden sm:flex" size="icon">
+                <Link href="/settings">
+                  <Settings className="h-5 w-5" />
+                  <span className="sr-only">Settings</span>
+                </Link>
               </Button>
               <Button onClick={handleLogout} className="hidden sm:flex" size="sm">
                 Logout

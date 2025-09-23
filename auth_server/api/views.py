@@ -2,6 +2,8 @@ from django.http import JsonResponse
 from .storage import storage
 import json
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
+import uuid
 
 def courses(request):
     exam_type = request.GET.get('examType')
@@ -123,3 +125,29 @@ def user_progress_by_course(request, user_id, course_id):
         return JsonResponse(progress)
     else:
         return JsonResponse({"error": "Progress not found"}, status=404)
+
+@csrf_exempt
+def add_question_view(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            exam_type = data.get('examType')
+            subject = data.get('subject')
+            question_data = data.get('question')
+
+            if not all([exam_type, subject, question_data]):
+                return JsonResponse({"error": "Missing required fields"}, status=400)
+
+            # Add a unique qid to the question
+            question_data['qid'] = f"{subject}-{uuid.uuid4()}"
+
+            success = storage.add_question(exam_type, subject, question_data)
+
+            if success:
+                return JsonResponse({"message": "Question added successfully"}, status=201)
+            else:
+                return JsonResponse({"error": "Failed to add question"}, status=500)
+        except json.JSONDecodeError:
+            return JsonResponse({"error": "Invalid JSON"}, status=400)
+    else:
+        return JsonResponse({"error": "Only POST method is allowed"}, status=405)

@@ -8,6 +8,7 @@ import uuid
 
 class MemStorage:
     def __init__(self):
+        self.base_dir = os.path.dirname(os.path.abspath(__file__))
         self.users: Dict[str, Dict] = {}
         self.courses: Dict[str, Dict] = {}
         self.study_materials: Dict[str, Dict] = {}
@@ -146,7 +147,7 @@ class MemStorage:
         ]
 
         for test_data in practice_tests_data:
-            questions = self._load_questions_from_file(test_data["filePath"])
+            questions = self._load_questions_from_file(os.path.join(self.base_dir, '..', test_data["filePath"]))
             if questions:
                 practice_test = {
                     "id": str(uuid.uuid4()),
@@ -160,7 +161,7 @@ class MemStorage:
                 self.practice_tests[practice_test["id"]] = practice_test
 
         # Seed mock tests from JSON files
-        mock_test_dir = 'data/cat/mocks'
+        mock_test_dir = os.path.join(self.base_dir, '..', 'data/cat/mocks')
         if os.path.exists(mock_test_dir):
             for file_name in os.listdir(mock_test_dir):
                 if file_name.startswith('mock-test-') and file_name.endswith('.json'):
@@ -184,7 +185,7 @@ class MemStorage:
                         print(f"Failed to load mock test from {file_path}: {e}")
 
         # Seed sectional tests from JSON files
-        sectional_test_dir = 'data/cat/sectionals'
+        sectional_test_dir = os.path.join(self.base_dir, '..', 'data/cat/sectionals')
         sectional_test_types = ['varc', 'dilr', 'quants']
         if os.path.exists(sectional_test_dir):
             for test_type in sectional_test_types:
@@ -304,5 +305,34 @@ class MemStorage:
             if p["userId"] == user_id and p["courseId"] == course_id:
                 return p
         return None
+
+    def add_question(self, exam_type: str, subject: str, question_data: Dict) -> bool:
+        file_path = os.path.join(self.base_dir, '..', f"data/{exam_type}/{subject.lower().replace(' ', '-')}.json")
+        if not os.path.exists(os.path.dirname(file_path)):
+            os.makedirs(os.path.dirname(file_path))
+
+        try:
+            if os.path.exists(file_path):
+                with open(file_path, 'r+') as f:
+                    data = json.load(f)
+                    questions = data.get("questions", [])
+            else:
+                data = {}
+                questions = []
+
+            questions.append(question_data)
+            data["questions"] = questions
+
+            with open(file_path, 'w') as f:
+                json.dump(data, f, indent=2)
+
+            # Reload the practice tests to reflect the new question
+            self.practice_tests = {}
+            self.seed_data() # This is a simple way to reload, might be inefficient
+
+            return True
+        except (IOError, json.JSONDecodeError) as e:
+            print(f"Failed to add question to {file_path}: {e}")
+            return False
 
 storage = MemStorage()
