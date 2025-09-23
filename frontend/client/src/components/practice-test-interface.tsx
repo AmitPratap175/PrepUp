@@ -137,13 +137,22 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   return (
     <div className="flex flex-col h-screen bg-background">
       {/* Test Header (Sticky) */}
-      <div className="bg-muted/50 p-6 border-b border-border">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div className="bg-muted/50 p-4 sm:p-6 border-b border-border">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h3 className="text-xl font-bold text-foreground">{test.title}</h3>
-            <p className="text-sm text-muted-foreground">{test.subject} Section</p>
+            <h3 className="text-lg sm:text-xl font-bold text-foreground">{test.title}</h3>
+            <p className="text-xs sm:text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
+              className="lg:hidden"
+            >
+              <PanelLeftClose className="h-4 w-4" />
+              <span className="sr-only">Toggle Palette</span>
+            </Button>
             <Button 
               variant="outline" 
               size="sm"
@@ -178,12 +187,12 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 flex-col lg:flex-row overflow-hidden">
         {/* Question Navigation (Scrollable) */}
         {isPaletteVisible && (
-          <div className="lg:w-1/8 bg-muted/30 p-6 border-r border-border overflow-y-auto">
+          <div className="w-full lg:w-1/4 xl:w-1/5 bg-muted/30 p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
+            <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-6 gap-2 mb-6">
               {questions.map((_, index) => {
                 const status = getQuestionStatus(index);
                 return (
@@ -228,7 +237,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
         )}
 
         {/* Question Content (Scrollable) */}
-        <div className="flex-1 flex flex-col p-8 overflow-hidden">
+        <div className="flex-1 flex flex-col p-4 sm:p-6 lg:p-8 overflow-hidden">
           <div className="flex items-center justify-between mb-4">
             <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
               Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
@@ -238,9 +247,9 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
             </span>
           </div>
 
-          <div className="flex-1 flex overflow-hidden">
+          <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">
             {(hasPassage || currentQuestion.image_url) && (
-              <div className="w-[65%] pr-4 overflow-y-auto">
+              <div className="w-full xl:w-[60%] pr-4 overflow-y-auto">
                 <div className="bg-muted/50 p-4 rounded-lg h-full">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
                   {hasPassage && (
@@ -259,7 +268,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               </div>
             )}
 
-            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-[35%] pl-4' : 'w-full'} overflow-y-auto`}>
+            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
               <div className="prose max-w-none mb-6">
                 <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
                   <Latex>{currentQuestion.question_text}</Latex>
@@ -315,8 +324,8 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
             </div>
           </div>
 
-          <div className="flex justify-between pt-6 border-t border-border">
-            <div className="space-x-3">
+          <div className="flex flex-col sm:flex-row justify-between pt-4 sm:pt-6 border-t border-border gap-4">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Button 
                 variant="outline" 
                 onClick={handleClearResponse}
@@ -334,7 +343,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
                 {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
               </Button>
             </div>
-            <div className="space-x-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Button 
                 variant="outline" 
                 onClick={handlePrevious}

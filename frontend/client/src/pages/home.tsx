@@ -70,7 +70,7 @@ export default function Home() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[80vh] sm:min-h-[70vh] flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/50 to-white/70"
             style={{
@@ -80,14 +80,14 @@ export default function Home() {
             }}
           />
           
-          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6">
-              <span className="backdrop-blur-md bg-white/30 rounded-lg px-4 py-2 text-black">
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tighter mb-6">
+              <span className="backdrop-blur-md bg-white/30 rounded-lg px-3 sm:px-4 py-2 text-black">
                 Ace Your Exams with <span className="font-bold">PrepUp</span>
               </span>
             </h1>
-            <div className="backdrop-blur-md bg-white/30 rounded-lg px-6 py-3 inline-block mb-8">
-              <p className="max-w-2xl text-lg md:text-xl text-black">
+            <div className="backdrop-blur-md bg-white/30 rounded-lg px-4 sm:px-6 py-3 inline-block mb-8">
+              <p className="max-w-2xl text-base sm:text-lg md:text-xl text-black">
                 Prepare for CAT and GATE exams with our comprehensive study materials, practice tests, and expert guidance. Join thousands of successful students who have achieved their goals with PrepUp.
               </p>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           
           {/* Floating stats cards */}
-          <div className="absolute bottom-8 left-8 right-8 hidden lg:flex justify-between">
+          <div className="absolute bottom-4 sm:bottom-8 left-4 right-4 sm:left-8 sm:right-8 hidden md:flex justify-center md:justify-between gap-4">
             <Card className="bg-card/90 backdrop-blur-sm">
               <CardContent className="p-4">
                 <div className="text-2xl font-bold text-primary" data-testid="stat-students">25,000+</div>
@@ -134,18 +134,18 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-20 px-4 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
                 Why Choose PrepUp?
               </h2>
-              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+              <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground">
                 PrepUp offers a unique blend of features designed to maximize your exam preparation efficiency and effectiveness.
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-20">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-16 sm:mb-20">
               <Card className="group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 hover-elevate">
                 <CardContent className="p-6">
                   <div className="flex size-12 items-center justify-center rounded-full bg-accent text-primary mb-4">
@@ -190,19 +190,19 @@ export default function Home() {
         </section>
 
         {/* Community Initiative Section */}
-        <section className="py-20 px-4 lg:px-8 bg-gradient-to-br from-primary/5 to-accent/10">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-accent/10">
+          <div className="container mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
                 Our Initiative: Learn More, Earn More
               </h2>
-              <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
+              <p className="max-w-3xl mx-auto text-base sm:text-lg text-muted-foreground">
                 We build a collaborative exam-preparation community where every contribution matters and everyone benefits.
               </p>
             </div>
 
             {/* How it Works */}
-            <div className="grid gap-8 md:grid-cols-3 mb-16">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12 sm:mb-16">
               <Card className="text-center hover-elevate">
                 <CardContent className="p-8">
                   <div className="flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary mx-auto mb-6">
@@ -241,10 +241,10 @@ export default function Home() {
             </div>
 
             {/* Star System Features */}
-            <div className="grid gap-8 lg:grid-cols-2 mb-16">
+            <div className="grid gap-8 md:grid-cols-2 mb-12 sm:mb-16">
               <Card className="hover-elevate">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
+                  <CardTitle className="flex items-center gap-2 sm:gap-3">
                     <span className="material-symbols-outlined text-primary">military_tech</span>
                     Levels & Badges
                   </CardTitle>
@@ -269,7 +269,7 @@ export default function Home() {
 
               <Card className="hover-elevate">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
+                  <CardTitle className="flex items-center gap-2 sm:gap-3">
                     <span className="material-symbols-outlined text-primary">workspace_premium</span>
                     Collaboration Benefits
                   </CardTitle>
@@ -299,12 +299,12 @@ export default function Home() {
 
             {/* Community Challenges */}
             <Card className="bg-gradient-to-br from-primary/10 to-accent/20 border-primary/20 hover-elevate">
-              <CardContent className="p-8 text-center">
-                <span className="material-symbols-outlined text-4xl text-primary mb-4 block">
+              <CardContent className="p-6 sm:p-8 text-center">
+                <span className="material-symbols-outlined text-3xl sm:text-4xl text-primary mb-4 block">
                   emoji_events
                 </span>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Community Challenges & Milestones</h3>
-                <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">Community Challenges & Milestones</h3>
+                <p className="text-muted-foreground mb-6 max-w-3xl mx-auto text-sm sm:text-base">
                   Participate in topic-focused challenges and achieve milestones to earn rewards. From advanced study tips to curated problem sets, every contribution is recognized and celebrated in our collaborative learning environment.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -321,18 +321,18 @@ export default function Home() {
         </section>
 
         {/* Courses Section */}
-        <section className="py-20 px-4 lg:px-8 bg-muted/30">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+          <div className="container mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
                 Our Popular Courses
               </h2>
-              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+              <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground">
                 Comprehensive preparation courses designed by experts to help you succeed in your target exam.
               </p>
             </div>
 
-            <div className="grid gap-8 lg:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-2">
               {courses?.map((course) => (
                 <Card key={course.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden hover-elevate">
                   {course.imageUrl && (
@@ -349,9 +349,9 @@ export default function Home() {
                       )}
                     </div>
                   )}
-                  <CardContent className="p-8">
-                    <CardTitle className="text-2xl mb-3">{course.title}</CardTitle>
-                    <CardDescription className="mb-6">{course.description}</CardDescription>
+                  <CardContent className="p-6 sm:p-8">
+                    <CardTitle className="text-xl sm:text-2xl mb-3">{course.title}</CardTitle>
+                    <CardDescription className="mb-6 text-sm sm:text-base">{course.description}</CardDescription>
                     
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-sm">
@@ -368,9 +368,9 @@ export default function Home() {
                       ))}
                     </div>
                     
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                       <div>
-                        <span className="text-2xl font-bold text-foreground">₹{course.price.toLocaleString()}</span>
+                        <span className="text-xl sm:text-2xl font-bold text-foreground">₹{course.price.toLocaleString()}</span>
                         {course.originalPrice && (
                           <span className="text-sm text-muted-foreground line-through ml-2">₹{course.originalPrice.toLocaleString()}</span>
                         )}
@@ -390,18 +390,18 @@ export default function Home() {
         </section>
 
         {/* Study Materials Preview */}
-        <section className="py-20 px-4 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
                 Study Materials Library
               </h2>
-              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+              <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground">
                 Access comprehensive study materials organized by subjects and difficulty levels.
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-12">
               {displayedMaterials.map((material) => (
                 <Card key={material.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden hover-elevate">
                   {material.imageUrl && (
@@ -422,7 +422,7 @@ export default function Home() {
                       </Badge>
                     </div>
                   )}
-                  <CardContent className="p-6">
+                  <CardContent className="p-4 sm:p-6">
                     <div className="flex items-center gap-2 mb-2">
                       <Badge variant="secondary" className="text-xs">
                         {material.examType.toUpperCase()}
@@ -431,10 +431,10 @@ export default function Home() {
                         {material.subject}
                       </Badge>
                     </div>
-                    <CardTitle className="mb-2">{material.title}</CardTitle>
-                    <CardDescription className="mb-4">{material.description}</CardDescription>
+                    <CardTitle className="text-base sm:text-lg mb-2">{material.title}</CardTitle>
+                    <CardDescription className="text-sm mb-4">{material.description}</CardDescription>
                     
-                    <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs sm:text-sm text-muted-foreground mb-4 gap-2">
                       <div className="flex items-center gap-1">
                         <span className="material-symbols-outlined text-sm">description</span>
                         <span>{material.pages} Pages</span>
@@ -467,12 +467,12 @@ export default function Home() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-20 px-4 lg:px-8 bg-gradient-to-br from-primary/10 to-accent/20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 to-accent/20">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
               Ready to Take the Next Step?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8">
               Begin your journey to exam success with a free trial of PrepUp. Explore our features and experience the difference.
             </p>
             
@@ -525,7 +525,7 @@ export default function Home() {
             </Card>
 
             {/* Trust Indicators */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary">security</span>
                 <span>100% Secure & Private</span>

@@ -91,19 +91,19 @@ export default function PracticeTestPage() {
     <div className="min-h-screen bg-background">
       <AppHeader />
       
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
               Practice Tests
             </h1>
-            <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground">
               Test your knowledge with our comprehensive practice tests designed to simulate real exam conditions.
             </p>
           </div>
 
           {practiceTests && practiceTests.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {practiceTests.map((test) => (
                 <Card key={test.id} className="hover:shadow-lg transition-all duration-300 hover-elevate">
                   <CardHeader>
@@ -115,23 +115,23 @@ export default function PracticeTestPage() {
                         {test.duration} mins
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl">{test.title}</CardTitle>
+                    <CardTitle className="text-lg sm:text-xl">{test.title}</CardTitle>
                     <CardDescription>
                       {test.subject} • {test.totalQuestions} Questions
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-3 mb-6">
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">schedule</span>
+                    <div className="space-y-3 mb-6 text-sm">
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-primary text-base">schedule</span>
                         <span>{test.duration} minutes</span>
                       </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">quiz</span>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-primary text-base">quiz</span>
                         <span>{test.totalQuestions} questions</span>
                       </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">subject</span>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-primary text-base">subject</span>
                         <span>{test.subject}</span>
                       </div>
                     </div>

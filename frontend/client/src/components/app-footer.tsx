@@ -3,10 +3,10 @@ import { Link } from "wouter";
 export function AppFooter() {
   return (
     <footer className="bg-muted/50 border-t border-border">
-      <div className="max-w-6xl mx-auto px-4 py-12 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
-          <div className="md:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 text-foreground mb-4">
               <span className="material-symbols-outlined text-2xl text-primary">school</span>
               <h3 className="text-lg font-bold">PrepUp</h3>
@@ -72,8 +72,8 @@ export function AppFooter() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 mt-8 text-center">
-          <p className="text-sm text-muted-foreground">
+        <div className="border-t border-border pt-6 mt-8 text-center sm:text-left">
+          <p className="text-xs sm:text-sm text-muted-foreground">
             © 2024 PrepUp. All rights reserved. Made with ❤️ for students.
           </p>
         </div>
