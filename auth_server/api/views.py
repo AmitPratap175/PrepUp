@@ -3,7 +3,6 @@ from .storage import storage
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
-from .decorators import token_required
 import uuid
 
 def courses(request):
@@ -127,7 +126,6 @@ def user_progress_by_course(request, user_id, course_id):
     else:
         return JsonResponse({"error": "Progress not found"}, status=404)
 
-@token_required
 @csrf_exempt
 def add_question_view(request):
     if request.method == 'POST':
