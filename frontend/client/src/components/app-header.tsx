@@ -53,13 +53,13 @@ export function AppHeader() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-3 text-foreground hover-elevate">
-          <span className="material-symbols-outlined text-3xl text-primary">school</span>
-          <h2 className="text-xl font-bold leading-tight tracking-[-0.015em]">PrepUp</h2>
+      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3 text-foreground hover-elevate">
+          <span className="material-symbols-outlined text-2xl sm:text-3xl text-primary">school</span>
+          <h2 className="text-lg sm:text-xl font-bold leading-tight tracking-[-0.015em]">PrepUp</h2>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navigation.map((item) => (
             item.items ? (
               <DropdownMenu key={item.title}>
@@ -140,45 +140,81 @@ export function AppHeader() {
           {/* Mobile menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden" data-testid="button-mobile-menu">
+              <Button variant="ghost" size="icon" className="lg:hidden" data-testid="button-mobile-menu">
                 <span className="material-symbols-outlined">menu</span>
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col gap-4">
-                {navigation.map((item) => (
-                  <div key={item.title}>
-                    {item.items ? (
-                      <div>
-                        <div className="font-medium text-foreground mb-2">{item.title}</div>
-                        <div className="ml-4 space-y-2">
-                          {item.items.map((subItem) => (
-                            <Link
-                              key={subItem.href}
-                              href={subItem.href}
-                              className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                              onClick={() => setMobileMenuOpen(false)}
-                              data-testid={`mobile-nav-link-${subItem.title.toLowerCase().replace(/\s+/g, '-')}`}
-                            >
-                              {subItem.title}
-                            </Link>
-                          ))}
+              <div className="p-4">
+                <h2 className="text-lg font-semibold mb-4">Menu</h2>
+                <nav className="flex flex-col gap-4">
+                  {navigation.map((item) => (
+                    <div key={item.title}>
+                      {item.items ? (
+                        <div>
+                          <div className="font-medium text-foreground mb-2">{item.title}</div>
+                          <div className="ml-4 space-y-2">
+                            {item.items.map((subItem) => (
+                              <Link
+                                key={subItem.href}
+                                href={subItem.href}
+                                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                onClick={() => setMobileMenuOpen(false)}
+                                data-testid={`mobile-nav-link-${subItem.title.toLowerCase().replace(/\s+/g, '-')}`}
+                              >
+                                {subItem.title}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    ) : (
-                      <Link
-                        href={item.href}
-                        className="block text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
-                        onClick={() => setMobileMenuOpen(false)}
-                        data-testid={`mobile-nav-link-${item.title.toLowerCase().replace(/\s+/g, '-')}`}
-                      >
-                        {item.title}
-                      </Link>
-                    )}
-                  </div>
-                ))}
-              </nav>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className="block text-sm font-medium text-foreground hover:text-muted-foreground transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                          data-testid={`mobile-nav-link-${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+                        >
+                          {item.title}
+                        </Link>
+                      )}
+                    </div>
+                  ))}
+                </nav>
+                <div className="mt-6 pt-6 border-t">
+                  {isAuthenticated ? (
+                    <div className="flex flex-col gap-2">
+                      <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/dashboard">Dashboard</Link>
+                      </Button>
+                      <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/bookmarks">Bookmarks</Link>
+                      </Button>
+                      <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/add-question">Add Question</Link>
+                      </Button>
+                      <Button asChild variant="ghost" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/settings" className="flex items-center gap-2">
+                          <Settings className="h-5 w-5" />
+                          Settings
+                        </Link>
+                      </Button>
+                      <Button onClick={() => { handleLogout(); setMobileMenuOpen(false); }} size="sm">
+                        Logout
+                      </Button>
+                    </div>
+                  ) : (
+                    <div className="flex flex-col gap-2">
+                       <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/login" data-testid="button-login">Login</Link>
+                      </Button>
+                      <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                        <Link href="/signup" data-testid="button-get-started">Sign Up</Link>
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
