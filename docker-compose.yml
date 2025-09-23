@@ -17,7 +17,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./frontend/data:/app/frontend/data:ro
+      - ./auth_server/data/cat:/app/data/cat:z
     environment:
       - DB_HOST=postgres
       - DB_NAME=auth_db
