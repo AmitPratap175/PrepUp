@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
-import { Question, SubjectType } from '../types/Question'; // Assuming the types file will be created
-import { useAuth } from '@/contexts/auth-context'; // To get the auth token
+import { useAuth } from '@/contexts/auth-context';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { AppHeader } from "@/components/app-header";
+import { AppFooter } from "@/components/app-footer";
+import { Question } from '@/types/Question';
 
 const AddQuestionPage: React.FC = () => {
   const { token } = useAuth();
@@ -68,7 +77,7 @@ const AddQuestionPage: React.FC = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`, // Assuming Bearer token auth
+          'Authorization': `Bearer ${token}`,
         },
         body: JSON.stringify({
           examType,
@@ -90,71 +99,102 @@ const AddQuestionPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-3xl w-full mx-auto my-8">
-        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Add New Question</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block mb-2 text-gray-700 dark:text-gray-300">Exam Type</label>
-              <select value={examType} onChange={(e) => setExamType(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600">
-                <option value="cat">CAT</option>
-                <option value="gate">GATE</option>
-              </select>
-            </div>
-             <div>
-              <label className="block mb-2 text-gray-700 dark:text-gray-300">Subject*</label>
-              <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" placeholder="e.g., quantitative-aptitude" required />
-            </div>
-          </div>
-
-          <div className="mt-4">
-            <label className="block mb-2 text-gray-700 dark:text-gray-300">Passage (optional)</label>
-            <textarea value={passageText} onChange={(e) => setPassageText(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" rows={3}></textarea>
-          </div>
-
-          <div className="mt-4">
-            <label className="block mb-2 text-gray-700 dark:text-gray-300">Question Text*</label>
-            <textarea value={questionText} onChange={(e) => setQuestionText(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" rows={3} required></textarea>
-          </div>
-
-          <div className="mt-4">
-            <label className="flex items-center text-gray-700 dark:text-gray-300">
-              <input type="checkbox" checked={isOptionsDisabled} onChange={() => setIsOptionsDisabled(!isOptionsDisabled)} className="mr-2" />
-              Provide correct answer directly (no options)
-            </label>
-          </div>
-
-          {isOptionsDisabled ? (
-            <div className="mt-4">
-              <label className="block mb-2 text-gray-700 dark:text-gray-300">Correct Answer Data*</label>
-              <input type="text" value={correctOptionData} onChange={(e) => setCorrectOptionData(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" required />
-            </div>
-          ) : (
-            <div className="mt-4">
-              <label className="block mb-2 text-gray-700 dark:text-gray-300">Options*</label>
-              {options.map((option, index) => (
-                <div key={index} className="flex items-center mb-2">
-                  <input type="radio" name="correctOption" checked={correctOptionIndex === index} onChange={() => setCorrectOptionIndex(index)} className="mr-2" />
-                  <input type="text" value={option} onChange={(e) => handleOptionChange(index, e.target.value)} placeholder={`Option ${String.fromCharCode(65 + index)}`} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" required />
-                  <button type="button" onClick={() => handleRemoveOption(index)} className="ml-2 px-2 py-1 bg-red-600 rounded text-white">-</button>
+    <div className="min-h-screen bg-background">
+      <AppHeader />
+      <main className="container mx-auto px-4 py-8">
+        <Card className="max-w-3xl mx-auto">
+          <CardHeader>
+            <CardTitle>Add New Question</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="examType">Exam Type</Label>
+                  <Select value={examType} onValueChange={setExamType}>
+                    <SelectTrigger id="examType">
+                      <SelectValue placeholder="Select exam type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="cat">CAT</SelectItem>
+                      <SelectItem value="gate">GATE</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
-              ))}
-              <button type="button" onClick={handleAddOption} className="mt-2 px-4 py-2 bg-green-600 rounded text-white">Add Option</button>
-            </div>
-          )}
+                <div className="space-y-2">
+                  <Label htmlFor="subject">Subject*</Label>
+                  <Select value={subject} onValueChange={setSubject} required>
+                    <SelectTrigger id="subject">
+                      <SelectValue placeholder="Select a subject" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {examType === 'cat' && (
+                        <>
+                          <SelectItem value="data-interpretation">Data Interpretation</SelectItem>
+                          <SelectItem value="quantitative-aptitude">Quantitative Aptitude</SelectItem>
+                          <SelectItem value="verbal-ability">Verbal Ability</SelectItem>
+                        </>
+                      )}
+                      {examType === 'gate' && (
+                        <>
+                          <SelectItem value="computer-science">Computer Science</SelectItem>
+                          <SelectItem value="general-aptitude">General Aptitude</SelectItem>
+                          <SelectItem value="mathematics">Mathematics</SelectItem>
+                        </>
+                      )}
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
 
-          <div className="mt-4">
-            <label className="block mb-2 text-gray-700 dark:text-gray-300">Solution (optional)</label>
-            <textarea value={solutionText} onChange={(e) => setSolutionText(e.target.value)} className="w-full p-2 rounded bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" rows={3}></textarea>
-          </div>
+              <div className="space-y-2">
+                <Label htmlFor="passageText">Passage (optional)</Label>
+                <Textarea id="passageText" value={passageText} onChange={(e) => setPassageText(e.target.value)} rows={3} />
+              </div>
 
-          <div className="flex justify-end space-x-4 mt-6">
-            <button type="submit" className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-500 text-white">Add Question</button>
-          </div>
-        </form>
-        {message && <p className="mt-4 text-center">{message}</p>}
-      </div>
+              <div className="space-y-2">
+                <Label htmlFor="questionText">Question Text*</Label>
+                <Textarea id="questionText" value={questionText} onChange={(e) => setQuestionText(e.target.value)} rows={3} required />
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <Checkbox id="isOptionsDisabled" checked={isOptionsDisabled} onCheckedChange={() => setIsOptionsDisabled(!isOptionsDisabled)} />
+                <Label htmlFor="isOptionsDisabled">Provide correct answer directly (no options)</Label>
+              </div>
+
+              {isOptionsDisabled ? (
+                <div className="space-y-2">
+                  <Label htmlFor="correctOptionData">Correct Answer Data*</Label>
+                  <Input id="correctOptionData" type="text" value={correctOptionData} onChange={(e) => setCorrectOptionData(e.target.value)} required />
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <Label>Options*</Label>
+                  {options.map((option, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <input type="radio" name="correctOption" checked={correctOptionIndex === index} onChange={() => setCorrectOptionIndex(index)} />
+                      <Input type="text" value={option} onChange={(e) => handleOptionChange(index, e.target.value)} placeholder={`Option ${String.fromCharCode(65 + index)}`} required />
+                      <Button type="button" variant="destructive" size="sm" onClick={() => handleRemoveOption(index)}>-</Button>
+                    </div>
+                  ))}
+                  <Button type="button" variant="outline" size="sm" onClick={handleAddOption}>Add Option</Button>
+                </div>
+              )}
+
+              <div className="space-y-2">
+                <Label htmlFor="solutionText">Solution (optional)</Label>
+                <Textarea id="solutionText" value={solutionText} onChange={(e) => setSolutionText(e.target.value)} rows={3} />
+              </div>
+
+              <div className="flex justify-end">
+                <Button type="submit">Add Question</Button>
+              </div>
+            </form>
+            {message && <p className="mt-4 text-center text-sm text-muted-foreground">{message}</p>}
+          </CardContent>
+        </Card>
+      </main>
+      <AppFooter />
     </div>
   );
 };

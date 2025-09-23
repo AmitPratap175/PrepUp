@@ -11,6 +11,17 @@ This is a full-stack educational platform with a Django backend and a React fron
 - Study materials
 - And more!
 
+## Settings
+
+The application now includes a comprehensive settings page that allows users to customize their experience. To access the settings page, log in and click the settings icon in the header.
+
+### Available Settings
+
+- **Display Settings**: Customize the application's appearance, including theme, text size, font family, and color scheme.
+- **Quiz Preferences**: Adjust quiz-related settings, such as auto-advancing questions, showing the timer, and enabling timer warnings.
+- **Accessibility**: Improve usability with high-contrast mode, reduced animations, and other accessibility features.
+- **Notifications**: Manage email notifications for progress reminders and achievements.
+
 ## Adding Questions
 
 A new feature has been added to allow logged-in users to add new questions to the question bank.
