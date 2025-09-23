@@ -87,6 +87,13 @@ def main() -> None:
         # Assumes filename format like 'final_quant.json'.
         name = file_path.stem.split("_")[-1]
 
+        if name[0] == "q":
+            name = 'quant'
+        elif name[0] == "d":
+            name = 'dilr'
+        else:
+            name = 'varc'
+
         try:
             # Get the list of questions from the loaded data.
             questions = get_questions_container(data)

@@ -217,7 +217,7 @@ def parse_html_to_questions(html: str) -> Dict:
 
 def main(categorized_html: Dict[str, List[str]]):
     """Main function orchestrating the data processing workflow."""
-    strings = {"quant":"quant", "verbal":"varc", "reasoning":"dilr"}
+    strings = {"quant":"quantitative-aptitude", "verbal":"verbal-ability", "reasoning":"data-interpretation"}
     
     # --- Path Definitions ---
     # Define paths relative to this script's location for portability.
@@ -227,7 +227,7 @@ def main(categorized_html: Dict[str, List[str]]):
     # Directory for storing intermediate JSON files before they are cleaned.
     intermediate_dir = script_dir.parent / "temp_json"
     # Final destination for the cleaned JSON files for the frontend.
-    final_destination_dir = project_root / "frontend" / "src" / "data"
+    final_destination_dir = project_root / "auth_server/data/cat"
     os.makedirs(intermediate_dir, exist_ok=True)
 
     # --- Step 1: Parse HTML and Save Intermediate JSON ---
@@ -248,11 +248,12 @@ def main(categorized_html: Dict[str, List[str]]):
                 sys.stderr.write(f"ERROR parsing {name}: {e}\n")
 
         output_obj = {"questions": all_questions}
-        intermediate_path = intermediate_dir / f"final_{subject_alias}.json"
+        intermediate_path = intermediate_dir / f"{subject_alias}.json"
+        final_path_file = final_destination_dir / f"{subject_alias}.json"
 
         # Append new questions to existing intermediate file if it exists.
-        if intermediate_path.exists():
-            with open(intermediate_path, "r", encoding="utf-8") as file:
+        if final_path_file.exists():
+            with open(final_path_file, "r", encoding="utf-8") as file:
                 data = json.load(file)
             final_data = {"questions": data.get("questions", []) + output_obj.get("questions")}
         else:
