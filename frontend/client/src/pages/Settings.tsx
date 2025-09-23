@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Save, Loader2, Monitor, Timer, Eye, Bell } from 'lucide-react';
-import { useLocation } from "wouter";
+import { Save, Loader2, Monitor, Timer, Eye, Bell } from 'lucide-react';
 import { useSettings } from '../contexts/SettingsContext';
 import { UserSettings } from '../services/api';
+import { AppHeader } from "@/components/app-header";
+import { AppFooter } from "@/components/app-footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 const SettingsPage: React.FC = () => {
   const { settings, updateSettings, loading } = useSettings();
   const [localSettings, setLocalSettings] = useState<UserSettings | null>(null);
   const [saving, setSaving] = useState(false);
   const [savedMessage, setSavedMessage] = useState('');
-  const [, setLocation] = useLocation();
 
   useEffect(() => {
     if (settings) {
@@ -37,234 +42,223 @@ const SettingsPage: React.FC = () => {
 
   if (loading || !localSettings) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
+      <div className="flex items-center justify-center min-h-screen bg-background">
         <Loader2 className="h-8 w-8 animate-spin" />
       </div>
     );
   }
 
-  const SettingSection: React.FC<{ title: string; icon: React.ReactNode; children: React.ReactNode }> = ({ title, icon, children }) => (
-    <div className="bg-gray-800/40 rounded-xl p-6 space-y-4">
-      <div className="flex items-center space-x-3">
-        {icon}
-        <h3 className="text-xl font-semibold text-white">{title}</h3>
-      </div>
-      {children}
-    </div>
-  );
-
-  const ToggleSwitch: React.FC<{ checked: boolean; onChange: (checked: boolean) => void; label: string; description?: string }> = ({ checked, onChange, label, description }) => (
-    <div className="flex items-center justify-between">
-      <div>
-        <label className="text-white font-medium">{label}</label>
-        {description && <p className="text-sm text-gray-400">{description}</p>}
-      </div>
-      <button
-        onClick={() => onChange(!checked)}
-        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-          checked ? 'bg-blue-600' : 'bg-gray-600'
-        }`}
-      >
-        <span
-          className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-            checked ? 'translate-x-6' : 'translate-x-1'
-          }`}
-        />
-      </button>
-    </div>
-  );
-
-  const SelectField: React.FC<{ value: string; onChange: (value: string) => void; options: { value: string; label: string }[]; label: string }> = ({ value, onChange, options, label }) => (
-    <div>
-      <label className="block text-white font-medium mb-2">{label}</label>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        {options.map(option => (
-          <option key={option.value} value={option.value}>{option.label}</option>
-        ))}
-      </select>
-    </div>
-  );
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white p-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setLocation('/')}
-              className="p-2 hover:bg-gray-800/50 rounded-lg transition-colors"
-            >
-              <ArrowLeft className="h-6 w-6" />
-            </button>
+    <div className="min-h-screen bg-background">
+      <AppHeader />
+      <main className="container mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-8">
             <h1 className="text-3xl font-bold">Settings</h1>
+            <Button
+              onClick={handleSave}
+              disabled={saving || loading}
+            >
+              {saving ? <Loader2 className="h-5 w-5 animate-spin" /> : <Save className="h-5 w-5" />}
+              <span className="ml-2">{saving ? 'Saving...' : 'Save Changes'}</span>
+            </Button>
           </div>
-          <button
-            onClick={handleSave}
-            disabled={saving || loading}
-            className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors disabled:opacity-50"
-          >
-            {saving ? <Loader2 className="h-5 w-5 animate-spin" /> : <Save className="h-5 w-5" />}
-            <span>{saving ? 'Saving...' : 'Save Changes'}</span>
-          </button>
-        </div>
 
-        {savedMessage && (
-          <div className="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400">
-            {savedMessage}
+          {savedMessage && (
+            <div className="mb-6 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400">
+              {savedMessage}
+            </div>
+          )}
+
+          <div className="space-y-6">
+            {/* Display Settings */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center"><Monitor className="h-6 w-6 mr-2 text-primary" /> Display Settings</CardTitle>
+                <CardDescription>Customize the look and feel of the application.</CardDescription>
+              </CardHeader>
+              <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <Label>Theme</Label>
+                  <Select value={localSettings.theme} onValueChange={(value) => updateLocalSetting('theme', value as any)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select theme" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="light">Light</SelectItem>
+                      <SelectItem value="dark">Dark</SelectItem>
+                      <SelectItem value="auto">Auto (System)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Text Size</Label>
+                  <Select value={localSettings.text_size} onValueChange={(value) => updateLocalSetting('text_size', value as any)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select text size" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="xs">Extra Small</SelectItem>
+                      <SelectItem value="sm">Small</SelectItem>
+                      <SelectItem value="md">Medium</SelectItem>
+                      <SelectItem value="lg">Large</SelectItem>
+                      <SelectItem value="xl">Extra Large</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Font Family</Label>
+                  <Select value={localSettings.font_family} onValueChange={(value) => updateLocalSetting('font_family', value as any)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select font family" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="inter">Inter</SelectItem>
+                      <SelectItem value="roboto">Roboto</SelectItem>
+                      <SelectItem value="open-sans">Open Sans</SelectItem>
+                      <SelectItem value="lato">Lato</SelectItem>
+                      <SelectItem value="poppins">Poppins</SelectItem>
+                      <SelectItem value="source-sans">Source Sans Pro</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Color Scheme</Label>
+                  <Select value={localSettings.color_scheme} onValueChange={(value) => updateLocalSetting('color_scheme', value as any)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select color scheme" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="blue">Blue</SelectItem>
+                      <SelectItem value="green">Green</SelectItem>
+                      <SelectItem value="purple">Purple</SelectItem>
+                      <SelectItem value="red">Red</SelectItem>
+                      <SelectItem value="orange">Orange</SelectItem>
+                      <SelectItem value="pink">Pink</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Quiz Settings */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center"><Timer className="h-6 w-6 mr-2 text-primary" /> Quiz Preferences</CardTitle>
+                <CardDescription>Manage your quiz experience.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Auto Advance</Label>
+                    <p className="text-sm text-muted-foreground">Automatically move to next question after answering</p>
+                  </div>
+                  <Switch checked={localSettings.auto_advance} onCheckedChange={(checked) => updateLocalSetting('auto_advance', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Show Timer</Label>
+                    <p className="text-sm text-muted-foreground">Display quiz timer</p>
+                  </div>
+                  <Switch checked={localSettings.show_timer} onCheckedChange={(checked) => updateLocalSetting('show_timer', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Timer Warnings</Label>
+                    <p className="text-sm text-muted-foreground">Show alerts when time is running low</p>
+                  </div>
+                  <Switch checked={localSettings.timer_warnings} onCheckedChange={(checked) => updateLocalSetting('timer_warnings', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Show Progress Bar</Label>
+                    <p className="text-sm text-muted-foreground">Display progress through quiz</p>
+                  </div>
+                  <Switch checked={localSettings.show_progress_bar} onCheckedChange={(checked) => updateLocalSetting('show_progress_bar', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Confirm Answer Changes</Label>
+                    <p className="text-sm text-muted-foreground">Ask for confirmation when changing answers</p>
+                  </div>
+                  <Switch checked={localSettings.confirm_answer_change} onCheckedChange={(checked) => updateLocalSetting('confirm_answer_change', checked)} />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Accessibility Settings */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center"><Eye className="h-6 w-6 mr-2 text-primary" /> Accessibility</CardTitle>
+                <CardDescription>Make the application easier to use.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>High Contrast</Label>
+                    <p className="text-sm text-muted-foreground">Increase contrast for better visibility</p>
+                  </div>
+                  <Switch checked={localSettings.high_contrast} onCheckedChange={(checked) => updateLocalSetting('high_contrast', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Reduce Animations</Label>
+                    <p className="text-sm text-muted-foreground">Minimize motion effects</p>
+                  </div>
+                  <Switch checked={localSettings.reduce_animations} onCheckedChange={(checked) => updateLocalSetting('reduce_animations', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Keyboard Navigation</Label>
+                    <p className="text-sm text-muted-foreground">Enable keyboard shortcuts</p>
+                  </div>
+                  <Switch checked={localSettings.keyboard_navigation} onCheckedChange={(checked) => updateLocalSetting('keyboard_navigation', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Screen Reader Support</Label>
+                    <p className="text-sm text-muted-foreground">Optimize for screen readers</p>
+                  </div>
+                  <Switch checked={localSettings.screen_reader_support} onCheckedChange={(checked) => updateLocalSetting('screen_reader_support', checked)} />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Notification Settings */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center"><Bell className="h-6 w-6 mr-2 text-primary" /> Notifications</CardTitle>
+                <CardDescription>Manage how you receive notifications.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Email Notifications</Label>
+                    <p className="text-sm text-muted-foreground">Receive updates via email</p>
+                  </div>
+                  <Switch checked={localSettings.email_notifications} onCheckedChange={(checked) => updateLocalSetting('email_notifications', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Progress Reminders</Label>
+                    <p className="text-sm text-muted-foreground">Get reminded to continue practicing</p>
+                  </div>
+                  <Switch checked={localSettings.progress_reminders} onCheckedChange={(checked) => updateLocalSetting('progress_reminders', checked)} />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Label>Achievement Alerts</Label>
+                    <p className="text-sm text-muted-foreground">Notifications for milestones and achievements</p>
+                  </div>
+                  <Switch checked={localSettings.achievement_alerts} onCheckedChange={(checked) => updateLocalSetting('achievement_alerts', checked)} />
+                </div>
+              </CardContent>
+            </Card>
           </div>
-        )}
-
-        <div className="space-y-6">
-          {/* Display Settings */}
-          <SettingSection title="Display Settings" icon={<Monitor className="h-6 w-6 text-blue-400" />}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <SelectField
-                label="Theme"
-                value={localSettings.theme}
-                onChange={(value) => updateLocalSetting('theme', value as any)}
-                options={[
-                  { value: 'light', label: 'Light' },
-                  { value: 'dark', label: 'Dark' },
-                  { value: 'auto', label: 'Auto (System)' },
-                ]}
-              />
-              <SelectField
-                label="Text Size"
-                value={localSettings.text_size}
-                onChange={(value) => updateLocalSetting('text_size', value as any)}
-                options={[
-                  { value: 'xs', label: 'Extra Small' },
-                  { value: 'sm', label: 'Small' },
-                  { value: 'md', label: 'Medium' },
-                  { value: 'lg', label: 'Large' },
-                  { value: 'xl', label: 'Extra Large' },
-                ]}
-              />
-              <SelectField
-                label="Font Family"
-                value={localSettings.font_family}
-                onChange={(value) => updateLocalSetting('font_family', value as any)}
-                options={[
-                  { value: 'inter', label: 'Inter' },
-                  { value: 'roboto', label: 'Roboto' },
-                  { value: 'open-sans', label: 'Open Sans' },
-                  { value: 'lato', label: 'Lato' },
-                  { value: 'poppins', label: 'Poppins' },
-                  { value: 'source-sans', label: 'Source Sans Pro' },
-                ]}
-              />
-              <SelectField
-                label="Color Scheme"
-                value={localSettings.color_scheme}
-                onChange={(value) => updateLocalSetting('color_scheme', value as any)}
-                options={[
-                  { value: 'blue', label: 'Blue' },
-                  { value: 'green', label: 'Green' },
-                  { value: 'purple', label: 'Purple' },
-                  { value: 'red', label: 'Red' },
-                  { value: 'orange', label: 'Orange' },
-                  { value: 'pink', label: 'Pink' },
-                ]}
-              />
-            </div>
-          </SettingSection>
-
-          {/* Quiz Settings */}
-          <SettingSection title="Quiz Preferences" icon={<Timer className="h-6 w-6 text-green-400" />}>
-            <div className="space-y-4">
-              <ToggleSwitch
-                checked={localSettings.auto_advance}
-                onChange={(checked) => updateLocalSetting('auto_advance', checked)}
-                label="Auto Advance"
-                description="Automatically move to next question after answering"
-              />
-              <ToggleSwitch
-                checked={localSettings.show_timer}
-                onChange={(checked) => updateLocalSetting('show_timer', checked)}
-                label="Show Timer"
-                description="Display quiz timer"
-              />
-              <ToggleSwitch
-                checked={localSettings.timer_warnings}
-                onChange={(checked) => updateLocalSetting('timer_warnings', checked)}
-                label="Timer Warnings"
-                description="Show alerts when time is running low"
-              />
-              <ToggleSwitch
-                checked={localSettings.show_progress_bar}
-                onChange={(checked) => updateLocalSetting('show_progress_bar', checked)}
-                label="Show Progress Bar"
-                description="Display progress through quiz"
-              />
-              <ToggleSwitch
-                checked={localSettings.confirm_answer_change}
-                onChange={(checked) => updateLocalSetting('confirm_answer_change', checked)}
-                label="Confirm Answer Changes"
-                description="Ask for confirmation when changing answers"
-              />
-            </div>
-          </SettingSection>
-
-          {/* Accessibility Settings */}
-          <SettingSection title="Accessibility" icon={<Eye className="h-6 w-6 text-purple-400" />}>
-            <div className="space-y-4">
-              <ToggleSwitch
-                checked={localSettings.high_contrast}
-                onChange={(checked) => updateLocalSetting('high_contrast', checked)}
-                label="High Contrast"
-                description="Increase contrast for better visibility"
-              />
-              <ToggleSwitch
-                checked={localSettings.reduce_animations}
-                onChange={(checked) => updateLocalSetting('reduce_animations', checked)}
-                label="Reduce Animations"
-                description="Minimize motion effects"
-              />
-              <ToggleSwitch
-                checked={localSettings.keyboard_navigation}
-                onChange={(checked) => updateLocalSetting('keyboard_navigation', checked)}
-                label="Keyboard Navigation"
-                description="Enable keyboard shortcuts"
-              />
-              <ToggleSwitch
-                checked={localSettings.screen_reader_support}
-                onChange={(checked) => updateLocalSetting('screen_reader_support', checked)}
-                label="Screen Reader Support"
-                description="Optimize for screen readers"
-              />
-            </div>
-          </SettingSection>
-
-          {/* Notification Settings */}
-          <SettingSection title="Notifications" icon={<Bell className="h-6 w-6 text-yellow-400" />}>
-            <div className="space-y-4">
-              <ToggleSwitch
-                checked={localSettings.email_notifications}
-                onChange={(checked) => updateLocalSetting('email_notifications', checked)}
-                label="Email Notifications"
-                description="Receive updates via email"
-              />
-              <ToggleSwitch
-                checked={localSettings.progress_reminders}
-                onChange={(checked) => updateLocalSetting('progress_reminders', checked)}
-                label="Progress Reminders"
-                description="Get reminded to continue practicing"
-              />
-              <ToggleSwitch
-                checked={localSettings.achievement_alerts}
-                onChange={(checked) => updateLocalSetting('achievement_alerts', checked)}
-                label="Achievement Alerts"
-                description="Notifications for milestones and achievements"
-              />
-            </div>
-          </SettingSection>
         </div>
-      </div>
+      </main>
+      <AppFooter />
     </div>
   );
 };
