@@ -20216,7 +20216,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "Rs. 31",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -20245,7 +20245,7 @@
     {
       "qid": "quant-781",
       "passage_text": "",
-      "question_text": "Suppose that a = 2 b 3 a = \\frac{2b}{3} a = 3 2 b \u200b and a b = b a a^b = b^a a b = b a . The sum of a a a and b b b can be expressed as a rational number p q \\frac{p}{q} q p \u200b , where p p p and q q q are co-prime positive integers. Find the value of p + q p+q p + q ?",
+      "question_text": "Suppose that $a = \\frac{2b}{3}$ and $a^b = b^a$. The sum of $a$ and $b$ can be expressed as a rational number $\\frac{p}{q}$, where $p$ and $q$ are co-prime positive integers. Find the value of $p+q$ ?",
       "options": [
         {
           "data_option": "1",
@@ -20269,7 +20269,7 @@
           "data_option": "4",
           "label": "D",
           "option_text": "53",
-          "is_correct": false
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
@@ -20304,7 +20304,7 @@
           "data_option": "4",
           "label": "D",
           "option_text": "Rs. 26190.47",
-          "is_correct": false
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
@@ -20315,9 +20315,9 @@
     {
       "qid": "quant-783",
       "passage_text": "",
-      "question_text": "The quadratic equation f ( x ) = a x 2 + b x + c f(x)=ax^2+bx+c f ( x ) = a x 2 + b x + c is such that f ( \u2212 2 ) < 4 f(-2)<4 f ( \u2212 2 ) < 4 ; f ( 2 ) > \u2212 4 f(2)>-4 f ( 2 ) > \u2212 4 and f ( 3 ) < \u2212 11 f(3)<-11 f ( 3 ) < \u2212 1 1 . What is the greatest possible integral value of \u2018a\u2019?",
+      "question_text": "The quadratic equation $f(x)=ax^2+bx+c$ is such that $f(-2)<4$ ;$f(2)>-4$ and $f(3)<-11$. What is the greatest possible integral value of $a$?",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "-2",
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 57687)\n\n**Passage:**\nThe quadratic equation f ( x ) = a x 2 + b x + c f(x)=ax^2+bx+c f ( x ) = a x 2 + b x + c is such that f ( \u2212 2 ) < 4 f(-2)<4 f ( \u2212 2 ) < 4 ; f ( 2 ) > \u2212 4 f(2)>-4 f ( 2 ) > \u2212 4 and f ( 3 ) < \u2212 11 f(3)<-11 f ( 3 ) < \u2212 1 1 . What is the greatest possible integral value of \u2018a\u2019?\n\nThe quadratic equation f ( x ) = a x 2 + b x + c f(x)=ax^2+bx+c f ( x ) = a x 2 + b x + c is such that f ( \u2212 2 ) < 4 f(-2)<4 f ( \u2212 2 ) < 4 ; f ( 2 ) > \u2212 4 f(2)>-4 f ( 2 ) > \u2212 4 and f ( 3 ) < \u2212 11 f(3)<-11 f ( 3 ) < \u2212 1 1 . What is the greatest possible integral value of \u2018a\u2019?\n\n**Options:**\n\n**Correct Answer:** null"
@@ -20343,7 +20343,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "One of the roots is 5.",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",

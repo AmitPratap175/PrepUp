@@ -207,12 +207,6 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
             >
               Exit
             </Button>
-            <Button
-              size="sm"
-              onClick={() => onSubmit(Object.entries(answers).map(([questionId, selectedAnswer]) => ({ questionId, selectedAnswer, timeSpent: 0, isMarkedForReview: false })))}
-            >
-              Submit Test
-            </Button>
           </div>
         </div>
       </div>
