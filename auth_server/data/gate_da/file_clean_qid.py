@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 """
 Rename all 'qid' fields to incremental strings 'varc-n' (n starts at 1),
-preserving everything else. Reads from a hardcoded input file and writes
-to an output file named exactly 'final_varc_changed' (no extension).
+preserving everything else. Reads from JSON files in a specified directory.
 """
 
 import json
+import sys
 from typing import List, Dict, Any
-import os
-
-# ---- Hardcoded filenames ----
-INPUT_FOLDER = "."    # Change this to your actual input filename
-OUTPUT_FOLDER = "" # Required exact output filename per instructions
-
+from pathlib import Path
 
 def get_questions_container(data: Any) -> List[Dict[str, Any]]:
     """
@@ -29,33 +24,54 @@ def get_questions_container(data: Any) -> List[Dict[str, Any]]:
                      "or a top-level list of questions.")
 
 
-def main() -> None:
-    json_files = [os.path.join(INPUT_FOLDER,f) for f in os.listdir(INPUT_FOLDER) if f.endswith(".json")]
-    print(f"Found {json_files} JSON files to process.")
-    for file in json_files:
-        # Load input JSON
-        with open(file, "r", encoding="utf-8") as f:
-            data = json.load(f)
+def main(json_folder: Path) -> None:
+    """
+    Reads all .json files in json_folder, replaces 'qid' with an
+    incrementing ID based on the filename, and saves the files in-place.
+    """
+    if not json_folder.is_dir():
+        print(f"Error: Directory not found at {json_folder}", file=sys.stderr)
+        return
+        
+    json_files = list(json_folder.glob("*.json"))
+    print(f"Found {len(json_files)} JSON files to process in {json_folder}.")
 
-        name = file.split("_")[-1].split(".")[0]  
-        # print(name)
+    for file_path in json_files:
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Error reading {file_path}: {e}", file=sys.stderr)
+            continue
 
-        questions = get_questions_container(data)
+        name = file_path.stem.split("_")[-1]
 
-        # Replace qid fields in the order encountered
+        try:
+            questions = get_questions_container(data)
+        except ValueError as e:
+            print(f"Error processing {file_path}: {e}", file=sys.stderr)
+            continue
+
         counter = 0
         for item in questions:
             if isinstance(item, dict) and "qid" in item:
                 counter += 1
                 item["qid"] = f"{name}-{counter}"
 
-        # Save to the required output filename (no extension)
-        with open(file, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+        try:
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except IOError as e:
+            print(f"Error writing to {file_path}: {e}", file=sys.stderr)
 
-        # Optional console feedback
-        # print(f"Replaced {counter} qid field(s). Wrote output to '{OUTPUT_FILE}'.")
+        print(f"Processed {counter} qids in {file_path.name}")
 
 
 if __name__ == "__main__":
-    main()
+    # Example of how to run this script directly
+    # You need to provide a path to a directory with JSON files.
+    if len(sys.argv) > 1:
+        target_dir = Path(sys.argv[1])
+        main(target_dir)
+    else:
+        print("Usage: python file_clean_qid.py <path_to_json_directory>", file=sys.stderr)
