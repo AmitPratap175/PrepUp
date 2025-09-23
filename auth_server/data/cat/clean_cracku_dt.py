@@ -280,6 +280,13 @@ def main(categorized_html: Dict[str, List[str]]):
 
     print("Processing complete.")
 
+    # --- Step 4: Clean up the intermediate directory ---
+    try:
+        shutil.rmtree(intermediate_dir)
+        print(f"Successfully removed temporary directory: {intermediate_dir}")
+    except OSError as e:
+        print(f"Error removing temporary directory {intermediate_dir}: {e}", file=sys.stderr)
+
 if __name__ == "__main__":
     # This block is the entry point when the script is executed directly.
     
