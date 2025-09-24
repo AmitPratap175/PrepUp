@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { TestLayout } from "@/components/test-layout";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
@@ -14,7 +16,6 @@ interface PracticeTestInterfaceProps {
 
 export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   const [, navigate] = useLocation();
-  const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
@@ -135,8 +136,54 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-background">
-      {/* Test Header (Sticky) */}
+    <TestLayout
+      isCollapsible={true}
+      palette={
+        <>
+          <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-6 gap-2 mb-6">
+            {questions.map((_, index) => {
+              const status = getQuestionStatus(index);
+              return (
+                <button
+                  key={index}
+                  onClick={() => navigateToQuestion(index)}
+                  className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
+                    status.isCurrent
+                      ? 'bg-primary text-primary-foreground'
+                      : status.answered
+                      ? 'bg-secondary text-secondary-foreground'
+                      : status.markedForReview
+                      ? 'bg-orange-500 text-white'
+                      : 'bg-card border border-border text-foreground hover:bg-accent'
+                  }`}
+                  data-testid={`question-nav-${index + 1}`}
+                >
+                  {index + 1}
+                </button>
+              );
+            })}
+          </div>
+          <div className="space-y-2 text-xs">
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-primary rounded"></div>
+              <span>Current</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-secondary rounded"></div>
+              <span>Answered</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-orange-500 rounded"></div>
+              <span>Marked for Review</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-card border border-border rounded"></div>
+              <span>Not Visited</span>
+            </div>
+          </div>
+        </>
+      }
+    >
       <div className="bg-muted/50 p-4 sm:p-6 border-b border-border">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
@@ -144,24 +191,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
             <p className="text-xs sm:text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
           <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="lg:hidden"
-            >
-              <PanelLeftClose className="h-4 w-4" />
-              <span className="sr-only">Toggle Palette</span>
-            </Button>
-            <Button 
-              variant="outline" 
-              size="sm"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="hidden lg:flex"
-            >
-              {isPaletteVisible ? <PanelLeftClose className="h-4 w-4 mr-2" /> : <PanelRightClose className="h-4 w-4 mr-2" />}
-              {isPaletteVisible ? "Hide Palette" : "Show Palette"}
-            </Button>
+            <SidebarTrigger />
             <div className="text-center">
               <div className="text-lg font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
@@ -185,184 +215,131 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
           </div>
         </div>
       </div>
+      <div className="flex-1 flex flex-col p-4 sm:p-6 lg:p-8 overflow-hidden">
+        <div className="flex items-center justify-between mb-4">
+          <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
+            Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
+          </span>
+          <span className="text-sm text-muted-foreground">
+            {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
+          </span>
+        </div>
 
-      {/* Main Content */}
-      <div className="flex flex-1 flex-col lg:flex-row overflow-hidden">
-        {/* Question Navigation (Scrollable) */}
-        {isPaletteVisible && (
-          <div className="w-full lg:w-1/4 xl:w-1/5 bg-muted/30 p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-border overflow-y-auto">
-            <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-6 gap-2 mb-6">
-              {questions.map((_, index) => {
-                const status = getQuestionStatus(index);
-                return (
-                  <button
-                    key={index}
-                    onClick={() => navigateToQuestion(index)}
-                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
-                      status.isCurrent
-                        ? 'bg-primary text-primary-foreground'
-                        : status.answered
-                        ? 'bg-secondary text-secondary-foreground'
-                        : status.markedForReview
-                        ? 'bg-orange-500 text-white'
-                        : 'bg-card border border-border text-foreground hover:bg-accent'
-                    }`}
-                    data-testid={`question-nav-${index + 1}`}
-                  >
-                    {index + 1}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="space-y-2 text-xs">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-primary rounded"></div>
-                <span>Current</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-secondary rounded"></div>
-                <span>Answered</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-orange-500 rounded"></div>
-                <span>Marked for Review</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-card border border-border rounded"></div>
-                <span>Not Visited</span>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Question Content (Scrollable) */}
-        <div className="flex-1 flex flex-col p-4 sm:p-6 lg:p-8 overflow-hidden">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm font-medium text-muted-foreground" data-testid="question-info">
-              Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
-            </span>
-          </div>
-
-          <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">
-            {(hasPassage || currentQuestion.image_url) && (
-              <div className="w-full xl:w-[60%] pr-4 overflow-y-auto">
-                <div className="bg-muted/50 p-4 rounded-lg h-full">
-                  <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
-                  {hasPassage && (
-                    <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
-                      <Latex>{currentQuestion.passage_text}</Latex>
-                    </div>
-                  )}
-                  {currentQuestion.image_url && (
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {currentQuestion.image_url.split(',').map((url, i) => (
-                        <img key={i} src={url.trim()} alt={`Passage image ${i + 1}`} className="max-w-full h-auto rounded-lg" />
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-
-            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
-              <div className="prose max-w-none mb-6">
-                <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
-                  <Latex>{currentQuestion.question_text}</Latex>
-                </p>
-              </div>
-
-              <div className="space-y-3">
-                {currentQuestion.options.length > 0 ? (
-                  currentQuestion.options.map((option) => {
-                    const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
-                    return (
-                      <label 
-                        key={option.data_option}
-                        className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
-                          isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
-                        }`}
-                      >
-                        <input 
-                          type="radio" 
-                          name={`question-${currentQuestion.qid}`}
-                          value={option.data_option}
-                          checked={isSelected}
-                          onChange={() => handleAnswerSelect(option.data_option)}
-                          className="sr-only"
-                          data-testid={`option-${option.label.toLowerCase()}`}
-                        />
-                        <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
-                          <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
-                        </div>
-                        <span className="font-medium text-foreground">{option.label}.</span>
-                        <span className="text-foreground preserve-whitespace">
-                          <Latex>{option.option_text}</Latex>
-                        </span>
-                      </label>
-                    );
-                  })
-                ) : (
-                  <div>
-                    <label htmlFor="answer-input" className="block text-sm font-medium text-muted-foreground mb-2">
-                      Your Answer:
-                    </label>
-                    <input
-                      type="text"
-                      id="answer-input"
-                      value={testState.answers[currentQuestion.qid] || ''}
-                      onChange={(e) => handleAnswerSelect(e.target.value)}
-                      className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
-                      data-testid="answer-input"
-                    />
+        <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">
+          {(hasPassage || currentQuestion.image_url) && (
+            <div className="w-full xl:w-[60%] pr-4 overflow-y-auto">
+              <div className="bg-muted/50 p-4 rounded-lg h-full">
+                <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
+                {hasPassage && (
+                  <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
+                    <Latex>{currentQuestion.passage_text}</Latex>
+                  </div>
+                )}
+                {currentQuestion.image_url && (
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {currentQuestion.image_url.split(',').map((url, i) => (
+                      <img key={i} src={url.trim()} alt={`Passage image ${i + 1}`} className="max-w-full h-auto rounded-lg" />
+                    ))}
                   </div>
                 )}
               </div>
             </div>
-          </div>
+          )}
 
-          <div className="flex flex-col sm:flex-row justify-between pt-4 sm:pt-6 border-t border-border gap-4">
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <Button 
-                variant="outline" 
-                onClick={handleClearResponse}
-                disabled={!testState.answers[currentQuestion.qid]}
-                data-testid="button-clear-response"
-              >
-                Clear Response
-              </Button>
-              <Button 
-                variant="outline" 
-                onClick={handleMarkForReview}
-                className={testState.markedForReview.has(currentQuestion.qid) ? 'bg-orange-100 border-orange-300' : ''}
-                data-testid="button-mark-review"
-              >
-                {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
-              </Button>
+          <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
+            <div className="prose max-w-none mb-6">
+              <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
+                <Latex>{currentQuestion.question_text}</Latex>
+              </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <Button 
-                variant="outline" 
-                onClick={handlePrevious}
-                disabled={testState.currentQuestionIndex === 0}
-                data-testid="button-previous"
-              >
-                Previous
-              </Button>
-              <Button 
-                onClick={handleNext}
-                disabled={testState.currentQuestionIndex === questions.length - 1}
-                data-testid="button-save-next"
-              >
-                {testState.currentQuestionIndex === questions.length - 1 ? 'Review' : 'Save & Next'}
-              </Button>
+
+            <div className="space-y-3">
+              {currentQuestion.options.length > 0 ? (
+                currentQuestion.options.map((option) => {
+                  const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
+                  return (
+                    <label
+                      key={option.data_option}
+                      className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
+                        isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name={`question-${currentQuestion.qid}`}
+                        value={option.data_option}
+                        checked={isSelected}
+                        onChange={() => handleAnswerSelect(option.data_option)}
+                        className="sr-only"
+                        data-testid={`option-${option.label.toLowerCase()}`}
+                      />
+                      <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
+                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
+                      </div>
+                      <span className="font-medium text-foreground">{option.label}.</span>
+                      <span className="text-foreground preserve-whitespace">
+                        <Latex>{option.option_text}</Latex>
+                      </span>
+                    </label>
+                  );
+                })
+              ) : (
+                <div>
+                  <label htmlFor="answer-input" className="block text-sm font-medium text-muted-foreground mb-2">
+                    Your Answer:
+                  </label>
+                  <input
+                    type="text"
+                    id="answer-input"
+                    value={testState.answers[currentQuestion.qid] || ''}
+                    onChange={(e) => handleAnswerSelect(e.target.value)}
+                    className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
+                    data-testid="answer-input"
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col sm:flex-row justify-between pt-4 sm:pt-6 border-t border-border gap-4">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+            <Button
+              variant="outline"
+              onClick={handleClearResponse}
+              disabled={!testState.answers[currentQuestion.qid]}
+              data-testid="button-clear-response"
+            >
+              Clear Response
+            </Button>
+            <Button
+              variant="outline"
+              onClick={handleMarkForReview}
+              className={testState.markedForReview.has(currentQuestion.qid) ? 'bg-orange-100 border-orange-300' : ''}
+              data-testid="button-mark-review"
+            >
+              {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
+            </Button>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+            <Button
+              variant="outline"
+              onClick={handlePrevious}
+              disabled={testState.currentQuestionIndex === 0}
+              data-testid="button-previous"
+            >
+              Previous
+            </Button>
+            <Button
+              onClick={handleNext}
+              disabled={testState.currentQuestionIndex === questions.length - 1}
+              data-testid="button-save-next"
+            >
+              {testState.currentQuestionIndex === questions.length - 1 ? 'Review' : 'Save & Next'}
+            </Button>
+          </div>
+        </div>
       </div>
-    </div>
+    </TestLayout>
   );
 }

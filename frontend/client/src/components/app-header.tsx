@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Settings } from "lucide-react";
+import { Settings, ChevronUp, ChevronDown } from "lucide-react";
 import { 
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/contexts/auth-context";
+import { cn } from "@/lib/utils";
 
 const navigation = [
   { title: "Home", href: "/" },
@@ -41,10 +42,11 @@ const navigation = [
   { title: "Contact", href: "/contact" },
 ];
 
-export function AppHeader() {
+export function AppHeader({ isCollapsible = false }: { isCollapsible?: boolean }) {
   const [location, setLocation] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isAuthenticated, logout } = useAuth();
+  const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -52,7 +54,12 @@ export function AppHeader() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header
+      className={cn(
+        "sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ease-in-out",
+        isHeaderCollapsed && isCollapsible ? "-translate-y-full" : "translate-y-0"
+      )}
+    >
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
         <Link href="/" className="flex items-center gap-2 sm:gap-3 text-foreground hover-elevate">
           <span className="material-symbols-outlined text-2xl sm:text-3xl text-primary">school</span>
@@ -105,6 +112,18 @@ export function AppHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          {isCollapsible && (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsHeaderCollapsed(!isHeaderCollapsed)}
+              aria-expanded={!isHeaderCollapsed}
+              className="absolute left-1/2 -translate-x-1/2 top-full -translate-y-1/2 bg-background border rounded-full"
+            >
+              {isHeaderCollapsed ? <ChevronDown /> : <ChevronUp />}
+              <span className="sr-only">Toggle Header</span>
+            </Button>
+          )}
           {isAuthenticated ? (
             <>
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
@@ -146,7 +165,7 @@ export function AppHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="p-4">
+              <div className="p-4 overflow-y-auto max-h-[100vh]">
                 <h2 className="text-lg font-semibold mb-4">Menu</h2>
                 <nav className="flex flex-col gap-4">
                   {navigation.map((item) => (
