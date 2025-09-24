@@ -87,3 +87,35 @@ class AddQuestionAPITest(TestCase):
         response = self.client.post('/api/questions/add/', '{}', content_type='application/json')
         # Expecting a redirect to login page, so 302
         self.assertEqual(response.status_code, 302)
+
+    def test_add_question_wrong_method(self):
+        """
+        Tests that the endpoint returns an error if the wrong HTTP method is used.
+        """
+        response = self.client.get('/api/questions/add/')
+        self.assertEqual(response.status_code, 405)
+
+    def test_add_question_invalid_json(self):
+        """
+        Tests that the endpoint returns an error if the request body contains invalid JSON.
+        """
+        response = self.client.post('/api/questions/add/', 'invalid json', content_type='application/json')
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.json()['error'], 'Invalid JSON')
+
+    def test_add_question_missing_fields(self):
+        """
+        Tests that the endpoint returns an error if required fields are missing from the request body.
+        """
+        question_data = {
+            "passage_text": "This is a test passage.",
+            "question_text": "This is a test question?",
+        }
+
+        response = self.client.post('/api/questions/add/', json.dumps({
+            "examType": "cat",
+            "question": question_data
+        }), content_type='application/json')
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.json()['error'], 'Missing required fields')
