@@ -15,6 +15,15 @@ import { useToast } from "@/hooks/use-toast";
 import { useLocation } from "wouter";
 import { useAuth } from "@/contexts/auth-context";
 
+/**
+ * Renders the login page.
+ *
+ * This component provides a form for users to enter their email and password
+ * to log in. It handles the authentication process and provides feedback
+ * to the user via toasts.
+ *
+ * @returns {JSX.Element} The rendered login page.
+ */
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

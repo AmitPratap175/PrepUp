@@ -7,14 +7,31 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
+/**
+ * @interface QuizInterfaceProps
+ * @property {PracticeTest} test - The test object containing questions and details.
+ * @property {() => void} onExit - Function to be called when the user exits the quiz.
+ * @property {(answers: UserAnswer[]) => void} onSubmit - Function to be called when the user submits the quiz.
+ */
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
   onSubmit: (answers: UserAnswer[]) => void;
 }
 
+/**
+ * A comprehensive quiz interface for taking practice tests.
+ *
+ * This component provides a full-featured quiz experience, including a timer,
+ * question palette for navigation, bookmarking functionality, and support for
+ * both multiple-choice and text-input questions. It also handles displaying
+ * passages and images associated with questions.
+ *
+ * @param {QuizInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered quiz interface.
+ */
 export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
-  const [isPaletteVisible, setIsPaletteVisible] = useState(true);
+  const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
@@ -179,15 +196,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
             <p className="text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
           <div className="flex items-center gap-6">
-            <Button 
-              variant="outline" 
-              size="sm"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="hidden lg:flex"
-            >
-              {isPaletteVisible ? <PanelLeftClose className="h-4 w-4 mr-2" /> : <PanelRightClose className="h-4 w-4 mr-2" />}
-              {isPaletteVisible ? "Hide Palette" : "Show Palette"}
-            </Button>
+
             <div className="text-center">
               <div className="text-lg font-bold text-foreground" data-testid="timer-display">
                 {formatTime(timeElapsed)}
@@ -212,12 +221,23 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
+        {/* Palette Toggle Button */}
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => setIsPaletteVisible(!isPaletteVisible)}
+          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${
+            isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
+          }`}
+        >
+          {isPaletteVisible ? <PanelLeftClose className="h-4 w-4" /> : <PanelRightClose className="h-4 w-4" />}
+        </Button>
         {/* Question Navigation (Scrollable) */}
         {isPaletteVisible && (
-          <div className="lg:w-1/8 bg-muted/30 p-6 border-r border-border overflow-y-auto">
+          <div className="w-64 bg-muted/30 p-6 border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
+            <div className="grid grid-cols-5 gap-1 mb-6">
               {questions.map((question, index) => {
                 const isAnswered = answers[question.qid] !== undefined;
                 let isCorrect = false;

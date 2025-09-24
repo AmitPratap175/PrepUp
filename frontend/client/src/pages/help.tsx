@@ -6,6 +6,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
+/**
+ * Renders the Help Center page.
+ *
+ * This component provides a searchable FAQ section, categorized for easy
+ * navigation. It allows users to find answers to common questions about
+ * the platform, courses, and technical issues.
+ *
+ * @returns {JSX.Element} The rendered help center page.
+ */
 export default function Help() {
   const [searchTerm, setSearchTerm] = useState("");
 

@@ -16,10 +16,23 @@ import type { PracticeTest, Question, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect } from "wouter";
 
+/**
+ * @interface BookmarkedQuestions
+ * A dictionary where keys are subject names and values are arrays of questions.
+ */
 interface BookmarkedQuestions {
   [subject: string]: Question[];
 }
 
+/**
+ * A page that displays the user's bookmarked questions, grouped by subject.
+ *
+ * This component fetches all of the user's bookmarks and the available practice
+ * tests, then groups the bookmarked questions by their subject. Users can
+ * start a quiz for any subject that has bookmarks.
+ *
+ * @returns {JSX.Element} The rendered bookmarks page.
+ */
 export default function BookmarksPage() {
   const { isAuthenticated } = useAuth();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);

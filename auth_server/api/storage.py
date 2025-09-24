@@ -7,7 +7,27 @@ import uuid
 # These would be the Python equivalents of the TypeScript types
 
 class MemStorage:
+    """
+    An in-memory storage solution for the application's data.
+
+    This class simulates a database by loading data from JSON files into memory
+    at startup. It provides methods for accessing and manipulating this data,
+    covering courses, study materials, tests, user sessions, and progress.
+    All data is reset on application restart.
+
+    Attributes:
+        base_dir (str): The base directory of the current file.
+        users (Dict[str, Dict]): A dictionary to store user data.
+        courses (Dict[str, Dict]): A dictionary to store course data.
+        study_materials (Dict[str, Dict]): A dictionary for study materials.
+        practice_tests (Dict[str, Dict]): A dictionary for practice tests.
+        mock_tests (Dict[str, Dict]): A dictionary for mock tests.
+        sectional_tests (Dict[str, Dict]): A dictionary for sectional tests.
+        test_sessions (Dict[str, Dict]): A dictionary for test sessions.
+        user_progress (Dict[str, Dict]): A dictionary for user progress.
+    """
     def __init__(self):
+        """Initializes the MemStorage instance and seeds it with initial data."""
         self.base_dir = os.path.dirname(os.path.abspath(__file__))
         self.users: Dict[str, Dict] = {}
         self.courses: Dict[str, Dict] = {}
@@ -21,6 +41,13 @@ class MemStorage:
         self.seed_data()
 
     def seed_data(self):
+        """
+        Loads initial data into the storage from predefined sources.
+
+        This method populates the storage with course information, study
+        materials, and various types of tests (practice, mock, sectional)
+        by reading from hardcoded data and JSON files.
+        """
         # Seed courses
         cat_course = {
             "id": str(uuid.uuid4()),
@@ -215,6 +242,15 @@ class MemStorage:
                                 print(f"Failed to load sectional test from {file_path}: {e}")
 
     def _load_questions_from_file(self, file_path: str) -> List[Dict]:
+        """
+        Loads questions from a specified JSON file.
+
+        Args:
+            file_path: The absolute path to the JSON file.
+
+        Returns:
+            A list of question dictionaries, or an empty list if loading fails.
+        """
         try:
             with open(file_path, 'r') as f:
                 data = json.load(f)
@@ -225,53 +261,188 @@ class MemStorage:
 
     # Accessor methods
     def get_courses(self) -> List[Dict]:
+        """
+        Retrieves all courses from the storage.
+
+        Returns:
+            A list of all course dictionaries.
+        """
         return list(self.courses.values())
 
     def get_course(self, course_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single course by its ID.
+
+        Args:
+            course_id: The UUID of the course.
+
+        Returns:
+            A course dictionary if found, otherwise None.
+        """
         return self.courses.get(course_id)
 
     def get_courses_by_exam_type(self, exam_type: str) -> List[Dict]:
+        """
+        Filters courses by the specified exam type.
+
+        Args:
+            exam_type: The type of exam (e.g., 'cat', 'gate').
+
+        Returns:
+            A list of course dictionaries matching the exam type.
+        """
         return [c for c in self.courses.values() if c["examType"] == exam_type]
 
     def get_study_materials(self) -> List[Dict]:
+        """
+        Retrieves all study materials from the storage.
+
+        Returns:
+            A list of all study material dictionaries.
+        """
         return list(self.study_materials.values())
 
     def get_study_material(self, material_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single study material by its ID.
+
+        Args:
+            material_id: The UUID of the study material.
+
+        Returns:
+            A study material dictionary if found, otherwise None.
+        """
         return self.study_materials.get(material_id)
 
     def get_study_materials_by_exam_type(self, exam_type: str) -> List[Dict]:
+        """
+        Filters study materials by the specified exam type.
+
+        Args:
+            exam_type: The type of exam (e.g., 'cat', 'gate').
+
+        Returns:
+            A list of study material dictionaries matching the exam type.
+        """
         return [m for m in self.study_materials.values() if m["examType"] == exam_type]
 
     def get_study_materials_by_subject(self, subject: str) -> List[Dict]:
+        """
+        Filters study materials by the specified subject.
+
+        Args:
+            subject: The subject of the study material.
+
+        Returns:
+            A list of study material dictionaries matching the subject.
+        """
         return [m for m in self.study_materials.values() if m["subject"] == subject]
 
     def get_practice_tests(self) -> List[Dict]:
+        """
+        Retrieves all practice tests from the storage.
+
+        Returns:
+            A list of all practice test dictionaries.
+        """
         return list(self.practice_tests.values())
 
     def get_practice_test(self, test_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single practice test by its ID.
+
+        Args:
+            test_id: The UUID of the practice test.
+
+        Returns:
+            A practice test dictionary if found, otherwise None.
+        """
         return self.practice_tests.get(test_id)
 
     def get_practice_tests_by_exam_type(self, exam_type: str) -> List[Dict]:
+        """
+        Filters practice tests by the specified exam type.
+
+        Args:
+            exam_type: The type of exam (e.g., 'cat', 'gate').
+
+        Returns:
+            A list of practice test dictionaries matching the exam type.
+        """
         return [t for t in self.practice_tests.values() if t["examType"] == exam_type]
 
     def get_mock_tests(self) -> List[Dict]:
+        """
+        Retrieves all mock tests from the storage.
+
+        Returns:
+            A list of all mock test dictionaries.
+        """
         return list(self.mock_tests.values())
 
     def get_mock_test(self, test_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single mock test by its ID.
+
+        Args:
+            test_id: The ID of the mock test.
+
+        Returns:
+            A mock test dictionary if found, otherwise None.
+        """
         return self.mock_tests.get(test_id)
 
     def get_sectional_tests(self) -> List[Dict]:
+        """
+        Retrieves all sectional tests from the storage.
+
+        Returns:
+            A list of all sectional test dictionaries.
+        """
         return list(self.sectional_tests.values())
 
     def get_sectional_test(self, test_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single sectional test by its ID.
+
+        Args:
+            test_id: The ID of the sectional test.
+
+        Returns:
+            A sectional test dictionary if found, otherwise None.
+        """
         return self.sectional_tests.get(test_id)
 
     def get_sectional_test_section(self, test_id: str, section: str) -> Optional[Dict]:
+        """
+        Retrieves a specific section of a sectional test.
+
+        Note:
+            The current implementation returns the entire test if the ID matches,
+            as section logic is embedded within the test ID itself.
+
+        Args:
+            test_id: The ID of the sectional test.
+            section: The specific section to retrieve (currently unused).
+
+        Returns:
+            A sectional test dictionary if the test_id is found, otherwise None.
+        """
         # In the original implementation, section is part of the test id for sectional tests.
         # This method might need adjustment based on how sectional tests are identified.
         return self.sectional_tests.get(test_id)
 
     def create_test_session(self, session_data: Dict) -> Dict:
+        """
+        Creates a new test session and stores it.
+
+        Args:
+            session_data: A dictionary containing initial data for the session,
+                          such as user ID and test ID.
+
+        Returns:
+            The newly created test session dictionary.
+        """
         session_id = str(uuid.uuid4())
         session = {
             "id": session_id,
@@ -286,27 +457,89 @@ class MemStorage:
         return session
 
     def update_test_session(self, session_id: str, updates: Dict) -> Optional[Dict]:
+        """
+        Updates an existing test session with new data.
+
+        Args:
+            session_id: The ID of the session to update.
+            updates: A dictionary of fields to update.
+
+        Returns:
+            The updated session dictionary, or None if the session was not found.
+        """
         if session_id in self.test_sessions:
             self.test_sessions[session_id].update(updates)
             return self.test_sessions[session_id]
         return None
 
     def get_test_session(self, session_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single test session by its ID.
+
+        Args:
+            session_id: The ID of the test session.
+
+        Returns:
+            A test session dictionary if found, otherwise None.
+        """
         return self.test_sessions.get(session_id)
 
     def get_test_sessions_by_user(self, user_id: str) -> List[Dict]:
+        """
+        Retrieves all test sessions for a specific user.
+
+        Args:
+            user_id: The ID of the user.
+
+        Returns:
+            A list of test session dictionaries for the user.
+        """
         return [s for s in self.test_sessions.values() if s["userId"] == user_id]
 
     def get_user_progress(self, user_id: str) -> List[Dict]:
+        """
+        Retrieves all progress records for a specific user.
+
+        Args:
+            user_id: The ID of the user.
+
+        Returns:
+            A list of user progress dictionaries.
+        """
         return [p for p in self.user_progress.values() if p["userId"] == user_id]
 
     def get_user_progress_by_course(self, user_id: str, course_id: str) -> Optional[Dict]:
+        """
+        Retrieves a user's progress for a specific course.
+
+        Args:
+            user_id: The ID of the user.
+            course_id: The ID of the course.
+
+        Returns:
+            A user progress dictionary if found, otherwise None.
+        """
         for p in self.user_progress.values():
             if p["userId"] == user_id and p["courseId"] == course_id:
                 return p
         return None
 
     def add_question(self, exam_type: str, subject: str, question_data: Dict) -> bool:
+        """
+        Adds a new question to the appropriate JSON file and reloads the data.
+
+        This function finds the correct JSON file based on exam type and subject,
+        appends the new question, and then re-seeds the in-memory storage to
+        reflect the changes.
+
+        Args:
+            exam_type: The type of exam (e.g., 'cat', 'gate').
+            subject: The subject of the question.
+            question_data: A dictionary containing the new question's details.
+
+        Returns:
+            True if the question was added successfully, otherwise False.
+        """
         file_path = os.path.join(self.base_dir, '..', f"data/{exam_type}/{subject.lower().replace(' ', '-')}.json")
         if not os.path.exists(os.path.dirname(file_path)):
             os.makedirs(os.path.dirname(file_path))

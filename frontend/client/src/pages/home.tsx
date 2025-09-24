@@ -12,6 +12,15 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import type { Course, StudyMaterial } from "@shared/schema";
 
+/**
+ * Renders the home page of the application.
+ *
+ * This component serves as the main landing page, featuring a hero section,
+ * key features, course previews, and a call-to-action for a free trial.
+ * It fetches data for popular courses and study materials to display.
+ *
+ * @returns {JSX.Element} The rendered home page.
+ */
 export default function Home() {
   const { toast } = useToast();
   const [trialFormData, setTrialFormData] = useState({

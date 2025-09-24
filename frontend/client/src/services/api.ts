@@ -1,3 +1,7 @@
+/**
+ * @interface UserSettings
+ * Defines the comprehensive structure for all user-configurable settings.
+ */
 export interface UserSettings {
   theme: 'light' | 'dark' | 'auto';
   text_size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
@@ -36,6 +40,14 @@ const defaultSettings: UserSettings = {
   achievement_alerts: true,
 };
 
+/**
+ * Fetches the user's settings from local storage.
+ *
+ * This function simulates an API call to retrieve user settings. If no
+ * settings are found, it initializes them with default values.
+ *
+ * @returns {Promise<UserSettings>} A promise that resolves with the user's settings.
+ */
 export const getUserSettings = async (): Promise<UserSettings> => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -50,6 +62,14 @@ export const getUserSettings = async (): Promise<UserSettings> => {
   });
 };
 
+/**
+ * Updates the user's settings in local storage.
+ *
+ * This function simulates an API call to save the updated user settings.
+ *
+ * @param {UserSettings} settings - The new settings object to be saved.
+ * @returns {Promise<UserSettings>} A promise that resolves with the updated settings.
+ */
 export const updateUserSettings = async (settings: UserSettings): Promise<UserSettings> => {
   return new Promise((resolve) => {
     setTimeout(() => {

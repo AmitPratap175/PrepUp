@@ -3,6 +3,14 @@ import { AppHeader } from "@/components/app-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "wouter";
 
+/**
+ * Renders a page that lists all available current affairs articles.
+ *
+ * This component displays a grid of cards, each representing a single
+ * current affairs article that the user can navigate to and read.
+ *
+ * @returns {JSX.Element} The rendered current affairs page.
+ */
 export default function CurrentAffairsPage() {
   const articles = Array.from({ length: 23 }, (_, i) => i + 1);
 

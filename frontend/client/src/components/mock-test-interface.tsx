@@ -7,6 +7,11 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
 
+/**
+ * @interface MockTestInterfaceProps
+ * @property {PracticeTest} test - The mock test data, including all questions.
+ * @property {(answers: UserAnswer[], timeSpent: number) => void} onSubmit - Callback function to execute when the test is submitted.
+ */
 interface MockTestInterfaceProps {
   test: PracticeTest;
   onSubmit: (answers: UserAnswer[], timeSpent: number) => void;
@@ -15,6 +20,17 @@ interface MockTestInterfaceProps {
 const SECTIONS = ["varc", "dilr", "quants"];
 const SECTION_TIME = 40 * 60; // 40 minutes in seconds
 
+/**
+ * Renders a full mock test interface, divided into timed sections.
+ *
+ * This component manages the entire state of a mock test, including section
+ * timing, question navigation, answer tracking, and review marking. It
+ * automatically transitions between sections when the timer expires and
+ * handles the final submission of the test.
+ *
+ * @param {MockTestInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered mock test interface.
+ */
 export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
@@ -160,15 +176,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
             <p className="text-sm text-muted-foreground">{SECTIONS[currentSectionIndex].toUpperCase()} Section</p>
           </div>
           <div className="flex items-center gap-6">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="hidden lg:flex"
-            >
-              {isPaletteVisible ? <PanelLeftClose className="h-4 w-4 mr-2" /> : <PanelRightClose className="h-4 w-4 mr-2" />}
-              {isPaletteVisible ? "Hide Palette" : "Show Palette"}
-            </Button>
+
             <div className="text-center">
               <div className="text-lg font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
@@ -193,11 +201,22 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
         </div>
       </div>
 
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
+        {/* Palette Toggle Button */}
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => setIsPaletteVisible(!isPaletteVisible)}
+          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${
+            isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
+          }`}
+        >
+          {isPaletteVisible ? <PanelLeftClose className="h-4 w-4" /> : <PanelRightClose className="h-4 w-4" />}
+        </Button>
         {isPaletteVisible && (
-          <div className="lg:w-1/8 bg-muted/30 p-6 border-r border-border overflow-y-auto">
+          <div className="w-64 bg-muted/30 p-6 border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 lg:grid-cols-6 gap-1 mb-6">
+            <div className="grid grid-cols-5 gap-1 mb-6">
               {questions.map((_, index) => {
                 const status = getQuestionStatus(index);
                 return (

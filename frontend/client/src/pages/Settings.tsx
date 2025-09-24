@@ -10,6 +10,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 
+/**
+ * A page for managing user settings.
+ *
+ * This component provides a user interface for customizing various aspects of
+ * the application, including display preferences, quiz behavior, accessibility,
+ * and notifications. It uses the `useSettings` hook to fetch and update
+ * settings.
+ *
+ * @returns {JSX.Element} The rendered settings page.
+ */
 const SettingsPage: React.FC = () => {
   const { settings, updateSettings, loading } = useSettings();
   const [localSettings, setLocalSettings] = useState<UserSettings | null>(null);

@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
 import { Question, SubjectType } from '../types/Question';
 
+/**
+ * @interface AddQuestionModalProps
+ * @property {() => void} onClose - Function to close the modal.
+ * @property {(subject: SubjectType, question: Question) => Promise<void>} onAddQuestion - Async function to handle adding a new question.
+ * @property {SubjectType[]} subjects - An array of available subjects to choose from.
+ */
 interface AddQuestionModalProps {
   onClose: () => void;
   onAddQuestion: (subject: SubjectType, question: Question) => Promise<void>;
   subjects: SubjectType[];
 }
 
+/**
+ * A modal component for adding a new question to a specified subject.
+ *
+ * This component provides a form with fields for the question's text, options,
+ * correct answer, and other optional details like a passage or solution.
+ *
+ * @param {AddQuestionModalProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered modal for adding a question.
+ */
 const AddQuestionModal: React.FC<AddQuestionModalProps> = ({ onClose, onAddQuestion, subjects }) => {
   const [subject, setSubject] = useState<SubjectType>(subjects[0] || '');
   const [qid, setQid] = useState('');

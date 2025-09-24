@@ -8,12 +8,19 @@ User = get_user_model()
 
 class AuthTests(APITestCase):
     """
-    Test cases for the authentication views (Signup, Login, Logout).
+    Test suite for the authentication-related views.
+
+    This class contains tests for the signup, login, and logout
+    functionalities, ensuring that user registration, session management,
+    and token handling work as expected.
     """
 
     def setUp(self):
         """
-        Set up the test data.
+        Prepares the necessary data for the authentication tests.
+
+        This method creates a standard user instance that can be used for
+        testing login and logout scenarios.
         """
         self.user_data = {
             'name': 'Test User',
@@ -25,7 +32,11 @@ class AuthTests(APITestCase):
 
     def test_signup(self):
         """
-        Test the signup view to ensure a new user can be created.
+        Ensures that a new user can successfully register.
+
+        This test sends a POST request to the signup endpoint with valid
+        new user data and verifies that the user is created in the database
+        and a 201 Created response is returned.
         """
         url = reverse('signup')
         data = {
@@ -41,7 +52,10 @@ class AuthTests(APITestCase):
 
     def test_login(self):
         """
-        Test the login view to ensure a user can log in and get a token.
+        Verifies that a registered user can log in and receive an auth token.
+
+        This test sends a POST request with correct credentials to the login
+        endpoint and checks for a 200 OK response containing an auth token.
         """
         url = reverse('login')
         data = {
@@ -55,7 +69,11 @@ class AuthTests(APITestCase):
 
     def test_logout(self):
         """
-        Test the logout view to ensure a user can log out and their token is deleted.
+        Checks that an authenticated user can log out successfully.
+
+        This test authenticates a user, then sends a POST request to the
+        logout endpoint. It verifies that the user's auth token is deleted
+        and a 204 No Content response is returned.
         """
         # First, log in the user to get a token
         token = Token.objects.create(user=self.user)

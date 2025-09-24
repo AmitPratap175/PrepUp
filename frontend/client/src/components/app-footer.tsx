@@ -1,5 +1,14 @@
 import { Link } from "wouter";
 
+/**
+ * The application's main footer component.
+ *
+ * This component displays essential links, company information, and legal notices
+ * at the bottom of every page. It is structured into several sections for
+ * clarity, including Courses, Support, and Legal.
+ *
+ * @returns {JSX.Element} The rendered footer component.
+ */
 export function AppFooter() {
   return (
     <footer className="bg-muted/50 border-t border-border">

@@ -51,6 +51,15 @@ Say your secret key is “DRAGON” (in reality, it’d be a random string of by
 At the same moment, the server does the same steps and gets the same result. If your input matches, you are authenticated.
 `;
 
+/**
+ * Renders a single current affairs article.
+ *
+ * This component retrieves the article ID from the URL and displays the
+ * corresponding content. It also provides navigation to the previous and
+ * next articles.
+ *
+ * @returns {JSX.Element} The rendered article page.
+ */
 export default function CurrentAffairsArticlePage() {
   const [, params] = useRoute("/current-affairs/:articleId");
   const articleId = params?.articleId;

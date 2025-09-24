@@ -3,8 +3,17 @@ import { useRoute, useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import SectionalTestInterface from "@/components/sectional-test-interface";
-import type { PracticeTest } from "@shared/schema";
+import type { PracticeTest, UserAnswer } from "@shared/schema";
 
+/**
+ * A page component for taking a sectional test.
+ *
+ * This component fetches the data for a specific sectional test based on its ID
+ * from the URL and then renders the `SectionalTestInterface` to provide the
+ * testing experience.
+ *
+ * @returns {JSX.Element} The rendered sectional test page.
+ */
 export default function SectionalTestPage() {
   const [, params] = useRoute("/sectional-test/:id");
   const testId = params?.id;
@@ -45,12 +54,12 @@ export default function SectionalTestPage() {
     );
   }
 
-  const handleSubmit = (userAnswers: any) => {
+  const handleSubmit = (userAnswers: UserAnswer[]) => {
     // In a real app, we would save the answers to the server
     // and then navigate to the results page.
     // For now, we'll just navigate to the results page with the answers.
     navigate(`/sectional-test/result/${testId}`, { state: { test, userAnswers } });
   };
 
-  return <SectionalTestInterface testId={test.id} section={test.subject} />;
+  return <SectionalTestInterface testId={test.id} />;
 }

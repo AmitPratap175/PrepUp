@@ -41,6 +41,17 @@ const navigation = [
   { title: "Contact", href: "/contact" },
 ];
 
+/**
+ * The main application header component.
+ *
+ * This component provides the primary navigation for the site, including links
+ * to different exam sections (CAT, GATE), user-specific pages like Bookmarks,
+ * and general information pages. It adapts its layout for mobile and desktop
+ * screens and displays different actions based on the user's authentication
+ * status.
+ *
+ * @returns {JSX.Element} The rendered header component.
+ */
 export function AppHeader() {
   const [location, setLocation] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -11,6 +11,16 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Question } from '@/types/Question';
 
+/**
+ * A page component for adding new questions to the question bank.
+ *
+ * This component provides a comprehensive form that allows authenticated users
+ * to create and submit new questions. It includes fields for exam type,
+ * subject, question text, options, and more. The form handles its own state
+ * and submits the new question data to the backend API.
+ *
+ * @returns {JSX.Element} The rendered page for adding questions.
+ */
 const AddQuestionPage: React.FC = () => {
   const { token } = useAuth();
   const [examType, setExamType] = useState('cat'); // Default value

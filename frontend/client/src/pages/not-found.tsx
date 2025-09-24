@@ -4,6 +4,15 @@ import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the 404 'Page Not Found' error page.
+ *
+ * This component is displayed when a user navigates to a URL that does not
+ * match any of the defined routes. It provides helpful links to guide the
+ * user back to the main parts of the site.
+ *
+ * @returns {JSX.Element} The rendered 404 page.
+ */
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-background">

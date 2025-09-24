@@ -16,6 +16,15 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 
+/**
+ * Renders a page for selecting and taking interactive quizzes.
+ *
+ * This component fetches a list of available quizzes (practice tests) and
+ * allows an authenticated user to start one. When a quiz is started, it
+ * renders the `NewQuizInterface` to provide the interactive quiz experience.
+ *
+ * @returns {JSX.Element} The rendered quiz selection or quiz interface page.
+ */
 export default function QuizPage() {
   const { isAuthenticated } = useAuth();
   const [location, setLocation] = useLocation();

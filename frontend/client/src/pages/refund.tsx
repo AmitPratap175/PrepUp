@@ -2,6 +2,15 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the Refund Policy page.
+ *
+ * This is a static informational page that details the conditions and
+ * procedures for requesting a refund. It is an important legal and
+ * customer service document.
+ *
+ * @returns {JSX.Element} The rendered Refund Policy page.
+ */
 export default function Refund() {
   return (
     <div className="min-h-screen bg-background">

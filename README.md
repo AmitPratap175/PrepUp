@@ -1,70 +1,130 @@
-# Ed-Tech Platform
+# PrepUp - Online Test Preparation Platform
 
-This is a full-stack educational platform with a Django backend and a React frontend.
+PrepUp is a full-stack web application designed to help students prepare for competitive examinations like CAT (Common Admission Test) and GATE (Graduate Aptitude Test in Engineering). It provides a modern, clean, and intuitive interface for taking practice tests, mock tests, and quizzes.
 
-## Features
+## ✨ Features
 
-- User authentication (login, signup)
-- Practice tests
-- Mock tests
-- Sectional tests
-- Study materials
-- And more!
+-   **Realistic Test Environment**: Simulates the experience of actual exams with timed quizzes, sectional tests, and full-length mock tests.
+-   **Comprehensive Content**: Covers various subjects across different exams, organized into categories like Quantitative Aptitude, Verbal Ability, and Data Interpretation.
+-   **User Authentication**: Secure user registration and login system.
+-   **Personalized Dashboard**: A dedicated space for users to track their progress, review past attempts, and manage their profile.
+-   **Bookmarking**: Allows users to save questions for later review.
+-   **Responsive Design**: Fully responsive interface that works on all devices, from desktops to mobile phones.
+-   **Customizable Settings**: Users can personalize their experience with theme, text size, and other display settings.
 
-## Settings
+## 🚀 Tech Stack
 
-The application now includes a comprehensive settings page that allows users to customize their experience. To access the settings page, log in and click the settings icon in the header.
+This project follows a monorepo-like structure, combining a Django backend with a React frontend.
 
-### Available Settings
+| Category       | Technology                                                                                                        |
+| -------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Backend**    | [Django](https://www.djangoproject.com/), [Django REST Framework](https://www.django-rest-framework.org/)             |
+| **Frontend**   | [React](https://react.dev/), [Vite](https://vitejs.dev/), [TypeScript](https://www.typescriptlang.org/)              |
+| **Database**   | [PostgreSQL](https://www.postgresql.org/)                                                                         |
+| **Styling**    | [Tailwind CSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/)                                        |
+| **API & State**  | [TanStack Query](https://tanstack.com/query/latest)                                                               |
+| **Deployment** | [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/)                              |
 
-- **Display Settings**: Customize the application's appearance, including theme, text size, font family, and color scheme.
-- **Quiz Preferences**: Adjust quiz-related settings, such as auto-advancing questions, showing the timer, and enabling timer warnings.
-- **Accessibility**: Improve usability with high-contrast mode, reduced animations, and other accessibility features.
-- **Notifications**: Manage email notifications for progress reminders and achievements.
+## 📂 Project Structure
 
-## Adding Questions
+The repository is organized to keep the frontend and backend code separate and maintainable.
 
-A new feature has been added to allow logged-in users to add new questions to the question bank.
-
-### Via the Frontend
-
-1.  Log in to the application.
-2.  Navigate to the `/add-question` page.
-3.  Fill out the form with the new question details.
-4.  Click "Add Question".
-
-### Via the API
-
-You can also add questions directly via the API by sending a `POST` request to `/api/questions/add/`.
-
-**Endpoint:** `/api/questions/add/`
-
-**Method:** `POST`
-
-**Authentication:** Required (user must be logged in)
-
-**Request Body:**
-
-```json
-{
-  "examType": "cat",
-  "subject": "quantitative-aptitude",
-  "question": {
-    "passage_text": "An optional passage for the question.",
-    "question_text": "The text of the question.",
-    "options": [
-      {
-        "option_text": "Option A",
-        "is_correct": false
-      },
-      {
-        "option_text": "Option B (Correct)",
-        "is_correct": true
-      }
-    ],
-    "solution_text": "An optional explanation for the solution."
-  }
-}
+```
+/
+├── frontend/             # Frontend React application (Vite)
+│   ├── client/
+│   │   ├── src/
+│   │   └── ...
+│   └── ...
+├── auth_server/          # Backend Django application
+│   ├── api/              # API-related logic, views, and serializers
+│   ├── users/            # User management and authentication
+│   └── auth_project/     # Django project settings
+├── data/                 # Static JSON data for quizzes
+│   ├── cat/
+│   └── gate/
+├── docker-compose.yml    # Docker Compose configuration
+└── ...
 ```
 
-The `examType` and `subject` fields determine which JSON file the question will be added to. For example, the data above would be added to `auth_server/data/cat/quantitative-aptitude.json`.
+## 🏁 Getting Started
+
+Follow these instructions to get the project up and running on your local machine using Docker.
+
+### Prerequisites
+
+-   [Docker](https://www.docker.com/get-started)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2.  **Set up environment variables:**
+
+    The backend service requires database credentials. These are typically set in the `docker-compose.yml` file or a separate `.env` file. Refer to `auth_server/auth_project/settings.py` for the required environment variables (`DB_NAME`, `DB_USER`, `DB_PASS`, `DB_HOST`, `DB_PORT`).
+
+3.  **Build and run the application with Docker Compose:**
+    ```bash
+    docker-compose up --build
+    ```
+
+    This command will build the Docker images for the frontend and backend services and start the containers.
+
+-   The frontend will be accessible at `http://localhost:3000`.
+-   The backend API will be running on `http://localhost:8000`.
+
+### Running without Docker
+
+#### Backend
+
+1.  **Navigate to the backend directory:**
+    ```bash
+    cd auth_server
+    ```
+2.  **Install Python dependencies:**
+    ```bash
+    pip install -r requirements.txt # Or use your preferred package manager
+    ```
+3.  **Run database migrations:**
+    ```bash
+    python manage.py migrate
+    ```
+4.  **Start the development server:**
+    ```bash
+    python manage.py runserver
+    ```
+
+#### Frontend
+
+1.  **Navigate to the frontend directory:**
+    ```bash
+    cd frontend/client
+    ```
+2.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+## 📜 Available Scripts
+
+### Frontend (`frontend/client`)
+
+-   `npm run dev`: Starts the Vite development server.
+-   `npm run build`: Bundles the application for production.
+-   `npm run preview`: Serves the production build locally.
+
+### Backend (`auth_server`)
+
+-   `python manage.py runserver`: Starts the Django development server.
+-   `python manage.py migrate`: Applies database migrations.
+-   `python manage.py createsuperuser`: Creates an admin user.
+-   `python manage.py test`: Runs the test suite.
