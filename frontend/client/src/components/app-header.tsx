@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Settings } from "lucide-react";
+import { Settings, ChevronUp, ChevronDown } from "lucide-react";
 import { 
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +10,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/contexts/auth-context";
+import { useHeader } from "@/contexts/header-context";
+import { cn } from "@/lib/utils";
 
 const navigation = [
   { title: "Home", href: "/" },
@@ -45,14 +47,26 @@ export function AppHeader() {
   const [location, setLocation] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isAuthenticated, logout } = useAuth();
+  const { isHeaderVisible, toggleHeader } = useHeader();
 
   const handleLogout = () => {
     logout();
     setLocation("/");
   };
 
+  const showHeaderToggle = [
+    "/practice-test",
+    "/mock-test",
+    "/sectional-test",
+    "/quiz",
+    "/bookmarks",
+  ].some(path => location.startsWith(path));
+
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header className={cn(
+      "sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-transform duration-300",
+      !isHeaderVisible && "-translate-y-full"
+    )}>
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
         <Link href="/" className="flex items-center gap-2 sm:gap-3 text-foreground hover-elevate">
           <span className="material-symbols-outlined text-2xl sm:text-3xl text-primary">school</span>
@@ -146,7 +160,7 @@ export function AppHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="p-4">
+              <div className="p-4 h-full overflow-y-auto">
                 <h2 className="text-lg font-semibold mb-4">Menu</h2>
                 <nav className="flex flex-col gap-4">
                   {navigation.map((item) => (
@@ -219,6 +233,20 @@ export function AppHeader() {
           </Sheet>
         </div>
       </div>
+      {showHeaderToggle && (
+        <div className="absolute top-full left-1/2 -translate-x-1/2">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleHeader}
+            className="rounded-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-l border-r border-border"
+            aria-expanded={isHeaderVisible}
+          >
+            {isHeaderVisible ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+            <span className="sr-only">Toggle Header</span>
+          </Button>
+        </div>
+      )}
     </header>
   );
 }

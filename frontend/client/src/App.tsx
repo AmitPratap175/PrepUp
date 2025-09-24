@@ -31,6 +31,7 @@ import SectionalTestResultPage from "@/pages/sectional-test-result";
 import PracticeTestResultPage from "@/pages/practice-test-result";
 import { AuthProvider } from "@/contexts/auth-context";
 import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
+import { HeaderProvider } from "@/contexts/header-context";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
@@ -104,7 +105,9 @@ function WrappedApp() {
       <TooltipProvider>
         <AuthProvider>
           <SettingsProvider>
-            <App />
+            <HeaderProvider>
+              <App />
+            </HeaderProvider>
           </SettingsProvider>
         </AuthProvider>
       </TooltipProvider>
