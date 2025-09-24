@@ -20382,7 +20382,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "10",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -20413,7 +20413,7 @@
       "passage_text": "",
       "question_text": "Let $f: R\\longrightarrow R$, $g: R\\longrightarrow R$, $h: R\\longrightarrow R$ be functions such that $f\\left(x\\right)=x^3+3x+2$, $g\\left(f\\left(x\\right)\\right)=x$ and $h\\left(g\\left(g\\left(x\\right)\\right)\\right)=x$ for all $x\\in\\ R$ . Then calculate the value of $h\\left(0\\right)$.",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "16",
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 404052)\n\n**Passage:**\nLet f: R ⟶ R R\\longrightarrow R\\ R ⟶ R , g: R ⟶ R R\\longrightarrow R\\ R ⟶ R , h: R ⟶ R R\\longrightarrow R\\ R ⟶ R be functions such that f ( x ) = x 3 + 3 x + 2 f\\left(x\\right)=x^3+3x+2 f ( x ) = x 3 + 3 x + 2 , g ( f ( x ) ) = x g\\left(f\\left(x\\right)\\right)=x g ( f ( x ) ) = x and h ( g ( g ( x ) ) ) = x h\\left(g\\left(g\\left(x\\right)\\right)\\right)=x h ( g ( g ( x ) ) ) = x for all x ∈ R x\\in\\ R x ∈ R . Then calculate the value of h ( 0 ) h\\left(0\\right) h ( 0 ) .\n\nLet f: R ⟶ R R\\longrightarrow R\\ R ⟶ R , g: R ⟶ R R\\longrightarrow R\\ R ⟶ R , h: R ⟶ R R\\longrightarrow R\\ R ⟶ R be functions such that f ( x ) = x 3 + 3 x + 2 f\\left(x\\right)=x^3+3x+2 f ( x ) = x 3 + 3 x + 2 , g ( f ( x ) ) = x g\\left(f\\left(x\\right)\\right)=x g ( f ( x ) ) = x and h ( g ( g ( x ) ) ) = x h\\left(g\\left(g\\left(x\\right)\\right)\\right)=x h ( g ( g ( x ) ) ) = x for all x ∈ R x\\in\\ R x ∈ R . Then calculate the value of h ( 0 ) h\\left(0\\right) h ( 0 ) .\n\n**Options:**\n\n**Correct Answer:** null"
@@ -20433,7 +20433,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "4",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -20458,7 +20458,7 @@
       "passage_text": "",
       "question_text": "A function $f(x)$ is defined as $f(x) = \\dfrac{1}{1 + 3^{1 - 2x}}$​ for every real value of $x$ . What is the value of $f(\\dfrac{1}{3}) + f(\\dfrac{2}{3})$?",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "1",
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 226358)\n\n**Passage:**\nA function f ( x ) f(x) f ( x ) is defined as f ( x ) = 1 1 + 3 1 − 2 x f(x) = \\dfrac{1}{1 + 3^{1 - 2x}} f ( x ) = 1 + 3 1 − 2 x 1 ​ for every real value of x x x . What is the value of f ( 1 3 ) + f ( 2 3 ) f(\\dfrac{1}{3}) + f(\\dfrac{2}{3}) f ( 3 1 ​ ) + f ( 3 2 ​ ) ?\n\nA function f ( x ) f(x) f ( x ) is defined as f ( x ) = 1 1 + 3 1 − 2 x f(x) = \\dfrac{1}{1 + 3^{1 - 2x}} f ( x ) = 1 + 3 1 − 2 x 1 ​ for every real value of x x x . What is the value of f ( 1 3 ) + f ( 2 3 ) f(\\dfrac{1}{3}) + f(\\dfrac{2}{3}) f ( 3 1 ​ ) + f ( 3 2 ​ ) ?\n\n**Options:**\n\n**Correct Answer:** null"
@@ -20484,7 +20484,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "15.9375",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
