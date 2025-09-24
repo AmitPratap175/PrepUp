@@ -2,6 +2,15 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the Privacy Policy page.
+ *
+ * This is a static informational page that outlines the company's policies
+ * regarding the collection, use, and protection of user data. It is a
+ * crucial legal document for any web application.
+ *
+ * @returns {JSX.Element} The rendered Privacy Policy page.
+ */
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-background">

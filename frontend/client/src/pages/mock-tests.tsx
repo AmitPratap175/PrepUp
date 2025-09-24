@@ -11,6 +11,16 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
+/**
+ * Renders a page that lists all available mock tests.
+ *
+ * This component fetches and displays a list of mock tests, allowing users
+ * to select one to start. When a test is started, the user is navigated
+
+* to the mock test interface.
+ *
+ * @returns {JSX.Element} The rendered mock tests page.
+ */
 export default function MockTestsPage() {
   const [, navigate] = useLocation();
   const { toast } = useToast();

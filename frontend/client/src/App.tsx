@@ -35,6 +35,15 @@ import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
 
+/**
+ * Defines the main routing configuration for the application.
+ *
+ * This component uses `wouter` to map URL paths to their corresponding page components,
+ * covering all major sections of the application from static pages to dynamic quiz
+ * and test interfaces.
+ *
+ * @returns {JSX.Element} The router switch component.
+ */
 function Router() {
   return (
     <Switch>
@@ -70,6 +79,14 @@ function Router() {
   );
 }
 
+/**
+ * The main application component.
+ *
+ * This component applies global settings such as theme and text size, and it
+ * renders the main router and the toaster for notifications.
+ *
+ * @returns {JSX.Element} The main application layout.
+ */
 function App() {
   const { settings } = useSettings();
 
@@ -98,6 +115,15 @@ function App() {
   );
 }
 
+/**
+ * A wrapper component that provides all necessary contexts to the application.
+ *
+ * This component wraps the main `App` with providers for React Query, tooltips,
+ * authentication, and settings, ensuring that these contexts are available
+ * to all child components.
+ *
+ * @returns {JSX.Element} The application wrapped in context providers.
+ */
 function WrappedApp() {
   return (
     <QueryClientProvider client={queryClient}>

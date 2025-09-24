@@ -7,12 +7,29 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
+/**
+ * @interface QuizInterfaceProps
+ * @property {PracticeTest} test - The test object containing questions and details.
+ * @property {() => void} onExit - Function to be called when the user exits the quiz.
+ * @property {(answers: UserAnswer[]) => void} onSubmit - Function to be called when the user submits the quiz.
+ */
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
   onSubmit: (answers: UserAnswer[]) => void;
 }
 
+/**
+ * A comprehensive quiz interface for taking practice tests.
+ *
+ * This component provides a full-featured quiz experience, including a timer,
+ * question palette for navigation, bookmarking functionality, and support for
+ * both multiple-choice and text-input questions. It also handles displaying
+ * passages and images associated with questions.
+ *
+ * @param {QuizInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered quiz interface.
+ */
 export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

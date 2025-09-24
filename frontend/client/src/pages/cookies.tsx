@@ -2,6 +2,15 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the Cookie Policy page.
+ *
+ * This is a static informational page that explains the types of cookies
+ * the application uses, how they are managed, and what their purpose is.
+ * It is important for GDPR compliance and user transparency.
+ *
+ * @returns {JSX.Element} The rendered Cookie Policy page.
+ */
 export default function Cookies() {
   return (
     <div className="min-h-screen bg-background">

@@ -7,6 +7,11 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
 
+/**
+ * @interface MockTestInterfaceProps
+ * @property {PracticeTest} test - The mock test data, including all questions.
+ * @property {(answers: UserAnswer[], timeSpent: number) => void} onSubmit - Callback function to execute when the test is submitted.
+ */
 interface MockTestInterfaceProps {
   test: PracticeTest;
   onSubmit: (answers: UserAnswer[], timeSpent: number) => void;
@@ -15,6 +20,17 @@ interface MockTestInterfaceProps {
 const SECTIONS = ["varc", "dilr", "quants"];
 const SECTION_TIME = 40 * 60; // 40 minutes in seconds
 
+/**
+ * Renders a full mock test interface, divided into timed sections.
+ *
+ * This component manages the entire state of a mock test, including section
+ * timing, question navigation, answer tracking, and review marking. It
+ * automatically transitions between sections when the timer expires and
+ * handles the final submission of the test.
+ *
+ * @param {MockTestInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered mock test interface.
+ */
 export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);

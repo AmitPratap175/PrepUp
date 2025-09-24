@@ -1,3 +1,10 @@
+"""
+URL patterns for the 'users' app.
+
+This module defines the routing for all user-related endpoints, including
+authentication (signup, login, logout), user profile details, and bookmark
+management.
+"""
 from django.urls import path
 from .views import SignupView, LoginView, LogoutView, UserDetailsView, BookmarkListView, BookmarkCreateView, BookmarkDeleteView
 

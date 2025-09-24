@@ -2,6 +2,15 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the 'About Us' page.
+ *
+ * This component provides information about the company's mission, story,
+ * team, and values. It is a static page designed to build trust and
+ * connect with users.
+ *
+ * @returns {JSX.Element} The rendered 'About Us' page.
+ */
 export default function About() {
   return (
     <div className="min-h-screen bg-background">

@@ -5,6 +5,20 @@ import jwt
 from django.conf import settings
 
 def token_required(f):
+    """
+    Decorator to ensure that a user is authenticated with a valid JWT token.
+
+    This decorator checks for a JWT token in the 'Authorization' header,
+    decodes it, and attaches the corresponding user object to the request.
+    If the token is missing, expired, or invalid, it returns a 401
+    Unauthorized response.
+
+    Args:
+        f: The view function to be decorated.
+
+    Returns:
+        The decorated function.
+    """
     @wraps(f)
     def decorated_function(request, *args, **kwargs):
         auth_header = request.headers.get('Authorization')

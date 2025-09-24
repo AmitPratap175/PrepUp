@@ -14,12 +14,28 @@ import {
 } from "@/components/ui/table";
 import type { Question } from "@shared/schema";
 
+/**
+ * @interface ResultData
+ * Defines the structure for storing sectional test result data.
+ * @property {Record<string, string>} answers - A map of question IDs to user answers.
+ * @property {Question[]} questions - An array of all questions in the test.
+ * @property {number} timeTaken - The time spent by the user, in seconds.
+ */
 interface ResultData {
   answers: Record<string, string>;
   questions: Question[];
   timeTaken: number;
 }
 
+/**
+ * Renders the results page for a completed sectional test.
+ *
+ * This component retrieves the test results from local storage and displays
+ * a detailed analysis, including score, accuracy, time taken, and a
+ * question-by-question review with correct answers and explanations.
+ *
+ * @returns {JSX.Element} The rendered sectional test result page.
+ */
 export default function SectionalTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);

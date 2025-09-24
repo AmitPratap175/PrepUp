@@ -21,6 +21,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+/**
+ * Renders the signup page for new users.
+ *
+ * This component provides a form for users to register by providing their
+ * name, email, password, and selecting an exam type. It handles the signup
+ * process and provides user feedback via toasts.
+ *
+ * @returns {JSX.Element} The rendered signup page.
+ */
 export default function SignupPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

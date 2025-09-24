@@ -14,12 +14,29 @@ import {
 } from "@/components/ui/table";
 import type { Question } from "@shared/schema";
 
+/**
+ * @interface ResultData
+ * Defines the structure for storing test result data in local storage.
+ * @property {Record<string, string>} answers - A map of question IDs to the user's answers.
+ * @property {Question[]} questions - An array of all questions in the test.
+ * @property {number} timeTaken - The total time the user spent on the test, in seconds.
+ */
 interface ResultData {
   answers: Record<string, string>;
   questions: Question[];
   timeTaken: number;
 }
 
+/**
+ * Renders the results page for a completed practice test.
+ *
+ * This component retrieves the test results from local storage based on the
+ * `testId` from the URL. It then calculates and displays key metrics like
+ * score, accuracy, and time taken, along with a detailed review of each
+ * question.
+ *
+ * @returns {JSX.Element} The rendered practice test result page.
+ */
 export default function PracticeTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);

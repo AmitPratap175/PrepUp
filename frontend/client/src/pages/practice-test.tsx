@@ -11,6 +11,15 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
+/**
+ * Renders a page for selecting and taking practice tests.
+ *
+ * This component displays a list of available practice tests, which can be
+ * filtered by exam type. When a user starts a test, it initiates a test
+ * session and renders the `PracticeTestInterface`.
+ *
+ * @returns {JSX.Element} The rendered practice test page.
+ */
 export default function PracticeTestPage() {
   const [location] = useLocation();
   const { toast } = useToast();

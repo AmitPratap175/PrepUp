@@ -10,6 +10,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import type { Course } from "@shared/schema";
 
+/**
+ * Renders a page displaying available courses.
+ *
+ * This component fetches a list of all courses and allows users to filter
+ * them by exam type (e.g., CAT, GATE). It displays course details in a card
+ * format and provides an "Enroll Now" button for each course.
+ *
+ * @returns {JSX.Element} The rendered courses page.
+ */
 export default function Courses() {
   const [location] = useLocation();
   const { toast } = useToast();

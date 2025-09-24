@@ -4,7 +4,20 @@ import json
 import os
 
 class AddQuestionAPITest(TestCase):
+    """
+    Test suite for the 'add question' API endpoint.
+
+    This class tests the functionality of the endpoint responsible for adding
+    new questions to the data files, including success scenarios for
+    authenticated users and failure scenarios for unauthenticated requests.
+    """
     def setUp(self):
+        """
+        Sets up the test environment before each test.
+
+        This method creates a test user, logs them in, and prepares a
+        temporary data file for the test questions.
+        """
         self.client = Client()
         self.user = get_user_model().objects.create_user(
             email='testuser@example.com',
@@ -21,11 +34,23 @@ class AddQuestionAPITest(TestCase):
             json.dump({"questions": []}, f)
 
     def tearDown(self):
+        """
+        Cleans up the test environment after each test.
+
+        This method removes the temporary data file created during setup.
+        """
         # Clean up the dummy file
         if os.path.exists(self.test_file_path):
             os.remove(self.test_file_path)
 
     def test_add_question_success(self):
+        """
+        Tests successful question creation by an authenticated user.
+
+        Verifies that a POST request with valid data to the 'add' endpoint
+        returns a 201 status code and correctly adds the question to the
+        data file.
+        """
         question_data = {
             "passage_text": "This is a test passage.",
             "question_text": "This is a test question?",
@@ -52,6 +77,12 @@ class AddQuestionAPITest(TestCase):
             self.assertEqual(data['questions'][0]['question_text'], "This is a test question?")
 
     def test_add_question_unauthenticated(self):
+        """
+        Tests that an unauthenticated user cannot add a question.
+
+        Verifies that a POST request from a logged-out client is redirected
+        (returns a 302 status code), preventing unauthorized access.
+        """
         self.client.logout()
         response = self.client.post('/api/questions/add/', '{}', content_type='application/json')
         # Expecting a redirect to login page, so 302

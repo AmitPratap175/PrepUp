@@ -9,6 +9,15 @@ import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import type { PracticeTest } from "@shared/schema";
 
+/**
+ * Renders a page listing all available sectional tests.
+ *
+ * This component fetches and displays a list of sectional tests, allowing
+ * users to select one to start. When a test is selected, it navigates
+ * the user to the corresponding test-taking page.
+ *
+ * @returns {JSX.Element} The rendered sectional tests page.
+ */
 export default function SectionalTestsPage() {
   const [, navigate] = useLocation();
   const { toast } = useToast();

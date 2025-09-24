@@ -4,6 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+/**
+ * Renders the careers page, showcasing job openings and company culture.
+ *
+ * This component displays information about open positions, company benefits,
+ * and the hiring process. It is designed to attract potential candidates and
+* provide a comprehensive overview of what it's like to work at the company.
+ *
+ * @returns {JSX.Element} The rendered careers page.
+ */
 export default function Careers() {
   const jobOpenings = [
     {

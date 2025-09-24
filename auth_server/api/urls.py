@@ -1,3 +1,10 @@
+"""
+URL patterns for the 'api' app.
+
+This module defines the routing for all API endpoints, mapping URL paths
+to their corresponding view functions. It includes routes for accessing
+courses, study materials, tests, and user-specific data.
+"""
 from django.urls import path
 from . import views
 

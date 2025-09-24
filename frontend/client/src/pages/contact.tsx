@@ -8,6 +8,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
+/**
+ * Renders the contact page for the application.
+ *
+ * This component includes a contact form for users to send messages, along
+ * with detailed contact information such as office address, phone numbers,
+ * and email addresses. It uses a local state to manage the form data.
+ *
+ * @returns {JSX.Element} The rendered contact page.
+ */
 export default function Contact() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({

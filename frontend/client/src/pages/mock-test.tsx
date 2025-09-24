@@ -5,6 +5,15 @@ import { AppFooter } from "@/components/app-footer";
 import MockTestInterface from "@/components/mock-test-interface";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
+/**
+ * A page component for taking a mock test.
+ *
+ * This component fetches the data for a specific mock test based on the
+ * `testId` from the URL, and then renders the `MockTestInterface` to
+ * provide the testing experience.
+ *
+ * @returns {JSX.Element} The rendered mock test page.
+ */
 export default function MockTestPage() {
   const [, params] = useRoute("/mock-test/:testId");
   const testId = params?.testId;

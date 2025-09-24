@@ -20,10 +20,25 @@ import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+/**
+ * @interface SectionalTestInterfaceProps
+ * @property {string} testId - The ID of the sectional test to be taken.
+ */
 interface SectionalTestInterfaceProps {
   testId: string;
 }
 
+/**
+ * An interface for taking a timed sectional test.
+ *
+ * This component fetches the test data based on the provided `testId` and
+ * provides a complete testing environment. It includes a timer, question
+ * navigation, answer handling, and a confirmation dialog for submission.
+ * Results are saved to local storage upon completion.
+ *
+ * @param {SectionalTestInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered sectional test interface.
+ */
 export default function SectionalTestInterface({ testId }: SectionalTestInterfaceProps) {
   const [, navigate] = useLocation();
   const { toast } = useToast();

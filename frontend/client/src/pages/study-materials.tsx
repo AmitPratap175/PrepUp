@@ -9,6 +9,15 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import type { StudyMaterial } from "@shared/schema";
 
+/**
+ * Renders a page for browsing and filtering study materials.
+ *
+ * This component fetches a list of all available study materials and provides
+ * search and filter functionality to help users find the content they need.
+ * Each material is displayed in a card with relevant details.
+ *
+ * @returns {JSX.Element} The rendered study materials page.
+ */
 export default function StudyMaterials() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedExamType, setSelectedExamType] = useState<string>("all");

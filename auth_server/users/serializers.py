@@ -6,10 +6,11 @@ User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):
     """
-    Serializer for the User model.
+    Serializer for the User model, used for registration.
 
-    This serializer is used to convert User model instances to JSON and vice versa.
-    It is used in the signup view to create new users.
+    This serializer handles the conversion of User model instances to JSON
+    and validates incoming data for creating new users. The password is
+    write-only to ensure it is not exposed in API responses.
     """
     password = serializers.CharField(write_only=True)
 
@@ -19,7 +20,16 @@ class UserSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         """
-        Create and return a new User instance, given the validated data.
+        Creates a new user instance using the validated data.
+
+        This method calls the custom user manager's `create_user` method
+        to ensure the password is properly hashed and saved.
+
+        Args:
+            validated_data (dict): The validated data for creating the user.
+
+        Returns:
+            The newly created User instance.
         """
         user = User.objects.create_user(
             email=validated_data['email'],
@@ -30,6 +40,13 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
 class BookmarkSerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Bookmark model.
+
+    This serializer handles the conversion of Bookmark instances to JSON.
+    The 'user' field is read-only and displays the user's email for
+    context.
+    """
     user = serializers.ReadOnlyField(source='user.email')
     class Meta:
         model = Bookmark

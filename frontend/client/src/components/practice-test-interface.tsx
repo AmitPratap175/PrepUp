@@ -8,10 +8,25 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
 
+/**
+ * @interface PracticeTestInterfaceProps
+ * @property {PracticeTest} test - The practice test data, including questions and duration.
+ */
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
 }
 
+/**
+ * Provides a user interface for taking a practice test.
+ *
+ * This component manages the state of a practice test, including a countdown
+ * timer, navigation between questions, and tracking of user answers. It
+ * features a question palette for quick navigation and allows users to mark
+ * questions for review. Upon submission, it stores the results locally.
+ *
+ * @param {PracticeTestInterfaceProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered practice test interface.
+ */
 export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   const [, navigate] = useLocation();
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);

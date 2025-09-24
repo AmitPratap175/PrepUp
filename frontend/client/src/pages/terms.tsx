@@ -2,6 +2,15 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Card, CardContent } from "@/components/ui/card";
 
+/**
+ * Renders the Terms of Service page.
+ *
+ * This is a static informational page that outlines the legal terms and
+ * conditions for using the application. It is a critical legal document
+ * for defining the relationship between the company and its users.
+ *
+ * @returns {JSX.Element} The rendered Terms of Service page.
+ */
 export default function Terms() {
   return (
     <div className="min-h-screen bg-background">
