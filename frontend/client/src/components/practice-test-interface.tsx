@@ -144,24 +144,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
             <p className="text-xs sm:text-sm text-muted-foreground">{test.subject} Section</p>
           </div>
           <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="lg:hidden"
-            >
-              <PanelLeftClose className="h-4 w-4" />
-              <span className="sr-only">Toggle Palette</span>
-            </Button>
-            <Button 
-              variant="outline" 
-              size="sm"
-              onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-              className="hidden lg:flex"
-            >
-              {isPaletteVisible ? <PanelLeftClose className="h-4 w-4 mr-2" /> : <PanelRightClose className="h-4 w-4 mr-2" />}
-              {isPaletteVisible ? "Hide Palette" : "Show Palette"}
-            </Button>
+
             <div className="text-center">
               <div className="text-lg font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
@@ -187,12 +170,23 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col lg:flex-row overflow-hidden">
+      <div className="flex flex-1 flex-col lg:flex-row overflow-hidden relative">
+        {/* Palette Toggle Button */}
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => setIsPaletteVisible(!isPaletteVisible)}
+          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${
+            isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
+          }`}
+        >
+          {isPaletteVisible ? <PanelLeftClose className="h-4 w-4" /> : <PanelRightClose className="h-4 w-4" />}
+        </Button>
         {/* Question Navigation (Scrollable) */}
         {isPaletteVisible && (
-          <div className="w-full lg:w-1/4 xl:w-1/5 bg-muted/30 p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-border overflow-y-auto">
+          <div className="w-64 bg-muted/30 p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
-            <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 xl:grid-cols-6 gap-2 mb-6">
+            <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 gap-2 mb-6">
               {questions.map((_, index) => {
                 const status = getQuestionStatus(index);
                 return (
