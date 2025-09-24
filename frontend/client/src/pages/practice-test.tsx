@@ -23,7 +23,7 @@ export default function PracticeTestPage() {
   const examTypeFromUrl = urlParams.get('exam');
 
   const { data: practiceTests, isLoading } = useQuery<PracticeTest[]>({
-    queryKey: ["/api/practice-tests", ...(examTypeFromUrl ? [`?examType=${examTypeFromUrl}`] : [])],
+    queryKey: [`/api/practice-tests${examTypeFromUrl ? `?exam=${examTypeFromUrl}` : ''}`],
   });
 
   const { data: currentTest } = useQuery<PracticeTest>({
@@ -33,7 +33,7 @@ export default function PracticeTestPage() {
 
   const startTestMutation = useMutation({
     mutationFn: async ({ testId, userId }: { testId: string; userId: string }) => {
-      return apiRequest("POST", "/api/test-sessions", {
+      return apiRequest("POST", "/api/test-sessions/", {
         testId,
         userId,
         totalQuestions: currentTest?.totalQuestions || 0,
