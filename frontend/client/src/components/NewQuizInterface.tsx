@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { CalculatorDialog } from "./ui/calculator";
 
 /**
  * @interface QuizInterfaceProps
@@ -191,9 +192,9 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
       {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-6 border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-          <div>
-            <h3 className="text-xl font-bold text-foreground">{test.title}</h3>
-            <p className="text-sm text-muted-foreground">{test.subject} Section</p>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-xl font-bold text-foreground truncate">{test.title}</h3>
+            <p className="text-sm text-muted-foreground truncate">{test.subject} Section</p>
           </div>
           <div className="flex items-center gap-6">
 
@@ -209,6 +210,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               </div>
               <div className="text-xs text-muted-foreground">Questions</div>
             </div>
+            <CalculatorDialog />
             <Button 
               variant="destructive" 
               size="sm"

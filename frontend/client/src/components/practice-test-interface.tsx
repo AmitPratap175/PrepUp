@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { CalculatorDialog } from "./ui/calculator";
 
 /**
  * @interface PracticeTestInterfaceProps
@@ -154,9 +155,9 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-4 sm:p-6 border-b border-border">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <h3 className="text-lg sm:text-xl font-bold text-foreground">{test.title}</h3>
-            <p className="text-xs sm:text-sm text-muted-foreground">{test.subject} Section</p>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground truncate">{test.title}</h3>
+            <p className="text-xs sm:text-sm text-muted-foreground truncate">{test.subject} Section</p>
           </div>
           <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
 
@@ -172,6 +173,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               </div>
               <div className="text-xs text-muted-foreground">Questions</div>
             </div>
+            <CalculatorDialog />
             <Button 
               variant="destructive" 
               size="sm"
