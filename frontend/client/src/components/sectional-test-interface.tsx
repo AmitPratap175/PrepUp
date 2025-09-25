@@ -19,6 +19,7 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { CalculatorDialog } from "./ui/calculator";
 
 /**
  * @interface SectionalTestInterfaceProps
@@ -203,9 +204,9 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
     <div className="flex flex-col h-screen bg-background">
       <div className="bg-muted/50 p-6 border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-          <div>
-            <h3 className="text-xl font-bold text-foreground">{test.title}</h3>
-            <p className="text-sm text-muted-foreground">{test.subject} Section</p>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-xl font-bold text-foreground truncate">{test.title}</h3>
+            <p className="text-sm text-muted-foreground truncate">{test.subject} Section</p>
           </div>
           <div className="flex items-center gap-6">
 
@@ -221,6 +222,7 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
               </div>
               <div className="text-xs text-muted-foreground">Questions</div>
             </div>
+            <CalculatorDialog />
             <Button
               variant="destructive"
               size="sm"

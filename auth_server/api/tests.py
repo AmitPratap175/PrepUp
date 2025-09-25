@@ -1,5 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
+from .tests_token_decorator import *
 
 class APITestCase(TestCase):
     """
@@ -55,6 +56,12 @@ class APITestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         data = response.json()
         self.assertEqual(data['id'], course_id)
+
+    def test_get_course_detail_not_found(self):
+        """Tests the endpoint for retrieving a non-existent course."""
+        url = '/api/courses/999/'
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 404)
 
     def test_get_study_materials(self):
         """Tests the endpoint for retrieving all study materials."""
