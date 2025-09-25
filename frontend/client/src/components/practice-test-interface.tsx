@@ -154,25 +154,25 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   return (
     <div className="flex flex-col h-screen bg-background">
       {/* Test Header (Sticky) */}
-      <div className="bg-muted/50 p-4 sm:p-6 border-b border-border">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="bg-muted/50 p-4 border-b border-border">
+        <div className="flex flex-row items-center justify-between gap-2 sm:gap-4">
           <div className="flex-1 min-w-0">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground truncate">{test.title}</h3>
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground truncate">{test.title}</h3>
             <p className="text-xs sm:text-sm text-muted-foreground truncate">{test.subject} Section</p>
           </div>
-          <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6">
+          <div className="flex items-center gap-2 sm:gap-4">
 
             <div className="text-center">
-              <div className="text-lg font-bold text-destructive" data-testid="timer-display">
+              <div className="text-sm sm:text-base font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
               </div>
               <div className="text-xs text-muted-foreground">Time Left</div>
             </div>
-            <div className="text-center">
-              <div className="text-lg font-bold text-foreground" data-testid="question-counter">
+            <div className="text-center hidden sm:block">
+              <div className="text-sm sm:text-base font-bold text-foreground" data-testid="question-counter">
                 {testState.currentQuestionIndex + 1}/{test.totalQuestions}
               </div>
-              <div className="text-xs text-muted-foreground">Questions</div>
+              <div className="text-xs text-muted-foreground">Question</div>
             </div>
             <Button variant="outline" size="icon" onClick={() => setIsCalculatorVisible(!isCalculatorVisible)}>
               <CalculatorIcon className="h-4 w-4" />
