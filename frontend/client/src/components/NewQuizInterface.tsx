@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
+import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon } from "lucide-react";
+
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { CalculatorDialog } from "./ui/calculator";
+import { Calculator } from "./ui/calculator";
 
 /**
  * @interface QuizInterfaceProps
@@ -33,6 +34,7 @@ interface QuizInterfaceProps {
  */
 export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
+  const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
@@ -210,7 +212,9 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               </div>
               <div className="text-xs text-muted-foreground">Questions</div>
             </div>
-            <CalculatorDialog />
+            <Button variant="outline" size="icon" onClick={() => setIsCalculatorVisible(!isCalculatorVisible)}>
+              <CalculatorIcon className="h-4 w-4" />
+            </Button>
             <Button 
               variant="destructive" 
               size="sm"
@@ -221,6 +225,8 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
           </div>
         </div>
       </div>
+
+      {isCalculatorVisible && <Calculator onClose={() => setIsCalculatorVisible(false)} />}
 
       {/* Main Content */}
       <div className="flex flex-1 overflow-hidden relative">
