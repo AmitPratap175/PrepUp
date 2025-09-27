@@ -292,6 +292,84 @@ def user_progress_by_course(request, user_id, course_id):
     else:
         return JsonResponse({"error": "Progress not found"}, status=404)
 
+
+def user_analytics(request, user_id):
+    """
+    Retrieves and computes analytics data for a specific user.
+
+    Args:
+        request: The HttpRequest object.
+        user_id: The ID of the user.
+
+    Returns:
+        A JsonResponse containing the user's computed analytics.
+    """
+    user_sessions = storage.get_test_sessions_by_user(user_id)
+    all_sessions = storage.get_all_test_sessions()
+
+    # Overall Progress
+    completed_user_sessions = [s for s in user_sessions if s.get('isCompleted')]
+    if completed_user_sessions:
+        overall_progress = sum(s.get('score', 0) for s in completed_user_sessions) / len(completed_user_sessions)
+        # Placeholder for progress change
+        progress_change = 5
+    else:
+        overall_progress = 0
+        progress_change = 0
+
+    # Subject Scores
+    subject_scores = {}
+    for session in completed_user_sessions:
+        subject = session.get('subject')
+        if subject:
+            if subject not in subject_scores:
+                subject_scores[subject] = []
+            subject_scores[subject].append(session.get('score', 0))
+
+    avg_subject_scores = {k: sum(v) / len(v) for k, v in subject_scores.items()}
+
+    # Performance Comparison
+    all_completed_sessions = [s for s in all_sessions if s.get('isCompleted')]
+    all_subject_scores = {}
+    for session in all_completed_sessions:
+        subject = session.get('subject')
+        if subject:
+            if subject not in all_subject_scores:
+                all_subject_scores[subject] = []
+            all_subject_scores[subject].append(session.get('score', 0))
+
+    avg_all_subject_scores = {k: sum(v) / len(v) for k, v in all_subject_scores.items()}
+
+    performance_comparison = {
+        subject: {
+            'user': avg_subject_scores.get(subject, 0),
+            'average': avg_all_subject_scores.get(subject, 0)
+        } for subject in avg_subject_scores.keys()
+    }
+
+    # Performance Timeline
+    performance_timeline = sorted(
+        [{
+            'title': f"Completed {s.get('testType', 'test')}: {s.get('subject', '')}",
+            'date': s.get('endTime'),
+            'score': s.get('score'),
+            'total': s.get('maxScore')
+        } for s in completed_user_sessions],
+        key=lambda x: x['date'],
+        reverse=True
+    )
+
+    analytics_data = {
+        'overallProgress': round(overall_progress, 2),
+        'progressChange': progress_change,
+        'subjectScores': avg_subject_scores,
+        'performanceComparison': performance_comparison,
+        'performanceTimeline': performance_timeline
+    }
+
+    return JsonResponse(analytics_data)
+
+
 @csrf_exempt
 @login_required
 def add_question_view(request):

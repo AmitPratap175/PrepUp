@@ -1,6 +1,6 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import Latex from "react-latex-next";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,18 +15,21 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
+import type { PracticeTest, Question, TestSession } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose, Calculator as CalculatorIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Calculator } from "./ui/calculator";
+import { apiRequest } from "@/lib/queryClient";
 
 /**
  * @interface SectionalTestInterfaceProps
  * @property {string} testId - The ID of the sectional test to be taken.
+ * @property {TestSession} session - The current test session.
  */
 interface SectionalTestInterfaceProps {
   testId: string;
+  session: TestSession;
 }
 
 /**
@@ -40,7 +43,7 @@ interface SectionalTestInterfaceProps {
  * @param {SectionalTestInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered sectional test interface.
  */
-export default function SectionalTestInterface({ testId }: SectionalTestInterfaceProps) {
+export default function SectionalTestInterface({ testId, session }: SectionalTestInterfaceProps) {
   const [, navigate] = useLocation();
   const { toast } = useToast();
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
@@ -83,21 +86,53 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
     return () => clearInterval(timer);
   }, [testState.timeRemaining]);
 
+  const submitTestMutation = useMutation({
+    mutationFn: (resultData: any) =>
+      apiRequest("PATCH", `/api/test-sessions/${session.id}/`, resultData),
+    onSuccess: () => {
+      toast({
+        title: "Test Submitted",
+        description: "Your results have been saved.",
+      });
+      navigate(`/sectional-test/result/${testId}`);
+    },
+    onError: () => {
+      toast({
+        title: "Submission Error",
+        description: "Failed to submit your test results. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const finishTest = () => {
     setTestState(prev => ({ ...prev, isCompleted: true }));
-    toast({
-      title: "Section Finished!",
-      description: `You have completed the ${test?.subject.toUpperCase()} section.`,
-    });
+
+    const correctAnswers = questions.filter((q) => {
+      const answer = testState.answers[q.qid];
+      if (!answer) return false;
+      if (q.options.length > 0) {
+        const option = q.options.find(o => o.data_option === answer);
+        return option?.is_correct || false;
+      } else {
+        return answer === q.correct_option_data;
+      }
+    }).length;
+    const incorrectAnswers = Object.keys(testState.answers).length - correctAnswers;
+    const score = correctAnswers * 3 - incorrectAnswers * 1;
 
     const resultData = {
       answers: testState.answers,
       questions: questions,
       timeTaken: (test?.duration || 0) * 60 - testState.timeRemaining,
+      score: score,
+      isCompleted: true,
+      endTime: new Date().toISOString(),
+      correctAnswers: correctAnswers,
     };
 
     localStorage.setItem(`sectionalTestResult-${testId}`, JSON.stringify(resultData));
-    navigate(`/sectional-test/result/${testId}`);
+    submitTestMutation.mutate(resultData);
   };
 
   const formatTime = (seconds: number) => {

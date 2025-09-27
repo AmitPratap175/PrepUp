@@ -25,5 +25,6 @@ urlpatterns = [
     path('users/<str:user_id>/test-sessions/', views.user_test_sessions, name='user_test_sessions'),
     path('users/<str:user_id>/progress/', views.user_progress, name='user_progress'),
     path('users/<str:user_id>/progress/<str:course_id>/', views.user_progress_by_course, name='user_progress_by_course'),
+    path('users/<str:user_id>/analytics/', views.user_analytics, name='user_analytics'),
     path('questions/add/', views.add_question_view, name='add_question'),
 ]

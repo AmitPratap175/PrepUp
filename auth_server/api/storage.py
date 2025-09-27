@@ -35,10 +35,32 @@ class MemStorage:
         self.practice_tests: Dict[str, Dict] = {}
         self.mock_tests: Dict[str, Dict] = {}
         self.sectional_tests: Dict[str, Dict] = {}
-        self.test_sessions: Dict[str, Dict] = {}
         self.user_progress: Dict[str, Dict] = {}
 
+        self.test_sessions_file = os.path.join(self.base_dir, '..', 'data', 'test_sessions.json')
+        self.test_sessions: Dict[str, Dict] = self._load_test_sessions()
+
         self.seed_data()
+
+    def _load_test_sessions(self) -> Dict[str, Dict]:
+        """Loads test sessions from a JSON file."""
+        if not os.path.exists(os.path.dirname(self.test_sessions_file)):
+            os.makedirs(os.path.dirname(self.test_sessions_file))
+        if not os.path.exists(self.test_sessions_file):
+            return {}
+        try:
+            with open(self.test_sessions_file, 'r') as f:
+                return json.load(f)
+        except (IOError, json.JSONDecodeError):
+            return {}
+
+    def _save_test_sessions(self):
+        """Saves test sessions to a JSON file."""
+        try:
+            with open(self.test_sessions_file, 'w') as f:
+                json.dump(self.test_sessions, f, indent=2)
+        except IOError as e:
+            print(f"Failed to save test sessions: {e}")
 
     def seed_data(self):
         """
@@ -454,6 +476,7 @@ class MemStorage:
             **session_data
         }
         self.test_sessions[session_id] = session
+        self._save_test_sessions()
         return session
 
     def update_test_session(self, session_id: str, updates: Dict) -> Optional[Dict]:
@@ -469,6 +492,7 @@ class MemStorage:
         """
         if session_id in self.test_sessions:
             self.test_sessions[session_id].update(updates)
+            self._save_test_sessions()
             return self.test_sessions[session_id]
         return None
 
@@ -495,6 +519,15 @@ class MemStorage:
             A list of test session dictionaries for the user.
         """
         return [s for s in self.test_sessions.values() if s["userId"] == user_id]
+
+    def get_all_test_sessions(self) -> List[Dict]:
+        """
+        Retrieves all test sessions from the storage.
+
+        Returns:
+            A list of all test session dictionaries.
+        """
+        return list(self.test_sessions.values())
 
     def get_user_progress(self, user_id: str) -> List[Dict]:
         """

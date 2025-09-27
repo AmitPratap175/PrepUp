@@ -34,6 +34,7 @@ import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
+import AnalyticsPage from "@/pages/analytics";
 
 /**
  * Defines the main routing configuration for the application.
@@ -74,6 +75,7 @@ function Router() {
       <Route path="/signup" component={SignupPage} />
       <Route path="/add-question" component={AddQuestionPage} />
       <Route path="/settings" component={SettingsPage} />
+      <Route path="/analytics" component={AnalyticsPage} />
       <Route component={NotFound} />
     </Switch>
   );

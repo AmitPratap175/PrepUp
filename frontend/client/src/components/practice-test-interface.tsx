@@ -4,17 +4,22 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
+import type { PracticeTest, Question, TestSession } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose, Calculator as CalculatorIcon } from "lucide-react";
 import { Calculator } from "./ui/calculator";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
 
 /**
  * @interface PracticeTestInterfaceProps
  * @property {PracticeTest} test - The practice test data, including questions and duration.
+ * @property {TestSession} session - The current test session.
  */
 interface PracticeTestInterfaceProps {
   test: PracticeTest;
+  session: TestSession;
 }
 
 /**
@@ -28,8 +33,9 @@ interface PracticeTestInterfaceProps {
  * @param {PracticeTestInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered practice test interface.
  */
-export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
+export function PracticeTestInterface({ test, session }: PracticeTestInterfaceProps) {
   const [, navigate] = useLocation();
+  const { toast } = useToast();
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [testState, setTestState] = useState<TestState>({
@@ -129,17 +135,57 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
     }
   };
 
+  const submitTestMutation = useMutation({
+    mutationFn: (resultData: any) =>
+      apiRequest("PATCH", `/api/test-sessions/${session.id}/`, resultData),
+    onSuccess: () => {
+      toast({
+        title: "Test Submitted",
+        description: "Your results have been saved.",
+      });
+      navigate(`/practice-test/result/${test.id}`);
+    },
+    onError: () => {
+      toast({
+        title: "Submission Error",
+        description: "Failed to submit your test results. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const handleSubmit = () => {
     setTestState(prev => ({ ...prev, isCompleted: true }));
+
+    const correctAnswers = questions.filter((q) => {
+      const answer = testState.answers[q.qid];
+      if (!answer) return false;
+      if (q.options.length > 0) {
+        const option = q.options.find(o => o.data_option === answer);
+        return option?.is_correct || false;
+      } else {
+        return answer === q.correct_option_data;
+      }
+    }).length;
+    const incorrectAnswers = Object.keys(testState.answers).length - correctAnswers;
+    const score = correctAnswers * 3 - incorrectAnswers * 1;
+
 
     const resultData = {
       answers: testState.answers,
       questions: questions,
       timeTaken: test.duration * 60 - testState.timeRemaining,
+      score: score,
+      isCompleted: true,
+      endTime: new Date().toISOString(),
+      correctAnswers: correctAnswers,
     };
 
+    // Save results to localStorage for immediate review
     localStorage.setItem(`practiceTestResult-${test.id}`, JSON.stringify(resultData));
-    navigate(`/practice-test/result/${test.id}`);
+
+    // Also send to backend
+    submitTestMutation.mutate(resultData);
   };
 
   if (testState.isCompleted) {

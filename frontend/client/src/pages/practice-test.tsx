@@ -8,8 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest, queryClient } from "@/lib/queryClient";
-import type { PracticeTest, UserAnswer } from "@shared/schema";
+import { apiRequest } from "@/lib/queryClient";
+import type { PracticeTest, TestSession } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
 
 /**
  * Renders a page for selecting and taking practice tests.
@@ -23,8 +24,9 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
 export default function PracticeTestPage() {
   const [location] = useLocation();
   const { toast } = useToast();
+  const { user } = useAuth();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
-  const [testStarted, setTestStarted] = useState(false);
+  const [session, setSession] = useState<TestSession | null>(null);
 
   // Extract test ID from URL if provided
   const urlParams = new URLSearchParams(location.split('?')[1] || '');
@@ -42,15 +44,18 @@ export default function PracticeTestPage() {
 
   const startTestMutation = useMutation({
     mutationFn: async ({ testId, userId }: { testId: string; userId: string }) => {
-      return apiRequest("POST", "/api/test-sessions/", {
+      return apiRequest<TestSession>("POST", "/api/test-sessions/", {
         testId,
         userId,
         totalQuestions: currentTest?.totalQuestions || 0,
         answers: [],
+        testType: 'practice',
+        subject: currentTest?.subject,
+        maxScore: currentTest?.totalQuestions ? currentTest.totalQuestions * 3 : 0,
       });
     },
-    onSuccess: () => {
-      setTestStarted(true);
+    onSuccess: (data) => {
+      setSession(data);
       toast({
         title: "Test Started",
         description: "Your test session has begun. Good luck!",
@@ -66,10 +71,16 @@ export default function PracticeTestPage() {
   });
 
   const handleStartTest = (testId: string) => {
+    if (!user) {
+      toast({
+        title: "Not Authenticated",
+        description: "You must be logged in to start a test.",
+        variant: "destructive",
+      });
+      return;
+    }
     setSelectedTestId(testId);
-    // In a real app, we'd get the user ID from authentication context
-    const mockUserId = "user-123";
-    startTestMutation.mutate({ testId, userId: mockUserId });
+    startTestMutation.mutate({ testId, userId: user.id });
   };
 
   if (isLoading) {
@@ -88,10 +99,11 @@ export default function PracticeTestPage() {
   }
 
   // If test is started and we have a current test, show the test interface
-  if (testStarted && currentTest) {
+  if (session && currentTest) {
     return (
       <PracticeTestInterface 
-        test={currentTest} 
+        test={currentTest}
+        session={session}
       />
     );
   }

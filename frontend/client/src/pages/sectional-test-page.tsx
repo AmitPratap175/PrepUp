@@ -1,9 +1,13 @@
-import { useQuery } from "@tanstack/react-query";
-import { useRoute, useLocation } from "wouter";
+import { useQuery, useMutation } from "@tanstack/react-query";
+import { useRoute } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import SectionalTestInterface from "@/components/sectional-test-interface";
-import type { PracticeTest, UserAnswer } from "@shared/schema";
+import type { PracticeTest, TestSession } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
+import { useEffect, useState } from "react";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
 
 /**
  * A page component for taking a sectional test.
@@ -17,14 +21,49 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
 export default function SectionalTestPage() {
   const [, params] = useRoute("/sectional-test/:id");
   const testId = params?.id;
-  const [, navigate] = useLocation();
+  const { user } = useAuth();
+  const { toast } = useToast();
+  const [session, setSession] = useState<TestSession | null>(null);
 
   const { data: test, isLoading } = useQuery<PracticeTest>({
     queryKey: [`/api/sectional-tests/${testId}`],
     enabled: !!testId,
   });
 
-  if (isLoading) {
+  const startTestMutation = useMutation({
+    mutationFn: (newSession: Partial<TestSession>) =>
+      apiRequest<TestSession>("POST", "/api/test-sessions/", newSession),
+    onSuccess: (data) => {
+      setSession(data);
+      toast({
+        title: "Test Started",
+        description: "Your test session has begun. Good luck!",
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to start test session. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
+  useEffect(() => {
+    if (test && user && !session) {
+      startTestMutation.mutate({
+        testId: test.id,
+        userId: user.id,
+        testType: 'sectional',
+        subject: test.subject,
+        maxScore: test.totalQuestions * 3,
+        totalQuestions: test.totalQuestions,
+        answers: [],
+      });
+    }
+  }, [test, user, session]);
+
+  if (isLoading || startTestMutation.isPending) {
     return (
       <div className="min-h-screen bg-background">
         <AppHeader />
@@ -39,7 +78,7 @@ export default function SectionalTestPage() {
     );
   }
 
-  if (!test) {
+  if (!test || !session) {
     return (
       <div className="min-h-screen bg-background">
         <AppHeader />
@@ -54,12 +93,5 @@ export default function SectionalTestPage() {
     );
   }
 
-  const handleSubmit = (userAnswers: UserAnswer[]) => {
-    // In a real app, we would save the answers to the server
-    // and then navigate to the results page.
-    // For now, we'll just navigate to the results page with the answers.
-    navigate(`/sectional-test/result/${testId}`, { state: { test, userAnswers } });
-  };
-
-  return <SectionalTestInterface testId={test.id} />;
+  return <SectionalTestInterface testId={test.id} session={session} />;
 }

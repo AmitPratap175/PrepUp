@@ -119,7 +119,7 @@ export function AppHeader() {
           {isAuthenticated ? (
             <>
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
-                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/analytics">Analytics</Link>
               </Button>
               <Button asChild variant="secondary" className="hidden sm:flex" size="sm">
                 <Link href="/bookmarks">Bookmarks</Link>
@@ -196,7 +196,7 @@ export function AppHeader() {
                   {isAuthenticated ? (
                     <div className="flex flex-col gap-2">
                       <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
-                        <Link href="/dashboard">Dashboard</Link>
+                        <Link href="/analytics">Analytics</Link>
                       </Button>
                       <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
                         <Link href="/bookmarks">Bookmarks</Link>
