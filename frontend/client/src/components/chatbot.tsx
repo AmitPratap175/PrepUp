@@ -23,20 +23,28 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
 
   useEffect(scrollToBottom, [messages]);
 
-  const handleSendMessage = async () => {
-    if (inputValue.trim() === '') return;
+  const handleSendMessage = async (messageToSend: string) => {
+    if (messageToSend.trim() === '') return;
 
-    const userMessage: Message = { text: inputValue, sender: 'user' };
+    const userMessage: Message = { text: messageToSend, sender: 'user' };
     setMessages(prevMessages => [...prevMessages, userMessage]);
-    setInputValue('');
+    setInputValue(''); // Clear input after sending
+
+    const token = localStorage.getItem('token');
+    if (!token) {
+      const errorMessage: Message = { text: 'Authentication error. Please log in again.', sender: 'bot' };
+      setMessages(prevMessages => [...prevMessages, errorMessage]);
+      return;
+    }
 
     try {
       const response = await fetch('/api/chatbot/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
         },
-        body: JSON.stringify({ message: inputValue }),
+        body: JSON.stringify({ message: messageToSend }),
       });
 
       if (!response.ok) {
@@ -87,10 +95,10 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
             placeholder="Type your message..."
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+            onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputValue)}
             className="flex-grow"
           />
-          <Button onClick={handleSendMessage}>Send</Button>
+          <Button onClick={() => handleSendMessage(inputValue)}>Send</Button>
         </div>
       </div>
     </Card>

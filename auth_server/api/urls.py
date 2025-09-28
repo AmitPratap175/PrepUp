@@ -26,5 +26,5 @@ urlpatterns = [
     path('users/<str:user_id>/progress/', views.user_progress, name='user_progress'),
     path('users/<str:user_id>/progress/<str:course_id>/', views.user_progress_by_course, name='user_progress_by_course'),
     path('questions/add/', views.add_question_view, name='add_question'),
-    path('chatbot/', views.chatbot_view, name='chatbot'),
+    path('chatbot/', views.ChatbotView.as_view(), name='chatbot'),
 ]

@@ -332,22 +332,33 @@ def add_question_view(request):
     else:
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
 
-from .chatbot import chatbot_instance
 
-@csrf_exempt
-def chatbot_view(request):
-    """
-    Handles chatbot interactions.
+import traceback
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from .chatbot import SimpleChatbot
 
-    Accepts POST requests with a 'message' and returns a 'reply'.
+class ChatbotView(APIView):
     """
-    if request.method == 'POST':
+    Handles chatbot interactions for authenticated users.
+
+    Accepts POST requests with a 'message' and returns a 'reply' generated
+    based on the user's bookmarks.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Handles the incoming POST request from the user.
+        """
         try:
-            data = json.loads(request.body)
-            message = data.get('message', '')
-            reply = chatbot_instance.get_answer(message)
-            return JsonResponse({"reply": reply})
-        except json.JSONDecodeError:
-            return JsonResponse({"error": "Invalid JSON"}, status=400)
-    else:
-        return JsonResponse({"error": "Only POST method is allowed"}, status=405)
+            message = request.data.get('message', '')
+            chatbot = SimpleChatbot()
+            reply = chatbot.get_answer(message, request.user)
+            return Response({"reply": reply})
+        except Exception as e:
+            print(f"--- UNHANDLED EXCEPTION IN CHATBOT VIEW ---")
+            traceback.print_exc()
+            print(f"----------------------------------------")
+            return Response({"error": "An error occurred processing your request."}, status=500)
