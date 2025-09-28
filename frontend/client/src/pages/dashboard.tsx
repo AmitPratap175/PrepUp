@@ -1,21 +1,14 @@
-import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import type { Course, TestSession, UserProgress } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
+import { AnalyticsCharts } from "@/components/AnalyticsCharts";
+import { useQuery } from "@tanstack/react-query";
+import type { Course, TestSession, UserProgress } from "@shared/schema";
 
-/**
- * A generic function to fetch data for the dashboard from a given URL.
- *
- * @param {string} url - The URL to fetch data from.
- * @returns {Promise<any>} A promise that resolves with the JSON data.
- * @throws {Error} If the network response is not ok.
- */
 async function fetchDashboardData(url: string) {
   const response = await fetch(url);
   if (!response.ok) {
@@ -24,15 +17,6 @@ async function fetchDashboardData(url: string) {
   return response.json();
 }
 
-/**
- * Renders the user's dashboard page.
- *
- * This component provides a comprehensive overview of the user's progress,
- * including course progress, recent test scores, and key statistics. It also
- * offers quick actions to help the user continue their learning journey.
- *
- * @returns {JSX.Element} The rendered dashboard page.
- */
 export default function Dashboard() {
   const { user } = useAuth();
 
@@ -195,6 +179,7 @@ export default function Dashboard() {
                       </CardContent>
                     </Card>
                   </div>
+                  <AnalyticsCharts />
                 </div>
 
                 {/* Quick Actions */}

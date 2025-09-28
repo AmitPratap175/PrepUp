@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
-import { PanelLeftClose, PanelRightClose } from "lucide-react";
-import { CalculatorDialog } from "./ui/calculator";
+import { PanelLeftClose, PanelRightClose, Calculator as CalculatorIcon } from "lucide-react";
+import { Calculator } from "./ui/calculator";
 
 /**
  * @interface MockTestInterfaceProps
@@ -34,6 +34,7 @@ const SECTION_TIME = 40 * 60; // 40 minutes in seconds
  */
 export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
+  const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
@@ -170,27 +171,29 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
 
   return (
     <div className="flex flex-col h-screen bg-background">
-      <div className="bg-muted/50 p-6 border-b border-border">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div className="bg-muted/50 p-4 border-b border-border">
+        <div className="flex flex-row items-center justify-between gap-2 sm:gap-4">
           <div className="flex-1 min-w-0">
-            <h3 className="text-xl font-bold text-foreground truncate">{test.title}</h3>
-            <p className="text-sm text-muted-foreground truncate">{SECTIONS[currentSectionIndex].toUpperCase()} Section</p>
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground truncate">{test.title}</h3>
+            <p className="text-xs sm:text-sm text-muted-foreground truncate">{SECTIONS[currentSectionIndex].toUpperCase()} Section</p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 sm:gap-4">
 
             <div className="text-center">
-              <div className="text-lg font-bold text-destructive" data-testid="timer-display">
+              <div className="text-sm sm:text-base font-bold text-destructive" data-testid="timer-display">
                 {formatTime(testState.timeRemaining)}
               </div>
               <div className="text-xs text-muted-foreground">Time Left</div>
             </div>
-            <div className="text-center">
-              <div className="text-lg font-bold text-foreground" data-testid="question-counter">
+            <div className="text-center hidden sm:block">
+              <div className="text-sm sm:text-base font-bold text-foreground" data-testid="question-counter">
                 {testState.currentQuestionIndex + 1}/{questions.length}
               </div>
-              <div className="text-xs text-muted-foreground">Questions</div>
+              <div className="text-xs text-muted-foreground">Question</div>
             </div>
-            <CalculatorDialog />
+            <Button variant="outline" size="icon" onClick={() => setIsCalculatorVisible(!isCalculatorVisible)}>
+              <CalculatorIcon className="h-4 w-4" />
+            </Button>
             <Button
               variant="destructive"
               size="sm"
@@ -202,6 +205,8 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
           </div>
         </div>
       </div>
+
+      {isCalculatorVisible && <Calculator onClose={() => setIsCalculatorVisible(false)} />}
 
       <div className="flex flex-1 overflow-hidden relative">
         {/* Palette Toggle Button */}
