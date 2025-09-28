@@ -331,3 +331,23 @@ def add_question_view(request):
             return JsonResponse({"error": "Invalid JSON"}, status=400)
     else:
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
+
+from .chatbot import chatbot_instance
+
+@csrf_exempt
+def chatbot_view(request):
+    """
+    Handles chatbot interactions.
+
+    Accepts POST requests with a 'message' and returns a 'reply'.
+    """
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            message = data.get('message', '')
+            reply = chatbot_instance.get_answer(message)
+            return JsonResponse({"reply": reply})
+        except json.JSONDecodeError:
+            return JsonResponse({"error": "Invalid JSON"}, status=400)
+    else:
+        return JsonResponse({"error": "Only POST method is allowed"}, status=405)
