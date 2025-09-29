@@ -17,4 +17,6 @@ dependencies = [
     "langchain-community>=0.0.20",
     "langchain-core>=0.1.23",
     "langchain-google-genai>=2.1.12",
+    "langgraph>=0.6.7",
+    "langgraph-checkpoint-sqlite>=2.0.11",
 ]

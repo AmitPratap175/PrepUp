@@ -22,7 +22,7 @@ class SimpleChatbot:
         os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
         try:
             # Corrected model name to gemini-1.5-flash
-            self.model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
+            self.model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
         except Exception as e:
             print(f"Error initializing Gemini (API key or model name may be invalid): {e}")
             self.model = None

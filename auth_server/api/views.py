@@ -337,25 +337,30 @@ import traceback
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .chatbot import SimpleChatbot
+from .chatbot_service import invoke_agent
 
 class ChatbotView(APIView):
     """
-    Handles chatbot interactions for authenticated users.
-
-    Accepts POST requests with a 'message' and returns a 'reply' generated
-    based on the user's bookmarks.
+    Handles chatbot interactions for authenticated users by invoking the LangGraph agent.
     """
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
         """
-        Handles the incoming POST request from the user.
+        Handles the incoming POST request by calling the chatbot service.
         """
         try:
             message = request.data.get('message', '')
-            chatbot = SimpleChatbot()
-            reply = chatbot.get_answer(message, request.user)
+            
+            session_id = request.session.get('chatbot_session_id')
+            if not session_id:
+                session_id = str(uuid.uuid4())
+                request.session['chatbot_session_id'] = session_id
+
+            print(f"\n\nMessage recieved: {message}\n\n")
+
+            reply = invoke_agent(session_id=session_id, message=message)
+            
             return Response({"reply": reply})
         except Exception as e:
             print(f"--- UNHANDLED EXCEPTION IN CHATBOT VIEW ---")
