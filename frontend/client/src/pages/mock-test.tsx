@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import MockTestInterface from "@/components/mock-test-interface";
@@ -17,6 +17,7 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
 export default function MockTestPage() {
   const [, params] = useRoute("/mock-test/:testId");
   const testId = params?.testId;
+  const [, navigate] = useLocation();
 
   const { data: currentTest, isLoading } = useQuery<PracticeTest>({
     queryKey: ["/api/mock-tests", testId].filter(Boolean),
@@ -24,8 +25,13 @@ export default function MockTestPage() {
   });
 
   const handleSubmitTest = (answers: UserAnswer[], timeSpent: number) => {
-    // Here you would typically send the results to the server
-    console.log("Submitting test with answers:", answers, "and time spent:", timeSpent);
+    const resultData = {
+      answers: Object.fromEntries(answers.map(a => [a.questionId, a.selectedAnswer])),
+      timeTaken: timeSpent,
+    };
+
+    localStorage.setItem(`mockTestResult-${testId}`, JSON.stringify(resultData));
+    navigate(`/mock-test/result/${testId}`);
   };
 
   if (isLoading) {

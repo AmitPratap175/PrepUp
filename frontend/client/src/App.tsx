@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import PracticeTest from "@/pages/practice-test";
 import MockTestsPage from "@/pages/mock-tests";
 import MockTestPage from "@/pages/mock-test";
+import MockTestResultPage from "@/pages/mock-test-result";
 import QuizPage from "@/pages/quiz";
 import Dashboard from "@/pages/dashboard";
 import StudyMaterials from "@/pages/study-materials";
@@ -51,6 +52,7 @@ function Router() {
       <Route path="/practice-test/result/:testId" component={PracticeTestResultPage} />
       <Route path="/practice-test/:testId?" component={PracticeTest} />
       <Route path="/mock-tests" component={MockTestsPage} />
+      <Route path="/mock-test/result/:testId" component={MockTestResultPage} />
       <Route path="/mock-test/:testId" component={MockTestPage} />
       <Route path="/sectional-tests" component={SectionalTestsPage} />
       <Route path="/sectional-test/:id" component={SectionalTestPage} />

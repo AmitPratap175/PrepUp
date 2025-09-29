@@ -42,22 +42,35 @@ export default function SectionalTestResultPage() {
   const { answers, timeTaken } = resultData;
   const questions = test.questions;
 
+  let attemptedQuestions = 0;
+  let correctAnswers = 0;
+
+  questions.forEach(q => {
+      const userAnswer = answers[q.qid];
+      if (userAnswer != null) { // Answered
+          attemptedQuestions++;
+          let isCorrect = false;
+          if (q.options.length > 0) {
+              const correctOption = q.options.find(o => o.is_correct);
+              if (correctOption && correctOption.data_option === userAnswer) {
+                  isCorrect = true;
+              }
+          } else {
+              if (userAnswer === q.correct_option_data) {
+                  isCorrect = true;
+              }
+          }
+          if (isCorrect) {
+              correctAnswers++;
+          }
+      }
+  });
+
   const totalQuestions = questions.length;
-  const attemptedQuestions = Object.keys(answers).length;
-  const correctAnswers = questions.filter((q) => {
-    const answer = answers[q.qid];
-    if (!answer) return false;
-    if (q.options.length > 0) {
-      const option = q.options.find(o => o.data_option === answer);
-      return option?.is_correct || false;
-    } else {
-      return answer === q.correct_option_data;
-    }
-  }).length;
   const incorrectAnswers = attemptedQuestions - correctAnswers;
   const accuracy =
-    attemptedQuestions > 0 ? (correctAnswers / attemptedQuestions) * 100 : 0;
-  const score = correctAnswers * 3 - incorrectAnswers * 1;
+      attemptedQuestions > 0 ? (correctAnswers / attemptedQuestions) * 100 : 0;
+  const score = correctAnswers * 3 - incorrectAnswers;
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);

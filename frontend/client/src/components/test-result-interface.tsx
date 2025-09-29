@@ -45,7 +45,7 @@ export default function TestResultInterface({
     const userAnswer = userAnswers[question.qid];
     let isCorrect: boolean | null = null;
 
-    if (userAnswer !== undefined) {
+    if (userAnswer != null) {
       if (question.options.length > 0) {
         const correctOption = question.options.find(o => o.is_correct);
         isCorrect = correctOption?.data_option === userAnswer;

@@ -6,21 +6,20 @@ import type { PracticeTest, Question } from "@shared/schema";
 
 interface ResultData {
   answers: Record<string, string>;
-  questions: Question[];
   timeTaken: number;
 }
 
-export default function PracticeTestResultPage() {
+export default function MockTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
 
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
-    queryKey: [`/api/practice-tests/${testId}`],
+    queryKey: [`/api/mock-tests/${testId}`],
     enabled: !!testId,
   });
 
   useEffect(() => {
-    const storedResults = localStorage.getItem(`practiceTestResult-${testId}`);
+    const storedResults = localStorage.getItem(`mockTestResult-${testId}`);
     if (storedResults) {
       setResultData(JSON.parse(storedResults));
     }
