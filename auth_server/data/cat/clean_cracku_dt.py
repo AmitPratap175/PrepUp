@@ -147,6 +147,14 @@ def _norm_ws(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+def _collect_paragraph_text_simple(container) -> str:
+    """Extracts and concatenates text from all <p> tags within a given element."""
+    if container is None: return ""
+    ps = [t.get_text(" ", strip=True) for t in container.find_all("p")]
+    ps = [_norm_ws(x) for x in ps if _norm_ws(x)]
+    if ps: return "\n\n".join(ps)
+    return _norm_ws(container.get_text(" ", strip=True))
+
 def _collect_paragraph_text(container) -> str:
     """Extracts and concatenates text from all <p> tags within a given element, converting katex to latex."""
     if container is None: return ""
@@ -175,7 +183,6 @@ def _collect_paragraph_text(container) -> str:
     text = re.sub(r'(\n\s*){2,}', '\n\n', text) # Collapse multiple newlines
     return text.strip()
 
-
 def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], Optional[str]]:
     """Heuristically finds the passage and question text within a question's HTML block."""
     passage_text = None
@@ -185,7 +192,7 @@ def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], O
     if blocks:
         p_block = blocks[0]
         p_body = p_block.find("div", class_=re.compile(r"\bcard-body\b"))
-        passage_text = _collect_paragraph_text(p_body if p_body else p_block)
+        passage_text = _collect_paragraph_text_simple(p_body if p_body else p_block)
         q_block = blocks[-1]
         q_text_div = q_block.find("div", class_=re.compile(r"\bquestion-text\b"))
         if q_text_div:
