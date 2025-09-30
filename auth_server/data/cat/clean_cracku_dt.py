@@ -148,12 +148,32 @@ def _norm_ws(s: str) -> str:
 
 
 def _collect_paragraph_text(container) -> str:
-    """Extracts and concatenates text from all <p> tags within a given element."""
+    """Extracts and concatenates text from all <p> tags within a given element, converting katex to latex."""
     if container is None: return ""
-    ps = [t.get_text(" ", strip=True) for t in container.find_all("p")]
-    ps = [_norm_ws(x) for x in ps if _norm_ws(x)]
-    if ps: return "\n\n".join(ps)
-    return _norm_ws(container.get_text(" ", strip=True))
+
+    soup = BeautifulSoup(str(container), 'html.parser')
+
+    for span in soup.find_all('span', class_='katex'):
+        annotation = span.find('annotation', encoding='application/x-tex')
+        if annotation:
+            span.replace_with(f'${annotation.get_text()}$')
+        else:
+            span.replace_with(span.get_text())
+
+    for br in soup.find_all('br'):
+        br.replace_with('\n')
+
+    # Now extract text
+    ps = [p.get_text() for p in soup.find_all("p")]
+    if ps:
+        text = "\n\n".join(ps)
+    else:
+        text = soup.get_text()
+
+    # Clean up whitespace
+    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'(\n\s*){2,}', '\n\n', text) # Collapse multiple newlines
+    return text.strip()
 
 
 def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], Optional[str]]:
@@ -169,15 +189,11 @@ def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], O
         q_block = blocks[-1]
         q_text_div = q_block.find("div", class_=re.compile(r"\bquestion-text\b"))
         if q_text_div:
-            qps = q_text_div.find_all("p")
-            if qps:
-                question_text = _norm_ws(" ".join(p.get_text(" ", strip=True) for p in qps))
-            else:
-                question_text = _norm_ws(q_text_div.get_text(" ", strip=True))
+            question_text = _collect_paragraph_text(q_text_div)
         else:
             q_text_div = qroot.find("div", class_=re.compile(r"\bquestion-text\b"))
             if q_text_div:
-                question_text = _norm_ws(q_text_div.get_text(" ", strip=True))
+                question_text = _collect_paragraph_text(q_text_div)
     return passage_text, question_text
 
 def _extract_correct_answer(qroot) -> Optional[str]:
@@ -191,7 +207,7 @@ def _extract_correct_answer(qroot) -> Optional[str]:
         label_tag = btn.select_one(".opt-no span")
         label = label_tag.get_text(strip=True) if label_tag else None
         content_div = btn.select_one(".option-content")
-        text = " ".join(p.get_text(strip=True) for p in content_div.find_all("p")) if content_div else None
+        text = _collect_paragraph_text(content_div) if content_div else None
         if label and text:
             options.append({"data_option": str(i), "label": label, "option_text": text, "is_correct": (str(i) == correct_answer_index)})
     correct_answer_tag = qroot.find("p", id="correct-answer")
