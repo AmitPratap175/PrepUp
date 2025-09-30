@@ -104,12 +104,32 @@ def _norm_ws(s: str) -> str:
 
 
 def _collect_paragraph_text(container) -> str:
-    """Extracts and concatenates text from all <p> tags within a given element."""
+    """Extracts and concatenates text from all <p> tags within a given element, converting katex to latex."""
     if container is None: return ""
-    ps = [t.get_text(" ", strip=True) for t in container.find_all("p")]
-    ps = [_norm_ws(x) for x in ps if _norm_ws(x)]
-    if ps: return "\n\n".join(ps)
-    return _norm_ws(container.get_text(" ", strip=True))
+
+    soup = BeautifulSoup(str(container), 'html.parser')
+
+    for span in soup.find_all('span', class_='katex'):
+        annotation = span.find('annotation', encoding='application/x-tex')
+        if annotation:
+            span.replace_with(f'${annotation.get_text()}$')
+        else:
+            span.replace_with(span.get_text())
+
+    for br in soup.find_all('br'):
+        br.replace_with('\n')
+
+    # Now extract text
+    ps = [p.get_text() for p in soup.find_all("p")]
+    if ps:
+        text = "\n\n".join(ps)
+    else:
+        text = soup.get_text()
+
+    # Clean up whitespace
+    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'(\n\s*){2,}', '\n\n', text) # Collapse multiple newlines
+    return text.strip()
 
 
 def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], Optional[str]]:
