@@ -21204,42 +21204,42 @@
       "full_markdown": "### Question (qid: 300580)\n\n**Passage:**\nIf x, y are positive integers and log ⁡ 2 x 3 y ( log ⁡ 3 y ( log ⁡ 4 x 4096 ) ) \\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right) lo g 2 x 3 y ​ ( lo g 3 y ​ ( lo g 4 x ​ 4 0 9 6 ) ) = 0, then xy is\n\n3\n\n6\n\n2\n\n12\n\nIf x, y are positive integers and log ⁡ 2 x 3 y ( log ⁡ 3 y ( log ⁡ 4 x 4096 ) ) \\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right) lo g 2 x 3 y ​ ( lo g 3 y ​ ( lo g 4 x ​ 4 0 9 6 ) ) = 0, then xy is\n\n**Options:**\n- **A**. 3\n- **B**. 6\n- **C**. 2\n- **D**. 12\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-811",
+      "qid": "quant-833",
       "passage_text": "",
-      "question_text": "If both the roots of equation x 2 + p x + p + 3 = 0 x^{2}+px+p+3=0 x 2 + p x + p + 3 = 0 are real and less than 4.What is the range of p?",
+      "question_text": "If both the roots of equation $x^{2}+px+p+3=0$ are real and less than 4.What is the range of p?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "(−∞,8)(-\\infty ,8)(−∞,8)",
+          "option_text": "$(-\\infty ,8)$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "(−∞,−195)(-\\infty ,\\frac{-19}{5})(−∞,5−19​)⋃[6,∞)\\bigcup [6,\\infty)⋃[6,∞) ",
+          "option_text": "$(-\\infty ,\\frac{-19}{5})$ $\\bigcup [6,\\infty)$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "(−195\\frac{-19}{5}5−19​, -2]⋃[6,∞)\\bigcup [6,\\infty)⋃[6,∞) ",
+          "option_text": "($\\frac{-19}{5}$, -2] $\\bigcup [6,\\infty)$",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "(−195,∞\\frac{-19}{5}, \\infty5−19​,∞) ",
+          "option_text": "($\\frac{-19}{5}, \\infty$)",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Since the roots are real,\nD $\\geq$ 0\n$p^{2}-4(p+3)$ $\\geq$ 0\n$(p+2)\\times(p-6)\\geq$ 0\nThis occurs when both (p+2) and (p-6) are positive => p$\\geq$-2 and p$\\geq$6, common range is p$\\geq$6\nor both (p+2) and (p-6) are negative =>  common range is p $\\leq$ -2\np $\\leq$ -2 and p $\\geq$ 6 -------------------(1)\nGiven both the roots of the equation $\\alpha_{1}$ and $\\alpha_{2}$ are less than 4\nf(4) > 0 (As a>0, the curve is upward facing)\n16+4p+p+3 > 0\n19+5p > 0     \np>$\\frac{-19}{5}$---------------------(2)\nAs individual roots are less than 4, i.e $\\alpha_{1}$ < 4 and $\\alpha_{2}$ <4\nwhere $\\alpha_{1}$ and $\\alpha_{2}$ are roots of the equation...\nSumming them, we get $\\alpha_{1}$+$\\alpha_{2}$ < 8\n-p < 8(Sum of roots of equation=-b/a)\np > -8   -----------------------(3)\nThe common range from (1), (2) and (3), $(\\frac{-19}{5}, -2] \\bigcup [6,\\infty)$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf both the roots of equation x 2 + p x + p + 3 = 0 x^{2}+px+p+3=0 x 2 + p x + p + 3 = 0 are real and less than 4.What is the range of p?\n\n**Options:**\n- **A**. (−∞,8)(-\\infty ,8)(−∞,8)\n- **B**. (−∞,−195)(-\\infty ,\\frac{-19}{5})(−∞,5−19​)⋃[6,∞)\\bigcup [6,\\infty)⋃[6,∞) \n- **C**. (−195\\frac{-19}{5}5−19​, -2]⋃[6,∞)\\bigcup [6,\\infty)⋃[6,∞)  ✅\n- **D**. (−195,∞\\frac{-19}{5}, \\infty5−19​,∞) \n\n**Correct Answer:** null\n\n**Solution:**\nSince the roots are real,\nD $\\geq$ 0\n$p^{2}-4(p+3)$ $\\geq$ 0\n$(p+2)\\times(p-6)\\geq$ 0\nThis occurs when both (p+2) and (p-6) are positive => p$\\geq$-2 and p$\\geq$6, common range is p$\\geq$6\nor both (p+2) and (p-6) are negative =>  common range is p $\\leq$ -2\np $\\leq$ -2 and p $\\geq$ 6 -------------------(1)\nGiven both the roots of the equation $\\alpha_{1}$ and $\\alpha_{2}$ are less than 4\nf(4) > 0 (As a>0, the curve is upward facing)\n16+4p+p+3 > 0\n19+5p > 0     \np>$\\frac{-19}{5}$---------------------(2)\nAs individual roots are less than 4, i.e $\\alpha_{1}$ < 4 and $\\alpha_{2}$ <4\nwhere $\\alpha_{1}$ and $\\alpha_{2}$ are roots of the equation...\nSumming them, we get $\\alpha_{1}$+$\\alpha_{2}$ < 8\n-p < 8(Sum of roots of equation=-b/a)\np > -8   -----------------------(3)\nThe common range from (1), (2) and (3), $(\\frac{-19}{5}, -2] \\bigcup [6,\\infty)$"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf both the roots of equation $x^{2}+px+p+3=0$ are real and less than 4.What is the range of p?\n\n**Options:**\n- **A**. $(-\\infty ,8)$\n- **B**. $(-\\infty ,\\frac{-19}{5})$ $\\bigcup [6,\\infty)$\n- **C**. ($\\frac{-19}{5}$, -2] $\\bigcup [6,\\infty)$ ✅\n- **D**. ($\\frac{-19}{5}, \\infty$)\n\n**Correct Answer:** null\n\n**Solution:**\nSince the roots are real,\nD $\\geq$ 0\n$p^{2}-4(p+3)$ $\\geq$ 0\n$(p+2)\\times(p-6)\\geq$ 0\nThis occurs when both (p+2) and (p-6) are positive => p$\\geq$-2 and p$\\geq$6, common range is p$\\geq$6\nor both (p+2) and (p-6) are negative =>  common range is p $\\leq$ -2\np $\\leq$ -2 and p $\\geq$ 6 -------------------(1)\nGiven both the roots of the equation $\\alpha_{1}$ and $\\alpha_{2}$ are less than 4\nf(4) > 0 (As a>0, the curve is upward facing)\n16+4p+p+3 > 0\n19+5p > 0     \np>$\\frac{-19}{5}$---------------------(2)\nAs individual roots are less than 4, i.e $\\alpha_{1}$ < 4 and $\\alpha_{2}$ <4\nwhere $\\alpha_{1}$ and $\\alpha_{2}$ are roots of the equation...\nSumming them, we get $\\alpha_{1}$+$\\alpha_{2}$ < 8\n-p < 8(Sum of roots of equation=-b/a)\np > -8   -----------------------(3)\nThe common range from (1), (2) and (3), $(\\frac{-19}{5}, -2] \\bigcup [6,\\infty)$"
     },
     {
-      "qid": "quant-812",
+      "qid": "quant-834",
       "passage_text": "",
       "question_text": "In a class of 20 students, 60% are boys, and the rest of the students are girls. The average weight of boys is 55 kg. The weights of all the students in the class are distinct integers. If the average weight of the class is 45 kg, then what is the maximum weight of the girl who weighs the least?",
       "options": [
@@ -21252,29 +21252,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "26 kg. ",
+          "option_text": "26 kg.",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "34 kg. ",
+          "option_text": "34 kg.",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "30 kg. ",
+          "option_text": "30 kg.",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "In the class of 20 students there are 60% boys and the rest are girls.\nThus, there are 12 boys and 8 girls.\nAverage weight of the class = 45 kg\nThus, the total weight of the class = 45*20 = 900 kg\nAverage weight of the boys = 55 kg\nThus, the total weight of the boys = 55*12 = 660 kg\nHence, the total weight of the girls = 900 - 600 = 240 kg.\nTherefore, the average weight of girls = 30 kg.\nTo find the maximum weight of the girl who weighs the least we will have to distribute the weights of the girls around the average.\nThis can be done as:-\n26, 27, 28, 29, 31, 32, 33 and 34.(Since the weights of all the students are distinct)\nThus, the maximum weight of the girl who weighs the least = 26 kg\nHence, option B is the correct answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 20 students, 60% are boys, and the rest of the students are girls. The average weight of boys is 55 kg. The weights of all the students in the class are distinct integers. If the average weight of the class is 45 kg, then what is the maximum weight of the girl who weighs the least?\n\n**Options:**\n- **A**. 25 kg.\n- **B**. 26 kg.  ✅\n- **C**. 34 kg. \n- **D**. 30 kg. \n\n**Correct Answer:** null\n\n**Solution:**\nIn the class of 20 students there are 60% boys and the rest are girls.\nThus, there are 12 boys and 8 girls.\nAverage weight of the class = 45 kg\nThus, the total weight of the class = 45*20 = 900 kg\nAverage weight of the boys = 55 kg\nThus, the total weight of the boys = 55*12 = 660 kg\nHence, the total weight of the girls = 900 - 600 = 240 kg.\nTherefore, the average weight of girls = 30 kg.\nTo find the maximum weight of the girl who weighs the least we will have to distribute the weights of the girls around the average.\nThis can be done as:-\n26, 27, 28, 29, 31, 32, 33 and 34.(Since the weights of all the students are distinct)\nThus, the maximum weight of the girl who weighs the least = 26 kg\nHence, option B is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 20 students, 60% are boys, and the rest of the students are girls. The average weight of boys is 55 kg. The weights of all the students in the class are distinct integers. If the average weight of the class is 45 kg, then what is the maximum weight of the girl who weighs the least?\n\n**Options:**\n- **A**. 25 kg.\n- **B**. 26 kg. ✅\n- **C**. 34 kg.\n- **D**. 30 kg.\n\n**Correct Answer:** null\n\n**Solution:**\nIn the class of 20 students there are 60% boys and the rest are girls.\nThus, there are 12 boys and 8 girls.\nAverage weight of the class = 45 kg\nThus, the total weight of the class = 45*20 = 900 kg\nAverage weight of the boys = 55 kg\nThus, the total weight of the boys = 55*12 = 660 kg\nHence, the total weight of the girls = 900 - 600 = 240 kg.\nTherefore, the average weight of girls = 30 kg.\nTo find the maximum weight of the girl who weighs the least we will have to distribute the weights of the girls around the average.\nThis can be done as:-\n26, 27, 28, 29, 31, 32, 33 and 34.(Since the weights of all the students are distinct)\nThus, the maximum weight of the girl who weighs the least = 26 kg\nHence, option B is the correct answer."
     },
     {
-      "qid": "quant-813",
+      "qid": "quant-835",
       "passage_text": "",
       "question_text": "Consider the figure given below. The length of PQ is equal to the length of the radius of the circle. O is the center of the circle and PT passes through O. What is the measure of angle QST if the measure of angle RTS is 70°?",
       "options": [
@@ -21287,29 +21287,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "60° ",
+          "option_text": "60°",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "80° ",
+          "option_text": "80°",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "40° ",
+          "option_text": "40°",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "https://cracku.in/media/uploads/5_CeRcT0J.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider the figure given below. The length of PQ is equal to the length of the radius of the circle. O is the center of the circle and PT passes through O. What is the measure of angle QST if the measure of angle RTS is 70°?\n\n**Options:**\n- **A**. 90°\n- **B**. 60° \n- **C**. 80°  ✅\n- **D**. 40° \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider the figure given below. The length of PQ is equal to the length of the radius of the circle. O is the center of the circle and PT passes through O. What is the measure of angle QST if the measure of angle RTS is 70°?\n\n**Options:**\n- **A**. 90°\n- **B**. 60°\n- **C**. 80° ✅\n- **D**. 40°\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-814",
+      "qid": "quant-836",
       "passage_text": "",
       "question_text": "5 men, 4 women, and 3 children can complete a task in 20 days. 4 men and 5 women can complete the same task in 25 days. The number of days 10 men, 5 women, and 10 children will take to complete the work is",
       "options": [
@@ -21322,31 +21322,31 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "10 ",
+          "option_text": "10",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "12 ",
+          "option_text": "12",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "5 ",
+          "option_text": "5",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Let us assume that a man completes 'm' units of work in a day, a woman completes 'w' units of work in a day and a child completes 'c' units of work in a day. \n5 men, 4 women, and 3 children can complete a task in 20 days. \nTotal work = 20*(5m+4w+3c).\n4 men and 5 women can complete the same task in 25 days.\n=> Total work = 25*(4m+5w)\n20*(5m+4w+3c) = 25*(4m+5w)\n100m + 80w + 60c = 100m + 125w\n=> 60c = 45w\n4c = 3w\n10 men, 5 women, and 10 children:\nWe know that the total work = 100m + 125w\nLet x be the number of days taken by 10 men, 5 women, and 10 children to complete the work.\nx*(10m+5w+10c) = 100m + 125w\nx*(10m+5w+7.5w) = 100m + 125w\nx*(10m+12.5w) = 100m+125w\n=> x = 10 days.\nTherefore, option B is the right answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n5 men, 4 women, and 3 children can complete a task in 20 days. 4 men and 5 women can complete the same task in 25 days. The number of days 10 men, 5 women, and 10 children will take to complete the work is\n\n**Options:**\n- **A**. 8\n- **B**. 10  ✅\n- **C**. 12 \n- **D**. 5 \n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that a man completes 'm' units of work in a day, a woman completes 'w' units of work in a day and a child completes 'c' units of work in a day. \n5 men, 4 women, and 3 children can complete a task in 20 days. \nTotal work = 20*(5m+4w+3c).\n4 men and 5 women can complete the same task in 25 days.\n=> Total work = 25*(4m+5w)\n20*(5m+4w+3c) = 25*(4m+5w)\n100m + 80w + 60c = 100m + 125w\n=> 60c = 45w\n4c = 3w\n10 men, 5 women, and 10 children:\nWe know that the total work = 100m + 125w\nLet x be the number of days taken by 10 men, 5 women, and 10 children to complete the work.\nx*(10m+5w+10c) = 100m + 125w\nx*(10m+5w+7.5w) = 100m + 125w\nx*(10m+12.5w) = 100m+125w\n=> x = 10 days.\nTherefore, option B is the right answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n5 men, 4 women, and 3 children can complete a task in 20 days. 4 men and 5 women can complete the same task in 25 days. The number of days 10 men, 5 women, and 10 children will take to complete the work is\n\n**Options:**\n- **A**. 8\n- **B**. 10 ✅\n- **C**. 12\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that a man completes 'm' units of work in a day, a woman completes 'w' units of work in a day and a child completes 'c' units of work in a day. \n5 men, 4 women, and 3 children can complete a task in 20 days. \nTotal work = 20*(5m+4w+3c).\n4 men and 5 women can complete the same task in 25 days.\n=> Total work = 25*(4m+5w)\n20*(5m+4w+3c) = 25*(4m+5w)\n100m + 80w + 60c = 100m + 125w\n=> 60c = 45w\n4c = 3w\n10 men, 5 women, and 10 children:\nWe know that the total work = 100m + 125w\nLet x be the number of days taken by 10 men, 5 women, and 10 children to complete the work.\nx*(10m+5w+10c) = 100m + 125w\nx*(10m+5w+7.5w) = 100m + 125w\nx*(10m+12.5w) = 100m+125w\n=> x = 10 days.\nTherefore, option B is the right answer."
     },
     {
-      "qid": "quant-815",
+      "qid": "quant-837",
       "passage_text": "",
-      "question_text": "A shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water. If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed",
+      "question_text": "A shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water.  If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed",
       "options": [
         {
           "data_option": "1",
@@ -21357,31 +21357,31 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "20% ",
+          "option_text": "20%",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "16% ",
+          "option_text": "16%",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "33.33% ",
+          "option_text": "33.33%",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Let the price of milk be $x$ and the price of water be $y$.\nNow, the shopkeeper mixes milk and water in the ratio $3:5$.\nThe cost of 1 litre of the mixture for the milkman = $\\dfrac{3x+5y}{5+3}$ = $\\dfrac{3x+5y}{8}$\nAverage price of 1 litre of milk and water = $\\dfrac{x+y}{2}$\nWe have to find the maximum possible profit that the shopkeeper could have made provided milk does not cost more than 5 times the cost of water. Therefore, x=5y will be the limiting condition.\nSubstituting x = 5y and calculating the profit percentage, we get,\nProfit percentage =$\\dfrac{\\frac{6y}{2}-\\frac{20y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\dfrac{\\frac{4y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\frac{4}{20}$ = $20$%.\nThe maximum possible profit percentage cannot exceed $20 %$ and hence, option B is the right answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water. If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed\n\n**Options:**\n- **A**. 25%\n- **B**. 20%  ✅\n- **C**. 16% \n- **D**. 33.33% \n\n**Correct Answer:** null\n\n**Solution:**\nLet the price of milk be $x$ and the price of water be $y$.\nNow, the shopkeeper mixes milk and water in the ratio $3:5$.\nThe cost of 1 litre of the mixture for the milkman = $\\dfrac{3x+5y}{5+3}$ = $\\dfrac{3x+5y}{8}$\nAverage price of 1 litre of milk and water = $\\dfrac{x+y}{2}$\nWe have to find the maximum possible profit that the shopkeeper could have made provided milk does not cost more than 5 times the cost of water. Therefore, x=5y will be the limiting condition.\nSubstituting x = 5y and calculating the profit percentage, we get,\nProfit percentage =$\\dfrac{\\frac{6y}{2}-\\frac{20y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\dfrac{\\frac{4y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\frac{4}{20}$ = $20$%.\nThe maximum possible profit percentage cannot exceed $20 %$ and hence, option B is the right answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water.  If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed\n\n**Options:**\n- **A**. 25%\n- **B**. 20% ✅\n- **C**. 16%\n- **D**. 33.33%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the price of milk be $x$ and the price of water be $y$.\nNow, the shopkeeper mixes milk and water in the ratio $3:5$.\nThe cost of 1 litre of the mixture for the milkman = $\\dfrac{3x+5y}{5+3}$ = $\\dfrac{3x+5y}{8}$\nAverage price of 1 litre of milk and water = $\\dfrac{x+y}{2}$\nWe have to find the maximum possible profit that the shopkeeper could have made provided milk does not cost more than 5 times the cost of water. Therefore, x=5y will be the limiting condition.\nSubstituting x = 5y and calculating the profit percentage, we get,\nProfit percentage =$\\dfrac{\\frac{6y}{2}-\\frac{20y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\dfrac{\\frac{4y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\frac{4}{20}$ = $20$%.\nThe maximum possible profit percentage cannot exceed $20 %$ and hence, option B is the right answer."
     },
     {
-      "qid": "quant-816",
+      "qid": "quant-838",
       "passage_text": "",
-      "question_text": "One of the angles of an isosceles triangle is 12 0 o 120^{o} 1 2 0 o . What is the circum-radius of this triangle if its shorter side is 12m",
+      "question_text": "One of the angles of an isosceles triangle is $120^{o}$. What is the circum-radius of this triangle if its shorter side is 12m",
       "options": [
         {
           "data_option": "1",
@@ -21392,29 +21392,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "123\\sqrt{3}3​m ",
+          "option_text": "12$\\sqrt{3}$m",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "122\\sqrt{2}2​m ",
+          "option_text": "12$\\sqrt{2}$m",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "12m ",
+          "option_text": "12m",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nOne of the angles of an isosceles triangle is 12 0 o 120^{o} 1 2 0 o . What is the circum-radius of this triangle if its shorter side is 12m\n\n**Options:**\n- **A**. 24m\n- **B**. 123\\sqrt{3}3​m \n- **C**. 122\\sqrt{2}2​m \n- **D**. 12m  ✅\n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nOne of the angles of an isosceles triangle is $120^{o}$. What is the circum-radius of this triangle if its shorter side is 12m\n\n**Options:**\n- **A**. 24m\n- **B**. 12$\\sqrt{3}$m\n- **C**. 12$\\sqrt{2}$m\n- **D**. 12m ✅\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-817",
+      "qid": "quant-839",
       "passage_text": "",
       "question_text": "Cities A and B are 1500 km apart and lie in different time zones. A plane departs from city A at 9 AM and reaches city B at 1 PM. Then, the plane departs from city B at 3 AM and travels at twice the speed with which it traveled from city A to city B. It reaches city A at 2 AM. What is the minimum time difference between the 2 cities (in hours)?",
       "options": [],
@@ -21424,7 +21424,7 @@
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCities A and B are 1500 km apart and lie in different time zones. A plane departs from city A at 9 AM and reaches city B at 1 PM. Then, the plane departs from city B at 3 AM and travels at twice the speed with which it traveled from city A to city B. It reaches city A at 2 AM. What is the minimum time difference between the 2 cities (in hours)?\n\n**Options:**\n\n**Correct Answer:** 2"
     },
     {
-      "qid": "quant-818",
+      "qid": "quant-840",
       "passage_text": "",
       "question_text": "There are 12 points in a plane out of which 5 are collinear. How many quadilaterals can be formed using these 12 points?",
       "options": [
@@ -21437,29 +21437,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "491 ",
+          "option_text": "491",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "420 ",
+          "option_text": "420",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "435 ",
+          "option_text": "435",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 12 points in a plane out of which 5 are collinear. How many quadilaterals can be formed using these 12 points?\n\n**Options:**\n- **A**. 490\n- **B**. 491 \n- **C**. 420  ✅\n- **D**. 435 \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 12 points in a plane out of which 5 are collinear. How many quadilaterals can be formed using these 12 points?\n\n**Options:**\n- **A**. 490\n- **B**. 491\n- **C**. 420 ✅\n- **D**. 435\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-819",
+      "qid": "quant-841",
       "passage_text": "",
       "question_text": "For every real x, if f(x+1) + f(x-1) = f(x), then what is the smallest positive value of k, if f(x+k) = f(x)?",
       "options": [
@@ -21472,29 +21472,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "3 ",
+          "option_text": "3",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "5 ",
+          "option_text": "5",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "4 ",
+          "option_text": "4",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor every real x, if f(x+1) + f(x-1) = f(x), then what is the smallest positive value of k, if f(x+k) = f(x)?\n\n**Options:**\n- **A**. 6 ✅\n- **B**. 3 \n- **C**. 5 \n- **D**. 4 \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor every real x, if f(x+1) + f(x-1) = f(x), then what is the smallest positive value of k, if f(x+k) = f(x)?\n\n**Options:**\n- **A**. 6 ✅\n- **B**. 3\n- **C**. 5\n- **D**. 4\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-820",
+      "qid": "quant-842",
       "passage_text": "",
       "question_text": "A toy shop owner sources a rare toy from various retailers who sold the toy to him at different rates. He got 40% of his stock from a retailer who sold it to him at 100/piece, 25% of his stock from a retailer who sold it to him at 120/piece and 35% of the stock from retailer who sold it to him at 80/piece. The shop owner decides to keep a single marked price for all the pieces of the toy. What should be the marked price if he wants to earn 20% profit after offering 20% discount ?",
       "options": [
@@ -21507,29 +21507,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "₹126 ",
+          "option_text": "₹126",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "₹135 ",
+          "option_text": "₹135",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "₹147 ",
+          "option_text": "₹147",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA toy shop owner sources a rare toy from various retailers who sold the toy to him at different rates. He got 40% of his stock from a retailer who sold it to him at 100/piece, 25% of his stock from a retailer who sold it to him at 120/piece and 35% of the stock from retailer who sold it to him at 80/piece. The shop owner decides to keep a single marked price for all the pieces of the toy. What should be the marked price if he wants to earn 20% profit after offering 20% discount ?\n\n**Options:**\n- **A**. ₹140\n- **B**. ₹126 \n- **C**. ₹135 \n- **D**. ₹147  ✅\n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA toy shop owner sources a rare toy from various retailers who sold the toy to him at different rates. He got 40% of his stock from a retailer who sold it to him at 100/piece, 25% of his stock from a retailer who sold it to him at 120/piece and 35% of the stock from retailer who sold it to him at 80/piece. The shop owner decides to keep a single marked price for all the pieces of the toy. What should be the marked price if he wants to earn 20% profit after offering 20% discount ?\n\n**Options:**\n- **A**. ₹140\n- **B**. ₹126\n- **C**. ₹135\n- **D**. ₹147 ✅\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-821",
+      "qid": "quant-843",
       "passage_text": "",
       "question_text": "Eight men and three women can complete a certain work in nine days, which eleven men and x women take six days to complete. If x men and six women take nine days to complete the same work, find x?",
       "options": [],
@@ -21539,7 +21539,7 @@
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nEight men and three women can complete a certain work in nine days, which eleven men and x women take six days to complete. If x men and six women take nine days to complete the same work, find x?\n\n**Options:**\n\n**Correct Answer:** 6"
     },
     {
-      "qid": "quant-822",
+      "qid": "quant-844",
       "passage_text": "",
       "question_text": "What is the maximum number of acute interior angles that a 12 sided closed figure can enclose?",
       "options": [],
@@ -21549,7 +21549,7 @@
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the maximum number of acute interior angles that a 12 sided closed figure can enclose?\n\n**Options:**\n\n**Correct Answer:** 9"
     },
     {
-      "qid": "quant-823",
+      "qid": "quant-845",
       "passage_text": "",
       "question_text": "In a GP the sum of the first six terms is 28 times the sum of the first three terms.If the fourth term is 108, then find the second term in the series ?",
       "options": [
@@ -21562,29 +21562,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "-4 ",
+          "option_text": "-4",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "12 ",
+          "option_text": "12",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "4 ",
+          "option_text": "4",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Let a be the first term and r be the common ratio.\ngiven, $a\\frac{(1 - r^6)}{1 - r} =  28 a\\frac{(1 - r^3)}{1 - r}$...(1)\nOn rearranging we get, 27 = $r^3(28 - r^3)$...(2)\nalso given, $ar^3 = 108$\n$r^3 = \\frac{108}{a}...(3)$\nsubstituting (3) in (2)\n$27 = \\frac{108}{a}(28 - \\frac{108}{a})$\n$= a^2 -112a + 432 = 0$\nOn solving we get a = 4 and 108.\na $\\neq$ 108 as then we will get r = $\\pm$ 1 which does not satisfy the condition given in (1)\nthus a = 4 and r = 3 (r $\\neq$ -3 as it does not satisfy (1))\n∴ the second term = $ar = 12$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a GP the sum of the first six terms is 28 times the sum of the first three terms.If the fourth term is 108, then find the second term in the series ?\n\n**Options:**\n- **A**. -12\n- **B**. -4 \n- **C**. 12  ✅\n- **D**. 4 \n\n**Correct Answer:** null\n\n**Solution:**\nLet a be the first term and r be the common ratio.\ngiven, $a\\frac{(1 - r^6)}{1 - r} =  28 a\\frac{(1 - r^3)}{1 - r}$...(1)\nOn rearranging we get, 27 = $r^3(28 - r^3)$...(2)\nalso given, $ar^3 = 108$\n$r^3 = \\frac{108}{a}...(3)$\nsubstituting (3) in (2)\n$27 = \\frac{108}{a}(28 - \\frac{108}{a})$\n$= a^2 -112a + 432 = 0$\nOn solving we get a = 4 and 108.\na $\\neq$ 108 as then we will get r = $\\pm$ 1 which does not satisfy the condition given in (1)\nthus a = 4 and r = 3 (r $\\neq$ -3 as it does not satisfy (1))\n∴ the second term = $ar = 12$"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a GP the sum of the first six terms is 28 times the sum of the first three terms.If the fourth term is 108, then find the second term in the series ?\n\n**Options:**\n- **A**. -12\n- **B**. -4\n- **C**. 12 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nLet a be the first term and r be the common ratio.\ngiven, $a\\frac{(1 - r^6)}{1 - r} =  28 a\\frac{(1 - r^3)}{1 - r}$...(1)\nOn rearranging we get, 27 = $r^3(28 - r^3)$...(2)\nalso given, $ar^3 = 108$\n$r^3 = \\frac{108}{a}...(3)$\nsubstituting (3) in (2)\n$27 = \\frac{108}{a}(28 - \\frac{108}{a})$\n$= a^2 -112a + 432 = 0$\nOn solving we get a = 4 and 108.\na $\\neq$ 108 as then we will get r = $\\pm$ 1 which does not satisfy the condition given in (1)\nthus a = 4 and r = 3 (r $\\neq$ -3 as it does not satisfy (1))\n∴ the second term = $ar = 12$"
     },
     {
-      "qid": "quant-824",
+      "qid": "quant-846",
       "passage_text": "",
       "question_text": "Two persons A and B play a game of dice in which each person throws a die on its turn and the person who throws 6 first wins the game. A starts the game. Find the probability that A wins.",
       "options": [
@@ -21597,29 +21597,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "6/11 ",
+          "option_text": "6/11",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "7/11 ",
+          "option_text": "7/11",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "4/11 ",
+          "option_text": "4/11",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo persons A and B play a game of dice in which each person throws a die on its turn and the person who throws 6 first wins the game. A starts the game. Find the probability that A wins.\n\n**Options:**\n- **A**. 5/11\n- **B**. 6/11  ✅\n- **C**. 7/11 \n- **D**. 4/11 \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo persons A and B play a game of dice in which each person throws a die on its turn and the person who throws 6 first wins the game. A starts the game. Find the probability that A wins.\n\n**Options:**\n- **A**. 5/11\n- **B**. 6/11 ✅\n- **C**. 7/11\n- **D**. 4/11\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-825",
+      "qid": "quant-847",
       "passage_text": "",
       "question_text": "Raghu has two daughters, Pinki and Soni. They are currently 8.5 years and 16 years old respectively. Raghu left a total of Rs.35000 for his daughters such that they may get equal amounts when each of them reaches the age of 21 years. The amount has been invested at 10% p.a. simple interest. How much did the elder daughter get at the time of the will?",
       "options": [
@@ -21632,29 +21632,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "20000 ",
+          "option_text": "20000",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "25000 ",
+          "option_text": "25000",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "22000 ",
+          "option_text": "22000",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaghu has two daughters, Pinki and Soni. They are currently 8.5 years and 16 years old respectively. Raghu left a total of Rs.35000 for his daughters such that they may get equal amounts when each of them reaches the age of 21 years. The amount has been invested at 10% p.a. simple interest. How much did the elder daughter get at the time of the will?\n\n**Options:**\n- **A**. 21000 ✅\n- **B**. 20000 \n- **C**. 25000 \n- **D**. 22000 \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaghu has two daughters, Pinki and Soni. They are currently 8.5 years and 16 years old respectively. Raghu left a total of Rs.35000 for his daughters such that they may get equal amounts when each of them reaches the age of 21 years. The amount has been invested at 10% p.a. simple interest. How much did the elder daughter get at the time of the will?\n\n**Options:**\n- **A**. 21000 ✅\n- **B**. 20000\n- **C**. 25000\n- **D**. 22000\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-826",
+      "qid": "quant-848",
       "passage_text": "",
       "question_text": "Two boats at a distance of 20 kms start moving towards each other. The ratio of their speed in the still water is 7:5. If both meet at the middle point in 20 minutes, then find the speed of the stream.",
       "options": [
@@ -21667,31 +21667,31 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "10 ",
+          "option_text": "10",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "15 ",
+          "option_text": "15",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "20 ",
+          "option_text": "20",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "The relative speed of one boat with respect to the other = $\\ \\frac{\\ 20\\times\\ 60}{20}$  = 60 km/h =  a+x +b-x  = a + b  ........(1)\nSince the ratio of speeds is 7:5, then a+$\\ \\frac{\\ 7a}{5}$ = 60\n=> a  = 25 and b =35\nAssuming the speed of stream is x, then to meet in the middle, the speed of both boats in water should be equal.\nNow, a+x = b-x   => b-a  = 2x = 35-25 ........(2)\n=> x= 5 km/h",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo boats at a distance of 20 kms start moving towards each other. The ratio of their speed in the still water is 7:5. If both meet at the middle point in 20 minutes, then find the speed of the stream.\n\n**Options:**\n- **A**. 5 ✅\n- **B**. 10 \n- **C**. 15 \n- **D**. 20 \n\n**Correct Answer:** null\n\n**Solution:**\nThe relative speed of one boat with respect to the other = $\\ \\frac{\\ 20\\times\\ 60}{20}$  = 60 km/h =  a+x +b-x  = a + b  ........(1)\nSince the ratio of speeds is 7:5, then a+$\\ \\frac{\\ 7a}{5}$ = 60\n=> a  = 25 and b =35\nAssuming the speed of stream is x, then to meet in the middle, the speed of both boats in water should be equal.\nNow, a+x = b-x   => b-a  = 2x = 35-25 ........(2)\n=> x= 5 km/h"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo boats at a distance of 20 kms start moving towards each other. The ratio of their speed in the still water is 7:5. If both meet at the middle point in 20 minutes, then find the speed of the stream.\n\n**Options:**\n- **A**. 5 ✅\n- **B**. 10\n- **C**. 15\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nThe relative speed of one boat with respect to the other = $\\ \\frac{\\ 20\\times\\ 60}{20}$  = 60 km/h =  a+x +b-x  = a + b  ........(1)\nSince the ratio of speeds is 7:5, then a+$\\ \\frac{\\ 7a}{5}$ = 60\n=> a  = 25 and b =35\nAssuming the speed of stream is x, then to meet in the middle, the speed of both boats in water should be equal.\nNow, a+x = b-x   => b-a  = 2x = 35-25 ........(2)\n=> x= 5 km/h"
     },
     {
-      "qid": "quant-827",
+      "qid": "quant-849",
       "passage_text": "",
-      "question_text": "Raman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)",
+      "question_text": "Raman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)",
       "options": [
         {
           "data_option": "1",
@@ -21702,29 +21702,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "7% ",
+          "option_text": "7%",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "8% ",
+          "option_text": "8%",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "5% ",
+          "option_text": "5%",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)\n\n**Options:**\n- **A**. 6% ✅\n- **B**. 7% \n- **C**. 8% \n- **D**. 5% \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)\n\n**Options:**\n- **A**. 6% ✅\n- **B**. 7%\n- **C**. 8%\n- **D**. 5%\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-828",
+      "qid": "quant-850",
       "passage_text": "",
       "question_text": "How many numbers will divide 2460 and 2640 leaving the same remainder?",
       "options": [
@@ -21737,66 +21737,66 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "22 ",
+          "option_text": "22",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "18 ",
+          "option_text": "18",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "21 ",
+          "option_text": "21",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many numbers will divide 2460 and 2640 leaving the same remainder?\n\n**Options:**\n- **A**. 15\n- **B**. 22 \n- **C**. 18  ✅\n- **D**. 21 \n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many numbers will divide 2460 and 2640 leaving the same remainder?\n\n**Options:**\n- **A**. 15\n- **B**. 22\n- **C**. 18 ✅\n- **D**. 21\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-829",
+      "qid": "quant-851",
       "passage_text": "",
       "question_text": "If the points A(2, a), B(b,2) C(-2,4) lie on the same line, then pick the correct relation between a and b?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1a+12b=14\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}a1​+2b1​=41​",
+          "option_text": "$\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "a+2b=4 ",
+          "option_text": "a+2b=4",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "a-2b=4 ",
+          "option_text": "a-2b=4",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "1a−12b=14\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}a1​−2b1​=41​ ",
+          "option_text": "$\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}$",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
       "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the points A(2, a), B(b,2) C(-2,4) lie on the same line, then pick the correct relation between a and b?\n\n**Options:**\n- **A**. 1a+12b=14\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}a1​+2b1​=41​\n- **B**. a+2b=4 \n- **C**. a-2b=4 \n- **D**. 1a−12b=14\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}a1​−2b1​=41​  ✅\n\n**Correct Answer:** null"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the points A(2, a), B(b,2) C(-2,4) lie on the same line, then pick the correct relation between a and b?\n\n**Options:**\n- **A**. $\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}$\n- **B**. a+2b=4\n- **C**. a-2b=4\n- **D**. $\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}$ ✅\n\n**Correct Answer:** null"
     },
     {
-      "qid": "quant-830",
+      "qid": "quant-852",
       "passage_text": "",
-      "question_text": "If m m m and n n n are the roots of the quadratic equation 2 x 2 − 16 x + 28 = 0 2x^2 - 16x + 28 = 0 2 x 2 − 1 6 x + 2 8 = 0 , then find the value of ( 1 + m + m 2 ) ( 1 + n + n 2 ) (1+m+m^2)(1+n+n^2) ( 1 + m + m 2 ) ( 1 + n + n 2 ) .",
+      "question_text": "If $m$ and $n$ are the roots of the quadratic equation $2x^2 - 16x + 28 = 0$, then find the value of $(1+m+m^2)(1+n+n^2)$.",
       "options": [
         {
           "data_option": "1",
@@ -21807,31 +21807,31 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "411 ",
+          "option_text": "411",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "367 ",
+          "option_text": "367",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "381 ",
+          "option_text": "381",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Sum of the roots $(m + n)$ = -(-16/2) = 8\nProduct of roots $(m*n)$ = 28/2 = 14\n$(1+m+m^2)(1+n+n^2)$\n$\\Rightarrow$ $1+m+m^2+n+mn+nm^2+n^2+mn^2+m^2n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+m^2+n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+(m+n)^2-2m*n$\n$\\Rightarrow$ $1+8+(14)^2+14(1+8)+(8)^2-2*14$\n$\\Rightarrow$ $367$\nHence, option C is the correct answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf m m m and n n n are the roots of the quadratic equation 2 x 2 − 16 x + 28 = 0 2x^2 - 16x + 28 = 0 2 x 2 − 1 6 x + 2 8 = 0 , then find the value of ( 1 + m + m 2 ) ( 1 + n + n 2 ) (1+m+m^2)(1+n+n^2) ( 1 + m + m 2 ) ( 1 + n + n 2 ) .\n\n**Options:**\n- **A**. 397\n- **B**. 411 \n- **C**. 367  ✅\n- **D**. 381 \n\n**Correct Answer:** null\n\n**Solution:**\nSum of the roots $(m + n)$ = -(-16/2) = 8\nProduct of roots $(m*n)$ = 28/2 = 14\n$(1+m+m^2)(1+n+n^2)$\n$\\Rightarrow$ $1+m+m^2+n+mn+nm^2+n^2+mn^2+m^2n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+m^2+n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+(m+n)^2-2m*n$\n$\\Rightarrow$ $1+8+(14)^2+14(1+8)+(8)^2-2*14$\n$\\Rightarrow$ $367$\nHence, option C is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $m$ and $n$ are the roots of the quadratic equation $2x^2 - 16x + 28 = 0$, then find the value of $(1+m+m^2)(1+n+n^2)$.\n\n**Options:**\n- **A**. 397\n- **B**. 411\n- **C**. 367 ✅\n- **D**. 381\n\n**Correct Answer:** null\n\n**Solution:**\nSum of the roots $(m + n)$ = -(-16/2) = 8\nProduct of roots $(m*n)$ = 28/2 = 14\n$(1+m+m^2)(1+n+n^2)$\n$\\Rightarrow$ $1+m+m^2+n+mn+nm^2+n^2+mn^2+m^2n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+m^2+n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+(m+n)^2-2m*n$\n$\\Rightarrow$ $1+8+(14)^2+14(1+8)+(8)^2-2*14$\n$\\Rightarrow$ $367$\nHence, option C is the correct answer."
     },
     {
-      "qid": "quant-831",
+      "qid": "quant-853",
       "passage_text": "",
-      "question_text": "The cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%.\n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?",
+      "question_text": "The cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%. \n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?",
       "options": [
         {
           "data_option": "1",
@@ -21842,29 +21842,29 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "15% ",
+          "option_text": "15%",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "10% ",
+          "option_text": "10%",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "12% ",
+          "option_text": "12%",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Given, the discount percentage of the article is 20%.\nHence, S = $\\left(\\ \\frac{\\ 100-20}{100}\\right)M$\n=> $S=0.8M$\nNow, since, C, S and M are in GP, $S^2=CM$\n=> C = $\\ \\frac{S^2\\ }{M}$ = $\\ \\frac{0.8M\\times\\ 0.8M\\ }{M}$\n=> C = 0.64M\nIf cost price and profit are kept same then the selling price will be the same too. \nNow, C, S and M are in AP. => C+M = 2S   => 0.64M+ New M =  2*0.8M   \n=> New Marked Price = 0.96M\nHence discount percentage = $\\ \\frac{M-S}{M}\\times\\ 100$  = $\\ \\frac{0.16M}{0.96M}\\times\\ 100$ = 16.67%",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%.\n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?\n\n**Options:**\n- **A**. 16.67% ✅\n- **B**. 15% \n- **C**. 10% \n- **D**. 12% \n\n**Correct Answer:** null\n\n**Solution:**\nGiven, the discount percentage of the article is 20%.\nHence, S = $\\left(\\ \\frac{\\ 100-20}{100}\\right)M$\n=> $S=0.8M$\nNow, since, C, S and M are in GP, $S^2=CM$\n=> C = $\\ \\frac{S^2\\ }{M}$ = $\\ \\frac{0.8M\\times\\ 0.8M\\ }{M}$\n=> C = 0.64M\nIf cost price and profit are kept same then the selling price will be the same too. \nNow, C, S and M are in AP. => C+M = 2S   => 0.64M+ New M =  2*0.8M   \n=> New Marked Price = 0.96M\nHence discount percentage = $\\ \\frac{M-S}{M}\\times\\ 100$  = $\\ \\frac{0.16M}{0.96M}\\times\\ 100$ = 16.67%"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%. \n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?\n\n**Options:**\n- **A**. 16.67% ✅\n- **B**. 15%\n- **C**. 10%\n- **D**. 12%\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, the discount percentage of the article is 20%.\nHence, S = $\\left(\\ \\frac{\\ 100-20}{100}\\right)M$\n=> $S=0.8M$\nNow, since, C, S and M are in GP, $S^2=CM$\n=> C = $\\ \\frac{S^2\\ }{M}$ = $\\ \\frac{0.8M\\times\\ 0.8M\\ }{M}$\n=> C = 0.64M\nIf cost price and profit are kept same then the selling price will be the same too. \nNow, C, S and M are in AP. => C+M = 2S   => 0.64M+ New M =  2*0.8M   \n=> New Marked Price = 0.96M\nHence discount percentage = $\\ \\frac{M-S}{M}\\times\\ 100$  = $\\ \\frac{0.16M}{0.96M}\\times\\ 100$ = 16.67%"
     },
     {
-      "qid": "quant-832",
+      "qid": "quant-854",
       "passage_text": "",
       "question_text": "The average age of 225 employees in a company increases by 0.06 when a new employee joins the company. After this, another employee leaves the company and the average age of the company decreases by 0.04. Find the difference between the age of new employee and the employee who left the company.",
       "options": [
@@ -21877,26 +21877,26 @@
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "3 years ",
+          "option_text": "3 years",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "4.5 years ",
+          "option_text": "4.5 years",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Cannot be determined ",
+          "option_text": "Cannot be determined",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
       "solution_text": "Let the initial average age of 225 employees be ‘x’ years. Hence, the sum of the ages of 225 employees will be 225x. Let the age of the new employee be ‘a’. So after the new employee joins we have\n$\\frac{225x + a}{226} = x + .06$\nNow, let the age of the employee who left the company be ‘b’\nSo we have\n$\\frac{225x + a - b}{225} = x + .06 - 0.04$\n=> 225x + a - b = 225x + 4.5\n=> a - b = 4.5\nHence, the required value is 4.5 years",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average age of 225 employees in a company increases by 0.06 when a new employee joins the company. After this, another employee leaves the company and the average age of the company decreases by 0.04. Find the difference between the age of new employee and the employee who left the company.\n\n**Options:**\n- **A**. 1.5 years\n- **B**. 3 years \n- **C**. 4.5 years  ✅\n- **D**. Cannot be determined \n\n**Correct Answer:** null\n\n**Solution:**\nLet the initial average age of 225 employees be ‘x’ years. Hence, the sum of the ages of 225 employees will be 225x. Let the age of the new employee be ‘a’. So after the new employee joins we have\n$\\frac{225x + a}{226} = x + .06$\nNow, let the age of the employee who left the company be ‘b’\nSo we have\n$\\frac{225x + a - b}{225} = x + .06 - 0.04$\n=> 225x + a - b = 225x + 4.5\n=> a - b = 4.5\nHence, the required value is 4.5 years"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average age of 225 employees in a company increases by 0.06 when a new employee joins the company. After this, another employee leaves the company and the average age of the company decreases by 0.04. Find the difference between the age of new employee and the employee who left the company.\n\n**Options:**\n- **A**. 1.5 years\n- **B**. 3 years\n- **C**. 4.5 years ✅\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the initial average age of 225 employees be ‘x’ years. Hence, the sum of the ages of 225 employees will be 225x. Let the age of the new employee be ‘a’. So after the new employee joins we have\n$\\frac{225x + a}{226} = x + .06$\nNow, let the age of the employee who left the company be ‘b’\nSo we have\n$\\frac{225x + a - b}{225} = x + .06 - 0.04$\n=> 225x + a - b = 225x + 4.5\n=> a - b = 4.5\nHence, the required value is 4.5 years"
     }
   ]
 }

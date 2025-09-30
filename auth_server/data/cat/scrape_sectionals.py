@@ -167,7 +167,7 @@ def _extract_correct_answer(qroot) -> Optional[str]:
         label_tag = btn.select_one(".opt-no span")
         label = label_tag.get_text(strip=True) if label_tag else None
         content_div = btn.select_one(".option-content")
-        text = " ".join(p.get_text(strip=True) for p in content_div.find_all("p")) if content_div else None
+        text = _collect_paragraph_text(content_div) if content_div else None
         if label and text:
             options.append({"data_option": str(i), "label": label, "option_text": text, "is_correct": (str(i) == correct_answer_index)})
     correct_answer_tag = qroot.find("p", id="correct-answer")
