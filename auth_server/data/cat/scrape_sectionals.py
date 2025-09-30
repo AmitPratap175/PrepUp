@@ -49,7 +49,7 @@ async def test_news_crawl() -> Dict[str, List[str]]:
 
     browser_config = BrowserConfig(
         verbose=True,
-        headless=False,
+        headless=True,
         use_persistent_context=True,
         use_managed_browser=True,
         browser_type="chromium",
@@ -65,15 +65,29 @@ async def test_news_crawl() -> Dict[str, List[str]]:
     
     categorized_html: Dict[str, List[str]] = {"quant": [], "verbal": [], "reasoning": []}
 
+    script_dir = Path(__file__).parent
+    html_dir = script_dir / "html"
+    os.makedirs(html_dir, exist_ok=True)
+
     async with AsyncWebCrawler(config=browser_config) as crawler:
         # URLs are now formatted with the dynamically updated numbers.
-        urls = [
-                f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
-                ]
+        # urls = [
+        #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
+        #         ]
+        with open(Path(__file__).parent /"urls_cracku_sectionals.txt", "r") as f:
+            urls = [line.strip() for line in f if line.strip()]
         
         for url in urls:
             result = await crawler.arun(url, config=run_config, magic=True)
             if result and result.html:
+                # Sanitize URL to create a valid filename
+                # filename = re.sub(r'https?://', '', url)
+                # filename = re.sub(r'[^a-zA-Z0-9_-]', '_', filename) + ".html"
+                # filepath = html_dir / filename
+                # with open(filepath, "w", encoding="utf-8") as f:
+                #     f.write(result.html)
+                # print(f"Saved HTML to {filepath}")
+
                 if "quant" in url:
                     categorized_html["quant"].append(result.html)
                 elif "verbal" in url:
@@ -144,13 +158,45 @@ def _extract_correct_answer(qroot) -> Optional[str]:
             return options, m.group(1).strip()
     return options, None
 
-def _build_full_markdown(qid: str, passage_text: str, question_text: str, options: List[Dict], correct_option_data: Optional[str]) -> str:
+def _extract_solution_text(qroot) -> Optional[str]:
+    # First try inside qroot
+    solution_div = qroot.find("div", id="solution-content")
+    # If not found, look in the whole page (covers your case)
+    if not solution_div:
+        solution_div = qroot.find_parent().find("div", id="solution-content")
+        if not solution_div:
+            solution_div = qroot.find_next("div", id="solution-content")
+
+    if not solution_div:
+        return None
+
+    sol_soup = BeautifulSoup(str(solution_div), 'html.parser')
+
+    # Convert katex spans to LaTeX inline math
+    for span in sol_soup.find_all('span', class_='katex'):
+        annotation = span.find('annotation', encoding='application/x-tex')
+        if annotation:
+            span.replace_with(f'${annotation.get_text()}$')
+        else:
+            span.replace_with(span.get_text())
+
+    for br in sol_soup.find_all('br'):
+        br.replace_with('\n')
+
+    text = sol_soup.get_text().strip()
+    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'\n[ \n\t]*', '\n', text)
+    return text
+
+def _build_full_markdown(qid: str, passage_text: str, question_text: str, options: List[Dict], correct_option_data: Optional[str], solution_text: Optional[str]) -> str:
     """Constructs a markdown string for a given question for easy review."""
     lines = [f"### Question (qid: {qid})", "", "**Passage:**", passage_text or "", "", question_text or "", "", "**Options:**"]
     for opt in options:
         mark = " ✅" if opt.get("is_correct") else ""
         lines.append(f"- **{opt.get('label', '')}**. {opt.get('option_text', '')}{mark}")
     lines.extend(["", f"**Correct Answer:** {correct_option_data if correct_option_data is not None else 'null'}"])
+    if solution_text:
+        lines.extend(["", "**Solution:**", solution_text])
     return "\n".join(lines)
 
 def parse_html_to_questions(html: str) -> Dict:
@@ -162,26 +208,49 @@ def parse_html_to_questions(html: str) -> Dict:
     if not q_roots:
         q_roots = [d for d in soup.find_all("div") if d.get("id", "").startswith("q")]
     for qroot in q_roots:
+        solution_text = _extract_solution_text(qroot)
         qid = str(qroot.get("data-qno") or qroot.get("id") or "").strip()
         if qid.lower().startswith("q"):
             digits = re.findall(r"\d+", qid)
             if digits: qid = digits[0]
         if not qid: continue
+        
         passage_text, question_text = _find_passage_and_question_blocks(qroot, qid)
-        if not question_text:
+
+        # Override with more specific selectors if available
+        question_text_div = qroot.find("div", class_="question-text pl-1 pr-1")
+        if question_text_div:
+            question_text = _collect_paragraph_text(question_text_div)
+        elif not question_text:
+            # Fallback to the generic question-text class
             q_text_div = qroot.find("div", class_=re.compile(r"\bquestion-text\b"))
             if q_text_div: question_text = _norm_ws(q_text_div.get_text(" ", strip=True))
+
+        
+        # print("\n\n\nSolution_text: ",solution_text)
+
         img_tag = qroot.find("img", class_="img-responsive")
         if img_tag and img_tag.has_attr("src"): image_url = img_tag["src"].strip()
         options, correct_option_data = _extract_correct_answer(qroot)
         if question_text is None: continue
         if question_text:
-            results.append({"qid": str(qid), "passage_text": passage_text if question_text not in passage_text else "", "question_text": question_text or "", "options": options, "correct_option_data": str(correct_option_data) if correct_option_data is not None else None, "solution_text": None, "image_url": image_url or "", "full_markdown": _build_full_markdown(str(qid), passage_text or "", question_text or "", options, correct_option_data)})
+            results.append({
+                "qid": str(qid),
+                "passage_text": passage_text if passage_text and question_text not in passage_text else "", 
+                "question_text": question_text or "", 
+                "options": options, 
+                "correct_option_data": str(correct_option_data) if correct_option_data is not None else None, 
+                "solution_text": solution_text, 
+                "image_url": image_url or "", 
+                "full_markdown": _build_full_markdown(str(qid), passage_text or "", question_text or "", options, correct_option_data, solution_text)
+            })
     return {"questions": results}
 
 def main(categorized_html: Dict[str, List[str]]):
     """Main function orchestrating the data processing workflow."""
     strings = {"quant":"quantitative-aptitude", "verbal":"verbal-ability", "reasoning":"data-interpretation"}
+    # final_destination_dir = project_root / "auth_server/data/cat"
+    # os.makedirs(final_destination_dir, exist_ok=True)
     
     script_dir = Path(__file__).parent
     project_root = script_dir.parent.parent.parent
@@ -189,12 +258,14 @@ def main(categorized_html: Dict[str, List[str]]):
     intermediate_dir = script_dir.parent / "temp_json"
     final_destination_dir = project_root / "auth_server/data/cat"
     os.makedirs(intermediate_dir, exist_ok=True)
+    os.makedirs(final_destination_dir, exist_ok=True)
 
     for category, subject_alias in strings.items():
         html_docs = categorized_html.get(category, [])
         if not html_docs: continue
 
         all_questions: List[Dict] = []
+        seen_questions = set()
         for i, html in enumerate(html_docs):
             try:
                 name = f"crawled_{category}_{i}"
@@ -202,7 +273,13 @@ def main(categorized_html: Dict[str, List[str]]):
                 if parsed is None:
                     sys.stderr.write(f"WARNING: No questions parsed from {name}\n")
                     continue
-                all_questions.extend(parsed.get("questions", []))
+                
+                for question in parsed.get("questions", []):
+                    q_text = question.get("question_text")
+                    if q_text and q_text not in seen_questions:
+                        all_questions.append(question)
+                        seen_questions.add(q_text)
+
             except Exception as e:
                 sys.stderr.write(f"ERROR parsing {name}: {e}\n")
 
@@ -225,8 +302,8 @@ def main(categorized_html: Dict[str, List[str]]):
     print("---" + " Running qid cleaning script ---")
     clean_qid_main()
     print("---" + " Finished qid cleaning script ---")
-
-    os.makedirs(final_destination_dir, exist_ok=True)
+    
+    
     for filename in os.listdir(intermediate_dir):
         if filename.endswith(".json"):
             source_file = intermediate_dir / filename
