@@ -15762,7 +15762,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "90",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -16180,7 +16180,7 @@
     {
       "qid": "quant-635",
       "passage_text": "",
-      "question_text": "In an island called Rich, they use a currency called Mint (M). It is available in notes of four denominations — 1M, 12M, 144M, 1728M. What is the minimum number of notes required to pay an exact amount of (12^3)-1 M?",
+      "question_text": "In an island called Rich, they use a currency called Mint (M). It is available in notes of four denominations — 1M, 12M, 144M, 1728M. What is the minimum number of notes required to pay an exact amount of $12^3$-1 M?",
       "options": [
         {
           "data_option": "1",
@@ -16634,7 +16634,7 @@
     },
     {
       "qid": "quant-653",
-      "passage_text": "Rajesh found a decimal number which when represented in bases 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
+      "passage_text": "Rajesh found a decimal number which when represented in bases 2, 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
       "question_text": "What is the smallest positive decimal number satisfying this property?",
       "options": [],
       "correct_option_data": "59",
@@ -16644,7 +16644,7 @@
     },
     {
       "qid": "quant-654",
-      "passage_text": "Rajesh found a decimal number which when represented in bases 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
+      "passage_text": "Rajesh found a decimal number which when represented in bases 2, 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
       "question_text": "How many such three-digit decimal numbers are possible?",
       "options": [],
       "correct_option_data": "15",
@@ -16727,7 +16727,7 @@
       "passage_text": "",
       "question_text": "N is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "27",
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 182106)\n\n**Passage:**\nN is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is\n\nN is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is\n\n**Options:**\n\n**Correct Answer:** null"
@@ -22072,6 +22072,156 @@
       "solution_text": "a + 14d / a + 22d = 15/23 => 15a + 330d = 23a + 322d => a = d\n\na + 29d = 30a = 120 => a = 4. Therefore, average = 75/2( 8 + 74*4)/75 = 152",
       "image_url": "",
       "full_markdown": "### Question (qid: 2519)\n\n**Passage:**\nThe ratio of the 15th term and 23rd term of an AP is 15:23. If the 30th term of the AP is 120, find the average of the first 75 terms of the series.\n\n124\n\n152\n\n150\n\n142\n\nThe ratio of the 15th term and 23rd term of an AP is 15:23. If the 30th term of the AP is 120, find the average of the first 75 terms of the series.\n\n**Options:**\n- **A**. 124\n- **B**. 152\n- **C**. 150\n- **D**. 142\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-838",
+      "passage_text": "",
+      "question_text": "A, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2 (\\sqrt{3}+1)$ sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$4\\sqrt{3}$ sq cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$8(\\sqrt{3}-1)$ sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the side of the equilateral triangle be 'a'.\nThe circle shown is the circumcircle of the equilateral triangle.\nThe circumradius is given as 2.\nwkt circumradius of an equilateral triangle is given by $\\frac{a}{\\sqrt{3}}$\nSo, $\\frac{a}{\\sqrt{3}}=2$ => $a=2\\sqrt{3}$\nThe length of each side of the triangle is $2\\sqrt{3}$ cm. \n\nFor any equilateral triangle, the circumradius, median, altitude, inradius, all of them coicide\nHence, diameter AD bisects BC at E.\nHence BE = EC = $\\frac{2\\sqrt{3}}{2}=\\sqrt{3}$\nSo, area of the right angled triangle ABD is $\\frac{1}{2}\\cdot\\text{AD}\\cdot\\text{BE}=2\\sqrt{3}$ sq cm \nand the area of the quadrilateral ABDC is $4\\sqrt{3}$ sq cm\n\nOR \n\nTriangle ABD is a right triangle(Since AD is diameter)\nUsing Pythagoras theorem,  $\\text{AB}^2+\\text{BD}^2=\\text{AD}^2$, \n$(2\\sqrt{3})^2+\\text{BD}^2=4^2$ we get BD = 2 cm. \nSo, length of BD and DC is 2 cm. \n\nSo, area of the right angled triangle ABD is $2\\sqrt{3}$ sq cm and the area of the quadrilateral ABDC is $4\\sqrt{3}$ sq cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 272)\n\n**Passage:**\nA, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?\n\n2 ( 3 + 1 ) 2 (\\sqrt{3}+1) 2 ( 3 ​ + 1 ) sq cm\n\n4 3 4\\sqrt{3} 4 3 ​ sq cm\n\n8 ( 3 − 1 ) 8(\\sqrt{3}-1) 8 ( 3 ​ − 1 ) sq cm\n\nCan't be determined\n\nA, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?\n\n**Options:**\n- **A**. $2 (\\sqrt{3}+1)$ sq cm\n- **B**. $4\\sqrt{3}$ sq cm\n- **C**. $8(\\sqrt{3}-1)$ sq cm\n- **D**. Can't be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-839",
+      "passage_text": "Three friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is 3 \\sqrt{3} 3 ​ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number.\n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n3 0 0 30^0 3 0 0 , 11 π 11\\pi\\ 1 1 π\n\n6 0 0 , 11 π 60^0,\\ 11\\pi\\ 6 0 0 , 1 1 π\n\n3 0 0 , 22 π 30^0\\ ,\\ 22\\pi\\ 3 0 0 , 2 2 π\n\n6 0 0 , 22 π 60^0,\\ 22\\pi\\ 6 0 0 , 2 2 π",
+      "question_text": "Three friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is $\\sqrt{3}$ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number. \n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$30^0$, $11\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$60^0,\\ 11\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$30^0\\ ,\\ 22\\pi\\ $",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$60^0,\\ 22\\pi\\ $",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The distance between Aranya- Saranya is maximum, so they must be standing exactly opposite to each other i.e the diameter of the circle.\n\nAlso stated that distance between Charu and Aranya is $\\sqrt{\\ 3}$ times the distance between Charu and Sharanya. \n\nLet distance between Charu and Sharanya. = x\n\n=> distance between Charu and Aranya = $\\sqrt{\\ 3}x$\n\nThe triangle formed within a semi-circle is a right-angled triangle. \n\nHence $AS^2=AC^2\\ +\\ CS^2$\n\n=> $AS\\ =\\ 2x$\n\nWhen sides are in the ratio 1 : $\\sqrt{\\ 3}$ : 2, then the corresponding angles would be $30^{\\circ\\ \\ },\\ 60^{\\circ\\ },\\ 90^{\\circ\\ }$\n\n=> $\\angle\\ CAS\\ =\\ 30^{\\circ\\ }$\n\nSo the angle between the line joining Aranya-Saranya and Aranya-Charu is $30^{\\circ\\ }$\n\nRadius of the circle = x.\n\nLength of the track = $2\\pi\\ x$\n\nOption A :$2\\pi\\ x$ = 11$\\pi\\ $ => x = 5.5\n\nOption C : $2\\pi\\ x$ = 22$\\pi\\ $ => x = 11\n\nSince x is an integer \n\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 292859)\n\n**Passage:**\nThree friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is 3 \\sqrt{3} 3 ​ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number.\n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n3 0 0 30^0 3 0 0 , 11 π 11\\pi\\ 1 1 π\n\n6 0 0 , 11 π 60^0,\\ 11\\pi\\ 6 0 0 , 1 1 π\n\n3 0 0 , 22 π 30^0\\ ,\\ 22\\pi\\ 3 0 0 , 2 2 π\n\n6 0 0 , 22 π 60^0,\\ 22\\pi\\ 6 0 0 , 2 2 π\n\nThree friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is $\\sqrt{3}$ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number. \n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n**Options:**\n- **A**. $30^0$, $11\\pi\\ $\n- **B**. $60^0,\\ 11\\pi\\ $\n- **C**. $30^0\\ ,\\ 22\\pi\\ $\n- **D**. $60^0,\\ 22\\pi\\ $\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-840",
+      "passage_text": "",
+      "question_text": "A line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(5,3)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(9,-1)",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(-3,-5)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(3,1)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A line that is parallel to 5x + 12y = 7 can be represented by \n\n5x + 12y = c\n\nNow, distance between these two lines\n\n$\\frac{\\left|7-c\\right|}{\\sqrt{5^2+12^2}}=2$\n\n$\\frac{\\left|7-c\\right|}{13}=2$\n\n$\\left|7-c\\right|=26$\n\n$7-c=26,\\ 7-c=-26$\n\n$c=-19,\\ c=33$\n\nHence, the new line is either\n\n5x + 12y = -19 or 5x + 12y = 33\n\nHence, only (9,-1) can lie on one of the lines.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 394677)\n\n**Passage:**\nA line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?\n\n(5,3)\n\n(9,-1)\n\n(-3,-5)\n\n(3,1)\n\nA line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?\n\n**Options:**\n- **A**. (5,3)\n- **B**. (9,-1)\n- **C**. (-3,-5)\n- **D**. (3,1)\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-841",
+      "passage_text": "",
+      "question_text": "A right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "144 + 40$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "144 + 80$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "72 + 40$\\sqrt2$ + 24$\\sqrt5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "72 + 40$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since, $\\angle BAC=90^0, BC^2=AB^2+AC^2=576+576=1052$\n=> BC = 24$\\sqrt2$\nAF is the perpendicular as well as the median. Thus, BF = FC = 12$\\sqrt2$.\nSince, triangle AFB is perpendicular, $AF^2 = AB^2 - BF^2 = 576 - 288$\n=> AF = $12\\sqrt{2}$\nSince, the area of the triangles ABD = ADE = AEC, BD = DE = EC = 24$\\sqrt2$/3 = 8$\\sqrt2$ \nAlso, AF is the median of DE => DF = DE/2 = 8$\\sqrt2$/2 = 4$\\sqrt2$\nSince, ADF is right angled, $AD^2 = DF^2 + AF^2 = 32 + 288 = 320$\n=> AD = 8$\\sqrt5$\nThere are six triangles in the given figure. They are : ABC, ABD, ADE, AEC, BAE and CAD.\nThe perimeter of the triangles = (48 + 24$\\sqrt2$ ) + 2(24 + 8$\\sqrt2$ + 8$\\sqrt5$ ) + (8$\\sqrt2$ + 2x8$\\sqrt5$ ) + 2(24 + 16$\\sqrt2$ + 8$\\sqrt5$ ) = 144 + 80$\\sqrt2$ + 48$\\sqrt5$",
+      "image_url": "https://cracku.in/media/uploads/geoqn1.png",
+      "full_markdown": "### Question (qid: 39334)\n\n**Passage:**\nA right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.\n\n144 + 40 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\n144 + 80 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\n72 + 40 2 \\sqrt2 2 ​ + 24 5 \\sqrt5 5 ​\n\n72 + 40 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\nA right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.\n\n**Options:**\n- **A**. 144 + 40$\\sqrt2$ + 48$\\sqrt5$\n- **B**. 144 + 80$\\sqrt2$ + 48$\\sqrt5$\n- **C**. 72 + 40$\\sqrt2$ + 24$\\sqrt5$\n- **D**. 72 + 40$\\sqrt2$ + 48$\\sqrt5$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-842",
+      "passage_text": "A circle is circumscribed around a regular octagon of area 3200 2 3200\\sqrt{\\ 2} 3 2 0 0 2 ​ sq cm. What is the radius of the circle (in cm)?",
+      "question_text": "A circle is circumscribed around a regular octagon of area $3200\\sqrt{\\ 2}$ sq cm. What is the radius of the circle (in cm)?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "The angle at the centre of the octagon = $\\frac{360}{8}$ = $45^0$\nSo 8 triangles with two sides as r and angle between them as $45^0$ are formed\nArea of one triangle = $\\ \\frac{\\ 1}{2}\\times\\ r\\times\\ r\\times\\ \\sin\\ 45$\n8 * $\\ \\frac{\\ 1}{2}\\times\\ r\\times\\ r\\times\\ \\sin\\ 45$ = $3200\\sqrt{\\ 2}$\nr = 40 cm\n40 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 311239)\n\n**Passage:**\nA circle is circumscribed around a regular octagon of area 3200 2 3200\\sqrt{\\ 2} 3 2 0 0 2 ​ sq cm. What is the radius of the circle (in cm)?\n\nA circle is circumscribed around a regular octagon of area $3200\\sqrt{\\ 2}$ sq cm. What is the radius of the circle (in cm)?\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
