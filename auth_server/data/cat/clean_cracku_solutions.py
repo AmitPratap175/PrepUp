@@ -137,8 +137,8 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
                 os.makedirs(html_dir, exist_ok=True)
 
                 if "quant" in url:
-                    with open(html_dir/"page.html", "w", encoding="utf-8") as f:
-                        f.write(result.html)
+                    # with open(html_dir/"page.html", "w", encoding="utf-8") as f:
+                    #     f.write(result.html)
                     categorized_html["quant"].append(result.html)
                 elif "verbal" in url:
                     categorized_html["verbal"].append(result.html)
@@ -329,8 +329,8 @@ def main(categorized_html: Dict[str, List[str]]):
                 final_data["questions"][-n+i]["options"] = all_questions[i].get("options")
                 final_data["questions"][-n+i]["correct_option_data"] = all_questions[i].get("correct_option_data")
 
-            if category == 'quant':
-                print(all_questions[-1]["correct_option_data"], end="\n\n")
+            # if category == 'quant':
+            #     print(all_questions[-1]["correct_option_data"], end="\n\n")
         else:
             final_data = output_obj
 
