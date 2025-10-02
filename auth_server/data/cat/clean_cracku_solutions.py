@@ -135,10 +135,10 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
                 script_dir = Path(__file__).parent
                 html_dir = script_dir / "html"
                 os.makedirs(html_dir, exist_ok=True)
-                with open(html_dir/"page.html", "w", encoding="utf-8") as f:
-                    f.write(result.html)
 
                 if "quant" in url:
+                    with open(html_dir/"page.html", "w", encoding="utf-8") as f:
+                        f.write(result.html)
                     categorized_html["quant"].append(result.html)
                 elif "verbal" in url:
                     categorized_html["verbal"].append(result.html)
@@ -212,6 +212,13 @@ def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], O
 def _extract_correct_answer(qroot) -> Tuple[List[Dict], Optional[str]]:
     """Extracts all options and identifies the correct one from the HTML."""
     options = []
+
+    # Handle TITA (Type In The Answer) questions
+    tita_btn = qroot.select_one("div.tita-answer-box a.tita-btn")
+    if tita_btn and tita_btn.has_attr("data-answer"):
+        correct_answer = tita_btn.get("data-answer")
+        return [], correct_answer
+
     options_box = qroot.select_one("div.options-box")
     correct_answer_index = None
     if options_box:
@@ -320,6 +327,10 @@ def main(categorized_html: Dict[str, List[str]]):
             for i in range(n):
                 final_data["questions"][-n+i]["solution_text"] = all_questions[i].get("question_text")
                 final_data["questions"][-n+i]["options"] = all_questions[i].get("options")
+                final_data["questions"][-n+i]["correct_option_data"] = all_questions[i].get("correct_option_data")
+
+            if category == 'quant':
+                print(all_questions[-1]["correct_option_data"], end="\n\n")
         else:
             final_data = output_obj
 
