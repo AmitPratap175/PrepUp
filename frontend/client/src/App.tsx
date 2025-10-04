@@ -34,6 +34,7 @@ import { AuthProvider } from "@/contexts/auth-context";
 import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
+import ChatbotPage from "@/pages/chatbot";
 import { useEffect } from "react";
 
 /**
@@ -76,6 +77,7 @@ function Router() {
       <Route path="/signup" component={SignupPage} />
       <Route path="/add-question" component={AddQuestionPage} />
       <Route path="/settings" component={SettingsPage} />
+      <Route path="/chatbot" component={ChatbotPage} />
       <Route component={NotFound} />
     </Switch>
   );
