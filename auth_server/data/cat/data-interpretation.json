@@ -14479,6 +14479,146 @@
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 322672)\n\n**Passage:**\nFive friends Mounika, Nihira, Ooha, Priya and Sriya were born in five different months January, March, July, October and December of the same year but not necessarily in the same order. Each of them belonged to different cities among Hyderabad, Mumbai, Chennai, Delhi, Bangalore not necessarily in the same order. \n\n1. Nihira is younger than Sriya, Sriya is younger than Priya and Priya is not the eldest. \n2. For one of the friends, the initial letters of their name, birth month and their city name is the same. \n3. The person from Delhi is elder than the person from Bangalore, but neither of them is the youngest or the eldest.\n\nFor how many friends their birth months can be accurately determined\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-519",
+      "passage_text": "Vidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.",
+      "question_text": "Which of the following is the minor of Science?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "EC 6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "EC 5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "EC 8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "EC 9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nFrom the information given in the question:\n\ni) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nii) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\niii) All the minor electives are coded with elective numbers numerically above EC5.\n\nFrom point ii) and iii) EC 6, EC 8 and EC 9 are the minors, while all the others are majors.\n\nWe can make the following table:\n\nEC4 must be a major of Science subject.\n\nThe sum of all the elective numbers of maths is 16. EC5 is one of the majors of Maths.\n\nThus the other two electives numbers must sum up to 16-5=11\n\nThus, the possibilities are 2,9 or 3,8.\n\nCase 1.\n\nEC2 and EC9 are the electives of Maths subject.\n\nThe sum of all the elective numbers of Bio is the highest.\n\nThus Minor of Bio must be 8, Major must be 3.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThus we can make the following table:\n\nCase 2.\n\nEC3 and EC8 are the electives of Maths subject.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThe possible sum of the elective numbers of majors of Bio= 1+7 or 2+7...i.e 8,9\n\nOdd digits are not possible, sum 8 is also not possible as one of the major electives of Science is EC4 which is already half of the two majors of Bio.\n\nThus this case is not possible.\n\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 300272)\n\n**Passage:**\nVidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\nWhich of the following is the minor of Science?\n\n**Options:**\n- **A**. EC 6\n- **B**. EC 5\n- **C**. EC 8\n- **D**. EC 9\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-520",
+      "passage_text": "Vidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.",
+      "question_text": "Which of the following is the major of Bio?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "EC 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "EC 3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "EC 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "EC 8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nFrom the information given in the question:\n\ni) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nii) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\niii) All the minor electives are coded with elective numbers numerically above EC5.\n\nFrom point ii) and iii) EC 6, EC 8 and EC 9 are the minors, while all the others are majors.\n\nWe can make the following table:\n\nEC4 must be a major of Science subject.\n\nThe sum of all the elective numbers of maths is 16. EC5 is one of the majors of Maths.\n\nThus the other two electives numbers must sum up to 16-5=11\n\nThus, the possibilities are 2,9 or 3,8.\n\nCase 1.\n\nEC2 and EC9 are the electives of Maths subject.\n\nThe sum of all the elective numbers of Bio is the highest.\n\nThus Minor of Bio must be 8, Major must be 3.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThus we can make the following table:\n\nCase 2.\n\nEC3 and EC8 are the electives of Maths subject.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThe possible sum of the elective numbers of majors of Bio= 1+7 or 2+7...i.e 8,9\n\nOdd digits are not possible, sum 8 is also not possible as one of the major electives of Science is EC4 which is already half of the two majors of Bio.\n\nThus this case is not possible.\n\nOption B",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 300273)\n\n**Passage:**\nVidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\nWhich of the following is the major of Bio?\n\n**Options:**\n- **A**. EC 4\n- **B**. EC 3\n- **C**. EC 6\n- **D**. EC 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-521",
+      "passage_text": "Vidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.",
+      "question_text": "Which of the following is the major of Maths?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "EC 9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "EC 1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "EC 2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "EC 4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nFrom the information given in the question:\n\ni) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nii) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\niii) All the minor electives are coded with elective numbers numerically above EC5.\n\nFrom point ii) and iii) EC 6, EC 8 and EC 9 are the minors, while all the others are majors.\n\nWe can make the following table:\n\nEC4 must be a major of Science subject.\n\nThe sum of all the elective numbers of maths is 16. EC5 is one of the majors of Maths.\n\nThus the other two electives numbers must sum up to 16-5=11\n\nThus, the possibilities are 2,9 or 3,8.\n\nCase 1.\n\nEC2 and EC9 are the electives of Maths subject.\n\nThe sum of all the elective numbers of Bio is the highest.\n\nThus Minor of Bio must be 8, Major must be 3.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThus we can make the following table:\n\nCase 2.\n\nEC3 and EC8 are the electives of Maths subject.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThe possible sum of the elective numbers of majors of Bio= 1+7 or 2+7...i.e 8,9\n\nOdd digits are not possible, sum 8 is also not possible as one of the major electives of Science is EC4 which is already half of the two majors of Bio.\n\nThus this case is not possible.\n\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 300274)\n\n**Passage:**\nVidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\nWhich of the following is the major of Maths?\n\n**Options:**\n- **A**. EC 9\n- **B**. EC 1\n- **C**. EC 2\n- **D**. EC 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-522",
+      "passage_text": "Vidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.",
+      "question_text": "Which of the following is the minor of the subject Bio?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "EC8",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "EC5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "EC6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "EC9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nFrom the information given in the question:\n\ni) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nii) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\niii) All the minor electives are coded with elective numbers numerically above EC5.\n\nFrom point ii) and iii) EC 6, EC 8 and EC 9 are the minors, while all the others are majors.\n\nWe can make the following table:\n\nEC4 must be a major of Science subject.\n\nThe sum of all the elective numbers of maths is 16. EC5 is one of the majors of Maths.\n\nThus the other two electives numbers must sum up to 16-5=11\n\nThus, the possibilities are 2,9 or 3,8.\n\nCase 1.\n\nEC2 and EC9 are the electives of Maths subject.\n\nThe sum of all the elective numbers of Bio is the highest.\n\nThus Minor of Bio must be 8, Major must be 3.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThus we can make the following table:\n\nCase 2.\n\nEC3 and EC8 are the electives of Maths subject.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThe possible sum of the elective numbers of majors of Bio= 1+7 or 2+7...i.e 8,9\n\nOdd digits are not possible, sum 8 is also not possible as one of the major electives of Science is EC4 which is already half of the two majors of Bio.\n\nThus this case is not possible.\n\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 300275)\n\n**Passage:**\nVidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\nWhich of the following is the minor of the subject Bio?\n\n**Options:**\n- **A**. EC8\n- **B**. EC5\n- **C**. EC6\n- **D**. EC9\n\n**Correct Answer:** null"
     }
   ]
 }

@@ -22372,6 +22372,131 @@
       "solution_text": "Let the number of girls in the class be g and the boys be b.\nThe weight of the girls = 20 * g\nThe weight of the boys = 30 * b\nThe weight of the class = 28 (b + g)\n28 (b + g) = 20 * g + 30 * b\n8 g = 2 b \ng / b = 1 / 4\nSo the total number of boys and girls in the class has to be a multiple of 5.\nAmong the given options, only C is a multiple of 5.\nC is the correct answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 312415)\n\n**Passage:**\nIn a class, the average age of all the girls is 20 years and boys is 30 years. The average age of the class is 28 years. The total number of boys and girls in the class can be\n\n48\n\n32\n\n30\n\n56\n\nIn a class, the average age of all the girls is 20 years and boys is 30 years. The average age of the class is 28 years. The total number of boys and girls in the class can be\n\n**Options:**\n- **A**. 48\n- **B**. 32\n- **C**. 30\n- **D**. 56\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-848",
+      "passage_text": "",
+      "question_text": "In how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "The number of ways of choosing 2 letters out of 7 which go in the right envelope is $^{7}C_2=21$ ways.\nNone of the 5 remaining letters go in the right envelop. The number of cases of such incidences can be found out by de-arranging the remaining 5 letters = $5!(1-\\frac{1}{1!}+ \\frac{1}{2!}- \\frac{1}{3!}+ \\frac{1}{4!} -\\frac{1}{5!})=44$ ways.\nThus, total number of ways= 21 X 44= 924",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 40929)\n\n**Passage:**\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-849",
+      "passage_text": "",
+      "question_text": "Payal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "There are 7 P's and 8 Q's, the row will have 15 letters.\n\nPayal wants to arrange them in a row such that it reads the same both forwards and backwards.\nSo it is enough if we arrange the first 8 letters.\n\nSince there are odd number of P's , P will come in the middle.\n\n_, _, _, _, _, _, _, P, _, _, _, _, _, _, _\n\nThe first 7 letters will be filled with 3P's and 4 Q's and the last 7 letters will be identical to the first 7 letters.\n\nNumber of ways in which 3P's and 4 Q's can be arranged is $\\frac{7!}{3!*4!}$\n\n=35\n\n35 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 253982)\n\n**Passage:**\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-850",
+      "passage_text": "",
+      "question_text": "In how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\ \\frac{\\ 18!}{12!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\ \\frac{\\ 18!}{12!6!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\ \\frac{\\ 19!}{12!7!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\ \\frac{\\ 19!}{12!}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The number of ways of arranging 7 people in a row = 7!\n\nNow, the chairs left = 25-7=18\n\nThere are 6 gaps between 7 people. After putting 6 chairs in the gap such that there is 1 in each gap, the number of chairs left = 12\n\nAssuming people to be A, B, C, D, E, F and G. \n\n_A_B_C_D_E_F_G_\n\nThe number of ways of putting 12 identical chairs in 8 gaps = $^{12+8-1}C_{8-1}$ = $^{19}C_7$.\n\nSo the total number of ways = $7!\\times\\ ^{19}C_7$ = $\\ \\frac{\\ 19!}{12!}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290563)\n\n**Passage:**\nIn how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?\n\n18 ! 12 ! \\ \\frac{\\ 18!}{12!} 1 2 ! 1 8 ! ​\n\n18 ! 12 ! 6 ! \\ \\frac{\\ 18!}{12!6!} 1 2 ! 6 ! 1 8 ! ​\n\n19 ! 12 ! 7 ! \\ \\frac{\\ 19!}{12!7!} 1 2 ! 7 ! 1 9 ! ​\n\n19 ! 12 ! \\ \\frac{\\ 19!}{12!} 1 2 ! 1 9 ! ​\n\nIn how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?\n\n**Options:**\n- **A**. $\\ \\frac{\\ 18!}{12!}$\n- **B**. $\\ \\frac{\\ 18!}{12!6!}$\n- **C**. $\\ \\frac{\\ 19!}{12!7!}$\n- **D**. $\\ \\frac{\\ 19!}{12!}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-851",
+      "passage_text": "",
+      "question_text": "What is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4/5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "173/900",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "727/900",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1/3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Total number of 3-digit numbers = 9 x 10 x 10 = 900\n\nWe will calculate the number of numbers with no prime in it.\n\nDigits allowed -> 0, 1, 4, 6, 8, 9\n\nThe hundreds digit can take values 1, 4, 6, 8,  9. [ 5 values]\n\nThe ten's place can take values 0, 1, 4, 6, 8,  9. [6 values]\n\nThe one's place can take values 0, 1, 4, 6, 8,  9. [6 values]\n\nTotal possible numbers = 36 x 5 = 180.\n\nHence, numbers where prime digits appear once at least = 900 - 180 = 720\n\nProbability = 720/900 = 4/5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 394035)\n\n**Passage:**\nWhat is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?\n\n4/5\n\n173/900\n\n727/900\n\n1/3\n\nWhat is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?\n\n**Options:**\n- **A**. 4/5\n- **B**. 173/900\n- **C**. 727/900\n- **D**. 1/3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-852",
+      "passage_text": "",
+      "question_text": "Ramesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11/12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the numbers be $a, a+1, a+2,……….,a+29$\nLet S = $a^2 + (a+1)^2 +(a+2)^2+………..+(a+29)^2$\nThus, S = $a^2 + a^2 + 2a + 1^2 + a^2 + 4a + 2^2 +………..+ a^2 + 58a + 29^2$\nS = $30a^2 + 2a(1+2+……+29) + (1^2+2^2+3^2+……….+29^2)$\nS = $30a^2 + 2a*\\dfrac{29*30}{2} + \\dfrac{29*30*59}{6} $\nS = $30a^2 + 29*30a + 8555$\nS = $30a(a+29) + 8555$\nWe need to find the remainder of S when divided by 12.\nRemainder when 8555 is divided by 12 is 11.\nRemainder when $30a(a+29)$ is divided by 12 is 0.\nThus, the remainder when S is divided by 12 is 11.\nHence, the probability that the sum when divided by 12 will leave a remainder of 11 = 1.\nHence, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176586)\n\n**Passage:**\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n1/12\n\n0\n\n11/12\n\n1\n\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n**Options:**\n- **A**. 1/12\n- **B**. 0\n- **C**. 11/12\n- **D**. 1\n\n**Correct Answer:** null"
     }
   ]
 }
