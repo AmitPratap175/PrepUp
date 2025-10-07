@@ -14619,6 +14619,146 @@
       "solution_text": "2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nFrom the information given in the question:\n\ni) The first the elective codes EC1, EC2 and EC3 are in different subjects.\n\nii) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\niii) All the minor electives are coded with elective numbers numerically above EC5.\n\nFrom point ii) and iii) EC 6, EC 8 and EC 9 are the minors, while all the others are majors.\n\nWe can make the following table:\n\nEC4 must be a major of Science subject.\n\nThe sum of all the elective numbers of maths is 16. EC5 is one of the majors of Maths.\n\nThus the other two electives numbers must sum up to 16-5=11\n\nThus, the possibilities are 2,9 or 3,8.\n\nCase 1.\n\nEC2 and EC9 are the electives of Maths subject.\n\nThe sum of all the elective numbers of Bio is the highest.\n\nThus Minor of Bio must be 8, Major must be 3.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThus we can make the following table:\n\nCase 2.\n\nEC3 and EC8 are the electives of Maths subject.\n\nThe sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\nThe possible sum of the elective numbers of majors of Bio= 1+7 or 2+7...i.e 8,9\n\nOdd digits are not possible, sum 8 is also not possible as one of the major electives of Science is EC4 which is already half of the two majors of Bio.\n\nThus this case is not possible.\n\nOption A",
       "image_url": "",
       "full_markdown": "### Question (qid: 300275)\n\n**Passage:**\nVidyapeeth school offers 3 core subjects Science, Maths and Bio.\n\nIn each subject, a student has to complete 3 electives- 2 major and 1 minor elective.\n\nA student has coded the electives as: EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9. in no particular order.\n\nThe number at the end of each code i.e 1,2...9 are called elective numbers.\n\nThe following information is known about the electives.\n\n1) The sum of all the elective numbers of maths is 16.\n\n2) All the minor electives are coded with elective numbers numerically above EC5.\n\n3) The sum of all the elective numbers of Bio is the highest.\n\n4) The sum of the elective numbers of the two majors of Bio is double of the sum of the elective numbers of the two majors of Science.\n\n5) The first three elective codes EC1, EC2 and EC3 are in different subjects.\n\n6) EC5 is one of the majors of Maths and EC7 is one of the majors of Bio.\n\nWhich of the following is the minor of the subject Bio?\n\n**Options:**\n- **A**. EC8\n- **B**. EC5\n- **C**. EC6\n- **D**. EC9\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-523",
+      "passage_text": "Five students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.",
+      "question_text": "How many times did the student from 9th class get a first rank?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Q from class 7 is 4th and the student from 10th is 3rd. Since student from class 6 can't be first or last, he must be 2nd.\nAlso T scored 1st rank 6 times and is average of 10th and 9th. Hence T should like between 10th and 9th. So 9th can't be 5th, because then it means T should be 4th, which is already taken by Q. Hence 9th is 1st => T is from class 6 and scored 2nd, and student from class 8th is last. Also it is given in point E that R is last. Hence R is from 8th. Since P can't be from 10th, he should be from 9th => S is from 10th.\n\nThe minimum number of times student from class 9 got a 1st rank is 7. If it is 8, then the student who is ranked 5th got a first rank 4 times which is not possible.\n\nHence the number of times student of class 9 got a first rank is 7. From point B, we have n(P) = n(R) + 4, and from point A, we have n(P) + n(S) = 12.\nHence we get the following table\n\nThe only value of x which will satisfy the ranks given in the last column is 5. Hence we get\n\nHence the student from Class 9 got first rank 7 times",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 16259)\n\n**Passage:**\nFive students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.\n\nHow many times did the student from 9th class get a first rank?\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 7\n- **D**. 9\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-524",
+      "passage_text": "Five students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.",
+      "question_text": "What is the name of the student from the 10th class?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Q from class 7 is 4th and the student from 10th is 3rd. Since student from class 6 can't be first or last, he must be 2nd.\nAlso\n T scored 1st rank 6 times and is average of 10th and 9th. Hence T \nshould like between 10th and 9th. So 9th can't be 5th, because then it \nmeans T should be 4th, which is already taken by Q. Hence 9th is 1st \n=> T is from class 6 and scored 2nd, and student from class 8th is \nlast. Also it is given in point E that R is last. Hence R is from 8th. \nSince P can't be from 10th, he should be from 9th => S is from 10th.\n\nThe\n minimum number of times student from class 9 got a 1st rank is 7. If it\n is 8, then the student who is ranked 5th got a first rank 4 times which\n is not possible.\n\nHence the number of times student of class 9 got a first rank is 7. From\n point B, we have n(P) = n(R) + 4, and from point A, we have n(P) + n(S)\n = 12.\nHence we get the following table\n\nThe only value of x which will satisfy the ranks given in the last column is 5. Hence we get\n\nFrom the table, student of class 10 is S.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 16260)\n\n**Passage:**\nFive students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.\n\nWhat is the name of the student from the 10th class?\n\n**Options:**\n- **A**. P\n- **B**. Q\n- **C**. R\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-525",
+      "passage_text": "Five students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.",
+      "question_text": "What is the rank of the student from the class 6?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "First",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Second",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Third",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Q from class 7 is 4th and the student from 10th is 3rd. Since student from class 6 can't be first or last, he must be 2nd.\nAlso\n T scored 1st rank 6 times and is average of 10th and 9th. Hence T \nshould like between 10th and 9th. So 9th can't be 5th, because then it \nmeans T should be 4th, which is already taken by Q. Hence 9th is 1st \n=> T is from class 6 and scored 2nd, and student from class 8th is \nlast. Also it is given in point E that R is last. Hence R is from 8th. \nSince P can't be from 10th, he should be from 9th => S is from 10th.\n\nThe\n minimum number of times student from class 9 got a 1st rank is 7. If it\n is 8, then the student who is ranked 5th got a first rank 4 times which\n is not possible.\n\nHence the number of times student of class 9 got a first rank is 7. From\n point B, we have n(P) = n(R) + 4, and from point A, we have n(P) + n(S)\n = 12.\nHence we get the following table\n\nThe only value of x which will satisfy the ranks given in the last column is 5. Hence we get\n\nFrom the table, 6th class student got a first rank 6 times, which is the second highest. Hence, he is 2nd rank.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 16261)\n\n**Passage:**\nFive students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.\n\nWhat is the rank of the student from the class 6?\n\n**Options:**\n- **A**. First\n- **B**. Second\n- **C**. Third\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-526",
+      "passage_text": "Five students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.",
+      "question_text": "What is the total number of first ranks all the five students got?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "31",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "33",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Q from class 7 is 4th and the student from 10th is 3rd. Since student from class 6 can't be first or last, he must be 2nd.\nAlso\n T scored 1st rank 6 times and is average of 10th and 9th. Hence T \nshould like between 10th and 9th. So 9th can't be 5th, because then it \nmeans T should be 4th, which is already taken by Q. Hence 9th is 1st \n=> T is from class 6 and scored 2nd, and student from class 8th is \nlast. Also it is given in point E that R is last. Hence R is from 8th. \nSince P can't be from 10th, he should be from 9th => S is from 10th.\n\nThe\n minimum number of times student from class 9 got a 1st rank is 7. If it\n is 8, then the student who is ranked 5th got a first rank 4 times which\n is not possible.\n\nHence the number of times student of class 9 got a first rank is 7. From\n point B, we have n(P) = n(R) + 4, and from point A, we have n(P) + n(S)\n = 12.\nHence we get the following table\n\nThe only value of x which will satisfy the ranks given in the last column is 5. Hence we get\n\n7 + 6 + 5 + 4 + 3 = 25.\n\nHence, the answer is 25.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 16262)\n\n**Passage:**\nFive students - P, Q, R, S and T - are from five different classes - 6th, 7th, 8th, 9th and 10th in any order. Each of them got a different number of first ranks in mathematics daily test through out the year. On the basis of number of times they got first, P, Q, R, S and T are ranked 1st, 2nd, 3rd, 4th and 5th in any order. Each of the students got at least one first rank. Further: A) T got a first rank 6 times, which is equal to the average of the number of times the student from 9th class got a first rank and the number of times the student from 10th class got a first rank. B) P is not from the 10th class and got a first rank exactly for 4 times more than the one who got a first rank least number of times among the five students.( If the least ranked person got first rank for X times, then P got first rank for X+4 times) C) The student from the 10th class got the first rank more times than exactly 2 students. D) The student from the 6th class did not get the highest or the least number of first ranks. E) The number of first ranks by Q, who is from the 7th class, is less than exactly three of the other four students but more than that of R.\n\nWhat is the total number of first ranks all the five students got?\n\n**Options:**\n- **A**. 25\n- **B**. 28\n- **C**. 31\n- **D**. 33\n\n**Correct Answer:** null"
     }
   ]
 }

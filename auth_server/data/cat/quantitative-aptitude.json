@@ -22378,7 +22378,7 @@
       "passage_text": "",
       "question_text": "In how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "924",
       "solution_text": "The number of ways of choosing 2 letters out of 7 which go in the right envelope is $^{7}C_2=21$ ways.\nNone of the 5 remaining letters go in the right envelop. The number of cases of such incidences can be found out by de-arranging the remaining 5 letters = $5!(1-\\frac{1}{1!}+ \\frac{1}{2!}- \\frac{1}{3!}+ \\frac{1}{4!} -\\frac{1}{5!})=44$ ways.\nThus, total number of ways= 21 X 44= 924",
       "image_url": "",
       "full_markdown": "### Question (qid: 40929)\n\n**Passage:**\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\n**Options:**\n\n**Correct Answer:** null"
@@ -22388,7 +22388,7 @@
       "passage_text": "",
       "question_text": "Payal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "35",
       "solution_text": "There are 7 P's and 8 Q's, the row will have 15 letters.\n\nPayal wants to arrange them in a row such that it reads the same both forwards and backwards.\nSo it is enough if we arrange the first 8 letters.\n\nSince there are odd number of P's , P will come in the middle.\n\n_, _, _, _, _, _, _, P, _, _, _, _, _, _, _\n\nThe first 7 letters will be filled with 3P's and 4 Q's and the last 7 letters will be identical to the first 7 letters.\n\nNumber of ways in which 3P's and 4 Q's can be arranged is $\\frac{7!}{3!*4!}$\n\n=35\n\n35 is the correct answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 253982)\n\n**Passage:**\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\n**Options:**\n\n**Correct Answer:** null"
@@ -22497,6 +22497,131 @@
       "solution_text": "Let the numbers be $a, a+1, a+2,……….,a+29$\nLet S = $a^2 + (a+1)^2 +(a+2)^2+………..+(a+29)^2$\nThus, S = $a^2 + a^2 + 2a + 1^2 + a^2 + 4a + 2^2 +………..+ a^2 + 58a + 29^2$\nS = $30a^2 + 2a(1+2+……+29) + (1^2+2^2+3^2+……….+29^2)$\nS = $30a^2 + 2a*\\dfrac{29*30}{2} + \\dfrac{29*30*59}{6} $\nS = $30a^2 + 29*30a + 8555$\nS = $30a(a+29) + 8555$\nWe need to find the remainder of S when divided by 12.\nRemainder when 8555 is divided by 12 is 11.\nRemainder when $30a(a+29)$ is divided by 12 is 0.\nThus, the remainder when S is divided by 12 is 11.\nHence, the probability that the sum when divided by 12 will leave a remainder of 11 = 1.\nHence, option D is the correct answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 176586)\n\n**Passage:**\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n1/12\n\n0\n\n11/12\n\n1\n\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n**Options:**\n- **A**. 1/12\n- **B**. 0\n- **C**. 11/12\n- **D**. 1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-853",
+      "passage_text": "AB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is 5 3 5\\sqrt{3} 5 3 ​ , what is the area of the shaded region?\n\n25 ( 3 − π 3 ) 25 (\\sqrt{3}-\\frac{\\pi}{3}) 2 5 ( 3 ​ − 3 π ​ )\n\n25 ( 3 2 − π 4 ) 25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4}) 2 5 ( 2 3 ​ ​ − 4 π ​ )\n\n25 ( 3 − π 4 ) 25 (\\sqrt{3}-\\frac{\\pi}{4}) 2 5 ( 3 ​ − 4 π ​ )\n\n25 ( 3 − π 6 ) 25 (\\sqrt{3}-\\frac{\\pi}{6}) 2 5 ( 3 ​ − 6 π ​ )",
+      "question_text": "AB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is $ 5\\sqrt{3}$, what is the area of the shaded region?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$25 (\\sqrt{3}-\\frac{\\pi}{3})$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$ 25 (\\sqrt{3}-\\frac{\\pi}{4})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$25 (\\sqrt{3}-\\frac{\\pi}{6})$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "In the triangle BOA, tan $\\theta = \\frac{5\\sqrt{3}}{5} = \\sqrt{3}$\nTherefore, $\\theta = 60$ degrees.\n\nThe shaded area = Area of two triangles - area of section of circle.\n\nAs the radius is perpendicular to a tangent, triangle OAB is a right angled triangle, with right angle at B, with area=$1/2*5*5\\sqrt{3}$.\n\nHence area of both triangles= $2*1/2*5*5\\sqrt{3}=25 \\sqrt{3}$.\n\nThe angle BOA=$tan^{-1} \\frac{5 \\sqrt{3}}{5} = 60^{\\circ}$.\n\nHence, angle BOC = 2*BOA = 120°\n\nHence the area of the section = area of circle/3 = $\\frac{\\pi (5^2)}{3}$.\n\nHence area of shaded portion= $25 (\\sqrt{3} -\\frac{\\pi}{3})$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 323)\n\n**Passage:**\nAB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is 5 3 5\\sqrt{3} 5 3 ​ , what is the area of the shaded region?\n\n25 ( 3 − π 3 ) 25 (\\sqrt{3}-\\frac{\\pi}{3}) 2 5 ( 3 ​ − 3 π ​ )\n\n25 ( 3 2 − π 4 ) 25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4}) 2 5 ( 2 3 ​ ​ − 4 π ​ )\n\n25 ( 3 − π 4 ) 25 (\\sqrt{3}-\\frac{\\pi}{4}) 2 5 ( 3 ​ − 4 π ​ )\n\n25 ( 3 − π 6 ) 25 (\\sqrt{3}-\\frac{\\pi}{6}) 2 5 ( 3 ​ − 6 π ​ )\n\nAB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is $ 5\\sqrt{3}$, what is the area of the shaded region?\n\n**Options:**\n- **A**. $25 (\\sqrt{3}-\\frac{\\pi}{3})$\n- **B**. $25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4})$\n- **C**. $ 25 (\\sqrt{3}-\\frac{\\pi}{4})$\n- **D**. $25 (\\sqrt{3}-\\frac{\\pi}{6})$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-854",
+      "passage_text": "A field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90 ∘ ^\\circ ∘ and angle ACB is 30 ∘ ^\\circ ∘ . A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30 ∘ ^\\circ ∘ , then find the area of ABC(in cm 2 ^2 2 ).\n\n600 3 c m 2 600\\sqrt{3}cm^2 6 0 0 3 ​ c m 2\n\n300 3 c m 2 300\\sqrt{3}cm^2 3 0 0 3 ​ c m 2\n\n1800 3 c m 2 1800\\sqrt{3}cm^2 1 8 0 0 3 ​ c m 2\n\n750 3 c m 2 750\\sqrt{3}cm^2 7 5 0 3 ​ c m 2",
+      "question_text": "A field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90$^\\circ$ and angle ACB is 30$^\\circ$. A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30$^\\circ$, then find the area of ABC(in cm$^2$).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$600\\sqrt{3}cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$300\\sqrt{3}cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$1800\\sqrt{3}cm^2$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$750\\sqrt{3}cm^2$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "$.'.\\ Area=\\dfrac{1}{2}\\cdot60\\cdot60\\sqrt{\\ 3}=1800\\sqrt{\\ 3}$Consider the following figure:\n\nHere, right triangle PBD lie is a plane which is perpendicular to the plane of ABC.\nNow, in PBD, tan30 is $\\dfrac{PB}{BD}$\n=> $\\dfrac{30}{BD}=\\dfrac{1}{\\sqrt{3}}$\n=> BD = 30$\\sqrt3$\nNow, in right triangle BDA, $\\sin\\ \\angle BAD\\ =\\ \\sin60\\ =\\ \\dfrac{BD}{AB}$\n=> AB = $\\dfrac{BD}{\\sin60}=\\ \\dfrac{30\\sqrt{3}}{\\dfrac{\\sqrt{3}}{2}}=60\\ cm$\nNow, in ABC, $\\tan\\left(60\\right)=\\dfrac{BC}{AB}=>BC=AB\\cdot\\sqrt{\\ 3}=60\\sqrt{\\ 3}$\n\n$.'.\\ Area=\\dfrac{1}{2}\\cdot60\\cdot60\\sqrt{\\ 3}=1800\\sqrt{\\ 3}$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 316639)\n\n**Passage:**\nA field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90 ∘ ^\\circ ∘ and angle ACB is 30 ∘ ^\\circ ∘ . A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30 ∘ ^\\circ ∘ , then find the area of ABC(in cm 2 ^2 2 ).\n\n600 3 c m 2 600\\sqrt{3}cm^2 6 0 0 3 ​ c m 2\n\n300 3 c m 2 300\\sqrt{3}cm^2 3 0 0 3 ​ c m 2\n\n1800 3 c m 2 1800\\sqrt{3}cm^2 1 8 0 0 3 ​ c m 2\n\n750 3 c m 2 750\\sqrt{3}cm^2 7 5 0 3 ​ c m 2\n\nA field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90$^\\circ$ and angle ACB is 30$^\\circ$. A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30$^\\circ$, then find the area of ABC(in cm$^2$).\n\n**Options:**\n- **A**. $600\\sqrt{3}cm^2$\n- **B**. $300\\sqrt{3}cm^2$\n- **C**. $1800\\sqrt{3}cm^2$\n- **D**. $750\\sqrt{3}cm^2$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-855",
+      "passage_text": "",
+      "question_text": "In a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).",
+      "options": [],
+      "correct_option_data": "17",
+      "solution_text": "Assuming the centre of the circle is O. The figure can be drawn as follows:\n\nAssume, radius = AO=OC = a\n\nSince AB = AO+BO   => 25  = a+ BO    => BO = 25-a\n\nIn right triangle BCO,\n\n$BC^2+BO^2=CO^2$\n\n=> $15^2+\\left(25-a\\right)^2=a^2$\n\n=> 225+625-50a+$a^2=a^2$\n\n=> 50a = 850\n\n=> a=17 cm",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 290221)\n\n**Passage:**\nIn a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).\n\nIn a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-856",
+      "passage_text": "",
+      "question_text": "An isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6$\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$3\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$4\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2\\sqrt{\\ 3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let AP = x. Because the trapezium is isosceles, PB= x\n\n$\\therefore\\ AS\\ =\\ BQ=x$\n\nAs DC=3AB, DR = RC=3x\n\nThe perimeter = 16x = 8. => x = 1/2\n\nAltitude = $2\\sqrt{\\ 3}x=\\sqrt{\\ 3}$\n\nHalf of the sum of parallel sides = $\\frac{\\left(2x+6x\\right)}{2}=4x=2$\n\nHence area = $2\\sqrt{\\ 3}$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 307054)\n\n**Passage:**\nAn isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.\n\n6 3 \\sqrt{\\ 3} 3 ​\n\n3 3 3\\sqrt{\\ 3} 3 3 ​\n\n4 3 4\\sqrt{\\ 3} 4 3 ​\n\n2 3 2\\sqrt{\\ 3} 2 3 ​\n\nAn isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.\n\n**Options:**\n- **A**. 6$\\sqrt{\\ 3}$\n- **B**. $3\\sqrt{\\ 3}$\n- **C**. $4\\sqrt{\\ 3}$\n- **D**. $2\\sqrt{\\ 3}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-857",
+      "passage_text": "Six congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume π \\pi π = 22 7 \\dfrac{22}{7} 7 2 2 ​ )",
+      "question_text": "Six congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume $\\pi$ = $\\dfrac{22}{7}$ )",
+      "options": [],
+      "correct_option_data": "1848",
+      "solution_text": "Let us draw the diagram, \n\nLet 'r' be the radius of each of the six smaller circle. If we draw a regular hexagon of side '2r' such that each side of the hexagon joins centre of 2 adjacent smaller circles. \n\nIf we draw a diameter in the circle C such that is passes through two vertices of the hexagonal.\n\nWe can see from the diagram that the diameter of the circle C =r + 2(2r) + r          {Where 2(2r) is the length of diagonal of the hexagon.}\n\nTherefore, 6r = 2*42 i.e. r = 14 cm\n\nHence the shaded area = $\\pi (42)^2 - 6\\pi (14)^2$ = 1848 sq. cm\n\nTherefore, 1848 is the correct answer.",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 145523)\n\n**Passage:**\nSix congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume π \\pi π = 22 7 \\dfrac{22}{7} 7 2 2 ​ )\n\nSix congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume $\\pi$ = $\\dfrac{22}{7}$ )\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
