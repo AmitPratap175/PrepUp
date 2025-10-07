@@ -6,8 +6,9 @@ import json
 import re
 import sys
 from typing import List, Dict, Optional
-from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
+
 from bs4 import BeautifulSoup, NavigableString, Tag
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 
 # --- Helpers -----------------------------------------------------------------
@@ -42,7 +43,8 @@ def _label_for_number(n: int) -> str:
 
 
 # --- Core parser -------------------------------------------------------------
-def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None, passage_images: Optional[str] = None) -> Optional[Dict]:
+def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None,
+               passage_images: Optional[str] = None) -> Optional[Dict]:
     qdiv = card.select_one(".question-text")
     if not qdiv:
         return None
@@ -53,12 +55,12 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None, pa
     all_image_urls = []
     if passage_images:
         all_image_urls.extend(passage_images.split(','))
-    
+
     question_imgs = card.find_all("img", class_="img-responsive")
     for img in question_imgs:
         if img.has_attr("src"):
             all_image_urls.append(img["src"].strip())
-            
+
     # Consolidate and format image URLs
     image_url = ",".join(sorted(list(set(all_image_urls)))) if all_image_urls else None
 
@@ -80,8 +82,9 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None, pa
 
             label = _label_for_number(opt_num_int) if opt_num_int else opt_num
             opt_content = btn.select_one(".option-content")
-            
-            opt_text = _html_to_text_with_latex(opt_content.decode_contents()) if opt_content else _html_to_text_with_latex(btn.decode_contents())
+
+            opt_text = _html_to_text_with_latex(
+                opt_content.decode_contents()) if opt_content else _html_to_text_with_latex(btn.decode_contents())
 
             options_list.append({
                 "data_option": opt_num,
@@ -105,18 +108,17 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None, pa
             solution_body = solution_card.select_one(".card-body")
             if solution_body:
                 solution = _html_to_text_with_latex(solution_body.decode_contents())
-                
+
                 sol_imgs = solution_body.find_all("img")
                 sol_img_urls = [img["src"].strip() for img in sol_imgs if img.has_attr("src")]
                 if sol_img_urls:
                     solution_image_url = ",".join(sorted(list(set(sol_img_urls))))
 
-
     # --- Markdown output (no HTML) ---
     md_lines = []
     md_lines.append(f"### Question (qid: {data_qid})" if data_qid else "### Question")
     md_lines.append("")
-    
+
     if passage:
         md_lines.append("**Passage:**")
         md_lines.append(passage)
@@ -165,20 +167,25 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None, pa
 
 
 # --- Main crawler ------------------------------------------------------------
-async def scrape_url_textonly(url: str, out_basename: str = "output"):
+async def scrape_url_and_parse(url: str) -> Optional[List[Dict]]:
+    """
+    Scrapes a single URL and returns a list of parsed question dictionaries, or None on crawl failure.
+    """
     run_config = CrawlerRunConfig(cache_mode=CacheMode.BYPASS)
+    out_basename = "docs/" + url.split("/")[-1]
 
     async with AsyncWebCrawler(config=BrowserConfig()) as crawler:
         result = await crawler.arun(url=url, config=run_config)
 
         if not result.success:
-            raise RuntimeError(f"crawl4ai failed: {result.error_message}")
+            print(f"Crawl failed for {url}: {result.error_message}", file=sys.stderr)
+            return None  # Return None on crawl failure
 
-        # Save the raw HTML for debugging
-        html_filename = f"{out_basename}.html"
-        with open(html_filename, "w", encoding="utf-8") as f:
-            f.write(result.html)
-        print(f"Saved raw HTML for debugging -> {html_filename}")
+        # # Save the raw HTML for debugging - COMMENTED OUT
+        # html_filename = f"{out_basename}.html"
+        # with open(html_filename, "w", encoding="utf-8") as f:
+        #     f.write(result.html)
+        # print(f"Saved raw HTML for debugging -> {html_filename}")
 
         soup = BeautifulSoup(result.html, "html.parser")
         all_cards = soup.select(".card")
@@ -186,50 +193,40 @@ async def scrape_url_textonly(url: str, out_basename: str = "output"):
         parsed_questions = []
         current_passage_text = None
         current_passage_images = None
-        
+
         for card in all_cards:
             card_classes = card.get('class', [])
-            
+
             # Handle passage cards
             if 'card-info' in card_classes:
                 passage_body = card.select_one(".card-body")
                 if passage_body:
                     current_passage_text = _html_to_text_with_latex(passage_body.decode_contents())
-                    
+
                     passage_imgs = passage_body.find_all("img")
                     img_urls = [img["src"].strip() for img in passage_imgs if img.has_attr("src")]
                     if img_urls:
                         current_passage_images = ",".join(sorted(list(set(img_urls))))
-                continue # Skip to next card
+                continue  # Skip to next card
 
             # Ignore solution cards in this main loop
             if 'card-success' in card_classes:
-                continue # Skip to next card
+                continue  # Skip to next card
 
             # If it's not a passage or solution, treat it as a question card
-            parsed = parse_card(card, soup=soup, passage=current_passage_text, passage_images=current_passage_images)
+            parsed = parse_card(card, soup=soup, passage=current_passage_text,
+                                passage_images=current_passage_images)
             if parsed:
                 parsed_questions.append(parsed)
 
-        output = {
-            "url": url,
-            "num_questions_found": len(parsed_questions),
-            "questions": parsed_questions
-        }
+        # # Save Markdown - COMMENTED OUT
+        # with open(f"{out_basename}.md", "w", encoding="utf-8") as f:
+        #     for q in parsed_questions:
+        #         f.write(q["full_markdown"])
+        #         f.write("\n\n---\n\n")
+        # print(f"Saved Markdown -> {out_basename}.md")
 
-        # Save JSON
-        with open(f"{out_basename}.json", "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
-
-        # Save Markdown
-        with open(f"{out_basename}.md", "w", encoding="utf-8") as f:
-            for q in parsed_questions:
-                f.write(q["full_markdown"])
-                f.write("\n\n---\n\n")
-
-        print(f"Saved JSON -> {out_basename}.json")
-        print(f"Saved Markdown -> {out_basename}.md")
-        return output
+        return parsed_questions
 
 
 def read_urls_from_file(filepath="urls.txt"):
@@ -238,20 +235,71 @@ def read_urls_from_file(filepath="urls.txt"):
         with open(filepath, "r") as f:
             for line in f:
                 url = line.strip()
-                if url:  # Add only non-empty lines
+                if url and not url.startswith('#'):  # Add only non-empty, non-commented lines
                     urls.append(url)
     except FileNotFoundError:
-        print(f"Error: {filepath} not found.")
+        print(f"Error: {filepath} not found.", file=sys.stderr)
         sys.exit(1)
     return urls
 
 
-urls = read_urls_from_file()
-# for url in urls:
-url="https://cracku.in/cat-2024-slot-1-quant-question-paper-solved"
-out ="docs/"+url.split("/")[-1]
+async def main():
+    """
+    Main function to read URLs, categorize them, scrape, and append to JSON files.
+    """
+    category_map = {
+        "quantitative-aptitude": ["quant"],
+        "verbal-ability": ["varc", "verbal"],
+        "data-interpretation": ["lrdi", "dilr"],
+    }
 
-# Run the async scraping
-data = asyncio.run(scrape_url_textonly(url, out_basename=out))
+    # Invert map for easy lookup: {keyword: filename, ...}
+    keyword_to_filename = {}
+    for filename, keywords in category_map.items():
+        for keyword in keywords:
+            keyword_to_filename[keyword] = f"docs/{filename}.json"
 
-# input()
+    urls = read_urls_from_file("urls.txt")
+    
+    for url in urls:
+        print(f"Processing URL: {url}")
+        
+        # Determine output file
+        output_filename = None
+        for keyword, filename in keyword_to_filename.items():
+            if keyword in url:
+                output_filename = filename
+                break
+        
+        if not output_filename:
+            print(f"  [!] Skipping URL: No category keyword found in URL.", file=sys.stderr)
+            continue
+
+        # Scrape the URL and get the list of questions
+        new_questions = await scrape_url_and_parse(url)
+
+        # Handle crawl/parse failures
+        if new_questions is None or not new_questions:
+            reason = "Crawl failed" if new_questions is None else "No questions found"
+            print(f"  [!] {reason} for URL: {url}", file=sys.stderr)
+            with open("failed_urls.txt", "a", encoding="utf-8") as f:
+                f.write(url + "\n")
+            continue
+
+        # Read existing data, append new questions, and write back
+        try:
+            with open(output_filename, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            existing_data = {"questions": []}
+            
+        existing_data["questions"].extend(new_questions)
+        
+        with open(output_filename, 'w', encoding='utf-8') as f:
+            json.dump(existing_data, f, indent=2, ensure_ascii=False)
+            
+        print(f"  -> Appended {len(new_questions)} questions to {output_filename}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
