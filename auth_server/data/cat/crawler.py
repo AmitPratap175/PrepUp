@@ -5,7 +5,8 @@ import asyncio
 import json
 import re
 import sys
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
+from pathlib import Path
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
@@ -116,42 +117,7 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None,
 
     # --- Markdown output (no HTML) ---
     md_lines = []
-    md_lines.append(f"### Question (qid: {data_qid})" if data_qid else "### Question")
-    md_lines.append("")
-
-    if passage:
-        md_lines.append("**Passage:**")
-        md_lines.append(passage)
-        md_lines.append("")
-
-    if image_url:
-        # Add all images to markdown
-        for url in image_url.split(','):
-            md_lines.append(f"![Question Image]({url})")
-        md_lines.append("")
-
-    md_lines.append(question_text)
-    md_lines.append("")
-
-    if options_list:
-        md_lines.append("**Options:**")
-        for o in options_list:
-            mark = " ✅" if o["is_correct"] else ""
-            md_lines.append(f"- **{o['label']}**. {o['option_text']}{mark}")
-    else:
-        md_lines.append("**Options:** (TITA or no options provided)")
-
-    if correct_answer_data:
-        md_lines.append("")
-        md_lines.append(f"**Correct Answer:** {correct_answer_data}")
-
-    if solution:
-        md_lines.append("")
-        md_lines.append("**Solution:**")
-        md_lines.append(solution)
-        if solution_image_url:
-            for url in solution_image_url.split(','):
-                md_lines.append(f"![Solution Image]({url})")
+    md_lines.append(f"### Question (qid: {data_qid})")
 
     return {
         "qid": data_qid,
@@ -172,8 +138,7 @@ async def scrape_url_and_parse(url: str) -> Optional[List[Dict]]:
     Scrapes a single URL and returns a list of parsed question dictionaries, or None on crawl failure.
     """
     run_config = CrawlerRunConfig(cache_mode=CacheMode.BYPASS)
-    out_basename = "docs/" + url.split("/")[-1]
-
+    
     async with AsyncWebCrawler(config=BrowserConfig()) as crawler:
         result = await crawler.arun(url=url, config=run_config)
 
@@ -182,6 +147,7 @@ async def scrape_url_and_parse(url: str) -> Optional[List[Dict]]:
             return None  # Return None on crawl failure
 
         # # Save the raw HTML for debugging - COMMENTED OUT
+        # out_basename = "docs/" + url.split("/")[-1]
         # html_filename = f"{out_basename}.html"
         # with open(html_filename, "w", encoding="utf-8") as f:
         #     f.write(result.html)
@@ -242,29 +208,87 @@ def read_urls_from_file(filepath="urls.txt"):
         sys.exit(1)
     return urls
 
+# --- QID Cleaning Logic ---
+def get_questions_container(data: Any) -> List[Dict[str, Any]]:
+    if isinstance(data, dict) and isinstance(data.get("questions"), list):
+        return data["questions"]
+    if isinstance(data, list):
+        return data
+    raise ValueError('Input JSON must be either a dict with a "questions" list or a top-level list of questions.')
+
+def clean_qids_in_output_files() -> None:
+    """
+    Finds all JSON files in the output directory, reads each one, replaces the 'qid'
+    values, and then overwrites the original file with the updated data.
+    """
+    json_folder = Path(__file__).parent / "docs"
+    if not json_folder.is_dir():
+        print(f"Info: Output directory not found at {json_folder}. Nothing to clean.")
+        return
+        
+    json_files = list(json_folder.glob("*.json"))
+    print(f"--- Found {len(json_files)} JSON files to clean in {json_folder} ---")
+
+    for file_path in json_files:
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Error reading {file_path}: {e}", file=sys.stderr)
+            continue
+
+        name = file_path.stem.split('-')[0]
+        if name.startswith("quant"):
+            name = 'quant'
+        elif name.startswith("data"):
+            name = 'dilr'
+        else:
+            name = 'varc'
+
+        try:
+            questions = get_questions_container(data)
+        except ValueError as e:
+            print(f"Error processing {file_path}: {e}", file=sys.stderr)
+            continue
+
+        counter = 0
+        for item in questions:
+            if isinstance(item, dict):
+                counter += 1
+                item["qid"] = f"{name}-{counter}"
+
+        try:
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except IOError as e:
+            print(f"Error writing to {file_path}: {e}", file=sys.stderr)
+
+        print(f"Processed {counter} qids in {file_path.name}")
+
 
 async def main():
     """
     Main function to read URLs, categorize them, scrape, and append to JSON files.
     """
+    output_dir = Path("docs")
+    output_dir.mkdir(exist_ok=True)
+
     category_map = {
         "quantitative-aptitude": ["quant"],
         "verbal-ability": ["varc", "verbal"],
         "data-interpretation": ["lrdi", "dilr"],
     }
 
-    # Invert map for easy lookup: {keyword: filename, ...}
     keyword_to_filename = {}
     for filename, keywords in category_map.items():
         for keyword in keywords:
-            keyword_to_filename[keyword] = f"docs/{filename}.json"
+            keyword_to_filename[keyword] = output_dir / f"{filename}.json"
 
     urls = read_urls_from_file("urls.txt")
     
     for url in urls:
         print(f"Processing URL: {url}")
         
-        # Determine output file
         output_filename = None
         for keyword, filename in keyword_to_filename.items():
             if keyword in url:
@@ -275,10 +299,8 @@ async def main():
             print(f"  [!] Skipping URL: No category keyword found in URL.", file=sys.stderr)
             continue
 
-        # Scrape the URL and get the list of questions
         new_questions = await scrape_url_and_parse(url)
 
-        # Handle crawl/parse failures
         if new_questions is None or not new_questions:
             reason = "Crawl failed" if new_questions is None else "No questions found"
             print(f"  [!] {reason} for URL: {url}", file=sys.stderr)
@@ -286,7 +308,6 @@ async def main():
                 f.write(url + "\n")
             continue
 
-        # Read existing data, append new questions, and write back
         try:
             with open(output_filename, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
@@ -299,6 +320,10 @@ async def main():
             json.dump(existing_data, f, indent=2, ensure_ascii=False)
             
         print(f"  -> Appended {len(new_questions)} questions to {output_filename}")
+
+    print("\n--- Starting QID cleaning process ---")
+    clean_qids_in_output_files()
+    print("--- Finished QID cleaning process ---")
 
 
 if __name__ == "__main__":
