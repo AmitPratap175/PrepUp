@@ -151,25 +151,25 @@ class MemStorage:
                 "filePath": "data/cat/data-interpretation.json"
             },
             {
-                "title": "GATE Mathematics Test",
-                "examType": "gate",
-                "subject": "Mathematics",
+                "title": "Quants CAT PYQs Test",
+                "examType": "cat",
+                "subject": "Quants",
                 "duration": 90,
-                "filePath": "data/gate/mathematics.json"
+                "filePath": "data/cat/docs/quantitative-aptitude.json"
             },
             {
-                "title": "GATE General Aptitude Test",
-                "examType": "gate",
-                "subject": "General Aptitude",
+                "title": "VARC  CAT PYQs Test",
+                "examType": "cat",
+                "subject": "VARC",
                 "duration": 60,
-                "filePath": "data/gate/general-aptitude.json"
+                "filePath": "data/cat/docs/verbal-ability.json"
             },
             {
-                "title": "GATE Computer Science Test",
-                "examType": "gate",
-                "subject": "Computer Science",
+                "title": "DILR CAT PYQs Test",
+                "examType": "cat",
+                "subject": "DILR",
                 "duration": 120,
-                "filePath": "data/gate/computer-science.json"
+                "filePath": "data/cat/docs/data-interpretation.json"
             }
         ]
 

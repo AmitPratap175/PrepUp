@@ -118,7 +118,10 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None,
     # --- Markdown output (no HTML) ---
     md_lines = []
     md_lines.append(f"### Question (qid: {data_qid})")
-
+    if not passage == "Instructions\n\nFor the following questions answer them individually":
+        passage = passage.replace("Instructions\n\n","") 
+    else:
+        passage = None
     return {
         "qid": data_qid,
         "passage_text": passage,
