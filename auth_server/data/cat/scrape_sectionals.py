@@ -40,7 +40,7 @@ except Exception as e:
     sys.stderr.write("ERROR: BeautifulSoup4 is required. Install with: pip install beautifulsoup4\n")
     raise
 
-async def test_news_crawl() -> Dict[str, List[str]]:
+async def test_news_crawl(urls) -> Dict[str, List[str]]:
     """
     Crawls a predefined list of URLs to fetch quiz pages.
     """
@@ -74,19 +74,17 @@ async def test_news_crawl() -> Dict[str, List[str]]:
         # urls = [
         #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
         #         ]
-        with open(Path(__file__).parent /"urls_cracku_sectionals.txt", "r") as f:
-            urls = [line.strip() for line in f if line.strip()]
         
         for url in urls:
             result = await crawler.arun(url, config=run_config, magic=True)
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
-                # filename = re.sub(r'[^a-zA-Z0-9_-]', '_', filename) + ".html"
-                # filepath = html_dir / filename
-                # with open(filepath, "w", encoding="utf-8") as f:
-                #     f.write(result.html)
-                # print(f"Saved HTML to {filepath}")
+                filename = re.sub(r'[^a-zA-Z0-9_-]', '_', filename) + ".html"
+                filepath = html_dir / filename
+                with open(filepath, "w", encoding="utf-8") as f:
+                    f.write(result.html)
+                print(f"Saved HTML to {filepath}")
 
                 if "quant" in url:
                     categorized_html["quant"].append(result.html)
@@ -266,7 +264,7 @@ def parse_html_to_questions(html: str) -> Dict:
             })
     return {"questions": results}
 
-def main(categorized_html: Dict[str, List[str]]):
+def main(categorized_html: Dict[str, List[str]], type_curr: str):
     """Main function orchestrating the data processing workflow."""
     strings = {"quant":"quantitative-aptitude", "verbal":"verbal-ability", "reasoning":"data-interpretation"}
     # final_destination_dir = project_root / "auth_server/data/cat"
@@ -276,15 +274,18 @@ def main(categorized_html: Dict[str, List[str]]):
     project_root = script_dir.parent.parent.parent
     
     intermediate_dir = script_dir.parent / "temp_json"
-    final_destination_dir = project_root / "auth_server/data/cat"
+    final_destination_dir = project_root / "auth_server/data/cat/docs"
+    sectionals_dir = project_root / f"auth_server/data/cat/sectionals/{type_curr}"
     os.makedirs(intermediate_dir, exist_ok=True)
     os.makedirs(final_destination_dir, exist_ok=True)
+    os.makedirs(sectionals_dir, exist_ok=True)
 
     for category, subject_alias in strings.items():
         html_docs = categorized_html.get(category, [])
         if not html_docs: continue
 
         all_questions: List[Dict] = []
+        sectional_questions: List[Dict] = []
         seen_questions = set()
         for i, html in enumerate(html_docs):
             try:
@@ -298,13 +299,20 @@ def main(categorized_html: Dict[str, List[str]]):
                     q_text = question.get("question_text")
                     if q_text and q_text not in seen_questions:
                         all_questions.append(question)
+                        sectional_questions.append(question)
                         seen_questions.add(q_text)
 
             except Exception as e:
                 sys.stderr.write(f"ERROR parsing {name}: {e}\n")
 
         output_obj = {"questions": all_questions}
+        output_obj_sectional = {"questions": sectional_questions}
         intermediate_path = intermediate_dir / f"{subject_alias}.json"
+        number = 1
+        for dir in os.listdir(sectionals_dir):
+            if dir.startswith("sectionals-") and dir.endswith(".json"):
+                number += 1
+        sectionals_dir_path = sectionals_dir / f"sectionals-{number}.json"
         final_path_file = final_destination_dir / f"{subject_alias}.json"
 
         if final_path_file.exists():
@@ -317,6 +325,8 @@ def main(categorized_html: Dict[str, List[str]]):
         with open(intermediate_path, "w", encoding="utf-8") as f:
             json.dump(final_data, f, ensure_ascii=False, indent=2)
 
+        with open(sectionals_dir_path, "w", encoding="utf-8") as f:
+            json.dump(output_obj_sectional, f, ensure_ascii=False, indent=2)
         print(f"Wrote intermediate {len(all_questions)} question(s) to: {intermediate_path}")
     
     print("---" + " Running qid cleaning script ---")
@@ -342,10 +352,23 @@ def main(categorized_html: Dict[str, List[str]]):
 if __name__ == "__main__":
     print("--- Starting daily question processing ---")
     # Step 1: Get the updated daily numbers for crawling.
+    with open(Path(__file__).parent /"urls_cracku_sectionals.txt", "r") as f:
+        urls_raw = [line.strip() for line in f if line.strip()]
+        urls = []
+        for url_curr in urls_raw:
+            if "quant" in url_curr:
+                type_curr = "quants"
+                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+            elif "verbal" in url_curr:
+                type_curr = "varc"
+                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
+            else:
+                type_curr = "dilr"
+                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
     
-    # Step 2: Crawl the web pages to get HTML content.
-    categorized_html = asyncio.run(test_news_crawl())
-    print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
-    
-    # Step 3: Pass the crawled data to the main processing function.
-    main(categorized_html)
+            # Step 2: Crawl the web pages to get HTML content.
+            categorized_html = asyncio.run(test_news_crawl(urls))
+            print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
+            
+            # Step 3: Pass the crawled data to the main processing function.
+            main(categorized_html, type_curr)
