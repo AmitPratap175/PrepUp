@@ -29453,6 +29453,187 @@
       "solution_text": "Solution\n\nThe first thing we should do while solving this set is we should replace the average with the sum of the ratings as we have done in the following table:\n\nWe know that the ratings can be 1/2/3/4/5 only.\nR1 has given 4 and 3 to B and D respectively and the sum of the ratings given by R1 in total is 16. \nSo, the sum of the ratings given by R1 to A and C is (16-4-3 = 9)\nNow, this sum is only possible when he has given 4 to one of them and 5 to another. \nLet's make both the cases:\n\nNow, with this, we can derive the score given by R3 to C. \nIn case 1, it will be (16-4-4-5) = 3\nIn case 2, it will be (16-5-4-5) = 2\nNow, R2 gave 3 and 4 score to A and C respectively. Hence, he would have given a sum of (16 - 3 - 4 = 9) to B and D. It could be possible when he gave 4 to one and 5 to the other one. \nHence, we can make the possible cases and sub cases:\n\nWith this only, we can fill the complete table. Hence, we get:\n\nHowever, Case - 2 is not possible as there no reviewer can give 6 points to any gadget. Hence, there are only three possible combinations.",
       "solution_image_url": "https://cracku.in/media/uploads/image_20XxbSk.png,https://cracku.in/media/uploads/image_2whjUGU.png,https://cracku.in/media/uploads/image_3JYVXHv.png,https://cracku.in/media/uploads/image_XrCcE63.png,https://cracku.in/media/uploads/image_ZX7wc8p.png,https://cracku.in/media/uploads/image_aihHjZI.png,https://cracku.in/media/uploads/image_eIdCGsr.png,https://cracku.in/media/uploads/image_ggL8e37.png,https://cracku.in/media/uploads/image_hSYy59T.png,https://cracku.in/media/uploads/image_skaQIVh.png,https://cracku.in/media/uploads/image_zWpACXU.png",
       "full_markdown": "### Question (qid: 470498)"
+    },
+    {
+      "qid": "quant-871",
+      "passage_text": "",
+      "question_text": "Three friends, returning from a movie, stopped to eat at a restaurant. After dinner, they paid their bill and noticed a bowl of mints at the front counter. Sita took one-third of the mints, but returned four because she had a momentary pang of guilt. Fatima then took one-fourth of what was left but returned three for similar reason. Eswari then took half of the remainder but threw two back into the bowl. The bowl had only 17 mints left when the raid was over. How many mints were originally in the bowl?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "31",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "41",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the total number of mints in the bowl be n\n\nSita took n/3 - 4. Remaining = 2n/3 + 4\n\nFatim took 1/4(2n/3 + 4) - 3. Remaining = 3/4(2n/3 + 4) + 3\n\nEswari took 1/2(3/4(2n/3+4)+3) - 2\n\nRemaining = 1/2(3/4(2n/3+4)+3) + 2 = 17\n\n=> 3/4(2n/3+4)+3 = 30 => (2n/3+4) = 36 => n = 48\n\nSo, the answer is option d)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 4709)\n\n**Passage:**\nThree friends, returning from a movie, stopped to eat at a restaurant. After dinner, they paid their bill and noticed a bowl of mints at the front counter. Sita took one-third of the mints, but returned four because she had a momentary pang of guilt. Fatima then took one-fourth of what was left but returned three for similar reason. Eswari then took half of the remainder but threw two back into the bowl. The bowl had only 17 mints left when the raid was over. How many mints were originally in the bowl?\n\n38\n\n31\n\n41\n\nNone of these\n\nThree friends, returning from a movie, stopped to eat at a restaurant. After dinner, they paid their bill and noticed a bowl of mints at the front counter. Sita took one-third of the mints, but returned four because she had a momentary pang of guilt. Fatima then took one-fourth of what was left but returned three for similar reason. Eswari then took half of the remainder but threw two back into the bowl. The bowl had only 17 mints left when the raid was over. How many mints were originally in the bowl?\n\n**Options:**\n- **A**. 38\n- **B**. 31\n- **C**. 41\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-872",
+      "passage_text": "",
+      "question_text": "Mother Dairy sells milk packets in boxes of different sizes to its vendors. The vendors are charged Rs. 20 per packet up to 2000 packets in a box. Additions can be made only in a lot size of 200 packets. Each addition of one lot to the box results in a discount of one rupee an all the packets in the box. What should be the maximum size of the box that would maximize the revenue per box for Mother Dairy?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2400 packets",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3000 packets",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4000 packets",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "We are given that, The vendors are charged Rs. 20 per packet up to 2000 packets in a box. Additions can be made only in a lot size of 200 packets. Each addition of one lot to the box results in a discount of one rupee an all the packets in the box.\nLet x be number of additional lots.\nThus,\n$(20-x)(2000+200x) = 40000 - 2000x + 4000x -200x^2$\n=> $-200x^2+2000x+40000$\nWe need to maximize this\nThe minimum/maximum value of a quadratic equation is when $x = -b/2a$\nThus, the maximum value = $-2000/400 = 5$\nThus, the maximum size of the box that would maximize the revenue per box for Mother Dairy = 2000+200*5 = 3000",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 83645)\n\n**Passage:**\nMother Dairy sells milk packets in boxes of different sizes to its vendors. The vendors are charged Rs. 20 per packet up to 2000 packets in a box. Additions can be made only in a lot size of 200 packets. Each addition of one lot to the box results in a discount of one rupee an all the packets in the box. What should be the maximum size of the box that would maximize the revenue per box for Mother Dairy?\n\n2400 packets\n\n3000 packets\n\n4000 packets\n\nNone of the above\n\nMother Dairy sells milk packets in boxes of different sizes to its vendors. The vendors are charged Rs. 20 per packet up to 2000 packets in a box. Additions can be made only in a lot size of 200 packets. Each addition of one lot to the box results in a discount of one rupee an all the packets in the box. What should be the maximum size of the box that would maximize the revenue per box for Mother Dairy?\n\n**Options:**\n- **A**. 2400 packets\n- **B**. 3000 packets\n- **C**. 4000 packets\n- **D**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-873",
+      "passage_text": "",
+      "question_text": "5 Cabbages, 12 Coconuts and 19 Brinjals cost Rs. 275. 23 Cabbages, 19 Coconutes and 15 Brinjals cost Rs.360. How much do 1 Coconut, 1 Brinjal and 1 Cabbage cost?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "5X+12Y+19Z=275 -> 1st Equation\n\n23X+19Y+15Z = 360 ->2nd Equation.\n\nNote that the difference in the coefficients of the first equation is 7 while the difference in the coefficients of the second equation is 4.\n\nSo, 4* First Equation + 7 * Second Equation, gives X+Y+Z =20",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 832)\n\n**Passage:**\n5 Cabbages, 12 Coconuts and 19 Brinjals cost Rs. 275. 23 Cabbages, 19 Coconutes and 15 Brinjals cost Rs.360. How much do 1 Coconut, 1 Brinjal and 1 Cabbage cost?\n\n17\n\n18\n\n20\n\nCan't be determined\n\n5 Cabbages, 12 Coconuts and 19 Brinjals cost Rs. 275. 23 Cabbages, 19 Coconutes and 15 Brinjals cost Rs.360. How much do 1 Coconut, 1 Brinjal and 1 Cabbage cost?\n\n**Options:**\n- **A**. 17\n- **B**. 18\n- **C**. 20\n- **D**. Can't be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-874",
+      "passage_text": "If a > 0 and the quadriatic expression a x 2 + b x + c ax^2+bx+c a x 2 + b x + c reaches its minimum value when x=a, which of the following is always true?\n\nb > a + c b > a+c b > a + c\n\nb < a 2 + 2 c b < a^2 + 2c b < a 2 + 2 c\n\nb < 0 b < 0 b < 0\n\nc 2 < a 2 c^2 < a^2 c 2 < a 2\n\nNone of the above",
+      "question_text": "If a > 0 and the quadriatic expression $ax^2+bx+c$ reaches its minimum value when x=a, which of the following is always true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$b > a+c$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$b < a^2 + 2c$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$b < 0$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$c^2 < a^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "As the quadriatic expression reaches its minimum at a, $2a^2+b=0$\nSo, $b=-2a^2$ or $b<0$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 1145)\n\n**Passage:**\nIf a > 0 and the quadriatic expression a x 2 + b x + c ax^2+bx+c a x 2 + b x + c reaches its minimum value when x=a, which of the following is always true?\n\nb > a + c b > a+c b > a + c\n\nb < a 2 + 2 c b < a^2 + 2c b < a 2 + 2 c\n\nb < 0 b < 0 b < 0\n\nc 2 < a 2 c^2 < a^2 c 2 < a 2\n\nNone of the above\n\nIf a > 0 and the quadriatic expression $ax^2+bx+c$ reaches its minimum value when x=a, which of the following is always true?\n\n**Options:**\n- **A**. $b > a+c$\n- **B**. $b < a^2 + 2c$\n- **C**. $b < 0$\n- **D**. $c^2 < a^2$\n- **E**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-875",
+      "passage_text": "If a,b,c are roots of the equation x 3 − P x 2 + 108 x − 216 = 0 x^3 - Px^2 + 108x -216 = 0 x 3 − P x 2 + 1 0 8 x − 2 1 6 = 0 and a 3 + b 3 + c 3 = 648 a^3+b^3+c^3=648 a 3 + b 3 + c 3 = 6 4 8 , find the value of P, if a,b and c are all positive?\n\n0\n\n18\n\n12\n\n36",
+      "question_text": "If a,b,c are roots of the equation $x^3 - Px^2 + 108x -216 = 0$ and $a^3+b^3+c^3=648$, find the value of P, if a,b and c are all positive?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "$a+b+c=P$ and $ab+bc+ac=108$ and $abc=216$\n\nGiven that $a^3+b^3+c^3=648$, it implies that $a^3+b^3+c^3-3abc=0$\n\nSo, $a+b+c=0$ or $a^2+b^2+c^2-ab-bc-ac=0$.\n\nAs, a, b and c are positive, it implies that $a+b+c > 0$ and $a^2+b^2+c^2-ab-bc-ac=0$\n\n$a^2+b^2+c^2-ab-bc-ac=0$ only if $a=b=c=6$\n\nSo, $P=a+b+c=18$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 1164)\n\n**Passage:**\nIf a,b,c are roots of the equation x 3 − P x 2 + 108 x − 216 = 0 x^3 - Px^2 + 108x -216 = 0 x 3 − P x 2 + 1 0 8 x − 2 1 6 = 0 and a 3 + b 3 + c 3 = 648 a^3+b^3+c^3=648 a 3 + b 3 + c 3 = 6 4 8 , find the value of P, if a,b and c are all positive?\n\n0\n\n18\n\n12\n\n36\n\nIf a,b,c are roots of the equation $x^3 - Px^2 + 108x -216 = 0$ and $a^3+b^3+c^3=648$, find the value of P, if a,b and c are all positive?\n\n**Options:**\n- **A**. 0\n- **B**. 18\n- **C**. 12\n- **D**. 36\n\n**Correct Answer:** null"
     }
   ]
 }

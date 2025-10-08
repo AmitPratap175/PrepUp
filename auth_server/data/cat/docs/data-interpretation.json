@@ -11202,6 +11202,121 @@
       "solution_text": "Solution\n\n1. If original sequence is given.\n2. If either of LR, RL, LT, TI, IM is interchanged => 5 ways.\n3. If LR and LT and IM interchanged. The sequence will look like: RLTLMI\n4. If LR and LT are interchanged.\n5. If LR and TI are interchanged.\n6. If LR and IM are interchanged.\n7. If RL and TI are interchanged.\n8. If RL and IM  are interchanged.\n9. If LT and IM are interchanged.\nTotal 13 ways possible.",
       "solution_image_url": null,
       "full_markdown": "### Question (qid: 98232)"
+    },
+    {
+      "qid": "dilr-399",
+      "passage_text": "A chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.",
+      "question_text": "What is the selling price (per unit) of Earth Bar?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the Cost Price of Kat Kit be 'y' and profit of Kat Kit be 'x'. So, the S.P of Kat Kit=x+y\n\nFrom the statements 1,4, 6 the profit/unit of Four Star, Krunch, Earth Bar and Bourgilla are x+25, x+10, x+5, x.\n\nFrom statement 1, CP of Krunch = 20\n\nFrom statement 2, SP of Four Star= 20\n\nFrom statement 6, SP of Earth Bar=35\n\nFrom statement 5, S.P of Bourgilla is 45/55 and C.P is 25/30/35/40.\n\nSince S.P-CP=Profit\n\nFrom Four Star, 50-y-5= x+25\n\ny=20-x\n\nSince, y can take only positive values\n\n20-x>0 => x can be 0/5/10/15\n\nCase1- if x=0 => y=20\n\nthen CP of Kat Kit=CP of Krunch. So, this case is not valid.\n\nCase 2: if x=5 => y=15\n\nthen CP of Four Star=CP of Krunch. So, this case of not valid.\n\nCase 3: if x=10 => y=10\n\nthe CP of Krunch=CP of Earth Bar\n\nSo, this case is invalid.\n\nCase 4: if x=15 => y=5\n\nSince SP of Krunch=45, SP of Bourgilla will be 55.\n\nHence, we can form the table:\n\nSP of Earth Bar=35",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294496)\n\n**Passage:**\nA chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.\n\nWhat is the selling price (per unit) of Earth Bar?\n\n**Options:**\n- **A**. 20\n- **B**. 35\n- **C**. 40\n- **D**. 50\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-400",
+      "passage_text": "A chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.",
+      "question_text": "If k1 is the selling Price(per unit) of costliest chocolate in terms of selling price and k2 is the maximum profit that the company makes on any chocolate, what is the value of k1-k2?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the Cost Price of Kat Kit be 'y' and profit of Kat Kit be 'x'. So, the S.P of Kat Kit=x+y\n\nFrom the statements 1,4, 6 the profit/unit of Four Star, Krunch, Earth Bar and Bourgilla are x+25, x+10, x+5, x.\n\nFrom statement 1, CP of Krunch = 20\n\nFrom statement 2, SP of Four Star= 20\n\nFrom statement 6, SP of Earth Bar=35\n\nFrom statement 5, S.P of Bourgilla is 45/55 and C.P is 25/30/35/40.\n\nSince S.P-CP=Profit\n\nFrom Four Star, 50-y-5= x+25\n\ny=20-x\n\nSince, y can take only positive values\n\n20-x>0 => x can be 0/5/10/15 \n\nCase1- if x=0 => y=20\n\nthen CP of Kat Kit=CP of Krunch. So, this case is not valid.\n\nCase 2: if x=5 => y=15\n\nthen CP of Four Star=CP of Krunch. So, this case of not valid.\n\nCase 3: if x=10 => y=10\n\nthe CP of Krunch=CP of Earth Bar\n\nSo, this case is invalid.\n\nCase 4: if x=15 => y=5\n\nSince SP of Krunch=45, SP of Bourgilla will be 55.\n\nHence, we can form the table: \n\nfrom the table, it can be observed that k1= 55 and k2=40\n\nk1-k2=15.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294497)\n\n**Passage:**\nA chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.\n\nIf k1 is the selling Price(per unit) of costliest chocolate in terms of selling price and k2 is the maximum profit that the company makes on any chocolate, what is the value of k1-k2?\n\n**Options:**\n- **A**. 5\n- **B**. 10\n- **C**. 15\n- **D**. 20\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-401",
+      "passage_text": "A chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.",
+      "question_text": "What is the cost price(per unit) of Bourngilla?",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Let the Cost Price of Kat Kit be 'y' and profit of Kat Kit be 'x'. So, the S.P of Kat Kit=x+y\n\nFrom the statements 1,4, 6 the profit/unit of Four Star, Krunch, Earth Bar and Bourgilla are x+25, x+10, x+5, x.\n\nFrom statement 1, CP of Krunch = 20\n\nFrom statement 2, SP of Four Star= 20\n\nFrom statement 6, SP of Earth Bar=35\n\nFrom statement 5, S.P of Bourgilla is 45/55 and C.P is 25/30/35/40.\n\nSince S.P-CP=Profit\n\nFrom Four Star, 50-y-5= x+25\n\ny=20-x\n\nSince, y can take only positive values\n\n20-x>0 => x can be 0/5/10/15\n\nCase1- if x=0 => y=20\n\nthen CP of Kat Kit=CP of Krunch. So, this case is not valid.\n\nCase 2: if x=5 => y=15\n\nthen CP of Four Star=CP of Krunch. So, this case of not valid.\n\nCase 3: if x=10 => y=10\n\nthe CP of Krunch=CP of Earth Bar\n\nSo, this case is invalid.\n\nCase 4: if x=15 => y=5\n\nSince SP of Krunch=45, SP of Bourgilla will be 55.\n\nHence, we can form the table:\n\nCP of Bourgilla=25",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294498)\n\n**Passage:**\nA chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.\n\nWhat is the cost price(per unit) of Bourngilla?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-402",
+      "passage_text": "A chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.",
+      "question_text": "If, on a particular day, the company sells 50 units of a particular type of chocolate(X) and made a profit of Rs 1250, what is X?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Kat Kit",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Krunch",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Earth Bar",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Bourngilla",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the Cost Price of Kat Kit be 'y' and profit of Kat Kit be 'x'. So, the S.P of Kat Kit=x+y\n\nFrom the statements 1,4, 6 the profit/unit of Four Star, Krunch, Earth Bar and Bourgilla are x+25, x+10, x+5, x.\n\nFrom statement 1, CP of Krunch = 20\n\nFrom statement 2, SP of Four Star= 20\n\nFrom statement 6, SP of Earth Bar=35\n\nFrom statement 5, S.P of Bourgilla is 45/55 and C.P is 25/30/35/40.\n\nSince S.P-CP=Profit\n\nFrom Four Star, 50-y-5= x+25\n\ny=20-x\n\nSince, y can take only positive values\n\n20-x>0 => x can be 0/5/10/15\n\nCase1- if x=0 => y=20\n\nthen CP of Kat Kit=CP of Krunch. So, this case is not valid.\n\nCase 2: if x=5 => y=15\n\nthen CP of Four Star=CP of Krunch. So, this case of not valid.\n\nCase 3: if x=10 => y=10\n\nthe CP of Krunch=CP of Earth Bar\n\nSo, this case is invalid.\n\nCase 4: if x=15 => y=5\n\nSince SP of Krunch=45, SP of Bourgilla will be 55.\n\nHence, we can form the table:\n\nProfit for 50 units = 1250\n\nProfit/Unit = 1250/50 = 25\n\nHence, Krunch is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294499)\n\n**Passage:**\nA chocolate company produces 5 different types of chocolates - Four Star, Krunch, Earth Bar, Kat kit and Bourngilla. The price at which each chocolate is sold(Selling Price per unit ) is distinct. The cost of manufacturing of each type ( Cost price per unit ) is distinct. The profit that the company makes in selling one unit of each chocolate is distinct. The SP per unit(in Rs), Cost price per unit (in Rs) and Profit per unit(in Rs) are all positive integral multiples of 5.\n\nAlso, the following information is also known:\n\n1) The Cost price of Krunch is Rs 20 per unit and the profit that the company makes per unit by selling Krunch is Rs 5 more than what the company makes by selling one unit of Earth Bar.\n\n2) The selling price of four-star is Rs 50 per unit and the cost price of four-star per unit is Rs 5 more than the cost price of one unit of Kat kit.\n\n3)The cost price of any chocolate is not greater than Rs 40 per unit, while the selling price per unit of any chocolate is not greater than Rs 55.\n\n4)The profit on Krunch per unit is Rs 10 more than profit per unit on Kat Kit.\n\n5) The selling price per unit of Bourngilla is at least Rs 45, while the cost price per unit of Bourngilla is at least Rs 25.\n\n6) The selling price of the Earth bar per unit is Rs 35 and the profit per unit for Earth Bar is Rs 20 less than that of profit per unit for Four star.\n\nIf, on a particular day, the company sells 50 units of a particular type of chocolate(X) and made a profit of Rs 1250, what is X?\n\n**Options:**\n- **A**. Kat Kit\n- **B**. Krunch\n- **C**. Earth Bar\n- **D**. Bourngilla\n\n**Correct Answer:** null"
     }
   ]
 }

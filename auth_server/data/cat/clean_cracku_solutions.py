@@ -114,7 +114,7 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
         js_code=[
             "window.scrollTo(0, document.body.scrollHeight);",
         ],
-        delay_before_return_html=20.0,
+        delay_before_return_html=2.0,
     )
     
     categorized_html: Dict[str, List[str]] = {"quant": [], "verbal": [], "reasoning": []}
@@ -296,7 +296,7 @@ def main(categorized_html: Dict[str, List[str]]):
     project_root = script_dir.parent.parent.parent
     
     intermediate_dir = script_dir.parent / "temp_json"
-    final_destination_dir = project_root / "auth_server/data/cat"
+    final_destination_dir = project_root / "auth_server/data/cat/docs"
     os.makedirs(intermediate_dir, exist_ok=True)
 
     for category, subject_alias in strings.items():

@@ -268,7 +268,7 @@ def main(categorized_html: Dict[str, List[str]]):
     project_root = script_dir.parent.parent.parent
     
     intermediate_dir = script_dir.parent / "temp_json"
-    final_destination_dir = project_root / "auth_server/data/cat"
+    final_destination_dir = project_root / "auth_server/data/cat/docs"
     os.makedirs(intermediate_dir, exist_ok=True)
 
     for category, subject_alias in strings.items():
