@@ -95,9 +95,11 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None,
             })
     else:
         # Handle TITA (Type In The Answer) questions or other formats
-        correct_data_class = card.select_one(".answer-box input[data-answer], .answer-box a[data-answer]")
-        if correct_data_class:
-            correct_answer_data = correct_data_class.get("data-answer")
+        tita_input = card.select_one(".answer-box input[data-qno]")
+        if tita_input:
+            correct_answer_data = tita_input.get("data-answer")
+            data_qid = tita_input.get("data-qno")
+            # print(f"Detected TITA question with qid: {data_qid} and answer: {correct_answer_data}")
 
     # --- Extract Solution ---
     solution = None
@@ -110,6 +112,25 @@ def parse_card(card: Tag, soup: BeautifulSoup, passage: Optional[str] = None,
             if solution_body:
                 solution = _html_to_text_with_latex(solution_body.decode_contents())
 
+                sol_imgs = solution_body.find_all("img")
+                sol_img_urls = [img["src"].strip() for img in sol_imgs if img.has_attr("src")]
+                if sol_img_urls:
+                    solution_image_url = ",".join(sorted(list(set(sol_img_urls))))
+    # if explanation_id == "explanation469191":
+    # print(f"Extracted solution for explanation_id: {solution}|\n\n{options_box}\n {50*'-'}")
+    if not solution:
+        # Fallback for TITA questions
+        explanation_id = f"explanation{data_qid}"
+        # print(f"Attempting fallback for explanation_id: {explanation_id}")
+        fallback_card = soup.select_one(f"div.card.card-success[id='{explanation_id}']")
+        if fallback_card:
+            solution_body = fallback_card.select_one(".card-body")
+            if solution_body:
+                temp_solution_body = BeautifulSoup(str(solution_body), 'html.parser')
+                badge = temp_solution_body.find('span', class_='badge-success')
+                if badge:
+                    badge.decompose()
+                solution = _html_to_text_with_latex(temp_solution_body.decode_contents())
                 sol_imgs = solution_body.find_all("img")
                 sol_img_urls = [img["src"].strip() for img in sol_imgs if img.has_attr("src")]
                 if sol_img_urls:
@@ -150,7 +171,7 @@ async def scrape_url_and_parse(url: str) -> Optional[List[Dict]]:
             return None  # Return None on crawl failure
 
         # # Save the raw HTML for debugging - COMMENTED OUT
-        # out_basename = "docs/" + url.split("/")[-1]
+        # out_basename = "html/" + url.split("/")[-1]
         # html_filename = f"{out_basename}.html"
         # with open(html_filename, "w", encoding="utf-8") as f:
         #     f.write(result.html)
@@ -224,7 +245,7 @@ def clean_qids_in_output_files() -> None:
     Finds all JSON files in the output directory, reads each one, replaces the 'qid'
     values, and then overwrites the original file with the updated data.
     """
-    json_folder = Path(__file__).parent / "docs"
+    json_folder = Path(__file__).parent / "temp"
     if not json_folder.is_dir():
         print(f"Info: Output directory not found at {json_folder}. Nothing to clean.")
         return
@@ -273,7 +294,7 @@ async def main():
     """
     Main function to read URLs, categorize them, scrape, and append to JSON files.
     """
-    output_dir = Path("docs")
+    output_dir = Path("temp")
     output_dir.mkdir(exist_ok=True)
 
     category_map = {

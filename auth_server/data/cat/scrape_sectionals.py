@@ -80,7 +80,7 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
-                filename = re.sub(r'[^a-zA-Z0-9_-]', '_', filename) + ".html"
+                filename = url.split("/")[-2] + url.split("=")[-1] + ".html"
                 filepath = html_dir / filename
                 with open(filepath, "w", encoding="utf-8") as f:
                     f.write(result.html)

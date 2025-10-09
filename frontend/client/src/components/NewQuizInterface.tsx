@@ -370,7 +370,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
                   <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
                     <Latex>
                       {currentQuestion.options.length === 0
-                        ? currentQuestion.correct_option_data || currentQuestion.solution_text || "No solution provided."
+                        ? `${currentQuestion.correct_option_data || ''}${currentQuestion.solution_text ? `${currentQuestion.solution_text}` : ''}` || "No solution provided."
                         : currentQuestion.solution_text || "No solution provided."}
                     </Latex>
                   </div>
