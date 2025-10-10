@@ -296,10 +296,6 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
         setIsPopupVisible(true);
         setDefinitionError("");
       }
-    } else {
-      if (popupRef.current && !popupRef.current.contains(document.activeElement)) {
-        handleClosePopup();
-      }
     }
   };
 
@@ -328,21 +324,11 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     });
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
-        handleClosePopup();
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+
 
 
   return (
-    <div className="flex flex-col h-screen bg-background" onMouseUp={handleTextSelection}>
+    <div className="flex flex-col h-screen bg-background" onMouseUp={handleTextSelection} onTouchEnd={handleTextSelection}>
       {isPopupVisible && (
         <div
           ref={popupRef}
