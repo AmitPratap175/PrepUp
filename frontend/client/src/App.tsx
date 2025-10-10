@@ -24,6 +24,7 @@ import Refund from "@/pages/refund";
 import LoginPage from "@/pages/login";
 import SignupPage from "@/pages/signup";
 import BookmarksPage from "@/pages/bookmarks";
+import WordsPage from "@/pages/words";
 import CurrentAffairsPage from "@/pages/current-affairs";
 import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
 import SectionalTestsPage from "@/pages/sectional-tests";
@@ -62,6 +63,7 @@ function Router() {
       <Route path="/study-materials" component={StudyMaterials} />
       <Route path="/courses" component={Courses} />
       <Route path="/bookmarks" component={BookmarksPage} />
+      <Route path="/words" component={WordsPage} />
       <Route path="/current-affairs" component={CurrentAffairsPage} />
       <Route path="/current-affairs/:articleId" component={CurrentAffairsArticlePage} />
       <Route path="/about" component={About} />

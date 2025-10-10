@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon } from "lucide-react";
-
+import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon, X, Loader2 } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useToast } from "@/components/ui/use-toast";
 import { Calculator } from "./ui/calculator";
 
 /**
@@ -41,10 +41,99 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
   const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  // State for word definition pop-up
+  const [selectedText, setSelectedText] = useState("");
+  const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [definition, setDefinition] = useState("");
+  const [isLoadingDefinition, setIsLoadingDefinition] = useState(false);
+  const [definitionError, setDefinitionError] = useState("");
+  const popupRef = useRef<HTMLDivElement>(null);
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+
+  const definitionMutation = useMutation({
+    mutationFn: async ({ word, context }: { word: string; context: string }) => {
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("Not authenticated");
+
+      const response = await fetch("/api/chatbot/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify({
+          message: `Define the word "${word}" in the context of: "${context}"`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch definition");
+      }
+      const data = await response.json();
+      return data.reply;
+    },
+    onSuccess: (data) => {
+      setDefinition(data);
+      setDefinitionError("");
+    },
+    onError: () => {
+      setDefinitionError("Could not fetch definition. Please try again.");
+    },
+    onSettled: () => {
+      setIsLoadingDefinition(false);
+    },
+  });
+
+  const saveWordMutation = useMutation({
+    mutationFn: async ({
+      word,
+      meaning,
+      context,
+      question_id,
+    }: {
+      word: string;
+      meaning: string;
+      context: string;
+      question_id: string;
+    }) => {
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("Not authenticated");
+
+      const response = await fetch("/api/auth/words/create/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify({ word, meaning, context, question_id }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save word");
+      }
+      return response.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Word Saved!",
+        description: "The word has been added to your list.",
+      });
+      queryClient.invalidateQueries({ queryKey: ["words"] });
+    },
+    onError: (error) => {
+      toast({
+        title: "Error",
+        description: `Failed to save word: ${error.message}`,
+        variant: "destructive",
+      });
+    },
+  });
 
   // Timer effect
   useEffect(() => {
@@ -189,8 +278,104 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     return userAnswer === correctAnswer ? 'bg-green-200 border-green-500' : 'bg-red-200 border-red-500';
   };
 
+  const handleTextSelection = () => {
+    const selection = window.getSelection();
+    const text = selection?.toString().trim();
+    if (text && text.length > 0 && text.length < 100) {
+      const range = selection?.getRangeAt(0);
+      const rect = range?.getBoundingClientRect();
+      if (rect) {
+        setSelectedText(text);
+        setPopupPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
+        setIsPopupVisible(true);
+        setDefinition("");
+        setDefinitionError("");
+      }
+    } else {
+      // only hide if not clicking inside the popup
+      if (popupRef.current && !popupRef.current.contains(document.activeElement)) {
+        setIsPopupVisible(false);
+      }
+    }
+  };
+
+  const handleGetDefinition = () => {
+    setIsLoadingDefinition(true);
+    definitionMutation.mutate({
+      word: selectedText,
+      context: currentQuestion.passage_text || currentQuestion.question_text,
+    });
+  };
+
+  const handleSaveWord = () => {
+    if (!definition) {
+      toast({
+        title: "No Definition",
+        description: "Please get a definition before saving the word.",
+        variant: "destructive",
+      });
+      return;
+    }
+    saveWordMutation.mutate({
+      word: selectedText,
+      meaning: definition,
+      context: currentQuestion.passage_text || currentQuestion.question_text,
+      question_id: currentQuestion.qid,
+    });
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
+        setIsPopupVisible(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
   return (
-    <div className="flex flex-col h-screen bg-background">
+    <div className="flex flex-col h-screen bg-background" onMouseUp={handleTextSelection}>
+      {isPopupVisible && (
+        <div
+          ref={popupRef}
+          className="absolute z-50"
+          style={{ top: popupPosition.top, left: popupPosition.left }}
+        >
+          <Card className="w-80 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex justify-between items-center">
+                <span>{selectedText}</span>
+                <Button variant="ghost" size="icon" onClick={() => setIsPopupVisible(false)}>
+                  <X className="h-4 w-4" />
+                </Button>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {isLoadingDefinition ? (
+                <div className="flex items-center justify-center">
+                  <Loader2 className="h-6 w-6 animate-spin" />
+                </div>
+              ) : definitionError ? (
+                <p className="text-red-500">{definitionError}</p>
+              ) : definition ? (
+                <p>{definition}</p>
+              ) : null}
+              <div className="flex justify-end gap-2 mt-4">
+                <Button variant="outline" onClick={handleGetDefinition}>
+                  Get Definition
+                </Button>
+                <Button onClick={handleSaveWord} disabled={!definition || isLoadingDefinition}>
+                  Save Word
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
       {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-4 border-b border-border">
         <div className="flex flex-row items-center justify-between gap-2 sm:gap-4">

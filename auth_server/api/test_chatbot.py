@@ -1,28 +1,35 @@
-from django.test import TestCase, Client
+from rest_framework.test import APITestCase
+from django.contrib.auth import get_user_model
+from rest_framework.authtoken.models import Token
 from django.urls import reverse
 import json
-from unittest.mock import patch
+from unittest.mock import patch, AsyncMock
+from asgiref.sync import async_to_sync
 
-class ChatbotAPITestCase(TestCase):
+User = get_user_model()
+
+class ChatbotAPITestCase(APITestCase):
     """
     Test suite for the chatbot API endpoint.
     """
     def setUp(self):
-        """Initializes the test client before each test."""
-        self.client = Client()
+        """Initializes the test client and authenticates a user."""
+        self.user = User.objects.create_user(email='test@example.com', password='testpassword', name='Test User', exam_type='cat')
+        self.token = Token.objects.create(user=self.user)
+        self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
 
-    @patch('auth_server.api.views.chatbot_instance')
-    def test_chatbot_view_post(self, mock_chatbot_instance):
+    @patch('langchain_google_genai.chat_models.ChatGoogleGenerativeAI')
+    def test_chatbot_view_post(self, mock_chat_google_genai):
         """
         Tests the chatbot endpoint with a POST request.
         """
         # Configure the mock
-        mock_chatbot_instance.get_answer.return_value = "This is a mock reply."
+        mock_chat_google_genai.return_value.invoke.return_value.content = "This is a mock reply."
 
         url = reverse('chatbot')
 
         data = {'message': 'How do I create an account?'}
-        response = self.client.post(url, json.dumps(data), content_type='application/json')
+        response = self.client.post(url, data, format='json')
 
         self.assertEqual(response.status_code, 200)
         response_data = response.json()
@@ -48,5 +55,5 @@ class ChatbotAPITestCase(TestCase):
         response = self.client.post(url, data, content_type='application/json')
         self.assertEqual(response.status_code, 400)
         response_data = response.json()
-        self.assertIn('error', response_data)
-        self.assertEqual(response_data['error'], 'Invalid JSON')
+        self.assertIn('detail', response_data)
+        self.assertIn('JSON parse error', response_data['detail'])

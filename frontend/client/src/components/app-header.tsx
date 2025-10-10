@@ -37,6 +37,7 @@ const navigation = [
     ]
   },
   { title: "Bookmarks", href: "/bookmarks" },
+  { title: "My Words", href: "/words" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];

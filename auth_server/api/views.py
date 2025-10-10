@@ -337,6 +337,7 @@ import traceback
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+from asgiref.sync import async_to_sync
 from .chatbot_service import invoke_agent
 
 class ChatbotView(APIView):
@@ -349,21 +350,16 @@ class ChatbotView(APIView):
         """
         Handles the incoming POST request by calling the chatbot service.
         """
-        try:
-            message = request.data.get('message', '')
-            
-            session_id = request.session.get('chatbot_session_id')
-            if not session_id:
-                session_id = str(uuid.uuid4())
-                request.session['chatbot_session_id'] = session_id
+        message = request.data.get('message', '')
 
-            print(f"\n\nMessage recieved: {message}\n\n")
+        session_id = request.session.get('chatbot_session_id')
+        if not session_id:
+            session_id = str(uuid.uuid4())
+            request.session['chatbot_session_id'] = session_id
 
-            reply = invoke_agent(session_id=session_id, message=message)
-            
-            return Response({"reply": reply})
-        except Exception as e:
-            print(f"--- UNHANDLED EXCEPTION IN CHATBOT VIEW ---")
-            traceback.print_exc()
-            print(f"----------------------------------------")
-            return Response({"error": "An error occurred processing your request."}, status=500)
+        print(f"\n\nMessage received: {message}\n\n")
+
+        # Use async_to_sync to call the async invoke_agent function
+        reply = async_to_sync(invoke_agent)(session_id=session_id, message=message)
+
+        return Response({"reply": reply})

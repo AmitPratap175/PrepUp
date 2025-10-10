@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from .models import Bookmark
+from .models import Bookmark, Word
 
 User = get_user_model()
 
@@ -51,3 +51,17 @@ class BookmarkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bookmark
         fields = ['id', 'user', 'subject', 'question_id']
+
+
+class WordSerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Word model.
+
+    This serializer handles the conversion of Word instances to JSON.
+    The 'user' field is read-only and displays the user's email for
+    context.
+    """
+    user = serializers.ReadOnlyField(source='user.email')
+    class Meta:
+        model = Word
+        fields = ['id', 'user', 'word', 'meaning', 'context', 'question_id']

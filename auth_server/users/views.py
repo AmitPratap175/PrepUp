@@ -4,8 +4,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
-from .serializers import UserSerializer, BookmarkSerializer
-from .models import Bookmark
+from .serializers import UserSerializer, BookmarkSerializer, WordSerializer
+from .models import Bookmark, Word
 
 User = get_user_model()
 
@@ -177,3 +177,39 @@ class BookmarkDeleteView(generics.DestroyAPIView):
             user=self.request.user
         )
         return obj
+
+
+class WordListView(generics.ListAPIView):
+    """
+    Lists the words for the authenticated user.
+    """
+    serializer_class = WordSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        """
+        Returns the queryset of words for the current user.
+        """
+        user = self.request.user
+        return Word.objects.filter(user=user)
+
+
+class WordCreateView(generics.CreateAPIView):
+    """
+    Handles the creation of a new word.
+
+    This view allows an authenticated user to save a new word. The user
+    is automatically associated with the created word.
+    """
+    queryset = Word.objects.all()
+    serializer_class = WordSerializer
+    permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        """
+        Associates the word with the current user before saving.
+
+        Args:
+            serializer: The serializer instance for the word.
+        """
+        serializer.save(user=self.request.user)

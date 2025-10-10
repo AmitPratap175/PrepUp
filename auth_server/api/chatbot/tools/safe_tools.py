@@ -17,5 +17,6 @@ def get_datetime_now():
     return datetime.now().isoformat()
 
 from .quiz_tool import quiz_tools_list
+from .dictionary_tool import dictionary_tools_list
 
-safe_tools_list = [get_datetime_now] + quiz_tools_list
+safe_tools_list = [get_datetime_now] + quiz_tools_list + dictionary_tools_list
