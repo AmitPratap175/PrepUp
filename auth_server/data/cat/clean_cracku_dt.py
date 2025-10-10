@@ -25,7 +25,6 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Optional, Tuple
 import shutil
 import asyncio
-import time
 from pathlib import Path
 
 # Import the main function from the sibling script to clean question IDs.

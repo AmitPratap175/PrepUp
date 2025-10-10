@@ -31074,6 +31074,181 @@
       "solution_text": "Assuming the cost price of 1 pen = P and the cost price of 1 book = B\n\nThen, selling price of 1 book = B+4P\n\nSelling price of 1 pen = P+$\\ \\frac{\\ B}{30}$ \n\n=> $\\ \\frac{\\ B+4P}{P+\\ \\frac{\\ B}{30}}$\n\n=> 2B+8P = 15P + $\\ \\frac{\\ B}{2}$\n\n=> $\\ \\frac{\\ 3B}{2}\\ =7P$\n\n=> $\\ \\frac{\\ P}{B}\\ =\\ \\frac{\\ 3}{14}$",
       "image_url": "",
       "full_markdown": "### Question (qid: 289358)\n\n**Passage:**\nThe profit on selling 1 book is equal to the cost price of 4 pens. The cost price of 1 book is equal to the profit made by selling 30 pens. If the ratio of the selling price of 1 book to 1 pen is 15:2, then what is the ratio of cost price of 1 pen to the cost price of 1 book?\n\n2:7\n\n3:7\n\n3:14\n\n5:14\n\nThe profit on selling 1 book is equal to the cost price of 4 pens. The cost price of 1 book is equal to the profit made by selling 30 pens. If the ratio of the selling price of 1 book to 1 pen is 15:2, then what is the ratio of cost price of 1 pen to the cost price of 1 book?\n\n**Options:**\n- **A**. 2:7\n- **B**. 3:7\n- **C**. 3:14\n- **D**. 5:14\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-925",
+      "passage_text": "",
+      "question_text": "Five pipes A, B, C, D, and E can fill a tank in 60 minutes, 20 minutes, 30 minutes, 8 minutes, 32 minutes respectively. Out of these five pipes, two have now been converted into emptying pipes such that their efficiency remains the same. When only one of filling pipes and one of the emptying pipes operate, the tank can be filled in 60 minutes. Another combination of one filling and one emptying pipes empties the tank in $\\frac{8}{45}^{th}$ of the time taken by the previous combination to fill the tank. Which pipes are converted into emptying pipes?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A and D",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "C and D",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "B and D",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the total work to be done be 480 units (LCM of 60,20,30,8,32)\nSo the respective efficiencies of different pipes are-\nA- 8 units/min (480/60)\nB- 24 units/min\nC- 16 units/min\nD- 60 units/min\nE- 15 units/min\nNow, one combination of emptying and filling pipe can fill the tank in 60 minutes, i.e. together they can do 480/60=8 units of work per minute.\nOut of the combinations possible, only A-C and B-C have a difference of 8 units/min.\nSo, if A is an emptying the tank and C is a filling it, they will do together 8 units of work per min. When C is an emptying the tank and B is filling it, the work done per minute will be the same 8 units/min. \n\nAccording to the question, the second combination takes 8/45th of time of first one, i.e 32/3 minutes. Only combination that can do so is when D is the emptying pipe and E is the filling pipe. So among A, B, and C, we cannot know for sure which pipe is the filling one and which one is the emptying one. \n\nThus, we can’t determine which pipes have been converted to emptying pipes.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 40229)\n\n**Passage:**\nFive pipes A, B, C, D, and E can fill a tank in 60 minutes, 20 minutes, 30 minutes, 8 minutes, 32 minutes respectively. Out of these five pipes, two have now been converted into emptying pipes such that their efficiency remains the same. When only one of filling pipes and one of the emptying pipes operate, the tank can be filled in 60 minutes. Another combination of one filling and one emptying pipes empties the tank in 8 45 t h \\frac{8}{45}^{th} 4 5 8 ​ t h of the time taken by the previous combination to fill the tank. Which pipes are converted into emptying pipes?\n\nA and D\n\nC and D\n\nB and D\n\nCannot be determined\n\nFive pipes A, B, C, D, and E can fill a tank in 60 minutes, 20 minutes, 30 minutes, 8 minutes, 32 minutes respectively. Out of these five pipes, two have now been converted into emptying pipes such that their efficiency remains the same. When only one of filling pipes and one of the emptying pipes operate, the tank can be filled in 60 minutes. Another combination of one filling and one emptying pipes empties the tank in $\\frac{8}{45}^{th}$ of the time taken by the previous combination to fill the tank. Which pipes are converted into emptying pipes?\n\n**Options:**\n- **A**. A and D\n- **B**. C and D\n- **C**. B and D\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-926",
+      "passage_text": "",
+      "question_text": "B is twice efficient as A and A can do a piece of work in 15 days. A started the work and after a few days B joined him. They completed the work in 11 days, from the starting. For how many days did they work together?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1 day",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2 days",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5 days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "A can do a piece of work in 15 days.\nB is twice as efficient as A.\nSo B can do the same piece of work in 7.5 days.\nAssume the total work to be 15 units\nA does 1 unit per day and B does 2 units per day.\nFor the first x days, A worked alone and hence work done per day is\n1 * x = x units.\nFor the next (11 - x) days, A and B worked together. In 1 day, they will do (1 + 2) = 3 units.\nSo in 11 - x days, they will do 33 - 3x units.\n33 - 3x + x = 15\n2x = 18 and x = 9.\nThus A worked alone for 9 days the A and B worked together for 2 days.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 276806)\n\n**Passage:**\nB is twice efficient as A and A can do a piece of work in 15 days. A started the work and after a few days B joined him. They completed the work in 11 days, from the starting. For how many days did they work together?\n\n1 day\n\n2 days\n\n6 days\n\n5 days\n\nB is twice efficient as A and A can do a piece of work in 15 days. A started the work and after a few days B joined him. They completed the work in 11 days, from the starting. For how many days did they work together?\n\n**Options:**\n- **A**. 1 day\n- **B**. 2 days\n- **C**. 6 days\n- **D**. 5 days\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-927",
+      "passage_text": "",
+      "question_text": "Amal can complete a job in 10 days and Bimal can complete it in 8 days. Amal, Bimal and Kamal together complete the job in 4 days and are paid a total amount of Rs 1000 as remuneration. If this amount is shared by them in proportion to their work, then Kamal's share, in rupees, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "400",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the time take by kamal to complete the task be x days.\nHence we have $\\frac{1}{10} + \\frac{1}{8} + \\frac{1}{x} = \\frac{1}{4}$\n=> x = 40 days.\nRatio of the work done by them = $\\frac{1}{10} : \\frac{1}{8} : \\frac{1}{40}$ = 4 : 5 : 1\nHence the wage earned by Kamal = 1/10 * 1000 = 100",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98395)\n\n**Passage:**\nAmal can complete a job in 10 days and Bimal can complete it in 8 days. Amal, Bimal and Kamal together complete the job in 4 days and are paid a total amount of Rs 1000 as remuneration. If this amount is shared by them in proportion to their work, then Kamal's share, in rupees, is\n\n100\n\n200\n\n300\n\n400\n\nAmal can complete a job in 10 days and Bimal can complete it in 8 days. Amal, Bimal and Kamal together complete the job in 4 days and are paid a total amount of Rs 1000 as remuneration. If this amount is shared by them in proportion to their work, then Kamal's share, in rupees, is\n\n**Options:**\n- **A**. 100\n- **B**. 200\n- **C**. 300\n- **D**. 400\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-928",
+      "passage_text": "",
+      "question_text": "A motorbike leaves point A at 1 pm and moves towards point B at a uniform speed. A car leaves point B at 2 pm and moves towards point A at a uniform speed which is double that of the motorbike. They meet at 3:40 pm at a point which is 168 km away from A. What is the distance, in km, between A and B7",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "364",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "378",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "380",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "388",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the distance traveled by the car be x KMs\nDistance traveled by the bike = 168 KMs\nSpeed of car is double the speed of bike\n=> $\\frac{x}{3:40 - 2:00}$ = $2 \\times \\frac{168}{3:40 - 1:00}$\n=> $\\frac{x}{100}$ = $2 \\times \\frac{168}{160}$\n=> x = 210 \nHence the distance between A and B is x + 168 = 378 KMs",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98394)\n\n**Passage:**\nA motorbike leaves point A at 1 pm and moves towards point B at a uniform speed. A car leaves point B at 2 pm and moves towards point A at a uniform speed which is double that of the motorbike. They meet at 3:40 pm at a point which is 168 km away from A. What is the distance, in km, between A and B7\n\n364\n\n378\n\n380\n\n388\n\nA motorbike leaves point A at 1 pm and moves towards point B at a uniform speed. A car leaves point B at 2 pm and moves towards point A at a uniform speed which is double that of the motorbike. They meet at 3:40 pm at a point which is 168 km away from A. What is the distance, in km, between A and B7\n\n**Options:**\n- **A**. 364\n- **B**. 378\n- **C**. 380\n- **D**. 388\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-929",
+      "passage_text": "",
+      "question_text": "A and B are the two opposite ends of a running track and the distance between them is 240 metres. Ajay and Manoj start running towards each other at the same time from A and B, with speeds in the ratio 4 : 9 respectively. As soon as any of them reaches an end, he turns back and starts running towards the other end. At what distance from B will Ajay be when Manoj just starts his 16th round? \nNote: A to B is considered one round and B to A another round.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "80 m",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "120 m",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "160 m",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "By the time Manoj completes 15 rounds, Ajay will complete $\\dfrac{4}{9}\\times15=6\\dfrac{2}{3}$ rounds. \nAs Ajay completes $6\\dfrac{2}{3}$ rounds, he must have completed 6 complete rounds from A to B and B to A. So, he must be at point A at the completion of 6th round. Thereafter, he covers $\\dfrac{2}{3}$ of the round from A to B. So, he must be at $(1 - \\dfrac{2}{3} = \\dfrac{1}{3})$ of the distance between A and B from B\nTherefore, at this point in time Ajay is at a distance of $\\dfrac{240}{3} = 80$ metres from B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 41485)\n\n**Passage:**\nA and B are the two opposite ends of a running track and the distance between them is 240 metres. Ajay and Manoj start running towards each other at the same time from A and B, with speeds in the ratio 4 : 9 respectively. As soon as any of them reaches an end, he turns back and starts running towards the other end. At what distance from B will Ajay be when Manoj just starts his 16th round? Note: A to B is considered one round and B to A another round.\n\n80 m\n\n120 m\n\n160 m\n\nCannot be determined\n\nA and B are the two opposite ends of a running track and the distance between them is 240 metres. Ajay and Manoj start running towards each other at the same time from A and B, with speeds in the ratio 4 : 9 respectively. As soon as any of them reaches an end, he turns back and starts running towards the other end. At what distance from B will Ajay be when Manoj just starts his 16th round? \nNote: A to B is considered one round and B to A another round.\n\n**Options:**\n- **A**. 80 m\n- **B**. 120 m\n- **C**. 160 m\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
     }
   ]
 }
