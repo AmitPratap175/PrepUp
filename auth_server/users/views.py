@@ -213,3 +213,16 @@ class WordCreateView(generics.CreateAPIView):
             serializer: The serializer instance for the word.
         """
         serializer.save(user=self.request.user)
+
+class WordDeleteView(generics.DestroyAPIView):
+    """
+    Handles the deletion of a saved word.
+    """
+    serializer_class = WordSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        """
+        Ensures that users can only delete their own words.
+        """
+        return Word.objects.filter(user=self.request.user)

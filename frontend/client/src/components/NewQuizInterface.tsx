@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import ReactMarkdown from 'react-markdown';
 import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -6,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon, X, Loader2 } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { Calculator } from "./ui/calculator";
 
 /**
@@ -45,7 +46,6 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
 
   // State for word definition pop-up
   const [selectedText, setSelectedText] = useState("");
-  const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [definition, setDefinition] = useState("");
   const [isLoadingDefinition, setIsLoadingDefinition] = useState(false);
@@ -278,6 +278,13 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     return userAnswer === correctAnswer ? 'bg-green-200 border-green-500' : 'bg-red-200 border-red-500';
   };
 
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
+    setSelectedText("");
+    setDefinition("");
+    setDefinitionError("");
+  };
+
   const handleTextSelection = () => {
     const selection = window.getSelection();
     const text = selection?.toString().trim();
@@ -286,15 +293,12 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
       const rect = range?.getBoundingClientRect();
       if (rect) {
         setSelectedText(text);
-        setPopupPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
         setIsPopupVisible(true);
-        setDefinition("");
         setDefinitionError("");
       }
     } else {
-      // only hide if not clicking inside the popup
       if (popupRef.current && !popupRef.current.contains(document.activeElement)) {
-        setIsPopupVisible(false);
+        handleClosePopup();
       }
     }
   };
@@ -319,7 +323,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     saveWordMutation.mutate({
       word: selectedText,
       meaning: definition,
-      context: currentQuestion.passage_text || currentQuestion.question_text,
+      context: `From quiz: "${test.title}", Question ${currentQuestionIndex + 1}`,
       question_id: currentQuestion.qid,
     });
   };
@@ -327,7 +331,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
-        setIsPopupVisible(false);
+        handleClosePopup();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -342,19 +346,18 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
       {isPopupVisible && (
         <div
           ref={popupRef}
-          className="absolute z-50"
-          style={{ top: popupPosition.top, left: popupPosition.left }}
+          className="fixed top-20 left-1/2 -translate-x-1/2 z-50"
         >
           <Card className="w-80 shadow-lg">
             <CardHeader>
               <CardTitle className="flex justify-between items-center">
                 <span>{selectedText}</span>
-                <Button variant="ghost" size="icon" onClick={() => setIsPopupVisible(false)}>
+                <Button variant="ghost" size="icon" onClick={handleClosePopup}>
                   <X className="h-4 w-4" />
                 </Button>
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="max-h-[50vh] overflow-y-auto">
               {isLoadingDefinition ? (
                 <div className="flex items-center justify-center">
                   <Loader2 className="h-6 w-6 animate-spin" />
@@ -362,7 +365,9 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               ) : definitionError ? (
                 <p className="text-red-500">{definitionError}</p>
               ) : definition ? (
-                <p>{definition}</p>
+                <div className="prose max-w-none text-foreground dark:prose-invert">
+                  <ReactMarkdown>{definition}</ReactMarkdown>
+                </div>
               ) : null}
               <div className="flex justify-end gap-2 mt-4">
                 <Button variant="outline" onClick={handleGetDefinition}>

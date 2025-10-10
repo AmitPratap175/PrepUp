@@ -2,6 +2,7 @@ from langchain.tools import tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage
 import os
+from ...chatbot.settings import settings
 
 @tool
 async def get_word_definition(word: str, context: str) -> str:
@@ -15,7 +16,7 @@ async def get_word_definition(word: str, context: str) -> str:
     print(f"---Tool: get_word_definition activated for word '{word}'---")
 
     try:
-        model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+        model = ChatGoogleGenerativeAI(model="gemini-1.5-flash",api_key=settings.GOOGLE_API_KEY)
     except Exception as e:
         return f"Error initializing Gemini: {e}"
 

@@ -18,6 +18,8 @@ services:
       - "8000:8000"
     volumes:
       - ./auth_server/data/cat:/app/data/cat:z
+    env_file:
+      - ./auth_server/.env
     environment:
       - DB_HOST=postgres
       - DB_NAME=auth_db

@@ -333,16 +333,14 @@ def add_question_view(request):
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
 
 
-import traceback
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from asgiref.sync import async_to_sync
 from .chatbot_service import invoke_agent
 
 class ChatbotView(APIView):
     """
-    Handles chatbot interactions for authenticated users by invoking the LangGraph agent.
+    Handles chatbot interactions for authenticated users.
     """
     permission_classes = [IsAuthenticated]
 
@@ -359,7 +357,7 @@ class ChatbotView(APIView):
 
         print(f"\n\nMessage received: {message}\n\n")
 
-        # Use async_to_sync to call the async invoke_agent function
-        reply = async_to_sync(invoke_agent)(session_id=session_id, message=message)
+        # Call the synchronous invoke_agent function directly
+        reply = invoke_agent(session_id=session_id, message=message)
 
         return Response({"reply": reply})

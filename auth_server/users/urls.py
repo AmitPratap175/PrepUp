@@ -9,7 +9,7 @@ from django.urls import path
 from .views import (
     SignupView, LoginView, LogoutView, UserDetailsView,
     BookmarkListView, BookmarkCreateView, BookmarkDeleteView,
-    WordListView, WordCreateView
+    WordListView, WordCreateView, WordDeleteView
 )
 
 urlpatterns = [
@@ -22,4 +22,5 @@ urlpatterns = [
     path('bookmarks/delete/<str:question_id>/', BookmarkDeleteView.as_view(), name='bookmark-delete'),
     path('words/', WordListView.as_view(), name='word-list'),
     path('words/create/', WordCreateView.as_view(), name='word-create'),
+    path('words/<uuid:pk>/delete/', WordDeleteView.as_view(), name='word-delete'),
 ]

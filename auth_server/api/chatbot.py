@@ -8,7 +8,7 @@ from django.conf import settings
 from users.models import Bookmark
 from .storage import storage
 from asgiref.sync import sync_to_async
-
+from .chatbot.settings import settings
 load_dotenv()
 
 class SimpleChatbot:
@@ -20,7 +20,7 @@ class SimpleChatbot:
         Initializes the chatbot and configures the Gemini API.
         """
         try:
-            self.model = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+            self.model = ChatGoogleGenerativeAI(model="gemini-2.5-flash",api_key=settings.GOOGLE_API_KEY)
         except Exception as e:
             print(f"Error initializing Gemini (API key or model name may be invalid): {e}")
             self.model = None

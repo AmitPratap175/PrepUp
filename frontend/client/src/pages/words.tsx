@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import {
@@ -8,8 +8,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect } from "wouter";
+import { Trash2 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 
 /**
  * @interface Word
@@ -27,12 +31,14 @@ interface Word {
  * A page that displays the user's saved words.
  *
  * This component fetches all of the user's saved words from the API and
- * displays them in a list.
+ * displays them in a list. It also allows the user to delete words.
  *
  * @returns {JSX.Element} The rendered words page.
  */
 export default function WordsPage() {
   const { isAuthenticated } = useAuth();
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
 
   const { data: words, isLoading } = useQuery<Word[]>({
     queryKey: ["words"],
@@ -52,6 +58,31 @@ export default function WordsPage() {
       return response.json();
     },
     enabled: isAuthenticated,
+  });
+
+  const deleteWordMutation = useMutation({
+    mutationFn: async (wordId: string) => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        throw new Error("Not authenticated");
+      }
+      const response = await fetch(`/api/auth/words/${wordId}/delete/`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      });
+      if (!response.ok) {
+        throw new Error("Failed to delete word");
+      }
+    },
+    onSuccess: () => {
+      toast({ title: "Word Removed", description: "The word has been removed from your list." });
+      queryClient.invalidateQueries({ queryKey: ["words"] });
+    },
+    onError: (error) => {
+      toast({ title: "Error", description: `Failed to remove word: ${error.message}`, variant: "destructive" });
+    },
   });
 
   if (!isAuthenticated) {
@@ -95,16 +126,28 @@ export default function WordsPage() {
             <div className="space-y-6">
               {words.map((word) => (
                 <Card key={word.id} className="hover:shadow-md transition-shadow duration-300">
-                  <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-primary">
-                      {word.word}
-                    </CardTitle>
-                    <CardDescription className="italic">
-                      "{word.context}"
-                    </CardDescription>
+                  <CardHeader className="flex flex-row items-start justify-between">
+                    <div>
+                      <CardTitle className="text-2xl font-bold text-primary">
+                        {word.word}
+                      </CardTitle>
+                      <CardDescription className="italic">
+                        "{word.context}"
+                      </CardDescription>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => deleteWordMutation.mutate(word.id)}
+                      disabled={deleteWordMutation.isPending}
+                    >
+                      <Trash2 className="h-5 w-5 text-muted-foreground hover:text-destructive" />
+                    </Button>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-foreground">{word.meaning}</p>
+                    <div className="prose max-w-none text-foreground dark:prose-invert">
+                      <ReactMarkdown>{word.meaning}</ReactMarkdown>
+                    </div>
                   </CardContent>
                 </Card>
               ))}

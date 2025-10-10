@@ -5,7 +5,7 @@ from pathlib import Path
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore", env_file_encoding="utf-8")
 
-    GOOGLE_API_KEY: str
+    GOOGLE_API_KEY: str =  "AIzaSyDOmG_gjhPO4ZxWzhF5r_2I5x7XWnLsnUw"
 
     INFO_DB_PATH: str = str(Path(__file__).parent/'info.db')
     
