@@ -9,7 +9,9 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
+import { signup as signupUser, login } from "@/lib/auth";
+import { useAuth } from "@/contexts/auth-context";
+import { useLocation } from "wouter";
 import type { Course, StudyMaterial } from "@shared/schema";
 
 /**
@@ -23,9 +25,12 @@ import type { Course, StudyMaterial } from "@shared/schema";
  */
 export default function Home() {
   const { toast } = useToast();
+  const { user, login: loginUser } = useAuth();
+  const [, navigate] = useLocation();
   const [trialFormData, setTrialFormData] = useState({
     name: "",
     email: "",
+    password: "",
     examType: ""
   });
 
@@ -40,7 +45,7 @@ export default function Home() {
   const handleTrialSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!trialFormData.name || !trialFormData.email || !trialFormData.examType) {
+    if (!trialFormData.name || !trialFormData.email || !trialFormData.password || !trialFormData.examType) {
       toast({
         title: "Error",
         description: "Please fill in all fields",
@@ -50,18 +55,18 @@ export default function Home() {
     }
 
     try {
-      await apiRequest("POST", "/api/users", {
-        name: trialFormData.name,
-        email: trialFormData.email,
-        examType: trialFormData.examType,
-      });
+      await signupUser(trialFormData.name, trialFormData.email, trialFormData.password, trialFormData.examType);
+      
+      const loginResponse = await login(trialFormData.email, trialFormData.password);
+      loginUser(loginResponse.token);
 
       toast({
         title: "Success!",
         description: "Your free trial has been activated. Welcome to PrepUp!",
       });
       
-      setTrialFormData({ name: "", email: "", examType: "" });
+      navigate("/dashboard");
+
     } catch (error) {
       toast({
         title: "Error",
@@ -478,6 +483,7 @@ export default function Home() {
         </section>
 
         {/* Call to Action */}
+        {!user && (
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 to-accent/20">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-3xl sm:text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
@@ -507,6 +513,13 @@ export default function Home() {
                     value={trialFormData.email}
                     onChange={(e) => setTrialFormData(prev => ({ ...prev, email: e.target.value }))}
                     data-testid="input-trial-email"
+                  />
+                  <Input 
+                    type="password" 
+                    placeholder="Password" 
+                    value={trialFormData.password}
+                    onChange={(e) => setTrialFormData(prev => ({ ...prev, password: e.target.value }))}
+                    data-testid="input-trial-password"
                   />
                   <Select 
                     value={trialFormData.examType} 
@@ -552,6 +565,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        )}
       </main>
 
       <AppFooter />
