@@ -1,4 +1,4 @@
-import { Chatbot } from "./chatbot";
+import { Chatbot, type Message } from "./chatbot";
 import { MessageSquare } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from 'react-markdown';
@@ -54,6 +54,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
   const [isLoadingDefinition, setIsLoadingDefinition] = useState(false);
   const [definitionError, setDefinitionError] = useState("");
   const popupRef = useRef<HTMLDivElement>(null);
+  const [chatHistories, setChatHistories] = useState<{ [qid: string]: Message[] }>({});
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
@@ -481,12 +482,25 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
             </span>
           </div>
 
-          {isChatbotOpen && (
-            <Chatbot
-              onClose={() => setIsChatbotOpen(false)}
-              initialMessage={`Explain the following question and its options, and help me understand the answer.\n\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`}
-            />
-          )}
+          {isChatbotOpen && (() => {
+            const currentQuestionId = currentQuestion.qid;
+            const currentChatHistory = chatHistories[currentQuestionId] || [];
+            const initialMessage = `Explain the following question and its options, and help me understand the answer.\n\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`;
+
+            return (
+              <Chatbot
+                onClose={() => setIsChatbotOpen(false)}
+                initialMessage={currentChatHistory.length === 0 ? initialMessage : undefined}
+                history={currentChatHistory}
+                onHistoryChange={(newHistory) => {
+                  setChatHistories(prev => ({
+                    ...prev,
+                    [currentQuestionId]: newHistory,
+                  }));
+                }}
+              />
+            );
+          })()}
 
           <div className="flex-1 flex overflow-hidden">
             {(hasPassage || currentQuestion.image_url) && (

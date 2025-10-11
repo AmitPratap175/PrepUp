@@ -10,15 +10,17 @@ import 'katex/dist/katex.min.css';
 interface ChatbotProps {
   onClose: () => void;
   initialMessage?: string;
+  history: Message[];
+  onHistoryChange: (history: Message[]) => void;
 }
 
-interface Message {
+export interface Message {
   text: string;
   sender: 'user' | 'bot';
 }
 
-export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => {
-  const [messages, setMessages] = useState<Message[]>([]);
+export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, history, onHistoryChange }) => {
+  const [messages, setMessages] = useState<Message[]>(history);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -42,6 +44,14 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
     }, 100); // A small delay is often enough.
 
     return () => clearTimeout(timer);
+  }, [messages]);
+
+  useEffect(() => {
+    setMessages(history);
+  }, [history]);
+
+  useEffect(() => {
+    onHistoryChange(messages);
   }, [messages]);
 
   const handleSendMessage = async (messageToSend: string) => {
