@@ -40,10 +40,7 @@ export default function StudyMaterials() {
   // Get unique subjects for filter
   const subjects = Array.from(new Set(allMaterials?.map(m => m.subject) || []));
 
-  const handleDownload = (material: StudyMaterial) => {
-    // In a real app, this would handle the actual download
-    console.log("Downloading:", material.title);
-  };
+
 
   if (isLoading) {
     return (
@@ -189,13 +186,14 @@ export default function StudyMaterials() {
                       </div>
                     </div>
                     
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                      onClick={() => handleDownload(material)}
-                      data-testid={`download-material-${material.id}`}
-                    >
-                      Download PDF
-                    </Button>
+                    <a href={material.downloadUrl} download>
+                      <Button 
+                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                        data-testid={`download-material-${material.id}`}
+                      >
+                        Download PDF
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               ))}

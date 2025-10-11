@@ -454,12 +454,14 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                      data-testid={`download-material-${material.id}`}
-                    >
-                      Download PDF
-                    </Button>
+                    <a href={material.downloadUrl} download>
+                      <Button 
+                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                        data-testid={`download-material-${material.id}`}
+                      >
+                        Download PDF
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               ))}
