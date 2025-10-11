@@ -3,6 +3,9 @@ import ReactMarkdown from 'react-markdown';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 interface ChatbotProps {
   onClose: () => void;
@@ -17,10 +20,13 @@ interface Message {
 export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
@@ -29,23 +35,29 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
     }
   }, [initialMessage]);
 
-  useEffect(scrollToBottom, [messages]);
+  useEffect(() => {
+    // Delay scrolling to allow Katex to render and prevent layout shifts from causing scroll jumps.
+    const timer = setTimeout(() => {
+      scrollToBottom();
+    }, 100); // A small delay is often enough.
+
+    return () => clearTimeout(timer);
+  }, [messages]);
 
   const handleSendMessage = async (messageToSend: string) => {
-    if (messageToSend.trim() === '') return;
+    if (messageToSend.trim() === '' || isLoading) return;
 
     const userMessage: Message = { text: messageToSend, sender: 'user' };
     setMessages(prevMessages => [...prevMessages, userMessage]);
-    setInputValue(''); // Clear input after sending
-
-    const token = localStorage.getItem('token');
-    if (!token) {
-      const errorMessage: Message = { text: 'Authentication error. Please log in again.', sender: 'bot' };
-      setMessages(prevMessages => [...prevMessages, errorMessage]);
-      return;
-    }
+    setInputValue('');
+    setIsLoading(true);
 
     try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        throw new Error('Authentication error. Please log in again.');
+      }
+
       const response = await fetch('/api/chatbot/', {
         method: 'POST',
         headers: {
@@ -62,10 +74,12 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
       const data = await response.json();
       const botMessage: Message = { text: data.reply, sender: 'bot' };
       setMessages(prevMessages => [...prevMessages, botMessage]);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error sending message:', error);
-      const errorMessage: Message = { text: 'Sorry, something went wrong. Please try again.', sender: 'bot' };
+      const errorMessage: Message = { text: error.message || 'Sorry, something went wrong. Please try again.', sender: 'bot' };
       setMessages(prevMessages => [...prevMessages, errorMessage]);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -77,7 +91,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
           <span className="material-symbols-outlined">close</span>
         </Button>
       </CardHeader>
-      <CardContent className="flex-grow p-4 overflow-y-auto">
+      <CardContent ref={chatContainerRef} className="flex-grow p-4 overflow-y-auto">
         <div className="space-y-4">
           {messages.map((message, index) => (
             <div
@@ -85,15 +99,29 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
               className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`p-2 rounded-lg max-w-xs prose ${
-                  message.sender === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'
+                className={`p-2 rounded-lg w-[85%] prose ${
+                  message.sender === 'user'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-muted text-foreground dark:prose-invert'
                 }`}
               >
-                <ReactMarkdown>{message.text}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+                  {message.text}
+                </ReactMarkdown>
               </div>
             </div>
           ))}
-          <div ref={messagesEndRef} />
+          {isLoading && (
+            <div className="flex justify-start">
+              <div className="p-2 rounded-lg w-[85%] prose bg-muted">
+                <div className="flex items-center justify-center space-x-1">
+                  <span className="h-2 w-2 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                  <span className="h-2 w-2 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                  <span className="h-2 w-2 bg-gray-500 rounded-full animate-bounce"></span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </CardContent>
       <div className="p-4 border-t">
@@ -105,8 +133,11 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => 
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputValue)}
             className="flex-grow"
+            disabled={isLoading}
           />
-          <Button onClick={() => handleSendMessage(inputValue)}>Send</Button>
+          <Button onClick={() => handleSendMessage(inputValue)} disabled={isLoading}>
+            Send
+          </Button>
         </div>
       </div>
     </Card>
