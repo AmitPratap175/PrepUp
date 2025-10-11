@@ -36,12 +36,12 @@ interface Word {
  * @returns {JSX.Element} The rendered words page.
  */
 export default function WordsPage() {
-  const { isAuthenticated } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
   const { data: words, isLoading } = useQuery<Word[]>({
-    queryKey: ["words"],
+    queryKey: ["words", user?.id],
     queryFn: async () => {
       const token = localStorage.getItem("token");
       if (!token) {
@@ -57,7 +57,7 @@ export default function WordsPage() {
       }
       return response.json();
     },
-    enabled: isAuthenticated,
+    enabled: !!user,
   });
 
   const deleteWordMutation = useMutation({
