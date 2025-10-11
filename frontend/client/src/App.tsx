@@ -36,6 +36,7 @@ import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
+import { useStudyTracker } from "./hooks/useStudyTracker";
 
 /**
  * Defines the main routing configuration for the application.
@@ -93,6 +94,7 @@ function Router() {
  */
 function App() {
   const { settings } = useSettings();
+  useStudyTracker();
 
   useEffect(() => {
     if (settings) {

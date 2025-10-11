@@ -5,7 +5,8 @@ from langgraph.graph import END, START, StateGraph
 from .nodes import (
     conversation_node,
     create_tool_node_with_fallback,
-    route_tools
+    route_tools,
+    extract_question_context_node
 )
 from .state import AICompanionState
 from ..tools.safe_tools import safe_tools_list
@@ -17,13 +18,15 @@ def create_workflow_graph():
     # Add all nodes
     # graph_builder.add_node("memory_extraction_node", memory_extraction_node)
     # graph_builder.add_node("memory_injection_node", memory_injection_node)
+    graph_builder.add_node("extract_question_context_node", extract_question_context_node)
     graph_builder.add_node("conversation_node", conversation_node)
     graph_builder.add_node("safe_tools", create_tool_node_with_fallback(safe_tools_list))
 
     # Define the flow
     # First extract memories from user message
     # graph_builder.add_edge(START, "memory_extraction_node")
-    graph_builder.add_edge(START, "conversation_node")
+    graph_builder.add_edge(START, "extract_question_context_node")
+    graph_builder.add_edge("extract_question_context_node", "conversation_node")
 
 
     # Then determine response type

@@ -1,38 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Course, TestSession, UserProgress } from "@shared/schema";
-import { useQuery } from "@tanstack/react-query";
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { useAuth } from "@/contexts/auth-context";
 
-async function fetchDashboardData(url: string) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch ${url}`);
-    }
-    return response.json();
+interface AnalyticsChartsProps {
+  testSessions: TestSession[] | undefined;
+  userProgress: UserProgress[] | undefined;
+  courses: Course[] | undefined;
+  weekSummary: { date: string; hours: number }[] | undefined;
 }
 
-export function AnalyticsCharts() {
-    const { user } = useAuth();
-
-    const { data: courses } = useQuery<Course[]>({
-        queryKey: ["/api/courses", { examType: user?.exam_type }],
-        queryFn: () => fetchDashboardData(`/api/courses?examType=${user?.exam_type}`),
-        enabled: !!user,
-    });
-
-    const { data: testSessions } = useQuery<TestSession[]>({
-        queryKey: ["/api/users", user?.id, "test-sessions"],
-        queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions`),
-        enabled: !!user,
-    });
-
-    const { data: userProgress } = useQuery<UserProgress[]>({
-        queryKey: ["/api/users", user?.id, "progress"],
-        queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
-        enabled: !!user,
-    });
-
+export function AnalyticsCharts({ testSessions, userProgress, courses, weekSummary }: AnalyticsChartsProps) {
     const scoreData = testSessions
         ?.filter(session => session.isCompleted && session.score && session.maxScore)
         .map(session => ({
@@ -45,8 +22,30 @@ export function AnalyticsCharts() {
         progress: progress.progress,
     }));
 
+    const formattedWeekSummary = weekSummary?.map(day => ({
+        ...day,
+        date: new Date(day.date).toLocaleDateString(undefined, { weekday: 'short' }),
+    }));
+
     return (
         <div className="grid gap-6 lg:grid-cols-2 mt-6">
+            <Card>
+                <CardHeader>
+                    <CardTitle>Study Hours (Last 7 Days)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <LineChart data={formattedWeekSummary}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="date" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="hours" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        </LineChart>
+                    </ResponsiveContainer>
+                </CardContent>
+            </Card>
             <Card>
                 <CardHeader>
                     <CardTitle>Test Performance</CardTitle>
@@ -64,7 +63,7 @@ export function AnalyticsCharts() {
                     </ResponsiveContainer>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="lg:col-span-2">
                 <CardHeader>
                     <CardTitle>Course Progress</CardTitle>
                 </CardHeader>

@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from langgraph.graph import MessagesState
 
 
@@ -17,3 +17,6 @@ class AICompanionState(MessagesState):
     memory_context: str
     phone_number: str | None = None
     user_name: str | None = None
+    passage_text: Optional[str] = None
+    question_text: Optional[str] = None
+    options_text: Optional[str] = None

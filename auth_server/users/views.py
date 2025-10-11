@@ -4,8 +4,9 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
-from .serializers import UserSerializer, BookmarkSerializer, WordSerializer
-from .models import Bookmark, Word
+from .serializers import UserSerializer, BookmarkSerializer, WordSerializer, StudyHeartbeatSerializer
+from .models import Bookmark, Word, StudyDay
+from datetime import date, timedelta
 
 User = get_user_model()
 
@@ -226,3 +227,72 @@ class WordDeleteView(generics.DestroyAPIView):
         Ensures that users can only delete their own words.
         """
         return Word.objects.filter(user=self.request.user)
+
+
+class StudyHeartbeatView(APIView):
+    """
+    Records a study heartbeat, updating the user's study duration for the day.
+    """
+    permission_classes = [IsAuthenticated]
+    serializer_class = StudyHeartbeatSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid():
+            duration = serializer.validated_data['duration']
+            today = date.today()
+            study_day, created = StudyDay.objects.get_or_create(
+                user=request.user,
+                date=today,
+                defaults={'duration_seconds': duration}
+            )
+            if not created:
+                study_day.duration_seconds += duration
+                study_day.save()
+            return Response(status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class StudySummaryView(APIView):
+    """
+    Provides a summary of the user's study hours.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        today = date.today()
+        seven_days_ago = today - timedelta(days=6)
+
+        # Get today's study hours
+        try:
+            today_study_day = StudyDay.objects.get(user=request.user, date=today)
+            today_hours = today_study_day.duration_seconds / 3600
+        except StudyDay.DoesNotExist:
+            today_hours = 0
+
+        # Get week summary
+        week_summary_qs = StudyDay.objects.filter(
+            user=request.user,
+            date__gte=seven_days_ago,
+            date__lte=today
+        ).order_by('date')
+
+        # Create a dictionary with all dates in the last 7 days initialized to 0 hours
+        summary_dict = {
+            (today - timedelta(days=i)): 0
+            for i in range(7)
+        }
+        for study_day in week_summary_qs:
+            summary_dict[study_day.date] = study_day.duration_seconds / 3600
+
+        # Convert to list of objects
+        week_summary = [
+            {'date': dt.isoformat(), 'hours': hours}
+            for dt, hours in summary_dict.items()
+        ]
+        week_summary.sort(key=lambda x: x['date'])
+
+
+        return Response({
+            'today_hours': round(today_hours, 2),
+            'week_summary': week_summary
+        })

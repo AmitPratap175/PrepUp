@@ -38,6 +38,12 @@ export default function Dashboard() {
     enabled: !!user,
   });
 
+  const { data: studySummary } = useQuery<{ today_hours: number; week_summary: { date: string; hours: number }[] }>({
+    queryKey: ["/api/users/study-summary", user?.id],
+    queryFn: () => fetchDashboardData(`/api/users/study-summary/`),
+    enabled: !!user,
+  });
+
   // Calculate stats
   const totalTestsTaken = testSessions?.length || 0;
   const completedTests = testSessions?.filter(session => session.isCompleted).length || 0;
@@ -173,13 +179,18 @@ export default function Dashboard() {
                     <Card className="text-center p-4 hover-elevate">
                       <CardContent className="p-0">
                         <div className="text-2xl font-bold text-primary" data-testid="study-hours">
-                          42
+                          {studySummary?.today_hours || 0}
                         </div>
                         <div className="text-xs text-muted-foreground">Study Hours</div>
                       </CardContent>
                     </Card>
                   </div>
-                  <AnalyticsCharts />
+                  <AnalyticsCharts
+                    weekSummary={studySummary?.week_summary}
+                    testSessions={testSessions}
+                    userProgress={userProgress}
+                    courses={courses}
+                  />
                 </div>
 
                 {/* Quick Actions */}

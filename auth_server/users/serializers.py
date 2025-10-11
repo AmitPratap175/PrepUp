@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from .models import Bookmark, Word
+from .models import Bookmark, Word, StudyDay
 
 User = get_user_model()
 
@@ -65,3 +65,19 @@ class WordSerializer(serializers.ModelSerializer):
     class Meta:
         model = Word
         fields = ['id', 'user', 'word', 'meaning', 'context', 'question_id']
+
+class StudyHeartbeatSerializer(serializers.Serializer):
+    """
+    Serializer for the study heartbeat request.
+
+    Validates the duration sent by the frontend.
+    """
+    duration = serializers.IntegerField(min_value=1, max_value=60)
+
+class StudyDaySerializer(serializers.ModelSerializer):
+    """
+    Serializer for the StudyDay model.
+    """
+    class Meta:
+        model = StudyDay
+        fields = ['date', 'duration_seconds']

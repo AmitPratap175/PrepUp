@@ -110,3 +110,34 @@ class Word(models.Model):
             str: A string identifying the user and the saved word.
         """
         return f'{self.user.email} - {self.word}'
+
+
+class StudyDay(models.Model):
+    """
+    Represents a user's total study duration for a single day.
+
+    This model tracks the amount of time a user spends actively on the platform
+    on a given day. The duration is stored in seconds.
+
+    Attributes:
+        id (UUIDField): The primary key for the study day entry.
+        user (ForeignKey): A reference to the User.
+        date (DateField): The specific date for which the duration is recorded.
+        duration_seconds (PositiveIntegerField): The total study time in seconds.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='study_days')
+    date = models.DateField(db_index=True)
+    duration_seconds = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'date')
+
+    def __str__(self):
+        """
+        Returns a string representation of the study day record.
+
+        Returns:
+            str: A string identifying the user, date, and duration.
+        """
+        return f'{self.user.email} - {self.date} - {self.duration_seconds}s'

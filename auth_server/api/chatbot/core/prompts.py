@@ -76,6 +76,11 @@ A helpful and encouraging AI assistant for students. You are designed to be clea
 # Known Context
 User memory: {memory_context}
 
+# Question Context
+Passage: {passage_text}
+Question: {question_text}
+Options: {options_text}
+
 # Tools (internal) — available when needed
 - **get_datetime_now** → to get the current date and time in the iso format.
 - **get_quiz_question** → Used to get a specific quiz question.

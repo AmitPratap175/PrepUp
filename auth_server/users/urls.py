@@ -9,7 +9,8 @@ from django.urls import path
 from .views import (
     SignupView, LoginView, LogoutView, UserDetailsView,
     BookmarkListView, BookmarkCreateView, BookmarkDeleteView,
-    WordListView, WordCreateView, WordDeleteView
+    WordListView, WordCreateView, WordDeleteView,
+    StudyHeartbeatView, StudySummaryView
 )
 
 urlpatterns = [
@@ -23,4 +24,6 @@ urlpatterns = [
     path('words/', WordListView.as_view(), name='word-list'),
     path('words/create/', WordCreateView.as_view(), name='word-create'),
     path('words/<uuid:pk>/delete/', WordDeleteView.as_view(), name='word-delete'),
+    path('study-heartbeat/', StudyHeartbeatView.as_view(), name='study-heartbeat'),
+    path('study-summary/', StudySummaryView.as_view(), name='study-summary'),
 ]

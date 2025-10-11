@@ -91,7 +91,7 @@ class MemStorage:
                 "rating": 5,
                 "reviewCount": 324,
                 "isPremium": True,
-                "downloadUrl": "#",
+                "downloadUrl": "https://github.com/AmitPratap175/CAT-Prep/blob/main/DILR.pdf",
                 "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300"
             },
             {
@@ -119,7 +119,7 @@ class MemStorage:
                 "rating": 5,
                 "reviewCount": 512,
                 "isPremium": True,
-                "downloadUrl": "#",
+                "downloadUrl": "https://github.com/AmitPratap175/CAT-Prep/blob/main/Quants.pdf",
                 "imageUrl": "https://images.unsplash.com/photo-1635372722656-389f87a941b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300"
             }
         ]
