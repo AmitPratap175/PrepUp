@@ -1,3 +1,5 @@
+import { Chatbot } from "./chatbot";
+import { MessageSquare } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from 'react-markdown';
 import Latex from "react-latex-next";
@@ -36,6 +38,7 @@ interface QuizInterfaceProps {
 export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
@@ -469,11 +472,21 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               <Button variant="ghost" size="icon" onClick={() => handleBookmarkToggle(currentQuestion.qid)}>
                 <Bookmark className={`h-5 w-5 ${bookmarkedQuestions.has(currentQuestion.qid) ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'}`} />
               </Button>
+              <Button variant="ghost" size="icon" onClick={() => setIsChatbotOpen(true)}>
+                <MessageSquare className="h-5 w-5 text-muted-foreground" />
+              </Button>
             </div>
             <span className="text-sm text-muted-foreground">
               {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
             </span>
           </div>
+
+          {isChatbotOpen && (
+            <Chatbot
+              onClose={() => setIsChatbotOpen(false)}
+              initialMessage={`Explain the following question and its options, and help me understand the answer.\n\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`}
+            />
+          )}
 
           <div className="flex-1 flex overflow-hidden">
             {(hasPassage || currentQuestion.image_url) && (

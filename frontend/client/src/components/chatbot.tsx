@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface ChatbotProps {
   onClose: () => void;
+  initialMessage?: string;
 }
 
 interface Message {
@@ -12,7 +14,7 @@ interface Message {
   sender: 'user' | 'bot';
 }
 
-export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
+export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -20,6 +22,12 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (initialMessage) {
+      handleSendMessage(initialMessage);
+    }
+  }, [initialMessage]);
 
   useEffect(scrollToBottom, [messages]);
 
@@ -62,7 +70,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
   };
 
   return (
-    <Card className="fixed bottom-4 right-4 w-96 h-[28rem] flex flex-col shadow-lg rounded-lg">
+    <Card className="absolute bottom-24 right-8 w-[calc(100%-4rem)] md:w-3/5 lg:w-2/5 max-w-lg h-4/5 max-h-[600px] z-20 flex flex-col shadow-lg rounded-lg">
       <CardHeader className="flex flex-row items-center justify-between p-4 border-b">
         <CardTitle className="text-lg font-semibold">Live Chat</CardTitle>
         <Button variant="ghost" size="icon" onClick={onClose}>
@@ -77,11 +85,11 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose }) => {
               className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`p-2 rounded-lg max-w-xs ${
+                className={`p-2 rounded-lg max-w-xs prose ${
                   message.sender === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted'
                 }`}
               >
-                {message.text}
+                <ReactMarkdown>{message.text}</ReactMarkdown>
               </div>
             </div>
           ))}
