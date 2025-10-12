@@ -109,7 +109,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
               className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`p-2 rounded-lg w-[85%] prose ${
+                className={`p-2 rounded-lg w-fit max-w-[85%] prose ${
                   message.sender === 'user'
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-muted text-foreground dark:prose-invert'
@@ -123,7 +123,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
           ))}
           {isLoading && (
             <div className="flex justify-start">
-              <div className="p-2 rounded-lg w-[85%] prose bg-muted">
+              <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-muted">
                 <div className="flex items-center justify-center space-x-1">
                   <span className="h-2 w-2 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
                   <span className="h-2 w-2 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
