@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { BarVisualizer } from "@/components/ui/bar-visualizer";
 import 'katex/dist/katex.min.css';
 
 interface ChatbotProps {
@@ -23,6 +24,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const [messages, setMessages] = useState<Message[]>(history);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isVoiceActive, setIsVoiceActive] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -44,7 +46,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
     }, 100); // A small delay is often enough.
 
     return () => clearTimeout(timer);
-  }, [messages]);
+  }, [messages, isVoiceActive]);
 
   useEffect(() => {
     setMessages(history);
@@ -133,8 +135,13 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
             </div>
           )}
         </div>
+        {isVoiceActive && (
+          <div className="h-5 mt-4">
+            <BarVisualizer demo={true} state="speaking" barCount={15} />
+          </div>
+        )}
       </CardContent>
-      <div className="p-4 border-t">
+      <div className="p-4 border-t relative">
         <div className="flex items-center space-x-2">
           <Input
             type="text"
@@ -143,10 +150,13 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputValue)}
             className="flex-grow"
-            disabled={isLoading}
+            disabled={isLoading || isVoiceActive}
           />
-          <Button onClick={() => handleSendMessage(inputValue)} disabled={isLoading}>
+          <Button onClick={() => handleSendMessage(inputValue)} disabled={isLoading || isVoiceActive}>
             Send
+          </Button>
+          <Button variant="ghost" size="icon" onClick={() => setIsVoiceActive(!isVoiceActive)}>
+            <span className="material-symbols-outlined">{isVoiceActive ? 'mic_off' : 'mic'}</span>
           </Button>
         </div>
       </div>

@@ -336,7 +336,8 @@ def add_question_view(request):
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .chatbot_service import invoke_agent
+from .chatbot_service import invoke_agent, invoke_agent_with_audio
+from django.http import HttpResponse
 
 class ChatbotView(APIView):
     """
@@ -348,16 +349,16 @@ class ChatbotView(APIView):
         """
         Handles the incoming POST request by calling the chatbot service.
         """
-        message = request.data.get('message', '')
-
         session_id = request.session.get('chatbot_session_id')
         if not session_id:
             session_id = str(uuid.uuid4())
             request.session['chatbot_session_id'] = session_id
 
-        # print(f"\n\nMessage received: {message}\n\n")
-
-        # Call the synchronous invoke_agent function directly
-        reply = invoke_agent(session_id=session_id, message=message)
-
-        return Response({"reply": reply})
+        if request.content_type == 'audio/mpeg':
+            audio_data = request.body
+            audio_response = invoke_agent_with_audio(session_id=session_id, audio_data=audio_data)
+            return HttpResponse(audio_response, content_type='audio/mpeg')
+        else:
+            message = request.data.get('message', '')
+            reply = invoke_agent(session_id=session_id, message=message)
+            return Response({"reply": reply})

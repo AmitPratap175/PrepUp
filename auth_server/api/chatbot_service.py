@@ -3,6 +3,7 @@ from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 from .chatbot.graph import graph_builder
 from .chatbot.settings import settings
+from .chatbot.modules.speech import SpeechToText, TextToSpeech
 
 async def _invoke_agent_async(session_id: str, message: str):
     if not message:
@@ -25,3 +26,17 @@ async def _invoke_agent_async(session_id: str, message: str):
 def invoke_agent(session_id: str, message: str) -> str:
     """Invokes the LangGraph agent with the user's message and returns the response."""
     return asyncio.run(_invoke_agent_async(session_id, message))
+
+async def _invoke_agent_with_audio_async(session_id: str, audio_data: bytes):
+    speech_to_text = SpeechToText()
+    text_to_speech = TextToSpeech()
+
+    transcribed_text = await speech_to_text.transcribe(audio_data)
+    response_text = await _invoke_agent_async(session_id, transcribed_text)
+    audio_response = await text_to_speech.synthesize(response_text)
+
+    return audio_response
+
+def invoke_agent_with_audio(session_id: str, audio_data: bytes) -> bytes:
+    """Invokes the LangGraph agent with the user's audio and returns an audio response."""
+    return asyncio.run(_invoke_agent_with_audio_async(session_id, audio_data))
