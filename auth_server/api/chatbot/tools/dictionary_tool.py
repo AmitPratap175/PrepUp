@@ -16,7 +16,7 @@ async def get_word_definition(word: str, context: str) -> str:
     print(f"---Tool: get_word_definition activated for word '{word}'---")
 
     try:
-        model = ChatGoogleGenerativeAI(model="gemini-1.5-flash",api_key=settings.GOOGLE_API_KEY)
+        model = ChatGoogleGenerativeAI(model="gemini-2.5-flash",api_key=settings.GOOGLE_API_KEY)
     except Exception as e:
         return f"Error initializing Gemini: {e}"
 

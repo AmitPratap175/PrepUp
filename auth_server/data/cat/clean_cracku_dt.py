@@ -113,7 +113,7 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
         js_code=[
             "window.scrollTo(0, document.body.scrollHeight);",
         ],
-        delay_before_return_html=2.0,
+        delay_before_return_html=20.0,
     )
     
     categorized_html: Dict[str, List[str]] = {"quant": [], "verbal": [], "reasoning": []}
