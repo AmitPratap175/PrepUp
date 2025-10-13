@@ -10,7 +10,13 @@ import { useQuery } from "@tanstack/react-query";
 import type { Course, TestSession, UserProgress } from "@shared/schema";
 
 async function fetchDashboardData(url: string) {
-  const response = await fetch(url);
+  const token = localStorage.getItem('token');
+  const headers: HeadersInit = {};
+  if (token) {
+    headers['Authorization'] = `Token ${token}`;
+  }
+
+  const response = await fetch(url, { headers });
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}`);
   }
@@ -28,19 +34,19 @@ export default function Dashboard() {
 
   const { data: testSessions } = useQuery<TestSession[]>({
     queryKey: ["/api/users", user?.id, "test-sessions"],
-    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions`),
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions/`),
     enabled: !!user,
   });
 
   const { data: userProgress } = useQuery<UserProgress[]>({
     queryKey: ["/api/users", user?.id, "progress"],
-    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress/`),
     enabled: !!user,
   });
 
   const { data: studySummary } = useQuery<{ today_hours: number; week_summary: { date: string; hours: number }[] }>({
     queryKey: ["/api/users/study-summary", user?.id],
-    queryFn: () => fetchDashboardData(`/api/users/study-summary/`),
+    queryFn: () => fetchDashboardData(`/api/auth/study-summary/`),
     enabled: !!user,
   });
 

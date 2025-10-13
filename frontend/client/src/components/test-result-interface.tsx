@@ -197,10 +197,12 @@ export default function TestResultInterface({
                     const isCorrect = option.is_correct;
                     
                     let bgClass = '';
-                    if (isCorrect) {
-                        bgClass = 'bg-green-100 border-green-500';
-                    } else if (isSelected && !isCorrect) {
-                        bgClass = 'bg-red-100 border-red-500';
+                    if (userAnswer != null) { // Only apply highlighting if the user has answered
+                        if (isCorrect) {
+                            bgClass = 'bg-green-100 border-green-500';
+                        } else if (isSelected && !isCorrect) {
+                            bgClass = 'bg-red-100 border-red-500';
+                        }
                     }
 
                     return (

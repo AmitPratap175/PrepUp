@@ -22,14 +22,66 @@ import os
 import re
 import sys
 from datetime import datetime, timedelta
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional, Tuple, Any
 import shutil
 import asyncio
 import time
 from pathlib import Path
 
-# Import the main function from the sibling script to clean question IDs.
-from file_clean_qid import main as clean_qid_main
+# --- QID Cleaning Logic ---
+def get_questions_container(data: Any) -> List[Dict[str, Any]]:
+    if isinstance(data, dict) and isinstance(data.get("questions"), list):
+        return data["questions"]
+    if isinstance(data, list):
+        return data
+    raise ValueError('Input JSON must be either a dict with a "questions" list or a top-level list of questions.')
+
+def clean_qids_in_output_files(json_folder: Path, type_curr: str) -> None:
+    """
+    Finds all JSON files in the output directory, reads each one, replaces the 'qid'
+    values, and then overwrites the original file with the updated data.
+    """
+    if not json_folder.is_dir():
+        print(f"Info: Output directory not found at {json_folder}. Nothing to clean.")
+        return
+        
+    json_files = list(json_folder.glob("*.json"))
+    print(f"--- Found {len(json_files)} JSON files to clean in {json_folder} ---")
+
+    for file_path in json_files:
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Error reading {file_path}: {e}", file=sys.stderr)
+            continue
+
+        if type_curr == "quants":
+            name = 'quant'
+        elif type_curr == "dilr":
+            name = 'dilr'
+        else: # varc
+            name = 'varc'
+
+        try:
+            questions = get_questions_container(data)
+        except ValueError as e:
+            print(f"Error processing {file_path}: {e}", file=sys.stderr)
+            continue
+
+        counter = 0
+        for item in questions:
+            if isinstance(item, dict):
+                counter += 1
+                item["qid"] = f"{name}-{file_path.stem}-{counter}"
+
+        try:
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except IOError as e:
+            print(f"Error writing to {file_path}: {e}", file=sys.stderr)
+
+        print(f"Processed {counter} qids in {file_path.name}")
 
 # Import third-party libraries for web crawling and HTML parsing.
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
@@ -329,9 +381,10 @@ def main(categorized_html: Dict[str, List[str]], type_curr: str):
             json.dump(output_obj_sectional, f, ensure_ascii=False, indent=2)
         print(f"Wrote intermediate {len(all_questions)} question(s) to: {intermediate_path}")
     
-    print("---" + " Running qid cleaning script ---")
-    clean_qid_main()
-    print("---" + " Finished qid cleaning script ---")
+    print("--- Running qid cleaning script ---")
+    # clean_qids_in_output_files(intermediate_dir, type_curr)
+    clean_qids_in_output_files(sectionals_dir, type_curr)
+    print("--- Finished qid cleaning script ---")
     
     
     for filename in os.listdir(intermediate_dir):
@@ -372,3 +425,11 @@ if __name__ == "__main__":
             
             # Step 3: Pass the crawled data to the main processing function.
             main(categorized_html, type_curr)
+
+    # script_dir = Path(__file__).parent
+    # project_root = script_dir.parent.parent.parent
+    
+    # intermediate_dir = script_dir.parent / "temp_json"
+    # final_destination_dir = project_root / "auth_server/data/cat/docs"
+    # sectionals_dir = project_root / f"auth_server/data/cat/sectionals/quants"
+    # clean_qids_in_output_files(sectionals_dir, "quants")

@@ -11,7 +11,7 @@ export function useStudyTracker() {
     if (!token) return;
 
     try {
-      await fetch('/api/users/study-heartbeat/', {
+      await fetch('/api/auth/study-heartbeat/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
