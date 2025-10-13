@@ -38,6 +38,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
     markedForReview: new Set(),
     timeRemaining: test.duration * 60, // Convert minutes to seconds
     isCompleted: false,
+    startTime: undefined,
   });
 
   const questions = test.questions as (Question & { image_url?: string })[];
@@ -45,6 +46,10 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
   // Timer effect
+  useEffect(() => {
+    setTestState(prev => ({ ...prev, startTime: Date.now() }));
+  }, []);
+
   useEffect(() => {
     if (testState.timeRemaining <= 0 || testState.isCompleted) {
       return;
@@ -136,10 +141,11 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       answers: testState.answers,
       questions: questions,
       timeTaken: test.duration * 60 - testState.timeRemaining,
+      startTime: testState.startTime,
     };
 
     localStorage.setItem(`practiceTestResult-${test.id}`, JSON.stringify(resultData));
-    navigate(`/practice-test/result/${test.id}`);
+    navigate(`/practice-test/result/${test.id}`, { state: { ...resultData } });
   };
 
   if (testState.isCompleted) {

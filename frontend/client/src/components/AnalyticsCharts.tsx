@@ -7,9 +7,11 @@ interface AnalyticsChartsProps {
   userProgress: UserProgress[] | undefined;
   courses: Course[] | undefined;
   weekSummary: { date: string; hours: number }[] | undefined;
+  totalMockTests: number;
+  mockTestsTaken: number;
 }
 
-export function AnalyticsCharts({ testSessions, userProgress, courses, weekSummary }: AnalyticsChartsProps) {
+export function AnalyticsCharts({ testSessions, userProgress, courses, weekSummary, totalMockTests, mockTestsTaken }: AnalyticsChartsProps) {
     const scoreData = testSessions
         ?.filter(session => session.isCompleted && session.score && session.maxScore)
         .map(session => ({
@@ -26,6 +28,14 @@ export function AnalyticsCharts({ testSessions, userProgress, courses, weekSumma
         ...day,
         date: new Date(day.date).toLocaleDateString(undefined, { weekday: 'short' }),
     }));
+
+    const mockTestData = [
+        {
+            name: 'Mock Tests',
+            taken: mockTestsTaken,
+            available: totalMockTests,
+        },
+    ];
 
     return (
         <div className="grid gap-6 lg:grid-cols-2 mt-6">
@@ -60,6 +70,24 @@ export function AnalyticsCharts({ testSessions, userProgress, courses, weekSumma
                             <Legend />
                             <Line type="monotone" dataKey="score" stroke="#8884d8" activeDot={{ r: 8 }} />
                         </LineChart>
+                    </ResponsiveContainer>
+                </CardContent>
+            </Card>
+            <Card>
+                <CardHeader>
+                    <CardTitle>Mock Test Progress</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <BarChart data={mockTestData}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="taken" fill="#8884d8" name="Taken" />
+                            <Bar dataKey="available" fill="#82ca9d" name="Available" />
+                        </BarChart>
                     </ResponsiveContainer>
                 </CardContent>
             </Card>

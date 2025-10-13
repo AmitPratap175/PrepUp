@@ -2,6 +2,8 @@ import json
 import os
 from typing import Dict, List, Optional
 import uuid
+from .models import TestSession
+from users.models import User
 
 # Define data models as dictionaries or dataclasses
 # These would be the Python equivalents of the TypeScript types
@@ -23,7 +25,6 @@ class MemStorage:
         practice_tests (Dict[str, Dict]): A dictionary for practice tests.
         mock_tests (Dict[str, Dict]): A dictionary for mock tests.
         sectional_tests (Dict[str, Dict]): A dictionary for sectional tests.
-        test_sessions (Dict[str, Dict]): A dictionary for test sessions.
         user_progress (Dict[str, Dict]): A dictionary for user progress.
     """
     def __init__(self):
@@ -35,7 +36,6 @@ class MemStorage:
         self.practice_tests: Dict[str, Dict] = {}
         self.mock_tests: Dict[str, Dict] = {}
         self.sectional_tests: Dict[str, Dict] = {}
-        self.test_sessions: Dict[str, Dict] = {}
         self.user_progress: Dict[str, Dict] = {}
 
         self.seed_data()
@@ -434,7 +434,7 @@ class MemStorage:
 
     def create_test_session(self, session_data: Dict) -> Dict:
         """
-        Creates a new test session and stores it.
+        Creates a new test session and stores it in the database.
 
         Args:
             session_data: A dictionary containing initial data for the session,
@@ -443,22 +443,46 @@ class MemStorage:
         Returns:
             The newly created test session dictionary.
         """
-        session_id = str(uuid.uuid4())
-        session = {
-            "id": session_id,
-            "startTime": "2025-09-20T15:12:09.760981Z", # placeholder
-            "endTime": None,
-            "score": None,
-            "correctAnswers": 0,
-            "isCompleted": False,
-            **session_data
+        user_id = session_data.pop('userId', None)
+        if not user_id:
+            raise ValueError("userId is required to create a test session")
+
+        try:
+            user = User.objects.get(id=user_id)
+        except User.DoesNotExist:
+            raise ValueError(f"User with id {user_id} not found")
+
+        session = TestSession.objects.create(
+            user=user,
+            test_id=session_data.get('testId'),
+            start_time=session_data.get('startTime'),
+            end_time=session_data.get('endTime'),
+            score=session_data.get('score'),
+            total_questions=session_data.get('totalQuestions'),
+            correct_answers=session_data.get('correctAnswers'),
+            answers=session_data.get('answers'),
+            is_completed=session_data.get('isCompleted'),
+            subject=session_data.get('subject'),
+            max_score=session_data.get('maxScore'),
+        )
+        return {
+            "id": str(session.id),
+            "userId": session.user.id,
+            "testId": session.test_id,
+            "startTime": session.start_time.isoformat(),
+            "endTime": session.end_time.isoformat() if session.end_time else None,
+            "score": session.score,
+            "totalQuestions": session.total_questions,
+            "correctAnswers": session.correct_answers,
+            "answers": session.answers,
+            "isCompleted": session.is_completed,
+            "subject": session.subject,
+            "maxScore": session.max_score,
         }
-        self.test_sessions[session_id] = session
-        return session
 
     def update_test_session(self, session_id: str, updates: Dict) -> Optional[Dict]:
         """
-        Updates an existing test session with new data.
+        Updates an existing test session in the database.
 
         Args:
             session_id: The ID of the session to update.
@@ -467,14 +491,31 @@ class MemStorage:
         Returns:
             The updated session dictionary, or None if the session was not found.
         """
-        if session_id in self.test_sessions:
-            self.test_sessions[session_id].update(updates)
-            return self.test_sessions[session_id]
-        return None
+        try:
+            session = TestSession.objects.get(id=session_id)
+            for key, value in updates.items():
+                setattr(session, key, value)
+            session.save()
+            return {
+                "id": str(session.id),
+                "userId": session.user.id,
+                "testId": session.test_id,
+                "startTime": session.start_time.isoformat(),
+                "endTime": session.end_time.isoformat() if session.end_time else None,
+                "score": session.score,
+                "totalQuestions": session.total_questions,
+                "correctAnswers": session.correct_answers,
+                "answers": session.answers,
+                "isCompleted": session.is_completed,
+                "subject": session.subject,
+                "maxScore": session.max_score,
+            }
+        except TestSession.DoesNotExist:
+            return None
 
     def get_test_session(self, session_id: str) -> Optional[Dict]:
         """
-        Retrieves a single test session by its ID.
+        Retrieves a single test session by its ID from the database.
 
         Args:
             session_id: The ID of the test session.
@@ -482,11 +523,28 @@ class MemStorage:
         Returns:
             A test session dictionary if found, otherwise None.
         """
-        return self.test_sessions.get(session_id)
+        try:
+            session = TestSession.objects.get(id=session_id)
+            return {
+                "id": str(session.id),
+                "userId": session.user.id,
+                "testId": session.test_id,
+                "startTime": session.start_time.isoformat(),
+                "endTime": session.end_time.isoformat() if session.end_time else None,
+                "score": session.score,
+                "totalQuestions": session.total_questions,
+                "correctAnswers": session.correct_answers,
+                "answers": session.answers,
+                "isCompleted": session.is_completed,
+                "subject": session.subject,
+                "maxScore": session.max_score,
+            }
+        except TestSession.DoesNotExist:
+            return None
 
     def get_test_sessions_by_user(self, user_id: str) -> List[Dict]:
         """
-        Retrieves all test sessions for a specific user.
+        Retrieves all test sessions for a specific user from the database.
 
         Args:
             user_id: The ID of the user.
@@ -494,7 +552,24 @@ class MemStorage:
         Returns:
             A list of test session dictionaries for the user.
         """
-        return [s for s in self.test_sessions.values() if s["userId"] == user_id]
+        sessions = TestSession.objects.filter(user__id=user_id)
+        return [
+            {
+                "id": str(session.id),
+                "userId": session.user.id,
+                "testId": session.test_id,
+                "startTime": session.start_time.isoformat(),
+                "endTime": session.end_time.isoformat() if session.end_time else None,
+                "score": session.score,
+                "totalQuestions": session.total_questions,
+                "correctAnswers": session.correct_answers,
+                "answers": session.answers,
+                "isCompleted": session.is_completed,
+                "subject": session.subject,
+                "maxScore": session.max_score,
+            }
+            for session in sessions
+        ]
 
     def get_user_progress(self, user_id: str) -> List[Dict]:
         """

@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/contexts/auth-context";
 import { AnalyticsCharts } from "@/components/AnalyticsCharts";
 import { useQuery } from "@tanstack/react-query";
-import type { Course, TestSession, UserProgress } from "@shared/schema";
+import type { Course, TestSession, UserProgress, PracticeTest } from "@shared/schema";
 
 async function fetchDashboardData(url: string) {
   const token = localStorage.getItem('token');
@@ -50,12 +50,21 @@ export default function Dashboard() {
     enabled: !!user,
   });
 
+  const { data: mockTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/mock-tests"],
+    queryFn: () => fetchDashboardData(`/api/mock-tests/`),
+  });
+
   // Calculate stats
   const totalTestsTaken = testSessions?.length || 0;
   const completedTests = testSessions?.filter(session => session.isCompleted).length || 0;
   const averageScore = completedTests > 0 
     ? Math.round((testSessions?.filter(s => s.isCompleted && s.score).reduce((sum, s) => sum + (s.score || 0), 0) || 0) / completedTests)
     : 0;
+
+  const totalMockTests = mockTests?.length || 0;
+  const mockTestsTaken = testSessions?.filter(s => s.testId.startsWith('mock-test')).length || 0;
+  const mockTestsPercentage = totalMockTests > 0 ? (mockTestsTaken / totalMockTests) * 100 : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -196,6 +205,8 @@ export default function Dashboard() {
                     testSessions={testSessions}
                     userProgress={userProgress}
                     courses={courses}
+                    totalMockTests={totalMockTests}
+                    mockTestsTaken={mockTestsTaken}
                   />
                 </div>
 

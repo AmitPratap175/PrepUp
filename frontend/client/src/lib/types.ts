@@ -26,6 +26,7 @@ export interface TestState {
   markedForReview: Set<string>;
   timeRemaining: number;
   isCompleted: boolean;
+  startTime?: number;
 }
 
 /**

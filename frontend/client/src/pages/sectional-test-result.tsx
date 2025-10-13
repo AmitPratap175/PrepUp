@@ -1,18 +1,23 @@
 import { useState, useEffect } from "react";
-import { useParams } from "wouter";
-import { useQuery } from "@tanstack/react-query";
+import { useParams, useLocation } from "wouter";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import TestResultInterface from "@/components/test-result-interface";
 import type { PracticeTest, Question } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
 
 interface ResultData {
   answers: Record<string, string>;
   questions: Question[];
   timeTaken: number;
+  startTime?: number;
 }
 
 export default function SectionalTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
+  const { user } = useAuth();
+  const [location] = useLocation();
+  const queryClient = useQueryClient();
 
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
     queryKey: [`/api/sectional-tests/${testId}`],
@@ -25,6 +30,67 @@ export default function SectionalTestResultPage() {
       setResultData(JSON.parse(storedResults));
     }
   }, [testId]);
+
+  useEffect(() => {
+    if (resultData && test && user) {
+      const { answers, timeTaken, startTime } = resultData;
+      const questions = test.questions;
+
+      let attemptedQuestions = 0;
+      let correctAnswers = 0;
+
+      questions.forEach(q => {
+          const userAnswer = answers[q.qid];
+          if (userAnswer != null) { // Answered
+              attemptedQuestions++;
+              let isCorrect = false;
+              if (q.options.length > 0) {
+                  const correctOption = q.options.find(o => o.is_correct);
+                  if (correctOption && correctOption.data_option === userAnswer) {
+                      isCorrect = true;
+                  }
+              } else {
+                  if (userAnswer === q.correct_option_data) {
+                      isCorrect = true;
+                  }
+              }
+              if (isCorrect) {
+                  correctAnswers++;
+              }
+          }
+      });
+
+      const totalQuestions = questions.length;
+      const incorrectAnswers = attemptedQuestions - correctAnswers;
+      const score = correctAnswers * 3 - incorrectAnswers;
+      const maxScore = totalQuestions * 3;
+
+      const sessionData = {
+        userId: user.id,
+        testId: testId,
+        startTime: startTime ? new Date(startTime).toISOString() : new Date().toISOString(),
+        endTime: new Date().toISOString(),
+        score: score,
+        totalQuestions: totalQuestions,
+        correctAnswers: correctAnswers,
+        answers: answers,
+        isCompleted: true,
+        subject: test.subject,
+        maxScore: maxScore,
+      };
+
+      fetch('/api/test-sessions/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${localStorage.getItem('token')}`,
+        },
+        body: JSON.stringify(sessionData),
+      }).then(() => {
+        queryClient.invalidateQueries({ queryKey: ['/api/users', user.id, 'test-sessions'] });
+      });
+    }
+  }, [resultData, test, user, testId, queryClient]);
 
   if (isTestLoading || !resultData || !test) {
     return (

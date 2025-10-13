@@ -56,6 +56,7 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
     markedForReview: new Set(),
     timeRemaining: test?.duration ? test.duration * 60 : 0,
     isCompleted: false,
+    startTime: undefined,
   });
 
   const questions = test?.questions || [];
@@ -67,6 +68,7 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
       setTestState(prev => ({
         ...prev,
         timeRemaining: test.duration * 60,
+        startTime: Date.now(),
       }));
     }
   }, [test]);
@@ -94,10 +96,11 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
       answers: testState.answers,
       questions: questions,
       timeTaken: (test?.duration || 0) * 60 - testState.timeRemaining,
+      startTime: testState.startTime,
     };
 
     localStorage.setItem(`sectionalTestResult-${testId}`, JSON.stringify(resultData));
-    navigate(`/sectional-test/result/${testId}`);
+    navigate(`/sectional-test/result/${testId}`, { state: { ...resultData } });
   };
 
   const formatTime = (seconds: number) => {
