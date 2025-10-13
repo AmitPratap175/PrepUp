@@ -31265,7 +31265,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "4",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -31280,8 +31280,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "B",
+      "solution_text": "Let x(1) be the least number and x(10) be the largest number. Now from the condition given in the question , we can say that\n\nx(2)+x(3)+x(4)+........x(10)= 47*9=423...................(1)\n\nSimilarly x(1)+x(2)+x(3)+x(4)................+x(9)= 42*9=378...............(2)\n\nSubtracting both the equations we get x(10)-x(1)=45\n\nNow, the sum of the 10 observations from equation (1) is 423+x(1)\n\nNow the minimum value of x(10) will be 47 and the minimum value of x(1) will be 2 . Hence minimum average 425/10=42.5\n\nMaximum value of x(1) is 42. Hence maximum average will be 465/10=46.5\n\nHence difference in average will be 46.5-42.5=4 which is the correct answer",
       "image_url": "",
       "full_markdown": "### Question (qid: 348528)\n\n**Passage:**\nIn a group of 10 students, the mean of the lowest 9 scores is 42 while the mean of the highest 9 scores is 47. For the entire group of 10 students, the maximum possible mean exceeds the minimum possible mean by\n\n5\n\n4\n\n3\n\n6\n\nIn a group of 10 students, the mean of the lowest 9 scores is 42 while the mean of the highest 9 scores is 47. For the entire group of 10 students, the maximum possible mean exceeds the minimum possible mean by\n\n**Options:**\n- **A**. 5\n- **B**. 4\n- **C**. 3\n- **D**. 6\n\n**Correct Answer:** null"
     },
@@ -31294,7 +31294,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "Every member of A is in B and at least one member of B is not in A",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -31315,8 +31315,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "A",
+      "solution_text": "Set A contains the elements which are the sum of cubes of three consecutive numbers. So, $(n - 1)^3 + n^3 + (n + 1)^3$ can be written as\n\n= $(n^3  - 3n^2 + 3n - 1) + n^3 + (n^3 + 3n^2 + 3n + 1)$\n\n= $3n^3 + 6n$\n\n= $3n(n^2 + 2)$\n\nSince there are three consecutive numbers, one of the numbers must be divisible by 3.\n\nIf $ (n - 1)$ is divisible by 3\n\n$n - 1 = 3k$\n\nor, $n = 3k + 1$\n\nTherefore, the expression becomes\n\n$ 3(3k + 1)(9k^2 + 6k + 1 + 2)$\n\n= $ 9(3k + 1)(3k^2 + 2k + 1)$ which is divisible by 9\n\nIf $ n $ is divisible by 3\n\n$n = 3k$\n\nThus, the expression becomes\n\n$9k(9k^2 + 2)$ which is divisible by 9\n\nIf  $ (n + 1)$ is divisible by 3\n\n$n + 1 = 3k$\n\nor, $n = 3k - 1$\n\nTherefore, the expression becomes\n\n$3(3k - 1)(9k^2 - 6k + 1 + 2)$\n\n= $ 9 (3k - 1) (3k^2 - 2k + 1)$ which is divisible by 9\n\nSo, in each case the expression is divisible by 9\n\nSo, we observe that the elements of set A are the multiples of 9. However, not all multiples of 9 are present in A for different values of $n$.\n\nIf we observe set B, it contains all the multiples of 9 for different values of $n$.\n\nTherefore, we can conclude that every member of A is in B while at least one member of B is not in A.\n\nHence, option A is the correct answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 227891)\n\n**Passage:**\nIf A = { ( n − 1 ) 3 + n 3 + ( n + 1 ) 3 (n - 1)^3 + n^3 + (n + 1)^3 ( n − 1 ) 3 + n 3 + ( n + 1 ) 3 } where n n n = 2,3,4,... and B = { 9 n 9n 9 n }, where n n n = 1,2,3,... then which of the following is true?\n\nEvery member of A is in B and at least one member of B is not in A\n\nNeither every member of A is in B nor every member of B is in A\n\nEvery member of B is in A.\n\nAt least one member of A is not in B.\n\nIf A = {$(n - 1)^3 + n^3 + (n + 1)^3$} where $n$ = 2,3,4,... and B = {$9n$}, where $n$ = 1,2,3,... then which of the following is true?\n\n**Options:**\n- **A**. Every member of A is in B and at least one member of B is not in A\n- **B**. Neither every member of A is in B nor every member of B is in A\n- **C**. Every member of B is in A.\n- **D**. At least one member of A is not in B.\n\n**Correct Answer:** null"
     },
@@ -31347,11 +31347,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "7",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "$x^{2}-2\\mid x\\mid+\\mid a-2\\mid=0$\n\nwhere x>= 0 and x>=2\n\n$x^2-2x+a-2\\ =0$ Using quadratic equation we have $x=\\ 1+\\sqrt{\\ 3-a}\\ and\\ x=1-\\sqrt{\\ 3-a}$ Only two integer values are possible\n\na=2 and a=3. So corresponding \"x\" values are x=1 and a=3, x=2 and a=2, x=0 and a=2\n\nwhere x>=0 and x<2\n\nApplying the above process we get x=1 and a=1\n\nwhere x<0 and x>=2 we get a=3 and x=-1 , a=2 and x=-2\n\nwhere x<0 and x<2 we get a=1 and x=-1\n\nHence there are total 7 values possible",
       "image_url": "",
       "full_markdown": "### Question (qid: 348541)\n\n**Passage:**\nIn how many ways can a pair of integers (x , a) be chosen such that x 2 − 2 ∣ x ∣ + ∣ a − 2 ∣ = 0 x^{2}-2\\mid x\\mid+\\mid a-2\\mid=0 x 2 − 2 ∣ x ∣ + ∣ a − 2 ∣ = 0 ?\n\n6\n\n5\n\n4\n\n7\n\nIn how many ways can a pair of integers (x , a) be chosen such that $x^{2}-2\\mid x\\mid+\\mid a-2\\mid=0$ ?\n\n**Options:**\n- **A**. 6\n- **B**. 5\n- **C**. 4\n- **D**. 7\n\n**Correct Answer:** null"
     },
@@ -31376,7 +31376,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "1000",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -31385,8 +31385,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "f(x)=$\\frac{1}{\\sqrt{1000(|x|-x)}}$\n\nfor x $\\geq$ 0 (|x|-x) is Zero\n\nSo $\\frac{1}{\\sqrt{1000(|x|-x)}}$ is not defined \n\nThe function is defined only for negative numbers.\n\nBut since we are asked to find the number of integers, the range is [-1000,-1]\n\n1000 numbers will satisfy the function f(x)\n\nC is the correct answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 233520)\n\n**Passage:**\nFor how many integers lying between -1000 and 1000 (both included) is the function f ( x ) = 1 1000 ( ∣ x ∣ − x ) f(x) = \\dfrac{1}{\\sqrt{1000(|x|-x)}} f ( x ) = 1 0 0 0 ( ∣ x ∣ − x ) ​ 1 ​ defined?\n\n500\n\n501\n\n1000\n\n1001\n\nFor how many integers lying between -1000 and 1000 (both included) is the function $f(x) = \\dfrac{1}{\\sqrt{1000(|x|-x)}}$ defined?\n\n**Options:**\n- **A**. 500\n- **B**. 501\n- **C**. 1000\n- **D**. 1001\n\n**Correct Answer:** null"
     },
@@ -31411,7 +31411,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "5",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -31420,8 +31420,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "$\\ \\frac{\\ ab+c}{b}=a+\\frac{c}{b}$\n\nTo minimise the algebraic expression, we need to minimise a and c and maximise b.\n\nBy taking the limiting values of a, c and b, we get: $2+\\frac{\\ 16}{8}=4$\n\nBut when we see the inequality sign, we find that the expression cannot be equal to 4, and the expression is >4,\n\nTherefore, the smallest integer possible for $\\ \\frac{\\ ab+c}{b}=a+\\frac{c}{b}$= 5.\n\nThis is possible when a = 2.5, c = 17.5 and b = 7.\n\nTherefore, the answer is option C.",
       "image_url": "",
       "full_markdown": "### Question (qid: 356649)\n\n**Passage:**\nIf a, b and c are real numbers such that 2 < a < 9, 5 < b < 8 and 16 < c < 23, find the minimum possible integral value of a b + c b \\ \\frac{\\ ab+c}{b} b a b + c ​\n\n4\n\n3\n\n5\n\n6\n\nIf a, b and c are real numbers such that 2 < a < 9, 5 < b < 8 and 16 < c < 23, find the minimum possible integral value of $\\ \\frac{\\ ab+c}{b}$\n\n**Options:**\n- **A**. 4\n- **B**. 3\n- **C**. 5\n- **D**. 6\n\n**Correct Answer:** null"
     }

@@ -11544,7 +11544,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "1000 sq km",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -11553,8 +11553,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "Let us assume that the firetruck was initially at point O and the highway A is the X axis (line C-O-B). \n\nWithin one hour, if the firetruck goes into the forest along line OA, it travels for a maximum of 10 Km.\nIf however, it continues travelling along the highway A, it covers a maximum of 50 Km. \nSimilarly, if it travels for X km along the highway and Y kms along the forest, we know that X/50 + Y/10 = 1 or X + 5Y = 50\n\nHence, the total area of triangle OAB = 1/2 * OA * OB = 1/2*10*50 = 250 sq km.\nBut, by symmetry, the total area that can be covered by the firetruck equals DCAB = 4*250 = 1000 Km",
       "image_url": "",
       "full_markdown": "### Question (qid: 324757)\n\n**Passage:**\nIn a large forest, there are two large perpendicular highways, Highway A and Highway B, which are used by a firetruck to put off forest fires. The firetruck can travel at a speed of 50 Km/hr on the highways and it can travel at a speed of 10 Km/hr in the open forest. To reach a point in the forest, the firetruck can either travel along the highways or perpendicular to the highways.\n\nSuppose the firetruck is on Highway A (and very far away from Highway B). What is the area of the region that can be reached by the firetruck within an hour?\n\n**Options:**\n- **A**. 100 sq km\n- **B**. 500 sq km\n- **C**. 1000 sq km\n- **D**. 1250 sq km\n\n**Correct Answer:** null"
     },
@@ -11585,11 +11585,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "$\\frac{5000}{3}$ sq km",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "Let the highways be the X and Y axis. So the firetruck is initially at point O.\nThe total area that can be covered by the firertruck is the area which is covered by the two lines 5|X| + |Y| = 50 and |X| + 5|Y| = 50\n\nLet us calculate the area in the first quadrant and multiply it by 4 to get the total area.\n\nFor point E, 5X+Y = 50 and 5Y+X = 50. Or, X=Y = 50/6 = 25/3\nTherefore, the coordinates of P is (0,25/3) and coordinates of Q is (25/3,0)\nArea of the square OEPQ = 25/3*25/3 = 625/9\nLength of PA = 50 - 25/3 = 125/3\n\nTherefore area of triangle PEA = 1/2*125/3*25/3 = 3125/18\nTherefore area of triangle EQB is also equal to 3125/18\nThereofore total area in the first quadrant is 3125/18 + 3125/18 + 625/9 = 3750/9 = 1250/3\n\nHence, the total area in the four quadrants equals 5000/3 sq km",
       "image_url": "",
       "full_markdown": "### Question (qid: 324758)\n\n**Passage:**\nIn a large forest, there are two large perpendicular highways, Highway A and Highway B, which are used by a firetruck to put off forest fires. The firetruck can travel at a speed of 50 Km/hr on the highways and it can travel at a speed of 10 Km/hr in the open forest. To reach a point in the forest, the firetruck can either travel along the highways or perpendicular to the highways.\n\nSuppose the firetruck is at the point of intersection of the two highways. What is the area of the region that can be reached by the firetruck within an hour?\n\n**Options:**\n- **A**. $\\frac{2500}{3}$ sq km\n- **B**. $1500$ sq km\n- **C**. $2500$ sq km\n- **D**. $\\frac{5000}{3}$ sq km\n\n**Correct Answer:** null"
     },
@@ -11602,7 +11602,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "$\\frac{25\\sqrt{2}}{3}$ km",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -11623,8 +11623,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "A",
+      "solution_text": "The points which are equidistant from both the axis and are furthest away from the starting point are the points E,F,G and H. Each of them are at a distance of $\\sqrt{(\\frac{25}{3})^2+(\\frac{25}{3})^2}=\\frac{25\\sqrt{2}}{3}$ from the starting point.",
       "image_url": "",
       "full_markdown": "### Question (qid: 324759)\n\n**Passage:**\nIn a large forest, there are two large perpendicular highways, Highway A and Highway B, which are used by a firetruck to put off forest fires. The firetruck can travel at a speed of 50 Km/hr on the highways and it can travel at a speed of 10 Km/hr in the open forest. To reach a point in the forest, the firetruck can either travel along the highways or perpendicular to the highways.\n\nIn the earlier question, a point X is equidistant from both the highways and can be reached by the firetruck within an hour. What is the maximum straight line distance of the point X from the starting point of the firetruck?\n\n**Options:**\n- **A**. $\\frac{25\\sqrt{2}}{3}$ km\n- **B**. $\\frac{25}{3}$ km\n- **C**. $\\frac{50}{3}$ km\n- **D**. $25$ km\n\n**Correct Answer:** null"
     },
@@ -11637,7 +11637,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "96.67%",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -11658,8 +11658,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "A",
+      "solution_text": "By symmetry, the probability will remain unchanged if we consider only the first quadrant. In the first quadrant, the square will be of length 10 Km with the origin as one of the four vertices. \nWe need to calculate the area of overlap of the square with the area covered by the firetruck in one hour.\n\nSo, we need to calculate the area of polygon GRESIO.\nWe have calculated that the area covered by the firetruck in the first quadrant equals 1250/3 sq Km. \nSo, area of triangle GRA + area of polygon GRESIO + area of triangle SIB = 1250/3\nThe coordinates of G is (0,10) and let the coordinates of R be (a,10). \nThe equation of the line AE is 5X+Y = 50. \nAs R lies on AE, 5a+10 = 50 or a=8.\nHence, the area of triangle GRA = 1/2 * 8 * (50-10) = 160 sq km.\nSimilarly, area of triangle SIB = 160 sq km.\n\nTherefore area of polygon GRESIO = 1250/3 - 160 - 160 = 290/3.\n\nWe know that the area of the square GHIO = 10*10 = 100 sq km.\n\nHence, the required probability is 290/300 = 29/30 = 96.67%",
       "image_url": "",
       "full_markdown": "### Question (qid: 324760)\n\n**Passage:**\nIn a large forest, there are two large perpendicular highways, Highway A and Highway B, which are used by a firetruck to put off forest fires. The firetruck can travel at a speed of 50 Km/hr on the highways and it can travel at a speed of 10 Km/hr in the open forest. To reach a point in the forest, the firetruck can either travel along the highways or perpendicular to the highways.\n\nIn the earlier question, It is known that Raghav is within a square of side 20 Km such that the sides are parallel to the highways and the point of intersection of the diagonals is the starting point of the firetruck. What is the probability that Raghav can be reached by the firetruck in an hour?\n\n**Options:**\n- **A**. 96.67%\n- **B**. 80%\n- **C**. 100%\n- **D**. 75%\n\n**Correct Answer:** null"
     }
