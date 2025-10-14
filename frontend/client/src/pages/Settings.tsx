@@ -11,6 +11,7 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/auth-context";
 import { useLocation } from "wouter";
+import { ConfirmationDialog } from '@/components/ui/ConfirmationDialog';
 
 /**
  * A page for managing user settings.
@@ -29,6 +30,7 @@ const SettingsPage: React.FC = () => {
   const [savedMessage, setSavedMessage] = useState('');
   const { logout } = useAuth();
   const [, setLocation] = useLocation();
+  const [isResetConfirmOpen, setIsResetConfirmOpen] = useState(false);
 
   useEffect(() => {
     if (settings) {
@@ -53,6 +55,34 @@ const SettingsPage: React.FC = () => {
   const handleLogout = () => {
     logout();
     setLocation("/");
+  };
+
+  const handleResetProgress = async () => {
+    setIsResetConfirmOpen(true);
+  };
+
+  const confirmResetProgress = async () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      try {
+        const response = await fetch('/api/reset-test-progress/', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Token ${token}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          setSavedMessage("Your test progress has been successfully reset.");
+        } else {
+          setSavedMessage("Failed to reset test progress. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error resetting test progress:", error);
+        setSavedMessage("An error occurred while resetting your test progress. Please try again.");
+      }
+    }
   };
 
   const updateLocalSetting = <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => {
@@ -288,12 +318,26 @@ const SettingsPage: React.FC = () => {
                 >
                   Logout
                 </Button>
+                <Button
+                  variant="destructive"
+                  className="ml-4"
+                  onClick={handleResetProgress}
+                >
+                  Reset Test Progress
+                </Button>
               </CardContent>
             </Card>
           </div>
         </div>
       </main>
       <AppFooter />
+      <ConfirmationDialog
+        isOpen={isResetConfirmOpen}
+        onOpenChange={setIsResetConfirmOpen}
+        onConfirm={confirmResetProgress}
+        title="Are you sure you want to reset your test progress?"
+        description="This action cannot be undone."
+      />
     </div>
   );
 };

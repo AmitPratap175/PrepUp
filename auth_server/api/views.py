@@ -337,6 +337,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
+from rest_framework import status
+from .models import TestSession
 
 class ChatbotView(APIView):
     """
@@ -361,3 +363,36 @@ class ChatbotView(APIView):
         reply = invoke_agent(session_id=session_id, message=message)
 
         return Response({"reply": reply})
+
+class ResetTestProgressView(APIView):
+    """
+    Resets the test progress for the authenticated user.
+
+    This view handles a POST request to delete all `TestSession` objects
+    associated with the currently authenticated user, effectively resetting
+    their test history and progress.
+
+    **Permissions:**
+    - Requires user to be authenticated.
+
+    **Methods:**
+    - `post`: Deletes all `TestSession` records for the user.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Handles the POST request to reset user's test progress.
+
+        Args:
+            request (Request): The request object, containing user information.
+
+        Returns:
+            Response: A response indicating success or failure.
+        """
+        user = request.user
+        try:
+            TestSession.objects.filter(user=user).delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
