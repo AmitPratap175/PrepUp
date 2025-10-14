@@ -10,17 +10,20 @@ from .nodes import (
 )
 from .state import AICompanionState
 from ..tools.safe_tools import safe_tools_list
+from ..tools.dynamic_tools import dynamic_tools_list
 
 @lru_cache(maxsize=1)
 def create_workflow_graph():
     graph_builder = StateGraph(AICompanionState)
+
+    all_tools = safe_tools_list + dynamic_tools_list
 
     # Add all nodes
     # graph_builder.add_node("memory_extraction_node", memory_extraction_node)
     # graph_builder.add_node("memory_injection_node", memory_injection_node)
     graph_builder.add_node("extract_question_context_node", extract_question_context_node)
     graph_builder.add_node("conversation_node", conversation_node)
-    graph_builder.add_node("safe_tools", create_tool_node_with_fallback(safe_tools_list))
+    graph_builder.add_node("safe_tools", create_tool_node_with_fallback(all_tools))
 
     # Define the flow
     # First extract memories from user message

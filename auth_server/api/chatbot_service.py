@@ -4,14 +4,14 @@ from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 from .chatbot.graph import graph_builder
 from .chatbot.settings import settings
 
-async def _invoke_agent_async(session_id: str, message: str):
+async def _invoke_agent_async(session_id: str, message: str, token: str = None):
     if not message:
         return "Please provide a message."
 
     async with AsyncSqliteSaver.from_conn_string(settings.SHORT_TERM_MEMORY_DB_PATH) as memory:
         app = graph_builder.compile(checkpointer=memory)
 
-        config = {"configurable": {"thread_id": session_id}}
+        config = {"configurable": {"thread_id": session_id, "token": token}}
         messages = [HumanMessage(content=message)]
         
         final_state = await app.ainvoke({"messages": messages}, config=config)
@@ -22,6 +22,6 @@ async def _invoke_agent_async(session_id: str, message: str):
             return last_message.content
         return "Sorry, I couldn't process your request."
 
-def invoke_agent(session_id: str, message: str) -> str:
+def invoke_agent(session_id: str, message: str, token: str = None) -> str:
     """Invokes the LangGraph agent with the user's message and returns the response."""
-    return asyncio.run(_invoke_agent_async(session_id, message))
+    return asyncio.run(_invoke_agent_async(session_id, message, token))

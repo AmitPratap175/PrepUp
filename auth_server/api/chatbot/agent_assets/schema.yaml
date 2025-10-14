@@ -1,0 +1,585 @@
+openapi: 3.0.3
+info:
+  title: ''
+  version: 0.0.0
+paths:
+  /api/auth/bookmarks/:
+    get:
+      operationId: auth_bookmarks_list
+      description: |-
+        Lists the bookmarks for the authenticated user.
+
+        This view can optionally filter bookmarks by subject using a query
+        parameter.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Bookmark'
+          description: ''
+  /api/auth/bookmarks/create/:
+    post:
+      operationId: auth_bookmarks_create_create
+      description: |-
+        Handles the creation of a new bookmark.
+
+        This view allows an authenticated user to bookmark a question. The user
+        is automatically associated with the created bookmark.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bookmark'
+          description: ''
+  /api/auth/bookmarks/delete/{question_id}/:
+    delete:
+      operationId: auth_bookmarks_delete_destroy
+      description: |-
+        Handles the deletion of a specific bookmark.
+
+        This view allows an authenticated user to remove one of their bookmarks,
+        identified by the question ID and subject.
+      parameters:
+      - in: path
+        name: question_id
+        schema:
+          type: string
+        required: true
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/login/:
+    post:
+      operationId: auth_login_create
+      description: |-
+        Handles the login request.
+
+        Args:
+            request: The HttpRequest object, containing login credentials.
+
+        Returns:
+            A Response object with the auth token on success, or an error
+            message on failure.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/auth/logout/:
+    post:
+      operationId: auth_logout_create
+      description: |-
+        Handles the logout request.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response with a 204 No Content status on successful logout,
+            or an error if the user is not authenticated.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/auth/signup/:
+    post:
+      operationId: auth_signup_create
+      description: |-
+        Handles the registration of new users.
+
+        This view uses a `CreateAPIView` to simplify the creation of new User
+        instances. It expects the user's name, email, password, and exam type
+        in the request data.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+  /api/auth/study-heartbeat/:
+    post:
+      operationId: auth_study_heartbeat_create
+      description: Records a study heartbeat, updating the user's study duration for
+        the day.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudyHeartbeat'
+          description: ''
+  /api/auth/study-summary/:
+    get:
+      operationId: auth_study_summary_retrieve
+      description: Provides a summary of the user's study hours.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/auth/user/:
+    get:
+      operationId: auth_user_retrieve
+      description: |-
+        Handles the GET request to fetch user details.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response containing the serialized user data.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/auth/words/:
+    get:
+      operationId: auth_words_list
+      description: Lists the words for the authenticated user.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Word'
+          description: ''
+  /api/auth/words/{id}/delete/:
+    delete:
+      operationId: auth_words_delete_destroy
+      description: Handles the deletion of a saved word.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        required: true
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/words/create/:
+    post:
+      operationId: auth_words_create_create
+      description: |-
+        Handles the creation of a new word.
+
+        This view allows an authenticated user to save a new word. The user
+        is automatically associated with the created word.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Word'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Word'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Word'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Word'
+          description: ''
+  /api/chatbot/:
+    post:
+      operationId: chatbot_create
+      description: Handles the incoming POST request by calling the chatbot service.
+      tags:
+      - chatbot
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/reset-test-progress/:
+    post:
+      operationId: reset_test_progress_create
+      description: |-
+        Handles the POST request to reset user's test progress.
+
+        Args:
+            request (Request): The request object, containing user information.
+
+        Returns:
+            Response: A response indicating success or failure.
+      tags:
+      - reset-test-progress
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/schema/:
+    get:
+      operationId: schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - ckb
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - ug
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - schema
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+  /api/user-quiz-state/:
+    get:
+      operationId: user_quiz_state_retrieve
+      description: Retrieves the last question index for a given test, or all quiz
+        states for the user.
+      tags:
+      - user-quiz-state
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: user_quiz_state_create
+      description: Updates the last question index for a given test.
+      tags:
+      - user-quiz-state
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+components:
+  schemas:
+    Bookmark:
+      type: object
+      description: |-
+        Serializer for the Bookmark model.
+
+        This serializer handles the conversion of Bookmark instances to JSON.
+        The 'user' field is read-only and displays the user's email for
+        context.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        user:
+          type: string
+          format: email
+          readOnly: true
+        subject:
+          type: string
+          maxLength: 255
+        question_id:
+          type: string
+          maxLength: 255
+      required:
+      - id
+      - question_id
+      - subject
+      - user
+    StudyHeartbeat:
+      type: object
+      description: |-
+        Serializer for the study heartbeat request.
+
+        Validates the duration sent by the frontend.
+      properties:
+        duration:
+          type: integer
+          maximum: 60
+          minimum: 1
+      required:
+      - duration
+    User:
+      type: object
+      description: |-
+        Serializer for the User model, used for registration.
+
+        This serializer handles the conversion of User model instances to JSON
+        and validates incoming data for creating new users. The password is
+        write-only to ensure it is not exposed in API responses.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+          maxLength: 255
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          writeOnly: true
+        exam_type:
+          type: string
+          maxLength: 50
+      required:
+      - email
+      - exam_type
+      - id
+      - name
+      - password
+    Word:
+      type: object
+      description: |-
+        Serializer for the Word model.
+
+        This serializer handles the conversion of Word instances to JSON.
+        The 'user' field is read-only and displays the user's email for
+        context.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        user:
+          type: string
+          format: email
+          readOnly: true
+        word:
+          type: string
+          maxLength: 255
+        meaning:
+          type: string
+        context:
+          type: string
+        question_id:
+          type: string
+          maxLength: 255
+      required:
+      - context
+      - id
+      - meaning
+      - question_id
+      - user
+      - word
+  securitySchemes:
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Token-based authentication with required prefix "Token"

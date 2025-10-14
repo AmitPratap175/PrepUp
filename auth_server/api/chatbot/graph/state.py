@@ -20,3 +20,5 @@ class AICompanionState(MessagesState):
     passage_text: Optional[str] = None
     question_text: Optional[str] = None
     options_text: Optional[str] = None
+    question_id: Optional[str] = None
+    subject: Optional[str] = None

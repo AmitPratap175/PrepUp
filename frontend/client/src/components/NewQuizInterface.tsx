@@ -485,7 +485,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
           {isChatbotOpen && (() => {
             const currentQuestionId = currentQuestion.qid;
             const currentChatHistory = chatHistories[currentQuestionId] || [];
-            const initialMessage = `Explain the following question and its options, and help me understand the answer.\n\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`;
+            const initialMessage = `Explain the following question and its options, and help me understand the answer.\n**Subject:**${test.subject}\n**qid:**${currentQuestion.qid}\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`;
 
             return (
               <Chatbot

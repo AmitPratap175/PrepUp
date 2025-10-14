@@ -7,9 +7,9 @@ from ...core.prompts import (
 from .helpers import AsteriskRemovalParser, get_chat_model
 from .schemas import RouterResponse
 from ...tools.safe_tools import safe_tools_list
+from ...tools.dynamic_tools import dynamic_tools_list
 
 from datetime import datetime
-
 
 
 def get_router_chain():
@@ -35,9 +35,9 @@ def get_character_response_chain(summary: str = ''):
             MessagesPlaceholder(variable_name='messages'),
         ]
     )
-    # safe_tools_lists = {t.name for t in safe_tools_list}
-    # sensitive_tools_lists = {t.name for t in sensitive_tools_list}
+    
+    all_tools = safe_tools_list + dynamic_tools_list
 
-    return prompt | model.bind_tools(safe_tools_list)
+    return prompt | model.bind_tools(all_tools)
 
 

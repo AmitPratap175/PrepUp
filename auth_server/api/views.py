@@ -356,11 +356,13 @@ class ChatbotView(APIView):
         if not session_id:
             session_id = str(uuid.uuid4())
             request.session['chatbot_session_id'] = session_id
+        
+        token = request.auth.key
 
         # print(f"\n\nMessage received: {message}\n\n")
 
         # Call the synchronous invoke_agent function directly
-        reply = invoke_agent(session_id=session_id, message=message)
+        reply = invoke_agent(session_id=session_id, message=message, token=token)
 
         return Response({"reply": reply})
 

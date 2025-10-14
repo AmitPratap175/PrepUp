@@ -22,6 +22,9 @@ from langgraph.graph import END
 
 from langchain_core.runnables import Runnable, RunnableConfig
 
+from ..tools.safe_tools import safe_tools_list
+from ..tools.dynamic_tools import dynamic_tools_list
+
 class Assistant:
     def __init__(self, runnable: Runnable):
         self.runnable = runnable
@@ -82,17 +85,23 @@ def extract_question_context_node(state: AICompanionState):
     last_message = state['messages'][-1]
     content = last_message.content
 
+    subject_match = re.search(r"\*\*Subject:\*\*(.*?)\n", content)
+    question_id_match = re.search(r"\*\*qid:\*\*(.*?)\n", content)
     passage_match = re.search(r"\*\*Passage:\*\*\n(.*?)\n\n", content, re.DOTALL)
     question_match = re.search(r"\*\*Question:\*\*\n(.*?)\n\n", content, re.DOTALL)
     options_match = re.search(r"\*\*Options:\*\*\n(.*)", content, re.DOTALL)
 
+    subject = subject_match.group(1).strip() if subject_match else None
+    question_id = question_id_match.group(1).strip() if question_id_match else None
     passage_text = passage_match.group(1).strip() if passage_match else None
     question_text = question_match.group(1).strip() if question_match else None
     options_text = options_match.group(1).strip() if options_match else None
 
     # Update state only if new context is found
-    if passage_text or question_text or options_text:
+    if subject or question_id or passage_text or question_text or options_text:
         return {
+            "subject": subject or state.get("subject"),
+            "question_id": question_id or state.get("question_id"),
             "passage_text": passage_text or state.get("passage_text"),
             "question_text": question_text or state.get("question_text"),
             "options_text": options_text or state.get("options_text"),
@@ -109,16 +118,25 @@ def conversation_node(state: dict, config: RunnableConfig):
     chain = get_character_response_chain(state.get("summary", ""))
     assistant = Assistant(chain)
     
+    all_tools = safe_tools_list + dynamic_tools_list
+    tools_description = "\n".join([f"- **{tool.name}** → {tool.description}" for tool in all_tools])
+
     # Get the response from the assistant
     response = assistant(
         {
             "messages": state['messages'], 
             'memory_context': state.get('memory_context', ''),
+            'subject': state.get('subject', ''),
+            'question_id': state.get('question_id', ''),
             'passage_text': state.get('passage_text', ''),
             'question_text': state.get('question_text', ''),
             'options_text': state.get('options_text', ''),
+            'tools_description': tools_description,
         }, 
         config=config
     )
     
     return response
+
+
+

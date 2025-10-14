@@ -146,6 +146,7 @@ class BookmarkCreateView(generics.CreateAPIView):
         Args:
             serializer: The serializer instance for the bookmark.
         """
+        print(serializer)
         serializer.save(user=self.request.user)
 
 class BookmarkDeleteView(generics.DestroyAPIView):
