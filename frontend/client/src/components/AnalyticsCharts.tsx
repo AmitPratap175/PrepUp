@@ -15,7 +15,7 @@ export function AnalyticsCharts({ testSessions, userProgress, courses, weekSumma
     const scoreData = testSessions
         ?.filter(session => session.isCompleted && session.score && session.maxScore)
         .map(session => ({
-            name: new Date(session.completedAt ?? 0).toLocaleDateString(),
+            name: new Date(session.endTime ?? 0).toLocaleDateString(),
             score: Math.round(((session.score ?? 0) / (session.maxScore ?? 1)) * 100),
         }));
 

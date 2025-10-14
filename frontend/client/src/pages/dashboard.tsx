@@ -8,6 +8,8 @@ import { useAuth } from "@/contexts/auth-context";
 import { AnalyticsCharts } from "@/components/AnalyticsCharts";
 import { useQuery } from "@tanstack/react-query";
 import type { Course, TestSession, UserProgress, PracticeTest } from "@shared/schema";
+import { LastAttemptedQuestions } from "@/components/LastAttemptedQuestions";
+import { useMemo } from "react";
 
 async function fetchDashboardData(url: string) {
   const token = localStorage.getItem('token');
@@ -54,6 +56,40 @@ export default function Dashboard() {
     queryKey: ["/api/mock-tests"],
     queryFn: () => fetchDashboardData(`/api/mock-tests/`),
   });
+
+  const { data: practiceTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/practice-tests"],
+    queryFn: () => fetchDashboardData(`/api/practice-tests/`),
+  });
+
+  const { data: sectionalTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/sectional-tests"],
+    queryFn: () => fetchDashboardData(`/api/sectional-tests/`),
+  });
+
+  const { data: userQuizStates } = useQuery<any[]>({
+    queryKey: ["/api/user-quiz-state/"],
+    queryFn: () => fetchDashboardData(`/api/user-quiz-state/`),
+    enabled: !!user,
+  });
+
+  console.log("userQuizStates", userQuizStates);
+
+  const allTests = useMemo(() => {
+    const tests: PracticeTest[] = [];
+    if (practiceTests) tests.push(...practiceTests);
+    if (sectionalTests) tests.push(...sectionalTests);
+    if (mockTests) tests.push(...mockTests);
+    return tests;
+  }, [practiceTests, sectionalTests, mockTests]);
+
+  const testIdToTitleMap = useMemo(() => {
+    const map = new Map<string, string>();
+    allTests.forEach(test => {
+      map.set(test.id, test.title);
+    });
+    return map;
+  }, [allTests]);
 
   // Calculate stats
   const totalTestsTaken = testSessions?.length || 0;
@@ -164,6 +200,8 @@ export default function Dashboard() {
                       </div>
                     </CardContent>
                   </Card>
+
+                  <LastAttemptedQuestions userQuizStates={userQuizStates} testIdToTitleMap={testIdToTitleMap} />
 
                   {/* Statistics Cards */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">

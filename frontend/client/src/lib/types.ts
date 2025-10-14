@@ -42,4 +42,5 @@ export interface QuestionStatus {
   visited: boolean;
   markedForReview: boolean;
   isCurrent: boolean;
+  isLastAttempted: boolean;
 }

@@ -18,3 +18,18 @@ class TestSession(models.Model):
 
     def __str__(self):
         return f"Test Session {self.id} for {self.user.email}"
+
+class UserQuizState(models.Model):
+    """
+    Stores the last attempted question for a user in a specific quiz.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    test_id = models.CharField(max_length=255)
+    last_question_index = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'test_id')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.test_id} - Last Question: {self.last_question_index}'

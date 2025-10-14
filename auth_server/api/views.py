@@ -338,7 +338,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
 from rest_framework import status
-from .models import TestSession
+from .models import TestSession, UserQuizState
 
 class ChatbotView(APIView):
     """
@@ -393,6 +393,54 @@ class ResetTestProgressView(APIView):
         user = request.user
         try:
             TestSession.objects.filter(user=user).delete()
+            UserQuizState.objects.filter(user=user).delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserQuizStateView(APIView):
+    """
+    Handles getting and setting the user's last quiz state.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Retrieves the last question index for a given test, or all quiz states for the user.
+        """
+        test_id = request.query_params.get('test_id')
+        if test_id:
+            try:
+                quiz_state = UserQuizState.objects.get(user=request.user, test_id=test_id)
+                return Response({'last_question_index': quiz_state.last_question_index})
+            except UserQuizState.DoesNotExist:
+                return Response({'last_question_index': 0}, status=status.HTTP_200_OK)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        else:
+            try:
+                quiz_states = UserQuizState.objects.filter(user=request.user)
+                data = [{'test_id': state.test_id, 'last_question_index': state.last_question_index} for state in quiz_states]
+                return Response(data)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def post(self, request):
+        """
+        Updates the last question index for a given test.
+        """
+        test_id = request.data.get('test_id')
+        last_question_index = request.data.get('last_question_index')
+
+        if not test_id or last_question_index is None:
+            return Response({'error': 'test_id and last_question_index are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            quiz_state, created = UserQuizState.objects.update_or_create(
+                user=request.user,
+                test_id=test_id,
+                defaults={'last_question_index': last_question_index}
+            )
+            return Response({'last_question_index': quiz_state.last_question_index}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
