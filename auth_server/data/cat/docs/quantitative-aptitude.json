@@ -31252,7 +31252,7 @@
     },
     {
       "qid": "quant-930",
-      "passage_text": "In a group of 10 students, the mean of the lowest 9 scores is 42 while the mean of the highest 9 scores is 47. For the entire group of 10 students, the maximum possible mean exceeds the minimum possible mean by\n\n5\n\n4\n\n3\n\n6",
+      "passage_text": "",
       "question_text": "In a group of 10 students, the mean of the lowest 9 scores is 42 while the mean of the highest 9 scores is 47. For the entire group of 10 students, the maximum possible mean exceeds the minimum possible mean by",
       "options": [
         {
@@ -31287,7 +31287,7 @@
     },
     {
       "qid": "quant-931",
-      "passage_text": "If A = { ( n − 1 ) 3 + n 3 + ( n + 1 ) 3 (n - 1)^3 + n^3 + (n + 1)^3 ( n − 1 ) 3 + n 3 + ( n + 1 ) 3 } where n n n = 2,3,4,... and B = { 9 n 9n 9 n }, where n n n = 1,2,3,... then which of the following is true?\n\nEvery member of A is in B and at least one member of B is not in A\n\nNeither every member of A is in B nor every member of B is in A\n\nEvery member of B is in A.\n\nAt least one member of A is not in B.",
+      "passage_text": "",
       "question_text": "If A = {$(n - 1)^3 + n^3 + (n + 1)^3$} where $n$ = 2,3,4,... and B = {$9n$}, where $n$ = 1,2,3,... then which of the following is true?",
       "options": [
         {
@@ -31322,7 +31322,7 @@
     },
     {
       "qid": "quant-932",
-      "passage_text": "In how many ways can a pair of integers (x , a) be chosen such that x 2 − 2 ∣ x ∣ + ∣ a − 2 ∣ = 0 x^{2}-2\\mid x\\mid+\\mid a-2\\mid=0 x 2 − 2 ∣ x ∣ + ∣ a − 2 ∣ = 0 ?\n\n6\n\n5\n\n4\n\n7",
+      "passage_text": "",
       "question_text": "In how many ways can a pair of integers (x , a) be chosen such that $x^{2}-2\\mid x\\mid+\\mid a-2\\mid=0$ ?",
       "options": [
         {
@@ -31357,7 +31357,7 @@
     },
     {
       "qid": "quant-933",
-      "passage_text": "For how many integers lying between -1000 and 1000 (both included) is the function f ( x ) = 1 1000 ( ∣ x ∣ − x ) f(x) = \\dfrac{1}{\\sqrt{1000(|x|-x)}} f ( x ) = 1 0 0 0 ( ∣ x ∣ − x ) ​ 1 ​ defined?\n\n500\n\n501\n\n1000\n\n1001",
+      "passage_text": "",
       "question_text": "For how many integers lying between -1000 and 1000 (both included) is the function $f(x) = \\dfrac{1}{\\sqrt{1000(|x|-x)}}$ defined?",
       "options": [
         {
@@ -31392,7 +31392,7 @@
     },
     {
       "qid": "quant-934",
-      "passage_text": "If a, b and c are real numbers such that 2 < a < 9, 5 < b < 8 and 16 < c < 23, find the minimum possible integral value of a b + c b \\ \\frac{\\ ab+c}{b} b a b + c ​\n\n4\n\n3\n\n5\n\n6",
+      "passage_text": "",
       "question_text": "If a, b and c are real numbers such that 2 < a < 9, 5 < b < 8 and 16 < c < 23, find the minimum possible integral value of $\\ \\frac{\\ ab+c}{b}$",
       "options": [
         {
@@ -31452,11 +31452,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "9:42 a.m.",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "Let the speed of Ronaldo and Bale be ‘r’ km/hr and ‘b’ km/hr respectively. So r = 1.5b\n\nwkt, Ronaldo and Bale meet at the midpoint(4 km mark) during their second meet.\nwe also know that, Ronaldo leaves 30minutes later than Bale at 9:30am. \nDistance travelled by Bale in this $\\frac{1}{2}$hrs = b/2 km\nIn order to meet for the second time, each of them has to travel a total of 8 + 4 = 12kms(One way entirely and halfway while returning)\n\nSince Ronaldo reaches midpoint despite leaving 30minutes late, hence, the time required by Ronaldo to reach midway is $\\frac{1}{2}$hrs half an hour less than time required by Bale to reach midpoint. \nWe have, \n$\\frac{12}{b} - \\frac{1}{2} = \\frac{12}{r}$\n$\\frac{12}{b} - 0.5 = \\frac{12}{\\frac{3}{2}\\times b}$\n$\\frac{4}{b} = 0.5$\nb = 8 km/hr and r = 12 km/hr\n Distance travelled by Bale until 9:30 (in 30 mins) = 4 km\nAt 9:30 Ronaldo and Bale are 4 km apart, relative speed = 8 + 12 =20km/hr\nRonaldo and bale meet for the first in $\\frac{4}{8 + 12}$ hour= 12 mins after 9:30\nSo the time at which they meet for the first time = 9:42 a.m.\nHence, option D is the right answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 112696)\n\n**Passage:**\nRonaldo and Bale run between point P and point Q which are 8 km apart. Bale starts at 9 a.m. from P, reaches Q, and returns to P. Ronaldo starts at 9:30 a.m. from Q, reaches P, and returns to Q. The speeds at which both run are constant such that Ronaldo’s speed is 1.5 times the speed of Bale. While returning to their starting points they meet at a point which is exactly midway between P and Q. At what time do both of them meet for the first time?\n\n9:40 a.m.\n\n9:54 a.m.\n\n10:04 a.m.\n\n9:42 a.m.\n\nRonaldo and Bale run between point P and point Q which are 8 km apart. Bale starts at 9 a.m. from P, reaches Q, and returns to P. Ronaldo starts at 9:30 a.m. from Q, reaches P, and returns to Q. The speeds at which both run are constant such that Ronaldo’s speed is 1.5 times the speed of Bale. While returning to their starting points they meet at a point which is exactly midway between P and Q. At what time do both of them meet for the first time?\n\n**Options:**\n- **A**. 9:40 a.m.\n- **B**. 9:54 a.m.\n- **C**. 10:04 a.m.\n- **D**. 9:42 a.m.\n\n**Correct Answer:** null"
     },
@@ -31465,8 +31465,8 @@
       "passage_text": "",
       "question_text": "In a 10 km race, A, B, and C, each running at uniform speed, get the gold, silver, and bronze medals, respectively. I f A beats B by 1 km and B beats C by 1 km, then by how many metres does A beat C?",
       "options": [],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "1900",
+      "solution_text": "By the time A traveled 10 KM, B traveled 9 KM\nHence $Speed_A : Speed_B = 10:9$\nSimilarly $Speed_B : Speed_C = 10:9$\nHence $Speed_A : Speed_B : Speed_C = 100:90:81$\nHence by the time A traveled 10 KMs , C should have traveled 8.1 KMs\nSo A beat C by 1.9 KMs = 1900 Mts",
       "image_url": "",
       "full_markdown": "### Question (qid: 98384)\n\n**Passage:**\nIn a 10 km race, A, B, and C, each running at uniform speed, get the gold, silver, and bronze medals, respectively. I f A beats B by 1 km and B beats C by 1 km, then by how many metres does A beat C?\n\nIn a 10 km race, A, B, and C, each running at uniform speed, get the gold, silver, and bronze medals, respectively. I f A beats B by 1 km and B beats C by 1 km, then by how many metres does A beat C?\n\n**Options:**\n\n**Correct Answer:** null"
     },
@@ -31475,8 +31475,8 @@
       "passage_text": "",
       "question_text": "A person can complete a job in 120 days. He works alone on Day 1. On Day 2, he is joined by another person who also can complete the job in exactly 120 days. On Day 3, they are joined by another person of equal efficiency. Like this, everyday a new person with the same efficiency joins the work. How many days are required to complete the job?",
       "options": [],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "15",
+      "solution_text": "Let the rate of work of a person be x units/day. Hence, the total work = 120x.\n\nIt is given that one first day, one person works, on the second day two people work and so on.\n\nHence, the work done on day 1, day 2,... will be x, 2x, 3x, ... respectively.\n\nThe sum should be equal to 120x.\n\n$120x = x* \\frac{n(n+1)}{2}$\n\n$n^2 + n - 240 = 0$\n\nn = 15 is the only positive solution.\n\nHence, it takes 15 days to complete the work.",
       "image_url": "",
       "full_markdown": "### Question (qid: 98077)\n\n**Passage:**\nA person can complete a job in 120 days. He works alone on Day 1. On Day 2, he is joined by another person who also can complete the job in exactly 120 days. On Day 3, they are joined by another person of equal efficiency. Like this, everyday a new person with the same efficiency joins the work. How many days are required to complete the job?\n\nA person can complete a job in 120 days. He works alone on Day 1. On Day 2, he is joined by another person who also can complete the job in exactly 120 days. On Day 3, they are joined by another person of equal efficiency. Like this, everyday a new person with the same efficiency joins the work. How many days are required to complete the job?\n\n**Options:**\n\n**Correct Answer:** null"
     },
@@ -31495,7 +31495,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "6 : 30 am",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -31516,18 +31516,18 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "B",
+      "solution_text": "According to given conditions angle between AC and AB is 30 degrees and between AB and BC is 60 degrees. So the triangle formed is a 30-60-90 triangle. \n\nHence, $\\angle\\ ABC=60^{\\circ\\ }$, $\\angle\\ CAB=30^{\\circ\\ }$, which implies $\\angle\\ ACB=180^{\\circ\\ }-\\left(30^{\\circ\\ }+60^{\\circ\\ }\\right)=90^{\\circ\\ }$\n\nTherefore, The triangle is a right-angled triangle with base = BC, height = AC, and hypotenuse = AB.\n\nWe know that $\\cos\\ \\angle\\ ABC\\ =\\ \\frac{\\ BC}{AB}=>\\ \\cos60^{\\circ\\ }=\\frac{BC}{500}\\ =>\\ 500\\times\\ \\frac{1}{2}=250\\ km$\n\nSimilarly, $\\sin\\ \\angle\\ ABC\\ =\\ \\frac{\\ AC}{AB}=>\\ \\sin60^{\\circ\\ }=\\frac{AC}{500}\\ =>\\ 500\\times\\ \\frac{\\sqrt{\\ 3}}{2}=250\\sqrt{\\ 3}\\ km$\n\nSo, total time taken by train to travel B to C is is (250/50) = 5 hrs, hence the train reaches at 1 pm. Accordingly, Rahim has to reach C fifteen minutes before i.e. at 12:45 PM.\n\nTime taken by Rahim to travel by car is around $\\ \\frac{\\ 250\\sqrt{\\ 3}}{70}=6.19$ hrs (Around 6.2 hrs = 6 hrs 12 minutes). So, the latest time by which Rahim must leave A and still be able to catch the train is 6:30 am.",
       "image_url": "",
       "full_markdown": "### Question (qid: 4096)\n\n**Passage:**\nRahim plans to drive from city A to station C, at the speed of 70 km per hour, to catch a train arriving there from B. He must reach C at least 15 minutes before the arrival of the train. The train leaves B, located 500 km south of A, at 8:00 am and travels at a speed of 50 km per hour. It is known that C is located between west and northwest of B, with BC at 60° to AB. Also, C is located between south and southwest of A with AC at 30° to AB. The latest time by which Rahim must leave A and still catch the train is closest to\n\n6 : 15 am\n\n6 : 30 am\n\n6 :45 am\n\n7 : 00 am\n\n7 : 15 am\n\nRahim plans to drive from city A to station C, at the speed of 70 km per hour, to catch a train arriving there from B. He must reach C at least 15 minutes before the arrival of the train. The train leaves B, located 500 km south of A, at 8:00 am and travels at a speed of 50 km per hour. It is known that C is located between west and northwest of B, with BC at 60° to AB. Also, C is located between south and southwest of A with AC at 30° to AB. The latest time by which Rahim must leave A and still catch the train is closest to\n\n**Options:**\n- **A**. 6 : 15 am\n- **B**. 6 : 30 am\n- **C**. 6 :45 am\n- **D**. 7 : 00 am\n- **E**. 7 : 15 am\n\n**Correct Answer:** null"
     },
     {
       "qid": "quant-939",
-      "passage_text": "On a straight road, there are two points P and Q. Virat and Rohit are standing at points P and Q are respectively. They start running towards each other at constant speeds. As soon as they reach the opposite point, they immediately turn back and run towards their respective starting point. The same process continues till each one of them has completed 10 trips (1 trip is going to the opposite point and returning back). Virat and Rohit meet for the first time 540 m away from P and their second meeting takes place 600 m away from Q. Find the distance (in m) of their third meeting point from Q. (It is known that the two persons never cross each other while travelling in the same direction)",
+      "passage_text": "",
       "question_text": "On a straight road, there are two points P and Q. Virat and Rohit are standing at points P and Q are respectively. They start running towards each other at constant speeds. As soon as they reach the opposite point, they immediately turn back and run towards their respective  starting point. The same process continues till each one of them has completed 10 trips (1 trip is going to the opposite point and returning back). Virat and Rohit meet for the first time 540 m away from P and their second meeting takes place 600 m away from Q. Find the distance (in m) of their third meeting point from Q. (It is known that the two persons never cross each other while travelling in the same direction)",
       "options": [],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "360",
+      "solution_text": "The first time the two people meet, the total distance travelled by them will be ‘d’ where ‘d’ is the distance between P and Q. The second time they meet the total distance covered will be 3d and for third meeting it will be 5d. In the time that they cover a distance of ‘d’, Virat covers 540 m. So by the time that they cover 3d, Virat would have covered 540*3 = 1620 m. Now, they never cross each other while travelling in same direction. Hence, 1620 = d + 600\n=> d = 1020\nThus, the distance between PQ must be 1020.\nNow by the third meeting Virat would have covered 540*5 = 2700 m\nThus, required distance from P will be 2700 - 1020*2 = 660 m\nThus, the distance from Q will be 1020 - 660 = 360",
       "image_url": "",
       "full_markdown": "### Question (qid: 112801)\n\n**Passage:**\nOn a straight road, there are two points P and Q. Virat and Rohit are standing at points P and Q are respectively. They start running towards each other at constant speeds. As soon as they reach the opposite point, they immediately turn back and run towards their respective starting point. The same process continues till each one of them has completed 10 trips (1 trip is going to the opposite point and returning back). Virat and Rohit meet for the first time 540 m away from P and their second meeting takes place 600 m away from Q. Find the distance (in m) of their third meeting point from Q. (It is known that the two persons never cross each other while travelling in the same direction)\n\nOn a straight road, there are two points P and Q. Virat and Rohit are standing at points P and Q are respectively. They start running towards each other at constant speeds. As soon as they reach the opposite point, they immediately turn back and run towards their respective  starting point. The same process continues till each one of them has completed 10 trips (1 trip is going to the opposite point and returning back). Virat and Rohit meet for the first time 540 m away from P and their second meeting takes place 600 m away from Q. Find the distance (in m) of their third meeting point from Q. (It is known that the two persons never cross each other while travelling in the same direction)\n\n**Options:**\n\n**Correct Answer:** null"
     }
