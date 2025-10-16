@@ -29,6 +29,7 @@ class User(AbstractUser):
     is_trial_user = models.BooleanField(default=True)
     current_streak = models.IntegerField(default=0)
     total_score = models.IntegerField(default=0)
+    settings = models.JSONField(default=dict)
     username = None
 
     objects = CustomUserManager()
@@ -75,3 +76,69 @@ class Bookmark(models.Model):
             str: A string identifying the user and the bookmarked question.
         """
         return f'{self.user.email} - {self.subject} - {self.question_id}'
+
+
+class Word(models.Model):
+    """
+    Represents a word saved by a user, along with its meaning and context.
+
+    This model allows users to save words they want to learn, including the
+    context in which the word appeared and its definition.
+
+    Attributes:
+        id (UUIDField): The primary key for the word entry.
+        user (ForeignKey): A reference to the User who saved the word.
+        word (CharField): The word that was saved.
+        meaning (TextField): The definition or meaning of the word.
+        context (TextField): The sentence or phrase where the word was found.
+        question_id (CharField): The ID of the question where the word was found.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    word = models.CharField(max_length=255)
+    meaning = models.TextField()
+    context = models.TextField()
+    question_id = models.CharField(max_length=255)
+
+    class Meta:
+        unique_together = ('user', 'word')
+
+    def __str__(self):
+        """
+        Returns a string representation of the saved word.
+
+        Returns:
+            str: A string identifying the user and the saved word.
+        """
+        return f'{self.user.email} - {self.word}'
+
+
+class StudyDay(models.Model):
+    """
+    Represents a user's total study duration for a single day.
+
+    This model tracks the amount of time a user spends actively on the platform
+    on a given day. The duration is stored in seconds.
+
+    Attributes:
+        id (UUIDField): The primary key for the study day entry.
+        user (ForeignKey): A reference to the User.
+        date (DateField): The specific date for which the duration is recorded.
+        duration_seconds (PositiveIntegerField): The total study time in seconds.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='study_days')
+    date = models.DateField(db_index=True)
+    duration_seconds = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'date')
+
+    def __str__(self):
+        """
+        Returns a string representation of the study day record.
+
+        Returns:
+            str: A string identifying the user, date, and duration.
+        """
+        return f'{self.user.email} - {self.date} - {self.duration_seconds}s'

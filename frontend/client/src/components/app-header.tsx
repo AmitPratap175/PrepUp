@@ -37,6 +37,7 @@ const navigation = [
     ]
   },
   { title: "Bookmarks", href: "/bookmarks" },
+  { title: "My Words", href: "/words" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];
@@ -53,19 +54,14 @@ const navigation = [
  * @returns {JSX.Element} The rendered header component.
  */
 export function AppHeader() {
-  const [location, setLocation] = useLocation();
+  const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isAuthenticated, logout } = useAuth();
-
-  const handleLogout = () => {
-    logout();
-    setLocation("/");
-  };
+  const { isAuthenticated } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
-        <Link href="/" className="flex items-center gap-2 sm:gap-3 text-foreground hover-elevate">
+      <div className="container mx-auto flex items-center justify-between px-2 sm:px-4 lg:px-6 py-4">
+        <Link href="/" className="flex items-center gap-1 sm:gap-2 text-foreground hover-elevate">
           <span className="material-symbols-outlined text-2xl sm:text-3xl text-primary">school</span>
           <h2 className="text-lg sm:text-xl font-bold leading-tight tracking-[-0.015em]">PrepUp</h2>
         </Link>
@@ -132,9 +128,6 @@ export function AppHeader() {
                   <Settings className="h-5 w-5" />
                   <span className="sr-only">Settings</span>
                 </Link>
-              </Button>
-              <Button onClick={handleLogout} className="hidden sm:flex" size="sm">
-                Logout
               </Button>
             </>
           ) : (
@@ -209,9 +202,6 @@ export function AppHeader() {
                           <Settings className="h-5 w-5" />
                           Settings
                         </Link>
-                      </Button>
-                      <Button onClick={() => { handleLogout(); setMobileMenuOpen(false); }} size="sm">
-                        Logout
                       </Button>
                     </div>
                   ) : (

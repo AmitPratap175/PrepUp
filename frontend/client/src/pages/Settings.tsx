@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Save, Loader2, Monitor, Timer, Eye, Bell } from 'lucide-react';
+import { Save, Loader2, Monitor, Timer, Eye, Bell, LogOut } from 'lucide-react';
 import { useSettings } from '../contexts/SettingsContext';
 import { UserSettings } from '../services/api';
 import { AppHeader } from "@/components/app-header";
@@ -9,6 +9,9 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { useAuth } from "@/contexts/auth-context";
+import { useLocation } from "wouter";
+import { ConfirmationDialog } from '@/components/ui/ConfirmationDialog';
 
 /**
  * A page for managing user settings.
@@ -25,6 +28,9 @@ const SettingsPage: React.FC = () => {
   const [localSettings, setLocalSettings] = useState<UserSettings | null>(null);
   const [saving, setSaving] = useState(false);
   const [savedMessage, setSavedMessage] = useState('');
+  const { logout } = useAuth();
+  const [, setLocation] = useLocation();
+  const [isResetConfirmOpen, setIsResetConfirmOpen] = useState(false);
 
   useEffect(() => {
     if (settings) {
@@ -43,6 +49,39 @@ const SettingsPage: React.FC = () => {
       console.error('Failed to save settings:', error);
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleLogout = () => {
+    logout();
+    setLocation("/");
+  };
+
+  const handleResetProgress = async () => {
+    setIsResetConfirmOpen(true);
+  };
+
+  const confirmResetProgress = async () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      try {
+        const response = await fetch('/api/reset-test-progress/', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Token ${token}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          setSavedMessage("Your test progress has been successfully reset.");
+        } else {
+          setSavedMessage("Failed to reset test progress. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error resetting test progress:", error);
+        setSavedMessage("An error occurred while resetting your test progress. Please try again.");
+      }
     }
   };
 
@@ -265,10 +304,40 @@ const SettingsPage: React.FC = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Account Actions */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center"><LogOut className="h-6 w-6 mr-2 text-destructive" /> Account</CardTitle>
+                <CardDescription>Manage your account settings.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button
+                  variant="destructive"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </Button>
+                <Button
+                  variant="destructive"
+                  className="ml-4"
+                  onClick={handleResetProgress}
+                >
+                  Reset Test Progress
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </main>
       <AppFooter />
+      <ConfirmationDialog
+        isOpen={isResetConfirmOpen}
+        onOpenChange={setIsResetConfirmOpen}
+        onConfirm={confirmResetProgress}
+        title="Are you sure you want to reset your test progress?"
+        description="This action cannot be undone."
+      />
     </div>
   );
 };

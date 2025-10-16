@@ -15,7 +15,7 @@ import { Calculator } from "./ui/calculator";
  */
 interface MockTestInterfaceProps {
   test: PracticeTest;
-  onSubmit: (answers: UserAnswer[], timeSpent: number) => void;
+  onSubmit: (answers: UserAnswer[], timeSpent: number, startTime?: number) => void;
 }
 
 const SECTIONS = ["varc", "dilr", "quants"];
@@ -42,6 +42,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     markedForReview: new Set(),
     timeRemaining: SECTION_TIME,
     isCompleted: false,
+    startTime: undefined,
   });
 
   const questions = useMemo(() => {
@@ -52,6 +53,10 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
 
   const currentQuestion = questions[testState.currentQuestionIndex];
   const hasPassage = currentQuestion?.passage_text && currentQuestion?.passage_text !== "For the following questions answer them individually";
+
+  useEffect(() => {
+    setTestState(prev => ({ ...prev, startTime: Date.now() }));
+  }, []);
 
   useEffect(() => {
     if (testState.timeRemaining <= 0) {
@@ -105,8 +110,6 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
       const newMarked = new Set(prev.markedForReview);
       if (newMarked.has(currentQuestion.qid)) {
         newMarked.delete(currentQuestion.qid);
-      } else {
-        newMarked.add(currentQuestion.qid);
       }
       return { ...prev, markedForReview: newMarked };
     });
@@ -147,7 +150,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     }));
 
     const totalTimeSpent = (test.duration * 60) - testState.timeRemaining;
-    onSubmit(userAnswers, totalTimeSpent);
+    onSubmit(userAnswers, totalTimeSpent, testState.startTime);
     setTestState(prev => ({ ...prev, isCompleted: true }));
   };
 

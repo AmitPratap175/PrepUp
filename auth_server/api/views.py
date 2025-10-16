@@ -331,3 +331,240 @@ def add_question_view(request):
             return JsonResponse({"error": "Invalid JSON"}, status=400)
     else:
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
+
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from .chatbot_service import invoke_agent
+from rest_framework import status
+from .models import TestSession, UserQuizState
+
+class ChatbotView(APIView):
+    """
+    Handles chatbot interactions for authenticated users.
+
+    This is the main endpoint for the chatbot. It receives a user's message and returns the chatbot's response. The chatbot is a stateful agent that can use tools to perform actions on behalf of the user.
+
+    **How to use:**
+    To interact with the chatbot, the client should send a `POST` request to the following URL:
+    `POST /api/chatbot/`
+
+    The request body must be a JSON object containing the `message` from the user.
+
+    **Example:**
+    If the user says, "hello", the client should send the following JSON payload:
+    ```json
+    {
+      "message": "hello"
+    }
+    ```
+
+    The API will return a JSON response with the chatbot's reply:
+    ```json
+    {
+      "reply": "Hello! How can I help you today?"
+    }
+    ```
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters:**
+    - `message` (string, required): The user's message to the chatbot.
+
+    **Responses:**
+    - `200 OK`: A JSON object containing the chatbot's `reply`.
+    - `401 Unauthorized`: The user is not authenticated.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Handles the incoming POST request by calling the chatbot service.
+        """
+        message = request.data.get('message', '')
+
+        session_id = request.session.get('chatbot_session_id')
+        if not session_id:
+            session_id = str(uuid.uuid4())
+            request.session['chatbot_session_id'] = session_id
+        
+        token = request.auth.key
+
+        # print(f"\n\nMessage received: {message}\n\n")
+
+        # Call the synchronous invoke_agent function directly
+        reply = invoke_agent(session_id=session_id, message=message, token=token)
+
+        return Response({"reply": reply})
+
+class ResetTestProgressView(APIView):
+    """
+    Resets the test progress for the authenticated user.
+
+    This view handles a POST request to delete all `TestSession` and `UserQuizState` objects
+    associated with the currently authenticated user, effectively resetting
+    their test history and progress.
+
+    **How to use:**
+    To reset the user's test progress, the client should send a `POST` request to the following URL:
+    `POST /api/reset-test-progress/`
+
+    No request body is required.
+
+    **Example:**
+    If the user wants to reset their progress, the client should send a `POST` request to `/api/reset-test-progress/`.
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters:**
+    - None
+
+    **Responses:**
+    - `204 No Content`: The user's test progress was successfully reset.
+    - `401 Unauthorized`: The user is not authenticated.
+    - `500 Internal Server Error`: An error occurred while resetting the progress.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Handles the POST request to reset user's test progress.
+
+        Args:
+            request (Request): The request object, containing user information.
+
+        Returns:
+            Response: A response indicating success or failure.
+        """
+        user = request.user
+        try:
+            TestSession.objects.filter(user=user).delete()
+            UserQuizState.objects.filter(user=user).delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserQuizStateView(APIView):
+    """
+    Handles getting and setting the user's last quiz state.
+
+    This view allows the client to retrieve the last question index for a given test, or all quiz states for the user. It also allows the client to update the last question index for a given test.
+
+    **How to use:**
+
+    **Get Quiz State:**
+    To get the last question index for a specific test, send a `GET` request with the `test_id` as a query parameter:
+    `GET /api/user-quiz-state/?test_id={test_id}`
+
+    To get all quiz states for the user, send a `GET` request without any query parameters:
+    `GET /api/user-quiz-state/`
+
+    **Update Quiz State:**
+    To update the last question index for a test, send a `POST` request with the `test_id` and `last_question_index` in the request body:
+    `POST /api/user-quiz-state/`
+
+    **Example (Get specific quiz state):**
+    `GET /api/user-quiz-state/?test_id=some-test-id`
+    Response:
+    ```json
+    {
+      "last_question_index": 5
+    }
+    ```
+
+    **Example (Get all quiz states):**
+    `GET /api/user-quiz-state/`
+    Response:
+    ```json
+    [
+      {
+        "test_id": "some-test-id",
+        "last_question_index": 5
+      },
+      {
+        "test_id": "another-test-id",
+        "last_question_index": 10
+      }
+    ]
+    ```
+
+    **Example (Update quiz state):**
+    `POST /api/user-quiz-state/`
+    Request Body:
+    ```json
+    {
+      "test_id": "some-test-id",
+      "last_question_index": 6
+    }
+    ```
+    Response:
+    ```json
+    {
+      "last_question_index": 6
+    }
+    ```
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters (GET):**
+    - `test_id` (query parameter, optional): The ID of the test to retrieve the state for.
+
+    **Parameters (POST):**
+    - `test_id` (string, required): The ID of the test to update.
+    - `last_question_index` (integer, required): The new last question index.
+
+    **Responses:**
+    - `200 OK`: The quiz state was successfully retrieved or updated.
+    - `400 Bad Request`: The request was malformed.
+    - `401 Unauthorized`: The user is not authenticated.
+    - `500 Internal Server Error`: An error occurred.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Retrieves the last question index for a given test, or all quiz states for the user.
+        """
+        test_id = request.query_params.get('test_id')
+        if test_id:
+            try:
+                quiz_state = UserQuizState.objects.get(user=request.user, test_id=test_id)
+                return Response({'last_question_index': quiz_state.last_question_index})
+            except UserQuizState.DoesNotExist:
+                return Response({'last_question_index': 0}, status=status.HTTP_200_OK)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        else:
+            try:
+                quiz_states = UserQuizState.objects.filter(user=request.user)
+                data = [{'test_id': state.test_id, 'last_question_index': state.last_question_index} for state in quiz_states]
+                return Response(data)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def post(self, request):
+        """
+        Updates the last question index for a given test.
+        """
+        test_id = request.data.get('test_id')
+        last_question_index = request.data.get('last_question_index')
+
+        if not test_id or last_question_index is None:
+            return Response({'error': 'test_id and last_question_index are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            quiz_state, created = UserQuizState.objects.update_or_create(
+                user=request.user,
+                test_id=test_id,
+                defaults={'last_question_index': last_question_index}
+            )
+            return Response({'last_question_index': quiz_state.last_question_index}, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

@@ -50,12 +50,14 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
+  const [lastAttemptedQuestionIndex, setLastAttemptedQuestionIndex] = useState<number | null>(null);
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
     markedForReview: new Set(),
     timeRemaining: test?.duration ? test.duration * 60 : 0,
     isCompleted: false,
+    startTime: undefined,
   });
 
   const questions = test?.questions || [];
@@ -63,10 +65,38 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
   const hasPassage = currentQuestion?.passage_text && currentQuestion?.passage_text !== "For the following questions answer them individually";
 
   useEffect(() => {
+    const fetchLastQuestion = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            const response = await fetch(`/api/user-quiz-state/?test_id=${testId}`, {
+                headers: {
+                    'Authorization': `Token ${token}`,
+                },
+            });
+            if (response.ok) {
+                const data = await response.json();
+                if (data.last_question_index > 0) {
+                    setTestState(prev => ({ ...prev, currentQuestionIndex: data.last_question_index }));
+                    setLastAttemptedQuestionIndex(data.last_question_index);
+                } else {
+                    // If there is no saved state, save the initial state.
+                    updateLastQuestion(0);
+                    setLastAttemptedQuestionIndex(0);
+                }
+            }
+        }
+    };
+    if (test) {
+        fetchLastQuestion();
+    }
+  }, [test, testId]);
+
+  useEffect(() => {
     if (test?.duration && testState.timeRemaining === 0) {
       setTestState(prev => ({
         ...prev,
         timeRemaining: test.duration * 60,
+        startTime: Date.now(),
       }));
     }
   }, [test]);
@@ -94,10 +124,11 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
       answers: testState.answers,
       questions: questions,
       timeTaken: (test?.duration || 0) * 60 - testState.timeRemaining,
+      startTime: testState.startTime,
     };
 
     localStorage.setItem(`sectionalTestResult-${testId}`, JSON.stringify(resultData));
-    navigate(`/sectional-test/result/${testId}`);
+    navigate(`/sectional-test/result/${testId}`, { state: { ...resultData } });
   };
 
   const formatTime = (seconds: number) => {
@@ -113,6 +144,7 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
       visited: questionIndex <= testState.currentQuestionIndex,
       markedForReview: testState.markedForReview.has(questionId),
       isCurrent: questionIndex === testState.currentQuestionIndex,
+      isLastAttempted: questionIndex === lastAttemptedQuestionIndex,
     };
   };
 
@@ -146,9 +178,28 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
     });
   };
 
+  const updateLastQuestion = async (questionIndex: number) => {
+    console.log("Updating last question", questionIndex);
+    const token = localStorage.getItem('token');
+    if (token) {
+        await fetch('/api/user-quiz-state/', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Token ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                test_id: testId,
+                last_question_index: questionIndex,
+            }),
+        });
+    }
+  };
+
   const navigateToQuestion = (questionIndex: number) => {
     if (questionIndex >= 0 && questionIndex < questions.length) {
       setTestState(prev => ({ ...prev, currentQuestionIndex: questionIndex }));
+      updateLastQuestion(questionIndex);
     }
   };
 
@@ -280,6 +331,8 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
                     className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${
                       status.isCurrent
                         ? 'bg-primary text-primary-foreground'
+                        : status.isLastAttempted
+                        ? 'bg-violet-500 text-white'
                         : status.answered
                         ? 'bg-secondary text-secondary-foreground'
                         : status.markedForReview
@@ -309,6 +362,10 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-card border border-border rounded"></div>
                 <span>Not Visited</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-violet-500 rounded"></div>
+                <span>Last Attempted</span>
               </div>
             </div>
           </div>

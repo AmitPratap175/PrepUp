@@ -15552,7 +15552,7 @@
         }
       ],
       "correct_option_data": null,
-      "solution_text": null,
+      "solution_text": "Look at the terms two at a time. Compute the first two pairs:\n$\\frac{2}{60}+\\frac{1}{170}=\\frac{1}{30}+\\frac{1}{170}=\\frac{17+3}{510}=\\frac{20}{510}=\\frac{2}{51}=\\frac{2}{3\\cdot17}$\n$\\frac{2}{816}+\\frac{1}{744}=\\frac{1}{408}+\\frac{1}{744}=\\frac{2}{527}=\\frac{2}{17\\cdot31}$\nSo the pairs sum to\n$\\frac{2}{3\\cdot17},\\ \\frac{2}{17\\cdot31},\\ \\frac{2}{31\\cdot45},\\ \\dots,\\ \\frac{2}{59\\cdot73}$.\n(You can check the given denominators arrange into such pairs; the inner factors form the arithmetic progression $(3,17,31,\\dots,73)$ with common difference $(14)$.)\nNow note the identity\n$\\frac{2}{a(a+14)}=\\frac{1}{7}\\Big(\\frac{1}{a}-\\frac{1}{a+14}\\Big)$.\nThus the sum of these pair-sums telescopes:\n$\\sum_{k=1}^{5}\\frac{2}{a_k a_{k+1}}=\\frac{1}{7}\\Big(\\frac{1}{3}-\\frac{1}{73}\\Big)=\\frac{1}{7}\\cdot\\frac{70}{3\\cdot73}=\\frac{10}{219}$.\nTherefore the value of the whole sum is $\\boxed{\\dfrac{10}{219}}$ ($\\approx0.045662$).",
       "image_url": "",
       "full_markdown": "### Question (qid: 142195)\n\n**Passage:**\nWhat is the value of the sum 2 60 + 1 170 + 2 816 + 1 744 + … … . . 2 9636 \\frac{2}{60} + \\frac{1}{170} + \\frac{2}{816} + \\frac{1}{744} + ……..\\frac{2}{9636} 6 0 2 ​ + 1 7 0 1 ​ + 8 1 6 2 ​ + 7 4 4 1 ​ + … … . . 9 6 3 6 2 ​ ?\n\n13 219 \\frac{13}{219} 2 1 9 1 3 ​\n\n10 219 \\frac{10}{219} 2 1 9 1 0 ​\n\n10 221 \\frac{10}{221} 2 2 1 1 0 ​\n\n11 219 \\frac{11}{219} 2 1 9 1 1 ​\n\nWhat is the value of the sum 2 60 + 1 170 + 2 816 + 1 744 + … … . . 2 9636 \\frac{2}{60} + \\frac{1}{170} + \\frac{2}{816} + \\frac{1}{744} + ……..\\frac{2}{9636} 6 0 2 ​ + 1 7 0 1 ​ + 8 1 6 2 ​ + 7 4 4 1 ​ + … … . . 9 6 3 6 2 ​ ?\n\n**Options:**\n- **A**. 13219\\frac{13}{219}21913​\n- **B**. 10219\\frac{10}{219}21910​\n- **C**. 10221\\frac{10}{221}22110​\n- **D**. 11219\\frac{11}{219}21911​\n\n**Correct Answer:** null"
     },
@@ -15762,7 +15762,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "90",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -16180,7 +16180,7 @@
     {
       "qid": "quant-635",
       "passage_text": "",
-      "question_text": "In an island called Rich, they use a currency called Mint (M). It is available in notes of four denominations — 1M, 12M, 144M, 1728M. What is the minimum number of notes required to pay an exact amount of (12^3)-1 M?",
+      "question_text": "In an island called Rich, they use a currency called Mint (M). It is available in notes of four denominations — 1M, 12M, 144M, 1728M. What is the minimum number of notes required to pay an exact amount of $12^3$-1 M?",
       "options": [
         {
           "data_option": "1",
@@ -16634,7 +16634,7 @@
     },
     {
       "qid": "quant-653",
-      "passage_text": "Rajesh found a decimal number which when represented in bases 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
+      "passage_text": "Rajesh found a decimal number which when represented in bases 2, 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
       "question_text": "What is the smallest positive decimal number satisfying this property?",
       "options": [],
       "correct_option_data": "59",
@@ -16644,7 +16644,7 @@
     },
     {
       "qid": "quant-654",
-      "passage_text": "Rajesh found a decimal number which when represented in bases 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
+      "passage_text": "Rajesh found a decimal number which when represented in bases 2, 3, 4, 5 and 6 ends in 1, 2, 3, 4 and 5, respectively.",
       "question_text": "How many such three-digit decimal numbers are possible?",
       "options": [],
       "correct_option_data": "15",
@@ -16727,7 +16727,7 @@
       "passage_text": "",
       "question_text": "N is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is",
       "options": [],
-      "correct_option_data": null,
+      "correct_option_data": "27",
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 182106)\n\n**Passage:**\nN is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is\n\nN is a natural number less than 100 (N>1). Ram finds out all the integers that can divide N without leaving a remainder. He arranges these integers in the ascending order and finds out that the integers are in an arithmetic progression. The number of values that N can take is\n\n**Options:**\n\n**Correct Answer:** null"
@@ -20877,6 +20877,1751 @@
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 11394)\n\n**Passage:**\nGopal went to a fruit market with certain amount of money. With this money he can buy either 50 oranges or 40 mangoes. He retains 10% of the money for taxi fare. If he buys 20 mangoes, then the number of oranges he can buy is\n\n25\n\n18\n\n20\n\nNone of these\n\nGopal went to a fruit market with certain amount of money. With this money he can buy either 50 oranges or 40 mangoes. He retains 10% of the money for taxi fare. If he buys 20 mangoes, then the number of oranges he can buy is\n\n**Options:**\n- **A**. 25\n- **B**. 18\n- **C**. 20\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-801",
+      "passage_text": "",
+      "question_text": "A man has enough money to pay X for 21 days or to pay Y for 28 days. If both X and Y start working together, for how long would the man be able to pay them.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 16997)\n\n**Passage:**\nA man has enough money to pay X for 21 days or to pay Y for 28 days. If both X and Y start working together, for how long would the man be able to pay them.\n\n10\n\n8\n\n14\n\n12\n\nA man has enough money to pay X for 21 days or to pay Y for 28 days. If both X and Y start working together, for how long would the man be able to pay them.\n\n**Options:**\n- **A**. 10\n- **B**. 8\n- **C**. 14\n- **D**. 12\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-802",
+      "passage_text": "",
+      "question_text": "In a running race, when one runner allows another runner to stay ahead at the start of the race, then it is termed as startup and when runners reach the finishing line at the same time, then it is termed as dead heat. In a race of 4 km distance, Anu wins by 600m over Binu. Binu can give a startup of 200m to Caira in a 4 km race. By how much distance should Caira get startup so that the race between Anu and Caira ends in dead heat in the same race of 4 km?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "700m",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "750m",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "770m",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "725m",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277322)\n\n**Passage:**\nIn a running race, when one runner allows another runner to stay ahead at the start of the race, then it is termed as startup and when runners reach the finishing line at the same time, then it is termed as dead heat. In a race of 4 km distance, Anu wins by 600m over Binu. Binu can give a startup of 200m to Caira in a 4 km race. By how much distance should Caira get startup so that the race between Anu and Caira ends in dead heat in the same race of 4 km?\n\n700m\n\n750m\n\n770m\n\n725m\n\nIn a running race, when one runner allows another runner to stay ahead at the start of the race, then it is termed as startup and when runners reach the finishing line at the same time, then it is termed as dead heat. In a race of 4 km distance, Anu wins by 600m over Binu. Binu can give a startup of 200m to Caira in a 4 km race. By how much distance should Caira get startup so that the race between Anu and Caira ends in dead heat in the same race of 4 km?\n\n**Options:**\n- **A**. 700m\n- **B**. 750m\n- **C**. 770m\n- **D**. 725m\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-803",
+      "passage_text": "",
+      "question_text": "Rohit purchased a cistern which had a leakage. The cistern can be filled by two inlet pipes, which can individually fill the cistern in 12 min and 15 min respectively. Despite leakage, the two inlet pipes together can fill the cistern in 20 min. How long will it take to empty the completely full the cistern due to leakage?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10 min.",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12 min.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15 min.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16 min.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277146)\n\n**Passage:**\nRohit purchased a cistern which had a leakage. The cistern can be filled by two inlet pipes, which can individually fill the cistern in 12 min and 15 min respectively. Despite leakage, the two inlet pipes together can fill the cistern in 20 min. How long will it take to empty the completely full the cistern due to leakage?\n\n10 min.\n\n12 min.\n\n15 min.\n\n16 min.\n\nRohit purchased a cistern which had a leakage. The cistern can be filled by two inlet pipes, which can individually fill the cistern in 12 min and 15 min respectively. Despite leakage, the two inlet pipes together can fill the cistern in 20 min. How long will it take to empty the completely full the cistern due to leakage?\n\n**Options:**\n- **A**. 10 min.\n- **B**. 12 min.\n- **C**. 15 min.\n- **D**. 16 min.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-804",
+      "passage_text": "",
+      "question_text": "At what time between 2.00 pm and 3.00 pm,the two arms of a watch are completely opposite to each other ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:40 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:44 pm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:45 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:47 pm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277141)\n\n**Passage:**\nAt what time between 2.00 pm and 3.00 pm,the two arms of a watch are completely opposite to each other ?\n\n2.40 pm\n\n2.44 pm\n\n2.45 pm\n\n247 pm\n\nAt what time between 2.00 pm and 3.00 pm,the two arms of a watch are completely opposite to each other ?\n\n**Options:**\n- **A**. 2.40 pm\n- **B**. 2.44 pm\n- **C**. 2.45 pm\n- **D**. 247 pm\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-805",
+      "passage_text": "",
+      "question_text": "Mr. Vinay walks up on a moving up escalator to save time. He takes 100 steps while going up. On one particular day, due to a power failure for 20 seconds, he took 18 seconds more than his usual time to reach the top of the escalator. How many steps are there on the escalator?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "190 steps",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1100 steps",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "900 steps",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1000 steps",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 33559)\n\n**Passage:**\nMr. Vinay walks up on a moving up escalator to save time. He takes 100 steps while going up. On one particular day, due to a power failure for 20 seconds, he took 18 seconds more than his usual time to reach the top of the escalator. How many steps are there on the escalator?\n\n190 steps\n\n1100 steps\n\n900 steps\n\n1000 steps\n\nMr. Vinay walks up on a moving up escalator to save time. He takes 100 steps while going up. On one particular day, due to a power failure for 20 seconds, he took 18 seconds more than his usual time to reach the top of the escalator. How many steps are there on the escalator?\n\n**Options:**\n- **A**. 190 steps\n- **B**. 1100 steps\n- **C**. 900 steps\n- **D**. 1000 steps\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-806",
+      "passage_text": "",
+      "question_text": "If $\\log_47=x,\\ \\log_721=y$ then the value of $\\frac{\\ 1}{2}\\log_212$ in terms of x, y is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$x(y-1) + 2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$x(y-1) + 1$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2x(y-1) + 2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2x(y-1) + 1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, $\\log_47$= $\\ \\frac{\\ \\log\\ 7}{\\log\\ 4}\\ =\\ x$\n\n$\\ \\frac{\\ \\log\\ 7}{2\\log\\ 2}\\ =\\ x$\n\n$\\ \\frac{\\ \\log\\ 7}{\\log\\ 2}\\ =\\ 2x$ \n\n$\\ \\frac{\\ \\log\\ 21}{\\log\\ 7}\\ =\\ y$\n\n$\\ \\frac{\\ \\log\\ 7\\ +\\ \\log\\ 3}{\\log\\ 7}\\ =\\ y$\n\n1+ $\\ \\frac{\\log\\ 3}{\\log\\ 7}\\ =\\ y$ \n\n$\\ \\frac{\\log\\ 3}{\\log\\ 7}\\ =\\ y$ -1\n\n2x(y-1)  = $\\ \\frac{\\log\\ 3}{\\log\\ 2}$\n\n$\\ \\frac{\\ 1}{2}\\log_212$ = $\\frac{1}{2}$*$\\ \\frac{\\ \\left(\\log\\ 3+2\\log\\ 2\\right)}{\\log\\ 2}$\n\n= $\\frac{1}{2}$2x(y-1)+ 1\n\n=$x(y-1) + 1$\n\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294966)\n\n**Passage:**\nIf log ⁡ 4 7 = x , log ⁡ 7 21 = y \\log_47=x,\\ \\log_721=y lo g 4 ​ 7 = x , lo g 7 ​ 2 1 = y then the value of 1 2 log ⁡ 2 12 \\ \\frac{\\ 1}{2}\\log_212 2 1 ​ lo g 2 ​ 1 2 in terms of x, y is\n\nx(y-1) + 2\n\nx(y-1) + 1\n\n2x(y-1) + 2\n\n2x(y-1) + 1\n\nIf log ⁡ 4 7 = x , log ⁡ 7 21 = y \\log_47=x,\\ \\log_721=y lo g 4 ​ 7 = x , lo g 7 ​ 2 1 = y then the value of 1 2 log ⁡ 2 12 \\ \\frac{\\ 1}{2}\\log_212 2 1 ​ lo g 2 ​ 1 2 in terms of x, y is\n\n**Options:**\n- **A**. x(y-1) + 2\n- **B**. x(y-1) + 1\n- **C**. 2x(y-1) + 2\n- **D**. 2x(y-1) + 1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-807",
+      "passage_text": "",
+      "question_text": "If $a =\\frac{\\ 9-\\sqrt{\\ 77}}{2}$ ​ , then the value of $a^2 + \\frac{1}{a^2}$ is",
+      "options": [],
+      "correct_option_data": "79",
+      "solution_text": "a = $\\ \\frac{\\ 9-\\sqrt{\\ 77}}{2}$\n\n$\\frac{1}{a}$ = $\\frac{2}{\\ 9-\\sqrt{\\ 77}}\\times\\ \\frac{9+\\sqrt{\\ 77}}{\\ 9+\\sqrt{\\ 77}}$ = $2\\times\\ \\frac{9+\\sqrt{\\ 77}}{\\ 81-77}$ = $\\ \\frac{\\ 9+\\sqrt{\\ 77}}{2}$\n$a^2 + \\frac{1}{a^2}$ \n\n= $\\frac{81+77-18\\sqrt{77}}{4}$ + $\\frac{81+77+18\\sqrt{77}}{4}$ = 79\n\n79 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 294968)\n\n**Passage:**\nIf a = 9 − 77 2 \\ \\frac{\\ 9-\\sqrt{\\ 77}}{2} 2 9 − 7 7 ​ ​ , then the value of a 2 + 1 a 2 a^2 + \\frac{1}{a^2} a 2 + a 2 1 ​ is\n\nIf a = 9 − 77 2 \\ \\frac{\\ 9-\\sqrt{\\ 77}}{2} 2 9 − 7 7 ​ ​ , then the value of a 2 + 1 a 2 a^2 + \\frac{1}{a^2} a 2 + a 2 1 ​ is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-808",
+      "passage_text": "",
+      "question_text": "If $\\log_6a=3$ and $\\log_{b}3=6$, then $\\log_2\\left(\\frac{b^{18}}{a}\\right)$ is equal to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{3}$​",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "-3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{6}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, $\\log_6a=3$ and $\\log_{b}3=6$\n=> a = $6^3$ and b$^6$ = 3 \n$\\log_2\\left(\\frac{b^{18}}{a}\\right)=\\ \\log_2\\left(\\frac{3^3}{216}\\right)$\n=> $\\log_2\\left(\\frac{1}{8}\\right)=\\ -3$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 296195)\n\n**Passage:**\nIf log ⁡ 6 a = 3 \\log_6a=3 lo g 6 ​ a = 3 and log ⁡ b 3 = 6 \\log_{b}3=6 lo g b ​ 3 = 6 , then log ⁡ 2 ( b 18 a ) \\log_2\\left(\\frac{b^{18}}{a}\\right) lo g 2 ​ ( a b 1 8 ​ ) is equal to\n\n1 3 \\frac{1}{3} 3 1 ​\n\n3\n\n-3\n\n1 6 \\frac{1}{6} 6 1 ​\n\nIf log ⁡ 6 a = 3 \\log_6a=3 lo g 6 ​ a = 3 and log ⁡ b 3 = 6 \\log_{b}3=6 lo g b ​ 3 = 6 , then log ⁡ 2 ( b 18 a ) \\log_2\\left(\\frac{b^{18}}{a}\\right) lo g 2 ​ ( a b 1 8 ​ ) is equal to\n\n**Options:**\n- **A**. 13\\frac{1}{3}31​\n- **B**. 3\n- **C**. -3\n- **D**. 16\\frac{1}{6}61​\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-809",
+      "passage_text": "",
+      "question_text": "For positive real values of $x$ and $y$ , log ⁡ $\\log_2x^3+\\log_3y^4\\ =24$ and $\\log_4x+\\log_{27}y\\ =3$. Find the value of $xy$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "216",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "288",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "576",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "432",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, $\\log_2x^3+\\log_3y^4\\ =24,\\ \\ \\log_4x+\\log_{27}y\\ =3$\n=> $3\\log_2x+4\\log_3y\\ =24,\\ \\ \\frac{1}{2}\\log_2x+\\frac{1}{3}\\log_3y\\ =3$\nAssuming $\\log_2x\\ =\\ a,\\ \\log_3y=b$\n$3a+4b = 24$\n$\\frac{a}{2}+\\frac{b}{3}=3$\nSolving both equations, $a$=4 and $b$=3\nHence, $\\log_2x\\ =4,\\ \\log_3y\\ =\\ 3$\n=> $x$ = $2^4=16$ and $y\\ =\\ 3^3\\ =\\ 27$\nHence, $xy$ = 16 * 27 =432",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 296864)\n\n**Passage:**\nFor positive real values of x x x and y y y , log ⁡ 2 x 3 + log ⁡ 3 y 4 = 24 \\log_2x^3+\\log_3y^4\\ =24 lo g 2 ​ x 3 + lo g 3 ​ y 4 = 2 4 and log ⁡ 4 x + log ⁡ 27 y = 3 \\log_4x+\\log_{27}y\\ =3 lo g 4 ​ x + lo g 2 7 ​ y = 3 . Find the value of x y xy x y .\n\n216\n\n288\n\n576\n\n432\n\nFor positive real values of x x x and y y y , log ⁡ 2 x 3 + log ⁡ 3 y 4 = 24 \\log_2x^3+\\log_3y^4\\ =24 lo g 2 ​ x 3 + lo g 3 ​ y 4 = 2 4 and log ⁡ 4 x + log ⁡ 27 y = 3 \\log_4x+\\log_{27}y\\ =3 lo g 4 ​ x + lo g 2 7 ​ y = 3 . Find the value of x y xy x y .\n\n**Options:**\n- **A**. 216\n- **B**. 288\n- **C**. 576\n- **D**. 432\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-810",
+      "passage_text": "",
+      "question_text": "If $x$, $y$ are positive integers and log ⁡ $\\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right)$ = 0, then $xy$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right)$ = 0\n$\\log_{3^y}\\left(\\log_{4^x}4096\\right)$ = 1\n$\\log_{4^x}4096\\ =\\ 3^y$\n$\\log_{2^{2x}}2^{12}\\ =\\ 3^y$\n$\\frac{12}{2x}$ = $3^y$\n$6 = x*3^y$\n$2*3$ = $x*3^y$\nx = 2 and y = 1\nThe value of xy = 2\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 300580)\n\n**Passage:**\nIf x, y are positive integers and log ⁡ 2 x 3 y ( log ⁡ 3 y ( log ⁡ 4 x 4096 ) ) \\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right) lo g 2 x 3 y ​ ( lo g 3 y ​ ( lo g 4 x ​ 4 0 9 6 ) ) = 0, then xy is\n\n3\n\n6\n\n2\n\n12\n\nIf x, y are positive integers and log ⁡ 2 x 3 y ( log ⁡ 3 y ( log ⁡ 4 x 4096 ) ) \\log_{2^x3^y}\\left(\\log_{3^y}\\left(\\log_{4^x}4096\\right)\\right) lo g 2 x 3 y ​ ( lo g 3 y ​ ( lo g 4 x ​ 4 0 9 6 ) ) = 0, then xy is\n\n**Options:**\n- **A**. 3\n- **B**. 6\n- **C**. 2\n- **D**. 12\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-811",
+      "passage_text": "",
+      "question_text": "If both the roots of equation $x^{2}+px+p+3=0$ are real and less than 4.What is the range of p?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$(-\\infty ,8)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(-\\infty ,\\frac{-19}{5})$ $\\bigcup [6,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "($\\frac{-19}{5}$, -2] $\\bigcup [6,\\infty)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "($\\frac{-19}{5}, \\infty$)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since the roots are real,\nD $\\geq$ 0\n$p^{2}-4(p+3)$ $\\geq$ 0\n$(p+2)\\times(p-6)\\geq$ 0\nThis occurs when both (p+2) and (p-6) are positive => p$\\geq$-2 and p$\\geq$6, common range is p$\\geq$6\nor both (p+2) and (p-6) are negative =>  common range is p $\\leq$ -2\np $\\leq$ -2 and p $\\geq$ 6 -------------------(1)\nGiven both the roots of the equation $\\alpha_{1}$ and $\\alpha_{2}$ are less than 4\nf(4) > 0 (As a>0, the curve is upward facing)\n16+4p+p+3 > 0\n19+5p > 0     \np>$\\frac{-19}{5}$---------------------(2)\nAs individual roots are less than 4, i.e $\\alpha_{1}$ < 4 and $\\alpha_{2}$ <4\nwhere $\\alpha_{1}$ and $\\alpha_{2}$ are roots of the equation...\nSumming them, we get $\\alpha_{1}$+$\\alpha_{2}$ < 8\n-p < 8(Sum of roots of equation=-b/a)\np > -8   -----------------------(3)\nThe common range from (1), (2) and (3), $(\\frac{-19}{5}, -2] \\bigcup [6,\\infty)$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf both the roots of equation $x^{2}+px+p+3=0$ are real and less than 4.What is the range of p?\n\n**Options:**\n- **A**. $(-\\infty ,8)$\n- **B**. $(-\\infty ,\\frac{-19}{5})$ $\\bigcup [6,\\infty)$\n- **C**. ($\\frac{-19}{5}$, -2] $\\bigcup [6,\\infty)$ ✅\n- **D**. ($\\frac{-19}{5}, \\infty$)\n\n**Correct Answer:** null\n\n**Solution:**\nSince the roots are real,\nD $\\geq$ 0\n$p^{2}-4(p+3)$ $\\geq$ 0\n$(p+2)\\times(p-6)\\geq$ 0\nThis occurs when both (p+2) and (p-6) are positive => p$\\geq$-2 and p$\\geq$6, common range is p$\\geq$6\nor both (p+2) and (p-6) are negative =>  common range is p $\\leq$ -2\np $\\leq$ -2 and p $\\geq$ 6 -------------------(1)\nGiven both the roots of the equation $\\alpha_{1}$ and $\\alpha_{2}$ are less than 4\nf(4) > 0 (As a>0, the curve is upward facing)\n16+4p+p+3 > 0\n19+5p > 0     \np>$\\frac{-19}{5}$---------------------(2)\nAs individual roots are less than 4, i.e $\\alpha_{1}$ < 4 and $\\alpha_{2}$ <4\nwhere $\\alpha_{1}$ and $\\alpha_{2}$ are roots of the equation...\nSumming them, we get $\\alpha_{1}$+$\\alpha_{2}$ < 8\n-p < 8(Sum of roots of equation=-b/a)\np > -8   -----------------------(3)\nThe common range from (1), (2) and (3), $(\\frac{-19}{5}, -2] \\bigcup [6,\\infty)$"
+    },
+    {
+      "qid": "quant-812",
+      "passage_text": "",
+      "question_text": "In a class of 20 students, 60% are boys, and the rest of the students are girls. The average weight of boys is 55 kg. The weights of all the students in the class are distinct integers. If the average weight of the class is 45 kg, then what is the maximum weight of the girl who weighs the least?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25 kg.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "26 kg.",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "34 kg.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "30 kg.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the class of 20 students there are 60% boys and the rest are girls.\nThus, there are 12 boys and 8 girls.\nAverage weight of the class = 45 kg\nThus, the total weight of the class = 45*20 = 900 kg\nAverage weight of the boys = 55 kg\nThus, the total weight of the boys = 55*12 = 660 kg\nHence, the total weight of the girls = 900 - 600 = 240 kg.\nTherefore, the average weight of girls = 30 kg.\nTo find the maximum weight of the girl who weighs the least we will have to distribute the weights of the girls around the average.\nThis can be done as:-\n26, 27, 28, 29, 31, 32, 33 and 34.(Since the weights of all the students are distinct)\nThus, the maximum weight of the girl who weighs the least = 26 kg\nHence, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 20 students, 60% are boys, and the rest of the students are girls. The average weight of boys is 55 kg. The weights of all the students in the class are distinct integers. If the average weight of the class is 45 kg, then what is the maximum weight of the girl who weighs the least?\n\n**Options:**\n- **A**. 25 kg.\n- **B**. 26 kg. ✅\n- **C**. 34 kg.\n- **D**. 30 kg.\n\n**Correct Answer:** null\n\n**Solution:**\nIn the class of 20 students there are 60% boys and the rest are girls.\nThus, there are 12 boys and 8 girls.\nAverage weight of the class = 45 kg\nThus, the total weight of the class = 45*20 = 900 kg\nAverage weight of the boys = 55 kg\nThus, the total weight of the boys = 55*12 = 660 kg\nHence, the total weight of the girls = 900 - 600 = 240 kg.\nTherefore, the average weight of girls = 30 kg.\nTo find the maximum weight of the girl who weighs the least we will have to distribute the weights of the girls around the average.\nThis can be done as:-\n26, 27, 28, 29, 31, 32, 33 and 34.(Since the weights of all the students are distinct)\nThus, the maximum weight of the girl who weighs the least = 26 kg\nHence, option B is the correct answer."
+    },
+    {
+      "qid": "quant-813",
+      "passage_text": "",
+      "question_text": "Consider the figure given below. The length of PQ is equal to the length of the radius of the circle. O is the center of the circle and PT passes through O. What is the measure of angle QST if the measure of angle RTS is 70°?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "80°",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "40°",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "https://cracku.in/media/uploads/5_CeRcT0J.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider the figure given below. The length of PQ is equal to the length of the radius of the circle. O is the center of the circle and PT passes through O. What is the measure of angle QST if the measure of angle RTS is 70°?\n\n**Options:**\n- **A**. 90°\n- **B**. 60°\n- **C**. 80° ✅\n- **D**. 40°\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-814",
+      "passage_text": "",
+      "question_text": "5 men, 4 women, and 3 children can complete a task in 20 days. 4 men and 5 women can complete the same task in 25 days. The number of days 10 men, 5 women, and 10 children will take to complete the work is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume that a man completes 'm' units of work in a day, a woman completes 'w' units of work in a day and a child completes 'c' units of work in a day. \n5 men, 4 women, and 3 children can complete a task in 20 days. \nTotal work = 20*(5m+4w+3c).\n4 men and 5 women can complete the same task in 25 days.\n=> Total work = 25*(4m+5w)\n20*(5m+4w+3c) = 25*(4m+5w)\n100m + 80w + 60c = 100m + 125w\n=> 60c = 45w\n4c = 3w\n10 men, 5 women, and 10 children:\nWe know that the total work = 100m + 125w\nLet x be the number of days taken by 10 men, 5 women, and 10 children to complete the work.\nx*(10m+5w+10c) = 100m + 125w\nx*(10m+5w+7.5w) = 100m + 125w\nx*(10m+12.5w) = 100m+125w\n=> x = 10 days.\nTherefore, option B is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n5 men, 4 women, and 3 children can complete a task in 20 days. 4 men and 5 women can complete the same task in 25 days. The number of days 10 men, 5 women, and 10 children will take to complete the work is\n\n**Options:**\n- **A**. 8\n- **B**. 10 ✅\n- **C**. 12\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that a man completes 'm' units of work in a day, a woman completes 'w' units of work in a day and a child completes 'c' units of work in a day. \n5 men, 4 women, and 3 children can complete a task in 20 days. \nTotal work = 20*(5m+4w+3c).\n4 men and 5 women can complete the same task in 25 days.\n=> Total work = 25*(4m+5w)\n20*(5m+4w+3c) = 25*(4m+5w)\n100m + 80w + 60c = 100m + 125w\n=> 60c = 45w\n4c = 3w\n10 men, 5 women, and 10 children:\nWe know that the total work = 100m + 125w\nLet x be the number of days taken by 10 men, 5 women, and 10 children to complete the work.\nx*(10m+5w+10c) = 100m + 125w\nx*(10m+5w+7.5w) = 100m + 125w\nx*(10m+12.5w) = 100m+125w\n=> x = 10 days.\nTherefore, option B is the right answer."
+    },
+    {
+      "qid": "quant-815",
+      "passage_text": "",
+      "question_text": "A shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water.  If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "33.33%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the price of milk be $x$ and the price of water be $y$.\nNow, the shopkeeper mixes milk and water in the ratio $3:5$.\nThe cost of 1 litre of the mixture for the milkman = $\\dfrac{3x+5y}{5+3}$ = $\\dfrac{3x+5y}{8}$\nAverage price of 1 litre of milk and water = $\\dfrac{x+y}{2}$\nWe have to find the maximum possible profit that the shopkeeper could have made provided milk does not cost more than 5 times the cost of water. Therefore, x=5y will be the limiting condition.\nSubstituting x = 5y and calculating the profit percentage, we get,\nProfit percentage =$\\dfrac{\\frac{6y}{2}-\\frac{20y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\dfrac{\\frac{4y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\frac{4}{20}$ = $20$%.\nThe maximum possible profit percentage cannot exceed $20 %$ and hence, option B is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper mixes milk and water in the ratio 3:5. He marks up the price of the mixture and sells one litre of the mixture at a price which is equal to the average price of one litre of milk and water.  If it is known that water is not available free of cost and milk does not cost more than five times the cost of water, then the maximum profit earned by the shopkeeper cannot exceed\n\n**Options:**\n- **A**. 25%\n- **B**. 20% ✅\n- **C**. 16%\n- **D**. 33.33%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the price of milk be $x$ and the price of water be $y$.\nNow, the shopkeeper mixes milk and water in the ratio $3:5$.\nThe cost of 1 litre of the mixture for the milkman = $\\dfrac{3x+5y}{5+3}$ = $\\dfrac{3x+5y}{8}$\nAverage price of 1 litre of milk and water = $\\dfrac{x+y}{2}$\nWe have to find the maximum possible profit that the shopkeeper could have made provided milk does not cost more than 5 times the cost of water. Therefore, x=5y will be the limiting condition.\nSubstituting x = 5y and calculating the profit percentage, we get,\nProfit percentage =$\\dfrac{\\frac{6y}{2}-\\frac{20y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\dfrac{\\frac{4y}{8}}{\\frac{20y}{8}}$\n=> Profit percentage = $\\frac{4}{20}$ = $20$%.\nThe maximum possible profit percentage cannot exceed $20 %$ and hence, option B is the right answer."
+    },
+    {
+      "qid": "quant-816",
+      "passage_text": "",
+      "question_text": "One of the angles of an isosceles triangle is $120^{o}$. What is the circum-radius of this triangle if its shorter side is 12m",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24m",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12$\\sqrt{3}$m",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12$\\sqrt{2}$m",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12m",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nOne of the angles of an isosceles triangle is $120^{o}$. What is the circum-radius of this triangle if its shorter side is 12m\n\n**Options:**\n- **A**. 24m\n- **B**. 12$\\sqrt{3}$m\n- **C**. 12$\\sqrt{2}$m\n- **D**. 12m ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-817",
+      "passage_text": "",
+      "question_text": "Cities A and B are 1500 km apart and lie in different time zones. A plane departs from city A at 9 AM and reaches city B at 1 PM. Then, the plane departs from city B at 3 AM and travels at twice the speed with which it traveled from city A to city B. It reaches city A at 2 AM. What is the minimum time difference between the 2 cities (in hours)?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCities A and B are 1500 km apart and lie in different time zones. A plane departs from city A at 9 AM and reaches city B at 1 PM. Then, the plane departs from city B at 3 AM and travels at twice the speed with which it traveled from city A to city B. It reaches city A at 2 AM. What is the minimum time difference between the 2 cities (in hours)?\n\n**Options:**\n\n**Correct Answer:** 2"
+    },
+    {
+      "qid": "quant-818",
+      "passage_text": "",
+      "question_text": "There are 12 points in a plane out of which 5 are collinear. How many quadilaterals can be formed using these 12 points?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "490",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "491",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "420",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "435",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 12 points in a plane out of which 5 are collinear. How many quadilaterals can be formed using these 12 points?\n\n**Options:**\n- **A**. 490\n- **B**. 491\n- **C**. 420 ✅\n- **D**. 435\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-819",
+      "passage_text": "",
+      "question_text": "For every real x, if f(x+1) + f(x-1) = f(x), then what is the smallest positive value of k, if f(x+k) = f(x)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor every real x, if f(x+1) + f(x-1) = f(x), then what is the smallest positive value of k, if f(x+k) = f(x)?\n\n**Options:**\n- **A**. 6 ✅\n- **B**. 3\n- **C**. 5\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-820",
+      "passage_text": "",
+      "question_text": "A toy shop owner sources a rare toy from various retailers who sold the toy to him at different rates. He got 40% of his stock from a retailer who sold it to him at 100/piece, 25% of his stock from a retailer who sold it to him at 120/piece and 35% of the stock from retailer who sold it to him at 80/piece. The shop owner decides to keep a single marked price for all the pieces of the toy. What should be the marked price if he wants to earn 20% profit after offering 20% discount ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "₹140",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "₹126",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "₹135",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "₹147",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA toy shop owner sources a rare toy from various retailers who sold the toy to him at different rates. He got 40% of his stock from a retailer who sold it to him at 100/piece, 25% of his stock from a retailer who sold it to him at 120/piece and 35% of the stock from retailer who sold it to him at 80/piece. The shop owner decides to keep a single marked price for all the pieces of the toy. What should be the marked price if he wants to earn 20% profit after offering 20% discount ?\n\n**Options:**\n- **A**. ₹140\n- **B**. ₹126\n- **C**. ₹135\n- **D**. ₹147 ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-821",
+      "passage_text": "",
+      "question_text": "Eight men and three women can complete a certain work in nine days, which eleven men and x women take six days to complete. If x men and six women take nine days to complete the same work, find x?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nEight men and three women can complete a certain work in nine days, which eleven men and x women take six days to complete. If x men and six women take nine days to complete the same work, find x?\n\n**Options:**\n\n**Correct Answer:** 6"
+    },
+    {
+      "qid": "quant-822",
+      "passage_text": "",
+      "question_text": "What is the maximum number of acute interior angles that a 12 sided closed figure can enclose?",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the maximum number of acute interior angles that a 12 sided closed figure can enclose?\n\n**Options:**\n\n**Correct Answer:** 9"
+    },
+    {
+      "qid": "quant-823",
+      "passage_text": "",
+      "question_text": "In a GP the sum of the first six terms is 28 times the sum of the first three terms.If the fourth term is 108, then find the second term in the series ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "-12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let a be the first term and r be the common ratio.\ngiven, $a\\frac{(1 - r^6)}{1 - r} =  28 a\\frac{(1 - r^3)}{1 - r}$...(1)\nOn rearranging we get, 27 = $r^3(28 - r^3)$...(2)\nalso given, $ar^3 = 108$\n$r^3 = \\frac{108}{a}...(3)$\nsubstituting (3) in (2)\n$27 = \\frac{108}{a}(28 - \\frac{108}{a})$\n$= a^2 -112a + 432 = 0$\nOn solving we get a = 4 and 108.\na $\\neq$ 108 as then we will get r = $\\pm$ 1 which does not satisfy the condition given in (1)\nthus a = 4 and r = 3 (r $\\neq$ -3 as it does not satisfy (1))\n∴ the second term = $ar = 12$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a GP the sum of the first six terms is 28 times the sum of the first three terms.If the fourth term is 108, then find the second term in the series ?\n\n**Options:**\n- **A**. -12\n- **B**. -4\n- **C**. 12 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nLet a be the first term and r be the common ratio.\ngiven, $a\\frac{(1 - r^6)}{1 - r} =  28 a\\frac{(1 - r^3)}{1 - r}$...(1)\nOn rearranging we get, 27 = $r^3(28 - r^3)$...(2)\nalso given, $ar^3 = 108$\n$r^3 = \\frac{108}{a}...(3)$\nsubstituting (3) in (2)\n$27 = \\frac{108}{a}(28 - \\frac{108}{a})$\n$= a^2 -112a + 432 = 0$\nOn solving we get a = 4 and 108.\na $\\neq$ 108 as then we will get r = $\\pm$ 1 which does not satisfy the condition given in (1)\nthus a = 4 and r = 3 (r $\\neq$ -3 as it does not satisfy (1))\n∴ the second term = $ar = 12$"
+    },
+    {
+      "qid": "quant-824",
+      "passage_text": "",
+      "question_text": "Two persons A and B play a game of dice in which each person throws a die on its turn and the person who throws 6 first wins the game. A starts the game. Find the probability that A wins.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5/11",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6/11",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7/11",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4/11",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo persons A and B play a game of dice in which each person throws a die on its turn and the person who throws 6 first wins the game. A starts the game. Find the probability that A wins.\n\n**Options:**\n- **A**. 5/11\n- **B**. 6/11 ✅\n- **C**. 7/11\n- **D**. 4/11\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-825",
+      "passage_text": "",
+      "question_text": "Raghu has two daughters, Pinki and Soni. They are currently 8.5 years and 16 years old respectively. Raghu left a total of Rs.35000 for his daughters such that they may get equal amounts when each of them reaches the age of 21 years. The amount has been invested at 10% p.a. simple interest. How much did the elder daughter get at the time of the will?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "21000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "22000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaghu has two daughters, Pinki and Soni. They are currently 8.5 years and 16 years old respectively. Raghu left a total of Rs.35000 for his daughters such that they may get equal amounts when each of them reaches the age of 21 years. The amount has been invested at 10% p.a. simple interest. How much did the elder daughter get at the time of the will?\n\n**Options:**\n- **A**. 21000 ✅\n- **B**. 20000\n- **C**. 25000\n- **D**. 22000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-826",
+      "passage_text": "",
+      "question_text": "Two boats at a distance of 20 kms start moving towards each other. The ratio of their speed in the still water is 7:5. If both meet at the middle point in 20 minutes, then find the speed of the stream.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The relative speed of one boat with respect to the other = $\\ \\frac{\\ 20\\times\\ 60}{20}$  = 60 km/h =  a+x +b-x  = a + b  ........(1)\nSince the ratio of speeds is 7:5, then a+$\\ \\frac{\\ 7a}{5}$ = 60\n=> a  = 25 and b =35\nAssuming the speed of stream is x, then to meet in the middle, the speed of both boats in water should be equal.\nNow, a+x = b-x   => b-a  = 2x = 35-25 ........(2)\n=> x= 5 km/h",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo boats at a distance of 20 kms start moving towards each other. The ratio of their speed in the still water is 7:5. If both meet at the middle point in 20 minutes, then find the speed of the stream.\n\n**Options:**\n- **A**. 5 ✅\n- **B**. 10\n- **C**. 15\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nThe relative speed of one boat with respect to the other = $\\ \\frac{\\ 20\\times\\ 60}{20}$  = 60 km/h =  a+x +b-x  = a + b  ........(1)\nSince the ratio of speeds is 7:5, then a+$\\ \\frac{\\ 7a}{5}$ = 60\n=> a  = 25 and b =35\nAssuming the speed of stream is x, then to meet in the middle, the speed of both boats in water should be equal.\nNow, a+x = b-x   => b-a  = 2x = 35-25 ........(2)\n=> x= 5 km/h"
+    },
+    {
+      "qid": "quant-827",
+      "passage_text": "",
+      "question_text": "Raman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaman had a cubic metal solid. He kept it on a fixed base and hammered it such that the height reduced but the cross-section as viewed from the top was exactly the same as that before the hammering. As a result of the hammering, the density of the solid increased by 10%. What will be the percentage increase/decrease in the total area? (Enter your answer as the closest integer.)\n\n**Options:**\n- **A**. 6% ✅\n- **B**. 7%\n- **C**. 8%\n- **D**. 5%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-828",
+      "passage_text": "",
+      "question_text": "How many numbers will divide 2460 and 2640 leaving the same remainder?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "21",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many numbers will divide 2460 and 2640 leaving the same remainder?\n\n**Options:**\n- **A**. 15\n- **B**. 22\n- **C**. 18 ✅\n- **D**. 21\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-829",
+      "passage_text": "",
+      "question_text": "If the points A(2, a), B(b,2) C(-2,4) lie on the same line, then pick the correct relation between a and b?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "a+2b=4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "a-2b=4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the points A(2, a), B(b,2) C(-2,4) lie on the same line, then pick the correct relation between a and b?\n\n**Options:**\n- **A**. $\\frac{1}{a}+\\frac{1}{2b}=\\frac{1}{4}$\n- **B**. a+2b=4\n- **C**. a-2b=4\n- **D**. $\\frac{1}{a}-\\frac{1}{2b}=\\frac{1}{4}$ ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-830",
+      "passage_text": "",
+      "question_text": "If $m$ and $n$ are the roots of the quadratic equation $2x^2 - 16x + 28 = 0$, then find the value of $(1+m+m^2)(1+n+n^2)$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "397",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "411",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "367",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "381",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Sum of the roots $(m + n)$ = -(-16/2) = 8\nProduct of roots $(m*n)$ = 28/2 = 14\n$(1+m+m^2)(1+n+n^2)$\n$\\Rightarrow$ $1+m+m^2+n+mn+nm^2+n^2+mn^2+m^2n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+m^2+n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+(m+n)^2-2m*n$\n$\\Rightarrow$ $1+8+(14)^2+14(1+8)+(8)^2-2*14$\n$\\Rightarrow$ $367$\nHence, option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $m$ and $n$ are the roots of the quadratic equation $2x^2 - 16x + 28 = 0$, then find the value of $(1+m+m^2)(1+n+n^2)$.\n\n**Options:**\n- **A**. 397\n- **B**. 411\n- **C**. 367 ✅\n- **D**. 381\n\n**Correct Answer:** null\n\n**Solution:**\nSum of the roots $(m + n)$ = -(-16/2) = 8\nProduct of roots $(m*n)$ = 28/2 = 14\n$(1+m+m^2)(1+n+n^2)$\n$\\Rightarrow$ $1+m+m^2+n+mn+nm^2+n^2+mn^2+m^2n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+m^2+n^2$\n$\\Rightarrow$ $1+(m+n)+(m*n)^2+mn(1+m+n)+(m+n)^2-2m*n$\n$\\Rightarrow$ $1+8+(14)^2+14(1+8)+(8)^2-2*14$\n$\\Rightarrow$ $367$\nHence, option C is the correct answer."
+    },
+    {
+      "qid": "quant-831",
+      "passage_text": "",
+      "question_text": "The cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%. \n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16.67%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given, the discount percentage of the article is 20%.\nHence, S = $\\left(\\ \\frac{\\ 100-20}{100}\\right)M$\n=> $S=0.8M$\nNow, since, C, S and M are in GP, $S^2=CM$\n=> C = $\\ \\frac{S^2\\ }{M}$ = $\\ \\frac{0.8M\\times\\ 0.8M\\ }{M}$\n=> C = 0.64M\nIf cost price and profit are kept same then the selling price will be the same too. \nNow, C, S and M are in AP. => C+M = 2S   => 0.64M+ New M =  2*0.8M   \n=> New Marked Price = 0.96M\nHence discount percentage = $\\ \\frac{M-S}{M}\\times\\ 100$  = $\\ \\frac{0.16M}{0.96M}\\times\\ 100$ = 16.67%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost price(C), selling price(S) and the marked price(M) for an article is in geometric progression. The discount percentage for the article is 20%. \n\nRecently the shopkeeper changed the marked price and kept the cost price and profit is the same such that C, S and M are in arithmetic progression. What is the new discount percentage?\n\n**Options:**\n- **A**. 16.67% ✅\n- **B**. 15%\n- **C**. 10%\n- **D**. 12%\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, the discount percentage of the article is 20%.\nHence, S = $\\left(\\ \\frac{\\ 100-20}{100}\\right)M$\n=> $S=0.8M$\nNow, since, C, S and M are in GP, $S^2=CM$\n=> C = $\\ \\frac{S^2\\ }{M}$ = $\\ \\frac{0.8M\\times\\ 0.8M\\ }{M}$\n=> C = 0.64M\nIf cost price and profit are kept same then the selling price will be the same too. \nNow, C, S and M are in AP. => C+M = 2S   => 0.64M+ New M =  2*0.8M   \n=> New Marked Price = 0.96M\nHence discount percentage = $\\ \\frac{M-S}{M}\\times\\ 100$  = $\\ \\frac{0.16M}{0.96M}\\times\\ 100$ = 16.67%"
+    },
+    {
+      "qid": "quant-832",
+      "passage_text": "",
+      "question_text": "The average age of 225 employees in a company increases by 0.06 when a new employee joins the company. After this, another employee leaves the company and the average age of the company decreases by 0.04. Find the difference between the age of new employee and the employee who left the company.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1.5 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4.5 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the initial average age of 225 employees be ‘x’ years. Hence, the sum of the ages of 225 employees will be 225x. Let the age of the new employee be ‘a’. So after the new employee joins we have\n$\\frac{225x + a}{226} = x + .06$\nNow, let the age of the employee who left the company be ‘b’\nSo we have\n$\\frac{225x + a - b}{225} = x + .06 - 0.04$\n=> 225x + a - b = 225x + 4.5\n=> a - b = 4.5\nHence, the required value is 4.5 years",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average age of 225 employees in a company increases by 0.06 when a new employee joins the company. After this, another employee leaves the company and the average age of the company decreases by 0.04. Find the difference between the age of new employee and the employee who left the company.\n\n**Options:**\n- **A**. 1.5 years\n- **B**. 3 years\n- **C**. 4.5 years ✅\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the initial average age of 225 employees be ‘x’ years. Hence, the sum of the ages of 225 employees will be 225x. Let the age of the new employee be ‘a’. So after the new employee joins we have\n$\\frac{225x + a}{226} = x + .06$\nNow, let the age of the employee who left the company be ‘b’\nSo we have\n$\\frac{225x + a - b}{225} = x + .06 - 0.04$\n=> 225x + a - b = 225x + 4.5\n=> a - b = 4.5\nHence, the required value is 4.5 years"
+    },
+    {
+      "qid": "quant-833",
+      "passage_text": "",
+      "question_text": "If x+2, 2x+8 and 3x+14 are in arithmetic progression, find the value of x",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "x+2, 2x+8 and 3x+14 are always in arithmetic progression irrespective of the value of x. \nSo, the value of x can't be determined with just the above information",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 545)\n\n**Passage:**\nIf x+2, 2x+8 and 3x+14 are in arithmetic progression, find the value of x\n\n2\n\n3\n\n8\n\nCan't be determined\n\nIf x+2, 2x+8 and 3x+14 are in arithmetic progression, find the value of x\n\n**Options:**\n- **A**. 2\n- **B**. 3\n- **C**. 8\n- **D**. Can't be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-834",
+      "passage_text": "",
+      "question_text": "The sum of all natural numbers which are less than 1000 and are divisible by 2, 4 and 6 is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "42120",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "41040",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40960",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "41832",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "To find the sum of all natural numbers less than 1000 that are divisible by 2, 4, and 6, we need to find the sum of the multiples of the least common multiple (LCM) of these numbers, which is 12.\nThe LCM of 2, 4, and 6 is 12. This means that every number that is divisible by 2, 4, and 6 will also be divisible by 12.\nTo find the sum of multiples of 12 less than 1000, we'll first find the largest multiple of 12 less than 1000, which is $12\\times\\ 83\\ =\\ 996$\nNext, we'll use the formula for the sum of an arithmetic series:\n$S\\ =\\dfrac{n}{2}\\left[a_1+a_n\\right]$\nwhere S is the sum, n is the number of terms,$a_1$ is the first term, and $a_n$ is the last term.\nIn our case, $a_1$ = 12, $a_n$ = 996, and we need to find n.\n996 = 12 + (n - 1) 12\n996 = 12 + 12n -12\n12n = 996 \nn = 83\nSo, there are 83 terms in the series.\nNow, we can calculate the sum:\n$S\\ =\\dfrac{83}{2}\\left[12+996\\right]$\nS = 41832\nTherefore, the sum of all natural numbers less than 1000 that are divisible by 2, 4, and 6 is 41,832",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 553)\n\n**Passage:**\nThe sum of all natural numbers which are less than 1000 and are divisible by 2, 4 and 6 is?\n\n42120\n\n41040\n\n40960\n\n41832\n\nThe sum of all natural numbers which are less than 1000 and are divisible by 2, 4 and 6 is?\n\n**Options:**\n- **A**. 42120\n- **B**. 41040\n- **C**. 40960\n- **D**. 41832\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-835",
+      "passage_text": "",
+      "question_text": "All the natural numbers which were less than or equal to 'N' were written on a board. When one of the numbers was erased, the average of the remaining numbers was 28. Which number was erased?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the initial number of terms be n and the deleted number be p then\nn*(n+1)/2 - p = 28*(n-1)\n=> n^2 + n - 56n + 56 = 2p\n=> n^2 - 55n + 56 = 2p\n=> p = 1/2*(n^2 - 55n +56)\nSo, let us try to find the bounds of n. \n\nThe minimum value that p can take is 0. Therefore p >= 0 or 1/2*(n^2 - 55n +56) >= 0\nIt implies that n^2 - 55n + 56 >=0. We can find the roots of the quadratic equation and infer that n >=53.96. As n is a natural number, n >=54\n\nThe maximum value that p can take is n. Therefore p <= n or 1/2*(n^2 - 55n +56) <= n\nIt implies that n^2 - 57n + 56 >=0. So, n <= 56\n\nTherefore, the only possible values of n are 54, 55 and 56\n\np = 1/2*(n^2 - 55n +56)\nWhen n is 54, p equals 1\nWhen n is 55, p equals 28\nWehn n is 56, p equals 56\n\nSo p can take the value 1, 28 or 56\nHence the exact value of the deleted number cannot be determined.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 590)\n\n**Passage:**\nAll the natural numbers which were less than or equal to 'N' were written on a board. When one of the numbers was erased, the average of the remaining numbers was 28. Which number was erased?\n\n1\n\n3\n\n28\n\nCan't be determined\n\nAll the natural numbers which were less than or equal to 'N' were written on a board. When one of the numbers was erased, the average of the remaining numbers was 28. Which number was erased?\n\n**Options:**\n- **A**. 1\n- **B**. 3\n- **C**. 28\n- **D**. Can't be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-836",
+      "passage_text": "",
+      "question_text": "Three numbers are in AP with a common difference of 2. Thrice the first exceeds twice the third by 2. Find the middle number.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the numbers be a-2, a and a+2.\n\nAccording to the equation, 3(a-2) - 2(a+2) = 2 => a = 12.\n\nTherefore, the middle number is 12.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 1857)\n\n**Passage:**\nThree numbers are in AP with a common difference of 2. Thrice the first exceeds twice the third by 2. Find the middle number.\n\n8\n\n20\n\n14\n\n12\n\nThree numbers are in AP with a common difference of 2. Thrice the first exceeds twice the third by 2. Find the middle number.\n\n**Options:**\n- **A**. 8\n- **B**. 20\n- **C**. 14\n- **D**. 12\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-837",
+      "passage_text": "",
+      "question_text": "The ratio of the 15th term and 23rd term of an AP is 15:23. If the 30th term of the AP is 120, find the average of the first 75 terms of the series.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "124",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "152",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "150",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "142",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "a + 14d / a + 22d = 15/23 => 15a + 330d = 23a + 322d => a = d\n\na + 29d = 30a = 120 => a = 4. Therefore, average = 75/2( 8 + 74*4)/75 = 152",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2519)\n\n**Passage:**\nThe ratio of the 15th term and 23rd term of an AP is 15:23. If the 30th term of the AP is 120, find the average of the first 75 terms of the series.\n\n124\n\n152\n\n150\n\n142\n\nThe ratio of the 15th term and 23rd term of an AP is 15:23. If the 30th term of the AP is 120, find the average of the first 75 terms of the series.\n\n**Options:**\n- **A**. 124\n- **B**. 152\n- **C**. 150\n- **D**. 142\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-838",
+      "passage_text": "",
+      "question_text": "A, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2 (\\sqrt{3}+1)$ sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$4\\sqrt{3}$ sq cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$8(\\sqrt{3}-1)$ sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the side of the equilateral triangle be 'a'.\nThe circle shown is the circumcircle of the equilateral triangle.\nThe circumradius is given as 2.\nwkt circumradius of an equilateral triangle is given by $\\frac{a}{\\sqrt{3}}$\nSo, $\\frac{a}{\\sqrt{3}}=2$ => $a=2\\sqrt{3}$\nThe length of each side of the triangle is $2\\sqrt{3}$ cm. \n\nFor any equilateral triangle, the circumradius, median, altitude, inradius, all of them coicide\nHence, diameter AD bisects BC at E.\nHence BE = EC = $\\frac{2\\sqrt{3}}{2}=\\sqrt{3}$\nSo, area of the right angled triangle ABD is $\\frac{1}{2}\\cdot\\text{AD}\\cdot\\text{BE}=2\\sqrt{3}$ sq cm \nand the area of the quadrilateral ABDC is $4\\sqrt{3}$ sq cm\n\nOR \n\nTriangle ABD is a right triangle(Since AD is diameter)\nUsing Pythagoras theorem,  $\\text{AB}^2+\\text{BD}^2=\\text{AD}^2$, \n$(2\\sqrt{3})^2+\\text{BD}^2=4^2$ we get BD = 2 cm. \nSo, length of BD and DC is 2 cm. \n\nSo, area of the right angled triangle ABD is $2\\sqrt{3}$ sq cm and the area of the quadrilateral ABDC is $4\\sqrt{3}$ sq cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 272)\n\n**Passage:**\nA, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?\n\n2 ( 3 + 1 ) 2 (\\sqrt{3}+1) 2 ( 3 ​ + 1 ) sq cm\n\n4 3 4\\sqrt{3} 4 3 ​ sq cm\n\n8 ( 3 − 1 ) 8(\\sqrt{3}-1) 8 ( 3 ​ − 1 ) sq cm\n\nCan't be determined\n\nA, B, C and D are points on a circle such that ABC is a equilateral triangle and AD is a diameter of the circle. If the radius of the circle is 2 cm, what is the area of the quadrilateral ABDC?\n\n**Options:**\n- **A**. $2 (\\sqrt{3}+1)$ sq cm\n- **B**. $4\\sqrt{3}$ sq cm\n- **C**. $8(\\sqrt{3}-1)$ sq cm\n- **D**. Can't be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-839",
+      "passage_text": "Three friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is 3 \\sqrt{3} 3 ​ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number.\n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n3 0 0 30^0 3 0 0 , 11 π 11\\pi\\ 1 1 π\n\n6 0 0 , 11 π 60^0,\\ 11\\pi\\ 6 0 0 , 1 1 π\n\n3 0 0 , 22 π 30^0\\ ,\\ 22\\pi\\ 3 0 0 , 2 2 π\n\n6 0 0 , 22 π 60^0,\\ 22\\pi\\ 6 0 0 , 2 2 π",
+      "question_text": "Three friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is $\\sqrt{3}$ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number. \n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$30^0$, $11\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$60^0,\\ 11\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$30^0\\ ,\\ 22\\pi\\ $",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$60^0,\\ 22\\pi\\ $",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "The distance between Aranya- Saranya is maximum, so they must be standing exactly opposite to each other i.e the diameter of the circle.\n\nAlso stated that distance between Charu and Aranya is $\\sqrt{\\ 3}$ times the distance between Charu and Sharanya. \n\nLet distance between Charu and Sharanya. = x\n\n=> distance between Charu and Aranya = $\\sqrt{\\ 3}x$\n\nThe triangle formed within a semi-circle is a right-angled triangle. \n\nHence $AS^2=AC^2\\ +\\ CS^2$\n\n=> $AS\\ =\\ 2x$\n\nWhen sides are in the ratio 1 : $\\sqrt{\\ 3}$ : 2, then the corresponding angles would be $30^{\\circ\\ \\ },\\ 60^{\\circ\\ },\\ 90^{\\circ\\ }$\n\n=> $\\angle\\ CAS\\ =\\ 30^{\\circ\\ }$\n\nSo the angle between the line joining Aranya-Saranya and Aranya-Charu is $30^{\\circ\\ }$\n\nRadius of the circle = x.\n\nLength of the track = $2\\pi\\ x$\n\nOption A :$2\\pi\\ x$ = 11$\\pi\\ $ => x = 5.5\n\nOption C : $2\\pi\\ x$ = 22$\\pi\\ $ => x = 11\n\nSince x is an integer \n\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 292859)\n\n**Passage:**\nThree friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is 3 \\sqrt{3} 3 ​ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number.\n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n3 0 0 30^0 3 0 0 , 11 π 11\\pi\\ 1 1 π\n\n6 0 0 , 11 π 60^0,\\ 11\\pi\\ 6 0 0 , 1 1 π\n\n3 0 0 , 22 π 30^0\\ ,\\ 22\\pi\\ 3 0 0 , 2 2 π\n\n6 0 0 , 22 π 60^0,\\ 22\\pi\\ 6 0 0 , 2 2 π\n\nThree friends Aranya, Charu and Saranya are standing on a circular track. Aranya and Sharanya are standing on two ends of a diameter and the length of the chord connecting Aranya and Charu is $\\sqrt{3}$ times the length of the chord connecting Charu and Sharanya. It is also known that the length of the chord connecting Charu and Sharanya when measured in metres is a natural number. \n\nIf the angle between the lines joining Aranya-Saranya and Aranya-Charu is A and the length of the circular track is B metres, which of the following can be the value of (A,B)?\n\n**Options:**\n- **A**. $30^0$, $11\\pi\\ $\n- **B**. $60^0,\\ 11\\pi\\ $\n- **C**. $30^0\\ ,\\ 22\\pi\\ $\n- **D**. $60^0,\\ 22\\pi\\ $\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-840",
+      "passage_text": "",
+      "question_text": "A line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(5,3)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(9,-1)",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(-3,-5)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(3,1)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "A line that is parallel to 5x + 12y = 7 can be represented by \n\n5x + 12y = c\n\nNow, distance between these two lines\n\n$\\frac{\\left|7-c\\right|}{\\sqrt{5^2+12^2}}=2$\n\n$\\frac{\\left|7-c\\right|}{13}=2$\n\n$\\left|7-c\\right|=26$\n\n$7-c=26,\\ 7-c=-26$\n\n$c=-19,\\ c=33$\n\nHence, the new line is either\n\n5x + 12y = -19 or 5x + 12y = 33\n\nHence, only (9,-1) can lie on one of the lines.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 394677)\n\n**Passage:**\nA line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?\n\n(5,3)\n\n(9,-1)\n\n(-3,-5)\n\n(3,1)\n\nA line that is parallel to 5x + 12y = 7 and is at a distance of 2 units from it can pass through which of the following points?\n\n**Options:**\n- **A**. (5,3)\n- **B**. (9,-1)\n- **C**. (-3,-5)\n- **D**. (3,1)\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-841",
+      "passage_text": "",
+      "question_text": "A right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "144 + 40$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "144 + 80$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "72 + 40$\\sqrt2$ + 24$\\sqrt5$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "72 + 40$\\sqrt2$ + 48$\\sqrt5$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Since, $\\angle BAC=90^0, BC^2=AB^2+AC^2=576+576=1052$\n=> BC = 24$\\sqrt2$\nAF is the perpendicular as well as the median. Thus, BF = FC = 12$\\sqrt2$.\nSince, triangle AFB is perpendicular, $AF^2 = AB^2 - BF^2 = 576 - 288$\n=> AF = $12\\sqrt{2}$\nSince, the area of the triangles ABD = ADE = AEC, BD = DE = EC = 24$\\sqrt2$/3 = 8$\\sqrt2$ \nAlso, AF is the median of DE => DF = DE/2 = 8$\\sqrt2$/2 = 4$\\sqrt2$\nSince, ADF is right angled, $AD^2 = DF^2 + AF^2 = 32 + 288 = 320$\n=> AD = 8$\\sqrt5$\nThere are six triangles in the given figure. They are : ABC, ABD, ADE, AEC, BAE and CAD.\nThe perimeter of the triangles = (48 + 24$\\sqrt2$ ) + 2(24 + 8$\\sqrt2$ + 8$\\sqrt5$ ) + (8$\\sqrt2$ + 2x8$\\sqrt5$ ) + 2(24 + 16$\\sqrt2$ + 8$\\sqrt5$ ) = 144 + 80$\\sqrt2$ + 48$\\sqrt5$",
+      "image_url": "https://cracku.in/media/uploads/geoqn1.png",
+      "full_markdown": "### Question (qid: 39334)\n\n**Passage:**\nA right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.\n\n144 + 40 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\n144 + 80 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\n72 + 40 2 \\sqrt2 2 ​ + 24 5 \\sqrt5 5 ​\n\n72 + 40 2 \\sqrt2 2 ​ + 48 5 \\sqrt5 5 ​\n\nA right angled triangle with sides AB = AC = 24, is cut into three parts of equal area as shown in the figure given below. Find the sum of perimeters of all the six triangles (ABC, ABD, ADE, AEC, BAE and CAD) in the figure.\n\n**Options:**\n- **A**. 144 + 40$\\sqrt2$ + 48$\\sqrt5$\n- **B**. 144 + 80$\\sqrt2$ + 48$\\sqrt5$\n- **C**. 72 + 40$\\sqrt2$ + 24$\\sqrt5$\n- **D**. 72 + 40$\\sqrt2$ + 48$\\sqrt5$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-842",
+      "passage_text": "A circle is circumscribed around a regular octagon of area 3200 2 3200\\sqrt{\\ 2} 3 2 0 0 2 ​ sq cm. What is the radius of the circle (in cm)?",
+      "question_text": "A circle is circumscribed around a regular octagon of area $3200\\sqrt{\\ 2}$ sq cm. What is the radius of the circle (in cm)?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "The angle at the centre of the octagon = $\\frac{360}{8}$ = $45^0$\nSo 8 triangles with two sides as r and angle between them as $45^0$ are formed\nArea of one triangle = $\\ \\frac{\\ 1}{2}\\times\\ r\\times\\ r\\times\\ \\sin\\ 45$\n8 * $\\ \\frac{\\ 1}{2}\\times\\ r\\times\\ r\\times\\ \\sin\\ 45$ = $3200\\sqrt{\\ 2}$\nr = 40 cm\n40 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 311239)\n\n**Passage:**\nA circle is circumscribed around a regular octagon of area 3200 2 3200\\sqrt{\\ 2} 3 2 0 0 2 ​ sq cm. What is the radius of the circle (in cm)?\n\nA circle is circumscribed around a regular octagon of area $3200\\sqrt{\\ 2}$ sq cm. What is the radius of the circle (in cm)?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-843",
+      "passage_text": "",
+      "question_text": "The average of 9 numbers is found to be 24. However, it was later realized that 47 was counted as 74. If the error is rectified and the average is calculated again, then what will be the new average?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Average of 9 numbers is 24. So the sum of all possible number would be 24*9 = 216.\nNow it is given that 47 was counted as 74\nSo the actual sum should have been 216 - 74 + 47 = 189\nThus the correct average should be 189/9 = 21",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 46673)\n\n**Passage:**\nThe average of 9 numbers is found to be 24. However, it was later realized that 47 was counted as 74. If the error is rectified and the average is calculated again, then what will be the new average?\n\n23\n\n22\n\n21\n\n20\n\nThe average of 9 numbers is found to be 24. However, it was later realized that 47 was counted as 74. If the error is rectified and the average is calculated again, then what will be the new average?\n\n**Options:**\n- **A**. 23\n- **B**. 22\n- **C**. 21\n- **D**. 20\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-844",
+      "passage_text": "",
+      "question_text": "Rohit appeared in a management aptitude test namely ZAT, which has three sections viz. QA, VA and DM. In the test 2 marks are awarded for every correct answer whereas 0.5 marks are deducted for every incorrect answer. If the sectional cut-offs are 28, 24 and 22 and Rohit attempted the entire paper at an accuracy of 75% in each section, then find out the minimum number of questions he should attempt overall to clear all the sectional cut-offs?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "64",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let ‘$x$’, ‘$y$’, ‘$z$’ be the number of questions attempted by Rohit in the sections QA, VA and DM respectively.\nSince Rohit has to attain an accuracy of 75% in each of the section he has to attempt the number of question in a multiple of 4. \nMarks scored by Rohit in QA section = $\\dfrac{3x}{4}*2 - \\dfrac{x}{4}*0.5$\n$\\Rightarrow$ $\\dfrac{3x}{4}*2 - \\dfrac{x}{4}*0.5$ $\\geq$ 28\n $\\Rightarrow$ $\\dfrac{11x}{8}$ $\\geq$ 28\n$\\Rightarrow$ $\\dfrac{11x}{8}$ $\\geq$ 28\n$\\Rightarrow$ $x$ $\\geq$ 20.36 \n\nHence, we can say that Rohit has to attempt a minimum of 21 questions in the QA section. \nBut, to attain the accuracy of 75% he has to attempt 24 questions in the QA section.\n\nSimilarly, Marks scored by Rohit in VA section = $\\dfrac{3y}{4}*2 - \\dfrac{y}{4}*0.5$\n$\\Rightarrow$ $\\dfrac{3y}{4}*2 - \\dfrac{y}{4}*0.5$ $\\geq$ 24\n $\\Rightarrow$ $\\dfrac{11y}{8}$ $\\geq$ 24\n$\\Rightarrow$ $\\dfrac{11y}{8}$ $\\geq$ 24\n$\\Rightarrow$ $y$ $\\geq$ 17.45\n\nHence, we can say that Rohit has to attempt a minimum of 18 questions in the VA section. \nBut, to attain the accuracy of 75% he has to attempt 20 questions in the VA section. \n\nSimilarly, Marks scored by Rohit in DM section = $\\dfrac{3z}{4}*2 - \\dfrac{z}{4}*0.5$\n$\\Rightarrow$ $\\dfrac{3z}{4}*2 - \\dfrac{z}{4}*0.5$ $\\geq$ 22\n $\\Rightarrow$ $\\dfrac{11z}{8}$ $\\geq$ 22\n$\\Rightarrow$ $\\dfrac{11z}{8}$ $\\geq$ 22\n$\\Rightarrow$ $z$ $\\geq$ 16\nHence, we can say that Rohit has to attempt a minimum of 16 questions in the DM section. \nSince 16 is divisible by 4 hence, we can say that Rohit has to attempt a minimum of 16 questions in the DM section.\nHence the minimum number of questions that Rohit should attempt = 24 + 20 + 16 = 60.\nTherefore, option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 147250)\n\n**Passage:**\nRohit appeared in a management aptitude test namely ZAT, which has three sections viz. QA, VA and DM. In the test 2 marks are awarded for every correct answer whereas 0.5 marks are deducted for every incorrect answer. If the sectional cut-offs are 28, 24 and 22 and Rohit attempted the entire paper at an accuracy of 75% in each section, then find out the minimum number of questions he should attempt overall to clear all the sectional cut-offs?\n\n52\n\n56\n\n60\n\n64\n\nRohit appeared in a management aptitude test namely ZAT, which has three sections viz. QA, VA and DM. In the test 2 marks are awarded for every correct answer whereas 0.5 marks are deducted for every incorrect answer. If the sectional cut-offs are 28, 24 and 22 and Rohit attempted the entire paper at an accuracy of 75% in each section, then find out the minimum number of questions he should attempt overall to clear all the sectional cut-offs?\n\n**Options:**\n- **A**. 52\n- **B**. 56\n- **C**. 60\n- **D**. 64\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-845",
+      "passage_text": "Average marks scored by a class of 30 students in a maths test was 74. But after updating the answer key, the answer of one question was changed. This resulted in 20 students getting four additional marks and 10 students getting two marks deducted. What is the new average score for the class?\n\n80\n\n76\n\n78\n\n74",
+      "question_text": "Average marks scored by a class of 30 students in a maths test was 74. But after updating the answer key, the answer of one question was changed. This resulted in 20 students getting four additional marks and 10 students getting two marks deducted.  What is the new average score for the class?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "76",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "74",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Average marks scored by a class of 30 students in a maths test was 74. \n\nThe total score of 30 students= 74*30= 2220\n\nMarks added due to updating the answer =4*20\n\nMarks deducted due to updating the answer= -2*10\n\nNew total score= 2220+4*20-2*10= 2280\n\nNew average= 2280/30 =76\n\nOption B",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 288388)\n\n**Passage:**\nAverage marks scored by a class of 30 students in a maths test was 74. But after updating the answer key, the answer of one question was changed. This resulted in 20 students getting four additional marks and 10 students getting two marks deducted. What is the new average score for the class?\n\n80\n\n76\n\n78\n\n74\n\nAverage marks scored by a class of 30 students in a maths test was 74. But after updating the answer key, the answer of one question was changed. This resulted in 20 students getting four additional marks and 10 students getting two marks deducted.  What is the new average score for the class?\n\n**Options:**\n- **A**. 80\n- **B**. 76\n- **C**. 78\n- **D**. 74\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-846",
+      "passage_text": "",
+      "question_text": "The average of 100 unique natural numbers is 100. If it is known that the number of numbers below the average is twice the number of numbers above it, then the largest number among the 100 numbers cannot exceed",
+      "options": [],
+      "correct_option_data": "3961",
+      "solution_text": "The average of 100 unique natural numbers is 100. The number of numbers below the average is twice the numbers above it. \n\nLet x be the number of numbers below the average. \n=> Number of numbers above the average = 2x\nTotal number of numbers = 3x.\n100 is not of the form 3x.\nTherefore, 100 should be one of the 100 numbers and the remaining 99 numbers should be distributed above and below it. \n\n66 numbers are below 100 and 33 numbers are above 100.\nNow, for the highest number to be maximized, the sum of the remaining numbers should be minimized. \n\nLet us assume that the numbers below 100 are 1, 2, 3, 4, ...,66 (Since the sum has to be minimized).\n\nSum of the numbers below 100 = 1+2+3+4+....+66 = (66*67)/2 = 2211.\n\nLet us calculate the sum of the values above 100 (excluding the largest value).\nAgain, for the highest value to be maximized, every other value should be minimized. \nLet us assume that the numbers above 100 are 100, 101, 102,....,132.\nSum of the numbers greater than 100 = 101+102+103+.....+132\n                                                         = 1+2+3+...+132 - (1+2+....100)\n                                                         = (132*133)/2 - (100*101)/2\n                                                         = 8778 - 5050\n                                                         = 3728\n\nWe know that the average of the 100 numbers is 100.\n=> Sum of the 100 numbers = 100*100 = 10000.\n\nLet the largest number be X.\n2211 + 100 + 3728 + X = 10000\n6039 + X = 10000\n=> X = 3961\n\nTherefore, 3961 is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 213397)\n\n**Passage:**\nThe average of 100 unique natural numbers is 100. If it is known that the number of numbers below the average is twice the number of numbers above it, then the largest number among the 100 numbers cannot exceed\n\nThe average of 100 unique natural numbers is 100. If it is known that the number of numbers below the average is twice the number of numbers above it, then the largest number among the 100 numbers cannot exceed\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-847",
+      "passage_text": "",
+      "question_text": "In a class, the average age of all the girls is 20 years and boys is 30 years. The average age of the class is 28 years. The total number of boys and girls in the class can be",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "56",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the number of girls in the class be g and the boys be b.\nThe weight of the girls = 20 * g\nThe weight of the boys = 30 * b\nThe weight of the class = 28 (b + g)\n28 (b + g) = 20 * g + 30 * b\n8 g = 2 b \ng / b = 1 / 4\nSo the total number of boys and girls in the class has to be a multiple of 5.\nAmong the given options, only C is a multiple of 5.\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 312415)\n\n**Passage:**\nIn a class, the average age of all the girls is 20 years and boys is 30 years. The average age of the class is 28 years. The total number of boys and girls in the class can be\n\n48\n\n32\n\n30\n\n56\n\nIn a class, the average age of all the girls is 20 years and boys is 30 years. The average age of the class is 28 years. The total number of boys and girls in the class can be\n\n**Options:**\n- **A**. 48\n- **B**. 32\n- **C**. 30\n- **D**. 56\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-848",
+      "passage_text": "",
+      "question_text": "In how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?",
+      "options": [],
+      "correct_option_data": "924",
+      "solution_text": "The number of ways of choosing 2 letters out of 7 which go in the right envelope is $^{7}C_2=21$ ways.\nNone of the 5 remaining letters go in the right envelop. The number of cases of such incidences can be found out by de-arranging the remaining 5 letters = $5!(1-\\frac{1}{1!}+ \\frac{1}{2!}- \\frac{1}{3!}+ \\frac{1}{4!} -\\frac{1}{5!})=44$ ways.\nThus, total number of ways= 21 X 44= 924",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 40929)\n\n**Passage:**\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\nIn how many ways can 7 letters be arranged in 7 envelopes such that only 2 letters go in the right envelope?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-849",
+      "passage_text": "",
+      "question_text": "Payal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?",
+      "options": [],
+      "correct_option_data": "35",
+      "solution_text": "There are 7 P's and 8 Q's, the row will have 15 letters.\n\nPayal wants to arrange them in a row such that it reads the same both forwards and backwards.\nSo it is enough if we arrange the first 8 letters.\n\nSince there are odd number of P's , P will come in the middle.\n\n_, _, _, _, _, _, _, P, _, _, _, _, _, _, _\n\nThe first 7 letters will be filled with 3P's and 4 Q's and the last 7 letters will be identical to the first 7 letters.\n\nNumber of ways in which 3P's and 4 Q's can be arranged is $\\frac{7!}{3!*4!}$\n\n=35\n\n35 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 253982)\n\n**Passage:**\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\nPayal has 7 P's and 8 Q's. In how many ways can she arrange them in a row such that it reads the same both forwards and backwards?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-850",
+      "passage_text": "",
+      "question_text": "In how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\ \\frac{\\ 18!}{12!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\ \\frac{\\ 18!}{12!6!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\ \\frac{\\ 19!}{12!7!}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\ \\frac{\\ 19!}{12!}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The number of ways of arranging 7 people in a row = 7!\n\nNow, the chairs left = 25-7=18\n\nThere are 6 gaps between 7 people. After putting 6 chairs in the gap such that there is 1 in each gap, the number of chairs left = 12\n\nAssuming people to be A, B, C, D, E, F and G. \n\n_A_B_C_D_E_F_G_\n\nThe number of ways of putting 12 identical chairs in 8 gaps = $^{12+8-1}C_{8-1}$ = $^{19}C_7$.\n\nSo the total number of ways = $7!\\times\\ ^{19}C_7$ = $\\ \\frac{\\ 19!}{12!}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290563)\n\n**Passage:**\nIn how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?\n\n18 ! 12 ! \\ \\frac{\\ 18!}{12!} 1 2 ! 1 8 ! ​\n\n18 ! 12 ! 6 ! \\ \\frac{\\ 18!}{12!6!} 1 2 ! 6 ! 1 8 ! ​\n\n19 ! 12 ! 7 ! \\ \\frac{\\ 19!}{12!7!} 1 2 ! 7 ! 1 9 ! ​\n\n19 ! 12 ! \\ \\frac{\\ 19!}{12!} 1 2 ! 1 9 ! ​\n\nIn how many ways 7 people can sit in a row with 25 chairs such that at least 1 empty chair is between two consecutive people?\n\n**Options:**\n- **A**. $\\ \\frac{\\ 18!}{12!}$\n- **B**. $\\ \\frac{\\ 18!}{12!6!}$\n- **C**. $\\ \\frac{\\ 19!}{12!7!}$\n- **D**. $\\ \\frac{\\ 19!}{12!}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-851",
+      "passage_text": "",
+      "question_text": "What is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4/5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "173/900",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "727/900",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1/3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Total number of 3-digit numbers = 9 x 10 x 10 = 900\n\nWe will calculate the number of numbers with no prime in it.\n\nDigits allowed -> 0, 1, 4, 6, 8, 9\n\nThe hundreds digit can take values 1, 4, 6, 8,  9. [ 5 values]\n\nThe ten's place can take values 0, 1, 4, 6, 8,  9. [6 values]\n\nThe one's place can take values 0, 1, 4, 6, 8,  9. [6 values]\n\nTotal possible numbers = 36 x 5 = 180.\n\nHence, numbers where prime digits appear once at least = 900 - 180 = 720\n\nProbability = 720/900 = 4/5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 394035)\n\n**Passage:**\nWhat is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?\n\n4/5\n\n173/900\n\n727/900\n\n1/3\n\nWhat is the probability that if we pick a number from the list of all 3 digit numbers, the number will have at least one prime digit?\n\n**Options:**\n- **A**. 4/5\n- **B**. 173/900\n- **C**. 727/900\n- **D**. 1/3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-852",
+      "passage_text": "",
+      "question_text": "Ramesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11/12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the numbers be $a, a+1, a+2,……….,a+29$\nLet S = $a^2 + (a+1)^2 +(a+2)^2+………..+(a+29)^2$\nThus, S = $a^2 + a^2 + 2a + 1^2 + a^2 + 4a + 2^2 +………..+ a^2 + 58a + 29^2$\nS = $30a^2 + 2a(1+2+……+29) + (1^2+2^2+3^2+……….+29^2)$\nS = $30a^2 + 2a*\\dfrac{29*30}{2} + \\dfrac{29*30*59}{6} $\nS = $30a^2 + 29*30a + 8555$\nS = $30a(a+29) + 8555$\nWe need to find the remainder of S when divided by 12.\nRemainder when 8555 is divided by 12 is 11.\nRemainder when $30a(a+29)$ is divided by 12 is 0.\nThus, the remainder when S is divided by 12 is 11.\nHence, the probability that the sum when divided by 12 will leave a remainder of 11 = 1.\nHence, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176586)\n\n**Passage:**\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n1/12\n\n0\n\n11/12\n\n1\n\nRamesh picks up 30 consecutive natural numbers. He then takes the squares of all the terms and then adds them. What is the probability that the sum when divided by 12 will leave a remainder of 11?\n\n**Options:**\n- **A**. 1/12\n- **B**. 0\n- **C**. 11/12\n- **D**. 1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-853",
+      "passage_text": "AB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is 5 3 5\\sqrt{3} 5 3 ​ , what is the area of the shaded region?\n\n25 ( 3 − π 3 ) 25 (\\sqrt{3}-\\frac{\\pi}{3}) 2 5 ( 3 ​ − 3 π ​ )\n\n25 ( 3 2 − π 4 ) 25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4}) 2 5 ( 2 3 ​ ​ − 4 π ​ )\n\n25 ( 3 − π 4 ) 25 (\\sqrt{3}-\\frac{\\pi}{4}) 2 5 ( 3 ​ − 4 π ​ )\n\n25 ( 3 − π 6 ) 25 (\\sqrt{3}-\\frac{\\pi}{6}) 2 5 ( 3 ​ − 6 π ​ )",
+      "question_text": "AB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is $ 5\\sqrt{3}$, what is the area of the shaded region?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$25 (\\sqrt{3}-\\frac{\\pi}{3})$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$ 25 (\\sqrt{3}-\\frac{\\pi}{4})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$25 (\\sqrt{3}-\\frac{\\pi}{6})$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "In the triangle BOA, tan $\\theta = \\frac{5\\sqrt{3}}{5} = \\sqrt{3}$\nTherefore, $\\theta = 60$ degrees.\n\nThe shaded area = Area of two triangles - area of section of circle.\n\nAs the radius is perpendicular to a tangent, triangle OAB is a right angled triangle, with right angle at B, with area=$1/2*5*5\\sqrt{3}$.\n\nHence area of both triangles= $2*1/2*5*5\\sqrt{3}=25 \\sqrt{3}$.\n\nThe angle BOA=$tan^{-1} \\frac{5 \\sqrt{3}}{5} = 60^{\\circ}$.\n\nHence, angle BOC = 2*BOA = 120°\n\nHence the area of the section = area of circle/3 = $\\frac{\\pi (5^2)}{3}$.\n\nHence area of shaded portion= $25 (\\sqrt{3} -\\frac{\\pi}{3})$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 323)\n\n**Passage:**\nAB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is 5 3 5\\sqrt{3} 5 3 ​ , what is the area of the shaded region?\n\n25 ( 3 − π 3 ) 25 (\\sqrt{3}-\\frac{\\pi}{3}) 2 5 ( 3 ​ − 3 π ​ )\n\n25 ( 3 2 − π 4 ) 25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4}) 2 5 ( 2 3 ​ ​ − 4 π ​ )\n\n25 ( 3 − π 4 ) 25 (\\sqrt{3}-\\frac{\\pi}{4}) 2 5 ( 3 ​ − 4 π ​ )\n\n25 ( 3 − π 6 ) 25 (\\sqrt{3}-\\frac{\\pi}{6}) 2 5 ( 3 ​ − 6 π ​ )\n\nAB and AC are tangents to the circle with centre O. If the radius of the circle is 5 and length of the tangent is $ 5\\sqrt{3}$, what is the area of the shaded region?\n\n**Options:**\n- **A**. $25 (\\sqrt{3}-\\frac{\\pi}{3})$\n- **B**. $25 (\\frac{\\sqrt{3}}{2}-\\frac{\\pi}{4})$\n- **C**. $ 25 (\\sqrt{3}-\\frac{\\pi}{4})$\n- **D**. $25 (\\sqrt{3}-\\frac{\\pi}{6})$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-854",
+      "passage_text": "A field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90 ∘ ^\\circ ∘ and angle ACB is 30 ∘ ^\\circ ∘ . A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30 ∘ ^\\circ ∘ , then find the area of ABC(in cm 2 ^2 2 ).\n\n600 3 c m 2 600\\sqrt{3}cm^2 6 0 0 3 ​ c m 2\n\n300 3 c m 2 300\\sqrt{3}cm^2 3 0 0 3 ​ c m 2\n\n1800 3 c m 2 1800\\sqrt{3}cm^2 1 8 0 0 3 ​ c m 2\n\n750 3 c m 2 750\\sqrt{3}cm^2 7 5 0 3 ​ c m 2",
+      "question_text": "A field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90$^\\circ$ and angle ACB is 30$^\\circ$. A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30$^\\circ$, then find the area of ABC(in cm$^2$).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$600\\sqrt{3}cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$300\\sqrt{3}cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$1800\\sqrt{3}cm^2$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$750\\sqrt{3}cm^2$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "$.'.\\ Area=\\dfrac{1}{2}\\cdot60\\cdot60\\sqrt{\\ 3}=1800\\sqrt{\\ 3}$Consider the following figure:\n\nHere, right triangle PBD lie is a plane which is perpendicular to the plane of ABC.\nNow, in PBD, tan30 is $\\dfrac{PB}{BD}$\n=> $\\dfrac{30}{BD}=\\dfrac{1}{\\sqrt{3}}$\n=> BD = 30$\\sqrt3$\nNow, in right triangle BDA, $\\sin\\ \\angle BAD\\ =\\ \\sin60\\ =\\ \\dfrac{BD}{AB}$\n=> AB = $\\dfrac{BD}{\\sin60}=\\ \\dfrac{30\\sqrt{3}}{\\dfrac{\\sqrt{3}}{2}}=60\\ cm$\nNow, in ABC, $\\tan\\left(60\\right)=\\dfrac{BC}{AB}=>BC=AB\\cdot\\sqrt{\\ 3}=60\\sqrt{\\ 3}$\n\n$.'.\\ Area=\\dfrac{1}{2}\\cdot60\\cdot60\\sqrt{\\ 3}=1800\\sqrt{\\ 3}$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 316639)\n\n**Passage:**\nA field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90 ∘ ^\\circ ∘ and angle ACB is 30 ∘ ^\\circ ∘ . A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30 ∘ ^\\circ ∘ , then find the area of ABC(in cm 2 ^2 2 ).\n\n600 3 c m 2 600\\sqrt{3}cm^2 6 0 0 3 ​ c m 2\n\n300 3 c m 2 300\\sqrt{3}cm^2 3 0 0 3 ​ c m 2\n\n1800 3 c m 2 1800\\sqrt{3}cm^2 1 8 0 0 3 ​ c m 2\n\n750 3 c m 2 750\\sqrt{3}cm^2 7 5 0 3 ​ c m 2\n\nA field is in the shape of a right triangle and its corners are named A, B and C. The angle ABC is 90$^\\circ$ and angle ACB is 30$^\\circ$. A point D is present on AC such that BD is perpendicular to AC. Now, a pole is erected on B and its top is P. If the length of PB is 30m and angle PDB is 30$^\\circ$, then find the area of ABC(in cm$^2$).\n\n**Options:**\n- **A**. $600\\sqrt{3}cm^2$\n- **B**. $300\\sqrt{3}cm^2$\n- **C**. $1800\\sqrt{3}cm^2$\n- **D**. $750\\sqrt{3}cm^2$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-855",
+      "passage_text": "",
+      "question_text": "In a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).",
+      "options": [],
+      "correct_option_data": "17",
+      "solution_text": "Assuming the centre of the circle is O. The figure can be drawn as follows:\n\nAssume, radius = AO=OC = a\n\nSince AB = AO+BO   => 25  = a+ BO    => BO = 25-a\n\nIn right triangle BCO,\n\n$BC^2+BO^2=CO^2$\n\n=> $15^2+\\left(25-a\\right)^2=a^2$\n\n=> 225+625-50a+$a^2=a^2$\n\n=> 50a = 850\n\n=> a=17 cm",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 290221)\n\n**Passage:**\nIn a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).\n\nIn a rectangle ABCD, AB = 25 cm and BC = 15 cm. A circular arc is drawn passing through A and C such that its centre lies on AB. Find the radius of the circle(in cm).\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-856",
+      "passage_text": "",
+      "question_text": "An isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6$\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$3\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$4\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2\\sqrt{\\ 3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let AP = x. Because the trapezium is isosceles, PB= x\n\n$\\therefore\\ AS\\ =\\ BQ=x$\n\nAs DC=3AB, DR = RC=3x\n\nThe perimeter = 16x = 8. => x = 1/2\n\nAltitude = $2\\sqrt{\\ 3}x=\\sqrt{\\ 3}$\n\nHalf of the sum of parallel sides = $\\frac{\\left(2x+6x\\right)}{2}=4x=2$\n\nHence area = $2\\sqrt{\\ 3}$",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 307054)\n\n**Passage:**\nAn isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.\n\n6 3 \\sqrt{\\ 3} 3 ​\n\n3 3 3\\sqrt{\\ 3} 3 3 ​\n\n4 3 4\\sqrt{\\ 3} 4 3 ​\n\n2 3 2\\sqrt{\\ 3} 2 3 ​\n\nAn isosceles trapezium is circumscribed about a circle. One of the parallel sides is thrice the other. What is the area of the trapezium, if its perimeter is 8 cm.\n\n**Options:**\n- **A**. 6$\\sqrt{\\ 3}$\n- **B**. $3\\sqrt{\\ 3}$\n- **C**. $4\\sqrt{\\ 3}$\n- **D**. $2\\sqrt{\\ 3}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-857",
+      "passage_text": "Six congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume π \\pi π = 22 7 \\dfrac{22}{7} 7 2 2 ​ )",
+      "question_text": "Six congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume $\\pi$ = $\\dfrac{22}{7}$ )",
+      "options": [],
+      "correct_option_data": "1848",
+      "solution_text": "Let us draw the diagram, \n\nLet 'r' be the radius of each of the six smaller circle. If we draw a regular hexagon of side '2r' such that each side of the hexagon joins centre of 2 adjacent smaller circles. \n\nIf we draw a diameter in the circle C such that is passes through two vertices of the hexagonal.\n\nWe can see from the diagram that the diameter of the circle C =r + 2(2r) + r          {Where 2(2r) is the length of diagonal of the hexagon.}\n\nTherefore, 6r = 2*42 i.e. r = 14 cm\n\nHence the shaded area = $\\pi (42)^2 - 6\\pi (14)^2$ = 1848 sq. cm\n\nTherefore, 1848 is the correct answer.",
+      "image_url": "https://cracku.in/media/question/25.png",
+      "full_markdown": "### Question (qid: 145523)\n\n**Passage:**\nSix congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume π \\pi π = 22 7 \\dfrac{22}{7} 7 2 2 ​ )\n\nSix congruent circles form a ring with each circle externally tangent to two circles adjacent to it. All circles are internally touching a circle C with radius 42. Let A be the area of the region inside circle C and outside of the six circles in the ring. Find the value of A (in sq. cm). (Assume $\\pi$ = $\\dfrac{22}{7}$ )\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

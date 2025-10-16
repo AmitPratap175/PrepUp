@@ -1,3 +1,35 @@
 from django.db import models
+from users.models import User
+import uuid
 
-# Create your models here.
+class TestSession(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    test_id = models.CharField(max_length=255)
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True, blank=True)
+    score = models.IntegerField(null=True, blank=True)
+    total_questions = models.IntegerField()
+    correct_answers = models.IntegerField(default=0)
+    answers = models.JSONField()
+    is_completed = models.BooleanField(default=False)
+    subject = models.CharField(max_length=255, null=True, blank=True)
+    max_score = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Test Session {self.id} for {self.user.email}"
+
+class UserQuizState(models.Model):
+    """
+    Stores the last attempted question for a user in a specific quiz.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    test_id = models.CharField(max_length=255)
+    last_question_index = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'test_id')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.test_id} - Last Question: {self.last_question_index}'

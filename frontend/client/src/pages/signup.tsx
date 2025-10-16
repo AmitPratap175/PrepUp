@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { signup as signupUser } from "@/lib/auth";
 import { useToast } from "@/hooks/use-toast";
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
 import {
   Select,
   SelectContent,
@@ -109,10 +109,16 @@ export default function SignupPage() {
             </Select>
           </div>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="flex-col">
           <Button className="w-full" onClick={handleSignup}>
             Sign up
           </Button>
+          <div className="mt-4 text-center text-sm">
+            Already have an account?
+            <Link href="/login" className="underline">
+              Sign in
+            </Link>
+          </div>
         </CardFooter>
       </Card>
     </div>

@@ -29,7 +29,7 @@ class TokenRequiredDecoratorTest(TestCase):
     def test_expired_token(self):
         # Create an expired token
         payload = {
-            'user_id': self.user.id,
+            'user_id': str(self.user.id),
             'exp': int(time.time()) - 1
         }
         token = jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')
@@ -59,7 +59,7 @@ class TokenRequiredDecoratorTest(TestCase):
 
     def test_valid_token(self):
         payload = {
-            'user_id': self.user.id,
+            'user_id': str(self.user.id),
             'exp': int(time.time()) + 3600
         }
         token = jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')

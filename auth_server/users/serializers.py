@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from .models import Bookmark
+from .models import Bookmark, Word, StudyDay
 
 User = get_user_model()
 
@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'name', 'email', 'password', 'exam_type')
+        fields = ('id', 'name', 'email', 'password', 'exam_type', 'settings')
 
     def create(self, validated_data):
         """
@@ -39,6 +39,27 @@ class UserSerializer(serializers.ModelSerializer):
         )
         return user
 
+    def update(self, instance, validated_data):
+        """
+        Updates the user instance with validated data.
+
+        This method updates the user's name, exam type, and settings.
+        The password and email are not updated here.
+
+        Args:
+            instance (User): The user instance to update.
+            validated_data (dict): The validated data for updating the user.
+
+        Returns:
+            The updated User instance.
+        """
+        validated_data.pop('email', None)
+        instance.name = validated_data.get('name', instance.name)
+        instance.exam_type = validated_data.get('exam_type', instance.exam_type)
+        instance.settings = validated_data.get('settings', instance.settings)
+        instance.save()
+        return instance
+
 class BookmarkSerializer(serializers.ModelSerializer):
     """
     Serializer for the Bookmark model.
@@ -51,3 +72,33 @@ class BookmarkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bookmark
         fields = ['id', 'user', 'subject', 'question_id']
+
+
+class WordSerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Word model.
+
+    This serializer handles the conversion of Word instances to JSON.
+    The 'user' field is read-only and displays the user's email for
+    context.
+    """
+    user = serializers.ReadOnlyField(source='user.email')
+    class Meta:
+        model = Word
+        fields = ['id', 'user', 'word', 'meaning', 'context', 'question_id']
+
+class StudyHeartbeatSerializer(serializers.Serializer):
+    """
+    Serializer for the study heartbeat request.
+
+    Validates the duration sent by the frontend.
+    """
+    duration = serializers.IntegerField(min_value=1, max_value=60)
+
+class StudyDaySerializer(serializers.ModelSerializer):
+    """
+    Serializer for the StudyDay model.
+    """
+    class Meta:
+        model = StudyDay
+        fields = ['date', 'duration_seconds']

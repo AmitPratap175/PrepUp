@@ -26,6 +26,7 @@ export interface TestState {
   markedForReview: Set<string>;
   timeRemaining: number;
   isCompleted: boolean;
+  startTime?: number;
 }
 
 /**
@@ -41,4 +42,5 @@ export interface QuestionStatus {
   visited: boolean;
   markedForReview: boolean;
   isCurrent: boolean;
+  isLastAttempted: boolean;
 }

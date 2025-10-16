@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import PracticeTest from "@/pages/practice-test";
 import MockTestsPage from "@/pages/mock-tests";
 import MockTestPage from "@/pages/mock-test";
+import MockTestResultPage from "@/pages/mock-test-result";
 import QuizPage from "@/pages/quiz";
 import Dashboard from "@/pages/dashboard";
 import StudyMaterials from "@/pages/study-materials";
@@ -23,6 +24,7 @@ import Refund from "@/pages/refund";
 import LoginPage from "@/pages/login";
 import SignupPage from "@/pages/signup";
 import BookmarksPage from "@/pages/bookmarks";
+import WordsPage from "@/pages/words";
 import CurrentAffairsPage from "@/pages/current-affairs";
 import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
 import SectionalTestsPage from "@/pages/sectional-tests";
@@ -34,6 +36,7 @@ import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
+import { useStudyTracker } from "./hooks/useStudyTracker";
 
 /**
  * Defines the main routing configuration for the application.
@@ -51,6 +54,7 @@ function Router() {
       <Route path="/practice-test/result/:testId" component={PracticeTestResultPage} />
       <Route path="/practice-test/:testId?" component={PracticeTest} />
       <Route path="/mock-tests" component={MockTestsPage} />
+      <Route path="/mock-test/result/:testId" component={MockTestResultPage} />
       <Route path="/mock-test/:testId" component={MockTestPage} />
       <Route path="/sectional-tests" component={SectionalTestsPage} />
       <Route path="/sectional-test/:id" component={SectionalTestPage} />
@@ -60,6 +64,7 @@ function Router() {
       <Route path="/study-materials" component={StudyMaterials} />
       <Route path="/courses" component={Courses} />
       <Route path="/bookmarks" component={BookmarksPage} />
+      <Route path="/words" component={WordsPage} />
       <Route path="/current-affairs" component={CurrentAffairsPage} />
       <Route path="/current-affairs/:articleId" component={CurrentAffairsArticlePage} />
       <Route path="/about" component={About} />
@@ -89,6 +94,7 @@ function Router() {
  */
 function App() {
   const { settings } = useSettings();
+  useStudyTracker();
 
   useEffect(() => {
     if (settings) {

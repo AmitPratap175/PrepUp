@@ -7,10 +7,18 @@ import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/contexts/auth-context";
 import { AnalyticsCharts } from "@/components/AnalyticsCharts";
 import { useQuery } from "@tanstack/react-query";
-import type { Course, TestSession, UserProgress } from "@shared/schema";
+import type { Course, TestSession, UserProgress, PracticeTest } from "@shared/schema";
+import { LastAttemptedQuestions } from "@/components/LastAttemptedQuestions";
+import { useMemo } from "react";
 
 async function fetchDashboardData(url: string) {
-  const response = await fetch(url);
+  const token = localStorage.getItem('token');
+  const headers: HeadersInit = {};
+  if (token) {
+    headers['Authorization'] = `Token ${token}`;
+  }
+
+  const response = await fetch(url, { headers });
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}`);
   }
@@ -28,15 +36,60 @@ export default function Dashboard() {
 
   const { data: testSessions } = useQuery<TestSession[]>({
     queryKey: ["/api/users", user?.id, "test-sessions"],
-    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions`),
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions/`),
     enabled: !!user,
   });
 
   const { data: userProgress } = useQuery<UserProgress[]>({
     queryKey: ["/api/users", user?.id, "progress"],
-    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
+    queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress/`),
     enabled: !!user,
   });
+
+  const { data: studySummary } = useQuery<{ today_hours: number; week_summary: { date: string; hours: number }[] }>({
+    queryKey: ["/api/users/study-summary", user?.id],
+    queryFn: () => fetchDashboardData(`/api/auth/study-summary/`),
+    enabled: !!user,
+  });
+
+  const { data: mockTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/mock-tests"],
+    queryFn: () => fetchDashboardData(`/api/mock-tests/`),
+  });
+
+  const { data: practiceTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/practice-tests"],
+    queryFn: () => fetchDashboardData(`/api/practice-tests/`),
+  });
+
+  const { data: sectionalTests } = useQuery<PracticeTest[]>({
+    queryKey: ["/api/sectional-tests"],
+    queryFn: () => fetchDashboardData(`/api/sectional-tests/`),
+  });
+
+  const { data: userQuizStates } = useQuery<any[]>({
+    queryKey: ["/api/user-quiz-state/"],
+    queryFn: () => fetchDashboardData(`/api/user-quiz-state/`),
+    enabled: !!user,
+  });
+
+  console.log("userQuizStates", userQuizStates);
+
+  const allTests = useMemo(() => {
+    const tests: PracticeTest[] = [];
+    if (practiceTests) tests.push(...practiceTests);
+    if (sectionalTests) tests.push(...sectionalTests);
+    if (mockTests) tests.push(...mockTests);
+    return tests;
+  }, [practiceTests, sectionalTests, mockTests]);
+
+  const testIdToTitleMap = useMemo(() => {
+    const map = new Map<string, string>();
+    allTests.forEach(test => {
+      map.set(test.id, test.title);
+    });
+    return map;
+  }, [allTests]);
 
   // Calculate stats
   const totalTestsTaken = testSessions?.length || 0;
@@ -44,6 +97,10 @@ export default function Dashboard() {
   const averageScore = completedTests > 0 
     ? Math.round((testSessions?.filter(s => s.isCompleted && s.score).reduce((sum, s) => sum + (s.score || 0), 0) || 0) / completedTests)
     : 0;
+
+  const totalMockTests = mockTests?.length || 0;
+  const mockTestsTaken = testSessions?.filter(s => s.testId.startsWith('mock-test')).length || 0;
+  const mockTestsPercentage = totalMockTests > 0 ? (mockTestsTaken / totalMockTests) * 100 : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -144,6 +201,8 @@ export default function Dashboard() {
                     </CardContent>
                   </Card>
 
+                  <LastAttemptedQuestions userQuizStates={userQuizStates} testIdToTitleMap={testIdToTitleMap} />
+
                   {/* Statistics Cards */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                     <Card className="text-center p-4 hover-elevate">
@@ -173,13 +232,20 @@ export default function Dashboard() {
                     <Card className="text-center p-4 hover-elevate">
                       <CardContent className="p-0">
                         <div className="text-2xl font-bold text-primary" data-testid="study-hours">
-                          42
+                          {studySummary?.today_hours || 0}
                         </div>
                         <div className="text-xs text-muted-foreground">Study Hours</div>
                       </CardContent>
                     </Card>
                   </div>
-                  <AnalyticsCharts />
+                  <AnalyticsCharts
+                    weekSummary={studySummary?.week_summary}
+                    testSessions={testSessions}
+                    userProgress={userProgress}
+                    courses={courses}
+                    totalMockTests={totalMockTests}
+                    mockTestsTaken={mockTestsTaken}
+                  />
                 </div>
 
                 {/* Quick Actions */}

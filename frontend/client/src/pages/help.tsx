@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Chatbot } from "@/components/chatbot";
 
 /**
  * Renders the Help Center page.
@@ -17,6 +18,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
  */
 export default function Help() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isChatbotOpen, setChatbotOpen] = useState(false);
 
   const faqCategories = [
     {
@@ -153,7 +155,7 @@ export default function Help() {
 
           {/* Quick Actions */}
           <div className="grid gap-4 md:grid-cols-3 mb-12">
-            <Card className="text-center p-6 hover-elevate cursor-pointer">
+            <Card className="text-center p-6 hover-elevate cursor-pointer" onClick={() => setChatbotOpen(true)}>
               <CardContent className="p-0">
                 <span className="material-symbols-outlined text-3xl text-primary mb-3 block">chat</span>
                 <h3 className="font-semibold text-foreground mb-2">Live Chat</h3>
@@ -249,6 +251,8 @@ export default function Help() {
           </Card>
         </div>
       </main>
+
+      {isChatbotOpen && <Chatbot onClose={() => setChatbotOpen(false)} />}
 
       <AppFooter />
     </div>

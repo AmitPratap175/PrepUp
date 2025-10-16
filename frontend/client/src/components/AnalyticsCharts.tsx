@@ -1,42 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Course, TestSession, UserProgress } from "@shared/schema";
-import { useQuery } from "@tanstack/react-query";
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { useAuth } from "@/contexts/auth-context";
 
-async function fetchDashboardData(url: string) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch ${url}`);
-    }
-    return response.json();
+interface AnalyticsChartsProps {
+  testSessions: TestSession[] | undefined;
+  userProgress: UserProgress[] | undefined;
+  courses: Course[] | undefined;
+  weekSummary: { date: string; hours: number }[] | undefined;
+  totalMockTests: number;
+  mockTestsTaken: number;
 }
 
-export function AnalyticsCharts() {
-    const { user } = useAuth();
-
-    const { data: courses } = useQuery<Course[]>({
-        queryKey: ["/api/courses", { examType: user?.exam_type }],
-        queryFn: () => fetchDashboardData(`/api/courses?examType=${user?.exam_type}`),
-        enabled: !!user,
-    });
-
-    const { data: testSessions } = useQuery<TestSession[]>({
-        queryKey: ["/api/users", user?.id, "test-sessions"],
-        queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions`),
-        enabled: !!user,
-    });
-
-    const { data: userProgress } = useQuery<UserProgress[]>({
-        queryKey: ["/api/users", user?.id, "progress"],
-        queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress`),
-        enabled: !!user,
-    });
-
+export function AnalyticsCharts({ testSessions, userProgress, courses, weekSummary, totalMockTests, mockTestsTaken }: AnalyticsChartsProps) {
     const scoreData = testSessions
         ?.filter(session => session.isCompleted && session.score && session.maxScore)
         .map(session => ({
-            name: new Date(session.completedAt ?? 0).toLocaleDateString(),
+            name: new Date(session.endTime ?? 0).toLocaleDateString(),
             score: Math.round(((session.score ?? 0) / (session.maxScore ?? 1)) * 100),
         }));
 
@@ -45,8 +24,38 @@ export function AnalyticsCharts() {
         progress: progress.progress,
     }));
 
+    const formattedWeekSummary = weekSummary?.map(day => ({
+        ...day,
+        date: new Date(day.date).toLocaleDateString(undefined, { weekday: 'short' }),
+    }));
+
+    const mockTestData = [
+        {
+            name: 'Mock Tests',
+            taken: mockTestsTaken,
+            available: totalMockTests,
+        },
+    ];
+
     return (
         <div className="grid gap-6 lg:grid-cols-2 mt-6">
+            <Card>
+                <CardHeader>
+                    <CardTitle>Study Hours (Last 7 Days)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <LineChart data={formattedWeekSummary}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="date" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="hours" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        </LineChart>
+                    </ResponsiveContainer>
+                </CardContent>
+            </Card>
             <Card>
                 <CardHeader>
                     <CardTitle>Test Performance</CardTitle>
@@ -65,6 +74,24 @@ export function AnalyticsCharts() {
                 </CardContent>
             </Card>
             <Card>
+                <CardHeader>
+                    <CardTitle>Mock Test Progress</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <BarChart data={mockTestData}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="taken" fill="#8884d8" name="Taken" />
+                            <Bar dataKey="available" fill="#82ca9d" name="Available" />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </CardContent>
+            </Card>
+            <Card className="lg:col-span-2">
                 <CardHeader>
                     <CardTitle>Course Progress</CardTitle>
                 </CardHeader>

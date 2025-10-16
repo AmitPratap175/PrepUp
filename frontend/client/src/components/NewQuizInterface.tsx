@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import { Chatbot, type Message } from "./chatbot";
+import { MessageSquare } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import ReactMarkdown from 'react-markdown';
 import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon } from "lucide-react";
-
+import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon, X, Loader2 } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useToast } from "@/hooks/use-toast";
 import { Calculator } from "./ui/calculator";
 
 /**
@@ -35,16 +38,106 @@ interface QuizInterfaceProps {
 export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
   const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  // State for word definition pop-up
+  const [selectedText, setSelectedText] = useState("");
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [definition, setDefinition] = useState("");
+  const [isLoadingDefinition, setIsLoadingDefinition] = useState(false);
+  const [definitionError, setDefinitionError] = useState("");
+  const popupRef = useRef<HTMLDivElement>(null);
+  const [chatHistories, setChatHistories] = useState<{ [qid: string]: Message[] }>({});
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+
+  const definitionMutation = useMutation({
+    mutationFn: async ({ word, context }: { word: string; context: string }) => {
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("Not authenticated");
+
+      const response = await fetch("/api/chatbot/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify({
+          message: `Define the word "${word}" in the context of: "${context}"`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch definition");
+      }
+      const data = await response.json();
+      return data.reply;
+    },
+    onSuccess: (data) => {
+      setDefinition(data);
+      setDefinitionError("");
+    },
+    onError: () => {
+      setDefinitionError("Could not fetch definition. Please try again.");
+    },
+    onSettled: () => {
+      setIsLoadingDefinition(false);
+    },
+  });
+
+  const saveWordMutation = useMutation({
+    mutationFn: async ({
+      word,
+      meaning,
+      context,
+      question_id,
+    }: {
+      word: string;
+      meaning: string;
+      context: string;
+      question_id: string;
+    }) => {
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("Not authenticated");
+
+      const response = await fetch("/api/auth/words/create/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify({ word, meaning, context, question_id }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save word");
+      }
+      return response.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Word Saved!",
+        description: "The word has been added to your list.",
+      });
+      queryClient.invalidateQueries({ queryKey: ["words"] });
+    },
+    onError: (error) => {
+      toast({
+        title: "Error",
+        description: `Failed to save word: ${error.message}`,
+        variant: "destructive",
+      });
+    },
+  });
 
   // Timer effect
   useEffect(() => {
@@ -148,22 +241,39 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     },
   });
 
-  const handleBookmarkToggle = async (qid: string) => {
-    const newBookmarks = new Set(bookmarkedQuestions);
-    if (newBookmarks.has(qid)) {
+  const handleBookmarkToggle = (qid: string) => {
+    if (bookmarkedQuestions.has(qid)) {
+      // Optimistically remove the bookmark
+      setBookmarkedQuestions(prev => {
+        const newBookmarks = new Set(prev);
+        newBookmarks.delete(qid);
+        return newBookmarks;
+      });
       deleteBookmarkMutation.mutate(qid, {
-        onSuccess: () => {
-          newBookmarks.delete(qid);
-          setBookmarkedQuestions(newBookmarks);
-          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+        onError: () => {
+          // Rollback on error
+          setBookmarkedQuestions(prev => {
+            const newBookmarks = new Set(prev);
+            newBookmarks.add(qid);
+            return newBookmarks;
+          });
         }
       });
     } else {
+      // Optimistically add the bookmark
+      setBookmarkedQuestions(prev => {
+        const newBookmarks = new Set(prev);
+        newBookmarks.add(qid);
+        return newBookmarks;
+      });
       createBookmarkMutation.mutate(qid, {
-        onSuccess: () => {
-          newBookmarks.add(qid);
-          setBookmarkedQuestions(newBookmarks);
-          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+        onError: () => {
+          // Rollback on error
+          setBookmarkedQuestions(prev => {
+            const newBookmarks = new Set(prev);
+            newBookmarks.delete(qid);
+            return newBookmarks;
+          });
         }
       });
     }
@@ -189,8 +299,95 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     return userAnswer === correctAnswer ? 'bg-green-200 border-green-500' : 'bg-red-200 border-red-500';
   };
 
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
+    setSelectedText("");
+    setDefinition("");
+    setDefinitionError("");
+  };
+
+  const handleTextSelection = () => {
+    const selection = window.getSelection();
+    const text = selection?.toString().trim();
+    if (text && text.length > 0 && text.length < 100) {
+      const range = selection?.getRangeAt(0);
+      const rect = range?.getBoundingClientRect();
+      if (rect) {
+        setSelectedText(text);
+        setIsPopupVisible(true);
+        setDefinitionError("");
+      }
+    }
+  };
+
+  const handleGetDefinition = () => {
+    setIsLoadingDefinition(true);
+    definitionMutation.mutate({
+      word: selectedText,
+      context: currentQuestion.passage_text || currentQuestion.question_text,
+    });
+  };
+
+  const handleSaveWord = () => {
+    if (!definition) {
+      toast({
+        title: "No Definition",
+        description: "Please get a definition before saving the word.",
+        variant: "destructive",
+      });
+      return;
+    }
+    saveWordMutation.mutate({
+      word: selectedText,
+      meaning: definition,
+      context: `From quiz: "${test.title}", Question ${currentQuestionIndex + 1}`,
+      question_id: currentQuestion.qid,
+    });
+  };
+
+
+
+
   return (
-    <div className="flex flex-col h-screen bg-background">
+    <div className="flex flex-col h-screen bg-background" onMouseUp={handleTextSelection} onTouchEnd={handleTextSelection}>
+      {isPopupVisible && (
+        <div
+          ref={popupRef}
+          className="fixed top-20 left-1/2 -translate-x-1/2 z-50"
+        >
+          <Card className="w-80 shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex justify-between items-center">
+                <span>{selectedText}</span>
+                <Button variant="ghost" size="icon" onClick={handleClosePopup}>
+                  <X className="h-4 w-4" />
+                </Button>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="max-h-[50vh] overflow-y-auto">
+              {isLoadingDefinition ? (
+                <div className="flex items-center justify-center">
+                  <Loader2 className="h-6 w-6 animate-spin" />
+                </div>
+              ) : definitionError ? (
+                <p className="text-red-500">{definitionError}</p>
+              ) : definition ? (
+                <div className="prose max-w-none text-foreground dark:prose-invert">
+                  <ReactMarkdown>{definition}</ReactMarkdown>
+                </div>
+              ) : null}
+              <div className="flex justify-end gap-2 mt-4">
+                <Button variant="outline" onClick={handleGetDefinition}>
+                  Get Definition
+                </Button>
+                <Button onClick={handleSaveWord} disabled={!definition || isLoadingDefinition}>
+                  Save Word
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
       {/* Test Header (Sticky) */}
       <div className="bg-muted/50 p-4 border-b border-border">
         <div className="flex flex-row items-center justify-between gap-2 sm:gap-4">
@@ -205,6 +402,12 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
                 {formatTime(timeElapsed)}
               </div>
               <div className="text-xs text-muted-foreground">Time</div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm sm:text-base font-bold text-foreground">
+                {submittedAnswers.size}
+              </div>
+              <div className="text-xs text-muted-foreground">Attempted</div>
             </div>
             <div className="text-center hidden sm:block">
               <div className="text-sm sm:text-base font-bold text-foreground" data-testid="question-counter">
@@ -293,11 +496,56 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               <Button variant="ghost" size="icon" onClick={() => handleBookmarkToggle(currentQuestion.qid)}>
                 <Bookmark className={`h-5 w-5 ${bookmarkedQuestions.has(currentQuestion.qid) ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'}`} />
               </Button>
+              <Button variant="ghost" size="icon" onClick={() => setIsChatbotOpen(true)}>
+                <MessageSquare className="h-5 w-5 text-muted-foreground" />
+              </Button>
             </div>
             <span className="text-sm text-muted-foreground">
               {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
             </span>
           </div>
+
+          {isChatbotOpen && (() => {
+            const currentQuestionId = currentQuestion.qid;
+            const currentChatHistory = chatHistories[currentQuestionId] || [];
+            const initialMessage = `Explain the following question and its options, and help me understand the answer.\n**Subject:**${test.subject}\n**qid:**${currentQuestion.qid}\n**Passage:**\n${currentQuestion.passage_text}\n\n**Question:**\n${currentQuestion.question_text}\n\n**Options:**\n${currentQuestion.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`;
+
+            return (
+              <Chatbot
+                onClose={() => setIsChatbotOpen(false)}
+                initialMessage={currentChatHistory.length === 0 ? initialMessage : undefined}
+                history={currentChatHistory}
+                onHistoryChange={(newHistory) => {
+                  setChatHistories(prev => ({
+                    ...prev,
+                    [currentQuestionId]: newHistory,
+                  }));
+                }}
+                onBookmarkChange={() => {
+                  // Refetch bookmarks when the chatbot indicates a change
+                  const fetchBookmarks = async () => {
+                    const token = localStorage.getItem('token');
+                    if (token) {
+                      try {
+                        const response = await fetch(`/api/auth/bookmarks/?subject=${test.subject}`, {
+                          headers: {
+                            Authorization: `Token ${token}`,
+                          },
+                        });
+                        if (response.ok) {
+                          const bookmarks = await response.json();
+                          setBookmarkedQuestions(new Set(bookmarks.map((b: any) => b.question_id)));
+                        }
+                      } catch (error) {
+                        console.error("Failed to fetch bookmarks:", error);
+                      }
+                    }
+                  };
+                  fetchBookmarks();
+                }}
+              />
+            );
+          })()}
 
           <div className="flex-1 flex overflow-hidden">
             {(hasPassage || currentQuestion.image_url) && (
@@ -370,7 +618,7 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
                   <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
                     <Latex>
                       {currentQuestion.options.length === 0
-                        ? currentQuestion.correct_option_data || currentQuestion.solution_text || "No solution provided."
+                        ? `${currentQuestion.correct_option_data || ''}${currentQuestion.solution_text ? `${currentQuestion.solution_text}` : ''}` || "No solution provided."
                         : currentQuestion.solution_text || "No solution provided."}
                     </Latex>
                   </div>
