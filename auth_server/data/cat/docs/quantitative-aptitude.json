@@ -31721,7 +31721,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "2048",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -31736,8 +31736,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "B",
+      "solution_text": "Let the first term be a and common ratio be r. 10th term = $ar^9$, 20th term = $ar^{19}$\n\n$ar^9(1+r^{10}) = 524800$, since r = 2, a*512*1025 = 524800 => a = 1. 12th term = $1*2^{11}$ = 2048",
       "image_url": "",
       "full_markdown": "### Question (qid: 2542)\n\n**Passage:**\nThe sum of the 10th and 20th terms of a GP is 524800. If the common ratio is 2, find the 12th term of the series.\n\n1024\n\n2048\n\n4096\n\n8192\n\nThe sum of the 10th and 20th terms of a GP is 524800. If the common ratio is 2, find the 12th term of the series.\n\n**Options:**\n- **A**. 1024\n- **B**. 2048\n- **C**. 4096\n- **D**. 8192\n\n**Correct Answer:** null"
     },
@@ -31762,7 +31762,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "20",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -31777,8 +31777,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "The terms of the first sequence are of the form 4p + 13\n\nThe terms of the second sequence are of the form 5q + 11\n\nIf a term is common to both the sequences, it is of the form 4p+13 and 5q+11\n\nor 4p = 5q -2. LHS = 4p is always even, so, q is also even.\n\nor 2p = 5r - 1 where q = 2r.\n\nNotice that LHS is again even, hence r should be odd. Let r = 2m+1 for some m.\n\nHence, p = 5m + 2.\n\nSo, the number = 4p+13 = 20m + 21.\n\nHence, all numbers of the form 20m + 21 will be the common terms. i.e 21,41,61,...,401 = 20.",
       "image_url": "",
       "full_markdown": "### Question (qid: 4083)\n\n**Passage:**\nThe number of common terms in the two sequences 17, 21, 25,…, 417 and 16, 21, 26,…, 466 is\n\n78\n\n19\n\n20\n\n77\n\n22\n\nThe number of common terms in the two sequences 17, 21, 25,…, 417 and 16, 21, 26,…, 466 is\n\n**Options:**\n- **A**. 78\n- **B**. 19\n- **C**. 20\n- **D**. 77\n- **E**. 22\n\n**Correct Answer:** null"
     },
@@ -31809,11 +31809,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "x",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "1, 2, 3, 4,....n such that the sum is greater than 288\n\nIf n = 24, n(n+1)/2 = 12*25 = 300\n\nSo, n = 24, i.e. the 24th letter in the alphabet is the letter at position 288 in the series\n\n​So, answer = x",
       "image_url": "",
       "full_markdown": "### Question (qid: 4311)\n\n**Passage:**\nThe 288th term of the series a,b,b,c,c,c,d,d,d,d,e,e,e,e,e,f,f,f,f,f,f… is\n\nu\n\nv\n\nw\n\nx\n\nThe 288th term of the series a,b,b,c,c,c,d,d,d,d,e,e,e,e,e,f,f,f,f,f,f… is\n\n**Options:**\n- **A**. u\n- **B**. v\n- **C**. w\n- **D**. x\n\n**Correct Answer:** null"
     },
@@ -31844,7 +31844,7 @@
           "data_option": "4",
           "label": "D",
           "option_text": "6",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "5",
@@ -31853,8 +31853,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "Let x be in the front row.\n\nSo no. of children in next rows will be x-3,x-6,x-9,x-12,x-15,x-18,x-21....\n\nSuppose there are 6 rows, then the sum is equal to x + x-3 + x-6 + x-9 + x-12 + x-15 = 6x - 45\n\nThis sum is equal to 630.\n\n=> 6x - 45 = 630 => 6x = 585\n\nHere, x is not an integer.\n\nHence, there cannot be 6 rows.",
       "image_url": "",
       "full_markdown": "### Question (qid: 4516)\n\n**Passage:**\nA group of 630 children is arranged in rows for a group photograph session. Each row contains three fewer children than the row in front of it. What number of rows is not possible?\n\n3\n\n4\n\n5\n\n6\n\n7\n\nA group of 630 children is arranged in rows for a group photograph session. Each row contains three fewer children than the row in front of it. What number of rows is not possible?\n\n**Options:**\n- **A**. 3\n- **B**. 4\n- **C**. 5\n- **D**. 6\n- **E**. 7\n\n**Correct Answer:** null"
     },
@@ -31885,11 +31885,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "$(6*2^{99}-5)$",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "$a_2 = 2*1 + 5$\n\n$a_3 = 2*(2 + 5) + 5 = 2^2 + 5*2 + 5$\n\n$a_4 = 2^3 + 5*2^2 + 5*2 + 5$ \n\n...\n\n$a_{100} = 2^{99} + 5*(2^{98} + 2^{97} + ... + 1)$\n$= 2^{99} + 5*1*\\dfrac{(2^{99} - 1)}{(2-1)} = 2^{99} + 5*2^{99} - 5 = 6*2^{99} - 5$",
       "image_url": "",
       "full_markdown": "### Question (qid: 4882)\n\n**Passage:**\nIf a 1 = 1 a_1 = 1 a 1 ​ = 1 and a n + 1 = 2 a n + 5 a_{n+1} = 2a_n +5 a n + 1 ​ = 2 a n ​ + 5 , n=1,2,....,then a 100 a_{100} a 1 0 0 ​ is equal to:\n\n( 5 ∗ 2 99 − 6 ) (5*2^{99}-6) ( 5 ∗ 2 9 9 − 6 )\n\n( 5 ∗ 2 99 + 6 ) (5*2^{99}+6) ( 5 ∗ 2 9 9 + 6 )\n\n( 6 ∗ 2 99 + 5 ) (6*2^{99}+5) ( 6 ∗ 2 9 9 + 5 )\n\n( 6 ∗ 2 99 − 5 ) (6*2^{99}-5) ( 6 ∗ 2 9 9 − 5 )\n\nIf $a_1 = 1$ and $a_{n+1} = 2a_n +5$, n=1,2,....,then $a_{100}$ is equal to:\n\n**Options:**\n- **A**. $(5*2^{99}-6)$\n- **B**. $(5*2^{99}+6)$\n- **C**. $(6*2^{99}+5)$\n- **D**. $(6*2^{99}-5)$\n\n**Correct Answer:** null"
     }

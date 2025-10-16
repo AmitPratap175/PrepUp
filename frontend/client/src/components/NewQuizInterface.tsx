@@ -644,12 +644,6 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
             >
               Previous Question
             </Button>
-            <Button
-              onClick={handleSubmit}
-              variant="destructive"
-            >
-              Submit Quiz
-            </Button>
             <Button 
               onClick={handleNext}
               disabled={currentQuestionIndex === questions.length - 1}
