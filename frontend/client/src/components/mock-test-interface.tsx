@@ -141,6 +141,39 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     }
   };
 
+  const saveTestSession = async (resultData: any) => {
+    const token = localStorage.getItem('token');
+    const userId = localStorage.getItem('userId');
+    if (token && userId) {
+      const sessionData = {
+        userId,
+        testId: test.id,
+        startTime: new Date(resultData.startTime).toISOString(),
+        endTime: new Date().toISOString(),
+        score: resultData.score,
+        totalQuestions: test.questions.length,
+        correctAnswers: resultData.correctAnswers,
+        answers: resultData.answers,
+        isCompleted: true,
+        subject: test.subject,
+        maxScore: test.questions.length,
+      };
+
+      try {
+        await fetch('/api/test-sessions/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${token}`,
+          },
+          body: JSON.stringify(sessionData),
+        });
+      } catch (error) {
+        console.error('Failed to save test session:', error);
+      }
+    }
+  };
+
   const handleSubmit = () => {
     const userAnswers: UserAnswer[] = (test.questions as Question[]).map(question => ({
       questionId: question.qid,
@@ -150,6 +183,17 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     }));
 
     const totalTimeSpent = (test.duration * 60) - testState.timeRemaining;
+
+    const resultData = {
+      answers: testState.answers,
+      questions: test.questions,
+      timeTaken: totalTimeSpent,
+      startTime: testState.startTime,
+      score: 0, // This will be calculated in the result page
+      correctAnswers: 0, // This will be calculated in the result page
+    };
+
+    saveTestSession(resultData);
     onSubmit(userAnswers, totalTimeSpent, testState.startTime);
     setTestState(prev => ({ ...prev, isCompleted: true }));
   };

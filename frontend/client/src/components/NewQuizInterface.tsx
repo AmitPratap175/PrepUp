@@ -201,6 +201,16 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     }
   };
 
+  const handleSubmit = () => {
+    const userAnswers: UserAnswer[] = questions.map(question => ({
+        questionId: question.qid,
+        selectedAnswer: answers[question.qid] || null,
+        timeSpent: 0, // This can be enhanced later
+        isMarkedForReview: bookmarkedQuestions.has(question.qid),
+    }));
+    onSubmit(userAnswers);
+  };
+
   const deleteBookmarkMutation = useMutation({
     mutationFn: async (qid: string) => {
       const token = localStorage.getItem('token');
@@ -633,6 +643,12 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               disabled={currentQuestionIndex === 0}
             >
               Previous Question
+            </Button>
+            <Button
+              onClick={handleSubmit}
+              variant="destructive"
+            >
+              Submit Quiz
             </Button>
             <Button 
               onClick={handleNext}

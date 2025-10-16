@@ -452,6 +452,37 @@ class ResetTestProgressView(APIView):
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+class TestSessionView(APIView):
+    """
+    Handles the creation of new test sessions.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Creates a new test session.
+        """
+        user = request.user
+        data = request.data
+
+        try:
+            session = TestSession.objects.create(
+                user=user,
+                test_id=data.get('testId'),
+                start_time=data.get('startTime'),
+                end_time=data.get('endTime'),
+                score=data.get('score'),
+                total_questions=data.get('totalQuestions'),
+                correct_answers=data.get('correctAnswers'),
+                answers=data.get('answers'),
+                is_completed=data.get('isCompleted'),
+                subject=data.get('subject'),
+                max_score=data.get('maxScore'),
+            )
+            return Response({'id': str(session.id)}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 class UserQuizGoalView(APIView):
     """
     Handles getting and setting user quiz goals.

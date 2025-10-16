@@ -31,4 +31,5 @@ urlpatterns = [
     path('reset-test-progress/', ResetTestProgressView.as_view(), name='reset-test-progress'),
     path('user-quiz-state/', UserQuizStateView.as_view(), name='user-quiz-state'),
     path('user-quiz-goals/', views.UserQuizGoalView.as_view(), name='user-quiz-goals'),
+    path('test-sessions/', views.TestSessionView.as_view(), name='test-sessions'),
 ]

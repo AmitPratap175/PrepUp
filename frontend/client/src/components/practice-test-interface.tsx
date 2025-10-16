@@ -134,6 +134,39 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
     }
   };
 
+  const saveTestSession = async (resultData: any) => {
+    const token = localStorage.getItem('token');
+    const userId = localStorage.getItem('userId');
+    if (token && userId) {
+      const sessionData = {
+        userId,
+        testId: test.id,
+        startTime: new Date(resultData.startTime).toISOString(),
+        endTime: new Date().toISOString(),
+        score: resultData.score,
+        totalQuestions: questions.length,
+        correctAnswers: resultData.correctAnswers,
+        answers: resultData.answers,
+        isCompleted: true,
+        subject: test.subject,
+        maxScore: questions.length,
+      };
+
+      try {
+        await fetch('/api/test-sessions/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${token}`,
+          },
+          body: JSON.stringify(sessionData),
+        });
+      } catch (error) {
+        console.error('Failed to save test session:', error);
+      }
+    }
+  };
+
   const handleSubmit = () => {
     setTestState(prev => ({ ...prev, isCompleted: true }));
 
@@ -142,9 +175,12 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       questions: questions,
       timeTaken: test.duration * 60 - testState.timeRemaining,
       startTime: testState.startTime,
+      score: 0, // This will be calculated in the result page
+      correctAnswers: 0, // This will be calculated in the result page
     };
 
     localStorage.setItem(`practiceTestResult-${test.id}`, JSON.stringify(resultData));
+    saveTestSession(resultData);
     navigate(`/practice-test/result/${test.id}`, { state: { ...resultData } });
   };
 
