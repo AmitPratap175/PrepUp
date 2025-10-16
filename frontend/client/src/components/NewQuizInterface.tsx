@@ -403,6 +403,12 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
               </div>
               <div className="text-xs text-muted-foreground">Time</div>
             </div>
+            <div className="text-center">
+              <div className="text-sm sm:text-base font-bold text-foreground">
+                {submittedAnswers.size}
+              </div>
+              <div className="text-xs text-muted-foreground">Attempted</div>
+            </div>
             <div className="text-center hidden sm:block">
               <div className="text-sm sm:text-base font-bold text-foreground" data-testid="question-counter">
                 {currentQuestionIndex + 1}/{test.totalQuestions}

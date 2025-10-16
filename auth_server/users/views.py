@@ -82,10 +82,11 @@ class LogoutView(APIView):
 
 class UserDetailsView(APIView):
     """
-    Retrieves the details for the currently authenticated user.
+    Retrieves and updates the details for the currently authenticated user.
 
     This view is protected and requires a valid auth token. It returns
-    the serialized data of the user making the request.
+    the serialized data of the user making the request, and allows for
+    updates to the user's information.
     """
     permission_classes = [IsAuthenticated]
 
@@ -101,6 +102,22 @@ class UserDetailsView(APIView):
         """
         serializer = UserSerializer(request.user)
         return Response(serializer.data)
+
+    def put(self, request, *args, **kwargs):
+        """
+        Handles the PUT request to update user details.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response containing the updated user data.
+        """
+        serializer = UserSerializer(request.user, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class BookmarkListView(generics.ListAPIView):
     """

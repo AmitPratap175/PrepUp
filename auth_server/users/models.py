@@ -29,6 +29,7 @@ class User(AbstractUser):
     is_trial_user = models.BooleanField(default=True)
     current_streak = models.IntegerField(default=0)
     total_score = models.IntegerField(default=0)
+    settings = models.JSONField(default=dict)
     username = None
 
     objects = CustomUserManager()

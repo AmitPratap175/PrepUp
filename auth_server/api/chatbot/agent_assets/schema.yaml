@@ -284,6 +284,23 @@ paths:
       responses:
         '200':
           description: No response body
+    put:
+      operationId: auth_user_update
+      description: |-
+        Handles the PUT request to update user details.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response containing the updated user data.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
   /api/auth/words/:
     get:
       operationId: auth_words_list
@@ -712,6 +729,7 @@ components:
         exam_type:
           type: string
           maxLength: 50
+        settings: {}
       required:
       - email
       - exam_type

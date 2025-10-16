@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'name', 'email', 'password', 'exam_type')
+        fields = ('id', 'name', 'email', 'password', 'exam_type', 'settings')
 
     def create(self, validated_data):
         """
@@ -38,6 +38,27 @@ class UserSerializer(serializers.ModelSerializer):
             exam_type=validated_data['exam_type']
         )
         return user
+
+    def update(self, instance, validated_data):
+        """
+        Updates the user instance with validated data.
+
+        This method updates the user's name, exam type, and settings.
+        The password and email are not updated here.
+
+        Args:
+            instance (User): The user instance to update.
+            validated_data (dict): The validated data for updating the user.
+
+        Returns:
+            The updated User instance.
+        """
+        validated_data.pop('email', None)
+        instance.name = validated_data.get('name', instance.name)
+        instance.exam_type = validated_data.get('exam_type', instance.exam_type)
+        instance.settings = validated_data.get('settings', instance.settings)
+        instance.save()
+        return instance
 
 class BookmarkSerializer(serializers.ModelSerializer):
     """
