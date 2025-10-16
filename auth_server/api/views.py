@@ -343,6 +343,40 @@ from .models import TestSession, UserQuizState
 class ChatbotView(APIView):
     """
     Handles chatbot interactions for authenticated users.
+
+    This is the main endpoint for the chatbot. It receives a user's message and returns the chatbot's response. The chatbot is a stateful agent that can use tools to perform actions on behalf of the user.
+
+    **How to use:**
+    To interact with the chatbot, the client should send a `POST` request to the following URL:
+    `POST /api/chatbot/`
+
+    The request body must be a JSON object containing the `message` from the user.
+
+    **Example:**
+    If the user says, "hello", the client should send the following JSON payload:
+    ```json
+    {
+      "message": "hello"
+    }
+    ```
+
+    The API will return a JSON response with the chatbot's reply:
+    ```json
+    {
+      "reply": "Hello! How can I help you today?"
+    }
+    ```
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters:**
+    - `message` (string, required): The user's message to the chatbot.
+
+    **Responses:**
+    - `200 OK`: A JSON object containing the chatbot's `reply`.
+    - `401 Unauthorized`: The user is not authenticated.
     """
     permission_classes = [IsAuthenticated]
 
@@ -370,15 +404,30 @@ class ResetTestProgressView(APIView):
     """
     Resets the test progress for the authenticated user.
 
-    This view handles a POST request to delete all `TestSession` objects
+    This view handles a POST request to delete all `TestSession` and `UserQuizState` objects
     associated with the currently authenticated user, effectively resetting
     their test history and progress.
 
-    **Permissions:**
-    - Requires user to be authenticated.
+    **How to use:**
+    To reset the user's test progress, the client should send a `POST` request to the following URL:
+    `POST /api/reset-test-progress/`
 
-    **Methods:**
-    - `post`: Deletes all `TestSession` records for the user.
+    No request body is required.
+
+    **Example:**
+    If the user wants to reset their progress, the client should send a `POST` request to `/api/reset-test-progress/`.
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters:**
+    - None
+
+    **Responses:**
+    - `204 No Content`: The user's test progress was successfully reset.
+    - `401 Unauthorized`: The user is not authenticated.
+    - `500 Internal Server Error`: An error occurred while resetting the progress.
     """
     permission_classes = [IsAuthenticated]
 
@@ -403,6 +452,79 @@ class ResetTestProgressView(APIView):
 class UserQuizStateView(APIView):
     """
     Handles getting and setting the user's last quiz state.
+
+    This view allows the client to retrieve the last question index for a given test, or all quiz states for the user. It also allows the client to update the last question index for a given test.
+
+    **How to use:**
+
+    **Get Quiz State:**
+    To get the last question index for a specific test, send a `GET` request with the `test_id` as a query parameter:
+    `GET /api/user-quiz-state/?test_id={test_id}`
+
+    To get all quiz states for the user, send a `GET` request without any query parameters:
+    `GET /api/user-quiz-state/`
+
+    **Update Quiz State:**
+    To update the last question index for a test, send a `POST` request with the `test_id` and `last_question_index` in the request body:
+    `POST /api/user-quiz-state/`
+
+    **Example (Get specific quiz state):**
+    `GET /api/user-quiz-state/?test_id=some-test-id`
+    Response:
+    ```json
+    {
+      "last_question_index": 5
+    }
+    ```
+
+    **Example (Get all quiz states):**
+    `GET /api/user-quiz-state/`
+    Response:
+    ```json
+    [
+      {
+        "test_id": "some-test-id",
+        "last_question_index": 5
+      },
+      {
+        "test_id": "another-test-id",
+        "last_question_index": 10
+      }
+    ]
+    ```
+
+    **Example (Update quiz state):**
+    `POST /api/user-quiz-state/`
+    Request Body:
+    ```json
+    {
+      "test_id": "some-test-id",
+      "last_question_index": 6
+    }
+    ```
+    Response:
+    ```json
+    {
+      "last_question_index": 6
+    }
+    ```
+
+    **Authentication:**
+    This endpoint requires token-based authentication. The client must include the user's auth token in the `Authorization` header:
+    `Authorization: Token <your_token>`
+
+    **Parameters (GET):**
+    - `test_id` (query parameter, optional): The ID of the test to retrieve the state for.
+
+    **Parameters (POST):**
+    - `test_id` (string, required): The ID of the test to update.
+    - `last_question_index` (integer, required): The new last question index.
+
+    **Responses:**
+    - `200 OK`: The quiz state was successfully retrieved or updated.
+    - `400 Bad Request`: The request was malformed.
+    - `401 Unauthorized`: The user is not authenticated.
+    - `500 Internal Server Error`: An error occurred.
     """
     permission_classes = [IsAuthenticated]
 

@@ -13,6 +13,7 @@ interface ChatbotProps {
   initialMessage?: string;
   history: Message[];
   onHistoryChange: (history: Message[]) => void;
+  onBookmarkChange: () => void;
 }
 
 export interface Message {
@@ -20,7 +21,7 @@ export interface Message {
   sender: 'user' | 'bot';
 }
 
-export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, history, onHistoryChange }) => {
+export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, history, onHistoryChange, onBookmarkChange }) => {
   const [messages, setMessages] = useState<Message[]>(history);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -86,6 +87,10 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
       const data = await response.json();
       const botMessage: Message = { text: data.reply, sender: 'bot' };
       setMessages(prevMessages => [...prevMessages, botMessage]);
+
+      if (data.reply.toLowerCase().includes('bookmark')) {
+        onBookmarkChange();
+      }
     } catch (error: any) {
       console.error('Error sending message:', error);
       const errorMessage: Message = { text: error.message || 'Sorry, something went wrong. Please try again.', sender: 'bot' };

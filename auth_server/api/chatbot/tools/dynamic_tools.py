@@ -63,8 +63,18 @@ def create_tool_function(path, method, details):
             else:
                 return f"Unsupported HTTP method: {method}"
 
-            response.raise_for_status()  # Raise an exception for bad status codes
-            return response.json()
+            if str(response.status_code) in details.get('responses', {}):
+                response_info = details['responses'][str(response.status_code)]
+                if 200 <= response.status_code < 300:
+                    if response.status_code == 204:
+                        return f"Success: {response_info.get('description', 'Action completed successfully.')}"
+                    else:
+                        return response.json()
+                else:
+                    return f"Error {response.status_code}: {response_info.get('description', response.text)}"
+            else:
+                response.raise_for_status()
+                return response.json()
         except requests.exceptions.RequestException as e:
             if e.response is not None:
                 return f"An error occurred: {e}. Response: {e.response.text}"
@@ -72,10 +82,6 @@ def create_tool_function(path, method, details):
                 return f"An error occurred: {e}"
 
     description = details.get('description', '')
-    if path == '/api/auth/bookmarks/create/':
-        description = "Creates a bookmark for the current question. The 'subject' and 'question_id' from the question context must be provided as arguments."
-    elif path == '/api/auth/bookmarks/delete/{question_id}/':
-        description = "Deletes a bookmark for the current question. The 'question_id' must be provided, and the 'subject' from the question context must also be provided."
 
     return Tool(
         name=f"{method.upper()}_{path.replace('/', '_').replace('{', '').replace('}', '').strip('_')}",

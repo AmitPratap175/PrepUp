@@ -241,22 +241,39 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
     },
   });
 
-  const handleBookmarkToggle = async (qid: string) => {
-    const newBookmarks = new Set(bookmarkedQuestions);
-    if (newBookmarks.has(qid)) {
+  const handleBookmarkToggle = (qid: string) => {
+    if (bookmarkedQuestions.has(qid)) {
+      // Optimistically remove the bookmark
+      setBookmarkedQuestions(prev => {
+        const newBookmarks = new Set(prev);
+        newBookmarks.delete(qid);
+        return newBookmarks;
+      });
       deleteBookmarkMutation.mutate(qid, {
-        onSuccess: () => {
-          newBookmarks.delete(qid);
-          setBookmarkedQuestions(newBookmarks);
-          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+        onError: () => {
+          // Rollback on error
+          setBookmarkedQuestions(prev => {
+            const newBookmarks = new Set(prev);
+            newBookmarks.add(qid);
+            return newBookmarks;
+          });
         }
       });
     } else {
+      // Optimistically add the bookmark
+      setBookmarkedQuestions(prev => {
+        const newBookmarks = new Set(prev);
+        newBookmarks.add(qid);
+        return newBookmarks;
+      });
       createBookmarkMutation.mutate(qid, {
-        onSuccess: () => {
-          newBookmarks.add(qid);
-          setBookmarkedQuestions(newBookmarks);
-          queryClient.invalidateQueries({ queryKey: ["bookmarks"] });
+        onError: () => {
+          // Rollback on error
+          setBookmarkedQuestions(prev => {
+            const newBookmarks = new Set(prev);
+            newBookmarks.delete(qid);
+            return newBookmarks;
+          });
         }
       });
     }
@@ -497,6 +514,28 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
                     ...prev,
                     [currentQuestionId]: newHistory,
                   }));
+                }}
+                onBookmarkChange={() => {
+                  // Refetch bookmarks when the chatbot indicates a change
+                  const fetchBookmarks = async () => {
+                    const token = localStorage.getItem('token');
+                    if (token) {
+                      try {
+                        const response = await fetch(`/api/auth/bookmarks/?subject=${test.subject}`, {
+                          headers: {
+                            Authorization: `Token ${token}`,
+                          },
+                        });
+                        if (response.ok) {
+                          const bookmarks = await response.json();
+                          setBookmarkedQuestions(new Set(bookmarks.map((b: any) => b.question_id)));
+                        }
+                      } catch (error) {
+                        console.error("Failed to fetch bookmarks:", error);
+                      }
+                    }
+                  };
+                  fetchBookmarks();
                 }}
               />
             );
