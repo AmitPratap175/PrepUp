@@ -33,3 +33,18 @@ class UserQuizState(models.Model):
 
     def __str__(self):
         return f'{self.user.email} - {self.test_id} - Last Question: {self.last_question_index}'
+
+class UserQuizGoal(models.Model):
+    """
+    Stores the daily question goal for a user for a specific subject.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=255)
+    goal = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'subject')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.subject} - Goal: {self.goal}'

@@ -338,7 +338,9 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
 from rest_framework import status
-from .models import TestSession, UserQuizState
+from .models import TestSession, UserQuizState, UserQuizGoal
+from datetime import datetime, timezone
+from .storage import storage
 
 class ChatbotView(APIView):
     """
@@ -446,6 +448,71 @@ class ResetTestProgressView(APIView):
             TestSession.objects.filter(user=user).delete()
             UserQuizState.objects.filter(user=user).delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class UserQuizGoalView(APIView):
+    """
+    Handles getting and setting user quiz goals.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Retrieves the user's quiz goals and their progress for the day.
+        """
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+
+        goals = UserQuizGoal.objects.filter(user=user)
+
+        subjects = storage.get_subjects()
+
+        all_goals_data = []
+
+        for subject in subjects:
+            goal_obj = goals.filter(subject=subject).first()
+
+            goal = goal_obj.goal if goal_obj else 0
+
+            sessions_today = TestSession.objects.filter(
+                user=user,
+                subject=subject,
+                start_time__date=today
+            )
+
+            questions_attempted = sum(session.total_questions for session in sessions_today)
+
+            all_goals_data.append({
+                'subject': subject,
+                'goal': goal,
+                'questions_attempted': questions_attempted,
+            })
+
+        return Response(all_goals_data)
+
+    def post(self, request):
+        """
+        Creates or updates a user's quiz goal for a specific subject.
+        """
+        user = request.user
+        subject = request.data.get('subject')
+        goal = request.data.get('goal')
+
+        if not subject or goal is None:
+            return Response({'error': 'Subject and goal are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            goal_obj, created = UserQuizGoal.objects.update_or_create(
+                user=user,
+                subject=subject,
+                defaults={'goal': goal}
+            )
+            return Response({
+                'subject': goal_obj.subject,
+                'goal': goal_obj.goal
+            }, status=status.HTTP_201_CREATED if created else status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 

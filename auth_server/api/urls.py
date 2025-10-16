@@ -30,4 +30,5 @@ urlpatterns = [
     path('chatbot/', views.ChatbotView.as_view(), name='chatbot'),
     path('reset-test-progress/', ResetTestProgressView.as_view(), name='reset-test-progress'),
     path('user-quiz-state/', UserQuizStateView.as_view(), name='user-quiz-state'),
+    path('user-quiz-goals/', views.UserQuizGoalView.as_view(), name='user-quiz-goals'),
 ]
