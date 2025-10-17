@@ -256,7 +256,9 @@ def parse_html_to_questions(html: str) -> Dict:
         options, correct_option_data = _extract_correct_answer(qroot)
         if question_text is None: continue
         if question_text:
-            results.append({"qid": str(qid), "passage_text": passage_text if question_text not in passage_text else "", "question_text": question_text or "", "options": options, "correct_option_data": str(correct_option_data) if correct_option_data is not None else None, "solution_text": None, "image_url": image_url or "", "full_markdown": _build_full_markdown(str(qid), passage_text or "", question_text or "", options, correct_option_data)})
+            q_text = question_text.replace("$","").replace("\\","").replace(" ","").replace("{","").replace("}","").lower() if question_text else ""
+            p_text = passage_text.replace("$","").replace("\\","").replace(" ","").replace("{","").replace("}","").lower() if passage_text else ""
+            results.append({"qid": str(qid), "passage_text": passage_text if q_text not in p_text else "", "question_text": question_text or "", "options": options, "correct_option_data": str(correct_option_data) if correct_option_data is not None else None, "solution_text": None, "image_url": image_url or "", "full_markdown": _build_full_markdown(str(qid), passage_text or "", question_text or "", options, correct_option_data)})
     return {"questions": results}
 
 def main(categorized_html: Dict[str, List[str]]):
