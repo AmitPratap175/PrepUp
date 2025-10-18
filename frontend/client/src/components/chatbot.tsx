@@ -19,6 +19,7 @@ interface ChatbotProps {
 export interface Message {
   text: string;
   sender: 'user' | 'bot';
+  agent?: string;
 }
 
 export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, history, onHistoryChange, onBookmarkChange }) => {
@@ -27,6 +28,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const [isLoading, setIsLoading] = useState(false);
   const [isVoiceActive, setIsVoiceActive] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const ws = useRef<WebSocket | null>(null);
 
   const scrollToBottom = () => {
     if (chatContainerRef.current) {
@@ -35,16 +37,66 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   };
 
   useEffect(() => {
-    if (initialMessage) {
-      handleSendMessage(initialMessage);
-    }
-  }, [initialMessage]);
+    // Establish WebSocket connection
+    const socket = new WebSocket('ws://localhost:8000/ws/chat/');
+    ws.current = socket;
+
+    socket.onopen = () => {
+      console.log('WebSocket connected');
+      if (initialMessage) {
+        handleSendMessage(initialMessage);
+      }
+    };
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+
+      setMessages(prevMessages => {
+        const lastMessage = prevMessages[prevMessages.length - 1];
+        if (lastMessage && lastMessage.sender === 'bot' && lastMessage.agent === data.agent) {
+          // Append to the last message from the same agent
+          const updatedMessages = [...prevMessages];
+          updatedMessages[updatedMessages.length - 1] = {
+            ...lastMessage,
+            text: lastMessage.text + data.message
+          };
+          return updatedMessages;
+        } else {
+          // Create a new message
+          const botMessage: Message = { text: data.message, sender: 'bot', agent: data.agent };
+          return [...prevMessages, botMessage];
+        }
+      });
+
+      setIsLoading(false);
+       if (data.message.toLowerCase().includes('bookmark')) {
+        onBookmarkChange();
+      }
+    };
+
+    socket.onerror = (error) => {
+      console.error('WebSocket error:', error);
+      const errorMessage: Message = { text: 'WebSocket connection error. Please try again later.', sender: 'bot' };
+      setMessages(prevMessages => [...prevMessages, errorMessage]);
+      setIsLoading(false);
+    };
+
+    socket.onclose = () => {
+      console.log('WebSocket disconnected');
+    };
+
+    // Cleanup on component unmount
+    return () => {
+      if (ws.current) {
+        ws.current.close();
+      }
+    };
+  }, [initialMessage, onBookmarkChange]);
 
   useEffect(() => {
-    // Delay scrolling to allow Katex to render and prevent layout shifts from causing scroll jumps.
     const timer = setTimeout(() => {
       scrollToBottom();
-    }, 100); // A small delay is often enough.
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [messages, isVoiceActive]);
@@ -58,46 +110,14 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   }, [messages]);
 
   const handleSendMessage = async (messageToSend: string) => {
-    if (messageToSend.trim() === '' || isLoading) return;
+    if (messageToSend.trim() === '' || !ws.current || ws.current.readyState !== WebSocket.OPEN) return;
 
     const userMessage: Message = { text: messageToSend, sender: 'user' };
     setMessages(prevMessages => [...prevMessages, userMessage]);
     setInputValue('');
     setIsLoading(true);
 
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        throw new Error('Authentication error. Please log in again.');
-      }
-
-      const response = await fetch('/api/chatbot/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Token ${token}`,
-        },
-        body: JSON.stringify({ message: messageToSend }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const data = await response.json();
-      const botMessage: Message = { text: data.reply, sender: 'bot' };
-      setMessages(prevMessages => [...prevMessages, botMessage]);
-
-      if (data.reply.toLowerCase().includes('bookmark')) {
-        onBookmarkChange();
-      }
-    } catch (error: any) {
-      console.error('Error sending message:', error);
-      const errorMessage: Message = { text: error.message || 'Sorry, something went wrong. Please try again.', sender: 'bot' };
-      setMessages(prevMessages => [...prevMessages, errorMessage]);
-    } finally {
-      setIsLoading(false);
-    }
+    ws.current.send(JSON.stringify({ message: messageToSend }));
   };
 
   return (
@@ -122,6 +142,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
                     : 'bg-muted text-foreground dark:prose-invert'
                 }`}
               >
+                {message.agent && <div className="text-xs font-bold">{message.agent}</div>}
                 <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
                   {message.text}
                 </ReactMarkdown>

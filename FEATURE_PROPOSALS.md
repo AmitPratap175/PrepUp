@@ -45,14 +45,14 @@ Integrate the existing `supervisor.py` agent as the core of a new, intelligent c
 
 #### Backend (Django)
 
-1.  **Integrate the Supervisor:**
-    -   The `supervisor_graph` is already defined. It needs to be exposed via a WebSocket or a more advanced streaming API endpoint (e.g., using Django Channels) to support real-time, stateful conversations.
-    -   The existing `ChatbotView` can be adapted or replaced to use the `supervisor_graph`.
+1.  ~~**Integrate the Supervisor:**~~
+    -   ~~The `supervisor_graph` is already defined. It needs to be exposed via a WebSocket or a more advanced streaming API endpoint (e.g., using Django Channels) to support real-time, stateful conversations.~~
+    -   ~~The existing `ChatbotView` can be adapted or replaced to use the `supervisor_graph`.~~
 
-2.  **Asynchronous Integration (No `nest_asyncio`):**
-    -   **Crucially, do not use `nest_asyncio`.** This library patches the asyncio event loop and can cause unpredictable behavior in a production Django environment.
-    -   Instead, leverage Django Channels to create an `AsyncWebsocketConsumer`. Inside this consumer, you can safely call the asynchronous methods of your langgraph agents (e.g., `await supervisor_graph.ainvoke(...)` or `await supervisor_graph.astream(...)`).
-    -   This ensures that the langgraph agents run on the same event loop managed by Django Channels, leading to a stable and predictable integration.
+2.  ~~**Asynchronous Integration (No `nest_asyncio`):**~~
+    -   ~~**Crucially, do not use `nest_asyncio`.** This library patches the asyncio event loop and can cause unpredictable behavior in a production Django environment.~~
+    -   ~~Instead, leverage Django Channels to create an `AsyncWebsocketConsumer`. Inside this consumer, you can safely call the asynchronous methods of your langgraph agents (e.g., `await supervisor_graph.ainvoke(...)` or `await supervisor_graph.astream(...)`).~~
+    -   ~~This ensures that the langgraph agents run on the same event loop managed by Django Channels, leading to a stable and predictable integration.~~
 
 3.  **Develop New Agents:**
     -   Create the new specialized agents (`AnalyticsAgent`, `GoalSettingAgent`, etc.) as separate `langgraph` graphs.
@@ -76,9 +76,9 @@ Integrate the existing `supervisor.py` agent as the core of a new, intelligent c
 
 #### Frontend (React)
 
-1.  **Revamp Chatbot UI:**
-    -   The current `chatbot.tsx` component needs to be updated to connect to the new streaming endpoint (e.g., using WebSockets).
-    -   The UI should be able to handle the multi-agent nature of the conversation, perhaps by indicating which agent is currently responding.
+1.  ~~**Revamp Chatbot UI:**~~
+    -   ~~The current `chatbot.tsx` component needs to be updated to connect to the new streaming endpoint (e.g., using WebSockets).~~
+    -   ~~The UI should be able to handle the multi-agent nature of the conversation, perhaps by indicating which agent is currently responding.~~
 2.  **Rich Content Display:**
     -   The chatbot UI should be able to render not just text, but also rich content like charts (from the `AnalyticsAgent`), lists of questions (from the `ContentAgent`), and links to forum threads.
 
