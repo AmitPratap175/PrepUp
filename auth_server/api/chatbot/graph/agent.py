@@ -1,35 +1,36 @@
-from langgraph.graph import StateGraph, START, END
+from langchain_core.prompts import ChatPromptTemplate
 from langgraph.prebuilt import create_react_agent
-
-from .state import AICompanionState
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langgraph.graph import StateGraph, END, START
+from langgraph.checkpoint.sqlite import SqliteSaver
 from ..tools.safe_tools import safe_tools_list
 from ..tools.dynamic_tools import dynamic_tools_list
-from .nodes import extract_question_context_node
-from .utils.helpers import get_chat_model
+from .nodes import (
+    conversation_node,
+    route_tools,
+)
+from .state import AICompanionState
 
-def create_agent_graph():
-    """
-    Creates a ReAct agent graph.
-    """
-    # 1. Get the tools
-    all_tools = safe_tools_list + dynamic_tools_list
+def create_workflow_graph():
+    graph = StateGraph(AICompanionState)
+    graph.add_node("conversation", conversation_node)
 
-    # 2. Get the model
-    model = get_chat_model()
+    graph.add_conditional_edges(
+        "conversation",
+        route_tools,
+        {
+            "safe_tools": END,
+            END: END,
+        },
+    )
 
-    # 3. Create the ReAct agent
-    agent_runnable = create_react_agent(model, all_tools)
+    graph.set_entry_point("conversation")
+    return graph
 
-    # 4. Create a new graph and add the custom node
-    workflow = StateGraph(AICompanionState)
+def get_graph(checkpointer):
+    graph = create_workflow_graph()
+    return graph.compile(checkpointer=checkpointer)
 
-    workflow.add_node("extract_context", extract_question_context_node)
-    workflow.add_node("agent", agent_runnable)
-
-    workflow.add_edge(START, "extract_context")
-    workflow.add_edge("extract_context", "agent")
-    workflow.add_edge("agent", END)
-
-    return workflow
-
-graph_builder = create_agent_graph()
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+all_tools = safe_tools_list + dynamic_tools_list
+graph_builder = create_workflow_graph()

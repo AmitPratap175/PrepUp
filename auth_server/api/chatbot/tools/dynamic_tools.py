@@ -37,6 +37,28 @@ def create_tool_function(path, method, details):
 
             params_list.append(f"{param_name}: {param_type}")
 
+    # Add requestBody parameters to the function signature
+    if 'requestBody' in details:
+        content = details['requestBody'].get('content', {})
+        for media_type in content:
+            if 'schema' in content[media_type]:
+                schema = content[media_type]['schema']
+                if 'properties' in schema:
+                    for param_name, param_details in schema['properties'].items():
+                        param_type = 'Any' # default to Any
+                        if 'type' in param_details:
+                            schema_type = param_details['type']
+                            if schema_type == 'integer':
+                                param_type = 'int'
+                            elif schema_type == 'string':
+                                param_type = 'str'
+                            elif schema_type == 'boolean':
+                                param_type = 'bool'
+                            elif schema_type == 'number':
+                                param_type = 'float'
+                        params_list.append(f"{param_name}: {param_type}")
+
+
     params_str = ", ".join(params_list)
     if params_str:
         params_str += ", "
@@ -65,11 +87,22 @@ def api_tool({params_str}config: RunnableConfig = None):
             url = url.replace(f"{{{{param_name}}}}", str(param_value))
 
     # Separate payload for body and parameters for query string
-    payload = {{k: v for k, v in kwargs.items() if f"{{{{k}}}}" not in path and k != 'config'}}
+    payload = {{}}
+    if 'requestBody' in details:
+        content = details['requestBody'].get('content', {{}})
+        for media_type in content:
+            if 'schema' in content[media_type]:
+                schema = content[media_type]['schema']
+                if 'properties' in schema:
+                    for param_name in schema['properties']:
+                        if param_name in kwargs:
+                            payload[param_name] = kwargs[param_name]
+
+    query_params = {{k: v for k, v in kwargs.items() if k not in payload and f"{{{{k}}}}" not in path and k != 'config'}}
 
     try:
         if method == 'get':
-            response = requests.get(url, headers=headers, params=payload)
+            response = requests.get(url, headers=headers, params=query_params)
         elif method == 'post':
             response = requests.post(url, headers=headers, json=payload)
         elif method == 'put':
@@ -77,7 +110,7 @@ def api_tool({params_str}config: RunnableConfig = None):
         elif method == 'patch':
             response = requests.patch(url, headers=headers, json=payload)
         elif method == 'delete':
-            response = requests.delete(url, headers=headers, params=payload)
+            response = requests.delete(url, headers=headers, params=query_params)
         else:
             return f"Unsupported HTTP method: {{method}}"
 
