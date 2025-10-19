@@ -17,11 +17,13 @@ import { Calculator } from "./ui/calculator";
  * @property {PracticeTest} test - The test object containing questions and details.
  * @property {() => void} onExit - Function to be called when the user exits the quiz.
  * @property {(answers: UserAnswer[]) => void} onSubmit - Function to be called when the user submits the quiz.
+ * @property {(answers: UserAnswer[]) => void} onProgressUpdate - Function to be called when the user's progress is updated.
  */
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
   onSubmit: (answers: UserAnswer[]) => void;
+  onProgressUpdate: (answers: UserAnswer[]) => void;
 }
 
 /**
@@ -35,7 +37,7 @@ interface QuizInterfaceProps {
  * @param {QuizInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered quiz interface.
  */
-export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps) {
+export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
@@ -59,6 +61,18 @@ export function NewQuizInterface({ test, onExit, onSubmit }: QuizInterfaceProps)
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+
+  useEffect(() => {
+    if (onProgressUpdate) {
+      const userAnswers: UserAnswer[] = questions.map(question => ({
+          questionId: question.qid,
+          selectedAnswer: answers[question.qid] || null,
+          timeSpent: 0, // This can be enhanced later
+          isMarkedForReview: bookmarkedQuestions.has(question.qid),
+      }));
+      onProgressUpdate(userAnswers);
+    }
+  }, [answers, onProgressUpdate, questions, bookmarkedQuestions]);
 
   const definitionMutation = useMutation({
     mutationFn: async ({ word, context }: { word: string; context: string }) => {

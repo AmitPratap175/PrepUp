@@ -12,7 +12,7 @@ class TestSession(models.Model):
     total_questions = models.IntegerField()
     correct_answers = models.IntegerField(default=0)
     answers = models.JSONField()
-    is_completed = models.BooleanField(default=False)
+    status = models.CharField(max_length=20, default='in-progress')
     subject = models.CharField(max_length=255, null=True, blank=True)
     max_score = models.IntegerField(null=True, blank=True)
 

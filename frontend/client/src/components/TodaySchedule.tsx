@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 
 interface Goal {
   subject: string;
@@ -11,29 +12,41 @@ interface Goal {
 }
 
 const TodaySchedule: React.FC = () => {
-  const [goals, setGoals] = useState<Goal[]>([]);
   const [newGoals, setNewGoals] = useState<{ [subject: string]: number }>({});
+  const queryClient = useQueryClient();
 
-  useEffect(() => {
-    // Fetch goals from the backend
-    const fetchGoals = async () => {
-      try {
-        const response = await fetch('/api/user-quiz-goals/', {
-          headers: {
-            'Authorization': `Token ${localStorage.getItem('token')}`,
-          },
-        });
-        if (response.ok) {
-          const data = await response.json();
-          setGoals(data);
-        }
-      } catch (error) {
-        console.error('Failed to fetch goals:', error);
+  const { data: goals = [], refetch } = useQuery<Goal[]>({ 
+    queryKey: ['user-quiz-goals'], 
+    queryFn: async () => {
+      const response = await fetch('/api/user-quiz-goals/', {
+        headers: {
+          'Authorization': `Token ${localStorage.getItem('token')}`,
+        },
+      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch goals');
       }
-    };
+      const data = await response.json();
+      console.log('Fetched goals:', data);
+      return data;
+    }
+  });
 
-    fetchGoals();
-  }, []);
+  const mutation = useMutation({
+    mutationFn: ({ subject, goal }: { subject: string, goal: number }) => {
+      return fetch('/api/user-quiz-goals/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${localStorage.getItem('token')}`,
+        },
+        body: JSON.stringify({ subject, goal }),
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['user-quiz-goals'] });
+    },
+  });
 
   const handleGoalChange = (subject: string, value: string) => {
     setNewGoals({
@@ -42,47 +55,10 @@ const TodaySchedule: React.FC = () => {
     });
   };
 
-  const fetchGoals = async () => {
-    try {
-      const response = await fetch('/api/user-quiz-goals/', {
-        headers: {
-          'Authorization': `Token ${localStorage.getItem('token')}`,
-        },
-      });
-      if (response.ok) {
-        const data = await response.json();
-        setGoals(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch goals:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchGoals();
-  }, []);
-
-  const handleSetGoal = async (subject: string) => {
+  const handleSetGoal = (subject: string) => {
     const goal = newGoals[subject];
     if (goal === undefined) return;
-
-    try {
-      const response = await fetch('/api/user-quiz-goals/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Token ${localStorage.getItem('token')}`,
-        },
-        body: JSON.stringify({ subject, goal }),
-      });
-
-      if (response.ok) {
-        // Refresh goals after setting a new one
-        fetchGoals();
-      }
-    } catch (error) {
-      console.error('Failed to set goal:', error);
-    }
+    mutation.mutate({ subject, goal });
   };
 
   return (

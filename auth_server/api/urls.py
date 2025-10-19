@@ -21,8 +21,6 @@ urlpatterns = [
     path('sectional-tests/', views.sectional_tests, name='sectional_tests'),
     path('sectional-tests/<str:test_id>/', views.sectional_test_detail, name='sectional_test_detail'),
     path('sectional-tests/<str:test_id>/<str:section>/', views.sectional_test_section, name='sectional_test_section'),
-    path('test-sessions/', views.test_sessions, name='test_sessions'),
-    path('test-sessions/<str:session_id>/', views.test_session_detail, name='test_session_detail'),
     path('users/<str:user_id>/test-sessions/', views.user_test_sessions, name='user_test_sessions'),
     path('users/<str:user_id>/progress/', views.user_progress, name='user_progress'),
     path('users/<str:user_id>/progress/<str:course_id>/', views.user_progress_by_course, name='user_progress_by_course'),
@@ -32,4 +30,5 @@ urlpatterns = [
     path('user-quiz-state/', UserQuizStateView.as_view(), name='user-quiz-state'),
     path('user-quiz-goals/', views.UserQuizGoalView.as_view(), name='user-quiz-goals'),
     path('test-sessions/', views.TestSessionView.as_view(), name='test-sessions'),
+    path('test-sessions/<uuid:session_id>/', views.TestSessionDetailView.as_view(), name='test-session-detail'),
 ]

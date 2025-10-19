@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useLocation, Redirect } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
@@ -13,7 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest } from "@shared/schema";
+import type { PracticeTest, UserAnswer } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 
 /**
@@ -29,7 +29,9 @@ export default function QuizPage() {
   const { isAuthenticated } = useAuth();
   const [location, setLocation] = useLocation();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(null);
   const [quizStarted, setQuizStarted] = useState(false);
+  const queryClient = useQueryClient();
 
   // Extract test ID from URL if provided
   const urlParams = new URLSearchParams(location.split('?')[1] || '');
@@ -45,14 +47,85 @@ export default function QuizPage() {
     enabled: !!(selectedTestId || testIdFromUrl),
   });
 
+  const startSessionMutation = useMutation({
+    mutationFn: (newSession: any) => {
+      const token = localStorage.getItem('token');
+      return fetch('/api/test-sessions/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        },
+        body: JSON.stringify(newSession),
+      }).then(res => res.json());
+    },
+    onSuccess: (data) => {
+      setSessionId(data.id);
+      setQuizStarted(true);
+    },
+  });
+
+  const updateSessionMutation = useMutation({
+    mutationFn: (updatedSession: any) => {
+      const token = localStorage.getItem('token');
+      return fetch(`/api/test-sessions/${sessionId}/`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        },
+        body: JSON.stringify(updatedSession),
+      });
+    },
+    onSuccess: () => {
+      console.log('Quiz progress updated, invalidating user-quiz-goals');
+      queryClient.invalidateQueries({ queryKey: ['user-quiz-goals'] });
+    },
+  });
+
   const handleStartQuiz = (testId: string) => {
     setSelectedTestId(testId);
-    setQuizStarted(true);
+    if (!currentTest) return;
+
+    startSessionMutation.mutate({
+      testId: currentTest.id,
+      startTime: new Date().toISOString(),
+      totalQuestions: currentTest.totalQuestions,
+      subject: currentTest.subject,
+      maxScore: currentTest.totalQuestions,
+    });
+  };
+
+  const handleProgressUpdate = (answers: UserAnswer[]) => {
+    if (!sessionId) return;
+    updateSessionMutation.mutate({ answers });
+  };
+
+  const handleSubmit = (answers: UserAnswer[]) => {
+    if (!currentTest || !sessionId) return;
+
+    const correctAnswers = answers.filter(answer => {
+      const question = currentTest.questions.find(q => q.qid === answer.questionId);
+      if (!question) return false;
+      const correctOption = question.options.find(o => o.is_correct);
+      return correctOption && correctOption.data_option === answer.selectedAnswer;
+    }).length;
+
+    updateSessionMutation.mutate({
+      answers: answers,
+      score: correctAnswers,
+      correctAnswers: correctAnswers,
+      status: 'completed',
+      endTime: new Date().toISOString(),
+    });
+
+    handleExitQuiz();
   };
 
   const handleExitQuiz = () => {
     setQuizStarted(false);
     setSelectedTestId(null);
+    setSessionId(null);
     setLocation("/quiz");
   };
 
@@ -76,7 +149,7 @@ export default function QuizPage() {
   }
 
   if (quizStarted && currentTest) {
-    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} onSubmit={() => {}} />;
+    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} onSubmit={handleSubmit} onProgressUpdate={handleProgressUpdate} />;
   }
 
   return (

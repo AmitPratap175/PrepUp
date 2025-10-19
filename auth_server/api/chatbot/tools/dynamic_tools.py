@@ -1,13 +1,87 @@
-
 import yaml
 import requests
-from langchain.tools import Tool
+from langchain_core.tools import StructuredTool
 import os
 import re
 import json
 from langchain_core.runnables import RunnableConfig
+from pydantic import BaseModel, Field, create_model
+from typing import Dict, Any, Type, List, Optional
 
 # The descriptions of these tools are the primary content for the AI's VectorStore memory.
+
+def create_args_schema(details: Dict[str, Any], schema_components: Dict[str, Any]) -> Optional[Type[BaseModel]]:
+    fields = {}
+    
+    # Handle parameters
+    if 'parameters' in details:
+        for param in details['parameters']:
+            param_name = param['name']
+            param_schema = param.get('schema', {})
+            param_type = param_schema.get('type', 'string')
+            
+            type_mapping = {
+                'string': str,
+                'integer': int,
+                'number': float,
+                'boolean': bool,
+            }
+            python_type = type_mapping.get(param_type, Any)
+            
+            description = param.get('description', '')
+            
+            if param.get('required', False):
+                fields[param_name] = (python_type, Field(..., description=description))
+            else:
+                fields[param_name] = (Optional[python_type], Field(None, description=description))
+
+    # Handle requestBody
+    if 'requestBody' in details:
+        content = details['requestBody'].get('content', {})
+        if 'application/json' in content:
+            body_schema = content['application/json'].get('schema', {})
+            if '$ref' in body_schema:
+                ref_path = body_schema['$ref'].split('/')
+                ref_name = ref_path[-1]
+                component_schema = schema_components.get(ref_name, {})
+                if 'properties' in component_schema:
+                    for prop_name, prop_details in component_schema['properties'].items():
+                        prop_type = prop_details.get('type', 'string')
+                        type_mapping = {
+                            'string': str,
+                            'integer': int,
+                            'number': float,
+                            'boolean': bool,
+                            'uuid': str,
+                            'email': str,
+                        }
+                        python_type = type_mapping.get(prop_type, Any)
+                        
+                        if not prop_details.get('readOnly', False):
+                            if prop_name in component_schema.get('required', []):
+                                fields[prop_name] = (python_type, Field(..., description=prop_details.get('description', '')))
+                            else:
+                                fields[prop_name] = (Optional[python_type], Field(None, description=prop_details.get('description', '')))
+            elif 'properties' in body_schema:
+                 for prop_name, prop_details in body_schema['properties'].items():
+                    prop_type = prop_details.get('type', 'string')
+                    type_mapping = {
+                        'string': str,
+                        'integer': int,
+                        'number': float,
+                        'boolean': bool,
+                    }
+                    python_type = type_mapping.get(prop_type, Any)
+                    if prop_name in body_schema.get('required', []):
+                        fields[prop_name] = (python_type, Field(..., description=prop_details.get('description', '')))
+                    else:
+                        fields[prop_name] = (Optional[python_type], Field(None, description=prop_details.get('description', '')))
+
+    if not fields:
+        return None
+
+    return create_model('DynamicArgsSchema', **fields)
+
 
 def load_schema():
     """Loads the OpenAPI schema from a YAML file."""
@@ -15,21 +89,14 @@ def load_schema():
     with open(schema_path, 'r') as f:
         return yaml.safe_load(f)
 
-def create_tool_function(path, method, details):
+def create_tool_function(path, method, details, schema_components):
     """Dynamically creates a Python function to call an API endpoint."""
     
-    def api_tool(*args, config: RunnableConfig = None, **kwargs):
+    args_schema = create_args_schema(details, schema_components)
+
+    def api_tool(config: RunnableConfig = None, **kwargs):
         """A dynamically generated tool to interact with the API."""
-        print(f"api_tool called with: args={args}, kwargs={kwargs}")
-        
-        if args:
-            if isinstance(args[0], dict):
-                kwargs.update(args[0])
-            elif isinstance(args[0], str):
-                try:
-                    kwargs.update(json.loads(args[0]))
-                except json.JSONDecodeError:
-                    pass
+        print(f"api_tool called with: kwargs={kwargs}")
 
         url = f"http://localhost:8000{path}"
         
@@ -47,7 +114,7 @@ def create_tool_function(path, method, details):
                 url = url.replace(f"{{{param_name}}}", str(param_value))
 
         # Separate payload for body and parameters for query string
-        payload = {k: v for k, v in kwargs.items() if f"{{{k}}}" not in path and k != 'config'}
+        payload = {k: v for k, v in kwargs.items() if f"{{{k}}}" not in path and k != 'config' and v is not None}
         
         try:
             if method == 'get':
@@ -83,19 +150,24 @@ def create_tool_function(path, method, details):
 
     description = details.get('description', '')
 
-    return Tool(
-        name=f"{method.upper()}_{path.replace('/', '_').replace('{', '').replace('}', '').strip('_')}",
-        description=description,
-        func=api_tool
-    )
+    tool_kwargs = {
+        "name": f"{method.upper()}_{path.replace('/', '_').replace('{', '').replace('}', '').strip('_')}",
+        "description": description,
+        "func": api_tool,
+    }
+    if args_schema:
+        tool_kwargs["args_schema"] = args_schema
+
+    return StructuredTool.from_function(**tool_kwargs)
 
 def get_tools_from_schema():
     """Generates a list of tools from the OpenAPI schema."""
     schema = load_schema()
+    schema_components = schema.get('components', {}).get('schemas', {})
     tools = []
     for path, methods in schema.get('paths', {}).items():
         for method, details in methods.items():
-            tool_func = create_tool_function(path, method, details)
+            tool_func = create_tool_function(path, method, details, schema_components)
             tools.append(tool_func)
     return tools
 

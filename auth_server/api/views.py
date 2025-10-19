@@ -470,16 +470,56 @@ class TestSessionView(APIView):
                 user=user,
                 test_id=data.get('testId'),
                 start_time=data.get('startTime'),
-                end_time=data.get('endTime'),
-                score=data.get('score'),
                 total_questions=data.get('totalQuestions'),
-                correct_answers=data.get('correctAnswers'),
-                answers=data.get('answers'),
-                is_completed=data.get('isCompleted'),
+                answers=data.get('answers', []),
                 subject=data.get('subject'),
                 max_score=data.get('maxScore'),
             )
             return Response({'id': str(session.id)}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class TestSessionDetailView(APIView):
+    """
+    Handles retrieving, updating and deleting a specific test session.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, session_id):
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+            return Response({
+                'id': str(session.id),
+                'testId': session.test_id,
+                'startTime': session.start_time,
+                'endTime': session.end_time,
+                'score': session.score,
+                'totalQuestions': session.total_questions,
+                'correctAnswers': session.correct_answers,
+                'answers': session.answers,
+                'status': session.status,
+                'subject': session.subject,
+                'maxScore': session.max_score,
+            })
+        except TestSession.DoesNotExist:
+            return Response({'error': 'Test session not found'}, status=status.HTTP_404_NOT_FOUND)
+
+    def patch(self, request, session_id):
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+            data = request.data
+
+            session.answers = data.get('answers', session.answers)
+            session.score = data.get('score', session.score)
+            session.correct_answers = data.get('correctAnswers', session.correct_answers)
+            session.status = data.get('status', session.status)
+            if 'endTime' in data:
+                session.end_time = data.get('endTime')
+
+            session.save()
+            return Response({'id': str(session.id)}, status=status.HTTP_200_OK)
+        except TestSession.DoesNotExist:
+            return Response({'error': 'Test session not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -513,7 +553,8 @@ class UserQuizGoalView(APIView):
                 start_time__date=today
             )
 
-            questions_attempted = sum(session.total_questions for session in sessions_today)
+            questions_attempted = sum(sum(1 for answer in session.answers if answer.get('selectedAnswer') is not None) for session in sessions_today)
+            print(f"Subject: {subject}, Goal: {goal}, Questions Attempted Today: {sessions_today.count()}")
 
             all_goals_data.append({
                 'subject': subject,
