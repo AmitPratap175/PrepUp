@@ -9,4 +9,4 @@ class ApiConfig(AppConfig):
     default auto field for models and the app name.
     """
     default_auto_field = "django.db.models.BigAutoField"
-    name = "api"
+    name = "auth_server.api"

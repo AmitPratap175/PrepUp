@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "users",
-    "api",
+    "auth_server.api",
     "corsheaders",
     "drf_spectacular",
 ]

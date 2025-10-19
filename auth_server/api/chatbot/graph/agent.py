@@ -1,6 +1,7 @@
+import os
+import google.generativeai as genai
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.prebuilt import create_react_agent
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import StateGraph, END, START
 from langgraph.checkpoint.sqlite import SqliteSaver
 from ..tools.safe_tools import safe_tools_list
@@ -31,6 +32,9 @@ def get_graph(checkpointer):
     graph = create_workflow_graph()
     return graph.compile(checkpointer=checkpointer)
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+llm = genai.GenerativeModel(
+    "gemini-1.5-pro-latest",
+)
 all_tools = safe_tools_list + dynamic_tools_list
 graph_builder = create_workflow_graph()

@@ -10,22 +10,22 @@ Integrate the existing `supervisor.py` agent as the core of a new, intelligent c
 
 ### How the Supervisor can be more helpful
 
-1.  **Expand the Agent Team:** Introduce more specialized agents for the supervisor to manage:
-    *   **`AnalyticsAgent`**: To interpret a user's performance data. A user could ask, "Where am I weakest?" and this agent would provide a detailed breakdown with recommendations.
-    *   **`GoalSettingAgent`**: To help users define, track, and manage their study goals. A user could say, "I want to score 90% in Quant in 3 weeks," and the agent would help create a study plan.
-    *   **`ContentAgent`**: To find specific study materials, practice questions, or tests. For example, "Find me some hard questions on probability."
-    *   **`ForumAgent`**: To search the discussion forums for answers or related conversations.
-    *   **`MotivationAgent`**: To keep users motivated by providing encouragement, celebrating milestones, and reminding them of their goals.
-    *   **`StrategyAgent`**: To provide tips on test-taking strategies, time management, and question-level approaches based on user performance.
-    *   **`VocabularyAgent`**: To help users learn new words through a Spaced Repetition System (SRS) and daily quizzes.
-    *   **`NewsAgent`**: To fetch and summarize relevant news articles, which can be used for reading comprehension practice.
-    *   **`SupportAgent`**: To handle administrative queries, answer questions about the platform, and report bugs.
-    *   **`PlanningAgent`**: To help users create and manage a personalized study schedule.
-    *   **`ErrorAnalysisAgent`**: To analyze a user's mistakes and identify the root cause (e.g., conceptual gap, calculation error), then provide targeted exercises.
-    *   **`ComparisonAgent`**: To provide a granular comparison of a user's performance against their friends, the platform average, or top performers.
-    *   **`MindsetAgent`**: To help users with the psychological aspects of test prep, such as managing anxiety and building confidence.
-    *   **`GamificationAgent`**: To manage all gamification elements, such as daily challenges, points, and rewards.
-    *   **`AdmissionsAgent`**: To provide information and guidance on the admissions process for various universities, including deadlines and essay tips.
+1.  ~~**Expand the Agent Team:** Introduce more specialized agents for the supervisor to manage:~~
+    *   ~~**`AnalyticsAgent`**: To interpret a user's performance data. A user could ask, "Where am I weakest?" and this agent would provide a detailed breakdown with recommendations.~~
+    *   ~~**`GoalSettingAgent`**: To help users define, track, and manage their study goals. A user could say, "I want to score 90% in Quant in 3 weeks," and the agent would help create a study plan.~~
+    *   ~~**`ContentAgent`**: To find specific study materials, practice questions, or tests. For example, "Find me some hard questions on probability."~~
+    *   ~~**`ForumAgent`**: To search the discussion forums for answers or related conversations.~~
+    *   ~~**`MotivationAgent`**: To keep users motivated by providing encouragement, celebrating milestones, and reminding them of their goals.~~
+    *   ~~**`StrategyAgent`**: To provide tips on test-taking strategies, time management, and question-level approaches based on user performance.~~
+    *   ~~**`VocabularyAgent`**: To help users learn new words through a Spaced Repetition System (SRS) and daily quizzes.~~
+    *   ~~**`NewsAgent`**: To fetch and summarize relevant news articles, which can be used for reading comprehension practice.~~
+    *   ~~**`SupportAgent`**: To handle administrative queries, answer questions about the platform, and report bugs.~~
+    *   ~~**`PlanningAgent`**: To help users create and manage a personalized study schedule.~~
+    *   ~~**`ErrorAnalysisAgent`**: To analyze a user's mistakes and identify the root cause (e.g., conceptual gap, calculation error), then provide targeted exercises.~~
+    *   ~~**`ComparisonAgent`**: To provide a granular comparison of a user's performance against their friends, the platform average, or top performers.~~
+    *   ~~**`MindsetAgent`**: To help users with the psychological aspects of test prep, such as managing anxiety and building confidence.~~
+    *   ~~**`GamificationAgent`**: To manage all gamification elements, such as daily challenges, points, and rewards.~~
+    *   ~~**`AdmissionsAgent`**: To provide information and guidance on the admissions process for various universities, including deadlines and essay tips.~~
 
 2.  **Proactive Assistance:** The supervisor can initiate conversations based on user activity:
     *   If a user is struggling with a topic, the supervisor could proactively offer help: "I see you're finding Algebra tricky. Would you like some practice questions?"

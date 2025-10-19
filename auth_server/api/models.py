@@ -16,6 +16,9 @@ class TestSession(models.Model):
     subject = models.CharField(max_length=255, null=True, blank=True)
     max_score = models.IntegerField(null=True, blank=True)
 
+    class Meta:
+        app_label = "api"
+
     def __str__(self):
         return f"Test Session {self.id} for {self.user.email}"
 
@@ -29,6 +32,7 @@ class UserQuizState(models.Model):
     last_question_index = models.IntegerField(default=0)
 
     class Meta:
+        app_label = "api"
         unique_together = ('user', 'test_id')
 
     def __str__(self):
@@ -44,6 +48,7 @@ class UserQuizGoal(models.Model):
     goal = models.IntegerField(default=0)
 
     class Meta:
+        app_label = "api"
         unique_together = ('user', 'subject')
 
     def __str__(self):
