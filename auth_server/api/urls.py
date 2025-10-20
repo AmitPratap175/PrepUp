@@ -7,9 +7,10 @@ courses, study materials, tests, and user-specific data.
 """
 from django.urls import path
 from . import views
-from .views import ResetTestProgressView, UserQuizStateView
+from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateView
 
 urlpatterns = [
+    path('subjects/', views.subjects, name='subjects'),
     path('courses/', views.courses, name='courses'),
     path('courses/<str:course_id>/', views.course_detail, name='course_detail'),
     path('study-materials/', views.study_materials, name='study_materials'),
@@ -27,6 +28,7 @@ urlpatterns = [
     path('questions/add/', views.add_question_view, name='add_question'),
     path('chatbot/', views.ChatbotView.as_view(), name='chatbot'),
     path('reset-test-progress/', ResetTestProgressView.as_view(), name='reset-test-progress'),
+    path('user-quiz-progress/', UserQuizProgressView.as_view(), name='user-quiz-progress'),
     path('user-quiz-state/', UserQuizStateView.as_view(), name='user-quiz-state'),
     path('user-quiz-goals/', views.UserQuizGoalView.as_view(), name='user-quiz-goals'),
     path('test-sessions/', views.TestSessionView.as_view(), name='test-sessions'),

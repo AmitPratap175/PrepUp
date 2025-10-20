@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useLocation, Redirect } from "wouter";
 import { AppHeader } from "@/components/app-header";
@@ -31,6 +31,7 @@ export default function QuizPage() {
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [quizStarted, setQuizStarted] = useState(false);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const queryClient = useQueryClient();
 
   // Extract test ID from URL if provided
@@ -46,6 +47,28 @@ export default function QuizPage() {
     queryKey: ["/api/practice-tests", selectedTestId || testIdFromUrl].filter(Boolean),
     enabled: !!(selectedTestId || testIdFromUrl),
   });
+
+  useEffect(() => {
+    const fetchLastQuestion = async () => {
+      const token = localStorage.getItem('token');
+      if (token && currentTest) {
+        const response = await fetch(`/api/user-quiz-state/?test_id=${currentTest.id}`, {
+          headers: {
+            'Authorization': `Token ${token}`,
+          },
+        });
+        if (response.ok) {
+          const data = await response.json();
+          if (data.last_question_index > 0) {
+            setCurrentQuestionIndex(data.last_question_index);
+          }
+        }
+      }
+    };
+    if (quizStarted) {
+      fetchLastQuestion();
+    }
+  }, [quizStarted, currentTest]);
 
   const startSessionMutation = useMutation({
     mutationFn: (newSession: any) => {
@@ -83,6 +106,40 @@ export default function QuizPage() {
     },
   });
 
+  const updateProgressMutation = useMutation({
+    mutationFn: (progress: { subject: string; questions_attempted: number }) => {
+      const token = localStorage.getItem('token');
+      return fetch('/api/user-quiz-progress/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        },
+        body: JSON.stringify(progress),
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['user-quiz-goals'] });
+    },
+  });
+
+  const updateLastQuestion = async (questionIndex: number) => {
+    const token = localStorage.getItem('token');
+    if (token && currentTest) {
+      await fetch('/api/user-quiz-state/', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Token ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          test_id: currentTest.id,
+          last_question_index: questionIndex,
+        }),
+      });
+    }
+  };
+
   const handleStartQuiz = (testId: string) => {
     setSelectedTestId(testId);
     if (!currentTest) return;
@@ -97,8 +154,14 @@ export default function QuizPage() {
   };
 
   const handleProgressUpdate = (answers: UserAnswer[]) => {
-    if (!sessionId) return;
-    updateSessionMutation.mutate({ answers });
+    if (!sessionId || !currentTest) return;
+
+    const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
+
+    updateProgressMutation.mutate({ 
+      subject: currentTest.subject, 
+      questions_attempted 
+    });
   };
 
   const handleSubmit = (answers: UserAnswer[]) => {
@@ -129,6 +192,13 @@ export default function QuizPage() {
     setLocation("/quiz");
   };
 
+  const navigateToQuestion = (questionIndex: number) => {
+    if (questionIndex >= 0 && currentTest && questionIndex < currentTest.questions.length) {
+      setCurrentQuestionIndex(questionIndex);
+      updateLastQuestion(questionIndex);
+    }
+  };
+
   if (!isAuthenticated) {
     return <Redirect to="/login" />;
   }
@@ -149,7 +219,7 @@ export default function QuizPage() {
   }
 
   if (quizStarted && currentTest) {
-    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} onSubmit={handleSubmit} onProgressUpdate={handleProgressUpdate} />;
+    return <NewQuizInterface test={currentTest} onExit={handleExitQuiz} onSubmit={handleSubmit} onProgressUpdate={handleProgressUpdate} navigateToQuestion={navigateToQuestion} currentQuestionIndex={currentQuestionIndex} />;
   }
 
   return (

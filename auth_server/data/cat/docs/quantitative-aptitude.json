@@ -32017,6 +32017,181 @@
       "solution_text": "y = $3\\log_{5}{x}-\\log_{x}{0.04}$ = $3\\log_{5}{x}-\\log_{x}{1/25}$ = $3\\log_{5}{x}-\\log_{x}{5^{-2}}$ = $3\\log_{5}{x}+2\\log_{x}{5}$\n\n= $3\\log_{5}{x}+\\frac{2}{log_{5}{x}}$ \n\nSince AM $\\geq$ GM;\n\n$\\frac{3\\log_{5}{x}+\\frac{2}{log_{5}{x}}}{2}$  $\\geq$  $(3\\log_{5}{x} \\times \\frac{2}{log_{5}{x}})^{\\frac{1}{2}}$ \n\n$3\\log_{5}{x}+\\frac{2}{log_{5}{x}}$ $\\geq$ $2\\sqrt{6}$",
       "image_url": "",
       "full_markdown": "### Question (qid: 230719)\n\n**Passage:**\nFind the minimum value of the expression y, where y = 3 log ⁡ 5 x − log ⁡ x 0.04 3\\log_{5}{x}-\\log_{x}{0.04} 3 lo g 5 ​ x − lo g x ​ 0 . 0 4 ,for x > 1 x > 1 x > 1\n\n2 6 2\\sqrt{6} 2 6 ​\n\n6 \\sqrt{6} 6 ​\n\n3 2 3\\sqrt{2} 3 2 ​\n\n2 3 2\\sqrt{3} 2 3 ​\n\nFind the minimum value of the expression y, where y = $3\\log_{5}{x}-\\log_{x}{0.04}$,for $x > 1$\n\n**Options:**\n- **A**. $2\\sqrt{6}$\n- **B**. $\\sqrt{6}$\n- **C**. $3\\sqrt{2}$\n- **D**. $2\\sqrt{3}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-955",
+      "passage_text": "The compound interest paid by a person in 8 years is 5 times the compound interest paid by him in 4 years, then find the approximate annual rate of the interest.\n\n73%\n\n30%\n\n41%\n\n10%",
+      "question_text": "The compound interest paid by a person in 8 years is 5 times the compound interest paid by him in 4 years, then find the approximate annual rate of the interest.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "73%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "41%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Assuming the annual rate of interest = r\n\nHence, compound interest paid by the person in 4 years = $P\\left(1+r\\right)^4-P$\nAlso, compound interest paid by the person in 8 years = $P\\left(1+r\\right)^8-P$\nHence, the ratio = $\\ \\frac{\\ \\left(1+r\\right)^8-1}{\\left(1+r\\right)^4-1}=5$\n=> $\\ \\ \\left(1+r\\right)^8-1=5\\left(1+r\\right)^4-5$\nAssuming, $\\left(1+r\\right)^4$ =x,\n$x^2-5x+4=0$\n=> (x-1)(x-4)=0\n=> x=1 or x=4, x cannot be equal to 1 as the ratio will not be defined. Hence x=4 => $\\left(1+r\\right)^4$ = 4  =>1+r = $\\sqrt{\\ 2}$\n=> r=$\\sqrt{\\ 2}-1$ = 0.414\nHence, the rate of interest will be 41% approximately.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 291315)\n\n**Passage:**\nThe compound interest paid by a person in 8 years is 5 times the compound interest paid by him in 4 years, then find the approximate annual rate of the interest.\n\n73%\n\n30%\n\n41%\n\n10%\n\nThe compound interest paid by a person in 8 years is 5 times the compound interest paid by him in 4 years, then find the approximate annual rate of the interest.\n\n**Options:**\n- **A**. 73%\n- **B**. 30%\n- **C**. 41%\n- **D**. 10%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-956",
+      "passage_text": "",
+      "question_text": "After allowing a discount of 11.11%, a trader still makes a gain of 14.28%. At how many percentage above the cost price does he mark on his goods?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28.56%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "35%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "22.22%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let's say cost price is 100\n\ngain = 14.28\n\nselling price = 114.28\n\nMarked price = x(say)\n\nSo $x- \\frac{11.11x}{100} = \\frac{8x}{9} = 114.28$\n\nOr $x = 128.52$\n\nSo marked price is 28.52% more than cost price.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 12067)\n\n**Passage:**\nAfter allowing a discount of 11.11%, a trader still makes a gain of 14.28%. At how many percentage above the cost price does he mark on his goods?\n\n28.56%\n\n35%\n\n22.22%\n\nNone of these\n\nAfter allowing a discount of 11.11%, a trader still makes a gain of 14.28%. At how many percentage above the cost price does he mark on his goods?\n\n**Options:**\n- **A**. 28.56%\n- **B**. 35%\n- **C**. 22.22%\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-957",
+      "passage_text": "",
+      "question_text": "Arun borrowed some money from Kumar at 25% simple interest annually for 2 years. Arun then deposited the same amount in a bank for the same rate but with C.I compounded annually. How much percent did Arun gain at the end of 2 years with respect to the initial amount borrowed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "56.25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4.167%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "41.67%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6.25%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the amount borrowed be Rs100.\nSI at the end of 2 years = 2 x 100 x .25 = Rs50\nCI at the end of 2 years = 100(1.25)$^{2}$-100 = Rs56.25\nThus Arun gains Rs 6.25 for Rs 100 => his gain% = 6.25%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 32671)\n\n**Passage:**\nArun borrowed some money from Kumar at 25% simple interest annually for 2 years. Arun then deposited the same amount in a bank for the same rate but with C.I compounded annually. How much percent did Arun gain at the end of 2 years with respect to the initial amount borrowed?\n\n56.25%\n\n4.167%\n\n41.67%\n\n6.25%\n\nArun borrowed some money from Kumar at 25% simple interest annually for 2 years. Arun then deposited the same amount in a bank for the same rate but with C.I compounded annually. How much percent did Arun gain at the end of 2 years with respect to the initial amount borrowed?\n\n**Options:**\n- **A**. 56.25%\n- **B**. 4.167%\n- **C**. 41.67%\n- **D**. 6.25%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-958",
+      "passage_text": "",
+      "question_text": "A dealer buys dry fruits at Rs. 100, Rs. 80 and Rs. 60 per kilogram. He mixes them in the ratio 3 : 4 : 5 by weight, and sells at a profit of 50%. At what price per kilogram does he sell the dry fruits?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 80",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 100",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 95",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let's say he buy fruits of weights 3 kg., 4kg., 5 kg.\nTotal kilograms of dry fruits $=3+4+5=12$\n\nOverall cost price $=3\\cdot100+4\\cdot80+5\\cdot60=300+320+300=920$\n\nSo cost price per kg. $=\\dfrac{300+320+300}{12} = \\dfrac{920}{12}$\n\nSelling price = $\\dfrac{920}{12} \\times \\dfrac{3}{2}$ = 115 per kg (Since Profit is 50%)\n\nHence answer will be D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 12069)\n\n**Passage:**\nA dealer buys dry fruits at Rs. 100, Rs. 80 and Rs. 60 per kilogram. He mixes them in the ratio 3 : 4 : 5 by weight, and sells at a profit of 50%. At what price per kilogram does he sell the dry fruits?\n\nRs. 80\n\nRs. 100\n\nRs. 95\n\nNone of these\n\nA dealer buys dry fruits at Rs. 100, Rs. 80 and Rs. 60 per kilogram. He mixes them in the ratio 3 : 4 : 5 by weight, and sells at a profit of 50%. At what price per kilogram does he sell the dry fruits?\n\n**Options:**\n- **A**. Rs. 80\n- **B**. Rs. 100\n- **C**. Rs. 95\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-959",
+      "passage_text": "",
+      "question_text": "An item bought at a certain price is marked up by a%. It is given a discount of a/2%. If the profit is equal to Rs 60 and the discount is Rs 240, then find the selling price of the item.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1260",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1060",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "560",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "660",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Assume the cost price = 100x\nAfter marking a%, we get marked price = (100+a)x\nHere mark up = ax = Profit+Discount = 240+60 = 300 ......(1)\nThe discount = a/2% of 100x+ax= (100+a)x $\\times\\ \\frac{a}{200}=240$\n=> $\\frac{\\left(100+a\\right)}{200}\\times\\ ax\\ =\\ 240$\n=> $\\frac{\\left(100+a\\right)}{200}\\times\\ 300\\ =\\ 240$\n=> 100 + a = 160\n=> a= 60 \nFrom 1, x=5\nHence, the selling price = Cost price + Profit = 100x+60 =Rs 560",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 295151)\n\n**Passage:**\nAn item bought at a certain price is marked up by a%. It is given a discount of a/2%. If the profit is equal to Rs 60 and the discount is Rs 240, then find the selling price of the item.\n\n1260\n\n1060\n\n560\n\n660\n\nAn item bought at a certain price is marked up by a%. It is given a discount of a/2%. If the profit is equal to Rs 60 and the discount is Rs 240, then find the selling price of the item.\n\n**Options:**\n- **A**. 1260\n- **B**. 1060\n- **C**. 560\n- **D**. 660\n\n**Correct Answer:** null"
     }
   ]
 }

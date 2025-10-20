@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import Latex from "react-latex-next";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,6 +43,7 @@ interface SectionalTestInterfaceProps {
 export default function SectionalTestInterface({ testId }: SectionalTestInterfaceProps) {
   const [, navigate] = useLocation();
   const { toast } = useToast();
+  const queryClient = useQueryClient();
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
     queryKey: [`/api/sectional-tests/${testId}`]
   });
@@ -100,6 +101,46 @@ export default function SectionalTestInterface({ testId }: SectionalTestInterfac
       }));
     }
   }, [test]);
+
+  const updateProgressMutation = useMutation({
+    mutationFn: (progress: { subject: string; questions_attempted: number }) => {
+      const token = localStorage.getItem('token');
+      return fetch('/api/user-quiz-progress/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        },
+        body: JSON.stringify(progress),
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['user-quiz-goals'] });
+    },
+  });
+
+  const handleProgressUpdate = (answers: UserAnswer[]) => {
+    if (!test) return;
+
+    const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
+
+    updateProgressMutation.mutate({ 
+      subject: test.subject, 
+      questions_attempted 
+    });
+  };
+
+  useEffect(() => {
+    if (testState.answers) {
+      const userAnswers: UserAnswer[] = questions.map(question => ({
+          questionId: question.qid,
+          selectedAnswer: testState.answers[question.qid] || null,
+          timeSpent: 0, // This can be enhanced later
+          isMarkedForReview: testState.markedForReview.has(question.qid),
+      }));
+      handleProgressUpdate(userAnswers);
+    }
+  }, [testState.answers]);
 
   useEffect(() => {
     if (testState.timeRemaining <= 0) {

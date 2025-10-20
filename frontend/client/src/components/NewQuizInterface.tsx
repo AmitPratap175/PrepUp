@@ -18,12 +18,16 @@ import { Calculator } from "./ui/calculator";
  * @property {() => void} onExit - Function to be called when the user exits the quiz.
  * @property {(answers: UserAnswer[]) => void} onSubmit - Function to be called when the user submits the quiz.
  * @property {(answers: UserAnswer[]) => void} onProgressUpdate - Function to be called when the user's progress is updated.
+ * @property {(index: number) => void} navigateToQuestion - Function to navigate to a specific question.
+ * @property {number} currentQuestionIndex - The index of the current question.
  */
 interface QuizInterfaceProps {
   test: PracticeTest;
   onExit: () => void;
   onSubmit: (answers: UserAnswer[]) => void;
   onProgressUpdate: (answers: UserAnswer[]) => void;
+  navigateToQuestion: (index: number) => void;
+  currentQuestionIndex: number;
 }
 
 /**
@@ -37,11 +41,10 @@ interface QuizInterfaceProps {
  * @param {QuizInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered quiz interface.
  */
-export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate }: QuizInterfaceProps) {
+export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, navigateToQuestion, currentQuestionIndex }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
@@ -205,13 +208,13 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate }: Q
 
   const handleNext = () => {
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
+      navigateToQuestion(currentQuestionIndex + 1);
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(prev => prev - 1);
+      navigateToQuestion(currentQuestionIndex - 1);
     }
   };
 
@@ -489,7 +492,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate }: Q
                 return (
                   <button
                     key={index}
-                    onClick={() => setCurrentQuestionIndex(index)}
+                    onClick={() => navigateToQuestion(index)}
                     className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${
                       index === currentQuestionIndex
                         ? 'bg-primary text-primary-foreground'
