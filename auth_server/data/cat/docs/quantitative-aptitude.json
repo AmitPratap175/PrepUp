@@ -32192,6 +32192,131 @@
       "solution_text": "Assume the cost price = 100x\nAfter marking a%, we get marked price = (100+a)x\nHere mark up = ax = Profit+Discount = 240+60 = 300 ......(1)\nThe discount = a/2% of 100x+ax= (100+a)x $\\times\\ \\frac{a}{200}=240$\n=> $\\frac{\\left(100+a\\right)}{200}\\times\\ ax\\ =\\ 240$\n=> $\\frac{\\left(100+a\\right)}{200}\\times\\ 300\\ =\\ 240$\n=> 100 + a = 160\n=> a= 60 \nFrom 1, x=5\nHence, the selling price = Cost price + Profit = 100x+60 =Rs 560",
       "image_url": "",
       "full_markdown": "### Question (qid: 295151)\n\n**Passage:**\nAn item bought at a certain price is marked up by a%. It is given a discount of a/2%. If the profit is equal to Rs 60 and the discount is Rs 240, then find the selling price of the item.\n\n1260\n\n1060\n\n560\n\n660\n\nAn item bought at a certain price is marked up by a%. It is given a discount of a/2%. If the profit is equal to Rs 60 and the discount is Rs 240, then find the selling price of the item.\n\n**Options:**\n- **A**. 1260\n- **B**. 1060\n- **C**. 560\n- **D**. 660\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-960",
+      "passage_text": "",
+      "question_text": "If $log_{3}x+ log_{3}y+log_{3}z \\geq $ 3 where $x, y, z$ are positive real numbers. Then the least value of 3$(x+y+z)$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "81",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "$log_{3}x+ log_{3}y+log_{3}z \\geq $ 3 \n\n$log_{3}xyz \\geq $ 3 \n\n$xyz \\geq 3^{3}$\n\nAs $\\frac{x+y+z}{3} \\geq \\sqrt[3]{xyz}$\n\n$\\frac{x+y+z}{3} \\geq 3$\n\n$x+y+z$ $\\geq$ 9\n\n$3*(x+y+z) \\geq$ 27\n\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 230798)\n\n**Passage:**\nIf l o g 3 x + l o g 3 y + l o g 3 z ≥ log_{3}x+ log_{3}y+log_{3}z \\geq l o g 3 ​ x + l o g 3 ​ y + l o g 3 ​ z ≥ 3 where x , y , z x, y, z x , y , z are positive real numbers. Then the least value of 3 ( x + y + z ) (x+y+z) ( x + y + z ) is\n\n8\n\n9\n\n27\n\n81\n\nIf $log_{3}x+ log_{3}y+log_{3}z \\geq $ 3 where $x, y, z$ are positive real numbers. Then the least value of 3$(x+y+z)$ is\n\n**Options:**\n- **A**. 8\n- **B**. 9\n- **C**. 27\n- **D**. 81\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-961",
+      "passage_text": "",
+      "question_text": "Number of digits in $3^{98}$ in base 9",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "49",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "51",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Number of digits in $3^{98}$ in base 9 is given by GIF of $log _9 3^{98}$ + 1\n=$log _9 3^{98}$\n=$\\frac{log 3^{98}}{log9}$\n=$\\frac{98log3}{2log3}$\n=49\nNumber of digits in $3^{98}$ in base 9= 49+1=50\nHence B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 233131)\n\n**Passage:**\nNumber of digits in 3 98 3^{98} 3 9 8 in base 9\n\n49\n\n50\n\n48\n\n51\n\nNumber of digits in $3^{98}$ in base 9\n\n**Options:**\n- **A**. 49\n- **B**. 50\n- **C**. 48\n- **D**. 51\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-962",
+      "passage_text": "",
+      "question_text": "If $'a'$ is the smallest value of x which satisfies the equation $4^{x}+\\frac{35}{4^x}$=12. Then the value of $16^a$ is",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "$4^{x}+\\frac{35}{4^x}$=12.\n\nLet $4^x$=$p$\n\n$p+\\frac{35}{p}$=12\n\n$p^2-12p+35$=0\n\n$p$=5,7\n\nThe value of x= $log_{4}{5}$, $log_{4}{7}$\n\nSince a is the smallest value which satisfies the equation, a=$log_{4}{5}$\n\nLet's find the value of 16$^{a}$\n\n=$16^{log_{4}{5}}$\n\n=$4^{2*log_{4}{5}}$\n\n=25\n\n25 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 236766)\n\n**Passage:**\nIf ′ a ′ 'a' ′ a ′ is the smallest value of x which satisfies the equation 4 x + 35 4 x 4^{x}+\\frac{35}{4^x} 4 x + 4 x 3 5 ​ =12. Then the value of 1 6 a 16^a 1 6 a is\n\nIf $'a'$ is the smallest value of x which satisfies the equation $4^{x}+\\frac{35}{4^x}$=12. Then the value of $16^a$ is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-963",
+      "passage_text": "",
+      "question_text": "The number of zeros after the decimal point till first non zero digit in $0.4^{60}$ [log2=0.3010]",
+      "options": [],
+      "correct_option_data": "23",
+      "solution_text": "The number of zeros after the decimal point till the first non-zero digit is given by\n\nCharacteristic of $0.4^{60}$ +1\n\nCharacteristic of  $0.4^{60}$=log ($0.4^{60}$)\n\n=60 log 0.4\n\n=60 log$\\frac{4}{10}$\n\n=60*(log 4 -log 10)\n\n=60*(2log2-1)\n\n=60(2*0.3010-1)\n\n=60(0.6020-1)\n\n=60*-0.398\n\n=-23.88\n\nCharacteristic of -23.88=-24\n\nNumber of digits =-24+1=-23(Here -ve sign indicates that  the zeros are after the decimal point)\n\n23 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 236767)\n\n**Passage:**\nThe number of zeros after the decimal point till first non zero digit in 0. 4 60 0.4^{60} 0 . 4 6 0 [log2=0.3010]\n\nThe number of zeros after the decimal point till first non zero digit in $0.4^{60}$ [log2=0.3010]\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-964",
+      "passage_text": "",
+      "question_text": "The value of $\\log_{3}{3}+\\log_{3}{27}+\\log_{3}{243}............$ 25 terms is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "625",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "600",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "900",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "$\\log_{3}{3}+\\log_{3}{27}+\\log_{3}{243}............$ 25 terms can be re-written as \n\n$\\log_{3}{3}+\\log_{3}{3^3}+\\log_{3}{3^5}............$ 25 terms is\n\n1+3+5+7..........25 terms\n\nThe above sequence is an Arthimetic progression with first term = 1 and common difference = 2\n\nSum of n terms of an Arithmetic progression = $\\frac{n*[2a+(n-1)*d]}{2}$\n\n=$\\frac{25}{2}*[2*1+24*2]$\n\n=625\n\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 247405)\n\n**Passage:**\nThe value of log ⁡ 3 3 + log ⁡ 3 27 + log ⁡ 3 243............ \\log_{3}{3}+\\log_{3}{27}+\\log_{3}{243}............ lo g 3 ​ 3 + lo g 3 ​ 2 7 + lo g 3 ​ 2 4 3 . . . . . . . . . . . . 25 terms is\n\n125\n\n625\n\n600\n\n900\n\nThe value of $\\log_{3}{3}+\\log_{3}{27}+\\log_{3}{243}............$ 25 terms is\n\n**Options:**\n- **A**. 125\n- **B**. 625\n- **C**. 600\n- **D**. 900\n\n**Correct Answer:** null"
     }
   ]
 }
