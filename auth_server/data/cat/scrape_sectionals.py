@@ -27,6 +27,8 @@ import shutil
 import asyncio
 import time
 from pathlib import Path
+# Import the main function from the sibling script to clean question IDs.
+from file_clean_qid import main as clean_qid_main
 
 # --- QID Cleaning Logic ---
 def get_questions_container(data: Any) -> List[Dict[str, Any]]:
@@ -428,6 +430,15 @@ if __name__ == "__main__":
             
             # Step 3: Pass the crawled data to the main processing function.
             main(categorized_html, type_curr)
+    print("---" + " Running qid cleaning script ---")
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent.parent.parent
+    
+    intermediate_dir = script_dir.parent / "temp_json"
+    final_destination_dir = project_root / "auth_server/data/cat/docs"
+    clean_qid_main(final_destination_dir)
+    print("---" + " Finished qid cleaning script ---")
+
 
     # script_dir = Path(__file__).parent
     # project_root = script_dir.parent.parent.parent

@@ -12757,6 +12757,121 @@
       "solution_text": "From condition 3, Argentina got an aggregate score of 20 in the year 2016. The aggregate score of Argentina in 2017 from the table = 5+3+8 = 16. \nSo each horizontal line is at a difference of $\\frac{\\left(20-16\\right)}{2}=2$. Since all individual scores are integers, the aggregate score must also an integer. So the values between the lines are also integral values. Using these clues, the chart can be redrawn as follows: \n\nThis data can be tabulated as follows:\n\nThe aggregate score of the missing table can be represented as follows: \n\nIndividual scores are given out of 2,3,4,5,6,7 and 8. So, 18 can be written as 7+4+7 or 7+6+5 or 7+8+3.\nUsing clue 1, 7+4+7 and 7+8+3 are rejected. So the table can be filled as follows: \n\nNow, 13 can be written as 8+2+3 (only possibility)\n14 can be written as 2+7+5, 2+6+6, 2+8+4. 2+7+5 is the only possibility. (using conditions 1 and 2)\nSo the table can be filled as follows:\n\nModified Aggregate score of Chile in 2017 = 2+2*7+3*5 = 31",
       "image_url": "https://cracku.in/media/uploads/image_CIrdW2J.png",
       "full_markdown": "### Question (qid: 306534)\n\n**Passage:**\nThe advancement of the Internet of Things is measured using an aggregate score and tracked for 4 years in three different countries namely Argentina(A), Brazil(B), Chile(C) and Denmark(D) The following graph shows the aggregates score for these countries for the years 2016, 2017, 2018 and 2019. The values on the vertical axis are missing.\n\nThe aggregate score is the sum of scores given on three parameters: products(P), services(S) and operations(O). The individual scores for P, S and O are given out of integers between 2 and 8(both inclusive). The table below shows partial information about these score for the year 2017.\n\nThe following information is also known about the scores: 1. In the year 2017, no country got the same score in any two parameters. 2. In the year 2017, no two countries got the same score in any parameter. 3. The highest aggregate score for any country among all the four years was 20.\n\nThe method of calculation of the aggregate score is modified. The new aggregate score is equal to P+2S+3O. What would be the new aggregate score of Chile in 2017?\n\n**Options:**\n- **A**. 33\n- **B**. 29\n- **C**. 31\n- **D**. 25\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-457",
+      "passage_text": "Hemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.",
+      "question_text": "How many students joined the school in 2018?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "150",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "180",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "We can make the following table.\n\nLet X,Y and Z students joined class 1 in 2018,2019 and 2020, 20 students failed in 2017\n\nThen the number of students in class 1 in 2018 = X+20\n\nThe number of students in class 2 in 2018 = 200 -20 +30= 210\n\nThe number of students in class 3 in 2018 = 250 -30 +30= 250\n\nSimilarly, we can make the following table:\n\nX= 180, Y= 80 and Z=250\n\nThus, we can make the following table:\n\nNumber of students joined class 1 in 2018 =X  = 180",
+      "image_url": "https://cracku.in/media/uploads/G1.PNG,https://cracku.in/media/uploads/G%20sol1.PNG",
+      "full_markdown": "### Question (qid: 295492)\n\n**Passage:**\nHemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.\n\nHow many students joined the school in 2018?\n\n**Options:**\n- **A**. 200\n- **B**. 150\n- **C**. 180\n- **D**. 120\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-458",
+      "passage_text": "Hemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.",
+      "question_text": "How many students joined the school in 2019?",
+      "options": [],
+      "correct_option_data": "80",
+      "solution_text": "We can make the following table.\n\nLet X,Y and Z students joined class 1 in 2018,2019 and 2020, 20 students failed in 2017\n\nThen the number of students in class 1 in 2018 = X+20\n\nThe number of students in class 2 in 2018 = 200 -20 +30= 210\n\nThe number of students in class 3 in 2018 = 250 -30 +30= 250\n\nSimilarly, we can make the following table:\n\nX= 180, Y= 80 and Z=250\n\nThus, we can make the following table:\n\nNumber of students joined class 1 in 2019 =Y = 80",
+      "image_url": "https://cracku.in/media/uploads/G1.PNG,https://cracku.in/media/uploads/G%20sol1.PNG",
+      "full_markdown": "### Question (qid: 295493)\n\n**Passage:**\nHemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.\n\nHow many students joined the school in 2019?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-459",
+      "passage_text": "Hemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.",
+      "question_text": "In 2019 how many students studied in class 3?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "210",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "250",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "220",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "We can make the following table.\n\nLet X,Y and Z students joined class 1 in 2018,2019 and 2020, 20 students failed in 2017\n\nThen the number of students in class 1 in 2018 = X+20\n\nThe number of students in class 2 in 2018 = 200 -20 +30= 210\n\nThe number of students in class 3 in 2018 = 250 -30 +30= 250\n\nSimilarly, we can make the following table:\n\nX= 180, Y= 80 and Z=250\n\nThus, we can make the following table:\n\nOption D",
+      "image_url": "https://cracku.in/media/uploads/G1.PNG,https://cracku.in/media/uploads/G%20sol1.PNG",
+      "full_markdown": "### Question (qid: 295494)\n\n**Passage:**\nHemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.\n\nIn 2019 how many students studied in class 3?\n\n**Options:**\n- **A**. 180\n- **B**. 210\n- **C**. 250\n- **D**. 220\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-460",
+      "passage_text": "Hemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.",
+      "question_text": "In 2019 how many students studied in class 2?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "180",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "220",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "160",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "210",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "We can make the following table.\n\nLet X,Y and Z students joined class 1 in 2018,2019 and 2020, 20 students failed in 2017\n\nThen the number of students in class 1 in 2018 = X+20\n\nThe number of students in class 2 in 2018 = 200 -20 +30= 210\n\nThe number of students in class 3 in 2018 = 250 -30 +30= 250\n\nSimilarly, we can make the following table:\n\nX= 180, Y= 80 and Z=250\n\nThus, we can make the following table:\n\nOption A",
+      "image_url": "https://cracku.in/media/uploads/G1.PNG,https://cracku.in/media/uploads/G%20sol1.PNG",
+      "full_markdown": "### Question (qid: 295495)\n\n**Passage:**\nHemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.\n\nIn 2019 how many students studied in class 2?\n\n**Options:**\n- **A**. 180\n- **B**. 220\n- **C**. 160\n- **D**. 210\n\n**Correct Answer:** null"
     }
   ]
 }
