@@ -12,7 +12,7 @@ class TestSession(models.Model):
     total_questions = models.IntegerField()
     correct_answers = models.IntegerField(default=0)
     answers = models.JSONField()
-    is_completed = models.BooleanField(default=False)
+    status = models.CharField(max_length=20, default='in-progress')
     subject = models.CharField(max_length=255, null=True, blank=True)
     max_score = models.IntegerField(null=True, blank=True)
 
@@ -33,3 +33,35 @@ class UserQuizState(models.Model):
 
     def __str__(self):
         return f'{self.user.email} - {self.test_id} - Last Question: {self.last_question_index}'
+
+class UserQuizGoal(models.Model):
+    """
+    Stores the daily question goal for a user for a specific subject.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=255)
+    goal = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'subject')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.subject} - Goal: {self.goal}'
+
+
+class UserQuizProgress(models.Model):
+    """
+    Stores the number of questions a user has attempted for a specific subject on a given day.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=255)
+    date = models.DateField()
+    questions_attempted = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'subject', 'date')
+
+    def __str__(self):
+        return f'{self.user.email} - {self.subject} - {self.date} - Attempted: {self.questions_attempted}'

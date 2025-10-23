@@ -27,8 +27,6 @@ import shutil
 import asyncio
 import time
 from pathlib import Path
-# Import the main function from the sibling script to clean question IDs.
-from file_clean_qid import main as clean_qid_main
 
 # --- QID Cleaning Logic ---
 def get_questions_container(data: Any) -> List[Dict[str, Any]]:
@@ -189,24 +187,48 @@ def _find_passage_and_question_blocks(qroot, qid: str) -> Tuple[Optional[str], O
     """Heuristically finds the passage and question text within a question's HTML block."""
     passage_text = None
     question_text = None
-    en_class = f"en{qid}"
-    blocks = qroot.find_all("div", class_=en_class)
-    if blocks:
-        p_block = blocks[0]
-        p_body = p_block.find("div", class_=re.compile(r"\bcard-body\b"))
-        passage_text = _collect_paragraph_text(p_body if p_body else p_block)
-        q_block = blocks[-1]
-        q_text_div = q_block.find("div", class_=re.compile(r"\bquestion-text\b"))
-        if q_text_div:
-            qps = q_text_div.find_all("p")
-            if qps:
-                question_text = _norm_ws(" ".join(p.get_text(" ", strip=True) for p in qps))
-            else:
-                question_text = _norm_ws(q_text_div.get_text(" ", strip=True))
-        else:
-            q_text_div = qroot.find("div", class_=re.compile(r"\bquestion-text\b"))
+
+    # --- New Logic based on lrdi-free-sectional-test1.html ---
+    # The passage is in a preceding sibling div with class 'card-info'.
+    passage_card = qroot.find_previous_sibling("div", class_="card-info")
+    if passage_card:
+        card_body = passage_card.find("div", class_="card-body")
+        if card_body:
+            passage_text = _collect_paragraph_text(card_body)
+    
+    # if passage_text:
+    #     print(f"DEBUG (new logic): Found passage for qid {qid}:\n{passage_text[:200]}...")
+    # else:
+    #     print(f"DEBUG (new logic): Did not find passage for qid {qid}.")
+
+    # The question is inside the qroot itself.
+    q_text_div = qroot.find("div", class_="question-text")
+    if q_text_div:
+        question_text = _collect_paragraph_text(q_text_div)
+
+    # --- Fallback to original logic for question_text if needed ---
+    if not question_text:
+        en_class = f"en{qid}"
+        blocks = qroot.find_all("div", class_=en_class)
+        if blocks:
+            q_block = blocks[-1]
+            q_text_div = q_block.find("div", class_=re.compile(r"\bquestion-text\b"))
             if q_text_div:
                 question_text = _norm_ws(q_text_div.get_text(" ", strip=True))
+
+    # --- Fallback to original logic for passage_text if needed ---
+    if not passage_text:
+        en_class = f"en{qid}"
+        blocks = qroot.find_all("div", class_=en_class)
+        if blocks:
+            # Check if the block is not the question itself
+            if len(blocks) > 1 or not blocks[0].find("div", class_=re.compile(r"\bquestion-text\b")):
+                p_block = blocks[0]
+                p_body = p_block.find("div", class_=re.compile(r"\bcard-body\b"))
+                passage_text = _collect_paragraph_text(p_body if p_body else p_block)
+                # if passage_text:
+                #     print(f"DEBUG (fallback logic): Found passage for qid {qid}:\n{passage_text[:200]}...")
+
     return passage_text, question_text
 
 def _extract_correct_answer(qroot) -> Optional[str]:
@@ -275,11 +297,13 @@ def _build_full_markdown(qid: str, passage_text: str, question_text: str, option
 def parse_html_to_questions(html: str) -> Dict:
     """Main parsing function to convert a single HTML page into structured question data."""
     soup = BeautifulSoup(html, "html.parser")
-    image_url = None
     results: List[Dict] = []
-    q_roots = soup.find_all(attrs={"data-qno": True})
+    q_roots = soup.select("div#question-card")
     if not q_roots:
-        q_roots = [d for d in soup.find_all("div") if d.get("id", "").startswith("q")]
+        print("DEBUG: Could not find div#question-card, falling back to old q_roots logic.")
+        q_roots = soup.find_all(attrs={"data-qno": True})
+        if not q_roots:
+            q_roots = [d for d in soup.find_all("div") if d.get("id", "").startswith("q")]
     for qroot in q_roots:
         solution_text = _extract_solution_text(qroot)
         qid = str(qroot.get("data-qno") or qroot.get("id") or "").strip()
@@ -288,7 +312,29 @@ def parse_html_to_questions(html: str) -> Dict:
             if digits: qid = digits[0]
         if not qid: continue
         
-        passage_text, question_text = _find_passage_and_question_blocks(qroot, qid)
+        # --- New passage logic ---
+        passage_text = None
+        # A passage is often in a preceding sibling div that is a 'card'.
+        # The user's example used 'card-info', but other passages might use 'card-default', etc.
+        # We look for a 'card-body' inside any preceding 'card'.
+        for sibling in qroot.find_previous_siblings("div", class_="card"):
+            card_body = sibling.find('div', class_='card-body')
+            if card_body:
+                # Heuristic check to ensure it's not a question block
+                if not card_body.find(class_='question-text') and not card_body.find(attrs={"data-qno": True}):
+                    passage_text = _collect_paragraph_text(card_body)
+                    break # Found a likely passage, stop searching.
+
+        # If not found by new logic, fall back to the original logic
+        if not passage_text:
+            passage_text, question_text = _find_passage_and_question_blocks(qroot, qid)
+        else:
+            # If passage was found, we still need to extract the question from the current qroot
+            _, question_text = _find_passage_and_question_blocks(qroot, qid)
+
+        print(f"DEBUG QID: {qid} - Passage Found: {'YES' if passage_text else 'NO'}")
+        if passage_text:
+            print(f"PASSAGE TEXT for {qid}:\n---\n{passage_text[:300]}...\n---")
 
         # Override with more specific selectors if available
         question_text_div = qroot.find("div", class_="question-text pl-1 pr-1")
@@ -302,14 +348,30 @@ def parse_html_to_questions(html: str) -> Dict:
         
         # print("\n\n\nSolution_text: ",solution_text)
 
-        img_tag = qroot.find("img", class_="img-responsive")
-        if img_tag and img_tag.has_attr("src"): image_url = img_tag["src"].strip()
+        image_urls = []
+        # 1. Look for images in the passage content
+        passage_card = qroot.find_previous_sibling("div", class_="card-info")
+        if passage_card:
+            card_body = passage_card.find("div", class_="card-body")
+            if card_body:
+                for img_tag in card_body.find_all("img", class_="img-responsive"):
+                    if img_tag.has_attr("src"):
+                        image_urls.append(img_tag["src"].strip())
+
+        # 2. Look for images in the question root itself
+        for img_tag in qroot.find_all("img", class_="img-responsive"):
+            if img_tag.has_attr("src"):
+                src = img_tag["src"].strip()
+                if src not in image_urls: # Avoid duplicates
+                    image_urls.append(src)
+        
+        image_url = ",".join(image_urls)
         options, correct_option_data = _extract_correct_answer(qroot)
         if question_text is None: continue
         if question_text:
             results.append({
                 "qid": str(qid),
-                "passage_text": passage_text if passage_text and question_text not in passage_text else "", 
+                "passage_text": passage_text or "", 
                 "question_text": question_text or "", 
                 "options": options, 
                 "correct_option_data": str(correct_option_data) if correct_option_data is not None else None, 
@@ -415,14 +477,13 @@ if __name__ == "__main__":
             if "quant" in url_curr:
                 type_curr = "quants"
                 urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+                break
             elif "verbal" in url_curr:
                 type_curr = "varc"
                 urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
-                break
             else:
                 type_curr = "dilr"
                 urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
-                break
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls))
@@ -430,15 +491,6 @@ if __name__ == "__main__":
             
             # Step 3: Pass the crawled data to the main processing function.
             main(categorized_html, type_curr)
-    print("---" + " Running qid cleaning script ---")
-    script_dir = Path(__file__).parent
-    project_root = script_dir.parent.parent.parent
-    
-    intermediate_dir = script_dir.parent / "temp_json"
-    final_destination_dir = project_root / "auth_server/data/cat/docs"
-    clean_qid_main(final_destination_dir)
-    print("---" + " Finished qid cleaning script ---")
-
 
     # script_dir = Path(__file__).parent
     # project_root = script_dir.parent.parent.parent

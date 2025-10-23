@@ -338,6 +338,22 @@ class MemStorage:
         """
         return [m for m in self.study_materials.values() if m["subject"] == subject]
 
+    def get_subjects(self) -> List[str]:
+        """
+        Retrieves a list of all unique subjects from the storage.
+
+        Returns:
+            A list of unique subject names.
+        """
+        subjects = set()
+        for test in self.practice_tests.values():
+            subjects.add(test["subject"])
+        for test in self.mock_tests.values():
+            subjects.add(test["subject"])
+        for test in self.sectional_tests.values():
+            subjects.add(test["subject"])
+        return list(subjects)
+
     def get_practice_tests(self) -> List[Dict]:
         """
         Retrieves all practice tests from the storage.

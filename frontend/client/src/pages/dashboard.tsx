@@ -10,6 +10,7 @@ import { useQuery } from "@tanstack/react-query";
 import type { Course, TestSession, UserProgress, PracticeTest } from "@shared/schema";
 import { LastAttemptedQuestions } from "@/components/LastAttemptedQuestions";
 import { useMemo } from "react";
+import TodaySchedule from "@/components/TodaySchedule";
 
 async function fetchDashboardData(url: string) {
   const token = localStorage.getItem('token');
@@ -282,16 +283,7 @@ export default function Dashboard() {
                   </div>
 
                   {/* Study Schedule */}
-                  <Card className="mt-6 bg-muted/30">
-                    <CardHeader>
-                      <CardTitle className="text-lg">Today's Schedule</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-2 text-sm">
-                        {/* This would come from a calendar or schedule API */}
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <TodaySchedule />
 
                   {/* Achievement Badge */}
                   <Card className="mt-6 bg-gradient-to-br from-primary/10 to-accent/20 border-primary/20">

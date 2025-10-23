@@ -5,6 +5,19 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 import uuid
 
+def subjects(request):
+    """
+    Retrieves a list of all unique subjects from the storage.
+
+    Args:
+        request: The HttpRequest object.
+
+    Returns:
+        A JsonResponse containing a list of unique subject names.
+    """
+    data = storage.get_subjects()
+    return JsonResponse(data, safe=False)
+
 def courses(request):
     """
     Retrieves a list of courses, optionally filtered by exam type.
@@ -338,7 +351,9 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
 from rest_framework import status
-from .models import TestSession, UserQuizState
+from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
+from datetime import datetime, timezone
+from .storage import storage
 
 class ChatbotView(APIView):
     """
@@ -449,9 +464,141 @@ class ResetTestProgressView(APIView):
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class UserQuizStateView(APIView):
+
+class TestSessionView(APIView):
     """
-    Handles getting and setting the user's last quiz state.
+    Handles the creation of new test sessions.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        """
+        Creates a new test session.
+        """
+        user = request.user
+        data = request.data
+
+        try:
+            session = TestSession.objects.create(
+                user=user,
+                test_id=data.get('testId'),
+                start_time=data.get('startTime'),
+                total_questions=data.get('totalQuestions'),
+                answers=data.get('answers', []),
+                subject=data.get('subject'),
+                max_score=data.get('maxScore'),
+            )
+            return Response({'id': str(session.id)}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class TestSessionDetailView(APIView):
+    """
+    Handles retrieving, updating and deleting a specific test session.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, session_id):
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+            return Response({
+                'id': str(session.id),
+                'testId': session.test_id,
+                'startTime': session.start_time,
+                'endTime': session.end_time,
+                'score': session.score,
+                'totalQuestions': session.total_questions,
+                'correctAnswers': session.correct_answers,
+                'answers': session.answers,
+                'status': session.status,
+                'subject': session.subject,
+                'maxScore': session.max_score,
+            })
+        except TestSession.DoesNotExist:
+            return Response({'error': 'Test session not found'}, status=status.HTTP_404_NOT_FOUND)
+
+    def patch(self, request, session_id):
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+            data = request.data
+
+            session.answers = data.get('answers', session.answers)
+            session.score = data.get('score', session.score)
+            session.correct_answers = data.get('correctAnswers', session.correct_answers)
+            session.status = data.get('status', session.status)
+            if 'endTime' in data:
+                session.end_time = data.get('endTime')
+
+            session.save()
+            return Response({'id': str(session.id)}, status=status.HTTP_200_OK)
+        except TestSession.DoesNotExist:
+            return Response({'error': 'Test session not found'}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserQuizGoalView(APIView):
+    """
+    Handles getting and setting user quiz goals.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Retrieves the user's quiz goals and their progress for the day.
+        """
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+
+        goals = UserQuizGoal.objects.filter(user=user)
+        subjects = storage.get_subjects()
+        all_goals_data = []
+
+        for subject in subjects:
+            goal_obj = goals.filter(subject=subject).first()
+            print(f"goal_obj: {goal_obj}, type: {type(goal_obj)}")
+            goal = goal_obj.goal if goal_obj else 0
+
+            try:
+                progress = UserQuizProgress.objects.get(user=user, subject=subject, date=today)
+                questions_attempted = progress.questions_attempted
+            except UserQuizProgress.DoesNotExist:
+                questions_attempted = 0
+
+            all_goals_data.append({
+                'subject': subject,
+                'goal': goal,
+                'questions_attempted': questions_attempted,
+            })
+
+        return Response(all_goals_data)
+
+    def post(self, request):
+        """
+        Creates or updates a user's quiz goal for a specific subject.
+        """
+        user = request.user
+        subject = request.data.get('subject')
+        goal = request.data.get('goal')
+
+        if not subject or goal is None:
+            return Response({'error': 'Subject and goal are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            goal_obj, created = UserQuizGoal.objects.update_or_create(
+                user=user,
+                subject=subject,
+                defaults={'goal': goal}
+            )
+            return Response({
+                'subject': goal_obj.subject,
+                'goal': goal_obj.goal
+            }, status=status.HTTP_201_CREATED if created else status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserQuizProgressView(APIView):
+    """
+    Handles getting and setting the user's quiz progress.
 
     This view allows the client to retrieve the last question index for a given test, or all quiz states for the user. It also allows the client to update the last question index for a given test.
 
@@ -525,6 +672,56 @@ class UserQuizStateView(APIView):
     - `400 Bad Request`: The request was malformed.
     - `401 Unauthorized`: The user is not authenticated.
     - `500 Internal Server Error`: An error occurred.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Retrieves the last question index for a given test, or all quiz states for the user.
+        """
+        test_id = request.query_params.get('test_id')
+        if test_id:
+            try:
+                quiz_state = UserQuizState.objects.get(user=request.user, test_id=test_id)
+                return Response({'last_question_index': quiz_state.last_question_index})
+            except UserQuizState.DoesNotExist:
+                return Response({'last_question_index': 0}, status=status.HTTP_200_OK)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        else:
+            try:
+                quiz_states = UserQuizState.objects.filter(user=request.user)
+                data = [{'test_id': state.test_id, 'last_question_index': state.last_question_index} for state in quiz_states]
+                return Response(data)
+            except Exception as e:
+                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def post(self, request):
+        """
+        Updates the number of questions attempted by the user for a specific subject and date.
+        """
+        user = request.user
+        subject = request.data.get('subject')
+        questions_attempted = request.data.get('questions_attempted')
+        date = datetime.now(timezone.utc).date()
+
+        if not subject or questions_attempted is None:
+            return Response({'error': 'Subject and questions_attempted are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            progress, created = UserQuizProgress.objects.update_or_create(
+                user=user,
+                subject=subject,
+                date=date,
+                defaults={'questions_attempted': questions_attempted}
+            )
+            return Response({'questions_attempted': progress.questions_attempted}, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class UserQuizStateView(APIView):
+    """
+    Handles getting and setting the user's last quiz state.
     """
     permission_classes = [IsAuthenticated]
 

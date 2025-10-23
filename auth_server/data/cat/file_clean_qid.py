@@ -54,14 +54,14 @@ def get_questions_container(data: Any) -> List[Dict[str, Any]]:
                      "or a top-level list of questions.")
 
 
-def main() -> None:
+def main(folder = INPUT_FOLDER) -> None:
     """
     Main function to execute the qid cleaning process.
     
     It finds all JSON files in the INPUT_FOLDER, reads each one, replaces the 'qid'
     values, and then overwrites the original file with the updated data.
     """
-    json_folder = INPUT_FOLDER
+    json_folder = folder
     # Check if the target directory exists. It's not an error if it doesn't;
     # it just means there's nothing to process.
     if not json_folder.is_dir():
