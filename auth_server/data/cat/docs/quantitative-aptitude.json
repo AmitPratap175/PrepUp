@@ -34019,6 +34019,131 @@
       "solution_text": "Let the speed of Anunay and Vineet be '$5x$' and '$7x$' steps per second respectively.\nLet escalator's speed be \"$y$\" steps per second.\nLet \"t\" be the time taken to reach at the other end by Anunay and Vineet. \nTotal equivalent number of steps taken by Anunay considering the help of escalator = $5xt+yt$\nTotal equivalent number of steps taken by Vineet considering the resistance from escalator = $7xt-yt$\n\nOn equating the number of steps, we get\n$\\Rightarrow$ $5xt+yt = 7xt-yt$\n$\\Rightarrow$ $2xt=2yt$ \n$\\Rightarrow$ $x = y$\n\nWhen Anunay takes 90 steps, the escalator would have moved by $\\dfrac{90y}{5x}$ steps i.e. $\\dfrac{90}{5} = 18$ steps in the same time. \nTherefore, the number of steps in the escalator = 90+18 = 108.",
       "image_url": "",
       "full_markdown": "### Question (qid: 162429)\n\n**Passage:**\nAnunay is climbing up the moving escalator that is going up. He takes 90 steps to reach the top while Vineet is coming down the same escalator. The ratio of the speed of Anunay and Vineet is 5:7. If both of them start together and take the same time to reach the other end of the escalator then find out the number of steps in the escalator.\n\nAnunay is climbing up the moving escalator that is going up. He takes 90 steps to reach the top while Vineet is coming down the same escalator. The ratio of the speed of Anunay and Vineet is 5:7. If both of them start together and take the same time to reach the other end of the escalator then find out the number of steps in the escalator.\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1019",
+      "passage_text": "A rectangular swimming pool is designed such that the depth varies linearly across the length. At the shallow end of the pool, the depth is 90 cm and at the deeper end, the depth is 150 cm. The ratio of breadth to the ratio of length is 2:3. From the completely filled pool, all water is taken out and filled into a square-shaped pool whose side is same as the breadth of the previous pool and the depth is uniform. What is the depth(in cm) of the square-shaped pool if it gets filled completely and no water is wasted?",
+      "question_text": "A rectangular swimming pool is designed such that the depth varies linearly across the length. At the shallow end of the pool, the depth is 90 cm and at the deeper end, the depth is 150 cm. The ratio of breadth to the ratio of length is 2:3. From the completely filled pool, all water is taken out and filled into a square-shaped pool whose side is same as the breadth of the previous pool and the depth is uniform. What is the depth(in cm) of the square-shaped pool if it gets filled completely and no water is wasted?",
+      "options": [],
+      "correct_option_data": "180",
+      "solution_text": "Assume the breadth and length are 2a and 3a respectively. \nSince the depth varies linearly, the average depth = $\\frac{90+150}{2}=120\\ cm$\nHence the volume of water = $Average\\ depth\\times\\ 2a\\times\\ 3a$ = $120\\times\\ 2a\\times\\ 3a\\ =\\ 720a^2$\nNow the volume of the new pool = $Depth\\times\\ 2a\\times\\ 2a$\n=> $Depth\\times\\ 2a\\times\\ 2a=720a^2$\n=> Depth = 180 cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 322785)\n\n**Passage:**\nA rectangular swimming pool is designed such that the depth varies linearly across the length. At the shallow end of the pool, the depth is 90 cm and at the deeper end, the depth is 150 cm. The ratio of breadth to the ratio of length is 2:3. From the completely filled pool, all water is taken out and filled into a square-shaped pool whose side is same as the breadth of the previous pool and the depth is uniform. What is the depth(in cm) of the square-shaped pool if it gets filled completely and no water is wasted?\n\nA rectangular swimming pool is designed such that the depth varies linearly across the length. At the shallow end of the pool, the depth is 90 cm and at the deeper end, the depth is 150 cm. The ratio of breadth to the ratio of length is 2:3. From the completely filled pool, all water is taken out and filled into a square-shaped pool whose side is same as the breadth of the previous pool and the depth is uniform. What is the depth(in cm) of the square-shaped pool if it gets filled completely and no water is wasted?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1020",
+      "passage_text": "",
+      "question_text": "A large cylindrical bucket of radius 60 cm and height 1.2m is to be filled up to 70% of its volume. For this purpose a small cylindrical bucket of radius 20 cm and height 40cm is used. If there is 20% spillage from the small bucket while filling the large bucket, then how many small buckets are required for this purpose ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Volume of the large bucket = $\\pi r^2h = \\pi 60^2 \\times 120 cm^3 $\nVolume of large bucket to be filled = $ \\pi 60^2 \\times 120 cm^3 \\times .7 $ - (1)\nVolume of small bucket = $\\pi 20^2 \\times 40 cm^3$\nVolume of water transferred by1 small bucket to the large bucket = $\\pi 20^2 \\times 40 cm^3 \\times .8$ - (2)\nThus, the approximate number of small buckets required = (1) $\\div$ (2) = $\\frac{ \\pi 60^2 \\times 120 cm^3 \\times .7}{\\pi 20^2 \\times 40 cm^3 \\times .8 } $\n= 23.625\nThus, 24 small buckets are required to fill 70% of the big bucket.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 35712)\n\n**Passage:**\nA large cylindrical bucket of radius 60 cm and height 1.2m is to be filled up to 70% of its volume. For this purpose a small cylindrical bucket of radius 20 cm and height 40cm is used. If there is 20% spillage from the small bucket while filling the large bucket, then how many small buckets are required for this purpose ?\n\n22\n\n23\n\n24\n\n25\n\nA large cylindrical bucket of radius 60 cm and height 1.2m is to be filled up to 70% of its volume. For this purpose a small cylindrical bucket of radius 20 cm and height 40cm is used. If there is 20% spillage from the small bucket while filling the large bucket, then how many small buckets are required for this purpose ?\n\n**Options:**\n- **A**. 22\n- **B**. 23\n- **C**. 24\n- **D**. 25\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1021",
+      "passage_text": "",
+      "question_text": "In triangle LMN, LM = 20 cm, LN = 12 cm and MN = 16 cm. A semicircle is drawn inside the triangle LMN such that it touches side LN and MN at exactly 1 point. The diameter of the semicircle lies on the side LM. Find the radius of the semicircle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{36}{7}$ cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{48}{7}$ cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{64}{7}$ cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the points where the semicircle touches the sides MN and LN be P and Q respectively. \n\nIn $\\triangle$ NXP and $\\triangle$ NXQ\n\nPX = QX and NP = NQ. Therefore, we can say that $\\angle$ XNP = $\\angle$ XNQ.\n\nHence, we can say that NX is the angle bisector of $\\angle$ MNL. We know that LM = 20 cm. Let 'x' be the length of LX then the length of MX = 20 - x. \n\nUsing angle bisector theorem, we can say that \n\n$\\dfrac{MN}{MX} = \\dfrac{LN}{LX}$\n\n$\\dfrac{16}{20-x} = \\dfrac{12}{x}$\n\n$16x = 240-12x$\n\n$x = \\dfrac{60}{7}$cm.\n\nLet 'a' be the length of radius of the semicircle. Then, LQ = LN - NQ = (12 - a)cm and PM = (16 - a)cm\n\nUsing tangent secant theorem we can say that,\n\n$LQ^2 = LR*LS$\n\n$(\\dfrac{60}{7} - a)(\\dfrac{60}{7} + a) = (12 - a)^2$\n\n$a =\\dfrac{48}{7},\\dfrac{36}{7}$\n\n$MP^2 = MR*MS$\n\n$(\\dfrac{80}{7} - a)(\\dfrac{80}{7} + a) = (16 - a)^2$\n\n$a =\\dfrac{48}{7},\\dfrac{64}{7}$\n\nWe can see that only one value of radius is common. Therefore, a = 48/7 cm.\n\nHence, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176503)\n\n**Passage:**\nIn triangle LMN, LM = 20 cm, LN = 12 cm and MN = 16 cm. A semicircle is drawn inside the triangle LMN such that it touches side LN and MN at exactly 1 point. The diameter of the semicircle lies on the side LM. Find the radius of the semicircle.\n\n36 7 \\dfrac{36}{7} 7 3 6 ​ cm\n\n48 7 \\dfrac{48}{7} 7 4 8 ​ cm\n\n64 7 \\dfrac{64}{7} 7 6 4 ​ cm\n\nCannot be determined\n\nIn triangle LMN, LM = 20 cm, LN = 12 cm and MN = 16 cm. A semicircle is drawn inside the triangle LMN such that it touches side LN and MN at exactly 1 point. The diameter of the semicircle lies on the side LM. Find the radius of the semicircle.\n\n**Options:**\n- **A**. $\\dfrac{36}{7}$ cm\n- **B**. $\\dfrac{48}{7}$ cm\n- **C**. $\\dfrac{64}{7}$ cm\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1022",
+      "passage_text": "An in-circle is drawn inside triangle ABC such that it touches AB,BC,AC at P,Q,R respectively. BQ=5, CQ=6 and inradius = 35 3 \\sqrt{\\frac{35}{3}} 3 3 5 ​ ​ . Find the length of the side AB.\n\n11\n\n12\n\n13\n\n18",
+      "question_text": "An in-circle is drawn inside triangle ABC such that it touches AB,BC,AC at P,Q,R respectively. BQ=5, CQ=6 and inradius = $\\sqrt{\\frac{35}{3}}$. Find the length of the side AB.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Considering the information provided it can be represented as :\n\nSince BP and BQ are tangents drawn to a circle from the same point. The length of the tangents is equal.\n\nSimilarly for CQ and CR.\n\nBP = BQ = 5\n\nCR = CQ = 6\n\nAP = AR = x\n\nArea of triangle = rs\n\ns = 11+x\n\nArea = $\\sqrt{s(s-a)(s-b)(s-c)} = \\sqrt{(x+11)(x)(6)(5)} = \\sqrt{\\frac{35}{3}} (x+11)$\n\nSolving the equation,\n\nx = 7\n\nHence AB = 12 cm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13520)\n\n**Passage:**\nAn in-circle is drawn inside triangle ABC such that it touches AB,BC,AC at P,Q,R respectively. BQ=5, CQ=6 and inradius = 35 3 \\sqrt{\\frac{35}{3}} 3 3 5 ​ ​ . Find the length of the side AB.\n\n11\n\n12\n\n13\n\n18\n\nAn in-circle is drawn inside triangle ABC such that it touches AB,BC,AC at P,Q,R respectively. BQ=5, CQ=6 and inradius = $\\sqrt{\\frac{35}{3}}$. Find the length of the side AB.\n\n**Options:**\n- **A**. 11\n- **B**. 12\n- **C**. 13\n- **D**. 18\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1023",
+      "passage_text": "",
+      "question_text": "A circle of maximum area is inscribed in a square of 8 cm. Another square of maximum area is inscribed in the circle. Find the sum of area (in sq cm) of the circle outside the smaller square and the area of the bigger square outside the circle.",
+      "options": [],
+      "correct_option_data": "32",
+      "solution_text": "Based on the figure, we need to find the area of four right angled triangles.\nThe intersection points of the circle and the bigger square bisect the sides of the bigger square.\nHence, the non-hypotenuse sides of each right angled triangle are 4 cm.\n=> Area of each right angled triangle = $\\frac{1}{2}*4*4$ = 8 sq cm.\n=> Total area = 4 * 8 = 32 sq cm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 33972)\n\n**Passage:**\nA circle of maximum area is inscribed in a square of 8 cm. Another square of maximum area is inscribed in the circle. Find the sum of area (in sq cm) of the circle outside the smaller square and the area of the bigger square outside the circle.\n\nA circle of maximum area is inscribed in a square of 8 cm. Another square of maximum area is inscribed in the circle. Find the sum of area (in sq cm) of the circle outside the smaller square and the area of the bigger square outside the circle.\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
