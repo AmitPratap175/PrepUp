@@ -72,7 +72,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const initClient = () => {
     initAudio();
     client.current = new GoogleGenAI({
-      apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY,
+      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
     });
     outputNode.current?.connect(outputAudioContext.current!.destination);
     initSession();

@@ -1,7 +1,7 @@
 services:
   postgres:
     image: docker.io/library/postgres:17
-    container_name: postgres_prepup
+    # container_name: postgres_prepup
     environment:
       - POSTGRES_DB=auth_db
       - POSTGRES_USER=user
@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: auth_server/Dockerfile
-    container_name: prepup_backend
+    # container_name: prepup_backend
     ports:
       - "8000:8000"
     volumes:
@@ -44,7 +44,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: prepup_frontend
+    # container_name: prepup_frontend
     depends_on:
       - auth_server
     ports:
