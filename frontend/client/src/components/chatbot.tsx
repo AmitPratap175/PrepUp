@@ -48,6 +48,8 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const sources = useRef(new Set<AudioBufferSourceNode>());
   const visualizerUserSourceNode = useRef<MediaStreamAudioSourceNode | null>(null);
   const visualizerDestinationNode = useRef<MediaStreamAudioDestinationNode | null>(null);
+  const inputTranscriptionRef = useRef('');
+  const outputTranscriptionRef = useRef('');
 
   useEffect(() => {
     isRecordingRef.current = isRecording;
@@ -121,34 +123,48 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
           }
 
           if (message.serverContent?.inputTranscription) {
-            setCurrentInputTranscription(prev => prev + message.serverContent.inputTranscription.text);
+            setCurrentInputTranscription(prev => {
+              const newText = prev + message.serverContent.inputTranscription.text;
+              inputTranscriptionRef.current = newText;
+              return newText;
+            });
           }
 
           if (message.serverContent?.outputTranscription) {
-            setCurrentOutputTranscription(prev => prev + message.serverContent.outputTranscription.text);
+            setCurrentOutputTranscription(prev => {
+              const newText = prev + message.serverContent.outputTranscription.text;
+              outputTranscriptionRef.current = newText;
+              return newText;
+            });
           }
 
           if (message.serverContent?.turnComplete) {
             const newMessages: Message[] = [];
-            if (currentInputTranscription.trim()) {
+            if (inputTranscriptionRef.current.trim()) {
               newMessages.push({
-                text: currentInputTranscription,
+                text: inputTranscriptionRef.current,
                 sender: 'user',
               });
             }
-            if (currentOutputTranscription.trim()) {
+            if (outputTranscriptionRef.current.trim()) {
               newMessages.push({
-                text: currentOutputTranscription,
+                text: outputTranscriptionRef.current,
                 sender: 'bot',
               });
             }
 
             if (newMessages.length > 0) {
-              setMessages(prev => [...prev, ...newMessages]);
+              setMessages(prev => {
+                const updatedMessages = [...prev, ...newMessages];
+                onHistoryChange(updatedMessages);
+                return updatedMessages;
+              });
             }
 
             setCurrentInputTranscription('');
             setCurrentOutputTranscription('');
+            inputTranscriptionRef.current = '';
+            outputTranscriptionRef.current = '';
             setAgentState(isRecordingRef.current ? 'listening' : 'thinking');
           }
 
