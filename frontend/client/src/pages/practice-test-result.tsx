@@ -4,6 +4,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import TestResultInterface from "@/components/test-result-interface";
 import type { PracticeTest, Question } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 
 interface ResultData {
   answers: Record<string, string>;
@@ -15,7 +16,7 @@ interface ResultData {
 export default function PracticeTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
-  const { user } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const [location] = useLocation();
   const queryClient = useQueryClient();
 
@@ -91,6 +92,10 @@ export default function PracticeTestResultPage() {
       });
     }
   }, [resultData, test, user, testId, queryClient]);
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isTestLoading || !resultData || !test) {
     return (

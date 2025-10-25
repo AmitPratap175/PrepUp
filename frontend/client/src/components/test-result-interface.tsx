@@ -38,11 +38,11 @@ export default function TestResultInterface({
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
-  const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+  const hasPassage = currentQuestion?.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
   const getQuestionStatus = (questionIndex: number): ResultQuestionStatus => {
     const question = questions[questionIndex];
-    const userAnswer = userAnswers[question.qid];
+    const userAnswer = userAnswers[question?.qid];
     let isCorrect: boolean | null = null;
 
     if (userAnswer != null) {
@@ -79,7 +79,7 @@ export default function TestResultInterface({
   };
   
   const getUserAnswerForCurrentQuestion = () => {
-    return userAnswers[currentQuestion.qid];
+    return userAnswers[currentQuestion?.qid];
   };
 
   return (
@@ -170,14 +170,14 @@ export default function TestResultInterface({
           </div>
 
           <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">
-            {(hasPassage || currentQuestion.image_url) && (
+            {(hasPassage || currentQuestion?.image_url) && (
               <div className="w-full xl:w-[60%] pr-4 overflow-y-auto">
                 <div className="bg-muted/50 p-4 rounded-lg h-full">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
-                  {hasPassage && <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace"><Latex>{currentQuestion.passage_text}</Latex></div>}
-                  {currentQuestion.image_url && (
+                  {hasPassage && <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace"><Latex>{currentQuestion?.passage_text}</Latex></div>}
+                  {currentQuestion?.image_url && (
                     <div className="flex flex-wrap gap-2 mt-4">
-                      {currentQuestion.image_url.split(',').map((url, i) => (
+                      {currentQuestion?.image_url.split(',').map((url, i) => (
                         <img key={i} src={url.trim()} alt={`Passage image ${i + 1}`} className="max-w-full h-auto rounded-lg" />
                       ))}
                     </div>
@@ -186,12 +186,12 @@ export default function TestResultInterface({
               </div>
             )}
 
-            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
-              <div className="prose max-w-none mb-6"><p className="text-foreground leading-relaxed mb-4 preserve-whitespace"><Latex>{currentQuestion.question_text}</Latex></p></div>
+            <div className={`${(hasPassage || currentQuestion?.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
+              <div className="prose max-w-none mb-6"><p className="text-foreground leading-relaxed mb-4 preserve-whitespace"><Latex>{currentQuestion?.question_text}</Latex></p></div>
 
               <div className="space-y-3">
-                {currentQuestion.options.length > 0 ? (
-                  currentQuestion.options.map((option) => {
+                {currentQuestion?.options.length > 0 ? (
+                  currentQuestion?.options.map((option) => {
                     const userAnswer = getUserAnswerForCurrentQuestion();
                     const isSelected = userAnswer === option.data_option;
                     const isCorrect = option.is_correct;
@@ -212,15 +212,21 @@ export default function TestResultInterface({
                   })
                 ) : (
                   <div>
-                    <p>Your answer: {userAnswers[currentQuestion.qid] || "Not Answered"}</p>
-                    <p>Correct answer: {currentQuestion.correct_option_data}</p>
+                    <p>Your answer: {userAnswers[currentQuestion?.qid] || "Not Answered"}</p>
+                    <p>Correct answer: {currentQuestion?.correct_option_data}</p>
                   </div>
                 )}
               </div>
-              {currentQuestion.explanation && (
+              {currentQuestion?.explanation && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg">
                   <h4 className="font-semibold mb-2">Explanation</h4>
-                  <div className="prose max-w-none"><Latex>{currentQuestion.explanation}</Latex></div>
+                  <div className="prose max-w-none"><Latex>{currentQuestion?.explanation}</Latex></div>
+                </div>
+              )}
+              {currentQuestion?.solution_text && (
+                <div className="mt-4 p-4 bg-muted/50 rounded-lg">
+                  <h4 className="font-semibold mb-2">Solution</h4>
+                  <div className="prose max-w-none"><Latex>{currentQuestion?.solution_text}</Latex></div>
                 </div>
               )}
             </div>

@@ -12872,6 +12872,121 @@
       "solution_text": "We can make the following table.\n\nLet X,Y and Z students joined class 1 in 2018,2019 and 2020, 20 students failed in 2017\n\nThen the number of students in class 1 in 2018 = X+20\n\nThe number of students in class 2 in 2018 = 200 -20 +30= 210\n\nThe number of students in class 3 in 2018 = 250 -30 +30= 250\n\nSimilarly, we can make the following table:\n\nX= 180, Y= 80 and Z=250\n\nThus, we can make the following table:\n\nOption A",
       "image_url": "https://cracku.in/media/uploads/G1.PNG,https://cracku.in/media/uploads/G%20sol1.PNG",
       "full_markdown": "### Question (qid: 295495)\n\n**Passage:**\nHemant opened Garment Lily Public school for Class 1st to 5th in the year 2017. Every year a new session of the schools starts on 1st Jan and ends on 31 Dec of that respective year.\n\nA secretary of Hemant handled him two documents related to the working of the school.\n\nIn the first document, he gave him a table of the number of students in each class for the years 2017 and 2020.\n\nIn the second document, he gave him the number of students failed each year. The students failed is each year have to continue in the same class next year.\n\nIf after the commencement of the school in 2017, it is known that the school maintained a policy of admissions only in Class 1 for all the subsequent years.\n\nNo student joined class 2nd to class 5th in the year 2018, 19 and 20.\n\nIn 2019 how many students studied in class 2?\n\n**Options:**\n- **A**. 180\n- **B**. 220\n- **C**. 160\n- **D**. 210\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-461",
+      "passage_text": "Agarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.",
+      "question_text": "What is the profit earned by Agarwal in the entire week?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.2000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.1900",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.2200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.1800",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "We know that Agarwal did not have any sweet in stock by the beginning of Monday and by the end of Friday. Also, we know that Gulab Jamun and Cham Cham expire in 2 days and Jalebi expires in 3 days. \n\n50 Gulab Jamuns were made on Monday. 30 Gulab Jamuns were sold on Monday. 20 Gulab Jamuns will be in stock. Now, on Tuesday, 30 Gulab Jamuns were sold. 20 Gulab Jamuns from Monday and 10 Gulab Jamuns from Tuesday will be sold on Tuesday. The remaining 30 Gulab Jamuns from Tuesday will be stocked. \n\nNow, on Wednesday 10 Gulab Jamuns are sold and 30 Gulab Jamuns are made. The Gulab Jamuns made on Tuesday, if not sold on Wednesday, will expire. Therefore, Agarwal will sell 10 Gulab Jamuns from Tuesday’s stock. The remaining 20 Gulab Jamuns from Tuesday’s stock will expire. Now, Agarwal has only 30 Gulab Jamuns left from Wednesday’s stock. \n\nOn Thursday, 20 Gulab Jamuns were made and 30 were sold. All 30 Gulab Jamuns sold will be from Wednesday’s stock. 20 Gulab Jamuns from Thursday’s stock will remain by the end of Thursday.\n\nOn Friday, 20 Gulab Jamuns were made and 40 were sold. All 20 Gulab Jamuns from Thursday’s stock and all 20 Gulab Jamuns made on Friday will be sold. \n\nConstructing a table using the inferences, we get,\n\nWe can construct similar tables for Cham Cham and Jalebi (Jalebi expires on the third day)\n\nTotal revenue of Agarwal:\n\nTotal revenue = (30+30+10+30+40)*20 + (20+30+15+15+30)*22 + (25+10+10+15+40)*20 = 2800+2420 +2000\n\nTotal revenue = Rs.7220.\n\nTotal cost that Agarwal spent on Storage:\n\nWe know that it costs Rs. 1 to store a Jalebi and Rs.2 to store a Gulab Jamun and Cham Cham. \n\nAmount spent on Monday = 2*20 + 2*20 + 25 = Rs.105 \n Amount spent on Tuesday = 2*30 + 2*10 + 45 = Rs.125\nAmount spent on Wednesday = 2*30 + 2*25 + 50 = Rs.160\n\nAmount spent on Thursday = 2*20 + 2*10 + 30 = Rs.90\n\nTotal amount spent on Storage = Rs.105+125+160+90 = Rs.480.\n\nTotal cost incurred in making the sweets:\n\nTotal cost that Agarwal incurred in making the sweets = (50+40+30+20+20)*10 + (40+20+30+10+20)*15 + (50+30+20+10+10)*12\n                                                                                  = 160*10 + 120*15 + 120*12\n                                                                                  = 1600 + 1800 + 1440\n                                                                                  = Rs.4840\n\n=> Profit earned by Agarwal in the week = Revenue - Cost of making the sweet - Storage cost\n                                                            = 7220 - 4840-480\nProfit earned by Agarwal                    = Rs.1900\n\nTherefore, option B is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/dit1.PNG,https://cracku.in/media/uploads/dit2.PNG,https://cracku.in/media/uploads/dit3.PNG",
+      "full_markdown": "### Question (qid: 228698)\n\n**Passage:**\nAgarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.\n\nWhat is the profit earned by Agarwal in the entire week?\n\n**Options:**\n- **A**. Rs.2000\n- **B**. Rs.1900\n- **C**. Rs.2200\n- **D**. Rs.1800\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-462",
+      "passage_text": "Agarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.",
+      "question_text": "On which day was the amount spent on storing the sweets the maximum?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Wednesday",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Thursday",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "We know that Agarwal did not have any sweet in stock by the beginning of Monday and by the end of Friday. Also, we know that Gulab Jamun and Cham Cham expire in 2 days and Jalebi expires in 3 days. \n\n50 Gulab Jamuns were made on Monday. 30 Gulab Jamuns were sold on Monday. 20 Gulab Jamuns will be in stock. Now, on Tuesday, 30 Gulab Jamuns were sold. 20 Gulab Jamuns from Monday and 10 Gulab Jamuns from Tuesday will be sold on Tuesday. The remaining 30 Gulab Jamuns from Tuesday will be stocked. \n\nNow, on Wednesday 10 Gulab Jamuns are sold and 30 Gulab Jamuns are made. The Gulab Jamuns made on Tuesday, if not sold on Wednesday, will expire. Therefore, Agarwal will sell 10 Gulab Jamuns from Tuesday’s stock. The remaining 20 Gulab Jamuns from Tuesday’s stock will expire. Now, Agarwal has only 30 Gulab Jamuns left from Wednesday’s stock. \n\nOn Thursday, 20 Gulab Jamuns were made and 30 were sold. All 30 Gulab Jamuns sold will be from Wednesday’s stock. 20 Gulab Jamuns from Thursday’s stock will remain by the end of Thursday.\n\nOn Friday, 20 Gulab Jamuns were made and 40 were sold. All 20 Gulab Jamuns from Thursday’s stock and all 20 Gulab Jamuns made on Friday will be sold. \n\nConstructing a table using the inferences, we get,\n\nWe can construct similar tables for Cham Cham and Jalebi (Jalebi expires on the third day)\n\nWe know that it costs Rs. 1 to store a Jalebi and Rs.2 to store a Gulab Jamun and Cham Cham.\n\nAmount spent on Monday = 2*20 + 2*20 + 25 = Rs.105\n\nAmount spent on Tuesday = 2*30 + 2*10 + 45 = Rs.125\n\nAmount spent on Wednesday = 2*30 + 2*25 + 50 = Rs.160 \n Amount spent on Thursday = 2*20 + 2*10 + 30 = Rs.90 \n\nAs we can see, the amount spent on Wednesday is the highest and hence, option C is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/dit1.PNG,https://cracku.in/media/uploads/dit2.PNG,https://cracku.in/media/uploads/dit3.PNG",
+      "full_markdown": "### Question (qid: 228699)\n\n**Passage:**\nAgarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.\n\nOn which day was the amount spent on storing the sweets the maximum?\n\n**Options:**\n- **A**. Monday\n- **B**. Tuesday\n- **C**. Wednesday\n- **D**. Thursday\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-463",
+      "passage_text": "Agarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.",
+      "question_text": "How many sweets were sold on the day they were made?",
+      "options": [],
+      "correct_option_data": "150",
+      "solution_text": "We know that Agarwal did not have any sweet in stock by the beginning of Monday and by the end of Friday. Also, we know that Gulab Jamun and Cham Cham expire in 2 days and Jalebi expires in 3 days. \n\n50 Gulab Jamuns were made on Monday. 30 Gulab Jamuns were sold on Monday. 20 Gulab Jamuns will be in stock. Now, on Tuesday, 30 Gulab Jamuns were sold. 20 Gulab Jamuns from Monday and 10 Gulab Jamuns from Tuesday will be sold on Tuesday. The remaining 30 Gulab Jamuns from Tuesday will be stocked. \n\nNow, on Wednesday 10 Gulab Jamuns are sold and 30 Gulab Jamuns are made. The Gulab Jamuns made on Tuesday, if not sold on Wednesday, will expire. Therefore, Agarwal will sell 10 Gulab Jamuns from Tuesday’s stock. The remaining 20 Gulab Jamuns from Tuesday’s stock will expire. Now, Agarwal has only 30 Gulab Jamuns left from Wednesday’s stock. \n\nOn Thursday, 20 Gulab Jamuns were made and 30 were sold. All 30 Gulab Jamuns sold will be from Wednesday’s stock. 20 Gulab Jamuns from Thursday’s stock will remain by the end of Thursday.\n\nOn Friday, 20 Gulab Jamuns were made and 40 were sold. All 20 Gulab Jamuns from Thursday’s stock and all 20 Gulab Jamuns made on Friday will be sold. \n\nConstructing a table using the inferences, we get,\n\nWe can construct similar tables for Cham Cham and Jalebi (Jalebi expires on the third day)\n\nNumber of Gulab Jamuns sold on the day they were made = 30+10+20 = 60\nNumber of Cham Chams sold on the day they were made = 20+10+5+20 = 55\nNumber of Jalebis sold on the day they were made = 25+10 = 35\n\nTotal number of sweets that were sold on the day they were made = 60+55+35 = 150.\nTherefore, 150 is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/dit1.PNG,https://cracku.in/media/uploads/dit2.PNG,https://cracku.in/media/uploads/dit3.PNG",
+      "full_markdown": "### Question (qid: 228700)\n\n**Passage:**\nAgarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.\n\nHow many sweets were sold on the day they were made?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-464",
+      "passage_text": "Agarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.",
+      "question_text": "Which of the following sweets contributed the most to Agarwal’s profit?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Gulab Jamun",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Cham Cham",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Jalebi",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "More than one of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "We know that Agarwal did not have any sweet in stock by the beginning of Monday and by the end of Friday. Also, we know that Gulab Jamun and Cham Cham expire in 2 days and Jalebi expires in 3 days. \n\n50 Gulab Jamuns were made on Monday. 30 Gulab Jamuns were sold on Monday. 20 Gulab Jamuns will be in stock. Now, on Tuesday, 30 Gulab Jamuns were sold. 20 Gulab Jamuns from Monday and 10 Gulab Jamuns from Tuesday will be sold on Tuesday. The remaining 30 Gulab Jamuns from Tuesday will be stocked. \n\nNow, on Wednesday 10 Gulab Jamuns are sold and 30 Gulab Jamuns are made. The Gulab Jamuns made on Tuesday, if not sold on Wednesday, will expire. Therefore, Agarwal will sell 10 Gulab Jamuns from Tuesday’s stock. The remaining 20 Gulab Jamuns from Tuesday’s stock will expire. Now, Agarwal has only 30 Gulab Jamuns left from Wednesday’s stock. \n\nOn Thursday, 20 Gulab Jamuns were made and 30 were sold. All 30 Gulab Jamuns sold will be from Wednesday’s stock. 20 Gulab Jamuns from Thursday’s stock will remain by the end of Thursday.\n\nOn Friday, 20 Gulab Jamuns were made and 40 were sold. All 20 Gulab Jamuns from Thursday’s stock and all 20 Gulab Jamuns made on Friday will be sold. \n\nConstructing a table using the inferences, we get,\n\nWe can construct similar tables for Cham Cham and Jalebi (Jalebi expires on the third day)\n\nCost incurred in making Gulab Jamuns = (50+40+30+20+20)*10 = Rs.1600\nCost incurred in storing Gulab Jamun = 2*20 + 2*30 + 2*30 + 2*20 = Rs.200\nRevenue from Gulab Jamun                = (30+30+10+30+40)*20 = Rs.2800\n=> Profit from Gulab Jamun                =  2800-200-1600 = Rs.1000\n\nCost incurred in making Cham Chams = (40+20+30+10+20)*15  = Rs.1800\nCost incurred in storing Cham Chams = 2*20 + 2*10 + 2*25 + 2*10 = Rs.130\nRevenue from Cham Chams              = (20+30+15+15+30)*22 = Rs.2420\n=> Profit from Cham Chams               =  2420-130-1800 = Rs.490\n\nCost incurred in making Jalebi = (50+30+20+10+10)*12 = Rs.1440\nCost incurred in storing Jalebi = 25+45+50+30 = Rs.150\nRevenue from Jalebi            = (25+10+10+15+40)*20 = Rs.2000\n=> Profit from Jalebi                =  2000-150-1440 = Rs.410\n\nGulab Jamun contributed the most to Agarwal's profit and hence, option A is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/dit1.PNG,https://cracku.in/media/uploads/dit2.PNG,https://cracku.in/media/uploads/dit3.PNG",
+      "full_markdown": "### Question (qid: 228701)\n\n**Passage:**\nAgarwal owns a sweet shop in a busy Delhi locality. He makes 3 types of sweets - Gulab Jamun, Cham Cham, and Jalebi. Everyday, he makes a certain number of sweets of each type. Gulab Jamun and Cham Cham expire by the end of the second day after they are produced and Jalebi expires on the third day. For eg) If Agarwal makes a Gulab Jamun on Monday, it expires by Tuesday night. Agarwal cannot sell a sweet that has expired. Therefore, every night, he throws away the sweets that have expired and keeps only the sweets that have not expired in stock. The following table shows the number of sweets of each type that Agarwal made everyday.\n\nThe table given below shows the number of sweets sold every day.\n\nFurther, it is known that Agarwal did not have any sweet left in stock at the beginning of Monday or by the end of Friday.\n\nThe following table shows the cost of manufacturing, and storing one piece of a particular type of sweet and the selling price of one piece of a sweet.\n\nAssume that Agarwal is rational and tries to minimize his losses as much as possible.\n\nStorage cost is applicable only on the unsold sweets.\n\nWhich of the following sweets contributed the most to Agarwal’s profit?\n\n**Options:**\n- **A**. Gulab Jamun\n- **B**. Cham Cham\n- **C**. Jalebi\n- **D**. More than one of the above\n\n**Correct Answer:** null"
     }
   ]
 }

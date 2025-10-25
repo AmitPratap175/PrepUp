@@ -33,45 +33,53 @@ export default function Dashboard() {
     queryKey: ["/api/courses", { examType: user?.exam_type }],
     queryFn: () => fetchDashboardData(`/api/courses?examType=${user?.exam_type}`),
     enabled: !!user,
+    staleTime: 0,
   });
 
   const { data: testSessions } = useQuery<TestSession[]>({
     queryKey: ["/api/users", user?.id, "test-sessions"],
     queryFn: () => fetchDashboardData(`/api/users/${user?.id}/test-sessions/`),
     enabled: !!user,
+    staleTime: 0,
   });
 
   const { data: userProgress } = useQuery<UserProgress[]>({
     queryKey: ["/api/users", user?.id, "progress"],
     queryFn: () => fetchDashboardData(`/api/users/${user?.id}/progress/`),
     enabled: !!user,
+    staleTime: 0,
   });
 
   const { data: studySummary } = useQuery<{ today_hours: number; week_summary: { date: string; hours: number }[] }>({
     queryKey: ["/api/users/study-summary", user?.id],
     queryFn: () => fetchDashboardData(`/api/auth/study-summary/`),
     enabled: !!user,
+    staleTime: 0,
   });
 
   const { data: mockTests } = useQuery<PracticeTest[]>({
     queryKey: ["/api/mock-tests"],
     queryFn: () => fetchDashboardData(`/api/mock-tests/`),
+    staleTime: 0,
   });
 
   const { data: practiceTests } = useQuery<PracticeTest[]>({
     queryKey: ["/api/practice-tests"],
     queryFn: () => fetchDashboardData(`/api/practice-tests/`),
+    staleTime: 0,
   });
 
   const { data: sectionalTests } = useQuery<PracticeTest[]>({
     queryKey: ["/api/sectional-tests"],
     queryFn: () => fetchDashboardData(`/api/sectional-tests/`),
+    staleTime: 0,
   });
 
   const { data: userQuizStates } = useQuery<any[]>({
     queryKey: ["/api/user-quiz-state/"],
     queryFn: () => fetchDashboardData(`/api/user-quiz-state/`),
     enabled: !!user,
+    staleTime: 0,
   });
 
   console.log("userQuizStates", userQuizStates);

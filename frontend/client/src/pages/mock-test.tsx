@@ -3,6 +3,8 @@ import { useRoute, useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import MockTestInterface from "@/components/mock-test-interface";
+import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
 /**
@@ -15,6 +17,7 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
  * @returns {JSX.Element} The rendered mock test page.
  */
 export default function MockTestPage() {
+  const { isAuthenticated } = useAuth();
   const [, params] = useRoute("/mock-test/:testId");
   const testId = params?.testId;
   const [, navigate] = useLocation();
@@ -33,6 +36,10 @@ export default function MockTestPage() {
     localStorage.setItem(`mockTestResult-${testId}`, JSON.stringify(resultData));
     navigate(`/mock-test/result/${testId}`);
   };
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isLoading) {
     return (

@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 import type { PracticeTest } from "@shared/schema";
 
 /**
@@ -19,6 +21,7 @@ import type { PracticeTest } from "@shared/schema";
  * @returns {JSX.Element} The rendered sectional tests page.
  */
 export default function SectionalTestsPage() {
+  const { isAuthenticated } = useAuth();
   const [, navigate] = useLocation();
   const { toast } = useToast();
 
@@ -29,6 +32,10 @@ export default function SectionalTestsPage() {
   const handleStartTest = (testId: string) => {
     navigate(`/sectional-test/${testId}`);
   };
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isLoading) {
     return (
