@@ -7,6 +7,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { BarVisualizer } from "@/components/ui/bar-visualizer";
 import 'katex/dist/katex.min.css';
+import { GoogleGenAI, LiveServerMessage, Modality, Session } from '@google/genai';
+import { createBlob, decode, decodeAudioData } from '@/lib/audio-utils';
 
 interface ChatbotProps {
   onClose: () => void;
@@ -25,8 +27,228 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const [messages, setMessages] = useState<Message[]>(history);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [currentInputTranscription, setCurrentInputTranscription] = useState('');
+  const [currentOutputTranscription, setCurrentOutputTranscription] = useState('');
+  const [visualizerStream, setVisualizerStream] = useState<MediaStream | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
+
+  const client = useRef<GoogleGenAI | null>(null);
+  const sessionPromise = useRef<Promise<Session> | null>(null);
+  const isRecordingRef = useRef(isRecording);
+  const inputAudioContext = useRef<AudioContext | null>(null);
+  const outputAudioContext = useRef<AudioContext | null>(null);
+  const inputNode = useRef<GainNode | null>(null);
+  const outputNode = useRef<GainNode | null>(null);
+  const nextStartTime = useRef(0);
+  const mediaStream = useRef<MediaStream | null>(null);
+  const sourceNode = useRef<MediaStreamAudioSourceNode | null>(null);
+  const scriptProcessorNode = useRef<ScriptProcessorNode | null>(null);
+  const sources = useRef(new Set<AudioBufferSourceNode>());
+  const visualizerUserSourceNode = useRef<MediaStreamAudioSourceNode | null>(null);
+  const visualizerDestinationNode = useRef<MediaStreamAudioDestinationNode | null>(null);
+
+  useEffect(() => {
+    isRecordingRef.current = isRecording;
+  }, [isRecording]);
+
+  useEffect(() => {
+    return () => {
+      if (isRecordingRef.current) {
+        stopRecording();
+      }
+      sessionPromise.current?.then((session) => session.close());
+    };
+  }, []);
+
+  const initAudio = () => {
+    inputAudioContext.current = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
+    outputAudioContext.current = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+    inputNode.current = inputAudioContext.current.createGain();
+    outputNode.current = outputAudioContext.current.createGain();
+    nextStartTime.current = outputAudioContext.current.currentTime;
+  };
+
+  const initClient = () => {
+    initAudio();
+    client.current = new GoogleGenAI({
+      apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY,
+    });
+    outputNode.current?.connect(outputAudioContext.current!.destination);
+    initSession();
+  };
+
+  const initSession = () => {
+    const model = 'gemini-2.5-flash-native-audio-preview-09-2025';
+
+    if (!client.current) return;
+
+    sessionPromise.current = client.current.live.connect({
+      model: model,
+      callbacks: {
+        onopen: () => {
+          console.log('Opened');
+        },
+        onmessage: async (message: LiveServerMessage) => {
+          const audio = message.serverContent?.modelTurn?.parts[0]?.inlineData;
+
+          if (audio) {
+            nextStartTime.current = Math.max(
+              nextStartTime.current,
+              outputAudioContext.current!.currentTime,
+            );
+
+            const audioBuffer = await decodeAudioData(
+              decode(audio.data),
+              outputAudioContext.current!,
+              24000,
+              1,
+            );
+            const source = outputAudioContext.current!.createBufferSource();
+            source.buffer = audioBuffer;
+            source.connect(outputNode.current!);
+            source.addEventListener('ended', () => {
+              sources.current.delete(source);
+            });
+
+            source.start(nextStartTime.current);
+            nextStartTime.current = nextStartTime.current + audioBuffer.duration;
+            sources.current.add(source);
+          }
+
+          if (message.serverContent?.inputTranscription) {
+            setCurrentInputTranscription(prev => prev + message.serverContent.inputTranscription.text);
+          }
+
+          if (message.serverContent?.outputTranscription) {
+            setCurrentOutputTranscription(prev => prev + message.serverContent.outputTranscription.text);
+          }
+
+          if (message.serverContent?.turnComplete) {
+            const newMessages: Message[] = [];
+            if (currentInputTranscription.trim()) {
+              newMessages.push({
+                text: currentInputTranscription,
+                sender: 'user',
+              });
+            }
+            if (currentOutputTranscription.trim()) {
+              newMessages.push({
+                text: currentOutputTranscription,
+                sender: 'bot',
+              });
+            }
+
+            if (newMessages.length > 0) {
+              setMessages(prev => [...prev, ...newMessages]);
+            }
+
+            setCurrentInputTranscription('');
+            setCurrentOutputTranscription('');
+          }
+
+          const interrupted = message.serverContent?.interrupted;
+          if (interrupted) {
+            for (const source of sources.current.values()) {
+              source.stop();
+              sources.current.delete(source);
+            }
+            nextStartTime.current = 0;
+          }
+        },
+        onerror: (e: ErrorEvent) => {
+          console.error(e);
+        },
+        onclose: (e: CloseEvent) => {
+          console.log('Close:' + e.reason);
+        },
+      },
+      config: {
+        responseModalities: [Modality.AUDIO],
+        speechConfig: {
+          voiceConfig: { prebuiltVoiceConfig: { voiceName: 'Zephyr' } },
+        },
+        inputAudioTranscription: {},
+        outputAudioTranscription: {},
+      },
+    });
+    sessionPromise.current.catch((e) => {
+      console.error(e);
+    });
+  }
+
+  const startRecording = async () => {
+    if (isRecordingRef.current) return;
+
+    if (!sessionPromise.current) {
+      initClient();
+    }
+
+    inputAudioContext.current?.resume();
+
+    try {
+      mediaStream.current = await navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: false,
+      });
+
+      sourceNode.current = inputAudioContext.current!.createMediaStreamSource(
+        mediaStream.current,
+      );
+      sourceNode.current.connect(inputNode.current!);
+
+      if (outputAudioContext.current) {
+        visualizerDestinationNode.current = outputAudioContext.current.createMediaStreamDestination();
+        visualizerUserSourceNode.current = outputAudioContext.current.createMediaStreamSource(mediaStream.current);
+        visualizerUserSourceNode.current.connect(visualizerDestinationNode.current);
+        outputNode.current?.connect(visualizerDestinationNode.current);
+        setVisualizerStream(visualizerDestinationNode.current.stream);
+      }
+
+      const bufferSize = 4096;
+      scriptProcessorNode.current = inputAudioContext.current!.createScriptProcessor(
+        bufferSize,
+        1,
+        1,
+      );
+
+      scriptProcessorNode.current.onaudioprocess = (audioProcessingEvent) => {
+        if (!isRecordingRef.current) return;
+        const pcmData = audioProcessingEvent.inputBuffer.getChannelData(0);
+        sessionPromise.current?.then((session) => {
+          session.sendRealtimeInput({ media: createBlob(pcmData) });
+        });
+      };
+
+      sourceNode.current.connect(scriptProcessorNode.current);
+      scriptProcessorNode.current.connect(inputAudioContext.current!.destination);
+      setIsRecording(true);
+
+    } catch (err) {
+      console.error('Error starting recording:', err);
+      stopRecording();
+    }
+  };
+
+  const stopRecording = () => {
+    setIsRecording(false);
+    if (scriptProcessorNode.current && sourceNode.current && inputAudioContext.current) {
+      scriptProcessorNode.current.disconnect();
+      sourceNode.current.disconnect();
+    }
+    visualizerUserSourceNode.current?.disconnect();
+    visualizerUserSourceNode.current = null;
+    visualizerDestinationNode.current = null;
+    setVisualizerStream(null);
+    scriptProcessorNode.current = null;
+    sourceNode.current = null;
+    if (mediaStream.current) {
+      mediaStream.current.getTracks().forEach((track) => track.stop());
+      mediaStream.current = null;
+    }
+    sessionPromise.current?.then((session) => session.close());
+    sessionPromise.current = null;
+  };
 
   const scrollToBottom = () => {
     if (chatContainerRef.current) {
@@ -41,13 +263,11 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   }, [initialMessage]);
 
   useEffect(() => {
-    // Delay scrolling to allow Katex to render and prevent layout shifts from causing scroll jumps.
     const timer = setTimeout(() => {
       scrollToBottom();
-    }, 100); // A small delay is often enough.
-
+    }, 100);
     return () => clearTimeout(timer);
-  }, [messages, isVoiceActive]);
+  }, [messages, isRecording, currentInputTranscription, currentOutputTranscription]);
 
   useEffect(() => {
     setMessages(history);
@@ -58,7 +278,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   }, [messages]);
 
   const handleSendMessage = async (messageToSend: string) => {
-    if (messageToSend.trim() === '' || isLoading) return;
+    if (messageToSend.trim() === '' || isLoading || isRecording) return;
 
     const userMessage: Message = { text: messageToSend, sender: 'user' };
     setMessages(prevMessages => [...prevMessages, userMessage]);
@@ -100,6 +320,15 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
     }
   };
 
+  const handleVoiceButtonClick = () => {
+    if (isRecording) {
+        stopRecording();
+    } else {
+        startRecording();
+    }
+  };
+
+
   return (
     <Card className="absolute bottom-24 right-8 w-[calc(100%-4rem)] md:w-3/5 lg:w-2/5 max-w-lg h-4/5 max-h-[600px] z-20 flex flex-col shadow-lg rounded-lg">
       <CardHeader className="flex flex-row items-center justify-between p-4 border-b">
@@ -128,6 +357,24 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
               </div>
             </div>
           ))}
+           {currentInputTranscription && (
+            <div className="flex justify-end">
+              <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-primary text-primary-foreground">
+                <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+                  {currentInputTranscription}
+                </ReactMarkdown>
+              </div>
+            </div>
+          )}
+          {currentOutputTranscription && (
+            <div className="flex justify-start">
+              <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-muted text-foreground dark:prose-invert">
+                 <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+                  {currentOutputTranscription}
+                </ReactMarkdown>
+              </div>
+            </div>
+          )}
           {isLoading && (
             <div className="flex justify-start">
               <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-muted">
@@ -140,9 +387,9 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
             </div>
           )}
         </div>
-        {isVoiceActive && (
+        {isRecording && (
           <div className="h-5 mt-4">
-            <BarVisualizer demo={true} state="speaking" barCount={15} />
+            <BarVisualizer mediaStream={visualizerStream} state={isRecording ? 'speaking' : 'idle'} barCount={15} />
           </div>
         )}
       </CardContent>
@@ -155,13 +402,13 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputValue)}
             className="flex-grow"
-            disabled={isLoading || isVoiceActive}
+            disabled={isLoading || isRecording}
           />
-          <Button onClick={() => handleSendMessage(inputValue)} disabled={isLoading || isVoiceActive}>
+          <Button onClick={() => handleSendMessage(inputValue)} disabled={isLoading || isRecording}>
             Send
           </Button>
-          <Button variant="ghost" size="icon" onClick={() => setIsVoiceActive(!isVoiceActive)}>
-            <span className="material-symbols-outlined">{isVoiceActive ? 'mic_off' : 'mic'}</span>
+          <Button variant="ghost" size="icon" onClick={handleVoiceButtonClick}>
+            <span className="material-symbols-outlined">{isRecording ? 'mic_off' : 'mic'}</span>
           </Button>
         </div>
       </div>
