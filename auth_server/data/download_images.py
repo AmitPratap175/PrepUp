@@ -9,7 +9,7 @@ import ssl
 def download_images():
     # The script is inside the 'scraper' project directory.
     project_root = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(project_root, 'frontend', 'src', 'data')
+    data_dir = os.path.join(project_root, 'auth_server/data/cat/docs')
     output_dir = os.path.join(project_root, 'images')
 
     print(f"Data directory: {data_dir}")

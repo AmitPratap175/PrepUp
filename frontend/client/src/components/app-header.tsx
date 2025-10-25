@@ -23,6 +23,7 @@ const navigation = [
       { title: "Practice Tests", href: "/practice-test?exam=cat" },
       { title: "Quizzes", href: "/quiz?exam=cat" },
       { title: "Study Materials", href: "/study-materials?exam=cat" },
+      { title: "My Words", href: "/words" },
     ]
   },
   { 
@@ -36,8 +37,6 @@ const navigation = [
       { title: "Study Materials", href: "/study-materials?exam=gate" },
     ]
   },
-  { title: "Bookmarks", href: "/bookmarks" },
-  { title: "My Words", href: "/words" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];
