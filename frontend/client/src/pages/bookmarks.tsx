@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { NewQuizInterface } from "@/components/NewQuizInterface";
@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest, Question, Bookmark, UserAnswer } from "@shared/schema";
+import type { PracticeTest, Question, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect } from "wouter";
 
@@ -36,7 +36,8 @@ interface BookmarkedQuestions {
 export default function BookmarksPage() {
   const { isAuthenticated } = useAuth();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const queryClient = useQueryClient();
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
 
   const { data: bookmarks, isLoading: isLoadingBookmarks } = useQuery<Bookmark[]>({
     queryKey: ["bookmarks"],
@@ -88,34 +89,6 @@ export default function BookmarksPage() {
     }
   }, [bookmarks, practiceTests]);
 
-  const updateProgressMutation = useMutation({
-    mutationFn: (progress: { subject: string; questions_attempted: number }) => {
-      const token = localStorage.getItem('token');
-      return fetch('/api/user-quiz-progress/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Token ${token}`,
-        },
-        body: JSON.stringify(progress),
-      });
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['user-quiz-goals'] });
-    },
-  });
-
-  const handleProgressUpdate = (answers: UserAnswer[]) => {
-    if (!selectedSubject) return;
-
-    const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
-
-    updateProgressMutation.mutate({ 
-      subject: selectedSubject, 
-      questions_attempted 
-    });
-  };
-
   if (!isAuthenticated) {
     return <Redirect to="/login" />;
   }
@@ -147,12 +120,24 @@ export default function BookmarksPage() {
       totalQuestions: bookmarkedQuestions[selectedSubject].length,
       questions: bookmarkedQuestions[selectedSubject],
     };
+
+    const navigateToQuestion = (index: number) => {
+      if (index >= 0 && index < bookmarkedQuestions[selectedSubject].length) {
+        setCurrentQuestionIndex(index);
+      }
+    };
+
     return (
       <NewQuizInterface
         test={test}
-        onExit={() => setSelectedSubject(null)}
+        onExit={() => {
+          setSelectedSubject(null);
+          setCurrentQuestionIndex(0); // Reset index on exit
+        }}
         onSubmit={() => {}}
-        onProgressUpdate={handleProgressUpdate}
+        onProgressUpdate={() => {}}
+        navigateToQuestion={navigateToQuestion}
+        currentQuestionIndex={currentQuestionIndex}
       />
     );
   }

@@ -3,6 +3,8 @@ import { useRoute, useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import SectionalTestInterface from "@/components/sectional-test-interface";
+import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
 /**
@@ -15,6 +17,7 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
  * @returns {JSX.Element} The rendered sectional test page.
  */
 export default function SectionalTestPage() {
+  const { isAuthenticated } = useAuth();
   const [, params] = useRoute("/sectional-test/:id");
   const testId = params?.id;
   const [, navigate] = useLocation();
@@ -23,6 +26,10 @@ export default function SectionalTestPage() {
     queryKey: [`/api/sectional-tests/${testId}`],
     enabled: !!testId,
   });
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isLoading) {
     return (

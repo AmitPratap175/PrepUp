@@ -43,7 +43,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[testState.currentQuestionIndex];
-  const hasPassage = currentQuestion.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+  const hasPassage = currentQuestion?.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
   // Timer effect
   useEffect(() => {
@@ -77,7 +77,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   };
 
   const getQuestionStatus = (questionIndex: number): QuestionStatus => {
-    const questionId = questions[questionIndex].qid;
+    const questionId = questions[questionIndex]?.qid;
     return {
       answered: testState.answers[questionId] !== undefined,
       visited: questionIndex <= testState.currentQuestionIndex,
@@ -91,7 +91,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
       ...prev,
       answers: {
         ...prev.answers,
-        [currentQuestion.qid]: answer,
+        [currentQuestion?.qid]: answer,
       },
     }));
   };
@@ -99,10 +99,10 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   const handleMarkForReview = () => {
     setTestState(prev => {
       const newMarked = new Set(prev.markedForReview);
-      if (newMarked.has(currentQuestion.qid)) {
-        newMarked.delete(currentQuestion.qid);
+      if (newMarked.has(currentQuestion?.qid)) {
+        newMarked.delete(currentQuestion?.qid);
       } else {
-        newMarked.add(currentQuestion.qid);
+        newMarked.add(currentQuestion?.qid);
       }
       return { ...prev, markedForReview: newMarked };
     });
@@ -111,7 +111,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
   const handleClearResponse = () => {
     setTestState(prev => {
       const newAnswers = { ...prev.answers };
-      delete newAnswers[currentQuestion.qid];
+      delete newAnswers[currentQuestion?.qid];
       return { ...prev, answers: newAnswers };
     });
   };
@@ -301,23 +301,23 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               Question {testState.currentQuestionIndex + 1} of {test.totalQuestions}
             </span>
             <span className="text-sm text-muted-foreground">
-              {currentQuestion.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
+              {currentQuestion?.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
             </span>
           </div>
 
           <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">
-            {(hasPassage || currentQuestion.image_url) && (
+            {(hasPassage || currentQuestion?.image_url) && (
               <div className="w-full xl:w-[60%] pr-4 overflow-y-auto">
                 <div className="bg-muted/50 p-4 rounded-lg h-full">
                   <h5 className="font-semibold text-foreground mb-2">Passage:</h5>
                   {hasPassage && (
                     <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
-                      <Latex>{currentQuestion.passage_text}</Latex>
+                      <Latex>{currentQuestion?.passage_text}</Latex>
                     </div>
                   )}
-                  {currentQuestion.image_url && (
+                  {currentQuestion?.image_url && (
                     <div className="flex flex-wrap gap-2 mt-4">
-                      {currentQuestion.image_url.split(',').map((url, i) => (
+                      {currentQuestion?.image_url.split(',').map((url, i) => (
                         <img key={i} src={url.trim()} alt={`Passage image ${i + 1}`} className="max-w-full h-auto rounded-lg" />
                       ))}
                     </div>
@@ -326,27 +326,27 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               </div>
             )}
 
-            <div className={`${(hasPassage || currentQuestion.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
+            <div className={`${(hasPassage || currentQuestion?.image_url) ? 'w-full xl:w-[40%] xl:pl-4' : 'w-full'} overflow-y-auto`}>
               <div className="prose max-w-none mb-6">
                 <p className="text-foreground leading-relaxed mb-4 preserve-whitespace" data-testid="question-text">
-                  <Latex>{currentQuestion.question_text}</Latex>
+                  <Latex>{currentQuestion?.question_text}</Latex>
                 </p>
               </div>
 
               <div className="space-y-3">
-                {currentQuestion.options.length > 0 ? (
-                  currentQuestion.options.map((option) => {
-                    const isSelected = testState.answers[currentQuestion.qid] === option.data_option;
+                {currentQuestion?.options.length > 0 ? (
+                  currentQuestion?.options.map((option) => {
+                    const isSelected = testState.answers[currentQuestion?.qid] === option.data_option;
                     return (
                       <label 
                         key={option.data_option}
-                        className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevate ${
+                        className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors hover-elevATE ${
                           isSelected ? 'bg-accent border-primary' : 'hover:bg-accent'
                         }`}
                       >
                         <input 
                           type="radio" 
-                          name={`question-${currentQuestion.qid}`}
+                          name={`question-${currentQuestion?.qid}`}
                           value={option.data_option}
                           checked={isSelected}
                           onChange={() => handleAnswerSelect(option.data_option)}
@@ -371,7 +371,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
                     <input
                       type="text"
                       id="answer-input"
-                      value={testState.answers[currentQuestion.qid] || ''}
+                      value={testState.answers[currentQuestion?.qid] || ''}
                       onChange={(e) => handleAnswerSelect(e.target.value)}
                       className="block w-full p-2 border border-border rounded-lg bg-input text-foreground"
                       data-testid="answer-input"
@@ -387,7 +387,7 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               <Button 
                 variant="outline" 
                 onClick={handleClearResponse}
-                disabled={!testState.answers[currentQuestion.qid]}
+                disabled={!testState.answers[currentQuestion?.qid]}
                 data-testid="button-clear-response"
               >
                 Clear Response
@@ -395,10 +395,10 @@ export function PracticeTestInterface({ test }: PracticeTestInterfaceProps) {
               <Button 
                 variant="outline" 
                 onClick={handleMarkForReview}
-                className={testState.markedForReview.has(currentQuestion.qid) ? 'bg-orange-100 border-orange-300' : ''}
+                className={testState.markedForReview.has(currentQuestion?.qid) ? 'bg-orange-100 border-orange-300' : ''}
                 data-testid="button-mark-review"
               >
-                {testState.markedForReview.has(currentQuestion.qid) ? 'Unmark' : 'Mark for Review'}
+                {testState.markedForReview.has(currentQuestion?.qid) ? 'Unmark' : 'Mark for Review'}
               </Button>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">

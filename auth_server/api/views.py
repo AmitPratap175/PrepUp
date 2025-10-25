@@ -549,20 +549,18 @@ class UserQuizGoalView(APIView):
         user = request.user
         today = datetime.now(timezone.utc).date()
 
-        goals = UserQuizGoal.objects.filter(user=user)
+        goals_qs = UserQuizGoal.objects.filter(user=user)
+        goals_dict = {goal.subject: goal.goal for goal in goals_qs}
+
+        progress_qs = UserQuizProgress.objects.filter(user=user, date=today)
+        progress_dict = {p.subject: p.questions_attempted for p in progress_qs}
+
         subjects = storage.get_subjects()
         all_goals_data = []
 
         for subject in subjects:
-            goal_obj = goals.filter(subject=subject).first()
-            print(f"goal_obj: {goal_obj}, type: {type(goal_obj)}")
-            goal = goal_obj.goal if goal_obj else 0
-
-            try:
-                progress = UserQuizProgress.objects.get(user=user, subject=subject, date=today)
-                questions_attempted = progress.questions_attempted
-            except UserQuizProgress.DoesNotExist:
-                questions_attempted = 0
+            goal = goals_dict.get(subject, 0)
+            questions_attempted = progress_dict.get(subject, 0)
 
             all_goals_data.append({
                 'subject': subject,

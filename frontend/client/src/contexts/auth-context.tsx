@@ -70,7 +70,7 @@ interface AuthProviderProps {
  * @returns {JSX.Element} The authentication provider component.
  */
 export const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {

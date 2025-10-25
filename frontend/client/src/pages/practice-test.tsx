@@ -9,6 +9,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
+import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
 /**
@@ -21,6 +23,7 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
  * @returns {JSX.Element} The rendered practice test page.
  */
 export default function PracticeTestPage() {
+  const { isAuthenticated } = useAuth();
   const [location] = useLocation();
   const { toast } = useToast();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
@@ -71,6 +74,10 @@ export default function PracticeTestPage() {
     const mockUserId = "user-123";
     startTestMutation.mutate({ testId, userId: mockUserId });
   };
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isLoading) {
     return (

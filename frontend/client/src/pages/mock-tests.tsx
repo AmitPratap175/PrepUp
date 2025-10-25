@@ -9,6 +9,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
+import { useAuth } from "@/contexts/auth-context";
+import { Redirect } from "wouter";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
 /**
@@ -22,6 +24,7 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
  * @returns {JSX.Element} The rendered mock tests page.
  */
 export default function MockTestsPage() {
+  const { isAuthenticated } = useAuth();
   const [, navigate] = useLocation();
   const { toast } = useToast();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
@@ -34,6 +37,10 @@ export default function MockTestsPage() {
     setSelectedTestId(testId);
     navigate(`/mock-test/${testId}`);
   };
+
+  if (!isAuthenticated) {
+    return <Redirect to="/login" />;
+  }
 
   if (isLoading) {
     return (
