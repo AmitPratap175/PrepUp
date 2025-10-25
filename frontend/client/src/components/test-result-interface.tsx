@@ -20,6 +20,7 @@ interface TestResultInterfaceProps {
   totalQuestions: number;
   correctAnswers: number;
   incorrectAnswers: number;
+  onReturnToDashboard?: () => void;
 }
 
 export default function TestResultInterface({ 
@@ -31,7 +32,8 @@ export default function TestResultInterface({
     attemptedQuestions,
     totalQuestions,
     correctAnswers,
-    incorrectAnswers
+    incorrectAnswers,
+    onReturnToDashboard
 }: TestResultInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -233,6 +235,11 @@ export default function TestResultInterface({
           </div>
 
           <div className="flex justify-end pt-4 sm:pt-6 border-t border-border gap-4">
+            {onReturnToDashboard && (
+              <Button variant="outline" onClick={onReturnToDashboard}>
+                Return to Dashboard
+              </Button>
+            )}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Button variant="outline" onClick={handlePrevious} disabled={currentQuestionIndex === 0}>Previous</Button>
               <Button onClick={handleNext} disabled={currentQuestionIndex === questions.length - 1}>Next</Button>

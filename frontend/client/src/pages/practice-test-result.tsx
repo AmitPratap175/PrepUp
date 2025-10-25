@@ -17,7 +17,7 @@ export default function PracticeTestResultPage() {
   const { testId } = useParams<{ testId: string }>();
   const [resultData, setResultData] = useState<ResultData | null>(null);
   const { user, isAuthenticated } = useAuth();
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const queryClient = useQueryClient();
 
   const { data: test, isLoading: isTestLoading } = useQuery<PracticeTest>({
@@ -162,6 +162,7 @@ export default function PracticeTestResultPage() {
                 totalQuestions={totalQuestions}
                 correctAnswers={correctAnswers}
                 incorrectAnswers={incorrectAnswers}
+                onReturnToDashboard={() => navigate("/dashboard")}
             />
         </main>
     </div>
