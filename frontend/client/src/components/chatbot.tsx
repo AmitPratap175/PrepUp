@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import { BarVisualizer } from "@/components/ui/bar-visualizer";
+import { BarVisualizer, AgentState } from "@/components/ui/bar-visualizer";
 import 'katex/dist/katex.min.css';
 import { GoogleGenAI, LiveServerMessage, Modality, Session } from '@google/genai';
 import { createBlob, decode, decodeAudioData } from '@/lib/audio-utils';
@@ -31,6 +31,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
   const [currentInputTranscription, setCurrentInputTranscription] = useState('');
   const [currentOutputTranscription, setCurrentOutputTranscription] = useState('');
   const [visualizerStream, setVisualizerStream] = useState<MediaStream | null>(null);
+  const [agentState, setAgentState] = useState<AgentState>('initializing');
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const client = useRef<GoogleGenAI | null>(null);
@@ -71,6 +72,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
 
   const initClient = () => {
     initAudio();
+    setAgentState('connecting');
     client.current = new GoogleGenAI({
       apiKey: import.meta.env.VITE_GEMINI_API_KEY,
     });
@@ -88,11 +90,13 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
       callbacks: {
         onopen: () => {
           console.log('Opened');
+          setAgentState('listening');
         },
         onmessage: async (message: LiveServerMessage) => {
           const audio = message.serverContent?.modelTurn?.parts[0]?.inlineData;
 
           if (audio) {
+            setAgentState('speaking');
             nextStartTime.current = Math.max(
               nextStartTime.current,
               outputAudioContext.current!.currentTime,
@@ -145,6 +149,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
 
             setCurrentInputTranscription('');
             setCurrentOutputTranscription('');
+            setAgentState(isRecordingRef.current ? 'listening' : 'thinking');
           }
 
           const interrupted = message.serverContent?.interrupted;
@@ -161,6 +166,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
         },
         onclose: (e: CloseEvent) => {
           console.log('Close:' + e.reason);
+          setAgentState('initializing');
         },
       },
       config: {
@@ -223,6 +229,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
       sourceNode.current.connect(scriptProcessorNode.current);
       scriptProcessorNode.current.connect(inputAudioContext.current!.destination);
       setIsRecording(true);
+      setAgentState('listening');
 
     } catch (err) {
       console.error('Error starting recording:', err);
@@ -232,6 +239,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
 
   const stopRecording = () => {
     setIsRecording(false);
+    setAgentState('thinking');
     if (scriptProcessorNode.current && sourceNode.current && inputAudioContext.current) {
       scriptProcessorNode.current.disconnect();
       sourceNode.current.disconnect();
@@ -389,7 +397,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
         </div>
         {isRecording && (
           <div className="h-5 mt-4">
-            <BarVisualizer mediaStream={visualizerStream} state={isRecording ? 'speaking' : 'idle'} barCount={15} />
+            <BarVisualizer mediaStream={visualizerStream} state={agentState} barCount={15} />
           </div>
         )}
       </CardContent>
