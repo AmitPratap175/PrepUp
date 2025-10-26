@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from auth_server.core.storage import storage
+from api.storage import storage
 
 def _get_question_by_id(qid: str, question_type: str):
     """Finds a question by its ID by searching through a specific test type."""
@@ -48,7 +48,7 @@ def get_quiz_question(question_id: str, question_type: str) -> str:
         context += f"Options: {options}\n"
     if 'solution' in question_data:
         context += f"Solution: {question_data.get('solution', '')}\n"
-        
+
     return context
 
 quiz_tools_list = [get_quiz_question]

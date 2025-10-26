@@ -48,7 +48,7 @@ def get_quiz_question(question_id: str, question_type: str) -> str:
         context += f"Options: {options}\n"
     if 'solution' in question_data:
         context += f"Solution: {question_data.get('solution', '')}\n"
-        
+
     return context
 
 quiz_tools_list = [get_quiz_question]

@@ -1,17 +1,14 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import List
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv()
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore", env_file_encoding="utf-8")
 
-    GOOGLE_API_KEY: str
+    GOOGLE_API_KEY: str =  "AIzaSyDOmG_gjhPO4ZxWzhF5r_2I5x7XWnLsnUw"
 
     INFO_DB_PATH: str = str(Path(__file__).parent/'info.db')
-    
+
     # Email Configuration
     FROM_EMAIL: str = "00amitpratap@gmail.com"
     COMPANY_NAME: str = "PrepUp"

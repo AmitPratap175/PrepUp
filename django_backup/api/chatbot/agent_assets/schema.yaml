@@ -1,0 +1,778 @@
+openapi: 3.0.3
+info:
+  title: ''
+  version: 0.0.0
+paths:
+  /api/auth/bookmarks/:
+    get:
+      operationId: auth_bookmarks_list
+      description: |-
+        Lists the bookmarks for the authenticated user.
+
+        This view can optionally filter bookmarks by subject using a query
+        parameter.
+
+        **How to use:**
+        To get the list of saved bookmarks, the LLM should send a `GET` request to the following URL:
+        `GET /api/auth/bookmarks/`
+
+        To filter bookmarks by subject, the `subject` can be added as a query parameter:
+        `GET /api/auth/bookmarks/?subject={subject}`
+
+        **Example:**
+        If the user asks, "show me my bookmarks for the verbal ability section", the LLM should:
+        1. Send a `GET` request to `/api/auth/bookmarks/?subject=Verbal%20Ability`.
+        2. The API will return a JSON response like the following:
+           ```json
+           [
+             {
+               "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+               "user": "user@example.com",
+               "subject": "Verbal Ability",
+               "question_id": "some-question-id"
+             }
+           ]
+           ```
+
+        **Parameters:**
+        - `subject` (query parameter, optional): The subject to filter the bookmarks by.
+
+        **Responses:**
+        - `200 OK`: A JSON array of the user's bookmarks.
+        - `401 Unauthorized`: The user is not authenticated.
+
+        **Note to the LLM:** When the user wants to see their bookmarks, you must call this API endpoint.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Bookmark'
+          description: ''
+  /api/auth/bookmarks/create/:
+    post:
+      operationId: auth_bookmarks_create_create
+      description: |-
+        Handles the creation of a new bookmark.
+
+        This view allows an authenticated user to bookmark a question. The user
+        is automatically associated with the created bookmark.
+
+        **How to use:**
+        To create a bookmark, the LLM should send a `POST` request to the following URL with the bookmark's details in the request body:
+        `POST /api/auth/bookmarks/create/`
+
+        The request body must be a JSON object containing the `subject` and `question_id`.
+
+        **Example:**
+        If the user wants to bookmark a question with `question_id` "varc-1" in the "VARC" subject, the LLM should construct a JSON payload and send it to the API:
+        ```json
+        {
+          "subject": "VARC",
+          "question_id": "varc-1"
+        }
+        ```
+
+        **Parameters:**
+        - `subject` (string, required): The subject of the quiz the question belongs to.
+        - `question_id` (string, required): The ID of the question to be bookmarked.
+
+        **Responses:**
+        - `201 Created`: The bookmark was successfully created.
+        - `400 Bad Request`: The request was malformed (e.g., missing required fields).
+        - `401 Unauthorized`: The user is not authenticated.
+
+        **Note to the LLM:** When the user wants to create a bookmark, you must call this API endpoint.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Bookmark'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bookmark'
+          description: ''
+  /api/auth/bookmarks/delete/{question_id}/:
+    delete:
+      operationId: auth_bookmarks_delete_destroy
+      description: |-
+        Handles the deletion of a specific bookmark.
+
+        This view allows an authenticated user to remove one of their bookmarks,
+        identified by the question ID and subject.
+
+        **How to use:**
+        To delete a bookmark, the LLM must provide the `question_id` in the URL path and the `subject` as a query parameter. The `question_id` and `subject` can be obtained from the context of the current quiz or by listing the bookmarks.
+
+        The LLM should send a `DELETE` request to the following URL:
+        `DELETE /api/auth/bookmarks/delete/{question_id}/?subject={subject}`
+
+        **Example:**
+        If the user wants to delete a bookmark for a question with `question_id` "varc-1" in the "VARC" subject, the LLM should:
+        1. Send a `DELETE` request to `/api/auth/bookmarks/delete/varc-1/?subject=VARC`.
+
+        **Parameters:**
+        - `question_id` (path parameter, required): The ID of the question associated with the bookmark.
+        - `subject` (query parameter, required): The subject of the quiz the question belongs to.
+
+        **Responses:**
+        - `204 No Content`: The bookmark was successfully deleted.
+        - `401 Unauthorized`: The user is not authenticated.
+        - `404 Not Found`: The bookmark was not found.
+
+        **Note to the LLM:** When the user wants to delete a bookmark, you must call this API endpoint.
+      parameters:
+      - in: path
+        name: question_id
+        schema:
+          type: string
+        required: true
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/login/:
+    post:
+      operationId: auth_login_create
+      description: |-
+        Handles the login request.
+
+        Args:
+            request: The HttpRequest object, containing login credentials.
+
+        Returns:
+            A Response object with the auth token on success, or an error
+            message on failure.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/auth/logout/:
+    post:
+      operationId: auth_logout_create
+      description: |-
+        Handles the logout request.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response with a 204 No Content status on successful logout,
+            or an error if the user is not authenticated.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/auth/signup/:
+    post:
+      operationId: auth_signup_create
+      description: |-
+        Handles the registration of new users.
+
+        This view uses a `CreateAPIView` to simplify the creation of new User
+        instances. It expects the user's name, email, password, and exam type
+        in the request data.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: ''
+  /api/auth/study-heartbeat/:
+    post:
+      operationId: auth_study_heartbeat_create
+      description: Records a study heartbeat, updating the user's study duration for
+        the day.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StudyHeartbeat'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudyHeartbeat'
+          description: ''
+  /api/auth/study-summary/:
+    get:
+      operationId: auth_study_summary_retrieve
+      description: Provides a summary of the user's study hours.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/auth/user/:
+    get:
+      operationId: auth_user_retrieve
+      description: |-
+        Handles the GET request to fetch user details.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response containing the serialized user data.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: auth_user_update
+      description: |-
+        Handles the PUT request to update user details.
+
+        Args:
+            request: The HttpRequest object.
+
+        Returns:
+            A Response containing the updated user data.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/auth/words/:
+    get:
+      operationId: auth_words_list
+      description: |-
+        Lists the words for the authenticated user.
+
+        This endpoint retrieves all words that have been saved by the currently authenticated user. The LLM can use this endpoint to get the necessary information to perform other operations, such as deleting a word.
+
+        **How to use:**
+        To get the list of saved words, the LLM should send a `GET` request to the following URL:
+        `GET /api/auth/words/`
+
+        The response will be a JSON array of word objects, each containing the word, its meaning, the context in which it was saved, and its unique ID.
+
+        **Example:**
+        If the user asks, "what are my saved words?", the LLM should:
+        1. Send a `GET` request to `/api/auth/words/`.
+        2. The API will return a JSON response like the following:
+           ```json
+           [
+             {
+               "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+               "word": "ephemeral",
+               "meaning": "lasting for a very short time.",
+               "context": "The ephemeral beauty of the cherry blossoms is a reminder of the transient nature of life.",
+               "question_id": "some-question-id"
+             },
+             {
+               "id": "fedcba98-7654-3210-fedc-ba9876543210",
+               "word": "ubiquitous",
+               "meaning": "present, appearing, or found everywhere.",
+               "context": "In today's world, smartphones have become ubiquitous.",
+               "question_id": "another-question-id"
+             }
+           ]
+           ```
+
+        **Parameters:**
+        - None
+
+        **Responses:**
+        - `200 OK`: A JSON array of the user's saved words.
+        - `401 Unauthorized`: The user is not authenticated.
+
+        **Note to the LLM:** When the user wants to see their saved words, you must call this API endpoint.
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Word'
+          description: ''
+  /api/auth/words/{id}/delete/:
+    delete:
+      operationId: auth_words_delete_destroy
+      description: |-
+        Handles the deletion of a saved word.
+
+        This endpoint allows an authenticated user to delete one of their saved words using the word's unique ID.
+
+        **How to use:**
+        To use this endpoint, the Large Language Model (LLM) must first obtain the unique ID of the word to be deleted. This can be done by calling the `GET /api/auth/words/` endpoint to list all saved words and their IDs.
+
+        Once the ID is obtained, the LLM can construct a `DELETE` request to the following URL, including the word's ID in the path:
+        `DELETE /api/auth/words/{id}/delete/`
+
+        **Example:**
+        If the user says, "delete the word 'ephemeral'", the LLM should:
+        1. Call the `GET /api/auth/words/` endpoint to retrieve the list of saved words.
+        2. Find the word "ephemeral" in the list and extract its ID (e.g., `a69c14db-512f-40b9-856a-d61f71e5947e`).
+        3. Send a `DELETE` request to `/api/auth/words/a69c14db-512f-40b9-856a-d61f71e5947e/delete/`.
+
+        **Parameters:**
+        - `id` (path parameter): The unique identifier (UUID) of the word to be deleted.
+
+        **Responses:**
+        - `204 No Content`: The word was successfully deleted.
+        - `401 Unauthorized`: The user is not authenticated.
+        - `404 Not Found`: The word with the specified ID was not found.
+
+        **Note to the LLM:** When the user wants to delete a saved word, you must call this API endpoint.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        required: true
+      tags:
+      - auth
+      security:
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/auth/words/create/:
+    post:
+      operationId: auth_words_create_create
+      description: |-
+        Handles the creation of a new word.
+
+        This view allows an authenticated user to save a new word. The user
+        is automatically associated with the created word.
+
+        **How to use:**
+        To save a new word, the LLM should send a `POST` request to the following URL with the word's details in the request body:
+        `POST /api/auth/words/create/`
+
+        The request body must be a JSON object containing the `word`, `meaning`, `context`, and `question_id`.
+
+        **Example:**
+        If the user wants to save a new word, the LLM should construct a JSON payload and send it to the API.
+        For example, to save the word "prolific":
+        ```json
+        {
+          "word": "prolific",
+          "meaning": "producing a great number or amount of something.",
+          "context": "She was a prolific writer, with over 50 novels to her name.",
+          "question_id": "varc-1"
+        }
+        ```
+
+        **Parameters:**
+        - `word` (string, required): The word to be saved.
+        - `meaning` (string, required): The definition of the word.
+        - `context` (string, required): The context in which the word was found.
+        - `question_id` (string, required): The ID of the question where the word was found.
+
+        **Responses:**
+        - `201 Created`: The word was successfully saved.
+        - `400 Bad Request`: The request was malformed (e.g., missing required fields).
+        - `401 Unauthorized`: The user is not authenticated.
+
+        **Note to the LLM:** When the user wants to save a new word, you must call this API endpoint.
+      tags:
+      - auth
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Word'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Word'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Word'
+        required: true
+      security:
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Word'
+          description: ''
+  /api/chatbot/:
+    post:
+      operationId: chatbot_create
+      description: Handles the incoming POST request by calling the chatbot service.
+      tags:
+      - chatbot
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/reset-test-progress/:
+    post:
+      operationId: reset_test_progress_create
+      description: |-
+        Handles the POST request to reset user's test progress.
+
+        Args:
+            request (Request): The request object, containing user information.
+
+        Returns:
+            Response: A response indicating success or failure.
+      tags:
+      - reset-test-progress
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+  /api/schema/:
+    get:
+      operationId: schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - ckb
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - ug
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - schema
+      security:
+      - tokenAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+  /api/user-quiz-state/:
+    get:
+      operationId: user_quiz_state_retrieve
+      description: Retrieves the last question index for a given test, or all quiz
+        states for the user.
+      tags:
+      - user-quiz-state
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: user_quiz_state_create
+      description: Updates the last question index for a given test.
+      tags:
+      - user-quiz-state
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          description: No response body
+components:
+  schemas:
+    Bookmark:
+      type: object
+      description: |-
+        Serializer for the Bookmark model.
+
+        This serializer handles the conversion of Bookmark instances to JSON.
+        The 'user' field is read-only and displays the user's email for
+        context.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        user:
+          type: string
+          format: email
+          readOnly: true
+        subject:
+          type: string
+          maxLength: 255
+        question_id:
+          type: string
+          maxLength: 255
+      required:
+      - id
+      - question_id
+      - subject
+      - user
+    StudyHeartbeat:
+      type: object
+      description: |-
+        Serializer for the study heartbeat request.
+
+        Validates the duration sent by the frontend.
+      properties:
+        duration:
+          type: integer
+          maximum: 60
+          minimum: 1
+      required:
+      - duration
+    User:
+      type: object
+      description: |-
+        Serializer for the User model, used for registration.
+
+        This serializer handles the conversion of User model instances to JSON
+        and validates incoming data for creating new users. The password is
+        write-only to ensure it is not exposed in API responses.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+          maxLength: 255
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          writeOnly: true
+        exam_type:
+          type: string
+          maxLength: 50
+        settings: {}
+      required:
+      - email
+      - exam_type
+      - id
+      - name
+      - password
+    Word:
+      type: object
+      description: |-
+        Serializer for the Word model.
+
+        This serializer handles the conversion of Word instances to JSON.
+        The 'user' field is read-only and displays the user's email for
+        context.
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        user:
+          type: string
+          format: email
+          readOnly: true
+        word:
+          type: string
+          maxLength: 255
+        meaning:
+          type: string
+        context:
+          type: string
+        question_id:
+          type: string
+          maxLength: 255
+      required:
+      - context
+      - id
+      - meaning
+      - question_id
+      - user
+      - word
+  securitySchemes:
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Token-based authentication with required prefix "Token"

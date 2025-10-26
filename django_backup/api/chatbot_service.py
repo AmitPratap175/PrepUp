@@ -13,7 +13,7 @@ async def _invoke_agent_async(session_id: str, message: str, token: str = None):
 
         config = {"configurable": {"thread_id": session_id, "token": token}}
         messages = [HumanMessage(content=message)]
-        
+
         final_state = await app.ainvoke({"messages": messages}, config=config)
 
         if final_state and 'messages' in final_state and final_state['messages']:
@@ -24,5 +24,4 @@ async def _invoke_agent_async(session_id: str, message: str, token: str = None):
 
 def invoke_agent(session_id: str, message: str, token: str = None) -> str:
     """Invokes the LangGraph agent with the user's message and returns the response."""
-    # Use asyncio.run() to execute the async function
     return asyncio.run(_invoke_agent_async(session_id, message, token))
