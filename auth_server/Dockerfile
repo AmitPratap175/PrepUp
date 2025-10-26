@@ -9,8 +9,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 # Set the working directory
 WORKDIR /app
 
-# Install system dependencies needed for nc
-# Install system dependencies for building libraries
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     g++ \
@@ -18,18 +17,17 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy dependency definitions
-COPY uv.lock pyproject.toml README.md /app/
+COPY auth_server/requirements.txt /app/auth_server/requirements.txt
 
-# Install dependencies
-RUN uv sync --frozen --no-cache
+# Create a virtual environment and install dependencies
+RUN uv venv && \
+    uv pip install --no-cache-dir -r /app/auth_server/requirements.txt
 
 # Copy the application code
-COPY auth_server/ .
-
+COPY auth_server/ /app/auth_server/
 
 # Expose the port the app runs on
 EXPOSE 8000
 
 # Command to run the application
-# The python executable from the virtual environment will be used thanks to the PATH update
-CMD ["/app/.venv/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["uvicorn", "auth_server.main:app", "--host", "0.0.0.0", "--port", "8000"]

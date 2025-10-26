@@ -174,26 +174,6 @@ paths:
       responses:
         '200':
           description: No response body
-  /api/auth/logout/:
-    post:
-      operationId: auth_logout_create
-      description: |-
-        Handles the logout request.
-
-        Args:
-            request: The HttpRequest object.
-
-        Returns:
-            A Response with a 204 No Content status on successful logout,
-            or an error if the user is not authenticated.
-      tags:
-      - auth
-      security:
-      - tokenAuth: []
-      - {}
-      responses:
-        '200':
-          description: No response body
   /api/auth/signup/:
     post:
       operationId: auth_signup_create
@@ -359,7 +339,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Word'
           description: ''
-  /api/auth/words/{id}/delete/:
+  /api/auth/words/{word_id}/delete/:
     delete:
       operationId: auth_words_delete_destroy
       description: |-
@@ -371,7 +351,7 @@ paths:
         To use this endpoint, the Large Language Model (LLM) must first obtain the unique ID of the word to be deleted. This can be done by calling the `GET /api/auth/words/` endpoint to list all saved words and their IDs.
 
         Once the ID is obtained, the LLM can construct a `DELETE` request to the following URL, including the word's ID in the path:
-        `DELETE /api/auth/words/{id}/delete/`
+        `DELETE /api/auth/words/{word_id}/delete/`
 
         **Example:**
         If the user says, "delete the word 'ephemeral'", the LLM should:
@@ -380,7 +360,7 @@ paths:
         3. Send a `DELETE` request to `/api/auth/words/a69c14db-512f-40b9-856a-d61f71e5947e/delete/`.
 
         **Parameters:**
-        - `id` (path parameter): The unique identifier (UUID) of the word to be deleted.
+        - `word_id` (path parameter): The unique identifier (UUID) of the word to be deleted.
 
         **Responses:**
         - `204 No Content`: The word was successfully deleted.
@@ -390,7 +370,7 @@ paths:
         **Note to the LLM:** When the user wants to delete a saved word, you must call this API endpoint.
       parameters:
       - in: path
-        name: id
+        name: word_id
         schema:
           type: string
           format: uuid
@@ -470,24 +450,6 @@ paths:
       description: Handles the incoming POST request by calling the chatbot service.
       tags:
       - chatbot
-      security:
-      - tokenAuth: []
-      responses:
-        '200':
-          description: No response body
-  /api/reset-test-progress/:
-    post:
-      operationId: reset_test_progress_create
-      description: |-
-        Handles the POST request to reset user's test progress.
-
-        Args:
-            request (Request): The request object, containing user information.
-
-        Returns:
-            Response: A response indicating success or failure.
-      tags:
-      - reset-test-progress
       security:
       - tokenAuth: []
       responses:
@@ -638,28 +600,6 @@ paths:
                 type: object
                 additionalProperties: {}
           description: ''
-  /api/user-quiz-state/:
-    get:
-      operationId: user_quiz_state_retrieve
-      description: Retrieves the last question index for a given test, or all quiz
-        states for the user.
-      tags:
-      - user-quiz-state
-      security:
-      - tokenAuth: []
-      responses:
-        '200':
-          description: No response body
-    post:
-      operationId: user_quiz_state_create
-      description: Updates the last question index for a given test.
-      tags:
-      - user-quiz-state
-      security:
-      - tokenAuth: []
-      responses:
-        '200':
-          description: No response body
 components:
   schemas:
     Bookmark:

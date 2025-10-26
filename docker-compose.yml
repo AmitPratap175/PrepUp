@@ -19,14 +19,12 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./auth_server/data/cat:/app/data/cat:z
+      - ./auth_server/data:/app/auth_server/data:z
     env_file:
-      - ./auth_server/.env
+      - ./auth_server/api/chatbot/.env
     environment:
-      - DB_HOST=postgres
-      - DB_NAME=auth_db
-      - DB_USER=user
-      - DB_PASS=password
+      - DATABASE_URL=postgresql://user:password@postgres/auth_db
+      - PYTHONPATH=/app
     depends_on:
       - postgres
     command: >
@@ -36,8 +34,8 @@ services:
           sleep 0.1;
         done;
         echo 'PostgreSQL started';
-        python manage.py migrate &&
-        python manage.py runserver 0.0.0.0:8000
+        alembic -c /app/auth_server/alembic.ini upgrade head &&
+        uvicorn auth_server.main:app --host 0.0.0.0 --port 8000
       "
 
   frontend:
