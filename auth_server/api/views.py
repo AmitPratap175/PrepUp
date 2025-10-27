@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from .storage import storage
 import json
+import os
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 import uuid
@@ -344,6 +345,45 @@ def add_question_view(request):
             return JsonResponse({"error": "Invalid JSON"}, status=400)
     else:
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
+
+
+def current_affairs_articles(request):
+    """
+    Retrieves a list of current affairs articles.
+
+    Args:
+        request: The HttpRequest object.
+
+    Returns:
+        A JsonResponse containing a list of article filenames.
+    """
+    articles_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'current_affairs')
+    try:
+        articles = [f for f in os.listdir(articles_dir) if f.endswith('.md')]
+        return JsonResponse(articles, safe=False)
+    except FileNotFoundError:
+        return JsonResponse({"error": "Current affairs directory not found"}, status=404)
+
+
+def current_affairs_article_detail(request, article_filename):
+    """
+    Retrieves the content of a specific current affairs article.
+
+    Args:
+        request: The HttpRequest object.
+        article_filename: The filename of the article to retrieve.
+
+    Returns:
+        A JsonResponse containing the article content.
+    """
+    articles_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'current_affairs')
+    article_path = os.path.join(articles_dir, article_filename)
+    try:
+        with open(article_path, 'r') as f:
+            content = f.read()
+        return JsonResponse({"content": content})
+    except FileNotFoundError:
+        return JsonResponse({"error": "Article not found"}, status=404)
 
 
 from rest_framework.views import APIView

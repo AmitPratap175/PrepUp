@@ -11,6 +11,8 @@ from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateVie
 
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
+    path('current-affairs/', views.current_affairs_articles, name='current_affairs_articles'),
+    path('current-affairs/<str:article_filename>/', views.current_affairs_article_detail, name='current_affairs_article_detail'),
     path('courses/', views.courses, name='courses'),
     path('courses/<str:course_id>/', views.course_detail, name='course_detail'),
     path('study-materials/', views.study_materials, name='study_materials'),
