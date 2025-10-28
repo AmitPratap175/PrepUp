@@ -4,6 +4,8 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 import uuid
+from django.conf import settings
+from rest_framework_simplejwt.tokens import RefreshToken
 
 def subjects(request):
     """
@@ -346,12 +348,44 @@ def add_question_view(request):
         return JsonResponse({"error": "Only POST method is allowed"}, status=405)
 
 
+@csrf_exempt
+def admin_login(request):
+    """
+    Handles admin login.
+    """
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            username = data.get('username')
+            password = data.get('password')
+
+            if username == settings.ADMIN_USERNAME and password == settings.ADMIN_PASSWORD:
+                # Create a dummy user for the purpose of generating a token
+                from django.contrib.auth.models import User
+                admin_user, created = User.objects.get_or_create(username='admin')
+                if not admin_user.is_staff:
+                    admin_user.is_staff = True
+                    admin_user.save()
+
+                refresh = RefreshToken.for_user(admin_user)
+                return JsonResponse({
+                    'refresh': str(refresh),
+                    'access': str(refresh.access_token),
+                })
+            else:
+                return JsonResponse({"error": "Invalid credentials"}, status=401)
+        except json.JSONDecodeError:
+            return JsonResponse({"error": "Invalid JSON"}, status=400)
+    else:
+        return JsonResponse({"error": "Only POST method is allowed"}, status=405)
+
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from .chatbot_service import invoke_agent
 from rest_framework import status
-from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
+from .models import SuggestedEdit, TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
 from datetime import datetime, timezone
 from .storage import storage
 
@@ -463,6 +497,93 @@ class ResetTestProgressView(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class AdminSuggestedEditsView(APIView):
+    """
+    Handles fetching and moderation of suggested edits for admins.
+    """
+    permission_classes = [IsAdminUser]
+
+    def get(self, request):
+        """
+        Retrieves a list of pending suggested edits.
+        """
+        suggestions = SuggestedEdit.objects.filter(status='pending')
+        data = []
+        for suggestion in suggestions:
+            original_question = storage.get_question(suggestion.subject, suggestion.question_id)
+            data.append({
+                'id': str(suggestion.id),
+                'user': suggestion.user.email,
+                'question_id': suggestion.question_id,
+                'subject': suggestion.subject,
+                'suggested_question_text': suggestion.suggested_question_text,
+                'suggested_options': suggestion.suggested_options,
+                'suggested_solution': suggestion.suggested_solution,
+                'comment': suggestion.comment,
+                'created_at': suggestion.created_at,
+                'original_question_text': original_question.get('question') if original_question else '',
+                'original_options': original_question.get('options') if original_question else [],
+                'original_solution': original_question.get('solution') if original_question else '',
+            })
+        return Response(data)
+
+    def post(self, request, suggestion_id):
+        """
+        Approves or rejects a suggested edit.
+        """
+        try:
+            suggestion = SuggestedEdit.objects.get(id=suggestion_id)
+            if 'approve' in request.path:
+                # Logic to approve the suggestion and update the question
+                storage.update_question(
+                    suggestion.subject,
+                    suggestion.question_id,
+                    suggestion.suggested_question_text,
+                    suggestion.suggested_options,
+                    suggestion.suggested_solution
+                )
+                suggestion.status = 'approved'
+                suggestion.reviewed_by = request.user
+                suggestion.reviewed_at = datetime.now(timezone.utc)
+                suggestion.save()
+                return Response({'message': 'Suggestion approved successfully'})
+            elif 'reject' in request.path:
+                suggestion.status = 'rejected'
+                suggestion.reviewed_by = request.user
+                suggestion.reviewed_at = datetime.now(timezone.utc)
+                suggestion.save()
+                return Response({'message': 'Suggestion rejected successfully'})
+            else:
+                return Response({'error': 'Invalid action'}, status=status.HTTP_400_BAD_REQUEST)
+        except SuggestedEdit.DoesNotExist:
+            return Response({'error': 'Suggestion not found'}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class SuggestEditView(APIView):
+    """
+    Handles the submission of a suggested edit for a question.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, question_id):
+        try:
+            suggested_edit = SuggestedEdit.objects.create(
+                user=request.user,
+                question_id=question_id,
+                subject=request.data.get('subject'),
+                suggested_question_text=request.data.get('suggested_question_text'),
+                suggested_options=request.data.get('suggested_options'),
+                suggested_solution=request.data.get('suggested_solution'),
+                comment=request.data.get('comment'),
+                status='pending'
+            )
+            return Response({"message": "Suggestion submitted successfully"}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 class TestSessionView(APIView):

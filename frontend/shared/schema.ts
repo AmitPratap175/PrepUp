@@ -170,3 +170,20 @@ export interface Bookmark {
   subject: string;
   question_id: string;
 }
+
+export interface SuggestedEdit {
+  id: string;
+  user: {
+    email: string;
+  };
+  question_id: string;
+  subject: string;
+  suggested_question_text: string;
+  suggested_options: QuestionOption[];
+  suggested_solution: string;
+  comment: string;
+  created_at: string;
+  original_question_text: string;
+  original_options: QuestionOption[];
+  original_solution: string;
+}

@@ -37,6 +37,8 @@ import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
+import { AdminLoginPage } from "./pages/AdminLogin";
+import { AdminDashboardPage } from "./pages/AdminDashboard";
 
 /**
  * Defines the main routing configuration for the application.
@@ -79,6 +81,8 @@ function Router() {
       <Route path="/signup" component={SignupPage} />
       <Route path="/add-question" component={AddQuestionPage} />
       <Route path="/settings" component={SettingsPage} />
+      <Route path="/admin/login" component={AdminLoginPage} />
+      <Route path="/admin" component={AdminDashboardPage} />
       <Route component={NotFound} />
     </Switch>
   );

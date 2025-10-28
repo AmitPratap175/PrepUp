@@ -666,4 +666,59 @@ class MemStorage:
             print(f"Failed to add question to {file_path}: {e}")
             return False
 
+    def update_question(self, subject: str, question_id: str, question_text: str, options: List[Dict], solution: str) -> bool:
+        """
+        Updates an existing question in the appropriate JSON file.
+        """
+        # This is a simplified implementation. A more robust solution would be needed for a real application.
+        file_path = os.path.join(self.base_dir, '..', f"data/cat/{subject.lower().replace(' ', '-')}.json")
+        if not os.path.exists(file_path):
+            return False
+
+        try:
+            with open(file_path, 'r+') as f:
+                data = json.load(f)
+                questions = data.get("questions", [])
+
+                for i, q in enumerate(questions):
+                    if q.get('qid') == question_id:
+                        questions[i]['question'] = question_text
+                        questions[i]['options'] = options
+                        questions[i]['solution'] = solution
+                        break
+
+                data["questions"] = questions
+                f.seek(0)
+                json.dump(data, f, indent=2)
+                f.truncate()
+
+            # Reload the practice tests to reflect the new question
+            self.practice_tests = {}
+            self.seed_data()
+
+            return True
+        except (IOError, json.JSONDecodeError) as e:
+            print(f"Failed to update question in {file_path}: {e}")
+            return False
+
+    def get_question(self, subject: str, question_id: str) -> Optional[Dict]:
+        """
+        Retrieves a single question by its ID from the appropriate JSON file.
+        """
+        file_path = os.path.join(self.base_dir, '..', f"data/cat/{subject.lower().replace(' ', '-')}.json")
+        if not os.path.exists(file_path):
+            return None
+
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                questions = data.get("questions", [])
+                for q in questions:
+                    if q.get('qid') == question_id:
+                        return q
+            return None
+        except (IOError, json.JSONDecodeError) as e:
+            print(f"Failed to get question from {file_path}: {e}")
+            return None
+
 storage = MemStorage()

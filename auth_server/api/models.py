@@ -65,3 +65,24 @@ class UserQuizProgress(models.Model):
 
     def __str__(self):
         return f'{self.user.email} - {self.subject} - {self.date} - Attempted: {self.questions_attempted}'
+
+
+class SuggestedEdit(models.Model):
+    """
+    Stores user-suggested edits for questions.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    question_id = models.CharField(max_length=255)
+    subject = models.CharField(max_length=255)
+    suggested_question_text = models.TextField(blank=True, null=True)
+    suggested_options = models.JSONField(blank=True, null=True)
+    suggested_solution = models.TextField(blank=True, null=True)
+    comment = models.TextField(blank=True, null=True)
+    status = models.CharField(max_length=20, default='pending') # pending, approved, rejected
+    created_at = models.DateTimeField(auto_now_add=True)
+    reviewed_at = models.DateTimeField(null=True, blank=True)
+    reviewed_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='reviewed_edits')
+
+    def __str__(self):
+        return f'Suggestion {self.id} by {self.user.email} for question {self.question_id}'

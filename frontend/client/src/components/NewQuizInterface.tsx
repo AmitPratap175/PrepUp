@@ -7,10 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon, X, Loader2 } from "lucide-react";
+import { PanelLeftClose, PanelRightClose, Bookmark, Calculator as CalculatorIcon, X, Loader2, Pencil } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 import { Calculator } from "./ui/calculator";
+import { EditQuestionModal } from "./EditQuestionModal";
 
 /**
  * @interface QuizInterfaceProps
@@ -45,6 +46,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [answers, setAnswers] = useState<{[key: string]: string}>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
@@ -542,6 +544,9 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
               <Button variant="ghost" size="icon" onClick={() => setIsChatbotOpen(true)}>
                 <MessageSquare className="h-5 w-5 text-muted-foreground" />
               </Button>
+              <Button variant="ghost" size="icon" onClick={() => setIsEditModalOpen(true)}>
+                <Pencil className="h-5 w-5 text-red-500" />
+              </Button>
             </div>
             <span className="text-sm text-muted-foreground">
               {currentQuestion?.options.length > 0 ? "Multiple Choice Question" : "Text Input Question"}
@@ -686,6 +691,11 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           </div>
         </div>
       </div>
+      <EditQuestionModal
+        isOpen={isEditModalOpen}
+        onClose={() => setIsEditModalOpen(false)}
+        question={currentQuestion}
+      />
     </div>
   );
 }

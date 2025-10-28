@@ -33,4 +33,9 @@ urlpatterns = [
     path('user-quiz-goals/', views.UserQuizGoalView.as_view(), name='user-quiz-goals'),
     path('test-sessions/', views.TestSessionView.as_view(), name='test-sessions'),
     path('test-sessions/<uuid:session_id>/', views.TestSessionDetailView.as_view(), name='test-session-detail'),
+    path('questions/<str:question_id>/suggest-edit/', views.SuggestEditView.as_view(), name='suggest_edit'),
+    path('admin/login/', views.admin_login, name='admin_login'),
+    path('admin/suggested-edits/', views.AdminSuggestedEditsView.as_view(), name='admin_suggested_edits'),
+    path('admin/suggested-edits/<uuid:suggestion_id>/approve/', views.AdminSuggestedEditsView.as_view(), name='admin_approve_suggestion'),
+    path('admin/suggested-edits/<uuid:suggestion_id>/reject/', views.AdminSuggestedEditsView.as_view(), name='admin_reject_suggestion'),
 ]
