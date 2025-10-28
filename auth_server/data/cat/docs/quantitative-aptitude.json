@@ -34300,6 +34300,162 @@
       "solution_text": "Sum of roots = (3-A)/A = 2\n\n=> 3 - A = 2A => 3A = 3\n\n=> A = 1",
       "image_url": "",
       "full_markdown": "### Question (qid: 2973)\n\n**Passage:**\nFor what value of A is the sum of the roots of the equation A x 2 + ( A − 3 ) x − 5 = 0 Ax^{2} + (A-3) x -5 = 0 A x 2 + ( A − 3 ) x − 5 = 0 equal to 2?\n\n1\n\n-1\n\n5\n\n0\n\nNone of these\n\nFor what value of A is the sum of the roots of the equation $Ax^{2} + (A-3) x -5 = 0$ equal to 2?\n\n**Options:**\n- **A**. 1\n- **B**. -1\n- **C**. 5\n- **D**. 0\n- **E**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1029",
+      "passage_text": "",
+      "question_text": "A train crossed a 300m long platform in 20 seconds whereas it took only 12 seconds to cross an electric pole. Find out the speed of the train.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "75 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "90 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "105 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "120 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "135 km/hr",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "E",
+      "solution_text": "Let ‘l’ be the length of the train. We can say that the train covered ‘l’ m in 12 seconds whereas it covered ‘l+300’ meters in 20 seconds.\nTherefore, the train covered 300 meters in 8 seconds.\nHence, the speed of the train = $\\dfrac{300}{8}*\\dfrac{18}{5}$ = 135 km/hr\nTherefore, option E is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 164076)\n\n**Passage:**\nA train crossed a 300m long platform in 20 seconds whereas it took only 12 seconds to cross an electric pole. Find out the speed of the train.\n\n75 km/hr\n\n90 km/hr\n\n105 km/hr\n\n120 km/hr\n\n135 km/hr\n\nA train crossed a 300m long platform in 20 seconds whereas it took only 12 seconds to cross an electric pole. Find out the speed of the train.\n\n**Options:**\n- **A**. 75 km/hr\n- **B**. 90 km/hr\n- **C**. 105 km/hr\n- **D**. 120 km/hr\n- **E**. 135 km/hr\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1030",
+      "passage_text": "",
+      "question_text": "Aman can do a piece of work in 120 days. Birla, Chandu, Devesh, Esha, and Fawad can do the same piece of work in 30, 60, 20, 24 and 40 days respectively. They divide themselves in such a way that one group consists of 2 people and other group consists of 4 people, where the group of 4 people is twice as efficient as the group of 2 people. Out of all the cases satisfying above conditions, what is the probability that Aman and Fawad end up in the same group?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{1}{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{1}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{1}{6}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Aman can do the given work in 120 days.\nBirla can do the given work in 30 days.\nChandu can do the given work in 60 days.\nDevesh can do the given work in 20 days.\nEsha can do the given work in 24 days.\nFawad can do the given work in 40 days.\nLet the total units of work be 120.\nThus, \nAman completes 1 unit of work in a day.\nBirla completes 4 unit of work in a day.\nChandu completes 2 unit of work in a day.\nDevesh completes 6 unit of work in a day.\nEsha completes 5 unit of work in a day.\nFawad completes 3 unit of work in a day.\nTotal units of work done in a day = 21.\nIf they want to divide themselves in such a way that one group consists of 2 people and other group consists of 4 people where the group of 4 people is twice as efficient as the group of 2 people, then 1 group must contain 2 people completing 7 units of work and the other group must contain 4 people completing 14 units of work.\nOnly the following pairs can complete 7 units of work in a day:-\n1.Aman and Devesh\n2.Chandu and Esha\n3.Birla and Fawad\nAny of these pairs can form a group of 2 and the rest will form the group of 4. There are 3 such cases.\nThe only case where Aman and Fawad will end up in a group is when Chandu and Esha form a group of 2.\nThus, the required probability = $\\dfrac{1}{3}$.\nHence, option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176653)\n\n**Passage:**\nAman can do a piece of work in 120 days. Birla, Chandu, Devesh, Esha, and Fawad can do the same piece of work in 30, 60, 20, 24 and 40 days respectively. They divide themselves in such a way that one group consists of 2 people and other group consists of 4 people, where the group of 4 people is twice as efficient as the group of 2 people. Out of all the cases satisfying above conditions, what is the probability that Aman and Fawad end up in the same group?\n\n1 3 \\dfrac{1}{3} 3 1 ​\n\n2 3 \\dfrac{2}{3} 3 2 ​\n\n1 4 \\dfrac{1}{4} 4 1 ​\n\n1 6 \\dfrac{1}{6} 6 1 ​\n\nAman can do a piece of work in 120 days. Birla, Chandu, Devesh, Esha, and Fawad can do the same piece of work in 30, 60, 20, 24 and 40 days respectively. They divide themselves in such a way that one group consists of 2 people and other group consists of 4 people, where the group of 4 people is twice as efficient as the group of 2 people. Out of all the cases satisfying above conditions, what is the probability that Aman and Fawad end up in the same group?\n\n**Options:**\n- **A**. $\\dfrac{1}{3}$\n- **B**. $\\dfrac{2}{3}$\n- **C**. $\\dfrac{1}{4}$\n- **D**. $\\dfrac{1}{6}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1031",
+      "passage_text": "",
+      "question_text": "Amit started to walk a from point P in a park. He walked 4 km in north direction thereafter he took a right turn and walked another 5 km. After resting at this point, he took a right turn again and started running at 4 km/hr for 2 hours. After that, he took the final right turn and walked for another 8 km. At this point, he is feeling very exhausted and hence can walk at 2 km/hr. What is the minimum time that Amit will take to reach point P?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1.5 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2.5 hours",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "We can draw a diagram in accordance with the distance covered by Amit. \n\nHere we can see that Amit can reach point P from D in shortest time if he takes route PD. We have to find out the length PD. On drawing a perpendicular form point P to DC.\n\nWe can see that PT = 8 - 4 = 4 km and DT = 8 - 5 = 3 km.\n\nIn right angle triangle PTD,\n\n$PD^2 = PT^2 + DT^2$  \n\n$\\Rightarrow$ PD = $\\sqrt{3^2+4^2}$ = 5 km. Amit can cover this distance at 2 km/hr. Therefore, we can say that he can reach to point P in 2.5 hours.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177672)\n\n**Passage:**\nAmit started to walk a from point P in a park. He walked 4 km in north direction thereafter he took a right turn and walked another 5 km. After resting at this point, he took a right turn again and started running at 4 km/hr for 2 hours. After that, he took the final right turn and walked for another 8 km. At this point, he is feeling very exhausted and hence can walk at 2 km/hr. What is the minimum time that Amit will take to reach point P?\n\n1.5 hours\n\n2 hours\n\n3 hours\n\n2.5 hours\n\nAmit started to walk a from point P in a park. He walked 4 km in north direction thereafter he took a right turn and walked another 5 km. After resting at this point, he took a right turn again and started running at 4 km/hr for 2 hours. After that, he took the final right turn and walked for another 8 km. At this point, he is feeling very exhausted and hence can walk at 2 km/hr. What is the minimum time that Amit will take to reach point P?\n\n**Options:**\n- **A**. 1.5 hours\n- **B**. 2 hours\n- **C**. 3 hours\n- **D**. 2.5 hours\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1032",
+      "passage_text": "",
+      "question_text": "3 friends Amar, Bikram, and Charan can complete a piece of work in 12, 15, and 9 days respectively. If Amar works on day 1, Amar and Charan work on day 2, Bikram works on day 3, and the cycle repeats, then the number of days in which the work will be completed is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9 days",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12 days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the total amount of work to be done be 180 units. \n=> Amar can do 180/12 = 15 units of work in a day.\nBikram can complete 180/15 = 12 units of work in a day\nCharan can complete 180/9 = 20 units of work in a day.\n\nOn the first day, only Amar works. On the second day. both Amar and Charan work. On the third day, Bikram works. \nTherefore, in a cycle of 3 days,  15+15+20+12=62 units of work will get completed. \nIn 2 cycles, 124 units of work will be completed. \n180-124 = 56 units of work will be remaining after the second cycle (i.e 6 days).\nAmar will complete 15 units of work on the seventh day. Amar and Charan will complete 15+20 = 35 units of work on the eighth day. \nTherefore, by the end of 8 days, 124+15+15+20 = 174 units of work will be completed. \nBikram will complete the remaining 6 units of work on the ninth day. \n\nTherefore, option A is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177913)\n\n**Passage:**\n3 friends Amar, Bikram, and Charan can complete a piece of work in 12, 15, and 9 days respectively. If Amar works on day 1, Amar and Charan work on day 2, Bikram works on day 3, and the cycle repeats, then the number of days in which the work will be completed is\n\n9 days\n\n11 days\n\n10 days\n\n12 days\n\n3 friends Amar, Bikram, and Charan can complete a piece of work in 12, 15, and 9 days respectively. If Amar works on day 1, Amar and Charan work on day 2, Bikram works on day 3, and the cycle repeats, then the number of days in which the work will be completed is\n\n**Options:**\n- **A**. 9 days\n- **B**. 11 days\n- **C**. 10 days\n- **D**. 12 days\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1033",
+      "passage_text": "2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains? (Enter 0 if the answer cannot be determined)",
+      "question_text": "2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains?\n(Enter 0 if the answer cannot be determined)",
+      "options": [],
+      "correct_option_data": "240",
+      "solution_text": "We know that the 2 trains travel with the same speed. \nLet the length of the tunnel be T m. \nLet the length of the shorter train be 'x' and the length of the longer train be 'y'.\n\nThe 2 trains cross each other completely in 2 minutes (120 seconds) if they are travelling on opposite tracks.\nWhen 2 trains travel in the opposite directions, the total distance that should be traveled by the 2 trains to cross each other completely will be equal to the sum of the length of the trains. \n\nWe know that both the trains travel at 10 m/s. Since the trains are moving in the opposite directions, the relative velocity is 10+10 = 20 m/s. \n\nSum of the lengths of the trains, x+y = 120*20 \n=> x+y = 2400 m\ny = 2400-x\n\nIt has been given that the longer train takes twice as long as the shorter train to cross the tunnel.\nDistance traveled by a train to completely cross a tunnel = Length of the train + length of the tunnel.\n\n2*(T+x)/10 = (T+2400-x)/10\n\n2T+2x = T-x+2400\nT+3x = 2400 m\n\nWe have to find out the time taken by a train thrice as longer as the shorter train to cross the tunnel at the same speed as these 2 trains. Therefore, we have to find the time taken by a train of length 3x to cross the tunnel at 10 m/s.\n\nA train of length 3x will have to cover a distance of T+3x to cross the tunnel completely. \nWe know that T+3x = 2400 m\n=> Time taken to cross the tunnel = 2400/10 = 240 seconds. \n\nTherefore, 240 is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 182040)\n\n**Passage:**\n2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains? (Enter 0 if the answer cannot be determined)\n\n2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains?\n(Enter 0 if the answer cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
