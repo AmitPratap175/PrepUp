@@ -12996,30 +12996,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4",
-          "is_correct": false
+          "option_text": "Prem",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1",
+          "option_text": "Qureshi",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "2",
-          "is_correct": true
+          "option_text": "Savithri",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "3",
+          "option_text": "Tanvir",
           "is_correct": false
         }
       ],
-      "correct_option_data": "C",
-      "solution_text": "From the table we can say that number of students who opted for E2 after reshuffle = 5 + 34 + 6 + 3 + 5 + 7 + 16 = 76. \n\nIt is given us that the number of students in E2 increased by 30 after the change process. Hence, we can say that the number of students who were enrolled in E2 before reshuffle = 76 - 30 = 46. \n\nIt is given that before the change process there were 10 more students in E2 than in E3. Therefore, the number of students who were enrolled in E3 before reshuffle = 46 - 10 = 36. \n\nNumber of students who moved from E1 to all other electives are known. Therefore, the number of students who were enrolled in E1 before reshuffle =  9 + 5 + 10 + 1 + 4 + 2 = 31. \n\nIt is given that before the change process there were 6 more students in E1 than in E4. Therefore, the number of students who were enrolled in E4 before reshuffle = 31 - 6 = 25. \n\nAlso, it is given that E4 had 2 more students than E6 before reshuffle. Therefore, the number of students who were enrolled in E6 before reshuffle =  25 - 2 = 23. \n\nAll the students from E7 moved to one of electives among E1 to E6. \nTherefore, the number of students who were enrolled in E7 before reshuffle = 4 + 16 + 30 + 5 + 5 + 41 = 101. \n\nExcept E5 we know the number of students who were enrolled in all electives. We also know that there were total 300 students who opted for exactly 1 elective. \n\nHence, the the number of students who were enrolled in E7 before reshuffle = 300 - (46+36+31+25+23+101) = 38. \n\nFor each elective, the number of students who were enrolled before reshuffle will be same as sum of the number of students who moved from that elective to another elective including no movement cases. \n\nFor elective E2,\n\nNumber of students who moved to E1 + 34 + 8 + Number of students who moved to E4 + 2 + 2 = 46 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 0\n\nFor elective E4,\n\nNumber of students who moved to E1 + 3 + 2 + 14 + Number of students who moved to E5 + 4 = 25 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E5 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nFor elective E6,\n\nNumber of students who moved to E1 + 7 + 3 + Number of students who moved to E4 + 2 + 9 = 23\n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nIt is given that after the reshuffle, the number of students in E4 was 3 more than that in E1.\nAs of now the number of students enrolled in E4 after reshuffle = 1 + 0 + E3 to E4 + 14 +  E5 to E4 + 1 + 5 = 21 + {E3 to E4} + {E5 to E4}\n\nAlso, the number of students enrolled in E1 after reshuffle = 9 + 0 + 2 + 1 + E5 to E1 + 1 + 4  = 17 + E5 to E1. \n\nHence, it is possible only when  E5 to E1 = 1 and E3 to E4 = E5 to E4 = 0. \n\nRemaining blank places can be filled easily as we know the total sum of each row. \n\nTherefore, the number of students who moved from E3 to E5 = the number of students who moved from E5 to E3 = the number of students who moved from E5 to E6 = 1.\n\nFrom the table we can see that the number of students who enrolled for E1 and E4 decreased from 31 and 25 to 18 and 21 respectively. \n\nTherefore, option C is the correct answer.",
+      "correct_option_data": "A",
+      "solution_text": "Using B and I, we can say that Rathod wore a red shirt and participated in Marathon.\nUsing H, we can say that Prem participated in Badminton.\nUsing C, we can say that Tanvir has to participate in either Swimming or Hurdles. But, through D, we know that Tanvir does not participate in Swimming => Tanvir participates in Hurdles and secured 3rd position.\nUsing D, we can say that Qureshi participates in Swimming => Savithri participated in Shotput, secured 5th position and wore pink shirt.\nFrom A, we can say that Prem secured 1st position in Badminton.\nUsing D, we can say that Qureshi secured 2nd position in Swimming => Rathod secured 4th position in Marathon and wore a red shirt.\nUsing E, we can say that Prem wore a blue shirt.\nUsing F, we can say that Qureshi wore a green shirt and Tanvir wore a violet shirt.",
       "image_url": "",
       "full_markdown": "### Question (qid: 32172)\n\n**Passage:**\nFive athletes - Prem, Qureshi, Rathod, Savithri and Tanvir - participate in five different sports - Swimming, Hurdles, Shotput, Marathon and Badminton - not necessarily in the same order. Each athlete secured a unique position among 1st, 2nd, 3rd, 4th and fifth. Each athlete is wearing a shirt of different colour among Pink, Blue, Red, Green and Violet. Further:\n\nA) Neither Qureshi nor Rathod secured 1st position. B) The red coloured shirt athlete participated in Marathon. C) Tanvir secured 3rd position and it is in neither Shotput nor badminton. D) Neither Qureshi, who participated in Swimming, nor Savithri secured the 4th position. E) The athlete who wore a blue shirt participated in neither Swimming nor Hurdles. F) The green coloured shirt athlete secured the 2nd position. G) The athlete who secured 5th position in Shotput wore a pink shirt. H) Either Prem or Rathod participated in Badminton. I) Rathod wore a red shirt.\n\nWhich athlete wore a blue shirt?\n\n**Options:**\n- **A**. Prem\n- **B**. Qureshi\n- **C**. Savithri\n- **D**. Tanvir\n\n**Correct Answer:** null"
     },
@@ -13031,30 +13031,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "19, 76, 79, 21, 45, 60",
+          "option_text": "Red",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "19, 76, 78, 22, 45, 60",
-          "is_correct": false
+          "option_text": "Violet",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "18, 76, 79, 23, 43, 61",
+          "option_text": "Blue",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "18, 76, 79, 21, 45, 61",
-          "is_correct": true
+          "option_text": "None of these",
+          "is_correct": false
         }
       ],
-      "correct_option_data": "D",
-      "solution_text": "From the table we can say that number of students who opted for E2 after reshuffle = 5 + 34 + 6 + 3 + 5 + 7 + 16 = 76. \n\nIt is given us that the number of students in E2 increased by 30 after the change process. Hence, we can say that the number of students who were enrolled in E2 before reshuffle = 76 - 30 = 46. \n\nIt is given that before the change process there were 10 more students in E2 than in E3. Therefore, the number of students who were enrolled in E3 before reshuffle = 46 - 10 = 36. \n\nNumber of students who moved from E1 to all other electives are known. Therefore, the number of students who were enrolled in E1 before reshuffle =  9 + 5 + 10 + 1 + 4 + 2 = 31. \n\nIt is given that before the change process there were 6 more students in E1 than in E4. Therefore, the number of students who were enrolled in E4 before reshuffle = 31 - 6 = 25. \n\nAlso, it is given that E4 had 2 more students than E6 before reshuffle. Therefore, the number of students who were enrolled in E6 before reshuffle =  25 - 2 = 23. \n\nAll the students from E7 moved to one of electives among E1 to E6. \nTherefore, the number of students who were enrolled in E7 before reshuffle = 4 + 16 + 30 + 5 + 5 + 41 = 101. \n\nExcept E5 we know the number of students who were enrolled in all electives. We also know that there were total 300 students who opted for exactly 1 elective. \n\nHence, the the number of students who were enrolled in E7 before reshuffle = 300 - (46+36+31+25+23+101) = 38. \n\nFor each elective, the number of students who were enrolled before reshuffle will be same as sum of the number of students who moved from that elective to another elective including no movement cases. \n\nFor elective E2,\n\nNumber of students who moved to E1 + 34 + 8 + Number of students who moved to E4 + 2 + 2 = 46 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 0\n\nFor elective E4,\n\nNumber of students who moved to E1 + 3 + 2 + 14 + Number of students who moved to E5 + 4 = 25 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E5 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nFor elective E6,\n\nNumber of students who moved to E1 + 7 + 3 + Number of students who moved to E4 + 2 + 9 = 23\n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nIt is given that after the reshuffle, the number of students in E4 was 3 more than that in E1.\nAs of now the number of students enrolled in E4 after reshuffle = 1 + 0 + E3 to E4 + 14 +  E5 to E4 + 1 + 5 = 21 + {E3 to E4} + {E5 to E4}\n\nAlso, the number of students enrolled in E1 after reshuffle = 9 + 0 + 2 + 1 + E5 to E1 + 1 + 4  = 17 + E5 to E1. \n\nHence, it is possible only when  E5 to E1 = 1 and E3 to E4 = E5 to E4 = 0. \n\nRemaining blank places can be filled easily as we know the total sum of each row. \n\nTherefore, the number of students who moved from E3 to E5 = the number of students who moved from E5 to E3 = the number of students who moved from E5 to E6 = 1.\n\nForm the table, we can see that after the reshuffle the number of students in electives E1 to E6 are 18, 76, 79, 21, 45 and 61 in that order. \n\nTherefore, option D is the correct answer.",
+      "correct_option_data": "B",
+      "solution_text": "Using B and I, we can say that Rathod wore a red shirt and participated in Marathon.\nUsing H, we can say that Prem participated in Badminton.\nUsing C, we can say that Tanvir has to participate in either Swimming or Hurdles. But, through D, we know that Tanvir does not participate in Swimming => Tanvir participates in Hurdles and secured 3rd position.\nUsing D, we can say that Qureshi participates in Swimming => Savithri participated in Shotput, secured 5th position and wore pink shirt.\nFrom A, we can say that Prem secured 1st position in Badminton.\nUsing D, we can say that Qureshi secured 2nd position in Swimming => Rathod secured 4th position in Marathon and wore a red shirt.\nUsing E, we can say that Prem wore a blue shirt.\nUsing F, we can say that Qureshi wore a green shirt and Tanvir wore a violet shirt.\n\nTherefore, the person who got 3rd wore a violet shirt.",
       "image_url": "",
       "full_markdown": "### Question (qid: 32173)\n\n**Passage:**\nFive athletes - Prem, Qureshi, Rathod, Savithri and Tanvir - participate in five different sports - Swimming, Hurdles, Shotput, Marathon and Badminton - not necessarily in the same order. Each athlete secured a unique position among 1st, 2nd, 3rd, 4th and fifth. Each athlete is wearing a shirt of different colour among Pink, Blue, Red, Green and Violet. Further:\n\nA) Neither Qureshi nor Rathod secured 1st position. B) The red coloured shirt athlete participated in Marathon. C) Tanvir secured 3rd position and it is in neither Shotput nor badminton. D) Neither Qureshi, who participated in Swimming, nor Savithri secured the 4th position. E) The athlete who wore a blue shirt participated in neither Swimming nor Hurdles. F) The green coloured shirt athlete secured the 2nd position. G) The athlete who secured 5th position in Shotput wore a pink shirt. H) Either Prem or Rathod participated in Badminton. I) Rathod wore a red shirt.\n\nThe participant who secured the third position wore which coloured shirt?\n\n**Options:**\n- **A**. Red\n- **B**. Violet\n- **C**. Blue\n- **D**. None of these\n\n**Correct Answer:** null"
     },
@@ -13066,30 +13066,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "E1",
+          "option_text": "Prem",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "E2",
+          "option_text": "Rathod",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "E3",
-          "is_correct": false
+          "option_text": "Savithri",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "E6",
-          "is_correct": true
+          "option_text": "None of these",
+          "is_correct": false
         }
       ],
-      "correct_option_data": "D",
-      "solution_text": "From the table we can say that number of students who opted for E2 after reshuffle = 5 + 34 + 6 + 3 + 5 + 7 + 16 = 76. \n\nIt is given us that the number of students in E2 increased by 30 after the change process. Hence, we can say that the number of students who were enrolled in E2 before reshuffle = 76 - 30 = 46. \n\nIt is given that before the change process there were 10 more students in E2 than in E3. Therefore, the number of students who were enrolled in E3 before reshuffle = 46 - 10 = 36. \n\nNumber of students who moved from E1 to all other electives are known. Therefore, the number of students who were enrolled in E1 before reshuffle =  9 + 5 + 10 + 1 + 4 + 2 = 31. \n\nIt is given that before the change process there were 6 more students in E1 than in E4. Therefore, the number of students who were enrolled in E4 before reshuffle = 31 - 6 = 25. \n\nAlso, it is given that E4 had 2 more students than E6 before reshuffle. Therefore, the number of students who were enrolled in E6 before reshuffle =  25 - 2 = 23. \n\nAll the students from E7 moved to one of electives among E1 to E6. \nTherefore, the number of students who were enrolled in E7 before reshuffle = 4 + 16 + 30 + 5 + 5 + 41 = 101. \n\nExcept E5 we know the number of students who were enrolled in all electives. We also know that there were total 300 students who opted for exactly 1 elective. \n\nHence, the the number of students who were enrolled in E7 before reshuffle = 300 - (46+36+31+25+23+101) = 38. \n\nFor each elective, the number of students who were enrolled before reshuffle will be same as sum of the number of students who moved from that elective to another elective including no movement cases. \n\nFor elective E2,\n\nNumber of students who moved to E1 + 34 + 8 + Number of students who moved to E4 + 2 + 2 = 46 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 0\n\nFor elective E4,\n\nNumber of students who moved to E1 + 3 + 2 + 14 + Number of students who moved to E5 + 4 = 25 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E5 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nFor elective E6,\n\nNumber of students who moved to E1 + 7 + 3 + Number of students who moved to E4 + 2 + 9 = 23\n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nIt is given that after the reshuffle, the number of students in E4 was 3 more than that in E1.\nAs of now the number of students enrolled in E4 after reshuffle = 1 + 0 + E3 to E4 + 14 +  E5 to E4 + 1 + 5 = 21 + {E3 to E4} + {E5 to E4}\n\nAlso, the number of students enrolled in E1 after reshuffle = 9 + 0 + 2 + 1 + E5 to E1 + 1 + 4  = 17 + E5 to E1. \n\nHence, it is possible only when  E5 to E1 = 1 and E3 to E4 = E5 to E4 = 0. \n\nRemaining blank places can be filled easily as we know the total sum of each row. \n\nTherefore, the number of students who moved from E3 to E5 = the number of students who moved from E5 to E3 = the number of students who moved from E5 to E6 = 1.\n\nWe are asked the largest change in its enrollment as a percentage of its original enrollment for all 6 electives but as we can see there are only 4 electives. Hence, we will check only for E1, E2, E3 and E6. \n\nThe percentage change in the number of students for E1 = $\\dfrac{18-31}{31}\\times 100$ $\\approx$ 42 %\n\nThe percentage change in the number of students for E2 = $\\dfrac{76-46}{46}\\times 100$ $\\approx$ 65 % \n\nThe percentage change in the number of students for E3 = $\\dfrac{79-36}{36}\\times 100$ $\\approx$ 119 % \n\nThe percentage change in the number of students for E6 = $\\dfrac{61-23}{23}\\times 100$ $\\approx$ 165 % \n\nWe can see that the percent change in the number of student for E6 is the largest. Therefore, option D is the correct answer.",
+      "correct_option_data": "C",
+      "solution_text": "Using B and I, we can say that Rathod wore a red shirt and participated in Marathon.\nUsing H, we can say that Prem participated in Badminton.\nUsing C, we can say that Tanvir has to participate in either Swimming or Hurdles. But, through D, we know that Tanvir does not participate in Swimming => Tanvir participates in Hurdles and secured 3rd position.\nUsing D, we can say that Qureshi participates in Swimming => Savithri participated in Shotput, secured 5th position and wore pink shirt.\nFrom A, we can say that Prem secured 1st position in Badminton.\nUsing D, we can say that Qureshi secured 2nd position in Swimming => Rathod secured 4th position in Marathon and wore a red shirt.\nUsing E, we can say that Prem wore a blue shirt.\nUsing F, we can say that Qureshi wore a green shirt and Tanvir wore a violet shirt.",
       "image_url": "",
       "full_markdown": "### Question (qid: 32174)\n\n**Passage:**\nFive athletes - Prem, Qureshi, Rathod, Savithri and Tanvir - participate in five different sports - Swimming, Hurdles, Shotput, Marathon and Badminton - not necessarily in the same order. Each athlete secured a unique position among 1st, 2nd, 3rd, 4th and fifth. Each athlete is wearing a shirt of different colour among Pink, Blue, Red, Green and Violet. Further:\n\nA) Neither Qureshi nor Rathod secured 1st position. B) The red coloured shirt athlete participated in Marathon. C) Tanvir secured 3rd position and it is in neither Shotput nor badminton. D) Neither Qureshi, who participated in Swimming, nor Savithri secured the 4th position. E) The athlete who wore a blue shirt participated in neither Swimming nor Hurdles. F) The green coloured shirt athlete secured the 2nd position. G) The athlete who secured 5th position in Shotput wore a pink shirt. H) Either Prem or Rathod participated in Badminton. I) Rathod wore a red shirt.\n\nWho participated in Shotput?\n\n**Options:**\n- **A**. Prem\n- **B**. Rathod\n- **C**. Savithri\n- **D**. None of these\n\n**Correct Answer:** null"
     },
@@ -13101,30 +13101,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "E2, E3, E6, E5, E1, E4",
-          "is_correct": true
+          "option_text": "2nd",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "E3, E2, E6, E5, E4, E1",
+          "option_text": "3rd",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "E2, E5, E3, E1, E4, E6",
+          "option_text": "4th",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "E2, E3, E5, E6, E1, E3",
-          "is_correct": false
+          "option_text": "5th",
+          "is_correct": true
         }
       ],
-      "correct_option_data": "A",
-      "solution_text": "From the table we can say that number of students who opted for E2 after reshuffle = 5 + 34 + 6 + 3 + 5 + 7 + 16 = 76. \n\nIt is given us that the number of students in E2 increased by 30 after the change process. Hence, we can say that the number of students who were enrolled in E2 before reshuffle = 76 - 30 = 46. \n\nIt is given that before the change process there were 10 more students in E2 than in E3. Therefore, the number of students who were enrolled in E3 before reshuffle = 46 - 10 = 36. \n\nNumber of students who moved from E1 to all other electives are known. Therefore, the number of students who were enrolled in E1 before reshuffle =  9 + 5 + 10 + 1 + 4 + 2 = 31. \n\nIt is given that before the change process there were 6 more students in E1 than in E4. Therefore, the number of students who were enrolled in E4 before reshuffle = 31 - 6 = 25. \n\nAlso, it is given that E4 had 2 more students than E6 before reshuffle. Therefore, the number of students who were enrolled in E6 before reshuffle =  25 - 2 = 23. \n\nAll the students from E7 moved to one of electives among E1 to E6. \nTherefore, the number of students who were enrolled in E7 before reshuffle = 4 + 16 + 30 + 5 + 5 + 41 = 101. \n\nExcept E5 we know the number of students who were enrolled in all electives. We also know that there were total 300 students who opted for exactly 1 elective. \n\nHence, the the number of students who were enrolled in E7 before reshuffle = 300 - (46+36+31+25+23+101) = 38. \n\nFor each elective, the number of students who were enrolled before reshuffle will be same as sum of the number of students who moved from that elective to another elective including no movement cases. \n\nFor elective E2,\n\nNumber of students who moved to E1 + 34 + 8 + Number of students who moved to E4 + 2 + 2 = 46 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 0\n\nFor elective E4,\n\nNumber of students who moved to E1 + 3 + 2 + 14 + Number of students who moved to E5 + 4 = 25 \n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E5 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nFor elective E6,\n\nNumber of students who moved to E1 + 7 + 3 + Number of students who moved to E4 + 2 + 9 = 23\n\ni.e. Number of students who moved from to E1 =  Number of students who moved from to E4 = 1     {As the remaining blanks can be filled by either 0 or 1}\n\nIt is given that after the reshuffle, the number of students in E4 was 3 more than that in E1.\nAs of now the number of students enrolled in E4 after reshuffle = 1 + 0 + E3 to E4 + 14 +  E5 to E4 + 1 + 5 = 21 + {E3 to E4} + {E5 to E4}\n\nAlso, the number of students enrolled in E1 after reshuffle = 9 + 0 + 2 + 1 + E5 to E1 + 1 + 4  = 17 + E5 to E1. \n\nHence, it is possible only when  E5 to E1 = 1 and E3 to E4 = E5 to E4 = 0. \n\nRemaining blank places can be filled easily as we know the total sum of each row. \n\nTherefore, the number of students who moved from E3 to E5 = the number of students who moved from E5 to E3 = the number of students who moved from E5 to E6 = 1.\n\nWe can see from the table that number of students enrolled in E1 dropped to 18. Hence, all the students who moved from E1 to any other elective will have to re-enroll in E1. \n\nWe can see that the number of students who enrolled for E1 prior to reshuffle = 31. Out of these 31 students, 9 students didn't move to any other elective whereas remaining 22 students moved to other electives. Hence, all these 22 students have to re-enroll in E1. \n\nTherefore, the total number of students in E1 post re-enrollment = 18 + 22 = 40 which is shown in the table. \n\nTherefore, the sequence of electives in decreasing order of their final enrollments = E2, E3, E6, E5, E1, E4. \n\nHence, option A is the correct answer.",
+      "correct_option_data": "D",
+      "solution_text": "Using B and I, we can say that Rathod wore a red shirt and participated in Marathon.\nUsing H, we can say that Prem participated in Badminton.\nUsing C, we can say that Tanvir has to participate in either Swimming or Hurdles. But, through D, we know that Tanvir does not participate in Swimming => Tanvir participates in Hurdles and secured 3rd position.\nUsing D, we can say that Qureshi participates in Swimming => Savithri participated in Shotput, secured 5th position and wore pink shirt.\nFrom A, we can say that Prem secured 1st position in Badminton.\nUsing D, we can say that Qureshi secured 2nd position in Swimming => Rathod secured 4th position in Marathon and wore a red shirt.\nUsing E, we can say that Prem wore a blue shirt.\nUsing F, we can say that Qureshi wore a green shirt and Tanvir wore a violet shirt.",
       "image_url": "",
       "full_markdown": "### Question (qid: 32175)\n\n**Passage:**\nFive athletes - Prem, Qureshi, Rathod, Savithri and Tanvir - participate in five different sports - Swimming, Hurdles, Shotput, Marathon and Badminton - not necessarily in the same order. Each athlete secured a unique position among 1st, 2nd, 3rd, 4th and fifth. Each athlete is wearing a shirt of different colour among Pink, Blue, Red, Green and Violet. Further:\n\nA) Neither Qureshi nor Rathod secured 1st position. B) The red coloured shirt athlete participated in Marathon. C) Tanvir secured 3rd position and it is in neither Shotput nor badminton. D) Neither Qureshi, who participated in Swimming, nor Savithri secured the 4th position. E) The athlete who wore a blue shirt participated in neither Swimming nor Hurdles. F) The green coloured shirt athlete secured the 2nd position. G) The athlete who secured 5th position in Shotput wore a pink shirt. H) Either Prem or Rathod participated in Badminton. I) Rathod wore a red shirt.\n\nWhich position did Savithri secure?\n\n**Options:**\n- **A**. 2nd\n- **B**. 3rd\n- **C**. 4th\n- **D**. 5th\n\n**Correct Answer:** null"
     }
