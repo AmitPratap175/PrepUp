@@ -34456,6 +34456,1396 @@
       "solution_text": "We know that the 2 trains travel with the same speed. \nLet the length of the tunnel be T m. \nLet the length of the shorter train be 'x' and the length of the longer train be 'y'.\n\nThe 2 trains cross each other completely in 2 minutes (120 seconds) if they are travelling on opposite tracks.\nWhen 2 trains travel in the opposite directions, the total distance that should be traveled by the 2 trains to cross each other completely will be equal to the sum of the length of the trains. \n\nWe know that both the trains travel at 10 m/s. Since the trains are moving in the opposite directions, the relative velocity is 10+10 = 20 m/s. \n\nSum of the lengths of the trains, x+y = 120*20 \n=> x+y = 2400 m\ny = 2400-x\n\nIt has been given that the longer train takes twice as long as the shorter train to cross the tunnel.\nDistance traveled by a train to completely cross a tunnel = Length of the train + length of the tunnel.\n\n2*(T+x)/10 = (T+2400-x)/10\n\n2T+2x = T-x+2400\nT+3x = 2400 m\n\nWe have to find out the time taken by a train thrice as longer as the shorter train to cross the tunnel at the same speed as these 2 trains. Therefore, we have to find the time taken by a train of length 3x to cross the tunnel at 10 m/s.\n\nA train of length 3x will have to cover a distance of T+3x to cross the tunnel completely. \nWe know that T+3x = 2400 m\n=> Time taken to cross the tunnel = 2400/10 = 240 seconds. \n\nTherefore, 240 is the right answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: 182040)\n\n**Passage:**\n2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains? (Enter 0 if the answer cannot be determined)\n\n2 trains pass through a tunnel at an equal speed of 10 m/s. The first train takes twice as much time as the second train to cross the tunnel completely. The trains can cross each other completely in 2 minutes if they are travelling in the opposite directions on parallel tracks. How much time (in seconds) will a train thrice the length of the shorter train take to cross the tunnel travelling at the same speed as these 2 trains?\n(Enter 0 if the answer cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1034",
+      "passage_text": "If the values of inradius and circumradius of a right-angled triangle are 3 cm, 8.5 cm. Then the area of the triangle(in cm 2 ^{2} 2 ) is\n\n60\n\n30\n\n45\n\nCannot be determined",
+      "question_text": "If the values of inradius and circumradius of a right-angled triangle are 3 cm, 8.5 cm. Then the area of the triangle(in cm$^{2}$) is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let a,b,c be the base, height and hypotenuse of the triangle\nWe know that inradius r=$\\frac{a+b-c}{2}$\nr=$\\frac{a+b+c-2c}{2}$\nr=$\\frac{2s-2c}{2}$\nr=s-c\nr=s-2R\nr+2R=s\nwe know that r=$\\frac{Area   of   the   triangle}{s}$\nArea of the triange =r(r+2R)\nOn substituting the values,we get\n=3(3+17)\n=60\nA is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 236736)\n\n**Passage:**\nIf the values of inradius and circumradius of a right-angled triangle are 3 cm, 8.5 cm. Then the area of the triangle(in cm 2 ^{2} 2 ) is\n\n60\n\n30\n\n45\n\nCannot be determined\n\nIf the values of inradius and circumradius of a right-angled triangle are 3 cm, 8.5 cm. Then the area of the triangle(in cm$^{2}$) is\n\n**Options:**\n- **A**. 60\n- **B**. 30\n- **C**. 45\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1035",
+      "passage_text": "",
+      "question_text": "The two sides of a triangle are 12 cm and 7cm. If all the sides are of integral lengths, then how many different values can the third side take?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "We know that sum of any two sides of the triangle is greater than the third side. So let the unknown side be x.\nLet the unknown side be the largest side, then\n12 + 7 > x\n=> x < 19\nSince all values are integers, x can take values between 12 and 18 => 7 values.\nNow let’s say that 12 is the largest side, then\n7+x > 12\n=> x > 5. In this case, x can take values between 6 and 11 => 6 values.\nHence the required number of values which ‘x’ can take = 7 + 6 = 13",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 51843)\n\n**Passage:**\nThe two sides of a triangle are 12 cm and 7cm. If all the sides are of integral lengths, then how many different values can the third side take?\n\nThe two sides of a triangle are 12 cm and 7cm. If all the sides are of integral lengths, then how many different values can the third side take?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1036",
+      "passage_text": "In a convex hexagon ABCDEF, all sides are congruent, ∠ \\angle ∠ B and ∠ \\angle ∠ E are right angles and ∠ \\angle ∠ A, ∠ \\angle ∠ C, ∠ \\angle ∠ D and ∠ \\angle ∠ F are congruent. If the area of the hexagon can be written as 3364 ( 2 + 1 ) 3364(\\sqrt{2}+1) 3 3 6 4 ( 2 ​ + 1 ) cm 2 ^2 2 , then what is the length of the AB (in cm)?",
+      "question_text": "In a convex hexagon ABCDEF, all sides are congruent, $\\angle$B and $\\angle$E are right angles and $\\angle$A, $\\angle$C, $\\angle$D and $\\angle$F are congruent. If the area of the hexagon can be written as $3364(\\sqrt{2}+1)$ cm$^2$, then what is the length of the AB (in cm)?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "Sum of all the internal angles of a hexagon = 6*180° - 360° = 720°\n\nIt is also given that $\\angle$E are right angles and $\\angle$A, $\\angle$C, $\\angle$D and $\\angle$F are congruent.\n\nHence, $\\angle$A = $\\angle$C = $\\angle$D = $\\angle$F = $\\dfrac{720-2*90}{4}$ = 135°\n\nLet us assume that the length of each side = x cm. Then, we can draw the diagram as follows:\n\nIn right-angled triangle ABC,\n\n$AC^2 = AB^2 + BC^2$\n\n$\\Rightarrow$ AC = $\\sqrt{2}$x cm. \n\nSimilarly, DF = $\\sqrt{2}$x cm.\n\nWe can see that the area of the hexagon ABCDEF = Area of triangle ABC + Area of rectangle AFDC + Area of triangle DEF\n\n$\\Rightarrow$ $3364(\\sqrt{2}+1)$ = $\\dfrac{1}{2}*x*x$ + $x*\\sqrt{2}x$ + $\\dfrac{1}{2}*x*x$\n\n$\\Rightarrow$ $3364(\\sqrt{2}+1)$ = $x^2(1+\\sqrt{2})$\n\n$\\Rightarrow$ $x^2=3364$\n\n$\\Rightarrow$ $x=58$ cm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176505)\n\n**Passage:**\nIn a convex hexagon ABCDEF, all sides are congruent, ∠ \\angle ∠ B and ∠ \\angle ∠ E are right angles and ∠ \\angle ∠ A, ∠ \\angle ∠ C, ∠ \\angle ∠ D and ∠ \\angle ∠ F are congruent. If the area of the hexagon can be written as 3364 ( 2 + 1 ) 3364(\\sqrt{2}+1) 3 3 6 4 ( 2 ​ + 1 ) cm 2 ^2 2 , then what is the length of the AB (in cm)?\n\nIn a convex hexagon ABCDEF, all sides are congruent, $\\angle$B and $\\angle$E are right angles and $\\angle$A, $\\angle$C, $\\angle$D and $\\angle$F are congruent. If the area of the hexagon can be written as $3364(\\sqrt{2}+1)$ cm$^2$, then what is the length of the AB (in cm)?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1037",
+      "passage_text": "Let ABCD be a parallelogram. The lengths of the side AD and the diagonal AC are 10cm and 20cm, respectively. If the angle ∠ A D C \\angle ADC ∠ A D C is equal to 3 0 0 30^{0} 3 0 0 then the area of the parallelogram, in sq.cm is\n\n25 ( 5 + 15 ) 2 \\frac{25(\\sqrt{5}+\\sqrt{15})}{2} 2 2 5 ( 5 ​ + 1 5 ​ ) ​\n\n25 ( 3 + 15 ) 25(\\sqrt{3}+\\sqrt{15}) 2 5 ( 3 ​ + 1 5 ​ )\n\n25 ( 3 + 15 ) 2 \\frac{25(\\sqrt{3}+\\sqrt{15})}{2} 2 2 5 ( 3 ​ + 1 5 ​ ) ​\n\n25 ( 5 + 15 ) {25(\\sqrt{5}+\\sqrt{15})} 2 5 ( 5 ​ + 1 5 ​ )",
+      "question_text": "Let ABCD be a parallelogram. The lengths of the side AD and the diagonal AC are 10cm and 20cm, respectively. If the angle $\\angle ADC$ is equal to $30^{0}$ then the area of the parallelogram, in sq.cm is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{25(\\sqrt{5}+\\sqrt{15})}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$25(\\sqrt{3}+\\sqrt{15})$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{25(\\sqrt{3}+\\sqrt{15})}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "${25(\\sqrt{5}+\\sqrt{15})}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Applying cosine rule in triangle ACD, \n\n$100+X^2-2\\times\\ 10\\times\\ X\\cos30=400$\n\n$X^2-10X\\sqrt{\\ 3}-300=0$\n\nSolving, we get X = $\\left(\\frac{10\\sqrt{\\ 3}+10\\sqrt{\\ 15}}{2}\\right)$\n\nHence, area = 10Xsin 30 = $\\frac{\\left(\\frac{10\\sqrt{\\ 3}+10\\sqrt{\\ 15}}{2}\\right)10}{2}$\n\n= $25(\\sqrt{3}+\\sqrt{15})$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 386525)\n\n**Passage:**\nLet ABCD be a parallelogram. The lengths of the side AD and the diagonal AC are 10cm and 20cm, respectively. If the angle ∠ A D C \\angle ADC ∠ A D C is equal to 3 0 0 30^{0} 3 0 0 then the area of the parallelogram, in sq.cm is\n\n25 ( 5 + 15 ) 2 \\frac{25(\\sqrt{5}+\\sqrt{15})}{2} 2 2 5 ( 5 ​ + 1 5 ​ ) ​\n\n25 ( 3 + 15 ) 25(\\sqrt{3}+\\sqrt{15}) 2 5 ( 3 ​ + 1 5 ​ )\n\n25 ( 3 + 15 ) 2 \\frac{25(\\sqrt{3}+\\sqrt{15})}{2} 2 2 5 ( 3 ​ + 1 5 ​ ) ​\n\n25 ( 5 + 15 ) {25(\\sqrt{5}+\\sqrt{15})} 2 5 ( 5 ​ + 1 5 ​ )\n\nLet ABCD be a parallelogram. The lengths of the side AD and the diagonal AC are 10cm and 20cm, respectively. If the angle $\\angle ADC$ is equal to $30^{0}$ then the area of the parallelogram, in sq.cm is\n\n**Options:**\n- **A**. $\\frac{25(\\sqrt{5}+\\sqrt{15})}{2}$\n- **B**. $25(\\sqrt{3}+\\sqrt{15})$\n- **C**. $\\frac{25(\\sqrt{3}+\\sqrt{15})}{2}$\n- **D**. ${25(\\sqrt{5}+\\sqrt{15})}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1038",
+      "passage_text": "The volume of a sphere of radius 'a' cm is equal to X cubic centimetres. The curved surface area of a hemisphere of radius 'a' cm is also equal to X square centimetres. Similarly, the volume of a cone of radius 'b' cm and height 9 cm is Y cubic centimetres and the total surface area of a cone of radius 'b' cm and height 9 cm is Y square centimetres. Then the ratio of a:b is?\n\n2: 3 \\sqrt{3} 3 ​\n\n1:3\n\n1: 3 \\sqrt{3} 3 ​\n\n1:2 3 \\sqrt{3} 3 ​",
+      "question_text": "The volume of a sphere of radius 'a' cm is equal to X cubic centimetres. The curved surface area of a hemisphere of radius 'a' cm is also equal to X square centimetres. Similarly, the volume of a cone of radius 'b' cm and height 9 cm is Y cubic centimetres and the total surface area of a cone of radius 'b' cm and height 9 cm is Y square centimetres. Then the ratio of a:b is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:$\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:$\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:2$\\sqrt{3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Volume of a sphere of radius a = $\\ \\frac{\\ 4}{3}\\pi\\ a^3$\n\nThe curved surface area of the hemisphere a = $\\ \\ 2\\pi\\ a^2$\n\n$\\ \\frac{\\ 4}{3}\\pi\\ a^3$ =  $\\ \\ 2\\pi\\ a^2$\n\na = $\\frac{3}{2}$\n\n$\\ \\frac{\\ 1}{3}\\pi\\ b^2h$ = $\\pi\\ b^{2\\ }+\\ \\pi\\ b\\sqrt{\\ b^2+h^2}$  [Given h = 9 cm]\n\n$3b\\ =\\ \\sqrt{\\ b^2+81}+\\ b$\n\n$3b^2=81$\n\nb = $3\\sqrt{3}$\n\na:b = 1:2$\\sqrt{3}$\n\nD is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290754)\n\n**Passage:**\nThe volume of a sphere of radius 'a' cm is equal to X cubic centimetres. The curved surface area of a hemisphere of radius 'a' cm is also equal to X square centimetres. Similarly, the volume of a cone of radius 'b' cm and height 9 cm is Y cubic centimetres and the total surface area of a cone of radius 'b' cm and height 9 cm is Y square centimetres. Then the ratio of a:b is?\n\n2: 3 \\sqrt{3} 3 ​\n\n1:3\n\n1: 3 \\sqrt{3} 3 ​\n\n1:2 3 \\sqrt{3} 3 ​\n\nThe volume of a sphere of radius 'a' cm is equal to X cubic centimetres. The curved surface area of a hemisphere of radius 'a' cm is also equal to X square centimetres. Similarly, the volume of a cone of radius 'b' cm and height 9 cm is Y cubic centimetres and the total surface area of a cone of radius 'b' cm and height 9 cm is Y square centimetres. Then the ratio of a:b is?\n\n**Options:**\n- **A**. 2:$\\sqrt{3}$\n- **B**. 1:3\n- **C**. 1:$\\sqrt{3}$\n- **D**. 1:2$\\sqrt{3}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1039",
+      "passage_text": "",
+      "question_text": "The salaries of 21 employees of a company is in arithmetic progression with common difference greater than 0. The salaries are arranged in ascending order and ranked such that employee with the least salary is ranked 1. Three employees ranked 7th 10th and 18th leave the company. Which of the following is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "The new average is less than the original average.",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "The new average is more than the original average.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The new average is equal to the original average.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Nothing can be said.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the terms to be a-10d,a-9d,a-8d…….a,a+d………a+10d\nOriginal Average = 21a/21= a\nSalary of 7th rank employee = a-4d\nSalary of 10th rank employee = a-d\nSalary of 18th rank employee = a+7d\nSum of the salary of 7th, 10th and 18th ranked employees = 3a+2d\nFinal Average=(21a-(3a+2d))/18 = (18a-2d)/18 = a-(d/9)\nThe new average is less than the original average.\nHence A is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe salaries of 21 employees of a company is in arithmetic progression with common difference greater than 0. The salaries are arranged in ascending order and ranked such that employee with the least salary is ranked 1. Three employees ranked 7th 10th and 18th leave the company. Which of the following is true?\n\n**Options:**\n- **A**. The new average is less than the original average. ✅\n- **B**. The new average is more than the original average.\n- **C**. The new average is equal to the original average.\n- **D**. Nothing can be said.\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the terms to be a-10d,a-9d,a-8d…….a,a+d………a+10d\nOriginal Average = 21a/21= a\nSalary of 7th rank employee = a-4d\nSalary of 10th rank employee = a-d\nSalary of 18th rank employee = a+7d\nSum of the salary of 7th, 10th and 18th ranked employees = 3a+2d\nFinal Average=(21a-(3a+2d))/18 = (18a-2d)/18 = a-(d/9)\nThe new average is less than the original average.\nHence A is the answer."
+    },
+    {
+      "qid": "quant-1040",
+      "passage_text": "",
+      "question_text": "If the selling price of the article is reduced by 40% and the cost price remains the same, the profit reduces by 50%. Find the original profit% of the article?",
+      "options": [],
+      "correct_option_data": "400",
+      "solution_text": "Let the SP be x and the CP be y.\n(x-y) = 2(0.6x-y) \n0.2x = y\nx = 5y\nOriginal profit% =$\\frac{x-y}{y}*100 =\\frac{5y-y}{y}*100 = 400$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the selling price of the article is reduced by 40% and the cost price remains the same, the profit reduces by 50%. Find the original profit% of the article?\n\n**Options:**\n\n**Correct Answer:** 400\n\n**Solution:**\nLet the SP be x and the CP be y.\n(x-y) = 2(0.6x-y) \n0.2x = y\nx = 5y\nOriginal profit% =$\\frac{x-y}{y}*100 =\\frac{5y-y}{y}*100 = 400$%"
+    },
+    {
+      "qid": "quant-1041",
+      "passage_text": "",
+      "question_text": "Let N = {-6, 0, 5, 9, 14, 12, 8, 22}. Then the average of the average of all the possible triplets formed from N is",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "The number of triplets that would be formed is $^8C_3$ = 56\nThe number of times each of the digits would be repeated is $^7C_2$ = 21\nThe average of the average of the triplets formed from N \n=$\\dfrac{21(\\frac{-6+0+5+9+14+12+8+22}{3})}{56}$\n= $\\dfrac{-6+0+5+9+14+12+8+22}{8}$\n=8\n8 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet N = {-6, 0, 5, 9, 14, 12, 8, 22}. Then the average of the average of all the possible triplets formed from N is\n\n**Options:**\n\n**Correct Answer:** 8\n\n**Solution:**\nThe number of triplets that would be formed is $^8C_3$ = 56\nThe number of times each of the digits would be repeated is $^7C_2$ = 21\nThe average of the average of the triplets formed from N \n=$\\dfrac{21(\\frac{-6+0+5+9+14+12+8+22}{3})}{56}$\n= $\\dfrac{-6+0+5+9+14+12+8+22}{8}$\n=8\n8 is the correct answer."
+    },
+    {
+      "qid": "quant-1042",
+      "passage_text": "",
+      "question_text": "How many negative real roots does the equation $x^3-x^2-3x-9=0$ have?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "First, we'll use Descartes Rule of Signs.\nIn $f(x)=x^3-x^2-3x-9$ there is only one time sign change. So, there can be a maximum of 1 positive real root.\nIn $f(-x)=-x^3-x^2+3x-9$ the sign changes twice. So, there can be  a maximum of 2 negetive real roots.\nNow, 2 cases can be formed:\nFrom here, we can be sure that there's definitely a positive real root.\nSince the coefficients do not add up to zero, x=1 will not be  a root.\nf(2) = 8-4-6-9 = -11 ...( x=2 is also not a root)\nf(3) = 27-9-9-9 = 0 ...( x=3 is a root)\nNow dividing $x^3-x^2-3x-9$ by (x-3) we get $x^2+2x+3$\nDeterminant of the equation $x^2+2x+3=0$ is -8, which means the roots of the quadratic will be imaginary and in conjugate pairs.\nSo in total, we have 1 positive real root, a pair of imaginary roots and 0 negative real roots.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many negative real roots does the equation $x^3-x^2-3x-9=0$ have?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nFirst, we'll use Descartes Rule of Signs.\nIn $f(x)=x^3-x^2-3x-9$ there is only one time sign change. So, there can be a maximum of 1 positive real root.\nIn $f(-x)=-x^3-x^2+3x-9$ the sign changes twice. So, there can be  a maximum of 2 negetive real roots.\nNow, 2 cases can be formed:\nFrom here, we can be sure that there's definitely a positive real root.\nSince the coefficients do not add up to zero, x=1 will not be  a root.\nf(2) = 8-4-6-9 = -11 ...( x=2 is also not a root)\nf(3) = 27-9-9-9 = 0 ...( x=3 is a root)\nNow dividing $x^3-x^2-3x-9$ by (x-3) we get $x^2+2x+3$\nDeterminant of the equation $x^2+2x+3=0$ is -8, which means the roots of the quadratic will be imaginary and in conjugate pairs.\nSo in total, we have 1 positive real root, a pair of imaginary roots and 0 negative real roots."
+    },
+    {
+      "qid": "quant-1043",
+      "passage_text": "",
+      "question_text": "x, y and z are positive integers such that 3x+5y+8z=48. Find the maximum value of $x^3y^5z^4$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2^{24}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2^{26}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2^{20}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2^{30}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "3x+5y+8z=48 and x,y,z are positive => AM >= GM inequality can be used here\n$\\frac{x+x+x+y+y+y+y+y+2z+2z+2z+2z}{12} \\geq (16x^3y^5z^4)^{\\frac{1}{12}}$\n=> $4^{12} \\geq 16x^3y^5z^4$\n=> $x^3y^5z^4 \\leq 2^{20}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nx, y and z are positive integers such that 3x+5y+8z=48. Find the maximum value of $x^3y^5z^4$.\n\n**Options:**\n- **A**. $2^{24}$\n- **B**. $2^{26}$\n- **C**. $2^{20}$ ✅\n- **D**. $2^{30}$\n\n**Correct Answer:** null\n\n**Solution:**\n3x+5y+8z=48 and x,y,z are positive => AM >= GM inequality can be used here\n$\\frac{x+x+x+y+y+y+y+y+2z+2z+2z+2z}{12} \\geq (16x^3y^5z^4)^{\\frac{1}{12}}$\n=> $4^{12} \\geq 16x^3y^5z^4$\n=> $x^3y^5z^4 \\leq 2^{20}$"
+    },
+    {
+      "qid": "quant-1044",
+      "passage_text": "",
+      "question_text": "An amount becomes 4 times itself in 5 years with a certain simple interest rate. Instead, if the rate of interest is the same and compounded annually, the amount becomes more than 16 times in n years, where n is an integer. Find the minimum value of n. (Given that $\\log_{10}2=0.3010$)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume the amount = A, then after 5 years, it will become 4A.\nHence, the interest = 4A-A = 3A\n$3A\\ =\\ \\frac{\\left(A\\times\\ r\\times\\ 5\\right)}{100}$\n=> $r=60$\nIf the rate of interest is same and compounded annually, after n year the amount = $A\\left(1+\\frac{60}{100}\\right)^n>16A$ \n=> $1.6^n>16$\n=> n($\\log16-1$) > log16\n=> n > $\\frac{\\log16}{\\log16-1}$\n=> n> $\\frac{4\\log2}{4\\log2-1}$\n=> n>$\\frac{4\\times\\ 0.3010}{4\\times\\ 0.3010-1}=\\ \\frac{\\ 1.2040}{0.2040}$\n=> n>5.9\nMinimum value of n=6",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn amount becomes 4 times itself in 5 years with a certain simple interest rate. Instead, if the rate of interest is the same and compounded annually, the amount becomes more than 16 times in n years, where n is an integer. Find the minimum value of n. (Given that $\\log_{10}2=0.3010$)\n\n**Options:**\n- **A**. 5\n- **B**. 4\n- **C**. 6 ✅\n- **D**. 7\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the amount = A, then after 5 years, it will become 4A.\nHence, the interest = 4A-A = 3A\n$3A\\ =\\ \\frac{\\left(A\\times\\ r\\times\\ 5\\right)}{100}$\n=> $r=60$\nIf the rate of interest is same and compounded annually, after n year the amount = $A\\left(1+\\frac{60}{100}\\right)^n>16A$ \n=> $1.6^n>16$\n=> n($\\log16-1$) > log16\n=> n > $\\frac{\\log16}{\\log16-1}$\n=> n> $\\frac{4\\log2}{4\\log2-1}$\n=> n>$\\frac{4\\times\\ 0.3010}{4\\times\\ 0.3010-1}=\\ \\frac{\\ 1.2040}{0.2040}$\n=> n>5.9\nMinimum value of n=6"
+    },
+    {
+      "qid": "quant-1045",
+      "passage_text": "",
+      "question_text": "If $\\log_{24}{6}=x$   $\\log_{12}{54}=y$ then",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$y=\\frac{(4+x)}{(x-3)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$y=\\frac{(3-x)}{(x+2)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$x=\\frac{(3-y)}{(y-2)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$x=\\frac{(y+2)}{(8-y)}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Changing into base 2, we get\nx= (1+log3)/(3+log3)...(1)\ny=$\\frac{1+3log3}{2+log3}$\n=> log3 = $\\frac{1-2y}{y-3}$ ......(2)\nAfter putting the value of log3 in (1),\nwe get, x= $\\frac{1+\\frac{1-2y}{y-3}}{3+\\frac{1-2y}{y-3}}$\nx = $\\frac{y-3+1-2y}{3y-9+1-2y}$\n$x=\\frac{(y+2)}{(8-y)}$\nHence, D is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\log_{24}{6}=x$   $\\log_{12}{54}=y$ then\n\n**Options:**\n- **A**. $y=\\frac{(4+x)}{(x-3)}$\n- **B**. $y=\\frac{(3-x)}{(x+2)}$\n- **C**. $x=\\frac{(3-y)}{(y-2)}$\n- **D**. $x=\\frac{(y+2)}{(8-y)}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nChanging into base 2, we get\nx= (1+log3)/(3+log3)...(1)\ny=$\\frac{1+3log3}{2+log3}$\n=> log3 = $\\frac{1-2y}{y-3}$ ......(2)\nAfter putting the value of log3 in (1),\nwe get, x= $\\frac{1+\\frac{1-2y}{y-3}}{3+\\frac{1-2y}{y-3}}$\nx = $\\frac{y-3+1-2y}{3y-9+1-2y}$\n$x=\\frac{(y+2)}{(8-y)}$\nHence, D is the answer."
+    },
+    {
+      "qid": "quant-1046",
+      "passage_text": "",
+      "question_text": "How many 4 digit numbers are divisible by 5 but not by 25?",
+      "options": [],
+      "correct_option_data": "1440",
+      "solution_text": "First we will calculate the numbers which are divisible by 5.\nThe first number is 1000 and the last number is 9995.\n9995 = 1000+(n-1)5\nn = 1800\nNow we will deduct the number of numbers which are divisible by 25.\n9975 = 1000+(N-1)25\nN = 360\nTotal number = 1800-360 = 1440",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many 4 digit numbers are divisible by 5 but not by 25?\n\n**Options:**\n\n**Correct Answer:** 1440\n\n**Solution:**\nFirst we will calculate the numbers which are divisible by 5.\nThe first number is 1000 and the last number is 9995.\n9995 = 1000+(n-1)5\nn = 1800\nNow we will deduct the number of numbers which are divisible by 25.\n9975 = 1000+(N-1)25\nN = 360\nTotal number = 1800-360 = 1440"
+    },
+    {
+      "qid": "quant-1047",
+      "passage_text": "",
+      "question_text": "Find the number of sides of a regular polygon in which the exterior angle is one sixth the interior angle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "14",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of sides of the polygon be n.\nEach exterior angle= $\\frac{360}{n}$.\nEach interior angle of this polygon= $\\frac{\\left(n-2\\right)180}{n}$\nAs per the question,\n$\\frac{\\left(n-2\\right)180}{n}\\times\\frac{1}{6}=\\frac{360}{n}$\n=> $\\left(n-2\\right)30=360$\n=> n-2= 12\n.'. n= 14.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of sides of a regular polygon in which the exterior angle is one sixth the interior angle.\n\n**Options:**\n- **A**. 12\n- **B**. 15\n- **C**. 13\n- **D**. 14 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of sides of the polygon be n.\nEach exterior angle= $\\frac{360}{n}$.\nEach interior angle of this polygon= $\\frac{\\left(n-2\\right)180}{n}$\nAs per the question,\n$\\frac{\\left(n-2\\right)180}{n}\\times\\frac{1}{6}=\\frac{360}{n}$\n=> $\\left(n-2\\right)30=360$\n=> n-2= 12\n.'. n= 14."
+    },
+    {
+      "qid": "quant-1048",
+      "passage_text": "",
+      "question_text": "A 7*7*7 blue cube is cut into 343 cubes of dimensions 1*1*1. The number of smaller cubes which have at least one face painted blue is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "218",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "342",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "126",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The cubes on the vertex, the edges and the faces of the large cube is painted in blue, so we have to remove those cubes from 343 smaller cubes\nCubes on the vertices = 8\nCubes on the edges = 5*12 = 60\nCubes on the faces = 5*5*6 = 150\nNumber of smaller cubes whose none of the faces is painted = 343-(8+60+150) = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218\nA is the correct answer.\nAlternate Solution:\nThe outer surface of the cube is painted. So one layer of cubes with thickness 1 cm is removed from each side, the required number of cubes can be obtained. \n=> Number of smaller cubes whose none of the faces is painted = (7-1-1)$^3$ = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA 7*7*7 blue cube is cut into 343 cubes of dimensions 1*1*1. The number of smaller cubes which have at least one face painted blue is\n\n**Options:**\n- **A**. 218 ✅\n- **B**. 125\n- **C**. 342\n- **D**. 126\n\n**Correct Answer:** null\n\n**Solution:**\nThe cubes on the vertex, the edges and the faces of the large cube is painted in blue, so we have to remove those cubes from 343 smaller cubes\nCubes on the vertices = 8\nCubes on the edges = 5*12 = 60\nCubes on the faces = 5*5*6 = 150\nNumber of smaller cubes whose none of the faces is painted = 343-(8+60+150) = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218\nA is the correct answer.\nAlternate Solution:\nThe outer surface of the cube is painted. So one layer of cubes with thickness 1 cm is removed from each side, the required number of cubes can be obtained. \n=> Number of smaller cubes whose none of the faces is painted = (7-1-1)$^3$ = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218"
+    },
+    {
+      "qid": "quant-1049",
+      "passage_text": "",
+      "question_text": "If $A^2$ has 51 factors, how many factors will $A^5$ have?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "126",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "246",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "255",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Both A and B",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "If $A^2$ has 51 factors, it can either be of the form $A^2=a^{50}$ or $A^2=a^{16}\\times\\ b^2$, where 'a' and 'b' are prime numbers.\nCase 1: $A^2=a^{50}$\n$A=a^{25}$\n=> $A^5=a^{125}$ and this will have (125+1) = 126 factors.\nCase 2 : $A^2=a^{16}\\times\\ b^2$\n$A=a^8\\times\\ b$\n=> $A^5=a^{40}\\times\\ b^5$ and this will have ((40+1)(5+1)) = 246 factors.\nSo, both cases are possible.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $A^2$ has 51 factors, how many factors will $A^5$ have?\n\n**Options:**\n- **A**. 126\n- **B**. 246\n- **C**. 255\n- **D**. Both A and B ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIf $A^2$ has 51 factors, it can either be of the form $A^2=a^{50}$ or $A^2=a^{16}\\times\\ b^2$, where 'a' and 'b' are prime numbers.\nCase 1: $A^2=a^{50}$\n$A=a^{25}$\n=> $A^5=a^{125}$ and this will have (125+1) = 126 factors.\nCase 2 : $A^2=a^{16}\\times\\ b^2$\n$A=a^8\\times\\ b$\n=> $A^5=a^{40}\\times\\ b^5$ and this will have ((40+1)(5+1)) = 246 factors.\nSo, both cases are possible."
+    },
+    {
+      "qid": "quant-1050",
+      "passage_text": "",
+      "question_text": "Three pipes A, B and C are used to fill a tank. They have flow rates in the ratio 1:2:3 respectively. The tank is initially empty and all the pipes are opened. Pipe C is closed after the tank is one-third full. Pipe B is closed after the tank is half full and A is used to fill the rest of the tank. If it took 110 minutes to fill the tank, what is the time taken to fill the tank if only A and B are open?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "42 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "72 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider flow rate of A, B and C to be 1x, 2x and 3x tanks per minute,  and the capacity of tank as 1.\nThe pipes A,B,C are open till the tank is 1/3rd full. Total capacity of the pipes during that duration = 1x + 2x + 3x = 6x\nHence time taken for the tank to get till 1/3rd = $\\dfrac{\\frac{1}{3}}{6x} = \\dfrac{1}{3\\times6x}$\nThe pipes A,B are open from 1/3rd to 1/2 full i.e. they filled 1/6th tank. Total capacity of pipes during that duration = 1x + 2x = 3x\nHence time taken for the tank to get till 1/2 full from 1/3rd = $\\dfrac{\\frac{1}{6}}{3x} = \\dfrac{1}{6\\times3x}$The pipe A is open from 1/2rd to full tank i.e. it filled 1/2 tank. Total capacity of pipes during that duration = 1x \nHence time taken for the tank to get full from 1/2nd = $\\dfrac{\\frac{1}{2}}{x} = \\dfrac{1}{2\\times x}$\n$\\frac{1}{3\\times6x}+\\frac{1}{6\\times3x}+\\frac{1}{2\\times x}=110$\n$\\frac{11}{18}x=110$\n=> $\\frac{1}{x}=180$\nThen time taken by A and B = $\\frac{1}{x+2x}$ = 60 minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree pipes A, B and C are used to fill a tank. They have flow rates in the ratio 1:2:3 respectively. The tank is initially empty and all the pipes are opened. Pipe C is closed after the tank is one-third full. Pipe B is closed after the tank is half full and A is used to fill the rest of the tank. If it took 110 minutes to fill the tank, what is the time taken to fill the tank if only A and B are open?\n\n**Options:**\n- **A**. 40 minutes\n- **B**. 60 minutes ✅\n- **C**. 42 minutes\n- **D**. 72 minutes\n\n**Correct Answer:** null\n\n**Solution:**\nConsider flow rate of A, B and C to be 1x, 2x and 3x tanks per minute,  and the capacity of tank as 1.\nThe pipes A,B,C are open till the tank is 1/3rd full. Total capacity of the pipes during that duration = 1x + 2x + 3x = 6x\nHence time taken for the tank to get till 1/3rd = $\\dfrac{\\frac{1}{3}}{6x} = \\dfrac{1}{3\\times6x}$\nThe pipes A,B are open from 1/3rd to 1/2 full i.e. they filled 1/6th tank. Total capacity of pipes during that duration = 1x + 2x = 3x\nHence time taken for the tank to get till 1/2 full from 1/3rd = $\\dfrac{\\frac{1}{6}}{3x} = \\dfrac{1}{6\\times3x}$The pipe A is open from 1/2rd to full tank i.e. it filled 1/2 tank. Total capacity of pipes during that duration = 1x \nHence time taken for the tank to get full from 1/2nd = $\\dfrac{\\frac{1}{2}}{x} = \\dfrac{1}{2\\times x}$\n$\\frac{1}{3\\times6x}+\\frac{1}{6\\times3x}+\\frac{1}{2\\times x}=110$\n$\\frac{11}{18}x=110$\n=> $\\frac{1}{x}=180$\nThen time taken by A and B = $\\frac{1}{x+2x}$ = 60 minutes"
+    },
+    {
+      "qid": "quant-1051",
+      "passage_text": "",
+      "question_text": "Vessel A contains a solution of milk and water in the ratio 1:3. If 8 litres of the mixture is replaced with milk, then the new ratio becomes 3:5. Had p litres of mixture been replaced with milk, the amount of water and milk in the vessel would have become equal. Find the value of p.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the amount of milk is x and the amount of water is 3x.\nIf 8 litres of mixture is removed, water and milk will be removed in the ratio 1:3. Hence, 2 litres of milk and 6 litres of water is removed. Also, 8 litres of milk is added.\n=> $\\dfrac{x-2+8}{3x-6}=\\frac{3}{5}$\n=> $\\dfrac{x+6}{3x-6}=\\frac{3}{5}$\n=> 5x+30 = 9x-18\n=> x=12\nAfter replacing p litres of the mixture, the ratio of milk and water will become 1:1. In removal, p/4 milk will be removed and 3p/4 water will be removed. While adding p milk will be added.\n=> $\\dfrac{12-\\frac{p}{4}+p}{36-\\frac{3p}{4}}=\\frac{1}{1}$\n=> $\\dfrac{12+\\frac{3p}{4}}{36-\\frac{3p}{4}}=1$\n=> $\\dfrac{3p}{2}=24$\n=> p = 16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nVessel A contains a solution of milk and water in the ratio 1:3. If 8 litres of the mixture is replaced with milk, then the new ratio becomes 3:5. Had p litres of mixture been replaced with milk, the amount of water and milk in the vessel would have become equal. Find the value of p.\n\n**Options:**\n- **A**. 16 ✅\n- **B**. 12\n- **C**. 9\n- **D**. 24\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the amount of milk is x and the amount of water is 3x.\nIf 8 litres of mixture is removed, water and milk will be removed in the ratio 1:3. Hence, 2 litres of milk and 6 litres of water is removed. Also, 8 litres of milk is added.\n=> $\\dfrac{x-2+8}{3x-6}=\\frac{3}{5}$\n=> $\\dfrac{x+6}{3x-6}=\\frac{3}{5}$\n=> 5x+30 = 9x-18\n=> x=12\nAfter replacing p litres of the mixture, the ratio of milk and water will become 1:1. In removal, p/4 milk will be removed and 3p/4 water will be removed. While adding p milk will be added.\n=> $\\dfrac{12-\\frac{p}{4}+p}{36-\\frac{3p}{4}}=\\frac{1}{1}$\n=> $\\dfrac{12+\\frac{3p}{4}}{36-\\frac{3p}{4}}=1$\n=> $\\dfrac{3p}{2}=24$\n=> p = 16"
+    },
+    {
+      "qid": "quant-1052",
+      "passage_text": "",
+      "question_text": "Four friends Ram, Shyam, Tanmay and Uday have equal number of marbles with them. Ram gives $\\ \\frac{\\ 3}{\\ 5}$th of his marbles to Shyam. Then, Shyam gives half of the marbles to Tanmay. Finally, Tanmay gives 18 marbles to Uday. If the number of marbles with Tanmay and Uday are now in the ratio 3:4. Find the total number of marbles with all of them.",
+      "options": [],
+      "correct_option_data": "120",
+      "solution_text": "Assuming the initial number of marbles with each of them as 5x.\nThen marbles left with Ram after giving three-fifth will be 5x-3x = 2x\nThe final number of marbles with Shyam = 5x+3x = 8x\nNow after giving half of the marble of Shyam to Tanmay, the total number of marbles with Tanmay = 5x+$\\ \\frac{\\ 1}{2}\\times\\ 8x$ = 9x\nAfter giving 18 marbles to Uday, Tanmay will have 9x-18 and Uday will have 5x+18\nNow, $\\ \\dfrac{\\ 9x-18}{5x+18}$  = $\\ \\frac{\\ 3}{4}$\n=> x = 6\nHence, the total number of marbles with them = $6\\times\\ 5\\times\\ 4$ =120",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour friends Ram, Shyam, Tanmay and Uday have equal number of marbles with them. Ram gives $\\ \\frac{\\ 3}{\\ 5}$th of his marbles to Shyam. Then, Shyam gives half of the marbles to Tanmay. Finally, Tanmay gives 18 marbles to Uday. If the number of marbles with Tanmay and Uday are now in the ratio 3:4. Find the total number of marbles with all of them.\n\n**Options:**\n\n**Correct Answer:** 120\n\n**Solution:**\nAssuming the initial number of marbles with each of them as 5x.\nThen marbles left with Ram after giving three-fifth will be 5x-3x = 2x\nThe final number of marbles with Shyam = 5x+3x = 8x\nNow after giving half of the marble of Shyam to Tanmay, the total number of marbles with Tanmay = 5x+$\\ \\frac{\\ 1}{2}\\times\\ 8x$ = 9x\nAfter giving 18 marbles to Uday, Tanmay will have 9x-18 and Uday will have 5x+18\nNow, $\\ \\dfrac{\\ 9x-18}{5x+18}$  = $\\ \\frac{\\ 3}{4}$\n=> x = 6\nHence, the total number of marbles with them = $6\\times\\ 5\\times\\ 4$ =120"
+    },
+    {
+      "qid": "quant-1053",
+      "passage_text": "",
+      "question_text": "'Ring Throw' is a game in which there are ten objects arranged in a row. The participant has to throw three identical rings simultaneously such that each ring must encircle a different object. The participant will win only if the rings land on three different objects such that no two objects are adjacent to each other. The winner of the game is called a 'Ringham'. In how many different ways can a participant become a Ringham?",
+      "options": [],
+      "correct_option_data": "56",
+      "solution_text": "Total number of ways of selecting 3 different objects from 10 objects = $^{10}C_{3} = 120$ ways\nA participant can win only when no encircled objects are adjacent to each other.\nSo, we have to eliminate the cases where two rings or three rings land on objects adjacent to each other.\nNumber of ways of selecting three objects in which exactly two objects are adjacent\nCase I: When the first and the second objects are selected\nIn this case, third object cannot be selected.\nSo, total number of ways = 7\nCase II: When the last and the second last objects are selected\nIn this case, the eighth object cannot be selected\nSo, total number of ways = 7\nCase II: When the two objects are selected such that none of them is from the extremes\nIn this case, the objects preceding as well as succeeding the selected pair cannot be selected\nSo, total number of ways = 7 * 6 = 42\nNumber of ways of selecting exactly three adjacent objects = 8\nTherefore, the number of ways of selecting three objects such that no two are adjacent to each other\n=120 - (7 + 7 + 42 + 8) = 56 ways.\nHence, 56 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n'Ring Throw' is a game in which there are ten objects arranged in a row. The participant has to throw three identical rings simultaneously such that each ring must encircle a different object. The participant will win only if the rings land on three different objects such that no two objects are adjacent to each other. The winner of the game is called a 'Ringham'. In how many different ways can a participant become a Ringham?\n\n**Options:**\n\n**Correct Answer:** 56\n\n**Solution:**\nTotal number of ways of selecting 3 different objects from 10 objects = $^{10}C_{3} = 120$ ways\nA participant can win only when no encircled objects are adjacent to each other.\nSo, we have to eliminate the cases where two rings or three rings land on objects adjacent to each other.\nNumber of ways of selecting three objects in which exactly two objects are adjacent\nCase I: When the first and the second objects are selected\nIn this case, third object cannot be selected.\nSo, total number of ways = 7\nCase II: When the last and the second last objects are selected\nIn this case, the eighth object cannot be selected\nSo, total number of ways = 7\nCase II: When the two objects are selected such that none of them is from the extremes\nIn this case, the objects preceding as well as succeeding the selected pair cannot be selected\nSo, total number of ways = 7 * 6 = 42\nNumber of ways of selecting exactly three adjacent objects = 8\nTherefore, the number of ways of selecting three objects such that no two are adjacent to each other\n=120 - (7 + 7 + 42 + 8) = 56 ways.\nHence, 56 is the correct answer."
+    },
+    {
+      "qid": "quant-1054",
+      "passage_text": "",
+      "question_text": "A tank can be filled with two liquids A and B of different viscosity. Due to the viscosity, the liquids travel at different speeds in the pipe. The tank is equipped with 3 similar pipes. Liquid A can fill the tank in 10 hours if all the three pipes are used. Liquid B can fill the tank in 12 hours if 2 pipes are used. If a pipe can dispense only 1 liquid at a time, what is the minimum time needed to fill that tank with liquids A and B mixed in the ratio 3:7 ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7 hrs 42 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8 hrs 36 mins",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6 hrs 48 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9 hrs 12 mins",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us first calculate the time needed for a liquid to fill the tank if only 1 pipe is used. \nSince A takes 10 hours when 3 pipes are used, it will take 3 x 10 = 30 hours when only 1 pipe is used. \nSince B takes 12 hours when 2 pipes are used, it will take 2 x 12 = 24 hours when only 1 pipe is used. \nLet the capacity of the tank be $120x$ units. \nSpeed of liquid A = $\\dfrac{120x}{30} = 4x$ units/pipe/hour.\nSpeed of liquid B = $\\dfrac{120x}{24} = 5x$ units/pipe/hour.\nNow, volume of liquid A needed $V_{a} = \\dfrac{3}{3+7} \\times 120x = 36x$ units \nVolume of liquid B needed $V_{b} = \\dfrac{7}{3+7} \\times 120x = 84x$ units \nFor the minimum amount of time, we first fill the required amount of liquid A (since it is the slower of the two liquids) as fast as possible. We do that by using all the three pipes to fill the tank with liquid A.\nThus, time  needed to fill the tank with the required amount of liquid A $t_{a} = \\dfrac{36x}{4x \\times 3} = 3$ hrs\nTime needed to fill the tank with the required amount of liquid B $t_{b} = \\dfrac{84x}{5x \\times 3} = 5.6 hrs = 5 hr 36 min$\nThus the total time needed = 3 hr + 5 hr 36 min = 8 hr 36 min",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank can be filled with two liquids A and B of different viscosity. Due to the viscosity, the liquids travel at different speeds in the pipe. The tank is equipped with 3 similar pipes. Liquid A can fill the tank in 10 hours if all the three pipes are used. Liquid B can fill the tank in 12 hours if 2 pipes are used. If a pipe can dispense only 1 liquid at a time, what is the minimum time needed to fill that tank with liquids A and B mixed in the ratio 3:7 ?\n\n**Options:**\n- **A**. 7 hrs 42 mins\n- **B**. 8 hrs 36 mins ✅\n- **C**. 6 hrs 48 mins\n- **D**. 9 hrs 12 mins\n\n**Correct Answer:** null\n\n**Solution:**\nLet us first calculate the time needed for a liquid to fill the tank if only 1 pipe is used. \nSince A takes 10 hours when 3 pipes are used, it will take 3 x 10 = 30 hours when only 1 pipe is used. \nSince B takes 12 hours when 2 pipes are used, it will take 2 x 12 = 24 hours when only 1 pipe is used. \nLet the capacity of the tank be $120x$ units. \nSpeed of liquid A = $\\dfrac{120x}{30} = 4x$ units/pipe/hour.\nSpeed of liquid B = $\\dfrac{120x}{24} = 5x$ units/pipe/hour.\nNow, volume of liquid A needed $V_{a} = \\dfrac{3}{3+7} \\times 120x = 36x$ units \nVolume of liquid B needed $V_{b} = \\dfrac{7}{3+7} \\times 120x = 84x$ units \nFor the minimum amount of time, we first fill the required amount of liquid A (since it is the slower of the two liquids) as fast as possible. We do that by using all the three pipes to fill the tank with liquid A.\nThus, time  needed to fill the tank with the required amount of liquid A $t_{a} = \\dfrac{36x}{4x \\times 3} = 3$ hrs\nTime needed to fill the tank with the required amount of liquid B $t_{b} = \\dfrac{84x}{5x \\times 3} = 5.6 hrs = 5 hr 36 min$\nThus the total time needed = 3 hr + 5 hr 36 min = 8 hr 36 min"
+    },
+    {
+      "qid": "quant-1055",
+      "passage_text": "",
+      "question_text": "The side BC of a triangle ABC with area 48 square units, lies on x=-6. If the length of BC is 8 units, what is the minimum possible distance of the vertex A from (8,3)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1 unit",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2 units",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4 units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Area of triangle = ½*base*height => 48 = ½ * 8* height\n=>height = 12 units\nFor height = 12 units, the vertex A should lie on either x=-18 or x=6.\nSince, for minimum distance from (8,3), A should lie on x=6.\nThe minimum distance of (8,3) from x=6 is equal to 8-6=2 units",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe side BC of a triangle ABC with area 48 square units, lies on x=-6. If the length of BC is 8 units, what is the minimum possible distance of the vertex A from (8,3)?\n\n**Options:**\n- **A**. 1 unit\n- **B**. 2 units ✅\n- **C**. 3 units\n- **D**. 4 units\n\n**Correct Answer:** null\n\n**Solution:**\nArea of triangle = ½*base*height => 48 = ½ * 8* height\n=>height = 12 units\nFor height = 12 units, the vertex A should lie on either x=-18 or x=6.\nSince, for minimum distance from (8,3), A should lie on x=6.\nThe minimum distance of (8,3) from x=6 is equal to 8-6=2 units"
+    },
+    {
+      "qid": "quant-1056",
+      "passage_text": "",
+      "question_text": "Four racers are running around a circular track at speed 1m/s, 3m/s, 4m/s and 6m/s in the same direction. What is the number of distinct points around the circular track at which two or more racers meet?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The racers are running in the same direction, thus the number of points of intersections between any two racers= |a-b|, where a and b are the ratio of the speed of the racers.\nThe number of pairs of racers: $^4C_2$=6\nThus, \n1. The number of points of intersections between the first racer and second racer =  |1-3|=2 points i.e  $\\left\\{\\pi\\ ,\\ 2\\pi\\ \\right\\}$\n2. The number of points of intersections between the first racer and third racer = |1-4|=3 points i.e $\\left\\{2\\pi\\ ,\\ \\frac{2\\pi\\ }{3},\\ \\frac{4\\pi\\ }{3}\\right\\}$\n3. The number of points of intersections between the first racer and fourth racer = |1-6|=5 points i.e $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5}\\right\\}$\n4. The number of points of intersections between the second racer and third racer = |3-4|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n5.The number of points of intersections between the second racer and fourth racer = (3,6) |1-2|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n6. The number of points of intersections between the third racer and fourth racer = (4,6) |2-3|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\nThus,  number of different points of intersection: $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5},\\pi\\ ,\\frac{2\\pi\\ }{3},\\frac{4\\pi\\ }{3}\\right\\}$ 8 points\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour racers are running around a circular track at speed 1m/s, 3m/s, 4m/s and 6m/s in the same direction. What is the number of distinct points around the circular track at which two or more racers meet?\n\n**Options:**\n- **A**. 6\n- **B**. 13\n- **C**. 8 ✅\n- **D**. 10\n\n**Correct Answer:** null\n\n**Solution:**\nThe racers are running in the same direction, thus the number of points of intersections between any two racers= |a-b|, where a and b are the ratio of the speed of the racers.\nThe number of pairs of racers: $^4C_2$=6\nThus, \n1. The number of points of intersections between the first racer and second racer =  |1-3|=2 points i.e  $\\left\\{\\pi\\ ,\\ 2\\pi\\ \\right\\}$\n2. The number of points of intersections between the first racer and third racer = |1-4|=3 points i.e $\\left\\{2\\pi\\ ,\\ \\frac{2\\pi\\ }{3},\\ \\frac{4\\pi\\ }{3}\\right\\}$\n3. The number of points of intersections between the first racer and fourth racer = |1-6|=5 points i.e $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5}\\right\\}$\n4. The number of points of intersections between the second racer and third racer = |3-4|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n5.The number of points of intersections between the second racer and fourth racer = (3,6) |1-2|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n6. The number of points of intersections between the third racer and fourth racer = (4,6) |2-3|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\nThus,  number of different points of intersection: $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5},\\pi\\ ,\\frac{2\\pi\\ }{3},\\frac{4\\pi\\ }{3}\\right\\}$ 8 points\nOption C"
+    },
+    {
+      "qid": "quant-1057",
+      "passage_text": "",
+      "question_text": "In a rectangle ABCD where AB = 24 cm and BC = 9 cm. Points E and F are midpoints of side AB and CD. A circle is drawn in such a way that its centre coincides with rectangle’s centre. Find out the length of the diameter of the circle if both the lines DE and BF are tangents to the circle?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7.2 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8.4 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9.2 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6.4  cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us draw the diagram.\nWe know that E and F are the midpoints of AB and CD hence AE = EB= DF = FC = 12 cm\nChanging the given lengths in coordinate system by assuming D at the origin and B at (24, 9).DC will become x axis and DA will become y axis. We can find out the coordinate of each point.\nWe can see from the symmetry that DE is parallel to line FB. The diameter of circle is essentially the perpendicular distance between line DE and FB \nEquation of line DE \n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{12 - 0}$(x - 0)\n$\\Rightarrow$  3x - 4y = 0         ... (1)\nSimilarly the equation of line FB\n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{24 - 12}$(x - 12)\n$\\Rightarrow$  3x - 4y = 36      ...  (2)\nDistance between parallel lines DE and FB\nd = |$\\frac{36 - 0}{\\sqrt{3^2+4^2}}$|\nd = 7.2 cm\nTherefore we can say that diameter of the circle = 7.2 cm\nHence option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a rectangle ABCD where AB = 24 cm and BC = 9 cm. Points E and F are midpoints of side AB and CD. A circle is drawn in such a way that its centre coincides with rectangle’s centre. Find out the length of the diameter of the circle if both the lines DE and BF are tangents to the circle?\n\n**Options:**\n- **A**. 7.2 cm ✅\n- **B**. 8.4 cm\n- **C**. 9.2 cm\n- **D**. 6.4  cm\n\n**Correct Answer:** null\n\n**Solution:**\nLet us draw the diagram.\nWe know that E and F are the midpoints of AB and CD hence AE = EB= DF = FC = 12 cm\nChanging the given lengths in coordinate system by assuming D at the origin and B at (24, 9).DC will become x axis and DA will become y axis. We can find out the coordinate of each point.\nWe can see from the symmetry that DE is parallel to line FB. The diameter of circle is essentially the perpendicular distance between line DE and FB \nEquation of line DE \n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{12 - 0}$(x - 0)\n$\\Rightarrow$  3x - 4y = 0         ... (1)\nSimilarly the equation of line FB\n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{24 - 12}$(x - 12)\n$\\Rightarrow$  3x - 4y = 36      ...  (2)\nDistance between parallel lines DE and FB\nd = |$\\frac{36 - 0}{\\sqrt{3^2+4^2}}$|\nd = 7.2 cm\nTherefore we can say that diameter of the circle = 7.2 cm\nHence option A is the correct answer."
+    },
+    {
+      "qid": "quant-1058",
+      "passage_text": "",
+      "question_text": "There are 3 test-matches going on.The first one is between India and Australia. The probability that India wins is $\\frac{1}{6}$. The probability that Australia wins is $\\frac{1}{5}$. The second test is between Sri Lanka and England where the chances of Sri Lanka winning is $\\frac{1}{10}$ and England winning is $\\frac{1}{5}$. In the third match between South Africa and Pakistan, the chances of South Africa winning is $\\frac{1}{3}$ and that of Pakistan winning is $\\frac{1}{8}$. Find the probability that all 3 matches end in a draw.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "729/1600",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1729/7200",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1729/3600",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the match between India and Australia,\nP(India wins) = $\\frac{1}{6}$\nP(Australia wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{5}-\\frac{1}{6}=\\frac{19}{30}$\nIn the match between Sri Lanka and England,\nP(Sri Lanka wins) = $\\frac{1}{10}$\nP(England wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{10}-\\frac{1}{5}\\ =\\ \\frac{7}{10}$\nIn the match between South Africa and Pakistan,\nP(South Africa wins) = $\\frac{1}{3}$\nP(Australia wins) = $\\frac{1}{8}$\nP(Draw) = $1-\\frac{1}{3}-\\frac{1}{8}=\\frac{13}{24}$\nP(All matches draw) = P(Match 1 draw) + P(Match 2 draw)+ P(Match 3 draw)\n=$\\frac{19}{30}\\times\\ \\frac{7}{10}\\times\\ \\frac{13}{24}=\\frac{1729}{7200}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 3 test-matches going on.The first one is between India and Australia. The probability that India wins is $\\frac{1}{6}$. The probability that Australia wins is $\\frac{1}{5}$. The second test is between Sri Lanka and England where the chances of Sri Lanka winning is $\\frac{1}{10}$ and England winning is $\\frac{1}{5}$. In the third match between South Africa and Pakistan, the chances of South Africa winning is $\\frac{1}{3}$ and that of Pakistan winning is $\\frac{1}{8}$. Find the probability that all 3 matches end in a draw.\n\n**Options:**\n- **A**. 729/1600\n- **B**. 1/6\n- **C**. 1729/7200 ✅\n- **D**. 1729/3600\n\n**Correct Answer:** null\n\n**Solution:**\nIn the match between India and Australia,\nP(India wins) = $\\frac{1}{6}$\nP(Australia wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{5}-\\frac{1}{6}=\\frac{19}{30}$\nIn the match between Sri Lanka and England,\nP(Sri Lanka wins) = $\\frac{1}{10}$\nP(England wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{10}-\\frac{1}{5}\\ =\\ \\frac{7}{10}$\nIn the match between South Africa and Pakistan,\nP(South Africa wins) = $\\frac{1}{3}$\nP(Australia wins) = $\\frac{1}{8}$\nP(Draw) = $1-\\frac{1}{3}-\\frac{1}{8}=\\frac{13}{24}$\nP(All matches draw) = P(Match 1 draw) + P(Match 2 draw)+ P(Match 3 draw)\n=$\\frac{19}{30}\\times\\ \\frac{7}{10}\\times\\ \\frac{13}{24}=\\frac{1729}{7200}$"
+    },
+    {
+      "qid": "quant-1059",
+      "passage_text": "",
+      "question_text": "Aman owns a sweet shop. Naman opens a sweet shop in front of him. To drive him out of business in the first week, Aman gives a 50% discount on sweets. But Naman is a rich man, and manages to stay in the business for another week. Aman had not anticipated this, and suffered a loss equal to the selling price of the sweets he sold in the second week. \nAssuming business was uniform across the two weeks, which is the approximate markup percentage of Aman?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16.25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "33.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let CP=A\nMP=A(1+x)\nDiscounted SP=$\\frac{1}{2}$*A(1+x)\nGiven \n2$\\times\\ $CP - 2$\\times\\ $SP=SP\n2A-A(1+x)=$\\frac{1}{2}$*A(1+x)\n2=$\\frac{3}{2}$*(1+x)\nx=$\\frac{1}{3}$=33.33%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAman owns a sweet shop. Naman opens a sweet shop in front of him. To drive him out of business in the first week, Aman gives a 50% discount on sweets. But Naman is a rich man, and manages to stay in the business for another week. Aman had not anticipated this, and suffered a loss equal to the selling price of the sweets he sold in the second week. \nAssuming business was uniform across the two weeks, which is the approximate markup percentage of Aman?\n\n**Options:**\n- **A**. 16.25%\n- **B**. 20%\n- **C**. 33.33% ✅\n- **D**. 37%\n\n**Correct Answer:** null\n\n**Solution:**\nLet CP=A\nMP=A(1+x)\nDiscounted SP=$\\frac{1}{2}$*A(1+x)\nGiven \n2$\\times\\ $CP - 2$\\times\\ $SP=SP\n2A-A(1+x)=$\\frac{1}{2}$*A(1+x)\n2=$\\frac{3}{2}$*(1+x)\nx=$\\frac{1}{3}$=33.33%"
+    },
+    {
+      "qid": "quant-1060",
+      "passage_text": "",
+      "question_text": "While racing on track 1, A beats B by $40$m, and while running on track 2, B beats C by $40$m. If, on a 300m track, A beats C by 200m, what could be the maximum possible difference between the lengths of tracks 1 and 2 if both the lengths are integers?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1199",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1260",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "999",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the lengths of tracks 1 and 2 be $x$ and $y$, respectively, and the speeds of $A, B$ and $C$ be $a, b$ and $c$, respectively.\nSince, on track 1, A beats B by 40m, the ratio of speeds of A and B = $a:b=(x):(x-40)$\nWhile running on track 2, B beats C by 40m. Thus, the ratio of speeds of B and C = $b:c=(y):(y-40)$\nThus, the ratio $a:b:c=(xy):(y)(x-40):(x-40)(y-40)$\nWe are given that, on a 300m track, A beats C by 200m.\nThus, the ratio of speeds of A and C = $a:c=300:100=3:1$\nThus, $\\frac{xy}{\\left(x-40\\right)\\left(y-40\\right)}=\\frac{3}{1}$\n$xy=3xy-120x-120y+4800$\n$120x-2xy+120y=4800$\n$60x-xy+60y=2400$\n$(x-60)(y-60)=1200$\nTo find the maximum difference between the $x$ and $y$, the factors of 1200 must be $1$ and $1200$\nLet $x-60=1$, then $y-60=1200$\nThus, $x=61$ and $y=1260$.\nHence, the required difference = $1260-61=1199$.\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhile racing on track 1, A beats B by $40$m, and while running on track 2, B beats C by $40$m. If, on a 300m track, A beats C by 200m, what could be the maximum possible difference between the lengths of tracks 1 and 2 if both the lengths are integers?\n\n**Options:**\n- **A**. 1199 ✅\n- **B**. 1200\n- **C**. 1260\n- **D**. 999\n\n**Correct Answer:** null\n\n**Solution:**\nLet the lengths of tracks 1 and 2 be $x$ and $y$, respectively, and the speeds of $A, B$ and $C$ be $a, b$ and $c$, respectively.\nSince, on track 1, A beats B by 40m, the ratio of speeds of A and B = $a:b=(x):(x-40)$\nWhile running on track 2, B beats C by 40m. Thus, the ratio of speeds of B and C = $b:c=(y):(y-40)$\nThus, the ratio $a:b:c=(xy):(y)(x-40):(x-40)(y-40)$\nWe are given that, on a 300m track, A beats C by 200m.\nThus, the ratio of speeds of A and C = $a:c=300:100=3:1$\nThus, $\\frac{xy}{\\left(x-40\\right)\\left(y-40\\right)}=\\frac{3}{1}$\n$xy=3xy-120x-120y+4800$\n$120x-2xy+120y=4800$\n$60x-xy+60y=2400$\n$(x-60)(y-60)=1200$\nTo find the maximum difference between the $x$ and $y$, the factors of 1200 must be $1$ and $1200$\nLet $x-60=1$, then $y-60=1200$\nThus, $x=61$ and $y=1260$.\nHence, the required difference = $1260-61=1199$.\nThe answer is option A."
+    },
+    {
+      "qid": "quant-1061",
+      "passage_text": "",
+      "question_text": "Two analog clocks are set at 12:00am on Monday ,one clock gains 2 minutes every hour and another clock loses 3 minutes every hour.When will they show the same time again.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12:00am Friday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12:00am Saturday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12:00am Sunday",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12:00pm Friday",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Now \n1st clock gains 2 minutes in 1 hour\n2nd clock loses 3 minutes in 1 hour\nso this means the net lag of time between them after 1 hour :5minutes\nNow they will show same time again if the lag between them becomes 12hrs or 720 minutes \nTherefore, they will show same time after (720)/5 = 144hours.\n144 hours is 6 days\nso they will meet after exactly 6 days i.e Sunday 12:00 am.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo analog clocks are set at 12:00am on Monday ,one clock gains 2 minutes every hour and another clock loses 3 minutes every hour.When will they show the same time again.\n\n**Options:**\n- **A**. 12:00am Friday\n- **B**. 12:00am Saturday\n- **C**. 12:00am Sunday ✅\n- **D**. 12:00pm Friday\n\n**Correct Answer:** null\n\n**Solution:**\nNow \n1st clock gains 2 minutes in 1 hour\n2nd clock loses 3 minutes in 1 hour\nso this means the net lag of time between them after 1 hour :5minutes\nNow they will show same time again if the lag between them becomes 12hrs or 720 minutes \nTherefore, they will show same time after (720)/5 = 144hours.\n144 hours is 6 days\nso they will meet after exactly 6 days i.e Sunday 12:00 am."
+    },
+    {
+      "qid": "quant-1062",
+      "passage_text": "",
+      "question_text": "What is the maximum number chords of length 10 cm can be drawn in a circle of radius 10 cm such that no two chords intersect each other?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Infinite number of chords can be drawn",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us consider a chord as shown in the above figure.\nThe angle subtended by a chord at the center=60 degrees\nNumber of chords possible= 360/60=6\nThe maximum number of such triangles has to be formed so that the number of chords will be maximum.\nIt is a regular hexagon with side 10 cm.\nThe maximum number of chords = 6\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the maximum number chords of length 10 cm can be drawn in a circle of radius 10 cm such that no two chords intersect each other?\n\n**Options:**\n- **A**. 7\n- **B**. 5\n- **C**. 6 ✅\n- **D**. Infinite number of chords can be drawn\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider a chord as shown in the above figure.\nThe angle subtended by a chord at the center=60 degrees\nNumber of chords possible= 360/60=6\nThe maximum number of such triangles has to be formed so that the number of chords will be maximum.\nIt is a regular hexagon with side 10 cm.\nThe maximum number of chords = 6\nC is the correct answer."
+    },
+    {
+      "qid": "quant-1063",
+      "passage_text": "",
+      "question_text": "Sachin buys some pen, pencils and erasers using a certain amount of money. The total price of 1 pencil and 1 eraser is equal to the price of 1 pen. He bought thrice as many pens as pencils and half as many pencils as erasers. If he had exchanged the number of pens and erasers, he would have saved Rs 20. How much money did he spend on buying pencils?\n\nEnter -1 if the answer can't be determined.",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "Assuming the price of 1 pencil and 1 eraser is a and b respectively. \nHence the price of 1 pen = a+b \nAssume, the number of pencils bought = x, then the number of erasers bought  = 2x and the number of pens bought  = 3x\nThe total money spent before exchanging = ax + 2xb+ 3x(a+b) = 4ax+5xb\nAfter exchanging, the money spent = ax+ 3xb + 2x(a+b) = 3ax+5xb\nHence, the money saved = ax = 20 (given)\n=> The money spent on buying pencils = 20",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSachin buys some pen, pencils and erasers using a certain amount of money. The total price of 1 pencil and 1 eraser is equal to the price of 1 pen. He bought thrice as many pens as pencils and half as many pencils as erasers. If he had exchanged the number of pens and erasers, he would have saved Rs 20. How much money did he spend on buying pencils?\n\nEnter -1 if the answer can't be determined.\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nAssuming the price of 1 pencil and 1 eraser is a and b respectively. \nHence the price of 1 pen = a+b \nAssume, the number of pencils bought = x, then the number of erasers bought  = 2x and the number of pens bought  = 3x\nThe total money spent before exchanging = ax + 2xb+ 3x(a+b) = 4ax+5xb\nAfter exchanging, the money spent = ax+ 3xb + 2x(a+b) = 3ax+5xb\nHence, the money saved = ax = 20 (given)\n=> The money spent on buying pencils = 20"
+    },
+    {
+      "qid": "quant-1064",
+      "passage_text": "",
+      "question_text": "A coin of diameter $3 cm$ is thrown on a square mat of area $100 cm ^2$. What is the probability that the coin will fall entirely within the square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.7225",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.64",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.16",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0.49",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The area of the square mat is $100 cm^2$. Therefore, the side of the mat must be $\\sqrt{100}$ = $10 cm$. \nThe centre of the coin must be at least $1.5 cm$ away from the edge of the mat if the coin were to lie completely within the mat. Therefore, the area within which the centre of the coin can fall will be a square of side $10 - 2*1.5$ = $7 cm$.\nTherefore, the area inside which the centre of the coin can fall = $49 cm^2$.\nTotal area = $100 cm^2$.\nTherefore, the probability is $\\frac{49}{100}$ = $0.49$. Hence, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA coin of diameter $3 cm$ is thrown on a square mat of area $100 cm ^2$. What is the probability that the coin will fall entirely within the square?\n\n**Options:**\n- **A**. 0.7225\n- **B**. 0.64\n- **C**. 0.16\n- **D**. 0.49 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe area of the square mat is $100 cm^2$. Therefore, the side of the mat must be $\\sqrt{100}$ = $10 cm$. \nThe centre of the coin must be at least $1.5 cm$ away from the edge of the mat if the coin were to lie completely within the mat. Therefore, the area within which the centre of the coin can fall will be a square of side $10 - 2*1.5$ = $7 cm$.\nTherefore, the area inside which the centre of the coin can fall = $49 cm^2$.\nTotal area = $100 cm^2$.\nTherefore, the probability is $\\frac{49}{100}$ = $0.49$. Hence, option D is the right answer."
+    },
+    {
+      "qid": "quant-1065",
+      "passage_text": "",
+      "question_text": "Hour hand and minute hand of a clock coincides every 64 minutes. How much time time does the clock gain or lose in a day?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$32\\ \\frac{8}{11}$ minutes gain",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$32\\ \\frac{8}{11}$ minutes lose",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$31\\ \\frac{4}{11}$ minutes gain",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$31\\ \\frac{4}{11}$ minutes lose",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In a correct clock the hour and minute hands coincide after every $\\frac{360}{5.5}=\\frac{720}{11}\\ $ minutes or $65\\ \\frac{5}{11}$ minutes\nTherefore, 64 minutes of correct clock = $65\\ \\frac{5}{11}$ minutes of the faulty clock\nTherefore, 60 minutes of correct clock = $61\\ \\frac{4}{11}$ minutes of the faulty clock\nHence, the incorrect clock gains $1\\ \\frac{4}{11}$ minutes per hour\nTherefore, total gain in 24 hr = $\\frac{15}{11}\\times24=\\ 32\\ \\frac{8}{11}$ minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHour hand and minute hand of a clock coincides every 64 minutes. How much time time does the clock gain or lose in a day?\n\n**Options:**\n- **A**. $32\\ \\frac{8}{11}$ minutes gain ✅\n- **B**. $32\\ \\frac{8}{11}$ minutes lose\n- **C**. $31\\ \\frac{4}{11}$ minutes gain\n- **D**. $31\\ \\frac{4}{11}$ minutes lose\n\n**Correct Answer:** null\n\n**Solution:**\nIn a correct clock the hour and minute hands coincide after every $\\frac{360}{5.5}=\\frac{720}{11}\\ $ minutes or $65\\ \\frac{5}{11}$ minutes\nTherefore, 64 minutes of correct clock = $65\\ \\frac{5}{11}$ minutes of the faulty clock\nTherefore, 60 minutes of correct clock = $61\\ \\frac{4}{11}$ minutes of the faulty clock\nHence, the incorrect clock gains $1\\ \\frac{4}{11}$ minutes per hour\nTherefore, total gain in 24 hr = $\\frac{15}{11}\\times24=\\ 32\\ \\frac{8}{11}$ minutes"
+    },
+    {
+      "qid": "quant-1066",
+      "passage_text": "",
+      "question_text": "Six men and five women can do a work in 8 days. Fourteen men and four women can do the same work in 4 days. What is the difference between the number of days in which one woman can complete the entire work and the number of days in which a man can complete it?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$127\\frac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$112\\frac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$122\\frac{2}{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$112\\frac{1}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume that each man can do 'm' units/day.\nEach woman can do 'w' units/day.\n(6m+5w)8 = (14m+4w)4\n48m+40w = 56m+16w\nm=3w\nTotal work in woman days = (23*8)w = 184 days\nTotal work in man days = (23*8/3)m =184/3 days \nDifference = $122\\frac{2}{3}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSix men and five women can do a work in 8 days. Fourteen men and four women can do the same work in 4 days. What is the difference between the number of days in which one woman can complete the entire work and the number of days in which a man can complete it?\n\n**Options:**\n- **A**. $127\\frac{2}{3}$\n- **B**. $112\\frac{2}{3}$\n- **C**. $122\\frac{2}{3}$ ✅\n- **D**. $112\\frac{1}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that each man can do 'm' units/day.\nEach woman can do 'w' units/day.\n(6m+5w)8 = (14m+4w)4\n48m+40w = 56m+16w\nm=3w\nTotal work in woman days = (23*8)w = 184 days\nTotal work in man days = (23*8/3)m =184/3 days \nDifference = $122\\frac{2}{3}$"
+    },
+    {
+      "qid": "quant-1067",
+      "passage_text": "",
+      "question_text": "Rinesh and Rinsha are moving in the same direction around a circular track of radius 7 m. The ratio of the speed of Rinesh to Rinsha is 7:1. How many times are they diametrically opposite to each other during a lap of Rinsha?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The ratio of the speed of Rinesh to Rinsha = 7:1 \nIf the ratio of the speed of two persons moving in the same direction on a circular track is in the ratio of a:b, then the number of distinct meeting points = |a-b|.\nDuring one lap of Rinsha, Rinesh will do 7 laps around the circular track, i.e. they will meet at 6 distinct points.\nThe number of times they are diametrically opposite to each other is the number of distinct points they will meet.\nThey will be diametrically opposite for 6 times during one lap of Rinsha.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRinesh and Rinsha are moving in the same direction around a circular track of radius 7 m. The ratio of the speed of Rinesh to Rinsha is 7:1. How many times are they diametrically opposite to each other during a lap of Rinsha?\n\n**Options:**\n\n**Correct Answer:** 6\n\n**Solution:**\nThe ratio of the speed of Rinesh to Rinsha = 7:1 \nIf the ratio of the speed of two persons moving in the same direction on a circular track is in the ratio of a:b, then the number of distinct meeting points = |a-b|.\nDuring one lap of Rinsha, Rinesh will do 7 laps around the circular track, i.e. they will meet at 6 distinct points.\nThe number of times they are diametrically opposite to each other is the number of distinct points they will meet.\nThey will be diametrically opposite for 6 times during one lap of Rinsha."
+    },
+    {
+      "qid": "quant-1068",
+      "passage_text": "",
+      "question_text": "If y years ago, Anand's age was thrice Ananth's age. y years hence, Anand's age will be twice Ananth's age. Ratio of the present  age of Anand and Ananth is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7:3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the present age of Anand be a and that of Ananth be b\ny years ago, \na - y = 3(b-y)\na = 3b - 3y +y\na = 3b - 2y  --- Eq 1\ny years hence, \na + y = 2(b+y)\na = 2b + 2y - y\na = 2b + y   --- Eq 2\nOn equating Eq 1 and 2, we get\n3b - 2y = 2b + y\nb = 3y\nOn substituting the value of b in Eq i, we get \na = 9y - 2y = 7y\nThe ratio of their present ages = 7y : 3y \n= 7: 3",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf y years ago, Anand's age was thrice Ananth's age. y years hence, Anand's age will be twice Ananth's age. Ratio of the present  age of Anand and Ananth is\n\n**Options:**\n- **A**. 9:4\n- **B**. 7:4\n- **C**. 7:3 ✅\n- **D**. 5:2\n\n**Correct Answer:** null\n\n**Solution:**\nLet the present age of Anand be a and that of Ananth be b\ny years ago, \na - y = 3(b-y)\na = 3b - 3y +y\na = 3b - 2y  --- Eq 1\ny years hence, \na + y = 2(b+y)\na = 2b + 2y - y\na = 2b + y   --- Eq 2\nOn equating Eq 1 and 2, we get\n3b - 2y = 2b + y\nb = 3y\nOn substituting the value of b in Eq i, we get \na = 9y - 2y = 7y\nThe ratio of their present ages = 7y : 3y \n= 7: 3"
+    },
+    {
+      "qid": "quant-1069",
+      "passage_text": "",
+      "question_text": "A number is represented as 1212 in base N and as 250 in base N+2. Find the sum of even factors of the number.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "144",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "180",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The number in base 10 = $N^3+2N^2+N+2\\ $ = $2\\left(N+2\\right)^2+5\\left(N+2\\right)$\nThus,\n$N^3+2N^2+N+2\\ =\\ 2\\left(N+2\\right)^2+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2\\left(N^2+4N+4\\right)+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2N^2+8N+8+5N+10$\n$N^3-12N-16=0$\nBy hit and trial we see that N = -2 satisfies the equation, hence N+2 is a factor. Dividing the expression by N+2, we get,\n$N^3-12N-16=\\left(N+2\\right)^2\\left(N-4\\right)$\nSo it has 2 factors, N = -2 and N = 4.\nSince base cannot be negative, N = 4 is the right base.\nN + 2 =6\nSo, in base 6, the number is 250.\nHence in base 10 (decimal system), N = $2\\times\\ 6^2+5\\times\\ 6=72+30=102$\n102 = $2\\times\\ 3\\times\\ 17$\nHence, sum of even powers = $2^1\\left(3^0+3^1\\right)\\left(17^0+17^1\\right)=2\\times\\ 4\\times\\ 18=144$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number is represented as 1212 in base N and as 250 in base N+2. Find the sum of even factors of the number.\n\n**Options:**\n- **A**. 144 ✅\n- **B**. 72\n- **C**. 90\n- **D**. 180\n\n**Correct Answer:** null\n\n**Solution:**\nThe number in base 10 = $N^3+2N^2+N+2\\ $ = $2\\left(N+2\\right)^2+5\\left(N+2\\right)$\nThus,\n$N^3+2N^2+N+2\\ =\\ 2\\left(N+2\\right)^2+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2\\left(N^2+4N+4\\right)+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2N^2+8N+8+5N+10$\n$N^3-12N-16=0$\nBy hit and trial we see that N = -2 satisfies the equation, hence N+2 is a factor. Dividing the expression by N+2, we get,\n$N^3-12N-16=\\left(N+2\\right)^2\\left(N-4\\right)$\nSo it has 2 factors, N = -2 and N = 4.\nSince base cannot be negative, N = 4 is the right base.\nN + 2 =6\nSo, in base 6, the number is 250.\nHence in base 10 (decimal system), N = $2\\times\\ 6^2+5\\times\\ 6=72+30=102$\n102 = $2\\times\\ 3\\times\\ 17$\nHence, sum of even powers = $2^1\\left(3^0+3^1\\right)\\left(17^0+17^1\\right)=2\\times\\ 4\\times\\ 18=144$"
+    },
+    {
+      "qid": "quant-1070",
+      "passage_text": "",
+      "question_text": "In a class of 20 students, the average age decreases by 2 years when a new student joins. 3 more students whose ages are 12, 13 and 17 years join. The ratio of new average to the original average is $\\frac{p}{q},$ where p,q are co-prime integers. Find p+q.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the original average is a.\nAfter 1 student joins, the sum of the ages = 21(a-2) = 21a-42\nAfter three more students join, the sum of age = 21a-42+12+13+17 = 21a\nThe new average age = $\\frac{21a}{20+1+3}=\\ \\frac{21a}{24}=\\frac{7a}{8}$\nThe ratio of new average to the original average = $\\frac{7}{8}=\\frac{p}{q}$\np+q = 7+8 = 15",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 20 students, the average age decreases by 2 years when a new student joins. 3 more students whose ages are 12, 13 and 17 years join. The ratio of new average to the original average is $\\frac{p}{q},$ where p,q are co-prime integers. Find p+q.\n\n**Options:**\n- **A**. 15 ✅\n- **B**. 45\n- **C**. 30\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the original average is a.\nAfter 1 student joins, the sum of the ages = 21(a-2) = 21a-42\nAfter three more students join, the sum of age = 21a-42+12+13+17 = 21a\nThe new average age = $\\frac{21a}{20+1+3}=\\ \\frac{21a}{24}=\\frac{7a}{8}$\nThe ratio of new average to the original average = $\\frac{7}{8}=\\frac{p}{q}$\np+q = 7+8 = 15"
+    },
+    {
+      "qid": "quant-1071",
+      "passage_text": "",
+      "question_text": "The speed of an elevator varies linearly with the square-root of the number of people in it. When 9 people are there in the lift, it can go from 1st floor to the 3rd floor, which are 100 m apart, in 10 sec. When there are 4 people in the lift, it can move from 5th floor to the 12th floor, which are 700 m apart, in 35 seconds. What is the minimum number of people that should be present in the lift so that it stops moving?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the speed of the elevator be $a+k\\sqrt{p}$.\nWhere a and k are constant, and p is the number of people in the lift.\nSpeed when 9 people are there is $a+k\\sqrt{9}=100/10=10 m/s$.\n=> $a+3k=10$\nSimilarly, when 4 people are there in the lift, the speed is $a+k\\sqrt{4}= a+2k=700/35=20m/s$\n=> k=-10 and a=40 m/s\nThe lift will stop moving when it speed is zero. In that case\n$a+k\\sqrt{p}=0$\n$40=10\\sqrt{p}$\n$a+k\\sqrt{p}=0$\n=> p=16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe speed of an elevator varies linearly with the square-root of the number of people in it. When 9 people are there in the lift, it can go from 1st floor to the 3rd floor, which are 100 m apart, in 10 sec. When there are 4 people in the lift, it can move from 5th floor to the 12th floor, which are 700 m apart, in 35 seconds. What is the minimum number of people that should be present in the lift so that it stops moving?\n\n**Options:**\n- **A**. 24\n- **B**. 20\n- **C**. 12\n- **D**. 16 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the speed of the elevator be $a+k\\sqrt{p}$.\nWhere a and k are constant, and p is the number of people in the lift.\nSpeed when 9 people are there is $a+k\\sqrt{9}=100/10=10 m/s$.\n=> $a+3k=10$\nSimilarly, when 4 people are there in the lift, the speed is $a+k\\sqrt{4}= a+2k=700/35=20m/s$\n=> k=-10 and a=40 m/s\nThe lift will stop moving when it speed is zero. In that case\n$a+k\\sqrt{p}=0$\n$40=10\\sqrt{p}$\n$a+k\\sqrt{p}=0$\n=> p=16"
+    },
+    {
+      "qid": "quant-1072",
+      "passage_text": "",
+      "question_text": "Ramesh goes to a wholesale store and buys certain mangoes at the rate of 12 for 180. He also buys thrice as many apples as mangoes at the rate of 9 for 72. While returning back, one- fourth of the mangoes and one third of the apples get damaged. Damaged fruits have to be discarded as no one buys them. He sells the remaining apples at the price of 3 apples for 50 rupees. At what approximate price should he sell each of the remaining mangoes so that his profit in the entire transaction is 25 percent?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28$\\frac{2}{7}$ rupees",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "26$\\frac{1}{9}$ rupees",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20$\\frac{5}{9}$ rupees",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24$\\frac{1}{3}$ rupees",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let’s assume that Ramesh buys 12 mangoes and 36 apples. So the amount spent by him in buying the fruits is 180 + 288 = 468\nHence, in order to earn a profit of 25 percent, he must earn rupees 468*1.25 = 585.\nIt is given that one third of the apples are damaged. Hence, amount earned from apples = 8*50 = 400. Thus, he needs to make 185 rupees from selling mangoes. Mangoes available for sale are 9. Thus, required selling price is 185/9 = 20$\\frac{5}{9}$ rupees.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRamesh goes to a wholesale store and buys certain mangoes at the rate of 12 for 180. He also buys thrice as many apples as mangoes at the rate of 9 for 72. While returning back, one- fourth of the mangoes and one third of the apples get damaged. Damaged fruits have to be discarded as no one buys them. He sells the remaining apples at the price of 3 apples for 50 rupees. At what approximate price should he sell each of the remaining mangoes so that his profit in the entire transaction is 25 percent?\n\n**Options:**\n- **A**. 28$\\frac{2}{7}$ rupees\n- **B**. 26$\\frac{1}{9}$ rupees\n- **C**. 20$\\frac{5}{9}$ rupees ✅\n- **D**. 24$\\frac{1}{3}$ rupees\n\n**Correct Answer:** null\n\n**Solution:**\nLet’s assume that Ramesh buys 12 mangoes and 36 apples. So the amount spent by him in buying the fruits is 180 + 288 = 468\nHence, in order to earn a profit of 25 percent, he must earn rupees 468*1.25 = 585.\nIt is given that one third of the apples are damaged. Hence, amount earned from apples = 8*50 = 400. Thus, he needs to make 185 rupees from selling mangoes. Mangoes available for sale are 9. Thus, required selling price is 185/9 = 20$\\frac{5}{9}$ rupees."
+    },
+    {
+      "qid": "quant-1073",
+      "passage_text": "",
+      "question_text": "A regular hexagonal ABCDEF is drawn and the lines AE and AD are joined. If the area of triangle AED is 30 square cm, then find the area(in sq cm) of the hexagon.",
+      "options": [],
+      "correct_option_data": "90",
+      "solution_text": "Each interior angle of a regular hexagon is 120$^{\\circ\\ }$ [SInce interior angle of $n$ sided regular polygon = $\\frac{(n-2)180}{n}$]\nIn the figure, the angles are represented using the properties of the isosceles triangle AFE. (${\\angle\\ FEA\\ =\\ \\angle\\ FAE\\ =\\ 30^{\\circ\\ }}$)\nHence, $\\angle\\ AFD\\ =\\ 120^{\\circ\\ }-30^{\\circ\\ }$ = $90^{\\circ\\ }$\nAlso, $\\angle\\ FDA\\ =60^{\\circ\\ }$    (using symmetry)\nAssume the length of the sides of hexagonal is a. DE = a\nIn right triangle DEA, $\\tan\\ 30^{\\circ\\ }$ = $\\frac{DE}{AE}$  => AE = $DE\\sqrt{3}\\ =a\\sqrt{3}$\nArea of DEA = $\\ \\frac{\\ 1}{2}\\times\\ DE\\times\\ AE$ = $\\ \\frac{\\ 1}{2}\\times a\\times a\\sqrt{3}$ = $\\frac{a^2\\sqrt{3}}{2}$  = 30 ....(1)\nTo calculate the area of hexagon, if the AD, BE and CF are joined, the hexagon will be divided into 6 equilateral triangles having side a.\nSo the area of hexagon ABCDEF = $6\\times\\ \\frac{\\sqrt{3}}{4}a^2$  = $\\ \\frac{3\\sqrt{3}}{2}a^2$ = 3*30 =90 (From 1)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA regular hexagonal ABCDEF is drawn and the lines AE and AD are joined. If the area of triangle AED is 30 square cm, then find the area(in sq cm) of the hexagon.\n\n**Options:**\n\n**Correct Answer:** 90\n\n**Solution:**\nEach interior angle of a regular hexagon is 120$^{\\circ\\ }$ [SInce interior angle of $n$ sided regular polygon = $\\frac{(n-2)180}{n}$]\nIn the figure, the angles are represented using the properties of the isosceles triangle AFE. (${\\angle\\ FEA\\ =\\ \\angle\\ FAE\\ =\\ 30^{\\circ\\ }}$)\nHence, $\\angle\\ AFD\\ =\\ 120^{\\circ\\ }-30^{\\circ\\ }$ = $90^{\\circ\\ }$\nAlso, $\\angle\\ FDA\\ =60^{\\circ\\ }$    (using symmetry)\nAssume the length of the sides of hexagonal is a. DE = a\nIn right triangle DEA, $\\tan\\ 30^{\\circ\\ }$ = $\\frac{DE}{AE}$  => AE = $DE\\sqrt{3}\\ =a\\sqrt{3}$\nArea of DEA = $\\ \\frac{\\ 1}{2}\\times\\ DE\\times\\ AE$ = $\\ \\frac{\\ 1}{2}\\times a\\times a\\sqrt{3}$ = $\\frac{a^2\\sqrt{3}}{2}$  = 30 ....(1)\nTo calculate the area of hexagon, if the AD, BE and CF are joined, the hexagon will be divided into 6 equilateral triangles having side a.\nSo the area of hexagon ABCDEF = $6\\times\\ \\frac{\\sqrt{3}}{4}a^2$  = $\\ \\frac{3\\sqrt{3}}{2}a^2$ = 3*30 =90 (From 1)"
+    },
+    {
+      "qid": "quant-1074",
+      "passage_text": "",
+      "question_text": "In the figure given below, the lines represent one- way roads which allow travel only northwards or eastwards. Find the number of distinct routes by which a person can reach point B from A.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "270",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "210",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "630",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "670",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A person can take 4 steps along south-north direction and  6 steps along west-east direction.\nHence total number of ways = $\\dfrac{\\left(4+6\\right)!}{4!6!}$ = 210",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20200427_171609.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the figure given below, the lines represent one- way roads which allow travel only northwards or eastwards. Find the number of distinct routes by which a person can reach point B from A.\n\n**Options:**\n- **A**. 270\n- **B**. 210 ✅\n- **C**. 630\n- **D**. 670\n\n**Correct Answer:** null\n\n**Solution:**\nA person can take 4 steps along south-north direction and  6 steps along west-east direction.\nHence total number of ways = $\\dfrac{\\left(4+6\\right)!}{4!6!}$ = 210"
+    },
+    {
+      "qid": "quant-1075",
+      "passage_text": "",
+      "question_text": "In a beaker 1 bacteria is kept at t=0 sec. Immediately before every second, the bacteria triples itself and immediately after every 2 seconds a disinfectant kills 1/3 of the bacteria. What is the number of bacteria in the beaker at t = 2019 s?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2$^{1009}$ x   3$^{1010}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2$^{2019}$ x   3$^{2019}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2$^{1010}$ x   3$^{1010}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2$^{1009}$ x   3$^{1009}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Number of bacteria in the beaker at t = 0, sec = 1 bacteria\nTotal number of bacteria in the beaker after 1 sec = 1 x 3= 3 bacteria\nTotal number of bacteria after 2 sec= Number of bacteria after multiplying - bacteria killed by disinfectant. = 3 x 3 - 3 x 3/3 = 3 x 2 = 6 bacteria\nNumber of bacteria killed by disinfectant at 2nd sec = 3.\nTotal number of bacteria after 3 sec =6 x 3=18 bacteria\nTotal number of bacteria after 4 sec =18 x 2= 36 bacteria\n......\nSo the number of bacteria becomes 6 times at the end of every two seconds.\nTill t=2018, the number of bacteria in the beaker will be = 1x$6^{1009}$=2$^{1009}$ x   3$^{1009}$ \nAt t=2019 the number of bacteria will triple, thus the number of bacteria will be  = 2$^{1009}$ x 3$^{1010}$ \nHence A is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a beaker 1 bacteria is kept at t=0 sec. Immediately before every second, the bacteria triples itself and immediately after every 2 seconds a disinfectant kills 1/3 of the bacteria. What is the number of bacteria in the beaker at t = 2019 s?\n\n**Options:**\n- **A**. 2$^{1009}$ x   3$^{1010}$ ✅\n- **B**. 2$^{2019}$ x   3$^{2019}$\n- **C**. 2$^{1010}$ x   3$^{1010}$\n- **D**. 2$^{1009}$ x   3$^{1009}$\n\n**Correct Answer:** null\n\n**Solution:**\nNumber of bacteria in the beaker at t = 0, sec = 1 bacteria\nTotal number of bacteria in the beaker after 1 sec = 1 x 3= 3 bacteria\nTotal number of bacteria after 2 sec= Number of bacteria after multiplying - bacteria killed by disinfectant. = 3 x 3 - 3 x 3/3 = 3 x 2 = 6 bacteria\nNumber of bacteria killed by disinfectant at 2nd sec = 3.\nTotal number of bacteria after 3 sec =6 x 3=18 bacteria\nTotal number of bacteria after 4 sec =18 x 2= 36 bacteria\n......\nSo the number of bacteria becomes 6 times at the end of every two seconds.\nTill t=2018, the number of bacteria in the beaker will be = 1x$6^{1009}$=2$^{1009}$ x   3$^{1009}$ \nAt t=2019 the number of bacteria will triple, thus the number of bacteria will be  = 2$^{1009}$ x 3$^{1010}$ \nHence A is correct."
+    },
+    {
+      "qid": "quant-1076",
+      "passage_text": "",
+      "question_text": "A cylindrical pencil consists of a layer of wood surrounding a solid cylinder of graphite. The radius of the pencil is 6 mm, the radius of the graphite cylinder is 2 mm and the length of the pencil is 10 cm. Find the cost of the material used in a pencil, if the cost of wood is Rs. 0.70/cm3 and that of graphite is Rs. 2.80/cm3.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 7.85",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 8.76",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 9.36",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 10.56",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Volume of the whole pencil = $3.6\\pi$ cm^3\nVolume of graphite cylinder = $0.4\\pi$ cm^3\nVolume of wood part = $3.6\\pi-0.4\\pi=3.2\\pi$ cm^3\nCost of the pencil\n= $3.2\\times\\frac{22}{7}\\times0.7+0.4\\times\\frac{22}{7}\\times2.8$\n= Rs. 10.56",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cylindrical pencil consists of a layer of wood surrounding a solid cylinder of graphite. The radius of the pencil is 6 mm, the radius of the graphite cylinder is 2 mm and the length of the pencil is 10 cm. Find the cost of the material used in a pencil, if the cost of wood is Rs. 0.70/cm3 and that of graphite is Rs. 2.80/cm3.\n\n**Options:**\n- **A**. Rs. 7.85\n- **B**. Rs. 8.76\n- **C**. Rs. 9.36\n- **D**. Rs. 10.56 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nVolume of the whole pencil = $3.6\\pi$ cm^3\nVolume of graphite cylinder = $0.4\\pi$ cm^3\nVolume of wood part = $3.6\\pi-0.4\\pi=3.2\\pi$ cm^3\nCost of the pencil\n= $3.2\\times\\frac{22}{7}\\times0.7+0.4\\times\\frac{22}{7}\\times2.8$\n= Rs. 10.56"
+    },
+    {
+      "qid": "quant-1077",
+      "passage_text": "",
+      "question_text": "Find the area of the region bounded by the curve $f(x)=|x+3|+|x+7|$ and the line $y=6$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10 Sq. units",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24 Sq. units",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12 Sq. units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16 Sq. units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Below is the graph for the given curve and line:\nFor the curve, the two critical points are -3 and -7. For any value of 'x' between -3 and -7, the value of y will always be 4.\nThe enclosed area is that of a trapezium with two parallel bases of length 4 and 6 units and height 2 units.\n$\\therefore$ area of bounded region = $\\frac{1}{2}\\times (4+6)\\times2$ Sq. units = 10 Sq. units.\nHence, option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the area of the region bounded by the curve $f(x)=|x+3|+|x+7|$ and the line $y=6$.\n\n**Options:**\n- **A**. 10 Sq. units ✅\n- **B**. 24 Sq. units\n- **C**. 12 Sq. units\n- **D**. 16 Sq. units\n\n**Correct Answer:** null\n\n**Solution:**\nBelow is the graph for the given curve and line:\nFor the curve, the two critical points are -3 and -7. For any value of 'x' between -3 and -7, the value of y will always be 4.\nThe enclosed area is that of a trapezium with two parallel bases of length 4 and 6 units and height 2 units.\n$\\therefore$ area of bounded region = $\\frac{1}{2}\\times (4+6)\\times2$ Sq. units = 10 Sq. units.\nHence, option A is the correct answer."
+    },
+    {
+      "qid": "quant-1078",
+      "passage_text": "",
+      "question_text": "The difference between compound interest and simple interest on a certain sum borrowed at R% per annum for a period of 2 years is Rs.384 and for a period of 3 years is Rs.1344. Find the time in which the sum becomes 6 times itself at simple interest.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the borrowed sum be P \nNow, we know that \nThe difference between compound interest and simple interest for a period of 2 years is given by: $P\\left(\\frac{R}{100}\\right)^2$ \nThe difference between compound interest and simple interest for a period of 3 years is given by:$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$\nso, substituting the given values we get :\n$P\\left(\\frac{R}{100}\\right)^2$=384         (1)\n$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$ = 1344     (2)\nDividing equation (2) and (1) we get\n$\\left(\\frac{R}{100}+3\\right)$=$\\frac{1344}{384}$\n⇒$\\left(\\frac{R}{100}+3\\right)$=$\\frac{7}{2}$\n⇒$\\left(\\frac{R}{100}\\right)$=$\\frac{1}{2}$\n⇒R=50%\nNow let sum becomes 6 times itself in T years at simple interest\nWe know that \nAmount = Principal (sum borrowed)+Interest(in this case it is simple interest)\n⇒6P=P+$\\frac{\\left(P\\times\\ 50\\times\\ T\\ \\right)}{100}$\n⇒5P=$\\frac{PT}{2}$\n⇒T=10\nHence the sum becomes 6 times itself in 10 years.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe difference between compound interest and simple interest on a certain sum borrowed at R% per annum for a period of 2 years is Rs.384 and for a period of 3 years is Rs.1344. Find the time in which the sum becomes 6 times itself at simple interest.\n\n**Options:**\n- **A**. 5\n- **B**. 10 ✅\n- **C**. 15\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nLet the borrowed sum be P \nNow, we know that \nThe difference between compound interest and simple interest for a period of 2 years is given by: $P\\left(\\frac{R}{100}\\right)^2$ \nThe difference between compound interest and simple interest for a period of 3 years is given by:$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$\nso, substituting the given values we get :\n$P\\left(\\frac{R}{100}\\right)^2$=384         (1)\n$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$ = 1344     (2)\nDividing equation (2) and (1) we get\n$\\left(\\frac{R}{100}+3\\right)$=$\\frac{1344}{384}$\n⇒$\\left(\\frac{R}{100}+3\\right)$=$\\frac{7}{2}$\n⇒$\\left(\\frac{R}{100}\\right)$=$\\frac{1}{2}$\n⇒R=50%\nNow let sum becomes 6 times itself in T years at simple interest\nWe know that \nAmount = Principal (sum borrowed)+Interest(in this case it is simple interest)\n⇒6P=P+$\\frac{\\left(P\\times\\ 50\\times\\ T\\ \\right)}{100}$\n⇒5P=$\\frac{PT}{2}$\n⇒T=10\nHence the sum becomes 6 times itself in 10 years."
+    },
+    {
+      "qid": "quant-1079",
+      "passage_text": "",
+      "question_text": "If x, y, z are positive integers then find the range of $A=\\frac{xyz}{(x+y+z)(xy+yz+zx)}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$0<A\\leq1/9$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$1/9\\leq A<1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$1/3\\leq A<1/9$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Applying $AM\\geq GM$\n$x+y+z\\geq 3{xyz}^{1/3}$\nSimilarly $xy+yz+zx\\geq 3{xyz}^{2/3}$\nThe value of the expression $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ is maximum when the denomiator is minimum.\nMaximum value of $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ = $\\frac{xyz}{(9(xyz)^{1/3})(xyz)^{2/3}}$ = 1/9\nFor minimum value consider x = 1, y = 1 and z = 100000\nWe get a value very close to zero\nHence $0<A\\leq1/9$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x, y, z are positive integers then find the range of $A=\\frac{xyz}{(x+y+z)(xy+yz+zx)}$\n\n**Options:**\n- **A**. $0<A\\leq1/9$ ✅\n- **B**. $1/9\\leq A<1$\n- **C**. $1/3\\leq A<1/9$\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nApplying $AM\\geq GM$\n$x+y+z\\geq 3{xyz}^{1/3}$\nSimilarly $xy+yz+zx\\geq 3{xyz}^{2/3}$\nThe value of the expression $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ is maximum when the denomiator is minimum.\nMaximum value of $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ = $\\frac{xyz}{(9(xyz)^{1/3})(xyz)^{2/3}}$ = 1/9\nFor minimum value consider x = 1, y = 1 and z = 100000\nWe get a value very close to zero\nHence $0<A\\leq1/9$"
+    },
+    {
+      "qid": "quant-1080",
+      "passage_text": "",
+      "question_text": "A man cheats while buying as well as while selling. While buying he takes 10 % more than what he pays for and while selling he gives 20 % less than what he claims to. Find his profit percentage, if he sells at 9.09 % below the cost price of the claimed weight.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "19.81 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "37.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost of items be 100 rs, for 100 rs he got items of worth 110rs.\nWhile selling, he sells items of only 80rs worth for 100 rs also he gives 9.09% discount\nSo, his revenue for items of 110 rs will be $110\\cdot\\frac{100}{80}\\cdot\\left(1-\\frac{10}{11}\\right)$ =125rs\n.'. Profit percentage=$\\frac{\\left(125-100\\right)}{100}\\cdot100=25\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man cheats while buying as well as while selling. While buying he takes 10 % more than what he pays for and while selling he gives 20 % less than what he claims to. Find his profit percentage, if he sells at 9.09 % below the cost price of the claimed weight.\n\n**Options:**\n- **A**. 19.81 %\n- **B**. 20%\n- **C**. 37.5%\n- **D**. 25% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost of items be 100 rs, for 100 rs he got items of worth 110rs.\nWhile selling, he sells items of only 80rs worth for 100 rs also he gives 9.09% discount\nSo, his revenue for items of 110 rs will be $110\\cdot\\frac{100}{80}\\cdot\\left(1-\\frac{10}{11}\\right)$ =125rs\n.'. Profit percentage=$\\frac{\\left(125-100\\right)}{100}\\cdot100=25\\%$"
+    },
+    {
+      "qid": "quant-1081",
+      "passage_text": "",
+      "question_text": "PQR is a right triangle of  with angle QPR=90 degrees and 2 sides PR and PQ co-inciding with the x axes and y axes respectively. Find the number of points with integral coordinates inside the triangle if it is known that P is situated at origin and the coordinates of the circumcenter of the triangle are (15,10).",
+      "options": [],
+      "correct_option_data": "271",
+      "solution_text": "Given that PQR is a triangle of such that P is at origin and is 90 degrees and Circumcenter has coordinates (15,10 )\nWe know that in a right triangle circumcenter is the mid point of hypotenuse of triangle and as 2 sides coincide with the x axes and y axes \ntherefore their vertices will be (x,0) and (0,y)\nNow x/2 =15 and y/2 =10\nTherefore x=30 and y=20 \nso vertices of triangle will be (0,0) (0,20) and (30,0)\nArea = $\\frac{1}{2}\\times\\ 20\\times\\ 30$\n    = 300cm^2\nSo now we have \nequation of QR as $\\frac{x}{30}+\\frac{y}{20}=1$\n   2x+3y=60\nNow number of integral points on QR :\n(30,0) (27,2) (24,4) (21,6) (18,8) (15,10)  (12,12)  (9,14)  (6,16) (3,18) (0,20)\nOn PQ (Excluding Q)\n(0,0)(0,1)......(0,19)\nOn PR (Excluding P and R)\n(1,0) (2,0)........(29,0)\nTherefore total number of integral points :29+20+11=60\nNow we can use picks theorem to find number of integral points inside the triangle which is given by :\nA=I +$\\frac{B}{2}$-1\nso 300=I +29\nSo I =271",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPQR is a right triangle of  with angle QPR=90 degrees and 2 sides PR and PQ co-inciding with the x axes and y axes respectively. Find the number of points with integral coordinates inside the triangle if it is known that P is situated at origin and the coordinates of the circumcenter of the triangle are (15,10).\n\n**Options:**\n\n**Correct Answer:** 271\n\n**Solution:**\nGiven that PQR is a triangle of such that P is at origin and is 90 degrees and Circumcenter has coordinates (15,10 )\nWe know that in a right triangle circumcenter is the mid point of hypotenuse of triangle and as 2 sides coincide with the x axes and y axes \ntherefore their vertices will be (x,0) and (0,y)\nNow x/2 =15 and y/2 =10\nTherefore x=30 and y=20 \nso vertices of triangle will be (0,0) (0,20) and (30,0)\nArea = $\\frac{1}{2}\\times\\ 20\\times\\ 30$\n    = 300cm^2\nSo now we have \nequation of QR as $\\frac{x}{30}+\\frac{y}{20}=1$\n   2x+3y=60\nNow number of integral points on QR :\n(30,0) (27,2) (24,4) (21,6) (18,8) (15,10)  (12,12)  (9,14)  (6,16) (3,18) (0,20)\nOn PQ (Excluding Q)\n(0,0)(0,1)......(0,19)\nOn PR (Excluding P and R)\n(1,0) (2,0)........(29,0)\nTherefore total number of integral points :29+20+11=60\nNow we can use picks theorem to find number of integral points inside the triangle which is given by :\nA=I +$\\frac{B}{2}$-1\nso 300=I +29\nSo I =271"
+    },
+    {
+      "qid": "quant-1082",
+      "passage_text": "",
+      "question_text": "What is the minimum value of the expression $\\frac{3x^2-7}{3x^2+1} + \\frac{2x^2-5}{2x^2+5}$?",
+      "options": [],
+      "correct_option_data": "-8",
+      "solution_text": "Expression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the minimum value of the expression $\\frac{3x^2-7}{3x^2+1} + \\frac{2x^2-5}{2x^2+5}$?\n\n**Options:**\n\n**Correct Answer:** -8\n\n**Solution:**\nExpression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$"
     }
   ]
 }

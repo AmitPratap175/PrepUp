@@ -1,0 +1,624 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-5-1",
+      "passage_text": "",
+      "question_text": "The salaries of 21 employees of a company is in arithmetic progression with common difference greater than 0. The salaries are arranged in ascending order and ranked such that employee with the least salary is ranked 1. Three employees ranked 7th 10th and 18th leave the company. Which of the following is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "The new average is less than the original average.",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "The new average is more than the original average.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The new average is equal to the original average.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Nothing can be said.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the terms to be a-10d,a-9d,a-8d…….a,a+d………a+10d\nOriginal Average = 21a/21= a\nSalary of 7th rank employee = a-4d\nSalary of 10th rank employee = a-d\nSalary of 18th rank employee = a+7d\nSum of the salary of 7th, 10th and 18th ranked employees = 3a+2d\nFinal Average=(21a-(3a+2d))/18 = (18a-2d)/18 = a-(d/9)\nThe new average is less than the original average.\nHence A is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe salaries of 21 employees of a company is in arithmetic progression with common difference greater than 0. The salaries are arranged in ascending order and ranked such that employee with the least salary is ranked 1. Three employees ranked 7th 10th and 18th leave the company. Which of the following is true?\n\n**Options:**\n- **A**. The new average is less than the original average. ✅\n- **B**. The new average is more than the original average.\n- **C**. The new average is equal to the original average.\n- **D**. Nothing can be said.\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the terms to be a-10d,a-9d,a-8d…….a,a+d………a+10d\nOriginal Average = 21a/21= a\nSalary of 7th rank employee = a-4d\nSalary of 10th rank employee = a-d\nSalary of 18th rank employee = a+7d\nSum of the salary of 7th, 10th and 18th ranked employees = 3a+2d\nFinal Average=(21a-(3a+2d))/18 = (18a-2d)/18 = a-(d/9)\nThe new average is less than the original average.\nHence A is the answer."
+    },
+    {
+      "qid": "quant-sectionals-5-2",
+      "passage_text": "",
+      "question_text": "If the selling price of the article is reduced by 40% and the cost price remains the same, the profit reduces by 50%. Find the original profit% of the article?",
+      "options": [],
+      "correct_option_data": "400",
+      "solution_text": "Let the SP be x and the CP be y.\n(x-y) = 2(0.6x-y) \n0.2x = y\nx = 5y\nOriginal profit% =$\\frac{x-y}{y}*100 =\\frac{5y-y}{y}*100 = 400$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the selling price of the article is reduced by 40% and the cost price remains the same, the profit reduces by 50%. Find the original profit% of the article?\n\n**Options:**\n\n**Correct Answer:** 400\n\n**Solution:**\nLet the SP be x and the CP be y.\n(x-y) = 2(0.6x-y) \n0.2x = y\nx = 5y\nOriginal profit% =$\\frac{x-y}{y}*100 =\\frac{5y-y}{y}*100 = 400$%"
+    },
+    {
+      "qid": "quant-sectionals-5-3",
+      "passage_text": "",
+      "question_text": "Let N = {-6, 0, 5, 9, 14, 12, 8, 22}. Then the average of the average of all the possible triplets formed from N is",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "The number of triplets that would be formed is $^8C_3$ = 56\nThe number of times each of the digits would be repeated is $^7C_2$ = 21\nThe average of the average of the triplets formed from N \n=$\\dfrac{21(\\frac{-6+0+5+9+14+12+8+22}{3})}{56}$\n= $\\dfrac{-6+0+5+9+14+12+8+22}{8}$\n=8\n8 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet N = {-6, 0, 5, 9, 14, 12, 8, 22}. Then the average of the average of all the possible triplets formed from N is\n\n**Options:**\n\n**Correct Answer:** 8\n\n**Solution:**\nThe number of triplets that would be formed is $^8C_3$ = 56\nThe number of times each of the digits would be repeated is $^7C_2$ = 21\nThe average of the average of the triplets formed from N \n=$\\dfrac{21(\\frac{-6+0+5+9+14+12+8+22}{3})}{56}$\n= $\\dfrac{-6+0+5+9+14+12+8+22}{8}$\n=8\n8 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-5-4",
+      "passage_text": "",
+      "question_text": "How many negative real roots does the equation $x^3-x^2-3x-9=0$ have?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "First, we'll use Descartes Rule of Signs.\nIn $f(x)=x^3-x^2-3x-9$ there is only one time sign change. So, there can be a maximum of 1 positive real root.\nIn $f(-x)=-x^3-x^2+3x-9$ the sign changes twice. So, there can be  a maximum of 2 negetive real roots.\nNow, 2 cases can be formed:\nFrom here, we can be sure that there's definitely a positive real root.\nSince the coefficients do not add up to zero, x=1 will not be  a root.\nf(2) = 8-4-6-9 = -11 ...( x=2 is also not a root)\nf(3) = 27-9-9-9 = 0 ...( x=3 is a root)\nNow dividing $x^3-x^2-3x-9$ by (x-3) we get $x^2+2x+3$\nDeterminant of the equation $x^2+2x+3=0$ is -8, which means the roots of the quadratic will be imaginary and in conjugate pairs.\nSo in total, we have 1 positive real root, a pair of imaginary roots and 0 negative real roots.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many negative real roots does the equation $x^3-x^2-3x-9=0$ have?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nFirst, we'll use Descartes Rule of Signs.\nIn $f(x)=x^3-x^2-3x-9$ there is only one time sign change. So, there can be a maximum of 1 positive real root.\nIn $f(-x)=-x^3-x^2+3x-9$ the sign changes twice. So, there can be  a maximum of 2 negetive real roots.\nNow, 2 cases can be formed:\nFrom here, we can be sure that there's definitely a positive real root.\nSince the coefficients do not add up to zero, x=1 will not be  a root.\nf(2) = 8-4-6-9 = -11 ...( x=2 is also not a root)\nf(3) = 27-9-9-9 = 0 ...( x=3 is a root)\nNow dividing $x^3-x^2-3x-9$ by (x-3) we get $x^2+2x+3$\nDeterminant of the equation $x^2+2x+3=0$ is -8, which means the roots of the quadratic will be imaginary and in conjugate pairs.\nSo in total, we have 1 positive real root, a pair of imaginary roots and 0 negative real roots."
+    },
+    {
+      "qid": "quant-sectionals-5-5",
+      "passage_text": "",
+      "question_text": "x, y and z are positive integers such that 3x+5y+8z=48. Find the maximum value of $x^3y^5z^4$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2^{24}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2^{26}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2^{20}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2^{30}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "3x+5y+8z=48 and x,y,z are positive => AM >= GM inequality can be used here\n$\\frac{x+x+x+y+y+y+y+y+2z+2z+2z+2z}{12} \\geq (16x^3y^5z^4)^{\\frac{1}{12}}$\n=> $4^{12} \\geq 16x^3y^5z^4$\n=> $x^3y^5z^4 \\leq 2^{20}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nx, y and z are positive integers such that 3x+5y+8z=48. Find the maximum value of $x^3y^5z^4$.\n\n**Options:**\n- **A**. $2^{24}$\n- **B**. $2^{26}$\n- **C**. $2^{20}$ ✅\n- **D**. $2^{30}$\n\n**Correct Answer:** null\n\n**Solution:**\n3x+5y+8z=48 and x,y,z are positive => AM >= GM inequality can be used here\n$\\frac{x+x+x+y+y+y+y+y+2z+2z+2z+2z}{12} \\geq (16x^3y^5z^4)^{\\frac{1}{12}}$\n=> $4^{12} \\geq 16x^3y^5z^4$\n=> $x^3y^5z^4 \\leq 2^{20}$"
+    },
+    {
+      "qid": "quant-sectionals-5-6",
+      "passage_text": "",
+      "question_text": "An amount becomes 4 times itself in 5 years with a certain simple interest rate. Instead, if the rate of interest is the same and compounded annually, the amount becomes more than 16 times in n years, where n is an integer. Find the minimum value of n. (Given that $\\log_{10}2=0.3010$)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume the amount = A, then after 5 years, it will become 4A.\nHence, the interest = 4A-A = 3A\n$3A\\ =\\ \\frac{\\left(A\\times\\ r\\times\\ 5\\right)}{100}$\n=> $r=60$\nIf the rate of interest is same and compounded annually, after n year the amount = $A\\left(1+\\frac{60}{100}\\right)^n>16A$ \n=> $1.6^n>16$\n=> n($\\log16-1$) > log16\n=> n > $\\frac{\\log16}{\\log16-1}$\n=> n> $\\frac{4\\log2}{4\\log2-1}$\n=> n>$\\frac{4\\times\\ 0.3010}{4\\times\\ 0.3010-1}=\\ \\frac{\\ 1.2040}{0.2040}$\n=> n>5.9\nMinimum value of n=6",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn amount becomes 4 times itself in 5 years with a certain simple interest rate. Instead, if the rate of interest is the same and compounded annually, the amount becomes more than 16 times in n years, where n is an integer. Find the minimum value of n. (Given that $\\log_{10}2=0.3010$)\n\n**Options:**\n- **A**. 5\n- **B**. 4\n- **C**. 6 ✅\n- **D**. 7\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the amount = A, then after 5 years, it will become 4A.\nHence, the interest = 4A-A = 3A\n$3A\\ =\\ \\frac{\\left(A\\times\\ r\\times\\ 5\\right)}{100}$\n=> $r=60$\nIf the rate of interest is same and compounded annually, after n year the amount = $A\\left(1+\\frac{60}{100}\\right)^n>16A$ \n=> $1.6^n>16$\n=> n($\\log16-1$) > log16\n=> n > $\\frac{\\log16}{\\log16-1}$\n=> n> $\\frac{4\\log2}{4\\log2-1}$\n=> n>$\\frac{4\\times\\ 0.3010}{4\\times\\ 0.3010-1}=\\ \\frac{\\ 1.2040}{0.2040}$\n=> n>5.9\nMinimum value of n=6"
+    },
+    {
+      "qid": "quant-sectionals-5-7",
+      "passage_text": "",
+      "question_text": "If $\\log_{24}{6}=x$   $\\log_{12}{54}=y$ then",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$y=\\frac{(4+x)}{(x-3)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$y=\\frac{(3-x)}{(x+2)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$x=\\frac{(3-y)}{(y-2)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$x=\\frac{(y+2)}{(8-y)}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Changing into base 2, we get\nx= (1+log3)/(3+log3)...(1)\ny=$\\frac{1+3log3}{2+log3}$\n=> log3 = $\\frac{1-2y}{y-3}$ ......(2)\nAfter putting the value of log3 in (1),\nwe get, x= $\\frac{1+\\frac{1-2y}{y-3}}{3+\\frac{1-2y}{y-3}}$\nx = $\\frac{y-3+1-2y}{3y-9+1-2y}$\n$x=\\frac{(y+2)}{(8-y)}$\nHence, D is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\log_{24}{6}=x$   $\\log_{12}{54}=y$ then\n\n**Options:**\n- **A**. $y=\\frac{(4+x)}{(x-3)}$\n- **B**. $y=\\frac{(3-x)}{(x+2)}$\n- **C**. $x=\\frac{(3-y)}{(y-2)}$\n- **D**. $x=\\frac{(y+2)}{(8-y)}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nChanging into base 2, we get\nx= (1+log3)/(3+log3)...(1)\ny=$\\frac{1+3log3}{2+log3}$\n=> log3 = $\\frac{1-2y}{y-3}$ ......(2)\nAfter putting the value of log3 in (1),\nwe get, x= $\\frac{1+\\frac{1-2y}{y-3}}{3+\\frac{1-2y}{y-3}}$\nx = $\\frac{y-3+1-2y}{3y-9+1-2y}$\n$x=\\frac{(y+2)}{(8-y)}$\nHence, D is the answer."
+    },
+    {
+      "qid": "quant-sectionals-5-8",
+      "passage_text": "",
+      "question_text": "How many 4 digit numbers are divisible by 5 but not by 25?",
+      "options": [],
+      "correct_option_data": "1440",
+      "solution_text": "First we will calculate the numbers which are divisible by 5.\nThe first number is 1000 and the last number is 9995.\n9995 = 1000+(n-1)5\nn = 1800\nNow we will deduct the number of numbers which are divisible by 25.\n9975 = 1000+(N-1)25\nN = 360\nTotal number = 1800-360 = 1440",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many 4 digit numbers are divisible by 5 but not by 25?\n\n**Options:**\n\n**Correct Answer:** 1440\n\n**Solution:**\nFirst we will calculate the numbers which are divisible by 5.\nThe first number is 1000 and the last number is 9995.\n9995 = 1000+(n-1)5\nn = 1800\nNow we will deduct the number of numbers which are divisible by 25.\n9975 = 1000+(N-1)25\nN = 360\nTotal number = 1800-360 = 1440"
+    },
+    {
+      "qid": "quant-sectionals-5-9",
+      "passage_text": "",
+      "question_text": "Find the number of sides of a regular polygon in which the exterior angle is one sixth the interior angle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "14",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of sides of the polygon be n.\nEach exterior angle= $\\frac{360}{n}$.\nEach interior angle of this polygon= $\\frac{\\left(n-2\\right)180}{n}$\nAs per the question,\n$\\frac{\\left(n-2\\right)180}{n}\\times\\frac{1}{6}=\\frac{360}{n}$\n=> $\\left(n-2\\right)30=360$\n=> n-2= 12\n.'. n= 14.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of sides of a regular polygon in which the exterior angle is one sixth the interior angle.\n\n**Options:**\n- **A**. 12\n- **B**. 15\n- **C**. 13\n- **D**. 14 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of sides of the polygon be n.\nEach exterior angle= $\\frac{360}{n}$.\nEach interior angle of this polygon= $\\frac{\\left(n-2\\right)180}{n}$\nAs per the question,\n$\\frac{\\left(n-2\\right)180}{n}\\times\\frac{1}{6}=\\frac{360}{n}$\n=> $\\left(n-2\\right)30=360$\n=> n-2= 12\n.'. n= 14."
+    },
+    {
+      "qid": "quant-sectionals-5-10",
+      "passage_text": "",
+      "question_text": "A 7*7*7 blue cube is cut into 343 cubes of dimensions 1*1*1. The number of smaller cubes which have at least one face painted blue is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "218",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "342",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "126",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The cubes on the vertex, the edges and the faces of the large cube is painted in blue, so we have to remove those cubes from 343 smaller cubes\nCubes on the vertices = 8\nCubes on the edges = 5*12 = 60\nCubes on the faces = 5*5*6 = 150\nNumber of smaller cubes whose none of the faces is painted = 343-(8+60+150) = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218\nA is the correct answer.\nAlternate Solution:\nThe outer surface of the cube is painted. So one layer of cubes with thickness 1 cm is removed from each side, the required number of cubes can be obtained. \n=> Number of smaller cubes whose none of the faces is painted = (7-1-1)$^3$ = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA 7*7*7 blue cube is cut into 343 cubes of dimensions 1*1*1. The number of smaller cubes which have at least one face painted blue is\n\n**Options:**\n- **A**. 218 ✅\n- **B**. 125\n- **C**. 342\n- **D**. 126\n\n**Correct Answer:** null\n\n**Solution:**\nThe cubes on the vertex, the edges and the faces of the large cube is painted in blue, so we have to remove those cubes from 343 smaller cubes\nCubes on the vertices = 8\nCubes on the edges = 5*12 = 60\nCubes on the faces = 5*5*6 = 150\nNumber of smaller cubes whose none of the faces is painted = 343-(8+60+150) = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218\nA is the correct answer.\nAlternate Solution:\nThe outer surface of the cube is painted. So one layer of cubes with thickness 1 cm is removed from each side, the required number of cubes can be obtained. \n=> Number of smaller cubes whose none of the faces is painted = (7-1-1)$^3$ = 125\nTherefore the number of cubes which have at least one face painted blue = 343-125 = 218"
+    },
+    {
+      "qid": "quant-sectionals-5-11",
+      "passage_text": "",
+      "question_text": "If $A^2$ has 51 factors, how many factors will $A^5$ have?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "126",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "246",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "255",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Both A and B",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "If $A^2$ has 51 factors, it can either be of the form $A^2=a^{50}$ or $A^2=a^{16}\\times\\ b^2$, where 'a' and 'b' are prime numbers.\nCase 1: $A^2=a^{50}$\n$A=a^{25}$\n=> $A^5=a^{125}$ and this will have (125+1) = 126 factors.\nCase 2 : $A^2=a^{16}\\times\\ b^2$\n$A=a^8\\times\\ b$\n=> $A^5=a^{40}\\times\\ b^5$ and this will have ((40+1)(5+1)) = 246 factors.\nSo, both cases are possible.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $A^2$ has 51 factors, how many factors will $A^5$ have?\n\n**Options:**\n- **A**. 126\n- **B**. 246\n- **C**. 255\n- **D**. Both A and B ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIf $A^2$ has 51 factors, it can either be of the form $A^2=a^{50}$ or $A^2=a^{16}\\times\\ b^2$, where 'a' and 'b' are prime numbers.\nCase 1: $A^2=a^{50}$\n$A=a^{25}$\n=> $A^5=a^{125}$ and this will have (125+1) = 126 factors.\nCase 2 : $A^2=a^{16}\\times\\ b^2$\n$A=a^8\\times\\ b$\n=> $A^5=a^{40}\\times\\ b^5$ and this will have ((40+1)(5+1)) = 246 factors.\nSo, both cases are possible."
+    },
+    {
+      "qid": "quant-sectionals-5-12",
+      "passage_text": "",
+      "question_text": "Three pipes A, B and C are used to fill a tank. They have flow rates in the ratio 1:2:3 respectively. The tank is initially empty and all the pipes are opened. Pipe C is closed after the tank is one-third full. Pipe B is closed after the tank is half full and A is used to fill the rest of the tank. If it took 110 minutes to fill the tank, what is the time taken to fill the tank if only A and B are open?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "42 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "72 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider flow rate of A, B and C to be 1x, 2x and 3x tanks per minute,  and the capacity of tank as 1.\nThe pipes A,B,C are open till the tank is 1/3rd full. Total capacity of the pipes during that duration = 1x + 2x + 3x = 6x\nHence time taken for the tank to get till 1/3rd = $\\dfrac{\\frac{1}{3}}{6x} = \\dfrac{1}{3\\times6x}$\nThe pipes A,B are open from 1/3rd to 1/2 full i.e. they filled 1/6th tank. Total capacity of pipes during that duration = 1x + 2x = 3x\nHence time taken for the tank to get till 1/2 full from 1/3rd = $\\dfrac{\\frac{1}{6}}{3x} = \\dfrac{1}{6\\times3x}$The pipe A is open from 1/2rd to full tank i.e. it filled 1/2 tank. Total capacity of pipes during that duration = 1x \nHence time taken for the tank to get full from 1/2nd = $\\dfrac{\\frac{1}{2}}{x} = \\dfrac{1}{2\\times x}$\n$\\frac{1}{3\\times6x}+\\frac{1}{6\\times3x}+\\frac{1}{2\\times x}=110$\n$\\frac{11}{18}x=110$\n=> $\\frac{1}{x}=180$\nThen time taken by A and B = $\\frac{1}{x+2x}$ = 60 minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree pipes A, B and C are used to fill a tank. They have flow rates in the ratio 1:2:3 respectively. The tank is initially empty and all the pipes are opened. Pipe C is closed after the tank is one-third full. Pipe B is closed after the tank is half full and A is used to fill the rest of the tank. If it took 110 minutes to fill the tank, what is the time taken to fill the tank if only A and B are open?\n\n**Options:**\n- **A**. 40 minutes\n- **B**. 60 minutes ✅\n- **C**. 42 minutes\n- **D**. 72 minutes\n\n**Correct Answer:** null\n\n**Solution:**\nConsider flow rate of A, B and C to be 1x, 2x and 3x tanks per minute,  and the capacity of tank as 1.\nThe pipes A,B,C are open till the tank is 1/3rd full. Total capacity of the pipes during that duration = 1x + 2x + 3x = 6x\nHence time taken for the tank to get till 1/3rd = $\\dfrac{\\frac{1}{3}}{6x} = \\dfrac{1}{3\\times6x}$\nThe pipes A,B are open from 1/3rd to 1/2 full i.e. they filled 1/6th tank. Total capacity of pipes during that duration = 1x + 2x = 3x\nHence time taken for the tank to get till 1/2 full from 1/3rd = $\\dfrac{\\frac{1}{6}}{3x} = \\dfrac{1}{6\\times3x}$The pipe A is open from 1/2rd to full tank i.e. it filled 1/2 tank. Total capacity of pipes during that duration = 1x \nHence time taken for the tank to get full from 1/2nd = $\\dfrac{\\frac{1}{2}}{x} = \\dfrac{1}{2\\times x}$\n$\\frac{1}{3\\times6x}+\\frac{1}{6\\times3x}+\\frac{1}{2\\times x}=110$\n$\\frac{11}{18}x=110$\n=> $\\frac{1}{x}=180$\nThen time taken by A and B = $\\frac{1}{x+2x}$ = 60 minutes"
+    },
+    {
+      "qid": "quant-sectionals-5-13",
+      "passage_text": "",
+      "question_text": "Vessel A contains a solution of milk and water in the ratio 1:3. If 8 litres of the mixture is replaced with milk, then the new ratio becomes 3:5. Had p litres of mixture been replaced with milk, the amount of water and milk in the vessel would have become equal. Find the value of p.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the amount of milk is x and the amount of water is 3x.\nIf 8 litres of mixture is removed, water and milk will be removed in the ratio 1:3. Hence, 2 litres of milk and 6 litres of water is removed. Also, 8 litres of milk is added.\n=> $\\dfrac{x-2+8}{3x-6}=\\frac{3}{5}$\n=> $\\dfrac{x+6}{3x-6}=\\frac{3}{5}$\n=> 5x+30 = 9x-18\n=> x=12\nAfter replacing p litres of the mixture, the ratio of milk and water will become 1:1. In removal, p/4 milk will be removed and 3p/4 water will be removed. While adding p milk will be added.\n=> $\\dfrac{12-\\frac{p}{4}+p}{36-\\frac{3p}{4}}=\\frac{1}{1}$\n=> $\\dfrac{12+\\frac{3p}{4}}{36-\\frac{3p}{4}}=1$\n=> $\\dfrac{3p}{2}=24$\n=> p = 16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nVessel A contains a solution of milk and water in the ratio 1:3. If 8 litres of the mixture is replaced with milk, then the new ratio becomes 3:5. Had p litres of mixture been replaced with milk, the amount of water and milk in the vessel would have become equal. Find the value of p.\n\n**Options:**\n- **A**. 16 ✅\n- **B**. 12\n- **C**. 9\n- **D**. 24\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the amount of milk is x and the amount of water is 3x.\nIf 8 litres of mixture is removed, water and milk will be removed in the ratio 1:3. Hence, 2 litres of milk and 6 litres of water is removed. Also, 8 litres of milk is added.\n=> $\\dfrac{x-2+8}{3x-6}=\\frac{3}{5}$\n=> $\\dfrac{x+6}{3x-6}=\\frac{3}{5}$\n=> 5x+30 = 9x-18\n=> x=12\nAfter replacing p litres of the mixture, the ratio of milk and water will become 1:1. In removal, p/4 milk will be removed and 3p/4 water will be removed. While adding p milk will be added.\n=> $\\dfrac{12-\\frac{p}{4}+p}{36-\\frac{3p}{4}}=\\frac{1}{1}$\n=> $\\dfrac{12+\\frac{3p}{4}}{36-\\frac{3p}{4}}=1$\n=> $\\dfrac{3p}{2}=24$\n=> p = 16"
+    },
+    {
+      "qid": "quant-sectionals-5-14",
+      "passage_text": "",
+      "question_text": "Four friends Ram, Shyam, Tanmay and Uday have equal number of marbles with them. Ram gives $\\ \\frac{\\ 3}{\\ 5}$th of his marbles to Shyam. Then, Shyam gives half of the marbles to Tanmay. Finally, Tanmay gives 18 marbles to Uday. If the number of marbles with Tanmay and Uday are now in the ratio 3:4. Find the total number of marbles with all of them.",
+      "options": [],
+      "correct_option_data": "120",
+      "solution_text": "Assuming the initial number of marbles with each of them as 5x.\nThen marbles left with Ram after giving three-fifth will be 5x-3x = 2x\nThe final number of marbles with Shyam = 5x+3x = 8x\nNow after giving half of the marble of Shyam to Tanmay, the total number of marbles with Tanmay = 5x+$\\ \\frac{\\ 1}{2}\\times\\ 8x$ = 9x\nAfter giving 18 marbles to Uday, Tanmay will have 9x-18 and Uday will have 5x+18\nNow, $\\ \\dfrac{\\ 9x-18}{5x+18}$  = $\\ \\frac{\\ 3}{4}$\n=> x = 6\nHence, the total number of marbles with them = $6\\times\\ 5\\times\\ 4$ =120",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour friends Ram, Shyam, Tanmay and Uday have equal number of marbles with them. Ram gives $\\ \\frac{\\ 3}{\\ 5}$th of his marbles to Shyam. Then, Shyam gives half of the marbles to Tanmay. Finally, Tanmay gives 18 marbles to Uday. If the number of marbles with Tanmay and Uday are now in the ratio 3:4. Find the total number of marbles with all of them.\n\n**Options:**\n\n**Correct Answer:** 120\n\n**Solution:**\nAssuming the initial number of marbles with each of them as 5x.\nThen marbles left with Ram after giving three-fifth will be 5x-3x = 2x\nThe final number of marbles with Shyam = 5x+3x = 8x\nNow after giving half of the marble of Shyam to Tanmay, the total number of marbles with Tanmay = 5x+$\\ \\frac{\\ 1}{2}\\times\\ 8x$ = 9x\nAfter giving 18 marbles to Uday, Tanmay will have 9x-18 and Uday will have 5x+18\nNow, $\\ \\dfrac{\\ 9x-18}{5x+18}$  = $\\ \\frac{\\ 3}{4}$\n=> x = 6\nHence, the total number of marbles with them = $6\\times\\ 5\\times\\ 4$ =120"
+    },
+    {
+      "qid": "quant-sectionals-5-15",
+      "passage_text": "",
+      "question_text": "'Ring Throw' is a game in which there are ten objects arranged in a row. The participant has to throw three identical rings simultaneously such that each ring must encircle a different object. The participant will win only if the rings land on three different objects such that no two objects are adjacent to each other. The winner of the game is called a 'Ringham'. In how many different ways can a participant become a Ringham?",
+      "options": [],
+      "correct_option_data": "56",
+      "solution_text": "Total number of ways of selecting 3 different objects from 10 objects = $^{10}C_{3} = 120$ ways\nA participant can win only when no encircled objects are adjacent to each other.\nSo, we have to eliminate the cases where two rings or three rings land on objects adjacent to each other.\nNumber of ways of selecting three objects in which exactly two objects are adjacent\nCase I: When the first and the second objects are selected\nIn this case, third object cannot be selected.\nSo, total number of ways = 7\nCase II: When the last and the second last objects are selected\nIn this case, the eighth object cannot be selected\nSo, total number of ways = 7\nCase II: When the two objects are selected such that none of them is from the extremes\nIn this case, the objects preceding as well as succeeding the selected pair cannot be selected\nSo, total number of ways = 7 * 6 = 42\nNumber of ways of selecting exactly three adjacent objects = 8\nTherefore, the number of ways of selecting three objects such that no two are adjacent to each other\n=120 - (7 + 7 + 42 + 8) = 56 ways.\nHence, 56 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n'Ring Throw' is a game in which there are ten objects arranged in a row. The participant has to throw three identical rings simultaneously such that each ring must encircle a different object. The participant will win only if the rings land on three different objects such that no two objects are adjacent to each other. The winner of the game is called a 'Ringham'. In how many different ways can a participant become a Ringham?\n\n**Options:**\n\n**Correct Answer:** 56\n\n**Solution:**\nTotal number of ways of selecting 3 different objects from 10 objects = $^{10}C_{3} = 120$ ways\nA participant can win only when no encircled objects are adjacent to each other.\nSo, we have to eliminate the cases where two rings or three rings land on objects adjacent to each other.\nNumber of ways of selecting three objects in which exactly two objects are adjacent\nCase I: When the first and the second objects are selected\nIn this case, third object cannot be selected.\nSo, total number of ways = 7\nCase II: When the last and the second last objects are selected\nIn this case, the eighth object cannot be selected\nSo, total number of ways = 7\nCase II: When the two objects are selected such that none of them is from the extremes\nIn this case, the objects preceding as well as succeeding the selected pair cannot be selected\nSo, total number of ways = 7 * 6 = 42\nNumber of ways of selecting exactly three adjacent objects = 8\nTherefore, the number of ways of selecting three objects such that no two are adjacent to each other\n=120 - (7 + 7 + 42 + 8) = 56 ways.\nHence, 56 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-5-16",
+      "passage_text": "",
+      "question_text": "A tank can be filled with two liquids A and B of different viscosity. Due to the viscosity, the liquids travel at different speeds in the pipe. The tank is equipped with 3 similar pipes. Liquid A can fill the tank in 10 hours if all the three pipes are used. Liquid B can fill the tank in 12 hours if 2 pipes are used. If a pipe can dispense only 1 liquid at a time, what is the minimum time needed to fill that tank with liquids A and B mixed in the ratio 3:7 ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7 hrs 42 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8 hrs 36 mins",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6 hrs 48 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9 hrs 12 mins",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us first calculate the time needed for a liquid to fill the tank if only 1 pipe is used. \nSince A takes 10 hours when 3 pipes are used, it will take 3 x 10 = 30 hours when only 1 pipe is used. \nSince B takes 12 hours when 2 pipes are used, it will take 2 x 12 = 24 hours when only 1 pipe is used. \nLet the capacity of the tank be $120x$ units. \nSpeed of liquid A = $\\dfrac{120x}{30} = 4x$ units/pipe/hour.\nSpeed of liquid B = $\\dfrac{120x}{24} = 5x$ units/pipe/hour.\nNow, volume of liquid A needed $V_{a} = \\dfrac{3}{3+7} \\times 120x = 36x$ units \nVolume of liquid B needed $V_{b} = \\dfrac{7}{3+7} \\times 120x = 84x$ units \nFor the minimum amount of time, we first fill the required amount of liquid A (since it is the slower of the two liquids) as fast as possible. We do that by using all the three pipes to fill the tank with liquid A.\nThus, time  needed to fill the tank with the required amount of liquid A $t_{a} = \\dfrac{36x}{4x \\times 3} = 3$ hrs\nTime needed to fill the tank with the required amount of liquid B $t_{b} = \\dfrac{84x}{5x \\times 3} = 5.6 hrs = 5 hr 36 min$\nThus the total time needed = 3 hr + 5 hr 36 min = 8 hr 36 min",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank can be filled with two liquids A and B of different viscosity. Due to the viscosity, the liquids travel at different speeds in the pipe. The tank is equipped with 3 similar pipes. Liquid A can fill the tank in 10 hours if all the three pipes are used. Liquid B can fill the tank in 12 hours if 2 pipes are used. If a pipe can dispense only 1 liquid at a time, what is the minimum time needed to fill that tank with liquids A and B mixed in the ratio 3:7 ?\n\n**Options:**\n- **A**. 7 hrs 42 mins\n- **B**. 8 hrs 36 mins ✅\n- **C**. 6 hrs 48 mins\n- **D**. 9 hrs 12 mins\n\n**Correct Answer:** null\n\n**Solution:**\nLet us first calculate the time needed for a liquid to fill the tank if only 1 pipe is used. \nSince A takes 10 hours when 3 pipes are used, it will take 3 x 10 = 30 hours when only 1 pipe is used. \nSince B takes 12 hours when 2 pipes are used, it will take 2 x 12 = 24 hours when only 1 pipe is used. \nLet the capacity of the tank be $120x$ units. \nSpeed of liquid A = $\\dfrac{120x}{30} = 4x$ units/pipe/hour.\nSpeed of liquid B = $\\dfrac{120x}{24} = 5x$ units/pipe/hour.\nNow, volume of liquid A needed $V_{a} = \\dfrac{3}{3+7} \\times 120x = 36x$ units \nVolume of liquid B needed $V_{b} = \\dfrac{7}{3+7} \\times 120x = 84x$ units \nFor the minimum amount of time, we first fill the required amount of liquid A (since it is the slower of the two liquids) as fast as possible. We do that by using all the three pipes to fill the tank with liquid A.\nThus, time  needed to fill the tank with the required amount of liquid A $t_{a} = \\dfrac{36x}{4x \\times 3} = 3$ hrs\nTime needed to fill the tank with the required amount of liquid B $t_{b} = \\dfrac{84x}{5x \\times 3} = 5.6 hrs = 5 hr 36 min$\nThus the total time needed = 3 hr + 5 hr 36 min = 8 hr 36 min"
+    },
+    {
+      "qid": "quant-sectionals-5-17",
+      "passage_text": "",
+      "question_text": "The side BC of a triangle ABC with area 48 square units, lies on x=-6. If the length of BC is 8 units, what is the minimum possible distance of the vertex A from (8,3)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1 unit",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2 units",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4 units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Area of triangle = ½*base*height => 48 = ½ * 8* height\n=>height = 12 units\nFor height = 12 units, the vertex A should lie on either x=-18 or x=6.\nSince, for minimum distance from (8,3), A should lie on x=6.\nThe minimum distance of (8,3) from x=6 is equal to 8-6=2 units",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe side BC of a triangle ABC with area 48 square units, lies on x=-6. If the length of BC is 8 units, what is the minimum possible distance of the vertex A from (8,3)?\n\n**Options:**\n- **A**. 1 unit\n- **B**. 2 units ✅\n- **C**. 3 units\n- **D**. 4 units\n\n**Correct Answer:** null\n\n**Solution:**\nArea of triangle = ½*base*height => 48 = ½ * 8* height\n=>height = 12 units\nFor height = 12 units, the vertex A should lie on either x=-18 or x=6.\nSince, for minimum distance from (8,3), A should lie on x=6.\nThe minimum distance of (8,3) from x=6 is equal to 8-6=2 units"
+    },
+    {
+      "qid": "quant-sectionals-5-18",
+      "passage_text": "",
+      "question_text": "Four racers are running around a circular track at speed 1m/s, 3m/s, 4m/s and 6m/s in the same direction. What is the number of distinct points around the circular track at which two or more racers meet?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The racers are running in the same direction, thus the number of points of intersections between any two racers= |a-b|, where a and b are the ratio of the speed of the racers.\nThe number of pairs of racers: $^4C_2$=6\nThus, \n1. The number of points of intersections between the first racer and second racer =  |1-3|=2 points i.e  $\\left\\{\\pi\\ ,\\ 2\\pi\\ \\right\\}$\n2. The number of points of intersections between the first racer and third racer = |1-4|=3 points i.e $\\left\\{2\\pi\\ ,\\ \\frac{2\\pi\\ }{3},\\ \\frac{4\\pi\\ }{3}\\right\\}$\n3. The number of points of intersections between the first racer and fourth racer = |1-6|=5 points i.e $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5}\\right\\}$\n4. The number of points of intersections between the second racer and third racer = |3-4|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n5.The number of points of intersections between the second racer and fourth racer = (3,6) |1-2|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n6. The number of points of intersections between the third racer and fourth racer = (4,6) |2-3|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\nThus,  number of different points of intersection: $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5},\\pi\\ ,\\frac{2\\pi\\ }{3},\\frac{4\\pi\\ }{3}\\right\\}$ 8 points\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour racers are running around a circular track at speed 1m/s, 3m/s, 4m/s and 6m/s in the same direction. What is the number of distinct points around the circular track at which two or more racers meet?\n\n**Options:**\n- **A**. 6\n- **B**. 13\n- **C**. 8 ✅\n- **D**. 10\n\n**Correct Answer:** null\n\n**Solution:**\nThe racers are running in the same direction, thus the number of points of intersections between any two racers= |a-b|, where a and b are the ratio of the speed of the racers.\nThe number of pairs of racers: $^4C_2$=6\nThus, \n1. The number of points of intersections between the first racer and second racer =  |1-3|=2 points i.e  $\\left\\{\\pi\\ ,\\ 2\\pi\\ \\right\\}$\n2. The number of points of intersections between the first racer and third racer = |1-4|=3 points i.e $\\left\\{2\\pi\\ ,\\ \\frac{2\\pi\\ }{3},\\ \\frac{4\\pi\\ }{3}\\right\\}$\n3. The number of points of intersections between the first racer and fourth racer = |1-6|=5 points i.e $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5}\\right\\}$\n4. The number of points of intersections between the second racer and third racer = |3-4|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n5.The number of points of intersections between the second racer and fourth racer = (3,6) |1-2|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\n6. The number of points of intersections between the third racer and fourth racer = (4,6) |2-3|=1 point i.e $\\left\\{2\\pi\\ \\right\\}$\nThus,  number of different points of intersection: $\\left\\{2\\pi\\ ,\\frac{2\\pi\\ }{5},\\frac{4\\pi\\ }{5},\\frac{6\\pi\\ }{5},\\frac{8\\pi\\ }{5},\\pi\\ ,\\frac{2\\pi\\ }{3},\\frac{4\\pi\\ }{3}\\right\\}$ 8 points\nOption C"
+    },
+    {
+      "qid": "quant-sectionals-5-19",
+      "passage_text": "",
+      "question_text": "In a rectangle ABCD where AB = 24 cm and BC = 9 cm. Points E and F are midpoints of side AB and CD. A circle is drawn in such a way that its centre coincides with rectangle’s centre. Find out the length of the diameter of the circle if both the lines DE and BF are tangents to the circle?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7.2 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8.4 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9.2 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6.4  cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us draw the diagram.\nWe know that E and F are the midpoints of AB and CD hence AE = EB= DF = FC = 12 cm\nChanging the given lengths in coordinate system by assuming D at the origin and B at (24, 9).DC will become x axis and DA will become y axis. We can find out the coordinate of each point.\nWe can see from the symmetry that DE is parallel to line FB. The diameter of circle is essentially the perpendicular distance between line DE and FB \nEquation of line DE \n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{12 - 0}$(x - 0)\n$\\Rightarrow$  3x - 4y = 0         ... (1)\nSimilarly the equation of line FB\n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{24 - 12}$(x - 12)\n$\\Rightarrow$  3x - 4y = 36      ...  (2)\nDistance between parallel lines DE and FB\nd = |$\\frac{36 - 0}{\\sqrt{3^2+4^2}}$|\nd = 7.2 cm\nTherefore we can say that diameter of the circle = 7.2 cm\nHence option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a rectangle ABCD where AB = 24 cm and BC = 9 cm. Points E and F are midpoints of side AB and CD. A circle is drawn in such a way that its centre coincides with rectangle’s centre. Find out the length of the diameter of the circle if both the lines DE and BF are tangents to the circle?\n\n**Options:**\n- **A**. 7.2 cm ✅\n- **B**. 8.4 cm\n- **C**. 9.2 cm\n- **D**. 6.4  cm\n\n**Correct Answer:** null\n\n**Solution:**\nLet us draw the diagram.\nWe know that E and F are the midpoints of AB and CD hence AE = EB= DF = FC = 12 cm\nChanging the given lengths in coordinate system by assuming D at the origin and B at (24, 9).DC will become x axis and DA will become y axis. We can find out the coordinate of each point.\nWe can see from the symmetry that DE is parallel to line FB. The diameter of circle is essentially the perpendicular distance between line DE and FB \nEquation of line DE \n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{12 - 0}$(x - 0)\n$\\Rightarrow$  3x - 4y = 0         ... (1)\nSimilarly the equation of line FB\n$\\Rightarrow$  y - 0 = $\\frac{9 - 0}{24 - 12}$(x - 12)\n$\\Rightarrow$  3x - 4y = 36      ...  (2)\nDistance between parallel lines DE and FB\nd = |$\\frac{36 - 0}{\\sqrt{3^2+4^2}}$|\nd = 7.2 cm\nTherefore we can say that diameter of the circle = 7.2 cm\nHence option A is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-5-20",
+      "passage_text": "",
+      "question_text": "There are 3 test-matches going on.The first one is between India and Australia. The probability that India wins is $\\frac{1}{6}$. The probability that Australia wins is $\\frac{1}{5}$. The second test is between Sri Lanka and England where the chances of Sri Lanka winning is $\\frac{1}{10}$ and England winning is $\\frac{1}{5}$. In the third match between South Africa and Pakistan, the chances of South Africa winning is $\\frac{1}{3}$ and that of Pakistan winning is $\\frac{1}{8}$. Find the probability that all 3 matches end in a draw.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "729/1600",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1729/7200",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1729/3600",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the match between India and Australia,\nP(India wins) = $\\frac{1}{6}$\nP(Australia wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{5}-\\frac{1}{6}=\\frac{19}{30}$\nIn the match between Sri Lanka and England,\nP(Sri Lanka wins) = $\\frac{1}{10}$\nP(England wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{10}-\\frac{1}{5}\\ =\\ \\frac{7}{10}$\nIn the match between South Africa and Pakistan,\nP(South Africa wins) = $\\frac{1}{3}$\nP(Australia wins) = $\\frac{1}{8}$\nP(Draw) = $1-\\frac{1}{3}-\\frac{1}{8}=\\frac{13}{24}$\nP(All matches draw) = P(Match 1 draw) + P(Match 2 draw)+ P(Match 3 draw)\n=$\\frac{19}{30}\\times\\ \\frac{7}{10}\\times\\ \\frac{13}{24}=\\frac{1729}{7200}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 3 test-matches going on.The first one is between India and Australia. The probability that India wins is $\\frac{1}{6}$. The probability that Australia wins is $\\frac{1}{5}$. The second test is between Sri Lanka and England where the chances of Sri Lanka winning is $\\frac{1}{10}$ and England winning is $\\frac{1}{5}$. In the third match between South Africa and Pakistan, the chances of South Africa winning is $\\frac{1}{3}$ and that of Pakistan winning is $\\frac{1}{8}$. Find the probability that all 3 matches end in a draw.\n\n**Options:**\n- **A**. 729/1600\n- **B**. 1/6\n- **C**. 1729/7200 ✅\n- **D**. 1729/3600\n\n**Correct Answer:** null\n\n**Solution:**\nIn the match between India and Australia,\nP(India wins) = $\\frac{1}{6}$\nP(Australia wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{5}-\\frac{1}{6}=\\frac{19}{30}$\nIn the match between Sri Lanka and England,\nP(Sri Lanka wins) = $\\frac{1}{10}$\nP(England wins) = $\\frac{1}{5}$\nP(Draw) = $1-\\frac{1}{10}-\\frac{1}{5}\\ =\\ \\frac{7}{10}$\nIn the match between South Africa and Pakistan,\nP(South Africa wins) = $\\frac{1}{3}$\nP(Australia wins) = $\\frac{1}{8}$\nP(Draw) = $1-\\frac{1}{3}-\\frac{1}{8}=\\frac{13}{24}$\nP(All matches draw) = P(Match 1 draw) + P(Match 2 draw)+ P(Match 3 draw)\n=$\\frac{19}{30}\\times\\ \\frac{7}{10}\\times\\ \\frac{13}{24}=\\frac{1729}{7200}$"
+    },
+    {
+      "qid": "quant-sectionals-5-21",
+      "passage_text": "",
+      "question_text": "Aman owns a sweet shop. Naman opens a sweet shop in front of him. To drive him out of business in the first week, Aman gives a 50% discount on sweets. But Naman is a rich man, and manages to stay in the business for another week. Aman had not anticipated this, and suffered a loss equal to the selling price of the sweets he sold in the second week. \nAssuming business was uniform across the two weeks, which is the approximate markup percentage of Aman?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16.25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "33.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let CP=A\nMP=A(1+x)\nDiscounted SP=$\\frac{1}{2}$*A(1+x)\nGiven \n2$\\times\\ $CP - 2$\\times\\ $SP=SP\n2A-A(1+x)=$\\frac{1}{2}$*A(1+x)\n2=$\\frac{3}{2}$*(1+x)\nx=$\\frac{1}{3}$=33.33%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAman owns a sweet shop. Naman opens a sweet shop in front of him. To drive him out of business in the first week, Aman gives a 50% discount on sweets. But Naman is a rich man, and manages to stay in the business for another week. Aman had not anticipated this, and suffered a loss equal to the selling price of the sweets he sold in the second week. \nAssuming business was uniform across the two weeks, which is the approximate markup percentage of Aman?\n\n**Options:**\n- **A**. 16.25%\n- **B**. 20%\n- **C**. 33.33% ✅\n- **D**. 37%\n\n**Correct Answer:** null\n\n**Solution:**\nLet CP=A\nMP=A(1+x)\nDiscounted SP=$\\frac{1}{2}$*A(1+x)\nGiven \n2$\\times\\ $CP - 2$\\times\\ $SP=SP\n2A-A(1+x)=$\\frac{1}{2}$*A(1+x)\n2=$\\frac{3}{2}$*(1+x)\nx=$\\frac{1}{3}$=33.33%"
+    },
+    {
+      "qid": "quant-sectionals-5-22",
+      "passage_text": "",
+      "question_text": "While racing on track 1, A beats B by $40$m, and while running on track 2, B beats C by $40$m. If, on a 300m track, A beats C by 200m, what could be the maximum possible difference between the lengths of tracks 1 and 2 if both the lengths are integers?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1199",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1260",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "999",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the lengths of tracks 1 and 2 be $x$ and $y$, respectively, and the speeds of $A, B$ and $C$ be $a, b$ and $c$, respectively.\nSince, on track 1, A beats B by 40m, the ratio of speeds of A and B = $a:b=(x):(x-40)$\nWhile running on track 2, B beats C by 40m. Thus, the ratio of speeds of B and C = $b:c=(y):(y-40)$\nThus, the ratio $a:b:c=(xy):(y)(x-40):(x-40)(y-40)$\nWe are given that, on a 300m track, A beats C by 200m.\nThus, the ratio of speeds of A and C = $a:c=300:100=3:1$\nThus, $\\frac{xy}{\\left(x-40\\right)\\left(y-40\\right)}=\\frac{3}{1}$\n$xy=3xy-120x-120y+4800$\n$120x-2xy+120y=4800$\n$60x-xy+60y=2400$\n$(x-60)(y-60)=1200$\nTo find the maximum difference between the $x$ and $y$, the factors of 1200 must be $1$ and $1200$\nLet $x-60=1$, then $y-60=1200$\nThus, $x=61$ and $y=1260$.\nHence, the required difference = $1260-61=1199$.\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhile racing on track 1, A beats B by $40$m, and while running on track 2, B beats C by $40$m. If, on a 300m track, A beats C by 200m, what could be the maximum possible difference between the lengths of tracks 1 and 2 if both the lengths are integers?\n\n**Options:**\n- **A**. 1199 ✅\n- **B**. 1200\n- **C**. 1260\n- **D**. 999\n\n**Correct Answer:** null\n\n**Solution:**\nLet the lengths of tracks 1 and 2 be $x$ and $y$, respectively, and the speeds of $A, B$ and $C$ be $a, b$ and $c$, respectively.\nSince, on track 1, A beats B by 40m, the ratio of speeds of A and B = $a:b=(x):(x-40)$\nWhile running on track 2, B beats C by 40m. Thus, the ratio of speeds of B and C = $b:c=(y):(y-40)$\nThus, the ratio $a:b:c=(xy):(y)(x-40):(x-40)(y-40)$\nWe are given that, on a 300m track, A beats C by 200m.\nThus, the ratio of speeds of A and C = $a:c=300:100=3:1$\nThus, $\\frac{xy}{\\left(x-40\\right)\\left(y-40\\right)}=\\frac{3}{1}$\n$xy=3xy-120x-120y+4800$\n$120x-2xy+120y=4800$\n$60x-xy+60y=2400$\n$(x-60)(y-60)=1200$\nTo find the maximum difference between the $x$ and $y$, the factors of 1200 must be $1$ and $1200$\nLet $x-60=1$, then $y-60=1200$\nThus, $x=61$ and $y=1260$.\nHence, the required difference = $1260-61=1199$.\nThe answer is option A."
+    }
+  ]
+}
