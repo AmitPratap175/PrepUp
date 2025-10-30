@@ -170,6 +170,13 @@ class MemStorage:
                 "subject": "DILR",
                 "duration": 120,
                 "filePath": "data/cat/docs/data-interpretation.json"
+            },
+            {
+                "title": "Vocabulary Test",
+                "examType": "cat",
+                "subject": "Vocabulary",
+                "duration": 120,
+                "filePath": "data/cat/docs/vocab.json"
             }
         ]
 

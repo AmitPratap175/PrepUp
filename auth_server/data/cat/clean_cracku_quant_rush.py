@@ -102,7 +102,7 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
 
     browser_config = BrowserConfig(
         verbose=True,
-        headless=True,
+        headless=False,
         use_persistent_context=True,
         use_managed_browser=True,
         browser_type="chromium",
@@ -120,17 +120,26 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
 
     async with AsyncWebCrawler(config=browser_config) as crawler:
         # URLs are now formatted with the dynamically updated numbers.
+        script_dir = Path(__file__).parent
+        html_dir = script_dir / "html"
+        os.makedirs(html_dir, exist_ok=True)
         urls = [
-                f"https://cracku.in/dt-verbal-test-{dt_num}",
-                f"https://cracku.in/dt-quant-dailytest-{dt_num}",
-                f"https://cracku.in/dt-reasoning-dailytest-{dt_num}",
-                f"https://gmatpoint.com/gmat-daily-target/verbal-daily-test-{daily_num}",
-                f"https://gmatpoint.com/gmat-daily-target/quant-daily-test-{daily_num}"
+                "https://cracku.in/quant-rush/history/50949047/"
+                # f"https://cracku.in/dt-verbal-test-{dt_num}",
+                # f"https://cracku.in/dt-quant-dailytest-{dt_num}",
+                # f"https://cracku.in/dt-reasoning-dailytest-{dt_num}",
+                # f"https://gmatpoint.com/gmat-daily-target/verbal-daily-test-{daily_num}",
+                # f"https://gmatpoint.com/gmat-daily-target/quant-daily-test-{daily_num}"
                 ]
         
         for url in urls:
             result = await crawler.arun(url, config=run_config, magic=True)
             if result and result.html:
+                filename = "hello.html"
+                filepath = html_dir / filename
+                with open(filepath, "w", encoding="utf-8") as f:
+                    f.write(result.html)
+                print(f"Saved HTML to {filepath}")
                 if "quant" in url:
                     categorized_html["quant"].append(result.html)
                 elif "verbal" in url:

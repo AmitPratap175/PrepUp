@@ -22,6 +22,7 @@ import os
 import re
 import sys
 from datetime import datetime, timedelta
+from file_clean_qid import main as clean_qid_main
 from typing import List, Dict, Optional, Tuple, Any
 import shutil
 import asyncio
@@ -499,3 +500,13 @@ if __name__ == "__main__":
     # final_destination_dir = project_root / "auth_server/data/cat/docs"
     # sectionals_dir = project_root / f"auth_server/data/cat/sectionals/quants"
     # clean_qids_in_output_files(sectionals_dir, "quants")
+
+    print("---" + " Running qid cleaning script ---")
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent.parent.parent
+    
+    intermediate_dir = script_dir.parent / "temp_json"
+    final_destination_dir = project_root / "auth_server/data/cat/docs"
+    clean_qid_main(final_destination_dir)
+    print("---" + " Finished qid cleaning script ---")
+
