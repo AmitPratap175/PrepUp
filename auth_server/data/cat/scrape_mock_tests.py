@@ -49,6 +49,7 @@ import time
 from pathlib import Path
 # Import the main function from the sibling script to clean question IDs.
 from file_clean_qid import main as clean_qid_main
+from organize_docs import organize_mocks
 
 # --- QID Cleaning Logic ---
 def get_questions_container_quants(data: Any) -> List[Dict[str, Any]]:
@@ -744,7 +745,7 @@ def parse_html_to_questions(html: str, type_curr: str) -> Dict:
     results: List[Dict] = []
     q_roots = soup.select("div#question-card")
     if not q_roots:
-        print("DEBUG: Could not find div#question-card, falling back to old q_roots logic.")
+        # print("DEBUG: Could not find div#question-card, falling back to old q_roots logic.")
         q_roots = soup.find_all(attrs={"data-qno": True})
         if not q_roots:
             q_roots = [d for d in soup.find_all("div") if d.get("id", "").startswith("q")]
@@ -776,9 +777,9 @@ def parse_html_to_questions(html: str, type_curr: str) -> Dict:
             # If passage was found, we still need to extract the question from the current qroot
             _, question_text = _find_passage_and_question_blocks(qroot, qid)
 
-        print(f"DEBUG QID: {qid} - Passage Found: {'YES' if passage_text else 'NO'}")
-        if passage_text:
-            print(f"PASSAGE TEXT for {qid}:\n---\n{passage_text[:300]}...\n---")
+        # print(f"DEBUG QID: {qid} - Passage Found: {'YES' if passage_text else 'NO'}")
+        # if passage_text:
+        #     print(f"PASSAGE TEXT for {qid}:\n---\n{passage_text[:300]}...\n---")
 
         # Override with more specific selectors if available
         question_text_div = qroot.find("div", class_="question-text pl-1 pr-1")
@@ -1010,4 +1011,6 @@ if __name__ == "__main__":
     final_destination_dir = project_root / "auth_server/data/cat/mocks"
     clean_qid_main(final_destination_dir)
     print("---" + " Finished qid cleaning script ---")
+
+    organize_mocks()
 

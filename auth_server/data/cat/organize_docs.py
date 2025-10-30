@@ -2,6 +2,7 @@ import json
 import os
 from pathlib import Path
 import re
+from file_clean_qid import main as clean_qid_main
 
 def organize_mocks():
     script_dir = Path(__file__).parent
@@ -62,6 +63,7 @@ def organize_mocks():
                          existing_questions = existing_data
                     
                     for q in existing_questions:
+                        q.pop("type", None)
                         # Use a tuple of key fields to uniquely identify a question
                         seen_q_texts.add(q.get("question_text"))
 
@@ -71,6 +73,7 @@ def organize_mocks():
         # Add new unique questions
         for q in questions:
             if q.get("question_text") not in seen_q_texts:
+                q.pop("type", None)
                 existing_questions.append(q)
                 seen_q_texts.add(q.get("question_text"))
         
@@ -81,6 +84,11 @@ def organize_mocks():
             json.dump(final_data, f, ensure_ascii=False, indent=2)
         
         print(f"Wrote {len(existing_questions)} questions to {doc_file_path}")
+    
+    print("---" + " Running qid cleaning script ---")
+
+    clean_qid_main(Path("/home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs"))
+    print("---" + " Finished qid cleaning script ---")
 
 if __name__ == "__main__":
     organize_mocks()
