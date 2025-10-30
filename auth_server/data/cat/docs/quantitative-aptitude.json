@@ -35846,6 +35846,181 @@
       "solution_text": "Expression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$",
       "image_url": "",
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the minimum value of the expression $\\frac{3x^2-7}{3x^2+1} + \\frac{2x^2-5}{2x^2+5}$?\n\n**Options:**\n\n**Correct Answer:** -8\n\n**Solution:**\nExpression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$"
+    },
+    {
+      "qid": "quant-1083",
+      "passage_text": "What is the value of the following expression?\n\n1 ( 2 2 − 1 ) + 1 ( 4 2 − 1 ) + 1 ( 6 2 − 1 ) + . . . + 1 ( 2 0 2 − 1 ) \\dfrac{1}{(2^2-1)}+\\dfrac{1}{(4^2-1)}+\\dfrac{1}{(6^2-1)}+...+\\dfrac{1}{(20^2-1)} ( 2 2 − 1 ) 1 ​ + ( 4 2 − 1 ) 1 ​ + ( 6 2 − 1 ) 1 ​ + . . . + ( 2 0 2 − 1 ) 1 ​\n\n9/19\n\n10/19\n\n10/21\n\n11/21",
+      "question_text": "What is the value of the following expression?\n\n$\\dfrac{1}{(2^2-1)}+\\dfrac{1}{(4^2-1)}+\\dfrac{1}{(6^2-1)}+...+\\dfrac{1}{(20^2-1)}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9/19",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10/19",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10/21",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "11/21",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "$\\dfrac{1}{(2^2-1)}+\\dfrac{1}{(4^2-1)}+\\dfrac{1}{(6^2-1)}+...+\\dfrac{1}{(20^2-1)}$ \n\n= $\\dfrac{1}{(2+1)(2-1)}+\\dfrac{1}{(4+1)(4-1)}+..+\\dfrac{1}{(20+1)(20-1)}$\n\n= 1/(1*3) + 1/(3*5) + 1/(5*7) + ... + 1/(19*21) \n\n=1/2 * ( 1/1 - 1/3 + 1/3 - 1/5 + 1/5 - 1/7 + ... +1/19 - 1/21)\n\n=1/2 * (1 - 1/21) = 10/21",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 4883)\n\n**Passage:**\nWhat is the value of the following expression?\n\n1 ( 2 2 − 1 ) + 1 ( 4 2 − 1 ) + 1 ( 6 2 − 1 ) + . . . + 1 ( 2 0 2 − 1 ) \\dfrac{1}{(2^2-1)}+\\dfrac{1}{(4^2-1)}+\\dfrac{1}{(6^2-1)}+...+\\dfrac{1}{(20^2-1)} ( 2 2 − 1 ) 1 ​ + ( 4 2 − 1 ) 1 ​ + ( 6 2 − 1 ) 1 ​ + . . . + ( 2 0 2 − 1 ) 1 ​\n\n9/19\n\n10/19\n\n10/21\n\n11/21\n\nWhat is the value of the following expression?\n\n$\\dfrac{1}{(2^2-1)}+\\dfrac{1}{(4^2-1)}+\\dfrac{1}{(6^2-1)}+...+\\dfrac{1}{(20^2-1)}$\n\n**Options:**\n- **A**. 9/19\n- **B**. 10/19\n- **C**. 10/21\n- **D**. 11/21\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1084",
+      "passage_text": "",
+      "question_text": "Find the sum of first 17 terms of 171, 200, 229, 258 …?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6851",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6423",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6432",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6623",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "This is an arithmetic progression with first digit equal to 171 and the common difference equal to 29\n\nSo, the sum of the first 17 terms equals $\\frac{17}{2}*{2*171+(17-1)*29}=\\frac{17*(342+464)}{2}=6851$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 8268)\n\n**Passage:**\nFind the sum of first 17 terms of 171, 200, 229, 258 …?\n\n6851\n\n6423\n\n6432\n\n6623\n\nFind the sum of first 17 terms of 171, 200, 229, 258 …?\n\n**Options:**\n- **A**. 6851\n- **B**. 6423\n- **C**. 6432\n- **D**. 6623\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1085",
+      "passage_text": "",
+      "question_text": "Find sum of the series 6 , 1.5, 0.375, …. ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "This is an infinite geometric progression with first term equal to 6 and the common ratio equal to 0.25\n\nHence, the sum of the infinite geometric progression is $\\frac{6}{1-0.25}=6*\\frac{4}{3}=8$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 8270)\n\n**Passage:**\nFind sum of the series 6 , 1.5, 0.375, …. ?\n\n8\n\n10\n\n12\n\n18\n\nFind sum of the series 6 , 1.5, 0.375, …. ?\n\n**Options:**\n- **A**. 8\n- **B**. 10\n- **C**. 12\n- **D**. 18\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1086",
+      "passage_text": "The value of 1 1 − x + 1 1 + x + 2 1 + x 2 + 4 1 + x 4 \\frac{1}{1-x}+\\frac{1}{1+x}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4} 1 − x 1 ​ + 1 + x 1 ​ + 1 + x 2 2 ​ + 1 + x 4 4 ​\n\n8 1 − x 8 \\frac{8}{1-x^8} 1 − x 8 8 ​\n\n4 x 1 + x 2 \\frac{4x}{1+x^2} 1 + x 2 4 x ​\n\n4 1 − x 6 \\frac{4}{1-x^6} 1 − x 6 4 ​\n\n4 1 + x 4 \\frac{4}{1+x^4} 1 + x 4 4 ​",
+      "question_text": "The value of $\\frac{1}{1-x}+\\frac{1}{1+x}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{8}{1-x^8}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{4x}{1+x^2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{4}{1-x^6}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{4}{1+x^4}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "$\\frac{1}{1-x}+\\frac{1}{1+x}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4}$\n\nor $\\frac{2}{1-x^2}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4}$\n\nor $\\frac{4}{1-x^4}+\\frac{4}{1+x^4}$\n\nor $\\frac{8}{1-x^8}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 11384)\n\n**Passage:**\nThe value of 1 1 − x + 1 1 + x + 2 1 + x 2 + 4 1 + x 4 \\frac{1}{1-x}+\\frac{1}{1+x}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4} 1 − x 1 ​ + 1 + x 1 ​ + 1 + x 2 2 ​ + 1 + x 4 4 ​\n\n8 1 − x 8 \\frac{8}{1-x^8} 1 − x 8 8 ​\n\n4 x 1 + x 2 \\frac{4x}{1+x^2} 1 + x 2 4 x ​\n\n4 1 − x 6 \\frac{4}{1-x^6} 1 − x 6 4 ​\n\n4 1 + x 4 \\frac{4}{1+x^4} 1 + x 4 4 ​\n\nThe value of $\\frac{1}{1-x}+\\frac{1}{1+x}+\\frac{2}{1+x^2}+\\frac{4}{1+x^4}$\n\n**Options:**\n- **A**. $\\frac{8}{1-x^8}$\n- **B**. $\\frac{4x}{1+x^2}$\n- **C**. $\\frac{4}{1-x^6}$\n- **D**. $\\frac{4}{1+x^4}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1087",
+      "passage_text": "N the set of natural numbers is partitioned into subsets S 1 S_{1} S 1 ​ = ( 1 ) (1) ( 1 ) , S 2 S_{2} S 2 ​ = ( 2 , 3 ) (2,3) ( 2 , 3 ) , S 3 S_{3} S 3 ​ = ( 4 , 5 , 6 ) (4,5,6) ( 4 , 5 , 6 ) , S 4 S_{4} S 4 ​ = ( 7 , 8 , 9 , 10 ) (7,8,9,10) ( 7 , 8 , 9 , 1 0 ) and so on. The sum of the elements of the subset S 50 S_{50} S 5 0 ​ is\n\n61250\n\n65525\n\n42455\n\n62525",
+      "question_text": "N the set of natural numbers is partitioned into subsets $S_{1}$ = $(1)$, $S_{2}$ = $(2,3)$, $S_{3}$ =$(4,5,6)$, $S_{4}$ = $(7,8,9,10)$ and so on. The sum of the elements of the subset $S_{50}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "61250",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "65525",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "42455",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "62525",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "According to given question $S_{50}$ will have 50 terms \n\nAnd its first term will be 50th number in the series 1,2,4,7,.........$T_{50}$\n\n$T_1 = 1$\n\n$T_2 = 1+1$\n\n$T_3 = 1+1+2$\n\n$T_4 = 1+1+2+3$\n\n$T_n = 1+(1+2+3+4+5....(n-1))$\n\n= $1+\\frac{n(n-1)}{2}$\n\nSo $T_{50} = 1+1225 = 1226$\n\nHence $S_{50} = (1226,1227,1228,1229........)$\n\nAnd summation will be = $\\frac{50}{2} (2\\times 1226 + 49 \\times 1 ) = 62525$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 11408)\n\n**Passage:**\nN the set of natural numbers is partitioned into subsets S 1 S_{1} S 1 ​ = ( 1 ) (1) ( 1 ) , S 2 S_{2} S 2 ​ = ( 2 , 3 ) (2,3) ( 2 , 3 ) , S 3 S_{3} S 3 ​ = ( 4 , 5 , 6 ) (4,5,6) ( 4 , 5 , 6 ) , S 4 S_{4} S 4 ​ = ( 7 , 8 , 9 , 10 ) (7,8,9,10) ( 7 , 8 , 9 , 1 0 ) and so on. The sum of the elements of the subset S 50 S_{50} S 5 0 ​ is\n\n61250\n\n65525\n\n42455\n\n62525\n\nN the set of natural numbers is partitioned into subsets $S_{1}$ = $(1)$, $S_{2}$ = $(2,3)$, $S_{3}$ =$(4,5,6)$, $S_{4}$ = $(7,8,9,10)$ and so on. The sum of the elements of the subset $S_{50}$ is\n\n**Options:**\n- **A**. 61250\n- **B**. 65525\n- **C**. 42455\n- **D**. 62525\n\n**Correct Answer:** null"
     }
   ]
 }
