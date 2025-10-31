@@ -38801,6 +38801,162 @@
       "solution_text": "Given number = $7^{51}+3^{29}$\n= $\\left(7\\times\\ \\left(7^2\\right)^{25}\\right)+\\left(3\\times\\ \\left(3^2\\right)^{14}\\right)$\n= $7\\left(48+1\\right)^{25}+3\\left(8+1\\right)^{14}$\nLet us expand the terms using Binomial expansion, we get\n$7\\left(25_{c_0}48^0\\left(1\\right)^{25}+25_{c_1}48^1\\left(1\\right)^{24}+....\\right)+3\\left(14_{c_0}8^0\\left(1\\right)^{14}+14_{c_1}8^1\\left(1\\right)^{13}+....\\right)$\nWe see that in both expansions we have 8 common in all the terms respectively except the first team.\n= $7\\left(1+8k\\right)+3\\left(1+8j\\right)$\n= 10 + 8z\n= 2 + 8y (where k, j, z, y are some constants)\nTherefore it leaves a remainder of 2, when divided by 8.",
       "image_url": "",
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the remainder that $7^{51}+3^{29}$ leaves when divided by 8.\n\n**Options:**\n- **A**. 0\n- **B**. 1\n- **C**. 2 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nGiven number = $7^{51}+3^{29}$\n= $\\left(7\\times\\ \\left(7^2\\right)^{25}\\right)+\\left(3\\times\\ \\left(3^2\\right)^{14}\\right)$\n= $7\\left(48+1\\right)^{25}+3\\left(8+1\\right)^{14}$\nLet us expand the terms using Binomial expansion, we get\n$7\\left(25_{c_0}48^0\\left(1\\right)^{25}+25_{c_1}48^1\\left(1\\right)^{24}+....\\right)+3\\left(14_{c_0}8^0\\left(1\\right)^{14}+14_{c_1}8^1\\left(1\\right)^{13}+....\\right)$\nWe see that in both expansions we have 8 common in all the terms respectively except the first team.\n= $7\\left(1+8k\\right)+3\\left(1+8j\\right)$\n= 10 + 8z\n= 2 + 8y (where k, j, z, y are some constants)\nTherefore it leaves a remainder of 2, when divided by 8."
+    },
+    {
+      "qid": "quant-1176",
+      "passage_text": "",
+      "question_text": "A two digit number when its digits are reversed becomes 4.5 times itself. Which of the following can be the sum of the digits?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "More than one of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A two digit number when its digits are reversed becomes 4.5 times itself. Which of the following can be the sum of the digits?",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 43041)\n\n**Passage:**\nA two digit number when its digits are reversed becomes 4.5 times itself. Which of the following can be the sum of the digits?\n\n3\n\n5\n\n7\n\n9\n\nMore than one of the above\n\nA two digit number when its digits are reversed becomes 4.5 times itself. Which of the following can be the sum of the digits?\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 7\n- **D**. 9\n- **E**. More than one of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1177",
+      "passage_text": "Three men had money in the ratio 7:6:5. They redistributed their money and the final amounts were in the ratio 6:5:4 respectively. In this process, one of them gained Rs 12, what was the total starting amount that the three men had?\n\n1420\n\n1240\n\n1160\n\n1080",
+      "question_text": "Three men had money in the ratio 7:6:5. They redistributed their money and the final amounts were in the ratio 6:5:4 respectively. In this process, one of them gained Rs 12, what was the total starting amount that the three men had?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1420",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1240",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1160",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1080",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Three men had money in the ratio 7:6:5. They redistributed their money and the final amounts were in the ratio 6:5:4 respectively. In this process, one of them gained Rs 12, what was the total starting amount that the three men had?",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 34831)\n\n**Passage:**\nThree men had money in the ratio 7:6:5. They redistributed their money and the final amounts were in the ratio 6:5:4 respectively. In this process, one of them gained Rs 12, what was the total starting amount that the three men had?\n\n1420\n\n1240\n\n1160\n\n1080\n\nThree men had money in the ratio 7:6:5. They redistributed their money and the final amounts were in the ratio 6:5:4 respectively. In this process, one of them gained Rs 12, what was the total starting amount that the three men had?\n\n**Options:**\n- **A**. 1420\n- **B**. 1240\n- **C**. 1160\n- **D**. 1080\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1178",
+      "passage_text": "",
+      "question_text": "70 percent employees of a tech company are female, and 80 percent of the men earn more than Rs 30000 per year. If 40 percent of company’s employees earn more than 30000 per year, what fraction of the women employed by the company earn Rs 30000 per year or less?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "27/35",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9/10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27/28",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "21/35",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "70 percent employees of a tech company are female, and 80 percent of the men earn more than Rs 30000 per year. If 40 percent of company’s employees earn more than 30000 per year, what fraction of the women employed by the company earn Rs 30000 per year or less?",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 236532)\n\n**Passage:**\n70 percent employees of a tech company are female, and 80 percent of the men earn more than Rs 30000 per year. If 40 percent of company’s employees earn more than 30000 per year, what fraction of the women employed by the company earn Rs 30000 per year or less?\n\n27/35\n\n9/10\n\n27/28\n\n21/35\n\n70 percent employees of a tech company are female, and 80 percent of the men earn more than Rs 30000 per year. If 40 percent of company’s employees earn more than 30000 per year, what fraction of the women employed by the company earn Rs 30000 per year or less?\n\n**Options:**\n- **A**. 27/35\n- **B**. 9/10\n- **C**. 27/28\n- **D**. 21/35\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1179",
+      "passage_text": "",
+      "question_text": "The ratio of money with A and B is 3.1 : 5.2 , with B and C is 10.4 : 12 and that with C and D is 36 : 1.9. If D has Rs.3800 then find the share of A?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 37200",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 62000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 64240",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 42000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The ratio of money with A and B is 3.1 : 5.2 , with B and C is 10.4 : 12 and that with C and D is 36 : 1.9. If D has Rs.3800 then find the share of A?",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 8329)\n\n**Passage:**\nThe ratio of money with A and B is 3.1 : 5.2 , with B and C is 10.4 : 12 and that with C and D is 36 : 1.9. If D has Rs.3800 then find the share of A?\n\nRs. 37200\n\nRs. 62000\n\nRs. 64240\n\nRs. 42000\n\nThe ratio of money with A and B is 3.1 : 5.2 , with B and C is 10.4 : 12 and that with C and D is 36 : 1.9. If D has Rs.3800 then find the share of A?\n\n**Options:**\n- **A**. Rs. 37200\n- **B**. Rs. 62000\n- **C**. Rs. 64240\n- **D**. Rs. 42000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1180",
+      "passage_text": "",
+      "question_text": "Two friends Aarthi and Anuhya wrote an examination. Aarthi scored 30% of the maximum marks and failed by 10 marks while Anuhya scored 40% of the maximum marks, which was 15 more than the pass mark. What was the maximum marks that they could have scored in the examination?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "Two friends Aarthi and Anuhya wrote an examination. Aarthi scored 30% of the maximum marks and failed by 10 marks while Anuhya scored 40% of the maximum marks, which was 15 more than the pass mark. What was the maximum marks that they could have scored in the examination?",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 265429)\n\n**Passage:**\nTwo friends Aarthi and Anuhya wrote an examination. Aarthi scored 30% of the maximum marks and failed by 10 marks while Anuhya scored 40% of the maximum marks, which was 15 more than the pass mark. What was the maximum marks that they could have scored in the examination?\n\nTwo friends Aarthi and Anuhya wrote an examination. Aarthi scored 30% of the maximum marks and failed by 10 marks while Anuhya scored 40% of the maximum marks, which was 15 more than the pass mark. What was the maximum marks that they could have scored in the examination?\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
