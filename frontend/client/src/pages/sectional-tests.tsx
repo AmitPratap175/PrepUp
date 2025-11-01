@@ -68,49 +68,72 @@ export default function SectionalTestsPage() {
           </div>
 
           {sectionalTests && sectionalTests.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {sectionalTests.map((test) => (
-                <Card key={test.id} className="hover:shadow-lg transition-all duration-300 hover-elevate">
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="secondary">
-                        {test.examType.toUpperCase()}
-                      </Badge>
-                      <Badge variant="outline">
-                        {test.duration} mins
-                      </Badge>
-                    </div>
-                    <CardTitle className="text-xl">{test.title}</CardTitle>
-                    <CardDescription>
-                      {test.subject} • {test.totalQuestions} Questions
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3 mb-6">
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">schedule</span>
-                        <span>{test.duration} minutes</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">quiz</span>
-                        <span>{test.totalQuestions} questions</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <span className="material-symbols-outlined text-primary">subject</span>
-                        <span>{test.subject}</span>
-                      </div>
-                    </div>
+            <div className="space-y-12">
+              {Object.entries(
+                sectionalTests.reduce((acc, test) => {
+                  if (!acc[test.subject]) {
+                    acc[test.subject] = [];
+                  }
+                  acc[test.subject].push(test);
+                  return acc;
+                }, {} as Record<string, PracticeTest[]>)
+              )
+                .sort(([subjectA], [subjectB]) => subjectA.localeCompare(subjectB))
+                .map(([subject, tests]) => (
+                  <div key={subject}>
+                    <h2 className="text-2xl font-bold tracking-tight text-foreground mb-6">
+                      {subject === 'VARC' && 'Verbal Ability & Reading Comprehension'}
+                      {subject === 'DILR' && 'Data Interpretation & Logical Reasoning'}
+                      {subject === 'QUANTS' && 'Quantitative Aptitude'}
+                    </h2>
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                      {tests
+                        .sort((a, b) => a.title.localeCompare(b.title))
+                        .map((test) => (
+                          <Card key={test.id} className="hover:shadow-lg transition-all duration-300 hover-elevate">
+                            <CardHeader>
+                              <div className="flex items-center justify-between mb-2">
+                                <Badge variant="secondary">
+                                  {test.examType.toUpperCase()}
+                                </Badge>
+                                <Badge variant="outline">
+                                  {test.duration} mins
+                                </Badge>
+                              </div>
+                              <CardTitle className="text-xl">{test.title}</CardTitle>
+                              <CardDescription>
+                                {test.subject} • {test.totalQuestions} Questions
+                              </CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <div className="space-y-3 mb-6">
+                                <div className="flex items-center gap-3 text-sm">
+                                  <span className="material-symbols-outlined text-primary">schedule</span>
+                                  <span>{test.duration} minutes</span>
+                                </div>
+                                <div className="flex items-center gap-3 text-sm">
+                                  <span className="material-symbols-outlined text-primary">quiz</span>
+                                  <span>{test.totalQuestions} questions</span>
+                                </div>
+                                <div className="flex items-center gap-3 text-sm">
+                                  <span className="material-symbols-outlined text-primary">subject</span>
+                                  <span>{test.subject}</span>
+                                </div>
+                              </div>
 
-                    <Button
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                      onClick={() => handleStartTest(test.id)}
-                      data-testid={`start-test-${test.id}`}
-                    >
-                      Start Test
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                              <Button
+                                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                                onClick={() => handleStartTest(test.id)}
+                                data-testid={`start-test-${test.id}`}
+                              >
+                                Start Test
+                              </Button>
+                            </CardContent>
+                          </Card>
+                        ))}
+                    </div>
+                  </div>
+                ))}
             </div>
           ) : (
             <div className="text-center py-12">

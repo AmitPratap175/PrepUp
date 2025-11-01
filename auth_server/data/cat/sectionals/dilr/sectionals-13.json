@@ -1,0 +1,624 @@
+{
+  "questions": [
+    {
+      "qid": "dilr-sectionals-13-1",
+      "passage_text": "Hariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.",
+      "question_text": "For how many minutes, there were five guests at the party?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "13 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "17 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "6:00 PM: The party started with B was the first to attend the party.\n 7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n 7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n 8:00 PM: I and G entered the party, J was having a discussion with C.\n 8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nFrom the time period, 8:47 to 9:00 PM there were five guests at the party.\n13 minutes.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nHariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.\n\nFor how many minutes, there were five guests at the party?\n\n**Options:**\n- **A**. 13 minutes ✅\n- **B**. 11 minutes\n- **C**. 17 minutes\n- **D**. 20 minutes\n\n**Correct Answer:** null\n\n**Solution:**\n6:00 PM: The party started with B was the first to attend the party.\n 7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n 7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n 8:00 PM: I and G entered the party, J was having a discussion with C.\n 8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nFrom the time period, 8:47 to 9:00 PM there were five guests at the party.\n13 minutes."
+    },
+    {
+      "qid": "dilr-sectionals-13-2",
+      "passage_text": "Hariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.",
+      "question_text": "How many guests left the party before D joined the party?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\n4 guests: A, B, C and J left the party before E joined the party",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nHariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.\n\nHow many guests left the party before D joined the party?\n\n**Options:**\n- **A**. 3\n- **B**. 4 ✅\n- **C**. 5\n- **D**. 2\n\n**Correct Answer:** null\n\n**Solution:**\n6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\n4 guests: A, B, C and J left the party before E joined the party"
+    },
+    {
+      "qid": "dilr-sectionals-13-3",
+      "passage_text": "Hariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.",
+      "question_text": "For how many minutes, there were four guests at the party?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "57 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "70 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nFrom the time period, 8:00 to 8:15 PM there were four guests C, G, I, J at the party.\nFrom the time period, 8:30 to 8:40 PM there were four guests F, G, I, J at the party.\nFrom the time period, 8:45 to 8:47 PM there were four guests E, G, I, F at the party.\nFrom the time period, 9:00 to 9:30 PM there were four guests F, D, E, H at the party.\n15+10+2+30=57 minutes\nOption B",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nHariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.\n\nFor how many minutes, there were four guests at the party?\n\n**Options:**\n- **A**. 50 minutes\n- **B**. 57 minutes ✅\n- **C**. 40 minutes\n- **D**. 70 minutes\n\n**Correct Answer:** null\n\n**Solution:**\n6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nFrom the time period, 8:00 to 8:15 PM there were four guests C, G, I, J at the party.\nFrom the time period, 8:30 to 8:40 PM there were four guests F, G, I, J at the party.\nFrom the time period, 8:45 to 8:47 PM there were four guests E, G, I, F at the party.\nFrom the time period, 9:00 to 9:30 PM there were four guests F, D, E, H at the party.\n15+10+2+30=57 minutes\nOption B"
+    },
+    {
+      "qid": "dilr-sectionals-13-4",
+      "passage_text": "Hariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.",
+      "question_text": "Which of the following guest joined the party just before H did?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "E",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "F",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "D",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00 PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nD joined the party just before H.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nHariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.\n\nWhich of the following guest joined the party just before H did?\n\n**Options:**\n- **A**. E\n- **B**. F\n- **C**. G\n- **D**. D ✅\n\n**Correct Answer:** null\n\n**Solution:**\n6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00 PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nD joined the party just before H."
+    },
+    {
+      "qid": "dilr-sectionals-13-5",
+      "passage_text": "Hariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.",
+      "question_text": "How many guests joined the party after 8:15 PM?",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00 PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nWe see that F, E, D and H joined the party after 8:15 PM.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nHariram invited exactly ten guests, A, B, C, D, E, F, G, H, I and J to his birthday party. It is known that every guest at the party stayed for exactly 1 hour. \n The following table gives the partial timeline of what happened at the party.\n\n1. 6:00 PM: The party started with B.\n2. 7:30 PM: A left the party due to the fight with C.\n3. 7:40 PM One of the guests entered the party.\n4. 8:00 PM: I and G entered the party, J was having a discussion with C.\n5. 8:15 PM:  One of the guests left the party.\n6. 8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\n7. 9:30 PM E gave a gift to Hariram and F left the party.\n8. 9:45 PM One of the guests left the party and D had a discussion with Hariram.\n9. 9:47 PM One of the guests left the party.\n10. 10:00 PM The party ended with the last guest left the party.\n\nHow many guests joined the party after 8:15 PM?\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\n6:00 PM: The party started with B was the first to attend the party.\n7:30 PM: A left the party due to the fight with C.\n'A' must have entered the party at 6:30.\n7:40 PM One of the guests entered the party.\nHe must leave at 8:40.\n8:00 PM: I and G entered the party, J was having a discussion with C.\n8:15 PM: One of the guests left the party. He must have entered at 7:15. \n8:50 PM Hariram cut the cake in the presence of I, G, D, E and F\nC and J left before the party thus J must have entered at 7:40 and C must have entered at 7:15.\n9:30 PM E gave a gift to Hariram and F left the party. F must have entered at 8:30 PM\n10:00 PM The party ended with the last guest left the party that must be H, he must have entered at 9:00 PM.\n9:45 PM E left the party and D had a discussion with Hariram.\n9:47 PM D left the party.\nWe can make the following chart:\nWe see that F, E, D and H joined the party after 8:15 PM."
+    },
+    {
+      "qid": "dilr-sectionals-13-6",
+      "passage_text": "A tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.",
+      "question_text": "What is the ratio of the Pro Tablets produced on Monday and Friday?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3:4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nOn Monday, there were 450 Pro tablets were produced and on Friday, it was 600. \nSo, the ratio = 3:4",
+      "image_url": "https://cracku.in/media/uploads/chart%20(4).png,https://cracku.in/media/uploads/Standard%20Type%20gadgets%20produced%20(in%20%25)%20each%20day%20(1).png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.\n\nWhat is the ratio of the Pro Tablets produced on Monday and Friday?\n\n**Options:**\n- **A**. 2:5\n- **B**. 3:4 ✅\n- **C**. 3:8\n- **D**. 5:6\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nOn Monday, there were 450 Pro tablets were produced and on Friday, it was 600. \nSo, the ratio = 3:4"
+    },
+    {
+      "qid": "dilr-sectionals-13-7",
+      "passage_text": "A tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.",
+      "question_text": "How many Pro gadgets were produced on Wednesday for all three types of gadgets combined?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2100",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2400",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2250",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1800",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nOn Wednesday, there were 1200 Pro Smartphones, 450 Pro Smartwatches and 750 Pro tablets were produced. So, the total pro gadgets produced on Wednesday = 1200 + 450 + 750 = 2400",
+      "image_url": "https://cracku.in/media/uploads/chart%20(4).png,https://cracku.in/media/uploads/Standard%20Type%20gadgets%20produced%20(in%20%25)%20each%20day%20(1).png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.\n\nHow many Pro gadgets were produced on Wednesday for all three types of gadgets combined?\n\n**Options:**\n- **A**. 2100\n- **B**. 2400 ✅\n- **C**. 2250\n- **D**. 1800\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nOn Wednesday, there were 1200 Pro Smartphones, 450 Pro Smartwatches and 750 Pro tablets were produced. So, the total pro gadgets produced on Wednesday = 1200 + 450 + 750 = 2400"
+    },
+    {
+      "qid": "dilr-sectionals-13-8",
+      "passage_text": "A tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.",
+      "question_text": "Across the 5 days, how many more smartwatches were produced compared to smartphones?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1,250",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1,750",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "800",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nTotal number of Smartphones produced across the five days: 1500 + 1500 + 2000 + 1250 + 2000 = 8,250\nTotal number of Smartwatches produced across the five days: 2000 + 2500 + 1500 + 2500 + 1000 = 9,500\nDifference = 9,500 - 8,250 = 1,250",
+      "image_url": "https://cracku.in/media/uploads/chart%20(4).png,https://cracku.in/media/uploads/Standard%20Type%20gadgets%20produced%20(in%20%25)%20each%20day%20(1).png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.\n\nAcross the 5 days, how many more smartwatches were produced compared to smartphones?\n\n**Options:**\n- **A**. 1,250 ✅\n- **B**. 1,750\n- **C**. 2,000\n- **D**. 800\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nTotal number of Smartphones produced across the five days: 1500 + 1500 + 2000 + 1250 + 2000 = 8,250\nTotal number of Smartwatches produced across the five days: 2000 + 2500 + 1500 + 2500 + 1000 = 9,500\nDifference = 9,500 - 8,250 = 1,250"
+    },
+    {
+      "qid": "dilr-sectionals-13-9",
+      "passage_text": "A tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.",
+      "question_text": "What is the ratio of the sum of all the Standard-type gadgets to the sum of all the Pro-type gadgets produced on Thursday?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nTotal Standard Gadgets produced on Thursday = 750 + 2,250 + 750 = 3,750\nTotal Pro Gadgets produced on Thursday = 500 + 250 + 500 = 1,250\nRatio = 3:1",
+      "image_url": "https://cracku.in/media/uploads/chart%20(4).png,https://cracku.in/media/uploads/Standard%20Type%20gadgets%20produced%20(in%20%25)%20each%20day%20(1).png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA tech factory manufactures only three types of gadgets: Smartphones, Smartwatches, and Tablets. The following line graph shows the percentage of Smartphones and Smartwatches produced each day as a percentage of the total gadgets produced everyday, It is known that exactly 5000 gadgets are produced everyday. \n\nIn addition, the factory produces each gadget in only two variations: Standard and Pro. The following line chart shows the percentage of standard type gadgets out of the total gadgets produced of that specific type each day.\n\nWhat is the ratio of the sum of all the Standard-type gadgets to the sum of all the Pro-type gadgets produced on Thursday?\n\n**Options:**\n- **A**. 4:1\n- **B**. 5:3\n- **C**. 3:1 ✅\n- **D**. 2:3\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first chart (Bar graph), we are given the production of smartphones and smartwatches each day as a percentage of total production of everyday. We also know that the total production each day is exactly 5000 gadgets. \nNow, we can make a table to write down the information given in the first chart:\nNow, we know that the remaining production will be of Tablets as the factory produces only three types of gadgets. \nSo, we can say, the daily production of tablet as a % of total gadgets on that day = $100\\%$ - (Smartphones production on that day (%) + Smartwatches production on that day (%))\nWith this, we can make the following table which includes the percentage production of each type of gadgets everyday:\nWe know that there is exactly a production of 5000 gadgets everyday. So, we can find out the gadgets produced of each type everyday.\nFurther, in the line chart, we are given the percentage production of standard type out of all the gadgets produced of that specific type each day.\nSince the gadgets are produced of only two variations i.e. Standard and Pro, the remaining gadgets produced of each type will be of Pro variation. With this, we can make the following table indicating the production of each type of gadgets in both the variations each day:\nTotal Standard Gadgets produced on Thursday = 750 + 2,250 + 750 = 3,750\nTotal Pro Gadgets produced on Thursday = 500 + 250 + 500 = 1,250\nRatio = 3:1"
+    },
+    {
+      "qid": "dilr-sectionals-13-10",
+      "passage_text": "Two pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.",
+      "question_text": "What is the price of a hatchback? (in millions)",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "Using the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nThis case is also possible.\nIn both cases the price of hatchbacks is 8 millions.",
+      "image_url": "https://cracku.in/media/uploads/RevPie.PNG,https://cracku.in/media/uploads/NumPie.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nTwo pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.\n\nWhat is the price of a hatchback? (in millions)\n\n**Options:**\n\n**Correct Answer:** 8\n\n**Solution:**\nUsing the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nThis case is also possible.\nIn both cases the price of hatchbacks is 8 millions."
+    },
+    {
+      "qid": "dilr-sectionals-13-11",
+      "passage_text": "Two pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.",
+      "question_text": "The price of how many models can be determined?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "Using the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nThe price of three models can be uniquely determined.",
+      "image_url": "https://cracku.in/media/uploads/RevPie.PNG,https://cracku.in/media/uploads/NumPie.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nTwo pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.\n\nThe price of how many models can be determined?\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\nUsing the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nThe price of three models can be uniquely determined."
+    },
+    {
+      "qid": "dilr-sectionals-13-12",
+      "passage_text": "Two pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.",
+      "question_text": "Which car is the cheapest?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "hatchbacks",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "convertibles",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "crossovers",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "none of the above",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Using the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nSUVs are the cheapest car in both the cases. So, the answer has to be none of the above.",
+      "image_url": "https://cracku.in/media/uploads/RevPie.PNG,https://cracku.in/media/uploads/NumPie.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nTwo pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.\n\nWhich car is the cheapest?\n\n**Options:**\n- **A**. hatchbacks\n- **B**. convertibles\n- **C**. crossovers\n- **D**. none of the above ✅\n\n**Correct Answer:** null\n\n**Solution:**\nUsing the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nSUVs are the cheapest car in both the cases. So, the answer has to be none of the above."
+    },
+    {
+      "qid": "dilr-sectionals-13-13",
+      "passage_text": "Two pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.",
+      "question_text": "If the price of convertibles rises by 10% while all remaining figures stay constant by what percentage will total revenue increase? (write your answer rounded till two decimal places and type 0 if your answer is cannot be determined)",
+      "options": [],
+      "correct_option_data": "1.24",
+      "solution_text": "Using the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nIf the price of convertibles rose by 10% their new price would be 44 millions, this would lead to an increase of 200 million in total revenue. \nPercentage increase : $\\frac{200}{16150}$\n=1.24%",
+      "image_url": "https://cracku.in/media/uploads/RevPie.PNG,https://cracku.in/media/uploads/NumPie.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nTwo pie-charts given below show the revenue earned from the sale of a car as well as the number of cars which were sold. However we do not know the legend of the pie-chart which shows the number of cars that have been sold. \n\nThe following additional information has also been given:\n\n1. The price of each car when divided by 1 million is still an integer.\n\n2. The price of a hatchback is less than 70% of the price of a convertible.\n\nIf the price of convertibles rises by 10% while all remaining figures stay constant by what percentage will total revenue increase? (write your answer rounded till two decimal places and type 0 if your answer is cannot be determined)\n\n**Options:**\n\n**Correct Answer:** 1.24\n\n**Solution:**\nUsing the first statement we know that the revenue of each car must be divisible by the number of cars. So, 300 will have to be for a revenue of 4200. This can be with either crossover or sedan. Also a revenue of 1750 must have its number of cars as either 250 or 50.\nFrom these two statements we get the following four cases:\nCase 1: \nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nFrom the second statement we know that the price of a hatchback must be less than 70% of the price of a convertible.\nIf the number of hatchbacks sold were 250 then the number of convertibles sold would have to be 500. However, in this case the price of a hatchback would be more than the price of a convertible. This is not possible.\nIf the number of hatchbacks sold were 500 then the number of convertibles sold would have to be 250. The price of a hatchback and convertible would be the same. This is also not possible.\nIn this case, since the price of convertibles must be higher than the price of hatchbacks, convertible cannot have sold 500 cars and hatchback could not have sold 50 cars. So, convertible and crossover would have sold 200/50 cars and hatchback 500. So:\nIf the number of cars sold of convertible type was 200, then the price of a convertible would be 10 millions. However, the price of a hatchback is 8 millions which is more than 70% the price of a convertible, so this case is not possible.\nThe only case possible is:\nIf the price of convertibles rose by 10% their new price would be 44 millions, this would lead to an increase of 200 million in total revenue. \nPercentage increase : $\\frac{200}{16150}$\n=1.24%"
+    },
+    {
+      "qid": "dilr-sectionals-13-14",
+      "passage_text": "Six friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.",
+      "question_text": "The car owned by Anu is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Audi",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Jaguar",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Mercedes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can not be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nFrom the above table, it is clear that Anu owns Jaguar.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nSix friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.\n\nThe car owned by Anu is\n\n**Options:**\n- **A**. Audi\n- **B**. Jaguar ✅\n- **C**. Mercedes\n- **D**. Can not be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nFrom the above table, it is clear that Anu owns Jaguar."
+    },
+    {
+      "qid": "dilr-sectionals-13-15",
+      "passage_text": "Six friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.",
+      "question_text": "The distance travelled by which of the carpooling is the longest?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Anu, Charu",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Anu, Fatima",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Fatima, Charu",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Eeshu, Deepu",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nCharu and Anu carpooled for 30 km.\nA is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nSix friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.\n\nThe distance travelled by which of the carpooling is the longest?\n\n**Options:**\n- **A**. Anu, Charu ✅\n- **B**. Anu, Fatima\n- **C**. Fatima, Charu\n- **D**. Eeshu, Deepu\n\n**Correct Answer:** null\n\n**Solution:**\nLet's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nCharu and Anu carpooled for 30 km.\nA is the correct answer."
+    },
+    {
+      "qid": "dilr-sectionals-13-16",
+      "passage_text": "Six friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.",
+      "question_text": "The total cost incurred in the carpool by friends is?\nEnter the answer as a multiple of 1000",
+      "options": [],
+      "correct_option_data": "10",
+      "solution_text": "Let's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nThe total cost incurred by the three carpools = 2000+2000+6000=10000\nSince the response has to be a multiple of 1000, 10 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nSix friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.\n\nThe total cost incurred in the carpool by friends is?\nEnter the answer as a multiple of 1000\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\nLet's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own Mercedes.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nThe total cost incurred by the three carpools = 2000+2000+6000=10000\nSince the response has to be a multiple of 1000, 10 is the correct answer."
+    },
+    {
+      "qid": "dilr-sectionals-13-17",
+      "passage_text": "Six friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.",
+      "question_text": "Which of the following statements is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bhanu and Fatima carpooled for 20 km.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Anu and Charu carpooled for 10 km.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Deepu and Eeshu carpooled for 20 km.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Bhanu and Charu carpooled for 30 km.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own a Mercedes car.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nLets solve the options one by one.\nOption A states that Bhanu and Fatima carpooled for 20 km but they carpooled for 10 km. So  A can be negated.\nOption B states that Anu and Charu carpooled for 10 km but they carpooled for 30 km. So B can be negated.\nOption C:Deepu and Eeshu carpooled for 20 km. This is a correct choice.\nOption D states that Bhanu and Charu carpooled for 30 km but they did not carpool with each other. Hence can be negated.\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nSix friends Anu, Bhanu, Charu, Deepu, Eeshu, Fatima own one of the cars of brands Audi, Mercedes and Jaguar such that each brand is owned by exactly two friends. Due to increasing traffic congestion, they decided to carpool with exactly one of their friends among the group such that three cars are carrying two persons each. If a friend carpools with the car of the same brand he/she owns, it will cost Rs 100/- per km whereas if he/she carpools with the car of a brand other than he/she owns, it would cost Rs 200/- per km. The distance traveled by them were 10km, 20km and 30km. The owner of the car does not bear the cost.\n1. Anu and Fatima own a car of the same brand.\n2. Bhanu who owns Audi, carpooled with Fatima which costed her Rs 2000/- \n3. Eshu carpooled with Deepu, who owns Mercedes which costed her Rs2000/-.\n\nWhich of the following statements is true?\n\n**Options:**\n- **A**. Bhanu and Fatima carpooled for 20 km.\n- **B**. Anu and Charu carpooled for 10 km.\n- **C**. Deepu and Eeshu carpooled for 20 km. ✅\n- **D**. Bhanu and Charu carpooled for 30 km.\n\n**Correct Answer:** null\n\n**Solution:**\nLet's try to represent the car brand owned by each of them in a table.\nIt is given that Bhanu who owns Audi Carpooled with Fatima which cost her Rs 2000/- \nAnu and Fatima own a car of the same brand.\nAnu and Fatima cannot own Audi and Mercedes because it is given that only two friends can own a car of a particular brand.\nSo Anu and Fatima own Jaguar.\nBhanu carpooled with Fatima, who owns a car of a different brand. Hence Bhanu will be charged Rs 200/- per km.\nSo Bhanu and Fatima travelled 10 km.\nEeshu carpooled with Deepu and Eeshu was charged Rs 2000/-.\nSince 10 km cannot be travelled by another pair of friends, Deepu and Eeshu have to travel either 20 km or 30 km.\nIf they travel 30 km, even if they travel in the car of the same brand, Eeshu will be charged a minimum of 3000/-\nSo they travelled 20 km, and Eeshu was charged Rs 100/- per km. Hence Deepu and Eeshu both own a Mercedes car.\nCharu owns Audi.\nCharu/Anu carpools with Anu/Charu and will be charged 30*200 =Rs 6000/-\nLets solve the options one by one.\nOption A states that Bhanu and Fatima carpooled for 20 km but they carpooled for 10 km. So  A can be negated.\nOption B states that Anu and Charu carpooled for 10 km but they carpooled for 30 km. So B can be negated.\nOption C:Deepu and Eeshu carpooled for 20 km. This is a correct choice.\nOption D states that Bhanu and Charu carpooled for 30 km but they did not carpool with each other. Hence can be negated.\nC is the correct answer."
+    },
+    {
+      "qid": "dilr-sectionals-13-18",
+      "passage_text": "Rajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.",
+      "question_text": "Who entered the building sixth?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "F",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "When E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that F entered the building sixth.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.\n\nWho entered the building sixth?\n\n**Options:**\n- **A**. F ✅\n- **B**. A\n- **C**. B\n- **D**. cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nWhen E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that F entered the building sixth."
+    },
+    {
+      "qid": "dilr-sectionals-13-19",
+      "passage_text": "Rajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.",
+      "question_text": "How many people left the building after A left?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "When E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that 4 people left the building after A left.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.\n\nHow many people left the building after A left?\n\n**Options:**\n- **A**. 2\n- **B**. 3\n- **C**. 4 ✅\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nWhen E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that 4 people left the building after A left."
+    },
+    {
+      "qid": "dilr-sectionals-13-20",
+      "passage_text": "Rajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.",
+      "question_text": "How many outsiders were present in the building when F left?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "When E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that only C and D left the building after F. Also C and D entered the building before F came. Thus, C and D were present in the building when F left the building.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.\n\nHow many outsiders were present in the building when F left?\n\n**Options:**\n- **A**. 1\n- **B**. 2 ✅\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nWhen E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, it is clear that only C and D left the building after F. Also C and D entered the building before F came. Thus, C and D were present in the building when F left the building."
+    },
+    {
+      "qid": "dilr-sectionals-13-21",
+      "passage_text": "Rajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.",
+      "question_text": "How many outsiders left the building when A was present in the building?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "When E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, only G and E left the building before A. Also from the question when E left the building only B and C were present in the building. This means A entered the building after E left. Hence, no people left the building while A was present in the building.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.\n\nHow many outsiders left the building when A was present in the building?\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 3\n- **D**. 0 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWhen E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nFrom the table, only G and E left the building before A. Also from the question when E left the building only B and C were present in the building. This means A entered the building after E left. Hence, no people left the building while A was present in the building."
+    },
+    {
+      "qid": "dilr-sectionals-13-22",
+      "passage_text": "Rajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.",
+      "question_text": "Consider the entry and exit orders for the outsiders. How many outsiders have entered and exited the building at the same positions in relative order?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "When E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nB and G have entered and exited the building at same positions.\nThe answer is 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRajeev Kapoor is a detective investigating a murder that occurred at a flat in Green Parks building. The murder occurred between 10:00 am and 12:30 pm during which seven outsiders entered and exited the building. Since the finger print of the murderer does not match with any of the occupants in the building it is inferred that one of the outsiders is the murderer. The detective obtained the following information regarding the arrival and departure of the seven outsiders.\nWhen E entered the building, only C and G were present in it and when E left only C and B were present. The person who entered the building last left the building third. F left immediately after B. F entered the building immediately after D. The person who entered second was also the second last to leave. B and A left before D. Also, no two people left the building together.\n\nConsider the entry and exit orders for the outsiders. How many outsiders have entered and exited the building at the same positions in relative order?\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nWhen E entered the building C and G were already present => E came after C and G (i)also when E left C and B were present => E left before C and B. (ii)\nAlso, when E came G was present and when E left G was not present => G left before E. (iii)\nAlso given, A and B left before D and F left immediately after B left => F also left before D.\nThus, all six people left the building before D and thus, D left last. (iv)\nAs B was present only when E left and not when E came, B entered the building only after E.\nFrom (iv) we know D was last but when E left D was not present whereas B was present => D entered the building after B. (v)\nThus, from (i) and (v) C, G, E and B entered the building before D. Also, F entered immediately after D. Hence, either F or A would have entered the building last. But the person who entered the building last left the building third. This is not possible for F as from (ii) and (iii) G,E, C and B definitely came before F. Hence, A came last and left third.\nFrom (i) and (v), B, D, and F came 3rd, 4th, 5th and 6th. and G or C occupies 1st and 2nd position.\nAlso, since A is third, G and E left 1st and 2nd. Also, C left 6th or seventh.\nAlso given in the question, the person who came second left seventh. Only C can satisfy this criterion. Thus, C came second and left second.\nB and G have entered and exited the building at same positions.\nThe answer is 2."
+    }
+  ]
+}

@@ -1,0 +1,639 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-8-1",
+      "passage_text": "",
+      "question_text": "Solve for ‘a’: $|a^2 - 6a| < 8$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(-$\\infty$, 2) U (4, $\\infty$)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(3 - $\\sqrt{17}$, 3 + $\\sqrt{17}$)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(3 - $\\sqrt{17}$, 2) U (4, 3 + $\\sqrt{17}$)",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(4, 3 + $\\sqrt{17}$)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$|a^2 - 6a| < 8$\n=> -8 < $a^2 - 6a < 8$\n=> $a^2 - 6a + 8 > 0$ and $a^2 - 6a - 8 < 0$\n=> a < 2 or a > 4 and 3 - $\\sqrt{17}$ < a < 3 + $\\sqrt{17}$\n=> 3 - $\\sqrt{17}$ < a < 2 U 4 < a < 3 + $\\sqrt{17}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSolve for ‘a’: $|a^2 - 6a| < 8$\n\n**Options:**\n- **A**. (-$\\infty$, 2) U (4, $\\infty$)\n- **B**. (3 - $\\sqrt{17}$, 3 + $\\sqrt{17}$)\n- **C**. (3 - $\\sqrt{17}$, 2) U (4, 3 + $\\sqrt{17}$) ✅\n- **D**. (4, 3 + $\\sqrt{17}$)\n\n**Correct Answer:** null\n\n**Solution:**\n$|a^2 - 6a| < 8$\n=> -8 < $a^2 - 6a < 8$\n=> $a^2 - 6a + 8 > 0$ and $a^2 - 6a - 8 < 0$\n=> a < 2 or a > 4 and 3 - $\\sqrt{17}$ < a < 3 + $\\sqrt{17}$\n=> 3 - $\\sqrt{17}$ < a < 2 U 4 < a < 3 + $\\sqrt{17}$"
+    },
+    {
+      "qid": "quant-sectionals-8-2",
+      "passage_text": "",
+      "question_text": "An amount $A$ was borrowed at a certain interest rate compounded annually and paid at the end of 2 years. Had the borrowed amount been $9A$ borrowed at the same interest rate, then the simple interest at the end of 6 years would have been 25 times the original compound interest. Find the rate of interest.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the rate of interest  = $r$ and say $\\frac{r}{100}=\\ p$\nHence, the compound interest = $A\\left(1+p\\right)^2-A\\ $ = $A\\left(2p+p^2\\right)\\ $\nSimple interest for amount $9A$ after 6 years = $9Ap\\times\\ 6\\ =\\ 54Ap$       ($\\frac{r}{100}=p$)\nNow, 54$Ap$ = 25$A\\left(2p+p^2\\right)$\n=> 2.16 = $p$+2\n=> $p$ =0.16\n=> $r$ = 16%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn amount $A$ was borrowed at a certain interest rate compounded annually and paid at the end of 2 years. Had the borrowed amount been $9A$ borrowed at the same interest rate, then the simple interest at the end of 6 years would have been 25 times the original compound interest. Find the rate of interest.\n\n**Options:**\n- **A**. 16% ✅\n- **B**. 20%\n- **C**. 25%\n- **D**. 10%\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the rate of interest  = $r$ and say $\\frac{r}{100}=\\ p$\nHence, the compound interest = $A\\left(1+p\\right)^2-A\\ $ = $A\\left(2p+p^2\\right)\\ $\nSimple interest for amount $9A$ after 6 years = $9Ap\\times\\ 6\\ =\\ 54Ap$       ($\\frac{r}{100}=p$)\nNow, 54$Ap$ = 25$A\\left(2p+p^2\\right)$\n=> 2.16 = $p$+2\n=> $p$ =0.16\n=> $r$ = 16%"
+    },
+    {
+      "qid": "quant-sectionals-8-3",
+      "passage_text": "",
+      "question_text": "A and B left simultaneously from point P to point Q. A covers each kilometre 2 minutes faster than B. After travelling 18 km, A returns to point P, waits for 66 minutes and starts to Q decreasing the speed by 20%. Both A and B reach Q simultaneously. If A had travelled from P to Q directly without any stops and return journeys, he would have reached Q in 30 minutes. Find the distance between P and Q.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "44 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "48 km",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "64 km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the distance between P and Q be 'D'.\nIt is given,\n$\\frac{36}{V_A}+\\frac{D}{0.8V_A}+\\frac{66}{60}=\\frac{D}{V_B}$ ........ (1)\nIf B travels one kilometre in t minutes, then A travels one kilometre in t - 2 minutes.\nSpeed of A = $\\frac{60}{t-2}$\nSpeed of B = $\\frac{60}{t}$\nIt is also given that A covers distance D in 30 minutes, i.e. speed of A = $V_A$ = 2D ........ (2)\n$\\frac{60}{t-2}=2D$\n$60=2tD-4D$\n$t\\ =\\ \\frac{\\ 60+4D}{2D}$\nspeed of B = $V_B$ = $\\frac{30D}{15+D}$ ........ (3)\nSubstituting (2) and (3) in (1), we get\n$4D^2-147D-2160=0$\n$4D^2-192D+45D-2160=0$\nSolving, we get D = 48 km\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B left simultaneously from point P to point Q. A covers each kilometre 2 minutes faster than B. After travelling 18 km, A returns to point P, waits for 66 minutes and starts to Q decreasing the speed by 20%. Both A and B reach Q simultaneously. If A had travelled from P to Q directly without any stops and return journeys, he would have reached Q in 30 minutes. Find the distance between P and Q.\n\n**Options:**\n- **A**. 28 km\n- **B**. 44 km\n- **C**. 48 km ✅\n- **D**. 64 km\n\n**Correct Answer:** null\n\n**Solution:**\nLet the distance between P and Q be 'D'.\nIt is given,\n$\\frac{36}{V_A}+\\frac{D}{0.8V_A}+\\frac{66}{60}=\\frac{D}{V_B}$ ........ (1)\nIf B travels one kilometre in t minutes, then A travels one kilometre in t - 2 minutes.\nSpeed of A = $\\frac{60}{t-2}$\nSpeed of B = $\\frac{60}{t}$\nIt is also given that A covers distance D in 30 minutes, i.e. speed of A = $V_A$ = 2D ........ (2)\n$\\frac{60}{t-2}=2D$\n$60=2tD-4D$\n$t\\ =\\ \\frac{\\ 60+4D}{2D}$\nspeed of B = $V_B$ = $\\frac{30D}{15+D}$ ........ (3)\nSubstituting (2) and (3) in (1), we get\n$4D^2-147D-2160=0$\n$4D^2-192D+45D-2160=0$\nSolving, we get D = 48 km\nThe answer is option C."
+    },
+    {
+      "qid": "quant-sectionals-8-4",
+      "passage_text": "",
+      "question_text": "A shopkeeper wants to sell 6 books of cost Rs 30 each at a marked price of 50% more than cost price. But then due to lack of sales he starts giving successive discounts of x% twice after which the total selling price would be Rs X. Instead of giving successive discounts, if he had increased the price by x% twice (over the marked price), the total selling price would be Y. It is know that difference between X and Y is Rs 432. What is the value of x?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "45%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Cost price of books = 30$\\times\\ $6 = Rs 180\nMarked price is $\\frac{150}{100}\\times\\ 180$ = Rs 270\nX = $270\\left(\\frac{100-x}{100}\\right)^2$\nY = $270\\left(\\frac{100+x}{100}\\right)^2$\nIt is given, |X-Y| = 432\n270($\\frac{400x}{10000}$) = 432\nx = $\\frac{180}{270}\\times\\ 100$ = 40%\nAnswer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper wants to sell 6 books of cost Rs 30 each at a marked price of 50% more than cost price. But then due to lack of sales he starts giving successive discounts of x% twice after which the total selling price would be Rs X. Instead of giving successive discounts, if he had increased the price by x% twice (over the marked price), the total selling price would be Y. It is know that difference between X and Y is Rs 432. What is the value of x?\n\n**Options:**\n- **A**. 40% ✅\n- **B**. 45%\n- **C**. 25%\n- **D**. 20%\n\n**Correct Answer:** null\n\n**Solution:**\nCost price of books = 30$\\times\\ $6 = Rs 180\nMarked price is $\\frac{150}{100}\\times\\ 180$ = Rs 270\nX = $270\\left(\\frac{100-x}{100}\\right)^2$\nY = $270\\left(\\frac{100+x}{100}\\right)^2$\nIt is given, |X-Y| = 432\n270($\\frac{400x}{10000}$) = 432\nx = $\\frac{180}{270}\\times\\ 100$ = 40%\nAnswer is option A."
+    },
+    {
+      "qid": "quant-sectionals-8-5",
+      "passage_text": "",
+      "question_text": "For an umbrella, the ratio of the marked price to the cost price is 9 : 8. What is the approx. profit/loss percentage if the ratio of the percentage discount offered and the profit or loss percentage were in the ratio 4 : 5?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6.4% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6.6% profit",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5.8% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7.1% profit",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\frac{marked price}{cost price} = \\frac{9}{8}$\nLet the marked price = 9x and cost price = 8x\n$\\frac{percentage discount}{profit/loss percentage} = \\frac{4}{5}$\nLet the percentage discount = 4y% and profit/loss percentage = 5y%\nConsidering there is a profit, \nSelling price = (1 - 4y%) * 9x = (1 + 5y%) * 8x\n9x - 36xy/100 = 8x + 40xy/100\nx = 76xy/100\ny = 100/76\nSo percentage profit = 5 * 100/76 = 6.6% approx. \nHence, option B is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor an umbrella, the ratio of the marked price to the cost price is 9 : 8. What is the approx. profit/loss percentage if the ratio of the percentage discount offered and the profit or loss percentage were in the ratio 4 : 5?\n\n**Options:**\n- **A**. 6.4% loss\n- **B**. 6.6% profit ✅\n- **C**. 5.8% loss\n- **D**. 7.1% profit\n\n**Correct Answer:** null\n\n**Solution:**\n$\\frac{marked price}{cost price} = \\frac{9}{8}$\nLet the marked price = 9x and cost price = 8x\n$\\frac{percentage discount}{profit/loss percentage} = \\frac{4}{5}$\nLet the percentage discount = 4y% and profit/loss percentage = 5y%\nConsidering there is a profit, \nSelling price = (1 - 4y%) * 9x = (1 + 5y%) * 8x\n9x - 36xy/100 = 8x + 40xy/100\nx = 76xy/100\ny = 100/76\nSo percentage profit = 5 * 100/76 = 6.6% approx. \nHence, option B is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-8-6",
+      "passage_text": "",
+      "question_text": "Ram and Shyam can complete a work together in 24 days. Ram is 50 percent more efficient than Shyam. They started working and Ram took rest every 2nd day and Shyam every 3rd day. On which day will the work get completed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "51",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "43",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "42",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume the work = 120 units\nWork done by both in 1 day = 120/24= 5 units\nNow, 1.5x+ x =5 units\nWork done by Ram in a day =3 units \nWork done by Shyam in a day = 2units\nIt is given that Ram took rest every 2nd day and Shyam every 3rd day.\nWork done by them on 1st day, 2nd day, 3rd day, 4th day, 5th day and 6th day = 5,2,3,2,5,0 = 17 units\nThis pattern will repeat every 6 days. Hence, after 42 days total work done = 17*(42/6) = 119 units\nHence the work will be finished on 43rd day.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam and Shyam can complete a work together in 24 days. Ram is 50 percent more efficient than Shyam. They started working and Ram took rest every 2nd day and Shyam every 3rd day. On which day will the work get completed?\n\n**Options:**\n- **A**. 51\n- **B**. 40\n- **C**. 43 ✅\n- **D**. 42\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the work = 120 units\nWork done by both in 1 day = 120/24= 5 units\nNow, 1.5x+ x =5 units\nWork done by Ram in a day =3 units \nWork done by Shyam in a day = 2units\nIt is given that Ram took rest every 2nd day and Shyam every 3rd day.\nWork done by them on 1st day, 2nd day, 3rd day, 4th day, 5th day and 6th day = 5,2,3,2,5,0 = 17 units\nThis pattern will repeat every 6 days. Hence, after 42 days total work done = 17*(42/6) = 119 units\nHence the work will be finished on 43rd day."
+    },
+    {
+      "qid": "quant-sectionals-8-7",
+      "passage_text": "",
+      "question_text": "Find the sum of the terms $\\frac{1}{2},\\frac{1}{6}, \\frac{1}{12} ,\\frac{1}{20} .......\\frac{1}{132}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{15}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{11}{12}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{5}{6}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\frac{1}{2},\\frac{1}{6}, \\frac{1}{12} ,\\frac{1}{20} .......\\frac{1}{132}$n terms\n$S(1) = \\frac{1}{2}$\n$S(2) = \\frac{2}{3}$\n$S(3) = \\frac{2}{3} + \\frac{1}{12} = \\frac{3}{4}$\n$S(4) = \\frac{2}{3} + \\frac{1}{12} + \\frac{1}{20} = \\frac{4}{5}$\nFrom the above we can see that the sum of the first n terms $= S(n) = \\frac{n}{n+1}$\n$\\frac{1}{132}$ is the eleventh term as 132 = 11 x12.Thus, sum of first 11 terms = $\\frac{11}{11 + 1}$ = $\\frac{11}{12}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of the terms $\\frac{1}{2},\\frac{1}{6}, \\frac{1}{12} ,\\frac{1}{20} .......\\frac{1}{132}$\n\n**Options:**\n- **A**. $\\frac{15}{16}$\n- **B**. $\\frac{11}{12}$ ✅\n- **C**. $\\frac{5}{6}$\n- **D**. $1$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\frac{1}{2},\\frac{1}{6}, \\frac{1}{12} ,\\frac{1}{20} .......\\frac{1}{132}$n terms\n$S(1) = \\frac{1}{2}$\n$S(2) = \\frac{2}{3}$\n$S(3) = \\frac{2}{3} + \\frac{1}{12} = \\frac{3}{4}$\n$S(4) = \\frac{2}{3} + \\frac{1}{12} + \\frac{1}{20} = \\frac{4}{5}$\nFrom the above we can see that the sum of the first n terms $= S(n) = \\frac{n}{n+1}$\n$\\frac{1}{132}$ is the eleventh term as 132 = 11 x12.Thus, sum of first 11 terms = $\\frac{11}{11 + 1}$ = $\\frac{11}{12}$"
+    },
+    {
+      "qid": "quant-sectionals-8-8",
+      "passage_text": "",
+      "question_text": "For how many values of $‘n’$ does $n!$ have more than 150 but less than 160 trailing zeroes?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "55",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The number of trailing zeroes should be from 151 to 159, total of 9 values. For each trailing zero there will be five values. \nFor 151 trailing numbers the value of $n$ would be approximately $4\\times151=604$\nNumber of trailing zeroes for 604! is 148\nNumber of trailing zeroes for (605! - 609!) is 149\nNumber of trailing zeroes for (610! - 614!) is 150\nNumber of trailing zeroes for (615! - 619!) is 151\nNumber of trailing zeroes for (620! - 624!) is 152\nBut, Number of trailing zeroes for (625! - 629!) is 156 \nSimilarly, Number of trailing zeroes for (630! - 634!) is 157\nNumber of trailing zeroes for (635! - 639!) is 158\nNumber of trailing zeroes for (640! - 644!) is 159\n$\\therefore$ total number of such numbers = $6\\times5=30$.\nHence, option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor how many values of $‘n’$ does $n!$ have more than 150 but less than 160 trailing zeroes?\n\n**Options:**\n- **A**. 45\n- **B**. 50\n- **C**. 30 ✅\n- **D**. 55\n\n**Correct Answer:** null\n\n**Solution:**\nThe number of trailing zeroes should be from 151 to 159, total of 9 values. For each trailing zero there will be five values. \nFor 151 trailing numbers the value of $n$ would be approximately $4\\times151=604$\nNumber of trailing zeroes for 604! is 148\nNumber of trailing zeroes for (605! - 609!) is 149\nNumber of trailing zeroes for (610! - 614!) is 150\nNumber of trailing zeroes for (615! - 619!) is 151\nNumber of trailing zeroes for (620! - 624!) is 152\nBut, Number of trailing zeroes for (625! - 629!) is 156 \nSimilarly, Number of trailing zeroes for (630! - 634!) is 157\nNumber of trailing zeroes for (635! - 639!) is 158\nNumber of trailing zeroes for (640! - 644!) is 159\n$\\therefore$ total number of such numbers = $6\\times5=30$.\nHence, option C is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-8-9",
+      "passage_text": "",
+      "question_text": "In the figure, PQR is a  triangle. A circle with centre S is inscribed inside the triangle such that it touches QR at U. Another circle with centre T is drawn such that it touches sides QR (at point V), PR and the circle with center S. If the radii of the circles with centres at S and T are 8 cm and 2 cm, what is the length of UR?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8.66cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10.66cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "US and VT are perpendicular to QR.\nThus SW= 8-2= 6cm\nST=R1+R2= 8+2= 10cm\nThe length of WT= $\\sqrt{\\ 10^2-6^2}$\nUV= WT = 8cm\nLet VR=a\nIn triangle SUR\na/a+8 = 2/8\n8a=2a+16\na=16/6\na=8/3\nUR= 8+2.66=10.66cm\nOption C",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_1_zMnMdek.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the figure, PQR is a  triangle. A circle with centre S is inscribed inside the triangle such that it touches QR at U. Another circle with centre T is drawn such that it touches sides QR (at point V), PR and the circle with center S. If the radii of the circles with centres at S and T are 8 cm and 2 cm, what is the length of UR?\n\n**Options:**\n- **A**. 12cm\n- **B**. 8.66cm\n- **C**. 10.66cm ✅\n- **D**. 9cm\n\n**Correct Answer:** null\n\n**Solution:**\nUS and VT are perpendicular to QR.\nThus SW= 8-2= 6cm\nST=R1+R2= 8+2= 10cm\nThe length of WT= $\\sqrt{\\ 10^2-6^2}$\nUV= WT = 8cm\nLet VR=a\nIn triangle SUR\na/a+8 = 2/8\n8a=2a+16\na=16/6\na=8/3\nUR= 8+2.66=10.66cm\nOption C"
+    },
+    {
+      "qid": "quant-sectionals-8-10",
+      "passage_text": "",
+      "question_text": "A cylinder and a cone have the same base radius and the same height. The radius of the cylinder is doubled and its height is tripled while the radius of the cone is tripled and its height is doubled. What is the ratio of the new volumes of the cylinder and the cone?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the initial radius of cylinder and cone be ‘r’ and height be ‘h’\nSo for cylinder, the new radius is 2r and height is 3h\nThe volume of the cylinder is $ \\pi (2r)^{2}*3h = 12 \\pi r^{2}h$\nThe new radius of cone is 3r and its new height is 2h\nSo the required volume is $\\frac{1}{3}\\pi(3r)^{2}*2h = 6 \\pi r^{2}h$\nHence the required ratio is 2:1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cylinder and a cone have the same base radius and the same height. The radius of the cylinder is doubled and its height is tripled while the radius of the cone is tripled and its height is doubled. What is the ratio of the new volumes of the cylinder and the cone?\n\n**Options:**\n- **A**. 3:1\n- **B**. 1:3\n- **C**. 1:2\n- **D**. 2:1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the initial radius of cylinder and cone be ‘r’ and height be ‘h’\nSo for cylinder, the new radius is 2r and height is 3h\nThe volume of the cylinder is $ \\pi (2r)^{2}*3h = 12 \\pi r^{2}h$\nThe new radius of cone is 3r and its new height is 2h\nSo the required volume is $\\frac{1}{3}\\pi(3r)^{2}*2h = 6 \\pi r^{2}h$\nHence the required ratio is 2:1"
+    },
+    {
+      "qid": "quant-sectionals-8-11",
+      "passage_text": "",
+      "question_text": "The average weight of 10 items is 20 kg. The weight of each item has an integral value. When the weights are arranged in descending order, the first three weights are 25 kg, 22kg and 21 kg. What can be the lowest possible weight of an item?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The average weight of 10 items is 20 kg.\nThen the sum of all the weights is 20*10 = 200kg\nNow top three heaviest weights are 25kg, 22kg and 21kg.\nThen to minimize the weight of an item, we have to maximise the 4th heaviest to the 9th heaviest items.\nThe maximum value which the 4th heaviest to the 9th heaviest items can take is 21 kg\nHence, the lowest possible weight of an item = 200-25-22-21*7 = 6 kg",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average weight of 10 items is 20 kg. The weight of each item has an integral value. When the weights are arranged in descending order, the first three weights are 25 kg, 22kg and 21 kg. What can be the lowest possible weight of an item?\n\n**Options:**\n\n**Correct Answer:** 6\n\n**Solution:**\nThe average weight of 10 items is 20 kg.\nThen the sum of all the weights is 20*10 = 200kg\nNow top three heaviest weights are 25kg, 22kg and 21kg.\nThen to minimize the weight of an item, we have to maximise the 4th heaviest to the 9th heaviest items.\nThe maximum value which the 4th heaviest to the 9th heaviest items can take is 21 kg\nHence, the lowest possible weight of an item = 200-25-22-21*7 = 6 kg"
+    },
+    {
+      "qid": "quant-sectionals-8-12",
+      "passage_text": "",
+      "question_text": "An ATM machine contains 100 rupee, 200 rupee and 500 rupee notes. The machine contains 200 notes in total and the total value of the notes is Rs. 45,000. If the number of 500 rupee notes and 100 rupee notes are interchanged, then the net value of the notes in the machine increases by Rs. 20,000. What will be the total value of the notes in the machine if the number of 100 rupee notes and 200 rupee notes are interchanged?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.40,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 50,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 60,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.35,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of 100 rupee notes be x, 200 rupee notes be y and 500 rupee notes be z.\nIt has been given that,\nx + y + z = 200 -----------------(1)\n100x + 200y + 500z = 45,000 ------------(2)\nIf the number of 100 rupee and 500 rupee notes are interchanged, then the value increases by 20,000.\nTherefore, 500x + 200y + 100z = 65,000--------(3)\nSubtracting (2) from (3), we get,\n400x - 400z = 20,000\nx-z = 50\nx = 50+z -------(4)\nMultiplying (1) by 200 and subtracting it from (2), we get,\n-100x + 300z = 5000\n3z - x = 50\nx = 3z - 50 ---------(5)\nEquating (4) and (5), we get, \n50 + z = 3z - 50\n2z = 100\nz = 50\nWe know that x = 50+z\n=> x = 100\nx+y+z = 200\n100 + y + 50 = 200\ny = 50\nTherefore, x = 100, y = 50 and z =50.\nIf the number of 100 and 200 rupee notes are interchanged, then the net value will be\n50*100 + 100*200 + 50*500 = 5,000 + 20,000 + 25,000.\nTotal value = Rs.50,000.\nTherefore, option B is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn ATM machine contains 100 rupee, 200 rupee and 500 rupee notes. The machine contains 200 notes in total and the total value of the notes is Rs. 45,000. If the number of 500 rupee notes and 100 rupee notes are interchanged, then the net value of the notes in the machine increases by Rs. 20,000. What will be the total value of the notes in the machine if the number of 100 rupee notes and 200 rupee notes are interchanged?\n\n**Options:**\n- **A**. Rs.40,000\n- **B**. Rs. 50,000 ✅\n- **C**. Rs. 60,000\n- **D**. Rs.35,000\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of 100 rupee notes be x, 200 rupee notes be y and 500 rupee notes be z.\nIt has been given that,\nx + y + z = 200 -----------------(1)\n100x + 200y + 500z = 45,000 ------------(2)\nIf the number of 100 rupee and 500 rupee notes are interchanged, then the value increases by 20,000.\nTherefore, 500x + 200y + 100z = 65,000--------(3)\nSubtracting (2) from (3), we get,\n400x - 400z = 20,000\nx-z = 50\nx = 50+z -------(4)\nMultiplying (1) by 200 and subtracting it from (2), we get,\n-100x + 300z = 5000\n3z - x = 50\nx = 3z - 50 ---------(5)\nEquating (4) and (5), we get, \n50 + z = 3z - 50\n2z = 100\nz = 50\nWe know that x = 50+z\n=> x = 100\nx+y+z = 200\n100 + y + 50 = 200\ny = 50\nTherefore, x = 100, y = 50 and z =50.\nIf the number of 100 and 200 rupee notes are interchanged, then the net value will be\n50*100 + 100*200 + 50*500 = 5,000 + 20,000 + 25,000.\nTotal value = Rs.50,000.\nTherefore, option B is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-8-13",
+      "passage_text": "",
+      "question_text": "The distance between Chandigarh and Amritsar is 500 kms. A train starts from Chandigarh to Amritsar on Monday. In the midst of the journey, a technical glitch forces the driver to reduce the speed of the train by 20%. Had the glitch occurred 40 kms later, the train would have reached Amritsar 7 mins and 30 seconds earlier. Find the original speed of the train (before the glitch).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "80 km/hr",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "100 km/hr",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the speed of the train be $a$ km/hr and the point at which the glitch occurs, say P be $x$ kms from Chandigarh. \nIn the given case, we do not know the actual distance when the glitch happens. Since the question states the difference between the total time taken to complete the journey, we will express the situation in terms of time taken. \nTotal time taken for the journey in the first case $t_{1} = \\dfrac{x}{a} + \\dfrac{500-x}{0.8a} $ (the first term in RHS is the time take to reach P while the second term in RHS is the time taken to travel the remaining distance at the reduced speed) \nSimilarly, total time taken for the journey in the second case $t_{2} = \\dfrac{x+40}{a} + \\dfrac{500-(x+40)}{0.8a} $ (the first term in RHS is the time taken to reach a point 40 kms ahead of P, say Q and the second term is the time taken to travel the remaining distance at the reduced speed) \nSince in the second case, the train travels faster for a longer duration, the time taken in the first case will be greater. \nGiven, $t_{1} - t_{2} = \\dfrac{7.5}{60} hr $\n$\\dfrac{x}{a} + \\dfrac{500-x}{0.8a} - (\\dfrac{x+40}{a} + \\dfrac{500-(x+40)}{0.8a}) = \\dfrac{1}{8} hr$\n$\\Rightarrow \\dfrac{x - (x+40)}{a} + \\dfrac{500-x-(500-x-40)}{0.8a}) = \\dfrac{1}{8} $\n$\\Rightarrow \\dfrac{-40}{a} + \\dfrac{40}{0.8a} = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{-40}{a} + (\\dfrac{5}{4} \\times \\dfrac{40}{a}) = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{-40}{a} + \\dfrac{50}{a} = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{10}{a} = \\dfrac{1}{8} $\n$ \\Rightarrow a = 80$ km/hr",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe distance between Chandigarh and Amritsar is 500 kms. A train starts from Chandigarh to Amritsar on Monday. In the midst of the journey, a technical glitch forces the driver to reduce the speed of the train by 20%. Had the glitch occurred 40 kms later, the train would have reached Amritsar 7 mins and 30 seconds earlier. Find the original speed of the train (before the glitch).\n\n**Options:**\n- **A**. 60 km/hr\n- **B**. 50 km/hr\n- **C**. 80 km/hr ✅\n- **D**. 100 km/hr\n\n**Correct Answer:** null\n\n**Solution:**\nLet the speed of the train be $a$ km/hr and the point at which the glitch occurs, say P be $x$ kms from Chandigarh. \nIn the given case, we do not know the actual distance when the glitch happens. Since the question states the difference between the total time taken to complete the journey, we will express the situation in terms of time taken. \nTotal time taken for the journey in the first case $t_{1} = \\dfrac{x}{a} + \\dfrac{500-x}{0.8a} $ (the first term in RHS is the time take to reach P while the second term in RHS is the time taken to travel the remaining distance at the reduced speed) \nSimilarly, total time taken for the journey in the second case $t_{2} = \\dfrac{x+40}{a} + \\dfrac{500-(x+40)}{0.8a} $ (the first term in RHS is the time taken to reach a point 40 kms ahead of P, say Q and the second term is the time taken to travel the remaining distance at the reduced speed) \nSince in the second case, the train travels faster for a longer duration, the time taken in the first case will be greater. \nGiven, $t_{1} - t_{2} = \\dfrac{7.5}{60} hr $\n$\\dfrac{x}{a} + \\dfrac{500-x}{0.8a} - (\\dfrac{x+40}{a} + \\dfrac{500-(x+40)}{0.8a}) = \\dfrac{1}{8} hr$\n$\\Rightarrow \\dfrac{x - (x+40)}{a} + \\dfrac{500-x-(500-x-40)}{0.8a}) = \\dfrac{1}{8} $\n$\\Rightarrow \\dfrac{-40}{a} + \\dfrac{40}{0.8a} = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{-40}{a} + (\\dfrac{5}{4} \\times \\dfrac{40}{a}) = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{-40}{a} + \\dfrac{50}{a} = \\dfrac{1}{8} $\n$ \\Rightarrow \\dfrac{10}{a} = \\dfrac{1}{8} $\n$ \\Rightarrow a = 80$ km/hr"
+    },
+    {
+      "qid": "quant-sectionals-8-14",
+      "passage_text": "",
+      "question_text": "Ramesh was supposed to board a flight from an airport which has 15 gates in a straight line. The distance between any adjacent pair of gates is 80 feet. His departure gate was initially assigned at random. After waiting at the assigned gate, Ramesh is informed that the departure gate has been changed to a different gate. If the probability that Ramesh covered a distance of 400 feet or less to reach to the new gate can be represented as $\\dfrac{a}{b}$, where ‘$a$’ and ‘$b$’ are relatively prime numbers, then find out the remainder when '$b$' is divided by ‘$a$’?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "Total ways of selecting two different gates out of 15 gates = 15*14 = 210.\nIf Ramesh was assigned previously gate no. 1 or 15 then, there are a total of 5 other gates within 400 feet. \nSimilarly, Ramesh was assigned previously gate no. 2 or 14 then there are a total of 6 other gates within 400 feet. \nRamesh was assigned previously gate no. 3 or 13 then there are a total of 7 other gates within 400 feet.\nRamesh was assigned previously gate no. 4 or 12 then there are a total of 8 other gates within 400 feet\nRamesh was assigned previously gate no. 5 or 11 then there are a total of 9 other gates within 400 feet\nRamesh was assigned previously gate no. From 6 to 10 then, there are a total of 10 other gates within 400 feet. \nHence total number of favourable cases = 2[5+6+7+8+9]+5*10 = 120\nTherefore the required probability = $\\dfrac{120}{210}$\n$\\Rightarrow$ $\\dfrac{4}{7}=\\dfrac{a}{b}$\nWe can see that, 7 mod 4 = 3.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRamesh was supposed to board a flight from an airport which has 15 gates in a straight line. The distance between any adjacent pair of gates is 80 feet. His departure gate was initially assigned at random. After waiting at the assigned gate, Ramesh is informed that the departure gate has been changed to a different gate. If the probability that Ramesh covered a distance of 400 feet or less to reach to the new gate can be represented as $\\dfrac{a}{b}$, where ‘$a$’ and ‘$b$’ are relatively prime numbers, then find out the remainder when '$b$' is divided by ‘$a$’?\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\nTotal ways of selecting two different gates out of 15 gates = 15*14 = 210.\nIf Ramesh was assigned previously gate no. 1 or 15 then, there are a total of 5 other gates within 400 feet. \nSimilarly, Ramesh was assigned previously gate no. 2 or 14 then there are a total of 6 other gates within 400 feet. \nRamesh was assigned previously gate no. 3 or 13 then there are a total of 7 other gates within 400 feet.\nRamesh was assigned previously gate no. 4 or 12 then there are a total of 8 other gates within 400 feet\nRamesh was assigned previously gate no. 5 or 11 then there are a total of 9 other gates within 400 feet\nRamesh was assigned previously gate no. From 6 to 10 then, there are a total of 10 other gates within 400 feet. \nHence total number of favourable cases = 2[5+6+7+8+9]+5*10 = 120\nTherefore the required probability = $\\dfrac{120}{210}$\n$\\Rightarrow$ $\\dfrac{4}{7}=\\dfrac{a}{b}$\nWe can see that, 7 mod 4 = 3."
+    },
+    {
+      "qid": "quant-sectionals-8-15",
+      "passage_text": "",
+      "question_text": "The average of a set of positive integers is 79. If the integer 107 which is also present in the set is removed, the average is reduced by 2. What can be the largest possible number in the new set?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1100",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1078",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1065",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1026",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume the total number of integers = n, then the sum = 79n\nNow, the new average after removing 107 = $\\ \\frac{\\ 79n-107}{n-1}$ = 77\n=> 79n-107 = 77n-77\n=> 2n = 30 => n=15\nNow, the number of integers in the new set = 14, The new sum = 14*77 = 1078\nTo make one number greatest, we have to assume the rest of the numbers as 1. \nHence, the largest number = 1078-13*1 = 1065\nC is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average of a set of positive integers is 79. If the integer 107 which is also present in the set is removed, the average is reduced by 2. What can be the largest possible number in the new set?\n\n**Options:**\n- **A**. 1100\n- **B**. 1078\n- **C**. 1065 ✅\n- **D**. 1026\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the total number of integers = n, then the sum = 79n\nNow, the new average after removing 107 = $\\ \\frac{\\ 79n-107}{n-1}$ = 77\n=> 79n-107 = 77n-77\n=> 2n = 30 => n=15\nNow, the number of integers in the new set = 14, The new sum = 14*77 = 1078\nTo make one number greatest, we have to assume the rest of the numbers as 1. \nHence, the largest number = 1078-13*1 = 1065\nC is the answer."
+    },
+    {
+      "qid": "quant-sectionals-8-16",
+      "passage_text": "",
+      "question_text": "If p, q and r are 3 natural numbers such that $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$ then which of the following can be a value of \n{$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$}",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{79}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{76}{17}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{39}{8}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{27}{4}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given, $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$\nTherefore, $\\dfrac{q}{p}$ = $\\dfrac{3}{4}$\nHence, $\\dfrac{q}{p}$+$\\dfrac{p}{q}$ = $\\dfrac{4}{3}$+$\\dfrac{3}{4} = \\dfrac{25}{12}$\nFor any natural number x we know, $x+\\dfrac{1}{x} \\geq 2$\nHence, $\\dfrac{p}{r}+\\dfrac{r}{p} \\geq 2$\nAlso, $\\dfrac{q}{r}+\\dfrac{r}{q} \\geq 2$\n$\\dfrac{p}{r}+\\dfrac{r}{p}$ = 2 if $r=p$\n$\\dfrac{q}{r}+\\dfrac{r}{q}$ = 2 if $r=q$ i.e. $r=p=q$\nBut that is not the case as $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$\nHence, if $\\dfrac{p}{r}+\\dfrac{r}{p} = 2$ then $\\dfrac{r}{q}+\\dfrac{q}{r}$ is definitely greater than 2.\nHence, {$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$} $> \\dfrac{25}{12} + 2 + 2$\nHence, {$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$} $> \\dfrac{73}{12}$\nThe only option here greater than $\\dfrac{73}{12}$ is $\\dfrac{27}{4}$ Which comes for r = 6, p = 4 and q = 3.\nHence, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf p, q and r are 3 natural numbers such that $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$ then which of the following can be a value of \n{$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$}\n\n**Options:**\n- **A**. $\\dfrac{79}{16}$\n- **B**. $\\dfrac{76}{17}$\n- **C**. $\\dfrac{39}{8}$\n- **D**. $\\dfrac{27}{4}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$\nTherefore, $\\dfrac{q}{p}$ = $\\dfrac{3}{4}$\nHence, $\\dfrac{q}{p}$+$\\dfrac{p}{q}$ = $\\dfrac{4}{3}$+$\\dfrac{3}{4} = \\dfrac{25}{12}$\nFor any natural number x we know, $x+\\dfrac{1}{x} \\geq 2$\nHence, $\\dfrac{p}{r}+\\dfrac{r}{p} \\geq 2$\nAlso, $\\dfrac{q}{r}+\\dfrac{r}{q} \\geq 2$\n$\\dfrac{p}{r}+\\dfrac{r}{p}$ = 2 if $r=p$\n$\\dfrac{q}{r}+\\dfrac{r}{q}$ = 2 if $r=q$ i.e. $r=p=q$\nBut that is not the case as $\\dfrac{p}{q}$ = $\\dfrac{4}{3}$\nHence, if $\\dfrac{p}{r}+\\dfrac{r}{p} = 2$ then $\\dfrac{r}{q}+\\dfrac{q}{r}$ is definitely greater than 2.\nHence, {$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$} $> \\dfrac{25}{12} + 2 + 2$\nHence, {$\\dfrac{p}{q}+\\dfrac{q}{r}+\\dfrac{r}{p}+\\dfrac{r}{q}+\\dfrac{p}{r}+\\dfrac{q}{p}$} $> \\dfrac{73}{12}$\nThe only option here greater than $\\dfrac{73}{12}$ is $\\dfrac{27}{4}$ Which comes for r = 6, p = 4 and q = 3.\nHence, option D is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-8-17",
+      "passage_text": "",
+      "question_text": "What is the value of $[\\sqrt{0.5}] + [\\sqrt{1}]+ [\\sqrt{1.5}]+ [\\sqrt{2}]+ ……. + [\\sqrt{10}]$ where [X] represents the greatest integer function?",
+      "options": [],
+      "correct_option_data": "35",
+      "solution_text": "We know that $\\sqrt{0.5}$ = 0.707; So $[\\sqrt{0.5}]$ = 0\nFor every term from $\\sqrt{1}$ to $\\sqrt{3.5}$ will be $\\geq$ 1 but < 2. Hence [.] will be equals to 1 for each such term.\nTotal such terms = 6 \nFor every term from $\\sqrt{4}$ to $\\sqrt{8.5}$ will be $\\geq$ 2 but < 3. Hence [.] will be equals to 2 for each such term.\nTotal such terms = 10 \nFor every term form $\\sqrt{9}$ to $\\sqrt{10}$ will be $\\geq$ 3 but < 4. Hence [.] will be equals to 3 for each such term.\nTotal such terms = 3 \nTherefore total value = 1*0 + 6*1 +10*2 + 3*3 = 35",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the value of $[\\sqrt{0.5}] + [\\sqrt{1}]+ [\\sqrt{1.5}]+ [\\sqrt{2}]+ ……. + [\\sqrt{10}]$ where [X] represents the greatest integer function?\n\n**Options:**\n\n**Correct Answer:** 35\n\n**Solution:**\nWe know that $\\sqrt{0.5}$ = 0.707; So $[\\sqrt{0.5}]$ = 0\nFor every term from $\\sqrt{1}$ to $\\sqrt{3.5}$ will be $\\geq$ 1 but < 2. Hence [.] will be equals to 1 for each such term.\nTotal such terms = 6 \nFor every term from $\\sqrt{4}$ to $\\sqrt{8.5}$ will be $\\geq$ 2 but < 3. Hence [.] will be equals to 2 for each such term.\nTotal such terms = 10 \nFor every term form $\\sqrt{9}$ to $\\sqrt{10}$ will be $\\geq$ 3 but < 4. Hence [.] will be equals to 3 for each such term.\nTotal such terms = 3 \nTherefore total value = 1*0 + 6*1 +10*2 + 3*3 = 35"
+    },
+    {
+      "qid": "quant-sectionals-8-18",
+      "passage_text": "",
+      "question_text": "If the area of a regular hexagon is $6\\sqrt{3}$ sq units, find out the area of a regular octagon that shares a side with the regular hexagon.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$8+8\\sqrt{2}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$12+8\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$8+12\\sqrt{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$12\\sqrt{3}-4$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The area of a regular hexagon = 6 x Area of an equilateral triangle having the same side\n$6\\sqrt{3}$ = $6\\frac{\\sqrt{3}}{4}a^2$\na = 2\nNow, if we have an octagon of side 2, the area of the octagon = $2\\left(1+\\sqrt{\\ 2}\\right)a^2=8\\left(1+\\sqrt{\\ 2}\\right)$\nThe area can also be calculated without the formula.\nArea of 4 rectangles + Area of square + Area of 4 triangles\n$(4\\times\\ 2\\times\\ \\sqrt{\\ 2})+( 2\\times\\ 2 ) + (4\\times\\ \\frac{1}{2}\\times\\ \\sqrt{\\ 2}\\times\\ \\sqrt{\\ 2})=8+8\\sqrt{\\ 2}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the area of a regular hexagon is $6\\sqrt{3}$ sq units, find out the area of a regular octagon that shares a side with the regular hexagon.\n\n**Options:**\n- **A**. $8+8\\sqrt{2}$ ✅\n- **B**. $12+8\\sqrt{3}$\n- **C**. $8+12\\sqrt{2}$\n- **D**. $12\\sqrt{3}-4$\n\n**Correct Answer:** null\n\n**Solution:**\nThe area of a regular hexagon = 6 x Area of an equilateral triangle having the same side\n$6\\sqrt{3}$ = $6\\frac{\\sqrt{3}}{4}a^2$\na = 2\nNow, if we have an octagon of side 2, the area of the octagon = $2\\left(1+\\sqrt{\\ 2}\\right)a^2=8\\left(1+\\sqrt{\\ 2}\\right)$\nThe area can also be calculated without the formula.\nArea of 4 rectangles + Area of square + Area of 4 triangles\n$(4\\times\\ 2\\times\\ \\sqrt{\\ 2})+( 2\\times\\ 2 ) + (4\\times\\ \\frac{1}{2}\\times\\ \\sqrt{\\ 2}\\times\\ \\sqrt{\\ 2})=8+8\\sqrt{\\ 2}$"
+    },
+    {
+      "qid": "quant-sectionals-8-19",
+      "passage_text": "",
+      "question_text": "If $x^2+4ax+20-2a$ > 0 for all real x, then which of the following holds true for all the values of a?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "a > 0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-$\\frac{5}{2}$ < a< 2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "a>2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-2 < a< $\\frac{5}{2}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The co-efficient of $x^2$ is greater than 0, so the discriminant should be less than zero, if the given expression is greater than 0 for all values of x.\n$(4a)^2$ - 4*1*(20-2a) < 0\n=> $16a^2 - 80+8a$ < 0\n=> $2a^2+a-10$ < 0\n=> $2a^2 + 5a - 4a - 10$ < 0\n=> a(2a+5)-2(2a+5) < 0\n=> (a-2)(2a+5)<0\n$\\frac{-5}{2}$ < a < 2\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $x^2+4ax+20-2a$ > 0 for all real x, then which of the following holds true for all the values of a?\n\n**Options:**\n- **A**. a > 0\n- **B**. -$\\frac{5}{2}$ < a< 2 ✅\n- **C**. a>2\n- **D**. -2 < a< $\\frac{5}{2}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe co-efficient of $x^2$ is greater than 0, so the discriminant should be less than zero, if the given expression is greater than 0 for all values of x.\n$(4a)^2$ - 4*1*(20-2a) < 0\n=> $16a^2 - 80+8a$ < 0\n=> $2a^2+a-10$ < 0\n=> $2a^2 + 5a - 4a - 10$ < 0\n=> a(2a+5)-2(2a+5) < 0\n=> (a-2)(2a+5)<0\n$\\frac{-5}{2}$ < a < 2\nB is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-8-20",
+      "passage_text": "",
+      "question_text": "In an equilateral triangle, another triangle is formed using 2 vertices of the triangle and the incenter of the equilateral triangle. What is the ratio of the in-radius of the equilateral triangle and the in-radius of the triangle so formed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$(2+\\sqrt{3}):\\sqrt{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$3\\sqrt{3}:4$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{3}:1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let ABC be the equilateral triangle and I be the incenter. Join BI and IC to form triangle BIC as shown below:-\nLet the side of the equilateral triangle be $2\\sqrt{3}$ cm\nAs we know the length of the in-radius of an equilateral triangle = $\\dfrac{side}{ 2\\sqrt{3}} = \\dfrac{2\\sqrt{3}}{2\\sqrt{3}} $\nThus, the in radius of the equilateral triangle = 1 cm.\nThus, IJ = 1 cm.\nWe know BC = $2\\sqrt{3}$ cm\nThus, $BJ = \\sqrt{3}$…..(median bisects the side)\nThus, BI = $\\sqrt{1+3} = 2$\nThus, BI = CI = 2 cm.\nArea of triangle BIC = $\\dfrac{1}{2}*IJ*BC = \\dfrac{1}{2}*1*2\\sqrt{3} = \\sqrt{3}$\nAlso, Area of triangle BIC = sr\ns = $\\dfrac{2+2+2\\sqrt{3}}{2} = 2+\\sqrt{3}$\nThus, $(2+\\sqrt{3})*r = \\sqrt{3}$\nThus, $r = \\dfrac{\\sqrt{3}}{(2+\\sqrt{3})}$\nThus, the required ratio = $1:\\dfrac{\\sqrt{3}}{(2+\\sqrt{3})}$ = $(2+\\sqrt{3}):\\sqrt{3}$\nHence, option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn an equilateral triangle, another triangle is formed using 2 vertices of the triangle and the incenter of the equilateral triangle. What is the ratio of the in-radius of the equilateral triangle and the in-radius of the triangle so formed?\n\n**Options:**\n- **A**. $(2+\\sqrt{3}):\\sqrt{3}$ ✅\n- **B**. $3\\sqrt{3}:4$\n- **C**. $2:1$\n- **D**. $\\sqrt{3}:1$\n\n**Correct Answer:** null\n\n**Solution:**\nLet ABC be the equilateral triangle and I be the incenter. Join BI and IC to form triangle BIC as shown below:-\nLet the side of the equilateral triangle be $2\\sqrt{3}$ cm\nAs we know the length of the in-radius of an equilateral triangle = $\\dfrac{side}{ 2\\sqrt{3}} = \\dfrac{2\\sqrt{3}}{2\\sqrt{3}} $\nThus, the in radius of the equilateral triangle = 1 cm.\nThus, IJ = 1 cm.\nWe know BC = $2\\sqrt{3}$ cm\nThus, $BJ = \\sqrt{3}$…..(median bisects the side)\nThus, BI = $\\sqrt{1+3} = 2$\nThus, BI = CI = 2 cm.\nArea of triangle BIC = $\\dfrac{1}{2}*IJ*BC = \\dfrac{1}{2}*1*2\\sqrt{3} = \\sqrt{3}$\nAlso, Area of triangle BIC = sr\ns = $\\dfrac{2+2+2\\sqrt{3}}{2} = 2+\\sqrt{3}$\nThus, $(2+\\sqrt{3})*r = \\sqrt{3}$\nThus, $r = \\dfrac{\\sqrt{3}}{(2+\\sqrt{3})}$\nThus, the required ratio = $1:\\dfrac{\\sqrt{3}}{(2+\\sqrt{3})}$ = $(2+\\sqrt{3}):\\sqrt{3}$\nHence, option A is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-8-21",
+      "passage_text": "",
+      "question_text": "Sumitra has to solve 384 questions. She decides to solve a particular number of questions per day to complete the task in a certain number of days. Shalini, her friend, suggests that if she solves eight more questions per day than what Sumitra has decided, she will take eight fewer days to finish the task than what Sumitra has calculated. In how many days can the task be completed if Sumitra follows what Shalini suggested?",
+      "options": [],
+      "correct_option_data": "16",
+      "solution_text": "Let the number of questions to be solved per day be $x$, and the number of days required be $y$ as per Sumitra's plan.\nSo, $xy = 384$\nAs per Shalini, \n$(x + 8)(y - 8) = 384$\nor,  $xy - 8x + 8y - 64 = 384$\nor,  $8y - 8x = 64$\nor,  $y - x = 8$\nPutting $y = \\dfrac{384}{x}$, we get\n$\\dfrac{384}{x} - x = 8$\nor,  $384 - x^2 = 8x$\nor,  $x^2 + 8x - 384 = 0$\nOn solving, we get $x = -24$ or $x = 16$\nBut,  $x$ cannot be negative.\nSo,  $x = 16$\n=>  $y = \\dfrac{384}{x} = 24$\nAccording to Shalini, number of days required =  $ (y - 8) = 16$ days\nHence, 16 is the required answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSumitra has to solve 384 questions. She decides to solve a particular number of questions per day to complete the task in a certain number of days. Shalini, her friend, suggests that if she solves eight more questions per day than what Sumitra has decided, she will take eight fewer days to finish the task than what Sumitra has calculated. In how many days can the task be completed if Sumitra follows what Shalini suggested?\n\n**Options:**\n\n**Correct Answer:** 16\n\n**Solution:**\nLet the number of questions to be solved per day be $x$, and the number of days required be $y$ as per Sumitra's plan.\nSo, $xy = 384$\nAs per Shalini, \n$(x + 8)(y - 8) = 384$\nor,  $xy - 8x + 8y - 64 = 384$\nor,  $8y - 8x = 64$\nor,  $y - x = 8$\nPutting $y = \\dfrac{384}{x}$, we get\n$\\dfrac{384}{x} - x = 8$\nor,  $384 - x^2 = 8x$\nor,  $x^2 + 8x - 384 = 0$\nOn solving, we get $x = -24$ or $x = 16$\nBut,  $x$ cannot be negative.\nSo,  $x = 16$\n=>  $y = \\dfrac{384}{x} = 24$\nAccording to Shalini, number of days required =  $ (y - 8) = 16$ days\nHence, 16 is the required answer."
+    }
+  ]
+}
