@@ -1,0 +1,724 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-9-1",
+      "passage_text": "",
+      "question_text": "Bombs are fired on a bridge such that a probability of a bomb hitting the bridge is 0.5. A minimum of two bombs are required to hit a bridge in order to destroy it. Find the minimum number of hits required such that probability of destroying a bridge is greater than 0.8.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We need the probability of atleast two hits\n= 1 - probability of less than two hits\n= 1 - (probabilty of 0 hits + probability of 1 hit)\nLet n be the number of hits,\nThen probability of 0 hits = $(\\frac{1}{2})^n$ , since for each turn probability of missing = 1/2\nProbability of 1 hit = $n*\\frac{1}{2}*(\\frac{1}{2})^{n-1}$ = $n*(\\frac{1}{2})^n$, since the turn which will hit can be selected in $^nC_1$ ways and probability of hitting in that turn = 1/2 and probability that all other n-1 turns will miss is $(\\frac{1}{2})^{n-1}$.\nHence probability of atleast two hits = 1 - $(\\frac{1}{2})^n$ - $n*(\\frac{1}{2})^n$\nThe minimum value of n for which the above value is greater than 0.8 is 5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBombs are fired on a bridge such that a probability of a bomb hitting the bridge is 0.5. A minimum of two bombs are required to hit a bridge in order to destroy it. Find the minimum number of hits required such that probability of destroying a bridge is greater than 0.8.\n\n**Options:**\n- **A**. 5 ✅\n- **B**. 6\n- **C**. 7\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\nWe need the probability of atleast two hits\n= 1 - probability of less than two hits\n= 1 - (probabilty of 0 hits + probability of 1 hit)\nLet n be the number of hits,\nThen probability of 0 hits = $(\\frac{1}{2})^n$ , since for each turn probability of missing = 1/2\nProbability of 1 hit = $n*\\frac{1}{2}*(\\frac{1}{2})^{n-1}$ = $n*(\\frac{1}{2})^n$, since the turn which will hit can be selected in $^nC_1$ ways and probability of hitting in that turn = 1/2 and probability that all other n-1 turns will miss is $(\\frac{1}{2})^{n-1}$.\nHence probability of atleast two hits = 1 - $(\\frac{1}{2})^n$ - $n*(\\frac{1}{2})^n$\nThe minimum value of n for which the above value is greater than 0.8 is 5"
+    },
+    {
+      "qid": "quant-sectionals-9-2",
+      "passage_text": "",
+      "question_text": "A is a point which lies on the intersection of 2x+y=9 and x-2y= -3 while B lies on x+y= -4. If the slope of AB is 1.5, find the slope of the line that goes through B and P(5,1).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{8}{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{3}{7}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{4}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{2}{3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA is a point which lies on the intersection of 2x+y=9 and x-2y= -3 while B lies on x+y= -4. If the slope of AB is 1.5, find the slope of the line that goes through B and P(5,1).\n\n**Options:**\n- **A**. $\\dfrac{8}{5}$\n- **B**. $\\dfrac{3}{7}$\n- **C**. $\\dfrac{4}{3}$\n- **D**. $\\dfrac{2}{3}$ ✅\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-sectionals-9-3",
+      "passage_text": "",
+      "question_text": "If $t>2$, what is the solution set of the inequality\n\n$(t-2)^{t^2 - 6t + 8} > 1$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2 < t < 3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "t > 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2 < t < 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "both a) and b)",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Taking logarithm on both sides, we get,\n$(t^2 - 6t + 8) log (t-2) > log 1 = 0$\n=>$(t - 2)(t - 4) log (t-2) > 0$\nFor t < 2 and t > 4, (t-2)(t-4) > 0. In this case, for the inequality to hold, log (t-2) > 0\n=> t - 2 > 1 => t > 3\nThe common interval is t > 4\nFor 2 < t < 4, (t-2)(t-4) < 0. In this case, for the inequality to hold, log (t-2) < 0\n=> t - 2 < 1 => t < 3\nThe common interval is 2 < t < 3\nSo, the solution set is 2 < t < 3 U t > 4",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $t>2$, what is the solution set of the inequality\n\n$(t-2)^{t^2 - 6t + 8} > 1$?\n\n**Options:**\n- **A**. 2 < t < 3\n- **B**. t > 4\n- **C**. 2 < t < 4\n- **D**. both a) and b) ✅\n\n**Correct Answer:** null\n\n**Solution:**\nTaking logarithm on both sides, we get,\n$(t^2 - 6t + 8) log (t-2) > log 1 = 0$\n=>$(t - 2)(t - 4) log (t-2) > 0$\nFor t < 2 and t > 4, (t-2)(t-4) > 0. In this case, for the inequality to hold, log (t-2) > 0\n=> t - 2 > 1 => t > 3\nThe common interval is t > 4\nFor 2 < t < 4, (t-2)(t-4) < 0. In this case, for the inequality to hold, log (t-2) < 0\n=> t - 2 < 1 => t < 3\nThe common interval is 2 < t < 3\nSo, the solution set is 2 < t < 3 U t > 4"
+    },
+    {
+      "qid": "quant-sectionals-9-4",
+      "passage_text": "",
+      "question_text": "One of the roots of the equation $x^2 - (m - 2)x + 6 = 0$ lies between (0, 2) and the other root lies between (3, 4). It is known that $m$ is an integer. What is the sum of all the possible values of $m$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "No such value exists",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that the graph of a quadratic polynomial cuts x-axis at the points which are also the roots of the quadratic equation. Therefore, the value of the polynomial will be opposite in sign on the two points between which the roots lie.\nIn this graph, we can observe that the polynomial changes its sign at the roots.\nIn the given question, one of the roots lie between (0, 2) and the other root lie between (3, 4)\nLet $f(x) = x^2 - (m - 2)x + 6$\nSo, $f(0) > 0$.................(i)\nSo, $f(2) < 0$.................(i)\nSo, $f(3) < 0$.................(i)\nSo, $f(4) > 0$.................(i)\nWe can write (i) as $6>0$ which is always true\nWe can write (ii) as\n$(14 - 2m) < 0$\n$m > 7$\nWe can write (iii) as\n$9-3*(m-2)+6<0$\nor $m > 7$\nWe can write (iv) as\n$16-4*(m-2)+6>0$\nor, $m<7.5$\nTherefore, $m$ belongs to $(7, \\dfrac{15}{2})$\nThus, no integral value of $m$ satisfies it.\nHence, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nOne of the roots of the equation $x^2 - (m - 2)x + 6 = 0$ lies between (0, 2) and the other root lies between (3, 4). It is known that $m$ is an integer. What is the sum of all the possible values of $m$?\n\n**Options:**\n- **A**. 11\n- **B**. -3\n- **C**. 5\n- **D**. No such value exists ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the graph of a quadratic polynomial cuts x-axis at the points which are also the roots of the quadratic equation. Therefore, the value of the polynomial will be opposite in sign on the two points between which the roots lie.\nIn this graph, we can observe that the polynomial changes its sign at the roots.\nIn the given question, one of the roots lie between (0, 2) and the other root lie between (3, 4)\nLet $f(x) = x^2 - (m - 2)x + 6$\nSo, $f(0) > 0$.................(i)\nSo, $f(2) < 0$.................(i)\nSo, $f(3) < 0$.................(i)\nSo, $f(4) > 0$.................(i)\nWe can write (i) as $6>0$ which is always true\nWe can write (ii) as\n$(14 - 2m) < 0$\n$m > 7$\nWe can write (iii) as\n$9-3*(m-2)+6<0$\nor $m > 7$\nWe can write (iv) as\n$16-4*(m-2)+6>0$\nor, $m<7.5$\nTherefore, $m$ belongs to $(7, \\dfrac{15}{2})$\nThus, no integral value of $m$ satisfies it.\nHence, option D is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-5",
+      "passage_text": "",
+      "question_text": "Muthu starts from point A on a circular track with speed 10m/s and meets his friend Vivek after 15 seconds. Now, Muthu and Vivek travel in opposite directions and Vivek reaches Point A in 10 s. Vivek then meets Muthu exactly 14 seconds after crossing point A. Find the circumference of the circular track.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "600m",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "450m",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "800m",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "350m",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Muthu meets Vivek after 15 seconds with speed 10m/s. Distance covered is 150m.\nVivek  travels till point A in 10s. Hence, Vivek travels at a speed of 15m/s.\nWhen Vivek reaches A, Muthu would have covered a Distance of 100m.\nThey meet together after 14 seconds. Relative speed is 25m/s. The total distance covered is 25*14=350m.\nCircumference= 150+100+350=600m",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMuthu starts from point A on a circular track with speed 10m/s and meets his friend Vivek after 15 seconds. Now, Muthu and Vivek travel in opposite directions and Vivek reaches Point A in 10 s. Vivek then meets Muthu exactly 14 seconds after crossing point A. Find the circumference of the circular track.\n\n**Options:**\n- **A**. 600m ✅\n- **B**. 450m\n- **C**. 800m\n- **D**. 350m\n\n**Correct Answer:** null\n\n**Solution:**\nMuthu meets Vivek after 15 seconds with speed 10m/s. Distance covered is 150m.\nVivek  travels till point A in 10s. Hence, Vivek travels at a speed of 15m/s.\nWhen Vivek reaches A, Muthu would have covered a Distance of 100m.\nThey meet together after 14 seconds. Relative speed is 25m/s. The total distance covered is 25*14=350m.\nCircumference= 150+100+350=600m"
+    },
+    {
+      "qid": "quant-sectionals-9-6",
+      "passage_text": "",
+      "question_text": "The sum of the first 30 terms of an arithmetic progression is equal to the sum of first 48 terms. What is the ratio of the common difference of the AP to 41th term of the same AP?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have been that\n$S_{30}$ = $S_{48}$\n=> 15 ( 2a + 29d) = 24(2a + 47d)\n=> 30a + 435d = 48a + 1128d\n=> 18a + 693d = 0\n=> 2a + 77d = 0\nWe need to find the ratio of the common difference to 41st term.\nSo we have \n$\\frac{d}{a+40d}$\nWe can write it as \n$\\frac{2d}{2a+80d}$\n=> $\\frac{2d}{2a + 77d + 3d}$\n=> $\\frac{2d}{ 3d}$ => 2:3\nHence, the required ratio is 2:3",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of the first 30 terms of an arithmetic progression is equal to the sum of first 48 terms. What is the ratio of the common difference of the AP to 41th term of the same AP?\n\n**Options:**\n- **A**. 2:3 ✅\n- **B**. 1:4\n- **C**. 2:5\n- **D**. 1:3\n\n**Correct Answer:** null\n\n**Solution:**\nWe have been that\n$S_{30}$ = $S_{48}$\n=> 15 ( 2a + 29d) = 24(2a + 47d)\n=> 30a + 435d = 48a + 1128d\n=> 18a + 693d = 0\n=> 2a + 77d = 0\nWe need to find the ratio of the common difference to 41st term.\nSo we have \n$\\frac{d}{a+40d}$\nWe can write it as \n$\\frac{2d}{2a+80d}$\n=> $\\frac{2d}{2a + 77d + 3d}$\n=> $\\frac{2d}{ 3d}$ => 2:3\nHence, the required ratio is 2:3"
+    },
+    {
+      "qid": "quant-sectionals-9-7",
+      "passage_text": "",
+      "question_text": "p, q, r and s are four distinct real numbers such that $p^2 - q = q^2 - r = r^2 - s = s^2 - p$, what is the value of (p + q)(q + r)(r + s)(s + p)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "-1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "either 0 or 1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$p^2 - q = q^2 - r$\n$p^2 - q^2 = q - r$\n=> $ p + q = \\frac{q - r}{p - q}$ -(1)\nSimilarly, $ q + r = \\frac{r - s}{q - r}$(2)\n$ r + s = \\frac{s - p}{r - s}$ - (3)\n$ s + p = \\frac{p - r}{s - p}$ - (4)\nFrom (1), (2), (3) and (4) we get (p + q)(q + r)(r + s)(s + p) = $\\frac{q - r}{p - q} \\times \\frac{r - s}{q - r} \\times \\frac{p - q}{r - s} \\times \\frac{p - r}{ s - p} = 1$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\np, q, r and s are four distinct real numbers such that $p^2 - q = q^2 - r = r^2 - s = s^2 - p$, what is the value of (p + q)(q + r)(r + s)(s + p)?\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 0\n- **C**. -1\n- **D**. either 0 or 1\n\n**Correct Answer:** null\n\n**Solution:**\n$p^2 - q = q^2 - r$\n$p^2 - q^2 = q - r$\n=> $ p + q = \\frac{q - r}{p - q}$ -(1)\nSimilarly, $ q + r = \\frac{r - s}{q - r}$(2)\n$ r + s = \\frac{s - p}{r - s}$ - (3)\n$ s + p = \\frac{p - r}{s - p}$ - (4)\nFrom (1), (2), (3) and (4) we get (p + q)(q + r)(r + s)(s + p) = $\\frac{q - r}{p - q} \\times \\frac{r - s}{q - r} \\times \\frac{p - q}{r - s} \\times \\frac{p - r}{ s - p} = 1$"
+    },
+    {
+      "qid": "quant-sectionals-9-8",
+      "passage_text": "",
+      "question_text": "There are three solutions A, B and C with acid concentrations as 60%, 40% and 30% respectively. When 100 ml of A is mixed with x ml of B resultant acid concentration is 45% and when 100 ml of A is mixed with y ml of C resultant acid concentration is 40%. When y ml of B is mixed with x ml of C, what is acid concentration in resultant mixture?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "32%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "34%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\frac{100\\left(0.6\\right)+x\\left(0.4\\right)}{100+x}=\\ 0.45$ \nsolving we get x = 300 ml\n$\\frac{100\\left(0.6\\right)+y\\left(0.3\\right)}{100+y}=\\ 0.4$\nsolving we get y = 200 ml\nresultant concentration = $\\frac{200\\left(0.4\\right)+300\\left(0.3\\right)}{200+300}$ = $\\frac{170}{500}$ = 0.34\nResultant acid concentration = 34%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are three solutions A, B and C with acid concentrations as 60%, 40% and 30% respectively. When 100 ml of A is mixed with x ml of B resultant acid concentration is 45% and when 100 ml of A is mixed with y ml of C resultant acid concentration is 40%. When y ml of B is mixed with x ml of C, what is acid concentration in resultant mixture?\n\n**Options:**\n- **A**. 30%\n- **B**. 32%\n- **C**. 34% ✅\n- **D**. 36%\n\n**Correct Answer:** null\n\n**Solution:**\n$\\frac{100\\left(0.6\\right)+x\\left(0.4\\right)}{100+x}=\\ 0.45$ \nsolving we get x = 300 ml\n$\\frac{100\\left(0.6\\right)+y\\left(0.3\\right)}{100+y}=\\ 0.4$\nsolving we get y = 200 ml\nresultant concentration = $\\frac{200\\left(0.4\\right)+300\\left(0.3\\right)}{200+300}$ = $\\frac{170}{500}$ = 0.34\nResultant acid concentration = 34%"
+    },
+    {
+      "qid": "quant-sectionals-9-9",
+      "passage_text": "",
+      "question_text": "If two sides of a triangle are 6 cm and 12 cm, then the number of obtuse angled triangles, with integral sides, that can be formed is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The sides of the triangle is 6cm, 12cm\nLet the third side be x cm\n6 < x < 18\nLet x be the largest side.\nx can be 12, 13, 14, 15, 16, 17.\nIn an obtuse-angled triangle, if x is the largest side\n$6^2 + 12^2 < x^2$\n180 < x$^2$\nx can take 14,15,16,17\nIf 12 is the largest side, x can be 7,8,9,10,11\n36 + x$^2$ < 144\nx$^2$ < 108\nx can take 7, 8, 9, 10\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf two sides of a triangle are 6 cm and 12 cm, then the number of obtuse angled triangles, with integral sides, that can be formed is\n\n**Options:**\n- **A**. 6\n- **B**. 8 ✅\n- **C**. 4\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nThe sides of the triangle is 6cm, 12cm\nLet the third side be x cm\n6 < x < 18\nLet x be the largest side.\nx can be 12, 13, 14, 15, 16, 17.\nIn an obtuse-angled triangle, if x is the largest side\n$6^2 + 12^2 < x^2$\n180 < x$^2$\nx can take 14,15,16,17\nIf 12 is the largest side, x can be 7,8,9,10,11\n36 + x$^2$ < 144\nx$^2$ < 108\nx can take 7, 8, 9, 10\nB is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-10",
+      "passage_text": "",
+      "question_text": "What is the absolute difference between the number of 3-digit even numbers that have at least one 2 in them and those that do not have any 2 in them?",
+      "options": [],
+      "correct_option_data": "126",
+      "solution_text": "Number of 3 digit numbers is 999 - 100 + 1 = 900\nSince it starts with an even number and ends with an odd number, it has an equal number of even and odd numbers.\nSo, the number of even numbers = 900/2 = 450.\nNow we need to count the number of even numbers with no 2 in it.\nUnit's digit can be filled with any of 0, 4, 6 and 8, since it is an even number and does not contain 2. Count = 4\nTen's digit can have any number from 0 to 9 except for 2. Count = 9\nHundred's digit can have any number from 1 to 9 except for 2. Count = 8\nHence, total number of 3-digit even numbers with no 2 in them = $4\\times\\ 9\\times\\ 8=288$\nHence, total number of 3-digit even numbers with at least one 2 in them = 450 - 288 = 162\nHence, difference = 288 - 162 = 126",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the absolute difference between the number of 3-digit even numbers that have at least one 2 in them and those that do not have any 2 in them?\n\n**Options:**\n\n**Correct Answer:** 126\n\n**Solution:**\nNumber of 3 digit numbers is 999 - 100 + 1 = 900\nSince it starts with an even number and ends with an odd number, it has an equal number of even and odd numbers.\nSo, the number of even numbers = 900/2 = 450.\nNow we need to count the number of even numbers with no 2 in it.\nUnit's digit can be filled with any of 0, 4, 6 and 8, since it is an even number and does not contain 2. Count = 4\nTen's digit can have any number from 0 to 9 except for 2. Count = 9\nHundred's digit can have any number from 1 to 9 except for 2. Count = 8\nHence, total number of 3-digit even numbers with no 2 in them = $4\\times\\ 9\\times\\ 8=288$\nHence, total number of 3-digit even numbers with at least one 2 in them = 450 - 288 = 162\nHence, difference = 288 - 162 = 126"
+    },
+    {
+      "qid": "quant-sectionals-9-11",
+      "passage_text": "",
+      "question_text": "On a particular day, Aritra works at $\\frac{11}{8}$ of his usual rate and completes the work 16 minutes earlier than the usual time. How much extra time would Aritra take to complete the same work if he works at $\\frac{8}{11}$ of his usual rate?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "22 minutes",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the usual rate of doing work be x and the time taken to complete the work be t minutes\nAritra now works at $\\frac{11}{8}$ of his usual rate and completes the work 16 minutes earlier than the usual time.\n$\\frac{11}{8}$*x*(t-16) = xt\nt = $\\frac{11*16}{3}$\nAritra now works at $\\frac{8}{11}$ of his usual rate.\n$\\frac{8}{11}$*x*(t+a) = xt\n$\\frac{8}{11}$*x*(t+a) = x$\\frac{11*16}{3}$\nOn simplying we get a = 22 minutes.\nD is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nOn a particular day, Aritra works at $\\frac{11}{8}$ of his usual rate and completes the work 16 minutes earlier than the usual time. How much extra time would Aritra take to complete the same work if he works at $\\frac{8}{11}$ of his usual rate?\n\n**Options:**\n- **A**. 24 minutes\n- **B**. 16 minutes\n- **C**. 11 minutes\n- **D**. 22 minutes ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the usual rate of doing work be x and the time taken to complete the work be t minutes\nAritra now works at $\\frac{11}{8}$ of his usual rate and completes the work 16 minutes earlier than the usual time.\n$\\frac{11}{8}$*x*(t-16) = xt\nt = $\\frac{11*16}{3}$\nAritra now works at $\\frac{8}{11}$ of his usual rate.\n$\\frac{8}{11}$*x*(t+a) = xt\n$\\frac{8}{11}$*x*(t+a) = x$\\frac{11*16}{3}$\nOn simplying we get a = 22 minutes.\nD is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-12",
+      "passage_text": "",
+      "question_text": "A right cylinder of radius = $\\sqrt{12}$cm and height = 8 cm is melted and transformed into a cone of same height. If the ratio of lateral surface area of cone to the lateral surface area of cylinder can be represented as a : b$\\sqrt{3}$, where a and b are co-primes, what is the value of a + b ?",
+      "options": [],
+      "correct_option_data": "23",
+      "solution_text": "Since the volume will remain constant, we can equate the volume of cylinder to cone.\n$\\pi * r^2 * h$ = $\\frac{1}{3} * \\pi * R^2 *h$\nwhere r is the radius of cylinder and R is the radius of cone\nPutting values and solving we get R = 6 cm\nSo the slant height of cone, l = $\\sqrt{6^2 + 8^2}$ = 10 cm\nRatio of lateral surface areas of cone and cylinder = $\\frac{\\pi Rl}{2\\pi rh}$\n= $\\frac{6 * 10}{2 * \\sqrt{12} * 8}$\n= $\\frac{15}{8\\sqrt{3}}$\nSo, a = 15 and b = 8 and a + b = 23.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA right cylinder of radius = $\\sqrt{12}$cm and height = 8 cm is melted and transformed into a cone of same height. If the ratio of lateral surface area of cone to the lateral surface area of cylinder can be represented as a : b$\\sqrt{3}$, where a and b are co-primes, what is the value of a + b ?\n\n**Options:**\n\n**Correct Answer:** 23\n\n**Solution:**\nSince the volume will remain constant, we can equate the volume of cylinder to cone.\n$\\pi * r^2 * h$ = $\\frac{1}{3} * \\pi * R^2 *h$\nwhere r is the radius of cylinder and R is the radius of cone\nPutting values and solving we get R = 6 cm\nSo the slant height of cone, l = $\\sqrt{6^2 + 8^2}$ = 10 cm\nRatio of lateral surface areas of cone and cylinder = $\\frac{\\pi Rl}{2\\pi rh}$\n= $\\frac{6 * 10}{2 * \\sqrt{12} * 8}$\n= $\\frac{15}{8\\sqrt{3}}$\nSo, a = 15 and b = 8 and a + b = 23."
+    },
+    {
+      "qid": "quant-sectionals-9-13",
+      "passage_text": "",
+      "question_text": "If |x+1|<6 and |y-1|<6 where x,y are integers, what can be the maximum value of x$^{2}$+y$^{2}$-xy",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "108",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "109",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, |x+1|<6 and |y-1|<6\n|x+1|<6   => -6<x+1<6  =>  -7<x<5\n|y-1|<6 => -6< y-1<6 => -5<y<7.\nSince x$^{2}$+y$^{2}$ is positive, the value will be maximized when xy is negative.\nThe highest negative value of x = -6 and highest positive value of y is 6.\nHence the maximum value of x$^{2}$+y$^{2}$-xy will be (-6)$^{2}$+(6)$^{2}$-(-6)(6) = 108",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf |x+1|<6 and |y-1|<6 where x,y are integers, what can be the maximum value of x$^{2}$+y$^{2}$-xy\n\n**Options:**\n- **A**. 144\n- **B**. 72\n- **C**. 108 ✅\n- **D**. 109\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, |x+1|<6 and |y-1|<6\n|x+1|<6   => -6<x+1<6  =>  -7<x<5\n|y-1|<6 => -6< y-1<6 => -5<y<7.\nSince x$^{2}$+y$^{2}$ is positive, the value will be maximized when xy is negative.\nThe highest negative value of x = -6 and highest positive value of y is 6.\nHence the maximum value of x$^{2}$+y$^{2}$-xy will be (-6)$^{2}$+(6)$^{2}$-(-6)(6) = 108"
+    },
+    {
+      "qid": "quant-sectionals-9-14",
+      "passage_text": "",
+      "question_text": "Consider Circle C1 represented by the curve $x^2+y^2-10x-8y+25=0$ and C2 represented by $x^2+y^2-8x-8y+23=0$. The area formed by the tangent common to C1 and C2, a tangent of C2 parallel to x axis and the line y=x+8 is:\n\nA. 32 sq. units\n\nB. 2 sq. units\n\nC. 16 sq. units",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Only A",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Only C",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "A and B both",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "C1 is given as: $x^2+y^2-10x-8y+25=0$, which can be re-written as $x^2-10x+25+y^2-8y+16=16$\nOr, C1= $\\left(x-5\\right)^2+\\left(y-4\\right)^2=4^2$.\nC1 has the centre at (5,4) and radius = 4 units.\nSimilarly, C2 is given as: $x^2+y^2-8x-8y+23=0$, which when manipulated becomes $x^2-8x+16+y^2-8y+16=9$\nor, C2 is given as $\\left(x-4\\right)^2+\\left(y-4\\right)^2=3^2$, which has a centre at (4,4) and radius 3 units.\nThe circles, its common tangent, tangents of C2 parallel to X-axis and the line y=x+8 can be drawn as:\nThe common tangent is represented by the dotted line x=1. The purple line shows y= x+8\nThe two tangents of the circle C2 are y=1 and y=7.\nSo, there are two possible triangles formed using the information given in the question, $\\triangle ABC\\ \\ $ and $\\triangle ADE\\ $\nPoint C is simply the intersection of y=7 and x=1. So, C=(1,7)\nIn $\\triangle ABC\\ \\ $, Base AC= 2 units, height BC= 2 units. So, area= $\\ \\frac{\\ 1}{2}\\times2\\times2=2\\ $sq. units\nIn $\\triangle ADE\\ $, Base AE= 8 units, Height ED= 8 units. So, area= $\\ \\frac{\\ 1}{2}\\times8\\times8=32\\ $sq. units\ntherefore both A and B are correct",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider Circle C1 represented by the curve $x^2+y^2-10x-8y+25=0$ and C2 represented by $x^2+y^2-8x-8y+23=0$. The area formed by the tangent common to C1 and C2, a tangent of C2 parallel to x axis and the line y=x+8 is:\n\nA. 32 sq. units\n\nB. 2 sq. units\n\nC. 16 sq. units\n\n**Options:**\n- **A**. Only A\n- **B**. Only B\n- **C**. Only C\n- **D**. A and B both ✅\n\n**Correct Answer:** null\n\n**Solution:**\nC1 is given as: $x^2+y^2-10x-8y+25=0$, which can be re-written as $x^2-10x+25+y^2-8y+16=16$\nOr, C1= $\\left(x-5\\right)^2+\\left(y-4\\right)^2=4^2$.\nC1 has the centre at (5,4) and radius = 4 units.\nSimilarly, C2 is given as: $x^2+y^2-8x-8y+23=0$, which when manipulated becomes $x^2-8x+16+y^2-8y+16=9$\nor, C2 is given as $\\left(x-4\\right)^2+\\left(y-4\\right)^2=3^2$, which has a centre at (4,4) and radius 3 units.\nThe circles, its common tangent, tangents of C2 parallel to X-axis and the line y=x+8 can be drawn as:\nThe common tangent is represented by the dotted line x=1. The purple line shows y= x+8\nThe two tangents of the circle C2 are y=1 and y=7.\nSo, there are two possible triangles formed using the information given in the question, $\\triangle ABC\\ \\ $ and $\\triangle ADE\\ $\nPoint C is simply the intersection of y=7 and x=1. So, C=(1,7)\nIn $\\triangle ABC\\ \\ $, Base AC= 2 units, height BC= 2 units. So, area= $\\ \\frac{\\ 1}{2}\\times2\\times2=2\\ $sq. units\nIn $\\triangle ADE\\ $, Base AE= 8 units, Height ED= 8 units. So, area= $\\ \\frac{\\ 1}{2}\\times8\\times8=32\\ $sq. units\ntherefore both A and B are correct"
+    },
+    {
+      "qid": "quant-sectionals-9-15",
+      "passage_text": "",
+      "question_text": "Mohit and Narayan started a company by investing their life savings. The company faced huge losses because of which its value halved. Narayan took out all of his remaining money but Mohit kept on working hard. He made a 300% profit next month. Meanwhile, Narayan found out a scheme of ‘Double your money in 30 days’ and invested half of the money he had left with him. They met at the end of the month and found out they had exactly the same amount of money, as Narayan lost all the money he had invested in the bogus scheme.\n\nIf both of them invested money in multiples of Rs. 1000, which of the following can be the total money they had invested in the company initially?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "36000",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "49000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the amount Mohit invested be 1000M and that Narayan invested be 1000N Rupees, where M and N are natural numbers.\nThe value of the company halved. Hence, their investments will also be halved and will become 500M and 500N respectively.\nMohit made a 300% profit the next month. This means, a profit of 3 times 500M. Thus, the final amount with him at the end of the month will be $4\\times\\ 500M=2000M$.\nNarayan lost half of what he had to a bogus scheme. Thus, the total amount with him at the end will be 250N.\nIt has been given that 2000M=250N. (Money at the end of the month is the same).\nOr N=8M.\nTotal amount in the beginning= 1000M+1000N = 1000M+8000M = 9000M.\nSince M is a natural number, the total sum must be a multiple of 9000. Only Option C satisfies this criterion, and hence, is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMohit and Narayan started a company by investing their life savings. The company faced huge losses because of which its value halved. Narayan took out all of his remaining money but Mohit kept on working hard. He made a 300% profit next month. Meanwhile, Narayan found out a scheme of ‘Double your money in 30 days’ and invested half of the money he had left with him. They met at the end of the month and found out they had exactly the same amount of money, as Narayan lost all the money he had invested in the bogus scheme.\n\nIf both of them invested money in multiples of Rs. 1000, which of the following can be the total money they had invested in the company initially?\n\n**Options:**\n- **A**. 16000\n- **B**. 25000\n- **C**. 36000 ✅\n- **D**. 49000\n\n**Correct Answer:** null\n\n**Solution:**\nLet the amount Mohit invested be 1000M and that Narayan invested be 1000N Rupees, where M and N are natural numbers.\nThe value of the company halved. Hence, their investments will also be halved and will become 500M and 500N respectively.\nMohit made a 300% profit the next month. This means, a profit of 3 times 500M. Thus, the final amount with him at the end of the month will be $4\\times\\ 500M=2000M$.\nNarayan lost half of what he had to a bogus scheme. Thus, the total amount with him at the end will be 250N.\nIt has been given that 2000M=250N. (Money at the end of the month is the same).\nOr N=8M.\nTotal amount in the beginning= 1000M+1000N = 1000M+8000M = 9000M.\nSince M is a natural number, the total sum must be a multiple of 9000. Only Option C satisfies this criterion, and hence, is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-16",
+      "passage_text": "",
+      "question_text": "An empty tank can be filled in 70 minutes by water flowing from a pipe of square cross section of side 3 cm at the rate of 4 cm/sec. Now another pipe of a circular cross section is added at the bottom of the tank which empties the tank at the rate of 7 cm/sec. When both the pipes are present the tank when empty gets filled completely in 180 minutes. What is the radius of the circular pipe at the bottom of the tank (in cm)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Volume of flow of water into the tank per second = Rate of flow * Area of cross section of pipe\nIn first case with only one pipe, Volume flow per sec = $3^2 \\times 4$ = 36 units\nIn second case, Volume flow per sec = 36 - $ \\pi r^2\\times7$ = 36- $ 7\\pi r^2$ units\nRatio of times taken is the inverse ratio of volumes flow per sec\n=> $\\frac{70}{180}=\\frac{36-7\\pi r^2}{36}$\nSolving, we get r = 1 cm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn empty tank can be filled in 70 minutes by water flowing from a pipe of square cross section of side 3 cm at the rate of 4 cm/sec. Now another pipe of a circular cross section is added at the bottom of the tank which empties the tank at the rate of 7 cm/sec. When both the pipes are present the tank when empty gets filled completely in 180 minutes. What is the radius of the circular pipe at the bottom of the tank (in cm)?\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 3\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nVolume of flow of water into the tank per second = Rate of flow * Area of cross section of pipe\nIn first case with only one pipe, Volume flow per sec = $3^2 \\times 4$ = 36 units\nIn second case, Volume flow per sec = 36 - $ \\pi r^2\\times7$ = 36- $ 7\\pi r^2$ units\nRatio of times taken is the inverse ratio of volumes flow per sec\n=> $\\frac{70}{180}=\\frac{36-7\\pi r^2}{36}$\nSolving, we get r = 1 cm."
+    },
+    {
+      "qid": "quant-sectionals-9-17",
+      "passage_text": "",
+      "question_text": "A friend of yours would like to invest an amount of Rs 10000  for a period of 4 years and would want to earn maximum profits and asks for your advice. Which of the following schemes are you most likely to suggest ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Investing Rs 10000  in  Compound Interest at 20 % p/a for 2 years  followed by investing the amount returned at 10 % p/a  in Simple Interest for two more years .",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Investing Rs 10000  in Simple  Interest at 20 % p/a for 2 years followed by investing the amount returned at 10 % p/a in Compound  Interest for two more years .",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Investing Rs 10000 in Compound Interest at 15 % p/a for 2 years followed by investing the amount returned at 15 % p/a in Simple Interest for two more years .",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Investing Rs 10000  in Simple  Interest at 15 % p/a for 2 years followed by investing the amount returned at 15 % p/a in Simple Interest for two more years .",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We need to make sure that he gets maximum return on the Principal of 10000Rs for a period of 4 Years . \nFor Simple interest the Amount earned = P(1+RT/100)\nFor Compound Interest the Amount earned is$P\\left(1+\\frac{R}{\\left(100\\right)}\\right)^N$ .\nNow calculating the Amount received for different options .\nOption A : First  Compound interest of  20 percent per annum followed by Simple Interest at 10 percent per annum  :\n10000(1.2)(1.2) = 14400 \n14000(1 +2*0.1) = Rs 17280 .\nOption B : First Simple interest of 20 percent per annum followed by Compound Interest at 10 percent per annum :\n10000(1+2*0.2) = 14000\n14000(1.1)(1.1) = Rs 16940\nOption C : First Compound interest of 15 percent per annum followed by Simple Interest at 15 percent per annum :\n10000(1.15)(1.15) = 13225\n13225(1+2*0.15) = Rs 17192.5\nOption D : First Simple  interest of 15 percent per annum followed by Compound Interest at 15 percent per annum :\n10000(1+2*0.15) = 13000\n13000(1.15)(1.15) = Rs 17192.5\nOption A gives you the maximum returns .",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA friend of yours would like to invest an amount of Rs 10000  for a period of 4 years and would want to earn maximum profits and asks for your advice. Which of the following schemes are you most likely to suggest ?\n\n**Options:**\n- **A**. Investing Rs 10000  in  Compound Interest at 20 % p/a for 2 years  followed by investing the amount returned at 10 % p/a  in Simple Interest for two more years . ✅\n- **B**. Investing Rs 10000  in Simple  Interest at 20 % p/a for 2 years followed by investing the amount returned at 10 % p/a in Compound  Interest for two more years .\n- **C**. Investing Rs 10000 in Compound Interest at 15 % p/a for 2 years followed by investing the amount returned at 15 % p/a in Simple Interest for two more years .\n- **D**. Investing Rs 10000  in Simple  Interest at 15 % p/a for 2 years followed by investing the amount returned at 15 % p/a in Simple Interest for two more years .\n\n**Correct Answer:** null\n\n**Solution:**\nWe need to make sure that he gets maximum return on the Principal of 10000Rs for a period of 4 Years . \nFor Simple interest the Amount earned = P(1+RT/100)\nFor Compound Interest the Amount earned is$P\\left(1+\\frac{R}{\\left(100\\right)}\\right)^N$ .\nNow calculating the Amount received for different options .\nOption A : First  Compound interest of  20 percent per annum followed by Simple Interest at 10 percent per annum  :\n10000(1.2)(1.2) = 14400 \n14000(1 +2*0.1) = Rs 17280 .\nOption B : First Simple interest of 20 percent per annum followed by Compound Interest at 10 percent per annum :\n10000(1+2*0.2) = 14000\n14000(1.1)(1.1) = Rs 16940\nOption C : First Compound interest of 15 percent per annum followed by Simple Interest at 15 percent per annum :\n10000(1.15)(1.15) = 13225\n13225(1+2*0.15) = Rs 17192.5\nOption D : First Simple  interest of 15 percent per annum followed by Compound Interest at 15 percent per annum :\n10000(1+2*0.15) = 13000\n13000(1.15)(1.15) = Rs 17192.5\nOption A gives you the maximum returns ."
+    },
+    {
+      "qid": "quant-sectionals-9-18",
+      "passage_text": "",
+      "question_text": "The sum of the last two digits of $(1^3 + 2^3 + 3^3)^{172}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us first evaluate the base of $(1^3 + 2^3 + 3^3)^{172}$ \n= $1^3 + 2^3 + 3^3$ = 36\nNow we have to find the last two digits of $36^{172}$\n= $6^{344}$\nThe remainder when $6^{344}$ is divided by 100 is calculated using Chinese remainder theorem.\n6 and 100 are not co-prime to each other.\nCalculate $6^{344}$ mod 25 and $6^{344}$ mod 4 \n$6^{20}$ mod 25 is 1   [From Euler theorem, Euler of 25 = 25*(1-$\\frac{1}{5}$) = 20]\n$6^{344}$ mod 25 = $6^{340}*6^4$ mod 25 = 1*1296 mod 25  = 36*36 mod 25= 11*11 mod 25 = 121 mod 25 = 21\n$6^{344}$ mod 4 is 0\n25p+21 = 4q+0\nUsing trial and error p = 3 and q = 24\n25p+21 = 25*3 + 21\n=96 is the last two digits of $6^{344}$\nSum of the digits = 15\n15 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of the last two digits of $(1^3 + 2^3 + 3^3)^{172}$ is\n\n**Options:**\n- **A**. 15 ✅\n- **B**. 12\n- **C**. 16\n- **D**. 9\n\n**Correct Answer:** null\n\n**Solution:**\nLet us first evaluate the base of $(1^3 + 2^3 + 3^3)^{172}$ \n= $1^3 + 2^3 + 3^3$ = 36\nNow we have to find the last two digits of $36^{172}$\n= $6^{344}$\nThe remainder when $6^{344}$ is divided by 100 is calculated using Chinese remainder theorem.\n6 and 100 are not co-prime to each other.\nCalculate $6^{344}$ mod 25 and $6^{344}$ mod 4 \n$6^{20}$ mod 25 is 1   [From Euler theorem, Euler of 25 = 25*(1-$\\frac{1}{5}$) = 20]\n$6^{344}$ mod 25 = $6^{340}*6^4$ mod 25 = 1*1296 mod 25  = 36*36 mod 25= 11*11 mod 25 = 121 mod 25 = 21\n$6^{344}$ mod 4 is 0\n25p+21 = 4q+0\nUsing trial and error p = 3 and q = 24\n25p+21 = 25*3 + 21\n=96 is the last two digits of $6^{344}$\nSum of the digits = 15\n15 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-19",
+      "passage_text": "",
+      "question_text": "Pipe A, pipe B and pipe C are used to fill a tank. The flow rate of pipe C is 25% less than pipe B. To fill the empty tank completely, Pipe A and Pipe B together take one third the time taken by Pipe C alone. If all three pipes can fill the tank in 15 hours, then find the time taken (in hours) by A alone to fill the tank completely.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the flow rate of pipe A is a  and  that of the pipe B is b, then the flow rate of pipe C = 0.75b\nThe capacity of the tank = Flow rate of all the tanks*Time taken  = 15(a+b+0.75b) = 15(a+1.75b)\nTo fill the empty tank completely, pipe A and pipe B together take one-third time than pipe C alone. It means that the flow rate of A and B combined is equal to 3 times that of C.\nHence, a+b  = 3*0.75b\n=> a = 1.25b\nHence, the total capacity of the tank = 15(1.25b+1.75b) = 45b\nTime taken by A to fill the tank = $\\dfrac{45b}{1.25b}\\ $  = 36 hours",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPipe A, pipe B and pipe C are used to fill a tank. The flow rate of pipe C is 25% less than pipe B. To fill the empty tank completely, Pipe A and Pipe B together take one third the time taken by Pipe C alone. If all three pipes can fill the tank in 15 hours, then find the time taken (in hours) by A alone to fill the tank completely.\n\n**Options:**\n- **A**. 40\n- **B**. 27\n- **C**. 45\n- **D**. 36 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the flow rate of pipe A is a  and  that of the pipe B is b, then the flow rate of pipe C = 0.75b\nThe capacity of the tank = Flow rate of all the tanks*Time taken  = 15(a+b+0.75b) = 15(a+1.75b)\nTo fill the empty tank completely, pipe A and pipe B together take one-third time than pipe C alone. It means that the flow rate of A and B combined is equal to 3 times that of C.\nHence, a+b  = 3*0.75b\n=> a = 1.25b\nHence, the total capacity of the tank = 15(1.25b+1.75b) = 45b\nTime taken by A to fill the tank = $\\dfrac{45b}{1.25b}\\ $  = 36 hours"
+    },
+    {
+      "qid": "quant-sectionals-9-20",
+      "passage_text": "",
+      "question_text": "If $l:n$ = 1:3, $m:o$ = 2:5, $n:p$ = 3:4, $o:q$ = 7:3, $p:m$ = 5:7. Then $lnp: moq$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{28}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{1}{49}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{3}{196}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{5}{196}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$lnp: moq$\n=$\\frac{l}{m} * \\frac{n}{o} * \\frac{p}{q}$\n=[$\\frac{l}{n} * \\frac{n}{p} * \\frac{p}{m}$] * [$\\frac{n}{p} * \\frac{p}{m} * \\frac{m}{o}$] * [$\\frac{p}{m} * \\frac{m}{o} * \\frac{o}{q}$]\n=[$\\frac{1}{3} * \\frac{3}{4} * \\frac{5}{7}$] * [$\\frac{3}{4} * \\frac{5}{7} * \\frac{2}{5}$] * [$\\frac{5}{7} * \\frac{2}{5} * \\frac{7}{3}$]\n= $\\frac{5}{196}$\nD is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $l:n$ = 1:3, $m:o$ = 2:5, $n:p$ = 3:4, $o:q$ = 7:3, $p:m$ = 5:7. Then $lnp: moq$ is\n\n**Options:**\n- **A**. $\\frac{1}{28}$\n- **B**. $\\frac{1}{49}$\n- **C**. $\\frac{3}{196}$\n- **D**. $\\frac{5}{196}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$lnp: moq$\n=$\\frac{l}{m} * \\frac{n}{o} * \\frac{p}{q}$\n=[$\\frac{l}{n} * \\frac{n}{p} * \\frac{p}{m}$] * [$\\frac{n}{p} * \\frac{p}{m} * \\frac{m}{o}$] * [$\\frac{p}{m} * \\frac{m}{o} * \\frac{o}{q}$]\n=[$\\frac{1}{3} * \\frac{3}{4} * \\frac{5}{7}$] * [$\\frac{3}{4} * \\frac{5}{7} * \\frac{2}{5}$] * [$\\frac{5}{7} * \\frac{2}{5} * \\frac{7}{3}$]\n= $\\frac{5}{196}$\nD is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-21",
+      "passage_text": "",
+      "question_text": "PQRS is an isosceles trapezium as shown in the figure. The lengths of the parallel sides are 8 cm and 10cm. The length of the non-parallel side is 8 cm. Which among the following can be the ratio of lengths of one of the parallel sides and the diagonals of the trapezium?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4:5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "PQRS is an isosceles trapezium and it is inscribed in a circle so it is a cyclic isosceles trapezium.\nSo all the properties of a cyclic quadrilateral can be applied here.\nIn an isosceles trapezium, the non-parallel sides are equal.\nThe diagonals of an isosceles trapezium are equal, so PR = SQ\nFrom Ptolemy Theorem,\nPQ*SR+ PS*QR = PR*QS\n8*10 +8*8 = PR*PR\nPR = 12 cm\nThe possible ratio of one of the sides and the diagonal = 8:12, 10:12\n=2:3, 5:6\nB is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/image_m4CkhZi.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPQRS is an isosceles trapezium as shown in the figure. The lengths of the parallel sides are 8 cm and 10cm. The length of the non-parallel side is 8 cm. Which among the following can be the ratio of lengths of one of the parallel sides and the diagonals of the trapezium?\n\n**Options:**\n- **A**. 3:4\n- **B**. 2:3 ✅\n- **C**. 3:5\n- **D**. 4:5\n\n**Correct Answer:** null\n\n**Solution:**\nPQRS is an isosceles trapezium and it is inscribed in a circle so it is a cyclic isosceles trapezium.\nSo all the properties of a cyclic quadrilateral can be applied here.\nIn an isosceles trapezium, the non-parallel sides are equal.\nThe diagonals of an isosceles trapezium are equal, so PR = SQ\nFrom Ptolemy Theorem,\nPQ*SR+ PS*QR = PR*QS\n8*10 +8*8 = PR*PR\nPR = 12 cm\nThe possible ratio of one of the sides and the diagonal = 8:12, 10:12\n=2:3, 5:6\nB is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-9-22",
+      "passage_text": "",
+      "question_text": "A sum P is divided into two parts. The first part is compounded annually at 10% for 2 years and the second amount is given on a simple interest for 3 years at the rate 18% per annum. If the total final amount is 36% more than original sum then find the ratio in which the sum is divided?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7:6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6:5",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, amount = P \nAssuming they are divided into x and y. x+y =P.....(1)\nNow, x is given at compound rate at 10% for two years.\n=> x will become x(1.1)$^2$ = 1.21x\nSimilarly, y will become y(1+0.18*3) = 1.54y\nNow, 1.21x + 1.54y =1.36P .....(2)\nFrom 1 and 2, we get x= 6/11P and y=5/11P\nHence the required ratio = 6:5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA sum P is divided into two parts. The first part is compounded annually at 10% for 2 years and the second amount is given on a simple interest for 3 years at the rate 18% per annum. If the total final amount is 36% more than original sum then find the ratio in which the sum is divided?\n\n**Options:**\n- **A**. 3:4\n- **B**. 5:4\n- **C**. 7:6\n- **D**. 6:5 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, amount = P \nAssuming they are divided into x and y. x+y =P.....(1)\nNow, x is given at compound rate at 10% for two years.\n=> x will become x(1.1)$^2$ = 1.21x\nSimilarly, y will become y(1+0.18*3) = 1.54y\nNow, 1.21x + 1.54y =1.36P .....(2)\nFrom 1 and 2, we get x= 6/11P and y=5/11P\nHence the required ratio = 6:5"
+    }
+  ]
+}

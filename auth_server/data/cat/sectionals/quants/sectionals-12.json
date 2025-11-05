@@ -1,0 +1,699 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-12-1",
+      "passage_text": "",
+      "question_text": "A caterer got a contract to cook food for a one-day event. To make his signature dish, a caterer takes quantities of rice A, rice B and rice C in the ratio 2:2:1 respectively. The cost are ₹40/kg, ₹50/kg and ₹30/kg of rice A, rice B and rice C respectively. The rest of the ensemble in a plate costs the caterer ₹350/plate. The caterer has taken the utensils to prepare the food on rent at ₹5000/day and the wait staff costs him ₹20000/day. The event is for 250 people and the caterer wants to make a profit of 50% from the event. How much should he charge per plate to get his desired profit ? Assume that the total consumption of rice in the event will be 250 kgs.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "₹690",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "₹738",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "₹846",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "₹972",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "For this scenario, we need to find the total cost of the food borne by the caterer and divide it by the number of plates to arrive at the cost per plate. Here, we also need to add the cost of the utensils on rent as well as the cost of the wait staff involved.  \nSo, cost of 5 kgs of signature dish = (2 x 40)+(2 x 50)+(1 x 30) = ₹210 \nThus, cost of preparing 1 kg of the signature dish = $\\dfrac{210}{5} = ₹42$/kg \nTotal cost of the signature dish = 42 x 250 = ₹10500\nTotal cost of ensemble in the plate = 350 x 250 = ₹87500\nOverall cost of the event for the caterer = 10500+87500+5000+20000 = ₹123000\nThus, cost per plate to the caterer = $\\dfrac{123000}{250} = ₹492$/plate\nIf the caterer wants a profit of 50%, then the selling price of the plate = $(1 + \\frac{50}{100}) \\times 492$\n$ \\Rightarrow \\frac{3}{2} \\times 492 = ₹738$\nThus the caterer should price the food at ₹738/plate.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA caterer got a contract to cook food for a one-day event. To make his signature dish, a caterer takes quantities of rice A, rice B and rice C in the ratio 2:2:1 respectively. The cost are ₹40/kg, ₹50/kg and ₹30/kg of rice A, rice B and rice C respectively. The rest of the ensemble in a plate costs the caterer ₹350/plate. The caterer has taken the utensils to prepare the food on rent at ₹5000/day and the wait staff costs him ₹20000/day. The event is for 250 people and the caterer wants to make a profit of 50% from the event. How much should he charge per plate to get his desired profit ? Assume that the total consumption of rice in the event will be 250 kgs.\n\n**Options:**\n- **A**. ₹690\n- **B**. ₹738 ✅\n- **C**. ₹846\n- **D**. ₹972\n\n**Correct Answer:** null\n\n**Solution:**\nFor this scenario, we need to find the total cost of the food borne by the caterer and divide it by the number of plates to arrive at the cost per plate. Here, we also need to add the cost of the utensils on rent as well as the cost of the wait staff involved.  \nSo, cost of 5 kgs of signature dish = (2 x 40)+(2 x 50)+(1 x 30) = ₹210 \nThus, cost of preparing 1 kg of the signature dish = $\\dfrac{210}{5} = ₹42$/kg \nTotal cost of the signature dish = 42 x 250 = ₹10500\nTotal cost of ensemble in the plate = 350 x 250 = ₹87500\nOverall cost of the event for the caterer = 10500+87500+5000+20000 = ₹123000\nThus, cost per plate to the caterer = $\\dfrac{123000}{250} = ₹492$/plate\nIf the caterer wants a profit of 50%, then the selling price of the plate = $(1 + \\frac{50}{100}) \\times 492$\n$ \\Rightarrow \\frac{3}{2} \\times 492 = ₹738$\nThus the caterer should price the food at ₹738/plate."
+    },
+    {
+      "qid": "quant-sectionals-12-2",
+      "passage_text": "",
+      "question_text": "Train A starts from P towards Q and train B starts from Q towards P on two parallel rail tracks. Irrespective of the time at which train A starts it reaches Q at 7:00 PM. Similarly, B follows a strict schedule of reaching P at 5:00 PM. When A started at 1:00 PM and B started at 2:00 PM, both the trains met at R. After this meeting, train A took t minutes to reach Q. Find the value of t.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "150",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since train A travels the distance between P and Q in 6 hours and train B travels this distance in 3 hours. The ratio of their speed will be \n$\\frac{d\\times\\ 3}{6\\times\\ d}$ = 1:2 (d is the distance between P and Q)\nAssume the speed of A is v km/hr and the speed of B =  2v km/hr\nThen from 1 PM to 2 PM, A will travel v*1 = v km\nAssume train A is at point M, when it is 2:00 PM.\nAt this time train B starts.\nSo time taken to cover MR by A will be the time taken to cover QR by B. Assume this time is m hours.\n=> B covers RP in 3-m hours. (Total time taken to cover PQ = 3 hours)\n=> RP = 2v(3-m)  ....(1)\nNow, time taken by A to cover RP = time taken to cover PM + time taken to cover MR = 1 PM to 2 PM + m = 1+m\nHence, RP = v(1+m) .....(2)\nEquating 1 and 2, we get\n2v(3-m)=v(1+m)    => 6-2m=1+m   =>m=$\\frac{5}{3}$ hours\nTime taken by A to cover RQ = Total time - time taken to cover PM - Time taken to cover MR = 6-1-$\\frac{5}{3}$ = $\\frac{10}{3}$\nHence, t  = $\\frac{10}{3}\\times\\ 60\\ =\\ 200$ minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTrain A starts from P towards Q and train B starts from Q towards P on two parallel rail tracks. Irrespective of the time at which train A starts it reaches Q at 7:00 PM. Similarly, B follows a strict schedule of reaching P at 5:00 PM. When A started at 1:00 PM and B started at 2:00 PM, both the trains met at R. After this meeting, train A took t minutes to reach Q. Find the value of t.\n\n**Options:**\n- **A**. 100\n- **B**. 180\n- **C**. 200 ✅\n- **D**. 150\n\n**Correct Answer:** null\n\n**Solution:**\nSince train A travels the distance between P and Q in 6 hours and train B travels this distance in 3 hours. The ratio of their speed will be \n$\\frac{d\\times\\ 3}{6\\times\\ d}$ = 1:2 (d is the distance between P and Q)\nAssume the speed of A is v km/hr and the speed of B =  2v km/hr\nThen from 1 PM to 2 PM, A will travel v*1 = v km\nAssume train A is at point M, when it is 2:00 PM.\nAt this time train B starts.\nSo time taken to cover MR by A will be the time taken to cover QR by B. Assume this time is m hours.\n=> B covers RP in 3-m hours. (Total time taken to cover PQ = 3 hours)\n=> RP = 2v(3-m)  ....(1)\nNow, time taken by A to cover RP = time taken to cover PM + time taken to cover MR = 1 PM to 2 PM + m = 1+m\nHence, RP = v(1+m) .....(2)\nEquating 1 and 2, we get\n2v(3-m)=v(1+m)    => 6-2m=1+m   =>m=$\\frac{5}{3}$ hours\nTime taken by A to cover RQ = Total time - time taken to cover PM - Time taken to cover MR = 6-1-$\\frac{5}{3}$ = $\\frac{10}{3}$\nHence, t  = $\\frac{10}{3}\\times\\ 60\\ =\\ 200$ minutes"
+    },
+    {
+      "qid": "quant-sectionals-12-3",
+      "passage_text": "",
+      "question_text": "Raman has to distribute 18 identical pens among 4 of students Kiran, Kartik, Kamal and Kishor. He has to make sure that Kartik gets at least 3 and at most 8 pens. In how many ways this can be done?",
+      "options": [],
+      "correct_option_data": "596",
+      "solution_text": "Let 'a', 'b', 'c' and 'd' be the number of pens received by Kiran, Kartik, Kamal and Kishor respectively. \n$\\therefore$ a + b + c + d = 18.\nCase 1: When Kartik gets at least 3 pens. \nTo find out the number of ways when Kartik gets at least 9 pens we will have to replace c by c'+3. \n$\\therefore$ a + b + c' + 3 + d = 18\n$\\Rightarrow$ a + b + c' + d = 15\nHence, total number of ways so that Kartik gets at least 3 pens = (15+4-1)C(4-1) = 18C3.\nCase 2: When Kartik get at least 9 pens. \nTo find out the number of ways when Kartik gets at least 9 pens we will have to replace c by c'+9. \n$\\therefore$ a + b + c' + 9 + d = 18\n$\\Rightarrow$ a + b + c' + d = 9\nHence, total number of ways so that Kartik gets at least 9 pens = (9+4-1)C(4-1) = 12C3.\nTherefore, the total number of ways Kartik gets at least 3 and at most 8 pens = 18C3 - 12C3 = 816 - 220 = 596.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaman has to distribute 18 identical pens among 4 of students Kiran, Kartik, Kamal and Kishor. He has to make sure that Kartik gets at least 3 and at most 8 pens. In how many ways this can be done?\n\n**Options:**\n\n**Correct Answer:** 596\n\n**Solution:**\nLet 'a', 'b', 'c' and 'd' be the number of pens received by Kiran, Kartik, Kamal and Kishor respectively. \n$\\therefore$ a + b + c + d = 18.\nCase 1: When Kartik gets at least 3 pens. \nTo find out the number of ways when Kartik gets at least 9 pens we will have to replace c by c'+3. \n$\\therefore$ a + b + c' + 3 + d = 18\n$\\Rightarrow$ a + b + c' + d = 15\nHence, total number of ways so that Kartik gets at least 3 pens = (15+4-1)C(4-1) = 18C3.\nCase 2: When Kartik get at least 9 pens. \nTo find out the number of ways when Kartik gets at least 9 pens we will have to replace c by c'+9. \n$\\therefore$ a + b + c' + 9 + d = 18\n$\\Rightarrow$ a + b + c' + d = 9\nHence, total number of ways so that Kartik gets at least 9 pens = (9+4-1)C(4-1) = 12C3.\nTherefore, the total number of ways Kartik gets at least 3 and at most 8 pens = 18C3 - 12C3 = 816 - 220 = 596."
+    },
+    {
+      "qid": "quant-sectionals-12-4",
+      "passage_text": "",
+      "question_text": "A sells an object to B at a profit of 20% who sells it to C at a profit of 20%. C sells it to D at a loss of 10% who sells it to E at a loss of 12.5%. E sells the object back to A at no profit or loss. A sells it back to F at the same cost he bought it for in the first instance. If A makes a profit of Rs.33 in the process, find the initial cost price of the object.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "500",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "520",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "470",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "600",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost of the object for A be $x$\nSelling price of the object for A = Cost price of the object for B = $\\dfrac{6}{5} \\times x = \\dfrac{6x}{5}$ \nSelling price of the object for B = Cost price of the object for C = $\\dfrac{6x}{5} \\times \\dfrac{6}{5} = \\dfrac{36x}{25} $ \nSelling price of the object for C = Cost price of the object for D = $\\dfrac{36x}{25} \\times \\dfrac{9}{10} = \\dfrac{162x}{125} $ \nSelling price of the object for D = Cost price of the object for E = $\\dfrac{162x}{125} \\times \\dfrac{7}{8} = \\dfrac{567x}{500} $ \nSelling price of the object for E = Cost price of the object for A = $\\dfrac{567x}{500} $ \nSelling price of the object for A = Cost price of the object for F = $x$ \nTotal Profit made by A = Total amount of money earned - Total amount of money paid \n$ \\Rightarrow 33 = (\\dfrac{6x}{5}+x) - (\\dfrac{567x}{500} + x) $ \n$ \\Rightarrow 33 = \\dfrac{33x}{500} $ \n$ \\Rightarrow x = 33 \\times \\dfrac{500}{33} $ \n$ \\Rightarrow x = 500 $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA sells an object to B at a profit of 20% who sells it to C at a profit of 20%. C sells it to D at a loss of 10% who sells it to E at a loss of 12.5%. E sells the object back to A at no profit or loss. A sells it back to F at the same cost he bought it for in the first instance. If A makes a profit of Rs.33 in the process, find the initial cost price of the object.\n\n**Options:**\n- **A**. 500 ✅\n- **B**. 520\n- **C**. 470\n- **D**. 600\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost of the object for A be $x$\nSelling price of the object for A = Cost price of the object for B = $\\dfrac{6}{5} \\times x = \\dfrac{6x}{5}$ \nSelling price of the object for B = Cost price of the object for C = $\\dfrac{6x}{5} \\times \\dfrac{6}{5} = \\dfrac{36x}{25} $ \nSelling price of the object for C = Cost price of the object for D = $\\dfrac{36x}{25} \\times \\dfrac{9}{10} = \\dfrac{162x}{125} $ \nSelling price of the object for D = Cost price of the object for E = $\\dfrac{162x}{125} \\times \\dfrac{7}{8} = \\dfrac{567x}{500} $ \nSelling price of the object for E = Cost price of the object for A = $\\dfrac{567x}{500} $ \nSelling price of the object for A = Cost price of the object for F = $x$ \nTotal Profit made by A = Total amount of money earned - Total amount of money paid \n$ \\Rightarrow 33 = (\\dfrac{6x}{5}+x) - (\\dfrac{567x}{500} + x) $ \n$ \\Rightarrow 33 = \\dfrac{33x}{500} $ \n$ \\Rightarrow x = 33 \\times \\dfrac{500}{33} $ \n$ \\Rightarrow x = 500 $"
+    },
+    {
+      "qid": "quant-sectionals-12-5",
+      "passage_text": "",
+      "question_text": "Manoj's age is 3 times his son's age and 15 times his grandson's age. Manoj's father is 20 years older than him and the mean age of all the four family members is 50. If Manoj's father expired five years later, what is the mean age of the remaining members of the family at that time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "45 years",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Manoj's age is 3 times his son, and 15 time his grandson.\nGrandson's age= x\nManoj's age =15x\nSon's age =5x\nManoj's father's age =15x+20\nThe mean age of all the four family members = 50. \nx + 15x+5x+15x+20= 50*4\n36x=180\nx=5\nGrandson's age= 5\nManoj's age =75\nSon's age = 25\nManoj's father's age = 95 \nThe mean age after 5 years= (10+80+30)/3 = 40 years",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nManoj's age is 3 times his son's age and 15 times his grandson's age. Manoj's father is 20 years older than him and the mean age of all the four family members is 50. If Manoj's father expired five years later, what is the mean age of the remaining members of the family at that time?\n\n**Options:**\n- **A**. 30 years\n- **B**. 50 years\n- **C**. 40 years ✅\n- **D**. 45 years\n\n**Correct Answer:** null\n\n**Solution:**\nManoj's age is 3 times his son, and 15 time his grandson.\nGrandson's age= x\nManoj's age =15x\nSon's age =5x\nManoj's father's age =15x+20\nThe mean age of all the four family members = 50. \nx + 15x+5x+15x+20= 50*4\n36x=180\nx=5\nGrandson's age= 5\nManoj's age =75\nSon's age = 25\nManoj's father's age = 95 \nThe mean age after 5 years= (10+80+30)/3 = 40 years"
+    },
+    {
+      "qid": "quant-sectionals-12-6",
+      "passage_text": "",
+      "question_text": "Two friends P and Q have a certain amount of money with them in denominations of Rs 2 and Rs 5. The total number of coins with P and Q are 21 and 22 respectively. The amount of money with P is Rs 20 less than that with Q. The total value of money in the denomination of Rs 5 is 90. Find the ratio of the number of Rs 2 coins with P to that of Rs 5 coins with Q.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the number of Rs 2 coins with P = p, then the number of Rs 5 coins = 21-p\nAmount of money with P = 2p+5(21-p) = 105-3p\nAssuming the number of Rs 2 coins with Q = q, then the number of Rs 5 coins = 22-q\nAmount of money with Q = 2q+5(22-q) = 110-3q\nThe amount of money with P is Rs 20 less than that with Q.\n=> 110-3q-(105-3p) = 5-3q+3p =20\n=> 3p-3q = 15\n=> p-q = 5......(1)\nTotal value of money in denomination of Rs 5 = 90\nHence the total number of Rs 5 coins = 90/5 = 18 which is also equal to 21-p+22-q\n=> 43-p-q=18  =>p+q = 25 ....(2)\nFrom 1 and 2, p =15, q = 10\nRequired ratio = $\\frac{p}{22-q}=\\frac{15}{22-10}=\\frac{5}{4}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo friends P and Q have a certain amount of money with them in denominations of Rs 2 and Rs 5. The total number of coins with P and Q are 21 and 22 respectively. The amount of money with P is Rs 20 less than that with Q. The total value of money in the denomination of Rs 5 is 90. Find the ratio of the number of Rs 2 coins with P to that of Rs 5 coins with Q.\n\n**Options:**\n- **A**. 4:3\n- **B**. 5:3\n- **C**. 3:2\n- **D**. 5:4 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the number of Rs 2 coins with P = p, then the number of Rs 5 coins = 21-p\nAmount of money with P = 2p+5(21-p) = 105-3p\nAssuming the number of Rs 2 coins with Q = q, then the number of Rs 5 coins = 22-q\nAmount of money with Q = 2q+5(22-q) = 110-3q\nThe amount of money with P is Rs 20 less than that with Q.\n=> 110-3q-(105-3p) = 5-3q+3p =20\n=> 3p-3q = 15\n=> p-q = 5......(1)\nTotal value of money in denomination of Rs 5 = 90\nHence the total number of Rs 5 coins = 90/5 = 18 which is also equal to 21-p+22-q\n=> 43-p-q=18  =>p+q = 25 ....(2)\nFrom 1 and 2, p =15, q = 10\nRequired ratio = $\\frac{p}{22-q}=\\frac{15}{22-10}=\\frac{5}{4}$"
+    },
+    {
+      "qid": "quant-sectionals-12-7",
+      "passage_text": "",
+      "question_text": "Ram and Shyam started running to and fro on a straight track AB from point A at the same time, each of them running with a constant speed throughout.Their first meet took place at a point P located at 960m from A and their second meet took place at a point Q located at 720m from B. They were going in opposite directions when they met for the second time. Find the distance of the point from B where they meet for the sixth time.",
+      "options": [],
+      "correct_option_data": "240",
+      "solution_text": "Let their speeds be V1 &V2 and AB be S metres\nNow when they meet for the first time, the distances covered by them would be 960 metres and 2S-960 metres \nNow we know that ratio of speeds = ratio of distances (as time is constant)\nTherefore $\\frac{V1}{V2}=\\frac{960}{2S-960}$ (1)\nNow, similarly when they meet for the 2nd time, the distances covered by them would be S+720metres and 3S-720metres\nnow their speed ratio would be :$\\frac{V1}{V2}=\\frac{S+720}{3S-720}$ (2)\nNow we can equate both equations 1 & 2 as speed ratio will be same \nTherefore we get $\\frac{960}{2s-960}=\\frac{S+720}{3S-720}$\nsolving we get S =1200 \nTherefore $\\frac{V1}{V2}=\\frac{960}{1440}$=$\\frac{2}{3}$\nNow when they meet for the 6th time total distance covered by them would be $\\left(12\\times\\ 1200\\right)$\n(as for every 1 meet they cover 2S=2*1200 metres together)\nTherefore Distance covered by one which is slower =$\\frac{2}{5}\\times\\ 1200\\times\\ 12$=5760metres\nNow 5760=4800+960\nTherefore meet will take place at 960metres from A or 1200-960=240metres from B \nHence answer is 240metres from B",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam and Shyam started running to and fro on a straight track AB from point A at the same time, each of them running with a constant speed throughout.Their first meet took place at a point P located at 960m from A and their second meet took place at a point Q located at 720m from B. They were going in opposite directions when they met for the second time. Find the distance of the point from B where they meet for the sixth time.\n\n**Options:**\n\n**Correct Answer:** 240\n\n**Solution:**\nLet their speeds be V1 &V2 and AB be S metres\nNow when they meet for the first time, the distances covered by them would be 960 metres and 2S-960 metres \nNow we know that ratio of speeds = ratio of distances (as time is constant)\nTherefore $\\frac{V1}{V2}=\\frac{960}{2S-960}$ (1)\nNow, similarly when they meet for the 2nd time, the distances covered by them would be S+720metres and 3S-720metres\nnow their speed ratio would be :$\\frac{V1}{V2}=\\frac{S+720}{3S-720}$ (2)\nNow we can equate both equations 1 & 2 as speed ratio will be same \nTherefore we get $\\frac{960}{2s-960}=\\frac{S+720}{3S-720}$\nsolving we get S =1200 \nTherefore $\\frac{V1}{V2}=\\frac{960}{1440}$=$\\frac{2}{3}$\nNow when they meet for the 6th time total distance covered by them would be $\\left(12\\times\\ 1200\\right)$\n(as for every 1 meet they cover 2S=2*1200 metres together)\nTherefore Distance covered by one which is slower =$\\frac{2}{5}\\times\\ 1200\\times\\ 12$=5760metres\nNow 5760=4800+960\nTherefore meet will take place at 960metres from A or 1200-960=240metres from B \nHence answer is 240metres from B"
+    },
+    {
+      "qid": "quant-sectionals-12-8",
+      "passage_text": "",
+      "question_text": "In triangle PQR; $p,\\ q,\\ r$ are the sides opposite to the vertices $P,\\ Q,\\ R$ respectively.\n\nIf $\\frac{1}{p+r}+\\frac{1}{q+r}=\\frac{3}{p+q+r}$, then tan(R) equals",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{\\sqrt{\\ 3}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{3}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\ 3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given equation is $\\frac{1}{p+r}+\\frac{1}{q+r}=\\frac{3}{p+q+r}$\n=> $\\frac{\\left(p+q+2r\\right)}{\\left(p+r\\right)\\left(q+r\\right)}=\\frac{3}{p+q+r}$\n=> $\\left(p+q+2r\\right)\\left(p+q+r\\right)=3\\left(p+r\\right)\\left(q+r\\right)$\n=> $\\left(p+q\\right)^2+3r\\left(p+q\\right)+2r^2=3\\left(pq+pr+qr+r^2\\right)$\n=> $p^2+q^2-r^2=pq$\n=> $\\frac{\\left(p^2+q^2-r^2\\right)}{2pq}=\\frac{1}{2}=\\cos\\left(R\\right)$\n=> $R=60^{\\circ\\ }$\n=> $\\tan\\left(R\\right)=\\sqrt{\\ 3}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn triangle PQR; $p,\\ q,\\ r$ are the sides opposite to the vertices $P,\\ Q,\\ R$ respectively.\n\nIf $\\frac{1}{p+r}+\\frac{1}{q+r}=\\frac{3}{p+q+r}$, then tan(R) equals\n\n**Options:**\n- **A**. $\\frac{1}{\\sqrt{\\ 3}}$\n- **B**. $\\frac{3}{4}$\n- **C**. $\\sqrt{\\ 3}$ ✅\n- **D**. 1\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation is $\\frac{1}{p+r}+\\frac{1}{q+r}=\\frac{3}{p+q+r}$\n=> $\\frac{\\left(p+q+2r\\right)}{\\left(p+r\\right)\\left(q+r\\right)}=\\frac{3}{p+q+r}$\n=> $\\left(p+q+2r\\right)\\left(p+q+r\\right)=3\\left(p+r\\right)\\left(q+r\\right)$\n=> $\\left(p+q\\right)^2+3r\\left(p+q\\right)+2r^2=3\\left(pq+pr+qr+r^2\\right)$\n=> $p^2+q^2-r^2=pq$\n=> $\\frac{\\left(p^2+q^2-r^2\\right)}{2pq}=\\frac{1}{2}=\\cos\\left(R\\right)$\n=> $R=60^{\\circ\\ }$\n=> $\\tan\\left(R\\right)=\\sqrt{\\ 3}$"
+    },
+    {
+      "qid": "quant-sectionals-12-9",
+      "passage_text": "",
+      "question_text": "If $p^{q^r}\\ =\\ 6561$ where p,q, r are positive integers, then the minimum possible value of p+q+r is",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "6561 = $6561^1, 81^{2^1}, 9^{4^1}, 9^{2^2}, 3^{8^1}, 3^{2^3}$\nThe minimum value of p+q+r - 3+2+3 = 8\n8 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $p^{q^r}\\ =\\ 6561$ where p,q, r are positive integers, then the minimum possible value of p+q+r is\n\n**Options:**\n\n**Correct Answer:** 8\n\n**Solution:**\n6561 = $6561^1, 81^{2^1}, 9^{4^1}, 9^{2^2}, 3^{8^1}, 3^{2^3}$\nThe minimum value of p+q+r - 3+2+3 = 8\n8 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-12-10",
+      "passage_text": "",
+      "question_text": "The ratio of the total surface area to the lateral surface area of an equilateral triangular prism is 3:1. What is the ratio of the height of the prism to the side of its base?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$4\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$1:4\\sqrt{\\ 3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the side of the base be a units and height of the prism be h units\nTSA = perimeter of the base * height + 2*area of the base = 3ah + $\\frac{\\sqrt{\\ 3}}{2}a^2$\nLSA = perimeter of the base * height = 3ah\n$\\frac{TSA}{LSA}=\\frac{\\left(3ah+\\frac{\\sqrt{\\ 3}}{2}a^2\\right)}{3ah}$ = 3\n=> $1+\\frac{a}{2\\sqrt{\\ 3}h}=3$\n=>$\\frac{a}{h}=4\\sqrt{\\ 3}$\nHence$\\frac{h}{a}=1:4\\sqrt{\\ 3}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe ratio of the total surface area to the lateral surface area of an equilateral triangular prism is 3:1. What is the ratio of the height of the prism to the side of its base?\n\n**Options:**\n- **A**. 1:4\n- **B**. $2\\sqrt{\\ 3}:1$\n- **C**. $4\\sqrt{\\ 3}:1$\n- **D**. $1:4\\sqrt{\\ 3}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the side of the base be a units and height of the prism be h units\nTSA = perimeter of the base * height + 2*area of the base = 3ah + $\\frac{\\sqrt{\\ 3}}{2}a^2$\nLSA = perimeter of the base * height = 3ah\n$\\frac{TSA}{LSA}=\\frac{\\left(3ah+\\frac{\\sqrt{\\ 3}}{2}a^2\\right)}{3ah}$ = 3\n=> $1+\\frac{a}{2\\sqrt{\\ 3}h}=3$\n=>$\\frac{a}{h}=4\\sqrt{\\ 3}$\nHence$\\frac{h}{a}=1:4\\sqrt{\\ 3}$"
+    },
+    {
+      "qid": "quant-sectionals-12-11",
+      "passage_text": "",
+      "question_text": "How many pairs of solutions, (x,y) exist for x + |y| = 10 and |x| + y= 2 ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Case 1 : x > 0 and y>0\nx + y = 10 and x + y = 2\nNo solution.\nCase 2 : x> 0 and y < 0\nx - y = 10 and x + y = 2\n(6, -4)\nCase 3 : x < 0 and y < 0\nx - y = 10 and y - x = 2 \nNo solution.\nCase 4 : x < 0 and y > 0\nx + y = 10 and y - x = 2\nx = 4 and y = 6\nNot possible.\nHence, only one solution. Option C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many pairs of solutions, (x,y) exist for x + |y| = 10 and |x| + y= 2 ?\n\n**Options:**\n- **A**. 2\n- **B**. 0\n- **C**. 1 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nCase 1 : x > 0 and y>0\nx + y = 10 and x + y = 2\nNo solution.\nCase 2 : x> 0 and y < 0\nx - y = 10 and x + y = 2\n(6, -4)\nCase 3 : x < 0 and y < 0\nx - y = 10 and y - x = 2 \nNo solution.\nCase 4 : x < 0 and y > 0\nx + y = 10 and y - x = 2\nx = 4 and y = 6\nNot possible.\nHence, only one solution. Option C"
+    },
+    {
+      "qid": "quant-sectionals-12-12",
+      "passage_text": "",
+      "question_text": "For a given function $f(x)=px^2-qx+r$, $f(-1)=0$ and $f(0)=2$. If $f(x)=0$ has real and distinct roots, then which of the following is true about $’q’$ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$q\\in(-\\infty,\\infty)-\\left\\{-4\\right\\}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$q\\in [-4,4]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$q\\in(-\\infty,-4]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$q\\in (-\\infty,-4] \\cup [4,\\infty)$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given, $f(x)=px^2-qx+r$\n$f(-1)=0$\n=> $p(-1)^2-q(-1)+r=0$\n=> $p+q+r=0$ _______(1)\nAlso, $f(0)=2$\n=> $p(0)^2-q(0)+r=2$\n=> $r=2$\nOn substituting $r=2$ in (1) we have\n$p+q=-2$\n=> $p=-(q+2)$\nNow, $f(x)=0$\n=> $px^2-qx+r=0$\n=> $-(q+2)x^2-qx+2=0$\nFor real and distinct solutions $D>0$\n$q^2+8(q+2)>0$\n=> $(q+4)^2>0$\nThe above inequality is satisfied for all values of $q$ except -4.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor a given function $f(x)=px^2-qx+r$, $f(-1)=0$ and $f(0)=2$. If $f(x)=0$ has real and distinct roots, then which of the following is true about $’q’$ ?\n\n**Options:**\n- **A**. $q\\in(-\\infty,\\infty)-\\left\\{-4\\right\\}$ ✅\n- **B**. $q\\in [-4,4]$\n- **C**. $q\\in(-\\infty,-4]$\n- **D**. $q\\in (-\\infty,-4] \\cup [4,\\infty)$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, $f(x)=px^2-qx+r$\n$f(-1)=0$\n=> $p(-1)^2-q(-1)+r=0$\n=> $p+q+r=0$ _______(1)\nAlso, $f(0)=2$\n=> $p(0)^2-q(0)+r=2$\n=> $r=2$\nOn substituting $r=2$ in (1) we have\n$p+q=-2$\n=> $p=-(q+2)$\nNow, $f(x)=0$\n=> $px^2-qx+r=0$\n=> $-(q+2)x^2-qx+2=0$\nFor real and distinct solutions $D>0$\n$q^2+8(q+2)>0$\n=> $(q+4)^2>0$\nThe above inequality is satisfied for all values of $q$ except -4."
+    },
+    {
+      "qid": "quant-sectionals-12-13",
+      "passage_text": "",
+      "question_text": "If Ram borrows money from a bank at 15% simple interest and deposits it in another bank that offers compound interest at the rate of 10% per annum and 20% per annum for alternate years starting with 10%. What is his profit in 4 years as a percentage of the money borrowed initially?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "14.24 %",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16.75 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12.90 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "11.45 %",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the amount be P.\nHence, SI = 0.15 x 4 P = 0.6P\nCI = P(1.1)(1.2)(1.1)(1.2) - P = 0.7424P\nHence, his profit = CI - SI = 0.1424P\nPercentage = 14.24%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf Ram borrows money from a bank at 15% simple interest and deposits it in another bank that offers compound interest at the rate of 10% per annum and 20% per annum for alternate years starting with 10%. What is his profit in 4 years as a percentage of the money borrowed initially?\n\n**Options:**\n- **A**. 14.24 % ✅\n- **B**. 16.75 %\n- **C**. 12.90 %\n- **D**. 11.45 %\n\n**Correct Answer:** null\n\n**Solution:**\nLet the amount be P.\nHence, SI = 0.15 x 4 P = 0.6P\nCI = P(1.1)(1.2)(1.1)(1.2) - P = 0.7424P\nHence, his profit = CI - SI = 0.1424P\nPercentage = 14.24%"
+    },
+    {
+      "qid": "quant-sectionals-12-14",
+      "passage_text": "",
+      "question_text": "A starts running from a point X in a straight line at a speed of 21.6 km/hr. After 30 seconds, B starts running from X in the same direction as A. Speed of A is 20% more than the speed of B. 90 seconds after B started running from X, C starts from X with a speed 40% more than that of B. What is the difference between the time when C overtakes B and when C overtakes A ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7 mins 45 secs",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8 mins 15 secs",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6 mins 15 secs",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5 mins 30 secs",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the speeds of A,B,C be $a$,$b$,$c$ respectively. \nHere, $a = 21.6 = \\dfrac{108}{5} \\times \\dfrac{5}{18} = 6$ m/s \nWe know that, $b + \\dfrac{b}{5} = a \\Rightarrow b = a \\times \\dfrac{5}{6} $ \n$ \\Rightarrow b = 6 \\times \\dfrac{5}{6} = 5$m/s\nNow, $c = \\dfrac{7}{5} \\times b = 7$m/s \nC starts 90 seconds after B which is 30+90 = 120 seconds after A. \nWhen C starts, distance covered by A = 120 x 6 = 720 m \nWhen C starts, distance covered by B = 90 x 5 = 450 m \nRelative speed of C and B = 7-5 = 2 m/s \nTime taken by C to overtake B = $\\dfrac{450}{2} $ = 225 seconds \nRelative speed of C and A = 7-6 = 1 m/s \nTime taken by C to overtake A = $\\dfrac{720}{1} $ = 720 seconds \nDifference between the two times = 720 - 225 = 495 seconds = 8 mins 15 secs",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA starts running from a point X in a straight line at a speed of 21.6 km/hr. After 30 seconds, B starts running from X in the same direction as A. Speed of A is 20% more than the speed of B. 90 seconds after B started running from X, C starts from X with a speed 40% more than that of B. What is the difference between the time when C overtakes B and when C overtakes A ?\n\n**Options:**\n- **A**. 7 mins 45 secs\n- **B**. 8 mins 15 secs ✅\n- **C**. 6 mins 15 secs\n- **D**. 5 mins 30 secs\n\n**Correct Answer:** null\n\n**Solution:**\nLet the speeds of A,B,C be $a$,$b$,$c$ respectively. \nHere, $a = 21.6 = \\dfrac{108}{5} \\times \\dfrac{5}{18} = 6$ m/s \nWe know that, $b + \\dfrac{b}{5} = a \\Rightarrow b = a \\times \\dfrac{5}{6} $ \n$ \\Rightarrow b = 6 \\times \\dfrac{5}{6} = 5$m/s\nNow, $c = \\dfrac{7}{5} \\times b = 7$m/s \nC starts 90 seconds after B which is 30+90 = 120 seconds after A. \nWhen C starts, distance covered by A = 120 x 6 = 720 m \nWhen C starts, distance covered by B = 90 x 5 = 450 m \nRelative speed of C and B = 7-5 = 2 m/s \nTime taken by C to overtake B = $\\dfrac{450}{2} $ = 225 seconds \nRelative speed of C and A = 7-6 = 1 m/s \nTime taken by C to overtake A = $\\dfrac{720}{1} $ = 720 seconds \nDifference between the two times = 720 - 225 = 495 seconds = 8 mins 15 secs"
+    },
+    {
+      "qid": "quant-sectionals-12-15",
+      "passage_text": "",
+      "question_text": "The sum of an infinite geometric progression is 5. If all the terms are of the GP are raised to the power 3, the sum of resulting series is 375. Then the common ratio of the GP is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "-1/2",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2/3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-2/5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the first term = a and the common ratio = r.\nThe sum = a/(1-r) = 5 ....(1)\nNow after raising to the power 3, sum = a$^{3}$/(1-r$^{3}$) = 375 ....(2)\nAfter raising both sides of (1) to the power 3 and dividing by (2), we get\n(1+r+r$^{2}$)/(1-2r+r$^{2}$) = 1/3\n=> 3+3r+3r$^{2}$ = 1-2r+r$^{2}$\n=> 2r$^{2}$+5r+2=0\n=> r=-1/2  or r=-2, \nSince GP is infinite, hence r=-2 will be rejected.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of an infinite geometric progression is 5. If all the terms are of the GP are raised to the power 3, the sum of resulting series is 375. Then the common ratio of the GP is\n\n**Options:**\n- **A**. -1/2 ✅\n- **B**. 1/5\n- **C**. 2/3\n- **D**. -2/5\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the first term = a and the common ratio = r.\nThe sum = a/(1-r) = 5 ....(1)\nNow after raising to the power 3, sum = a$^{3}$/(1-r$^{3}$) = 375 ....(2)\nAfter raising both sides of (1) to the power 3 and dividing by (2), we get\n(1+r+r$^{2}$)/(1-2r+r$^{2}$) = 1/3\n=> 3+3r+3r$^{2}$ = 1-2r+r$^{2}$\n=> 2r$^{2}$+5r+2=0\n=> r=-1/2  or r=-2, \nSince GP is infinite, hence r=-2 will be rejected."
+    },
+    {
+      "qid": "quant-sectionals-12-16",
+      "passage_text": "",
+      "question_text": "ABCD is a square with M, L as the midpoints of AD and AB respectively, whereas the centre of the square is O. A circle C1 is inscribed in the square ABCD. Another circle C2 is drawn such that it touches the lines MO, LO and the circle C1. What is the ratio of the area of C2 to the area of the square ABCD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{\\pi\\ }{4\\left(3+2\\sqrt{\\ 2}\\right)}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{\\pi\\ }{8\\left(3+2\\sqrt{\\ 2}\\right)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{\\pi\\ }{4\\left(5+2\\sqrt{\\ 2}\\right)}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{\\pi\\ }{8\\left(1+\\sqrt{\\ 2}\\right)}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the sides of the square be 2a, and the radius of the circle C2= r.\nWe can draw the following diagram.\nRadius of the circle C1=a\nPO= LO= a\nPO = r + r$\\sqrt{\\ 2}$\na= $r\\left(1+\\sqrt{\\ 2}\\right)$\nThe ratio of the area of C2 to the area of the square ABCD= $\\frac{\\pi\\ r^2}{\\left(2a\\right)^2}$\n=$\\frac{\\pi\\ r^2}{4\\left(r\\left(\\sqrt{\\ 2}+1\\right)\\right)^2}$\n=$\\frac{\\pi\\ }{4\\left(3+2\\sqrt{\\ 2}\\right)}$\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCD is a square with M, L as the midpoints of AD and AB respectively, whereas the centre of the square is O. A circle C1 is inscribed in the square ABCD. Another circle C2 is drawn such that it touches the lines MO, LO and the circle C1. What is the ratio of the area of C2 to the area of the square ABCD?\n\n**Options:**\n- **A**. $\\frac{\\pi\\ }{4\\left(3+2\\sqrt{\\ 2}\\right)}$ ✅\n- **B**. $\\frac{\\pi\\ }{8\\left(3+2\\sqrt{\\ 2}\\right)}$\n- **C**. $\\frac{\\pi\\ }{4\\left(5+2\\sqrt{\\ 2}\\right)}$\n- **D**. $\\frac{\\pi\\ }{8\\left(1+\\sqrt{\\ 2}\\right)}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet the sides of the square be 2a, and the radius of the circle C2= r.\nWe can draw the following diagram.\nRadius of the circle C1=a\nPO= LO= a\nPO = r + r$\\sqrt{\\ 2}$\na= $r\\left(1+\\sqrt{\\ 2}\\right)$\nThe ratio of the area of C2 to the area of the square ABCD= $\\frac{\\pi\\ r^2}{\\left(2a\\right)^2}$\n=$\\frac{\\pi\\ r^2}{4\\left(r\\left(\\sqrt{\\ 2}+1\\right)\\right)^2}$\n=$\\frac{\\pi\\ }{4\\left(3+2\\sqrt{\\ 2}\\right)}$\nOption A"
+    },
+    {
+      "qid": "quant-sectionals-12-17",
+      "passage_text": "",
+      "question_text": "ABCD is an isosceles trapezium with angle A =$45^0$ and the length of one of the non-parallel sides are 10$\\sqrt{2}$, and the area of ABD is 200 sq. Units. What is the sum of the lengths of the parallel sides.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "30",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given ABCD is an isosceles trapezium, so the length of the non-parallel sides is equal.\nAnd area of the triangle ABD is 200 sq units.\n$\\frac{1}{2}$*AD*AB $sin\\theta$ = 200\n$\\frac{1}{2}$*10$\\sqrt{2}$*AB$\\sin45^0$ = 200\nAB=40 units\nNow let us draw a perpendicular from vertices C and D to AB,\nThe lengths of AP and PD should be equal, (A =$45^0$)\n$AP^2 + PD^2$ = 200\n2 $AP^2$ = 200\nAP = 10 units \nThe length of AP and BQ is same,\nBQ = 10 units \nCD = AB - (AP + BQ)\n40-20 = 20 units\nSum of the lengths of the parallel sides = 40+20 = 60 units",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCD is an isosceles trapezium with angle A =$45^0$ and the length of one of the non-parallel sides are 10$\\sqrt{2}$, and the area of ABD is 200 sq. Units. What is the sum of the lengths of the parallel sides.\n\n**Options:**\n- **A**. 60 ✅\n- **B**. 50\n- **C**. 40\n- **D**. 30\n\n**Correct Answer:** null\n\n**Solution:**\nGiven ABCD is an isosceles trapezium, so the length of the non-parallel sides is equal.\nAnd area of the triangle ABD is 200 sq units.\n$\\frac{1}{2}$*AD*AB $sin\\theta$ = 200\n$\\frac{1}{2}$*10$\\sqrt{2}$*AB$\\sin45^0$ = 200\nAB=40 units\nNow let us draw a perpendicular from vertices C and D to AB,\nThe lengths of AP and PD should be equal, (A =$45^0$)\n$AP^2 + PD^2$ = 200\n2 $AP^2$ = 200\nAP = 10 units \nThe length of AP and BQ is same,\nBQ = 10 units \nCD = AB - (AP + BQ)\n40-20 = 20 units\nSum of the lengths of the parallel sides = 40+20 = 60 units"
+    },
+    {
+      "qid": "quant-sectionals-12-18",
+      "passage_text": "",
+      "question_text": "A tank has 8 filling pipes and 8 draining pipes. All the filling pipes fill at the same rate, while all the draining pipes drain at the same rate. If all 16 pipes are on, the tank will get filled in 30 hours. If 5 pipes of one type are on and 3 pipes of another are on it will take 10 hours. What is the approximate time it will take to fill the tank if 4 draining pipes are on and 5 filling pipes are on?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16 hours 13 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16 hours 33 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the efficiency of filling pipes be 'x' and the efficiency of draining pipes be '-y'.\nIn the first case, \nCapacity of tank = (8x - 8y) * 30..........(i)\nIn the second case,\nCapacity of tank = (5x - 3y) * 10.....(ii)\nOr Capacity of tank = (3x - 5y) * 10.....(iii)\nCase 1: On equating (i) and (ii), we get\n(8x - 8y) * 30 = (5x - 3y) * 10\nor, 24x - 24y = 5x - 3y\nor, 19x = 21y\nCase 2: On equating (i) and (iii), we get\n(8x - 8y) * 30 = (3x - 5y) * 10\nor, 24x - 24y = 3x - 5y\nor, 21x = 19y\nThis case is not possible since draining pipes drain faster than filling pipes. In this case, if an equal number of draining and filling pipes were on the tank would never be filled. However, it is given in the question that when 8 draining pipes and 8 filling pipes are on the tank fills in 30 hours. \nSo, consider only the first case.\nCapacity of the tank = (8x - 8y) * 30 = ($\\frac{21}{19}$y - y) * 240 = $\\frac{480}{19}$y\nNet efficiency of 5 filling and 4 draining pipes = (5x - 4y) = (5$\\frac{21}{19}$y - 4y) = $\\frac{29}{19}y$\nTime required = $\\dfrac{\\text{480y}}{\\text{29y}}$ hours\n= 16 hours and 33 minutes.\nHence, Option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank has 8 filling pipes and 8 draining pipes. All the filling pipes fill at the same rate, while all the draining pipes drain at the same rate. If all 16 pipes are on, the tank will get filled in 30 hours. If 5 pipes of one type are on and 3 pipes of another are on it will take 10 hours. What is the approximate time it will take to fill the tank if 4 draining pipes are on and 5 filling pipes are on?\n\n**Options:**\n- **A**. 16 hours\n- **B**. 16 hours 13 minutes\n- **C**. 16 hours 33 minutes ✅\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of filling pipes be 'x' and the efficiency of draining pipes be '-y'.\nIn the first case, \nCapacity of tank = (8x - 8y) * 30..........(i)\nIn the second case,\nCapacity of tank = (5x - 3y) * 10.....(ii)\nOr Capacity of tank = (3x - 5y) * 10.....(iii)\nCase 1: On equating (i) and (ii), we get\n(8x - 8y) * 30 = (5x - 3y) * 10\nor, 24x - 24y = 5x - 3y\nor, 19x = 21y\nCase 2: On equating (i) and (iii), we get\n(8x - 8y) * 30 = (3x - 5y) * 10\nor, 24x - 24y = 3x - 5y\nor, 21x = 19y\nThis case is not possible since draining pipes drain faster than filling pipes. In this case, if an equal number of draining and filling pipes were on the tank would never be filled. However, it is given in the question that when 8 draining pipes and 8 filling pipes are on the tank fills in 30 hours. \nSo, consider only the first case.\nCapacity of the tank = (8x - 8y) * 30 = ($\\frac{21}{19}$y - y) * 240 = $\\frac{480}{19}$y\nNet efficiency of 5 filling and 4 draining pipes = (5x - 4y) = (5$\\frac{21}{19}$y - 4y) = $\\frac{29}{19}y$\nTime required = $\\dfrac{\\text{480y}}{\\text{29y}}$ hours\n= 16 hours and 33 minutes.\nHence, Option C is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-12-19",
+      "passage_text": "",
+      "question_text": "If the value of x is greater than 1, what is the least value of the expression $\\log_2x\\ -3\\log_x0.125$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\log_2x\\ -3\\log_x0.125$ = $\\log_2x\\ -\\ 3\\log_x2^{-3}$\n= $\\log_2x\\ +\\ 9\\log_x2$\nUsing AM-GM,\n$\\ \\frac{\\ \\log_2x\\ +\\ 9\\log_x2}{2}$ $\\ \\ge\\ $ $\\left(\\log_2x\\ \\times\\ 9\\log_x2\\right)^{\\ \\frac{\\ 1}{2}}$  = 3\n=> $\\log_2x\\ +\\ 9\\log_x2$ $\\ \\ge\\ $ 6",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the value of x is greater than 1, what is the least value of the expression $\\log_2x\\ -3\\log_x0.125$?\n\n**Options:**\n- **A**. 4\n- **B**. 3\n- **C**. 6 ✅\n- **D**. 2\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log_2x\\ -3\\log_x0.125$ = $\\log_2x\\ -\\ 3\\log_x2^{-3}$\n= $\\log_2x\\ +\\ 9\\log_x2$\nUsing AM-GM,\n$\\ \\frac{\\ \\log_2x\\ +\\ 9\\log_x2}{2}$ $\\ \\ge\\ $ $\\left(\\log_2x\\ \\times\\ 9\\log_x2\\right)^{\\ \\frac{\\ 1}{2}}$  = 3\n=> $\\log_2x\\ +\\ 9\\log_x2$ $\\ \\ge\\ $ 6"
+    },
+    {
+      "qid": "quant-sectionals-12-20",
+      "passage_text": "",
+      "question_text": "The densities of three elements A, B, C are 5, 10 and 15 gm/ml respectively. A and B are mixed in equal ratio by volume to form a compound D. C and D are mixed in some weight ratio to form a compound E. If the density of E is 10 gm/ml, calculate the weight ratio in which C and D are mixed.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A and B are mixed in equal volumes, that is, in a 1:1 ratio.$\\frac{\\left(5+10\\right)}{2}=7.5$\nSo the density of D is 7.5 gm/ml. Let the ratio of C and D by volume be x:1 =>$\\frac{\\left(15x+7.5\\right)}{(x+1)}=10$ => x = 1/2. Therefore, the weight ratio is $\\frac{1}{2}\\cdot15:1\\cdot7.5$ = 1:1.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe densities of three elements A, B, C are 5, 10 and 15 gm/ml respectively. A and B are mixed in equal ratio by volume to form a compound D. C and D are mixed in some weight ratio to form a compound E. If the density of E is 10 gm/ml, calculate the weight ratio in which C and D are mixed.\n\n**Options:**\n- **A**. 2:3\n- **B**. 1:1 ✅\n- **C**. 1:2\n- **D**. 5:3\n\n**Correct Answer:** null\n\n**Solution:**\nA and B are mixed in equal volumes, that is, in a 1:1 ratio.$\\frac{\\left(5+10\\right)}{2}=7.5$\nSo the density of D is 7.5 gm/ml. Let the ratio of C and D by volume be x:1 =>$\\frac{\\left(15x+7.5\\right)}{(x+1)}=10$ => x = 1/2. Therefore, the weight ratio is $\\frac{1}{2}\\cdot15:1\\cdot7.5$ = 1:1."
+    },
+    {
+      "qid": "quant-sectionals-12-21",
+      "passage_text": "",
+      "question_text": "What is the remainder when 123123123123....(298 digits) is divided by 9?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "To find the remainder when a number N is divided by 9, we have to find the digital sum of N first.\nDigital Sum = 1+2+3+....+1+2+3+1 = 99(1+2+3)+1 = 595\n595 mod 9 = 1   <----remainder",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the remainder when 123123123123....(298 digits) is divided by 9?\n\n**Options:**\n- **A**. 3\n- **B**. 4\n- **C**. 0\n- **D**. 1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nTo find the remainder when a number N is divided by 9, we have to find the digital sum of N first.\nDigital Sum = 1+2+3+....+1+2+3+1 = 99(1+2+3)+1 = 595\n595 mod 9 = 1   <----remainder"
+    },
+    {
+      "qid": "quant-sectionals-12-22",
+      "passage_text": "",
+      "question_text": "In a leap year, what is the probability that a day that starts with 'T' comes 53 times?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4/7",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3/7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2/7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5/14",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A leap year has only 2 days that appear more than 52 times. \nThere are a total of seven cases.\nThe year starts on Monday. The additional days are M and T.\nThe year starts on Tuesday. The additional days are T and W.\nThe year starts on Wednesday. The additional days are W and T.\nThe year starts on Thursday. The additional days are T and F.\nThe year starts on Friday. The additional days are F and S.\nThe year starts on Saturday. The additional days are S and S.\nThe year starts on Sunday. The additional days are S and M.\nP = 4/7.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a leap year, what is the probability that a day that starts with 'T' comes 53 times?\n\n**Options:**\n- **A**. 4/7 ✅\n- **B**. 3/7\n- **C**. 2/7\n- **D**. 5/14\n\n**Correct Answer:** null\n\n**Solution:**\nA leap year has only 2 days that appear more than 52 times. \nThere are a total of seven cases.\nThe year starts on Monday. The additional days are M and T.\nThe year starts on Tuesday. The additional days are T and W.\nThe year starts on Wednesday. The additional days are W and T.\nThe year starts on Thursday. The additional days are T and F.\nThe year starts on Friday. The additional days are F and S.\nThe year starts on Saturday. The additional days are S and S.\nThe year starts on Sunday. The additional days are S and M.\nP = 4/7."
+    }
+  ]
+}

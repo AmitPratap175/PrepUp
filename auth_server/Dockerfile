@@ -1,5 +1,5 @@
 # Use the official uv base image
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
