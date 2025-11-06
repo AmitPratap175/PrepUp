@@ -42089,6 +42089,131 @@
       "solution_text": "Maximum sum of the four numbers <= 384=99+97+95+93\n\n384/10 = 38.4\n\nSo, the perfect square is a number less than 38.4\n\nThe possibilities are 36, 25, 16 and 9\n\nFor the sum to be 360, the numbers can be 87, 89, 91 and 93\n\nThe sum of four consecutive odd numbers cannot be 250\n\nFor the sum to be 160, the numbers can be 37,39,41 and 43\n\nThe sum of 4 consecutive odd numbers cannot be 90\n\nSo, from the options, the answer is 41.",
       "image_url": "",
       "full_markdown": "### Question (qid: 248630)\n\n**Passage:**\nIf the function f(x) is defined for all the positive values of x and y such that f(x*y)=f(x)+f(y) and f(4)=8. Then the value of f(8)+f(16)+f(32)+.........+f(128)+f(256) is\n\n136\n\n120\n\n132\n\n108\n\nIf the function f(x) is defined for all the positive values of x and y such that f(x*y)=f(x)+f(y) and f(4)=8. Then the value of f(8)+f(16)+f(32)+.........+f(128)+f(256) is\n\n**Options:**\n- **A**. 136\n- **B**. 120\n- **C**. 132\n- **D**. 108\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1278",
+      "passage_text": "",
+      "question_text": "A circle drawn on a paper has 12 equidistant points on its circumference. The points are numbered from 1 to 12. Neeta has a pen with her. She selects 6 points among these 12 points and draws a line from one point to another, without taking her hand off the paper. The number of ways in which Neeta can sketch a regular hexagon is",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 230678)\n\n**Passage:**\nA circle drawn on a paper has 12 equidistant points on its circumference. The points are numbered from 1 to 12. Neeta has a pen with her. She selects 6 points among these 12 points and draws a line from one point to another, without taking her hand off the paper. The number of ways in which Neeta can sketch a regular hexagon is\n\nA circle drawn on a paper has 12 equidistant points on its circumference. The points are numbered from 1 to 12. Neeta has a pen with her. She selects 6 points among these 12 points and draws a line from one point to another, without taking her hand off the paper. The number of ways in which Neeta can sketch a regular hexagon is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1279",
+      "passage_text": "",
+      "question_text": "In how many ways can the letters of the word MANHATTAN can be arranged such that no two vowels are together?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 287165)\n\n**Passage:**\nIn how many ways can the letters of the word MANHATTAN can be arranged such that no two vowels are together?\n\nIn how many ways can the letters of the word MANHATTAN can be arranged such that no two vowels are together?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1280",
+      "passage_text": "",
+      "question_text": "A three-digit number is formed using the digits 0, 2, 3, 4, 6, 7, 8 with no digit occurring more than once. The probability that the number is divisible by 12 is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{20}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{3}{20}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{1}{10}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{8}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 286879)\n\n**Passage:**\nA three-digit number is formed using the digits 0, 2, 3, 4, 6, 7, 8 with no digit occurring more than once. The probability that the number is divisible by 12 is\n\n1 20 \\frac{1}{20} 2 0 1 ​\n\n3 20 \\frac{3}{20} 2 0 3 ​\n\n1 10 \\frac{1}{10} 1 0 1 ​\n\n1 8 \\frac{1}{8} 8 1 ​\n\nA three-digit number is formed using the digits 0, 2, 3, 4, 6, 7, 8 with no digit occurring more than once. The probability that the number is divisible by 12 is\n\n**Options:**\n- **A**. $\\frac{1}{20}$\n- **B**. $\\frac{3}{20}$\n- **C**. $\\frac{1}{10}$\n- **D**. $\\frac{1}{8}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1281",
+      "passage_text": "",
+      "question_text": "There are 3 sections A,B,C (in that order) of a computer program which has 4500 lines and contains exactly one error in one of those lines. The probability of finding the error across all lines of code of a particular section is constant. The sections A and B together form 2/3rd of the code and have 70% probability of containing the error. The sections B and C together form 3/5 of the code and have 50% probability of containing the error. Find the probability that the error occurs in the 2500th line of the code?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1/4500",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/7500",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1/6000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1/5000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 249923)\n\n**Passage:**\nThere are 3 sections A,B,C (in that order) of a computer program which has 4500 lines and contains exactly one error in one of those lines. The probability of finding the error across all lines of code of a particular section is constant. The sections A and B together form 2/3rd of the code and have 70% probability of containing the error. The sections B and C together form 3/5 of the code and have 50% probability of containing the error. Find the probability that the error occurs in the 2500th line of the code?\n\n1/4500\n\n1/7500\n\n1/6000\n\n1/5000\n\nThere are 3 sections A,B,C (in that order) of a computer program which has 4500 lines and contains exactly one error in one of those lines. The probability of finding the error across all lines of code of a particular section is constant. The sections A and B together form 2/3rd of the code and have 70% probability of containing the error. The sections B and C together form 3/5 of the code and have 50% probability of containing the error. Find the probability that the error occurs in the 2500th line of the code?\n\n**Options:**\n- **A**. 1/4500\n- **B**. 1/7500\n- **C**. 1/6000\n- **D**. 1/5000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1282",
+      "passage_text": "",
+      "question_text": "Four integers w,x,y,z (not necessarily unique) are selected at random from 1 to 1000 numbers both inclusive.. The probability that wz-xy is even is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{5}{8}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{9}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{5}{16}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": null,
+      "image_url": "",
+      "full_markdown": "### Question (qid: 236785)\n\n**Passage:**\nFour integers w,x,y,z (not necessarily unique) are selected at random from 1 to 1000 numbers both inclusive. . The probability that wz-xy is even is\n\n1 16 \\frac{1}{16} 1 6 1 ​\n\n5 8 \\frac{5}{8} 8 5 ​\n\n9 16 \\frac{9}{16} 1 6 9 ​\n\n5 16 \\frac{5}{16} 1 6 5 ​\n\nFour integers w,x,y,z (not necessarily unique) are selected at random from 1 to 1000 numbers both inclusive.. The probability that wz-xy is even is\n\n**Options:**\n- **A**. $\\frac{1}{16}$\n- **B**. $\\frac{5}{8}$\n- **C**. $\\frac{9}{16}$\n- **D**. $\\frac{5}{16}$\n\n**Correct Answer:** null"
     }
   ]
 }
