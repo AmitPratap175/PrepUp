@@ -1,0 +1,699 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-18-1",
+      "passage_text": "",
+      "question_text": "Present ages of Ram and Shyam are in the ratio of 4:3. Which of the following could be the ratio of their ages after 24 years?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8:5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let their present ages be $4x$ and $3x$\nAfter 24 years, the ratio of their ages = $\\frac{4x+24}{3x+24}$\n=$\\frac{4(x+8)-8}{3(x+8)}$\n=$\\frac{4}{3}$- some quantity.\nRatio should be less than 4/3\nOnly option B satisfies this condition.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPresent ages of Ram and Shyam are in the ratio of 4:3. Which of the following could be the ratio of their ages after 24 years?\n\n**Options:**\n- **A**. 4:3\n- **B**. 5:4 ✅\n- **C**. 9:5\n- **D**. 8:5\n\n**Correct Answer:** null\n\n**Solution:**\nLet their present ages be $4x$ and $3x$\nAfter 24 years, the ratio of their ages = $\\frac{4x+24}{3x+24}$\n=$\\frac{4(x+8)-8}{3(x+8)}$\n=$\\frac{4}{3}$- some quantity.\nRatio should be less than 4/3\nOnly option B satisfies this condition."
+    },
+    {
+      "qid": "quant-sectionals-18-2",
+      "passage_text": "",
+      "question_text": "A shopkeeper marks up the price of the article by n% and then offers a discount of n%. He ends up making a loss of Rs. 100. Had he marked up the price of the article by 2n% and offered a discount of n%, he would have made a profit of Rs.100. How much will the shopkeeper earn if he marks up the price by 3n% and offers a discount of 2n%?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A profit of Rs. 600",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "A profit of Rs. 300",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "A loss of Rs. 600",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "A loss of Rs.300",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost price of the article be ‘x’.\nWhen the shopkeeper marks up the price of the article by n% and offers a discount of n%, he incurs a loss of Rs. 100.\n$(1+n)(1-n)x = x - 100$\n$x - xn^2 = x - 100$\n=> $xn^2 = 100$.---(1)\nWhen the shopkeeper marks up the price by 2n% and offers a discount of n%, he makes a profit of Rs. 100. \n$(1+2n)(1-n)x = x+100$\n$(1-n+2n-2n^2)x = x+100$\n$x + nx - 2n^2x = x+100$\nSubstituting (1), we get,\n$nx -200 = 100$\n$nx = 300$ -------(2)\nDividing (1) by (2), we get,\n$n = \\frac{1}{3}$ and $x = 900$\nWhen the shopkeeper marks up the price by 3n% and offers a discount of 2n%, the selling price of the article will be $(1+3n)(1-2n)x$\n$(1+3n)(1-2n)x = (1 + n - 6n^2)x$\n$= x + nx - 6n^2x$\n$ = 900 + 300 - 600$\n$ = 600$\n=> Loss = $900-600 =$Rs.$300$.\nTherefore, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper marks up the price of the article by n% and then offers a discount of n%. He ends up making a loss of Rs. 100. Had he marked up the price of the article by 2n% and offered a discount of n%, he would have made a profit of Rs.100. How much will the shopkeeper earn if he marks up the price by 3n% and offers a discount of 2n%?\n\n**Options:**\n- **A**. A profit of Rs. 600\n- **B**. A profit of Rs. 300\n- **C**. A loss of Rs. 600\n- **D**. A loss of Rs.300 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price of the article be ‘x’.\nWhen the shopkeeper marks up the price of the article by n% and offers a discount of n%, he incurs a loss of Rs. 100.\n$(1+n)(1-n)x = x - 100$\n$x - xn^2 = x - 100$\n=> $xn^2 = 100$.---(1)\nWhen the shopkeeper marks up the price by 2n% and offers a discount of n%, he makes a profit of Rs. 100. \n$(1+2n)(1-n)x = x+100$\n$(1-n+2n-2n^2)x = x+100$\n$x + nx - 2n^2x = x+100$\nSubstituting (1), we get,\n$nx -200 = 100$\n$nx = 300$ -------(2)\nDividing (1) by (2), we get,\n$n = \\frac{1}{3}$ and $x = 900$\nWhen the shopkeeper marks up the price by 3n% and offers a discount of 2n%, the selling price of the article will be $(1+3n)(1-2n)x$\n$(1+3n)(1-2n)x = (1 + n - 6n^2)x$\n$= x + nx - 6n^2x$\n$ = 900 + 300 - 600$\n$ = 600$\n=> Loss = $900-600 =$Rs.$300$.\nTherefore, option D is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-18-3",
+      "passage_text": "",
+      "question_text": "$\\log_{3}{\\log_{27}{x}} + \\log_{27}{\\log_{3}{x}}$ = 3\nIf $x=3^m$ satisfies the given equation, what is the value of $m$?",
+      "options": [],
+      "correct_option_data": "27",
+      "solution_text": "$\\log_{3}{\\log_{27}{x}} + \\log_{27}{\\log_{3}{x}}$ = 3\n=>$\\log_{3}{(\\frac{1}{3}\\log_{3}{x})} + \\frac{1}{3}\\log_{3}{\\log_{3}{x}}$ = 3\nLet $\\log_{3}{x}$ be $y$\nThen, the given equation becomes $\\log_{3}{\\frac{y}{3}} + \\frac{1}{3}\\log_{3}{y}$ = 3\nOr, $\\log_{3}{y} - log_{3}{3} + \\frac{1}{3}\\log_{3}{y}$ = 3\nOr, $\\frac{4}{3} \\log_{3}{y}$ = 4\nOr, $\\log_{3}{y}$ = 3\nOr, $y$ = 27\nOr, $x$ = $3^{27}$\nThus, $m$ = 27\nHence, 27 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$\\log_{3}{\\log_{27}{x}} + \\log_{27}{\\log_{3}{x}}$ = 3\nIf $x=3^m$ satisfies the given equation, what is the value of $m$?\n\n**Options:**\n\n**Correct Answer:** 27\n\n**Solution:**\n$\\log_{3}{\\log_{27}{x}} + \\log_{27}{\\log_{3}{x}}$ = 3\n=>$\\log_{3}{(\\frac{1}{3}\\log_{3}{x})} + \\frac{1}{3}\\log_{3}{\\log_{3}{x}}$ = 3\nLet $\\log_{3}{x}$ be $y$\nThen, the given equation becomes $\\log_{3}{\\frac{y}{3}} + \\frac{1}{3}\\log_{3}{y}$ = 3\nOr, $\\log_{3}{y} - log_{3}{3} + \\frac{1}{3}\\log_{3}{y}$ = 3\nOr, $\\frac{4}{3} \\log_{3}{y}$ = 4\nOr, $\\log_{3}{y}$ = 3\nOr, $y$ = 27\nOr, $x$ = $3^{27}$\nThus, $m$ = 27\nHence, 27 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-18-4",
+      "passage_text": "",
+      "question_text": "A shop keeper buys rice at some price. Then, he packs the rice into packets of 1 kg, 2 kg and 3 kg. He sells the 3 kg packets at a profit of 20% and sells the 2 kg packets at a profit of 25%. The shopkeeper offers one 1 kg packet free with every packet of 3 kg. 1 kg packets are not sold separately. If the shopkeeper sells all the packets and ends up making no profit or loss, then the ratio of the number of 2 kg packets sold to the number of 3 kg packets sold is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4:5",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that the shopkeeper sells all the packets and 1 kg packets are not sold, but given for free along with 3 kg packets. \nTherefore, the number of 1 kg packets must be equal to the number of 3 kg packets. \nLet us assume that there are 'a' 1 kg packets, 'a' 3 kg packets and 'b' 2 kg packets. \nTotal quantity of rice with the shopkeeper = a + 3a + 2b = 4a + 2b.\nLet the cost price of 1 kg of rice be x. \nCost price of one 3 kg packet of rice = 3x\nCost price of one 2 kg packet of rice = 2x.\nTotal cost incurred by the shopkeeper = (4a+2b)x.\nWe know that the shopkeeper sells 3 kg packets at a profit of 20% and 2 kg packets at a profit of 25%.\nTherefore, selling price of one 3 kg packet = 1.2*3x = 3.6x.\nSelling price of one 2 kg packet = 1.25*2x = 2.5x. \nTotal revenue = 3.6ax + 2.5bx\nIt has been given that the shopkeeper did not make any profit or loss. \nTherefore, 4ax + 2bx = 3.6ax + 2.5bx\n0.4a = 0.5b\n-=> b:a = 4:5.\nTherefore, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shop keeper buys rice at some price. Then, he packs the rice into packets of 1 kg, 2 kg and 3 kg. He sells the 3 kg packets at a profit of 20% and sells the 2 kg packets at a profit of 25%. The shopkeeper offers one 1 kg packet free with every packet of 3 kg. 1 kg packets are not sold separately. If the shopkeeper sells all the packets and ends up making no profit or loss, then the ratio of the number of 2 kg packets sold to the number of 3 kg packets sold is\n\n**Options:**\n- **A**. 5:4\n- **B**. 8:5\n- **C**. 3:8\n- **D**. 4:5 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the shopkeeper sells all the packets and 1 kg packets are not sold, but given for free along with 3 kg packets. \nTherefore, the number of 1 kg packets must be equal to the number of 3 kg packets. \nLet us assume that there are 'a' 1 kg packets, 'a' 3 kg packets and 'b' 2 kg packets. \nTotal quantity of rice with the shopkeeper = a + 3a + 2b = 4a + 2b.\nLet the cost price of 1 kg of rice be x. \nCost price of one 3 kg packet of rice = 3x\nCost price of one 2 kg packet of rice = 2x.\nTotal cost incurred by the shopkeeper = (4a+2b)x.\nWe know that the shopkeeper sells 3 kg packets at a profit of 20% and 2 kg packets at a profit of 25%.\nTherefore, selling price of one 3 kg packet = 1.2*3x = 3.6x.\nSelling price of one 2 kg packet = 1.25*2x = 2.5x. \nTotal revenue = 3.6ax + 2.5bx\nIt has been given that the shopkeeper did not make any profit or loss. \nTherefore, 4ax + 2bx = 3.6ax + 2.5bx\n0.4a = 0.5b\n-=> b:a = 4:5.\nTherefore, option D is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-18-5",
+      "passage_text": "",
+      "question_text": "What is the digit at the hundred’s place of the number $1975^{123}$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The digit at the hundred’s place can be calculated by finding the remainder when the number, N is divided by 1000. The remainder can be one-digit, two-digit or a three-digit number. If, the remainder is one-digit or two-digit, the digit at the hundred’s place will be 0. If, the remainder is a three-digit number, the digit at the hundred’s place of the remainder will be the digit at the hundred’s place of the number.\n$\\frac{1975^{123}}{1000}$ = $\\frac{(2000-25)^{123}}{1000}$ = $-\\frac{25^{123}}{1000}$ = $-\\frac{25*5*5*25^{121}}{125*8}$ = $-\\frac{5*25^{121}}{8}$\nThe remainder when 5 is divided by 8 is 5. \n$25^{121}$ = $(8*3+1)^{121}$\nTherefore, the remainder when $25^{121}$ is divided by 8 is same as when $1^{121}$ is divided by 8, i.e. 1.\nTherefore, the remainder when $5 * 25^{121}$ is divided by 8 is same as when 5 * 1 is divided by 8, i.e. 5.\nSince, we cancelled a common factor of 125 from the numerator as well as the denominator; the remainder when $1975^{123}$ is divided by 1000 will be equal to -125 * 5 = -625=375.\nTherefore, the digit at the hundred’s place of the number N = $1975^{123}$ is 3.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the digit at the hundred’s place of the number $1975^{123}$?\n\n**Options:**\n- **A**. 6\n- **B**. 1\n- **C**. 3 ✅\n- **D**. 7\n\n**Correct Answer:** null\n\n**Solution:**\nThe digit at the hundred’s place can be calculated by finding the remainder when the number, N is divided by 1000. The remainder can be one-digit, two-digit or a three-digit number. If, the remainder is one-digit or two-digit, the digit at the hundred’s place will be 0. If, the remainder is a three-digit number, the digit at the hundred’s place of the remainder will be the digit at the hundred’s place of the number.\n$\\frac{1975^{123}}{1000}$ = $\\frac{(2000-25)^{123}}{1000}$ = $-\\frac{25^{123}}{1000}$ = $-\\frac{25*5*5*25^{121}}{125*8}$ = $-\\frac{5*25^{121}}{8}$\nThe remainder when 5 is divided by 8 is 5. \n$25^{121}$ = $(8*3+1)^{121}$\nTherefore, the remainder when $25^{121}$ is divided by 8 is same as when $1^{121}$ is divided by 8, i.e. 1.\nTherefore, the remainder when $5 * 25^{121}$ is divided by 8 is same as when 5 * 1 is divided by 8, i.e. 5.\nSince, we cancelled a common factor of 125 from the numerator as well as the denominator; the remainder when $1975^{123}$ is divided by 1000 will be equal to -125 * 5 = -625=375.\nTherefore, the digit at the hundred’s place of the number N = $1975^{123}$ is 3."
+    },
+    {
+      "qid": "quant-sectionals-18-6",
+      "passage_text": "",
+      "question_text": "In the below diagram, if $\\angle{DEA}$  = $\\angle{DCB}$ = $130^0$, then $\\angle{ADB}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$50^0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$70^0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$60^0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$80^0$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Join AD and BD \nAEDB is a cyclic quadrilateral, so the sum of opposite angles is $180^0$\n$\\angle{AED}$ + $\\angle{ABD}$ = $180^0$\n$\\angle{ABD}$ = $50^0$\nABCD is a cyclic quadrilateral, so the sum of opposite angles is $180^0$\n$\\angle{CDB}$ + $\\angle{DAB}$ = $180^0$\n$\\angle{DAB}$ = $50^0$\nADB is a triangle, sum of the angles in a triangle is $180^0$\n$\\angle{ADB}$ = $180^0$- ( $50^0$ + $50^0$)\n=  $80^0$",
+      "image_url": "https://cracku.in/media/uploads/image_a75d62t.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the below diagram, if $\\angle{DEA}$  = $\\angle{DCB}$ = $130^0$, then $\\angle{ADB}$ is\n\n**Options:**\n- **A**. $50^0$\n- **B**. $70^0$\n- **C**. $60^0$\n- **D**. $80^0$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nJoin AD and BD \nAEDB is a cyclic quadrilateral, so the sum of opposite angles is $180^0$\n$\\angle{AED}$ + $\\angle{ABD}$ = $180^0$\n$\\angle{ABD}$ = $50^0$\nABCD is a cyclic quadrilateral, so the sum of opposite angles is $180^0$\n$\\angle{CDB}$ + $\\angle{DAB}$ = $180^0$\n$\\angle{DAB}$ = $50^0$\nADB is a triangle, sum of the angles in a triangle is $180^0$\n$\\angle{ADB}$ = $180^0$- ( $50^0$ + $50^0$)\n=  $80^0$"
+    },
+    {
+      "qid": "quant-sectionals-18-7",
+      "passage_text": "",
+      "question_text": "4 men and 5 boys can finish the work in 6 days, whereas 5 men alone can finish the work in 5 days. 6 men are required for 10 days to complete another work. If this work is completed only by boys then how many boys will be required to finish the work in 30 days?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "80",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "4 men and 5 boys can finish the work in 6 days, whereas 5 men alone can finish the work in 5 days. \n6 * (4m+5b)= 5m * 5\n24m+30b= 25m\nm=30b\n6 men are required for 10 days to complete another work. \nWork= 6m*10\nN boys work together to complete the work in 3o days.\n30* N * b=  6m*10\n(m =30b)\n30* N * b= 6*30b*10\nN=60",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n4 men and 5 boys can finish the work in 6 days, whereas 5 men alone can finish the work in 5 days. 6 men are required for 10 days to complete another work. If this work is completed only by boys then how many boys will be required to finish the work in 30 days?\n\n**Options:**\n- **A**. 40\n- **B**. 50\n- **C**. 60 ✅\n- **D**. 80\n\n**Correct Answer:** null\n\n**Solution:**\n4 men and 5 boys can finish the work in 6 days, whereas 5 men alone can finish the work in 5 days. \n6 * (4m+5b)= 5m * 5\n24m+30b= 25m\nm=30b\n6 men are required for 10 days to complete another work. \nWork= 6m*10\nN boys work together to complete the work in 3o days.\n30* N * b=  6m*10\n(m =30b)\n30* N * b= 6*30b*10\nN=60"
+    },
+    {
+      "qid": "quant-sectionals-18-8",
+      "passage_text": "",
+      "question_text": "A semi-circular tunnel under the ground as a secret passageway from the palace of a particular kingdom to the fort of a nearby vassal. Find the surface area of the tunnel, if the distance between the kingdoms as 100km, and the width of the tunnel was 105 m.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30 sq km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "29 sq km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "28 sq km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "27 sq km",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The tunnel is in the shape of a semi-circle, i.e., the cross-section of the tunnel is a semi-circle as shown in the figure.The radius of the semi-circle is $\\frac{105}{2}$​​ m and its length is $100$ km.We have to find the surface area of the tunnel.Circumference of the semi-circle = length of the curve + length of the diameter= $\\pi \\times \\frac{105}{2}+105$\n= $270$ m\nSurface area = circumference x length\n= $\\frac{270}{1000}\\times 100$\n= 27 kmHence, the answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA semi-circular tunnel under the ground as a secret passageway from the palace of a particular kingdom to the fort of a nearby vassal. Find the surface area of the tunnel, if the distance between the kingdoms as 100km, and the width of the tunnel was 105 m.\n\n**Options:**\n- **A**. 30 sq km\n- **B**. 29 sq km\n- **C**. 28 sq km\n- **D**. 27 sq km ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe tunnel is in the shape of a semi-circle, i.e., the cross-section of the tunnel is a semi-circle as shown in the figure.The radius of the semi-circle is $\\frac{105}{2}$​​ m and its length is $100$ km.We have to find the surface area of the tunnel.Circumference of the semi-circle = length of the curve + length of the diameter= $\\pi \\times \\frac{105}{2}+105$\n= $270$ m\nSurface area = circumference x length\n= $\\frac{270}{1000}\\times 100$\n= 27 kmHence, the answer is option D."
+    },
+    {
+      "qid": "quant-sectionals-18-9",
+      "passage_text": "",
+      "question_text": "The solution set of the inequality $\\left|x^3-\\ 6x^2+12x\\ -\\ 6\\right|\\ge\\ \\left(x-2\\right)^3$ is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "[2, $\\infty\\ $)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\left[-2,\\ 2\\right]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\left(-\\infty\\ ,\\infty\\ \\right)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "[0, $\\infty\\ $)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\left|x^3-\\ 6x^2+12x\\ -\\ 6\\right|\\ge\\ x^3-6x^2+12x-8$\nLet a = $x^3-\\ 6x^2+12x\\ -\\ 8$, then given inequality is $\\left|a+2\\right|\\ge\\ a$\nNow for a < 0, as |a+2|$\\ge\\ 0,\\ \\left|a+2\\right|>a$\nand for a$\\ge\\ 0,\\ \\left|a+2\\ \\left|=a+2\\ and\\ a+2>a.\\right|\\right|$\nHence the inequality is true for all values of x",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe solution set of the inequality $\\left|x^3-\\ 6x^2+12x\\ -\\ 6\\right|\\ge\\ \\left(x-2\\right)^3$ is?\n\n**Options:**\n- **A**. [2, $\\infty\\ $)\n- **B**. $\\left[-2,\\ 2\\right]$\n- **C**. $\\left(-\\infty\\ ,\\infty\\ \\right)$ ✅\n- **D**. [0, $\\infty\\ $)\n\n**Correct Answer:** null\n\n**Solution:**\n$\\left|x^3-\\ 6x^2+12x\\ -\\ 6\\right|\\ge\\ x^3-6x^2+12x-8$\nLet a = $x^3-\\ 6x^2+12x\\ -\\ 8$, then given inequality is $\\left|a+2\\right|\\ge\\ a$\nNow for a < 0, as |a+2|$\\ge\\ 0,\\ \\left|a+2\\right|>a$\nand for a$\\ge\\ 0,\\ \\left|a+2\\ \\left|=a+2\\ and\\ a+2>a.\\right|\\right|$\nHence the inequality is true for all values of x"
+    },
+    {
+      "qid": "quant-sectionals-18-10",
+      "passage_text": "",
+      "question_text": "A shopkeeper sells 3 eggs, 7 chocolates and 11 sugar cubes for 170 rupees. He sells 10 eggs, 18 chocolates and 26 sugar cubes for 428 rupees. The mixture of 20 eggs, 20 chocolates and 20 sugar cubes must be mixed with cake batter to bake a cake. The shopkeeper sells the cake at Rs. 550 by marking it 10% above the selling prices of the individual ingredients used to make it. What is the price of the cake batter used in a cake?",
+      "options": [],
+      "correct_option_data": "60",
+      "solution_text": "Let us take eggs, chocolates and sugar cubes to be e,c and s respectively. Then the equations we get are:\n3e+7c+11s=170… (Equation 1)\n10e+18c+26s=428… (Equation 2)\nSince these two equations have coefficients which are in an arithmetic progressions we can calculate the price of e+c+s.\nEquation 1 can be written as 3(e+c+s)+4(c+2s)=170\nAnd Equation 2 can be written as 10(e+c+s)+8(c+2s)=428\nLet us take, e+c+s=a and c+2s=b\nThen, 3a+4b=170\nAnd 10a+8b=428\nSolving these 2 equations we get a=22 and b=26\nWhich means 1 egg, 1 chocolate and 1 sugar cubes are sold at 22 rupees.\nSo, 20 eggs, 20 chocolates and 20 sugar cubes will be sold at 440 rupees.\nThe marked price of the cake (550) is 10% more than the individual ingredients. Hence selling price of the individual ingredients = 550/1.1 = Rs.500\nHence, the selling price of the batter used in the cake = 500 - 440 = Rs.60",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper sells 3 eggs, 7 chocolates and 11 sugar cubes for 170 rupees. He sells 10 eggs, 18 chocolates and 26 sugar cubes for 428 rupees. The mixture of 20 eggs, 20 chocolates and 20 sugar cubes must be mixed with cake batter to bake a cake. The shopkeeper sells the cake at Rs. 550 by marking it 10% above the selling prices of the individual ingredients used to make it. What is the price of the cake batter used in a cake?\n\n**Options:**\n\n**Correct Answer:** 60\n\n**Solution:**\nLet us take eggs, chocolates and sugar cubes to be e,c and s respectively. Then the equations we get are:\n3e+7c+11s=170… (Equation 1)\n10e+18c+26s=428… (Equation 2)\nSince these two equations have coefficients which are in an arithmetic progressions we can calculate the price of e+c+s.\nEquation 1 can be written as 3(e+c+s)+4(c+2s)=170\nAnd Equation 2 can be written as 10(e+c+s)+8(c+2s)=428\nLet us take, e+c+s=a and c+2s=b\nThen, 3a+4b=170\nAnd 10a+8b=428\nSolving these 2 equations we get a=22 and b=26\nWhich means 1 egg, 1 chocolate and 1 sugar cubes are sold at 22 rupees.\nSo, 20 eggs, 20 chocolates and 20 sugar cubes will be sold at 440 rupees.\nThe marked price of the cake (550) is 10% more than the individual ingredients. Hence selling price of the individual ingredients = 550/1.1 = Rs.500\nHence, the selling price of the batter used in the cake = 500 - 440 = Rs.60"
+    },
+    {
+      "qid": "quant-sectionals-18-11",
+      "passage_text": "",
+      "question_text": "It is known that the ratio of number of revolutions completed by two wheels of a bike while travelling a particular distance is 6:10. If it is known that the radii of the wheels are integers, which of the following could be the difference in area of those two wheels.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$256\\pi$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$128\\pi$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$320\\pi$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$96\\pi$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let r and R be the radii of the smaller and larger wheel respectively and k1 and k2 be their corresponding number of revolutions.\nTotal distance travelled by both the wheels of the bike is the same.\n$(2*\\pi*r)k1 = (2*\\pi*R)k2$\nr*k1=R*k2.\nr/R=k2/k1.\nr/R=3/5\nThe difference in their areas would be$( \\pi*R^{2})-(\\pi*r^{2})$\n==>$\\pi*(R+r)(R-r)$\n==>$\\pi*(8x)(2x)$\n==>$\\pi*16*x^{2}$\nThe only value that satisfies this is $256\\pi. $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIt is known that the ratio of number of revolutions completed by two wheels of a bike while travelling a particular distance is 6:10. If it is known that the radii of the wheels are integers, which of the following could be the difference in area of those two wheels.\n\n**Options:**\n- **A**. $256\\pi$ ✅\n- **B**. $128\\pi$\n- **C**. $320\\pi$\n- **D**. $96\\pi$\n\n**Correct Answer:** null\n\n**Solution:**\nLet r and R be the radii of the smaller and larger wheel respectively and k1 and k2 be their corresponding number of revolutions.\nTotal distance travelled by both the wheels of the bike is the same.\n$(2*\\pi*r)k1 = (2*\\pi*R)k2$\nr*k1=R*k2.\nr/R=k2/k1.\nr/R=3/5\nThe difference in their areas would be$( \\pi*R^{2})-(\\pi*r^{2})$\n==>$\\pi*(R+r)(R-r)$\n==>$\\pi*(8x)(2x)$\n==>$\\pi*16*x^{2}$\nThe only value that satisfies this is $256\\pi. $"
+    },
+    {
+      "qid": "quant-sectionals-18-12",
+      "passage_text": "",
+      "question_text": "Alcohol solutions A, and B have 23% and 35% alcohol in them respectively. When A and B are mixed in the ratio of 7:5, we get solution C. What is the amount of water in solution D, which has 620 mL of pure alcohol, such that solution D is obtained by mixing B and C in ratio 3:4?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1380mL",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1785mL",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2000mL",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1760mL",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A - 23%\nB - 35%\nA and B are mixed in the ratio 7:5,\nC alcohol % = $\\frac{23\\left(7\\right)+35\\left(5\\right)}{7+5}$ = 28%\nD alcohol % =  $\\frac{35\\left(3\\right)+28\\left(4\\right)}{3+4}$ = 31%\nIf 31% of D is alcohol = 620 mL, then\nwater = 69% = (620/31)$\\times\\ $69 = 1380 mL.\nAnswer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAlcohol solutions A, and B have 23% and 35% alcohol in them respectively. When A and B are mixed in the ratio of 7:5, we get solution C. What is the amount of water in solution D, which has 620 mL of pure alcohol, such that solution D is obtained by mixing B and C in ratio 3:4?\n\n**Options:**\n- **A**. 1380mL ✅\n- **B**. 1785mL\n- **C**. 2000mL\n- **D**. 1760mL\n\n**Correct Answer:** null\n\n**Solution:**\nA - 23%\nB - 35%\nA and B are mixed in the ratio 7:5,\nC alcohol % = $\\frac{23\\left(7\\right)+35\\left(5\\right)}{7+5}$ = 28%\nD alcohol % =  $\\frac{35\\left(3\\right)+28\\left(4\\right)}{3+4}$ = 31%\nIf 31% of D is alcohol = 620 mL, then\nwater = 69% = (620/31)$\\times\\ $69 = 1380 mL.\nAnswer is option A."
+    },
+    {
+      "qid": "quant-sectionals-18-13",
+      "passage_text": "",
+      "question_text": "The compound interest on a sum of money is Rs 322.5 in two years and Rs 520.875 in three years. What is the principal amount and rate of interest?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs 1000, 15%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs 1500, 10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs 1000, 10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs 1500, 15%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the principal be P and the rate of interest be r.\nSo, compound interest at the end of two years = $P(1+r/100)^2 - P = 322.5$ ———> (1)\nCompound interest  at the end of three years = $P(1+r/100)^3 - P = 520.875$ ——> (2)\nlet $\\left(1+\\dfrac{r}{100}\\right)=x^{ }$ \n$\\frac{\\left(2\\right)}{\\left(1\\right)}$\n$\\dfrac{\\left(x^2-1\\right)}{\\left(x^{3\\ }-1\\right)}=\\dfrac{860}{1389}$\n$\\dfrac{\\left(x+1\\right)\\left(x-1\\right)}{\\left(x-1\\right)\\left(x^2+x+1\\right)}=\\dfrac{860}{1389}$\n$860x^2-529x-529=0$\n=> x = 1.15\n=> R =15 %\nP = Rs 1000\nInstead of solving the equations, we can also check from the options. This is an easier way of solving the problem.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe compound interest on a sum of money is Rs 322.5 in two years and Rs 520.875 in three years. What is the principal amount and rate of interest?\n\n**Options:**\n- **A**. Rs 1000, 15% ✅\n- **B**. Rs 1500, 10%\n- **C**. Rs 1000, 10%\n- **D**. Rs 1500, 15%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the principal be P and the rate of interest be r.\nSo, compound interest at the end of two years = $P(1+r/100)^2 - P = 322.5$ ———> (1)\nCompound interest  at the end of three years = $P(1+r/100)^3 - P = 520.875$ ——> (2)\nlet $\\left(1+\\dfrac{r}{100}\\right)=x^{ }$ \n$\\frac{\\left(2\\right)}{\\left(1\\right)}$\n$\\dfrac{\\left(x^2-1\\right)}{\\left(x^{3\\ }-1\\right)}=\\dfrac{860}{1389}$\n$\\dfrac{\\left(x+1\\right)\\left(x-1\\right)}{\\left(x-1\\right)\\left(x^2+x+1\\right)}=\\dfrac{860}{1389}$\n$860x^2-529x-529=0$\n=> x = 1.15\n=> R =15 %\nP = Rs 1000\nInstead of solving the equations, we can also check from the options. This is an easier way of solving the problem."
+    },
+    {
+      "qid": "quant-sectionals-18-14",
+      "passage_text": "",
+      "question_text": "Car A starts from city P towards city Q. At the same time, another car B starts from the city Q towards city P. They will meet at point R if the ratio of the speed of car A and car B is 4:5. They meet at point S if the ratio of the speed of car A and car B is 3:4. The ratio of the distance between R and S and the distance between P and Q is m:n where m and n are co-primes. Find the value of m+n.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "62",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "63",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "64",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "65",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the distance between P and Q is 63 units (LCM of 4+5=9 and 3+4=7)\nThe fraction of the distance travelled by each car will be proportional to their speeds because the time taken is the same in each case.\nAssume the speed of car A in the first case to be 4x and 5x\nHence, the distance of R from P = Distance travelled by A from P to R = Speed of A $\\times$ Time taken to meet= $\\dfrac{63}{4x+5x}\\times\\ 4x$ = 28 units\nSimilarly, let the speed of car A in the second case be 3x and 4x\nThen, the distance of S from P = Distance travelled by A from P to S = Speed of A $\\times$ Time taken to meet = $\\dfrac{63}{3x+4x}\\times\\ 3x$ = 27 units\nHence, the distance between R and S = 1 unit\nThe ratio $\\ \\dfrac{\\ m}{n}=\\ \\dfrac{\\ 1}{63}$ \nHence, the sum = 1+63 = 64",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCar A starts from city P towards city Q. At the same time, another car B starts from the city Q towards city P. They will meet at point R if the ratio of the speed of car A and car B is 4:5. They meet at point S if the ratio of the speed of car A and car B is 3:4. The ratio of the distance between R and S and the distance between P and Q is m:n where m and n are co-primes. Find the value of m+n.\n\n**Options:**\n- **A**. 62\n- **B**. 63\n- **C**. 64 ✅\n- **D**. 65\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the distance between P and Q is 63 units (LCM of 4+5=9 and 3+4=7)\nThe fraction of the distance travelled by each car will be proportional to their speeds because the time taken is the same in each case.\nAssume the speed of car A in the first case to be 4x and 5x\nHence, the distance of R from P = Distance travelled by A from P to R = Speed of A $\\times$ Time taken to meet= $\\dfrac{63}{4x+5x}\\times\\ 4x$ = 28 units\nSimilarly, let the speed of car A in the second case be 3x and 4x\nThen, the distance of S from P = Distance travelled by A from P to S = Speed of A $\\times$ Time taken to meet = $\\dfrac{63}{3x+4x}\\times\\ 3x$ = 27 units\nHence, the distance between R and S = 1 unit\nThe ratio $\\ \\dfrac{\\ m}{n}=\\ \\dfrac{\\ 1}{63}$ \nHence, the sum = 1+63 = 64"
+    },
+    {
+      "qid": "quant-sectionals-18-15",
+      "passage_text": "",
+      "question_text": "The sum of the series 0.3+0.33+0.333+……………upto 30 terms is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{1}{9}(269-(\\dfrac{1}{10})^{30})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{1}{27}(269+(\\dfrac{1}{10})^{30})$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{1}{27}(269-(\\dfrac{1}{10})^{30})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{1}{9}(269+(\\dfrac{1}{10})^{30})$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, 0.3+0.33+0.333+0.3333+.................upto 30 terms\n=$3(0.1+0.11+0.111+0.1111+0.11111+........................$upto 30 terms)\n=$3(\\dfrac{1}{10}+\\dfrac{11}{100}+\\dfrac{111}{1000}+\\dfrac{1111}{10000}+\\dfrac{11111}{100000}+..........................$upto 30 terms)\n= $\\dfrac{3*9}{9}(\\dfrac{1}{10}+\\dfrac{11}{100}+\\dfrac{111}{1000}+\\dfrac{1111}{10000}+\\dfrac{11111}{100000}+..........................$upto 30 terms)\n=$\\dfrac{3}{9}(\\dfrac{9}{10}+\\dfrac{99}{100}+\\dfrac{999}{1000}+\\dfrac{9999}{10000}............................$upto 30 terms)\n=$\\dfrac{1}{3}(1-\\dfrac{1}{10}+1-\\dfrac{1}{100}+1-\\dfrac{1}{1000}+1-\\dfrac{1}{10000}...........................$upto 30 terms)\n=$\\dfrac{1}{3}(30-\\dfrac{\\frac{1}{10}(1-(\\frac{1}{10})^{30}}{1-\\frac{1}{10}})$\n=$\\dfrac{1}{3}(30-\\dfrac{1}{9}(1-(\\dfrac{1}{10})^{30}) $= $\\dfrac{1}{27}(270-(1-(\\dfrac{1}{10})^{30})$\n= $\\dfrac{1}{27}(269+(\\dfrac{1}{10})^{30})$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of the series 0.3+0.33+0.333+……………upto 30 terms is\n\n**Options:**\n- **A**. $\\dfrac{1}{9}(269-(\\dfrac{1}{10})^{30})$\n- **B**. $\\dfrac{1}{27}(269+(\\dfrac{1}{10})^{30})$ ✅\n- **C**. $\\dfrac{1}{27}(269-(\\dfrac{1}{10})^{30})$\n- **D**. $\\dfrac{1}{9}(269+(\\dfrac{1}{10})^{30})$\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, 0.3+0.33+0.333+0.3333+.................upto 30 terms\n=$3(0.1+0.11+0.111+0.1111+0.11111+........................$upto 30 terms)\n=$3(\\dfrac{1}{10}+\\dfrac{11}{100}+\\dfrac{111}{1000}+\\dfrac{1111}{10000}+\\dfrac{11111}{100000}+..........................$upto 30 terms)\n= $\\dfrac{3*9}{9}(\\dfrac{1}{10}+\\dfrac{11}{100}+\\dfrac{111}{1000}+\\dfrac{1111}{10000}+\\dfrac{11111}{100000}+..........................$upto 30 terms)\n=$\\dfrac{3}{9}(\\dfrac{9}{10}+\\dfrac{99}{100}+\\dfrac{999}{1000}+\\dfrac{9999}{10000}............................$upto 30 terms)\n=$\\dfrac{1}{3}(1-\\dfrac{1}{10}+1-\\dfrac{1}{100}+1-\\dfrac{1}{1000}+1-\\dfrac{1}{10000}...........................$upto 30 terms)\n=$\\dfrac{1}{3}(30-\\dfrac{\\frac{1}{10}(1-(\\frac{1}{10})^{30}}{1-\\frac{1}{10}})$\n=$\\dfrac{1}{3}(30-\\dfrac{1}{9}(1-(\\dfrac{1}{10})^{30}) $= $\\dfrac{1}{27}(270-(1-(\\dfrac{1}{10})^{30})$\n= $\\dfrac{1}{27}(269+(\\dfrac{1}{10})^{30})$"
+    },
+    {
+      "qid": "quant-sectionals-18-16",
+      "passage_text": "",
+      "question_text": "In a pizza joint, there are three big microwave ovens.\n\nMicrowave 1 has 3 Margherita Pizzas, 2 Sicilian Pizzas, 5 Alfredo Pizzas.\n\nMicrowave 2 has 2 Margherita Pizzas, 1 Sicilian Pizza, 3 Alfredo Pizzas.\n\nMicrowave 3 has 4 Margherita Pizzas, 2 Sicilian Pizzas, 6 Alfredo Pizzas.\n\nHari, the Joint's head chef, took an Alfredo pizza, what is the probability that the pizza is from Microwave 2? It is given that the chef will pick each microwave with equal probability.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4/15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1/4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The probability of selecting an Alfredo Pizza from the Microwave 1= 5/10= 1/2\nThe probability of selecting an Alfredo Pizza from the Microwave 2= 3/6= 1/2\nThe probability of selecting an Alfredo Pizza from the Microwave 3= 6/12= 1/2\nProbability of selecting an Alfredo Pizza = 1/2 * 1/3 + 1/2*1/3 + 1/2*1/3 = 1/2\nThus using Bayes theorem,\nThe probability that the pizza is from Microwave 2 given the pizza is Alfredo = $\\frac{P(Alfredo|Microwave\\ 2)*P(Microwave\\ 2)}{P(Alfredo)}$\n= $\\dfrac{1/2*1/3}{1/2}$ \n= $1/3$\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a pizza joint, there are three big microwave ovens.\n\nMicrowave 1 has 3 Margherita Pizzas, 2 Sicilian Pizzas, 5 Alfredo Pizzas.\n\nMicrowave 2 has 2 Margherita Pizzas, 1 Sicilian Pizza, 3 Alfredo Pizzas.\n\nMicrowave 3 has 4 Margherita Pizzas, 2 Sicilian Pizzas, 6 Alfredo Pizzas.\n\nHari, the Joint's head chef, took an Alfredo pizza, what is the probability that the pizza is from Microwave 2? It is given that the chef will pick each microwave with equal probability.\n\n**Options:**\n- **A**. 1/3 ✅\n- **B**. 1/2\n- **C**. 4/15\n- **D**. 1/4\n\n**Correct Answer:** null\n\n**Solution:**\nThe probability of selecting an Alfredo Pizza from the Microwave 1= 5/10= 1/2\nThe probability of selecting an Alfredo Pizza from the Microwave 2= 3/6= 1/2\nThe probability of selecting an Alfredo Pizza from the Microwave 3= 6/12= 1/2\nProbability of selecting an Alfredo Pizza = 1/2 * 1/3 + 1/2*1/3 + 1/2*1/3 = 1/2\nThus using Bayes theorem,\nThe probability that the pizza is from Microwave 2 given the pizza is Alfredo = $\\frac{P(Alfredo|Microwave\\ 2)*P(Microwave\\ 2)}{P(Alfredo)}$\n= $\\dfrac{1/2*1/3}{1/2}$ \n= $1/3$\nOption A"
+    },
+    {
+      "qid": "quant-sectionals-18-17",
+      "passage_text": "",
+      "question_text": "ABCD is a rectangle. E and F are two points on side BC and CD respectively. If it is given that area of $\\triangle$ABE , $\\triangle$ECF and $\\triangle$FDA are 60, 18, 48 cm^2 respectively. Find out the area of $\\triangle$AEF?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "66 sq. cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "84 sq. cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "96 sq. cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "48 sq. cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume the length(BC) and breadth(AB) for rectangle are a and b respectively.\nIn $\\triangle$ABE, \nArea of $\\triangle$ABE = $\\frac{1}{2} \\times AB * BE$\n$\\Rightarrow$ 60 =  $\\frac{1}{2} * b * BE$\n$\\Rightarrow BE = \\frac{120}{b}$    \nSince BE = $\\frac{120}{b}$ then CE = BC - BE = $a - \\frac{120}{b}$  ... (1)\nSimilarly, in $\\triangle$FDA,\nArea of $\\triangle$FDA = $\\frac{1}{2} \\times FD * AD$\n$\\Rightarrow$ 48 =  $\\frac{1}{2} * FD * a$\n$\\Rightarrow$ FD =  $\\frac{96}{a}$    \nSince FD = $\\frac{96}{a}$  then CF = AB - FD = $b -\\frac{96}{a}$  ... (2)\nIn $\\triangle$ECF,\nArea of $\\triangle$ECF = $\\frac{1}{2} \\times EC * CF$\n$\\Rightarrow$ 18 =  $\\frac{1}{2} * CE * CF$\n$\\Rightarrow$ 36 =  (a - $\\frac{120}{b}$) * ( b -$\\frac{96}{a}$)\n$\\Rightarrow$ 36 = $ab - 96 -120 +\\frac{120*96}{ab}$\nLet us assume ab = t then, \n$\\Rightarrow$ 252$t$ = $t^2$  + 11520\n$\\Rightarrow$  $t^2 -252t + 11520 = 0$\n$\\Rightarrow$  $(t-192)(t-60)= 0$\n$\\Rightarrow$  $t = 60, 192$\nBut t = ab = area of rectangle ABCD can't be equal to 60.\nSo  area of rectangle ABCD = 192 = Area of ($\\triangle$ABE+$\\triangle$ECF+$\\triangle$FDA+$\\triangle$AEF)\n$\\Rightarrow$ area of $\\triangle$AEF = 192 - 60 - 18 - 48 = 66 sq cm (Answer :A)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCD is a rectangle. E and F are two points on side BC and CD respectively. If it is given that area of $\\triangle$ABE , $\\triangle$ECF and $\\triangle$FDA are 60, 18, 48 cm^2 respectively. Find out the area of $\\triangle$AEF?\n\n**Options:**\n- **A**. 66 sq. cm ✅\n- **B**. 84 sq. cm\n- **C**. 96 sq. cm\n- **D**. 48 sq. cm\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the length(BC) and breadth(AB) for rectangle are a and b respectively.\nIn $\\triangle$ABE, \nArea of $\\triangle$ABE = $\\frac{1}{2} \\times AB * BE$\n$\\Rightarrow$ 60 =  $\\frac{1}{2} * b * BE$\n$\\Rightarrow BE = \\frac{120}{b}$    \nSince BE = $\\frac{120}{b}$ then CE = BC - BE = $a - \\frac{120}{b}$  ... (1)\nSimilarly, in $\\triangle$FDA,\nArea of $\\triangle$FDA = $\\frac{1}{2} \\times FD * AD$\n$\\Rightarrow$ 48 =  $\\frac{1}{2} * FD * a$\n$\\Rightarrow$ FD =  $\\frac{96}{a}$    \nSince FD = $\\frac{96}{a}$  then CF = AB - FD = $b -\\frac{96}{a}$  ... (2)\nIn $\\triangle$ECF,\nArea of $\\triangle$ECF = $\\frac{1}{2} \\times EC * CF$\n$\\Rightarrow$ 18 =  $\\frac{1}{2} * CE * CF$\n$\\Rightarrow$ 36 =  (a - $\\frac{120}{b}$) * ( b -$\\frac{96}{a}$)\n$\\Rightarrow$ 36 = $ab - 96 -120 +\\frac{120*96}{ab}$\nLet us assume ab = t then, \n$\\Rightarrow$ 252$t$ = $t^2$  + 11520\n$\\Rightarrow$  $t^2 -252t + 11520 = 0$\n$\\Rightarrow$  $(t-192)(t-60)= 0$\n$\\Rightarrow$  $t = 60, 192$\nBut t = ab = area of rectangle ABCD can't be equal to 60.\nSo  area of rectangle ABCD = 192 = Area of ($\\triangle$ABE+$\\triangle$ECF+$\\triangle$FDA+$\\triangle$AEF)\n$\\Rightarrow$ area of $\\triangle$AEF = 192 - 60 - 18 - 48 = 66 sq cm (Answer :A)"
+    },
+    {
+      "qid": "quant-sectionals-18-18",
+      "passage_text": "",
+      "question_text": "A pipe P is connected to a tank such that its flow rate triples after each hour. Another pipe Q is connected to the tank such that its flow doubles each hour. The initial flow rate of Q is twice the initial flow rate of P. If P alone is connected as an inlet to the same empty tank, it takes exactly 4 hours to fill the tank. If pipe P is used as an inlet and pipe Q is used as an outlet and connected to a tank whose capacity is 10 times the capacity of the original tank, then after 6 hours, A% of the tank is filled. Find the value of A.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "65",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the initial flow rate of pipe P is 1 litre per hour, then the initial flow rate of Q will be 2 litres per hour.\nThen, in 4 hours, P will fill 1+3+9+27 = 40 litres, which is the capacity of the tank.\nNow for the first 5 hours flow rate of P = 1,3,9,27,81,243\nfor the first 5 hours flow rate of Q = 2,4,8,16,32,64\nNow, the filling rate for the first two hours will be 0 because the flow rate of the outlet is greater than that of the inlet.\nIn 3rd hour, filled volume = 9-8 = 1 litre\nIn 4th hour, filled volume = 27-16 = 11 litre\nIn 5th hour, filled volume = 81-32= 49 litre\nIn 6th hour, filled volume = 243-64 = 179 litre\nHence, total volume filled = 1+11+49+179 = 240.\nSince the volume of the tank is 10 times that of the original tank. Hence, volume = 40*10  = 400 litres.\nA = $\\ \\frac{\\ 240}{400}\\cdot100$ = 60",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA pipe P is connected to a tank such that its flow rate triples after each hour. Another pipe Q is connected to the tank such that its flow doubles each hour. The initial flow rate of Q is twice the initial flow rate of P. If P alone is connected as an inlet to the same empty tank, it takes exactly 4 hours to fill the tank. If pipe P is used as an inlet and pipe Q is used as an outlet and connected to a tank whose capacity is 10 times the capacity of the original tank, then after 6 hours, A% of the tank is filled. Find the value of A.\n\n**Options:**\n- **A**. 50\n- **B**. 60 ✅\n- **C**. 55\n- **D**. 65\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the initial flow rate of pipe P is 1 litre per hour, then the initial flow rate of Q will be 2 litres per hour.\nThen, in 4 hours, P will fill 1+3+9+27 = 40 litres, which is the capacity of the tank.\nNow for the first 5 hours flow rate of P = 1,3,9,27,81,243\nfor the first 5 hours flow rate of Q = 2,4,8,16,32,64\nNow, the filling rate for the first two hours will be 0 because the flow rate of the outlet is greater than that of the inlet.\nIn 3rd hour, filled volume = 9-8 = 1 litre\nIn 4th hour, filled volume = 27-16 = 11 litre\nIn 5th hour, filled volume = 81-32= 49 litre\nIn 6th hour, filled volume = 243-64 = 179 litre\nHence, total volume filled = 1+11+49+179 = 240.\nSince the volume of the tank is 10 times that of the original tank. Hence, volume = 40*10  = 400 litres.\nA = $\\ \\frac{\\ 240}{400}\\cdot100$ = 60"
+    },
+    {
+      "qid": "quant-sectionals-18-19",
+      "passage_text": "",
+      "question_text": "Field A is in the shape of a hexagon and field B is the shape of a square. Both fields have a pole erected on each of their corners. Now, each pole is connected with all the remaining poles using straight rods. If two poles belong to the same field, they are connected using two straight rods, otherwise, they are connected using one straight rod. Find the total number of all the straight rods required.",
+      "options": [],
+      "correct_option_data": "66",
+      "solution_text": "In hexagonal field, the number of rods required to connect the poles within the field = $^6C_2\\times\\ 2\\ =\\ 30$\nIn the square field, the number of rods required to connect the poles within the field = $^4C_2\\times\\ 2\\ =\\ 12$\nNumber of rods required to connect the poles from hexagonal field to the square field = 6*4 = 24\n=> total number of rods required = 30+12+24 = 66",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nField A is in the shape of a hexagon and field B is the shape of a square. Both fields have a pole erected on each of their corners. Now, each pole is connected with all the remaining poles using straight rods. If two poles belong to the same field, they are connected using two straight rods, otherwise, they are connected using one straight rod. Find the total number of all the straight rods required.\n\n**Options:**\n\n**Correct Answer:** 66\n\n**Solution:**\nIn hexagonal field, the number of rods required to connect the poles within the field = $^6C_2\\times\\ 2\\ =\\ 30$\nIn the square field, the number of rods required to connect the poles within the field = $^4C_2\\times\\ 2\\ =\\ 12$\nNumber of rods required to connect the poles from hexagonal field to the square field = 6*4 = 24\n=> total number of rods required = 30+12+24 = 66"
+    },
+    {
+      "qid": "quant-sectionals-18-20",
+      "passage_text": "",
+      "question_text": "Point K is inside triangle PQR as shown in the figure. Line segments AB, CD and EF pass-through point K and are drawn parallel to sides QR, PQ and EF respectively. If the areas of triangles EKA, BKC and FKD are 9 sq.cm, 16 sq.cm and 25 sq.cm respectively, what is the area of the triangle PQR?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "121 sq. cm.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "136 sq. cm.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "144 sq. cm.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "169 sq. cm.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We see that triangles EKA, BKC and FKD are similar to the triangle PQR as the sides are parallel to the sides of the triangle PQR.\nIf the areas of triangles EKA, BKC and FKD are 9 sq.cm, 16 sq.cm and 25 sq.cm respectively, then we can say that the corresponding sides are in ratio 3:4:5.\nLet the sides KA, KB and DF be 3x, 4x and 5x. \nConsider following diagram -\nWe have QR = QD+DF+FR = 3x+5x+4x = 12x\nAlso, $\\frac{Area PQR}{Area EKA} = \\frac{(12x)^2}{(3x)^2}$\nArea PQR = 144 * 9 / 9 = 144 sq. cm. \nHence, option C is the right choice.",
+      "image_url": "https://cracku.in/media/uploads/geom_1_n6Xza2c.PNG",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPoint K is inside triangle PQR as shown in the figure. Line segments AB, CD and EF pass-through point K and are drawn parallel to sides QR, PQ and EF respectively. If the areas of triangles EKA, BKC and FKD are 9 sq.cm, 16 sq.cm and 25 sq.cm respectively, what is the area of the triangle PQR?\n\n**Options:**\n- **A**. 121 sq. cm.\n- **B**. 136 sq. cm.\n- **C**. 144 sq. cm. ✅\n- **D**. 169 sq. cm.\n\n**Correct Answer:** null\n\n**Solution:**\nWe see that triangles EKA, BKC and FKD are similar to the triangle PQR as the sides are parallel to the sides of the triangle PQR.\nIf the areas of triangles EKA, BKC and FKD are 9 sq.cm, 16 sq.cm and 25 sq.cm respectively, then we can say that the corresponding sides are in ratio 3:4:5.\nLet the sides KA, KB and DF be 3x, 4x and 5x. \nConsider following diagram -\nWe have QR = QD+DF+FR = 3x+5x+4x = 12x\nAlso, $\\frac{Area PQR}{Area EKA} = \\frac{(12x)^2}{(3x)^2}$\nArea PQR = 144 * 9 / 9 = 144 sq. cm. \nHence, option C is the right choice."
+    },
+    {
+      "qid": "quant-sectionals-18-21",
+      "passage_text": "",
+      "question_text": "If m,n are the roots of the equation $12x^2+13x-4$, then find the equation that has the roots $\\frac{m}{m-5}$ and $\\frac{n}{n-5}$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$19y^2-3y-\\frac{4}{19}=0$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$20y^2-3y-\\frac{1}{5}=0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$365y^2-57y-4=0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$18y^2-3y-\\frac{2}{9}=0$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let $y=\\frac{x}{x-5}$. Then $yx-5y=x$ and $x=\\frac{5y}{y-1}$.\nPutting the value of x in the quadratic equation:\n$\\frac{300y^2}{\\left(y-1\\right)^2}+\\frac{65y}{y-1}-4=0$\n$300y^2+65\\left(y^2-y\\right)-4\\left(y^2-2y-1\\right)=0$\n$300y^2+65y^2-65y-4y^2+8y-4=0$\n$361y^2-57y-4=0$\n$19y^2-3y-\\frac{4}{19}=0$\nHence the answer is Option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf m,n are the roots of the equation $12x^2+13x-4$, then find the equation that has the roots $\\frac{m}{m-5}$ and $\\frac{n}{n-5}$.\n\n**Options:**\n- **A**. $19y^2-3y-\\frac{4}{19}=0$ ✅\n- **B**. $20y^2-3y-\\frac{1}{5}=0$\n- **C**. $365y^2-57y-4=0$\n- **D**. $18y^2-3y-\\frac{2}{9}=0$\n\n**Correct Answer:** null\n\n**Solution:**\nLet $y=\\frac{x}{x-5}$. Then $yx-5y=x$ and $x=\\frac{5y}{y-1}$.\nPutting the value of x in the quadratic equation:\n$\\frac{300y^2}{\\left(y-1\\right)^2}+\\frac{65y}{y-1}-4=0$\n$300y^2+65\\left(y^2-y\\right)-4\\left(y^2-2y-1\\right)=0$\n$300y^2+65y^2-65y-4y^2+8y-4=0$\n$361y^2-57y-4=0$\n$19y^2-3y-\\frac{4}{19}=0$\nHence the answer is Option A."
+    },
+    {
+      "qid": "quant-sectionals-18-22",
+      "passage_text": "",
+      "question_text": "If A beats B by 300 meters in a 1.5 km race and B beats C by 2 minutes 30 seconds in the same race. What is the sum of speeds of A and C if A beats C by 6 minutes 40 seconds in a 3 km race?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12.75 m/s",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11.25 m/s",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9.75 m/s",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "13.5 m/s",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider speeds(m/s) of A, B and C be a,b and c respectively.\nIf A beats B by 300 meters in a 1.5 km race,\n(1500/a)=(1200/b)\nor, (a/b)=5/4.....(1)\nIf B beats C by 2 minutes 30 seconds (=150 seconds)\n(1500/c)=(1500/b)+150\n(1/c)=(1/b)+(1/10).....(2)\nIf A beats C by 6 minutes 40 seconds(=400 seconds) in a 3 km race,\n(3000/a)+(400)=(3000/c)\n(1/a)+(1/7.5)=(1/c)......(3)\nFrom 1,2 and 3, we get a=7.5 m/s    b=6 m/s  and c=3.75 m/s\nSum of speeds of A and C= 7.5+3.75=11.25 m/s\nB is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf A beats B by 300 meters in a 1.5 km race and B beats C by 2 minutes 30 seconds in the same race. What is the sum of speeds of A and C if A beats C by 6 minutes 40 seconds in a 3 km race?\n\n**Options:**\n- **A**. 12.75 m/s\n- **B**. 11.25 m/s ✅\n- **C**. 9.75 m/s\n- **D**. 13.5 m/s\n\n**Correct Answer:** null\n\n**Solution:**\nConsider speeds(m/s) of A, B and C be a,b and c respectively.\nIf A beats B by 300 meters in a 1.5 km race,\n(1500/a)=(1200/b)\nor, (a/b)=5/4.....(1)\nIf B beats C by 2 minutes 30 seconds (=150 seconds)\n(1500/c)=(1500/b)+150\n(1/c)=(1/b)+(1/10).....(2)\nIf A beats C by 6 minutes 40 seconds(=400 seconds) in a 3 km race,\n(3000/a)+(400)=(3000/c)\n(1/a)+(1/7.5)=(1/c)......(3)\nFrom 1,2 and 3, we get a=7.5 m/s    b=6 m/s  and c=3.75 m/s\nSum of speeds of A and C= 7.5+3.75=11.25 m/s\nB is the answer."
+    }
+  ]
+}

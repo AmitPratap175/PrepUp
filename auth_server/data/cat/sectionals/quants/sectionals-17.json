@@ -1,0 +1,599 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-17-1",
+      "passage_text": "",
+      "question_text": "Three friends Gaurav, Vishal and Rohit can complete a particular work in 'n' days. Vishal takes twice the number of days if he is working alone and Rohit takes 4 more than twice the number of days taken by Vishal to complete the work by himself. If the efficiency of Gaurav is 2/3rd that of Vishal, find the value of 'n'?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "The number of days taken by Vishal = 2n and the number of days taken by Rohit = 4n + 4. Since, the efficiency of Gaurav is 2/3rd that of Vishal, Gaurav will take 3/2 time taken by Gaurav.\nThus, the time taken by Gaurav = 3n\nThe total number of days taken by the 3 friends to complete the work = n.\nThus, the amount of work done by the 3 friends in 1 day =$\\frac{1}{n} = \\frac{1}{2n} + \\frac{1}{3n} + \\frac{1}{4n + 4}$\n= $\\frac{1}{6n} = \\frac{1}{4n + 4}$\n=> n = 2",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree friends Gaurav, Vishal and Rohit can complete a particular work in 'n' days. Vishal takes twice the number of days if he is working alone and Rohit takes 4 more than twice the number of days taken by Vishal to complete the work by himself. If the efficiency of Gaurav is 2/3rd that of Vishal, find the value of 'n'?\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nThe number of days taken by Vishal = 2n and the number of days taken by Rohit = 4n + 4. Since, the efficiency of Gaurav is 2/3rd that of Vishal, Gaurav will take 3/2 time taken by Gaurav.\nThus, the time taken by Gaurav = 3n\nThe total number of days taken by the 3 friends to complete the work = n.\nThus, the amount of work done by the 3 friends in 1 day =$\\frac{1}{n} = \\frac{1}{2n} + \\frac{1}{3n} + \\frac{1}{4n + 4}$\n= $\\frac{1}{6n} = \\frac{1}{4n + 4}$\n=> n = 2"
+    },
+    {
+      "qid": "quant-sectionals-17-2",
+      "passage_text": "",
+      "question_text": "Find the sum to infinity of the series $1 + 3(0.4) + 6(0.4)^2 + 10(0.4)^3 + 15(0.4)^4 + ...$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "125/27",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "125/64",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25/8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25/16",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "S = $1 + 3x + 6x^2 + 10x^3 +.....$ where x = $\\frac{2}{5}$\nSx = $x + 3x^2 + 6x^3 + 10x^4 +.....$\nS(1-x) = $1 + 2x + 3x^2 + 4x^3 + ....$\nSx(1-x) = $x + 2x^2 + 3x^3 + 4x^4 + ....$\n$S(1-x)^2$ = $1 + x + x^2 + x^3 +.....$\n$S(1-x)^2$ = $\\frac{1}{1-x}$\nS = $\\frac{1}{(1-x)^3}$ = $\\frac{125}{27}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum to infinity of the series $1 + 3(0.4) + 6(0.4)^2 + 10(0.4)^3 + 15(0.4)^4 + ...$\n\n**Options:**\n- **A**. 125/27 ✅\n- **B**. 125/64\n- **C**. 25/8\n- **D**. 25/16\n\n**Correct Answer:** null\n\n**Solution:**\nS = $1 + 3x + 6x^2 + 10x^3 +.....$ where x = $\\frac{2}{5}$\nSx = $x + 3x^2 + 6x^3 + 10x^4 +.....$\nS(1-x) = $1 + 2x + 3x^2 + 4x^3 + ....$\nSx(1-x) = $x + 2x^2 + 3x^3 + 4x^4 + ....$\n$S(1-x)^2$ = $1 + x + x^2 + x^3 +.....$\n$S(1-x)^2$ = $\\frac{1}{1-x}$\nS = $\\frac{1}{(1-x)^3}$ = $\\frac{125}{27}$"
+    },
+    {
+      "qid": "quant-sectionals-17-3",
+      "passage_text": "",
+      "question_text": "Rajat, a carpenter, wants to make 4 equilateral triangle-shaped plywood pieces for his furniture. He went to a hardware store to buy a plywood piece from which he can cut these 4 solid shapes. The store sells plywood pieces only in the shape of a rectangle. If the side of the equilateral triangle piece is 3m, what is the minimum surface area of the plywood piece he will buy?\n\n(He does not join two pieces of the plywood to make a triangle shape)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "36 m$^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20 m$^2$(approx)",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25 m$^2$(approx)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16 m$^2$(approx)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can cut three equilateral triangles as in the figure below:\nThe required area of the rectangular plywood piece:\n(7.5)($\\frac{3\\sqrt{\\ 3}}{2}$)m$^2$= approx 19.48m$^2$\nOption B is  correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRajat, a carpenter, wants to make 4 equilateral triangle-shaped plywood pieces for his furniture. He went to a hardware store to buy a plywood piece from which he can cut these 4 solid shapes. The store sells plywood pieces only in the shape of a rectangle. If the side of the equilateral triangle piece is 3m, what is the minimum surface area of the plywood piece he will buy?\n\n(He does not join two pieces of the plywood to make a triangle shape)\n\n**Options:**\n- **A**. 36 m$^2$\n- **B**. 20 m$^2$(approx) ✅\n- **C**. 25 m$^2$(approx)\n- **D**. 16 m$^2$(approx)\n\n**Correct Answer:** null\n\n**Solution:**\nWe can cut three equilateral triangles as in the figure below:\nThe required area of the rectangular plywood piece:\n(7.5)($\\frac{3\\sqrt{\\ 3}}{2}$)m$^2$= approx 19.48m$^2$\nOption B is  correct."
+    },
+    {
+      "qid": "quant-sectionals-17-4",
+      "passage_text": "",
+      "question_text": "Rakesh constructs a rectangle by connecting 4 vertices of a regular octagon. What is the probability of the rectangle constructed being a square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{1}{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{1}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{3}{8}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us number the vertices of the octagon.\nWe know that the figure Rakesh constructs is a rectangle. \nA rectangle can be constructed only when the opposite sides are equal.\nLet us consider the following cases. \nCase 1:\nThe breadth of the rectangle is equal to the side of the octagon.\nThe line 12 forms one of the sides of the rectangle.\nThe line 56 will form the parallel side. \nLines 16 and 25 will form the other pair of parallel lines. \nWe can rotate the rectangle so formed and obtain 4 such rectangles - (Sides 12, 23, 34, and 45). The rectangle formed using 56 as one of the sides will be the same as the rectangle formed using 12 as one of the sides.\nCase 2:\n28 is the side of the rectangle. In this case, 46 must form the parallel side. 24 and 68 will form the other pair of parallel sides. We have to check whether the figure so formed is a square. We can see that the figure is entirely symmetric and hence, all the 4 angles of the figure should be equal. Also, all the 4 sides are equal and hence, the figure formed should be a square. \nWe can form 2 such squares (2468 and 1357).\nCase 3:\n14 is one of the sides of the rectangle. The other side of the rectangle will 45. This is the same rectangle we obtained in case 1. Therefore, we can eliminate this case.\n2 out of the 2+4=6 rectangles formed are squares. Therefore, the required probability is $\\frac{1}{3}$ and hence, option B is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRakesh constructs a rectangle by connecting 4 vertices of a regular octagon. What is the probability of the rectangle constructed being a square?\n\n**Options:**\n- **A**. $\\frac{1}{2}$\n- **B**. $\\frac{1}{3}$ ✅\n- **C**. $\\frac{1}{4}$\n- **D**. $\\frac{3}{8}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us number the vertices of the octagon.\nWe know that the figure Rakesh constructs is a rectangle. \nA rectangle can be constructed only when the opposite sides are equal.\nLet us consider the following cases. \nCase 1:\nThe breadth of the rectangle is equal to the side of the octagon.\nThe line 12 forms one of the sides of the rectangle.\nThe line 56 will form the parallel side. \nLines 16 and 25 will form the other pair of parallel lines. \nWe can rotate the rectangle so formed and obtain 4 such rectangles - (Sides 12, 23, 34, and 45). The rectangle formed using 56 as one of the sides will be the same as the rectangle formed using 12 as one of the sides.\nCase 2:\n28 is the side of the rectangle. In this case, 46 must form the parallel side. 24 and 68 will form the other pair of parallel sides. We have to check whether the figure so formed is a square. We can see that the figure is entirely symmetric and hence, all the 4 angles of the figure should be equal. Also, all the 4 sides are equal and hence, the figure formed should be a square. \nWe can form 2 such squares (2468 and 1357).\nCase 3:\n14 is one of the sides of the rectangle. The other side of the rectangle will 45. This is the same rectangle we obtained in case 1. Therefore, we can eliminate this case.\n2 out of the 2+4=6 rectangles formed are squares. Therefore, the required probability is $\\frac{1}{3}$ and hence, option B is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-17-5",
+      "passage_text": "",
+      "question_text": "A regular hexagon of side 20 cm is inscribed in a circle. Another circle is inscribed inside the hexagon. What is the area of the region which lies between the two circles?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$25\\pi$ cm$^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$50\\pi$ cm$^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$75\\pi$ cm$^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$100\\pi$ cm$^2$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let ABCD be the given hexagon and the two circles be as shown in the figure. \nWe have been given that the side of the hexagon is 20 cm.\nWe know that a regular hexagon can be divided into 6 equilateral triangles. The side of the equilateral triangle will be equal to the side of the hexagon. From the figure we can observe that the side of this equilateral triangle will be equal to the radius of the outer circle. Hence, the area of the outer circle will be \n$400\\pi$\nWe can also observe that the height of the equilateral triangle will the radius of the smaller circle. Hence, the radius of the smaller circle will be $20\\frac{\\sqrt{3}}{2}$\n=> Hence, the radius will be $10\\sqrt{3}$\nThus, the area of the inner circle will be $300\\pi$\nThus, the area between the two circles will be $100\\pi$ cm$^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA regular hexagon of side 20 cm is inscribed in a circle. Another circle is inscribed inside the hexagon. What is the area of the region which lies between the two circles?\n\n**Options:**\n- **A**. $25\\pi$ cm$^2$\n- **B**. $50\\pi$ cm$^2$\n- **C**. $75\\pi$ cm$^2$\n- **D**. $100\\pi$ cm$^2$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet ABCD be the given hexagon and the two circles be as shown in the figure. \nWe have been given that the side of the hexagon is 20 cm.\nWe know that a regular hexagon can be divided into 6 equilateral triangles. The side of the equilateral triangle will be equal to the side of the hexagon. From the figure we can observe that the side of this equilateral triangle will be equal to the radius of the outer circle. Hence, the area of the outer circle will be \n$400\\pi$\nWe can also observe that the height of the equilateral triangle will the radius of the smaller circle. Hence, the radius of the smaller circle will be $20\\frac{\\sqrt{3}}{2}$\n=> Hence, the radius will be $10\\sqrt{3}$\nThus, the area of the inner circle will be $300\\pi$\nThus, the area between the two circles will be $100\\pi$ cm$^2$"
+    },
+    {
+      "qid": "quant-sectionals-17-6",
+      "passage_text": "",
+      "question_text": "In how many ways can 18 identical balls be distributed among three girls such that each one of them gets at least one ball and no two girls get the same number of balls?",
+      "options": [],
+      "correct_option_data": "114",
+      "solution_text": "Total number of ways of distributing 18 identical balls among three girls such that each one of them gets at least one ball\n= $^{18 - 3 + 3 - 1}C_{3 - 1} = 136$ ways\nFrom the total number of ways, we have to eliminate those cases when two girls get the same number of balls, and three girls get the same number of balls.\nCase I: Two girls getting the same number of balls and the third one getting a different number of balls.\nThe various distributions can be (1, 1, 16), (2, 2, 14), (3, 3, 12), (4, 4, 10), (5, 5, 8), (7, 7, 4), (8, 8, 2)\nEach of these distributions can occur in $\\dfrac{3!}{2!} = 3$ ways because the girls are non-identical\nSo, the total number of ways in this case = 7 * 3 = 21\nCase II: Three girls getting the same number of balls.\nThere can be only one distribution (6, 6, 6)\nTotal number of ways = 1\nTherefore, the required number of ways = 136 - (21 + 1) = 114\nHence, 114 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn how many ways can 18 identical balls be distributed among three girls such that each one of them gets at least one ball and no two girls get the same number of balls?\n\n**Options:**\n\n**Correct Answer:** 114\n\n**Solution:**\nTotal number of ways of distributing 18 identical balls among three girls such that each one of them gets at least one ball\n= $^{18 - 3 + 3 - 1}C_{3 - 1} = 136$ ways\nFrom the total number of ways, we have to eliminate those cases when two girls get the same number of balls, and three girls get the same number of balls.\nCase I: Two girls getting the same number of balls and the third one getting a different number of balls.\nThe various distributions can be (1, 1, 16), (2, 2, 14), (3, 3, 12), (4, 4, 10), (5, 5, 8), (7, 7, 4), (8, 8, 2)\nEach of these distributions can occur in $\\dfrac{3!}{2!} = 3$ ways because the girls are non-identical\nSo, the total number of ways in this case = 7 * 3 = 21\nCase II: Three girls getting the same number of balls.\nThere can be only one distribution (6, 6, 6)\nTotal number of ways = 1\nTherefore, the required number of ways = 136 - (21 + 1) = 114\nHence, 114 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-17-7",
+      "passage_text": "",
+      "question_text": "A toy train is running around a circular track and a boy is running next to it. If the toy train stops at all 4 of the equally spaced stations (excluding the originating station) for 10 minutes each, the boy is able to catch up with the train just before it leaves the 4th station. If the train covers the length of the track in 1 hour (without stoppages) what is the ratio of the speed of the train (without stoppages) to that of the boy?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "11:6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20:9",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25:12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider the diagram, we know that the boy catches up with the train at the 4th station (if the train is going in clockwise direction)\nTime taken by the boy to cover 4/5th of the distance=time taken by the train to cover it+40 minutes\nTime taken by the train to cover the full distance=60 minutes\nTo cover 4/5th of the distance without stoppages=60*4/5=48 minutes.\nSpeed of the train: Speed of the boy\n=$\\dfrac{1}{\\text{Time taken by train}}$:$\\dfrac{1}{\\text{Time taken by boy}}$\n$\\dfrac{1}{48}$:$\\dfrac{1}{48+40}$\n=11:6",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA toy train is running around a circular track and a boy is running next to it. If the toy train stops at all 4 of the equally spaced stations (excluding the originating station) for 10 minutes each, the boy is able to catch up with the train just before it leaves the 4th station. If the train covers the length of the track in 1 hour (without stoppages) what is the ratio of the speed of the train (without stoppages) to that of the boy?\n\n**Options:**\n- **A**. 11:6 ✅\n- **B**. 20:9\n- **C**. 2:1\n- **D**. 25:12\n\n**Correct Answer:** null\n\n**Solution:**\nConsider the diagram, we know that the boy catches up with the train at the 4th station (if the train is going in clockwise direction)\nTime taken by the boy to cover 4/5th of the distance=time taken by the train to cover it+40 minutes\nTime taken by the train to cover the full distance=60 minutes\nTo cover 4/5th of the distance without stoppages=60*4/5=48 minutes.\nSpeed of the train: Speed of the boy\n=$\\dfrac{1}{\\text{Time taken by train}}$:$\\dfrac{1}{\\text{Time taken by boy}}$\n$\\dfrac{1}{48}$:$\\dfrac{1}{48+40}$\n=11:6"
+    },
+    {
+      "qid": "quant-sectionals-17-8",
+      "passage_text": "",
+      "question_text": "A milkman bought 20 litres of milk and mixed it with 5 litres of klim (a liquid similar to milk). He claims to his customers, who do not know about mixing, that he is making a profit of 5% only. However, his actual profit is 16 $\\frac{2}{3}$%. Find the ratio of cost of milk/litre and klim/litre.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3:2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the CP of milk be 100/litre\nAs he is claiming 5% profit, SP of total mixture = 25 * 105 = 2625\nActual profit = 16$\\frac{2}{3}$%\nLet actual CP be x. \nThen, x + 16$\\frac{2}{3}$% of x = 2625\nSolving for x, we get x = 2250\nSo, actual CP = total CP of milk + total CP of klim\nOr, CP of klim = 2250 - (20 * 100) = 250\nOr, CP of klim = 50/litre\nRequired ratio = 100:50 = 2:1\nHence, option C is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA milkman bought 20 litres of milk and mixed it with 5 litres of klim (a liquid similar to milk). He claims to his customers, who do not know about mixing, that he is making a profit of 5% only. However, his actual profit is 16 $\\frac{2}{3}$%. Find the ratio of cost of milk/litre and klim/litre.\n\n**Options:**\n- **A**. 2:3\n- **B**. 3:4\n- **C**. 2:1 ✅\n- **D**. 3:2\n\n**Correct Answer:** null\n\n**Solution:**\nLet the CP of milk be 100/litre\nAs he is claiming 5% profit, SP of total mixture = 25 * 105 = 2625\nActual profit = 16$\\frac{2}{3}$%\nLet actual CP be x. \nThen, x + 16$\\frac{2}{3}$% of x = 2625\nSolving for x, we get x = 2250\nSo, actual CP = total CP of milk + total CP of klim\nOr, CP of klim = 2250 - (20 * 100) = 250\nOr, CP of klim = 50/litre\nRequired ratio = 100:50 = 2:1\nHence, option C is correct."
+    },
+    {
+      "qid": "quant-sectionals-17-9",
+      "passage_text": "",
+      "question_text": "The diameters of the two circles given below are different. What is the sum of the diameters of the two circles shown in the figure.",
+      "options": [],
+      "correct_option_data": "48",
+      "solution_text": "Let the centre of the circle in quadrant 1 be (x,x) and the centre of the circle in quadrant 4 be (y,-y) where both x,y>0\nThe radius of the first circle must be ‘x’ and that of the bigger circle must be ‘y’.\nDistance between (x,x) and (7,5) must be equal to the radius ‘x’.\n=> $(x-7)^2 + (x-5)^2=x^2$\n=> $x^2+49-14x+x^2+25-10x=x^2$\n=> $x^2-24x+74=0$\nThe roots of this equation is $x=12 \\pm \\sqrt{70}$\nThe distance between (0,0) and (7,5) is $\\sqrt{74} < 12+ \\sqrt{70}$. But, by the figure we can see that this distance must be more than the radius. Thus, the radius of the smaller circle must be $12 - \\sqrt{70}$ and diameter $24 - 2\\sqrt{70}$\nSimilarly, in the second circle, distance between (y,-y) and (7,-5) must be equal to the radius ‘y’.\n=> $(y-7)^2 + (5-y)^2=y^2$\n=> $y^2-24y+74=0$\n=> $y=12 \\pm \\sqrt{70}$\nHere, the distance between (0,0) and (7,-5) must be less than the radius.\n=> y should be $12 + \\sqrt{70}$ and the diameter should be $24 + 2\\sqrt{70}$\nThus, the sum of the 2 diameters is 48.",
+      "image_url": "https://cracku.in/media/uploads/quant.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe diameters of the two circles given below are different. What is the sum of the diameters of the two circles shown in the figure.\n\n**Options:**\n\n**Correct Answer:** 48\n\n**Solution:**\nLet the centre of the circle in quadrant 1 be (x,x) and the centre of the circle in quadrant 4 be (y,-y) where both x,y>0\nThe radius of the first circle must be ‘x’ and that of the bigger circle must be ‘y’.\nDistance between (x,x) and (7,5) must be equal to the radius ‘x’.\n=> $(x-7)^2 + (x-5)^2=x^2$\n=> $x^2+49-14x+x^2+25-10x=x^2$\n=> $x^2-24x+74=0$\nThe roots of this equation is $x=12 \\pm \\sqrt{70}$\nThe distance between (0,0) and (7,5) is $\\sqrt{74} < 12+ \\sqrt{70}$. But, by the figure we can see that this distance must be more than the radius. Thus, the radius of the smaller circle must be $12 - \\sqrt{70}$ and diameter $24 - 2\\sqrt{70}$\nSimilarly, in the second circle, distance between (y,-y) and (7,-5) must be equal to the radius ‘y’.\n=> $(y-7)^2 + (5-y)^2=y^2$\n=> $y^2-24y+74=0$\n=> $y=12 \\pm \\sqrt{70}$\nHere, the distance between (0,0) and (7,-5) must be less than the radius.\n=> y should be $12 + \\sqrt{70}$ and the diameter should be $24 + 2\\sqrt{70}$\nThus, the sum of the 2 diameters is 48."
+    },
+    {
+      "qid": "quant-sectionals-17-10",
+      "passage_text": "",
+      "question_text": "How many common roots do the equations $x^3 + 3x^2 - 2x + 3 = 0$ and $x^3 + x^2 + 2x + 1 = 0$ have?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "Common roots => equate the 2 equations.\n$x^3 + 3x^2 - 2x + 3 = 0$ = $x^3 + x^2 + 2x + 1 = 0$\n$2x^2 - 4x + 2 = 0$\n=> $(x-1)^2$ = 0\n=> There are 2 common roots and both are 1.\nBut, x = 1 does not satisfy either of the equations => no common root.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many common roots do the equations $x^3 + 3x^2 - 2x + 3 = 0$ and $x^3 + x^2 + 2x + 1 = 0$ have?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nCommon roots => equate the 2 equations.\n$x^3 + 3x^2 - 2x + 3 = 0$ = $x^3 + x^2 + 2x + 1 = 0$\n$2x^2 - 4x + 2 = 0$\n=> $(x-1)^2$ = 0\n=> There are 2 common roots and both are 1.\nBut, x = 1 does not satisfy either of the equations => no common root."
+    },
+    {
+      "qid": "quant-sectionals-17-11",
+      "passage_text": "",
+      "question_text": "ABC is a three-digit number, which is 42 less than 20 times the sum of its digits. Find the sum of its digits.",
+      "options": [],
+      "correct_option_data": "15",
+      "solution_text": "ABC is a three-digit number, which is 42 less than 20 times the sum of its digits. \n100A+10B+C=20(A+B+C)-42\n80A= 10B+19C-42\n80A-10B=19C-42\n80A-10B ends with zero so, 19C-42 should also end with 0=> C=8\n80A-10B=110, The only possibile values are A=2 and B=5\n.'. ABC= 258\nThe sum of its digits= 2+5+8=15",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABC is a three-digit number, which is 42 less than 20 times the sum of its digits. Find the sum of its digits.\n\n**Options:**\n\n**Correct Answer:** 15\n\n**Solution:**\nABC is a three-digit number, which is 42 less than 20 times the sum of its digits. \n100A+10B+C=20(A+B+C)-42\n80A= 10B+19C-42\n80A-10B=19C-42\n80A-10B ends with zero so, 19C-42 should also end with 0=> C=8\n80A-10B=110, The only possibile values are A=2 and B=5\n.'. ABC= 258\nThe sum of its digits= 2+5+8=15"
+    },
+    {
+      "qid": "quant-sectionals-17-12",
+      "passage_text": "",
+      "question_text": "Find the ratio of the time(in year) in which a sum of money triples itself at a certain rate of simple interest and the time(in year) in which the same money becomes five times at one-third the rate of simple interest (in the first case).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Case 1: SI = PTR\n2P = PTR\n2 = TR\nCase 2: SI = PTR\n4P = PtR/3\n12P = PtR\n12 = tR\nT:t = 1:6",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the ratio of the time(in year) in which a sum of money triples itself at a certain rate of simple interest and the time(in year) in which the same money becomes five times at one-third the rate of simple interest (in the first case).\n\n**Options:**\n- **A**. 6:1\n- **B**. 1:6 ✅\n- **C**. 12:1\n- **D**. 1:12\n\n**Correct Answer:** null\n\n**Solution:**\nCase 1: SI = PTR\n2P = PTR\n2 = TR\nCase 2: SI = PTR\n4P = PtR/3\n12P = PtR\n12 = tR\nT:t = 1:6"
+    },
+    {
+      "qid": "quant-sectionals-17-13",
+      "passage_text": "",
+      "question_text": "Find the number of integral ordered pairs of ($x$, $y$) such that $3xy = 4(x+y)$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that $3xy = 4(x+y)$\n$\\Rightarrow$ $3xy - 4y = 4x$\n$\\Rightarrow$ $y = \\dfrac{4x}{3x - 4}$\n$\\Rightarrow$ $y = \\dfrac{3x - 4}{3x - 4} + \\dfrac{x + 4}{3x - 4}$\n$\\Rightarrow$ $y = 1 + \\dfrac{x + 4}{3x - 4}$\nWe have to select all the values of $x$ such that $\\dfrac{x + 4}{3x - 4}$ is an integer. \nIf the numerator is 0 i.e. $x+4 = 0$ or $x = -4$ then $y = 1$\nAt $x = 0$, $y = 0$\nAt $x = 1$, $y = -4$\nAt $x = 2$, $y = 4$\nAt $x = 4$, $y = 2$\nTherefore we can say there are a total of 5 integral ordered pairs of ($x$, $y$). Hence, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of integral ordered pairs of ($x$, $y$) such that $3xy = 4(x+y)$.\n\n**Options:**\n- **A**. 2\n- **B**. 3\n- **C**. 4\n- **D**. 5 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that $3xy = 4(x+y)$\n$\\Rightarrow$ $3xy - 4y = 4x$\n$\\Rightarrow$ $y = \\dfrac{4x}{3x - 4}$\n$\\Rightarrow$ $y = \\dfrac{3x - 4}{3x - 4} + \\dfrac{x + 4}{3x - 4}$\n$\\Rightarrow$ $y = 1 + \\dfrac{x + 4}{3x - 4}$\nWe have to select all the values of $x$ such that $\\dfrac{x + 4}{3x - 4}$ is an integer. \nIf the numerator is 0 i.e. $x+4 = 0$ or $x = -4$ then $y = 1$\nAt $x = 0$, $y = 0$\nAt $x = 1$, $y = -4$\nAt $x = 2$, $y = 4$\nAt $x = 4$, $y = 2$\nTherefore we can say there are a total of 5 integral ordered pairs of ($x$, $y$). Hence, option D is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-17-14",
+      "passage_text": "",
+      "question_text": "If f(xy) = 2f(x) + f(y) + 4, then find the absolute value of f(12).",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "f(xy) = 2f(x) + f(y) + 4\nPut x = y = 1 => f(1) = 3f(1) + 4 => f(1) = -2\nPut x = 12 and y = 1 => f(12) = 2f(12) + f(1) + 4 => f(12) = -4 - (-2) = -2.\nAbsolute value of f(12) = |-2| = 2",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf f(xy) = 2f(x) + f(y) + 4, then find the absolute value of f(12).\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nf(xy) = 2f(x) + f(y) + 4\nPut x = y = 1 => f(1) = 3f(1) + 4 => f(1) = -2\nPut x = 12 and y = 1 => f(12) = 2f(12) + f(1) + 4 => f(12) = -4 - (-2) = -2.\nAbsolute value of f(12) = |-2| = 2"
+    },
+    {
+      "qid": "quant-sectionals-17-15",
+      "passage_text": "",
+      "question_text": "In what ratio should a 35% ethyl alcohol solution be mixed with a 49% methyl alcohol solution such that the ratio of ethyl alcohol and water is 49:142?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5 : 7",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7 : 5",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7 : 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7 : 8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us mix 100x of solution 1 and 100y of solution 2.\nNow, total ethyl alcohol = 35x\nTotal water = 65x + 51y\n$\\frac{35x}{65x+51y}$ = $\\frac{49}{142}$\nHence, $\\frac{5x}{65x+51y}$ = $\\frac{7}{142}$\n710x = 455x + 357y\n255x = 357y\n85x = 119y\n5x = 7y\nx : y = 7 : 5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn what ratio should a 35% ethyl alcohol solution be mixed with a 49% methyl alcohol solution such that the ratio of ethyl alcohol and water is 49:142?\n\n**Options:**\n- **A**. 5 : 7\n- **B**. 7 : 5 ✅\n- **C**. 7 : 6\n- **D**. 7 : 8\n\n**Correct Answer:** null\n\n**Solution:**\nLet us mix 100x of solution 1 and 100y of solution 2.\nNow, total ethyl alcohol = 35x\nTotal water = 65x + 51y\n$\\frac{35x}{65x+51y}$ = $\\frac{49}{142}$\nHence, $\\frac{5x}{65x+51y}$ = $\\frac{7}{142}$\n710x = 455x + 357y\n255x = 357y\n85x = 119y\n5x = 7y\nx : y = 7 : 5"
+    },
+    {
+      "qid": "quant-sectionals-17-16",
+      "passage_text": "",
+      "question_text": "If a, b, c are non-negative integers such that a+b+c =13, then the maximum value of $ab+bc+ca+abc\\ $ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{2046}{19}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{4026}{19}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{3672}{27}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{3718}{27}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know, $\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)=1+a+b+c+ab+bc+ca+abc\\ $\n=>$ab+bc+ca+abc=\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)-1-\\left(a+b+c\\right)$\n=>$ab+bc+ca+abc=\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)-14$\n=> For $ab+bc+ca+abc$  to be maximum $(1+a)(1+b)(1+c)$ should be maximum\nGiven, a + b + c = 13\n=> (1+a) + (1+b) + (1+c) = 16\nFor a given sum, product is maximum when each term is equal\n$\\therefore\\ $ (1+a) = (1+b) = (1+c) = $\\frac{16}{3}$\nBut since  (1+a) , (1+b) , (1+c) are integers, the values of  (1+a) , (1+b) , (1+c) should be as near as 16/3 as possible with sum 16.\n$\\therefore\\ $ values = 5,5,6 in any order.\nMaximum value of (1+a)(1+b)(1+c) = 5*5*6 = 150\n=> maximum value of $ab+bc+ca+abc\\ $ is 150 - 14 = 136\n3672/27 = 136\nHence C is the correct answer",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a, b, c are non-negative integers such that a+b+c =13, then the maximum value of $ab+bc+ca+abc\\ $ is\n\n**Options:**\n- **A**. $\\frac{2046}{19}$\n- **B**. $\\frac{4026}{19}$\n- **C**. $\\frac{3672}{27}$ ✅\n- **D**. $\\frac{3718}{27}$\n\n**Correct Answer:** null\n\n**Solution:**\nWe know, $\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)=1+a+b+c+ab+bc+ca+abc\\ $\n=>$ab+bc+ca+abc=\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)-1-\\left(a+b+c\\right)$\n=>$ab+bc+ca+abc=\\left(1+a\\right)\\left(1+b\\right)\\left(1+c\\right)-14$\n=> For $ab+bc+ca+abc$  to be maximum $(1+a)(1+b)(1+c)$ should be maximum\nGiven, a + b + c = 13\n=> (1+a) + (1+b) + (1+c) = 16\nFor a given sum, product is maximum when each term is equal\n$\\therefore\\ $ (1+a) = (1+b) = (1+c) = $\\frac{16}{3}$\nBut since  (1+a) , (1+b) , (1+c) are integers, the values of  (1+a) , (1+b) , (1+c) should be as near as 16/3 as possible with sum 16.\n$\\therefore\\ $ values = 5,5,6 in any order.\nMaximum value of (1+a)(1+b)(1+c) = 5*5*6 = 150\n=> maximum value of $ab+bc+ca+abc\\ $ is 150 - 14 = 136\n3672/27 = 136\nHence C is the correct answer"
+    },
+    {
+      "qid": "quant-sectionals-17-17",
+      "passage_text": "",
+      "question_text": "Three pipes with cross-section areas in the ratio 2:3:4 respectively are fitted to a tank. The second pipe is used to empty the tank while the other two are used to fill the tank. The three pipes when working together take 5 hours to fill an empty tank. How much time would it take to fill an empty tank completely if only the third pipe is used? ( Assuming the rate of flow of water is directly proportional to the cross section area of the pipe.)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3 hr 45 mins",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2 hr 15 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4 hr 30 mins",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1 hr 45 mins",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the rate of flow of water in the three pipes (ltr/hrs) =  2x:3x:4x.\nThen the net flow in the tank  =  2x+4x-3x = 3x.\nVolume of the tank = T ltr.\nT= 5 hrs* 3x= 15x\nOnly third pipe will fill the tank in p hrs.\nHence\n4x*p= 15x\np  =    3.75 hrs     = 3hrs 45min",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree pipes with cross-section areas in the ratio 2:3:4 respectively are fitted to a tank. The second pipe is used to empty the tank while the other two are used to fill the tank. The three pipes when working together take 5 hours to fill an empty tank. How much time would it take to fill an empty tank completely if only the third pipe is used? ( Assuming the rate of flow of water is directly proportional to the cross section area of the pipe.)\n\n**Options:**\n- **A**. 3 hr 45 mins ✅\n- **B**. 2 hr 15 mins\n- **C**. 4 hr 30 mins\n- **D**. 1 hr 45 mins\n\n**Correct Answer:** null\n\n**Solution:**\nLet the rate of flow of water in the three pipes (ltr/hrs) =  2x:3x:4x.\nThen the net flow in the tank  =  2x+4x-3x = 3x.\nVolume of the tank = T ltr.\nT= 5 hrs* 3x= 15x\nOnly third pipe will fill the tank in p hrs.\nHence\n4x*p= 15x\np  =    3.75 hrs     = 3hrs 45min"
+    },
+    {
+      "qid": "quant-sectionals-17-18",
+      "passage_text": "",
+      "question_text": "In a class of 60 students the average weight of all the students is 68 kg. The ratio of men and women in the class is 8:7 and the ratio of average weight of women and men is 4:5. What is the average weight of all the men in the class (in kg)?",
+      "options": [],
+      "correct_option_data": "75",
+      "solution_text": "The ratio of men and women in the class is 8:7. \nThe number of men is 32 and the number of women is 28.\nThe ratio of average weight of women and men is 4:5.\nLet the average weight of men and women in the class be 5x and 4x respectively.\n$\\frac{5x*32+4x*28}{60}=68$\n=> $x=15$\nThe average weight of men = $5x=5*15=75$ kg",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 60 students the average weight of all the students is 68 kg. The ratio of men and women in the class is 8:7 and the ratio of average weight of women and men is 4:5. What is the average weight of all the men in the class (in kg)?\n\n**Options:**\n\n**Correct Answer:** 75\n\n**Solution:**\nThe ratio of men and women in the class is 8:7. \nThe number of men is 32 and the number of women is 28.\nThe ratio of average weight of women and men is 4:5.\nLet the average weight of men and women in the class be 5x and 4x respectively.\n$\\frac{5x*32+4x*28}{60}=68$\n=> $x=15$\nThe average weight of men = $5x=5*15=75$ kg"
+    },
+    {
+      "qid": "quant-sectionals-17-19",
+      "passage_text": "",
+      "question_text": "A hemisphere is resting on its base. It is cut into four equal pieces by making 2 perpendicular cuts, none of which is parallel to its base. What is the increase in the surface area of the hemisphere?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "33.33%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "66.66%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8.33%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the radius of the hemisphere be ‘r’.\nSo, the initial surface area is $2\\pi r^2 + \\pi r^2= 3\\pi r^2$\nNow, when 2 perpendicular cuts are made, each piece looks as the figure shown below-\nAs a result of the cut, 2 new flat surfaces will form on each piece which will be in the shape of a quarter of a circle with radius r.\nArea of each flat surface = $\\frac{\\pi \\times r^2}{4}$\nEach piece will have 2 flat surface. This means there will be a total of 8 flat surfaces that will form.\nSo, the increase in area is $8 \\times \\frac{\\pi \\times r^2}{4}= 2\\pi \\times r^2$\n=> The percent increase is $\\frac{2\\pi \\times r^2}{3\\pi r^2} \\times 100 = 66.66$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA hemisphere is resting on its base. It is cut into four equal pieces by making 2 perpendicular cuts, none of which is parallel to its base. What is the increase in the surface area of the hemisphere?\n\n**Options:**\n- **A**. 50%\n- **B**. 33.33%\n- **C**. 66.66% ✅\n- **D**. 8.33%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the radius of the hemisphere be ‘r’.\nSo, the initial surface area is $2\\pi r^2 + \\pi r^2= 3\\pi r^2$\nNow, when 2 perpendicular cuts are made, each piece looks as the figure shown below-\nAs a result of the cut, 2 new flat surfaces will form on each piece which will be in the shape of a quarter of a circle with radius r.\nArea of each flat surface = $\\frac{\\pi \\times r^2}{4}$\nEach piece will have 2 flat surface. This means there will be a total of 8 flat surfaces that will form.\nSo, the increase in area is $8 \\times \\frac{\\pi \\times r^2}{4}= 2\\pi \\times r^2$\n=> The percent increase is $\\frac{2\\pi \\times r^2}{3\\pi r^2} \\times 100 = 66.66$%"
+    },
+    {
+      "qid": "quant-sectionals-17-20",
+      "passage_text": "",
+      "question_text": "Two trains cross each other in t seconds while travelling in the opposite directions. The ratio of the lengths of the two trains is 3:2. By what percentage the speed of first train is greater or less than the second train if the second train crosses a pole in 1.5t time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "175",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "150",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "225",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the length of the two trains are 3x and 2x, respectively and speeds are a and b respectively.\nNow, time taken to cross each other, t = $\\ \\frac{\\ 3x+2x}{a+b}=t$.......(1)\nAlso, time taken to cross a pole, 1.5t = $\\ \\frac{\\ 2x}{b}$......(2)\nFrom 1 and 2 we get,\n$\\frac{\\ 2x}{b}$ =1.5 $\\times\\ $ $\\ \\frac{\\ 3x+2x}{a+b}$\n=> $\\ \\frac{\\ 2}{b}\\ =\\ \\ \\frac{\\ 7.5}{a+b}$\n=> $\\ \\ 2\\left(a+b\\right)\\ =\\ \\ \\ 7.5b$ \n=> 2a = 5.5b\n=> $\\ \\frac{\\ a}{b}\\ =\\ \\ \\frac{\\ 11}{4}$\nHence, if the speed of 2nd train is 4s, then the speed of 2nd train will be 11s.\nNow, required percentage = $\\ \\frac{\\ 11s-4s}{4s}$ $\\times\\ 100$ =175",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo trains cross each other in t seconds while travelling in the opposite directions. The ratio of the lengths of the two trains is 3:2. By what percentage the speed of first train is greater or less than the second train if the second train crosses a pole in 1.5t time?\n\n**Options:**\n- **A**. 175 ✅\n- **B**. 150\n- **C**. 200\n- **D**. 225\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the length of the two trains are 3x and 2x, respectively and speeds are a and b respectively.\nNow, time taken to cross each other, t = $\\ \\frac{\\ 3x+2x}{a+b}=t$.......(1)\nAlso, time taken to cross a pole, 1.5t = $\\ \\frac{\\ 2x}{b}$......(2)\nFrom 1 and 2 we get,\n$\\frac{\\ 2x}{b}$ =1.5 $\\times\\ $ $\\ \\frac{\\ 3x+2x}{a+b}$\n=> $\\ \\frac{\\ 2}{b}\\ =\\ \\ \\frac{\\ 7.5}{a+b}$\n=> $\\ \\ 2\\left(a+b\\right)\\ =\\ \\ \\ 7.5b$ \n=> 2a = 5.5b\n=> $\\ \\frac{\\ a}{b}\\ =\\ \\ \\frac{\\ 11}{4}$\nHence, if the speed of 2nd train is 4s, then the speed of 2nd train will be 11s.\nNow, required percentage = $\\ \\frac{\\ 11s-4s}{4s}$ $\\times\\ 100$ =175"
+    },
+    {
+      "qid": "quant-sectionals-17-21",
+      "passage_text": "",
+      "question_text": "A class consists of m boys and n girls. In an examination, the average score of the girls was 2 higher than that of the boys. In the next exam, however, the average score of the girls dropped by 2 and the average score of the boys increased by 3 while the average score of the entire class increased by 1. What is the value of m:n?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A class consists of m boys and n girls. In an examination, the average score of the girls was 2 higher than that of the boys.\nLet 'b' be the average of the class.\n'a' be the average of boys in the class.\nma + n(a+2) = (m+n)b\nIn the next exam, the average score of the girls dropped by 2 and the average score of the boys increased by 3 while the average score of the entire class increased by 1.\nm(a+3) + na = (m+n)(b+1)\nSubtracting both the equations:\n3m-2n= 1(m+n)\n2m=3n\nm:n=3:2\nOption B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA class consists of m boys and n girls. In an examination, the average score of the girls was 2 higher than that of the boys. In the next exam, however, the average score of the girls dropped by 2 and the average score of the boys increased by 3 while the average score of the entire class increased by 1. What is the value of m:n?\n\n**Options:**\n- **A**. 3:4\n- **B**. 5:2\n- **C**. 3:2 ✅\n- **D**. 2:1\n\n**Correct Answer:** null\n\n**Solution:**\nA class consists of m boys and n girls. In an examination, the average score of the girls was 2 higher than that of the boys.\nLet 'b' be the average of the class.\n'a' be the average of boys in the class.\nma + n(a+2) = (m+n)b\nIn the next exam, the average score of the girls dropped by 2 and the average score of the boys increased by 3 while the average score of the entire class increased by 1.\nm(a+3) + na = (m+n)(b+1)\nSubtracting both the equations:\n3m-2n= 1(m+n)\n2m=3n\nm:n=3:2\nOption B is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-17-22",
+      "passage_text": "",
+      "question_text": "A dartboard is divided into 4 concentric circles whose radii are 1 cm, 2 cm, 3 cm and 4 cm respectively. The prize amount for hitting the circles is Rs 20, 15, 10, 5 respectively. The amount is highest for the innermost circle and lowest for outermost circle. How much should the organizer of the game charge per ticket so that he ends up with no profit no loss situation? (Assume that a large number of participants are participating in the game and 80 percent of the participants are expected to hit the dartboard)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8.625",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9.375",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7.5",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10.625",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The areas of the four circles will be $\\pi$ cm$^2$, 4$\\pi$ cm$^2$, 9$\\pi$ cm$^2$ and 16 $\\pi$ cm$^2$\nThe area of the region which will given 20 rupees = $\\pi$ cm$^2$\nArea of the region which will given 15 rupees = $3\\pi$ cm$^2$\nArea of the region which will give 10 rupees = $5\\pi$ cm$^2$\nArea of the region which will give 5 rupees = $7\\pi$ cm$^2$\nTherefore the probability of winning different amounts would be\nP(20) = $\\frac{1}{16}$\nP(15) = $\\frac{3}{16}$\nP(10) = $\\frac{5}{16}$\nP(5) = $\\frac{7}{16}$\nHence, the average expected prize money which the owner will have to distribute is given by\n20*.8*1/16 + 15*.8*3/16 + 10*.8*5/16 + 5*.8*7/16 = 150*.8/160 = 7.5\nThus, the owner should charge Rs 7.5 per ticket to be in the condition of no profit no loss.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA dartboard is divided into 4 concentric circles whose radii are 1 cm, 2 cm, 3 cm and 4 cm respectively. The prize amount for hitting the circles is Rs 20, 15, 10, 5 respectively. The amount is highest for the innermost circle and lowest for outermost circle. How much should the organizer of the game charge per ticket so that he ends up with no profit no loss situation? (Assume that a large number of participants are participating in the game and 80 percent of the participants are expected to hit the dartboard)\n\n**Options:**\n- **A**. 8.625\n- **B**. 9.375\n- **C**. 7.5 ✅\n- **D**. 10.625\n\n**Correct Answer:** null\n\n**Solution:**\nThe areas of the four circles will be $\\pi$ cm$^2$, 4$\\pi$ cm$^2$, 9$\\pi$ cm$^2$ and 16 $\\pi$ cm$^2$\nThe area of the region which will given 20 rupees = $\\pi$ cm$^2$\nArea of the region which will given 15 rupees = $3\\pi$ cm$^2$\nArea of the region which will give 10 rupees = $5\\pi$ cm$^2$\nArea of the region which will give 5 rupees = $7\\pi$ cm$^2$\nTherefore the probability of winning different amounts would be\nP(20) = $\\frac{1}{16}$\nP(15) = $\\frac{3}{16}$\nP(10) = $\\frac{5}{16}$\nP(5) = $\\frac{7}{16}$\nHence, the average expected prize money which the owner will have to distribute is given by\n20*.8*1/16 + 15*.8*3/16 + 10*.8*5/16 + 5*.8*7/16 = 150*.8/160 = 7.5\nThus, the owner should charge Rs 7.5 per ticket to be in the condition of no profit no loss."
+    }
+  ]
+}

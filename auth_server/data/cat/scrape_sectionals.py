@@ -103,7 +103,7 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
 
     browser_config = BrowserConfig(
         verbose=True,
-        headless=True,
+        headless=False,
         use_persistent_context=True,
         use_managed_browser=True,
         browser_type="chromium",

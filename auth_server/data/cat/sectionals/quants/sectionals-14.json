@@ -1,0 +1,674 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-14-1",
+      "passage_text": "",
+      "question_text": "Find out the total number of straight lines that can be drawn through the following 4 points (3,2), (-3,-4), (11,10) and (-2,-1).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "To find out the number of lines, we need to find out how many of these points are collinear.\nSo, if we take the first 2 points (3,2), (-3,-4), and find out the equation of the line passing through these 2 points, we get,\n$y-y_1=\\frac{y_2-y_1}{x_2-x_1}x-x_1$ [ where $\\frac{y_2-y_1}{x_2-x_1}$ is the slope of the line ]\nHence, $y-2=\\frac{-4-2}{-3-3}\\left(x-3\\right)\\longrightarrow\\ y-2=x-3\\longrightarrow\\ y=x-1$\nNow, we need to check if the remaining points lie in this line, to check if they are collinear.\nFor (11,10), putting it in y = x - 1, we get 10 = 11 - 1, hence (11,10) lies on the line. \nFor (-2,-1), putting it in y = x - 1, we get -1 = -2 - 1, which is not true, hence (-2,-1) does not lie on the line.\nSo, we can conclude that (3,2), (-3,-4) and (11,10) are collinear, and (-2,-1) does not lie on the line connecting these 3 points.\nHence, one straight line can be drawn through the 3 collinear points, and 3 separate straight lines can be drawn from the non-collinear point to each of the collinear points. Hence, a total of 4 lines.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind out the total number of straight lines that can be drawn through the following 4 points (3,2), (-3,-4), (11,10) and (-2,-1).\n\n**Options:**\n- **A**. 4 ✅\n- **B**. 1\n- **C**. 6\n- **D**. 3\n\n**Correct Answer:** null\n\n**Solution:**\nTo find out the number of lines, we need to find out how many of these points are collinear.\nSo, if we take the first 2 points (3,2), (-3,-4), and find out the equation of the line passing through these 2 points, we get,\n$y-y_1=\\frac{y_2-y_1}{x_2-x_1}x-x_1$ [ where $\\frac{y_2-y_1}{x_2-x_1}$ is the slope of the line ]\nHence, $y-2=\\frac{-4-2}{-3-3}\\left(x-3\\right)\\longrightarrow\\ y-2=x-3\\longrightarrow\\ y=x-1$\nNow, we need to check if the remaining points lie in this line, to check if they are collinear.\nFor (11,10), putting it in y = x - 1, we get 10 = 11 - 1, hence (11,10) lies on the line. \nFor (-2,-1), putting it in y = x - 1, we get -1 = -2 - 1, which is not true, hence (-2,-1) does not lie on the line.\nSo, we can conclude that (3,2), (-3,-4) and (11,10) are collinear, and (-2,-1) does not lie on the line connecting these 3 points.\nHence, one straight line can be drawn through the 3 collinear points, and 3 separate straight lines can be drawn from the non-collinear point to each of the collinear points. Hence, a total of 4 lines."
+    },
+    {
+      "qid": "quant-sectionals-14-2",
+      "passage_text": "",
+      "question_text": "In a class, the marks obtained by 8 students with all distinct values, when arranged in ascending order, form a geometric progression whose common ratio is a natural number. If there a total of 400 questions carrying 1 mark each with no negative marking, then what is the maximum possible marks obtained by any student?",
+      "options": [],
+      "correct_option_data": "384",
+      "solution_text": "Let ‘$a$’ and ‘$r$’ be the first term and common ratio of the GP respectively. Here both $a$ and $r$ have to be integers. \nSince marks secured by all the students are distinct integers hence we can say that the common ratio of the GP is greater than 1. Therefore, $r >1$.\nMaximum possible marks scored by any candidate = $a*r^7$\nWe can see that if $r > 2$, then $r^7$ > 400 hence,$ r$ can’t be greater than 2, therefore r = 2.\nWhen $r = 2$, then ‘$a$’ can take any value form {1, 2, 3}. \nHence the maximum possible marks obtained by any student = $3*2^7$ = hence, the maximum possible marks obtained by any student = 3*2^7 = 384",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class, the marks obtained by 8 students with all distinct values, when arranged in ascending order, form a geometric progression whose common ratio is a natural number. If there a total of 400 questions carrying 1 mark each with no negative marking, then what is the maximum possible marks obtained by any student?\n\n**Options:**\n\n**Correct Answer:** 384\n\n**Solution:**\nLet ‘$a$’ and ‘$r$’ be the first term and common ratio of the GP respectively. Here both $a$ and $r$ have to be integers. \nSince marks secured by all the students are distinct integers hence we can say that the common ratio of the GP is greater than 1. Therefore, $r >1$.\nMaximum possible marks scored by any candidate = $a*r^7$\nWe can see that if $r > 2$, then $r^7$ > 400 hence,$ r$ can’t be greater than 2, therefore r = 2.\nWhen $r = 2$, then ‘$a$’ can take any value form {1, 2, 3}. \nHence the maximum possible marks obtained by any student = $3*2^7$ = hence, the maximum possible marks obtained by any student = 3*2^7 = 384"
+    },
+    {
+      "qid": "quant-sectionals-14-3",
+      "passage_text": "",
+      "question_text": "The co-efficient of $x^{11}$ in (x-1)(x-3)...................(x-23) is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "-144",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12!",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11!",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{23!}{2*11!}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "(x-1)(x-3)...................(x-23)\nWe have first find the highest degree of x \nIn the equation, the number of terms of the form (x-k) is n.\n1,3,5.....23\nthere are n terms can be determined by AP.\n23=1+(n-1)2\nn = 12\nSo the highest degree of x = 12\nWe have to find the coefficient of $x^{11}$\n= -(1+3+5....23)\n=-144\nA is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe co-efficient of $x^{11}$ in (x-1)(x-3)...................(x-23) is\n\n**Options:**\n- **A**. -144 ✅\n- **B**. 12!\n- **C**. 11!\n- **D**. $\\frac{23!}{2*11!}$\n\n**Correct Answer:** null\n\n**Solution:**\n(x-1)(x-3)...................(x-23)\nWe have first find the highest degree of x \nIn the equation, the number of terms of the form (x-k) is n.\n1,3,5.....23\nthere are n terms can be determined by AP.\n23=1+(n-1)2\nn = 12\nSo the highest degree of x = 12\nWe have to find the coefficient of $x^{11}$\n= -(1+3+5....23)\n=-144\nA is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-14-4",
+      "passage_text": "",
+      "question_text": "A jeweler has bars of two types: Type A bar weighs double the weight of bar of type B and has gold and silver mixed in the ratio 7:3 while type B bar has silver and gold mixed in the ratio 3:2. The jeweler wants to make a bigger bar with 60% gold by melting some bars of type A and bars of type B. What is the ratio of number of bars of type A and type B that the jeweler uses to make the bigger bar ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:9",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4:7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Percentage of gold in type A bar = $\\dfrac{7}{7+3} \\times 100 = 70$%\nPercentage of gold in type B bar = $\\dfrac{2}{2+3} \\times 100 = 40$%\nPercentage of gold in the final bar = 60%\nLet the weight of each bar of type B be $x$ kgs \nSo the weight of each bar of type A is $2x$ kgs\nWeight of gold in 1 type A bar = $\\dfrac{7}{10} \\times 2x = 1.4x$ kgs \nWeight of silver in 1 type A bar = $\\dfrac{3}{10} \\times 2x = 0.6x$ kgs \nWeight of gold in 1 type B bar = $\\dfrac{2}{5} \\times x = 0.4x $ kgs \nWeight of silver in 1 type B bar = $\\dfrac{3}{5} \\times x = 0.6x $ kgs \nLet the ratio of type A bar and type B bar be $k$ \nTotal weight of the bars = $(k \\times 2x)+x = x(2k+1) $ kgs \nTotal weight of gold in the bars = $(k \\times 1.4x)+(0.4x) = x(1.4k+0.4) $ kgs \nTotal weight of silver in the bars = $(k \\times 0.6x)+(0.6x) = x(0.6k+0.6) $ kgs \nIf the percentage of gold in the last bar is 60%, percentage of silver = (100-60) = 40% \nTherefore, ratio of weight of gold and silver = ratio of percentage of gold and silver \n$ \\Rightarrow \\dfrac{x(1.4k+0.4)}{x(0.6k+0.6)} = \\dfrac{60}{40} $ \n$ \\Rightarrow \\dfrac{1.4k+0.4}{0.6k+0.6} = \\dfrac{3}{2} $ \n$ \\Rightarrow 2.8k+0.8 = 1.8k+1.8 $ \n$ \\Rightarrow k=1 $ \nThus the required ratio is 1:1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA jeweler has bars of two types: Type A bar weighs double the weight of bar of type B and has gold and silver mixed in the ratio 7:3 while type B bar has silver and gold mixed in the ratio 3:2. The jeweler wants to make a bigger bar with 60% gold by melting some bars of type A and bars of type B. What is the ratio of number of bars of type A and type B that the jeweler uses to make the bigger bar ?\n\n**Options:**\n- **A**. 1:5\n- **B**. 2:9\n- **C**. 1:1 ✅\n- **D**. 4:7\n\n**Correct Answer:** null\n\n**Solution:**\nPercentage of gold in type A bar = $\\dfrac{7}{7+3} \\times 100 = 70$%\nPercentage of gold in type B bar = $\\dfrac{2}{2+3} \\times 100 = 40$%\nPercentage of gold in the final bar = 60%\nLet the weight of each bar of type B be $x$ kgs \nSo the weight of each bar of type A is $2x$ kgs\nWeight of gold in 1 type A bar = $\\dfrac{7}{10} \\times 2x = 1.4x$ kgs \nWeight of silver in 1 type A bar = $\\dfrac{3}{10} \\times 2x = 0.6x$ kgs \nWeight of gold in 1 type B bar = $\\dfrac{2}{5} \\times x = 0.4x $ kgs \nWeight of silver in 1 type B bar = $\\dfrac{3}{5} \\times x = 0.6x $ kgs \nLet the ratio of type A bar and type B bar be $k$ \nTotal weight of the bars = $(k \\times 2x)+x = x(2k+1) $ kgs \nTotal weight of gold in the bars = $(k \\times 1.4x)+(0.4x) = x(1.4k+0.4) $ kgs \nTotal weight of silver in the bars = $(k \\times 0.6x)+(0.6x) = x(0.6k+0.6) $ kgs \nIf the percentage of gold in the last bar is 60%, percentage of silver = (100-60) = 40% \nTherefore, ratio of weight of gold and silver = ratio of percentage of gold and silver \n$ \\Rightarrow \\dfrac{x(1.4k+0.4)}{x(0.6k+0.6)} = \\dfrac{60}{40} $ \n$ \\Rightarrow \\dfrac{1.4k+0.4}{0.6k+0.6} = \\dfrac{3}{2} $ \n$ \\Rightarrow 2.8k+0.8 = 1.8k+1.8 $ \n$ \\Rightarrow k=1 $ \nThus the required ratio is 1:1"
+    },
+    {
+      "qid": "quant-sectionals-14-5",
+      "passage_text": "",
+      "question_text": "If the probability of getting exactly one head and one tail when we toss two identical biased coins is 32%, what is the probability that we get a 'head' while tossing one of the coins? The probability of getting a head is more than the probability of getting a tail.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0.675",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the probability of getting a head be x [ 0<x<1 - If we see it as a percentage, it is 100x %]\nHence, P(T) = 1-x\nNow, the given condition says exactly one head and one tail.\nP(HT+TH) = x(1-x) + (1-x)x = 2x(1-x)\n2x(1-x) = 0.32\nx(1-x) = 0.16\n0.2 x 0.8 = 0.16\n0.2 + 0.8 = 1\nHence, x can be either 0.2 or 0.8.\nHowever, the probability of getting a head is more than the probability of getting a tail.\nHence, x = 0.8",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the probability of getting exactly one head and one tail when we toss two identical biased coins is 32%, what is the probability that we get a 'head' while tossing one of the coins? The probability of getting a head is more than the probability of getting a tail.\n\n**Options:**\n- **A**. 0.6\n- **B**. 0.75\n- **C**. 0.8 ✅\n- **D**. 0.675\n\n**Correct Answer:** null\n\n**Solution:**\nLet the probability of getting a head be x [ 0<x<1 - If we see it as a percentage, it is 100x %]\nHence, P(T) = 1-x\nNow, the given condition says exactly one head and one tail.\nP(HT+TH) = x(1-x) + (1-x)x = 2x(1-x)\n2x(1-x) = 0.32\nx(1-x) = 0.16\n0.2 x 0.8 = 0.16\n0.2 + 0.8 = 1\nHence, x can be either 0.2 or 0.8.\nHowever, the probability of getting a head is more than the probability of getting a tail.\nHence, x = 0.8"
+    },
+    {
+      "qid": "quant-sectionals-14-6",
+      "passage_text": "",
+      "question_text": "$ax^2+bx+b=0$ has roots in the ratio of x:y where x,y > 0. Find the value of $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{\\dfrac{b}{a}}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{\\dfrac{-b}{a}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\dfrac{a}{b}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-$\\sqrt{\\dfrac{a}{b}}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the roots be p, q. Hence p : q = x : y ( x , y > 0) => p,q are of same sign. Hence p and q are of same sign.\nSo product of the roots is > 0 => b/a > 0\nSum of the roots = p+ q = -b/a => sum of the roots < 0. Using these two statements, we get p , q < 0\nNow, $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$ = $\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$\nNow since p,q are less than zero, we can't write $\\sqrt{\\dfrac{p}{q}} = \\frac{\\sqrt{p}}{\\sqrt{q}}$ . So let's multiply with $\\sqrt{pq}$ on numerator and denominator, we get\n$\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$ = $\\sqrt{\\dfrac{p^2}{pq}}+\\sqrt{\\dfrac{q^2}{pq}}$\nNow pq, p^2, q^2 are > 0, so we can separate the square roots in numerator and denominator.\n= $\\dfrac{\\sqrt{p^2}}{\\sqrt{pq}}+\\dfrac{\\sqrt{q^2}}{\\sqrt{pq}}$\n= $\\dfrac{\\sqrt{p^2}+\\sqrt{q^2}}{\\sqrt{pq}}$\nSince p,q < 0, $\\sqrt{p^2} = - p$ and $\\sqrt{q^2} = -q$\nHence the above expression = $\\dfrac{ -(p +q)}{\\sqrt{pq}}$\n= $\\dfrac{ b/a}{\\sqrt{b/a}}$\n= $\\sqrt{b/a}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$ax^2+bx+b=0$ has roots in the ratio of x:y where x,y > 0. Find the value of $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$\n\n**Options:**\n- **A**. $\\sqrt{\\dfrac{b}{a}}$ ✅\n- **B**. $\\sqrt{\\dfrac{-b}{a}}$\n- **C**. $\\sqrt{\\dfrac{a}{b}}$\n- **D**. -$\\sqrt{\\dfrac{a}{b}}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet the roots be p, q. Hence p : q = x : y ( x , y > 0) => p,q are of same sign. Hence p and q are of same sign.\nSo product of the roots is > 0 => b/a > 0\nSum of the roots = p+ q = -b/a => sum of the roots < 0. Using these two statements, we get p , q < 0\nNow, $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$ = $\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$\nNow since p,q are less than zero, we can't write $\\sqrt{\\dfrac{p}{q}} = \\frac{\\sqrt{p}}{\\sqrt{q}}$ . So let's multiply with $\\sqrt{pq}$ on numerator and denominator, we get\n$\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$ = $\\sqrt{\\dfrac{p^2}{pq}}+\\sqrt{\\dfrac{q^2}{pq}}$\nNow pq, p^2, q^2 are > 0, so we can separate the square roots in numerator and denominator.\n= $\\dfrac{\\sqrt{p^2}}{\\sqrt{pq}}+\\dfrac{\\sqrt{q^2}}{\\sqrt{pq}}$\n= $\\dfrac{\\sqrt{p^2}+\\sqrt{q^2}}{\\sqrt{pq}}$\nSince p,q < 0, $\\sqrt{p^2} = - p$ and $\\sqrt{q^2} = -q$\nHence the above expression = $\\dfrac{ -(p +q)}{\\sqrt{pq}}$\n= $\\dfrac{ b/a}{\\sqrt{b/a}}$\n= $\\sqrt{b/a}$"
+    },
+    {
+      "qid": "quant-sectionals-14-7",
+      "passage_text": "",
+      "question_text": "12 identical cubes of side 1 cm each are used to construct a cuboid. The sides of the cuboid are then painted. The cuboid is then divided back to form 12 identical cubes. If the total surface area of the cubes is T and the total unpainted surface area is U, what is the maximum value of U/T?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.66",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.60",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.55",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0.50",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the length, breadth and height of the cuboid be L, B and H. L*B*H = 12 and all of them are natural numbers. \nThe possible combination of length breadth and height = 1*1*12, 1*2*6, 1*3*4, 2*2*3\nPainted surface area in 1*1*12 = 2(1*1+1*12+1*12)=50\nPainted surface area in 1*2*6 = 2(1*2+2*6+1*6)=40\nPainted surface area in 1*3*4 = 2(1*3+3*4+1*4) = 38\nPainted surface area in 2*2*3 = 2(2*2+2*3+2*3) = 32\nThe maximum percentage of unpainted surface area will be obtained when the combination is 2*2*3 because most of the surfaces will hide in this combination.\nTotal surface area exposed after cutting(T) =Surface area of 12 small cubes = 12*6(1*1)=72\nPainted surface area = 2(2*2+2*3+2*3)=32\nUnpainted surface area(U) = 72-32=40\nThe maximum value of U/T = 40/72 = 0.55",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n12 identical cubes of side 1 cm each are used to construct a cuboid. The sides of the cuboid are then painted. The cuboid is then divided back to form 12 identical cubes. If the total surface area of the cubes is T and the total unpainted surface area is U, what is the maximum value of U/T?\n\n**Options:**\n- **A**. 0.66\n- **B**. 0.60\n- **C**. 0.55 ✅\n- **D**. 0.50\n\n**Correct Answer:** null\n\n**Solution:**\nLet the length, breadth and height of the cuboid be L, B and H. L*B*H = 12 and all of them are natural numbers. \nThe possible combination of length breadth and height = 1*1*12, 1*2*6, 1*3*4, 2*2*3\nPainted surface area in 1*1*12 = 2(1*1+1*12+1*12)=50\nPainted surface area in 1*2*6 = 2(1*2+2*6+1*6)=40\nPainted surface area in 1*3*4 = 2(1*3+3*4+1*4) = 38\nPainted surface area in 2*2*3 = 2(2*2+2*3+2*3) = 32\nThe maximum percentage of unpainted surface area will be obtained when the combination is 2*2*3 because most of the surfaces will hide in this combination.\nTotal surface area exposed after cutting(T) =Surface area of 12 small cubes = 12*6(1*1)=72\nPainted surface area = 2(2*2+2*3+2*3)=32\nUnpainted surface area(U) = 72-32=40\nThe maximum value of U/T = 40/72 = 0.55"
+    },
+    {
+      "qid": "quant-sectionals-14-8",
+      "passage_text": "",
+      "question_text": "A farmer borrowed a particular sum of money at simple interest. If he gives it back after 3 years, he has to give back 11500 Rs. If he returns the money after 5 years, he has to give back Rs.12500. Find the amount initially borrowed by the farmer.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10000",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "P[1+0.03R] = 11500\nP[1+0.05R]= 12500\nOn dividing both the equations, we find that, R=5%.\nP*1.15 = 11500.\nP = 10000\nOption D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA farmer borrowed a particular sum of money at simple interest. If he gives it back after 3 years, he has to give back 11500 Rs. If he returns the money after 5 years, he has to give back Rs.12500. Find the amount initially borrowed by the farmer.\n\n**Options:**\n- **A**. 8000\n- **B**. 12000\n- **C**. 6000\n- **D**. 10000 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nP[1+0.03R] = 11500\nP[1+0.05R]= 12500\nOn dividing both the equations, we find that, R=5%.\nP*1.15 = 11500.\nP = 10000\nOption D is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-14-9",
+      "passage_text": "",
+      "question_text": "65% of the residents of a city voted in the elections. 40% of the voters voted for MDP while 30% of the people in the city voted for KMP. The remaining voters voted for GJP. If the difference between the number of votes received by MDP and GJP is 2720, the number of people who did not vote in the elections is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4800",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7400",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5600",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of voters in the city be x. \nNumber of people who voted = 0.65x. \n40% of the voters voted for MDP. \nTherefore, number of people who voted for MDP = 0.4*0.65x = 0.26x\n30% of the people in the city voted for KMP.\nNumber of people who voted for KMP = 0.3x\nRemaining voters voted for GJP. \nTherefore, votes received by GJP = 0.65x - 0.26x - 0.30x = 0.09x. \nDifference between the number of votes received by MDP and GJP = 0.26x - 0.09x = 0.17x. \nIt has been given that 0.17x = 2720\n=> x = 2720/0.17 = 16000\nNumber of people who did not vote in the elections = 16000*0.35 = 5600.\nTherefore, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n65% of the residents of a city voted in the elections. 40% of the voters voted for MDP while 30% of the people in the city voted for KMP. The remaining voters voted for GJP. If the difference between the number of votes received by MDP and GJP is 2720, the number of people who did not vote in the elections is\n\n**Options:**\n- **A**. 16000\n- **B**. 4800\n- **C**. 7400\n- **D**. 5600 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of voters in the city be x. \nNumber of people who voted = 0.65x. \n40% of the voters voted for MDP. \nTherefore, number of people who voted for MDP = 0.4*0.65x = 0.26x\n30% of the people in the city voted for KMP.\nNumber of people who voted for KMP = 0.3x\nRemaining voters voted for GJP. \nTherefore, votes received by GJP = 0.65x - 0.26x - 0.30x = 0.09x. \nDifference between the number of votes received by MDP and GJP = 0.26x - 0.09x = 0.17x. \nIt has been given that 0.17x = 2720\n=> x = 2720/0.17 = 16000\nNumber of people who did not vote in the elections = 16000*0.35 = 5600.\nTherefore, option D is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-14-10",
+      "passage_text": "",
+      "question_text": "A, B, C and D were the members of a team. The average runs of the team decreases by 2 if another member E is added. It is known that E scored 45 runs. No player scored less than E or more than 65 runs. If the runs scored by A and B are in the ratio 13:12 and C scored more than A, the ratio of the runs scored by B to the average runs scored by C & D is\n\nAssume that the runs scored by all the members is a natural number.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6:7",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4:5",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16:19",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8:9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider average of 4 players = x and scores of A,B,C and D be a,b,c & d.\nTotal score = 4*x\n(4*x+45)/5 = x-2\nx= 55\n45=<a,b,c,d<=65\na:b = 13:12 Possible values (a,b) = (52,48) or (65,60)\nIf C scored more than A, A cannot be 65.\nHence a=52, b=48\nAverage runs scored by C&D = (4x-(52+48))/2 = (220-100)/2 =60\nThe ratio of runs scored by B to the average runs of C & D = 48:60 = 4:5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B, C and D were the members of a team. The average runs of the team decreases by 2 if another member E is added. It is known that E scored 45 runs. No player scored less than E or more than 65 runs. If the runs scored by A and B are in the ratio 13:12 and C scored more than A, the ratio of the runs scored by B to the average runs scored by C & D is\n\nAssume that the runs scored by all the members is a natural number.\n\n**Options:**\n- **A**. 6:7\n- **B**. 4:5 ✅\n- **C**. 16:19\n- **D**. 8:9\n\n**Correct Answer:** null\n\n**Solution:**\nConsider average of 4 players = x and scores of A,B,C and D be a,b,c & d.\nTotal score = 4*x\n(4*x+45)/5 = x-2\nx= 55\n45=<a,b,c,d<=65\na:b = 13:12 Possible values (a,b) = (52,48) or (65,60)\nIf C scored more than A, A cannot be 65.\nHence a=52, b=48\nAverage runs scored by C&D = (4x-(52+48))/2 = (220-100)/2 =60\nThe ratio of runs scored by B to the average runs of C & D = 48:60 = 4:5"
+    },
+    {
+      "qid": "quant-sectionals-14-11",
+      "passage_text": "",
+      "question_text": "What is the sum of all 2 digit numbers the product of whose digits is twice the sum of the digits?",
+      "options": [],
+      "correct_option_data": "143",
+      "solution_text": "Let the digits of the 2 digit number be xy.\nNow, we know that the product of the digits is twice the sum of the digits.\nx*y = 2(x+y)\n2x + 2y - xy = 0\nAdding -4 to both sides, we get,\n2x + 2y- xy - 4 = -4\nx(2-y)-2(2-y) = -4\n(x-2)(2-y) = -4\n(x-2)(y-2) = 4\n(x-2) and (y-2) should be factors of 4. x and y should be positive. \n4 can be written as the product of (-1,-4),(-2,-2),(2,2) and (1,4).\nNow, (x-2) or (y-2) cannot be -4 since in that case x or y will be negative. \nWe can rule of (-2,-2) as well since x and y will be equal to 0 in this case.\n(2,2):\nBoth x and y should be equal to 4. \n44 satisfies the given condition.\n(1,4):\nx should be 3 and y should be 6 or the vice versa.\n36 and 63 satisfy the condition.\nSum of the numbers that satisfy the condition = 36+63+44 = 143.\nTherefore, 143 is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of all 2 digit numbers the product of whose digits is twice the sum of the digits?\n\n**Options:**\n\n**Correct Answer:** 143\n\n**Solution:**\nLet the digits of the 2 digit number be xy.\nNow, we know that the product of the digits is twice the sum of the digits.\nx*y = 2(x+y)\n2x + 2y - xy = 0\nAdding -4 to both sides, we get,\n2x + 2y- xy - 4 = -4\nx(2-y)-2(2-y) = -4\n(x-2)(2-y) = -4\n(x-2)(y-2) = 4\n(x-2) and (y-2) should be factors of 4. x and y should be positive. \n4 can be written as the product of (-1,-4),(-2,-2),(2,2) and (1,4).\nNow, (x-2) or (y-2) cannot be -4 since in that case x or y will be negative. \nWe can rule of (-2,-2) as well since x and y will be equal to 0 in this case.\n(2,2):\nBoth x and y should be equal to 4. \n44 satisfies the given condition.\n(1,4):\nx should be 3 and y should be 6 or the vice versa.\n36 and 63 satisfy the condition.\nSum of the numbers that satisfy the condition = 36+63+44 = 143.\nTherefore, 143 is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-14-12",
+      "passage_text": "",
+      "question_text": "Priyank and Ayush started at the same point and run around a circular track in the same direction. Ayush is running faster than Priyank. They met for the first time after 25 minutes and by this time, Priyank finished exactly 7 laps. Had they started running in the opposite direction after how much time from the start would they be meeting for the 15th time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "21 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since Priyank and Ayush are running in the same direction, they would meet for the first time when the faster guy takes a lead of exactly one lap than the slower guy.\nAyush is running faster than Priyank.\nBy their first meeting point, Priyank has made 7 laps.\nAyush must have 8 laps.\nTogether they made 8+7 laps i.e 15laps in 25 minutes.\nIf both of them are moving in the opposite direction, then they would meet for the first time when both of them together make exactly one lap. Thus to meet 15 times they must cover a total of 15 laps. We already know that together they complete 15laps in 25 minutes if moving in opposite direction.\nThey would meet for the 15th time after 25 minutes.\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPriyank and Ayush started at the same point and run around a circular track in the same direction. Ayush is running faster than Priyank. They met for the first time after 25 minutes and by this time, Priyank finished exactly 7 laps. Had they started running in the opposite direction after how much time from the start would they be meeting for the 15th time?\n\n**Options:**\n- **A**. 28 minutes\n- **B**. 25 minutes ✅\n- **C**. 30 minutes\n- **D**. 21 minutes\n\n**Correct Answer:** null\n\n**Solution:**\nSince Priyank and Ayush are running in the same direction, they would meet for the first time when the faster guy takes a lead of exactly one lap than the slower guy.\nAyush is running faster than Priyank.\nBy their first meeting point, Priyank has made 7 laps.\nAyush must have 8 laps.\nTogether they made 8+7 laps i.e 15laps in 25 minutes.\nIf both of them are moving in the opposite direction, then they would meet for the first time when both of them together make exactly one lap. Thus to meet 15 times they must cover a total of 15 laps. We already know that together they complete 15laps in 25 minutes if moving in opposite direction.\nThey would meet for the 15th time after 25 minutes.\nB is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-14-13",
+      "passage_text": "",
+      "question_text": "What is the number of integral values that $x$ can take such that $\\left | log_2 (x^2/2) \\right |\\leq 1$",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "$\\left | log_2 (x^2/2) \\right |\\leq 1$ can be re-written as: $-1\\le\\ \\log_2\\left(\\frac{x^2}{2}\\right)\\le\\ 1$\nOn simplifying, we obtain: $x^2\\ge\\ 1$ and $x^2\\le\\ \\ 4$\nThe only values satifying the conditions are -2, -1, 1, 2\nHence, a total of 4 values.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the number of integral values that $x$ can take such that $\\left | log_2 (x^2/2) \\right |\\leq 1$\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\n$\\left | log_2 (x^2/2) \\right |\\leq 1$ can be re-written as: $-1\\le\\ \\log_2\\left(\\frac{x^2}{2}\\right)\\le\\ 1$\nOn simplifying, we obtain: $x^2\\ge\\ 1$ and $x^2\\le\\ \\ 4$\nThe only values satifying the conditions are -2, -1, 1, 2\nHence, a total of 4 values."
+    },
+    {
+      "qid": "quant-sectionals-14-14",
+      "passage_text": "",
+      "question_text": "Consider a triangle ABC and a circle such that point A lies on the circle and the circle intersects BC at two points D and E. The circle intersects AB at F and AC at G. It is given that BF=CE and BD=CG. The ratio BD: DE: EC is equal to 2:7:3. Find the ratio of sides AB and AC.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:14",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3:7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the lengths as 2x, 7x and 3x.\n$BF\\times\\ AB\\ =\\ BD\\times\\ BE$ (Intersecting secants theorem)\n$3x\\times\\ AB\\ =\\ 2x\\times\\ 9x$\n=> AB = 6x\n$CG\\times\\ AC\\ =\\ CE\\times\\ CD$\n$2x\\times\\ AC\\ =\\ 3x\\times\\ 10x$ \n=> AC = 15x\nDividing (1) by (2), $\\ \\dfrac{\\ AB}{AC}$  = $\\ \\dfrac{\\ 6}{15}$  = $\\ \\dfrac{2}{5}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider a triangle ABC and a circle such that point A lies on the circle and the circle intersects BC at two points D and E. The circle intersects AB at F and AC at G. It is given that BF=CE and BD=CG. The ratio BD: DE: EC is equal to 2:7:3. Find the ratio of sides AB and AC.\n\n**Options:**\n- **A**. 2:5 ✅\n- **B**. 5:14\n- **C**. 3:5\n- **D**. 3:7\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the lengths as 2x, 7x and 3x.\n$BF\\times\\ AB\\ =\\ BD\\times\\ BE$ (Intersecting secants theorem)\n$3x\\times\\ AB\\ =\\ 2x\\times\\ 9x$\n=> AB = 6x\n$CG\\times\\ AC\\ =\\ CE\\times\\ CD$\n$2x\\times\\ AC\\ =\\ 3x\\times\\ 10x$ \n=> AC = 15x\nDividing (1) by (2), $\\ \\dfrac{\\ AB}{AC}$  = $\\ \\dfrac{\\ 6}{15}$  = $\\ \\dfrac{2}{5}$"
+    },
+    {
+      "qid": "quant-sectionals-14-15",
+      "passage_text": "",
+      "question_text": "The total cost price of 20 pens is equal to the total discount amount on 30 pens. If it is known that the cost price, selling price and marked price are in an arithmetic progression in no specific order, find out the profit/loss percent on the sale of 1 pen.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Loss of 33.33%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Profit of 66.66%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Profit of 33.33%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can't be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "20 CP = 30(MP - SP)\nCP, SP and MP are in AP. MP is always greater than both CP and SP.\nCase 1:\nCP<SP<MP\nLet SP = x.\nCP = x - d\nMP = x + d.\n20(x - d) = 30(x + d - x)\n20x - 20d = 30d\n2x = 5d\nProfit % = (SP - CP)/CP x 100 = (x - x + d)/(x - d) x 100 = d/(2.5d - d) x 100 = d/1.5d x 100% = 200/3% = 66.67%\nCase 2:\nSP<CP<MP\nLet CP = x.\nSP = x - d\nMP = x + d.\n20x = 30(x + d - x + d)\n20x = 60d\nx = 3d\nLoss % = (SP - CP)/CP x 100 = (3d - d - d)/3d x 100 = 33.33%\nHence, the value cannot be determined.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe total cost price of 20 pens is equal to the total discount amount on 30 pens. If it is known that the cost price, selling price and marked price are in an arithmetic progression in no specific order, find out the profit/loss percent on the sale of 1 pen.\n\n**Options:**\n- **A**. Loss of 33.33%\n- **B**. Profit of 66.66%\n- **C**. Profit of 33.33%\n- **D**. Can't be determined ✅\n\n**Correct Answer:** null\n\n**Solution:**\n20 CP = 30(MP - SP)\nCP, SP and MP are in AP. MP is always greater than both CP and SP.\nCase 1:\nCP<SP<MP\nLet SP = x.\nCP = x - d\nMP = x + d.\n20(x - d) = 30(x + d - x)\n20x - 20d = 30d\n2x = 5d\nProfit % = (SP - CP)/CP x 100 = (x - x + d)/(x - d) x 100 = d/(2.5d - d) x 100 = d/1.5d x 100% = 200/3% = 66.67%\nCase 2:\nSP<CP<MP\nLet CP = x.\nSP = x - d\nMP = x + d.\n20x = 30(x + d - x + d)\n20x = 60d\nx = 3d\nLoss % = (SP - CP)/CP x 100 = (3d - d - d)/3d x 100 = 33.33%\nHence, the value cannot be determined."
+    },
+    {
+      "qid": "quant-sectionals-14-16",
+      "passage_text": "",
+      "question_text": "A semicircle is drawn inside a rectangle ABCD such that AB is the diameter of the semicircle and CD is a tangent to it. A line passes through AC intersecting the circle at E. If the radius of the circle is 20 cm, find the area of triangle AEB(square cm)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "400",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "250",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "320",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The figure can be drawn as follows:\nSince AB is diameter, AB = 2*20 = 40 cm\nAlso, CD is a tangent, hence AD=BC = radius = 20 cm\nHere, AC = $\\sqrt{AB^2+BC^2}$ = $\\sqrt{\\ 400+1600}$ = $20\\sqrt{\\ 5}$\nAEB is a right angle. (Angle made by the diameter)\nIn triangle AEB and ABC, $\\angle\\ EAB\\ =\\ \\angle\\ CAB$ and $\\angle\\ AEB\\ =\\ \\angle\\ ABC\\ =90$\nHence, both triangles are similar. \nThe ratio of areas of similar triangles is the square of the ratio of sides of triangles.\nSo the ratio of corresponding sides = $\\ \\frac{\\ AB}{AC}$ = $\\ \\frac{\\ 40}{20\\sqrt{\\ 5}}$ = $\\ \\frac{\\ 2}{\\sqrt{\\ 5}}$\nHence, the ratio of areas = $\\ \\frac{\\ 4}{5}$ .....(1)\nNow, area of ABC = $\\ \\frac{\\ 1}{2}\\times\\ AB\\times\\ BC\\ =\\ $ $\\ \\frac{\\ 1}{2}\\times\\ 40\\times\\ 20\\ =\\ $ $400$ ....(2)\nFrom 1 and 2, $\\ \\frac{\\ 4}{5}$ = $\\ \\frac{\\ area\\left(ABE\\right)}{400}$ \n=> area ABE = 320",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA semicircle is drawn inside a rectangle ABCD such that AB is the diameter of the semicircle and CD is a tangent to it. A line passes through AC intersecting the circle at E. If the radius of the circle is 20 cm, find the area of triangle AEB(square cm)?\n\n**Options:**\n- **A**. 400\n- **B**. 250\n- **C**. 300\n- **D**. 320 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe figure can be drawn as follows:\nSince AB is diameter, AB = 2*20 = 40 cm\nAlso, CD is a tangent, hence AD=BC = radius = 20 cm\nHere, AC = $\\sqrt{AB^2+BC^2}$ = $\\sqrt{\\ 400+1600}$ = $20\\sqrt{\\ 5}$\nAEB is a right angle. (Angle made by the diameter)\nIn triangle AEB and ABC, $\\angle\\ EAB\\ =\\ \\angle\\ CAB$ and $\\angle\\ AEB\\ =\\ \\angle\\ ABC\\ =90$\nHence, both triangles are similar. \nThe ratio of areas of similar triangles is the square of the ratio of sides of triangles.\nSo the ratio of corresponding sides = $\\ \\frac{\\ AB}{AC}$ = $\\ \\frac{\\ 40}{20\\sqrt{\\ 5}}$ = $\\ \\frac{\\ 2}{\\sqrt{\\ 5}}$\nHence, the ratio of areas = $\\ \\frac{\\ 4}{5}$ .....(1)\nNow, area of ABC = $\\ \\frac{\\ 1}{2}\\times\\ AB\\times\\ BC\\ =\\ $ $\\ \\frac{\\ 1}{2}\\times\\ 40\\times\\ 20\\ =\\ $ $400$ ....(2)\nFrom 1 and 2, $\\ \\frac{\\ 4}{5}$ = $\\ \\frac{\\ area\\left(ABE\\right)}{400}$ \n=> area ABE = 320"
+    },
+    {
+      "qid": "quant-sectionals-14-17",
+      "passage_text": "",
+      "question_text": "A clerk while entering the name of a student in the register misspelt it. Later, he realized that he has interchanged the position of exactly 2 letters in the name. If the name of the student is AKANKSHA, then what is the number of ways in which the Clerk could have made a mistake?",
+      "options": [],
+      "correct_option_data": "24",
+      "solution_text": "AKANKSHA has 8 letters in total.\nThe 2 letters that got interchanged can be chosen in 8C2 = 28 ways.\nHowever, we can see that the clerk could not have interchanged 2 As or 2 Ks.\nThere are 3 As in total. Two of these 3 can be chosen in 3C2 = 3 ways. \nThere are 2 Ks in total. These 2 Ks can be chosen in 2C2 = 1 way. \nTherefore, the number of ways in which the clerk could have interchanged the letters in 28-3-1 = 24 ways.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA clerk while entering the name of a student in the register misspelt it. Later, he realized that he has interchanged the position of exactly 2 letters in the name. If the name of the student is AKANKSHA, then what is the number of ways in which the Clerk could have made a mistake?\n\n**Options:**\n\n**Correct Answer:** 24\n\n**Solution:**\nAKANKSHA has 8 letters in total.\nThe 2 letters that got interchanged can be chosen in 8C2 = 28 ways.\nHowever, we can see that the clerk could not have interchanged 2 As or 2 Ks.\nThere are 3 As in total. Two of these 3 can be chosen in 3C2 = 3 ways. \nThere are 2 Ks in total. These 2 Ks can be chosen in 2C2 = 1 way. \nTherefore, the number of ways in which the clerk could have interchanged the letters in 28-3-1 = 24 ways."
+    },
+    {
+      "qid": "quant-sectionals-14-18",
+      "passage_text": "",
+      "question_text": "A man starts on his jet-ski and covers a certain distance upstream and returns back to his start point. The difference in time taken while travelling upstream and downstream is 30 seconds. He takes 80 seconds to cover the entire distance(to and fro) in still water. If the speed of his jet-ski is 30 m/sec in still water then find out the speed of the stream?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12 m/sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10 m/sec",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20 m/sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15 m/sec",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since, the man takes 80 seconds to go to and fro in still water.\nSo, one way would take 40 seconds. And given, $u$(speed of jet-ski in still water) = 30 m/sec\n$\\therefore$ Total distance = 30 * 40 = 1200 m\nNow, difference in time between upstream and downstream journeys = 30 sec\nLet, upstream speed = $u$ - $v$\n       downstream speed = $u$ + $v$\nWhere $v$ = speed of stream\nSo, we have\n     $\\frac{1200}{u-v} -\\frac{1200}{u+v}=30$\n=> $\\frac{1200}{30-v} -\\frac{1200}{30+v}=30$\n=> $v^{2}+80v-900=0$\n=> $(v-10)(v+90)=0$\n=> $v$=10 m/sec\nHence, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man starts on his jet-ski and covers a certain distance upstream and returns back to his start point. The difference in time taken while travelling upstream and downstream is 30 seconds. He takes 80 seconds to cover the entire distance(to and fro) in still water. If the speed of his jet-ski is 30 m/sec in still water then find out the speed of the stream?\n\n**Options:**\n- **A**. 12 m/sec\n- **B**. 10 m/sec ✅\n- **C**. 20 m/sec\n- **D**. 15 m/sec\n\n**Correct Answer:** null\n\n**Solution:**\nSince, the man takes 80 seconds to go to and fro in still water.\nSo, one way would take 40 seconds. And given, $u$(speed of jet-ski in still water) = 30 m/sec\n$\\therefore$ Total distance = 30 * 40 = 1200 m\nNow, difference in time between upstream and downstream journeys = 30 sec\nLet, upstream speed = $u$ - $v$\n       downstream speed = $u$ + $v$\nWhere $v$ = speed of stream\nSo, we have\n     $\\frac{1200}{u-v} -\\frac{1200}{u+v}=30$\n=> $\\frac{1200}{30-v} -\\frac{1200}{30+v}=30$\n=> $v^{2}+80v-900=0$\n=> $(v-10)(v+90)=0$\n=> $v$=10 m/sec\nHence, option B is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-14-19",
+      "passage_text": "",
+      "question_text": "The raw material required for an industry comes from two countries - A and B. The cost of raw material and transport from A is 25% of the total production cost and the cost of raw material and transport from B forms 35% of the total production cost. The remaining 40% is the cost of labour. Due to a change in economic policies in the two countries, the total production cost incurred from country A rose by 10% and the total production cost incurred from country B rose by 20%. The selling price of the product is 1.2 times the cost of production. If the labour cost remains the same, what should be the percentage increase in the selling price of the product, so that the profit remains the same (round it to the nearest integer)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total production cost be ‘x’\nSelling price = 1.2x\nProduction cost incurred from A = 25% of x = x/4\nNew production cost incurred from A = (110/100)*(x/4) = 1.1x/4 = 0.275x\nNew production cost incurred from B = (120/100)*(35/100)*x = 0.420x\nNew total production cost = 0.275x + 0.420x + 0.400x = 1.095x\nThe profit in the first case is 1.2x-x=0.2x.\nSince profit is same,  new selling price = 1.295x\nSo, percentage increase in selling price = (0.095/1.2) * 100% = 7.91 = 8% (approx.)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe raw material required for an industry comes from two countries - A and B. The cost of raw material and transport from A is 25% of the total production cost and the cost of raw material and transport from B forms 35% of the total production cost. The remaining 40% is the cost of labour. Due to a change in economic policies in the two countries, the total production cost incurred from country A rose by 10% and the total production cost incurred from country B rose by 20%. The selling price of the product is 1.2 times the cost of production. If the labour cost remains the same, what should be the percentage increase in the selling price of the product, so that the profit remains the same (round it to the nearest integer)?\n\n**Options:**\n- **A**. 6%\n- **B**. 8% ✅\n- **C**. 12%\n- **D**. 10%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total production cost be ‘x’\nSelling price = 1.2x\nProduction cost incurred from A = 25% of x = x/4\nNew production cost incurred from A = (110/100)*(x/4) = 1.1x/4 = 0.275x\nNew production cost incurred from B = (120/100)*(35/100)*x = 0.420x\nNew total production cost = 0.275x + 0.420x + 0.400x = 1.095x\nThe profit in the first case is 1.2x-x=0.2x.\nSince profit is same,  new selling price = 1.295x\nSo, percentage increase in selling price = (0.095/1.2) * 100% = 7.91 = 8% (approx.)"
+    },
+    {
+      "qid": "quant-sectionals-14-20",
+      "passage_text": "",
+      "question_text": "If $\\log_{125} 729$ = x, then what is the value of $\\log_{81} 5625$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{4+x}{2x}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{6+2x}{3x}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{4+2x}{3x}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{6+x}{2x}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\log_{125} 729$ = $\\log_{5} 9$ = x\n=> $\\log_{9} 5 = \\frac{1}{x}$\n=> $\\log_{3} 5 = \\frac{2}{x}$\n$\\log_{81} 5625 = \\log_{81} 625 + \\log_{81} 9 = \\log_{3} 5 + \\frac{1}{2}$\n= $\\frac{2}{x} + \\frac{1}{2} = \\frac{4+x}{2x}$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\log_{125} 729$ = x, then what is the value of $\\log_{81} 5625$?\n\n**Options:**\n- **A**. $\\frac{4+x}{2x}$ ✅\n- **B**. $\\frac{6+2x}{3x}$\n- **C**. $\\frac{4+2x}{3x}$\n- **D**. $\\frac{6+x}{2x}$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log_{125} 729$ = $\\log_{5} 9$ = x\n=> $\\log_{9} 5 = \\frac{1}{x}$\n=> $\\log_{3} 5 = \\frac{2}{x}$\n$\\log_{81} 5625 = \\log_{81} 625 + \\log_{81} 9 = \\log_{3} 5 + \\frac{1}{2}$\n= $\\frac{2}{x} + \\frac{1}{2} = \\frac{4+x}{2x}$."
+    },
+    {
+      "qid": "quant-sectionals-14-21",
+      "passage_text": "",
+      "question_text": "Sam takes 24 days more than Peter to complete a task. Sam and Peter start working on the task simultaneously and Peter leaves 24 days before the task is completed. Peter completes 40% of the overall task. How long would Peter take to complete the task if he had worked independently?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "48 days",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "40 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "72 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "60 days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let Peter take ‘n’ days to complete the task. So, Sam takes (n+24) days to complete the task. Sam has to do only 60% of the entire task. So, Sam will need 3(n+24)/5 days. Peter has to do 40% of the entire task, so he would need 2n/5 days.\nSo, 2n/5 + 24 = 3(n+24)/5\n=> n/5 + 72/5 = 24\n=> n/5 = 24 - 72/5 = 48/5\nSo, n = 48 days",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSam takes 24 days more than Peter to complete a task. Sam and Peter start working on the task simultaneously and Peter leaves 24 days before the task is completed. Peter completes 40% of the overall task. How long would Peter take to complete the task if he had worked independently?\n\n**Options:**\n- **A**. 48 days ✅\n- **B**. 40 days\n- **C**. 72 days\n- **D**. 60 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet Peter take ‘n’ days to complete the task. So, Sam takes (n+24) days to complete the task. Sam has to do only 60% of the entire task. So, Sam will need 3(n+24)/5 days. Peter has to do 40% of the entire task, so he would need 2n/5 days.\nSo, 2n/5 + 24 = 3(n+24)/5\n=> n/5 + 72/5 = 24\n=> n/5 = 24 - 72/5 = 48/5\nSo, n = 48 days"
+    },
+    {
+      "qid": "quant-sectionals-14-22",
+      "passage_text": "",
+      "question_text": "A can complete job in 60 days working 3 hours a day. B can complete job in 90 days working 5 hours a day. If working alone, A works for 3 hours in a day and B works 5 hours a day. If they work together they work for 5 hours each in a day. On first day only A works, on second day only B works and on third day both of them work and this pattern continues till the job is done. How many days do they take to finish the job?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "45",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "60",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let total work be 900 units\nWork done by A in one hour = $\\frac{900}{180}$ = 5 units\nWork done by B in one hour = $\\frac{900}{450}$ = 2 units\nWork done on first day by A alone = 5 $\\times\\ $ 3 = 15\nWork done on second day by B alone = 2 $\\times\\ $ 5 = 10\nWork done on third day by both A and B = 5(5+2) = 35\nWork done by both of them in 3 days = 60 units\nNumber of days required to finish the job = $\\ \\frac{\\ 900\\times\\ 3}{60}$ = 45 days\nTherefore, answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA can complete job in 60 days working 3 hours a day. B can complete job in 90 days working 5 hours a day. If working alone, A works for 3 hours in a day and B works 5 hours a day. If they work together they work for 5 hours each in a day. On first day only A works, on second day only B works and on third day both of them work and this pattern continues till the job is done. How many days do they take to finish the job?\n\n**Options:**\n- **A**. 15\n- **B**. 30\n- **C**. 45 ✅\n- **D**. 60\n\n**Correct Answer:** null\n\n**Solution:**\nLet total work be 900 units\nWork done by A in one hour = $\\frac{900}{180}$ = 5 units\nWork done by B in one hour = $\\frac{900}{450}$ = 2 units\nWork done on first day by A alone = 5 $\\times\\ $ 3 = 15\nWork done on second day by B alone = 2 $\\times\\ $ 5 = 10\nWork done on third day by both A and B = 5(5+2) = 35\nWork done by both of them in 3 days = 60 units\nNumber of days required to finish the job = $\\ \\frac{\\ 900\\times\\ 3}{60}$ = 45 days\nTherefore, answer is option C."
+    }
+  ]
+}
