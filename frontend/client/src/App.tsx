@@ -35,6 +35,7 @@ import { AuthProvider } from "@/contexts/auth-context";
 import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
+import SopForgePage from "@/pages/sopforge";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -79,6 +80,7 @@ function Router() {
       <Route path="/signup" component={SignupPage} />
       <Route path="/add-question" component={AddQuestionPage} />
       <Route path="/settings" component={SettingsPage} />
+      <Route path="/sop-forge" component={SopForgePage} />
       <Route component={NotFound} />
     </Switch>
   );

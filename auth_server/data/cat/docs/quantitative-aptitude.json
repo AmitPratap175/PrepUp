@@ -42214,6 +42214,1346 @@
       "solution_text": null,
       "image_url": "",
       "full_markdown": "### Question (qid: 236785)\n\n**Passage:**\nFour integers w,x,y,z (not necessarily unique) are selected at random from 1 to 1000 numbers both inclusive. . The probability that wz-xy is even is\n\n1 16 \\frac{1}{16} 1 6 1 ​\n\n5 8 \\frac{5}{8} 8 5 ​\n\n9 16 \\frac{9}{16} 1 6 9 ​\n\n5 16 \\frac{5}{16} 1 6 5 ​\n\nFour integers w,x,y,z (not necessarily unique) are selected at random from 1 to 1000 numbers both inclusive.. The probability that wz-xy is even is\n\n**Options:**\n- **A**. $\\frac{1}{16}$\n- **B**. $\\frac{5}{8}$\n- **C**. $\\frac{9}{16}$\n- **D**. $\\frac{5}{16}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1283",
+      "passage_text": "",
+      "question_text": "Area of a trapezium ABCD, where AB and CD are parallel sides is 256 sq.cm The length of BC is 15 cm. The midpoints of all the sides are joined to form a quadrilateral. Again, the midpoints of the new quadrilateral are joined to form a new quadrilateral. This process of joining the midpoints is done a total of 9 times. The sum of the areas of all the quadrilaterals is A. What is the value of 4A?",
+      "options": [],
+      "correct_option_data": "2046",
+      "solution_text": "When the midpoints of a quadrilateral are joined, we get a new quadrilateral whose area is half the area of the original quadrilateral. (Varignon parallelogram)\nWhen the process is repeated 9 times, we get 10 quadrilaterals whose area gets reduced by 2 successively. \nThus, it forms a decreasing GP.\nThe sum of all terms = $ 256 * \\frac{1 - (\\frac{1}{2^{10}})}{1 - (\\frac{1}{2})}$\n= $\\frac{1023}{2} $\nThe value of 4A = 2046",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nArea of a trapezium ABCD, where AB and CD are parallel sides is 256 sq.cm The length of BC is 15 cm. The midpoints of all the sides are joined to form a quadrilateral. Again, the midpoints of the new quadrilateral are joined to form a new quadrilateral. This process of joining the midpoints is done a total of 9 times. The sum of the areas of all the quadrilaterals is A. What is the value of 4A?\n\n**Options:**\n\n**Correct Answer:** 2046\n\n**Solution:**\nWhen the midpoints of a quadrilateral are joined, we get a new quadrilateral whose area is half the area of the original quadrilateral. (Varignon parallelogram)\nWhen the process is repeated 9 times, we get 10 quadrilaterals whose area gets reduced by 2 successively. \nThus, it forms a decreasing GP.\nThe sum of all terms = $ 256 * \\frac{1 - (\\frac{1}{2^{10}})}{1 - (\\frac{1}{2})}$\n= $\\frac{1023}{2} $\nThe value of 4A = 2046"
+    },
+    {
+      "qid": "quant-1284",
+      "passage_text": "",
+      "question_text": "A row contains 16 seats. The number of ways in which 5 seats can be chosen such that no 2 seats are adjacent to each other is",
+      "options": [],
+      "correct_option_data": "792",
+      "solution_text": "We know that no 2 seats are adjacent to each other. \nLet us place the 5 seats and then distribute the empty seats between them. \nOnce we choose the 5 seats, we have to ensure that no 2 seats are adjacent to each other.\nThere will be 4 gaps between the 5 seats. \nLet us distribute 4 empty seats between them.\nSo, out of the 16 seats, we have accounted for 9 seats. \nThe remaining 16-9 = 7 empty seats must be distributed now. \nThere are 6 spaces available in total. We have to distribute these 7 seats in these 6 spaces. \nLet 'a' be the number of empty seats to the left of the first seat, 'b' be the number of empty seats (excluding the one we already distributed) between the first and second chair and so on. \nWe know that a+b+c+d+e+f = 7.\nThe number of non-negative integral solutions of this equation is given by $(7+6-1)C_{6-1}$ = $12C_{5}$ = $792$.\nTherefore, $792$ is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA row contains 16 seats. The number of ways in which 5 seats can be chosen such that no 2 seats are adjacent to each other is\n\n**Options:**\n\n**Correct Answer:** 792\n\n**Solution:**\nWe know that no 2 seats are adjacent to each other. \nLet us place the 5 seats and then distribute the empty seats between them. \nOnce we choose the 5 seats, we have to ensure that no 2 seats are adjacent to each other.\nThere will be 4 gaps between the 5 seats. \nLet us distribute 4 empty seats between them.\nSo, out of the 16 seats, we have accounted for 9 seats. \nThe remaining 16-9 = 7 empty seats must be distributed now. \nThere are 6 spaces available in total. We have to distribute these 7 seats in these 6 spaces. \nLet 'a' be the number of empty seats to the left of the first seat, 'b' be the number of empty seats (excluding the one we already distributed) between the first and second chair and so on. \nWe know that a+b+c+d+e+f = 7.\nThe number of non-negative integral solutions of this equation is given by $(7+6-1)C_{6-1}$ = $12C_{5}$ = $792$.\nTherefore, $792$ is the right answer."
+    },
+    {
+      "qid": "quant-1285",
+      "passage_text": "",
+      "question_text": "If x =$\\sqrt{2}-1$, find the value of $x^4+4x^3+6x^2+4x+8$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "x =$\\sqrt{2}-1$\nx+1 =$\\sqrt{2}$\n$(x+1)^4 = 4$\n$x^4+4x^3+6x^2+4x+1$ = 4\n$x^4+4x^3+6x^2+4x+8$ = 4+7 = 11",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x =$\\sqrt{2}-1$, find the value of $x^4+4x^3+6x^2+4x+8$.\n\n**Options:**\n- **A**. 9\n- **B**. 10\n- **C**. 11 ✅\n- **D**. 12\n\n**Correct Answer:** null\n\n**Solution:**\nx =$\\sqrt{2}-1$\nx+1 =$\\sqrt{2}$\n$(x+1)^4 = 4$\n$x^4+4x^3+6x^2+4x+1$ = 4\n$x^4+4x^3+6x^2+4x+8$ = 4+7 = 11"
+    },
+    {
+      "qid": "quant-1286",
+      "passage_text": "",
+      "question_text": "A cone exists such that its height \"h\" is three times its diameter and has a lateral surface area of X. A cone and frustum are obtained by cutting the cone parallel to its base at a height of 2h/3 and Y is the total lateral surface area of these two solids. Let 'a' be the percentage change in the value of Y w.r.t X. Then what can be said about 'a'.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25% < a <37.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10% < a < 25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5% < a < 10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "a < 5%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "On cutting the cone, the total surface area will increase but Lateral surface area will remain the same. Hence a = 0%.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cone exists such that its height \"h\" is three times its diameter and has a lateral surface area of X. A cone and frustum are obtained by cutting the cone parallel to its base at a height of 2h/3 and Y is the total lateral surface area of these two solids. Let 'a' be the percentage change in the value of Y w.r.t X. Then what can be said about 'a'.\n\n**Options:**\n- **A**. 25% < a <37.5%\n- **B**. 10% < a < 25%\n- **C**. 5% < a < 10%\n- **D**. a < 5% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nOn cutting the cone, the total surface area will increase but Lateral surface area will remain the same. Hence a = 0%."
+    },
+    {
+      "qid": "quant-1287",
+      "passage_text": "",
+      "question_text": "If the $n^{th}$ term of a series is given by  $t_{n}=[3^{n}]^{\\dfrac{1}{2^{n}}}$ , then find the product of infinite terms of the series.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$3\\sqrt{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given,\n$t_n=\\left[{3^{n}}\\right]^\\frac{1}{2^n}$ \n=> $t_n=3^\\frac{n}{2^n}$\n$\\prod_{n=1}^\\infty t_n=t_1*t_2*t_3*....*t_\\infty$\n= $3^\\frac{1}{2}*3^\\frac{2}{2^2}*3^\\frac{3}{2^3}...$\n= $3^{\\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}}....$\nLet, $S_n = \\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}.....$\n=> $S_n= x+{2x}^2+{3x}^3+...$ ______(1)     where $x=\\frac{1}{2}$\nMultiplying $x$ to equation (1) \n=> $x*S_n= x^2+{2x}^3+{3x}^4+...$ _____(2)\nOn subtracting equation (2) from (1) we have\n$(1-x)S_n=x+x^2+x^3+...$\n=> $(1-x)S_n=\\frac{x}{1-x}$\n=>$S_n=\\frac{x}{{(1-x)}^2}$\nOn substituting $x=\\frac{1}{2}$ we get\n$S_n=2$\n$\\therefore \\prod_{n=1}^\\infty t_n=3^2 = 9$\nHence, option B is the correct choice.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the $n^{th}$ term of a series is given by  $t_{n}=[3^{n}]^{\\dfrac{1}{2^{n}}}$ , then find the product of infinite terms of the series.\n\n**Options:**\n- **A**. 1\n- **B**. 9 ✅\n- **C**. 27\n- **D**. $3\\sqrt{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven,\n$t_n=\\left[{3^{n}}\\right]^\\frac{1}{2^n}$ \n=> $t_n=3^\\frac{n}{2^n}$\n$\\prod_{n=1}^\\infty t_n=t_1*t_2*t_3*....*t_\\infty$\n= $3^\\frac{1}{2}*3^\\frac{2}{2^2}*3^\\frac{3}{2^3}...$\n= $3^{\\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}}....$\nLet, $S_n = \\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}.....$\n=> $S_n= x+{2x}^2+{3x}^3+...$ ______(1)     where $x=\\frac{1}{2}$\nMultiplying $x$ to equation (1) \n=> $x*S_n= x^2+{2x}^3+{3x}^4+...$ _____(2)\nOn subtracting equation (2) from (1) we have\n$(1-x)S_n=x+x^2+x^3+...$\n=> $(1-x)S_n=\\frac{x}{1-x}$\n=>$S_n=\\frac{x}{{(1-x)}^2}$\nOn substituting $x=\\frac{1}{2}$ we get\n$S_n=2$\n$\\therefore \\prod_{n=1}^\\infty t_n=3^2 = 9$\nHence, option B is the correct choice."
+    },
+    {
+      "qid": "quant-1288",
+      "passage_text": "",
+      "question_text": "The water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. What is the weight of the water content that got evaporated(in grams)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. \n100g of grapes contains 1g grape solid and 99 g water.\nWater content reduced to 98%, thus the remaining 2 percent must be grape solid.\n2% grape solid= 1g \nThus the total weight of the dried grapes=X\n(2/100)*X= 1g\nX=50g\nThus the water content reduced from 99g till 49 g= 50g",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. What is the weight of the water content that got evaporated(in grams)?\n\n**Options:**\n- **A**. 2.5\n- **B**. 1\n- **C**. 25\n- **D**. 50 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. \n100g of grapes contains 1g grape solid and 99 g water.\nWater content reduced to 98%, thus the remaining 2 percent must be grape solid.\n2% grape solid= 1g \nThus the total weight of the dried grapes=X\n(2/100)*X= 1g\nX=50g\nThus the water content reduced from 99g till 49 g= 50g"
+    },
+    {
+      "qid": "quant-1289",
+      "passage_text": "",
+      "question_text": "Ram bought 1.5 ton AC of Samsui at Rs. 20,000.The AC has 1- year free maintenance and an offer at the time of purchasing to extend the maintenance for 2 more years by paying an additional amount of Rs.1470. It is known that the given model of Sansui Ac’s have a maintenance rate of 2.5% of cost the first year, with the maintenance rate increasing at 50% every year. How much gain or loss would Ram have on maintenance cost if he took the offer?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "33.33% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27.55% gain",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "33.3% gain",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The maintenance at the end of 1st year = 2.5% of 20,000=500\nMaintenance at the end of 2nd year = 500 + 50%(500) = 750\nMaintenance at the end of 3rd year = 1125\nThus, the total maintenance cost(excluding year 1) = 750 + 1125 = 1875\n∴the gain% of Ram = $\\frac{1875-1470}{1470}\\times100$% $\\approx 27.55$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam bought 1.5 ton AC of Samsui at Rs. 20,000.The AC has 1- year free maintenance and an offer at the time of purchasing to extend the maintenance for 2 more years by paying an additional amount of Rs.1470. It is known that the given model of Sansui Ac’s have a maintenance rate of 2.5% of cost the first year, with the maintenance rate increasing at 50% every year. How much gain or loss would Ram have on maintenance cost if he took the offer?\n\n**Options:**\n- **A**. 20% loss\n- **B**. 33.33% loss\n- **C**. 27.55% gain ✅\n- **D**. 33.3% gain\n\n**Correct Answer:** null\n\n**Solution:**\nThe maintenance at the end of 1st year = 2.5% of 20,000=500\nMaintenance at the end of 2nd year = 500 + 50%(500) = 750\nMaintenance at the end of 3rd year = 1125\nThus, the total maintenance cost(excluding year 1) = 750 + 1125 = 1875\n∴the gain% of Ram = $\\frac{1875-1470}{1470}\\times100$% $\\approx 27.55$%"
+    },
+    {
+      "qid": "quant-1290",
+      "passage_text": "",
+      "question_text": "Rinesh dropped a ball from a height of 360m. Each time the ball hits the ground it rebounds to 60% of the height from where it fell. Find the total distance(in metres) travelled by the ball before coming to rest.",
+      "options": [],
+      "correct_option_data": "1440",
+      "solution_text": "Total distance travelled by the ball = 360+360*0.6+360*0.6+360*0.6*0.6+360*0.6*0.6............................$\\infty$\n= 360+360*0.6*2+360*0.6*0.6*2 .................. $\\infty$\n= 360+2[360*0.6+360*0.6*0.6 ...............................$\\infty$]\n= 360+2[$360*0.6^1+360*0.6^2 ...............................\\infty$]\n= 360+2*$\\frac{360*0.6}{1-0.6}$\n= 360+2*$\\frac{360*0.6}{0.4}$\n= 1440m",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRinesh dropped a ball from a height of 360m. Each time the ball hits the ground it rebounds to 60% of the height from where it fell. Find the total distance(in metres) travelled by the ball before coming to rest.\n\n**Options:**\n\n**Correct Answer:** 1440\n\n**Solution:**\nTotal distance travelled by the ball = 360+360*0.6+360*0.6+360*0.6*0.6+360*0.6*0.6............................$\\infty$\n= 360+360*0.6*2+360*0.6*0.6*2 .................. $\\infty$\n= 360+2[360*0.6+360*0.6*0.6 ...............................$\\infty$]\n= 360+2[$360*0.6^1+360*0.6^2 ...............................\\infty$]\n= 360+2*$\\frac{360*0.6}{1-0.6}$\n= 360+2*$\\frac{360*0.6}{0.4}$\n= 1440m"
+    },
+    {
+      "qid": "quant-1291",
+      "passage_text": "",
+      "question_text": "A certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2 => $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$ => $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?\n\n**Options:**\n- **A**. 15 years\n- **B**. 20 years ✅\n- **C**. 25 years\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2 => $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$ => $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years"
+    },
+    {
+      "qid": "quant-1292",
+      "passage_text": "",
+      "question_text": "ABC is an equilateral triangle of side 8 cm. PQRS is a square as shown in the figure. Find the length of the side of the square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$8\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$8$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{8}{2+\\sqrt{3}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{8\\sqrt{3}}{2+\\sqrt{3}}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the side of the square be equal to a.\nSo, PQ = QR = RS = PS = a\nAQR is an equilateral triangle as QR is parallel to BC. Therefore, the length of AQ = AR = a\nIn triangle PBQ, as angle B is 60 degrees, the length of BQ = a/sin 60 = $\\frac{2}{\\sqrt{3}}a$\nTherefore, AB = AQ + BQ = $a+\\frac{2}{\\sqrt{3}}a = 8$\nOr, $a = \\frac{8\\sqrt{3}}{2+\\sqrt{3}}$",
+      "image_url": "https://cracku.in/media/uploads/text4170_31Ckgid.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABC is an equilateral triangle of side 8 cm. PQRS is a square as shown in the figure. Find the length of the side of the square?\n\n**Options:**\n- **A**. $8\\sqrt{3}$\n- **B**. $8$\n- **C**. $\\frac{8}{2+\\sqrt{3}}$\n- **D**. $\\frac{8\\sqrt{3}}{2+\\sqrt{3}}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the side of the square be equal to a.\nSo, PQ = QR = RS = PS = a\nAQR is an equilateral triangle as QR is parallel to BC. Therefore, the length of AQ = AR = a\nIn triangle PBQ, as angle B is 60 degrees, the length of BQ = a/sin 60 = $\\frac{2}{\\sqrt{3}}a$\nTherefore, AB = AQ + BQ = $a+\\frac{2}{\\sqrt{3}}a = 8$\nOr, $a = \\frac{8\\sqrt{3}}{2+\\sqrt{3}}$"
+    },
+    {
+      "qid": "quant-1293",
+      "passage_text": "",
+      "question_text": "Dinesh picks a three digit number. If it is known that the number picked by Dinesh is even, what is the probability (as a percentage) of the sum of the digits being an odd number?",
+      "options": [],
+      "correct_option_data": "50",
+      "solution_text": "We know that Dinesh has picked an even number.\nTherefore, the last digit should be one among 2, 4, 6, 8, and 0. \nWe have to find the probability of the sum of the digits being an odd number. \nFor the sum of the digits to be odd, the sum of the remaining 2 digits (since the last digit is even) should be odd. Also, since it has been given that Dinesh picks a 3 digit number, the first digit cannot be zero. \nThe first digit can be odd and the second digit can be even. This can happen in 5*5 = 25 ways. \nThe first digit can be even and the second digit can be odd. Since the first digit cannot be 0, four even numbers 2, 4, 6, or 8 can be the first digit. The first digit can be even and the second digit can be odd in 4*5 = 20 ways. \nThe third digit (last one) can be any of the five even numbers. \nTherefore, the total number of ways in which the sum of the digits of an even 3 digit number can be odd = (25+20)*5 = 45*5 = 225.\nTotal number of even 3 digit numbers = 9*10*5 = 450.\n=> The required probability is 225/450 = 50%.\nTherefore, 50 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDinesh picks a three digit number. If it is known that the number picked by Dinesh is even, what is the probability (as a percentage) of the sum of the digits being an odd number?\n\n**Options:**\n\n**Correct Answer:** 50\n\n**Solution:**\nWe know that Dinesh has picked an even number.\nTherefore, the last digit should be one among 2, 4, 6, 8, and 0. \nWe have to find the probability of the sum of the digits being an odd number. \nFor the sum of the digits to be odd, the sum of the remaining 2 digits (since the last digit is even) should be odd. Also, since it has been given that Dinesh picks a 3 digit number, the first digit cannot be zero. \nThe first digit can be odd and the second digit can be even. This can happen in 5*5 = 25 ways. \nThe first digit can be even and the second digit can be odd. Since the first digit cannot be 0, four even numbers 2, 4, 6, or 8 can be the first digit. The first digit can be even and the second digit can be odd in 4*5 = 20 ways. \nThe third digit (last one) can be any of the five even numbers. \nTherefore, the total number of ways in which the sum of the digits of an even 3 digit number can be odd = (25+20)*5 = 45*5 = 225.\nTotal number of even 3 digit numbers = 9*10*5 = 450.\n=> The required probability is 225/450 = 50%.\nTherefore, 50 is the correct answer."
+    },
+    {
+      "qid": "quant-1294",
+      "passage_text": "",
+      "question_text": "In a tank of 100 litres two advance-pipes A and B are fitted. A is an inlet pipe while B is an outlet pipe. In the advance-pipes flow of water is different every hour. The flow of water in the pipe A in the nth hour is (1+n) litres/hr, while the flow of water in the pipe B in the nth hour is (17-n) litres/hr. Initially, the tank was completely full and both the pipes were opened. At any point in time, what is the minimum quantity of water(in litres) in the tank?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "44",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The flow of water in pipe A for the first hour=1+1= 2 litres/hour\nThe flow of water in pipe B for the first hour= 17-1 = 16 litres/hour.\nNet flow in the tank = 2-16 = -14 litres/hr*1 hour = -14 litres\nThe flow of water in pipe A for the second hour= 1+2 = 3 litres/hour.\nThe flow of water in pipe B for the sec hour= 17-2 = 15 litres/hour.\nNet flow in the tank = 3-15 = -12 litres\nWe will consider till the net flow is negative.\nNet flow in subsequent hour -14,-12,-10,-8,-6..........\nThus total outflow will be = 14+12+10+8+6+4+2= 2{7x8/2}=56 litres\nThe minimum amount of water left will be 100-56=44 litres",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a tank of 100 litres two advance-pipes A and B are fitted. A is an inlet pipe while B is an outlet pipe. In the advance-pipes flow of water is different every hour. The flow of water in the pipe A in the nth hour is (1+n) litres/hr, while the flow of water in the pipe B in the nth hour is (17-n) litres/hr. Initially, the tank was completely full and both the pipes were opened. At any point in time, what is the minimum quantity of water(in litres) in the tank?\n\n**Options:**\n- **A**. 40\n- **B**. 36\n- **C**. 56\n- **D**. 44 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe flow of water in pipe A for the first hour=1+1= 2 litres/hour\nThe flow of water in pipe B for the first hour= 17-1 = 16 litres/hour.\nNet flow in the tank = 2-16 = -14 litres/hr*1 hour = -14 litres\nThe flow of water in pipe A for the second hour= 1+2 = 3 litres/hour.\nThe flow of water in pipe B for the sec hour= 17-2 = 15 litres/hour.\nNet flow in the tank = 3-15 = -12 litres\nWe will consider till the net flow is negative.\nNet flow in subsequent hour -14,-12,-10,-8,-6..........\nThus total outflow will be = 14+12+10+8+6+4+2= 2{7x8/2}=56 litres\nThe minimum amount of water left will be 100-56=44 litres"
+    },
+    {
+      "qid": "quant-1295",
+      "passage_text": "",
+      "question_text": "If 13x-7y=115 where x,y are positive integers, find the number of values of x given x>y.",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "13x=115+7y = 117+ 7y-2 \n=> x= 9+(7y-2)/13 \nfor y=4, x is an integer. So, (x,y)=(11,4)\nfor next pair of x,y add 7 to x and 13 to y.\nSo, the pairs will be (18,17), (25,30),(32,47)...\nOnly (11,4) and (18,17) satisfy the condition x>y.\nHence, 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf 13x-7y=115 where x,y are positive integers, find the number of values of x given x>y.\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\n13x=115+7y = 117+ 7y-2 \n=> x= 9+(7y-2)/13 \nfor y=4, x is an integer. So, (x,y)=(11,4)\nfor next pair of x,y add 7 to x and 13 to y.\nSo, the pairs will be (18,17), (25,30),(32,47)...\nOnly (11,4) and (18,17) satisfy the condition x>y.\nHence, 2."
+    },
+    {
+      "qid": "quant-1296",
+      "passage_text": "",
+      "question_text": "A piece of work can be done in m days if A works alone, in 2m days if B works alone, in 3m days if C works alone, in 4n days if P works alone and in 8n days if Q works alone. Also, it is known that the time taken to complete the given piece of work is the same if A, B and C work together and if P and Q work together. Find the ratio of m/n.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{44}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{40}{9}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{55}{9}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{11}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A does the work in m days. B does the work in 2m days. C does the work in 3m days.\nHence, in 1 day A does 1/m, B does 1/2m and C does 1/3m of the work.\nHence, in one day, together they complete $\\frac{1}{m}+\\frac{1}{2m}+\\frac{1}{3m}=\\frac{11}{6m}$ part of the work.\nHence, they can complete the entire work in $\\frac{6m}{11}$ days.\nSimilarly, P does the work in 4n days. Q does the work in 8n days.\nHence, in 1 day P does 1/4n and Q does 1/8n of the work.\nHence, in one day, together they complete $\\frac{1}{4n}+\\frac{1}{8n}=\\frac{3}{8n}$ part of the work.\nHence, they can complete the work in $\\frac{8n}{3}$ days.\nSo, according to the question, $\\frac{6m}{11}$ = $\\frac{8n}{3}$\nTherefore, $\\frac{m}{n}=\\frac{44}{9}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA piece of work can be done in m days if A works alone, in 2m days if B works alone, in 3m days if C works alone, in 4n days if P works alone and in 8n days if Q works alone. Also, it is known that the time taken to complete the given piece of work is the same if A, B and C work together and if P and Q work together. Find the ratio of m/n.\n\n**Options:**\n- **A**. $\\frac{44}{9}$ ✅\n- **B**. $\\frac{40}{9}$\n- **C**. $\\frac{55}{9}$\n- **D**. $\\frac{11}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nA does the work in m days. B does the work in 2m days. C does the work in 3m days.\nHence, in 1 day A does 1/m, B does 1/2m and C does 1/3m of the work.\nHence, in one day, together they complete $\\frac{1}{m}+\\frac{1}{2m}+\\frac{1}{3m}=\\frac{11}{6m}$ part of the work.\nHence, they can complete the entire work in $\\frac{6m}{11}$ days.\nSimilarly, P does the work in 4n days. Q does the work in 8n days.\nHence, in 1 day P does 1/4n and Q does 1/8n of the work.\nHence, in one day, together they complete $\\frac{1}{4n}+\\frac{1}{8n}=\\frac{3}{8n}$ part of the work.\nHence, they can complete the work in $\\frac{8n}{3}$ days.\nSo, according to the question, $\\frac{6m}{11}$ = $\\frac{8n}{3}$\nTherefore, $\\frac{m}{n}=\\frac{44}{9}$"
+    },
+    {
+      "qid": "quant-1297",
+      "passage_text": "",
+      "question_text": "The line $x-2y-1=0$ intersects the circle $x^2+y^2+4x-2y=5$ at points M and N. What is the ratio of the perpendicular distance of the circle’s centre from line segment MN to that of the perpendicular distance of the circle’s centre from the line $4x+2y+1=0$ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The center of the circle $x^2+y^2+4x-2y-5=0$ is at $C(-2,1)$. The perpendicular distance of a point (x,y) from any given line of the form $Ax+By+C=0$ is given as: $d=\\frac{\\left | Ax+By+C \\right |}{\\sqrt{A^2+B^2}}$\nHence, the distance of the point from $x-2y-1$ = $\\frac{5}{\\sqrt{5}}$\nSimilarly, the distance of the point from $4x+2y+1$ = $\\frac{5}{2\\sqrt{5}}$\nTherefore, the required ratio = $\\frac{\\frac{5}{\\sqrt{5}}}{\\frac{5}{2\\sqrt{5}}}$ = 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe line $x-2y-1=0$ intersects the circle $x^2+y^2+4x-2y=5$ at points M and N. What is the ratio of the perpendicular distance of the circle’s centre from line segment MN to that of the perpendicular distance of the circle’s centre from the line $4x+2y+1=0$ ?\n\n**Options:**\n- **A**. 2:1 ✅\n- **B**. 5:2\n- **C**. 3:1\n- **D**. 1:1\n\n**Correct Answer:** null\n\n**Solution:**\nThe center of the circle $x^2+y^2+4x-2y-5=0$ is at $C(-2,1)$. The perpendicular distance of a point (x,y) from any given line of the form $Ax+By+C=0$ is given as: $d=\\frac{\\left | Ax+By+C \\right |}{\\sqrt{A^2+B^2}}$\nHence, the distance of the point from $x-2y-1$ = $\\frac{5}{\\sqrt{5}}$\nSimilarly, the distance of the point from $4x+2y+1$ = $\\frac{5}{2\\sqrt{5}}$\nTherefore, the required ratio = $\\frac{\\frac{5}{\\sqrt{5}}}{\\frac{5}{2\\sqrt{5}}}$ = 2."
+    },
+    {
+      "qid": "quant-1298",
+      "passage_text": "",
+      "question_text": "The number of integral solutions of the equation $2^x(4-x) = 2(x+2)$ is",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "$2^x$ > 0\nSo $\\frac{2(x+2)}{4-x}$ > 0\n$(x+2)(4-x)$ > 0\n-2 < x < 4 \nFrom this range of values only x = 0, 1, 2 satisfies the equation.\nHence 3 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe number of integral solutions of the equation $2^x(4-x) = 2(x+2)$ is\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\n$2^x$ > 0\nSo $\\frac{2(x+2)}{4-x}$ > 0\n$(x+2)(4-x)$ > 0\n-2 < x < 4 \nFrom this range of values only x = 0, 1, 2 satisfies the equation.\nHence 3 is the correct answer."
+    },
+    {
+      "qid": "quant-1299",
+      "passage_text": "",
+      "question_text": "What is the last non zero digit of 101! ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$101!=101\\times\\ 100!$ and the last digit of 101 is 1. So the last digit of 101! will be the same as that of 100!.\nThe value of 10! can be easily calculated, 10!=362800.\n$10!=1 \\times 2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7 \\times 8 \\times 9 \\times 10$ and the last non zero digit is 8.\nAlso, $20!=10!\\times\\ 11\\times\\ 12\\times\\ 13\\times14\\times\\ 15\\times\\ 16\\times\\ 17\\times\\ 18\\times\\ 19\\times\\ 20$.\nWe can see that the last digit in each of the terms in multiplication is the same after 10!, which are 1,2,3,4,5,6,7,8,9,0.\nThus the last non zero digit of 20! will be the same as $8^2$ that is 4, as it consists of 10! and multiplication of digits similar to 10!.\nSimilarly the last non zero digit of  30! will be equal to $8^3$. This is the same as $20!\\times\\ 10!$. So the last digit of 30! is the same as $4\\times\\ 8=32$, that is 2.\nContinuing the pattern, we will see that the last non zero digit of 100! will be the same as $8^{10}$. Since 10 is of the form 4n+2, the last non zero digit will be the same as $8^2$ that is 4. Hence, 4 is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the last non zero digit of 101! ?\n\n**Options:**\n- **A**. 2\n- **B**. 4 ✅\n- **C**. 6\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\n$101!=101\\times\\ 100!$ and the last digit of 101 is 1. So the last digit of 101! will be the same as that of 100!.\nThe value of 10! can be easily calculated, 10!=362800.\n$10!=1 \\times 2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7 \\times 8 \\times 9 \\times 10$ and the last non zero digit is 8.\nAlso, $20!=10!\\times\\ 11\\times\\ 12\\times\\ 13\\times14\\times\\ 15\\times\\ 16\\times\\ 17\\times\\ 18\\times\\ 19\\times\\ 20$.\nWe can see that the last digit in each of the terms in multiplication is the same after 10!, which are 1,2,3,4,5,6,7,8,9,0.\nThus the last non zero digit of 20! will be the same as $8^2$ that is 4, as it consists of 10! and multiplication of digits similar to 10!.\nSimilarly the last non zero digit of  30! will be equal to $8^3$. This is the same as $20!\\times\\ 10!$. So the last digit of 30! is the same as $4\\times\\ 8=32$, that is 2.\nContinuing the pattern, we will see that the last non zero digit of 100! will be the same as $8^{10}$. Since 10 is of the form 4n+2, the last non zero digit will be the same as $8^2$ that is 4. Hence, 4 is the answer."
+    },
+    {
+      "qid": "quant-1300",
+      "passage_text": "",
+      "question_text": "Three cars A, B and C start from the same point, O, at the same time. A, B and C travel in three different directions such that the lines joining them to O make angles of 120 degrees with each other. After 2 hours, the cars are at the distance 100 km, 60km and 80km respectively from the starting point. What is the distance between a pair of cars which farthest from each other after one hour?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10$\\sqrt{\\ 61}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12$\\sqrt{\\ 61}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10$\\sqrt{\\ 69}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12$\\sqrt{\\ 51}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Three cars A, B and C start from the same point at the same time. A, B and C travel in three different directions such that it makes angle 120 degrees with each other.\nThe third side of the triangle can be calculated from the formula:\n$a^2=\\ b^2+c^2-\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$....(a,b and c are sides of the triangle)\ncos(120)=-0.5\nIn this case, cos ($\\theta\\ $) is negative, thus $a^2=\\ b^2+c^2+\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$ the maximum value of b and c will return the maximum value of a.\nThe distance between A and C will be farthest.\nAfter one hour the distance travelled by A = 50km  and C=40km\nThe distance between A and C=   $A^2=\\ 50^2+40^2-\\ 2\\cdot50\\cdot40\\ \\cos\\left(120\\ \\right)$\n$AC^2$= 4100+ 2(50)(40) (0.5)\n= 6100\nAC= 10$\\sqrt{\\ 61}$\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree cars A, B and C start from the same point, O, at the same time. A, B and C travel in three different directions such that the lines joining them to O make angles of 120 degrees with each other. After 2 hours, the cars are at the distance 100 km, 60km and 80km respectively from the starting point. What is the distance between a pair of cars which farthest from each other after one hour?\n\n**Options:**\n- **A**. 10$\\sqrt{\\ 61}$ ✅\n- **B**. 12$\\sqrt{\\ 61}$\n- **C**. 10$\\sqrt{\\ 69}$\n- **D**. 12$\\sqrt{\\ 51}$\n\n**Correct Answer:** null\n\n**Solution:**\nThree cars A, B and C start from the same point at the same time. A, B and C travel in three different directions such that it makes angle 120 degrees with each other.\nThe third side of the triangle can be calculated from the formula:\n$a^2=\\ b^2+c^2-\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$....(a,b and c are sides of the triangle)\ncos(120)=-0.5\nIn this case, cos ($\\theta\\ $) is negative, thus $a^2=\\ b^2+c^2+\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$ the maximum value of b and c will return the maximum value of a.\nThe distance between A and C will be farthest.\nAfter one hour the distance travelled by A = 50km  and C=40km\nThe distance between A and C=   $A^2=\\ 50^2+40^2-\\ 2\\cdot50\\cdot40\\ \\cos\\left(120\\ \\right)$\n$AC^2$= 4100+ 2(50)(40) (0.5)\n= 6100\nAC= 10$\\sqrt{\\ 61}$\nOption A"
+    },
+    {
+      "qid": "quant-1301",
+      "passage_text": "",
+      "question_text": "A shopkeeper gives 2 shirts free with the purchase of every 5 trousers and 3 trousers free with the purchase of every 8 shirts. Ram purchased 16 shirts and Shyam purchased 25 trousers. The percentage discount obtained by Ram was 20%. What was the percentage discount obtained by Shyam?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "27%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37.5%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost price of 1 shirt and 1 trouser be s and t respectively.\nRam pays for 16 shirts. For 8 shirts there are 3 free trousers. Hence for 16 shirts there will be 6 free trousers.\nSo total cost price if there was no discount = 16 shirts + 6 trousers = 16s+6t\nDiscount  = price of 6 trousers =6t\nDiscount offered to Ram = $\\frac{6t}{16s+6t} = 0.2$, $\\frac{s}{t} = \\frac{3}{2}$\nRam pays for 16 shirts. For 5 trousers there are 2 free shirts. Hence for 25 trousers there will be 10 free trousers.\nSo total cost price if there was no discount = 25 trousers + 10 shirts = 25t+10s\nDiscount  = price of 10 shirts = 10s \nLet the discount offered to Shyam be d%.\nDiscount offered to Shyam =$\\frac{10s}{25t+10s}*100$= d, d =$\\frac{\\frac{30t}{2}}{25t +\\frac{30t}{2}} = \\frac{30*100}{80}= 37.5$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper gives 2 shirts free with the purchase of every 5 trousers and 3 trousers free with the purchase of every 8 shirts. Ram purchased 16 shirts and Shyam purchased 25 trousers. The percentage discount obtained by Ram was 20%. What was the percentage discount obtained by Shyam?\n\n**Options:**\n- **A**. 40%\n- **B**. 27%\n- **C**. 32.5%\n- **D**. 37.5% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price of 1 shirt and 1 trouser be s and t respectively.\nRam pays for 16 shirts. For 8 shirts there are 3 free trousers. Hence for 16 shirts there will be 6 free trousers.\nSo total cost price if there was no discount = 16 shirts + 6 trousers = 16s+6t\nDiscount  = price of 6 trousers =6t\nDiscount offered to Ram = $\\frac{6t}{16s+6t} = 0.2$, $\\frac{s}{t} = \\frac{3}{2}$\nRam pays for 16 shirts. For 5 trousers there are 2 free shirts. Hence for 25 trousers there will be 10 free trousers.\nSo total cost price if there was no discount = 25 trousers + 10 shirts = 25t+10s\nDiscount  = price of 10 shirts = 10s \nLet the discount offered to Shyam be d%.\nDiscount offered to Shyam =$\\frac{10s}{25t+10s}*100$= d, d =$\\frac{\\frac{30t}{2}}{25t +\\frac{30t}{2}} = \\frac{30*100}{80}= 37.5$%"
+    },
+    {
+      "qid": "quant-1302",
+      "passage_text": "",
+      "question_text": "Krishna got onto an upward-moving escalator and started moving up the escalator at a constant speed.  It takes him 30 seconds to cover the distance. If he decided to remain stationary on the escalator, it would have taken him 50% extra time to reach the other end of the escalator. In how much time(in seconds) will Krishna be able to move from one end to other end of a stationary escalator?",
+      "options": [],
+      "correct_option_data": "90",
+      "solution_text": "Let the speed of the escalator be $x$ steps/second and the speed of Krishna is $y$ steps/second.\nLet the total distance to be covered be $z$ steps\nAs per question $(x+y)30 = z$....(I)\nIf he stays stationary then it takes 50% extra time\n$(x)30 \\times 1.5 = z$ or $45x = z$....(II)\nPutting (II) in (I) $ 30x +30y = 45x$ or $30y = 15x$ or $y = \\frac{x}{2}$...(III)\n When the escalator is stationery, let time taken by Krishna to reach the other end be $t$ seconds\nThus $ ty = z$ . Putting (II) and (III)\n$ t \\ \\frac{x}{2} = 45x$ or t = 90 seconds",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nKrishna got onto an upward-moving escalator and started moving up the escalator at a constant speed.  It takes him 30 seconds to cover the distance. If he decided to remain stationary on the escalator, it would have taken him 50% extra time to reach the other end of the escalator. In how much time(in seconds) will Krishna be able to move from one end to other end of a stationary escalator?\n\n**Options:**\n\n**Correct Answer:** 90\n\n**Solution:**\nLet the speed of the escalator be $x$ steps/second and the speed of Krishna is $y$ steps/second.\nLet the total distance to be covered be $z$ steps\nAs per question $(x+y)30 = z$....(I)\nIf he stays stationary then it takes 50% extra time\n$(x)30 \\times 1.5 = z$ or $45x = z$....(II)\nPutting (II) in (I) $ 30x +30y = 45x$ or $30y = 15x$ or $y = \\frac{x}{2}$...(III)\n When the escalator is stationery, let time taken by Krishna to reach the other end be $t$ seconds\nThus $ ty = z$ . Putting (II) and (III)\n$ t \\ \\frac{x}{2} = 45x$ or t = 90 seconds"
+    },
+    {
+      "qid": "quant-1303",
+      "passage_text": "",
+      "question_text": "In a test of 50 questions, 3 marks were awarded for a correct answer, 0 for not attempting and -1 for an incorrect answer. In how many ways can the student score 120 marks?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Suppose a questions were answered correctly.\n'b' were answered incorrectly.\n3a-b= 120\na+b<50\na=40, b=0\na=41, b=3\na=42, b=6\na=43, b= 9\nbut here a+b=43+9=52...not possible.\nThus 3 ways",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a test of 50 questions, 3 marks were awarded for a correct answer, 0 for not attempting and -1 for an incorrect answer. In how many ways can the student score 120 marks?\n\n**Options:**\n- **A**. 2\n- **B**. 3 ✅\n- **C**. 1\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nSuppose a questions were answered correctly.\n'b' were answered incorrectly.\n3a-b= 120\na+b<50\na=40, b=0\na=41, b=3\na=42, b=6\na=43, b= 9\nbut here a+b=43+9=52...not possible.\nThus 3 ways"
+    },
+    {
+      "qid": "quant-1304",
+      "passage_text": "",
+      "question_text": "If x and y are integers and |x|+|y|<11, then how many distinct pairs of (x,y) are possible?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "191",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "221",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "201",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first quadrant, both x,y are positive, hence x+y<11\nIn the 2nd quadrant, x is negative, y is positive, hence -x+y<11\nIn the 3rd quadrant, both x,y are negative, hence -x-y<11\nIn the fourth quadrant, x is positive, y is negative, hence x-y<11\nIn xy plane, the given expression can be represented using the following figure.\nIn the first quadrant, x+y<11\nFor x = 1, y = 1,2,3,4.......9 (y can take 9 values)\nFor x = 2, y = 1,2,......8 (8 values)\n.......\n....\nFor x = 9, y can take only 1 value. i.e. y =1\nHence, points in each quadrant = 9+8+7+6+5+4+3+2+1 = 45   (Using similarity)\n=> Number of points all four quadrants = 45*4 = 180\nNow, points of x-axis are (-10,0),(-9,0), (-8,0), (-7,0).................(8,0),(9,0), (10,0)  (Total 10+10+1 = 21 points)\nSimilarly, on y axis, the number of points = 21\nSince, the origin is counted twice, the number of points on both axes = 21*2-1 = 41\nTotal number of points = 180+41 = 221",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x and y are integers and |x|+|y|<11, then how many distinct pairs of (x,y) are possible?\n\n**Options:**\n- **A**. 191\n- **B**. 180\n- **C**. 221 ✅\n- **D**. 201\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first quadrant, both x,y are positive, hence x+y<11\nIn the 2nd quadrant, x is negative, y is positive, hence -x+y<11\nIn the 3rd quadrant, both x,y are negative, hence -x-y<11\nIn the fourth quadrant, x is positive, y is negative, hence x-y<11\nIn xy plane, the given expression can be represented using the following figure.\nIn the first quadrant, x+y<11\nFor x = 1, y = 1,2,3,4.......9 (y can take 9 values)\nFor x = 2, y = 1,2,......8 (8 values)\n.......\n....\nFor x = 9, y can take only 1 value. i.e. y =1\nHence, points in each quadrant = 9+8+7+6+5+4+3+2+1 = 45   (Using similarity)\n=> Number of points all four quadrants = 45*4 = 180\nNow, points of x-axis are (-10,0),(-9,0), (-8,0), (-7,0).................(8,0),(9,0), (10,0)  (Total 10+10+1 = 21 points)\nSimilarly, on y axis, the number of points = 21\nSince, the origin is counted twice, the number of points on both axes = 21*2-1 = 41\nTotal number of points = 180+41 = 221"
+    },
+    {
+      "qid": "quant-1305",
+      "passage_text": "",
+      "question_text": "What would be the area enclosed by the inequalities $\\left|x\\right|+\\left|y\\right|\\le4$, $\\left|x\\right|\\ge2$ and $\\left|y\\right|\\ge2$ in square units?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "The first expression is linear in nature, meaning that it will act as a linear equation betweeen its critical points. \nThe critical points for $\\left|x\\right|+\\left|y\\right|\\le4$ would be at x=0 and y=0\nWe get the pairs, (4,0), (-4,0), (0, 4),(0, -4)\nDrawing these out, we get the rough figure at \nThe other two inequalities represent lines that are parallel to y and x-axis respectively. \nDrawing them out we get:\nWe see that there is no overlapping area of the three regions. We can numerically calculate it as when $x=\\pm\\ 2$ and $y=\\pm\\ 2$, then the first inequality is satisfied at four points and not region. \nTherefore, the area enclosed by the three inequalities would be 0",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat would be the area enclosed by the inequalities $\\left|x\\right|+\\left|y\\right|\\le4$, $\\left|x\\right|\\ge2$ and $\\left|y\\right|\\ge2$ in square units?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nThe first expression is linear in nature, meaning that it will act as a linear equation betweeen its critical points. \nThe critical points for $\\left|x\\right|+\\left|y\\right|\\le4$ would be at x=0 and y=0\nWe get the pairs, (4,0), (-4,0), (0, 4),(0, -4)\nDrawing these out, we get the rough figure at \nThe other two inequalities represent lines that are parallel to y and x-axis respectively. \nDrawing them out we get:\nWe see that there is no overlapping area of the three regions. We can numerically calculate it as when $x=\\pm\\ 2$ and $y=\\pm\\ 2$, then the first inequality is satisfied at four points and not region. \nTherefore, the area enclosed by the three inequalities would be 0"
+    },
+    {
+      "qid": "quant-1306",
+      "passage_text": "",
+      "question_text": "$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$. What is the value of $[k]$, where $[x]$ represents the largest integer less than or equal to $x$?",
+      "options": [],
+      "correct_option_data": "64",
+      "solution_text": "$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(\\log_{6}{6} + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(1 + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4 \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 9^{\\log_{6}{4}} \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 36^{\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{2\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{\\log_{6}{16}} \\times = k$\nor, $4 \\times 16 = k$\nThus, $k = 64$\nHence, 64 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$. What is the value of $[k]$, where $[x]$ represents the largest integer less than or equal to $x$?\n\n**Options:**\n\n**Correct Answer:** 64\n\n**Solution:**\n$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(\\log_{6}{6} + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(1 + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4 \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 9^{\\log_{6}{4}} \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 36^{\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{2\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{\\log_{6}{16}} \\times = k$\nor, $4 \\times 16 = k$\nThus, $k = 64$\nHence, 64 is the correct answer."
+    },
+    {
+      "qid": "quant-1307",
+      "passage_text": "",
+      "question_text": "A number is chosen at random from all the possible permutations of the digits of the number 16789. What is the probability that the number begins with an even number and ends with an odd number?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3/5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3/10",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2/5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number is chosen at random from all the possible permutations of the digits of the number 16789. What is the probability that the number begins with an even number and ends with an odd number?\n\n**Options:**\n- **A**. 3/5\n- **B**. 1/5\n- **C**. 3/10 ✅\n- **D**. 2/5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1308",
+      "passage_text": "",
+      "question_text": "Srikar purchased a bike and a cycle for a total of Rs. 1,50,000. He later sold both for Rs. 1,80,000 combined. The profit earned on the cycle was Rs. 10,000, and the ratio of the profit percentages on the cycle and the bike was 3:4. What was the cost price of the bike?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 90,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 1,00,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 80,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 1,20,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The profit obtained in the total transaction is 180000 - 150000 = Rs. 30,000\nWe are told that the profit obtained on cycle is Rs. 10,000. So, the profit obtained on bike is Rs. 20,000.\nLet's assume the cost price of bike as X and cycle as Y.\n$\\dfrac{\\dfrac{10000}{Y}}{\\dfrac{20000}{X}}=\\dfrac{3}{4}$\n $\\dfrac{X}{2Y}=\\dfrac{3}{4}\\Rightarrow\\ Y=\\ \\dfrac{2}{3}X$\nWe know that X+Y = Rs.1,50,000\n$X+\\dfrac{2}{3}X = 150000$\nX= 90,000",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSrikar purchased a bike and a cycle for a total of Rs. 1,50,000. He later sold both for Rs. 1,80,000 combined. The profit earned on the cycle was Rs. 10,000, and the ratio of the profit percentages on the cycle and the bike was 3:4. What was the cost price of the bike?\n\n**Options:**\n- **A**. Rs. 90,000 ✅\n- **B**. Rs. 1,00,000\n- **C**. Rs. 80,000\n- **D**. Rs. 1,20,000\n\n**Correct Answer:** null\n\n**Solution:**\nThe profit obtained in the total transaction is 180000 - 150000 = Rs. 30,000\nWe are told that the profit obtained on cycle is Rs. 10,000. So, the profit obtained on bike is Rs. 20,000.\nLet's assume the cost price of bike as X and cycle as Y.\n$\\dfrac{\\dfrac{10000}{Y}}{\\dfrac{20000}{X}}=\\dfrac{3}{4}$\n $\\dfrac{X}{2Y}=\\dfrac{3}{4}\\Rightarrow\\ Y=\\ \\dfrac{2}{3}X$\nWe know that X+Y = Rs.1,50,000\n$X+\\dfrac{2}{3}X = 150000$\nX= 90,000"
+    },
+    {
+      "qid": "quant-1309",
+      "passage_text": "",
+      "question_text": "Three friends, Dhruv, Dhruvi, and Ravi, planned a meetup. Dhruv leaves Delhi at 6:00 AM at 40 km/h, and Dhruvi leaves Jaipur at the same time at 20 km/h. Ravi, who was supposed to leave with Dhruv, starts at 7:00 AM from Delhi. The distance between Delhi and Jaipur is 480 km. Ravi reaches the meeting point 1 hour later than Dhruv and 2 hours earlier than Dhruvi. What is the distance from Jaipur to the meeting point?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "280 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "160 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200 Km",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "180 Km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that Ravi leaves 1 hour later than Dhruv and also reaches the meeting point 1 hour later than Dhruv. It means Ravi must have driven at the same speed as Dhruv, i.e. 40 Km/hr.\nFurther, we are given that Ravi reaches the meeting point 3 hours earlier than Dhruvi who drove at the speed of 20 Km/hr.\nLet the time Dhruv takes to reach the meeting point is $x$ hours so the time Dhruvi takes to reach the meeting point will be $x+3$ hours since she also started one hour earlier than Ravi and reaches two hours later than him.\nTotal Distance covered by Dhruv = 40*x = 40x km\nAnd, the total distance covered by Dhruvi = 20*(x+3) = 20x + 60 Km\nWe know that they would have covered a distance of 480 Km together since they meet somewhere between the route. \nHence, 40x + 20x + 60 = 480\n60x = 420\nx = 7\nHence, Dhruv drove for 7 hours. So, Dhruvi would have driven for 7+3 = 10 hours. \nSince Dhruvi drove from Jaipur, the total distance covered by her to reach the meeting point = 20*10 = 200 Km.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree friends, Dhruv, Dhruvi, and Ravi, planned a meetup. Dhruv leaves Delhi at 6:00 AM at 40 km/h, and Dhruvi leaves Jaipur at the same time at 20 km/h. Ravi, who was supposed to leave with Dhruv, starts at 7:00 AM from Delhi. The distance between Delhi and Jaipur is 480 km. Ravi reaches the meeting point 1 hour later than Dhruv and 2 hours earlier than Dhruvi. What is the distance from Jaipur to the meeting point?\n\n**Options:**\n- **A**. 280 Km\n- **B**. 160 Km\n- **C**. 200 Km ✅\n- **D**. 180 Km\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that Ravi leaves 1 hour later than Dhruv and also reaches the meeting point 1 hour later than Dhruv. It means Ravi must have driven at the same speed as Dhruv, i.e. 40 Km/hr.\nFurther, we are given that Ravi reaches the meeting point 3 hours earlier than Dhruvi who drove at the speed of 20 Km/hr.\nLet the time Dhruv takes to reach the meeting point is $x$ hours so the time Dhruvi takes to reach the meeting point will be $x+3$ hours since she also started one hour earlier than Ravi and reaches two hours later than him.\nTotal Distance covered by Dhruv = 40*x = 40x km\nAnd, the total distance covered by Dhruvi = 20*(x+3) = 20x + 60 Km\nWe know that they would have covered a distance of 480 Km together since they meet somewhere between the route. \nHence, 40x + 20x + 60 = 480\n60x = 420\nx = 7\nHence, Dhruv drove for 7 hours. So, Dhruvi would have driven for 7+3 = 10 hours. \nSince Dhruvi drove from Jaipur, the total distance covered by her to reach the meeting point = 20*10 = 200 Km."
+    },
+    {
+      "qid": "quant-1310",
+      "passage_text": "",
+      "question_text": "A, B and C are standing in the clockwise direction at the corners of an equilateral triangle of side 'a'. A and B run clockwise while C runs anti clockwise along the sides of the triangle with speeds of 1:2:3 respectively. How much distance does C run when they meet for the third time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18a",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24a",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12a",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36a",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can draw out a rough diagram as follows:\nLet's say A takes 1 minute to cover one side of the park. In that 1 minute, C will make an entire loop and be at its starting point, and B will cross two edges. \nA and B will meet first at the 2 minute mark (at C's starting point), where C will also be. \nThis would be the first instance of them all meeting together. \nThe second meeting of A and B will again be at the same point, after 3 minutes. \nThen, they keep meeting at C's starting point every three minutes. \nSo, the time taken for their third meeting would be 2+3+3 = 8 minutes. \nWe initially assumed that C travels all three sides of the triangle in a single minute, meaning that in 8 minutes, he travelled a total of 24a in distance. \nTherefore, Option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B and C are standing in the clockwise direction at the corners of an equilateral triangle of side 'a'. A and B run clockwise while C runs anti clockwise along the sides of the triangle with speeds of 1:2:3 respectively. How much distance does C run when they meet for the third time?\n\n**Options:**\n- **A**. 18a\n- **B**. 24a ✅\n- **C**. 12a\n- **D**. 36a\n\n**Correct Answer:** null\n\n**Solution:**\nWe can draw out a rough diagram as follows:\nLet's say A takes 1 minute to cover one side of the park. In that 1 minute, C will make an entire loop and be at its starting point, and B will cross two edges. \nA and B will meet first at the 2 minute mark (at C's starting point), where C will also be. \nThis would be the first instance of them all meeting together. \nThe second meeting of A and B will again be at the same point, after 3 minutes. \nThen, they keep meeting at C's starting point every three minutes. \nSo, the time taken for their third meeting would be 2+3+3 = 8 minutes. \nWe initially assumed that C travels all three sides of the triangle in a single minute, meaning that in 8 minutes, he travelled a total of 24a in distance. \nTherefore, Option B is the correct answer."
+    },
+    {
+      "qid": "quant-1311",
+      "passage_text": "",
+      "question_text": "$\\alpha\\ $ and $\\beta\\ $ are the roots of the quadratic equation $2x^2+\\left(\\cos\\theta\\ \\right)x-1=0$. If the maximum value of the expression $\\left(\\alpha^3+\\beta^3\\right)^2$ is $\\gamma\\ $, find the value of $128\\gamma\\ $",
+      "options": [],
+      "correct_option_data": "98",
+      "solution_text": "The sum of the roots will be, $\\alpha+\\beta=-\\dfrac{\\cos\\theta}{2}$ and product of the roots will be $\\alpha\\beta=-\\dfrac{1}{2}$\nWe can find the value of $\\alpha^2+\\beta^2$ since this equals, $\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\n$\\alpha^2+\\beta^2=\\dfrac{\\cos^2\\theta\\ }{4}+1$\n$\\left(\\alpha^3+\\beta^3\\right)=\\left(\\alpha+\\beta\\right)\\left(\\alpha^2+\\beta^2-\\alpha\\beta\\right)$\nSubstituting the values we have, \n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+1+\\dfrac{1}{2}\\right)$\n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+\\dfrac{3}{2}\\right)$\nSince we are asked to find the square of this value, we can ignore the polarity and take the value of cos for which it will give the biggest value, which is when it is equal to 1. \n$\\left(\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{1}{4}+\\dfrac{3}{2}\\right)\\right)^2=\\left(\\dfrac{7}{8}\\right)^2$\nWe are asked to find, $128\\gamma=128\\times\\dfrac{49}{64}=98$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$\\alpha\\ $ and $\\beta\\ $ are the roots of the quadratic equation $2x^2+\\left(\\cos\\theta\\ \\right)x-1=0$. If the maximum value of the expression $\\left(\\alpha^3+\\beta^3\\right)^2$ is $\\gamma\\ $, find the value of $128\\gamma\\ $\n\n**Options:**\n\n**Correct Answer:** 98\n\n**Solution:**\nThe sum of the roots will be, $\\alpha+\\beta=-\\dfrac{\\cos\\theta}{2}$ and product of the roots will be $\\alpha\\beta=-\\dfrac{1}{2}$\nWe can find the value of $\\alpha^2+\\beta^2$ since this equals, $\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\n$\\alpha^2+\\beta^2=\\dfrac{\\cos^2\\theta\\ }{4}+1$\n$\\left(\\alpha^3+\\beta^3\\right)=\\left(\\alpha+\\beta\\right)\\left(\\alpha^2+\\beta^2-\\alpha\\beta\\right)$\nSubstituting the values we have, \n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+1+\\dfrac{1}{2}\\right)$\n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+\\dfrac{3}{2}\\right)$\nSince we are asked to find the square of this value, we can ignore the polarity and take the value of cos for which it will give the biggest value, which is when it is equal to 1. \n$\\left(\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{1}{4}+\\dfrac{3}{2}\\right)\\right)^2=\\left(\\dfrac{7}{8}\\right)^2$\nWe are asked to find, $128\\gamma=128\\times\\dfrac{49}{64}=98$"
+    },
+    {
+      "qid": "quant-1312",
+      "passage_text": "",
+      "question_text": "A group of four athletes—Ajay, Vijay, Sanjay, and Shyam—participated in a marathon. Ajay ran 25% more distance than Vijay, and Sanjay ran 40% less distance than Shyam. Additionally, Ajay ran 25 kilometers more than Shyam. The total distance covered by Vijay and Sanjay combined is 300 kilometers. What is the difference between the distances covered by Vijay and Sanjay?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60 Km",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "120 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "80 Km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that Ajay ran 25% more distance than Vijay. Let the distance covered by Vijay is $100x\\ Km$ so the distance covered by Ajay will be $100x\\times1.25=125x\\ Km$\nFurther, Sanjay ran 40% less distance than Shyam. Let the distance covered by Shyam is 100y Km so the distance covered by Sanjay will be $100y\\ \\ \\times\\left(100-40\\right)\\%=60y$\nNow, we are given that Ajay ran 25 kilometers more than Shyam.\nOr, we can say, $125x=25+100y \\Rightarrow 5x=1+ 4y$ ....... Equation 1.\nAnd, the total distance covered by Vijay and Sanjay combined is 300 kilometers.\n$100x+60y=300$\nOr, $5x+3y=15$\nReplacing the value of 5x from equation 1,\nWe get, $1+4y+3y=15$\n$7y=14$\n$y=2$\nReplacing the value of y in equation 1, we get, $x=1.8$\nWe need to find the difference between the distances covered by Vijay and Sanjay.\nOr, $100x-60y$\nOr, $100\\left(1.8\\right)-60\\left(2\\right)=60\\ Km$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of four athletes—Ajay, Vijay, Sanjay, and Shyam—participated in a marathon. Ajay ran 25% more distance than Vijay, and Sanjay ran 40% less distance than Shyam. Additionally, Ajay ran 25 kilometers more than Shyam. The total distance covered by Vijay and Sanjay combined is 300 kilometers. What is the difference between the distances covered by Vijay and Sanjay?\n\n**Options:**\n- **A**. 100 Km\n- **B**. 60 Km ✅\n- **C**. 120 Km\n- **D**. 80 Km\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that Ajay ran 25% more distance than Vijay. Let the distance covered by Vijay is $100x\\ Km$ so the distance covered by Ajay will be $100x\\times1.25=125x\\ Km$\nFurther, Sanjay ran 40% less distance than Shyam. Let the distance covered by Shyam is 100y Km so the distance covered by Sanjay will be $100y\\ \\ \\times\\left(100-40\\right)\\%=60y$\nNow, we are given that Ajay ran 25 kilometers more than Shyam.\nOr, we can say, $125x=25+100y \\Rightarrow 5x=1+ 4y$ ....... Equation 1.\nAnd, the total distance covered by Vijay and Sanjay combined is 300 kilometers.\n$100x+60y=300$\nOr, $5x+3y=15$\nReplacing the value of 5x from equation 1,\nWe get, $1+4y+3y=15$\n$7y=14$\n$y=2$\nReplacing the value of y in equation 1, we get, $x=1.8$\nWe need to find the difference between the distances covered by Vijay and Sanjay.\nOr, $100x-60y$\nOr, $100\\left(1.8\\right)-60\\left(2\\right)=60\\ Km$"
+    },
+    {
+      "qid": "quant-1313",
+      "passage_text": "",
+      "question_text": "A shirt factory in China employs 10 men and 10 women, each working two 8-hour shifts. Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second. The factory produces 1,760 shirts in the first shift and 1,520 in the second. Find the number of shirts one man and woman can make per hour at full efficiency.",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Let us consider a man's efficiency as M and a woman's efficiency as W. \nWe are told that the factory employs 10 of each, working two shifts. \nUsing the information, \"Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second.\" We draw up the equations for this\nFirst shift: 10(M+0.7W)=1760\nSecond shift: 10(0.6M+W)=1520\nExpanding these equations, \n10M+7W=1760 and 6M+10W=1520\nMultiplying the first equation by 6 and the second one by 10\n60M+42W=10560 and 60M+100W=15200\nSubtracting the two equations, we get 58W=4640\nWe get W=80, but we are told that each shift is 8 hours, so the per-hour efficiency of a woman is 10 shirts. \nUsing W=80, substituting this, we get M=120 and similarly, the per-hour efficiency is 15 shirts. \nThe question asks for one man and woman in one hour. So, 10+15=25 shirts.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shirt factory in China employs 10 men and 10 women, each working two 8-hour shifts. Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second. The factory produces 1,760 shirts in the first shift and 1,520 in the second. Find the number of shirts one man and woman can make per hour at full efficiency.\n\n**Options:**\n\n**Correct Answer:** 25\n\n**Solution:**\nLet us consider a man's efficiency as M and a woman's efficiency as W. \nWe are told that the factory employs 10 of each, working two shifts. \nUsing the information, \"Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second.\" We draw up the equations for this\nFirst shift: 10(M+0.7W)=1760\nSecond shift: 10(0.6M+W)=1520\nExpanding these equations, \n10M+7W=1760 and 6M+10W=1520\nMultiplying the first equation by 6 and the second one by 10\n60M+42W=10560 and 60M+100W=15200\nSubtracting the two equations, we get 58W=4640\nWe get W=80, but we are told that each shift is 8 hours, so the per-hour efficiency of a woman is 10 shirts. \nUsing W=80, substituting this, we get M=120 and similarly, the per-hour efficiency is 15 shirts. \nThe question asks for one man and woman in one hour. So, 10+15=25 shirts."
+    },
+    {
+      "qid": "quant-1314",
+      "passage_text": "",
+      "question_text": "A merchant buys two items: A and B. The cost of item A is 20% higher than that of B, and the selling price of item A is 20% lower than item B's. At these prices, the profit on item B is 65%. The merchant wants to make an overall profit of exactly 25% after selling both the items. How much per cent should the merchant lower B's selling price to reach the profit goal, keeping A's selling price unchanged?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16.67%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12.12%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that the cost price of A is 20% more than B. Let the cost price of B be 100x so the cost price of A will be 120x. \nNow, we are know that the profit on item B is 65%.\nSo, the profit will be $0.65\\times100x=65x$\nHence, the selling price of item B = 165x\nNow, we know that the selling price of Item A is 20% lower that that of Item B.\nIf the selling price of B is 165x, the selling price of item A will be $165x\\times0.8=132x$\nWe know that that merchant wants to achieve the profit goal of 25%.\nTotal Cost price of both the items: 100x + 120x = 220x\nCombined selling price: 165x + 132x = 297x\nIf the merchant wants to achieve the profit goal, then the combined selling price is $220x\\times1.25=275x$\nSo, the combined selling price has to be reduced by  297x - 275x = 22x\nSince the changes are made only in the selling price of item B, the selling price of item B has to be reduced by 22x.\nHence, the % reduction in the selling price of Item B: $\\dfrac{22x}{165x}\\times100=13.33\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA merchant buys two items: A and B. The cost of item A is 20% higher than that of B, and the selling price of item A is 20% lower than item B's. At these prices, the profit on item B is 65%. The merchant wants to make an overall profit of exactly 25% after selling both the items. How much per cent should the merchant lower B's selling price to reach the profit goal, keeping A's selling price unchanged?\n\n**Options:**\n- **A**. 18%\n- **B**. 13.33% ✅\n- **C**. 16.67%\n- **D**. 12.12%\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that the cost price of A is 20% more than B. Let the cost price of B be 100x so the cost price of A will be 120x. \nNow, we are know that the profit on item B is 65%.\nSo, the profit will be $0.65\\times100x=65x$\nHence, the selling price of item B = 165x\nNow, we know that the selling price of Item A is 20% lower that that of Item B.\nIf the selling price of B is 165x, the selling price of item A will be $165x\\times0.8=132x$\nWe know that that merchant wants to achieve the profit goal of 25%.\nTotal Cost price of both the items: 100x + 120x = 220x\nCombined selling price: 165x + 132x = 297x\nIf the merchant wants to achieve the profit goal, then the combined selling price is $220x\\times1.25=275x$\nSo, the combined selling price has to be reduced by  297x - 275x = 22x\nSince the changes are made only in the selling price of item B, the selling price of item B has to be reduced by 22x.\nHence, the % reduction in the selling price of Item B: $\\dfrac{22x}{165x}\\times100=13.33\\%$"
+    },
+    {
+      "qid": "quant-1315",
+      "passage_text": "",
+      "question_text": "How many six - digit numbers can be formed by using all the digits 0, 1, 3, 4, 6 and 7 such that the digits at the tens, thousands and lakhs place are in an arithmetic progression?",
+      "options": [],
+      "correct_option_data": "18",
+      "solution_text": "Since it is mentioned that all the digits need to be used to form the numbers, repetition would not be possible.\nThe digits at the tens, thousands and lakhs place can be (0, 3, 6); (1, 4, 7) or (7, 4, 1)\nThe remaining three places can be filled in 3! = 6 ways.\nSo, total number of such numbers = 3 * 6 = 18Alternate Explanation:The digits we have are 0,1,3,4,6, and 7 \nNow it says digits at tens, thousands and lakhs positions form an A.P \nNow this means they form an A.P and it can be either increasing or decreasing \nNow let us take the first possible A.P which is 1,4,7 \nSo keeping 1 at lakhs, 4 at thousands and 7 at tens \nNow, the remaining 3 digits can be arranged in 3! =6 ways \nSimilarly you can have 741 \nNow the next A.P is 0,3,6 0 and 6,3,0 \nHowever, in this case, A.P. will not be considered where 0 will be at the lakhs position. So we only have 1 possible A.P where 6 is at lakhs, 3 at thousands and 0 at tens and the remaining 3 can be arranged in 3! ways.So we get 6+6+6=18 ways.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many six - digit numbers can be formed by using all the digits 0, 1, 3, 4, 6 and 7 such that the digits at the tens, thousands and lakhs place are in an arithmetic progression?\n\n**Options:**\n\n**Correct Answer:** 18\n\n**Solution:**\nSince it is mentioned that all the digits need to be used to form the numbers, repetition would not be possible.\nThe digits at the tens, thousands and lakhs place can be (0, 3, 6); (1, 4, 7) or (7, 4, 1)\nThe remaining three places can be filled in 3! = 6 ways.\nSo, total number of such numbers = 3 * 6 = 18Alternate Explanation:The digits we have are 0,1,3,4,6, and 7 \nNow it says digits at tens, thousands and lakhs positions form an A.P \nNow this means they form an A.P and it can be either increasing or decreasing \nNow let us take the first possible A.P which is 1,4,7 \nSo keeping 1 at lakhs, 4 at thousands and 7 at tens \nNow, the remaining 3 digits can be arranged in 3! =6 ways \nSimilarly you can have 741 \nNow the next A.P is 0,3,6 0 and 6,3,0 \nHowever, in this case, A.P. will not be considered where 0 will be at the lakhs position. So we only have 1 possible A.P where 6 is at lakhs, 3 at thousands and 0 at tens and the remaining 3 can be arranged in 3! ways.So we get 6+6+6=18 ways."
+    },
+    {
+      "qid": "quant-1316",
+      "passage_text": "",
+      "question_text": "What is the greatest number that cannot be written as 4A + 9B considering A and B are whole numbers?",
+      "options": [],
+      "correct_option_data": "23",
+      "solution_text": "We know that all the integers can be written as 4A, 4A+1, 4A+2 or 4A+3 where A is any integer.\nNow, we can rewrite 4A + 9B = 4A + 8B + B = 4(A+2B) + B\nNoo, on comparing 4(A+2B) + B with the forms mentioned above, B can be 0/1/2 or 3.\nLet's make the cases:\nWhen B = 0, numbers will be of the form 4(A+2(0)) = 4A i.e. 4, 8, 12, 16, 20, 24, 28, 32,36 etc\nWhen B = 1, numbers will be off the form 4(A+2(1)) + 1 = 4A + 9 i.e. 13, 17, 21, 25, 29, 33, 37 etc\nWhen B = 2, numbers will be off the form 4(A+2(2)) + 2 = 4A + 18 i.e. 22, 26, 30, 34, 38 etc\nWhen B = 3, numbers will be off the form 4(A+2(3)) + 3 = 4A + 27 i.e. 27, 31, 35, 39, etc\nNow, upon observing, we see that we get all the number from 24 with the form 4A + 9B.\nHence, the smallest number that can not be written in the form 4A + 9B = 23\nAlternative Solution:\nThis type of problem is a classic example of the Frobenius Coin Problem. For two relatively prime numbers (numbers that have no common divisors other than 1), the largest number that cannot be expressed as aX + bY (where a and b are the two numbers, and X and Y are non-negative integers) is given by the formula:\ng(a,b) = ab - a - b\nIn this case, a=4 and b=9\n$g(4,9)=4\\times9−4−9=36−4−9=23$\nSo, the largest number that cannot be expressed as 4A+9B for any whole numbers A and B is 23.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the greatest number that cannot be written as 4A + 9B considering A and B are whole numbers?\n\n**Options:**\n\n**Correct Answer:** 23\n\n**Solution:**\nWe know that all the integers can be written as 4A, 4A+1, 4A+2 or 4A+3 where A is any integer.\nNow, we can rewrite 4A + 9B = 4A + 8B + B = 4(A+2B) + B\nNoo, on comparing 4(A+2B) + B with the forms mentioned above, B can be 0/1/2 or 3.\nLet's make the cases:\nWhen B = 0, numbers will be of the form 4(A+2(0)) = 4A i.e. 4, 8, 12, 16, 20, 24, 28, 32,36 etc\nWhen B = 1, numbers will be off the form 4(A+2(1)) + 1 = 4A + 9 i.e. 13, 17, 21, 25, 29, 33, 37 etc\nWhen B = 2, numbers will be off the form 4(A+2(2)) + 2 = 4A + 18 i.e. 22, 26, 30, 34, 38 etc\nWhen B = 3, numbers will be off the form 4(A+2(3)) + 3 = 4A + 27 i.e. 27, 31, 35, 39, etc\nNow, upon observing, we see that we get all the number from 24 with the form 4A + 9B.\nHence, the smallest number that can not be written in the form 4A + 9B = 23\nAlternative Solution:\nThis type of problem is a classic example of the Frobenius Coin Problem. For two relatively prime numbers (numbers that have no common divisors other than 1), the largest number that cannot be expressed as aX + bY (where a and b are the two numbers, and X and Y are non-negative integers) is given by the formula:\ng(a,b) = ab - a - b\nIn this case, a=4 and b=9\n$g(4,9)=4\\times9−4−9=36−4−9=23$\nSo, the largest number that cannot be expressed as 4A+9B for any whole numbers A and B is 23."
+    },
+    {
+      "qid": "quant-1317",
+      "passage_text": "",
+      "question_text": "Today is Joel's birthday, and he invited 15 friends to celebrate. He asked his father, Rahul, to make birthday conical caps — one large cap for Joel and 15 smaller caps for his friends. Both caps have a radius of 12 cm, but the height of the large cap is 9 cm, and the height of the smaller caps is 5 cm. Find the total area of the sheet $\\left(in\\ cm^2\\right)$ required to make all 16 caps. ($\\pi\\ =\\dfrac{22}{7}$)",
+      "options": [],
+      "correct_option_data": "7920",
+      "solution_text": "We need to find the curved surface area of a conical shaped caps. \nThe formula for the curved surface area is $\\pi\\ \\times\\ r\\times\\ l$ where 'r' refers the radius and 'l' refers to slant height. \nslant height = $\\sqrt{r^2+h^2}$\nCurved surface area of the larger cap:\nWe are given the height and the radius of the larger cap i.e. 9 cm and 12 cm. \nSlant height of the bigger cap: $\\sqrt{9^2+12^2}=15$\nCurved Surface Area = $\\pi\\ \\times\\ 12\\ \\times\\ 15=180\\pi\\ \\ cm^2$\nCurved surface area of the smaller caps:\nWe are given the height and the radius of the smaller caps i.e. 5 cm and 12 cm. \nSlant height of the smaller caps: $\\sqrt{5^2+12^2}=13$\nCurved Surface Area = $15\\times\\ \\pi\\ \\times\\ 12\\ \\times\\ 13=2340\\pi\\ \\ cm^2$\nTotal Curved Surface Area = $2340\\pi\\ \\ +180\\pi\\ =2520\\pi\\ =2520\\times\\dfrac{22}{7}=7920\\ cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nToday is Joel's birthday, and he invited 15 friends to celebrate. He asked his father, Rahul, to make birthday conical caps — one large cap for Joel and 15 smaller caps for his friends. Both caps have a radius of 12 cm, but the height of the large cap is 9 cm, and the height of the smaller caps is 5 cm. Find the total area of the sheet $\\left(in\\ cm^2\\right)$ required to make all 16 caps. ($\\pi\\ =\\dfrac{22}{7}$)\n\n**Options:**\n\n**Correct Answer:** 7920\n\n**Solution:**\nWe need to find the curved surface area of a conical shaped caps. \nThe formula for the curved surface area is $\\pi\\ \\times\\ r\\times\\ l$ where 'r' refers the radius and 'l' refers to slant height. \nslant height = $\\sqrt{r^2+h^2}$\nCurved surface area of the larger cap:\nWe are given the height and the radius of the larger cap i.e. 9 cm and 12 cm. \nSlant height of the bigger cap: $\\sqrt{9^2+12^2}=15$\nCurved Surface Area = $\\pi\\ \\times\\ 12\\ \\times\\ 15=180\\pi\\ \\ cm^2$\nCurved surface area of the smaller caps:\nWe are given the height and the radius of the smaller caps i.e. 5 cm and 12 cm. \nSlant height of the smaller caps: $\\sqrt{5^2+12^2}=13$\nCurved Surface Area = $15\\times\\ \\pi\\ \\times\\ 12\\ \\times\\ 13=2340\\pi\\ \\ cm^2$\nTotal Curved Surface Area = $2340\\pi\\ \\ +180\\pi\\ =2520\\pi\\ =2520\\times\\dfrac{22}{7}=7920\\ cm^2$"
+    },
+    {
+      "qid": "quant-1318",
+      "passage_text": "",
+      "question_text": "Given $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$, such that this is true for all real values of x, except when x=1. Find the sum of all the values of $x$ for which the expression, $f\\left(f\\left(x\\right)\\right)=\\dfrac{1}{x}$ holds true.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-0.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.25",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given equation is, $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$\nWe can write this as, $f\\left(x\\right)=\\dfrac{2x}{x-1}$\nSince the denominator is x-1, we see that x cannot equal to 1, otherwise the function will be undefined. \nThen, $f\\left(f\\left(x\\right)\\right)=\\dfrac{2\\left(\\dfrac{2x}{x-1}\\right)}{\\dfrac{2x}{x-1}-1}$\nWhich equals, $\\dfrac{2\\left(2x\\right)}{2x-\\left(x-1\\right)}=\\dfrac{4x}{x+1}$\nWe need to find the value of x for which, $\\dfrac{4x}{x+1}=\\dfrac{1}{x}$\nThis equals $4x^2=x+1$\n$4x^2-x-1=0$\nThe discriminant of this equation is greater than 0. Hence, real roots exist. \nTherefore, the sum of the roots of this equation is the sum of the values of x for which the expression is true. \nWhich equals, $-\\dfrac{\\left(-1\\right)}{4}=0.25$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$, such that this is true for all real values of x, except when x=1. Find the sum of all the values of $x$ for which the expression, $f\\left(f\\left(x\\right)\\right)=\\dfrac{1}{x}$ holds true.\n\n**Options:**\n- **A**. 1\n- **B**. -0.5\n- **C**. 0.25 ✅\n- **D**. -1\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation is, $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$\nWe can write this as, $f\\left(x\\right)=\\dfrac{2x}{x-1}$\nSince the denominator is x-1, we see that x cannot equal to 1, otherwise the function will be undefined. \nThen, $f\\left(f\\left(x\\right)\\right)=\\dfrac{2\\left(\\dfrac{2x}{x-1}\\right)}{\\dfrac{2x}{x-1}-1}$\nWhich equals, $\\dfrac{2\\left(2x\\right)}{2x-\\left(x-1\\right)}=\\dfrac{4x}{x+1}$\nWe need to find the value of x for which, $\\dfrac{4x}{x+1}=\\dfrac{1}{x}$\nThis equals $4x^2=x+1$\n$4x^2-x-1=0$\nThe discriminant of this equation is greater than 0. Hence, real roots exist. \nTherefore, the sum of the roots of this equation is the sum of the values of x for which the expression is true. \nWhich equals, $-\\dfrac{\\left(-1\\right)}{4}=0.25$"
+    },
+    {
+      "qid": "quant-1319",
+      "passage_text": "",
+      "question_text": "A 30% concentrated sugar solution is mixed with 25% concentrated salt solution. The ratio of the volume of salt and sugar in the mixture is 5:3, and its volume is 600ml. What is the volume of salt solution mixed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "400ml",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "480ml",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "450ml",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "500ml",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the volume of salt solution be 20y and sugar solution be 10x.\nThe volume of salt in the mixture = 25% of 20y = 5y\nThe volume of sugar in the mixture = 30% of 10y = 3x\nWe are given the ratio of salt and sugar in mixture as 5:3.\n5y:3x = 5:3 $\\Rightarrow$ y:x = 1:1 $\\Rightarrow$ x = y\n \nThe total volume of mixture = 10x+20y = 30y = 600\ny = 20\nThe volume of salt solution = 20y = 400ml.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA 30% concentrated sugar solution is mixed with 25% concentrated salt solution. The ratio of the volume of salt and sugar in the mixture is 5:3, and its volume is 600ml. What is the volume of salt solution mixed?\n\n**Options:**\n- **A**. 400ml ✅\n- **B**. 480ml\n- **C**. 450ml\n- **D**. 500ml\n\n**Correct Answer:** null\n\n**Solution:**\nLet the volume of salt solution be 20y and sugar solution be 10x.\nThe volume of salt in the mixture = 25% of 20y = 5y\nThe volume of sugar in the mixture = 30% of 10y = 3x\nWe are given the ratio of salt and sugar in mixture as 5:3.\n5y:3x = 5:3 $\\Rightarrow$ y:x = 1:1 $\\Rightarrow$ x = y\n \nThe total volume of mixture = 10x+20y = 30y = 600\ny = 20\nThe volume of salt solution = 20y = 400ml."
+    },
+    {
+      "qid": "quant-1320",
+      "passage_text": "",
+      "question_text": "A circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$100\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$16\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$25\\pi\\ $",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$36\\pi\\ $",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\nLet us assume the coordinates (0,0), (12,0), and (0,35) are B, C, and A, respectively, as shown in the figure.\nWe need to find the area of the circle inscribed inside this triangle.\nWe need to find the radius of the incircle to find the area of the incircle.\nUsing formula, $r=\\dfrac{\\triangle}{s}$\nWhere, $\\triangle\\ $ = Area of triangle, s = semi-perimeter.\nAB = $\\sqrt{\\left(0-0\\right)^2+\\left(35-0\\right)^2}=35$\nBC =  $\\sqrt{\\left(12-0\\right)^2+\\left(0-0\\right)^2}=12$\nAC = $\\sqrt{\\left(12-0\\right)^2+\\left(0-35\\right)^2}=37$\nThis is a right-angled triangle, right-angled at B.\nArea of triangle ABC = $\\dfrac{1}{2}\\times AB\\times BC$ = $\\dfrac{1}{2}\\times35\\times12$ = 210 $cm^2$\ns = $\\dfrac{\\left(35+12+37\\right)}{2}$ = 42 cm\nTherefore, the radius of the circle = 210/42 = 5 cm.\nThus, area of circle inscribed inside triangle ABC = $\\pi\\times5^2=25\\pi\\ $ $cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\n\n**Options:**\n- **A**. $100\\pi\\ $\n- **B**. $16\\pi\\ $\n- **C**. $25\\pi\\ $ ✅\n- **D**. $36\\pi\\ $\n\n**Correct Answer:** null\n\n**Solution:**\nA circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\nLet us assume the coordinates (0,0), (12,0), and (0,35) are B, C, and A, respectively, as shown in the figure.\nWe need to find the area of the circle inscribed inside this triangle.\nWe need to find the radius of the incircle to find the area of the incircle.\nUsing formula, $r=\\dfrac{\\triangle}{s}$\nWhere, $\\triangle\\ $ = Area of triangle, s = semi-perimeter.\nAB = $\\sqrt{\\left(0-0\\right)^2+\\left(35-0\\right)^2}=35$\nBC =  $\\sqrt{\\left(12-0\\right)^2+\\left(0-0\\right)^2}=12$\nAC = $\\sqrt{\\left(12-0\\right)^2+\\left(0-35\\right)^2}=37$\nThis is a right-angled triangle, right-angled at B.\nArea of triangle ABC = $\\dfrac{1}{2}\\times AB\\times BC$ = $\\dfrac{1}{2}\\times35\\times12$ = 210 $cm^2$\ns = $\\dfrac{\\left(35+12+37\\right)}{2}$ = 42 cm\nTherefore, the radius of the circle = 210/42 = 5 cm.\nThus, area of circle inscribed inside triangle ABC = $\\pi\\times5^2=25\\pi\\ $ $cm^2$"
+    },
+    {
+      "qid": "quant-1321",
+      "passage_text": "",
+      "question_text": "In the given figure, the circle circumscribes the equilateral triangle ABD and the triangle ABC, where angle DAC is $30^{\\circ\\ }$. \n\nWhat would be the ratio of BC:BD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\ 3}:2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2:\\sqrt{\\ 3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that ABD is an equilateral triangle, meaning that angle BAD would be 60 degrees. We are also given that angle CAD is 30 degrees, giving angle BAC to be 90 degrees. \nThis is only possible when BC is the diameter of the circle. \nSo, we know the length of BC in terms of radius, say $r$, and we want to find the side length of the equilateral triangle. \nThe general formula for the same is $r\\sqrt{\\ 3}$\nWe can find the same through the median length of the triangle. \nThe radius would be equal to the distance between the centre of the triangle/circle to one of the vertices. \nThat distance would be 2/3 rd of the median length$\\frac{\\sqrt{\\ 3}}{2}a$, where $a$ is the side length, two-third of this would be $\\frac{\\sqrt{\\ 3}}{2}a\\times\\ \\frac{2}{3}=\\frac{a}{\\sqrt{\\ 3}}$\nThis would be equal to $r$, which would give the side length of the equilateral triangle to be $a=BD=r\\sqrt{\\ 3}$\nTherefore, the ratio of BC:BD would be $2:\\sqrt{\\ 3}$\nHence, Option D is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/image_qyYYRet.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the given figure, the circle circumscribes the equilateral triangle ABD and the triangle ABC, where angle DAC is $30^{\\circ\\ }$. \n\nWhat would be the ratio of BC:BD?\n\n**Options:**\n- **A**. $2\\sqrt{\\ 3}:1$\n- **B**. $\\sqrt{\\ 3}:1$\n- **C**. $\\sqrt{\\ 3}:2$\n- **D**. $2:\\sqrt{\\ 3}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that ABD is an equilateral triangle, meaning that angle BAD would be 60 degrees. We are also given that angle CAD is 30 degrees, giving angle BAC to be 90 degrees. \nThis is only possible when BC is the diameter of the circle. \nSo, we know the length of BC in terms of radius, say $r$, and we want to find the side length of the equilateral triangle. \nThe general formula for the same is $r\\sqrt{\\ 3}$\nWe can find the same through the median length of the triangle. \nThe radius would be equal to the distance between the centre of the triangle/circle to one of the vertices. \nThat distance would be 2/3 rd of the median length$\\frac{\\sqrt{\\ 3}}{2}a$, where $a$ is the side length, two-third of this would be $\\frac{\\sqrt{\\ 3}}{2}a\\times\\ \\frac{2}{3}=\\frac{a}{\\sqrt{\\ 3}}$\nThis would be equal to $r$, which would give the side length of the equilateral triangle to be $a=BD=r\\sqrt{\\ 3}$\nTherefore, the ratio of BC:BD would be $2:\\sqrt{\\ 3}$\nHence, Option D is the correct answer."
+    },
+    {
+      "qid": "quant-1322",
+      "passage_text": "",
+      "question_text": "An isosceles trapezium ABCD has parallel sides AB and CD, with AB = 8 cm and CD = 16 cm. The diagonals AC and BD intersect at point O, and the perimeter of triangle AOB is 18 cm. What is the area of trapezium ABCD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$120\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$100\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$144\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$108\\ cm^2$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have:\nWe are given that AB = 8 cm, CD = 16 cm and AOB = 18 cm\nNow, we know that AX = XB = 4 cm (Because this is an isosceles triangle do XY will divide AB equally.)\nSimilarly, AO = OB\nLet AO = OB = x cm\nWe are given that x + x + 8 = 18 cm\nOr, we can say, x = 5 cm\nNow, we know, OB = 5 cm and XB = 4 cm and Triangle XOB is a right angled triangle with OX being the perpendicular, we can find OX using pythagoras.\nHence, we have: $OX\\ =\\sqrt{OB^2-XB^2}=\\sqrt{5^2-4^2}=3$\nNow, Triangle AOB is similar to Triangle OCD. \nHence, $\\dfrac{OX}{OY}=\\dfrac{AB}{CD}$\nReplacing the values, we get: $\\dfrac{3}{OY}=\\dfrac{8}{16}$\nWe get OY = 6 cm\nHence, the height of the trapezium = 6 + 3 = 9 cm\nHence, area of the trapezium = $\\dfrac{1}{2}\\times\\left(8+16\\right)\\times9=108\\ cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn isosceles trapezium ABCD has parallel sides AB and CD, with AB = 8 cm and CD = 16 cm. The diagonals AC and BD intersect at point O, and the perimeter of triangle AOB is 18 cm. What is the area of trapezium ABCD?\n\n**Options:**\n- **A**. $120\\ cm^2$\n- **B**. $100\\ cm^2$\n- **C**. $144\\ cm^2$\n- **D**. $108\\ cm^2$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe have:\nWe are given that AB = 8 cm, CD = 16 cm and AOB = 18 cm\nNow, we know that AX = XB = 4 cm (Because this is an isosceles triangle do XY will divide AB equally.)\nSimilarly, AO = OB\nLet AO = OB = x cm\nWe are given that x + x + 8 = 18 cm\nOr, we can say, x = 5 cm\nNow, we know, OB = 5 cm and XB = 4 cm and Triangle XOB is a right angled triangle with OX being the perpendicular, we can find OX using pythagoras.\nHence, we have: $OX\\ =\\sqrt{OB^2-XB^2}=\\sqrt{5^2-4^2}=3$\nNow, Triangle AOB is similar to Triangle OCD. \nHence, $\\dfrac{OX}{OY}=\\dfrac{AB}{CD}$\nReplacing the values, we get: $\\dfrac{3}{OY}=\\dfrac{8}{16}$\nWe get OY = 6 cm\nHence, the height of the trapezium = 6 + 3 = 9 cm\nHence, area of the trapezium = $\\dfrac{1}{2}\\times\\left(8+16\\right)\\times9=108\\ cm^2$"
+    },
+    {
+      "qid": "quant-1323",
+      "passage_text": "",
+      "question_text": "Dhruv invested a certain amount of P, which was compounded annually at a rate of R for 2 years. Similarly, Ding deposited thrice the amount as Dhruv did at a rate of R in the bank at simple interest. If the total money Ding receives after a year is the same as Dhruv received after two years, then what is the value of R?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Amount obtained by Dhruv after 2 years = $P\\left(1\\ +\\ \\dfrac{R}{100}\\right)^2$\nAmount obtained by Ding after a year = $3P\\ +\\ \\dfrac{3P\\times\\ 1\\times\\ R}{100}$\nLet $r\\ =\\ \\dfrac{R}{100}$\nWe are given that both the amounts obtained are equal, equating them, we get\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\ +\\ 3\\Pr$\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\left(1\\ +\\ r\\right)$\n$r^2\\ +\\ 2r\\ +\\ 1\\ =\\ 3\\ +\\ 3r$\n$r^2\\ -\\ r\\ -\\ 2\\ =\\ 0$\n$r\\ =\\ \\dfrac{1\\ \\pm\\ \\sqrt{\\ \\left(-1\\right)^2\\ -\\ 4\\left(1\\right)\\left(-2\\right)}}{2\\left(1\\right)}\\ =\\ \\dfrac{\\left(1\\pm\\ \\sqrt{\\ 9}\\right)}{2}\\ =\\ \\dfrac{\\left(1\\ \\pm\\ 3\\right)}{2}\\ =\\ 2\\ or\\ -1$\nWe know that the value of r is positive, so r = 2, and the value of R is,\n$R\\ =\\ r\\ \\times\\ 100\\ =\\ 2\\times\\ 100\\ =\\ 200\\%$\n Hence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDhruv invested a certain amount of P, which was compounded annually at a rate of R for 2 years. Similarly, Ding deposited thrice the amount as Dhruv did at a rate of R in the bank at simple interest. If the total money Ding receives after a year is the same as Dhruv received after two years, then what is the value of R?\n\n**Options:**\n- **A**. 100%\n- **B**. 1%\n- **C**. 200% ✅\n- **D**. 2%\n\n**Correct Answer:** null\n\n**Solution:**\nAmount obtained by Dhruv after 2 years = $P\\left(1\\ +\\ \\dfrac{R}{100}\\right)^2$\nAmount obtained by Ding after a year = $3P\\ +\\ \\dfrac{3P\\times\\ 1\\times\\ R}{100}$\nLet $r\\ =\\ \\dfrac{R}{100}$\nWe are given that both the amounts obtained are equal, equating them, we get\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\ +\\ 3\\Pr$\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\left(1\\ +\\ r\\right)$\n$r^2\\ +\\ 2r\\ +\\ 1\\ =\\ 3\\ +\\ 3r$\n$r^2\\ -\\ r\\ -\\ 2\\ =\\ 0$\n$r\\ =\\ \\dfrac{1\\ \\pm\\ \\sqrt{\\ \\left(-1\\right)^2\\ -\\ 4\\left(1\\right)\\left(-2\\right)}}{2\\left(1\\right)}\\ =\\ \\dfrac{\\left(1\\pm\\ \\sqrt{\\ 9}\\right)}{2}\\ =\\ \\dfrac{\\left(1\\ \\pm\\ 3\\right)}{2}\\ =\\ 2\\ or\\ -1$\nWe know that the value of r is positive, so r = 2, and the value of R is,\n$R\\ =\\ r\\ \\times\\ 100\\ =\\ 2\\times\\ 100\\ =\\ 200\\%$\n Hence, the correct answer is option C."
+    },
+    {
+      "qid": "quant-1324",
+      "passage_text": "",
+      "question_text": "There are 16 players available for a team formation, of which 8 are bowlers. Ten players are to be chosen for the cricket team, of which atleast six bowlers must be selected. In how many ways can the team be formed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2436 ways",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2578 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2678 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2778 ways",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that the total number of players available = 16\nNumber of bowlers = 8\nRemaining players = 16 - 8 = 8\nTo make the cricket team, 10 players must be chosen of which there should be at least six bowlers.\nThus, the following are the number of possible ways in which the team can be formed.\n$^8C_6\\times^8C_4$ (6 bowlers from the 8 bowlers and 4 players from the remaining players)\n$^8C_7\\times^8C_3$ (7 bowlers from the 8 bowlers and 3 players from the remaining players)\n$^8C_8\\times^8C_2$ (8 bowlers from the 8 bowlers and 2 players from the remaining players)\nHence, the total number of possible ways of cricket team formation =$^8C_6\\times^8C_4+^8C_7\\times^8C_3+^8C_8\\times^8C_2$ \n= 28*70+64*7+1*28 = 2436 ways",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 16 players available for a team formation, of which 8 are bowlers. Ten players are to be chosen for the cricket team, of which atleast six bowlers must be selected. In how many ways can the team be formed?\n\n**Options:**\n- **A**. 2436 ways ✅\n- **B**. 2578 ways\n- **C**. 2678 ways\n- **D**. 2778 ways\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that the total number of players available = 16\nNumber of bowlers = 8\nRemaining players = 16 - 8 = 8\nTo make the cricket team, 10 players must be chosen of which there should be at least six bowlers.\nThus, the following are the number of possible ways in which the team can be formed.\n$^8C_6\\times^8C_4$ (6 bowlers from the 8 bowlers and 4 players from the remaining players)\n$^8C_7\\times^8C_3$ (7 bowlers from the 8 bowlers and 3 players from the remaining players)\n$^8C_8\\times^8C_2$ (8 bowlers from the 8 bowlers and 2 players from the remaining players)\nHence, the total number of possible ways of cricket team formation =$^8C_6\\times^8C_4+^8C_7\\times^8C_3+^8C_8\\times^8C_2$ \n= 28*70+64*7+1*28 = 2436 ways"
+    },
+    {
+      "qid": "quant-1325",
+      "passage_text": "",
+      "question_text": "Mohit, Kumar, and Geeta's salaries in 2023 are in the ratio 3:5:X, with their total monthly salary equal to Rs.2,25,000. If the difference between Kumar's and Mohit's salaries is Rs. 45,000 and Geeta's salary increases by 10% in 2024, Find Geeta's monthly salary in 2024.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.38,500",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.44,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.46,200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.49,500",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Mohit, Kumar,  and Geeta's salaries in 2023 are in the ratio 3:5:X\nLet their salaries be 3Y, 5Y and XY respectively.\nThe difference between Kumar's and Mohit's salaries is Rs. 45,000 = 5Y - 3Y = 2Y\n2Y = 45000\nY = 22500\nTotal monthly salary equal to Rs 2,25,000\n3Y+5Y+XY = 225000\n(8+X)Y = 225000\n(8+X)22500 = 225000\nX = 2\nTherefore, the Monthly salary of Geeta in 2023 = XY = 2Y = 2*22500 = Rs.45,000\nIn 2024, the salary of Geeta will increase by 10%.\nTherefore, the monthly salary of Geeta in 2024 = 45000*1.1 = Rs.49,500.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMohit, Kumar, and Geeta's salaries in 2023 are in the ratio 3:5:X, with their total monthly salary equal to Rs.2,25,000. If the difference between Kumar's and Mohit's salaries is Rs. 45,000 and Geeta's salary increases by 10% in 2024, Find Geeta's monthly salary in 2024.\n\n**Options:**\n- **A**. Rs.38,500\n- **B**. Rs.44,000\n- **C**. Rs.46,200\n- **D**. Rs.49,500 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nMohit, Kumar,  and Geeta's salaries in 2023 are in the ratio 3:5:X\nLet their salaries be 3Y, 5Y and XY respectively.\nThe difference between Kumar's and Mohit's salaries is Rs. 45,000 = 5Y - 3Y = 2Y\n2Y = 45000\nY = 22500\nTotal monthly salary equal to Rs 2,25,000\n3Y+5Y+XY = 225000\n(8+X)Y = 225000\n(8+X)22500 = 225000\nX = 2\nTherefore, the Monthly salary of Geeta in 2023 = XY = 2Y = 2*22500 = Rs.45,000\nIn 2024, the salary of Geeta will increase by 10%.\nTherefore, the monthly salary of Geeta in 2024 = 45000*1.1 = Rs.49,500."
+    },
+    {
+      "qid": "quant-1326",
+      "passage_text": "",
+      "question_text": "A, B and C can complete a job in 2 days, 15 days and 10 days respectively. All of them together started working on the job but A does not work at his full capacity for the first day, also, he left after the first day, while the other two completed the job.\nThe total payments for the three were Rs.800 and C received Rs 400. What is the percentage of his full capacity at which A worked on the first day?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16.66%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "33.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "26.66%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total payments for the three were Rs.800 and C received Rs 400. \n50% of the work must have been done by C.  \nB and C can complete a job in 15 days and 10 days respectively. \nBoth of them worked for the same time period, thus the salary of B = $\\frac{400*10}{15}$= 800/3 i.e 33% of the total salary.\nThus 33% per cent of the work must have been done by B.\nA must-have done 16.66 per cent of the work on the first day. \nA can complete the job in two days. Thus, 50% of the work on Day 1, while he did 16.66% of the work.\nthe percentage of his full capacity at which A worked on the first day=16.66/50= 33.33%\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B and C can complete a job in 2 days, 15 days and 10 days respectively. All of them together started working on the job but A does not work at his full capacity for the first day, also, he left after the first day, while the other two completed the job.\nThe total payments for the three were Rs.800 and C received Rs 400. What is the percentage of his full capacity at which A worked on the first day?\n\n**Options:**\n- **A**. 25%\n- **B**. 16.66%\n- **C**. 33.33% ✅\n- **D**. 26.66%\n\n**Correct Answer:** null\n\n**Solution:**\nThe total payments for the three were Rs.800 and C received Rs 400. \n50% of the work must have been done by C.  \nB and C can complete a job in 15 days and 10 days respectively. \nBoth of them worked for the same time period, thus the salary of B = $\\frac{400*10}{15}$= 800/3 i.e 33% of the total salary.\nThus 33% per cent of the work must have been done by B.\nA must-have done 16.66 per cent of the work on the first day. \nA can complete the job in two days. Thus, 50% of the work on Day 1, while he did 16.66% of the work.\nthe percentage of his full capacity at which A worked on the first day=16.66/50= 33.33%\nOption C"
+    },
+    {
+      "qid": "quant-1327",
+      "passage_text": "A motorboat takes the passengers from Rishikesh to Haridwar and back. Both the cities, Rishikesh and Haridwar are located on the banks of River Ganga. During Kumbh Mela,to earn more money, the owner of the motorboat decided to have more trips from Rishikesh to Haridwar and back, so he increased the speed of the motorboat in still water, by 50%. By increasing the speed, he was able to cut down the travel time from Rishikesh to Haridwar and back, by 60%. What is the ratio of the speed of motorboating still water to that of the speed of river Ganga?\n\n11 6 \\sqrt{\\frac{11}{6}} 6 1 1 ​ ​\n\n11 6 \\frac{\\sqrt{11}}{6} 6 1 1 ​ ​\n\n3 2 \\sqrt{\\frac{3}{2}} 2 3 ​ ​\n\n3 2 \\frac{\\sqrt{3}}{2} 2 3 ​ ​",
+      "question_text": "A motorboat takes the passengers from Rishikesh to Haridwar and back. Both the cities, Rishikesh and Haridwar are located on the banks of River Ganga. During Kumbh Mela,to earn more money, the owner of the motorboat decided to have more trips from Rishikesh to Haridwar and back, so he increased the speed of the motorboat in still water, by 50%. By increasing the speed, he was able to cut down the travel time from Rishikesh to Haridwar and back, by 60%. What is the ratio of the speed of motorboating still water to that of the speed of river Ganga?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{\\frac{11}{6}}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{\\sqrt{11}}{6}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\frac{3}{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{\\sqrt{3}}{2}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the speed of the boat in the still water = 100x and the travel time = 100t and the distance between Rishikesh and Haridwar be 'd'\n\nLet the speed of the river be 100r\n\nSince the owner of the motorboat decides to increase the number of trips, he increased the speed.\n\nIncreased speed in still water = 150x\n\nFinal travel time = 40t\n\n$\\ \\frac{\\ d}{100x+100r}+\\ \\frac{\\ d}{100x-100r}=100t$   ---(1)\n\nAfter the ease in speed \n\n$\\ \\frac{\\ d}{150x+100r}+\\ \\frac{\\ d}{150x-100r}=40t$     ---(2)\n\nDividing 1 by 2, we get x/r = $\\sqrt{\\ \\ \\frac{\\ 11}{6}}$\n\nA is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277143)\n\n**Passage:**\nA motorboat takes the passengers from Rishikesh to Haridwar and back. Both the cities, Rishikesh and Haridwar are located on the banks of River Ganga. During Kumbh Mela,to earn more money, the owner of the motorboat decided to have more trips from Rishikesh to Haridwar and back, so he increased the speed of the motorboat in still water, by 50%. By increasing the speed, he was able to cut down the travel time from Rishikesh to Haridwar and back, by 60%. What is the ratio of the speed of motorboating still water to that of the speed of river Ganga?\n\n11 6 \\sqrt{\\frac{11}{6}} 6 1 1 ​ ​\n\n11 6 \\frac{\\sqrt{11}}{6} 6 1 1 ​ ​\n\n3 2 \\sqrt{\\frac{3}{2}} 2 3 ​ ​\n\n3 2 \\frac{\\sqrt{3}}{2} 2 3 ​ ​\n\nA motorboat takes the passengers from Rishikesh to Haridwar and back. Both the cities, Rishikesh and Haridwar are located on the banks of River Ganga. During Kumbh Mela,to earn more money, the owner of the motorboat decided to have more trips from Rishikesh to Haridwar and back, so he increased the speed of the motorboat in still water, by 50%. By increasing the speed, he was able to cut down the travel time from Rishikesh to Haridwar and back, by 60%. What is the ratio of the speed of motorboating still water to that of the speed of river Ganga?\n\n**Options:**\n- **A**. $\\sqrt{\\frac{11}{6}}$\n- **B**. $\\frac{\\sqrt{11}}{6}$\n- **C**. $\\sqrt{\\frac{3}{2}}$\n- **D**. $\\frac{\\sqrt{3}}{2}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1328",
+      "passage_text": "",
+      "question_text": "A, B, and C can do a work in 15 days, 20 days, and 12 days respectively. They started the work together, but C left the work two days before the completion and B left the work two days before C left. If the work was completed in m days, what is the value of 12*m (in days)?",
+      "options": [],
+      "correct_option_data": null,
+      "solution_text": "Let the total work be 60 units (LCM of 15, 20 and 12).\nA can complete the work in 15 days. \n=> A’s 1 day’s work = 4 units\nB can complete the work in 20 days. \n=> B’s 1 day’s work = 3 units\nC can complete the work in 12 days. \n=> C’s 1 day’s work = 5 units\nLet the total time required to complete the work be x days.\nThen, A worked for x days, C worked for (x - 2) days, and B worked for (x - 4) days.\nTherefore, 4*x + 3* (x - 4) + 5 * (x - 2) = 60\nOn solving, we get x = $\\frac{41}{6}$ days.\nSo, m = $\\frac{41}{6}$ days.\nTherefore, 12*m = 82 days.\nHence, 82 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 176625)\n\n**Passage:**\nA, B, and C can do a work in 15 days, 20 days, and 12 days respectively. They started the work together, but C left the work two days before the completion and B left the work two days before C left. If the work was completed in m days, what is the value of 12*m (in days)?\n\nA, B, and C can do a work in 15 days, 20 days, and 12 days respectively. They started the work together, but C left the work two days before the completion and B left the work two days before C left. If the work was completed in m days, what is the value of 12*m (in days)?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1329",
+      "passage_text": "Mike, Vikram, and Aditya take part in the construction of a fort. Mike takes 12 days to complete the work, Vikram 15 days, and Aditya 17 days individually to complete the work. If they decide to work on an orderly basis to complete the work such that on the first day Mike alone works, on the second day Vikram alone works, and on the third Aditya alone works. What percent of the work is finished on the final day? (Round this to the closest integer).\n\n1\n\n2\n\n3\n\n4",
+      "question_text": "Mike, Vikram, and Aditya take part in the construction of a fort. Mike takes 12 days to complete the work, Vikram 15 days, and Aditya 17 days individually to complete the work. If they decide to work on an orderly basis to complete the work such that on the first day Mike alone works, on the second day Vikram alone works, and on the third Aditya alone works. What percent of the work is finished on the final day? (Round this to the closest integer).",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "The three friends decide to complete the fort. Considering the total work required to be complete = W.\n\nMike completes the Work in 12 days.\n\nVikram in 15 days and Aditya in 17 days.\n\nOn a single day, Mike completes the W/12 part of the work, Vikram W/15 part, and Aditya W/17 part of the work.\n\nThe total work can be considered as :\n\nLCM of (12, 15, 17) = 1020 units.\n\nIn a single cycle of 3 days the trio completes :$\\left(\\frac{1020}{12}+\\frac{1020}{15}+\\frac{1020}{17}\\right)=85+68+60$\n\n= 213 units of work in 3 days.\n\nTo complete the total of 1020 units a minimum of 213*4 = 852 units is done.\n\nHence in the remaining 1020 - 852 = 168 units.\n\nOn the first day, Mike completes 85 units.\n\nOn the second day, Vikram completes 68 units\n\nAditya is left with 15 units of work which he completes on the final day.\n\n= $\\frac{\\left(15\\right)}{1020}\\cdot100$\n\n= 1.47%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 381171)\n\n**Passage:**\nMike, Vikram, and Aditya take part in the construction of a fort. Mike takes 12 days to complete the work, Vikram 15 days, and Aditya 17 days individually to complete the work. If they decide to work on an orderly basis to complete the work such that on the first day Mike alone works, on the second day Vikram alone works, and on the third Aditya alone works. What percent of the work is finished on the final day? (Round this to the closest integer).\n\n1\n\n2\n\n3\n\n4\n\nMike, Vikram, and Aditya take part in the construction of a fort. Mike takes 12 days to complete the work, Vikram 15 days, and Aditya 17 days individually to complete the work. If they decide to work on an orderly basis to complete the work such that on the first day Mike alone works, on the second day Vikram alone works, and on the third Aditya alone works. What percent of the work is finished on the final day? (Round this to the closest integer).\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1330",
+      "passage_text": "You travel by Delhi Metro every day from Botanical Garden, Noida to Hauz Khas, Delhi. At Hauz Khas metro station, you use an escalator to get out of the station. The escalator takes 80 seconds to get you down. One day, the escalator was not working and you walk up the escalator in 50 seconds. How many minutes does it approximately take you to walk up the working escalator?\n\n1.5 minutes\n\n2.2 minutes\n\n2.8 minutes\n\n2.6 minutes",
+      "question_text": "You travel by Delhi Metro every day from Botanical Garden, Noida to Hauz Khas, Delhi. At Hauz Khas metro station, you use an escalator to get out of the station. The escalator takes 80 seconds to get you down. One day, the escalator was not working and you walk up the escalator in 50 seconds. How many minutes does it approximately take you to walk up the working escalator?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1.5 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2.2 minutes",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2.8 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2.6 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "It is given that by using the escalator, one can get out of the station in 80 sec.\n\nLet us consider the number of steps =80\n\nSpeed of the escalator = 1 step/sec\n\nWhen the escalator was not working, the time taken by a person = 50 sec\n\nThe speed of the person = 80/50=8/5 steps/sec\n\nTime taken by a person walking down a moving escalator = $\\ \\frac{\\ 80}{\\ \\frac{\\ 8}{5}-1}$\n\n=$\\ \\frac{\\ 80}{\\ \\frac{\\ 3}{5}}$\n\n=2.22 min\n\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277127)\n\n**Passage:**\nYou travel by Delhi Metro every day from Botanical Garden, Noida to Hauz Khas, Delhi. At Hauz Khas metro station, you use an escalator to get out of the station. The escalator takes 80 seconds to get you down. One day, the escalator was not working and you walk up the escalator in 50 seconds. How many minutes does it approximately take you to walk up the working escalator?\n\n1.5 minutes\n\n2.2 minutes\n\n2.8 minutes\n\n2.6 minutes\n\nYou travel by Delhi Metro every day from Botanical Garden, Noida to Hauz Khas, Delhi. At Hauz Khas metro station, you use an escalator to get out of the station. The escalator takes 80 seconds to get you down. One day, the escalator was not working and you walk up the escalator in 50 seconds. How many minutes does it approximately take you to walk up the working escalator?\n\n**Options:**\n- **A**. 1.5 minutes\n- **B**. 2.2 minutes\n- **C**. 2.8 minutes\n- **D**. 2.6 minutes\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1331",
+      "passage_text": "",
+      "question_text": "A tank is connected to some inlet pipes(each of the same work capacity) and some outlet pipes(each of the same work capacity). If 10 inlet pipes are opened at 10:00 AM, at a time when the tank was empty, they could fill the tank by 5:00 PM on the same day. However, if one outlet pipe was also opened at 11:00 AM, the tank was filled at 7:00 PM. If 125 inlet pipes are opened, what should be the number of outlet pipes that are opened to keep the level of water in the tank constant?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "10 inlet pipes take 7 hours to fill the tank. Now, let each pipe do 1 unit of work(or fill one unit of the tank) in one hour. Then the total capacity = 70 units.\n\nNow, if they are on till 7:00 PM, then they do 90 units\n\n90 - 8 x = 70\n\n8x = 20\n\nx = 2.5\n\nHere x is the capacity of an outlet pipe.\n\nHence, the capacity of an outlet pipe is 2.5 times the capacity of an inlet pipe. Hence, for 125 inlet pipes, we need 125/2.5 = 50 outlet pipes.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 393112)\n\n**Passage:**\nA tank is connected to some inlet pipes(each of the same work capacity) and some outlet pipes(each of the same work capacity). If 10 inlet pipes are opened at 10:00 AM, at a time when the tank was empty, they could fill the tank by 5:00 PM on the same day. However, if one outlet pipe was also opened at 11:00 AM, the tank was filled at 7:00 PM. If 125 inlet pipes are opened, what should be the number of outlet pipes that are opened to keep the level of water in the tank constant?\n\n80\n\n120\n\n100\n\n50\n\nA tank is connected to some inlet pipes(each of the same work capacity) and some outlet pipes(each of the same work capacity). If 10 inlet pipes are opened at 10:00 AM, at a time when the tank was empty, they could fill the tank by 5:00 PM on the same day. However, if one outlet pipe was also opened at 11:00 AM, the tank was filled at 7:00 PM. If 125 inlet pipes are opened, what should be the number of outlet pipes that are opened to keep the level of water in the tank constant?\n\n**Options:**\n- **A**. 80\n- **B**. 120\n- **C**. 100\n- **D**. 50\n\n**Correct Answer:** null"
     }
   ]
 }

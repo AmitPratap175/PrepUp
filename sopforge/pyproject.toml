@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sopforge"
+version = "1.0.0"
+description = "Multi-agent system for generating Statement of Purpose documents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "SOPForge Team", email = "team@sopforge.dev"}
+]
+
+dependencies = [
+    # LangChain & LangGraph
+    "langchain>=0.1.0",
+    "langgraph>=0.0.1",
+    "langchain-google-genai>=0.0.1",
+    "langchain-community>=0.0.1",
+    
+    # Web scraping & Search
+    "google-search-results>=2.4.2",
+    
+    # API & Web
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.20.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0.0",
+    "psycopg2-binary>=2.9.0",
+]
