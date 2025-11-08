@@ -88,7 +88,14 @@ export default function SectionalTestsPage() {
                     </h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                       {tests
-                        .sort((a, b) => a.title.localeCompare(b.title))
+                        .sort((a, b) => {
+                          const aNum = a.title.match(/\d+/);
+                          const bNum = b.title.match(/\d+/);
+                          if (aNum && bNum) {
+                            return parseInt(aNum[0]) - parseInt(bNum[0]);
+                          }
+                          return 0;
+                        })
                         .map((test) => (
                           <Card key={test.id} className="hover:shadow-lg transition-all duration-300 hover-elevate">
                             <CardHeader>

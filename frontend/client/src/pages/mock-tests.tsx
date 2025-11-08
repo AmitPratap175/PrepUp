@@ -29,13 +29,28 @@ export default function MockTestsPage() {
   const { toast } = useToast();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
 
-  const { data: mockTests, isLoading } = useQuery<PracticeTest[]>({
+  const { data: mockTests, isLoading } = useQuery<PracticeTest[]> ({
     queryKey: ["/api/mock-tests"],
   });
 
   const handleStartTest = (testId: string) => {
     setSelectedTestId(testId);
     navigate(`/mock-test/${testId}`);
+  };
+
+  const naturalSort = (a: PracticeTest, b: PracticeTest) => {
+    const aNum = a.title.match(/\d+/);
+    const bNum = b.title.match(/\d+/);
+
+    if (aNum && bNum) {
+      return parseInt(aNum[0]) - parseInt(bNum[0]);
+    } else if (aNum) {
+      return -1;
+    } else if (bNum) {
+      return 1;
+    } else {
+      return a.title.localeCompare(b.title);
+    }
   };
 
   if (!isAuthenticated) {
@@ -74,7 +89,7 @@ export default function MockTestsPage() {
 
           {mockTests && mockTests.length > 0 ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {mockTests.map((test) => (
+              {mockTests.sort(naturalSort).map((test) => (
                 <Card key={test.id} className="hover:shadow-lg transition-all duration-300 hover-elevate">
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
