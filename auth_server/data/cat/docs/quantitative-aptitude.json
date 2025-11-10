@@ -46879,6 +46879,181 @@
       "solution_text": "Consider speeds(m/s) of A, B and C be a,b and c respectively.\nIf A beats B by 300 meters in a 1.5 km race,\n(1500/a)=(1200/b)\nor, (a/b)=5/4.....(1)\nIf B beats C by 2 minutes 30 seconds (=150 seconds)\n(1500/c)=(1500/b)+150\n(1/c)=(1/b)+(1/10).....(2)\nIf A beats C by 6 minutes 40 seconds(=400 seconds) in a 3 km race,\n(3000/a)+(400)=(3000/c)\n(1/a)+(1/7.5)=(1/c)......(3)\nFrom 1,2 and 3, we get a=7.5 m/s    b=6 m/s  and c=3.75 m/s\nSum of speeds of A and C= 7.5+3.75=11.25 m/s\nB is the answer.",
       "image_url": "",
       "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf A beats B by 300 meters in a 1.5 km race and B beats C by 2 minutes 30 seconds in the same race. What is the sum of speeds of A and C if A beats C by 6 minutes 40 seconds in a 3 km race?\n\n**Options:**\n- **A**. 12.75 m/s\n- **B**. 11.25 m/s ✅\n- **C**. 9.75 m/s\n- **D**. 13.5 m/s\n\n**Correct Answer:** null\n\n**Solution:**\nConsider speeds(m/s) of A, B and C be a,b and c respectively.\nIf A beats B by 300 meters in a 1.5 km race,\n(1500/a)=(1200/b)\nor, (a/b)=5/4.....(1)\nIf B beats C by 2 minutes 30 seconds (=150 seconds)\n(1500/c)=(1500/b)+150\n(1/c)=(1/b)+(1/10).....(2)\nIf A beats C by 6 minutes 40 seconds(=400 seconds) in a 3 km race,\n(3000/a)+(400)=(3000/c)\n(1/a)+(1/7.5)=(1/c)......(3)\nFrom 1,2 and 3, we get a=7.5 m/s    b=6 m/s  and c=3.75 m/s\nSum of speeds of A and C= 7.5+3.75=11.25 m/s\nB is the answer."
+    },
+    {
+      "qid": "quant-1442",
+      "passage_text": "",
+      "question_text": "A factory produces 2 types of bulbs - fluorescent and halogen. 35% of all the bulbs produced are of fluorescent type. 20% of the halogen bulbs are defective and they represent 40% of the total defective bulbs. If the number of defective fluorescent bulbs is 780, then the total number of bulbs produced by the factory is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4000",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the total number of bulbs produced in the factory be ‘x’.\nNumber of fluorescent bulbs produced = 0.35x\nNumber of halogen bulbs produced = 0.65x\n20% of the halogen bulb produced are defective.\nTherefore, number of defective halogen bulbs = 0.2*65x = 0.13x\nThis represents 40% of the total defective bulbs.\n=> Total defective bulbs = 0.13x/0.4 = 0.325x\n=> Number of defective fluorescent bulbs = 0.325x - 0.13x = 0.195x\nIt has been given that 0.195x = 780\n=> x = 4000.\nTherefore, the total number of bulbs produced is 4000.\n\nTherefore, option C is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 112710)\n\n**Passage:**\nA factory produces 2 types of bulbs - fluorescent and halogen. 35% of all the bulbs produced are of fluorescent type. 20% of the halogen bulbs are defective and they represent 40% of the total defective bulbs. If the number of defective fluorescent bulbs is 780, then the total number of bulbs produced by the factory is\n\n2000\n\n3000\n\n4000\n\n5000\n\nA factory produces 2 types of bulbs - fluorescent and halogen. 35% of all the bulbs produced are of fluorescent type. 20% of the halogen bulbs are defective and they represent 40% of the total defective bulbs. If the number of defective fluorescent bulbs is 780, then the total number of bulbs produced by the factory is\n\n**Options:**\n- **A**. 2000\n- **B**. 3000\n- **C**. 4000\n- **D**. 5000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1443",
+      "passage_text": "",
+      "question_text": "A school has girls and boys in the ratio of 3:5. If some new students join the school and the number of girls increase by 30% and the total strength improves by 50%, find out the percentage increase in the number of boys.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "75",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "62",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the number of girls and boys be 3x and 5x.\nNew number of girls = 1.3 $\\times\\ $ 3x = 3.9x\nNew total number of students = 8x (1.5) = 12x\nNumber of boys = 12x - 3.9x = 8.1x\nDifference in the number of boys = 8.1x - 5x = 3.1x\nPercentage = $\\frac{3.1x}{5x}\\times\\ 100$ = 62%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 392230)\n\n**Passage:**\nA school has girls and boys in the ratio of 3:5. If some new students join the school and the number of girls increase by 30% and the total strength improves by 50%, find out the percentage increase in the number of boys.\n\n60\n\n80\n\n75\n\n62\n\nA school has girls and boys in the ratio of 3:5. If some new students join the school and the number of girls increase by 30% and the total strength improves by 50%, find out the percentage increase in the number of boys.\n\n**Options:**\n- **A**. 60\n- **B**. 80\n- **C**. 75\n- **D**. 62\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1444",
+      "passage_text": "",
+      "question_text": "Two types of sugar with price Rs x per kg and Rs 35 per kg are mixed in ratio 3:7. If the after selling at Rs 36 per kg the profit is 12.5%, then find the value of x(in Rs)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Assuming the total cost price = 100a, then the selling price = 112.5a = 36 \n\n=> a = $\\ \\frac{\\ 36}{112.5}$\n\nHence, 100a = $\\ \\frac{\\ 36\\times\\ 100}{112.5}$  = $\\ \\frac{\\ 36\\times\\ 8}{9}$  = 32\n\nNow, the total cost price can also be calculated using individual cost prices of types of sugar. \n\nHence, cost price = $\\ \\frac{\\ 3x\\ +\\ 35\\times\\ 7}{3+7}$  = 32\n\n=> 3x =320-35*7 = 75\n\n=> x = Rs 25",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 290223)\n\n**Passage:**\nTwo types of sugar with price Rs x per kg and Rs 35 per kg are mixed in ratio 3:7. If the after selling at Rs 36 per kg the profit is 12.5%, then find the value of x(in Rs)?\n\n20\n\n25\n\n30\n\n24\n\nTwo types of sugar with price Rs x per kg and Rs 35 per kg are mixed in ratio 3:7. If the after selling at Rs 36 per kg the profit is 12.5%, then find the value of x(in Rs)?\n\n**Options:**\n- **A**. 20\n- **B**. 25\n- **C**. 30\n- **D**. 24\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1445",
+      "passage_text": "",
+      "question_text": "Two friends Ramu and Somu decide to start a business. Ram invests Rs. 10,000 and Somu invests Rs. 5000. After 9 months, Somu invests some additional amount X such that they hold equal share in the profit of the company at the end of 1 year. The amount X is equal to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 10,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 5,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 15,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 20,000",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "To hold equal share of profit, the amount invested by both multiplied by the time that amount invested must be equal by the end of 1 year.\nTherefore, 10,000 x 12 = 5000 x 12 + X x 3\n\n5000 x 12 = 3X\n=>X = Rs. 20,000\n\nTherefore, Somu must have invested Rs. 20,000 by the end of 9 months. Hence, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 97288)\n\n**Passage:**\nTwo friends Ramu and Somu decide to start a business. Ram invests Rs. 10,000 and Somu invests Rs. 5000. After 9 months, Somu invests some additional amount X such that they hold equal share in the profit of the company at the end of 1 year. The amount X is equal to\n\nRs. 10,000\n\nRs. 5,000\n\nRs. 15,000\n\nRs. 20,000\n\nTwo friends Ramu and Somu decide to start a business. Ram invests Rs. 10,000 and Somu invests Rs. 5000. After 9 months, Somu invests some additional amount X such that they hold equal share in the profit of the company at the end of 1 year. The amount X is equal to\n\n**Options:**\n- **A**. Rs. 10,000\n- **B**. Rs. 5,000\n- **C**. Rs. 15,000\n- **D**. Rs. 20,000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-1446",
+      "passage_text": "",
+      "question_text": "Arun, Vikas and Sunaina were offered a box of pens by their teacher on children’s day. They were free to choose any number of pens. After getting pens, they sat down to count and compare no. of pens in possession of each one. They found that Arun got 50% more pens than Vikas and Sunaina got 50% less pens than Arun. What could be the minimum no. of pens present in the box?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let us assume that Vikas got x pens. Then, Arun got $\\frac{\\text{3x}}{2}$ and Sunaina got $\\frac{\\text{3x}}{4}$ pens\nMinimum value of x for which Arun and Sunaina have not got fractional no. of pens is 4.\nSo, Vikas must have got minimum 4 pens , Arun must have got minimum 6 pens and Sunaina must have got minimum 3 pens.\nThus, the minimum no. of pens in packet = 4 + 6 + 3 = 13\nHence, option B is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 129626)\n\n**Passage:**\nArun, Vikas and Sunaina were offered a box of pens by their teacher on children’s day. They were free to choose any number of pens. After getting pens, they sat down to count and compare no. of pens in possession of each one. They found that Arun got 50% more pens than Vikas and Sunaina got 50% less pens than Arun. What could be the minimum no. of pens present in the box?\n\n12\n\n13\n\n17\n\n36\n\nArun, Vikas and Sunaina were offered a box of pens by their teacher on children’s day. They were free to choose any number of pens. After getting pens, they sat down to count and compare no. of pens in possession of each one. They found that Arun got 50% more pens than Vikas and Sunaina got 50% less pens than Arun. What could be the minimum no. of pens present in the box?\n\n**Options:**\n- **A**. 12\n- **B**. 13\n- **C**. 17\n- **D**. 36\n\n**Correct Answer:** null"
     }
   ]
 }
