@@ -953,7 +953,7 @@ if __name__ == "__main__":
         for url_curr in urls_raw:
             
             type_curr = "varc"
-            urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
+            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
@@ -965,7 +965,7 @@ if __name__ == "__main__":
         
         for url_curr in urls_raw:
             type_curr = "dilr"
-            urls = [url_curr.split("=")[0]+f"={num}" for num in range(25, 47)]
+            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
 
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
@@ -994,7 +994,7 @@ if __name__ == "__main__":
         urls = []
         for url_curr in urls_raw:
             type_curr = "quants"
-            urls = [url_curr.split("=")[0]+f"={num}" for num in range(47, 69)]
+            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl_quants(urls, type_curr))
