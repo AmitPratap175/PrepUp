@@ -1,0 +1,621 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-20-1",
+      "passage_text": "",
+      "question_text": "What would be the area enclosed by the inequalities $\\left|x\\right|+\\left|y\\right|\\le4$, $\\left|x\\right|\\ge2$ and $\\left|y\\right|\\ge2$ in square units?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "The first expression is linear in nature, meaning that it will act as a linear equation betweeen its critical points. \nThe critical points for $\\left|x\\right|+\\left|y\\right|\\le4$ would be at x=0 and y=0\nWe get the pairs, (4,0), (-4,0), (0, 4),(0, -4)\nDrawing these out, we get the rough figure at \nThe other two inequalities represent lines that are parallel to y and x-axis respectively. \nDrawing them out we get:\nWe see that there is no overlapping area of the three regions. We can numerically calculate it as when $x=\\pm\\ 2$ and $y=\\pm\\ 2$, then the first inequality is satisfied at four points and not region. \nTherefore, the area enclosed by the three inequalities would be 0",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat would be the area enclosed by the inequalities $\\left|x\\right|+\\left|y\\right|\\le4$, $\\left|x\\right|\\ge2$ and $\\left|y\\right|\\ge2$ in square units?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nThe first expression is linear in nature, meaning that it will act as a linear equation betweeen its critical points. \nThe critical points for $\\left|x\\right|+\\left|y\\right|\\le4$ would be at x=0 and y=0\nWe get the pairs, (4,0), (-4,0), (0, 4),(0, -4)\nDrawing these out, we get the rough figure at \nThe other two inequalities represent lines that are parallel to y and x-axis respectively. \nDrawing them out we get:\nWe see that there is no overlapping area of the three regions. We can numerically calculate it as when $x=\\pm\\ 2$ and $y=\\pm\\ 2$, then the first inequality is satisfied at four points and not region. \nTherefore, the area enclosed by the three inequalities would be 0",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-2",
+      "passage_text": "",
+      "question_text": "$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$. What is the value of $[k]$, where $[x]$ represents the largest integer less than or equal to $x$?",
+      "options": [],
+      "correct_option_data": "64",
+      "solution_text": "$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(\\log_{6}{6} + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(1 + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4 \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 9^{\\log_{6}{4}} \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 36^{\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{2\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{\\log_{6}{16}} \\times = k$\nor, $4 \\times 16 = k$\nThus, $k = 64$\nHence, 64 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$. What is the value of $[k]$, where $[x]$ represents the largest integer less than or equal to $x$?\n\n**Options:**\n\n**Correct Answer:** 64\n\n**Solution:**\n$9^{\\log_{6}{4}} \\times 4^{\\log_{6}{24}} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(\\log_{6}{6} + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4^{(1 + \\log_{6}{4})} = k$\nor, $9^{\\log_{6}{4}} \\times 4 \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 9^{\\log_{6}{4}} \\times 4^{\\log_{6}{4}} = k$\nor, $ 4 \\times 36^{\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{2\\log_{6}{4}} \\times = k$\nor, $ 4 \\times 6^{\\log_{6}{16}} \\times = k$\nor, $4 \\times 16 = k$\nThus, $k = 64$\nHence, 64 is the correct answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-3",
+      "passage_text": "",
+      "question_text": "A number is chosen at random from all the possible permutations of the digits of the number 16789. What is the probability that the number begins with an even number and ends with an odd number?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3/5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3/10",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2/5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The first digit can be chosen in 2 ways and last in 3 ways. The remaining digits can be arranged in 3! ways. Hence # numbers are = 2*3*3! = 36.\nAll possible permutations are 5!. Hence, probability = 6*3!/5! = 3/10.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number is chosen at random from all the possible permutations of the digits of the number 16789. What is the probability that the number begins with an even number and ends with an odd number?\n\n**Options:**\n- **A**. 3/5\n- **B**. 1/5\n- **C**. 3/10 ✅\n- **D**. 2/5\n\n**Correct Answer:** null\n\n**Solution:**\nThe first digit can be chosen in 2 ways and last in 3 ways. The remaining digits can be arranged in 3! ways. Hence # numbers are = 2*3*3! = 36.\nAll possible permutations are 5!. Hence, probability = 6*3!/5! = 3/10.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-4",
+      "passage_text": "",
+      "question_text": "Srikar purchased a bike and a cycle for a total of Rs. 1,50,000. He later sold both for Rs. 1,80,000 combined. The profit earned on the cycle was Rs. 10,000, and the ratio of the profit percentages on the cycle and the bike was 3:4. What was the cost price of the bike?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 90,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 1,00,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 80,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 1,20,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The profit obtained in the total transaction is 180000 - 150000 = Rs. 30,000\nWe are told that the profit obtained on cycle is Rs. 10,000. So, the profit obtained on bike is Rs. 20,000.\nLet's assume the cost price of bike as X and cycle as Y.\n$\\dfrac{\\dfrac{10000}{Y}}{\\dfrac{20000}{X}}=\\dfrac{3}{4}$\n $\\dfrac{X}{2Y}=\\dfrac{3}{4}\\Rightarrow\\ Y=\\ \\dfrac{2}{3}X$\nWe know that X+Y = Rs.1,50,000\n$X+\\dfrac{2}{3}X = 150000$\nX= 90,000",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSrikar purchased a bike and a cycle for a total of Rs. 1,50,000. He later sold both for Rs. 1,80,000 combined. The profit earned on the cycle was Rs. 10,000, and the ratio of the profit percentages on the cycle and the bike was 3:4. What was the cost price of the bike?\n\n**Options:**\n- **A**. Rs. 90,000 ✅\n- **B**. Rs. 1,00,000\n- **C**. Rs. 80,000\n- **D**. Rs. 1,20,000\n\n**Correct Answer:** null\n\n**Solution:**\nThe profit obtained in the total transaction is 180000 - 150000 = Rs. 30,000\nWe are told that the profit obtained on cycle is Rs. 10,000. So, the profit obtained on bike is Rs. 20,000.\nLet's assume the cost price of bike as X and cycle as Y.\n$\\dfrac{\\dfrac{10000}{Y}}{\\dfrac{20000}{X}}=\\dfrac{3}{4}$\n $\\dfrac{X}{2Y}=\\dfrac{3}{4}\\Rightarrow\\ Y=\\ \\dfrac{2}{3}X$\nWe know that X+Y = Rs.1,50,000\n$X+\\dfrac{2}{3}X = 150000$\nX= 90,000",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-5",
+      "passage_text": "",
+      "question_text": "Three friends, Dhruv, Dhruvi, and Ravi, planned a meetup. Dhruv leaves Delhi at 6:00 AM at 40 km/h, and Dhruvi leaves Jaipur at the same time at 20 km/h. Ravi, who was supposed to leave with Dhruv, starts at 7:00 AM from Delhi. The distance between Delhi and Jaipur is 480 km. Ravi reaches the meeting point 1 hour later than Dhruv and 2 hours earlier than Dhruvi. What is the distance from Jaipur to the meeting point?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "280 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "160 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200 Km",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "180 Km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that Ravi leaves 1 hour later than Dhruv and also reaches the meeting point 1 hour later than Dhruv. It means Ravi must have driven at the same speed as Dhruv, i.e. 40 Km/hr.\nFurther, we are given that Ravi reaches the meeting point 3 hours earlier than Dhruvi who drove at the speed of 20 Km/hr.\nLet the time Dhruv takes to reach the meeting point is $x$ hours so the time Dhruvi takes to reach the meeting point will be $x+3$ hours since she also started one hour earlier than Ravi and reaches two hours later than him.\nTotal Distance covered by Dhruv = 40*x = 40x km\nAnd, the total distance covered by Dhruvi = 20*(x+3) = 20x + 60 Km\nWe know that they would have covered a distance of 480 Km together since they meet somewhere between the route. \nHence, 40x + 20x + 60 = 480\n60x = 420\nx = 7\nHence, Dhruv drove for 7 hours. So, Dhruvi would have driven for 7+3 = 10 hours. \nSince Dhruvi drove from Jaipur, the total distance covered by her to reach the meeting point = 20*10 = 200 Km.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree friends, Dhruv, Dhruvi, and Ravi, planned a meetup. Dhruv leaves Delhi at 6:00 AM at 40 km/h, and Dhruvi leaves Jaipur at the same time at 20 km/h. Ravi, who was supposed to leave with Dhruv, starts at 7:00 AM from Delhi. The distance between Delhi and Jaipur is 480 km. Ravi reaches the meeting point 1 hour later than Dhruv and 2 hours earlier than Dhruvi. What is the distance from Jaipur to the meeting point?\n\n**Options:**\n- **A**. 280 Km\n- **B**. 160 Km\n- **C**. 200 Km ✅\n- **D**. 180 Km\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that Ravi leaves 1 hour later than Dhruv and also reaches the meeting point 1 hour later than Dhruv. It means Ravi must have driven at the same speed as Dhruv, i.e. 40 Km/hr.\nFurther, we are given that Ravi reaches the meeting point 3 hours earlier than Dhruvi who drove at the speed of 20 Km/hr.\nLet the time Dhruv takes to reach the meeting point is $x$ hours so the time Dhruvi takes to reach the meeting point will be $x+3$ hours since she also started one hour earlier than Ravi and reaches two hours later than him.\nTotal Distance covered by Dhruv = 40*x = 40x km\nAnd, the total distance covered by Dhruvi = 20*(x+3) = 20x + 60 Km\nWe know that they would have covered a distance of 480 Km together since they meet somewhere between the route. \nHence, 40x + 20x + 60 = 480\n60x = 420\nx = 7\nHence, Dhruv drove for 7 hours. So, Dhruvi would have driven for 7+3 = 10 hours. \nSince Dhruvi drove from Jaipur, the total distance covered by her to reach the meeting point = 20*10 = 200 Km.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-6",
+      "passage_text": "",
+      "question_text": "A, B and C are standing in the clockwise direction at the corners of an equilateral triangle of side 'a'. A and B run clockwise while C runs anti clockwise along the sides of the triangle with speeds of 1:2:3 respectively. How much distance does C run when they meet for the third time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18a",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24a",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12a",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36a",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can draw out a rough diagram as follows:\nLet's say A takes 1 minute to cover one side of the park. In that 1 minute, C will make an entire loop and be at its starting point, and B will cross two edges. \nA and B will meet first at the 2 minute mark (at C's starting point), where C will also be. \nThis would be the first instance of them all meeting together. \nThe second meeting of A and B will again be at the same point, after 3 minutes. \nThen, they keep meeting at C's starting point every three minutes. \nSo, the time taken for their third meeting would be 2+3+3 = 8 minutes. \nWe initially assumed that C travels all three sides of the triangle in a single minute, meaning that in 8 minutes, he travelled a total of 24a in distance. \nTherefore, Option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B and C are standing in the clockwise direction at the corners of an equilateral triangle of side 'a'. A and B run clockwise while C runs anti clockwise along the sides of the triangle with speeds of 1:2:3 respectively. How much distance does C run when they meet for the third time?\n\n**Options:**\n- **A**. 18a\n- **B**. 24a ✅\n- **C**. 12a\n- **D**. 36a\n\n**Correct Answer:** null\n\n**Solution:**\nWe can draw out a rough diagram as follows:\nLet's say A takes 1 minute to cover one side of the park. In that 1 minute, C will make an entire loop and be at its starting point, and B will cross two edges. \nA and B will meet first at the 2 minute mark (at C's starting point), where C will also be. \nThis would be the first instance of them all meeting together. \nThe second meeting of A and B will again be at the same point, after 3 minutes. \nThen, they keep meeting at C's starting point every three minutes. \nSo, the time taken for their third meeting would be 2+3+3 = 8 minutes. \nWe initially assumed that C travels all three sides of the triangle in a single minute, meaning that in 8 minutes, he travelled a total of 24a in distance. \nTherefore, Option B is the correct answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-7",
+      "passage_text": "",
+      "question_text": "$\\alpha\\ $ and $\\beta\\ $ are the roots of the quadratic equation $2x^2+\\left(\\cos\\theta\\ \\right)x-1=0$. If the maximum value of the expression $\\left(\\alpha^3+\\beta^3\\right)^2$ is $\\gamma\\ $, find the value of $128\\gamma\\ $",
+      "options": [],
+      "correct_option_data": "98",
+      "solution_text": "The sum of the roots will be, $\\alpha+\\beta=-\\dfrac{\\cos\\theta}{2}$ and product of the roots will be $\\alpha\\beta=-\\dfrac{1}{2}$\nWe can find the value of $\\alpha^2+\\beta^2$ since this equals, $\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\n$\\alpha^2+\\beta^2=\\dfrac{\\cos^2\\theta\\ }{4}+1$\n$\\left(\\alpha^3+\\beta^3\\right)=\\left(\\alpha+\\beta\\right)\\left(\\alpha^2+\\beta^2-\\alpha\\beta\\right)$\nSubstituting the values we have, \n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+1+\\dfrac{1}{2}\\right)$\n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+\\dfrac{3}{2}\\right)$\nSince we are asked to find the square of this value, we can ignore the polarity and take the value of cos for which it will give the biggest value, which is when it is equal to 1. \n$\\left(\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{1}{4}+\\dfrac{3}{2}\\right)\\right)^2=\\left(\\dfrac{7}{8}\\right)^2$\nWe are asked to find, $128\\gamma=128\\times\\dfrac{49}{64}=98$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$\\alpha\\ $ and $\\beta\\ $ are the roots of the quadratic equation $2x^2+\\left(\\cos\\theta\\ \\right)x-1=0$. If the maximum value of the expression $\\left(\\alpha^3+\\beta^3\\right)^2$ is $\\gamma\\ $, find the value of $128\\gamma\\ $\n\n**Options:**\n\n**Correct Answer:** 98\n\n**Solution:**\nThe sum of the roots will be, $\\alpha+\\beta=-\\dfrac{\\cos\\theta}{2}$ and product of the roots will be $\\alpha\\beta=-\\dfrac{1}{2}$\nWe can find the value of $\\alpha^2+\\beta^2$ since this equals, $\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\n$\\alpha^2+\\beta^2=\\dfrac{\\cos^2\\theta\\ }{4}+1$\n$\\left(\\alpha^3+\\beta^3\\right)=\\left(\\alpha+\\beta\\right)\\left(\\alpha^2+\\beta^2-\\alpha\\beta\\right)$\nSubstituting the values we have, \n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+1+\\dfrac{1}{2}\\right)$\n$\\left(-\\dfrac{\\cos\\theta}{2}\\right)\\left(\\dfrac{\\cos^2\\theta}{4}+\\dfrac{3}{2}\\right)$\nSince we are asked to find the square of this value, we can ignore the polarity and take the value of cos for which it will give the biggest value, which is when it is equal to 1. \n$\\left(\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{1}{4}+\\dfrac{3}{2}\\right)\\right)^2=\\left(\\dfrac{7}{8}\\right)^2$\nWe are asked to find, $128\\gamma=128\\times\\dfrac{49}{64}=98$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-8",
+      "passage_text": "",
+      "question_text": "A group of four athletes—Ajay, Vijay, Sanjay, and Shyam—participated in a marathon. Ajay ran 25% more distance than Vijay, and Sanjay ran 40% less distance than Shyam. Additionally, Ajay ran 25 kilometers more than Shyam. The total distance covered by Vijay and Sanjay combined is 300 kilometers. What is the difference between the distances covered by Vijay and Sanjay?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60 Km",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "120 Km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "80 Km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that Ajay ran 25% more distance than Vijay. Let the distance covered by Vijay is $100x\\ Km$ so the distance covered by Ajay will be $100x\\times1.25=125x\\ Km$\nFurther, Sanjay ran 40% less distance than Shyam. Let the distance covered by Shyam is 100y Km so the distance covered by Sanjay will be $100y\\ \\ \\times\\left(100-40\\right)\\%=60y$\nNow, we are given that Ajay ran 25 kilometers more than Shyam.\nOr, we can say, $125x=25+100y \\Rightarrow 5x=1+ 4y$ ....... Equation 1.\nAnd, the total distance covered by Vijay and Sanjay combined is 300 kilometers.\n$100x+60y=300$\nOr, $5x+3y=15$\nReplacing the value of 5x from equation 1,\nWe get, $1+4y+3y=15$\n$7y=14$\n$y=2$\nReplacing the value of y in equation 1, we get, $x=1.8$\nWe need to find the difference between the distances covered by Vijay and Sanjay.\nOr, $100x-60y$\nOr, $100\\left(1.8\\right)-60\\left(2\\right)=60\\ Km$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of four athletes—Ajay, Vijay, Sanjay, and Shyam—participated in a marathon. Ajay ran 25% more distance than Vijay, and Sanjay ran 40% less distance than Shyam. Additionally, Ajay ran 25 kilometers more than Shyam. The total distance covered by Vijay and Sanjay combined is 300 kilometers. What is the difference between the distances covered by Vijay and Sanjay?\n\n**Options:**\n- **A**. 100 Km\n- **B**. 60 Km ✅\n- **C**. 120 Km\n- **D**. 80 Km\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that Ajay ran 25% more distance than Vijay. Let the distance covered by Vijay is $100x\\ Km$ so the distance covered by Ajay will be $100x\\times1.25=125x\\ Km$\nFurther, Sanjay ran 40% less distance than Shyam. Let the distance covered by Shyam is 100y Km so the distance covered by Sanjay will be $100y\\ \\ \\times\\left(100-40\\right)\\%=60y$\nNow, we are given that Ajay ran 25 kilometers more than Shyam.\nOr, we can say, $125x=25+100y \\Rightarrow 5x=1+ 4y$ ....... Equation 1.\nAnd, the total distance covered by Vijay and Sanjay combined is 300 kilometers.\n$100x+60y=300$\nOr, $5x+3y=15$\nReplacing the value of 5x from equation 1,\nWe get, $1+4y+3y=15$\n$7y=14$\n$y=2$\nReplacing the value of y in equation 1, we get, $x=1.8$\nWe need to find the difference between the distances covered by Vijay and Sanjay.\nOr, $100x-60y$\nOr, $100\\left(1.8\\right)-60\\left(2\\right)=60\\ Km$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-9",
+      "passage_text": "",
+      "question_text": "A shirt factory in China employs 10 men and 10 women, each working two 8-hour shifts. Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second. The factory produces 1,760 shirts in the first shift and 1,520 in the second. Find the number of shirts one man and woman can make per hour at full efficiency.",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Let us consider a man's efficiency as M and a woman's efficiency as W. \nWe are told that the factory employs 10 of each, working two shifts. \nUsing the information, \"Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second.\" We draw up the equations for this\nFirst shift: 10(M+0.7W)=1760\nSecond shift: 10(0.6M+W)=1520\nExpanding these equations, \n10M+7W=1760 and 6M+10W=1520\nMultiplying the first equation by 6 and the second one by 10\n60M+42W=10560 and 60M+100W=15200\nSubtracting the two equations, we get 58W=4640\nWe get W=80, but we are told that each shift is 8 hours, so the per-hour efficiency of a woman is 10 shirts. \nUsing W=80, substituting this, we get M=120 and similarly, the per-hour efficiency is 15 shirts. \nThe question asks for one man and woman in one hour. So, 10+15=25 shirts.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shirt factory in China employs 10 men and 10 women, each working two 8-hour shifts. Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second. The factory produces 1,760 shirts in the first shift and 1,520 in the second. Find the number of shirts one man and woman can make per hour at full efficiency.\n\n**Options:**\n\n**Correct Answer:** 25\n\n**Solution:**\nLet us consider a man's efficiency as M and a woman's efficiency as W. \nWe are told that the factory employs 10 of each, working two shifts. \nUsing the information, \"Men operate at full efficiency in the first shift and 60% in the second, while women work at 70% efficiency in the first shift and full efficiency in the second.\" We draw up the equations for this\nFirst shift: 10(M+0.7W)=1760\nSecond shift: 10(0.6M+W)=1520\nExpanding these equations, \n10M+7W=1760 and 6M+10W=1520\nMultiplying the first equation by 6 and the second one by 10\n60M+42W=10560 and 60M+100W=15200\nSubtracting the two equations, we get 58W=4640\nWe get W=80, but we are told that each shift is 8 hours, so the per-hour efficiency of a woman is 10 shirts. \nUsing W=80, substituting this, we get M=120 and similarly, the per-hour efficiency is 15 shirts. \nThe question asks for one man and woman in one hour. So, 10+15=25 shirts.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-10",
+      "passage_text": "",
+      "question_text": "A merchant buys two items: A and B. The cost of item A is 20% higher than that of B, and the selling price of item A is 20% lower than item B's. At these prices, the profit on item B is 65%. The merchant wants to make an overall profit of exactly 25% after selling both the items. How much per cent should the merchant lower B's selling price to reach the profit goal, keeping A's selling price unchanged?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "16.67%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12.12%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that the cost price of A is 20% more than B. Let the cost price of B be 100x so the cost price of A will be 120x. \nNow, we are know that the profit on item B is 65%.\nSo, the profit will be $0.65\\times100x=65x$\nHence, the selling price of item B = 165x\nNow, we know that the selling price of Item A is 20% lower that that of Item B.\nIf the selling price of B is 165x, the selling price of item A will be $165x\\times0.8=132x$\nWe know that that merchant wants to achieve the profit goal of 25%.\nTotal Cost price of both the items: 100x + 120x = 220x\nCombined selling price: 165x + 132x = 297x\nIf the merchant wants to achieve the profit goal, then the combined selling price is $220x\\times1.25=275x$\nSo, the combined selling price has to be reduced by  297x - 275x = 22x\nSince the changes are made only in the selling price of item B, the selling price of item B has to be reduced by 22x.\nHence, the % reduction in the selling price of Item B: $\\dfrac{22x}{165x}\\times100=13.33\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA merchant buys two items: A and B. The cost of item A is 20% higher than that of B, and the selling price of item A is 20% lower than item B's. At these prices, the profit on item B is 65%. The merchant wants to make an overall profit of exactly 25% after selling both the items. How much per cent should the merchant lower B's selling price to reach the profit goal, keeping A's selling price unchanged?\n\n**Options:**\n- **A**. 18%\n- **B**. 13.33% ✅\n- **C**. 16.67%\n- **D**. 12.12%\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that the cost price of A is 20% more than B. Let the cost price of B be 100x so the cost price of A will be 120x. \nNow, we are know that the profit on item B is 65%.\nSo, the profit will be $0.65\\times100x=65x$\nHence, the selling price of item B = 165x\nNow, we know that the selling price of Item A is 20% lower that that of Item B.\nIf the selling price of B is 165x, the selling price of item A will be $165x\\times0.8=132x$\nWe know that that merchant wants to achieve the profit goal of 25%.\nTotal Cost price of both the items: 100x + 120x = 220x\nCombined selling price: 165x + 132x = 297x\nIf the merchant wants to achieve the profit goal, then the combined selling price is $220x\\times1.25=275x$\nSo, the combined selling price has to be reduced by  297x - 275x = 22x\nSince the changes are made only in the selling price of item B, the selling price of item B has to be reduced by 22x.\nHence, the % reduction in the selling price of Item B: $\\dfrac{22x}{165x}\\times100=13.33\\%$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-11",
+      "passage_text": "",
+      "question_text": "How many six - digit numbers can be formed by using all the digits 0, 1, 3, 4, 6 and 7 such that the digits at the tens, thousands and lakhs place are in an arithmetic progression?",
+      "options": [],
+      "correct_option_data": "18",
+      "solution_text": "Since it is mentioned that all the digits need to be used to form the numbers, repetition would not be possible.\nThe digits at the tens, thousands and lakhs place can be (0, 3, 6); (1, 4, 7) or (7, 4, 1)\nThe remaining three places can be filled in 3! = 6 ways.\nSo, total number of such numbers = 3 * 6 = 18Alternate Explanation:The digits we have are 0,1,3,4,6, and 7 \nNow it says digits at tens, thousands and lakhs positions form an A.P \nNow this means they form an A.P and it can be either increasing or decreasing \nNow let us take the first possible A.P which is 1,4,7 \nSo keeping 1 at lakhs, 4 at thousands and 7 at tens \nNow, the remaining 3 digits can be arranged in 3! =6 ways \nSimilarly you can have 741 \nNow the next A.P is 0,3,6 0 and 6,3,0 \nHowever, in this case, A.P. will not be considered where 0 will be at the lakhs position. So we only have 1 possible A.P where 6 is at lakhs, 3 at thousands and 0 at tens and the remaining 3 can be arranged in 3! ways.So we get 6+6+6=18 ways.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many six - digit numbers can be formed by using all the digits 0, 1, 3, 4, 6 and 7 such that the digits at the tens, thousands and lakhs place are in an arithmetic progression?\n\n**Options:**\n\n**Correct Answer:** 18\n\n**Solution:**\nSince it is mentioned that all the digits need to be used to form the numbers, repetition would not be possible.\nThe digits at the tens, thousands and lakhs place can be (0, 3, 6); (1, 4, 7) or (7, 4, 1)\nThe remaining three places can be filled in 3! = 6 ways.\nSo, total number of such numbers = 3 * 6 = 18Alternate Explanation:The digits we have are 0,1,3,4,6, and 7 \nNow it says digits at tens, thousands and lakhs positions form an A.P \nNow this means they form an A.P and it can be either increasing or decreasing \nNow let us take the first possible A.P which is 1,4,7 \nSo keeping 1 at lakhs, 4 at thousands and 7 at tens \nNow, the remaining 3 digits can be arranged in 3! =6 ways \nSimilarly you can have 741 \nNow the next A.P is 0,3,6 0 and 6,3,0 \nHowever, in this case, A.P. will not be considered where 0 will be at the lakhs position. So we only have 1 possible A.P where 6 is at lakhs, 3 at thousands and 0 at tens and the remaining 3 can be arranged in 3! ways.So we get 6+6+6=18 ways.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-12",
+      "passage_text": "",
+      "question_text": "What is the greatest number that cannot be written as 4A + 9B considering A and B are whole numbers?",
+      "options": [],
+      "correct_option_data": "23",
+      "solution_text": "We know that all the integers can be written as 4A, 4A+1, 4A+2 or 4A+3 where A is any integer.\nNow, we can rewrite 4A + 9B = 4A + 8B + B = 4(A+2B) + B\nNoo, on comparing 4(A+2B) + B with the forms mentioned above, B can be 0/1/2 or 3.\nLet's make the cases:\nWhen B = 0, numbers will be of the form 4(A+2(0)) = 4A i.e. 4, 8, 12, 16, 20, 24, 28, 32,36 etc\nWhen B = 1, numbers will be off the form 4(A+2(1)) + 1 = 4A + 9 i.e. 13, 17, 21, 25, 29, 33, 37 etc\nWhen B = 2, numbers will be off the form 4(A+2(2)) + 2 = 4A + 18 i.e. 22, 26, 30, 34, 38 etc\nWhen B = 3, numbers will be off the form 4(A+2(3)) + 3 = 4A + 27 i.e. 27, 31, 35, 39, etc\nNow, upon observing, we see that we get all the number from 24 with the form 4A + 9B.\nHence, the smallest number that can not be written in the form 4A + 9B = 23\nAlternative Solution:\nThis type of problem is a classic example of the Frobenius Coin Problem. For two relatively prime numbers (numbers that have no common divisors other than 1), the largest number that cannot be expressed as aX + bY (where a and b are the two numbers, and X and Y are non-negative integers) is given by the formula:\ng(a,b) = ab - a - b\nIn this case, a=4 and b=9\n$g(4,9)=4\\times9−4−9=36−4−9=23$\nSo, the largest number that cannot be expressed as 4A+9B for any whole numbers A and B is 23.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the greatest number that cannot be written as 4A + 9B considering A and B are whole numbers?\n\n**Options:**\n\n**Correct Answer:** 23\n\n**Solution:**\nWe know that all the integers can be written as 4A, 4A+1, 4A+2 or 4A+3 where A is any integer.\nNow, we can rewrite 4A + 9B = 4A + 8B + B = 4(A+2B) + B\nNoo, on comparing 4(A+2B) + B with the forms mentioned above, B can be 0/1/2 or 3.\nLet's make the cases:\nWhen B = 0, numbers will be of the form 4(A+2(0)) = 4A i.e. 4, 8, 12, 16, 20, 24, 28, 32,36 etc\nWhen B = 1, numbers will be off the form 4(A+2(1)) + 1 = 4A + 9 i.e. 13, 17, 21, 25, 29, 33, 37 etc\nWhen B = 2, numbers will be off the form 4(A+2(2)) + 2 = 4A + 18 i.e. 22, 26, 30, 34, 38 etc\nWhen B = 3, numbers will be off the form 4(A+2(3)) + 3 = 4A + 27 i.e. 27, 31, 35, 39, etc\nNow, upon observing, we see that we get all the number from 24 with the form 4A + 9B.\nHence, the smallest number that can not be written in the form 4A + 9B = 23\nAlternative Solution:\nThis type of problem is a classic example of the Frobenius Coin Problem. For two relatively prime numbers (numbers that have no common divisors other than 1), the largest number that cannot be expressed as aX + bY (where a and b are the two numbers, and X and Y are non-negative integers) is given by the formula:\ng(a,b) = ab - a - b\nIn this case, a=4 and b=9\n$g(4,9)=4\\times9−4−9=36−4−9=23$\nSo, the largest number that cannot be expressed as 4A+9B for any whole numbers A and B is 23.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-13",
+      "passage_text": "",
+      "question_text": "Today is Joel's birthday, and he invited 15 friends to celebrate. He asked his father, Rahul, to make birthday conical caps — one large cap for Joel and 15 smaller caps for his friends. Both caps have a radius of 12 cm, but the height of the large cap is 9 cm, and the height of the smaller caps is 5 cm. Find the total area of the sheet $\\left(in\\ cm^2\\right)$ required to make all 16 caps. ($\\pi\\ =\\dfrac{22}{7}$)",
+      "options": [],
+      "correct_option_data": "7920",
+      "solution_text": "We need to find the curved surface area of a conical shaped caps. \nThe formula for the curved surface area is $\\pi\\ \\times\\ r\\times\\ l$ where 'r' refers the radius and 'l' refers to slant height. \nslant height = $\\sqrt{r^2+h^2}$\nCurved surface area of the larger cap:\nWe are given the height and the radius of the larger cap i.e. 9 cm and 12 cm. \nSlant height of the bigger cap: $\\sqrt{9^2+12^2}=15$\nCurved Surface Area = $\\pi\\ \\times\\ 12\\ \\times\\ 15=180\\pi\\ \\ cm^2$\nCurved surface area of the smaller caps:\nWe are given the height and the radius of the smaller caps i.e. 5 cm and 12 cm. \nSlant height of the smaller caps: $\\sqrt{5^2+12^2}=13$\nCurved Surface Area = $15\\times\\ \\pi\\ \\times\\ 12\\ \\times\\ 13=2340\\pi\\ \\ cm^2$\nTotal Curved Surface Area = $2340\\pi\\ \\ +180\\pi\\ =2520\\pi\\ =2520\\times\\dfrac{22}{7}=7920\\ cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nToday is Joel's birthday, and he invited 15 friends to celebrate. He asked his father, Rahul, to make birthday conical caps — one large cap for Joel and 15 smaller caps for his friends. Both caps have a radius of 12 cm, but the height of the large cap is 9 cm, and the height of the smaller caps is 5 cm. Find the total area of the sheet $\\left(in\\ cm^2\\right)$ required to make all 16 caps. ($\\pi\\ =\\dfrac{22}{7}$)\n\n**Options:**\n\n**Correct Answer:** 7920\n\n**Solution:**\nWe need to find the curved surface area of a conical shaped caps. \nThe formula for the curved surface area is $\\pi\\ \\times\\ r\\times\\ l$ where 'r' refers the radius and 'l' refers to slant height. \nslant height = $\\sqrt{r^2+h^2}$\nCurved surface area of the larger cap:\nWe are given the height and the radius of the larger cap i.e. 9 cm and 12 cm. \nSlant height of the bigger cap: $\\sqrt{9^2+12^2}=15$\nCurved Surface Area = $\\pi\\ \\times\\ 12\\ \\times\\ 15=180\\pi\\ \\ cm^2$\nCurved surface area of the smaller caps:\nWe are given the height and the radius of the smaller caps i.e. 5 cm and 12 cm. \nSlant height of the smaller caps: $\\sqrt{5^2+12^2}=13$\nCurved Surface Area = $15\\times\\ \\pi\\ \\times\\ 12\\ \\times\\ 13=2340\\pi\\ \\ cm^2$\nTotal Curved Surface Area = $2340\\pi\\ \\ +180\\pi\\ =2520\\pi\\ =2520\\times\\dfrac{22}{7}=7920\\ cm^2$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-14",
+      "passage_text": "",
+      "question_text": "Given $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$, such that this is true for all real values of x, except when x=1. Find the sum of all the values of $x$ for which the expression, $f\\left(f\\left(x\\right)\\right)=\\dfrac{1}{x}$ holds true.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-0.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.25",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given equation is, $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$\nWe can write this as, $f\\left(x\\right)=\\dfrac{2x}{x-1}$\nSince the denominator is x-1, we see that x cannot equal to 1, otherwise the function will be undefined. \nThen, $f\\left(f\\left(x\\right)\\right)=\\dfrac{2\\left(\\dfrac{2x}{x-1}\\right)}{\\dfrac{2x}{x-1}-1}$\nWhich equals, $\\dfrac{2\\left(2x\\right)}{2x-\\left(x-1\\right)}=\\dfrac{4x}{x+1}$\nWe need to find the value of x for which, $\\dfrac{4x}{x+1}=\\dfrac{1}{x}$\nThis equals $4x^2=x+1$\n$4x^2-x-1=0$\nThe discriminant of this equation is greater than 0. Hence, real roots exist. \nTherefore, the sum of the roots of this equation is the sum of the values of x for which the expression is true. \nWhich equals, $-\\dfrac{\\left(-1\\right)}{4}=0.25$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$, such that this is true for all real values of x, except when x=1. Find the sum of all the values of $x$ for which the expression, $f\\left(f\\left(x\\right)\\right)=\\dfrac{1}{x}$ holds true.\n\n**Options:**\n- **A**. 1\n- **B**. -0.5\n- **C**. 0.25 ✅\n- **D**. -1\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation is, $x$*$f\\left(x\\right)=2x+f\\left(x\\right)$\nWe can write this as, $f\\left(x\\right)=\\dfrac{2x}{x-1}$\nSince the denominator is x-1, we see that x cannot equal to 1, otherwise the function will be undefined. \nThen, $f\\left(f\\left(x\\right)\\right)=\\dfrac{2\\left(\\dfrac{2x}{x-1}\\right)}{\\dfrac{2x}{x-1}-1}$\nWhich equals, $\\dfrac{2\\left(2x\\right)}{2x-\\left(x-1\\right)}=\\dfrac{4x}{x+1}$\nWe need to find the value of x for which, $\\dfrac{4x}{x+1}=\\dfrac{1}{x}$\nThis equals $4x^2=x+1$\n$4x^2-x-1=0$\nThe discriminant of this equation is greater than 0. Hence, real roots exist. \nTherefore, the sum of the roots of this equation is the sum of the values of x for which the expression is true. \nWhich equals, $-\\dfrac{\\left(-1\\right)}{4}=0.25$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-15",
+      "passage_text": "",
+      "question_text": "A 30% concentrated sugar solution is mixed with 25% concentrated salt solution. The ratio of the volume of salt and sugar in the mixture is 5:3, and its volume is 600ml. What is the volume of salt solution mixed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "400ml",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "480ml",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "450ml",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "500ml",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the volume of salt solution be 20y and sugar solution be 10x.\nThe volume of salt in the mixture = 25% of 20y = 5y\nThe volume of sugar in the mixture = 30% of 10y = 3x\nWe are given the ratio of salt and sugar in mixture as 5:3.\n5y:3x = 5:3 $\\Rightarrow$ y:x = 1:1 $\\Rightarrow$ x = y\n \nThe total volume of mixture = 10x+20y = 30y = 600\ny = 20\nThe volume of salt solution = 20y = 400ml.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA 30% concentrated sugar solution is mixed with 25% concentrated salt solution. The ratio of the volume of salt and sugar in the mixture is 5:3, and its volume is 600ml. What is the volume of salt solution mixed?\n\n**Options:**\n- **A**. 400ml ✅\n- **B**. 480ml\n- **C**. 450ml\n- **D**. 500ml\n\n**Correct Answer:** null\n\n**Solution:**\nLet the volume of salt solution be 20y and sugar solution be 10x.\nThe volume of salt in the mixture = 25% of 20y = 5y\nThe volume of sugar in the mixture = 30% of 10y = 3x\nWe are given the ratio of salt and sugar in mixture as 5:3.\n5y:3x = 5:3 $\\Rightarrow$ y:x = 1:1 $\\Rightarrow$ x = y\n \nThe total volume of mixture = 10x+20y = 30y = 600\ny = 20\nThe volume of salt solution = 20y = 400ml.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-16",
+      "passage_text": "",
+      "question_text": "A circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$100\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$16\\pi\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$25\\pi\\ $",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$36\\pi\\ $",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\nLet us assume the coordinates (0,0), (12,0), and (0,35) are B, C, and A, respectively, as shown in the figure.\nWe need to find the area of the circle inscribed inside this triangle.\nWe need to find the radius of the incircle to find the area of the incircle.\nUsing formula, $r=\\dfrac{\\triangle}{s}$\nWhere, $\\triangle\\ $ = Area of triangle, s = semi-perimeter.\nAB = $\\sqrt{\\left(0-0\\right)^2+\\left(35-0\\right)^2}=35$\nBC =  $\\sqrt{\\left(12-0\\right)^2+\\left(0-0\\right)^2}=12$\nAC = $\\sqrt{\\left(12-0\\right)^2+\\left(0-35\\right)^2}=37$\nThis is a right-angled triangle, right-angled at B.\nArea of triangle ABC = $\\dfrac{1}{2}\\times AB\\times BC$ = $\\dfrac{1}{2}\\times35\\times12$ = 210 $cm^2$\ns = $\\dfrac{\\left(35+12+37\\right)}{2}$ = 42 cm\nTherefore, the radius of the circle = 210/42 = 5 cm.\nThus, area of circle inscribed inside triangle ABC = $\\pi\\times5^2=25\\pi\\ $ $cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\n\n**Options:**\n- **A**. $100\\pi\\ $\n- **B**. $16\\pi\\ $\n- **C**. $25\\pi\\ $ ✅\n- **D**. $36\\pi\\ $\n\n**Correct Answer:** null\n\n**Solution:**\nA circle is inscribed inside a triangle whose vertices are (0,0), (12,0) and (0,35). Find the area of the circle.\nLet us assume the coordinates (0,0), (12,0), and (0,35) are B, C, and A, respectively, as shown in the figure.\nWe need to find the area of the circle inscribed inside this triangle.\nWe need to find the radius of the incircle to find the area of the incircle.\nUsing formula, $r=\\dfrac{\\triangle}{s}$\nWhere, $\\triangle\\ $ = Area of triangle, s = semi-perimeter.\nAB = $\\sqrt{\\left(0-0\\right)^2+\\left(35-0\\right)^2}=35$\nBC =  $\\sqrt{\\left(12-0\\right)^2+\\left(0-0\\right)^2}=12$\nAC = $\\sqrt{\\left(12-0\\right)^2+\\left(0-35\\right)^2}=37$\nThis is a right-angled triangle, right-angled at B.\nArea of triangle ABC = $\\dfrac{1}{2}\\times AB\\times BC$ = $\\dfrac{1}{2}\\times35\\times12$ = 210 $cm^2$\ns = $\\dfrac{\\left(35+12+37\\right)}{2}$ = 42 cm\nTherefore, the radius of the circle = 210/42 = 5 cm.\nThus, area of circle inscribed inside triangle ABC = $\\pi\\times5^2=25\\pi\\ $ $cm^2$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-17",
+      "passage_text": "",
+      "question_text": "In the given figure, the circle circumscribes the equilateral triangle ABD and the triangle ABC, where angle DAC is $30^{\\circ\\ }$. \n\nWhat would be the ratio of BC:BD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\ 3}:2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2:\\sqrt{\\ 3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that ABD is an equilateral triangle, meaning that angle BAD would be 60 degrees. We are also given that angle CAD is 30 degrees, giving angle BAC to be 90 degrees. \nThis is only possible when BC is the diameter of the circle. \nSo, we know the length of BC in terms of radius, say $r$, and we want to find the side length of the equilateral triangle. \nThe general formula for the same is $r\\sqrt{\\ 3}$\nWe can find the same through the median length of the triangle. \nThe radius would be equal to the distance between the centre of the triangle/circle to one of the vertices. \nThat distance would be 2/3 rd of the median length$\\frac{\\sqrt{\\ 3}}{2}a$, where $a$ is the side length, two-third of this would be $\\frac{\\sqrt{\\ 3}}{2}a\\times\\ \\frac{2}{3}=\\frac{a}{\\sqrt{\\ 3}}$\nThis would be equal to $r$, which would give the side length of the equilateral triangle to be $a=BD=r\\sqrt{\\ 3}$\nTherefore, the ratio of BC:BD would be $2:\\sqrt{\\ 3}$\nHence, Option D is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/image_qyYYRet.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the given figure, the circle circumscribes the equilateral triangle ABD and the triangle ABC, where angle DAC is $30^{\\circ\\ }$. \n\nWhat would be the ratio of BC:BD?\n\n**Options:**\n- **A**. $2\\sqrt{\\ 3}:1$\n- **B**. $\\sqrt{\\ 3}:1$\n- **C**. $\\sqrt{\\ 3}:2$\n- **D**. $2:\\sqrt{\\ 3}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that ABD is an equilateral triangle, meaning that angle BAD would be 60 degrees. We are also given that angle CAD is 30 degrees, giving angle BAC to be 90 degrees. \nThis is only possible when BC is the diameter of the circle. \nSo, we know the length of BC in terms of radius, say $r$, and we want to find the side length of the equilateral triangle. \nThe general formula for the same is $r\\sqrt{\\ 3}$\nWe can find the same through the median length of the triangle. \nThe radius would be equal to the distance between the centre of the triangle/circle to one of the vertices. \nThat distance would be 2/3 rd of the median length$\\frac{\\sqrt{\\ 3}}{2}a$, where $a$ is the side length, two-third of this would be $\\frac{\\sqrt{\\ 3}}{2}a\\times\\ \\frac{2}{3}=\\frac{a}{\\sqrt{\\ 3}}$\nThis would be equal to $r$, which would give the side length of the equilateral triangle to be $a=BD=r\\sqrt{\\ 3}$\nTherefore, the ratio of BC:BD would be $2:\\sqrt{\\ 3}$\nHence, Option D is the correct answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-18",
+      "passage_text": "",
+      "question_text": "An isosceles trapezium ABCD has parallel sides AB and CD, with AB = 8 cm and CD = 16 cm. The diagonals AC and BD intersect at point O, and the perimeter of triangle AOB is 18 cm. What is the area of trapezium ABCD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$120\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$100\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$144\\ cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$108\\ cm^2$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have:\nWe are given that AB = 8 cm, CD = 16 cm and AOB = 18 cm\nNow, we know that AX = XB = 4 cm (Because this is an isosceles triangle do XY will divide AB equally.)\nSimilarly, AO = OB\nLet AO = OB = x cm\nWe are given that x + x + 8 = 18 cm\nOr, we can say, x = 5 cm\nNow, we know, OB = 5 cm and XB = 4 cm and Triangle XOB is a right angled triangle with OX being the perpendicular, we can find OX using pythagoras.\nHence, we have: $OX\\ =\\sqrt{OB^2-XB^2}=\\sqrt{5^2-4^2}=3$\nNow, Triangle AOB is similar to Triangle OCD. \nHence, $\\dfrac{OX}{OY}=\\dfrac{AB}{CD}$\nReplacing the values, we get: $\\dfrac{3}{OY}=\\dfrac{8}{16}$\nWe get OY = 6 cm\nHence, the height of the trapezium = 6 + 3 = 9 cm\nHence, area of the trapezium = $\\dfrac{1}{2}\\times\\left(8+16\\right)\\times9=108\\ cm^2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn isosceles trapezium ABCD has parallel sides AB and CD, with AB = 8 cm and CD = 16 cm. The diagonals AC and BD intersect at point O, and the perimeter of triangle AOB is 18 cm. What is the area of trapezium ABCD?\n\n**Options:**\n- **A**. $120\\ cm^2$\n- **B**. $100\\ cm^2$\n- **C**. $144\\ cm^2$\n- **D**. $108\\ cm^2$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe have:\nWe are given that AB = 8 cm, CD = 16 cm and AOB = 18 cm\nNow, we know that AX = XB = 4 cm (Because this is an isosceles triangle do XY will divide AB equally.)\nSimilarly, AO = OB\nLet AO = OB = x cm\nWe are given that x + x + 8 = 18 cm\nOr, we can say, x = 5 cm\nNow, we know, OB = 5 cm and XB = 4 cm and Triangle XOB is a right angled triangle with OX being the perpendicular, we can find OX using pythagoras.\nHence, we have: $OX\\ =\\sqrt{OB^2-XB^2}=\\sqrt{5^2-4^2}=3$\nNow, Triangle AOB is similar to Triangle OCD. \nHence, $\\dfrac{OX}{OY}=\\dfrac{AB}{CD}$\nReplacing the values, we get: $\\dfrac{3}{OY}=\\dfrac{8}{16}$\nWe get OY = 6 cm\nHence, the height of the trapezium = 6 + 3 = 9 cm\nHence, area of the trapezium = $\\dfrac{1}{2}\\times\\left(8+16\\right)\\times9=108\\ cm^2$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-19",
+      "passage_text": "",
+      "question_text": "Dhruv invested a certain amount of P, which was compounded annually at a rate of R for 2 years. Similarly, Ding deposited thrice the amount as Dhruv did at a rate of R in the bank at simple interest. If the total money Ding receives after a year is the same as Dhruv received after two years, then what is the value of R?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "100%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "200%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Amount obtained by Dhruv after 2 years = $P\\left(1\\ +\\ \\dfrac{R}{100}\\right)^2$\nAmount obtained by Ding after a year = $3P\\ +\\ \\dfrac{3P\\times\\ 1\\times\\ R}{100}$\nLet $r\\ =\\ \\dfrac{R}{100}$\nWe are given that both the amounts obtained are equal, equating them, we get\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\ +\\ 3\\Pr$\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\left(1\\ +\\ r\\right)$\n$r^2\\ +\\ 2r\\ +\\ 1\\ =\\ 3\\ +\\ 3r$\n$r^2\\ -\\ r\\ -\\ 2\\ =\\ 0$\n$r\\ =\\ \\dfrac{1\\ \\pm\\ \\sqrt{\\ \\left(-1\\right)^2\\ -\\ 4\\left(1\\right)\\left(-2\\right)}}{2\\left(1\\right)}\\ =\\ \\dfrac{\\left(1\\pm\\ \\sqrt{\\ 9}\\right)}{2}\\ =\\ \\dfrac{\\left(1\\ \\pm\\ 3\\right)}{2}\\ =\\ 2\\ or\\ -1$\nWe know that the value of r is positive, so r = 2, and the value of R is,\n$R\\ =\\ r\\ \\times\\ 100\\ =\\ 2\\times\\ 100\\ =\\ 200\\%$\n Hence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDhruv invested a certain amount of P, which was compounded annually at a rate of R for 2 years. Similarly, Ding deposited thrice the amount as Dhruv did at a rate of R in the bank at simple interest. If the total money Ding receives after a year is the same as Dhruv received after two years, then what is the value of R?\n\n**Options:**\n- **A**. 100%\n- **B**. 1%\n- **C**. 200% ✅\n- **D**. 2%\n\n**Correct Answer:** null\n\n**Solution:**\nAmount obtained by Dhruv after 2 years = $P\\left(1\\ +\\ \\dfrac{R}{100}\\right)^2$\nAmount obtained by Ding after a year = $3P\\ +\\ \\dfrac{3P\\times\\ 1\\times\\ R}{100}$\nLet $r\\ =\\ \\dfrac{R}{100}$\nWe are given that both the amounts obtained are equal, equating them, we get\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\ +\\ 3\\Pr$\n$P\\left(1\\ +\\ r\\right)^2\\ =\\ 3P\\left(1\\ +\\ r\\right)$\n$r^2\\ +\\ 2r\\ +\\ 1\\ =\\ 3\\ +\\ 3r$\n$r^2\\ -\\ r\\ -\\ 2\\ =\\ 0$\n$r\\ =\\ \\dfrac{1\\ \\pm\\ \\sqrt{\\ \\left(-1\\right)^2\\ -\\ 4\\left(1\\right)\\left(-2\\right)}}{2\\left(1\\right)}\\ =\\ \\dfrac{\\left(1\\pm\\ \\sqrt{\\ 9}\\right)}{2}\\ =\\ \\dfrac{\\left(1\\ \\pm\\ 3\\right)}{2}\\ =\\ 2\\ or\\ -1$\nWe know that the value of r is positive, so r = 2, and the value of R is,\n$R\\ =\\ r\\ \\times\\ 100\\ =\\ 2\\times\\ 100\\ =\\ 200\\%$\n Hence, the correct answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-20",
+      "passage_text": "",
+      "question_text": "There are 16 players available for a team formation, of which 8 are bowlers. Ten players are to be chosen for the cricket team, of which atleast six bowlers must be selected. In how many ways can the team be formed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2436 ways",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2578 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2678 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2778 ways",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that the total number of players available = 16\nNumber of bowlers = 8\nRemaining players = 16 - 8 = 8\nTo make the cricket team, 10 players must be chosen of which there should be at least six bowlers.\nThus, the following are the number of possible ways in which the team can be formed.\n$^8C_6\\times^8C_4$ (6 bowlers from the 8 bowlers and 4 players from the remaining players)\n$^8C_7\\times^8C_3$ (7 bowlers from the 8 bowlers and 3 players from the remaining players)\n$^8C_8\\times^8C_2$ (8 bowlers from the 8 bowlers and 2 players from the remaining players)\nHence, the total number of possible ways of cricket team formation =$^8C_6\\times^8C_4+^8C_7\\times^8C_3+^8C_8\\times^8C_2$ \n= 28*70+64*7+1*28 = 2436 ways",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 16 players available for a team formation, of which 8 are bowlers. Ten players are to be chosen for the cricket team, of which atleast six bowlers must be selected. In how many ways can the team be formed?\n\n**Options:**\n- **A**. 2436 ways ✅\n- **B**. 2578 ways\n- **C**. 2678 ways\n- **D**. 2778 ways\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that the total number of players available = 16\nNumber of bowlers = 8\nRemaining players = 16 - 8 = 8\nTo make the cricket team, 10 players must be chosen of which there should be at least six bowlers.\nThus, the following are the number of possible ways in which the team can be formed.\n$^8C_6\\times^8C_4$ (6 bowlers from the 8 bowlers and 4 players from the remaining players)\n$^8C_7\\times^8C_3$ (7 bowlers from the 8 bowlers and 3 players from the remaining players)\n$^8C_8\\times^8C_2$ (8 bowlers from the 8 bowlers and 2 players from the remaining players)\nHence, the total number of possible ways of cricket team formation =$^8C_6\\times^8C_4+^8C_7\\times^8C_3+^8C_8\\times^8C_2$ \n= 28*70+64*7+1*28 = 2436 ways",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-21",
+      "passage_text": "",
+      "question_text": "Mohit, Kumar, and Geeta's salaries in 2023 are in the ratio 3:5:X, with their total monthly salary equal to Rs.2,25,000. If the difference between Kumar's and Mohit's salaries is Rs. 45,000 and Geeta's salary increases by 10% in 2024, Find Geeta's monthly salary in 2024.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.38,500",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.44,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.46,200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.49,500",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Mohit, Kumar,  and Geeta's salaries in 2023 are in the ratio 3:5:X\nLet their salaries be 3Y, 5Y and XY respectively.\nThe difference between Kumar's and Mohit's salaries is Rs. 45,000 = 5Y - 3Y = 2Y\n2Y = 45000\nY = 22500\nTotal monthly salary equal to Rs 2,25,000\n3Y+5Y+XY = 225000\n(8+X)Y = 225000\n(8+X)22500 = 225000\nX = 2\nTherefore, the Monthly salary of Geeta in 2023 = XY = 2Y = 2*22500 = Rs.45,000\nIn 2024, the salary of Geeta will increase by 10%.\nTherefore, the monthly salary of Geeta in 2024 = 45000*1.1 = Rs.49,500.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMohit, Kumar, and Geeta's salaries in 2023 are in the ratio 3:5:X, with their total monthly salary equal to Rs.2,25,000. If the difference between Kumar's and Mohit's salaries is Rs. 45,000 and Geeta's salary increases by 10% in 2024, Find Geeta's monthly salary in 2024.\n\n**Options:**\n- **A**. Rs.38,500\n- **B**. Rs.44,000\n- **C**. Rs.46,200\n- **D**. Rs.49,500 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nMohit, Kumar,  and Geeta's salaries in 2023 are in the ratio 3:5:X\nLet their salaries be 3Y, 5Y and XY respectively.\nThe difference between Kumar's and Mohit's salaries is Rs. 45,000 = 5Y - 3Y = 2Y\n2Y = 45000\nY = 22500\nTotal monthly salary equal to Rs 2,25,000\n3Y+5Y+XY = 225000\n(8+X)Y = 225000\n(8+X)22500 = 225000\nX = 2\nTherefore, the Monthly salary of Geeta in 2023 = XY = 2Y = 2*22500 = Rs.45,000\nIn 2024, the salary of Geeta will increase by 10%.\nTherefore, the monthly salary of Geeta in 2024 = 45000*1.1 = Rs.49,500.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-20-22",
+      "passage_text": "",
+      "question_text": "A, B and C can complete a job in 2 days, 15 days and 10 days respectively. All of them together started working on the job but A does not work at his full capacity for the first day, also, he left after the first day, while the other two completed the job.\nThe total payments for the three were Rs.800 and C received Rs 400. What is the percentage of his full capacity at which A worked on the first day?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16.66%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "33.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "26.66%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total payments for the three were Rs.800 and C received Rs 400. \n50% of the work must have been done by C.  \nB and C can complete a job in 15 days and 10 days respectively. \nBoth of them worked for the same time period, thus the salary of B = $\\frac{400*10}{15}$= 800/3 i.e 33% of the total salary.\nThus 33% per cent of the work must have been done by B.\nA must-have done 16.66 per cent of the work on the first day. \nA can complete the job in two days. Thus, 50% of the work on Day 1, while he did 16.66% of the work.\nthe percentage of his full capacity at which A worked on the first day=16.66/50= 33.33%\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B and C can complete a job in 2 days, 15 days and 10 days respectively. All of them together started working on the job but A does not work at his full capacity for the first day, also, he left after the first day, while the other two completed the job.\nThe total payments for the three were Rs.800 and C received Rs 400. What is the percentage of his full capacity at which A worked on the first day?\n\n**Options:**\n- **A**. 25%\n- **B**. 16.66%\n- **C**. 33.33% ✅\n- **D**. 26.66%\n\n**Correct Answer:** null\n\n**Solution:**\nThe total payments for the three were Rs.800 and C received Rs 400. \n50% of the work must have been done by C.  \nB and C can complete a job in 15 days and 10 days respectively. \nBoth of them worked for the same time period, thus the salary of B = $\\frac{400*10}{15}$= 800/3 i.e 33% of the total salary.\nThus 33% per cent of the work must have been done by B.\nA must-have done 16.66 per cent of the work on the first day. \nA can complete the job in two days. Thus, 50% of the work on Day 1, while he did 16.66% of the work.\nthe percentage of his full capacity at which A worked on the first day=16.66/50= 33.33%\nOption C",
+      "type": "quants"
+    }
+  ]
+}

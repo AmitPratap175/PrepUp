@@ -7,6 +7,7 @@ import type { PracticeTest, Question, UserAnswer } from "@shared/schema";
 import type { TestState, QuestionStatus } from "@/lib/types";
 import { PanelLeftClose, PanelRightClose, Calculator as CalculatorIcon } from "lucide-react";
 import { Calculator } from "./ui/calculator";
+import { ConfirmationDialog } from "./ui/ConfirmationDialog";
 
 /**
  * @interface MockTestInterfaceProps
@@ -43,6 +44,12 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     timeRemaining: SECTION_TIME,
     isCompleted: false,
     startTime: undefined,
+  });
+  const [isConfirmDialogOpen, setIsConfirmDialogOpen] = useState(false);
+  const [confirmDialogProps, setConfirmDialogProps] = useState({
+    title: "",
+    description: "",
+    onConfirm: () => {},
   });
 
   const questions = useMemo(() => {
@@ -198,6 +205,30 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
     setTestState(prev => ({ ...prev, isCompleted: true }));
   };
 
+  const handleNextSectionClick = () => {
+    const onConfirm = () => {
+      if (currentSectionIndex < SECTIONS.length - 1) {
+        setCurrentSectionIndex(currentSectionIndex + 1);
+        setTestState((prev) => ({
+          ...prev,
+          currentQuestionIndex: 0,
+          timeRemaining: SECTION_TIME,
+        }));
+      } else {
+        handleSubmit();
+      }
+    };
+
+    setConfirmDialogProps({
+      title: "Are you sure?",
+      description: currentSectionIndex < SECTIONS.length - 1
+        ? "You will not be able to return to this section."
+        : "This will submit the test. Are you sure you want to continue?",
+      onConfirm,
+    });
+    setIsConfirmDialogOpen(true);
+  };
+
   if (testState.isCompleted) {
     return (
       <div className="text-center py-20">
@@ -240,6 +271,14 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
             </div>
             <Button variant="outline" size="icon" onClick={() => setIsCalculatorVisible(!isCalculatorVisible)}>
               <CalculatorIcon className="h-4 w-4" />
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleNextSectionClick}
+              data-testid="button-next-section"
+            >
+              {currentSectionIndex < SECTIONS.length - 1 ? "Next Section" : "Submit Test"}
             </Button>
             <Button
               variant="destructive"
@@ -440,6 +479,11 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
           </div>
         </div>
       </div>
+      <ConfirmationDialog
+        isOpen={isConfirmDialogOpen}
+        onOpenChange={setIsConfirmDialogOpen}
+        {...confirmDialogProps}
+      />
     </div>
   );
 }

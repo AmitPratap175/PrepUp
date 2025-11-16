@@ -1,0 +1,596 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-26-1",
+      "passage_text": "",
+      "question_text": "Three workers—Raju, Ram, and Ravi—who are equally efficient—took three extra days to complete the work because they were absent for a certain number of days. If Raju was absent for two more days than Ram and Ravi was absent for two more days than Raju, what is the product of the number of days they were absent?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "105",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the efficiency of the workers be x and the time that they were supposed to complete the work be t. Let us assume the total work done be W.\nSo, the total amount of work can be calculated as (x + x + x)*t = 3xt = W  ----(1)\nIn the actual case, the time taken is t + 3. Let the number of days Ram was absent be a, then the number of days Raju was absent becomes a + 2, and the number of days Ravi was absent becomes a + 4.\nSo, work done in the second case = (x + x + x)*(t + 3) - x * a - x * (a + 2) - x * (a + 4) = 3xt + 9x - 3ax - 6x = 3xt + 3x - 3ax = W  ---(2)\nEquating (1) and (2) we get,\n3xt = 3xt + 3x - 3ax\n3x = 3ax\na = 1\nSo, Ram was absent for 1 day, Raju was absent for 3 days, and Ravi was absent for 5 days.\nThe product = 1 * 3 * 5 = 15 \nHence, the correct answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree workers—Raju, Ram, and Ravi—who are equally efficient—took three extra days to complete the work because they were absent for a certain number of days. If Raju was absent for two more days than Ram and Ravi was absent for two more days than Raju, what is the product of the number of days they were absent?\n\n**Options:**\n- **A**. 15 ✅\n- **B**. 48\n- **C**. 105\n- **D**. 24\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of the workers be x and the time that they were supposed to complete the work be t. Let us assume the total work done be W.\nSo, the total amount of work can be calculated as (x + x + x)*t = 3xt = W  ----(1)\nIn the actual case, the time taken is t + 3. Let the number of days Ram was absent be a, then the number of days Raju was absent becomes a + 2, and the number of days Ravi was absent becomes a + 4.\nSo, work done in the second case = (x + x + x)*(t + 3) - x * a - x * (a + 2) - x * (a + 4) = 3xt + 9x - 3ax - 6x = 3xt + 3x - 3ax = W  ---(2)\nEquating (1) and (2) we get,\n3xt = 3xt + 3x - 3ax\n3x = 3ax\na = 1\nSo, Ram was absent for 1 day, Raju was absent for 3 days, and Ravi was absent for 5 days.\nThe product = 1 * 3 * 5 = 15 \nHence, the correct answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-2",
+      "passage_text": "",
+      "question_text": "Anya and Banya's monthly incomes are in a 5:4 ratio. Anya spends 20% on rent while Banya spends 18%. In the next month, their incomes rise by 20% and 25%, respectively, but their rent amounts remain unchanged. What is the approximate percentage decrease in the ratio of the combined rent paid by Anya and Banya to their combined income?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18.18%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "14.14%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "19.39%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12.62%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's take Anya's monthly income to be 5X and Banya's to 4X, which means their total income will be 9X. We have Anya spending 20%, and Banya spending 18%. \nLet the amount of rent being paid be R, and we know that it is the same in both cases.\nAnya's new salary will be (1.20)(5X)=6X\nBanya's new salary will be (1.25)(4X)=5X\nNow we know that Anya's monthly income will increase to 6X and Banya's to 5X, giving their combined income a total of 11X. \nThe initial rent-to-income ratio will be $\\dfrac{R}{9X}$\nWe are told that the rent will stay the same, so, \nThe rent-to-income ratio after the increase in pay will be $\\dfrac{R}{11X}$\nPercentage decrease would be: $\\dfrac{\\dfrac{R}{9X}\\ -\\ \\dfrac{R}{11X}}{\\dfrac{R}{9X}}\\times\\ 100\\ =\\ \\dfrac{\\dfrac{1}{9}\\ -\\ \\dfrac{1}{11}}{\\dfrac{1}{9}}\\ =\\ \\dfrac{2}{99}\\times\\ 9\\times\\ 100\\ =18.18\\%\\ $\nHence, the answer is 18.18%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAnya and Banya's monthly incomes are in a 5:4 ratio. Anya spends 20% on rent while Banya spends 18%. In the next month, their incomes rise by 20% and 25%, respectively, but their rent amounts remain unchanged. What is the approximate percentage decrease in the ratio of the combined rent paid by Anya and Banya to their combined income?\n\n**Options:**\n- **A**. 18.18% ✅\n- **B**. 14.14%\n- **C**. 19.39%\n- **D**. 12.62%\n\n**Correct Answer:** null\n\n**Solution:**\nLet's take Anya's monthly income to be 5X and Banya's to 4X, which means their total income will be 9X. We have Anya spending 20%, and Banya spending 18%. \nLet the amount of rent being paid be R, and we know that it is the same in both cases.\nAnya's new salary will be (1.20)(5X)=6X\nBanya's new salary will be (1.25)(4X)=5X\nNow we know that Anya's monthly income will increase to 6X and Banya's to 5X, giving their combined income a total of 11X. \nThe initial rent-to-income ratio will be $\\dfrac{R}{9X}$\nWe are told that the rent will stay the same, so, \nThe rent-to-income ratio after the increase in pay will be $\\dfrac{R}{11X}$\nPercentage decrease would be: $\\dfrac{\\dfrac{R}{9X}\\ -\\ \\dfrac{R}{11X}}{\\dfrac{R}{9X}}\\times\\ 100\\ =\\ \\dfrac{\\dfrac{1}{9}\\ -\\ \\dfrac{1}{11}}{\\dfrac{1}{9}}\\ =\\ \\dfrac{2}{99}\\times\\ 9\\times\\ 100\\ =18.18\\%\\ $\nHence, the answer is 18.18%",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-3",
+      "passage_text": "",
+      "question_text": "Shruti invested Rs. 3,00,000 in two schemes—Scheme 1 (simple interest at 15% p.a.) and Scheme 2 (compound interest at 10% p.a.)—for two years. After that, she withdrew Rs. 1,00,000 from Scheme 2 and reinvested it along with the total returns from Scheme 1 in Scheme 1 for another two years. The remaining amount in Scheme 2 was also reinvested for two more years. If the total amount after four years was Rs. 4,84,374, find the difference between the initial investments in the two schemes.",
+      "options": [],
+      "correct_option_data": "20000",
+      "solution_text": "Given that she invests Rs. 3,00,000 partly in a simple interest scheme at 15% p.a. and the rest in a compound interest scheme at 10% p.a. compounded annually.\nAssume the amount invested in the compound interest scheme is $x$, so the amount invested in the simple interest scheme is Rs. $3,00,000-x$\nAfter the first 2 years, the total amount in the compound interest scheme will be $x\\left(1.1\\right)^2=1.21x$\nAnd that in the simple interest scheme will be $\\left(300000-x\\right)\\left(1+0.15\\times2\\right)=390000-1.3x$\nRs. 1,00,000 is taken out of the compound interest scheme and reinvested in the simple interest scheme \nSo, the amount in the compound interest scheme now is Rs. $1.21x-100000$\nand that in the simple interest scheme is Rs. $490000-1.3x$\nAfter 2 more years, the total amount in the compound interest scheme will be $\\left(1.21x-100000\\right)\\left(1.1\\right)^2=1.4641x-121000$\nAnd that in the simple interest scheme will be $\\left(490000-1.3x\\right)\\left(1.3\\right)=637000-1.69x$\nGiven that the total amount combined in the schemes is  Rs. 4,84,374\nSo, $1.4641x-121000+637000-1.69x=484374$\nor, $0.2259x=31626$\n$x=140000$\nSo, the amount initially invested in the compound interest scheme is Rs. 1,40,000 and that in the simple interest scheme is Rs. 1,60,000\nHence, the difference in Rs. 20,000",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nShruti invested Rs. 3,00,000 in two schemes—Scheme 1 (simple interest at 15% p.a.) and Scheme 2 (compound interest at 10% p.a.)—for two years. After that, she withdrew Rs. 1,00,000 from Scheme 2 and reinvested it along with the total returns from Scheme 1 in Scheme 1 for another two years. The remaining amount in Scheme 2 was also reinvested for two more years. If the total amount after four years was Rs. 4,84,374, find the difference between the initial investments in the two schemes.\n\n**Options:**\n\n**Correct Answer:** 20000\n\n**Solution:**\nGiven that she invests Rs. 3,00,000 partly in a simple interest scheme at 15% p.a. and the rest in a compound interest scheme at 10% p.a. compounded annually.\nAssume the amount invested in the compound interest scheme is $x$, so the amount invested in the simple interest scheme is Rs. $3,00,000-x$\nAfter the first 2 years, the total amount in the compound interest scheme will be $x\\left(1.1\\right)^2=1.21x$\nAnd that in the simple interest scheme will be $\\left(300000-x\\right)\\left(1+0.15\\times2\\right)=390000-1.3x$\nRs. 1,00,000 is taken out of the compound interest scheme and reinvested in the simple interest scheme \nSo, the amount in the compound interest scheme now is Rs. $1.21x-100000$\nand that in the simple interest scheme is Rs. $490000-1.3x$\nAfter 2 more years, the total amount in the compound interest scheme will be $\\left(1.21x-100000\\right)\\left(1.1\\right)^2=1.4641x-121000$\nAnd that in the simple interest scheme will be $\\left(490000-1.3x\\right)\\left(1.3\\right)=637000-1.69x$\nGiven that the total amount combined in the schemes is  Rs. 4,84,374\nSo, $1.4641x-121000+637000-1.69x=484374$\nor, $0.2259x=31626$\n$x=140000$\nSo, the amount initially invested in the compound interest scheme is Rs. 1,40,000 and that in the simple interest scheme is Rs. 1,60,000\nHence, the difference in Rs. 20,000",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-4",
+      "passage_text": "",
+      "question_text": "A right circular cone with a radius of 9 m and a height of 21 m is cut by a plane to form a frustum with a height of 7 m. Later, water is filled in the frustum and then poured into a cylindrical tank with a radius of 4 m and height of 50 m. What is the height of the water filled (in m) in the cylindrical tank, rounded off to the nearest integer?",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "So, we have the following figure:\nABDE is the frustum. OE = 9 m  and OC = 21 m. Further, OF = 7 m so CF = 21 - 7 = 14 m\nFor finding the volume of the frustum, we need to know both the radii of the frustum. \nWe know OE and we need to find FD. \nNow, using similarity in triangle OEC and CFD, we can say,\n$\\dfrac{OC}{OE}=\\dfrac{CF}{FD}$\n$\\dfrac{21}{9}=\\dfrac{14}{FD}$\nUpon solving, we get FD = 6 m\nNow, we can find the volume of the frustum: \n$\\dfrac{1}{3}\\pi\\ h\\left(R^2+r^2+Rr\\right)$\n$\\dfrac{1}{3}\\times\\dfrac{22}{7}\\times7\\left(9^2+6^2+9\\times6\\right)=1254\\ cm^3$\nLet the water is filled till the height of X m in the cylindrical tank. \nHence, volume of the cylindrical tank upto the height of X m is $\\pi\\ r^2X=1254$\n$\\dfrac{22}{7}\\times4^2\\times X=1254$\nUpon solving, we get, X = 24.9375 m\nSince, we are asked to find the height to the nearest integer, the height of the water level is 25 m.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA right circular cone with a radius of 9 m and a height of 21 m is cut by a plane to form a frustum with a height of 7 m. Later, water is filled in the frustum and then poured into a cylindrical tank with a radius of 4 m and height of 50 m. What is the height of the water filled (in m) in the cylindrical tank, rounded off to the nearest integer?\n\n**Options:**\n\n**Correct Answer:** 25\n\n**Solution:**\nSo, we have the following figure:\nABDE is the frustum. OE = 9 m  and OC = 21 m. Further, OF = 7 m so CF = 21 - 7 = 14 m\nFor finding the volume of the frustum, we need to know both the radii of the frustum. \nWe know OE and we need to find FD. \nNow, using similarity in triangle OEC and CFD, we can say,\n$\\dfrac{OC}{OE}=\\dfrac{CF}{FD}$\n$\\dfrac{21}{9}=\\dfrac{14}{FD}$\nUpon solving, we get FD = 6 m\nNow, we can find the volume of the frustum: \n$\\dfrac{1}{3}\\pi\\ h\\left(R^2+r^2+Rr\\right)$\n$\\dfrac{1}{3}\\times\\dfrac{22}{7}\\times7\\left(9^2+6^2+9\\times6\\right)=1254\\ cm^3$\nLet the water is filled till the height of X m in the cylindrical tank. \nHence, volume of the cylindrical tank upto the height of X m is $\\pi\\ r^2X=1254$\n$\\dfrac{22}{7}\\times4^2\\times X=1254$\nUpon solving, we get, X = 24.9375 m\nSince, we are asked to find the height to the nearest integer, the height of the water level is 25 m.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-5",
+      "passage_text": "",
+      "question_text": "A shopkeeper sells 100 items every day. On day 1, 20% of the items were defective. On day 2, the number of defective items increased by 50%. On day 3, the defective items were one-third more than the defective items on day 2. On day 4, the number of defective items was 30% more than on day 3, and on day 5, the number of defective items was 50% of the total defective items sold on day 4. Find the total number of defective items sold over 5 days.",
+      "options": [],
+      "correct_option_data": "168",
+      "solution_text": "A shopkeeper sells 100 items every day.\nDay 1: \nTotal Items sold = 100\nDefective items = 20% of 100 = 20\nDay 2:\nTotal items sold = 100\nDefective items = 1.5*20 = 30 (Increased by 50%)\nDay 3:\nTotal items sold = 100\nDefective items = 30+1/3 of 30 = 40 (One third more than day 2)\nDay 4:\nTotal items sold = 100\nDefective items = 1.3*40 = 52 (30% more than day 3)\nDay 5: \nTotal items sold = 100\nDefective items = 0.5*52 = 26 (50% of day 4)\nTherefore, in five days, total items sold = 500\nTotal defective items sold = 20+30+40+52+26 = 168",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper sells 100 items every day. On day 1, 20% of the items were defective. On day 2, the number of defective items increased by 50%. On day 3, the defective items were one-third more than the defective items on day 2. On day 4, the number of defective items was 30% more than on day 3, and on day 5, the number of defective items was 50% of the total defective items sold on day 4. Find the total number of defective items sold over 5 days.\n\n**Options:**\n\n**Correct Answer:** 168\n\n**Solution:**\nA shopkeeper sells 100 items every day.\nDay 1: \nTotal Items sold = 100\nDefective items = 20% of 100 = 20\nDay 2:\nTotal items sold = 100\nDefective items = 1.5*20 = 30 (Increased by 50%)\nDay 3:\nTotal items sold = 100\nDefective items = 30+1/3 of 30 = 40 (One third more than day 2)\nDay 4:\nTotal items sold = 100\nDefective items = 1.3*40 = 52 (30% more than day 3)\nDay 5: \nTotal items sold = 100\nDefective items = 0.5*52 = 26 (50% of day 4)\nTherefore, in five days, total items sold = 500\nTotal defective items sold = 20+30+40+52+26 = 168",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-6",
+      "passage_text": "",
+      "question_text": "Calculate the number of integral values of a for which one real root of the equation \n\n$\\left(a\\ -\\ 5\\right)x^2\\ -2ax\\ +\\ a\\ -4\\ =\\ 0$ is smaller than 1 and the other real root is greater than 2.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let f(x) = $\\left(a\\ -\\ 5\\right)x^2\\ -2ax\\ +\\ a\\ -4\\ =\\ 0$\nIf the values 1 and 2 lie in between the roots, then the value of f(1) and f(2) must be less than 0 if the coefficient of $x^2$ is greater than 0, and the value of f(1) and f(2) must be greater than 0 if the coefficient of $x^2$ is less than 0.\nWe can directly write the conditions that (co-efficient of $x^2$) * f(1) < 0 and (co-efficient of $x^2$) * f(2) < 0.\nThe other condition that must be satisfied is the value of D > 0.\nFor D > 0,\nD = $\\left(-2a\\right)^2\\ -\\ 4\\left(a\\ -\\ 5\\right)\\left(a\\ -4\\right)\\ =\\ 4a^2\\ -4a^2+\\ 36a\\ -80\\ =\\ 36a\\ -\\ 80$\nD > 0 implies,\n36a - 80 > 0\n$a\\ >\\ \\dfrac{20}{9}$\nFor the condition (co-efficient of $x^2$) * f(1) < 0,\n$\\left(a\\ -\\ 5\\right)\\left(a\\ -\\ 5\\ -\\ 2a\\ +\\ a\\ -\\ 4\\right)\\ <\\ 0$\n$\\left(a\\ -\\ 5\\right)\\left(-9\\right)\\ <\\ 0$\n$a\\ -\\ 5>\\ 0$\n$a\\ >\\ 5$\nFor the condition (co-efficient of $x^2$) * f(2) < 0,\n$\\left(a\\ -\\ 5\\right)\\left(4a\\ -\\ 20\\ -\\ 4a\\ +\\ a\\ -\\ 4\\right)\\ <\\ 0$\n$\\left(a\\ -\\ 5\\right)\\left(a\\ -24\\right)\\ <\\ 0$\n$5\\ <\\ a\\ <\\ 24$\nCombining the three conditions $a\\ >\\ \\dfrac{20}{9}$, $a\\ >\\ 5$ and $5\\ <\\ a\\ <\\ 24$, we get the final condition as,\n$5\\ <\\ a\\ <\\ 24$.\nSo, the number of integral values of a that satisfies the given condition is [6, 23], and the number of values of a is 18.\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCalculate the number of integral values of a for which one real root of the equation \n\n$\\left(a\\ -\\ 5\\right)x^2\\ -2ax\\ +\\ a\\ -4\\ =\\ 0$ is smaller than 1 and the other real root is greater than 2.\n\n**Options:**\n- **A**. 24\n- **B**. 18 ✅\n- **C**. 20\n- **D**. 12\n\n**Correct Answer:** null\n\n**Solution:**\nLet f(x) = $\\left(a\\ -\\ 5\\right)x^2\\ -2ax\\ +\\ a\\ -4\\ =\\ 0$\nIf the values 1 and 2 lie in between the roots, then the value of f(1) and f(2) must be less than 0 if the coefficient of $x^2$ is greater than 0, and the value of f(1) and f(2) must be greater than 0 if the coefficient of $x^2$ is less than 0.\nWe can directly write the conditions that (co-efficient of $x^2$) * f(1) < 0 and (co-efficient of $x^2$) * f(2) < 0.\nThe other condition that must be satisfied is the value of D > 0.\nFor D > 0,\nD = $\\left(-2a\\right)^2\\ -\\ 4\\left(a\\ -\\ 5\\right)\\left(a\\ -4\\right)\\ =\\ 4a^2\\ -4a^2+\\ 36a\\ -80\\ =\\ 36a\\ -\\ 80$\nD > 0 implies,\n36a - 80 > 0\n$a\\ >\\ \\dfrac{20}{9}$\nFor the condition (co-efficient of $x^2$) * f(1) < 0,\n$\\left(a\\ -\\ 5\\right)\\left(a\\ -\\ 5\\ -\\ 2a\\ +\\ a\\ -\\ 4\\right)\\ <\\ 0$\n$\\left(a\\ -\\ 5\\right)\\left(-9\\right)\\ <\\ 0$\n$a\\ -\\ 5>\\ 0$\n$a\\ >\\ 5$\nFor the condition (co-efficient of $x^2$) * f(2) < 0,\n$\\left(a\\ -\\ 5\\right)\\left(4a\\ -\\ 20\\ -\\ 4a\\ +\\ a\\ -\\ 4\\right)\\ <\\ 0$\n$\\left(a\\ -\\ 5\\right)\\left(a\\ -24\\right)\\ <\\ 0$\n$5\\ <\\ a\\ <\\ 24$\nCombining the three conditions $a\\ >\\ \\dfrac{20}{9}$, $a\\ >\\ 5$ and $5\\ <\\ a\\ <\\ 24$, we get the final condition as,\n$5\\ <\\ a\\ <\\ 24$.\nSo, the number of integral values of a that satisfies the given condition is [6, 23], and the number of values of a is 18.\nHence, the correct answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-7",
+      "passage_text": "",
+      "question_text": "Given that S is the sum of all the values of x that satisfy the given equation \n\n$x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ x\\log_{10}2\\ -\\ \\log_{0.1}6$.  What is the value of $5^S$ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given equation is,\n$x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ x\\log_{10}2\\ -\\ \\log_{0.1}6$\n$x\\ \\ -\\ x\\log_{10}2\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ -\\ \\log_{0.1}6$\n$x\\left(1\\ -\\log_{10}2\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ -\\ \\log_{10^{-1}}6$\n$x\\left(\\log_{10}10\\ -\\log_{10}2\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$x\\left(\\log_{10}5\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$\\log_{10}5^x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$\\log_{10}\\left(5^x\\left(5\\ -\\ 5^x\\right)\\right)\\ =\\ \\log_{10}6$\n$5^x\\left(5\\ -\\ 5^x\\right)\\ =\\ 6$\nLet the value of $5^{x\\ }\\ =\\ t$\n$5t\\ -\\ t^2\\ =\\ 6$\n$t^2\\ -\\ 5t\\ +\\ 6\\ =\\ 0$\n$t\\ =\\ 2\\ or\\ t\\ \\ =\\ 3$\nSubstituting the values, we get,\n$5^{x\\ }\\ =\\ 2$\n$x\\ =\\ \\log_52$\n$5^{x\\ }\\ =\\ 3$\n$x\\ =\\ \\log_53$\nSum of the possible values is,\n$S\\ =\\ \\log_52\\ +\\ \\log_53$\n$5^S\\ =\\ 5^{\\log_52\\ +\\ \\log_53}\\ =\\ 5^{\\log_52}\\ \\times\\ 5^{\\log_53}=\\ 2\\ \\times\\ 3\\ =\\ 6$\nHence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven that S is the sum of all the values of x that satisfy the given equation \n\n$x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ x\\log_{10}2\\ -\\ \\log_{0.1}6$.  What is the value of $5^S$ ?\n\n**Options:**\n- **A**. 5\n- **B**. 3\n- **C**. 6 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nThe given equation is,\n$x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ x\\log_{10}2\\ -\\ \\log_{0.1}6$\n$x\\ \\ -\\ x\\log_{10}2\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ -\\ \\log_{0.1}6$\n$x\\left(1\\ -\\log_{10}2\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ -\\ \\log_{10^{-1}}6$\n$x\\left(\\log_{10}10\\ -\\log_{10}2\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$x\\left(\\log_{10}5\\right)\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$\\log_{10}5^x\\ \\ +\\ \\log_{10}\\left(5\\ -\\ 5^x\\right)\\ =\\ \\log_{10}6$\n$\\log_{10}\\left(5^x\\left(5\\ -\\ 5^x\\right)\\right)\\ =\\ \\log_{10}6$\n$5^x\\left(5\\ -\\ 5^x\\right)\\ =\\ 6$\nLet the value of $5^{x\\ }\\ =\\ t$\n$5t\\ -\\ t^2\\ =\\ 6$\n$t^2\\ -\\ 5t\\ +\\ 6\\ =\\ 0$\n$t\\ =\\ 2\\ or\\ t\\ \\ =\\ 3$\nSubstituting the values, we get,\n$5^{x\\ }\\ =\\ 2$\n$x\\ =\\ \\log_52$\n$5^{x\\ }\\ =\\ 3$\n$x\\ =\\ \\log_53$\nSum of the possible values is,\n$S\\ =\\ \\log_52\\ +\\ \\log_53$\n$5^S\\ =\\ 5^{\\log_52\\ +\\ \\log_53}\\ =\\ 5^{\\log_52}\\ \\times\\ 5^{\\log_53}=\\ 2\\ \\times\\ 3\\ =\\ 6$\nHence, the correct answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-8",
+      "passage_text": "",
+      "question_text": "Prakash is considering three investment proposals : \n\nProposal A involves investing in a grinding mill, which offers a guaranteed return of 15%.\n\nProposal B involves investing in a Blu-ray disc manufacturer. If Blu-ray becomes the dominant storage format over HDD, the investment will yield a 250% return. However, if Blu-ray loses to HDD, the investor will lose 50% of their capital.\n\nProposal C involves investing in a HDD manufacturer. If HDD becomes the preferred storage format, the investment will generate a 100% return. But if HDD loses to Blu-ray, the entire investment will be lost (100% loss).\n\nWhat is Prakash's max guaranteed return?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15.00%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25.00%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30.00%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "40.00%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's assume the investment in Proposal B to be \"X\" , and investment in Proposal C to be \"1-X\" . \nHere there are two cases : Case I is in which Blue ray manufacturer wins over HDD storage manufacturer (or) Case II in which HDD storage manufacturer wins over Blue ray manufacturer .\nCase I : As blue ray manufacturer wins over HDD , the returns = $250(X)-100(1-X)$\nCase II : As HDD Storage manufacturer wins over blue ray , the returns will be = $100(1-X)-50(X)$\nBeing a rational investor, he must diversify his risk in such a way that, in either of the cases discussed above, Prakash must receive a fixed guaranteed return, and that is possible only when the returns in both cases are the same irrespective of who's winning against the other. Hence ,\n$250(X)-100(1-X)$ = $100(1-X)-50(X)$\n$350(X)-100=100-150(X)$\nX = $\\dfrac{\\ 200}{500}=\\ 0.4$ .\nThis implies to diversify risk for guaranteed return, he must invest 40% in B and 60% in C . \nTherefore, at X = 0.4 ; the guaranteed return would be = $250(0.4)-100(1-0.4)$ = 100 - 60 = 40 %",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPrakash is considering three investment proposals : \n\nProposal A involves investing in a grinding mill, which offers a guaranteed return of 15%.\n\nProposal B involves investing in a Blu-ray disc manufacturer. If Blu-ray becomes the dominant storage format over HDD, the investment will yield a 250% return. However, if Blu-ray loses to HDD, the investor will lose 50% of their capital.\n\nProposal C involves investing in a HDD manufacturer. If HDD becomes the preferred storage format, the investment will generate a 100% return. But if HDD loses to Blu-ray, the entire investment will be lost (100% loss).\n\nWhat is Prakash's max guaranteed return?\n\n**Options:**\n- **A**. 15.00%\n- **B**. 25.00%\n- **C**. 30.00%\n- **D**. 40.00% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet's assume the investment in Proposal B to be \"X\" , and investment in Proposal C to be \"1-X\" . \nHere there are two cases : Case I is in which Blue ray manufacturer wins over HDD storage manufacturer (or) Case II in which HDD storage manufacturer wins over Blue ray manufacturer .\nCase I : As blue ray manufacturer wins over HDD , the returns = $250(X)-100(1-X)$\nCase II : As HDD Storage manufacturer wins over blue ray , the returns will be = $100(1-X)-50(X)$\nBeing a rational investor, he must diversify his risk in such a way that, in either of the cases discussed above, Prakash must receive a fixed guaranteed return, and that is possible only when the returns in both cases are the same irrespective of who's winning against the other. Hence ,\n$250(X)-100(1-X)$ = $100(1-X)-50(X)$\n$350(X)-100=100-150(X)$\nX = $\\dfrac{\\ 200}{500}=\\ 0.4$ .\nThis implies to diversify risk for guaranteed return, he must invest 40% in B and 60% in C . \nTherefore, at X = 0.4 ; the guaranteed return would be = $250(0.4)-100(1-0.4)$ = 100 - 60 = 40 %",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-9",
+      "passage_text": "",
+      "question_text": "The cost price of 4 oranges is equal to the profit made by selling 10 apples, and the profit made by selling an orange is twice the profit made by selling a banana. The selling price of an orange is 50% more than the cost price of an orange. Which of the following options has the same value as the profit obtained by selling 20 oranges, 40 bananas and 5 apples?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Profit from selling 46 oranges",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Profit from selling 56 apples",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Profit from selling 88 bananas",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Profit from selling 20 apples and 25 bananas",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Profit from orange = SP of orange - CP of orange = 1.5*CP of orange - CP of orange = 0.5 * CP of orange\nProfit from apple = 0.4 * CP of orange\nProfit from banana = 0.5*profit from orange = 0.5 * 0.5 * CP of orange = 0.25 * CP of orange\nProfit from 20 oranges = 20 * 0.5 * CP of orange = 10 * CP of orange\nProfit from 40 bananas = 40 * 0.25 * CP of orange = 10 * CP of orange\nProfit from 5 apples = 5 * 0.4 * CP of orange = 2 * CP of orange\nTotal Profit = (10 + 10 + 2) = 22 *  CP of orange\n22 * CP of orange can be represented as,\nNumber of oranges to obtain the profit =$\\dfrac{22}{0.5}\\ =\\ 44$ \nNumber of apples to obtain the profit =$\\dfrac{22}{0.4}\\ =\\ 55$ \nNumber of bananas to obtain the profit =$\\dfrac{22}{0.25}\\ =\\ 88$ \nHence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost price of 4 oranges is equal to the profit made by selling 10 apples, and the profit made by selling an orange is twice the profit made by selling a banana. The selling price of an orange is 50% more than the cost price of an orange. Which of the following options has the same value as the profit obtained by selling 20 oranges, 40 bananas and 5 apples?\n\n**Options:**\n- **A**. Profit from selling 46 oranges\n- **B**. Profit from selling 56 apples\n- **C**. Profit from selling 88 bananas ✅\n- **D**. Profit from selling 20 apples and 25 bananas\n\n**Correct Answer:** null\n\n**Solution:**\nProfit from orange = SP of orange - CP of orange = 1.5*CP of orange - CP of orange = 0.5 * CP of orange\nProfit from apple = 0.4 * CP of orange\nProfit from banana = 0.5*profit from orange = 0.5 * 0.5 * CP of orange = 0.25 * CP of orange\nProfit from 20 oranges = 20 * 0.5 * CP of orange = 10 * CP of orange\nProfit from 40 bananas = 40 * 0.25 * CP of orange = 10 * CP of orange\nProfit from 5 apples = 5 * 0.4 * CP of orange = 2 * CP of orange\nTotal Profit = (10 + 10 + 2) = 22 *  CP of orange\n22 * CP of orange can be represented as,\nNumber of oranges to obtain the profit =$\\dfrac{22}{0.5}\\ =\\ 44$ \nNumber of apples to obtain the profit =$\\dfrac{22}{0.4}\\ =\\ 55$ \nNumber of bananas to obtain the profit =$\\dfrac{22}{0.25}\\ =\\ 88$ \nHence, the correct answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-10",
+      "passage_text": "",
+      "question_text": "A square of maximum possible area is drawn in the in-circle of an isosceles triangle. The ratio of the longer and repeated side of the isosceles triangle to the shorter side is 3:2. Find the ratio of the area of the triangle to that of the square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$3:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2\\sqrt{2}:1$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2\\sqrt{3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$4\\sqrt{2}:1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us take the isosceles triangle as the following, \nHere we have taken the two equal sides as P and the third as 2Q. Using isosceles triangle properties, we know the line from the vertex of two equal sides will divide the third side in half. \nThe semi-perimeter will be (P+P+2Q)/2, which equals P+Q. We are given that P:2Q is 3:2. So, taking P=3X, Q=1x. \nThe in-circle of an isosceles triangle will be, $r=\\dfrac{Area}{S}$ where S is the semi-perimeter. \nAnd if a square of maximum area is drawn inside this circle, the side of that square will be, $\\dfrac{\\sqrt{2}\\left(Area\\right)}{S}$\nArea of the square will be, $\\dfrac{2\\left(\\triangle\\right)^2}{S^2}$ where $\\triangle\\ $ equals the area of the isosceles triangle. \nThe required ratio will be, $\\dfrac{\\triangle}{\\dfrac{2\\triangle^2}{S^2}}$\nWhich equals, $\\dfrac{S^2}{2\\triangle\\ }$\nS will be (3X+3X+2X)/2=4X\nAnd the area will be, $\\triangle=\\sqrt{\\left(4X\\right)\\left(4X-3X\\right)\\left(4X-3X\\right)\\left(4X-2X\\right)}=\\sqrt{\\left(4X\\right)\\left(X\\right)\\left(X\\right)\\left(2X\\right)}=X^2\\sqrt{8}=2\\sqrt{2}X^2$\nSubstituting the values we have, the required ratio is, $\\frac{16X^2}{4\\sqrt{2}X^2}=2\\sqrt{2}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA square of maximum possible area is drawn in the in-circle of an isosceles triangle. The ratio of the longer and repeated side of the isosceles triangle to the shorter side is 3:2. Find the ratio of the area of the triangle to that of the square?\n\n**Options:**\n- **A**. $3:1$\n- **B**. $2\\sqrt{2}:1$ ✅\n- **C**. $2\\sqrt{3}:1$\n- **D**. $4\\sqrt{2}:1$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us take the isosceles triangle as the following, \nHere we have taken the two equal sides as P and the third as 2Q. Using isosceles triangle properties, we know the line from the vertex of two equal sides will divide the third side in half. \nThe semi-perimeter will be (P+P+2Q)/2, which equals P+Q. We are given that P:2Q is 3:2. So, taking P=3X, Q=1x. \nThe in-circle of an isosceles triangle will be, $r=\\dfrac{Area}{S}$ where S is the semi-perimeter. \nAnd if a square of maximum area is drawn inside this circle, the side of that square will be, $\\dfrac{\\sqrt{2}\\left(Area\\right)}{S}$\nArea of the square will be, $\\dfrac{2\\left(\\triangle\\right)^2}{S^2}$ where $\\triangle\\ $ equals the area of the isosceles triangle. \nThe required ratio will be, $\\dfrac{\\triangle}{\\dfrac{2\\triangle^2}{S^2}}$\nWhich equals, $\\dfrac{S^2}{2\\triangle\\ }$\nS will be (3X+3X+2X)/2=4X\nAnd the area will be, $\\triangle=\\sqrt{\\left(4X\\right)\\left(4X-3X\\right)\\left(4X-3X\\right)\\left(4X-2X\\right)}=\\sqrt{\\left(4X\\right)\\left(X\\right)\\left(X\\right)\\left(2X\\right)}=X^2\\sqrt{8}=2\\sqrt{2}X^2$\nSubstituting the values we have, the required ratio is, $\\frac{16X^2}{4\\sqrt{2}X^2}=2\\sqrt{2}$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-11",
+      "passage_text": "",
+      "question_text": "In a class of 40 students, the average age of the boys is 20 years, and the average age of the girls is 18 years. After a boy leaves the class, the average age of the remaining boys decreases by 1 year, and after a girl leaves the class, the average age of the remaining girls decreases by 1 year. What is the sum of the age of the boy and the girl who left the class?",
+      "options": [],
+      "correct_option_data": "76",
+      "solution_text": "Let the number of boys and the number of girls in the class be 'b' and 'g' respectively. \nNow, we are given that the average age of the boys is 20 years and the average age of the girls is 18 years. \nHence, the sum of the ages of all the boys and girls will be 20b and 18g respectively. \nNow, after a boy leaves the class, the average age of the remaining boys decreases by 1 year.\nLet the age of the boy who leaves the class is 'x' years. \nHence, $\\dfrac{\\left(20b-x\\right)}{b-1}=19$\n$20b-x=19b-19$\n$b=x-19$ or $b+19=x$\nSimilarly, after a girl leaves the class, the average age of the remaining girls decreases by 1 year.\nLet the age of the girl who leaves the class is 'y' years. \n$\\dfrac{\\left(18g-y\\right)}{g-1}=17$\n$18g-y=17g-17$\n$g=y-17$ or $g+17=y$\nWe need to find $x+y$ = $b+19+g+17$\nWe know that $b+g=40$ so replacing that, we get, \n$x+y=40+19+17$ = 76",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 40 students, the average age of the boys is 20 years, and the average age of the girls is 18 years. After a boy leaves the class, the average age of the remaining boys decreases by 1 year, and after a girl leaves the class, the average age of the remaining girls decreases by 1 year. What is the sum of the age of the boy and the girl who left the class?\n\n**Options:**\n\n**Correct Answer:** 76\n\n**Solution:**\nLet the number of boys and the number of girls in the class be 'b' and 'g' respectively. \nNow, we are given that the average age of the boys is 20 years and the average age of the girls is 18 years. \nHence, the sum of the ages of all the boys and girls will be 20b and 18g respectively. \nNow, after a boy leaves the class, the average age of the remaining boys decreases by 1 year.\nLet the age of the boy who leaves the class is 'x' years. \nHence, $\\dfrac{\\left(20b-x\\right)}{b-1}=19$\n$20b-x=19b-19$\n$b=x-19$ or $b+19=x$\nSimilarly, after a girl leaves the class, the average age of the remaining girls decreases by 1 year.\nLet the age of the girl who leaves the class is 'y' years. \n$\\dfrac{\\left(18g-y\\right)}{g-1}=17$\n$18g-y=17g-17$\n$g=y-17$ or $g+17=y$\nWe need to find $x+y$ = $b+19+g+17$\nWe know that $b+g=40$ so replacing that, we get, \n$x+y=40+19+17$ = 76",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-12",
+      "passage_text": "",
+      "question_text": "Nicholas can travel from Chennai to Hyderabad either directly in a straight line or via Bangalore. Bangalore is exactly 160 km north of Chennai, and Hyderabad is exactly 300 km east of Bangalore. He travels at speed 's' from Chennai to Bangalore and increases his speed by 50% for the Bangalore-Hyderabad stretch, taking a total time 't'. What speed must he maintain on the direct route to reach Hyderabad in the same time t?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{15}{16}s$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{17}{18}s$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{12}{19}s$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{17}{20}s$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The distance from Chennai to Bangalore is 160km, and the distance between Bangalore to Hyderabad is 300km. Since it forms a right-angled triangle, the distance between Chennai and Hyderabad is $\\sqrt{\\ \\left(160\\right)^2\\ +\\ \\left(300\\right)^2\\ }=\\ \\sqrt{\\ 25600\\ +\\ 90000}\\ =\\ 340$km.\nIn first case, the total time taken = $\\dfrac{160}{s}\\ +\\ \\dfrac{300}{1.5s}=\\ \\dfrac{360}{s}$\nLet the speed in the second case be x.\nThe time taken in the second case = $\\dfrac{340}{x}$\nGiven that the time is the same in both cases, equating them, we get\n$\\dfrac{340}{x}\\ =\\ \\dfrac{360}{s}$\n$x\\ =\\ \\dfrac{17}{18}s$\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nNicholas can travel from Chennai to Hyderabad either directly in a straight line or via Bangalore. Bangalore is exactly 160 km north of Chennai, and Hyderabad is exactly 300 km east of Bangalore. He travels at speed 's' from Chennai to Bangalore and increases his speed by 50% for the Bangalore-Hyderabad stretch, taking a total time 't'. What speed must he maintain on the direct route to reach Hyderabad in the same time t?\n\n**Options:**\n- **A**. $\\dfrac{15}{16}s$\n- **B**. $\\dfrac{17}{18}s$ ✅\n- **C**. $\\dfrac{12}{19}s$\n- **D**. $\\dfrac{17}{20}s$\n\n**Correct Answer:** null\n\n**Solution:**\nThe distance from Chennai to Bangalore is 160km, and the distance between Bangalore to Hyderabad is 300km. Since it forms a right-angled triangle, the distance between Chennai and Hyderabad is $\\sqrt{\\ \\left(160\\right)^2\\ +\\ \\left(300\\right)^2\\ }=\\ \\sqrt{\\ 25600\\ +\\ 90000}\\ =\\ 340$km.\nIn first case, the total time taken = $\\dfrac{160}{s}\\ +\\ \\dfrac{300}{1.5s}=\\ \\dfrac{360}{s}$\nLet the speed in the second case be x.\nThe time taken in the second case = $\\dfrac{340}{x}$\nGiven that the time is the same in both cases, equating them, we get\n$\\dfrac{340}{x}\\ =\\ \\dfrac{360}{s}$\n$x\\ =\\ \\dfrac{17}{18}s$\nHence, the correct answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-13",
+      "passage_text": "",
+      "question_text": "A function $f(x)$ is defined as $f(x) + f(x - 1) = x^2$. If f(14) = 79 then find out the value of f(70)?",
+      "options": [],
+      "correct_option_data": "2459",
+      "solution_text": "We are given that $f(x) + f(x - 1) = x^2$\nBy substituting x = 70, we get \n$\\Rightarrow$ $f(70) + f(69) = 70^2$    ...(1)\nBy substituting x = 69, we get\n$\\Rightarrow$ $f(69) + f(68) = 69^2$    ...(2)\nBy substituting x = 68, we get\n$\\Rightarrow$ $f(68) + f(67) = 68^2$    ...(3)\nBy substituting x = 67, we get\n$\\Rightarrow$ $f(67) + f(66) = 67^2$    ...(4)\nBy (1) - (2) + (3) - (4), we get \n$\\Rightarrow$ $f(70) - f(66) = 70^2 - 69^2 + 68^2 - 67^2$ \n$\\Rightarrow$ $f(70) - f(66) = (70 + 69) * (70 -69) + (68 +67) * (68 -67)$\n$\\Rightarrow$ $f(70) - f(66) = 70 + 69 + 68 + 67$ \nBy looking at the pattern we can say that \n$\\Rightarrow$ $f(70) - f(14) = 70 + 69 + 68 + ... + 15$ \n$\\Rightarrow$ $f(70)$ = $(1 + 2 + 3 + ... + 70)$ - $(1 + 2 + 3 + ... + 14) + f(14)$ \n$\\Rightarrow$ $f(70)$  = $(1 + 2 + 3 + ... + 70)$ - $(1 + 2 + 3 + ... + 14) + 79$ \n$\\Rightarrow$ $f(70)$  = $\\dfrac{70*71}{2}$ - $\\dfrac{14*15}{2} + 79$ \n$\\Rightarrow$ $f(70)$  = $2485 - 105$ + $79 = 2459$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA function $f(x)$ is defined as $f(x) + f(x - 1) = x^2$. If f(14) = 79 then find out the value of f(70)?\n\n**Options:**\n\n**Correct Answer:** 2459\n\n**Solution:**\nWe are given that $f(x) + f(x - 1) = x^2$\nBy substituting x = 70, we get \n$\\Rightarrow$ $f(70) + f(69) = 70^2$    ...(1)\nBy substituting x = 69, we get\n$\\Rightarrow$ $f(69) + f(68) = 69^2$    ...(2)\nBy substituting x = 68, we get\n$\\Rightarrow$ $f(68) + f(67) = 68^2$    ...(3)\nBy substituting x = 67, we get\n$\\Rightarrow$ $f(67) + f(66) = 67^2$    ...(4)\nBy (1) - (2) + (3) - (4), we get \n$\\Rightarrow$ $f(70) - f(66) = 70^2 - 69^2 + 68^2 - 67^2$ \n$\\Rightarrow$ $f(70) - f(66) = (70 + 69) * (70 -69) + (68 +67) * (68 -67)$\n$\\Rightarrow$ $f(70) - f(66) = 70 + 69 + 68 + 67$ \nBy looking at the pattern we can say that \n$\\Rightarrow$ $f(70) - f(14) = 70 + 69 + 68 + ... + 15$ \n$\\Rightarrow$ $f(70)$ = $(1 + 2 + 3 + ... + 70)$ - $(1 + 2 + 3 + ... + 14) + f(14)$ \n$\\Rightarrow$ $f(70)$  = $(1 + 2 + 3 + ... + 70)$ - $(1 + 2 + 3 + ... + 14) + 79$ \n$\\Rightarrow$ $f(70)$  = $\\dfrac{70*71}{2}$ - $\\dfrac{14*15}{2} + 79$ \n$\\Rightarrow$ $f(70)$  = $2485 - 105$ + $79 = 2459$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-14",
+      "passage_text": "",
+      "question_text": "The diagonals of a convex quadrilateral ABCD intersect at O. The areas of triangle AOB and COD are 4 and 9 square units respectively. What can be the smallest area (in square units) of the quadrilateral ABCD?",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Let's assume the quadrilateral to be like this\nGiven the areas of triangle AOB and COD are 4 and 9 respectively\nAssume the areas of triangles BOC and AOD are $x$ and $y$ units, respectively.\nThe height of triangles AOD and COD is the same, taking the base as AO and CO respectively.\nSo, the areas will be in the ratio of the length of the bases\n$\\dfrac{y}{9}=\\dfrac{AO}{CO}$ . . .(1)\nSimilarly, the height of triangles AOB and BOC is the same, taking the base as AO and CO respectively.\nSo, the areas will be in the ratio of the length of the bases\n$\\dfrac{4}{x}=\\dfrac{AO}{CO}$ . . .(2)\nEquating eqn (1) and (2) we get\n$\\dfrac{y}{9}=\\dfrac{4}{x}$\nor, $y=\\dfrac{36}{x}$\n \nSo, the area of ABCD is $4+9+x+y$\nArea = $13+x+\\dfrac{36}{x}$\nArea = $13+12+x-12+\\dfrac{36}{x}$\nArea = $25+\\left(\\sqrt{x}-\\dfrac{6}{\\sqrt{x}}\\right)^2$\nThe min value of the square term will be 0.\nHence the min area of the quadrilateral is 25 units",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe diagonals of a convex quadrilateral ABCD intersect at O. The areas of triangle AOB and COD are 4 and 9 square units respectively. What can be the smallest area (in square units) of the quadrilateral ABCD?\n\n**Options:**\n\n**Correct Answer:** 25\n\n**Solution:**\nLet's assume the quadrilateral to be like this\nGiven the areas of triangle AOB and COD are 4 and 9 respectively\nAssume the areas of triangles BOC and AOD are $x$ and $y$ units, respectively.\nThe height of triangles AOD and COD is the same, taking the base as AO and CO respectively.\nSo, the areas will be in the ratio of the length of the bases\n$\\dfrac{y}{9}=\\dfrac{AO}{CO}$ . . .(1)\nSimilarly, the height of triangles AOB and BOC is the same, taking the base as AO and CO respectively.\nSo, the areas will be in the ratio of the length of the bases\n$\\dfrac{4}{x}=\\dfrac{AO}{CO}$ . . .(2)\nEquating eqn (1) and (2) we get\n$\\dfrac{y}{9}=\\dfrac{4}{x}$\nor, $y=\\dfrac{36}{x}$\n \nSo, the area of ABCD is $4+9+x+y$\nArea = $13+x+\\dfrac{36}{x}$\nArea = $13+12+x-12+\\dfrac{36}{x}$\nArea = $25+\\left(\\sqrt{x}-\\dfrac{6}{\\sqrt{x}}\\right)^2$\nThe min value of the square term will be 0.\nHence the min area of the quadrilateral is 25 units",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-15",
+      "passage_text": "",
+      "question_text": "Two unique dice are rolled. The first die has 1 on one face, 2 on two faces and 3 on three faces. The second die has 1 on two faces, 2 on two faces, 3 on one face and 4 on one face. Find the probability the sum of the numbers when both dice are rolled is 4 or 5?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{7}{12}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{5}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{1}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "This question is no different from a regular pair of dice questions with different numbers on each side. Here, we see some numbers are repeated. We can just input these numbers on the matrix of possibilities. \nOut of the 36 possibilities that we see here, 11 of them give 4 as the sum of numbers, 9 of them have 5 as the sum of the numbers. \nTotal favourable cases that we are looking at is 20/36\nProbability will be 5/9.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo unique dice are rolled. The first die has 1 on one face, 2 on two faces and 3 on three faces. The second die has 1 on two faces, 2 on two faces, 3 on one face and 4 on one face. Find the probability the sum of the numbers when both dice are rolled is 4 or 5?\n\n**Options:**\n- **A**. $\\dfrac{7}{12}$\n- **B**. $\\dfrac{5}{9}$ ✅\n- **C**. $\\dfrac{1}{2}$\n- **D**. $\\dfrac{1}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nThis question is no different from a regular pair of dice questions with different numbers on each side. Here, we see some numbers are repeated. We can just input these numbers on the matrix of possibilities. \nOut of the 36 possibilities that we see here, 11 of them give 4 as the sum of numbers, 9 of them have 5 as the sum of the numbers. \nTotal favourable cases that we are looking at is 20/36\nProbability will be 5/9.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-16",
+      "passage_text": "",
+      "question_text": "In the below figure, the circle's radius is 16cm and $\\angle BAC=30^o$. If DC and BD are tangents of the circle, find the area of $\\triangle DBC$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{64}{\\sqrt{3}} cm^2$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "64$\\sqrt{2} cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "96$cm^2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "90$\\sqrt{2} cm^2$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The line joining the circle's centre to points B and C will be radius. The lines will also be perpendicular to the tangents.\nWe know the angle subtended by the chord at the centre will be twice the angle subtended on the circle.\nSo, $\\angle BOC = 2\\angle BAC = 60^o$\nWe know that $\\triangle BOC$ is an isosceles triangle. So, the other two angles will be equal to $\\frac{\\left(180-60\\right)}{2}=60$\nSo, this is an equilateral triangle and BC = 16cm.\nIn triangle DCB, $\\angle BDC = 120^o$ and $\\angle DBC = 30^o$. \nAs DBC is an isosceles triangle, drawing a perpendicular from D to BC will cut BC at its midpoint. \ntan B = tan 30 = $\\frac{DE}{BE}$\nDE = $\\frac{8}{\\sqrt{3}}$\nArea of triangle = $\\frac{1}{2}\\cdot b\\cdot h=\\frac{1}{2}\\cdot16\\cdot\\frac{8}{\\sqrt{3}}=\\frac{64}{\\sqrt{3}}$",
+      "image_url": "https://cracku.in/media/uploads/image_r4ieORb.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the below figure, the circle's radius is 16cm and $\\angle BAC=30^o$. If DC and BD are tangents of the circle, find the area of $\\triangle DBC$.\n\n**Options:**\n- **A**. $\\frac{64}{\\sqrt{3}} cm^2$ ✅\n- **B**. 64$\\sqrt{2} cm^2$\n- **C**. 96$cm^2$\n- **D**. 90$\\sqrt{2} cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nThe line joining the circle's centre to points B and C will be radius. The lines will also be perpendicular to the tangents.\nWe know the angle subtended by the chord at the centre will be twice the angle subtended on the circle.\nSo, $\\angle BOC = 2\\angle BAC = 60^o$\nWe know that $\\triangle BOC$ is an isosceles triangle. So, the other two angles will be equal to $\\frac{\\left(180-60\\right)}{2}=60$\nSo, this is an equilateral triangle and BC = 16cm.\nIn triangle DCB, $\\angle BDC = 120^o$ and $\\angle DBC = 30^o$. \nAs DBC is an isosceles triangle, drawing a perpendicular from D to BC will cut BC at its midpoint. \ntan B = tan 30 = $\\frac{DE}{BE}$\nDE = $\\frac{8}{\\sqrt{3}}$\nArea of triangle = $\\frac{1}{2}\\cdot b\\cdot h=\\frac{1}{2}\\cdot16\\cdot\\frac{8}{\\sqrt{3}}=\\frac{64}{\\sqrt{3}}$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-17",
+      "passage_text": "",
+      "question_text": "A dishonest shopkeeper uses fake weights to get 20% more rice from the wholesaler and gives 30% less rice to customers while claiming to sell at cost price. Raju, a regular customer, received x kgs of rice from the shopkeeper. To maintain his loyalty, the shopkeeper gave him y kgs for free. If the shopkeeper made no profit from this transaction, what is the value of x: y?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7 : 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7 : 5",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6 : 7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume that the cost price of a KG of rice is R.\nWe know that Raju received x kgs of rice. We know that the shopkeeper cheats and gives only to customers 70% of what the customers paid for.\nLet's assume that Raju ordered T kg of rice. So, 0.7T = x\nT = $\\frac{x}{0.7}=\\frac{10x}{7}$\nSo, the amount paid to the shopkeeper will be $R\\cdot\\frac{10x}{7}$\nThe actual cost price for the shopkeeper per KG of rice is $\\frac{R}{1.2}=\\frac{5R}{6}$\nWe are told that the shopkeeper neither made a profit nor incurred a loss from this transaction. To make this true, the shopkeeper should give Raju the actual cost price. \nThe amount of rice that Raju totally receives is $\\dfrac{\\frac{10x}{7}R}{\\frac{5R}{6}}=\\frac{12x}{7}$\nHe was initially given x. So, y = $\\frac{12x}{7}-x=\\frac{5x}{7}$\nx:y = 7:5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA dishonest shopkeeper uses fake weights to get 20% more rice from the wholesaler and gives 30% less rice to customers while claiming to sell at cost price. Raju, a regular customer, received x kgs of rice from the shopkeeper. To maintain his loyalty, the shopkeeper gave him y kgs for free. If the shopkeeper made no profit from this transaction, what is the value of x: y?\n\n**Options:**\n- **A**. 7 : 6\n- **B**. 2:1\n- **C**. 7 : 5 ✅\n- **D**. 6 : 7\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that the cost price of a KG of rice is R.\nWe know that Raju received x kgs of rice. We know that the shopkeeper cheats and gives only to customers 70% of what the customers paid for.\nLet's assume that Raju ordered T kg of rice. So, 0.7T = x\nT = $\\frac{x}{0.7}=\\frac{10x}{7}$\nSo, the amount paid to the shopkeeper will be $R\\cdot\\frac{10x}{7}$\nThe actual cost price for the shopkeeper per KG of rice is $\\frac{R}{1.2}=\\frac{5R}{6}$\nWe are told that the shopkeeper neither made a profit nor incurred a loss from this transaction. To make this true, the shopkeeper should give Raju the actual cost price. \nThe amount of rice that Raju totally receives is $\\dfrac{\\frac{10x}{7}R}{\\frac{5R}{6}}=\\frac{12x}{7}$\nHe was initially given x. So, y = $\\frac{12x}{7}-x=\\frac{5x}{7}$\nx:y = 7:5",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-18",
+      "passage_text": "",
+      "question_text": "Two taps, Tap M and Tap N, fill a tank with a capacity of 1800 liters. Tap M alone fills the tank in 24 hours, while Tap N alone takes 36 hours. A leak starts at the bottom, draining water at 1.2 liters per minute. After 3 hours, mineral deposits reduce the leak rate by 40%, stabilising it. How long will it take to fill the tank if both taps are opened simultaneously?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "23.06 hours",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "26.12 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21.2 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25.04 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are told that Tap M can fill the tank alone in 24 hours. Given the size of the tank, 1800 litres, Tap M's efficiency will be 75 litres per hour. \nSimilarly, Tap N takes 36 hours, meaning the tap's efficiency will be 50 litres per hour. \nWe are told the leak is initially at 1.2 litres per minute, which is 72 litres per hour. \nSo, for the first three hours, the effective rate at which the tank is being filled will be (75 + 50) - 72 = 53 litres per hour. \nIn 3 hours, 3 x 53 = 159 litres will be filled. \nWe are then told that the leak is stabilised by 40%, which means the leak will be functioning at 60% efficiency. \nThis will be (0.6 x 1.2) = 0.72 litres per minute, totalling 43.2 litres per hour. \nSo, for the remaining time, the effective rate at which the tank is being filled will be, (75 + 50) - 43.2=81.8 litres per hour. \nTime taken to fill the rest of the tank will be, $\\dfrac{1800-159}{81.8}=\\dfrac{1641}{81.8}=20.06$\nThe total time taken will be 23.06 hours.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo taps, Tap M and Tap N, fill a tank with a capacity of 1800 liters. Tap M alone fills the tank in 24 hours, while Tap N alone takes 36 hours. A leak starts at the bottom, draining water at 1.2 liters per minute. After 3 hours, mineral deposits reduce the leak rate by 40%, stabilising it. How long will it take to fill the tank if both taps are opened simultaneously?\n\n**Options:**\n- **A**. 23.06 hours ✅\n- **B**. 26.12 hours\n- **C**. 21.2 hours\n- **D**. 25.04 hours\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that Tap M can fill the tank alone in 24 hours. Given the size of the tank, 1800 litres, Tap M's efficiency will be 75 litres per hour. \nSimilarly, Tap N takes 36 hours, meaning the tap's efficiency will be 50 litres per hour. \nWe are told the leak is initially at 1.2 litres per minute, which is 72 litres per hour. \nSo, for the first three hours, the effective rate at which the tank is being filled will be (75 + 50) - 72 = 53 litres per hour. \nIn 3 hours, 3 x 53 = 159 litres will be filled. \nWe are then told that the leak is stabilised by 40%, which means the leak will be functioning at 60% efficiency. \nThis will be (0.6 x 1.2) = 0.72 litres per minute, totalling 43.2 litres per hour. \nSo, for the remaining time, the effective rate at which the tank is being filled will be, (75 + 50) - 43.2=81.8 litres per hour. \nTime taken to fill the rest of the tank will be, $\\dfrac{1800-159}{81.8}=\\dfrac{1641}{81.8}=20.06$\nThe total time taken will be 23.06 hours.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-19",
+      "passage_text": "",
+      "question_text": "A postman has six letters and six envelopes that are numbered from 1 to 6. The job of the postman is to place the letters into the envelopes in such a way that a letter of some number does not go into the envelope of the same number, and also, the letter numbered 1 is placed in the envelope numbered 2. What is the number of ways the postman can place the letters in the envelopes?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "53",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The answer can be calculated by dividing the number of cases of derangement of 6 letters into 6 envelopes by 5. We are dividing it by 5 because in the derangement of 6 letters, the letter 1 going to envelope 2 has an equal probability of 1 going to any other envelopes, and by dividing the total cases by 5 we get the cases where letter 1 goes to envelope 2 and the other letters are deranged as well.\nCases$\\ =\\ \\dfrac{6!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\ -\\ \\dfrac{1}{5!}\\ +\\ \\dfrac{1}{6!}\\right)}{5}\\ =\\ \\dfrac{\\left(360\\ -\\ 120\\ +\\ 30\\ -\\ 6\\ +\\ 1\\right)}{5}\\ =\\dfrac{265}{5}\\ =\\ 53$\nHence, the correct answer is option D.\nAlternate solution: We already know that the letter numbered 1 is placed in an envelope numbered 2. So, two cases are possible: the first is when the letter numbered 2 is placed in the envelope numbered 1, and the second is when the letter numbered 2 is not placed in the envelope numbered 1.\nThe number of possibilities in case 1:\nIf letter numbered 2 is placed in 1 and letter numbered 1 is placed in 2, the number of cases is just the derangement of the 4 remaining letters, which is,\nCases$\\ =\\ 4!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\right)\\ =\\ 12\\ -\\ 4\\ +\\ 1\\ =\\ 9$\nThe number of possibilities in case 2:\nIf letter numbered 2 is not placed in 1 and letter numbered 1 is placed in 2, the number of cases is just the derangement of the 5 remaining letters because since letter numbered 2 is not going in envelope 1, we can treat them as a derangement along with the 4 other letters, which is,\nCases$\\ =\\ 5!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\ -\\dfrac{1}{5!}\\right)\\ =\\ 60\\ -\\ 20\\ +\\ 5\\ -\\ 1=\\ 44$\nTotal number of ways = 9 + 44 = 53.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA postman has six letters and six envelopes that are numbered from 1 to 6. The job of the postman is to place the letters into the envelopes in such a way that a letter of some number does not go into the envelope of the same number, and also, the letter numbered 1 is placed in the envelope numbered 2. What is the number of ways the postman can place the letters in the envelopes?\n\n**Options:**\n- **A**. 9\n- **B**. 44\n- **C**. 35\n- **D**. 53 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe answer can be calculated by dividing the number of cases of derangement of 6 letters into 6 envelopes by 5. We are dividing it by 5 because in the derangement of 6 letters, the letter 1 going to envelope 2 has an equal probability of 1 going to any other envelopes, and by dividing the total cases by 5 we get the cases where letter 1 goes to envelope 2 and the other letters are deranged as well.\nCases$\\ =\\ \\dfrac{6!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\ -\\ \\dfrac{1}{5!}\\ +\\ \\dfrac{1}{6!}\\right)}{5}\\ =\\ \\dfrac{\\left(360\\ -\\ 120\\ +\\ 30\\ -\\ 6\\ +\\ 1\\right)}{5}\\ =\\dfrac{265}{5}\\ =\\ 53$\nHence, the correct answer is option D.\nAlternate solution: We already know that the letter numbered 1 is placed in an envelope numbered 2. So, two cases are possible: the first is when the letter numbered 2 is placed in the envelope numbered 1, and the second is when the letter numbered 2 is not placed in the envelope numbered 1.\nThe number of possibilities in case 1:\nIf letter numbered 2 is placed in 1 and letter numbered 1 is placed in 2, the number of cases is just the derangement of the 4 remaining letters, which is,\nCases$\\ =\\ 4!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\right)\\ =\\ 12\\ -\\ 4\\ +\\ 1\\ =\\ 9$\nThe number of possibilities in case 2:\nIf letter numbered 2 is not placed in 1 and letter numbered 1 is placed in 2, the number of cases is just the derangement of the 5 remaining letters because since letter numbered 2 is not going in envelope 1, we can treat them as a derangement along with the 4 other letters, which is,\nCases$\\ =\\ 5!\\left(\\dfrac{1}{2!}\\ -\\ \\dfrac{1}{3!}\\ +\\ \\dfrac{1}{4!}\\ -\\dfrac{1}{5!}\\right)\\ =\\ 60\\ -\\ 20\\ +\\ 5\\ -\\ 1=\\ 44$\nTotal number of ways = 9 + 44 = 53.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-20",
+      "passage_text": "",
+      "question_text": "Given that $a=15^{12}$ and $b=24^8$, find the number of factors of $a\\times b$ divisible by nine with at least one zero at the end.",
+      "options": [],
+      "correct_option_data": "5472",
+      "solution_text": "We are given the value that $a=15^{12}$, this can be factorised into, \n$a=3^{12}\\times5^{12}$\nSimilarly, we can factorise b, which is, $b=24^8$\n$b=2^{24}\\times3^8$\nWe can write the product $a\\times b$ as, $2^{24}\\times3^{20}\\times5^{12}$\nWe want to find the number of factors of this particular number, such that it has at least one zero at the end and is divisible by 9. \nEssentially, we want to find the factors which are divisible by 90. \n90 can be factorised into: $2\\times3^2\\times5$\nWe want to remove this from the existing number to get a number with every factor as a multiple of 90. \nBy doing that we get, $2^{23}\\times3^{18}\\times5^{11}$\nNumber of factors of this number will be, (23+1)(18+1)(11+1)=24x19x12\nThis will result in 5472 factors with at least one zero at the end, which is also divisible by 9.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven that $a=15^{12}$ and $b=24^8$, find the number of factors of $a\\times b$ divisible by nine with at least one zero at the end.\n\n**Options:**\n\n**Correct Answer:** 5472\n\n**Solution:**\nWe are given the value that $a=15^{12}$, this can be factorised into, \n$a=3^{12}\\times5^{12}$\nSimilarly, we can factorise b, which is, $b=24^8$\n$b=2^{24}\\times3^8$\nWe can write the product $a\\times b$ as, $2^{24}\\times3^{20}\\times5^{12}$\nWe want to find the number of factors of this particular number, such that it has at least one zero at the end and is divisible by 9. \nEssentially, we want to find the factors which are divisible by 90. \n90 can be factorised into: $2\\times3^2\\times5$\nWe want to remove this from the existing number to get a number with every factor as a multiple of 90. \nBy doing that we get, $2^{23}\\times3^{18}\\times5^{11}$\nNumber of factors of this number will be, (23+1)(18+1)(11+1)=24x19x12\nThis will result in 5472 factors with at least one zero at the end, which is also divisible by 9.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-21",
+      "passage_text": "",
+      "question_text": "Calculate the number of integral values of x for which the inequality below is satisfied.\n\n$\\dfrac{x^2\\ -\\ 2\\left|x\\right|\\ -\\ 3}{\\left|x\\right|\\ -\\ 2x^2\\ +\\ 10}\\ >0$",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "The given inequality is,\n$\\dfrac{x^2\\ -\\ 2\\left|x\\right|\\ -\\ 3}{\\left|x\\right|\\ -\\ 2x^2\\ +\\ 10}\\ >0$\nLet the value of |x| be p\nThe inequality can be rewritten as,\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{-\\ 2p^2\\ +\\ p\\ +\\ 10\\ }>0$\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{-\\ \\left(2p^2\\ -\\ p\\ -\\ 10\\right)\\ }>0$\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{2p^2\\ -\\ p\\ -\\ 10\\ }<0$\nThe numerator can be written as,\n$p^2\\ -\\ 2p\\ -\\ 3\\ =\\ \\left(p\\ +\\ 1\\right)\\left(p\\ -3\\right)$\nThe denominator can be written as,\n$2p^2\\ -\\ p\\ -\\ 10\\ =\\ \\left(2p\\ -\\ 5\\right)\\left(p\\ +2\\right)$\nInequality becomes,\n$\\dfrac{\\left(p\\ +\\ 1\\right)\\left(p\\ -\\ 3\\right)}{\\left(2p\\ -\\ 5\\right)\\left(p\\ +2\\right)}<0$\nThe values of p that satisfy the above inequality are,\n$+\\ \\ \\ \\left(-2\\right)\\ \\ \\ \\ -\\ \\ \\ \\ \\ \\left(-1\\right)\\ \\ \\ \\ \\ +\\ \\ \\ \\ \\left(\\dfrac{5}{2}\\right)\\ \\ \\ \\ -\\ \\ \\ \\ 3\\ \\ \\ \\ \\ \\ +\\ \\ $\nSo, the values of p that satisfy are,\n$-2\\ <\\ p\\ <\\ -1$  and $\\dfrac{5}{2}\\ <\\ p\\ <\\ 3$\nbut we know that the value of p is |x|, and it has to be positive.\nSo, p must lie in the range of $\\left(\\dfrac{5}{2},\\ 3\\right)$\nSo, x lies in the range $\\left(-3,\\ -\\dfrac{5}{2}\\right)\\ U\\ \\left(\\dfrac{5}{2}\\ ,\\ \\ 3\\right)$\nBut there are no integers in the given range, and the answer is 0.\nHence, the correct answer is 0.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCalculate the number of integral values of x for which the inequality below is satisfied.\n\n$\\dfrac{x^2\\ -\\ 2\\left|x\\right|\\ -\\ 3}{\\left|x\\right|\\ -\\ 2x^2\\ +\\ 10}\\ >0$\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nThe given inequality is,\n$\\dfrac{x^2\\ -\\ 2\\left|x\\right|\\ -\\ 3}{\\left|x\\right|\\ -\\ 2x^2\\ +\\ 10}\\ >0$\nLet the value of |x| be p\nThe inequality can be rewritten as,\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{-\\ 2p^2\\ +\\ p\\ +\\ 10\\ }>0$\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{-\\ \\left(2p^2\\ -\\ p\\ -\\ 10\\right)\\ }>0$\n$\\dfrac{p^2\\ -\\ 2p\\ -\\ 3}{2p^2\\ -\\ p\\ -\\ 10\\ }<0$\nThe numerator can be written as,\n$p^2\\ -\\ 2p\\ -\\ 3\\ =\\ \\left(p\\ +\\ 1\\right)\\left(p\\ -3\\right)$\nThe denominator can be written as,\n$2p^2\\ -\\ p\\ -\\ 10\\ =\\ \\left(2p\\ -\\ 5\\right)\\left(p\\ +2\\right)$\nInequality becomes,\n$\\dfrac{\\left(p\\ +\\ 1\\right)\\left(p\\ -\\ 3\\right)}{\\left(2p\\ -\\ 5\\right)\\left(p\\ +2\\right)}<0$\nThe values of p that satisfy the above inequality are,\n$+\\ \\ \\ \\left(-2\\right)\\ \\ \\ \\ -\\ \\ \\ \\ \\ \\left(-1\\right)\\ \\ \\ \\ \\ +\\ \\ \\ \\ \\left(\\dfrac{5}{2}\\right)\\ \\ \\ \\ -\\ \\ \\ \\ 3\\ \\ \\ \\ \\ \\ +\\ \\ $\nSo, the values of p that satisfy are,\n$-2\\ <\\ p\\ <\\ -1$  and $\\dfrac{5}{2}\\ <\\ p\\ <\\ 3$\nbut we know that the value of p is |x|, and it has to be positive.\nSo, p must lie in the range of $\\left(\\dfrac{5}{2},\\ 3\\right)$\nSo, x lies in the range $\\left(-3,\\ -\\dfrac{5}{2}\\right)\\ U\\ \\left(\\dfrac{5}{2}\\ ,\\ \\ 3\\right)$\nBut there are no integers in the given range, and the answer is 0.\nHence, the correct answer is 0.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-26-22",
+      "passage_text": "",
+      "question_text": "Yash drives his car at a speed of 50 km/hr. After three hours, he increases the speed by 20%, then again after three more hours, he increases the speed by 50% and drives for four more hours, finally reaching his destination. On the return journey, he drives the car for one-third of the distance at a speed of 46 km per hour and the rest at 92 km/hr. Find the ratio of the average speed of the onward and return journeys.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Onward Journey:\nSpeed of 50 km/hr for three hours.\nDistance travelled = 50*3 = 150 km\nSpeed increased by 20% = 50*1.2 = 60 km/hr for three hours.\nDistance travelled = 60*3 = 180 km\nSpeed increased by 50% = 60*1.5 = 90 km/hr for the next 4 hours.\nDistance travelled = 90*4 = 360 km\nThe average speed of the onward journey = Total distance travelled /Total time taken.\nThe average speed of the onward journey = (150+180+360)/(3+3+6) = 690/10 = 69 km/hr\nReturn Journey:\nHe drives the car for one-third of the distance at a speed of 46 km per hour, 690*1/3 = 230 km at 46 km/hr. (5 hours )\nHe drives the car for the remaining two-thirds of the distance at a speed of92 km/hr, 460 km with a speed of 92 km/hr. (5 hours)\nSo, average speed = Total distance / Total time taken.\nAverage speed of return journey = 690/10 = 69 km/hr.\nTherefore, the ratio is 1:1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nYash drives his car at a speed of 50 km/hr. After three hours, he increases the speed by 20%, then again after three more hours, he increases the speed by 50% and drives for four more hours, finally reaching his destination. On the return journey, he drives the car for one-third of the distance at a speed of 46 km per hour and the rest at 92 km/hr. Find the ratio of the average speed of the onward and return journeys.\n\n**Options:**\n- **A**. 1:2\n- **B**. 2:3\n- **C**. 3:4\n- **D**. 1:1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nOnward Journey:\nSpeed of 50 km/hr for three hours.\nDistance travelled = 50*3 = 150 km\nSpeed increased by 20% = 50*1.2 = 60 km/hr for three hours.\nDistance travelled = 60*3 = 180 km\nSpeed increased by 50% = 60*1.5 = 90 km/hr for the next 4 hours.\nDistance travelled = 90*4 = 360 km\nThe average speed of the onward journey = Total distance travelled /Total time taken.\nThe average speed of the onward journey = (150+180+360)/(3+3+6) = 690/10 = 69 km/hr\nReturn Journey:\nHe drives the car for one-third of the distance at a speed of 46 km per hour, 690*1/3 = 230 km at 46 km/hr. (5 hours )\nHe drives the car for the remaining two-thirds of the distance at a speed of92 km/hr, 460 km with a speed of 92 km/hr. (5 hours)\nSo, average speed = Total distance / Total time taken.\nAverage speed of return journey = 690/10 = 69 km/hr.\nTherefore, the ratio is 1:1",
+      "type": "quants"
+    }
+  ]
+}

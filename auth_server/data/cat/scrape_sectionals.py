@@ -412,17 +412,10 @@ if __name__ == "__main__":
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
         for url_curr in urls_raw:
-            if "quant" in url_curr:
-                type_curr = "quants"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
-            elif "verbal" in url_curr:
-                type_curr = "varc"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
-                break
-            else:
-                type_curr = "dilr"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
-                break
+            # if "quant" in url_curr:
+            type_curr = "quants"
+            # urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls))
