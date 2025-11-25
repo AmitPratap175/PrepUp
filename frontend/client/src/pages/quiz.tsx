@@ -158,9 +158,9 @@ export default function QuizPage() {
 
     const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
 
-    updateProgressMutation.mutate({ 
-      subject: currentTest.subject, 
-      questions_attempted 
+    updateProgressMutation.mutate({
+      subject: currentTest.subject,
+      questions_attempted
     });
   };
 
@@ -225,7 +225,7 @@ export default function QuizPage() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -256,7 +256,7 @@ export default function QuizPage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Button 
+                    <Button
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                       onClick={() => handleStartQuiz(test.id)}
                     >

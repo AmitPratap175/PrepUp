@@ -34,4 +34,9 @@ dependencies = [
     "langchain>=1.0.2",
     "deepagents>=0.2.4",
     "langchain-google-community>=3.0.0",
+    "pyjwt>=2.10.1",
+    "adrf>=0.1.12",
+    "celery>=5.5.3",
+    "redis>=7.1.0",
+    "requests>=2.31.0",
 ]

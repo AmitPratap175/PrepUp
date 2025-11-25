@@ -15,6 +15,7 @@ import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect } from "wouter";
+import { Loader2, Download } from "lucide-react";
 
 /**
  * @interface BookmarkedQuestions
@@ -37,7 +38,7 @@ export default function BookmarksPage() {
   const { isAuthenticated } = useAuth();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
+  const [isExporting, setIsExporting] = useState<string | null>(null);
 
   const { data: bookmarks, isLoading: isLoadingBookmarks } = useQuery<Bookmark[]>({
     queryKey: ["bookmarks"],
@@ -89,6 +90,43 @@ export default function BookmarksPage() {
     }
   }, [bookmarks, practiceTests]);
 
+  const handleExportPDF = async (subject: string) => {
+    setIsExporting(subject);
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("Not authenticated");
+
+      const response = await fetch('/api/auth/bookmarks/export-pdf/', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Token ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ subject }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to generate PDF");
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${subject.replace(/\s+/g, '_')}_bookmarks.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error("Failed to export PDF:", error);
+      alert("Failed to export PDF. Please ensure the backend has LaTeX installed.");
+    } finally {
+      setIsExporting(null);
+    }
+  };
+
   if (!isAuthenticated) {
     return <Redirect to="/login" />;
   }
@@ -134,8 +172,8 @@ export default function BookmarksPage() {
           setSelectedSubject(null);
           setCurrentQuestionIndex(0); // Reset index on exit
         }}
-        onSubmit={() => {}}
-        onProgressUpdate={() => {}}
+        onSubmit={() => { }}
+        onProgressUpdate={() => { }}
         navigateToQuestion={navigateToQuestion}
         currentQuestionIndex={currentQuestionIndex}
       />
@@ -170,12 +208,30 @@ export default function BookmarksPage() {
                       {questions.length} questions
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-3">
                     <Button
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                       onClick={() => setSelectedSubject(subject)}
                     >
                       Start Quiz
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full"
+                      onClick={() => handleExportPDF(subject)}
+                      disabled={isExporting === subject}
+                    >
+                      {isExporting === subject ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Generating PDF...
+                        </>
+                      ) : (
+                        <>
+                          <Download className="mr-2 h-4 w-4" />
+                          Export PDF
+                        </>
+                      )}
                     </Button>
                   </CardContent>
                 </Card>

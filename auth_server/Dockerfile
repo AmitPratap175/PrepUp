@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     g++ \
     netcat-openbsd \
+    texlive-latex-base \
+    texlive-fonts-recommended \
+    texlive-latex-extra \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy dependency definitions

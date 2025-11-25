@@ -1,43 +1,49 @@
 {
+  "id": "mock-test-18",
+  "title": "CAT Mock Test 18",
+  "subject": "General",
+  "duration": 120,
+  "totalQuestions": 22,
+  "examType": "CAT",
   "questions": [
     {
-      "qid": "quant-sectionals-3-1",
+      "qid": "varc-1",
       "passage_text": "",
-      "question_text": "There is a sentence that is missing in the paragraph below. Look at the paragraph and decide where (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: As it turns out, much of Earth’s habitable space lies deep under thousands of feet of sediments and rock. \n\nParagraph: The major categories of visible life on Earth have been pretty much settled for centuries. But it wasn’t until the 1980s that scientists found “intraterrestrials” — microscopic organisms living deep below the Earth’s surface ……1…… Soon followed by other revelations of life inside Earth’s crust, these discoveries revealed that we had been missing major branches on the tree of life …….2……. Indeed, these microbes proved that our assumptions about the boundaries of life were wrong — and wildly so ……3…… You might think that any sad little trickle of life in that deep, dark underworld might like to clamber back up to the surface, desperate for life­giving sunlight ……4……. But anyone who’s traveled to a methane seep at the bottom of the sea knows the opposite is true: life flourishes in the dark, and it does so on terms antithetical to those that we who inhabit the thin green layer at the Earth’s surface know.",
+      "question_text": "Srinu and Bhanu can complete the work together in 30 days. If Bhanu works for n days, Srinu can complete the remaining work in 55 days. If Srinu works for n days, Bhanu can complete the remaining work in 39 days. How many days will it take to finish the work if Bhanu works on the first half of the work and Srinu finishes the remaining work?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Option 2",
-          "is_correct": false
+          "option_text": "64",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Option 4",
+          "option_text": "70",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Option 1",
+          "option_text": "75",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Option 3",
-          "is_correct": true
+          "option_text": "68",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The sentence fits well in Option 3.\nThe paragraph begins by introducing the discovery of microbes deep underground and how that challenged existing ideas about life on Earth. After discussing how these findings revealed major gaps in our understanding, it states that our assumptions about life’s boundaries were “wildly” wrong. The given sentence fits best at Option 3 because it explains why those assumptions were wrong — it reveals that much of Earth’s livable space isn’t where we thought it was. This placement also gives clear context to the phrase “that deep, dark underworld” in the next sentence, making the transition smooth and meaningful. Without the sentence here, that phrase would lack context.\nOption 1: The sentence does not fit well here. The sentence before this blank already introduces life deep below the Earth’s surface, so placing this sentence here would feel repetitive rather than adding something new.\nOption 2: The sentence does not fit here. The sentence after this blank mentions “these microbes”, which connects from the idea of “life inside Earth’s crust”, which is mentioned in the sentence before the blank. Placing the sentence here would disrupt this flow.\nOption 4: The sentence does not fit here. At this point, the sentence before the sentence presents a certain view and the sentence after that presents a contrasting view to this. Placing the sentence here would disrupt that logical flow.",
+      "solution_text": "Let us assume the work done by Srinu in one day as S units and Bhanu as B units.\nTotal work = 30S+30B $\\rightarrow 1$\nWe are told that if Bhanu works for n days, Srinu can complete the remaining work in 55 days.\nIn this case, the total work = nB+55S $\\rightarrow 2$\nUpon equating eq 1 and 2, we get 30S+30B = nB+55S\n25S = (30-n)B\n$\\dfrac{S}{B}=\\dfrac{\\left(30-n\\right)}{25}$\nWe are also told that if Srinu works for n days, Bhanu can complete the remaining work in 39 days.\nIn this case, the total work = 39B+nS $\\rightarrow 3$\nUpon equating eq 1 and 3, we get 30S+30B = 39B+nS\n9B = (30-n)S\n$\\dfrac{S}{B}=\\dfrac{9}{\\left(30-n\\right)}$\nWe can equate both equations. $\\dfrac{\\left(30-n\\right)}{25}=\\dfrac{9}{\\left(30-n\\right)}$\n$(30-n)^2=225$\n$(30-n)=\\pm15$\n$n=15\\ or\\ 45$\nBut only n = 15 satisfies the condition that Srinu and Bhanu can complete the work together in 30 days\nB:S = 5:3\nSo, Bhanu does five units of work in one day, and Srinu does three in one day. Total work = 8*30 = 240\nTime taken to finish the first half by Bhanu = $\\dfrac{120}{5}=24$\nTime taken by Srinu to finish the second half = $\\dfrac{120}{3}=40$\nTotal time taken = 24+40 = 64",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere is a sentence that is missing in the paragraph below. Look at the paragraph and decide where (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: As it turns out, much of Earth’s habitable space lies deep under thousands of feet of sediments and rock. \n\nParagraph: The major categories of visible life on Earth have been pretty much settled for centuries. But it wasn’t until the 1980s that scientists found “intraterrestrials” — microscopic organisms living deep below the Earth’s surface ……1…… Soon followed by other revelations of life inside Earth’s crust, these discoveries revealed that we had been missing major branches on the tree of life …….2……. Indeed, these microbes proved that our assumptions about the boundaries of life were wrong — and wildly so ……3…… You might think that any sad little trickle of life in that deep, dark underworld might like to clamber back up to the surface, desperate for life­giving sunlight ……4……. But anyone who’s traveled to a methane seep at the bottom of the sea knows the opposite is true: life flourishes in the dark, and it does so on terms antithetical to those that we who inhabit the thin green layer at the Earth’s surface know.\n\n**Options:**\n- **A**. Option 2\n- **B**. Option 4\n- **C**. Option 1\n- **D**. Option 3 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe sentence fits well in Option 3.\nThe paragraph begins by introducing the discovery of microbes deep underground and how that challenged existing ideas about life on Earth. After discussing how these findings revealed major gaps in our understanding, it states that our assumptions about life’s boundaries were “wildly” wrong. The given sentence fits best at Option 3 because it explains why those assumptions were wrong — it reveals that much of Earth’s livable space isn’t where we thought it was. This placement also gives clear context to the phrase “that deep, dark underworld” in the next sentence, making the transition smooth and meaningful. Without the sentence here, that phrase would lack context.\nOption 1: The sentence does not fit well here. The sentence before this blank already introduces life deep below the Earth’s surface, so placing this sentence here would feel repetitive rather than adding something new.\nOption 2: The sentence does not fit here. The sentence after this blank mentions “these microbes”, which connects from the idea of “life inside Earth’s crust”, which is mentioned in the sentence before the blank. Placing the sentence here would disrupt this flow.\nOption 4: The sentence does not fit here. At this point, the sentence before the sentence presents a certain view and the sentence after that presents a contrasting view to this. Placing the sentence here would disrupt that logical flow.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSrinu and Bhanu can complete the work together in 30 days. If Bhanu works for n days, Srinu can complete the remaining work in 55 days. If Srinu works for n days, Bhanu can complete the remaining work in 39 days. How many days will it take to finish the work if Bhanu works on the first half of the work and Srinu finishes the remaining work?\n\n**Options:**\n- **A**. 64 ✅\n- **B**. 70\n- **C**. 75\n- **D**. 68\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the work done by Srinu in one day as S units and Bhanu as B units.\nTotal work = 30S+30B $\\rightarrow 1$\nWe are told that if Bhanu works for n days, Srinu can complete the remaining work in 55 days.\nIn this case, the total work = nB+55S $\\rightarrow 2$\nUpon equating eq 1 and 2, we get 30S+30B = nB+55S\n25S = (30-n)B\n$\\dfrac{S}{B}=\\dfrac{\\left(30-n\\right)}{25}$\nWe are also told that if Srinu works for n days, Bhanu can complete the remaining work in 39 days.\nIn this case, the total work = 39B+nS $\\rightarrow 3$\nUpon equating eq 1 and 3, we get 30S+30B = 39B+nS\n9B = (30-n)S\n$\\dfrac{S}{B}=\\dfrac{9}{\\left(30-n\\right)}$\nWe can equate both equations. $\\dfrac{\\left(30-n\\right)}{25}=\\dfrac{9}{\\left(30-n\\right)}$\n$(30-n)^2=225$\n$(30-n)=\\pm15$\n$n=15\\ or\\ 45$\nBut only n = 15 satisfies the condition that Srinu and Bhanu can complete the work together in 30 days\nB:S = 5:3\nSo, Bhanu does five units of work in one day, and Srinu does three in one day. Total work = 8*30 = 240\nTime taken to finish the first half by Bhanu = $\\dfrac{120}{5}=24$\nTime taken by Srinu to finish the second half = $\\dfrac{120}{3}=40$\nTotal time taken = 24+40 = 64",
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-2",
+      "qid": "varc-2",
       "passage_text": "",
       "question_text": "The time zones of cities A, B and C are AST, BST and CST respectively. A flight which travels at a constant speed of 600 kmph leaves A at 10:00 A.M AST and reaches B at 2:00 P.M BST. After halting for an hour at B, the flight reaches C at 6:00 P.M CST. If the distance between A and B is 3600 kms and between B and C is 1200 kms. Which of the following can be the distance between A and C assuming cities A and B lies on same latitude .",
       "options": [
@@ -73,7 +79,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-3",
+      "qid": "varc-3",
       "passage_text": "",
       "question_text": "What is the minimum value of the expression $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$?",
       "options": [
@@ -109,7 +115,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-4",
+      "qid": "varc-4",
       "passage_text": "",
       "question_text": "Let AB be the diameter of the circle, and C be the point on AB such that AC: CB is 6:7. Let D be the point on the circle such that CD is perpendicular to AB, and DE be the diameter passing through the centre of the circle. Find the ratio of the area of $\\triangle ABD$ to the area of $\\triangle CDE$.",
       "options": [
@@ -145,7 +151,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-5",
+      "qid": "varc-5",
       "passage_text": "",
       "question_text": "Prakash works as a sales manager at Reddy Electronics and has a monthly revenue target of selling 40 air conditioners at a profit of 10%. However, if he marks up the price by 'M' per cent on the cost price and then offers a discount of 20% on the marked price, he can complete his revenue target by just selling 25 air conditioners. Prakash has decided to increase the marked price by 25% further and is not offering any discount. Find the number of air conditioners he needs to sell to achieve his monthly revenue target.",
       "options": [
@@ -181,7 +187,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-6",
+      "qid": "varc-6",
       "passage_text": "",
       "question_text": "In a trapezium ABCD, AB||CD and AB=4CD. Point E is the midpoint of the diagonal AC. If the Area of the triangle ADE is $a$ units and that of the trapezium ABCD is $b$ units, then find the value of $\\dfrac{b}{a}$.",
       "options": [],
@@ -192,7 +198,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-7",
+      "qid": "varc-7",
       "passage_text": "",
       "question_text": "In an MBA entrance test preparation class, three subjects are taught: VARC, DILR, and QA. The probability that a randomly selected student likes VARC is 0.85, likes DILR is 0.62, and likes QA is 0.58. The student may also dislike all three subjects. What is the difference between the maximum and minimum probability of a randomly selected student liking all three subjects?",
       "options": [
@@ -228,7 +234,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-8",
+      "qid": "varc-8",
       "passage_text": "",
       "question_text": "A photographer is arranging a group of 6 students for a yearbook photo. They have 22 numbered seats available in a single row. To ensure visibility and proper spacing, the photographer wants to make sure that there are at least two empty spots between any two students. In how many ways can the photographer arrange the seating of the 6 students?",
       "options": [
@@ -264,7 +270,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-9",
+      "qid": "varc-9",
       "passage_text": "",
       "question_text": "In $\\triangle ABC\\ $, D is a point on line AB such that AD:BD=3:4 and E is a point on AC such that AE:CE=4:5.\n\nWhat is area of quadilateral DECB ?\n\n(given area of $\\ \\triangle ABC=126\\ cm^2\\ $)",
       "options": [
@@ -300,7 +306,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-10",
+      "qid": "varc-10",
       "passage_text": "",
       "question_text": "There was a solution of milk and water in the ratio 3:4. This solution was boiled in order to get a concentration of 50%. Instead, it was boiled in excess which resulted in the initial ratio of milk and water being reversed. The original solution was boiled for $5\\frac{5}{6}$ minutes.If the evaporation rate of water is 50% more than that of milk irrespective of quantity, find the time for which the milk was boiled after reaching 50% of concentration.",
       "options": [
@@ -336,7 +342,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-11",
+      "qid": "varc-11",
       "passage_text": "",
       "question_text": "The ratio of interior angles of two regular polygons with $n$ and $m$ sides respectively is 4: 5. The difference in the number of diagonals of these polygons is 45. Find the number of diagonals of a regular polygon with $\\left(2m-n\\right)$ sides. ($n,\\ m\\le30$)",
       "options": [],
@@ -347,7 +353,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-12",
+      "qid": "varc-12",
       "passage_text": "",
       "question_text": "Kushal invested an equal sum in two banks. The Bank of Hyderabad offers a 40% interest rate compounded quarterly, while the State Bank of India provides a 46% interest rate compounded annually. If the difference in interest earned from both banks over one year is ₹4,100, find the total interest earned from the Bank of Hyderabad in one year if it offered a 50% interest rate compounded semi-annually, with the investment amount remaining the same.",
       "options": [
@@ -383,7 +389,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-13",
+      "qid": "varc-13",
       "passage_text": "",
       "question_text": "Prashant invested in two schemes, A and B, in a ratio of 2:3. In scheme A, he will get an interest of 20%, compounding half-yearly, and he invested for 2 years. In scheme B, he will get an interest rate of 16% compounding annually for 3 years. If the difference between the amount received after the investment period is Rs. 17,54,488 for Scheme A and B, find the total amount he invested in Scheme A and B at the beginning.",
       "options": [
@@ -419,7 +425,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-14",
+      "qid": "varc-14",
       "passage_text": "",
       "question_text": "Initially, the ratio of balls with Yogesh and Tushar was 5:8, and the number of balls with Mayank was two-thirds of Tushar's number of balls. If the number of balls with Yogesh is increased by 60%, Tushar is increased by 50%, and Mayank is reduced by 50%, the total number of balls at the end with all three equals 1428, then find the number of balls with Tushar in the beginning.",
       "options": [],
@@ -430,7 +436,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-15",
+      "qid": "varc-15",
       "passage_text": "",
       "question_text": "The cost of 5 pens, 11 pencils,\n and 7 erasers equals Rs. 90, while the cost of 3 pens, 8 pencils, \nand 12 erasers equals Rs. 83. If the cost of 49 pens, 112 pencils, and 92 erasers is equal to N, where N is an integer. Find the value of N",
       "options": [
@@ -466,7 +472,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-16",
+      "qid": "varc-16",
       "passage_text": "",
       "question_text": "A lion chasing a deer takes 6 steps forward in a second and 2 steps backwards in the next second, continuing the pattern until it catches the deer. Meanwhile, the deer takes 4 steps forward in a second and 3 steps backwards in the next second, and it continues the same pattern. If the distance between the lion and the deer is 85 steps, what is the least amount of time (in integer seconds) the lion needs to catch the deer? (assume the step size to be the same for both lion and deer)",
       "options": [
@@ -502,7 +508,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-17",
+      "qid": "varc-17",
       "passage_text": "",
       "question_text": "Given a set of m positive integers, the sum of these integers is 40 times the number of integers in the set. When the number 120 is added to this set, the average of all numbers in the set increases by 4. If all the integers in the set are consecutive natural numbers, find the difference between the smallest and the largest integer.",
       "options": [],
@@ -513,7 +519,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-18",
+      "qid": "varc-18",
       "passage_text": "",
       "question_text": "If the roots of the quadratic equation $2x^2-2024x+p=0$ are integral. Find the maximum value that $p$ can take.",
       "options": [],
@@ -524,7 +530,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-19",
+      "qid": "varc-19",
       "passage_text": "",
       "question_text": "If the product of all the values of $x$ that satisfy the equation $e^{5\\left(\\log_ex\\right)^2\\ +\\ 3}\\ =\\ x^8$ is A, then what is the value of $\\log_eA$?",
       "options": [
@@ -560,7 +566,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-20",
+      "qid": "varc-20",
       "passage_text": "",
       "question_text": "a,b, x and y are single digit natural numbers and the sum of two 2-digit natural numbers ab and xy is a three-digit number 1aa. HCF(a, b) = 2, HCF(x,y) = 3. What is the value of x+y+a+b ?",
       "options": [
@@ -596,7 +602,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-21",
+      "qid": "varc-21",
       "passage_text": "",
       "question_text": "B is twice as efficient as A. The time taken by A, B, and C together to finish the work together is 50% less than the time taken to finish when A and B work together. If x:y is the ratio (in simplest form) of the time A alone takes to finish the work to the time B and C together take, then find $x^2+y^2$?",
       "options": [],
@@ -607,7 +613,7 @@
       "type": "quants"
     },
     {
-      "qid": "quant-sectionals-3-22",
+      "qid": "varc-22",
       "passage_text": "",
       "question_text": "If a and b are integers, find how many pairs of (a,b) satisfy the inequality $25a^2+b^2\\le400$?",
       "options": [],

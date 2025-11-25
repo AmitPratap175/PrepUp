@@ -3,697 +3,594 @@
     {
       "qid": "quant-sectionals-4-1",
       "passage_text": "",
-      "question_text": "A solution is made up of alcohol and water in an unknown ratio. If one-fourth of this solution is taken out and replaced with water, the ratio is reversed. What is the volume of water(in liters) in the final solution if the volume of the solution is 35 liters?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "25",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "15",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "20",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "None of the above",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Consider total volume of solution = L and the ratio of alcohol and water is a:b\nVolume of alcohol = aL/(a+b)    Volume of water = bL/(a+b) \nAfter taking out L/4 solution, the ratio will remain same.\nVolume of alcohol = 3aL/4(a+b)    Volume of water = 3bL/4(a+b) \nAfter adding L/4 water, Volume of alcohol = 3aL/4(a+b)    Volume of water = 3bL/4(a+b) + L/4\nNew ratio of volume of alcohol to water = $\\frac{\\frac{3aL}{4(a+b)}}{\\frac{3bL}{4(a+b)}+\\frac{L}{4}}$ = $\\frac{b}{a}$\n$\\frac{3a}{3b+a+b} = \\frac{b}{a}$\n$\\frac{3a}{4b+a} = \\frac{b}{a}$\n$3a^{2} = 4b^{2}+ab$   $3a^{2} -ab-4b^{2}= 0$     $3a^{2} +3ab-4ab-4b^{2}= 0$\n$(a+b)(3a-4b)=0$   $\\frac{a}{b}$ = 4/3    (If (a+b)=0, one value is negative, ignore negative value)\nSince in final solution ratio becomes 3:4, volume of water = 35*(4/7) = 20 liters\nC is the answer.",
+      "question_text": "Five jumbled up sentences (labelled 1, 2, 3, 4 and 5), related to a topic, are given below. Four of them can be put together to form a coherent paragraph. Identify the odd sentence and key in the number of that sentence as your answer.\n\n1. The field of cosmology is one of these areas.\n\n2. But none would go so far as to suggest that the answer may not lie in physics at all. \n\n3. Those few physicists able to step away from the exacting demands of their practice will speak of physics as at a crossroads, led astray or even in crisis. \n\n4. As many authors suggest, fundamental physicists appear increasingly short of ideas, with the latest experiments at best verifying older theories.\n\n5. The truth of the matter is that fundamental physics research has, according to its high standards, entered a period of stagnation.",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "Sentence 2 is the odd sentence.\nThe sequence 5341 forms a coherent paragraph.\nSentence 5 introduces the main idea—that fundamental physics has entered a period of stagnation.\nSentence 3 follows by presenting the viewpoint of physicists who acknowledge this stagnation and describe the field as being in crisis.\nSentence 4 supports this by pointing to a lack of innovation, with new experiments merely confirming established theories.\nSentence 1 then narrows the discussion to a specific subfield, cosmology, as an example of where this stagnation is evident. “These areas” in sentence 1 directly connects to the idea in sentence 4 that “latest experiments at best verifying older theories”.\nSentence 2 makes a claim about the limits of criticism—that no one suggests the solution lies outside physics; this doesn't follow naturally from the rest or connect with the other sentences directly.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA solution is made up of alcohol and water in an unknown ratio. If one-fourth of this solution is taken out and replaced with water, the ratio is reversed. What is the volume of water(in liters) in the final solution if the volume of the solution is 35 liters?\n\n**Options:**\n- **A**. 25\n- **B**. 15\n- **C**. 20 ✅\n- **D**. None of the above\n\n**Correct Answer:** null\n\n**Solution:**\nConsider total volume of solution = L and the ratio of alcohol and water is a:b\nVolume of alcohol = aL/(a+b)    Volume of water = bL/(a+b) \nAfter taking out L/4 solution, the ratio will remain same.\nVolume of alcohol = 3aL/4(a+b)    Volume of water = 3bL/4(a+b) \nAfter adding L/4 water, Volume of alcohol = 3aL/4(a+b)    Volume of water = 3bL/4(a+b) + L/4\nNew ratio of volume of alcohol to water = $\\frac{\\frac{3aL}{4(a+b)}}{\\frac{3bL}{4(a+b)}+\\frac{L}{4}}$ = $\\frac{b}{a}$\n$\\frac{3a}{3b+a+b} = \\frac{b}{a}$\n$\\frac{3a}{4b+a} = \\frac{b}{a}$\n$3a^{2} = 4b^{2}+ab$   $3a^{2} -ab-4b^{2}= 0$     $3a^{2} +3ab-4ab-4b^{2}= 0$\n$(a+b)(3a-4b)=0$   $\\frac{a}{b}$ = 4/3    (If (a+b)=0, one value is negative, ignore negative value)\nSince in final solution ratio becomes 3:4, volume of water = 35*(4/7) = 20 liters\nC is the answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFive jumbled up sentences (labelled 1, 2, 3, 4 and 5), related to a topic, are given below. Four of them can be put together to form a coherent paragraph. Identify the odd sentence and key in the number of that sentence as your answer.\n\n1. The field of cosmology is one of these areas.\n\n2. But none would go so far as to suggest that the answer may not lie in physics at all. \n\n3. Those few physicists able to step away from the exacting demands of their practice will speak of physics as at a crossroads, led astray or even in crisis. \n\n4. As many authors suggest, fundamental physicists appear increasingly short of ideas, with the latest experiments at best verifying older theories.\n\n5. The truth of the matter is that fundamental physics research has, according to its high standards, entered a period of stagnation.\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nSentence 2 is the odd sentence.\nThe sequence 5341 forms a coherent paragraph.\nSentence 5 introduces the main idea—that fundamental physics has entered a period of stagnation.\nSentence 3 follows by presenting the viewpoint of physicists who acknowledge this stagnation and describe the field as being in crisis.\nSentence 4 supports this by pointing to a lack of innovation, with new experiments merely confirming established theories.\nSentence 1 then narrows the discussion to a specific subfield, cosmology, as an example of where this stagnation is evident. “These areas” in sentence 1 directly connects to the idea in sentence 4 that “latest experiments at best verifying older theories”.\nSentence 2 makes a claim about the limits of criticism—that no one suggests the solution lies outside physics; this doesn't follow naturally from the rest or connect with the other sentences directly.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-2",
       "passage_text": "",
-      "question_text": "The sum of lengths of the parallel sides of a trapezium is 30 cm. The lengths of parallel sides are in the ratio 3:7. One of the non-parallel sides is perpendicular to the other two sides. If the area of the trapezium is 135 $cm^2$, find perimeter of the trapezium.",
+      "question_text": "A solid metal cube with side length 18 cm is melted and poured into two bowls, Bowl A and Bowl B, in the ratio 5:4 respectively. Bowl A is used to make cylindrical rods of radius 3 cm and height 8 cm, and Bowl B is used to make spherical balls of radius 3 cm. Due to surface finishing, each rod uses 10% more material than its geometric volume, and each ball uses 5% more. If all the metal is used, what is the maximum total number of rods and balls that can be made?\n\nAssume that $\\pi=\\frac{22}{7}$",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "45 cm",
+          "option_text": "31",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "27 cm",
+          "option_text": "32",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "36 cm",
+          "option_text": "33",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "54 cm",
+          "option_text": "34",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us look at a diagram of the situation. \nLet the lengths of the parallel sides be $3x$ and $7x$. \nSince we know that the sum of lengths of the parallel sides is 30 cm, \n$3x+7x = 30 \\Rightarrow x = \\dfrac{30}{10} \\Rightarrow x =3$\nThus the lengths of the sides are 9 cm and 21 cm respectively.\nLet the given figure be the figure of the trapezium : \nHere, AB=9 cm and CD=21 cm.\nLet us draw a perpendicular from C on BD meeting BD at point E. \nHere, ABCE is a square with side 9 cm. Therefore, $\\triangle BED$ is a right angled triangle. \nLet the length of ED be $y$ cm. \nThen area of $\\triangle BED, A' = \\dfrac{1}{2} \\times BE \\times ED $\n$ \\Rightarrow A' = \\dfrac{1}{2} \\times 9 \\times y $\nSince the area of the trapezium is given, \nArea of trapezium = Area of square + Area of triangle \n$\\Rightarrow 135 = (9 \\times 9)+(\\dfrac{9y}{2}) $\n$\\Rightarrow 15 = 9+ \\dfrac{y}{2} \\Rightarrow y = 2 \\times 6 = 12 $\nApplying pythagoras theorem on $\\triangle BED$, $12^2+9^2 = BD^2 $\n$ \\Rightarrow BD^2 = 225 \\Rightarrow BD = 15 $cm \nThus, perimeter of the trapezium = 9+21+9+15 = 54 cm",
+      "solution_text": "The volume of the cube:\n$Side^3=18^3=5832\\ cm^3$\nThe total volume is divided into Bowl A and Bowl B in the ratio 5:4. Thus, the volume allocated to\nBowl A: $\\dfrac{5}{9}\\times5832\\ cm^3\\ =\\ 3240\\ cm^3$\nBowl B: $\\dfrac{4}{9}\\times5832\\ cm^3\\ =\\ 2592\\ cm^3$\nBowl A is used to make cylindrical rod with radius 3 cm and height 8 cm. So, the volume of each rod:\n$\\pi r^2h=\\frac{22}{7}\\times3^2\\times8=226.285\\ cm^3$\nSince we need an additional 10% of the material equal to the rod's volume for furnishing and polishing, the total volume required to make a rod = $226.285\\ \\times\\ 1.1=248.9135\\ cm^3$\nLet the maximum number of rods that can be made be x\nHence, $248.9135x\\le3240$ \n$x\\le13.016$\nHence, there can be a maximum of 13 formed. \nSimilarly, Bowl B is used to make spherical Balls:\nThe volume of each spherical ball with radius 3 cm is:$\\frac{4}{3}\\pi\\ r^3=\\frac{4}{3}\\times\\frac{22}{7}\\times\\ 3\\ ^3$\nSince we need an additional 5% of the material equal to the ball's volume for furnishing and polishing, the total volume required to make a ball = $\\frac{4}{3}\\times\\frac{22}{7}\\times\\ 3\\ ^3\\times1.05=118.8\\ cm^3$\nLet the maximum number of balls that can be made be y. \nHence, $118.8y\\le2592$\n$y\\le21.8$\nHence, the maximum number of balls and rods that can be formed = 13 + 21 = 34",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of lengths of the parallel sides of a trapezium is 30 cm. The lengths of parallel sides are in the ratio 3:7. One of the non-parallel sides is perpendicular to the other two sides. If the area of the trapezium is 135 $cm^2$, find perimeter of the trapezium.\n\n**Options:**\n- **A**. 45 cm\n- **B**. 27 cm\n- **C**. 36 cm\n- **D**. 54 cm ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us look at a diagram of the situation. \nLet the lengths of the parallel sides be $3x$ and $7x$. \nSince we know that the sum of lengths of the parallel sides is 30 cm, \n$3x+7x = 30 \\Rightarrow x = \\dfrac{30}{10} \\Rightarrow x =3$\nThus the lengths of the sides are 9 cm and 21 cm respectively.\nLet the given figure be the figure of the trapezium : \nHere, AB=9 cm and CD=21 cm.\nLet us draw a perpendicular from C on BD meeting BD at point E. \nHere, ABCE is a square with side 9 cm. Therefore, $\\triangle BED$ is a right angled triangle. \nLet the length of ED be $y$ cm. \nThen area of $\\triangle BED, A' = \\dfrac{1}{2} \\times BE \\times ED $\n$ \\Rightarrow A' = \\dfrac{1}{2} \\times 9 \\times y $\nSince the area of the trapezium is given, \nArea of trapezium = Area of square + Area of triangle \n$\\Rightarrow 135 = (9 \\times 9)+(\\dfrac{9y}{2}) $\n$\\Rightarrow 15 = 9+ \\dfrac{y}{2} \\Rightarrow y = 2 \\times 6 = 12 $\nApplying pythagoras theorem on $\\triangle BED$, $12^2+9^2 = BD^2 $\n$ \\Rightarrow BD^2 = 225 \\Rightarrow BD = 15 $cm \nThus, perimeter of the trapezium = 9+21+9+15 = 54 cm"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA solid metal cube with side length 18 cm is melted and poured into two bowls, Bowl A and Bowl B, in the ratio 5:4 respectively. Bowl A is used to make cylindrical rods of radius 3 cm and height 8 cm, and Bowl B is used to make spherical balls of radius 3 cm. Due to surface finishing, each rod uses 10% more material than its geometric volume, and each ball uses 5% more. If all the metal is used, what is the maximum total number of rods and balls that can be made?\n\nAssume that $\\pi=\\frac{22}{7}$\n\n**Options:**\n- **A**. 31\n- **B**. 32\n- **C**. 33\n- **D**. 34 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe volume of the cube:\n$Side^3=18^3=5832\\ cm^3$\nThe total volume is divided into Bowl A and Bowl B in the ratio 5:4. Thus, the volume allocated to\nBowl A: $\\dfrac{5}{9}\\times5832\\ cm^3\\ =\\ 3240\\ cm^3$\nBowl B: $\\dfrac{4}{9}\\times5832\\ cm^3\\ =\\ 2592\\ cm^3$\nBowl A is used to make cylindrical rod with radius 3 cm and height 8 cm. So, the volume of each rod:\n$\\pi r^2h=\\frac{22}{7}\\times3^2\\times8=226.285\\ cm^3$\nSince we need an additional 10% of the material equal to the rod's volume for furnishing and polishing, the total volume required to make a rod = $226.285\\ \\times\\ 1.1=248.9135\\ cm^3$\nLet the maximum number of rods that can be made be x\nHence, $248.9135x\\le3240$ \n$x\\le13.016$\nHence, there can be a maximum of 13 formed. \nSimilarly, Bowl B is used to make spherical Balls:\nThe volume of each spherical ball with radius 3 cm is:$\\frac{4}{3}\\pi\\ r^3=\\frac{4}{3}\\times\\frac{22}{7}\\times\\ 3\\ ^3$\nSince we need an additional 5% of the material equal to the ball's volume for furnishing and polishing, the total volume required to make a ball = $\\frac{4}{3}\\times\\frac{22}{7}\\times\\ 3\\ ^3\\times1.05=118.8\\ cm^3$\nLet the maximum number of balls that can be made be y. \nHence, $118.8y\\le2592$\n$y\\le21.8$\nHence, the maximum number of balls and rods that can be formed = 13 + 21 = 34",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-3",
       "passage_text": "",
-      "question_text": "Two racers are running to and fro from points A and B at 3m/s and 7m/s respectively. If the distance between A and B is 2000m, what is the total distance covered by both the racers, till they meet for the 2nd time?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "6000m",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "5000m",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "4420m",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "5500m",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Two racers are running from point A and B respectively at 3m/s and 7m/s.\nThe racers will meet for the first time at $2000\\times\\ \\frac{3}{10}=600m$ from A.\nNow they will move in the direction opposite to each other till the racer from B reach A, after that, both racers will move in the same direction.\nWhen the faster racer reaches A, then the slower racer will cover x km till then\nThus, \n$\\frac{x}{3}=\\frac{2000}{7}$    (Equating time taken)\nx= $\\frac{6000}{7}$\nThe relative speed at that point of time = 7-3=4m/s\nAfter reaching A, the time taken by the faster racer to catch the slower racer = $\\frac{6000}{7\\times4}$\nDistance travelled by the faster racer from A till he meets the slower racer for the second time =7 * $\\frac{1500}{7}$=1500m\nThis distance will also be equal to the total distance travelled by the slower racer(from the figure) = 1500m\nThe distance travelled by the faster racer = Distance from B to A + 1500 = 2000+1500 m\nTotal distance travelled= 1500+(2000+1500)=5000m",
+      "question_text": "In 2020, the ratio of the area of water bodies to the forest area to the land area is 1:2:2. Every year, 12.5% of the forest area becomes land, and after that, m% of the water body area becomes forest. Find the value of m, if the ratio of the water body area in 2021 to the land area in 2022 is 3:10.",
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Let us assume the proportionality constant for the first ratio to be 8t. So, in 2020, the water body area will be 8t, the forest area will be 16t, and the land area will be 16t.\nFor convenience, let us assume $\\frac{m}{100}=x$\nLand area in 2021 = $\\frac{1}{8}\\cdot16t+16t\\ \\ = 18t$\nForest area in 2021 = $x\\cdot 8t+14t\\ = 14t+8xt$\nWater area in 2021 = $1-\\frac{m}{100}\\cdot 8t\\ =(1-x)8t$\nWater area in 2022 = $1-\\frac{m}{100}\\cdot (1-x)8t\\ =(1-x)(1-x)8t$\nLand area in 2022 = 18t+$\\frac{\\left(14t+8xt\\right)}{8}$\nWe are told that the ratio of water area in 2021 to land area in 2022 = 3:10\n$\\frac{\\left(1-x\\right)8t}{18t+\\frac{\\left(14t+8xt\\right)}{8}}=\\frac{3}{10}$\nT is common in every term in both numerator and denominator. So, we can cancel out t.\n$\\frac{\\left(1-x\\right)8}{18+\\frac{\\left(14+8x\\right)}{8}}=\\frac{3}{10}$\n$\\frac{\\left(1-x\\right)64}{144+\\left(14+8x\\right)}=\\frac{3}{10}$\n$\\frac{\\left(1-x\\right)64}{158+8x}=\\frac{3}{10}$\n$\\left(1-x\\right)640=474+24x$\n$640=474+24x+640x$\n$\\Rightarrow$ 664x = 166\nx = 0.25\nSo, m = 25%",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo racers are running to and fro from points A and B at 3m/s and 7m/s respectively. If the distance between A and B is 2000m, what is the total distance covered by both the racers, till they meet for the 2nd time?\n\n**Options:**\n- **A**. 6000m\n- **B**. 5000m ✅\n- **C**. 4420m\n- **D**. 5500m\n\n**Correct Answer:** null\n\n**Solution:**\nTwo racers are running from point A and B respectively at 3m/s and 7m/s.\nThe racers will meet for the first time at $2000\\times\\ \\frac{3}{10}=600m$ from A.\nNow they will move in the direction opposite to each other till the racer from B reach A, after that, both racers will move in the same direction.\nWhen the faster racer reaches A, then the slower racer will cover x km till then\nThus, \n$\\frac{x}{3}=\\frac{2000}{7}$    (Equating time taken)\nx= $\\frac{6000}{7}$\nThe relative speed at that point of time = 7-3=4m/s\nAfter reaching A, the time taken by the faster racer to catch the slower racer = $\\frac{6000}{7\\times4}$\nDistance travelled by the faster racer from A till he meets the slower racer for the second time =7 * $\\frac{1500}{7}$=1500m\nThis distance will also be equal to the total distance travelled by the slower racer(from the figure) = 1500m\nThe distance travelled by the faster racer = Distance from B to A + 1500 = 2000+1500 m\nTotal distance travelled= 1500+(2000+1500)=5000m"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn 2020, the ratio of the area of water bodies to the forest area to the land area is 1:2:2. Every year, 12.5% of the forest area becomes land, and after that, m% of the water body area becomes forest. Find the value of m, if the ratio of the water body area in 2021 to the land area in 2022 is 3:10.\n\n**Options:**\n\n**Correct Answer:** 25\n\n**Solution:**\nLet us assume the proportionality constant for the first ratio to be 8t. So, in 2020, the water body area will be 8t, the forest area will be 16t, and the land area will be 16t.\nFor convenience, let us assume $\\frac{m}{100}=x$\nLand area in 2021 = $\\frac{1}{8}\\cdot16t+16t\\ \\ = 18t$\nForest area in 2021 = $x\\cdot 8t+14t\\ = 14t+8xt$\nWater area in 2021 = $1-\\frac{m}{100}\\cdot 8t\\ =(1-x)8t$\nWater area in 2022 = $1-\\frac{m}{100}\\cdot (1-x)8t\\ =(1-x)(1-x)8t$\nLand area in 2022 = 18t+$\\frac{\\left(14t+8xt\\right)}{8}$\nWe are told that the ratio of water area in 2021 to land area in 2022 = 3:10\n$\\frac{\\left(1-x\\right)8t}{18t+\\frac{\\left(14t+8xt\\right)}{8}}=\\frac{3}{10}$\nT is common in every term in both numerator and denominator. So, we can cancel out t.\n$\\frac{\\left(1-x\\right)8}{18+\\frac{\\left(14+8x\\right)}{8}}=\\frac{3}{10}$\n$\\frac{\\left(1-x\\right)64}{144+\\left(14+8x\\right)}=\\frac{3}{10}$\n$\\frac{\\left(1-x\\right)64}{158+8x}=\\frac{3}{10}$\n$\\left(1-x\\right)640=474+24x$\n$640=474+24x+640x$\n$\\Rightarrow$ 664x = 166\nx = 0.25\nSo, m = 25%",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-4",
       "passage_text": "",
-      "question_text": "There are two alcohol solutions A and B such that A is a 43% alcohol solution and B has 53 parts alcohol for every 47 parts water. If we mix the two solutions to get another alcohol solution, that has at least 50% alcohol, which of the following can be the ratios in which the A and B can be mixed?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "7:3",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "3:4",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "1:3",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "More than one",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "By the concept of alligations, we can say that to get a 50% solution, we need A and B in the ratio of \n(53-50):(50-43) = 3:7\nNow if we increase the proportion of A, then it will bring the final concentration to less than 50%, but if we increase B, we get a value more than the required fifty percentage alcohol solution; hence, we can have a ratio less than 3:7 but not more than it. Hence, option c is right.\nAlternate Explanation: \nThe ratio of alcohol percentage and water percentage in A and B are $43:53$ and $57:47$, respectively.\nNow let the solutions be mixed in the ratio $X:Y$.\nSince alcohol content should be more than 50%, the alcohol content will be more than the water content.\nOr $43X\\ +53Y\\ \\ge 57X\\ +\\ 47Y$\nOr $\\frac{X}{Y} \\le \\frac{3}{7}$\nOr $\\frac{X}{Y} \\le 0.428$\nOnly option C has a ratio of X and Y less than or equal to 0.42.\nThus, the correct option is C.",
+      "question_text": "A boat travels at 10 km/hr in still water. The river's current flows at 2 km/hr. The boat covers a distance of 48 km from point A to point B and then returns the same 48 km from B to A. On the following day, if the boat's speed increases by X%, its total travel time for the round trip decreases by 30%. Find the value of X, assuming the river's speed remains constant on both days.",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "Speed of boat = 10 km/hr\nSpeed of river = 2 km/hr\nDistance from A to B = 48 km (Downstream)\nSpeed of (boat + river) in downstream from A to B = 10+2 = 12 km/hr\nTotal time taken by boat from A to B = 48/12 = 4 hours.\nNow, the boat moves from B to A upstream.\nDistance travelled = 48 km\nSpeed of boat and river combined in upstream from B to A = 10-2 = 8 km/hr\nTotal time taken by boat from B to A = 48/8 = 6 hours.\nTotal Journey time from A to B and B to A on day 1 = 4+6 = 10 hours.\nThe next day, the speed of the boat is increased by X%.\nLet us assume the boat's speed is now B km/hr.\nSpeed of river is same on both days, so it is 2 km/hr.\nNow, it is given that the to and fro journey from A to B and B to A on day 2 will take 30% less time.\nHence, on day it will take 7 hours. (10*0.7 = 7)\nDistance = 48 km\nSpeed of (boat + river) in downstream from A to B = (B + 2) km/hr\nTotal time taken by boat from A to B = $\\dfrac{48}{\\left(B+2\\right)}$ hours\nSimilarly, speed of (boat+river) in upstream from B to A = (B - 2) km/hr\nDistance = 48 km\nTotal time taken = $\\dfrac{48}{\\left(B-2\\right)}$ hours\nWe know, $\\dfrac{48}{B+2}+\\dfrac{48}{\\left(B-2\\right)}=7$\n$48\\left(2B\\right)=7\\left(B^2-4\\right)$\n=> $7B^2-96B-28=0$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{96^2+\\left(4\\times7\\times28\\right)}}{2\\times7}$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{9216+784}}{2\\times7}$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{10000}}{2\\times7}$\n$B\\ =\\dfrac{196}{14}$ or $B\\ =\\dfrac{-4}{14}$ (Negative value not possible)\nB = 14 km/hr\nThus, % the increase in the boat's speed was 40% (10 to 14 is a 40% increase)",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are two alcohol solutions A and B such that A is a 43% alcohol solution and B has 53 parts alcohol for every 47 parts water. If we mix the two solutions to get another alcohol solution, that has at least 50% alcohol, which of the following can be the ratios in which the A and B can be mixed?\n\n**Options:**\n- **A**. 7:3\n- **B**. 3:4\n- **C**. 1:3 ✅\n- **D**. More than one\n\n**Correct Answer:** null\n\n**Solution:**\nBy the concept of alligations, we can say that to get a 50% solution, we need A and B in the ratio of \n(53-50):(50-43) = 3:7\nNow if we increase the proportion of A, then it will bring the final concentration to less than 50%, but if we increase B, we get a value more than the required fifty percentage alcohol solution; hence, we can have a ratio less than 3:7 but not more than it. Hence, option c is right.\nAlternate Explanation: \nThe ratio of alcohol percentage and water percentage in A and B are $43:53$ and $57:47$, respectively.\nNow let the solutions be mixed in the ratio $X:Y$.\nSince alcohol content should be more than 50%, the alcohol content will be more than the water content.\nOr $43X\\ +53Y\\ \\ge 57X\\ +\\ 47Y$\nOr $\\frac{X}{Y} \\le \\frac{3}{7}$\nOr $\\frac{X}{Y} \\le 0.428$\nOnly option C has a ratio of X and Y less than or equal to 0.42.\nThus, the correct option is C."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA boat travels at 10 km/hr in still water. The river's current flows at 2 km/hr. The boat covers a distance of 48 km from point A to point B and then returns the same 48 km from B to A. On the following day, if the boat's speed increases by X%, its total travel time for the round trip decreases by 30%. Find the value of X, assuming the river's speed remains constant on both days.\n\n**Options:**\n\n**Correct Answer:** 40\n\n**Solution:**\nSpeed of boat = 10 km/hr\nSpeed of river = 2 km/hr\nDistance from A to B = 48 km (Downstream)\nSpeed of (boat + river) in downstream from A to B = 10+2 = 12 km/hr\nTotal time taken by boat from A to B = 48/12 = 4 hours.\nNow, the boat moves from B to A upstream.\nDistance travelled = 48 km\nSpeed of boat and river combined in upstream from B to A = 10-2 = 8 km/hr\nTotal time taken by boat from B to A = 48/8 = 6 hours.\nTotal Journey time from A to B and B to A on day 1 = 4+6 = 10 hours.\nThe next day, the speed of the boat is increased by X%.\nLet us assume the boat's speed is now B km/hr.\nSpeed of river is same on both days, so it is 2 km/hr.\nNow, it is given that the to and fro journey from A to B and B to A on day 2 will take 30% less time.\nHence, on day it will take 7 hours. (10*0.7 = 7)\nDistance = 48 km\nSpeed of (boat + river) in downstream from A to B = (B + 2) km/hr\nTotal time taken by boat from A to B = $\\dfrac{48}{\\left(B+2\\right)}$ hours\nSimilarly, speed of (boat+river) in upstream from B to A = (B - 2) km/hr\nDistance = 48 km\nTotal time taken = $\\dfrac{48}{\\left(B-2\\right)}$ hours\nWe know, $\\dfrac{48}{B+2}+\\dfrac{48}{\\left(B-2\\right)}=7$\n$48\\left(2B\\right)=7\\left(B^2-4\\right)$\n=> $7B^2-96B-28=0$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{96^2+\\left(4\\times7\\times28\\right)}}{2\\times7}$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{9216+784}}{2\\times7}$\n$B\\ =\\dfrac{96\\pm\\ \\sqrt{10000}}{2\\times7}$\n$B\\ =\\dfrac{196}{14}$ or $B\\ =\\dfrac{-4}{14}$ (Negative value not possible)\nB = 14 km/hr\nThus, % the increase in the boat's speed was 40% (10 to 14 is a 40% increase)",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-5",
       "passage_text": "",
-      "question_text": "From a wholesaler, the shopkeeper bought 4 items P, Q, R and S at price of p, q, r and s respectively. He sells the four items at profit of 15%, 25%, 35% and 45% respectively. The net profit on the sale of these four items is 40%. Which of the following options cannot be the value of the ratio p : q : r : s?",
+      "question_text": "We are given an isosceles right-angled triangle EBC with the right angle at C and |BC| = 2. Calculate the area of the trapezoid ABCD (AB || CD) in which E is the midpoint of AD.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1 : 2 : 3 : 14",
+          "option_text": "$\\ 4\\sqrt{\\ 5}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "2 : 1 : 4 : 17",
-          "is_correct": false
+          "option_text": "$4$",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "1 : 3 : 2 : 16",
+          "option_text": "$\\dfrac{4}{\\sqrt{\\ 5}}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2 : 2 : 1 : 18",
-          "is_correct": true
+          "option_text": "$\\ 2\\sqrt{\\ 5}$",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Cost price of the items P, Q, R and S are p, q, r and s respectively\nSelling price of the items will be 1.15p, 1.25q, 1.35r, 1.45s. \nProfits on individual items will be 0.15p, 0.25q, 0.35r, 0.45s\nFurther since the net profit is 40% we have, \n$\\frac{0.15p + 0.25q + 0.35r + 0.45s}{p + q + r + s} = 0.4$\n0.15p + 0.25q + 0.35r + 0.45s = 0.4p + 0.4q + 0.4r + 0.4s\n0.05s = 0.05r + 0.15q + 0.25p\ns = r + 3q + 5p\nAll options except D satisfy the equation. \nHence, option D is the right choice.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFrom a wholesaler, the shopkeeper bought 4 items P, Q, R and S at price of p, q, r and s respectively. He sells the four items at profit of 15%, 25%, 35% and 45% respectively. The net profit on the sale of these four items is 40%. Which of the following options cannot be the value of the ratio p : q : r : s?\n\n**Options:**\n- **A**. 1 : 2 : 3 : 14\n- **B**. 2 : 1 : 4 : 17\n- **C**. 1 : 3 : 2 : 16\n- **D**. 2 : 2 : 1 : 18 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nCost price of the items P, Q, R and S are p, q, r and s respectively\nSelling price of the items will be 1.15p, 1.25q, 1.35r, 1.45s. \nProfits on individual items will be 0.15p, 0.25q, 0.35r, 0.45s\nFurther since the net profit is 40% we have, \n$\\frac{0.15p + 0.25q + 0.35r + 0.45s}{p + q + r + s} = 0.4$\n0.15p + 0.25q + 0.35r + 0.45s = 0.4p + 0.4q + 0.4r + 0.4s\n0.05s = 0.05r + 0.15q + 0.25p\ns = r + 3q + 5p\nAll options except D satisfy the equation. \nHence, option D is the right choice."
+      "solution_text": "Let F be the midpoint of the side BC, and let us consider the right-angled triangle EFC.\nWe are given that the length of BC is 2cm, which makes EC also 2cm, as it is an isosceles triangle. As F is the midpoint of BC, the lengths of CF and FB are 1 cm each.\nThe length of EF can be calculated using the Pythagoras Theorem,\n$EF^2\\ =\\ EC^2\\ +\\ CF^2$\n$EF^2\\ =\\ 4\\ +\\ 1\\ =\\ 5$\n$EF=\\sqrt{\\ 5}$\nThe value of h can be calculated as,\nArea of CEF = $\\dfrac{1}{2}\\times\\ CF\\ \\times\\ EC\\ =\\ \\dfrac{1}{2}\\ \\times\\ EF\\ \\times\\ h$\n$1\\ \\times\\ 2=\\ \\sqrt{\\ 5}\\ \\times\\ h$\n$h\\ =\\ \\dfrac{2}{\\sqrt{\\ 5}}$\nThe area of the trapezium can be calculated as \n$\\dfrac{1}{2}\\ \\times\\ 2h\\ \\times\\ \\left(DC\\ +\\ AB\\right)\\ =\\ h\\ \\times\\ \\left(2\\ \\times\\ EF\\right)\\ =\\ 2\\times\\ h\\ \\times\\ EF$\nArea = $2\\ \\times\\ \\dfrac{2}{\\sqrt{\\ 5}}\\ \\times\\ \\sqrt{\\ 5}\\ =\\ 4$\nHence, the correct answer is option B.",
+      "image_url": "https://cracku.in/media/uploads/IMG_0775_EXU9g7z.jpg",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWe are given an isosceles right-angled triangle EBC with the right angle at C and |BC| = 2. Calculate the area of the trapezoid ABCD (AB || CD) in which E is the midpoint of AD.\n\n**Options:**\n- **A**. $\\ 4\\sqrt{\\ 5}$\n- **B**. $4$ ✅\n- **C**. $\\dfrac{4}{\\sqrt{\\ 5}}$\n- **D**. $\\ 2\\sqrt{\\ 5}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet F be the midpoint of the side BC, and let us consider the right-angled triangle EFC.\nWe are given that the length of BC is 2cm, which makes EC also 2cm, as it is an isosceles triangle. As F is the midpoint of BC, the lengths of CF and FB are 1 cm each.\nThe length of EF can be calculated using the Pythagoras Theorem,\n$EF^2\\ =\\ EC^2\\ +\\ CF^2$\n$EF^2\\ =\\ 4\\ +\\ 1\\ =\\ 5$\n$EF=\\sqrt{\\ 5}$\nThe value of h can be calculated as,\nArea of CEF = $\\dfrac{1}{2}\\times\\ CF\\ \\times\\ EC\\ =\\ \\dfrac{1}{2}\\ \\times\\ EF\\ \\times\\ h$\n$1\\ \\times\\ 2=\\ \\sqrt{\\ 5}\\ \\times\\ h$\n$h\\ =\\ \\dfrac{2}{\\sqrt{\\ 5}}$\nThe area of the trapezium can be calculated as \n$\\dfrac{1}{2}\\ \\times\\ 2h\\ \\times\\ \\left(DC\\ +\\ AB\\right)\\ =\\ h\\ \\times\\ \\left(2\\ \\times\\ EF\\right)\\ =\\ 2\\times\\ h\\ \\times\\ EF$\nArea = $2\\ \\times\\ \\dfrac{2}{\\sqrt{\\ 5}}\\ \\times\\ \\sqrt{\\ 5}\\ =\\ 4$\nHence, the correct answer is option B.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-6",
       "passage_text": "",
-      "question_text": "In a test, there are 100 questions. Each question that is correctly answered fetches +3 and a question that is wrongly answered fetches -2. Every question needs to be attempted. If the passing score is 40% of the maximum possible score in the test, how many questions need to be correct to get a score that is double the passing score?",
+      "question_text": "The three altitudes of a triangle are 60, 48 and 80. Find the area of the triangle.",
       "options": [],
-      "correct_option_data": "88",
-      "solution_text": "Total possible score is 100 x 3 = 300\nNew passing score = 2 x 40% of 300 = 240\nNow we can assign +3 to all questions and then subtract (+3 + 2) for each incorrect question.\nHence, if the number of incorrect questions is x,\n300 - 5x = 240\n5x = 60\nx = 12\nHence, the number of correct questions = 100 - 12 = 88.",
+      "correct_option_data": "2400",
+      "solution_text": "In a triangle, the ratio of the altitudes is inverse to the ratio of the corresponding sides. Let the sides be a, b and c. \nHence, if the altitudes are 60, 48 and 80, a : b : c = $\\dfrac{1}{60}:\\dfrac{1}{48}:\\dfrac{1}{80}$\nUpon solving, we get, a : b : c = 4 : 5 : 3.\nNow, let the side a = 4x so the side b and c will be 5x and 3x. \nUsing Heron's formula: $\\sqrt{s\\left(s-a\\right)\\left(s-b\\right)\\left(s-c\\right)}$\n$s=\\dfrac{\\left(4x+5x+3x\\right)}{2}=6x$\nPutting the values in the heron's formula, we get: $\\sqrt{6x\\times2x\\times x\\times3x}=6x^2$\nHence, the area of the triangle = $6x^2$\nWe also know that Area of the triangle = $\\dfrac{1}{2}\\times Base\\times Height$\nPutting the values, we get, $6x^2=\\dfrac{1}{2}\\times4x\\times60$\nUpon solving, we get, x = 20.\nHence, putting the values in $6x^2$, we get the area of the triangle to be 2400 $cm^2$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a test, there are 100 questions. Each question that is correctly answered fetches +3 and a question that is wrongly answered fetches -2. Every question needs to be attempted. If the passing score is 40% of the maximum possible score in the test, how many questions need to be correct to get a score that is double the passing score?\n\n**Options:**\n\n**Correct Answer:** 88\n\n**Solution:**\nTotal possible score is 100 x 3 = 300\nNew passing score = 2 x 40% of 300 = 240\nNow we can assign +3 to all questions and then subtract (+3 + 2) for each incorrect question.\nHence, if the number of incorrect questions is x,\n300 - 5x = 240\n5x = 60\nx = 12\nHence, the number of correct questions = 100 - 12 = 88."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe three altitudes of a triangle are 60, 48 and 80. Find the area of the triangle.\n\n**Options:**\n\n**Correct Answer:** 2400\n\n**Solution:**\nIn a triangle, the ratio of the altitudes is inverse to the ratio of the corresponding sides. Let the sides be a, b and c. \nHence, if the altitudes are 60, 48 and 80, a : b : c = $\\dfrac{1}{60}:\\dfrac{1}{48}:\\dfrac{1}{80}$\nUpon solving, we get, a : b : c = 4 : 5 : 3.\nNow, let the side a = 4x so the side b and c will be 5x and 3x. \nUsing Heron's formula: $\\sqrt{s\\left(s-a\\right)\\left(s-b\\right)\\left(s-c\\right)}$\n$s=\\dfrac{\\left(4x+5x+3x\\right)}{2}=6x$\nPutting the values in the heron's formula, we get: $\\sqrt{6x\\times2x\\times x\\times3x}=6x^2$\nHence, the area of the triangle = $6x^2$\nWe also know that Area of the triangle = $\\dfrac{1}{2}\\times Base\\times Height$\nPutting the values, we get, $6x^2=\\dfrac{1}{2}\\times4x\\times60$\nUpon solving, we get, x = 20.\nHence, putting the values in $6x^2$, we get the area of the triangle to be 2400 $cm^2$",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-7",
       "passage_text": "",
-      "question_text": "A system of four spheres of 11 cm radius is stacked to form a pyramid on a wooden floor, such that three sphere are touching the floor and every sphere touches all other spheres. Which of the following is closest to the distance from the topmost point to the base of this system?",
+      "question_text": "Two trains start 1800 km apart. Train A departs Shimla at 8:00 AM at 60 km/h. Train B departs Pune at 10:00 AM at 90 km/h. A bird begins flying from Pune at 8:00 AM at 120 km/h towards Shimla. When the bird meets Train A, it starts shuttling between the trains until they meet. Calculate the total distance (in km) flown by the bird.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "40",
+          "option_text": "1584",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "41",
+          "option_text": "1585",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "39",
+          "option_text": "1586",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "42",
+          "option_text": "1587",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We can form a pyramid by stacking one sphere on a base of three spheres. The centres of the spheres forming the bottom layer are 'r' cms above the wooden floor. On connecting the centres of the spheres, we obtain a tetrahedron as shown below: \nCalculating 'h'  from the above setup and adding it to twice the radius of the sphere will render us our desired answer. \nSince AP bisects the equilateral triangle forming the base, $\\angle\\ PAB\\ =\\ 30^{\\circ\\ }$\n$a\\cos\\ 30^{\\circ}=r\\ ;\\ \\therefore\\ a\\ =\\frac{2r}{\\sqrt{3}\\ }$\nWe can find h in terms of 'r' by using the Pythagoras theorem: $h^2+a^2=4r^2$\nOn solving we obtain, $h=2r\\sqrt{\\frac{2}{3}}$\nHence, the total height till the top of the sphere would be (h + r + r) = $2r\\left(1+\\sqrt{\\frac{2}{3}}\\right)$ $\\approx\\ 40\\ cms$\nThus, Option A is the correct choice.",
+      "solution_text": "As both the bird and Train A start at the same time, we can calculate the time it takes to meet using relative velocity.\nThe combined velocity will be 60 km/h + 120 km/h = 180 km/h\nSo, the time taken to meet will be $\\dfrac{1800}{180}=10$ hours\nIn this time, the bird would have flown $10\\times120=1200$ km\nTrain A would have covered 1800-1200 = 600 km\nTrain B started 2 hours after Train A, so it would have travelled for 8 hours\nTrain B would have covered $8\\times90=720$ km\nSo, the remaining distance between Train A and B will be 1800 - 600 - 720 = 480 km\nNow the time taken to cover this 480 km by the relative velocity of Train A and B will be\n$\\dfrac{480}{60+90}=\\dfrac{480}{150}=3.2$ hours\nIn this time the bird will fly $3.2\\times120=384$ km\nSo, the total distance covered by the bird is 1200 + 384 = 1584 km.\nHence, the answer is 1584.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA system of four spheres of 11 cm radius is stacked to form a pyramid on a wooden floor, such that three sphere are touching the floor and every sphere touches all other spheres. Which of the following is closest to the distance from the topmost point to the base of this system?\n\n**Options:**\n- **A**. 40 ✅\n- **B**. 41\n- **C**. 39\n- **D**. 42\n\n**Correct Answer:** null\n\n**Solution:**\nWe can form a pyramid by stacking one sphere on a base of three spheres. The centres of the spheres forming the bottom layer are 'r' cms above the wooden floor. On connecting the centres of the spheres, we obtain a tetrahedron as shown below: \nCalculating 'h'  from the above setup and adding it to twice the radius of the sphere will render us our desired answer. \nSince AP bisects the equilateral triangle forming the base, $\\angle\\ PAB\\ =\\ 30^{\\circ\\ }$\n$a\\cos\\ 30^{\\circ}=r\\ ;\\ \\therefore\\ a\\ =\\frac{2r}{\\sqrt{3}\\ }$\nWe can find h in terms of 'r' by using the Pythagoras theorem: $h^2+a^2=4r^2$\nOn solving we obtain, $h=2r\\sqrt{\\frac{2}{3}}$\nHence, the total height till the top of the sphere would be (h + r + r) = $2r\\left(1+\\sqrt{\\frac{2}{3}}\\right)$ $\\approx\\ 40\\ cms$\nThus, Option A is the correct choice."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo trains start 1800 km apart. Train A departs Shimla at 8:00 AM at 60 km/h. Train B departs Pune at 10:00 AM at 90 km/h. A bird begins flying from Pune at 8:00 AM at 120 km/h towards Shimla. When the bird meets Train A, it starts shuttling between the trains until they meet. Calculate the total distance (in km) flown by the bird.\n\n**Options:**\n- **A**. 1584 ✅\n- **B**. 1585\n- **C**. 1586\n- **D**. 1587\n\n**Correct Answer:** null\n\n**Solution:**\nAs both the bird and Train A start at the same time, we can calculate the time it takes to meet using relative velocity.\nThe combined velocity will be 60 km/h + 120 km/h = 180 km/h\nSo, the time taken to meet will be $\\dfrac{1800}{180}=10$ hours\nIn this time, the bird would have flown $10\\times120=1200$ km\nTrain A would have covered 1800-1200 = 600 km\nTrain B started 2 hours after Train A, so it would have travelled for 8 hours\nTrain B would have covered $8\\times90=720$ km\nSo, the remaining distance between Train A and B will be 1800 - 600 - 720 = 480 km\nNow the time taken to cover this 480 km by the relative velocity of Train A and B will be\n$\\dfrac{480}{60+90}=\\dfrac{480}{150}=3.2$ hours\nIn this time the bird will fly $3.2\\times120=384$ km\nSo, the total distance covered by the bird is 1200 + 384 = 1584 km.\nHence, the answer is 1584.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-8",
       "passage_text": "",
-      "question_text": "What is the minimum value that the function $f(x) = \\dfrac{x^2+3x-6}{x^2+3x+6} $ ?",
+      "question_text": "Anant buys a circular plot of land. He carved out a triangle using a chord that subtends 150 degrees at the centre and the circle's centre. The cost per unit square of flooring the triangular plot to the cost of flooring the rest of the land is 5:3. If the flooring costs Anant 13900 rupees, find the cost of flooring only the triangular plot. (Use $\\pi=\\frac{22}{7}$)",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\dfrac{22}{5}$",
+          "option_text": "Rs. 1550",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\dfrac{11}{5}$",
+          "option_text": "Rs. 1650",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\dfrac{-11}{5}$",
+          "option_text": "Rs. 1750",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\dfrac{-22}{5}$",
+          "option_text": "Rs. 1850",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We can simplify the given expression as follows : \n$f(x) =\\dfrac{x^2+3x-6}{x^2+3x+6} $\n$\\Rightarrow f(x) =\\dfrac{x^2+3x+6-12}{x^2+3x+6} $\n$\\Rightarrow f(x) =1 - \\dfrac{12}{x^2+3x+6} $ ------(1)\nWe can see that the value of function f(x) will be minimum when the value of expression $\\dfrac{12}{x^2+3x+6}$ is maximum. The value of expression $\\dfrac{12}{x^2+3x+6}$ will be maximum when the value of $x^2+3x+6$ is minimum. \nLet, U(x) = $x^2+3x+6$. We know that U(x) will be minimum at x = -b/2a and then minimum value will be equivalent to -D/4a. {Where D is the discriminant and 'a' is the coefficient of $x^2$}\nTherefore, U(x)$_{min}$ = $\\dfrac{-(3^2-4*1*6)}{4*1}$ = $\\dfrac{15}{4}$.\nHence, f(x)$_{min}$ = $1-\\dfrac{12}{\\frac{15}{4}}$ = $\\dfrac{-11}{5}$. Therefore, option C is the correct answer.",
+      "solution_text": "Let us draw the figure in question,\nWe are told that AOB is cut away and floored at a rate different from the rest. \nThe area of the triangle AOB will be, $\\dfrac{1}{2}r^2\\sin150$, considering the radius of this circle to be r. \nThe rest of the area will be, $\\pi r^2-\\dfrac{r^2}{4}$\nLet us take the flooring rate per unit square in AOB, which will be 5X, and for the rest of the circle, it will be 3X. \nThe ratio of the total costs will be, \n$\\dfrac{\\dfrac{r^2}{4}\\left(5X\\right)}{\\left(\\pi r^2-\\dfrac{r^2}{4}\\right)\\left(3X\\right)}=\\dfrac{\\dfrac{5}{4}}{\\left(\\dfrac{22}{7}-\\dfrac{1}{4}\\right)\\left(3\\right)}=\\dfrac{35}{243}$\nWe are given the total cost as 13900. We can find the individual cost of the triangle alone using the ratio. \n$\\dfrac{35}{278}\\left(13900\\right)=1750$\nHence, the answer is 1750.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the minimum value that the function $f(x) = \\dfrac{x^2+3x-6}{x^2+3x+6} $ ?\n\n**Options:**\n- **A**. $\\dfrac{22}{5}$\n- **B**. $\\dfrac{11}{5}$\n- **C**. $\\dfrac{-11}{5}$ ✅\n- **D**. $\\dfrac{-22}{5}$\n\n**Correct Answer:** null\n\n**Solution:**\nWe can simplify the given expression as follows : \n$f(x) =\\dfrac{x^2+3x-6}{x^2+3x+6} $\n$\\Rightarrow f(x) =\\dfrac{x^2+3x+6-12}{x^2+3x+6} $\n$\\Rightarrow f(x) =1 - \\dfrac{12}{x^2+3x+6} $ ------(1)\nWe can see that the value of function f(x) will be minimum when the value of expression $\\dfrac{12}{x^2+3x+6}$ is maximum. The value of expression $\\dfrac{12}{x^2+3x+6}$ will be maximum when the value of $x^2+3x+6$ is minimum. \nLet, U(x) = $x^2+3x+6$. We know that U(x) will be minimum at x = -b/2a and then minimum value will be equivalent to -D/4a. {Where D is the discriminant and 'a' is the coefficient of $x^2$}\nTherefore, U(x)$_{min}$ = $\\dfrac{-(3^2-4*1*6)}{4*1}$ = $\\dfrac{15}{4}$.\nHence, f(x)$_{min}$ = $1-\\dfrac{12}{\\frac{15}{4}}$ = $\\dfrac{-11}{5}$. Therefore, option C is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAnant buys a circular plot of land. He carved out a triangle using a chord that subtends 150 degrees at the centre and the circle's centre. The cost per unit square of flooring the triangular plot to the cost of flooring the rest of the land is 5:3. If the flooring costs Anant 13900 rupees, find the cost of flooring only the triangular plot. (Use $\\pi=\\frac{22}{7}$)\n\n**Options:**\n- **A**. Rs. 1550\n- **B**. Rs. 1650\n- **C**. Rs. 1750 ✅\n- **D**. Rs. 1850\n\n**Correct Answer:** null\n\n**Solution:**\nLet us draw the figure in question,\nWe are told that AOB is cut away and floored at a rate different from the rest. \nThe area of the triangle AOB will be, $\\dfrac{1}{2}r^2\\sin150$, considering the radius of this circle to be r. \nThe rest of the area will be, $\\pi r^2-\\dfrac{r^2}{4}$\nLet us take the flooring rate per unit square in AOB, which will be 5X, and for the rest of the circle, it will be 3X. \nThe ratio of the total costs will be, \n$\\dfrac{\\dfrac{r^2}{4}\\left(5X\\right)}{\\left(\\pi r^2-\\dfrac{r^2}{4}\\right)\\left(3X\\right)}=\\dfrac{\\dfrac{5}{4}}{\\left(\\dfrac{22}{7}-\\dfrac{1}{4}\\right)\\left(3\\right)}=\\dfrac{35}{243}$\nWe are given the total cost as 13900. We can find the individual cost of the triangle alone using the ratio. \n$\\dfrac{35}{278}\\left(13900\\right)=1750$\nHence, the answer is 1750.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-9",
       "passage_text": "",
-      "question_text": "CD is tangent to the circle and  $\\angle\\ BED$ = 60. Find the angle x,",
+      "question_text": "A cricket coach assigns numbers 1 to 11 to his players according to their batting numbers. During their warmup, they're made to stand in a line. What is the probability that the players with composite numbers assigned are arranged in increasing order from first to last?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "60",
-          "is_correct": false
+          "option_text": "$\\dfrac{1}{120}$",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "75",
+          "option_text": "$\\dfrac{7}{55}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "120",
-          "is_correct": true
+          "option_text": "$\\dfrac{2}{49}$",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "45",
+          "option_text": "$\\dfrac{1}{110}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Chord BE makes an angle 60 degree with the tangent. Thus  $\\angle\\ EAB$ = 60\nAEFB is a cyclic quadrilateral thus $\\angle\\ EAB$ + $\\angle\\ EFB$ =180\n$\\angle\\ EFB$ =180-60 = 120",
-      "image_url": "https://cracku.in/media/uploads/image_LAwKCPA.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCD is tangent to the circle and  $\\angle\\ BED$ = 60. Find the angle x,\n\n**Options:**\n- **A**. 60\n- **B**. 75\n- **C**. 120 ✅\n- **D**. 45\n\n**Correct Answer:** null\n\n**Solution:**\nChord BE makes an angle 60 degree with the tangent. Thus  $\\angle\\ EAB$ = 60\nAEFB is a cyclic quadrilateral thus $\\angle\\ EAB$ + $\\angle\\ EFB$ =180\n$\\angle\\ EFB$ =180-60 = 120"
+      "solution_text": "The composite numbers from 1 to 11 are 4,6,8,9,10. So, we need the number of ways these numbers come in numerical order. There is only one way of arranging these numbers in numerical order.\nWe can arrange the 11 players in 11 positions. We should select five places to arrange the players assigned composite numbers out of these.\nThat can be done in $^{11}C_5$ ways. We can arrange other players for the remaining six positions, which can be done in 6! ways. \nThe total number of ways this can be done = $^{11}C_5\\cdot6!\\ =\\dfrac{\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\right)}{5!}\\cdot6!\\ =\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\right)\\cdot6$\nThe number of ways to arrange all the players in 11 positions is 11!.\nRequired probability = $\\dfrac{\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\cdot6\\right)}{11!}=\\dfrac{1}{5\\cdot4\\cdot3\\cdot2\\cdot1}=\\dfrac{1}{120}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cricket coach assigns numbers 1 to 11 to his players according to their batting numbers. During their warmup, they're made to stand in a line. What is the probability that the players with composite numbers assigned are arranged in increasing order from first to last?\n\n**Options:**\n- **A**. $\\dfrac{1}{120}$ ✅\n- **B**. $\\dfrac{7}{55}$\n- **C**. $\\dfrac{2}{49}$\n- **D**. $\\dfrac{1}{110}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe composite numbers from 1 to 11 are 4,6,8,9,10. So, we need the number of ways these numbers come in numerical order. There is only one way of arranging these numbers in numerical order.\nWe can arrange the 11 players in 11 positions. We should select five places to arrange the players assigned composite numbers out of these.\nThat can be done in $^{11}C_5$ ways. We can arrange other players for the remaining six positions, which can be done in 6! ways. \nThe total number of ways this can be done = $^{11}C_5\\cdot6!\\ =\\dfrac{\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\right)}{5!}\\cdot6!\\ =\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\right)\\cdot6$\nThe number of ways to arrange all the players in 11 positions is 11!.\nRequired probability = $\\dfrac{\\left(11\\cdot10\\cdot9\\cdot8\\cdot7\\cdot6\\right)}{11!}=\\dfrac{1}{5\\cdot4\\cdot3\\cdot2\\cdot1}=\\dfrac{1}{120}$",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-10",
       "passage_text": "",
-      "question_text": "If a man saves Rs.916.66 every month , he can pay off a loan that is compounding annually in 1 year. However, if he wishes to pay off the loan in 2 years, he finds out that he should save Rs 504.16 every month.  Find the rate of interest charged for the loan.",
+      "question_text": "The marks obtained by Rajesh are 56 marks less than the passing marks, Neha obtained one-third more marks than the passing marks, and it is also given that the ratio of marks obtained by Rajesh and Neha is 37:60. If Aditi obtained 60% more marks than the passing marks, then find the marks obtained by Aditi.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "10%",
+          "option_text": "504",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "12%",
+          "option_text": "506",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "15%",
+          "option_text": "508",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "16%",
+          "option_text": "510",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "$P (1+\\frac{r}{100})^{1} = 916.66\\times12$\n$P (1+\\frac{r}{100}) = 11000 -----Eq(1)$\nSimilarly,\n$P (1+\\frac{r}{100})^{2} = 504.16\\times24$\n$P (1+\\frac{r}{100})^{2} = 12100---Eq(2)$\n$P (1+\\frac{r}{100}) (1+\\frac{r}{100})= 12100$\n$11000(1+\\frac{r}{100})=12100$\nr=10",
+      "solution_text": "It is given that the ratio of marks obtained by Rajesh and Neha is 37:60\nLet us assume the marks they obtained are 370M and 600M.\nWe are told that Rajesh obtained 56 marks less than the passing marks and Neha obtained one-third more marks than the passing marks.\nAssuming passing marks to be Y.\nThus, marks obtained by Rajesh = \nY - 56 = 370M \nMarks obtained by Neha = \nY + Y/3 = 600M\n4Y/3 = 600M\nY = 450M.\nWe know that Rajesh has 56 marks less than the passing marks.\n450M -370M = 56\nThus, 80M = 56\nM = 7/10\nSo, the passing marks = Y = 450M = 450*7/10 = 315 marks.\nNow, we are told that Aditi obtained 60% more marks than passing marks = 315*1.6 = 504",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a man saves Rs.916.66 every month , he can pay off a loan that is compounding annually in 1 year. However, if he wishes to pay off the loan in 2 years, he finds out that he should save Rs 504.16 every month.  Find the rate of interest charged for the loan.\n\n**Options:**\n- **A**. 10% ✅\n- **B**. 12%\n- **C**. 15%\n- **D**. 16%\n\n**Correct Answer:** null\n\n**Solution:**\n$P (1+\\frac{r}{100})^{1} = 916.66\\times12$\n$P (1+\\frac{r}{100}) = 11000 -----Eq(1)$\nSimilarly,\n$P (1+\\frac{r}{100})^{2} = 504.16\\times24$\n$P (1+\\frac{r}{100})^{2} = 12100---Eq(2)$\n$P (1+\\frac{r}{100}) (1+\\frac{r}{100})= 12100$\n$11000(1+\\frac{r}{100})=12100$\nr=10"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe marks obtained by Rajesh are 56 marks less than the passing marks, Neha obtained one-third more marks than the passing marks, and it is also given that the ratio of marks obtained by Rajesh and Neha is 37:60. If Aditi obtained 60% more marks than the passing marks, then find the marks obtained by Aditi.\n\n**Options:**\n- **A**. 504 ✅\n- **B**. 506\n- **C**. 508\n- **D**. 510\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that the ratio of marks obtained by Rajesh and Neha is 37:60\nLet us assume the marks they obtained are 370M and 600M.\nWe are told that Rajesh obtained 56 marks less than the passing marks and Neha obtained one-third more marks than the passing marks.\nAssuming passing marks to be Y.\nThus, marks obtained by Rajesh = \nY - 56 = 370M \nMarks obtained by Neha = \nY + Y/3 = 600M\n4Y/3 = 600M\nY = 450M.\nWe know that Rajesh has 56 marks less than the passing marks.\n450M -370M = 56\nThus, 80M = 56\nM = 7/10\nSo, the passing marks = Y = 450M = 450*7/10 = 315 marks.\nNow, we are told that Aditi obtained 60% more marks than passing marks = 315*1.6 = 504",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-11",
       "passage_text": "",
-      "question_text": "If $2<a<4$ and [a] = The greatest integer less than a, What is the probability (p) of $[a^{2}] = [a]^2$?",
+      "question_text": "Three natural numbers, $P, Q$ and $R$, are such that $P\\times Q\\times R=360,\\ PQ+R=39\\ $ and $QR+P=53\\ $. Find $P+R-Q$.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0.75<p<1",
+          "option_text": "17",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "0.5<p<0.75",
+          "option_text": "18",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "0.25<p<0.5",
+          "option_text": "19",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "0<p<0.25",
+          "option_text": "20",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Given function is $[a^{2}] = [a]^2$\nLet us consider RHS\nIf $[a]^2$ = 4\nthen $2 \\leq a<3$\nIf $[a]^2$ = 9\nThen $3 \\leq a<4$\nLet us consider LHS\nIf $[a^{2}] = 4$\nThen $2<a \\leq \\sqrt{5}$\nIf $[a^{2}] = 9$ \nThen $3\\leq a < \\sqrt{10}$ \nHence, the range satisfying $[a^{2}] = [a]^2$ is $(2, \\sqrt{5})$ and $[3,\\sqrt{10})$\nRequired probability = $\\frac{\\sqrt{5}-2 +\\sqrt{10}-3}{4-2}$ = $\\frac{2.23-2+3.16-3}{2}$ = $\\frac{0.39}{2}$ ~0.2\nHence, option D is the correct answer.",
+      "solution_text": "So, we are given that P, Q and R are natural numbers.\nPQ+R=39....... Equation 1\nQR + P = 53........ Equation 2\nPQR = 360......... Equation 3\nFrom equation 1, we can get, \nR = 39 - PQ....... Equation 4\nPutting equation 4 in equation 2, we get,\nQ(39-PQ) + P = 53\nor, $39Q-Q^2P+P=53$\nNow, we can notice that this equation is heavily dependent on Q as the coefficient of Q is 39 and the final outcome is 53 which is quite close. \nHence, we can try putting values for Q and see what we get:\nIf Q = 1, 39 = 53 which is not possible. \nIf Q = 2, 25 = 3P which is not possible as P has to be a natural number. \nIf Q = 3, 64 = 8P and we get, P = 8.\nPutting Q and P in equation 3, we get, \n3*8*R = 360\nR = 15\nHence, P + R - Q = 8 + 15 - 3 = 20",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $2<a<4$ and [a] = The greatest integer less than a, What is the probability (p) of $[a^{2}] = [a]^2$?\n\n**Options:**\n- **A**. 0.75<p<1\n- **B**. 0.5<p<0.75\n- **C**. 0.25<p<0.5\n- **D**. 0<p<0.25 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nGiven function is $[a^{2}] = [a]^2$\nLet us consider RHS\nIf $[a]^2$ = 4\nthen $2 \\leq a<3$\nIf $[a]^2$ = 9\nThen $3 \\leq a<4$\nLet us consider LHS\nIf $[a^{2}] = 4$\nThen $2<a \\leq \\sqrt{5}$\nIf $[a^{2}] = 9$ \nThen $3\\leq a < \\sqrt{10}$ \nHence, the range satisfying $[a^{2}] = [a]^2$ is $(2, \\sqrt{5})$ and $[3,\\sqrt{10})$\nRequired probability = $\\frac{\\sqrt{5}-2 +\\sqrt{10}-3}{4-2}$ = $\\frac{2.23-2+3.16-3}{2}$ = $\\frac{0.39}{2}$ ~0.2\nHence, option D is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree natural numbers, $P, Q$ and $R$, are such that $P\\times Q\\times R=360,\\ PQ+R=39\\ $ and $QR+P=53\\ $. Find $P+R-Q$.\n\n**Options:**\n- **A**. 17\n- **B**. 18\n- **C**. 19\n- **D**. 20 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nSo, we are given that P, Q and R are natural numbers.\nPQ+R=39....... Equation 1\nQR + P = 53........ Equation 2\nPQR = 360......... Equation 3\nFrom equation 1, we can get, \nR = 39 - PQ....... Equation 4\nPutting equation 4 in equation 2, we get,\nQ(39-PQ) + P = 53\nor, $39Q-Q^2P+P=53$\nNow, we can notice that this equation is heavily dependent on Q as the coefficient of Q is 39 and the final outcome is 53 which is quite close. \nHence, we can try putting values for Q and see what we get:\nIf Q = 1, 39 = 53 which is not possible. \nIf Q = 2, 25 = 3P which is not possible as P has to be a natural number. \nIf Q = 3, 64 = 8P and we get, P = 8.\nPutting Q and P in equation 3, we get, \n3*8*R = 360\nR = 15\nHence, P + R - Q = 8 + 15 - 3 = 20",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-12",
       "passage_text": "",
-      "question_text": "How many straight lines can be drawn with 15 points on a plane of which 7 are collinear?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "105",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "84",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "85",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "90",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "If we select any 2 points, we can draw a straight line.\nSo, total number of straight lines = $15_{C_2}$\nBut, we cannot draw $7_{C_2}$ lines using the 7 collinear points, we can draw only one.\nSo, we'll subtract those cases from the total number of cases.\nFinally, number of straight line that can be drawn = $^{15}C_2\\ -\\ ^7C_2+1$ = 85",
+      "question_text": "A number S has 36 factors. Find the difference between the maximum and the minimum number of factors $ S^2$ can have.",
+      "options": [],
+      "correct_option_data": "154",
+      "solution_text": "We are told that a number has 36 factors. \nLet us represent the number as follows, $S=p^aq^br^c..$\nThe number of factors would be: (a+1)(b+1)(c+1)...\nWhen the number is squared, we have the following, $S^2=p^{2a}q^{2b}r^{2c}..$\nThe number of factors will be: (2a+1)(2b+1)(2c+1)...\nThe smallest number of factors for $S^2$ will be when the number $S$ has only one prime factor and that is raised to the power 35. \nThat time the number of factors for $S^2$ will be (2(35)+1)=71. \nThe largest number of factors for $ S^2$ will be when the number $S$ has as many prime factors as possible. We can prime factorise 36 to get the following: $36=2\\times2\\times3\\times3$ \nThe prime factors will be raised to the power 1, 1, 2, and 2, respectively. \nThat time the number of factors for $S^2$ will be, (2+1)(2+1)(4+1)(4+1) which will equal 225 factors. \nHence, the difference between the maximum and minimum number of factors will be 225-71=154.\nTherefore, the answer is 154.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many straight lines can be drawn with 15 points on a plane of which 7 are collinear?\n\n**Options:**\n- **A**. 105\n- **B**. 84\n- **C**. 85 ✅\n- **D**. 90\n\n**Correct Answer:** null\n\n**Solution:**\nIf we select any 2 points, we can draw a straight line.\nSo, total number of straight lines = $15_{C_2}$\nBut, we cannot draw $7_{C_2}$ lines using the 7 collinear points, we can draw only one.\nSo, we'll subtract those cases from the total number of cases.\nFinally, number of straight line that can be drawn = $^{15}C_2\\ -\\ ^7C_2+1$ = 85"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number S has 36 factors. Find the difference between the maximum and the minimum number of factors $ S^2$ can have.\n\n**Options:**\n\n**Correct Answer:** 154\n\n**Solution:**\nWe are told that a number has 36 factors. \nLet us represent the number as follows, $S=p^aq^br^c..$\nThe number of factors would be: (a+1)(b+1)(c+1)...\nWhen the number is squared, we have the following, $S^2=p^{2a}q^{2b}r^{2c}..$\nThe number of factors will be: (2a+1)(2b+1)(2c+1)...\nThe smallest number of factors for $S^2$ will be when the number $S$ has only one prime factor and that is raised to the power 35. \nThat time the number of factors for $S^2$ will be (2(35)+1)=71. \nThe largest number of factors for $ S^2$ will be when the number $S$ has as many prime factors as possible. We can prime factorise 36 to get the following: $36=2\\times2\\times3\\times3$ \nThe prime factors will be raised to the power 1, 1, 2, and 2, respectively. \nThat time the number of factors for $S^2$ will be, (2+1)(2+1)(4+1)(4+1) which will equal 225 factors. \nHence, the difference between the maximum and minimum number of factors will be 225-71=154.\nTherefore, the answer is 154.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-13",
       "passage_text": "",
-      "question_text": "Pawan and Rushit decide to run on a circular track from the same point in the same direction. The length of the track is 2 km. Ramesh, a bystander, notices that when they (Pawan and Rushit) first meet, Pawan is already in his fourth round and has completed 500 m. How much head start should Pawan give Rushit if he wants a race of 2340 meters  (on a linear track) to end in a draw? (Speed of Pawan is greater than that of Rushit)",
+      "question_text": "A function $f(n)=f(n-1)+2f(n-2)$, $f(5)=26$ and $f(2)=4$. What is the value of $f(8)$?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "720m",
+          "option_text": "214",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "360m",
+          "option_text": "106",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "480m",
+          "option_text": "168",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "600m",
+          "option_text": "196",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "When they first met, Pawan had completed 3 + 500/2000 = 3.25 laps.\nIn this time, Rushit would have completed 1 less round than Pawan.\nThus, Rushit would have completed 2.25 laps.\nThus, the ratio of the speed of Pawan and Rushit is 3.25:2.25 = 13:9\nLet the speed of Pawan be 13 m/s and the speed of Rushit be 9 m/s.\nTime required by Pawan to complete a race of 2340m = 2340/13 = 180s\nThe distance covered by Rushit in 180 seconds = 180*9 = 1620 m\nThus, if Pawan wants the race to end in a draw, then he should Rushit a head start of 2340-1620 = 720 m.\nHence, option A is the correct answer.",
+      "solution_text": "f(3) = f(2)+2f(1)\nLet f(1) = x\nf(3) = f(2)+2f(1) = 4+2x\nf(4) = f(3)+2f(2) = 4+2x+8 = 12+2x\nf(5) = f(4)+2f(3)\n26 = 12+2x+ 2(4+2x) = 20+6x\nx = 1\nf(4) = 12+2x = 14\nf(6) = f(5)+2f(4) = 26+28 = 54\nf(7) = 54+2*26 = 106\nf(8) = 106+2*54 = 214",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPawan and Rushit decide to run on a circular track from the same point in the same direction. The length of the track is 2 km. Ramesh, a bystander, notices that when they (Pawan and Rushit) first meet, Pawan is already in his fourth round and has completed 500 m. How much head start should Pawan give Rushit if he wants a race of 2340 meters  (on a linear track) to end in a draw? (Speed of Pawan is greater than that of Rushit)\n\n**Options:**\n- **A**. 720m ✅\n- **B**. 360m\n- **C**. 480m\n- **D**. 600m\n\n**Correct Answer:** null\n\n**Solution:**\nWhen they first met, Pawan had completed 3 + 500/2000 = 3.25 laps.\nIn this time, Rushit would have completed 1 less round than Pawan.\nThus, Rushit would have completed 2.25 laps.\nThus, the ratio of the speed of Pawan and Rushit is 3.25:2.25 = 13:9\nLet the speed of Pawan be 13 m/s and the speed of Rushit be 9 m/s.\nTime required by Pawan to complete a race of 2340m = 2340/13 = 180s\nThe distance covered by Rushit in 180 seconds = 180*9 = 1620 m\nThus, if Pawan wants the race to end in a draw, then he should Rushit a head start of 2340-1620 = 720 m.\nHence, option A is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA function $f(n)=f(n-1)+2f(n-2)$, $f(5)=26$ and $f(2)=4$. What is the value of $f(8)$?\n\n**Options:**\n- **A**. 214 ✅\n- **B**. 106\n- **C**. 168\n- **D**. 196\n\n**Correct Answer:** null\n\n**Solution:**\nf(3) = f(2)+2f(1)\nLet f(1) = x\nf(3) = f(2)+2f(1) = 4+2x\nf(4) = f(3)+2f(2) = 4+2x+8 = 12+2x\nf(5) = f(4)+2f(3)\n26 = 12+2x+ 2(4+2x) = 20+6x\nx = 1\nf(4) = 12+2x = 14\nf(6) = f(5)+2f(4) = 26+28 = 54\nf(7) = 54+2*26 = 106\nf(8) = 106+2*54 = 214",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-14",
       "passage_text": "",
-      "question_text": "A takes 16 days more and B takes 4 days more than the number of days taken by both of them if they work together, to complete a piece of work. How many days does A take to complete the same piece of work, working alone?",
+      "question_text": "Sarah purchased notebooks from a supplier at Rs. 150 per notebook. For every additional notebook she sells after the first one, the selling price decreases by Rs. 8 compared to the selling price of the previous notebook. Sarah makes a 120% profit by selling six notebooks using this pricing strategy. What is Sarah's profit (in Rs.) from selling five notebooks?",
       "options": [],
-      "correct_option_data": "24",
-      "solution_text": "Suppose they take x days together to complete the work.\n1/x = (1/(x+4))+ 1/(x+16)\nx = 8 satisfies the given equation.\nTime taken by A = 8+16 = 24 days.",
+      "correct_option_data": "920",
+      "solution_text": "",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA takes 16 days more and B takes 4 days more than the number of days taken by both of them if they work together, to complete a piece of work. How many days does A take to complete the same piece of work, working alone?\n\n**Options:**\n\n**Correct Answer:** 24\n\n**Solution:**\nSuppose they take x days together to complete the work.\n1/x = (1/(x+4))+ 1/(x+16)\nx = 8 satisfies the given equation.\nTime taken by A = 8+16 = 24 days."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSarah purchased notebooks from a supplier at Rs. 150 per notebook. For every additional notebook she sells after the first one, the selling price decreases by Rs. 8 compared to the selling price of the previous notebook. Sarah makes a 120% profit by selling six notebooks using this pricing strategy. What is Sarah's profit (in Rs.) from selling five notebooks?\n\n**Options:**\n\n**Correct Answer:** 920",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-15",
       "passage_text": "",
-      "question_text": "While adding consecutive natural numbers from 1 to N, Suresh adds a number 'a' thrice and the resulting sum is 185, the sum of all the possible values of a",
+      "question_text": "Find the sum of values of x which satisfy the expression, $\\log_4x^4+\\log_{0.25}\\left(x^{\\log_2x}\\right)=0$",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "20",
+          "option_text": "15",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "21",
+          "option_text": "16",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "24",
-          "is_correct": false
+          "option_text": "17",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "23",
-          "is_correct": true
+          "option_text": "18",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Since the number a is from 1 to N, its maximum value can be N and minimum value can be N.\nNow, assuming 1 is added thrice, sum = $\\frac{N(N+1)}{2}+2*1 \\leq 185$\n=> N(N+1)+4$\\leq 370 $\n=> N(N+1)$\\leq 366 $\n=> N $\\leq $ 18 as N is a natural number.\nSimilarly, if N is added thrice,sum = $\\frac{N(N+1)}{2}+2*N \\geq 185$ \n=> N$^{2}$+5N-370 $\\geq$ 0\n=> N $\\geq$ 16.89\nHence N can be 17,18\nWhen N=17, N(N+1)/2 = 17*18/2=153, Hence 2a=185-153=32  =>a=16   (The value a is added thrice, hence the difference will give 2a)\nWhen N=18,  N(N+1)/2 = 18*19/2=171 Hence, 2a=185-171=14 => a=7\nSum of the possible values of a = 16+7=23",
+      "solution_text": "The given expression is $\\log_4x^4+\\log_{0.25}\\left(x^{\\log_2x}\\right)=0$\nThis can be written as, $\\frac{1}{2}\\log_2x^4-\\frac{1}{2}\\log_2\\left(x^{\\log_2x}\\right)=0$\nThis can be simplified to, $\\log_2x^4=\\log_2\\left(x^{\\log_2x}\\right)$\nWe can write this as, $4\\log_2x=\\left(\\log_2x\\right)\\left(\\log_2x\\right)$\nConsidering $\\log_2x=z$, we write the equation as, $4z=z^2$\nHere, z=0 or z=4\nFor z=0, $\\log_2x=0$ x=1\nFor z=4, $\\log_2x=4$, x=16\nSum of values of x will be 17.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhile adding consecutive natural numbers from 1 to N, Suresh adds a number 'a' thrice and the resulting sum is 185, the sum of all the possible values of a\n\n**Options:**\n- **A**. 20\n- **B**. 21\n- **C**. 24\n- **D**. 23 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nSince the number a is from 1 to N, its maximum value can be N and minimum value can be N.\nNow, assuming 1 is added thrice, sum = $\\frac{N(N+1)}{2}+2*1 \\leq 185$\n=> N(N+1)+4$\\leq 370 $\n=> N(N+1)$\\leq 366 $\n=> N $\\leq $ 18 as N is a natural number.\nSimilarly, if N is added thrice,sum = $\\frac{N(N+1)}{2}+2*N \\geq 185$ \n=> N$^{2}$+5N-370 $\\geq$ 0\n=> N $\\geq$ 16.89\nHence N can be 17,18\nWhen N=17, N(N+1)/2 = 17*18/2=153, Hence 2a=185-153=32  =>a=16   (The value a is added thrice, hence the difference will give 2a)\nWhen N=18,  N(N+1)/2 = 18*19/2=171 Hence, 2a=185-171=14 => a=7\nSum of the possible values of a = 16+7=23"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of values of x which satisfy the expression, $\\log_4x^4+\\log_{0.25}\\left(x^{\\log_2x}\\right)=0$\n\n**Options:**\n- **A**. 15\n- **B**. 16\n- **C**. 17 ✅\n- **D**. 18\n\n**Correct Answer:** null\n\n**Solution:**\nThe given expression is $\\log_4x^4+\\log_{0.25}\\left(x^{\\log_2x}\\right)=0$\nThis can be written as, $\\frac{1}{2}\\log_2x^4-\\frac{1}{2}\\log_2\\left(x^{\\log_2x}\\right)=0$\nThis can be simplified to, $\\log_2x^4=\\log_2\\left(x^{\\log_2x}\\right)$\nWe can write this as, $4\\log_2x=\\left(\\log_2x\\right)\\left(\\log_2x\\right)$\nConsidering $\\log_2x=z$, we write the equation as, $4z=z^2$\nHere, z=0 or z=4\nFor z=0, $\\log_2x=0$ x=1\nFor z=4, $\\log_2x=4$, x=16\nSum of values of x will be 17.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-16",
       "passage_text": "",
-      "question_text": "Find the range of ‘x’ for which the following inequality holds true.\n$\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x^2 - 16}{x^4 + 5x^2}$",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "($ x \\geq 4$ $\\cup$ $ x \\leq 1 $) - {0}",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "($ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $) - {0}",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "($ x \\leq -4$ $\\cup$ $ x \\geq -1 $) - {0}",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "($ x \\geq 4$ $\\cup$ $ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $) - {0}",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "$\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x - 16}{x^4 + 5x^2}$\n=> $\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x - 16}{x^2(x^2 + 5)}$\n=> $x^2*(x^2 - 15) \\geq 2x^2 - 16$\nReplacing $x^2$ with t, we get\n=> $ t*(t - 15) \\geq 2t - 16$\n=> $t^2 - 15t \\geq 2t - 16$\n=> $t^2 - 17t - 16 \\geq 0 $\n=> $(t - 16)(t - 1) \\geq 0$\n=> $ t \\geq 16$ or $t \\leq 1$\n=> $ x^2 \\geq 16$ or $x^2 \\leq 1$\n=> $ x \\geq 4$ $\\cup$ $ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $ - {0}\nx cannot be 0 as in that case the denominator of the RHS would be 0.",
+      "question_text": "Two friends, Rohan and Karan, are working on a project. Together, they can complete the project in 15 days. However, if Rohan completes one-fourth of the project and then Karan takes over to complete the remaining three-fourth of the project, they will finish the project in 28 days. How many days would Rohan alone take to complete the entire project if it is known that the number of days taken by each is an integer?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "Let Rohan can complete the project in 'R' number of days and Karan can do the same in 'K' days.\nSo, the total work done by Rohan and Karan in a day will be $\\dfrac{1}{R}\\ \\&\\ \\dfrac{1}{K}$ respectively. \nWe are given that both of them complete the project in 15 days so the work done by together in a day = $\\dfrac{1}{15}$\nOr, we can say, $\\dfrac{1}{R}+\\dfrac{1}{K}=\\dfrac{1}{15}$ ....... Equation 1\nFurther, we are given that if Rohan completes one-fourth of the project and then Karan takes over to complete the remaining three-fourth of the project, they will finish the project in 28 days.\nSince Rohan complete the whole project in R number of days, it will take him R/4 days to complete one fourth of the project. \nSimilarly, Karan will take 3K/4 days to complete the remaining the project. \nThis way, they complete the project in 28 days. \nHence, we can say, $\\dfrac{R}{4}+\\dfrac{3K}{4}=28$\nOr, $R+3K=112$ or, we can say, $R=112-3K$\nPutting R in equation 1, \n$\\dfrac{\\left(112-3k+k\\right)}{k\\left(112-3k\\right)}=\\dfrac{1}{15}$\n$15\\left(112-2k\\right)=112k-3k^2$\n$3k^2-142k+1680=0$\nWe  know 70 + 27 = 142 and 70*72 = 3*1680\nHence, $\\left(3k-70\\right)\\left(k-24\\right)=0$\nWe get K = 70/3 or 24\nSince it is given that the number of days taken by them is integral, we can eliminate 70/3.\nNow,  If K = 24, R = 40",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the range of ‘x’ for which the following inequality holds true.\n$\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x^2 - 16}{x^4 + 5x^2}$\n\n**Options:**\n- **A**. ($ x \\geq 4$ $\\cup$ $ x \\leq 1 $) - {0}\n- **B**. ($ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $) - {0}\n- **C**. ($ x \\leq -4$ $\\cup$ $ x \\geq -1 $) - {0}\n- **D**. ($ x \\geq 4$ $\\cup$ $ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $) - {0} ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x - 16}{x^4 + 5x^2}$\n=> $\\frac{x^2 - 15}{x^2 + 5} \\geq \\frac{2x - 16}{x^2(x^2 + 5)}$\n=> $x^2*(x^2 - 15) \\geq 2x^2 - 16$\nReplacing $x^2$ with t, we get\n=> $ t*(t - 15) \\geq 2t - 16$\n=> $t^2 - 15t \\geq 2t - 16$\n=> $t^2 - 17t - 16 \\geq 0 $\n=> $(t - 16)(t - 1) \\geq 0$\n=> $ t \\geq 16$ or $t \\leq 1$\n=> $ x^2 \\geq 16$ or $x^2 \\leq 1$\n=> $ x \\geq 4$ $\\cup$ $ x \\leq -4$ $\\cup$ $ -1 \\leq x \\leq 1 $ - {0}\nx cannot be 0 as in that case the denominator of the RHS would be 0."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo friends, Rohan and Karan, are working on a project. Together, they can complete the project in 15 days. However, if Rohan completes one-fourth of the project and then Karan takes over to complete the remaining three-fourth of the project, they will finish the project in 28 days. How many days would Rohan alone take to complete the entire project if it is known that the number of days taken by each is an integer?\n\n**Options:**\n\n**Correct Answer:** 40\n\n**Solution:**\nLet Rohan can complete the project in 'R' number of days and Karan can do the same in 'K' days.\nSo, the total work done by Rohan and Karan in a day will be $\\dfrac{1}{R}\\ \\&\\ \\dfrac{1}{K}$ respectively. \nWe are given that both of them complete the project in 15 days so the work done by together in a day = $\\dfrac{1}{15}$\nOr, we can say, $\\dfrac{1}{R}+\\dfrac{1}{K}=\\dfrac{1}{15}$ ....... Equation 1\nFurther, we are given that if Rohan completes one-fourth of the project and then Karan takes over to complete the remaining three-fourth of the project, they will finish the project in 28 days.\nSince Rohan complete the whole project in R number of days, it will take him R/4 days to complete one fourth of the project. \nSimilarly, Karan will take 3K/4 days to complete the remaining the project. \nThis way, they complete the project in 28 days. \nHence, we can say, $\\dfrac{R}{4}+\\dfrac{3K}{4}=28$\nOr, $R+3K=112$ or, we can say, $R=112-3K$\nPutting R in equation 1, \n$\\dfrac{\\left(112-3k+k\\right)}{k\\left(112-3k\\right)}=\\dfrac{1}{15}$\n$15\\left(112-2k\\right)=112k-3k^2$\n$3k^2-142k+1680=0$\nWe  know 70 + 27 = 142 and 70*72 = 3*1680\nHence, $\\left(3k-70\\right)\\left(k-24\\right)=0$\nWe get K = 70/3 or 24\nSince it is given that the number of days taken by them is integral, we can eliminate 70/3.\nNow,  If K = 24, R = 40",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-17",
       "passage_text": "",
-      "question_text": "2 cards are drawn from a deck of 52 cards. What is the probability that both of them are from the same suit?",
+      "question_text": "A container has pipes of different types: Type I, Type II, and Type III, where Type I is an outlet pipe and Type II and Type III are inlet pipes. A Type I pipe can empty the container in 1 hour, and Type II and Type III pipes together can fill it in 50 minutes. It takes 5 Type II and 1 Type I pipe to fill the container in 24 minutes. How much time will it take Type III to fill the container?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1/13",
+          "option_text": "1 hour",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "5/26",
+          "option_text": "1.5 hour",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "4/17",
+          "option_text": "2 hour",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "9/50",
+          "option_text": "2.5 hour",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Total number of ways of selecting two cards = 52C2\nIn a pack of cards, there are 4 suits and each suit has 13 cards each.\nSo for 2 cards to be from the same suit, we can select any suit in 4c1 ways and then 2 cards can be selected in 13c2 ways.\nHence the required probability is $\\frac{4C1*13C2}{52C2} = 12/51$",
+      "solution_text": "A container has pipes of different types: Type I, Type II, and Type III.\nInlet Pipes = Type II and Type III, Outlet Pipe = Type I\nType I pipe can empty container in 1 hour or 60 minutes.\nType I = 60 minutes\nType II and Type III pipes to fill it in 50 minutes.\nType II + Type III = 50 minutes\nIt takes 5 Type II and 1 Type I pipe to fill the container in 24 minutes.\n5 Type II + Type I = 24 minutes.\nLet the volume of the container be the LCM of (60,50,24) = 600 litres.\nTherefore, in 1 minute,\nType I pipe can empty the container with a volume of 10 litres (600/60 = 10)\nType II + Type III can fill the container with a volume of 12 litres (600/50 = 12)\n5 Type II + Type I can fill the container with a volume of 25 litres (600/24 = 25)\n5 Type II + Type I = 25\n5 Type II - 10 = 25\n5 Type II  = 35 litres in 1 minute.\nType II = 7 litres in 1 minute.\nType II + Type III = 12 litres in 1 minute.\n7 + Type III = 12 litres in 1 minute\nThus, Type III pipe can fill 5 litres in 1 minute.\nTherefore, the time taken by Pipe III to fill the container = 600/5 = 120 minutes.\nOr 2 hours.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n2 cards are drawn from a deck of 52 cards. What is the probability that both of them are from the same suit?\n\n**Options:**\n- **A**. 1/13\n- **B**. 5/26\n- **C**. 4/17 ✅\n- **D**. 9/50\n\n**Correct Answer:** null\n\n**Solution:**\nTotal number of ways of selecting two cards = 52C2\nIn a pack of cards, there are 4 suits and each suit has 13 cards each.\nSo for 2 cards to be from the same suit, we can select any suit in 4c1 ways and then 2 cards can be selected in 13c2 ways.\nHence the required probability is $\\frac{4C1*13C2}{52C2} = 12/51$"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA container has pipes of different types: Type I, Type II, and Type III, where Type I is an outlet pipe and Type II and Type III are inlet pipes. A Type I pipe can empty the container in 1 hour, and Type II and Type III pipes together can fill it in 50 minutes. It takes 5 Type II and 1 Type I pipe to fill the container in 24 minutes. How much time will it take Type III to fill the container?\n\n**Options:**\n- **A**. 1 hour\n- **B**. 1.5 hour\n- **C**. 2 hour ✅\n- **D**. 2.5 hour\n\n**Correct Answer:** null\n\n**Solution:**\nA container has pipes of different types: Type I, Type II, and Type III.\nInlet Pipes = Type II and Type III, Outlet Pipe = Type I\nType I pipe can empty container in 1 hour or 60 minutes.\nType I = 60 minutes\nType II and Type III pipes to fill it in 50 minutes.\nType II + Type III = 50 minutes\nIt takes 5 Type II and 1 Type I pipe to fill the container in 24 minutes.\n5 Type II + Type I = 24 minutes.\nLet the volume of the container be the LCM of (60,50,24) = 600 litres.\nTherefore, in 1 minute,\nType I pipe can empty the container with a volume of 10 litres (600/60 = 10)\nType II + Type III can fill the container with a volume of 12 litres (600/50 = 12)\n5 Type II + Type I can fill the container with a volume of 25 litres (600/24 = 25)\n5 Type II + Type I = 25\n5 Type II - 10 = 25\n5 Type II  = 35 litres in 1 minute.\nType II = 7 litres in 1 minute.\nType II + Type III = 12 litres in 1 minute.\n7 + Type III = 12 litres in 1 minute\nThus, Type III pipe can fill 5 litres in 1 minute.\nTherefore, the time taken by Pipe III to fill the container = 600/5 = 120 minutes.\nOr 2 hours.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-18",
       "passage_text": "",
-      "question_text": "In a geometric progression, the sum of the first 8 terms is equal to the sum of the first 10 terms. The third term of the series is 4. The sum of the first 99 terms of the series is",
-      "options": [],
-      "correct_option_data": "4",
-      "solution_text": "Let the first term in the series be 'a' and the common ratio be 'r'\nSum of the first 8 terms = Sum of the first 10 terms\n$a+ar+ar^2$.......$ar^7$ = $a+ar+ar^2$.........$ar^7+ar^8+ar^9$\n$ar^8$ + $ar^9$ = 0\n$ar^8\\left(r+1\\right)=0$\nr+1 = 0\nr = -1\nThe series will be 4, -4, 4, -4.....\nSo nth term will be 4 if n is odd or it will be -4 if n is even.\nSo 99th term in the series = 4\nThe sum of the first 98 terms of the series will be 0.\nHence, the sum of the first 99 terms of the series is 4",
+      "question_text": "A mixture of orange lemonade has orange juice and lemon juice in a ratio of 7:2, and another mixture of kiwi lemonade has kiwi juice and lemon juice in a 2:5 ratio. In a 100L beaker with 50L of water, an unknown quantity of orange lemonade and kiwi lemonade is added to fill up the beaker. What is the sum of the quantity of orange juice and kiwi juice in the beaker(in litres) if the ratio of the concentration of orange juice and lemon juice in the mixture is 14:9?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "34",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given that the ratio of orange juice and lemon juice in orange lemonade is 7:2 and the ratio of kiwi juice and lemon juice in kiwi lemonade as 2:5. In a 100l beaker, if 50l is water, then the rest of the solution is made of orange lemonade and kiwi lemonade.\nLet the quantity of orange lemonade be 9x, and kiwi lemonade is 7y. Then orange juice becomes 7x, kiwi juice becomes 2y and lemon juice becomes 2x + 5y\n9x + 7y = 50  --(1)\nwe are also given ratio of orange juice and lemon juice as 14:9, so orange juice in the mixture is 7x, and lemon juice is 2x + 5y.\n$\\dfrac{7x}{2x\\ +\\ 5y}\\ =\\ \\dfrac{14}{9}$\n$9x\\ =\\ 4x\\ +\\ 10y$\n$x\\ =\\ 2y$\nSubstituting it in equation 1, we get,\n9(2y) + 7y = 50\n25y = 50\ny = 2 and x = 4.\nQuantity of orange juice = 7x = 7* 4 = 28\nQuantity of kiwi juice = 2y = 2 * 2 = 4\nSum of the quantities = 28 + 4 = 32.\nHence, the correct answer is option C.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a geometric progression, the sum of the first 8 terms is equal to the sum of the first 10 terms. The third term of the series is 4. The sum of the first 99 terms of the series is\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\nLet the first term in the series be 'a' and the common ratio be 'r'\nSum of the first 8 terms = Sum of the first 10 terms\n$a+ar+ar^2$.......$ar^7$ = $a+ar+ar^2$.........$ar^7+ar^8+ar^9$\n$ar^8$ + $ar^9$ = 0\n$ar^8\\left(r+1\\right)=0$\nr+1 = 0\nr = -1\nThe series will be 4, -4, 4, -4.....\nSo nth term will be 4 if n is odd or it will be -4 if n is even.\nSo 99th term in the series = 4\nThe sum of the first 98 terms of the series will be 0.\nHence, the sum of the first 99 terms of the series is 4"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA mixture of orange lemonade has orange juice and lemon juice in a ratio of 7:2, and another mixture of kiwi lemonade has kiwi juice and lemon juice in a 2:5 ratio. In a 100L beaker with 50L of water, an unknown quantity of orange lemonade and kiwi lemonade is added to fill up the beaker. What is the sum of the quantity of orange juice and kiwi juice in the beaker(in litres) if the ratio of the concentration of orange juice and lemon juice in the mixture is 14:9?\n\n**Options:**\n- **A**. 28\n- **B**. 30\n- **C**. 32 ✅\n- **D**. 34\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that the ratio of orange juice and lemon juice in orange lemonade is 7:2 and the ratio of kiwi juice and lemon juice in kiwi lemonade as 2:5. In a 100l beaker, if 50l is water, then the rest of the solution is made of orange lemonade and kiwi lemonade.\nLet the quantity of orange lemonade be 9x, and kiwi lemonade is 7y. Then orange juice becomes 7x, kiwi juice becomes 2y and lemon juice becomes 2x + 5y\n9x + 7y = 50  --(1)\nwe are also given ratio of orange juice and lemon juice as 14:9, so orange juice in the mixture is 7x, and lemon juice is 2x + 5y.\n$\\dfrac{7x}{2x\\ +\\ 5y}\\ =\\ \\dfrac{14}{9}$\n$9x\\ =\\ 4x\\ +\\ 10y$\n$x\\ =\\ 2y$\nSubstituting it in equation 1, we get,\n9(2y) + 7y = 50\n25y = 50\ny = 2 and x = 4.\nQuantity of orange juice = 7x = 7* 4 = 28\nQuantity of kiwi juice = 2y = 2 * 2 = 4\nSum of the quantities = 28 + 4 = 32.\nHence, the correct answer is option C.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-19",
       "passage_text": "",
-      "question_text": "The smallest altitude of a right-angled triangle of area 216 cm$^2$ is 14.4 cm. What is the perimeter of the triangle?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "60 cm",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "56 cm",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "72 cm",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "84 cm",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "We know that the length of an altitude in a triangle is inversely proportional to the length of the side on which it is drawn.\nSo, the smallest altitude in a right-angled triangle must be drawn on its hypotenuse.\nLet the base of the triangle be '$b$', perpendicular be '$p$' and the hypotenuse be '$h$'\nArea of the triangle = 216 cm$^2$\nor, $\\dfrac{1}{2} * b * p = 216$\nor, $bp = 432$..........(i)\nAlso, the length of the altitude drawn on the hypotenuse is 14.4 cm\nSo, area of the triangle can be written as\n$\\dfrac{1}{2} * h * 14.4 = 216$\n=> $h = 30$ cm\nWe also know that in a right angled triangle\n$b^2 + p^2 = h^2$ [Pythagoras Theorem]\nor, $b^2 + p^2 = 30^2 = 900$\nAdding '$2bp$' to both the sides, we get\n$b^2 + p^2 + 2bp = 900 + 2bp$\nPutting the value of $bp$ from (i), we get\n$(b + p)^2 = 900 + 2*432 = 1764$\nor, $(b + p) = \\sqrt{1764} = 42$\nThus, the perimeter of the triangle = $(b + p + h) = (42 + 30) = 72$cm\nHence, option C is the correct answer.",
+      "question_text": "If $2^{2x+3}+2^{x+3}=160$, find the integral value of $x$.",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "We have: $2^{2x+3}+2^{x+3}=160$\nWe see $2^3=8$ is common in left hand side and right hand side, so dividing both sides with $2^3$\nWe get: $2^{2x+3-3}+2^{x+3-3}=\\frac{160}{8}$\n$2^{2x}+2^{x}=20$\nOr,$\\left(2^x\\right)^{^2}+2^x=20$\nLet $2^x=a$\nWe get: $a^2+a=20$\n$a^2+a-20=0$\n$a^2+5a-4a+20=0$\n$a\\left(a+5\\right)-4\\left(a+5\\right)=0$\n$\\left(a-4\\right)\\left(a+5\\right)=0$\nNow, we have $a=4\\ or\\ -5$\nEquating both with $2^x$\n$2^x=-5$ is not possible for any integral value of x. \n$2^x=4\\ \\longrightarrow\\ x=2$\nHence, x = 2",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe smallest altitude of a right-angled triangle of area 216 cm$^2$ is 14.4 cm. What is the perimeter of the triangle?\n\n**Options:**\n- **A**. 60 cm\n- **B**. 56 cm\n- **C**. 72 cm ✅\n- **D**. 84 cm\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the length of an altitude in a triangle is inversely proportional to the length of the side on which it is drawn.\nSo, the smallest altitude in a right-angled triangle must be drawn on its hypotenuse.\nLet the base of the triangle be '$b$', perpendicular be '$p$' and the hypotenuse be '$h$'\nArea of the triangle = 216 cm$^2$\nor, $\\dfrac{1}{2} * b * p = 216$\nor, $bp = 432$..........(i)\nAlso, the length of the altitude drawn on the hypotenuse is 14.4 cm\nSo, area of the triangle can be written as\n$\\dfrac{1}{2} * h * 14.4 = 216$\n=> $h = 30$ cm\nWe also know that in a right angled triangle\n$b^2 + p^2 = h^2$ [Pythagoras Theorem]\nor, $b^2 + p^2 = 30^2 = 900$\nAdding '$2bp$' to both the sides, we get\n$b^2 + p^2 + 2bp = 900 + 2bp$\nPutting the value of $bp$ from (i), we get\n$(b + p)^2 = 900 + 2*432 = 1764$\nor, $(b + p) = \\sqrt{1764} = 42$\nThus, the perimeter of the triangle = $(b + p + h) = (42 + 30) = 72$cm\nHence, option C is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $2^{2x+3}+2^{x+3}=160$, find the integral value of $x$.\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nWe have: $2^{2x+3}+2^{x+3}=160$\nWe see $2^3=8$ is common in left hand side and right hand side, so dividing both sides with $2^3$\nWe get: $2^{2x+3-3}+2^{x+3-3}=\\frac{160}{8}$\n$2^{2x}+2^{x}=20$\nOr,$\\left(2^x\\right)^{^2}+2^x=20$\nLet $2^x=a$\nWe get: $a^2+a=20$\n$a^2+a-20=0$\n$a^2+5a-4a+20=0$\n$a\\left(a+5\\right)-4\\left(a+5\\right)=0$\n$\\left(a-4\\right)\\left(a+5\\right)=0$\nNow, we have $a=4\\ or\\ -5$\nEquating both with $2^x$\n$2^x=-5$ is not possible for any integral value of x. \n$2^x=4\\ \\longrightarrow\\ x=2$\nHence, x = 2",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-20",
       "passage_text": "",
-      "question_text": "Two types of rice, type A and type B are mixed in the ratio 3:2 and sold at a profit of 25%. If the selling price per kg is kept the same and the ratio is changed to 2:3, then the profit would be 20%. What would be the approximate percentage profit if they are mixed in the ratio 1:4 and sold on the same price per kg?",
+      "question_text": "In a Comic-Con challenge, four men and four women need to be selected. Team Marvel consists of five men and seven women, while Team DC consists of four men and six women. How many different ways can people be selected for the challenge, ensuring that five people are chosen from Team Marvel and three people from Team DC?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "17.3",
+          "option_text": "21800",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "15.4",
+          "option_text": "26600",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "13.7",
+          "option_text": "28500",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "11.2",
+          "option_text": "35200",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Assume the price per kg for type A = a and the price per kg for type B = b\nCost price per kg = $\\frac{3a+2b}{5}$\n=> Selling Price = $\\frac{3a+2b}{5}\\times\\ \\left(1+\\frac{25}{100}\\right)\\ =\\ \\frac{3a+2b}{5}\\times\\ \\frac{5}{4}$  = $\\frac{3a+2b}{4}$\nAfter changing the ratio, the new cost price = $\\frac{2a+3b}{5}$\nThe new selling price per kg = $\\frac{2a+3b}{5}\\times\\ \\left(1+\\frac{20}{100}\\right)$ = $\\frac{6\\left(2a+3b\\right)}{25}$\nSince both the selling prices are the same. $\\frac{3a+2b}{4}=\\frac{6\\left(2a+3b\\right)}{25}$\n=> 25(3a+2b)=24(2a+3b)\n=> 75a-48a = 72b-50b\n=> 27a = 22b\n=> $\\frac{a}{b}=\\frac{22}{27}$ .....(1)\nCost price per kg while mixing in the ratio 1:4 = $\\frac{a+4b}{5}$ = \nSelling price per kg = $\\frac{3a+2b}{4}$\n% Profit = $\\left(\\dfrac{SP}{CP}-1\\right)\\times\\ 100=\\left(\\dfrac{\\left(3a+2b\\right)\\times\\ 5}{4\\times\\ \\left(a+4b\\right)}-1\\right)\\times\\ 100$\n$=\\ \\left(\\dfrac{\\ 15a+10b}{4a+16b}-1\\right)\\times\\ 100\\ =\\ \\dfrac{\\frac{11a}{b}-6}{\\frac{4a}{b}+16}\\times\\ 100\\ $\n$=\\ \\ \\dfrac{\\ 11\\times\\ \\frac{22}{27}-6}{4\\times\\ \\frac{22}{27}+16}\\times\\ 100\\ =\\ \\ \\dfrac{\\ 11\\times\\ 0.815-6}{4\\times\\ 0.815+16}\\times\\ 100\\ $\n$=\\ \\dfrac{2.965}{19.26}\\times\\ 100\\ =\\ 15.4\\%$",
+      "solution_text": "We are told 4M and 4W are to be selected. It is given that 5 people from Team Marvel are to be selected and 3 from Team DC. \nTeam Marvel consists of 5M and 7W. \nTeam DC consists of 4M and 6W. \n5 people from Team Marvel can be selected as, \n(4M, 1W), (3M, 2W), (2M, 3W), (1M, 4W)\nTo complement this, the 3 people from Team DC can be selected as, \n(0M, 3W), (1M, 2W), (2M, 1W), (3M, 0W)\nCombination 1: (4M, 1W)+(0M, 3W), this can be chosen in $^5C_4\\cdot^7C_1\\cdot^6C_3$\nCombination 2: (3M, 2W)+(1M, 2W), this can be chosen in $^5C_3\\cdot^7C_2\\cdot^4C_1\\cdot^6C_2$\nCombination 3: (2M, 3W)+(2M, 1W), this can be chosen in  $^5C_2\\cdot^7C_3\\cdot^4C_2\\cdot^6C_1$\nCombination 4: (1M, 4W)+(3M, 0W), this can be chosen in $^5C_1\\cdot^7C_4\\cdot^4C_3$\nCombination 1: (5)(7)(20)=700\nCombination 2: (10)(21)(4)(15)=12600\nCombination 3: (10)(35)(6)(6)=12600\nCombination 4: (5)(35)(4)=700\nTotal combination being the sum of them, which is 26,600 ways.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo types of rice, type A and type B are mixed in the ratio 3:2 and sold at a profit of 25%. If the selling price per kg is kept the same and the ratio is changed to 2:3, then the profit would be 20%. What would be the approximate percentage profit if they are mixed in the ratio 1:4 and sold on the same price per kg?\n\n**Options:**\n- **A**. 17.3\n- **B**. 15.4 ✅\n- **C**. 13.7\n- **D**. 11.2\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the price per kg for type A = a and the price per kg for type B = b\nCost price per kg = $\\frac{3a+2b}{5}$\n=> Selling Price = $\\frac{3a+2b}{5}\\times\\ \\left(1+\\frac{25}{100}\\right)\\ =\\ \\frac{3a+2b}{5}\\times\\ \\frac{5}{4}$  = $\\frac{3a+2b}{4}$\nAfter changing the ratio, the new cost price = $\\frac{2a+3b}{5}$\nThe new selling price per kg = $\\frac{2a+3b}{5}\\times\\ \\left(1+\\frac{20}{100}\\right)$ = $\\frac{6\\left(2a+3b\\right)}{25}$\nSince both the selling prices are the same. $\\frac{3a+2b}{4}=\\frac{6\\left(2a+3b\\right)}{25}$\n=> 25(3a+2b)=24(2a+3b)\n=> 75a-48a = 72b-50b\n=> 27a = 22b\n=> $\\frac{a}{b}=\\frac{22}{27}$ .....(1)\nCost price per kg while mixing in the ratio 1:4 = $\\frac{a+4b}{5}$ = \nSelling price per kg = $\\frac{3a+2b}{4}$\n% Profit = $\\left(\\dfrac{SP}{CP}-1\\right)\\times\\ 100=\\left(\\dfrac{\\left(3a+2b\\right)\\times\\ 5}{4\\times\\ \\left(a+4b\\right)}-1\\right)\\times\\ 100$\n$=\\ \\left(\\dfrac{\\ 15a+10b}{4a+16b}-1\\right)\\times\\ 100\\ =\\ \\dfrac{\\frac{11a}{b}-6}{\\frac{4a}{b}+16}\\times\\ 100\\ $\n$=\\ \\ \\dfrac{\\ 11\\times\\ \\frac{22}{27}-6}{4\\times\\ \\frac{22}{27}+16}\\times\\ 100\\ =\\ \\ \\dfrac{\\ 11\\times\\ 0.815-6}{4\\times\\ 0.815+16}\\times\\ 100\\ $\n$=\\ \\dfrac{2.965}{19.26}\\times\\ 100\\ =\\ 15.4\\%$"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a Comic-Con challenge, four men and four women need to be selected. Team Marvel consists of five men and seven women, while Team DC consists of four men and six women. How many different ways can people be selected for the challenge, ensuring that five people are chosen from Team Marvel and three people from Team DC?\n\n**Options:**\n- **A**. 21800\n- **B**. 26600 ✅\n- **C**. 28500\n- **D**. 35200\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told 4M and 4W are to be selected. It is given that 5 people from Team Marvel are to be selected and 3 from Team DC. \nTeam Marvel consists of 5M and 7W. \nTeam DC consists of 4M and 6W. \n5 people from Team Marvel can be selected as, \n(4M, 1W), (3M, 2W), (2M, 3W), (1M, 4W)\nTo complement this, the 3 people from Team DC can be selected as, \n(0M, 3W), (1M, 2W), (2M, 1W), (3M, 0W)\nCombination 1: (4M, 1W)+(0M, 3W), this can be chosen in $^5C_4\\cdot^7C_1\\cdot^6C_3$\nCombination 2: (3M, 2W)+(1M, 2W), this can be chosen in $^5C_3\\cdot^7C_2\\cdot^4C_1\\cdot^6C_2$\nCombination 3: (2M, 3W)+(2M, 1W), this can be chosen in  $^5C_2\\cdot^7C_3\\cdot^4C_2\\cdot^6C_1$\nCombination 4: (1M, 4W)+(3M, 0W), this can be chosen in $^5C_1\\cdot^7C_4\\cdot^4C_3$\nCombination 1: (5)(7)(20)=700\nCombination 2: (10)(21)(4)(15)=12600\nCombination 3: (10)(35)(6)(6)=12600\nCombination 4: (5)(35)(4)=700\nTotal combination being the sum of them, which is 26,600 ways.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-21",
       "passage_text": "",
-      "question_text": "A family consisted of four members. In the year 2008, a 60 years old person dies and the average age of the family decreased by 8. Then in the year 2012, a baby is born. In which year the average age of the family will again be equal to the original average age of the family just before the person had died.",
+      "question_text": "Ravi buys milk using a container that holds 1250 ml, but pays only for 1000 ml. While selling, he adds 80 ml of water to every 920 ml of milk and marks up the cost price by 60%. What is the maximum discount he can offer on the marked price while still making a 100% profit?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "2018",
+          "option_text": "24%",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "2020",
-          "is_correct": false
+          "option_text": "8%",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "2024",
-          "is_correct": true
+          "option_text": "18%",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2026",
+          "option_text": "10%",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Assume the average age before the person dies = a\nThen the sum of ages = 4a\nAfter the person dies, the average = $\\frac{\\left(4a-60\\right)}{3}=a-8$\n=> a = 36\nSo, the new average = 36-8 = 28\nIn the year 2012, the age of each person will increase by 4, hence the average will also increase by 4.\nBefore the baby is born, the average = 28+4 = 32\n=> the sum of ages = 32*3 = 96\nAfter the baby is born, the sum of ages will remain the same, but the number of members will increase to 4.\nHence, the new average = $\\frac{96}{4}=24$\nIt will take 12 years for the average to become 24+12 = 36\nHence the year will be 2012+12 = 2024.",
+      "solution_text": "Let the cost price of 1000 ml of milk be Rs. X.\nRavi got 1250 ml of milk for the cost price of 1000 ml. \nSo, the effective cost price = Rs. $\\dfrac{X}{1250}\\times1000\\ =\\dfrac{X}{1.25}$\nNow, in every litre of milk, he has added 80 ml of water, so the actual milk he is selling per litre = 1000ml - 80 ml = 920 ml.\nSo, the cost price of this 920 ml of milk: $\\dfrac{X}{1.25}\\times0.92$\nNow, Ravi wants to earn 100% profit, so the selling price has to be equal to twice of $\\dfrac{X}{1.25}\\times0.92$.\nHence, selling price = $2\\times\\dfrac{X}{1.25}\\times0.92$\nNow, he marked up the cost price by 60%, so the marked price = $1.6X$\nLet the maximum discount he can allow be z%.\nSo, the selling price = MP - Discount\n$1.6X\\times\\left(1-\\dfrac{z}{100}\\right)$\nThis selling price should be equal to twice the cost price. \nHence, $1.6X\\times\\left(1-\\dfrac{z}{100}\\right)$ = $2\\times\\dfrac{X}{1.25}\\times0.92$\nz = 8%",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA family consisted of four members. In the year 2008, a 60 years old person dies and the average age of the family decreased by 8. Then in the year 2012, a baby is born. In which year the average age of the family will again be equal to the original average age of the family just before the person had died.\n\n**Options:**\n- **A**. 2018\n- **B**. 2020\n- **C**. 2024 ✅\n- **D**. 2026\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the average age before the person dies = a\nThen the sum of ages = 4a\nAfter the person dies, the average = $\\frac{\\left(4a-60\\right)}{3}=a-8$\n=> a = 36\nSo, the new average = 36-8 = 28\nIn the year 2012, the age of each person will increase by 4, hence the average will also increase by 4.\nBefore the baby is born, the average = 28+4 = 32\n=> the sum of ages = 32*3 = 96\nAfter the baby is born, the sum of ages will remain the same, but the number of members will increase to 4.\nHence, the new average = $\\frac{96}{4}=24$\nIt will take 12 years for the average to become 24+12 = 36\nHence the year will be 2012+12 = 2024."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRavi buys milk using a container that holds 1250 ml, but pays only for 1000 ml. While selling, he adds 80 ml of water to every 920 ml of milk and marks up the cost price by 60%. What is the maximum discount he can offer on the marked price while still making a 100% profit?\n\n**Options:**\n- **A**. 24%\n- **B**. 8% ✅\n- **C**. 18%\n- **D**. 10%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price of 1000 ml of milk be Rs. X.\nRavi got 1250 ml of milk for the cost price of 1000 ml. \nSo, the effective cost price = Rs. $\\dfrac{X}{1250}\\times1000\\ =\\dfrac{X}{1.25}$\nNow, in every litre of milk, he has added 80 ml of water, so the actual milk he is selling per litre = 1000ml - 80 ml = 920 ml.\nSo, the cost price of this 920 ml of milk: $\\dfrac{X}{1.25}\\times0.92$\nNow, Ravi wants to earn 100% profit, so the selling price has to be equal to twice of $\\dfrac{X}{1.25}\\times0.92$.\nHence, selling price = $2\\times\\dfrac{X}{1.25}\\times0.92$\nNow, he marked up the cost price by 60%, so the marked price = $1.6X$\nLet the maximum discount he can allow be z%.\nSo, the selling price = MP - Discount\n$1.6X\\times\\left(1-\\dfrac{z}{100}\\right)$\nThis selling price should be equal to twice the cost price. \nHence, $1.6X\\times\\left(1-\\dfrac{z}{100}\\right)$ = $2\\times\\dfrac{X}{1.25}\\times0.92$\nz = 8%",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-4-22",
       "passage_text": "",
-      "question_text": "A group of workers can complete a piece of work in a certain number of days. The entire group starts doing the work but however after 18 days one-fourth of the workers left. To complete the remaining work the remaining group took as much time as the entire group would have taken to complete the whole work. What is the total time that would have been taken to complete the entire work, if instead, one-third of the group had left after working for 24 days?",
+      "question_text": "Kayley wants to buy a car priced at 12 lakh rupees. After a 3.5% discount, she borrows the remaining amount at a 20% interest rate, compounded annually. She repays the loan in three instalments, forming a decreasing arithmetic progression, where the first instalment is thrice the last. Determine the total interest paid (in rupees) over the three years.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "48 days",
+          "option_text": "354600",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "72 days",
+          "option_text": "456300",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "96 days",
-          "is_correct": true
+          "option_text": "546700",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "90 days",
-          "is_correct": false
+          "option_text": "397200",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us suppose that ‘x’ men can do the complete work in ‘y’ days. \nIt is given that the whole group worked for 18 days and three-fourth of the group worked for the remaining days and completed the work in as much time as the entire group would have taken to complete the whole work.\nSo we get,\n$xy=18x+\\frac{3}{4}xy$\n$y=72$ days\nNow we need to find the time that would have been taken to complete the entire work, if instead, one-third of the group had left after working for 24 days.\nLet that time be ‘z’ days\nSo we get,\n$xy=24x+\\frac{2}{3}xz$\n$72x-24x=\\frac{2}{3}xz$\n$z=72$ days\nHence, the total number of days = 72 + 24 = 96 days\nHence Option C.",
+      "solution_text": "The car is priced at 12 Lakh rupees. A 3.5% discount means she needs to borrow (100-3.5)(12,00,000)=11,58,000 rupees. \nLet's take this as the principle amount, \"P.\" We know that the interest rate is constant at 20%. The instalments vary, with the second instalment twice the last and the first thrice the last. \nConsider X as the cost of the first instalment. \nDrawing up the equation for that we get, $1.2\\left(P\\right)-3X$ after the first year and first payment\nNext, we have, $1.2\\left(1.2P-3X\\right)-2X$\nFinally, for the third year, $1.2\\left(1.2\\left(1.2P-3X\\right)-2X\\right)-X=0$\nExpanding we get, $P=\\frac{X}{r^3}+\\frac{2X}{r^2}+\\frac{3X}{r}$\n$X\\left(1+2r+3r^2\\right)=\\Pr^3$\n$X\\left(7.72\\right)=1.728P$\nSubstituting the value for P, we get, \n$X=259200$\nThe total money paid by Kayley over the three years will be 6x259200=15,55,200\nInterest paid will be 397200 rupees. \nTherefore, Option D is the correct answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of workers can complete a piece of work in a certain number of days. The entire group starts doing the work but however after 18 days one-fourth of the workers left. To complete the remaining work the remaining group took as much time as the entire group would have taken to complete the whole work. What is the total time that would have been taken to complete the entire work, if instead, one-third of the group had left after working for 24 days?\n\n**Options:**\n- **A**. 48 days\n- **B**. 72 days\n- **C**. 96 days ✅\n- **D**. 90 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet us suppose that ‘x’ men can do the complete work in ‘y’ days. \nIt is given that the whole group worked for 18 days and three-fourth of the group worked for the remaining days and completed the work in as much time as the entire group would have taken to complete the whole work.\nSo we get,\n$xy=18x+\\frac{3}{4}xy$\n$y=72$ days\nNow we need to find the time that would have been taken to complete the entire work, if instead, one-third of the group had left after working for 24 days.\nLet that time be ‘z’ days\nSo we get,\n$xy=24x+\\frac{2}{3}xz$\n$72x-24x=\\frac{2}{3}xz$\n$z=72$ days\nHence, the total number of days = 72 + 24 = 96 days\nHence Option C."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nKayley wants to buy a car priced at 12 lakh rupees. After a 3.5% discount, she borrows the remaining amount at a 20% interest rate, compounded annually. She repays the loan in three instalments, forming a decreasing arithmetic progression, where the first instalment is thrice the last. Determine the total interest paid (in rupees) over the three years.\n\n**Options:**\n- **A**. 354600\n- **B**. 456300\n- **C**. 546700\n- **D**. 397200 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe car is priced at 12 Lakh rupees. A 3.5% discount means she needs to borrow (100-3.5)(12,00,000)=11,58,000 rupees. \nLet's take this as the principle amount, \"P.\" We know that the interest rate is constant at 20%. The instalments vary, with the second instalment twice the last and the first thrice the last. \nConsider X as the cost of the first instalment. \nDrawing up the equation for that we get, $1.2\\left(P\\right)-3X$ after the first year and first payment\nNext, we have, $1.2\\left(1.2P-3X\\right)-2X$\nFinally, for the third year, $1.2\\left(1.2\\left(1.2P-3X\\right)-2X\\right)-X=0$\nExpanding we get, $P=\\frac{X}{r^3}+\\frac{2X}{r^2}+\\frac{3X}{r}$\n$X\\left(1+2r+3r^2\\right)=\\Pr^3$\n$X\\left(7.72\\right)=1.728P$\nSubstituting the value for P, we get, \n$X=259200$\nThe total money paid by Kayley over the three years will be 6x259200=15,55,200\nInterest paid will be 397200 rupees. \nTherefore, Option D is the correct answer.",
+      "type": "quants"
     }
   ]
 }

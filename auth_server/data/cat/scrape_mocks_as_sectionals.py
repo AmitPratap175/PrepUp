@@ -95,6 +95,7 @@ async def test_news_crawl_quants(urls: str, type: str) -> Dict[str, List[str]]:
     run_config = CrawlerRunConfig(
         scan_full_page=True,
         js_code=[
+            "Array.from(document.querySelectorAll('a')).find(a => a.textContent.includes('Switch to old version'))?.click()",
             "window.scrollTo(0, document.body.scrollHeight);",
             "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Show Correct Answer'))?.click()",
         ],
@@ -458,6 +459,7 @@ async def test_news_crawl(urls: str, type: str) -> Dict[str, List[str]]:
     run_config = CrawlerRunConfig(
         scan_full_page=True,
         js_code=[
+            "Array.from(document.querySelectorAll('a')).find(a => a.textContent.includes('Switch to old version'))?.click()",
             "window.scrollTo(0, document.body.scrollHeight);",
             "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Show Correct Answer'))?.click()",
         ],
@@ -800,45 +802,30 @@ if __name__ == "__main__":
     with open(Path(__file__).parent /"urls_cracku_mocks.txt", "r") as f:
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
-        for url_curr in urls_raw:
+        # for url_curr in urls_raw:
             
-            type_curr = "varc"
-            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
+    #         type_curr = "varc"
+    #         urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
     
-            # Step 2: Crawl the web pages to get HTML content.
-            categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
-            # print(categorized_html)
-            # print(f"Crawled {len(categorized_html['quant'])} pages successfully.")
+    #         # Step 2: Crawl the web pages to get HTML content.
+    #         categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
+    #         # print(categorized_html)
+    #         # print(f"Crawled {len(categorized_html['quant'])} pages successfully.")
             
-            # Step 3: Pass the crawled data to the main processing function.
-            main(categorized_html, type_curr)
+    #         # Step 3: Pass the crawled data to the main processing function.
+    #         main(categorized_html, type_curr)
         
-        for url_curr in urls_raw:
-            type_curr = "dilr"
-            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
+    #     for url_curr in urls_raw:
+    #         type_curr = "dilr"
+    #         urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
 
-            # Step 2: Crawl the web pages to get HTML content.
-            categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
-            # print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
+    #         # Step 2: Crawl the web pages to get HTML content.
+    #         categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
+    #         # print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
             
-            # Step 3: Pass the crawled data to the main processing function.
-            main(categorized_html, type_curr)
+    #         # Step 3: Pass the crawled data to the main processing function.
+    #         main(categorized_html, type_curr)
 
-    # print("--- Running qid cleaning script ---")
-    # script_dir = Path(__file__).parent
-    # project_root = script_dir.parent.parent.parent
-    
-    # intermediate_dir = script_dir.parent / "temp_json"
-    # final_destination_dir = project_root / "auth_server/data/cat/mocks"
-    # clean_qid_main(final_destination_dir)
-    # print("--- Finished qid cleaning script ---")
-
-
-    print("--- Starting daily quants question processing ---")
-    # Step 1: Get the updated daily numbers for crawling.
-    with open(Path(__file__).parent /"urls_cracku_mocks.txt", "r") as f:
-        urls_raw = [line.strip() for line in f if line.strip()]
-        urls = []
         for url_curr in urls_raw:
             type_curr = "quants"
             urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]

@@ -7,6 +7,15 @@ from rest_framework.permissions import IsAuthenticated
 from .serializers import UserSerializer, BookmarkSerializer, WordSerializer, StudyHeartbeatSerializer
 from .models import Bookmark, Word, StudyDay
 from datetime import date, timedelta
+import subprocess
+import tempfile
+import os
+import shutil
+import re
+import requests
+import uuid
+from django.http import FileResponse
+from api.storage import storage
 
 User = get_user_model()
 
@@ -487,3 +496,313 @@ class StudySummaryView(APIView):
             'today_hours': round(today_hours, 2),
             'week_summary': week_summary
         })
+
+class BookmarkPDFExportView(APIView):
+    """
+    Generates and returns a PDF of bookmarked questions for a specific subject.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        subject = request.data.get('subject')
+        if not subject:
+            return Response({'error': 'Subject is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = request.user
+        bookmarks = Bookmark.objects.filter(user=user, subject=subject)
+        
+        if not bookmarks.exists():
+             return Response({'error': 'No bookmarks found for this subject'}, status=status.HTTP_404_NOT_FOUND)
+
+        questions = []
+        practice_tests = storage.get_practice_tests()
+        
+        for bookmark in bookmarks:
+            found = False
+            for test in practice_tests:
+                if test.get('questions'):
+                    for q in test['questions']:
+                        q_id = q.get('qid') or q.get('id')
+                        if str(q_id) == str(bookmark.question_id):
+                             questions.append(q)
+                             found = True
+                             break
+                if found: break
+        
+        if not questions:
+             return Response({'error': 'Could not retrieve question data'}, status=status.HTTP_404_NOT_FOUND)
+
+        try:
+            with tempfile.TemporaryDirectory() as temp_dir:
+                latex_content = self._generate_latex(subject, questions, temp_dir)
+                pdf_path = self._compile_latex(latex_content, temp_dir)
+                
+                # Copy PDF to a safe location before temp_dir is deleted
+                fd, safe_pdf_path = tempfile.mkstemp(suffix='.pdf')
+                with os.fdopen(fd, 'wb') as tmp:
+                    with open(pdf_path, 'rb') as src:
+                        shutil.copyfileobj(src, tmp)
+
+            pdf_file = open(safe_pdf_path, 'rb')
+            response = FileResponse(pdf_file, content_type='application/pdf')
+            response['Content-Disposition'] = f'attachment; filename="{subject}_bookmarks.pdf"'
+            return response
+        except Exception as e:
+            print(f"PDF Generation Error: {e}")
+            return Response({'error': 'Failed to generate PDF. Please ensure backend has texlive installed.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def _download_image(self, image_url, temp_dir):
+        """
+        Downloads an image from a URL to the temp directory.
+        Returns the filename if successful, None otherwise.
+        """
+        try:
+            # Generate unique filename
+            ext = os.path.splitext(image_url)[1] or '.png'
+            # Clean extension
+            ext = ext.split('?')[0]
+            if ext.lower() not in ['.png', '.jpg', '.jpeg', '.pdf']:
+                ext = '.png'
+            
+            filename = f"img_{uuid.uuid4().hex}{ext}"
+            filepath = os.path.join(temp_dir, filename)
+            
+            # Download image
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            response = requests.get(image_url, headers=headers, timeout=10, verify=False)
+            if response.status_code == 200:
+                with open(filepath, 'wb') as f:
+                    f.write(response.content)
+                return filename
+            else:
+                print(f"Image download failed: {image_url} - Status: {response.status_code}")
+                return None
+        except Exception as e:
+            print(f"Failed to process image {image_url}: {e}")
+            return None
+
+    def _process_text_with_images(self, text, temp_dir):
+        """
+        Converts markdown text to LaTeX and handles image downloading.
+        """
+        if not text: return ""
+
+        # Function to replace image matches
+        def replace_image(match):
+            alt_text = match.group(1)
+            image_url = match.group(2)
+            
+            filename = self._download_image(image_url, temp_dir)
+            if filename:
+                return f'\\begin{{figure}}[H] \\centering \\includegraphics[width=0.8\\linewidth]{{{filename}}} \\caption{{{self._markdown_to_latex(alt_text)}}} \\end{{figure}}'
+            else:
+                return ""
+
+        # Regex for markdown images: ![alt](url)
+        # We split the text by image patterns to process text and images separately
+        
+        pattern = r'!\[(.*?)\]\((.*?)\)'
+        parts = re.split(pattern, text)
+        
+        # parts will be: [text, alt, url, text, alt, url, text...]
+        
+        result = []
+        i = 0
+        while i < len(parts):
+            # Process text part
+            result.append(self._markdown_to_latex(parts[i]))
+            
+            # If there are more parts, it means we hit an image
+            if i + 2 < len(parts):
+                alt = parts[i+1]
+                url = parts[i+2]
+                
+                # Create a mock match object for our replacer
+                class Match:
+                    def group(self, n):
+                        return alt if n == 1 else url
+                
+                result.append(replace_image(Match()))
+                i += 3
+            else:
+                i += 1
+                
+        return ''.join(result)
+
+    def _markdown_to_latex(self, text):
+        if not text: return ""
+        
+        # Basic markdown to latex, preserving math
+        parts = re.split(r'(\$[^$]+\$)', text)
+        
+        processed_parts = []
+        for part in parts:
+            if part.startswith('$') and part.endswith('$'):
+                processed_parts.append(part)
+            else:
+                part = part.replace('\\', '\\textbackslash{}') \
+                           .replace('{', '\\{').replace('}', '\\}') \
+                           .replace('&', '\\&').replace('#', '\\#') \
+                           .replace('^', '\\textasciicircum{}') \
+                           .replace('_', '\\_').replace('~', '\\textasciitilde{}') \
+                           .replace('%', '\\%')
+                part = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', part)
+                part = re.sub(r'\*(.*?)\*', r'\\textit{\1}', part)
+                part = part.replace('\n', ' \\\\ \n')
+                processed_parts.append(part)
+        
+        return ''.join(processed_parts)
+
+    def _generate_latex(self, subject, questions, temp_dir):
+        content = [
+            r'\documentclass[12pt]{article}',
+            r'\usepackage[utf8]{inputenc}',
+            r'\usepackage{amsmath}',
+            r'\usepackage{amssymb}',
+            r'\usepackage{geometry}',
+            r'\usepackage{enumitem}',
+            r'\usepackage{fancyhdr}',
+            r'\usepackage{graphicx}',
+            r'\usepackage{float}',
+            r'\usepackage{longtable}',
+            r'\geometry{a4paper, margin=1in}',
+            r'\setlength{\headheight}{15pt}',  # Fix fancyhdr warning
+            r'\pagestyle{fancy}',
+            r'\fancyhf{}',
+            f'\\rhead{{PrepUp - {subject}}}',
+            r'\lhead{Bookmarked Questions}',
+            r'\rfoot{Page \thepage}',
+            r'\begin{document}',
+            r'\section*{Questions}',
+            r'\begin{enumerate}'
+        ]
+
+        # Prepare solutions list
+        solutions_list = []
+
+        for i, q in enumerate(questions):
+            # ... existing question processing ...
+            item_content = ""
+            passage = q.get('passage_text')
+            if passage:
+                passage_text = self._process_text_with_images(passage, temp_dir)
+                item_content += f'\\textbf{{Passage:}} {passage_text} \\\\ \\vspace{{0.2cm}}\n'
+            
+            q_text = self._process_text_with_images(q.get('question', '') or q.get('question_text', ''), temp_dir)
+            item_content += f"{{\\bfseries {q_text}}}"
+            
+            # Handle explicit image_url field
+            image_url_raw = q.get('image_url')
+            if image_url_raw:
+                # Handle comma-separated URLs
+                urls = [url.strip() for url in image_url_raw.split(',') if url.strip()]
+                
+                for url in urls:
+                    print(f"Processing image URL: {url}") # Debug log
+                    filename = self._download_image(url, temp_dir)
+                    if filename:
+                        image_latex = f'\\begin{{figure}}[H] \\centering \\includegraphics[width=0.8\\linewidth]{{{filename}}} \\caption{{Question Image}} \\end{{figure}}'
+                        item_content += f" \\\\ {image_latex}"
+                    else:
+                        print(f"Failed to download image: {url}")
+
+            content.append(f'  \\item {item_content}')
+            content.append(r'  \begin{enumerate}[label=(\Alph*)]')
+            
+            options = q.get('options', [])
+            for opt in options:
+                # Handle both string options and object options
+                opt_text_raw = opt
+                if isinstance(opt, dict):
+                    opt_text_raw = opt.get('option_text', '')
+                
+                opt_text = self._process_text_with_images(opt_text_raw, temp_dir)
+                content.append(f'    \\item {opt_text}')
+            content.append(r'  \end{enumerate}')
+            
+            # Collect solution if available
+            solution = q.get('solution_text')
+            if solution:
+                 sol_text = self._process_text_with_images(solution, temp_dir)
+                 solutions_list.append(f'\\textbf{{Q.{i+1}:}} {sol_text} \\\\ \\vspace{{0.5cm}}')
+            
+            content.append(r'  \vspace{0.5cm}')
+
+        content.append(r'\end{enumerate}')
+        content.append(r'\newpage')
+        content.append(r'\section*{Answer Key}')
+        
+        # Use longtable for multi-page support
+        content.append(r'\begin{longtable}{|c|c|}')
+        content.append(r'\hline')
+        content.append(r'\textbf{Q.No} & \textbf{Answer} \\')
+        content.append(r'\hline')
+        content.append(r'\endhead') # Header for every page
+        
+        for i, q in enumerate(questions):
+            answer = q.get('correctAnswer') or q.get('correct_option_data') or ''
+            options = q.get('options', [])
+            
+            # Try to determine the label (A, B, C, D)
+            answer_label = str(answer)
+            
+            # If answer is an index (1-based string or int)
+            if str(answer).isdigit():
+                idx = int(answer) - 1
+                if 0 <= idx < 26:
+                    answer_label = chr(65 + idx)
+            
+            # If answer matches option text
+            else:
+                 for idx, opt in enumerate(options):
+                    opt_val = opt
+                    if isinstance(opt, dict):
+                        opt_val = opt.get('option_text', '')
+                    
+                    if opt_val == answer:
+                        answer_label = chr(65 + idx)
+                        break
+
+            content.append(f'{i + 1} & {answer_label} \\\\ \\hline')
+
+        content.append(r'\end{longtable}')
+        
+        # Append Solutions Section
+        if solutions_list:
+            content.append(r'\newpage')
+            content.append(r'\section*{Solutions}')
+            for sol in solutions_list:
+                content.append(sol)
+
+        content.append(r'\end{document}')
+
+        return '\n'.join(content)
+
+    def _compile_latex(self, latex_content, temp_dir):
+        tex_file = os.path.join(temp_dir, 'document.tex')
+        with open(tex_file, 'w') as f:
+            f.write(latex_content)
+        
+        # Run pdflatex twice to ensure references/layout are correct
+        for _ in range(2):
+            process = subprocess.run(
+                ['pdflatex', '-interaction=nonstopmode', 'document.tex'],
+                cwd=temp_dir,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE
+            )
+        
+        if process.returncode != 0:
+            print("LaTeX Compilation Warning/Error:")
+            # Use errors='replace' to avoid UnicodeDecodeError on non-utf8 output
+            print(process.stdout.decode('utf-8', errors='replace'))
+            print(process.stderr.decode('utf-8', errors='replace'))
+            # Don't raise exception immediately, check if PDF was generated
+
+        pdf_file = os.path.join(temp_dir, 'document.pdf')
+        if not os.path.exists(pdf_file):
+            raise Exception("PDF file was not generated")
+        
+        return pdf_file

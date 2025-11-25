@@ -347,13 +347,17 @@ def add_question_view(request):
 
 
 from rest_framework.views import APIView
+from adrf.views import APIView as AsyncAPIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
 from rest_framework import status
 from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
 from datetime import datetime, timezone
+from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
+from datetime import datetime, timezone
 from .storage import storage
+from .services.question_generator import QuestionGenerator
 
 class ChatbotView(APIView):
     """
@@ -763,3 +767,699 @@ class UserQuizStateView(APIView):
             return Response({'last_question_index': quiz_state.last_question_index}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class GenerateQuestionsView(AsyncAPIView):
+    """
+    Generates practice questions using AI.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def post(self, request):
+        """
+        Generates questions based on topic and difficulty.
+        """
+        exam_type = request.data.get('examType')
+        subject = request.data.get('subject')
+        topic = request.data.get('topic')
+        difficulty = request.data.get('difficulty')
+        count = request.data.get('count', 5)
+
+        if not all([exam_type, subject, topic, difficulty]):
+            return Response(
+                {'error': 'examType, subject, topic, and difficulty are required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        generator = QuestionGenerator()
+        questions = await generator.generate_questions(exam_type, subject, topic, difficulty, count)
+
+        if questions:
+            return Response(questions, status=status.HTTP_200_OK)
+        else:
+            return Response(
+                {'error': 'Failed to generate questions'}, 
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+from .chatbot.tools.safe_tools import safe_tools_list
+from .chatbot.tools.dynamic_tools import dynamic_tools_list
+from langchain_core.tools import StructuredTool
+
+def convert_to_gemini_tool(tool: StructuredTool):
+    """Converts a LangChain tool to a Gemini tool declaration."""
+    schema = tool.args_schema.schema() if tool.args_schema else {"type": "object", "properties": {}}
+    
+    # Gemini expects 'type' to be uppercase
+    def fix_types(schema_part):
+        if 'type' in schema_part:
+            schema_part['type'] = schema_part['type'].upper()
+        if 'properties' in schema_part:
+            for prop in schema_part['properties'].values():
+                fix_types(prop)
+    
+    fix_types(schema)
+
+    return {
+        "name": tool.name,
+        "description": tool.description,
+        "parameters": schema
+    }
+
+class ChatbotToolsView(AsyncAPIView):
+    """
+    Exposes available backend tools for the frontend voice agent.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def get(self, request):
+        all_tools = safe_tools_list + dynamic_tools_list
+        gemini_tools = [convert_to_gemini_tool(t) for t in all_tools]
+        return Response({"tools": gemini_tools})
+
+class ChatbotToolExecutionView(AsyncAPIView):
+    """
+    Executes a backend tool requested by the frontend voice agent.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def post(self, request):
+        tool_name = request.data.get('name')
+        arguments = request.data.get('arguments', {})
+        
+        all_tools = safe_tools_list + dynamic_tools_list
+        tool = next((t for t in all_tools if t.name == tool_name), None)
+        
+        if not tool:
+            return Response({"error": f"Tool {tool_name} not found"}, status=status.HTTP_404_NOT_FOUND)
+            
+        try:
+            # Pass token in config if needed
+            config = {"configurable": {"token": request.auth.key}}
+            result = await tool.ainvoke(arguments, config=config)
+            return Response({"result": result})
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class LeaderboardView(APIView):
+    """
+    Returns leaderboard data for top users.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Get leaderboard rankings.
+        Query params:
+        - type: 'score' or 'streak' (default: 'score')
+        - limit: number of users to return (default: 50)
+        """
+        leaderboard_type = request.query_params.get('type', 'score')
+        limit = int(request.query_params.get('limit', 50))
+        
+        if leaderboard_type == 'streak':
+            top_users = User.objects.order_by('-current_streak', '-total_score')[:limit]
+        else:
+            top_users = User.objects.order_by('-total_score', '-current_streak')[:limit]
+        
+        leaderboard_data = []
+        for rank, user in enumerate(top_users, start=1):
+            leaderboard_data.append({
+                'rank': rank,
+                'name': user.name,
+                'email': user.email,
+                'total_score': user.total_score,
+                'current_streak': user.current_streak,
+                'exam_type': user.exam_type,
+                'is_current_user': user.id == request.user.id
+            })
+        
+        return Response({
+            'type': leaderboard_type,
+            'leaderboard': leaderboard_data
+        })
+
+class PerformanceAnalyticsView(AsyncAPIView):
+    """
+    Returns detailed performance analytics for the authenticated user.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def get(self, request):
+        """
+        Get detailed analytics including:
+        - Topic-wise performance
+        - Accuracy over time
+        - Streak history
+        - Recent activity
+        """
+        user = request.user
+        
+        # Get all test sessions for the user
+        test_sessions = TestSession.objects.filter(user=user).order_by('-created_at')[:30]
+        
+        # Calculate topic-wise performance
+        topic_performance = {}
+        accuracy_over_time = []
+        
+        for session in test_sessions:
+            # Topic performance (simplified - would need actual question data)
+            test_type = session.test_type
+            if test_type not in topic_performance:
+                topic_performance[test_type] = {
+                    'total_questions': 0,
+                    'correct_answers': 0,
+                    'accuracy': 0
+                }
+            
+            topic_performance[test_type]['total_questions'] += session.total_questions
+            topic_performance[test_type]['correct_answers'] += session.correct_answers
+            
+            # Accuracy over time
+            accuracy = (session.correct_answers / session.total_questions * 100) if session.total_questions > 0 else 0
+            accuracy_over_time.append({
+                'date': session.created_at.strftime('%Y-%m-%d'),
+                'accuracy': round(accuracy, 2),
+                'score': session.score
+            })
+        
+        # Calculate final topic accuracies
+        for topic in topic_performance:
+            total = topic_performance[topic]['total_questions']
+            correct = topic_performance[topic]['correct_answers']
+            topic_performance[topic]['accuracy'] = round((correct / total * 100) if total > 0 else 0, 2)
+        
+        # Get study days for streak history
+        study_days = StudyDay.objects.filter(user=user).order_by('-date')[:30]
+        streak_history = [
+            {
+                'date': day.date.strftime('%Y-%m-%d'),
+                'minutes_studied': day.minutes_studied
+            }
+            for day in study_days
+        ]
+        
+        return Response({
+            'user': {
+                'name': user.name,
+                'total_score': user.total_score,
+                'current_streak': user.current_streak,
+                'exam_type': user.exam_type
+            },
+            'topic_performance': topic_performance,
+            'accuracy_over_time': accuracy_over_time,
+            'streak_history': streak_history,
+            'total_tests_taken': test_sessions.count()
+        })
+
+class MockTestLeaderboardView(AsyncAPIView):
+    """
+    Returns leaderboard for a specific mock test.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def get(self, request, test_id):
+        """
+        Get leaderboard for a specific test.
+        """
+        from api.models import MockTestLeaderboard
+        
+        leaderboard_entries = MockTestLeaderboard.objects.filter(
+            test_id=test_id
+        ).select_related('user').order_by('rank')[:100]
+        
+        leaderboard_data = []
+        for entry in leaderboard_entries:
+            leaderboard_data.append({
+                'rank': entry.rank,
+                'name': entry.user.name,
+                'email': entry.user.email,
+                'score': entry.score,
+                'timestamp': entry.timestamp.isoformat(),
+                'is_current_user': entry.user.id == request.user.id
+            })
+        
+        return Response({
+            'test_id': test_id,
+            'leaderboard': leaderboard_data
+        })
+
+
+class BadgeListView(APIView):
+    """
+    Returns all available badges.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Get all available badges.
+        """
+        from api.models import Badge
+        
+        badges = Badge.objects.all().order_by('category', 'points')
+        
+        badge_data = []
+        for badge in badges:
+            badge_data.append({
+                'id': str(badge.id),
+                'name': badge.name,
+                'description': badge.description,
+                'icon_emoji': badge.icon_emoji,
+                'icon_url': badge.icon_url,
+                'category': badge.category,
+                'points': badge.points,
+                'criteria': badge.criteria
+            })
+        
+        return Response({'badges': badge_data})
+
+
+class UserBadgesView(APIView):
+    """
+    Returns badges earned by the authenticated user.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Get user's earned badges.
+        """
+        from api.models import UserBadge
+        
+        user_badges = UserBadge.objects.filter(
+            user=request.user
+        ).select_related('badge').order_by('-earned_at')
+        
+        badge_data = []
+        for user_badge in user_badges:
+            badge = user_badge.badge
+            badge_data.append({
+                'id': str(badge.id),
+                'name': badge.name,
+                'description': badge.description,
+                'icon_emoji': badge.icon_emoji,
+                'icon_url': badge.icon_url,
+                'category': badge.category,
+                'points': badge.points,
+                'earned_at': user_badge.earned_at.isoformat()
+            })
+        
+        return Response({
+            'badges': badge_data,
+            'total_points': sum(b['points'] for b in badge_data)
+        })
+
+
+class TestSessionAnalyticsView(AsyncAPIView):
+    """
+    Returns detailed analytics for a specific test session.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def get(self, request, session_id):
+        """
+        Get detailed analytics for a test session.
+        """
+        from api.models import TestSession, UserAnswer
+        
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+        except TestSession.DoesNotExist:
+            return Response(
+                {'error': 'Session not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        # Get all user answers for this session
+        user_answers = UserAnswer.objects.filter(session=session).order_by('id')
+        
+        # Calculate topic-wise performance
+        topic_stats = {}
+        question_details = []
+        
+        for answer in user_answers:
+            # Track topic performance
+            topic = answer.topic or 'General'
+            if topic not in topic_stats:
+                topic_stats[topic] = {
+                    'total': 0,
+                    'correct': 0,
+                    'total_time': 0
+                }
+            
+            topic_stats[topic]['total'] += 1
+            if answer.is_correct:
+                topic_stats[topic]['correct'] += 1
+            topic_stats[topic]['total_time'] += answer.time_spent
+            
+            # Question details
+            question_details.append({
+                'question_id': answer.question_id,
+                'question_text': answer.question_text,
+                'topic': answer.topic,
+                'user_answer': answer.user_answer,
+                'correct_answer': answer.correct_answer,
+                'is_correct': answer.is_correct,
+                'time_spent': answer.time_spent,
+                'status': answer.status
+            })
+        
+        # Calculate topic accuracies
+        topic_performance = []
+        for topic, stats in topic_stats.items():
+            accuracy = (stats['correct'] / stats['total'] * 100) if stats['total'] > 0 else 0
+            avg_time = stats['total_time'] / stats['total'] if stats['total'] > 0 else 0
+            topic_performance.append({
+                'topic': topic,
+                'total_questions': stats['total'],
+                'correct_answers': stats['correct'],
+                'accuracy': round(accuracy, 2),
+                'average_time': round(avg_time, 2)
+            })
+        
+        return Response({
+            'session': {
+                'id': str(session.id),
+                'test_id': session.test_id,
+                'score': session.score,
+                'total_questions': session.total_questions,
+                'correct_answers': session.correct_answers,
+                'start_time': session.start_time.isoformat(),
+                'end_time': session.end_time.isoformat() if session.end_time else None
+            },
+            'topic_performance': topic_performance,
+            'question_details': question_details
+        })
+
+# Essay System Views
+
+class EssayTopicGenerateView(AsyncAPIView):
+    """
+    Generate new essay topics using LLM.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def post(self, request):
+        """
+        Generate essay topics for a specific domain.
+        """
+        from api.services.essay_topic_generator import EssayTopicGenerator
+        from api.models import EssayTopic
+        
+        domain = request.data.get('domain')
+        count = request.data.get('count', 3)
+        
+        if not domain:
+            return Response(
+                {'error': 'domain is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        generator = EssayTopicGenerator()
+        topics_data = await generator.research_current_topics(domain, count)
+        
+        # Save topics to database
+        created_topics = []
+        for topic_data in topics_data:
+            topic = EssayTopic.objects.create(
+                title=topic_data.get('title', ''),
+                description=topic_data.get('description', ''),
+                domain=domain,
+                difficulty=topic_data.get('difficulty', 'medium'),
+                context=topic_data.get('context', ''),
+                key_points=topic_data.get('key_points', [])
+            )
+            created_topics.append({
+                'id': str(topic.id),
+                'title': topic.title,
+                'description': topic.description,
+                'domain': topic.domain,
+                'difficulty': topic.difficulty,
+                'context': topic.context,
+                'key_points': topic.key_points
+            })
+        
+        return Response({'topics': created_topics})
+
+
+class EssayTopicListView(APIView):
+    """
+    List available essay topics.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Get list of essay topics with optional filtering.
+        """
+        from api.models import EssayTopic
+        
+        domain = request.query_params.get('domain')
+        difficulty = request.query_params.get('difficulty')
+        
+        topics = EssayTopic.objects.all()
+        
+        if domain:
+            topics = topics.filter(domain=domain)
+        if difficulty:
+            topics = topics.filter(difficulty=difficulty)
+        
+        topics = topics[:50]  # Limit to 50 topics
+        
+        topics_data = []
+        for topic in topics:
+            topics_data.append({
+                'id': str(topic.id),
+                'title': topic.title,
+                'description': topic.description,
+                'domain': topic.domain,
+                'difficulty': topic.difficulty,
+                'context': topic.context,
+                'key_points': topic.key_points,
+                'created_at': topic.created_at.isoformat()
+            })
+        
+        return Response({'topics': topics_data})
+
+
+class EssayListCreateView(APIView):
+    """
+    List user's essays or create new essay.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Get user's essays.
+        """
+        from api.models import Essay
+        
+        status_filter = request.query_params.get('status')
+        
+        essays = Essay.objects.filter(user=request.user)
+        
+        if status_filter:
+            essays = essays.filter(status=status_filter)
+        
+        essays = essays[:50]
+        
+        essays_data = []
+        for essay in essays:
+            essays_data.append({
+                'id': str(essay.id),
+                'title': essay.title,
+                'topic_id': str(essay.topic.id) if essay.topic else None,
+                'topic_title': essay.topic.title if essay.topic else None,
+                'word_count': essay.word_count,
+                'time_spent': essay.time_spent,
+                'status': essay.status,
+                'created_at': essay.created_at.isoformat(),
+                'updated_at': essay.updated_at.isoformat(),
+                'submitted_at': essay.submitted_at.isoformat() if essay.submitted_at else None
+            })
+        
+        return Response({'essays': essays_data})
+
+    def post(self, request):
+        """
+        Create new essay.
+        """
+        from api.models import Essay, EssayTopic
+        
+        title = request.data.get('title')
+        topic_id = request.data.get('topic_id')
+        content = request.data.get('content', '')
+        
+        if not title:
+            return Response(
+                {'error': 'title is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        topic = None
+        if topic_id:
+            try:
+                topic = EssayTopic.objects.get(id=topic_id)
+            except EssayTopic.DoesNotExist:
+                pass
+        
+        essay = Essay.objects.create(
+            user=request.user,
+            topic=topic,
+            title=title,
+            content=content
+        )
+        
+        return Response({
+            'id': str(essay.id),
+            'title': essay.title,
+            'status': essay.status
+        }, status=status.HTTP_201_CREATED)
+
+
+class EssayDetailView(APIView):
+    """
+    Get, update, or delete a specific essay.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, essay_id):
+        """
+        Get essay details.
+        """
+        from api.models import Essay
+        
+        try:
+            essay = Essay.objects.get(id=essay_id, user=request.user)
+        except Essay.DoesNotExist:
+            return Response(
+                {'error': 'Essay not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        return Response({
+            'id': str(essay.id),
+            'title': essay.title,
+            'content': essay.content,
+            'topic_id': str(essay.topic.id) if essay.topic else None,
+            'topic_title': essay.topic.title if essay.topic else None,
+            'word_count': essay.word_count,
+            'time_spent': essay.time_spent,
+            'status': essay.status,
+            'created_at': essay.created_at.isoformat(),
+            'updated_at': essay.updated_at.isoformat()
+        })
+
+    def put(self, request, essay_id):
+        """
+        Update essay (auto-save).
+        """
+        from api.models import Essay
+        
+        try:
+            essay = Essay.objects.get(id=essay_id, user=request.user)
+        except Essay.DoesNotExist:
+            return Response(
+                {'error': 'Essay not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        if essay.status != 'draft':
+            return Response(
+                {'error': 'Cannot edit submitted essay'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        if 'content' in request.data:
+            essay.content = request.data['content']
+        if 'title' in request.data:
+            essay.title = request.data['title']
+        if 'word_count' in request.data:
+            essay.word_count = request.data['word_count']
+        if 'time_spent' in request.data:
+            essay.time_spent = request.data['time_spent']
+        
+        essay.save()
+        
+        return Response({'message': 'Essay updated successfully'})
+
+
+class EssaySubmitView(AsyncAPIView):
+    """
+    Submit essay for review.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def post(self, request, essay_id):
+        """
+        Submit essay and trigger LLM review.
+        """
+        from api.models import Essay
+        from api.tasks import review_essay
+        from django.utils import timezone
+        
+        try:
+            essay = Essay.objects.get(id=essay_id, user=request.user)
+        except Essay.DoesNotExist:
+            return Response(
+                {'error': 'Essay not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        if essay.status != 'draft':
+            return Response(
+                {'error': 'Essay already submitted'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        essay.status = 'submitted'
+        essay.submitted_at = timezone.now()
+        essay.save()
+        
+        # Trigger async review
+        review_essay.delay(str(essay.id))
+        
+        return Response({
+            'message': 'Essay submitted for review',
+            'essay_id': str(essay.id)
+        })
+
+
+class EssayReviewView(APIView):
+    """
+    Get essay review.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, essay_id):
+        """
+        Get review for an essay.
+        """
+        from api.models import Essay, EssayReview
+        
+        try:
+            essay = Essay.objects.get(id=essay_id, user=request.user)
+        except Essay.DoesNotExist:
+            return Response(
+                {'error': 'Essay not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        try:
+            review = EssayReview.objects.get(essay=essay)
+        except EssayReview.DoesNotExist:
+            return Response(
+                {'error': 'Review not available yet'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        return Response({
+            'overall_score': review.overall_score,
+            'structure_score': review.structure_score,
+            'coherence_score': review.coherence_score,
+            'arguments_score': review.arguments_score,
+            'language_score': review.language_score,
+            'detailed_feedback': review.detailed_feedback,
+            'improvement_suggestions': review.improvement_suggestions,
+            'reviewed_at': review.reviewed_at.isoformat()
+        })

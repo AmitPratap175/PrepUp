@@ -9,6 +9,7 @@ from django.urls import path
 from .views import (
     SignupView, LoginView, LogoutView, UserDetailsView,
     BookmarkListView, BookmarkCreateView, BookmarkDeleteView,
+    BookmarkPDFExportView,
     WordListView, WordCreateView, WordDeleteView,
     StudyHeartbeatView, StudySummaryView
 )
@@ -20,6 +21,7 @@ urlpatterns = [
     path('user/', UserDetailsView.as_view(), name='user-details'),
     path('bookmarks/', BookmarkListView.as_view(), name='bookmark-list'),
     path('bookmarks/create/', BookmarkCreateView.as_view(), name='bookmark-create'),
+    path('bookmarks/export-pdf/', BookmarkPDFExportView.as_view(), name='bookmark-export-pdf'),
     path('bookmarks/delete/<str:question_id>/', BookmarkDeleteView.as_view(), name='bookmark-delete'),
     path('words/', WordListView.as_view(), name='word-list'),
     path('words/create/', WordCreateView.as_view(), name='word-create'),

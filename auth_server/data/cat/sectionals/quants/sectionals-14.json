@@ -3,24 +3,132 @@
     {
       "qid": "quant-sectionals-14-1",
       "passage_text": "",
-      "question_text": "Find out the total number of straight lines that can be drawn through the following 4 points (3,2), (-3,-4), (11,10) and (-2,-1).",
+      "question_text": "The author mentions the examples of Detroit and Appalachia to illustrate",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4",
-          "is_correct": true
+          "option_text": "the need for greater investment in industrial and place-based policies to support workers and communities dependent on fossil fuel industries.",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1",
+          "option_text": "why just transition policies which ensure equitable support for workers and communities during the transition period are absolutely essential.",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "6",
+          "option_text": "the socio-economic hardships that can result from an industry being phased out without adequate just-transition policies being put in place.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "that the economic burden of transitioning to green energy will not be borne solely by workers and communities dependent on fossil fuel industries, but by entire cities and regions.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The examples of Detroit and Appalachia highlight the negative consequences that can occur when industries are phased out without proper support and transition policies. Detroit's deindustrialization led to poverty and disrepair, while Appalachia faced the loss of coal jobs and the subsequent opioid epidemic. These examples demonstrate the socio-economic hardships that communities can experience when a significant industry declines without effective measures in place to mitigate the impacts on workers and local economies. Option C aptly captures this idea.\nWhile the examples of Detroit and Appalachia do imply a need for greater investment in industrial and place-based policy, the main focus is on the negative consequences of not having such policies in place. Thus, Option A can be eliminated. Similarly, Option B is a position that the author advances; however, we cannot tie it to the examples. The examples of Detroit and Appalachia underscore the detriment caused by the absence of just-transition policies, not the benefits people could have reaped if just-transition policies were in place. The broader economic burden of transitioning to green energy and who will bear it is not explicitly discussed in the given passage; therefore, Option D can be crossed out.\nHence, Option C is the correct choice.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe author mentions the examples of Detroit and Appalachia to illustrate\n\n**Options:**\n- **A**. the need for greater investment in industrial and place-based policies to support workers and communities dependent on fossil fuel industries.\n- **B**. why just transition policies which ensure equitable support for workers and communities during the transition period are absolutely essential.\n- **C**. the socio-economic hardships that can result from an industry being phased out without adequate just-transition policies being put in place. ✅\n- **D**. that the economic burden of transitioning to green energy will not be borne solely by workers and communities dependent on fossil fuel industries, but by entire cities and regions.\n\n**Correct Answer:** null\n\n**Solution:**\nThe examples of Detroit and Appalachia highlight the negative consequences that can occur when industries are phased out without proper support and transition policies. Detroit's deindustrialization led to poverty and disrepair, while Appalachia faced the loss of coal jobs and the subsequent opioid epidemic. These examples demonstrate the socio-economic hardships that communities can experience when a significant industry declines without effective measures in place to mitigate the impacts on workers and local economies. Option C aptly captures this idea.\nWhile the examples of Detroit and Appalachia do imply a need for greater investment in industrial and place-based policy, the main focus is on the negative consequences of not having such policies in place. Thus, Option A can be eliminated. Similarly, Option B is a position that the author advances; however, we cannot tie it to the examples. The examples of Detroit and Appalachia underscore the detriment caused by the absence of just-transition policies, not the benefits people could have reaped if just-transition policies were in place. The broader economic burden of transitioning to green energy and who will bear it is not explicitly discussed in the given passage; therefore, Option D can be crossed out.\nHence, Option C is the correct choice.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-2",
+      "passage_text": "",
+      "question_text": "Find the number of 6-digit numbers less than 516234 that can be formed using the digits 1,2,3,4,5, and 6 if each digit can be used at most once.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "493",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "494",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "498",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "499",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "516234 is a 6-digit number, and using the digits 1,2,3,4,5 and 6, there are a possible 6! numbers = 720 numbers\n6-digit numbers starting from 1,2,3,4,5 and 6 each is equal to 120.\n=> There are a total of 120*4 = 480 numbers starting from 1,2,3 and 4.\nThe number of numbers starting with 51 _ _ _ _ are 24.\nThe number of numbers starting with 512 _ _ _ are 6.\nThe number of numbers starting with 513 _ _ _ are 6.\nThe number of numbers starting with 514 _ _ _ are 6.\n516234 is the first number starting with 516_ _ _.\nTherefore, a total of 480+6*3, i.e. 498 six-digit numbers are less than 516234 formed using the digits 1,2,3,4,5 and 6.\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of 6-digit numbers less than 516234 that can be formed using the digits 1,2,3,4,5, and 6 if each digit can be used at most once.\n\n**Options:**\n- **A**. 493\n- **B**. 494\n- **C**. 498 ✅\n- **D**. 499\n\n**Correct Answer:** null\n\n**Solution:**\n516234 is a 6-digit number, and using the digits 1,2,3,4,5 and 6, there are a possible 6! numbers = 720 numbers\n6-digit numbers starting from 1,2,3,4,5 and 6 each is equal to 120.\n=> There are a total of 120*4 = 480 numbers starting from 1,2,3 and 4.\nThe number of numbers starting with 51 _ _ _ _ are 24.\nThe number of numbers starting with 512 _ _ _ are 6.\nThe number of numbers starting with 513 _ _ _ are 6.\nThe number of numbers starting with 514 _ _ _ are 6.\n516234 is the first number starting with 516_ _ _.\nTherefore, a total of 480+6*3, i.e. 498 six-digit numbers are less than 516234 formed using the digits 1,2,3,4,5 and 6.\nThe answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-3",
+      "passage_text": "",
+      "question_text": "A math question is given to four students. The chances of solving the question are different for every student. The chances of solving the question for 1st, 2nd, 3rd and 4th student are $\\dfrac{2}{3},\\dfrac{1}{2},\\dfrac{2}{5}$ and $\\dfrac{1}{3}$, respectively. Find the probability that the question will be solved by atleast one student.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{3}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{12}{15}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{13}{15}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{14}{15}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let A, B, C, and D be events where students 1st, 2nd, 3rd and 4th solve the question, respectively.\nTherefore, P(A) = $\\dfrac{2}{3}$, P(B) = $\\dfrac{1}{2}$, P(C) = $\\dfrac{2}{5}$, and P(D) = $\\dfrac{2}{6}$\nA', B', C', and D' be the events when students could not solve the puzzles.\nTherefore, P(A') = $1-\\dfrac{2}{3}=\\dfrac{1}{3}$, P(B') = $1-\\dfrac{1}{2}=\\dfrac{1}{2}$, P(C') = $1-\\dfrac{2}{5}=\\dfrac{3}{5}$, and P(D') = $1-\\dfrac{1}{3}=\\dfrac{2}{3}$\nThe probability of not solving the question is none of them solving the question, i.e. P(A' and B' and C' and D') \nP(A' and B' and C' and D') = P(A').P(B').P(C').P(D') = $\\left(\\dfrac{1}{3}\\right)\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{3}\\right)=\\dfrac{1}{15}$\nHence, the probability of solving the question =$1-\\dfrac{1}{15}$ = $\\dfrac{14}{15}$ \nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA math question is given to four students. The chances of solving the question are different for every student. The chances of solving the question for 1st, 2nd, 3rd and 4th student are $\\dfrac{2}{3},\\dfrac{1}{2},\\dfrac{2}{5}$ and $\\dfrac{1}{3}$, respectively. Find the probability that the question will be solved by atleast one student.\n\n**Options:**\n- **A**. $\\dfrac{3}{4}$\n- **B**. $\\dfrac{12}{15}$\n- **C**. $\\dfrac{13}{15}$\n- **D**. $\\dfrac{14}{15}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet A, B, C, and D be events where students 1st, 2nd, 3rd and 4th solve the question, respectively.\nTherefore, P(A) = $\\dfrac{2}{3}$, P(B) = $\\dfrac{1}{2}$, P(C) = $\\dfrac{2}{5}$, and P(D) = $\\dfrac{2}{6}$\nA', B', C', and D' be the events when students could not solve the puzzles.\nTherefore, P(A') = $1-\\dfrac{2}{3}=\\dfrac{1}{3}$, P(B') = $1-\\dfrac{1}{2}=\\dfrac{1}{2}$, P(C') = $1-\\dfrac{2}{5}=\\dfrac{3}{5}$, and P(D') = $1-\\dfrac{1}{3}=\\dfrac{2}{3}$\nThe probability of not solving the question is none of them solving the question, i.e. P(A' and B' and C' and D') \nP(A' and B' and C' and D') = P(A').P(B').P(C').P(D') = $\\left(\\dfrac{1}{3}\\right)\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{3}\\right)=\\dfrac{1}{15}$\nHence, the probability of solving the question =$1-\\dfrac{1}{15}$ = $\\dfrac{14}{15}$ \nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-4",
+      "passage_text": "",
+      "question_text": "Find the number of solutions to the equation given by $x+\\log_{10}\\left(5^x+2\\right)=x\\log_{10}2\\ +\\ \\log_{10}15$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
           "is_correct": false
         },
         {
@@ -31,434 +139,92 @@
         }
       ],
       "correct_option_data": null,
-      "solution_text": "To find out the number of lines, we need to find out how many of these points are collinear.\nSo, if we take the first 2 points (3,2), (-3,-4), and find out the equation of the line passing through these 2 points, we get,\n$y-y_1=\\frac{y_2-y_1}{x_2-x_1}x-x_1$ [ where $\\frac{y_2-y_1}{x_2-x_1}$ is the slope of the line ]\nHence, $y-2=\\frac{-4-2}{-3-3}\\left(x-3\\right)\\longrightarrow\\ y-2=x-3\\longrightarrow\\ y=x-1$\nNow, we need to check if the remaining points lie in this line, to check if they are collinear.\nFor (11,10), putting it in y = x - 1, we get 10 = 11 - 1, hence (11,10) lies on the line. \nFor (-2,-1), putting it in y = x - 1, we get -1 = -2 - 1, which is not true, hence (-2,-1) does not lie on the line.\nSo, we can conclude that (3,2), (-3,-4) and (11,10) are collinear, and (-2,-1) does not lie on the line connecting these 3 points.\nHence, one straight line can be drawn through the 3 collinear points, and 3 separate straight lines can be drawn from the non-collinear point to each of the collinear points. Hence, a total of 4 lines.",
+      "solution_text": "Given equation\n$x+\\log_{10}\\left(5^x+2\\right)=x\\log_{10}2+\\log_{10}15$\n$x\\left(1-\\log_{10}2\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$x\\left(\\log_{10}10-\\log_{10}2\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$x\\left(\\log_{10}5\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$\\log_{10}5^x+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$\\log_{10}\\left(\\left(5^x\\right)\\left(5^x+2\\right)\\right)=\\log_{10}15$\nAssume $5^x=t$,\n$t\\left(t+2\\right)=15$ => t = 3 or -5\nbut t = -5 is invalid as the exponent can't be negative => There is only one solution.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind out the total number of straight lines that can be drawn through the following 4 points (3,2), (-3,-4), (11,10) and (-2,-1).\n\n**Options:**\n- **A**. 4 ✅\n- **B**. 1\n- **C**. 6\n- **D**. 3\n\n**Correct Answer:** null\n\n**Solution:**\nTo find out the number of lines, we need to find out how many of these points are collinear.\nSo, if we take the first 2 points (3,2), (-3,-4), and find out the equation of the line passing through these 2 points, we get,\n$y-y_1=\\frac{y_2-y_1}{x_2-x_1}x-x_1$ [ where $\\frac{y_2-y_1}{x_2-x_1}$ is the slope of the line ]\nHence, $y-2=\\frac{-4-2}{-3-3}\\left(x-3\\right)\\longrightarrow\\ y-2=x-3\\longrightarrow\\ y=x-1$\nNow, we need to check if the remaining points lie in this line, to check if they are collinear.\nFor (11,10), putting it in y = x - 1, we get 10 = 11 - 1, hence (11,10) lies on the line. \nFor (-2,-1), putting it in y = x - 1, we get -1 = -2 - 1, which is not true, hence (-2,-1) does not lie on the line.\nSo, we can conclude that (3,2), (-3,-4) and (11,10) are collinear, and (-2,-1) does not lie on the line connecting these 3 points.\nHence, one straight line can be drawn through the 3 collinear points, and 3 separate straight lines can be drawn from the non-collinear point to each of the collinear points. Hence, a total of 4 lines."
-    },
-    {
-      "qid": "quant-sectionals-14-2",
-      "passage_text": "",
-      "question_text": "In a class, the marks obtained by 8 students with all distinct values, when arranged in ascending order, form a geometric progression whose common ratio is a natural number. If there a total of 400 questions carrying 1 mark each with no negative marking, then what is the maximum possible marks obtained by any student?",
-      "options": [],
-      "correct_option_data": "384",
-      "solution_text": "Let ‘$a$’ and ‘$r$’ be the first term and common ratio of the GP respectively. Here both $a$ and $r$ have to be integers. \nSince marks secured by all the students are distinct integers hence we can say that the common ratio of the GP is greater than 1. Therefore, $r >1$.\nMaximum possible marks scored by any candidate = $a*r^7$\nWe can see that if $r > 2$, then $r^7$ > 400 hence,$ r$ can’t be greater than 2, therefore r = 2.\nWhen $r = 2$, then ‘$a$’ can take any value form {1, 2, 3}. \nHence the maximum possible marks obtained by any student = $3*2^7$ = hence, the maximum possible marks obtained by any student = 3*2^7 = 384",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class, the marks obtained by 8 students with all distinct values, when arranged in ascending order, form a geometric progression whose common ratio is a natural number. If there a total of 400 questions carrying 1 mark each with no negative marking, then what is the maximum possible marks obtained by any student?\n\n**Options:**\n\n**Correct Answer:** 384\n\n**Solution:**\nLet ‘$a$’ and ‘$r$’ be the first term and common ratio of the GP respectively. Here both $a$ and $r$ have to be integers. \nSince marks secured by all the students are distinct integers hence we can say that the common ratio of the GP is greater than 1. Therefore, $r >1$.\nMaximum possible marks scored by any candidate = $a*r^7$\nWe can see that if $r > 2$, then $r^7$ > 400 hence,$ r$ can’t be greater than 2, therefore r = 2.\nWhen $r = 2$, then ‘$a$’ can take any value form {1, 2, 3}. \nHence the maximum possible marks obtained by any student = $3*2^7$ = hence, the maximum possible marks obtained by any student = 3*2^7 = 384"
-    },
-    {
-      "qid": "quant-sectionals-14-3",
-      "passage_text": "",
-      "question_text": "The co-efficient of $x^{11}$ in (x-1)(x-3)...................(x-23) is",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "-144",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "12!",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "11!",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\frac{23!}{2*11!}$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "(x-1)(x-3)...................(x-23)\nWe have first find the highest degree of x \nIn the equation, the number of terms of the form (x-k) is n.\n1,3,5.....23\nthere are n terms can be determined by AP.\n23=1+(n-1)2\nn = 12\nSo the highest degree of x = 12\nWe have to find the coefficient of $x^{11}$\n= -(1+3+5....23)\n=-144\nA is the correct answer.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe co-efficient of $x^{11}$ in (x-1)(x-3)...................(x-23) is\n\n**Options:**\n- **A**. -144 ✅\n- **B**. 12!\n- **C**. 11!\n- **D**. $\\frac{23!}{2*11!}$\n\n**Correct Answer:** null\n\n**Solution:**\n(x-1)(x-3)...................(x-23)\nWe have first find the highest degree of x \nIn the equation, the number of terms of the form (x-k) is n.\n1,3,5.....23\nthere are n terms can be determined by AP.\n23=1+(n-1)2\nn = 12\nSo the highest degree of x = 12\nWe have to find the coefficient of $x^{11}$\n= -(1+3+5....23)\n=-144\nA is the correct answer."
-    },
-    {
-      "qid": "quant-sectionals-14-4",
-      "passage_text": "",
-      "question_text": "A jeweler has bars of two types: Type A bar weighs double the weight of bar of type B and has gold and silver mixed in the ratio 7:3 while type B bar has silver and gold mixed in the ratio 3:2. The jeweler wants to make a bigger bar with 60% gold by melting some bars of type A and bars of type B. What is the ratio of number of bars of type A and type B that the jeweler uses to make the bigger bar ?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "1:5",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "2:9",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "1:1",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "4:7",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Percentage of gold in type A bar = $\\dfrac{7}{7+3} \\times 100 = 70$%\nPercentage of gold in type B bar = $\\dfrac{2}{2+3} \\times 100 = 40$%\nPercentage of gold in the final bar = 60%\nLet the weight of each bar of type B be $x$ kgs \nSo the weight of each bar of type A is $2x$ kgs\nWeight of gold in 1 type A bar = $\\dfrac{7}{10} \\times 2x = 1.4x$ kgs \nWeight of silver in 1 type A bar = $\\dfrac{3}{10} \\times 2x = 0.6x$ kgs \nWeight of gold in 1 type B bar = $\\dfrac{2}{5} \\times x = 0.4x $ kgs \nWeight of silver in 1 type B bar = $\\dfrac{3}{5} \\times x = 0.6x $ kgs \nLet the ratio of type A bar and type B bar be $k$ \nTotal weight of the bars = $(k \\times 2x)+x = x(2k+1) $ kgs \nTotal weight of gold in the bars = $(k \\times 1.4x)+(0.4x) = x(1.4k+0.4) $ kgs \nTotal weight of silver in the bars = $(k \\times 0.6x)+(0.6x) = x(0.6k+0.6) $ kgs \nIf the percentage of gold in the last bar is 60%, percentage of silver = (100-60) = 40% \nTherefore, ratio of weight of gold and silver = ratio of percentage of gold and silver \n$ \\Rightarrow \\dfrac{x(1.4k+0.4)}{x(0.6k+0.6)} = \\dfrac{60}{40} $ \n$ \\Rightarrow \\dfrac{1.4k+0.4}{0.6k+0.6} = \\dfrac{3}{2} $ \n$ \\Rightarrow 2.8k+0.8 = 1.8k+1.8 $ \n$ \\Rightarrow k=1 $ \nThus the required ratio is 1:1",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA jeweler has bars of two types: Type A bar weighs double the weight of bar of type B and has gold and silver mixed in the ratio 7:3 while type B bar has silver and gold mixed in the ratio 3:2. The jeweler wants to make a bigger bar with 60% gold by melting some bars of type A and bars of type B. What is the ratio of number of bars of type A and type B that the jeweler uses to make the bigger bar ?\n\n**Options:**\n- **A**. 1:5\n- **B**. 2:9\n- **C**. 1:1 ✅\n- **D**. 4:7\n\n**Correct Answer:** null\n\n**Solution:**\nPercentage of gold in type A bar = $\\dfrac{7}{7+3} \\times 100 = 70$%\nPercentage of gold in type B bar = $\\dfrac{2}{2+3} \\times 100 = 40$%\nPercentage of gold in the final bar = 60%\nLet the weight of each bar of type B be $x$ kgs \nSo the weight of each bar of type A is $2x$ kgs\nWeight of gold in 1 type A bar = $\\dfrac{7}{10} \\times 2x = 1.4x$ kgs \nWeight of silver in 1 type A bar = $\\dfrac{3}{10} \\times 2x = 0.6x$ kgs \nWeight of gold in 1 type B bar = $\\dfrac{2}{5} \\times x = 0.4x $ kgs \nWeight of silver in 1 type B bar = $\\dfrac{3}{5} \\times x = 0.6x $ kgs \nLet the ratio of type A bar and type B bar be $k$ \nTotal weight of the bars = $(k \\times 2x)+x = x(2k+1) $ kgs \nTotal weight of gold in the bars = $(k \\times 1.4x)+(0.4x) = x(1.4k+0.4) $ kgs \nTotal weight of silver in the bars = $(k \\times 0.6x)+(0.6x) = x(0.6k+0.6) $ kgs \nIf the percentage of gold in the last bar is 60%, percentage of silver = (100-60) = 40% \nTherefore, ratio of weight of gold and silver = ratio of percentage of gold and silver \n$ \\Rightarrow \\dfrac{x(1.4k+0.4)}{x(0.6k+0.6)} = \\dfrac{60}{40} $ \n$ \\Rightarrow \\dfrac{1.4k+0.4}{0.6k+0.6} = \\dfrac{3}{2} $ \n$ \\Rightarrow 2.8k+0.8 = 1.8k+1.8 $ \n$ \\Rightarrow k=1 $ \nThus the required ratio is 1:1"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of solutions to the equation given by $x+\\log_{10}\\left(5^x+2\\right)=x\\log_{10}2\\ +\\ \\log_{10}15$.\n\n**Options:**\n- **A**. 0\n- **B**. 1 ✅\n- **C**. 2\n- **D**. 3\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation\n$x+\\log_{10}\\left(5^x+2\\right)=x\\log_{10}2+\\log_{10}15$\n$x\\left(1-\\log_{10}2\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$x\\left(\\log_{10}10-\\log_{10}2\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$x\\left(\\log_{10}5\\right)+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$\\log_{10}5^x+\\log_{10}\\left(5^x+2\\right)=\\log_{10}15$\n$\\log_{10}\\left(\\left(5^x\\right)\\left(5^x+2\\right)\\right)=\\log_{10}15$\nAssume $5^x=t$,\n$t\\left(t+2\\right)=15$ => t = 3 or -5\nbut t = -5 is invalid as the exponent can't be negative => There is only one solution.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-5",
       "passage_text": "",
-      "question_text": "If the probability of getting exactly one head and one tail when we toss two identical biased coins is 32%, what is the probability that we get a 'head' while tossing one of the coins? The probability of getting a head is more than the probability of getting a tail.",
+      "question_text": "Archit travels 7500 km by bus, car, and train. The distance travelled by bus is 500 km more than the distance travelled by the car. The average speed of the train was 2 times the average speed of the overall journey, and the time spent on the car was the same as the time spent on the bus. If Archit spent 25 hours on the train out of a total of 125 hours, what is the speed of the car?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0.6",
+          "option_text": "45 km/hr",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "0.75",
-          "is_correct": false
+          "option_text": "40 km/hr",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "0.8",
-          "is_correct": true
+          "option_text": "60 km/hr",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "0.675",
+          "option_text": "50 km/hr",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the probability of getting a head be x [ 0<x<1 - If we see it as a percentage, it is 100x %]\nHence, P(T) = 1-x\nNow, the given condition says exactly one head and one tail.\nP(HT+TH) = x(1-x) + (1-x)x = 2x(1-x)\n2x(1-x) = 0.32\nx(1-x) = 0.16\n0.2 x 0.8 = 0.16\n0.2 + 0.8 = 1\nHence, x can be either 0.2 or 0.8.\nHowever, the probability of getting a head is more than the probability of getting a tail.\nHence, x = 0.8",
+      "solution_text": "It is given that the total distance is 7500 km, which is traveled in 125 hours. Archit spent 25 hours on the train, which implies he spent (125-25)  = 100 hours on the bus and car.\nIt is also known that the time spent on the car was the same as the time spent on the bus, which implies the time spent on the car = the time spent on the bus = 50 hours\nThe average speed of the overall journey = (7500/125) = 60 km/hr. \nIt is given that the average speed of the train was 2 times the overall speed of the journey, which implies the average speed of the train = (60*2) = 120 km/hr\nHence, the distance traveled by train = (120*25) = 3000 km.\nThe remaining distance = (7500-3000) = 4500 km. \nIt is also given that the distance traveled by bus is 500 km more than the distance traveled by the car, which implies that if the distance traveled by the car is x km, then the distance traveled by bus is (x+500) km.\nHence, (x+x+500) = 4500 => x = 2000 km\nHence, the speed of the car is (2000/50) = 40 km/hr.\nThe correct option is B.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the probability of getting exactly one head and one tail when we toss two identical biased coins is 32%, what is the probability that we get a 'head' while tossing one of the coins? The probability of getting a head is more than the probability of getting a tail.\n\n**Options:**\n- **A**. 0.6\n- **B**. 0.75\n- **C**. 0.8 ✅\n- **D**. 0.675\n\n**Correct Answer:** null\n\n**Solution:**\nLet the probability of getting a head be x [ 0<x<1 - If we see it as a percentage, it is 100x %]\nHence, P(T) = 1-x\nNow, the given condition says exactly one head and one tail.\nP(HT+TH) = x(1-x) + (1-x)x = 2x(1-x)\n2x(1-x) = 0.32\nx(1-x) = 0.16\n0.2 x 0.8 = 0.16\n0.2 + 0.8 = 1\nHence, x can be either 0.2 or 0.8.\nHowever, the probability of getting a head is more than the probability of getting a tail.\nHence, x = 0.8"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nArchit travels 7500 km by bus, car, and train. The distance travelled by bus is 500 km more than the distance travelled by the car. The average speed of the train was 2 times the average speed of the overall journey, and the time spent on the car was the same as the time spent on the bus. If Archit spent 25 hours on the train out of a total of 125 hours, what is the speed of the car?\n\n**Options:**\n- **A**. 45 km/hr\n- **B**. 40 km/hr ✅\n- **C**. 60 km/hr\n- **D**. 50 km/hr\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that the total distance is 7500 km, which is traveled in 125 hours. Archit spent 25 hours on the train, which implies he spent (125-25)  = 100 hours on the bus and car.\nIt is also known that the time spent on the car was the same as the time spent on the bus, which implies the time spent on the car = the time spent on the bus = 50 hours\nThe average speed of the overall journey = (7500/125) = 60 km/hr. \nIt is given that the average speed of the train was 2 times the overall speed of the journey, which implies the average speed of the train = (60*2) = 120 km/hr\nHence, the distance traveled by train = (120*25) = 3000 km.\nThe remaining distance = (7500-3000) = 4500 km. \nIt is also given that the distance traveled by bus is 500 km more than the distance traveled by the car, which implies that if the distance traveled by the car is x km, then the distance traveled by bus is (x+500) km.\nHence, (x+x+500) = 4500 => x = 2000 km\nHence, the speed of the car is (2000/50) = 40 km/hr.\nThe correct option is B.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-6",
       "passage_text": "",
-      "question_text": "$ax^2+bx+b=0$ has roots in the ratio of x:y where x,y > 0. Find the value of $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$",
+      "question_text": "In the given figure, AB is a chord of the circle with a length of 65 cm. This chord is intersected by the secant PT at point S in such a way that AS:BS is 9:4. Additionally, RS:ST is given as 4:1, and the length of PR is 4/5 of RS. It is given that PQ is the tangent to the circle. \nFind the length of PQ.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\sqrt{\\dfrac{b}{a}}$",
-          "is_correct": true
+          "option_text": "$12\\sqrt{\\ 43}$",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\sqrt{\\dfrac{-b}{a}}$",
+          "option_text": "$14\\sqrt{\\ 41}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\sqrt{\\dfrac{a}{b}}$",
-          "is_correct": false
+          "option_text": "$12\\sqrt{\\ 41}$",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "-$\\sqrt{\\dfrac{a}{b}}$",
+          "option_text": "$14\\sqrt{\\ 43}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the roots be p, q. Hence p : q = x : y ( x , y > 0) => p,q are of same sign. Hence p and q are of same sign.\nSo product of the roots is > 0 => b/a > 0\nSum of the roots = p+ q = -b/a => sum of the roots < 0. Using these two statements, we get p , q < 0\nNow, $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$ = $\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$\nNow since p,q are less than zero, we can't write $\\sqrt{\\dfrac{p}{q}} = \\frac{\\sqrt{p}}{\\sqrt{q}}$ . So let's multiply with $\\sqrt{pq}$ on numerator and denominator, we get\n$\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$ = $\\sqrt{\\dfrac{p^2}{pq}}+\\sqrt{\\dfrac{q^2}{pq}}$\nNow pq, p^2, q^2 are > 0, so we can separate the square roots in numerator and denominator.\n= $\\dfrac{\\sqrt{p^2}}{\\sqrt{pq}}+\\dfrac{\\sqrt{q^2}}{\\sqrt{pq}}$\n= $\\dfrac{\\sqrt{p^2}+\\sqrt{q^2}}{\\sqrt{pq}}$\nSince p,q < 0, $\\sqrt{p^2} = - p$ and $\\sqrt{q^2} = -q$\nHence the above expression = $\\dfrac{ -(p +q)}{\\sqrt{pq}}$\n= $\\dfrac{ b/a}{\\sqrt{b/a}}$\n= $\\sqrt{b/a}$",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$ax^2+bx+b=0$ has roots in the ratio of x:y where x,y > 0. Find the value of $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$\n\n**Options:**\n- **A**. $\\sqrt{\\dfrac{b}{a}}$ ✅\n- **B**. $\\sqrt{\\dfrac{-b}{a}}$\n- **C**. $\\sqrt{\\dfrac{a}{b}}$\n- **D**. -$\\sqrt{\\dfrac{a}{b}}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet the roots be p, q. Hence p : q = x : y ( x , y > 0) => p,q are of same sign. Hence p and q are of same sign.\nSo product of the roots is > 0 => b/a > 0\nSum of the roots = p+ q = -b/a => sum of the roots < 0. Using these two statements, we get p , q < 0\nNow, $\\sqrt{\\dfrac{x}{y}}+\\sqrt{\\dfrac{y}{x}}$ = $\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$\nNow since p,q are less than zero, we can't write $\\sqrt{\\dfrac{p}{q}} = \\frac{\\sqrt{p}}{\\sqrt{q}}$ . So let's multiply with $\\sqrt{pq}$ on numerator and denominator, we get\n$\\sqrt{\\dfrac{p}{q}}+\\sqrt{\\dfrac{q}{p}}$ = $\\sqrt{\\dfrac{p^2}{pq}}+\\sqrt{\\dfrac{q^2}{pq}}$\nNow pq, p^2, q^2 are > 0, so we can separate the square roots in numerator and denominator.\n= $\\dfrac{\\sqrt{p^2}}{\\sqrt{pq}}+\\dfrac{\\sqrt{q^2}}{\\sqrt{pq}}$\n= $\\dfrac{\\sqrt{p^2}+\\sqrt{q^2}}{\\sqrt{pq}}$\nSince p,q < 0, $\\sqrt{p^2} = - p$ and $\\sqrt{q^2} = -q$\nHence the above expression = $\\dfrac{ -(p +q)}{\\sqrt{pq}}$\n= $\\dfrac{ b/a}{\\sqrt{b/a}}$\n= $\\sqrt{b/a}$"
+      "solution_text": "It is given that the length of the chord AB is 65 cm and AS: BS = 9:4\nHence, AS = 45 cm and BS = 20 cm\nFrom the property of circle, we know RS*ST = AS*SB\nIt is given that RS: ST = 4:1\nLet RS = 4x and ST = x\nTherefore, 4x*x= 45*20\nx^2 = 225\nx = 15 cm\nThe length of RS = 4x = 60cm and ST = 15 cm\nAlso, length of PR = 4/5 of RS = 48 cm\nFrom the property of tangent and secant\n=> PQ*PQ = PR*PT\n=> PQ^2 = 48*(48+75) = 48*123\n=> PQ = $\\sqrt{\\ 48\\times\\ 123}=12\\sqrt{\\ 41}$",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20231031_155647.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the given figure, AB is a chord of the circle with a length of 65 cm. This chord is intersected by the secant PT at point S in such a way that AS:BS is 9:4. Additionally, RS:ST is given as 4:1, and the length of PR is 4/5 of RS. It is given that PQ is the tangent to the circle. \nFind the length of PQ.\n\n**Options:**\n- **A**. $12\\sqrt{\\ 43}$\n- **B**. $14\\sqrt{\\ 41}$\n- **C**. $12\\sqrt{\\ 41}$ ✅\n- **D**. $14\\sqrt{\\ 43}$\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that the length of the chord AB is 65 cm and AS: BS = 9:4\nHence, AS = 45 cm and BS = 20 cm\nFrom the property of circle, we know RS*ST = AS*SB\nIt is given that RS: ST = 4:1\nLet RS = 4x and ST = x\nTherefore, 4x*x= 45*20\nx^2 = 225\nx = 15 cm\nThe length of RS = 4x = 60cm and ST = 15 cm\nAlso, length of PR = 4/5 of RS = 48 cm\nFrom the property of tangent and secant\n=> PQ*PQ = PR*PT\n=> PQ^2 = 48*(48+75) = 48*123\n=> PQ = $\\sqrt{\\ 48\\times\\ 123}=12\\sqrt{\\ 41}$",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-7",
       "passage_text": "",
-      "question_text": "12 identical cubes of side 1 cm each are used to construct a cuboid. The sides of the cuboid are then painted. The cuboid is then divided back to form 12 identical cubes. If the total surface area of the cubes is T and the total unpainted surface area is U, what is the maximum value of U/T?",
+      "question_text": "If $S_n=\\dfrac{5\\ }{\\left(2n+5\\right)\\left(2n+3\\right)}$ , and it is given that $S_1+S_2+.....+S_{20}=\\dfrac{p\\ }{q}$,($p,\\ q$ are co-prime to each other). If there is an arithmetic progression whose first term is q and the common difference is p, Find the sum of the first 10 terms of the progression formed.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0.66",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "0.60",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "0.55",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "0.50",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let the length, breadth and height of the cuboid be L, B and H. L*B*H = 12 and all of them are natural numbers. \nThe possible combination of length breadth and height = 1*1*12, 1*2*6, 1*3*4, 2*2*3\nPainted surface area in 1*1*12 = 2(1*1+1*12+1*12)=50\nPainted surface area in 1*2*6 = 2(1*2+2*6+1*6)=40\nPainted surface area in 1*3*4 = 2(1*3+3*4+1*4) = 38\nPainted surface area in 2*2*3 = 2(2*2+2*3+2*3) = 32\nThe maximum percentage of unpainted surface area will be obtained when the combination is 2*2*3 because most of the surfaces will hide in this combination.\nTotal surface area exposed after cutting(T) =Surface area of 12 small cubes = 12*6(1*1)=72\nPainted surface area = 2(2*2+2*3+2*3)=32\nUnpainted surface area(U) = 72-32=40\nThe maximum value of U/T = 40/72 = 0.55",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n12 identical cubes of side 1 cm each are used to construct a cuboid. The sides of the cuboid are then painted. The cuboid is then divided back to form 12 identical cubes. If the total surface area of the cubes is T and the total unpainted surface area is U, what is the maximum value of U/T?\n\n**Options:**\n- **A**. 0.66\n- **B**. 0.60\n- **C**. 0.55 ✅\n- **D**. 0.50\n\n**Correct Answer:** null\n\n**Solution:**\nLet the length, breadth and height of the cuboid be L, B and H. L*B*H = 12 and all of them are natural numbers. \nThe possible combination of length breadth and height = 1*1*12, 1*2*6, 1*3*4, 2*2*3\nPainted surface area in 1*1*12 = 2(1*1+1*12+1*12)=50\nPainted surface area in 1*2*6 = 2(1*2+2*6+1*6)=40\nPainted surface area in 1*3*4 = 2(1*3+3*4+1*4) = 38\nPainted surface area in 2*2*3 = 2(2*2+2*3+2*3) = 32\nThe maximum percentage of unpainted surface area will be obtained when the combination is 2*2*3 because most of the surfaces will hide in this combination.\nTotal surface area exposed after cutting(T) =Surface area of 12 small cubes = 12*6(1*1)=72\nPainted surface area = 2(2*2+2*3+2*3)=32\nUnpainted surface area(U) = 72-32=40\nThe maximum value of U/T = 40/72 = 0.55"
-    },
-    {
-      "qid": "quant-sectionals-14-8",
-      "passage_text": "",
-      "question_text": "A farmer borrowed a particular sum of money at simple interest. If he gives it back after 3 years, he has to give back 11500 Rs. If he returns the money after 5 years, he has to give back Rs.12500. Find the amount initially borrowed by the farmer.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "8000",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "12000",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "6000",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "10000",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "P[1+0.03R] = 11500\nP[1+0.05R]= 12500\nOn dividing both the equations, we find that, R=5%.\nP*1.15 = 11500.\nP = 10000\nOption D is the correct answer.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA farmer borrowed a particular sum of money at simple interest. If he gives it back after 3 years, he has to give back 11500 Rs. If he returns the money after 5 years, he has to give back Rs.12500. Find the amount initially borrowed by the farmer.\n\n**Options:**\n- **A**. 8000\n- **B**. 12000\n- **C**. 6000\n- **D**. 10000 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nP[1+0.03R] = 11500\nP[1+0.05R]= 12500\nOn dividing both the equations, we find that, R=5%.\nP*1.15 = 11500.\nP = 10000\nOption D is the correct answer."
-    },
-    {
-      "qid": "quant-sectionals-14-9",
-      "passage_text": "",
-      "question_text": "65% of the residents of a city voted in the elections. 40% of the voters voted for MDP while 30% of the people in the city voted for KMP. The remaining voters voted for GJP. If the difference between the number of votes received by MDP and GJP is 2720, the number of people who did not vote in the elections is",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "16000",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "4800",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "7400",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "5600",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let the number of voters in the city be x. \nNumber of people who voted = 0.65x. \n40% of the voters voted for MDP. \nTherefore, number of people who voted for MDP = 0.4*0.65x = 0.26x\n30% of the people in the city voted for KMP.\nNumber of people who voted for KMP = 0.3x\nRemaining voters voted for GJP. \nTherefore, votes received by GJP = 0.65x - 0.26x - 0.30x = 0.09x. \nDifference between the number of votes received by MDP and GJP = 0.26x - 0.09x = 0.17x. \nIt has been given that 0.17x = 2720\n=> x = 2720/0.17 = 16000\nNumber of people who did not vote in the elections = 16000*0.35 = 5600.\nTherefore, option D is the right answer.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n65% of the residents of a city voted in the elections. 40% of the voters voted for MDP while 30% of the people in the city voted for KMP. The remaining voters voted for GJP. If the difference between the number of votes received by MDP and GJP is 2720, the number of people who did not vote in the elections is\n\n**Options:**\n- **A**. 16000\n- **B**. 4800\n- **C**. 7400\n- **D**. 5600 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of voters in the city be x. \nNumber of people who voted = 0.65x. \n40% of the voters voted for MDP. \nTherefore, number of people who voted for MDP = 0.4*0.65x = 0.26x\n30% of the people in the city voted for KMP.\nNumber of people who voted for KMP = 0.3x\nRemaining voters voted for GJP. \nTherefore, votes received by GJP = 0.65x - 0.26x - 0.30x = 0.09x. \nDifference between the number of votes received by MDP and GJP = 0.26x - 0.09x = 0.17x. \nIt has been given that 0.17x = 2720\n=> x = 2720/0.17 = 16000\nNumber of people who did not vote in the elections = 16000*0.35 = 5600.\nTherefore, option D is the right answer."
-    },
-    {
-      "qid": "quant-sectionals-14-10",
-      "passage_text": "",
-      "question_text": "A, B, C and D were the members of a team. The average runs of the team decreases by 2 if another member E is added. It is known that E scored 45 runs. No player scored less than E or more than 65 runs. If the runs scored by A and B are in the ratio 13:12 and C scored more than A, the ratio of the runs scored by B to the average runs scored by C & D is\n\nAssume that the runs scored by all the members is a natural number.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "6:7",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "4:5",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "16:19",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "8:9",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Consider average of 4 players = x and scores of A,B,C and D be a,b,c & d.\nTotal score = 4*x\n(4*x+45)/5 = x-2\nx= 55\n45=<a,b,c,d<=65\na:b = 13:12 Possible values (a,b) = (52,48) or (65,60)\nIf C scored more than A, A cannot be 65.\nHence a=52, b=48\nAverage runs scored by C&D = (4x-(52+48))/2 = (220-100)/2 =60\nThe ratio of runs scored by B to the average runs of C & D = 48:60 = 4:5",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B, C and D were the members of a team. The average runs of the team decreases by 2 if another member E is added. It is known that E scored 45 runs. No player scored less than E or more than 65 runs. If the runs scored by A and B are in the ratio 13:12 and C scored more than A, the ratio of the runs scored by B to the average runs scored by C & D is\n\nAssume that the runs scored by all the members is a natural number.\n\n**Options:**\n- **A**. 6:7\n- **B**. 4:5 ✅\n- **C**. 16:19\n- **D**. 8:9\n\n**Correct Answer:** null\n\n**Solution:**\nConsider average of 4 players = x and scores of A,B,C and D be a,b,c & d.\nTotal score = 4*x\n(4*x+45)/5 = x-2\nx= 55\n45=<a,b,c,d<=65\na:b = 13:12 Possible values (a,b) = (52,48) or (65,60)\nIf C scored more than A, A cannot be 65.\nHence a=52, b=48\nAverage runs scored by C&D = (4x-(52+48))/2 = (220-100)/2 =60\nThe ratio of runs scored by B to the average runs of C & D = 48:60 = 4:5"
-    },
-    {
-      "qid": "quant-sectionals-14-11",
-      "passage_text": "",
-      "question_text": "What is the sum of all 2 digit numbers the product of whose digits is twice the sum of the digits?",
-      "options": [],
-      "correct_option_data": "143",
-      "solution_text": "Let the digits of the 2 digit number be xy.\nNow, we know that the product of the digits is twice the sum of the digits.\nx*y = 2(x+y)\n2x + 2y - xy = 0\nAdding -4 to both sides, we get,\n2x + 2y- xy - 4 = -4\nx(2-y)-2(2-y) = -4\n(x-2)(2-y) = -4\n(x-2)(y-2) = 4\n(x-2) and (y-2) should be factors of 4. x and y should be positive. \n4 can be written as the product of (-1,-4),(-2,-2),(2,2) and (1,4).\nNow, (x-2) or (y-2) cannot be -4 since in that case x or y will be negative. \nWe can rule of (-2,-2) as well since x and y will be equal to 0 in this case.\n(2,2):\nBoth x and y should be equal to 4. \n44 satisfies the given condition.\n(1,4):\nx should be 3 and y should be 6 or the vice versa.\n36 and 63 satisfy the condition.\nSum of the numbers that satisfy the condition = 36+63+44 = 143.\nTherefore, 143 is the right answer.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of all 2 digit numbers the product of whose digits is twice the sum of the digits?\n\n**Options:**\n\n**Correct Answer:** 143\n\n**Solution:**\nLet the digits of the 2 digit number be xy.\nNow, we know that the product of the digits is twice the sum of the digits.\nx*y = 2(x+y)\n2x + 2y - xy = 0\nAdding -4 to both sides, we get,\n2x + 2y- xy - 4 = -4\nx(2-y)-2(2-y) = -4\n(x-2)(2-y) = -4\n(x-2)(y-2) = 4\n(x-2) and (y-2) should be factors of 4. x and y should be positive. \n4 can be written as the product of (-1,-4),(-2,-2),(2,2) and (1,4).\nNow, (x-2) or (y-2) cannot be -4 since in that case x or y will be negative. \nWe can rule of (-2,-2) as well since x and y will be equal to 0 in this case.\n(2,2):\nBoth x and y should be equal to 4. \n44 satisfies the given condition.\n(1,4):\nx should be 3 and y should be 6 or the vice versa.\n36 and 63 satisfy the condition.\nSum of the numbers that satisfy the condition = 36+63+44 = 143.\nTherefore, 143 is the right answer."
-    },
-    {
-      "qid": "quant-sectionals-14-12",
-      "passage_text": "",
-      "question_text": "Priyank and Ayush started at the same point and run around a circular track in the same direction. Ayush is running faster than Priyank. They met for the first time after 25 minutes and by this time, Priyank finished exactly 7 laps. Had they started running in the opposite direction after how much time from the start would they be meeting for the 15th time?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "28 minutes",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "25 minutes",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "30 minutes",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "21 minutes",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Since Priyank and Ayush are running in the same direction, they would meet for the first time when the faster guy takes a lead of exactly one lap than the slower guy.\nAyush is running faster than Priyank.\nBy their first meeting point, Priyank has made 7 laps.\nAyush must have 8 laps.\nTogether they made 8+7 laps i.e 15laps in 25 minutes.\nIf both of them are moving in the opposite direction, then they would meet for the first time when both of them together make exactly one lap. Thus to meet 15 times they must cover a total of 15 laps. We already know that together they complete 15laps in 25 minutes if moving in opposite direction.\nThey would meet for the 15th time after 25 minutes.\nB is the correct answer.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPriyank and Ayush started at the same point and run around a circular track in the same direction. Ayush is running faster than Priyank. They met for the first time after 25 minutes and by this time, Priyank finished exactly 7 laps. Had they started running in the opposite direction after how much time from the start would they be meeting for the 15th time?\n\n**Options:**\n- **A**. 28 minutes\n- **B**. 25 minutes ✅\n- **C**. 30 minutes\n- **D**. 21 minutes\n\n**Correct Answer:** null\n\n**Solution:**\nSince Priyank and Ayush are running in the same direction, they would meet for the first time when the faster guy takes a lead of exactly one lap than the slower guy.\nAyush is running faster than Priyank.\nBy their first meeting point, Priyank has made 7 laps.\nAyush must have 8 laps.\nTogether they made 8+7 laps i.e 15laps in 25 minutes.\nIf both of them are moving in the opposite direction, then they would meet for the first time when both of them together make exactly one lap. Thus to meet 15 times they must cover a total of 15 laps. We already know that together they complete 15laps in 25 minutes if moving in opposite direction.\nThey would meet for the 15th time after 25 minutes.\nB is the correct answer."
-    },
-    {
-      "qid": "quant-sectionals-14-13",
-      "passage_text": "",
-      "question_text": "What is the number of integral values that $x$ can take such that $\\left | log_2 (x^2/2) \\right |\\leq 1$",
-      "options": [],
-      "correct_option_data": "4",
-      "solution_text": "$\\left | log_2 (x^2/2) \\right |\\leq 1$ can be re-written as: $-1\\le\\ \\log_2\\left(\\frac{x^2}{2}\\right)\\le\\ 1$\nOn simplifying, we obtain: $x^2\\ge\\ 1$ and $x^2\\le\\ \\ 4$\nThe only values satifying the conditions are -2, -1, 1, 2\nHence, a total of 4 values.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the number of integral values that $x$ can take such that $\\left | log_2 (x^2/2) \\right |\\leq 1$\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\n$\\left | log_2 (x^2/2) \\right |\\leq 1$ can be re-written as: $-1\\le\\ \\log_2\\left(\\frac{x^2}{2}\\right)\\le\\ 1$\nOn simplifying, we obtain: $x^2\\ge\\ 1$ and $x^2\\le\\ \\ 4$\nThe only values satifying the conditions are -2, -1, 1, 2\nHence, a total of 4 values."
-    },
-    {
-      "qid": "quant-sectionals-14-14",
-      "passage_text": "",
-      "question_text": "Consider a triangle ABC and a circle such that point A lies on the circle and the circle intersects BC at two points D and E. The circle intersects AB at F and AC at G. It is given that BF=CE and BD=CG. The ratio BD: DE: EC is equal to 2:7:3. Find the ratio of sides AB and AC.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "2:5",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "5:14",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "3:5",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "3:7",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Assuming the lengths as 2x, 7x and 3x.\n$BF\\times\\ AB\\ =\\ BD\\times\\ BE$ (Intersecting secants theorem)\n$3x\\times\\ AB\\ =\\ 2x\\times\\ 9x$\n=> AB = 6x\n$CG\\times\\ AC\\ =\\ CE\\times\\ CD$\n$2x\\times\\ AC\\ =\\ 3x\\times\\ 10x$ \n=> AC = 15x\nDividing (1) by (2), $\\ \\dfrac{\\ AB}{AC}$  = $\\ \\dfrac{\\ 6}{15}$  = $\\ \\dfrac{2}{5}$",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider a triangle ABC and a circle such that point A lies on the circle and the circle intersects BC at two points D and E. The circle intersects AB at F and AC at G. It is given that BF=CE and BD=CG. The ratio BD: DE: EC is equal to 2:7:3. Find the ratio of sides AB and AC.\n\n**Options:**\n- **A**. 2:5 ✅\n- **B**. 5:14\n- **C**. 3:5\n- **D**. 3:7\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the lengths as 2x, 7x and 3x.\n$BF\\times\\ AB\\ =\\ BD\\times\\ BE$ (Intersecting secants theorem)\n$3x\\times\\ AB\\ =\\ 2x\\times\\ 9x$\n=> AB = 6x\n$CG\\times\\ AC\\ =\\ CE\\times\\ CD$\n$2x\\times\\ AC\\ =\\ 3x\\times\\ 10x$ \n=> AC = 15x\nDividing (1) by (2), $\\ \\dfrac{\\ AB}{AC}$  = $\\ \\dfrac{\\ 6}{15}$  = $\\ \\dfrac{2}{5}$"
-    },
-    {
-      "qid": "quant-sectionals-14-15",
-      "passage_text": "",
-      "question_text": "The total cost price of 20 pens is equal to the total discount amount on 30 pens. If it is known that the cost price, selling price and marked price are in an arithmetic progression in no specific order, find out the profit/loss percent on the sale of 1 pen.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "Loss of 33.33%",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "Profit of 66.66%",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "Profit of 33.33%",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "Can't be determined",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "20 CP = 30(MP - SP)\nCP, SP and MP are in AP. MP is always greater than both CP and SP.\nCase 1:\nCP<SP<MP\nLet SP = x.\nCP = x - d\nMP = x + d.\n20(x - d) = 30(x + d - x)\n20x - 20d = 30d\n2x = 5d\nProfit % = (SP - CP)/CP x 100 = (x - x + d)/(x - d) x 100 = d/(2.5d - d) x 100 = d/1.5d x 100% = 200/3% = 66.67%\nCase 2:\nSP<CP<MP\nLet CP = x.\nSP = x - d\nMP = x + d.\n20x = 30(x + d - x + d)\n20x = 60d\nx = 3d\nLoss % = (SP - CP)/CP x 100 = (3d - d - d)/3d x 100 = 33.33%\nHence, the value cannot be determined.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe total cost price of 20 pens is equal to the total discount amount on 30 pens. If it is known that the cost price, selling price and marked price are in an arithmetic progression in no specific order, find out the profit/loss percent on the sale of 1 pen.\n\n**Options:**\n- **A**. Loss of 33.33%\n- **B**. Profit of 66.66%\n- **C**. Profit of 33.33%\n- **D**. Can't be determined ✅\n\n**Correct Answer:** null\n\n**Solution:**\n20 CP = 30(MP - SP)\nCP, SP and MP are in AP. MP is always greater than both CP and SP.\nCase 1:\nCP<SP<MP\nLet SP = x.\nCP = x - d\nMP = x + d.\n20(x - d) = 30(x + d - x)\n20x - 20d = 30d\n2x = 5d\nProfit % = (SP - CP)/CP x 100 = (x - x + d)/(x - d) x 100 = d/(2.5d - d) x 100 = d/1.5d x 100% = 200/3% = 66.67%\nCase 2:\nSP<CP<MP\nLet CP = x.\nSP = x - d\nMP = x + d.\n20x = 30(x + d - x + d)\n20x = 60d\nx = 3d\nLoss % = (SP - CP)/CP x 100 = (3d - d - d)/3d x 100 = 33.33%\nHence, the value cannot be determined."
-    },
-    {
-      "qid": "quant-sectionals-14-16",
-      "passage_text": "",
-      "question_text": "A semicircle is drawn inside a rectangle ABCD such that AB is the diameter of the semicircle and CD is a tangent to it. A line passes through AC intersecting the circle at E. If the radius of the circle is 20 cm, find the area of triangle AEB(square cm)?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "400",
+          "option_text": "275",
           "is_correct": false
         },
         {
@@ -470,205 +236,486 @@
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "300",
+          "option_text": "225",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "320",
+          "option_text": "270",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The figure can be drawn as follows:\nSince AB is diameter, AB = 2*20 = 40 cm\nAlso, CD is a tangent, hence AD=BC = radius = 20 cm\nHere, AC = $\\sqrt{AB^2+BC^2}$ = $\\sqrt{\\ 400+1600}$ = $20\\sqrt{\\ 5}$\nAEB is a right angle. (Angle made by the diameter)\nIn triangle AEB and ABC, $\\angle\\ EAB\\ =\\ \\angle\\ CAB$ and $\\angle\\ AEB\\ =\\ \\angle\\ ABC\\ =90$\nHence, both triangles are similar. \nThe ratio of areas of similar triangles is the square of the ratio of sides of triangles.\nSo the ratio of corresponding sides = $\\ \\frac{\\ AB}{AC}$ = $\\ \\frac{\\ 40}{20\\sqrt{\\ 5}}$ = $\\ \\frac{\\ 2}{\\sqrt{\\ 5}}$\nHence, the ratio of areas = $\\ \\frac{\\ 4}{5}$ .....(1)\nNow, area of ABC = $\\ \\frac{\\ 1}{2}\\times\\ AB\\times\\ BC\\ =\\ $ $\\ \\frac{\\ 1}{2}\\times\\ 40\\times\\ 20\\ =\\ $ $400$ ....(2)\nFrom 1 and 2, $\\ \\frac{\\ 4}{5}$ = $\\ \\frac{\\ area\\left(ABE\\right)}{400}$ \n=> area ABE = 320",
+      "solution_text": "=> $S_n=\\dfrac{5\\ }{\\left(2n+5\\right)\\left(2n+3\\right)}$\n=> $S_1=\\dfrac{5\\ }{\\left(\\left(2\\times\\ 1\\right)+5\\right)\\left(\\left(2\\times1\\right)+3\\right)}=\\ \\frac{5\\ }{7\\times5}$\n=> $S_2=\\dfrac{5\\ }{\\left(\\left(2\\times\\ 2\\right)+5\\right)\\left(\\left(2\\times2\\right)+3\\right)}=\\ \\frac{5\\ }{9\\times7}$\nTherefore, we can write $S_1+S_2+....S_{20}=\\ \\frac{5\\ }{7\\times5}+\\frac{5\\ }{9\\times7\\ }+......+\\frac{5\\ }{45\\times43}$\n=> $S_1+S_2+....S_{20}=\\frac{\\ 5}{2}\\left(\\ \\frac{1\\ }{5}-\\frac{1\\ }{7}\\right)+\\left(\\ \\frac{1\\ }{7}-\\frac{1\\ }{9}\\right)+.....\\left(\\ \\frac{1\\ }{43}-\\frac{1\\ }{45}\\right)$\nCancelling the terms with opposite signs with the same values.\n=> $S_1+S_2+....S_{20}=\\dfrac{5}{2}\\left(\\dfrac{1\\ }{5}-\\dfrac{1\\ }{45}\\right)=\\dfrac{4\\ }{9}$\nIt is given that $S_1+S_2+....S_{20}=\\frac{p\\ }{q}$ = $\\frac{4\\ }{9}$\nTherefore, $p\\ =4,\\ q=9$ and they are co-prime to each other\nThe first term of the A.P. is 9, and the common difference is 4.\nThe sum of the first 10 terms of A.P. is $\\frac{10\\ }{2}\\left(18+\\left(10-1\\right)4\\right)$ \n=> 270.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA semicircle is drawn inside a rectangle ABCD such that AB is the diameter of the semicircle and CD is a tangent to it. A line passes through AC intersecting the circle at E. If the radius of the circle is 20 cm, find the area of triangle AEB(square cm)?\n\n**Options:**\n- **A**. 400\n- **B**. 250\n- **C**. 300\n- **D**. 320 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe figure can be drawn as follows:\nSince AB is diameter, AB = 2*20 = 40 cm\nAlso, CD is a tangent, hence AD=BC = radius = 20 cm\nHere, AC = $\\sqrt{AB^2+BC^2}$ = $\\sqrt{\\ 400+1600}$ = $20\\sqrt{\\ 5}$\nAEB is a right angle. (Angle made by the diameter)\nIn triangle AEB and ABC, $\\angle\\ EAB\\ =\\ \\angle\\ CAB$ and $\\angle\\ AEB\\ =\\ \\angle\\ ABC\\ =90$\nHence, both triangles are similar. \nThe ratio of areas of similar triangles is the square of the ratio of sides of triangles.\nSo the ratio of corresponding sides = $\\ \\frac{\\ AB}{AC}$ = $\\ \\frac{\\ 40}{20\\sqrt{\\ 5}}$ = $\\ \\frac{\\ 2}{\\sqrt{\\ 5}}$\nHence, the ratio of areas = $\\ \\frac{\\ 4}{5}$ .....(1)\nNow, area of ABC = $\\ \\frac{\\ 1}{2}\\times\\ AB\\times\\ BC\\ =\\ $ $\\ \\frac{\\ 1}{2}\\times\\ 40\\times\\ 20\\ =\\ $ $400$ ....(2)\nFrom 1 and 2, $\\ \\frac{\\ 4}{5}$ = $\\ \\frac{\\ area\\left(ABE\\right)}{400}$ \n=> area ABE = 320"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $S_n=\\dfrac{5\\ }{\\left(2n+5\\right)\\left(2n+3\\right)}$ , and it is given that $S_1+S_2+.....+S_{20}=\\dfrac{p\\ }{q}$,($p,\\ q$ are co-prime to each other). If there is an arithmetic progression whose first term is q and the common difference is p, Find the sum of the first 10 terms of the progression formed.\n\n**Options:**\n- **A**. 275\n- **B**. 250\n- **C**. 225\n- **D**. 270 ✅\n\n**Correct Answer:** null\n\n**Solution:**\n=> $S_n=\\dfrac{5\\ }{\\left(2n+5\\right)\\left(2n+3\\right)}$\n=> $S_1=\\dfrac{5\\ }{\\left(\\left(2\\times\\ 1\\right)+5\\right)\\left(\\left(2\\times1\\right)+3\\right)}=\\ \\frac{5\\ }{7\\times5}$\n=> $S_2=\\dfrac{5\\ }{\\left(\\left(2\\times\\ 2\\right)+5\\right)\\left(\\left(2\\times2\\right)+3\\right)}=\\ \\frac{5\\ }{9\\times7}$\nTherefore, we can write $S_1+S_2+....S_{20}=\\ \\frac{5\\ }{7\\times5}+\\frac{5\\ }{9\\times7\\ }+......+\\frac{5\\ }{45\\times43}$\n=> $S_1+S_2+....S_{20}=\\frac{\\ 5}{2}\\left(\\ \\frac{1\\ }{5}-\\frac{1\\ }{7}\\right)+\\left(\\ \\frac{1\\ }{7}-\\frac{1\\ }{9}\\right)+.....\\left(\\ \\frac{1\\ }{43}-\\frac{1\\ }{45}\\right)$\nCancelling the terms with opposite signs with the same values.\n=> $S_1+S_2+....S_{20}=\\dfrac{5}{2}\\left(\\dfrac{1\\ }{5}-\\dfrac{1\\ }{45}\\right)=\\dfrac{4\\ }{9}$\nIt is given that $S_1+S_2+....S_{20}=\\frac{p\\ }{q}$ = $\\frac{4\\ }{9}$\nTherefore, $p\\ =4,\\ q=9$ and they are co-prime to each other\nThe first term of the A.P. is 9, and the common difference is 4.\nThe sum of the first 10 terms of A.P. is $\\frac{10\\ }{2}\\left(18+\\left(10-1\\right)4\\right)$ \n=> 270.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-8",
+      "passage_text": "",
+      "question_text": "In a given triangle, the three angles formed by the triangle are in an arithmetic progression. Suppose the triangle's shortest and longest sides are 3 and 4 units, respectively. Find the length of the third side.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{\\ 11}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{\\ 12}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\ 13}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{\\ 15}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since the angles of the triangle are in A.P., we can assume them as a-d, a and a+d.\nSince the sum of the angles in a triangle is 180 degrees => $\\left(a-d\\right)+\\left(a\\right)+\\left(a+d\\right)=180$ => a = 60 degrees.\nNow it is given that 3,4 are the shortest and the longest sides => The required third side is opposite to the angle that is neither smallest nor largest, i.e. 60 degrees.\nNow applying the cosine rule, we get\n$\\cos\\left(60\\right)=\\dfrac{\\left(3^2+4^2-x^2\\right)}{2\\times\\ 3\\times\\ 4}$\n=> $12=25-x^2$ => $x\\ =\\ \\sqrt{\\ 13}$.\nTherefore, the required length of the third side = $\\ \\sqrt{\\ 13}\\ $ units.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a given triangle, the three angles formed by the triangle are in an arithmetic progression. Suppose the triangle's shortest and longest sides are 3 and 4 units, respectively. Find the length of the third side.\n\n**Options:**\n- **A**. $\\sqrt{\\ 11}$\n- **B**. $\\sqrt{\\ 12}$\n- **C**. $\\sqrt{\\ 13}$ ✅\n- **D**. $\\sqrt{\\ 15}$\n\n**Correct Answer:** null\n\n**Solution:**\nSince the angles of the triangle are in A.P., we can assume them as a-d, a and a+d.\nSince the sum of the angles in a triangle is 180 degrees => $\\left(a-d\\right)+\\left(a\\right)+\\left(a+d\\right)=180$ => a = 60 degrees.\nNow it is given that 3,4 are the shortest and the longest sides => The required third side is opposite to the angle that is neither smallest nor largest, i.e. 60 degrees.\nNow applying the cosine rule, we get\n$\\cos\\left(60\\right)=\\dfrac{\\left(3^2+4^2-x^2\\right)}{2\\times\\ 3\\times\\ 4}$\n=> $12=25-x^2$ => $x\\ =\\ \\sqrt{\\ 13}$.\nTherefore, the required length of the third side = $\\ \\sqrt{\\ 13}\\ $ units.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-9",
+      "passage_text": "",
+      "question_text": "Find the ratio of the area of the polygon TUVW to the area of the square PQRS in the given figure, where PQRS is a square, and T, U, V, and W are four points on each side of square such that PT:TQ = 5:4, QU:UR = 2:1, SV:VR = 1:1, and SW:WP = 2:1.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "55:108",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:12",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "28:81",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "27:59",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the side of the given square PQRS be 18 units.\nAlso, PT: TQ = 5:4, QU: UR = 2:1, SV: VR = 1:1, and SW: WP = 2:1.\nThus, PT = 10 units, TQ = 8 units, QU = 12 units, UR = 6 units, SV = 9 units, VR = 9 units, SW = 12 units and WP = 6 units.\nArea of square PQRS = $18^2 = 324$ sq. unit\nArea of triangle PWT = $\\dfrac{1*10*6}{2} = 30$ sq. unit\nArea of triangle TQU = $\\dfrac{1*8*12}{2} = 48$ sq. unit\nArea of triangle URV = $\\dfrac{1*6*9}{2} = 27$ sq. unit\nArea of triangle VWS = $\\dfrac{1*12*9}{2} = 54$ sq. unit\nThus, the area of polygon TUVW = Area of square PQRS - (Area of triangle PWT+Area of triangle TQU+Area of triangle URV+Area of triangle VWS) = $324-(30+48+27+54) = 165$ sq. unit\nHence, the required ratio = $\\dfrac{165}{324}$  = 55:108\nThe answer is option A.",
+      "image_url": "https://cracku.in/media/uploads/DRQ.PNG",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the ratio of the area of the polygon TUVW to the area of the square PQRS in the given figure, where PQRS is a square, and T, U, V, and W are four points on each side of square such that PT:TQ = 5:4, QU:UR = 2:1, SV:VR = 1:1, and SW:WP = 2:1.\n\n**Options:**\n- **A**. 55:108 ✅\n- **B**. 5:12\n- **C**. 28:81\n- **D**. 27:59\n\n**Correct Answer:** null\n\n**Solution:**\nLet the side of the given square PQRS be 18 units.\nAlso, PT: TQ = 5:4, QU: UR = 2:1, SV: VR = 1:1, and SW: WP = 2:1.\nThus, PT = 10 units, TQ = 8 units, QU = 12 units, UR = 6 units, SV = 9 units, VR = 9 units, SW = 12 units and WP = 6 units.\nArea of square PQRS = $18^2 = 324$ sq. unit\nArea of triangle PWT = $\\dfrac{1*10*6}{2} = 30$ sq. unit\nArea of triangle TQU = $\\dfrac{1*8*12}{2} = 48$ sq. unit\nArea of triangle URV = $\\dfrac{1*6*9}{2} = 27$ sq. unit\nArea of triangle VWS = $\\dfrac{1*12*9}{2} = 54$ sq. unit\nThus, the area of polygon TUVW = Area of square PQRS - (Area of triangle PWT+Area of triangle TQU+Area of triangle URV+Area of triangle VWS) = $324-(30+48+27+54) = 165$ sq. unit\nHence, the required ratio = $\\dfrac{165}{324}$  = 55:108\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-10",
+      "passage_text": "",
+      "question_text": "6 men can complete a piece of work in 55 days. They start the work together, but at the end of every 5th day, one man leaves work, and in the place of the man, a woman joins the work. After 30 days, all the men left the work and the six women continue doing the work and finish it. Find the total number of days they take to complete the work in this manner if the efficiency of one woman is 60% of the efficiency of one man.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "80 days",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "85 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "75 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "70 days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the work efficiency of one man in one day = 5x, work efficiency of one woman in one day = 3x\n6 men complete the total work in 55 days.\nThus, total units of work = $\\left(6\\times\\ 55\\times\\ 5x\\right)$ = 1650$x$ units\n1. For the first 5 days, work is done by 6 men.\nTotal work done = $\\left(5\\times\\ 6\\times\\ 5x\\right)$ = 150$x$ units\n2. For the next 5 days, work is done by 5 men and a woman. \nTotal work done = $\\left(5\\times\\ 5\\times\\ 5x\\right)+\\left(5\\times\\ 1\\times\\ 3x\\right)$ = 140$x$\nSimilarly, for next 5 days = 130$x$\n=> Work done in 30 days = 150$x$+140$x$+130$x$+120$x$+110$x$+100$x$ = 750$x$\nThe Remaining work is done by 6 women = (1650-750)$x$ = 900$x$\nThe number of days taken by women to complete the remaining work = $\\ \\dfrac{900x}{18x}$ = $50$ days\nTotal days took to complete the whole work = 30+50 = 80 days\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n6 men can complete a piece of work in 55 days. They start the work together, but at the end of every 5th day, one man leaves work, and in the place of the man, a woman joins the work. After 30 days, all the men left the work and the six women continue doing the work and finish it. Find the total number of days they take to complete the work in this manner if the efficiency of one woman is 60% of the efficiency of one man.\n\n**Options:**\n- **A**. 80 days ✅\n- **B**. 85 days\n- **C**. 75 days\n- **D**. 70 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet the work efficiency of one man in one day = 5x, work efficiency of one woman in one day = 3x\n6 men complete the total work in 55 days.\nThus, total units of work = $\\left(6\\times\\ 55\\times\\ 5x\\right)$ = 1650$x$ units\n1. For the first 5 days, work is done by 6 men.\nTotal work done = $\\left(5\\times\\ 6\\times\\ 5x\\right)$ = 150$x$ units\n2. For the next 5 days, work is done by 5 men and a woman. \nTotal work done = $\\left(5\\times\\ 5\\times\\ 5x\\right)+\\left(5\\times\\ 1\\times\\ 3x\\right)$ = 140$x$\nSimilarly, for next 5 days = 130$x$\n=> Work done in 30 days = 150$x$+140$x$+130$x$+120$x$+110$x$+100$x$ = 750$x$\nThe Remaining work is done by 6 women = (1650-750)$x$ = 900$x$\nThe number of days taken by women to complete the remaining work = $\\ \\dfrac{900x}{18x}$ = $50$ days\nTotal days took to complete the whole work = 30+50 = 80 days\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-11",
+      "passage_text": "",
+      "question_text": "ABCD is an isosceles trapezium with side BC parallel to AD.  The lengths \nof the parallel sides are 10 cm and 12 cm. The length of the non-parallel \nside is 7 cm. Find the area of the isosceles trapezium in sq cm.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$22\\sqrt{6}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$22\\sqrt{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$44\\sqrt{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$22\\sqrt{5}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The diagram is given below:\nIt is given that AB=CD=7 cm, AD=10 cm, and BC=12 cm.\nTherefore, for isosceles trapezium, we can use this property:\nHence, the area of the trapezium is = the area of ADFE + the area of CDF + the area of ABE\nSince CF = 1, and CD=7, which implies $DF\\ =\\ \\sqrt{\\ CD^2-CF^2}=\\sqrt{\\ 7^2-1^2}=\\sqrt{\\ 48}=4\\sqrt{\\ 3}$ cm.\nHence, the area of ADFE = DF * AD = $10\\ \\cdot\\ 4\\sqrt{\\ 3}=40\\sqrt{\\ 3}$ cm^2, the area of CDF = 1/2 *DF*CF = $\\frac{1}{2}\\cdot4\\sqrt{\\ 3}\\cdot1=2\\sqrt{\\ 3}$ sq cm\nThe area of CDF = the area of ABE = $2\\sqrt{\\ 3}$ sq cm\nHence, the area of trapezium = $2\\sqrt{\\ 3}+2\\sqrt{\\ 3}+40\\sqrt{\\ 3}=44\\sqrt{\\ 3}$ sq cm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCD is an isosceles trapezium with side BC parallel to AD.  The lengths \nof the parallel sides are 10 cm and 12 cm. The length of the non-parallel \nside is 7 cm. Find the area of the isosceles trapezium in sq cm.\n\n**Options:**\n- **A**. $22\\sqrt{6}$\n- **B**. $22\\sqrt{5}$\n- **C**. $44\\sqrt{3}$ ✅\n- **D**. $22\\sqrt{5}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe diagram is given below:\nIt is given that AB=CD=7 cm, AD=10 cm, and BC=12 cm.\nTherefore, for isosceles trapezium, we can use this property:\nHence, the area of the trapezium is = the area of ADFE + the area of CDF + the area of ABE\nSince CF = 1, and CD=7, which implies $DF\\ =\\ \\sqrt{\\ CD^2-CF^2}=\\sqrt{\\ 7^2-1^2}=\\sqrt{\\ 48}=4\\sqrt{\\ 3}$ cm.\nHence, the area of ADFE = DF * AD = $10\\ \\cdot\\ 4\\sqrt{\\ 3}=40\\sqrt{\\ 3}$ cm^2, the area of CDF = 1/2 *DF*CF = $\\frac{1}{2}\\cdot4\\sqrt{\\ 3}\\cdot1=2\\sqrt{\\ 3}$ sq cm\nThe area of CDF = the area of ABE = $2\\sqrt{\\ 3}$ sq cm\nHence, the area of trapezium = $2\\sqrt{\\ 3}+2\\sqrt{\\ 3}+40\\sqrt{\\ 3}=44\\sqrt{\\ 3}$ sq cm.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-12",
+      "passage_text": "",
+      "question_text": "A shopkeeper buys three laptops at a certain price and marks up their prices to sell them. He further offers a 23% discount on the first laptop, which results in a 10% profit. On the second laptop, he provides a 25% discount; on the third laptop, he further marks up the price by 30% and later gives a 30% discount. What is the overall profit percentage of shopkeepers in selling all three laptops?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15.71%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16.66%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14.28%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "13.33%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost price of laptops be Rs. 100a and the marked price be Rs.100b\nIt is given that giving a discount of 23% on the first laptop results in a 10% profit\nTherefore, the selling price = 100a($\\left(1+\\frac{10\\ }{100}\\right)$ = Rs.110a\nSelling price = Marked price(1-discount/100)\n110a = 100b($\\left(1-\\frac{23\\ }{100}\\right)$\n=> 110a = 77b\n=> a = 0.7b\nTherefore, the cost price of the laptop is = 100*(0.7b)  {Substituting value of a in terms of b}\nFor the second laptop, he gave a 25% discount, therefore selling price of the second laptop \n=> 100b(1- discount/100) = 100b(0.75) = 75b\nFor the third laptop, he further increased the price by 30% and then gave a discount of 30%\n=> Marked up price = Rs.100b(1.3) = 130b\nSelling price after discount of 30% = 130b(0.7) = 91b\nTherefore, the cost price of all three laptops = Rs.100a*(3) = 300a = 300*(0.7b) = Rs. 210b\nThe selling price of all three laptops = (77b + 75b + 91b) = Rs. 243b\ntherefore, profit percentage = $\\ \\frac{\\ SP-CP}{CP}\\times100$\n=> $\\left(\\dfrac{243b-210b\\ }{210b}\\right)\\times100$ = $\\left(\\dfrac{33b\\ }{210b}\\right)\\times100\\ =\\ 15.71\\%$\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper buys three laptops at a certain price and marks up their prices to sell them. He further offers a 23% discount on the first laptop, which results in a 10% profit. On the second laptop, he provides a 25% discount; on the third laptop, he further marks up the price by 30% and later gives a 30% discount. What is the overall profit percentage of shopkeepers in selling all three laptops?\n\n**Options:**\n- **A**. 15.71% ✅\n- **B**. 16.66%\n- **C**. 14.28%\n- **D**. 13.33%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price of laptops be Rs. 100a and the marked price be Rs.100b\nIt is given that giving a discount of 23% on the first laptop results in a 10% profit\nTherefore, the selling price = 100a($\\left(1+\\frac{10\\ }{100}\\right)$ = Rs.110a\nSelling price = Marked price(1-discount/100)\n110a = 100b($\\left(1-\\frac{23\\ }{100}\\right)$\n=> 110a = 77b\n=> a = 0.7b\nTherefore, the cost price of the laptop is = 100*(0.7b)  {Substituting value of a in terms of b}\nFor the second laptop, he gave a 25% discount, therefore selling price of the second laptop \n=> 100b(1- discount/100) = 100b(0.75) = 75b\nFor the third laptop, he further increased the price by 30% and then gave a discount of 30%\n=> Marked up price = Rs.100b(1.3) = 130b\nSelling price after discount of 30% = 130b(0.7) = 91b\nTherefore, the cost price of all three laptops = Rs.100a*(3) = 300a = 300*(0.7b) = Rs. 210b\nThe selling price of all three laptops = (77b + 75b + 91b) = Rs. 243b\ntherefore, profit percentage = $\\ \\frac{\\ SP-CP}{CP}\\times100$\n=> $\\left(\\dfrac{243b-210b\\ }{210b}\\right)\\times100$ = $\\left(\\dfrac{33b\\ }{210b}\\right)\\times100\\ =\\ 15.71\\%$\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-13",
+      "passage_text": "",
+      "question_text": "Bablu is planning a dinner party and is planning to calculate the budget required for the party. The budget has two components, a fixed part and a variable part, which is directly proportional to the number of guests. Bablu notes that when the number of guests is 120, the total budget required is Rs. 17000, and when the guests are 80, the budget is Rs.14000. Find the total budget when there are 30 guests.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 10250",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 10500",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 10750",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 11000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Since the budget contains two parts, let us assume B = F + k * p, where F is the fixed component, p is the number of guests, and k is the proportionality constant.\nGiven that when p = 120, the budget is 17000.\n=> 17000 = F + 120k ---(1)\nAnd when p = 80, the budget is 14000\n=> 14000 = F + 80k ---(2)\n=> (1-2) => 40k = 3000 => k = 75.\nFrom (1)\n=> F = 17000 - 120*75 = 17000 - 9000 = 8000 => F = 8000.\nWhen the number of guests is 30, the budget required is 8000 + 30*75 = Rs. 10250.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBablu is planning a dinner party and is planning to calculate the budget required for the party. The budget has two components, a fixed part and a variable part, which is directly proportional to the number of guests. Bablu notes that when the number of guests is 120, the total budget required is Rs. 17000, and when the guests are 80, the budget is Rs.14000. Find the total budget when there are 30 guests.\n\n**Options:**\n- **A**. Rs. 10250 ✅\n- **B**. Rs. 10500\n- **C**. Rs. 10750\n- **D**. Rs. 11000\n\n**Correct Answer:** null\n\n**Solution:**\nSince the budget contains two parts, let us assume B = F + k * p, where F is the fixed component, p is the number of guests, and k is the proportionality constant.\nGiven that when p = 120, the budget is 17000.\n=> 17000 = F + 120k ---(1)\nAnd when p = 80, the budget is 14000\n=> 14000 = F + 80k ---(2)\n=> (1-2) => 40k = 3000 => k = 75.\nFrom (1)\n=> F = 17000 - 120*75 = 17000 - 9000 = 8000 => F = 8000.\nWhen the number of guests is 30, the budget required is 8000 + 30*75 = Rs. 10250.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-14",
+      "passage_text": "",
+      "question_text": "The average weights of the students in sections A, B, and C are 56 kg, 48 kg, and 58 kg, respectively. When combining the students from sections A and B, the average weight is 54 kg, and for sections B and C, it is 56 kg. What is the average weight of all the students in the three sections combined?",
+      "options": [],
+      "correct_option_data": "56",
+      "solution_text": "Let the number of students in sections A, B and C be a, b, and c\nthe average weight of students in section A = 56 kg\nthe average weight of students in section B = 48 kg\nthe average weight of students in section A = 58 kg\nAlso, the average weight of students from sections A and B = 54 kg\n=> Total weight of section A and B students = 56a + 48b = 54(a+b)\n=> 56a + 48b = 54a + 54b\n=> 2a = 6b\n=> a:b =3:1\nSimilarly, the average weight of students from sections B and C = 56 kg\n=> Total weight of section B and C students = 48b + 58c = 56(b+c)\n=> 48b + 58c = 56b + 56c\n=> 2c = 8b\n=> b:c = 1:4\n=> a:b:c = 3:1:4\nTherefore, the average weight of all students in three sections combined = $\\dfrac{56\\times3+48\\times1+58\\times4\\ }{3+1+4}=\\dfrac{448\\ }{8}$\n=> 448/8 = > 56 kg",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average weights of the students in sections A, B, and C are 56 kg, 48 kg, and 58 kg, respectively. When combining the students from sections A and B, the average weight is 54 kg, and for sections B and C, it is 56 kg. What is the average weight of all the students in the three sections combined?\n\n**Options:**\n\n**Correct Answer:** 56\n\n**Solution:**\nLet the number of students in sections A, B and C be a, b, and c\nthe average weight of students in section A = 56 kg\nthe average weight of students in section B = 48 kg\nthe average weight of students in section A = 58 kg\nAlso, the average weight of students from sections A and B = 54 kg\n=> Total weight of section A and B students = 56a + 48b = 54(a+b)\n=> 56a + 48b = 54a + 54b\n=> 2a = 6b\n=> a:b =3:1\nSimilarly, the average weight of students from sections B and C = 56 kg\n=> Total weight of section B and C students = 48b + 58c = 56(b+c)\n=> 48b + 58c = 56b + 56c\n=> 2c = 8b\n=> b:c = 1:4\n=> a:b:c = 3:1:4\nTherefore, the average weight of all students in three sections combined = $\\dfrac{56\\times3+48\\times1+58\\times4\\ }{3+1+4}=\\dfrac{448\\ }{8}$\n=> 448/8 = > 56 kg",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-15",
+      "passage_text": "",
+      "question_text": "Siddharth gives a discount of 40% on a book, and still, he gets a 40% profit. What will be the maximum discount (in percentages) he can offer to his customer such that he doesn't incur any loss?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "42.85%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "64.29%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "51.43%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "57.14%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the mark price of the book is 100x. \nHe gives a 40% discount and still gets a 40% profit.\nThe selling price is $100x.\\left(\\ \\dfrac{\\ 100-40}{100}\\right)=100x\\cdot\\dfrac{3}{5}=60x$. \nHe manages to get 40% profit.\nLet the cost price be 'a'. \n$a\\times\\ \\dfrac{140}{100}=60x\\ =>\\ a\\ =\\dfrac{300x}{7}$\nIf he sells the book at the cost price, he will not incur any loss or profit. \nThen, the selling price = the cost price = $\\ a\\ =\\dfrac{300x}{7}$\nNet Discount = Mark price - selling price = $100x-\\dfrac{300x}{7}=\\ \\dfrac{\\ 700x-300x}{7}=\\dfrac{400x}{7}$\nDiscount % = $\\ \\dfrac{\\ \\dfrac{400x}{7}}{100x}\\times\\ 100\\%\\ =>\\dfrac{400x}{700x}\\times\\ 100\\%\\ =\\dfrac{4}{7}\\times\\ 100\\%\\ =\\ 57.14\\%$\nHence, the correct option is D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSiddharth gives a discount of 40% on a book, and still, he gets a 40% profit. What will be the maximum discount (in percentages) he can offer to his customer such that he doesn't incur any loss?\n\n**Options:**\n- **A**. 42.85%\n- **B**. 64.29%\n- **C**. 51.43%\n- **D**. 57.14% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the mark price of the book is 100x. \nHe gives a 40% discount and still gets a 40% profit.\nThe selling price is $100x.\\left(\\ \\dfrac{\\ 100-40}{100}\\right)=100x\\cdot\\dfrac{3}{5}=60x$. \nHe manages to get 40% profit.\nLet the cost price be 'a'. \n$a\\times\\ \\dfrac{140}{100}=60x\\ =>\\ a\\ =\\dfrac{300x}{7}$\nIf he sells the book at the cost price, he will not incur any loss or profit. \nThen, the selling price = the cost price = $\\ a\\ =\\dfrac{300x}{7}$\nNet Discount = Mark price - selling price = $100x-\\dfrac{300x}{7}=\\ \\dfrac{\\ 700x-300x}{7}=\\dfrac{400x}{7}$\nDiscount % = $\\ \\dfrac{\\ \\dfrac{400x}{7}}{100x}\\times\\ 100\\%\\ =>\\dfrac{400x}{700x}\\times\\ 100\\%\\ =\\dfrac{4}{7}\\times\\ 100\\%\\ =\\ 57.14\\%$\nHence, the correct option is D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-14-16",
+      "passage_text": "",
+      "question_text": "Shyam allocated his investment of Rs. 2 lakh between two schemes for a duration of 3 years. In the first scheme, he invested 40% of the total amount and earned an annual compound interest of 15%. For the second scheme, the interest rates were 12% for the first year, 16% for the second year, and 18% for the third year. What is the approximate difference in the interest amounts received from both schemes?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.22,297",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.23,467",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.25,567",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.26,667",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "To find the difference in the amount of interest received from both schemes, let's calculate the interest earned from each scheme separately and then find the difference.\nFirst Scheme:\nShyam invested 40% of Rs. 2 lakh, which is (40/100) * 2,00,000 = Rs. 80,000 in the first scheme. \nThe interest is compounded annually at a rate of 15%.\nAfter 3 years, the amount in the first scheme can be calculated using the formula for compound interest: A = P * (1 + r/100)^n, where A is the final amount, P is the principal amount, r is the interest rate, and n is the number of years. \nIn this case, P = Rs. 80,000, r = 15%, and n = 3 years. \nSo, the amount after 3 years in the first scheme is A = 80,000 * (1 + 15/100)^3 = Rs. 1,21,670.\nSecond Scheme:\nShyam invested the remaining 60% of Rs. 2 lakh, which is (60/100) * 2,00,000 = Rs. 1,20,000 in the second scheme. \nThe interest rate for each year in the second scheme is as follows:\nFirst year: 12%\nSecond year: 16%\nThird year: 18% \nTo calculate the amount after 3 years, we need to calculate the interest for each year separately and add it to the principal amount.\nInterest for the first year = (12/100) * 1,20,000 = Rs. 14,400\nAmount after the first year = 1,20,000 + 14,400 = Rs. 1,34,400\nInterest for the second year = (16/100) * 1,34,400 = Rs. 21,504\nAmount after the second year = 1,34,400 + 21,504 = Rs. 1,55,904\nInterest for the third year = (18/100) * 1,55,904 = Rs. 28,062.72\nAmount after the third year = 1,55,904 + 28,062.72 = Rs. 1,83,966.72\nNow, let's calculate the difference in interest received from both schemes: \nInterest from the first scheme = Amount after 3 years - Principal amount = 1,21,670 - 80,000 = Rs. 41,670\nInterest from the second scheme = Amount after 3 years - Principal amount = 1,83,966.72 - 1,20,000 = Rs. 63,966.72\nTherefore, the difference in the amount of interest received from both schemes is Rs. (63,966.72 - 41,670) = Rs. 22296.72",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nShyam allocated his investment of Rs. 2 lakh between two schemes for a duration of 3 years. In the first scheme, he invested 40% of the total amount and earned an annual compound interest of 15%. For the second scheme, the interest rates were 12% for the first year, 16% for the second year, and 18% for the third year. What is the approximate difference in the interest amounts received from both schemes?\n\n**Options:**\n- **A**. Rs.22,297 ✅\n- **B**. Rs.23,467\n- **C**. Rs.25,567\n- **D**. Rs.26,667\n\n**Correct Answer:** null\n\n**Solution:**\nTo find the difference in the amount of interest received from both schemes, let's calculate the interest earned from each scheme separately and then find the difference.\nFirst Scheme:\nShyam invested 40% of Rs. 2 lakh, which is (40/100) * 2,00,000 = Rs. 80,000 in the first scheme. \nThe interest is compounded annually at a rate of 15%.\nAfter 3 years, the amount in the first scheme can be calculated using the formula for compound interest: A = P * (1 + r/100)^n, where A is the final amount, P is the principal amount, r is the interest rate, and n is the number of years. \nIn this case, P = Rs. 80,000, r = 15%, and n = 3 years. \nSo, the amount after 3 years in the first scheme is A = 80,000 * (1 + 15/100)^3 = Rs. 1,21,670.\nSecond Scheme:\nShyam invested the remaining 60% of Rs. 2 lakh, which is (60/100) * 2,00,000 = Rs. 1,20,000 in the second scheme. \nThe interest rate for each year in the second scheme is as follows:\nFirst year: 12%\nSecond year: 16%\nThird year: 18% \nTo calculate the amount after 3 years, we need to calculate the interest for each year separately and add it to the principal amount.\nInterest for the first year = (12/100) * 1,20,000 = Rs. 14,400\nAmount after the first year = 1,20,000 + 14,400 = Rs. 1,34,400\nInterest for the second year = (16/100) * 1,34,400 = Rs. 21,504\nAmount after the second year = 1,34,400 + 21,504 = Rs. 1,55,904\nInterest for the third year = (18/100) * 1,55,904 = Rs. 28,062.72\nAmount after the third year = 1,55,904 + 28,062.72 = Rs. 1,83,966.72\nNow, let's calculate the difference in interest received from both schemes: \nInterest from the first scheme = Amount after 3 years - Principal amount = 1,21,670 - 80,000 = Rs. 41,670\nInterest from the second scheme = Amount after 3 years - Principal amount = 1,83,966.72 - 1,20,000 = Rs. 63,966.72\nTherefore, the difference in the amount of interest received from both schemes is Rs. (63,966.72 - 41,670) = Rs. 22296.72",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-17",
       "passage_text": "",
-      "question_text": "A clerk while entering the name of a student in the register misspelt it. Later, he realized that he has interchanged the position of exactly 2 letters in the name. If the name of the student is AKANKSHA, then what is the number of ways in which the Clerk could have made a mistake?",
-      "options": [],
-      "correct_option_data": "24",
-      "solution_text": "AKANKSHA has 8 letters in total.\nThe 2 letters that got interchanged can be chosen in 8C2 = 28 ways.\nHowever, we can see that the clerk could not have interchanged 2 As or 2 Ks.\nThere are 3 As in total. Two of these 3 can be chosen in 3C2 = 3 ways. \nThere are 2 Ks in total. These 2 Ks can be chosen in 2C2 = 1 way. \nTherefore, the number of ways in which the clerk could have interchanged the letters in 28-3-1 = 24 ways.",
+      "question_text": "How many factors of 2646000 are not divisible by 15?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "105",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "135",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "To determine the number of factors of 2646000 that are not divisible by 15, we need to find the total number of factors and subtract the number of factors that are divisible by 15.\nPrime factorizing 2646000, we get:\n2646000 = $2^4\\times3^3\\times5^3\\times7^2\\ $\nTo find the total number of factors, we add 1 to the exponent of each prime factor and multiply the results:\n$\\left(4+1\\right)\\left(3+1\\right)\\left(3+1\\right)\\left(2+1\\right)\\ =\\ 240$ \nSo, there are 240 factors of 2646000 in total.\nNow, let's determine the number of factors that are divisible by 15. Since 15 can be factored as 3 * 5, any factor of 2646000 divisible by 15 must contain at least one power of 3 and one power of 5.\nFor the power of 3, we have 0, 1, 2, or 3 options (0 to 3 as exponents). For the power of 5, we have 0, 1, 2, or 3 options as well. Since a factor can have combinations of these options, the total number of factors divisible by 15 is:\n(3 options for the power of 3)*(3 options for the power of 5)*(5 options for the power of 2)*(3 options for the power of 7) = 3*3*5*3 = 135\nTherefore, there are 135 factors of 2646000 that are divisible by 15.\nTo find the number of factors that are not divisible by 15, we subtract the number of factors divisible by 15 from the total number of factors:\nTotal factors - Factors divisible by 15 = 240 - 135 = 105\nHence, there are 105 factors of 2646000 that are not divisible by 15.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA clerk while entering the name of a student in the register misspelt it. Later, he realized that he has interchanged the position of exactly 2 letters in the name. If the name of the student is AKANKSHA, then what is the number of ways in which the Clerk could have made a mistake?\n\n**Options:**\n\n**Correct Answer:** 24\n\n**Solution:**\nAKANKSHA has 8 letters in total.\nThe 2 letters that got interchanged can be chosen in 8C2 = 28 ways.\nHowever, we can see that the clerk could not have interchanged 2 As or 2 Ks.\nThere are 3 As in total. Two of these 3 can be chosen in 3C2 = 3 ways. \nThere are 2 Ks in total. These 2 Ks can be chosen in 2C2 = 1 way. \nTherefore, the number of ways in which the clerk could have interchanged the letters in 28-3-1 = 24 ways."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many factors of 2646000 are not divisible by 15?\n\n**Options:**\n- **A**. 120\n- **B**. 105 ✅\n- **C**. 90\n- **D**. 135\n\n**Correct Answer:** null\n\n**Solution:**\nTo determine the number of factors of 2646000 that are not divisible by 15, we need to find the total number of factors and subtract the number of factors that are divisible by 15.\nPrime factorizing 2646000, we get:\n2646000 = $2^4\\times3^3\\times5^3\\times7^2\\ $\nTo find the total number of factors, we add 1 to the exponent of each prime factor and multiply the results:\n$\\left(4+1\\right)\\left(3+1\\right)\\left(3+1\\right)\\left(2+1\\right)\\ =\\ 240$ \nSo, there are 240 factors of 2646000 in total.\nNow, let's determine the number of factors that are divisible by 15. Since 15 can be factored as 3 * 5, any factor of 2646000 divisible by 15 must contain at least one power of 3 and one power of 5.\nFor the power of 3, we have 0, 1, 2, or 3 options (0 to 3 as exponents). For the power of 5, we have 0, 1, 2, or 3 options as well. Since a factor can have combinations of these options, the total number of factors divisible by 15 is:\n(3 options for the power of 3)*(3 options for the power of 5)*(5 options for the power of 2)*(3 options for the power of 7) = 3*3*5*3 = 135\nTherefore, there are 135 factors of 2646000 that are divisible by 15.\nTo find the number of factors that are not divisible by 15, we subtract the number of factors divisible by 15 from the total number of factors:\nTotal factors - Factors divisible by 15 = 240 - 135 = 105\nHence, there are 105 factors of 2646000 that are not divisible by 15.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-18",
       "passage_text": "",
-      "question_text": "A man starts on his jet-ski and covers a certain distance upstream and returns back to his start point. The difference in time taken while travelling upstream and downstream is 30 seconds. He takes 80 seconds to cover the entire distance(to and fro) in still water. If the speed of his jet-ski is 30 m/sec in still water then find out the speed of the stream?",
+      "question_text": "Samantha walks to the railway station daily, leaving her home at a certain time. Normally, she reaches the station at 9:30 AM when she walks at her usual speed. However, one day, she decided to travel at different speeds for different parts of the distance. She covers half the distance with a speed that is 30% more than her usual speed and the remaining half with a speed that is 100% more than her usual speed. Surprisingly, she reaches the station at 9:15 AM. Approximately at what time did Samantha leave her home?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "12 m/sec",
+          "option_text": "8:41 am",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "10 m/sec",
+          "option_text": "8:49 am",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "20 m/sec",
+          "option_text": "8:55 am",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "15 m/sec",
+          "option_text": "9:02 am",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Since, the man takes 80 seconds to go to and fro in still water.\nSo, one way would take 40 seconds. And given, $u$(speed of jet-ski in still water) = 30 m/sec\n$\\therefore$ Total distance = 30 * 40 = 1200 m\nNow, difference in time between upstream and downstream journeys = 30 sec\nLet, upstream speed = $u$ - $v$\n       downstream speed = $u$ + $v$\nWhere $v$ = speed of stream\nSo, we have\n     $\\frac{1200}{u-v} -\\frac{1200}{u+v}=30$\n=> $\\frac{1200}{30-v} -\\frac{1200}{30+v}=30$\n=> $v^{2}+80v-900=0$\n=> $(v-10)(v+90)=0$\n=> $v$=10 m/sec\nHence, option B is the correct answer.",
+      "solution_text": "Let the total distance that she travels be 2d.\nWhile travelling the first half, her speed is 1.30 times her usual speed. (Let her normal speed be 1km/hr)\nHence, time taken = $\\ \\frac{d}{1.3}$ = 0.77d\nWhile travelling the second half, her speed is 2 times her usual speed.\nHence, time taken = ​$\\ \\frac{d}{2}$ = 0.5d\nTotal time taken = 1.27d\nActual time taken = 2d\nTime is decreased by 2d - 1.27d, i.e. 0.73d, and it is known that she reached 15 minutes early.\nTherefore, 0.73d = 15 min\nd = 20.54 min\n2d = 41.08 min\nHence, she starts at 8:49 AM. (Approx)\nThe answer is option B.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man starts on his jet-ski and covers a certain distance upstream and returns back to his start point. The difference in time taken while travelling upstream and downstream is 30 seconds. He takes 80 seconds to cover the entire distance(to and fro) in still water. If the speed of his jet-ski is 30 m/sec in still water then find out the speed of the stream?\n\n**Options:**\n- **A**. 12 m/sec\n- **B**. 10 m/sec ✅\n- **C**. 20 m/sec\n- **D**. 15 m/sec\n\n**Correct Answer:** null\n\n**Solution:**\nSince, the man takes 80 seconds to go to and fro in still water.\nSo, one way would take 40 seconds. And given, $u$(speed of jet-ski in still water) = 30 m/sec\n$\\therefore$ Total distance = 30 * 40 = 1200 m\nNow, difference in time between upstream and downstream journeys = 30 sec\nLet, upstream speed = $u$ - $v$\n       downstream speed = $u$ + $v$\nWhere $v$ = speed of stream\nSo, we have\n     $\\frac{1200}{u-v} -\\frac{1200}{u+v}=30$\n=> $\\frac{1200}{30-v} -\\frac{1200}{30+v}=30$\n=> $v^{2}+80v-900=0$\n=> $(v-10)(v+90)=0$\n=> $v$=10 m/sec\nHence, option B is the correct answer."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSamantha walks to the railway station daily, leaving her home at a certain time. Normally, she reaches the station at 9:30 AM when she walks at her usual speed. However, one day, she decided to travel at different speeds for different parts of the distance. She covers half the distance with a speed that is 30% more than her usual speed and the remaining half with a speed that is 100% more than her usual speed. Surprisingly, she reaches the station at 9:15 AM. Approximately at what time did Samantha leave her home?\n\n**Options:**\n- **A**. 8:41 am\n- **B**. 8:49 am ✅\n- **C**. 8:55 am\n- **D**. 9:02 am\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total distance that she travels be 2d.\nWhile travelling the first half, her speed is 1.30 times her usual speed. (Let her normal speed be 1km/hr)\nHence, time taken = $\\ \\frac{d}{1.3}$ = 0.77d\nWhile travelling the second half, her speed is 2 times her usual speed.\nHence, time taken = ​$\\ \\frac{d}{2}$ = 0.5d\nTotal time taken = 1.27d\nActual time taken = 2d\nTime is decreased by 2d - 1.27d, i.e. 0.73d, and it is known that she reached 15 minutes early.\nTherefore, 0.73d = 15 min\nd = 20.54 min\n2d = 41.08 min\nHence, she starts at 8:49 AM. (Approx)\nThe answer is option B.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-19",
       "passage_text": "",
-      "question_text": "The raw material required for an industry comes from two countries - A and B. The cost of raw material and transport from A is 25% of the total production cost and the cost of raw material and transport from B forms 35% of the total production cost. The remaining 40% is the cost of labour. Due to a change in economic policies in the two countries, the total production cost incurred from country A rose by 10% and the total production cost incurred from country B rose by 20%. The selling price of the product is 1.2 times the cost of production. If the labour cost remains the same, what should be the percentage increase in the selling price of the product, so that the profit remains the same (round it to the nearest integer)?",
+      "question_text": "Rahul, Shweta, and Aman are collaborating on a project. Shweta works three-fourths of the time Rahul works, while Aman works half the time Shweta does. At the end of the day, the daily wages received by Rahul, Shweta, and Aman are in the ratio of 16:9:3. \n\nOn another job, the amount of times Rahul, Shweta and Aman worked were in the ratio of 2:3:4, what is the ratio of the wages they received?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "6%",
+          "option_text": "6:7:6",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "8%",
-          "is_correct": true
+          "option_text": "5:6:5",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "12%",
-          "is_correct": false
+          "option_text": "8:9:8",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "10%",
+          "option_text": "9:10:9",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the total production cost be ‘x’\nSelling price = 1.2x\nProduction cost incurred from A = 25% of x = x/4\nNew production cost incurred from A = (110/100)*(x/4) = 1.1x/4 = 0.275x\nNew production cost incurred from B = (120/100)*(35/100)*x = 0.420x\nNew total production cost = 0.275x + 0.420x + 0.400x = 1.095x\nThe profit in the first case is 1.2x-x=0.2x.\nSince profit is same,  new selling price = 1.295x\nSo, percentage increase in selling price = (0.095/1.2) * 100% = 7.91 = 8% (approx.)",
+      "solution_text": "It is given that Shweta works three-fourths of the time Rahul works, while Aman works half the time Shweta does.\nLet the working hours of Shweta be 6 hours, then the working hours of Rahul will be 8 hours, and that of Aman will be 3 hours.\nDaily wages received by Rahul, Shweta and Aman are in the ratio of 16:9:3\nLet wages be Rs.1600, Rs.900 and Rs. 300\nTherefore, the amount of wage received by Rahul for working 1 hr is = 1600/8 =Rs.200 per hour.\nThe amount of wage received by Shweta for working 1 hr is = 900/6 =Rs.150 per hour.\nThe amount of wage received by Aman for working 1 hr is = 300/3 =Rs.100 per hour.\nSo if they work in a time ratio of 2:3:4, the ratio of their wages received will be\nLet the time they work be 2hrs, 3hrs and 4 hrs\nRahul will get a wage working for 2 hours = 200*2 = Rs.400\nShweta will get working for 3 hrs = 150*3 = Rs.450\nAman will get working for 4 hrs = 100*4 = Rs.400\ntherefore, the ratio of their wages will be = 400:450:400 = 8:9:8",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe raw material required for an industry comes from two countries - A and B. The cost of raw material and transport from A is 25% of the total production cost and the cost of raw material and transport from B forms 35% of the total production cost. The remaining 40% is the cost of labour. Due to a change in economic policies in the two countries, the total production cost incurred from country A rose by 10% and the total production cost incurred from country B rose by 20%. The selling price of the product is 1.2 times the cost of production. If the labour cost remains the same, what should be the percentage increase in the selling price of the product, so that the profit remains the same (round it to the nearest integer)?\n\n**Options:**\n- **A**. 6%\n- **B**. 8% ✅\n- **C**. 12%\n- **D**. 10%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total production cost be ‘x’\nSelling price = 1.2x\nProduction cost incurred from A = 25% of x = x/4\nNew production cost incurred from A = (110/100)*(x/4) = 1.1x/4 = 0.275x\nNew production cost incurred from B = (120/100)*(35/100)*x = 0.420x\nNew total production cost = 0.275x + 0.420x + 0.400x = 1.095x\nThe profit in the first case is 1.2x-x=0.2x.\nSince profit is same,  new selling price = 1.295x\nSo, percentage increase in selling price = (0.095/1.2) * 100% = 7.91 = 8% (approx.)"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRahul, Shweta, and Aman are collaborating on a project. Shweta works three-fourths of the time Rahul works, while Aman works half the time Shweta does. At the end of the day, the daily wages received by Rahul, Shweta, and Aman are in the ratio of 16:9:3. \n\nOn another job, the amount of times Rahul, Shweta and Aman worked were in the ratio of 2:3:4, what is the ratio of the wages they received?\n\n**Options:**\n- **A**. 6:7:6\n- **B**. 5:6:5\n- **C**. 8:9:8 ✅\n- **D**. 9:10:9\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that Shweta works three-fourths of the time Rahul works, while Aman works half the time Shweta does.\nLet the working hours of Shweta be 6 hours, then the working hours of Rahul will be 8 hours, and that of Aman will be 3 hours.\nDaily wages received by Rahul, Shweta and Aman are in the ratio of 16:9:3\nLet wages be Rs.1600, Rs.900 and Rs. 300\nTherefore, the amount of wage received by Rahul for working 1 hr is = 1600/8 =Rs.200 per hour.\nThe amount of wage received by Shweta for working 1 hr is = 900/6 =Rs.150 per hour.\nThe amount of wage received by Aman for working 1 hr is = 300/3 =Rs.100 per hour.\nSo if they work in a time ratio of 2:3:4, the ratio of their wages received will be\nLet the time they work be 2hrs, 3hrs and 4 hrs\nRahul will get a wage working for 2 hours = 200*2 = Rs.400\nShweta will get working for 3 hrs = 150*3 = Rs.450\nAman will get working for 4 hrs = 100*4 = Rs.400\ntherefore, the ratio of their wages will be = 400:450:400 = 8:9:8",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-20",
       "passage_text": "",
-      "question_text": "If $\\log_{125} 729$ = x, then what is the value of $\\log_{81} 5625$?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\frac{4+x}{2x}$",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\frac{6+2x}{3x}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$\\frac{4+2x}{3x}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\frac{6+x}{2x}$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "$\\log_{125} 729$ = $\\log_{5} 9$ = x\n=> $\\log_{9} 5 = \\frac{1}{x}$\n=> $\\log_{3} 5 = \\frac{2}{x}$\n$\\log_{81} 5625 = \\log_{81} 625 + \\log_{81} 9 = \\log_{3} 5 + \\frac{1}{2}$\n= $\\frac{2}{x} + \\frac{1}{2} = \\frac{4+x}{2x}$.",
+      "question_text": "For how many positive integral values of 'x' does the given inequality hold true?\n\n$\\left(x-1\\right)\\left(x-4\\right)\\left(x-7\\right)\\left(x-10\\right)....\\left(x-97\\right)<0$",
+      "options": [],
+      "correct_option_data": "32",
+      "solution_text": "We see that for integer values of 1, 4, 7,..., the expression on the left-hand side is equal to 0, thus not satisfying the inequality.\nNow, we need to check for the numbers present between the above numbers.\nFrom 1, 4, 7,...97, there are 33 terms. (97 = 1 + 32*3)\nNumbers between (1,4), i.e. 2,3, the 1st term (x-1) is positive, and the remaining ones are negative => (32 terms are negative) => The product will be positive.\nNumbers between (4,7), i.e. 5,6, the first 2 terms are positive, and the remaining 31 terms are negative => The product is negative.\nAnd this pattern continues.\nTherefore, the required integers are (5,6), (11,12),....(95,96) => 2 * 16 = 32 integers.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\log_{125} 729$ = x, then what is the value of $\\log_{81} 5625$?\n\n**Options:**\n- **A**. $\\frac{4+x}{2x}$ ✅\n- **B**. $\\frac{6+2x}{3x}$\n- **C**. $\\frac{4+2x}{3x}$\n- **D**. $\\frac{6+x}{2x}$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log_{125} 729$ = $\\log_{5} 9$ = x\n=> $\\log_{9} 5 = \\frac{1}{x}$\n=> $\\log_{3} 5 = \\frac{2}{x}$\n$\\log_{81} 5625 = \\log_{81} 625 + \\log_{81} 9 = \\log_{3} 5 + \\frac{1}{2}$\n= $\\frac{2}{x} + \\frac{1}{2} = \\frac{4+x}{2x}$."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor how many positive integral values of 'x' does the given inequality hold true?\n\n$\\left(x-1\\right)\\left(x-4\\right)\\left(x-7\\right)\\left(x-10\\right)....\\left(x-97\\right)<0$\n\n**Options:**\n\n**Correct Answer:** 32\n\n**Solution:**\nWe see that for integer values of 1, 4, 7,..., the expression on the left-hand side is equal to 0, thus not satisfying the inequality.\nNow, we need to check for the numbers present between the above numbers.\nFrom 1, 4, 7,...97, there are 33 terms. (97 = 1 + 32*3)\nNumbers between (1,4), i.e. 2,3, the 1st term (x-1) is positive, and the remaining ones are negative => (32 terms are negative) => The product will be positive.\nNumbers between (4,7), i.e. 5,6, the first 2 terms are positive, and the remaining 31 terms are negative => The product is negative.\nAnd this pattern continues.\nTherefore, the required integers are (5,6), (11,12),....(95,96) => 2 * 16 = 32 integers.",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-21",
       "passage_text": "",
-      "question_text": "Sam takes 24 days more than Peter to complete a task. Sam and Peter start working on the task simultaneously and Peter leaves 24 days before the task is completed. Peter completes 40% of the overall task. How long would Peter take to complete the task if he had worked independently?",
+      "question_text": "If 'a' is one of the roots of the equation, $3x\\left(2-x\\right)=2$, then which of the following options represents the other root?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "48 days",
-          "is_correct": true
+          "option_text": "$a\\left(5+3a\\right)$",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "40 days",
-          "is_correct": false
+          "option_text": "$a\\left(5-3a\\right)$",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "72 days",
+          "option_text": "$a\\left(11-6a\\right)$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "60 days",
+          "option_text": "$a\\left(11+6a\\right)$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let Peter take ‘n’ days to complete the task. So, Sam takes (n+24) days to complete the task. Sam has to do only 60% of the entire task. So, Sam will need 3(n+24)/5 days. Peter has to do 40% of the entire task, so he would need 2n/5 days.\nSo, 2n/5 + 24 = 3(n+24)/5\n=> n/5 + 72/5 = 24\n=> n/5 = 24 - 72/5 = 48/5\nSo, n = 48 days",
+      "solution_text": "Given equation = $3x\\left(2-x\\right)=2$.\nSince a is a root for the above equation: $3a\\left(2-a\\right)=2$ ----(1)\nExpanding the above equation, we get $6x-3x^2=2$ => $3x^2-6x+2=0$.\nLet b be the second root of the above equation => a + b = 2\n=> b = 2 - a.\nFrom (1), $b=3a\\left(2-a\\right)-a\\ =a\\left(6-3a-1\\right)=a\\left(5-3a\\right)$.\nTherefore b = $a\\left(5-3a\\right)$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSam takes 24 days more than Peter to complete a task. Sam and Peter start working on the task simultaneously and Peter leaves 24 days before the task is completed. Peter completes 40% of the overall task. How long would Peter take to complete the task if he had worked independently?\n\n**Options:**\n- **A**. 48 days ✅\n- **B**. 40 days\n- **C**. 72 days\n- **D**. 60 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet Peter take ‘n’ days to complete the task. So, Sam takes (n+24) days to complete the task. Sam has to do only 60% of the entire task. So, Sam will need 3(n+24)/5 days. Peter has to do 40% of the entire task, so he would need 2n/5 days.\nSo, 2n/5 + 24 = 3(n+24)/5\n=> n/5 + 72/5 = 24\n=> n/5 = 24 - 72/5 = 48/5\nSo, n = 48 days"
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf 'a' is one of the roots of the equation, $3x\\left(2-x\\right)=2$, then which of the following options represents the other root?\n\n**Options:**\n- **A**. $a\\left(5+3a\\right)$\n- **B**. $a\\left(5-3a\\right)$ ✅\n- **C**. $a\\left(11-6a\\right)$\n- **D**. $a\\left(11+6a\\right)$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation = $3x\\left(2-x\\right)=2$.\nSince a is a root for the above equation: $3a\\left(2-a\\right)=2$ ----(1)\nExpanding the above equation, we get $6x-3x^2=2$ => $3x^2-6x+2=0$.\nLet b be the second root of the above equation => a + b = 2\n=> b = 2 - a.\nFrom (1), $b=3a\\left(2-a\\right)-a\\ =a\\left(6-3a-1\\right)=a\\left(5-3a\\right)$.\nTherefore b = $a\\left(5-3a\\right)$",
+      "type": "quants"
     },
     {
       "qid": "quant-sectionals-14-22",
       "passage_text": "",
-      "question_text": "A can complete job in 60 days working 3 hours a day. B can complete job in 90 days working 5 hours a day. If working alone, A works for 3 hours in a day and B works 5 hours a day. If they work together they work for 5 hours each in a day. On first day only A works, on second day only B works and on third day both of them work and this pattern continues till the job is done. How many days do they take to finish the job?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "15",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "30",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "45",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "60",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let total work be 900 units\nWork done by A in one hour = $\\frac{900}{180}$ = 5 units\nWork done by B in one hour = $\\frac{900}{450}$ = 2 units\nWork done on first day by A alone = 5 $\\times\\ $ 3 = 15\nWork done on second day by B alone = 2 $\\times\\ $ 5 = 10\nWork done on third day by both A and B = 5(5+2) = 35\nWork done by both of them in 3 days = 60 units\nNumber of days required to finish the job = $\\ \\frac{\\ 900\\times\\ 3}{60}$ = 45 days\nTherefore, answer is option C.",
+      "question_text": "A tank is attached with two pipes having an inflow rate of 50 litres per hour. After one-fourth filling of the tank a leakage developed because of which it took 15 more hours than usual to fill the tank. If the leakage develops after the filling of half of the tank it takes 'm' hours extra than usual to fill the entire tank. Find the value of 'm'.",
+      "options": [],
+      "correct_option_data": "10",
+      "solution_text": "Let the actual time taken to fill the tank be 't'\nThen the volume of tank = $2\\times\\ 50\\times\\ t=100t$\nafter 1/4th of filling the leakage has started, remaining volume to be filled = 75t.\nLet the rate of leakage be 'y'.\n$75t=\\left(\\frac{3t}{4}+15\\right)\\times\\ \\left(100-y\\right)$\n$y=100-\\frac{300t}{3t+60}$\nIf the leakage develops after filling half of the tank, then\n$50t=\\left(\\frac{t}{2}+m\\right)\\times\\ \\left(100-y\\right)$\nsubstituting 'y' we get,\n$50t=\\left(\\frac{t}{2}+m\\right)\\times\\ \\frac{300t}{3t+60}$\n$3t+60=3t+6m$.\n$m=10hrs$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA can complete job in 60 days working 3 hours a day. B can complete job in 90 days working 5 hours a day. If working alone, A works for 3 hours in a day and B works 5 hours a day. If they work together they work for 5 hours each in a day. On first day only A works, on second day only B works and on third day both of them work and this pattern continues till the job is done. How many days do they take to finish the job?\n\n**Options:**\n- **A**. 15\n- **B**. 30\n- **C**. 45 ✅\n- **D**. 60\n\n**Correct Answer:** null\n\n**Solution:**\nLet total work be 900 units\nWork done by A in one hour = $\\frac{900}{180}$ = 5 units\nWork done by B in one hour = $\\frac{900}{450}$ = 2 units\nWork done on first day by A alone = 5 $\\times\\ $ 3 = 15\nWork done on second day by B alone = 2 $\\times\\ $ 5 = 10\nWork done on third day by both A and B = 5(5+2) = 35\nWork done by both of them in 3 days = 60 units\nNumber of days required to finish the job = $\\ \\frac{\\ 900\\times\\ 3}{60}$ = 45 days\nTherefore, answer is option C."
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank is attached with two pipes having an inflow rate of 50 litres per hour. After one-fourth filling of the tank a leakage developed because of which it took 15 more hours than usual to fill the tank. If the leakage develops after the filling of half of the tank it takes 'm' hours extra than usual to fill the entire tank. Find the value of 'm'.\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\nLet the actual time taken to fill the tank be 't'\nThen the volume of tank = $2\\times\\ 50\\times\\ t=100t$\nafter 1/4th of filling the leakage has started, remaining volume to be filled = 75t.\nLet the rate of leakage be 'y'.\n$75t=\\left(\\frac{3t}{4}+15\\right)\\times\\ \\left(100-y\\right)$\n$y=100-\\frac{300t}{3t+60}$\nIf the leakage develops after filling half of the tank, then\n$50t=\\left(\\frac{t}{2}+m\\right)\\times\\ \\left(100-y\\right)$\nsubstituting 'y' we get,\n$50t=\\left(\\frac{t}{2}+m\\right)\\times\\ \\frac{300t}{3t+60}$\n$3t+60=3t+6m$.\n$m=10hrs$",
+      "type": "quants"
     }
   ]
 }

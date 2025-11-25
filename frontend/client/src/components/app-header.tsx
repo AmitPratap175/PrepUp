@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Settings } from "lucide-react";
-import { 
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -13,8 +13,8 @@ import { useAuth } from "@/contexts/auth-context";
 
 const navigation = [
   { title: "Home", href: "/" },
-  { 
-    title: "CAT", 
+  {
+    title: "CAT",
     href: "#",
     items: [
       { title: "CAT Courses", href: "/courses?exam=cat" },
@@ -23,11 +23,15 @@ const navigation = [
       { title: "Practice Tests", href: "/practice-test?exam=cat" },
       { title: "Quizzes", href: "/quiz?exam=cat" },
       { title: "Study Materials", href: "/study-materials?exam=cat" },
+      { title: "Smart Practice", href: "/smart-practice" },
+      { title: "Leaderboard", href: "/leaderboard" },
+      { title: "Analytics", href: "/analytics" },
+      { title: "Badges", href: "/badges" },
       { title: "My Words", href: "/words" },
     ]
   },
-  { 
-    title: "GATE", 
+  {
+    title: "GATE",
     href: "#",
     items: [
       { title: "GATE Courses", href: "/courses?exam=gate" },
@@ -35,8 +39,13 @@ const navigation = [
       { title: "Practice Tests", href: "/practice-test?exam=gate" },
       { title: "Quizzes", href: "/quiz?exam=gate" },
       { title: "Study Materials", href: "/study-materials?exam=gate" },
+      { title: "Smart Practice", href: "/smart-practice" },
+      { title: "Leaderboard", href: "/leaderboard" },
+      { title: "Analytics", href: "/analytics" },
+      { title: "Badges", href: "/badges" },
     ]
   },
+  { title: "Leaderboard", href: "/leaderboard" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },
 ];
@@ -64,14 +73,14 @@ export function AppHeader() {
           <span className="material-symbols-outlined text-2xl sm:text-3xl text-primary">school</span>
           <h2 className="text-lg sm:text-xl font-bold leading-tight tracking-[-0.015em]">PrepUp</h2>
         </Link>
-        
+
         <nav className="hidden lg:flex items-center gap-8">
           {navigation.map((item) => (
             item.items ? (
               <DropdownMenu key={item.title}>
                 <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="ghost" 
+                  <Button
+                    variant="ghost"
                     className="text-muted-foreground hover:text-foreground text-sm font-medium transition-colors flex items-center gap-1"
                     data-testid={`nav-dropdown-${item.title.toLowerCase()}`}
                   >
@@ -82,8 +91,8 @@ export function AppHeader() {
                 <DropdownMenuContent className="w-48">
                   {item.items.map((subItem) => (
                     <DropdownMenuItem key={subItem.href} asChild>
-                      <Link 
-                        href={subItem.href} 
+                      <Link
+                        href={subItem.href}
                         className="w-full"
                         data-testid={`nav-link-${subItem.title.toLowerCase().replace(/\s+/g, '-')}`}
                       >
@@ -94,14 +103,13 @@ export function AppHeader() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Link 
-                key={item.href} 
+              <Link
+                key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover-elevate ${
-                  location === item.href 
-                    ? 'text-foreground' 
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
+                className={`text-sm font-medium transition-colors hover-elevate ${location === item.href
+                  ? 'text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+                  }`}
                 data-testid={`nav-link-${item.title.toLowerCase().replace(/\s+/g, '-')}`}
               >
                 {item.title}
@@ -139,7 +147,7 @@ export function AppHeader() {
               </Button>
             </>
           )}
-          
+
           {/* Mobile menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -205,7 +213,7 @@ export function AppHeader() {
                     </div>
                   ) : (
                     <div className="flex flex-col gap-2">
-                       <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
+                      <Button asChild variant="secondary" size="sm" onClick={() => setMobileMenuOpen(false)}>
                         <Link href="/login" data-testid="button-login">Login</Link>
                       </Button>
                       <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground" size="sm" onClick={() => setMobileMenuOpen(false)}>

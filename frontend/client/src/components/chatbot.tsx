@@ -72,29 +72,79 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
     nextStartTime.current = outputAudioContext.current.currentTime;
   };
 
-  const initClient = () => {
-    initAudio();
-    setAgentState('connecting');
-    client.current = new GoogleGenAI({
-      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
-    });
-    outputNode.current?.connect(outputAudioContext.current!.destination);
-    initSession();
-  };
-
-  const initSession = () => {
+  const initSession = async () => {
     const model = 'gemini-2.5-flash-native-audio-preview-09-2025';
 
     if (!client.current) return;
 
+    const token = localStorage.getItem('token');
+    let tools: any[] = [];
+    try {
+      const response = await fetch('/api/chatbot/tools/', {
+        headers: { 'Authorization': `Token ${token}` }
+      });
+      const data = await response.json();
+      if (data.tools) {
+        tools = [{ functionDeclarations: data.tools }];
+      }
+    } catch (e) {
+      console.error("Failed to fetch tools", e);
+    }
+
     sessionPromise.current = client.current.live.connect({
       model: model,
+      tools: tools,
+      systemInstruction: {
+        parts: [{
+          text: "You are PrepUp's voice assistant. You help students prepare for exams like CAT and GATE. You can access tools to get quizzes, check dictionary, etc. Be concise and helpful. When a user asks for a quiz, use the get_quiz_question tool."
+        }]
+      },
       callbacks: {
         onopen: () => {
           console.log('Opened');
           setAgentState('listening');
         },
         onmessage: async (message: LiveServerMessage) => {
+          // Handle Tool Calls
+          if (message.toolCall) {
+            setAgentState('thinking');
+            const toolCalls = message.toolCall.functionCalls;
+            const toolResponses: any[] = [];
+
+            for (const call of toolCalls) {
+              try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('/api/chatbot/execute-tool/', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Token ${token}`,
+                  },
+                  body: JSON.stringify({ name: call.name, arguments: call.args }),
+                });
+                const result = await response.json();
+
+                toolResponses.push({
+                  id: call.id,
+                  name: call.name,
+                  response: result,
+                });
+              } catch (e) {
+                console.error(`Error executing tool ${call.name}:`, e);
+                toolResponses.push({
+                  id: call.id,
+                  name: call.name,
+                  response: { error: String(e) },
+                });
+              }
+            }
+
+            sessionPromise.current?.then(session => {
+              session.sendToolResponse({ functionResponses: toolResponses });
+            });
+            return;
+          }
+
           const audio = message.serverContent?.modelTurn?.parts[0]?.inlineData;
 
           if (audio) {
@@ -170,7 +220,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
 
           const interrupted = message.serverContent?.interrupted;
           if (interrupted) {
-            for (const source of sources.current.values()) {
+            for (const source of Array.from(sources.current.values())) {
               source.stop();
               sources.current.delete(source);
             }
@@ -194,10 +244,20 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
         outputAudioTranscription: {},
       },
     });
-    sessionPromise.current.catch((e) => {
+    sessionPromise.current?.catch((e) => {
       console.error(e);
     });
-  }
+  };
+
+  const initClient = () => {
+    initAudio();
+    setAgentState('connecting');
+    client.current = new GoogleGenAI({
+      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+    });
+    outputNode.current?.connect(outputAudioContext.current!.destination);
+    initSession();
+  };
 
   const startRecording = async () => {
     if (isRecordingRef.current) return;
@@ -346,9 +406,9 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
 
   const handleVoiceButtonClick = () => {
     if (isRecording) {
-        stopRecording();
+      stopRecording();
     } else {
-        startRecording();
+      startRecording();
     }
   };
 
@@ -369,11 +429,10 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
               className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`p-2 rounded-lg w-fit max-w-[85%] prose ${
-                  message.sender === 'user'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-muted text-foreground dark:prose-invert'
-                }`}
+                className={`p-2 rounded-lg w-fit max-w-[85%] prose ${message.sender === 'user'
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-muted text-foreground dark:prose-invert'
+                  }`}
               >
                 <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
                   {message.text}
@@ -381,7 +440,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
               </div>
             </div>
           ))}
-           {currentInputTranscription && (
+          {currentInputTranscription && (
             <div className="flex justify-end">
               <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-primary text-primary-foreground">
                 <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
@@ -393,7 +452,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
           {currentOutputTranscription && (
             <div className="flex justify-start">
               <div className="p-2 rounded-lg w-fit max-w-[85%] prose bg-muted text-foreground dark:prose-invert">
-                 <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+                <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
                   {currentOutputTranscription}
                 </ReactMarkdown>
               </div>

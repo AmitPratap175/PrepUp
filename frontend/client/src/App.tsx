@@ -36,6 +36,11 @@ import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
 import SopForgePage from "@/pages/sopforge";
+import SmartPracticePage from "@/pages/smart-practice";
+import LeaderboardPage from "@/pages/leaderboard";
+import AnalyticsDashboardPage from "@/pages/analytics-dashboard";
+import BadgesPage from "@/pages/badges";
+import XatEssayPage from "@/pages/xat-essay";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -81,6 +86,11 @@ function Router() {
       <Route path="/add-question" component={AddQuestionPage} />
       <Route path="/settings" component={SettingsPage} />
       <Route path="/sop-forge" component={SopForgePage} />
+      <Route path="/smart-practice" component={SmartPracticePage} />
+      <Route path="/leaderboard" component={LeaderboardPage} />
+      <Route path="/analytics" component={AnalyticsDashboardPage} />
+      <Route path="/badges" component={BadgesPage} />
+      <Route path="/xat-essay" component={XatEssayPage} />
       <Route component={NotFound} />
     </Switch>
   );
