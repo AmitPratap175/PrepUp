@@ -92,18 +92,18 @@ export default function Dashboard() {
     return tests;
   }, [practiceTests, sectionalTests, mockTests]);
 
-  const testIdToTitleMap = useMemo(() => {
-    const map = new Map<string, string>();
-    allTests.forEach(test => {
-      map.set(test.id, test.title);
-    });
+  const testIdToDataMap = useMemo(() => {
+    const map = new Map<string, { title: string, type: 'quiz' | 'sectional' | 'mock' }>();
+    practiceTests?.forEach(test => map.set(test.id, { title: test.title, type: 'quiz' }));
+    sectionalTests?.forEach(test => map.set(test.id, { title: test.title, type: 'sectional' }));
+    mockTests?.forEach(test => map.set(test.id, { title: test.title, type: 'mock' }));
     return map;
-  }, [allTests]);
+  }, [practiceTests, sectionalTests, mockTests]);
 
   // Calculate stats
   const totalTestsTaken = testSessions?.length || 0;
   const completedTests = testSessions?.filter(session => session.isCompleted).length || 0;
-  const averageScore = completedTests > 0 
+  const averageScore = completedTests > 0
     ? Math.round((testSessions?.filter(s => s.isCompleted && s.score).reduce((sum, s) => sum + (s.score || 0), 0) || 0) / completedTests)
     : 0;
 
@@ -114,7 +114,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -162,7 +162,7 @@ export default function Dashboard() {
                 {/* Progress Overview */}
                 <div className="lg:col-span-2">
                   <h3 className="font-semibold text-foreground mb-4">Progress Overview</h3>
-                  
+
                   {/* Course Progress */}
                   <div className="space-y-4 mb-6">
                     {userProgress?.map((progress, index) => (
@@ -210,7 +210,7 @@ export default function Dashboard() {
                     </CardContent>
                   </Card>
 
-                  <LastAttemptedQuestions userQuizStates={userQuizStates} testIdToTitleMap={testIdToTitleMap} />
+                  <LastAttemptedQuestions userQuizStates={userQuizStates} testIdToDataMap={testIdToDataMap} />
 
                   {/* Statistics Cards */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -262,7 +262,7 @@ export default function Dashboard() {
                   <h3 className="font-semibold text-foreground mb-4">Quick Actions</h3>
                   <div className="space-y-3">
                     <Link href="/practice-test">
-                      <Button 
+                      <Button
                         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground p-3 font-semibold transition-colors flex items-center gap-2 hover-elevate"
                         data-testid="quick-action-practice-test"
                       >
@@ -271,7 +271,7 @@ export default function Dashboard() {
                       </Button>
                     </Link>
                     <Link href="/study-materials">
-                      <Button 
+                      <Button
                         variant="outline"
                         className="w-full p-3 font-semibold transition-colors flex items-center gap-2 hover-elevate"
                         data-testid="quick-action-study-materials"
@@ -280,7 +280,7 @@ export default function Dashboard() {
                         Study Materials
                       </Button>
                     </Link>
-                    <Button 
+                    <Button
                       variant="outline"
                       className="w-full p-3 font-semibold transition-colors flex items-center gap-2 hover-elevate"
                       data-testid="quick-action-analytics"

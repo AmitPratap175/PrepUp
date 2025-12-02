@@ -3,132 +3,240 @@
     {
       "qid": "quant-sectionals-9-1",
       "passage_text": "",
-      "question_text": "There is a sentence that is missing in the paragraph below. Look at the paragraph and decide in which blank (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: When Americans think of the Middle East, they often view it as a theater for American wars and a region essential for its oil. \n\nParagraph: …….1…… Most Americans don’t know that their morning cup of coffee connects them to the Ottoman Empire …….2…… Few are aware that this bygone Muslim state helped to birth Protestantism, America’s dominant form of Christianity, or that the European explorers who “discovered” the Americas did so because of the Ottomans’ and other Muslims’ stranglehold on trade between Europe and Asia . In fact, some Americans don’t even know what the Ottoman Empire was ……3….. Yet all of us owe important parts of our culture and history to the most important empire in Middle Eastern history, the Ottoman Empire, and specifically to one sultan who lived half a millennium ago ……4……",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "Option 2",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "Option 1",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "Option 4",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "Option 3",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "The sentence fits best in blank 3.\nThe sentence before Blank 3 highlights the general lack of awareness about the Ottoman Empire. The given sentence fits in the blank because it explains why Americans may not know about the Ottomans: their perception of the Middle East is shaped by modern geopolitical concerns (wars and oil) rather than historical significance. The sentence after Blank 3 then follows logically because it expands on the historical importance of the Ottoman Empire in the broader Middle Eastern context. The given sentence in Blank 3 provides a smooth transition between the idea of American ignorance and the recognition of the empire’s lasting impact on history.\nOption 1: This might seem plausible, but this placement creates an abrupt, illogical jump from a general statement about Americans' perception of the Middle East directly to a specific example involving coffee and the Ottoman Empire. Additionally, it fails to establish any connection between modern perceptions of the Middle East and the Ottoman Empire. Logically, this approach would start the paragraph with a modern geopolitical framing but then immediately shifts to historical connections without proper context.\nOption 2: This placement would disrupt the flow of the sentences before and after the blank. The sentence after the blank mentions \"this bygone Muslim state\" which refers to the Ottoman Empire mentioned in the sentence before the blank. \nOption 4: The sentence does not fit here. Placing it at the end would be illogical since the paragraph has already transitioned from discussing American perceptions to emphasizing the Ottoman Empire's historical importance. Therefore, placing the sentence here would disrupt the coherence of the sequence.",
+      "question_text": "The diagonals of a convex quadrilateral ABCD intersect at point O. The areas of triangle AOB and DOC are 9 and 16 sq units respectively, respectively. What is the smallest possible area (in sq units) of the given quadrilateral ABCD?",
+      "options": [],
+      "correct_option_data": "49",
+      "solution_text": "Using the given information, we can draw the following figure, \nAssuming the triangle BOC and AOD areas are X and Y, respectively, \nA key property of a quadrilateral with intersecting diagonals is that the product of the areas of one pair of opposite triangles is equal to the product of the areas of the other pair.\nSo we can write, $XY=9\\times16$\nWriting this as, $X=\\frac{144}{Y}$\nThe total area of the quadrilateral will be, $X+Y+25$\nWriting this expression as, $X+\\frac{144}{X}+25$\nUsing the $AM\\ge GM$ property, \n$\\frac{X+\\frac{144}{X}}{2}\\ge\\sqrt{\\left(X\\right)\\left(\\frac{144}{X}\\right)}$\n$X+\\frac{144}{X}\\ge24$\nUsing this value, we have the minimum possible area as, 24+25=49.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere is a sentence that is missing in the paragraph below. Look at the paragraph and decide in which blank (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: When Americans think of the Middle East, they often view it as a theater for American wars and a region essential for its oil. \n\nParagraph: …….1…… Most Americans don’t know that their morning cup of coffee connects them to the Ottoman Empire …….2…… Few are aware that this bygone Muslim state helped to birth Protestantism, America’s dominant form of Christianity, or that the European explorers who “discovered” the Americas did so because of the Ottomans’ and other Muslims’ stranglehold on trade between Europe and Asia . In fact, some Americans don’t even know what the Ottoman Empire was ……3….. Yet all of us owe important parts of our culture and history to the most important empire in Middle Eastern history, the Ottoman Empire, and specifically to one sultan who lived half a millennium ago ……4……\n\n**Options:**\n- **A**. Option 2\n- **B**. Option 1\n- **C**. Option 4\n- **D**. Option 3 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe sentence fits best in blank 3.\nThe sentence before Blank 3 highlights the general lack of awareness about the Ottoman Empire. The given sentence fits in the blank because it explains why Americans may not know about the Ottomans: their perception of the Middle East is shaped by modern geopolitical concerns (wars and oil) rather than historical significance. The sentence after Blank 3 then follows logically because it expands on the historical importance of the Ottoman Empire in the broader Middle Eastern context. The given sentence in Blank 3 provides a smooth transition between the idea of American ignorance and the recognition of the empire’s lasting impact on history.\nOption 1: This might seem plausible, but this placement creates an abrupt, illogical jump from a general statement about Americans' perception of the Middle East directly to a specific example involving coffee and the Ottoman Empire. Additionally, it fails to establish any connection between modern perceptions of the Middle East and the Ottoman Empire. Logically, this approach would start the paragraph with a modern geopolitical framing but then immediately shifts to historical connections without proper context.\nOption 2: This placement would disrupt the flow of the sentences before and after the blank. The sentence after the blank mentions \"this bygone Muslim state\" which refers to the Ottoman Empire mentioned in the sentence before the blank. \nOption 4: The sentence does not fit here. Placing it at the end would be illogical since the paragraph has already transitioned from discussing American perceptions to emphasizing the Ottoman Empire's historical importance. Therefore, placing the sentence here would disrupt the coherence of the sequence.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe diagonals of a convex quadrilateral ABCD intersect at point O. The areas of triangle AOB and DOC are 9 and 16 sq units respectively, respectively. What is the smallest possible area (in sq units) of the given quadrilateral ABCD?\n\n**Options:**\n\n**Correct Answer:** 49\n\n**Solution:**\nUsing the given information, we can draw the following figure, \nAssuming the triangle BOC and AOD areas are X and Y, respectively, \nA key property of a quadrilateral with intersecting diagonals is that the product of the areas of one pair of opposite triangles is equal to the product of the areas of the other pair.\nSo we can write, $XY=9\\times16$\nWriting this as, $X=\\frac{144}{Y}$\nThe total area of the quadrilateral will be, $X+Y+25$\nWriting this expression as, $X+\\frac{144}{X}+25$\nUsing the $AM\\ge GM$ property, \n$\\frac{X+\\frac{144}{X}}{2}\\ge\\sqrt{\\left(X\\right)\\left(\\frac{144}{X}\\right)}$\n$X+\\frac{144}{X}\\ge24$\nUsing this value, we have the minimum possible area as, 24+25=49.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-2",
       "passage_text": "",
-      "question_text": "A box contains a total of 18 candies, with 8 being pink and the remaining 10 being blue. Ritika randomly selects one candy at a time from the box, with replacement. What is the probability that a pink candy is drawn exactly for the third time on the fourth draw?",
+      "question_text": "A and B are filling pipes, while C and D are emptying pipes. The four distinct selections, each involving the selection of one filling pipe and one emptying pipe, yielded filling times of 36 minutes, 42 minutes, 63 minutes, and 84 minutes, respectively.  When three of these pipes are used, it takes 63 minutes to fill the tank. What is the minimum possible time (in minutes) to fill the tank?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\dfrac{520}{2187}$",
-          "is_correct": false
+          "option_text": "$\\dfrac{84}{5}$",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\dfrac{420}{2187}$",
+          "option_text": "$12$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\dfrac{320}{2187}$",
-          "is_correct": true
+          "option_text": "$10\\text{}$",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\dfrac{220}{2187}$",
+          "option_text": "$\\dfrac{91}{5}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "",
+      "solution_text": "Let us take LCM of all the numbers given in the question. LCM(42,36,84,63) = 252\nThe total capacity of the tank is 252.\nWe are told that the tank is filled in 63 mins if 3 of the four pipe are used.\nLet us assume that pipe A fills faster than B. And Pipe C empties faster than D.\nIf two filling pipes and one emptying pipe is used, the time taken should be less than 36 mins, as that is the minimum time taken when one filling and one emptying pipe is used.\nSo, in this case two emptying pipes and one filling pipe is used. And the filling pipe used is the faster one. Why? If slower one is used it would take more than 84 mins which is maximum time when one filling and one emptying pipe is used.\nSo, A, C, D together can fill the tank in 63 mins. That is they fill $\\frac{252}{63}=4$ units in one minute.\nA-C-D = 4\nA and D can fill the tank in 36 mins. A and D fill $\\frac{252}{36}=7$ units in one minute.\nA-D = 7\nSubtracting the two equations, we get, A-D-A+C+D = 7-4 = 3. So, C empties 3 units in one minute.\nWe know that B and C fill the tank in 84 mins.\n84 B - 84*3 = 252\nB = 6 units.\nWe know that using A and two emptying pipes takes 63 minutes.\nSo, the 63 minutes taken should be when B and D are used.\nB-D = $\\frac{252}{63}\\ =\\ 4$\nD = 2 units\nWe know that A-D = 7. So,  A = 9 units.\nThe minimum time taken to fill the tank is when both filling pipes are used. And the time taken is $\\frac{252}{\\left(6+9\\right)}\\ =\\ \\frac{252}{15}\\ =\\frac{84}{5}\\text{mins}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA box contains a total of 18 candies, with 8 being pink and the remaining 10 being blue. Ritika randomly selects one candy at a time from the box, with replacement. What is the probability that a pink candy is drawn exactly for the third time on the fourth draw?\n\n**Options:**\n- **A**. $\\dfrac{520}{2187}$\n- **B**. $\\dfrac{420}{2187}$\n- **C**. $\\dfrac{320}{2187}$ ✅\n- **D**. $\\dfrac{220}{2187}$\n\n**Correct Answer:** null",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B are filling pipes, while C and D are emptying pipes. The four distinct selections, each involving the selection of one filling pipe and one emptying pipe, yielded filling times of 36 minutes, 42 minutes, 63 minutes, and 84 minutes, respectively.  When three of these pipes are used, it takes 63 minutes to fill the tank. What is the minimum possible time (in minutes) to fill the tank?\n\n**Options:**\n- **A**. $\\dfrac{84}{5}$ ✅\n- **B**. $12$\n- **C**. $10\\text{}$\n- **D**. $\\dfrac{91}{5}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us take LCM of all the numbers given in the question. LCM(42,36,84,63) = 252\nThe total capacity of the tank is 252.\nWe are told that the tank is filled in 63 mins if 3 of the four pipe are used.\nLet us assume that pipe A fills faster than B. And Pipe C empties faster than D.\nIf two filling pipes and one emptying pipe is used, the time taken should be less than 36 mins, as that is the minimum time taken when one filling and one emptying pipe is used.\nSo, in this case two emptying pipes and one filling pipe is used. And the filling pipe used is the faster one. Why? If slower one is used it would take more than 84 mins which is maximum time when one filling and one emptying pipe is used.\nSo, A, C, D together can fill the tank in 63 mins. That is they fill $\\frac{252}{63}=4$ units in one minute.\nA-C-D = 4\nA and D can fill the tank in 36 mins. A and D fill $\\frac{252}{36}=7$ units in one minute.\nA-D = 7\nSubtracting the two equations, we get, A-D-A+C+D = 7-4 = 3. So, C empties 3 units in one minute.\nWe know that B and C fill the tank in 84 mins.\n84 B - 84*3 = 252\nB = 6 units.\nWe know that using A and two emptying pipes takes 63 minutes.\nSo, the 63 minutes taken should be when B and D are used.\nB-D = $\\frac{252}{63}\\ =\\ 4$\nD = 2 units\nWe know that A-D = 7. So,  A = 9 units.\nThe minimum time taken to fill the tank is when both filling pipes are used. And the time taken is $\\frac{252}{\\left(6+9\\right)}\\ =\\ \\frac{252}{15}\\ =\\frac{84}{5}\\text{mins}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-3",
       "passage_text": "",
-      "question_text": "Six men, eight women, and six children can complete a project in 15 days. Given that, each man is 60% more efficient than a woman, and each child's efficiency is one-fourth of that of a man, find the number of days it would have taken for fifteen men, four women, and five children to complete the project.",
-      "options": [],
-      "correct_option_data": "10",
-      "solution_text": "Let us assume that the efficiency of women is 10K. (10K units per day)\nIt is given that each man is 60% more efficient than a woman.\nThus, the efficiency of a man = 10K*1.6 = 16K\nThe efficiency of a child is is one-fourth of that of a man.\nThus, the efficiency of a child = 16K*0.25 = 4K.\nIt is given that Six men, eight women, and six children can complete a project in 15 days.\nTherefore, work done by Six men, eight women, and six children can complete a project in 15 days will be = 15*(16K*6+10K*8+4K*6) \n=> 15*(96+80+24K) = 3000K\nNow, we need to find the number of days taken by fifteen men, four women, and five children to complete the project.\nWork done in one day by fifteen men, four women, and five children = 15*16K+4*10K+5*4K = 240K+40K+20K = 300K.\nTherefore, the number of days taken = Total work in project/work done in one day = 3000K/300K = 10 days.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSix men, eight women, and six children can complete a project in 15 days. Given that, each man is 60% more efficient than a woman, and each child's efficiency is one-fourth of that of a man, find the number of days it would have taken for fifteen men, four women, and five children to complete the project.\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\nLet us assume that the efficiency of women is 10K. (10K units per day)\nIt is given that each man is 60% more efficient than a woman.\nThus, the efficiency of a man = 10K*1.6 = 16K\nThe efficiency of a child is is one-fourth of that of a man.\nThus, the efficiency of a child = 16K*0.25 = 4K.\nIt is given that Six men, eight women, and six children can complete a project in 15 days.\nTherefore, work done by Six men, eight women, and six children can complete a project in 15 days will be = 15*(16K*6+10K*8+4K*6) \n=> 15*(96+80+24K) = 3000K\nNow, we need to find the number of days taken by fifteen men, four women, and five children to complete the project.\nWork done in one day by fifteen men, four women, and five children = 15*16K+4*10K+5*4K = 240K+40K+20K = 300K.\nTherefore, the number of days taken = Total work in project/work done in one day = 3000K/300K = 10 days.",
-      "type": "quants"
-    },
-    {
-      "qid": "quant-sectionals-9-4",
-      "passage_text": "",
-      "question_text": "A function f(x) is defined as f(x) = $x^2-2x$. Another function g(x) exists such that f(g(x)) = $4x^2-1$. The value of g(0) is",
+      "question_text": "Riya starts with 150 fruit juice bottles. She sells 25 bottles each day, except on the last day when she sells 28 bottles. After selling each day’s quota, 20% of the remaining unsold bottles spoil and are discarded. If she wants to earn an overall profit of 30%, by what percentage should she mark up the selling price of each bottle over its cost price?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "2",
+          "option_text": "69.32%",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1",
+          "option_text": "79.32%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "89.32%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "99.32%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first day, Riya would have sold 25 bottles.\nOf the 125 bottles bottles remaining, 20% (25 bottles will get spoilt) and 100 bottles will be remaining.\nIn the second day, Riya would have sold 25 bottles.\n75 bottles will remain by the end of the day of which 15 bottles will get spoiled.\nOn the third day, Riya will sell all the 25 bottles.\n35 bottles will remain by the end of the third day of which 7 bottles will get spoiled.\nNow, there are remaining 28 bottles on the last day since it has been provided that riya sells 28 bottles on the last day.\nTotal number of bottles sold = 25+25+25+28 = 103\nLet the cost of 1 bottle be x.\nTotal cost incurred = 150x.\nLet the mark up percentage be y.\n(1+y)*103x = 1.30*150x\n1+y = 195x/103x\n1+y = 1.8932\n=> y = 89.32%.\nTherefore, the price of the bottles must be marked up by 89.32% to get a profit of 30%. Therefore, option C is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRiya starts with 150 fruit juice bottles. She sells 25 bottles each day, except on the last day when she sells 28 bottles. After selling each day’s quota, 20% of the remaining unsold bottles spoil and are discarded. If she wants to earn an overall profit of 30%, by what percentage should she mark up the selling price of each bottle over its cost price?\n\n**Options:**\n- **A**. 69.32%\n- **B**. 79.32%\n- **C**. 89.32% ✅\n- **D**. 99.32%\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first day, Riya would have sold 25 bottles.\nOf the 125 bottles bottles remaining, 20% (25 bottles will get spoilt) and 100 bottles will be remaining.\nIn the second day, Riya would have sold 25 bottles.\n75 bottles will remain by the end of the day of which 15 bottles will get spoiled.\nOn the third day, Riya will sell all the 25 bottles.\n35 bottles will remain by the end of the third day of which 7 bottles will get spoiled.\nNow, there are remaining 28 bottles on the last day since it has been provided that riya sells 28 bottles on the last day.\nTotal number of bottles sold = 25+25+25+28 = 103\nLet the cost of 1 bottle be x.\nTotal cost incurred = 150x.\nLet the mark up percentage be y.\n(1+y)*103x = 1.30*150x\n1+y = 195x/103x\n1+y = 1.8932\n=> y = 89.32%.\nTherefore, the price of the bottles must be marked up by 89.32% to get a profit of 30%. Therefore, option C is the right answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-9-4",
+      "passage_text": "",
+      "question_text": "Three amounts $a,b,c$ are such that $b$ is the simple interest on $a$,$c$ is the simple interest on $b$, time period and rate of interest being same in both the cases. Which of the following is a correct relation between $a,b$ and $c$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$a,\\ b,\\ c$ are in A.P.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$a,\\ b,\\ c$ are in G.P.",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "-1",
+          "option_text": "$b,c,a$ are in G.P.",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "-2",
+          "option_text": "$c,a,b$ are in A.P.",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We have, f(x)=$x^2-2x$ and f(g(x))=$4x^2-1$\nAdding 1 to both the expressions, we get f(x)+1 = $x^2-2x+1$ = (x-1)$^2$  \nAlso, f(g(x))+1 = 4x$^2$ .....(1)\nReplacing x by g(x) in the first expression, we get f(g(x))+1 = (g(x)-1)$^2$ ......(2)\n=>  Equating 1 and 2, we get, 4x$^2$ = (g(x)-1)$^2$\nPut x=0, then, 0=g(0)-1   => g(0)=1",
+      "solution_text": "Let, the rate of interest be r% p.a. and time period be t years in both the cases\nGiven, $b$ is the simple interest on $a$ and $c$ is the simple interest on $b$\nSo, $b=\\dfrac{a\\times\\ r\\times\\ t}{100}$ and $c=\\dfrac{b\\times\\ r\\times\\ t}{100}$\nNow, $ac=a\\times\\ \\dfrac{b\\times\\ r\\times\\ t}{100}$\nUpon rearranging, $ac=b\\times\\ \\dfrac{a\\times\\ r\\times\\ t}{100}$\nor, $ac=b\\times\\ b=b^2$\nSo, $a,b,c$ are in G.P.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA function f(x) is defined as f(x) = $x^2-2x$. Another function g(x) exists such that f(g(x)) = $4x^2-1$. The value of g(0) is\n\n**Options:**\n- **A**. 2\n- **B**. 1 ✅\n- **C**. -1\n- **D**. -2\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, f(x)=$x^2-2x$ and f(g(x))=$4x^2-1$\nAdding 1 to both the expressions, we get f(x)+1 = $x^2-2x+1$ = (x-1)$^2$  \nAlso, f(g(x))+1 = 4x$^2$ .....(1)\nReplacing x by g(x) in the first expression, we get f(g(x))+1 = (g(x)-1)$^2$ ......(2)\n=>  Equating 1 and 2, we get, 4x$^2$ = (g(x)-1)$^2$\nPut x=0, then, 0=g(0)-1   => g(0)=1",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree amounts $a,b,c$ are such that $b$ is the simple interest on $a$,$c$ is the simple interest on $b$, time period and rate of interest being same in both the cases. Which of the following is a correct relation between $a,b$ and $c$?\n\n**Options:**\n- **A**. $a,\\ b,\\ c$ are in A.P.\n- **B**. $a,\\ b,\\ c$ are in G.P. ✅\n- **C**. $b,c,a$ are in G.P.\n- **D**. $c,a,b$ are in A.P.\n\n**Correct Answer:** null\n\n**Solution:**\nLet, the rate of interest be r% p.a. and time period be t years in both the cases\nGiven, $b$ is the simple interest on $a$ and $c$ is the simple interest on $b$\nSo, $b=\\dfrac{a\\times\\ r\\times\\ t}{100}$ and $c=\\dfrac{b\\times\\ r\\times\\ t}{100}$\nNow, $ac=a\\times\\ \\dfrac{b\\times\\ r\\times\\ t}{100}$\nUpon rearranging, $ac=b\\times\\ \\dfrac{a\\times\\ r\\times\\ t}{100}$\nor, $ac=b\\times\\ b=b^2$\nSo, $a,b,c$ are in G.P.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-5",
       "passage_text": "",
-      "question_text": "Find the number of non-zero integer solutions 'p' for the following inequality:\n\n$\\left|2p+4\\right|+\\left|4-p\\right|<2\\left|p\\right|+5$",
+      "question_text": "Two equal circles touch each other and fit perfectly inside a rectangle, with all sides tangent to the circles. A smaller circle touches both circles and one side of the rectangle. If this rectangle is inscribed in a larger circle, then find the ratio of the area of the largest circle to that of the smallest circle.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "3",
+          "option_text": "20:1",
           "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "40:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "80:1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the radius of the smaller circle be a, the radius of the circle inscribed in the rectangle be r, and the radius of the larger circle be R.\n=> length of rectangle = 4r and breadth of rectangle = 2r.\n=> length of diagonal = $\\sqrt{\\left(4r\\right)^2+\\left(2r\\right)^2}=2\\sqrt{5}r$\nIf the rectangle is inscribed in the circle, then the diameter of the circle is equal to the diagonal of the rectangle. \n=> Radius of bigger circle (R) = $\\sqrt{5}r$\nNow, if we look at the right-angle triangle in the diagram, it will look something like this - \n=> $r^2+\\left(r-a\\right)^2=\\left(r+a\\right)^2$\n=> $r^2+r^2-2ar+a^2=r^2+2ar+a^2$\n=> $r^2-4ar=0$\n=> $a=\\dfrac{r}{4}$\n=> $\\dfrac{Area\\ of\\ bigger\\ circle}{Area\\ of\\ smaller\\ circle}=\\dfrac{\\pi\\times\\left(\\sqrt{5}r\\right)^2}{\\pi\\times\\left(\\frac{r}{4}\\right)^2}=80$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo equal circles touch each other and fit perfectly inside a rectangle, with all sides tangent to the circles. A smaller circle touches both circles and one side of the rectangle. If this rectangle is inscribed in a larger circle, then find the ratio of the area of the largest circle to that of the smallest circle.\n\n**Options:**\n- **A**. 20:1\n- **B**. 40:1\n- **C**. 60:1\n- **D**. 80:1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the radius of the smaller circle be a, the radius of the circle inscribed in the rectangle be r, and the radius of the larger circle be R.\n=> length of rectangle = 4r and breadth of rectangle = 2r.\n=> length of diagonal = $\\sqrt{\\left(4r\\right)^2+\\left(2r\\right)^2}=2\\sqrt{5}r$\nIf the rectangle is inscribed in the circle, then the diameter of the circle is equal to the diagonal of the rectangle. \n=> Radius of bigger circle (R) = $\\sqrt{5}r$\nNow, if we look at the right-angle triangle in the diagram, it will look something like this - \n=> $r^2+\\left(r-a\\right)^2=\\left(r+a\\right)^2$\n=> $r^2+r^2-2ar+a^2=r^2+2ar+a^2$\n=> $r^2-4ar=0$\n=> $a=\\dfrac{r}{4}$\n=> $\\dfrac{Area\\ of\\ bigger\\ circle}{Area\\ of\\ smaller\\ circle}=\\dfrac{\\pi\\times\\left(\\sqrt{5}r\\right)^2}{\\pi\\times\\left(\\frac{r}{4}\\right)^2}=80$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-9-6",
+      "passage_text": "",
+      "question_text": "A vendor marks up his goods by 60% and offers a discount of 20%. However, due to rain, 10% of his entire stock was damaged and became unsellable; still, he managed to make some profit. Had he increased his selling price by y%, his profit percentage would have risen by 4.8 points. The value of y is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$4\\ \\dfrac{5}{6}\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$4\\ \\dfrac{1}{6}\\ $",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$7\\ \\dfrac{1}{24}\\ $",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$6\\ \\dfrac{2}{3}\\ $",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let there be k items in stock and cost price of each item be Rs. x\nThen, total CP= Rs. kx\nNow 10% items become unsellable , and he marks up their price by 60% and offers a discount of 20% \nhence total SP =$\\left(\\frac{90}{100}k\\right)\\times\\ x\\times\\ \\left(1+\\frac{60}{\\left(100\\right)}\\right)\\times\\ \\left(1-\\frac{20}{100}\\right)=0.9\\times\\ 1.6\\times\\ 0.8\\ kx$ $=1.152\\ kx$\nHence the profit % is $=\\frac{\\left(1.152\\ kx-kx\\right)}{kx}\\times\\ 100=0.152\\times\\ 100=15.2\\%$\nNow if he had increased his selling price by y%, he would get additional 4.8% profit ie the profit% =(15.2+4.8)=20%\n$\\therefore\\ \\dfrac{\\left(\\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ kx-kx\\right)}{kx}\\times\\ 100=20$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ -1=\\dfrac{20}{100}$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ =1.2$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)=\\dfrac{1.2}{1.152}=\\dfrac{25}{24}$\n$or,\\ \\ \\dfrac{y}{100}=\\dfrac{25}{24}-1=\\dfrac{1}{24}$\n$or,\\ \\ y=\\dfrac{100}{24}=4\\ \\dfrac{1}{6}\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA vendor marks up his goods by 60% and offers a discount of 20%. However, due to rain, 10% of his entire stock was damaged and became unsellable; still, he managed to make some profit. Had he increased his selling price by y%, his profit percentage would have risen by 4.8 points. The value of y is?\n\n**Options:**\n- **A**. $4\\ \\dfrac{5}{6}\\ $\n- **B**. $4\\ \\dfrac{1}{6}\\ $ ✅\n- **C**. $7\\ \\dfrac{1}{24}\\ $\n- **D**. $6\\ \\dfrac{2}{3}\\ $\n\n**Correct Answer:** null\n\n**Solution:**\nLet there be k items in stock and cost price of each item be Rs. x\nThen, total CP= Rs. kx\nNow 10% items become unsellable , and he marks up their price by 60% and offers a discount of 20% \nhence total SP =$\\left(\\frac{90}{100}k\\right)\\times\\ x\\times\\ \\left(1+\\frac{60}{\\left(100\\right)}\\right)\\times\\ \\left(1-\\frac{20}{100}\\right)=0.9\\times\\ 1.6\\times\\ 0.8\\ kx$ $=1.152\\ kx$\nHence the profit % is $=\\frac{\\left(1.152\\ kx-kx\\right)}{kx}\\times\\ 100=0.152\\times\\ 100=15.2\\%$\nNow if he had increased his selling price by y%, he would get additional 4.8% profit ie the profit% =(15.2+4.8)=20%\n$\\therefore\\ \\dfrac{\\left(\\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ kx-kx\\right)}{kx}\\times\\ 100=20$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ -1=\\dfrac{20}{100}$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)\\times\\ 1.152\\ =1.2$\n$or,\\ \\ \\ \\left(1+\\dfrac{y}{100}\\right)=\\dfrac{1.2}{1.152}=\\dfrac{25}{24}$\n$or,\\ \\ \\dfrac{y}{100}=\\dfrac{25}{24}-1=\\dfrac{1}{24}$\n$or,\\ \\ y=\\dfrac{100}{24}=4\\ \\dfrac{1}{6}\\%$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-9-7",
+      "passage_text": "",
+      "question_text": "Pankaj is hosting a party with a 4:3 ratio of men to women on the guest list. He observes that 8 men and 14 women didn't turn up for the party, which made the number of men present equal to the square of the number of women present in the party. Find the number of people who attended the party.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are told that the guest list has men and women in the ratio 4:3. \nLet us take the number of men as 4x and the number of women as 3x. \nWe are told that 8 men and 14 women don't turn up to the party, making the number of men equal to the square of the number of women. \nDrawing up the equation for that, \n$\\left(4x-8\\right)=\\left(3x-14\\right)^2$\nExpanding this, we get, \n$4x-8=9x^2+196-84x$\n$9x^2-88x+204=0$\nUsing the quadratic formula to find the roots of the equation, \n$\\dfrac{88\\pm\\sqrt{88^2-4\\left(9\\right)\\left(204\\right)}}{18}$\n$\\dfrac{88\\pm\\sqrt{7744-7344}}{18}$\n$\\dfrac{88\\pm20}{18}$\nWe get the roots of the equation as $\\dfrac{34}{9},\\ 6$\nIgnoring the non-integral result, we have the value of x as 6. \nThe total number of people on the party's guest list will be 3x+4x=7x, which is 42. \n42-8-14=20 people attended the party.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPankaj is hosting a party with a 4:3 ratio of men to women on the guest list. He observes that 8 men and 14 women didn't turn up for the party, which made the number of men present equal to the square of the number of women present in the party. Find the number of people who attended the party.\n\n**Options:**\n- **A**. 24\n- **B**. 22\n- **C**. 20 ✅\n- **D**. 18\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that the guest list has men and women in the ratio 4:3. \nLet us take the number of men as 4x and the number of women as 3x. \nWe are told that 8 men and 14 women don't turn up to the party, making the number of men equal to the square of the number of women. \nDrawing up the equation for that, \n$\\left(4x-8\\right)=\\left(3x-14\\right)^2$\nExpanding this, we get, \n$4x-8=9x^2+196-84x$\n$9x^2-88x+204=0$\nUsing the quadratic formula to find the roots of the equation, \n$\\dfrac{88\\pm\\sqrt{88^2-4\\left(9\\right)\\left(204\\right)}}{18}$\n$\\dfrac{88\\pm\\sqrt{7744-7344}}{18}$\n$\\dfrac{88\\pm20}{18}$\nWe get the roots of the equation as $\\dfrac{34}{9},\\ 6$\nIgnoring the non-integral result, we have the value of x as 6. \nThe total number of people on the party's guest list will be 3x+4x=7x, which is 42. \n42-8-14=20 people attended the party.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-9-8",
+      "passage_text": "",
+      "question_text": "Find the number of integers that satisfy the equation  $\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -139,507 +247,374 @@
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "7",
+          "option_text": "6",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "4",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of non-zero integer solutions 'p' for the following inequality:\n\n$\\left|2p+4\\right|+\\left|4-p\\right|<2\\left|p\\right|+5$\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 7\n- **D**. 4 ✅\n\n**Correct Answer:** null",
-      "type": "quants"
-    },
-    {
-      "qid": "quant-sectionals-9-6",
-      "passage_text": "",
-      "question_text": "In a class, all the boys drink both soft drinks: Sprit and Hill Dew; while each girl drinks exactly one of the two. The class ordered the drinks such that they were exactly sufficient, and the ratio of Sprit and Hill Dew ordered is 2:3. The number of boys who drank Sprit to the number of girls who drank Hill Dew are in the ratio 4:3. Find the value of a+b, if the ratio of boys and girls is a:b(simplest form).",
-      "options": [],
-      "correct_option_data": "23",
-      "solution_text": "",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class, all the boys drink both soft drinks: Sprit and Hill Dew; while each girl drinks exactly one of the two. The class ordered the drinks such that they were exactly sufficient, and the ratio of Sprit and Hill Dew ordered is 2:3. The number of boys who drank Sprit to the number of girls who drank Hill Dew are in the ratio 4:3. Find the value of a+b, if the ratio of boys and girls is a:b(simplest form).\n\n**Options:**\n\n**Correct Answer:** 23",
-      "type": "quants"
-    },
-    {
-      "qid": "quant-sectionals-9-7",
-      "passage_text": "",
-      "question_text": "3 walls of equal surface area are needed to be painted . The first wall is painted by a man in 40 minutes , in the meanwhile his wife is working on the second wall and completes painting it in 64 minutes. They started working together on the third wall , but stopped after 10 minutes to take a break of 10 minutes. During the break their kid painted the wall and after that all three of them together completed the wall in the next 6 minutes.\nFind the ratio of the total areas painted by the kid , wife and man.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "7:10:14",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "14:10:7",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "7:25:28",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "4:27:32",
+          "option_text": "8",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let's assume the surface area of a single wall to be 320 units .\nefficiency of man = 320/40 = 8 units /min\nefficiency of wife = 320 / 64 = 5 units/min\nboth of them work equal amount of time on the third wall, which is equal to 16 minutes.\nHence area painted by them on the third wall =>\nman -> 8  * 16 = 128 \nwife -> 5 * 16 = 80\nOf the 320 units of third wall man painted 128 units, wife painted 80 units , and the remaining was painted by the kid .\nHence kid painted 320 - 208 = 112 units.\nHence, total surface area painted by \nman = 320 + 128 = 448 units\nwoman = 320 +80 = 400 units \nkid = 112 units\nhence ratio = 7:25:28",
+      "solution_text": "According to question, $\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$\nLet, $x=a$ and $\\dfrac{4-x^2}{x}=b$\nSo, basically the given equation is of the form: $\\left|a+b\\right|=\\left|a\\right|+\\left|b\\right|$\nNow, $\\left|a+b\\right|=\\left|a\\right|+\\left|b\\right|$ when either $a$ and $b$ both are having same signs or any of them(or both) is(or are) equal to zero.\nNow, $x$(=$a$) can't be equal to zero because in that case $\\dfrac{4-x^2}{x}$ will become undefined.\nBut, $\\dfrac{4-x^2}{x}$(=$b$) can be equal to zero\nor simply, $4-x^2=0$\nor, $x^2=4$ or, $x=\\pm\\ 2$\nNow, let's move to the cases where both $a$ and $b$ are having same sign.\nNow, $a$ and $b$ are having same signs means $ab>0$\nor, $\\dfrac{x\\left(4-x^2\\right)}{x}>0$\nor, $4-x^2>0$\nor, $x^2-4<0$\nor, $-2<x<2$\nThe possible integral values of $x$ in this range is $x=1$ or $-1$\n(Since, we have already stated earlier that $x\\ne\\ 0$)\nSo, the possible values of $x$ are $-2,-1,1,2$\nSo, number of possible integral values = 4\nAlternate Explanation:\nThe given equation is,\n$\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$\nThe value of x cannot be 0, and the RHS can be written as,\n$\\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\left|\\dfrac{x^2\\ +\\ 4\\ -\\ x^2}{x}\\right|\\ =\\ \\left|\\dfrac{4}{x}\\right|$\nThe values at which the values in the modulus change their signs are -2, 0 and 2. So, we have to divide them into four different ranges and check for the solutions of the equations in that range.\nCase 1: $-\\infty\\ <\\ x\\ \\le\\ -2$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$-x\\ +\\ \\frac{4\\ -\\ x^2}{x}\\ =\\ \\ -\\frac{4}{x}$\n$\\ \\frac{4\\ -2x^2}{x}\\ =\\ \\ -\\frac{4}{x}$\n$\\ 2x^2\\ =\\ \\ 8$\n$\\ x\\ =\\ \\pm\\ 2$\nOnly x = -2 is in this range and satisfies the given equation.\nCase 2: $-2\\ <\\ x\\ <\\ 0$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$-x\\ +\\ \\frac{x^2-\\ 4}{x}\\ =\\ \\ -\\frac{4}{x}$\n$-\\frac{4}{x}\\ =\\ \\ -\\frac{4}{x}$\nAll the integers in the range satisfy the given equation, and the only integer in the range is -1.\nCase 3: $0\\ \\le\\ x\\ <\\ 2$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$x\\ -\\ \\frac{x^2-\\ 4}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\frac{4}{x}\\ =\\ \\frac{4}{x}$\nAll the integers in the range satisfy the given equation, and the only integer in the range is 1.\nCase 4: $2\\ \\le\\ x\\ <\\ \\infty\\ $\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$x\\ -\\ \\frac{4\\ -\\ x^2}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\ \\frac{2x^2\\ -\\ 4}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\ 2x^2\\ =\\ \\ 8$\n$\\ x\\ =\\ \\pm\\ 2$\nOnly x = 2 is in this range and satisfies the given equation.\nThe integers that satisfy the given equation are -2, -1, 1, and 2. \nThe number of integers that satisfy the given equation is 4.\nHence, the correct answer is option A.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n3 walls of equal surface area are needed to be painted . The first wall is painted by a man in 40 minutes , in the meanwhile his wife is working on the second wall and completes painting it in 64 minutes. They started working together on the third wall , but stopped after 10 minutes to take a break of 10 minutes. During the break their kid painted the wall and after that all three of them together completed the wall in the next 6 minutes.\nFind the ratio of the total areas painted by the kid , wife and man.\n\n**Options:**\n- **A**. 7:10:14\n- **B**. 14:10:7\n- **C**. 7:25:28 ✅\n- **D**. 4:27:32\n\n**Correct Answer:** null\n\n**Solution:**\nLet's assume the surface area of a single wall to be 320 units .\nefficiency of man = 320/40 = 8 units /min\nefficiency of wife = 320 / 64 = 5 units/min\nboth of them work equal amount of time on the third wall, which is equal to 16 minutes.\nHence area painted by them on the third wall =>\nman -> 8  * 16 = 128 \nwife -> 5 * 16 = 80\nOf the 320 units of third wall man painted 128 units, wife painted 80 units , and the remaining was painted by the kid .\nHence kid painted 320 - 208 = 112 units.\nHence, total surface area painted by \nman = 320 + 128 = 448 units\nwoman = 320 +80 = 400 units \nkid = 112 units\nhence ratio = 7:25:28",
-      "type": "quants"
-    },
-    {
-      "qid": "quant-sectionals-9-8",
-      "passage_text": "",
-      "question_text": "A company sells two types of products: A and B. Products A and B are sold at a profit of 25% and 15% on their cost price, respectively. The total profit from selling all the units of both products is Rs. 120,000, and the total revenue after selling all the units of product A is Rs. 150,000. If 10,000 units of product B are sold, find the selling price per unit of product B.",
-      "options": [],
-      "correct_option_data": "69",
-      "solution_text": "The profit from product A is 25% of the cost price. If the cost price of a unit of product A is X, then the selling price will be 1.25x. Hence, the total cost price of all the units sold of Product A = $\\dfrac{150000}{1.25}=120000$\nSo, the profit generated by selling all the units of product A = 1,50,000 - 1,20,000 = 30,000\nThe total profit from selling all the units of both products is Rs. 120,000.\nSo, the profit from selling all the units of product B can be found by subtracting the profit from A from the total profit: \n120,000 − 30,000 = Rs. 90,000.\nNow, let the cost price of a unit of Product B be y. So the selling price will be 1.15y.\nHence, the profit = 0.15y\nWe know the profit after selling all the units of Product B = 90,000\nHence, 0.15Y = 90,000\nY = 6,00,000\nHence, the total revenue generated by selling Product B = 6,00,000 + 90,000 = 6,90,000\nHence, the selling price per unit = 6,90,000/10,000 = Rs. 69",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA company sells two types of products: A and B. Products A and B are sold at a profit of 25% and 15% on their cost price, respectively. The total profit from selling all the units of both products is Rs. 120,000, and the total revenue after selling all the units of product A is Rs. 150,000. If 10,000 units of product B are sold, find the selling price per unit of product B.\n\n**Options:**\n\n**Correct Answer:** 69\n\n**Solution:**\nThe profit from product A is 25% of the cost price. If the cost price of a unit of product A is X, then the selling price will be 1.25x. Hence, the total cost price of all the units sold of Product A = $\\dfrac{150000}{1.25}=120000$\nSo, the profit generated by selling all the units of product A = 1,50,000 - 1,20,000 = 30,000\nThe total profit from selling all the units of both products is Rs. 120,000.\nSo, the profit from selling all the units of product B can be found by subtracting the profit from A from the total profit: \n120,000 − 30,000 = Rs. 90,000.\nNow, let the cost price of a unit of Product B be y. So the selling price will be 1.15y.\nHence, the profit = 0.15y\nWe know the profit after selling all the units of Product B = 90,000\nHence, 0.15Y = 90,000\nY = 6,00,000\nHence, the total revenue generated by selling Product B = 6,00,000 + 90,000 = 6,90,000\nHence, the selling price per unit = 6,90,000/10,000 = Rs. 69",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of integers that satisfy the equation  $\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$\n\n**Options:**\n- **A**. 4 ✅\n- **B**. 5\n- **C**. 6\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\nAccording to question, $\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$\nLet, $x=a$ and $\\dfrac{4-x^2}{x}=b$\nSo, basically the given equation is of the form: $\\left|a+b\\right|=\\left|a\\right|+\\left|b\\right|$\nNow, $\\left|a+b\\right|=\\left|a\\right|+\\left|b\\right|$ when either $a$ and $b$ both are having same signs or any of them(or both) is(or are) equal to zero.\nNow, $x$(=$a$) can't be equal to zero because in that case $\\dfrac{4-x^2}{x}$ will become undefined.\nBut, $\\dfrac{4-x^2}{x}$(=$b$) can be equal to zero\nor simply, $4-x^2=0$\nor, $x^2=4$ or, $x=\\pm\\ 2$\nNow, let's move to the cases where both $a$ and $b$ are having same sign.\nNow, $a$ and $b$ are having same signs means $ab>0$\nor, $\\dfrac{x\\left(4-x^2\\right)}{x}>0$\nor, $4-x^2>0$\nor, $x^2-4<0$\nor, $-2<x<2$\nThe possible integral values of $x$ in this range is $x=1$ or $-1$\n(Since, we have already stated earlier that $x\\ne\\ 0$)\nSo, the possible values of $x$ are $-2,-1,1,2$\nSo, number of possible integral values = 4\nAlternate Explanation:\nThe given equation is,\n$\\left|x\\right|\\ +\\ \\left|\\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|$\nThe value of x cannot be 0, and the RHS can be written as,\n$\\left|x\\ \\ +\\ \\dfrac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\left|\\dfrac{x^2\\ +\\ 4\\ -\\ x^2}{x}\\right|\\ =\\ \\left|\\dfrac{4}{x}\\right|$\nThe values at which the values in the modulus change their signs are -2, 0 and 2. So, we have to divide them into four different ranges and check for the solutions of the equations in that range.\nCase 1: $-\\infty\\ <\\ x\\ \\le\\ -2$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$-x\\ +\\ \\frac{4\\ -\\ x^2}{x}\\ =\\ \\ -\\frac{4}{x}$\n$\\ \\frac{4\\ -2x^2}{x}\\ =\\ \\ -\\frac{4}{x}$\n$\\ 2x^2\\ =\\ \\ 8$\n$\\ x\\ =\\ \\pm\\ 2$\nOnly x = -2 is in this range and satisfies the given equation.\nCase 2: $-2\\ <\\ x\\ <\\ 0$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$-x\\ +\\ \\frac{x^2-\\ 4}{x}\\ =\\ \\ -\\frac{4}{x}$\n$-\\frac{4}{x}\\ =\\ \\ -\\frac{4}{x}$\nAll the integers in the range satisfy the given equation, and the only integer in the range is -1.\nCase 3: $0\\ \\le\\ x\\ <\\ 2$\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$x\\ -\\ \\frac{x^2-\\ 4}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\frac{4}{x}\\ =\\ \\frac{4}{x}$\nAll the integers in the range satisfy the given equation, and the only integer in the range is 1.\nCase 4: $2\\ \\le\\ x\\ <\\ \\infty\\ $\n$\\left|x\\right|\\ +\\ \\left|\\frac{4\\ -\\ x^2}{x}\\right|\\ =\\ \\ \\left|\\frac{4}{x}\\right|$\n$x\\ -\\ \\frac{4\\ -\\ x^2}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\ \\frac{2x^2\\ -\\ 4}{x}\\ =\\ \\ \\frac{4}{x}$\n$\\ 2x^2\\ =\\ \\ 8$\n$\\ x\\ =\\ \\pm\\ 2$\nOnly x = 2 is in this range and satisfies the given equation.\nThe integers that satisfy the given equation are -2, -1, 1, and 2. \nThe number of integers that satisfy the given equation is 4.\nHence, the correct answer is option A.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-9",
       "passage_text": "",
-      "question_text": "How many four digit even natural numbers exist with exactly two 4s?",
+      "question_text": "If $S=1^3+3^3+5^3+....+19^3$ , then find the number of factors of $S^2$ that are divisible by 25.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "329",
-          "is_correct": true
+          "option_text": "35",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "355",
+          "option_text": "25",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "459",
-          "is_correct": false
+          "option_text": "45",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "341",
+          "option_text": "55",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The four digit number can be of the following form-\n4 _ _ 4 -> 9 X 9 = 81 (All numbers can come in place of blanks except 4, as we can have only two 4 in a number)\n_ 4 _ 4 -> 8 X 9 = 72 (Zero cannot come at the thousands place)\n_ _ 4 4 -> 8 X 9 = 72 (Zero cannot come at the thousands place)\n4 _ 4 _ -> 9 X 4 = 36 (There are 4 even numbers except 4 - 2,6,8,0)\n4 4 _ _ -> 9 X 4 = 36 (There are 4 even numbers except 4 - 2,6,8,0)\n_ 4 4 _ -> 8 X 4 = 32 (Zero cannot come at the thousands place)\n=> Total numbers= 81+72+72+36+36+32 = 329",
+      "solution_text": "We have $S=1^3+3^3+.....+19^3$\nTo find the sum we introduce the remaining terms $ie\\ 2^3,4^3,...\\ 20^3$ so that it becomes the sum of cubes of consecutive integers. however, since they are extra terms , so we subtract them as well. \n$\\therefore S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-\\left(2^3+4^3+....+18^3+20^3\\right)\\ $\n$or,\\ S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-\\left(2^3.1^3+2^3.2^3+....+2^3.9^3+2^3.10^3\\ \\right)$\n$or,\\ S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-2^3.\\left(1^3+2^3+....+9^3+10^3\\ \\right)$\nThese are sum of cubes of consecutive natural numbers.\nWe know, the sum of cubes of N consecutive natural numbers is $\\left(\\frac{\\left(N\\left(N+1\\right)\\right)}{2}\\right)^2$\nusing this , \n$S=\\left(\\dfrac{\\left(20\\times\\ 21\\right)}{2}\\right)^2-8.\\left(\\dfrac{\\left(10.11\\right)}{2}\\right)^2$\n$or,\\ S=19900$\nprime factorising this we have $\\ S=2^{2.}.5^2.199\\ \\ =>\\ S^2=2^4.5^4.199^2$\nto find the number of factors of $S^2$ that are divisible by 25 we express $S^2$ as $25.\\left(2^4.5^2.199^2\\right)$ and calculate the number of factors of the part excluding 25\nRequired number of factors $=\\left(4+1\\right).\\left(2+1\\right).\\left(2+1\\right)=5.3.3=45\\ $",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many four digit even natural numbers exist with exactly two 4s?\n\n**Options:**\n- **A**. 329 ✅\n- **B**. 355\n- **C**. 459\n- **D**. 341\n\n**Correct Answer:** null\n\n**Solution:**\nThe four digit number can be of the following form-\n4 _ _ 4 -> 9 X 9 = 81 (All numbers can come in place of blanks except 4, as we can have only two 4 in a number)\n_ 4 _ 4 -> 8 X 9 = 72 (Zero cannot come at the thousands place)\n_ _ 4 4 -> 8 X 9 = 72 (Zero cannot come at the thousands place)\n4 _ 4 _ -> 9 X 4 = 36 (There are 4 even numbers except 4 - 2,6,8,0)\n4 4 _ _ -> 9 X 4 = 36 (There are 4 even numbers except 4 - 2,6,8,0)\n_ 4 4 _ -> 8 X 4 = 32 (Zero cannot come at the thousands place)\n=> Total numbers= 81+72+72+36+36+32 = 329",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $S=1^3+3^3+5^3+....+19^3$ , then find the number of factors of $S^2$ that are divisible by 25.\n\n**Options:**\n- **A**. 35\n- **B**. 25\n- **C**. 45 ✅\n- **D**. 55\n\n**Correct Answer:** null\n\n**Solution:**\nWe have $S=1^3+3^3+.....+19^3$\nTo find the sum we introduce the remaining terms $ie\\ 2^3,4^3,...\\ 20^3$ so that it becomes the sum of cubes of consecutive integers. however, since they are extra terms , so we subtract them as well. \n$\\therefore S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-\\left(2^3+4^3+....+18^3+20^3\\right)\\ $\n$or,\\ S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-\\left(2^3.1^3+2^3.2^3+....+2^3.9^3+2^3.10^3\\ \\right)$\n$or,\\ S=\\left(1^3+2^3+3^3+4^3+......+19^3+20^3\\right)-2^3.\\left(1^3+2^3+....+9^3+10^3\\ \\right)$\nThese are sum of cubes of consecutive natural numbers.\nWe know, the sum of cubes of N consecutive natural numbers is $\\left(\\frac{\\left(N\\left(N+1\\right)\\right)}{2}\\right)^2$\nusing this , \n$S=\\left(\\dfrac{\\left(20\\times\\ 21\\right)}{2}\\right)^2-8.\\left(\\dfrac{\\left(10.11\\right)}{2}\\right)^2$\n$or,\\ S=19900$\nprime factorising this we have $\\ S=2^{2.}.5^2.199\\ \\ =>\\ S^2=2^4.5^4.199^2$\nto find the number of factors of $S^2$ that are divisible by 25 we express $S^2$ as $25.\\left(2^4.5^2.199^2\\right)$ and calculate the number of factors of the part excluding 25\nRequired number of factors $=\\left(4+1\\right).\\left(2+1\\right).\\left(2+1\\right)=5.3.3=45\\ $",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-10",
       "passage_text": "",
-      "question_text": "A and B leave from town P towards Q simultaneously, and at the same time, C leaves town Q towards P. All three move at constant speeds throughout their journeys. B takes 40 minutes to reach Q, which is also the average of time A, B, and C took to reach their destinations.. If it takes B 30 minutes to reach Q after meeting C, how long does it take for A to reach from P to Q?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "1.11 hours",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "1.33 hours",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "1.66 hours",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "2.33 hours",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "",
+      "question_text": "In a container holding 60 liters of a milk-water mixture. Ten liters of the mixture are first drawn out and replaced with pure milk. Next, 20 liters of this new mixture are drawn out and replaced with pure water. In the end, the ratio of milk to water is found to be 1:3. What was the volume (in litres) of milk in the initial mixture?",
+      "options": [],
+      "correct_option_data": "15",
+      "solution_text": "Let's assume X litres of milk and Y litres of water, with X+Y=60. \nWe are told that 10 litres of solution are removed and replaced with pure milk. \nAfter 10 litres of solution are removed, the remaining water and milk will be, \nMilk=$\\dfrac{5}{6}X$ and Water=$\\dfrac{5}{6}Y$\nAfter 10 litres are added back, we have, \nMilk=$\\dfrac{5}{6}X+10$ and Water=$\\dfrac{5}{6}Y$\nWe are told that 20 liters of this new mixture are drawn out and replaced with pure water.\nAfter 20 litres are drawn out, the remaining amount of water and milk will be, \nMilk=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)$ and Water=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)$\nAfter 20 litres of water are added back, we have, \nMilk=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)$ and Water=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)+20$\nThis milk-to-water ratio is said to be 1:3. Drawing up the equation for that, we have, \n$\\dfrac{\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)}{\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)+20}=\\dfrac{1}{3}$\n$\\dfrac{\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)}{\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y+30\\right)}=\\dfrac{5X+60}{5Y+180}=\\dfrac{X+12}{Y+36}$\n$\\dfrac{X+12}{Y+36}=\\dfrac{1}{3}$\n$3X+36=Y+36$\n$3X=Y$\nWe know that $X+Y=60$\n$4X=60$\n$X=15$\nHence, the initial volume of Milk is 15L.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B leave from town P towards Q simultaneously, and at the same time, C leaves town Q towards P. All three move at constant speeds throughout their journeys. B takes 40 minutes to reach Q, which is also the average of time A, B, and C took to reach their destinations.. If it takes B 30 minutes to reach Q after meeting C, how long does it take for A to reach from P to Q?\n\n**Options:**\n- **A**. 1.11 hours ✅\n- **B**. 1.33 hours\n- **C**. 1.66 hours\n- **D**. 2.33 hours\n\n**Correct Answer:** null",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a container holding 60 liters of a milk-water mixture. Ten liters of the mixture are first drawn out and replaced with pure milk. Next, 20 liters of this new mixture are drawn out and replaced with pure water. In the end, the ratio of milk to water is found to be 1:3. What was the volume (in litres) of milk in the initial mixture?\n\n**Options:**\n\n**Correct Answer:** 15\n\n**Solution:**\nLet's assume X litres of milk and Y litres of water, with X+Y=60. \nWe are told that 10 litres of solution are removed and replaced with pure milk. \nAfter 10 litres of solution are removed, the remaining water and milk will be, \nMilk=$\\dfrac{5}{6}X$ and Water=$\\dfrac{5}{6}Y$\nAfter 10 litres are added back, we have, \nMilk=$\\dfrac{5}{6}X+10$ and Water=$\\dfrac{5}{6}Y$\nWe are told that 20 liters of this new mixture are drawn out and replaced with pure water.\nAfter 20 litres are drawn out, the remaining amount of water and milk will be, \nMilk=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)$ and Water=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)$\nAfter 20 litres of water are added back, we have, \nMilk=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)$ and Water=$\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)+20$\nThis milk-to-water ratio is said to be 1:3. Drawing up the equation for that, we have, \n$\\dfrac{\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)}{\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y\\right)+20}=\\dfrac{1}{3}$\n$\\dfrac{\\dfrac{2}{3}\\left(\\dfrac{5}{6}X+10\\right)}{\\dfrac{2}{3}\\left(\\dfrac{5}{6}Y+30\\right)}=\\dfrac{5X+60}{5Y+180}=\\dfrac{X+12}{Y+36}$\n$\\dfrac{X+12}{Y+36}=\\dfrac{1}{3}$\n$3X+36=Y+36$\n$3X=Y$\nWe know that $X+Y=60$\n$4X=60$\n$X=15$\nHence, the initial volume of Milk is 15L.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-11",
       "passage_text": "",
-      "question_text": "Find the number of positive integral solutions for x and y in the equation, $\\dfrac{1}{x}+\\dfrac{6}{y}=\\dfrac{1}{12}$",
-      "options": [],
-      "correct_option_data": "24",
-      "solution_text": "The given equation is, \n$\\dfrac{1}{x}+\\dfrac{6}{y}=\\dfrac{1}{12}$\nRe-writing this, we get, $y+6x=\\dfrac{xy}{12}$\n$12y+72x=xy$\n$12y+72x-xy=0$\n$y\\left(12-x\\right)+72x=0$\nAdding -864 on either side\n$y\\left(12-x\\right)+72\\left(x-12\\right)=-864$\n$\\left(y-72\\right)\\left(12-x\\right)=-864$\n$\\left(x-12\\right)\\left(y-72\\right)=864$\nWe can write 864 as, $2^5\\times3^3$\nNumber of factors is 24, and hence, there exist 24 positive integral solutions for the given equation.",
+      "question_text": "What is the sum of possible values of x that satisfies the equation $64^{6\\left(\\log_{64}x\\right)^2+3}=x^{11}$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "516",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "270",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "498",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's apply $\\log_{64}$ on both sides.\nWe get $\\log_{64}64^{6\\left(\\log_{64}x\\right)^2+3}=\\log_{64}x^{11}$\nWe know that $\\log_aa^n=n$\n$6\\left(\\log_{64}x\\right)^2+3=\\log_{64}x^{11}$\nLet us assume $\\log_{64}x$ as t.\n$6t^2+3=11t$\nUpon solving this equation, we get t = $\\frac{1}{3},\\frac{3}{2}$\n$\\log_{64}x$ = t.\n$\\log_{64}x$ =  $\\frac{1}{3}$\nx = 4\n$\\log_{64}x$ = $\\frac{3}{2}$\nx = $\\left(64\\right)^{\\frac{3}{2}}=512$\nThe sum of values = 512+4 = 516",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of positive integral solutions for x and y in the equation, $\\dfrac{1}{x}+\\dfrac{6}{y}=\\dfrac{1}{12}$\n\n**Options:**\n\n**Correct Answer:** 24\n\n**Solution:**\nThe given equation is, \n$\\dfrac{1}{x}+\\dfrac{6}{y}=\\dfrac{1}{12}$\nRe-writing this, we get, $y+6x=\\dfrac{xy}{12}$\n$12y+72x=xy$\n$12y+72x-xy=0$\n$y\\left(12-x\\right)+72x=0$\nAdding -864 on either side\n$y\\left(12-x\\right)+72\\left(x-12\\right)=-864$\n$\\left(y-72\\right)\\left(12-x\\right)=-864$\n$\\left(x-12\\right)\\left(y-72\\right)=864$\nWe can write 864 as, $2^5\\times3^3$\nNumber of factors is 24, and hence, there exist 24 positive integral solutions for the given equation.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of possible values of x that satisfies the equation $64^{6\\left(\\log_{64}x\\right)^2+3}=x^{11}$?\n\n**Options:**\n- **A**. 516 ✅\n- **B**. 270\n- **C**. 300\n- **D**. 498\n\n**Correct Answer:** null\n\n**Solution:**\nLet's apply $\\log_{64}$ on both sides.\nWe get $\\log_{64}64^{6\\left(\\log_{64}x\\right)^2+3}=\\log_{64}x^{11}$\nWe know that $\\log_aa^n=n$\n$6\\left(\\log_{64}x\\right)^2+3=\\log_{64}x^{11}$\nLet us assume $\\log_{64}x$ as t.\n$6t^2+3=11t$\nUpon solving this equation, we get t = $\\frac{1}{3},\\frac{3}{2}$\n$\\log_{64}x$ = t.\n$\\log_{64}x$ =  $\\frac{1}{3}$\nx = 4\n$\\log_{64}x$ = $\\frac{3}{2}$\nx = $\\left(64\\right)^{\\frac{3}{2}}=512$\nThe sum of values = 512+4 = 516",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-12",
       "passage_text": "",
-      "question_text": "In the figure shown below, a regular hexagon(6 sides), a regular decagon(10 sides) and a regular dodecagon(12 sides) have an edge in common. What is the angle XYZ in the figure below?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$33^{\\circ\\ }$",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$30^{\\circ\\ }$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$42^{\\circ\\ }$",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$45^{\\circ\\ }$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "We know that the interior angle of a regular polygon can be calculated using the formula $\\dfrac{\\left(n\\ -\\ 2\\right)\\times\\ 180}{n}$.\nFor a regular hexagon, the interior angle = $\\dfrac{\\left(6\\ -\\ 2\\right)\\times\\ 180}{6}\\ =\\ \\dfrac{4\\ \\times\\ 180}{6}\\ =\\ 120$\nFor a regular decagon, the interior angle = $\\dfrac{\\left(10\\ -\\ 2\\right)\\times\\ 180}{10}\\ =\\ \\dfrac{8\\ \\times\\ 180}{10}\\ =\\ 144$\nFor a regular dodecagon, the interior angle = $\\dfrac{\\left(12\\ -\\ 2\\right)\\times\\ 180}{12}\\ =\\ \\dfrac{10\\ \\times\\ 180}{12}\\ =\\ 150$\nNow, using these angles in the figure, just looking at the bottom part, that looks like,\nWe calculated ABX to be 144, and the XBT angle becomes 180 - 144 = 36 degrees\nWe calculated ABY to be 120 and ABZ to be 150, so ZBY becomes 150 - 120 = 30 degrees and TBZ is 180 - 150 = 30 degrees.\nWe know that they are sharing the sides, and the lengths of the polygons are equal.\nSo, triangle XBY is isosceles and angle BXY = angle BYX. It can be calculated as,\n36 + 30 + 30 + 2*(angle BYX) = 180\nangle BYX = 42 degrees.\nSimilarly, in tringle BZY, the angles BZY and BYZ are equal. It can be calculated as,\n30 + 2*(angle BYZ) = 180\nangle BYZ = 75 degrees.\nAngle XYZ = angle BYZ - angle BYX = 75 - 42 = 33 degrees.\nHence, the correct answer is option A.",
-      "image_url": "https://cracku.in/media/uploads/Screenshot%202025-02-19%2010.38.46%20AM.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the figure shown below, a regular hexagon(6 sides), a regular decagon(10 sides) and a regular dodecagon(12 sides) have an edge in common. What is the angle XYZ in the figure below?\n\n**Options:**\n- **A**. $33^{\\circ\\ }$ ✅\n- **B**. $30^{\\circ\\ }$\n- **C**. $42^{\\circ\\ }$\n- **D**. $45^{\\circ\\ }$\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the interior angle of a regular polygon can be calculated using the formula $\\dfrac{\\left(n\\ -\\ 2\\right)\\times\\ 180}{n}$.\nFor a regular hexagon, the interior angle = $\\dfrac{\\left(6\\ -\\ 2\\right)\\times\\ 180}{6}\\ =\\ \\dfrac{4\\ \\times\\ 180}{6}\\ =\\ 120$\nFor a regular decagon, the interior angle = $\\dfrac{\\left(10\\ -\\ 2\\right)\\times\\ 180}{10}\\ =\\ \\dfrac{8\\ \\times\\ 180}{10}\\ =\\ 144$\nFor a regular dodecagon, the interior angle = $\\dfrac{\\left(12\\ -\\ 2\\right)\\times\\ 180}{12}\\ =\\ \\dfrac{10\\ \\times\\ 180}{12}\\ =\\ 150$\nNow, using these angles in the figure, just looking at the bottom part, that looks like,\nWe calculated ABX to be 144, and the XBT angle becomes 180 - 144 = 36 degrees\nWe calculated ABY to be 120 and ABZ to be 150, so ZBY becomes 150 - 120 = 30 degrees and TBZ is 180 - 150 = 30 degrees.\nWe know that they are sharing the sides, and the lengths of the polygons are equal.\nSo, triangle XBY is isosceles and angle BXY = angle BYX. It can be calculated as,\n36 + 30 + 30 + 2*(angle BYX) = 180\nangle BYX = 42 degrees.\nSimilarly, in tringle BZY, the angles BZY and BYZ are equal. It can be calculated as,\n30 + 2*(angle BYZ) = 180\nangle BYZ = 75 degrees.\nAngle XYZ = angle BYZ - angle BYX = 75 - 42 = 33 degrees.\nHence, the correct answer is option A.",
+      "question_text": "Using the digits 1, 3, 4, 5, 7, and 9 without repetition, how many numbers greater than 1000 can be formed that are divisible by 3?",
+      "options": [],
+      "correct_option_data": "240",
+      "solution_text": "The given numbers (1, 3, 4, 5, 7, 9). We need to find the number of possible four-digit, five-digit and six-digit numbers divisible by 3 from the given six digits.\nStarting with four-digit numbers. The sum of the six numbers is 29, which is not divisible by 3. \nWe can remove two numbers simultaneously to ensure the sum is divisible by 3. \nWhen the sum adds up to 24: (3, 5, 7, 9)\nWhen the sum adds up to 21: (3, 4, 5, 9) and (1, 4, 7, 9)\nWhen the sum adds up to 18: (1, 3, 5, 9)\nWhen the sum adds up to 15: (1, 3, 4, 7)\nEach of these numbers can be arranged in 4! ways. Hence, the total number of four-digit numbers is 4!*5=120. \nFor five-digit numbers, we can remove one of the numbers to make sure the sum is divisible by 3.  \nWhen the sum adds up to 24: (1, 3, 4, 7, 9)\nThis is the only possible case for five-digit numbers. And this can be arranged in 5! ways=120. \nThe total number of ways to create numbers greater than 1000 from the given digits is 120 + 120 = 240.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nUsing the digits 1, 3, 4, 5, 7, and 9 without repetition, how many numbers greater than 1000 can be formed that are divisible by 3?\n\n**Options:**\n\n**Correct Answer:** 240\n\n**Solution:**\nThe given numbers (1, 3, 4, 5, 7, 9). We need to find the number of possible four-digit, five-digit and six-digit numbers divisible by 3 from the given six digits.\nStarting with four-digit numbers. The sum of the six numbers is 29, which is not divisible by 3. \nWe can remove two numbers simultaneously to ensure the sum is divisible by 3. \nWhen the sum adds up to 24: (3, 5, 7, 9)\nWhen the sum adds up to 21: (3, 4, 5, 9) and (1, 4, 7, 9)\nWhen the sum adds up to 18: (1, 3, 5, 9)\nWhen the sum adds up to 15: (1, 3, 4, 7)\nEach of these numbers can be arranged in 4! ways. Hence, the total number of four-digit numbers is 4!*5=120. \nFor five-digit numbers, we can remove one of the numbers to make sure the sum is divisible by 3.  \nWhen the sum adds up to 24: (1, 3, 4, 7, 9)\nThis is the only possible case for five-digit numbers. And this can be arranged in 5! ways=120. \nThe total number of ways to create numbers greater than 1000 from the given digits is 120 + 120 = 240.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-13",
       "passage_text": "",
-      "question_text": "The side AB of the parallelogram ABCD is extended and a perpendicular is drawn from point C on the line at point E, where some non-zero distance separates B and E. Given that the perimeter of the parallelogram is 48 units and angle ADC is $z^{\\circ\\ }$, what is the maximum possible integer area of triangle CDE (in square units)?",
+      "question_text": "Three distinct numbers are selected at random from the first forty natural numbers. What is the probability that the three chosen numbers form a geometric progression with an integer as the common ratio?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "72 sq. units",
+          "option_text": "$\\dfrac{11}{9880}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "71 sq. units",
+          "option_text": "$\\dfrac{9}{4940}$",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "70 sq. units",
+          "option_text": "$\\dfrac{15}{9880}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "68 sq. units",
+          "option_text": "$\\dfrac{1}{494}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let's take the side lengths of the parallelogram to be x and y, giving us the relation 2(x+y)=48, (x+y)=24\nWe can take AB and CD as x and AD and BC as y. \nDrawing a rough figure, we get:\nSince we are given ADC is z degrees, ABC will also be z degrees, giving angled CBE to be 180-z degrees. \nIn, we are given that E is a right-angled triangle, from which we can get the length of BE as y cos (180-z), and EC as y sin (180-z). \nWe want to find the area of CDE, which is also a right-angled triangle, the area would be $\\frac{1}{2}x\\ y\\ \\sin z$\nWe want to maximize the value of this, for which we would want $xy$ to be the maximum.\nUsing the AM-GM property, we get:\n$\\frac{\\left(x+y\\right)}{2}\\ge\\sqrt{xy}$\n$\\frac{24}{2}\\ge\\sqrt{\\ xy}$\n$12\\ge\\sqrt{\\ xy}$\n$144\\ge xy$\nBut this will be the case when z is 90 degrees, and in that case B and E would be the same point.\nWe can tell that the area approaches the value of $\\frac{1}{2}\\times\\ 144\\times\\ 1=72$, but is never equal to it. \nSo the largest integer value that the area of CDE can take is 71 square units\nTherefore, Option B is the correct answer.",
+      "solution_text": "We are told we need to pick three distinct numbers from 1 to 40 such that they are in a GP with a common ratio as integers. \nSince the numbers are distinct, the common ratio cannot be one. \nThe general condition for the terms will be, $1\\le a<ar<ar^2\\le40$\nWhen r=2: \nThe maximum value that a can take will be 10. Hence, there will be 10 GPs possible. \nWhen r=3: \nThe maximum value that a can take will be 4. Hence, there will be 4 GPs possible. \nWhen r=4: \nThe maximum value that a can take will be 2. Hence, there will be 2 GPs possible. \nWhen r=5 and 6: \nThe maximum value that a can take will be 1. Hence, 1 GP for each. \nA total of 18 GPs is possible. \nThe total number of ways to pick three numbers randomly from the first forty numbers will be: $^{40}C_3=9880$\nThe probability will be: $\\dfrac{18}{9880}=\\dfrac{9}{4940}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe side AB of the parallelogram ABCD is extended and a perpendicular is drawn from point C on the line at point E, where some non-zero distance separates B and E. Given that the perimeter of the parallelogram is 48 units and angle ADC is $z^{\\circ\\ }$, what is the maximum possible integer area of triangle CDE (in square units)?\n\n**Options:**\n- **A**. 72 sq. units\n- **B**. 71 sq. units ✅\n- **C**. 70 sq. units\n- **D**. 68 sq. units\n\n**Correct Answer:** null\n\n**Solution:**\nLet's take the side lengths of the parallelogram to be x and y, giving us the relation 2(x+y)=48, (x+y)=24\nWe can take AB and CD as x and AD and BC as y. \nDrawing a rough figure, we get:\nSince we are given ADC is z degrees, ABC will also be z degrees, giving angled CBE to be 180-z degrees. \nIn, we are given that E is a right-angled triangle, from which we can get the length of BE as y cos (180-z), and EC as y sin (180-z). \nWe want to find the area of CDE, which is also a right-angled triangle, the area would be $\\frac{1}{2}x\\ y\\ \\sin z$\nWe want to maximize the value of this, for which we would want $xy$ to be the maximum.\nUsing the AM-GM property, we get:\n$\\frac{\\left(x+y\\right)}{2}\\ge\\sqrt{xy}$\n$\\frac{24}{2}\\ge\\sqrt{\\ xy}$\n$12\\ge\\sqrt{\\ xy}$\n$144\\ge xy$\nBut this will be the case when z is 90 degrees, and in that case B and E would be the same point.\nWe can tell that the area approaches the value of $\\frac{1}{2}\\times\\ 144\\times\\ 1=72$, but is never equal to it. \nSo the largest integer value that the area of CDE can take is 71 square units\nTherefore, Option B is the correct answer.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree distinct numbers are selected at random from the first forty natural numbers. What is the probability that the three chosen numbers form a geometric progression with an integer as the common ratio?\n\n**Options:**\n- **A**. $\\dfrac{11}{9880}$\n- **B**. $\\dfrac{9}{4940}$ ✅\n- **C**. $\\dfrac{15}{9880}$\n- **D**. $\\dfrac{1}{494}$\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told we need to pick three distinct numbers from 1 to 40 such that they are in a GP with a common ratio as integers. \nSince the numbers are distinct, the common ratio cannot be one. \nThe general condition for the terms will be, $1\\le a<ar<ar^2\\le40$\nWhen r=2: \nThe maximum value that a can take will be 10. Hence, there will be 10 GPs possible. \nWhen r=3: \nThe maximum value that a can take will be 4. Hence, there will be 4 GPs possible. \nWhen r=4: \nThe maximum value that a can take will be 2. Hence, there will be 2 GPs possible. \nWhen r=5 and 6: \nThe maximum value that a can take will be 1. Hence, 1 GP for each. \nA total of 18 GPs is possible. \nThe total number of ways to pick three numbers randomly from the first forty numbers will be: $^{40}C_3=9880$\nThe probability will be: $\\dfrac{18}{9880}=\\dfrac{9}{4940}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-14",
       "passage_text": "",
-      "question_text": "Mix A consists of 2 kg of compost and 1 kg of fertilizer per batch, while Mix B contains 1 kg of compost and 3 kg of fertilizer per batch. The gardener uses exactly 12 kg of compost and 26 kg of fertilizer to make a certain amount of Mix A and Mix B, with no compost or fertilizer left over. How many kilograms of Mix B were produced?",
+      "question_text": "Praveen travelled from City A to City B, covering 400 km by car and 250 km by bus, taking a total of 9 hours and 10 minutes. In another scenario, if he travels 280 km by car and 370 km by bus, the total time increases by 30 minutes. What is the speed of the bus in km/h?",
       "options": [],
-      "correct_option_data": "32",
-      "solution_text": "",
+      "correct_option_data": "60",
+      "solution_text": "It is given that Praveen travelled from City A to City B and two scenarios are given.\n1st case : 400 km by car and 250 km by bus, taking 9 hours and 10 minutes\nDistance travelled by car = 400 km and by bus = 250 km\nLet the speed of car be x km/hr and that of bus be y km/hr.\nTime taken by car = 400/x and time taken by bus = 250/y hr\nTotal time taken = 9hrs 10 mins  = $9\\dfrac{1}{6}$ hrs\n$\\ \\dfrac{\\ 400}{x}$ +$\\ \\dfrac{\\ 250}{y}$= 9$\\ \\dfrac{\\ 1}{6}$   ----equation (1)\n2nd case : 280 km by car and 370 km by bus\nDistance travelled by car = 280 km and by bus = 370 km\nThe speed of car and bus will remain the same.\nTime taken by car= $\\ \\dfrac{\\ 280}{x}$hr and by bus = $\\ \\dfrac{\\ 370}{y}$ hr\n$\\ \\dfrac{\\ 280}{x}$ + $\\ \\dfrac{\\ 370}{y}$ = 9 hrs 40 mins\n$\\ \\dfrac{\\ 280}{x}$ + $\\ \\dfrac{\\ 370}{y}$ = 9$\\ \\dfrac{\\ 2}{3}$  ----equation (2)\nMultiplying equation (1) by 7 and equation (2) with 10 and subtracting them\n$\\ \\dfrac{\\ 2800}{x}$ +$\\ \\dfrac{\\ 1750}{y}$= $\\ \\dfrac{\\ 385}{6}$\n$\\ \\dfrac{\\ 2800}{x}$ + $\\ \\dfrac{\\ 3700}{y}$ = $\\ \\dfrac{\\ 290}{3}$\n$-\\dfrac{1950}{y}=-\\dfrac{195}{6}$\ny = 60 km per hour",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMix A consists of 2 kg of compost and 1 kg of fertilizer per batch, while Mix B contains 1 kg of compost and 3 kg of fertilizer per batch. The gardener uses exactly 12 kg of compost and 26 kg of fertilizer to make a certain amount of Mix A and Mix B, with no compost or fertilizer left over. How many kilograms of Mix B were produced?\n\n**Options:**\n\n**Correct Answer:** 32",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPraveen travelled from City A to City B, covering 400 km by car and 250 km by bus, taking a total of 9 hours and 10 minutes. In another scenario, if he travels 280 km by car and 370 km by bus, the total time increases by 30 minutes. What is the speed of the bus in km/h?\n\n**Options:**\n\n**Correct Answer:** 60\n\n**Solution:**\nIt is given that Praveen travelled from City A to City B and two scenarios are given.\n1st case : 400 km by car and 250 km by bus, taking 9 hours and 10 minutes\nDistance travelled by car = 400 km and by bus = 250 km\nLet the speed of car be x km/hr and that of bus be y km/hr.\nTime taken by car = 400/x and time taken by bus = 250/y hr\nTotal time taken = 9hrs 10 mins  = $9\\dfrac{1}{6}$ hrs\n$\\ \\dfrac{\\ 400}{x}$ +$\\ \\dfrac{\\ 250}{y}$= 9$\\ \\dfrac{\\ 1}{6}$   ----equation (1)\n2nd case : 280 km by car and 370 km by bus\nDistance travelled by car = 280 km and by bus = 370 km\nThe speed of car and bus will remain the same.\nTime taken by car= $\\ \\dfrac{\\ 280}{x}$hr and by bus = $\\ \\dfrac{\\ 370}{y}$ hr\n$\\ \\dfrac{\\ 280}{x}$ + $\\ \\dfrac{\\ 370}{y}$ = 9 hrs 40 mins\n$\\ \\dfrac{\\ 280}{x}$ + $\\ \\dfrac{\\ 370}{y}$ = 9$\\ \\dfrac{\\ 2}{3}$  ----equation (2)\nMultiplying equation (1) by 7 and equation (2) with 10 and subtracting them\n$\\ \\dfrac{\\ 2800}{x}$ +$\\ \\dfrac{\\ 1750}{y}$= $\\ \\dfrac{\\ 385}{6}$\n$\\ \\dfrac{\\ 2800}{x}$ + $\\ \\dfrac{\\ 3700}{y}$ = $\\ \\dfrac{\\ 290}{3}$\n$-\\dfrac{1950}{y}=-\\dfrac{195}{6}$\ny = 60 km per hour",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-15",
       "passage_text": "",
-      "question_text": "What is the sum of possible values of x, if $\\log_4128+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$?",
+      "question_text": "A man buys coffee at Rs. 1300 per kg and chicory at Rs. 800 per kg , and mixes them at a 2:3 ratio. He packs the mixture in 50g packets and sells each packet for Rs 62. However, he uses a faulty weighing scale to measure and puts only 48 g instead of the 50 g. If it is known that the man bought 12 kg of coffee and the cost of packing is Rs 1.6 per packet, then what is his net profit per cent?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "2.5",
-          "is_correct": true
+          "option_text": "22 %",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "3",
-          "is_correct": false
+          "option_text": "25 %",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "7",
+          "option_text": "29 %",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "4",
+          "option_text": "31 %",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "$\\log_4128+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$\n$\\log_4128$ = $\\log_4128=\\log_{2^2}2^7=\\frac{7}{2}\\log_22=3.5$\n$3.5+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$\n$\\log_{\\sqrt{2}}\\left(2x-3\\right)=2$\n$2=\\log_{\\sqrt{\\ 2}}2$\n$\\Rightarrow\\log_{\\sqrt{2}}\\left(2x-3\\right)=\\log_{\\sqrt{\\ 2}}2$\nThe bases of both log is same. So, arguments will also be same.\n$2x-3 = 2$\n$2x = 5$\n$x = \\frac{5}{2}$\nSum of values = 2.5",
+      "solution_text": "Given, \nCost of coffee= Rs. 1300 per kg and the cost of chicory= Rs. 800 per kg\nThe man buys 12 kg coffee which is mixed with chicory in the ratio 2:3. For 12 kg coffee we will need say $x\\ kg$ chicory , then $\\dfrac{2}{3}=\\dfrac{12}{x\\ }=>\\ x=12\\times\\ \\dfrac{3}{2}=18\\ kg$\nHe has a total of (18+12)= 30 kg = 30000g of mixture .  \nSince he puts only 48 g in a packet, the number of packets he can make is $\\dfrac{30000}{48}=625\\ $\nCost of packing each packet is Rs 1.6\nSo the total cost of packing is $1.6\\times\\ 625\\ =1000$\nConsequently, his total expenditure (Cost price) is: cost of coffee + cost of chicory + packing cost of packets = $12\\times\\ 1300+18\\times\\ 800+1000=31000$\nHe sells each packet for Rs 62, and he has a total of 625 packets, so his total income (selling price) is $62\\times\\ 625=38750$\nThus Net profit= (income - expenditure) $=38,750-31,000=Rs.\\ 7750$\nAnd Net Profit % $=\\dfrac{profit}{\\exp enditure}\\times\\ 100=\\dfrac{7750}{31000}\\times\\ 100=25\\%\\ $",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of possible values of x, if $\\log_4128+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$?\n\n**Options:**\n- **A**. 2.5 ✅\n- **B**. 3\n- **C**. 7\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log_4128+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$\n$\\log_4128$ = $\\log_4128=\\log_{2^2}2^7=\\frac{7}{2}\\log_22=3.5$\n$3.5+\\log_{\\sqrt{2}}\\left(2x-3\\right)=5.5$\n$\\log_{\\sqrt{2}}\\left(2x-3\\right)=2$\n$2=\\log_{\\sqrt{\\ 2}}2$\n$\\Rightarrow\\log_{\\sqrt{2}}\\left(2x-3\\right)=\\log_{\\sqrt{\\ 2}}2$\nThe bases of both log is same. So, arguments will also be same.\n$2x-3 = 2$\n$2x = 5$\n$x = \\frac{5}{2}$\nSum of values = 2.5",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man buys coffee at Rs. 1300 per kg and chicory at Rs. 800 per kg , and mixes them at a 2:3 ratio. He packs the mixture in 50g packets and sells each packet for Rs 62. However, he uses a faulty weighing scale to measure and puts only 48 g instead of the 50 g. If it is known that the man bought 12 kg of coffee and the cost of packing is Rs 1.6 per packet, then what is his net profit per cent?\n\n**Options:**\n- **A**. 22 %\n- **B**. 25 % ✅\n- **C**. 29 %\n- **D**. 31 %\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, \nCost of coffee= Rs. 1300 per kg and the cost of chicory= Rs. 800 per kg\nThe man buys 12 kg coffee which is mixed with chicory in the ratio 2:3. For 12 kg coffee we will need say $x\\ kg$ chicory , then $\\dfrac{2}{3}=\\dfrac{12}{x\\ }=>\\ x=12\\times\\ \\dfrac{3}{2}=18\\ kg$\nHe has a total of (18+12)= 30 kg = 30000g of mixture .  \nSince he puts only 48 g in a packet, the number of packets he can make is $\\dfrac{30000}{48}=625\\ $\nCost of packing each packet is Rs 1.6\nSo the total cost of packing is $1.6\\times\\ 625\\ =1000$\nConsequently, his total expenditure (Cost price) is: cost of coffee + cost of chicory + packing cost of packets = $12\\times\\ 1300+18\\times\\ 800+1000=31000$\nHe sells each packet for Rs 62, and he has a total of 625 packets, so his total income (selling price) is $62\\times\\ 625=38750$\nThus Net profit= (income - expenditure) $=38,750-31,000=Rs.\\ 7750$\nAnd Net Profit % $=\\dfrac{profit}{\\exp enditure}\\times\\ 100=\\dfrac{7750}{31000}\\times\\ 100=25\\%\\ $",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-16",
       "passage_text": "",
-      "question_text": "Bill invested a sum of money in a bank offering 20% compound interest. At the end of the first year, he withdrew $x$ and deposited the same amount back at the end of the second year. After two years, his total gain was 40%. What would his percentage gain be if he had, instead, withdrawn $2x$ and returned it under the same conditions?",
-      "options": [],
-      "correct_option_data": "36",
-      "solution_text": "Let us assume Bill invested an amount P. \nAfter the first year, the amount will become 1.2P, considering it is 20% interest. \nAt this point, he withdraws an amount x, the amount left in the bank will be, 1.2P-x\nAt the end of the second year, this amount will become 1.2(1.2P-x)\nAnd at this point, he returns an amount x, which will become, 1.2(1.2P-x)+x\nThis can be simplified to 1.44P-0.2x\nAnd we are told that he realises a 40% gain after two years, so, this equation will be, \n1.44P-0.2x=1.4P\n0.04P=0.2x\nP=5x\nNow, we are asked for a scenario where he removes 2x\n1.2(1.2P-2x)+2x=1.44P-0.4x\nSubstituting x=0.2P\n1.44P-0.08P=1.36P\nHence, he would realise a 36 percent gain if he had withdrawn twice the amount.",
+      "question_text": "Find the sum of the positive integral values x can take, such that, $x^3-11x^2+38x-30$ is divisible by (x-3) and x > 3?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "54",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "46",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given cubic equation is $x^3-11x^2+38x-30$\nUsing the remainder theorem, we can find the remainder for this equation when it is divided by (x-3)\nf(x)=$x^3-11x^2+38x-30$\nf(3)= 27-99+114-30=12\nHence, dividing this equation by x-3 gives us the remainder of 12. \nThe cubic equation given can be written as, $\\left(x-3\\right)\\left(x^2-8x+14\\right)+12$\nHence, we need to find the values of x such that 12 is divisible by x-3. \n$\\dfrac{12}{x-3}$, this is possible for x=4, 5, 6, 7, 9, 15. (As x > 3)\nTheir sum equals 46.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBill invested a sum of money in a bank offering 20% compound interest. At the end of the first year, he withdrew $x$ and deposited the same amount back at the end of the second year. After two years, his total gain was 40%. What would his percentage gain be if he had, instead, withdrawn $2x$ and returned it under the same conditions?\n\n**Options:**\n\n**Correct Answer:** 36\n\n**Solution:**\nLet us assume Bill invested an amount P. \nAfter the first year, the amount will become 1.2P, considering it is 20% interest. \nAt this point, he withdraws an amount x, the amount left in the bank will be, 1.2P-x\nAt the end of the second year, this amount will become 1.2(1.2P-x)\nAnd at this point, he returns an amount x, which will become, 1.2(1.2P-x)+x\nThis can be simplified to 1.44P-0.2x\nAnd we are told that he realises a 40% gain after two years, so, this equation will be, \n1.44P-0.2x=1.4P\n0.04P=0.2x\nP=5x\nNow, we are asked for a scenario where he removes 2x\n1.2(1.2P-2x)+2x=1.44P-0.4x\nSubstituting x=0.2P\n1.44P-0.08P=1.36P\nHence, he would realise a 36 percent gain if he had withdrawn twice the amount.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of the positive integral values x can take, such that, $x^3-11x^2+38x-30$ is divisible by (x-3) and x > 3?\n\n**Options:**\n- **A**. 28\n- **B**. 54\n- **C**. 42\n- **D**. 46 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe given cubic equation is $x^3-11x^2+38x-30$\nUsing the remainder theorem, we can find the remainder for this equation when it is divided by (x-3)\nf(x)=$x^3-11x^2+38x-30$\nf(3)= 27-99+114-30=12\nHence, dividing this equation by x-3 gives us the remainder of 12. \nThe cubic equation given can be written as, $\\left(x-3\\right)\\left(x^2-8x+14\\right)+12$\nHence, we need to find the values of x such that 12 is divisible by x-3. \n$\\dfrac{12}{x-3}$, this is possible for x=4, 5, 6, 7, 9, 15. (As x > 3)\nTheir sum equals 46.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-17",
       "passage_text": "",
-      "question_text": "Aniq Salon offers a ₹90 membership card valid for a year, providing a 10% discount on the MRP for the first three haircuts. For the fourth haircut, the user pays 80% of the previous payment, and for all subsequent haircuts, they pay 60% of the MRP. If each haircut costs the salon ₹117, what should the MRP be such that the saloon makes no profit or loss if they do nine haircuts in a year?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "164",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "158",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "175",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "150",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let the MRP for the haircut be 10x.\nFor the first 3 haircuts, the customer pays 90% of the MRP =  $\\dfrac{90}{100}\\left(10x\\right)\\ =\\ 9x$\nFor the 4th haircut, the customer pays 80% of the previous payment = $\\dfrac{80}{100}\\left(9x\\right)\\ =\\ 7.2x$\nFor the 5th to 9th haircut, the customer pays 60% of the MRP = $\\dfrac{60}{100}\\left(10x\\right)\\ =\\ 6x$\nSo, the total amount paid by the customer, including the membership money = 90 + 3 * 9x + 7.2x + 5 * 6x = 90 + 64.2x\nMoney spent by saloon = 117 * 9 = 1053\nBoth the above are given to be equal, so equating them, we get,\n90 + 64.2x = 1053\n64.2x = 963\nx = 15\nSo, the MRP for the haircut has to be 150 rupees.\nHence, the correct answer is option D.",
+      "question_text": "An inlet pipe can fill a tank in 24 minutes, while an outlet pipe can empty it in 60 minutes. Initially, only the inlet pipe is opened and runs for 16 minutes. After that, the inlet pipe is closed and the outlet pipe is opened until the tank is 50% full. Then, the inlet and outlet pipes are opened to fill the tank completely. What is the total time (in minutes) taken to fill the tank?",
+      "options": [],
+      "correct_option_data": "46",
+      "solution_text": "Let us assume the quantity of the container as 120 L. \nThus, the efficiency of the inlet pipe $=\\dfrac{120}{24}=5 L/min$ and the efficiency of outlet pipe $=\\dfrac{120}{60}=-2 L/min$\nNow, the inlet pipe is opened for $\\left(t_1\\right)=16\\ \\min$. This means it will fill $=5\\times\\ 16=80\\ L$\nNow, the inlet pipe is closed, and the outlet pipe is opened until the container is 50% filled. This means the outlet pipe has to empty 20 L.\nTime taken by outlet pipe to remove 20 L from the container$\\left(t_2\\right)$ = $=\\dfrac{20}{2}=10\\ \\min$\nNow, both the pipes are opened and the entire container is filled. Thus the amount to be filled in the container is 60 L.\nTime taken for this $\\left(t_3\\right)=\\dfrac{60}{5-2}=20\\ \\min$\nThus, the time taken in the entire process $t_1+t_2+t_3=16+10+20=46\\ \\min$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAniq Salon offers a ₹90 membership card valid for a year, providing a 10% discount on the MRP for the first three haircuts. For the fourth haircut, the user pays 80% of the previous payment, and for all subsequent haircuts, they pay 60% of the MRP. If each haircut costs the salon ₹117, what should the MRP be such that the saloon makes no profit or loss if they do nine haircuts in a year?\n\n**Options:**\n- **A**. 164\n- **B**. 158\n- **C**. 175\n- **D**. 150 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the MRP for the haircut be 10x.\nFor the first 3 haircuts, the customer pays 90% of the MRP =  $\\dfrac{90}{100}\\left(10x\\right)\\ =\\ 9x$\nFor the 4th haircut, the customer pays 80% of the previous payment = $\\dfrac{80}{100}\\left(9x\\right)\\ =\\ 7.2x$\nFor the 5th to 9th haircut, the customer pays 60% of the MRP = $\\dfrac{60}{100}\\left(10x\\right)\\ =\\ 6x$\nSo, the total amount paid by the customer, including the membership money = 90 + 3 * 9x + 7.2x + 5 * 6x = 90 + 64.2x\nMoney spent by saloon = 117 * 9 = 1053\nBoth the above are given to be equal, so equating them, we get,\n90 + 64.2x = 1053\n64.2x = 963\nx = 15\nSo, the MRP for the haircut has to be 150 rupees.\nHence, the correct answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn inlet pipe can fill a tank in 24 minutes, while an outlet pipe can empty it in 60 minutes. Initially, only the inlet pipe is opened and runs for 16 minutes. After that, the inlet pipe is closed and the outlet pipe is opened until the tank is 50% full. Then, the inlet and outlet pipes are opened to fill the tank completely. What is the total time (in minutes) taken to fill the tank?\n\n**Options:**\n\n**Correct Answer:** 46\n\n**Solution:**\nLet us assume the quantity of the container as 120 L. \nThus, the efficiency of the inlet pipe $=\\dfrac{120}{24}=5 L/min$ and the efficiency of outlet pipe $=\\dfrac{120}{60}=-2 L/min$\nNow, the inlet pipe is opened for $\\left(t_1\\right)=16\\ \\min$. This means it will fill $=5\\times\\ 16=80\\ L$\nNow, the inlet pipe is closed, and the outlet pipe is opened until the container is 50% filled. This means the outlet pipe has to empty 20 L.\nTime taken by outlet pipe to remove 20 L from the container$\\left(t_2\\right)$ = $=\\dfrac{20}{2}=10\\ \\min$\nNow, both the pipes are opened and the entire container is filled. Thus the amount to be filled in the container is 60 L.\nTime taken for this $\\left(t_3\\right)=\\dfrac{60}{5-2}=20\\ \\min$\nThus, the time taken in the entire process $t_1+t_2+t_3=16+10+20=46\\ \\min$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-18",
       "passage_text": "",
-      "question_text": "The roots of equation $x^2+bx+c=0$ are real and equal. The roots of equation $x^2+bx+c=9(x+2)$ are also real and one roots is common for both the equations. What is value of b+2c?",
+      "question_text": "Rakesh, Prem, and Madhav are cycling on a circular track. They all start from the same point and move in the same direction. When Rakesh completes one lap, Prem completes three laps. Additionally, when Prem completes one lap, Madhav completes four laps. How many times will all three friends meet at the starting point by the time Madhav completes 205 laps?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "11",
+          "option_text": "15",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "12",
-          "is_correct": true
+          "option_text": "16",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "14",
-          "is_correct": false
+          "option_text": "17",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "18",
+          "option_text": "14",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The roots of equation $x^2+bx+c=0$ will be $\\frac{\\left(-b\\pm\\sqrt{b^2-4ac}\\right)}{2a}$\nHere, a = 1 and $\\sqrt{b^2-4ac} = 0$(equal roots) $\\Rightarrow b^2 = 4c \\Rightarrow c = \\frac{b^2}{4}$\nSo, the roots of the equation will be$\\frac{-b}{2}$\nLet us re-write the given equation $x^2+bx+c=9(x+2) \\Rightarrow x^2+(b-9)x+c-18 = 0$ \nSum of roots = $\\frac{-b}{a}=-\\left(b-9\\right) = 9-b$\nWe know that one of the root is equal to $-\\frac{b}{2}$\nSo, the other root will be $9-b-(-\\frac{b}{2}) = 9 - \\frac{b}{2}$\nThe product of roots = $(-\\frac{b}{2})( 9 - \\frac{b}{2}) = c-18$\n$(-\\frac{b}{2})( 9 - \\frac{b}{2}) = \\frac{b^2}{4}-18$\n$-\\frac{9b}{2}+\\frac{b^2}{4}=\\frac{b^2}{4}-18$\n$\\frac{9b}{2}=18$\nb = 4 $\\Rightarrow$ c = 4\nb+2c= 12",
+      "solution_text": "Rakesh, Prem, and Madhav are cycling on a circular track. They all start from the same point and move in the same direction.\nIt is given that when Rakesh completes one lap, Prem completes three laps, and when Prem completes one lap, Madhav completes four laps.\nRakesh (1 Lap) ----------Prem (3 Laps)\nPrem (1 Lap) ---------Madhav (4 Laps)\nTherefore, when Rakesh completes 1 Lap, Prem completes 3 Laps, and Madhav will complete 12 laps.\nSo, they will meet for the first time at the starting point.\nSo, when Madhav completes 12 laps, they will meet for the first time.\nTherefore, when Madhav completes 205 laps, they will meet the number of times N,\nN = 205/12 = 17.08\nThey will meet 17 times, as we will only consider the integral part of the value, as the number has to be an integer.\nThus, 17 is the answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe roots of equation $x^2+bx+c=0$ are real and equal. The roots of equation $x^2+bx+c=9(x+2)$ are also real and one roots is common for both the equations. What is value of b+2c?\n\n**Options:**\n- **A**. 11\n- **B**. 12 ✅\n- **C**. 14\n- **D**. 18\n\n**Correct Answer:** null\n\n**Solution:**\nThe roots of equation $x^2+bx+c=0$ will be $\\frac{\\left(-b\\pm\\sqrt{b^2-4ac}\\right)}{2a}$\nHere, a = 1 and $\\sqrt{b^2-4ac} = 0$(equal roots) $\\Rightarrow b^2 = 4c \\Rightarrow c = \\frac{b^2}{4}$\nSo, the roots of the equation will be$\\frac{-b}{2}$\nLet us re-write the given equation $x^2+bx+c=9(x+2) \\Rightarrow x^2+(b-9)x+c-18 = 0$ \nSum of roots = $\\frac{-b}{a}=-\\left(b-9\\right) = 9-b$\nWe know that one of the root is equal to $-\\frac{b}{2}$\nSo, the other root will be $9-b-(-\\frac{b}{2}) = 9 - \\frac{b}{2}$\nThe product of roots = $(-\\frac{b}{2})( 9 - \\frac{b}{2}) = c-18$\n$(-\\frac{b}{2})( 9 - \\frac{b}{2}) = \\frac{b^2}{4}-18$\n$-\\frac{9b}{2}+\\frac{b^2}{4}=\\frac{b^2}{4}-18$\n$\\frac{9b}{2}=18$\nb = 4 $\\Rightarrow$ c = 4\nb+2c= 12",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRakesh, Prem, and Madhav are cycling on a circular track. They all start from the same point and move in the same direction. When Rakesh completes one lap, Prem completes three laps. Additionally, when Prem completes one lap, Madhav completes four laps. How many times will all three friends meet at the starting point by the time Madhav completes 205 laps?\n\n**Options:**\n- **A**. 15\n- **B**. 16\n- **C**. 17 ✅\n- **D**. 14\n\n**Correct Answer:** null\n\n**Solution:**\nRakesh, Prem, and Madhav are cycling on a circular track. They all start from the same point and move in the same direction.\nIt is given that when Rakesh completes one lap, Prem completes three laps, and when Prem completes one lap, Madhav completes four laps.\nRakesh (1 Lap) ----------Prem (3 Laps)\nPrem (1 Lap) ---------Madhav (4 Laps)\nTherefore, when Rakesh completes 1 Lap, Prem completes 3 Laps, and Madhav will complete 12 laps.\nSo, they will meet for the first time at the starting point.\nSo, when Madhav completes 12 laps, they will meet for the first time.\nTherefore, when Madhav completes 205 laps, they will meet the number of times N,\nN = 205/12 = 17.08\nThey will meet 17 times, as we will only consider the integral part of the value, as the number has to be an integer.\nThus, 17 is the answer.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-19",
       "passage_text": "",
-      "question_text": "Boat A takes 4 times longer than Boat B for a round trip between Amalfi and Venice on the Adriatic Sea. The speed of Boat A is half that of Boat B. Find the ratio of Boat B's speed to the speed of the sea current.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\sqrt{8}:1$",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$4:1$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$3:1$",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\sqrt{7}:1$",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let us set specific values for this question, \nD=One way distance between Amalfi and Venice\nX=Speed of Boat B, thereby making Speed of Boat A as X/2\nS=Speed of Adriatic Sea\nWe are told that Boat A takes 4 times longer than Boat B, and drawing up the equation for that we get, \n$\\frac{D}{\\frac{X}{2}-S}+\\frac{D}{\\frac{X}{2}+S}=4\\left[\\frac{D}{X+S}+\\frac{D}{X-S}\\right]$\n$\\frac{1}{\\frac{X}{2}-S}+\\frac{1}{\\frac{X}{2}+S}=4\\left[\\frac{1}{X+S}+\\frac{1}{X-S}\\right]$\n$\\frac{X}{\\frac{X^2}{4}-S^2}=4\\left[\\frac{2X}{X^2-S^2}\\right]$\n$\\frac{1}{\\frac{X^2}{4}-S^2}=\\left[\\frac{8}{X^2-S^2}\\right]$\n$\\frac{4}{X^2-4S^2}=\\left[\\frac{8}{X^2-S^2}\\right]$\n$\\frac{X^2-S^2}{X^2-4S^2}=2$\n$X^2-S^2=2X^2-8S^2$\n$7S^2=X^2$\n$\\sqrt{7}S=X$\n$\\frac{X}{S}=\\sqrt{7}$\nThe ratio of the Speed of Boat B to that of the sea current is $\\sqrt{7}:1$",
+      "question_text": "Find the number of ordered pairs of natural numbers (x,y) such that $\\dfrac{1}{x+2}+\\dfrac{1}{y+3}=\\dfrac{1}{4}$",
+      "options": [],
+      "correct_option_data": "5",
+      "solution_text": "Let m = x + 2 and n= y + 3\nThen m,n ∈ N  and the equation becomes:\n$\\dfrac{1}{m}+\\dfrac{1}{n}=\\dfrac{1}{4}$\nMultiply both sides by 4mn:\n4n + 4m = mn⇒ \nmn − 4m − 4n = 0\nAdd 16 to both sides:\nmn − 4m − 4n + 16 = 16 ⇒ (m−4)(n−4) = 16\nWe want the number of positive integer solutions to (m−4)(n−4) = 16\nThe product of two numbers, such as 16, is possible for the following pairs:\n(1,16), (2,8), (4,4), (8,2), (16,1)\nThis will give us the following solutions for m and n. \n(5, 20), (6,12), (8,8), (12,6), (20,5)\nWe can find the values of x and y by replacing the values of m and n. \nCase 1: When m = 5 and n = 20, x and y will be 3 and 17\nCase 2: When m = 6 and n = 12, x and y will be 4 and 9\nCase 3: When m = 8 and n = 8, x and y will be 6 and 5\nCase 4: When m = 12 and n = 6, x and y will be 10 and 3\nCase 5: When m = 20 and n = 5, x and y will be 18 and 2\nWe need to find the natural number solutions for x and y. \nAll the solutions are natural number solutions.\nAlternate Solution:\n$\\dfrac{1}{x+2}+\\dfrac{1}{y+3}=\\dfrac{1}{4}$ gives $\\dfrac{x+y+5}{xy+3x+2y+6}=\\dfrac{1}{4}$\nFurther, $4x+4y+20=xy+3x+2y+6$ gives $x+2y-xy+14=0$\nThis can be rewritten as $x+2y-xy-2=-16$ or $x(1-y)-2(1-y)=-16$ or $(x-2)(y-1)=16$ \nSince x and y are natural numbers, $x\\ge 1$ and $y\\ge 1$ gives $(x-2)\\ge -1$ and $(y-1)\\ge 0$\n$16$ as $(x-2)(y-1)$ can therefore be written as $(1)(16)$, $(2)(8)$, $(4)(4)$, $(8)(2)$, and $(16)(1)$, giving a total of $5$ solutions.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBoat A takes 4 times longer than Boat B for a round trip between Amalfi and Venice on the Adriatic Sea. The speed of Boat A is half that of Boat B. Find the ratio of Boat B's speed to the speed of the sea current.\n\n**Options:**\n- **A**. $\\sqrt{8}:1$\n- **B**. $4:1$\n- **C**. $3:1$\n- **D**. $\\sqrt{7}:1$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us set specific values for this question, \nD=One way distance between Amalfi and Venice\nX=Speed of Boat B, thereby making Speed of Boat A as X/2\nS=Speed of Adriatic Sea\nWe are told that Boat A takes 4 times longer than Boat B, and drawing up the equation for that we get, \n$\\frac{D}{\\frac{X}{2}-S}+\\frac{D}{\\frac{X}{2}+S}=4\\left[\\frac{D}{X+S}+\\frac{D}{X-S}\\right]$\n$\\frac{1}{\\frac{X}{2}-S}+\\frac{1}{\\frac{X}{2}+S}=4\\left[\\frac{1}{X+S}+\\frac{1}{X-S}\\right]$\n$\\frac{X}{\\frac{X^2}{4}-S^2}=4\\left[\\frac{2X}{X^2-S^2}\\right]$\n$\\frac{1}{\\frac{X^2}{4}-S^2}=\\left[\\frac{8}{X^2-S^2}\\right]$\n$\\frac{4}{X^2-4S^2}=\\left[\\frac{8}{X^2-S^2}\\right]$\n$\\frac{X^2-S^2}{X^2-4S^2}=2$\n$X^2-S^2=2X^2-8S^2$\n$7S^2=X^2$\n$\\sqrt{7}S=X$\n$\\frac{X}{S}=\\sqrt{7}$\nThe ratio of the Speed of Boat B to that of the sea current is $\\sqrt{7}:1$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of ordered pairs of natural numbers (x,y) such that $\\dfrac{1}{x+2}+\\dfrac{1}{y+3}=\\dfrac{1}{4}$\n\n**Options:**\n\n**Correct Answer:** 5\n\n**Solution:**\nLet m = x + 2 and n= y + 3\nThen m,n ∈ N  and the equation becomes:\n$\\dfrac{1}{m}+\\dfrac{1}{n}=\\dfrac{1}{4}$\nMultiply both sides by 4mn:\n4n + 4m = mn⇒ \nmn − 4m − 4n = 0\nAdd 16 to both sides:\nmn − 4m − 4n + 16 = 16 ⇒ (m−4)(n−4) = 16\nWe want the number of positive integer solutions to (m−4)(n−4) = 16\nThe product of two numbers, such as 16, is possible for the following pairs:\n(1,16), (2,8), (4,4), (8,2), (16,1)\nThis will give us the following solutions for m and n. \n(5, 20), (6,12), (8,8), (12,6), (20,5)\nWe can find the values of x and y by replacing the values of m and n. \nCase 1: When m = 5 and n = 20, x and y will be 3 and 17\nCase 2: When m = 6 and n = 12, x and y will be 4 and 9\nCase 3: When m = 8 and n = 8, x and y will be 6 and 5\nCase 4: When m = 12 and n = 6, x and y will be 10 and 3\nCase 5: When m = 20 and n = 5, x and y will be 18 and 2\nWe need to find the natural number solutions for x and y. \nAll the solutions are natural number solutions.\nAlternate Solution:\n$\\dfrac{1}{x+2}+\\dfrac{1}{y+3}=\\dfrac{1}{4}$ gives $\\dfrac{x+y+5}{xy+3x+2y+6}=\\dfrac{1}{4}$\nFurther, $4x+4y+20=xy+3x+2y+6$ gives $x+2y-xy+14=0$\nThis can be rewritten as $x+2y-xy-2=-16$ or $x(1-y)-2(1-y)=-16$ or $(x-2)(y-1)=16$ \nSince x and y are natural numbers, $x\\ge 1$ and $y\\ge 1$ gives $(x-2)\\ge -1$ and $(y-1)\\ge 0$\n$16$ as $(x-2)(y-1)$ can therefore be written as $(1)(16)$, $(2)(8)$, $(4)(4)$, $(8)(2)$, and $(16)(1)$, giving a total of $5$ solutions.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-20",
       "passage_text": "",
-      "question_text": "It is given that the perimeter of a triangle is 57 cm. Then, the number of triangles with integral sides possible is equal to N. What can be said about N?",
+      "question_text": "A right-angled triangle ABC is right-angled at C. The midpoint of AB is X, and the perpendicular bisector of AB intersects AC at Y, where Y is not the same as C. If the ratio of the area of the quadrilateral BXYC to the area of the triangle ABC is 13:18 and BC = 12cm, then what is the length of AC?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "N > 76",
+          "option_text": "25cm",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "N is a prime number",
+          "option_text": "32cm",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "N is a multiple of 6",
+          "option_text": "27cm",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "N has six factors.",
+          "option_text": "36cm",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We know that the perimeter of the triangle is 57 cm.\nThe number of triangles with integral sides possible with perimeter \n'x', if x is odd = $\\left\\{\\dfrac{\\left(x+3^2\\right)}{48}\\right\\}\\ $\nThe number of triangles with integral sides possible with perimeter \n'x', if x is even = $\\left\\{\\dfrac{\\left(x^2\\right)}{48}\\right\\}\\ $\n{n}->represents the integer nearest to 'n'\nThe number of triangles with integral sides possible with perimeter 57 = $\\left\\{\\dfrac{(57+3)^2}{48}\\right\\}=75$.\nThus, N = 75\nA) False\nB) N is not a prime\nC) N is not a multiple of 6.\nD) N has six factors - true\n75 has factors 1,3,5,15,25,75 (Six factors).",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIt is given that the perimeter of a triangle is 57 cm. Then, the number of triangles with integral sides possible is equal to N. What can be said about N?\n\n**Options:**\n- **A**. N > 76\n- **B**. N is a prime number\n- **C**. N is a multiple of 6\n- **D**. N has six factors. ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the perimeter of the triangle is 57 cm.\nThe number of triangles with integral sides possible with perimeter \n'x', if x is odd = $\\left\\{\\dfrac{\\left(x+3^2\\right)}{48}\\right\\}\\ $\nThe number of triangles with integral sides possible with perimeter \n'x', if x is even = $\\left\\{\\dfrac{\\left(x^2\\right)}{48}\\right\\}\\ $\n{n}->represents the integer nearest to 'n'\nThe number of triangles with integral sides possible with perimeter 57 = $\\left\\{\\dfrac{(57+3)^2}{48}\\right\\}=75$.\nThus, N = 75\nA) False\nB) N is not a prime\nC) N is not a multiple of 6.\nD) N has six factors - true\n75 has factors 1,3,5,15,25,75 (Six factors).",
+      "solution_text": "The information given in the question can be represented in a diagram as,\nThe triangles AXY and BXY are congruent to each other by the SAS congruency. So, the area of triangles AXY and BXY are equal. Let the area be x and let the area of the triangle BCY be y.\nWe are given,\n$\\dfrac{Area\\ of\\ BXYC}{Area\\ of\\ ABC}\\ =\\ \\dfrac{13}{18}$\n$\\dfrac{x\\ +\\ y}{y\\ +\\ 2x}\\ =\\ \\dfrac{13}{18}$\n18x + 18y = 13y + 26x\n8x = 5y\n$\\dfrac{y}{x}\\ =\\ \\dfrac{8}{5}$\n$\\dfrac{Area\\ of\\ BCY}{Area\\ of\\ BYA}\\ =\\ \\dfrac{\\frac{1}{2}\\times\\ 12\\times\\ CY}{\\frac{1}{2}\\times\\ 12\\times\\ AY}\\ =\\ \\dfrac{CY}{AY}\\ =\\ \\dfrac{y}{2x}\\ =\\ \\dfrac{4}{5}$\nLet CY be 4t, and AY be 5t.\nWe know that AY and BY are equal as the triangles AYX and BYX are congruent.\nNow, in the triangle CBY, by applying Pythagoras theorem, we get,\n$BC^2\\ +\\ CY^2\\ =\\ BY^2$\n$12^2\\ +\\ \\left(4t\\right)^2\\ =\\ \\left(5t\\right)^2$\n$9t^2\\ =\\ 144$\n$t\\ =\\ 4$\nAC= AY + CY = 5t + 4t = 9t = 9 * 4 = 36cm.\nHence, the correct answer is option D.",
+      "image_url": "https://cracku.in/media/uploads/image_Bm4X4cM.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA right-angled triangle ABC is right-angled at C. The midpoint of AB is X, and the perpendicular bisector of AB intersects AC at Y, where Y is not the same as C. If the ratio of the area of the quadrilateral BXYC to the area of the triangle ABC is 13:18 and BC = 12cm, then what is the length of AC?\n\n**Options:**\n- **A**. 25cm\n- **B**. 32cm\n- **C**. 27cm\n- **D**. 36cm ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe information given in the question can be represented in a diagram as,\nThe triangles AXY and BXY are congruent to each other by the SAS congruency. So, the area of triangles AXY and BXY are equal. Let the area be x and let the area of the triangle BCY be y.\nWe are given,\n$\\dfrac{Area\\ of\\ BXYC}{Area\\ of\\ ABC}\\ =\\ \\dfrac{13}{18}$\n$\\dfrac{x\\ +\\ y}{y\\ +\\ 2x}\\ =\\ \\dfrac{13}{18}$\n18x + 18y = 13y + 26x\n8x = 5y\n$\\dfrac{y}{x}\\ =\\ \\dfrac{8}{5}$\n$\\dfrac{Area\\ of\\ BCY}{Area\\ of\\ BYA}\\ =\\ \\dfrac{\\frac{1}{2}\\times\\ 12\\times\\ CY}{\\frac{1}{2}\\times\\ 12\\times\\ AY}\\ =\\ \\dfrac{CY}{AY}\\ =\\ \\dfrac{y}{2x}\\ =\\ \\dfrac{4}{5}$\nLet CY be 4t, and AY be 5t.\nWe know that AY and BY are equal as the triangles AYX and BYX are congruent.\nNow, in the triangle CBY, by applying Pythagoras theorem, we get,\n$BC^2\\ +\\ CY^2\\ =\\ BY^2$\n$12^2\\ +\\ \\left(4t\\right)^2\\ =\\ \\left(5t\\right)^2$\n$9t^2\\ =\\ 144$\n$t\\ =\\ 4$\nAC= AY + CY = 5t + 4t = 9t = 9 * 4 = 36cm.\nHence, the correct answer is option D.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-21",
       "passage_text": "",
-      "question_text": "A shopkeeper with ten bats can break even by selling five bats at a 20% discount on the marked price. What should be the discount percentage if he aims to make an overall 80% profit after selling all ten bats?",
+      "question_text": "The sum of the first three terms of an increasing arithmetic progression with natural number common difference equals 72. If the sum of the first 30 terms lies between 5700 and 6300. Find the 12th term of the same series.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "25%",
+          "option_text": "150",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "28%",
+          "option_text": "154",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "24%",
+          "option_text": "156",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "32%",
+          "option_text": "152",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We are told that the shopkeeper has 10 bats and breaks even after selling five at a 20% discount. \nLet us assume the cost price for each bat is C, and the marked price is M.\nDrawing up the equation for the statement given to us, we get, \n$10C=0.8\\left(5M\\right)$\n$10C=4M$\n$M=2.5C$ \nWe are asked what discount percentage should be applied so that he makes an 80% profit. \nFor the shopkeeper to make an 80% profit, his total selling price for all ten bats put together should be, \n$\\left(1+\\frac{80}{100}\\right)\\left(10C\\right)=18C$\nLet us assume the discount percentage to be Z. \nDrawing up the equation for the required statement, we have, \n$\\left(1-\\frac{Z}{100}\\right)\\left(10M\\right)=18C$\nThis can be written as, \n$\\left(1-\\frac{Z}{100}\\right)\\left(25C\\right)=18C$\n$\\left(1-\\frac{Z}{100}\\right)=\\frac{18}{25}$\n$\\frac{Z}{100}=\\frac{7}{25}$\nWe get Z=28%\nHence, the discount percentage in question will be 28%.",
+      "solution_text": "We are told that the sum of the first three terms is 72. \na+(a+d)+(a+2d)=3a+3d=72\na+d=24\nWe are then told that the sum of the first 30 terms lies between a range, \nSum will be, $\\frac{30}{2}\\left(2a+29d\\right)$\n$15\\left(2a+2d+27d\\right)$\n$15\\left(48+27d\\right)$\nThis lies between, \n$5700<15\\left(48+27d\\right)<6300$\n$380<48+27d<420$\n$332<27d<372$\n$12.29<d<13.77$\nHence d will have to be 13. \n12th term will be a+11d, which is 24+10d, which is 24+130=154.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper with ten bats can break even by selling five bats at a 20% discount on the marked price. What should be the discount percentage if he aims to make an overall 80% profit after selling all ten bats?\n\n**Options:**\n- **A**. 25%\n- **B**. 28% ✅\n- **C**. 24%\n- **D**. 32%\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that the shopkeeper has 10 bats and breaks even after selling five at a 20% discount. \nLet us assume the cost price for each bat is C, and the marked price is M.\nDrawing up the equation for the statement given to us, we get, \n$10C=0.8\\left(5M\\right)$\n$10C=4M$\n$M=2.5C$ \nWe are asked what discount percentage should be applied so that he makes an 80% profit. \nFor the shopkeeper to make an 80% profit, his total selling price for all ten bats put together should be, \n$\\left(1+\\frac{80}{100}\\right)\\left(10C\\right)=18C$\nLet us assume the discount percentage to be Z. \nDrawing up the equation for the required statement, we have, \n$\\left(1-\\frac{Z}{100}\\right)\\left(10M\\right)=18C$\nThis can be written as, \n$\\left(1-\\frac{Z}{100}\\right)\\left(25C\\right)=18C$\n$\\left(1-\\frac{Z}{100}\\right)=\\frac{18}{25}$\n$\\frac{Z}{100}=\\frac{7}{25}$\nWe get Z=28%\nHence, the discount percentage in question will be 28%.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of the first three terms of an increasing arithmetic progression with natural number common difference equals 72. If the sum of the first 30 terms lies between 5700 and 6300. Find the 12th term of the same series.\n\n**Options:**\n- **A**. 150\n- **B**. 154 ✅\n- **C**. 156\n- **D**. 152\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that the sum of the first three terms is 72. \na+(a+d)+(a+2d)=3a+3d=72\na+d=24\nWe are then told that the sum of the first 30 terms lies between a range, \nSum will be, $\\frac{30}{2}\\left(2a+29d\\right)$\n$15\\left(2a+2d+27d\\right)$\n$15\\left(48+27d\\right)$\nThis lies between, \n$5700<15\\left(48+27d\\right)<6300$\n$380<48+27d<420$\n$332<27d<372$\n$12.29<d<13.77$\nHence d will have to be 13. \n12th term will be a+11d, which is 24+10d, which is 24+130=154.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-9-22",
       "passage_text": "",
-      "question_text": "An isosceles triangle has side lengths in the ratio 3:3:4. What is the ratio of its circumradius to its inradius?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "5:3",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "7:4",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "9:4",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "8:3",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "",
+      "question_text": "A regular polygon with K sides has 170 diagonals. Another regular polygon(Alpha) has an exterior angle which is equal to K degrees. What is the value of the number of diagonals of the polygon (Alpha)?",
+      "options": [],
+      "correct_option_data": "135",
+      "solution_text": "We know that the exterior angle of a regular polygon with n number of sides = $\\ \\dfrac{\\ 360}{n}$\nThe number of diagonals of a regular polygon with n sides = $\\ \\ \\dfrac{\\ n\\left(n-3\\right)}{2}$\nIt is given that a regular polygon with K sides has 170 diagonals.\nThus, \n$\\ \\ \\dfrac{\\ K\\left(K-3\\right)}{2}$ = 170\n$K^2-3K=340$\n$K^2-3K-340\\ =0$\nWe can see that 340 can be split into 20*17 = 340\nThus, $K^2-20K+17K-340\\ =0$\n$N\\left(K-20\\right)+17\\left(K-20\\right)\\ =0$\n=> $\\left(K-20\\right)\\left(K+17\\right)\\ =0$\nK = 20 or -17\nK cannot be -17\nHence, K = 20\nAnother regular polygon(Alpha) with $K^{\\circ\\ }$ exterior angle was drawn.\nThus, exterior angle of Alpha is 20 degree.\nTherefore, number of sides will be ?\nThe exterior angle of a regular polygon with n number of sides = $\\ \\dfrac{\\ 360}{n}$\n360/20 = 18 \nTherefore, number of sides = 18\nTherefore, the value of the number of diagonal of the polygon (Alpha) = \nThe number of diagonals of a regular polygon with n sides = $\\ \\ \\dfrac{\\ n\\left(n-3\\right)}{2}$ \n=> 18*15/2 = 135",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn isosceles triangle has side lengths in the ratio 3:3:4. What is the ratio of its circumradius to its inradius?\n\n**Options:**\n- **A**. 5:3\n- **B**. 7:4\n- **C**. 9:4 ✅\n- **D**. 8:3\n\n**Correct Answer:** null",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA regular polygon with K sides has 170 diagonals. Another regular polygon(Alpha) has an exterior angle which is equal to K degrees. What is the value of the number of diagonals of the polygon (Alpha)?\n\n**Options:**\n\n**Correct Answer:** 135\n\n**Solution:**\nWe know that the exterior angle of a regular polygon with n number of sides = $\\ \\dfrac{\\ 360}{n}$\nThe number of diagonals of a regular polygon with n sides = $\\ \\ \\dfrac{\\ n\\left(n-3\\right)}{2}$\nIt is given that a regular polygon with K sides has 170 diagonals.\nThus, \n$\\ \\ \\dfrac{\\ K\\left(K-3\\right)}{2}$ = 170\n$K^2-3K=340$\n$K^2-3K-340\\ =0$\nWe can see that 340 can be split into 20*17 = 340\nThus, $K^2-20K+17K-340\\ =0$\n$N\\left(K-20\\right)+17\\left(K-20\\right)\\ =0$\n=> $\\left(K-20\\right)\\left(K+17\\right)\\ =0$\nK = 20 or -17\nK cannot be -17\nHence, K = 20\nAnother regular polygon(Alpha) with $K^{\\circ\\ }$ exterior angle was drawn.\nThus, exterior angle of Alpha is 20 degree.\nTherefore, number of sides will be ?\nThe exterior angle of a regular polygon with n number of sides = $\\ \\dfrac{\\ 360}{n}$\n360/20 = 18 \nTherefore, number of sides = 18\nTherefore, the value of the number of diagonal of the polygon (Alpha) = \nThe number of diagonals of a regular polygon with n sides = $\\ \\ \\dfrac{\\ n\\left(n-3\\right)}{2}$ \n=> 18*15/2 = 135",
       "type": "quants"
     }
   ]

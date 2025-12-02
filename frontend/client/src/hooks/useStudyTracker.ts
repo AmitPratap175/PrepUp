@@ -4,7 +4,8 @@ import { useAuth } from '@/contexts/auth-context';
 const HEARTBEAT_INTERVAL = 15000; // 15 seconds
 
 export function useStudyTracker() {
-  const { token } = useAuth();
+  const { isAuthenticated } = useAuth();
+  const token = localStorage.getItem('token');
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const sendHeartbeat = async () => {

@@ -3,643 +3,643 @@
     {
       "qid": "quant-sectionals-1-1",
       "passage_text": "",
-      "question_text": "According to the passage, all of the following are effects of UV light on the immune system EXCEPT:",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "suppressing immune surveillance of skin cells to prevent cancer detection.",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "calming an overactive immune response in autoimmune diseases.",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "triggering molecular signals that reduce systemic inflammation.",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "enhancing immune responses to external stressors like microbes and sunlight.",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Here, Option D is the correct answer. The passage does not say that UV light enhances the immune response. In fact, it says the opposite - that UV light suppresses the immune system: [\"UV radiation was indeed a double whammy ... it also suppressed the immune system’s surveillance of the skin.\"]\nOption A: The passage explains that UV light suppresses the immune system’s ability to detect and kill developing skin cancers.\nOption B: The author also explains that more recent medical studies suggest UV light can calm an overactive immune system in autoimmune conditions. For example, sunlight was found to reduce the painful skin inflammation in psoriasis.\nOption C: The passage mentions that UV exposure triggers a cascade of molecular signals from the skin that affects the entire body, potentially reducing inflammation - [\"They are tracking the way molecules in the skin respond to a shot of photons by triggering a cascade of signals that reach every organ in the body.\"]",
+      "question_text": "If $10^{\\displaystyle\\log_{10}\\left(3-10^{2\\log_{10} x}\\right)\\ }=\\log_2\\left(9-2^{x^2}\\right)$. Find the number of values that $x$ can take.",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "$10^{\\displaystyle\\log_{10}\\left(3-10^{2\\log_{10} x}\\right)\\ }=\\log_2\\left(9-2^{x^2}\\right)$\n   $3-10^{\\displaystyle\\log x^2}=\\log_2\\left(9-2^{x^2}\\right)$\n     $3-x^2\\ =\\ \\log_2\\left(9-2^{x^2}\\right)$\n      $2^{\\displaystyle 3-x^2}=\\ 9-2^{\\displaystyle x^2}$\n   $\\dfrac{\\ 8}{2^{\\displaystyle x^2}}=9-2^{\\displaystyle x^2}$\nNow, let $2^{x^2}=\\ y$\nSo,  $\\dfrac{\\ 8}{y}=\\ 9-y$ \n      $y^2-9y+8=0$\n      $(y-1)(y-8)=0$\n      So, $2^{x^2}=\\ 1\\ \\ \\&\\ \\ 2^{x^2}=\\ 8$\nHence, we are getting : $x^2\\ =\\ 0\\ \\ \\&\\ \\ x^2=3\\ $\nAs, it is a logarithmic function : $x^2\\ne\\ 0\\ $ .\nLet's verify now $x^2=3$ : \n$\\log\\left(3-10^{\\displaystyle\\log x^2}\\right)\\ =\\ \\log\\left(3-x^2\\right)$\nThis implies, $x^2\\ne\\ 3\\ $\nTherefore, there is no solution for \"x\" . Hence, no of values is 0.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAccording to the passage, all of the following are effects of UV light on the immune system EXCEPT:\n\n**Options:**\n- **A**. suppressing immune surveillance of skin cells to prevent cancer detection.\n- **B**. calming an overactive immune response in autoimmune diseases.\n- **C**. triggering molecular signals that reduce systemic inflammation.\n- **D**. enhancing immune responses to external stressors like microbes and sunlight. ✅\n\n**Correct Answer:** null\n\n**Solution:**\nHere, Option D is the correct answer. The passage does not say that UV light enhances the immune response. In fact, it says the opposite - that UV light suppresses the immune system: [\"UV radiation was indeed a double whammy ... it also suppressed the immune system’s surveillance of the skin.\"]\nOption A: The passage explains that UV light suppresses the immune system’s ability to detect and kill developing skin cancers.\nOption B: The author also explains that more recent medical studies suggest UV light can calm an overactive immune system in autoimmune conditions. For example, sunlight was found to reduce the painful skin inflammation in psoriasis.\nOption C: The passage mentions that UV exposure triggers a cascade of molecular signals from the skin that affects the entire body, potentially reducing inflammation - [\"They are tracking the way molecules in the skin respond to a shot of photons by triggering a cascade of signals that reach every organ in the body.\"]",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $10^{\\displaystyle\\log_{10}\\left(3-10^{2\\log_{10} x}\\right)\\ }=\\log_2\\left(9-2^{x^2}\\right)$. Find the number of values that $x$ can take.\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\n$10^{\\displaystyle\\log_{10}\\left(3-10^{2\\log_{10} x}\\right)\\ }=\\log_2\\left(9-2^{x^2}\\right)$\n   $3-10^{\\displaystyle\\log x^2}=\\log_2\\left(9-2^{x^2}\\right)$\n     $3-x^2\\ =\\ \\log_2\\left(9-2^{x^2}\\right)$\n      $2^{\\displaystyle 3-x^2}=\\ 9-2^{\\displaystyle x^2}$\n   $\\dfrac{\\ 8}{2^{\\displaystyle x^2}}=9-2^{\\displaystyle x^2}$\nNow, let $2^{x^2}=\\ y$\nSo,  $\\dfrac{\\ 8}{y}=\\ 9-y$ \n      $y^2-9y+8=0$\n      $(y-1)(y-8)=0$\n      So, $2^{x^2}=\\ 1\\ \\ \\&\\ \\ 2^{x^2}=\\ 8$\nHence, we are getting : $x^2\\ =\\ 0\\ \\ \\&\\ \\ x^2=3\\ $\nAs, it is a logarithmic function : $x^2\\ne\\ 0\\ $ .\nLet's verify now $x^2=3$ : \n$\\log\\left(3-10^{\\displaystyle\\log x^2}\\right)\\ =\\ \\log\\left(3-x^2\\right)$\nThis implies, $x^2\\ne\\ 3\\ $\nTherefore, there is no solution for \"x\" . Hence, no of values is 0.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-2",
       "passage_text": "",
-      "question_text": "Find the absolute difference of values of $x$ that satisfy the equation \n\n$\\log_2\\left(x^2-5x+8\\right)+\\log_2\\left(x^2-5x+5\\right)=2\\log_2\\left(x^2-5x+6\\right)$",
-      "options": [],
-      "correct_option_data": "3",
-      "solution_text": "In the given equation $\\log_2\\left(x^2-5x+8\\right)+\\log_2\\left(x^2-5x+5\\right)=2\\log_2\\left(x^2-5x+6\\right)$\nWe see that the term $x^2-5x$ is present in all log terms\nAssume $y=x^2-5x$ . . .(1)\nSo, the equation becomes\n$\\log_2\\left(y+8\\right)+\\log_2\\left(y+5\\right)=2\\log_2\\left(y+6\\right)$\n$\\log_2\\left(y+8\\right)\\left(y+5\\right)=\\log_2\\left(y+6\\right)^2$\n$\\left(y+8\\right)\\left(y+5\\right)=\\left(y+6\\right)^2$\n$y^2+13y+40=y^2+12y+36$\n$y=-4$\nPut it in eqn (1) we get\n$-4=x^2-5x$\n$x^2-5x+4=0$\nRoots of the equation are $x=1, 4$\nSo, the absolute difference is 4-1 = 3",
+      "question_text": "A fruit seller bought 30 fruits in total (apples and mangoes) at the same cost per fruit. Due to spoilage, he was able to sell only 50% of the apples at a 20% profit and only ${\\dfrac{2}{3}}^{^\\text{rd}}$ of the mangoes at a 30% profit. His total sales amounted to ₹2120, and overall, he incurred a loss of ₹880. Find the revenue he got by selling apples.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "₹ 960",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "₹ 1080",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "₹ 1200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "₹ 1260",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of apples be $a$, of the total 30 fruits. The number of mangoes will be $(30-a)$.\nLet the cost price of each fruit be $X$. \nSo, the total cost to the seller = $30X$\nIt is also given that he had incurred a total loss of ₹880:  $30(X)- \\text{ loss amount }= \\text{ Revenue}$\nWhere the revenue is given as ₹2120. \n                                  \nSo,  $30(X)-880=2120$  or  $X=\\dfrac{2120+880}{30}$\nWe get $X=₹100$, which will be the cost price of each fruit. \nGiven that 50% apples are sold at 20% profit & $\\dfrac{2}{3}$rd mangoes are sold at 30% profit: \n$\\left(1.2\\times \\dfrac{a}{2}\\times X\\right) + \\left(1.3\\times \\dfrac{2(30-a)}{3}\\times X \\right)=2120$\nPutting $X=100$, we get\n$\\left(\\dfrac{a}{2}\\times 120\\right)+\\left( \\dfrac{(60-2a)}{3}\\times 130\\right)=2120$\n$60a+2600 - \\dfrac{260a}{3}=2120$\n$\\dfrac{80a}{3} = 480$  or  $a=18$\nTherefore, the revenue he got by selling apples = $\\dfrac{18}{2}\\times 120=1080$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the absolute difference of values of $x$ that satisfy the equation \n\n$\\log_2\\left(x^2-5x+8\\right)+\\log_2\\left(x^2-5x+5\\right)=2\\log_2\\left(x^2-5x+6\\right)$\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\nIn the given equation $\\log_2\\left(x^2-5x+8\\right)+\\log_2\\left(x^2-5x+5\\right)=2\\log_2\\left(x^2-5x+6\\right)$\nWe see that the term $x^2-5x$ is present in all log terms\nAssume $y=x^2-5x$ . . .(1)\nSo, the equation becomes\n$\\log_2\\left(y+8\\right)+\\log_2\\left(y+5\\right)=2\\log_2\\left(y+6\\right)$\n$\\log_2\\left(y+8\\right)\\left(y+5\\right)=\\log_2\\left(y+6\\right)^2$\n$\\left(y+8\\right)\\left(y+5\\right)=\\left(y+6\\right)^2$\n$y^2+13y+40=y^2+12y+36$\n$y=-4$\nPut it in eqn (1) we get\n$-4=x^2-5x$\n$x^2-5x+4=0$\nRoots of the equation are $x=1, 4$\nSo, the absolute difference is 4-1 = 3",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA fruit seller bought 30 fruits in total (apples and mangoes) at the same cost per fruit. Due to spoilage, he was able to sell only 50% of the apples at a 20% profit and only ${\\dfrac{2}{3}}^{^\\text{rd}}$ of the mangoes at a 30% profit. His total sales amounted to ₹2120, and overall, he incurred a loss of ₹880. Find the revenue he got by selling apples.\n\n**Options:**\n- **A**. ₹ 960\n- **B**. ₹ 1080 ✅\n- **C**. ₹ 1200\n- **D**. ₹ 1260\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of apples be $a$, of the total 30 fruits. The number of mangoes will be $(30-a)$.\nLet the cost price of each fruit be $X$. \nSo, the total cost to the seller = $30X$\nIt is also given that he had incurred a total loss of ₹880:  $30(X)- \\text{ loss amount }= \\text{ Revenue}$\nWhere the revenue is given as ₹2120. \n                                  \nSo,  $30(X)-880=2120$  or  $X=\\dfrac{2120+880}{30}$\nWe get $X=₹100$, which will be the cost price of each fruit. \nGiven that 50% apples are sold at 20% profit & $\\dfrac{2}{3}$rd mangoes are sold at 30% profit: \n$\\left(1.2\\times \\dfrac{a}{2}\\times X\\right) + \\left(1.3\\times \\dfrac{2(30-a)}{3}\\times X \\right)=2120$\nPutting $X=100$, we get\n$\\left(\\dfrac{a}{2}\\times 120\\right)+\\left( \\dfrac{(60-2a)}{3}\\times 130\\right)=2120$\n$60a+2600 - \\dfrac{260a}{3}=2120$\n$\\dfrac{80a}{3} = 480$  or  $a=18$\nTherefore, the revenue he got by selling apples = $\\dfrac{18}{2}\\times 120=1080$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-3",
       "passage_text": "",
-      "question_text": "Four quarter circles of radius 1 cm are fitted inside a square of side 4 cm, such that the centre of each quarter circle is at the square's vertices. Find the area of the shaded region.",
+      "question_text": "Find the area (in units square) of the region bounded by $∣x∣+∣x\\ −\\ y∣\\le8$.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$10-\\pi\\ cm^2$",
-          "is_correct": true
+          "option_text": "120",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$12-\\pi\\ cm^2$",
+          "option_text": "124",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$14-\\pi\\ cm^2$",
+          "option_text": "126",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$16-\\pi\\ cm^2$",
-          "is_correct": false
+          "option_text": "128",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "AG = AE = 1cm and EF = GH = 2cm. Thus, AF = AH = 3cm. So applying pythogoras in triangle AFH -\n$FH=\\sqrt{3^2+3^2}=3\\sqrt{2}$ cm.\nAlso, $GE=\\sqrt{1^2+1^2}=\\sqrt{2}$ cm. Thus, MN = $\\sqrt{2}$ cm.\nAlso, triangle NEF and triangle MGH are similar and EF:GH = 1:1 => NF:MH = 1:1 => NF = MH = $\\sqrt{2}$ cm, since FH = $3\\sqrt{2}$ cm and MN = $\\sqrt{2}$ cm.\nNow, $\\angle FNE=90^{\\circ}$, therefore applying pythogoras theorem => $4^2=\\sqrt{2+NE^2}$ => NE = $\\sqrt{2}$ cm\nSo now we will find the area of segment AEG, and then subtract it from the area of rectangle EGMN. \n=> Area of minor segment AEG = Area of quarter circle AEG - Area of triangle AEG\n=> Area of minor segment AEG = $\\dfrac{1}{4}\\times\\pi\\left(1\\right)^2-\\dfrac{1}{2}\\times1\\times1=\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)\\ cm^2$\nLet the grey colour shaded region NEGM be Region 1. Now, we will find the area of region 1. At the end, we will multiply it by 4 since all the shaded regions are the same.\n=> Area of the region 1 = Area of rectangle EGMN - Area of segment AEG\n=> Area of the region 1 = $\\sqrt{2}\\times\\ \\sqrt{2}-\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)=2-\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)=\\dfrac{10-\\pi}{4}\\ cm^2$\nNow, Area of the total shaded region = 4 * Area of the region 1\n=> Area of the total shaded region = $4\\times \\dfrac{10-\\pi}{4}\\ cm^2$\n=> Area of the total shaded region = $10-\\pi\\ cm^2$",
-      "image_url": "https://cracku.in/media/uploads/image_Y2FjGRw.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour quarter circles of radius 1 cm are fitted inside a square of side 4 cm, such that the centre of each quarter circle is at the square's vertices. Find the area of the shaded region.\n\n**Options:**\n- **A**. $10-\\pi\\ cm^2$ ✅\n- **B**. $12-\\pi\\ cm^2$\n- **C**. $14-\\pi\\ cm^2$\n- **D**. $16-\\pi\\ cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nAG = AE = 1cm and EF = GH = 2cm. Thus, AF = AH = 3cm. So applying pythogoras in triangle AFH -\n$FH=\\sqrt{3^2+3^2}=3\\sqrt{2}$ cm.\nAlso, $GE=\\sqrt{1^2+1^2}=\\sqrt{2}$ cm. Thus, MN = $\\sqrt{2}$ cm.\nAlso, triangle NEF and triangle MGH are similar and EF:GH = 1:1 => NF:MH = 1:1 => NF = MH = $\\sqrt{2}$ cm, since FH = $3\\sqrt{2}$ cm and MN = $\\sqrt{2}$ cm.\nNow, $\\angle FNE=90^{\\circ}$, therefore applying pythogoras theorem => $4^2=\\sqrt{2+NE^2}$ => NE = $\\sqrt{2}$ cm\nSo now we will find the area of segment AEG, and then subtract it from the area of rectangle EGMN. \n=> Area of minor segment AEG = Area of quarter circle AEG - Area of triangle AEG\n=> Area of minor segment AEG = $\\dfrac{1}{4}\\times\\pi\\left(1\\right)^2-\\dfrac{1}{2}\\times1\\times1=\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)\\ cm^2$\nLet the grey colour shaded region NEGM be Region 1. Now, we will find the area of region 1. At the end, we will multiply it by 4 since all the shaded regions are the same.\n=> Area of the region 1 = Area of rectangle EGMN - Area of segment AEG\n=> Area of the region 1 = $\\sqrt{2}\\times\\ \\sqrt{2}-\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)=2-\\left(\\dfrac{\\pi}{4}-\\dfrac{1}{2}\\right)=\\dfrac{10-\\pi}{4}\\ cm^2$\nNow, Area of the total shaded region = 4 * Area of the region 1\n=> Area of the total shaded region = $4\\times \\dfrac{10-\\pi}{4}\\ cm^2$\n=> Area of the total shaded region = $10-\\pi\\ cm^2$",
+      "solution_text": "First, we have to find the boundary points. So, we will assume the equation is equal to 8 to make calculations simpler.\nCase 1: $x\\ge0$ and  $x-y\\ge0$\nIn this case, the equation becomes: $x+(x−y)=8$\n$2x−y=8$ or $y=2x-8$\nCase 2: $x\\ge0$ and $x−y<0$\nIn this case, the equation becomes: x-(x−y)=8\n$y=8$ and $x=0$\nCase 3: $x<0$ and $x−y\\ge0$\nIn this case, the equation becomes:−x+(x−y)=8\n$y=−8$ and $x=0$\nCase 4: $x<0$ & $x−y<0$\nIn this case, the equation becomes: $−x−(x−y)=8$\n$-2x+y=8$ or $y=2x+8$\nNow, let's find the intersection points:\n1. $y=8$ intersects $y=2x-8$ at: $8=2x-8$\n$x=8$ and $y=8$\n2. $y=8$ intersects $y=2x+8$: $8=2x+8$\n$x=0$ and $y=8$\n3.$y=-8$ intersects $y=2x-8$:$-8=2x-8$\n$x=0$ and $y=-8$\n4. $y=-8$ intersects $y=2x+8:-8=2x+8$\n$x=-8$ and $y=-8$\nHence, we get the coordinates as (8,8), (0,8), (0,-8) and (-8,-8), and the figure will be of the shape of a parallelogram. \nWe need to find the area of the parallelogram. The base of the parallelogram will be of 8 units and the height will be 16 units.\nArea of the parallelogram = Base*Height = 8*16 = 128 units square.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the area (in units square) of the region bounded by $∣x∣+∣x\\ −\\ y∣\\le8$.\n\n**Options:**\n- **A**. 120\n- **B**. 124\n- **C**. 126\n- **D**. 128 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nFirst, we have to find the boundary points. So, we will assume the equation is equal to 8 to make calculations simpler.\nCase 1: $x\\ge0$ and  $x-y\\ge0$\nIn this case, the equation becomes: $x+(x−y)=8$\n$2x−y=8$ or $y=2x-8$\nCase 2: $x\\ge0$ and $x−y<0$\nIn this case, the equation becomes: x-(x−y)=8\n$y=8$ and $x=0$\nCase 3: $x<0$ and $x−y\\ge0$\nIn this case, the equation becomes:−x+(x−y)=8\n$y=−8$ and $x=0$\nCase 4: $x<0$ & $x−y<0$\nIn this case, the equation becomes: $−x−(x−y)=8$\n$-2x+y=8$ or $y=2x+8$\nNow, let's find the intersection points:\n1. $y=8$ intersects $y=2x-8$ at: $8=2x-8$\n$x=8$ and $y=8$\n2. $y=8$ intersects $y=2x+8$: $8=2x+8$\n$x=0$ and $y=8$\n3.$y=-8$ intersects $y=2x-8$:$-8=2x-8$\n$x=0$ and $y=-8$\n4. $y=-8$ intersects $y=2x+8:-8=2x+8$\n$x=-8$ and $y=-8$\nHence, we get the coordinates as (8,8), (0,8), (0,-8) and (-8,-8), and the figure will be of the shape of a parallelogram. \nWe need to find the area of the parallelogram. The base of the parallelogram will be of 8 units and the height will be 16 units.\nArea of the parallelogram = Base*Height = 8*16 = 128 units square.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-4",
       "passage_text": "",
-      "question_text": "A company has three departments A, B, and C, with employee ratios of 2:3:5. The average weights in Departments A and B are 70 kg and 60 kg, respectively. The overall average weight across all employees was 80 kg. It was later found that, due to an error, 40% of Department C employees' weights were recorded as 10 kg lower than actual. What is the percentage increase in the overall average weight after rectifying the calculation error?",
+      "question_text": "Pranjal invests ₹10,000 in a scheme that compounds annually at a rate of 20% per annum for 4 years. On the other hand, Naseeb invests ₹20,000 in a scheme that offers simple interest at 10% per annum for the same 4-year period. Let $D_n$ represent the absolute difference between the interests earned by both of them in the $n^{th}$ year. If $\\dfrac{\\ D_3}{D_2}$ = $\\dfrac{\\ a}{b}$, such that $a$ & $b$ are co-primes. Then find the value of $|a-b|$ .",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1.5%",
+          "option_text": "4",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1%",
-          "is_correct": false
+          "option_text": "6",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "2.5%",
-          "is_correct": true
+          "option_text": "5",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "5%",
+          "option_text": "7",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the number of employees in departments A, B and C be 2x, 3x and 5x, respectively.\nLet the initial average of all the employees of department C be y.\nWe know that the overall average is 80 kg, and the averages of departments A and B are 70 kg and 60 kg.\n$80\\ =\\ \\dfrac{70\\times\\ 2x\\ +\\ 60\\times\\ 3x\\ +\\ y\\times\\ 5x}{2x\\ +\\ 3x\\ +\\ 5x}$\n$800x\\ =\\ 140x\\ +\\ 180x\\ +\\ y\\times\\ 5x$\n$y\\ =\\ \\dfrac{800x\\ -\\ 320x}{5x}\\ =\\ \\dfrac{480x}{5x}\\ =\\ 96$kg\nBecause 40% of the weights have errors, we get the final sum to be $y\\ \\times\\ 5x+\\ \\dfrac{40}{100}\\left(5x\\right)\\times\\ 10\\ =\\ 5xy\\ +\\ 20x$.\nThe final average of Department C is \n$\\dfrac{5xy\\ +\\ 20x}{5x}\\ =\\ y\\ +\\ 4\\ =\\ 96\\ +\\ 4\\ =\\ 100$ kg\nThe final average can be calculated as,\n$\\dfrac{70\\ \\times\\ 2x\\ +\\ 60\\ \\times\\ 3x\\ +\\ 100\\ \\times\\ 5x}{2x\\ +\\ 3x\\ +\\ 5x}\\ =\\ \\dfrac{140x\\ +\\ 180x\\ +\\ 500x}{10x}\\ =\\ 82$kg\nPercentage increase  =  $\\dfrac{82\\ -\\ 80}{80}\\ \\times\\ 100\\ =\\ 2.5\\%$\nHence, the correct answer is option C.",
+      "solution_text": "Pranjal : $P_1=10,000$ , $R_1=\\ 20\\%$  compounding .\nNaseeb : $P_2=20,000$ , $R_1=\\ 10\\%$  simple interest.\nIn $3^{rd}$ year : \n1. Interest earned by Pranjal = $P_1\\left(1+\\frac{\\ R_1}{100}\\right)^2\\left(\\frac{\\ R_1}{100}\\right)$\n                                            =  $10,000\\left(1+\\frac{\\ 20}{100}\\right)^2\\left(\\frac{\\ 20}{100}\\right)$\n                                            =  $80\\times36$ \n                                            =  $2880$\n2. Interest earned by Naseeb = $\\dfrac{\\ P_2R_2\\left(1\\right)}{100}$ = $\\dfrac{\\ 20000\\times10}{100}=2000$\nHence, the value of $D_3=\\left|2880-2000\\right|=880$\nIn $2^{nd}$ year : \n1.   Interest earned by Pranjal = $P_1\\left(1+\\frac{\\ R_1}{100}\\right)^1\\left(\\frac{\\ R_1}{100}\\right)$\n                                              = $10,000\\left(1+\\frac{\\ 20}{100}\\right)^1\\left(\\frac{\\ 20}{100}\\right)$\n                                              = $400\\times6$\n                                              = 2400\n2. Interest earned by Naseeb = $\\dfrac{\\ P_2R_2\\left(1\\right)}{100}$ = $\\dfrac{\\ 20000\\times10}{100}=2000$\nHence, the value of $D_2=\\left|2400-2000\\right|=400$\nTherefore, $\\dfrac{\\ D_3}{D_2}$ = $\\dfrac{\\ 880}{400}$ = $\\dfrac{\\ 11}{5}$ \nTherefore, the value of $|a-b|=|11-5|=6$ .",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA company has three departments A, B, and C, with employee ratios of 2:3:5. The average weights in Departments A and B are 70 kg and 60 kg, respectively. The overall average weight across all employees was 80 kg. It was later found that, due to an error, 40% of Department C employees' weights were recorded as 10 kg lower than actual. What is the percentage increase in the overall average weight after rectifying the calculation error?\n\n**Options:**\n- **A**. 1.5%\n- **B**. 1%\n- **C**. 2.5% ✅\n- **D**. 5%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of employees in departments A, B and C be 2x, 3x and 5x, respectively.\nLet the initial average of all the employees of department C be y.\nWe know that the overall average is 80 kg, and the averages of departments A and B are 70 kg and 60 kg.\n$80\\ =\\ \\dfrac{70\\times\\ 2x\\ +\\ 60\\times\\ 3x\\ +\\ y\\times\\ 5x}{2x\\ +\\ 3x\\ +\\ 5x}$\n$800x\\ =\\ 140x\\ +\\ 180x\\ +\\ y\\times\\ 5x$\n$y\\ =\\ \\dfrac{800x\\ -\\ 320x}{5x}\\ =\\ \\dfrac{480x}{5x}\\ =\\ 96$kg\nBecause 40% of the weights have errors, we get the final sum to be $y\\ \\times\\ 5x+\\ \\dfrac{40}{100}\\left(5x\\right)\\times\\ 10\\ =\\ 5xy\\ +\\ 20x$.\nThe final average of Department C is \n$\\dfrac{5xy\\ +\\ 20x}{5x}\\ =\\ y\\ +\\ 4\\ =\\ 96\\ +\\ 4\\ =\\ 100$ kg\nThe final average can be calculated as,\n$\\dfrac{70\\ \\times\\ 2x\\ +\\ 60\\ \\times\\ 3x\\ +\\ 100\\ \\times\\ 5x}{2x\\ +\\ 3x\\ +\\ 5x}\\ =\\ \\dfrac{140x\\ +\\ 180x\\ +\\ 500x}{10x}\\ =\\ 82$kg\nPercentage increase  =  $\\dfrac{82\\ -\\ 80}{80}\\ \\times\\ 100\\ =\\ 2.5\\%$\nHence, the correct answer is option C.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPranjal invests ₹10,000 in a scheme that compounds annually at a rate of 20% per annum for 4 years. On the other hand, Naseeb invests ₹20,000 in a scheme that offers simple interest at 10% per annum for the same 4-year period. Let $D_n$ represent the absolute difference between the interests earned by both of them in the $n^{th}$ year. If $\\dfrac{\\ D_3}{D_2}$ = $\\dfrac{\\ a}{b}$, such that $a$ & $b$ are co-primes. Then find the value of $|a-b|$ .\n\n**Options:**\n- **A**. 4\n- **B**. 6 ✅\n- **C**. 5\n- **D**. 7\n\n**Correct Answer:** null\n\n**Solution:**\nPranjal : $P_1=10,000$ , $R_1=\\ 20\\%$  compounding .\nNaseeb : $P_2=20,000$ , $R_1=\\ 10\\%$  simple interest.\nIn $3^{rd}$ year : \n1. Interest earned by Pranjal = $P_1\\left(1+\\frac{\\ R_1}{100}\\right)^2\\left(\\frac{\\ R_1}{100}\\right)$\n                                            =  $10,000\\left(1+\\frac{\\ 20}{100}\\right)^2\\left(\\frac{\\ 20}{100}\\right)$\n                                            =  $80\\times36$ \n                                            =  $2880$\n2. Interest earned by Naseeb = $\\dfrac{\\ P_2R_2\\left(1\\right)}{100}$ = $\\dfrac{\\ 20000\\times10}{100}=2000$\nHence, the value of $D_3=\\left|2880-2000\\right|=880$\nIn $2^{nd}$ year : \n1.   Interest earned by Pranjal = $P_1\\left(1+\\frac{\\ R_1}{100}\\right)^1\\left(\\frac{\\ R_1}{100}\\right)$\n                                              = $10,000\\left(1+\\frac{\\ 20}{100}\\right)^1\\left(\\frac{\\ 20}{100}\\right)$\n                                              = $400\\times6$\n                                              = 2400\n2. Interest earned by Naseeb = $\\dfrac{\\ P_2R_2\\left(1\\right)}{100}$ = $\\dfrac{\\ 20000\\times10}{100}=2000$\nHence, the value of $D_2=\\left|2400-2000\\right|=400$\nTherefore, $\\dfrac{\\ D_3}{D_2}$ = $\\dfrac{\\ 880}{400}$ = $\\dfrac{\\ 11}{5}$ \nTherefore, the value of $|a-b|=|11-5|=6$ .",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-5",
       "passage_text": "",
-      "question_text": "If x, y, and z are natural numbers, how many ordered triplets (x, y, z) satisfy the given set of equations?\n\n$x\\ +\\ \\dfrac{2}{y}\\ =\\ z$\n\n$y\\ +\\ \\dfrac{4}{z}\\ =\\ x$\n\n$z\\ -\\ \\dfrac{6}{x}\\ =\\ y$",
+      "question_text": "Container A contains a mixture of milk and water in some unknown ratio. This mixture is combined with another solution B of 20 litres that contains 25% milk. The resulting mixture has a 30% milk concentration. If instead, the same mixture A is mixed with 10 litres of pure milk, the resulting mixture has a 40% milk concentration.\n\nFind the initial quantity of milk present in mixture A.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1",
+          "option_text": "18 litres",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "8",
+          "option_text": "20 litres",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "4",
-          "is_correct": false
+          "option_text": "22 litres",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2",
-          "is_correct": true
+          "option_text": "25 litres",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Looking at this equation  $x\\ +\\ \\dfrac{2}{y}\\ =\\ z$, we know that x, y, and z are natural numbers, and for the equation to satisfy the value $\\dfrac{2}{y}$ must be an integer. The values of y at which the value $\\dfrac{2}{y}$ is an integer are 1 and 2.\nSimilarly, the value of z at which the value $\\dfrac{4}{z}$ is an integer is 1, 2 and 4.\nSimilarly, the value of x at which the value $\\dfrac{6}{x}$ is an integer is 1, 2, 3 and 6. \nMultiplying the equations by y, z and x, respectively, we get,\nxy + 2 = yz  ---(1)\nyz + 4 = zx  ---(2)\nzx - 6 = xy  ---(3)\nCase 1: y = 1\n(1) becomes z = x + 2\nThe values that satisfy the previous conditions for (x,z) is (2, 4)\n(2) becomes z + 4 = xz\nOnly (2, 4) satisfies both the above equations.\nSo, the ordered triplet that satisfies the set of equations is (2, 1, 4).\nCase 2: y = 2\n(1) becomes z = x + 1\nThe values that satisfy the previous conditions for (x,z) are (1, 2), (3, 4)\n(2) becomes 2z + 4 = xz\nOnly (3, 4) satisfies both the above equations.\nSo, the ordered triplet that satisfies the set of equations is (3, 2, 4).\nIn total, 2 ordered triplets satisfy the given set of equations.\nHence, the correct answer is option D.",
+      "solution_text": "Let the total volume of mixture A be $\"V\"$ and the concentration of milk be $\"a\\ \\%\"$ in it .\nMixture A + Solution B (25% milk in 20 litre) : Resulting solution has 30% milk\nMilk :  $\\dfrac{\\ a}{100}\\left(V\\right)+\\dfrac{\\ 25}{100}\\left(20\\right)=\\dfrac{\\ 30}{100}\\left(V+20\\right)$\n           \n                         $\\dfrac{\\ a\\left(V\\right)}{100}=\\dfrac{\\ 3V}{10}+1$ $\\rightarrow$ Eq(1)\nMixture A + 10 litre milk : Resulting solution has 40% milk \nMilk :  $\\dfrac{\\ a\\left(V\\right)}{100}+10\\ =\\dfrac{\\ 40}{100}\\left(V+10\\right)$\n                       $\\dfrac{\\ a\\left(V\\right)}{100}+6\\ =\\dfrac{\\ 4V}{10}$ $\\rightarrow$ Eq(2)\nBy solving, Eq(1) & Eq(2) : $V=70\\ L$\nTherefore, the initial quantity of milk present in mixture A $=\\dfrac{\\ a\\left(V\\right)}{100}=\\left(\\dfrac{\\ 3\\left(70\\right)}{10}+1\\right)\\ =22\\ litres$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x, y, and z are natural numbers, how many ordered triplets (x, y, z) satisfy the given set of equations?\n\n$x\\ +\\ \\dfrac{2}{y}\\ =\\ z$\n\n$y\\ +\\ \\dfrac{4}{z}\\ =\\ x$\n\n$z\\ -\\ \\dfrac{6}{x}\\ =\\ y$\n\n**Options:**\n- **A**. 1\n- **B**. 8\n- **C**. 4\n- **D**. 2 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLooking at this equation  $x\\ +\\ \\dfrac{2}{y}\\ =\\ z$, we know that x, y, and z are natural numbers, and for the equation to satisfy the value $\\dfrac{2}{y}$ must be an integer. The values of y at which the value $\\dfrac{2}{y}$ is an integer are 1 and 2.\nSimilarly, the value of z at which the value $\\dfrac{4}{z}$ is an integer is 1, 2 and 4.\nSimilarly, the value of x at which the value $\\dfrac{6}{x}$ is an integer is 1, 2, 3 and 6. \nMultiplying the equations by y, z and x, respectively, we get,\nxy + 2 = yz  ---(1)\nyz + 4 = zx  ---(2)\nzx - 6 = xy  ---(3)\nCase 1: y = 1\n(1) becomes z = x + 2\nThe values that satisfy the previous conditions for (x,z) is (2, 4)\n(2) becomes z + 4 = xz\nOnly (2, 4) satisfies both the above equations.\nSo, the ordered triplet that satisfies the set of equations is (2, 1, 4).\nCase 2: y = 2\n(1) becomes z = x + 1\nThe values that satisfy the previous conditions for (x,z) are (1, 2), (3, 4)\n(2) becomes 2z + 4 = xz\nOnly (3, 4) satisfies both the above equations.\nSo, the ordered triplet that satisfies the set of equations is (3, 2, 4).\nIn total, 2 ordered triplets satisfy the given set of equations.\nHence, the correct answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nContainer A contains a mixture of milk and water in some unknown ratio. This mixture is combined with another solution B of 20 litres that contains 25% milk. The resulting mixture has a 30% milk concentration. If instead, the same mixture A is mixed with 10 litres of pure milk, the resulting mixture has a 40% milk concentration.\n\nFind the initial quantity of milk present in mixture A.\n\n**Options:**\n- **A**. 18 litres\n- **B**. 20 litres\n- **C**. 22 litres ✅\n- **D**. 25 litres\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total volume of mixture A be $\"V\"$ and the concentration of milk be $\"a\\ \\%\"$ in it .\nMixture A + Solution B (25% milk in 20 litre) : Resulting solution has 30% milk\nMilk :  $\\dfrac{\\ a}{100}\\left(V\\right)+\\dfrac{\\ 25}{100}\\left(20\\right)=\\dfrac{\\ 30}{100}\\left(V+20\\right)$\n           \n                         $\\dfrac{\\ a\\left(V\\right)}{100}=\\dfrac{\\ 3V}{10}+1$ $\\rightarrow$ Eq(1)\nMixture A + 10 litre milk : Resulting solution has 40% milk \nMilk :  $\\dfrac{\\ a\\left(V\\right)}{100}+10\\ =\\dfrac{\\ 40}{100}\\left(V+10\\right)$\n                       $\\dfrac{\\ a\\left(V\\right)}{100}+6\\ =\\dfrac{\\ 4V}{10}$ $\\rightarrow$ Eq(2)\nBy solving, Eq(1) & Eq(2) : $V=70\\ L$\nTherefore, the initial quantity of milk present in mixture A $=\\dfrac{\\ a\\left(V\\right)}{100}=\\left(\\dfrac{\\ 3\\left(70\\right)}{10}+1\\right)\\ =22\\ litres$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-6",
       "passage_text": "",
-      "question_text": "Rakesh borrowed Rs. 51,05,100 from a bank to construct a house, agreeing to repay the loan in four equal installments over two years, with interest compounded semiannually at 20% per annum. However, after defaulting on the first installment, the bank revised the repayment terms: Rakesh must repay the loan in two equal annual installments over two years, with interest compounded annually at the same rate. How much additional interest does Rakesh pay due to this change in repayment terms?",
+      "question_text": "A can complete a piece of work in 6 days, B in 10 days, and C in 12 days. If B and C work on alternate days, while A works every third day, and C starts the work alone on the first day, followed by B on the second day and A on the third day, then on which day will the work be completed?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "2,75,00",
+          "option_text": "6th day",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "2,41,00",
-          "is_correct": true
+          "option_text": "7th day",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "2,37,00",
-          "is_correct": false
+          "option_text": "8th day",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2,53,00",
+          "option_text": "9th day",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us tackle this question chronologically, \nFirst, we are told that Rakesh borrowed the amount to repay in four equal instalments with 20% compounded semi-annually. That means, every half year, the interest rate is 10%.  Taking $X$ as each installment, we can draw up the equation, \n$\\frac{X}{1.1}+\\frac{X}{1.21}+\\frac{X}{1.331}+\\frac{X}{1.4641}=P$\n$\\frac{4.641X}{1.4641}=P$\n$X=\\frac{1.4641P}{4.641}$\n$X=\\left(1100000\\right)\\left(1.4641\\right)$\n$X=1610510$\nTotal money that would've been paid under these terms would be $4X$ which equals: 64,42,040. \nSecond, we are told that Rakesh defaulted, and the loan now becomes an annual payment scheme with a 20% interest rate. That means an installment is paid every year, and the interest rate is 20%. Taking $Z$ as each installment, we can draw up the equation, \n$\\frac{Z}{1.2}+\\frac{Z}{1.44}=P$\n$\\frac{2.2Z}{1.44}=P$\n$Z=\\frac{\\left(51,05,100\\right)\\left(1.44\\right)}{2.2}$\n$Z=33,41,520$\nTotal money that would've been paid under these new terms would be $2Z$, which equals: 66,83,040\nThe difference in the money paid will be: 2,41,000",
+      "solution_text": "Let the total work done be 60 units. \nA can complete a piece of work in 6 days, B in 10 days, and C in 12 days. Thus, the efficiency of A will be 10 units/day, the efficiency of B will be 6 units/day, and the efficiency of C will be 5 units/day. \nC starts the work alone on the first day, B begins on the second day, and A begins on the third day. Also, B and C work on alternate days, while A works every third day. \nSo, A is working on the day which is a multiple of 3, B is working on every even-numbered day, and C is working on every odd-numbered day. \nAs per their efficiency, the work done by each by the end of 6 days will be - \nA = __ __ 10 __ __ 10 = 20 units  \nB = __ 6 __ 6 __ 6 = 18 units\nC = 5 __ 5 __ 5 __ = 15 units\nThus, 53 units of work are done uptil the 6th day. On the seventh day, only C will be working and thus (53 + 5 = 58) units of work will be completed by the seventh day. On the eighth day, only B will be working, thus the entire work will be completed. \nTherefore, the work will be completed on the 8th day.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRakesh borrowed Rs. 51,05,100 from a bank to construct a house, agreeing to repay the loan in four equal installments over two years, with interest compounded semiannually at 20% per annum. However, after defaulting on the first installment, the bank revised the repayment terms: Rakesh must repay the loan in two equal annual installments over two years, with interest compounded annually at the same rate. How much additional interest does Rakesh pay due to this change in repayment terms?\n\n**Options:**\n- **A**. 2,75,00\n- **B**. 2,41,00 ✅\n- **C**. 2,37,00\n- **D**. 2,53,00\n\n**Correct Answer:** null\n\n**Solution:**\nLet us tackle this question chronologically, \nFirst, we are told that Rakesh borrowed the amount to repay in four equal instalments with 20% compounded semi-annually. That means, every half year, the interest rate is 10%.  Taking $X$ as each installment, we can draw up the equation, \n$\\frac{X}{1.1}+\\frac{X}{1.21}+\\frac{X}{1.331}+\\frac{X}{1.4641}=P$\n$\\frac{4.641X}{1.4641}=P$\n$X=\\frac{1.4641P}{4.641}$\n$X=\\left(1100000\\right)\\left(1.4641\\right)$\n$X=1610510$\nTotal money that would've been paid under these terms would be $4X$ which equals: 64,42,040. \nSecond, we are told that Rakesh defaulted, and the loan now becomes an annual payment scheme with a 20% interest rate. That means an installment is paid every year, and the interest rate is 20%. Taking $Z$ as each installment, we can draw up the equation, \n$\\frac{Z}{1.2}+\\frac{Z}{1.44}=P$\n$\\frac{2.2Z}{1.44}=P$\n$Z=\\frac{\\left(51,05,100\\right)\\left(1.44\\right)}{2.2}$\n$Z=33,41,520$\nTotal money that would've been paid under these new terms would be $2Z$, which equals: 66,83,040\nThe difference in the money paid will be: 2,41,000",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA can complete a piece of work in 6 days, B in 10 days, and C in 12 days. If B and C work on alternate days, while A works every third day, and C starts the work alone on the first day, followed by B on the second day and A on the third day, then on which day will the work be completed?\n\n**Options:**\n- **A**. 6th day\n- **B**. 7th day\n- **C**. 8th day ✅\n- **D**. 9th day\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total work done be 60 units. \nA can complete a piece of work in 6 days, B in 10 days, and C in 12 days. Thus, the efficiency of A will be 10 units/day, the efficiency of B will be 6 units/day, and the efficiency of C will be 5 units/day. \nC starts the work alone on the first day, B begins on the second day, and A begins on the third day. Also, B and C work on alternate days, while A works every third day. \nSo, A is working on the day which is a multiple of 3, B is working on every even-numbered day, and C is working on every odd-numbered day. \nAs per their efficiency, the work done by each by the end of 6 days will be - \nA = __ __ 10 __ __ 10 = 20 units  \nB = __ 6 __ 6 __ 6 = 18 units\nC = 5 __ 5 __ 5 __ = 15 units\nThus, 53 units of work are done uptil the 6th day. On the seventh day, only C will be working and thus (53 + 5 = 58) units of work will be completed by the seventh day. On the eighth day, only B will be working, thus the entire work will be completed. \nTherefore, the work will be completed on the 8th day.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-7",
       "passage_text": "",
-      "question_text": "Let $f(x)=(x−10)(x−14)(x−18)(x−22)\\dots(x−98)$\n\nHow many integer values of $x$ in the range $1\\le x\\le90$ satisfy $f(x)<0$?",
-      "options": [],
-      "correct_option_data": "39",
-      "solution_text": "The zeros of f(x) are x = 10,14,18,…,98, which form an arithmetic sequence with a common difference of 4.\nThe zeros are x = 10,14,18,…,98 This sequence can be expressed as: \n$x_n=10+(n−1)\\times4$\n$x_n=98$\n$98=10+(n−1)\\times4$\nSo there are 23 zeros.\nSince the polynomial alternates signs between consecutive zeros:\nf(x)<0 in intervals where there is an odd number of negative factors.\nThese intervals are between the first zero (x=10) and the second zero (x=14), the third zero (x=18) and the fourth zero (x=22), and so on.\nJust left of the smallest root (x < 10): 23 negative terms → product is negative.\nBetween roots: Sign alternates at every root.\nSo the sign pattern is:\nInterval: (−∞,10) = Negative Sign\nInterval: (10,14) = Positive Sign\nInterval: (14,18) = Negative Sign and So on. \nSo the negative intervals inside our range are:\n(1,9),(14,18),(22,26),.......(86,90)\nSo, there are the first 9 numbers. \nAfter that, the general pattern of the left endpoints is: $a_k=15+8\\left(k-1\\right)$\nWe want $a_k\\le90$\n$15+8(k−1)\\le90$\n$k−1\\le9.375$\n$k\\le10.375⇒⌊k⌋=10$\nSo there are 10 intervals where f(x)<0\n10th interval will be (86, 90)\nSo, there are 3*10 = 30 terms in the intervals. \nAlong with that, there are 9 terms from 1 to 9. \nSo, in total, 39 values satisfies.",
+      "question_text": "ABCDEF is a regular hexagon with the length of the side 'a'. Find the ratio of the areas of the quadrilaterals ABDE to ADEF.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{\\ 3}:1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2:\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$4:3$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{\\ 2}:1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that the area of the hexagon = $6\\times\\ \\dfrac{\\sqrt{\\ 3}}{4}\\times\\ a^2\\ =\\ \\dfrac{3\\sqrt{\\ 3}}{2}a^2$.\nArea of the quadrilateral ADEF will be equal to the area of the quadrilateral ADCB which will be half of the area of hexagon.\nTherefore Area of ADEF = $\\dfrac{1}{2}\\times\\ \\dfrac{3\\sqrt{\\ 3}}{2}\\times\\ a^2$ = $\\dfrac{3\\sqrt{\\ 3}}{4}a^2$.\nNow, we see that quadrilateral ABDE is a rectangle.\nBD = $2\\times\\ BC\\times\\ \\cos\\left(30\\right)=\\sqrt{\\ 3}a$.\nTherefore Area of ABDE = $a\\times\\ \\sqrt{\\ 3}a\\ =\\ \\sqrt{\\ 3}a^2$.\nTaking the ratio we get Area of ADEF : Area of ABDE = 4:3",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet $f(x)=(x−10)(x−14)(x−18)(x−22)\\dots(x−98)$\n\nHow many integer values of $x$ in the range $1\\le x\\le90$ satisfy $f(x)<0$?\n\n**Options:**\n\n**Correct Answer:** 39\n\n**Solution:**\nThe zeros of f(x) are x = 10,14,18,…,98, which form an arithmetic sequence with a common difference of 4.\nThe zeros are x = 10,14,18,…,98 This sequence can be expressed as: \n$x_n=10+(n−1)\\times4$\n$x_n=98$\n$98=10+(n−1)\\times4$\nSo there are 23 zeros.\nSince the polynomial alternates signs between consecutive zeros:\nf(x)<0 in intervals where there is an odd number of negative factors.\nThese intervals are between the first zero (x=10) and the second zero (x=14), the third zero (x=18) and the fourth zero (x=22), and so on.\nJust left of the smallest root (x < 10): 23 negative terms → product is negative.\nBetween roots: Sign alternates at every root.\nSo the sign pattern is:\nInterval: (−∞,10) = Negative Sign\nInterval: (10,14) = Positive Sign\nInterval: (14,18) = Negative Sign and So on. \nSo the negative intervals inside our range are:\n(1,9),(14,18),(22,26),.......(86,90)\nSo, there are the first 9 numbers. \nAfter that, the general pattern of the left endpoints is: $a_k=15+8\\left(k-1\\right)$\nWe want $a_k\\le90$\n$15+8(k−1)\\le90$\n$k−1\\le9.375$\n$k\\le10.375⇒⌊k⌋=10$\nSo there are 10 intervals where f(x)<0\n10th interval will be (86, 90)\nSo, there are 3*10 = 30 terms in the intervals. \nAlong with that, there are 9 terms from 1 to 9. \nSo, in total, 39 values satisfies.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCDEF is a regular hexagon with the length of the side 'a'. Find the ratio of the areas of the quadrilaterals ABDE to ADEF.\n\n**Options:**\n- **A**. $\\sqrt{\\ 3}:1$\n- **B**. $2:\\sqrt{\\ 3}$\n- **C**. $4:3$ ✅\n- **D**. $\\sqrt{\\ 2}:1$\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that the area of the hexagon = $6\\times\\ \\dfrac{\\sqrt{\\ 3}}{4}\\times\\ a^2\\ =\\ \\dfrac{3\\sqrt{\\ 3}}{2}a^2$.\nArea of the quadrilateral ADEF will be equal to the area of the quadrilateral ADCB which will be half of the area of hexagon.\nTherefore Area of ADEF = $\\dfrac{1}{2}\\times\\ \\dfrac{3\\sqrt{\\ 3}}{2}\\times\\ a^2$ = $\\dfrac{3\\sqrt{\\ 3}}{4}a^2$.\nNow, we see that quadrilateral ABDE is a rectangle.\nBD = $2\\times\\ BC\\times\\ \\cos\\left(30\\right)=\\sqrt{\\ 3}a$.\nTherefore Area of ABDE = $a\\times\\ \\sqrt{\\ 3}a\\ =\\ \\sqrt{\\ 3}a^2$.\nTaking the ratio we get Area of ADEF : Area of ABDE = 4:3",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-8",
       "passage_text": "",
-      "question_text": "Find the number of ways in which 25 identical books can be distributed among 4 kids : Akhil, Bindu, Chandu and Diksha, such that Akhil and Chandu receive a minimum of 2 and 3 books respectively and Diksha does not receive more than 10 books.",
-      "options": [],
-      "correct_option_data": "1551",
-      "solution_text": "Let the number of books received by Akhil, Bindu, Chandu and Diksha be a, b, c, and d, respectively.\nWe know $a+b+c+d=25$\nWe want, $a\\ge2$ and $c\\ge3$\nLet $a=a_1+2$ and $c=c_1+3$\nSo, we get\n$a_1+2+b+c_1+3+d=25$\nor, $a_1+b+c_1+d=20$\nWe know the number of ways of distributing $n$ identical items to $r$ different people is \n$^{n+r-1}C_{r-1}$\nWe have $n=20$ and $r=4$\nSo, the number of ways such that Akhil and Chandu receive a minimum of 2 and 3 books respectively is \n$^{n+r-1}C_{r-1}=^{20+4-1}C_{4-1}=^{23}C_3=1771$\nNow, we want Diksha to not get more than 10 books\nSo, finding the number of ways in which Diksha gets 11 or more books from these 1771 ways\nAssume, $d=d_1+11$\nSo, $a_1+b+c_1+d_1+11=20$\nor, $a_1+b+c_1+d_1=9$\nAgain, $n=9$ and $r=4$\nSo, $^{n+r-1}C_{r-1}=^{9+4-1}C_{4-1}=^{12}C_3=220$\nRemoving these 220 ways we get\nThe number of ways = 1771 - 220 = 1551.",
+      "question_text": "Two ships A and B have to do a round trip to an island 1 km away. The average speed calculated for boat A is 3.2 km/hr and for boat B is 1.75 km/hr. If the speed of stream is 3 km/hr, find the ratio of speeds of ship B and ship A.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.8",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1.33",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let's find a general expression for average time for a boat completing a round trip.\nLet speed of boat be b, speed of stream be s, distance of island from port be D\nAlso lets assume that ongoing trip will be upstream so return trip will be downstream.\nSo time for ongoing journey (upstream) $=\\dfrac{D}{b-s}$\nTIme for return journey (downstream) $=\\dfrac{D}{b+s}$\nNow, $\\text{Average Speed} = \\dfrac{\\text{Total distance}}{\\text{Total time}}$\nor, average speed = $\\dfrac{D+D}{\\dfrac{D}{b-s}+\\dfrac{D}{b+s}}$\nor, average speed = $\\dfrac{D+D}{D\\cdot\\left(\\dfrac{1}{b-s}+\\dfrac{1}{b+s}\\right)}$\nor, average speed = $\\dfrac{2D}{D\\cdot\\left(\\dfrac{2b}{b^2-s^2}\\right)}$\nor, average speed = $\\dfrac{b^2-s^2}{b}$\nNow let speed of boat 1 be b1 and boat of speed 2 be b2.\nSo, $\\dfrac{\\left(b1\\right)^2-s^2}{\\left(b1\\right)}$\n=> $\\dfrac{\\left(b1^2-3^2\\right)}{b1}=3.2$\n=>$\\dfrac{\\left(b1^2-3^2\\right)}{b1}=\\dfrac{16}{5}$ \n(Since, 3.2 was given, to make calculations easy we can convert it to dfraction form 16/5)\nUpon solving we get b1 as  5 km/hr.\nSimilarly, $\\dfrac{\\left(\\left(b2\\right)^2-3^2\\right)}{b2}=1.75$\n=>$\\dfrac{\\left(\\left(b2\\right)^2-3^2\\right)}{b2}=\\dfrac{7}{4}$\n(Since, 1.75 was given, to make calculations easy we can convert it to fraction form 7/4)\nUpon solving we get b2 as 4 km/hr.\nSo, ratio of speed of ship B and ship A is 4:5 = 0.8\nOption A.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of ways in which 25 identical books can be distributed among 4 kids : Akhil, Bindu, Chandu and Diksha, such that Akhil and Chandu receive a minimum of 2 and 3 books respectively and Diksha does not receive more than 10 books.\n\n**Options:**\n\n**Correct Answer:** 1551\n\n**Solution:**\nLet the number of books received by Akhil, Bindu, Chandu and Diksha be a, b, c, and d, respectively.\nWe know $a+b+c+d=25$\nWe want, $a\\ge2$ and $c\\ge3$\nLet $a=a_1+2$ and $c=c_1+3$\nSo, we get\n$a_1+2+b+c_1+3+d=25$\nor, $a_1+b+c_1+d=20$\nWe know the number of ways of distributing $n$ identical items to $r$ different people is \n$^{n+r-1}C_{r-1}$\nWe have $n=20$ and $r=4$\nSo, the number of ways such that Akhil and Chandu receive a minimum of 2 and 3 books respectively is \n$^{n+r-1}C_{r-1}=^{20+4-1}C_{4-1}=^{23}C_3=1771$\nNow, we want Diksha to not get more than 10 books\nSo, finding the number of ways in which Diksha gets 11 or more books from these 1771 ways\nAssume, $d=d_1+11$\nSo, $a_1+b+c_1+d_1+11=20$\nor, $a_1+b+c_1+d_1=9$\nAgain, $n=9$ and $r=4$\nSo, $^{n+r-1}C_{r-1}=^{9+4-1}C_{4-1}=^{12}C_3=220$\nRemoving these 220 ways we get\nThe number of ways = 1771 - 220 = 1551.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo ships A and B have to do a round trip to an island 1 km away. The average speed calculated for boat A is 3.2 km/hr and for boat B is 1.75 km/hr. If the speed of stream is 3 km/hr, find the ratio of speeds of ship B and ship A.\n\n**Options:**\n- **A**. 0.8 ✅\n- **B**. 0.75\n- **C**. 1.25\n- **D**. 1.33\n\n**Correct Answer:** null\n\n**Solution:**\nLet's find a general expression for average time for a boat completing a round trip.\nLet speed of boat be b, speed of stream be s, distance of island from port be D\nAlso lets assume that ongoing trip will be upstream so return trip will be downstream.\nSo time for ongoing journey (upstream) $=\\dfrac{D}{b-s}$\nTIme for return journey (downstream) $=\\dfrac{D}{b+s}$\nNow, $\\text{Average Speed} = \\dfrac{\\text{Total distance}}{\\text{Total time}}$\nor, average speed = $\\dfrac{D+D}{\\dfrac{D}{b-s}+\\dfrac{D}{b+s}}$\nor, average speed = $\\dfrac{D+D}{D\\cdot\\left(\\dfrac{1}{b-s}+\\dfrac{1}{b+s}\\right)}$\nor, average speed = $\\dfrac{2D}{D\\cdot\\left(\\dfrac{2b}{b^2-s^2}\\right)}$\nor, average speed = $\\dfrac{b^2-s^2}{b}$\nNow let speed of boat 1 be b1 and boat of speed 2 be b2.\nSo, $\\dfrac{\\left(b1\\right)^2-s^2}{\\left(b1\\right)}$\n=> $\\dfrac{\\left(b1^2-3^2\\right)}{b1}=3.2$\n=>$\\dfrac{\\left(b1^2-3^2\\right)}{b1}=\\dfrac{16}{5}$ \n(Since, 3.2 was given, to make calculations easy we can convert it to dfraction form 16/5)\nUpon solving we get b1 as  5 km/hr.\nSimilarly, $\\dfrac{\\left(\\left(b2\\right)^2-3^2\\right)}{b2}=1.75$\n=>$\\dfrac{\\left(\\left(b2\\right)^2-3^2\\right)}{b2}=\\dfrac{7}{4}$\n(Since, 1.75 was given, to make calculations easy we can convert it to fraction form 7/4)\nUpon solving we get b2 as 4 km/hr.\nSo, ratio of speed of ship B and ship A is 4:5 = 0.8\nOption A.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-9",
       "passage_text": "",
-      "question_text": "A shopkeeper marks up the price of an article by 10% and then marks it up by another $x\\%$. He then offers successive discounts of 20% and 10% to customers. The shopkeeper earns an overall profit of 8%. What is the value of $x$?",
+      "question_text": "Rahul sells 20 apples and 10 bananas. If he marked up the price of apples by $20\\%$ and marked down the price of bananas by $10\\%$, he earns a profit of $\\dfrac{20}{3}\\%\\ $. What will be his profit or loss if he instead marked down the price of apples by $20\\%$ and marked up the price of bananas by $25\\%$?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "35%",
+          "option_text": "10%",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "42.42%",
+          "option_text": "5%",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "45%",
-          "is_correct": false
+          "option_text": "0%",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "36.36%",
-          "is_correct": true
+          "option_text": "15%",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the actual Cost Price be C. We are given that the CP is marked up by 10%. So, the MP = 1.1C.\nHe marks up the article by another x%. So, the Marked Price becomes,\n$MP\\ =\\ 1.1C\\left(1\\ +\\ \\dfrac{x}{100}\\right)$\nThe shopkeeper offers successive 20% and 10% discounts on the MP. So, the Selling Price becomes,\n$SP\\ =\\ 1.1C\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\left(0.8\\right)\\times\\ \\left(0.9\\right)\\ =\\ 1.1\\ \\times\\ 0.72C\\ \\times\\ \\left(1\\ +\\ \\dfrac{x}{100}\\right)$   ---(1)\nHe is making a profit of 8% on the actual cost price by selling at this price.\n$SP=\\ C\\ +\\ \\dfrac{8}{100}C\\ =\\ 1.08C$   ---(2)\nEquating (1) and (2), we get,\n$\\ 1.1\\ \\times\\ 0.72\\ \\times C\\ \\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ 1.08C$\n$\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ \\dfrac{1.08C}{1.1\\times\\ 0.72C}$\n$\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ \\dfrac{3}{1.1\\times\\ 2}\\ =\\ \\dfrac{15}{11}$\n$\\dfrac{x}{100}\\ =\\ \\dfrac{4}{11}$\n$x\\ =\\ \\dfrac{400}{11}\\ =\\ 36.36\\%$\nHence, the correct answer is option D.",
+      "solution_text": "Let the prices of apples be A and bananas be B.\nLet, $20A+10B=Y\\rightarrow1$\nNow, he increases the price of apples by $20\\%$ and decreases the price of bananas by $10\\%$, he earns a profit of $\\dfrac{20}{3}\\%\\ $\n=> $20\\times\\ 1.2A+10\\times\\ 0.9B=Y\\left[1+\\dfrac{20}{3\\times\\ 100}\\right]$\n=> $24A+9B=\\dfrac{16Y}{15}$\nSubstituting the value of Y from 1 - \n$24A+9B=\\dfrac{16}{15}\\left[20A+10B\\right]$\n=> $360A+135B=320A+160B$\n=> $\\dfrac{A}{B}=\\dfrac{5}{8}$\nLet A be 5x and B be 8x.\n=> $Y=20\\left(5x\\right)+10\\left(8x\\right)=180x$\nThus, the original price of 20 apples and 10 bananas is 180x.\nNow, he reduces the price of apples by $20\\%$ and increases the price of bananas by $25\\%$. Thus, the new price of 20 apples and 10 bananas will be-\n=> $20\\left(4x\\right)+10\\left(10x\\right)=180x$\nThis is equal to the original price of 20 apples and 10 bananas. Thus, he made neither profit nor loss.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper marks up the price of an article by 10% and then marks it up by another $x\\%$. He then offers successive discounts of 20% and 10% to customers. The shopkeeper earns an overall profit of 8%. What is the value of $x$?\n\n**Options:**\n- **A**. 35%\n- **B**. 42.42%\n- **C**. 45%\n- **D**. 36.36% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the actual Cost Price be C. We are given that the CP is marked up by 10%. So, the MP = 1.1C.\nHe marks up the article by another x%. So, the Marked Price becomes,\n$MP\\ =\\ 1.1C\\left(1\\ +\\ \\dfrac{x}{100}\\right)$\nThe shopkeeper offers successive 20% and 10% discounts on the MP. So, the Selling Price becomes,\n$SP\\ =\\ 1.1C\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\left(0.8\\right)\\times\\ \\left(0.9\\right)\\ =\\ 1.1\\ \\times\\ 0.72C\\ \\times\\ \\left(1\\ +\\ \\dfrac{x}{100}\\right)$   ---(1)\nHe is making a profit of 8% on the actual cost price by selling at this price.\n$SP=\\ C\\ +\\ \\dfrac{8}{100}C\\ =\\ 1.08C$   ---(2)\nEquating (1) and (2), we get,\n$\\ 1.1\\ \\times\\ 0.72\\ \\times C\\ \\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ 1.08C$\n$\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ \\dfrac{1.08C}{1.1\\times\\ 0.72C}$\n$\\left(1\\ +\\ \\dfrac{x}{100}\\right)\\ =\\ \\dfrac{3}{1.1\\times\\ 2}\\ =\\ \\dfrac{15}{11}$\n$\\dfrac{x}{100}\\ =\\ \\dfrac{4}{11}$\n$x\\ =\\ \\dfrac{400}{11}\\ =\\ 36.36\\%$\nHence, the correct answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRahul sells 20 apples and 10 bananas. If he marked up the price of apples by $20\\%$ and marked down the price of bananas by $10\\%$, he earns a profit of $\\dfrac{20}{3}\\%\\ $. What will be his profit or loss if he instead marked down the price of apples by $20\\%$ and marked up the price of bananas by $25\\%$?\n\n**Options:**\n- **A**. 10%\n- **B**. 5%\n- **C**. 0% ✅\n- **D**. 15%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the prices of apples be A and bananas be B.\nLet, $20A+10B=Y\\rightarrow1$\nNow, he increases the price of apples by $20\\%$ and decreases the price of bananas by $10\\%$, he earns a profit of $\\dfrac{20}{3}\\%\\ $\n=> $20\\times\\ 1.2A+10\\times\\ 0.9B=Y\\left[1+\\dfrac{20}{3\\times\\ 100}\\right]$\n=> $24A+9B=\\dfrac{16Y}{15}$\nSubstituting the value of Y from 1 - \n$24A+9B=\\dfrac{16}{15}\\left[20A+10B\\right]$\n=> $360A+135B=320A+160B$\n=> $\\dfrac{A}{B}=\\dfrac{5}{8}$\nLet A be 5x and B be 8x.\n=> $Y=20\\left(5x\\right)+10\\left(8x\\right)=180x$\nThus, the original price of 20 apples and 10 bananas is 180x.\nNow, he reduces the price of apples by $20\\%$ and increases the price of bananas by $25\\%$. Thus, the new price of 20 apples and 10 bananas will be-\n=> $20\\left(4x\\right)+10\\left(10x\\right)=180x$\nThis is equal to the original price of 20 apples and 10 bananas. Thus, he made neither profit nor loss.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-10",
       "passage_text": "",
-      "question_text": "In a race, A defeats B by 120 meters. If A had started 200 meters behind the actual starting point, both A and B would have finished the race simultaneously. On the same race track, if B had a 90-meter head start and A started 10 seconds after B, they would reach the finish line simultaneously. What is the sum of the times taken by A and B to finish the race?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "160 sec",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "200 sec",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "210 sec",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "280 sec",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let us assume A's and B's speeds are a and b, respectively, and the total length of the race track is x.\nWe are told that A won the race against B by 120 mts.\nThat is, A took the same time to cover x distance as B to cover x-120.\n$\\dfrac{x}{a}=\\dfrac{\\left(x-120\\right)}{b} \\rightarrow 1$\nWe are also told that if A starts 200 m behind the line, A and B finish the race at the same time. That is, the time A takes to cover x+200 is the same as the time taken by B to cover x.\n$\\dfrac{x+200}{a}=\\dfrac{\\left(x\\right)}{b} \\rightarrow 2$\nDivide eq 1 by eq 2.\nWe get, $\\dfrac{\\dfrac{x}{a}}{\\dfrac{\\left(x+200\\right)}{a}}=\\dfrac{\\dfrac{\\left(x-120\\right)}{b}}{\\dfrac{x}{b}}$\n$\\Rightarrow\\dfrac{x}{\\left(x+200\\right)}=\\dfrac{\\left(x-120\\right)}{x}$\n$\\Rightarrow x^2=\\left(x+200\\right)\\left(x-120\\right)$\n$\\Rightarrow x^2=\\left(x^2+200x-120x-24000\\right)$\nUpon solving this equation, we get x = 300.\nWe are told that if B had started 90m beyond the start line and A had started 10s after B, they would have reached the finish line simultaneously.\nThat is, the time taken by B to cover 90m, is 10 less than the time taken by A to cover 300m.\nSubstituting x = 300 in eq 1, we get a:b = 5:3. So, let the speed of A and B be 5t, 3t.\n$\\dfrac{300}{a}+10=\\dfrac{210}{b}$\n$\\dfrac{300}{5t}+10=\\dfrac{210}{3t}$\nUpon solving this, we get t = 1.\nThe sum of time taken by them to finish the race = $\\dfrac{300}{5}+\\dfrac{300}{3}=60+100=160$",
+      "question_text": "A train passes a pole in 20 seconds, a bridge in 30 seconds, and a railway platform in 40 seconds. If the train travels at a speed of 90 m/s, what is the combined length (in meters) of the bridge and the platform?",
+      "options": [],
+      "correct_option_data": "2700",
+      "solution_text": "A train passes a pole in 20 seconds.\nSpeed of train = 90 m/s\nLength of the train = 90*20 = 1800 meter\nThe time taken by the train to pass a bridge is 30 seconds.\nLet the length of the bridge be B\nThus, 90*30 = B+Length of train\n2700 = B + 1800\nB = 900 meters\nSimilarly, the time taken by the train to cross the railway platform is 40 seconds.\nLet the length of the railway platform be P\nThus, 90*40 = P + Length of train\n3600 = P + 1800\nP = 1800 meters\nThe combined length of the bridge and the platform is equal to 1800 + 900 = 2700 meters.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a race, A defeats B by 120 meters. If A had started 200 meters behind the actual starting point, both A and B would have finished the race simultaneously. On the same race track, if B had a 90-meter head start and A started 10 seconds after B, they would reach the finish line simultaneously. What is the sum of the times taken by A and B to finish the race?\n\n**Options:**\n- **A**. 160 sec ✅\n- **B**. 200 sec\n- **C**. 210 sec\n- **D**. 280 sec\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume A's and B's speeds are a and b, respectively, and the total length of the race track is x.\nWe are told that A won the race against B by 120 mts.\nThat is, A took the same time to cover x distance as B to cover x-120.\n$\\dfrac{x}{a}=\\dfrac{\\left(x-120\\right)}{b} \\rightarrow 1$\nWe are also told that if A starts 200 m behind the line, A and B finish the race at the same time. That is, the time A takes to cover x+200 is the same as the time taken by B to cover x.\n$\\dfrac{x+200}{a}=\\dfrac{\\left(x\\right)}{b} \\rightarrow 2$\nDivide eq 1 by eq 2.\nWe get, $\\dfrac{\\dfrac{x}{a}}{\\dfrac{\\left(x+200\\right)}{a}}=\\dfrac{\\dfrac{\\left(x-120\\right)}{b}}{\\dfrac{x}{b}}$\n$\\Rightarrow\\dfrac{x}{\\left(x+200\\right)}=\\dfrac{\\left(x-120\\right)}{x}$\n$\\Rightarrow x^2=\\left(x+200\\right)\\left(x-120\\right)$\n$\\Rightarrow x^2=\\left(x^2+200x-120x-24000\\right)$\nUpon solving this equation, we get x = 300.\nWe are told that if B had started 90m beyond the start line and A had started 10s after B, they would have reached the finish line simultaneously.\nThat is, the time taken by B to cover 90m, is 10 less than the time taken by A to cover 300m.\nSubstituting x = 300 in eq 1, we get a:b = 5:3. So, let the speed of A and B be 5t, 3t.\n$\\dfrac{300}{a}+10=\\dfrac{210}{b}$\n$\\dfrac{300}{5t}+10=\\dfrac{210}{3t}$\nUpon solving this, we get t = 1.\nThe sum of time taken by them to finish the race = $\\dfrac{300}{5}+\\dfrac{300}{3}=60+100=160$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA train passes a pole in 20 seconds, a bridge in 30 seconds, and a railway platform in 40 seconds. If the train travels at a speed of 90 m/s, what is the combined length (in meters) of the bridge and the platform?\n\n**Options:**\n\n**Correct Answer:** 2700\n\n**Solution:**\nA train passes a pole in 20 seconds.\nSpeed of train = 90 m/s\nLength of the train = 90*20 = 1800 meter\nThe time taken by the train to pass a bridge is 30 seconds.\nLet the length of the bridge be B\nThus, 90*30 = B+Length of train\n2700 = B + 1800\nB = 900 meters\nSimilarly, the time taken by the train to cross the railway platform is 40 seconds.\nLet the length of the railway platform be P\nThus, 90*40 = P + Length of train\n3600 = P + 1800\nP = 1800 meters\nThe combined length of the bridge and the platform is equal to 1800 + 900 = 2700 meters.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-11",
       "passage_text": "",
-      "question_text": "Consider the set S consisting of all possible words that can be formed by arranging the letters of the word \"CAULDRON\". A word is selected randomly from this set. What is the probability that the selected word does not have its vowels in alphabetical order?",
+      "question_text": "In a quadratic equation $ax^2+bx+c=0$, the roots are non zero real numbers and the difference between the roots is 4. What will be equal to $\\frac{b+4a}{4c}$",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\dfrac{1}{4}$",
+          "option_text": "$\\frac{a}{b+4c}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\dfrac{1}{6}$",
+          "option_text": "$\\frac{a}{b-4c}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\dfrac{1}{2}$",
+          "option_text": "$\\frac{c}{b-4a}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\dfrac{5}{6}$",
+          "option_text": "$\\frac{a}{b-4a}$",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The given word is CAULDRON, \nArranging the letter alphabetically, we have, \nA C D L N O R U\nThe total number of ways these letters can be arranged is 8!\nIn any permutation, the three vowels appear in some order. With three distinct vowels (A, O, U), there are 3! for these vowels to appear. \nTo find the number of permutations where the vowels appear in the order A, then O, then U, we select 3 out of 8 positions for A, O, and U. The number of ways to choose three positions is $^8C_3$\nWe can pick any three positions, and there will be only one way to arrange the three vowels alphabetically, and the remaining five consonants can be arranged in 5! Ways. \nHence, the total number of favourable cases will be, $^8C_3\\left(5!\\right)$\nProbability will hence be, $\\dfrac{^8C_3\\left(5!\\right)}{8!}$\nThis will equal, \n$\\dfrac{\\dfrac{8!}{5!3!}\\left(5!\\right)}{8!}$\nThis will equal $\\dfrac{1}{6}$\nThe question asks for when the alphabet is NOT in the given alphabetical order; subtracting the probability by one will give us the desired results. \n$1-\\dfrac{1}{6}=\\dfrac{5}{6}$\nHence, the answer is Option D",
+      "solution_text": "Let $\\alpha$ > $\\beta$ be the roots of the quadratic equation. \nThen $\\alpha + \\beta $ = $\\frac{-b}{a}$ ...(I)\n$\\alpha \\times \\beta = \\frac{c}{a}$ ...(II)\nAs per question we are given $\\alpha - \\beta$ = 4\nSquaring both sides\n$\\left(\\alpha-\\beta\\right)^2=16$\n$\\left(\\alpha+\\beta\\right)^2-4\\alpha\\beta=16$\nPutting the values from (I) and (II)\n$\\frac{b^2}{a^2}-\\frac{4c}{a}=16$\nSince $a \\ne 0$ Cross-multiplying $a^2$\n$b^2-4ca=16a^2$\n$b^2-16a^2=4ca$\n$\\left(b+4a\\right)\\left(b-4a\\right)=4ca$\nThe roots are non zero. Hence c is not zero. So none of the terms in the above products are zero.\nOn re-arranging we get $\\frac{b+4a}{4c}=\\frac{a}{b-4a}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider the set S consisting of all possible words that can be formed by arranging the letters of the word \"CAULDRON\". A word is selected randomly from this set. What is the probability that the selected word does not have its vowels in alphabetical order?\n\n**Options:**\n- **A**. $\\dfrac{1}{4}$\n- **B**. $\\dfrac{1}{6}$\n- **C**. $\\dfrac{1}{2}$\n- **D**. $\\dfrac{5}{6}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe given word is CAULDRON, \nArranging the letter alphabetically, we have, \nA C D L N O R U\nThe total number of ways these letters can be arranged is 8!\nIn any permutation, the three vowels appear in some order. With three distinct vowels (A, O, U), there are 3! for these vowels to appear. \nTo find the number of permutations where the vowels appear in the order A, then O, then U, we select 3 out of 8 positions for A, O, and U. The number of ways to choose three positions is $^8C_3$\nWe can pick any three positions, and there will be only one way to arrange the three vowels alphabetically, and the remaining five consonants can be arranged in 5! Ways. \nHence, the total number of favourable cases will be, $^8C_3\\left(5!\\right)$\nProbability will hence be, $\\dfrac{^8C_3\\left(5!\\right)}{8!}$\nThis will equal, \n$\\dfrac{\\dfrac{8!}{5!3!}\\left(5!\\right)}{8!}$\nThis will equal $\\dfrac{1}{6}$\nThe question asks for when the alphabet is NOT in the given alphabetical order; subtracting the probability by one will give us the desired results. \n$1-\\dfrac{1}{6}=\\dfrac{5}{6}$\nHence, the answer is Option D",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a quadratic equation $ax^2+bx+c=0$, the roots are non zero real numbers and the difference between the roots is 4. What will be equal to $\\frac{b+4a}{4c}$\n\n**Options:**\n- **A**. $\\frac{a}{b+4c}$\n- **B**. $\\frac{a}{b-4c}$\n- **C**. $\\frac{c}{b-4a}$\n- **D**. $\\frac{a}{b-4a}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet $\\alpha$ > $\\beta$ be the roots of the quadratic equation. \nThen $\\alpha + \\beta $ = $\\frac{-b}{a}$ ...(I)\n$\\alpha \\times \\beta = \\frac{c}{a}$ ...(II)\nAs per question we are given $\\alpha - \\beta$ = 4\nSquaring both sides\n$\\left(\\alpha-\\beta\\right)^2=16$\n$\\left(\\alpha+\\beta\\right)^2-4\\alpha\\beta=16$\nPutting the values from (I) and (II)\n$\\frac{b^2}{a^2}-\\frac{4c}{a}=16$\nSince $a \\ne 0$ Cross-multiplying $a^2$\n$b^2-4ca=16a^2$\n$b^2-16a^2=4ca$\n$\\left(b+4a\\right)\\left(b-4a\\right)=4ca$\nThe roots are non zero. Hence c is not zero. So none of the terms in the above products are zero.\nOn re-arranging we get $\\frac{b+4a}{4c}=\\frac{a}{b-4a}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-12",
       "passage_text": "",
-      "question_text": "A tea seller who uses pure milk for preparing tea and sells it at the cost of the milk portion used in the tea realises a loss of 20%. Had he used the mixture of pure milk and powdered milk for the milk portion, he would have made a 30% profit. The cost of powdered milk is 25% of the pure milk. What is the ratio in which pure milk and powdered milk are mixed?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "13:24",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "14:25",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "12:23",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "5:9",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let us assume the cost of milk used in a cup of tea is Rs. 260\nAnd the cost of powdered milk will be Rs. 65.\nWe are told that when he sells tea at Rs. 260, he realises a loss of 20%. So, the actual CP of the tea is $\\frac{260}{0.8}=325$\nThe additional cost other than milk is RS. 65\n \nWe are told that he gets a profit of 30%. So, the new cost would've reduced due to powdered milk, this new cost will be $\\frac{260}{1.3} = 200$\nBecause the additional cost is fixed, the cost of milk portion alone (milk and powdered milk) must've changed to 200-65=135.\nUsing the allegations method, the ratio of the two types of milk mixed is (135-65):(260-135) = 70:125 = 14:25",
+      "question_text": "A group of four women and five men are to be arranged in a straight line. Let $Q$ represent the number of possible arrangements in which all four women stand together, and let $P$ represent the number of possible arrangements in which exactly four men stand together. Find the value of $\\dfrac{3P}{Q}$.",
+      "options": [],
+      "correct_option_data": "10",
+      "solution_text": "$Q$ is the number of ways in which all four women stand together.\nThe four women standing together can do so in $4!$ ways and form a group. This group, along with five other men, form a group having a total of $5+1=6$ entities. The number of ways of arranging these entities will be $6!$. Therefore, the total number of ways of arranging the people such that all four women stand together is $4!\\times 6! =Q$.\n$P$ is the number of ways in which exactly four men stand together.\nConsider a group of four men that can be arranged internally in $4!$ ways. This group, along with one remaining man and the four women, are a total of $6$ entities and can be arranged in $6!$ ways. The total number of ways, therefore, are $4!\\times 6!$. We must remove cases where the remaining man sits adjacent to the group of four men. This can happen in $2\\times 4!\\times 5!$ ways (where the all-man group and the four women form a total of five entities).\nThus, the total cases would be $6!\\times 4! - 2\\times 4!\\times 5! = 4!\\times 480$\nThere are a total of ${}^5C_4=5$ ways of choosing this group.\nTherefore, the value of $P$ is $(5! \\times 480)$.\nWe are to calculate $\\dfrac{3P}{Q}$\n$\\dfrac{3P}{Q} = 3\\times \\dfrac{5! \\times 480}{4!\\times 6!} = 3\\times  \\dfrac{480}{6\\times 24}= 10$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tea seller who uses pure milk for preparing tea and sells it at the cost of the milk portion used in the tea realises a loss of 20%. Had he used the mixture of pure milk and powdered milk for the milk portion, he would have made a 30% profit. The cost of powdered milk is 25% of the pure milk. What is the ratio in which pure milk and powdered milk are mixed?\n\n**Options:**\n- **A**. 13:24\n- **B**. 14:25 ✅\n- **C**. 12:23\n- **D**. 5:9\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the cost of milk used in a cup of tea is Rs. 260\nAnd the cost of powdered milk will be Rs. 65.\nWe are told that when he sells tea at Rs. 260, he realises a loss of 20%. So, the actual CP of the tea is $\\frac{260}{0.8}=325$\nThe additional cost other than milk is RS. 65\n \nWe are told that he gets a profit of 30%. So, the new cost would've reduced due to powdered milk, this new cost will be $\\frac{260}{1.3} = 200$\nBecause the additional cost is fixed, the cost of milk portion alone (milk and powdered milk) must've changed to 200-65=135.\nUsing the allegations method, the ratio of the two types of milk mixed is (135-65):(260-135) = 70:125 = 14:25",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of four women and five men are to be arranged in a straight line. Let $Q$ represent the number of possible arrangements in which all four women stand together, and let $P$ represent the number of possible arrangements in which exactly four men stand together. Find the value of $\\dfrac{3P}{Q}$.\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\n$Q$ is the number of ways in which all four women stand together.\nThe four women standing together can do so in $4!$ ways and form a group. This group, along with five other men, form a group having a total of $5+1=6$ entities. The number of ways of arranging these entities will be $6!$. Therefore, the total number of ways of arranging the people such that all four women stand together is $4!\\times 6! =Q$.\n$P$ is the number of ways in which exactly four men stand together.\nConsider a group of four men that can be arranged internally in $4!$ ways. This group, along with one remaining man and the four women, are a total of $6$ entities and can be arranged in $6!$ ways. The total number of ways, therefore, are $4!\\times 6!$. We must remove cases where the remaining man sits adjacent to the group of four men. This can happen in $2\\times 4!\\times 5!$ ways (where the all-man group and the four women form a total of five entities).\nThus, the total cases would be $6!\\times 4! - 2\\times 4!\\times 5! = 4!\\times 480$\nThere are a total of ${}^5C_4=5$ ways of choosing this group.\nTherefore, the value of $P$ is $(5! \\times 480)$.\nWe are to calculate $\\dfrac{3P}{Q}$\n$\\dfrac{3P}{Q} = 3\\times \\dfrac{5! \\times 480}{4!\\times 6!} = 3\\times  \\dfrac{480}{6\\times 24}= 10$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-13",
       "passage_text": "",
-      "question_text": "Akhil and Ajay can complete a certain task in 32 days. However, if Akhil works alone and completes half of the job, and then Ajay takes over and completes the rest of the work, it takes 72 days in total. How long will it take for Akhil to complete the task alone if it is known that Ajay is more efficient than Akhil?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "84 days",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "48 days",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "96 days",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "42 days",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let the work done by Akhil in a single day be x and the work done by Ajay in a single day be y. Let the total work be W.\nWork done by Akhil and Ajay in 32 days is calculated as,\n32(x + y) = W  ---(1)\nSo, half of the total work is,\n$\\dfrac{W}{2}\\ =\\ 16\\left(x\\ +\\ y\\right)$\nSo, Akhil does 16(x + y) amount of work, and Ajay does 16(x + y) amount of work in 72 days.\nTime taken by Akhil to do 16(x + y) work is $\\dfrac{16\\left(x\\ +\\ y\\right)}{x}$\nTime taken by Ajay to do 16(x + y) work is $\\dfrac{16\\left(x\\ +\\ y\\right)}{y}$\n$\\frac{16\\left(x\\ +\\ y\\right)}{x}\\ +\\ \\frac{16\\left(x\\ +\\ y\\right)}{y}\\ =\\ 72$\n$16\\ +\\ 16\\frac{y}{x}\\ +\\ 16\\ +\\ 16\\frac{x}{y}\\ =\\ 72$\n$16\\left(\\frac{x}{y}\\ +\\ \\frac{y}{x}\\right)\\ =\\ 40$\nLet $\\dfrac{x}{y}\\ =\\ t$\n$t\\ \\ +\\ \\dfrac{1}{t}\\ =\\ \\dfrac{5}{2}$\n$t^2\\ -\\ \\dfrac{5}{2}t\\ +\\ 1\\ =\\ 0$\n$\\left(t\\ -\\ 2\\right)\\left(t\\ -\\ \\dfrac{1}{2}\\right)\\ =\\ 0$\n$t\\ =\\ 2\\ or\\ t\\ =\\dfrac{1}{2}$\nGiven that Ajay is more efficient than Akhil, the value of y > x and $\\dfrac{x}{y}\\ =\\ \\dfrac{1}{2}$ \ny = 2x\nSubstituting it in (1), we get\n32(x + 2x) = W\nW = 96x\nTime taken by Akhil to complete W  = $\\dfrac{W}{x}\\ =\\ \\dfrac{96x}{x}\\ =\\ 96\\ days$\nHence, the correct answer is option C.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAkhil and Ajay can complete a certain task in 32 days. However, if Akhil works alone and completes half of the job, and then Ajay takes over and completes the rest of the work, it takes 72 days in total. How long will it take for Akhil to complete the task alone if it is known that Ajay is more efficient than Akhil?\n\n**Options:**\n- **A**. 84 days\n- **B**. 48 days\n- **C**. 96 days ✅\n- **D**. 42 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet the work done by Akhil in a single day be x and the work done by Ajay in a single day be y. Let the total work be W.\nWork done by Akhil and Ajay in 32 days is calculated as,\n32(x + y) = W  ---(1)\nSo, half of the total work is,\n$\\dfrac{W}{2}\\ =\\ 16\\left(x\\ +\\ y\\right)$\nSo, Akhil does 16(x + y) amount of work, and Ajay does 16(x + y) amount of work in 72 days.\nTime taken by Akhil to do 16(x + y) work is $\\dfrac{16\\left(x\\ +\\ y\\right)}{x}$\nTime taken by Ajay to do 16(x + y) work is $\\dfrac{16\\left(x\\ +\\ y\\right)}{y}$\n$\\frac{16\\left(x\\ +\\ y\\right)}{x}\\ +\\ \\frac{16\\left(x\\ +\\ y\\right)}{y}\\ =\\ 72$\n$16\\ +\\ 16\\frac{y}{x}\\ +\\ 16\\ +\\ 16\\frac{x}{y}\\ =\\ 72$\n$16\\left(\\frac{x}{y}\\ +\\ \\frac{y}{x}\\right)\\ =\\ 40$\nLet $\\dfrac{x}{y}\\ =\\ t$\n$t\\ \\ +\\ \\dfrac{1}{t}\\ =\\ \\dfrac{5}{2}$\n$t^2\\ -\\ \\dfrac{5}{2}t\\ +\\ 1\\ =\\ 0$\n$\\left(t\\ -\\ 2\\right)\\left(t\\ -\\ \\dfrac{1}{2}\\right)\\ =\\ 0$\n$t\\ =\\ 2\\ or\\ t\\ =\\dfrac{1}{2}$\nGiven that Ajay is more efficient than Akhil, the value of y > x and $\\dfrac{x}{y}\\ =\\ \\dfrac{1}{2}$ \ny = 2x\nSubstituting it in (1), we get\n32(x + 2x) = W\nW = 96x\nTime taken by Akhil to complete W  = $\\dfrac{W}{x}\\ =\\ \\dfrac{96x}{x}\\ =\\ 96\\ days$\nHence, the correct answer is option C.",
+      "question_text": "In △ABC, side BC = 8 cm. Point D lies on AC such that DC = 4 cm. It is given that ∠DBC=∠BAC=θ . find the area of △ABC , if the area of △ABD is $15\\ cm^2$.",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "Let the area of △BDC = \"X\" $cm^2$.\nNow, △BDC is similar to △ABC using AA criterion . \nSo, the ratio of areas of triangles △BDC & △ABC :  $\\dfrac{\\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ ABC\\right]}=\\dfrac{\\ DC^2}{BC^2}$\n        \n                        =  $\\ \\dfrac{\\ \\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ ABC\\right]}=\\dfrac{\\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ BDC\\right]+\\left[\\triangle\\ ABD\\right]}=\\dfrac{\\ DC^2}{BC^2}$\n                        =  $\\dfrac{X\\ }{X+15}=\\left(\\dfrac{\\ 4}{8}\\right)^{2\\ }=\\dfrac{\\ 1}{4}$\n            Hence,  $X=5\\ cm^2$\nTherefore, the area of △ABC = [△BDC] + [△ABD] = 5 + 15 = $20\\ cm^2$",
+      "image_url": "https://cracku.in/media/uploads/Updated%20figure%20_triangle.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn △ABC, side BC = 8 cm. Point D lies on AC such that DC = 4 cm. It is given that ∠DBC=∠BAC=θ . find the area of △ABC , if the area of △ABD is $15\\ cm^2$.\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nLet the area of △BDC = \"X\" $cm^2$.\nNow, △BDC is similar to △ABC using AA criterion . \nSo, the ratio of areas of triangles △BDC & △ABC :  $\\dfrac{\\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ ABC\\right]}=\\dfrac{\\ DC^2}{BC^2}$\n        \n                        =  $\\ \\dfrac{\\ \\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ ABC\\right]}=\\dfrac{\\left[\\triangle\\ BDC\\right]}{\\left[\\triangle\\ BDC\\right]+\\left[\\triangle\\ ABD\\right]}=\\dfrac{\\ DC^2}{BC^2}$\n                        =  $\\dfrac{X\\ }{X+15}=\\left(\\dfrac{\\ 4}{8}\\right)^{2\\ }=\\dfrac{\\ 1}{4}$\n            Hence,  $X=5\\ cm^2$\nTherefore, the area of △ABC = [△BDC] + [△ABD] = 5 + 15 = $20\\ cm^2$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-14",
       "passage_text": "",
-      "question_text": "In the given figure, $ABCD$ is a cyclic quadrilateral with $AB=8$ cm, and $BC=3$ cm, if $\\angle BAD$ is $60 ^\\circ$, and $AD=CD$, find $AC$.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\dfrac{73}{3}$ cm",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\dfrac{55}{7}$ cm",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$\\dfrac{22}{3}$ cm",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\dfrac{17}{\\sqrt{3}}$ cm",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let $AD=CD$ be $x$, using cosine formula on $\\triangle BAD$ we get,\n$BD^2 = x^2 + 8^2 - 16x\\text{ cos }60^\\circ$ ________________(1)\nSimilarly, in $\\triangle BCD$, $\\angle BCD = 180^\\circ - 60^\\circ = 120^\\circ$ as $ABCD$ is a cyclic quadrilateral. Again applying the cosine formula, we get,\n$BD^2 = x^2 + 3^2 - 6x\\text{ cos }120^\\circ$ _______________(2)\nFrom equations (1) and (2), we have,\n$x^2+64-16x\\left(\\frac{1}{2}\\right) = x^2+9-6x\\left(\\frac{-1}{2}\\right)$\nThis will further give us, $64-9 = 8x+3x$ \nor $x=5$, putting which in equation (1) would give $BD=7$ cm\nTherefore, by Ptolemy's Theorem, we get $AC\\times BD = AB\\times CD + BC\\times AD$\n$7AC = 40 + 15$, or $AC = \\dfrac{55}{7}$ cm\nThe correct answer, therefore, is option B.",
-      "image_url": "https://cracku.in/media/uploads/Screenshot_2025-09-17_4.05.31_PM-removebg-preview.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the given figure, $ABCD$ is a cyclic quadrilateral with $AB=8$ cm, and $BC=3$ cm, if $\\angle BAD$ is $60 ^\\circ$, and $AD=CD$, find $AC$.\n\n**Options:**\n- **A**. $\\dfrac{73}{3}$ cm\n- **B**. $\\dfrac{55}{7}$ cm ✅\n- **C**. $\\dfrac{22}{3}$ cm\n- **D**. $\\dfrac{17}{\\sqrt{3}}$ cm\n\n**Correct Answer:** null\n\n**Solution:**\nLet $AD=CD$ be $x$, using cosine formula on $\\triangle BAD$ we get,\n$BD^2 = x^2 + 8^2 - 16x\\text{ cos }60^\\circ$ ________________(1)\nSimilarly, in $\\triangle BCD$, $\\angle BCD = 180^\\circ - 60^\\circ = 120^\\circ$ as $ABCD$ is a cyclic quadrilateral. Again applying the cosine formula, we get,\n$BD^2 = x^2 + 3^2 - 6x\\text{ cos }120^\\circ$ _______________(2)\nFrom equations (1) and (2), we have,\n$x^2+64-16x\\left(\\frac{1}{2}\\right) = x^2+9-6x\\left(\\frac{-1}{2}\\right)$\nThis will further give us, $64-9 = 8x+3x$ \nor $x=5$, putting which in equation (1) would give $BD=7$ cm\nTherefore, by Ptolemy's Theorem, we get $AC\\times BD = AB\\times CD + BC\\times AD$\n$7AC = 40 + 15$, or $AC = \\dfrac{55}{7}$ cm\nThe correct answer, therefore, is option B.",
+      "question_text": "Peter divided some amount of money among his two sons and two daughters in the ratio $\\dfrac{1}{9} :\\dfrac{1}{17} : \\dfrac{1}{11} : \\dfrac{1}{13}$. If the difference between the highest amount and the lowest amount is Rs. 5720, what is the total amount distributed?",
+      "options": [],
+      "correct_option_data": "36950",
+      "solution_text": "The ratio of the amount is $\\dfrac{1}{9} :\\dfrac{1}{17} : \\dfrac{1}{11} : \\dfrac{1}{13}$\nLCM of 9, 17, 11 and 13 is 21879\nWe can write the ratio as $\\dfrac{21879}{9} :\\dfrac{21879}{17} : \\dfrac{21879}{11} : \\dfrac{21879}{13}$ \nwhich is 2431 : 1287 : 1989 : 1683\nLet the amounts distributed be 2431k, 1287k, 1989k, 1683k\nIt is given that 2431k - 1287k = 1144k = 5720\nSo, k = 5\nTherefore, the total amount distributed = (2431 + 1287 + 1989 + 1683)*5 = Rs. 36950\nHence, 36950 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPeter divided some amount of money among his two sons and two daughters in the ratio $\\dfrac{1}{9} :\\dfrac{1}{17} : \\dfrac{1}{11} : \\dfrac{1}{13}$. If the difference between the highest amount and the lowest amount is Rs. 5720, what is the total amount distributed?\n\n**Options:**\n\n**Correct Answer:** 36950\n\n**Solution:**\nThe ratio of the amount is $\\dfrac{1}{9} :\\dfrac{1}{17} : \\dfrac{1}{11} : \\dfrac{1}{13}$\nLCM of 9, 17, 11 and 13 is 21879\nWe can write the ratio as $\\dfrac{21879}{9} :\\dfrac{21879}{17} : \\dfrac{21879}{11} : \\dfrac{21879}{13}$ \nwhich is 2431 : 1287 : 1989 : 1683\nLet the amounts distributed be 2431k, 1287k, 1989k, 1683k\nIt is given that 2431k - 1287k = 1144k = 5720\nSo, k = 5\nTherefore, the total amount distributed = (2431 + 1287 + 1989 + 1683)*5 = Rs. 36950\nHence, 36950 is the correct answer.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-15",
       "passage_text": "",
-      "question_text": "Mohit has two clocks placed in two different rooms. The clock in Room 1 is accurate, while the clock in Room 2 is defective and gains 15 minutes every hour. Both clocks were set correctly at 1:00 PM. What is the angle between the hour and minute hands of the clock in Room 2 when the clock in Room 1 shows 9:20 PM?",
+      "question_text": "A triangle ABC is inscribed inside a circle, as shown in the diagram. Point B lies on the circle's circumference, and a tangent PQ is drawn that touches the circle at point B. Given that AB is a diameter of length 14 cm and the angle PBC is 60 degrees. Find the sum of areas of segments AC and BC. Assume $\\pi\\ =\\dfrac{22}{7}$",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "157.5$^{\\circ\\ }$",
+          "option_text": "30.52$cm^2$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "167.5$^{\\circ\\ }$",
+          "option_text": "34.56$cm^2$",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "147.5$^{\\circ\\ }$",
+          "option_text": "41.24$cm^2$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "137.5$^{\\circ\\ }$",
+          "option_text": "39.24$cm^2$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us name the clock in room 1 as P and clock in room 2 as Q.\nClock P is accurate, while Clock Q is defective.\nLet us understand how timing works in Clock Q.\nClock Q gains 15 minutes every hour.\nThe Clocks are set correctly at 1 PM.\nSo, when Clock P shows 9 PM, Clock Q will show 11 PM (In 8 hours from 1 PM to 9 PM, it will gain 120 min)\nSince the clock gains 15 minutes in 60 minutes.\nAlso, for 20 minutes extra above 9 PM, the clock gains 5 minutes.\nSo, the time on Clock Q will be 11:25 PM\nTherefore, the angle between the minute hand and the hour hand at 11:25 PM will be\nThe minute hand moves 6$^{\\circ\\ }$ in 1 minute.\nTherefore, in 25 minutes, minute hand will be at angle of 25*6 = 150$^{\\circ\\ }$.\nThe hour hand moves 30$^{\\circ\\ }$ in 1 hour, so in 11 hours, the hour hand will be at 11*30 = 330$^{\\circ\\ }$\nAlso, in 25 minutes, the hour hand will move. 25/60*30 = 12.5$^{\\circ\\ }$\nThus, the hour hand will be at 330+12.5 = 342.5$^{\\circ\\ }$.\nThe minute hand will be at = 150$^{\\circ\\ }$\nTherefore, the angle between them = 342.5 - 150 = 192.5$^{\\circ\\ }$\nThe smaller angle will be 360-192.5 = 167.5$^{\\circ\\ }$",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMohit has two clocks placed in two different rooms. The clock in Room 1 is accurate, while the clock in Room 2 is defective and gains 15 minutes every hour. Both clocks were set correctly at 1:00 PM. What is the angle between the hour and minute hands of the clock in Room 2 when the clock in Room 1 shows 9:20 PM?\n\n**Options:**\n- **A**. 157.5$^{\\circ\\ }$\n- **B**. 167.5$^{\\circ\\ }$ ✅\n- **C**. 147.5$^{\\circ\\ }$\n- **D**. 137.5$^{\\circ\\ }$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us name the clock in room 1 as P and clock in room 2 as Q.\nClock P is accurate, while Clock Q is defective.\nLet us understand how timing works in Clock Q.\nClock Q gains 15 minutes every hour.\nThe Clocks are set correctly at 1 PM.\nSo, when Clock P shows 9 PM, Clock Q will show 11 PM (In 8 hours from 1 PM to 9 PM, it will gain 120 min)\nSince the clock gains 15 minutes in 60 minutes.\nAlso, for 20 minutes extra above 9 PM, the clock gains 5 minutes.\nSo, the time on Clock Q will be 11:25 PM\nTherefore, the angle between the minute hand and the hour hand at 11:25 PM will be\nThe minute hand moves 6$^{\\circ\\ }$ in 1 minute.\nTherefore, in 25 minutes, minute hand will be at angle of 25*6 = 150$^{\\circ\\ }$.\nThe hour hand moves 30$^{\\circ\\ }$ in 1 hour, so in 11 hours, the hour hand will be at 11*30 = 330$^{\\circ\\ }$\nAlso, in 25 minutes, the hour hand will move. 25/60*30 = 12.5$^{\\circ\\ }$\nThus, the hour hand will be at 330+12.5 = 342.5$^{\\circ\\ }$.\nThe minute hand will be at = 150$^{\\circ\\ }$\nTherefore, the angle between them = 342.5 - 150 = 192.5$^{\\circ\\ }$\nThe smaller angle will be 360-192.5 = 167.5$^{\\circ\\ }$",
+      "solution_text": "Given that ABC is a triangle,\nAB = 14 cm\n$\\angle PBC$ = $60^{\\circ\\ }$\n$\\angle ACB$ = $90^{\\circ\\ }$  (Angle subtended by diameter on any point on the circle is $90^{\\circ\\ }$)\n$\\angle ABC$ = $30^{\\circ\\ }$ (Angle between tangent and centre of circle)\nHence, the Area of two segments AC and BC = Area of semi-circle - Area of triangle(ABC)\nArea of semicircle = $\\frac{\\pi r^2}{2}$ = $\\ 77$ $cm^2$\nArea of triangle ABC = $\\dfrac{1}{2}\\times\\ AB\\times\\ AC\\times\\sin A$\nAB = 14cm\n$\\sin B\\ =\\ \\dfrac{AC\\ }{AB}$ \n$\\sin30\\ =\\ \\dfrac{AC\\ }{14}$\nAC = 7 cm\n$\\angle\\ A\\ =\\ 60^{\\circ\\ }$\n$\\sin A\\ =\\ \\sin60\\ =\\ \\dfrac{\\sqrt{3}}{2}$\nThus, the area of the triangle = $\\dfrac{1}{2}\\times\\ AB\\times\\ AC\\times\\sin A$\n=> $\\dfrac{1}{2}\\times14\\times\\ 7\\times\\dfrac{\\sqrt{3}}{2}$ = $\\dfrac{49\\sqrt{3}}{2}$\nArea of segments AC and BC = 77 - $\\dfrac{49\\sqrt{3}}{2}$ = 77-42.44 = 34.56 $cm^2$",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230814_092552_4w6FOuF.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA triangle ABC is inscribed inside a circle, as shown in the diagram. Point B lies on the circle's circumference, and a tangent PQ is drawn that touches the circle at point B. Given that AB is a diameter of length 14 cm and the angle PBC is 60 degrees. Find the sum of areas of segments AC and BC. Assume $\\pi\\ =\\dfrac{22}{7}$\n\n**Options:**\n- **A**. 30.52$cm^2$\n- **B**. 34.56$cm^2$ ✅\n- **C**. 41.24$cm^2$\n- **D**. 39.24$cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that ABC is a triangle,\nAB = 14 cm\n$\\angle PBC$ = $60^{\\circ\\ }$\n$\\angle ACB$ = $90^{\\circ\\ }$  (Angle subtended by diameter on any point on the circle is $90^{\\circ\\ }$)\n$\\angle ABC$ = $30^{\\circ\\ }$ (Angle between tangent and centre of circle)\nHence, the Area of two segments AC and BC = Area of semi-circle - Area of triangle(ABC)\nArea of semicircle = $\\frac{\\pi r^2}{2}$ = $\\ 77$ $cm^2$\nArea of triangle ABC = $\\dfrac{1}{2}\\times\\ AB\\times\\ AC\\times\\sin A$\nAB = 14cm\n$\\sin B\\ =\\ \\dfrac{AC\\ }{AB}$ \n$\\sin30\\ =\\ \\dfrac{AC\\ }{14}$\nAC = 7 cm\n$\\angle\\ A\\ =\\ 60^{\\circ\\ }$\n$\\sin A\\ =\\ \\sin60\\ =\\ \\dfrac{\\sqrt{3}}{2}$\nThus, the area of the triangle = $\\dfrac{1}{2}\\times\\ AB\\times\\ AC\\times\\sin A$\n=> $\\dfrac{1}{2}\\times14\\times\\ 7\\times\\dfrac{\\sqrt{3}}{2}$ = $\\dfrac{49\\sqrt{3}}{2}$\nArea of segments AC and BC = 77 - $\\dfrac{49\\sqrt{3}}{2}$ = 77-42.44 = 34.56 $cm^2$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-16",
       "passage_text": "",
-      "question_text": "A shopkeeper buys 172 items: Type A items cost 20 and Type B items cost 30 rupees each. Half of the Type A items are defective and sold at a 40% loss, while the other half are non-defective and sold at a 50% profit. Among the type B items, one-third are defective and sold at a 20% loss, and the remaining two-thirds are non-defective and sold at a 40% profit. If the overall profit is 10%, find the revenue (in rupees) generated by selling Type A items.",
-      "options": [],
-      "correct_option_data": "2709",
-      "solution_text": "Let us consider the number of items as A and B, respectively, with A+B=172. \nCost Price will be: 20A+30B\nThe statement regarding Type A items is, \"Half of the Type A items are defective and sold at a 40% loss, while the other half are non-defective and sold at a 50% profit\"\nDrawing up the equation for it, \n$\\left(\\frac{A}{2}\\right)\\left(12\\right)+\\left(\\frac{A}{2}\\right)\\left(30\\right)=21A$\nThe statement regarding Type B items is, \"Among the type B items, one-third are defective and sold at a 20% loss, and the remaining two-thirds are non-defective and sold at a 40% profit\"\nDrawing up the equation for it, \n$\\left(\\frac{B}{3}\\right)\\left(24\\right)+\\left(\\frac{2B}{3}\\right)\\left(42\\right)=36B$\nProfit% is, \n$\\frac{6B+A}{20A+30B}=0.1$\n$6B+A=2A+3B$\n$3B=A$\nSubstituting this in the initial equation, we have, \n4B=172\nB=43\nThe revenue from selling Type A items is 21A, which will be 21(129)=2709.",
+      "question_text": "f(x) is a function of ‘x’ which is an integer. \nIf 2*f(b) + 3*f(40-b) = b\nWhat can be said about f(0) - 1?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "it is a composite number",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "when it is divided by 5, the remainder is 1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "it is a prime number",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "more than one of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given in the question that, \n2*f(b) + 3*f(40-b) = b …(1)\nReplace ‘b’ by ’40-b’, we get,\n2*f(40-b) + 3*f(b) = 40-b …(2)\n3*(1) - 2*(2), we get\n5*f(40-b) = 3b - 80 + 2b \nf(40-b) = b - 16\nSubstituting b = 40, we get,\nf(0) = 24\nSo, f(0) - 1 = 23\n23 is a prime number. \nHence, option C is the right choice.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper buys 172 items: Type A items cost 20 and Type B items cost 30 rupees each. Half of the Type A items are defective and sold at a 40% loss, while the other half are non-defective and sold at a 50% profit. Among the type B items, one-third are defective and sold at a 20% loss, and the remaining two-thirds are non-defective and sold at a 40% profit. If the overall profit is 10%, find the revenue (in rupees) generated by selling Type A items.\n\n**Options:**\n\n**Correct Answer:** 2709\n\n**Solution:**\nLet us consider the number of items as A and B, respectively, with A+B=172. \nCost Price will be: 20A+30B\nThe statement regarding Type A items is, \"Half of the Type A items are defective and sold at a 40% loss, while the other half are non-defective and sold at a 50% profit\"\nDrawing up the equation for it, \n$\\left(\\frac{A}{2}\\right)\\left(12\\right)+\\left(\\frac{A}{2}\\right)\\left(30\\right)=21A$\nThe statement regarding Type B items is, \"Among the type B items, one-third are defective and sold at a 20% loss, and the remaining two-thirds are non-defective and sold at a 40% profit\"\nDrawing up the equation for it, \n$\\left(\\frac{B}{3}\\right)\\left(24\\right)+\\left(\\frac{2B}{3}\\right)\\left(42\\right)=36B$\nProfit% is, \n$\\frac{6B+A}{20A+30B}=0.1$\n$6B+A=2A+3B$\n$3B=A$\nSubstituting this in the initial equation, we have, \n4B=172\nB=43\nThe revenue from selling Type A items is 21A, which will be 21(129)=2709.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nf(x) is a function of ‘x’ which is an integer. \nIf 2*f(b) + 3*f(40-b) = b\nWhat can be said about f(0) - 1?\n\n**Options:**\n- **A**. it is a composite number\n- **B**. when it is divided by 5, the remainder is 1\n- **C**. it is a prime number ✅\n- **D**. more than one of the above\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given in the question that, \n2*f(b) + 3*f(40-b) = b …(1)\nReplace ‘b’ by ’40-b’, we get,\n2*f(40-b) + 3*f(b) = 40-b …(2)\n3*(1) - 2*(2), we get\n5*f(40-b) = 3b - 80 + 2b \nf(40-b) = b - 16\nSubstituting b = 40, we get,\nf(0) = 24\nSo, f(0) - 1 = 23\n23 is a prime number. \nHence, option C is the right choice.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-17",
       "passage_text": "",
-      "question_text": "Find the remainder when $17^{92}$ is divided 33?",
+      "question_text": "How many natural numbers X,Y and Z exist such that X*Y*Z = 144?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "21",
+          "option_text": "84",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "23",
+          "option_text": "72",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "25",
-          "is_correct": true
+          "option_text": "60",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "27",
-          "is_correct": false
+          "option_text": "90",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We need to find the remainder when $17^{92}$ is divided 33.\nWhen the divisor can be split into two co-prime factors and the \nnumber is divided with individual factors, an equation is formed: ax+by =\n1. After solving this equation, the integral values of x and y are \nfound out.\nChinese remainder theorem : M mod N = (aqx+bpy) mod N where\na and b are co-prime factors of N\np and q are remainders such that M mod a = p and M mod b = q\nx and y are integers satisfying the equation ax+by = 1\nWe know 33 can be split into two co-prime factors as 3 and 11\na = 3 and b = 11\nLet us divide $17^{92}$ by 3\nUsing Fermat's theorem, we know $17^2\\ mod\\ 3\\ =\\ 1$\nThus, $17^{92}$ mod 3 = $\\left(17^2\\right)^{46}\\ mod\\ 3\\ =\\ 1$\nTherefore, the remainder is 1.\np = 1\nNow, Let us divide $17^{92}$ by 11\nUsing Fermat's theorem, we know $17^{10}\\ mod\\ 11\\ =\\ 1$\nThus, $17^{92}$ mod 11 = $\\left(17^{10}\\right)^9\\ mod\\ 10\\ =\\ 1$\nRemaining number is 17*17 mod 11 = 289 mod 11 = 3\nq = 3\nNow, px+qy = 1\nx+3y = 1\nTherefore, x = 4 and y = -1\nTherefore, M mod N = (aqx+bpy) mod N\na = 3 and b = 11\n$17^{92}$ mod 33 = (3*3*4+11*1*-1) mod 33\n(36-11) mod 33 = 25 mod 33\nThus, the remainder is 25.",
+      "solution_text": "$X*Y*Z=2^4*3^2$\nLet $X = 2^x3^a$\n$X = 2^y3^b$\n$X = 2^z3^c$\na,b,c,x,y,z are non-negative.\nHence we have x + y + z = 4 and a + b + c = 2\nHence he number of solutions to the equation = (Number of non negative integral solutions of the equation x+y+z=4) * (Number of non negative integral solutions of the equation a+b+c=2)\nNumber of non negative integral solutions for x1 + x2 + ... + xr = n is $^{n+r-1} C_{r-1}$ \nHence he number of solutions to the equation=$^{4+3-1} C_{3-1} * ^{2+3-1} C_{3-1}$ = $^6 C_2 * ^4 C_2=90$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the remainder when $17^{92}$ is divided 33?\n\n**Options:**\n- **A**. 21\n- **B**. 23\n- **C**. 25 ✅\n- **D**. 27\n\n**Correct Answer:** null\n\n**Solution:**\nWe need to find the remainder when $17^{92}$ is divided 33.\nWhen the divisor can be split into two co-prime factors and the \nnumber is divided with individual factors, an equation is formed: ax+by =\n1. After solving this equation, the integral values of x and y are \nfound out.\nChinese remainder theorem : M mod N = (aqx+bpy) mod N where\na and b are co-prime factors of N\np and q are remainders such that M mod a = p and M mod b = q\nx and y are integers satisfying the equation ax+by = 1\nWe know 33 can be split into two co-prime factors as 3 and 11\na = 3 and b = 11\nLet us divide $17^{92}$ by 3\nUsing Fermat's theorem, we know $17^2\\ mod\\ 3\\ =\\ 1$\nThus, $17^{92}$ mod 3 = $\\left(17^2\\right)^{46}\\ mod\\ 3\\ =\\ 1$\nTherefore, the remainder is 1.\np = 1\nNow, Let us divide $17^{92}$ by 11\nUsing Fermat's theorem, we know $17^{10}\\ mod\\ 11\\ =\\ 1$\nThus, $17^{92}$ mod 11 = $\\left(17^{10}\\right)^9\\ mod\\ 10\\ =\\ 1$\nRemaining number is 17*17 mod 11 = 289 mod 11 = 3\nq = 3\nNow, px+qy = 1\nx+3y = 1\nTherefore, x = 4 and y = -1\nTherefore, M mod N = (aqx+bpy) mod N\na = 3 and b = 11\n$17^{92}$ mod 33 = (3*3*4+11*1*-1) mod 33\n(36-11) mod 33 = 25 mod 33\nThus, the remainder is 25.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many natural numbers X,Y and Z exist such that X*Y*Z = 144?\n\n**Options:**\n- **A**. 84\n- **B**. 72\n- **C**. 60\n- **D**. 90 ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$X*Y*Z=2^4*3^2$\nLet $X = 2^x3^a$\n$X = 2^y3^b$\n$X = 2^z3^c$\na,b,c,x,y,z are non-negative.\nHence we have x + y + z = 4 and a + b + c = 2\nHence he number of solutions to the equation = (Number of non negative integral solutions of the equation x+y+z=4) * (Number of non negative integral solutions of the equation a+b+c=2)\nNumber of non negative integral solutions for x1 + x2 + ... + xr = n is $^{n+r-1} C_{r-1}$ \nHence he number of solutions to the equation=$^{4+3-1} C_{3-1} * ^{2+3-1} C_{3-1}$ = $^6 C_2 * ^4 C_2=90$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-18",
       "passage_text": "",
-      "question_text": "Let A, B, C, D be four natural numbers such that $A:B=5:8,\\ B:C=12:7$ and $A:D=9:11$. If A is increased by 20% and B is reduced by 25%, then the average of the four numbers decreases by 18. Find the sum of the original values of A and D.",
-      "options": [],
-      "correct_option_data": "800",
-      "solution_text": "Whenever different ratio are given between same variables, in those cases we will try to bring all variables in some particular ratio. That is we will try to find A:B:C:D.\n$A:B=5:8$ => $A:B=15:24$ and \n$B:C=12:7$ => $B:C=24:14$\n=> $A:B:C=15:24:14\\rightarrow1$\nNow $A:D=9:11$ => $A:D=45:55$ \nAnd $A:B:C=45:72:42$  (Multiplying the ratio by 3 in $1$)\n=> $A:B:C:D=45:72:42:55$\nLet us assume $A=45x,\\ B=72x,\\ C=42x,\\ D=55x$ and the average will be $\\dfrac{214x}{4}$\nNow, A is increased by 20% and B is reduced by 25% \n=> $A=54x,\\ B=54x,\\ C=42x,\\ D=55x$ and the average will be $\\dfrac{205x}{4}$\nNow the average is reduced by 18.\n=> $\\dfrac{214x}{4}-\\dfrac{205x}{4}=18$\n=> $\\dfrac{9x}{4}=18$ => $x=8$.\n=> sum of the original values of A and D = $45x+55x=100x=800$",
+      "question_text": "There are four boxes, each containing 12 balls. The number of red balls in the boxes is 4, 5, 6, and 7, respectively. If a box is chosen at random and a ball is picked from it, what is the probability that the selected ball is red?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{11}{24}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{23}{48}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{25}{48}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{13}{24}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Four boxes contain 12 balls each. The number of red balls in the boxes is\nBox 1: 4 red balls, Box 2: 5 red balls, Box 3: 6 red balls, and Box 4: 7 red balls\nA box is chosen at random, and then a ball is picked at random from that box. \nLet B1, B2, B3 and B4​ be the events of choosing Box 1, Box 2, Box 3, and Box 4.\nLet R be the event that the picked ball is red.\nSince a box is chosen at random,\nP(B1) = P(B2) = P(B3) = P(B4) = $\\dfrac{1}{4}$\nThe probability of picking a red ball given a particular box is\n$P\\left(\\dfrac{R}{B1}\\right)=\\dfrac{4}{12}$\n$P\\left(\\dfrac{R}{B2}\\right)=\\dfrac{5}{12}$\n$P\\left(\\dfrac{R}{B3}\\right)=\\dfrac{6}{12}$\n$P\\left(\\dfrac{R}{B4}\\right)=\\dfrac{7}{12}$\nNow, using the total probability formula\n$P\\left(R\\right)$ = $P\\left(B1\\right)\\times P\\left(\\dfrac{R}{B1}\\right)+P\\left(B2\\right)\\times P\\left(\\dfrac{R}{B2}\\right)+P\\left(B3\\right)\\times P\\left(\\dfrac{R}{B3}\\right)+P\\left(B4\\right)\\times P\\left(\\dfrac{R}{B4}\\right)$\n$P\\left(R\\right)$ = $\\dfrac{1}{4}\\left[\\dfrac{4}{12}+\\dfrac{5}{12}+\\dfrac{6}{12}+\\dfrac{7}{12}\\right]=\\dfrac{11}{24}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet A, B, C, D be four natural numbers such that $A:B=5:8,\\ B:C=12:7$ and $A:D=9:11$. If A is increased by 20% and B is reduced by 25%, then the average of the four numbers decreases by 18. Find the sum of the original values of A and D.\n\n**Options:**\n\n**Correct Answer:** 800\n\n**Solution:**\nWhenever different ratio are given between same variables, in those cases we will try to bring all variables in some particular ratio. That is we will try to find A:B:C:D.\n$A:B=5:8$ => $A:B=15:24$ and \n$B:C=12:7$ => $B:C=24:14$\n=> $A:B:C=15:24:14\\rightarrow1$\nNow $A:D=9:11$ => $A:D=45:55$ \nAnd $A:B:C=45:72:42$  (Multiplying the ratio by 3 in $1$)\n=> $A:B:C:D=45:72:42:55$\nLet us assume $A=45x,\\ B=72x,\\ C=42x,\\ D=55x$ and the average will be $\\dfrac{214x}{4}$\nNow, A is increased by 20% and B is reduced by 25% \n=> $A=54x,\\ B=54x,\\ C=42x,\\ D=55x$ and the average will be $\\dfrac{205x}{4}$\nNow the average is reduced by 18.\n=> $\\dfrac{214x}{4}-\\dfrac{205x}{4}=18$\n=> $\\dfrac{9x}{4}=18$ => $x=8$.\n=> sum of the original values of A and D = $45x+55x=100x=800$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are four boxes, each containing 12 balls. The number of red balls in the boxes is 4, 5, 6, and 7, respectively. If a box is chosen at random and a ball is picked from it, what is the probability that the selected ball is red?\n\n**Options:**\n- **A**. $\\dfrac{11}{24}$ ✅\n- **B**. $\\dfrac{23}{48}$\n- **C**. $\\dfrac{25}{48}$\n- **D**. $\\dfrac{13}{24}$\n\n**Correct Answer:** null\n\n**Solution:**\nFour boxes contain 12 balls each. The number of red balls in the boxes is\nBox 1: 4 red balls, Box 2: 5 red balls, Box 3: 6 red balls, and Box 4: 7 red balls\nA box is chosen at random, and then a ball is picked at random from that box. \nLet B1, B2, B3 and B4​ be the events of choosing Box 1, Box 2, Box 3, and Box 4.\nLet R be the event that the picked ball is red.\nSince a box is chosen at random,\nP(B1) = P(B2) = P(B3) = P(B4) = $\\dfrac{1}{4}$\nThe probability of picking a red ball given a particular box is\n$P\\left(\\dfrac{R}{B1}\\right)=\\dfrac{4}{12}$\n$P\\left(\\dfrac{R}{B2}\\right)=\\dfrac{5}{12}$\n$P\\left(\\dfrac{R}{B3}\\right)=\\dfrac{6}{12}$\n$P\\left(\\dfrac{R}{B4}\\right)=\\dfrac{7}{12}$\nNow, using the total probability formula\n$P\\left(R\\right)$ = $P\\left(B1\\right)\\times P\\left(\\dfrac{R}{B1}\\right)+P\\left(B2\\right)\\times P\\left(\\dfrac{R}{B2}\\right)+P\\left(B3\\right)\\times P\\left(\\dfrac{R}{B3}\\right)+P\\left(B4\\right)\\times P\\left(\\dfrac{R}{B4}\\right)$\n$P\\left(R\\right)$ = $\\dfrac{1}{4}\\left[\\dfrac{4}{12}+\\dfrac{5}{12}+\\dfrac{6}{12}+\\dfrac{7}{12}\\right]=\\dfrac{11}{24}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-19",
       "passage_text": "",
-      "question_text": "In a trapezium ABCD, side AB is of length 10 cm, BC is of length 9 cm, CD is of length 28 cm, AD is of length 15 cm with AB parallel to DC\n\nFind the sum of squares of lengths of the diagonals.",
+      "question_text": "Mixture A contains liquid A and water in the ratio of 1:4, Mixture B contains liquid B and water in the ratio of 3:5 and Mixture C contains liquid C and water in the ratio of 5:7. If the three mixtures are mixed in the ratio of 8:3:9, respectively, then what is the concentration of water in the final solution (approx.)?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "866 $cm^2$",
+          "option_text": "$68\\ \\%$",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "312 $cm^2$",
+          "option_text": "$59\\ \\%$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "741 $cm^2$",
+          "option_text": "$53\\ \\%$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "437 $cm^2$",
+          "option_text": "$71\\ \\%$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "ABCD is a trapezium drawn as follows:\nNow, lets draw AM perpendicular to DC and BN perpendicular to DC\nSo now AB=MN=10 cm\nAnd lets take, DM= a cm and CN= b cm\nSo for DC, 28=a+10+b\n=>a+b=18\nAlso, $AM=\\sqrt{\\ \\left(15^2-a^2\\right)}$\nAlso, $BN=\\sqrt{\\ \\left(9^2-b^2\\right)}$\nNow, AM must be equal to BN, as they both are height of trapezium which is always fixed.\nSo, $\\sqrt{\\ \\left(15^2-a^2\\right)}=\\sqrt{\\ \\left(9^2-b^2\\right)}$\nSquaring both sides, $225-a^2=81-b^2$\nSo, $144=a^2-b^2$\n$=>144=\\left(a+b\\right)\\cdot\\left(a-b\\right)$\n$=>144=18\\left(a-b\\right)$\n$=>8=\\left(a-b\\right)$\nSo, $=>a+b=18$ and $=>a-b=8$\nUpon solving, $=>a\\ =\\ 13\\ cm$ and $b=5\\ cm$\nAlso, $AM=BN=\\sqrt{\\ \\left(15^2-13^2\\right)}=\\sqrt{\\ \\left(225-169\\right)}=\\sqrt{\\ 56}$\nAnd, $CM=MN+NC=10+5=15\\ cm$\n$ND=MN+MD=10+13=23\\ cm$\nWe have to find length of diagonals AC and BD.\nIn right angled $\\triangle\\ AMC$,\n$AC^2=AM^2+MC^2$\n$=>AC^2=56+15^2=56+225=281$\nSimilarly in right angle $\\triangle\\ BDN\\ $\n$BD^2=BN^2+DN^2$\n$BD^2=56+23^2=56+529=585$\nSo, value of $AC^2+BD^2=281+585=866\\ cm^2$",
+      "solution_text": "The three mixtures are mixed in the ratio of 8:3:9. Let the amount of mixture A be 80L, mixture B be 30L, and mixture C be 90L. \nMixture A contains liquid A and water in the ratio of 1:4. Thus, mixture A has 16L of liquid A and 64L of water. \nMixture B contains liquid B and water in the ratio of 3:5. Thus, mixture B has 11.25L of liquid B and 18.75L of water. \nMixture C contains liquid C and water in the ratio of 5:7. Thus, mixture C has 37.5L of liquid C and 52.5L of water.\nThus, the final mixture will have 16L of liquid A, 11.25L of liquid B, 37.5L of liquid C and 135.25L of water. \nConcentration of water will be = $\\dfrac{135.25}{200}\\times100\\approx68\\%$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a trapezium ABCD, side AB is of length 10 cm, BC is of length 9 cm, CD is of length 28 cm, AD is of length 15 cm with AB parallel to DC\n\nFind the sum of squares of lengths of the diagonals.\n\n**Options:**\n- **A**. 866 $cm^2$ ✅\n- **B**. 312 $cm^2$\n- **C**. 741 $cm^2$\n- **D**. 437 $cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nABCD is a trapezium drawn as follows:\nNow, lets draw AM perpendicular to DC and BN perpendicular to DC\nSo now AB=MN=10 cm\nAnd lets take, DM= a cm and CN= b cm\nSo for DC, 28=a+10+b\n=>a+b=18\nAlso, $AM=\\sqrt{\\ \\left(15^2-a^2\\right)}$\nAlso, $BN=\\sqrt{\\ \\left(9^2-b^2\\right)}$\nNow, AM must be equal to BN, as they both are height of trapezium which is always fixed.\nSo, $\\sqrt{\\ \\left(15^2-a^2\\right)}=\\sqrt{\\ \\left(9^2-b^2\\right)}$\nSquaring both sides, $225-a^2=81-b^2$\nSo, $144=a^2-b^2$\n$=>144=\\left(a+b\\right)\\cdot\\left(a-b\\right)$\n$=>144=18\\left(a-b\\right)$\n$=>8=\\left(a-b\\right)$\nSo, $=>a+b=18$ and $=>a-b=8$\nUpon solving, $=>a\\ =\\ 13\\ cm$ and $b=5\\ cm$\nAlso, $AM=BN=\\sqrt{\\ \\left(15^2-13^2\\right)}=\\sqrt{\\ \\left(225-169\\right)}=\\sqrt{\\ 56}$\nAnd, $CM=MN+NC=10+5=15\\ cm$\n$ND=MN+MD=10+13=23\\ cm$\nWe have to find length of diagonals AC and BD.\nIn right angled $\\triangle\\ AMC$,\n$AC^2=AM^2+MC^2$\n$=>AC^2=56+15^2=56+225=281$\nSimilarly in right angle $\\triangle\\ BDN\\ $\n$BD^2=BN^2+DN^2$\n$BD^2=56+23^2=56+529=585$\nSo, value of $AC^2+BD^2=281+585=866\\ cm^2$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMixture A contains liquid A and water in the ratio of 1:4, Mixture B contains liquid B and water in the ratio of 3:5 and Mixture C contains liquid C and water in the ratio of 5:7. If the three mixtures are mixed in the ratio of 8:3:9, respectively, then what is the concentration of water in the final solution (approx.)?\n\n**Options:**\n- **A**. $68\\ \\%$ ✅\n- **B**. $59\\ \\%$\n- **C**. $53\\ \\%$\n- **D**. $71\\ \\%$\n\n**Correct Answer:** null\n\n**Solution:**\nThe three mixtures are mixed in the ratio of 8:3:9. Let the amount of mixture A be 80L, mixture B be 30L, and mixture C be 90L. \nMixture A contains liquid A and water in the ratio of 1:4. Thus, mixture A has 16L of liquid A and 64L of water. \nMixture B contains liquid B and water in the ratio of 3:5. Thus, mixture B has 11.25L of liquid B and 18.75L of water. \nMixture C contains liquid C and water in the ratio of 5:7. Thus, mixture C has 37.5L of liquid C and 52.5L of water.\nThus, the final mixture will have 16L of liquid A, 11.25L of liquid B, 37.5L of liquid C and 135.25L of water. \nConcentration of water will be = $\\dfrac{135.25}{200}\\times100\\approx68\\%$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-20",
       "passage_text": "",
-      "question_text": "In a triangle ABC, AD and BF are the medians from A and B, respectively, and BF intersects AD at E, then find $\\ \\dfrac{\\text{area }\\triangle DEF}{\\text{area }\\triangle DCF}$",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\dfrac{1}{2}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\dfrac{1}{3}$",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$\\dfrac{1}{4}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\dfrac{1}{5}$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let $area\\ \\triangle ABC\\ $be $x\\ cm^2$.\nSince AD is the median, the triangle will be divided into two equal areas. \n=> $\\ area\\left(\\triangle\\ ABD\\right)=area\\left(\\triangle\\ ACD\\right)=\\dfrac{x}{2}\\ cm^2$\nNow BE divides AD in the ratio of 2:1, since it is the median. Thus, it will divide the areas into the same ratio.\n=> $\\ area\\left(\\triangle\\ ABE\\right)=\\dfrac{2}{3}\\times\\ area\\left(\\triangle\\ ABD\\right)=\\dfrac{2}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{3}\\ cm^2$\nand $\\ area\\left(\\triangle\\ DBE\\right)=\\dfrac{1}{3}\\times\\ area\\ \\triangle\\ ABD=\\dfrac{1}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{6}\\ cm^2$\nSince BF is also the median, the triangle will be divided into two equal areas. \n=> $\\ area\\left(\\triangle\\ ABF\\right)=area\\left(\\triangle\\ BCF\\right)=\\dfrac{x}{2}\\ cm^2$\nThus, $\\ area\\left(\\triangle\\ AEF\\right)=\\dfrac{1}{3}\\times\\ area\\ \\triangle\\ ABF=\\dfrac{1}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{6}\\ cm^2$\nNow, D and F are the midpoints of BC and CA, respectively. Thus \n$\\ area\\left(\\triangle\\ DCF\\right)=\\dfrac{1}{4}\\times\\ area\\left(\\triangle\\ ABC\\right)=\\dfrac{1}{4}\\times\\ x=\\dfrac{x}{4}\\ cm^2\\rightarrow1$\n=> $\\ area\\ ABDF=\\dfrac{3x}{4}\\ cm^2$\n=> $\\ area\\left(ABDF\\right)=area\\left(\\triangle\\ ABE\\right)+area\\left(\\triangle\\ AEF\\right)+area\\left(\\triangle\\ BED\\right)+area\\left(\\triangle\\ DEF\\right)$\n=> $\\dfrac{3x}{4}=\\dfrac{x}{3}+\\dfrac{x}{6}+\\dfrac{x}{6}+area\\ \\triangle DEF$\n=> $area\\left(\\triangle\\ DEF\\right)=\\dfrac{x}{12}\\ cm^2\\rightarrow2$\nNow using eq. 1 and eq. 2 - \n=> $\\ \\dfrac{area\\ of\\ \\triangle DEF}{area\\ of\\ \\triangle\\ DCF}=\\dfrac{\\frac{x}{12}\\ cm^2}{\\frac{x}{4}\\ cm^2}=\\dfrac{1}{3}$",
+      "question_text": "By joining the midpoints of its sides of a regular hexagon, a new hexagon is formed. The same process is repeated on each newly formed hexagon. If the total area of all these hexagons is $216\\sqrt{3}\\ cm^2$, then what is the length of the longest diagonal of the original hexagon (in cm)?",
+      "options": [],
+      "correct_option_data": "12",
+      "solution_text": "Let the length of the regular hexagon be a cm. BC is the length of the new hexagon, which is formed by joining the midpoints of the sides of the original hexagon. \nApplying the cosine rule in $\\triangle ABC$ - \n$\\cos120^{\\circ}=\\dfrac{\\left(\\frac{a}{2}\\right)^2+\\left(\\frac{a}{2}\\right)^2-BC^2}{2\\times\\frac{a}{2}\\times\\frac{a}{2}}$\n$-\\left(\\dfrac{a}{2}\\right)^2=\\left(\\dfrac{a}{2}\\right)^2+\\left(\\dfrac{a}{2}\\right)^2-BC^2$\n$BC=\\dfrac{\\sqrt{3}a}{2}$\nNow, the midpoints of this new hexagon are joined together to form another hexagon. The side of this new hexagon will be $=BC\\times\\dfrac{\\sqrt{3}}{2}=\\dfrac{3a}{4}$. This process will continue for all the newly formed hexagons. \nArea of hexagon = $\\dfrac{3\\sqrt{3}}{2}\\times Side^2$ \nSum of areas of hexagons $=\\dfrac{3\\sqrt{3}a^2}{2}+\\dfrac{3\\sqrt{3}\\left(\\frac{\\sqrt{3}a}{2}\\right)^2}{2}+\\dfrac{3\\sqrt{3}\\left(\\frac{3a}{4}\\right)^2}{2}+....$\n$216\\sqrt{3}=\\dfrac{3\\sqrt{3}}{2}\\left[a^2+\\dfrac{3a^2}{4}+\\dfrac{9a^2}{16}+...\\right]$\n$216\\sqrt{3}=\\dfrac{3\\sqrt{3}}{2}\\left[\\dfrac{a^2}{1-\\frac{3}{4}}\\right]$\n$108\\sqrt{3}=3\\sqrt{3}a^2$\n$a=6\\ cm$\nLength of the longest diagonal of the original hexagon = $2a=12$ cm.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a triangle ABC, AD and BF are the medians from A and B, respectively, and BF intersects AD at E, then find $\\ \\dfrac{\\text{area }\\triangle DEF}{\\text{area }\\triangle DCF}$\n\n**Options:**\n- **A**. $\\dfrac{1}{2}$\n- **B**. $\\dfrac{1}{3}$ ✅\n- **C**. $\\dfrac{1}{4}$\n- **D**. $\\dfrac{1}{5}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet $area\\ \\triangle ABC\\ $be $x\\ cm^2$.\nSince AD is the median, the triangle will be divided into two equal areas. \n=> $\\ area\\left(\\triangle\\ ABD\\right)=area\\left(\\triangle\\ ACD\\right)=\\dfrac{x}{2}\\ cm^2$\nNow BE divides AD in the ratio of 2:1, since it is the median. Thus, it will divide the areas into the same ratio.\n=> $\\ area\\left(\\triangle\\ ABE\\right)=\\dfrac{2}{3}\\times\\ area\\left(\\triangle\\ ABD\\right)=\\dfrac{2}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{3}\\ cm^2$\nand $\\ area\\left(\\triangle\\ DBE\\right)=\\dfrac{1}{3}\\times\\ area\\ \\triangle\\ ABD=\\dfrac{1}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{6}\\ cm^2$\nSince BF is also the median, the triangle will be divided into two equal areas. \n=> $\\ area\\left(\\triangle\\ ABF\\right)=area\\left(\\triangle\\ BCF\\right)=\\dfrac{x}{2}\\ cm^2$\nThus, $\\ area\\left(\\triangle\\ AEF\\right)=\\dfrac{1}{3}\\times\\ area\\ \\triangle\\ ABF=\\dfrac{1}{3}\\times\\ \\dfrac{x}{2}=\\dfrac{x}{6}\\ cm^2$\nNow, D and F are the midpoints of BC and CA, respectively. Thus \n$\\ area\\left(\\triangle\\ DCF\\right)=\\dfrac{1}{4}\\times\\ area\\left(\\triangle\\ ABC\\right)=\\dfrac{1}{4}\\times\\ x=\\dfrac{x}{4}\\ cm^2\\rightarrow1$\n=> $\\ area\\ ABDF=\\dfrac{3x}{4}\\ cm^2$\n=> $\\ area\\left(ABDF\\right)=area\\left(\\triangle\\ ABE\\right)+area\\left(\\triangle\\ AEF\\right)+area\\left(\\triangle\\ BED\\right)+area\\left(\\triangle\\ DEF\\right)$\n=> $\\dfrac{3x}{4}=\\dfrac{x}{3}+\\dfrac{x}{6}+\\dfrac{x}{6}+area\\ \\triangle DEF$\n=> $area\\left(\\triangle\\ DEF\\right)=\\dfrac{x}{12}\\ cm^2\\rightarrow2$\nNow using eq. 1 and eq. 2 - \n=> $\\ \\dfrac{area\\ of\\ \\triangle DEF}{area\\ of\\ \\triangle\\ DCF}=\\dfrac{\\frac{x}{12}\\ cm^2}{\\frac{x}{4}\\ cm^2}=\\dfrac{1}{3}$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBy joining the midpoints of its sides of a regular hexagon, a new hexagon is formed. The same process is repeated on each newly formed hexagon. If the total area of all these hexagons is $216\\sqrt{3}\\ cm^2$, then what is the length of the longest diagonal of the original hexagon (in cm)?\n\n**Options:**\n\n**Correct Answer:** 12\n\n**Solution:**\nLet the length of the regular hexagon be a cm. BC is the length of the new hexagon, which is formed by joining the midpoints of the sides of the original hexagon. \nApplying the cosine rule in $\\triangle ABC$ - \n$\\cos120^{\\circ}=\\dfrac{\\left(\\frac{a}{2}\\right)^2+\\left(\\frac{a}{2}\\right)^2-BC^2}{2\\times\\frac{a}{2}\\times\\frac{a}{2}}$\n$-\\left(\\dfrac{a}{2}\\right)^2=\\left(\\dfrac{a}{2}\\right)^2+\\left(\\dfrac{a}{2}\\right)^2-BC^2$\n$BC=\\dfrac{\\sqrt{3}a}{2}$\nNow, the midpoints of this new hexagon are joined together to form another hexagon. The side of this new hexagon will be $=BC\\times\\dfrac{\\sqrt{3}}{2}=\\dfrac{3a}{4}$. This process will continue for all the newly formed hexagons. \nArea of hexagon = $\\dfrac{3\\sqrt{3}}{2}\\times Side^2$ \nSum of areas of hexagons $=\\dfrac{3\\sqrt{3}a^2}{2}+\\dfrac{3\\sqrt{3}\\left(\\frac{\\sqrt{3}a}{2}\\right)^2}{2}+\\dfrac{3\\sqrt{3}\\left(\\frac{3a}{4}\\right)^2}{2}+....$\n$216\\sqrt{3}=\\dfrac{3\\sqrt{3}}{2}\\left[a^2+\\dfrac{3a^2}{4}+\\dfrac{9a^2}{16}+...\\right]$\n$216\\sqrt{3}=\\dfrac{3\\sqrt{3}}{2}\\left[\\dfrac{a^2}{1-\\frac{3}{4}}\\right]$\n$108\\sqrt{3}=3\\sqrt{3}a^2$\n$a=6\\ cm$\nLength of the longest diagonal of the original hexagon = $2a=12$ cm.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-1-21",
       "passage_text": "",
-      "question_text": "If $4x^2+9y^2+z^2=a$ and $x+y+z=b+4$ and it is also given that $a+1=12b$, then find the value of $a+6b$.",
-      "options": [],
-      "correct_option_data": "74",
-      "solution_text": "$4x^2+9y^2+z^2=a$ and $x+y+z=b+4$\nAnd it is also given that $a+1=12b$\n=> $4x^2+9y^2+z^2+1=12\\left(x+y+z-4\\right)$\n=> $4x^2+9y^2+z^2+1=12x+12y+12z-48$\n=> $4x^2+9y^2+z^2-12x-12y-12z+49=0$\n=> $\\left(4x^2-12x+9\\right)+\\left(9y^2-12y+4\\right)+\\left(z^2-12z+36\\right)=0$\n=> $\\left(2x-3\\right)^2+\\left(3y-2\\right)^2+\\left(z-6\\right)^2=0$\n=> This is only possible when $x=\\dfrac{3}{2},\\ \\ y=\\dfrac{2}{3}\\ and\\ z=6$\nNow, $a=4x^2+9y^2+z^2$. Substituting the values of x,y and z.\n=> $a=4\\left(\\dfrac{3}{2}\\right)^2+9\\left(\\dfrac{2}{3}\\right)^2+6^2=9+4+36=49$\nAnd $b+4=x+y+z$\n=> $b+4=\\dfrac{3}{2}+\\dfrac{2}{3}+6$\n=> $b=\\dfrac{9+4}{6}+2=\\dfrac{13}{6}+2=\\dfrac{25}{6}$\n=> $a+6b=49+6\\times\\ \\dfrac{25}{6}=49+25=74$",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $4x^2+9y^2+z^2=a$ and $x+y+z=b+4$ and it is also given that $a+1=12b$, then find the value of $a+6b$.\n\n**Options:**\n\n**Correct Answer:** 74\n\n**Solution:**\n$4x^2+9y^2+z^2=a$ and $x+y+z=b+4$\nAnd it is also given that $a+1=12b$\n=> $4x^2+9y^2+z^2+1=12\\left(x+y+z-4\\right)$\n=> $4x^2+9y^2+z^2+1=12x+12y+12z-48$\n=> $4x^2+9y^2+z^2-12x-12y-12z+49=0$\n=> $\\left(4x^2-12x+9\\right)+\\left(9y^2-12y+4\\right)+\\left(z^2-12z+36\\right)=0$\n=> $\\left(2x-3\\right)^2+\\left(3y-2\\right)^2+\\left(z-6\\right)^2=0$\n=> This is only possible when $x=\\dfrac{3}{2},\\ \\ y=\\dfrac{2}{3}\\ and\\ z=6$\nNow, $a=4x^2+9y^2+z^2$. Substituting the values of x,y and z.\n=> $a=4\\left(\\dfrac{3}{2}\\right)^2+9\\left(\\dfrac{2}{3}\\right)^2+6^2=9+4+36=49$\nAnd $b+4=x+y+z$\n=> $b+4=\\dfrac{3}{2}+\\dfrac{2}{3}+6$\n=> $b=\\dfrac{9+4}{6}+2=\\dfrac{13}{6}+2=\\dfrac{25}{6}$\n=> $a+6b=49+6\\times\\ \\dfrac{25}{6}=49+25=74$",
-      "type": "quants"
-    },
-    {
-      "qid": "quant-sectionals-1-22",
-      "passage_text": "",
-      "question_text": "What is the sum of integral values that satisfy the inequality $\\left|x^2-4x\\right|+3x-12\\le0$",
+      "question_text": "A can complete a project alone in 20 days. B’s efficiency is half that of A, and C’s efficiency is twice that of B. All three — A, B, and C — start working together on the project, but after 4 days C leaves. Determine the minimum total number of days required to finish the project.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4",
-          "is_correct": true
+          "option_text": "8",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "7",
+          "option_text": "12",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
           "option_text": "14",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total work be $W$ units.\nAs A alone would have finished the work in 20 days: $(\\text{Efficiency of A})\\times 20=W$ or $E_A=\\dfrac{W}{20}$\nEfficiency of B is half that of A: $E_B=\\dfrac{1}{2}\\times \\dfrac{W}{20} =\\dfrac{W}{40}$ \nEfficiency of C is twice that of B: $E_c= 2\\times \\dfrac{W}{40}=\\dfrac{W}{20}$\nFor the first 4 days: A, B, C worked together:\nAmount of work done in first 4 days $=\\left(\\dfrac{W}{20}+\\dfrac{W}{40}+\\dfrac{W}{20}\\right)\\times 4 =\\dfrac{W}{2}$.\nFor the next \"t\" days: Only A & B worked together: \nRemaining work to be done $\\Rightarrow \\dfrac{W}{2}=\\left(\\dfrac{W}{20}+\\dfrac{W}{40}\\right)\\times t$\nFrom this, we get: $t=\\dfrac{20}{3}$ days\nTherefore, total days it takes to finish the project $=\\ 4 +\\dfrac{20}{3}=10.66$ days\nHence, the total minimum number of days required to finish the project is 11.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA can complete a project alone in 20 days. B’s efficiency is half that of A, and C’s efficiency is twice that of B. All three — A, B, and C — start working together on the project, but after 4 days C leaves. Determine the minimum total number of days required to finish the project.\n\n**Options:**\n- **A**. 8\n- **B**. 12\n- **C**. 11 ✅\n- **D**. 14\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total work be $W$ units.\nAs A alone would have finished the work in 20 days: $(\\text{Efficiency of A})\\times 20=W$ or $E_A=\\dfrac{W}{20}$\nEfficiency of B is half that of A: $E_B=\\dfrac{1}{2}\\times \\dfrac{W}{20} =\\dfrac{W}{40}$ \nEfficiency of C is twice that of B: $E_c= 2\\times \\dfrac{W}{40}=\\dfrac{W}{20}$\nFor the first 4 days: A, B, C worked together:\nAmount of work done in first 4 days $=\\left(\\dfrac{W}{20}+\\dfrac{W}{40}+\\dfrac{W}{20}\\right)\\times 4 =\\dfrac{W}{2}$.\nFor the next \"t\" days: Only A & B worked together: \nRemaining work to be done $\\Rightarrow \\dfrac{W}{2}=\\left(\\dfrac{W}{20}+\\dfrac{W}{40}\\right)\\times t$\nFrom this, we get: $t=\\dfrac{20}{3}$ days\nTherefore, total days it takes to finish the project $=\\ 4 +\\dfrac{20}{3}=10.66$ days\nHence, the total minimum number of days required to finish the project is 11.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-1-22",
+      "passage_text": "",
+      "question_text": "Two brands of water, Bisleri and Himalaya, sell at different prices per litre. Raman bought 8 litres of Bisleri and 5 litres of Himalaya water. He first removed the same amount of water, $K$ litres from each, then interchanged it, such that the price per litre for the two mixtures is now the same.What is the value of $13K$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "39",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "0",
-          "is_correct": false
+          "option_text": "40",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let's find the roots of the equations involved in the expression.\n$x^2-4x$ = x(x-4)\nThis equation is positive in the interval $x\\in\\ \\left(-\\infty\\ ,0\\right)\\cup\\left(4,\\ \\infty\\ \\right)$\n3x-12 is positive in the interval x>4.\nCase 1: $x>4$\n$x^2-4x+3x-12\\le0$\n$x^2-x-12\\le0$\n$(x-4)(x+3)\\le0$\nThis is true between the roots. That is when $x\\in\\ [-3,4]$\nThe is no intersection between the case assumption and the obtained interval.\nCase2: $0<x\\le4$\n$-x^2+4x+3x-12\\le0$\n$x^2-7x+12\\ge0$\n$(x-3)(x-4)\\ge0$\n$x\\in\\left(-\\infty\\ ,\\ 3\\right]\\cup\\left[4,\\ \\infty\\ \\right)$\nThe integers in the intersection of both ranges are 1, 2, 3, 4.\nCase 3: $x\\ \\in\\left(-\\infty\\ ,\\ 0\\right]$\n$x^2-4x+3x-12\\le0$\n$(x-4)(x+3)\\le0$\n$x\\in\\left[-3,4\\right]$\nThe integers in the intersection of both ranges are -3, -2, -1, 0.\nSo, the answer is -3-2-1+0+1+2+3+4 = 4",
+      "solution_text": "Let the bisleri water be priced at Rs $b$ per liter, and the himalaya water is Rs $h$ per litre. Also, $K$ litres of water is interchanged initially. Raman has 8 litres of Bisleri and 5 litres of Himalaya water.\nWe are told that after interchanging the waters, the cost per litre for both is same.\ni.e, $\\ \\dfrac{(8-K)b+Kh}{8}=\\dfrac{(5-K)h+Kb}{5}$\nor, $\\ 5[(8-K)b+Kh]=8[(5-K)h+Kb]$\nor, $\\ 40b-5Kb+5Kh=40h-8Kh+8Kb$\nor, $\\ 40\\left(b-h\\right)=13K\\left(b-h\\right)$\nor, $\\ K=\\dfrac{40}{13}$ litres \nso, $\\ 13K=40$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of integral values that satisfy the inequality $\\left|x^2-4x\\right|+3x-12\\le0$\n\n**Options:**\n- **A**. 4 ✅\n- **B**. 7\n- **C**. 14\n- **D**. 0\n\n**Correct Answer:** null\n\n**Solution:**\nLet's find the roots of the equations involved in the expression.\n$x^2-4x$ = x(x-4)\nThis equation is positive in the interval $x\\in\\ \\left(-\\infty\\ ,0\\right)\\cup\\left(4,\\ \\infty\\ \\right)$\n3x-12 is positive in the interval x>4.\nCase 1: $x>4$\n$x^2-4x+3x-12\\le0$\n$x^2-x-12\\le0$\n$(x-4)(x+3)\\le0$\nThis is true between the roots. That is when $x\\in\\ [-3,4]$\nThe is no intersection between the case assumption and the obtained interval.\nCase2: $0<x\\le4$\n$-x^2+4x+3x-12\\le0$\n$x^2-7x+12\\ge0$\n$(x-3)(x-4)\\ge0$\n$x\\in\\left(-\\infty\\ ,\\ 3\\right]\\cup\\left[4,\\ \\infty\\ \\right)$\nThe integers in the intersection of both ranges are 1, 2, 3, 4.\nCase 3: $x\\ \\in\\left(-\\infty\\ ,\\ 0\\right]$\n$x^2-4x+3x-12\\le0$\n$(x-4)(x+3)\\le0$\n$x\\in\\left[-3,4\\right]$\nThe integers in the intersection of both ranges are -3, -2, -1, 0.\nSo, the answer is -3-2-1+0+1+2+3+4 = 4",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo brands of water, Bisleri and Himalaya, sell at different prices per litre. Raman bought 8 litres of Bisleri and 5 litres of Himalaya water. He first removed the same amount of water, $K$ litres from each, then interchanged it, such that the price per litre for the two mixtures is now the same.What is the value of $13K$?\n\n**Options:**\n- **A**. 50\n- **B**. 52\n- **C**. 39\n- **D**. 40 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the bisleri water be priced at Rs $b$ per liter, and the himalaya water is Rs $h$ per litre. Also, $K$ litres of water is interchanged initially. Raman has 8 litres of Bisleri and 5 litres of Himalaya water.\nWe are told that after interchanging the waters, the cost per litre for both is same.\ni.e, $\\ \\dfrac{(8-K)b+Kh}{8}=\\dfrac{(5-K)h+Kb}{5}$\nor, $\\ 5[(8-K)b+Kh]=8[(5-K)h+Kb]$\nor, $\\ 40b-5Kb+5Kh=40h-8Kh+8Kb$\nor, $\\ 40\\left(b-h\\right)=13K\\left(b-h\\right)$\nor, $\\ K=\\dfrac{40}{13}$ litres \nso, $\\ 13K=40$",
       "type": "quants"
     }
   ]

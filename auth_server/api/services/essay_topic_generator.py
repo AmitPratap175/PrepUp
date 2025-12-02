@@ -3,6 +3,8 @@ from typing import List, Dict, Any
 from google import genai
 from google.genai import types
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 class EssayTopicGenerator:
@@ -11,6 +13,8 @@ class EssayTopicGenerator:
     """
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY")
+        if not self.api_key:
+            print("Warning: GEMINI_API_KEY environment variable not set")
         self.client = genai.Client(api_key=self.api_key)
     
     async def research_current_topics(self, domain: str, count: int = 5) -> List[Dict[str, Any]]:
@@ -43,26 +47,42 @@ class EssayTopicGenerator:
         Return ONLY a JSON array of topic objects. No markdown formatting.
         """
         
-        try:
-            response = await self.client.aio.models.generate_content(
-                model="gemini-2.0-flash-exp",
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    temperature=0.8
-                )
+        # try:
+        response = await self.client.aio.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                temperature=0.8
             )
+        )
+        
+        if response.text:
+            text = response.text.strip()
+            if text.startswith("```json"):
+                text = text[7:]
+            if text.startswith("```"):
+                text = text[3:]
+            if text.endswith("```"):
+                text = text[:-3]
+            text = text.strip()
             
-            if response.text:
-                topics = json.loads(response.text)
-                return topics
-            else:
-                print("Empty response from Gemini")
+            topics = json.loads(text)
+            
+            if isinstance(topics, dict) and "topics" in topics:
+                topics = topics["topics"]
+                
+            if not isinstance(topics, list):
+                print(f"Unexpected response format: {type(topics)}")
                 return []
                 
-        except Exception as e:
-            print(f"Error generating topics: {e}")
-            return []
+            return topics
+        else:
+            raise Exception("Empty response from Gemini")
+            
+        # except Exception as e:
+        #     print(f"Error generating topics: {e}")
+        #     raise e
     
     async def get_topic_context(self, topic_title: str) -> str:
         """

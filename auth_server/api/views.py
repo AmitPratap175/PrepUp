@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+from rest_framework.permissions import AllowAny
 from .storage import storage
 import json
 from django.views.decorators.csrf import csrf_exempt
@@ -556,8 +557,21 @@ class UserQuizGoalView(APIView):
         goals_qs = UserQuizGoal.objects.filter(user=user)
         goals_dict = {goal.subject: goal.goal for goal in goals_qs}
 
-        progress_qs = UserQuizProgress.objects.filter(user=user, date=today)
-        progress_dict = {p.subject: p.questions_attempted for p in progress_qs}
+        # Calculate progress from TestSessions for today
+        start_of_day = datetime.combine(today, datetime.min.time()).replace(tzinfo=timezone.utc)
+        end_of_day = datetime.combine(today, datetime.max.time()).replace(tzinfo=timezone.utc)
+        
+        sessions = TestSession.objects.filter(
+            user=user,
+            start_time__range=(start_of_day, end_of_day)
+        )
+        
+        progress_dict = {}
+        for session in sessions:
+            if session.subject and session.answers:
+                # Count answered questions (where selectedAnswer is not null)
+                answered_count = sum(1 for a in session.answers if a.get('selectedAnswer') is not None)
+                progress_dict[session.subject] = progress_dict.get(session.subject, 0) + answered_count
 
         subjects = storage.get_subjects()
         all_goals_data = []
@@ -898,13 +912,15 @@ class LeaderboardView(APIView):
             'leaderboard': leaderboard_data
         })
 
-class PerformanceAnalyticsView(AsyncAPIView):
+from rest_framework.views import APIView
+
+class PerformanceAnalyticsView(APIView):
     """
     Returns detailed performance analytics for the authenticated user.
     """
     permission_classes = [IsAuthenticated]
 
-    async def get(self, request):
+    def get(self, request):
         """
         Get detailed analytics including:
         - Topic-wise performance
@@ -915,29 +931,31 @@ class PerformanceAnalyticsView(AsyncAPIView):
         user = request.user
         
         # Get all test sessions for the user
-        test_sessions = TestSession.objects.filter(user=user).order_by('-created_at')[:30]
+        test_sessions = TestSession.objects.filter(user=user).order_by('-start_time')[:30]
         
         # Calculate topic-wise performance
         topic_performance = {}
         accuracy_over_time = []
         
         for session in test_sessions:
-            # Topic performance (simplified - would need actual question data)
-            test_type = session.test_type
-            if test_type not in topic_performance:
-                topic_performance[test_type] = {
+            # Topic performance
+            # Use subject as the grouping key, defaulting to 'Unknown' if missing
+            subject = session.subject if session.subject else 'Unknown'
+            
+            if subject not in topic_performance:
+                topic_performance[subject] = {
                     'total_questions': 0,
                     'correct_answers': 0,
                     'accuracy': 0
                 }
             
-            topic_performance[test_type]['total_questions'] += session.total_questions
-            topic_performance[test_type]['correct_answers'] += session.correct_answers
+            topic_performance[subject]['total_questions'] += session.total_questions
+            topic_performance[subject]['correct_answers'] += session.correct_answers
             
             # Accuracy over time
             accuracy = (session.correct_answers / session.total_questions * 100) if session.total_questions > 0 else 0
             accuracy_over_time.append({
-                'date': session.created_at.strftime('%Y-%m-%d'),
+                'date': session.start_time.strftime('%Y-%m-%d'),
                 'accuracy': round(accuracy, 2),
                 'score': session.score
             })
@@ -953,7 +971,7 @@ class PerformanceAnalyticsView(AsyncAPIView):
         streak_history = [
             {
                 'date': day.date.strftime('%Y-%m-%d'),
-                'minutes_studied': day.minutes_studied
+                'minutes_studied': int(day.duration_seconds / 60)
             }
             for day in study_days
         ]
@@ -1157,7 +1175,7 @@ class EssayTopicGenerateView(AsyncAPIView):
     """
     Generate new essay topics using LLM.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     async def post(self, request):
         """
@@ -1165,6 +1183,7 @@ class EssayTopicGenerateView(AsyncAPIView):
         """
         from api.services.essay_topic_generator import EssayTopicGenerator
         from api.models import EssayTopic
+        from asgiref.sync import sync_to_async
         
         domain = request.data.get('domain')
         count = request.data.get('count', 3)
@@ -1178,17 +1197,22 @@ class EssayTopicGenerateView(AsyncAPIView):
         generator = EssayTopicGenerator()
         topics_data = await generator.research_current_topics(domain, count)
         
-        # Save topics to database
+        # Save topics to database using sync_to_async
         created_topics = []
-        for topic_data in topics_data:
-            topic = EssayTopic.objects.create(
-                title=topic_data.get('title', ''),
-                description=topic_data.get('description', ''),
-                domain=domain,
-                difficulty=topic_data.get('difficulty', 'medium'),
-                context=topic_data.get('context', ''),
-                key_points=topic_data.get('key_points', [])
+        
+        @sync_to_async
+        def create_topic(data, domain_name):
+            return EssayTopic.objects.create(
+                title=data.get('title', ''),
+                description=data.get('description', ''),
+                domain=domain_name,
+                difficulty=data.get('difficulty', 'medium'),
+                context=data.get('context', ''),
+                key_points=data.get('key_points', [])
             )
+
+        for topic_data in topics_data:
+            topic = await create_topic(topic_data, domain)
             created_topics.append({
                 'id': str(topic.id),
                 'title': topic.title,
@@ -1206,7 +1230,7 @@ class EssayTopicListView(APIView):
     """
     List available essay topics.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def get(self, request):
         """
@@ -1246,7 +1270,7 @@ class EssayListCreateView(APIView):
     """
     List user's essays or create new essay.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def get(self, request):
         """
@@ -1256,7 +1280,10 @@ class EssayListCreateView(APIView):
         
         status_filter = request.query_params.get('status')
         
-        essays = Essay.objects.filter(user=request.user)
+        if request.user.is_authenticated:
+            essays = Essay.objects.filter(user=request.user)
+        else:
+            essays = Essay.objects.none()
         
         if status_filter:
             essays = essays.filter(status=status_filter)
@@ -1303,8 +1330,9 @@ class EssayListCreateView(APIView):
             except EssayTopic.DoesNotExist:
                 pass
         
+        user = request.user if request.user.is_authenticated else None
         essay = Essay.objects.create(
-            user=request.user,
+            user=user,
             topic=topic,
             title=title,
             content=content
@@ -1321,7 +1349,7 @@ class EssayDetailView(APIView):
     """
     Get, update, or delete a specific essay.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def get(self, request, essay_id):
         """
@@ -1330,7 +1358,10 @@ class EssayDetailView(APIView):
         from api.models import Essay
         
         try:
-            essay = Essay.objects.get(id=essay_id, user=request.user)
+            if request.user.is_authenticated:
+                essay = Essay.objects.get(id=essay_id, user=request.user)
+            else:
+                essay = Essay.objects.get(id=essay_id)
         except Essay.DoesNotExist:
             return Response(
                 {'error': 'Essay not found'},
@@ -1357,7 +1388,10 @@ class EssayDetailView(APIView):
         from api.models import Essay
         
         try:
-            essay = Essay.objects.get(id=essay_id, user=request.user)
+            if request.user.is_authenticated:
+                essay = Essay.objects.get(id=essay_id, user=request.user)
+            else:
+                essay = Essay.objects.get(id=essay_id)
         except Essay.DoesNotExist:
             return Response(
                 {'error': 'Essay not found'},
@@ -1388,7 +1422,7 @@ class EssaySubmitView(AsyncAPIView):
     """
     Submit essay for review.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     async def post(self, request, essay_id):
         """

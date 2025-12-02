@@ -3,743 +3,618 @@
     {
       "qid": "quant-sectionals-15-1",
       "passage_text": "",
-      "question_text": "Which of the following statements can be seen as contradicting the discussion in the last two paragraphs?",
+      "question_text": "In the given figure, ABCD is a square of side 'a' units. The radius of the smaller circle is r, and the arcs DB and AC have their centres at A and B, respectively. Find the value of r in terms of a.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Some public-sector consultancies and policy 'labs' are cash-strapped and might require higher budgets to effectively address complex societal challenges.",
+          "option_text": "$\\dfrac{a}{12}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Consulting firms - in some instances - have demonstrated a track record of successfully managing government projects and achieving desired outcomes within budget constraints.",
+          "option_text": "$\\dfrac{a}{15}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Governments that have reduced their reliance on consulting industry intermediation have historically experienced a decline in their overall state capacity and efficiency.",
+          "option_text": "$\\dfrac{a}{16}$",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Transparent and accountable decision-making processes have been implemented within the consulting industry to ensure ethical conduct and avoid wasteful practices.",
+          "option_text": "$\\dfrac{2a}{15}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Option A: We are told in the final paragraph that reformers are developing \"innovative governance models, from in-house public-sector consultancies to policy ‘labs’ and local, community-oriented procurement programmes,\" potentially as a way to reduce the government's dependency on consultancies. Option A comments on how these new systems might be limited in their capability to fulfil their objectives as a result of budget constraints. However, this does not necessarily counter any of the points discussed by the author in the last two paragraphs. These models could still hold the potential to change the status quo.  \nOptions B and D: These choices do not directly address any concerns or arguments specifically presented in the last two paragraphs. Option B presents an exception - it is quite possible that from the government's perspective, the overall resource drain is still substantial. The enforcement of policies, as suggested in D, need not necessarily translate to an observable change in the way consulting sector impacts governments.  \nOption C: The penultimate paragraph states that \"to build a better-functioning economy, we must invest in state capacity and know-how, bring public purpose back to the public sector and rid the system of costly, unnecessary, consulting-industry intermediation.\" This point is presented in the context of the primary argument that governments must reduce their dependency on the consulting sector.  Option C offers a different perspective and highlights that historically, states have seen a reduction in capacity and efficiency when they have reduced their dependence on consulting sector intermediation. This can be seen as a counterargument to the recommendation to lessen reliance on the consulting industry presented in the penultimate paragraph.\nHence, Option C is the correct choice.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhich of the following statements can be seen as contradicting the discussion in the last two paragraphs?\n\n**Options:**\n- **A**. Some public-sector consultancies and policy 'labs' are cash-strapped and might require higher budgets to effectively address complex societal challenges.\n- **B**. Consulting firms - in some instances - have demonstrated a track record of successfully managing government projects and achieving desired outcomes within budget constraints.\n- **C**. Governments that have reduced their reliance on consulting industry intermediation have historically experienced a decline in their overall state capacity and efficiency. ✅\n- **D**. Transparent and accountable decision-making processes have been implemented within the consulting industry to ensure ethical conduct and avoid wasteful practices.\n\n**Correct Answer:** null\n\n**Solution:**\nOption A: We are told in the final paragraph that reformers are developing \"innovative governance models, from in-house public-sector consultancies to policy ‘labs’ and local, community-oriented procurement programmes,\" potentially as a way to reduce the government's dependency on consultancies. Option A comments on how these new systems might be limited in their capability to fulfil their objectives as a result of budget constraints. However, this does not necessarily counter any of the points discussed by the author in the last two paragraphs. These models could still hold the potential to change the status quo.  \nOptions B and D: These choices do not directly address any concerns or arguments specifically presented in the last two paragraphs. Option B presents an exception - it is quite possible that from the government's perspective, the overall resource drain is still substantial. The enforcement of policies, as suggested in D, need not necessarily translate to an observable change in the way consulting sector impacts governments.  \nOption C: The penultimate paragraph states that \"to build a better-functioning economy, we must invest in state capacity and know-how, bring public purpose back to the public sector and rid the system of costly, unnecessary, consulting-industry intermediation.\" This point is presented in the context of the primary argument that governments must reduce their dependency on the consulting sector.  Option C offers a different perspective and highlights that historically, states have seen a reduction in capacity and efficiency when they have reduced their dependence on consulting sector intermediation. This can be seen as a counterargument to the recommendation to lessen reliance on the consulting industry presented in the penultimate paragraph.\nHence, Option C is the correct choice.",
+      "solution_text": "Let r be the radius of the smaller circle. We can calculate the value of BO and MO from the image as,\nBO = a + r\nMO = a - r \nAnd BM = $\\dfrac{a}{2}$  (by symmetry)\nIn the right-angled $\\triangle\\ $OMB, by Pythagoras theorem,\n$BO^2\\ =\\ MO^2\\ +\\ BM^2$\n$\\left(a\\ +\\ r\\right)^2\\ =\\ \\left(a\\ -\\ r\\right)^2\\ +\\ \\left(\\dfrac{a}{2}\\right)^2$\n$\\left(a\\ +\\ r\\right)^2\\ -\\ \\left(a\\ -\\ r\\right)^2\\ =\\ \\left(\\dfrac{a}{2}\\right)^2$\n$4ar\\ =\\ \\dfrac{a^2}{4}$\n$r\\ =\\ \\dfrac{a}{16}$\nHence, the correct answer is option C.",
+      "image_url": "https://cracku.in/media/uploads/image_oDkS0B1.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the given figure, ABCD is a square of side 'a' units. The radius of the smaller circle is r, and the arcs DB and AC have their centres at A and B, respectively. Find the value of r in terms of a.\n\n**Options:**\n- **A**. $\\dfrac{a}{12}$\n- **B**. $\\dfrac{a}{15}$\n- **C**. $\\dfrac{a}{16}$ ✅\n- **D**. $\\dfrac{2a}{15}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet r be the radius of the smaller circle. We can calculate the value of BO and MO from the image as,\nBO = a + r\nMO = a - r \nAnd BM = $\\dfrac{a}{2}$  (by symmetry)\nIn the right-angled $\\triangle\\ $OMB, by Pythagoras theorem,\n$BO^2\\ =\\ MO^2\\ +\\ BM^2$\n$\\left(a\\ +\\ r\\right)^2\\ =\\ \\left(a\\ -\\ r\\right)^2\\ +\\ \\left(\\dfrac{a}{2}\\right)^2$\n$\\left(a\\ +\\ r\\right)^2\\ -\\ \\left(a\\ -\\ r\\right)^2\\ =\\ \\left(\\dfrac{a}{2}\\right)^2$\n$4ar\\ =\\ \\dfrac{a^2}{4}$\n$r\\ =\\ \\dfrac{a}{16}$\nHence, the correct answer is option C.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-2",
       "passage_text": "",
-      "question_text": "A company has a total of 1,000 employees. The ratio of male to female employees is 7:3. Of the male employees, 60% have a college degree, and 40% of the female employees have a college degree. Suppose 80% of those with a college degree earn a salary above Rs.80,000 and 30% of those without a college degree earn a salary above Rs. 80,000. What percentage of the entire employee population earns a salary above Rs. 80,000?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "59",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "57",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "61",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "63",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Total employees = 1000, the ratio of male to female employees is 7:3, which means 700 males and 300 females in the company.\n=> 60% of male have a college degree = 60% of 700 = 420 males\nTherefore, 40% of males don't have a degree = 40% of 700 =  280 males\n=> 40% of female employees have a college degree = 40% of 300 = 120 females\nTherefore, 60% of females don't have a degree = 60% of 300 = 180 females\nTotal employees with a college degree = 420+120 = 540 employees\nTotal employees without a college degree = 280+180 = 460 employees\nIt is given that 80% of employees with a college degree earn a salary above Rs.80,000 = 80% of 540 \n=> Employees with college degrees earning more than Rs.80,000 = 432\nAlso, 30% of employees without college degrees earn more than Rs.80,000 = 30% of 460 = 138\nTherefore, the total number of employees earning more than Rs. 80,000 = 432+138 = 570\nPercentage of the entire population earning a salary of above Rs. 80,000 = $\\ \\dfrac{570}{1000}\\times100$ = 57%",
+      "question_text": "In Hyderabad Public School, out of the total boys in the school, 20% of the total boys come to school using public transport, and 70% of the students coming to school using public transport are boys. What is the overall percentage of students who come to school via using public transport, if it is given that the ratio of boys and girls in the school is 7:3?",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "Let the total number of students in the Hyderabad Public School be 1000N.\nIt is given that the ratio of boys and girls in the school is 7:3.\nTherefore, the number of boys in the school = 700N\nThe number of girls in the school = 300N.\nAlso, it is given that 20% of the total boys come to school using public transport.\nTherefore, the number of boys coming to school using public transport = 20% of 700N = 140N\nAlso, 70% of students using public transport to school are boys.\nThus, if the number of students using public transport is P.\nThen, 70% of P = 140N\nP = 200N\nTherefore, % of students in the Hyderabad Public School who come to school using public transport = (200N/1000N)*100 = 20%",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA company has a total of 1,000 employees. The ratio of male to female employees is 7:3. Of the male employees, 60% have a college degree, and 40% of the female employees have a college degree. Suppose 80% of those with a college degree earn a salary above Rs.80,000 and 30% of those without a college degree earn a salary above Rs. 80,000. What percentage of the entire employee population earns a salary above Rs. 80,000?\n\n**Options:**\n- **A**. 59\n- **B**. 57 ✅\n- **C**. 61\n- **D**. 63\n\n**Correct Answer:** null\n\n**Solution:**\nTotal employees = 1000, the ratio of male to female employees is 7:3, which means 700 males and 300 females in the company.\n=> 60% of male have a college degree = 60% of 700 = 420 males\nTherefore, 40% of males don't have a degree = 40% of 700 =  280 males\n=> 40% of female employees have a college degree = 40% of 300 = 120 females\nTherefore, 60% of females don't have a degree = 60% of 300 = 180 females\nTotal employees with a college degree = 420+120 = 540 employees\nTotal employees without a college degree = 280+180 = 460 employees\nIt is given that 80% of employees with a college degree earn a salary above Rs.80,000 = 80% of 540 \n=> Employees with college degrees earning more than Rs.80,000 = 432\nAlso, 30% of employees without college degrees earn more than Rs.80,000 = 30% of 460 = 138\nTherefore, the total number of employees earning more than Rs. 80,000 = 432+138 = 570\nPercentage of the entire population earning a salary of above Rs. 80,000 = $\\ \\dfrac{570}{1000}\\times100$ = 57%",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn Hyderabad Public School, out of the total boys in the school, 20% of the total boys come to school using public transport, and 70% of the students coming to school using public transport are boys. What is the overall percentage of students who come to school via using public transport, if it is given that the ratio of boys and girls in the school is 7:3?\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nLet the total number of students in the Hyderabad Public School be 1000N.\nIt is given that the ratio of boys and girls in the school is 7:3.\nTherefore, the number of boys in the school = 700N\nThe number of girls in the school = 300N.\nAlso, it is given that 20% of the total boys come to school using public transport.\nTherefore, the number of boys coming to school using public transport = 20% of 700N = 140N\nAlso, 70% of students using public transport to school are boys.\nThus, if the number of students using public transport is P.\nThen, 70% of P = 140N\nP = 200N\nTherefore, % of students in the Hyderabad Public School who come to school using public transport = (200N/1000N)*100 = 20%",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-3",
       "passage_text": "",
-      "question_text": "Raman can complete the job in 60 days by working 3 hours daily, while Raghav can finish it in 90 days by working 5 hours daily. If they work individually, Raman works 3 hours, and Raghav works 5 hours daily. If they work together, they work for 5 hours each day. Raman works on the first day, Raghav on the second, and both on the third day. This pattern repeats until the job is done. Find the number of days Raman and Raghav require to complete the job following the given pattern?",
+      "question_text": "A chemist prepares a 90-liter solution by mixing a 15% saline solution with a 40% saline solution. She then performs two operations: first, she removes 20% of the mixture and replaces it with a 60% saline solution; second, she adds 10 liters of pure water. The final mixture has a saline concentration of 28%. What was the quantity (in litres) of the 40% solution in the initial mixture?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "45",
+          "option_text": "32",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "42",
+          "option_text": "34",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "40",
+          "option_text": "36",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "35",
+          "option_text": "38",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the total work be 900 units.\nRaman can complete the job in 60 days by working 3 hours daily \nTherefore, work done by Raman in one hour = $\\dfrac{900}{180}$ = 5 units\nRaghav can finish the complete job in 90 days by working 5 hours daily.\nTherefore, work done by Raghav in one hour = $\\dfrac{900}{450}$ = 2 units\nWork done on first day by Raman alone = 5 × 3 = 15 units\nWork done on the second day by Raghav alone = 2 × 5 = 10 units\nWork done on the third day by both Raman and raghav= 5(5+2) = 35 units\nWork done by both of them in 3 days = 60 units\n$\\therefore\\ $ Number of days required to finish the job = $\\dfrac{900\\times\\ 3}{60}$ = 45 days\nThe answer is option A.",
+      "solution_text": "Given that the Chemist has a 90-liter solution he made by mixing a 15% saline solution with a 40% saline solution.\nLet the initial composition be $x$ litres of 15% saline solution, so, we will have $90-x$ litres of 40% saline solution.\nThe resulting conc. will be $\\dfrac{15x+\\left(90-x\\right)40}{90}=\\dfrac{3600-25x}{90}=40-\\dfrac{5}{18}x$\nNow 20% of this is taken out i.e. 18 litres and replaced with 60% saline solution.\nSo, the salt quantity now in the solution is $\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18$\n10 litres of pure water is now added, so the total quantity of solution becomes 100 litres.\nGiven that the saline conc. now is 28%\nor, $\\dfrac{\\left(\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18\\right)}{100}=\\dfrac{28}{100}$\n$\\left(\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18\\right)=28$\n$\\dfrac{144}{5}-\\dfrac{x}{5}+\\dfrac{54}{5}=28$\n$\\dfrac{x}{5}=\\dfrac{58}{5}$\n$x=58$\n58 litres is the quantity of 15% solution in the initial mixture; thus, the quantity of 40% solution = $90-x=90-58=32$ litres.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaman can complete the job in 60 days by working 3 hours daily, while Raghav can finish it in 90 days by working 5 hours daily. If they work individually, Raman works 3 hours, and Raghav works 5 hours daily. If they work together, they work for 5 hours each day. Raman works on the first day, Raghav on the second, and both on the third day. This pattern repeats until the job is done. Find the number of days Raman and Raghav require to complete the job following the given pattern?\n\n**Options:**\n- **A**. 45 ✅\n- **B**. 42\n- **C**. 40\n- **D**. 35\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total work be 900 units.\nRaman can complete the job in 60 days by working 3 hours daily \nTherefore, work done by Raman in one hour = $\\dfrac{900}{180}$ = 5 units\nRaghav can finish the complete job in 90 days by working 5 hours daily.\nTherefore, work done by Raghav in one hour = $\\dfrac{900}{450}$ = 2 units\nWork done on first day by Raman alone = 5 × 3 = 15 units\nWork done on the second day by Raghav alone = 2 × 5 = 10 units\nWork done on the third day by both Raman and raghav= 5(5+2) = 35 units\nWork done by both of them in 3 days = 60 units\n$\\therefore\\ $ Number of days required to finish the job = $\\dfrac{900\\times\\ 3}{60}$ = 45 days\nThe answer is option A.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA chemist prepares a 90-liter solution by mixing a 15% saline solution with a 40% saline solution. She then performs two operations: first, she removes 20% of the mixture and replaces it with a 60% saline solution; second, she adds 10 liters of pure water. The final mixture has a saline concentration of 28%. What was the quantity (in litres) of the 40% solution in the initial mixture?\n\n**Options:**\n- **A**. 32 ✅\n- **B**. 34\n- **C**. 36\n- **D**. 38\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that the Chemist has a 90-liter solution he made by mixing a 15% saline solution with a 40% saline solution.\nLet the initial composition be $x$ litres of 15% saline solution, so, we will have $90-x$ litres of 40% saline solution.\nThe resulting conc. will be $\\dfrac{15x+\\left(90-x\\right)40}{90}=\\dfrac{3600-25x}{90}=40-\\dfrac{5}{18}x$\nNow 20% of this is taken out i.e. 18 litres and replaced with 60% saline solution.\nSo, the salt quantity now in the solution is $\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18$\n10 litres of pure water is now added, so the total quantity of solution becomes 100 litres.\nGiven that the saline conc. now is 28%\nor, $\\dfrac{\\left(\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18\\right)}{100}=\\dfrac{28}{100}$\n$\\left(\\dfrac{\\left(40-\\dfrac{5}{18}x\\right)}{100}\\times72+\\dfrac{60}{100}\\times18\\right)=28$\n$\\dfrac{144}{5}-\\dfrac{x}{5}+\\dfrac{54}{5}=28$\n$\\dfrac{x}{5}=\\dfrac{58}{5}$\n$x=58$\n58 litres is the quantity of 15% solution in the initial mixture; thus, the quantity of 40% solution = $90-x=90-58=32$ litres.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-4",
       "passage_text": "",
-      "question_text": "Thirteen men in a company, each with equal work efficiency, are tasked to finish assigned task. However, their work efficiency has decreased due to the festive season and long holidays. They are now operating at 90% efficiency from Monday to Wednesday and 75% from Thursday to Friday. If only 11 people come to work that week, what percentage of work will remain pending at the end of the week, assuming a five-day work week, i.e. Monday to Friday?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "27.92%",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "28.92%",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "26.92%",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "29.92%",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let us assume the daily work done by each man = 10a\nSo, in a week of 5 days, work done by 13 men = 13*5*10a\n=> Total work to be done by 13 men in 5 days = 650a\nDue to the festive season, their work efficiency from Monday to Wednesday was 90%.\nWork done by each men in three days = 9a*3 = 27a\nTotal number of workers working = 11\nWork done from Monday to Wednesday = 11*27a = 297a\nAlso, work efficiency on Thursday and Friday = 75%\nWork done by each men = 7.5a \nTherefore, work done on Thursday and Friday = 11*2*7.5a = 165a\n=> Total work done in festive week = 297a + 165a = 462a\nTherefore, pending work = 650a - 462a = 188a\nRequired percentage = $\\ \\dfrac{188a}{650a}\\times\\ 100$ = 28.92%\nThe answer is option B.",
+      "question_text": "A shopkeeper purchased two items, A and B, at the same price. He successively increased the cost of item A by 40% and 50%, respectively, and before selling to the customer, he gave a discount of 30%. For item B, he successively increased the price by 20% and 25% and sold to the customer. If the amount of money received by selling item B is Rs.1800 more than A, find the cost price of Item A.",
+      "options": [],
+      "correct_option_data": "60000",
+      "solution_text": "Let the cost price of both items be Rs. 100N\nFor item A,\nCost price = 100N\nPrice increased successively by 40% and 50%.\nMarked Price = 100N*1.4*1.5 = Rs. 210N\nDiscount = 30%\nTherefore, selling price = 210N*0.7 = Rs. 147N\nFor item B,\nCost price = 100N\nPrice increased by 20% and 25% and sold\nSelling price = 100N*1.2*1.25 = Rs. 150N\nIf the money received by selling item B is Rs.1800 more than A.\n150N - 147N = 1800\nN = 600\nTherefore, cost price of item A = 100N = Rs.60,000",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThirteen men in a company, each with equal work efficiency, are tasked to finish assigned task. However, their work efficiency has decreased due to the festive season and long holidays. They are now operating at 90% efficiency from Monday to Wednesday and 75% from Thursday to Friday. If only 11 people come to work that week, what percentage of work will remain pending at the end of the week, assuming a five-day work week, i.e. Monday to Friday?\n\n**Options:**\n- **A**. 27.92%\n- **B**. 28.92% ✅\n- **C**. 26.92%\n- **D**. 29.92%\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the daily work done by each man = 10a\nSo, in a week of 5 days, work done by 13 men = 13*5*10a\n=> Total work to be done by 13 men in 5 days = 650a\nDue to the festive season, their work efficiency from Monday to Wednesday was 90%.\nWork done by each men in three days = 9a*3 = 27a\nTotal number of workers working = 11\nWork done from Monday to Wednesday = 11*27a = 297a\nAlso, work efficiency on Thursday and Friday = 75%\nWork done by each men = 7.5a \nTherefore, work done on Thursday and Friday = 11*2*7.5a = 165a\n=> Total work done in festive week = 297a + 165a = 462a\nTherefore, pending work = 650a - 462a = 188a\nRequired percentage = $\\ \\dfrac{188a}{650a}\\times\\ 100$ = 28.92%\nThe answer is option B.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper purchased two items, A and B, at the same price. He successively increased the cost of item A by 40% and 50%, respectively, and before selling to the customer, he gave a discount of 30%. For item B, he successively increased the price by 20% and 25% and sold to the customer. If the amount of money received by selling item B is Rs.1800 more than A, find the cost price of Item A.\n\n**Options:**\n\n**Correct Answer:** 60000\n\n**Solution:**\nLet the cost price of both items be Rs. 100N\nFor item A,\nCost price = 100N\nPrice increased successively by 40% and 50%.\nMarked Price = 100N*1.4*1.5 = Rs. 210N\nDiscount = 30%\nTherefore, selling price = 210N*0.7 = Rs. 147N\nFor item B,\nCost price = 100N\nPrice increased by 20% and 25% and sold\nSelling price = 100N*1.2*1.25 = Rs. 150N\nIf the money received by selling item B is Rs.1800 more than A.\n150N - 147N = 1800\nN = 600\nTherefore, cost price of item A = 100N = Rs.60,000",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-5",
       "passage_text": "",
-      "question_text": "Two cars, A and B, start from the same point and travel on a straight road. Car A travels at a constant speed of 80 km/h, while Car B starts 2 hours later and travels at a constant speed of 100 km/h. After 5 hours of travel, Car B comes to a stop, while Car A continues at the same speed and reaches the endpoint 800 km from the starting point. Car B resumes its journey after Car A reaches the endpoint and travels at a speed of 120 km/h. If Car A started in the morning at 8:20 AM, what time will Car B reach the endpoint?",
+      "question_text": "Three friends Aadi, Bikram and Chandu have to complete a task. Aadi and Bikram working together can complete the task in 12 days, while Bikram and Chandu working together can complete it in 15 days. If Aadi starts alone, Bikram joins after 4 days and Chandu joins after 8 days, the task gets completed in 14 days. Find the day the task will be completed if Bikram works alone.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "6:50 PM",
+          "option_text": "20",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "8:50 PM",
+          "option_text": "18",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "10:50 PM",
+          "option_text": "24",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "8:20 PM",
+          "option_text": "22",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "To find the time when Car B will reach the endpoint, let's calculate the time it takes for Car A to reach the endpoint.\nCar A travels at a constant speed of 80 km/h. After 5 hours of travel, Car A has covered a distance of 80 km/h × 5 hours = 400 km.\nSince Car A reaches a point 800 km from the starting point, the remaining distance for Car A to reach the endpoint is 800 km - 400 km = 400 km.\nTo cover the remaining 400 km at a speed of 80 km/h, Car A will take 400 km ÷ 80 km/h = 5 hours.\nTherefore, the total time for Car A to reach the endpoint is 5 hours + 5 hours = 10 hours.\nSo, Car A will reach the final point at 6:20 PM ( 10 hrs after 8:20 A.M)\nInitially, Car B starts at 10:20 A.M ( 2 hrs after 8:20 AM)\nCar B travels for 5 hrs and covers a distance of 5*100 = 500 km\nNow, Car B starts again at 6:20 PM ( After Car A reaches the final point)\nCar B starts after Car A reaches the endpoint and travels at a 120 km/h speed. The distance between Car A and Car B at this point is (800-500) km which is 300 km\nTo cover the 300 km distance at a speed of 120 km/h, Car B will take 300 km ÷ 120 km/h = 2.5 hours.\nHowever, we need to find the time in minutes. Since Car B starts after Car A reaches the endpoint at 6:20 PM, we add the travel time of Car B (2.5 hours) to that time.\n6:20 PM + 2 hours and 30 minutes (2.5 hours) = 8:50 PM.\nTherefore, Car B will reach the endpoint at 8:50 PM.",
+      "solution_text": "Assuming the total task to be the LCM of 12 and 15 i.e. 60 units.\nAssume that Aadi can complete $a$, Bikram $b$ and Chandu $c$ units per day.\nSo, $\\dfrac{60}{a+b}=12$\nor, $a+b=5$ . . . (1)\nand, $\\dfrac{60}{b+c}=15$\nor, $b+c=4$ . . . (2)\nGiven, If Aadi starts alone, Bikram joins after 4 days and Chandu joins after 8 days, the task gets completed in 14 days\nor, $4a+4\\left(a+b\\right)+6\\left(a+b+c\\right)=60$\nput $a+b=5$ and $c=4-b$ in this equation\nSo, $4a+4\\times5+6\\left(a+4\\right)=60$\n$10a=16$\nor, $a=1.6$\nput in eqn (1), we get\n$b=5-1.6=3.4$\nHence, the time taken by Bikram alone will be $\\dfrac{60}{3.4}=17.65$ or 18 days.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo cars, A and B, start from the same point and travel on a straight road. Car A travels at a constant speed of 80 km/h, while Car B starts 2 hours later and travels at a constant speed of 100 km/h. After 5 hours of travel, Car B comes to a stop, while Car A continues at the same speed and reaches the endpoint 800 km from the starting point. Car B resumes its journey after Car A reaches the endpoint and travels at a speed of 120 km/h. If Car A started in the morning at 8:20 AM, what time will Car B reach the endpoint?\n\n**Options:**\n- **A**. 6:50 PM\n- **B**. 8:50 PM ✅\n- **C**. 10:50 PM\n- **D**. 8:20 PM\n\n**Correct Answer:** null\n\n**Solution:**\nTo find the time when Car B will reach the endpoint, let's calculate the time it takes for Car A to reach the endpoint.\nCar A travels at a constant speed of 80 km/h. After 5 hours of travel, Car A has covered a distance of 80 km/h × 5 hours = 400 km.\nSince Car A reaches a point 800 km from the starting point, the remaining distance for Car A to reach the endpoint is 800 km - 400 km = 400 km.\nTo cover the remaining 400 km at a speed of 80 km/h, Car A will take 400 km ÷ 80 km/h = 5 hours.\nTherefore, the total time for Car A to reach the endpoint is 5 hours + 5 hours = 10 hours.\nSo, Car A will reach the final point at 6:20 PM ( 10 hrs after 8:20 A.M)\nInitially, Car B starts at 10:20 A.M ( 2 hrs after 8:20 AM)\nCar B travels for 5 hrs and covers a distance of 5*100 = 500 km\nNow, Car B starts again at 6:20 PM ( After Car A reaches the final point)\nCar B starts after Car A reaches the endpoint and travels at a 120 km/h speed. The distance between Car A and Car B at this point is (800-500) km which is 300 km\nTo cover the 300 km distance at a speed of 120 km/h, Car B will take 300 km ÷ 120 km/h = 2.5 hours.\nHowever, we need to find the time in minutes. Since Car B starts after Car A reaches the endpoint at 6:20 PM, we add the travel time of Car B (2.5 hours) to that time.\n6:20 PM + 2 hours and 30 minutes (2.5 hours) = 8:50 PM.\nTherefore, Car B will reach the endpoint at 8:50 PM.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree friends Aadi, Bikram and Chandu have to complete a task. Aadi and Bikram working together can complete the task in 12 days, while Bikram and Chandu working together can complete it in 15 days. If Aadi starts alone, Bikram joins after 4 days and Chandu joins after 8 days, the task gets completed in 14 days. Find the day the task will be completed if Bikram works alone.\n\n**Options:**\n- **A**. 20\n- **B**. 18 ✅\n- **C**. 24\n- **D**. 22\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the total task to be the LCM of 12 and 15 i.e. 60 units.\nAssume that Aadi can complete $a$, Bikram $b$ and Chandu $c$ units per day.\nSo, $\\dfrac{60}{a+b}=12$\nor, $a+b=5$ . . . (1)\nand, $\\dfrac{60}{b+c}=15$\nor, $b+c=4$ . . . (2)\nGiven, If Aadi starts alone, Bikram joins after 4 days and Chandu joins after 8 days, the task gets completed in 14 days\nor, $4a+4\\left(a+b\\right)+6\\left(a+b+c\\right)=60$\nput $a+b=5$ and $c=4-b$ in this equation\nSo, $4a+4\\times5+6\\left(a+4\\right)=60$\n$10a=16$\nor, $a=1.6$\nput in eqn (1), we get\n$b=5-1.6=3.4$\nHence, the time taken by Bikram alone will be $\\dfrac{60}{3.4}=17.65$ or 18 days.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-6",
       "passage_text": "",
-      "question_text": "A construction project can be completed in 40 days with the combined efforts of 10 men. However, at the start of the 5th day, five men depart from the project, and five women are brought in to replace them. Additionally, at the start of 20th day, four more men leave, and five women are added to the workforce. Assuming that each woman's efficiency is 60% of a man's efficiency, what is the minimum number of days needed to finish the project?",
+      "question_text": "Find the number of integral values of $x$ for which the inequality $\\dfrac{x^3-9x^2+15x+25}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$ is satisfied.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "50 days",
+          "option_text": "8",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "52 days",
-          "is_correct": false
+          "option_text": "5",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "54 days",
-          "is_correct": true
+          "option_text": "6",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "56 days",
+          "option_text": "7",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the work efficiency of each man is 10 units per day\nThen, work efficiency of each women is = 60% of 10 = 6 units per day\nTotal units of work in the project = 10*10*40 = 4000 units\nInitially, work done by 10 men in 4 days = 10*4*10 = 400 units\nFrom the 5th day, only 5 men and 5 women are working till the 19th day\nTotal units of work done from the 5th day to the 19th day = 15*(5*10+5*6) = 80*15 = 1200 units\nNow, from the 20th day, only 1 men and 10 women are working,\nTotal units of work done by 1 men and 10 women combined = 1*10+10*6 =  70 units\nTherefore, units of work left to complete the project = 4000-400-1200 = 2400 units\nTherefore, the number of days required to complete the balance work = 2400/70 $\\simeq35\\ $ days\nSo a total of 19+35 = 54 days are required to complete the project.",
+      "solution_text": "The given inequality is $\\dfrac{x^3-9x^2+15x+25}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nWe see that putting $x=-1$ the numerator turns into 0\nSo, $\\left(x+1\\right)$ is a factor of the numerator\nTaking it out we get $\\dfrac{\\left(x^2-10x+25\\right)\\left(x+1\\right)}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nWe know $x^2-10x+25=\\left(x-5\\right)^2$\nSo, the inequality is $\\dfrac{\\left(x-5\\right)^2\\left(x+1\\right)}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nTaking out the $\\left(x-5\\right)$ term from numerator and denominator, $x\\ne5$ we get\n$\\dfrac{\\left(x-5\\right)\\left(x+1\\right)}{\\left(x-8\\right)\\left(x+4\\right)}\\le0$\nThe LHS will be negative for $x\\in\\ \\left(-4,\\ -1\\right)U\\left(5,\\ 8\\right)$ i.e. a total of 4 values\nand the LHS will be zero for $x=-1,5$ but $x$ cannot be equal to 5, hence a total of 1 value\nSo, the total number of integral values of $x$ for which the inequality is satisfied is 5.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA construction project can be completed in 40 days with the combined efforts of 10 men. However, at the start of the 5th day, five men depart from the project, and five women are brought in to replace them. Additionally, at the start of 20th day, four more men leave, and five women are added to the workforce. Assuming that each woman's efficiency is 60% of a man's efficiency, what is the minimum number of days needed to finish the project?\n\n**Options:**\n- **A**. 50 days\n- **B**. 52 days\n- **C**. 54 days ✅\n- **D**. 56 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet the work efficiency of each man is 10 units per day\nThen, work efficiency of each women is = 60% of 10 = 6 units per day\nTotal units of work in the project = 10*10*40 = 4000 units\nInitially, work done by 10 men in 4 days = 10*4*10 = 400 units\nFrom the 5th day, only 5 men and 5 women are working till the 19th day\nTotal units of work done from the 5th day to the 19th day = 15*(5*10+5*6) = 80*15 = 1200 units\nNow, from the 20th day, only 1 men and 10 women are working,\nTotal units of work done by 1 men and 10 women combined = 1*10+10*6 =  70 units\nTherefore, units of work left to complete the project = 4000-400-1200 = 2400 units\nTherefore, the number of days required to complete the balance work = 2400/70 $\\simeq35\\ $ days\nSo a total of 19+35 = 54 days are required to complete the project.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of integral values of $x$ for which the inequality $\\dfrac{x^3-9x^2+15x+25}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$ is satisfied.\n\n**Options:**\n- **A**. 8\n- **B**. 5 ✅\n- **C**. 6\n- **D**. 7\n\n**Correct Answer:** null\n\n**Solution:**\nThe given inequality is $\\dfrac{x^3-9x^2+15x+25}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nWe see that putting $x=-1$ the numerator turns into 0\nSo, $\\left(x+1\\right)$ is a factor of the numerator\nTaking it out we get $\\dfrac{\\left(x^2-10x+25\\right)\\left(x+1\\right)}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nWe know $x^2-10x+25=\\left(x-5\\right)^2$\nSo, the inequality is $\\dfrac{\\left(x-5\\right)^2\\left(x+1\\right)}{\\left(x-8\\right)\\left(x-5\\right)\\left(x+4\\right)}\\le0$\nTaking out the $\\left(x-5\\right)$ term from numerator and denominator, $x\\ne5$ we get\n$\\dfrac{\\left(x-5\\right)\\left(x+1\\right)}{\\left(x-8\\right)\\left(x+4\\right)}\\le0$\nThe LHS will be negative for $x\\in\\ \\left(-4,\\ -1\\right)U\\left(5,\\ 8\\right)$ i.e. a total of 4 values\nand the LHS will be zero for $x=-1,5$ but $x$ cannot be equal to 5, hence a total of 1 value\nSo, the total number of integral values of $x$ for which the inequality is satisfied is 5.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-7",
       "passage_text": "",
-      "question_text": "Prakash has a showroom of wireless earbuds. He has received a shipment of 1000 earbuds and will sell each earbud for a fixed price. He provides a full refund against any defective piece. For every 8 earbuds, 3 are defective. If he makes a profit of 150% on each non-defective piece,  what is his overall profit percentage in the whole transaction?",
+      "question_text": "Find the triangle's perimeter with altitudes of 10, 12 and 15.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "45.5",
+          "option_text": "$\\dfrac{96}{\\sqrt{7}}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "48.75",
+          "option_text": "$\\dfrac{125}{\\sqrt{11}}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "56.25",
+          "option_text": "$\\dfrac{120}{\\sqrt{7}}$",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "60",
+          "option_text": "$\\dfrac{100}{\\sqrt{11}}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us consider the selling price per earbud is 1000.\nSince after selling the earbuds at 1000 a piece, Prakash is making a profit of 150%,\nCost per piece = $\\frac{1000}{2.5}=400$\nThus, cost price of 1000 earbuds = $400\\times\\ 1000\\ =\\ 400000$\nTotal defective earbuds = $1000\\times\\ \\frac{3}{8}=375$Non defective earbuds = 1000 - 375 = 625.The selling price is calculated on non-defective pieces as the defective pieces get the total refund, and he makes no profit on them.\nThus, the total selling price = $625\\times\\ 1000=625000$\nProfit = $625000-400000=225000$\nThus, profit percentage = $\\frac{225000}{400000}\\times\\ 100=56.25\\%$\nThus, the correct answer is C.",
+      "solution_text": "Altitudes are 10, 12 and 15. \nArea equals $\\dfrac{1}{2}\\left(a\\right)\\left(h_a\\right)$\nWe can write the side as, $a=\\dfrac{2\\triangle}{h_a}$\nWe can write the ratio of the three sides $a:b:c$ as $\\dfrac{1}{h_a}:\\dfrac{1}{h_b}:\\dfrac{1}{h_c}$\n$\\dfrac{1}{h_a}:\\dfrac{1}{h_b}:\\dfrac{1}{h_c}=\\dfrac{1}{10}:\\dfrac{1}{12}:\\dfrac{1}{15}$\nThis equals $6:5:4$\nTaking the sides as 6x, 5x and 4x. \nSemi-perimeter $s=\\dfrac{15x}{2}$\nUsing Heron's formula to calculate the area, we have, \n$\\triangle=\\sqrt{\\left(\\dfrac{15x}{2}\\right)\\left(\\dfrac{3x}{2}\\right)\\left(\\dfrac{5x}{2}\\right)\\left(\\dfrac{7x}{2}\\right)}=\\dfrac{15x^2}{4}\\sqrt{7}$\nAlso, $\\triangle=\\dfrac{1}{2}\\left(a\\right)\\left(h_a\\right)$\n$\\dfrac{1}{2}\\left(6x\\right)\\left(10\\right)=\\dfrac{15x^2}{4}\\sqrt{7}$\n$x=\\dfrac{8}{\\sqrt{7}}$\nTotal Perimeter will be 15x, which equals, $15x=\\dfrac{120}{\\sqrt{7}}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPrakash has a showroom of wireless earbuds. He has received a shipment of 1000 earbuds and will sell each earbud for a fixed price. He provides a full refund against any defective piece. For every 8 earbuds, 3 are defective. If he makes a profit of 150% on each non-defective piece,  what is his overall profit percentage in the whole transaction?\n\n**Options:**\n- **A**. 45.5\n- **B**. 48.75\n- **C**. 56.25 ✅\n- **D**. 60\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider the selling price per earbud is 1000.\nSince after selling the earbuds at 1000 a piece, Prakash is making a profit of 150%,\nCost per piece = $\\frac{1000}{2.5}=400$\nThus, cost price of 1000 earbuds = $400\\times\\ 1000\\ =\\ 400000$\nTotal defective earbuds = $1000\\times\\ \\frac{3}{8}=375$Non defective earbuds = 1000 - 375 = 625.The selling price is calculated on non-defective pieces as the defective pieces get the total refund, and he makes no profit on them.\nThus, the total selling price = $625\\times\\ 1000=625000$\nProfit = $625000-400000=225000$\nThus, profit percentage = $\\frac{225000}{400000}\\times\\ 100=56.25\\%$\nThus, the correct answer is C.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the triangle's perimeter with altitudes of 10, 12 and 15.\n\n**Options:**\n- **A**. $\\dfrac{96}{\\sqrt{7}}$\n- **B**. $\\dfrac{125}{\\sqrt{11}}$\n- **C**. $\\dfrac{120}{\\sqrt{7}}$ ✅\n- **D**. $\\dfrac{100}{\\sqrt{11}}$\n\n**Correct Answer:** null\n\n**Solution:**\nAltitudes are 10, 12 and 15. \nArea equals $\\dfrac{1}{2}\\left(a\\right)\\left(h_a\\right)$\nWe can write the side as, $a=\\dfrac{2\\triangle}{h_a}$\nWe can write the ratio of the three sides $a:b:c$ as $\\dfrac{1}{h_a}:\\dfrac{1}{h_b}:\\dfrac{1}{h_c}$\n$\\dfrac{1}{h_a}:\\dfrac{1}{h_b}:\\dfrac{1}{h_c}=\\dfrac{1}{10}:\\dfrac{1}{12}:\\dfrac{1}{15}$\nThis equals $6:5:4$\nTaking the sides as 6x, 5x and 4x. \nSemi-perimeter $s=\\dfrac{15x}{2}$\nUsing Heron's formula to calculate the area, we have, \n$\\triangle=\\sqrt{\\left(\\dfrac{15x}{2}\\right)\\left(\\dfrac{3x}{2}\\right)\\left(\\dfrac{5x}{2}\\right)\\left(\\dfrac{7x}{2}\\right)}=\\dfrac{15x^2}{4}\\sqrt{7}$\nAlso, $\\triangle=\\dfrac{1}{2}\\left(a\\right)\\left(h_a\\right)$\n$\\dfrac{1}{2}\\left(6x\\right)\\left(10\\right)=\\dfrac{15x^2}{4}\\sqrt{7}$\n$x=\\dfrac{8}{\\sqrt{7}}$\nTotal Perimeter will be 15x, which equals, $15x=\\dfrac{120}{\\sqrt{7}}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-8",
       "passage_text": "",
-      "question_text": "Rahul wants to invest some money for 3 years. Rahul has 2 friends Mahesh and Ganesh. Both offer him lucrative returns on investment. Mahesh offers him 12% interest per year compounded semi-annually. Upon hearing this Ganesh who can only give simple interest decides to change his offer. What should be the minimum interest rate Ganesh should offer in order to give better returns than Mahesh? (Rounded to the nearest integer)",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "13",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "14",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "15",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "16",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let's calculate what Mahesh is offering.\nSince he is offering interest compounded semi-annually Amount = $P\\left(1+\\ \\frac{\\ \\ \\frac{\\ R}{2}}{100}\\right)^{^{^{^{2N}}}}$\nTherefore A = $P\\left(1+\\ \\frac{\\ 6}{100}\\right)^6$\n$\\therefore\\ A\\ =1.06^6P=1.418P$ which is less that $1.42P$\nTherefore the simple interest offered needs to be atleast .42P over 3 years which means 14% per year\nTherefore Option B is the correct answer",
+      "question_text": "Rajiv, a vendor, buys mangoes at Rs. 15 each and marks up the price by 100%. He purchases 90 mangoes for selling and offers a promotion where customers receive 4 free mangoes for every 'z' mangoes purchased. If he aims to earn exactly Rs. 7 profit per mango, what is the value of 'z'?",
+      "options": [],
+      "correct_option_data": "11",
+      "solution_text": "Cost price per mango for Rajiv = Rs. 15\nMarked up Price = $15\\times2=Rs.\\ 30$ (Since the marked-up rate is 100%, the price of the product got doubled.)\nHe purchased 90 mangoes, and Rajiv aims to earn a profit of Rs. 7 per mango. \nSo, the total revenue Rajiv aims to get = $90\\times\\left(15+7\\right)=90\\times22=1980$\nThe selling price per Mango is Rs. 30\nSo, the number of Mangoes Rajiv can sell to get the desired profit = $\\dfrac{1980}{30}=66$\nRajiv has an excess of 90 - 66 = 24 Mangoes that he can give for free. \nFor every z mango, 4 free mangoes are given. Since we are giving out 24 mangoes in total, this would mean that we are giving out the free mangos 6 times. \nHence, 66 mangoes are 6z, giving the value of z to be 11.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRahul wants to invest some money for 3 years. Rahul has 2 friends Mahesh and Ganesh. Both offer him lucrative returns on investment. Mahesh offers him 12% interest per year compounded semi-annually. Upon hearing this Ganesh who can only give simple interest decides to change his offer. What should be the minimum interest rate Ganesh should offer in order to give better returns than Mahesh? (Rounded to the nearest integer)\n\n**Options:**\n- **A**. 13\n- **B**. 14 ✅\n- **C**. 15\n- **D**. 16\n\n**Correct Answer:** null\n\n**Solution:**\nLet's calculate what Mahesh is offering.\nSince he is offering interest compounded semi-annually Amount = $P\\left(1+\\ \\frac{\\ \\ \\frac{\\ R}{2}}{100}\\right)^{^{^{^{2N}}}}$\nTherefore A = $P\\left(1+\\ \\frac{\\ 6}{100}\\right)^6$\n$\\therefore\\ A\\ =1.06^6P=1.418P$ which is less that $1.42P$\nTherefore the simple interest offered needs to be atleast .42P over 3 years which means 14% per year\nTherefore Option B is the correct answer",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRajiv, a vendor, buys mangoes at Rs. 15 each and marks up the price by 100%. He purchases 90 mangoes for selling and offers a promotion where customers receive 4 free mangoes for every 'z' mangoes purchased. If he aims to earn exactly Rs. 7 profit per mango, what is the value of 'z'?\n\n**Options:**\n\n**Correct Answer:** 11\n\n**Solution:**\nCost price per mango for Rajiv = Rs. 15\nMarked up Price = $15\\times2=Rs.\\ 30$ (Since the marked-up rate is 100%, the price of the product got doubled.)\nHe purchased 90 mangoes, and Rajiv aims to earn a profit of Rs. 7 per mango. \nSo, the total revenue Rajiv aims to get = $90\\times\\left(15+7\\right)=90\\times22=1980$\nThe selling price per Mango is Rs. 30\nSo, the number of Mangoes Rajiv can sell to get the desired profit = $\\dfrac{1980}{30}=66$\nRajiv has an excess of 90 - 66 = 24 Mangoes that he can give for free. \nFor every z mango, 4 free mangoes are given. Since we are giving out 24 mangoes in total, this would mean that we are giving out the free mangos 6 times. \nHence, 66 mangoes are 6z, giving the value of z to be 11.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-9",
       "passage_text": "",
-      "question_text": "Arnav adds 40 liters of apple juice and 10 liters of orange juice into a large pitcher. He takes some of this mixture and pours it into a jug and adds 5 liters of water to it. He realizes that the water amounts to 20% of the contents of the jug. How much apple juice will remain in the pitcher?",
+      "question_text": "In a residential society, the residents own various combinations of vehicles, including cars, motorcycles, and bicycles. Of the car owners, 20% also own motorcycles, and 10% own both motorcycles and bicycles. Additionally, 15% of motorcycle owners also own bicycles but do not own cars. The total number of car owners is 1,000, and the ratio of motorcycle owners to bicycle owners is 3: 2. If 45 people own both motorcycles and bicycles but not cars, what is the maximum possible number of people who own two or more types of vehicles?",
       "options": [],
-      "correct_option_data": "24",
-      "solution_text": "The questions says that after adding remaining water in the jug, water accounts for 20% of the contents of the jug.\nThis implies that 5 litres of water amounts to 20%.\nTherefore total contents of the jug= 25 litres.\nNow the amount of the resultant mixture of apple juice and orange juice in the jug = (25-5)= 20 litres.\nRatio of apple juice:orange juice= 4:1\nTherefore there will be 16 litres of apples juice an 4 litres of orange juice in the jug.\nSo, the apple juice remaining in the pitcher will amount to 40-16= 24 litres.",
+      "correct_option_data": "300",
+      "solution_text": "We are given that the total number of car owners is 1000, and the ratio of motorcycle to bicycle owners is 3:2.\nLet the total number of motorcycle owners are 300x so the total number of bicycle owners would be 200x. \nNow, we are given that 20% of car owners also own motorcycles, 15% of motorcycle owners also own bicycles but not car, and 10% of car owners own both motorcycles and bicycles.\nSince, 10% car owners like both motorcycles and bicycle so it will be 1000*10% = 100 people\nFurther, 20% of car owners also own motorcycles. So, 1000*20% = 200 people. However, these 200 also include those who own motorcycle as well as bicycle which 100. \nHence, the number of people who own only cars and motorcycle = 200 - 100 = 100. Further, we have: 45 people own both motorcycles and bicycles but not cars and we are told that 15% of motorcycle owners also own bicycles. So, 15% of 300x = 45x. \nSo, we can say, 45x = 45 and x = 1.\nHence, the number of people who motorcycle and bicycle are 300 and 200 respectively. \nHence, we get the following Venn diagram:\nLet the number of people who own both Car and Bicycle but not motorcycle be 'A'. So, the number of people who own only Bicycle = 200 - 100 - 45 - A = 55 - A.\nAnd, the number of people who own only Car is 1000 - 100 - 100 - A = 800 - A.\nNow, we need to find the maximum possible sum of the people who own two or more vehicles i.e. A + 100 + 100  + 45\n245 + A.\nNow, we need to maximize the value of A to get the maximum possible sum of A. \nA is maximum when there is no person who own only Bicycle. In that case, A will be 55. \nOr, it is possible when there is no person who own only Car. In that case, A will be 800.\nBut if A is 800, the total number of bicycle owners will be greater than 200. Hence, the maximum value A can take is 55.\nHence, the maximum possible number of people who own two or more vehicles are 245 + A = 245 + 55 = 300",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nArnav adds 40 liters of apple juice and 10 liters of orange juice into a large pitcher. He takes some of this mixture and pours it into a jug and adds 5 liters of water to it. He realizes that the water amounts to 20% of the contents of the jug. How much apple juice will remain in the pitcher?\n\n**Options:**\n\n**Correct Answer:** 24\n\n**Solution:**\nThe questions says that after adding remaining water in the jug, water accounts for 20% of the contents of the jug.\nThis implies that 5 litres of water amounts to 20%.\nTherefore total contents of the jug= 25 litres.\nNow the amount of the resultant mixture of apple juice and orange juice in the jug = (25-5)= 20 litres.\nRatio of apple juice:orange juice= 4:1\nTherefore there will be 16 litres of apples juice an 4 litres of orange juice in the jug.\nSo, the apple juice remaining in the pitcher will amount to 40-16= 24 litres.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a residential society, the residents own various combinations of vehicles, including cars, motorcycles, and bicycles. Of the car owners, 20% also own motorcycles, and 10% own both motorcycles and bicycles. Additionally, 15% of motorcycle owners also own bicycles but do not own cars. The total number of car owners is 1,000, and the ratio of motorcycle owners to bicycle owners is 3: 2. If 45 people own both motorcycles and bicycles but not cars, what is the maximum possible number of people who own two or more types of vehicles?\n\n**Options:**\n\n**Correct Answer:** 300\n\n**Solution:**\nWe are given that the total number of car owners is 1000, and the ratio of motorcycle to bicycle owners is 3:2.\nLet the total number of motorcycle owners are 300x so the total number of bicycle owners would be 200x. \nNow, we are given that 20% of car owners also own motorcycles, 15% of motorcycle owners also own bicycles but not car, and 10% of car owners own both motorcycles and bicycles.\nSince, 10% car owners like both motorcycles and bicycle so it will be 1000*10% = 100 people\nFurther, 20% of car owners also own motorcycles. So, 1000*20% = 200 people. However, these 200 also include those who own motorcycle as well as bicycle which 100. \nHence, the number of people who own only cars and motorcycle = 200 - 100 = 100. Further, we have: 45 people own both motorcycles and bicycles but not cars and we are told that 15% of motorcycle owners also own bicycles. So, 15% of 300x = 45x. \nSo, we can say, 45x = 45 and x = 1.\nHence, the number of people who motorcycle and bicycle are 300 and 200 respectively. \nHence, we get the following Venn diagram:\nLet the number of people who own both Car and Bicycle but not motorcycle be 'A'. So, the number of people who own only Bicycle = 200 - 100 - 45 - A = 55 - A.\nAnd, the number of people who own only Car is 1000 - 100 - 100 - A = 800 - A.\nNow, we need to find the maximum possible sum of the people who own two or more vehicles i.e. A + 100 + 100  + 45\n245 + A.\nNow, we need to maximize the value of A to get the maximum possible sum of A. \nA is maximum when there is no person who own only Bicycle. In that case, A will be 55. \nOr, it is possible when there is no person who own only Car. In that case, A will be 800.\nBut if A is 800, the total number of bicycle owners will be greater than 200. Hence, the maximum value A can take is 55.\nHence, the maximum possible number of people who own two or more vehicles are 245 + A = 245 + 55 = 300",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-10",
       "passage_text": "",
-      "question_text": "A shopkeeper bought a dress at a specific price and increased the price to offer discounts later on while ensuring that he still makes a profit. He offered regular customers successive discounts of 10% and 20%, and despite this, he managed to make a profit of 44%. What would have been his profit percentage if he had offered the customer successive discounts of 15% and 30%?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "16%",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "17%",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "18%",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "19%",
-          "is_correct": true
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let the marked price of the dress be Rs.100$x$\nShopkeeper gives successive discounts of 10% and 20%, therefore the selling price of the dress = $100x\\left(1-\\frac{10\\ }{100}\\right)\\left(1-\\frac{20\\ }{100}\\right)$\n=> Selling price of dress = Rs. 72$x$\nIt is given that he earned a profit of 44% after giving discounts of 10% and 20%\nTherefore, the selling price of dress = $\\left(1+\\dfrac{44\\ }{100}\\right)$ * Cost price\n=> 72$x$ = 1.44*Cost price\nTherefore cost price = Rs.50$x$\nSo, now if the shopkeeper gives the customer two successive 15% and 30% discounts each.\nSelling price = $100x\\left(1-\\dfrac{15\\ }{100}\\right)\\left(1-\\dfrac{30\\ }{100}\\right)$\n=> Selling price = Rs.59.5$x$\nTherefore, profit percentage = $\\ \\dfrac{\\left(59.5-50\\right)\\ }{50}\\times100\\ $ = 19%",
+      "question_text": "If the values of $x$ satisfying the equation  $\\dfrac{15\\log_5729}{\\log_59}=4^{\\log_414}\\times\\log_9x-\\left(\\dfrac{\\log_2x}{2\\log_23}\\right)^2$ are $p$ and $q$, where $p>q$, then find the value of $\\log_3p-\\log_3q$.",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "$\\dfrac{15\\log_5729}{\\log_59}=4^{\\log_414}\\times\\log_9x-\\left(\\dfrac{\\log_2x}{2\\log_23}\\right)^2$\nWe know $\\frac{\\log_ca}{\\log_cb}=\\log_ba$ \nAlso, $a^{\\log_bc}=c^{\\log_ba}$\nSo, $15\\log_9729=14^{\\log_44}\\times\\log_9x-\\left(\\frac{\\log_2x}{\\log_23^2}\\right)^2$\n$15\\times3=14^1\\times\\log_9x-\\left(\\frac{\\log_2x}{\\log_29}\\right)^2$\n$45=14\\log_9x-\\left(\\log_9x\\right)^2$\nAssume $\\log_9x=y$\nSo, $45=14y-y^2$\n$y^2-14y+45=0$\nFactorizing the quadratic we get\n$\\left(y-5\\right)\\left(y-9\\right)=0$\nSo, the solutions are $y=5, 9$\nCorresponding values of $x$ are\n$\\log_9x=5$\nor, $x=9^5$\nand \n$\\log_9x=9$\nor, $x=9^9$\nSo, $q=9^5$ and $p=9^9$\nHence, $\\log_3\\ p=\\log_39^9=18$ and $\\log_3\\ q=\\log_39^5=10$\nSo, $\\log_3p-\\log_3q=18-10=8$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper bought a dress at a specific price and increased the price to offer discounts later on while ensuring that he still makes a profit. He offered regular customers successive discounts of 10% and 20%, and despite this, he managed to make a profit of 44%. What would have been his profit percentage if he had offered the customer successive discounts of 15% and 30%?\n\n**Options:**\n- **A**. 16%\n- **B**. 17%\n- **C**. 18%\n- **D**. 19% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the marked price of the dress be Rs.100$x$\nShopkeeper gives successive discounts of 10% and 20%, therefore the selling price of the dress = $100x\\left(1-\\frac{10\\ }{100}\\right)\\left(1-\\frac{20\\ }{100}\\right)$\n=> Selling price of dress = Rs. 72$x$\nIt is given that he earned a profit of 44% after giving discounts of 10% and 20%\nTherefore, the selling price of dress = $\\left(1+\\dfrac{44\\ }{100}\\right)$ * Cost price\n=> 72$x$ = 1.44*Cost price\nTherefore cost price = Rs.50$x$\nSo, now if the shopkeeper gives the customer two successive 15% and 30% discounts each.\nSelling price = $100x\\left(1-\\dfrac{15\\ }{100}\\right)\\left(1-\\dfrac{30\\ }{100}\\right)$\n=> Selling price = Rs.59.5$x$\nTherefore, profit percentage = $\\ \\dfrac{\\left(59.5-50\\right)\\ }{50}\\times100\\ $ = 19%",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the values of $x$ satisfying the equation  $\\dfrac{15\\log_5729}{\\log_59}=4^{\\log_414}\\times\\log_9x-\\left(\\dfrac{\\log_2x}{2\\log_23}\\right)^2$ are $p$ and $q$, where $p>q$, then find the value of $\\log_3p-\\log_3q$.\n\n**Options:**\n\n**Correct Answer:** 8\n\n**Solution:**\n$\\dfrac{15\\log_5729}{\\log_59}=4^{\\log_414}\\times\\log_9x-\\left(\\dfrac{\\log_2x}{2\\log_23}\\right)^2$\nWe know $\\frac{\\log_ca}{\\log_cb}=\\log_ba$ \nAlso, $a^{\\log_bc}=c^{\\log_ba}$\nSo, $15\\log_9729=14^{\\log_44}\\times\\log_9x-\\left(\\frac{\\log_2x}{\\log_23^2}\\right)^2$\n$15\\times3=14^1\\times\\log_9x-\\left(\\frac{\\log_2x}{\\log_29}\\right)^2$\n$45=14\\log_9x-\\left(\\log_9x\\right)^2$\nAssume $\\log_9x=y$\nSo, $45=14y-y^2$\n$y^2-14y+45=0$\nFactorizing the quadratic we get\n$\\left(y-5\\right)\\left(y-9\\right)=0$\nSo, the solutions are $y=5, 9$\nCorresponding values of $x$ are\n$\\log_9x=5$\nor, $x=9^5$\nand \n$\\log_9x=9$\nor, $x=9^9$\nSo, $q=9^5$ and $p=9^9$\nHence, $\\log_3\\ p=\\log_39^9=18$ and $\\log_3\\ q=\\log_39^5=10$\nSo, $\\log_3p-\\log_3q=18-10=8$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-11",
       "passage_text": "",
-      "question_text": "Gametopia ADDA is a multi-game complex with different playing zones for different sports. They charge some amount of money to rent football, volleyball and basketball. They charge an amount of Rs. 2004 for renting 22 footballs, 44 volleyballs and 60 basketballs. Similarly, they charge an amount of Rs. 1350 for 15 football, 30 volleyballs and 40 basketball. Find the ratio of the amount paid by Prashant to rent 1 football, 2 volleyball and 3 basketball, and Shantanu to rent 2 football, 4 volleyball and 7 basketball.",
+      "question_text": "Seven tennis players are to be seated in a row, with the only three female players sitting together. If two specific male players refuse to sit next to each other, how many valid seating arrangements are possible?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "16:35",
+          "option_text": "432",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "12:31",
+          "option_text": "512",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "8:33",
+          "option_text": "256",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "6:29",
+          "option_text": "324",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "It is given,\n=> 22F+44V+60B = 2004 ----- equation(1)\n=> 15F+30V+40B = 1350 ----- equation(2)\nEquation (1) can be written as 11F+22V+30B = 1002\n=> 11(F+2V)+30B = 1002----- equation(3)\nEquation (2) can be written as 3F+6V+8B = 270\n=> 3(F+2V)+8B = 270----- equation(4)\nLet F+2V = A\n11A+30B = 1002\n3A+8B = 270\nSolving we get,\nA = F+2V = 42 and B = 18\nWe are required to find the ratio of F+2V+3B to 2F+4V+7B.\n=> F+2V+3B = 42+3*(18) = 96\n=> 2F+4V+7B = 2*(42) + 7*(18) = 210\nRequired ratio = 96:210 = 16:35\nAlternate Explanation - \nIt is given that\n=> 22F+44V+60B = 2004   -----   equation(1)\n=> 15F+30V+40B = 1350   -----   equation(2)\nWe need to find the cost of 1F+2V+3B and 2F+4V+7B\nLet us multiply equation(1) by a and equation (2) by b and compare the coefficient with 1F+2V+3B\n=> 22a+15b = 1 ---equation(3)\n=> 44a+30b = 2 ---equation(4)\n=> 60a+40b =3 ---equation(5)\nSolving equations 3 and 5 by multiplying equation (3) with 8 and equation (5) with 3, we get\na = 0.25 and b = -0.3\nMultiplying a = 0.25 and b = -0.3 in equations (1) and (2), respectively, we get\n=> 5.5F+11V+15B = 501 and -4.5-9V-12B = -405\n=> Adding the above equations, we get = F+2V+3B = 96\nSimilarly, Let us multiply equation(1) by a and equation (2) by b and compare the coefficient with 2F+4V+7B\n=> 22a+15b = 2 ---equation(6)\n=> 44a+30b = 4 ---equation(7)\n=> 60a+40b =7 ---equation(8)\nSolving equations 6 and 8 by multiplying equation 6 with 8 and equation 8 with 3, we get\na = 1.25 and b = -1.7\nMultiplying a = 1.25 and b = -1.7 in equations 1 and 2, respectively, we get\n27.5F+55V+75B = 2505\n- 25.5F-51V-68B = -2295\n=> Adding the above equations, we get = 2F+4V+7B = 210\nTherefore, the ratio is 96:210, i.e. 16:35\nThe answer is option A.",
+      "solution_text": "From the question, we can infer that there are three female tennis players; let us reference them as F1, F2, F3\nLet us reference four male players: M1, M2, M3, and M4. \nWe are told that two particular male players don't want to sit next to each other; let us set them as M1 and M2. \nF1, F2, and F3 should sit together. \nThe number of ways to arrange (F1, F2, F3), M3, M4 will be 3!x3! since there are three groups we want to arrange, and F1, F2 and F3 can be placed in three factorial ways. \nM1 and M2 will go into the spaces; four spaces will be available.\nFor example, if we place _(F1, F2, F3)_M3_M4_\nWe will have four available spaces to select to place M1 and M2. The number of ways to arrange M1 and M2 will be the number of ways of selecting two spaces out of four, which will be $^4C_2$, and we can arrange M1 and M2 between those chosen spaces in 2! ways.\nHence, the total number of valid seating arrangements will be, \n$^4C_2\\times2!\\times3!\\times3!$\n6x2x6x6=432.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGametopia ADDA is a multi-game complex with different playing zones for different sports. They charge some amount of money to rent football, volleyball and basketball. They charge an amount of Rs. 2004 for renting 22 footballs, 44 volleyballs and 60 basketballs. Similarly, they charge an amount of Rs. 1350 for 15 football, 30 volleyballs and 40 basketball. Find the ratio of the amount paid by Prashant to rent 1 football, 2 volleyball and 3 basketball, and Shantanu to rent 2 football, 4 volleyball and 7 basketball.\n\n**Options:**\n- **A**. 16:35 ✅\n- **B**. 12:31\n- **C**. 8:33\n- **D**. 6:29\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given,\n=> 22F+44V+60B = 2004 ----- equation(1)\n=> 15F+30V+40B = 1350 ----- equation(2)\nEquation (1) can be written as 11F+22V+30B = 1002\n=> 11(F+2V)+30B = 1002----- equation(3)\nEquation (2) can be written as 3F+6V+8B = 270\n=> 3(F+2V)+8B = 270----- equation(4)\nLet F+2V = A\n11A+30B = 1002\n3A+8B = 270\nSolving we get,\nA = F+2V = 42 and B = 18\nWe are required to find the ratio of F+2V+3B to 2F+4V+7B.\n=> F+2V+3B = 42+3*(18) = 96\n=> 2F+4V+7B = 2*(42) + 7*(18) = 210\nRequired ratio = 96:210 = 16:35\nAlternate Explanation - \nIt is given that\n=> 22F+44V+60B = 2004   -----   equation(1)\n=> 15F+30V+40B = 1350   -----   equation(2)\nWe need to find the cost of 1F+2V+3B and 2F+4V+7B\nLet us multiply equation(1) by a and equation (2) by b and compare the coefficient with 1F+2V+3B\n=> 22a+15b = 1 ---equation(3)\n=> 44a+30b = 2 ---equation(4)\n=> 60a+40b =3 ---equation(5)\nSolving equations 3 and 5 by multiplying equation (3) with 8 and equation (5) with 3, we get\na = 0.25 and b = -0.3\nMultiplying a = 0.25 and b = -0.3 in equations (1) and (2), respectively, we get\n=> 5.5F+11V+15B = 501 and -4.5-9V-12B = -405\n=> Adding the above equations, we get = F+2V+3B = 96\nSimilarly, Let us multiply equation(1) by a and equation (2) by b and compare the coefficient with 2F+4V+7B\n=> 22a+15b = 2 ---equation(6)\n=> 44a+30b = 4 ---equation(7)\n=> 60a+40b =7 ---equation(8)\nSolving equations 6 and 8 by multiplying equation 6 with 8 and equation 8 with 3, we get\na = 1.25 and b = -1.7\nMultiplying a = 1.25 and b = -1.7 in equations 1 and 2, respectively, we get\n27.5F+55V+75B = 2505\n- 25.5F-51V-68B = -2295\n=> Adding the above equations, we get = 2F+4V+7B = 210\nTherefore, the ratio is 96:210, i.e. 16:35\nThe answer is option A.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSeven tennis players are to be seated in a row, with the only three female players sitting together. If two specific male players refuse to sit next to each other, how many valid seating arrangements are possible?\n\n**Options:**\n- **A**. 432 ✅\n- **B**. 512\n- **C**. 256\n- **D**. 324\n\n**Correct Answer:** null\n\n**Solution:**\nFrom the question, we can infer that there are three female tennis players; let us reference them as F1, F2, F3\nLet us reference four male players: M1, M2, M3, and M4. \nWe are told that two particular male players don't want to sit next to each other; let us set them as M1 and M2. \nF1, F2, and F3 should sit together. \nThe number of ways to arrange (F1, F2, F3), M3, M4 will be 3!x3! since there are three groups we want to arrange, and F1, F2 and F3 can be placed in three factorial ways. \nM1 and M2 will go into the spaces; four spaces will be available.\nFor example, if we place _(F1, F2, F3)_M3_M4_\nWe will have four available spaces to select to place M1 and M2. The number of ways to arrange M1 and M2 will be the number of ways of selecting two spaces out of four, which will be $^4C_2$, and we can arrange M1 and M2 between those chosen spaces in 2! ways.\nHence, the total number of valid seating arrangements will be, \n$^4C_2\\times2!\\times3!\\times3!$\n6x2x6x6=432.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-12",
       "passage_text": "",
-      "question_text": "'t' is an integer for which one of the roots of the quadratic equation $\\left(t^2-6t+6\\right)x^2-\\left(2+2t\\right)x+27=0$ is thrice the other root. What is the value of 't'?",
-      "options": [],
-      "correct_option_data": "5",
-      "solution_text": "Let a and 3a be the roots of the above quadratic equation.\nSum of the roots = a + 3a = 4a = $\\dfrac{\\left(2t+2\\right)}{t^2-6t+6}$ ---(1)\nProduct of the roots = a*3a = $3a^2=\\dfrac{27}{t^2-6t+6}$ ---(2)\nSquaring (1) and dividing by (2), we get\n$\\dfrac{16}{3}=\\dfrac{\\left(2t+2\\right)^2}{27\\left(t^2-6t+6\\right)}=>4=\\dfrac{\\left(t^2+2t+1\\right)}{9t^2-54t+54}$\n=> $36t^2-216t+216=t^2+2t+1$\n=> $35t^2-218t+215=0$\nWe know that the roots of the quadratic equation are given by $\\frac{\\left(-b\\pm\\ \\sqrt{\\ b^2-4ac}\\right)}{2a}$\n=> t = $\\dfrac{\\left(218\\pm\\ \\sqrt{\\ 218^2-4\\times\\ 35\\times\\ 215}\\right)}{2\\times\\ 35}$\n=> $t=\\dfrac{\\left(109\\pm\\ 66\\right)}{35}$ => $t=\\dfrac{175}{35}\\ =5\\ or\\ \\dfrac{43}{35}$.\nSince t is given as an integer, 5 is the required answer.",
+      "question_text": "A group of men of the same efficiency can build a wall in 45 hours. But when the work started, all the men did not begin working together. Each worker joined the work one after the other after a regular interval. Once joined, every worker stayed till the completion of the work. If the first man does 5 times as much work as the last man, then for how many hours did the first man work?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "75 hours",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total number of men working be M.\nIn 45 hours, the work done by M men is calculated as 45M.\nIn this case, each man joined after an interval of time,\nThe work done by each man would be in an AP as the time for which they are working is also in AP.\nLet the time worked by the first man be 5t, and the time worked by the last man, according to the question, is t.\nSo, the work done by all the men across the time is given by,\n5t, 5t - d, 5t - 2d, ...., t\n$Work\\ done\\ =\\ \\dfrac{n}{2}\\left(first\\ term\\ +\\ last\\ term\\right)\\ =\\ \\dfrac{M}{2}\\left(5t\\ +\\ t\\right)\\ =\\ 3Mt$\nThe work done remains the same in both cases, and equating them, we get,\n3Mt = 45M\nt = 15 hours.\nThe time for which the first man worked is  5t = 5 * 15 = 75 hours.\nHence, the correct answer is option C.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n't' is an integer for which one of the roots of the quadratic equation $\\left(t^2-6t+6\\right)x^2-\\left(2+2t\\right)x+27=0$ is thrice the other root. What is the value of 't'?\n\n**Options:**\n\n**Correct Answer:** 5\n\n**Solution:**\nLet a and 3a be the roots of the above quadratic equation.\nSum of the roots = a + 3a = 4a = $\\dfrac{\\left(2t+2\\right)}{t^2-6t+6}$ ---(1)\nProduct of the roots = a*3a = $3a^2=\\dfrac{27}{t^2-6t+6}$ ---(2)\nSquaring (1) and dividing by (2), we get\n$\\dfrac{16}{3}=\\dfrac{\\left(2t+2\\right)^2}{27\\left(t^2-6t+6\\right)}=>4=\\dfrac{\\left(t^2+2t+1\\right)}{9t^2-54t+54}$\n=> $36t^2-216t+216=t^2+2t+1$\n=> $35t^2-218t+215=0$\nWe know that the roots of the quadratic equation are given by $\\frac{\\left(-b\\pm\\ \\sqrt{\\ b^2-4ac}\\right)}{2a}$\n=> t = $\\dfrac{\\left(218\\pm\\ \\sqrt{\\ 218^2-4\\times\\ 35\\times\\ 215}\\right)}{2\\times\\ 35}$\n=> $t=\\dfrac{\\left(109\\pm\\ 66\\right)}{35}$ => $t=\\dfrac{175}{35}\\ =5\\ or\\ \\dfrac{43}{35}$.\nSince t is given as an integer, 5 is the required answer.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of men of the same efficiency can build a wall in 45 hours. But when the work started, all the men did not begin working together. Each worker joined the work one after the other after a regular interval. Once joined, every worker stayed till the completion of the work. If the first man does 5 times as much work as the last man, then for how many hours did the first man work?\n\n**Options:**\n- **A**. 15 hours\n- **B**. 50 hours\n- **C**. 75 hours ✅\n- **D**. 10 hours\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total number of men working be M.\nIn 45 hours, the work done by M men is calculated as 45M.\nIn this case, each man joined after an interval of time,\nThe work done by each man would be in an AP as the time for which they are working is also in AP.\nLet the time worked by the first man be 5t, and the time worked by the last man, according to the question, is t.\nSo, the work done by all the men across the time is given by,\n5t, 5t - d, 5t - 2d, ...., t\n$Work\\ done\\ =\\ \\dfrac{n}{2}\\left(first\\ term\\ +\\ last\\ term\\right)\\ =\\ \\dfrac{M}{2}\\left(5t\\ +\\ t\\right)\\ =\\ 3Mt$\nThe work done remains the same in both cases, and equating them, we get,\n3Mt = 45M\nt = 15 hours.\nThe time for which the first man worked is  5t = 5 * 15 = 75 hours.\nHence, the correct answer is option C.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-13",
       "passage_text": "",
-      "question_text": "For the following inequality, what is the product of all integral values of x that satisfy |x-5| + 4|x+2| - 3|x-2| < 1?",
+      "question_text": "The roots of the equation $x^3 - x^2 + px + q = 0$ are in AP and the common difference is an integer. Which of the following is a possible value of p+q?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "12",
-          "is_correct": false
+          "option_text": "-10/27",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "-20",
+          "option_text": "- 28/27",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "18",
+          "option_text": "-46/27",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "-24",
-          "is_correct": true
+          "option_text": "None of the above",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "|x-5| + 4|x+2| - 3|x-2| < 1\nCase 1: When x $\\ge$ 5\nx-5+4x+8-3x+6 < 1\n=> 2x+9<1\n=> 2x < -8\nNo value of x satisfies when x > 5\nCase 2: When 2 $\\le$ x < 5\n5-x + 4x+8 - 3x + 6 < 1\n19 < 1\nNo value of x satisfy when 2 < x < 5\nCase 3: When -2 $\\le$ x < 2\n5-x + 4x+ 8 + 3x -6 < 1\n6x + 7 < 1\n6x < -6\nx < -1\nx = -2 satisfies the equation\nCase 4: When x < -2\n5- x - 4x - 8 +3x -6 < 1\n=> -2x - 9 <1\n2x+10 > 0\nx > -5\nOnly x =-3 and x = -4 satisfies the given equation.\nTherefore, x = -2, -3 and -4 satisfy the equation.\nRequired product = -24\nThe answer is option D.",
+      "solution_text": "Let the roots be a -d, a, a+d.\nSum of roots = 3a = 1. So, a = 1/3\nProduct of roots = (1/3-d)(1/3)(1/3+d) =-q\n=> q = $-1/27 + d^2/3$\nSum of the roots taken 2 at a time = 1/9 -d/3 +1/9+d/3 +1/9 -$d^2$ = p\n=> p = 1/3 - $d^2$\nSo, p+q = 8/27 - $2d^2/3$\nThe values that $d^2$ can take are 1, 4, 9,…\nSubstituting $d^2$ = 1, we get p+q = -10/27",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor the following inequality, what is the product of all integral values of x that satisfy |x-5| + 4|x+2| - 3|x-2| < 1?\n\n**Options:**\n- **A**. 12\n- **B**. -20\n- **C**. 18\n- **D**. -24 ✅\n\n**Correct Answer:** null\n\n**Solution:**\n|x-5| + 4|x+2| - 3|x-2| < 1\nCase 1: When x $\\ge$ 5\nx-5+4x+8-3x+6 < 1\n=> 2x+9<1\n=> 2x < -8\nNo value of x satisfies when x > 5\nCase 2: When 2 $\\le$ x < 5\n5-x + 4x+8 - 3x + 6 < 1\n19 < 1\nNo value of x satisfy when 2 < x < 5\nCase 3: When -2 $\\le$ x < 2\n5-x + 4x+ 8 + 3x -6 < 1\n6x + 7 < 1\n6x < -6\nx < -1\nx = -2 satisfies the equation\nCase 4: When x < -2\n5- x - 4x - 8 +3x -6 < 1\n=> -2x - 9 <1\n2x+10 > 0\nx > -5\nOnly x =-3 and x = -4 satisfies the given equation.\nTherefore, x = -2, -3 and -4 satisfy the equation.\nRequired product = -24\nThe answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe roots of the equation $x^3 - x^2 + px + q = 0$ are in AP and the common difference is an integer. Which of the following is a possible value of p+q?\n\n**Options:**\n- **A**. -10/27 ✅\n- **B**. - 28/27\n- **C**. -46/27\n- **D**. None of the above\n\n**Correct Answer:** null\n\n**Solution:**\nLet the roots be a -d, a, a+d.\nSum of roots = 3a = 1. So, a = 1/3\nProduct of roots = (1/3-d)(1/3)(1/3+d) =-q\n=> q = $-1/27 + d^2/3$\nSum of the roots taken 2 at a time = 1/9 -d/3 +1/9+d/3 +1/9 -$d^2$ = p\n=> p = 1/3 - $d^2$\nSo, p+q = 8/27 - $2d^2/3$\nThe values that $d^2$ can take are 1, 4, 9,…\nSubstituting $d^2$ = 1, we get p+q = -10/27",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-14",
       "passage_text": "",
-      "question_text": "Find the sum of the first 10 terms of the series 4, 7, 13, 22,...",
+      "question_text": "Two identical rectangles overlap, as shown in the figure below. It is also known that HF = 2 cm, AC = 8 cm and HD = 4 cm. Determine the area of the shaded region shown in the figure below.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "548",
+          "option_text": "70 $cm^2$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "535",
-          "is_correct": true
+          "option_text": "76 $cm^2$",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "531",
+          "option_text": "72 $cm^2$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "528",
-          "is_correct": false
+          "option_text": "68 $cm^2$",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "DIfference of consecutive terms of the series is 3, 6, 9, 12,...\nHence we can say that the difference of the above series in an A.P.\nLet $x^{th}$ term of the series be represented as $ax^2+bx+c.$\nfor x = 1\na+b+c = 4  -eqn 1\nfor x = 2\n4a+2b+c = 7   -eqn 2\nFor x = 3\n9a +3b +c = 13   -eqn 3 \nOn subtracting eqn 1 from eqn 3 \n8a+2b=9      -eqn 4\nOn  subtracting eqn 2 from eqn 3 \n5a+b= 6 \n10a + 2b = 12     -eqn 5\nOn subtracting eqn 4 from eqn 5\n2a = 3 \na = 3/2 \nwe can substitute value of a in eqn 5 and get \nb = -3/2\nWe can substituting value of a and b in eqn 1 \nc = 4 \nHence general term of the above series can be written as $\\dfrac{3x^2}{2}-\\dfrac{3x}{2}+4$ \n$\\Sigma\\dfrac{3x^2}{2}-\\dfrac{3x}{2}+4$\n= $\\dfrac{3}{2}\\cdot\\dfrac{x\\left(x+1\\right)\\left(2x+1\\right)}{6}-\\dfrac{3}{2}\\cdot\\dfrac{x\\left(x+1\\right)}{2}+4x$\n= $\\dfrac{x^3+7x}{2}$\n= 535\nThe answer is option B.",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of the first 10 terms of the series 4, 7, 13, 22,...\n\n**Options:**\n- **A**. 548\n- **B**. 535 ✅\n- **C**. 531\n- **D**. 528\n\n**Correct Answer:** null\n\n**Solution:**\nDIfference of consecutive terms of the series is 3, 6, 9, 12,...\nHence we can say that the difference of the above series in an A.P.\nLet $x^{th}$ term of the series be represented as $ax^2+bx+c.$\nfor x = 1\na+b+c = 4  -eqn 1\nfor x = 2\n4a+2b+c = 7   -eqn 2\nFor x = 3\n9a +3b +c = 13   -eqn 3 \nOn subtracting eqn 1 from eqn 3 \n8a+2b=9      -eqn 4\nOn  subtracting eqn 2 from eqn 3 \n5a+b= 6 \n10a + 2b = 12     -eqn 5\nOn subtracting eqn 4 from eqn 5\n2a = 3 \na = 3/2 \nwe can substitute value of a in eqn 5 and get \nb = -3/2\nWe can substituting value of a and b in eqn 1 \nc = 4 \nHence general term of the above series can be written as $\\dfrac{3x^2}{2}-\\dfrac{3x}{2}+4$ \n$\\Sigma\\dfrac{3x^2}{2}-\\dfrac{3x}{2}+4$\n= $\\dfrac{3}{2}\\cdot\\dfrac{x\\left(x+1\\right)\\left(2x+1\\right)}{6}-\\dfrac{3}{2}\\cdot\\dfrac{x\\left(x+1\\right)}{2}+4x$\n= $\\dfrac{x^3+7x}{2}$\n= 535\nThe answer is option B.",
+      "solution_text": "The given figure can be drawn as,\nWe are given that both rectangles are identical, so in the figure, the length of AE becomes 8. The length of BH becomes 4 as the other part is given as 4 in the question. Let the length AB be x and AH be y, then the length EH becomes x - 2, as we have assumed the whole length to be x above.\nNow, we have two right-angled triangles, AEH and ABH, to apply Pythagoras' theorem twice and obtain the values x and y.\nIn triangle AEH,\n$AE^2\\ +\\ EH^2\\ =\\ AH^2$\n$8^2\\ +\\ \\left(x\\ -\\ 2\\right)^2\\ =\\ y^2$ ---(1)\nIn triangle ABH,\n$AB^2\\ +\\ BH^2\\ =\\ AH^2$\n$x^2\\ +\\ 4^2\\ =\\ y^2$  ---(2)\nEquating (1) and (2), we get,\n$x^2\\ +16\\ =\\ x^2\\ +\\ 4\\ -\\ 4x\\ +\\ 64$\n$4x\\ =\\ 52$\n$x\\ =\\ 13$\nArea of the rectangle can be calculated as length * breadth = 8 * x = 8 * 13 = 104 $cm^2$\nThe area of the overlap region can be calculated as, \nArea of AEH + Area of ABH = $\\dfrac{1}{2}\\ \\times\\ 8\\ \\times\\ 11\\ +\\ \\dfrac{1}{2}\\ \\times\\ 4\\ \\times\\ 13\\ =\\ 44\\ +\\ 26\\ =\\ 70\\ cm^2$\nThe non-overlapped region area can be calculated as \n2 * (Area of the rectangle - Area of the overlapped region) = 2 * (104 - 70) = 2 * 34 = 68 $cm^2$\nHence, the correct answer is option D.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%202025-06-25%2011.52.29%20AM%20(1).png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo identical rectangles overlap, as shown in the figure below. It is also known that HF = 2 cm, AC = 8 cm and HD = 4 cm. Determine the area of the shaded region shown in the figure below.\n\n**Options:**\n- **A**. 70 $cm^2$\n- **B**. 76 $cm^2$\n- **C**. 72 $cm^2$\n- **D**. 68 $cm^2$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe given figure can be drawn as,\nWe are given that both rectangles are identical, so in the figure, the length of AE becomes 8. The length of BH becomes 4 as the other part is given as 4 in the question. Let the length AB be x and AH be y, then the length EH becomes x - 2, as we have assumed the whole length to be x above.\nNow, we have two right-angled triangles, AEH and ABH, to apply Pythagoras' theorem twice and obtain the values x and y.\nIn triangle AEH,\n$AE^2\\ +\\ EH^2\\ =\\ AH^2$\n$8^2\\ +\\ \\left(x\\ -\\ 2\\right)^2\\ =\\ y^2$ ---(1)\nIn triangle ABH,\n$AB^2\\ +\\ BH^2\\ =\\ AH^2$\n$x^2\\ +\\ 4^2\\ =\\ y^2$  ---(2)\nEquating (1) and (2), we get,\n$x^2\\ +16\\ =\\ x^2\\ +\\ 4\\ -\\ 4x\\ +\\ 64$\n$4x\\ =\\ 52$\n$x\\ =\\ 13$\nArea of the rectangle can be calculated as length * breadth = 8 * x = 8 * 13 = 104 $cm^2$\nThe area of the overlap region can be calculated as, \nArea of AEH + Area of ABH = $\\dfrac{1}{2}\\ \\times\\ 8\\ \\times\\ 11\\ +\\ \\dfrac{1}{2}\\ \\times\\ 4\\ \\times\\ 13\\ =\\ 44\\ +\\ 26\\ =\\ 70\\ cm^2$\nThe non-overlapped region area can be calculated as \n2 * (Area of the rectangle - Area of the overlapped region) = 2 * (104 - 70) = 2 * 34 = 68 $cm^2$\nHence, the correct answer is option D.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-15",
       "passage_text": "",
-      "question_text": "If $\\log_{10}5$ = $m$ and $\\log_{10}3$ = $n$, which of the following is false?",
+      "question_text": "If f(x) = 3x+5 and g(x) = 2x+3, then find the value of x for which f(g(f(g(x)))) = 26.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\log_{30}8$ = $\\ \\dfrac{3\\left(1-m\\right)}{n+1}$",
+          "option_text": "x = -1",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\log_{40}15$ = $\\ \\dfrac{m+n}{3-2m}$",
+          "option_text": "x = 1",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\log_{243}32$ = $\\ \\dfrac{1-m}{n}$",
+          "option_text": "x = 2",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\log_{20}225$ = $\\ \\dfrac{m+n}{2-m}$",
+          "option_text": "x = -2",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "It is given that $\\log_{10}5$ = m and $\\log_{10}3$ = n\nWe check all the given options.\nOption A - $\\log_{30}8$ = $\\ \\dfrac{\\log2^3}{\\log\\left(3\\times\\ 10\\right)}$\n=> $\\ \\dfrac{3\\log2}{\\log3+\\log10}$\n=> $\\ \\dfrac{3\\log\\left(\\frac{10}{5}\\right)}{1+\\log3}$\n=> $\\ \\dfrac{3\\left(1-\\log5\\right)}{1+\\log3}$\n=> $\\ \\dfrac{3\\left(1-m\\right)}{1+n}$\nHence option A is correct.\nOption B - $\\log_{40}15$ = $\\ \\dfrac{\\log15}{\\log40}$\n=> $\\ \\dfrac{\\log\\left(3\\times\\ 5\\right)}{\\log\\left(4\\times\\ 10\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+\\log4}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\log2}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\log\\left(\\frac{10}{5}\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\left(1-\\log5\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2-2\\log5}$\n=> $\\ \\dfrac{n+m}{3-2m}$\nHence option B is also correct.\nOption C - $\\log_{243}32$ = $\\ \\dfrac{\\log32}{\\log243}$\n=> $\\ \\dfrac{5\\log2}{5\\log3}$\n=> $\\ \\dfrac{\\log2}{\\log3}$\n=> $\\ \\dfrac{\\left(1-\\log5\\right)}{\\log3}$ {$\\log2\\ =\\ 1-\\log5$}\n=> $\\ \\dfrac{1-m}{n}$\nHence, option C is also correct.\nOption D - $\\log_{20}225$ = $\\ \\dfrac{\\log225}{\\log20}$\n=> $\\ \\dfrac{2\\log15}{1+\\log2}$\n=> $\\ \\dfrac{2\\left(\\log3+\\log\\ 5\\right)}{1+\\left(1-\\log5\\right)}$\n=> $\\ \\dfrac{2\\left(m+n\\right)}{2-m}$\nHence, option D is incorrect.",
+      "solution_text": "If f(x) = 3x+5 and g(x) = 2x+3, then find the value of x for which f(g(f(g(x)))) = 26.\nWe know g(x) = 2x+3\nf(g(x)) = 3*(2x+3)+5 = 6x+14\ng(f(g(x))) = 2*(6x+14)+3 = 12x+31\nf(g(f(g(x)))) = 3*(12x+31)+5 = 36x+98\nWe know f(g(f(g(x)))) = 26\nThus, 36x+98 = 26\n36x = -72\nx = -2",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\log_{10}5$ = $m$ and $\\log_{10}3$ = $n$, which of the following is false?\n\n**Options:**\n- **A**. $\\log_{30}8$ = $\\ \\dfrac{3\\left(1-m\\right)}{n+1}$\n- **B**. $\\log_{40}15$ = $\\ \\dfrac{m+n}{3-2m}$\n- **C**. $\\log_{243}32$ = $\\ \\dfrac{1-m}{n}$\n- **D**. $\\log_{20}225$ = $\\ \\dfrac{m+n}{2-m}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that $\\log_{10}5$ = m and $\\log_{10}3$ = n\nWe check all the given options.\nOption A - $\\log_{30}8$ = $\\ \\dfrac{\\log2^3}{\\log\\left(3\\times\\ 10\\right)}$\n=> $\\ \\dfrac{3\\log2}{\\log3+\\log10}$\n=> $\\ \\dfrac{3\\log\\left(\\frac{10}{5}\\right)}{1+\\log3}$\n=> $\\ \\dfrac{3\\left(1-\\log5\\right)}{1+\\log3}$\n=> $\\ \\dfrac{3\\left(1-m\\right)}{1+n}$\nHence option A is correct.\nOption B - $\\log_{40}15$ = $\\ \\dfrac{\\log15}{\\log40}$\n=> $\\ \\dfrac{\\log\\left(3\\times\\ 5\\right)}{\\log\\left(4\\times\\ 10\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+\\log4}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\log2}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\log\\left(\\frac{10}{5}\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2\\left(1-\\log5\\right)}$\n=> $\\ \\dfrac{\\log3+\\log5}{1+2-2\\log5}$\n=> $\\ \\dfrac{n+m}{3-2m}$\nHence option B is also correct.\nOption C - $\\log_{243}32$ = $\\ \\dfrac{\\log32}{\\log243}$\n=> $\\ \\dfrac{5\\log2}{5\\log3}$\n=> $\\ \\dfrac{\\log2}{\\log3}$\n=> $\\ \\dfrac{\\left(1-\\log5\\right)}{\\log3}$ {$\\log2\\ =\\ 1-\\log5$}\n=> $\\ \\dfrac{1-m}{n}$\nHence, option C is also correct.\nOption D - $\\log_{20}225$ = $\\ \\dfrac{\\log225}{\\log20}$\n=> $\\ \\dfrac{2\\log15}{1+\\log2}$\n=> $\\ \\dfrac{2\\left(\\log3+\\log\\ 5\\right)}{1+\\left(1-\\log5\\right)}$\n=> $\\ \\dfrac{2\\left(m+n\\right)}{2-m}$\nHence, option D is incorrect.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf f(x) = 3x+5 and g(x) = 2x+3, then find the value of x for which f(g(f(g(x)))) = 26.\n\n**Options:**\n- **A**. x = -1\n- **B**. x = 1\n- **C**. x = 2\n- **D**. x = -2 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIf f(x) = 3x+5 and g(x) = 2x+3, then find the value of x for which f(g(f(g(x)))) = 26.\nWe know g(x) = 2x+3\nf(g(x)) = 3*(2x+3)+5 = 6x+14\ng(f(g(x))) = 2*(6x+14)+3 = 12x+31\nf(g(f(g(x)))) = 3*(12x+31)+5 = 36x+98\nWe know f(g(f(g(x)))) = 26\nThus, 36x+98 = 26\n36x = -72\nx = -2",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-16",
       "passage_text": "",
-      "question_text": "Given a set of elements S = {4,5,6....upto 16}, three elements are chosen to form the three sides of a right-angled triangle. Which of the following can be the ratio of the inradius and circumradius of any such triangle formed?",
+      "question_text": "A sphere and a cone have the same total surface area and share the same radius r. The cone is then melted and reshaped into a hemisphere. Find the ratio of the total surface area of the hemisphere to that of the sphere.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4:13",
-          "is_correct": true
+          "option_text": "$\\dfrac{3}{2^{\\frac{1}{3}}}$",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "5:17",
+          "option_text": "$\\dfrac{3}{2^{\\frac{2}{3}}}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "3:11",
-          "is_correct": false
+          "option_text": "$\\dfrac{3}{2^{\\frac{5}{3}}}$",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "5:14",
+          "option_text": "$\\dfrac{3}{2^{\\frac{7}{3}}}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Given that the triangle is a right-angled triangle, it must form a triplet such that the sum of the squares of two sides is equal to the square of the largest side.\nIn the given set of numbers,  (5,12,13), (6,8,10) and (9,12,15) are the three triplets that satisfies this condition.\nCase 1: The sides of the triangle are (5,12,13)\nThe inradius of a triangle is given by r = (area / s) \nArea of the triangle = $\\ \\frac{1}{2}\\times\\ 12\\times\\ 5$ = 30 sqm\n=> s = semiperimeter = $\\ \\frac{5+12+13}{2}$ = 15 \nThus, inradius = $\\ \\frac{30}{15}$ = 2\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{5\\times\\ 12\\times\\ 13}{4\\times\\ 30}$ = $\\ \\frac{13}{2}$\nTherefore, the ratio of inradius and circumradius = 4:13\nCase 2: The sides of the triangle are (6,8,10)\nThe inradius of a triangle is given by r = (area/s) \nArea of the triangle = $\\ \\frac{1}{2}\\times\\ 6\\times\\ 8$ = 24\n=> s = semiperimeter = 12\nThus, inradius = $\\ \\frac{24}{12}$ = 2\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{6\\times\\ 8\\times\\ 10}{4\\times\\ 24}$ = $\\ \\frac{5}{1}$\nTherefore, the ratio of inradius and circumradius = 2:5\nCase 3: The sides of the triangle are (9,12,15)\nThe inradius of a triangle is given by r = (area / s) \nThe area of the triangle is = $\\ \\frac{1}{2}\\times\\ 9\\times\\ 12$ = 54 sqm\n=> s = semiperimeter = 18 \nThus, inradius = $\\ \\frac{54}{18}$ = 3\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{9\\times\\ 12\\times\\ 15}{4\\times\\ 54}$ = $\\ \\frac{15}{2}$\nTherefore, the ratio of inradius and circumradius = 2:5\nTwo possible ratios are 2:5 and 4:13.\nThe answer is option A.",
+      "solution_text": "Let the height of the cone be h and slant height be l.\nA sphere and a cone have the same curved surface area and share the same radius r.\n=> $\\pi r^2+\\pi rl=4\\pi r^2$\n=> $l=3r$\nNow we know - $l^2=r^2+h^2$\n=> $h=2\\sqrt{2}r$\nThe cone is then melted and reshaped into a hemisphere.\n=> $\\dfrac{1}{3}\\pi r^2h=\\dfrac{2}{3}\\pi R^3$\n=> $\\dfrac{1}{3}\\pi r^2\\left(2\\sqrt{2}r\\right)=\\dfrac{2}{3}\\pi R^3$\n=> $R=2^{\\frac{1}{6}}r$\nThus, the ratio of the total surface area of the hemisphere to that of the sphere will be -\n$\\dfrac{3\\pi R^2}{4\\pi r^2}=\\dfrac{3\\times\\ 2^{\\frac{1}{3}}\\times\\ r^2}{4\\times\\ r^2}=\\dfrac{3}{2^{\\frac{5}{3}}}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven a set of elements S = {4,5,6....upto 16}, three elements are chosen to form the three sides of a right-angled triangle. Which of the following can be the ratio of the inradius and circumradius of any such triangle formed?\n\n**Options:**\n- **A**. 4:13 ✅\n- **B**. 5:17\n- **C**. 3:11\n- **D**. 5:14\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that the triangle is a right-angled triangle, it must form a triplet such that the sum of the squares of two sides is equal to the square of the largest side.\nIn the given set of numbers,  (5,12,13), (6,8,10) and (9,12,15) are the three triplets that satisfies this condition.\nCase 1: The sides of the triangle are (5,12,13)\nThe inradius of a triangle is given by r = (area / s) \nArea of the triangle = $\\ \\frac{1}{2}\\times\\ 12\\times\\ 5$ = 30 sqm\n=> s = semiperimeter = $\\ \\frac{5+12+13}{2}$ = 15 \nThus, inradius = $\\ \\frac{30}{15}$ = 2\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{5\\times\\ 12\\times\\ 13}{4\\times\\ 30}$ = $\\ \\frac{13}{2}$\nTherefore, the ratio of inradius and circumradius = 4:13\nCase 2: The sides of the triangle are (6,8,10)\nThe inradius of a triangle is given by r = (area/s) \nArea of the triangle = $\\ \\frac{1}{2}\\times\\ 6\\times\\ 8$ = 24\n=> s = semiperimeter = 12\nThus, inradius = $\\ \\frac{24}{12}$ = 2\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{6\\times\\ 8\\times\\ 10}{4\\times\\ 24}$ = $\\ \\frac{5}{1}$\nTherefore, the ratio of inradius and circumradius = 2:5\nCase 3: The sides of the triangle are (9,12,15)\nThe inradius of a triangle is given by r = (area / s) \nThe area of the triangle is = $\\ \\frac{1}{2}\\times\\ 9\\times\\ 12$ = 54 sqm\n=> s = semiperimeter = 18 \nThus, inradius = $\\ \\frac{54}{18}$ = 3\nCircumradius of a triangle = $\\ \\frac{abc}{4\\triangle\\ }$\n=> $\\ \\frac{9\\times\\ 12\\times\\ 15}{4\\times\\ 54}$ = $\\ \\frac{15}{2}$\nTherefore, the ratio of inradius and circumradius = 2:5\nTwo possible ratios are 2:5 and 4:13.\nThe answer is option A.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA sphere and a cone have the same total surface area and share the same radius r. The cone is then melted and reshaped into a hemisphere. Find the ratio of the total surface area of the hemisphere to that of the sphere.\n\n**Options:**\n- **A**. $\\dfrac{3}{2^{\\frac{1}{3}}}$\n- **B**. $\\dfrac{3}{2^{\\frac{2}{3}}}$\n- **C**. $\\dfrac{3}{2^{\\frac{5}{3}}}$ ✅\n- **D**. $\\dfrac{3}{2^{\\frac{7}{3}}}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet the height of the cone be h and slant height be l.\nA sphere and a cone have the same curved surface area and share the same radius r.\n=> $\\pi r^2+\\pi rl=4\\pi r^2$\n=> $l=3r$\nNow we know - $l^2=r^2+h^2$\n=> $h=2\\sqrt{2}r$\nThe cone is then melted and reshaped into a hemisphere.\n=> $\\dfrac{1}{3}\\pi r^2h=\\dfrac{2}{3}\\pi R^3$\n=> $\\dfrac{1}{3}\\pi r^2\\left(2\\sqrt{2}r\\right)=\\dfrac{2}{3}\\pi R^3$\n=> $R=2^{\\frac{1}{6}}r$\nThus, the ratio of the total surface area of the hemisphere to that of the sphere will be -\n$\\dfrac{3\\pi R^2}{4\\pi r^2}=\\dfrac{3\\times\\ 2^{\\frac{1}{3}}\\times\\ r^2}{4\\times\\ r^2}=\\dfrac{3}{2^{\\frac{5}{3}}}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-17",
       "passage_text": "",
-      "question_text": "Two circles with equal radii of 9cm, having centres at A and B, intersect at X and Y, as shown in the figure. Find the area of the shaded region.",
+      "question_text": "In Ghanshyam supermarket, a bottle of Pepsi costs 13 rupees, and a bottle of Coke costs 17 rupees. Aaron went to the supermarket and bought x bottles of Pepsi and y bottles of Coke, which cost him exactly 10000, and the value of |x - y| is minimum, which means x and y are as close as possible. Now David goes to the same supermarket and spends a little more than 10000 for x bottles of Coke and y bottles of Pepsi; how much did David spend?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$26\\pi\\ $",
+          "option_text": "10090",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$27\\pi\\ $",
-          "is_correct": true
+          "option_text": "10025",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$25\\pi\\ $",
+          "option_text": "10054",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$24\\pi\\ $",
-          "is_correct": false
+          "option_text": "10040",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Two circles with equal radii of 9cm, having centres at A and B, intersect at X and Y, as shown in the figure. Find the ratio of the area of the shaded region to the unshaded region.\nLet the shaded region AX be - Ist part and BY be IInd part\nThe radius of both circles is = 9 cm\nAX = AB = 9 cm (Radius of the circle)\nTherefore, triangle AXB is an equilateral triangle (Side XB = 9 cm, radius)\nThe shaded region AX can be shifted near to BY (Both areas are equal)\nThe area of circle is given by = $\\pi\\ r^2$ ( Here, r = 9 cm)\nThe area of the shaded region (Ist  part + IInd part) = Area of the semicircle - Area of the sector(ABY)\n=> Area of shaded region = $\\pi\\ r^2\\times\\frac{1}{2}\\ $ - $\\ \\frac{60^{\\circ\\ }\\ }{360^{\\circ\\ }}\\times\\pi\\ r^2\\ $ (Triangle ABY is an equilateral triangle with angles = 60 degree)\n=> Area of shaded region = $\\pi\\times\\ \\frac{1\\ }{2}\\times9^2-\\left(\\frac{60\\ }{360}\\times\\pi\\ \\times9^2\\right)$\n=> Area of the shaded region = $81\\pi\\ \\left(\\frac{1\\ }{2}-\\frac{1\\ }{6}\\right)=27\\pi\\ $",
-      "image_url": "https://cracku.in/media/uploads/image(1)_j2Njb6X.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo circles with equal radii of 9cm, having centres at A and B, intersect at X and Y, as shown in the figure. Find the area of the shaded region.\n\n**Options:**\n- **A**. $26\\pi\\ $\n- **B**. $27\\pi\\ $ ✅\n- **C**. $25\\pi\\ $\n- **D**. $24\\pi\\ $\n\n**Correct Answer:** null\n\n**Solution:**\nTwo circles with equal radii of 9cm, having centres at A and B, intersect at X and Y, as shown in the figure. Find the ratio of the area of the shaded region to the unshaded region.\nLet the shaded region AX be - Ist part and BY be IInd part\nThe radius of both circles is = 9 cm\nAX = AB = 9 cm (Radius of the circle)\nTherefore, triangle AXB is an equilateral triangle (Side XB = 9 cm, radius)\nThe shaded region AX can be shifted near to BY (Both areas are equal)\nThe area of circle is given by = $\\pi\\ r^2$ ( Here, r = 9 cm)\nThe area of the shaded region (Ist  part + IInd part) = Area of the semicircle - Area of the sector(ABY)\n=> Area of shaded region = $\\pi\\ r^2\\times\\frac{1}{2}\\ $ - $\\ \\frac{60^{\\circ\\ }\\ }{360^{\\circ\\ }}\\times\\pi\\ r^2\\ $ (Triangle ABY is an equilateral triangle with angles = 60 degree)\n=> Area of shaded region = $\\pi\\times\\ \\frac{1\\ }{2}\\times9^2-\\left(\\frac{60\\ }{360}\\times\\pi\\ \\times9^2\\right)$\n=> Area of the shaded region = $81\\pi\\ \\left(\\frac{1\\ }{2}-\\frac{1\\ }{6}\\right)=27\\pi\\ $",
+      "solution_text": "Aaron spent 10,000 on x Pepsi and y Coke bottles.\n13x + 17y = 10000\nLet us calculate a pair of x and y that satisfies the above equation,\nWe know, 13 * 3 + 17 * (-2) = 5,\n13 * 3 * 2000 + 17 * (-2) * 2000 = 5 * 2000\n13 * 6000 + 17 * (-4000) = 10000\nSo, (6000, -4000) satisfy the above equation.\nThe general terms of x and y that satisfy the above equation are,\nx = 6000 - 17t\ny = - 4000 + 13t\nWe know that x and y are greater than 0,\nCondition for x > 0,\n6000 - 17t > 0\nt < $\\dfrac{6000}{17}$\nt < 352.94\nSimilarly, for y > 0, we get,\n-4000 + 13t > 0\n13t > 4000\nt > $\\frac{4000}{13}$\nt > 307.6\nSo, the value of t that satisfies the condition is in the range [308, 352]. In this range, we have to calculate the value of t at which |x - y| is the minimum.\nThe values are equal when 6000 - 17t = -4000 + 13t\nt = $\\dfrac{10000}{30}\\ =\\ 333.34$\nBut we know t has to be an integer, so x and y are closest when t = 333 or t = 334\nAt t = 333, the values of x and y are\nx = 6000 - 17*333 = 339\ny = -4000 + 13 * 333 = 329\n|x - y| = 10\nAt t = 334, the values x and y are,\nx = 6000 - 17 * 334 = 322\ny = -4000 + 13 * 334 = 342\n|x - y| = 20.\nHence, the values x and y are 339 and 329.\nNow, the cost incurred by David is calculated as,\nCost = 17 * 339 + 13 * 329 = 10040.\nHence, the correct answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn Ghanshyam supermarket, a bottle of Pepsi costs 13 rupees, and a bottle of Coke costs 17 rupees. Aaron went to the supermarket and bought x bottles of Pepsi and y bottles of Coke, which cost him exactly 10000, and the value of |x - y| is minimum, which means x and y are as close as possible. Now David goes to the same supermarket and spends a little more than 10000 for x bottles of Coke and y bottles of Pepsi; how much did David spend?\n\n**Options:**\n- **A**. 10090\n- **B**. 10025\n- **C**. 10054\n- **D**. 10040 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nAaron spent 10,000 on x Pepsi and y Coke bottles.\n13x + 17y = 10000\nLet us calculate a pair of x and y that satisfies the above equation,\nWe know, 13 * 3 + 17 * (-2) = 5,\n13 * 3 * 2000 + 17 * (-2) * 2000 = 5 * 2000\n13 * 6000 + 17 * (-4000) = 10000\nSo, (6000, -4000) satisfy the above equation.\nThe general terms of x and y that satisfy the above equation are,\nx = 6000 - 17t\ny = - 4000 + 13t\nWe know that x and y are greater than 0,\nCondition for x > 0,\n6000 - 17t > 0\nt < $\\dfrac{6000}{17}$\nt < 352.94\nSimilarly, for y > 0, we get,\n-4000 + 13t > 0\n13t > 4000\nt > $\\frac{4000}{13}$\nt > 307.6\nSo, the value of t that satisfies the condition is in the range [308, 352]. In this range, we have to calculate the value of t at which |x - y| is the minimum.\nThe values are equal when 6000 - 17t = -4000 + 13t\nt = $\\dfrac{10000}{30}\\ =\\ 333.34$\nBut we know t has to be an integer, so x and y are closest when t = 333 or t = 334\nAt t = 333, the values of x and y are\nx = 6000 - 17*333 = 339\ny = -4000 + 13 * 333 = 329\n|x - y| = 10\nAt t = 334, the values x and y are,\nx = 6000 - 17 * 334 = 322\ny = -4000 + 13 * 334 = 342\n|x - y| = 20.\nHence, the values x and y are 339 and 329.\nNow, the cost incurred by David is calculated as,\nCost = 17 * 339 + 13 * 329 = 10040.\nHence, the correct answer is option D.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-18",
       "passage_text": "",
-      "question_text": "In the quadrilateral ABCD, AB = BC = 15 cm, and $\\angle\\ D=90^{\\circ\\ }$, and AD = 9 cm, DC=12 cm. Find the area of the quadrilateral ABCD. (In sq cm)",
+      "question_text": "Glen borrowed a certain amount from Steve at a compound interest of 20% for two years. Glen invested the money borrowed in a certain ratio in Schemes A and B. He experienced an overall loss of 10% on the money invested in Scheme A, whereas the money invested in Scheme B saw a 50% increase in the same period. What is the ratio of the money invested in both the schemes if he made no profit after two years by paying back the money from the schemes to Steve?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\ \\frac{384+225\\sqrt{\\ 3}}{8}$",
+          "option_text": "1 : 7",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\ \\frac{288+225\\sqrt{\\ 3}}{6}$",
-          "is_correct": false
+          "option_text": "1 : 9",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\ \\frac{216+225\\sqrt{\\ 3}}{4}$",
-          "is_correct": true
+          "option_text": "2 : 5",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\ \\frac{216+225\\sqrt{\\ 3}}{8}$",
+          "option_text": "3 : 7",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "It is given that AB = BC = 15 cm, and $\\angle\\ D=90^{\\circ\\ }$, and AD = 9 cm, DC=12 cm.\nWe can say that the area of equilateral ABCD = the area of triangle ACD + the area of triangle ABC\nSince ACD is a right-angled triangle, we can say that $AC^2=AD^2+CD^2=9^2+12^2=225\\ =>\\ AC\\ =\\ 15$ cm.\nThe area of triangle $ACD=1/2\\cdot AD\\cdot CD=\\frac{1}{2}\\cdot9\\cdot12=54\\ $ sq cm.\nSimilarly, $AB=BC=AC=15$ cm, which implies the area of triangle ABC is $\\frac{\\sqrt{\\ 3}}{4}\\left(15\\right)^2=\\frac{225\\sqrt{\\ 3}}{4}$ sq cm.\nHence, the area of quadrilateral ABCD is $\\frac{225\\sqrt{\\ 3}}{4}+54\\ =\\ \\ \\frac{\\ 216+225\\sqrt{\\ 3}}{4}$\nThe correct option is C",
-      "image_url": "https://cracku.in/media/uploads/Screenshot_20230724_155326.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the quadrilateral ABCD, AB = BC = 15 cm, and $\\angle\\ D=90^{\\circ\\ }$, and AD = 9 cm, DC=12 cm. Find the area of the quadrilateral ABCD. (In sq cm)\n\n**Options:**\n- **A**. $\\ \\frac{384+225\\sqrt{\\ 3}}{8}$\n- **B**. $\\ \\frac{288+225\\sqrt{\\ 3}}{6}$\n- **C**. $\\ \\frac{216+225\\sqrt{\\ 3}}{4}$ ✅\n- **D**. $\\ \\frac{216+225\\sqrt{\\ 3}}{8}$\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that AB = BC = 15 cm, and $\\angle\\ D=90^{\\circ\\ }$, and AD = 9 cm, DC=12 cm.\nWe can say that the area of equilateral ABCD = the area of triangle ACD + the area of triangle ABC\nSince ACD is a right-angled triangle, we can say that $AC^2=AD^2+CD^2=9^2+12^2=225\\ =>\\ AC\\ =\\ 15$ cm.\nThe area of triangle $ACD=1/2\\cdot AD\\cdot CD=\\frac{1}{2}\\cdot9\\cdot12=54\\ $ sq cm.\nSimilarly, $AB=BC=AC=15$ cm, which implies the area of triangle ABC is $\\frac{\\sqrt{\\ 3}}{4}\\left(15\\right)^2=\\frac{225\\sqrt{\\ 3}}{4}$ sq cm.\nHence, the area of quadrilateral ABCD is $\\frac{225\\sqrt{\\ 3}}{4}+54\\ =\\ \\ \\frac{\\ 216+225\\sqrt{\\ 3}}{4}$\nThe correct option is C",
+      "solution_text": "Let the money borrowed by Glen be P. The amount after two years of compounding annually at a rate of 20% becomes,\nMoney after 2 years = $P\\left(1\\ +\\ \\dfrac{20}{100}\\right)^2\\ =\\ 1.44P$\nLet the amount invested in Scheme A be aP and the amount invested in Scheme B be bP.\nThe amount in Scheme A after two years becomes 0.9aP.\nThe amount in Scheme B after two years becomes 1.5bP.\nSince he made no profit, the amount from the schemes must be equal to the money to be paid.\n0.9aP + 1.5bP = 1.44P ----(1)\nand we also know that a + b = 1 ---(2)\nEquation (1) becomes,\n0.9a + 1.5b = 1.44  ---(3)\nEquation (2) * 0.9 becomes,\n0.9a + 0.9b = 0.9  ---(4)\nSubtracting (4) from (3), we get,\n0.6b = 0.54\n$b\\ =\\ \\dfrac{0.54}{0.6}\\ =\\ \\dfrac{9}{10}$\n$a\\ =\\ 1\\ -\\ \\dfrac{9}{10}\\ =\\ \\dfrac{1}{10}$\nRatio = $a\\ :\\ b\\ =\\ \\dfrac{1}{10}\\ :\\ \\dfrac{9}{10}\\ =\\ 1\\ :\\ 9$\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGlen borrowed a certain amount from Steve at a compound interest of 20% for two years. Glen invested the money borrowed in a certain ratio in Schemes A and B. He experienced an overall loss of 10% on the money invested in Scheme A, whereas the money invested in Scheme B saw a 50% increase in the same period. What is the ratio of the money invested in both the schemes if he made no profit after two years by paying back the money from the schemes to Steve?\n\n**Options:**\n- **A**. 1 : 7\n- **B**. 1 : 9 ✅\n- **C**. 2 : 5\n- **D**. 3 : 7\n\n**Correct Answer:** null\n\n**Solution:**\nLet the money borrowed by Glen be P. The amount after two years of compounding annually at a rate of 20% becomes,\nMoney after 2 years = $P\\left(1\\ +\\ \\dfrac{20}{100}\\right)^2\\ =\\ 1.44P$\nLet the amount invested in Scheme A be aP and the amount invested in Scheme B be bP.\nThe amount in Scheme A after two years becomes 0.9aP.\nThe amount in Scheme B after two years becomes 1.5bP.\nSince he made no profit, the amount from the schemes must be equal to the money to be paid.\n0.9aP + 1.5bP = 1.44P ----(1)\nand we also know that a + b = 1 ---(2)\nEquation (1) becomes,\n0.9a + 1.5b = 1.44  ---(3)\nEquation (2) * 0.9 becomes,\n0.9a + 0.9b = 0.9  ---(4)\nSubtracting (4) from (3), we get,\n0.6b = 0.54\n$b\\ =\\ \\dfrac{0.54}{0.6}\\ =\\ \\dfrac{9}{10}$\n$a\\ =\\ 1\\ -\\ \\dfrac{9}{10}\\ =\\ \\dfrac{1}{10}$\nRatio = $a\\ :\\ b\\ =\\ \\dfrac{1}{10}\\ :\\ \\dfrac{9}{10}\\ =\\ 1\\ :\\ 9$\nHence, the correct answer is option B.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-19",
       "passage_text": "",
-      "question_text": "A grass lawn shaped like an equilateral triangle has three sprinklers with a range of 3 meters pouring water into a circular area inside the lawn. These sprinklers are placed such that the area covered by them do not coincide and they do not sprinkle water outside the field. If the sprinklers pour water into the maximum possible area, find the minimum possible area of the lawn.",
+      "question_text": "A wine shop seller uses a peculiar price-change scheme to sell his goods. He buys a 20-litre bottle of wine, increases its price by p% and later reduces the new price again by p%. After one such price-change cycle, the price of the bottle decreased by £ 15 and after the second price-change cycle, the price of the bottle stood at £ 48. At what price did the wine shop seller buy the wine bottle?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$54(2+\\sqrt{3})$",
-          "is_correct": false
+          "option_text": "£ 75",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$18\\left(2+\\sqrt{3}\\right)$",
+          "option_text": "£ 60",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$18\\sqrt{3}\\left(2+\\sqrt{3}\\right)$",
-          "is_correct": true
+          "option_text": "£ 72",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$52(2+\\sqrt{3})$",
+          "option_text": "£ 64",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let P, Q and R be the three circles. \nTo find the minimum area of the lawn, we can place the circles in the above manner so that they just fit inside the lawn. \nAB and BC are tangents to the circle with the center at Q \n$\\angle\\ $ABC will be bisected by QB, hence $\\angle\\ $QBX=30$^{\\circ}$\n$QX/BX=\\tan30^{\\circ}$\n$r/BX=1/\\sqrt{3}$\n$BX=3\\sqrt{3}$\nsimilarly we can say that $YC=3\\sqrt{3}$\n$XY=2r=6$\n$BC=6+6\\sqrt{3}$\nArea = $\\sqrt{3}$s$^2$/4 = $\\frac{\\sqrt{3}\\left(6+6\\sqrt{3}\\right)^2}{4}$ = $9\\sqrt{3}\\left(1+\\sqrt{3}\\right)^2$=$18\\sqrt{3}\\left(2+\\sqrt{3}\\right)$",
+      "solution_text": "Let $C$ be the cost price of the wine before the price change. After one cycle of price change, a reduction equal to  $C\\left(\\frac{p^2}{100^2}\\right)$ takes place. It is stated that this value is  £ 15.\n$C\\left(\\frac{p^2}{100^2}\\right)=£15$...........(i)\nLet the price after the reduction be $C'$; then: $C\\left(1-\\frac{p^2}{100^2}\\right)=C'\\ or\\ \\left(C-15\\right)=C'$\nAfter the second round of price change, we obtain:$C'\\left(1-\\frac{p^2}{100^2}\\right)=£48$\nWe can re-write this as: $\\left(C-15\\right)\\left(1-\\frac{p^2}{100^2}\\right)=48$\nReplacing $\\left(\\frac{p^2}{100^2}\\right)$ from (i), we get: $\\left(C-15\\right)\\left(1-\\frac{15}{C}\\right)=48\\ or\\ \\left(C-15\\right)^2=48C$.....(ii)\nWe can simplify this as $C^2-78C+225=0$ and on solving, we get $C=£75$ [Cost price].\nHence, Option A is the correct choice.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA grass lawn shaped like an equilateral triangle has three sprinklers with a range of 3 meters pouring water into a circular area inside the lawn. These sprinklers are placed such that the area covered by them do not coincide and they do not sprinkle water outside the field. If the sprinklers pour water into the maximum possible area, find the minimum possible area of the lawn.\n\n**Options:**\n- **A**. $54(2+\\sqrt{3})$\n- **B**. $18\\left(2+\\sqrt{3}\\right)$\n- **C**. $18\\sqrt{3}\\left(2+\\sqrt{3}\\right)$ ✅\n- **D**. $52(2+\\sqrt{3})$\n\n**Correct Answer:** null\n\n**Solution:**\nLet P, Q and R be the three circles. \nTo find the minimum area of the lawn, we can place the circles in the above manner so that they just fit inside the lawn. \nAB and BC are tangents to the circle with the center at Q \n$\\angle\\ $ABC will be bisected by QB, hence $\\angle\\ $QBX=30$^{\\circ}$\n$QX/BX=\\tan30^{\\circ}$\n$r/BX=1/\\sqrt{3}$\n$BX=3\\sqrt{3}$\nsimilarly we can say that $YC=3\\sqrt{3}$\n$XY=2r=6$\n$BC=6+6\\sqrt{3}$\nArea = $\\sqrt{3}$s$^2$/4 = $\\frac{\\sqrt{3}\\left(6+6\\sqrt{3}\\right)^2}{4}$ = $9\\sqrt{3}\\left(1+\\sqrt{3}\\right)^2$=$18\\sqrt{3}\\left(2+\\sqrt{3}\\right)$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA wine shop seller uses a peculiar price-change scheme to sell his goods. He buys a 20-litre bottle of wine, increases its price by p% and later reduces the new price again by p%. After one such price-change cycle, the price of the bottle decreased by £ 15 and after the second price-change cycle, the price of the bottle stood at £ 48. At what price did the wine shop seller buy the wine bottle?\n\n**Options:**\n- **A**. £ 75 ✅\n- **B**. £ 60\n- **C**. £ 72\n- **D**. £ 64\n\n**Correct Answer:** null\n\n**Solution:**\nLet $C$ be the cost price of the wine before the price change. After one cycle of price change, a reduction equal to  $C\\left(\\frac{p^2}{100^2}\\right)$ takes place. It is stated that this value is  £ 15.\n$C\\left(\\frac{p^2}{100^2}\\right)=£15$...........(i)\nLet the price after the reduction be $C'$; then: $C\\left(1-\\frac{p^2}{100^2}\\right)=C'\\ or\\ \\left(C-15\\right)=C'$\nAfter the second round of price change, we obtain:$C'\\left(1-\\frac{p^2}{100^2}\\right)=£48$\nWe can re-write this as: $\\left(C-15\\right)\\left(1-\\frac{p^2}{100^2}\\right)=48$\nReplacing $\\left(\\frac{p^2}{100^2}\\right)$ from (i), we get: $\\left(C-15\\right)\\left(1-\\frac{15}{C}\\right)=48\\ or\\ \\left(C-15\\right)^2=48C$.....(ii)\nWe can simplify this as $C^2-78C+225=0$ and on solving, we get $C=£75$ [Cost price].\nHence, Option A is the correct choice.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-20",
       "passage_text": "",
-      "question_text": "Twelve people are invited to a conference, out of whom four friends are participating from the same college. All the invited people sit around a circular table. If the total number of arrangements in which the four friends are not sitting together is $8!\\times\\ k$, what is the value of k?",
+      "question_text": "A and B move toward each other on a straight 150-meter track, with speeds of 2 m/s and 4 m/s, respectively. The moment they meet, a third person, C, starts from A's starting point and moves toward B's end at 7 m/s. After how many seconds will C be equidistant from both A and B (other than the point when C is starting)?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "990",
-          "is_correct": false
+          "option_text": "6.25 seconds",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "954",
+          "option_text": "7.25 seconds",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "978",
+          "option_text": "8.25 seconds",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "966",
-          "is_correct": true
+          "option_text": "9.25 seconds",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The total number of ways of arranging 12 people around a circular table is (12 - 1)! = 11!\nNow, the number of arrangements in which 4 people are together: We consider the 4 friends as a single group => We have a total of 8 + 1= 9 units which can be arranged in (9 - 1)! = 8!, but the 4 friends can be arranged among themselves in 4! ways => Total number of ways = 8! * 4!.\nTherefore, the required number of arrangements = 11! - 8! * 4! = 8! (11 * 10 * 9 - 24) = 8! (966).\nTherefore, the required value of k is 966.",
+      "solution_text": "A and B move toward each other on a straight 150-meter track, with speeds of 2 m/s and 4 m/s, respectively. Thus they will meet after 150/(2+4) = 25 seconds\nNow, after they meet, C start from the same end as A, and moves towards the other end. Speed of C is 7 m/s. Let us assume that C is equidistant from both A and B after T seconds.\nTotal distance covered by A from A's end = $2(T+25)=2T+50$\nTotal distance covered by B from A's end = $150-4(T+25)=50-4T$\nTotal distance covered by C from A's end = $7T$\nNow, the distance between A and C = $\\left|5T-50\\right|$, and the distance between B and C = $\\left|11T-50\\right|$. And, it is given that C is equidistant from both A and B. Thus, -\n$\\left|5T-50\\right|=\\left|11T-50\\right|$\nCase - 1 : $5T-50=11T-50$ => $T=0$ seconds. This is the time when A and B meet, and C started. But we have to find the time other than the point when C started.\nCase - 2 : $5T-50=-11T+50$ => $16T=100$ => $T=6.25$ seconds.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwelve people are invited to a conference, out of whom four friends are participating from the same college. All the invited people sit around a circular table. If the total number of arrangements in which the four friends are not sitting together is $8!\\times\\ k$, what is the value of k?\n\n**Options:**\n- **A**. 990\n- **B**. 954\n- **C**. 978\n- **D**. 966 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe total number of ways of arranging 12 people around a circular table is (12 - 1)! = 11!\nNow, the number of arrangements in which 4 people are together: We consider the 4 friends as a single group => We have a total of 8 + 1= 9 units which can be arranged in (9 - 1)! = 8!, but the 4 friends can be arranged among themselves in 4! ways => Total number of ways = 8! * 4!.\nTherefore, the required number of arrangements = 11! - 8! * 4! = 8! (11 * 10 * 9 - 24) = 8! (966).\nTherefore, the required value of k is 966.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B move toward each other on a straight 150-meter track, with speeds of 2 m/s and 4 m/s, respectively. The moment they meet, a third person, C, starts from A's starting point and moves toward B's end at 7 m/s. After how many seconds will C be equidistant from both A and B (other than the point when C is starting)?\n\n**Options:**\n- **A**. 6.25 seconds ✅\n- **B**. 7.25 seconds\n- **C**. 8.25 seconds\n- **D**. 9.25 seconds\n\n**Correct Answer:** null\n\n**Solution:**\nA and B move toward each other on a straight 150-meter track, with speeds of 2 m/s and 4 m/s, respectively. Thus they will meet after 150/(2+4) = 25 seconds\nNow, after they meet, C start from the same end as A, and moves towards the other end. Speed of C is 7 m/s. Let us assume that C is equidistant from both A and B after T seconds.\nTotal distance covered by A from A's end = $2(T+25)=2T+50$\nTotal distance covered by B from A's end = $150-4(T+25)=50-4T$\nTotal distance covered by C from A's end = $7T$\nNow, the distance between A and C = $\\left|5T-50\\right|$, and the distance between B and C = $\\left|11T-50\\right|$. And, it is given that C is equidistant from both A and B. Thus, -\n$\\left|5T-50\\right|=\\left|11T-50\\right|$\nCase - 1 : $5T-50=11T-50$ => $T=0$ seconds. This is the time when A and B meet, and C started. But we have to find the time other than the point when C started.\nCase - 2 : $5T-50=-11T+50$ => $16T=100$ => $T=6.25$ seconds.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-21",
       "passage_text": "",
-      "question_text": "Find the last two digits of the number $127^{217}$?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "47",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "37",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "77",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "97",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "To find the last two digits of a number, we should divide the number by 100 so that we get the last two digit of the number.\nHere, the number is $127^{217}$\n$127^{217}$ mod 100\nWe can write 100 as a factor of 25*4\n$127^{217}$ mod 4 = $(-1)^{217}mod4 = -1 = 3$  (127 = 32*4-1)\nNow, divide the number by 25\n$127^{217}$mod 25 = $2^{217}$mod25 =$(2^{10})^{20}\\times\\ 2^17mod25$\n=> $(1024)^{20}\\times\\ 2^{17}mod25$ = 1*22 = 22 ($2^{17}=2^7\\times\\ 2^7\\times\\ 2^3$) => (3 * 3 * 8 = 72) => 22 is the remainder.\nThus, the required remainder is of the form\n4k+3 = 25m+22\nIf m = 1, we get 47 => 4(11) + 3.\n=> 47 is the remainder.\n=> The last two digits are 47.",
+      "question_text": "What is the least number that should be multiplied with 15! so that the product is a perfect square?",
+      "options": [],
+      "correct_option_data": "1430",
+      "solution_text": "We know that $10!=2^8\\times3^4\\times5^2\\times7^1$\nExtending 10! to 15!:\n$15!=10!\\times11\\times12\\times13\\times14\\times15$\n$15!=2^8\\times3^4\\times5^2\\times7^1\\times11\\times\\left(3\\times2^2\\right)\\times13\\times\\left(7\\times2\\right)\\times\\left(5\\times3\\right)$\nOr, $15!=2^{11}\\times3^6\\times5^3\\times7^2\\times11\\times13$\nNow, we know that for sum to be a perfect square, all its prime factors should have an even number of power. \nHowever, we have, 2, 5, 11 and 13 that has an odd number of power.\nIf we multiplied 15! with the product of 2, 5, 11 and 13, we will get the even powers for all four. \nHence, the least number that should be multiplied with 15! to get a perfect square: $2\\times5\\times11\\times13=1430$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the last two digits of the number $127^{217}$?\n\n**Options:**\n- **A**. 47 ✅\n- **B**. 37\n- **C**. 77\n- **D**. 97\n\n**Correct Answer:** null\n\n**Solution:**\nTo find the last two digits of a number, we should divide the number by 100 so that we get the last two digit of the number.\nHere, the number is $127^{217}$\n$127^{217}$ mod 100\nWe can write 100 as a factor of 25*4\n$127^{217}$ mod 4 = $(-1)^{217}mod4 = -1 = 3$  (127 = 32*4-1)\nNow, divide the number by 25\n$127^{217}$mod 25 = $2^{217}$mod25 =$(2^{10})^{20}\\times\\ 2^17mod25$\n=> $(1024)^{20}\\times\\ 2^{17}mod25$ = 1*22 = 22 ($2^{17}=2^7\\times\\ 2^7\\times\\ 2^3$) => (3 * 3 * 8 = 72) => 22 is the remainder.\nThus, the required remainder is of the form\n4k+3 = 25m+22\nIf m = 1, we get 47 => 4(11) + 3.\n=> 47 is the remainder.\n=> The last two digits are 47.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the least number that should be multiplied with 15! so that the product is a perfect square?\n\n**Options:**\n\n**Correct Answer:** 1430\n\n**Solution:**\nWe know that $10!=2^8\\times3^4\\times5^2\\times7^1$\nExtending 10! to 15!:\n$15!=10!\\times11\\times12\\times13\\times14\\times15$\n$15!=2^8\\times3^4\\times5^2\\times7^1\\times11\\times\\left(3\\times2^2\\right)\\times13\\times\\left(7\\times2\\right)\\times\\left(5\\times3\\right)$\nOr, $15!=2^{11}\\times3^6\\times5^3\\times7^2\\times11\\times13$\nNow, we know that for sum to be a perfect square, all its prime factors should have an even number of power. \nHowever, we have, 2, 5, 11 and 13 that has an odd number of power.\nIf we multiplied 15! with the product of 2, 5, 11 and 13, we will get the even powers for all four. \nHence, the least number that should be multiplied with 15! to get a perfect square: $2\\times5\\times11\\times13=1430$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-15-22",
       "passage_text": "",
-      "question_text": "There are 5 boys and 7 girls on a picnic. A fruit seller sells them 4 bananas, 3 apples and 5 oranges such that every student gets one fruit each. What is the probability that a person selected at random is a boy and he has either an apple or an orange with him?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\frac{6}{18}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\frac{7}{18}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$\\frac{5}{18}$",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\frac{9}{18}$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "The probability of a boy being selected = (number of boys)/ (number of boys + number of girls) =$\\ \\frac{\\ 5}{5+7}\\ =\\ \\frac{5}{12}$ . \nThe probability of having either an apple or an orange with any boy or girl = (number of apples + number of oranges)/(number of total fruits) = $\\ \\frac{\\ 3+5}{12}\\ =\\ \\frac{8}{12}$ \nNow the probability of having either an apple or an orange with the boy who is selected = (The probability of a boy being selected) * ( The probability of having either an apple or an orange with any boy or girl) = $\\ \\ \\frac{\\ 5}{12}\\ \\times\\frac{8}{12}\\ =\\ \\ \\frac{\\ 5}{18}$",
+      "question_text": "Lewis and Max are racing in the opposite direction on a straight road of length $168$ km. After meeting, Max takes $108$ minutes and Lewis takes $\\dfrac{100}{3}$ minutes to reach the other end. Find the speed of the faster person (in km/hr).",
+      "options": [],
+      "correct_option_data": "108",
+      "solution_text": "Since Lewis and Max are racing in opposite directions on a straight road, we can use the formula for the time it takes them to meet.\nThe formula is: \nMeeting Time = square root of the product of time taken by the two persons to reach the respective ends after meeting\n$=\\sqrt{\\ 108\\times\\ \\dfrac{100}{3}}=\\sqrt{\\ 3600}=60$ minutes\nSo, total time for Lewis will be $=\\dfrac{100}{3}+60=\\dfrac{280}{3}$ minutes\nTotal time for Max will be $=108+60=168$ minutes\nClearly, Lewis takes less time to complete the race\nSo, he is the faster racer\nSo, speed of faster racer (Lewis) = Distance/Time = $\\dfrac{168}{\\dfrac{\\dfrac{280}{3}}{60}}=\\dfrac{168\\times\\ 60}{\\dfrac{280}{3}}=108$ km/hr.\nAlternate Explanation:\nWe also have another formula to find the ratio of speeds of Lewis and Max.\nRatio of their speeds = square root of the inverse ratio of time taken to reach other end after meeting.\nLet, speed of Lewis be $S_L$ km/hr and speed of Max be $S_M$ km/hr\nSo, $\\dfrac{S_M}{S_L}=\\sqrt{\\dfrac{\\ \\dfrac{100}{3}}{108}}=\\sqrt{\\ \\dfrac{100}{3\\times\\ 108}}=\\sqrt{\\ \\dfrac{25}{81}}=\\dfrac{5}{9}$\nFrom this we can infer, Lewis is the faster racer.\nAlso, we can say until meeting, distance covered by Max and Lewis is in the ratio 5:9\nSo, distance covered by Lewis until meeting = $\\dfrac{9}{5+9}\\times\\ 168=\\dfrac{9}{14}\\times\\ 168=108$ km\nMeeting time (we calculated in the previous part)=60 minutes = 1 hour\nSo, speed of Lewis (faster runner)=$\\dfrac{108}{1}=108$ km/hr.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 5 boys and 7 girls on a picnic. A fruit seller sells them 4 bananas, 3 apples and 5 oranges such that every student gets one fruit each. What is the probability that a person selected at random is a boy and he has either an apple or an orange with him?\n\n**Options:**\n- **A**. $\\frac{6}{18}$\n- **B**. $\\frac{7}{18}$\n- **C**. $\\frac{5}{18}$ ✅\n- **D**. $\\frac{9}{18}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe probability of a boy being selected = (number of boys)/ (number of boys + number of girls) =$\\ \\frac{\\ 5}{5+7}\\ =\\ \\frac{5}{12}$ . \nThe probability of having either an apple or an orange with any boy or girl = (number of apples + number of oranges)/(number of total fruits) = $\\ \\frac{\\ 3+5}{12}\\ =\\ \\frac{8}{12}$ \nNow the probability of having either an apple or an orange with the boy who is selected = (The probability of a boy being selected) * ( The probability of having either an apple or an orange with any boy or girl) = $\\ \\ \\frac{\\ 5}{12}\\ \\times\\frac{8}{12}\\ =\\ \\ \\frac{\\ 5}{18}$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLewis and Max are racing in the opposite direction on a straight road of length $168$ km. After meeting, Max takes $108$ minutes and Lewis takes $\\dfrac{100}{3}$ minutes to reach the other end. Find the speed of the faster person (in km/hr).\n\n**Options:**\n\n**Correct Answer:** 108\n\n**Solution:**\nSince Lewis and Max are racing in opposite directions on a straight road, we can use the formula for the time it takes them to meet.\nThe formula is: \nMeeting Time = square root of the product of time taken by the two persons to reach the respective ends after meeting\n$=\\sqrt{\\ 108\\times\\ \\dfrac{100}{3}}=\\sqrt{\\ 3600}=60$ minutes\nSo, total time for Lewis will be $=\\dfrac{100}{3}+60=\\dfrac{280}{3}$ minutes\nTotal time for Max will be $=108+60=168$ minutes\nClearly, Lewis takes less time to complete the race\nSo, he is the faster racer\nSo, speed of faster racer (Lewis) = Distance/Time = $\\dfrac{168}{\\dfrac{\\dfrac{280}{3}}{60}}=\\dfrac{168\\times\\ 60}{\\dfrac{280}{3}}=108$ km/hr.\nAlternate Explanation:\nWe also have another formula to find the ratio of speeds of Lewis and Max.\nRatio of their speeds = square root of the inverse ratio of time taken to reach other end after meeting.\nLet, speed of Lewis be $S_L$ km/hr and speed of Max be $S_M$ km/hr\nSo, $\\dfrac{S_M}{S_L}=\\sqrt{\\dfrac{\\ \\dfrac{100}{3}}{108}}=\\sqrt{\\ \\dfrac{100}{3\\times\\ 108}}=\\sqrt{\\ \\dfrac{25}{81}}=\\dfrac{5}{9}$\nFrom this we can infer, Lewis is the faster racer.\nAlso, we can say until meeting, distance covered by Max and Lewis is in the ratio 5:9\nSo, distance covered by Lewis until meeting = $\\dfrac{9}{5+9}\\times\\ 168=\\dfrac{9}{14}\\times\\ 168=108$ km\nMeeting time (we calculated in the previous part)=60 minutes = 1 hour\nSo, speed of Lewis (faster runner)=$\\dfrac{108}{1}=108$ km/hr.",
       "type": "quants"
     }
   ]

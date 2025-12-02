@@ -1,0 +1,696 @@
+{
+  "questions": [
+    {
+      "qid": "dilr-sectionals-22-1",
+      "passage_text": "Five individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.",
+      "question_text": "What is the colour of the bike owned by Manthan?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Red",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Blue",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Black",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nFrom the table, we know Manthan Owns a Black colour bike.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202025-01-28%2015-16-44.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.\n\nWhat is the colour of the bike owned by Manthan?\n\n**Options:**\n- **A**. Red\n- **B**. Blue\n- **C**. Black ✅\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nFrom the table, we know Manthan Owns a Black colour bike.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-2",
+      "passage_text": "Five individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.",
+      "question_text": "What is the sport played by Akash?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Badminton",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Hockey",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Football",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cricket",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nFrom the table, we know that Akash Plays Cricket.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202025-01-28%2015-16-44.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.\n\nWhat is the sport played by Akash?\n\n**Options:**\n- **A**. Badminton\n- **B**. Hockey\n- **C**. Football\n- **D**. Cricket ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nFrom the table, we know that Akash Plays Cricket.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-3",
+      "passage_text": "Five individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.",
+      "question_text": "What is the colour of the most expensive bike?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Black",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Blue",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "White",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Red",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe only know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nThe most expensive bike is White Colour.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202025-01-28%2015-16-44.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.\n\nWhat is the colour of the most expensive bike?\n\n**Options:**\n- **A**. Black\n- **B**. Blue\n- **C**. White ✅\n- **D**. Red\n\n**Correct Answer:** null\n\n**Solution:**\nLet us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe only know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nThe most expensive bike is White Colour.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-4",
+      "passage_text": "Five individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.",
+      "question_text": "Who is from Mumbai?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ghanshyam",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Praful",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "A person with the blue colour bike.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "A person with a bike price of Rs.80,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe only know from point 4 that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nThe person with a blue colour bike is from Mumbai.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202025-01-28%2015-16-44.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.\n\nWho is from Mumbai?\n\n**Options:**\n- **A**. Ghanshyam\n- **B**. Praful\n- **C**. A person with the blue colour bike. ✅\n- **D**. A person with a bike price of Rs.80,000\n\n**Correct Answer:** null\n\n**Solution:**\nLet us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe only know from point 4 that Manthan either plays Badminton or Basketball, so there are 2 cases possible.\nThe person with a blue colour bike is from Mumbai.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-5",
+      "passage_text": "Five individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.",
+      "question_text": "How many arrangements are possible?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "Let us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20from%202025-01-28%2015-16-44.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive individuals—Akash, Ghanshyam, Manthan, Praful, and Vijay—are associated with different sports, bikes colour, bike prices, and cities. The sports include Badminton, Basketball, Cricket, Hockey, and Football. Each person owns a bike of a unique color: Black, Blue, Orange, Red, or White, with distinct prices of ₹50,000, ₹60,000, ₹70,000, ₹80,000, and ₹90,000, respectively. Additionally, each person hails from a different city: Ahmedabad, Hyderabad, Jaipur, Mumbai, or Pune. No two individuals share the same sport, bike color, bike price, or city, and every attribute is distinct for each person.\n\nAkash is not from Hyderabad, and Manthan does not own the white-colored bike.\n\nThe person who plays Football is from Hyderabad.\n\nThe second most expensive bike is not white in color.\n\nThe blue-colored bike is the least expensive.\n\nVijay hails from Jaipur.\n\nGhanshyam plays Hockey and owns a bike priced at ₹60,000.\n\nThe person from Pune owns the red-colored bike.\n\nHow many arrangements are possible?\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nLet us fill the information given in the set:\n1. Akash ~ Hyderabad, Manthan ~ White Bike (where, ~ represents negation, eg- Akash is not from Hyderabad)\n2. Football = Hyderabad\n3. White ~ 80,000\n4. Blue = 50,000\n5. Vijay = Jaipur\n6. Ghanshyam = Hockey, Bike = 60,000\n7. Pune = Red Bike\nNow, filling the table from clues: 4,5,6,7\nFrom point 2, we know a person from Hyderabad plays football, now only possibility is row number 3.\nFrom point 1, we know Manthan don't have a white bike, which means Manthan can only have a Black colour bike.\nFrom Point 3, we know the white bike is not 80,000. Thus, it is of Rs. 90,000.\nSo, the Black bike is of Rs. 80,000.\nFrom Point 1, we know Akash is not from Hyderabad, so Akash is from Mumbai, and thus, Praful is from Hyderabad.\nWe know that Manthan either plays Badminton or Basketball, so there are 2 cases possible.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-6",
+      "passage_text": "Five companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.",
+      "question_text": "Which company manufactures all the products?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "E",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S should be 5. Since C is one, it will be S, and then others will be crossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured by only one company. Since S is manufactured by A and D, S is manufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "image_url": "https://cracku.in/media/uploads/2016/02/09/di-1-q.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.\n\nWhich company manufactures all the products?\n\n**Options:**\n- **A**. A ✅\n- **B**. B\n- **C**. D\n- **D**. E\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S should be 5. Since C is one, it will be S, and then others will be crossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured by only one company. Since S is manufactured by A and D, S is manufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-7",
+      "passage_text": "Five companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.",
+      "question_text": "Which product is manufactured by all 5 companies?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "S",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "image_url": "https://cracku.in/media/uploads/2016/02/09/di-1-q.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.\n\nWhich product is manufactured by all 5 companies?\n\n**Options:**\n- **A**. P\n- **B**. Q\n- **C**. R\n- **D**. S ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-8",
+      "passage_text": "Five companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.",
+      "question_text": "Which products does B manufacture?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Only P and S",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only P, Q and S",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Only P, R, S",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "image_url": "https://cracku.in/media/uploads/2016/02/09/di-1-q.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.\n\nWhich products does B manufacture?\n\n**Options:**\n- **A**. Only P and S\n- **B**. Only P, Q and S ✅\n- **C**. Only P, R, S\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-9",
+      "passage_text": "Five companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.",
+      "question_text": "Which company manufactures two products?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "D",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "",
+      "image_url": "https://cracku.in/media/uploads/2016/02/09/di-1-q.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.\n\nWhich company manufactures two products?\n\n**Options:**\n- **A**. A\n- **B**. B\n- **C**. C\n- **D**. D ✅\n\n**Correct Answer:** null",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-10",
+      "passage_text": "Five companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.",
+      "question_text": "Which product is manufactured by three companies?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "P",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.\nProduct P is manufactured by three companies A, B and E.\nThe answer is option A.",
+      "image_url": "https://cracku.in/media/uploads/2016/02/09/di-1-q.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive companies- A, B, C, D, E manufacture five different types of products- P, Q, R, S, T. Each company manufacture different number of products among the 5 products and no two companies manufacture same number of products. Similarly each product is manufactured by different number of companies. The following tables show the partial information about the products and the companies.\n\nWhich product is manufactured by three companies?\n\n**Options:**\n- **A**. P ✅\n- **B**. R\n- **C**. S\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given,\nIf S is not 5, it will be 4 but it is given that Q is 4. Therefore, S\nshould be 5. Since C is one, it will be S, and then others will be \ncrossed.\nFrom above diagram, we can observe that A, B and E are greater than or equal to 3. This implies D should be 2. \nFrom above diagram, we can observe that P and T are greater than or equal to 2. This implies R should be 1.\nB cannot be 5. This implies A should be 5 and thus, B will be 3 and E will be 4\nFinal Table:\nAlternate Explanation:\nSince P is manufactured by more than 2 companies, R is manufactured \nby only one company. Since S is manufactured by A and D, S is \nmanufactured by 5 companies, whereas P is manufactured by 3 companies.\nProduct P is manufactured by three companies A, B and E.\nThe answer is option A.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-11",
+      "passage_text": "The following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.",
+      "question_text": "Generating one megawatt (MW) of power costs $5 per hour. For every MW that powers the 'Cryptocurrency Mines,' $8 worth of cryptocurrency is mined per hour. Given the cyberattack, calculate the potential loss in income Gotham City experienced in the cryptocurrency mines sector (from the start of the attack till the end of the 48th hour), assuming the power usage remained constant from the beginning of Hour 19 onward in the case the attack had not occurred.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$72600",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$58200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$56400",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$64800",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can interpret the data from the graph in the following table as: \nWe want to calculate the loss in \"Income\" for Gotham. We are told that cost per MW is 5 dollars an hour and at the same time, each MW has the power to generate 8 dollars an hour for Gotham. Joker launched a cyber-attack, derailing the mines. \nAt the start of Hour 19 was the start of the attack, and we know the value stays the same for the period of 6 hours. \nHour 19 to 24: 1800 (which is the level we are assumed to maintain for rest of time)\nHour 25 to 30: 800, this is 1000MW less\nHour 31 to 36: 1200, this is 600MW less\nHour 37 to 42: 1000, this is 800MW less\nHour 43 to 48: 600, this is 1200MW less\nTotal loss in energy will be, (1000+600+800+1200)x6\n(3600)(6)=21600\nEach hour represents a 8-5=3 dollar loss. \n(21600)($3)=$64800",
+      "image_url": "https://cracku.in/media/uploads/Energy_Crisis_Chart.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nThe following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.\n\nGenerating one megawatt (MW) of power costs $5 per hour. For every MW that powers the 'Cryptocurrency Mines,' $8 worth of cryptocurrency is mined per hour. Given the cyberattack, calculate the potential loss in income Gotham City experienced in the cryptocurrency mines sector (from the start of the attack till the end of the 48th hour), assuming the power usage remained constant from the beginning of Hour 19 onward in the case the attack had not occurred.\n\n**Options:**\n- **A**. $72600\n- **B**. $58200\n- **C**. $56400\n- **D**. $64800 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe can interpret the data from the graph in the following table as: \nWe want to calculate the loss in \"Income\" for Gotham. We are told that cost per MW is 5 dollars an hour and at the same time, each MW has the power to generate 8 dollars an hour for Gotham. Joker launched a cyber-attack, derailing the mines. \nAt the start of Hour 19 was the start of the attack, and we know the value stays the same for the period of 6 hours. \nHour 19 to 24: 1800 (which is the level we are assumed to maintain for rest of time)\nHour 25 to 30: 800, this is 1000MW less\nHour 31 to 36: 1200, this is 600MW less\nHour 37 to 42: 1000, this is 800MW less\nHour 43 to 48: 600, this is 1200MW less\nTotal loss in energy will be, (1000+600+800+1200)x6\n(3600)(6)=21600\nEach hour represents a 8-5=3 dollar loss. \n(21600)($3)=$64800",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-12",
+      "passage_text": "The following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.",
+      "question_text": "Which sector experienced the largest percentage decrease in energy consumption during the specified period?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Transport, Hour 12 to 18",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Healthcare, Hour 12 to 18",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Cryptocurrency Mines, Hour 18 to 24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Transport, Hour 18 to 24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can interpret the data from the graph in the following table as: \nLet us calculate the value for each of these options: \nOption A: Transport, Hour 12 to 18: 1400 to 600, \nPercentage drop is: $\\frac{1400-600}{1400}=\\frac{800}{1400}=\\frac{4}{7}=57.14\\%$\nOption B: Healthcare, Hour 12 to 18: 1000 to 200, \nPercentage drop is: $\\frac{1000-200}{1000}=\\frac{800}{1000}=80\\%$\nOption C: Cryptocurrency Mines, Hour 18 to 24, 1800 to 800\nPercentage drop is: $\\frac{1800-800}{1800}=\\frac{1000}{1800}=\\frac{5}{9}=55.55\\%$\nOption D: Transport, Hour 18 to 24: 600 to 200, \nPercentage drop is: $\\frac{600-200}{600}=\\frac{400}{600}=66.66\\%$\nHence, the answer is Option B.",
+      "image_url": "https://cracku.in/media/uploads/Energy_Crisis_Chart.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nThe following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.\n\nWhich sector experienced the largest percentage decrease in energy consumption during the specified period?\n\n**Options:**\n- **A**. Transport, Hour 12 to 18\n- **B**. Healthcare, Hour 12 to 18 ✅\n- **C**. Cryptocurrency Mines, Hour 18 to 24\n- **D**. Transport, Hour 18 to 24\n\n**Correct Answer:** null\n\n**Solution:**\nWe can interpret the data from the graph in the following table as: \nLet us calculate the value for each of these options: \nOption A: Transport, Hour 12 to 18: 1400 to 600, \nPercentage drop is: $\\frac{1400-600}{1400}=\\frac{800}{1400}=\\frac{4}{7}=57.14\\%$\nOption B: Healthcare, Hour 12 to 18: 1000 to 200, \nPercentage drop is: $\\frac{1000-200}{1000}=\\frac{800}{1000}=80\\%$\nOption C: Cryptocurrency Mines, Hour 18 to 24, 1800 to 800\nPercentage drop is: $\\frac{1800-800}{1800}=\\frac{1000}{1800}=\\frac{5}{9}=55.55\\%$\nOption D: Transport, Hour 18 to 24: 600 to 200, \nPercentage drop is: $\\frac{600-200}{600}=\\frac{400}{600}=66.66\\%$\nHence, the answer is Option B.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-13",
+      "passage_text": "The following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.",
+      "question_text": "What is the absolute difference in energy consumption between the first hour of the cyberattack and the 35th hour overall?",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "We can interpret the data from the graph in the following table as:\nThe first hour of the attack is the 18th hour. So, the consumption of that hour is 1000+600+200+1800=3600.\nThe 35th hour will have the same consumption as the start of the 31st hour, which is 1200+400+800+1200=3600.\nHence, their difference is 0.",
+      "image_url": "https://cracku.in/media/uploads/Energy_Crisis_Chart.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nThe following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.\n\nWhat is the absolute difference in energy consumption between the first hour of the cyberattack and the 35th hour overall?\n\n**Options:**\n\n**Correct Answer:** 0\n\n**Solution:**\nWe can interpret the data from the graph in the following table as:\nThe first hour of the attack is the 18th hour. So, the consumption of that hour is 1000+600+200+1800=3600.\nThe 35th hour will have the same consumption as the start of the 31st hour, which is 1200+400+800+1200=3600.\nHence, their difference is 0.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-14",
+      "passage_text": "The following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.",
+      "question_text": "If the cost of energy consumption in the healthcare sector is $7 per hour, calculate the total energy cost incurred after the start of the attack.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$154600",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$151700",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$159600",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$152400",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can interpret the data from the graph in the following table as:\nWe have at the start of the 19th hour 200\nSeeing the 6-hour period energy consumption we have, (200+600+800+1000+600+600) x 6 x 7=$159600",
+      "image_url": "https://cracku.in/media/uploads/Energy_Crisis_Chart.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nThe following line graph tracks power consumption (in megawatts) across four critical sectors of Gotham City over 48 hours.\n\nAt start of Hour 18, the city’s infrastructure faces a catastrophic cyber-attack orchestrated by the Joker, destabilizing energy distribution and exposing vulnerabilities in its power grid. \nUse the graph to analyze the attack’s impact and propose solutions to safeguard Gotham’s future.\n\nAssume that for the period of 6 hours, the value for power consumption stays the same. For example, the power consumption for \"Healthcare\" between the start of the first hour and end of the sixth hour is 400MW every hour.\n\nIf the cost of energy consumption in the healthcare sector is $7 per hour, calculate the total energy cost incurred after the start of the attack.\n\n**Options:**\n- **A**. $154600\n- **B**. $151700\n- **C**. $159600 ✅\n- **D**. $152400\n\n**Correct Answer:** null\n\n**Solution:**\nWe can interpret the data from the graph in the following table as:\nWe have at the start of the 19th hour 200\nSeeing the 6-hour period energy consumption we have, (200+600+800+1000+600+600) x 6 x 7=$159600",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-15",
+      "passage_text": "In order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.",
+      "question_text": "Which is the first button you must press such that all the buttons are pressed in the correct sequence to open this safe. Find the sum of the digit and the alphabet. (Let U = 15 , D = 20, L = 25 and R = 30)",
+      "options": [],
+      "correct_option_data": "27",
+      "solution_text": "In order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach the open. Hence, it is not a starting point. Now, when we consider the second case, if the sequence becomes the same after a certain point, we will not consider that case as the sequence will lead to Open without pressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nThe first button you must press such that all the buttons are \npressed in the correct sequence to open this safe is 2L\nTherefore, the sum of the \ndigit and the alphabet 2+L = 2+25 =27",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230821_155657.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.\n\nWhich is the first button you must press such that all the buttons are pressed in the correct sequence to open this safe. Find the sum of the digit and the alphabet. (Let U = 15 , D = 20, L = 25 and R = 30)\n\n**Options:**\n\n**Correct Answer:** 27\n\n**Solution:**\nIn order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach the open. Hence, it is not a starting point. Now, when we consider the second case, if the sequence becomes the same after a certain point, we will not consider that case as the sequence will lead to Open without pressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nThe first button you must press such that all the buttons are \npressed in the correct sequence to open this safe is 2L\nTherefore, the sum of the \ndigit and the alphabet 2+L = 2+25 =27",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-16",
+      "passage_text": "In order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.",
+      "question_text": "Which is the 14th button you must press in the correct sequence to open this safe.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1L",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1R",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2D",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2U",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nThe 14th button you must press in the correct sequence to open this safe is 2U.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230821_155657.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.\n\nWhich is the 14th button you must press in the correct sequence to open this safe.\n\n**Options:**\n- **A**. 1L\n- **B**. 1R\n- **C**. 2D\n- **D**. 2U ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIn order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nThe 14th button you must press in the correct sequence to open this safe is 2U.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-17",
+      "passage_text": "In order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.",
+      "question_text": "If 2D is removed from the first row and the first column and in place of 2D, open is placed. Which key should be placed in the position of Open in the 2nd row and 4th column such that the safe can be opened using all the buttons?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3U",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3D",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3L",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3R",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nIf 2D is removed from the first row and the first column and in place of 2D, open is placed. Which key should be placed in the position of Open \nin the 2nd row and 4th column such that the safe can be opened using all the buttons- \nThe Safe will be changed to \nAs the safe is opened using a sequence of buttons \nFor example - A - B - C - D - E -F -.......-X - Y - Z - OPEN\nIf the open is placed anywhere in between the sequence( Here, let us assume it is placed after C)\nThere will be two sequences: A - B - C - Open and D - E - F - ...... X - Y - Z - ? \nNow, to make the safe open using all buttons, there must be a relation between the empty place and A (So they are joined )\nThe sequence will be D - E - F ---  X - Y - Z - ? - A - B - C - Open\nHere, A is 2L (At the 5th row, 4th column), and the blank is at the 2nd row and 4th column.\nTherefore, this can be joined if we place 3D at the blank such that the sequence will be made.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230821_155657.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.\n\nIf 2D is removed from the first row and the first column and in place of 2D, open is placed. Which key should be placed in the position of Open in the 2nd row and 4th column such that the safe can be opened using all the buttons?\n\n**Options:**\n- **A**. 3U\n- **B**. 3D ✅\n- **C**. 3L\n- **D**. 3R\n\n**Correct Answer:** null\n\n**Solution:**\nIn order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nIf 2D is removed from the first row and the first column and in place of 2D, open is placed. Which key should be placed in the position of Open \nin the 2nd row and 4th column such that the safe can be opened using all the buttons- \nThe Safe will be changed to \nAs the safe is opened using a sequence of buttons \nFor example - A - B - C - D - E -F -.......-X - Y - Z - OPEN\nIf the open is placed anywhere in between the sequence( Here, let us assume it is placed after C)\nThere will be two sequences: A - B - C - Open and D - E - F - ...... X - Y - Z - ? \nNow, to make the safe open using all buttons, there must be a relation between the empty place and A (So they are joined )\nThe sequence will be D - E - F ---  X - Y - Z - ? - A - B - C - Open\nHere, A is 2L (At the 5th row, 4th column), and the blank is at the 2nd row and 4th column.\nTherefore, this can be joined if we place 3D at the blank such that the sequence will be made.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-18",
+      "passage_text": "In order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.",
+      "question_text": "In order to unlock this safe, a sequence is followed. In the correct sequence where all buttons are used to open the safe, how many times is button 1X pressed just before 2Y, where X and Y can be L, D, R and U?",
+      "options": [],
+      "correct_option_data": "5",
+      "solution_text": "In order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nIn order to unlock this safe, a sequence is followed. In the correct sequence where all buttons are used to open the safe, how many times is \nbutton 1X pressed just before 2Y, where X and Y can be L, D, R and U\n8th - 1D\n9th - 2U\n11th - 1L\n12th - 2D\n13th - 1L\n14th - 2U\n19th - 1L\n20th - 2D\n23rd - 1D\n24th - 2U\nTherefore, 5 times 1X is pressed just before 1Y in the correct sequence",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230821_155657.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn order to unlock this safe, you need to press all the buttons in the correct sequence. The numerical value on each button indicates the distance to move, while the letters indicate the direction (U for up, D for down, L for left, and R for right). With this information, try to solve the following questions.\n\nIn order to unlock this safe, a sequence is followed. In the correct sequence where all buttons are used to open the safe, how many times is button 1X pressed just before 2Y, where X and Y can be L, D, R and U?\n\n**Options:**\n\n**Correct Answer:** 5\n\n**Solution:**\nIn order to unlock this safe, you need to \ncorrectly sequence the button presses. The numerical value on each \nbutton indicates the distance to move, while the letters indicate the \ndirection (U for up, D for down, L for left, and R for right). With this\ninformation, try to solve the following questions.\nIt is given that in order to unlock this safe, we need to correctly sequence the button presses.\nCase 1: Let us assume that 2D is the starting point (First row and first column)\nWe were not able to press all the buttons and reach \nthe open. Hence, it is not a starting point. Now, when we consider the \nsecond case, if the sequence becomes the same after a certain point, we \nwill not consider that case as the sequence will lead to Open without \npressing all the buttons.\nCase 2: Let us assume that 3L is the starting point (First row and Fourth column)\nWe see that it leads to 2D (First row, first column) - Hence, not the starting point\nFrom observing carefully, we see that 2L (5th Row and 4th Column) is the starting point. \nHence, the table will be \nIn order to unlock this safe, a sequence is followed. In the correct sequence where all buttons are used to open the safe, how many times is \nbutton 1X pressed just before 2Y, where X and Y can be L, D, R and U\n8th - 1D\n9th - 2U\n11th - 1L\n12th - 2D\n13th - 1L\n14th - 2U\n19th - 1L\n20th - 2D\n23rd - 1D\n24th - 2U\nTherefore, 5 times 1X is pressed just before 1Y in the correct sequence",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-19",
+      "passage_text": "Read the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.",
+      "question_text": "On how many days does Phelps swim?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nHence, Phelps swims on 6 days.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRead the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.\n\nOn how many days does Phelps swim?\n\n**Options:**\n- **A**. 4\n- **B**. 6 ✅\n- **C**. 5\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nWe can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nHence, Phelps swims on 6 days.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-20",
+      "passage_text": "Read the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.",
+      "question_text": "On which of the following days do Nathan and Spitz swim together?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Saturday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Thursday",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nHence, Nathan and Spitz swim together on Thursday and Friday. So the right answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRead the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.\n\nOn which of the following days do Nathan and Spitz swim together?\n\n**Options:**\n- **A**. Monday\n- **B**. Saturday\n- **C**. Thursday ✅\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nWe can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nHence, Nathan and Spitz swim together on Thursday and Friday. So the right answer is option C.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-21",
+      "passage_text": "Read the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.",
+      "question_text": "On which day do at least two among Nathan, Hall and Lochte swim?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "More than one of the above",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nSo at least 2 of Nathan, Hall and Lochte swim on Sunday, Wednesday, Thursday and Friday. Thus, answer is more than one of the above.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRead the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.\n\nOn which day do at least two among Nathan, Hall and Lochte swim?\n\n**Options:**\n- **A**. Friday\n- **B**. Monday\n- **C**. Thursday\n- **D**. More than one of the above ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nSo at least 2 of Nathan, Hall and Lochte swim on Sunday, Wednesday, Thursday and Friday. Thus, answer is more than one of the above.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-22-22",
+      "passage_text": "Read the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.",
+      "question_text": "What is the maximum number of people who visit the pool on any particular day?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nThe max number of people is 6 people on Wednesday.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nRead the following and answer the questions.\n\nThe US swimming team consists of seven people Hall, Nathan, Spitz, Phelps, Jagger, Schooling and Lochte. Of the seven swimmers, it is known that \n\na) One of the seven swimmers does not use the swimming pool on Tuesdays, Thursdays and Saturdays. \n\nb) Another one does not use the pool on Tuesdays and Sundays; \n\nc) Another one does not use the pool on Mondays, Tuesdays and Wednesdays; \n\nd) Another one does not use on Fridays and Saturdays; \n\ne) Another one does not use on Mondays, Fridays and Saturdays; \n\nf) Another one does not use on Thursdays; \n\ng) Another one does not use on Saturdays and Sundays.\n\nAll of them use the pool on all other days \n\nFurther, it is known that in any week,\n\ni. The number of days on which both Jagger and Spitz use the pool is atleast equal to 4.\nii. The number of days on which both Spitz and Schooling use the pool is exactly equal to 4.\niii. Phelps swims on all days that Lochte swims.\niv. The number of days on which both Hall and Jagger don't use the pool is exactly equal to two.\n\nWhat is the maximum number of people who visit the pool on any particular day?\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 6 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nWe can represent the days information as follow:\nWe know that Hall and Jagger together do not swim on two days. Hence, we need to look for rows where the overlap is of exactly two days. There are only 2 such rows - 4 and 5. For no other pair of rows would we get overlap of 2 days. Hence, 4 has Hall / Jagger and 5 has Jagger / Hall. \nAlso, it has been given that Phelps swims on all days Lochte swims. Hence, from the remaining rows we need two rows such that one row has a subset of Xs of another row. We see that case with row 6 and row 1 where the Xs on 6 <= Xs on 1 i.e. 6 has leaves on one of the days that 1 also has leaves. Thus, 6 must be Phelps and 1 Lochte.\nNow, Spitz and Jagger swim together on 4 days. If 5 is Jagger, then this would be impossible with the given empty rows of 2, 3 and 7. Hence, 4 must be Jagger and 5 Hall. \nOnly row such that there are 4 days in common with row 4 is row 7. Hence, row 7 must be Spitz. \nNow, Spitz and Schooling have 4 days in common. The only row with 4 common slots with row 7 is row 2. \nHence, 2 is Schooling and 3 is Nathan. The final table is as follows:\nThe max number of people is 6 people on Wednesday.",
+      "type": "dilr"
+    }
+  ]
+}

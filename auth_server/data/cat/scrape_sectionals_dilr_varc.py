@@ -129,8 +129,10 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
         #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
         #         ]
         
-        for url in urls:
+        for i, url in enumerate(urls):
             result = await crawler.arun(url, config=run_config, magic=True)
+            if i == 0:
+                continue
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
@@ -475,16 +477,13 @@ if __name__ == "__main__":
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
         for url_curr in urls_raw:
-            if "quant" in url_curr:
-                type_curr = "quants"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
-                break
-            elif "verbal" in url_curr:
+            if "verbal" in url_curr:
                 type_curr = "varc"
                 urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
             else:
                 type_curr = "dilr"
                 urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+            urls.insert(0, urls[0])
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls))

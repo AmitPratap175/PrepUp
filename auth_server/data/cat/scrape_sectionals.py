@@ -112,6 +112,7 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
     run_config = CrawlerRunConfig(
         scan_full_page=True,
         js_code=[
+            "Array.from(document.querySelectorAll('a')).find(a => a.textContent.includes('Switch to old version'))?.click()",
             "window.scrollTo(0, document.body.scrollHeight);",
             "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Show Correct Answer'))?.click()",
         ],
@@ -130,8 +131,10 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
         #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
         #         ]
         
-        for url in urls:
+        for i, url in enumerate(urls):
             result = await crawler.arun(url, config=run_config, magic=True)
+            if i == 0:
+                continue
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
@@ -416,7 +419,8 @@ if __name__ == "__main__":
             type_curr = "quants"
             # urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
             urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]
-    
+            urls.insert(0, urls[0])
+
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl(urls))
             print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")

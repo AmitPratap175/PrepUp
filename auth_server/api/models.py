@@ -219,7 +219,7 @@ class Essay(models.Model):
     ]
     
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='essays')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='essays', null=True, blank=True)
     topic = models.ForeignKey(EssayTopic, on_delete=models.SET_NULL, null=True, blank=True)
     title = models.CharField(max_length=500)
     content = models.TextField(help_text="HTML content from Froala editor")

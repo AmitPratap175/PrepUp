@@ -1,0 +1,746 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-21-1",
+      "passage_text": "",
+      "question_text": "A container of 1000 litres is filled initially with liquid upto 300 litres. There are two holes in the container, one at the bottom and another in the middle, which can drain out the liquid at 1.5 litres per minute and 1 litre per minute respectively. Additionally, two pipes are connected to the container; one is filling the container at 6 litres per minute, and the other pipe at the bottom is draining out liquid at 2.5 litres per minute. How much time will it take to completely fill the container with liquid?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10 hours",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Initially, 300 litres of liquid is present in the container, and one hole will start draining out liquid at 1.5 litres per minute, and two pipes will fill and drain liquid at 6 litres per minute and 2.5 litres per minute.\nPart 1: Filling of liquid from 300 litres to 500 litres\n=> Volume to be filled = 200 litres\n=> Net rate of filling liquid in container = +6 -2.5-1.5 = 2 litres per minute \nFilling 200 litres of liquid will take 100 minutes.\nPart 2: Filling of liquid from 500 litres to 1000 litres\n=> Volume to be filled = 500 litres\n=> Net rate of filling liquid in container = +6-2.5-1.5-1 = 1 litres per minute(as one new hole is present at the middle of the container).\nFilling 500 litres of liquid will take 500 minutes\nTherefore, total time taken to fill in the container is 600 minutes, i.e. 10 hours.\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA container of 1000 litres is filled initially with liquid upto 300 litres. There are two holes in the container, one at the bottom and another in the middle, which can drain out the liquid at 1.5 litres per minute and 1 litre per minute respectively. Additionally, two pipes are connected to the container; one is filling the container at 6 litres per minute, and the other pipe at the bottom is draining out liquid at 2.5 litres per minute. How much time will it take to completely fill the container with liquid?\n\n**Options:**\n- **A**. 8 hours\n- **B**. 7 hours\n- **C**. 9 hours\n- **D**. 10 hours ✅\n\n**Correct Answer:** null\n\n**Solution:**\nInitially, 300 litres of liquid is present in the container, and one hole will start draining out liquid at 1.5 litres per minute, and two pipes will fill and drain liquid at 6 litres per minute and 2.5 litres per minute.\nPart 1: Filling of liquid from 300 litres to 500 litres\n=> Volume to be filled = 200 litres\n=> Net rate of filling liquid in container = +6 -2.5-1.5 = 2 litres per minute \nFilling 200 litres of liquid will take 100 minutes.\nPart 2: Filling of liquid from 500 litres to 1000 litres\n=> Volume to be filled = 500 litres\n=> Net rate of filling liquid in container = +6-2.5-1.5-1 = 1 litres per minute(as one new hole is present at the middle of the container).\nFilling 500 litres of liquid will take 500 minutes\nTherefore, total time taken to fill in the container is 600 minutes, i.e. 10 hours.\nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-2",
+      "passage_text": "",
+      "question_text": "Let y>z>x be positive real numbers. What is the minimum integral value of $y+\\ \\frac{\\ 1}{x\\left(y-z\\right)\\left(z-x\\right)}$",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "Assume that, $y-z=p\\ =>\\ y=z+p$, and $z-x=q\\ =>\\ z=x+q$. Hence, $y=z+p\\ =>\\ x+q+p$. $\\ \\ y+\\ \\dfrac{\\ 1}{x\\left(y-z\\right)\\left(z-x\\right)}$ can be written as $x+p+q+\\dfrac{1}{x\\cdot p\\cdot q}$\nNow if we use $A.M\\ \\ge\\ G.M$ inequality concept,\nthen $\\ \\dfrac{\\ x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}}{4}\\ge\\ \\sqrt[\\ 4]{x\\cdot p\\cdot q\\dfrac{\\ 1}{x\\cdot p\\cdot q}}$\nThe minimum value will attain when A.M = G.M.\nTherefore,$\\ \\dfrac{\\ x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}}{4}\\ge\\ \\sqrt[\\ 4]{1}=1\\ =>x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}\\ge\\ 4$\nHence, the minimum value is 4",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet y>z>x be positive real numbers. What is the minimum integral value of $y+\\ \\frac{\\ 1}{x\\left(y-z\\right)\\left(z-x\\right)}$\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\nAssume that, $y-z=p\\ =>\\ y=z+p$, and $z-x=q\\ =>\\ z=x+q$. Hence, $y=z+p\\ =>\\ x+q+p$. $\\ \\ y+\\ \\dfrac{\\ 1}{x\\left(y-z\\right)\\left(z-x\\right)}$ can be written as $x+p+q+\\dfrac{1}{x\\cdot p\\cdot q}$\nNow if we use $A.M\\ \\ge\\ G.M$ inequality concept,\nthen $\\ \\dfrac{\\ x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}}{4}\\ge\\ \\sqrt[\\ 4]{x\\cdot p\\cdot q\\dfrac{\\ 1}{x\\cdot p\\cdot q}}$\nThe minimum value will attain when A.M = G.M.\nTherefore,$\\ \\dfrac{\\ x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}}{4}\\ge\\ \\sqrt[\\ 4]{1}=1\\ =>x+p+q+\\ \\dfrac{\\ 1}{x\\cdot p\\cdot q}\\ge\\ 4$\nHence, the minimum value is 4",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-3",
+      "passage_text": "",
+      "question_text": "The cost of 3 apples, 5 bananas and 3 oranges is Rs 85, while the cost of 4 apples, 4 bananas and 5 oranges is Rs 87. What is the cost of 5 apples, 3 bananas and 7 oranges?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs 89",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs 87",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs 85",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs 91",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "let price of apple, banana and orange be a,b and o respectively.\n3a + 5b +3o = 85 ....... (1)\n4a+ 4b +5o = 87 ........ (2)\n5a +3b +7o = ?\nMultiplying eqns (1) and (2) with constants and adding will give the required equation. \nLet us assume these constants to be m and n for equations (1) and (2), respectively.\n3m + 5n = 7  ....... (3)\n5m +4n = 3 ...... (4)\n3m + 4n = 5 ....... (5)\n(4) - (5) => 2m = -2\nm = -1 and n = 2\nSubstituting m = -1 and n = 2 will also satisfy equation (3).\nTherefore, (1)*(-1) + (2)*2 = 5a + 3b + 7o\n5a + 3b + 7o = 85(-1)+87(2) = 174 - 85 = 89\nThe price of 5 apples, 3 bananas and 7 oranges is Rs 89.\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost of 3 apples, 5 bananas and 3 oranges is Rs 85, while the cost of 4 apples, 4 bananas and 5 oranges is Rs 87. What is the cost of 5 apples, 3 bananas and 7 oranges?\n\n**Options:**\n- **A**. Rs 89 ✅\n- **B**. Rs 87\n- **C**. Rs 85\n- **D**. Rs 91\n\n**Correct Answer:** null\n\n**Solution:**\nlet price of apple, banana and orange be a,b and o respectively.\n3a + 5b +3o = 85 ....... (1)\n4a+ 4b +5o = 87 ........ (2)\n5a +3b +7o = ?\nMultiplying eqns (1) and (2) with constants and adding will give the required equation. \nLet us assume these constants to be m and n for equations (1) and (2), respectively.\n3m + 5n = 7  ....... (3)\n5m +4n = 3 ...... (4)\n3m + 4n = 5 ....... (5)\n(4) - (5) => 2m = -2\nm = -1 and n = 2\nSubstituting m = -1 and n = 2 will also satisfy equation (3).\nTherefore, (1)*(-1) + (2)*2 = 5a + 3b + 7o\n5a + 3b + 7o = 85(-1)+87(2) = 174 - 85 = 89\nThe price of 5 apples, 3 bananas and 7 oranges is Rs 89.\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-4",
+      "passage_text": "",
+      "question_text": "Find the sum of all factors of the number N = 3600, which are multiples of 10.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "11800",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11600",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11500",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "11700",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "N = 3600\nN = $2^4\\times3^2\\times5^2$\nIf a number N can be represented as N = $a^p\\times b^q\\times c^r$, then the sum of the factors of N is\nsum of all factors of N=> $\\frac{a^{p+1}-1\\ }{a-1}\\times\\frac{b^{q+1}-1\\ }{b-1}\\times\\frac{c^{r+1}-1\\ }{c-1}\\ $\nHere, N = $2^4\\times3^2\\times5^2$\nTherefore, the sum of all factors of N, which are multiple of 10 =10* $\\frac{2^{3+1}-1\\ }{2-1}\\times\\frac{3^{2+1}-1\\ }{3-1}\\times\\frac{5^{1+1}-1\\ }{5-1}\\ $  ( Taking out 10 = 2*5 from factors, and calculating sum of the factors of Number N after taking out 10)\n=>10* $15\\times13\\times6\\ $ = 11700",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of all factors of the number N = 3600, which are multiples of 10.\n\n**Options:**\n- **A**. 11800\n- **B**. 11600\n- **C**. 11500\n- **D**. 11700 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nN = 3600\nN = $2^4\\times3^2\\times5^2$\nIf a number N can be represented as N = $a^p\\times b^q\\times c^r$, then the sum of the factors of N is\nsum of all factors of N=> $\\frac{a^{p+1}-1\\ }{a-1}\\times\\frac{b^{q+1}-1\\ }{b-1}\\times\\frac{c^{r+1}-1\\ }{c-1}\\ $\nHere, N = $2^4\\times3^2\\times5^2$\nTherefore, the sum of all factors of N, which are multiple of 10 =10* $\\frac{2^{3+1}-1\\ }{2-1}\\times\\frac{3^{2+1}-1\\ }{3-1}\\times\\frac{5^{1+1}-1\\ }{5-1}\\ $  ( Taking out 10 = 2*5 from factors, and calculating sum of the factors of Number N after taking out 10)\n=>10* $15\\times13\\times6\\ $ = 11700",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-5",
+      "passage_text": "",
+      "question_text": "Jayant took a loan from HDB Finance of some amount to buy a new smartphone. If Jayant saves Rs.1833.33 monthly, he can pay off his loan compounding annually in 1 year. However, if he wishes to pay off the loan in 2 years, he finds out that he should save Rs 1008.33 monthly. Find the amount he should save monthly to pay off the loan in 3 years.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.739.44",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.749.55",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.769.66",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.789.88",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the principal loan amount be P and the rate of Interest on the loan be r.\nIt is given that to repay the loan, he should save Rs.1833.33 monthly.\n=>$P\\left(1+\\ \\frac{r}{100}\\right)$ = 1833.33 x 12\n=>$P\\left(1+\\ \\frac{r}{100}\\right)$ = 22000\nAlso, if he wants to repay the loan in two years, he save Rs.1008.33\n=>$P\\left(1+\\ \\frac{r}{100}\\right)\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 1008.33 x 24\n=>$P\\left(1+\\ \\frac{r}{100}\\right)\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 24200\n=> 22000$\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 24200\nTherefore, r = 10%\nSo, if Jayant wants to repay the loan in 3 years, he will have to pay\n=> $24200\\left(1+\\ \\frac{10}{100}\\right)$ = 26620\nTherefore, every month he should save $\\frac{\\ 26620}{36}$ = Rs.739.44\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nJayant took a loan from HDB Finance of some amount to buy a new smartphone. If Jayant saves Rs.1833.33 monthly, he can pay off his loan compounding annually in 1 year. However, if he wishes to pay off the loan in 2 years, he finds out that he should save Rs 1008.33 monthly. Find the amount he should save monthly to pay off the loan in 3 years.\n\n**Options:**\n- **A**. Rs.739.44 ✅\n- **B**. Rs.749.55\n- **C**. Rs.769.66\n- **D**. Rs.789.88\n\n**Correct Answer:** null\n\n**Solution:**\nLet the principal loan amount be P and the rate of Interest on the loan be r.\nIt is given that to repay the loan, he should save Rs.1833.33 monthly.\n=>$P\\left(1+\\ \\frac{r}{100}\\right)$ = 1833.33 x 12\n=>$P\\left(1+\\ \\frac{r}{100}\\right)$ = 22000\nAlso, if he wants to repay the loan in two years, he save Rs.1008.33\n=>$P\\left(1+\\ \\frac{r}{100}\\right)\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 1008.33 x 24\n=>$P\\left(1+\\ \\frac{r}{100}\\right)\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 24200\n=> 22000$\\left(1+\\ \\frac{r\\ }{100}\\right)$ = 24200\nTherefore, r = 10%\nSo, if Jayant wants to repay the loan in 3 years, he will have to pay\n=> $24200\\left(1+\\ \\frac{10}{100}\\right)$ = 26620\nTherefore, every month he should save $\\frac{\\ 26620}{36}$ = Rs.739.44\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-6",
+      "passage_text": "",
+      "question_text": "Ankit, a fruit seller, bought 8 dozen bananas at the rate of Rs. 20 per dozen. Out of these, 16 bananas were rotten, and he spent 40 rupees on transportation. If he sells the bananas at Rs. 3 per banana, what is his profit percentage? (Enter the closest integer)",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "The cost price of bananas for Ankit is Rs. 20 per dozen. \nThe price of 8 dozen bananas is 8*20, i.e. Rs 160 and the transportation costs are Rs.40.\nTherefore, his total spending on 8 dozen bananas is (160+40) = Rs. 200. \nOut of total 96 bananas, 16 are rotten. Therefore, he can sell 80 bananas only.\nThe selling price of one banana is 3 rupees.\nHence, the selling price of 80 bananas = 80*3 = Rs. 240\nTherefore, the profit percentage = $\\left(\\ \\frac{\\ 240-200}{200}\\right)\\times\\ 100\\%\\ =20\\%$ \nThe answer is 20.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAnkit, a fruit seller, bought 8 dozen bananas at the rate of Rs. 20 per dozen. Out of these, 16 bananas were rotten, and he spent 40 rupees on transportation. If he sells the bananas at Rs. 3 per banana, what is his profit percentage? (Enter the closest integer)\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nThe cost price of bananas for Ankit is Rs. 20 per dozen. \nThe price of 8 dozen bananas is 8*20, i.e. Rs 160 and the transportation costs are Rs.40.\nTherefore, his total spending on 8 dozen bananas is (160+40) = Rs. 200. \nOut of total 96 bananas, 16 are rotten. Therefore, he can sell 80 bananas only.\nThe selling price of one banana is 3 rupees.\nHence, the selling price of 80 bananas = 80*3 = Rs. 240\nTherefore, the profit percentage = $\\left(\\ \\frac{\\ 240-200}{200}\\right)\\times\\ 100\\%\\ =20\\%$ \nThe answer is 20.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-7",
+      "passage_text": "",
+      "question_text": "If $f\\left(x\\right)=\\ \\frac{\\ x}{3x^2+7x+12}$, for all x>0, then what is the greatest value of f(x) ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{17}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{1}{19}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{2}{19}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{2}{17}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$f\\left(x\\right)=\\ \\frac{\\ x}{3x^2+7x+12}$ can be written as $\\frac{\\ 1}{3x^{ }+7+\\ \\frac{\\ 12}{x}}$ \nf(x) is maximum when the denominator is minimum. \nUsing A.M and G.M inequalities, we can find the minimum value of $3x+\\frac{\\ 12}{x}\\ $\n$\\ \\frac{\\ 3x+\\frac{\\ 12}{x}\\ }{2}\\ge\\ \\sqrt{\\ 3x.\\ \\frac{\\ 12}{x}}=\\sqrt{\\ 36}=6$. \nThe minimum value of $\\ \\ 3x+\\frac{\\ 12}{x}\\ $ is 12. \nTherefore, the maximum value of f(x) is $\\ \\frac{\\ 1}{12+7}=\\frac{1}{19}$\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $f\\left(x\\right)=\\ \\frac{\\ x}{3x^2+7x+12}$, for all x>0, then what is the greatest value of f(x) ?\n\n**Options:**\n- **A**. $\\frac{1}{17}$\n- **B**. $\\frac{1}{19}$ ✅\n- **C**. $\\frac{2}{19}$\n- **D**. $\\frac{2}{17}$\n\n**Correct Answer:** null\n\n**Solution:**\n$f\\left(x\\right)=\\ \\frac{\\ x}{3x^2+7x+12}$ can be written as $\\frac{\\ 1}{3x^{ }+7+\\ \\frac{\\ 12}{x}}$ \nf(x) is maximum when the denominator is minimum. \nUsing A.M and G.M inequalities, we can find the minimum value of $3x+\\frac{\\ 12}{x}\\ $\n$\\ \\frac{\\ 3x+\\frac{\\ 12}{x}\\ }{2}\\ge\\ \\sqrt{\\ 3x.\\ \\frac{\\ 12}{x}}=\\sqrt{\\ 36}=6$. \nThe minimum value of $\\ \\ 3x+\\frac{\\ 12}{x}\\ $ is 12. \nTherefore, the maximum value of f(x) is $\\ \\frac{\\ 1}{12+7}=\\frac{1}{19}$\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-8",
+      "passage_text": "",
+      "question_text": "Quadrilateral ABCD is a parallelogram with sides AB = 6cm, AD = 4cm and angle ADC = 45o. Perpendicular BF intersects DC extended to F, and perpendicular DE intersects BA extended to E. What is the area of the quadrilateral EBFD?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$16\\sqrt{\\ 2}\\ +\\ 8$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$12\\sqrt{\\ 2}\\ +\\ 4$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$12\\sqrt{\\ 2}\\ +\\ 8$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Angle BCF = Angle ADC = 45o\nThus, triangle BCF is a 45-45-90 triangle with BF = CF\nLet BF = CF = x\nThus, x2\n+ x2 = 42 \n2x2\n= 16\nx = 2root2\nThus, BF = CF = 2$\\sqrt{\\ 2}$\nDF = DC + CF = 6 + 2$\\sqrt{\\ 2}$\nArea of rectangle EBFD = DF x BF = (6 + 2$\\sqrt{\\ 2}$) x 2$\\sqrt{\\ 2}$ = 12$\\sqrt{\\ 2}$ + 8\nHence, option D is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%20(102).png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nQuadrilateral ABCD is a parallelogram with sides AB = 6cm, AD = 4cm and angle ADC = 45o. Perpendicular BF intersects DC extended to F, and perpendicular DE intersects BA extended to E. What is the area of the quadrilateral EBFD?\n\n**Options:**\n- **A**. $16\\sqrt{\\ 2}\\ +\\ 8$\n- **B**. $12\\sqrt{\\ 2}\\ +\\ 4$\n- **C**. 24\n- **D**. $12\\sqrt{\\ 2}\\ +\\ 8$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nAngle BCF = Angle ADC = 45o\nThus, triangle BCF is a 45-45-90 triangle with BF = CF\nLet BF = CF = x\nThus, x2\n+ x2 = 42 \n2x2\n= 16\nx = 2root2\nThus, BF = CF = 2$\\sqrt{\\ 2}$\nDF = DC + CF = 6 + 2$\\sqrt{\\ 2}$\nArea of rectangle EBFD = DF x BF = (6 + 2$\\sqrt{\\ 2}$) x 2$\\sqrt{\\ 2}$ = 12$\\sqrt{\\ 2}$ + 8\nHence, option D is the correct answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-9",
+      "passage_text": "",
+      "question_text": "ABCDEF is a regular hexagon with a side length of 4 units. EC and EB intersect AD at G and H, respectively. Find the ratio of the length of GH to HC.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:2",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:$\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:2$\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{3}$:2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In a regular hexagon all the interior angles are of $120^{\\circ}$\nBE and CF will divide the hexagon into two equal halves, hence we can say that triangle BHC will be an equilateral triangle.\nBC = HB = CH \nHence CH = 4 units \nIn triangle CDE, CD = DE and $\\angle$CDE =$120^{\\circ}$\nIn quadrilateral HCDE, CD = DE\nSince HC = BC and all the sides of hexagon are equal, we can say that CD = DE = HC\nJust like triangle BCH, we can say that triangle FHE will also be an equilateral triangle.\nHE = FH = FE\nHence, CD = DE = HC = HE, quadrilateral HCDE will be an rhombus.\nDiagonal of rhombus bisect each other at right angle \nHG = GD = CD$\\cos60^{\\circ}$\nHG = 2 \nGH:HC = 2:4 = 1:2\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCDEF is a regular hexagon with a side length of 4 units. EC and EB intersect AD at G and H, respectively. Find the ratio of the length of GH to HC.\n\n**Options:**\n- **A**. 1:2 ✅\n- **B**. 1:$\\sqrt{3}$\n- **C**. 1:2$\\sqrt{3}$\n- **D**. $\\sqrt{3}$:2\n\n**Correct Answer:** null\n\n**Solution:**\nIn a regular hexagon all the interior angles are of $120^{\\circ}$\nBE and CF will divide the hexagon into two equal halves, hence we can say that triangle BHC will be an equilateral triangle.\nBC = HB = CH \nHence CH = 4 units \nIn triangle CDE, CD = DE and $\\angle$CDE =$120^{\\circ}$\nIn quadrilateral HCDE, CD = DE\nSince HC = BC and all the sides of hexagon are equal, we can say that CD = DE = HC\nJust like triangle BCH, we can say that triangle FHE will also be an equilateral triangle.\nHE = FH = FE\nHence, CD = DE = HC = HE, quadrilateral HCDE will be an rhombus.\nDiagonal of rhombus bisect each other at right angle \nHG = GD = CD$\\cos60^{\\circ}$\nHG = 2 \nGH:HC = 2:4 = 1:2\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-10",
+      "passage_text": "",
+      "question_text": "Ram and Laxman start running towards each other in a straight line. After crossing each other it takes them 25 seconds and 16 seconds to reach the point from where the other started. If the next time they run from the opposite ends they want to meet in the middle, which of the following must happen?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ram must increase his speed by 25%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Laxman must decrease his speed by 25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Laxman must increase his speed by 40%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Ram must decrease his speed by 40%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Speed of Ram : Speed of Laxman = $\\sqrt{\\left(\\ \\ \\ Time\\ taken\\ by\\ Laxman\\ after\\ crossing\\ :\\ Time\\ taken\\ by\\ Ram\\ after\\ crossing\\right)}$\nTherefore Ratio of speeds is 4:5\nNow to match their speeds, Ram must either increase his speed by 25% or Laxman must decrease his speed by 20%.\nTherefore Option A is correct",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam and Laxman start running towards each other in a straight line. After crossing each other it takes them 25 seconds and 16 seconds to reach the point from where the other started. If the next time they run from the opposite ends they want to meet in the middle, which of the following must happen?\n\n**Options:**\n- **A**. Ram must increase his speed by 25% ✅\n- **B**. Laxman must decrease his speed by 25%\n- **C**. Laxman must increase his speed by 40%\n- **D**. Ram must decrease his speed by 40%\n\n**Correct Answer:** null\n\n**Solution:**\nSpeed of Ram : Speed of Laxman = $\\sqrt{\\left(\\ \\ \\ Time\\ taken\\ by\\ Laxman\\ after\\ crossing\\ :\\ Time\\ taken\\ by\\ Ram\\ after\\ crossing\\right)}$\nTherefore Ratio of speeds is 4:5\nNow to match their speeds, Ram must either increase his speed by 25% or Laxman must decrease his speed by 20%.\nTherefore Option A is correct",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-11",
+      "passage_text": "",
+      "question_text": "Four right-angled triangles are cut away from the four corners of a square of side 4 cm to form a regular octagon. What is the perimeter of the octagon formed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$16\\left(\\sqrt{\\ 2}-1\\right)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$32 - 16\\sqrt{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$32\\left(\\sqrt{\\ 2}-1\\right)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$48\\left(\\sqrt{\\ 2}-1\\right)$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Octagon EFGHKLMN interior angle = $\\ \\frac{\\ \\left(8-2\\right)\\times\\ 180}{8}=135^{\\circ\\ }$ \n$\\angle\\ BGH\\ =\\ 180^{\\circ\\ }-135^{\\circ\\ }=45^{\\circ\\ }$\nSince, EFGHLKMN is regular octagon, assume that GB=BH =x cm, GH= $GH\\ =\\ \\sqrt{\\ GB^2+BH^2}=\\sqrt{\\ x^2+x^2}=x\\sqrt{\\ 2}cm$ ($\\angle\\ GBH=90^{\\circ\\ }$)\nSince AF+BG+FG = AB and GH=FG = $x\\sqrt{\\ 2}$ cm ( since it is a regular octagon). \n$x\\sqrt{\\ 2}+x+x\\ =4\\ =>\\ x=\\ \\frac{\\ 4}{2+\\sqrt{\\ 2}}=2\\left(2-\\sqrt{\\ 2}\\right)=4-2\\sqrt{\\ 2}$ cm\nSide of an octagon = $x\\sqrt{\\ 2}$ cm = $\\ x\\sqrt{\\ 2}=\\left(4-2\\sqrt{\\ 2}\\right)\\sqrt{\\ 2}=4\\sqrt{\\ 2}-4$ cm\nPerimeter of octagon = $8\\times\\ x\\sqrt{\\ 2}=8\\left(4\\sqrt{\\ 2}-4\\right)=32\\left(\\sqrt{\\ 2}-1\\right)$ cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour right-angled triangles are cut away from the four corners of a square of side 4 cm to form a regular octagon. What is the perimeter of the octagon formed?\n\n**Options:**\n- **A**. $16\\left(\\sqrt{\\ 2}-1\\right)$\n- **B**. $32 - 16\\sqrt{2}$\n- **C**. $32\\left(\\sqrt{\\ 2}-1\\right)$ ✅\n- **D**. $48\\left(\\sqrt{\\ 2}-1\\right)$\n\n**Correct Answer:** null\n\n**Solution:**\nOctagon EFGHKLMN interior angle = $\\ \\frac{\\ \\left(8-2\\right)\\times\\ 180}{8}=135^{\\circ\\ }$ \n$\\angle\\ BGH\\ =\\ 180^{\\circ\\ }-135^{\\circ\\ }=45^{\\circ\\ }$\nSince, EFGHLKMN is regular octagon, assume that GB=BH =x cm, GH= $GH\\ =\\ \\sqrt{\\ GB^2+BH^2}=\\sqrt{\\ x^2+x^2}=x\\sqrt{\\ 2}cm$ ($\\angle\\ GBH=90^{\\circ\\ }$)\nSince AF+BG+FG = AB and GH=FG = $x\\sqrt{\\ 2}$ cm ( since it is a regular octagon). \n$x\\sqrt{\\ 2}+x+x\\ =4\\ =>\\ x=\\ \\frac{\\ 4}{2+\\sqrt{\\ 2}}=2\\left(2-\\sqrt{\\ 2}\\right)=4-2\\sqrt{\\ 2}$ cm\nSide of an octagon = $x\\sqrt{\\ 2}$ cm = $\\ x\\sqrt{\\ 2}=\\left(4-2\\sqrt{\\ 2}\\right)\\sqrt{\\ 2}=4\\sqrt{\\ 2}-4$ cm\nPerimeter of octagon = $8\\times\\ x\\sqrt{\\ 2}=8\\left(4\\sqrt{\\ 2}-4\\right)=32\\left(\\sqrt{\\ 2}-1\\right)$ cm",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-12",
+      "passage_text": "",
+      "question_text": "$P=\\log_{10}\\left(\\dfrac{1}{2}\\right)+\\log_{10}\\left(\\dfrac{2}{3}\\right)+.......$ 100 terms and $Q=\\log_{10}\\left(125\\right)^{\\dfrac{1}{6}}+\\dfrac{\\log_{64}\\left(8\\right)}{1+\\log_5\\left(2\\right)}$. Find $\\dfrac{P}{Q}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{\\log_{10}\\left(\\dfrac{100}{101}\\right)}{1+\\log_52}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$-\\log_5\\left(101\\right)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{-\\log_{10}\\left(\\dfrac{101}{99}\\right)}{\\log_{10}5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{-\\log_{10}\\left(\\dfrac{1}{101}\\right)}{1+\\log_52}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$=\\log\\ \\left(\\dfrac{1}{2}\\right)+\\log\\ \\left(\\dfrac{2}{3}\\right)+....+\\log\\ \\left(\\dfrac{100}{101}\\right)$\n$=\\log\\ \\left(\\dfrac{1}{2}\\times\\ \\dfrac{2}{3}\\times\\ \\dfrac{3}{4}\\times\\ ....\\times\\ \\dfrac{100}{101}\\right)$\n$=\\log\\ \\left(\\dfrac{1}{101}\\right)$....(1)\n$Q=\\log_{10}\\left(125\\right)^{\\dfrac{1}{6}}+\\dfrac{\\log_{64}\\left(8\\right)}{1+\\log_5\\left(2\\right)}$\n$Q=\\log_{10}\\left(5\\right)^{\\dfrac{3}{6}}+\\dfrac{\\log_{2^6}2^3}{1+\\log_5\\left(2\\right)}$\n$Q=\\dfrac{1}{2}\\log_{10}\\ 5+\\dfrac{\\dfrac{1}{2}\\log_22}{1+\\log_5\\left(2\\right)}$\n$Q=\\dfrac{1}{2}\\left(\\log_{10}\\ 5+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ 10}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ \\left(5\\times\\ 2\\right)}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ 5\\ +\\log_5\\ 2}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{1+\\log_5\\ 2}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{2}{1+\\log_5\\ 2}\\right)$\n$Q=\\dfrac{1}{1+\\log_5\\ 2}=\\log_{10}5$\n$\\dfrac{P}{Q}=\\dfrac{\\log_{10}\\left(\\dfrac{1}{101}\\right)}{\\log_{10}\\ 5}=\\log_5\\left(\\dfrac{1}{101}\\right)=-\\log_5\\left(101\\right)$\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n$P=\\log_{10}\\left(\\dfrac{1}{2}\\right)+\\log_{10}\\left(\\dfrac{2}{3}\\right)+.......$ 100 terms and $Q=\\log_{10}\\left(125\\right)^{\\dfrac{1}{6}}+\\dfrac{\\log_{64}\\left(8\\right)}{1+\\log_5\\left(2\\right)}$. Find $\\dfrac{P}{Q}$\n\n**Options:**\n- **A**. $\\dfrac{\\log_{10}\\left(\\dfrac{100}{101}\\right)}{1+\\log_52}$\n- **B**. $-\\log_5\\left(101\\right)$ ✅\n- **C**. $\\dfrac{-\\log_{10}\\left(\\dfrac{101}{99}\\right)}{\\log_{10}5}$\n- **D**. $\\dfrac{-\\log_{10}\\left(\\dfrac{1}{101}\\right)}{1+\\log_52}$\n\n**Correct Answer:** null\n\n**Solution:**\n$=\\log\\ \\left(\\dfrac{1}{2}\\right)+\\log\\ \\left(\\dfrac{2}{3}\\right)+....+\\log\\ \\left(\\dfrac{100}{101}\\right)$\n$=\\log\\ \\left(\\dfrac{1}{2}\\times\\ \\dfrac{2}{3}\\times\\ \\dfrac{3}{4}\\times\\ ....\\times\\ \\dfrac{100}{101}\\right)$\n$=\\log\\ \\left(\\dfrac{1}{101}\\right)$....(1)\n$Q=\\log_{10}\\left(125\\right)^{\\dfrac{1}{6}}+\\dfrac{\\log_{64}\\left(8\\right)}{1+\\log_5\\left(2\\right)}$\n$Q=\\log_{10}\\left(5\\right)^{\\dfrac{3}{6}}+\\dfrac{\\log_{2^6}2^3}{1+\\log_5\\left(2\\right)}$\n$Q=\\dfrac{1}{2}\\log_{10}\\ 5+\\dfrac{\\dfrac{1}{2}\\log_22}{1+\\log_5\\left(2\\right)}$\n$Q=\\dfrac{1}{2}\\left(\\log_{10}\\ 5+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ 10}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ \\left(5\\times\\ 2\\right)}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{\\log_5\\ 5\\ +\\log_5\\ 2}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{1}{1+\\log_5\\ 2}+\\dfrac{1}{1+\\log_52}\\right)$\n$Q=\\dfrac{1}{2}\\left(\\dfrac{2}{1+\\log_5\\ 2}\\right)$\n$Q=\\dfrac{1}{1+\\log_5\\ 2}=\\log_{10}5$\n$\\dfrac{P}{Q}=\\dfrac{\\log_{10}\\left(\\dfrac{1}{101}\\right)}{\\log_{10}\\ 5}=\\log_5\\left(\\dfrac{1}{101}\\right)=-\\log_5\\left(101\\right)$\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-13",
+      "passage_text": "",
+      "question_text": "Abhinandan buys three types of cashews 15 kg of prime, 5 kilograms of supreme and 2 kg of the royal brand. It is given that prices of 35 kg prime cashews and 20 kilograms of supreme and 8 kg royal brands are equal. If he mixes all three brands and sells them at a profit of 40% for which, he gets Rs.15,288. What is the price of 1 Kg of Prime cashews?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 588",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 488",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 436",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 336",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the price of prime, supreme and royal brand cashews be x, y, z per kg, respectively.\n=> It is given 35 kg prime = 20 kg supreme = 8 kg royal\nLCM of 35, 20 and 8 is 280.\nLet us assume, 35 kg prime = 20 kg supreme = 8 kg royal = 280k\n=> 35x = 20y = 8z = 280 k\nThus, x = 8k, y = 14k and z = 35k\nTherefore, the cost of 15 kg of prime, 5 kg of supreme and 2 kg of Royal brand = 15*8k + 5*14k + 2*35k = 260k\nSelling at 40% profit, he gets Rs. 15,288\nThus, 1.4(260k) = 15288\n=> 364k = 15288\nTherefore, k = 42\nx = Rs. 336 , y = Rs. 588 and z = Rs. 1470\nThus, the price of 1 kg prime cashews is x = Rs. 336",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAbhinandan buys three types of cashews 15 kg of prime, 5 kilograms of supreme and 2 kg of the royal brand. It is given that prices of 35 kg prime cashews and 20 kilograms of supreme and 8 kg royal brands are equal. If he mixes all three brands and sells them at a profit of 40% for which, he gets Rs.15,288. What is the price of 1 Kg of Prime cashews?\n\n**Options:**\n- **A**. Rs. 588\n- **B**. Rs. 488\n- **C**. Rs. 436\n- **D**. Rs. 336 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the price of prime, supreme and royal brand cashews be x, y, z per kg, respectively.\n=> It is given 35 kg prime = 20 kg supreme = 8 kg royal\nLCM of 35, 20 and 8 is 280.\nLet us assume, 35 kg prime = 20 kg supreme = 8 kg royal = 280k\n=> 35x = 20y = 8z = 280 k\nThus, x = 8k, y = 14k and z = 35k\nTherefore, the cost of 15 kg of prime, 5 kg of supreme and 2 kg of Royal brand = 15*8k + 5*14k + 2*35k = 260k\nSelling at 40% profit, he gets Rs. 15,288\nThus, 1.4(260k) = 15288\n=> 364k = 15288\nTherefore, k = 42\nx = Rs. 336 , y = Rs. 588 and z = Rs. 1470\nThus, the price of 1 kg prime cashews is x = Rs. 336",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-14",
+      "passage_text": "",
+      "question_text": "A word is formed using 6-letter and 2-number using the letters R, O, A, N, M, D, 1 and 2 such that all the alphabets are placed first, and numbers are placed at the end. (ROANMD12, ROANMD21). What will be the rank of the word \"RANDOM12\" if all words are arranged in alphabetical order and numbers are put in sequential order \n\n(Rank1- ADMNOR12, Rank2- ADMNOR21....and so on)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1225",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1227",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1229",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1231",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us arrange all alphabets in ascending order - A, D, M, N, O, R and numbers 1, 2\nTotal Words starting with alphabet A = A, _, _, _, _, _, _, _\n=> 5!x2! (5! for arranging D, M, N, O, R and 2! for arranging 1 and 2)\nSimilarly, total number of words starting with the alphabets D, M, N, O is 4 x (5! X 2!).\nWe have to find the rank of RANDOM21.\nTotal words starting with RAD = 3!2! = 12\nSimilarly, total words starting with RAM = 12\nWords beginning with RAN (12) = RANDMO12, RANDMO21, RANDOM12\nSo, the rank of the word RANDOM12 will be = 5 x (5! x 2!) + 12 + 12 + 3 = 1227\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA word is formed using 6-letter and 2-number using the letters R, O, A, N, M, D, 1 and 2 such that all the alphabets are placed first, and numbers are placed at the end. (ROANMD12, ROANMD21). What will be the rank of the word \"RANDOM12\" if all words are arranged in alphabetical order and numbers are put in sequential order \n\n(Rank1- ADMNOR12, Rank2- ADMNOR21....and so on)\n\n**Options:**\n- **A**. 1225\n- **B**. 1227 ✅\n- **C**. 1229\n- **D**. 1231\n\n**Correct Answer:** null\n\n**Solution:**\nLet us arrange all alphabets in ascending order - A, D, M, N, O, R and numbers 1, 2\nTotal Words starting with alphabet A = A, _, _, _, _, _, _, _\n=> 5!x2! (5! for arranging D, M, N, O, R and 2! for arranging 1 and 2)\nSimilarly, total number of words starting with the alphabets D, M, N, O is 4 x (5! X 2!).\nWe have to find the rank of RANDOM21.\nTotal words starting with RAD = 3!2! = 12\nSimilarly, total words starting with RAM = 12\nWords beginning with RAN (12) = RANDMO12, RANDMO21, RANDOM12\nSo, the rank of the word RANDOM12 will be = 5 x (5! x 2!) + 12 + 12 + 3 = 1227\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-15",
+      "passage_text": "",
+      "question_text": "Aman's net worth is 2/3rd of Bharat's, and Bharat's net worth is 3/4th of Chandan's. If Chandan's net worth is 2/5th of the combined net worth of Dipesh and Eklavya, and the net worth of Dipesh and Eklavya is in a ratio of 3:7, Find the total net worth of all friends, given that Dipesh's net worth is 87 lakhs.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "531 Lakhs",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "541 Lakhs",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "551 Lakhs",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "561 Lakhs",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that Dipesh's net worth is 87 lakhs, and the ratio of Dipesh and Eklavya's net worth is in a ratio of 3:7\nTherefore, dipesh's net-worth = 3x = 87 \nx= 29 lakh\nSo, net-worth of Eklavya is = 7x = 7*29 = 203 lakh\nAlso, Chandan's net-worth is 2/5th of dipesh and eklavya = (2/5)*(203+87) = (2/5)*290 = 116 lakhs\nBharat's net worth is 3/4th of Chandan's networth \nThat is Bharat's net-worth = (3/4)*(116) = 87 lakhs\nAnd Aman's net worth is 2/3rd of Bharat's networth \n=> Aman's net-worth = (2/3)*87 = 58 Lakhs\nTherefore the net worth of all five friends = 58+87+116+87+203 = 551 lakhs",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAman's net worth is 2/3rd of Bharat's, and Bharat's net worth is 3/4th of Chandan's. If Chandan's net worth is 2/5th of the combined net worth of Dipesh and Eklavya, and the net worth of Dipesh and Eklavya is in a ratio of 3:7, Find the total net worth of all friends, given that Dipesh's net worth is 87 lakhs.\n\n**Options:**\n- **A**. 531 Lakhs\n- **B**. 541 Lakhs\n- **C**. 551 Lakhs ✅\n- **D**. 561 Lakhs\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that Dipesh's net worth is 87 lakhs, and the ratio of Dipesh and Eklavya's net worth is in a ratio of 3:7\nTherefore, dipesh's net-worth = 3x = 87 \nx= 29 lakh\nSo, net-worth of Eklavya is = 7x = 7*29 = 203 lakh\nAlso, Chandan's net-worth is 2/5th of dipesh and eklavya = (2/5)*(203+87) = (2/5)*290 = 116 lakhs\nBharat's net worth is 3/4th of Chandan's networth \nThat is Bharat's net-worth = (3/4)*(116) = 87 lakhs\nAnd Aman's net worth is 2/3rd of Bharat's networth \n=> Aman's net-worth = (2/3)*87 = 58 Lakhs\nTherefore the net worth of all five friends = 58+87+116+87+203 = 551 lakhs",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-16",
+      "passage_text": "",
+      "question_text": "If $\\alpha\\ ,\\beta\\ $ are the roots of the equation $7x^2-25x+12=0$, find the equation whose roots are $\\ \\frac{\\ 1-\\alpha\\ }{1+\\alpha\\ },\\ \\frac{1-\\beta\\ \\ }{1+\\beta\\ }$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$12x^2-38x-22=0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$12x^2+38x+22=0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$22x^2-5x-3=0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$22x^2+5x-3=0$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$7x^2-25x+12=0\\ $ \n$7x^2-21x-4x+12=0$\n$7x\\left(x-3\\right)-4\\left(x-3\\right)=0$\n$\\left(7x-4\\right)\\left(x-3\\right)=0$\nx = 3 or x = $\\frac{4}{7}$\n$\\ \\frac{\\ 1-\\alpha\\ }{1+\\alpha\\ }=\\ \\frac{\\ 1-3}{1+3}=-\\ \\frac{\\ 1}{2}\\ \\ and\\ \\ \\frac{\\ 1-\\beta\\ }{1+\\beta\\ }=\\ \\frac{\\ 1-\\ \\frac{\\ 4}{7}}{1\\ +\\ \\ \\frac{\\ 4}{7}}=\\ \\frac{\\ 3}{11}$ \nTherefore, required equation is $k\\left(x+\\ \\frac{\\ 1}{2}\\right)\\left(x-\\ \\frac{\\ 3}{11}\\right)=0$ \n$=>\\ k\\left(\\ \\frac{\\ 2x+1}{2}\\right)\\left(\\ \\frac{\\ 11x-3}{11}\\right)=0\\ =>k\\left(22x^2+5x-3\\right)=0$ , where k is a real number\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\alpha\\ ,\\beta\\ $ are the roots of the equation $7x^2-25x+12=0$, find the equation whose roots are $\\ \\frac{\\ 1-\\alpha\\ }{1+\\alpha\\ },\\ \\frac{1-\\beta\\ \\ }{1+\\beta\\ }$\n\n**Options:**\n- **A**. $12x^2-38x-22=0$\n- **B**. $12x^2+38x+22=0$\n- **C**. $22x^2-5x-3=0$\n- **D**. $22x^2+5x-3=0$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$7x^2-25x+12=0\\ $ \n$7x^2-21x-4x+12=0$\n$7x\\left(x-3\\right)-4\\left(x-3\\right)=0$\n$\\left(7x-4\\right)\\left(x-3\\right)=0$\nx = 3 or x = $\\frac{4}{7}$\n$\\ \\frac{\\ 1-\\alpha\\ }{1+\\alpha\\ }=\\ \\frac{\\ 1-3}{1+3}=-\\ \\frac{\\ 1}{2}\\ \\ and\\ \\ \\frac{\\ 1-\\beta\\ }{1+\\beta\\ }=\\ \\frac{\\ 1-\\ \\frac{\\ 4}{7}}{1\\ +\\ \\ \\frac{\\ 4}{7}}=\\ \\frac{\\ 3}{11}$ \nTherefore, required equation is $k\\left(x+\\ \\frac{\\ 1}{2}\\right)\\left(x-\\ \\frac{\\ 3}{11}\\right)=0$ \n$=>\\ k\\left(\\ \\frac{\\ 2x+1}{2}\\right)\\left(\\ \\frac{\\ 11x-3}{11}\\right)=0\\ =>k\\left(22x^2+5x-3\\right)=0$ , where k is a real number\nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-17",
+      "passage_text": "",
+      "question_text": "A manager bought 1000 gms of potato chips for 1000 rupees. He distributed 1000gms of chips equally in 25 packets, decided to sell them at a 10% discount and used an overweighing machine showing 25% more weight than the actual weight. Find his overall profit percentage.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12.5%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16.66%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A manager bought 1000 gms of chips for 1000 rupees. He equally distributed 1000 gm of chips in 25 packets, which implies the actual weight of each packet is (1000/25) = 40 gms.\nBut he uses an overweighing machine, which shows 25% more weight than the actual weight. Hence, the customer thinks that the weight of each packet is (40*5/4) = 50 gm. The cost price of 50 gm chips is 50 rupees.\nHe gives a discount of 10%, which implies the selling price of 50 gm of chips is 45 rupees ( according to the customer).\nBut he actually sells 40 gms of chips for 45 rupees, which implies he will sell 1000 gm of chips for (45/40)*1000 = 1125 rupees.\nHence, the overall profit percentage is {(1125-1000)/1000}*100% = 12.5%\nThe correct option is C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA manager bought 1000 gms of potato chips for 1000 rupees. He distributed 1000gms of chips equally in 25 packets, decided to sell them at a 10% discount and used an overweighing machine showing 25% more weight than the actual weight. Find his overall profit percentage.\n\n**Options:**\n- **A**. 20%\n- **B**. 25%\n- **C**. 12.5% ✅\n- **D**. 16.66%\n\n**Correct Answer:** null\n\n**Solution:**\nA manager bought 1000 gms of chips for 1000 rupees. He equally distributed 1000 gm of chips in 25 packets, which implies the actual weight of each packet is (1000/25) = 40 gms.\nBut he uses an overweighing machine, which shows 25% more weight than the actual weight. Hence, the customer thinks that the weight of each packet is (40*5/4) = 50 gm. The cost price of 50 gm chips is 50 rupees.\nHe gives a discount of 10%, which implies the selling price of 50 gm of chips is 45 rupees ( according to the customer).\nBut he actually sells 40 gms of chips for 45 rupees, which implies he will sell 1000 gm of chips for (45/40)*1000 = 1125 rupees.\nHence, the overall profit percentage is {(1125-1000)/1000}*100% = 12.5%\nThe correct option is C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-18",
+      "passage_text": "",
+      "question_text": "The car travels from A to B, B to C and finally, C to D with distance ratios AB : BC : CD = 2:x:4 and time ratios for covering AB, BC, and CD equal to 4:2:y. It is known that the total time taken to cover AC is 24 hours, and the total distance between CD is 880 km. The average speed of the car from A to D is 55 km/hr. What is the relation between x and y?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$y=2x$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$y=\\dfrac{x}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$y=\\dfrac{3x}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$y=x$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the time ratio to cover cities AB, BC and CD be 4t, 2t and yt\nIt is given that CD is 880 km, i.e. 4a = 880 km (As Distance ratio is 2:x:4)\na = 220 km\nHence, the distance between BC is 220x\nAlso, the time taken to cover AC is 24 hrs, i.e. 6t = 24 hrs\nt = 4 hrs\nTherefore, Average speed of car = (Total distance travelled)/(Total time taken)\n=> Total distance = AB+BC +CD = 2*220+x*220+880 = 1320+220x km\n=> Total time taken = 24+y*4 = 24+4y hrs\nTherefore, average speed = (1320+220x)/(24+4y) = 55km/hr\n=> (330+55x)/(6+y) = 55\n=> 55x = 55y\n=> x = y",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe car travels from A to B, B to C and finally, C to D with distance ratios AB : BC : CD = 2:x:4 and time ratios for covering AB, BC, and CD equal to 4:2:y. It is known that the total time taken to cover AC is 24 hours, and the total distance between CD is 880 km. The average speed of the car from A to D is 55 km/hr. What is the relation between x and y?\n\n**Options:**\n- **A**. $y=2x$\n- **B**. $y=\\dfrac{x}{2}$\n- **C**. $y=\\dfrac{3x}{2}$\n- **D**. $y=x$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the time ratio to cover cities AB, BC and CD be 4t, 2t and yt\nIt is given that CD is 880 km, i.e. 4a = 880 km (As Distance ratio is 2:x:4)\na = 220 km\nHence, the distance between BC is 220x\nAlso, the time taken to cover AC is 24 hrs, i.e. 6t = 24 hrs\nt = 4 hrs\nTherefore, Average speed of car = (Total distance travelled)/(Total time taken)\n=> Total distance = AB+BC +CD = 2*220+x*220+880 = 1320+220x km\n=> Total time taken = 24+y*4 = 24+4y hrs\nTherefore, average speed = (1320+220x)/(24+4y) = 55km/hr\n=> (330+55x)/(6+y) = 55\n=> 55x = 55y\n=> x = y",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-19",
+      "passage_text": "",
+      "question_text": "A circle is drawn with centre O. The length of the tangent AB = $4\\sqrt{\\ 3}m$. If $\\angle\\ BAD\\ =30^{\\circ\\ }\\ $, Find the length of AD in m.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2\\sqrt{\\ 3}-1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{\\ 3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that AB is a tangent and BC is the diameter. Hence $\\angle\\ ABC=90^{\\circ\\ }$.\nIn the right-angled triangle ABC, \n$\\cos\\left(30^{\\circ\\ }\\right)=\\frac{AB}{AC}$\n$\\frac{\\sqrt{\\ 3}}{2}=\\frac{4\\sqrt{\\ 3}}{AC}$\n$AC=8\\ m$\n$\\tan\\left(30^{\\circ\\ }\\right)=\\frac{BC}{4\\sqrt{\\ 3}}$\n$\\frac{1}{\\sqrt{\\ 3}}=\\frac{BC}{4\\sqrt{\\ 3}}$\n$BC=4$\nUsing the theorem, $AB^2=AD\\times\\ AC$\n$\\left(4\\sqrt{\\ 3}\\right)^2=AD\\times\\ 8$\n$48=AD\\times\\ 8$\n$AD=6\\ m$\nAlternate Explanation:                             \nUsing the sum of all angles in a triangle is $180^{\\circ\\ }$, $\\angle\\ BCA=60^{\\circ\\ }$.\nIn the right-angled triangle ABC, \n$\\cos\\left(30^{\\circ\\ }\\right)=\\frac{AB}{AC}$\n$\\frac{\\sqrt{\\ 3}}{2}=\\frac{4\\sqrt{\\ 3}}{AC}$\n$AC=8\\ m$\n$\\tan\\left(30^{\\circ\\ }\\right)=\\frac{BC}{4\\sqrt{\\ 3}}$\n$\\frac{1}{\\sqrt{\\ 3}}=\\frac{BC}{4\\sqrt{\\ 3}}$\n$BC=4$\nHence radius of the circle = $\\frac{BC}{2}=\\frac{4}{2}=2\\ m$\nAfter joining OD, we get $\\triangle\\ $ODC.\nIn $\\triangle\\ $ODC, $OD=OC$. \nIt implies $\\angle\\ OCD=\\angle\\ ODC=60^{\\circ}$. Hence, $\\angle\\ COD$ is also $60^{\\circ\\ }$.\nIn equilateral $\\triangle\\ ODC$, OC = CD = radius of the circle = 2 m.\nThe length of AD = AC - CD = 8 - 2 = 6 m.\nThe answer is Option (A).",
+      "image_url": "https://cracku.in/media/uploads/image_sWsLhmt.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle is drawn with centre O. The length of the tangent AB = $4\\sqrt{\\ 3}m$. If $\\angle\\ BAD\\ =30^{\\circ\\ }\\ $, Find the length of AD in m.\n\n**Options:**\n- **A**. 6 ✅\n- **B**. $2\\sqrt{\\ 3}-1$\n- **C**. 4\n- **D**. $\\sqrt{\\ 3}$\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that AB is a tangent and BC is the diameter. Hence $\\angle\\ ABC=90^{\\circ\\ }$.\nIn the right-angled triangle ABC, \n$\\cos\\left(30^{\\circ\\ }\\right)=\\frac{AB}{AC}$\n$\\frac{\\sqrt{\\ 3}}{2}=\\frac{4\\sqrt{\\ 3}}{AC}$\n$AC=8\\ m$\n$\\tan\\left(30^{\\circ\\ }\\right)=\\frac{BC}{4\\sqrt{\\ 3}}$\n$\\frac{1}{\\sqrt{\\ 3}}=\\frac{BC}{4\\sqrt{\\ 3}}$\n$BC=4$\nUsing the theorem, $AB^2=AD\\times\\ AC$\n$\\left(4\\sqrt{\\ 3}\\right)^2=AD\\times\\ 8$\n$48=AD\\times\\ 8$\n$AD=6\\ m$\nAlternate Explanation:                             \nUsing the sum of all angles in a triangle is $180^{\\circ\\ }$, $\\angle\\ BCA=60^{\\circ\\ }$.\nIn the right-angled triangle ABC, \n$\\cos\\left(30^{\\circ\\ }\\right)=\\frac{AB}{AC}$\n$\\frac{\\sqrt{\\ 3}}{2}=\\frac{4\\sqrt{\\ 3}}{AC}$\n$AC=8\\ m$\n$\\tan\\left(30^{\\circ\\ }\\right)=\\frac{BC}{4\\sqrt{\\ 3}}$\n$\\frac{1}{\\sqrt{\\ 3}}=\\frac{BC}{4\\sqrt{\\ 3}}$\n$BC=4$\nHence radius of the circle = $\\frac{BC}{2}=\\frac{4}{2}=2\\ m$\nAfter joining OD, we get $\\triangle\\ $ODC.\nIn $\\triangle\\ $ODC, $OD=OC$. \nIt implies $\\angle\\ OCD=\\angle\\ ODC=60^{\\circ}$. Hence, $\\angle\\ COD$ is also $60^{\\circ\\ }$.\nIn equilateral $\\triangle\\ ODC$, OC = CD = radius of the circle = 2 m.\nThe length of AD = AC - CD = 8 - 2 = 6 m.\nThe answer is Option (A).",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-20",
+      "passage_text": "",
+      "question_text": "Chetan and Ajay are two employess of ABC Pvt Ltd. They are working on the same type of project. If Chetan's work efficiency is, two-thirds of Ajay and Chetan's working hours are three-fifths more than Ajay's. ABC Pvt Ltd. develops a tool to identify the productivity of employees, where the productivity is given as \n\nProductivity = $kT^2n$  \n\nT = working hours and n = work efficiency\n\nWhat is the ratio of the productivity of Ajay to that of Chetan?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50:192",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "75:128",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "81:49",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "49:81",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let Ajay's work efficiency be 3x, and Chetan's work efficiency will be 2x\nWorking hours of Ajay be 5t, and Chetan's working hours will be 8t\nProductivity = $kT^2n$\n=> Ajay's productivity = $k\\ \\times\\ \\left(5t\\right)^2\\times\\ \\left(3x\\right)$\n=> 75ktx\n=> Chetan's productivity = $k\\ \\times\\ \\left(8t\\right)^2\\times\\ \\left(2x\\right)$\n=> 128ktx\nThe ratio of productivity of Ajay and Chetan = 75:128\n=> 75:128 \nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nChetan and Ajay are two employess of ABC Pvt Ltd. They are working on the same type of project. If Chetan's work efficiency is, two-thirds of Ajay and Chetan's working hours are three-fifths more than Ajay's. ABC Pvt Ltd. develops a tool to identify the productivity of employees, where the productivity is given as \n\nProductivity = $kT^2n$  \n\nT = working hours and n = work efficiency\n\nWhat is the ratio of the productivity of Ajay to that of Chetan?\n\n**Options:**\n- **A**. 50:192\n- **B**. 75:128 ✅\n- **C**. 81:49\n- **D**. 49:81\n\n**Correct Answer:** null\n\n**Solution:**\nLet Ajay's work efficiency be 3x, and Chetan's work efficiency will be 2x\nWorking hours of Ajay be 5t, and Chetan's working hours will be 8t\nProductivity = $kT^2n$\n=> Ajay's productivity = $k\\ \\times\\ \\left(5t\\right)^2\\times\\ \\left(3x\\right)$\n=> 75ktx\n=> Chetan's productivity = $k\\ \\times\\ \\left(8t\\right)^2\\times\\ \\left(2x\\right)$\n=> 128ktx\nThe ratio of productivity of Ajay and Chetan = 75:128\n=> 75:128 \nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-21",
+      "passage_text": "",
+      "question_text": "A, B, and C are working together on a project. B is two-thirds as efficient as A, and C is five-eighths as efficient as B. If it takes A, B, and C 24 days to finish the project together, how long will it take them to complete the same project if A and C increase their efficiency by 25% and 60%, respectively, while B's efficiency decreases by 12.5%?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20 days",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "22 days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16 days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the efficiency of A is 24x units/day.\nThe efficiency of B will be 16x units/day (2/3rd efficient as A = (2/3)*24x = 16x units/day)\nAlso, the efficiency of C will be 10x units/day (5/8th efficient as B = (5/8)*16x = 10x units/day)\nTotal work done by A, B and C in 24 days = 24*(24x+16x+10x) = 1200x units\nTherefore, total work units = 1200x\nNow, the efficiency of A is increased by 25%; the new efficiency will be 30x units/day (1.25*24x = 30x)\nSimilarly, the new efficiency of B is decreased by 12.5%; the new efficiency will be 14x units/day (0.875*16x = 14x )\nAlso, the new efficiency of C is increased by 60%; the new efficiency of C will be 16x units/day (1.6*10x = 16x)\nTherefore, to complete 1200x units of work, the total number of days required\n=> 1200x/(30x+14x+16x) = 1200/60 = 20 days\nTherefore, with new efficiencies, A, B and C will take 20 days to complete the work.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B, and C are working together on a project. B is two-thirds as efficient as A, and C is five-eighths as efficient as B. If it takes A, B, and C 24 days to finish the project together, how long will it take them to complete the same project if A and C increase their efficiency by 25% and 60%, respectively, while B's efficiency decreases by 12.5%?\n\n**Options:**\n- **A**. 18 days\n- **B**. 20 days ✅\n- **C**. 22 days\n- **D**. 16 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of A is 24x units/day.\nThe efficiency of B will be 16x units/day (2/3rd efficient as A = (2/3)*24x = 16x units/day)\nAlso, the efficiency of C will be 10x units/day (5/8th efficient as B = (5/8)*16x = 10x units/day)\nTotal work done by A, B and C in 24 days = 24*(24x+16x+10x) = 1200x units\nTherefore, total work units = 1200x\nNow, the efficiency of A is increased by 25%; the new efficiency will be 30x units/day (1.25*24x = 30x)\nSimilarly, the new efficiency of B is decreased by 12.5%; the new efficiency will be 14x units/day (0.875*16x = 14x )\nAlso, the new efficiency of C is increased by 60%; the new efficiency of C will be 16x units/day (1.6*10x = 16x)\nTherefore, to complete 1200x units of work, the total number of days required\n=> 1200x/(30x+14x+16x) = 1200/60 = 20 days\nTherefore, with new efficiencies, A, B and C will take 20 days to complete the work.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-21-22",
+      "passage_text": "",
+      "question_text": "Consider two dice, D1 and D2. D1 is a standard dice, which, when rolled, can produce any value between 1 and 6 inclusive, while D2 is a dice with even numbers only, containing only 2, 4, and 6, with identical values on opposite faces. What is the probability that when both dice are rolled, their sum will be greater than or equal to 6?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{3}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{7}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{4}{5}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Dice D1 has outcomes = {1,2,3,4,5,6}\nDice D2 has outcomes = {2,4,6}\nTotal number of outcomes(m) when both of them are rolled = 6 x 3 = 18 \n=> Outcomes are (1,2), (1,4), (1,6), (2,2), (2,4), (2,6), (3,2), (3,4), (3,6), (4,2), (4,4), (4,6), (5,2), (5,4), (5,6), (6,2), (6,4), and (6,6).\nThe outcomes whose sum is less than 6 are (1,2), (1,4), (2,2), and (3,2).\nThe number of outcomes whose sum is less than 6 is 4.\nTherefore, the number of outcomes(n) who sum is greater than or equal to 6 is 18-4, i.e. 14.\nRequired probability = $\\dfrac{n}{m}$ =$\\dfrac{14}{18}=0.78$\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider two dice, D1 and D2. D1 is a standard dice, which, when rolled, can produce any value between 1 and 6 inclusive, while D2 is a dice with even numbers only, containing only 2, 4, and 6, with identical values on opposite faces. What is the probability that when both dice are rolled, their sum will be greater than or equal to 6?\n\n**Options:**\n- **A**. $\\dfrac{2}{3}$\n- **B**. $\\dfrac{3}{4}$\n- **C**. $\\dfrac{7}{9}$ ✅\n- **D**. $\\dfrac{4}{5}$\n\n**Correct Answer:** null\n\n**Solution:**\nDice D1 has outcomes = {1,2,3,4,5,6}\nDice D2 has outcomes = {2,4,6}\nTotal number of outcomes(m) when both of them are rolled = 6 x 3 = 18 \n=> Outcomes are (1,2), (1,4), (1,6), (2,2), (2,4), (2,6), (3,2), (3,4), (3,6), (4,2), (4,4), (4,6), (5,2), (5,4), (5,6), (6,2), (6,4), and (6,6).\nThe outcomes whose sum is less than 6 are (1,2), (1,4), (2,2), and (3,2).\nThe number of outcomes whose sum is less than 6 is 4.\nTherefore, the number of outcomes(n) who sum is greater than or equal to 6 is 18-4, i.e. 14.\nRequired probability = $\\dfrac{n}{m}$ =$\\dfrac{14}{18}=0.78$\nThe answer is option C.",
+      "type": "quants"
+    }
+  ]
+}

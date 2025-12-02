@@ -1,0 +1,671 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-22-1",
+      "passage_text": "",
+      "question_text": "A wholesaler ordered 100 smartphones but only received 80% of the requested quantity. Among the received phones, 30% were found to be defective. The selling price of defective phones is 20% lower than the cost price. To achieve an overall profit of 10%, what percentage increase should the wholesaler apply to the cost price, considering the financial loss due to the undelivered smartphones and defective phones?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "62.1%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "57.3%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "54.6%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "65.2%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The wholesaler ordered 100 smartphones but received only 80% of the quantity, which is 80 smartphones.\nAmong the received phones, 30% were defective. So, the number of defective phones is 30% of 80, which is 0.3 * 80 = 24 smartphones.\nLet us assume the cost price of each smartphone be Rs.100\nThe cost price for the wholesaler for 100 smartphones = 100*100 = Rs.10,000\nThe selling price of defective phones is 20% lower than the cost price. Since the cost price is Rs. 100, the selling price of defective phones is 100 - (20% of 100) = Rs. 80.\nTo achieve an overall profit of 10%, we need to calculate the total cost and the desired selling price for the remaining non-defective phones.\nThe amount received by selling non-defective phones and defective phones should be equal to (110% of Rs. 100)*100 = Rs.11,000.\nNow, we can calculate the total amount received by selling phones (defective and non-defective)\nTotal amount = (Total selling amount of defective phones) + (Total selling amount of non-defective phones)\n= (Rs. 80 * 24) + (Rs. X * 56) \n11000 = 1920+56X\n=> 56X = 9080\nTherefore, X( Selling price of non-defectives phones to gain an overall profit of 10%) \nX = Rs. 162.1\nTo calculate the percentage increase in the selling price, we need to find the difference between the total desired selling price and the total cost price and then calculate the percentage increase:\nDifference = Desired selling price - Cost price\n= Rs. 162.1 - Rs. 100\n= Rs.62.1\nPercentage increase = (Difference / Total cost) * 100\n= (62.1 / 100) * 100  = 62.1 %.\nTherefore, the wholesaler should increase the selling price by approximately 62.1% to achieve an overall profit of 10%, considering the loss of money due to the undelivered smartphones and defective phones.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA wholesaler ordered 100 smartphones but only received 80% of the requested quantity. Among the received phones, 30% were found to be defective. The selling price of defective phones is 20% lower than the cost price. To achieve an overall profit of 10%, what percentage increase should the wholesaler apply to the cost price, considering the financial loss due to the undelivered smartphones and defective phones?\n\n**Options:**\n- **A**. 62.1% ✅\n- **B**. 57.3%\n- **C**. 54.6%\n- **D**. 65.2%\n\n**Correct Answer:** null\n\n**Solution:**\nThe wholesaler ordered 100 smartphones but received only 80% of the quantity, which is 80 smartphones.\nAmong the received phones, 30% were defective. So, the number of defective phones is 30% of 80, which is 0.3 * 80 = 24 smartphones.\nLet us assume the cost price of each smartphone be Rs.100\nThe cost price for the wholesaler for 100 smartphones = 100*100 = Rs.10,000\nThe selling price of defective phones is 20% lower than the cost price. Since the cost price is Rs. 100, the selling price of defective phones is 100 - (20% of 100) = Rs. 80.\nTo achieve an overall profit of 10%, we need to calculate the total cost and the desired selling price for the remaining non-defective phones.\nThe amount received by selling non-defective phones and defective phones should be equal to (110% of Rs. 100)*100 = Rs.11,000.\nNow, we can calculate the total amount received by selling phones (defective and non-defective)\nTotal amount = (Total selling amount of defective phones) + (Total selling amount of non-defective phones)\n= (Rs. 80 * 24) + (Rs. X * 56) \n11000 = 1920+56X\n=> 56X = 9080\nTherefore, X( Selling price of non-defectives phones to gain an overall profit of 10%) \nX = Rs. 162.1\nTo calculate the percentage increase in the selling price, we need to find the difference between the total desired selling price and the total cost price and then calculate the percentage increase:\nDifference = Desired selling price - Cost price\n= Rs. 162.1 - Rs. 100\n= Rs.62.1\nPercentage increase = (Difference / Total cost) * 100\n= (62.1 / 100) * 100  = 62.1 %.\nTherefore, the wholesaler should increase the selling price by approximately 62.1% to achieve an overall profit of 10%, considering the loss of money due to the undelivered smartphones and defective phones.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-2",
+      "passage_text": "",
+      "question_text": "A man takes tourists on his motor boat down a river to the famous Kululu island and returns. With the river's speed unchanged, the next day, if he doubles the speed of his motor boat, then his travel time gets reduced by 75%. The original speed of the motorboat is approx how much percent more than the river's speed? (Take $\\sqrt{7}$ = 2.64)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "42%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "38%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "36%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the speed of the motor boat be x, and speed of the river be y, and the distance be 'd'.\nLet the travel time on day 1 be 't'.\n=> t = $\\ \\dfrac{d}{x+y}$+$\\ \\dfrac{d}{x-y}$ {downstream+upstream} ---  eqn(1)\nSimilarly, on day 2, travel time is 0.25t {as travel time is reduced by 75%}\n=> 0.25t = $\\ \\dfrac{d}{2x+y}$ +$\\ \\dfrac{d}{2x-y}$ ---  eqn(2)\nSolving eqns 1 and 2,\n=> $\\ \\dfrac{d}{x+y}$+$\\ \\dfrac{d}{x-y}$ = 4($\\ \\dfrac{d}{2x+y}$ +$\\ \\dfrac{d}{2x-y}$)\n=> $\\ \\dfrac{d}{x+y}+\\ \\dfrac{d}{x-y}=\\ \\dfrac{d\\ }{2x+y}+\\ \\dfrac{d}{2x-y}$\n=> $\\ \\dfrac{2x}{x^2-y^2}=\\ \\dfrac{16x}{4x^2-y^2}$\n=> $4x^2=7y^2$\n=> $x=\\ \\dfrac{\\sqrt{7}}{2}y$\n=> $x=\\ 1.32y$ \nTherefore, the speed of the motorboat is 32% more than the river's speed.\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man takes tourists on his motor boat down a river to the famous Kululu island and returns. With the river's speed unchanged, the next day, if he doubles the speed of his motor boat, then his travel time gets reduced by 75%. The original speed of the motorboat is approx how much percent more than the river's speed? (Take $\\sqrt{7}$ = 2.64)\n\n**Options:**\n- **A**. 42%\n- **B**. 38%\n- **C**. 32% ✅\n- **D**. 36%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the speed of the motor boat be x, and speed of the river be y, and the distance be 'd'.\nLet the travel time on day 1 be 't'.\n=> t = $\\ \\dfrac{d}{x+y}$+$\\ \\dfrac{d}{x-y}$ {downstream+upstream} ---  eqn(1)\nSimilarly, on day 2, travel time is 0.25t {as travel time is reduced by 75%}\n=> 0.25t = $\\ \\dfrac{d}{2x+y}$ +$\\ \\dfrac{d}{2x-y}$ ---  eqn(2)\nSolving eqns 1 and 2,\n=> $\\ \\dfrac{d}{x+y}$+$\\ \\dfrac{d}{x-y}$ = 4($\\ \\dfrac{d}{2x+y}$ +$\\ \\dfrac{d}{2x-y}$)\n=> $\\ \\dfrac{d}{x+y}+\\ \\dfrac{d}{x-y}=\\ \\dfrac{d\\ }{2x+y}+\\ \\dfrac{d}{2x-y}$\n=> $\\ \\dfrac{2x}{x^2-y^2}=\\ \\dfrac{16x}{4x^2-y^2}$\n=> $4x^2=7y^2$\n=> $x=\\ \\dfrac{\\sqrt{7}}{2}y$\n=> $x=\\ 1.32y$ \nTherefore, the speed of the motorboat is 32% more than the river's speed.\nThe answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-3",
+      "passage_text": "",
+      "question_text": "Raunak distributed his money equally between the two schemes. These schemes had identical interest rates, but the first had a simple interest while the second had a compound interest. At the end of two years, Raunak received interest of Rs. 22,400 and Rs. 25,536 from the two schemes, respectively. If Raunak had invested all his money in a third scheme offering a 40% compound interest rate for two years, what would have been his total interest earned?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 38,400",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 73,600",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 74,200",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 76,800",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Raunak received interest of Rs. 22,400 and Rs. 25,536 from two schemes at the end of two years.\nInterest earned in compound interest and simple interest is equal for the first year.\nWhereas interest earned in the second scheme(simple interest) for both years will also be equal. \nInterest earned from the first scheme per year will be 22,400/2 = Rs.11,200.\nAs the interest earned by both the schemes in the first year is equal, We\ncan say that the interest earned by the second scheme will be Rs.11,200 in the first year\nand Rs.14,336 in the second year.\nThe extra interest earned at the end of the second year will be earned over the interest earned over the first year.\nTherefore, rate of Interest = $\\ \\ \\ \\frac{3136}{11200}\\times\\ 100\\ =\\ 28\\%$ \nPrinciple amount = $\\ \\frac{\\ 11200\\ \\times\\ 100}{28}\\ =\\ 40000$\nTotal amount invested = 40000 * 2 = Rs.80,000\nInterest earned if Raunak invests Rs.80,000 for 2 years in scheme 3 with a Compound interest of 40% will be \n$80000\\left(1\\ +\\ \\frac{40}{100}\\right)^2\\ -\\ 80000\\ =76800\\ $\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRaunak distributed his money equally between the two schemes. These schemes had identical interest rates, but the first had a simple interest while the second had a compound interest. At the end of two years, Raunak received interest of Rs. 22,400 and Rs. 25,536 from the two schemes, respectively. If Raunak had invested all his money in a third scheme offering a 40% compound interest rate for two years, what would have been his total interest earned?\n\n**Options:**\n- **A**. Rs. 38,400\n- **B**. Rs. 73,600\n- **C**. Rs. 74,200\n- **D**. Rs. 76,800 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nRaunak received interest of Rs. 22,400 and Rs. 25,536 from two schemes at the end of two years.\nInterest earned in compound interest and simple interest is equal for the first year.\nWhereas interest earned in the second scheme(simple interest) for both years will also be equal. \nInterest earned from the first scheme per year will be 22,400/2 = Rs.11,200.\nAs the interest earned by both the schemes in the first year is equal, We\ncan say that the interest earned by the second scheme will be Rs.11,200 in the first year\nand Rs.14,336 in the second year.\nThe extra interest earned at the end of the second year will be earned over the interest earned over the first year.\nTherefore, rate of Interest = $\\ \\ \\ \\frac{3136}{11200}\\times\\ 100\\ =\\ 28\\%$ \nPrinciple amount = $\\ \\frac{\\ 11200\\ \\times\\ 100}{28}\\ =\\ 40000$\nTotal amount invested = 40000 * 2 = Rs.80,000\nInterest earned if Raunak invests Rs.80,000 for 2 years in scheme 3 with a Compound interest of 40% will be \n$80000\\left(1\\ +\\ \\frac{40}{100}\\right)^2\\ -\\ 80000\\ =76800\\ $\nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-4",
+      "passage_text": "",
+      "question_text": "Ramesh finds three vintage books in his store room and plans to sell them. The valuation of a book is proportional to the square of the number of pages in it. Ramesh combined the three books and made Rs. 5846 more than had he sold them separately. If it is known that the number of pages in the three books is in the ratio 3 : 5 : 8, find the amount of money he would have made if he had sold a single book with the highest number of pages separately.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 2432",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 2304",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 2240",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 2368",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the number of pages in 3 books be 3n, 5n, 8n.\nIf a book has 'x' pages, it is given that the price of the book will be $kx^2$, where k is a proportionality constant.\nTherefore, if he had sold 3 books separately, Ramesh would have made k($9n^2+25n^2+64n^2$) = $98n^2k$. \nIf he combines all the 3 books =>, the book has 16n pages => He would have made $k\\left(16n\\right)^2=256n^2k$.\nIt is given that the difference i.e. $158\\ n^2k\\ =\\ 5846\\ =>n^2k=37$\nTherefore, the price of a book with 8n pages would be $k\\left(8n\\right)^2=64n^2k=64\\cdot37=2368$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRamesh finds three vintage books in his store room and plans to sell them. The valuation of a book is proportional to the square of the number of pages in it. Ramesh combined the three books and made Rs. 5846 more than had he sold them separately. If it is known that the number of pages in the three books is in the ratio 3 : 5 : 8, find the amount of money he would have made if he had sold a single book with the highest number of pages separately.\n\n**Options:**\n- **A**. Rs. 2432\n- **B**. Rs. 2304\n- **C**. Rs. 2240\n- **D**. Rs. 2368 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of pages in 3 books be 3n, 5n, 8n.\nIf a book has 'x' pages, it is given that the price of the book will be $kx^2$, where k is a proportionality constant.\nTherefore, if he had sold 3 books separately, Ramesh would have made k($9n^2+25n^2+64n^2$) = $98n^2k$. \nIf he combines all the 3 books =>, the book has 16n pages => He would have made $k\\left(16n\\right)^2=256n^2k$.\nIt is given that the difference i.e. $158\\ n^2k\\ =\\ 5846\\ =>n^2k=37$\nTherefore, the price of a book with 8n pages would be $k\\left(8n\\right)^2=64n^2k=64\\cdot37=2368$.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-5",
+      "passage_text": "",
+      "question_text": "Suppose that 3a + 4b = 113, where a and b are positive integers. What is the probability that the sum of any randomly selected ordered pair (a, b) is less than or equal to 35?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\ \\dfrac{1}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\ \\dfrac{7}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\ \\dfrac{9}{11}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\ \\dfrac{7}{11}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given, 3a + 4b = 113 and a, b are positive integers.\nIf a = 1, b = 110/4 (not an integer)\nIf a = 2, b = 107/4 (not an integer)\nIf a = 3, b = 26\nTherefore, the pairs of (a,b) that satisfies the given equation are\n=> (3,26), (7,23), (11,20), (15,17), (19,14), (23,11), (27,8), (31,5), (35,2)\nTotal number of ordered pairs satisfying the given equation = 9\nTotal number of ordered pairs where the sum of a+b is less than or equal to 35 = 7\nTherefore, the probability that the sum of any randomly selected ordered pair is less than or equal to 35 = $\\ \\dfrac{7}{9}$\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSuppose that 3a + 4b = 113, where a and b are positive integers. What is the probability that the sum of any randomly selected ordered pair (a, b) is less than or equal to 35?\n\n**Options:**\n- **A**. $\\ \\dfrac{1}{3}$\n- **B**. $\\ \\dfrac{7}{9}$ ✅\n- **C**. $\\ \\dfrac{9}{11}$\n- **D**. $\\ \\dfrac{7}{11}$\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given, 3a + 4b = 113 and a, b are positive integers.\nIf a = 1, b = 110/4 (not an integer)\nIf a = 2, b = 107/4 (not an integer)\nIf a = 3, b = 26\nTherefore, the pairs of (a,b) that satisfies the given equation are\n=> (3,26), (7,23), (11,20), (15,17), (19,14), (23,11), (27,8), (31,5), (35,2)\nTotal number of ordered pairs satisfying the given equation = 9\nTotal number of ordered pairs where the sum of a+b is less than or equal to 35 = 7\nTherefore, the probability that the sum of any randomly selected ordered pair is less than or equal to 35 = $\\ \\dfrac{7}{9}$\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-6",
+      "passage_text": "",
+      "question_text": "Ravi and Neeraj purchased flowers from a wholesaler and later sold them to customers. Ravi and Neeraj marked up their prices by 20% and 33.33%, respectively, but before selling, they provided some discounts. Unfortunately, Neeraj miscalculated his profits based on the selling price instead of the cost price. This way, Ravi and Neeraj gained profits of 14% and 16.66%, respectively. What is the ratio of Ravi and Neeraj's discount percentages?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost price for Ravi be Rs.100x, and the cost price for Neeraj be Rs.100y \nThey marked up their prices by 20% and 33.33%, respectively.\nMarkup price by Ravi = 1.2*100x = Rs. 120x\nSimilarly, the Markup price by Neeraj = 1.333*100y = Rs.400/3 y\nProfit of Ravi = 14%\nSo, the selling price of Ravi = Rs.114x\ntherefore, the discount percentage of Ravi = $\\left(\\dfrac{120x-114x\\ }{120x}\\right)\\times100$ = 5%\nAnd Neeraj calculated the profit percentage on the selling price = 16.66%\nLet the selling price of Neeraj be = Rs. A\nProfit percentage = $\\left(\\dfrac{A-100y\\ }{A}\\right)\\times100$ = $\\dfrac{1}{6}$\nTherefore, the selling price of Neeraj (A) = Rs. 120y\n=> Discount % of Neeraj = $\\left(\\dfrac{\\ \\dfrac{400\\ }{3}y-120y\\ }{\\ \\dfrac{\\ 400}{3}y}\\right)\\times100$ = 10%\nTherefore, the ratio of Ravi and Neeraj's discount percentages = 5:10 => 1:2\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRavi and Neeraj purchased flowers from a wholesaler and later sold them to customers. Ravi and Neeraj marked up their prices by 20% and 33.33%, respectively, but before selling, they provided some discounts. Unfortunately, Neeraj miscalculated his profits based on the selling price instead of the cost price. This way, Ravi and Neeraj gained profits of 14% and 16.66%, respectively. What is the ratio of Ravi and Neeraj's discount percentages?\n\n**Options:**\n- **A**. 3:2\n- **B**. 2:3\n- **C**. 1:2 ✅\n- **D**. 2:1\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price for Ravi be Rs.100x, and the cost price for Neeraj be Rs.100y \nThey marked up their prices by 20% and 33.33%, respectively.\nMarkup price by Ravi = 1.2*100x = Rs. 120x\nSimilarly, the Markup price by Neeraj = 1.333*100y = Rs.400/3 y\nProfit of Ravi = 14%\nSo, the selling price of Ravi = Rs.114x\ntherefore, the discount percentage of Ravi = $\\left(\\dfrac{120x-114x\\ }{120x}\\right)\\times100$ = 5%\nAnd Neeraj calculated the profit percentage on the selling price = 16.66%\nLet the selling price of Neeraj be = Rs. A\nProfit percentage = $\\left(\\dfrac{A-100y\\ }{A}\\right)\\times100$ = $\\dfrac{1}{6}$\nTherefore, the selling price of Neeraj (A) = Rs. 120y\n=> Discount % of Neeraj = $\\left(\\dfrac{\\ \\dfrac{400\\ }{3}y-120y\\ }{\\ \\dfrac{\\ 400}{3}y}\\right)\\times100$ = 10%\nTherefore, the ratio of Ravi and Neeraj's discount percentages = 5:10 => 1:2\nThe answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-7",
+      "passage_text": "",
+      "question_text": "How many integral values of x does the inequality $|x - ||x-2| +x+5| | < 6$   satisfies",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can rewrite this inequality as $-6 < x - ||x-2|+x+5| < 6$\nCase 1: When x = 2\n=> -6 < 2 -7 < 6\nIt satisfies the inequality \nCase 2 : When x < 2\n=> -6 < x-|2-x+x+5| < 6\n=> -6 < x-7 <6\n=> 1 < x < 13\nx $\\in\\ $ (1,2)\nNo integral solution when x < 2\nCase 3 : When x > 2\n=> -6 < x -|x-2+x+5| < 6\n=> -6 < x- 2x-3 < 6\n=> -6 < -x-3 < 6\n=> 6 > x+3 > -6\nx $\\in\\ $ (2,3) \nNo integral solution when x > 2\nThere is only one possible integral solution exists for this inequality at x = 2.\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many integral values of x does the inequality $|x - ||x-2| +x+5| | < 6$   satisfies\n\n**Options:**\n- **A**. 4\n- **B**. 3\n- **C**. 2\n- **D**. 1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe can rewrite this inequality as $-6 < x - ||x-2|+x+5| < 6$\nCase 1: When x = 2\n=> -6 < 2 -7 < 6\nIt satisfies the inequality \nCase 2 : When x < 2\n=> -6 < x-|2-x+x+5| < 6\n=> -6 < x-7 <6\n=> 1 < x < 13\nx $\\in\\ $ (1,2)\nNo integral solution when x < 2\nCase 3 : When x > 2\n=> -6 < x -|x-2+x+5| < 6\n=> -6 < x- 2x-3 < 6\n=> -6 < -x-3 < 6\n=> 6 > x+3 > -6\nx $\\in\\ $ (2,3) \nNo integral solution when x > 2\nThere is only one possible integral solution exists for this inequality at x = 2.\nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-8",
+      "passage_text": "",
+      "question_text": "How many positive integral solutions are possible for the equation $X^2-Y^2=192$?",
+      "options": [],
+      "correct_option_data": "5",
+      "solution_text": "$X^2-Y^2=192$ \n$\\left(X+Y\\right)\\left(X-Y\\right)=192$\n192 can be written as the product of two factors. {(X+Y),(X-Y)} = {(192,1), (96,2), (64,3), (48,4), (32,6), (24,8), (16,12), (12,16), (8,24), (6,32), (4,48), (3,64), (2,96), (1,192)}\nBut, in this case, (X+Y) > (X-Y), which implies {(192,1), (96,2), (64,3), (48,4), (32,6), (24,8), (16,12)} these cases are possible. But, it is given that we need to find integral solutions, which implies sum of (X+Y) and (X-Y) should be even. Therefore, (192,1) and (64,3) can't be possible.\nTherefore, there are 5 possible cases.\nAlternative Method:\nFor $X^2-Y^2=N$, if N is an even number and not a perfect square, then the total number of positive integral solutions = [total number of factors of (N/4)]/2\nIn this case, N =192, which is even, and not a perfect square. Therefore, we need to calculate the factors of (N/4) = (192/4) = 48 \n48 = $3\\times\\ 2^4$ \nTotal number of factors of 48 = (1+1)(4+1) = 10 \nHence, the number of positive integral solutions = (10/2) = 5\nThe answer is 5.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many positive integral solutions are possible for the equation $X^2-Y^2=192$?\n\n**Options:**\n\n**Correct Answer:** 5\n\n**Solution:**\n$X^2-Y^2=192$ \n$\\left(X+Y\\right)\\left(X-Y\\right)=192$\n192 can be written as the product of two factors. {(X+Y),(X-Y)} = {(192,1), (96,2), (64,3), (48,4), (32,6), (24,8), (16,12), (12,16), (8,24), (6,32), (4,48), (3,64), (2,96), (1,192)}\nBut, in this case, (X+Y) > (X-Y), which implies {(192,1), (96,2), (64,3), (48,4), (32,6), (24,8), (16,12)} these cases are possible. But, it is given that we need to find integral solutions, which implies sum of (X+Y) and (X-Y) should be even. Therefore, (192,1) and (64,3) can't be possible.\nTherefore, there are 5 possible cases.\nAlternative Method:\nFor $X^2-Y^2=N$, if N is an even number and not a perfect square, then the total number of positive integral solutions = [total number of factors of (N/4)]/2\nIn this case, N =192, which is even, and not a perfect square. Therefore, we need to calculate the factors of (N/4) = (192/4) = 48 \n48 = $3\\times\\ 2^4$ \nTotal number of factors of 48 = (1+1)(4+1) = 10 \nHence, the number of positive integral solutions = (10/2) = 5\nThe answer is 5.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-9",
+      "passage_text": "",
+      "question_text": "Given a triangle ABC, if we extend its sides AB and AC to points P and Q, respectively, the bisectors of $\\angle$ PBC \nand $\\angle$ QCB intersect at point O. If $\\angle$A is 50$^{\\circ\\ }$, find the value of $\\angle$ BOC.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "65$^{\\circ\\ }$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "60$^{\\circ\\ }$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "55$^{\\circ\\ }$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50$^{\\circ\\ }$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that in triangle ABC, if we extend its sides AB and AC to points P and Q, the bisectors of $\\angle$ PBC and $\\angle$ QCB intersect at point O, as shown in the figure.\n=> $\\angle$ PBO = $\\angle$ OBC and $\\angle$ QCO = $\\angle$ OCB\n=> Also, $\\angle$A = 50$^{\\circ\\ }$\nLet us assume $\\angle$ ABC = x$^{\\circ\\ }$, then $\\angle$ ACB = 180-50-x = (130-x)$^{\\circ\\ }$\n=> ABP is a line, $\\angle$ ABC + $\\angle$ CBP = 180$^{\\circ\\ }$\n=> x+$\\angle$CBP = 180$^{\\circ\\ }$\n=> $\\angle$ CBP = (180-x)$^{\\circ\\ }$\nSince, $\\angle$ PBO = $\\angle$ OBC ( $\\angle$ CBP = 2$\\angle$ OBC)\n=> 2$\\angle$ OBC = (180-x)$^{\\circ\\ }$\n=> $\\angle$ OBC = $\\left(90-\\ \\frac{x}{2}\\right)$ $^{\\circ\\ }$\nSimilarly, ACQ is a line, $\\angle$ ACB + $\\angle$ BCQ = 180$^{\\circ\\ }$\n=> 130-x+$\\angle$ BCQ = 180$^{\\circ\\ }$\n=> $\\angle$ BCQ = (180-130+x)$^{\\circ\\ }$\n=> $\\angle$ BCQ = (50+x)$^{\\circ\\ }$\n=> $\\angle$ OCB = ($25+\\ \\frac{x}{2}$) $^{\\circ\\ }$\nIn a triangle sum of all angles is 180$^{\\circ\\ }$ therefore in triangle OCB\n=> $\\angle$OCB+$\\angle$ OBC+ $\\angle$BOC = 180$^{\\circ\\ }$\n=> $25+\\ \\frac{x}{2}$ + $\\left(90-\\ \\frac{x}{2}\\right)$ + $\\angle$BOC = 180$^{\\circ\\ }$\n=> $\\angle$BOC = 65$^{\\circ\\ }$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven a triangle ABC, if we extend its sides AB and AC to points P and Q, respectively, the bisectors of $\\angle$ PBC \nand $\\angle$ QCB intersect at point O. If $\\angle$A is 50$^{\\circ\\ }$, find the value of $\\angle$ BOC.\n\n**Options:**\n- **A**. 65$^{\\circ\\ }$ ✅\n- **B**. 60$^{\\circ\\ }$\n- **C**. 55$^{\\circ\\ }$\n- **D**. 50$^{\\circ\\ }$\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that in triangle ABC, if we extend its sides AB and AC to points P and Q, the bisectors of $\\angle$ PBC and $\\angle$ QCB intersect at point O, as shown in the figure.\n=> $\\angle$ PBO = $\\angle$ OBC and $\\angle$ QCO = $\\angle$ OCB\n=> Also, $\\angle$A = 50$^{\\circ\\ }$\nLet us assume $\\angle$ ABC = x$^{\\circ\\ }$, then $\\angle$ ACB = 180-50-x = (130-x)$^{\\circ\\ }$\n=> ABP is a line, $\\angle$ ABC + $\\angle$ CBP = 180$^{\\circ\\ }$\n=> x+$\\angle$CBP = 180$^{\\circ\\ }$\n=> $\\angle$ CBP = (180-x)$^{\\circ\\ }$\nSince, $\\angle$ PBO = $\\angle$ OBC ( $\\angle$ CBP = 2$\\angle$ OBC)\n=> 2$\\angle$ OBC = (180-x)$^{\\circ\\ }$\n=> $\\angle$ OBC = $\\left(90-\\ \\frac{x}{2}\\right)$ $^{\\circ\\ }$\nSimilarly, ACQ is a line, $\\angle$ ACB + $\\angle$ BCQ = 180$^{\\circ\\ }$\n=> 130-x+$\\angle$ BCQ = 180$^{\\circ\\ }$\n=> $\\angle$ BCQ = (180-130+x)$^{\\circ\\ }$\n=> $\\angle$ BCQ = (50+x)$^{\\circ\\ }$\n=> $\\angle$ OCB = ($25+\\ \\frac{x}{2}$) $^{\\circ\\ }$\nIn a triangle sum of all angles is 180$^{\\circ\\ }$ therefore in triangle OCB\n=> $\\angle$OCB+$\\angle$ OBC+ $\\angle$BOC = 180$^{\\circ\\ }$\n=> $25+\\ \\frac{x}{2}$ + $\\left(90-\\ \\frac{x}{2}\\right)$ + $\\angle$BOC = 180$^{\\circ\\ }$\n=> $\\angle$BOC = 65$^{\\circ\\ }$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-10",
+      "passage_text": "",
+      "question_text": "A trapezium PQRS has PQ || RS, and PQ = 6 cm and RS= 9 cm. The two diagonals intersect at point O, and the area of the triangle POQ is 54 sq cm. Find the area of the trapezium.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "287.5 sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "312.5 sq cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "337. 5 sq cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "387.5 sq cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It is given that PQ || RS, and PQ = 6 cm and RS = 9 cm. The two diagonals intersect at point O, and the area of the triangle POQ is 54 sq cm.\nSince the area of the triangle, POQ is 54 sq cm, and the base PQ = 6 cm, which implies the height of the triangle POQ is (1/2*PQ*height) = 54 => 1/2 * 6 * height = 54 => the height of the triangle POQ is 18 cm.\nUsing the similarity theorem between triangle POQ and ROS, we can say that the height of the triangle ROS is (9/6)*18 = 27 cm. (it is given that RS = 9cm, and (PQ/RS) = height of POQ/ height of ROS)).\nHence, the height of the quadrilateral is (18+27) = 45 cm.\nTherefore, the area of the trapezium is = 1/2 * (6+9) *45 = 337.5 sq cm.\nThe correct option is C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA trapezium PQRS has PQ || RS, and PQ = 6 cm and RS= 9 cm. The two diagonals intersect at point O, and the area of the triangle POQ is 54 sq cm. Find the area of the trapezium.\n\n**Options:**\n- **A**. 287.5 sq cm\n- **B**. 312.5 sq cm\n- **C**. 337. 5 sq cm ✅\n- **D**. 387.5 sq cm\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that PQ || RS, and PQ = 6 cm and RS = 9 cm. The two diagonals intersect at point O, and the area of the triangle POQ is 54 sq cm.\nSince the area of the triangle, POQ is 54 sq cm, and the base PQ = 6 cm, which implies the height of the triangle POQ is (1/2*PQ*height) = 54 => 1/2 * 6 * height = 54 => the height of the triangle POQ is 18 cm.\nUsing the similarity theorem between triangle POQ and ROS, we can say that the height of the triangle ROS is (9/6)*18 = 27 cm. (it is given that RS = 9cm, and (PQ/RS) = height of POQ/ height of ROS)).\nHence, the height of the quadrilateral is (18+27) = 45 cm.\nTherefore, the area of the trapezium is = 1/2 * (6+9) *45 = 337.5 sq cm.\nThe correct option is C",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-11",
+      "passage_text": "",
+      "question_text": "The sum of all the interior angles of a regular polygon is 2880 degrees. What is the value of its exterior angle?",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "We know that the sum of all the interior angles of a polygon of sides n is $\\left(n-2\\right)180^{\\circ\\ }$.\nTherefore, $\\left(n-2\\right)180^{\\circ\\ }=2880^{\\circ\\ }\\ =>\\ n-2=16\\ =>\\ n=18$\nThe value of the exterior angle is $\\frac{360^{\\circ\\ }}{n}=\\frac{360^{\\circ\\ }}{18}=20^{\\circ\\ }$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of all the interior angles of a regular polygon is 2880 degrees. What is the value of its exterior angle?\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nWe know that the sum of all the interior angles of a polygon of sides n is $\\left(n-2\\right)180^{\\circ\\ }$.\nTherefore, $\\left(n-2\\right)180^{\\circ\\ }=2880^{\\circ\\ }\\ =>\\ n-2=16\\ =>\\ n=18$\nThe value of the exterior angle is $\\frac{360^{\\circ\\ }}{n}=\\frac{360^{\\circ\\ }}{18}=20^{\\circ\\ }$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-12",
+      "passage_text": "",
+      "question_text": "Vaibhav and Vikrant are two friends who plans to go on bike from Ahmedabad to Mumbai, Vikrant begins his journey from Ahmedabad to Mumbai at 6:00 AM, while Vaibhav starts his trip from Ahmedabad to Mumbai at 8:30 AM. At 2:30 PM, the distance between them is 105 km. If Vaibhav travels 15 km/hr faster than Vikrant, what is Vaibhav's speed?",
+      "options": [],
+      "correct_option_data": "93",
+      "solution_text": "From the given information, two cases are possible: Either Vikrant is ahead of Vaibhav, or Vaibhav is ahead of Vikrant.\nLet the speed of Vikrant be a, and the speed of Vaibhav be a+15\nCase 1: Vikrant is ahead of Vaibhav,\nTotal time from 6:00 AM to 2:30 PM is 8 hrs 30 minutes = 17/2 hrs\n$\\frac{17}{2}(a) - 6 (a + 15) = 105$  \n8.5a - 6a - 90 = 105\n2.5a = 195\na = 78\nTherefore, speed of Vikrant = 56 Km/hr\nCase 2: Vaibhav is ahead of Vikrant\n$ 6 (a + 15) - \\frac{17}{2}(a) = 105$\n6a + 90 - 8.5a = 105\n2a = -15\na cannot be negative. Hence, this case is not possible.\nTherefore, the speed of Vaibhav is 78+15 = 93km/hr.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nVaibhav and Vikrant are two friends who plans to go on bike from Ahmedabad to Mumbai, Vikrant begins his journey from Ahmedabad to Mumbai at 6:00 AM, while Vaibhav starts his trip from Ahmedabad to Mumbai at 8:30 AM. At 2:30 PM, the distance between them is 105 km. If Vaibhav travels 15 km/hr faster than Vikrant, what is Vaibhav's speed?\n\n**Options:**\n\n**Correct Answer:** 93\n\n**Solution:**\nFrom the given information, two cases are possible: Either Vikrant is ahead of Vaibhav, or Vaibhav is ahead of Vikrant.\nLet the speed of Vikrant be a, and the speed of Vaibhav be a+15\nCase 1: Vikrant is ahead of Vaibhav,\nTotal time from 6:00 AM to 2:30 PM is 8 hrs 30 minutes = 17/2 hrs\n$\\frac{17}{2}(a) - 6 (a + 15) = 105$  \n8.5a - 6a - 90 = 105\n2.5a = 195\na = 78\nTherefore, speed of Vikrant = 56 Km/hr\nCase 2: Vaibhav is ahead of Vikrant\n$ 6 (a + 15) - \\frac{17}{2}(a) = 105$\n6a + 90 - 8.5a = 105\n2a = -15\na cannot be negative. Hence, this case is not possible.\nTherefore, the speed of Vaibhav is 78+15 = 93km/hr.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-13",
+      "passage_text": "",
+      "question_text": "Men can make up to 80 cookies daily, while women can make up to 60. The fixed pay for a man and woman is Rs. 500 and Rs. 400 per day, respectively. The variable payment per cookie made for a man and a woman is Rs. 20 and Rs. 25, respectively. If 4015 cookies are made in a day, how many men should the firm employ to minimize cost?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "49",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "51",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "52",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "=> Men and women gets daily pay for making cookies = Fixed pay + Variable pay\nMaximum amount a man can earn in a day = 500+20(80) = Rs. 2100\nMaximum amount a woman can earn in a day = 400+25(60) = Rs. 1900\nIt is given the number of cookies made in a day = 4015\nIf we calculate the total cost borne by the firm if they employ a man = 500+20x and women = 400+25x(where x is number of cookies made).\nCase 1: Cost borne by man is more than women\n500+20x > 400+25x \n5x < 100\nx < 20\nWomen are more economical than men.\nCase 2: Cost borne by man is less than women\n400+25x > 500+20x\n5x > 100\nx > 20 \nMen are more economical than women.\nHere, the number of cookies to be made is greater than 20, so men are more economical than women. \nHence, the number of men required to make 4000 cookies is 50, and for the additional 15 cookies, it is economical to hire a woman.\nTherefore, 50 men and one woman should be hired to minimize the cost.\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMen can make up to 80 cookies daily, while women can make up to 60. The fixed pay for a man and woman is Rs. 500 and Rs. 400 per day, respectively. The variable payment per cookie made for a man and a woman is Rs. 20 and Rs. 25, respectively. If 4015 cookies are made in a day, how many men should the firm employ to minimize cost?\n\n**Options:**\n- **A**. 49\n- **B**. 50 ✅\n- **C**. 51\n- **D**. 52\n\n**Correct Answer:** null\n\n**Solution:**\n=> Men and women gets daily pay for making cookies = Fixed pay + Variable pay\nMaximum amount a man can earn in a day = 500+20(80) = Rs. 2100\nMaximum amount a woman can earn in a day = 400+25(60) = Rs. 1900\nIt is given the number of cookies made in a day = 4015\nIf we calculate the total cost borne by the firm if they employ a man = 500+20x and women = 400+25x(where x is number of cookies made).\nCase 1: Cost borne by man is more than women\n500+20x > 400+25x \n5x < 100\nx < 20\nWomen are more economical than men.\nCase 2: Cost borne by man is less than women\n400+25x > 500+20x\n5x > 100\nx > 20 \nMen are more economical than women.\nHere, the number of cookies to be made is greater than 20, so men are more economical than women. \nHence, the number of men required to make 4000 cookies is 50, and for the additional 15 cookies, it is economical to hire a woman.\nTherefore, 50 men and one woman should be hired to minimize the cost.\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-14",
+      "passage_text": "",
+      "question_text": "The ratio of the incomes of Dhoni in 2022 and 2021 is 3:5, while the same ratio for Kohli is 3:2. The ratio of the incomes of Dhoni and Kohli in 2021 is 5:4. If the total income of both in 2022 is Rs.60,588. What is the income of Kohli in 2021?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 24,928",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 26,928",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 28,928",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 29,928",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let Dhoni's income in 2022 and 2021 be 3x and 5x (the ratio is 3:5)\nAlso, Kohli's income in 2022 and 2021 be 3y and 2y (the ratio is 3:2)\nIt is given that Dhoni and Kohli's income in 2021 is in the ratio of 5:4\n=> Dhoni's income in 2021 = 5x and Kohli's income in 2021 = 2y\n=> $\\ \\frac{5x}{2y}=\\ \\frac{5}{4}$\n=> y = 2x\nDhoni and Kohli's combined income in the year 2022 is = 3x+3y  =9x\n=> 9x = 60588\n=> x = 6732\nTherefore, Kohli's income in the year 2021 = 2y = 4x\n=> Rs. 26,928",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe ratio of the incomes of Dhoni in 2022 and 2021 is 3:5, while the same ratio for Kohli is 3:2. The ratio of the incomes of Dhoni and Kohli in 2021 is 5:4. If the total income of both in 2022 is Rs.60,588. What is the income of Kohli in 2021?\n\n**Options:**\n- **A**. Rs. 24,928\n- **B**. Rs. 26,928 ✅\n- **C**. Rs. 28,928\n- **D**. Rs. 29,928\n\n**Correct Answer:** null\n\n**Solution:**\nLet Dhoni's income in 2022 and 2021 be 3x and 5x (the ratio is 3:5)\nAlso, Kohli's income in 2022 and 2021 be 3y and 2y (the ratio is 3:2)\nIt is given that Dhoni and Kohli's income in 2021 is in the ratio of 5:4\n=> Dhoni's income in 2021 = 5x and Kohli's income in 2021 = 2y\n=> $\\ \\frac{5x}{2y}=\\ \\frac{5}{4}$\n=> y = 2x\nDhoni and Kohli's combined income in the year 2022 is = 3x+3y  =9x\n=> 9x = 60588\n=> x = 6732\nTherefore, Kohli's income in the year 2021 = 2y = 4x\n=> Rs. 26,928",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-15",
+      "passage_text": "",
+      "question_text": "There are 120 workers present at a construction site, consisting of men and women, in a 2:1 ratio. It is known that women are 30% less efficient than men, and men work 6 days a week while women work 4 days a week. When it rains, the efficiency of men decreases by 50%, while that of women remains constant. The workers must complete the job within 4 weeks, and each man complete 10 units of work per day. Assuming there was rainfall for an entire week, what is the total number of units of work completed by all workers within the 4-week timeframe?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "21280 units",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "21180 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21080 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "21380 units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Total workers = 120\nMen and women are in ratio of 2:1, this implies number of men = 80 and the number of women = 40.\nMen complete 10 units of work per day, which means women complete 7 units of work per day(30% less efficiently).\n=> Men work for 6 days a week, and women work for 4 days a week.\nTherefore, work done by 80 men in one week = 80*6*10\n=> Work done by 80 men in one week = 4800 units\nSimilarly, work done by 40 women in one week = 40*4*7\n=> Work done by 40 women in one week = 1120 units\nIt is given that on one week, it was raining for the whole week, so work done by 80 men on that week = 4800/2 = 2400 units\nTherefore, in 4 weeks, work done by men and women together = (4800+4800+4800+2400) + (1120*4)\n=> 21280 units\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are 120 workers present at a construction site, consisting of men and women, in a 2:1 ratio. It is known that women are 30% less efficient than men, and men work 6 days a week while women work 4 days a week. When it rains, the efficiency of men decreases by 50%, while that of women remains constant. The workers must complete the job within 4 weeks, and each man complete 10 units of work per day. Assuming there was rainfall for an entire week, what is the total number of units of work completed by all workers within the 4-week timeframe?\n\n**Options:**\n- **A**. 21280 units ✅\n- **B**. 21180 units\n- **C**. 21080 units\n- **D**. 21380 units\n\n**Correct Answer:** null\n\n**Solution:**\nTotal workers = 120\nMen and women are in ratio of 2:1, this implies number of men = 80 and the number of women = 40.\nMen complete 10 units of work per day, which means women complete 7 units of work per day(30% less efficiently).\n=> Men work for 6 days a week, and women work for 4 days a week.\nTherefore, work done by 80 men in one week = 80*6*10\n=> Work done by 80 men in one week = 4800 units\nSimilarly, work done by 40 women in one week = 40*4*7\n=> Work done by 40 women in one week = 1120 units\nIt is given that on one week, it was raining for the whole week, so work done by 80 men on that week = 4800/2 = 2400 units\nTherefore, in 4 weeks, work done by men and women together = (4800+4800+4800+2400) + (1120*4)\n=> 21280 units\nThe answer is option A.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-16",
+      "passage_text": "",
+      "question_text": "Delbert Kienstein, a distinguished scientist renowned for his unique approach to work, is currently experimenting with work efficiency by implementing a work pattern over a few days. On the first day, he works for 1 hour with 100% efficiency. On the second day, he works for 2 hours with 90% efficiency. He continues to work in a similar pattern, till his efficiency reaches 10% and completes 55% of the work in the process.\n\nHow many days would it have taken him to complete the entire task if he had chosen to work for 6 hours daily with 80% efficiency?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\ \\dfrac{26}{3}$ days",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\ \\dfrac{25}{3}$ days",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\ \\dfrac{29}{3}$ days",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\ \\dfrac{28}{3}$ days",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "=> Let us assume that with 100% efficiency Delbert Kienstein can do 10a units per hour/\n=>He works with 100% efficiency on day 1 for 1 hour. Therefore, work done = 10a units\n=>He works with 90% efficiency on day 2 for 2 hours. Therefore, work done = 9a x 2 hrs = 18a units\n=>He works with 80% efficiency on day 3 for 3 hours. Therefore, work done = 8a x 3 hrs = 24a units\nSimilarly, he works till his efficiency on day 10 becomes 10%.\n=>Therefore, total work done in 10 days = (10a + 18a +24a + 28a +30a+ 30a + 28a + 24a +18a +10a) = 220a units\nIt is equal to 55% of total work is 220a units.\nThus, total work = 400a units\nIf he works for 6 hrs daily with 80% efficiency, his daily work will be = 48a units (8a x 6 = 48a)\nThus, the number of days he will take = $\\ \\frac{400a}{48a}$ = $\\ \\frac{25}{3}$ days\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDelbert Kienstein, a distinguished scientist renowned for his unique approach to work, is currently experimenting with work efficiency by implementing a work pattern over a few days. On the first day, he works for 1 hour with 100% efficiency. On the second day, he works for 2 hours with 90% efficiency. He continues to work in a similar pattern, till his efficiency reaches 10% and completes 55% of the work in the process.\n\nHow many days would it have taken him to complete the entire task if he had chosen to work for 6 hours daily with 80% efficiency?\n\n**Options:**\n- **A**. $\\ \\dfrac{26}{3}$ days\n- **B**. $\\ \\dfrac{25}{3}$ days ✅\n- **C**. $\\ \\dfrac{29}{3}$ days\n- **D**. $\\ \\dfrac{28}{3}$ days\n\n**Correct Answer:** null\n\n**Solution:**\n=> Let us assume that with 100% efficiency Delbert Kienstein can do 10a units per hour/\n=>He works with 100% efficiency on day 1 for 1 hour. Therefore, work done = 10a units\n=>He works with 90% efficiency on day 2 for 2 hours. Therefore, work done = 9a x 2 hrs = 18a units\n=>He works with 80% efficiency on day 3 for 3 hours. Therefore, work done = 8a x 3 hrs = 24a units\nSimilarly, he works till his efficiency on day 10 becomes 10%.\n=>Therefore, total work done in 10 days = (10a + 18a +24a + 28a +30a+ 30a + 28a + 24a +18a +10a) = 220a units\nIt is equal to 55% of total work is 220a units.\nThus, total work = 400a units\nIf he works for 6 hrs daily with 80% efficiency, his daily work will be = 48a units (8a x 6 = 48a)\nThus, the number of days he will take = $\\ \\frac{400a}{48a}$ = $\\ \\frac{25}{3}$ days\nThe answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-17",
+      "passage_text": "",
+      "question_text": "The sum of an arithmetic progression (A.P.) is represented by the expression $4n^2-n$ for one series, and $n^2+4n$ for another A.P. Find the ratio between the 11th term and the 24th term of the resulting series obtained by adding both A.P.s.?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "59:111",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "51:113",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "53:117",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "54:119",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The sum of the first and second A.P is given as $4n^2-n$ and $n^2+4n$\nWhen both the A.P.s are added, the resulting A.P is $5n^2+3n$\nWhen the sum of an A.P. is given, then the nth term of an A.P is \n$T_n=S_n-S_{n-1}$\n$T_n=\\left(5n^2+3n\\right)-\\left(5\\left(n-1\\right)^2+3\\left(n-1\\right)\\right)$\n$T_n=\\left(5n^2+3n\\right)-\\left(5n^2-7n+2\\right)$ \n$T_n=10n-2$\nTherefore, $T_{11}=10\\times11-2$ = 108\n$T_{24}=10\\times24-2$ = 238\nTherefore, the ratio of the 11th term and 24th term of the resulting A.P is 108:238 = 54:119",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of an arithmetic progression (A.P.) is represented by the expression $4n^2-n$ for one series, and $n^2+4n$ for another A.P. Find the ratio between the 11th term and the 24th term of the resulting series obtained by adding both A.P.s.?\n\n**Options:**\n- **A**. 59:111\n- **B**. 51:113\n- **C**. 53:117\n- **D**. 54:119 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe sum of the first and second A.P is given as $4n^2-n$ and $n^2+4n$\nWhen both the A.P.s are added, the resulting A.P is $5n^2+3n$\nWhen the sum of an A.P. is given, then the nth term of an A.P is \n$T_n=S_n-S_{n-1}$\n$T_n=\\left(5n^2+3n\\right)-\\left(5\\left(n-1\\right)^2+3\\left(n-1\\right)\\right)$\n$T_n=\\left(5n^2+3n\\right)-\\left(5n^2-7n+2\\right)$ \n$T_n=10n-2$\nTherefore, $T_{11}=10\\times11-2$ = 108\n$T_{24}=10\\times24-2$ = 238\nTherefore, the ratio of the 11th term and 24th term of the resulting A.P is 108:238 = 54:119",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-18",
+      "passage_text": "",
+      "question_text": "Find the number of real solutions of the equation: $x^2-9\\left|x\\right|-22=0$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The equation is $x^2-9\\left|x\\right|-22=0$\nCase 1:\nWhen $x\\ge0$:  $x^2-9x-22=0\\ =>\\ \\left(x-11\\right)\\left(x+2\\right)=0\\ =>\\ x=11\\ or\\ x=-2$ (but, the value of x can not be equal to -2, since $x\\ge0$). Therefore, the only solution for this case is x = 11.\nCase 2:\nWhen x < 0: $x^2+9x-22=0\\ =>\\ \\left(x+11\\right)\\left(x-2\\right)=0\\ =>\\ x=-11\\ or\\ x=2$ (but, the value of x cannot be equal to 2, since x < 0)\nTherefore, the only solution for  this case is x = -11\nThe valid solutions for this equation are x = 11 and x = -11. \nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of real solutions of the equation: $x^2-9\\left|x\\right|-22=0$\n\n**Options:**\n- **A**. 0\n- **B**. 1\n- **C**. 2 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nThe equation is $x^2-9\\left|x\\right|-22=0$\nCase 1:\nWhen $x\\ge0$:  $x^2-9x-22=0\\ =>\\ \\left(x-11\\right)\\left(x+2\\right)=0\\ =>\\ x=11\\ or\\ x=-2$ (but, the value of x can not be equal to -2, since $x\\ge0$). Therefore, the only solution for this case is x = 11.\nCase 2:\nWhen x < 0: $x^2+9x-22=0\\ =>\\ \\left(x+11\\right)\\left(x-2\\right)=0\\ =>\\ x=-11\\ or\\ x=2$ (but, the value of x cannot be equal to 2, since x < 0)\nTherefore, the only solution for  this case is x = -11\nThe valid solutions for this equation are x = 11 and x = -11. \nThe answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-19",
+      "passage_text": "",
+      "question_text": "How many numbers greater than 47000 can be formed by using digits 3,4,6,8 and 9 when no digit is repeated?",
+      "options": [],
+      "correct_option_data": "84",
+      "solution_text": "The total 5-digit numbers can be formed using 3,4,6,8, and 9 = 5! = 120. \nIf we can find the total number of 5-digit numbers which are less than 47000 and subtract the number from the total number of 5-digit numbers, we will get the desired outcome.\nAs we know, all 5 digits numbers starting with '3' are less than 47000. The number of 5-digit numbers starting with 3 is 24. \nThe numbers starting with 43_ _ _ are 3! = 6, which is less than 47000(without repetition).\nSimilarly, the numbers starting with 46_ _ _ are 3! = 6 are less than 47000. \nThe total 5 digit numbers using 3,4,6,8, and 9 which are less than 47000 = 24+6+6 = 36\nHence, the total numbers are formed which are greater than 47000 = 120-36 = 84\nThe answer is 84.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many numbers greater than 47000 can be formed by using digits 3,4,6,8 and 9 when no digit is repeated?\n\n**Options:**\n\n**Correct Answer:** 84\n\n**Solution:**\nThe total 5-digit numbers can be formed using 3,4,6,8, and 9 = 5! = 120. \nIf we can find the total number of 5-digit numbers which are less than 47000 and subtract the number from the total number of 5-digit numbers, we will get the desired outcome.\nAs we know, all 5 digits numbers starting with '3' are less than 47000. The number of 5-digit numbers starting with 3 is 24. \nThe numbers starting with 43_ _ _ are 3! = 6, which is less than 47000(without repetition).\nSimilarly, the numbers starting with 46_ _ _ are 3! = 6 are less than 47000. \nThe total 5 digit numbers using 3,4,6,8, and 9 which are less than 47000 = 24+6+6 = 36\nHence, the total numbers are formed which are greater than 47000 = 120-36 = 84\nThe answer is 84.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-20",
+      "passage_text": "",
+      "question_text": "What is the value of x, if $9^{\\frac{x}{y}+\\frac{y}{x}}=243$ and $\\log_3\\left(x-y\\right)+\\log_3\\left(x+y\\right)=1$",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "1st equation\n=> $\\dfrac{x}{y}+\\dfrac{y}{x}=\\log_9243=\\log_{3^2}\\left(3\\right)^5=\\dfrac{5}{2}$\n=> $\\dfrac{x}{y}+\\dfrac{y}{x}=\\dfrac{5}{2}$ ----(1)\n2nd equation$\\log_3\\left(x+y\\right)\\left(x-y\\right)=1$\n=> $x^2-y^2=3$ ----(2)\n(1) => $x^2+y^2=\\dfrac{5}{2}xy$ => $\\left(x-y\\right)^2+2xy=\\dfrac{5}{2}xy$ \n=> $\\left(x-y\\right)^2=\\dfrac{xy}{2}$ ---(3)\n$\\dfrac{\\left(2\\right)^2}{\\left(3\\right)}$\n=> $\\dfrac{\\left(\\left(x-y\\right)^2\\left(x+y\\right)^2\\right)}{\\left(x-y\\right)^2}=\\dfrac{18}{xy}$\n=> $\\left(x+y\\right)^2=\\dfrac{18}{xy}$---(4)\n(4) - (3)\n=> $4xy=\\dfrac{18}{xy}-\\dfrac{xy}{2}$\n=> Assuming xy = t\n=> $4t=\\dfrac{18}{t}-\\dfrac{t}{2}$\n=> $8t^2=36-t^2$\n=> $t^2=4$ => t = +2 or -2, from (3) xy cannot be negative => t = 2 => xy = 2.\n(3) => $\\left(x-y\\right)^2=\\frac{2}{2}=1$ => $x^2+y^2=1+2xy=5$ ---- (6)\n(2) => $x^2-y^2=3$\n=> Adding (6) and (2) => $2x^2=8$ => x = +2 or -2.\nBut for logarithm to exist in equation-2 => x - y > 0 & x + y > 0 => x > 0. \n=> x = 2.\nAlternate Approach:\nIn (1) Assume y/x = t => $t+\\dfrac{1}{t}=\\dfrac{5}{2}$ => t = 2 or 1/2\nt = 2 => y = 2x (Not possible as the logarithm will be negative in the 2nd equation)\nt = 1/2 => x = 2y => Substituting this in $\\log_3\\left(x-y\\right)+\\log_3\\left(x+y\\right)=1$\n=> $\\log_3\\left(3y^2\\right)=1$ => y = 1 => x = 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the value of x, if $9^{\\frac{x}{y}+\\frac{y}{x}}=243$ and $\\log_3\\left(x-y\\right)+\\log_3\\left(x+y\\right)=1$\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\n1st equation\n=> $\\dfrac{x}{y}+\\dfrac{y}{x}=\\log_9243=\\log_{3^2}\\left(3\\right)^5=\\dfrac{5}{2}$\n=> $\\dfrac{x}{y}+\\dfrac{y}{x}=\\dfrac{5}{2}$ ----(1)\n2nd equation$\\log_3\\left(x+y\\right)\\left(x-y\\right)=1$\n=> $x^2-y^2=3$ ----(2)\n(1) => $x^2+y^2=\\dfrac{5}{2}xy$ => $\\left(x-y\\right)^2+2xy=\\dfrac{5}{2}xy$ \n=> $\\left(x-y\\right)^2=\\dfrac{xy}{2}$ ---(3)\n$\\dfrac{\\left(2\\right)^2}{\\left(3\\right)}$\n=> $\\dfrac{\\left(\\left(x-y\\right)^2\\left(x+y\\right)^2\\right)}{\\left(x-y\\right)^2}=\\dfrac{18}{xy}$\n=> $\\left(x+y\\right)^2=\\dfrac{18}{xy}$---(4)\n(4) - (3)\n=> $4xy=\\dfrac{18}{xy}-\\dfrac{xy}{2}$\n=> Assuming xy = t\n=> $4t=\\dfrac{18}{t}-\\dfrac{t}{2}$\n=> $8t^2=36-t^2$\n=> $t^2=4$ => t = +2 or -2, from (3) xy cannot be negative => t = 2 => xy = 2.\n(3) => $\\left(x-y\\right)^2=\\frac{2}{2}=1$ => $x^2+y^2=1+2xy=5$ ---- (6)\n(2) => $x^2-y^2=3$\n=> Adding (6) and (2) => $2x^2=8$ => x = +2 or -2.\nBut for logarithm to exist in equation-2 => x - y > 0 & x + y > 0 => x > 0. \n=> x = 2.\nAlternate Approach:\nIn (1) Assume y/x = t => $t+\\dfrac{1}{t}=\\dfrac{5}{2}$ => t = 2 or 1/2\nt = 2 => y = 2x (Not possible as the logarithm will be negative in the 2nd equation)\nt = 1/2 => x = 2y => Substituting this in $\\log_3\\left(x-y\\right)+\\log_3\\left(x+y\\right)=1$\n=> $\\log_3\\left(3y^2\\right)=1$ => y = 1 => x = 2.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-21",
+      "passage_text": "",
+      "question_text": "Three vessels, A, B and C, contain a soda and water solution. The ratio of soda and water in vessel A and vessel B are 2:3 and 1:4. After mixing B and C in the ratio of 1:2, the resulting mixture contains the soda and water in the ratio of 4:11. Find the percentage of water in a mix which has A, B and C combined in a ratio of 3:5:2",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "62%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "70%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "72%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The ratio of soda and water in vessel A = 2:3\nThe ratio of soda and water in vessel B = 1:4\nLet the ratio of soda and water in vessel C be x:y\nB and C are mixed in a ratio of 1:2, and the resulting mixture contains the soda and water in a ratio of 4:11.\nComparing soda contents from B and C to that in the final mixture\n=> $\\ \\dfrac{1\\left(\\dfrac{1\\ }{5}\\right)+2\\left(\\dfrac{x\\ }{x+y}\\right)}{1+2}=\\ \\dfrac{4\\ }{15}$\n=> $\\ 1\\left(\\dfrac{1\\ }{5}\\right)+2\\left(\\dfrac{x\\ }{x+y}\\right)=\\ \\dfrac{4\\ }{5}$\n=> $7x\\ =\\ 3y$\n=> $\\ \\dfrac{x\\ }{y}=\\dfrac{3\\ }{7}$\nThe ratio of soda and water in vessel C is = 3:7\nTherefore, water in a mixture that has A, B and C combined in a ratio of 3:5:2.\n=> $\\ \\dfrac{3\\left(\\ \\dfrac{3\\ }{5}\\right)+5\\left(\\dfrac{4\\ }{5}\\right)+2\\left(\\dfrac{7\\ }{10}\\right)}{3+5+2}$\n=> $\\left(\\dfrac{\\ \\dfrac{9\\ }{5}+4\\ +\\ \\dfrac{7\\ }{5}}{10}\\right)\\times\\ 100=72\\%$\nAlternate Explanation:\nLet us assume the amount of soda per litre mixture of C = x\nWhen B and C are mixed in the ratio of 1:2, the ratio of soda and water becomes = 4:11\nSince B and C are mixed in a ratio of 1: 2, assuming the volume of B = 5 litres, then the volume of C = 10 litres\nB contains soda and water in a ratio of 1:4 (Hence soda in 5 litres of B = 1 litre)\nSoda in 10 litres of C will be = 10x\nHence total soda in the mixture of B and C = 10x+1\nIt will be equal to the soda in water(15 litres of mix B and C) = $\\ \\frac{4}{15}\\times\\ 15$ = 10x+1\nHence, x = 0.3\nIt is given, A, B and C are combined in 3:5:2 \nLet us assume volume to be 30, 50 and 20 litres, respectively)\nSo the amount of water in A = $\\ \\frac{3}{5}\\times\\ 30$ = 18 litres\nSimilarly, the amount of water in B = $\\ \\frac{4}{5}\\times\\ 50$ = 40 litres\nThe amount of water in C = (1-0.3)20 = 14 Litres\nHence, the total amount of water in (30+50+20) = 100 litres mixture = 18+40+14 = 72 litres\nHence, the percentage of water in the mixture = 72%\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree vessels, A, B and C, contain a soda and water solution. The ratio of soda and water in vessel A and vessel B are 2:3 and 1:4. After mixing B and C in the ratio of 1:2, the resulting mixture contains the soda and water in the ratio of 4:11. Find the percentage of water in a mix which has A, B and C combined in a ratio of 3:5:2\n\n**Options:**\n- **A**. 60%\n- **B**. 62%\n- **C**. 70%\n- **D**. 72% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe ratio of soda and water in vessel A = 2:3\nThe ratio of soda and water in vessel B = 1:4\nLet the ratio of soda and water in vessel C be x:y\nB and C are mixed in a ratio of 1:2, and the resulting mixture contains the soda and water in a ratio of 4:11.\nComparing soda contents from B and C to that in the final mixture\n=> $\\ \\dfrac{1\\left(\\dfrac{1\\ }{5}\\right)+2\\left(\\dfrac{x\\ }{x+y}\\right)}{1+2}=\\ \\dfrac{4\\ }{15}$\n=> $\\ 1\\left(\\dfrac{1\\ }{5}\\right)+2\\left(\\dfrac{x\\ }{x+y}\\right)=\\ \\dfrac{4\\ }{5}$\n=> $7x\\ =\\ 3y$\n=> $\\ \\dfrac{x\\ }{y}=\\dfrac{3\\ }{7}$\nThe ratio of soda and water in vessel C is = 3:7\nTherefore, water in a mixture that has A, B and C combined in a ratio of 3:5:2.\n=> $\\ \\dfrac{3\\left(\\ \\dfrac{3\\ }{5}\\right)+5\\left(\\dfrac{4\\ }{5}\\right)+2\\left(\\dfrac{7\\ }{10}\\right)}{3+5+2}$\n=> $\\left(\\dfrac{\\ \\dfrac{9\\ }{5}+4\\ +\\ \\dfrac{7\\ }{5}}{10}\\right)\\times\\ 100=72\\%$\nAlternate Explanation:\nLet us assume the amount of soda per litre mixture of C = x\nWhen B and C are mixed in the ratio of 1:2, the ratio of soda and water becomes = 4:11\nSince B and C are mixed in a ratio of 1: 2, assuming the volume of B = 5 litres, then the volume of C = 10 litres\nB contains soda and water in a ratio of 1:4 (Hence soda in 5 litres of B = 1 litre)\nSoda in 10 litres of C will be = 10x\nHence total soda in the mixture of B and C = 10x+1\nIt will be equal to the soda in water(15 litres of mix B and C) = $\\ \\frac{4}{15}\\times\\ 15$ = 10x+1\nHence, x = 0.3\nIt is given, A, B and C are combined in 3:5:2 \nLet us assume volume to be 30, 50 and 20 litres, respectively)\nSo the amount of water in A = $\\ \\frac{3}{5}\\times\\ 30$ = 18 litres\nSimilarly, the amount of water in B = $\\ \\frac{4}{5}\\times\\ 50$ = 40 litres\nThe amount of water in C = (1-0.3)20 = 14 Litres\nHence, the total amount of water in (30+50+20) = 100 litres mixture = 18+40+14 = 72 litres\nHence, the percentage of water in the mixture = 72%\nThe answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-22-22",
+      "passage_text": "",
+      "question_text": "A circle is shown below with centre O. A triangle with side PQ = $4\\sqrt{3}$ cm and length of SR is given as 2 cm, and the radius of the circle is r cm. Find the length of QS, which is the perpendicular drawn from Q to PR. (PQ is a tangent to the circle)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2\\sqrt{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2\\sqrt{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$3\\sqrt{2}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "It can be concluded that PQ is a tangent, and QR is the diameter. Hence $\\angle\\ PQR=90^{\\circ\\ }$.\nNow, Using the theorem of tangent and secant in the circle\n$PQ^2=PS\\times\\ PR$\n$\\left(4\\sqrt{\\ 3}\\right)^2=PS\\times\\ (PS+2)$\n$48=PS^2+2PS$\nPS = 6 cm\nIn the right angled triangle PQR, \nApplying Pythagoras theorem\n$PQ^2+QR^2=PR^2$\n=> $\\left(4\\sqrt{3}\\right)^2+QR^2=\\left(8\\right)^2$\n=> QR = 4cm\nHence, the radius is 2 cm, and the diameter is 4cm\nApplying Pythagoras theorem in triangle QSR (QS is perpendicular to PR)\n=>$QS^2+SR^2=QR^2$\n=> $QS^2+2^2=4^2$\n=> $QS^2=12$\nHence, $QS=2\\sqrt{3}$ cm",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20231020_133200.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle is shown below with centre O. A triangle with side PQ = $4\\sqrt{3}$ cm and length of SR is given as 2 cm, and the radius of the circle is r cm. Find the length of QS, which is the perpendicular drawn from Q to PR. (PQ is a tangent to the circle)\n\n**Options:**\n- **A**. $\\sqrt{3}$\n- **B**. $2\\sqrt{3}$ ✅\n- **C**. $2\\sqrt{2}$\n- **D**. $3\\sqrt{2}$\n\n**Correct Answer:** null\n\n**Solution:**\nIt can be concluded that PQ is a tangent, and QR is the diameter. Hence $\\angle\\ PQR=90^{\\circ\\ }$.\nNow, Using the theorem of tangent and secant in the circle\n$PQ^2=PS\\times\\ PR$\n$\\left(4\\sqrt{\\ 3}\\right)^2=PS\\times\\ (PS+2)$\n$48=PS^2+2PS$\nPS = 6 cm\nIn the right angled triangle PQR, \nApplying Pythagoras theorem\n$PQ^2+QR^2=PR^2$\n=> $\\left(4\\sqrt{3}\\right)^2+QR^2=\\left(8\\right)^2$\n=> QR = 4cm\nHence, the radius is 2 cm, and the diameter is 4cm\nApplying Pythagoras theorem in triangle QSR (QS is perpendicular to PR)\n=>$QS^2+SR^2=QR^2$\n=> $QS^2+2^2=4^2$\n=> $QS^2=12$\nHence, $QS=2\\sqrt{3}$ cm",
+      "type": "quants"
+    }
+  ]
+}

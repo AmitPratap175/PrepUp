@@ -158,6 +158,12 @@ export default function QuizPage() {
 
     const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
 
+    // Save session answers to DB so Goal View can see them
+    updateSessionMutation.mutate({
+      answers: answers,
+      // We don't mark as completed here
+    });
+
     updateProgressMutation.mutate({
       subject: currentTest.subject,
       questions_attempted

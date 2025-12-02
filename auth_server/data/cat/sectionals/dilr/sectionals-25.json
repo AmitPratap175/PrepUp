@@ -1,0 +1,696 @@
+{
+  "questions": [
+    {
+      "qid": "dilr-sectionals-25-1",
+      "passage_text": "A software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.",
+      "question_text": "If the firm orders the projects to minimize the total time taken to finish all 3 projects, in how many days will the last project be completed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "27",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt is also known that the design phase can start only after the UI/UX phase is completed, and the coding phase can only start after the design phase is complete.\nTo get the minimized time to finish the project, we need to plan the schedule in such a way that the number of off days should be as few as possible.\nFor ABC (UI/UX phase start in project A, then B, and at the end, project C), For BCA (UI/UX phase start in project B, then C, and at the end, project A).\nABC: UI/UX : - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part with B=> (11-12), then A => (13-22), and C=> (23-24), then the coding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nFrom this, we can say that the minimum number of days required is 25 days.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230727_141520.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.\n\nIf the firm orders the projects to minimize the total time taken to finish all 3 projects, in how many days will the last project be completed?\n\n**Options:**\n- **A**. 22\n- **B**. 23\n- **C**. 25 ✅\n- **D**. 27\n\n**Correct Answer:** null\n\n**Solution:**\nThe given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt is also known that the design phase can start only after the UI/UX phase is completed, and the coding phase can only start after the design phase is complete.\nTo get the minimized time to finish the project, we need to plan the schedule in such a way that the number of off days should be as few as possible.\nFor ABC (UI/UX phase start in project A, then B, and at the end, project C), For BCA (UI/UX phase start in project B, then C, and at the end, project A).\nABC: UI/UX : - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part with B=> (11-12), then A => (13-22), and C=> (23-24), then the coding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nFrom this, we can say that the minimum number of days required is 25 days.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-2",
+      "passage_text": "A software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.",
+      "question_text": "If the firm orders the projects to minimize the total time taken to finish all 3 projects, on which day is the design phase of project B completed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6 or 10",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9 or 18",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18 or 20",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6 or 9",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\n \nFrom this, we can say that the minimum number of days required is 25.\nTwo cases are possible. Either CBA or BCA, in which the design phase of project B is completed in 6 or 9 days.\nThe correct option is D",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230727_141520.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.\n\nIf the firm orders the projects to minimize the total time taken to finish all 3 projects, on which day is the design phase of project B completed?\n\n**Options:**\n- **A**. 6 or 10\n- **B**. 9 or 18\n- **C**. 18 or 20\n- **D**. 6 or 9 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\n \nFrom this, we can say that the minimum number of days required is 25.\nTwo cases are possible. Either CBA or BCA, in which the design phase of project B is completed in 6 or 9 days.\nThe correct option is D",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-3",
+      "passage_text": "A software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.",
+      "question_text": "If the (UI-UX) phase of Project B is finished on Day 10, what is the minimum time it will take to complete all the project?",
+      "options": [],
+      "correct_option_data": "29",
+      "solution_text": "The given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nFrom the table, we can see that only for combination ABC, the UI/UX phase for project B is finished on the 10th day. \nTherefore, the least amount of time to complete all the projects is 29 days (combination ABC).",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230727_141520.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.\n\nIf the (UI-UX) phase of Project B is finished on Day 10, what is the minimum time it will take to complete all the project?\n\n**Options:**\n\n**Correct Answer:** 29\n\n**Solution:**\nThe given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nFrom the table, we can see that only for combination ABC, the UI/UX phase for project B is finished on the 10th day. \nTherefore, the least amount of time to complete all the projects is 29 days (combination ABC).",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-4",
+      "passage_text": "A software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.",
+      "question_text": "The firm, in addition to the 3 existing phases, adds the phase of testing, which can only be done after coding. A separate team is hired to do testing work. It takes 5 days to test Project A, 5 days to test project B and 10 days to test project C. \nIf the firm orders the project to minimize the total time taken to finish all projects, how many days are required to complete all projects?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "31",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nNow,\na separate team has been hired to do testing work. It takes 5 days to \ntest Project A, 5 days to test Project B and 10 days to test Project \nC.\nWe need to check all the cases for testing:\nIn the case of BCA, the required time will be : (17-21), (22-31), (32-36) = MInimum days required is 36 days.\nIn the case of CBA, the required time will be (11-20) (21-25) (26-30) => CBA will take less amount of time. = 30 days.\nIn the case of ABC, the required time must be greater than 30 => \n(30-34). For all the other cases (BAC, CAB, ACB), it has to be greater \nthan 30, since, already, it takes (27, 27, and 28) days, respectively.\nTherefore,\nCBA will take the least amount of time (30 days).\nThe correct option is A.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230727_141520.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.\n\nThe firm, in addition to the 3 existing phases, adds the phase of testing, which can only be done after coding. A separate team is hired to do testing work. It takes 5 days to test Project A, 5 days to test project B and 10 days to test project C. \nIf the firm orders the project to minimize the total time taken to finish all projects, how many days are required to complete all projects?\n\n**Options:**\n- **A**. 30 ✅\n- **B**. 31\n- **C**. 36\n- **D**. 37\n\n**Correct Answer:** null\n\n**Solution:**\nThe given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt\nis also known that the design phase can start only after the UI/UX \nphase is completed, and the coding phase can only start after the design\nphase is complete.\nTo get the minimized time to finish the \nproject, we need to plan the schedule in such a way that the number of \noff days should be as few as possible.\nFor ABC (UI/UX phase start \nin project A, then B, and at the end, project C), For BCA (UI/UX phase \nstart in project B, then C, and at the end, project A).\nABC: UI/UX\n: - (1-6)-(7-10)-(11-13). Now, if we want to start the designing part \nwith B=> (11-12), then A => (13-22), and C=> (23-24), then the \ncoding part will take B = (13-22), then A=> (23-24), and C=(25-29)\nIn this way, we can calculate every combination:\nNow,\na separate team has been hired to do testing work. It takes 5 days to \ntest Project A, 5 days to test Project B and 10 days to test Project \nC.\nWe need to check all the cases for testing:\nIn the case of BCA, the required time will be : (17-21), (22-31), (32-36) = MInimum days required is 36 days.\nIn the case of CBA, the required time will be (11-20) (21-25) (26-30) => CBA will take less amount of time. = 30 days.\nIn the case of ABC, the required time must be greater than 30 => \n(30-34). For all the other cases (BAC, CAB, ACB), it has to be greater \nthan 30, since, already, it takes (27, 27, and 28) days, respectively.\nTherefore,\nCBA will take the least amount of time (30 days).\nThe correct option is A.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-5",
+      "passage_text": "A software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.",
+      "question_text": "The firm, in addition to the 3 existing phases, adds the phase of testing, which can only be done after coding. A separate team is hired to do testing work. It takes 5 days to test Project A, 5 days to test project B and 10 days to test project C. If the firm orders the project to minimize the total time taken to finish all projects, on which day is the UI/UX phase of project B completed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4 or 7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt is also known that the design phase can start only after the UI/UX\nphase is completed, and the coding phase can only start after the \ndesign phase is complete.\nTo get the minimized time to finish the project, we need to plan the \nschedule in such a way that the number of off days should be as few as \npossible.\nFor ABC (UI/UX phase start in project A, then B, and at the end, \nproject C), For BCA (UI/UX phase start in project B, then C, and at the \nend, project A).\nABC: UI/UX : - (1-6)-(7-10)-(11-13). Now, if we want to start the \ndesigning part with B=> (11-12), then A => (13-22), and C=> \n(23-24), then the coding part will take B = (13-22), then A=> \n(23-24), and C=(25-29)\nNow, a separate team has been hired to do testing work. It takes 5 days to test Project A, 5 days to test Project B and 10 days to test Project \nC.\nWe need to check all the cases for testing:\nIn the case of BCA, the required time will be : (17-21), (22-31), (32-36) = MInimum days required is 36 days.\nIn the case of CBA, the required time will be (11-20) (21-25) (26-30) => CBA will take less amount of time. = 30 days.\nIn the case of ABC, the required time must be greater than 30 => \n(30-34). For all the other cases (BAC, CAB, ACB), it has to be greater \nthan 30, since, already, it takes (27, 27, and 28) days, respectively.\nTherefore, CBA will take the least amount of time (30 days), which implies the UI/UX phase of project B must be completed on the 7th day.\nThe correct option is B",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230727_141520.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nA software development firm has 3 projects on hand, A, B and C. A typical software development project is done in the following phases - UI/UX, Design and Coding, in this order. The design phase can start only after the UI/UX phase is completed and the coding phase can only start after the design phase is complete. The number of days taken for each phase for projects A, B and C are given in the table below:\n\nThe firm has separate teams for each phase of the project -i.e. a UI/UX team, a design team and a coding team. Each team can work on only one project at a time and should immediately start the next project, if available, after finishing the work on a given project. Assume there is no break between switching between phases, and the firm can do the projects in any order.\n\nThe firm, in addition to the 3 existing phases, adds the phase of testing, which can only be done after coding. A separate team is hired to do testing work. It takes 5 days to test Project A, 5 days to test project B and 10 days to test project C. If the firm orders the project to minimize the total time taken to finish all projects, on which day is the UI/UX phase of project B completed?\n\n**Options:**\n- **A**. 4\n- **B**. 7 ✅\n- **C**. 4 or 7\n- **D**. 10\n\n**Correct Answer:** null\n\n**Solution:**\nThe given table shows that the project can be started in 6 ways : (ABC, ACB, BAC, BCA, CAB, and CBA).\nIt is also known that the design phase can start only after the UI/UX\nphase is completed, and the coding phase can only start after the \ndesign phase is complete.\nTo get the minimized time to finish the project, we need to plan the \nschedule in such a way that the number of off days should be as few as \npossible.\nFor ABC (UI/UX phase start in project A, then B, and at the end, \nproject C), For BCA (UI/UX phase start in project B, then C, and at the \nend, project A).\nABC: UI/UX : - (1-6)-(7-10)-(11-13). Now, if we want to start the \ndesigning part with B=> (11-12), then A => (13-22), and C=> \n(23-24), then the coding part will take B = (13-22), then A=> \n(23-24), and C=(25-29)\nNow, a separate team has been hired to do testing work. It takes 5 days to test Project A, 5 days to test Project B and 10 days to test Project \nC.\nWe need to check all the cases for testing:\nIn the case of BCA, the required time will be : (17-21), (22-31), (32-36) = MInimum days required is 36 days.\nIn the case of CBA, the required time will be (11-20) (21-25) (26-30) => CBA will take less amount of time. = 30 days.\nIn the case of ABC, the required time must be greater than 30 => \n(30-34). For all the other cases (BAC, CAB, ACB), it has to be greater \nthan 30, since, already, it takes (27, 27, and 28) days, respectively.\nTherefore, CBA will take the least amount of time (30 days), which implies the UI/UX phase of project B must be completed on the 7th day.\nThe correct option is B",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-6",
+      "passage_text": "Five athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.",
+      "question_text": "The athlete who secured the first position wore a shirt of which colour?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Indigo",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Green",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Blue",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Yellow",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nAccording to the table, Chandu secured first position and he is wearing yellow shirt.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.\n\nThe athlete who secured the first position wore a shirt of which colour?\n\n**Options:**\n- **A**. Indigo\n- **B**. Green\n- **C**. Blue\n- **D**. Yellow ✅\n\n**Correct Answer:** null\n\n**Solution:**\nDraw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nAccording to the table, Chandu secured first position and he is wearing yellow shirt.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-7",
+      "passage_text": "Five athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.",
+      "question_text": "The athlete who wore a Blue shirt is from which country?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Nepal",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Malaysia",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Singapore",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Maldives",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nThe athlete who wore a blue shirt is from Nepal.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.\n\nThe athlete who wore a Blue shirt is from which country?\n\n**Options:**\n- **A**. Nepal ✅\n- **B**. Malaysia\n- **C**. Singapore\n- **D**. Maldives\n\n**Correct Answer:** null\n\n**Solution:**\nDraw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nThe athlete who wore a blue shirt is from Nepal.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-8",
+      "passage_text": "Five athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.",
+      "question_text": "Who secured the last position?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bhima",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Chandu",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Dheeru",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Ekra",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nAccording to the table, Dheeru secured the last position.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.\n\nWho secured the last position?\n\n**Options:**\n- **A**. Bhima\n- **B**. Chandu\n- **C**. Dheeru ✅\n- **D**. Ekra\n\n**Correct Answer:** null\n\n**Solution:**\nDraw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nAccording to the table, Dheeru secured the last position.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-9",
+      "passage_text": "Five athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.",
+      "question_text": "Which of the following is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Dheeru is from Nepal.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Ajay wore a green shirt.",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Chandu secured the third position.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Ekra is from Malaysia.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nOnly option B is true.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.\n\nWhich of the following is true?\n\n**Options:**\n- **A**. Dheeru is from Nepal.\n- **B**. Ajay wore a green shirt. ✅\n- **C**. Chandu secured the third position.\n- **D**. Ekra is from Malaysia.\n\n**Correct Answer:** null\n\n**Solution:**\nDraw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nOnly option B is true.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-10",
+      "passage_text": "Five athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.",
+      "question_text": "Which of the following statements is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bhima is from Nepal.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Dheeru finished the race in third position.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The one who secured first position wore a red shirt.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "The one who secured last position wore an indigo shirt.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nDheeru secured last position and he wore an indigo shirt.\nTherefore, the answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nFive athletes - Ajay, Bhima, Chandu, Dheeru and Ekra - participate in a 100m hurdles. Each of these players are from a different country - India, Maldives, Singapore, Malaysia and Nepal. Each of these players wore a shirt of different colours - Red, Blue, Yellow, Green and Indigo. Each of these players secured a different position in the race - 1st, 2nd, 3rd, 4th and 5th. Further:\n(1) Chandu is not from Nepal and the athlete in blue shirt is not from Maldives.\n(2) The athlete from Malaysia wore an yellow shirt.\n(3) Red shirt athlete is not from India.\n(4) Ekra reached the finish line only before the athlete from the Maldives.\n(5) Only one person secured a position between the athletes in blue shirt and green shirt and he is from Singapore.\n(6) The athlete in Red shirt secured a better position than the athlete in Blue shirt.\n(7) Ekra is not wearing red shirt.\n(8) Chandu secured a better position than Ajay.\n(9) Dheeru finished the race after the Singapore athlete.\n(10) The Indian athlete secured the second position and he is Ajay.\n\nWhich of the following statements is true?\n\n**Options:**\n- **A**. Bhima is from Nepal.\n- **B**. Dheeru finished the race in third position.\n- **C**. The one who secured first position wore a red shirt.\n- **D**. The one who secured last position wore an indigo shirt. ✅\n\n**Correct Answer:** null\n\n**Solution:**\nDraw a table as shown in the above figure.\nAjay is from India and he secured the second position.\nChandu secured a better position than Ajay => Chandu is first.\nAjay can wear a shirt of either blue or green colour only => The person in the third place is from Singapore.\nEkra reached the finish line only before the athlete from Maldives => Ekra is 4th and the person from Maldives is 5th.\nDheeru finished the race after the the Singapore athlete => Dheeru finished 5th and is from Maldives.\n=> Bhima secured 3rd place and is from Singapore => Chandu is in yellow shirt and is from Malaysia => Ekra is from Nepal.\nAjay and Ekra wore Blue and green shirts in any order.\nThe athlete in Red shirt secured a better position than the athlete in Blue shirt => Ajay wore a green shirt, Bhima wore a red shirt, Ekra wore a blue shirt and Dheeru wore an Indigo shirt.\nDheeru secured last position and he wore an indigo shirt.\nTherefore, the answer is option D.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-11",
+      "passage_text": "Anil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.",
+      "question_text": "Who among the following is not an alternator?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nAs either A or C can be liars, the answer cannot be determined.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nAnil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.\n\nWho among the following is not an alternator?\n\n**Options:**\n- **A**. A\n- **B**. B\n- **C**. C\n- **D**. Cannot be determined ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nAs either A or C can be liars, the answer cannot be determined.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-12",
+      "passage_text": "Anil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.",
+      "question_text": "What is the sum of prices of all the three cars?",
+      "options": [],
+      "correct_option_data": "5000000",
+      "solution_text": "The first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, sum of costs = 9+ 16+25 = 50 Lakhs",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nAnil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.\n\nWhat is the sum of prices of all the three cars?\n\n**Options:**\n\n**Correct Answer:** 5000000\n\n**Solution:**\nThe first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, sum of costs = 9+ 16+25 = 50 Lakhs",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-13",
+      "passage_text": "Anil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.",
+      "question_text": "Which of the following is the costliest car?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Civic",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Accord",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Duster",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, cost of Accord is 25 Lakhs and is the costliest.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nAnil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.\n\nWhich of the following is the costliest car?\n\n**Options:**\n- **A**. Civic\n- **B**. Accord ✅\n- **C**. Duster\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nThe first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, cost of Accord is 25 Lakhs and is the costliest.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-14",
+      "passage_text": "Anil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.",
+      "question_text": "What is the total number of true statements given by the friends A and C?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, the number of true statements given by A and C together 1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nAnil, who wanted to buy a car, had three options - Civic, Accord and Duster. He asked three of his friends - A, B and C about the price of these cars. Two of his friends were alternators, who always alternate between truth and lie, in any order. The third person was either a truth teller or a liar. A truth teller always tells the truth and a liar always lies. It is known that the prices of the cars were distinct. Following were the statements given by his friends:\n\nA:\n\n(1) Civic is costlier than Accord.\n\n(2) C always lies.\n\n(3) Duster is the costliet of all the three cars.\n\nB:\n\n(1) The cost of one of the cars was equal to the sum of costs of other two cars.\n\n(2) None of us always lies.\n\n(3) If the cost of each of the cars was divided by 100000, the resulting numbers, of which at least one is a single digit number, were squares of consecutive natural numbers.\n\nC:\n\n(1) The cost of Civic is the highest among the three options.\n\n(2) A always lies\n\n(3) Civic is the cheapest among the three options.\n\nWhat is the total number of true statements given by the friends A and C?\n\n**Options:**\n- **A**. 1 ✅\n- **B**. 2\n- **C**. 3\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nThe first and third statements given by C cannot be true at the same time as they contradict each other. As they are alternate statements, both must be either true or both must be false. Hence they are false. \nAs C's first and third statement are false, Civic cannot be the cheapest or most expensive car. Hence, it should be in the middle. \nC's second statement can be either true or false. Two cases arise here. Either C always lies or C's middle statement is true.\nCase I: C always lies.\nIn this case A and B are alternators. Here A's middle statement is true. Hence, 1st and 3rd statement must be false.\nHence, the order will be Duster < Civic < Accord in this case. \nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nCase 2: C's middle statement is true.\nHence, A always lies. Even in this case, the order will be Duster < Civic < Accord.\nB's second statement is false. Hence, it's first and third statements are true. The only consecutive natural number squares where sum of two is equal to third and one of the them is a single digit number are 9, 16 and 25. Hence, the prices are Duster = 9 lakhs, Civic= 16 lakhs and Accord = 25 lakhs\nIn either case, the number of true statements given by A and C together 1",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-15",
+      "passage_text": "In a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.",
+      "question_text": "Which of the following ranks were secured by E in the 7th round?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank  & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption C",
+      "image_url": "https://cracku.in/media/uploads/E1_X0KHysa.PNG,https://cracku.in/media/uploads/E2_q5tuJCG.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.\n\nWhich of the following ranks were secured by E in the 7th round?\n\n**Options:**\n- **A**. 4\n- **B**. 3\n- **C**. 2 ✅\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nThe total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank  & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption C",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-16",
+      "passage_text": "In a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.",
+      "question_text": "What is the sum of the ranks secured by D in the 6th and 7th round?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption B",
+      "image_url": "https://cracku.in/media/uploads/E1_X0KHysa.PNG,https://cracku.in/media/uploads/E2_q5tuJCG.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.\n\nWhat is the sum of the ranks secured by D in the 6th and 7th round?\n\n**Options:**\n- **A**. 5\n- **B**. 6 ✅\n- **C**. 7\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\nThe total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption B",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-17",
+      "passage_text": "In a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.",
+      "question_text": "What is the sum of the ranks secured by D in the 5th and 6th round?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption C",
+      "image_url": "https://cracku.in/media/uploads/E1_X0KHysa.PNG,https://cracku.in/media/uploads/E2_q5tuJCG.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.\n\nWhat is the sum of the ranks secured by D in the 5th and 6th round?\n\n**Options:**\n- **A**. 6\n- **B**. 7\n- **C**. 8 ✅\n- **D**. 9\n\n**Correct Answer:** null\n\n**Solution:**\nThe total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption C",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-18",
+      "passage_text": "In a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.",
+      "question_text": "What is the sum of the ranks secured by F in the 3rd and 7th round?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption A",
+      "image_url": "https://cracku.in/media/uploads/E1_X0KHysa.PNG,https://cracku.in/media/uploads/E2_q5tuJCG.PNG",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nIn a dance competition, eight students A, B, C, D, E, F, G and H participated. The competition took place in eight rounds where five students participate in each round and they were ranked from 1st till 5th.\n\nFollowing table gives the partial details about the ranks achieved by the students in each round. \"X\" represents that the student does not take part in that round of the competition.\n\nIn the end, the Sum of the ranks were calculated, as given in the table below:\n\nSix different students secured the 4th rank in the first 6 rounds.\n\nWhat is the sum of the ranks secured by F in the 3rd and 7th round?\n\n**Options:**\n- **A**. 6 ✅\n- **B**. 7\n- **C**. 8\n- **D**. 9\n\n**Correct Answer:** null\n\n**Solution:**\nThe total of A=7, thus all the remaining ranks must be 1.\nSix different students secured the 4th rank in the first 6 rounds.\nIn the second round, F must secure 2nd rank & H must secure 4th rank.\nSum of ranks of H =13, 1,2 must be the remaining ranks. \nThe sum of the rank of B is 20, thus the remaining values must be (5,4,5,5).\nC must have secured the third rank in round 5. The sum of C= 16 thus, we can fill the remaining ranks.\nSum of the ranks of E =18, hence the possibilities for the remaining ranks =(5,4,4) (5,5,3)\nBut (5,5,3) cannot be filled, as not enough positions for 5 remaining.\nWe can fill the remaining ranks as:\nOption A",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-19",
+      "passage_text": "Consider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.",
+      "question_text": "What is the maximum possible value that can be written on the topmost cube?",
+      "options": [],
+      "correct_option_data": "118",
+      "solution_text": "Let us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\n=(a+c+i+g)+ 2(b+f+h+d) +4e\nThis can be written as x+2y+4z\nNow to maximise this expression we will first have to maximise the term which has the highest coefficient and then maximise the term with the second highest coefficient. \nSo first we will maximise z =e and the y=(b+f+h+d)\nNow for the value of this expression to be maximum we need \"e\" to be maximum.\n\"e\" will only be maximum when rest of the 8 numbers are as low as possible.\nSo the rest of the 8 numbers will take values from 1 to 8.\nTotal of the 8 numbers = 36\nTherefore e=14.....(using (i))\nNow to maximise (ii) we will also need to maximise (b+f+h+d). So they will take values from 5 to 8\nTherefore (b+f+h+d)= 26.\nPutting this and the value of e we get the maximum value on the top cube as 50+26+42= 118\nTherefore the correct answer is 118",
+      "image_url": "https://cracku.in/media/uploads/image%20(2)_6KLArv1.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nConsider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.\n\nWhat is the maximum possible value that can be written on the topmost cube?\n\n**Options:**\n\n**Correct Answer:** 118\n\n**Solution:**\nLet us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\n=(a+c+i+g)+ 2(b+f+h+d) +4e\nThis can be written as x+2y+4z\nNow to maximise this expression we will first have to maximise the term which has the highest coefficient and then maximise the term with the second highest coefficient. \nSo first we will maximise z =e and the y=(b+f+h+d)\nNow for the value of this expression to be maximum we need \"e\" to be maximum.\n\"e\" will only be maximum when rest of the 8 numbers are as low as possible.\nSo the rest of the 8 numbers will take values from 1 to 8.\nTotal of the 8 numbers = 36\nTherefore e=14.....(using (i))\nNow to maximise (ii) we will also need to maximise (b+f+h+d). So they will take values from 5 to 8\nTherefore (b+f+h+d)= 26.\nPutting this and the value of e we get the maximum value on the top cube as 50+26+42= 118\nTherefore the correct answer is 118",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-20",
+      "passage_text": "Consider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.",
+      "question_text": "What is the minimum possible value that can be written on the topmost cube?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "67",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "74",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "82",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\nNow for (ii) to be minimum we need (e) and (b+f+h+d) to be minimum.\nFirst we will have to minimize e, and then (b+f+h+d).\nSo the values it will take will be e=1 and (b+f+h+d)= (2+3+4+5)\nTherefore the value of (ii) will be 50+14+3= 67\nTherefore the minimum value will be 67.",
+      "image_url": "https://cracku.in/media/uploads/image%20(2)_6KLArv1.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nConsider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.\n\nWhat is the minimum possible value that can be written on the topmost cube?\n\n**Options:**\n- **A**. 67 ✅\n- **B**. 70\n- **C**. 74\n- **D**. 82\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\nNow for (ii) to be minimum we need (e) and (b+f+h+d) to be minimum.\nFirst we will have to minimize e, and then (b+f+h+d).\nSo the values it will take will be e=1 and (b+f+h+d)= (2+3+4+5)\nTherefore the value of (ii) will be 50+14+3= 67\nTherefore the minimum value will be 67.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-21",
+      "passage_text": "Consider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.",
+      "question_text": "In how many ways can the cubes in the bottom layer be numbered such that the top most cube has the maximum value written on it?",
+      "options": [],
+      "correct_option_data": "144",
+      "solution_text": "Let us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\nNow for the value of this expression to be maximum we need \"e\" to be maximum.\n\"e\" will only be maximum when rest of the 8 numbers are as low as possible.\nSo the rest of the 8 numbers will take values from 1 to 8.\nTotal of the 8 numbers = 36\nTherefore e=14.....(using (i))\nNow to maximise (ii) we will also need to maximise (b+f+h+i). So they will take values from 5 to 8\nTherefore (b+f+h+d)= 26.\nNow, we know that to get the maximum value on the top cube, the corner cubes will take values from 1 to 4 and the cube on the axes will take values from 5 to 8.\nSo the cubes on the corner can be arranged in 4! ways and the cubes on the axes can also be arranged in 4! ways.\nTherefore the total number of ways is 4!*4!= 24*24=576\nNow if we consider b-f-h-d, we can see that they are essentially 4 equidistant points on a circle. So if we rotate them, then b will be in place of f, if we rotate it once more by 90, b will be in place of h, and if we rotate it once more then it will be in place of d. Since there are 4 positions b can take which would lead to the same arrangement, we have to divide the total number of ways by 4.\nTherefore total number of ways = 576/4= 144.",
+      "image_url": "https://cracku.in/media/uploads/image%20(2)_6KLArv1.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nConsider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.\n\nIn how many ways can the cubes in the bottom layer be numbered such that the top most cube has the maximum value written on it?\n\n**Options:**\n\n**Correct Answer:** 144\n\n**Solution:**\nLet us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\nNow for the value of this expression to be maximum we need \"e\" to be maximum.\n\"e\" will only be maximum when rest of the 8 numbers are as low as possible.\nSo the rest of the 8 numbers will take values from 1 to 8.\nTotal of the 8 numbers = 36\nTherefore e=14.....(using (i))\nNow to maximise (ii) we will also need to maximise (b+f+h+i). So they will take values from 5 to 8\nTherefore (b+f+h+d)= 26.\nNow, we know that to get the maximum value on the top cube, the corner cubes will take values from 1 to 4 and the cube on the axes will take values from 5 to 8.\nSo the cubes on the corner can be arranged in 4! ways and the cubes on the axes can also be arranged in 4! ways.\nTherefore the total number of ways is 4!*4!= 24*24=576\nNow if we consider b-f-h-d, we can see that they are essentially 4 equidistant points on a circle. So if we rotate them, then b will be in place of f, if we rotate it once more by 90, b will be in place of h, and if we rotate it once more then it will be in place of d. Since there are 4 positions b can take which would lead to the same arrangement, we have to divide the total number of ways by 4.\nTherefore total number of ways = 576/4= 144.",
+      "type": "dilr"
+    },
+    {
+      "qid": "dilr-sectionals-25-22",
+      "passage_text": "Consider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.",
+      "question_text": "If the sum of integers on the corners of the bottom row is 20 and the integer on the top cube of the pyramid has the lowest value it can take written on it, all of the following are true, EXCEPT;",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "There are at most 2, two digit numbers on the bottom row.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "The minimum value possible on the top cube  has only two prime factors.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The difference between the maximum value and minimum value on the top cube has only two prime factors.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "At least one of the numbers in the corner of the bottom row is always a two digit number.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\n= (a+c+g+i) + 2(b+f+h+d) +4e........(iii)\nNow we are given that the corner numbers equal 20. Therefore (a+c+g+i)=20.\nFor (iii) to be minimum we'll have to minimize e. So e=1.\nSo we get (b+f+h+d) = 50-20-1........(using (i))\n=29.\nPutting these values in (iii) we get the minimum value possible as 20+2(29)+4(1) = 82.\n82 is 2*41 Therefore Option B is correct.\nIf we consider the number in the bottom row excluding e, which is 1, they add up to 49.\nLet us assume there are 3 , two digit numbers 10,11,12. \nSo the remaining 5 numbers will have to total 16. The least sum we can get for the other 5 number is  2+3+4+5+6 = 20 (excluding 1 since e = 1) . So this case is not possible.\nTherefore Option A is correct.\nThe maximum value when the sum of integers on the corner row is 20 can be calculated as follows :\nWe need to maximize the expression (a+c+g+i) + 2(b+f+h+d) +4e...... (i)\nWe know that (a+c+g+i)= 20 and that for the value on the top to be maximum, the value on the cube at the center of the bottom row has to be 14.\nTherefore (b+f+h+d) = 50-14-20 = 16\nTherefore the value of the (i) will be 20 + 2(16) + 4*14 = 20+32+56 = 108\nSo, Maximum value in this case = 108, Min value in this case= 82. Difference =26. 26 has only 2 prime factors, 13 and 2\nTherefore Option C is correct.\nNow if we consider the corner numbers they add up to 20. They can take the values 2,3,7,8. So it is not necessary that one of them always has to be a two-digit number.\nTherefore Option D is incorrect.",
+      "image_url": "https://cracku.in/media/uploads/image%20(2)_6KLArv1.png",
+      "full_markdown": "### Question (qid: question-card)\n\n**Passage:**\nConsider the following pyramid. All the 9 cubes in the bottom layer have a distinct natural number written on top of them. The sum of the nine numbers written on each cube in the bottom layer is 50. The number written on each of the cubes in the middle and top layers of the pyramid is equal to the sum of the numbers on the four cubes underneath it.\n\nIf the sum of integers on the corners of the bottom row is 20 and the integer on the top cube of the pyramid has the lowest value it can take written on it, all of the following are true, EXCEPT;\n\n**Options:**\n- **A**. There are at most 2, two digit numbers on the bottom row.\n- **B**. The minimum value possible on the top cube  has only two prime factors.\n- **C**. The difference between the maximum value and minimum value on the top cube has only two prime factors.\n- **D**. At least one of the numbers in the corner of the bottom row is always a two digit number. ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider the bottom row of cubes.\nNow we know that a+b+c+d+e+f+g+i= 50......(i)\nThe value on the cubes in the second row will be (a+b+e+d), (b+c+e+f), (e+f+i+h), (h+g+d+e)\nTherefore the value on the cube in the top row will be : a+b+e+d+b+c+e+f+e+f+i+h+h+g+d+e\n= (a+b+c+d+e+f+g+h+i)+ (b+f+h+d) + (3e).......(ii)\n= (a+c+g+i) + 2(b+f+h+d) +4e........(iii)\nNow we are given that the corner numbers equal 20. Therefore (a+c+g+i)=20.\nFor (iii) to be minimum we'll have to minimize e. So e=1.\nSo we get (b+f+h+d) = 50-20-1........(using (i))\n=29.\nPutting these values in (iii) we get the minimum value possible as 20+2(29)+4(1) = 82.\n82 is 2*41 Therefore Option B is correct.\nIf we consider the number in the bottom row excluding e, which is 1, they add up to 49.\nLet us assume there are 3 , two digit numbers 10,11,12. \nSo the remaining 5 numbers will have to total 16. The least sum we can get for the other 5 number is  2+3+4+5+6 = 20 (excluding 1 since e = 1) . So this case is not possible.\nTherefore Option A is correct.\nThe maximum value when the sum of integers on the corner row is 20 can be calculated as follows :\nWe need to maximize the expression (a+c+g+i) + 2(b+f+h+d) +4e...... (i)\nWe know that (a+c+g+i)= 20 and that for the value on the top to be maximum, the value on the cube at the center of the bottom row has to be 14.\nTherefore (b+f+h+d) = 50-14-20 = 16\nTherefore the value of the (i) will be 20 + 2(16) + 4*14 = 20+32+56 = 108\nSo, Maximum value in this case = 108, Min value in this case= 82. Difference =26. 26 has only 2 prime factors, 13 and 2\nTherefore Option C is correct.\nNow if we consider the corner numbers they add up to 20. They can take the values 2,3,7,8. So it is not necessary that one of them always has to be a two-digit number.\nTherefore Option D is incorrect.",
+      "type": "dilr"
+    }
+  ]
+}

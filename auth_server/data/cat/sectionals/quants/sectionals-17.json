@@ -1,0 +1,596 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-17-1",
+      "passage_text": "",
+      "question_text": "Tushar took a loan from a bank at an interest rate of 40%, compounding half yearly for two years. At the end of two years, he paid Rs.10,36,800. What would be the amount paid at the end of two years if the interest rate was 30% compounding annually?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs.8,55,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs.8,45,000",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs.8,65,000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs.8,75,000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume the loan amount to be 100P.\nThe interest rate is 40%, compounding half yearly.\nThat means interest rate = 20% , time duration = 4 cycles of half years.\nSo, the amount paid by Tushar at the end of 2 years = $100P\\left(1.2\\right)^4$ = $100P\\times2.0736\\ $\n=> 207.36P\nIt is given that the amount = 1036800\nSo, 207.36P = 1036800\nP = 5000\nThus, the loan amount = 100P = 5000*100 = Rs.5,00,000\nIf the rate of interest = 30% compounding annually.\nThen, the amount paid at the end of 2 years will be = 500000*(1.3)^2 = Rs.8,45,000",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTushar took a loan from a bank at an interest rate of 40%, compounding half yearly for two years. At the end of two years, he paid Rs.10,36,800. What would be the amount paid at the end of two years if the interest rate was 30% compounding annually?\n\n**Options:**\n- **A**. Rs.8,55,000\n- **B**. Rs.8,45,000 ✅\n- **C**. Rs.8,65,000\n- **D**. Rs.8,75,000\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the loan amount to be 100P.\nThe interest rate is 40%, compounding half yearly.\nThat means interest rate = 20% , time duration = 4 cycles of half years.\nSo, the amount paid by Tushar at the end of 2 years = $100P\\left(1.2\\right)^4$ = $100P\\times2.0736\\ $\n=> 207.36P\nIt is given that the amount = 1036800\nSo, 207.36P = 1036800\nP = 5000\nThus, the loan amount = 100P = 5000*100 = Rs.5,00,000\nIf the rate of interest = 30% compounding annually.\nThen, the amount paid at the end of 2 years will be = 500000*(1.3)^2 = Rs.8,45,000",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-2",
+      "passage_text": "",
+      "question_text": "A and B are running on a circular track of length 400m in the same direction starting from the same point. If A gives B a headstart of 100m, they meet for the fourth time 80 meters ahead of the starting point. If B’s speed is 3m/s and A's speed is $x$ m/s such that $x$ is an integer greater than 3, find $x$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given A’s speed is x m/s. Therefore, relative velocity of A wrt B is x-3 m/s. As x>3, A is gaining on B. The initial distance between the two is the headstart given by A=100m.\nSo, time taken to meet for the first time after A starts running t1 = 100 / (x-3) s\nDistance covered by B in this time = 3* t1 = 300/(x-3) m ---1\nNow to meet for the second time, A has to cover an extra lap. After gaining one lap, he will meet B again. Thus, he has to cover an additional 400 m. The relative velocity is x-3 m/s.\nThus, additional time taken to meet for the second time t2= 400 / (x-3) seconds\nSimilarly, additional time required to meet for the third and fourth time will also be 400/(x-3) seconds.\nDistance covered by B during each period t2=  3*t2 = 1200/(x-3) ----2\nTotal distance covered by B = 3 * 1200/(x-3) + 300/(x-3) + 100 \nThe 100 m is from the headstart.\n= 3900/(x-3) + 100\nThis is of the form 400k+80\nSo 400k = 3900 / (x-3) + 20\nx-3 = 3900/ (400k-20) \nx = 3+3900/(400k-20)\nFor different values of k =1,2,3 .... => 400k-20 = 380, 780, 1180, 1580, 1980, 2380, 2780, 3180,3580\nWe get integral value only for k=2\nSo x = 3+ 5 = 8m/s",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B are running on a circular track of length 400m in the same direction starting from the same point. If A gives B a headstart of 100m, they meet for the fourth time 80 meters ahead of the starting point. If B’s speed is 3m/s and A's speed is $x$ m/s such that $x$ is an integer greater than 3, find $x$.\n\n**Options:**\n- **A**. 12\n- **B**. 9\n- **C**. 6\n- **D**. 8 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nGiven A’s speed is x m/s. Therefore, relative velocity of A wrt B is x-3 m/s. As x>3, A is gaining on B. The initial distance between the two is the headstart given by A=100m.\nSo, time taken to meet for the first time after A starts running t1 = 100 / (x-3) s\nDistance covered by B in this time = 3* t1 = 300/(x-3) m ---1\nNow to meet for the second time, A has to cover an extra lap. After gaining one lap, he will meet B again. Thus, he has to cover an additional 400 m. The relative velocity is x-3 m/s.\nThus, additional time taken to meet for the second time t2= 400 / (x-3) seconds\nSimilarly, additional time required to meet for the third and fourth time will also be 400/(x-3) seconds.\nDistance covered by B during each period t2=  3*t2 = 1200/(x-3) ----2\nTotal distance covered by B = 3 * 1200/(x-3) + 300/(x-3) + 100 \nThe 100 m is from the headstart.\n= 3900/(x-3) + 100\nThis is of the form 400k+80\nSo 400k = 3900 / (x-3) + 20\nx-3 = 3900/ (400k-20) \nx = 3+3900/(400k-20)\nFor different values of k =1,2,3 .... => 400k-20 = 380, 780, 1180, 1580, 1980, 2380, 2780, 3180,3580\nWe get integral value only for k=2\nSo x = 3+ 5 = 8m/s",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-3",
+      "passage_text": "",
+      "question_text": "A right circular cone is cut by a plane parallel to its base, forming a frustum with bottom and top radii of 8 cm and 6 cm, respectively. Given that the slant height of the frustum is 5 cm, Find the ratio of its total surface area to its curved surface area.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "17:7",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "19:9",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "13:6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "11:4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The frustum of a right circular cone looks like this - \nWhere, \nThe radius of the base = R\nThe radius of the circle at the upper end = r\nThe height of the frustum = h\nThe slant height of the frustum = l\nR = 8 cm , r = 6 cm and l = 5 cm\nWe know that the total surface area of frustum = $\\pi l\\left(R+r\\right)+\\pi\\ \\left(R^2+r^2\\right)$\nThe curved surface area of frustum = $\\pi l\\left(R+r\\right)$\nHence, their ratio is $\\dfrac{\\pi l\\left(R+r\\right)+\\pi\\ \\left(R^2+r^2\\right)}{\\pi l\\left(R+r\\right)}$\n=> $1+\\dfrac{\\left(R^2+r^2\\right)}{l\\left(R+r\\right)}$\n=> $1+\\dfrac{\\left(8^2+6^2\\right)}{5\\left(8+6\\right)}=1+\\dfrac{100}{70}$\n=> $\\dfrac{17}{7}$ = 17:7",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA right circular cone is cut by a plane parallel to its base, forming a frustum with bottom and top radii of 8 cm and 6 cm, respectively. Given that the slant height of the frustum is 5 cm, Find the ratio of its total surface area to its curved surface area.\n\n**Options:**\n- **A**. 17:7 ✅\n- **B**. 19:9\n- **C**. 13:6\n- **D**. 11:4\n\n**Correct Answer:** null\n\n**Solution:**\nThe frustum of a right circular cone looks like this - \nWhere, \nThe radius of the base = R\nThe radius of the circle at the upper end = r\nThe height of the frustum = h\nThe slant height of the frustum = l\nR = 8 cm , r = 6 cm and l = 5 cm\nWe know that the total surface area of frustum = $\\pi l\\left(R+r\\right)+\\pi\\ \\left(R^2+r^2\\right)$\nThe curved surface area of frustum = $\\pi l\\left(R+r\\right)$\nHence, their ratio is $\\dfrac{\\pi l\\left(R+r\\right)+\\pi\\ \\left(R^2+r^2\\right)}{\\pi l\\left(R+r\\right)}$\n=> $1+\\dfrac{\\left(R^2+r^2\\right)}{l\\left(R+r\\right)}$\n=> $1+\\dfrac{\\left(8^2+6^2\\right)}{5\\left(8+6\\right)}=1+\\dfrac{100}{70}$\n=> $\\dfrac{17}{7}$ = 17:7",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-4",
+      "passage_text": "",
+      "question_text": "In a 1000m race, B took a headstart of 200m over A so that they finished the race at the same time. If B had been given a 300m headstart, he would have won the race by 5 sec. By what time (in sec) will A beat B in the same race if they both start from the starting point?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9 sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12 sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10 sec",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15 sec",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are told that if B is given a headstart of 200m, A and B finishes the race at the same time. So, during the time A runs 1000m B runs 800m.\nSo, their speeds are in the ratio 5:4.\nWe are told that if B is given 300m headstart, he would have won the race by 5 sec.\nLet's find the distance travelled by A when B covers 700m.\ndistance travelled by A = $\\dfrac{700}{4}\\cdot5\\ =875m$\nSo, A covers 1000-875 = 125m in 5sec.\nA's speed = 25 m/s \nFrom this B's speed = 20 m/s\nTime taken by A to finish the whole race = $\\dfrac{1000}{25}=40$\nTime taken by B to finish the whole race = $\\dfrac{1000}{20}=50$\nSo, A will beat B by 10sec.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a 1000m race, B took a headstart of 200m over A so that they finished the race at the same time. If B had been given a 300m headstart, he would have won the race by 5 sec. By what time (in sec) will A beat B in the same race if they both start from the starting point?\n\n**Options:**\n- **A**. 9 sec\n- **B**. 12 sec\n- **C**. 10 sec ✅\n- **D**. 15 sec\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that if B is given a headstart of 200m, A and B finishes the race at the same time. So, during the time A runs 1000m B runs 800m.\nSo, their speeds are in the ratio 5:4.\nWe are told that if B is given 300m headstart, he would have won the race by 5 sec.\nLet's find the distance travelled by A when B covers 700m.\ndistance travelled by A = $\\dfrac{700}{4}\\cdot5\\ =875m$\nSo, A covers 1000-875 = 125m in 5sec.\nA's speed = 25 m/s \nFrom this B's speed = 20 m/s\nTime taken by A to finish the whole race = $\\dfrac{1000}{25}=40$\nTime taken by B to finish the whole race = $\\dfrac{1000}{20}=50$\nSo, A will beat B by 10sec.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-5",
+      "passage_text": "",
+      "question_text": "Find the sum of all the real values of x which satisfies the given equation.\n\n$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "650",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "750",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "625",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$\nConsidering RHS $-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$\nWe know 1331 = 11*11*11 \nAnd $11\\sqrt{11\\ }=11^{\\dfrac{3}{2}}$\n$-\\left(\\dfrac{1}{\\dfrac{3}{\\dfrac{3}{2}}\\log_{11}11}\\right)^2$ = $-\\dfrac{1}{4}$\n$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\dfrac{1}{4}$\n$2\\left(\\log_5x\\right)^2-7\\log_5x^2=-24$\nAssuming $\\log_5x=p$\n$2p^2-14p=-24$\n$2p^2-14p+24=0$\n$p^2-7p+12=0$\n$p=3\\ or\\ 4$\n$\\log_5x=3$ or $\\log_5x=4$\nx = 125 or 625\nSo, sum of values of x = 125+625 = 750",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of all the real values of x which satisfies the given equation.\n\n$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$\n\n**Options:**\n- **A**. 125\n- **B**. 650\n- **C**. 750 ✅\n- **D**. 625\n\n**Correct Answer:** null\n\n**Solution:**\n$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$\nConsidering RHS $-\\left(\\dfrac{1}{\\log_{11\\sqrt{11}}1331}\\right)^2$\nWe know 1331 = 11*11*11 \nAnd $11\\sqrt{11\\ }=11^{\\dfrac{3}{2}}$\n$-\\left(\\dfrac{1}{\\dfrac{3}{\\dfrac{3}{2}}\\log_{11}11}\\right)^2$ = $-\\dfrac{1}{4}$\n$\\dfrac{2\\left(\\log_5x\\right)^2-7\\log_5x^2}{96}=-\\dfrac{1}{4}$\n$2\\left(\\log_5x\\right)^2-7\\log_5x^2=-24$\nAssuming $\\log_5x=p$\n$2p^2-14p=-24$\n$2p^2-14p+24=0$\n$p^2-7p+12=0$\n$p=3\\ or\\ 4$\n$\\log_5x=3$ or $\\log_5x=4$\nx = 125 or 625\nSo, sum of values of x = 125+625 = 750",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-6",
+      "passage_text": "",
+      "question_text": "Find the number of positive integral values of $k$ for which the quadratic equation $3x^2-\\left(k+3\\right)x+k^2-7=0$ has two distinct and real roots.",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "For a quadratic equation to have distinct and real roots the discriminant should be greater than or equal to zero.\nFor the equation $3x^2-\\left(k+3\\right)x+k^2-7=0$\n$D=b^2-4ac=\\left(-\\left(k+3\\right)\\right)^2-4\\times3\\times\\left(k^2-7\\right)>0$\n$k^2+6k+9-12k^2+84>0$\n$-11k^2+6k+93>0$\nAs the coefficient of $k^2$ is negative, the quadratic will only be positive for values of $k$ between the roots.\nRoots of the quadratic are \n$k=\\dfrac{-6\\pm\\sqrt{6^2-4\\times\\left(-11\\right)\\times93}}{2\\times\\left(-11\\right)}$\n$k=\\dfrac{-6\\pm\\sqrt{36+4092}}{-22}$\n$k=\\dfrac{-6\\pm64.24}{-22}$\n$k=3.19,\\ -2.64$\nSo, the integral values of $k$ are -2, -1, 0, 1, 2 and 3\nBut only three are positive.\nHence, the answer is 3.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of positive integral values of $k$ for which the quadratic equation $3x^2-\\left(k+3\\right)x+k^2-7=0$ has two distinct and real roots.\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\nFor a quadratic equation to have distinct and real roots the discriminant should be greater than or equal to zero.\nFor the equation $3x^2-\\left(k+3\\right)x+k^2-7=0$\n$D=b^2-4ac=\\left(-\\left(k+3\\right)\\right)^2-4\\times3\\times\\left(k^2-7\\right)>0$\n$k^2+6k+9-12k^2+84>0$\n$-11k^2+6k+93>0$\nAs the coefficient of $k^2$ is negative, the quadratic will only be positive for values of $k$ between the roots.\nRoots of the quadratic are \n$k=\\dfrac{-6\\pm\\sqrt{6^2-4\\times\\left(-11\\right)\\times93}}{2\\times\\left(-11\\right)}$\n$k=\\dfrac{-6\\pm\\sqrt{36+4092}}{-22}$\n$k=\\dfrac{-6\\pm64.24}{-22}$\n$k=3.19,\\ -2.64$\nSo, the integral values of $k$ are -2, -1, 0, 1, 2 and 3\nBut only three are positive.\nHence, the answer is 3.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-7",
+      "passage_text": "",
+      "question_text": "Aman Bansal opened a lemonade shop in the US. Each cup of lemonade costs $0.50 to produce. He sells the first 5 cups for $1 each, the next 5 for $0.80 each, and any additional cups for $0.75 each. What is the maximum number of cups he can sell while achieving at least a 60% profit?",
+      "options": [],
+      "correct_option_data": "30",
+      "solution_text": "Let Aman Bansal sold $X$ cups of lemonade juice to earn a profit of 60%. \nNow, the revenue generated by selling X cups of lemonade juice = $1\\times5+0.8\\times5+\\left(X-10\\right)\\times0.75$\n$5+4+0.75X-7.5$\n$9+0.75X-7.5$\n$1.5+0.75X$\nNow, the cost price of X cups of lemonade will be $0.5X$.\n$\\Pr ofit\\ \\%\\ =\\dfrac{\\left(Selling\\ \\Pr ice\\ -Cost\\ price\\right)}{Cost\\ \\Pr ice}\\times100$\n$0.6\\ \\le\\dfrac{1.5+0.75X\\ -0.5X}{0.5X}$\n$0.3X\\ \\le1.5+0.25X$\n$0.05X\\ \\le1.5$\n$X\\ \\le30$\nHence, Aman can sell a maximum of 30 cups of lemonade juice to earn a profit of at least 60%.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAman Bansal opened a lemonade shop in the US. Each cup of lemonade costs $0.50 to produce. He sells the first 5 cups for $1 each, the next 5 for $0.80 each, and any additional cups for $0.75 each. What is the maximum number of cups he can sell while achieving at least a 60% profit?\n\n**Options:**\n\n**Correct Answer:** 30\n\n**Solution:**\nLet Aman Bansal sold $X$ cups of lemonade juice to earn a profit of 60%. \nNow, the revenue generated by selling X cups of lemonade juice = $1\\times5+0.8\\times5+\\left(X-10\\right)\\times0.75$\n$5+4+0.75X-7.5$\n$9+0.75X-7.5$\n$1.5+0.75X$\nNow, the cost price of X cups of lemonade will be $0.5X$.\n$\\Pr ofit\\ \\%\\ =\\dfrac{\\left(Selling\\ \\Pr ice\\ -Cost\\ price\\right)}{Cost\\ \\Pr ice}\\times100$\n$0.6\\ \\le\\dfrac{1.5+0.75X\\ -0.5X}{0.5X}$\n$0.3X\\ \\le1.5+0.25X$\n$0.05X\\ \\le1.5$\n$X\\ \\le30$\nHence, Aman can sell a maximum of 30 cups of lemonade juice to earn a profit of at least 60%.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-8",
+      "passage_text": "",
+      "question_text": "In a right triangle ABC, right angled at B, a prependicular BD is drawn to AC. From D, 2 prependiculars DE and DF are drawn to BC and AB respectively. If DE = 8 and DF = 6, find the area of triangle ABC.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "104.16",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "93.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "91.86",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "107.36",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given a triangle ABC. BD, DE, DF are prependiculars.\nFDEB forms a rectangle,\nFD=BE=6 andFB=DE=8\nLet angle C = x. Then Angle A = 90-x\nAngle ADF = Angle FBD = Angle BDE = x\nSimilarly Angle FDB = Angle DBE = Angle EDC = 90-x.\nNow triangle DFB is similar to triangle AFD.\nDF/AF = FB/DF\n6/AF = 8/6\nAF = 36/8\nSimilarly triangle DEB is similar to triangle CED.\nDE/CE = EB/ED\n8/CE = 6/8\nCE = 64/6\nAB = AF+FB = 36/8+8 = 100/8\nBC = BE+EC = 6+64/6 = 100/6\nArea of triangle = 1/2 * 100/8 * 100/6 = 625/6 = 104.16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a right triangle ABC, right angled at B, a prependicular BD is drawn to AC. From D, 2 prependiculars DE and DF are drawn to BC and AB respectively. If DE = 8 and DF = 6, find the area of triangle ABC.\n\n**Options:**\n- **A**. 104.16 ✅\n- **B**. 93.75\n- **C**. 91.86\n- **D**. 107.36\n\n**Correct Answer:** null\n\n**Solution:**\nGiven a triangle ABC. BD, DE, DF are prependiculars.\nFDEB forms a rectangle,\nFD=BE=6 andFB=DE=8\nLet angle C = x. Then Angle A = 90-x\nAngle ADF = Angle FBD = Angle BDE = x\nSimilarly Angle FDB = Angle DBE = Angle EDC = 90-x.\nNow triangle DFB is similar to triangle AFD.\nDF/AF = FB/DF\n6/AF = 8/6\nAF = 36/8\nSimilarly triangle DEB is similar to triangle CED.\nDE/CE = EB/ED\n8/CE = 6/8\nCE = 64/6\nAB = AF+FB = 36/8+8 = 100/8\nBC = BE+EC = 6+64/6 = 100/6\nArea of triangle = 1/2 * 100/8 * 100/6 = 625/6 = 104.16",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-9",
+      "passage_text": "",
+      "question_text": "Kunal has seven balls of different colours. He wants to give these balls to his three friends, Lakhan, Keshav and Himanshu, such that each receives at least one ball and Keshav receives more balls than the other two friends. Find the number of ways in which Kunal can distribute the seven balls.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "357 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "462 ways",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "420 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "620 ways",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that Kunal has seven balls that are to be distributed among three friends, Lakhan, Keshav, and Himanshu, such that the number of balls received by Keshav is more than the number of the other two friends. There are three cases possible, which are as follows:-\nWe will assume maximum number of balls is received by Keshav in the following cases.\nCase I: When the three friends receive 5 balls, 1 ball and 1 ball, respectively (Keshav = 5 balls)\nTotal number of ways = $\\dfrac{7!}{5! 1! 1!} = 42$ ways\nCase II: When the three friends receive 4 balls, 2 ball and 1 ball, respectively (Keshav = 4 balls)\nTotal number of ways = $\\dfrac{7!}{4! 2! 1!} = 105$ ways\nThe two groups of balls containing one ball and two balls can be distributed between two friends in 2! ways.\nSo, the total number of ways = $105 * 2 = 210$ ways\nCase III: When the three friends receive 3 balls, 2 ball and 2 ball, respectively (Keshav = 3 balls)\nTotal number of ways = $\\dfrac{7!}{3! 2! 2!} = 210$ ways.\nThus, the total no. of ways in which the chocolates can be distributed = (42 + 210 + 210) = 462 ways.\nHence, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nKunal has seven balls of different colours. He wants to give these balls to his three friends, Lakhan, Keshav and Himanshu, such that each receives at least one ball and Keshav receives more balls than the other two friends. Find the number of ways in which Kunal can distribute the seven balls.\n\n**Options:**\n- **A**. 357 ways\n- **B**. 462 ways ✅\n- **C**. 420 ways\n- **D**. 620 ways\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that Kunal has seven balls that are to be distributed among three friends, Lakhan, Keshav, and Himanshu, such that the number of balls received by Keshav is more than the number of the other two friends. There are three cases possible, which are as follows:-\nWe will assume maximum number of balls is received by Keshav in the following cases.\nCase I: When the three friends receive 5 balls, 1 ball and 1 ball, respectively (Keshav = 5 balls)\nTotal number of ways = $\\dfrac{7!}{5! 1! 1!} = 42$ ways\nCase II: When the three friends receive 4 balls, 2 ball and 1 ball, respectively (Keshav = 4 balls)\nTotal number of ways = $\\dfrac{7!}{4! 2! 1!} = 105$ ways\nThe two groups of balls containing one ball and two balls can be distributed between two friends in 2! ways.\nSo, the total number of ways = $105 * 2 = 210$ ways\nCase III: When the three friends receive 3 balls, 2 ball and 2 ball, respectively (Keshav = 3 balls)\nTotal number of ways = $\\dfrac{7!}{3! 2! 2!} = 210$ ways.\nThus, the total no. of ways in which the chocolates can be distributed = (42 + 210 + 210) = 462 ways.\nHence, option B is the correct answer.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-10",
+      "passage_text": "",
+      "question_text": "A tank has two identical-efficiency pipes, A and B. Pipe A operates normally, while B is inside the tank and only activates when the water level reaches it. Using both pipes together fills the tank in 20% less time than A alone. If the tank's height is 10m, find the height of pipe B from the bottom.",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "We are given that the height of the tank is 10m. \nThe two pipes have equal efficiency; let us take the pipe filling rate, meters per unit time, as $r$ for both pipes. \nUsing this, the time taken by Pipe A to fill the tank by itself will be $\\frac{10}{r}=T_A$\nLet us assume that Pipe B is at a height H from the bottom, \nTill the water in the tank reaches height H, only Pipe A will work, and the time taken till height H will be, $\\frac{H}{r}$\nAfter height H, both the pipes will work, and the time taken will be $\\frac{10-H}{2r}$\nThe total time will be, $\\frac{10-H}{2r}+\\frac{H}{r}$ and this equals \n$\\frac{10-H}{2r}+\\frac{H}{r}=0.8\\left(\\frac{10}{r}\\right)$\n$10+H=16$\n$H=6$\nHence, Pipe B will be at a height 6m from the bottom.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank has two identical-efficiency pipes, A and B. Pipe A operates normally, while B is inside the tank and only activates when the water level reaches it. Using both pipes together fills the tank in 20% less time than A alone. If the tank's height is 10m, find the height of pipe B from the bottom.\n\n**Options:**\n\n**Correct Answer:** 6\n\n**Solution:**\nWe are given that the height of the tank is 10m. \nThe two pipes have equal efficiency; let us take the pipe filling rate, meters per unit time, as $r$ for both pipes. \nUsing this, the time taken by Pipe A to fill the tank by itself will be $\\frac{10}{r}=T_A$\nLet us assume that Pipe B is at a height H from the bottom, \nTill the water in the tank reaches height H, only Pipe A will work, and the time taken till height H will be, $\\frac{H}{r}$\nAfter height H, both the pipes will work, and the time taken will be $\\frac{10-H}{2r}$\nThe total time will be, $\\frac{10-H}{2r}+\\frac{H}{r}$ and this equals \n$\\frac{10-H}{2r}+\\frac{H}{r}=0.8\\left(\\frac{10}{r}\\right)$\n$10+H=16$\n$H=6$\nHence, Pipe B will be at a height 6m from the bottom.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-11",
+      "passage_text": "",
+      "question_text": "The vertices of a regular dodecagon(12 sides) are coloured with twelve different colours. What is the probability that the triangle formed by joining the vertices of a dodecagon is not equilateral?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{53}{55}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{52}{55}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{54}{55}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Total number of possible triangles = $^{12}C_3\\ =\\ 220$\nThe triangles AEI, BFJ, CGK and DHL are equilateral among all the possible triangles.\nNumber of equilateral triangles = 4\nThe probability that the triangle is equilateral = $\\dfrac{4}{220}\\ =\\ \\dfrac{1}{55}$\nThe probability of the triangle not being equilateral = $1\\ -\\ \\dfrac{1}{55}\\ =\\ \\dfrac{54}{55}$\nHence, the correct answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe vertices of a regular dodecagon(12 sides) are coloured with twelve different colours. What is the probability that the triangle formed by joining the vertices of a dodecagon is not equilateral?\n\n**Options:**\n- **A**. $\\dfrac{53}{55}$\n- **B**. $\\dfrac{52}{55}$\n- **C**. 1\n- **D**. $\\dfrac{54}{55}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nTotal number of possible triangles = $^{12}C_3\\ =\\ 220$\nThe triangles AEI, BFJ, CGK and DHL are equilateral among all the possible triangles.\nNumber of equilateral triangles = 4\nThe probability that the triangle is equilateral = $\\dfrac{4}{220}\\ =\\ \\dfrac{1}{55}$\nThe probability of the triangle not being equilateral = $1\\ -\\ \\dfrac{1}{55}\\ =\\ \\dfrac{54}{55}$\nHence, the correct answer is option D.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-12",
+      "passage_text": "",
+      "question_text": "A container holds a mixture of two acids, P and Q. When 8 liters of water are added, the concentration of P becomes 40%. Later, 12 liters of the diluted solution is replaced with pure acid Q, resulting in a 60% concentration of Q. The original ratio of P to Q in the container was.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6:5",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us take the initial volumes of the acids as P and Q, respectively. \nWhen 8 litres of water are added, the total volume of the solution will become P+Q+8. \nWe are told that the concentration of P in this new solution after the water has been added is 40%. \nDrawing up the equation for it, we get, \n$P=\\frac{40}{100}\\left(P+Q+8\\right)$\n$2.5P=P+Q+8$\nThis means the total volume can be written as 2.5P. \nWe can express Q in terms of P, \n$Q=1.5P-8$\nWe are then told to remove 12 L of this solution and replace it with 12 L of pure acid Q.\nThe fraction of the solution that has been removed will be $\\frac{12}{2.5P}$. And 12L of pure Q is added after. \nThe new volume of P will be: $P\\left(1-\\frac{12}{2.5P}\\right)=P-4.8$\nThe total volume will not change since 12l is only being replaced, so that the total volume will remain 2.5l. We are told that after the dilution and replacement of Q, the concentration of Q will be 60%. \nThis means the new volume of Q will be: $0.6\\left(2.5P\\right)=1.5P$\nSince the total volume stays the same, the new volume of water in the solution will be: $2.5P-1.5P-P+4.8=4.8$\nThis means when 12l of the solution was replaced, 3.2L of water was taken out,\nDrawing up that equation, we have, \n$8\\left(\\frac{12}{2.5P}\\right)=3.2$\nWe get P=12l. Using this we can get the initial value of Q, which will be 1.5P-8. \nWe get Q=10l. \nThe ratio of the initial volumes of P and Q will hence be, 6:5. \nAlternate Solution: \nLet us take the initial volume of P in the mixture as X, the initial volume of Q in the mixture as Y, and the total volume, which is X+Y as V. \nWe are told that when 8 litres of water is added to dilute the solution, the concentration of P is 40%. \nDrawing up the equation for that we get, \n$\\frac{X}{V+8}=0.4$\n$X=0.4\\left(V+8\\right)$\nThe new total volume would hence be V+8. \nNext, we are told that 12 litres of this solution were taken out and then replaced with acid Q, and we get the concentration of Q at 60%. \nTotal Volume would remain he same since the same amount of solution is being taken out and replaced, and we are only interested in the new volume of acid Q. \nVolume of Acid Q after 12 Litres were taken out will be, $Y\\left(1-\\frac{12}{V+8}\\right)$\nAfter 12 litres of Acid Q is added, the volume will be, \n$Y\\left(1-\\frac{12}{V+8}\\right)+12$\nWe are told that this particular volume of acid is at 60%. \n$\\frac{Y\\left(1-\\frac{12}{V+8}\\right)+12}{V+8}=0.6$\nWe know that X+Y=V and that X=0.4(V+8), substituting this into the equation, we get the value of Y as, \nY=0.6V-3.2\nSubstituting this value of Y in the above equation we get, \n$Y\\left(\\frac{V-4}{V+8}\\right)+12=0.6\\left(V+8\\right)$\n$\\left(0.6V-3.2\\right)\\left(V-4\\right)+12V+96=0.6\\left(V+8\\right)^2$\n$0.6V^2-2.4V-3.2V+12.8+12V+96=0.6V^2+38.4+9.6V$\n$6.4V+108.8=38.4+9.6V$\n$70.4=3.2V$\n$V=22$\nX=0.4(V+8)=12\nY=10\nX:Y=6:5",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA container holds a mixture of two acids, P and Q. When 8 liters of water are added, the concentration of P becomes 40%. Later, 12 liters of the diluted solution is replaced with pure acid Q, resulting in a 60% concentration of Q. The original ratio of P to Q in the container was.\n\n**Options:**\n- **A**. 1:1\n- **B**. 4:3\n- **C**. 7:4\n- **D**. 6:5 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us take the initial volumes of the acids as P and Q, respectively. \nWhen 8 litres of water are added, the total volume of the solution will become P+Q+8. \nWe are told that the concentration of P in this new solution after the water has been added is 40%. \nDrawing up the equation for it, we get, \n$P=\\frac{40}{100}\\left(P+Q+8\\right)$\n$2.5P=P+Q+8$\nThis means the total volume can be written as 2.5P. \nWe can express Q in terms of P, \n$Q=1.5P-8$\nWe are then told to remove 12 L of this solution and replace it with 12 L of pure acid Q.\nThe fraction of the solution that has been removed will be $\\frac{12}{2.5P}$. And 12L of pure Q is added after. \nThe new volume of P will be: $P\\left(1-\\frac{12}{2.5P}\\right)=P-4.8$\nThe total volume will not change since 12l is only being replaced, so that the total volume will remain 2.5l. We are told that after the dilution and replacement of Q, the concentration of Q will be 60%. \nThis means the new volume of Q will be: $0.6\\left(2.5P\\right)=1.5P$\nSince the total volume stays the same, the new volume of water in the solution will be: $2.5P-1.5P-P+4.8=4.8$\nThis means when 12l of the solution was replaced, 3.2L of water was taken out,\nDrawing up that equation, we have, \n$8\\left(\\frac{12}{2.5P}\\right)=3.2$\nWe get P=12l. Using this we can get the initial value of Q, which will be 1.5P-8. \nWe get Q=10l. \nThe ratio of the initial volumes of P and Q will hence be, 6:5. \nAlternate Solution: \nLet us take the initial volume of P in the mixture as X, the initial volume of Q in the mixture as Y, and the total volume, which is X+Y as V. \nWe are told that when 8 litres of water is added to dilute the solution, the concentration of P is 40%. \nDrawing up the equation for that we get, \n$\\frac{X}{V+8}=0.4$\n$X=0.4\\left(V+8\\right)$\nThe new total volume would hence be V+8. \nNext, we are told that 12 litres of this solution were taken out and then replaced with acid Q, and we get the concentration of Q at 60%. \nTotal Volume would remain he same since the same amount of solution is being taken out and replaced, and we are only interested in the new volume of acid Q. \nVolume of Acid Q after 12 Litres were taken out will be, $Y\\left(1-\\frac{12}{V+8}\\right)$\nAfter 12 litres of Acid Q is added, the volume will be, \n$Y\\left(1-\\frac{12}{V+8}\\right)+12$\nWe are told that this particular volume of acid is at 60%. \n$\\frac{Y\\left(1-\\frac{12}{V+8}\\right)+12}{V+8}=0.6$\nWe know that X+Y=V and that X=0.4(V+8), substituting this into the equation, we get the value of Y as, \nY=0.6V-3.2\nSubstituting this value of Y in the above equation we get, \n$Y\\left(\\frac{V-4}{V+8}\\right)+12=0.6\\left(V+8\\right)$\n$\\left(0.6V-3.2\\right)\\left(V-4\\right)+12V+96=0.6\\left(V+8\\right)^2$\n$0.6V^2-2.4V-3.2V+12.8+12V+96=0.6V^2+38.4+9.6V$\n$6.4V+108.8=38.4+9.6V$\n$70.4=3.2V$\n$V=22$\nX=0.4(V+8)=12\nY=10\nX:Y=6:5",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-13",
+      "passage_text": "",
+      "question_text": "At Hamilton Academy, there are 300 students, each of whom represents the academy in both the summer and winter sports. In summer, 60% of them play tennis and the other 40% play badminton. In winter, they play either hockey or swim, but not both. If 56% of the hockey players play tennis in the summer and 30% of the tennis players swim in the winter, then how many students participate in both swimming and badminton?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "27",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Suppose there are x students who both swim and play badminton.\nIt is given that 60% of the students play tennis in the summer, which means $\\dfrac{60}{100}\\ \\times\\ 300\\ =\\ 180$ members play tennis, and 120 members play badminton. Since there are x students who play both badminton and swim, there will be 120 - x students who play badminton and hockey. Because 30% of the tennis players swim in the winter, we can calculate them as $\\dfrac{30}{100}\\ \\times\\ 180\\ =\\ 54$. The tennis players in the summer who play hockey in the winter are 180 - 54 = 126.\nTotal number of hockey players = students who play badminton and hockey +  tennis players in the summer who play hockey in the winter\nHockey players = 120 - x + 126 = 246 - x\nIn the question, it is given that 56% of hockey players play tennis, and we know that the number is 126.\n$\\dfrac{56}{100}\\times\\ \\left(246\\ -\\ x\\right)\\ =\\ 126$\n$\\left(246\\ -\\ x\\right)\\ =\\ 225$\n$x\\ =\\ 21$\nThere are 21 students who both swim and play badminton.\nHence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAt Hamilton Academy, there are 300 students, each of whom represents the academy in both the summer and winter sports. In summer, 60% of them play tennis and the other 40% play badminton. In winter, they play either hockey or swim, but not both. If 56% of the hockey players play tennis in the summer and 30% of the tennis players swim in the winter, then how many students participate in both swimming and badminton?\n\n**Options:**\n- **A**. 24\n- **B**. 36\n- **C**. 21 ✅\n- **D**. 27\n\n**Correct Answer:** null\n\n**Solution:**\nSuppose there are x students who both swim and play badminton.\nIt is given that 60% of the students play tennis in the summer, which means $\\dfrac{60}{100}\\ \\times\\ 300\\ =\\ 180$ members play tennis, and 120 members play badminton. Since there are x students who play both badminton and swim, there will be 120 - x students who play badminton and hockey. Because 30% of the tennis players swim in the winter, we can calculate them as $\\dfrac{30}{100}\\ \\times\\ 180\\ =\\ 54$. The tennis players in the summer who play hockey in the winter are 180 - 54 = 126.\nTotal number of hockey players = students who play badminton and hockey +  tennis players in the summer who play hockey in the winter\nHockey players = 120 - x + 126 = 246 - x\nIn the question, it is given that 56% of hockey players play tennis, and we know that the number is 126.\n$\\dfrac{56}{100}\\times\\ \\left(246\\ -\\ x\\right)\\ =\\ 126$\n$\\left(246\\ -\\ x\\right)\\ =\\ 225$\n$x\\ =\\ 21$\nThere are 21 students who both swim and play badminton.\nHence, the correct answer is option C.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-14",
+      "passage_text": "",
+      "question_text": "Renaissance Capital classifies each employee as either a Researcher or a Trader, and as either an MBA or a PhD. The total number of employees is less than 120. PhD Traders are one-fourth as many as PhD Researchers, making up 12.5% of all Traders. There are more Researchers than Traders. Find the maximum possible number of Researchers who are PhDs.",
+      "options": [],
+      "correct_option_data": "28",
+      "solution_text": "Employees in the firm can be segregated into four different categories based on the segregation mentioned in the question. \nMBA Traders, MBA Researchers, PhD Traders, PhD Researcher. \nWe are told that the PhD traders make up one-fourth of the PhD researchers. \nLet us take the number of PhD traders as X, making the number of PhD researchers 4X. \nAt the same time we are told PhD traders make up for 12.5% of total traders. Since we have taken PhD traders as X, total number of traders will be 8X, making the number of MBA traders as 7X. \nUntil now we have the following numbers, \nMBA Traders: 7X\nMBA Researchers: Unknown\nPhD Traders: X\nPhD Researchers: 4X\nTaking the unknown value of Y, we are told there are less than 120 people in the firm, \nEquation 1 will be, $12X+Y<120$\nWe are also told that there are more researchers than traders, \nEquation 2 will be, $7X+X<4X+Y$, \nGiving us, $4X<Y$\nWe are asked to maximise the number of PhD researchers, which is 4X. \nSince Y is greater than 4X, we want to increase the overall number of employees as much as possible to increase X.\nTaking the total number of employees as 119. \nWe have, 12X+Y=119 while 4X<Y\nWe see that the maximum possible value X can take will be 7, giving us Y=35, this satisfied 4X<Y. \nHence the maximum possible number of PhD researchers will be 4X, which is 28.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRenaissance Capital classifies each employee as either a Researcher or a Trader, and as either an MBA or a PhD. The total number of employees is less than 120. PhD Traders are one-fourth as many as PhD Researchers, making up 12.5% of all Traders. There are more Researchers than Traders. Find the maximum possible number of Researchers who are PhDs.\n\n**Options:**\n\n**Correct Answer:** 28\n\n**Solution:**\nEmployees in the firm can be segregated into four different categories based on the segregation mentioned in the question. \nMBA Traders, MBA Researchers, PhD Traders, PhD Researcher. \nWe are told that the PhD traders make up one-fourth of the PhD researchers. \nLet us take the number of PhD traders as X, making the number of PhD researchers 4X. \nAt the same time we are told PhD traders make up for 12.5% of total traders. Since we have taken PhD traders as X, total number of traders will be 8X, making the number of MBA traders as 7X. \nUntil now we have the following numbers, \nMBA Traders: 7X\nMBA Researchers: Unknown\nPhD Traders: X\nPhD Researchers: 4X\nTaking the unknown value of Y, we are told there are less than 120 people in the firm, \nEquation 1 will be, $12X+Y<120$\nWe are also told that there are more researchers than traders, \nEquation 2 will be, $7X+X<4X+Y$, \nGiving us, $4X<Y$\nWe are asked to maximise the number of PhD researchers, which is 4X. \nSince Y is greater than 4X, we want to increase the overall number of employees as much as possible to increase X.\nTaking the total number of employees as 119. \nWe have, 12X+Y=119 while 4X<Y\nWe see that the maximum possible value X can take will be 7, giving us Y=35, this satisfied 4X<Y. \nHence the maximum possible number of PhD researchers will be 4X, which is 28.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-15",
+      "passage_text": "",
+      "question_text": "If f(x*y)= f(x)f(y), where x,y >0, and f(36)=16, the value of f(1).f(2).f(3).f(6).f(12).f(18) can be?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4096",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1024",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "256",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "64",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "f(1*1)=f(1).f(1)\nf(1)=f(1)$^2$\nThus f(1)= 1 ...(f(1) cannot be 0 as then other values will become 0 because f(n)=f(1).f(n)\nf(36)=f(12)f(3)=16\nf(36)= f(18).f(2)=16\nf(36)=f(6).f(6)=16\nf(6)=+4,-4\nHence, one of the possible values is f(1).f(2).f(3).f(6).f(12).f(18) = 1x16x16x4=1024",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf f(x*y)= f(x)f(y), where x,y >0, and f(36)=16, the value of f(1).f(2).f(3).f(6).f(12).f(18) can be?\n\n**Options:**\n- **A**. 4096\n- **B**. 1024 ✅\n- **C**. 256\n- **D**. 64\n\n**Correct Answer:** null\n\n**Solution:**\nf(1*1)=f(1).f(1)\nf(1)=f(1)$^2$\nThus f(1)= 1 ...(f(1) cannot be 0 as then other values will become 0 because f(n)=f(1).f(n)\nf(36)=f(12)f(3)=16\nf(36)= f(18).f(2)=16\nf(36)=f(6).f(6)=16\nf(6)=+4,-4\nHence, one of the possible values is f(1).f(2).f(3).f(6).f(12).f(18) = 1x16x16x4=1024",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-16",
+      "passage_text": "",
+      "question_text": "Three workers, A, B, and C, are assigned to complete a project. A can complete 1/8 of the project in 1 day, and each of B and C can complete 1/12 of the project in 1 day. If A, B, and C work together for 2 days, and then A leaves, and B finishes the rest of the work in 3 days after C also leaves, what percentage of the total work was done by A and C together?",
+      "options": [],
+      "correct_option_data": "50",
+      "solution_text": "We see the denominators are 8, 12 and 12. So, we can assume such total units of work to complete the project which is a multiple of 8, 12 and 12. \nLet the total units of work to be done to complete the project is 240. \nNow, A complete 1/8 of the project in day. Or, we can say, 1/8*240 = 30 units of work in a day\nSimilarly, B complete 1/12 of the project in day. Or, we can say, 1/12*240 = 20 units of work in a day\nSimilarly, C complete 1/12 of the project in day. Or, we can say, 1/12*240 = 20 units of work in a day\nNow, we know that all three of them worked together for 2 days. Hence, the work done in 2 days = 2*(30+20+20) = 140 units. \nAfter 2 days, A leaves and the remaining work to be done is 240 - 140 = 100 units. \nFurther, we are told that C leaves the project 3 days before the completion of it. It means B would have completed the project.\nLet the total time taken by B to complete the project is 'x' days so the total number of days C would have work = 'x-3' days. \nWork done by B in 'x' days = 20x\nWork done by C in 'x-3' days = 20*(x-3) = 20x - 60\nHence, 20x + 20x - 60 = 100\nOr, 40x = 160 and x = 4\nHence, B worked for 4 more days after A left and C worked for 4 - 3 = 1 more day after A left. \nWe know that A worked for 2 days so the work done by A in 2 days = 2*30 = 60 units\nAlso, C worked for 3 days and the work done by C in 3 days = 3*20 = 60 units. \nHence, the total work done by A and C = 120 units. \nPercentage of work done by A and C = 120/240*100 = 50%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree workers, A, B, and C, are assigned to complete a project. A can complete 1/8 of the project in 1 day, and each of B and C can complete 1/12 of the project in 1 day. If A, B, and C work together for 2 days, and then A leaves, and B finishes the rest of the work in 3 days after C also leaves, what percentage of the total work was done by A and C together?\n\n**Options:**\n\n**Correct Answer:** 50\n\n**Solution:**\nWe see the denominators are 8, 12 and 12. So, we can assume such total units of work to complete the project which is a multiple of 8, 12 and 12. \nLet the total units of work to be done to complete the project is 240. \nNow, A complete 1/8 of the project in day. Or, we can say, 1/8*240 = 30 units of work in a day\nSimilarly, B complete 1/12 of the project in day. Or, we can say, 1/12*240 = 20 units of work in a day\nSimilarly, C complete 1/12 of the project in day. Or, we can say, 1/12*240 = 20 units of work in a day\nNow, we know that all three of them worked together for 2 days. Hence, the work done in 2 days = 2*(30+20+20) = 140 units. \nAfter 2 days, A leaves and the remaining work to be done is 240 - 140 = 100 units. \nFurther, we are told that C leaves the project 3 days before the completion of it. It means B would have completed the project.\nLet the total time taken by B to complete the project is 'x' days so the total number of days C would have work = 'x-3' days. \nWork done by B in 'x' days = 20x\nWork done by C in 'x-3' days = 20*(x-3) = 20x - 60\nHence, 20x + 20x - 60 = 100\nOr, 40x = 160 and x = 4\nHence, B worked for 4 more days after A left and C worked for 4 - 3 = 1 more day after A left. \nWe know that A worked for 2 days so the work done by A in 2 days = 2*30 = 60 units\nAlso, C worked for 3 days and the work done by C in 3 days = 3*20 = 60 units. \nHence, the total work done by A and C = 120 units. \nPercentage of work done by A and C = 120/240*100 = 50%",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-17",
+      "passage_text": "",
+      "question_text": "Determine the value of a + b + c + d + e given that a, b, c, d and e are integers satisfying a > b > c > d > e such that \n\n(5 - a)(5 - b)(5 - c)(5 - d)(5 - e) = 20.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that a > b > c > d > e, and this can be written as,\n- a < - b < - c < - d < - e\nadding 5, we get,\n5 - a < 5 - b < 5 - c < 5 - d < 5 - e\nAll the five factors cannot be positive integers because the value of 5! is 120, and it is the minimum product of five distinct positive integers, and the value is greater than 20, which is the required product. The product must either consist of 2 negative or 4 negative integers. The value 20 can be written as a product of 5 distinct integers in only one way, which is -1 * 1 * -2 * 2 * 5. So, the distinct integers must be (-2) * (-1) * (1) * (2) * (5) = 20, and no other set of values exists that satisfy the given equation.\nSo, the values are\n5 - a = -2 and a = 7\n5 - b = -1 and b = 6\n5 - c = 1 and c = 4\n5 - d = 2 and d = 3\n5 - e = 5 and e = 0\nThe value of a + b + c + d + e = 7 + 6 + 4 + 3 + 0 = 20.\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDetermine the value of a + b + c + d + e given that a, b, c, d and e are integers satisfying a > b > c > d > e such that \n\n(5 - a)(5 - b)(5 - c)(5 - d)(5 - e) = 20.\n\n**Options:**\n- **A**. 18\n- **B**. 20 ✅\n- **C**. 21\n- **D**. 24\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that a > b > c > d > e, and this can be written as,\n- a < - b < - c < - d < - e\nadding 5, we get,\n5 - a < 5 - b < 5 - c < 5 - d < 5 - e\nAll the five factors cannot be positive integers because the value of 5! is 120, and it is the minimum product of five distinct positive integers, and the value is greater than 20, which is the required product. The product must either consist of 2 negative or 4 negative integers. The value 20 can be written as a product of 5 distinct integers in only one way, which is -1 * 1 * -2 * 2 * 5. So, the distinct integers must be (-2) * (-1) * (1) * (2) * (5) = 20, and no other set of values exists that satisfy the given equation.\nSo, the values are\n5 - a = -2 and a = 7\n5 - b = -1 and b = 6\n5 - c = 1 and c = 4\n5 - d = 2 and d = 3\n5 - e = 5 and e = 0\nThe value of a + b + c + d + e = 7 + 6 + 4 + 3 + 0 = 20.\nHence, the correct answer is option B.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-18",
+      "passage_text": "",
+      "question_text": "A shopkeeper sells items A and B at the same price. He makes a profit of 20% on Item A and a loss of 20% on Item B. Later, he adjusts the selling price to a new value, still the same for both items, such that the profit percentage on Item A becomes equal to twice the original loss percentage on Item B. What is the profit or loss percentage on Item B at this new selling price?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Loss, $\\frac{20}{3}\\%$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Profit, $\\frac{30}{9}\\%$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Loss, $\\frac{25}{6}\\%$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Profit, $\\frac{15}{6}\\%$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume an original selling price of Z for both Item A and Item B. \nWe are told that a 20% profit is made on Item A, which means the cost price of Item A will be, \nCP of A=$\\frac{Z}{1.2}$\nWe are also told that a 20% loss is made on Item B, which means the cost price of Item B will be, \nCP of B=$\\frac{Z}{0.8}$\nWe are said to have set a new selling price, such that a profit percentage on A equals twice the loss percentage on B. \nThis means that a profit equal to 40% is made on A. \nNew selling price will be, $\\frac{1.4Z}{1.2}=\\frac{7}{6}Z$\nWe are told that the selling price of B is also equal. \nCost Price of B, as we calculated, was 1.25Z\nThis means a loss is made on selling item B. \nLoss percentage equals, $\\frac{1.25Z-\\frac{7}{6}Z}{1.25Z}=\\frac{20}{3}$\nHence, the loss percentage is 20/3 %.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper sells items A and B at the same price. He makes a profit of 20% on Item A and a loss of 20% on Item B. Later, he adjusts the selling price to a new value, still the same for both items, such that the profit percentage on Item A becomes equal to twice the original loss percentage on Item B. What is the profit or loss percentage on Item B at this new selling price?\n\n**Options:**\n- **A**. Loss, $\\frac{20}{3}\\%$ ✅\n- **B**. Profit, $\\frac{30}{9}\\%$\n- **C**. Loss, $\\frac{25}{6}\\%$\n- **D**. Profit, $\\frac{15}{6}\\%$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume an original selling price of Z for both Item A and Item B. \nWe are told that a 20% profit is made on Item A, which means the cost price of Item A will be, \nCP of A=$\\frac{Z}{1.2}$\nWe are also told that a 20% loss is made on Item B, which means the cost price of Item B will be, \nCP of B=$\\frac{Z}{0.8}$\nWe are said to have set a new selling price, such that a profit percentage on A equals twice the loss percentage on B. \nThis means that a profit equal to 40% is made on A. \nNew selling price will be, $\\frac{1.4Z}{1.2}=\\frac{7}{6}Z$\nWe are told that the selling price of B is also equal. \nCost Price of B, as we calculated, was 1.25Z\nThis means a loss is made on selling item B. \nLoss percentage equals, $\\frac{1.25Z-\\frac{7}{6}Z}{1.25Z}=\\frac{20}{3}$\nHence, the loss percentage is 20/3 %.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-19",
+      "passage_text": "",
+      "question_text": "While travelling, 40% of the males took the AC bus and 70% of the females took the non-AC bus. The revenue generated from AC to Non-AC buses is in the ratio 5:8, and the ratio of the ticket price per passenger in AC to non-AC bus is 5:4. If $a:b$ is the ratio of male to female passengers in the simplest form, what is the value of a+b?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "Let the number of male passengers be 5m and female passengers be 10f.\nNo of AC passengers = 40% of 5m+30%10f = 2m+3f\nNo of Non-AC passengers = 3m+7f\nWe are told that the ticket price of an AC to a Non-AC ticket is in the ratio 5:4. Let us assume the proportional constant to be c.\nThe revenue from AC bus = (2m+3f)*5c\nThe revenue from Non-AC bus = (3m+7f)*4c\nThe ratio of these two is given as 5:8\n(2m+3f)*5c:(3m+7f)*4c=5:8\n$\\dfrac{\\left(2m+3f\\right)5}{\\left(3m+7f\\right)4}=\\dfrac{5}{8}$\n4m = 4f\nm:f = 1:1\nThe ratio of male to female = 5m:10f = 1:2\na:b = 1:2 \nHence, a+b = 3",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhile travelling, 40% of the males took the AC bus and 70% of the females took the non-AC bus. The revenue generated from AC to Non-AC buses is in the ratio 5:8, and the ratio of the ticket price per passenger in AC to non-AC bus is 5:4. If $a:b$ is the ratio of male to female passengers in the simplest form, what is the value of a+b?\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\nLet the number of male passengers be 5m and female passengers be 10f.\nNo of AC passengers = 40% of 5m+30%10f = 2m+3f\nNo of Non-AC passengers = 3m+7f\nWe are told that the ticket price of an AC to a Non-AC ticket is in the ratio 5:4. Let us assume the proportional constant to be c.\nThe revenue from AC bus = (2m+3f)*5c\nThe revenue from Non-AC bus = (3m+7f)*4c\nThe ratio of these two is given as 5:8\n(2m+3f)*5c:(3m+7f)*4c=5:8\n$\\dfrac{\\left(2m+3f\\right)5}{\\left(3m+7f\\right)4}=\\dfrac{5}{8}$\n4m = 4f\nm:f = 1:1\nThe ratio of male to female = 5m:10f = 1:2\na:b = 1:2 \nHence, a+b = 3",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-20",
+      "passage_text": "",
+      "question_text": "Find the number of two-digit numbers that have a total of eight factors.",
+      "options": [],
+      "correct_option_data": "10",
+      "solution_text": "If a number N has a prime factorisation as\nN = $P^aQ^bR^c$\nThen, the number of factors of number N = (a+1)*(b+1)*(c+1)\nA two-digit number having 8 factors can be of the following three forms\n$a^{7}$ or\n$a^{3}*b$\n$a*b*c$\nWe have to check all the cases\nCase I: $a^{7}$\nHere ’a’ can not take any value as the smallest number of this form $2^{7} = 128$ is a three-digit number and we only need two-digit numbers.\nCase II: $a^{3}*b$\nThe possible values are \n(2,3)= 24 \n(2,5) = 40\n(2,7) = 56\n(2,11) = 88\n(3,2) = 54\nCase III: $a*b*c$\nThe possible values are\n(2,3,5) = 30\n(2,3,7) = 42\n(2,3,11) = 66\n(2,3,13) = 78\n(2,5,7) = 70\nWe see that 10 possible two-digit numbers have a total of eight factors.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of two-digit numbers that have a total of eight factors.\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\nIf a number N has a prime factorisation as\nN = $P^aQ^bR^c$\nThen, the number of factors of number N = (a+1)*(b+1)*(c+1)\nA two-digit number having 8 factors can be of the following three forms\n$a^{7}$ or\n$a^{3}*b$\n$a*b*c$\nWe have to check all the cases\nCase I: $a^{7}$\nHere ’a’ can not take any value as the smallest number of this form $2^{7} = 128$ is a three-digit number and we only need two-digit numbers.\nCase II: $a^{3}*b$\nThe possible values are \n(2,3)= 24 \n(2,5) = 40\n(2,7) = 56\n(2,11) = 88\n(3,2) = 54\nCase III: $a*b*c$\nThe possible values are\n(2,3,5) = 30\n(2,3,7) = 42\n(2,3,11) = 66\n(2,3,13) = 78\n(2,5,7) = 70\nWe see that 10 possible two-digit numbers have a total of eight factors.",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-21",
+      "passage_text": "",
+      "question_text": "The two squares given below are placed concentrically such that triangle AYZ is isosceles:\n\nIf the length of the side of both the squares is 20(1+$\\sqrt{\\ 2}$) cm, what is the distance between X and Y?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{\\ 1400+600\\sqrt{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{\\ 2400+800\\sqrt{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{\\ 1800+800\\sqrt{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{\\ 1400+800\\sqrt{2}}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We can draw the following figure:\nThe two squares make 45$^{\\circ\\ }$ angle with each other. Thus the side will be of a/ $\\sqrt{\\ 2}$, a, a/$\\sqrt{\\ 2}$.\nThe side of length  20(1+$\\sqrt{\\ 2}$) cm will be divided into length 10$\\sqrt{\\ 2}$, 20, 10$\\sqrt{\\ 2}$.\nApply pythogorus theorem,\n$XY^2=YZ^2+ZX^2$\nXY= $\\sqrt{\\ 20\\left(1+\\sqrt{\\ 2}\\right)^2+\\left(10\\sqrt{\\ 2}\\right)^2}$\nXY= $\\sqrt{\\ 400\\left(3+2\\sqrt{\\ 2}\\right)+200}$\nXY= $\\sqrt{\\ 1400+800\\sqrt{2}}$",
+      "image_url": "https://cracku.in/media/uploads/image_OGKheBq.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe two squares given below are placed concentrically such that triangle AYZ is isosceles:\n\nIf the length of the side of both the squares is 20(1+$\\sqrt{\\ 2}$) cm, what is the distance between X and Y?\n\n**Options:**\n- **A**. $\\sqrt{\\ 1400+600\\sqrt{2}}$\n- **B**. $\\sqrt{\\ 2400+800\\sqrt{2}}$\n- **C**. $\\sqrt{\\ 1800+800\\sqrt{2}}$\n- **D**. $\\sqrt{\\ 1400+800\\sqrt{2}}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe can draw the following figure:\nThe two squares make 45$^{\\circ\\ }$ angle with each other. Thus the side will be of a/ $\\sqrt{\\ 2}$, a, a/$\\sqrt{\\ 2}$.\nThe side of length  20(1+$\\sqrt{\\ 2}$) cm will be divided into length 10$\\sqrt{\\ 2}$, 20, 10$\\sqrt{\\ 2}$.\nApply pythogorus theorem,\n$XY^2=YZ^2+ZX^2$\nXY= $\\sqrt{\\ 20\\left(1+\\sqrt{\\ 2}\\right)^2+\\left(10\\sqrt{\\ 2}\\right)^2}$\nXY= $\\sqrt{\\ 400\\left(3+2\\sqrt{\\ 2}\\right)+200}$\nXY= $\\sqrt{\\ 1400+800\\sqrt{2}}$",
+      "type": "quants"
+    },
+    {
+      "qid": "quant-sectionals-17-22",
+      "passage_text": "",
+      "question_text": "A pair of tangents are drawn from point P, which is 10 cm away from the centre of the circle, as shown in the figure below. If the length of AB is 8cm, then what is the value of the length of the tangent(in cm)?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The length of the tangent AP can be calculated as,\nAngle BCA = Angle BAT according to the alternative segment theorem\nAngle BAT = 30 degrees\nAngle OAB = 90 - Angle BAT = 90 - 30 = 60 degrees\nTriangle OAB is an isosceles triangle, and the median from O will also be an altitude.\nLength of AD = $\\dfrac{8}{2}\\ =\\ 4$ \nIn triangle OAD,\n$Cos\\ 60\\ =\\ \\dfrac{DA}{OA}\\ $\n$\\dfrac{1}{2}\\ =\\ \\dfrac{4}{OA}\\ $\nOA  = 8cm\nIn triangle POA, applying Pythagoras' theorem, we get,\n$OA^2\\ +\\ AP^2\\ =\\ OP^2$\n$8^2\\ +\\ AP^2\\ =\\ 10^2$\n$\\ AP^2\\ =\\ 36$\nAP = 6cm.\nHence, the correct answer is 6.",
+      "image_url": "https://cracku.in/media/uploads/image_JVOfq32.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA pair of tangents are drawn from point P, which is 10 cm away from the centre of the circle, as shown in the figure below. If the length of AB is 8cm, then what is the value of the length of the tangent(in cm)?\n\n**Options:**\n\n**Correct Answer:** 6\n\n**Solution:**\nThe length of the tangent AP can be calculated as,\nAngle BCA = Angle BAT according to the alternative segment theorem\nAngle BAT = 30 degrees\nAngle OAB = 90 - Angle BAT = 90 - 30 = 60 degrees\nTriangle OAB is an isosceles triangle, and the median from O will also be an altitude.\nLength of AD = $\\dfrac{8}{2}\\ =\\ 4$ \nIn triangle OAD,\n$Cos\\ 60\\ =\\ \\dfrac{DA}{OA}\\ $\n$\\dfrac{1}{2}\\ =\\ \\dfrac{4}{OA}\\ $\nOA  = 8cm\nIn triangle POA, applying Pythagoras' theorem, we get,\n$OA^2\\ +\\ AP^2\\ =\\ OP^2$\n$8^2\\ +\\ AP^2\\ =\\ 10^2$\n$\\ AP^2\\ =\\ 36$\nAP = 6cm.\nHence, the correct answer is 6.",
+      "type": "quants"
+    }
+  ]
+}

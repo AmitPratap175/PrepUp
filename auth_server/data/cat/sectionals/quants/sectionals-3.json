@@ -3,618 +3,643 @@
     {
       "qid": "quant-sectionals-3-1",
       "passage_text": "",
-      "question_text": "There is a sentence that is missing in the paragraph below. Look at the paragraph and decide where (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: As it turns out, much of Earth’s habitable space lies deep under thousands of feet of sediments and rock. \n\nParagraph: The major categories of visible life on Earth have been pretty much settled for centuries. But it wasn’t until the 1980s that scientists found “intraterrestrials” — microscopic organisms living deep below the Earth’s surface ……1…… Soon followed by other revelations of life inside Earth’s crust, these discoveries revealed that we had been missing major branches on the tree of life …….2……. Indeed, these microbes proved that our assumptions about the boundaries of life were wrong — and wildly so ……3…… You might think that any sad little trickle of life in that deep, dark underworld might like to clamber back up to the surface, desperate for life­giving sunlight ……4……. But anyone who’s traveled to a methane seep at the bottom of the sea knows the opposite is true: life flourishes in the dark, and it does so on terms antithetical to those that we who inhabit the thin green layer at the Earth’s surface know.",
+      "question_text": "Find the number of integral values which m can take if $\\log_{0.9}\\left(m^2-18m+45\\right)>\\log_{0.9}28$",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Option 2",
+          "option_text": "8",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Option 4",
+          "option_text": "16",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Option 1",
-          "is_correct": false
+          "option_text": "2",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Option 3",
-          "is_correct": true
+          "option_text": "4",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The sentence fits well in Option 3.\nThe paragraph begins by introducing the discovery of microbes deep underground and how that challenged existing ideas about life on Earth. After discussing how these findings revealed major gaps in our understanding, it states that our assumptions about life’s boundaries were “wildly” wrong. The given sentence fits best at Option 3 because it explains why those assumptions were wrong — it reveals that much of Earth’s livable space isn’t where we thought it was. This placement also gives clear context to the phrase “that deep, dark underworld” in the next sentence, making the transition smooth and meaningful. Without the sentence here, that phrase would lack context.\nOption 1: The sentence does not fit well here. The sentence before this blank already introduces life deep below the Earth’s surface, so placing this sentence here would feel repetitive rather than adding something new.\nOption 2: The sentence does not fit here. The sentence after this blank mentions “these microbes”, which connects from the idea of “life inside Earth’s crust”, which is mentioned in the sentence before the blank. Placing the sentence here would disrupt this flow.\nOption 4: The sentence does not fit here. At this point, the sentence before the sentence presents a certain view and the sentence after that presents a contrasting view to this. Placing the sentence here would disrupt that logical flow.",
+      "solution_text": "We have :\n$\\log_{0.9}\\left(m^2-18m+45\\right)>\\log_{0.9}28$\nNow as base is same but less than 1 \nTherefore sign of inequality will change and we will get \n$m^2-18m+45<28$\n$m^2-18m+17<0$\n(m-17)(m-1)<0\nTherefore m $\\in\\ $(1,17)       (1)\nNow we also have to check for log to be defined \ntherefore for that (m^2-18m+45>0) \nso (m-15)(m-3)>0\ntherefore m$\\in\\ \\in\\ $ (-infinity,3) U (15, infinity)      (2) \nNow taking intersection of points from (1) and (2) \nwe get m as 2 and 16.\nTherefore m can take total 2 values .",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere is a sentence that is missing in the paragraph below. Look at the paragraph and decide where (option 1, 2, 3, or 4) the following sentence would best fit.\n\nSentence: As it turns out, much of Earth’s habitable space lies deep under thousands of feet of sediments and rock. \n\nParagraph: The major categories of visible life on Earth have been pretty much settled for centuries. But it wasn’t until the 1980s that scientists found “intraterrestrials” — microscopic organisms living deep below the Earth’s surface ……1…… Soon followed by other revelations of life inside Earth’s crust, these discoveries revealed that we had been missing major branches on the tree of life …….2……. Indeed, these microbes proved that our assumptions about the boundaries of life were wrong — and wildly so ……3…… You might think that any sad little trickle of life in that deep, dark underworld might like to clamber back up to the surface, desperate for life­giving sunlight ……4……. But anyone who’s traveled to a methane seep at the bottom of the sea knows the opposite is true: life flourishes in the dark, and it does so on terms antithetical to those that we who inhabit the thin green layer at the Earth’s surface know.\n\n**Options:**\n- **A**. Option 2\n- **B**. Option 4\n- **C**. Option 1\n- **D**. Option 3 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe sentence fits well in Option 3.\nThe paragraph begins by introducing the discovery of microbes deep underground and how that challenged existing ideas about life on Earth. After discussing how these findings revealed major gaps in our understanding, it states that our assumptions about life’s boundaries were “wildly” wrong. The given sentence fits best at Option 3 because it explains why those assumptions were wrong — it reveals that much of Earth’s livable space isn’t where we thought it was. This placement also gives clear context to the phrase “that deep, dark underworld” in the next sentence, making the transition smooth and meaningful. Without the sentence here, that phrase would lack context.\nOption 1: The sentence does not fit well here. The sentence before this blank already introduces life deep below the Earth’s surface, so placing this sentence here would feel repetitive rather than adding something new.\nOption 2: The sentence does not fit here. The sentence after this blank mentions “these microbes”, which connects from the idea of “life inside Earth’s crust”, which is mentioned in the sentence before the blank. Placing the sentence here would disrupt this flow.\nOption 4: The sentence does not fit here. At this point, the sentence before the sentence presents a certain view and the sentence after that presents a contrasting view to this. Placing the sentence here would disrupt that logical flow.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of integral values which m can take if $\\log_{0.9}\\left(m^2-18m+45\\right)>\\log_{0.9}28$\n\n**Options:**\n- **A**. 8\n- **B**. 16\n- **C**. 2 ✅\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nWe have :\n$\\log_{0.9}\\left(m^2-18m+45\\right)>\\log_{0.9}28$\nNow as base is same but less than 1 \nTherefore sign of inequality will change and we will get \n$m^2-18m+45<28$\n$m^2-18m+17<0$\n(m-17)(m-1)<0\nTherefore m $\\in\\ $(1,17)       (1)\nNow we also have to check for log to be defined \ntherefore for that (m^2-18m+45>0) \nso (m-15)(m-3)>0\ntherefore m$\\in\\ \\in\\ $ (-infinity,3) U (15, infinity)      (2) \nNow taking intersection of points from (1) and (2) \nwe get m as 2 and 16.\nTherefore m can take total 2 values .",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-2",
       "passage_text": "",
-      "question_text": "The time zones of cities A, B and C are AST, BST and CST respectively. A flight which travels at a constant speed of 600 kmph leaves A at 10:00 A.M AST and reaches B at 2:00 P.M BST. After halting for an hour at B, the flight reaches C at 6:00 P.M CST. If the distance between A and B is 3600 kms and between B and C is 1200 kms. Which of the following can be the distance between A and C assuming cities A and B lies on same latitude .",
+      "question_text": "In a 100 m race, Atul finishes first. He is ahead of Bala by 10 m and ahead of Chirag by 19 m. In another race of the same distance, Bala defeats Dheeraj by 23.5 m. By what distance does Chirag defeat Dheeraj in the 100 m race?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1200 km",
+          "option_text": "10m",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "2000 km",
+          "option_text": "12m",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "4800 km",
-          "is_correct": false
+          "option_text": "15m",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2700 km",
-          "is_correct": true
+          "option_text": "20m",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "It is provided that the speed of the flight is 600 kmph. \nDistance between A and B = 3600 kms.\nTime taken from A to B = $\\dfrac{\\ 3600}{600}$ = 6 hours journey from A to B .\nHere, as it is given that flight starts at 10 am AST and reaches B at 2 pm BST . As we deduced 6 hours journey from A to B, it implies it should have been {10 am + 6 hours} AST = 4 pm AST = 2 pm BST {Inference 1}.\nNow, after halting for 1 hour at B, flight starts its travel towards C. That is given flight starts at 3 pm BST and reaches C at 6 pm CST. \nWe also know the distance between B & C is given to be 1200 kms. As flight travels at 600 kmph : \nTime taken from B to C = $\\dfrac{\\ 1200}{600}$ = 2 hours journey from B to C .\nHere, as the flight starts at 3 pm BST at B, it should be reaching C in 2 hours i.e by 5 pm BST . And it is said flight reaches C at 6 pm CST .\nit implies : 5 pm BST = 6 pm CST {Inference 2}. \nBy using Inference 1 & Inference 2, we can conclude that : If time at B is \"X\" hours then it is {X+2} hours in city A & {X+1} hours in city C.(Example : 2 pm at BST = 3 pm at CST = 4 pm at AST) . \nB = X hrs BST\nC = {X + 1} hrs CST\nA = {X + 2} hrs AST\nDue to rotation of earth, as one moves from West to east the time advances with longitudinal difference . Hence it can be said that : \n1. C lies to the East of B.\n2. A lies to the East of C. \nHence, it can be deduced that C lies in between A & B only. \nFrom the triangle inequality we can say that : {1200 + D} > 3600 \nSo, D > 2400 kms .\nMinimum case : \nIf, all three cities are collinear, then we get $D_{\\min}$ = 3600-1200 = 2400 kms. \nMaximum case : \nAs we deduced that city C must lie towards east of B only (i.e towards right of B) . The maximum distance AC can be made possible if CB is perpendicular to AB :\nIt will form a right angled triangle with right angled at B : \n$D^2=1200^2+3600^2$ \n$D_{\\max}$ = 3794.7 kms.\nTherefore, the possible value of \"D\" should be greater than or equal to 2400 kms and definitely less than or equal to  3794.7 kms .\nHence, the only satisfying option is 2700 km.",
+      "solution_text": "We know that $Time=\\dfrac{Dist}{Speed}$\nLet Atul's speed be A, Bala's speed be B, Chirag's speed be C and Dheeraj's speed be D. \nAtul beats Bala by 10m. This means that by the time Atul covers 100m, Bala only covers 90. Therefore - \n-> $\\dfrac{100}{A}=\\dfrac{90}{B}\\rightarrow1$\nAtul beats Chirag by 19m. This means that by the time Atul covers 100m, Chirag only covers 81m. Therefore - \n-> $\\dfrac{100}{A}=\\dfrac{81}{C}\\rightarrow2$\nEquating eq. 1 and eq. 2 -\n$\\dfrac{90}{B}=\\dfrac{81}{C}$\n$\\dfrac{90}{B}\\times\\dfrac{100}{90}=\\dfrac{81}{C}\\times\\dfrac{100}{90}$\n$\\dfrac{100}{B}=\\dfrac{90}{C}\\rightarrow3$\nBala beats Dheeraj by 23.5m. This means that by the time Bala covers 100m, Dheeraj only covers 76.5m. Therefore -\n-> $\\dfrac{100}{B}=\\dfrac{76.5}{D}\\rightarrow4$\nEquating eq. 3 and eq. 4 -\n$\\dfrac{90}{C}=\\dfrac{76.5}{D}$\n$\\dfrac{90}{C}\\times\\dfrac{100}{90}=\\dfrac{76.5}{D}\\times\\dfrac{100}{90}$\n$\\dfrac{100}{C}=\\dfrac{85}{D}$\nThis means that by the time Chirag covers 100m, Dheeraj covers only 85m. Therefore, Chirag beat Dheeraj by 15m.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe time zones of cities A, B and C are AST, BST and CST respectively. A flight which travels at a constant speed of 600 kmph leaves A at 10:00 A.M AST and reaches B at 2:00 P.M BST. After halting for an hour at B, the flight reaches C at 6:00 P.M CST. If the distance between A and B is 3600 kms and between B and C is 1200 kms. Which of the following can be the distance between A and C assuming cities A and B lies on same latitude .\n\n**Options:**\n- **A**. 1200 km\n- **B**. 2000 km\n- **C**. 4800 km\n- **D**. 2700 km ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIt is provided that the speed of the flight is 600 kmph. \nDistance between A and B = 3600 kms.\nTime taken from A to B = $\\dfrac{\\ 3600}{600}$ = 6 hours journey from A to B .\nHere, as it is given that flight starts at 10 am AST and reaches B at 2 pm BST . As we deduced 6 hours journey from A to B, it implies it should have been {10 am + 6 hours} AST = 4 pm AST = 2 pm BST {Inference 1}.\nNow, after halting for 1 hour at B, flight starts its travel towards C. That is given flight starts at 3 pm BST and reaches C at 6 pm CST. \nWe also know the distance between B & C is given to be 1200 kms. As flight travels at 600 kmph : \nTime taken from B to C = $\\dfrac{\\ 1200}{600}$ = 2 hours journey from B to C .\nHere, as the flight starts at 3 pm BST at B, it should be reaching C in 2 hours i.e by 5 pm BST . And it is said flight reaches C at 6 pm CST .\nit implies : 5 pm BST = 6 pm CST {Inference 2}. \nBy using Inference 1 & Inference 2, we can conclude that : If time at B is \"X\" hours then it is {X+2} hours in city A & {X+1} hours in city C.(Example : 2 pm at BST = 3 pm at CST = 4 pm at AST) . \nB = X hrs BST\nC = {X + 1} hrs CST\nA = {X + 2} hrs AST\nDue to rotation of earth, as one moves from West to east the time advances with longitudinal difference . Hence it can be said that : \n1. C lies to the East of B.\n2. A lies to the East of C. \nHence, it can be deduced that C lies in between A & B only. \nFrom the triangle inequality we can say that : {1200 + D} > 3600 \nSo, D > 2400 kms .\nMinimum case : \nIf, all three cities are collinear, then we get $D_{\\min}$ = 3600-1200 = 2400 kms. \nMaximum case : \nAs we deduced that city C must lie towards east of B only (i.e towards right of B) . The maximum distance AC can be made possible if CB is perpendicular to AB :\nIt will form a right angled triangle with right angled at B : \n$D^2=1200^2+3600^2$ \n$D_{\\max}$ = 3794.7 kms.\nTherefore, the possible value of \"D\" should be greater than or equal to 2400 kms and definitely less than or equal to  3794.7 kms .\nHence, the only satisfying option is 2700 km.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a 100 m race, Atul finishes first. He is ahead of Bala by 10 m and ahead of Chirag by 19 m. In another race of the same distance, Bala defeats Dheeraj by 23.5 m. By what distance does Chirag defeat Dheeraj in the 100 m race?\n\n**Options:**\n- **A**. 10m\n- **B**. 12m\n- **C**. 15m ✅\n- **D**. 20m\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that $Time=\\dfrac{Dist}{Speed}$\nLet Atul's speed be A, Bala's speed be B, Chirag's speed be C and Dheeraj's speed be D. \nAtul beats Bala by 10m. This means that by the time Atul covers 100m, Bala only covers 90. Therefore - \n-> $\\dfrac{100}{A}=\\dfrac{90}{B}\\rightarrow1$\nAtul beats Chirag by 19m. This means that by the time Atul covers 100m, Chirag only covers 81m. Therefore - \n-> $\\dfrac{100}{A}=\\dfrac{81}{C}\\rightarrow2$\nEquating eq. 1 and eq. 2 -\n$\\dfrac{90}{B}=\\dfrac{81}{C}$\n$\\dfrac{90}{B}\\times\\dfrac{100}{90}=\\dfrac{81}{C}\\times\\dfrac{100}{90}$\n$\\dfrac{100}{B}=\\dfrac{90}{C}\\rightarrow3$\nBala beats Dheeraj by 23.5m. This means that by the time Bala covers 100m, Dheeraj only covers 76.5m. Therefore -\n-> $\\dfrac{100}{B}=\\dfrac{76.5}{D}\\rightarrow4$\nEquating eq. 3 and eq. 4 -\n$\\dfrac{90}{C}=\\dfrac{76.5}{D}$\n$\\dfrac{90}{C}\\times\\dfrac{100}{90}=\\dfrac{76.5}{D}\\times\\dfrac{100}{90}$\n$\\dfrac{100}{C}=\\dfrac{85}{D}$\nThis means that by the time Chirag covers 100m, Dheeraj covers only 85m. Therefore, Chirag beat Dheeraj by 15m.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-3",
       "passage_text": "",
-      "question_text": "What is the minimum value of the expression $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$?",
+      "question_text": "In a trapezium ABCD, AB=23 and CD=5. The lengths of the diagonals are AC=25 and BD=17. Find the length of side CB.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "-7",
-          "is_correct": true
+          "option_text": "$4\\sqrt{26}$",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "-13",
+          "option_text": "$5\\sqrt{28}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "-4",
-          "is_correct": false
+          "option_text": "$3\\sqrt{26}$",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "-12",
+          "option_text": "$3\\sqrt{28}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The minimum value will always lie at the inflection points in such questions.\nHere, the points are 2, 5, -8, -15.\nAt x = 5, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 3+0+13-20+5-5 = -4\nAt x = 2, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 0+3+10-17+2-5 = -7\nAt x = -8, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 10+13+0-7-8-5 = 3\nAt x = -15, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 17+20+7-0-15-5 = 24\nSo, the answer is -7.",
+      "solution_text": "Using the given figure, let us extend AB to a point E such that DB is parallel to CE. \nWe can then find the area of the triangle AEC from Heron's Formula. \nUsing Heron's formula, which is $\\triangle=\\sqrt{s\\left(s-a\\right)\\left(s-b\\right)\\left(s-c\\right)}$\nWhere $s$ is the semi-perimeter, $s=\\frac{a+b+c}{2}$\nAE will be 23+5=28, AC will equal 25, and CE will equal DB, which is 17. \n$\\triangle=\\sqrt{\\left(35\\right)\\left(7\\right)\\left(10\\right)\\left(18\\right)}=210$\nWe can drop a perpendicular CF, and then we have, \nUsing this, we get, \n$210=\\frac{1}{2}\\left(AE\\right)\\left(CF\\right)=\\frac{1}{2}\\left(28\\right)\\left(CF\\right)$\n$CF=15$\nFrom Pythagoras' theorem in triangle AFC, we obtain, \n$AF=\\sqrt{AC^2-CF^2}=\\sqrt{625-225}=20$\nFB=AB-AF\nFB=23-20=3. \nUsing Pythagoras' theorem for FBC, we get, \n$CB=\\sqrt{CF^2+FB^2}=\\sqrt{225+9}=\\sqrt{234}=3\\sqrt{26}$\nHence, the answer is $3\\sqrt{26}$\n__________________________________________________________________________________________________________\nALTERNATE EXPLANATION\nLet the figure below denote the trapezium ABCD. We construct 2 perpendiculars, DM and CN, from the vertices D and C on the side AB. Then MNCD is a rectangle [as AB||DC , so considering DM as transveral $\\angle\\ DMN=\\angle MDC=\\ 90^{\\circ\\ }\\ \\ $ ; similarly for the other pair of angles ].  So, we will have DC=MN =5 units. Further, let BN= a units. Then we get $AM=AB-MN-BN=\\ 23-5-a=18-a$ .\nThe figure is updated accordingly.  \nNow, Considering $\\triangle\\ BDM$, $DM^2+\\ BM^2=BD^2$\nor, $DM^2+\\ \\left(5+a\\right)^2=17^2$\nor, $DM^2=17^2-\\ \\left(5+a\\right)^2$ _______(1)\nAgain, considering $\\triangle\\ ACN$, $CN^2+\\ AN^2=AC^2$\nor, $CN^2+\\ \\left(5+18-a\\right)^2=25^2$\nor, $CN^2=25^2-\\left(23-a\\right)^2$ ________(2)\nNow, both DM and CN are altitudes for the same trapezium, and so they have to be equal; hence, comparing (1) and (2),\n$25^2-\\left(23-a\\right)^2=17^2-\\left(5+a\\right)^2$\nor, $25^2-17^2=\\left(23-a\\right)^2-\\left(5+a\\right)^2$\nor, $\\left(25-17\\right)\\left(25+17\\right)=\\left(23-a-5-a\\right)\\left(23-a+5+a\\right)$\nor, $8\\times\\ 42=2\\times\\left(9-a\\right)\\times\\ 28$\nor, a=3 units.\nNow, $CB=DM=\\sqrt{\\ 17^2-\\left(5+3\\right)^2}=15$ units\nFinally, in right triangle CBN, \n$BN^2+CN^2=CB^2$\n=> $CB^2=15^2+3^2=3^2\\left(5^2+1\\right)=3^2\\left(26\\right)$\nor, $CB=\\sqrt{3^2\\left(26\\right)\\ }=3\\sqrt{\\ 26}$ units.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the minimum value of the expression $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$?\n\n**Options:**\n- **A**. -7 ✅\n- **B**. -13\n- **C**. -4\n- **D**. -12\n\n**Correct Answer:** null\n\n**Solution:**\nThe minimum value will always lie at the inflection points in such questions.\nHere, the points are 2, 5, -8, -15.\nAt x = 5, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 3+0+13-20+5-5 = -4\nAt x = 2, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 0+3+10-17+2-5 = -7\nAt x = -8, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 10+13+0-7-8-5 = 3\nAt x = -15, $\\left|x-2\\right|+\\left|x-5\\right|+\\left|x+8\\right|-\\left|x+15\\right|+x-5$ = 17+20+7-0-15-5 = 24\nSo, the answer is -7.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a trapezium ABCD, AB=23 and CD=5. The lengths of the diagonals are AC=25 and BD=17. Find the length of side CB.\n\n**Options:**\n- **A**. $4\\sqrt{26}$\n- **B**. $5\\sqrt{28}$\n- **C**. $3\\sqrt{26}$ ✅\n- **D**. $3\\sqrt{28}$\n\n**Correct Answer:** null\n\n**Solution:**\nUsing the given figure, let us extend AB to a point E such that DB is parallel to CE. \nWe can then find the area of the triangle AEC from Heron's Formula. \nUsing Heron's formula, which is $\\triangle=\\sqrt{s\\left(s-a\\right)\\left(s-b\\right)\\left(s-c\\right)}$\nWhere $s$ is the semi-perimeter, $s=\\frac{a+b+c}{2}$\nAE will be 23+5=28, AC will equal 25, and CE will equal DB, which is 17. \n$\\triangle=\\sqrt{\\left(35\\right)\\left(7\\right)\\left(10\\right)\\left(18\\right)}=210$\nWe can drop a perpendicular CF, and then we have, \nUsing this, we get, \n$210=\\frac{1}{2}\\left(AE\\right)\\left(CF\\right)=\\frac{1}{2}\\left(28\\right)\\left(CF\\right)$\n$CF=15$\nFrom Pythagoras' theorem in triangle AFC, we obtain, \n$AF=\\sqrt{AC^2-CF^2}=\\sqrt{625-225}=20$\nFB=AB-AF\nFB=23-20=3. \nUsing Pythagoras' theorem for FBC, we get, \n$CB=\\sqrt{CF^2+FB^2}=\\sqrt{225+9}=\\sqrt{234}=3\\sqrt{26}$\nHence, the answer is $3\\sqrt{26}$\n__________________________________________________________________________________________________________\nALTERNATE EXPLANATION\nLet the figure below denote the trapezium ABCD. We construct 2 perpendiculars, DM and CN, from the vertices D and C on the side AB. Then MNCD is a rectangle [as AB||DC , so considering DM as transveral $\\angle\\ DMN=\\angle MDC=\\ 90^{\\circ\\ }\\ \\ $ ; similarly for the other pair of angles ].  So, we will have DC=MN =5 units. Further, let BN= a units. Then we get $AM=AB-MN-BN=\\ 23-5-a=18-a$ .\nThe figure is updated accordingly.  \nNow, Considering $\\triangle\\ BDM$, $DM^2+\\ BM^2=BD^2$\nor, $DM^2+\\ \\left(5+a\\right)^2=17^2$\nor, $DM^2=17^2-\\ \\left(5+a\\right)^2$ _______(1)\nAgain, considering $\\triangle\\ ACN$, $CN^2+\\ AN^2=AC^2$\nor, $CN^2+\\ \\left(5+18-a\\right)^2=25^2$\nor, $CN^2=25^2-\\left(23-a\\right)^2$ ________(2)\nNow, both DM and CN are altitudes for the same trapezium, and so they have to be equal; hence, comparing (1) and (2),\n$25^2-\\left(23-a\\right)^2=17^2-\\left(5+a\\right)^2$\nor, $25^2-17^2=\\left(23-a\\right)^2-\\left(5+a\\right)^2$\nor, $\\left(25-17\\right)\\left(25+17\\right)=\\left(23-a-5-a\\right)\\left(23-a+5+a\\right)$\nor, $8\\times\\ 42=2\\times\\left(9-a\\right)\\times\\ 28$\nor, a=3 units.\nNow, $CB=DM=\\sqrt{\\ 17^2-\\left(5+3\\right)^2}=15$ units\nFinally, in right triangle CBN, \n$BN^2+CN^2=CB^2$\n=> $CB^2=15^2+3^2=3^2\\left(5^2+1\\right)=3^2\\left(26\\right)$\nor, $CB=\\sqrt{3^2\\left(26\\right)\\ }=3\\sqrt{\\ 26}$ units.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-4",
       "passage_text": "",
-      "question_text": "Let AB be the diameter of the circle, and C be the point on AB such that AC: CB is 6:7. Let D be the point on the circle such that CD is perpendicular to AB, and DE be the diameter passing through the centre of the circle. Find the ratio of the area of $\\triangle ABD$ to the area of $\\triangle CDE$.",
+      "question_text": "Ravi is planning to buy rice in bulk. The grocery store offers him two types of discounts: \n\nA) He receives a 10% discount on his entire purchase, or \n\nB) He gets 1 kg of rice free for every 10 kg of rice he buys. \n\nRavi needs 100 kg of rice. Which deal is better?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "13:7",
-          "is_correct": false
+          "option_text": "Deal A is better than Deal B by $1\\ \\dfrac{9}{91}\\ \\%\\ $",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "13:1",
-          "is_correct": true
+          "option_text": "Deal B is better than Deal A by $1\\ \\dfrac{9}{91}\\ \\%\\ $",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "13:5",
+          "option_text": "Deal A is better than Deal B by $1\\ \\dfrac{1}{9}\\ \\%\\ $",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "12:7",
+          "option_text": "Both deals are the same",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the value of length AC be 6x, and the length of CB be 7x. Let the radius of the circle be r.\nWe know that the length of AB has to be 2r.\n$2r\\ =\\ 6x\\ +\\ 7x\\ =\\ 13x$\n$r\\ =\\ 6.5x$\nAO = 6.5x = 6x + CO\nCO = 6.5x - 6x = 0.5\nWe can see that CO is the median of the triangle CDE, and the area of CDE = 2 * area of COD\nArea of COD = $\\dfrac{1}{2}\\ \\times\\ CO\\ \\times\\ CD\\ =\\ \\dfrac{1}{2}\\ \\times\\ 0.5x\\ \\times\\ CD\\ =\\ \\dfrac{x}{4}\\ \\times\\ CD$\nArea of CDE = 2 * Area of COD = $2\\times\\ \\dfrac{x}{4}\\ \\times\\ CD\\ =\\ \\dfrac{x}{2}\\ \\times\\ CD$\nArea of ADB = $\\dfrac{1}{2}\\ \\times\\ AB\\ \\times\\ CD\\ =\\ \\dfrac{1}{2}\\ \\times\\ 13x\\ \\times\\ CD\\ =\\ \\dfrac{13x}{2}\\ \\times\\ CD$\n$\\dfrac{Area\\ of\\ ADB}{Area\\ of\\ CDE}\\ =\\ \\dfrac{\\frac{13x}{2}\\ \\times\\ CD}{\\frac{x}{2}\\ \\times\\ CD}\\ =\\ 13$\nHence, the correct answer is option B.",
+      "solution_text": "Let Ravi pay Rs. x for 1 kg of rice, ie the price in which the shop keeper sells rice is Rs x.\nFor Deal A, he gets a discount of 10% on the price. Total amount Ravi will have to pay is $90\\ \\%\\ \\ of\\ 100x=90x$\nFor Deal B, he gets 1 kg of rice free for every 10 kg of rice purchased. \nSo he gets 9 kg of rice free for 90 kgs of rice purchased , ie in total he gets 99 kg but pays for only 90. The remaining 1 kg rice that is required will have no discount. so in total he will have to pay for 90+1=91 kg of rice, which will cost him  Rs.91x \nClearly deal A is better than Deal B.\nDeal A is better than Deal B by $\\dfrac{Amount_{Deal\\ B}-Amount_{Deal\\ A}}{Amount_{Deal\\ B}}\\times\\ 100\\%=\\dfrac{91x-90x}{91x}\\times\\ 100=\\dfrac{100}{91}\\ \\%\\ =1\\ \\dfrac{9}{91}\\ \\%\\ $",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nLet AB be the diameter of the circle, and C be the point on AB such that AC: CB is 6:7. Let D be the point on the circle such that CD is perpendicular to AB, and DE be the diameter passing through the centre of the circle. Find the ratio of the area of $\\triangle ABD$ to the area of $\\triangle CDE$.\n\n**Options:**\n- **A**. 13:7\n- **B**. 13:1 ✅\n- **C**. 13:5\n- **D**. 12:7\n\n**Correct Answer:** null\n\n**Solution:**\nLet the value of length AC be 6x, and the length of CB be 7x. Let the radius of the circle be r.\nWe know that the length of AB has to be 2r.\n$2r\\ =\\ 6x\\ +\\ 7x\\ =\\ 13x$\n$r\\ =\\ 6.5x$\nAO = 6.5x = 6x + CO\nCO = 6.5x - 6x = 0.5\nWe can see that CO is the median of the triangle CDE, and the area of CDE = 2 * area of COD\nArea of COD = $\\dfrac{1}{2}\\ \\times\\ CO\\ \\times\\ CD\\ =\\ \\dfrac{1}{2}\\ \\times\\ 0.5x\\ \\times\\ CD\\ =\\ \\dfrac{x}{4}\\ \\times\\ CD$\nArea of CDE = 2 * Area of COD = $2\\times\\ \\dfrac{x}{4}\\ \\times\\ CD\\ =\\ \\dfrac{x}{2}\\ \\times\\ CD$\nArea of ADB = $\\dfrac{1}{2}\\ \\times\\ AB\\ \\times\\ CD\\ =\\ \\dfrac{1}{2}\\ \\times\\ 13x\\ \\times\\ CD\\ =\\ \\dfrac{13x}{2}\\ \\times\\ CD$\n$\\dfrac{Area\\ of\\ ADB}{Area\\ of\\ CDE}\\ =\\ \\dfrac{\\frac{13x}{2}\\ \\times\\ CD}{\\frac{x}{2}\\ \\times\\ CD}\\ =\\ 13$\nHence, the correct answer is option B.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRavi is planning to buy rice in bulk. The grocery store offers him two types of discounts: \n\nA) He receives a 10% discount on his entire purchase, or \n\nB) He gets 1 kg of rice free for every 10 kg of rice he buys. \n\nRavi needs 100 kg of rice. Which deal is better?\n\n**Options:**\n- **A**. Deal A is better than Deal B by $1\\ \\dfrac{9}{91}\\ \\%\\ $ ✅\n- **B**. Deal B is better than Deal A by $1\\ \\dfrac{9}{91}\\ \\%\\ $\n- **C**. Deal A is better than Deal B by $1\\ \\dfrac{1}{9}\\ \\%\\ $\n- **D**. Both deals are the same\n\n**Correct Answer:** null\n\n**Solution:**\nLet Ravi pay Rs. x for 1 kg of rice, ie the price in which the shop keeper sells rice is Rs x.\nFor Deal A, he gets a discount of 10% on the price. Total amount Ravi will have to pay is $90\\ \\%\\ \\ of\\ 100x=90x$\nFor Deal B, he gets 1 kg of rice free for every 10 kg of rice purchased. \nSo he gets 9 kg of rice free for 90 kgs of rice purchased , ie in total he gets 99 kg but pays for only 90. The remaining 1 kg rice that is required will have no discount. so in total he will have to pay for 90+1=91 kg of rice, which will cost him  Rs.91x \nClearly deal A is better than Deal B.\nDeal A is better than Deal B by $\\dfrac{Amount_{Deal\\ B}-Amount_{Deal\\ A}}{Amount_{Deal\\ B}}\\times\\ 100\\%=\\dfrac{91x-90x}{91x}\\times\\ 100=\\dfrac{100}{91}\\ \\%\\ =1\\ \\dfrac{9}{91}\\ \\%\\ $",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-5",
       "passage_text": "",
-      "question_text": "Prakash works as a sales manager at Reddy Electronics and has a monthly revenue target of selling 40 air conditioners at a profit of 10%. However, if he marks up the price by 'M' per cent on the cost price and then offers a discount of 20% on the marked price, he can complete his revenue target by just selling 25 air conditioners. Prakash has decided to increase the marked price by 25% further and is not offering any discount. Find the number of air conditioners he needs to sell to achieve his monthly revenue target.",
+      "question_text": "A goat is tied with a rope of length 5 m at one corner of a rectangular grass field measuring 12 m by 8 m. Assuming the goat can graze only within the boundaries of the field, what percentage of the total field area is accessible for grazing?\n\n(Take: $\\pi\\ =\\dfrac{22}{7}$)",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "14",
+          "option_text": "$22.64\\%$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "15",
-          "is_correct": false
+          "option_text": "$20.46\\%$",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "16",
-          "is_correct": true
+          "option_text": "$18.66\\%$",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "17",
+          "option_text": "$20.06\\%$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the Cost Price (CP) of one AC be ₹100\nSince profit is 10%, the selling price in the first case:\nSP=100+10% of 100=₹110\nSo, Revenue target=v40×110 = ₹4400\nSecond Scenario (Markup = M%, Discount = 20%, sells 25 ACs)\nLet markup be M%, so marked price = ₹100 x (1+M/100)\nSelling price after 20% discount:\nSP = ₹100×(1+M/100)×0.8\nRevenue from selling 25 ACs =  25×₹100×(1+M/100)×0.8= ₹4400\nDivide both sides by 100:\n25×(1+M/100)×0.8=44\n1+M/100 = 2.2\nM = 1.2\nSo the markup is 120%.\nNew Scenario: Further 25% Increase on Marked Price, No Discount\nNew Marked Price: Old MP = ₹100×2.2 = ₹220\nNew MP = ₹220×1.25= ₹275\nSP = ₹275\nWe want to get total revenue = ₹4400\nSo, Number of ACs = 4400/275 =16\nPrakash needs to sell 16 air conditioners to achieve his revenue target.",
+      "solution_text": "As the goat is tied at corner of rectangle field with a rope of length of 5 metres, let us first visualise the area that can be covered by goat : \nSo, the goat can have a trajectory whose area is a circle with radius 5 metres (rope length). As it is tied to the corner of field, the corner would be centre of the circle . \nHence, the area inside field which goat can cover $=\\dfrac{\\ 1}{4}\\pi\\left(5^2\\right)=\\dfrac{\\ 25\\pi\\ }{4}.$\nAnd the total area of grass field  $=lb\\ =12\\times8=96\\ m^2$\nTherefore, the fraction of area = (Grazing field)/(Total rectangular area) $=\\ \\dfrac{\\ 25\\pi\\ }{4\\left(96\\right)}$\n                                            =  $\\dfrac{\\ 25\\left(22\\right)}{7\\times4\\times96}$\n                                           =  $0.2046$\n                                           =  $20.46\\%$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPrakash works as a sales manager at Reddy Electronics and has a monthly revenue target of selling 40 air conditioners at a profit of 10%. However, if he marks up the price by 'M' per cent on the cost price and then offers a discount of 20% on the marked price, he can complete his revenue target by just selling 25 air conditioners. Prakash has decided to increase the marked price by 25% further and is not offering any discount. Find the number of air conditioners he needs to sell to achieve his monthly revenue target.\n\n**Options:**\n- **A**. 14\n- **B**. 15\n- **C**. 16 ✅\n- **D**. 17\n\n**Correct Answer:** null\n\n**Solution:**\nLet the Cost Price (CP) of one AC be ₹100\nSince profit is 10%, the selling price in the first case:\nSP=100+10% of 100=₹110\nSo, Revenue target=v40×110 = ₹4400\nSecond Scenario (Markup = M%, Discount = 20%, sells 25 ACs)\nLet markup be M%, so marked price = ₹100 x (1+M/100)\nSelling price after 20% discount:\nSP = ₹100×(1+M/100)×0.8\nRevenue from selling 25 ACs =  25×₹100×(1+M/100)×0.8= ₹4400\nDivide both sides by 100:\n25×(1+M/100)×0.8=44\n1+M/100 = 2.2\nM = 1.2\nSo the markup is 120%.\nNew Scenario: Further 25% Increase on Marked Price, No Discount\nNew Marked Price: Old MP = ₹100×2.2 = ₹220\nNew MP = ₹220×1.25= ₹275\nSP = ₹275\nWe want to get total revenue = ₹4400\nSo, Number of ACs = 4400/275 =16\nPrakash needs to sell 16 air conditioners to achieve his revenue target.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA goat is tied with a rope of length 5 m at one corner of a rectangular grass field measuring 12 m by 8 m. Assuming the goat can graze only within the boundaries of the field, what percentage of the total field area is accessible for grazing?\n\n(Take: $\\pi\\ =\\dfrac{22}{7}$)\n\n**Options:**\n- **A**. $22.64\\%$\n- **B**. $20.46\\%$ ✅\n- **C**. $18.66\\%$\n- **D**. $20.06\\%$\n\n**Correct Answer:** null\n\n**Solution:**\nAs the goat is tied at corner of rectangle field with a rope of length of 5 metres, let us first visualise the area that can be covered by goat : \nSo, the goat can have a trajectory whose area is a circle with radius 5 metres (rope length). As it is tied to the corner of field, the corner would be centre of the circle . \nHence, the area inside field which goat can cover $=\\dfrac{\\ 1}{4}\\pi\\left(5^2\\right)=\\dfrac{\\ 25\\pi\\ }{4}.$\nAnd the total area of grass field  $=lb\\ =12\\times8=96\\ m^2$\nTherefore, the fraction of area = (Grazing field)/(Total rectangular area) $=\\ \\dfrac{\\ 25\\pi\\ }{4\\left(96\\right)}$\n                                            =  $\\dfrac{\\ 25\\left(22\\right)}{7\\times4\\times96}$\n                                           =  $0.2046$\n                                           =  $20.46\\%$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-6",
       "passage_text": "",
-      "question_text": "In a trapezium ABCD, AB||CD and AB=4CD. Point E is the midpoint of the diagonal AC. If the Area of the triangle ADE is $a$ units and that of the trapezium ABCD is $b$ units, then find the value of $\\dfrac{b}{a}$.",
-      "options": [],
-      "correct_option_data": "10",
-      "solution_text": "The figure will look like\nAs E is the midpoint of AC, so DE is the median of triangle ACD\nSo, Area of triangle ADE = Area of triangle CDE = $p$ sq. units because a median divides the triangle in two halves.\nNow, area of triangle ACD = $\\dfrac{1}{2}\\times CD\\times h$ \nAlso, area of triangle ACD = $2p$ sq. units\nSo, $\\dfrac{1}{2}\\times CD\\times h=2p$\nor, $p=\\dfrac{1}{4}\\times CD\\times h$ . . . (1)\nNow, Area of trapezium ABCD = $\\dfrac{1}{2}\\times\\left(a+4a\\right)\\times h$\nArea of trapezium ABCD = $q=\\dfrac{1}{2}\\times5a\\times h$ . . .(2)\nDivide eqn (2) by eqn (1)\n$\\dfrac{q}{p}=\\dfrac{\\dfrac{1}{2}\\times5a\\times h}{\\dfrac{1}{4}\\times a\\times h}$\nor, $\\dfrac{q}{p}=10$\nHence, the answer is 10.",
+      "question_text": "If $\\left[x\\right]+\\left[y\\right]+\\left\\{z\\right\\}=9.4$\n\n$\\left[x\\right]+\\left\\{y\\right\\}+\\left[z\\right]=11.8$\n\n$\\left\\{x\\right\\}+\\left[y\\right]+\\left[z\\right]=10.1$\n\nThen find the value of $\\left[x-y+z\\right]$\n\n(where, $\\left[x\\right]$ denotes the greatest integer less than or equal to $x$ and $\\left\\{x\\right\\}$ denotes the fractional part of $x$)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given,\n$\\left[x\\right]$ denotes the greatest integer less than or equal to $x$ and $\\left\\{x\\right\\}$ denotes the fractional part of $x$\nSo from the equation, \n$\\left[x\\right]+\\left[y\\right]+\\left\\{z\\right\\}=9.4$\nwe can say, $\\left\\{z\\right\\}=0.4$ and $\\left[x\\right]+\\left[y\\right]=9$ ------>(1)\n(as decimal part will only be in $\\left\\{z\\right\\}$ and $\\left[x\\right]$ and $\\left[y\\right]$ will have integral values).\nSimilarly, $\\left[x\\right]+\\left\\{y\\right\\}+\\left[z\\right]=11.8$\nor, $\\left\\{y\\right\\}=0.8$ and  $\\left[x\\right]+\\left[z\\right]=11$ ------->(2)\nAlso, $\\left\\{x\\right\\}+\\left[y\\right]+\\left[z\\right]=10.1$\nor, $\\left\\{x\\right\\}=0.1$ and $\\left[y\\right]+\\left[z\\right]=10$ -------->(3)\nNow adding equation (1),(2) and (3),\n$\\left(\\left[x\\right]+\\left[y\\right]\\right)+\\left(\\left[x\\right]+\\left[z\\right]\\right)+\\left(\\left[y\\right]+\\left[z\\right]\\right)=9+11+10$\nor, $2\\left(\\left[x\\right]+\\left[y\\right]+\\left[z\\right]\\right)=30$\nso, $\\left[x\\right]+\\left[y\\right]+\\left[z\\right]=15$\nNow from equation (1), since $\\left[x\\right]+\\left[y\\right]=9$, so $\\left[z\\right]=15-9=6$\nSimilarly we can find $\\left[y\\right]=4$ and $\\left[x\\right]=5$\nNow, $x=\\left[x\\right]+\\left\\{x\\right\\}=5+0.1=5.1$\n$y=\\left[y\\right]+\\left\\{y\\right\\}=4+0.8=4.8$\n$z=\\left[z\\right]+\\left\\{z\\right\\}=6+0.4=6.4$\nSo, $x-y+z=5.1-4.8+6.4=6.7$\nSo, $\\left[x-y+z\\right]=6$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a trapezium ABCD, AB||CD and AB=4CD. Point E is the midpoint of the diagonal AC. If the Area of the triangle ADE is $a$ units and that of the trapezium ABCD is $b$ units, then find the value of $\\dfrac{b}{a}$.\n\n**Options:**\n\n**Correct Answer:** 10\n\n**Solution:**\nThe figure will look like\nAs E is the midpoint of AC, so DE is the median of triangle ACD\nSo, Area of triangle ADE = Area of triangle CDE = $p$ sq. units because a median divides the triangle in two halves.\nNow, area of triangle ACD = $\\dfrac{1}{2}\\times CD\\times h$ \nAlso, area of triangle ACD = $2p$ sq. units\nSo, $\\dfrac{1}{2}\\times CD\\times h=2p$\nor, $p=\\dfrac{1}{4}\\times CD\\times h$ . . . (1)\nNow, Area of trapezium ABCD = $\\dfrac{1}{2}\\times\\left(a+4a\\right)\\times h$\nArea of trapezium ABCD = $q=\\dfrac{1}{2}\\times5a\\times h$ . . .(2)\nDivide eqn (2) by eqn (1)\n$\\dfrac{q}{p}=\\dfrac{\\dfrac{1}{2}\\times5a\\times h}{\\dfrac{1}{4}\\times a\\times h}$\nor, $\\dfrac{q}{p}=10$\nHence, the answer is 10.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $\\left[x\\right]+\\left[y\\right]+\\left\\{z\\right\\}=9.4$\n\n$\\left[x\\right]+\\left\\{y\\right\\}+\\left[z\\right]=11.8$\n\n$\\left\\{x\\right\\}+\\left[y\\right]+\\left[z\\right]=10.1$\n\nThen find the value of $\\left[x-y+z\\right]$\n\n(where, $\\left[x\\right]$ denotes the greatest integer less than or equal to $x$ and $\\left\\{x\\right\\}$ denotes the fractional part of $x$)\n\n**Options:**\n- **A**. 5\n- **B**. 6 ✅\n- **C**. 7\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\nGiven,\n$\\left[x\\right]$ denotes the greatest integer less than or equal to $x$ and $\\left\\{x\\right\\}$ denotes the fractional part of $x$\nSo from the equation, \n$\\left[x\\right]+\\left[y\\right]+\\left\\{z\\right\\}=9.4$\nwe can say, $\\left\\{z\\right\\}=0.4$ and $\\left[x\\right]+\\left[y\\right]=9$ ------>(1)\n(as decimal part will only be in $\\left\\{z\\right\\}$ and $\\left[x\\right]$ and $\\left[y\\right]$ will have integral values).\nSimilarly, $\\left[x\\right]+\\left\\{y\\right\\}+\\left[z\\right]=11.8$\nor, $\\left\\{y\\right\\}=0.8$ and  $\\left[x\\right]+\\left[z\\right]=11$ ------->(2)\nAlso, $\\left\\{x\\right\\}+\\left[y\\right]+\\left[z\\right]=10.1$\nor, $\\left\\{x\\right\\}=0.1$ and $\\left[y\\right]+\\left[z\\right]=10$ -------->(3)\nNow adding equation (1),(2) and (3),\n$\\left(\\left[x\\right]+\\left[y\\right]\\right)+\\left(\\left[x\\right]+\\left[z\\right]\\right)+\\left(\\left[y\\right]+\\left[z\\right]\\right)=9+11+10$\nor, $2\\left(\\left[x\\right]+\\left[y\\right]+\\left[z\\right]\\right)=30$\nso, $\\left[x\\right]+\\left[y\\right]+\\left[z\\right]=15$\nNow from equation (1), since $\\left[x\\right]+\\left[y\\right]=9$, so $\\left[z\\right]=15-9=6$\nSimilarly we can find $\\left[y\\right]=4$ and $\\left[x\\right]=5$\nNow, $x=\\left[x\\right]+\\left\\{x\\right\\}=5+0.1=5.1$\n$y=\\left[y\\right]+\\left\\{y\\right\\}=4+0.8=4.8$\n$z=\\left[z\\right]+\\left\\{z\\right\\}=6+0.4=6.4$\nSo, $x-y+z=5.1-4.8+6.4=6.7$\nSo, $\\left[x-y+z\\right]=6$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-7",
       "passage_text": "",
-      "question_text": "In an MBA entrance test preparation class, three subjects are taught: VARC, DILR, and QA. The probability that a randomly selected student likes VARC is 0.85, likes DILR is 0.62, and likes QA is 0.58. The student may also dislike all three subjects. What is the difference between the maximum and minimum probability of a randomly selected student liking all three subjects?",
+      "question_text": "Find the sum of values of p that satisfy the equation $p^{(log_{3}{p})^2-2log_{3}{p}-11}=3^{-12}$.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0.58",
-          "is_correct": false
+          "option_text": "$\\frac{2269}{27}$",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "0.53",
-          "is_correct": true
+          "option_text": "$84$",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "0.54",
+          "option_text": "$2$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "0.56",
+          "option_text": "$\\frac{2267}{27}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us assume there are 100 students in class.\nSo, VARC is liked by $0.85\\times\\ 100=85$ students\nDILR is liked by $0.62\\times\\ 100=62$ students\nQA is liked by $0.58\\times\\ 100=58$ students\nLet $a,b,c,d$ denote the number of students liking none of the subjects, one of the subjects, two of the subjects and three of the subjects respectively.\nSo, $a+b+c+d=100$ ------>(1)\nAlso, $b+2c+3d=85+62+58=205$ ------->(2)\nSubtracting equation (1) from(2),\n$c+2d-a=105$ ------>(3)\nMaximising $d$,\nThe maximum value $d$ can take is 58.\nIn that case Venn diagram will be something like,\nHere, $a=11,b=27+4=31,c=0,d=58$\nThe values of $a,c,d$ satisfy equation (3) also.\nSo, the maximum probability that a randomly selected student likes all 3 subjects $=\\ 58/100=0.58$ ----->(4)\nMinimising $d$,\nFrom equation (3), $c+2d=105+a$\nFrom equation (1), $a+b+c+d=100$\nWhen $a=b=0,\\ c+2d=105,\\ c+d=100$\nUpon solving, $c=95,\\ d=5$\nSo, the minimum value of $d$ is 5.\nIn that case Venn diagram will be something like,\nSo, the minimum probability that a randomly selected student likes all 3 subjects $=\\ 5/100=\\ 0.05$ ------>(5)\nSo, required difference = $0.58-0.05=0.53$ (subtracting (5) from (4))",
+      "solution_text": "Taking log with base 3 on both sides, we get $({(log_{3}{p})^2-2log_{3}{p}-11}) log_{3}p=-12$\nNow take $log_{3}p$ as x.\n$x^3-2x^2-11x+12=0$\n=> x = 1, 4 and -3\nso the values of p are 3, 81 and $\\frac{1}{27}$\nsum of values of p = 84+$\\frac{1}{27}$ = $\\frac{2269}{27}$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn an MBA entrance test preparation class, three subjects are taught: VARC, DILR, and QA. The probability that a randomly selected student likes VARC is 0.85, likes DILR is 0.62, and likes QA is 0.58. The student may also dislike all three subjects. What is the difference between the maximum and minimum probability of a randomly selected student liking all three subjects?\n\n**Options:**\n- **A**. 0.58\n- **B**. 0.53 ✅\n- **C**. 0.54\n- **D**. 0.56\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume there are 100 students in class.\nSo, VARC is liked by $0.85\\times\\ 100=85$ students\nDILR is liked by $0.62\\times\\ 100=62$ students\nQA is liked by $0.58\\times\\ 100=58$ students\nLet $a,b,c,d$ denote the number of students liking none of the subjects, one of the subjects, two of the subjects and three of the subjects respectively.\nSo, $a+b+c+d=100$ ------>(1)\nAlso, $b+2c+3d=85+62+58=205$ ------->(2)\nSubtracting equation (1) from(2),\n$c+2d-a=105$ ------>(3)\nMaximising $d$,\nThe maximum value $d$ can take is 58.\nIn that case Venn diagram will be something like,\nHere, $a=11,b=27+4=31,c=0,d=58$\nThe values of $a,c,d$ satisfy equation (3) also.\nSo, the maximum probability that a randomly selected student likes all 3 subjects $=\\ 58/100=0.58$ ----->(4)\nMinimising $d$,\nFrom equation (3), $c+2d=105+a$\nFrom equation (1), $a+b+c+d=100$\nWhen $a=b=0,\\ c+2d=105,\\ c+d=100$\nUpon solving, $c=95,\\ d=5$\nSo, the minimum value of $d$ is 5.\nIn that case Venn diagram will be something like,\nSo, the minimum probability that a randomly selected student likes all 3 subjects $=\\ 5/100=\\ 0.05$ ------>(5)\nSo, required difference = $0.58-0.05=0.53$ (subtracting (5) from (4))",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of values of p that satisfy the equation $p^{(log_{3}{p})^2-2log_{3}{p}-11}=3^{-12}$.\n\n**Options:**\n- **A**. $\\frac{2269}{27}$ ✅\n- **B**. $84$\n- **C**. $2$\n- **D**. $\\frac{2267}{27}$\n\n**Correct Answer:** null\n\n**Solution:**\nTaking log with base 3 on both sides, we get $({(log_{3}{p})^2-2log_{3}{p}-11}) log_{3}p=-12$\nNow take $log_{3}p$ as x.\n$x^3-2x^2-11x+12=0$\n=> x = 1, 4 and -3\nso the values of p are 3, 81 and $\\frac{1}{27}$\nsum of values of p = 84+$\\frac{1}{27}$ = $\\frac{2269}{27}$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-8",
       "passage_text": "",
-      "question_text": "A photographer is arranging a group of 6 students for a yearbook photo. They have 22 numbered seats available in a single row. To ensure visibility and proper spacing, the photographer wants to make sure that there are at least two empty spots between any two students. In how many ways can the photographer arrange the seating of the 6 students?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$864\\ \\times\\ 6!$",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$724\\times\\ 6!$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$924\\times\\ 6!$",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$954\\times\\ 6!$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "We are given 22 numbered spots and 6 students, and we need to arrange the students such that there are at least two empty spots between each student. \nLet the students be A, B, C, D, E and F. So, the possible gaps will be as follows:\nNow, there are a total of 22 seats and out of these, 6 seats are reserved for the students. So, the number of empty seats will be 22 - 6 = 16.\nSo, the sum of these gaps should be 16 seats. \nNow, let the gaps be m, n, o, p, q, r and s.\nSo, we can say, m + n + o + p + q + r + s = 16\nWe know that m and s can be greater than 0 as there is a student can be seated on the first or the last seat. However, n, o, p, q and r should be greater than or equal to 2 because the gap between the two students should be at least 2 seats.\nHence, we can say, \nIf we remove 2 from n, o, p, q and r and equal number from the right hand side, we get, \nNow, we know that, the number of ways of distributing n identical things in r distinct boxes so that each box is filled with 0 or more things (empty boxes are allowed) = $^{n+r-1}C_{r-1}$\nUsing the same concept, we need to fill 7 gaps with 6 seats such that each gap can have 0 or more chairs so the number of possible cases will be : $^{6+7-1}C_{7-1}=^{12}C_6=\\dfrac{12!}{6!6!}=\\dfrac{12\\times11\\times10\\times9\\times8\\times7}{6\\times5\\times4\\times3\\times2\\times1}=924$",
+      "question_text": "A stream is flowing at 6 m/s from point A to point B, which are 240m apart. Ravi and Hari started from A and B, respectively, towards each other. Their speeds are in the ratio 5:3. If they meet after 10 seconds, what is the time taken (in seconds) by Hari to reach A after they meet?",
+      "options": [],
+      "correct_option_data": "70",
+      "solution_text": "Here, we don't have to consider the speed of the stream, as one is going downstream and the other is going upstream, the relative velocity will be the sum of their speeds.\nLet us assume the proportionality constant for the given ratio as x.\nRavi's speed will be 5x, and Hari's will be 3x.\n$\\frac{240}{5x+3x}=\\frac{240}{8x}=10$\n$\\Rightarrow x = 3$\nHari's speed is 9m/s. Because Hari is travelling opposite to the stream, his relative speed will be 9-6 = 3 m/s\nThe total time taken by Hari will be $\\frac{240}{3}=80$\nSince they met after 10 sec, it takes him 70 sec (after they met) to reach B.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA photographer is arranging a group of 6 students for a yearbook photo. They have 22 numbered seats available in a single row. To ensure visibility and proper spacing, the photographer wants to make sure that there are at least two empty spots between any two students. In how many ways can the photographer arrange the seating of the 6 students?\n\n**Options:**\n- **A**. $864\\ \\times\\ 6!$\n- **B**. $724\\times\\ 6!$\n- **C**. $924\\times\\ 6!$ ✅\n- **D**. $954\\times\\ 6!$\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given 22 numbered spots and 6 students, and we need to arrange the students such that there are at least two empty spots between each student. \nLet the students be A, B, C, D, E and F. So, the possible gaps will be as follows:\nNow, there are a total of 22 seats and out of these, 6 seats are reserved for the students. So, the number of empty seats will be 22 - 6 = 16.\nSo, the sum of these gaps should be 16 seats. \nNow, let the gaps be m, n, o, p, q, r and s.\nSo, we can say, m + n + o + p + q + r + s = 16\nWe know that m and s can be greater than 0 as there is a student can be seated on the first or the last seat. However, n, o, p, q and r should be greater than or equal to 2 because the gap between the two students should be at least 2 seats.\nHence, we can say, \nIf we remove 2 from n, o, p, q and r and equal number from the right hand side, we get, \nNow, we know that, the number of ways of distributing n identical things in r distinct boxes so that each box is filled with 0 or more things (empty boxes are allowed) = $^{n+r-1}C_{r-1}$\nUsing the same concept, we need to fill 7 gaps with 6 seats such that each gap can have 0 or more chairs so the number of possible cases will be : $^{6+7-1}C_{7-1}=^{12}C_6=\\dfrac{12!}{6!6!}=\\dfrac{12\\times11\\times10\\times9\\times8\\times7}{6\\times5\\times4\\times3\\times2\\times1}=924$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA stream is flowing at 6 m/s from point A to point B, which are 240m apart. Ravi and Hari started from A and B, respectively, towards each other. Their speeds are in the ratio 5:3. If they meet after 10 seconds, what is the time taken (in seconds) by Hari to reach A after they meet?\n\n**Options:**\n\n**Correct Answer:** 70\n\n**Solution:**\nHere, we don't have to consider the speed of the stream, as one is going downstream and the other is going upstream, the relative velocity will be the sum of their speeds.\nLet us assume the proportionality constant for the given ratio as x.\nRavi's speed will be 5x, and Hari's will be 3x.\n$\\frac{240}{5x+3x}=\\frac{240}{8x}=10$\n$\\Rightarrow x = 3$\nHari's speed is 9m/s. Because Hari is travelling opposite to the stream, his relative speed will be 9-6 = 3 m/s\nThe total time taken by Hari will be $\\frac{240}{3}=80$\nSince they met after 10 sec, it takes him 70 sec (after they met) to reach B.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-9",
       "passage_text": "",
-      "question_text": "In $\\triangle ABC\\ $, D is a point on line AB such that AD:BD=3:4 and E is a point on AC such that AE:CE=4:5.\n\nWhat is area of quadilateral DECB ?\n\n(given area of $\\ \\triangle ABC=126\\ cm^2\\ $)",
+      "question_text": "Given that an equilateral triangle has the same perimeter as a regular octagon. Find the ratio of the triangle's area to the octagon's area.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$98\\ cm^2$",
+          "option_text": "$\\dfrac{4\\sqrt{2}}{3\\left(\\sqrt{2}+1\\right)}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$100\\ cm^2$",
-          "is_correct": false
+          "option_text": "$\\dfrac{8\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$102\\ cm^2$",
-          "is_correct": true
+          "option_text": "$\\dfrac{8\\sqrt{3}}{3\\left(\\sqrt{2}+1\\right)}$",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$104\\ cm^2$",
+          "option_text": "$\\dfrac{4\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "We can make a figure like this,\nSince, $\\ AD:BD=3:4$\n$\\dfrac{AD}{BD}=\\dfrac{3}{4}=>\\dfrac{AD}{AB}=\\dfrac{3}{4+3}=\\dfrac{3}{7}$\nAlso,\n$\\dfrac{AE}{CE}=\\dfrac{4}{5}=>\\dfrac{AE}{AC}=\\dfrac{4}{4+5}=\\dfrac{4}{9}$\nNow, $\\dfrac{area\\ of\\ \\triangle\\ ADE}{Area\\ of\\ \\triangle\\ ABC}=\\dfrac{\\dfrac{1}{2}\\cdot AD.AE.\\sin A}{\\dfrac{1}{2}\\cdot AB\\cdot AC\\cdot\\sin A}$\n$\\dfrac{area\\ of\\ \\triangle\\ ADE}{126}=\\dfrac{3}{7}\\cdot\\dfrac{4}{9}=\\dfrac{4}{21}$\nSo, $area\\ of\\triangle\\ ADE\\ =\\ \\dfrac{4}{21}\\times\\ 126=24\\ cm^2$\nSo, area of quadilateral DECB = $126-24=102\\ cm^2$ \nAnswer: $102\\ cm^2$",
+      "solution_text": "We are told that the perimeters of an equilateral triangle and an octagon are equal. Since a triangle has three sides and an octagon has eight sides, let us assume a perimeter of 24a for both of these figures. \nWe will have a triangle of side 8a and an octagon of side 3a. \nArea of an equilateral triangle will be, $\\dfrac{\\sqrt{3}}{4}\\left(Side\\right)^2$\nSubstituting the value of the side, we have the area of the equilateral triangle as, $\\dfrac{\\sqrt{3}}{4}\\left(64a^2\\right)=16\\sqrt{3}a^2$\nSimilarly, we have the area of a regular octagon as, $\\left(Side\\right)^2\\left(2\\right)\\left(1+\\sqrt{2}\\right)$\nSubstituting the value of the side, we have the area of the regular octagon as, $\\left(18a^2\\right)\\left(\\sqrt{2}+1\\right)$\nThe ratio will hence be, \n$\\dfrac{8\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$\nTherefore, the correct answer is Option B.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn $\\triangle ABC\\ $, D is a point on line AB such that AD:BD=3:4 and E is a point on AC such that AE:CE=4:5.\n\nWhat is area of quadilateral DECB ?\n\n(given area of $\\ \\triangle ABC=126\\ cm^2\\ $)\n\n**Options:**\n- **A**. $98\\ cm^2$\n- **B**. $100\\ cm^2$\n- **C**. $102\\ cm^2$ ✅\n- **D**. $104\\ cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nWe can make a figure like this,\nSince, $\\ AD:BD=3:4$\n$\\dfrac{AD}{BD}=\\dfrac{3}{4}=>\\dfrac{AD}{AB}=\\dfrac{3}{4+3}=\\dfrac{3}{7}$\nAlso,\n$\\dfrac{AE}{CE}=\\dfrac{4}{5}=>\\dfrac{AE}{AC}=\\dfrac{4}{4+5}=\\dfrac{4}{9}$\nNow, $\\dfrac{area\\ of\\ \\triangle\\ ADE}{Area\\ of\\ \\triangle\\ ABC}=\\dfrac{\\dfrac{1}{2}\\cdot AD.AE.\\sin A}{\\dfrac{1}{2}\\cdot AB\\cdot AC\\cdot\\sin A}$\n$\\dfrac{area\\ of\\ \\triangle\\ ADE}{126}=\\dfrac{3}{7}\\cdot\\dfrac{4}{9}=\\dfrac{4}{21}$\nSo, $area\\ of\\triangle\\ ADE\\ =\\ \\dfrac{4}{21}\\times\\ 126=24\\ cm^2$\nSo, area of quadilateral DECB = $126-24=102\\ cm^2$ \nAnswer: $102\\ cm^2$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven that an equilateral triangle has the same perimeter as a regular octagon. Find the ratio of the triangle's area to the octagon's area.\n\n**Options:**\n- **A**. $\\dfrac{4\\sqrt{2}}{3\\left(\\sqrt{2}+1\\right)}$\n- **B**. $\\dfrac{8\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$ ✅\n- **C**. $\\dfrac{8\\sqrt{3}}{3\\left(\\sqrt{2}+1\\right)}$\n- **D**. $\\dfrac{4\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$\n\n**Correct Answer:** null\n\n**Solution:**\nWe are told that the perimeters of an equilateral triangle and an octagon are equal. Since a triangle has three sides and an octagon has eight sides, let us assume a perimeter of 24a for both of these figures. \nWe will have a triangle of side 8a and an octagon of side 3a. \nArea of an equilateral triangle will be, $\\dfrac{\\sqrt{3}}{4}\\left(Side\\right)^2$\nSubstituting the value of the side, we have the area of the equilateral triangle as, $\\dfrac{\\sqrt{3}}{4}\\left(64a^2\\right)=16\\sqrt{3}a^2$\nSimilarly, we have the area of a regular octagon as, $\\left(Side\\right)^2\\left(2\\right)\\left(1+\\sqrt{2}\\right)$\nSubstituting the value of the side, we have the area of the regular octagon as, $\\left(18a^2\\right)\\left(\\sqrt{2}+1\\right)$\nThe ratio will hence be, \n$\\dfrac{8\\sqrt{3}}{9\\left(\\sqrt{2}+1\\right)}$\nTherefore, the correct answer is Option B.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-10",
       "passage_text": "",
-      "question_text": "There was a solution of milk and water in the ratio 3:4. This solution was boiled in order to get a concentration of 50%. Instead, it was boiled in excess which resulted in the initial ratio of milk and water being reversed. The original solution was boiled for $5\\frac{5}{6}$ minutes.If the evaporation rate of water is 50% more than that of milk irrespective of quantity, find the time for which the milk was boiled after reaching 50% of concentration.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\dfrac{5}{6}$ minutes",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\dfrac{5}{3}$ minutes",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$\\dfrac{2}{3}$ minutes",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\dfrac{7}{6}$ minutes",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let 3x and 4x be initial amounts of milk and water respectively.\nLet 4y and 3y be the amounts of milk and water respectively after evaporation.\n3(4y-3x)=2(3y-4x) ==> x=6y\nAmount of milk evaporated = $\\dfrac{7x}{3}$\nAmount of water evaporated = $\\dfrac{7x}{2}$\nAmount of milk evaporated per minute = $\\dfrac{2x}{5}$\nAmount of water evaporated per minute = $\\dfrac{3x}{5}$\nFor 50% concentration, amounts of both milk and water must be same.\n3x - ($\\dfrac{2x}{5}$*k) = 4x - ($\\dfrac{3x}{5}$*k)\n==> k = 5minutes\n==> excess time boiled = $\\dfrac{5}{6}$ minutes",
+      "question_text": "In how many ways the word \"SEQUOIA\" can be arranged such that the consonants are not next to each other?",
+      "options": [],
+      "correct_option_data": "3600",
+      "solution_text": "The word SEQUOIA has 7 letters -  S, E, Q, U, O, I, A.\nConsonants: S, Q \nVowels: E, U, O, I, A \nAll letters are distinct, so the total arrangements = 7! = 5040\nIf S and Q are always together, we treat them as a single “block.”\nNow we have six units: (SQ), E, U, O, I, A\nThese six units can be arranged in = 6! = 720\nWithin the block (SQ), the consonants can swap: SQ or QS, so we multiply by 2! = 2\n720*2 = 1440\nNow to find the no of ways such that two consonants are not together = 5040 - 1440 = 3600\nThere are 3600 ways to arrange the letters of SEQUOIA such that the consonants are not next to each other.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere was a solution of milk and water in the ratio 3:4. This solution was boiled in order to get a concentration of 50%. Instead, it was boiled in excess which resulted in the initial ratio of milk and water being reversed. The original solution was boiled for $5\\frac{5}{6}$ minutes.If the evaporation rate of water is 50% more than that of milk irrespective of quantity, find the time for which the milk was boiled after reaching 50% of concentration.\n\n**Options:**\n- **A**. $\\dfrac{5}{6}$ minutes ✅\n- **B**. $\\dfrac{5}{3}$ minutes\n- **C**. $\\dfrac{2}{3}$ minutes\n- **D**. $\\dfrac{7}{6}$ minutes\n\n**Correct Answer:** null\n\n**Solution:**\nLet 3x and 4x be initial amounts of milk and water respectively.\nLet 4y and 3y be the amounts of milk and water respectively after evaporation.\n3(4y-3x)=2(3y-4x) ==> x=6y\nAmount of milk evaporated = $\\dfrac{7x}{3}$\nAmount of water evaporated = $\\dfrac{7x}{2}$\nAmount of milk evaporated per minute = $\\dfrac{2x}{5}$\nAmount of water evaporated per minute = $\\dfrac{3x}{5}$\nFor 50% concentration, amounts of both milk and water must be same.\n3x - ($\\dfrac{2x}{5}$*k) = 4x - ($\\dfrac{3x}{5}$*k)\n==> k = 5minutes\n==> excess time boiled = $\\dfrac{5}{6}$ minutes",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn how many ways the word \"SEQUOIA\" can be arranged such that the consonants are not next to each other?\n\n**Options:**\n\n**Correct Answer:** 3600\n\n**Solution:**\nThe word SEQUOIA has 7 letters -  S, E, Q, U, O, I, A.\nConsonants: S, Q \nVowels: E, U, O, I, A \nAll letters are distinct, so the total arrangements = 7! = 5040\nIf S and Q are always together, we treat them as a single “block.”\nNow we have six units: (SQ), E, U, O, I, A\nThese six units can be arranged in = 6! = 720\nWithin the block (SQ), the consonants can swap: SQ or QS, so we multiply by 2! = 2\n720*2 = 1440\nNow to find the no of ways such that two consonants are not together = 5040 - 1440 = 3600\nThere are 3600 ways to arrange the letters of SEQUOIA such that the consonants are not next to each other.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-11",
       "passage_text": "",
-      "question_text": "The ratio of interior angles of two regular polygons with $n$ and $m$ sides respectively is 4: 5. The difference in the number of diagonals of these polygons is 45. Find the number of diagonals of a regular polygon with $\\left(2m-n\\right)$ sides. ($n,\\ m\\le30$)",
+      "question_text": "If $f\\left(x\\right)=\\ \\dfrac{4\\cdot2^{2x+1}}{128+8\\cdot4^x}$\n\nand K= $f\\left(\\dfrac{1}{15}\\right)+f\\left(\\dfrac{2}{15}\\right)+f\\left(\\dfrac{3}{15}\\right)+.......+f\\left(\\dfrac{59}{15}\\right)$\n\nFind the value of 10K",
       "options": [],
-      "correct_option_data": "135",
-      "solution_text": "We know that the interior angle increases with the number of sides of the polygon.\nAs the ratio of interior angles of two regular polygons with $n$ and $m$ sides respectively is 4 : 5\nSo, $n<m$\nWe know that the interior angle of a polygon with $n$ sides is $\\dfrac{180\\left(n-2\\right)}{n}$\nSo, given $\\dfrac{\\dfrac{180\\left(n-2\\right)}{n}}{\\dfrac{180\\left(m-2\\right)}{m}}=\\dfrac{4}{5}$\n$\\dfrac{\\left(n-2\\right)}{n}\\times\\dfrac{m}{\\left(m-2\\right)}=\\dfrac{4}{5}$\n$\\dfrac{mn-2m}{mn-2n}=\\dfrac{4}{5}$\n$5mn-10m=4mn-8n$\nor, $mn-10m=-8n$ \n$m=\\dfrac{8n}{10-n}$\nAs number of sides of both polygons is a natural number greater than 3\n$n\\ge3$\nAlso, $n<10$ for the denominator to be positive\nNow trying different values of $n$ to get integral values of $m$\n1. $n=5$\n$m=\\dfrac{8\\times5}{10-5}=8$\n2. $n=6$\n$m=\\dfrac{8\\times6}{10-6}=12$\n3. $n=8$\n$m=\\dfrac{8\\times8}{10-8}=32$ not possible as both $n,\\ m\\le30$\nHence, only two cases satisfy.\nNow, given the difference in the number of diagonals of these polygons is 45\nCASE 1 $n=5$, $m=8$\nDiangonals for polygon $n$ is $^nC_2-n=^5C_2-5=5$\nDiangonals for polygon $m$ is $^mC_2-m=^8C_2-8=20$\nDifference = 20 - 5 = 15\nDoesn't satisfy.\nCASE 2 $n=6$, $m=12$\nDiangonals for polygon $n$ is $^nC_2-n=^6C_2-6=9$\nDiangonals for polygon $m$ is $^mC_2-m=^{12}C_2-12=54$\nDifference = 54 - 9 = 45\nSatisfies.\nHence, $n=6$ and $m=12$\nSo, the number of diagonals of a polygon with $2m-n=24-6=18$ sides is \n$^{18}C_2-18=135$",
+      "correct_option_data": "295",
+      "solution_text": "$f\\left(x\\right)=\\ \\dfrac{4\\cdot2^{2x+1}}{128+8\\cdot4^x}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^2\\cdot2^{2x+1}}{2^7+2^3\\cdot\\left(2^2\\right)^x}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^{2x+3}}{2^7+2^{2x+3}}$\nTaking $2^3$ common,\n$=>f\\left(x\\right)=\\ \\dfrac{2^3\\cdot2^{2x}}{2^3\\left(2^4+2^{2x}\\right)}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^{2x}}{\\left(2^4+2^{2x}\\right)}$\nDividing by $2^x$,\n$=>f\\left(x\\right)=\\ \\dfrac{2^x}{2^{4-x}+2^x}$\nReplacing $x$ by $\\left(4-x\\right)$,\n$=>f\\left(4-x\\right)=\\ \\dfrac{2^{4-x}}{2^x+2^{4-x}}$\nOn adding $f\\left(x\\right)$ and $f\\left(4-x\\right)$,\n$=>f\\left(x\\right)+f\\left(4-x\\right)=\\ \\dfrac{2^x}{2^x+2^{4-x}}+\\dfrac{2^{4-x}}{2^x+2^{4-x}}=\\dfrac{2^x+2^{4-x}}{2^x+2^{4-x}}=1$\n$=>f\\left(x\\right)+f\\left(4-x\\right)=\\ 1$\nPutting, $x=1/15$ and $(4-x)=4-1/15=59/15$\nSo $f\\left(\\dfrac{1}{15}\\right)+f\\left(\\dfrac{59}{15}\\right)=1$\n$f\\left(\\dfrac{2}{15}\\right)+f\\left(\\dfrac{58}{15}\\right)=1$\n..............................................................\n.............................................................\n$f\\left(\\dfrac{29}{15}\\right)+f\\left(\\dfrac{31}{15}\\right)=1$\nThis all will add up to $1+1+1.....+1\\ \\left(29\\ times\\right)=29$\nOne more term is remaining $f\\left(\\frac{30}{15}\\right)$\nNow, $f\\left(\\dfrac{30}{15}\\right)=f\\left(2\\right)=\\dfrac{2^2}{2^{4-2}+2^2}=\\dfrac{2^2}{2^2+2^2}=\\dfrac{1}{2}$\nSo total sum is $K=29+0.5=29.5$\nSo, $10K=10\\left(29.5\\right)=295$\nFinal answer: 295",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe ratio of interior angles of two regular polygons with $n$ and $m$ sides respectively is 4: 5. The difference in the number of diagonals of these polygons is 45. Find the number of diagonals of a regular polygon with $\\left(2m-n\\right)$ sides. ($n,\\ m\\le30$)\n\n**Options:**\n\n**Correct Answer:** 135\n\n**Solution:**\nWe know that the interior angle increases with the number of sides of the polygon.\nAs the ratio of interior angles of two regular polygons with $n$ and $m$ sides respectively is 4 : 5\nSo, $n<m$\nWe know that the interior angle of a polygon with $n$ sides is $\\dfrac{180\\left(n-2\\right)}{n}$\nSo, given $\\dfrac{\\dfrac{180\\left(n-2\\right)}{n}}{\\dfrac{180\\left(m-2\\right)}{m}}=\\dfrac{4}{5}$\n$\\dfrac{\\left(n-2\\right)}{n}\\times\\dfrac{m}{\\left(m-2\\right)}=\\dfrac{4}{5}$\n$\\dfrac{mn-2m}{mn-2n}=\\dfrac{4}{5}$\n$5mn-10m=4mn-8n$\nor, $mn-10m=-8n$ \n$m=\\dfrac{8n}{10-n}$\nAs number of sides of both polygons is a natural number greater than 3\n$n\\ge3$\nAlso, $n<10$ for the denominator to be positive\nNow trying different values of $n$ to get integral values of $m$\n1. $n=5$\n$m=\\dfrac{8\\times5}{10-5}=8$\n2. $n=6$\n$m=\\dfrac{8\\times6}{10-6}=12$\n3. $n=8$\n$m=\\dfrac{8\\times8}{10-8}=32$ not possible as both $n,\\ m\\le30$\nHence, only two cases satisfy.\nNow, given the difference in the number of diagonals of these polygons is 45\nCASE 1 $n=5$, $m=8$\nDiangonals for polygon $n$ is $^nC_2-n=^5C_2-5=5$\nDiangonals for polygon $m$ is $^mC_2-m=^8C_2-8=20$\nDifference = 20 - 5 = 15\nDoesn't satisfy.\nCASE 2 $n=6$, $m=12$\nDiangonals for polygon $n$ is $^nC_2-n=^6C_2-6=9$\nDiangonals for polygon $m$ is $^mC_2-m=^{12}C_2-12=54$\nDifference = 54 - 9 = 45\nSatisfies.\nHence, $n=6$ and $m=12$\nSo, the number of diagonals of a polygon with $2m-n=24-6=18$ sides is \n$^{18}C_2-18=135$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $f\\left(x\\right)=\\ \\dfrac{4\\cdot2^{2x+1}}{128+8\\cdot4^x}$\n\nand K= $f\\left(\\dfrac{1}{15}\\right)+f\\left(\\dfrac{2}{15}\\right)+f\\left(\\dfrac{3}{15}\\right)+.......+f\\left(\\dfrac{59}{15}\\right)$\n\nFind the value of 10K\n\n**Options:**\n\n**Correct Answer:** 295\n\n**Solution:**\n$f\\left(x\\right)=\\ \\dfrac{4\\cdot2^{2x+1}}{128+8\\cdot4^x}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^2\\cdot2^{2x+1}}{2^7+2^3\\cdot\\left(2^2\\right)^x}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^{2x+3}}{2^7+2^{2x+3}}$\nTaking $2^3$ common,\n$=>f\\left(x\\right)=\\ \\dfrac{2^3\\cdot2^{2x}}{2^3\\left(2^4+2^{2x}\\right)}$\n$=>f\\left(x\\right)=\\ \\dfrac{2^{2x}}{\\left(2^4+2^{2x}\\right)}$\nDividing by $2^x$,\n$=>f\\left(x\\right)=\\ \\dfrac{2^x}{2^{4-x}+2^x}$\nReplacing $x$ by $\\left(4-x\\right)$,\n$=>f\\left(4-x\\right)=\\ \\dfrac{2^{4-x}}{2^x+2^{4-x}}$\nOn adding $f\\left(x\\right)$ and $f\\left(4-x\\right)$,\n$=>f\\left(x\\right)+f\\left(4-x\\right)=\\ \\dfrac{2^x}{2^x+2^{4-x}}+\\dfrac{2^{4-x}}{2^x+2^{4-x}}=\\dfrac{2^x+2^{4-x}}{2^x+2^{4-x}}=1$\n$=>f\\left(x\\right)+f\\left(4-x\\right)=\\ 1$\nPutting, $x=1/15$ and $(4-x)=4-1/15=59/15$\nSo $f\\left(\\dfrac{1}{15}\\right)+f\\left(\\dfrac{59}{15}\\right)=1$\n$f\\left(\\dfrac{2}{15}\\right)+f\\left(\\dfrac{58}{15}\\right)=1$\n..............................................................\n.............................................................\n$f\\left(\\dfrac{29}{15}\\right)+f\\left(\\dfrac{31}{15}\\right)=1$\nThis all will add up to $1+1+1.....+1\\ \\left(29\\ times\\right)=29$\nOne more term is remaining $f\\left(\\frac{30}{15}\\right)$\nNow, $f\\left(\\dfrac{30}{15}\\right)=f\\left(2\\right)=\\dfrac{2^2}{2^{4-2}+2^2}=\\dfrac{2^2}{2^2+2^2}=\\dfrac{1}{2}$\nSo total sum is $K=29+0.5=29.5$\nSo, $10K=10\\left(29.5\\right)=295$\nFinal answer: 295",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-12",
       "passage_text": "",
-      "question_text": "Kushal invested an equal sum in two banks. The Bank of Hyderabad offers a 40% interest rate compounded quarterly, while the State Bank of India provides a 46% interest rate compounded annually. If the difference in interest earned from both banks over one year is ₹4,100, find the total interest earned from the Bank of Hyderabad in one year if it offered a 50% interest rate compounded semi-annually, with the investment amount remaining the same.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "Rs.5,62,500",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "Rs.5,52,500",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "Rs.5,42,500",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "Rs.5,32,500",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let us assume the total amount invested in each bank is 100000P\nFor Bank of Hyderabad\nPrincipal amount = 100000P\nRate of interest = 40% compounding quarterly = 10% per quarter \nTime = 1 year = four cycles for each quarter.\nAmount earned by Kushal in 1 year from Bank of Hyderabad = 100000P$\\left(1.1\\right)^4$\n=> 146410P\nInterest earned = 46410P\nFor State Bank of India\nPrincipal amount = 100000P\nRate of interest = 46% compounding annually.\nTime = 1 year\nAmount earned by Kushal in 1 year from State Bank of India = 100000P*46*1\n=> 146000P\nInterest earned = 46000P\nDifference in the interest earned from both banks = 46410P-46000P = 410P\nit is given as 4100\nThus, 410P = 4100\nP = 10\nSo, principal amount = 1000000\nThe Bank of Hyderabad now offers a 50% interest rate compounded semi-annually.\nPrincipal amount is the same = 1000000\nRate of interest = 50% compounding half-yearly = 25%\nTime duration = 2 cycles\nAmount after 1 year = 1000000(1.25)^2 = 1562500\nThus, interest earned = 1562500-1000000 = 562500",
+      "question_text": "A, B, and C are three positive numbers in the ratio 6:5:z. The ratio of the average of B and C to the average of A, B, and C is 9:10. If a:b is the ratio of A and C(in the simplest form), what is the value of a+b?",
+      "options": [],
+      "correct_option_data": "5",
+      "solution_text": "Let us assume the proportionality of the ratio as k.\nThe values of A, B, and C will be 6k, 5k, and zk, respectively.\nThe average of B and C will be $\\dfrac{\\left(5+z\\right)}{2}\\cdot k$\nAnd the average of A, B and C is $\\dfrac{\\left(6+5+z\\right)}{3}\\cdot k=\\dfrac{\\left(11+z\\right)}{3}k$\nWe are told that the ratio of these two is 9:10\n$\\dfrac{\\dfrac{\\left(5+z\\right)}{2}}{\\dfrac{\\left(11+z\\right)}{3}}=\\dfrac{9}{10}$\nFrom this we get z = 4.\nThe ratio of A and C is 6k:4k = 3:2\nThe value of a+b = 5",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nKushal invested an equal sum in two banks. The Bank of Hyderabad offers a 40% interest rate compounded quarterly, while the State Bank of India provides a 46% interest rate compounded annually. If the difference in interest earned from both banks over one year is ₹4,100, find the total interest earned from the Bank of Hyderabad in one year if it offered a 50% interest rate compounded semi-annually, with the investment amount remaining the same.\n\n**Options:**\n- **A**. Rs.5,62,500 ✅\n- **B**. Rs.5,52,500\n- **C**. Rs.5,42,500\n- **D**. Rs.5,32,500\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the total amount invested in each bank is 100000P\nFor Bank of Hyderabad\nPrincipal amount = 100000P\nRate of interest = 40% compounding quarterly = 10% per quarter \nTime = 1 year = four cycles for each quarter.\nAmount earned by Kushal in 1 year from Bank of Hyderabad = 100000P$\\left(1.1\\right)^4$\n=> 146410P\nInterest earned = 46410P\nFor State Bank of India\nPrincipal amount = 100000P\nRate of interest = 46% compounding annually.\nTime = 1 year\nAmount earned by Kushal in 1 year from State Bank of India = 100000P*46*1\n=> 146000P\nInterest earned = 46000P\nDifference in the interest earned from both banks = 46410P-46000P = 410P\nit is given as 4100\nThus, 410P = 4100\nP = 10\nSo, principal amount = 1000000\nThe Bank of Hyderabad now offers a 50% interest rate compounded semi-annually.\nPrincipal amount is the same = 1000000\nRate of interest = 50% compounding half-yearly = 25%\nTime duration = 2 cycles\nAmount after 1 year = 1000000(1.25)^2 = 1562500\nThus, interest earned = 1562500-1000000 = 562500",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA, B, and C are three positive numbers in the ratio 6:5:z. The ratio of the average of B and C to the average of A, B, and C is 9:10. If a:b is the ratio of A and C(in the simplest form), what is the value of a+b?\n\n**Options:**\n\n**Correct Answer:** 5\n\n**Solution:**\nLet us assume the proportionality of the ratio as k.\nThe values of A, B, and C will be 6k, 5k, and zk, respectively.\nThe average of B and C will be $\\dfrac{\\left(5+z\\right)}{2}\\cdot k$\nAnd the average of A, B and C is $\\dfrac{\\left(6+5+z\\right)}{3}\\cdot k=\\dfrac{\\left(11+z\\right)}{3}k$\nWe are told that the ratio of these two is 9:10\n$\\dfrac{\\dfrac{\\left(5+z\\right)}{2}}{\\dfrac{\\left(11+z\\right)}{3}}=\\dfrac{9}{10}$\nFrom this we get z = 4.\nThe ratio of A and C is 6k:4k = 3:2\nThe value of a+b = 5",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-13",
       "passage_text": "",
-      "question_text": "Prashant invested in two schemes, A and B, in a ratio of 2:3. In scheme A, he will get an interest of 20%, compounding half-yearly, and he invested for 2 years. In scheme B, he will get an interest rate of 16% compounding annually for 3 years. If the difference between the amount received after the investment period is Rs. 17,54,488 for Scheme A and B, find the total amount he invested in Scheme A and B at the beginning.",
+      "question_text": "If a, b are distinct integers and $f(x)=x^2+ax+b$ , $g(x)=x^2+bx+a$ , and the differences between the roots of $f(x)=0$ & $g(x)=0$ are equal . Then which of the following holds true ?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "30,00,000",
+          "option_text": "$a+b-4=0$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "60,00,000",
+          "option_text": "$b-a+4=0$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "40,00,000",
+          "option_text": "$a-b+4=0$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "50,00,000",
+          "option_text": "$a+b+4=0$",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "It is given that Prashant invested in two schemes, A and B, in a ratio of 2:3.\nLet the amount invested in A and B be 200K and 300K.\nScheme A :\nPrincipal = 200K\nRate of interest = 20% compounding half-yearly.\nTime = 2 years\nr = 10% and time cycle = 4\nAmount received by Prashant from Scheme A after 2 years = $200K*(1.1)^4$ = 292.82K\nScheme B :\nPrincipal = 300K\nRate of interest = 16% compounding annually\nTime = 3 years\nr = 16% and time cycle = 3 years\nAmount received by prashant from Scheme B after 3 years = $300K*(1.16)^3$ = 468.2688K\nIt is given that the difference between the amount received after the investment period is Rs. 17,54,488 for Scheme A and B.\n468.2688K - 292.82K = 1754488\n175.4488K = 1754488\nK = 10000\nTherefore, the sum of the invested amount in Scheme A and B at the beginning = 200K+300K = 500K = 500*10000 = 50,00,000\nOption D is the correct answer.",
+      "solution_text": "Let $\\left(\\alpha,\\ \\beta\\right)\\ \\ $ be the roots of $f(x)=0$ and $(h,k)$ be the roots of $g(x)=0$.\nFor $f(x)=0$ : \n$x^2+ax+b=0$\n$\\alpha+\\beta\\ =-a$ \n$\\alpha\\beta\\ =b\\ $     \n                $\\left(\\alpha-\\beta\\ \\right)^2=\\left(\\alpha+\\beta\\right)^2-4\\alpha\\ \\beta\\ $\n                                           $=a^2-4b$     \nFor $g(x)=0$ : \n$x^2+bx+a=0$\n$h+k\\ =-b$\n$hk=a$\n            $(h-k)^2=\\left(h+k\\right)^2-4hk$\n                              $=b^2-4a$\nAs the difference of roots of both the quadratic equations are equal, the squares of difference of roots must also be equal. \n               $b^2-4a=a^2-4b$\n             $a^2-b^2=4\\left(b-a\\right)$\n             $\\left(a+b\\right)\\left(a-b\\right)=4\\left(b-a\\right)$\nAs, it is mentioned that a & b are distinct integers , we can say $a-b\\ne\\ 0$.\n                 Hence,  $a+b+4=0$\nTherefore, Option D .",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPrashant invested in two schemes, A and B, in a ratio of 2:3. In scheme A, he will get an interest of 20%, compounding half-yearly, and he invested for 2 years. In scheme B, he will get an interest rate of 16% compounding annually for 3 years. If the difference between the amount received after the investment period is Rs. 17,54,488 for Scheme A and B, find the total amount he invested in Scheme A and B at the beginning.\n\n**Options:**\n- **A**. 30,00,000\n- **B**. 60,00,000\n- **C**. 40,00,000\n- **D**. 50,00,000 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIt is given that Prashant invested in two schemes, A and B, in a ratio of 2:3.\nLet the amount invested in A and B be 200K and 300K.\nScheme A :\nPrincipal = 200K\nRate of interest = 20% compounding half-yearly.\nTime = 2 years\nr = 10% and time cycle = 4\nAmount received by Prashant from Scheme A after 2 years = $200K*(1.1)^4$ = 292.82K\nScheme B :\nPrincipal = 300K\nRate of interest = 16% compounding annually\nTime = 3 years\nr = 16% and time cycle = 3 years\nAmount received by prashant from Scheme B after 3 years = $300K*(1.16)^3$ = 468.2688K\nIt is given that the difference between the amount received after the investment period is Rs. 17,54,488 for Scheme A and B.\n468.2688K - 292.82K = 1754488\n175.4488K = 1754488\nK = 10000\nTherefore, the sum of the invested amount in Scheme A and B at the beginning = 200K+300K = 500K = 500*10000 = 50,00,000\nOption D is the correct answer.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a, b are distinct integers and $f(x)=x^2+ax+b$ , $g(x)=x^2+bx+a$ , and the differences between the roots of $f(x)=0$ & $g(x)=0$ are equal . Then which of the following holds true ?\n\n**Options:**\n- **A**. $a+b-4=0$\n- **B**. $b-a+4=0$\n- **C**. $a-b+4=0$\n- **D**. $a+b+4=0$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet $\\left(\\alpha,\\ \\beta\\right)\\ \\ $ be the roots of $f(x)=0$ and $(h,k)$ be the roots of $g(x)=0$.\nFor $f(x)=0$ : \n$x^2+ax+b=0$\n$\\alpha+\\beta\\ =-a$ \n$\\alpha\\beta\\ =b\\ $     \n                $\\left(\\alpha-\\beta\\ \\right)^2=\\left(\\alpha+\\beta\\right)^2-4\\alpha\\ \\beta\\ $\n                                           $=a^2-4b$     \nFor $g(x)=0$ : \n$x^2+bx+a=0$\n$h+k\\ =-b$\n$hk=a$\n            $(h-k)^2=\\left(h+k\\right)^2-4hk$\n                              $=b^2-4a$\nAs the difference of roots of both the quadratic equations are equal, the squares of difference of roots must also be equal. \n               $b^2-4a=a^2-4b$\n             $a^2-b^2=4\\left(b-a\\right)$\n             $\\left(a+b\\right)\\left(a-b\\right)=4\\left(b-a\\right)$\nAs, it is mentioned that a & b are distinct integers , we can say $a-b\\ne\\ 0$.\n                 Hence,  $a+b+4=0$\nTherefore, Option D .",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-14",
       "passage_text": "",
-      "question_text": "Initially, the ratio of balls with Yogesh and Tushar was 5:8, and the number of balls with Mayank was two-thirds of Tushar's number of balls. If the number of balls with Yogesh is increased by 60%, Tushar is increased by 50%, and Mayank is reduced by 50%, the total number of balls at the end with all three equals 1428, then find the number of balls with Tushar in the beginning.",
-      "options": [],
-      "correct_option_data": "504",
-      "solution_text": "Let us assume the number of balls with Yogesh and Tushar is 15N and 24N.\nThe number of balls with Mayank is two-thirds of the number of balls with Tushar = 16N\nIf the number of balls of yogesh is increased by 60% = 15N*1.6 = 24N\nTushar is increased by 50% = 24N*1.5 = 36N\nMayank is reduced by 50% = 16N*0.5 = 8N\nIf the total number of balls at the end with all three equals 1428\n24N+36N+8N = 1428\n68N = 1428\nN = 21\nTherefore, the number of balls with Tushar in the beginning = 24N = 24*21 = 504",
+      "question_text": "Rajesh got cheated by a wholesaler who sold him rice at a rate of 100 per kg with a faulty weight, which weighs 1000gm for 800gm. Rajesh himself uses a faulty weight for his transactions. Rajesh marked up the price of rice by 15% per kg. If Rajesh's scale weighs 1000gm for 750gm and Rajesh earned an approximate profit of Rs 28333 after selling the rice, what was the amount of rice(in kg) that Rajesh thought he purchased?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1250",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "800",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "750",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total weight of rice that Rajesh purchased be x.\nSince Rajesh got cheated by the wholesaler with a faulty weight which weighs 1000gm for 800gm, \nCP of 1 kg rice for Rajesh = $\\frac{1000}{800}\\times\\ 100=125$\nSince he sold 750gm for the price of 1000 gm with a markup of 15%,\nSP of Rajesh of 1kg = $\\frac{1000}{750}\\times\\ 1.15\\times\\ 100=153.333$\nThus, total profit for 1 Kg = $153.333-125\\ =\\ 28.333$\nSince total profit = 28333, \n28.333x = 28333\nx = 1000 kg.\nSince the wholesaler sold 1000gm for 800gm,\nthe amount of rice Rajesh thought he purchased = $1000\\times\\ \\frac{1000}{800}\\ =\\ 1250$\nThus, the correct answer is A.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nInitially, the ratio of balls with Yogesh and Tushar was 5:8, and the number of balls with Mayank was two-thirds of Tushar's number of balls. If the number of balls with Yogesh is increased by 60%, Tushar is increased by 50%, and Mayank is reduced by 50%, the total number of balls at the end with all three equals 1428, then find the number of balls with Tushar in the beginning.\n\n**Options:**\n\n**Correct Answer:** 504\n\n**Solution:**\nLet us assume the number of balls with Yogesh and Tushar is 15N and 24N.\nThe number of balls with Mayank is two-thirds of the number of balls with Tushar = 16N\nIf the number of balls of yogesh is increased by 60% = 15N*1.6 = 24N\nTushar is increased by 50% = 24N*1.5 = 36N\nMayank is reduced by 50% = 16N*0.5 = 8N\nIf the total number of balls at the end with all three equals 1428\n24N+36N+8N = 1428\n68N = 1428\nN = 21\nTherefore, the number of balls with Tushar in the beginning = 24N = 24*21 = 504",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRajesh got cheated by a wholesaler who sold him rice at a rate of 100 per kg with a faulty weight, which weighs 1000gm for 800gm. Rajesh himself uses a faulty weight for his transactions. Rajesh marked up the price of rice by 15% per kg. If Rajesh's scale weighs 1000gm for 750gm and Rajesh earned an approximate profit of Rs 28333 after selling the rice, what was the amount of rice(in kg) that Rajesh thought he purchased?\n\n**Options:**\n- **A**. 1250 ✅\n- **B**. 1000\n- **C**. 800\n- **D**. 750\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total weight of rice that Rajesh purchased be x.\nSince Rajesh got cheated by the wholesaler with a faulty weight which weighs 1000gm for 800gm, \nCP of 1 kg rice for Rajesh = $\\frac{1000}{800}\\times\\ 100=125$\nSince he sold 750gm for the price of 1000 gm with a markup of 15%,\nSP of Rajesh of 1kg = $\\frac{1000}{750}\\times\\ 1.15\\times\\ 100=153.333$\nThus, total profit for 1 Kg = $153.333-125\\ =\\ 28.333$\nSince total profit = 28333, \n28.333x = 28333\nx = 1000 kg.\nSince the wholesaler sold 1000gm for 800gm,\nthe amount of rice Rajesh thought he purchased = $1000\\times\\ \\frac{1000}{800}\\ =\\ 1250$\nThus, the correct answer is A.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-15",
       "passage_text": "",
-      "question_text": "The cost of 5 pens, 11 pencils,\n and 7 erasers equals Rs. 90, while the cost of 3 pens, 8 pencils, \nand 12 erasers equals Rs. 83. If the cost of 49 pens, 112 pencils, and 92 erasers is equal to N, where N is an integer. Find the value of N",
+      "question_text": "5 men 6 women and 2 children can complete a piece of work in 20 days. It is know that 2 men and 2 women and 2 children could complete a piece of work in 30 days. Find the number of days in which 3 men and 4 women can complete the piece of work.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "968",
+          "option_text": "30",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "969",
+          "option_text": "60",
           "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "970",
+          "option_text": "50",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "971",
+          "option_text": "40",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us assume the cost of 1 pen, 1 pencil and 1 eraser to be A, B and C, respectively.\nTherefore, from the given information in the question, we can form the two equations:\n5A+11B+7C = 90 -----equation (1)\n3A+8B+12C = 83 -------------equation (2)\nWe know that the cost of 49 pens, 110 pencils, and 92 erasers is  Rs. N,\n=> 49A+112B+92C = N -------equation (3)\nWe need to find the value of N\nLet us multiply equation (i) by a and equation (ii) by b and add them,\nand now, we equate the coefficient of M and O with equation (iii)\n5aA+11aB+7aC =90a\n3bA +8bB+12bC = 83b\n(5a+3b) = 49 ----equation (iv)\n(7a+12b) = 92 ----equation (v)\nSolving these equations (iv) and (v),\nwe get a = 8 and b = 3\nThus, checking the coefficient of B,\n11a+8b = 112\nThus, we can now multiply equations (i) and (ii) with 8 and 3 and add them, we will get\n49A + 112B + 92C = 90*8 + 83*3\n49A + 112B + 92C = 720 + 249\n49A + 112B + 92C = 969\nTherefore, the value of N is 969\nThus, option B is the correct answer.",
+      "solution_text": "Let m, w and c be the number of days required to complete the entire work by a man, woman and child respectively.\n5/m + 6/w + 2/c = 1/20\n2/m +2/w + 2/c = 1/30\nTherefore if we subtract both the equations we get,\n3/m + 4/w = 1/60\nTherefore 3 men and 4 women take 60 days to complete the work.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost of 5 pens, 11 pencils,\n and 7 erasers equals Rs. 90, while the cost of 3 pens, 8 pencils, \nand 12 erasers equals Rs. 83. If the cost of 49 pens, 112 pencils, and 92 erasers is equal to N, where N is an integer. Find the value of N\n\n**Options:**\n- **A**. 968\n- **B**. 969 ✅\n- **C**. 970\n- **D**. 971\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the cost of 1 pen, 1 pencil and 1 eraser to be A, B and C, respectively.\nTherefore, from the given information in the question, we can form the two equations:\n5A+11B+7C = 90 -----equation (1)\n3A+8B+12C = 83 -------------equation (2)\nWe know that the cost of 49 pens, 110 pencils, and 92 erasers is  Rs. N,\n=> 49A+112B+92C = N -------equation (3)\nWe need to find the value of N\nLet us multiply equation (i) by a and equation (ii) by b and add them,\nand now, we equate the coefficient of M and O with equation (iii)\n5aA+11aB+7aC =90a\n3bA +8bB+12bC = 83b\n(5a+3b) = 49 ----equation (iv)\n(7a+12b) = 92 ----equation (v)\nSolving these equations (iv) and (v),\nwe get a = 8 and b = 3\nThus, checking the coefficient of B,\n11a+8b = 112\nThus, we can now multiply equations (i) and (ii) with 8 and 3 and add them, we will get\n49A + 112B + 92C = 90*8 + 83*3\n49A + 112B + 92C = 720 + 249\n49A + 112B + 92C = 969\nTherefore, the value of N is 969\nThus, option B is the correct answer.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n5 men 6 women and 2 children can complete a piece of work in 20 days. It is know that 2 men and 2 women and 2 children could complete a piece of work in 30 days. Find the number of days in which 3 men and 4 women can complete the piece of work.\n\n**Options:**\n- **A**. 30\n- **B**. 60 ✅\n- **C**. 50\n- **D**. 40\n\n**Correct Answer:** null\n\n**Solution:**\nLet m, w and c be the number of days required to complete the entire work by a man, woman and child respectively.\n5/m + 6/w + 2/c = 1/20\n2/m +2/w + 2/c = 1/30\nTherefore if we subtract both the equations we get,\n3/m + 4/w = 1/60\nTherefore 3 men and 4 women take 60 days to complete the work.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-16",
       "passage_text": "",
-      "question_text": "A lion chasing a deer takes 6 steps forward in a second and 2 steps backwards in the next second, continuing the pattern until it catches the deer. Meanwhile, the deer takes 4 steps forward in a second and 3 steps backwards in the next second, and it continues the same pattern. If the distance between the lion and the deer is 85 steps, what is the least amount of time (in integer seconds) the lion needs to catch the deer? (assume the step size to be the same for both lion and deer)",
+      "question_text": "A number $N$ has 125 factors. Which of the following can't be the number of factors of $N^2$ ?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "29",
+          "option_text": "249",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "28",
+          "option_text": "441",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "58",
-          "is_correct": false
+          "option_text": "250",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "57",
-          "is_correct": true
+          "option_text": "729",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "In the first second, the lion is taking 6 steps towards the deer, and the deer is taking 4 steps away from the lion. So, relatively, the lion is getting 2 steps closer to the deer in the first second.\nIn the 2nd second, the lion takes 2 steps away from the deer, and the deer takes 3 steps towards the lion. So, relatively, the lion is getting 1 step closer to the deer in the 2nd second.\nThis pattern continues, and the lion is getting closer by 3 steps in 2 seconds.\nThere is a gap of 85 steps between them, and the time taken by the lion to catch deer is calculated as,\nThe value of $\\frac{85}{3}\\ =\\ 28.33$ and 85 is not a multiple of 3, so the lion after 28*2 = 56 seconds is 28*3 = 84 steps closer to the deer, and the distance initially was 85 steps. So the distance between them after 56 seconds is 1 step; during the 57th second, the lion gets 2 steps towards the deer, but the distance between them is just 1 step, so the lion catches the deer during the 57th second.\nSo, the lion needs at least 57 seconds to catch the deer.\nHence, the correct answer is option D.",
+      "solution_text": "Let $N=P_1^{n_1}\\times\\ P_2^{n_2}\\times\\ P_3^{n_3}\\times\\ ....$\nwhere $P_1,P_2,....$ are prime numbers.\nNo of factors of N = $\\left(n_1+1\\right)\\left(n_2+1\\right)\\left(n_3+1\\right)....$\nCase I : \n$125=5\\times5\\times5$ = $\\left(n_1+1\\right)\\left(n_2+1\\right)\\left(n_3+1\\right)$\n$n_1=4,\\ \\ n_2=4,\\ \\ n_3=4$\nHence, $N^2=\\ P_1^8\\times\\ P_2^8\\times\\ P_3^8$ \nTherefore, the number of factors of $N^2$ can be = $(8+1)(8+1)(8+1)\\ =729$\nCase II : \n$125=25\\times5$ = $\\left(n_1+1\\right)\\left(n_2+1\\right)$\n$n_1=24,\\ \\ n_2=4$\nHence, $N^2=\\ P_1^{48}\\times\\ P_2^8$\nTherefore, the number of factors of $N^2$ can be = $(48+1)(8+1)\\ =441$\nCase III : \n$125=125\\times1$ = $\\left(n_1+1\\right)$\n$n_1=124$\nHence, $N^2=P_1^{248}$\nTherefore, the number of factors of $N^2$ can be = $248+1=249$\nHence, only {249, 441, 729} can be the number of factors of $N^2$.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA lion chasing a deer takes 6 steps forward in a second and 2 steps backwards in the next second, continuing the pattern until it catches the deer. Meanwhile, the deer takes 4 steps forward in a second and 3 steps backwards in the next second, and it continues the same pattern. If the distance between the lion and the deer is 85 steps, what is the least amount of time (in integer seconds) the lion needs to catch the deer? (assume the step size to be the same for both lion and deer)\n\n**Options:**\n- **A**. 29\n- **B**. 28\n- **C**. 58\n- **D**. 57 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first second, the lion is taking 6 steps towards the deer, and the deer is taking 4 steps away from the lion. So, relatively, the lion is getting 2 steps closer to the deer in the first second.\nIn the 2nd second, the lion takes 2 steps away from the deer, and the deer takes 3 steps towards the lion. So, relatively, the lion is getting 1 step closer to the deer in the 2nd second.\nThis pattern continues, and the lion is getting closer by 3 steps in 2 seconds.\nThere is a gap of 85 steps between them, and the time taken by the lion to catch deer is calculated as,\nThe value of $\\frac{85}{3}\\ =\\ 28.33$ and 85 is not a multiple of 3, so the lion after 28*2 = 56 seconds is 28*3 = 84 steps closer to the deer, and the distance initially was 85 steps. So the distance between them after 56 seconds is 1 step; during the 57th second, the lion gets 2 steps towards the deer, but the distance between them is just 1 step, so the lion catches the deer during the 57th second.\nSo, the lion needs at least 57 seconds to catch the deer.\nHence, the correct answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number $N$ has 125 factors. Which of the following can't be the number of factors of $N^2$ ?\n\n**Options:**\n- **A**. 249\n- **B**. 441\n- **C**. 250 ✅\n- **D**. 729\n\n**Correct Answer:** null\n\n**Solution:**\nLet $N=P_1^{n_1}\\times\\ P_2^{n_2}\\times\\ P_3^{n_3}\\times\\ ....$\nwhere $P_1,P_2,....$ are prime numbers.\nNo of factors of N = $\\left(n_1+1\\right)\\left(n_2+1\\right)\\left(n_3+1\\right)....$\nCase I : \n$125=5\\times5\\times5$ = $\\left(n_1+1\\right)\\left(n_2+1\\right)\\left(n_3+1\\right)$\n$n_1=4,\\ \\ n_2=4,\\ \\ n_3=4$\nHence, $N^2=\\ P_1^8\\times\\ P_2^8\\times\\ P_3^8$ \nTherefore, the number of factors of $N^2$ can be = $(8+1)(8+1)(8+1)\\ =729$\nCase II : \n$125=25\\times5$ = $\\left(n_1+1\\right)\\left(n_2+1\\right)$\n$n_1=24,\\ \\ n_2=4$\nHence, $N^2=\\ P_1^{48}\\times\\ P_2^8$\nTherefore, the number of factors of $N^2$ can be = $(48+1)(8+1)\\ =441$\nCase III : \n$125=125\\times1$ = $\\left(n_1+1\\right)$\n$n_1=124$\nHence, $N^2=P_1^{248}$\nTherefore, the number of factors of $N^2$ can be = $248+1=249$\nHence, only {249, 441, 729} can be the number of factors of $N^2$.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-17",
       "passage_text": "",
-      "question_text": "Given a set of m positive integers, the sum of these integers is 40 times the number of integers in the set. When the number 120 is added to this set, the average of all numbers in the set increases by 4. If all the integers in the set are consecutive natural numbers, find the difference between the smallest and the largest integer.",
+      "question_text": "If 3 men, 1 woman, and 2 children take 12 days to complete a work and 21 men, 8 women, and 7 children take 3 days to complete the same piece of work, then in how many days will 5 men, 2 women, and 1 child be able to complete the same piece of work?",
       "options": [],
       "correct_option_data": "18",
-      "solution_text": "We have Sum of the set of m positive integers = 40*m\nOr, we can say, there are m consecutive positive integers and the average of these m integers is 40.\nNow, we are told that when the number 120 is added to this set, the average of all numbers in the set increases by 4.\n$\\dfrac{40m+120}{m+1}=44$\nOr, 40m + 120 = 44m + 44\n76 = 4m\nm = 19\nNow, we are told the these 19 positive integers are consecutive. \nWhen the integers are consecutive and the number of integers are odd, the middle most integer is equal to the average. \nHence, the 10th integers is 40.\nTherefore, the numbers in set m: (31, 32, 33, 34 ............, 47, 48, 49)\nDifference between the smallest and the largest integer: 49 - 31 = 18",
+      "solution_text": "Let total work be $W$ units.\nAlso let, efficiency of a man be $m$ units/day, efficiency of a woman be $w$ units/day, efficiency of a child be $c$ units/day.\nAccording to question,\n$\\left(3m+w+2c\\right)\\times\\ 12=W$\nor, $\\left(3m+w+2c\\right)=\\ \\dfrac{W}{12}$ ------>(1)\nAgain, $\\left(21m+8w+7c\\right)\\times\\ 3=W$\nor, $\\left(21m+8w+7c\\right)=\\dfrac{W}{3}$ -------->(2)\nMultiplying equation (1) by 2 and subtracting from (2),\n$\\left(21m+8w+7c\\right)-2\\times\\ \\left(3m+w+2c\\right)=\\dfrac{W}{3}-2\\times\\ \\dfrac{W}{12}$\nor, $15m+6w+3c=\\dfrac{W}{6}$\nor, $3\\times\\ \\left(5m+2w+c\\right)=\\dfrac{W}{6}$\nor, $5m+2w+c=\\dfrac{W}{18}$\nor, $18\\times\\ \\left(5m+2w+c\\right)=W$\nSo, required number of days=18",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven a set of m positive integers, the sum of these integers is 40 times the number of integers in the set. When the number 120 is added to this set, the average of all numbers in the set increases by 4. If all the integers in the set are consecutive natural numbers, find the difference between the smallest and the largest integer.\n\n**Options:**\n\n**Correct Answer:** 18\n\n**Solution:**\nWe have Sum of the set of m positive integers = 40*m\nOr, we can say, there are m consecutive positive integers and the average of these m integers is 40.\nNow, we are told that when the number 120 is added to this set, the average of all numbers in the set increases by 4.\n$\\dfrac{40m+120}{m+1}=44$\nOr, 40m + 120 = 44m + 44\n76 = 4m\nm = 19\nNow, we are told the these 19 positive integers are consecutive. \nWhen the integers are consecutive and the number of integers are odd, the middle most integer is equal to the average. \nHence, the 10th integers is 40.\nTherefore, the numbers in set m: (31, 32, 33, 34 ............, 47, 48, 49)\nDifference between the smallest and the largest integer: 49 - 31 = 18",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf 3 men, 1 woman, and 2 children take 12 days to complete a work and 21 men, 8 women, and 7 children take 3 days to complete the same piece of work, then in how many days will 5 men, 2 women, and 1 child be able to complete the same piece of work?\n\n**Options:**\n\n**Correct Answer:** 18\n\n**Solution:**\nLet total work be $W$ units.\nAlso let, efficiency of a man be $m$ units/day, efficiency of a woman be $w$ units/day, efficiency of a child be $c$ units/day.\nAccording to question,\n$\\left(3m+w+2c\\right)\\times\\ 12=W$\nor, $\\left(3m+w+2c\\right)=\\ \\dfrac{W}{12}$ ------>(1)\nAgain, $\\left(21m+8w+7c\\right)\\times\\ 3=W$\nor, $\\left(21m+8w+7c\\right)=\\dfrac{W}{3}$ -------->(2)\nMultiplying equation (1) by 2 and subtracting from (2),\n$\\left(21m+8w+7c\\right)-2\\times\\ \\left(3m+w+2c\\right)=\\dfrac{W}{3}-2\\times\\ \\dfrac{W}{12}$\nor, $15m+6w+3c=\\dfrac{W}{6}$\nor, $3\\times\\ \\left(5m+2w+c\\right)=\\dfrac{W}{6}$\nor, $5m+2w+c=\\dfrac{W}{18}$\nor, $18\\times\\ \\left(5m+2w+c\\right)=W$\nSo, required number of days=18",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-18",
       "passage_text": "",
-      "question_text": "If the roots of the quadratic equation $2x^2-2024x+p=0$ are integral. Find the maximum value that $p$ can take.",
-      "options": [],
-      "correct_option_data": "512072",
-      "solution_text": "We are given the quadratic equation $2x^2-2024x+p=0$, whose roots are integer values. The roots of the quadratic equation are given by $\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$\nThus, the roots of the given equation will be $=\\dfrac{-\\left(-2024\\right)\\pm\\sqrt{\\left(-2024\\right)^2-4\\left(2\\right)\\left(p\\right)}}{2\\left(2\\right)}=506\\pm\\dfrac{\\sqrt{\\left(2024\\right)^2-8p}}{4}$\nNow, for roots to be real- \n$2024^2-8p\\ge0$\n$2024^2\\ge8p$\n$p\\le\\dfrac{2024\\times2024}{8}$\n$p\\le512072$\nNow, when we put the value of $p=512072$, then the roots of the equation will be equal and will be an integer value. And, as $p\\le512072$, therefore the maximum value of p such that the roots of the equation are integers is $p=512072$",
+      "question_text": "Solution A is made by mixing sugar and salt solution in a fixed ratio. Solution B is made by mixing salt and vinegar solution in the same ratio. If it is given that the cost of sugar, salt, and vinegar solutions is Rs. 4/litre, Rs. 6/litre, and Rs. 7/litre respectively, and the cost price per litre ratio of A to B is 3:4, find the cost price of Solution C formed by mixing sugar and vinegar solutions in the same ratio.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs 5.2/litre",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs 5.6/litre",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs 6/litre",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs 6.4/litre",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The cost price ratio of A to B is 3:4. Let us assume the cost price of solution A is 3k and solution B is 4k.\nSolution A is made by mixing sugar and salt in a fixed ratio. So applying the alligations concept - \n4           6\n   \\       /\n      3k\n     /    \\\n6-3k       3k-4\nThus, the ratio of sugar to salt solution in solution A is = $\\dfrac{6-3k}{3k-4}$\nSolution B is made by mixing salt and vinegar in the same ratio. So applying the alligations concept - \n6           7\n  \\       /\n     4k\n    /   \\\n7-4k      4k-6\nThus, the ratio of salt to vinegar solution in solution A is = $\\dfrac{7-4k}{4k-6}$\nAnd, since both the ratios are equal, thus - \n$\\dfrac{6-3k}{3k-4}=\\dfrac{7-4k}{4k-6}$\n=> $\\left(6-3k\\right)\\left(4k-6\\right)=\\left(3k-4\\right)\\left(7-4k\\right)$\n=> $24k-36-12k^2+18k=21k-12k^2-28+16k$\n=> $5k=8$ => $k=1.6$\n4             6\n    \\       /\n      4.8\n     /    \\\n1.2       0.8\nThus, the ratio will be = 1.2:0.8 = 3:2.\nNow, Solution C formed by mixing sugar and vinegar solutions in the same ratio. Let the price of solution C be a. Thus -\n4            7\n   \\      /\n      a\n    /   \\\n7-a       a-4\n=> $\\dfrac{7-a}{a-4}=\\dfrac{3}{2}$\n=> $14-2a=3a-12$\n=> $a=Rs\\ 5.2/litre$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the roots of the quadratic equation $2x^2-2024x+p=0$ are integral. Find the maximum value that $p$ can take.\n\n**Options:**\n\n**Correct Answer:** 512072\n\n**Solution:**\nWe are given the quadratic equation $2x^2-2024x+p=0$, whose roots are integer values. The roots of the quadratic equation are given by $\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$\nThus, the roots of the given equation will be $=\\dfrac{-\\left(-2024\\right)\\pm\\sqrt{\\left(-2024\\right)^2-4\\left(2\\right)\\left(p\\right)}}{2\\left(2\\right)}=506\\pm\\dfrac{\\sqrt{\\left(2024\\right)^2-8p}}{4}$\nNow, for roots to be real- \n$2024^2-8p\\ge0$\n$2024^2\\ge8p$\n$p\\le\\dfrac{2024\\times2024}{8}$\n$p\\le512072$\nNow, when we put the value of $p=512072$, then the roots of the equation will be equal and will be an integer value. And, as $p\\le512072$, therefore the maximum value of p such that the roots of the equation are integers is $p=512072$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSolution A is made by mixing sugar and salt solution in a fixed ratio. Solution B is made by mixing salt and vinegar solution in the same ratio. If it is given that the cost of sugar, salt, and vinegar solutions is Rs. 4/litre, Rs. 6/litre, and Rs. 7/litre respectively, and the cost price per litre ratio of A to B is 3:4, find the cost price of Solution C formed by mixing sugar and vinegar solutions in the same ratio.\n\n**Options:**\n- **A**. Rs 5.2/litre ✅\n- **B**. Rs 5.6/litre\n- **C**. Rs 6/litre\n- **D**. Rs 6.4/litre\n\n**Correct Answer:** null\n\n**Solution:**\nThe cost price ratio of A to B is 3:4. Let us assume the cost price of solution A is 3k and solution B is 4k.\nSolution A is made by mixing sugar and salt in a fixed ratio. So applying the alligations concept - \n4           6\n   \\       /\n      3k\n     /    \\\n6-3k       3k-4\nThus, the ratio of sugar to salt solution in solution A is = $\\dfrac{6-3k}{3k-4}$\nSolution B is made by mixing salt and vinegar in the same ratio. So applying the alligations concept - \n6           7\n  \\       /\n     4k\n    /   \\\n7-4k      4k-6\nThus, the ratio of salt to vinegar solution in solution A is = $\\dfrac{7-4k}{4k-6}$\nAnd, since both the ratios are equal, thus - \n$\\dfrac{6-3k}{3k-4}=\\dfrac{7-4k}{4k-6}$\n=> $\\left(6-3k\\right)\\left(4k-6\\right)=\\left(3k-4\\right)\\left(7-4k\\right)$\n=> $24k-36-12k^2+18k=21k-12k^2-28+16k$\n=> $5k=8$ => $k=1.6$\n4             6\n    \\       /\n      4.8\n     /    \\\n1.2       0.8\nThus, the ratio will be = 1.2:0.8 = 3:2.\nNow, Solution C formed by mixing sugar and vinegar solutions in the same ratio. Let the price of solution C be a. Thus -\n4            7\n   \\      /\n      a\n    /   \\\n7-a       a-4\n=> $\\dfrac{7-a}{a-4}=\\dfrac{3}{2}$\n=> $14-2a=3a-12$\n=> $a=Rs\\ 5.2/litre$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-19",
       "passage_text": "",
-      "question_text": "If the product of all the values of $x$ that satisfy the equation $e^{5\\left(\\log_ex\\right)^2\\ +\\ 3}\\ =\\ x^8$ is A, then what is the value of $\\log_eA$?",
+      "question_text": "Two kings Shambhu and Aurang went to battlefield with army men in the ratio 5:6. After a fierce battle, Shambhu and Aurang found that number of army men dead were in the ratio 3:4 respectively. Later, they realised that the number of army men alive with Shambhu and Aurang is in the ratio 5:2. If the total number of army men alive equals 70000, find the number of men originally in Aurang's army.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$\\dfrac{3}{5}$",
+          "option_text": "300000",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\dfrac{8}{5}$",
-          "is_correct": true
+          "option_text": "480000",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "1",
-          "is_correct": false
+          "option_text": "420000",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\dfrac{5}{3}$",
+          "option_text": "360000",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The given equation is $e^{5\\left(\\log_ex\\right)^2\\ +\\ 3}\\ =\\ x^8$ \nApplying log on both sides, we get,\n$5\\left(\\log_ex\\right)^2\\ +\\ 3\\ =\\ 8\\log_ex$\nLet the value of $\\log_ex$ be t, and by substituting it, the equation becomes,\n$5t^2\\ -\\ 8t\\ +\\ 3\\ =\\ 0$\n(5t - 3)(t - 1) = 0\n$t=\\dfrac{3}{5},\\ x\\ =\\ e^{\\frac{3}{5}}$\n$t=1,\\ x\\ =\\ e^1$\nProduct of the values = A = $e^{\\dfrac{3}{5}}\\ \\times\\ \\ e^1\\ =\\ e^{\\dfrac{8}{5}}$\n$\\log_eA\\ =\\ \\log_ee^{\\frac{8}{5}}\\ =\\ \\dfrac{8}{5}$\nHence, the correct answer is option B.",
+      "solution_text": "Since, Shambhu and Aurang went to battlefield with army men in ratio 5:6, so let number of army men originally went be 5x and 6x respectively\nAlso, let the number of army men dead in Shambhu's army and Aurang's army be 3y and 4y.\nGiven, number of army men alive with Shambhu and Aurang is in the ratio 5:2\nSo, $\\dfrac{5x-3y}{6x-4y}=\\dfrac{5}{2}$\n$=>10x-6y=30x-20y$\n$=>14y=20x$\n$=>7y=10x$\nAlso, it is given total number of army men alive equals 70000\nSo, $(5x-3y)+(6x-4y)=70000$\n$=>11x-7y=70000$\n$=>11x-10x=70000$   (since, $7y=10x$)\n$=>x=70000$\nSo, number of army men originally in Aurang's army $=6x=6\\times\\ 70000=420000$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the product of all the values of $x$ that satisfy the equation $e^{5\\left(\\log_ex\\right)^2\\ +\\ 3}\\ =\\ x^8$ is A, then what is the value of $\\log_eA$?\n\n**Options:**\n- **A**. $\\dfrac{3}{5}$\n- **B**. $\\dfrac{8}{5}$ ✅\n- **C**. 1\n- **D**. $\\dfrac{5}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe given equation is $e^{5\\left(\\log_ex\\right)^2\\ +\\ 3}\\ =\\ x^8$ \nApplying log on both sides, we get,\n$5\\left(\\log_ex\\right)^2\\ +\\ 3\\ =\\ 8\\log_ex$\nLet the value of $\\log_ex$ be t, and by substituting it, the equation becomes,\n$5t^2\\ -\\ 8t\\ +\\ 3\\ =\\ 0$\n(5t - 3)(t - 1) = 0\n$t=\\dfrac{3}{5},\\ x\\ =\\ e^{\\frac{3}{5}}$\n$t=1,\\ x\\ =\\ e^1$\nProduct of the values = A = $e^{\\dfrac{3}{5}}\\ \\times\\ \\ e^1\\ =\\ e^{\\dfrac{8}{5}}$\n$\\log_eA\\ =\\ \\log_ee^{\\frac{8}{5}}\\ =\\ \\dfrac{8}{5}$\nHence, the correct answer is option B.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo kings Shambhu and Aurang went to battlefield with army men in the ratio 5:6. After a fierce battle, Shambhu and Aurang found that number of army men dead were in the ratio 3:4 respectively. Later, they realised that the number of army men alive with Shambhu and Aurang is in the ratio 5:2. If the total number of army men alive equals 70000, find the number of men originally in Aurang's army.\n\n**Options:**\n- **A**. 300000\n- **B**. 480000\n- **C**. 420000 ✅\n- **D**. 360000\n\n**Correct Answer:** null\n\n**Solution:**\nSince, Shambhu and Aurang went to battlefield with army men in ratio 5:6, so let number of army men originally went be 5x and 6x respectively\nAlso, let the number of army men dead in Shambhu's army and Aurang's army be 3y and 4y.\nGiven, number of army men alive with Shambhu and Aurang is in the ratio 5:2\nSo, $\\dfrac{5x-3y}{6x-4y}=\\dfrac{5}{2}$\n$=>10x-6y=30x-20y$\n$=>14y=20x$\n$=>7y=10x$\nAlso, it is given total number of army men alive equals 70000\nSo, $(5x-3y)+(6x-4y)=70000$\n$=>11x-7y=70000$\n$=>11x-10x=70000$   (since, $7y=10x$)\n$=>x=70000$\nSo, number of army men originally in Aurang's army $=6x=6\\times\\ 70000=420000$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-20",
       "passage_text": "",
-      "question_text": "a,b, x and y are single digit natural numbers and the sum of two 2-digit natural numbers ab and xy is a three-digit number 1aa. HCF(a, b) = 2, HCF(x,y) = 3. What is the value of x+y+a+b ?",
+      "question_text": "How many points with integral coordinates lie inside the given triangle?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "21",
+          "option_text": "66",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "22",
+          "option_text": "55",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "23",
-          "is_correct": true
+          "option_text": "45",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "24",
-          "is_correct": false
+          "option_text": "36",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "When these two numbers are added, we are getting a three-digit number as the sum. a, x are single-digit natural numbers. from which we can infer that a carry is being generated.  \na+x after giving out a carry, we still got 'a'. We know that x is a single-digit number. This is possible only when there was a carry from the units digit place.\nSo, a+x+1 = 10 +a\nThis gives us x = 9.\nb+y = 10+a\nWe are told that HCF(a,b) = 2 and HCF(x,y) = 3.\nSo, a and b are even, and y can be 3 or 6.\n10+a is even, and b is also even. Hence, y has to be even. So, y = 6\nb-a = 10-y = 4\nThe only possible pair of single-digit numbers with HCF 2 and difference 4 is (2,6).\nSo, b= 6 and a = 2.\na+b+x+y = 2+6+9+6 = 23",
-      "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\na,b, x and y are single digit natural numbers and the sum of two 2-digit natural numbers ab and xy is a three-digit number 1aa. HCF(a, b) = 2, HCF(x,y) = 3. What is the value of x+y+a+b ?\n\n**Options:**\n- **A**. 21\n- **B**. 22\n- **C**. 23 ✅\n- **D**. 24\n\n**Correct Answer:** null\n\n**Solution:**\nWhen these two numbers are added, we are getting a three-digit number as the sum. a, x are single-digit natural numbers. from which we can infer that a carry is being generated.  \na+x after giving out a carry, we still got 'a'. We know that x is a single-digit number. This is possible only when there was a carry from the units digit place.\nSo, a+x+1 = 10 +a\nThis gives us x = 9.\nb+y = 10+a\nWe are told that HCF(a,b) = 2 and HCF(x,y) = 3.\nSo, a and b are even, and y can be 3 or 6.\n10+a is even, and b is also even. Hence, y has to be even. So, y = 6\nb-a = 10-y = 4\nThe only possible pair of single-digit numbers with HCF 2 and difference 4 is (2,6).\nSo, b= 6 and a = 2.\na+b+x+y = 2+6+9+6 = 23",
+      "solution_text": "$\\left(x_1,y_1\\right)=\\left(20,20\\right)$ and $\\left(x_2,y_2\\right)=\\left(10,30\\right)$\nThe equation of line consisting of (20,20) and (10,30) is $\\frac{y-y_1}{y_2-y_1}=\\ \\frac{\\ x-x_1}{x_2-x_1}$.\nHence, $\\ \\frac{\\ y-20}{30-20}=\\ \\frac{\\ x-20}{10-20}=>y-20=20-x\\ =>\\ x+y\\ =40$\nSince $(a,b)$ lies inside the triangle, which implies $a+b\\ <40$\nWe also know that the value of $a$ is $10$, (a,b) lies on the boundary, not on the inside of the triangle.\nwhen the value $a=11=>$ the value of $b$ can be $21,22,23,...,28=8$ values\n             $a=12=>$ the value of $b$ can be $21,22,...,27=7$ values\nSo on, $a=13=>6$ values, $a=14=>5$ values .... $a=18=>1$ values\nTherefore, the total number of integral coordinates = $(1+2+3+...+8)=\\ \\frac{\\ 8\\cdot9}{2}=36$\nThe correct option is D",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20230713_160435.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many points with integral coordinates lie inside the given triangle?\n\n**Options:**\n- **A**. 66\n- **B**. 55\n- **C**. 45\n- **D**. 36 ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$\\left(x_1,y_1\\right)=\\left(20,20\\right)$ and $\\left(x_2,y_2\\right)=\\left(10,30\\right)$\nThe equation of line consisting of (20,20) and (10,30) is $\\frac{y-y_1}{y_2-y_1}=\\ \\frac{\\ x-x_1}{x_2-x_1}$.\nHence, $\\ \\frac{\\ y-20}{30-20}=\\ \\frac{\\ x-20}{10-20}=>y-20=20-x\\ =>\\ x+y\\ =40$\nSince $(a,b)$ lies inside the triangle, which implies $a+b\\ <40$\nWe also know that the value of $a$ is $10$, (a,b) lies on the boundary, not on the inside of the triangle.\nwhen the value $a=11=>$ the value of $b$ can be $21,22,23,...,28=8$ values\n             $a=12=>$ the value of $b$ can be $21,22,...,27=7$ values\nSo on, $a=13=>6$ values, $a=14=>5$ values .... $a=18=>1$ values\nTherefore, the total number of integral coordinates = $(1+2+3+...+8)=\\ \\frac{\\ 8\\cdot9}{2}=36$\nThe correct option is D",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-21",
       "passage_text": "",
-      "question_text": "B is twice as efficient as A. The time taken by A, B, and C together to finish the work together is 50% less than the time taken to finish when A and B work together. If x:y is the ratio (in simplest form) of the time A alone takes to finish the work to the time B and C together take, then find $x^2+y^2$?",
-      "options": [],
-      "correct_option_data": "26",
-      "solution_text": "Let us assume the total amount of work as N units and A does one unit every day. So, B does two units of work every day.\nThe time taken by A and B together to finish the work is $\\frac{N}{1+2}=\\frac{N}{3}$\nWe are told that A, B, and C finish the work in 50% less time. That is, A, B, and C finish the work in $\\frac{N}{6}$\nLet us assume that C does c units of work every day.\nTime taken to finish the work by all three together = $\\frac{N}{1+2+c}=\\frac{N}{6}$\nFrom this, we get c = 3.\nThe time taken by B and C together to finish the work is $\\frac{N}{2+3}=\\frac{N}{5}$\nSo, x:y = N:$\\frac{N}{5}$ = 5:1\n$x^2+y^2$ = 25+1 = 26",
+      "question_text": "Ajay takes a loan of Rs. 12,300 at 13% simple interest for two years. At the same time, Jatin takes the same loan amount at 10% compound interest for two years. He paid the amount in two instalments; the second was thrice the first. What is the difference between the interest (in rupees) paid by Ajay and Jatin?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 432",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 894",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 412",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 978",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know Simple interest formula is $\\ \\dfrac{\\ P\\times\\ R\\times\\ T}{100}$\nNow, Ajay takes a loan of Rs 12300 at 13% simple interest for two years. \n$P=12300,\\ R=13,\\ T=2$\nInterest paid by Ajay = $\\ \\dfrac{\\ P\\times\\ R\\times\\ T}{100}$ = $\\ \\dfrac{\\ 12300\\times\\ 13\\times\\ 2}{100}$ = $3198$ rupees\nNow, Jatin takes the same loan amount at 10% compound interest for two years. So, the total amount to be paid at the end of two years is -\n$=P\\left(1+\\ \\dfrac{\\ R}{100}\\right)^{T\\ }=12300\\left(1+\\ \\dfrac{\\ 10}{100}\\right)^2=14883$ rupees\nBut he paid the amount in two installments, and the second was thrice the first. Let us assume the first installment is I, and the second will be 3I.\nThis means - $3\\times\\ I\\ +\\ 1.1\\times\\ I\\ =14883$ rupees\n  $=>I=3630$ rupees\nSo total amount paid by Jatin at the end of two years = $\\ I\\ +\\ 3I$ $=4I=14520$ rupees\nSo, total interest paid by Jatin $=14520-12300\\ =\\ 2220$ rupees\nTherefore, the difference between the amount paid by Ajay and Jatin $=3198-2220=978$ rupees.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nB is twice as efficient as A. The time taken by A, B, and C together to finish the work together is 50% less than the time taken to finish when A and B work together. If x:y is the ratio (in simplest form) of the time A alone takes to finish the work to the time B and C together take, then find $x^2+y^2$?\n\n**Options:**\n\n**Correct Answer:** 26\n\n**Solution:**\nLet us assume the total amount of work as N units and A does one unit every day. So, B does two units of work every day.\nThe time taken by A and B together to finish the work is $\\frac{N}{1+2}=\\frac{N}{3}$\nWe are told that A, B, and C finish the work in 50% less time. That is, A, B, and C finish the work in $\\frac{N}{6}$\nLet us assume that C does c units of work every day.\nTime taken to finish the work by all three together = $\\frac{N}{1+2+c}=\\frac{N}{6}$\nFrom this, we get c = 3.\nThe time taken by B and C together to finish the work is $\\frac{N}{2+3}=\\frac{N}{5}$\nSo, x:y = N:$\\frac{N}{5}$ = 5:1\n$x^2+y^2$ = 25+1 = 26",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAjay takes a loan of Rs. 12,300 at 13% simple interest for two years. At the same time, Jatin takes the same loan amount at 10% compound interest for two years. He paid the amount in two instalments; the second was thrice the first. What is the difference between the interest (in rupees) paid by Ajay and Jatin?\n\n**Options:**\n- **A**. Rs. 432\n- **B**. Rs. 894\n- **C**. Rs. 412\n- **D**. Rs. 978 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe know Simple interest formula is $\\ \\dfrac{\\ P\\times\\ R\\times\\ T}{100}$\nNow, Ajay takes a loan of Rs 12300 at 13% simple interest for two years. \n$P=12300,\\ R=13,\\ T=2$\nInterest paid by Ajay = $\\ \\dfrac{\\ P\\times\\ R\\times\\ T}{100}$ = $\\ \\dfrac{\\ 12300\\times\\ 13\\times\\ 2}{100}$ = $3198$ rupees\nNow, Jatin takes the same loan amount at 10% compound interest for two years. So, the total amount to be paid at the end of two years is -\n$=P\\left(1+\\ \\dfrac{\\ R}{100}\\right)^{T\\ }=12300\\left(1+\\ \\dfrac{\\ 10}{100}\\right)^2=14883$ rupees\nBut he paid the amount in two installments, and the second was thrice the first. Let us assume the first installment is I, and the second will be 3I.\nThis means - $3\\times\\ I\\ +\\ 1.1\\times\\ I\\ =14883$ rupees\n  $=>I=3630$ rupees\nSo total amount paid by Jatin at the end of two years = $\\ I\\ +\\ 3I$ $=4I=14520$ rupees\nSo, total interest paid by Jatin $=14520-12300\\ =\\ 2220$ rupees\nTherefore, the difference between the amount paid by Ajay and Jatin $=3198-2220=978$ rupees.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-3-22",
       "passage_text": "",
-      "question_text": "If a and b are integers, find how many pairs of (a,b) satisfy the inequality $25a^2+b^2\\le400$?",
+      "question_text": "A circle, with a radius of 5 units is centred at O. It has 2 parallel chords AB and PQ on the same side of the centre, separated by a distance of 1 unit. The length of chord AB is 6 units, find the area of the quadrilateral ABPQ in $unit^2$.",
       "options": [],
-      "correct_option_data": "245",
-      "solution_text": "We have: $25a^2+b^2\\le400$\nOr, $\\dfrac{25a^2}{400}+\\dfrac{b^2}{400}\\le1$\nThis is the equation of an ellipse centered at the origin with:\nsemi-major axis along b-axis: $\\sqrt{400}=20$\nsemi-major axis along a-axis: $\\sqrt{16}=4$\nSo a ranges from −4 to 4, and b from −20 to 20\nFor a = $\\pm\\ 4$\n$25a^2=25\\times16=400⇒b^2\\le0⇒b=0$ (1 solution)\nFor a = $\\pm\\ 3$\n$25a^2=25\\times9=225⇒b^2\\le175⇒∣b∣\\le\\left[\\sqrt{175}\\right]=13⇒b=−13,\\dots,13⇒$ 27 values\nFor a = $\\pm\\ 2$\n$25a^2=25\\times4=100⇒b^2\\le300⇒∣b∣\\le\\left[\\sqrt{300}\\right]=17⇒b=−17,\\dots,17⇒$ 35 values\nFor a = $\\pm\\ 1$\n$25a^2=25\\times1=25⇒b^2\\le375⇒∣b∣\\le\\left[\\sqrt{375}\\right]=19⇒b=−19,\\dots,19⇒$ 39 values\nFor a = 0\n$25a^2=25\\times0=0⇒b^2\\le400⇒∣b∣\\le\\left[\\sqrt{400}\\right]=20⇒b=−20,\\dots,20⇒$ 41 values\nTotal number of integer solutions : 2*(1+27+35+39) + 41 = 245",
+      "correct_option_data": "7",
+      "solution_text": "Since both the chords are on the same side of the centre, we can draw the figure as follows:\nWe know that the radius = 5, Therefore OB = OQ = 5\nAlso, we know that AB = 6\nTherefore, AM = MB = $\\frac{6}{2}=3$\nTherefore, we can find OM using Pythagoras theorem,\nOM = $\\sqrt{\\ 5^2-3^2}=\\sqrt{\\ 25-9}=4$\nIt is given that the distance between the chords is 1, so MN= 1\nHence, ON = OM - MN = 4 - 1 = 3\nNQ = $\\sqrt{\\ OQ^2-ON^2}=\\sqrt{\\ 5^2-3^2}=\\sqrt{\\ 25-6}=4$\nHence, PQ = $2\\times\\ 4=8$\nThe quadrilateral ABPQ is a trapezium. Hence, area = $\\frac{1}{2}\\times\\ \\left(6+8\\right)\\times\\ 1$ = 7",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a and b are integers, find how many pairs of (a,b) satisfy the inequality $25a^2+b^2\\le400$?\n\n**Options:**\n\n**Correct Answer:** 245\n\n**Solution:**\nWe have: $25a^2+b^2\\le400$\nOr, $\\dfrac{25a^2}{400}+\\dfrac{b^2}{400}\\le1$\nThis is the equation of an ellipse centered at the origin with:\nsemi-major axis along b-axis: $\\sqrt{400}=20$\nsemi-major axis along a-axis: $\\sqrt{16}=4$\nSo a ranges from −4 to 4, and b from −20 to 20\nFor a = $\\pm\\ 4$\n$25a^2=25\\times16=400⇒b^2\\le0⇒b=0$ (1 solution)\nFor a = $\\pm\\ 3$\n$25a^2=25\\times9=225⇒b^2\\le175⇒∣b∣\\le\\left[\\sqrt{175}\\right]=13⇒b=−13,\\dots,13⇒$ 27 values\nFor a = $\\pm\\ 2$\n$25a^2=25\\times4=100⇒b^2\\le300⇒∣b∣\\le\\left[\\sqrt{300}\\right]=17⇒b=−17,\\dots,17⇒$ 35 values\nFor a = $\\pm\\ 1$\n$25a^2=25\\times1=25⇒b^2\\le375⇒∣b∣\\le\\left[\\sqrt{375}\\right]=19⇒b=−19,\\dots,19⇒$ 39 values\nFor a = 0\n$25a^2=25\\times0=0⇒b^2\\le400⇒∣b∣\\le\\left[\\sqrt{400}\\right]=20⇒b=−20,\\dots,20⇒$ 41 values\nTotal number of integer solutions : 2*(1+27+35+39) + 41 = 245",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle, with a radius of 5 units is centred at O. It has 2 parallel chords AB and PQ on the same side of the centre, separated by a distance of 1 unit. The length of chord AB is 6 units, find the area of the quadrilateral ABPQ in $unit^2$.\n\n**Options:**\n\n**Correct Answer:** 7\n\n**Solution:**\nSince both the chords are on the same side of the centre, we can draw the figure as follows:\nWe know that the radius = 5, Therefore OB = OQ = 5\nAlso, we know that AB = 6\nTherefore, AM = MB = $\\frac{6}{2}=3$\nTherefore, we can find OM using Pythagoras theorem,\nOM = $\\sqrt{\\ 5^2-3^2}=\\sqrt{\\ 25-9}=4$\nIt is given that the distance between the chords is 1, so MN= 1\nHence, ON = OM - MN = 4 - 1 = 3\nNQ = $\\sqrt{\\ OQ^2-ON^2}=\\sqrt{\\ 5^2-3^2}=\\sqrt{\\ 25-6}=4$\nHence, PQ = $2\\times\\ 4=8$\nThe quadrilateral ABPQ is a trapezium. Hence, area = $\\frac{1}{2}\\times\\ \\left(6+8\\right)\\times\\ 1$ = 7",
       "type": "quants"
     }
   ]

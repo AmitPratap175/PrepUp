@@ -3,743 +3,643 @@
     {
       "qid": "quant-sectionals-16-1",
       "passage_text": "",
-      "question_text": "Based on the passage, none of the following statements are true EXCEPT:",
+      "question_text": "Find the number of natural numbers less than or equal to 2000 which are divisible by either 2 or 3 or 5?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Most job roles, regardless of their hierarchical position within an organization, provide opportunities for self-actualization.",
+          "option_text": "1463",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Some job roles within an organization might not offer the same potential for self-actualization as others, even if they fulfil basic needs.",
-          "is_correct": true
+          "option_text": "1470",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Despite the incorporation of Maslow’s theory into corporate practises, self-actualization can only be achieved through jobs at the highest hierarchical levels.",
-          "is_correct": false
+          "option_text": "1466",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Maslow acknowledges that psychological needs such as self-actualisation mostly go hand-in-hand with financial incentives in motivating individuals to take up work.",
+          "option_text": "None of these",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us evaluate the given choices:\nOption A: The passage does not support the idea that most job roles, regardless of their hierarchical position, provide opportunities for self-actualization. Instead, it suggests that the extent of self-actualization opportunities varies among different jobs. \nOption B: The passage mentions that while Maslow's hierarchy of needs suggests that people seek self-actualization and meaning in their work, not all job roles within an organization may provide the same level of opportunity for self-actualization. This means that some jobs might not offer the same potential for personal growth and fulfilment, even if they fulfil basic needs. This is in line with Option B. \nOption C: The author does not state that self-actualization can only be achieved through jobs at the highest hierarchical levels. \nOption D: Maslow doesn't present a \"direct link\" between financial incentives and psychological needs like self-actualization in motivating individuals to work. Instead, we are told how Maslow's theory challenged the view that financial incentives are the sole motivator for work and that people seek higher psychological fulfilment as well.\nHence, Option B is the correct choice.",
+      "solution_text": "The number of natural numbers divisible by 2, 3 and 5 alone is 1000, 666 and 400 = 2066\nNatural numbers divisible by at least 2 of the given 3 is found out by taking the LCM of the 3 values in pairs. \nLCM of 2 and 3 = 6.\nNatural numbers less than 2000 and divisible by 6 = [2000/6] = 333.\nLCM of 3 and 5 = 15\nNatural numbers less than 2000 and divisible by 15 = [2000/15] = 133.\nLCM of 5 and 2 = 10\nNatural numbers less than 2000 and divisible by 10 = [2000/10] = 200.\nNatural numbers less than 2000 and divisible by at least 2 out of 2, 3 and 5 is 333 + 133 + 200 = 666.\n The number of natural numbers divisible by atleast two of 2,3 and 5 is 333+199+133 = 666\nThe number of natural numbers divisible by all three is 66.\nSo, the natural numbers which are divisible by atleast one of 2,3 and 5 is 2066 - 666 + 66 = 1466",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBased on the passage, none of the following statements are true EXCEPT:\n\n**Options:**\n- **A**. Most job roles, regardless of their hierarchical position within an organization, provide opportunities for self-actualization.\n- **B**. Some job roles within an organization might not offer the same potential for self-actualization as others, even if they fulfil basic needs. ✅\n- **C**. Despite the incorporation of Maslow’s theory into corporate practises, self-actualization can only be achieved through jobs at the highest hierarchical levels.\n- **D**. Maslow acknowledges that psychological needs such as self-actualisation mostly go hand-in-hand with financial incentives in motivating individuals to take up work.\n\n**Correct Answer:** null\n\n**Solution:**\nLet us evaluate the given choices:\nOption A: The passage does not support the idea that most job roles, regardless of their hierarchical position, provide opportunities for self-actualization. Instead, it suggests that the extent of self-actualization opportunities varies among different jobs. \nOption B: The passage mentions that while Maslow's hierarchy of needs suggests that people seek self-actualization and meaning in their work, not all job roles within an organization may provide the same level of opportunity for self-actualization. This means that some jobs might not offer the same potential for personal growth and fulfilment, even if they fulfil basic needs. This is in line with Option B. \nOption C: The author does not state that self-actualization can only be achieved through jobs at the highest hierarchical levels. \nOption D: Maslow doesn't present a \"direct link\" between financial incentives and psychological needs like self-actualization in motivating individuals to work. Instead, we are told how Maslow's theory challenged the view that financial incentives are the sole motivator for work and that people seek higher psychological fulfilment as well.\nHence, Option B is the correct choice.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of natural numbers less than or equal to 2000 which are divisible by either 2 or 3 or 5?\n\n**Options:**\n- **A**. 1463\n- **B**. 1470\n- **C**. 1466 ✅\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nThe number of natural numbers divisible by 2, 3 and 5 alone is 1000, 666 and 400 = 2066\nNatural numbers divisible by at least 2 of the given 3 is found out by taking the LCM of the 3 values in pairs. \nLCM of 2 and 3 = 6.\nNatural numbers less than 2000 and divisible by 6 = [2000/6] = 333.\nLCM of 3 and 5 = 15\nNatural numbers less than 2000 and divisible by 15 = [2000/15] = 133.\nLCM of 5 and 2 = 10\nNatural numbers less than 2000 and divisible by 10 = [2000/10] = 200.\nNatural numbers less than 2000 and divisible by at least 2 out of 2, 3 and 5 is 333 + 133 + 200 = 666.\n The number of natural numbers divisible by atleast two of 2,3 and 5 is 333+199+133 = 666\nThe number of natural numbers divisible by all three is 66.\nSo, the natural numbers which are divisible by atleast one of 2,3 and 5 is 2066 - 666 + 66 = 1466",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-2",
       "passage_text": "",
-      "question_text": "The shopkeeper bought a 60-litre oil can for Rs. 250 per litre. He divided the oil into three parts in the ratio 1:2:3 and poured them into three different cans A, B and C (all of volume 30 litres each) respectively. To completely fill the cans, he added a substandard oil priced at Rs.100 per litre. Later, he marked all three cans at Rs.10000 and while selling gave discounts of 10%, 20% and 10% respectively for Cans A, B and C. Find the ratio of profit percentage of Can A and Can C.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "5:2",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "4:1",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "5:1",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "3:1",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "The volume distribution of 60 litres of oil in three cans in a ratio of 1:2:3 will be 10 litres, 20 litres and 30 litres, respectively.\nIn the given question, the oil is divided into three equal cans. The first can is completely filled with 10 litres of oil at a cost of Rs. 250 per litre. Therefore, the first can cost 10 x 250 + 20 x 100 = Rs. 4500.\nFor the second can, 20 litres are filled with oil priced at Rs. 250 per litre and the remaining 10 litres are filled with substandard oil priced at Rs. 100 per litre. So, the cost of filling the second can is (20 x 250) + (10 x 100) = Rs. 5000 + Rs. 1000 = Rs. 6000.\nSimilarly, for the third can, 30 litres are filled with oil priced at Rs. 250 per litre\nThus, the cost of filling the third can is (30 x 250) = Rs. 7500.\nAll cans are marked at Rs. 10000 for selling.\nTo calculate the profit percentage, we need to determine the selling price. The selling price are as follows\nCan A- 10% discount on Rs.10,000  = Rs. 9000\nCan B - 20% discount on Rs. 10,000 = Rs. 8000\nCan C - 10% discount on Rs. 10,000 = Rs. 9000\nProfit percentage of Can A , B and C are\n=> Can A = (9000-4500)/4500 = 1 = 100%\n=> Can B = (8000-6000)/6000 = 1/3 = 33%\n=> Can C = (9000-7500)/7500 = 1/5 = 20%\nTherefore,ratio of profit percentages of A and C = 100:20\n=> 5:1",
+      "question_text": "Priya can type 20 lines per minute and takes a 4-minute break after typing 400 lines. Samir can format 40 lines per minute and takes a 10-minute break after formatting 200 lines. A document is considered complete once it is both typed and formatted, and formatting begins immediately after the document is fully typed. If Priya and Samir start working on a document of 16,000 lines, how long (in minutes) will it take to complete the document?",
+      "options": [],
+      "correct_option_data": "2146",
+      "solution_text": "Typing Cycles for Priya:\nPriya types 400 lines and then rests for 4 minutes.\nTime to type 400 lines: 400 lines / 20 lines/minute = 20 minutes\nTotal time for one cycle: 20 minutes + 4 minutes = 24 minutes\nFormat Cycles for Samir:\nSamir formats 200 lines and then rests for 10 minutes.\nTime to format 200 lines: 200 lines / 40 lines/minute = 5 minutes\nTotal time for one cycle: 5 minutes + 10 minutes = 15 minutes\nPriya needs to type 16,000 lines. Number of cycles: 16,000 lines / 400 lines/cycle = 40 cycles. \nTime taken by Priya to complete the typing = 40*24 = 960 minutes\nHowever, this includes additional 4 minutes which is the rest taken by Priya after completing the typing of these 16000 lines. However, we are told that the formatting starts immediately after the typing is finished. Hence, we can remove those 4 minutes. \nHence, effective time taken by Priya to complete the typing of 16,000 lines = 956 minutes. \nSamir needs to format 16,000 lines. Number of cycles: 16,000 lines / 200 lines/cycle = 80 cycles.\nTime taken by Samir to complete the formatting = 80*15 = 1200 minutes\nSimilarly, this includes the additional 10 minutes taken by Samir after completing the formatting of 16000 lines. Hence, we can remove those 10 minutes. \nTherefore, the effective time taken by Samir to complete the formatting of 16,000 lines = 1190 minutes. \nWe are given that formatting cannot start before all the lines are typed. Typing is completed in  956 minutes, and formatting takes 1190 minutes. So, the complete document will take 956 + 1190 = 2146 minutes.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe shopkeeper bought a 60-litre oil can for Rs. 250 per litre. He divided the oil into three parts in the ratio 1:2:3 and poured them into three different cans A, B and C (all of volume 30 litres each) respectively. To completely fill the cans, he added a substandard oil priced at Rs.100 per litre. Later, he marked all three cans at Rs.10000 and while selling gave discounts of 10%, 20% and 10% respectively for Cans A, B and C. Find the ratio of profit percentage of Can A and Can C.\n\n**Options:**\n- **A**. 5:2\n- **B**. 4:1\n- **C**. 5:1 ✅\n- **D**. 3:1\n\n**Correct Answer:** null\n\n**Solution:**\nThe volume distribution of 60 litres of oil in three cans in a ratio of 1:2:3 will be 10 litres, 20 litres and 30 litres, respectively.\nIn the given question, the oil is divided into three equal cans. The first can is completely filled with 10 litres of oil at a cost of Rs. 250 per litre. Therefore, the first can cost 10 x 250 + 20 x 100 = Rs. 4500.\nFor the second can, 20 litres are filled with oil priced at Rs. 250 per litre and the remaining 10 litres are filled with substandard oil priced at Rs. 100 per litre. So, the cost of filling the second can is (20 x 250) + (10 x 100) = Rs. 5000 + Rs. 1000 = Rs. 6000.\nSimilarly, for the third can, 30 litres are filled with oil priced at Rs. 250 per litre\nThus, the cost of filling the third can is (30 x 250) = Rs. 7500.\nAll cans are marked at Rs. 10000 for selling.\nTo calculate the profit percentage, we need to determine the selling price. The selling price are as follows\nCan A- 10% discount on Rs.10,000  = Rs. 9000\nCan B - 20% discount on Rs. 10,000 = Rs. 8000\nCan C - 10% discount on Rs. 10,000 = Rs. 9000\nProfit percentage of Can A , B and C are\n=> Can A = (9000-4500)/4500 = 1 = 100%\n=> Can B = (8000-6000)/6000 = 1/3 = 33%\n=> Can C = (9000-7500)/7500 = 1/5 = 20%\nTherefore,ratio of profit percentages of A and C = 100:20\n=> 5:1",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPriya can type 20 lines per minute and takes a 4-minute break after typing 400 lines. Samir can format 40 lines per minute and takes a 10-minute break after formatting 200 lines. A document is considered complete once it is both typed and formatted, and formatting begins immediately after the document is fully typed. If Priya and Samir start working on a document of 16,000 lines, how long (in minutes) will it take to complete the document?\n\n**Options:**\n\n**Correct Answer:** 2146\n\n**Solution:**\nTyping Cycles for Priya:\nPriya types 400 lines and then rests for 4 minutes.\nTime to type 400 lines: 400 lines / 20 lines/minute = 20 minutes\nTotal time for one cycle: 20 minutes + 4 minutes = 24 minutes\nFormat Cycles for Samir:\nSamir formats 200 lines and then rests for 10 minutes.\nTime to format 200 lines: 200 lines / 40 lines/minute = 5 minutes\nTotal time for one cycle: 5 minutes + 10 minutes = 15 minutes\nPriya needs to type 16,000 lines. Number of cycles: 16,000 lines / 400 lines/cycle = 40 cycles. \nTime taken by Priya to complete the typing = 40*24 = 960 minutes\nHowever, this includes additional 4 minutes which is the rest taken by Priya after completing the typing of these 16000 lines. However, we are told that the formatting starts immediately after the typing is finished. Hence, we can remove those 4 minutes. \nHence, effective time taken by Priya to complete the typing of 16,000 lines = 956 minutes. \nSamir needs to format 16,000 lines. Number of cycles: 16,000 lines / 200 lines/cycle = 80 cycles.\nTime taken by Samir to complete the formatting = 80*15 = 1200 minutes\nSimilarly, this includes the additional 10 minutes taken by Samir after completing the formatting of 16000 lines. Hence, we can remove those 10 minutes. \nTherefore, the effective time taken by Samir to complete the formatting of 16,000 lines = 1190 minutes. \nWe are given that formatting cannot start before all the lines are typed. Typing is completed in  956 minutes, and formatting takes 1190 minutes. So, the complete document will take 956 + 1190 = 2146 minutes.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-3",
       "passage_text": "",
-      "question_text": "Captain America and Batman run a 10 km race on a circular track of length 1000m. They complete one round in 200 seconds and 400 seconds respectively. After how much time from the start will the faster person meet the slower person for the last time?",
+      "question_text": "A tank contains a mixture of two cleaning solutions, X and Y. Solution X is 20% bleach, and solution Y is 5% bleach. When 8 liters of pure water (0% bleach) are added, the bleach concentration drops to 10%. Subsequently, 4 liters of this diluted mixture are removed and replaced with 4 liters of a concentrated solution containing 50% bleach, resulting in a final bleach concentration of 15%. What was the original ratio of solution X to solution Y in the tank?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "400 seconds",
+          "option_text": "3:2",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1200 seconds",
+          "option_text": "2:1",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "3000 seconds",
-          "is_correct": false
+          "option_text": "5:4",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "2000 seconds",
-          "is_correct": true
+          "option_text": "6:5",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us say Captain America meets Batman after t seconds he starts from the starting point. Speeds of Captain America and batman are 5m/s and 2.5 m/s respectively.\nt = $\\frac{1000}{5-2.5}$ = 400 seconds\nDistance travelled by Captain America when meets Batman for the first time = 2000m i.e., after 2 complete revolutions. So by the time he completes 10 revolutions, he will meet Batman 5 times.\nSo time for $5^{th}$ meet = 400 * 5 = 2000 seconds.",
+      "solution_text": "Let us consider the initial amount of Solution X as X and Solution Y as Y. \nThis means that in X litres of Solution X, this has 0.2X Bleach and 0.8X Water\nSimilarly, in Y litres of Solution Y, this has 0.05Y Bleach and 0.95Y Water\nWe are told that when 8 litres of pure water is added, the bleach concentration is 10%. \nDrawing up the equation for that, we have, \n$\\frac{0.2X+0.05Y}{X+Y+8}=0.1$\n$0.2X+0.05Y=0.1X+0.1Y+0.8$\n$0.1X=0.05Y+0.8$\nWriting this as, $2X=Y+16$\nThen we are told 4 litres of this solution is removed. This is 4 litres of a 10% bleach solution; therefore, the bleach removed will be\n4(0.1)=0.4. \nThe remaining amount of bleach will be 0.2X+0.05Y-0.4\nAnd then we are told that 4 litres of a 50% solution is added, which means the volume of bleach will be 2 litres. \nThe amount of bleach is now 0.2X+0.05Y-0.4+2=0.2X+0.05Y+1.6\nThis solution is now said to have a 15% solution, \nDrawing up the equation for it, we get, \n$\\frac{0.2X+0.05Y+1.6}{X+Y+8}=0.15$\n$0.05X+0.4=0.1Y$\n$X+8=2Y$\nWe now have two equations to solve for X and Y. \nWriting the second equation as, 2X+16=4Y\nSubstituting 2X from the first equation, we have, \n3Y=32\nSubstituting this value, we get the value of X as 3X=40\nRatio of X:Y is 5:4.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nCaptain America and Batman run a 10 km race on a circular track of length 1000m. They complete one round in 200 seconds and 400 seconds respectively. After how much time from the start will the faster person meet the slower person for the last time?\n\n**Options:**\n- **A**. 400 seconds\n- **B**. 1200 seconds\n- **C**. 3000 seconds\n- **D**. 2000 seconds ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us say Captain America meets Batman after t seconds he starts from the starting point. Speeds of Captain America and batman are 5m/s and 2.5 m/s respectively.\nt = $\\frac{1000}{5-2.5}$ = 400 seconds\nDistance travelled by Captain America when meets Batman for the first time = 2000m i.e., after 2 complete revolutions. So by the time he completes 10 revolutions, he will meet Batman 5 times.\nSo time for $5^{th}$ meet = 400 * 5 = 2000 seconds.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA tank contains a mixture of two cleaning solutions, X and Y. Solution X is 20% bleach, and solution Y is 5% bleach. When 8 liters of pure water (0% bleach) are added, the bleach concentration drops to 10%. Subsequently, 4 liters of this diluted mixture are removed and replaced with 4 liters of a concentrated solution containing 50% bleach, resulting in a final bleach concentration of 15%. What was the original ratio of solution X to solution Y in the tank?\n\n**Options:**\n- **A**. 3:2\n- **B**. 2:1\n- **C**. 5:4 ✅\n- **D**. 6:5\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider the initial amount of Solution X as X and Solution Y as Y. \nThis means that in X litres of Solution X, this has 0.2X Bleach and 0.8X Water\nSimilarly, in Y litres of Solution Y, this has 0.05Y Bleach and 0.95Y Water\nWe are told that when 8 litres of pure water is added, the bleach concentration is 10%. \nDrawing up the equation for that, we have, \n$\\frac{0.2X+0.05Y}{X+Y+8}=0.1$\n$0.2X+0.05Y=0.1X+0.1Y+0.8$\n$0.1X=0.05Y+0.8$\nWriting this as, $2X=Y+16$\nThen we are told 4 litres of this solution is removed. This is 4 litres of a 10% bleach solution; therefore, the bleach removed will be\n4(0.1)=0.4. \nThe remaining amount of bleach will be 0.2X+0.05Y-0.4\nAnd then we are told that 4 litres of a 50% solution is added, which means the volume of bleach will be 2 litres. \nThe amount of bleach is now 0.2X+0.05Y-0.4+2=0.2X+0.05Y+1.6\nThis solution is now said to have a 15% solution, \nDrawing up the equation for it, we get, \n$\\frac{0.2X+0.05Y+1.6}{X+Y+8}=0.15$\n$0.05X+0.4=0.1Y$\n$X+8=2Y$\nWe now have two equations to solve for X and Y. \nWriting the second equation as, 2X+16=4Y\nSubstituting 2X from the first equation, we have, \n3Y=32\nSubstituting this value, we get the value of X as 3X=40\nRatio of X:Y is 5:4.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-4",
       "passage_text": "",
-      "question_text": "Shubham purchased a 2-BHK flat in Kondapur from Samay for an undisclosed amount. He spent 25 Lakhs on interior designs and furniture. Later, he sold the flat to Aditya at a 40% profit. Aditya was keen on an IoT-powered home and invested 15 Lakhs in updating the technology and installing an IoT system in the flat. He then sold the flat at 80 Lakhs higher than the price at which Samay sold it to Shubham. If Aditya earned a profit of Rs. 10 Lakhs, find the price at which Shubham sold the flat.",
+      "question_text": "A cylindrical water tank with a capacity 1584000 $cm^3$ and radius 60cm is open at the top. Ignoring the thickness of the cylinder, find out the total cost incurred in painting the inner and outer surface of the tank, including the base, at the rate of Rs. 10.5 per 100$cm^2$?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Rs. 95 Lakhs",
-          "is_correct": false
+          "option_text": "13464",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Rs . 1.05 Crore",
-          "is_correct": true
+          "option_text": "7920",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Rs. 1.10 Crore",
+          "option_text": "1346400",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Rs. 1.15 Crore",
+          "option_text": "792000",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let Samay sold the flat to Shubham at Rs.$x$\nThe cost price for Shubham will be Rs. $x$+ 25,00,000\nHence, Shubham sold the flat for = 1.40($x$+25,00,000) = 1.40$x$+35,00,000\n=> Now, Aditya further spend Rs.15,00,000 on updating the technology and installing an IoT system in the flat.\nHence cost price for Aditya = Rs. 1.4$x$+50,00,000\nIn the question, it is given that\n=> $x$+80,00,000 - (1.4$x$+50,00,000) = Rs. 10,00,000\n=> -$.4x$ + 30,00,000 = 10,00,000\n=> $.4x$ = 20,00,000\n=> $x$ = Rs. 50,00,000\nWe are required to find the  price at which Shubham sold the flat \n=> 1.40$x$+35,00,000\n=> 1.40(50,00,000)+ 35,00,000\n=> Rs. 1.05 Crore",
+      "solution_text": "Given that capacity of water tank = $\\pi \\times r^2 * h$\n$\\Rightarrow 1584000 = \\frac{22}{7} \\times 60^2 * h$\n$\\Rightarrow h = 140 cm$\nTotal inner surface area = Area of base + Area of side wall = $\\pi*r^2 + 2\\pi*r*h$\nSince we are neglecting thickness hence outer surface area will be same as inner surface area.\nTotal surface area that is to be painted = 2($\\pi*r^2 + 2\\pi*r*h$)\n$\\Rightarrow 2((\\pi*60^2 + 2\\pi*60*140))$\n$\\Rightarrow \\frac{897600}{7} cm^2$\nGiven that rate of painting = Rs. 10.5 per 100$cm^2$.\nHence total cost incurred = $\\frac{897600}{7} \\times \\frac{10.5}{100}$ = Rs. 13464 (Answer A)",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nShubham purchased a 2-BHK flat in Kondapur from Samay for an undisclosed amount. He spent 25 Lakhs on interior designs and furniture. Later, he sold the flat to Aditya at a 40% profit. Aditya was keen on an IoT-powered home and invested 15 Lakhs in updating the technology and installing an IoT system in the flat. He then sold the flat at 80 Lakhs higher than the price at which Samay sold it to Shubham. If Aditya earned a profit of Rs. 10 Lakhs, find the price at which Shubham sold the flat.\n\n**Options:**\n- **A**. Rs. 95 Lakhs\n- **B**. Rs . 1.05 Crore ✅\n- **C**. Rs. 1.10 Crore\n- **D**. Rs. 1.15 Crore\n\n**Correct Answer:** null\n\n**Solution:**\nLet Samay sold the flat to Shubham at Rs.$x$\nThe cost price for Shubham will be Rs. $x$+ 25,00,000\nHence, Shubham sold the flat for = 1.40($x$+25,00,000) = 1.40$x$+35,00,000\n=> Now, Aditya further spend Rs.15,00,000 on updating the technology and installing an IoT system in the flat.\nHence cost price for Aditya = Rs. 1.4$x$+50,00,000\nIn the question, it is given that\n=> $x$+80,00,000 - (1.4$x$+50,00,000) = Rs. 10,00,000\n=> -$.4x$ + 30,00,000 = 10,00,000\n=> $.4x$ = 20,00,000\n=> $x$ = Rs. 50,00,000\nWe are required to find the  price at which Shubham sold the flat \n=> 1.40$x$+35,00,000\n=> 1.40(50,00,000)+ 35,00,000\n=> Rs. 1.05 Crore",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cylindrical water tank with a capacity 1584000 $cm^3$ and radius 60cm is open at the top. Ignoring the thickness of the cylinder, find out the total cost incurred in painting the inner and outer surface of the tank, including the base, at the rate of Rs. 10.5 per 100$cm^2$?\n\n**Options:**\n- **A**. 13464 ✅\n- **B**. 7920\n- **C**. 1346400\n- **D**. 792000\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that capacity of water tank = $\\pi \\times r^2 * h$\n$\\Rightarrow 1584000 = \\frac{22}{7} \\times 60^2 * h$\n$\\Rightarrow h = 140 cm$\nTotal inner surface area = Area of base + Area of side wall = $\\pi*r^2 + 2\\pi*r*h$\nSince we are neglecting thickness hence outer surface area will be same as inner surface area.\nTotal surface area that is to be painted = 2($\\pi*r^2 + 2\\pi*r*h$)\n$\\Rightarrow 2((\\pi*60^2 + 2\\pi*60*140))$\n$\\Rightarrow \\frac{897600}{7} cm^2$\nGiven that rate of painting = Rs. 10.5 per 100$cm^2$.\nHence total cost incurred = $\\frac{897600}{7} \\times \\frac{10.5}{100}$ = Rs. 13464 (Answer A)",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-5",
       "passage_text": "",
-      "question_text": "Sourabh invested $x$ rupees in Bank A at $8\\frac{1}{3}\\%$ simple interest. After four years, he withdrew all the amount and invested Rs. $2000$ in Bank B at a $41.42\\%$ interest rate compounded annually and the rest of the amount in Bank C at $8\\frac{1}{3}\\%$ simple interest.  If, after four years of investment, the amounts of Bank C and B were equal, How much amount did Sourabh invest in Bank A? (Take $\\sqrt{2}-1=0.4142$)",
+      "question_text": "A bag contains 5 white balls, 2 black balls, and 6 red balls, each of a distinct size (i.e., all balls are distinguishable). How many ways can 4 balls be drawn from the bag, such that at least one white ball is included in the selection?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "Rs 4500",
+          "option_text": "560 ways",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "Rs 4800",
+          "option_text": "565 ways",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "Rs 5000",
+          "option_text": "640 ways",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "Rs 6000",
+          "option_text": "645 ways",
           "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Sourabh invested Rs. x in bank A at 8.33% simple interest. \nInterest after 4 years = $\\ \\dfrac{\\ x\\times\\ 8.33\\times\\ 4}{100}=>\\ \\dfrac{\\ x\\ \\times\\ 4}{12}=\\dfrac{x}{3}$. \nHence, the total amount is $\\dfrac{x}{3}+x=\\dfrac{4x}{3}$.\nRs 2000 was withdrawn from Bank A and invested in Bank B at a 41.42% rate of interest compounded annually. He invested $\\left(\\frac{4x}{3}-2000\\right)$ rupees in Bank C at 8.33% simple interest.\nHence, the principal amount in Bank C is Rs. $\\left(\\dfrac{4x}{3}-2000\\right)$, and in Bank B is Rs. 2000.\nAfter 4 years of investing in Bank C, the total amount in Bank A = P + I = $\\left(\\dfrac{4x}{3}-2000\\right)\\ +\\ \\dfrac{\\left(\\dfrac{4x}{3}-2000\\right)\\times\\ \\dfrac{100}{12}\\times\\ 4}{100}=\\left(\\dfrac{4x}{3}-2000\\right)+\\left(\\dfrac{\\ 4x}{3}-2000\\right)\\times\\ \\dfrac{1}{3}\\ =\\left(\\dfrac{4x}{3}-2000\\right)\\times\\ \\dfrac{4}{3}=\\ \\dfrac{\\ 16x-24000}{9}$\nThe total amount in Bank B = $2000\\left(1+\\ \\dfrac{\\ 41.42}{100}\\right)^4\\ =2000\\left(1+\\ \\dfrac{\\ 100\\left(\\sqrt{\\ 2}-1\\right)}{100}\\right)^{^4}=2000.\\left(\\sqrt{\\ 2}\\right)^4=2000\\times\\ 4=8000$\nIt is given, \n$\\ \\dfrac{\\ 16x-24000}{9}=8000\\ =>16x\\ =\\ 96000\\ =>\\ x=6000$.\nThe answer is option D.",
+      "solution_text": "White balls = 5\nBlack balls = 2\nRed balls = 6\nNon-white balls = 2+6 = 8\nFour balls are drawn.\nNumber of ways in which 4 balls are drawn such that\nCase 1: 1 white ball and 3 non white balls\n$^5C_1\\times^8C_3$ = 5*56 = 280 ways\nCase 2: 2 white balls and 2 non white balls\n$^5C_2\\times^8C_2$ = 10*28 = 280 ways\nCase 3: 3 white balls and 1 non white balls\n$^5C_3\\times^8C_1$ = 80 ways\nCase 4: 4 white balls\n$^5C_4$ = 5 ways\nTotal ways = 280+280+80+5 = 645 ways.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSourabh invested $x$ rupees in Bank A at $8\\frac{1}{3}\\%$ simple interest. After four years, he withdrew all the amount and invested Rs. $2000$ in Bank B at a $41.42\\%$ interest rate compounded annually and the rest of the amount in Bank C at $8\\frac{1}{3}\\%$ simple interest.  If, after four years of investment, the amounts of Bank C and B were equal, How much amount did Sourabh invest in Bank A? (Take $\\sqrt{2}-1=0.4142$)\n\n**Options:**\n- **A**. Rs 4500\n- **B**. Rs 4800\n- **C**. Rs 5000\n- **D**. Rs 6000 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nSourabh invested Rs. x in bank A at 8.33% simple interest. \nInterest after 4 years = $\\ \\dfrac{\\ x\\times\\ 8.33\\times\\ 4}{100}=>\\ \\dfrac{\\ x\\ \\times\\ 4}{12}=\\dfrac{x}{3}$. \nHence, the total amount is $\\dfrac{x}{3}+x=\\dfrac{4x}{3}$.\nRs 2000 was withdrawn from Bank A and invested in Bank B at a 41.42% rate of interest compounded annually. He invested $\\left(\\frac{4x}{3}-2000\\right)$ rupees in Bank C at 8.33% simple interest.\nHence, the principal amount in Bank C is Rs. $\\left(\\dfrac{4x}{3}-2000\\right)$, and in Bank B is Rs. 2000.\nAfter 4 years of investing in Bank C, the total amount in Bank A = P + I = $\\left(\\dfrac{4x}{3}-2000\\right)\\ +\\ \\dfrac{\\left(\\dfrac{4x}{3}-2000\\right)\\times\\ \\dfrac{100}{12}\\times\\ 4}{100}=\\left(\\dfrac{4x}{3}-2000\\right)+\\left(\\dfrac{\\ 4x}{3}-2000\\right)\\times\\ \\dfrac{1}{3}\\ =\\left(\\dfrac{4x}{3}-2000\\right)\\times\\ \\dfrac{4}{3}=\\ \\dfrac{\\ 16x-24000}{9}$\nThe total amount in Bank B = $2000\\left(1+\\ \\dfrac{\\ 41.42}{100}\\right)^4\\ =2000\\left(1+\\ \\dfrac{\\ 100\\left(\\sqrt{\\ 2}-1\\right)}{100}\\right)^{^4}=2000.\\left(\\sqrt{\\ 2}\\right)^4=2000\\times\\ 4=8000$\nIt is given, \n$\\ \\dfrac{\\ 16x-24000}{9}=8000\\ =>16x\\ =\\ 96000\\ =>\\ x=6000$.\nThe answer is option D.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA bag contains 5 white balls, 2 black balls, and 6 red balls, each of a distinct size (i.e., all balls are distinguishable). How many ways can 4 balls be drawn from the bag, such that at least one white ball is included in the selection?\n\n**Options:**\n- **A**. 560 ways\n- **B**. 565 ways\n- **C**. 640 ways\n- **D**. 645 ways ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWhite balls = 5\nBlack balls = 2\nRed balls = 6\nNon-white balls = 2+6 = 8\nFour balls are drawn.\nNumber of ways in which 4 balls are drawn such that\nCase 1: 1 white ball and 3 non white balls\n$^5C_1\\times^8C_3$ = 5*56 = 280 ways\nCase 2: 2 white balls and 2 non white balls\n$^5C_2\\times^8C_2$ = 10*28 = 280 ways\nCase 3: 3 white balls and 1 non white balls\n$^5C_3\\times^8C_1$ = 80 ways\nCase 4: 4 white balls\n$^5C_4$ = 5 ways\nTotal ways = 280+280+80+5 = 645 ways.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-6",
       "passage_text": "",
-      "question_text": "What is the area of the unshaded region outside the regular octagon inscribed inside a circle of radius 4 cm?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$16\\left(\\pi\\ -2\\right)$",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$16\\left(\\pi\\ -\\sqrt{2}\\right)$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "$16\\left(\\pi\\ -2\\sqrt{2}\\right)$",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$8\\left(\\pi\\ -2\\sqrt{2}\\right)$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "f we join the longest diagonals in the octagon, we will find 8 sectors of equal area, each subtending $\\ \\frac{360^{\\circ\\ }}{8}\\ =45^{\\circ\\ }$ in the centre.\nArea of unshaded region in one such sector= (Area of the sector- area of the triangle)= $\\frac{45^{\\circ}}{360^{\\circ\\ }}\\pi r^2-\\frac{1}{2}r^2Sin45^{\\circ\\ }$= $\\ \\frac{\\pi r^2}{8}-\\frac{1}{2\\sqrt{2}}r^2=\\ 2\\pi-4\\sqrt{2}=2\\left(\\pi\\ -2\\sqrt{2}\\right)\\ $\nTherefore, area of unshaded region in the entire circle= $8\\times\\ 2\\left(\\pi\\ -2\\sqrt{2}\\right)=16\\left(\\pi-2\\sqrt{2\\ }\\right)\\ $",
-      "image_url": "https://cracku.in/media/uploads/Screenshot%202021-02-04%20at%2009.59.37.png",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the area of the unshaded region outside the regular octagon inscribed inside a circle of radius 4 cm?\n\n**Options:**\n- **A**. $16\\left(\\pi\\ -2\\right)$\n- **B**. $16\\left(\\pi\\ -\\sqrt{2}\\right)$\n- **C**. $16\\left(\\pi\\ -2\\sqrt{2}\\right)$ ✅\n- **D**. $8\\left(\\pi\\ -2\\sqrt{2}\\right)$\n\n**Correct Answer:** null\n\n**Solution:**\nf we join the longest diagonals in the octagon, we will find 8 sectors of equal area, each subtending $\\ \\frac{360^{\\circ\\ }}{8}\\ =45^{\\circ\\ }$ in the centre.\nArea of unshaded region in one such sector= (Area of the sector- area of the triangle)= $\\frac{45^{\\circ}}{360^{\\circ\\ }}\\pi r^2-\\frac{1}{2}r^2Sin45^{\\circ\\ }$= $\\ \\frac{\\pi r^2}{8}-\\frac{1}{2\\sqrt{2}}r^2=\\ 2\\pi-4\\sqrt{2}=2\\left(\\pi\\ -2\\sqrt{2}\\right)\\ $\nTherefore, area of unshaded region in the entire circle= $8\\times\\ 2\\left(\\pi\\ -2\\sqrt{2}\\right)=16\\left(\\pi-2\\sqrt{2\\ }\\right)\\ $",
+      "question_text": "Find the sum of integral solutions that satisfy the following inequality, given that the expressions under the square roots are defined for real numbers:\n\n$\\left|x-3\\right|\\sqrt{x^2-4x-44}\\le\\ \\sqrt{x^2-6x+9}$",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "The first condition that needs to be satisfied is $x^2-4x-44\\ge\\ 0$ as the value under the root can't be negative.\nWe get \n$\\left(x-2\\right)^2-48\\ge\\ 0$\n$\\left(x-2\\right)^2\\ge\\ 48$\n$x-2\\ge\\ 4\\sqrt{3\\ }$ or $x-2\\le\\ -4\\sqrt{3}$\n$x\\ge\\ 2+4\\sqrt{3}$ or $x\\le\\ 2-4\\sqrt{3}$\n$4\\sqrt{3}\\ =\\ 6.92$\nHence, $x\\ge8.92\\ $ or $x\\le-4.92$  ---(1)\nThe term on the right-hand side can be rewritten as $\\sqrt{\\ \\left(x-3\\right)^2}=\\left|x-3\\right|$\nChanging the expression to \n$\\left|x-3\\right|\\sqrt{\\left(\\ x-2\\right)^2-48}\\le\\left|x-3\\right|$\n|x-3| can be cancelled out on both sides, as we obtained that the value of x cannot be equal to 3. \n$\\sqrt{\\ \\left(x-2\\right)^2-48}\\le1$\nWe can square either side of the expression, and we get, \n$\\left(x-2\\right)^2-48\\le1$\n$\\left(x-2\\right)^2\\le49$\n$x-2\\le7$ and $x-2\\ge-7$\nWe get a range of values of x, which is, $-5\\le x\\le9$ ---(2)\nThe only integers that satisfy the equations (1) and (2) are -5 and 9. Hence, the only two integer values that satisfy this equation are -5 and 9.\nPutting in values of x as -5 and 9, we see that all conditions are being met. \nHence, the sum of all the solutions would be -5+9, which equals 4.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the sum of integral solutions that satisfy the following inequality, given that the expressions under the square roots are defined for real numbers:\n\n$\\left|x-3\\right|\\sqrt{x^2-4x-44}\\le\\ \\sqrt{x^2-6x+9}$\n\n**Options:**\n\n**Correct Answer:** 4\n\n**Solution:**\nThe first condition that needs to be satisfied is $x^2-4x-44\\ge\\ 0$ as the value under the root can't be negative.\nWe get \n$\\left(x-2\\right)^2-48\\ge\\ 0$\n$\\left(x-2\\right)^2\\ge\\ 48$\n$x-2\\ge\\ 4\\sqrt{3\\ }$ or $x-2\\le\\ -4\\sqrt{3}$\n$x\\ge\\ 2+4\\sqrt{3}$ or $x\\le\\ 2-4\\sqrt{3}$\n$4\\sqrt{3}\\ =\\ 6.92$\nHence, $x\\ge8.92\\ $ or $x\\le-4.92$  ---(1)\nThe term on the right-hand side can be rewritten as $\\sqrt{\\ \\left(x-3\\right)^2}=\\left|x-3\\right|$\nChanging the expression to \n$\\left|x-3\\right|\\sqrt{\\left(\\ x-2\\right)^2-48}\\le\\left|x-3\\right|$\n|x-3| can be cancelled out on both sides, as we obtained that the value of x cannot be equal to 3. \n$\\sqrt{\\ \\left(x-2\\right)^2-48}\\le1$\nWe can square either side of the expression, and we get, \n$\\left(x-2\\right)^2-48\\le1$\n$\\left(x-2\\right)^2\\le49$\n$x-2\\le7$ and $x-2\\ge-7$\nWe get a range of values of x, which is, $-5\\le x\\le9$ ---(2)\nThe only integers that satisfy the equations (1) and (2) are -5 and 9. Hence, the only two integer values that satisfy this equation are -5 and 9.\nPutting in values of x as -5 and 9, we see that all conditions are being met. \nHence, the sum of all the solutions would be -5+9, which equals 4.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-7",
       "passage_text": "",
-      "question_text": "The average number of patients a doctor treated on the first 6 days of a week is 25, while the average for the last 6 days is 26. If the total number of patients on the first and last day is 40, find the number of patients on the last day.",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "27",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "23",
-          "is_correct": true
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "17",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "Can't be determined",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Average patients per day = Sum of the number of patients on given days/ Total number of days\nTotal number of patients on first 6 day = Sum of patients from day 1 to 6= 25 X 6=150  (Total number of days=6)\nSum of patients from day 2 to 7= 26 X 6=156\nSum of the number of patients on day 1 to 6 = [1] + [2] +  [3] + [4] +  [5] + [6] = 150...(i) where [x] is the number of patients on day x\nSum of the number of patients on day 1 to 6 = [2] +  [3] + [4] +  [5] + [6] + [7]= 156 ....(ii)\nSubtracting (i) from (ii)=> [7]-[1]=6, \nAlso, [7]+[1]=40\nSolving the two euations we get, [7]=23 and [1]=17",
+      "question_text": "Given the quadratic equation $x^2-\\left(p+3\\right)x+\\left(p+2\\right)=0$, we are told that the sum of the square of the roots of the quadratic equation equals fifty. Find the value of $|p|$ given that p is negative.",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": "We are given the equation, $x^2-\\left(p+3\\right)x+\\left(p+2\\right)=0$\nLet us consider that the roots of the quadratic equation are, $\\alpha\\ and\\ \\beta\\ $\nWe know that, $\\alpha+\\beta=\\left(p+3\\right)$\nand we can write, \n$\\alpha\\times\\ \\beta=\\left(p+2\\right)$\n$\\alpha^2+\\beta^2=\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\nSubstituting the values we get, \n$\\alpha^2+\\beta^2=\\left(p+3\\right)^2-2\\left(p+2\\right)$\nSimplifying we get, \n$\\alpha^2+\\beta^2=p^2+9+6p-2p-4$\n$\\alpha^2+\\beta^2=p^2+5+4p$\nWe are told that, this equation equals 50. \n$p^2+5+4p=50$\n$p^2-45+4p=0$\n$\\left(p+9\\right)\\left(p-5\\right)=0$\np can be -9 or 5. \nWe are asked for the absolute value of the negative value of p, which will be 9.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average number of patients a doctor treated on the first 6 days of a week is 25, while the average for the last 6 days is 26. If the total number of patients on the first and last day is 40, find the number of patients on the last day.\n\n**Options:**\n- **A**. 27\n- **B**. 23 ✅\n- **C**. 17\n- **D**. Can't be determined\n\n**Correct Answer:** null\n\n**Solution:**\nAverage patients per day = Sum of the number of patients on given days/ Total number of days\nTotal number of patients on first 6 day = Sum of patients from day 1 to 6= 25 X 6=150  (Total number of days=6)\nSum of patients from day 2 to 7= 26 X 6=156\nSum of the number of patients on day 1 to 6 = [1] + [2] +  [3] + [4] +  [5] + [6] = 150...(i) where [x] is the number of patients on day x\nSum of the number of patients on day 1 to 6 = [2] +  [3] + [4] +  [5] + [6] + [7]= 156 ....(ii)\nSubtracting (i) from (ii)=> [7]-[1]=6, \nAlso, [7]+[1]=40\nSolving the two euations we get, [7]=23 and [1]=17",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven the quadratic equation $x^2-\\left(p+3\\right)x+\\left(p+2\\right)=0$, we are told that the sum of the square of the roots of the quadratic equation equals fifty. Find the value of $|p|$ given that p is negative.\n\n**Options:**\n\n**Correct Answer:** 9\n\n**Solution:**\nWe are given the equation, $x^2-\\left(p+3\\right)x+\\left(p+2\\right)=0$\nLet us consider that the roots of the quadratic equation are, $\\alpha\\ and\\ \\beta\\ $\nWe know that, $\\alpha+\\beta=\\left(p+3\\right)$\nand we can write, \n$\\alpha\\times\\ \\beta=\\left(p+2\\right)$\n$\\alpha^2+\\beta^2=\\left(\\alpha+\\beta\\right)^2-2\\alpha\\beta\\ $\nSubstituting the values we get, \n$\\alpha^2+\\beta^2=\\left(p+3\\right)^2-2\\left(p+2\\right)$\nSimplifying we get, \n$\\alpha^2+\\beta^2=p^2+9+6p-2p-4$\n$\\alpha^2+\\beta^2=p^2+5+4p$\nWe are told that, this equation equals 50. \n$p^2+5+4p=50$\n$p^2-45+4p=0$\n$\\left(p+9\\right)\\left(p-5\\right)=0$\np can be -9 or 5. \nWe are asked for the absolute value of the negative value of p, which will be 9.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-8",
       "passage_text": "",
-      "question_text": "A group of men and women can complete a work in 100 days. If two men in the group are replaced by two women, the new group can complete the same work in 80 days.  If three men in the original group are replaced by three women, then in how many days can the new group complete the same work?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "700/11 days",
-          "is_correct": false
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "600/11 days",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "800/11 days",
-          "is_correct": true
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "900/11 days",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "Let, a man and a woman can complete the work alone in M, and W days, respectively, and initially, the group has 'a' men and 'b' women.\nTherefore, the equation will be: $\\frac{a}{M}+\\frac{b}{W}=\\frac{1}{100}$  .......Eq(1)\nWhen two men are replaced by two women, the number of men in the new group $\\left(a-2\\right)$, and the number of women in the new group is $\\left(b+2\\right)$.\nThe equation will be: $\\frac{a-2}{M}+\\frac{b+2}{W}=\\frac{1}{80}$  ......Eq(2)\nIf three men are replaced by three women from the original group, the number of men in the new group is $\\left(a-3\\right)$, and the number of women in the new group is $\\left(b+3\\right)$. \nLet the work will be completed in t days. Then the equation will be: $\\frac{a-3}{M}+\\frac{b+3}{W}=\\frac{1}{t}$ ......Eq(3)\nNow, from Eq(2) - Eq(1), we get: $-\\frac{2}{M}+\\frac{2}{W}=\\frac{1}{80}-\\frac{1}{100}=\\frac{1}{400}\\ =>-\\frac{1}{M}+\\frac{1}{W}=\\frac{1}{800}$ .....Eq(4)\nNow, from Eq(3)-Eq(2), we get: $-\\frac{1}{M}+\\frac{1}{W}=\\frac{1}{t}-\\frac{1}{80}$  ......Eq(5)\nEquating Eq(4) and Eq(5), we get:\n$\\frac{1}{800}=\\frac{1}{t}-\\frac{1}{80}\\ =>\\frac{1}{t}=\\frac{1}{800}+\\frac{1}{80}\\ =\\ \\frac{\\ 1+10}{800}=\\frac{11}{800}$.\nTherefore, $t\\ =\\ \\frac{800}{11}$ days.\nThe correct option is C.",
+      "question_text": "In an arithmetic progression of 2z terms, the sum of the odd terms equals 140, and that of the even terms equals 176. The last term of the series exceeds the first by 66. If the first term of the series is $a_1$, find the value of $3|a_1|$.",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "We are given an arithmetic progression of z terms, expressed as follows, \n$a_1,\\ a_2,\\ a_3,\\ ...,\\ a_{2z}$\nSum of odd terms will be, $a_1+a_3+a_5+...+a_{2z-1}=140$\nDrawing up the equation we get, \n$\\frac{z}{2}\\left(2a_1+\\left(2z-2\\right)d\\right)=140$\n$z\\left(a_1+\\left(z-1\\right)d\\right)=140$\nSum of even terms will be, $a_2+a_4+a_6+...+a_{2z}=176$\nDrawing up the equation we get, \n$\\frac{z}{2}\\left(a_1+d+a_1+\\left(2z-1\\right)d\\right)$\n$z\\left(a_1+zd\\right)=176$\nSubtracting the two equations, we get zd=36\nWe are also told that, last term exceeds the first by 66. $\\left(2z-1\\right)d=66$\n$2zd-d=66$\n$72-d=66$\n$d=6$\nUsing this value, we see that z=6, that means there are total of 12 terms in the arithemtic progression given. \nSubstituting the value of z and d in this equation, $z\\left(a_1+zd\\right)=176$\nSubstituting for zd=36, we get, \nWe get the value of $a_1=\\frac{-20}{3}$\nAnswer will then be 20.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of men and women can complete a work in 100 days. If two men in the group are replaced by two women, the new group can complete the same work in 80 days.  If three men in the original group are replaced by three women, then in how many days can the new group complete the same work?\n\n**Options:**\n- **A**. 700/11 days\n- **B**. 600/11 days\n- **C**. 800/11 days ✅\n- **D**. 900/11 days\n\n**Correct Answer:** null\n\n**Solution:**\nLet, a man and a woman can complete the work alone in M, and W days, respectively, and initially, the group has 'a' men and 'b' women.\nTherefore, the equation will be: $\\frac{a}{M}+\\frac{b}{W}=\\frac{1}{100}$  .......Eq(1)\nWhen two men are replaced by two women, the number of men in the new group $\\left(a-2\\right)$, and the number of women in the new group is $\\left(b+2\\right)$.\nThe equation will be: $\\frac{a-2}{M}+\\frac{b+2}{W}=\\frac{1}{80}$  ......Eq(2)\nIf three men are replaced by three women from the original group, the number of men in the new group is $\\left(a-3\\right)$, and the number of women in the new group is $\\left(b+3\\right)$. \nLet the work will be completed in t days. Then the equation will be: $\\frac{a-3}{M}+\\frac{b+3}{W}=\\frac{1}{t}$ ......Eq(3)\nNow, from Eq(2) - Eq(1), we get: $-\\frac{2}{M}+\\frac{2}{W}=\\frac{1}{80}-\\frac{1}{100}=\\frac{1}{400}\\ =>-\\frac{1}{M}+\\frac{1}{W}=\\frac{1}{800}$ .....Eq(4)\nNow, from Eq(3)-Eq(2), we get: $-\\frac{1}{M}+\\frac{1}{W}=\\frac{1}{t}-\\frac{1}{80}$  ......Eq(5)\nEquating Eq(4) and Eq(5), we get:\n$\\frac{1}{800}=\\frac{1}{t}-\\frac{1}{80}\\ =>\\frac{1}{t}=\\frac{1}{800}+\\frac{1}{80}\\ =\\ \\frac{\\ 1+10}{800}=\\frac{11}{800}$.\nTherefore, $t\\ =\\ \\frac{800}{11}$ days.\nThe correct option is C.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn an arithmetic progression of 2z terms, the sum of the odd terms equals 140, and that of the even terms equals 176. The last term of the series exceeds the first by 66. If the first term of the series is $a_1$, find the value of $3|a_1|$.\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nWe are given an arithmetic progression of z terms, expressed as follows, \n$a_1,\\ a_2,\\ a_3,\\ ...,\\ a_{2z}$\nSum of odd terms will be, $a_1+a_3+a_5+...+a_{2z-1}=140$\nDrawing up the equation we get, \n$\\frac{z}{2}\\left(2a_1+\\left(2z-2\\right)d\\right)=140$\n$z\\left(a_1+\\left(z-1\\right)d\\right)=140$\nSum of even terms will be, $a_2+a_4+a_6+...+a_{2z}=176$\nDrawing up the equation we get, \n$\\frac{z}{2}\\left(a_1+d+a_1+\\left(2z-1\\right)d\\right)$\n$z\\left(a_1+zd\\right)=176$\nSubtracting the two equations, we get zd=36\nWe are also told that, last term exceeds the first by 66. $\\left(2z-1\\right)d=66$\n$2zd-d=66$\n$72-d=66$\n$d=6$\nUsing this value, we see that z=6, that means there are total of 12 terms in the arithemtic progression given. \nSubstituting the value of z and d in this equation, $z\\left(a_1+zd\\right)=176$\nSubstituting for zd=36, we get, \nWe get the value of $a_1=\\frac{-20}{3}$\nAnswer will then be 20.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-9",
       "passage_text": "",
-      "question_text": "A recently conducted study suggests that 6% of mobile users suffer from migraine and 60% of migraine patients are mobile users. If 90% of the population uses mobile phones, what is the percentage of population suffering from migraine?",
+      "question_text": "Tanvi buys a plot of land worth Rs. 50,00,000 with a down payment of Rs. 20,00,000, and the rest is financed through a loan. The loan is taken at 12% per annum compounded semi-annually. If Tanvi pays back the entire amount in 4 equal instalments paid every 6 months starting 6 months from today, find the interest amount paid by Tanvi (Round off to the nearest integer).",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "8",
+          "option_text": "Rs. 4,45,016",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "9",
-          "is_correct": true
+          "option_text": "Rs. 4,16,165",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "10",
-          "is_correct": false
+          "option_text": "Rs. 4,63,098",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "5",
+          "option_text": "Rs. 4,22,126",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let us assume that total population = $100x$\nThen number of mobile phone users = $\\frac{90}{100}\\times 100x = 90x$\nNumber of mobile phone users suffering from migraine = $\\frac{6}{100}\\times 90x = 5.4x$\nIt is given that 60% of migraine patients are mobile users then we can say that \nTotal patients suffering from migraine = $\\frac{5.4x}{0.6}$ = 9x\nHence we can say that 9% population is suffering from migraine. Hence B is the correct answer.",
+      "solution_text": "As the amount is paid back in 4 equal instalments, let the instalment amount be $x$\nSo, $P\\left(1+\\dfrac{r}{100}\\right)^4=x\\left(1+\\dfrac{r}{100}\\right)^3+x\\left(1+\\dfrac{r}{100}\\right)^2+x\\left(1+\\dfrac{r}{100}\\right)+x$\nAs compounding is happening semi-annually, the rate will be halved.\nSo, $r=6$\n$3000000\\left(1+\\dfrac{6}{100}\\right)^4=x\\left(1+\\dfrac{6}{100}\\right)^3+x\\left(1+\\dfrac{6}{100}\\right)^2+x\\left(1+\\dfrac{6}{100}\\right)+x$\n$3000000\\left(1.06\\right)^4=x\\left(1.06\\right)^3+x\\left(1.06\\right)^2+x\\left(1.06\\right)+x$\n$3787430.88=1.191016x+1.1236x+1.06x+x$\n$4.374616x=3787430.88$\n$x=865774.477$\nSo, the total amount paid is \n$4x=3463097.908$\nHence, the interest amount is \nRs. 3463097.908 - Rs. 3000000 = Rs. 4,63,097.908\nRounding off to the nearest integer, we get the answer as Rs. 4,63,098",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA recently conducted study suggests that 6% of mobile users suffer from migraine and 60% of migraine patients are mobile users. If 90% of the population uses mobile phones, what is the percentage of population suffering from migraine?\n\n**Options:**\n- **A**. 8\n- **B**. 9 ✅\n- **C**. 10\n- **D**. 5\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that total population = $100x$\nThen number of mobile phone users = $\\frac{90}{100}\\times 100x = 90x$\nNumber of mobile phone users suffering from migraine = $\\frac{6}{100}\\times 90x = 5.4x$\nIt is given that 60% of migraine patients are mobile users then we can say that \nTotal patients suffering from migraine = $\\frac{5.4x}{0.6}$ = 9x\nHence we can say that 9% population is suffering from migraine. Hence B is the correct answer.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTanvi buys a plot of land worth Rs. 50,00,000 with a down payment of Rs. 20,00,000, and the rest is financed through a loan. The loan is taken at 12% per annum compounded semi-annually. If Tanvi pays back the entire amount in 4 equal instalments paid every 6 months starting 6 months from today, find the interest amount paid by Tanvi (Round off to the nearest integer).\n\n**Options:**\n- **A**. Rs. 4,45,016\n- **B**. Rs. 4,16,165\n- **C**. Rs. 4,63,098 ✅\n- **D**. Rs. 4,22,126\n\n**Correct Answer:** null\n\n**Solution:**\nAs the amount is paid back in 4 equal instalments, let the instalment amount be $x$\nSo, $P\\left(1+\\dfrac{r}{100}\\right)^4=x\\left(1+\\dfrac{r}{100}\\right)^3+x\\left(1+\\dfrac{r}{100}\\right)^2+x\\left(1+\\dfrac{r}{100}\\right)+x$\nAs compounding is happening semi-annually, the rate will be halved.\nSo, $r=6$\n$3000000\\left(1+\\dfrac{6}{100}\\right)^4=x\\left(1+\\dfrac{6}{100}\\right)^3+x\\left(1+\\dfrac{6}{100}\\right)^2+x\\left(1+\\dfrac{6}{100}\\right)+x$\n$3000000\\left(1.06\\right)^4=x\\left(1.06\\right)^3+x\\left(1.06\\right)^2+x\\left(1.06\\right)+x$\n$3787430.88=1.191016x+1.1236x+1.06x+x$\n$4.374616x=3787430.88$\n$x=865774.477$\nSo, the total amount paid is \n$4x=3463097.908$\nHence, the interest amount is \nRs. 3463097.908 - Rs. 3000000 = Rs. 4,63,097.908\nRounding off to the nearest integer, we get the answer as Rs. 4,63,098",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-10",
       "passage_text": "",
-      "question_text": "We have a circle given by the equation $x^2+y^2-2x-2y-2=0$ and a straight line given by the equation x + y = 0 cuts the circle into two parts. Find the area of smaller part.",
+      "question_text": "There were three types of attendees at a music concert: musicians, singers, and lyricists. Groups were formed so that each group included exactly one musician, one singer, and one lyricist.  It was observed that half of the musicians, a quarter of the singers, and three-quarters of the lyricists ended up joining groups. Based on this information, what fraction of the total number of people at the concert did not join any group?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$4-\\pi\\ $",
+          "option_text": "$\\dfrac{1}{2}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$\\pi-2\\ $",
-          "is_correct": true
+          "option_text": "$\\dfrac{1}{3}$",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$\\pi-1$",
+          "option_text": "$\\dfrac{3}{4}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$\\pi+1$",
-          "is_correct": false
+          "option_text": "$\\dfrac{13}{22}$",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Given equation of circle is $x^2+y^2-2x-2y-2=0$, It can be written as $\\left(x-1\\right)^2+\\left(y-1\\right)^2=2^2$.\nThis is an equation of a circle whose centre is (1,1) and has a radius of 2 units.\nTo find the points of intersection, we should solve the circle and line equation\n=> putting $y=-x\\ $ in the circle equation we get\n$\\left(x-1\\right)^2+\\left(-x-1\\right)^2=4$\n=> $2x^2=2$ => $x\\ =\\ \\pm\\ 1$.\nTherefore, points of intersection are C(-1,1) and D(1,-1).\nWe see that C (-1,1) O (1,1) D (1,-1) is a right-angled triangle. To find the area of the smaller part of the circle, we can subtract the area of the triangle (OCD) from the quarter-circle.\nTherefore, the area of the smaller part of the circle = $\\dfrac{1}{4}\\pi\\ \\left(2\\right)^2-\\dfrac{1}{2}\\times\\ 2\\times\\ 2\\ =\\ \\pi\\ -2\\ $ sq. units.",
+      "solution_text": "Let the number of Musicians, Singers and Lyricists be M, S and L respectively. \nFurther, the number of Musicians part of the group = $\\dfrac{M}{2}$\nThe number of Singers part of the group = $\\dfrac{S}{4}$\nThe number of Lyricists part of the group = $\\dfrac{3L}{4}$\nSince we are given that each group has exactly one musician, one singer and one lyricist, we can say:\n$\\dfrac{M}{2}=\\dfrac{S}{4}=\\dfrac{3L}{4}$\nOr, we can say, $M\\ :\\ S\\ :\\ L\\ =\\ 3\\ :\\ 6\\ :\\ 2$\nLet the number of Musicians at the concert be 3x so the number of Singers and lyricists present at the concert would be 6x and 2x. \nHence, the number of Musicians not part of the group : $3x\\ \\times\\ \\dfrac{1}{2}=\\dfrac{3x}{2}$\nThe number of Singers not part of the group: $6x\\times\\dfrac{3}{4}=\\dfrac{9x}{2}$\nThe number of Lyricists not part of the group: $2x\\times\\dfrac{1}{4}=\\dfrac{x}{2}$\nWe need to find the fraction of the people not part of any group = $\\left(\\dfrac{\\left(\\dfrac{3x}{2}+\\dfrac{9x}{2}+\\dfrac{x}{2}\\right)}{3x+6x+2x}=\\dfrac{\\left(\\dfrac{13x}{2}\\right)}{11x}=\\dfrac{13}{22}\\right)$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWe have a circle given by the equation $x^2+y^2-2x-2y-2=0$ and a straight line given by the equation x + y = 0 cuts the circle into two parts. Find the area of smaller part.\n\n**Options:**\n- **A**. $4-\\pi\\ $\n- **B**. $\\pi-2\\ $ ✅\n- **C**. $\\pi-1$\n- **D**. $\\pi+1$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation of circle is $x^2+y^2-2x-2y-2=0$, It can be written as $\\left(x-1\\right)^2+\\left(y-1\\right)^2=2^2$.\nThis is an equation of a circle whose centre is (1,1) and has a radius of 2 units.\nTo find the points of intersection, we should solve the circle and line equation\n=> putting $y=-x\\ $ in the circle equation we get\n$\\left(x-1\\right)^2+\\left(-x-1\\right)^2=4$\n=> $2x^2=2$ => $x\\ =\\ \\pm\\ 1$.\nTherefore, points of intersection are C(-1,1) and D(1,-1).\nWe see that C (-1,1) O (1,1) D (1,-1) is a right-angled triangle. To find the area of the smaller part of the circle, we can subtract the area of the triangle (OCD) from the quarter-circle.\nTherefore, the area of the smaller part of the circle = $\\dfrac{1}{4}\\pi\\ \\left(2\\right)^2-\\dfrac{1}{2}\\times\\ 2\\times\\ 2\\ =\\ \\pi\\ -2\\ $ sq. units.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere were three types of attendees at a music concert: musicians, singers, and lyricists. Groups were formed so that each group included exactly one musician, one singer, and one lyricist.  It was observed that half of the musicians, a quarter of the singers, and three-quarters of the lyricists ended up joining groups. Based on this information, what fraction of the total number of people at the concert did not join any group?\n\n**Options:**\n- **A**. $\\dfrac{1}{2}$\n- **B**. $\\dfrac{1}{3}$\n- **C**. $\\dfrac{3}{4}$\n- **D**. $\\dfrac{13}{22}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of Musicians, Singers and Lyricists be M, S and L respectively. \nFurther, the number of Musicians part of the group = $\\dfrac{M}{2}$\nThe number of Singers part of the group = $\\dfrac{S}{4}$\nThe number of Lyricists part of the group = $\\dfrac{3L}{4}$\nSince we are given that each group has exactly one musician, one singer and one lyricist, we can say:\n$\\dfrac{M}{2}=\\dfrac{S}{4}=\\dfrac{3L}{4}$\nOr, we can say, $M\\ :\\ S\\ :\\ L\\ =\\ 3\\ :\\ 6\\ :\\ 2$\nLet the number of Musicians at the concert be 3x so the number of Singers and lyricists present at the concert would be 6x and 2x. \nHence, the number of Musicians not part of the group : $3x\\ \\times\\ \\dfrac{1}{2}=\\dfrac{3x}{2}$\nThe number of Singers not part of the group: $6x\\times\\dfrac{3}{4}=\\dfrac{9x}{2}$\nThe number of Lyricists not part of the group: $2x\\times\\dfrac{1}{4}=\\dfrac{x}{2}$\nWe need to find the fraction of the people not part of any group = $\\left(\\dfrac{\\left(\\dfrac{3x}{2}+\\dfrac{9x}{2}+\\dfrac{x}{2}\\right)}{3x+6x+2x}=\\dfrac{\\left(\\dfrac{13x}{2}\\right)}{11x}=\\dfrac{13}{22}\\right)$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-11",
       "passage_text": "",
-      "question_text": "k is a natural number less than 1000, such that the quadratic equation $2x^2-kx+9=0$ has real roots and k has an odd number of factors. How many possible values can k assume?",
-      "options": [],
-      "correct_option_data": "29",
-      "solution_text": "Given that 'k' has an odd number of factors.\nWe know that the number of factors of a number k is (a+1)(b+1)....., where a,b.. are the powers in the prime-factorisation of the k => For the number of factors to be odd, each of (a+1), (b+1) should be odd => a,b,.. should be even => k should be a perfect square.\nSince the quadratic has real roots, the discriminant is greater than or equal to 0.\n=> $k^2-4\\left(2\\right)\\left(9\\right)$\n=> $k^2>72$\n=> smallest k (perfect square) that satisfies this is k = 9.\nTherefore, the possible values of k are $3^2,4^2,5^2,....31^2$ => Number of possible values of k is 31 - 3 + 1 = 29.",
+      "question_text": "For how many integer values of $a=b$ is the value of $\\log_{a^2+2a}\\left(b^2+3b+2\\right)$ not defined?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "For the expression to have a valid value the base must be positive, there is also the case of the base being 1, for which the value may not be defined, so we have to look for those cases. \n$a^2+2a>0$\n$a\\left(a+2\\right)>0$, \n$a$ must be either more than 0 or less than -2, so the values of a that do not satisfy the inequality are 0, -1 and -2\nFor a base to be equal to 1: $a^2+2a-1=0$\nThis would not have any integer solutions and, hence, would not affect our answer. \nFor the expression to have a valid value, the argument must also be positive, for which we would want:\n$b^2+3b+2>0$\n$\\left(b+2\\right)\\left(b+1\\right)>0$\ngiving that b must be either greater than -1 or less than -2.\nThe value is not defined for a=b=0, -1 or -2\nTherefore, Option A is the correct answer.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nk is a natural number less than 1000, such that the quadratic equation $2x^2-kx+9=0$ has real roots and k has an odd number of factors. How many possible values can k assume?\n\n**Options:**\n\n**Correct Answer:** 29\n\n**Solution:**\nGiven that 'k' has an odd number of factors.\nWe know that the number of factors of a number k is (a+1)(b+1)....., where a,b.. are the powers in the prime-factorisation of the k => For the number of factors to be odd, each of (a+1), (b+1) should be odd => a,b,.. should be even => k should be a perfect square.\nSince the quadratic has real roots, the discriminant is greater than or equal to 0.\n=> $k^2-4\\left(2\\right)\\left(9\\right)$\n=> $k^2>72$\n=> smallest k (perfect square) that satisfies this is k = 9.\nTherefore, the possible values of k are $3^2,4^2,5^2,....31^2$ => Number of possible values of k is 31 - 3 + 1 = 29.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor how many integer values of $a=b$ is the value of $\\log_{a^2+2a}\\left(b^2+3b+2\\right)$ not defined?\n\n**Options:**\n- **A**. 3 ✅\n- **B**. 2\n- **C**. 6\n- **D**. 12\n\n**Correct Answer:** null\n\n**Solution:**\nFor the expression to have a valid value the base must be positive, there is also the case of the base being 1, for which the value may not be defined, so we have to look for those cases. \n$a^2+2a>0$\n$a\\left(a+2\\right)>0$, \n$a$ must be either more than 0 or less than -2, so the values of a that do not satisfy the inequality are 0, -1 and -2\nFor a base to be equal to 1: $a^2+2a-1=0$\nThis would not have any integer solutions and, hence, would not affect our answer. \nFor the expression to have a valid value, the argument must also be positive, for which we would want:\n$b^2+3b+2>0$\n$\\left(b+2\\right)\\left(b+1\\right)>0$\ngiving that b must be either greater than -1 or less than -2.\nThe value is not defined for a=b=0, -1 or -2\nTherefore, Option A is the correct answer.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-12",
       "passage_text": "",
-      "question_text": "4 Lottery tickets were purchased by Aman, Rahul, Ankit and Sanket, the probability that Aman will win the lottery is one-fourth of Ankit and probability ratio of Rahul, and Sanket's is 2:3. Sum of the probability of all 4 people is 1. The probability that either Aman or Rahul will win the lottery ticket can be?",
+      "question_text": "A defeated B in an election contested just between the two in 2019, and the total votes polled were 4,200. In 2023, B and a new candidate named C participated in the election, and the total votes polled between them was 4,651. If C received 10% more votes than the votes A received in the first election and still lost to B, then what is B's ratio of votes in the 2019 and 2023 elections?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0.15",
+          "option_text": "209: 248",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "0.10",
-          "is_correct": false
+          "option_text": "209: 233",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "0.18",
+          "option_text": "209: 237",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "0.25",
-          "is_correct": true
+          "option_text": "Cannot be determined",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the probability of winning the lottery by Ankit be 4x, then the probability of winning the lottery by Aman will be x\nAlso, the ratio of the probability of winning the lottery tickets of Rahul and Sanket be 2y and 3y\nIt is given that the Sum of the probability of all 4 people is 1\n5x+ 5y = 1\n=> x + y = 0.2\nTherefore, the probability that either Aman or Rahul will win the lottery ticket is = P(Aman won) + P(Rahul Won)\n=> x+2y = ?\nSince x+2y>0.2\ntherefore, the probability can be 0.25",
+      "solution_text": "Let the votes received by A be x in the 2019 election, and then the votes received by B in 2019 be 4200 - x. \nFor A to win the election, the condition is,\nx > 4200 - x\n2x > 4200\nx > 2100\nIn the 2023 election, the votes received by C became 1.1x as it had 10% more votes than A in the 2019 elections. The votes received by B becomes 4651 - 1.1x as the total votes polled in 2023 are 4651. \nFor B to win this election, the condition is,\n4651 - 1.1x > 1.1x\n2.2x < 4651\nx < 2114.09\nWe know that the votes received by C in 2023 are 1.1x, and for it to be an integer, the value of x has to be a multiple of 10. \nWe have 2100 < x < 2114.09, and in this range, the only value that is a multiple of 10 is 2110. So, the value of x is 2110.\nSo, votes B received in 2019 = 4200 - 2110 = 2090\nVotes received by B in 2023 = 4651 - 2321 = 2330\nSo, the ratio of votes received is 2090: 2330 = 209: 233\nHence, the correct answer is option B.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n4 Lottery tickets were purchased by Aman, Rahul, Ankit and Sanket, the probability that Aman will win the lottery is one-fourth of Ankit and probability ratio of Rahul, and Sanket's is 2:3. Sum of the probability of all 4 people is 1. The probability that either Aman or Rahul will win the lottery ticket can be?\n\n**Options:**\n- **A**. 0.15\n- **B**. 0.10\n- **C**. 0.18\n- **D**. 0.25 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the probability of winning the lottery by Ankit be 4x, then the probability of winning the lottery by Aman will be x\nAlso, the ratio of the probability of winning the lottery tickets of Rahul and Sanket be 2y and 3y\nIt is given that the Sum of the probability of all 4 people is 1\n5x+ 5y = 1\n=> x + y = 0.2\nTherefore, the probability that either Aman or Rahul will win the lottery ticket is = P(Aman won) + P(Rahul Won)\n=> x+2y = ?\nSince x+2y>0.2\ntherefore, the probability can be 0.25",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA defeated B in an election contested just between the two in 2019, and the total votes polled were 4,200. In 2023, B and a new candidate named C participated in the election, and the total votes polled between them was 4,651. If C received 10% more votes than the votes A received in the first election and still lost to B, then what is B's ratio of votes in the 2019 and 2023 elections?\n\n**Options:**\n- **A**. 209: 248\n- **B**. 209: 233 ✅\n- **C**. 209: 237\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the votes received by A be x in the 2019 election, and then the votes received by B in 2019 be 4200 - x. \nFor A to win the election, the condition is,\nx > 4200 - x\n2x > 4200\nx > 2100\nIn the 2023 election, the votes received by C became 1.1x as it had 10% more votes than A in the 2019 elections. The votes received by B becomes 4651 - 1.1x as the total votes polled in 2023 are 4651. \nFor B to win this election, the condition is,\n4651 - 1.1x > 1.1x\n2.2x < 4651\nx < 2114.09\nWe know that the votes received by C in 2023 are 1.1x, and for it to be an integer, the value of x has to be a multiple of 10. \nWe have 2100 < x < 2114.09, and in this range, the only value that is a multiple of 10 is 2110. So, the value of x is 2110.\nSo, votes B received in 2019 = 4200 - 2110 = 2090\nVotes received by B in 2023 = 4651 - 2321 = 2330\nSo, the ratio of votes received is 2090: 2330 = 209: 233\nHence, the correct answer is option B.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-13",
       "passage_text": "",
-      "question_text": "The values of x that satisfy the following equation are $x_1,x_2$. Find the value of $x_1^2+x_2^2$ \n\n$\\left|x^2+4x+3\\right|+2x+5\\ =0$",
+      "question_text": "Atul and Charan are at points A and B, respectively, where B is 60 km East of A. Atul moves north at 4 km/h towards C, while Charan moves south at 7 km/h towards D. The line joining C and D is 100 km long and intersects AB at E, where AE:BE = 3:7. Find the sum of the time taken (in hours) by Atul to reach C and the time taken by Charan to reach D.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "$20+2\\sqrt{3}$",
-          "is_correct": true
+          "option_text": "12",
+          "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "$20+\\sqrt{3}$",
+          "option_text": "13",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "$10+2\\sqrt{3}$",
-          "is_correct": false
+          "option_text": "14",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "$10+\\sqrt{3}$",
+          "option_text": "15",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "$\\left|x^2+4x+3\\right|+2x+5\\ =0$\nCase - 1 When $x^2+4x+3\\ \\ge\\ 0$\n=> $\\left(x+3\\right)\\left(x+1\\right)\\ \\ge\\ 0$\n=> $x\\in\\ \\left(-\\infty\\ ,-3\\right]U\\ \\left[-1,\\infty\\ \\right)$ --------(1)\nThen the equation becomes $x^2+6x+8\\ =0$\n=> $\\left(x+2\\right)\\left(x+4\\right)\\ =\\ 0$\n=> $x\\ =\\ -2,\\ -4$\n=> $x\\ =-2$ does not satisfy condition (1)\nTherefore, x = -4 is the solution \nCase - 2 When $x^2+4x+3\\ \\le\\ 0$\n=> $\\left(x+3\\right)\\left(x+1\\right)\\ \\le\\ 0$\n=> $x\\in\\left(-3,-1\\right)$     -----------------(2)\nThen the equation becomes $-\\left(x^2+4x+3\\right)+2x+5\\ =0$\n=> $-x^2-2x+2\\ =0$\n=> $x^2+2x-2\\ =0$\n=> $x=\\frac{-2\\pm\\sqrt{\\left(2\\right)^2-4\\left(1\\right)\\left(-2\\right)\\ }\\ }{2\\left(1\\right)}$\n=> $x=\\frac{-2\\pm\\sqrt{12\\ }\\ }{2}$\n=> $x=-1\\pm\\sqrt{3}\\ $\n=> $x=-1\\ +\\ \\sqrt{3}\\ $ does not satisfy condition (2)\nTherefore, $x=-1\\ -\\sqrt{3}\\ $ is the solution\n$x_1=-4\\ $ and $x_2=-1-\\sqrt{3\\ }\\ $\n$x_1^2+x_2^2=\\left(-4\\right)^2+\\left(-1-\\sqrt{3\\ }\\right)^2$\n=> $20+2\\sqrt{3}$",
+      "solution_text": "$AB=60\\ and\\ AE:BE=3:7$ => $AE=18\\ and\\ BE=42$\n$\\triangle\\ AEC\\ and\\ \\triangle\\ BED,\\ \\angle\\ CEA=\\angle\\ BED\\ and\\ \\angle\\ A=\\angle\\ B=90$\nThus, using AA similarity criterion, $\\triangle\\ AEC\\sim\\triangle\\ BED$\n=> $\\dfrac{AE}{CE}=\\dfrac{BE}{DE}$ => $\\dfrac{18}{a}=\\dfrac{42}{100-a}$ => $a=30$\n=> $CE=30\\ and\\ DE=70$\nApplying pythogoras on $\\triangle\\ AEC$ => $AC=24$\nApplying pythogoras on $\\triangle\\ BED$ => $BD=56$\nTime taken by Atul to reach C $\\left(t_1\\right)=\\dfrac{24}{4}=6\\ hours$\nTime taken by Charan to reach D $\\left(t_2\\right)=\\dfrac{56}{7}=8\\ hours$\nThus, sum of the time taken by Atul to reach C $\\left(t_1\\right)$ and the time taken by Charan to reach D $\\left(t_2\\right)$ $=t_1+t_2=6+8=14\\ hours$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe values of x that satisfy the following equation are $x_1,x_2$. Find the value of $x_1^2+x_2^2$ \n\n$\\left|x^2+4x+3\\right|+2x+5\\ =0$\n\n**Options:**\n- **A**. $20+2\\sqrt{3}$ ✅\n- **B**. $20+\\sqrt{3}$\n- **C**. $10+2\\sqrt{3}$\n- **D**. $10+\\sqrt{3}$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\left|x^2+4x+3\\right|+2x+5\\ =0$\nCase - 1 When $x^2+4x+3\\ \\ge\\ 0$\n=> $\\left(x+3\\right)\\left(x+1\\right)\\ \\ge\\ 0$\n=> $x\\in\\ \\left(-\\infty\\ ,-3\\right]U\\ \\left[-1,\\infty\\ \\right)$ --------(1)\nThen the equation becomes $x^2+6x+8\\ =0$\n=> $\\left(x+2\\right)\\left(x+4\\right)\\ =\\ 0$\n=> $x\\ =\\ -2,\\ -4$\n=> $x\\ =-2$ does not satisfy condition (1)\nTherefore, x = -4 is the solution \nCase - 2 When $x^2+4x+3\\ \\le\\ 0$\n=> $\\left(x+3\\right)\\left(x+1\\right)\\ \\le\\ 0$\n=> $x\\in\\left(-3,-1\\right)$     -----------------(2)\nThen the equation becomes $-\\left(x^2+4x+3\\right)+2x+5\\ =0$\n=> $-x^2-2x+2\\ =0$\n=> $x^2+2x-2\\ =0$\n=> $x=\\frac{-2\\pm\\sqrt{\\left(2\\right)^2-4\\left(1\\right)\\left(-2\\right)\\ }\\ }{2\\left(1\\right)}$\n=> $x=\\frac{-2\\pm\\sqrt{12\\ }\\ }{2}$\n=> $x=-1\\pm\\sqrt{3}\\ $\n=> $x=-1\\ +\\ \\sqrt{3}\\ $ does not satisfy condition (2)\nTherefore, $x=-1\\ -\\sqrt{3}\\ $ is the solution\n$x_1=-4\\ $ and $x_2=-1-\\sqrt{3\\ }\\ $\n$x_1^2+x_2^2=\\left(-4\\right)^2+\\left(-1-\\sqrt{3\\ }\\right)^2$\n=> $20+2\\sqrt{3}$",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAtul and Charan are at points A and B, respectively, where B is 60 km East of A. Atul moves north at 4 km/h towards C, while Charan moves south at 7 km/h towards D. The line joining C and D is 100 km long and intersects AB at E, where AE:BE = 3:7. Find the sum of the time taken (in hours) by Atul to reach C and the time taken by Charan to reach D.\n\n**Options:**\n- **A**. 12\n- **B**. 13\n- **C**. 14 ✅\n- **D**. 15\n\n**Correct Answer:** null\n\n**Solution:**\n$AB=60\\ and\\ AE:BE=3:7$ => $AE=18\\ and\\ BE=42$\n$\\triangle\\ AEC\\ and\\ \\triangle\\ BED,\\ \\angle\\ CEA=\\angle\\ BED\\ and\\ \\angle\\ A=\\angle\\ B=90$\nThus, using AA similarity criterion, $\\triangle\\ AEC\\sim\\triangle\\ BED$\n=> $\\dfrac{AE}{CE}=\\dfrac{BE}{DE}$ => $\\dfrac{18}{a}=\\dfrac{42}{100-a}$ => $a=30$\n=> $CE=30\\ and\\ DE=70$\nApplying pythogoras on $\\triangle\\ AEC$ => $AC=24$\nApplying pythogoras on $\\triangle\\ BED$ => $BD=56$\nTime taken by Atul to reach C $\\left(t_1\\right)=\\dfrac{24}{4}=6\\ hours$\nTime taken by Charan to reach D $\\left(t_2\\right)=\\dfrac{56}{7}=8\\ hours$\nThus, sum of the time taken by Atul to reach C $\\left(t_1\\right)$ and the time taken by Charan to reach D $\\left(t_2\\right)$ $=t_1+t_2=6+8=14\\ hours$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-14",
       "passage_text": "",
-      "question_text": "Saavn wanted to buy fruits worth Rs. 1000. He decided to buy some apples and bananas, which cost Rs 32 each and Rs 8 each, respectively, such that he would be left with Rs 40/-. Had he decided to reverse the number of apples and bananas he planned to buy, he would have had to spend Rs. 2880. While at the shop, he decided to buy only Chikoos, which cost Rs 12 each instead. If the total number of fruits he intended to buy remains the same, how much money would he have had to spend?",
+      "question_text": "Himanshu invested eight lakhs rupees in two schemes in some ratio. Scheme 1 offers an interest of 10% compounding annually for three years, and scheme 2 provides a simple interest of 12% for three years. At the end of three years, he received an amount of Rs.10,79,300. Find the ratio of the amounts invested in Scheme 1 and Scheme 2.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "1056",
+          "option_text": "1:2",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "1104",
+          "option_text": "1:3",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "1152",
-          "is_correct": true
+          "option_text": "5:3",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "1200",
-          "is_correct": false
+          "option_text": "3:5",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the number of apples he planned to buy be \"x\" and the number of \"y\" be the number of bananas he planned to buy.\nTherefore 32x+8y=960....(i)\nNow had he reversed the number of apples and bananas he planned to  buy he would have exceeded his budget buy 188% which means that he would have had to spend 1880 more.\nTherefore 8x+32y=2880....(ii)\nAdding (i) and (ii) we get 40x+40y= 3840\nTherefore x+y= 96.\nAs he went home with as many number of fruits as he intended to, number of Chikoos he bought =96\nSo amount he spent on Chikoos= 96*12= 1152 rupees.\nThe correct option is C",
+      "solution_text": "Let us assume the amount invested in Scheme 1 is X lakhs, and in Scheme 2, the amount invested is 8-X lakhs.\nPrincipal for Scheme 1 =X\nRate of interest = 10% per annum (CI)\nTime = 3 years\nAmount received after 3 years from scheme 1 = $\\left(X\\right)\\left(1.1\\right)^3$ = 1.331X\nPrincipal for Scheme 2 = 8-X\nRate of interest = 12% per annum (SI)\nTime = 3 years\nThe amount received after 3 years from scheme 2 = 8-X + $\\dfrac{\\left(8-X\\right)\\left(12\\right)\\left(3\\right)}{100}$ = 8-X + (8-X)*0.36\n=> (8-X)*1.36\nTotal amount received after 3 years = Rs.10,79,300 = 10.793 lakhs\n1.331X + (8-X)*1.36 = 10.793\n1.331X + 10.88 - 1.36X = 10.793\n0.029X = 0.087\nX = 3\nThus, the amount invested in the first scheme = 3 lakhs; in scheme 2, he invested = 8-3 = 5 lakhs.\nTherefore, the ratio is 3:5",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSaavn wanted to buy fruits worth Rs. 1000. He decided to buy some apples and bananas, which cost Rs 32 each and Rs 8 each, respectively, such that he would be left with Rs 40/-. Had he decided to reverse the number of apples and bananas he planned to buy, he would have had to spend Rs. 2880. While at the shop, he decided to buy only Chikoos, which cost Rs 12 each instead. If the total number of fruits he intended to buy remains the same, how much money would he have had to spend?\n\n**Options:**\n- **A**. 1056\n- **B**. 1104\n- **C**. 1152 ✅\n- **D**. 1200\n\n**Correct Answer:** null\n\n**Solution:**\nLet the number of apples he planned to buy be \"x\" and the number of \"y\" be the number of bananas he planned to buy.\nTherefore 32x+8y=960....(i)\nNow had he reversed the number of apples and bananas he planned to  buy he would have exceeded his budget buy 188% which means that he would have had to spend 1880 more.\nTherefore 8x+32y=2880....(ii)\nAdding (i) and (ii) we get 40x+40y= 3840\nTherefore x+y= 96.\nAs he went home with as many number of fruits as he intended to, number of Chikoos he bought =96\nSo amount he spent on Chikoos= 96*12= 1152 rupees.\nThe correct option is C",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHimanshu invested eight lakhs rupees in two schemes in some ratio. Scheme 1 offers an interest of 10% compounding annually for three years, and scheme 2 provides a simple interest of 12% for three years. At the end of three years, he received an amount of Rs.10,79,300. Find the ratio of the amounts invested in Scheme 1 and Scheme 2.\n\n**Options:**\n- **A**. 1:2\n- **B**. 1:3\n- **C**. 5:3\n- **D**. 3:5 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume the amount invested in Scheme 1 is X lakhs, and in Scheme 2, the amount invested is 8-X lakhs.\nPrincipal for Scheme 1 =X\nRate of interest = 10% per annum (CI)\nTime = 3 years\nAmount received after 3 years from scheme 1 = $\\left(X\\right)\\left(1.1\\right)^3$ = 1.331X\nPrincipal for Scheme 2 = 8-X\nRate of interest = 12% per annum (SI)\nTime = 3 years\nThe amount received after 3 years from scheme 2 = 8-X + $\\dfrac{\\left(8-X\\right)\\left(12\\right)\\left(3\\right)}{100}$ = 8-X + (8-X)*0.36\n=> (8-X)*1.36\nTotal amount received after 3 years = Rs.10,79,300 = 10.793 lakhs\n1.331X + (8-X)*1.36 = 10.793\n1.331X + 10.88 - 1.36X = 10.793\n0.029X = 0.087\nX = 3\nThus, the amount invested in the first scheme = 3 lakhs; in scheme 2, he invested = 8-3 = 5 lakhs.\nTherefore, the ratio is 3:5",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-15",
       "passage_text": "",
-      "question_text": "A mixture is formed by mixing 1kg of 10 rupee per kg rice, 2 kg of 20 rupee per kg rice, 3 kg of 30 rupee per kg rice and so on. The resultant mixture is sold at Rs 100 at a profit of 42(6/7)%. Find the number of varieties of rice in the mixture.",
+      "question_text": "Four dice are rolled, each having two faces of 1, two faces of 2 and one face each of 4 and 5. Find the probability that the sum of numbers on the top faces of all dice is greater than 16.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "10",
+          "option_text": "$\\dfrac{23}{6^4}$",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "11",
+          "option_text": "$\\dfrac{28}{6^4}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "9",
+          "option_text": "$\\dfrac{29}{6^4}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "12",
+          "option_text": "$\\dfrac{25}{6^4}$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "The cost price of the mixture $=\\frac{1*10+2*20+3*30+…+n*10n}{1+2+3+…+n} = 10\\frac{1*1+2*2+…+n*n}{1+2+…n} = \\frac{10 *n* (n+1)(2n+1)*2}{6*n(n+1)} = (10/3)(2n+1)$.\nSP = 100 ; profit% = 42(6/7)% => CP = 70.\n(10/3)(2n+1) = 70 => n = 10.",
+      "solution_text": "Given that all four dice have two faces of 1, two faces of 2 and one face each of 4 and 5.\nNow, we want the probability that the sum of numbers on the top faces of all dice is greater than 16\nWe know the max. sum will be when all four dice have 5 at top, sum = 5x4 = 20\nSo, we have to calculate the number of cases when sum is 17, 18, 19 or 20.\n1. Sum = 17\nThis is possible when the dice have (5,5,5,2) or (5,4,4,4) in any order\nThe probability of getting (5,5,5,2) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{2}{6}=\\dfrac{8}{6^4}$\nThe probability of getting (5,4,4,4) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{4}{6^4}$\n2. Sum = 18\nThis is possible when the dice have (5,5,4,4) in any order\nThe probability of getting (5,5,4,4) is $\\dfrac{4!}{2!2!}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{6}{6^4}$\n3. Sum = 19\nThis is possible when the dice have (5,5,5,4) in any order\nThe probability of getting (5,5,5,4) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{4}{6^4}$\n4. Sum = 20\nThis is possible when the dice have (5,5,5,5).\nThe probability of getting (5,5,5,5) is $\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{1}{6^4}$\nHence, the probability that the sum of numbers on the top faces of all dice is greater than 16 is $\\dfrac{12}{6^4}+\\dfrac{6}{6^4}+\\dfrac{4}{6^4}+\\dfrac{1}{6^4}=\\dfrac{23}{6^4}$.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA mixture is formed by mixing 1kg of 10 rupee per kg rice, 2 kg of 20 rupee per kg rice, 3 kg of 30 rupee per kg rice and so on. The resultant mixture is sold at Rs 100 at a profit of 42(6/7)%. Find the number of varieties of rice in the mixture.\n\n**Options:**\n- **A**. 10 ✅\n- **B**. 11\n- **C**. 9\n- **D**. 12\n\n**Correct Answer:** null\n\n**Solution:**\nThe cost price of the mixture $=\\frac{1*10+2*20+3*30+…+n*10n}{1+2+3+…+n} = 10\\frac{1*1+2*2+…+n*n}{1+2+…n} = \\frac{10 *n* (n+1)(2n+1)*2}{6*n(n+1)} = (10/3)(2n+1)$.\nSP = 100 ; profit% = 42(6/7)% => CP = 70.\n(10/3)(2n+1) = 70 => n = 10.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFour dice are rolled, each having two faces of 1, two faces of 2 and one face each of 4 and 5. Find the probability that the sum of numbers on the top faces of all dice is greater than 16.\n\n**Options:**\n- **A**. $\\dfrac{23}{6^4}$ ✅\n- **B**. $\\dfrac{28}{6^4}$\n- **C**. $\\dfrac{29}{6^4}$\n- **D**. $\\dfrac{25}{6^4}$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven that all four dice have two faces of 1, two faces of 2 and one face each of 4 and 5.\nNow, we want the probability that the sum of numbers on the top faces of all dice is greater than 16\nWe know the max. sum will be when all four dice have 5 at top, sum = 5x4 = 20\nSo, we have to calculate the number of cases when sum is 17, 18, 19 or 20.\n1. Sum = 17\nThis is possible when the dice have (5,5,5,2) or (5,4,4,4) in any order\nThe probability of getting (5,5,5,2) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{2}{6}=\\dfrac{8}{6^4}$\nThe probability of getting (5,4,4,4) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{4}{6^4}$\n2. Sum = 18\nThis is possible when the dice have (5,5,4,4) in any order\nThe probability of getting (5,5,4,4) is $\\dfrac{4!}{2!2!}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{6}{6^4}$\n3. Sum = 19\nThis is possible when the dice have (5,5,5,4) in any order\nThe probability of getting (5,5,5,4) is $4\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{4}{6^4}$\n4. Sum = 20\nThis is possible when the dice have (5,5,5,5).\nThe probability of getting (5,5,5,5) is $\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}\\times\\dfrac{1}{6}=\\dfrac{1}{6^4}$\nHence, the probability that the sum of numbers on the top faces of all dice is greater than 16 is $\\dfrac{12}{6^4}+\\dfrac{6}{6^4}+\\dfrac{4}{6^4}+\\dfrac{1}{6^4}=\\dfrac{23}{6^4}$.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-16",
       "passage_text": "",
-      "question_text": "If a, b and c are lengths of sides of a triangle and it is given that $c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}=\\left(a+b\\right)^2$, what is the angle opposite to the side of length c?",
+      "question_text": "A circle has a radius of 14 cm. A circle chord subtends a central angle of 30° at the center. Find the area ($cm^2$) of the minor segment formed by the chord and the corresponding arc. (Assume $\\pi\\ =\\dfrac{22}{7}$)",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "30",
+          "option_text": "$\\dfrac{7}{3}cm^2$",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "60",
+          "option_text": "$\\dfrac{5}{3}cm^2$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "120",
+          "option_text": "$\\dfrac{9}{4}cm^2$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "45",
+          "option_text": "$\\dfrac{11}{4}cm^2$",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Given equation,\n$c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}=\\left(a+b\\right)^2$\nRationalising the 2nd term on the L.H.S, we get\n$c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}\\times\\ \\dfrac{\\left(2+\\sqrt{\\ 3}\\right)}{2+\\sqrt{\\ 3}}=\\left(a+b\\right)^2$\n$c^2+ab\\left(2+\\sqrt{\\ 3}\\right)=a^2+b^2+2ab$\n$c^2=a^2+b^2-\\sqrt{\\ 3}ab$\nComparing this with co-sine rule\n$c^2=a^2+b^2-2ab\\cos C$\n=> Cos C = $\\dfrac{\\sqrt{\\ 3}}{2}$\n=> Angle C = 30 degrees.",
+      "solution_text": "A circle has a radius of 14 cm. A circle chord subtends a central angle of 30° at the center. Find the area of the minor segment formed by the chord and the corresponding arc.\nThe radius of the circle = 14 cm\nThe angle subtended by the chord at the center = 30°\nThe area of the minor segment = $\\dfrac{\\theta\\ }{360}\\times\\pi r^2-\\dfrac{1}{2}r^2\\sin\\theta\\ $\nArea of segment = Area of Sector - Area of Triangle\nWhere $\\theta\\ =\\ 30^{\\circ\\ }$ and r = 14 cm\nThe area of the minor segment = $\\dfrac{30\\ }{360}\\times\\pi\\times14\\times14-\\dfrac{1}{2}\\times14\\times14\\times\\sin30\\ $\n=> $\\dfrac{30\\ }{360}\\times\\dfrac{22}{7}\\times14\\times14-\\dfrac{1}{2}\\times14\\times14\\times\\dfrac{1}{2}\\ $\n=> $\\dfrac{154}{3}-49=\\dfrac{7}{3}$ $cm^2$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a, b and c are lengths of sides of a triangle and it is given that $c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}=\\left(a+b\\right)^2$, what is the angle opposite to the side of length c?\n\n**Options:**\n- **A**. 30 ✅\n- **B**. 60\n- **C**. 120\n- **D**. 45\n\n**Correct Answer:** null\n\n**Solution:**\nGiven equation,\n$c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}=\\left(a+b\\right)^2$\nRationalising the 2nd term on the L.H.S, we get\n$c^2+\\dfrac{ab}{2-\\sqrt{\\ 3}}\\times\\ \\dfrac{\\left(2+\\sqrt{\\ 3}\\right)}{2+\\sqrt{\\ 3}}=\\left(a+b\\right)^2$\n$c^2+ab\\left(2+\\sqrt{\\ 3}\\right)=a^2+b^2+2ab$\n$c^2=a^2+b^2-\\sqrt{\\ 3}ab$\nComparing this with co-sine rule\n$c^2=a^2+b^2-2ab\\cos C$\n=> Cos C = $\\dfrac{\\sqrt{\\ 3}}{2}$\n=> Angle C = 30 degrees.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circle has a radius of 14 cm. A circle chord subtends a central angle of 30° at the center. Find the area ($cm^2$) of the minor segment formed by the chord and the corresponding arc. (Assume $\\pi\\ =\\dfrac{22}{7}$)\n\n**Options:**\n- **A**. $\\dfrac{7}{3}cm^2$ ✅\n- **B**. $\\dfrac{5}{3}cm^2$\n- **C**. $\\dfrac{9}{4}cm^2$\n- **D**. $\\dfrac{11}{4}cm^2$\n\n**Correct Answer:** null\n\n**Solution:**\nA circle has a radius of 14 cm. A circle chord subtends a central angle of 30° at the center. Find the area of the minor segment formed by the chord and the corresponding arc.\nThe radius of the circle = 14 cm\nThe angle subtended by the chord at the center = 30°\nThe area of the minor segment = $\\dfrac{\\theta\\ }{360}\\times\\pi r^2-\\dfrac{1}{2}r^2\\sin\\theta\\ $\nArea of segment = Area of Sector - Area of Triangle\nWhere $\\theta\\ =\\ 30^{\\circ\\ }$ and r = 14 cm\nThe area of the minor segment = $\\dfrac{30\\ }{360}\\times\\pi\\times14\\times14-\\dfrac{1}{2}\\times14\\times14\\times\\sin30\\ $\n=> $\\dfrac{30\\ }{360}\\times\\dfrac{22}{7}\\times14\\times14-\\dfrac{1}{2}\\times14\\times14\\times\\dfrac{1}{2}\\ $\n=> $\\dfrac{154}{3}-49=\\dfrac{7}{3}$ $cm^2$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-17",
       "passage_text": "",
-      "question_text": "Find the value of $x$, if $x+\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612$",
+      "question_text": "If the efficiency of women is 25% more than that of men and the efficiency of the child is 60% more than that of women, it is given that five men, six women and five children can complete the work in 20 days. If the number of days one men and one women take to finish the job is A day, and that of one men and one child is B days. Find the ratio of A: B.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "0 < x < 1",
+          "option_text": "5:4",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "2 < x < 3",
-          "is_correct": false
+          "option_text": "4:3",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "-1 < x < 0",
+          "option_text": "3:2",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "1 < x < 2",
-          "is_correct": true
+          "option_text": "2:1",
+          "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "=> $x+\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612$\n=> $\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612-x\\log_66$\n=> $\\log_6\\left(1+2^x\\right)=\\log_63^x+\\log_612-\\log_66^x$\n=> $\\log_6\\left(1+2^x\\right)=\\log_63^x\\ \\left(\\frac{12\\ }{6^x}\\right)$\n=> $\\log_6\\left(1+2^x\\right)=\\log_6\\left(\\frac{12\\ }{2^x}\\right)$\n=> $\\left(1+2^x\\right)=\\left(\\frac{12\\ }{2^x}\\right)$\nLet $2^{x\\ }=t$\n=> $t\\left(1+t\\right)=12$\n=> $t^2+t-12$ = 0\n=> t = -4 or +3\n=> $2^x=3$\n=> 1 < x < 2",
+      "solution_text": "Let the efficiency of men = 4K units per day\nThen, efficiency of women = 4K*1.25 = 5K units per day\nThe efficiency of child = 5K*1.6 = 8K units per day\nIt is given that five men, six women and five children can complete the work in 20 days.\nWork done by five men, six women and five children in 1 day = 5*4K+6*5K+5*8K = 20K+30K+40K = 90K units per day.\nWork done by five men, six women and five children in 20 days = 20*90K = 1800K units\nTherefore, total work = 1800K units\nCase 1: If the number of days one men and one women take to finish the job is A day.\nWork done by one men and one women in 1 day = 4K+5K = 9K\nTherefore, the number of days taken to finish 1800K units = 1800K/9K = 200 days.\nA = 200 days.\nCase B :  If the number of days it takes one men and one child to finish the job is B days.\nWork done by one men and one child in 1 day = 4K+8K = 12K\nTherefore, the number of days taken to finish 1800K units = 1800K/12K = 150 days.\nB = 150 days.\nA:B = 200:150 = 4:3",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the value of $x$, if $x+\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612$\n\n**Options:**\n- **A**. 0 < x < 1\n- **B**. 2 < x < 3\n- **C**. -1 < x < 0\n- **D**. 1 < x < 2 ✅\n\n**Correct Answer:** null\n\n**Solution:**\n=> $x+\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612$\n=> $\\log_6\\left(1+2^x\\right)=x\\log_63+\\log_612-x\\log_66$\n=> $\\log_6\\left(1+2^x\\right)=\\log_63^x+\\log_612-\\log_66^x$\n=> $\\log_6\\left(1+2^x\\right)=\\log_63^x\\ \\left(\\frac{12\\ }{6^x}\\right)$\n=> $\\log_6\\left(1+2^x\\right)=\\log_6\\left(\\frac{12\\ }{2^x}\\right)$\n=> $\\left(1+2^x\\right)=\\left(\\frac{12\\ }{2^x}\\right)$\nLet $2^{x\\ }=t$\n=> $t\\left(1+t\\right)=12$\n=> $t^2+t-12$ = 0\n=> t = -4 or +3\n=> $2^x=3$\n=> 1 < x < 2",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the efficiency of women is 25% more than that of men and the efficiency of the child is 60% more than that of women, it is given that five men, six women and five children can complete the work in 20 days. If the number of days one men and one women take to finish the job is A day, and that of one men and one child is B days. Find the ratio of A: B.\n\n**Options:**\n- **A**. 5:4\n- **B**. 4:3 ✅\n- **C**. 3:2\n- **D**. 2:1\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of men = 4K units per day\nThen, efficiency of women = 4K*1.25 = 5K units per day\nThe efficiency of child = 5K*1.6 = 8K units per day\nIt is given that five men, six women and five children can complete the work in 20 days.\nWork done by five men, six women and five children in 1 day = 5*4K+6*5K+5*8K = 20K+30K+40K = 90K units per day.\nWork done by five men, six women and five children in 20 days = 20*90K = 1800K units\nTherefore, total work = 1800K units\nCase 1: If the number of days one men and one women take to finish the job is A day.\nWork done by one men and one women in 1 day = 4K+5K = 9K\nTherefore, the number of days taken to finish 1800K units = 1800K/9K = 200 days.\nA = 200 days.\nCase B :  If the number of days it takes one men and one child to finish the job is B days.\nWork done by one men and one child in 1 day = 4K+8K = 12K\nTherefore, the number of days taken to finish 1800K units = 1800K/12K = 150 days.\nB = 150 days.\nA:B = 200:150 = 4:3",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-18",
       "passage_text": "",
-      "question_text": "If the graph of $f\\left(x\\right)\\ =\\ px^3+bx^2+cx+d$ cuts the $x$ axis at -3 and 3 and the $y$ axis at 5 , the value of $b$ is?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "$\\ \\frac{\\ -5}{9}$",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "$\\ \\frac{\\ 5}{3}$",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "5",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "$\\ \\frac{\\ 5}{9}$",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": null,
-      "solution_text": "When the graph intersects at x axis at -3 and 3 , (-3,0) ,(3,0) are the points on the graph and similarly so is (0,5)\nNow $f\\left(x\\right)\\ =\\ px^3+bx^2+cx+d$ \n$\\ \\ \\therefore y=px^3+bx^2+cx+d$\n$\\ \\ \\therefore0=p\\left(-3\\right)^3+b\\left(-3\\right)^2+c\\left(-3\\right)+d$\n$\\ \\ \\therefore0=-27p+9b-3c+d$ .....(i)\nNow $0$ $=$ $\\ \\ p\\left(3\\right)^3+b\\left(3\\right)^2+c\\left(3\\right)+d$\n$\\ \\ \\therefore0=27p+9b+3c+d$.....(ii)\nOn adding (i) and (ii) we get $18b+2d=0$....(iii)\nNow considering that the graph also passes through (0,5)\n5=0+0+0+d\n$\\therefore\\ d=5$....(iv)\nPutting (iv) in (iii) we get\n$18b=-10$\n$\\therefore\\ b=\\ \\frac{\\ -10}{18}=\\ \\frac{\\ -5}{9}$\nSo , Option A is correct",
+      "question_text": "Find the area of the quadrilateral ABCD such that points A(2,3), B(3,-1), C(-2,-1) and D(-1,2)?",
+      "options": [],
+      "correct_option_data": "14",
+      "solution_text": "Quadrilateral ABCD such that points A(2,3), B(3,-1), C(-2,-1) and D(-1,2)?\nWe know that area of the quadrilateral with vertices (x1,y1), (x2,y2), (x3,y3), (x4,y4) is given by\n$\\dfrac{1}{2}\\left|\\left(x1-x3\\right)\\left(y2-y4\\right)-\\left(x2-x4\\right)\\left(y1-y3\\right)\\right|$\nSubstituting (x1,y1) = (2,3), (x2,y2) = (3,-1), (x3,y3) = (-2,-1) and (x4,y4) = (-1,2), we get\n$\\dfrac{1}{2}\\left|\\left(2+2\\right)\\left(-1-2\\right)-\\left(3+1\\right)\\left(3+1\\right)\\right|\\ $\n=> $\\dfrac{1}{2}\\left|-12-16\\right|=\\dfrac{1}{2}\\left|-28\\right|\\ =\\ 14$",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the graph of $f\\left(x\\right)\\ =\\ px^3+bx^2+cx+d$ cuts the $x$ axis at -3 and 3 and the $y$ axis at 5 , the value of $b$ is?\n\n**Options:**\n- **A**. $\\ \\frac{\\ -5}{9}$ ✅\n- **B**. $\\ \\frac{\\ 5}{3}$\n- **C**. 5\n- **D**. $\\ \\frac{\\ 5}{9}$\n\n**Correct Answer:** null\n\n**Solution:**\nWhen the graph intersects at x axis at -3 and 3 , (-3,0) ,(3,0) are the points on the graph and similarly so is (0,5)\nNow $f\\left(x\\right)\\ =\\ px^3+bx^2+cx+d$ \n$\\ \\ \\therefore y=px^3+bx^2+cx+d$\n$\\ \\ \\therefore0=p\\left(-3\\right)^3+b\\left(-3\\right)^2+c\\left(-3\\right)+d$\n$\\ \\ \\therefore0=-27p+9b-3c+d$ .....(i)\nNow $0$ $=$ $\\ \\ p\\left(3\\right)^3+b\\left(3\\right)^2+c\\left(3\\right)+d$\n$\\ \\ \\therefore0=27p+9b+3c+d$.....(ii)\nOn adding (i) and (ii) we get $18b+2d=0$....(iii)\nNow considering that the graph also passes through (0,5)\n5=0+0+0+d\n$\\therefore\\ d=5$....(iv)\nPutting (iv) in (iii) we get\n$18b=-10$\n$\\therefore\\ b=\\ \\frac{\\ -10}{18}=\\ \\frac{\\ -5}{9}$\nSo , Option A is correct",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the area of the quadrilateral ABCD such that points A(2,3), B(3,-1), C(-2,-1) and D(-1,2)?\n\n**Options:**\n\n**Correct Answer:** 14\n\n**Solution:**\nQuadrilateral ABCD such that points A(2,3), B(3,-1), C(-2,-1) and D(-1,2)?\nWe know that area of the quadrilateral with vertices (x1,y1), (x2,y2), (x3,y3), (x4,y4) is given by\n$\\dfrac{1}{2}\\left|\\left(x1-x3\\right)\\left(y2-y4\\right)-\\left(x2-x4\\right)\\left(y1-y3\\right)\\right|$\nSubstituting (x1,y1) = (2,3), (x2,y2) = (3,-1), (x3,y3) = (-2,-1) and (x4,y4) = (-1,2), we get\n$\\dfrac{1}{2}\\left|\\left(2+2\\right)\\left(-1-2\\right)-\\left(3+1\\right)\\left(3+1\\right)\\right|\\ $\n=> $\\dfrac{1}{2}\\left|-12-16\\right|=\\dfrac{1}{2}\\left|-28\\right|\\ =\\ 14$",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-19",
       "passage_text": "",
-      "question_text": "If a car travels at 50 km/hr, it reaches its destination at 5 PM. If it travels at 60 km/hour, it reaches its destination at 4 PM. What is the speed(in km/hr) required to reach the destination at 3 PM?",
+      "question_text": "A fruit vendor uses a false weight to gain 20% more while buying apples from a wholesaler and another false weight to give 15% less while selling to customers. A customer buys the entire stock of apples for ₹7,200 from the vendor. If the vendor claims to sell at cost price, what is the actual profit made by the vendor?",
       "options": [],
-      "correct_option_data": "75",
-      "solution_text": "Assuming the time taken is t if travels with 50 km/hr.\nHence, distance = 50t\nAlso, with 60 km/hr, distance = 60(t-1)\nBoth distances will be equal.\nHence, 50t =60t-60\n=> t=6 hrs,\nSo the distance = 50*6 =300km\nHence, required speed = $\\ \\frac{\\ 300}{6-2}$ = 75 km/h",
+      "correct_option_data": "2100",
+      "solution_text": "The customer receives 15% less, so the profit while selling = $\\dfrac{15}{85}$ and the multiplying factor will be $\\dfrac{100}{85}$\nNow, while buying, the vendor received 20% more or we can say, profit = 20%. Hence, the multiplying factor will be $\\dfrac{120}{100}$\nSince both the profits are generated on the same transaction, the final multiplying factor  = $\\dfrac{100}{85}\\times\\ \\dfrac{120}{100}=\\dfrac{120}{85}$\nLet the cost price be X so the selling price will be $\\dfrac{120}{85}X$\nWe are given: \n$\\dfrac{120}{85}X=7,200$\nSolving for X, we get, X = 5,100\nHence, the profit = 7,200 - 5,100 = 2,100",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a car travels at 50 km/hr, it reaches its destination at 5 PM. If it travels at 60 km/hour, it reaches its destination at 4 PM. What is the speed(in km/hr) required to reach the destination at 3 PM?\n\n**Options:**\n\n**Correct Answer:** 75\n\n**Solution:**\nAssuming the time taken is t if travels with 50 km/hr.\nHence, distance = 50t\nAlso, with 60 km/hr, distance = 60(t-1)\nBoth distances will be equal.\nHence, 50t =60t-60\n=> t=6 hrs,\nSo the distance = 50*6 =300km\nHence, required speed = $\\ \\frac{\\ 300}{6-2}$ = 75 km/h",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA fruit vendor uses a false weight to gain 20% more while buying apples from a wholesaler and another false weight to give 15% less while selling to customers. A customer buys the entire stock of apples for ₹7,200 from the vendor. If the vendor claims to sell at cost price, what is the actual profit made by the vendor?\n\n**Options:**\n\n**Correct Answer:** 2100\n\n**Solution:**\nThe customer receives 15% less, so the profit while selling = $\\dfrac{15}{85}$ and the multiplying factor will be $\\dfrac{100}{85}$\nNow, while buying, the vendor received 20% more or we can say, profit = 20%. Hence, the multiplying factor will be $\\dfrac{120}{100}$\nSince both the profits are generated on the same transaction, the final multiplying factor  = $\\dfrac{100}{85}\\times\\ \\dfrac{120}{100}=\\dfrac{120}{85}$\nLet the cost price be X so the selling price will be $\\dfrac{120}{85}X$\nWe are given: \n$\\dfrac{120}{85}X=7,200$\nSolving for X, we get, X = 5,100\nHence, the profit = 7,200 - 5,100 = 2,100",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-20",
       "passage_text": "",
-      "question_text": "A farmer owns a piece of land that is in the shape of a kite. The land has two adjacent sides, each 6 meters long, and two other adjacent sides, each 8 meters long. The farmer knows that one of the diagonals of the field has a length of 10 meters and the angle opposite to this diagonal is 90 degrees. What is the length of the other diagonal?",
+      "question_text": "A motorboat travels upstream from point A to point B in 4 hours, then returns to a point C between A and B in 2 hours. If the ratio of AC to CB is 3:10, find the time the boat would travel from A to C if the speed of the stream triples.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "9.4",
+          "option_text": "1.5 hours",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "9.5",
-          "is_correct": false
+          "option_text": "2 hours",
+          "is_correct": true
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "9.6",
-          "is_correct": true
+          "option_text": "2.5 hours",
+          "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "9.7",
+          "option_text": "3 hours",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let PQRS be a kite with the uncommon sides be 6 meters and 8 meters. And point at which diagonals intersect is O.\nIt can be shown as\nOne of the diagonal has a length of 10. It is possible when PR =10\nonly. As, PS = 6 and SR = 8\nThus we observe that PSR and PQR is a right-triangle as $6^2+8^2=\\ 10^2$\nArea of the land = $2\\times\\ \\frac{1}{2}\\left(6\\right)\\left(8\\right)\\ =48\\ $ sq units.\nArea of land \n= $\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ SO\\right)\\ +\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ QO\\right)=48$\n=> $\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ QS\\right)=48$\n$QS=\\ \\frac{96}{10}=9.6$ units\nTherefore, the other diagonal's length (x) = 9.6 meter.",
+      "solution_text": "Let us take the speed of the boat to be X and the speed of the stream to be Y. \nWe are told that the boat travels upstream from A to B for 4 hours. \nThat means the distance traveled in the 4 hours will be, 4(X-Y)\nWe are then told that the boat travels to a point C between A and B in 2 hours. Here, the boat is travelling downstream, \nThe distance hence traveled will be 2(X+Y)\nWe know AB as 4(X-Y) and BC as 2(X+Y)\nAC will be, 2X-6Y. \nWe are told that the ratio AC/BC is 3:10\n$\\dfrac{2X-6Y}{4X-4Y}=\\dfrac{3}{10}$\n$20X-60Y=12X-12Y$\n$8X=48Y$\n$X=6Y$\nWe are asked the time taken to travel AC, when the speed of the stream is tripled, so 3Y. \nSince AC is upstream, time taken will be, \n$\\dfrac{2X-6Y}{X-3Y}=\\dfrac{6Y}{6Y-3Y}=2$\nHence, it will take 2 hours.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA farmer owns a piece of land that is in the shape of a kite. The land has two adjacent sides, each 6 meters long, and two other adjacent sides, each 8 meters long. The farmer knows that one of the diagonals of the field has a length of 10 meters and the angle opposite to this diagonal is 90 degrees. What is the length of the other diagonal?\n\n**Options:**\n- **A**. 9.4\n- **B**. 9.5\n- **C**. 9.6 ✅\n- **D**. 9.7\n\n**Correct Answer:** null\n\n**Solution:**\nLet PQRS be a kite with the uncommon sides be 6 meters and 8 meters. And point at which diagonals intersect is O.\nIt can be shown as\nOne of the diagonal has a length of 10. It is possible when PR =10\nonly. As, PS = 6 and SR = 8\nThus we observe that PSR and PQR is a right-triangle as $6^2+8^2=\\ 10^2$\nArea of the land = $2\\times\\ \\frac{1}{2}\\left(6\\right)\\left(8\\right)\\ =48\\ $ sq units.\nArea of land \n= $\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ SO\\right)\\ +\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ QO\\right)=48$\n=> $\\left(\\frac{\\ 1\\ }{2}\\times PR\\times\\ QS\\right)=48$\n$QS=\\ \\frac{96}{10}=9.6$ units\nTherefore, the other diagonal's length (x) = 9.6 meter.",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA motorboat travels upstream from point A to point B in 4 hours, then returns to a point C between A and B in 2 hours. If the ratio of AC to CB is 3:10, find the time the boat would travel from A to C if the speed of the stream triples.\n\n**Options:**\n- **A**. 1.5 hours\n- **B**. 2 hours ✅\n- **C**. 2.5 hours\n- **D**. 3 hours\n\n**Correct Answer:** null\n\n**Solution:**\nLet us take the speed of the boat to be X and the speed of the stream to be Y. \nWe are told that the boat travels upstream from A to B for 4 hours. \nThat means the distance traveled in the 4 hours will be, 4(X-Y)\nWe are then told that the boat travels to a point C between A and B in 2 hours. Here, the boat is travelling downstream, \nThe distance hence traveled will be 2(X+Y)\nWe know AB as 4(X-Y) and BC as 2(X+Y)\nAC will be, 2X-6Y. \nWe are told that the ratio AC/BC is 3:10\n$\\dfrac{2X-6Y}{4X-4Y}=\\dfrac{3}{10}$\n$20X-60Y=12X-12Y$\n$8X=48Y$\n$X=6Y$\nWe are asked the time taken to travel AC, when the speed of the stream is tripled, so 3Y. \nSince AC is upstream, time taken will be, \n$\\dfrac{2X-6Y}{X-3Y}=\\dfrac{6Y}{6Y-3Y}=2$\nHence, it will take 2 hours.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-21",
       "passage_text": "",
-      "question_text": "A Machine Alpha can pack one thousand gifts in 8 hours, a Machine Beta can pack the same number of gifts in 10 hours, and Machine Delta can pack 480 gifts in 12 hours. All the machines start at 10:14 A.M. while machine Alpha is closed at 11:26 A.M. The remaining two machines complete work. When will the work (to pack one thousand gifts) be finished approximately?",
+      "question_text": "Mary, whose age is double-digit, has a father named John. Mary has written her age after her father's age, making it a 4-digit number, and subtracted the difference between their ages from the 4-digit number written. If the number obtained is 4289, then what is the sum of their ages?",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4:08 pm",
-          "is_correct": false
+          "option_text": "59",
+          "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "4:18 pm",
-          "is_correct": true
+          "option_text": "62",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "3:58 pm",
+          "option_text": "53",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "3:48 pm",
+          "option_text": "67",
           "is_correct": false
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Let the efficiency of Alpha be \"P\" number of gifts per hour \nTotal gifts packed by alpha in 8 hrs = 1000 nos\nGifts packed by alpha in 1 hr = 125 nos.\nSimilarly, the efficiency of beta is \"Q\" number of gifts per hour\nTotal gifts packed by Beta in 10 hr = 1000 nos\nGifts packed by beta in 1 hr = 100 nos.\nSimilarly, the efficiency of delta is \"R\" number of gifts per hour \nTotal gifts packed by delta in 12 hr = 1000*(0.48) = 480 nos\nGifts packed by delta in 1 hr = 40 nos.\nGifts packed from 10:14 A.M to 11: 26 A.M ( Total time is 1 hr 12 minutes)\n=> Gifts packed by alpha, beta and delta in 1 hr 12 minutes = (125+25+100+20+40+8) = 318 nos.\nThe remaining gifts were packed by beta and delta = 1000-318 = 682 nos.\n=> Time taken by beta and delta = 682/140 (140 is total gifts packed by beta and delta in one hour\n=> 4 hrs 52 min (approx)\nTherefore, the work (to pack one thousand gifts) be finished by 11:26 + 4hrs 52 min\n=> 4:18 pm",
+      "solution_text": "Let the age of the father be f, and the age of the daughter be d. The 4-digit number formed can be written as 100f + d. The difference between their ages is f - d. If we subtract it from the above number, we get,\n100f + d - (f - d) = 99f + 2d\nIt is given that 99f + 2d = 4289\nwe know that 0 < d < f, and we can write the equation below,\n99f< 99f + 2d < 99f + 2f\n99f < 4289 < 101f\nSo, the value of f is,\n$f\\ <\\ \\frac{4289}{99}$\n$f\\ <\\ 43.32$\nWe also know,\n$f\\ >\\ \\frac{4289}{101}$\n$f\\ >\\ 42.46$\nSo, the only value of f that satisfies the conditions is f = 43, and by substituting in the above equation, we get d = 16.\nSum of their ages  = d + f = 43 + 16 = 59.\nHence, the correct answer is option A.",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA Machine Alpha can pack one thousand gifts in 8 hours, a Machine Beta can pack the same number of gifts in 10 hours, and Machine Delta can pack 480 gifts in 12 hours. All the machines start at 10:14 A.M. while machine Alpha is closed at 11:26 A.M. The remaining two machines complete work. When will the work (to pack one thousand gifts) be finished approximately?\n\n**Options:**\n- **A**. 4:08 pm\n- **B**. 4:18 pm ✅\n- **C**. 3:58 pm\n- **D**. 3:48 pm\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of Alpha be \"P\" number of gifts per hour \nTotal gifts packed by alpha in 8 hrs = 1000 nos\nGifts packed by alpha in 1 hr = 125 nos.\nSimilarly, the efficiency of beta is \"Q\" number of gifts per hour\nTotal gifts packed by Beta in 10 hr = 1000 nos\nGifts packed by beta in 1 hr = 100 nos.\nSimilarly, the efficiency of delta is \"R\" number of gifts per hour \nTotal gifts packed by delta in 12 hr = 1000*(0.48) = 480 nos\nGifts packed by delta in 1 hr = 40 nos.\nGifts packed from 10:14 A.M to 11: 26 A.M ( Total time is 1 hr 12 minutes)\n=> Gifts packed by alpha, beta and delta in 1 hr 12 minutes = (125+25+100+20+40+8) = 318 nos.\nThe remaining gifts were packed by beta and delta = 1000-318 = 682 nos.\n=> Time taken by beta and delta = 682/140 (140 is total gifts packed by beta and delta in one hour\n=> 4 hrs 52 min (approx)\nTherefore, the work (to pack one thousand gifts) be finished by 11:26 + 4hrs 52 min\n=> 4:18 pm",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMary, whose age is double-digit, has a father named John. Mary has written her age after her father's age, making it a 4-digit number, and subtracted the difference between their ages from the 4-digit number written. If the number obtained is 4289, then what is the sum of their ages?\n\n**Options:**\n- **A**. 59 ✅\n- **B**. 62\n- **C**. 53\n- **D**. 67\n\n**Correct Answer:** null\n\n**Solution:**\nLet the age of the father be f, and the age of the daughter be d. The 4-digit number formed can be written as 100f + d. The difference between their ages is f - d. If we subtract it from the above number, we get,\n100f + d - (f - d) = 99f + 2d\nIt is given that 99f + 2d = 4289\nwe know that 0 < d < f, and we can write the equation below,\n99f< 99f + 2d < 99f + 2f\n99f < 4289 < 101f\nSo, the value of f is,\n$f\\ <\\ \\frac{4289}{99}$\n$f\\ <\\ 43.32$\nWe also know,\n$f\\ >\\ \\frac{4289}{101}$\n$f\\ >\\ 42.46$\nSo, the only value of f that satisfies the conditions is f = 43, and by substituting in the above equation, we get d = 16.\nSum of their ages  = d + f = 43 + 16 = 59.\nHence, the correct answer is option A.",
       "type": "quants"
     },
     {
       "qid": "quant-sectionals-16-22",
       "passage_text": "",
-      "question_text": "Find the product of all positive integral values of x that satisfy inequalities A and B.\n\nA) $\\dfrac{x^2-1\\ }{x^2-7x+12}\\ge\\ 1$ \n\nB) $\\dfrac{3x^2-7x+8\\ }{x^2+1}\\le\\ 2$",
+      "question_text": "Given a triangle ABC with vertices A(10,10), B(4,2), and C(16,2), find the ratio of the inradius to the circumradius of △ABC.",
       "options": [
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "30",
+          "option_text": "2:5",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "60",
-          "is_correct": true
+          "option_text": "8:25",
+          "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "12",
+          "option_text": "16:27",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "10",
-          "is_correct": false
+          "option_text": "12:25",
+          "is_correct": true
         }
       ],
       "correct_option_data": null,
-      "solution_text": "Solving for\nA) $\\dfrac{x^2-1\\ }{x^2-7x+12}\\ge\\ 1$\n=> $\\dfrac{x^2-1\\ }{x^2-7x+12}-1\\ge0$\n=> $\\dfrac{x^2-1\\ -\\left(x^2-7x+12\\right)}{x^2-7x+12}\\ge0$\n=> $\\dfrac{7x-13}{\\left(x-4\\right)\\left(x-3\\right)}\\ge0$\n=> $x\\ \\in\\ \\left[\\frac{13\\ }{7},\\ 3\\right)\\ U\\ \\left(4,\\ \\infty\\right)$\nFor B) $\\dfrac{3x^2-7x+8\\ }{x^2+1}\\le\\ 2$\n=> $\\dfrac{3x^2-7x+8\\ }{x^2+1}-2\\ \\le\\ 0$\n=> $\\dfrac{3x^2-7x+8-2\\left(x^2+1\\right)\\ }{x^2+1}\\le\\ 0$\n=> $\\dfrac{x^2-7x+6\\ }{x^2+1}\\le\\ 0$\n=> $\\dfrac{\\left(x-1\\right)\\left(x-6\\right)\\ }{x^2+1}\\le\\ 0$\n=> $x\\in\\ \\left[1,6\\right]$\nTherefore, all positive integral values of x satisfy inequalities A and B are 2,5 and 6 \n=> 2*5*6 = 60",
+      "solution_text": "We are given the coordinates of the triangle. Let's place the coordinates. We get:\nClearly, we can see that BC = 12 and the height of the triangle = 8 units. \nSince ABC is an isoceles triangle, when perpendicular is dropped, it bisects the base. So when we drop a perpendicular at point D from A to BC, we get a right angled triangle with sides BD, AD and AB. BD = 6 units as perpendicular will bisect BC, AD = 8 units and AB. \nUsing pythagoras triangle in ABD, we can find AB = 10  cm. Similarly, AC = 10 cm\nNow that we have all the sides of the triangle, we can find the inradius and the circumradius:\ninradius = $\\dfrac{Area}{semi-perimeter}$\nArea of the triangle = $\\dfrac{1}{2}\\times B\\times H\\ =\\ \\dfrac{1}{2}\\times12\\times8=48\\ units\\ sq.$\nSemi perimeter = $\\dfrac{10+10+12}{2}=16$\nInradius = $\\dfrac{48}{16}=3$\nCircumradius = $\\dfrac{abc}{4\\times Area}$ where a, b, c are the sides of the triangle. \n$\\dfrac{10\\times10\\times12}{4\\times48}=6.25$\nWe need to find = $\\dfrac{inradius}{circumradius}=\\dfrac{3}{6.25}=\\dfrac{12}{25}$\nHence, the ratio : 12:25",
       "image_url": "",
-      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the product of all positive integral values of x that satisfy inequalities A and B.\n\nA) $\\dfrac{x^2-1\\ }{x^2-7x+12}\\ge\\ 1$ \n\nB) $\\dfrac{3x^2-7x+8\\ }{x^2+1}\\le\\ 2$\n\n**Options:**\n- **A**. 30\n- **B**. 60 ✅\n- **C**. 12\n- **D**. 10\n\n**Correct Answer:** null\n\n**Solution:**\nSolving for\nA) $\\dfrac{x^2-1\\ }{x^2-7x+12}\\ge\\ 1$\n=> $\\dfrac{x^2-1\\ }{x^2-7x+12}-1\\ge0$\n=> $\\dfrac{x^2-1\\ -\\left(x^2-7x+12\\right)}{x^2-7x+12}\\ge0$\n=> $\\dfrac{7x-13}{\\left(x-4\\right)\\left(x-3\\right)}\\ge0$\n=> $x\\ \\in\\ \\left[\\frac{13\\ }{7},\\ 3\\right)\\ U\\ \\left(4,\\ \\infty\\right)$\nFor B) $\\dfrac{3x^2-7x+8\\ }{x^2+1}\\le\\ 2$\n=> $\\dfrac{3x^2-7x+8\\ }{x^2+1}-2\\ \\le\\ 0$\n=> $\\dfrac{3x^2-7x+8-2\\left(x^2+1\\right)\\ }{x^2+1}\\le\\ 0$\n=> $\\dfrac{x^2-7x+6\\ }{x^2+1}\\le\\ 0$\n=> $\\dfrac{\\left(x-1\\right)\\left(x-6\\right)\\ }{x^2+1}\\le\\ 0$\n=> $x\\in\\ \\left[1,6\\right]$\nTherefore, all positive integral values of x satisfy inequalities A and B are 2,5 and 6 \n=> 2*5*6 = 60",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGiven a triangle ABC with vertices A(10,10), B(4,2), and C(16,2), find the ratio of the inradius to the circumradius of △ABC.\n\n**Options:**\n- **A**. 2:5\n- **B**. 8:25\n- **C**. 16:27\n- **D**. 12:25 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given the coordinates of the triangle. Let's place the coordinates. We get:\nClearly, we can see that BC = 12 and the height of the triangle = 8 units. \nSince ABC is an isoceles triangle, when perpendicular is dropped, it bisects the base. So when we drop a perpendicular at point D from A to BC, we get a right angled triangle with sides BD, AD and AB. BD = 6 units as perpendicular will bisect BC, AD = 8 units and AB. \nUsing pythagoras triangle in ABD, we can find AB = 10  cm. Similarly, AC = 10 cm\nNow that we have all the sides of the triangle, we can find the inradius and the circumradius:\ninradius = $\\dfrac{Area}{semi-perimeter}$\nArea of the triangle = $\\dfrac{1}{2}\\times B\\times H\\ =\\ \\dfrac{1}{2}\\times12\\times8=48\\ units\\ sq.$\nSemi perimeter = $\\dfrac{10+10+12}{2}=16$\nInradius = $\\dfrac{48}{16}=3$\nCircumradius = $\\dfrac{abc}{4\\times Area}$ where a, b, c are the sides of the triangle. \n$\\dfrac{10\\times10\\times12}{4\\times48}=6.25$\nWe need to find = $\\dfrac{inradius}{circumradius}=\\dfrac{3}{6.25}=\\dfrac{12}{25}$\nHence, the ratio : 12:25",
       "type": "quants"
     }
   ]

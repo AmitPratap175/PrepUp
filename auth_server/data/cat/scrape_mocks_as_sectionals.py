@@ -114,8 +114,10 @@ async def test_news_crawl_quants(urls: str, type: str) -> Dict[str, List[str]]:
         #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
         #         ]
         
-        for url in urls:
+        for i, url in enumerate(urls):
             result = await crawler.arun(url, config=run_config, magic=True)
+            if i == 0:
+                continue
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
@@ -478,8 +480,10 @@ async def test_news_crawl(urls: str, type: str) -> Dict[str, List[str]]:
         #         f"https://cracku.in/cat/quant-sectional-tests/quant-free-sectional-test/result"
         #         ]
         
-        for url in urls:
+        for i, url in enumerate(urls):
             result = await crawler.arun(url, config=run_config, magic=True)
+            if i == 0:
+                continue
             if result and result.html:
                 # Sanitize URL to create a valid filename
                 # filename = re.sub(r'https?://', '', url)
@@ -802,33 +806,39 @@ if __name__ == "__main__":
     with open(Path(__file__).parent /"urls_cracku_mocks.txt", "r") as f:
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
+        # urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
+        # categorized_html = asyncio.run(test_news_crawl_quants(urls[0], type_curr))
         # for url_curr in urls_raw:
             
-    #         type_curr = "varc"
-    #         urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
+        #     type_curr = "varc"
+        #     urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
+        #     urls.insert(0, urls[0])
     
-    #         # Step 2: Crawl the web pages to get HTML content.
-    #         categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
-    #         # print(categorized_html)
-    #         # print(f"Crawled {len(categorized_html['quant'])} pages successfully.")
+        #     # Step 2: Crawl the web pages to get HTML content.
+        #     categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
+        #     print(categorized_html)
+        #     # print(f"Crawled {len(categorized_html['quant'])} pages successfully.")
             
-    #         # Step 3: Pass the crawled data to the main processing function.
-    #         main(categorized_html, type_curr)
-        
-    #     for url_curr in urls_raw:
-    #         type_curr = "dilr"
-    #         urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
+        #     # Step 3: Pass the crawled data to the main processing function.
+        #     main(categorized_html, type_curr)
+        # urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
+        # categorized_html = asyncio.run(test_news_crawl_quants(urls[0], type_curr))
+        for url_curr in urls_raw:
+            type_curr = "dilr"
+            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(25, 47)]
+            urls.insert(0, urls[0])
 
-    #         # Step 2: Crawl the web pages to get HTML content.
-    #         categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
-    #         # print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
+            # Step 2: Crawl the web pages to get HTML content.
+            categorized_html = asyncio.run(test_news_crawl(urls, type_curr))
+            # print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
             
-    #         # Step 3: Pass the crawled data to the main processing function.
-    #         main(categorized_html, type_curr)
+            # Step 3: Pass the crawled data to the main processing function.
+            main(categorized_html, type_curr)
 
         for url_curr in urls_raw:
             type_curr = "quants"
             urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]
+            urls.insert(0, urls[0])
     
             # Step 2: Crawl the web pages to get HTML content.
             categorized_html = asyncio.run(test_news_crawl_quants(urls, type_curr))
