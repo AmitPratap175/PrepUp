@@ -45,6 +45,7 @@ urlpatterns = [
     # Essay System
     path('essays/topics/generate/', views.EssayTopicGenerateView.as_view(), name='essay-topics-generate'),
     path('essays/topics/', views.EssayTopicListView.as_view(), name='essay-topics-list'),
+    path('essays/xat-questions/', views.XATEssayQuestionListView.as_view(), name='essay-xat-questions-list'),
     path('essays/', views.EssayListCreateView.as_view(), name='essays-list-create'),
     path('essays/<uuid:essay_id>/', views.EssayDetailView.as_view(), name='essay-detail'),
     path('essays/<uuid:essay_id>/submit/', views.EssaySubmitView.as_view(), name='essay-submit'),

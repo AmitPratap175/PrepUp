@@ -23,11 +23,11 @@ export default function Courses() {
   const [location] = useLocation();
   const { toast } = useToast();
   const [selectedExamType, setSelectedExamType] = useState<string>("all");
-  
+
   // Extract exam type from URL if provided
   const urlParams = new URLSearchParams(location.split('?')[1] || '');
   const examTypeFromUrl = urlParams.get('exam');
-  
+
   // Set initial filter from URL
   useState(() => {
     if (examTypeFromUrl && examTypeFromUrl !== selectedExamType) {
@@ -71,7 +71,7 @@ export default function Courses() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -93,13 +93,14 @@ export default function Courses() {
                 <SelectItem value="all">All Courses</SelectItem>
                 <SelectItem value="cat">CAT Courses</SelectItem>
                 <SelectItem value="gate">GATE Courses</SelectItem>
+                <SelectItem value="xat">XAT Courses</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           {/* Filter Tabs */}
           <div className="flex justify-center gap-2 mb-12">
-            <Button 
+            <Button
               variant={selectedExamType === "all" ? "default" : "outline"}
               onClick={() => setSelectedExamType("all")}
               className={selectedExamType === "all" ? "bg-primary text-primary-foreground" : ""}
@@ -107,7 +108,7 @@ export default function Courses() {
             >
               All Courses
             </Button>
-            <Button 
+            <Button
               variant={selectedExamType === "cat" ? "default" : "outline"}
               onClick={() => setSelectedExamType("cat")}
               className={selectedExamType === "cat" ? "bg-primary text-primary-foreground" : ""}
@@ -115,13 +116,21 @@ export default function Courses() {
             >
               CAT Courses
             </Button>
-            <Button 
+            <Button
               variant={selectedExamType === "gate" ? "default" : "outline"}
               onClick={() => setSelectedExamType("gate")}
               className={selectedExamType === "gate" ? "bg-primary text-primary-foreground" : ""}
               data-testid="tab-gate-courses"
             >
               GATE Courses
+            </Button>
+            <Button
+              variant={selectedExamType === "xat" ? "default" : "outline"}
+              onClick={() => setSelectedExamType("xat")}
+              className={selectedExamType === "xat" ? "bg-primary text-primary-foreground" : ""}
+              data-testid="tab-xat-courses"
+            >
+              XAT Courses
             </Button>
           </div>
 
@@ -132,10 +141,10 @@ export default function Courses() {
                 <Card key={course.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden hover-elevate">
                   {course.imageUrl && (
                     <div className="relative h-48 overflow-hidden">
-                      <img 
-                        src={course.imageUrl} 
+                      <img
+                        src={course.imageUrl}
                         alt={course.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                       {course.isPopular && (
                         <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
@@ -154,7 +163,7 @@ export default function Courses() {
                       {course.title}
                     </CardTitle>
                     <CardDescription className="mb-6">{course.description}</CardDescription>
-                    
+
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-sm">
                         <span className="material-symbols-outlined text-primary">schedule</span>
@@ -169,7 +178,7 @@ export default function Courses() {
                         </div>
                       ))}
                     </div>
-                    
+
                     <div className="flex items-center justify-between">
                       <div>
                         <span className="text-2xl font-bold text-foreground">₹{course.price.toLocaleString()}</span>
@@ -177,7 +186,7 @@ export default function Courses() {
                           <span className="text-sm text-muted-foreground line-through ml-2">₹{course.originalPrice.toLocaleString()}</span>
                         )}
                       </div>
-                      <Button 
+                      <Button
                         className="bg-primary hover:bg-primary/90 text-primary-foreground"
                         onClick={() => handleEnrollment(course.id, course.title)}
                         data-testid={`enroll-button-${course.id}`}
@@ -200,8 +209,8 @@ export default function Courses() {
                     : "Courses are currently being prepared. Please check back soon!"
                   }
                 </p>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={() => setSelectedExamType("all")}
                   data-testid="view-all-courses"
                 >

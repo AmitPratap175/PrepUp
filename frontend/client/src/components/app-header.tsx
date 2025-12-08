@@ -45,6 +45,23 @@ const navigation = [
       { title: "Badges", href: "/badges" },
     ]
   },
+  {
+    title: "XAT",
+    href: "#",
+    items: [
+      { title: "XAT Courses", href: "/courses?exam=xat" },
+      { title: "Mock Tests", href: "/mock-tests?exam=xat" },
+      { title: "Sectional Tests", href: "/sectional-tests?exam=xat" },
+      { title: "Practice Tests", href: "/practice-test?exam=xat" },
+      { title: "Quizzes", href: "/quiz?exam=xat" },
+      { title: "Study Materials", href: "/study-materials?exam=xat" },
+      { title: "Essay Writing", href: "/xat-essay" },
+      { title: "Smart Practice", href: "/smart-practice" },
+      { title: "Leaderboard", href: "/leaderboard" },
+      { title: "Analytics", href: "/analytics" },
+      { title: "Badges", href: "/badges" },
+    ]
+  },
   { title: "Leaderboard", href: "/leaderboard" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },

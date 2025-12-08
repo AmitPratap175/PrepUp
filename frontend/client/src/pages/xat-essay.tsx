@@ -9,14 +9,18 @@ import { Loader2, BookOpen, PenTool, CheckCircle, AlertCircle, RefreshCw, Save }
 import {
     useEssayTopics,
     useGenerateEssayTopics,
+    useXATEssayQuestions,
+    useEssays,
     useCreateEssay,
     useUpdateEssay,
     useSubmitEssay,
     useEssayReview,
     EssayTopic,
+    XATEssayQuestion,
     Essay
 } from "@/services/essay";
 import { useLocation } from "wouter";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 // Froala Editor
 import "froala-editor/css/froala_style.min.css";
@@ -38,13 +42,17 @@ export default function XatEssayPage() {
     const { toast } = useToast();
     const [location, setLocation] = useLocation();
     const [selectedDomain, setSelectedDomain] = useState<string>("philosophy");
-    const [activeTab, setActiveTab] = useState<"topics" | "write" | "review">("topics");
+    const [activeTab, setActiveTab] = useState<"topics" | "questions" | "write" | "review" | "history">("topics");
     const [selectedTopic, setSelectedTopic] = useState<EssayTopic | null>(null);
+    const [selectedXATQuestion, setSelectedXATQuestion] = useState<XATEssayQuestion | null>(null);
     const [currentEssay, setCurrentEssay] = useState<Essay | null>(null);
     const [editorContent, setEditorContent] = useState("");
+    const [viewSolution, setViewSolution] = useState<XATEssayQuestion | null>(null);
 
     // Queries & Mutations
     const { data: topics, isLoading: isLoadingTopics } = useEssayTopics(selectedDomain);
+    const { data: xatQuestions, isLoading: isLoadingXATQuestions } = useXATEssayQuestions();
+    const { data: essays, isLoading: isLoadingEssays } = useEssays();
     const generateTopicsMutation = useGenerateEssayTopics();
     const createEssayMutation = useCreateEssay();
     const updateEssayMutation = useUpdateEssay();
@@ -68,6 +76,7 @@ export default function XatEssayPage() {
     // Handle starting an essay
     const handleStartEssay = (topic: EssayTopic) => {
         setSelectedTopic(topic);
+        setSelectedXATQuestion(null);
         createEssayMutation.mutate({
             title: topic.title,
             topic_id: topic.id,
@@ -83,6 +92,46 @@ export default function XatEssayPage() {
                 toast({ title: "Error", description: "Failed to start essay.", variant: "destructive" });
             }
         });
+    };
+
+    // Handle starting a XAT essay
+    const handleStartXATEssay = (question: XATEssayQuestion) => {
+        setSelectedXATQuestion(question);
+        setSelectedTopic(null);
+        createEssayMutation.mutate({
+            title: `Essay for ${question.qid}`,
+            xat_question_id: question.qid,
+            content: ""
+        }, {
+            onSuccess: (essay) => {
+                setCurrentEssay(essay);
+                setEditorContent("");
+                setActiveTab("write");
+                toast({ title: "Essay Started", description: "You can now start writing." });
+            },
+            onError: () => {
+                toast({ title: "Error", description: "Failed to start essay.", variant: "destructive" });
+            }
+        });
+    };
+
+    const handleContinueEssay = (essay: Essay) => {
+        setCurrentEssay(essay);
+        setEditorContent(essay.content);
+        // Try to find topic or question
+        if (essay.topic_id && topics) {
+            const topic = topics.find(t => t.id === essay.topic_id);
+            if (topic) setSelectedTopic(topic);
+        } else if (essay.xat_question_id && xatQuestions) {
+            const question = xatQuestions.find(q => q.qid === essay.xat_question_id);
+            if (question) setSelectedXATQuestion(question);
+        }
+
+        if (essay.status === 'submitted' || essay.status === 'reviewed') {
+            setActiveTab("review");
+        } else {
+            setActiveTab("write");
+        }
     };
 
     // Handle saving essay
@@ -146,7 +195,7 @@ export default function XatEssayPage() {
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-2 bg-muted p-1 rounded-lg">
+                    <div className="flex items-center gap-2 bg-muted p-1 rounded-lg overflow-x-auto">
                         <Button
                             variant={activeTab === "topics" ? "default" : "ghost"}
                             size="sm"
@@ -154,6 +203,14 @@ export default function XatEssayPage() {
                         >
                             <BookOpen className="w-4 h-4 mr-2" />
                             Topics
+                        </Button>
+                        <Button
+                            variant={activeTab === "questions" ? "default" : "ghost"}
+                            size="sm"
+                            onClick={() => setActiveTab("questions")}
+                        >
+                            <BookOpen className="w-4 h-4 mr-2" />
+                            XAT Questions
                         </Button>
                         <Button
                             variant={activeTab === "write" ? "default" : "ghost"}
@@ -173,8 +230,39 @@ export default function XatEssayPage() {
                             <CheckCircle className="w-4 h-4 mr-2" />
                             Review
                         </Button>
+                        <Button
+                            variant={activeTab === "history" ? "default" : "ghost"}
+                            size="sm"
+                            onClick={() => setActiveTab("history")}
+                        >
+                            <RefreshCw className="w-4 h-4 mr-2" />
+                            History
+                        </Button>
                     </div>
                 </div>
+
+                {/* SOLUTION DIALOG */}
+                <Dialog open={!!viewSolution} onOpenChange={(open) => !open && setViewSolution(null)}>
+                    <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                        <DialogHeader>
+                            <DialogTitle>Solution / Analysis</DialogTitle>
+                            <DialogDescription>
+                                Sample solution or analysis for this question.
+                            </DialogDescription>
+                        </DialogHeader>
+                        <div className="mt-4 space-y-4">
+                            {viewSolution?.solution_text ? (
+                                <div className="prose dark:prose-invert max-w-none whitespace-pre-wrap">
+                                    {viewSolution.solution_text}
+                                </div>
+                            ) : (
+                                <div className="text-center py-8 text-muted-foreground">
+                                    No solution available for this question.
+                                </div>
+                            )}
+                        </div>
+                    </DialogContent>
+                </Dialog>
 
                 {/* TOPICS TAB */}
                 {activeTab === "topics" && (
@@ -263,6 +351,103 @@ export default function XatEssayPage() {
                     </div>
                 )}
 
+                {/* QUESTIONS TAB */}
+                {activeTab === "questions" && (
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-bold">XAT Previous Year & Practice Questions</h2>
+                        <div className="grid grid-cols-1 gap-6">
+                            {isLoadingXATQuestions ? (
+                                <div className="flex justify-center py-12">
+                                    <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                                </div>
+                            ) : xatQuestions && xatQuestions.length > 0 ? (
+                                xatQuestions.map((q) => (
+                                    <Card key={q.id}>
+                                        <CardHeader>
+                                            <CardTitle>{q.qid}</CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            {q.passage_text && (
+                                                <div className="mb-4 p-4 bg-muted rounded-md text-sm italic">
+                                                    {q.passage_text}
+                                                </div>
+                                            )}
+                                            <p className="whitespace-pre-wrap">{q.question_text}</p>
+                                        </CardContent>
+                                        <CardFooter className="flex justify-between">
+                                            <div className="text-sm text-muted-foreground">
+                                                {essays?.filter(e => e.xat_question_id === q.qid).length || 0} attempts
+                                            </div>
+                                            <Button onClick={() => handleStartXATEssay(q)}>
+                                                Start Essay
+                                            </Button>
+                                        </CardFooter>
+                                    </Card>
+                                ))
+                            ) : (
+                                <div className="text-center py-12 text-muted-foreground">
+                                    No questions found.
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                )}
+
+                {/* HISTORY TAB */}
+                {activeTab === "history" && (
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-bold">Your Essay History</h2>
+                        <div className="grid grid-cols-1 gap-4">
+                            {isLoadingEssays ? (
+                                <div className="flex justify-center py-12">
+                                    <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                                </div>
+                            ) : essays && essays.length > 0 ? (
+                                essays.map((essay) => (
+                                    <Card key={essay.id}>
+                                        <CardHeader>
+                                            <div className="flex justify-between items-start">
+                                                <div>
+                                                    <CardTitle className="text-lg">{essay.title}</CardTitle>
+                                                    <CardDescription>
+                                                        {new Date(essay.created_at).toLocaleDateString()} • {essay.word_count} words
+                                                    </CardDescription>
+                                                </div>
+                                                <div className={`px-2 py-1 rounded text-xs font-medium capitalize
+                                                    ${essay.status === 'reviewed' ? 'bg-green-100 text-green-800' :
+                                                        essay.status === 'submitted' ? 'bg-blue-100 text-blue-800' :
+                                                            'bg-gray-100 text-gray-800'}`}>
+                                                    {essay.status}
+                                                </div>
+                                            </div>
+                                        </CardHeader>
+                                        <CardFooter className="flex gap-2">
+                                            <Button variant="outline" className="flex-1" onClick={() => handleContinueEssay(essay)}>
+                                                {essay.status === 'draft' ? 'Continue Writing' : 'View Review'}
+                                            </Button>
+                                            {essay.xat_question_id && (
+                                                <Button
+                                                    variant="secondary"
+                                                    onClick={() => {
+                                                        const q = xatQuestions?.find(q => q.qid === essay.xat_question_id);
+                                                        if (q) setViewSolution(q);
+                                                    }}
+                                                >
+                                                    View Solution
+                                                </Button>
+                                            )}
+                                        </CardFooter>
+                                    </Card>
+                                ))
+                            ) : (
+                                <div className="text-center py-12 text-muted-foreground">
+                                    No essays found. Start writing!
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                )}
+
                 {/* WRITE TAB */}
                 {activeTab === "write" && currentEssay && (
                     <div className="space-y-6">
@@ -272,7 +457,7 @@ export default function XatEssayPage() {
                                     <div>
                                         <CardTitle>{currentEssay.title}</CardTitle>
                                         <CardDescription className="mt-1">
-                                            {selectedTopic?.description}
+                                            {selectedTopic?.description || selectedXATQuestion?.qid}
                                         </CardDescription>
                                     </div>
                                     <div className="flex gap-2">
@@ -334,6 +519,26 @@ export default function XatEssayPage() {
                                                 <li key={i}>{point}</li>
                                             ))}
                                         </ul>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        )}
+
+                        {selectedXATQuestion && (
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle className="text-lg">Question Details</CardTitle>
+                                </CardHeader>
+                                <CardContent className="space-y-4">
+                                    {selectedXATQuestion.passage_text && (
+                                        <div>
+                                            <h4 className="font-semibold mb-1">Passage</h4>
+                                            <p className="text-sm text-muted-foreground italic">{selectedXATQuestion.passage_text}</p>
+                                        </div>
+                                    )}
+                                    <div>
+                                        <h4 className="font-semibold mb-1">Question</h4>
+                                        <p className="text-sm text-muted-foreground">{selectedXATQuestion.question_text}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -458,6 +663,7 @@ export default function XatEssayPage() {
                                         setActiveTab("topics");
                                         setCurrentEssay(null);
                                         setSelectedTopic(null);
+                                        setSelectedXATQuestion(null);
                                     }}>
                                         Start New Essay
                                     </Button>

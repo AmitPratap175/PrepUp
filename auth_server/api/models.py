@@ -208,6 +208,19 @@ class EssayTopic(models.Model):
         return f'{self.title} ({self.domain})'
 
 
+class XATEssayQuestion(models.Model):
+    """
+    Static XAT essay questions from past years or practice sets.
+    """
+    qid = models.CharField(max_length=50, unique=True)
+    passage_text = models.TextField(null=True, blank=True)
+    question_text = models.TextField()
+    solution_text = models.TextField(null=True, blank=True)
+    
+    def __str__(self):
+        return f"XAT Essay {self.qid}"
+
+
 class Essay(models.Model):
     """
     User-written essays for XAT preparation.
@@ -221,6 +234,7 @@ class Essay(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='essays', null=True, blank=True)
     topic = models.ForeignKey(EssayTopic, on_delete=models.SET_NULL, null=True, blank=True)
+    xat_question = models.ForeignKey(XATEssayQuestion, on_delete=models.SET_NULL, null=True, blank=True)
     title = models.CharField(max_length=500)
     content = models.TextField(help_text="HTML content from Froala editor")
     word_count = models.IntegerField(default=0)

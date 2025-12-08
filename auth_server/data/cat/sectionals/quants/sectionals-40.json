@@ -1,0 +1,674 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-40-1",
+      "passage_text": "",
+      "question_text": "Ram has an important office meeting to attend. If he travels from his home with 24km/h, he will reach the office 20 minutes late. He starts travelling with 36 km/h. After 30 minutes, he realises that he is going to reach office early by 10 minutes. By what value in km/h should he slow down his speed to reach the office on time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the distance = d and the time such that Ram reaches the office at correct time = t\nIf he travels with 24 km/h, then\n$\\ \\frac{\\ d}{24}=t+\\ \\frac{\\ 20}{60}$\n=> $\\ \\frac{\\ d}{24}=t+\\ \\frac{\\ 1}{3}$ ..........(1)\nIf he travels with 36 km/h,\n$\\ \\frac{\\ d}{36}=t-\\frac{\\ 1}{6}$ ......(2)\nSubtracting (2) from (1),\n$\\ \\frac{\\ d}{24}\\ -\\ \\frac{\\ d}{36}=\\ \\frac{\\ 1}{2}$\n=> d=36 km\nPutting d=36 in (2), we get t = $\\ \\frac{\\ 7}{6}\\ hours$ = 70 minutes\nAfter travelling 30 minutes, he has already travelled $\\ 36\\times\\ \\frac{\\ 30}{60}$ = 18 km\nDistance left = 36-18=18 km, Time left = 70-30 = 40 minutes\nHence the speed = $\\ \\frac{\\ 18}{40}\\times\\ 60$ = 27 km/h\nSo he to slow by 36-27 = 9 km/h",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam has an important office meeting to attend. If he travels from his home with 24km/h, he will reach the office 20 minutes late. He starts travelling with 36 km/h. After 30 minutes, he realises that he is going to reach office early by 10 minutes. By what value in km/h should he slow down his speed to reach the office on time?\n\n**Options:**\n- **A**. 4\n- **B**. 6\n- **C**. 12\n- **D**. 9 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the distance = d and the time such that Ram reaches the office at correct time = t\nIf he travels with 24 km/h, then\n$\\ \\frac{\\ d}{24}=t+\\ \\frac{\\ 20}{60}$\n=> $\\ \\frac{\\ d}{24}=t+\\ \\frac{\\ 1}{3}$ ..........(1)\nIf he travels with 36 km/h,\n$\\ \\frac{\\ d}{36}=t-\\frac{\\ 1}{6}$ ......(2)\nSubtracting (2) from (1),\n$\\ \\frac{\\ d}{24}\\ -\\ \\frac{\\ d}{36}=\\ \\frac{\\ 1}{2}$\n=> d=36 km\nPutting d=36 in (2), we get t = $\\ \\frac{\\ 7}{6}\\ hours$ = 70 minutes\nAfter travelling 30 minutes, he has already travelled $\\ 36\\times\\ \\frac{\\ 30}{60}$ = 18 km\nDistance left = 36-18=18 km, Time left = 70-30 = 40 minutes\nHence the speed = $\\ \\frac{\\ 18}{40}\\times\\ 60$ = 27 km/h\nSo he to slow by 36-27 = 9 km/h"
+    },
+    {
+      "qid": "quant-sectionals-40-2",
+      "passage_text": "",
+      "question_text": "Janaki starts walking from her school such that she takes a total of 4 steps of equal lengths. She takes each step in any one of the four directions i.e. East, West, North and South. What is the total number of ways in which Janaki will be back at her starting point (school) after completing the above-mentioned operation?",
+      "options": [],
+      "correct_option_data": "36",
+      "solution_text": "To ensure that Janaki ends up at the same location as her starting point after taking 4 steps in each direction, we have the following:\nCase 1: Take 2 steps in North and 2 steps in South direction\nTotal arrangements =$\\frac{4!}{2!*2!}$ = 6\nCase 2: Take 2 steps in East and 2 steps in the West direction \nTotal arrangements =$\\frac{4!}{2!*2!}$ = 6\nCase 3: Take a step in each of the four directions\nTotal arrangements = 4! = 24\nTotal number of ways in which Janaki can reach her school after completing 6+6+24 = 36\n36 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nJanaki starts walking from her school such that she takes a total of 4 steps of equal lengths. She takes each step in any one of the four directions i.e. East, West, North and South. What is the total number of ways in which Janaki will be back at her starting point (school) after completing the above-mentioned operation?\n\n**Options:**\n\n**Correct Answer:** 36\n\n**Solution:**\nTo ensure that Janaki ends up at the same location as her starting point after taking 4 steps in each direction, we have the following:\nCase 1: Take 2 steps in North and 2 steps in South direction\nTotal arrangements =$\\frac{4!}{2!*2!}$ = 6\nCase 2: Take 2 steps in East and 2 steps in the West direction \nTotal arrangements =$\\frac{4!}{2!*2!}$ = 6\nCase 3: Take a step in each of the four directions\nTotal arrangements = 4! = 24\nTotal number of ways in which Janaki can reach her school after completing 6+6+24 = 36\n36 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-40-3",
+      "passage_text": "",
+      "question_text": "Between 3 pm and 4 pm, at what time does the minute hand and the hour hand makes an angle of 40 degrees with each other?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:06:16 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3:23:38 pm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:22:16 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "More than one of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "At exactly 3 pm, the hour hand and the minute hand makes exactly 90 degrees with each other. They will make 40 degrees with each other firstly when they relatively move 50 degrees and secondly when they move 130 degrees.\nThe relative speed of hour hand and minute hand is 11/2 degrees/minute.\n$\\frac{11}{2}x=50 => x=100/11$ or at 3:09:05 pm\n$\\frac{11}{2}x=130 => x=260/11$ or at 3:23:38 pm\nOnly B is given in the options. Thus, the correct answer is B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nBetween 3 pm and 4 pm, at what time does the minute hand and the hour hand makes an angle of 40 degrees with each other?\n\n**Options:**\n- **A**. 3:06:16 pm\n- **B**. 3:23:38 pm ✅\n- **C**. 3:22:16 pm\n- **D**. More than one of the above\n\n**Correct Answer:** null\n\n**Solution:**\nAt exactly 3 pm, the hour hand and the minute hand makes exactly 90 degrees with each other. They will make 40 degrees with each other firstly when they relatively move 50 degrees and secondly when they move 130 degrees.\nThe relative speed of hour hand and minute hand is 11/2 degrees/minute.\n$\\frac{11}{2}x=50 => x=100/11$ or at 3:09:05 pm\n$\\frac{11}{2}x=130 => x=260/11$ or at 3:23:38 pm\nOnly B is given in the options. Thus, the correct answer is B."
+    },
+    {
+      "qid": "quant-sectionals-40-4",
+      "passage_text": "",
+      "question_text": "The sum of 151 terms of a GP is 500 and the sum of 302 terms is 700. Then the sum of 604 terms of the GP is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "862",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "900",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "812",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "875",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the common ratio be r.\nHence sum of 302 terms = Sum of 151 terms + $r^{151}$(Sum of 151 terms)\n=>700=500+ $r^{151}$(500)\n=>$r^{151}$=200/500 = 2/5\nSum of 604 terms = \nSum of 302 terms + $(r^{302})$*(Sum of 302 terms)\nSum of 302 terms + $(r^{151})* (r^{151}) $*(Sum of 302 terms)= 700+700(4/25)=700+112=812",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe sum of 151 terms of a GP is 500 and the sum of 302 terms is 700. Then the sum of 604 terms of the GP is\n\n**Options:**\n- **A**. 862\n- **B**. 900\n- **C**. 812 ✅\n- **D**. 875\n\n**Correct Answer:** null\n\n**Solution:**\nLet the common ratio be r.\nHence sum of 302 terms = Sum of 151 terms + $r^{151}$(Sum of 151 terms)\n=>700=500+ $r^{151}$(500)\n=>$r^{151}$=200/500 = 2/5\nSum of 604 terms = \nSum of 302 terms + $(r^{302})$*(Sum of 302 terms)\nSum of 302 terms + $(r^{151})* (r^{151}) $*(Sum of 302 terms)= 700+700(4/25)=700+112=812"
+    },
+    {
+      "qid": "quant-sectionals-40-5",
+      "passage_text": "",
+      "question_text": "210 men working at 90% efficiency are equivalent to 2 machines working at 75% efficiency. If 3 machines and 122 men can finish a piece of work in 30 days, in how many days can 10 men finish the piece of work working at 125% efficiency?",
+      "options": [],
+      "correct_option_data": "1200",
+      "solution_text": "210 x 9/10 men = 2 x 3/4 machines\n189 men = 1.5 machines\n126 men = 1 machine\nHence, ( 3 machines + 122 men ) x 30 = (3 x 126 + 122 ) = 15000 man hours.\nHence 10 men at 125% efficiency is equal to 12.5 men.\n15000/12.5 = 1200 days.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n210 men working at 90% efficiency are equivalent to 2 machines working at 75% efficiency. If 3 machines and 122 men can finish a piece of work in 30 days, in how many days can 10 men finish the piece of work working at 125% efficiency?\n\n**Options:**\n\n**Correct Answer:** 1200\n\n**Solution:**\n210 x 9/10 men = 2 x 3/4 machines\n189 men = 1.5 machines\n126 men = 1 machine\nHence, ( 3 machines + 122 men ) x 30 = (3 x 126 + 122 ) = 15000 man hours.\nHence 10 men at 125% efficiency is equal to 12.5 men.\n15000/12.5 = 1200 days."
+    },
+    {
+      "qid": "quant-sectionals-40-6",
+      "passage_text": "",
+      "question_text": "For how many integral values does the inequality |x-||x-1|+x+3|| <4 satify",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, |x-||x-1|+x+3|| <4\n=> -4<x-||x-1|+x+3|<4\nFor x=1\n-4<1-|4|<4, Hence x=1 satisfies\nFor x<1\n-4<x-|1-x+x+3|<4\n-4<x-4<4   => 0<x<8\n=> x $\\epsilon$ (0,1)   Hence no integral value satisfies.\nFor x>1, -4<x-|x-1+x+3|<4\n=> -4<x-(2x+2)<4  => -4<-x-2<4  => -4<x+2<4   => -6<x<2  For x>1 (0 integral values)\nTotal integral values = 1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor how many integral values does the inequality |x-||x-1|+x+3|| <4 satify\n\n**Options:**\n- **A**. 0\n- **B**. 1 ✅\n- **C**. 2\n- **D**. 3\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, |x-||x-1|+x+3|| <4\n=> -4<x-||x-1|+x+3|<4\nFor x=1\n-4<1-|4|<4, Hence x=1 satisfies\nFor x<1\n-4<x-|1-x+x+3|<4\n-4<x-4<4   => 0<x<8\n=> x $\\epsilon$ (0,1)   Hence no integral value satisfies.\nFor x>1, -4<x-|x-1+x+3|<4\n=> -4<x-(2x+2)<4  => -4<-x-2<4  => -4<x+2<4   => -6<x<2  For x>1 (0 integral values)\nTotal integral values = 1"
+    },
+    {
+      "qid": "quant-sectionals-40-7",
+      "passage_text": "",
+      "question_text": "A shopkeeper sells two boxes of apples at the same price. If one of the boxes he gets a loss of 10% and on the other a profit of x%. Finally he realised that he neither made a profit nor loss on selling the boxes of apples. What is the value of x",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12.5%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11.11%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "11%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the selling price be S\nOne of the boxes he sold at a loss of 10% and the other at a profit of x%\nLet us first try to find the CP, say C\n$\\frac{C - S}{C}$ = 0.1\n0.9C = S \nC = $\\frac{S}{0.9}$\n$\\frac{S - C}{C}$ = $\\frac{x}{100}$\n100S - 100C = xC\nC = $\\frac{100S}{x+100}$\nSince he neither made a profit nor loss during this transaction\nC.P1 - S.P1 = S.P2 - C.P2\n$\\frac{S}{0.9}-S\\ =\\ S\\ -\\frac{100S}{x+100}$\n$\\frac{S}{0.9}$ * 0.1 = $\\frac{S}{100+x}$ * x\n$\\frac{1}{9}$ = $\\frac{x}{100+x}$\nx = 12.5%\nA is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper sells two boxes of apples at the same price. If one of the boxes he gets a loss of 10% and on the other a profit of x%. Finally he realised that he neither made a profit nor loss on selling the boxes of apples. What is the value of x\n\n**Options:**\n- **A**. 12.5% ✅\n- **B**. 11.11%\n- **C**. 10%\n- **D**. 11%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the selling price be S\nOne of the boxes he sold at a loss of 10% and the other at a profit of x%\nLet us first try to find the CP, say C\n$\\frac{C - S}{C}$ = 0.1\n0.9C = S \nC = $\\frac{S}{0.9}$\n$\\frac{S - C}{C}$ = $\\frac{x}{100}$\n100S - 100C = xC\nC = $\\frac{100S}{x+100}$\nSince he neither made a profit nor loss during this transaction\nC.P1 - S.P1 = S.P2 - C.P2\n$\\frac{S}{0.9}-S\\ =\\ S\\ -\\frac{100S}{x+100}$\n$\\frac{S}{0.9}$ * 0.1 = $\\frac{S}{100+x}$ * x\n$\\frac{1}{9}$ = $\\frac{x}{100+x}$\nx = 12.5%\nA is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-40-8",
+      "passage_text": "",
+      "question_text": "A and B work for a professional graphic artist. They got an order of painting and doing calligraphy on 200 cards. They were paid ₹200/card. A worked on the cards for the first 2 days and B worked on it for the next 4 days. Remaining work they finished together in 2 days. If the efficiency of A is 33.33% more than that of B, how much money did A earn from this job ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "₹18823.53",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "₹20987.45",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "₹23345.88",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "₹23456.88",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the work done per day by B be $x$ units \nThus, work done per day by A = $\\dfrac{4x}{3}$ units \nTotal work $t_w$ = [(Work done by A)x(2+2)]+[(Work done by B)x(4+2)] \n$ \\Rightarrow t_w = [\\dfrac{4x}{3} \\times 4]+[x \\times 6] $ \n$ \\Rightarrow t_w = \\dfrac{16x}{3} + 6x $ \n$ \\Rightarrow t_w = \\dfrac{34x}{3} $ units \nWork done by A, $w_1 = \\dfrac{4x}{3} \\times 4 = \\dfrac{16x}{3} $ \nAmount earned by A, $a = \\dfrac{\\frac{16x}{3}}{\\frac{34x}{3}} \\times 40000 $ \n$ \\Rightarrow a = \\dfrac{320000}{17} \\approx ₹18823.53$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA and B work for a professional graphic artist. They got an order of painting and doing calligraphy on 200 cards. They were paid ₹200/card. A worked on the cards for the first 2 days and B worked on it for the next 4 days. Remaining work they finished together in 2 days. If the efficiency of A is 33.33% more than that of B, how much money did A earn from this job ?\n\n**Options:**\n- **A**. ₹18823.53 ✅\n- **B**. ₹20987.45\n- **C**. ₹23345.88\n- **D**. ₹23456.88\n\n**Correct Answer:** null\n\n**Solution:**\nLet the work done per day by B be $x$ units \nThus, work done per day by A = $\\dfrac{4x}{3}$ units \nTotal work $t_w$ = [(Work done by A)x(2+2)]+[(Work done by B)x(4+2)] \n$ \\Rightarrow t_w = [\\dfrac{4x}{3} \\times 4]+[x \\times 6] $ \n$ \\Rightarrow t_w = \\dfrac{16x}{3} + 6x $ \n$ \\Rightarrow t_w = \\dfrac{34x}{3} $ units \nWork done by A, $w_1 = \\dfrac{4x}{3} \\times 4 = \\dfrac{16x}{3} $ \nAmount earned by A, $a = \\dfrac{\\frac{16x}{3}}{\\frac{34x}{3}} \\times 40000 $ \n$ \\Rightarrow a = \\dfrac{320000}{17} \\approx ₹18823.53$"
+    },
+    {
+      "qid": "quant-sectionals-40-9",
+      "passage_text": "",
+      "question_text": "What is the sum of the last two digits of $\\frac{6^{100}-1}{5}$?",
+      "options": [],
+      "correct_option_data": "12",
+      "solution_text": "$\\frac{6^{100}-1}{5}=\\frac{\\left(6-1\\right)\\left(1+6+6^2+6^3+....+6^{99}\\right)}{5}$\nTherefore, the expression reduces to $ \\left(1+6+6^2+6^3+....+6^{99}\\right)$\nThe last two digits will be obtained when the expression is divided by 100. We can write 100 as the product of two coprimes in the following manner: $100=4\\times\\ 25$  [$N=a\\times\\ b$; where $a=4 , b=25$ are co-primes]\nUsing Chinese remainder theorem:\n$\\left(1+6+6^2+6^3+....+6^{99}\\right)\\ mod\\ 4=r_1=3$\n$\\left(1+6+6^2+6^3+....+6_{ }^{99}\\right)\\ mod\\ 25=r_2=0$\n$r=ax\\left(r_2\\right)+by\\left(r_1\\right)$; solving $ax+by=1--->4x+25y=1$, we obtain $y=1$ for $x=-6$  \nSubstituting all the above values, we get $r=75$\nThe sum of the last two digits = (7 + 5) = 12",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the sum of the last two digits of $\\frac{6^{100}-1}{5}$?\n\n**Options:**\n\n**Correct Answer:** 12\n\n**Solution:**\n$\\frac{6^{100}-1}{5}=\\frac{\\left(6-1\\right)\\left(1+6+6^2+6^3+....+6^{99}\\right)}{5}$\nTherefore, the expression reduces to $ \\left(1+6+6^2+6^3+....+6^{99}\\right)$\nThe last two digits will be obtained when the expression is divided by 100. We can write 100 as the product of two coprimes in the following manner: $100=4\\times\\ 25$  [$N=a\\times\\ b$; where $a=4 , b=25$ are co-primes]\nUsing Chinese remainder theorem:\n$\\left(1+6+6^2+6^3+....+6^{99}\\right)\\ mod\\ 4=r_1=3$\n$\\left(1+6+6^2+6^3+....+6_{ }^{99}\\right)\\ mod\\ 25=r_2=0$\n$r=ax\\left(r_2\\right)+by\\left(r_1\\right)$; solving $ax+by=1--->4x+25y=1$, we obtain $y=1$ for $x=-6$  \nSubstituting all the above values, we get $r=75$\nThe sum of the last two digits = (7 + 5) = 12"
+    },
+    {
+      "qid": "quant-sectionals-40-10",
+      "passage_text": "",
+      "question_text": "What is the radius of the sphere described by the curve: $x^2+y^2+z^2-4x+2y-6z=22$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6 units",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5 units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8 units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The given equation $x^2+y^2+z^2-4x+2y-6z=22$ can be rephrased as:\n$x^2-4x+4+y^2+2y+1+z^2-6z+9=22+4+1+9$\n=>$\\left(x-2\\right)^2+\\left(y+1\\right)^2+\\left(z-3\\right)^2=36$\nSo, for the equation $\\left(x-2\\right)^2+\\left(y+1\\right)^2+\\left(z-3\\right)^2=36$, which is of the form $\\left(x-a\\right)^2+\\left(y-b\\right)^2+\\left(z-c\\right)^2=r^2$, the centre is (a,b,c) or (2,-1,3) and $r^2$=36.\nTherefore radius, r=6 units.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the radius of the sphere described by the curve: $x^2+y^2+z^2-4x+2y-6z=22$\n\n**Options:**\n- **A**. 7 units\n- **B**. 6 units ✅\n- **C**. 5 units\n- **D**. 8 units\n\n**Correct Answer:** null\n\n**Solution:**\nThe given equation $x^2+y^2+z^2-4x+2y-6z=22$ can be rephrased as:\n$x^2-4x+4+y^2+2y+1+z^2-6z+9=22+4+1+9$\n=>$\\left(x-2\\right)^2+\\left(y+1\\right)^2+\\left(z-3\\right)^2=36$\nSo, for the equation $\\left(x-2\\right)^2+\\left(y+1\\right)^2+\\left(z-3\\right)^2=36$, which is of the form $\\left(x-a\\right)^2+\\left(y-b\\right)^2+\\left(z-c\\right)^2=r^2$, the centre is (a,b,c) or (2,-1,3) and $r^2$=36.\nTherefore radius, r=6 units."
+    },
+    {
+      "qid": "quant-sectionals-40-11",
+      "passage_text": "",
+      "question_text": "In a triangle ABC, with AB=24 cm, BC= 36 cm and AC= 50 cm, a semicircle is drawn inside the triangle such that its diameter lies on AC and is tangent to AB and BC. If O is the centre of the semi-circle, find the measure of line AO.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20 cm",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "MB= BN ( B is an external point and BM and Bn are tangents to the circle).\nAngles BMO and BNO= 90 degrees and OB is common to both. Hence, triangles OBM and OBN are congruent triangles. \nSo, OB bisects angle B and hence;\n$\\frac{AO}{OC}=\\frac{AB}{BC}$\n=> $\\frac{AO}{50-AO}=\\frac{24}{36}$\n=> $3AO=2\\left(50-AO\\right)$\n=> 5AO= 100.\n.'. AO= 20 cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a triangle ABC, with AB=24 cm, BC= 36 cm and AC= 50 cm, a semicircle is drawn inside the triangle such that its diameter lies on AC and is tangent to AB and BC. If O is the centre of the semi-circle, find the measure of line AO.\n\n**Options:**\n- **A**. 25 cm\n- **B**. 18 cm\n- **C**. 15 cm\n- **D**. 20 cm ✅\n\n**Correct Answer:** null\n\n**Solution:**\nMB= BN ( B is an external point and BM and Bn are tangents to the circle).\nAngles BMO and BNO= 90 degrees and OB is common to both. Hence, triangles OBM and OBN are congruent triangles. \nSo, OB bisects angle B and hence;\n$\\frac{AO}{OC}=\\frac{AB}{BC}$\n=> $\\frac{AO}{50-AO}=\\frac{24}{36}$\n=> $3AO=2\\left(50-AO\\right)$\n=> 5AO= 100.\n.'. AO= 20 cm"
+    },
+    {
+      "qid": "quant-sectionals-40-12",
+      "passage_text": "",
+      "question_text": "The cost price of a gold coin was Rs. 11000 in the year 2014. It increased by an equal amount in the year 2015, 2016, 2017 and 2018. Gold price index (GPI) is defined as percentage increment in the price of the gold coin in any year over the previous year. Which of the following can't be the ratio of GPI in the year 2018 to GPI in the year 2016 ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1 : 2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5 : 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6 : 5",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4 : 7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the increment in the price be Rs. $x$. Thus, the price of the gold coin in year 2015, 2016, 2017 and 2018 would be Rs. $(11000 + x)$ , Rs. $(11000 + 2x)$, Rs. $(11000 + 3x)$ and Rs. $(11000 + 4x)$ respectively. \nTherefore, the required ratio = $\\dfrac{\\dfrac{x}{11000 + 3x}\\times 100}{\\dfrac{x}{11000+x}\\times 100}$\n$\\Rightarrow$ $\\dfrac{11000 + x}{11000 + 3x}$\nWe can see that denominator is greater than numerator hence the ratio can’t be greater than 1.\nIn option c, we have the ratio = $\\dfrac{6}{5}$ > 1 this is not possible. \nHence, option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe cost price of a gold coin was Rs. 11000 in the year 2014. It increased by an equal amount in the year 2015, 2016, 2017 and 2018. Gold price index (GPI) is defined as percentage increment in the price of the gold coin in any year over the previous year. Which of the following can't be the ratio of GPI in the year 2018 to GPI in the year 2016 ?\n\n**Options:**\n- **A**. 1 : 2\n- **B**. 5 : 6\n- **C**. 6 : 5 ✅\n- **D**. 4 : 7\n\n**Correct Answer:** null\n\n**Solution:**\nLet the increment in the price be Rs. $x$. Thus, the price of the gold coin in year 2015, 2016, 2017 and 2018 would be Rs. $(11000 + x)$ , Rs. $(11000 + 2x)$, Rs. $(11000 + 3x)$ and Rs. $(11000 + 4x)$ respectively. \nTherefore, the required ratio = $\\dfrac{\\dfrac{x}{11000 + 3x}\\times 100}{\\dfrac{x}{11000+x}\\times 100}$\n$\\Rightarrow$ $\\dfrac{11000 + x}{11000 + 3x}$\nWe can see that denominator is greater than numerator hence the ratio can’t be greater than 1.\nIn option c, we have the ratio = $\\dfrac{6}{5}$ > 1 this is not possible. \nHence, option C is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-40-13",
+      "passage_text": "",
+      "question_text": "If $x^2-2x-1=0$, then what is the value of $\\left(x-2\\right)^4+\\frac{1}{\\left(x-2\\right)^4}$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "33",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "34",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "46",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$x^2-2x-1=0$ can be written as $x^2-4x+4\\ +2x\\ -\\ 4\\ =\\ 1$\n=> $\\left(x-2\\right)^2+2\\left(x\\ -\\ 2\\right)\\ =\\ 1$\n=>$\\left(x-2\\right)\\left[\\left(x\\ -\\ 2\\right)+2\\right)\\ =\\ 1$\n=> $\\left(\\left(x\\ -\\ 2\\right)+2\\right)\\ =\\ \\frac{1}{x-2}$\n=>$\\left(x\\ -\\ 2\\right)\\ -\\ \\left(\\frac{1}{x-2}\\right)=-2$\nSquarring on both sides\n$\\left(x\\ -\\ 2\\right)^2\\ +\\ \\left(\\frac{1}{x-2}\\right)^2-2=4$\n$\\left(x\\ -\\ 2\\right)^2\\ +\\ \\left(\\frac{1}{x-2}\\right)^2=6$\nSquarring on both sides \n$\\left(x\\ -\\ 2\\right)^4\\ +\\ \\left(\\frac{1}{x-2}\\right)^4+2=36$\n$\\left(x\\ -\\ 2\\right)^4\\ +\\ \\left(\\frac{1}{x-2}\\right)^4=34$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $x^2-2x-1=0$, then what is the value of $\\left(x-2\\right)^4+\\frac{1}{\\left(x-2\\right)^4}$?\n\n**Options:**\n- **A**. 33\n- **B**. 34 ✅\n- **C**. 46\n- **D**. 0\n\n**Correct Answer:** null\n\n**Solution:**\n$x^2-2x-1=0$ can be written as $x^2-4x+4\\ +2x\\ -\\ 4\\ =\\ 1$\n=> $\\left(x-2\\right)^2+2\\left(x\\ -\\ 2\\right)\\ =\\ 1$\n=>$\\left(x-2\\right)\\left[\\left(x\\ -\\ 2\\right)+2\\right)\\ =\\ 1$\n=> $\\left(\\left(x\\ -\\ 2\\right)+2\\right)\\ =\\ \\frac{1}{x-2}$\n=>$\\left(x\\ -\\ 2\\right)\\ -\\ \\left(\\frac{1}{x-2}\\right)=-2$\nSquarring on both sides\n$\\left(x\\ -\\ 2\\right)^2\\ +\\ \\left(\\frac{1}{x-2}\\right)^2-2=4$\n$\\left(x\\ -\\ 2\\right)^2\\ +\\ \\left(\\frac{1}{x-2}\\right)^2=6$\nSquarring on both sides \n$\\left(x\\ -\\ 2\\right)^4\\ +\\ \\left(\\frac{1}{x-2}\\right)^4+2=36$\n$\\left(x\\ -\\ 2\\right)^4\\ +\\ \\left(\\frac{1}{x-2}\\right)^4=34$"
+    },
+    {
+      "qid": "quant-sectionals-40-14",
+      "passage_text": "",
+      "question_text": "In a shoe store, there are 15 pairs of highly expensive shoes. One night, a thief breaks in and steals 6 shoes, not necessarily having a matching pair with him. What is the probability that at least one matching pair of shoes was stolen by the thief?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{704}{1305}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{601}{1305}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{559}{1305}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{746}{1305}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The probability that at least one matching pair of shoes was stolen by the thief will be the same as 1 - the probability of not getting any pair.\nHence, the required probability = $1 - \\dfrac{30*28*26*24*22*20}{30*29*28*27*26*25}$\n$\\Rightarrow$ $\\dfrac{29*27*25 - 24*22*20}{29*27*25 }$\n$\\Rightarrow$ $\\dfrac{601}{1305}$\nTherefore, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a shoe store, there are 15 pairs of highly expensive shoes. One night, a thief breaks in and steals 6 shoes, not necessarily having a matching pair with him. What is the probability that at least one matching pair of shoes was stolen by the thief?\n\n**Options:**\n- **A**. $\\dfrac{704}{1305}$\n- **B**. $\\dfrac{601}{1305}$ ✅\n- **C**. $\\dfrac{559}{1305}$\n- **D**. $\\dfrac{746}{1305}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe probability that at least one matching pair of shoes was stolen by the thief will be the same as 1 - the probability of not getting any pair.\nHence, the required probability = $1 - \\dfrac{30*28*26*24*22*20}{30*29*28*27*26*25}$\n$\\Rightarrow$ $\\dfrac{29*27*25 - 24*22*20}{29*27*25 }$\n$\\Rightarrow$ $\\dfrac{601}{1305}$\nTherefore, option B is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-40-15",
+      "passage_text": "",
+      "question_text": "a,b,c and d are 4 positive numbers that add up to 60. If it is known that all of them are odd multiples of 3, the number of solution sets that satisfy the condition is",
+      "options": [],
+      "correct_option_data": "165",
+      "solution_text": "We know that a,b,c,d are odd multiples of 3.\nAn odd multiple of 3 will be of the form 3(2n+1). ‘n’ can take any non-negative value.\nLet a = 3(2k+1), b = 3*(2l+1), c = 3*(2m+1) and d = 3*(2n+1)\nTherefore, we have, \n3(2k+1)+3(2l+1)+3(2m+1)+3(2n+1) = 60.\n2k +1 + 2l + 1 + 2m + 1 + 2n + 1 = 20.\n2k + 2l + 2m + 2n = 16\nk + l + m + n = 8\nNumber of non-negative solutions of this equation is (8+4-1)C4-1 = 11C3 = 165.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\na,b,c and d are 4 positive numbers that add up to 60. If it is known that all of them are odd multiples of 3, the number of solution sets that satisfy the condition is\n\n**Options:**\n\n**Correct Answer:** 165\n\n**Solution:**\nWe know that a,b,c,d are odd multiples of 3.\nAn odd multiple of 3 will be of the form 3(2n+1). ‘n’ can take any non-negative value.\nLet a = 3(2k+1), b = 3*(2l+1), c = 3*(2m+1) and d = 3*(2n+1)\nTherefore, we have, \n3(2k+1)+3(2l+1)+3(2m+1)+3(2n+1) = 60.\n2k +1 + 2l + 1 + 2m + 1 + 2n + 1 = 20.\n2k + 2l + 2m + 2n = 16\nk + l + m + n = 8\nNumber of non-negative solutions of this equation is (8+4-1)C4-1 = 11C3 = 165."
+    },
+    {
+      "qid": "quant-sectionals-40-16",
+      "passage_text": "",
+      "question_text": "A shopkeeper buys the item from a wholesaler and marks up the price by 20%. A customer pays Rs 102 for it after getting a discount of 15%. What is the profit% of wholeseller if he incurred cost of Rs 80 to make the item",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "33.33%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let SP for wholeseller be Rs x. Then CP of shopkeeper = Rs x\nMarked Price for the seller = Rs (1.2)*x\nSelling Price = 1.2*0.85*x = 1.02x\nGiven that 1.02x = 102\nThus x =100\nProfit = 100-80 = Rs 20\nProfit% = $\\frac{20}{80}\\times\\ 100\\%\\ =\\ 25\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper buys the item from a wholesaler and marks up the price by 20%. A customer pays Rs 102 for it after getting a discount of 15%. What is the profit% of wholeseller if he incurred cost of Rs 80 to make the item\n\n**Options:**\n- **A**. 30%\n- **B**. 20%\n- **C**. 33.33%\n- **D**. 25% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet SP for wholeseller be Rs x. Then CP of shopkeeper = Rs x\nMarked Price for the seller = Rs (1.2)*x\nSelling Price = 1.2*0.85*x = 1.02x\nGiven that 1.02x = 102\nThus x =100\nProfit = 100-80 = Rs 20\nProfit% = $\\frac{20}{80}\\times\\ 100\\%\\ =\\ 25\\%$"
+    },
+    {
+      "qid": "quant-sectionals-40-17",
+      "passage_text": "",
+      "question_text": "Consider the following figure. It consists of an isosceles right angled triangle, around which a circle is circumscribed, the same circle is also the incircle of the outermost equilateral triangle. Find the ratio of areas of the inner triangle to the outer triangle.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{4}{15}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{3}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{4}{9}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{3\\sqrt{\\ 3}}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume that each side of the outermost triangle = a.\nSince the circle is the incircle of the triangle, the radius = Inradius of the triangle = $\\frac{a}{2\\sqrt{\\ 3}}$. [Since, inradius of an equilateral triangle of side a is $\\frac{a}{2\\sqrt{\\ 3}}$]\nThe hypotenuse of the inner right-angled isosceles triangle is equal to the diameter of the circle, since it is circumscribing it.\nLet the hypotenuse be of length h.\nTherefore h = 2 x  Radius of circle = $\\frac{2a}{2\\sqrt{\\ 3}}$ = $\\frac{a}{\\sqrt{\\ 3}}$\nSince it is an isosceles right angled triangle, let base and perpendicular both be equal to p.\n$\\therefore\\ p^2+p^2=\\left(\\frac{a}{\\sqrt{\\ 3}}\\right)^2$\n$\\therefore\\ 2p^2=\\frac{a^2}{3}\\ \\longrightarrow\\ p^2=\\frac{a^2}{6}$\nArea of the inner triangle = \n$\\frac{1}{2}\\times\\ base\\times\\ height=\\ \\frac{1}{2}p^2=\\frac{a^2}{12}\\ $\nArea of the outermost equilateral triangle = $\\frac{\\sqrt{\\ 3}}{4}side^2=\\frac{\\sqrt{\\ 3}}{4}a^2$\nTherefore, ratio of areas = $\\frac{\\frac{a^2}{12}\\ }{\\frac{\\sqrt{\\ 3}}{4}a^2}=\\frac{1}{12}\\times\\ \\frac{4}{\\sqrt{\\ 3}}=\\frac{1}{3\\sqrt{\\ 3}}$",
+      "image_url": "https://cracku.in/media/uploads/image_8x9Ix76.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider the following figure. It consists of an isosceles right angled triangle, around which a circle is circumscribed, the same circle is also the incircle of the outermost equilateral triangle. Find the ratio of areas of the inner triangle to the outer triangle.\n\n**Options:**\n- **A**. $\\frac{4}{15}$\n- **B**. $\\frac{3}{16}$\n- **C**. $\\frac{4}{9}$\n- **D**. $\\frac{1}{3\\sqrt{\\ 3}}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that each side of the outermost triangle = a.\nSince the circle is the incircle of the triangle, the radius = Inradius of the triangle = $\\frac{a}{2\\sqrt{\\ 3}}$. [Since, inradius of an equilateral triangle of side a is $\\frac{a}{2\\sqrt{\\ 3}}$]\nThe hypotenuse of the inner right-angled isosceles triangle is equal to the diameter of the circle, since it is circumscribing it.\nLet the hypotenuse be of length h.\nTherefore h = 2 x  Radius of circle = $\\frac{2a}{2\\sqrt{\\ 3}}$ = $\\frac{a}{\\sqrt{\\ 3}}$\nSince it is an isosceles right angled triangle, let base and perpendicular both be equal to p.\n$\\therefore\\ p^2+p^2=\\left(\\frac{a}{\\sqrt{\\ 3}}\\right)^2$\n$\\therefore\\ 2p^2=\\frac{a^2}{3}\\ \\longrightarrow\\ p^2=\\frac{a^2}{6}$\nArea of the inner triangle = \n$\\frac{1}{2}\\times\\ base\\times\\ height=\\ \\frac{1}{2}p^2=\\frac{a^2}{12}\\ $\nArea of the outermost equilateral triangle = $\\frac{\\sqrt{\\ 3}}{4}side^2=\\frac{\\sqrt{\\ 3}}{4}a^2$\nTherefore, ratio of areas = $\\frac{\\frac{a^2}{12}\\ }{\\frac{\\sqrt{\\ 3}}{4}a^2}=\\frac{1}{12}\\times\\ \\frac{4}{\\sqrt{\\ 3}}=\\frac{1}{3\\sqrt{\\ 3}}$"
+    },
+    {
+      "qid": "quant-sectionals-40-18",
+      "passage_text": "",
+      "question_text": "A sheep is left to graze in a farm which is of dimension 6m x 15m. If it is tied to the center of the field and the length of the rope to which it is tied is 6m, What is the ungrazed area in the farm?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "120- 12$\\pi$ - 9$\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "90- 12$\\pi$ - 3$\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90- 12$\\pi$ - 18$\\sqrt{\\ 3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "90- 9$\\pi$ - 9$\\sqrt{\\ 3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Area of the rectangular field= 6*15= 90 m$^2$\nWe can make the following diagram:\nArea where sheep can graze = $\\pi r^2\\ $- Area outside the farm.\nThe area outside the field= 2* [(120/360) $\\pi r^2\\ $- Area of the traingle ABC]\n= 2{ 1/3  $\\pi r^2\\ $- 1/2 (6$\\sqrt{\\ 3}$)(3)}\n=2/3 $\\pi r^2\\ $-18$\\sqrt{\\ 3}$\nArea where sheep can graze = $\\pi r^2\\ $- 2/3 $\\pi r^2\\ $ + 18$\\sqrt{\\ 3}$\n=1/3 $\\pi r^2\\ $ + 18$\\sqrt{\\ 3}$\n= 12$\\pi$ + 18$\\sqrt{\\ 3}$\nUngrazed area= 90- 12$\\pi$ - 18$\\sqrt{\\ 3}$\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA sheep is left to graze in a farm which is of dimension 6m x 15m. If it is tied to the center of the field and the length of the rope to which it is tied is 6m, What is the ungrazed area in the farm?\n\n**Options:**\n- **A**. 120- 12$\\pi$ - 9$\\sqrt{\\ 3}$\n- **B**. 90- 12$\\pi$ - 3$\\sqrt{\\ 3}$\n- **C**. 90- 12$\\pi$ - 18$\\sqrt{\\ 3}$ ✅\n- **D**. 90- 9$\\pi$ - 9$\\sqrt{\\ 3}$\n\n**Correct Answer:** null\n\n**Solution:**\nArea of the rectangular field= 6*15= 90 m$^2$\nWe can make the following diagram:\nArea where sheep can graze = $\\pi r^2\\ $- Area outside the farm.\nThe area outside the field= 2* [(120/360) $\\pi r^2\\ $- Area of the traingle ABC]\n= 2{ 1/3  $\\pi r^2\\ $- 1/2 (6$\\sqrt{\\ 3}$)(3)}\n=2/3 $\\pi r^2\\ $-18$\\sqrt{\\ 3}$\nArea where sheep can graze = $\\pi r^2\\ $- 2/3 $\\pi r^2\\ $ + 18$\\sqrt{\\ 3}$\n=1/3 $\\pi r^2\\ $ + 18$\\sqrt{\\ 3}$\n= 12$\\pi$ + 18$\\sqrt{\\ 3}$\nUngrazed area= 90- 12$\\pi$ - 18$\\sqrt{\\ 3}$\nOption C"
+    },
+    {
+      "qid": "quant-sectionals-40-19",
+      "passage_text": "",
+      "question_text": "If $log_742 = a$ , $log_730 = b$ and $log_728 = c$. What is value of $\\log_{420}21$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{2a+c+1}{b-c+1}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{2a-c+1}{2b+c+1}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{2a-c-1}{b+c+1}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{2a-c-1}{2b-c+1}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\log_{420}21=\\frac{\\log_721}{\\log_7420}$\n$\\implies$ $\\frac{\\log_721}{\\log_7420}=\\frac{1+\\log_73}{\\log_7\\left(2^2\\times\\ 3\\times\\ 5\\times\\ 7\\right)}$\n$\\implies$ $\\frac{\\log_721}{\\log_7420}\\ =\\frac{1+\\log_73}{2\\log_72\\ +\\log_73+\\ \\log_75+1}$ ...(I)\nNow we are given that \n$log_742 = a$, Thus $ 1 + log_72 + log_73 = a$ .....(II)\n$log_730 = b$, Thus $log_72 + log_73 +log_75 = b$ ...(III)\n$log_728 = c$, Thus, $ 1 + 2 log_72 = c$  $ log_72 = \\frac{c-1}{2}$.(IV)\nPutting value of $log_72$ from (IV) to (II) \n$1+\\ \\frac{c-1}{2}+\\log_73\\ =\\ a$\n$\\log_73\\ =\\ \\frac{2a-c-1}{2}$...(V)\nPutting (III),(IV)and(V) in (I) we get\n$\\frac{\\log_721}{\\log_7420}\\ =\\frac{1+\\log_73}{2\\log_72\\ +\\log_73+\\ \\log_75+1}$  = $\\frac{1+\\frac{2a-c-1}{2}}{\\frac{c-1}{2}+b+1}$\nMulltiplying and dividing by 2\n$\\frac{\\log_721}{\\log_7420}\\ $ = $\\frac{2a-c+1}{2b+c+1}$\n$\\log_{420}21$ = $\\frac{2a-c+1}{2b+c+1}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf $log_742 = a$ , $log_730 = b$ and $log_728 = c$. What is value of $\\log_{420}21$\n\n**Options:**\n- **A**. $\\frac{2a+c+1}{b-c+1}$\n- **B**. $\\frac{2a-c+1}{2b+c+1}$ ✅\n- **C**. $\\frac{2a-c-1}{b+c+1}$\n- **D**. $\\frac{2a-c-1}{2b-c+1}$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log_{420}21=\\frac{\\log_721}{\\log_7420}$\n$\\implies$ $\\frac{\\log_721}{\\log_7420}=\\frac{1+\\log_73}{\\log_7\\left(2^2\\times\\ 3\\times\\ 5\\times\\ 7\\right)}$\n$\\implies$ $\\frac{\\log_721}{\\log_7420}\\ =\\frac{1+\\log_73}{2\\log_72\\ +\\log_73+\\ \\log_75+1}$ ...(I)\nNow we are given that \n$log_742 = a$, Thus $ 1 + log_72 + log_73 = a$ .....(II)\n$log_730 = b$, Thus $log_72 + log_73 +log_75 = b$ ...(III)\n$log_728 = c$, Thus, $ 1 + 2 log_72 = c$  $ log_72 = \\frac{c-1}{2}$.(IV)\nPutting value of $log_72$ from (IV) to (II) \n$1+\\ \\frac{c-1}{2}+\\log_73\\ =\\ a$\n$\\log_73\\ =\\ \\frac{2a-c-1}{2}$...(V)\nPutting (III),(IV)and(V) in (I) we get\n$\\frac{\\log_721}{\\log_7420}\\ =\\frac{1+\\log_73}{2\\log_72\\ +\\log_73+\\ \\log_75+1}$  = $\\frac{1+\\frac{2a-c-1}{2}}{\\frac{c-1}{2}+b+1}$\nMulltiplying and dividing by 2\n$\\frac{\\log_721}{\\log_7420}\\ $ = $\\frac{2a-c+1}{2b+c+1}$\n$\\log_{420}21$ = $\\frac{2a-c+1}{2b+c+1}$"
+    },
+    {
+      "qid": "quant-sectionals-40-20",
+      "passage_text": "",
+      "question_text": "The average marks of 5 students of a class is 57. The average marks of the top 3 students is 75. If the marks of the bottom 3 students are increased by 10, 4 and 9 in any order, the average of those 3 students increases by 25%. What was the third highest marks originally obtained?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "37",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "45",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The sum of marks of all the students = 57*5 = 285\nThe sum of marks of top 3 students = 75*3=225\nIf the average increases by 25%, the sum of marks will also increase by 25%.\nThe increase in sum of the marks of bottom 3 students= 25% of x =  (10+4+9) = 23  where x is the sum of marks of bottom 3 students.\n=> 25x/100=23   => x=92\nThe third highest marks = Sum of top 3 marks+ Sum of bottom 3 marks - Sum marks of all students = 225+92-285= 32",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe average marks of 5 students of a class is 57. The average marks of the top 3 students is 75. If the marks of the bottom 3 students are increased by 10, 4 and 9 in any order, the average of those 3 students increases by 25%. What was the third highest marks originally obtained?\n\n**Options:**\n- **A**. 37\n- **B**. 28\n- **C**. 32 ✅\n- **D**. 45\n\n**Correct Answer:** null\n\n**Solution:**\nThe sum of marks of all the students = 57*5 = 285\nThe sum of marks of top 3 students = 75*3=225\nIf the average increases by 25%, the sum of marks will also increase by 25%.\nThe increase in sum of the marks of bottom 3 students= 25% of x =  (10+4+9) = 23  where x is the sum of marks of bottom 3 students.\n=> 25x/100=23   => x=92\nThe third highest marks = Sum of top 3 marks+ Sum of bottom 3 marks - Sum marks of all students = 225+92-285= 32"
+    },
+    {
+      "qid": "quant-sectionals-40-21",
+      "passage_text": "",
+      "question_text": "If the difference between the simple interest and compound interest of the same rate of interest in the 2nd year is 625rupees. Find the percentage of rate of interest if the principle is 160000.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6.25%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8.25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "82.5%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Difference between S.I and C.I in 2nd year is $p\\cdot\\frac{r^2}{100}$.\ngiven, $p\\cdot\\frac{r^2}{100}$= 625 => $r^2=\\frac{625}{160000}=\\left(\\frac{25}{400}\\right)^2$.\n=> r=25/400.\nRate of interest=$\\frac{25}{400}\\cdot100=\\frac{25}{4}=6.25\\%^{ }$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the difference between the simple interest and compound interest of the same rate of interest in the 2nd year is 625rupees. Find the percentage of rate of interest if the principle is 160000.\n\n**Options:**\n- **A**. 6.25% ✅\n- **B**. 12%\n- **C**. 8.25%\n- **D**. 82.5%\n\n**Correct Answer:** null\n\n**Solution:**\nDifference between S.I and C.I in 2nd year is $p\\cdot\\frac{r^2}{100}$.\ngiven, $p\\cdot\\frac{r^2}{100}$= 625 => $r^2=\\frac{625}{160000}=\\left(\\frac{25}{400}\\right)^2$.\n=> r=25/400.\nRate of interest=$\\frac{25}{400}\\cdot100=\\frac{25}{4}=6.25\\%^{ }$"
+    },
+    {
+      "qid": "quant-sectionals-40-22",
+      "passage_text": "",
+      "question_text": "In an empty beer barrel of 25 litres there are two inlet pipes A and B. Pipe A will fill water in the barrel and Pipe B will fill alcohol solution of 80% concentration into the barrel. Pipe A and B can fill the barrel in 10 and 5 seconds respectively. How many seconds after pipe A is opened, should Pipe B be opened in order to make a beer barrel with 10% concentration?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "65/8 sec",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "32/8 sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10/3 sec",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2/3 sec",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Final volume of alcohol in the barrel = 10%of 25= 2.5l\nFlow in pipe A = 25/10=2.5 l /sec \nFlow in pipe B = 25/5= 5 l /sec \nAmount of Alcohol flow from pipe B= 80% of the flow=0.8x5=4 l /sec\nTime for which Pipe B will work= 2.5 liters / 4 liters per sec= 5/8 sec\nSuppose Pipe A will work for t sec.\nFlow of water from Pipe A + Flow of solution from Pipe B=Volume of a barrel\n2.5t + 5x5/8= 25 lt\nt=70/8sec\nSo pipe A will start after 70/8-5/8 sec=65/8 sec.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn an empty beer barrel of 25 litres there are two inlet pipes A and B. Pipe A will fill water in the barrel and Pipe B will fill alcohol solution of 80% concentration into the barrel. Pipe A and B can fill the barrel in 10 and 5 seconds respectively. How many seconds after pipe A is opened, should Pipe B be opened in order to make a beer barrel with 10% concentration?\n\n**Options:**\n- **A**. 65/8 sec ✅\n- **B**. 32/8 sec\n- **C**. 10/3 sec\n- **D**. 2/3 sec\n\n**Correct Answer:** null\n\n**Solution:**\nFinal volume of alcohol in the barrel = 10%of 25= 2.5l\nFlow in pipe A = 25/10=2.5 l /sec \nFlow in pipe B = 25/5= 5 l /sec \nAmount of Alcohol flow from pipe B= 80% of the flow=0.8x5=4 l /sec\nTime for which Pipe B will work= 2.5 liters / 4 liters per sec= 5/8 sec\nSuppose Pipe A will work for t sec.\nFlow of water from Pipe A + Flow of solution from Pipe B=Volume of a barrel\n2.5t + 5x5/8= 25 lt\nt=70/8sec\nSo pipe A will start after 70/8-5/8 sec=65/8 sec."
+    }
+  ]
+}

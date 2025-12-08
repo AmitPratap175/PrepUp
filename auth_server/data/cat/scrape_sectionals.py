@@ -415,18 +415,18 @@ if __name__ == "__main__":
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
         for url_curr in urls_raw:
-            # if "quant" in url_curr:
-            type_curr = "quants"
-            # urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
-            urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(47, 69)]
-            urls.insert(0, urls[0])
+            if "quant" in url_curr:
+                type_curr = "quants"
+                # urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+                urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 23)]
+                urls.insert(0, urls[0])
 
-            # Step 2: Crawl the web pages to get HTML content.
-            categorized_html = asyncio.run(test_news_crawl(urls))
-            print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
-            
-            # Step 3: Pass the crawled data to the main processing function.
-            main(categorized_html, type_curr)
+                # Step 2: Crawl the web pages to get HTML content.
+                categorized_html = asyncio.run(test_news_crawl(urls))
+                print(f"Crawled {len(categorized_html['quant'])+len(categorized_html['verbal'])+len(categorized_html['reasoning'])} pages successfully.")
+                
+                # Step 3: Pass the crawled data to the main processing function.
+                main(categorized_html, type_curr)
     print("---" + " Running qid cleaning script ---")
     script_dir = Path(__file__).parent
     project_root = script_dir.parent.parent.parent

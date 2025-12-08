@@ -78,6 +78,20 @@ class MemStorage:
         self.courses[cat_course["id"]] = cat_course
         self.courses[gate_course["id"]] = gate_course
 
+        xat_course = {
+            "id": str(uuid.uuid4()),
+            "title": "XAT Preparation Course",
+            "description": "Complete preparation for Xavier Aptitude Test with decision making, quantitative aptitude, and verbal ability.",
+            "examType": "xat",
+            "duration": "6 months comprehensive program",
+            "price": 16999,
+            "originalPrice": 26999,
+            "features": ["150+ practice tests", "Decision Making special focus", "Essay writing evaluation", "Mock interviews"],
+            "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+            "isPopular": False
+        }
+        self.courses[xat_course["id"]] = xat_course
+
         # Seed study materials
         materials = [
             {
@@ -177,6 +191,34 @@ class MemStorage:
                 "subject": "Vocabulary",
                 "duration": 120,
                 "filePath": "data/cat/docs/vocab.json"
+            },
+            {
+                "title": "XAT Quantitative Aptitude Test",
+                "examType": "xat",
+                "subject": "Quantitative Aptitude",
+                "duration": 90,
+                "filePath": "data/xat/quant.json"
+            },
+            {
+                "title": "XAT Verbal & Logical Reasoning Test",
+                "examType": "xat",
+                "subject": "Verbal & Logical Reasoning",
+                "duration": 60,
+                "filePath": "data/xat/valr.json"
+            },
+            {
+                "title": "XAT Decision Making Test",
+                "examType": "xat",
+                "subject": "Decision Making",
+                "duration": 60,
+                "filePath": "data/xat/decision_making.json"
+            },
+            {
+                "title": "XAT Essay Writing",
+                "examType": "xat",
+                "subject": "Essay",
+                "duration": 30,
+                "filePath": "data/xat/essay.json"
             }
         ]
 

@@ -1,0 +1,599 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-37-1",
+      "passage_text": "",
+      "question_text": "Area of a trapezium ABCD, where AB and CD are parallel sides is 256 sq.cm The length of BC is 15 cm. The midpoints of all the sides are joined to form a quadrilateral. Again, the midpoints of the new quadrilateral are joined to form a new quadrilateral. This process of joining the midpoints is done a total of 9 times. The sum of the areas of all the quadrilaterals is A. What is the value of 4A?",
+      "options": [],
+      "correct_option_data": "2046",
+      "solution_text": "When the midpoints of a quadrilateral are joined, we get a new quadrilateral whose area is half the area of the original quadrilateral. (Varignon parallelogram)\nWhen the process is repeated 9 times, we get 10 quadrilaterals whose area gets reduced by 2 successively. \nThus, it forms a decreasing GP.\nThe sum of all terms = $ 256 * \\frac{1 - (\\frac{1}{2^{10}})}{1 - (\\frac{1}{2})}$\n= $\\frac{1023}{2} $\nThe value of 4A = 2046",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nArea of a trapezium ABCD, where AB and CD are parallel sides is 256 sq.cm The length of BC is 15 cm. The midpoints of all the sides are joined to form a quadrilateral. Again, the midpoints of the new quadrilateral are joined to form a new quadrilateral. This process of joining the midpoints is done a total of 9 times. The sum of the areas of all the quadrilaterals is A. What is the value of 4A?\n\n**Options:**\n\n**Correct Answer:** 2046\n\n**Solution:**\nWhen the midpoints of a quadrilateral are joined, we get a new quadrilateral whose area is half the area of the original quadrilateral. (Varignon parallelogram)\nWhen the process is repeated 9 times, we get 10 quadrilaterals whose area gets reduced by 2 successively. \nThus, it forms a decreasing GP.\nThe sum of all terms = $ 256 * \\frac{1 - (\\frac{1}{2^{10}})}{1 - (\\frac{1}{2})}$\n= $\\frac{1023}{2} $\nThe value of 4A = 2046"
+    },
+    {
+      "qid": "quant-sectionals-37-2",
+      "passage_text": "",
+      "question_text": "A row contains 16 seats. The number of ways in which 5 seats can be chosen such that no 2 seats are adjacent to each other is",
+      "options": [],
+      "correct_option_data": "792",
+      "solution_text": "We know that no 2 seats are adjacent to each other. \nLet us place the 5 seats and then distribute the empty seats between them. \nOnce we choose the 5 seats, we have to ensure that no 2 seats are adjacent to each other.\nThere will be 4 gaps between the 5 seats. \nLet us distribute 4 empty seats between them.\nSo, out of the 16 seats, we have accounted for 9 seats. \nThe remaining 16-9 = 7 empty seats must be distributed now. \nThere are 6 spaces available in total. We have to distribute these 7 seats in these 6 spaces. \nLet 'a' be the number of empty seats to the left of the first seat, 'b' be the number of empty seats (excluding the one we already distributed) between the first and second chair and so on. \nWe know that a+b+c+d+e+f = 7.\nThe number of non-negative integral solutions of this equation is given by $(7+6-1)C_{6-1}$ = $12C_{5}$ = $792$.\nTherefore, $792$ is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA row contains 16 seats. The number of ways in which 5 seats can be chosen such that no 2 seats are adjacent to each other is\n\n**Options:**\n\n**Correct Answer:** 792\n\n**Solution:**\nWe know that no 2 seats are adjacent to each other. \nLet us place the 5 seats and then distribute the empty seats between them. \nOnce we choose the 5 seats, we have to ensure that no 2 seats are adjacent to each other.\nThere will be 4 gaps between the 5 seats. \nLet us distribute 4 empty seats between them.\nSo, out of the 16 seats, we have accounted for 9 seats. \nThe remaining 16-9 = 7 empty seats must be distributed now. \nThere are 6 spaces available in total. We have to distribute these 7 seats in these 6 spaces. \nLet 'a' be the number of empty seats to the left of the first seat, 'b' be the number of empty seats (excluding the one we already distributed) between the first and second chair and so on. \nWe know that a+b+c+d+e+f = 7.\nThe number of non-negative integral solutions of this equation is given by $(7+6-1)C_{6-1}$ = $12C_{5}$ = $792$.\nTherefore, $792$ is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-37-3",
+      "passage_text": "",
+      "question_text": "If x =$\\sqrt{2}-1$, find the value of $x^4+4x^3+6x^2+4x+8$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "x =$\\sqrt{2}-1$\nx+1 =$\\sqrt{2}$\n$(x+1)^4 = 4$\n$x^4+4x^3+6x^2+4x+1$ = 4\n$x^4+4x^3+6x^2+4x+8$ = 4+7 = 11",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x =$\\sqrt{2}-1$, find the value of $x^4+4x^3+6x^2+4x+8$.\n\n**Options:**\n- **A**. 9\n- **B**. 10\n- **C**. 11 ✅\n- **D**. 12\n\n**Correct Answer:** null\n\n**Solution:**\nx =$\\sqrt{2}-1$\nx+1 =$\\sqrt{2}$\n$(x+1)^4 = 4$\n$x^4+4x^3+6x^2+4x+1$ = 4\n$x^4+4x^3+6x^2+4x+8$ = 4+7 = 11"
+    },
+    {
+      "qid": "quant-sectionals-37-4",
+      "passage_text": "",
+      "question_text": "A cone exists such that its height \"h\" is three times its diameter and has a lateral surface area of X. A cone and frustum are obtained by cutting the cone parallel to its base at a height of 2h/3 and Y is the total lateral surface area of these two solids. Let 'a' be the percentage change in the value of Y w.r.t X. Then what can be said about 'a'.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "25% < a <37.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10% < a < 25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5% < a < 10%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "a < 5%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "On cutting the cone, the total surface area will increase but Lateral surface area will remain the same. Hence a = 0%.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cone exists such that its height \"h\" is three times its diameter and has a lateral surface area of X. A cone and frustum are obtained by cutting the cone parallel to its base at a height of 2h/3 and Y is the total lateral surface area of these two solids. Let 'a' be the percentage change in the value of Y w.r.t X. Then what can be said about 'a'.\n\n**Options:**\n- **A**. 25% < a <37.5%\n- **B**. 10% < a < 25%\n- **C**. 5% < a < 10%\n- **D**. a < 5% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nOn cutting the cone, the total surface area will increase but Lateral surface area will remain the same. Hence a = 0%."
+    },
+    {
+      "qid": "quant-sectionals-37-5",
+      "passage_text": "",
+      "question_text": "If the $n^{th}$ term of a series is given by  $t_{n}=[3^{n}]^{\\dfrac{1}{2^{n}}}$ , then find the product of infinite terms of the series.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$3\\sqrt{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given,\n$t_n=\\left[{3^{n}}\\right]^\\frac{1}{2^n}$ \n=> $t_n=3^\\frac{n}{2^n}$\n$\\prod_{n=1}^\\infty t_n=t_1*t_2*t_3*....*t_\\infty$\n= $3^\\frac{1}{2}*3^\\frac{2}{2^2}*3^\\frac{3}{2^3}...$\n= $3^{\\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}}....$\nLet, $S_n = \\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}.....$\n=> $S_n= x+{2x}^2+{3x}^3+...$ ______(1)     where $x=\\frac{1}{2}$\nMultiplying $x$ to equation (1) \n=> $x*S_n= x^2+{2x}^3+{3x}^4+...$ _____(2)\nOn subtracting equation (2) from (1) we have\n$(1-x)S_n=x+x^2+x^3+...$\n=> $(1-x)S_n=\\frac{x}{1-x}$\n=>$S_n=\\frac{x}{{(1-x)}^2}$\nOn substituting $x=\\frac{1}{2}$ we get\n$S_n=2$\n$\\therefore \\prod_{n=1}^\\infty t_n=3^2 = 9$\nHence, option B is the correct choice.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the $n^{th}$ term of a series is given by  $t_{n}=[3^{n}]^{\\dfrac{1}{2^{n}}}$ , then find the product of infinite terms of the series.\n\n**Options:**\n- **A**. 1\n- **B**. 9 ✅\n- **C**. 27\n- **D**. $3\\sqrt{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven,\n$t_n=\\left[{3^{n}}\\right]^\\frac{1}{2^n}$ \n=> $t_n=3^\\frac{n}{2^n}$\n$\\prod_{n=1}^\\infty t_n=t_1*t_2*t_3*....*t_\\infty$\n= $3^\\frac{1}{2}*3^\\frac{2}{2^2}*3^\\frac{3}{2^3}...$\n= $3^{\\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}}....$\nLet, $S_n = \\frac{1}{2}+\\frac{2}{2^2}+\\frac{3}{2^3}.....$\n=> $S_n= x+{2x}^2+{3x}^3+...$ ______(1)     where $x=\\frac{1}{2}$\nMultiplying $x$ to equation (1) \n=> $x*S_n= x^2+{2x}^3+{3x}^4+...$ _____(2)\nOn subtracting equation (2) from (1) we have\n$(1-x)S_n=x+x^2+x^3+...$\n=> $(1-x)S_n=\\frac{x}{1-x}$\n=>$S_n=\\frac{x}{{(1-x)}^2}$\nOn substituting $x=\\frac{1}{2}$ we get\n$S_n=2$\n$\\therefore \\prod_{n=1}^\\infty t_n=3^2 = 9$\nHence, option B is the correct choice."
+    },
+    {
+      "qid": "quant-sectionals-37-6",
+      "passage_text": "",
+      "question_text": "The water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. What is the weight of the water content that got evaporated(in grams)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. \n100g of grapes contains 1g grape solid and 99 g water.\nWater content reduced to 98%, thus the remaining 2 percent must be grape solid.\n2% grape solid= 1g \nThus the total weight of the dried grapes=X\n(2/100)*X= 1g\nX=50g\nThus the water content reduced from 99g till 49 g= 50g",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. What is the weight of the water content that got evaporated(in grams)?\n\n**Options:**\n- **A**. 2.5\n- **B**. 1\n- **C**. 25\n- **D**. 50 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe water percentage in 100 grams Muscat grapes was 99%, if the grapes are dried and the water content reduced to 98%. \n100g of grapes contains 1g grape solid and 99 g water.\nWater content reduced to 98%, thus the remaining 2 percent must be grape solid.\n2% grape solid= 1g \nThus the total weight of the dried grapes=X\n(2/100)*X= 1g\nX=50g\nThus the water content reduced from 99g till 49 g= 50g"
+    },
+    {
+      "qid": "quant-sectionals-37-7",
+      "passage_text": "",
+      "question_text": "Ram bought 1.5 ton AC of Samsui at Rs. 20,000.The AC has 1- year free maintenance and an offer at the time of purchasing to extend the maintenance for 2 more years by paying an additional amount of Rs.1470. It is known that the given model of Sansui Ac’s have a maintenance rate of 2.5% of cost the first year, with the maintenance rate increasing at 50% every year. How much gain or loss would Ram have on maintenance cost if he took the offer?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "33.33% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27.55% gain",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "33.3% gain",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The maintenance at the end of 1st year = 2.5% of 20,000=500\nMaintenance at the end of 2nd year = 500 + 50%(500) = 750\nMaintenance at the end of 3rd year = 1125\nThus, the total maintenance cost(excluding year 1) = 750 + 1125 = 1875\n∴the gain% of Ram = $\\frac{1875-1470}{1470}\\times100$% $\\approx 27.55$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam bought 1.5 ton AC of Samsui at Rs. 20,000.The AC has 1- year free maintenance and an offer at the time of purchasing to extend the maintenance for 2 more years by paying an additional amount of Rs.1470. It is known that the given model of Sansui Ac’s have a maintenance rate of 2.5% of cost the first year, with the maintenance rate increasing at 50% every year. How much gain or loss would Ram have on maintenance cost if he took the offer?\n\n**Options:**\n- **A**. 20% loss\n- **B**. 33.33% loss\n- **C**. 27.55% gain ✅\n- **D**. 33.3% gain\n\n**Correct Answer:** null\n\n**Solution:**\nThe maintenance at the end of 1st year = 2.5% of 20,000=500\nMaintenance at the end of 2nd year = 500 + 50%(500) = 750\nMaintenance at the end of 3rd year = 1125\nThus, the total maintenance cost(excluding year 1) = 750 + 1125 = 1875\n∴the gain% of Ram = $\\frac{1875-1470}{1470}\\times100$% $\\approx 27.55$%"
+    },
+    {
+      "qid": "quant-sectionals-37-8",
+      "passage_text": "",
+      "question_text": "Rinesh dropped a ball from a height of 360m. Each time the ball hits the ground it rebounds to 60% of the height from where it fell. Find the total distance(in metres) travelled by the ball before coming to rest.",
+      "options": [],
+      "correct_option_data": "1440",
+      "solution_text": "Total distance travelled by the ball = 360+360*0.6+360*0.6+360*0.6*0.6+360*0.6*0.6............................$\\infty$\n= 360+360*0.6*2+360*0.6*0.6*2 .................. $\\infty$\n= 360+2[360*0.6+360*0.6*0.6 ...............................$\\infty$]\n= 360+2[$360*0.6^1+360*0.6^2 ...............................\\infty$]\n= 360+2*$\\frac{360*0.6}{1-0.6}$\n= 360+2*$\\frac{360*0.6}{0.4}$\n= 1440m",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRinesh dropped a ball from a height of 360m. Each time the ball hits the ground it rebounds to 60% of the height from where it fell. Find the total distance(in metres) travelled by the ball before coming to rest.\n\n**Options:**\n\n**Correct Answer:** 1440\n\n**Solution:**\nTotal distance travelled by the ball = 360+360*0.6+360*0.6+360*0.6*0.6+360*0.6*0.6............................$\\infty$\n= 360+360*0.6*2+360*0.6*0.6*2 .................. $\\infty$\n= 360+2[360*0.6+360*0.6*0.6 ...............................$\\infty$]\n= 360+2[$360*0.6^1+360*0.6^2 ...............................\\infty$]\n= 360+2*$\\frac{360*0.6}{1-0.6}$\n= 360+2*$\\frac{360*0.6}{0.4}$\n= 1440m"
+    },
+    {
+      "qid": "quant-sectionals-37-9",
+      "passage_text": "",
+      "question_text": "A certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2 => $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$ => $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?\n\n**Options:**\n- **A**. 15 years\n- **B**. 20 years ✅\n- **C**. 25 years\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2 => $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$ => $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years"
+    },
+    {
+      "qid": "quant-sectionals-37-10",
+      "passage_text": "",
+      "question_text": "ABC is an equilateral triangle of side 8 cm. PQRS is a square as shown in the figure. Find the length of the side of the square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$8\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$8$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{8}{2+\\sqrt{3}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{8\\sqrt{3}}{2+\\sqrt{3}}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the side of the square be equal to a.\nSo, PQ = QR = RS = PS = a\nAQR is an equilateral triangle as QR is parallel to BC. Therefore, the length of AQ = AR = a\nIn triangle PBQ, as angle B is 60 degrees, the length of BQ = a/sin 60 = $\\frac{2}{\\sqrt{3}}a$\nTherefore, AB = AQ + BQ = $a+\\frac{2}{\\sqrt{3}}a = 8$\nOr, $a = \\frac{8\\sqrt{3}}{2+\\sqrt{3}}$",
+      "image_url": "https://cracku.in/media/uploads/text4170_31Ckgid.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABC is an equilateral triangle of side 8 cm. PQRS is a square as shown in the figure. Find the length of the side of the square?\n\n**Options:**\n- **A**. $8\\sqrt{3}$\n- **B**. $8$\n- **C**. $\\frac{8}{2+\\sqrt{3}}$\n- **D**. $\\frac{8\\sqrt{3}}{2+\\sqrt{3}}$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the side of the square be equal to a.\nSo, PQ = QR = RS = PS = a\nAQR is an equilateral triangle as QR is parallel to BC. Therefore, the length of AQ = AR = a\nIn triangle PBQ, as angle B is 60 degrees, the length of BQ = a/sin 60 = $\\frac{2}{\\sqrt{3}}a$\nTherefore, AB = AQ + BQ = $a+\\frac{2}{\\sqrt{3}}a = 8$\nOr, $a = \\frac{8\\sqrt{3}}{2+\\sqrt{3}}$"
+    },
+    {
+      "qid": "quant-sectionals-37-11",
+      "passage_text": "",
+      "question_text": "Dinesh picks a three digit number. If it is known that the number picked by Dinesh is even, what is the probability (as a percentage) of the sum of the digits being an odd number?",
+      "options": [],
+      "correct_option_data": "50",
+      "solution_text": "We know that Dinesh has picked an even number.\nTherefore, the last digit should be one among 2, 4, 6, 8, and 0. \nWe have to find the probability of the sum of the digits being an odd number. \nFor the sum of the digits to be odd, the sum of the remaining 2 digits (since the last digit is even) should be odd. Also, since it has been given that Dinesh picks a 3 digit number, the first digit cannot be zero. \nThe first digit can be odd and the second digit can be even. This can happen in 5*5 = 25 ways. \nThe first digit can be even and the second digit can be odd. Since the first digit cannot be 0, four even numbers 2, 4, 6, or 8 can be the first digit. The first digit can be even and the second digit can be odd in 4*5 = 20 ways. \nThe third digit (last one) can be any of the five even numbers. \nTherefore, the total number of ways in which the sum of the digits of an even 3 digit number can be odd = (25+20)*5 = 45*5 = 225.\nTotal number of even 3 digit numbers = 9*10*5 = 450.\n=> The required probability is 225/450 = 50%.\nTherefore, 50 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nDinesh picks a three digit number. If it is known that the number picked by Dinesh is even, what is the probability (as a percentage) of the sum of the digits being an odd number?\n\n**Options:**\n\n**Correct Answer:** 50\n\n**Solution:**\nWe know that Dinesh has picked an even number.\nTherefore, the last digit should be one among 2, 4, 6, 8, and 0. \nWe have to find the probability of the sum of the digits being an odd number. \nFor the sum of the digits to be odd, the sum of the remaining 2 digits (since the last digit is even) should be odd. Also, since it has been given that Dinesh picks a 3 digit number, the first digit cannot be zero. \nThe first digit can be odd and the second digit can be even. This can happen in 5*5 = 25 ways. \nThe first digit can be even and the second digit can be odd. Since the first digit cannot be 0, four even numbers 2, 4, 6, or 8 can be the first digit. The first digit can be even and the second digit can be odd in 4*5 = 20 ways. \nThe third digit (last one) can be any of the five even numbers. \nTherefore, the total number of ways in which the sum of the digits of an even 3 digit number can be odd = (25+20)*5 = 45*5 = 225.\nTotal number of even 3 digit numbers = 9*10*5 = 450.\n=> The required probability is 225/450 = 50%.\nTherefore, 50 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-37-12",
+      "passage_text": "",
+      "question_text": "In a tank of 100 litres two advance-pipes A and B are fitted. A is an inlet pipe while B is an outlet pipe. In the advance-pipes flow of water is different every hour. The flow of water in the pipe A in the nth hour is (1+n) litres/hr, while the flow of water in the pipe B in the nth hour is (17-n) litres/hr. Initially, the tank was completely full and both the pipes were opened. At any point in time, what is the minimum quantity of water(in litres) in the tank?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "44",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The flow of water in pipe A for the first hour=1+1= 2 litres/hour\nThe flow of water in pipe B for the first hour= 17-1 = 16 litres/hour.\nNet flow in the tank = 2-16 = -14 litres/hr*1 hour = -14 litres\nThe flow of water in pipe A for the second hour= 1+2 = 3 litres/hour.\nThe flow of water in pipe B for the sec hour= 17-2 = 15 litres/hour.\nNet flow in the tank = 3-15 = -12 litres\nWe will consider till the net flow is negative.\nNet flow in subsequent hour -14,-12,-10,-8,-6..........\nThus total outflow will be = 14+12+10+8+6+4+2= 2{7x8/2}=56 litres\nThe minimum amount of water left will be 100-56=44 litres",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a tank of 100 litres two advance-pipes A and B are fitted. A is an inlet pipe while B is an outlet pipe. In the advance-pipes flow of water is different every hour. The flow of water in the pipe A in the nth hour is (1+n) litres/hr, while the flow of water in the pipe B in the nth hour is (17-n) litres/hr. Initially, the tank was completely full and both the pipes were opened. At any point in time, what is the minimum quantity of water(in litres) in the tank?\n\n**Options:**\n- **A**. 40\n- **B**. 36\n- **C**. 56\n- **D**. 44 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe flow of water in pipe A for the first hour=1+1= 2 litres/hour\nThe flow of water in pipe B for the first hour= 17-1 = 16 litres/hour.\nNet flow in the tank = 2-16 = -14 litres/hr*1 hour = -14 litres\nThe flow of water in pipe A for the second hour= 1+2 = 3 litres/hour.\nThe flow of water in pipe B for the sec hour= 17-2 = 15 litres/hour.\nNet flow in the tank = 3-15 = -12 litres\nWe will consider till the net flow is negative.\nNet flow in subsequent hour -14,-12,-10,-8,-6..........\nThus total outflow will be = 14+12+10+8+6+4+2= 2{7x8/2}=56 litres\nThe minimum amount of water left will be 100-56=44 litres"
+    },
+    {
+      "qid": "quant-sectionals-37-13",
+      "passage_text": "",
+      "question_text": "If 13x-7y=115 where x,y are positive integers, find the number of values of x given x>y.",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "13x=115+7y = 117+ 7y-2 \n=> x= 9+(7y-2)/13 \nfor y=4, x is an integer. So, (x,y)=(11,4)\nfor next pair of x,y add 7 to x and 13 to y.\nSo, the pairs will be (18,17), (25,30),(32,47)...\nOnly (11,4) and (18,17) satisfy the condition x>y.\nHence, 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf 13x-7y=115 where x,y are positive integers, find the number of values of x given x>y.\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\n13x=115+7y = 117+ 7y-2 \n=> x= 9+(7y-2)/13 \nfor y=4, x is an integer. So, (x,y)=(11,4)\nfor next pair of x,y add 7 to x and 13 to y.\nSo, the pairs will be (18,17), (25,30),(32,47)...\nOnly (11,4) and (18,17) satisfy the condition x>y.\nHence, 2."
+    },
+    {
+      "qid": "quant-sectionals-37-14",
+      "passage_text": "",
+      "question_text": "A piece of work can be done in m days if A works alone, in 2m days if B works alone, in 3m days if C works alone, in 4n days if P works alone and in 8n days if Q works alone. Also, it is known that the time taken to complete the given piece of work is the same if A, B and C work together and if P and Q work together. Find the ratio of m/n.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{44}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{40}{9}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{55}{9}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{11}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A does the work in m days. B does the work in 2m days. C does the work in 3m days.\nHence, in 1 day A does 1/m, B does 1/2m and C does 1/3m of the work.\nHence, in one day, together they complete $\\frac{1}{m}+\\frac{1}{2m}+\\frac{1}{3m}=\\frac{11}{6m}$ part of the work.\nHence, they can complete the entire work in $\\frac{6m}{11}$ days.\nSimilarly, P does the work in 4n days. Q does the work in 8n days.\nHence, in 1 day P does 1/4n and Q does 1/8n of the work.\nHence, in one day, together they complete $\\frac{1}{4n}+\\frac{1}{8n}=\\frac{3}{8n}$ part of the work.\nHence, they can complete the work in $\\frac{8n}{3}$ days.\nSo, according to the question, $\\frac{6m}{11}$ = $\\frac{8n}{3}$\nTherefore, $\\frac{m}{n}=\\frac{44}{9}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA piece of work can be done in m days if A works alone, in 2m days if B works alone, in 3m days if C works alone, in 4n days if P works alone and in 8n days if Q works alone. Also, it is known that the time taken to complete the given piece of work is the same if A, B and C work together and if P and Q work together. Find the ratio of m/n.\n\n**Options:**\n- **A**. $\\frac{44}{9}$ ✅\n- **B**. $\\frac{40}{9}$\n- **C**. $\\frac{55}{9}$\n- **D**. $\\frac{11}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nA does the work in m days. B does the work in 2m days. C does the work in 3m days.\nHence, in 1 day A does 1/m, B does 1/2m and C does 1/3m of the work.\nHence, in one day, together they complete $\\frac{1}{m}+\\frac{1}{2m}+\\frac{1}{3m}=\\frac{11}{6m}$ part of the work.\nHence, they can complete the entire work in $\\frac{6m}{11}$ days.\nSimilarly, P does the work in 4n days. Q does the work in 8n days.\nHence, in 1 day P does 1/4n and Q does 1/8n of the work.\nHence, in one day, together they complete $\\frac{1}{4n}+\\frac{1}{8n}=\\frac{3}{8n}$ part of the work.\nHence, they can complete the work in $\\frac{8n}{3}$ days.\nSo, according to the question, $\\frac{6m}{11}$ = $\\frac{8n}{3}$\nTherefore, $\\frac{m}{n}=\\frac{44}{9}$"
+    },
+    {
+      "qid": "quant-sectionals-37-15",
+      "passage_text": "",
+      "question_text": "The line $x-2y-1=0$ intersects the circle $x^2+y^2+4x-2y=5$ at points M and N. What is the ratio of the perpendicular distance of the circle’s centre from line segment MN to that of the perpendicular distance of the circle’s centre from the line $4x+2y+1=0$ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The center of the circle $x^2+y^2+4x-2y-5=0$ is at $C(-2,1)$. The perpendicular distance of a point (x,y) from any given line of the form $Ax+By+C=0$ is given as: $d=\\frac{\\left | Ax+By+C \\right |}{\\sqrt{A^2+B^2}}$\nHence, the distance of the point from $x-2y-1$ = $\\frac{5}{\\sqrt{5}}$\nSimilarly, the distance of the point from $4x+2y+1$ = $\\frac{5}{2\\sqrt{5}}$\nTherefore, the required ratio = $\\frac{\\frac{5}{\\sqrt{5}}}{\\frac{5}{2\\sqrt{5}}}$ = 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe line $x-2y-1=0$ intersects the circle $x^2+y^2+4x-2y=5$ at points M and N. What is the ratio of the perpendicular distance of the circle’s centre from line segment MN to that of the perpendicular distance of the circle’s centre from the line $4x+2y+1=0$ ?\n\n**Options:**\n- **A**. 2:1 ✅\n- **B**. 5:2\n- **C**. 3:1\n- **D**. 1:1\n\n**Correct Answer:** null\n\n**Solution:**\nThe center of the circle $x^2+y^2+4x-2y-5=0$ is at $C(-2,1)$. The perpendicular distance of a point (x,y) from any given line of the form $Ax+By+C=0$ is given as: $d=\\frac{\\left | Ax+By+C \\right |}{\\sqrt{A^2+B^2}}$\nHence, the distance of the point from $x-2y-1$ = $\\frac{5}{\\sqrt{5}}$\nSimilarly, the distance of the point from $4x+2y+1$ = $\\frac{5}{2\\sqrt{5}}$\nTherefore, the required ratio = $\\frac{\\frac{5}{\\sqrt{5}}}{\\frac{5}{2\\sqrt{5}}}$ = 2."
+    },
+    {
+      "qid": "quant-sectionals-37-16",
+      "passage_text": "",
+      "question_text": "The number of integral solutions of the equation $2^x(4-x) = 2(x+2)$ is",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "$2^x$ > 0\nSo $\\frac{2(x+2)}{4-x}$ > 0\n$(x+2)(4-x)$ > 0\n-2 < x < 4 \nFrom this range of values only x = 0, 1, 2 satisfies the equation.\nHence 3 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe number of integral solutions of the equation $2^x(4-x) = 2(x+2)$ is\n\n**Options:**\n\n**Correct Answer:** 3\n\n**Solution:**\n$2^x$ > 0\nSo $\\frac{2(x+2)}{4-x}$ > 0\n$(x+2)(4-x)$ > 0\n-2 < x < 4 \nFrom this range of values only x = 0, 1, 2 satisfies the equation.\nHence 3 is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-37-17",
+      "passage_text": "",
+      "question_text": "What is the last non zero digit of 101! ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$101!=101\\times\\ 100!$ and the last digit of 101 is 1. So the last digit of 101! will be the same as that of 100!.\nThe value of 10! can be easily calculated, 10!=362800.\n$10!=1 \\times 2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7 \\times 8 \\times 9 \\times 10$ and the last non zero digit is 8.\nAlso, $20!=10!\\times\\ 11\\times\\ 12\\times\\ 13\\times14\\times\\ 15\\times\\ 16\\times\\ 17\\times\\ 18\\times\\ 19\\times\\ 20$.\nWe can see that the last digit in each of the terms in multiplication is the same after 10!, which are 1,2,3,4,5,6,7,8,9,0.\nThus the last non zero digit of 20! will be the same as $8^2$ that is 4, as it consists of 10! and multiplication of digits similar to 10!.\nSimilarly the last non zero digit of  30! will be equal to $8^3$. This is the same as $20!\\times\\ 10!$. So the last digit of 30! is the same as $4\\times\\ 8=32$, that is 2.\nContinuing the pattern, we will see that the last non zero digit of 100! will be the same as $8^{10}$. Since 10 is of the form 4n+2, the last non zero digit will be the same as $8^2$ that is 4. Hence, 4 is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the last non zero digit of 101! ?\n\n**Options:**\n- **A**. 2\n- **B**. 4 ✅\n- **C**. 6\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\n$101!=101\\times\\ 100!$ and the last digit of 101 is 1. So the last digit of 101! will be the same as that of 100!.\nThe value of 10! can be easily calculated, 10!=362800.\n$10!=1 \\times 2 \\times 3 \\times 4 \\times 5 \\times 6 \\times 7 \\times 8 \\times 9 \\times 10$ and the last non zero digit is 8.\nAlso, $20!=10!\\times\\ 11\\times\\ 12\\times\\ 13\\times14\\times\\ 15\\times\\ 16\\times\\ 17\\times\\ 18\\times\\ 19\\times\\ 20$.\nWe can see that the last digit in each of the terms in multiplication is the same after 10!, which are 1,2,3,4,5,6,7,8,9,0.\nThus the last non zero digit of 20! will be the same as $8^2$ that is 4, as it consists of 10! and multiplication of digits similar to 10!.\nSimilarly the last non zero digit of  30! will be equal to $8^3$. This is the same as $20!\\times\\ 10!$. So the last digit of 30! is the same as $4\\times\\ 8=32$, that is 2.\nContinuing the pattern, we will see that the last non zero digit of 100! will be the same as $8^{10}$. Since 10 is of the form 4n+2, the last non zero digit will be the same as $8^2$ that is 4. Hence, 4 is the answer."
+    },
+    {
+      "qid": "quant-sectionals-37-18",
+      "passage_text": "",
+      "question_text": "Three cars A, B and C start from the same point, O, at the same time. A, B and C travel in three different directions such that the lines joining them to O make angles of 120 degrees with each other. After 2 hours, the cars are at the distance 100 km, 60km and 80km respectively from the starting point. What is the distance between a pair of cars which farthest from each other after one hour?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10$\\sqrt{\\ 61}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12$\\sqrt{\\ 61}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10$\\sqrt{\\ 69}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12$\\sqrt{\\ 51}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Three cars A, B and C start from the same point at the same time. A, B and C travel in three different directions such that it makes angle 120 degrees with each other.\nThe third side of the triangle can be calculated from the formula:\n$a^2=\\ b^2+c^2-\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$....(a,b and c are sides of the triangle)\ncos(120)=-0.5\nIn this case, cos ($\\theta\\ $) is negative, thus $a^2=\\ b^2+c^2+\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$ the maximum value of b and c will return the maximum value of a.\nThe distance between A and C will be farthest.\nAfter one hour the distance travelled by A = 50km  and C=40km\nThe distance between A and C=   $A^2=\\ 50^2+40^2-\\ 2\\cdot50\\cdot40\\ \\cos\\left(120\\ \\right)$\n$AC^2$= 4100+ 2(50)(40) (0.5)\n= 6100\nAC= 10$\\sqrt{\\ 61}$\nOption A",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThree cars A, B and C start from the same point, O, at the same time. A, B and C travel in three different directions such that the lines joining them to O make angles of 120 degrees with each other. After 2 hours, the cars are at the distance 100 km, 60km and 80km respectively from the starting point. What is the distance between a pair of cars which farthest from each other after one hour?\n\n**Options:**\n- **A**. 10$\\sqrt{\\ 61}$ ✅\n- **B**. 12$\\sqrt{\\ 61}$\n- **C**. 10$\\sqrt{\\ 69}$\n- **D**. 12$\\sqrt{\\ 51}$\n\n**Correct Answer:** null\n\n**Solution:**\nThree cars A, B and C start from the same point at the same time. A, B and C travel in three different directions such that it makes angle 120 degrees with each other.\nThe third side of the triangle can be calculated from the formula:\n$a^2=\\ b^2+c^2-\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$....(a,b and c are sides of the triangle)\ncos(120)=-0.5\nIn this case, cos ($\\theta\\ $) is negative, thus $a^2=\\ b^2+c^2+\\ 2bc\\ \\cos\\left(\\theta\\ \\right)$ the maximum value of b and c will return the maximum value of a.\nThe distance between A and C will be farthest.\nAfter one hour the distance travelled by A = 50km  and C=40km\nThe distance between A and C=   $A^2=\\ 50^2+40^2-\\ 2\\cdot50\\cdot40\\ \\cos\\left(120\\ \\right)$\n$AC^2$= 4100+ 2(50)(40) (0.5)\n= 6100\nAC= 10$\\sqrt{\\ 61}$\nOption A"
+    },
+    {
+      "qid": "quant-sectionals-37-19",
+      "passage_text": "",
+      "question_text": "A shopkeeper gives 2 shirts free with the purchase of every 5 trousers and 3 trousers free with the purchase of every 8 shirts. Ram purchased 16 shirts and Shyam purchased 25 trousers. The percentage discount obtained by Ram was 20%. What was the percentage discount obtained by Shyam?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "27%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37.5%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost price of 1 shirt and 1 trouser be s and t respectively.\nRam pays for 16 shirts. For 8 shirts there are 3 free trousers. Hence for 16 shirts there will be 6 free trousers.\nSo total cost price if there was no discount = 16 shirts + 6 trousers = 16s+6t\nDiscount  = price of 6 trousers =6t\nDiscount offered to Ram = $\\frac{6t}{16s+6t} = 0.2$, $\\frac{s}{t} = \\frac{3}{2}$\nRam pays for 16 shirts. For 5 trousers there are 2 free shirts. Hence for 25 trousers there will be 10 free trousers.\nSo total cost price if there was no discount = 25 trousers + 10 shirts = 25t+10s\nDiscount  = price of 10 shirts = 10s \nLet the discount offered to Shyam be d%.\nDiscount offered to Shyam =$\\frac{10s}{25t+10s}*100$= d, d =$\\frac{\\frac{30t}{2}}{25t +\\frac{30t}{2}} = \\frac{30*100}{80}= 37.5$%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA shopkeeper gives 2 shirts free with the purchase of every 5 trousers and 3 trousers free with the purchase of every 8 shirts. Ram purchased 16 shirts and Shyam purchased 25 trousers. The percentage discount obtained by Ram was 20%. What was the percentage discount obtained by Shyam?\n\n**Options:**\n- **A**. 40%\n- **B**. 27%\n- **C**. 32.5%\n- **D**. 37.5% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost price of 1 shirt and 1 trouser be s and t respectively.\nRam pays for 16 shirts. For 8 shirts there are 3 free trousers. Hence for 16 shirts there will be 6 free trousers.\nSo total cost price if there was no discount = 16 shirts + 6 trousers = 16s+6t\nDiscount  = price of 6 trousers =6t\nDiscount offered to Ram = $\\frac{6t}{16s+6t} = 0.2$, $\\frac{s}{t} = \\frac{3}{2}$\nRam pays for 16 shirts. For 5 trousers there are 2 free shirts. Hence for 25 trousers there will be 10 free trousers.\nSo total cost price if there was no discount = 25 trousers + 10 shirts = 25t+10s\nDiscount  = price of 10 shirts = 10s \nLet the discount offered to Shyam be d%.\nDiscount offered to Shyam =$\\frac{10s}{25t+10s}*100$= d, d =$\\frac{\\frac{30t}{2}}{25t +\\frac{30t}{2}} = \\frac{30*100}{80}= 37.5$%"
+    },
+    {
+      "qid": "quant-sectionals-37-20",
+      "passage_text": "",
+      "question_text": "Krishna got onto an upward-moving escalator and started moving up the escalator at a constant speed.  It takes him 30 seconds to cover the distance. If he decided to remain stationary on the escalator, it would have taken him 50% extra time to reach the other end of the escalator. In how much time(in seconds) will Krishna be able to move from one end to other end of a stationary escalator?",
+      "options": [],
+      "correct_option_data": "90",
+      "solution_text": "Let the speed of the escalator be $x$ steps/second and the speed of Krishna is $y$ steps/second.\nLet the total distance to be covered be $z$ steps\nAs per question $(x+y)30 = z$....(I)\nIf he stays stationary then it takes 50% extra time\n$(x)30 \\times 1.5 = z$ or $45x = z$....(II)\nPutting (II) in (I) $ 30x +30y = 45x$ or $30y = 15x$ or $y = \\frac{x}{2}$...(III)\n When the escalator is stationery, let time taken by Krishna to reach the other end be $t$ seconds\nThus $ ty = z$ . Putting (II) and (III)\n$ t \\ \\frac{x}{2} = 45x$ or t = 90 seconds",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nKrishna got onto an upward-moving escalator and started moving up the escalator at a constant speed.  It takes him 30 seconds to cover the distance. If he decided to remain stationary on the escalator, it would have taken him 50% extra time to reach the other end of the escalator. In how much time(in seconds) will Krishna be able to move from one end to other end of a stationary escalator?\n\n**Options:**\n\n**Correct Answer:** 90\n\n**Solution:**\nLet the speed of the escalator be $x$ steps/second and the speed of Krishna is $y$ steps/second.\nLet the total distance to be covered be $z$ steps\nAs per question $(x+y)30 = z$....(I)\nIf he stays stationary then it takes 50% extra time\n$(x)30 \\times 1.5 = z$ or $45x = z$....(II)\nPutting (II) in (I) $ 30x +30y = 45x$ or $30y = 15x$ or $y = \\frac{x}{2}$...(III)\n When the escalator is stationery, let time taken by Krishna to reach the other end be $t$ seconds\nThus $ ty = z$ . Putting (II) and (III)\n$ t \\ \\frac{x}{2} = 45x$ or t = 90 seconds"
+    },
+    {
+      "qid": "quant-sectionals-37-21",
+      "passage_text": "",
+      "question_text": "In a test of 50 questions, 3 marks were awarded for a correct answer, 0 for not attempting and -1 for an incorrect answer. In how many ways can the student score 120 marks?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Suppose a questions were answered correctly.\n'b' were answered incorrectly.\n3a-b= 120\na+b<50\na=40, b=0\na=41, b=3\na=42, b=6\na=43, b= 9\nbut here a+b=43+9=52...not possible.\nThus 3 ways",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a test of 50 questions, 3 marks were awarded for a correct answer, 0 for not attempting and -1 for an incorrect answer. In how many ways can the student score 120 marks?\n\n**Options:**\n- **A**. 2\n- **B**. 3 ✅\n- **C**. 1\n- **D**. 4\n\n**Correct Answer:** null\n\n**Solution:**\nSuppose a questions were answered correctly.\n'b' were answered incorrectly.\n3a-b= 120\na+b<50\na=40, b=0\na=41, b=3\na=42, b=6\na=43, b= 9\nbut here a+b=43+9=52...not possible.\nThus 3 ways"
+    },
+    {
+      "qid": "quant-sectionals-37-22",
+      "passage_text": "",
+      "question_text": "If x and y are integers and |x|+|y|<11, then how many distinct pairs of (x,y) are possible?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "191",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "221",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "201",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In the first quadrant, both x,y are positive, hence x+y<11\nIn the 2nd quadrant, x is negative, y is positive, hence -x+y<11\nIn the 3rd quadrant, both x,y are negative, hence -x-y<11\nIn the fourth quadrant, x is positive, y is negative, hence x-y<11\nIn xy plane, the given expression can be represented using the following figure.\nIn the first quadrant, x+y<11\nFor x = 1, y = 1,2,3,4.......9 (y can take 9 values)\nFor x = 2, y = 1,2,......8 (8 values)\n.......\n....\nFor x = 9, y can take only 1 value. i.e. y =1\nHence, points in each quadrant = 9+8+7+6+5+4+3+2+1 = 45   (Using similarity)\n=> Number of points all four quadrants = 45*4 = 180\nNow, points of x-axis are (-10,0),(-9,0), (-8,0), (-7,0).................(8,0),(9,0), (10,0)  (Total 10+10+1 = 21 points)\nSimilarly, on y axis, the number of points = 21\nSince, the origin is counted twice, the number of points on both axes = 21*2-1 = 41\nTotal number of points = 180+41 = 221",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x and y are integers and |x|+|y|<11, then how many distinct pairs of (x,y) are possible?\n\n**Options:**\n- **A**. 191\n- **B**. 180\n- **C**. 221 ✅\n- **D**. 201\n\n**Correct Answer:** null\n\n**Solution:**\nIn the first quadrant, both x,y are positive, hence x+y<11\nIn the 2nd quadrant, x is negative, y is positive, hence -x+y<11\nIn the 3rd quadrant, both x,y are negative, hence -x-y<11\nIn the fourth quadrant, x is positive, y is negative, hence x-y<11\nIn xy plane, the given expression can be represented using the following figure.\nIn the first quadrant, x+y<11\nFor x = 1, y = 1,2,3,4.......9 (y can take 9 values)\nFor x = 2, y = 1,2,......8 (8 values)\n.......\n....\nFor x = 9, y can take only 1 value. i.e. y =1\nHence, points in each quadrant = 9+8+7+6+5+4+3+2+1 = 45   (Using similarity)\n=> Number of points all four quadrants = 45*4 = 180\nNow, points of x-axis are (-10,0),(-9,0), (-8,0), (-7,0).................(8,0),(9,0), (10,0)  (Total 10+10+1 = 21 points)\nSimilarly, on y axis, the number of points = 21\nSince, the origin is counted twice, the number of points on both axes = 21*2-1 = 41\nTotal number of points = 180+41 = 221"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-26-1",
+      "passage_text": "",
+      "question_text": "Rushi invested ₹ 5000 in a mutual fund. In the first year, his investment grew by a certain percentage. However, due to a recession in the market the following year, the investment fell by a percentage equal to one-fifth of the growth rate in the first year. After two years, his investment was ₹6750. Find the percentage of loss in the second year if it is known that the value of his investment never exceeded ₹10000 during the two years.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let percentage of growth in first year be $5x\\%$\nSo percentage of loss in second year will be $x\\%$\nSo, $5000\\left(1+\\dfrac{5x}{100}\\right)\\left(1-\\dfrac{x}{100}\\right)=6750$\nor, $\\left(1+\\dfrac{5x}{100}\\right)\\left(1-\\dfrac{x}{100}\\right)=\\dfrac{6750}{5000}=1.35$ ----->(1)\nLet $\\dfrac{x}{100}=k$\nSo, from equation (1),\n$\\left(1+5k\\right)\\left(1-k\\right)=1.35$\nor, $4k-5k^2=0.35$\nor, $100k^2-80k+7=0$\nor, $\\left(10k-1\\right)\\left(10k-7\\right)=0$\nor, $k=\\dfrac{1}{10}$ or $\\dfrac{7}{10}$\nor, $x=10$ or $70$\nBut, $x=70$ is rejected because in that case, after the first year the investment will become $5000\\left(1+5\\times\\ \\frac{70}{100}\\right)=22500$ which is greater than $10000$\nSo, $x=10$\nso, percentage loss in second year is $10\\ \\%\\ \\ $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRushi invested ₹ 5000 in a mutual fund. In the first year, his investment grew by a certain percentage. However, due to a recession in the market the following year, the investment fell by a percentage equal to one-fifth of the growth rate in the first year. After two years, his investment was ₹6750. Find the percentage of loss in the second year if it is known that the value of his investment never exceeded ₹10000 during the two years.\n\n**Options:**\n- **A**. 70\n- **B**. 40\n- **C**. 30\n- **D**. 10 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet percentage of growth in first year be $5x\\%$\nSo percentage of loss in second year will be $x\\%$\nSo, $5000\\left(1+\\dfrac{5x}{100}\\right)\\left(1-\\dfrac{x}{100}\\right)=6750$\nor, $\\left(1+\\dfrac{5x}{100}\\right)\\left(1-\\dfrac{x}{100}\\right)=\\dfrac{6750}{5000}=1.35$ ----->(1)\nLet $\\dfrac{x}{100}=k$\nSo, from equation (1),\n$\\left(1+5k\\right)\\left(1-k\\right)=1.35$\nor, $4k-5k^2=0.35$\nor, $100k^2-80k+7=0$\nor, $\\left(10k-1\\right)\\left(10k-7\\right)=0$\nor, $k=\\dfrac{1}{10}$ or $\\dfrac{7}{10}$\nor, $x=10$ or $70$\nBut, $x=70$ is rejected because in that case, after the first year the investment will become $5000\\left(1+5\\times\\ \\frac{70}{100}\\right)=22500$ which is greater than $10000$\nSo, $x=10$\nso, percentage loss in second year is $10\\ \\%\\ \\ $"
+    },
+    {
+      "qid": "quant-sectionals-26-2",
+      "passage_text": "",
+      "question_text": "There are six numbers - a,b,c,d,e,f - such that their average is 11. The average of a,b, and c is e, the average of d and e is b, and the average of e and f is c. Find the value of e, if the value of a is 3.",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": "$\\dfrac{a+b+c}{3}=e$ => $a+b+c=3e$ => $b+c=3e-a\\rightarrow1$\nAlso, $\\dfrac{d+e}{2}=b$ => $d+e=2b\\rightarrow2$\nAnd, $\\dfrac{e+f}{2}=c$ => $e+f=2c\\rightarrow3$\nAdding eq. 2 and eq. 3 -\n=> $d+2e+f=2(b+c)$        (substituting the value of (b+c) from eq. 1)\n=> $d+2e+f=6e-2a$\n=> $d+f=4e-2a\\rightarrow4$\nNow, the average of all 6 numbers is 11.\n=> $\\dfrac{a+b+c+d+e+f}{6}=11$\n=> $(a+e)+(b+c)+(d+f)=66$     (substituting the value of (b+c) and (d+f) from eq. 1 and eq. 4)\n=> $(a+e)+(3e-a)+(4e-2a)=66$        \n=> $8e-2a=66$        (And we are given the value of a = 3)\n=> $8e=72$ => $e=9$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThere are six numbers - a,b,c,d,e,f - such that their average is 11. The average of a,b, and c is e, the average of d and e is b, and the average of e and f is c. Find the value of e, if the value of a is 3.\n\n**Options:**\n\n**Correct Answer:** 9\n\n**Solution:**\n$\\dfrac{a+b+c}{3}=e$ => $a+b+c=3e$ => $b+c=3e-a\\rightarrow1$\nAlso, $\\dfrac{d+e}{2}=b$ => $d+e=2b\\rightarrow2$\nAnd, $\\dfrac{e+f}{2}=c$ => $e+f=2c\\rightarrow3$\nAdding eq. 2 and eq. 3 -\n=> $d+2e+f=2(b+c)$        (substituting the value of (b+c) from eq. 1)\n=> $d+2e+f=6e-2a$\n=> $d+f=4e-2a\\rightarrow4$\nNow, the average of all 6 numbers is 11.\n=> $\\dfrac{a+b+c+d+e+f}{6}=11$\n=> $(a+e)+(b+c)+(d+f)=66$     (substituting the value of (b+c) and (d+f) from eq. 1 and eq. 4)\n=> $(a+e)+(3e-a)+(4e-2a)=66$        \n=> $8e-2a=66$        (And we are given the value of a = 3)\n=> $8e=72$ => $e=9$"
+    },
+    {
+      "qid": "quant-sectionals-26-3",
+      "passage_text": "",
+      "question_text": "If a 3-digit number is picked whose sum of the digits is 9, what is the probability that the number has either 1 or 2 or both?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{7}{9}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{4}{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{13}{15}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The number of three-digit numbers with the sum of the digits as 9 can be calculated as,\nLet the three-digit number be xyz and we know that x + y + z = 9 and $x\\ \\ge\\ 1\\ ,\\ \\ y\\ge\\ 0\\ ,\\ z\\ge\\ 0$\nLet a = x + 1, and the equation becomes,\na + y + z = 8\nNumber of possibilities = $^{8\\ +\\ 3\\ -1}C_{3\\ -\\ 1}\\ =\\ ^{10}C_2\\ =\\ 45$ \nThe numbers with 1 or 2 in it are,\n8, 1, 0 - 4 numbers\n7, 2, 0 - 4 numbers\n7, 1, 1 - 3 numbers\n6, 2, 1 - 6 numbers\n5, 3, 1 - 6 numbers\n5, 2, 2 - 3 numbers\n4, 4, 1 - 3 numbers\n4, 3, 2 - 6 numbers\nTotal = 4 + 4 + 3 + 6 + 6 + 3 + 3 + 6 = 35 ways.\nProbability of the number containing either 1 or 2 or both = $\\dfrac{35}{45}\\ =\\ \\dfrac{7}{9}$\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf a 3-digit number is picked whose sum of the digits is 9, what is the probability that the number has either 1 or 2 or both?\n\n**Options:**\n- **A**. $\\dfrac{2}{3}$\n- **B**. $\\dfrac{7}{9}$ ✅\n- **C**. $\\dfrac{4}{5}$\n- **D**. $\\dfrac{13}{15}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe number of three-digit numbers with the sum of the digits as 9 can be calculated as,\nLet the three-digit number be xyz and we know that x + y + z = 9 and $x\\ \\ge\\ 1\\ ,\\ \\ y\\ge\\ 0\\ ,\\ z\\ge\\ 0$\nLet a = x + 1, and the equation becomes,\na + y + z = 8\nNumber of possibilities = $^{8\\ +\\ 3\\ -1}C_{3\\ -\\ 1}\\ =\\ ^{10}C_2\\ =\\ 45$ \nThe numbers with 1 or 2 in it are,\n8, 1, 0 - 4 numbers\n7, 2, 0 - 4 numbers\n7, 1, 1 - 3 numbers\n6, 2, 1 - 6 numbers\n5, 3, 1 - 6 numbers\n5, 2, 2 - 3 numbers\n4, 4, 1 - 3 numbers\n4, 3, 2 - 6 numbers\nTotal = 4 + 4 + 3 + 6 + 6 + 3 + 3 + 6 = 35 ways.\nProbability of the number containing either 1 or 2 or both = $\\dfrac{35}{45}\\ =\\ \\dfrac{7}{9}$\nHence, the correct answer is option B."
+    },
+    {
+      "qid": "quant-sectionals-26-4",
+      "passage_text": "",
+      "question_text": "Two quarter circles with centres at B and D are drawn inside a square ABCD such that they touch each other in exactly one point O, and the point of contact lies on the diagonal of the square. If the quarter circles touch the sides AB, BC, CD and AD at points P, Q, R and S, respectively, then the value of $\\angle\\ POS$ is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$30^{\\circ\\ }$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$45^{\\circ\\ }$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$60^{\\circ\\ }$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$90^{\\circ\\ }$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The following figure can be obtained based on the question\nBD is the diagonal of the square. Hence, $\\ \\angle\\ ABD=\\angle\\ ADB=45^{\\circ\\ \\ }each$\nNow, in $\\triangle\\ POB$ , BP=OB (both radius of the quarter circle)\nHence it is an isosceles triangle with $\\angle\\ POB=\\angle\\ BPO$ \nSum of the three angles of $\\triangle\\ POB$ is 180, and $\\angle\\ PBO=45^{\\circ\\ }$ \nSo, $2\\angle\\ POB=180-45=135$ \nSimilarly , considering $\\triangle\\ DOS$ , which is also an isoceles triangle , we get $2\\angle\\ DOS=180-45=135$\nNow, $\\angle\\ BOD=180$ , so $\\angle\\ POB+\\angle\\ POS+\\angle\\ DOS=180$\n$\\frac{135}{2}+\\angle\\ POS+\\frac{135}{2}=180$\n$or,\\ \\angle\\ POS=45^{\\circ\\ }$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo quarter circles with centres at B and D are drawn inside a square ABCD such that they touch each other in exactly one point O, and the point of contact lies on the diagonal of the square. If the quarter circles touch the sides AB, BC, CD and AD at points P, Q, R and S, respectively, then the value of $\\angle\\ POS$ is?\n\n**Options:**\n- **A**. $30^{\\circ\\ }$\n- **B**. $45^{\\circ\\ }$ ✅\n- **C**. $60^{\\circ\\ }$\n- **D**. $90^{\\circ\\ }$\n\n**Correct Answer:** null\n\n**Solution:**\nThe following figure can be obtained based on the question\nBD is the diagonal of the square. Hence, $\\ \\angle\\ ABD=\\angle\\ ADB=45^{\\circ\\ \\ }each$\nNow, in $\\triangle\\ POB$ , BP=OB (both radius of the quarter circle)\nHence it is an isosceles triangle with $\\angle\\ POB=\\angle\\ BPO$ \nSum of the three angles of $\\triangle\\ POB$ is 180, and $\\angle\\ PBO=45^{\\circ\\ }$ \nSo, $2\\angle\\ POB=180-45=135$ \nSimilarly , considering $\\triangle\\ DOS$ , which is also an isoceles triangle , we get $2\\angle\\ DOS=180-45=135$\nNow, $\\angle\\ BOD=180$ , so $\\angle\\ POB+\\angle\\ POS+\\angle\\ DOS=180$\n$\\frac{135}{2}+\\angle\\ POS+\\frac{135}{2}=180$\n$or,\\ \\angle\\ POS=45^{\\circ\\ }$"
+    },
+    {
+      "qid": "quant-sectionals-26-5",
+      "passage_text": "",
+      "question_text": "Find the number of integral values of $p$ such that the equation $x^2-\\left(p+2\\right)x+\\left(2p+9\\right)=0$ has negative real roots.",
+      "options": [],
+      "correct_option_data": "1",
+      "solution_text": "The equation given is, $x^2-\\left(p+2\\right)x+\\left(2p+9\\right)=0$\nThe conditions we need to check for two negative roots will be, we already notice the coefficient of the $x^2$ term is positive, so taking that into account, we have: \n1. $D\\ge0$\n2. The sum of the roots is negative \n3. Product of roots is positive\n1.  $D\\ge0$: \n$\\left(p+2\\right)^2-4\\left(2p+9\\right)\\ge0$\n$\\left(p^2+4+4p\\right)-4\\left(2p+9\\right)\\ge0$\n$p^2-4p-32\\ge0$\n$\\left(p+4\\right)\\left(p-8\\right)\\ge0$\nSo we have either, $p\\le-4\\ or\\ p\\ge8$\n2. $p+2<0$\nWe get: $p<-2$\nSo, the earlier case of $p>8$ is eliminated. \n3. $2p+9>0$\nWe get: $p>-4.5$\nThe final condition is, $p\\in\\ \\left(-4.5,\\ -4\\right]$\nThe only value that satisfies this condition is p=-4.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the number of integral values of $p$ such that the equation $x^2-\\left(p+2\\right)x+\\left(2p+9\\right)=0$ has negative real roots.\n\n**Options:**\n\n**Correct Answer:** 1\n\n**Solution:**\nThe equation given is, $x^2-\\left(p+2\\right)x+\\left(2p+9\\right)=0$\nThe conditions we need to check for two negative roots will be, we already notice the coefficient of the $x^2$ term is positive, so taking that into account, we have: \n1. $D\\ge0$\n2. The sum of the roots is negative \n3. Product of roots is positive\n1.  $D\\ge0$: \n$\\left(p+2\\right)^2-4\\left(2p+9\\right)\\ge0$\n$\\left(p^2+4+4p\\right)-4\\left(2p+9\\right)\\ge0$\n$p^2-4p-32\\ge0$\n$\\left(p+4\\right)\\left(p-8\\right)\\ge0$\nSo we have either, $p\\le-4\\ or\\ p\\ge8$\n2. $p+2<0$\nWe get: $p<-2$\nSo, the earlier case of $p>8$ is eliminated. \n3. $2p+9>0$\nWe get: $p>-4.5$\nThe final condition is, $p\\in\\ \\left(-4.5,\\ -4\\right]$\nThe only value that satisfies this condition is p=-4."
+    },
+    {
+      "qid": "quant-sectionals-26-6",
+      "passage_text": "",
+      "question_text": "A man has 100 kg of grains of 2 types, A and B, in a ratio of 2:3. Grain A sells for Rs.10 less per kg than Grain B. Sita and Gita each purchase some amount of Grain A and B, and at the end, Sita pays Rs 200 more than Gita. If it is known that no grain is left with the man, and Gita buys 20kg of grain B, how many kg of grain A did Sita buy?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "40",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that the man has 2 types of grain in 2:3 ratio, and the total grain with the man is 100 kgs.\n$\\therefore$  quantity of grain A= $\\dfrac{\\ 2}{\\left(2+3\\right)}\\times\\ 100=\\ \\dfrac{\\ 2}{5}\\times\\ 100=40\\ kgs$\nand quantity of grainB= $100-40=60kgs$\nlet Cost per kg of grain A be Rs k, then Cost per kg of grain B will be Rs (k+10)\nFurther, lets assume that Sita buys $\\ x\\ kg$ of grain A, and $\\ y\\ kg$ of grain B\nwhile Gita buys $\\ m\\ kg$ of grain A and $\\ n\\ kg$ of grain B . \n$\\ \\therefore\\ \\ x+m=40\\ ......\\left(1\\right)\\ $\n$\\&\\ \\ y+n=60\\ ......\\left(2\\right)\\ $\nGiven , Gita buys $20\\ kg\\ $ of grain B , $i.e\\ n=20\\ $\n$\\therefore\\ y=60-20=\\ 40\\ \\ \\ \\left(eqn\\ 2\\right)$\nNow, Sita pays Rs 200 more than Gita.\nAmount paid by Sita= $x\\times\\ k\\ +y\\times\\ \\left(k+10\\right)$\nAmount paid by Gita= $m\\times\\ k\\ +n\\times\\ \\left(k+10\\right)$\n$\\therefore\\ x\\times\\ k\\ +\\ y\\times\\ \\left(k+10\\right)-\\left\\{m\\times\\ k\\ +n\\times\\ \\left(k+10\\right)\\right\\}=200$\n$or,\\ \\left(x+y-m-n\\right).k\\ +10.\\left(y-n\\right)=200$\n$or,\\ \\ \\left(x-m+40-20\\right).k+10.\\left(40-20\\right)=200$\n$or,\\ \\ \\left(x-m+20\\right).k+200=200$\n$or,\\ \\ \\left(x-m+20\\right).k=0$\nNow , k= cost per Kg cannot be 0, hence $x-m+20=0\\ $\n$or,\\ x-m=-20\\ .....\\left(3\\right)$\nSolving Eqn 1 and 3, \n$x=10\\ kg$\nHence, Amount of grain Sita bought=$10\\ kg$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man has 100 kg of grains of 2 types, A and B, in a ratio of 2:3. Grain A sells for Rs.10 less per kg than Grain B. Sita and Gita each purchase some amount of Grain A and B, and at the end, Sita pays Rs 200 more than Gita. If it is known that no grain is left with the man, and Gita buys 20kg of grain B, how many kg of grain A did Sita buy?\n\n**Options:**\n- **A**. 10 ✅\n- **B**. 20\n- **C**. 30\n- **D**. 40\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that the man has 2 types of grain in 2:3 ratio, and the total grain with the man is 100 kgs.\n$\\therefore$  quantity of grain A= $\\dfrac{\\ 2}{\\left(2+3\\right)}\\times\\ 100=\\ \\dfrac{\\ 2}{5}\\times\\ 100=40\\ kgs$\nand quantity of grainB= $100-40=60kgs$\nlet Cost per kg of grain A be Rs k, then Cost per kg of grain B will be Rs (k+10)\nFurther, lets assume that Sita buys $\\ x\\ kg$ of grain A, and $\\ y\\ kg$ of grain B\nwhile Gita buys $\\ m\\ kg$ of grain A and $\\ n\\ kg$ of grain B . \n$\\ \\therefore\\ \\ x+m=40\\ ......\\left(1\\right)\\ $\n$\\&\\ \\ y+n=60\\ ......\\left(2\\right)\\ $\nGiven , Gita buys $20\\ kg\\ $ of grain B , $i.e\\ n=20\\ $\n$\\therefore\\ y=60-20=\\ 40\\ \\ \\ \\left(eqn\\ 2\\right)$\nNow, Sita pays Rs 200 more than Gita.\nAmount paid by Sita= $x\\times\\ k\\ +y\\times\\ \\left(k+10\\right)$\nAmount paid by Gita= $m\\times\\ k\\ +n\\times\\ \\left(k+10\\right)$\n$\\therefore\\ x\\times\\ k\\ +\\ y\\times\\ \\left(k+10\\right)-\\left\\{m\\times\\ k\\ +n\\times\\ \\left(k+10\\right)\\right\\}=200$\n$or,\\ \\left(x+y-m-n\\right).k\\ +10.\\left(y-n\\right)=200$\n$or,\\ \\ \\left(x-m+40-20\\right).k+10.\\left(40-20\\right)=200$\n$or,\\ \\ \\left(x-m+20\\right).k+200=200$\n$or,\\ \\ \\left(x-m+20\\right).k=0$\nNow , k= cost per Kg cannot be 0, hence $x-m+20=0\\ $\n$or,\\ x-m=-20\\ .....\\left(3\\right)$\nSolving Eqn 1 and 3, \n$x=10\\ kg$\nHence, Amount of grain Sita bought=$10\\ kg$"
+    },
+    {
+      "qid": "quant-sectionals-26-7",
+      "passage_text": "",
+      "question_text": "Two points M and N are present on sides of a square PQRS such that M bisects SR and N divides PS such that PN:NS=2:1. If PM and RN intersect at O and the ratio of area(QPR) and area(QPOR) can be expressed as $\\dfrac{p}{q}$ such that p,q are coprime, then |p-q|=?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "The following figure is obtained based on the question, The lines PR and OS are constructed.\nLet the side of the square be 6x units .\nWe are given that PM bisects SR, and RN divides PS in 2:1 ratio. \nHence, SM=RM=3x units and PN=4x units , SN=2x units.\nNow, in $\\triangle\\ OSR$ , OM is the midpoint, hence $ar\\triangle OSM=ar\\triangle\\ ORM=m\\ sq\\ units\\left(say\\right)$\nAgain, $\\triangle\\ OSP$, ON bisects PS in 2:1 ratio. So, $\\frac{ar\\triangle OPN}{ar\\triangle\\ ONS}=\\frac{2}{1}$\nLet, $ar\\triangle ONS=\\ n\\ sq\\ units$ then $ar\\triangle ONP=\\ 2n\\ sq\\ units$ \nNow, let $ar\\triangle POR=\\ K\\ sq\\ units$ \nWe now consider $\\triangle PSR$, in which PM is a median ( since it bisects SR)\nSo, $ar\\triangle PSM=ar\\triangle\\ PRM$ \nor, 2n+n+m=K+m or K=3n\nAgain, RN divides PS in ratio 2:1, so $ar\\triangle PRN=2.ar\\triangle\\ RNS$\nor, 2n+3n=2(n+m+m) \nor, 3n=4m \nSo we have the relation as K=3n=4m, and the area are updated in the figure.\nNow, PR is a diagonal of the square PQRS. So, ar(PQR)=ar(PSR)= 2n+3n+n+m+m=6n+2m=6n+1.5n=7.5n \nRequired ratio is $\\frac{ar\\left(QPR\\right)}{ar\\left(QPOR\\right)}=\\frac{7.5n}{\\left(7.5+3\\right)n}=\\frac{75}{105}=\\frac{5}{7}$\nGCD(5,7)=1, hence we have p=5, q=7 .So, |p-q|=|5-7|=2",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo points M and N are present on sides of a square PQRS such that M bisects SR and N divides PS such that PN:NS=2:1. If PM and RN intersect at O and the ratio of area(QPR) and area(QPOR) can be expressed as $\\dfrac{p}{q}$ such that p,q are coprime, then |p-q|=?\n\n**Options:**\n\n**Correct Answer:** 2\n\n**Solution:**\nThe following figure is obtained based on the question, The lines PR and OS are constructed.\nLet the side of the square be 6x units .\nWe are given that PM bisects SR, and RN divides PS in 2:1 ratio. \nHence, SM=RM=3x units and PN=4x units , SN=2x units.\nNow, in $\\triangle\\ OSR$ , OM is the midpoint, hence $ar\\triangle OSM=ar\\triangle\\ ORM=m\\ sq\\ units\\left(say\\right)$\nAgain, $\\triangle\\ OSP$, ON bisects PS in 2:1 ratio. So, $\\frac{ar\\triangle OPN}{ar\\triangle\\ ONS}=\\frac{2}{1}$\nLet, $ar\\triangle ONS=\\ n\\ sq\\ units$ then $ar\\triangle ONP=\\ 2n\\ sq\\ units$ \nNow, let $ar\\triangle POR=\\ K\\ sq\\ units$ \nWe now consider $\\triangle PSR$, in which PM is a median ( since it bisects SR)\nSo, $ar\\triangle PSM=ar\\triangle\\ PRM$ \nor, 2n+n+m=K+m or K=3n\nAgain, RN divides PS in ratio 2:1, so $ar\\triangle PRN=2.ar\\triangle\\ RNS$\nor, 2n+3n=2(n+m+m) \nor, 3n=4m \nSo we have the relation as K=3n=4m, and the area are updated in the figure.\nNow, PR is a diagonal of the square PQRS. So, ar(PQR)=ar(PSR)= 2n+3n+n+m+m=6n+2m=6n+1.5n=7.5n \nRequired ratio is $\\frac{ar\\left(QPR\\right)}{ar\\left(QPOR\\right)}=\\frac{7.5n}{\\left(7.5+3\\right)n}=\\frac{75}{105}=\\frac{5}{7}$\nGCD(5,7)=1, hence we have p=5, q=7 .So, |p-q|=|5-7|=2"
+    },
+    {
+      "qid": "quant-sectionals-26-8",
+      "passage_text": "",
+      "question_text": "f(x) is a function such that $f\\left(3x\\right)+2f\\left(\\frac{48}{x}\\right)=6x$ and $x\\notin\\ 0$. What is the value of 2f(18)+5f(8)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "90.67",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "81.33",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "96.67",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "83.33",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us put x = 6\nWe get $f\\left(18\\right)+2f\\left(8\\right)\\ =\\ 6\\cdot6\\ =\\ 36$ $\\rightarrow 1$\nNow let us put x = $\\frac{8}{3}$\nWe get  $f\\left(3\\cdot\\frac{8}{3}\\right)+2f\\left(\\frac{48}{\\frac{8}{3}}\\right)=6\\cdot\\frac{8}{3}=16$\nf(8)+2f(18) = 16  $\\rightarrow 2$ \nEquations 1 and 2 can be seen as linear equations in two variables.\nUpon solving them, we get \nf(18) = $-\\frac{4}{3}$, f(8) = $\\frac{56}{3}$\n2f(18)+5f(8) = $-\\frac{8}{3}+\\frac{280}{3}\\ =\\ \\frac{272}{3}=90.67$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nf(x) is a function such that $f\\left(3x\\right)+2f\\left(\\frac{48}{x}\\right)=6x$ and $x\\notin\\ 0$. What is the value of 2f(18)+5f(8)?\n\n**Options:**\n- **A**. 90.67 ✅\n- **B**. 81.33\n- **C**. 96.67\n- **D**. 83.33\n\n**Correct Answer:** null\n\n**Solution:**\nLet us put x = 6\nWe get $f\\left(18\\right)+2f\\left(8\\right)\\ =\\ 6\\cdot6\\ =\\ 36$ $\\rightarrow 1$\nNow let us put x = $\\frac{8}{3}$\nWe get  $f\\left(3\\cdot\\frac{8}{3}\\right)+2f\\left(\\frac{48}{\\frac{8}{3}}\\right)=6\\cdot\\frac{8}{3}=16$\nf(8)+2f(18) = 16  $\\rightarrow 2$ \nEquations 1 and 2 can be seen as linear equations in two variables.\nUpon solving them, we get \nf(18) = $-\\frac{4}{3}$, f(8) = $\\frac{56}{3}$\n2f(18)+5f(8) = $-\\frac{8}{3}+\\frac{280}{3}\\ =\\ \\frac{272}{3}=90.67$"
+    },
+    {
+      "qid": "quant-sectionals-26-9",
+      "passage_text": "",
+      "question_text": "Ashim sold 150 kgs of alphonso mangoes by marking up the price by 20% and offered free totapuri mangoes with every purchase. The price of Alphonso mangoes is 2.5 times the price of Totapuri mangoes. If it is known that he made a profit of $\\dfrac{100}{11}\\%$, how many kgs of totapuri mangoes did he give out for free to purchasers ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "37.5 kg",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "22.5 kg",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "35.75 kg",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "19 kg",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let, price of Totapuri mangoes be Rs. x per kg.\nThen, price of Alphonso mangoes is Rs. 2.5x per kg\nLet us assume that he offers k kgs of Totapuri mangoes for every 1 kg of alphonso sold.\nThen, effective cost price for 1 kg alphonso becomes 2.5x+kx =Rs (2.5+k)x\nAshim sells the Alphonso by marking up the price by 20%. \nSo, selling price of 1kg  Alphonso mangoes is= $\\left(1+20\\%\\right)\\times\\ 2.5\\ x=Rs.\\ 3x$ \nHis profit percent is given to be $\\dfrac{100}{11}\\ \\%\\ $\nSo, $\\dfrac{3x-\\left(2.5+k\\right)x}{\\left(2.5+k\\right)x}\\times\\ 100=\\dfrac{100}{11}$\nor, $\\dfrac{0.5-k}{2.5+k}=\\dfrac{1}{11}$\nor, $11\\left(0.5-k\\right)=2.5+k$\nor, $k=\\dfrac{1}{4}kg\\ $\nSo Ashim gives away $\\dfrac{1}{4}kg\\ $ of Totapuri for every 1 kg alphonso sold. Since as he sold 150 kg of Alphonso , so he should have given out $\\dfrac{150}{4}=37.5\\ kg$ of totapuri mangoes. \nAlternate Explanation,\nLet cost price of totapuri mangoes be ₹1/kg\nSo, cost price of Alphonso mangoes will be ₹2.5/kg\nSo, marked price of Alphonso mangoes = ₹(2.5*1.2)/kg=₹3/kg\nNow let \"X\" kg of Totapuri mangoes be given for free.\nSo, total cost price = $\\left(1\\right)\\left(X\\right)+\\left(2.5\\right)\\left(150\\right)$\nTotal selling price = $150\\times\\ 3$\nSo, $\\left(X+2.5\\times\\ 150\\right)\\left(1+\\dfrac{\\dfrac{100}{11}}{100}\\right)=450$\nor, $X+2.5\\times\\ 150=450\\times\\ \\dfrac{11}{12}$\nor, $X=412.5-375=37.5$ \nSo, Totapuri mangoes = $37.5\\ kg$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAshim sold 150 kgs of alphonso mangoes by marking up the price by 20% and offered free totapuri mangoes with every purchase. The price of Alphonso mangoes is 2.5 times the price of Totapuri mangoes. If it is known that he made a profit of $\\dfrac{100}{11}\\%$, how many kgs of totapuri mangoes did he give out for free to purchasers ?\n\n**Options:**\n- **A**. 37.5 kg ✅\n- **B**. 22.5 kg\n- **C**. 35.75 kg\n- **D**. 19 kg\n\n**Correct Answer:** null\n\n**Solution:**\nLet, price of Totapuri mangoes be Rs. x per kg.\nThen, price of Alphonso mangoes is Rs. 2.5x per kg\nLet us assume that he offers k kgs of Totapuri mangoes for every 1 kg of alphonso sold.\nThen, effective cost price for 1 kg alphonso becomes 2.5x+kx =Rs (2.5+k)x\nAshim sells the Alphonso by marking up the price by 20%. \nSo, selling price of 1kg  Alphonso mangoes is= $\\left(1+20\\%\\right)\\times\\ 2.5\\ x=Rs.\\ 3x$ \nHis profit percent is given to be $\\dfrac{100}{11}\\ \\%\\ $\nSo, $\\dfrac{3x-\\left(2.5+k\\right)x}{\\left(2.5+k\\right)x}\\times\\ 100=\\dfrac{100}{11}$\nor, $\\dfrac{0.5-k}{2.5+k}=\\dfrac{1}{11}$\nor, $11\\left(0.5-k\\right)=2.5+k$\nor, $k=\\dfrac{1}{4}kg\\ $\nSo Ashim gives away $\\dfrac{1}{4}kg\\ $ of Totapuri for every 1 kg alphonso sold. Since as he sold 150 kg of Alphonso , so he should have given out $\\dfrac{150}{4}=37.5\\ kg$ of totapuri mangoes. \nAlternate Explanation,\nLet cost price of totapuri mangoes be ₹1/kg\nSo, cost price of Alphonso mangoes will be ₹2.5/kg\nSo, marked price of Alphonso mangoes = ₹(2.5*1.2)/kg=₹3/kg\nNow let \"X\" kg of Totapuri mangoes be given for free.\nSo, total cost price = $\\left(1\\right)\\left(X\\right)+\\left(2.5\\right)\\left(150\\right)$\nTotal selling price = $150\\times\\ 3$\nSo, $\\left(X+2.5\\times\\ 150\\right)\\left(1+\\dfrac{\\dfrac{100}{11}}{100}\\right)=450$\nor, $X+2.5\\times\\ 150=450\\times\\ \\dfrac{11}{12}$\nor, $X=412.5-375=37.5$ \nSo, Totapuri mangoes = $37.5\\ kg$"
+    },
+    {
+      "qid": "quant-sectionals-26-10",
+      "passage_text": "",
+      "question_text": "Amit invests a sum in a scheme at 20% interest compounded semiannually. Every 6 months, he withdraws 50% of his initial investment and reinvests it at 30% pa simple interest in another scheme. He can withdraw only if the full withdrawal amount is available. If not, no withdrawal is made. What is his overall profit % at the end of 2 years?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "58.68%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "57.50%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "55.88%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "56.86%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the amount invested be 100x in the first scheme where the amount is compounded semiannually at 20%. \nThus, the amount after the first six months will be = $100x\\times1.1=110x$. \nNow he withdraws 50% of his initial investment, but only when the withdrawal amount is available. So he has to withdraw 50x, which he can, thus the invested amount now will be 60x.\nThis withdrawn amount is reinvested at 30% Simple interest. \nSo, from now till the end of 2 years, the total time is 1.5 years. \nSo, this amount will become = $50x\\left(1+\\dfrac{30\\left(\\frac{3}{2}\\right)}{100}\\right)=50x\\left(1.45\\right)=72.5x$ ---------------- 1\nNow, the remaining 60x in the first scheme will be compounded again semiannually. \nThus, the amount will become = $60x\\times1.1=66x$. \nAgain, he can withdraw 50% of his initial investment. \nThus, the amount left will be 16x.\nThis withdrawn amount is again reinvested at 30% Simple interest in the second scheme. \nSo, from now till the end of 2 years, the total time is 1 year. \nSo, this amount will become = $50x\\left(1+\\dfrac{30\\times\\ 1}{100}\\right)=50x\\left(1.3\\right)=65x$ -------------- 2\nNow, the remaining 16x in the first scheme will be compounded again, becoming = $16x\\times1.1=17.6x$. \nBut now he cannot withdraw any amount, because the complete withdrawal amount is not there. \nThus, this money will continue to be invested. \nSo, for the next 6 months, this amount will become = $17.6x\\times1.1=19.36x$. -------------3\nSo, at the end of two years, he will have = $72.5x+65x+19.36x=156.86x$   (Adding the amount received in 1, 2 and 3)\nAnd, his invested amount is 100x. \nSo, his net profit % = $\\dfrac{156.86x-100x}{100x}\\times100=56.86\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAmit invests a sum in a scheme at 20% interest compounded semiannually. Every 6 months, he withdraws 50% of his initial investment and reinvests it at 30% pa simple interest in another scheme. He can withdraw only if the full withdrawal amount is available. If not, no withdrawal is made. What is his overall profit % at the end of 2 years?\n\n**Options:**\n- **A**. 58.68%\n- **B**. 57.50%\n- **C**. 55.88%\n- **D**. 56.86% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the amount invested be 100x in the first scheme where the amount is compounded semiannually at 20%. \nThus, the amount after the first six months will be = $100x\\times1.1=110x$. \nNow he withdraws 50% of his initial investment, but only when the withdrawal amount is available. So he has to withdraw 50x, which he can, thus the invested amount now will be 60x.\nThis withdrawn amount is reinvested at 30% Simple interest. \nSo, from now till the end of 2 years, the total time is 1.5 years. \nSo, this amount will become = $50x\\left(1+\\dfrac{30\\left(\\frac{3}{2}\\right)}{100}\\right)=50x\\left(1.45\\right)=72.5x$ ---------------- 1\nNow, the remaining 60x in the first scheme will be compounded again semiannually. \nThus, the amount will become = $60x\\times1.1=66x$. \nAgain, he can withdraw 50% of his initial investment. \nThus, the amount left will be 16x.\nThis withdrawn amount is again reinvested at 30% Simple interest in the second scheme. \nSo, from now till the end of 2 years, the total time is 1 year. \nSo, this amount will become = $50x\\left(1+\\dfrac{30\\times\\ 1}{100}\\right)=50x\\left(1.3\\right)=65x$ -------------- 2\nNow, the remaining 16x in the first scheme will be compounded again, becoming = $16x\\times1.1=17.6x$. \nBut now he cannot withdraw any amount, because the complete withdrawal amount is not there. \nThus, this money will continue to be invested. \nSo, for the next 6 months, this amount will become = $17.6x\\times1.1=19.36x$. -------------3\nSo, at the end of two years, he will have = $72.5x+65x+19.36x=156.86x$   (Adding the amount received in 1, 2 and 3)\nAnd, his invested amount is 100x. \nSo, his net profit % = $\\dfrac{156.86x-100x}{100x}\\times100=56.86\\%$"
+    },
+    {
+      "qid": "quant-sectionals-26-11",
+      "passage_text": "",
+      "question_text": "A man commutes 100 km using a bus, a train, and by walking. The bus speed is 30 kmph, the train is 20 kmph, and walking 5 kmph. While going to the office, he travels T hours each by bus and train, then walks the remaining distance. While returning, he travels 2T hours each by train and on foot, then covers the rest by bus. If the total time for both journeys is the same, find the total distance covered by him using the train for the round trip.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "93.33 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "94.82 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "95.66 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "96.77 km",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The bus's speed is 30 kmph, the train's 20 kmph, and walking's 5 kmph. While going to the office, he travels T hours each by bus and train and then walks the remaining distance.\nThis means he travels (30T) km by bus, and (20T) km by train while going. Now, the remaining distance is (100-50T) km, which he completes by walking. Thus, the time for which he walks = $\\dfrac{100-50T}{5}=20-10T$\nThus, the total time while going to the office = $T+T+\\left(20-10T\\right)=20-8T\\rightarrow1$\nWhile returning, he travels 2T hours each by train and on foot, then covers the rest by bus. \nThis means he travels (40T) km by train, and (10T) km by walking while returning. Now, the remaining distance is (100-50T) km, which he completes by bus. Thus, the time for which he travels in bus = $\\dfrac{100-50T}{30}$\nThus, the total time while returning from the office = $2T+2T+\\dfrac{100-50T}{30}\\rightarrow2$\nSince the time taken in both journeys is equal, we will equate eq. 1 and 2 -\n=> $20-8T=4T+\\dfrac{100-50T}{30}$\n=> $20-12T=\\dfrac{100-50T}{30}$\n=> $600-360T=100-50T$ => $310T=500$ => $T=\\dfrac{50}{31}$ hours\nThe distance he covered by train while going to the office = $20T$ km. The distance he covered by train while coming from the office = $40T$ km. The total distance covered by him using the train in the round trip = $60T=60\\times\\dfrac{50}{31}=\\dfrac{3000}{31}=96.77$ km.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man commutes 100 km using a bus, a train, and by walking. The bus speed is 30 kmph, the train is 20 kmph, and walking 5 kmph. While going to the office, he travels T hours each by bus and train, then walks the remaining distance. While returning, he travels 2T hours each by train and on foot, then covers the rest by bus. If the total time for both journeys is the same, find the total distance covered by him using the train for the round trip.\n\n**Options:**\n- **A**. 93.33 km\n- **B**. 94.82 km\n- **C**. 95.66 km\n- **D**. 96.77 km ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe bus's speed is 30 kmph, the train's 20 kmph, and walking's 5 kmph. While going to the office, he travels T hours each by bus and train and then walks the remaining distance.\nThis means he travels (30T) km by bus, and (20T) km by train while going. Now, the remaining distance is (100-50T) km, which he completes by walking. Thus, the time for which he walks = $\\dfrac{100-50T}{5}=20-10T$\nThus, the total time while going to the office = $T+T+\\left(20-10T\\right)=20-8T\\rightarrow1$\nWhile returning, he travels 2T hours each by train and on foot, then covers the rest by bus. \nThis means he travels (40T) km by train, and (10T) km by walking while returning. Now, the remaining distance is (100-50T) km, which he completes by bus. Thus, the time for which he travels in bus = $\\dfrac{100-50T}{30}$\nThus, the total time while returning from the office = $2T+2T+\\dfrac{100-50T}{30}\\rightarrow2$\nSince the time taken in both journeys is equal, we will equate eq. 1 and 2 -\n=> $20-8T=4T+\\dfrac{100-50T}{30}$\n=> $20-12T=\\dfrac{100-50T}{30}$\n=> $600-360T=100-50T$ => $310T=500$ => $T=\\dfrac{50}{31}$ hours\nThe distance he covered by train while going to the office = $20T$ km. The distance he covered by train while coming from the office = $40T$ km. The total distance covered by him using the train in the round trip = $60T=60\\times\\dfrac{50}{31}=\\dfrac{3000}{31}=96.77$ km."
+    },
+    {
+      "qid": "quant-sectionals-26-12",
+      "passage_text": "",
+      "question_text": "Two mixtures, A and B, are made by mixing water, salt and sugar in a 2:3:4 ratio, and water, sugar and lime juice in a 1:3:2 ratio respectively. The two mixtures are then combined and boiled, which results in 80% of the water evaporating. The remaining water makes up only 5% of the remaining solution. What is the ratio of salt and lime juice in the mixture?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We are given that mixture A contains water salt and sugar in 2:3:4 ratio, and mixture B contains water, sugar and lime juice in 1:3:2 ratio.\nLets assume that there is a total of 9x of solution A and 6y of solution B. \nThen, on combining A and B,\nVolume of new solution =9x+6y\namount of water=2x+y\namount of salt=3x\namount of sugar=4x+3y \namount of lime juice = 2y\nNow, 80% of the water is evaporated, which means $\\dfrac{80}{100}\\times\\ \\left(2x+y\\right)$ amount of water is gone.\nSo amount of water left is $\\dfrac{\\left(2x+y\\right)}{5}$ \nAnd volume of the solution after evaporation  is $\\left(9x+6y\\right)-\\dfrac{4\\left(2x+y\\right)}{5}=\\dfrac{37x+26y}{5}$\nAmount of water remaining is 5% of the solution\nHence, $5\\%\\ \\ of\\ \\dfrac{37x+26y}{5}=\\dfrac{2x+y}{5}$\n$or,\\ 37x+26y=20\\times\\ \\left(2x+y\\right)$\n$or,\\ 37x+26y=40x+20y$\n$or,\\ 3x=6y$\n$or,\\ x:y=2:1$\nHence we have, amount of salt= 3x and amount of lime juice=2y=x \nSo ratio of salt to lime juice =$\\dfrac{3x}{x}=3:1$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo mixtures, A and B, are made by mixing water, salt and sugar in a 2:3:4 ratio, and water, sugar and lime juice in a 1:3:2 ratio respectively. The two mixtures are then combined and boiled, which results in 80% of the water evaporating. The remaining water makes up only 5% of the remaining solution. What is the ratio of salt and lime juice in the mixture?\n\n**Options:**\n- **A**. 2:3\n- **B**. 3:1 ✅\n- **C**. 2:1\n- **D**. 1:1\n\n**Correct Answer:** null\n\n**Solution:**\nWe are given that mixture A contains water salt and sugar in 2:3:4 ratio, and mixture B contains water, sugar and lime juice in 1:3:2 ratio.\nLets assume that there is a total of 9x of solution A and 6y of solution B. \nThen, on combining A and B,\nVolume of new solution =9x+6y\namount of water=2x+y\namount of salt=3x\namount of sugar=4x+3y \namount of lime juice = 2y\nNow, 80% of the water is evaporated, which means $\\dfrac{80}{100}\\times\\ \\left(2x+y\\right)$ amount of water is gone.\nSo amount of water left is $\\dfrac{\\left(2x+y\\right)}{5}$ \nAnd volume of the solution after evaporation  is $\\left(9x+6y\\right)-\\dfrac{4\\left(2x+y\\right)}{5}=\\dfrac{37x+26y}{5}$\nAmount of water remaining is 5% of the solution\nHence, $5\\%\\ \\ of\\ \\dfrac{37x+26y}{5}=\\dfrac{2x+y}{5}$\n$or,\\ 37x+26y=20\\times\\ \\left(2x+y\\right)$\n$or,\\ 37x+26y=40x+20y$\n$or,\\ 3x=6y$\n$or,\\ x:y=2:1$\nHence we have, amount of salt= 3x and amount of lime juice=2y=x \nSo ratio of salt to lime juice =$\\dfrac{3x}{x}=3:1$"
+    },
+    {
+      "qid": "quant-sectionals-26-13",
+      "passage_text": "",
+      "question_text": "A boat takes 2 hours to travel downstream a river from port A to B and takes 3 hours to come back. Due to high tide, the stream's speed increases by two times its original speed on a particular day. On that day, the same boat travels from port A to port B and returns. What will the percentage increase/decrease be in the total journey time of the boat, assuming it travels with the same speed on both days?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "14.28% decrease",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50% decrease",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14.28% increase",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50% increase",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let original speed of boat be $b$ km/h and speed of stream be $s$ km/h\nAlso, let distance from port A to port B be $D$ km\nNow, in the first case,\n$\\dfrac{D}{b+s}=2$ and $\\dfrac{D}{b-s}=3$\nor, $b+s=\\dfrac{D}{2}$\n$b-s=\\dfrac{D}{3}$\nUpon solving, \n$b=\\dfrac{5D}{12}$ and $s=\\dfrac{D}{12}$\nNow, in the second case,\nSpeed of stream increases by 2 times the original speed\nSo, new speed of stream is $3s$\nor, new speed of stream is $3\\times\\ \\dfrac{D}{12}=\\dfrac{D}{4}$\nSo, time required for downstream journey = $\\dfrac{D}{b+3s}=\\dfrac{D}{\\dfrac{5D}{12}+\\dfrac{D}{4}}=1.5$ hours\ntime required for upstream journey = $\\dfrac{D}{b-3s}=\\dfrac{D}{\\dfrac{5D}{12}-\\dfrac{D}{4}}=6$ hours\nSo, total time required = $1.5+6=7.5$ hours\nOriginal time was $2+3=5$ hours\nSo, percentage increase = $\\dfrac{7.5-5}{5}\\times\\ 100=50\\ \\%\\ $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA boat takes 2 hours to travel downstream a river from port A to B and takes 3 hours to come back. Due to high tide, the stream's speed increases by two times its original speed on a particular day. On that day, the same boat travels from port A to port B and returns. What will the percentage increase/decrease be in the total journey time of the boat, assuming it travels with the same speed on both days?\n\n**Options:**\n- **A**. 14.28% decrease\n- **B**. 50% decrease\n- **C**. 14.28% increase\n- **D**. 50% increase ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet original speed of boat be $b$ km/h and speed of stream be $s$ km/h\nAlso, let distance from port A to port B be $D$ km\nNow, in the first case,\n$\\dfrac{D}{b+s}=2$ and $\\dfrac{D}{b-s}=3$\nor, $b+s=\\dfrac{D}{2}$\n$b-s=\\dfrac{D}{3}$\nUpon solving, \n$b=\\dfrac{5D}{12}$ and $s=\\dfrac{D}{12}$\nNow, in the second case,\nSpeed of stream increases by 2 times the original speed\nSo, new speed of stream is $3s$\nor, new speed of stream is $3\\times\\ \\dfrac{D}{12}=\\dfrac{D}{4}$\nSo, time required for downstream journey = $\\dfrac{D}{b+3s}=\\dfrac{D}{\\dfrac{5D}{12}+\\dfrac{D}{4}}=1.5$ hours\ntime required for upstream journey = $\\dfrac{D}{b-3s}=\\dfrac{D}{\\dfrac{5D}{12}-\\dfrac{D}{4}}=6$ hours\nSo, total time required = $1.5+6=7.5$ hours\nOriginal time was $2+3=5$ hours\nSo, percentage increase = $\\dfrac{7.5-5}{5}\\times\\ 100=50\\ \\%\\ $"
+    },
+    {
+      "qid": "quant-sectionals-26-14",
+      "passage_text": "",
+      "question_text": "If the value of $\\log70=a$, $\\log28=b$, and $\\log245=c$, then find the value of $\\log5$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{2a-b-c}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{4a-2b-c}{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{6a-3b-c}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{8a-4b-c}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$\\log70=\\log2+\\log5+\\log7=a\\rightarrow1$\n$\\log28=2\\log2+\\log7=b\\rightarrow2$\n$\\log245=\\log5+2\\log7=c\\rightarrow3$\nSubtracting 1 from 3 -\n$\\log7-\\log2=c-a\\rightarrow4$\nSubtracting 4 from 2 -\n$3\\log2=b-c+a$\n$\\log2=\\dfrac{(b-c+a)}{3}$\nMultiply eq. 1 by 2, and then subtracting eq. 3 from it -\n$2(\\log2+\\log5+\\log7)-(\\log5+2\\log7)=2a-c$\n$2\\log2+\\log5=2a-c$\nPutting the value of log2 - \n$\\log5=\\left(2a-c\\ \\right)-2\\left(\\dfrac{b-c+a}{3}\\right)$\n$\\log5=\\left(\\dfrac{6a-3c-2b+2c-2a}{3}\\right)$\n$\\log5=\\dfrac{4a-2b-c}{3}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf the value of $\\log70=a$, $\\log28=b$, and $\\log245=c$, then find the value of $\\log5$?\n\n**Options:**\n- **A**. $\\dfrac{2a-b-c}{3}$\n- **B**. $\\dfrac{4a-2b-c}{3}$ ✅\n- **C**. $\\dfrac{6a-3b-c}{3}$\n- **D**. $\\dfrac{8a-4b-c}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\n$\\log70=\\log2+\\log5+\\log7=a\\rightarrow1$\n$\\log28=2\\log2+\\log7=b\\rightarrow2$\n$\\log245=\\log5+2\\log7=c\\rightarrow3$\nSubtracting 1 from 3 -\n$\\log7-\\log2=c-a\\rightarrow4$\nSubtracting 4 from 2 -\n$3\\log2=b-c+a$\n$\\log2=\\dfrac{(b-c+a)}{3}$\nMultiply eq. 1 by 2, and then subtracting eq. 3 from it -\n$2(\\log2+\\log5+\\log7)-(\\log5+2\\log7)=2a-c$\n$2\\log2+\\log5=2a-c$\nPutting the value of log2 - \n$\\log5=\\left(2a-c\\ \\right)-2\\left(\\dfrac{b-c+a}{3}\\right)$\n$\\log5=\\left(\\dfrac{6a-3c-2b+2c-2a}{3}\\right)$\n$\\log5=\\dfrac{4a-2b-c}{3}$"
+    },
+    {
+      "qid": "quant-sectionals-26-15",
+      "passage_text": "",
+      "question_text": "Mr. X bought 16 identical toys for his three grandchildren. Find the number of ways in which he can distribute the toys among his grandchildren such that none of the grandchildren receives more than 7 toys.",
+      "options": [],
+      "correct_option_data": "21",
+      "solution_text": "The simplest way to solve this question is to assume how many ways there are so that the children get equal to or fewer than 7 toys. \nWe know that the maximum number of toys the three children can get is 7. \nLet a, b and c be the three integers that represent the number of toys less than or equal to 7. \nHence, the three children would receive the toys in the following way:\n$7-a+7-b+7-c=16$\na, b and c can be greater than or equal to 0 but less than 8. \nHence, we can say, \n$21-a-b-c=16$\nOr, $a+b+c=5$\nNow, we know that n things can be distributed among r different persons in $^{n+r-1}C_{r-1}$\nHence, the number of ways of distributing 5 among 3 is $^7C_2=21$\nHence, there are 21 ways.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nMr. X bought 16 identical toys for his three grandchildren. Find the number of ways in which he can distribute the toys among his grandchildren such that none of the grandchildren receives more than 7 toys.\n\n**Options:**\n\n**Correct Answer:** 21\n\n**Solution:**\nThe simplest way to solve this question is to assume how many ways there are so that the children get equal to or fewer than 7 toys. \nWe know that the maximum number of toys the three children can get is 7. \nLet a, b and c be the three integers that represent the number of toys less than or equal to 7. \nHence, the three children would receive the toys in the following way:\n$7-a+7-b+7-c=16$\na, b and c can be greater than or equal to 0 but less than 8. \nHence, we can say, \n$21-a-b-c=16$\nOr, $a+b+c=5$\nNow, we know that n things can be distributed among r different persons in $^{n+r-1}C_{r-1}$\nHence, the number of ways of distributing 5 among 3 is $^7C_2=21$\nHence, there are 21 ways."
+    },
+    {
+      "qid": "quant-sectionals-26-16",
+      "passage_text": "",
+      "question_text": "Find the last two digits of $\\left(2^{50}-2^{20}\\right)$",
+      "options": [],
+      "correct_option_data": "48",
+      "solution_text": "For $2^{10n}$ - \nif $n=odd$ => Last two digits = $24$\nif $n=even$ => Last two digits = $76$\nFor example - $2^{10}=1024$, last two digits 24. \n$2^{20}=1024*1024$, so for the last two digits, we will multiply $24\\times\\ 24=576$, thus last two digits are 76.\nLast two digits for $2^{30}=76*24=1824$, thus the last two digits are 24. And hence, the cyclicity continues, which proves the above general formula\nThus, Last two digits of $2^{50}=24$  and last two digits of $2^{20}=76$ \nNow, for $2^{50}-2^{20} $, we know that the last two digits are 24 and 76, respectively. But if we subtract 76 from 24, we will get the result as negative. Thus, for $2^{50}$, we will take a carry of '1' from the last third digit. Thus-\nLast two digits of $2^{50}-2^{20}=124-76=48$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the last two digits of $\\left(2^{50}-2^{20}\\right)$\n\n**Options:**\n\n**Correct Answer:** 48\n\n**Solution:**\nFor $2^{10n}$ - \nif $n=odd$ => Last two digits = $24$\nif $n=even$ => Last two digits = $76$\nFor example - $2^{10}=1024$, last two digits 24. \n$2^{20}=1024*1024$, so for the last two digits, we will multiply $24\\times\\ 24=576$, thus last two digits are 76.\nLast two digits for $2^{30}=76*24=1824$, thus the last two digits are 24. And hence, the cyclicity continues, which proves the above general formula\nThus, Last two digits of $2^{50}=24$  and last two digits of $2^{20}=76$ \nNow, for $2^{50}-2^{20} $, we know that the last two digits are 24 and 76, respectively. But if we subtract 76 from 24, we will get the result as negative. Thus, for $2^{50}$, we will take a carry of '1' from the last third digit. Thus-\nLast two digits of $2^{50}-2^{20}=124-76=48$"
+    },
+    {
+      "qid": "quant-sectionals-26-17",
+      "passage_text": "",
+      "question_text": "10 inlet pipes fill the tank in 4 hours, and n outlet pipes empty half the tank in 3 hours. If (n+1) inlet pipes and $\\dfrac{n}{2}$ outlet pipes are opened, then the tank is filled in 24 hours. Find the ratio of the efficiency of the inlet to the outlet pipes.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3:7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3:5",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:11",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the efficiency of inlet pipes be a, and the outlet pipes be b.\n10 inlet pipes fill the tank in 4 hours, thus the capacity of the tank will be = $10\\times4\\times a=40a$ litres\nn outlet pipe empties half the tank in 3 hours; thus, the capacity of half the tank = $n\\times3\\times b=3nb$ litres. Thus, the capacity of the full tank is = $6nb$ litres.\n=> $40a=6nb$ => $a=\\dfrac{3nb}{20}\\rightarrow1$\nNow, (n+1) inlet pipes and $\\dfrac{n}{2}$ outlet pipes are opened, and the tank is filled in 24 hours.\n=> $\\left(\\left(n+1\\right)a-\\left(\\dfrac{n}{2}\\right)b\\right)\\times24=6nb$     (substituting the value of a from eq. 1)\n=> $\\left(\\left(n+1\\right)\\left(\\dfrac{3nb}{20}\\right)-\\left(\\dfrac{n}{2}\\right)b\\right)=\\dfrac{nb}{4}$\nCancelling the terms n and b from both LHS and RHS -\n=> $\\left(n+1\\right)\\dfrac{3}{20}-\\dfrac{1}{2}=\\dfrac{1}{4}$\n=> $\\left(n+1\\right)\\dfrac{3}{20}=\\dfrac{3}{4}$\n=> $n+1=5$ => $n=4$\nSubstituting the value of n in eq. 1 -\n$a=\\dfrac{3\\times4\\times b}{20}$\n=> $\\dfrac{a}{b}=\\dfrac{3}{5}$\nAlternate Explanation,\nLet the volume of the tank be $1$ litre, and it takes 10 * 4 = 40 hours for the inlet pipe to fill the tank. Thus - \nEfficiency of one inlet pipe = $\\dfrac{1}{40}$ litre/hr\nAnd n outlet pipes empty half the tank in 3 hours. Thus, 0.5 litres of the tank gets emptied by outlet pipes in n * 3 = 3n hours. Thus - \nEfficiency of one outlet pipe = $\\dfrac{\\dfrac{1}{2}}{3n}=\\dfrac{1}{6n}$ litre/hr\nSo, $\\left(\\dfrac{\\left(n+1\\right)1}{40}-\\dfrac{n}{2}\\times\\ \\dfrac{1}{6n}\\right)=\\dfrac{1}{24}$\nor,$\\dfrac{n+1}{40}-\\dfrac{1}{12}=\\dfrac{1}{24}$\nor, $\\dfrac{n+1}{40}=\\dfrac{3}{24}=\\dfrac{1}{8}$\nSo, $n=4$\nSo, efficency of inlet pipe to outlet pipe = $\\dfrac{\\dfrac{1}{40}}{\\dfrac{1}{6n}}=\\dfrac{6n}{40}=\\dfrac{6\\times\\ 4}{40}=\\dfrac{3}{5}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n10 inlet pipes fill the tank in 4 hours, and n outlet pipes empty half the tank in 3 hours. If (n+1) inlet pipes and $\\dfrac{n}{2}$ outlet pipes are opened, then the tank is filled in 24 hours. Find the ratio of the efficiency of the inlet to the outlet pipes.\n\n**Options:**\n- **A**. 2:3\n- **B**. 3:7\n- **C**. 3:5 ✅\n- **D**. 5:11\n\n**Correct Answer:** null\n\n**Solution:**\nLet the efficiency of inlet pipes be a, and the outlet pipes be b.\n10 inlet pipes fill the tank in 4 hours, thus the capacity of the tank will be = $10\\times4\\times a=40a$ litres\nn outlet pipe empties half the tank in 3 hours; thus, the capacity of half the tank = $n\\times3\\times b=3nb$ litres. Thus, the capacity of the full tank is = $6nb$ litres.\n=> $40a=6nb$ => $a=\\dfrac{3nb}{20}\\rightarrow1$\nNow, (n+1) inlet pipes and $\\dfrac{n}{2}$ outlet pipes are opened, and the tank is filled in 24 hours.\n=> $\\left(\\left(n+1\\right)a-\\left(\\dfrac{n}{2}\\right)b\\right)\\times24=6nb$     (substituting the value of a from eq. 1)\n=> $\\left(\\left(n+1\\right)\\left(\\dfrac{3nb}{20}\\right)-\\left(\\dfrac{n}{2}\\right)b\\right)=\\dfrac{nb}{4}$\nCancelling the terms n and b from both LHS and RHS -\n=> $\\left(n+1\\right)\\dfrac{3}{20}-\\dfrac{1}{2}=\\dfrac{1}{4}$\n=> $\\left(n+1\\right)\\dfrac{3}{20}=\\dfrac{3}{4}$\n=> $n+1=5$ => $n=4$\nSubstituting the value of n in eq. 1 -\n$a=\\dfrac{3\\times4\\times b}{20}$\n=> $\\dfrac{a}{b}=\\dfrac{3}{5}$\nAlternate Explanation,\nLet the volume of the tank be $1$ litre, and it takes 10 * 4 = 40 hours for the inlet pipe to fill the tank. Thus - \nEfficiency of one inlet pipe = $\\dfrac{1}{40}$ litre/hr\nAnd n outlet pipes empty half the tank in 3 hours. Thus, 0.5 litres of the tank gets emptied by outlet pipes in n * 3 = 3n hours. Thus - \nEfficiency of one outlet pipe = $\\dfrac{\\dfrac{1}{2}}{3n}=\\dfrac{1}{6n}$ litre/hr\nSo, $\\left(\\dfrac{\\left(n+1\\right)1}{40}-\\dfrac{n}{2}\\times\\ \\dfrac{1}{6n}\\right)=\\dfrac{1}{24}$\nor,$\\dfrac{n+1}{40}-\\dfrac{1}{12}=\\dfrac{1}{24}$\nor, $\\dfrac{n+1}{40}=\\dfrac{3}{24}=\\dfrac{1}{8}$\nSo, $n=4$\nSo, efficency of inlet pipe to outlet pipe = $\\dfrac{\\dfrac{1}{40}}{\\dfrac{1}{6n}}=\\dfrac{6n}{40}=\\dfrac{6\\times\\ 4}{40}=\\dfrac{3}{5}$"
+    },
+    {
+      "qid": "quant-sectionals-26-18",
+      "passage_text": "",
+      "question_text": "When $\\left(5x^2+16x-10\\right)^2-\\left(x^2+14x-8\\right)^2$ is divided by 6A, the quotient is $\\left(x^2+5x-3\\right)$, with no remainder. Find A.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$4(x^2−2x−2)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(2x+1)(2x−2)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2\\left(2x^2+x-1\\right)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2x^2-2x-1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that Dividend = Divisor*Quotient.\nHere, the dividend is $\\left(5x^2+16x-10\\right)^2-\\left(x^2+14x-8\\right)^2$, the divisor is 6A and the quotient is given as $\\left(x^2+5x-3\\right)$\nNow, we notice the dividend: $\\left(5x^2+16x-10\\right)^{^2}-\\left(x^2+14x-8\\right)^{^2}$\nWe know that $A^2-B^2=\\left(A+B\\right)\\left(A-B\\right)$\nHence, we can say, $\\left(5x^2+16x-10\\right)^{^2}-\\left(x^2+14x-8\\right)^{^2}$ = $\\left(5x^2+16x-10+x^2+14x-8\\right)\\left(5x^2+16x-10-x^2-14x+8\\right)$\nWe get the dividend as $\\left(6x^2+30x-18\\right)\\left(4x^2+2x-2\\right)$\nWe can factorise the dividend:\n$12\\left(x^2+5x-3\\right)\\left(2x^2+x-1\\right)$\nNow, putting in the equation ,  Dividend = Divisor*Quotient.\n$12\\left(x^2+5x-3\\right)\\left(2x^2+x-1\\right)$ =$6A\\times\\left(x^2+5x-3\\right)$\nWe get A = $2\\left(2x^2+x-1\\right)$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhen $\\left(5x^2+16x-10\\right)^2-\\left(x^2+14x-8\\right)^2$ is divided by 6A, the quotient is $\\left(x^2+5x-3\\right)$, with no remainder. Find A.\n\n**Options:**\n- **A**. $4(x^2−2x−2)$\n- **B**. $(2x+1)(2x−2)$\n- **C**. $2\\left(2x^2+x-1\\right)$ ✅\n- **D**. $2x^2-2x-1$\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that Dividend = Divisor*Quotient.\nHere, the dividend is $\\left(5x^2+16x-10\\right)^2-\\left(x^2+14x-8\\right)^2$, the divisor is 6A and the quotient is given as $\\left(x^2+5x-3\\right)$\nNow, we notice the dividend: $\\left(5x^2+16x-10\\right)^{^2}-\\left(x^2+14x-8\\right)^{^2}$\nWe know that $A^2-B^2=\\left(A+B\\right)\\left(A-B\\right)$\nHence, we can say, $\\left(5x^2+16x-10\\right)^{^2}-\\left(x^2+14x-8\\right)^{^2}$ = $\\left(5x^2+16x-10+x^2+14x-8\\right)\\left(5x^2+16x-10-x^2-14x+8\\right)$\nWe get the dividend as $\\left(6x^2+30x-18\\right)\\left(4x^2+2x-2\\right)$\nWe can factorise the dividend:\n$12\\left(x^2+5x-3\\right)\\left(2x^2+x-1\\right)$\nNow, putting in the equation ,  Dividend = Divisor*Quotient.\n$12\\left(x^2+5x-3\\right)\\left(2x^2+x-1\\right)$ =$6A\\times\\left(x^2+5x-3\\right)$\nWe get A = $2\\left(2x^2+x-1\\right)$"
+    },
+    {
+      "qid": "quant-sectionals-26-19",
+      "passage_text": "",
+      "question_text": "The density of an object is defined as the ratio of its mass to its volume. If the ratio of masses of an iron sphere of radius 21 cm and copper cube of edge length 10.5 cm is denoted as X, find the value of 3X.\n\n(Given, density of iron = $7000\\ kg/m^3$ and density of copper = $8000\\ kg/m^3$)\n\n(Take $\\pi\\ =\\dfrac{22}{7}$)",
+      "options": [],
+      "correct_option_data": "88",
+      "solution_text": "Given, Density = Mass/Volume\nSo, Mass= Density*Volume\nSo, Mass of iron sphere: mass of copper cube = (Density of iron * Volume of iron sphere):(Density of copper * Volume of copper cube)\nor, $X\\ =\\ \\dfrac{7000\\times\\ \\dfrac{4}{3}\\pi\\ \\times\\ 21^3}{8000\\times\\ 10.5^3}$\nor, $X\\ =\\ \\dfrac{7000\\times\\ \\dfrac{4}{3}\\times\\ \\dfrac{22}{7}\\times\\ 21\\times\\ 21\\ \\times\\ 21}{8000\\times\\ 10.5\\times\\ 10.5\\times\\ 10.5}$\nor, $X\\ =\\ \\dfrac{88}{3}$\nor, $3X\\ =\\ 88$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe density of an object is defined as the ratio of its mass to its volume. If the ratio of masses of an iron sphere of radius 21 cm and copper cube of edge length 10.5 cm is denoted as X, find the value of 3X.\n\n(Given, density of iron = $7000\\ kg/m^3$ and density of copper = $8000\\ kg/m^3$)\n\n(Take $\\pi\\ =\\dfrac{22}{7}$)\n\n**Options:**\n\n**Correct Answer:** 88\n\n**Solution:**\nGiven, Density = Mass/Volume\nSo, Mass= Density*Volume\nSo, Mass of iron sphere: mass of copper cube = (Density of iron * Volume of iron sphere):(Density of copper * Volume of copper cube)\nor, $X\\ =\\ \\dfrac{7000\\times\\ \\dfrac{4}{3}\\pi\\ \\times\\ 21^3}{8000\\times\\ 10.5^3}$\nor, $X\\ =\\ \\dfrac{7000\\times\\ \\dfrac{4}{3}\\times\\ \\dfrac{22}{7}\\times\\ 21\\times\\ 21\\ \\times\\ 21}{8000\\times\\ 10.5\\times\\ 10.5\\times\\ 10.5}$\nor, $X\\ =\\ \\dfrac{88}{3}$\nor, $3X\\ =\\ 88$"
+    },
+    {
+      "qid": "quant-sectionals-26-20",
+      "passage_text": "",
+      "question_text": "A large sphere of radius R cm is melted to form N smaller spheres of radius r cm. The large sphere is painted blue at Rs. 36/cm², and each smaller sphere is painted red at Rs. 1/cm². If the total painting cost remains the same for both cases, find the value of N.",
+      "options": [],
+      "correct_option_data": "46656",
+      "solution_text": "A large sphere of radius R cm is melted to form N smaller spheres of radius r cm.\n=> $\\dfrac{4}{3}\\pi R^3=N\\times\\ \\dfrac{4}{3}\\pi r^3$\n$=>R=N^{\\frac{1}{3}}\\times\\ r$\nNow, the large sphere is painted blue at Rs. 36/cm². \n=> Cost of painting the large sphere = $36\\times\\ 4\\pi R^2$\nAnd each smaller sphere is painted red at Rs. 1/cm²\n=> Cost of painting all smaller spheres = $N\\times\\ 1\\times\\ 4\\pi r^2$\nThe total painting cost remains the same for both cases.\n=> $36\\times\\ 4\\pi R^2=N\\times\\ 1\\times\\ 4\\pi r^2$\nEliminating $4\\pi$ both sides and then taking root-\n=> $6\\times\\ R=N^{\\frac{1}{2}}\\times r$\nSubstituting the value of R from 1\n$6\\times N^{\\frac{1}{3}}\\times\\ r=N^{\\frac{1}{2}}\\times r$\n=> $6=N^{\\frac{1}{6}}$\n=> $N=6^6=46656$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA large sphere of radius R cm is melted to form N smaller spheres of radius r cm. The large sphere is painted blue at Rs. 36/cm², and each smaller sphere is painted red at Rs. 1/cm². If the total painting cost remains the same for both cases, find the value of N.\n\n**Options:**\n\n**Correct Answer:** 46656\n\n**Solution:**\nA large sphere of radius R cm is melted to form N smaller spheres of radius r cm.\n=> $\\dfrac{4}{3}\\pi R^3=N\\times\\ \\dfrac{4}{3}\\pi r^3$\n$=>R=N^{\\frac{1}{3}}\\times\\ r$\nNow, the large sphere is painted blue at Rs. 36/cm². \n=> Cost of painting the large sphere = $36\\times\\ 4\\pi R^2$\nAnd each smaller sphere is painted red at Rs. 1/cm²\n=> Cost of painting all smaller spheres = $N\\times\\ 1\\times\\ 4\\pi r^2$\nThe total painting cost remains the same for both cases.\n=> $36\\times\\ 4\\pi R^2=N\\times\\ 1\\times\\ 4\\pi r^2$\nEliminating $4\\pi$ both sides and then taking root-\n=> $6\\times\\ R=N^{\\frac{1}{2}}\\times r$\nSubstituting the value of R from 1\n$6\\times N^{\\frac{1}{3}}\\times\\ r=N^{\\frac{1}{2}}\\times r$\n=> $6=N^{\\frac{1}{6}}$\n=> $N=6^6=46656$"
+    },
+    {
+      "qid": "quant-sectionals-26-21",
+      "passage_text": "",
+      "question_text": "A man works 8 hours daily and can finish a work in 14 days. If he decreases his work hours by 20%, by what percentage should his efficiency increase so that he can still complete the work in the stipulated time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16.67",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "33.33",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The man can finish the work in 14 days If he works 8 hours a day. So he requires a total of $14\\times\\ 8=112$ hours to complete the work.\nLet the total work be 112 units, in that case his efficiency is 1 unit/hr.\nThe man decreases his work hours by 20%, which means he works $0.8\\times\\ 8=6.4$ hours daily.\nHe needs to finish his work in 14 days only, so he has a total of $14\\times6.4=89.6\\ $ hours.\nThe total work however will remain unchanged at 112 units.\nSo his efficiency y in the second case should be $\\dfrac{112}{89.6\\ }=1.25\\ $ units per day.\nSo percentage increase in efficiency is $\\dfrac{1.25-1}{1}\\times\\ 100=25\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man works 8 hours daily and can finish a work in 14 days. If he decreases his work hours by 20%, by what percentage should his efficiency increase so that he can still complete the work in the stipulated time?\n\n**Options:**\n- **A**. 16.67\n- **B**. 20\n- **C**. 25 ✅\n- **D**. 33.33\n\n**Correct Answer:** null\n\n**Solution:**\nThe man can finish the work in 14 days If he works 8 hours a day. So he requires a total of $14\\times\\ 8=112$ hours to complete the work.\nLet the total work be 112 units, in that case his efficiency is 1 unit/hr.\nThe man decreases his work hours by 20%, which means he works $0.8\\times\\ 8=6.4$ hours daily.\nHe needs to finish his work in 14 days only, so he has a total of $14\\times6.4=89.6\\ $ hours.\nThe total work however will remain unchanged at 112 units.\nSo his efficiency y in the second case should be $\\dfrac{112}{89.6\\ }=1.25\\ $ units per day.\nSo percentage increase in efficiency is $\\dfrac{1.25-1}{1}\\times\\ 100=25\\%$"
+    },
+    {
+      "qid": "quant-sectionals-26-22",
+      "passage_text": "",
+      "question_text": "In a $\\triangle ABC$, AD is the median to BC, and DE divides AC in the ratio of 2:1. $\\angle DAC=90^{\\circ}$ and $\\dfrac{AB}{DE}=\\sqrt{3}$. If $\\dfrac{BC}{AC}=\\sqrt{\\dfrac{a}{b}}$ such that a and b are co-prime to each other, then find the value of (a+b).",
+      "options": [],
+      "correct_option_data": "19",
+      "solution_text": "$\\angle DAC=90^{\\circ}$. This means that - $AD^2+AC^2=DC^2$ => $AD^2=DC^2-AC^2\\rightarrow1$\nNow, applying Apollonius' theorem in $\\ triangleABC$ -\n=> $2AD^2+\\dfrac{BC^2}{2}=AB^2+AC^2$\nSubstituting the value of $AD^2$ from eq. 1 \n=> $2\\left(DC^2-AC^2\\right)+\\dfrac{BC^2}{2}=AB^2+AC^2$, and we know that DC = BC/2\n=> $2\\times\\dfrac{BC^2}{4}-2AC^2+\\dfrac{BC^2}{2}=AB^2+AC^2$\n=> $AB^2=BC^2-3AC^2\\rightarrow2$\nNow, $\\angle DAC=90^{\\circ}$. This means that - $AD^2+AE^2=DE^2$ => $AD^2=$. Also, AE = 2AC/3 and DC = BC/2.\nSubstituting the value of $AD^2$, DC and AE in eq. 1 -\n$DE^2-\\left(\\dfrac{2AC}{3}\\right)^2=\\left(\\dfrac{BC}{2}\\right)^2-AC^2$\n=> $DE^2-\\dfrac{4AC^2}{9}=\\dfrac{BC^2}{4}-AC^2$\n=> $DE^2=\\dfrac{BC^2}{4}-\\dfrac{5AC^2}{9}\\rightarrow3$\nAlso, $AB=\\sqrt{3}DE$, thus $AB^2=3DE^2$\nSubstituting the values of $AB^2\\ and\\ DE^2$ from eq. 2 and eq. 3 -\n=> $BC^2-3AC^2=3\\left[\\dfrac{BC^2}{4}-\\dfrac{5AC^2}{9}\\right]$\n=> $\\dfrac{BC^2}{4}=3AC^2-\\dfrac{5AC^2}{3}$\n=> $\\dfrac{BC^2}{4}=\\dfrac{4AC^2}{3}$\n=> $\\dfrac{BC}{AC}=\\sqrt{\\dfrac{16}{3}}$\n=> a + b = 16 + 3 = 19.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a $\\triangle ABC$, AD is the median to BC, and DE divides AC in the ratio of 2:1. $\\angle DAC=90^{\\circ}$ and $\\dfrac{AB}{DE}=\\sqrt{3}$. If $\\dfrac{BC}{AC}=\\sqrt{\\dfrac{a}{b}}$ such that a and b are co-prime to each other, then find the value of (a+b).\n\n**Options:**\n\n**Correct Answer:** 19\n\n**Solution:**\n$\\angle DAC=90^{\\circ}$. This means that - $AD^2+AC^2=DC^2$ => $AD^2=DC^2-AC^2\\rightarrow1$\nNow, applying Apollonius' theorem in $\\ triangleABC$ -\n=> $2AD^2+\\dfrac{BC^2}{2}=AB^2+AC^2$\nSubstituting the value of $AD^2$ from eq. 1 \n=> $2\\left(DC^2-AC^2\\right)+\\dfrac{BC^2}{2}=AB^2+AC^2$, and we know that DC = BC/2\n=> $2\\times\\dfrac{BC^2}{4}-2AC^2+\\dfrac{BC^2}{2}=AB^2+AC^2$\n=> $AB^2=BC^2-3AC^2\\rightarrow2$\nNow, $\\angle DAC=90^{\\circ}$. This means that - $AD^2+AE^2=DE^2$ => $AD^2=$. Also, AE = 2AC/3 and DC = BC/2.\nSubstituting the value of $AD^2$, DC and AE in eq. 1 -\n$DE^2-\\left(\\dfrac{2AC}{3}\\right)^2=\\left(\\dfrac{BC}{2}\\right)^2-AC^2$\n=> $DE^2-\\dfrac{4AC^2}{9}=\\dfrac{BC^2}{4}-AC^2$\n=> $DE^2=\\dfrac{BC^2}{4}-\\dfrac{5AC^2}{9}\\rightarrow3$\nAlso, $AB=\\sqrt{3}DE$, thus $AB^2=3DE^2$\nSubstituting the values of $AB^2\\ and\\ DE^2$ from eq. 2 and eq. 3 -\n=> $BC^2-3AC^2=3\\left[\\dfrac{BC^2}{4}-\\dfrac{5AC^2}{9}\\right]$\n=> $\\dfrac{BC^2}{4}=3AC^2-\\dfrac{5AC^2}{3}$\n=> $\\dfrac{BC^2}{4}=\\dfrac{4AC^2}{3}$\n=> $\\dfrac{BC}{AC}=\\sqrt{\\dfrac{16}{3}}$\n=> a + b = 16 + 3 = 19."
+    }
+  ]
+}

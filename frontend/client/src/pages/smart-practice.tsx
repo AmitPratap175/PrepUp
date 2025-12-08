@@ -176,6 +176,7 @@ export default function SmartPracticePage() {
                                         <SelectContent>
                                             <SelectItem value="cat">CAT</SelectItem>
                                             <SelectItem value="gate">GATE</SelectItem>
+                                            <SelectItem value="xat">XAT</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>
@@ -206,6 +207,13 @@ export default function SmartPracticePage() {
                                                 <SelectItem value="Quantitative Aptitude">Quantitative Aptitude</SelectItem>
                                                 <SelectItem value="Verbal Ability">Verbal Ability</SelectItem>
                                                 <SelectItem value="Data Interpretation">Data Interpretation</SelectItem>
+                                            </>
+                                        ) : examType === 'xat' ? (
+                                            <>
+                                                <SelectItem value="Quantitative Aptitude">Quantitative Aptitude</SelectItem>
+                                                <SelectItem value="Verbal & Logical Reasoning">Verbal & Logical Reasoning</SelectItem>
+                                                <SelectItem value="Decision Making">Decision Making</SelectItem>
+                                                <SelectItem value="Essay">Essay</SelectItem>
                                             </>
                                         ) : (
                                             <>

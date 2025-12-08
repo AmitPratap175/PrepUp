@@ -102,7 +102,7 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
 
     browser_config = BrowserConfig(
         verbose=True,
-        headless=True,
+        headless=False,
         use_persistent_context=True,
         use_managed_browser=True,
         browser_type="chromium",
@@ -111,6 +111,7 @@ async def test_news_crawl(urls) -> Dict[str, List[str]]:
     run_config = CrawlerRunConfig(
         scan_full_page=True,
         js_code=[
+            "Array.from(document.querySelectorAll('a')).find(a => a.textContent.includes('Switch to old version'))?.click()",
             "window.scrollTo(0, document.body.scrollHeight);",
             "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Show Correct Answer'))?.click()",
         ],
@@ -477,12 +478,14 @@ if __name__ == "__main__":
         urls_raw = [line.strip() for line in f if line.strip()]
         urls = []
         for url_curr in urls_raw:
+            if "quant" in url_curr:
+                continue
             if "verbal" in url_curr:
                 type_curr = "varc"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 25)]
+                urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 25)]
             else:
                 type_curr = "dilr"
-                urls = [url_curr.split("=")[0]+f"={num}" for num in range(1, 23)]
+                urls = [url_curr.split("=")[0]+f"={num}&old=true" for num in range(1, 23)]
             urls.insert(0, urls[0])
     
             # Step 2: Crawl the web pages to get HTML content.

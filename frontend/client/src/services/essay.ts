@@ -12,12 +12,21 @@ export interface EssayTopic {
     created_at: string;
 }
 
+export interface XATEssayQuestion {
+    id: string;
+    qid: string;
+    passage_text: string | null;
+    question_text: string;
+    solution_text: string | null;
+}
+
 export interface Essay {
     id: string;
     title: string;
     content: string;
     topic_id?: string;
     topic_title?: string;
+    xat_question_id?: string;
     word_count: number;
     time_spent: number;
     status: "draft" | "submitted" | "reviewed";
@@ -102,7 +111,7 @@ export function useEssay(id: string) {
 export function useCreateEssay() {
     const queryClient = useQueryClient();
     return useMutation({
-        mutationFn: async (data: { title: string; topic_id?: string; content?: string }) => {
+        mutationFn: async (data: { title: string; topic_id?: string; xat_question_id?: string; content?: string }) => {
             const res = await apiRequest("POST", "/api/essays/", data);
             return res.json();
         },

@@ -1,0 +1,649 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-31-1",
+      "passage_text": "",
+      "question_text": "Two analog clocks are set at 12:00am on Monday ,one clock gains 2 minutes every hour and another clock loses 3 minutes every hour.When will they show the same time again.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12:00am Friday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12:00am Saturday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12:00am Sunday",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12:00pm Friday",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Now \n1st clock gains 2 minutes in 1 hour\n2nd clock loses 3 minutes in 1 hour\nso this means the net lag of time between them after 1 hour :5minutes\nNow they will show same time again if the lag between them becomes 12hrs or 720 minutes \nTherefore, they will show same time after (720)/5 = 144hours.\n144 hours is 6 days\nso they will meet after exactly 6 days i.e Sunday 12:00 am.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo analog clocks are set at 12:00am on Monday ,one clock gains 2 minutes every hour and another clock loses 3 minutes every hour.When will they show the same time again.\n\n**Options:**\n- **A**. 12:00am Friday\n- **B**. 12:00am Saturday\n- **C**. 12:00am Sunday ✅\n- **D**. 12:00pm Friday\n\n**Correct Answer:** null\n\n**Solution:**\nNow \n1st clock gains 2 minutes in 1 hour\n2nd clock loses 3 minutes in 1 hour\nso this means the net lag of time between them after 1 hour :5minutes\nNow they will show same time again if the lag between them becomes 12hrs or 720 minutes \nTherefore, they will show same time after (720)/5 = 144hours.\n144 hours is 6 days\nso they will meet after exactly 6 days i.e Sunday 12:00 am."
+    },
+    {
+      "qid": "quant-sectionals-31-2",
+      "passage_text": "",
+      "question_text": "What is the maximum number chords of length 10 cm can be drawn in a circle of radius 10 cm such that no two chords intersect each other?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Infinite number of chords can be drawn",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us consider a chord as shown in the above figure.\nThe angle subtended by a chord at the center=60 degrees\nNumber of chords possible= 360/60=6\nThe maximum number of such triangles has to be formed so that the number of chords will be maximum.\nIt is a regular hexagon with side 10 cm.\nThe maximum number of chords = 6\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the maximum number chords of length 10 cm can be drawn in a circle of radius 10 cm such that no two chords intersect each other?\n\n**Options:**\n- **A**. 7\n- **B**. 5\n- **C**. 6 ✅\n- **D**. Infinite number of chords can be drawn\n\n**Correct Answer:** null\n\n**Solution:**\nLet us consider a chord as shown in the above figure.\nThe angle subtended by a chord at the center=60 degrees\nNumber of chords possible= 360/60=6\nThe maximum number of such triangles has to be formed so that the number of chords will be maximum.\nIt is a regular hexagon with side 10 cm.\nThe maximum number of chords = 6\nC is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-31-3",
+      "passage_text": "",
+      "question_text": "Sachin buys some pen, pencils and erasers using a certain amount of money. The total price of 1 pencil and 1 eraser is equal to the price of 1 pen. He bought thrice as many pens as pencils and half as many pencils as erasers. If he had exchanged the number of pens and erasers, he would have saved Rs 20. How much money did he spend on buying pencils?\n\nEnter -1 if the answer can't be determined.",
+      "options": [],
+      "correct_option_data": "20",
+      "solution_text": "Assuming the price of 1 pencil and 1 eraser is a and b respectively. \nHence the price of 1 pen = a+b \nAssume, the number of pencils bought = x, then the number of erasers bought  = 2x and the number of pens bought  = 3x\nThe total money spent before exchanging = ax + 2xb+ 3x(a+b) = 4ax+5xb\nAfter exchanging, the money spent = ax+ 3xb + 2x(a+b) = 3ax+5xb\nHence, the money saved = ax = 20 (given)\n=> The money spent on buying pencils = 20",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSachin buys some pen, pencils and erasers using a certain amount of money. The total price of 1 pencil and 1 eraser is equal to the price of 1 pen. He bought thrice as many pens as pencils and half as many pencils as erasers. If he had exchanged the number of pens and erasers, he would have saved Rs 20. How much money did he spend on buying pencils?\n\nEnter -1 if the answer can't be determined.\n\n**Options:**\n\n**Correct Answer:** 20\n\n**Solution:**\nAssuming the price of 1 pencil and 1 eraser is a and b respectively. \nHence the price of 1 pen = a+b \nAssume, the number of pencils bought = x, then the number of erasers bought  = 2x and the number of pens bought  = 3x\nThe total money spent before exchanging = ax + 2xb+ 3x(a+b) = 4ax+5xb\nAfter exchanging, the money spent = ax+ 3xb + 2x(a+b) = 3ax+5xb\nHence, the money saved = ax = 20 (given)\n=> The money spent on buying pencils = 20"
+    },
+    {
+      "qid": "quant-sectionals-31-4",
+      "passage_text": "",
+      "question_text": "A coin of diameter $3 cm$ is thrown on a square mat of area $100 cm ^2$. What is the probability that the coin will fall entirely within the square?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.7225",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.64",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0.16",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0.49",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The area of the square mat is $100 cm^2$. Therefore, the side of the mat must be $\\sqrt{100}$ = $10 cm$. \nThe centre of the coin must be at least $1.5 cm$ away from the edge of the mat if the coin were to lie completely within the mat. Therefore, the area within which the centre of the coin can fall will be a square of side $10 - 2*1.5$ = $7 cm$.\nTherefore, the area inside which the centre of the coin can fall = $49 cm^2$.\nTotal area = $100 cm^2$.\nTherefore, the probability is $\\frac{49}{100}$ = $0.49$. Hence, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA coin of diameter $3 cm$ is thrown on a square mat of area $100 cm ^2$. What is the probability that the coin will fall entirely within the square?\n\n**Options:**\n- **A**. 0.7225\n- **B**. 0.64\n- **C**. 0.16\n- **D**. 0.49 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe area of the square mat is $100 cm^2$. Therefore, the side of the mat must be $\\sqrt{100}$ = $10 cm$. \nThe centre of the coin must be at least $1.5 cm$ away from the edge of the mat if the coin were to lie completely within the mat. Therefore, the area within which the centre of the coin can fall will be a square of side $10 - 2*1.5$ = $7 cm$.\nTherefore, the area inside which the centre of the coin can fall = $49 cm^2$.\nTotal area = $100 cm^2$.\nTherefore, the probability is $\\frac{49}{100}$ = $0.49$. Hence, option D is the right answer."
+    },
+    {
+      "qid": "quant-sectionals-31-5",
+      "passage_text": "",
+      "question_text": "Hour hand and minute hand of a clock coincides every 64 minutes. How much time time does the clock gain or lose in a day?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$32\\ \\frac{8}{11}$ minutes gain",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$32\\ \\frac{8}{11}$ minutes lose",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$31\\ \\frac{4}{11}$ minutes gain",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$31\\ \\frac{4}{11}$ minutes lose",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "In a correct clock the hour and minute hands coincide after every $\\frac{360}{5.5}=\\frac{720}{11}\\ $ minutes or $65\\ \\frac{5}{11}$ minutes\nTherefore, 64 minutes of correct clock = $65\\ \\frac{5}{11}$ minutes of the faulty clock\nTherefore, 60 minutes of correct clock = $61\\ \\frac{4}{11}$ minutes of the faulty clock\nHence, the incorrect clock gains $1\\ \\frac{4}{11}$ minutes per hour\nTherefore, total gain in 24 hr = $\\frac{15}{11}\\times24=\\ 32\\ \\frac{8}{11}$ minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHour hand and minute hand of a clock coincides every 64 minutes. How much time time does the clock gain or lose in a day?\n\n**Options:**\n- **A**. $32\\ \\frac{8}{11}$ minutes gain ✅\n- **B**. $32\\ \\frac{8}{11}$ minutes lose\n- **C**. $31\\ \\frac{4}{11}$ minutes gain\n- **D**. $31\\ \\frac{4}{11}$ minutes lose\n\n**Correct Answer:** null\n\n**Solution:**\nIn a correct clock the hour and minute hands coincide after every $\\frac{360}{5.5}=\\frac{720}{11}\\ $ minutes or $65\\ \\frac{5}{11}$ minutes\nTherefore, 64 minutes of correct clock = $65\\ \\frac{5}{11}$ minutes of the faulty clock\nTherefore, 60 minutes of correct clock = $61\\ \\frac{4}{11}$ minutes of the faulty clock\nHence, the incorrect clock gains $1\\ \\frac{4}{11}$ minutes per hour\nTherefore, total gain in 24 hr = $\\frac{15}{11}\\times24=\\ 32\\ \\frac{8}{11}$ minutes"
+    },
+    {
+      "qid": "quant-sectionals-31-6",
+      "passage_text": "",
+      "question_text": "Six men and five women can do a work in 8 days. Fourteen men and four women can do the same work in 4 days. What is the difference between the number of days in which one woman can complete the entire work and the number of days in which a man can complete it?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$127\\frac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$112\\frac{2}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$122\\frac{2}{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$112\\frac{1}{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let us assume that each man can do 'm' units/day.\nEach woman can do 'w' units/day.\n(6m+5w)8 = (14m+4w)4\n48m+40w = 56m+16w\nm=3w\nTotal work in woman days = (23*8)w = 184 days\nTotal work in man days = (23*8/3)m =184/3 days \nDifference = $122\\frac{2}{3}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nSix men and five women can do a work in 8 days. Fourteen men and four women can do the same work in 4 days. What is the difference between the number of days in which one woman can complete the entire work and the number of days in which a man can complete it?\n\n**Options:**\n- **A**. $127\\frac{2}{3}$\n- **B**. $112\\frac{2}{3}$\n- **C**. $122\\frac{2}{3}$ ✅\n- **D**. $112\\frac{1}{3}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet us assume that each man can do 'm' units/day.\nEach woman can do 'w' units/day.\n(6m+5w)8 = (14m+4w)4\n48m+40w = 56m+16w\nm=3w\nTotal work in woman days = (23*8)w = 184 days\nTotal work in man days = (23*8/3)m =184/3 days \nDifference = $122\\frac{2}{3}$"
+    },
+    {
+      "qid": "quant-sectionals-31-7",
+      "passage_text": "",
+      "question_text": "Rinesh and Rinsha are moving in the same direction around a circular track of radius 7 m. The ratio of the speed of Rinesh to Rinsha is 7:1. How many times are they diametrically opposite to each other during a lap of Rinsha?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The ratio of the speed of Rinesh to Rinsha = 7:1 \nIf the ratio of the speed of two persons moving in the same direction on a circular track is in the ratio of a:b, then the number of distinct meeting points = |a-b|.\nDuring one lap of Rinsha, Rinesh will do 7 laps around the circular track, i.e. they will meet at 6 distinct points.\nThe number of times they are diametrically opposite to each other is the number of distinct points they will meet.\nThey will be diametrically opposite for 6 times during one lap of Rinsha.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRinesh and Rinsha are moving in the same direction around a circular track of radius 7 m. The ratio of the speed of Rinesh to Rinsha is 7:1. How many times are they diametrically opposite to each other during a lap of Rinsha?\n\n**Options:**\n\n**Correct Answer:** 6\n\n**Solution:**\nThe ratio of the speed of Rinesh to Rinsha = 7:1 \nIf the ratio of the speed of two persons moving in the same direction on a circular track is in the ratio of a:b, then the number of distinct meeting points = |a-b|.\nDuring one lap of Rinsha, Rinesh will do 7 laps around the circular track, i.e. they will meet at 6 distinct points.\nThe number of times they are diametrically opposite to each other is the number of distinct points they will meet.\nThey will be diametrically opposite for 6 times during one lap of Rinsha."
+    },
+    {
+      "qid": "quant-sectionals-31-8",
+      "passage_text": "",
+      "question_text": "If y years ago, Anand's age was thrice Ananth's age. y years hence, Anand's age will be twice Ananth's age. Ratio of the present  age of Anand and Ananth is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7:3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5:2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the present age of Anand be a and that of Ananth be b\ny years ago, \na - y = 3(b-y)\na = 3b - 3y +y\na = 3b - 2y  --- Eq 1\ny years hence, \na + y = 2(b+y)\na = 2b + 2y - y\na = 2b + y   --- Eq 2\nOn equating Eq 1 and 2, we get\n3b - 2y = 2b + y\nb = 3y\nOn substituting the value of b in Eq i, we get \na = 9y - 2y = 7y\nThe ratio of their present ages = 7y : 3y \n= 7: 3",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf y years ago, Anand's age was thrice Ananth's age. y years hence, Anand's age will be twice Ananth's age. Ratio of the present  age of Anand and Ananth is\n\n**Options:**\n- **A**. 9:4\n- **B**. 7:4\n- **C**. 7:3 ✅\n- **D**. 5:2\n\n**Correct Answer:** null\n\n**Solution:**\nLet the present age of Anand be a and that of Ananth be b\ny years ago, \na - y = 3(b-y)\na = 3b - 3y +y\na = 3b - 2y  --- Eq 1\ny years hence, \na + y = 2(b+y)\na = 2b + 2y - y\na = 2b + y   --- Eq 2\nOn equating Eq 1 and 2, we get\n3b - 2y = 2b + y\nb = 3y\nOn substituting the value of b in Eq i, we get \na = 9y - 2y = 7y\nThe ratio of their present ages = 7y : 3y \n= 7: 3"
+    },
+    {
+      "qid": "quant-sectionals-31-9",
+      "passage_text": "",
+      "question_text": "A number is represented as 1212 in base N and as 250 in base N+2. Find the sum of even factors of the number.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "144",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "180",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The number in base 10 = $N^3+2N^2+N+2\\ $ = $2\\left(N+2\\right)^2+5\\left(N+2\\right)$\nThus,\n$N^3+2N^2+N+2\\ =\\ 2\\left(N+2\\right)^2+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2\\left(N^2+4N+4\\right)+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2N^2+8N+8+5N+10$\n$N^3-12N-16=0$\nBy hit and trial we see that N = -2 satisfies the equation, hence N+2 is a factor. Dividing the expression by N+2, we get,\n$N^3-12N-16=\\left(N+2\\right)^2\\left(N-4\\right)$\nSo it has 2 factors, N = -2 and N = 4.\nSince base cannot be negative, N = 4 is the right base.\nN + 2 =6\nSo, in base 6, the number is 250.\nHence in base 10 (decimal system), N = $2\\times\\ 6^2+5\\times\\ 6=72+30=102$\n102 = $2\\times\\ 3\\times\\ 17$\nHence, sum of even powers = $2^1\\left(3^0+3^1\\right)\\left(17^0+17^1\\right)=2\\times\\ 4\\times\\ 18=144$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA number is represented as 1212 in base N and as 250 in base N+2. Find the sum of even factors of the number.\n\n**Options:**\n- **A**. 144 ✅\n- **B**. 72\n- **C**. 90\n- **D**. 180\n\n**Correct Answer:** null\n\n**Solution:**\nThe number in base 10 = $N^3+2N^2+N+2\\ $ = $2\\left(N+2\\right)^2+5\\left(N+2\\right)$\nThus,\n$N^3+2N^2+N+2\\ =\\ 2\\left(N+2\\right)^2+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2\\left(N^2+4N+4\\right)+5\\left(N+2\\right)$\n$N^3+2N^2+N+2\\ =\\ 2N^2+8N+8+5N+10$\n$N^3-12N-16=0$\nBy hit and trial we see that N = -2 satisfies the equation, hence N+2 is a factor. Dividing the expression by N+2, we get,\n$N^3-12N-16=\\left(N+2\\right)^2\\left(N-4\\right)$\nSo it has 2 factors, N = -2 and N = 4.\nSince base cannot be negative, N = 4 is the right base.\nN + 2 =6\nSo, in base 6, the number is 250.\nHence in base 10 (decimal system), N = $2\\times\\ 6^2+5\\times\\ 6=72+30=102$\n102 = $2\\times\\ 3\\times\\ 17$\nHence, sum of even powers = $2^1\\left(3^0+3^1\\right)\\left(17^0+17^1\\right)=2\\times\\ 4\\times\\ 18=144$"
+    },
+    {
+      "qid": "quant-sectionals-31-10",
+      "passage_text": "",
+      "question_text": "In a class of 20 students, the average age decreases by 2 years when a new student joins. 3 more students whose ages are 12, 13 and 17 years join. The ratio of new average to the original average is $\\frac{p}{q},$ where p,q are co-prime integers. Find p+q.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the original average is a.\nAfter 1 student joins, the sum of the ages = 21(a-2) = 21a-42\nAfter three more students join, the sum of age = 21a-42+12+13+17 = 21a\nThe new average age = $\\frac{21a}{20+1+3}=\\ \\frac{21a}{24}=\\frac{7a}{8}$\nThe ratio of new average to the original average = $\\frac{7}{8}=\\frac{p}{q}$\np+q = 7+8 = 15",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a class of 20 students, the average age decreases by 2 years when a new student joins. 3 more students whose ages are 12, 13 and 17 years join. The ratio of new average to the original average is $\\frac{p}{q},$ where p,q are co-prime integers. Find p+q.\n\n**Options:**\n- **A**. 15 ✅\n- **B**. 45\n- **C**. 30\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the original average is a.\nAfter 1 student joins, the sum of the ages = 21(a-2) = 21a-42\nAfter three more students join, the sum of age = 21a-42+12+13+17 = 21a\nThe new average age = $\\frac{21a}{20+1+3}=\\ \\frac{21a}{24}=\\frac{7a}{8}$\nThe ratio of new average to the original average = $\\frac{7}{8}=\\frac{p}{q}$\np+q = 7+8 = 15"
+    },
+    {
+      "qid": "quant-sectionals-31-11",
+      "passage_text": "",
+      "question_text": "The speed of an elevator varies linearly with the square-root of the number of people in it. When 9 people are there in the lift, it can go from 1st floor to the 3rd floor, which are 100 m apart, in 10 sec. When there are 4 people in the lift, it can move from 5th floor to the 12th floor, which are 700 m apart, in 35 seconds. What is the minimum number of people that should be present in the lift so that it stops moving?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the speed of the elevator be $a+k\\sqrt{p}$.\nWhere a and k are constant, and p is the number of people in the lift.\nSpeed when 9 people are there is $a+k\\sqrt{9}=100/10=10 m/s$.\n=> $a+3k=10$\nSimilarly, when 4 people are there in the lift, the speed is $a+k\\sqrt{4}= a+2k=700/35=20m/s$\n=> k=-10 and a=40 m/s\nThe lift will stop moving when it speed is zero. In that case\n$a+k\\sqrt{p}=0$\n$40=10\\sqrt{p}$\n$a+k\\sqrt{p}=0$\n=> p=16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe speed of an elevator varies linearly with the square-root of the number of people in it. When 9 people are there in the lift, it can go from 1st floor to the 3rd floor, which are 100 m apart, in 10 sec. When there are 4 people in the lift, it can move from 5th floor to the 12th floor, which are 700 m apart, in 35 seconds. What is the minimum number of people that should be present in the lift so that it stops moving?\n\n**Options:**\n- **A**. 24\n- **B**. 20\n- **C**. 12\n- **D**. 16 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the speed of the elevator be $a+k\\sqrt{p}$.\nWhere a and k are constant, and p is the number of people in the lift.\nSpeed when 9 people are there is $a+k\\sqrt{9}=100/10=10 m/s$.\n=> $a+3k=10$\nSimilarly, when 4 people are there in the lift, the speed is $a+k\\sqrt{4}= a+2k=700/35=20m/s$\n=> k=-10 and a=40 m/s\nThe lift will stop moving when it speed is zero. In that case\n$a+k\\sqrt{p}=0$\n$40=10\\sqrt{p}$\n$a+k\\sqrt{p}=0$\n=> p=16"
+    },
+    {
+      "qid": "quant-sectionals-31-12",
+      "passage_text": "",
+      "question_text": "Ramesh goes to a wholesale store and buys certain mangoes at the rate of 12 for 180. He also buys thrice as many apples as mangoes at the rate of 9 for 72. While returning back, one- fourth of the mangoes and one third of the apples get damaged. Damaged fruits have to be discarded as no one buys them. He sells the remaining apples at the price of 3 apples for 50 rupees. At what approximate price should he sell each of the remaining mangoes so that his profit in the entire transaction is 25 percent?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "28$\\frac{2}{7}$ rupees",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "26$\\frac{1}{9}$ rupees",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20$\\frac{5}{9}$ rupees",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "24$\\frac{1}{3}$ rupees",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let’s assume that Ramesh buys 12 mangoes and 36 apples. So the amount spent by him in buying the fruits is 180 + 288 = 468\nHence, in order to earn a profit of 25 percent, he must earn rupees 468*1.25 = 585.\nIt is given that one third of the apples are damaged. Hence, amount earned from apples = 8*50 = 400. Thus, he needs to make 185 rupees from selling mangoes. Mangoes available for sale are 9. Thus, required selling price is 185/9 = 20$\\frac{5}{9}$ rupees.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRamesh goes to a wholesale store and buys certain mangoes at the rate of 12 for 180. He also buys thrice as many apples as mangoes at the rate of 9 for 72. While returning back, one- fourth of the mangoes and one third of the apples get damaged. Damaged fruits have to be discarded as no one buys them. He sells the remaining apples at the price of 3 apples for 50 rupees. At what approximate price should he sell each of the remaining mangoes so that his profit in the entire transaction is 25 percent?\n\n**Options:**\n- **A**. 28$\\frac{2}{7}$ rupees\n- **B**. 26$\\frac{1}{9}$ rupees\n- **C**. 20$\\frac{5}{9}$ rupees ✅\n- **D**. 24$\\frac{1}{3}$ rupees\n\n**Correct Answer:** null\n\n**Solution:**\nLet’s assume that Ramesh buys 12 mangoes and 36 apples. So the amount spent by him in buying the fruits is 180 + 288 = 468\nHence, in order to earn a profit of 25 percent, he must earn rupees 468*1.25 = 585.\nIt is given that one third of the apples are damaged. Hence, amount earned from apples = 8*50 = 400. Thus, he needs to make 185 rupees from selling mangoes. Mangoes available for sale are 9. Thus, required selling price is 185/9 = 20$\\frac{5}{9}$ rupees."
+    },
+    {
+      "qid": "quant-sectionals-31-13",
+      "passage_text": "",
+      "question_text": "A regular hexagonal ABCDEF is drawn and the lines AE and AD are joined. If the area of triangle AED is 30 square cm, then find the area(in sq cm) of the hexagon.",
+      "options": [],
+      "correct_option_data": "90",
+      "solution_text": "Each interior angle of a regular hexagon is 120$^{\\circ\\ }$ [SInce interior angle of $n$ sided regular polygon = $\\frac{(n-2)180}{n}$]\nIn the figure, the angles are represented using the properties of the isosceles triangle AFE. (${\\angle\\ FEA\\ =\\ \\angle\\ FAE\\ =\\ 30^{\\circ\\ }}$)\nHence, $\\angle\\ AFD\\ =\\ 120^{\\circ\\ }-30^{\\circ\\ }$ = $90^{\\circ\\ }$\nAlso, $\\angle\\ FDA\\ =60^{\\circ\\ }$    (using symmetry)\nAssume the length of the sides of hexagonal is a. DE = a\nIn right triangle DEA, $\\tan\\ 30^{\\circ\\ }$ = $\\frac{DE}{AE}$  => AE = $DE\\sqrt{3}\\ =a\\sqrt{3}$\nArea of DEA = $\\ \\frac{\\ 1}{2}\\times\\ DE\\times\\ AE$ = $\\ \\frac{\\ 1}{2}\\times a\\times a\\sqrt{3}$ = $\\frac{a^2\\sqrt{3}}{2}$  = 30 ....(1)\nTo calculate the area of hexagon, if the AD, BE and CF are joined, the hexagon will be divided into 6 equilateral triangles having side a.\nSo the area of hexagon ABCDEF = $6\\times\\ \\frac{\\sqrt{3}}{4}a^2$  = $\\ \\frac{3\\sqrt{3}}{2}a^2$ = 3*30 =90 (From 1)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA regular hexagonal ABCDEF is drawn and the lines AE and AD are joined. If the area of triangle AED is 30 square cm, then find the area(in sq cm) of the hexagon.\n\n**Options:**\n\n**Correct Answer:** 90\n\n**Solution:**\nEach interior angle of a regular hexagon is 120$^{\\circ\\ }$ [SInce interior angle of $n$ sided regular polygon = $\\frac{(n-2)180}{n}$]\nIn the figure, the angles are represented using the properties of the isosceles triangle AFE. (${\\angle\\ FEA\\ =\\ \\angle\\ FAE\\ =\\ 30^{\\circ\\ }}$)\nHence, $\\angle\\ AFD\\ =\\ 120^{\\circ\\ }-30^{\\circ\\ }$ = $90^{\\circ\\ }$\nAlso, $\\angle\\ FDA\\ =60^{\\circ\\ }$    (using symmetry)\nAssume the length of the sides of hexagonal is a. DE = a\nIn right triangle DEA, $\\tan\\ 30^{\\circ\\ }$ = $\\frac{DE}{AE}$  => AE = $DE\\sqrt{3}\\ =a\\sqrt{3}$\nArea of DEA = $\\ \\frac{\\ 1}{2}\\times\\ DE\\times\\ AE$ = $\\ \\frac{\\ 1}{2}\\times a\\times a\\sqrt{3}$ = $\\frac{a^2\\sqrt{3}}{2}$  = 30 ....(1)\nTo calculate the area of hexagon, if the AD, BE and CF are joined, the hexagon will be divided into 6 equilateral triangles having side a.\nSo the area of hexagon ABCDEF = $6\\times\\ \\frac{\\sqrt{3}}{4}a^2$  = $\\ \\frac{3\\sqrt{3}}{2}a^2$ = 3*30 =90 (From 1)"
+    },
+    {
+      "qid": "quant-sectionals-31-14",
+      "passage_text": "",
+      "question_text": "In the figure given below, the lines represent one- way roads which allow travel only northwards or eastwards. Find the number of distinct routes by which a person can reach point B from A.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "270",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "210",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "630",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "670",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "A person can take 4 steps along south-north direction and  6 steps along west-east direction.\nHence total number of ways = $\\dfrac{\\left(4+6\\right)!}{4!6!}$ = 210",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_20200427_171609.png",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn the figure given below, the lines represent one- way roads which allow travel only northwards or eastwards. Find the number of distinct routes by which a person can reach point B from A.\n\n**Options:**\n- **A**. 270\n- **B**. 210 ✅\n- **C**. 630\n- **D**. 670\n\n**Correct Answer:** null\n\n**Solution:**\nA person can take 4 steps along south-north direction and  6 steps along west-east direction.\nHence total number of ways = $\\dfrac{\\left(4+6\\right)!}{4!6!}$ = 210"
+    },
+    {
+      "qid": "quant-sectionals-31-15",
+      "passage_text": "",
+      "question_text": "In a beaker 1 bacteria is kept at t=0 sec. Immediately before every second, the bacteria triples itself and immediately after every 2 seconds a disinfectant kills 1/3 of the bacteria. What is the number of bacteria in the beaker at t = 2019 s?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2$^{1009}$ x   3$^{1010}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2$^{2019}$ x   3$^{2019}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2$^{1010}$ x   3$^{1010}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2$^{1009}$ x   3$^{1009}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Number of bacteria in the beaker at t = 0, sec = 1 bacteria\nTotal number of bacteria in the beaker after 1 sec = 1 x 3= 3 bacteria\nTotal number of bacteria after 2 sec= Number of bacteria after multiplying - bacteria killed by disinfectant. = 3 x 3 - 3 x 3/3 = 3 x 2 = 6 bacteria\nNumber of bacteria killed by disinfectant at 2nd sec = 3.\nTotal number of bacteria after 3 sec =6 x 3=18 bacteria\nTotal number of bacteria after 4 sec =18 x 2= 36 bacteria\n......\nSo the number of bacteria becomes 6 times at the end of every two seconds.\nTill t=2018, the number of bacteria in the beaker will be = 1x$6^{1009}$=2$^{1009}$ x   3$^{1009}$ \nAt t=2019 the number of bacteria will triple, thus the number of bacteria will be  = 2$^{1009}$ x 3$^{1010}$ \nHence A is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a beaker 1 bacteria is kept at t=0 sec. Immediately before every second, the bacteria triples itself and immediately after every 2 seconds a disinfectant kills 1/3 of the bacteria. What is the number of bacteria in the beaker at t = 2019 s?\n\n**Options:**\n- **A**. 2$^{1009}$ x   3$^{1010}$ ✅\n- **B**. 2$^{2019}$ x   3$^{2019}$\n- **C**. 2$^{1010}$ x   3$^{1010}$\n- **D**. 2$^{1009}$ x   3$^{1009}$\n\n**Correct Answer:** null\n\n**Solution:**\nNumber of bacteria in the beaker at t = 0, sec = 1 bacteria\nTotal number of bacteria in the beaker after 1 sec = 1 x 3= 3 bacteria\nTotal number of bacteria after 2 sec= Number of bacteria after multiplying - bacteria killed by disinfectant. = 3 x 3 - 3 x 3/3 = 3 x 2 = 6 bacteria\nNumber of bacteria killed by disinfectant at 2nd sec = 3.\nTotal number of bacteria after 3 sec =6 x 3=18 bacteria\nTotal number of bacteria after 4 sec =18 x 2= 36 bacteria\n......\nSo the number of bacteria becomes 6 times at the end of every two seconds.\nTill t=2018, the number of bacteria in the beaker will be = 1x$6^{1009}$=2$^{1009}$ x   3$^{1009}$ \nAt t=2019 the number of bacteria will triple, thus the number of bacteria will be  = 2$^{1009}$ x 3$^{1010}$ \nHence A is correct."
+    },
+    {
+      "qid": "quant-sectionals-31-16",
+      "passage_text": "",
+      "question_text": "A cylindrical pencil consists of a layer of wood surrounding a solid cylinder of graphite. The radius of the pencil is 6 mm, the radius of the graphite cylinder is 2 mm and the length of the pencil is 10 cm. Find the cost of the material used in a pencil, if the cost of wood is Rs. 0.70/cm3 and that of graphite is Rs. 2.80/cm3.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 7.85",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 8.76",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 9.36",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 10.56",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Volume of the whole pencil = $3.6\\pi$ cm^3\nVolume of graphite cylinder = $0.4\\pi$ cm^3\nVolume of wood part = $3.6\\pi-0.4\\pi=3.2\\pi$ cm^3\nCost of the pencil\n= $3.2\\times\\frac{22}{7}\\times0.7+0.4\\times\\frac{22}{7}\\times2.8$\n= Rs. 10.56",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA cylindrical pencil consists of a layer of wood surrounding a solid cylinder of graphite. The radius of the pencil is 6 mm, the radius of the graphite cylinder is 2 mm and the length of the pencil is 10 cm. Find the cost of the material used in a pencil, if the cost of wood is Rs. 0.70/cm3 and that of graphite is Rs. 2.80/cm3.\n\n**Options:**\n- **A**. Rs. 7.85\n- **B**. Rs. 8.76\n- **C**. Rs. 9.36\n- **D**. Rs. 10.56 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nVolume of the whole pencil = $3.6\\pi$ cm^3\nVolume of graphite cylinder = $0.4\\pi$ cm^3\nVolume of wood part = $3.6\\pi-0.4\\pi=3.2\\pi$ cm^3\nCost of the pencil\n= $3.2\\times\\frac{22}{7}\\times0.7+0.4\\times\\frac{22}{7}\\times2.8$\n= Rs. 10.56"
+    },
+    {
+      "qid": "quant-sectionals-31-17",
+      "passage_text": "",
+      "question_text": "Find the area of the region bounded by the curve $f(x)=|x+3|+|x+7|$ and the line $y=6$.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10 Sq. units",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24 Sq. units",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12 Sq. units",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16 Sq. units",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Below is the graph for the given curve and line:\nFor the curve, the two critical points are -3 and -7. For any value of 'x' between -3 and -7, the value of y will always be 4.\nThe enclosed area is that of a trapezium with two parallel bases of length 4 and 6 units and height 2 units.\n$\\therefore$ area of bounded region = $\\frac{1}{2}\\times (4+6)\\times2$ Sq. units = 10 Sq. units.\nHence, option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the area of the region bounded by the curve $f(x)=|x+3|+|x+7|$ and the line $y=6$.\n\n**Options:**\n- **A**. 10 Sq. units ✅\n- **B**. 24 Sq. units\n- **C**. 12 Sq. units\n- **D**. 16 Sq. units\n\n**Correct Answer:** null\n\n**Solution:**\nBelow is the graph for the given curve and line:\nFor the curve, the two critical points are -3 and -7. For any value of 'x' between -3 and -7, the value of y will always be 4.\nThe enclosed area is that of a trapezium with two parallel bases of length 4 and 6 units and height 2 units.\n$\\therefore$ area of bounded region = $\\frac{1}{2}\\times (4+6)\\times2$ Sq. units = 10 Sq. units.\nHence, option A is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-31-18",
+      "passage_text": "",
+      "question_text": "The difference between compound interest and simple interest on a certain sum borrowed at R% per annum for a period of 2 years is Rs.384 and for a period of 3 years is Rs.1344. Find the time in which the sum becomes 6 times itself at simple interest.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the borrowed sum be P \nNow, we know that \nThe difference between compound interest and simple interest for a period of 2 years is given by: $P\\left(\\frac{R}{100}\\right)^2$ \nThe difference between compound interest and simple interest for a period of 3 years is given by:$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$\nso, substituting the given values we get :\n$P\\left(\\frac{R}{100}\\right)^2$=384         (1)\n$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$ = 1344     (2)\nDividing equation (2) and (1) we get\n$\\left(\\frac{R}{100}+3\\right)$=$\\frac{1344}{384}$\n⇒$\\left(\\frac{R}{100}+3\\right)$=$\\frac{7}{2}$\n⇒$\\left(\\frac{R}{100}\\right)$=$\\frac{1}{2}$\n⇒R=50%\nNow let sum becomes 6 times itself in T years at simple interest\nWe know that \nAmount = Principal (sum borrowed)+Interest(in this case it is simple interest)\n⇒6P=P+$\\frac{\\left(P\\times\\ 50\\times\\ T\\ \\right)}{100}$\n⇒5P=$\\frac{PT}{2}$\n⇒T=10\nHence the sum becomes 6 times itself in 10 years.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe difference between compound interest and simple interest on a certain sum borrowed at R% per annum for a period of 2 years is Rs.384 and for a period of 3 years is Rs.1344. Find the time in which the sum becomes 6 times itself at simple interest.\n\n**Options:**\n- **A**. 5\n- **B**. 10 ✅\n- **C**. 15\n- **D**. 20\n\n**Correct Answer:** null\n\n**Solution:**\nLet the borrowed sum be P \nNow, we know that \nThe difference between compound interest and simple interest for a period of 2 years is given by: $P\\left(\\frac{R}{100}\\right)^2$ \nThe difference between compound interest and simple interest for a period of 3 years is given by:$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$\nso, substituting the given values we get :\n$P\\left(\\frac{R}{100}\\right)^2$=384         (1)\n$P\\left(\\frac{R}{100}\\right)^2\\left(\\frac{R}{100}+3\\right)$ = 1344     (2)\nDividing equation (2) and (1) we get\n$\\left(\\frac{R}{100}+3\\right)$=$\\frac{1344}{384}$\n⇒$\\left(\\frac{R}{100}+3\\right)$=$\\frac{7}{2}$\n⇒$\\left(\\frac{R}{100}\\right)$=$\\frac{1}{2}$\n⇒R=50%\nNow let sum becomes 6 times itself in T years at simple interest\nWe know that \nAmount = Principal (sum borrowed)+Interest(in this case it is simple interest)\n⇒6P=P+$\\frac{\\left(P\\times\\ 50\\times\\ T\\ \\right)}{100}$\n⇒5P=$\\frac{PT}{2}$\n⇒T=10\nHence the sum becomes 6 times itself in 10 years."
+    },
+    {
+      "qid": "quant-sectionals-31-19",
+      "passage_text": "",
+      "question_text": "If x, y, z are positive integers then find the range of $A=\\frac{xyz}{(x+y+z)(xy+yz+zx)}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$0<A\\leq1/9$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$1/9\\leq A<1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$1/3\\leq A<1/9$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Applying $AM\\geq GM$\n$x+y+z\\geq 3{xyz}^{1/3}$\nSimilarly $xy+yz+zx\\geq 3{xyz}^{2/3}$\nThe value of the expression $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ is maximum when the denomiator is minimum.\nMaximum value of $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ = $\\frac{xyz}{(9(xyz)^{1/3})(xyz)^{2/3}}$ = 1/9\nFor minimum value consider x = 1, y = 1 and z = 100000\nWe get a value very close to zero\nHence $0<A\\leq1/9$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf x, y, z are positive integers then find the range of $A=\\frac{xyz}{(x+y+z)(xy+yz+zx)}$\n\n**Options:**\n- **A**. $0<A\\leq1/9$ ✅\n- **B**. $1/9\\leq A<1$\n- **C**. $1/3\\leq A<1/9$\n- **D**. None of these\n\n**Correct Answer:** null\n\n**Solution:**\nApplying $AM\\geq GM$\n$x+y+z\\geq 3{xyz}^{1/3}$\nSimilarly $xy+yz+zx\\geq 3{xyz}^{2/3}$\nThe value of the expression $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ is maximum when the denomiator is minimum.\nMaximum value of $\\frac{xyz}{(x+y+z)(xy+yz+zx)}$ = $\\frac{xyz}{(9(xyz)^{1/3})(xyz)^{2/3}}$ = 1/9\nFor minimum value consider x = 1, y = 1 and z = 100000\nWe get a value very close to zero\nHence $0<A\\leq1/9$"
+    },
+    {
+      "qid": "quant-sectionals-31-20",
+      "passage_text": "",
+      "question_text": "A man cheats while buying as well as while selling. While buying he takes 10 % more than what he pays for and while selling he gives 20 % less than what he claims to. Find his profit percentage, if he sells at 9.09 % below the cost price of the claimed weight.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "19.81 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "37.5%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost of items be 100 rs, for 100 rs he got items of worth 110rs.\nWhile selling, he sells items of only 80rs worth for 100 rs also he gives 9.09% discount\nSo, his revenue for items of 110 rs will be $110\\cdot\\frac{100}{80}\\cdot\\left(1-\\frac{10}{11}\\right)$ =125rs\n.'. Profit percentage=$\\frac{\\left(125-100\\right)}{100}\\cdot100=25\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA man cheats while buying as well as while selling. While buying he takes 10 % more than what he pays for and while selling he gives 20 % less than what he claims to. Find his profit percentage, if he sells at 9.09 % below the cost price of the claimed weight.\n\n**Options:**\n- **A**. 19.81 %\n- **B**. 20%\n- **C**. 37.5%\n- **D**. 25% ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost of items be 100 rs, for 100 rs he got items of worth 110rs.\nWhile selling, he sells items of only 80rs worth for 100 rs also he gives 9.09% discount\nSo, his revenue for items of 110 rs will be $110\\cdot\\frac{100}{80}\\cdot\\left(1-\\frac{10}{11}\\right)$ =125rs\n.'. Profit percentage=$\\frac{\\left(125-100\\right)}{100}\\cdot100=25\\%$"
+    },
+    {
+      "qid": "quant-sectionals-31-21",
+      "passage_text": "",
+      "question_text": "PQR is a right triangle of  with angle QPR=90 degrees and 2 sides PR and PQ co-inciding with the x axes and y axes respectively. Find the number of points with integral coordinates inside the triangle if it is known that P is situated at origin and the coordinates of the circumcenter of the triangle are (15,10).",
+      "options": [],
+      "correct_option_data": "271",
+      "solution_text": "Given that PQR is a triangle of such that P is at origin and is 90 degrees and Circumcenter has coordinates (15,10 )\nWe know that in a right triangle circumcenter is the mid point of hypotenuse of triangle and as 2 sides coincide with the x axes and y axes \ntherefore their vertices will be (x,0) and (0,y)\nNow x/2 =15 and y/2 =10\nTherefore x=30 and y=20 \nso vertices of triangle will be (0,0) (0,20) and (30,0)\nArea = $\\frac{1}{2}\\times\\ 20\\times\\ 30$\n    = 300cm^2\nSo now we have \nequation of QR as $\\frac{x}{30}+\\frac{y}{20}=1$\n   2x+3y=60\nNow number of integral points on QR :\n(30,0) (27,2) (24,4) (21,6) (18,8) (15,10)  (12,12)  (9,14)  (6,16) (3,18) (0,20)\nOn PQ (Excluding Q)\n(0,0)(0,1)......(0,19)\nOn PR (Excluding P and R)\n(1,0) (2,0)........(29,0)\nTherefore total number of integral points :29+20+11=60\nNow we can use picks theorem to find number of integral points inside the triangle which is given by :\nA=I +$\\frac{B}{2}$-1\nso 300=I +29\nSo I =271",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPQR is a right triangle of  with angle QPR=90 degrees and 2 sides PR and PQ co-inciding with the x axes and y axes respectively. Find the number of points with integral coordinates inside the triangle if it is known that P is situated at origin and the coordinates of the circumcenter of the triangle are (15,10).\n\n**Options:**\n\n**Correct Answer:** 271\n\n**Solution:**\nGiven that PQR is a triangle of such that P is at origin and is 90 degrees and Circumcenter has coordinates (15,10 )\nWe know that in a right triangle circumcenter is the mid point of hypotenuse of triangle and as 2 sides coincide with the x axes and y axes \ntherefore their vertices will be (x,0) and (0,y)\nNow x/2 =15 and y/2 =10\nTherefore x=30 and y=20 \nso vertices of triangle will be (0,0) (0,20) and (30,0)\nArea = $\\frac{1}{2}\\times\\ 20\\times\\ 30$\n    = 300cm^2\nSo now we have \nequation of QR as $\\frac{x}{30}+\\frac{y}{20}=1$\n   2x+3y=60\nNow number of integral points on QR :\n(30,0) (27,2) (24,4) (21,6) (18,8) (15,10)  (12,12)  (9,14)  (6,16) (3,18) (0,20)\nOn PQ (Excluding Q)\n(0,0)(0,1)......(0,19)\nOn PR (Excluding P and R)\n(1,0) (2,0)........(29,0)\nTherefore total number of integral points :29+20+11=60\nNow we can use picks theorem to find number of integral points inside the triangle which is given by :\nA=I +$\\frac{B}{2}$-1\nso 300=I +29\nSo I =271"
+    },
+    {
+      "qid": "quant-sectionals-31-22",
+      "passage_text": "",
+      "question_text": "What is the minimum value of the expression $\\frac{3x^2-7}{3x^2+1} + \\frac{2x^2-5}{2x^2+5}$?",
+      "options": [],
+      "correct_option_data": "-8",
+      "solution_text": "Expression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the minimum value of the expression $\\frac{3x^2-7}{3x^2+1} + \\frac{2x^2-5}{2x^2+5}$?\n\n**Options:**\n\n**Correct Answer:** -8\n\n**Solution:**\nExpression 1: $\\frac{3x^2-7}{3x^2+1}$\n$=1-\\frac{8}{3x^2+1}$\nTo minimize the given expression we have to maximize $\\frac{8}{3x^2+1}$\nThis will be maximum when $3x^2+1$ will be minimum.\nThe least value of $3x^2+1$ is 1 when $x=0$\nThus the minimum value of the given expression 1 is \n$=1-8=-7$\nExpression 2: $\\frac{2x^2-5}{2x^2+5}$\n$=1-\\frac{10}{2x^2+5}$\nTo minimize the given expression we have to maximize $\\frac{10}{2x^2+5}$\nThis will be maximum when $2x^2+5$ will be minimum.\nThe least value of $2x^2+5$ is 5 when $x=0$\nThus the minimum value of the given expression 2 is \n$=1-2=-1$\nThus the minimum value of the given expression is $-7-1 = -8$"
+    }
+  ]
+}

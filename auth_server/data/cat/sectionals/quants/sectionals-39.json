@@ -1,0 +1,699 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-39-1",
+      "passage_text": "",
+      "question_text": "It is given that a scalene triangle has perimeter =  20 and all the sides are integer. What is the probability that 5 is one of the sides of the triangle?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{1}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{3}{8}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{1}{2}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{3}{4}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let $a<b<c$ be the 3 sides of the scalene triangle.\nUsing triangle inequality we can say that\n$a+b > c$. Adding c both sides\n$a+b+c > 2c$ .Putting a+b+c = 20\n$ 2c < 20$ Thus $c < 10$. Since $c$ is an integer, maximum value of c can be 9\nCase I : When c = 9. Then a+b = 11. Since a<b<c=9 the possible pair of (a,b) can be (3,8),(4,7) and (5,6) which satisfy the criteria\nCase II: When c= 8, then a+b = 12. Since a<b<c=8 the possible pair of (a,b) can be (5,7) which satisfy all the criteria\nCase III: When c= 7, then a+b=13.  Since a<b<c=7. There is no possible pair(a,b) such that a<b<c=7 and a+b+c = 20.\nThus overall 4 cases are possible out of which 2 triangle are there which have one of the side as 5.\nProbability = $\\frac {2}{4}$ = $\\frac{1}{2}$\nAlternate Solution:\nTotal number of scalene triangles = $\\frac{\\left(n-6\\right)^2}{48}$ = $\\frac{14^2}{48}=4.0xx\\ =\\ 4$\nNumber of scalene triangles with one side as 5:\nIf one side = 5, the other 2 sides add up to 15. Possible cases are (6,9),(7,8).\nHence, probability = 1/2",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIt is given that a scalene triangle has perimeter =  20 and all the sides are integer. What is the probability that 5 is one of the sides of the triangle?\n\n**Options:**\n- **A**. $\\frac{1}{4}$\n- **B**. $\\frac{3}{8}$\n- **C**. $\\frac{1}{2}$ ✅\n- **D**. $\\frac{3}{4}$\n\n**Correct Answer:** null\n\n**Solution:**\nLet $a<b<c$ be the 3 sides of the scalene triangle.\nUsing triangle inequality we can say that\n$a+b > c$. Adding c both sides\n$a+b+c > 2c$ .Putting a+b+c = 20\n$ 2c < 20$ Thus $c < 10$. Since $c$ is an integer, maximum value of c can be 9\nCase I : When c = 9. Then a+b = 11. Since a<b<c=9 the possible pair of (a,b) can be (3,8),(4,7) and (5,6) which satisfy the criteria\nCase II: When c= 8, then a+b = 12. Since a<b<c=8 the possible pair of (a,b) can be (5,7) which satisfy all the criteria\nCase III: When c= 7, then a+b=13.  Since a<b<c=7. There is no possible pair(a,b) such that a<b<c=7 and a+b+c = 20.\nThus overall 4 cases are possible out of which 2 triangle are there which have one of the side as 5.\nProbability = $\\frac {2}{4}$ = $\\frac{1}{2}$\nAlternate Solution:\nTotal number of scalene triangles = $\\frac{\\left(n-6\\right)^2}{48}$ = $\\frac{14^2}{48}=4.0xx\\ =\\ 4$\nNumber of scalene triangles with one side as 5:\nIf one side = 5, the other 2 sides add up to 15. Possible cases are (6,9),(7,8).\nHence, probability = 1/2"
+    },
+    {
+      "qid": "quant-sectionals-39-2",
+      "passage_text": "",
+      "question_text": "A certain sum of money invested at a certain rate of simple interest triples itself in 30 years. In how many years does this sum become six times?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "75 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "120 years",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the amount of money be P.\nSince it triples itself, the simple interest = 3P - P = 2P.\nNow, 2P = P(30)r\nr = 2/30\nIf sum becomes 6 times, them simple interest = 6P - P = 5P\nNow, 5P = P(t)(2/30)\nt = 75 years.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA certain sum of money invested at a certain rate of simple interest triples itself in 30 years. In how many years does this sum become six times?\n\n**Options:**\n- **A**. 60 years\n- **B**. 75 years ✅\n- **C**. 90 years\n- **D**. 120 years\n\n**Correct Answer:** null\n\n**Solution:**\nLet the amount of money be P.\nSince it triples itself, the simple interest = 3P - P = 2P.\nNow, 2P = P(30)r\nr = 2/30\nIf sum becomes 6 times, them simple interest = 6P - P = 5P\nNow, 5P = P(t)(2/30)\nt = 75 years."
+    },
+    {
+      "qid": "quant-sectionals-39-3",
+      "passage_text": "",
+      "question_text": "A big spherical raindrop of radius 6 mm breaks to form 8 identical smaller spherical raindrops. Find the radius of the smaller raindrop.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2 mm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3 mm",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4 mm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5 mm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Vol. of the big raindrop = $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ 6^3$ = V (say)\nVol. of the small raindrop = $\\ \\frac{\\ 4}{3}\\pi\\ \\\\times\\ r^3$ = v (say)\nDue to conservation of mass, $V=8\\times\\ v$\n=> $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ 6^3$ = 8 x $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ r^3$\n=> $\\ \\frac{\\ 6^3}{r^3}=8$\n=> r = 3 mm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA big spherical raindrop of radius 6 mm breaks to form 8 identical smaller spherical raindrops. Find the radius of the smaller raindrop.\n\n**Options:**\n- **A**. 2 mm\n- **B**. 3 mm ✅\n- **C**. 4 mm\n- **D**. 5 mm\n\n**Correct Answer:** null\n\n**Solution:**\nVol. of the big raindrop = $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ 6^3$ = V (say)\nVol. of the small raindrop = $\\ \\frac{\\ 4}{3}\\pi\\ \\\\times\\ r^3$ = v (say)\nDue to conservation of mass, $V=8\\times\\ v$\n=> $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ 6^3$ = 8 x $\\ \\frac{\\ 4}{3}\\pi\\ \\times\\ r^3$\n=> $\\ \\frac{\\ 6^3}{r^3}=8$\n=> r = 3 mm"
+    },
+    {
+      "qid": "quant-sectionals-39-4",
+      "passage_text": "",
+      "question_text": "Anand and Mahesh are travelling from place A to place B which are 100 km apart. Anand stops for 10 minutes after each km and Mahesh stops for 25 minutes after each 4 km. The ratio of speed of Anand and Mahesh is 11:2. From A, Anand started 1 hour later than Mahesh and both reach B at the same time. Find the time taken(in minutes) by Anand to travel from A to B.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "890",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1090",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1190",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1200",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider the velocity of Anand 11v and the velocity of Mahesh be 2v.\nThen time taken used in traveling(without break) by Anand = 100/(11v)\nTotal breaks taken by Anand = 99 Time spent in breaks = 99*10 =990\nTotal time taken by Anand = 100/(11v)+ 990\nTime taken used in traveling (without break) by Mahesh = 100/(2v)\nTotal breaks taken by Mahesh = 24 Time spent in breaks = 25*24 = 600\nTotal time taken by Mahesh =100/(2v)+600\nSince both reach at same time, 100/(11v)+ 990 + 60 = 100/(2v)+600       (Anand started 60 minutes late)\n=>100/(2v)- 100/(11v)=450\n=> 100/v = 50*22 = 1100\nTime taken by Anand = 100/(11v)+ 990 = 100+990 = 1090 minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAnand and Mahesh are travelling from place A to place B which are 100 km apart. Anand stops for 10 minutes after each km and Mahesh stops for 25 minutes after each 4 km. The ratio of speed of Anand and Mahesh is 11:2. From A, Anand started 1 hour later than Mahesh and both reach B at the same time. Find the time taken(in minutes) by Anand to travel from A to B.\n\n**Options:**\n- **A**. 890\n- **B**. 1090 ✅\n- **C**. 1190\n- **D**. 1200\n\n**Correct Answer:** null\n\n**Solution:**\nConsider the velocity of Anand 11v and the velocity of Mahesh be 2v.\nThen time taken used in traveling(without break) by Anand = 100/(11v)\nTotal breaks taken by Anand = 99 Time spent in breaks = 99*10 =990\nTotal time taken by Anand = 100/(11v)+ 990\nTime taken used in traveling (without break) by Mahesh = 100/(2v)\nTotal breaks taken by Mahesh = 24 Time spent in breaks = 25*24 = 600\nTotal time taken by Mahesh =100/(2v)+600\nSince both reach at same time, 100/(11v)+ 990 + 60 = 100/(2v)+600       (Anand started 60 minutes late)\n=>100/(2v)- 100/(11v)=450\n=> 100/v = 50*22 = 1100\nTime taken by Anand = 100/(11v)+ 990 = 100+990 = 1090 minutes"
+    },
+    {
+      "qid": "quant-sectionals-39-5",
+      "passage_text": "",
+      "question_text": "If w, x, y and z are 4 natural numbers. Find the number of ordered pairs (x, y, z, w) such that $xyzw = 39039$.",
+      "options": [],
+      "correct_option_data": "640",
+      "solution_text": "$xyzw = 39039$.\nLet’s factorize 39039\n$xyzw = 3 * 7 * 11 * 13^2$\nNow,\n3, 7 and 11 can go to either x, y, z or w. \n169 can go to either of x, y, z or w, or 13 * 13 can go to two of x, y, z or w.\nCase 1. When 3,7,11,169 can go to either of x,y,z and w. \nEach of the number have 4 places among (x,y,z,w)\nTotal number of cases 4*4*4*4.\nCase 2. When 13, 13 can go to any two of x,y,z,w; and 3,7,11 have 4 places (x,y,z,w)\nNumber of ways will be 4C2 *4*4*4\nThus, the number of ordered pairs will be\n$ 4 * 4 * 4 * (4 + ^4C_2) = 64 * (10) = 640$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf w, x, y and z are 4 natural numbers. Find the number of ordered pairs (x, y, z, w) such that $xyzw = 39039$.\n\n**Options:**\n\n**Correct Answer:** 640\n\n**Solution:**\n$xyzw = 39039$.\nLet’s factorize 39039\n$xyzw = 3 * 7 * 11 * 13^2$\nNow,\n3, 7 and 11 can go to either x, y, z or w. \n169 can go to either of x, y, z or w, or 13 * 13 can go to two of x, y, z or w.\nCase 1. When 3,7,11,169 can go to either of x,y,z and w. \nEach of the number have 4 places among (x,y,z,w)\nTotal number of cases 4*4*4*4.\nCase 2. When 13, 13 can go to any two of x,y,z,w; and 3,7,11 have 4 places (x,y,z,w)\nNumber of ways will be 4C2 *4*4*4\nThus, the number of ordered pairs will be\n$ 4 * 4 * 4 * (4 + ^4C_2) = 64 * (10) = 640$"
+    },
+    {
+      "qid": "quant-sectionals-39-6",
+      "passage_text": "",
+      "question_text": "Consider a circle C1 of radius 2 units rolling externally on the circle C2: $x^2+4y+y^2=0$. The locus of the centre of the circle C1 is another circle C3. What is the area of the quadrilateral formed by a pair of tangents from a point on C3 to the circle C2 with a pair of radii at the points of contact of the tangents?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$3\\sqrt{\\ 3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$4\\sqrt{\\ 3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$3\\sqrt{\\ 4}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given, circle C2= $x^2+4y+y^2=0$\nC2= $x^2+\\left(y+2\\right)^2=2^2$. So, C2 has the centre at (0,-2) and the radius = 2 units.\nC1 can be represented as:\nLet the centre of C1 be (h,k).\nSince C1 touches C2 externally and has a radius of length 2 units, the distance between the centres of the two circles = sum of radii= 2+2=4 units.\nUsing distance formula,\n$\\sqrt{\\left(h-0\\right)^2+\\left(k+2\\right)^2\\ }=4$\nSquaring both sides, we get:\n$\\left(h-0\\right)^2+\\left(k+2\\right)^2\\ =16$\nSo, C3 is a circle with radius 4 units and centre same as C1, (0,-2)\nThe quadrilateral formed will be something like:\nWe need to find the area of quadrilateral ABOC.\nThe required area is twice of area of the triangle AOC, where OC (radius of C2)= 2units, AO (radius of C3)= 4 units\nwe know that since AC is tangent to C2, $\\angle\\ ACB=$ $90^{\\circ\\ }$\nSo, applying pythagorus theorem, \n$AC^2+OC^2=AO^2$\n=>$AC^2=\\ 16-4$\n=>$AC=\\sqrt{12}$\nTherefore, area of triangle AOC= $\\ \\frac{\\ 1}{2}\\times AC\\times OC=\\ \\frac{\\ 1}{2}\\times\\sqrt{12}\\times2=\\sqrt{12}\\ \\ \\ $\nTherefore area of quadrilateral= $\\ 2\\sqrt{12}=4\\sqrt{3}\\ \\ \\ $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nConsider a circle C1 of radius 2 units rolling externally on the circle C2: $x^2+4y+y^2=0$. The locus of the centre of the circle C1 is another circle C3. What is the area of the quadrilateral formed by a pair of tangents from a point on C3 to the circle C2 with a pair of radii at the points of contact of the tangents?\n\n**Options:**\n- **A**. $2\\sqrt{\\ 3}$\n- **B**. $3\\sqrt{\\ 3}$\n- **C**. $4\\sqrt{\\ 3}$ ✅\n- **D**. $3\\sqrt{\\ 4}$\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, circle C2= $x^2+4y+y^2=0$\nC2= $x^2+\\left(y+2\\right)^2=2^2$. So, C2 has the centre at (0,-2) and the radius = 2 units.\nC1 can be represented as:\nLet the centre of C1 be (h,k).\nSince C1 touches C2 externally and has a radius of length 2 units, the distance between the centres of the two circles = sum of radii= 2+2=4 units.\nUsing distance formula,\n$\\sqrt{\\left(h-0\\right)^2+\\left(k+2\\right)^2\\ }=4$\nSquaring both sides, we get:\n$\\left(h-0\\right)^2+\\left(k+2\\right)^2\\ =16$\nSo, C3 is a circle with radius 4 units and centre same as C1, (0,-2)\nThe quadrilateral formed will be something like:\nWe need to find the area of quadrilateral ABOC.\nThe required area is twice of area of the triangle AOC, where OC (radius of C2)= 2units, AO (radius of C3)= 4 units\nwe know that since AC is tangent to C2, $\\angle\\ ACB=$ $90^{\\circ\\ }$\nSo, applying pythagorus theorem, \n$AC^2+OC^2=AO^2$\n=>$AC^2=\\ 16-4$\n=>$AC=\\sqrt{12}$\nTherefore, area of triangle AOC= $\\ \\frac{\\ 1}{2}\\times AC\\times OC=\\ \\frac{\\ 1}{2}\\times\\sqrt{12}\\times2=\\sqrt{12}\\ \\ \\ $\nTherefore area of quadrilateral= $\\ 2\\sqrt{12}=4\\sqrt{3}\\ \\ \\ $"
+    },
+    {
+      "qid": "quant-sectionals-39-7",
+      "passage_text": "",
+      "question_text": "Ram writes down all positive integers consecutively, starting from 1. He skips every multiple of 10 in the process. What is 3000th digit written by him?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Ram skips every 10th number hence he will skip 10,20,...\nSo one digit numbers written by Ram = 9 {From 1 to 9}\nTwo digit numbers written by Ram = 9*9 = 81 {From 11 to 99}\nThree digit numbers written by Ram = 9*10*9 = 810 {From 101 to 999}\nExhausting all 3 digit number we will start with four digit number starting from 1001\nFour digit numbers from 1001 to 1099 = 9*10 = 90\nFour digit numbers from 1101 to 1109 = 9\nTotal number of digits so far = (1*9) + (2*81) + (3*810) + (4*99) = 2997\n3rd digit of next number will be the 3000th digit.\nNext number written = 1111\nHence we can say that digit 1 is 3000th digit that is written by Ram.Option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam writes down all positive integers consecutively, starting from 1. He skips every multiple of 10 in the process. What is 3000th digit written by him?\n\n**Options:**\n- **A**. 3\n- **B**. 7\n- **C**. 9\n- **D**. 1 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nRam skips every 10th number hence he will skip 10,20,...\nSo one digit numbers written by Ram = 9 {From 1 to 9}\nTwo digit numbers written by Ram = 9*9 = 81 {From 11 to 99}\nThree digit numbers written by Ram = 9*10*9 = 810 {From 101 to 999}\nExhausting all 3 digit number we will start with four digit number starting from 1001\nFour digit numbers from 1001 to 1099 = 9*10 = 90\nFour digit numbers from 1101 to 1109 = 9\nTotal number of digits so far = (1*9) + (2*81) + (3*810) + (4*99) = 2997\n3rd digit of next number will be the 3000th digit.\nNext number written = 1111\nHence we can say that digit 1 is 3000th digit that is written by Ram.Option D is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-39-8",
+      "passage_text": "",
+      "question_text": "A group of men and women decide to finish a task in 20 days. 10 men can also finish the same task in 20 days. 6 men start working and on the 7th day, 2 women join. On the 8th day, 2 more women join and so on. After working for 15 days from the beginning, it is found that only 60% of the work is completed. On the 16th day, x more women join and worked till the end. If the task was finished on time, what is the value of x?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "21",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming each man works 1unit/day, total amount of work = 20*10 = 200 units.\nAssuming each woman works y units/ day.\nThe work finished after 15 days will be =  Work done by men + work done by women = 15*6+2y+4y+.........18y = 90+90y = 200*0.6 = 120 units\n=> y =$\\ \\dfrac{\\ 1}{3}$ unit\nWork was completed in 20 days. Hence, the rest of the work  = 200-120 = 80 units is completed in 5 days.\nHence, 80 = ( Work done by 6 men + work done by 18 women + work done by x women )  for 5 days\n80 = 6*5+18*$\\ \\dfrac{\\ 1}{3}$*5+$\\ \\dfrac{\\ 1}{3}\\times\\ \\left(x\\right)$*5\n=> 20 = $\\dfrac{1}{3}\\times\\ \\left(x\\right)$*5\n=> x = 12",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA group of men and women decide to finish a task in 20 days. 10 men can also finish the same task in 20 days. 6 men start working and on the 7th day, 2 women join. On the 8th day, 2 more women join and so on. After working for 15 days from the beginning, it is found that only 60% of the work is completed. On the 16th day, x more women join and worked till the end. If the task was finished on time, what is the value of x?\n\n**Options:**\n- **A**. 18\n- **B**. 24\n- **C**. 12 ✅\n- **D**. 21\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming each man works 1unit/day, total amount of work = 20*10 = 200 units.\nAssuming each woman works y units/ day.\nThe work finished after 15 days will be =  Work done by men + work done by women = 15*6+2y+4y+.........18y = 90+90y = 200*0.6 = 120 units\n=> y =$\\ \\dfrac{\\ 1}{3}$ unit\nWork was completed in 20 days. Hence, the rest of the work  = 200-120 = 80 units is completed in 5 days.\nHence, 80 = ( Work done by 6 men + work done by 18 women + work done by x women )  for 5 days\n80 = 6*5+18*$\\ \\dfrac{\\ 1}{3}$*5+$\\ \\dfrac{\\ 1}{3}\\times\\ \\left(x\\right)$*5\n=> 20 = $\\dfrac{1}{3}\\times\\ \\left(x\\right)$*5\n=> x = 12"
+    },
+    {
+      "qid": "quant-sectionals-39-9",
+      "passage_text": "",
+      "question_text": "Rinesh and Dinesh visit a cafe daily between 8 PM and 9 PM. Everyone spends exactly 10 minutes inside, and those entering after 8:50 PM leave at 9 PM as the cafe closes then. What is the probability that they meet in the cafe?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{9}{16}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{25}{36}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{11}{36}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{7}{16}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Both Rinesh and Dinesh can come in a timespan of 60 minutes. \nLet us represent the time(in minutes) when Rinesh comes on x-axis and Dinesh on the y-axis.\nBoth of them will wait at the stop for 10 minutes.\nSince both of them have to meet, the difference between their arrival time has to be less than or equal to 10 minutes.\nThe area between the blue and the orange coloured lines is the required region. (|x-y|$\\le\\ 10$)\n= 60*60 - 2* $\\frac{1}{2}$*50*50 = 1100\nProbability that both of them would meet = $\\frac{1100}{3600}$\n= $\\frac{11}{36}$\nC is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRinesh and Dinesh visit a cafe daily between 8 PM and 9 PM. Everyone spends exactly 10 minutes inside, and those entering after 8:50 PM leave at 9 PM as the cafe closes then. What is the probability that they meet in the cafe?\n\n**Options:**\n- **A**. $\\frac{9}{16}$\n- **B**. $\\frac{25}{36}$\n- **C**. $\\frac{11}{36}$ ✅\n- **D**. $\\frac{7}{16}$\n\n**Correct Answer:** null\n\n**Solution:**\nBoth Rinesh and Dinesh can come in a timespan of 60 minutes. \nLet us represent the time(in minutes) when Rinesh comes on x-axis and Dinesh on the y-axis.\nBoth of them will wait at the stop for 10 minutes.\nSince both of them have to meet, the difference between their arrival time has to be less than or equal to 10 minutes.\nThe area between the blue and the orange coloured lines is the required region. (|x-y|$\\le\\ 10$)\n= 60*60 - 2* $\\frac{1}{2}$*50*50 = 1100\nProbability that both of them would meet = $\\frac{1100}{3600}$\n= $\\frac{11}{36}$\nC is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-39-10",
+      "passage_text": "",
+      "question_text": "A ship is travelling between two port cities with a speed such that it will reach its destination on time. After covering 25% of the distance, the ship faces an emergency and returns to its starting point with a different speed v. It then resumes travelling towards its destination without any further delay with the same speed v. By what percentage is v more than the original speed, if the ship reaches its destination in time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "66.67",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "75",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the time taken to reach on schedule is t, the distance is d and the initial speed is s.\nThen t = $\\ \\frac{\\ d}{s}\\ $\nNow, time taken to travel 0.25d = $\\ \\frac{\\ 0.25d}{s}$ = 0.25t\nNow, distance covered after turning = 0.25d+d = 1.25d\nSo, the time taken = $\\ \\frac{\\ 1.25d}{v}$\nTime left  = t-0.25t = 0.75t\nSo to cover 1.25d distance, the speed has to be increased to v.\nHence, 0.75t = $\\ \\frac{\\ 0.75d}{s}\\ =\\ \\ \\frac{\\ 1.25d}{v}$\n=> $\\ \\frac{\\ v}{s}=\\ \\frac{\\ 5}{3}$\nHence, the percentage increase  = $\\left(\\ \\frac{\\ 5}{3}-1\\right)\\times\\ 100$ = 66.67%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA ship is travelling between two port cities with a speed such that it will reach its destination on time. After covering 25% of the distance, the ship faces an emergency and returns to its starting point with a different speed v. It then resumes travelling towards its destination without any further delay with the same speed v. By what percentage is v more than the original speed, if the ship reaches its destination in time?\n\n**Options:**\n- **A**. 50\n- **B**. 100\n- **C**. 66.67 ✅\n- **D**. 75\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the time taken to reach on schedule is t, the distance is d and the initial speed is s.\nThen t = $\\ \\frac{\\ d}{s}\\ $\nNow, time taken to travel 0.25d = $\\ \\frac{\\ 0.25d}{s}$ = 0.25t\nNow, distance covered after turning = 0.25d+d = 1.25d\nSo, the time taken = $\\ \\frac{\\ 1.25d}{v}$\nTime left  = t-0.25t = 0.75t\nSo to cover 1.25d distance, the speed has to be increased to v.\nHence, 0.75t = $\\ \\frac{\\ 0.75d}{s}\\ =\\ \\ \\frac{\\ 1.25d}{v}$\n=> $\\ \\frac{\\ v}{s}=\\ \\frac{\\ 5}{3}$\nHence, the percentage increase  = $\\left(\\ \\frac{\\ 5}{3}-1\\right)\\times\\ 100$ = 66.67%"
+    },
+    {
+      "qid": "quant-sectionals-39-11",
+      "passage_text": "",
+      "question_text": "P can finish a given work in 15 days, Q can finish the same work in 20 days and R can finish the work in 25 days. When they start the work, P comes daily but Q and R come only on alternate days ie Q comes on day 1, R on day 2, Q on day 3 and so on. This cycle continues for 8 days. After that, P finishes the work alone. For every day that a worker shows up, he/she gets ₹500 as labour fee, even if he/she does not work for the whole day. If the total money to be paid for the work is ₹10,000 (excluding the labour fee), find the amount of money earned by P.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "₹10,800",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "₹12,700",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "₹15,600",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "₹11,400",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total work be $300x$ (300 is LCM of 15,20,25) \nWork done by P in one day $p = \\dfrac{300x}{15} = 20x $\nWork done by Q in one day $q = \\dfrac{300x}{20} = 15x $\nWork done by P in one day $r = \\dfrac{300x}{25} = 12x $\nAmount of work done on odd numbered days = 20x+15x = 35x \nAmount of work done on even numbered days = 20x+12x = 32x \nTotal amount of work done in 8 days = 4 x (35x+32x) = 268x \nAmount of work finished alone by P = 300x - 268x = 32x \nNumber of days taken by P to finish job = $\\dfrac{32x}{20x} $ = 1.6\nTotal amount of work done by P = 32x + 160x = 192x \nAmount earned from the cost of the job by P = $\\dfrac{192x}{300x} \\times 10000 $ = ₹6400 \nAmount earned as labour fee = 500 x (8+2) = ₹5000\nTotal money earned by P = 6400+5000 = ₹11,400",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nP can finish a given work in 15 days, Q can finish the same work in 20 days and R can finish the work in 25 days. When they start the work, P comes daily but Q and R come only on alternate days ie Q comes on day 1, R on day 2, Q on day 3 and so on. This cycle continues for 8 days. After that, P finishes the work alone. For every day that a worker shows up, he/she gets ₹500 as labour fee, even if he/she does not work for the whole day. If the total money to be paid for the work is ₹10,000 (excluding the labour fee), find the amount of money earned by P.\n\n**Options:**\n- **A**. ₹10,800\n- **B**. ₹12,700\n- **C**. ₹15,600\n- **D**. ₹11,400 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total work be $300x$ (300 is LCM of 15,20,25) \nWork done by P in one day $p = \\dfrac{300x}{15} = 20x $\nWork done by Q in one day $q = \\dfrac{300x}{20} = 15x $\nWork done by P in one day $r = \\dfrac{300x}{25} = 12x $\nAmount of work done on odd numbered days = 20x+15x = 35x \nAmount of work done on even numbered days = 20x+12x = 32x \nTotal amount of work done in 8 days = 4 x (35x+32x) = 268x \nAmount of work finished alone by P = 300x - 268x = 32x \nNumber of days taken by P to finish job = $\\dfrac{32x}{20x} $ = 1.6\nTotal amount of work done by P = 32x + 160x = 192x \nAmount earned from the cost of the job by P = $\\dfrac{192x}{300x} \\times 10000 $ = ₹6400 \nAmount earned as labour fee = 500 x (8+2) = ₹5000\nTotal money earned by P = 6400+5000 = ₹11,400"
+    },
+    {
+      "qid": "quant-sectionals-39-12",
+      "passage_text": "",
+      "question_text": "Ajay is a cereal merchant who gives a discount of (x+4)% on marked price for any customer that purchases x kg cereal. The maximum discount is capped at 20%. Ajay bought cereal at Rs. 40 per kg and marked up the price by 50%. If Ajay sells the cereal in multiples of 1 kg then find out the difference between the minimum and the maximum amount of profit made by him by selling 1000 kg cereal?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 9000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 8961.60",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 8928",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We know that Ajay sells cereals in multiple of 1 kg so he will end up getting maximum profit when the discount is minimum.\nDiscount offered = (x+4)% \nMinimum discount = 5% when {x = 1}\nMarket up price = $\\frac{150}{100}\\times 40$ = Rs. 60 per kg\nSelling price when ajay offers 5% discount = $\\frac{100 - 5}{100}\\times 60$ = Rs. 57 per kg\nTotal maximum revenue earned by Ajay = 57*1000 = Rs.57000\nTherefore total maximum profit earned by Ajay = 57000 - 40*1000 = Rs. 17000\nAjay will end up getting minimum profit when he offers 20% discount therefore selling price = $\\frac{100-20}{100}\\times 60$ = Rs. 48 per kg\nTotal minimum revenue earned by Ajay = 48*1000 = Rs.48000\nTherefore minimum profit earned by Ajay = 48000 - 40000 = Rs. 8000 \nHence difference between maximum and minimum profit earned = Rs. 17000 - Rs. 8000 = Rs. 9000\nOption A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAjay is a cereal merchant who gives a discount of (x+4)% on marked price for any customer that purchases x kg cereal. The maximum discount is capped at 20%. Ajay bought cereal at Rs. 40 per kg and marked up the price by 50%. If Ajay sells the cereal in multiples of 1 kg then find out the difference between the minimum and the maximum amount of profit made by him by selling 1000 kg cereal?\n\n**Options:**\n- **A**. Rs. 9000 ✅\n- **B**. Rs. 8961.60\n- **C**. Rs. 8928\n- **D**. None of the above\n\n**Correct Answer:** null\n\n**Solution:**\nWe know that Ajay sells cereals in multiple of 1 kg so he will end up getting maximum profit when the discount is minimum.\nDiscount offered = (x+4)% \nMinimum discount = 5% when {x = 1}\nMarket up price = $\\frac{150}{100}\\times 40$ = Rs. 60 per kg\nSelling price when ajay offers 5% discount = $\\frac{100 - 5}{100}\\times 60$ = Rs. 57 per kg\nTotal maximum revenue earned by Ajay = 57*1000 = Rs.57000\nTherefore total maximum profit earned by Ajay = 57000 - 40*1000 = Rs. 17000\nAjay will end up getting minimum profit when he offers 20% discount therefore selling price = $\\frac{100-20}{100}\\times 60$ = Rs. 48 per kg\nTotal minimum revenue earned by Ajay = 48*1000 = Rs.48000\nTherefore minimum profit earned by Ajay = 48000 - 40000 = Rs. 8000 \nHence difference between maximum and minimum profit earned = Rs. 17000 - Rs. 8000 = Rs. 9000\nOption A is the correct answer."
+    },
+    {
+      "qid": "quant-sectionals-39-13",
+      "passage_text": "",
+      "question_text": "What is the range of the function $f(x) = \\dfrac{x^2+x+3}{x^2+x+4}$ if the domain is the set of all real numbers?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$[1,\\dfrac{11}{7}]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(1,\\dfrac{11}{7}]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$[\\dfrac{11}{15},1]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$[\\dfrac{11}{15},1)$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "$f(x) = \\dfrac{x^2+x+3}{x^2+x+4}$ \n= $\\dfrac{x^2+x+4}{x^2+x+4} - \\dfrac{1}{x^2+x+4}$ \n= $1 - \\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$\nNow the maximum value of the term $\\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$ will happen when the denominator is least, i.e when x = -1/2. f(x) is minimum when the -ve term is maximum. Hence minimum value of f(x) = f(-1/2) = 11/15\nThe minimum value of the term $\\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$ will happen as x tends to $\\pm\\infty$ and is equal to 0. Hence the maximum value of f(x) tends to 1. Hence the range of f(x) is $[\\frac{11}{15},1)$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the range of the function $f(x) = \\dfrac{x^2+x+3}{x^2+x+4}$ if the domain is the set of all real numbers?\n\n**Options:**\n- **A**. $[1,\\dfrac{11}{7}]$\n- **B**. $(1,\\dfrac{11}{7}]$\n- **C**. $[\\dfrac{11}{15},1]$\n- **D**. $[\\dfrac{11}{15},1)$ ✅\n\n**Correct Answer:** null\n\n**Solution:**\n$f(x) = \\dfrac{x^2+x+3}{x^2+x+4}$ \n= $\\dfrac{x^2+x+4}{x^2+x+4} - \\dfrac{1}{x^2+x+4}$ \n= $1 - \\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$\nNow the maximum value of the term $\\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$ will happen when the denominator is least, i.e when x = -1/2. f(x) is minimum when the -ve term is maximum. Hence minimum value of f(x) = f(-1/2) = 11/15\nThe minimum value of the term $\\dfrac{1}{(x+\\frac{1}{2})^2+15/4}$ will happen as x tends to $\\pm\\infty$ and is equal to 0. Hence the maximum value of f(x) tends to 1. Hence the range of f(x) is $[\\frac{11}{15},1)$"
+    },
+    {
+      "qid": "quant-sectionals-39-14",
+      "passage_text": "",
+      "question_text": "In a laboratory, a fission reaction is carried out with a target atom such that its nucleus splits into 3 nuclei. These 3 nuclei further produce 3 nuclei each. The process of splitting takes exactly 2 microseconds. But, at every 4th microsecond one third of the nuclei produced at that instant disintegrate due to gamma exposure. Find out the total number of nuclei present at 100th microsecond.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2^{24}\\times3^{26}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2^{24}\\times3^{25}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2^{25}\\times3^{25}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2^{25}\\times3^{26}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The process of fission takes place as follows:\nSo, the power of 2 increases by 1 after every 4 seconds  starting from t= 4 and the power of 3 increases by 1 after every 4 seconds starting from t= 2.\nSo, we have the below APs of time at which power increases by 1\nFor Power of 2 = 4, 8, 12, 16...\nSo, at 100 microseconds\n $4 + (n-1)\\times 4=100$\n=>$n=25$\nPower of 2 will be 25 after 100 microseconds.\nSimilarly, for power of 3 = 2, 6, 10...\nSo, at 100 microseconds\n$2+(n-1)\\times 4= 100$\n=> $n=25.5$ which means power of 3 would have reached 25.\nSo, the total number of nuclei are $2^{25}\\times3^{25}$.\nHence, option C is the correct choice.\nAlternate explanation:\nEvery 2 microseconds, the number of nuclei will be multiplied by 3. Every 4 microseconds, the number of nuclei will multiplied by (2/3) due to disintegration. Hence after 100 microseconds, the number of nuclei= $(3)^{\\frac{100}{2}} \\times (\\frac{2}{3})^{\\frac{100}{4}}$ = $2^{25} \\times 3^{25}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a laboratory, a fission reaction is carried out with a target atom such that its nucleus splits into 3 nuclei. These 3 nuclei further produce 3 nuclei each. The process of splitting takes exactly 2 microseconds. But, at every 4th microsecond one third of the nuclei produced at that instant disintegrate due to gamma exposure. Find out the total number of nuclei present at 100th microsecond.\n\n**Options:**\n- **A**. $2^{24}\\times3^{26}$\n- **B**. $2^{24}\\times3^{25}$\n- **C**. $2^{25}\\times3^{25}$ ✅\n- **D**. $2^{25}\\times3^{26}$\n\n**Correct Answer:** null\n\n**Solution:**\nThe process of fission takes place as follows:\nSo, the power of 2 increases by 1 after every 4 seconds  starting from t= 4 and the power of 3 increases by 1 after every 4 seconds starting from t= 2.\nSo, we have the below APs of time at which power increases by 1\nFor Power of 2 = 4, 8, 12, 16...\nSo, at 100 microseconds\n $4 + (n-1)\\times 4=100$\n=>$n=25$\nPower of 2 will be 25 after 100 microseconds.\nSimilarly, for power of 3 = 2, 6, 10...\nSo, at 100 microseconds\n$2+(n-1)\\times 4= 100$\n=> $n=25.5$ which means power of 3 would have reached 25.\nSo, the total number of nuclei are $2^{25}\\times3^{25}$.\nHence, option C is the correct choice.\nAlternate explanation:\nEvery 2 microseconds, the number of nuclei will be multiplied by 3. Every 4 microseconds, the number of nuclei will multiplied by (2/3) due to disintegration. Hence after 100 microseconds, the number of nuclei= $(3)^{\\frac{100}{2}} \\times (\\frac{2}{3})^{\\frac{100}{4}}$ = $2^{25} \\times 3^{25}$"
+    },
+    {
+      "qid": "quant-sectionals-39-15",
+      "passage_text": "",
+      "question_text": "An alloy is made of three metals copper, iron and zinc with price per kg Rs 32, Rs 17 and Rs 36 are mixed in ratio x:y:z such that x, y, z are in a geometric progression. If x<y<z and the price of alloy is Rs 30 per kg, then what would be the price per kg of the alloy if they are mixed in ratio x: z :y ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "31.43",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24.57",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "27.69",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25.25",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider the common ratio r, then y=xr, z=xr$^{2}$\nNow the alloy price = 30 = $\\frac{32x+17xr+36r^{2}}{x+xr+xr^{2}}$ \n=> 6r$^{2}$-13r+2 = 0\n=> (6r-1)(r-2)=0\n=> r=2 (r=1/6 is rejected since x<y<z)\ny=2x, z=4x\nHence, new price = (32*x+17*4x+36*2x)/(7x) = 172/7=24.57",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nAn alloy is made of three metals copper, iron and zinc with price per kg Rs 32, Rs 17 and Rs 36 are mixed in ratio x:y:z such that x, y, z are in a geometric progression. If x<y<z and the price of alloy is Rs 30 per kg, then what would be the price per kg of the alloy if they are mixed in ratio x: z :y ?\n\n**Options:**\n- **A**. 31.43\n- **B**. 24.57 ✅\n- **C**. 27.69\n- **D**. 25.25\n\n**Correct Answer:** null\n\n**Solution:**\nConsider the common ratio r, then y=xr, z=xr$^{2}$\nNow the alloy price = 30 = $\\frac{32x+17xr+36r^{2}}{x+xr+xr^{2}}$ \n=> 6r$^{2}$-13r+2 = 0\n=> (6r-1)(r-2)=0\n=> r=2 (r=1/6 is rejected since x<y<z)\ny=2x, z=4x\nHence, new price = (32*x+17*4x+36*2x)/(7x) = 172/7=24.57"
+    },
+    {
+      "qid": "quant-sectionals-39-16",
+      "passage_text": "",
+      "question_text": "The distance travelled by a ball falling vertically from a tower is directly proportional to the square of the time it has travelled. If it travels 40 m in the first 6 seconds, what will be the distance travelled in the next 30 secs?",
+      "options": [],
+      "correct_option_data": "1400",
+      "solution_text": "It is given in the question that d =kt$^2$.\nIf in 6 sec it will travel 40m \n40=k(6)$^2$\nAfter next 30sec, total time travelled =30+6=36sec.\nX=k (36)$^2$\n$\\frac{X}{40}$= ($(\\frac{36}{6})^2$\nX=1440\nDistance travelled in 30 secs= 1440-40 =1400",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe distance travelled by a ball falling vertically from a tower is directly proportional to the square of the time it has travelled. If it travels 40 m in the first 6 seconds, what will be the distance travelled in the next 30 secs?\n\n**Options:**\n\n**Correct Answer:** 1400\n\n**Solution:**\nIt is given in the question that d =kt$^2$.\nIf in 6 sec it will travel 40m \n40=k(6)$^2$\nAfter next 30sec, total time travelled =30+6=36sec.\nX=k (36)$^2$\n$\\frac{X}{40}$= ($(\\frac{36}{6})^2$\nX=1440\nDistance travelled in 30 secs= 1440-40 =1400"
+    },
+    {
+      "qid": "quant-sectionals-39-17",
+      "passage_text": "",
+      "question_text": "Ram buys apples, oranges, bananas and guavas using Rs 400. The ratio of the number of apples and oranges is 2:3. The ratio of number of bananas and guavas is 4:1. The ratio of prices of 1 apple, 1 orange, 1 banana and 1 guava is 1:2:3:4. What is the total money he paid for apples and guavas.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assuming the number of apples, oranges, bananas and guavas is 2x,3x, 4y and y respectively.\nAssume the prices of 1 apple, 1 orange, 1 banana and 1 guava be a, 2a, 3a and 4a respectively.\nNow, 2x*a+3x*2a+4y*3a+y*4a = 400\n8ax+16ay = 400\n=> ax+2ay = 50\nNow, the price of apples and guavas = 2x*a+y*4a = 2(ax+2ay)=100",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam buys apples, oranges, bananas and guavas using Rs 400. The ratio of the number of apples and oranges is 2:3. The ratio of number of bananas and guavas is 4:1. The ratio of prices of 1 apple, 1 orange, 1 banana and 1 guava is 1:2:3:4. What is the total money he paid for apples and guavas.\n\n**Options:**\n- **A**. 300\n- **B**. 200\n- **C**. 100 ✅\n- **D**. 50\n\n**Correct Answer:** null\n\n**Solution:**\nAssuming the number of apples, oranges, bananas and guavas is 2x,3x, 4y and y respectively.\nAssume the prices of 1 apple, 1 orange, 1 banana and 1 guava be a, 2a, 3a and 4a respectively.\nNow, 2x*a+3x*2a+4y*3a+y*4a = 400\n8ax+16ay = 400\n=> ax+2ay = 50\nNow, the price of apples and guavas = 2x*a+y*4a = 2(ax+2ay)=100"
+    },
+    {
+      "qid": "quant-sectionals-39-18",
+      "passage_text": "",
+      "question_text": "ABCD and EFGH are two squares of side length 6cm and 10 cm respectively. H is the center of the square ABCD. Given that the square EFGH cuts the side BC in the ratio 4:1, find the area of shaded region.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Draw the construction shown in the diagram.\nAngle MHK = Angle LHE\nAngle HMK = Angle HLB = 90 degrees\nHL = HM = 3 cm.\nBy ASA => both the triangles are congruent.\nHence, the area of the shaded region is equal to Area of HLBM, which is equal to 3*3 = 9 square units.",
+      "image_url": "https://cracku.in/media/uploads/2015/11/06/qa-10-ques.jpg",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nABCD and EFGH are two squares of side length 6cm and 10 cm respectively. H is the center of the square ABCD. Given that the square EFGH cuts the side BC in the ratio 4:1, find the area of shaded region.\n\n**Options:**\n- **A**. 9 ✅\n- **B**. 10.25\n- **C**. 8.75\n- **D**. 8\n\n**Correct Answer:** null\n\n**Solution:**\nDraw the construction shown in the diagram.\nAngle MHK = Angle LHE\nAngle HMK = Angle HLB = 90 degrees\nHL = HM = 3 cm.\nBy ASA => both the triangles are congruent.\nHence, the area of the shaded region is equal to Area of HLBM, which is equal to 3*3 = 9 square units."
+    },
+    {
+      "qid": "quant-sectionals-39-19",
+      "passage_text": "",
+      "question_text": "For real numbers x, y and z, xyz-3 =0, x=3-(1/y), z=36-1/x. If y+1/z =a/b where a, b are co-primes. Find the value of b-a.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "227",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "213",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "194",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "207",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have,  xyz-3 =0,  => 1/y = xz/3\n x=3-(1/y) => x=3-xz/3  => 3x=9-xz   =>xz=9-3x......(1)\n z=36-1/x => xz=36x-1 ......(2)\nEquating the value of xz in 1 and 2, we get, 36x-1=9-3x\n=> 39x=10   \nNow, x=3-1/y => 1/y = 3-x = 3-10/39   \n=> 1/y = 107/39\nAlso, z=36-1/x = 36-39/10 = 321/10\nTherefore, y+1/z = 39/107+10/321 = (117+10)/321 = 127/321 = a/b (given)\nHence, b-a = 321-127 = 194",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFor real numbers x, y and z, xyz-3 =0, x=3-(1/y), z=36-1/x. If y+1/z =a/b where a, b are co-primes. Find the value of b-a.\n\n**Options:**\n- **A**. 227\n- **B**. 213\n- **C**. 194 ✅\n- **D**. 207\n\n**Correct Answer:** null\n\n**Solution:**\nWe have,  xyz-3 =0,  => 1/y = xz/3\n x=3-(1/y) => x=3-xz/3  => 3x=9-xz   =>xz=9-3x......(1)\n z=36-1/x => xz=36x-1 ......(2)\nEquating the value of xz in 1 and 2, we get, 36x-1=9-3x\n=> 39x=10   \nNow, x=3-1/y => 1/y = 3-x = 3-10/39   \n=> 1/y = 107/39\nAlso, z=36-1/x = 36-39/10 = 321/10\nTherefore, y+1/z = 39/107+10/321 = (117+10)/321 = 127/321 = a/b (given)\nHence, b-a = 321-127 = 194"
+    },
+    {
+      "qid": "quant-sectionals-39-20",
+      "passage_text": "",
+      "question_text": "Ram sells mango in a local area. The goons of the local area charge 20% of the revenue to allow him to sell the mango at that place. By approximately what percent should Ram markup the cost of the mangoes to ensure that after giving a discount of 10% he receives an overall profit of 15%. It is also known that 5% of the mango gets bad and cannot be sold.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "36.23%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "48.87%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "68.12%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "71.36%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let Ram buy 100 kg of mango at cost price = Rs $CP$/kg. Let the Marked price of the Mango be $MP$.\nSince 5% of mango went bad, he only sold 95 kg of mangoes at a discount of 10%.\nThe revenue Ram will have = $95\\times(0.9)MP$\n20% of revenue will be taken by the goons, thus 80% will be left with Ram\nTotal earning of Ram = $95\\times\\ 0.9\\ \\times\\ 0.8MP$\nIf he expected 15% profit from the overall transaction, the money he should have got = $100\\times\\ 1.15CP$ = 115CP\nThus 68.4MP = 115CP\nMP = 1.6812 CP\nThus the markup per cent is approximately 68.12%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam sells mango in a local area. The goons of the local area charge 20% of the revenue to allow him to sell the mango at that place. By approximately what percent should Ram markup the cost of the mangoes to ensure that after giving a discount of 10% he receives an overall profit of 15%. It is also known that 5% of the mango gets bad and cannot be sold.\n\n**Options:**\n- **A**. 36.23%\n- **B**. 48.87%\n- **C**. 68.12% ✅\n- **D**. 71.36%\n\n**Correct Answer:** null\n\n**Solution:**\nLet Ram buy 100 kg of mango at cost price = Rs $CP$/kg. Let the Marked price of the Mango be $MP$.\nSince 5% of mango went bad, he only sold 95 kg of mangoes at a discount of 10%.\nThe revenue Ram will have = $95\\times(0.9)MP$\n20% of revenue will be taken by the goons, thus 80% will be left with Ram\nTotal earning of Ram = $95\\times\\ 0.9\\ \\times\\ 0.8MP$\nIf he expected 15% profit from the overall transaction, the money he should have got = $100\\times\\ 1.15CP$ = 115CP\nThus 68.4MP = 115CP\nMP = 1.6812 CP\nThus the markup per cent is approximately 68.12%"
+    },
+    {
+      "qid": "quant-sectionals-39-21",
+      "passage_text": "",
+      "question_text": "A quadratic equation has px$^2$+qx-33=0 has 3 as one of its roots, where p and q are positive integers. If one of the roots of qx$^2$+px-24 = 0 is an integer, then the value of p+2q is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have, px$^2$+qx-33=0\nSince 3 is one of the roots, hence, 9p+3q-33 = 0\n=> 3p+q = 11\nThe values of p,q satisfying equation will be (1,8), (2,5), (3,2)\nHence, the possible equations will be \n1. $8x^2+x-24=0$  Discriminant D= 1+4*24*8 = 769\n2. $5x^2+2x-24=0$ Discriminant D= 2*2+5*24*4 = 484\n3. $2x^2+3x-24=0$ Discriminant D= 3*3+4*2*24 = 201\nFor integral roots, the discriminant should be perfect square, a condition which is satisfied by equation 2.\nHence, p=2 and q=5  => p+2q = 2+2*5 = 12",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA quadratic equation has px$^2$+qx-33=0 has 3 as one of its roots, where p and q are positive integers. If one of the roots of qx$^2$+px-24 = 0 is an integer, then the value of p+2q is\n\n**Options:**\n- **A**. 12 ✅\n- **B**. 10\n- **C**. 14\n- **D**. 16\n\n**Correct Answer:** null\n\n**Solution:**\nWe have, px$^2$+qx-33=0\nSince 3 is one of the roots, hence, 9p+3q-33 = 0\n=> 3p+q = 11\nThe values of p,q satisfying equation will be (1,8), (2,5), (3,2)\nHence, the possible equations will be \n1. $8x^2+x-24=0$  Discriminant D= 1+4*24*8 = 769\n2. $5x^2+2x-24=0$ Discriminant D= 2*2+5*24*4 = 484\n3. $2x^2+3x-24=0$ Discriminant D= 3*3+4*2*24 = 201\nFor integral roots, the discriminant should be perfect square, a condition which is satisfied by equation 2.\nHence, p=2 and q=5  => p+2q = 2+2*5 = 12"
+    },
+    {
+      "qid": "quant-sectionals-39-22",
+      "passage_text": "",
+      "question_text": "If|x-6|>|$x^2-5x+9$|, find the number of possible integral values of x.",
+      "options": [],
+      "correct_option_data": "1",
+      "solution_text": "$x^2-5x+9$ as its determinant is negative.\nLet x>6\nx-6>$x^2-5x+9$\n$x^2-6x+15$<0\n$(x-3)^2+6$<0\nwhich is not possible.\nLet x<6\n6-x>$x^2-5x+9$\n$x^2-4x+3$<0\n(x-3)(x-1)<0\n1\nThe only possible value is 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf|x-6|>|$x^2-5x+9$|, find the number of possible integral values of x.\n\n**Options:**\n\n**Correct Answer:** 1\n\n**Solution:**\n$x^2-5x+9$ as its determinant is negative.\nLet x>6\nx-6>$x^2-5x+9$\n$x^2-6x+15$<0\n$(x-3)^2+6$<0\nwhich is not possible.\nLet x<6\n6-x>$x^2-5x+9$\n$x^2-4x+3$<0\n(x-3)(x-1)<0\n1\nThe only possible value is 2."
+    }
+  ]
+}

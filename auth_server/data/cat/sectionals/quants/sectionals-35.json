@@ -1,0 +1,724 @@
+{
+  "questions": [
+    {
+      "qid": "quant-sectionals-35-1",
+      "passage_text": "",
+      "question_text": "In any given ball, a batsman can hit either of 0, 1, 2, 3, 4 or 6 runs. There is no possibility for wickets or extra runs. The probability of hitting a six is 1/10, the probability of hitting a four is also 1/10. The probability of hitting any other run out of all possible runs is the same. In the final of 2019 WC between New Zealand and England, New Zealand needs to score a minimum of 34 runs in the Super Over (6 balls) to defend the WC Title. What is the probability that New Zealand retains the title?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "7/1000000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "17/1000000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "34/1000000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "68/1000000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "P(hitting a 6) = $\\frac{1}{10}$\nP(hitting a 4) = $\\frac{1}{10}$\nTo get 34 runs, they can hit 6,6,6,6,6,4 or 6,6,6,6,5,5 runs. But 5 runs can not be scored in a ball.\nP(6,6,6,6,6,4) = $^6C_1\\times\\ \\left(\\frac{1}{10}\\right)^5\\left(\\frac{1}{10}\\right)=\\frac{6}{10^6}$ [$^6C_1\\ $ is included since they can hit a 4 in any of the 6 balls].\nTo get 35 runs, they can hit 6,6,6,6,6,5 runs. But 5 runs can not be scored in a ball, so this is not possible.\nTo get 36 runs, they can hit 6,6,6,6,6,6 runs.\nP(6,6,6,6,6,6) = $\\left(\\frac{1}{10}\\right)^6=\\frac{1}{10^6}$\nHence, total probability = $\\frac{7}{1000000}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn any given ball, a batsman can hit either of 0, 1, 2, 3, 4 or 6 runs. There is no possibility for wickets or extra runs. The probability of hitting a six is 1/10, the probability of hitting a four is also 1/10. The probability of hitting any other run out of all possible runs is the same. In the final of 2019 WC between New Zealand and England, New Zealand needs to score a minimum of 34 runs in the Super Over (6 balls) to defend the WC Title. What is the probability that New Zealand retains the title?\n\n**Options:**\n- **A**. 7/1000000 ✅\n- **B**. 17/1000000\n- **C**. 34/1000000\n- **D**. 68/1000000\n\n**Correct Answer:** null\n\n**Solution:**\nP(hitting a 6) = $\\frac{1}{10}$\nP(hitting a 4) = $\\frac{1}{10}$\nTo get 34 runs, they can hit 6,6,6,6,6,4 or 6,6,6,6,5,5 runs. But 5 runs can not be scored in a ball.\nP(6,6,6,6,6,4) = $^6C_1\\times\\ \\left(\\frac{1}{10}\\right)^5\\left(\\frac{1}{10}\\right)=\\frac{6}{10^6}$ [$^6C_1\\ $ is included since they can hit a 4 in any of the 6 balls].\nTo get 35 runs, they can hit 6,6,6,6,6,5 runs. But 5 runs can not be scored in a ball, so this is not possible.\nTo get 36 runs, they can hit 6,6,6,6,6,6 runs.\nP(6,6,6,6,6,6) = $\\left(\\frac{1}{10}\\right)^6=\\frac{1}{10^6}$\nHence, total probability = $\\frac{7}{1000000}$"
+    },
+    {
+      "qid": "quant-sectionals-35-2",
+      "passage_text": "",
+      "question_text": "A milkman has a solution of milk and water in the ratio 8:1.He takes one-third of this solution and replaces it with water. If he sells the solutions (both initial and final)  at the cost price of pure milk, what is the ratio of profit percentages from initial and final solution? Assume that water does not cost anything.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8:9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16:27",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:11",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2:9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Consider price of pure milk = Rs x per liter and total volume of solution = L.\nMilk in L liter solution of milk and water in 8:1 = 8L/9\nWater in L liter solution of milk and water in 8:1  =  L/9\nCost price = (8L/9)*x  Selling Price = (L)*x     Profit = (L-8L/9)x = (L/9)x\nProfit percentage = ((L/9)x*100)/(8L/9) = 100/8 ....(1)\nAfter taking out 1/3 of solution,\nMilk = (2L/3)(8/9)    Water = (2L/3)(1/9) \nAfter replacing it with L/3 water,\nMilk = (2L/3)(8/9) = 16L/27    Water = (2L/3)(1/9) + (L/3) = 11L/27\nCost Price = 16Lx/27    Selling Price =Lx     Profit = (L-16L/27)x = (11L/27)x\nProfit Percentage =  ((11L/27)x*100)/(16L/27)  = 1100/16 ....(1)\nRatio of profit percentages = 16/(11*8) = 2:11\nC is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA milkman has a solution of milk and water in the ratio 8:1.He takes one-third of this solution and replaces it with water. If he sells the solutions (both initial and final)  at the cost price of pure milk, what is the ratio of profit percentages from initial and final solution? Assume that water does not cost anything.\n\n**Options:**\n- **A**. 8:9\n- **B**. 16:27\n- **C**. 2:11 ✅\n- **D**. 2:9\n\n**Correct Answer:** null\n\n**Solution:**\nConsider price of pure milk = Rs x per liter and total volume of solution = L.\nMilk in L liter solution of milk and water in 8:1 = 8L/9\nWater in L liter solution of milk and water in 8:1  =  L/9\nCost price = (8L/9)*x  Selling Price = (L)*x     Profit = (L-8L/9)x = (L/9)x\nProfit percentage = ((L/9)x*100)/(8L/9) = 100/8 ....(1)\nAfter taking out 1/3 of solution,\nMilk = (2L/3)(8/9)    Water = (2L/3)(1/9) \nAfter replacing it with L/3 water,\nMilk = (2L/3)(8/9) = 16L/27    Water = (2L/3)(1/9) + (L/3) = 11L/27\nCost Price = 16Lx/27    Selling Price =Lx     Profit = (L-16L/27)x = (11L/27)x\nProfit Percentage =  ((11L/27)x*100)/(16L/27)  = 1100/16 ....(1)\nRatio of profit percentages = 16/(11*8) = 2:11\nC is the answer."
+    },
+    {
+      "qid": "quant-sectionals-35-3",
+      "passage_text": "",
+      "question_text": "If f(p) is a polynomial satisfying $f(p).f\\left(\\frac{1}{p}\\right)=f\\left(p\\right)+f\\left(\\frac{1}{p}\\right)$ and f(5) = -124, then f(3)",
+      "options": [],
+      "correct_option_data": "-26",
+      "solution_text": "If $f(p).f\\left(\\frac{1}{p}\\right)=f\\left(p\\right)+f\\left(\\frac{1}{p}\\right)$, f(p) = $1\\pm\\ p^n$\nHere f(5) = -124 = 1-5^3\nHence  $f(p)=1-\\ p^n$\np(3)= 1-27 =-26",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIf f(p) is a polynomial satisfying $f(p).f\\left(\\frac{1}{p}\\right)=f\\left(p\\right)+f\\left(\\frac{1}{p}\\right)$ and f(5) = -124, then f(3)\n\n**Options:**\n\n**Correct Answer:** -26\n\n**Solution:**\nIf $f(p).f\\left(\\frac{1}{p}\\right)=f\\left(p\\right)+f\\left(\\frac{1}{p}\\right)$, f(p) = $1\\pm\\ p^n$\nHere f(5) = -124 = 1-5^3\nHence  $f(p)=1-\\ p^n$\np(3)= 1-27 =-26"
+    },
+    {
+      "qid": "quant-sectionals-35-4",
+      "passage_text": "",
+      "question_text": "Find the minimum value of $2^{\\sin x} + 2^{\\textrm{cosec x}}$, $ 0 < x < \\pi $",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$2^{\\sqrt{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2^{1-\\sqrt{2}}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Minimum value of $2^{\\sin x} + 2^ {\\textrm{cosec x}} $\nAM $\\geq$ GM\n$\\frac{2^{\\sin x} + 2^{ \\frac{1}{\\sin x}} }{2} \\geq \\sqrt{2^{\\sin x} *2^{ \\frac{1}{sinx}}}$\n$\\frac{2^{\\sin x} + 2^{\\textrm{cosec x}} }{2} \\geq 2^{\\frac{\\sin x + \\frac{1}{\\sin x} }{2}}$\nmin value of $\\sin x + \\frac{1}{sinx}$ is 2\nHence, the minimum value is 4\nOption C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nFind the minimum value of $2^{\\sin x} + 2^{\\textrm{cosec x}}$, $ 0 < x < \\pi $\n\n**Options:**\n- **A**. 1\n- **B**. $2^{\\sqrt{2}}$\n- **C**. 4 ✅\n- **D**. $2^{1-\\sqrt{2}}$\n\n**Correct Answer:** null\n\n**Solution:**\nMinimum value of $2^{\\sin x} + 2^ {\\textrm{cosec x}} $\nAM $\\geq$ GM\n$\\frac{2^{\\sin x} + 2^{ \\frac{1}{\\sin x}} }{2} \\geq \\sqrt{2^{\\sin x} *2^{ \\frac{1}{sinx}}}$\n$\\frac{2^{\\sin x} + 2^{\\textrm{cosec x}} }{2} \\geq 2^{\\frac{\\sin x + \\frac{1}{\\sin x} }{2}}$\nmin value of $\\sin x + \\frac{1}{sinx}$ is 2\nHence, the minimum value is 4\nOption C"
+    },
+    {
+      "qid": "quant-sectionals-35-5",
+      "passage_text": "",
+      "question_text": "Pipe A can fill a cistern in x minutes. Pipe B can empty half a cistern in y minutes. Pipe C can fill a cistern in z minutes. If A, B and C are kept open, the empty cistern is half-full in 3 minutes. Which of the following is an incorrect representation of possible values of x, y and z respectively?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5, 4, 10",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4, 2, 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8, 4, 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2, 0.75, 3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the entire task of filling or emptying the cylinder be 2xyz.\nIn 1 min, A can fill 2yz, B can empty xz and C can fill 2xy units.\nIn 3 mins, total units filled = 3(2yz + 2xy - xz) = 2xyz/2\n2yz + 2xy - xz = xyz/3\nDividing by xyz throughout.\n2/x +2/z = 1/3 + 1/y\nPutting the values, all but option A satisfies the equation.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nPipe A can fill a cistern in x minutes. Pipe B can empty half a cistern in y minutes. Pipe C can fill a cistern in z minutes. If A, B and C are kept open, the empty cistern is half-full in 3 minutes. Which of the following is an incorrect representation of possible values of x, y and z respectively?\n\n**Options:**\n- **A**. 5, 4, 10 ✅\n- **B**. 4, 2, 6\n- **C**. 8, 4, 6\n- **D**. 2, 0.75, 3\n\n**Correct Answer:** null\n\n**Solution:**\nLet the entire task of filling or emptying the cylinder be 2xyz.\nIn 1 min, A can fill 2yz, B can empty xz and C can fill 2xy units.\nIn 3 mins, total units filled = 3(2yz + 2xy - xz) = 2xyz/2\n2yz + 2xy - xz = xyz/3\nDividing by xyz throughout.\n2/x +2/z = 1/3 + 1/y\nPutting the values, all but option A satisfies the equation."
+    },
+    {
+      "qid": "quant-sectionals-35-6",
+      "passage_text": "",
+      "question_text": "Riya was asked to calculate the sum of 6 consecutive numbers. While adding, she counted a number twice and got the sum 7149. What is the number she added twice?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1018",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1019",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1020",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1021",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the 6 numbers be x, x+1, x+2, x+3, x+4, x+5\nLet the number added twice be x+a where a can take any value from 0 to 5.\nx+x+1+x+2+x+3+x+4+x+5+x+a = 7149\n7x+15+a = 7149\n7x+a=7134\n7x = 7134 -a \nThe values of a and x are integers\nWhen a = 1, x is an integer\nHence x = 1019\nThe number added twice = 1019+1 = 1020",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRiya was asked to calculate the sum of 6 consecutive numbers. While adding, she counted a number twice and got the sum 7149. What is the number she added twice?\n\n**Options:**\n- **A**. 1018\n- **B**. 1019\n- **C**. 1020 ✅\n- **D**. 1021\n\n**Correct Answer:** null\n\n**Solution:**\nLet the 6 numbers be x, x+1, x+2, x+3, x+4, x+5\nLet the number added twice be x+a where a can take any value from 0 to 5.\nx+x+1+x+2+x+3+x+4+x+5+x+a = 7149\n7x+15+a = 7149\n7x+a=7134\n7x = 7134 -a \nThe values of a and x are integers\nWhen a = 1, x is an integer\nHence x = 1019\nThe number added twice = 1019+1 = 1020"
+    },
+    {
+      "qid": "quant-sectionals-35-7",
+      "passage_text": "",
+      "question_text": "A circular skating ring has to be formed such that the internal diameter is 70m and the width is 5m. Inside the inner circle of the track, a rectangular ground has to be formed such that its area is the maximum possible. If a contractor charges Rs 7 per $m^2$ of work done for the circular track and rectangular field, how much money will he earn by completing the above-mentioned work. (Take $\\pi = \\frac{22}{7}$)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs 21,700",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs 23,450",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs 24,500",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs 25,400",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The inner radius of the circle will be $\\frac{70}{2} = 35m$ Outer diameter will be 35m+5m = 40m\nArea of skating ring will be = $\\pi\\left(40^2-35^2\\right)=375\\pi$\nLet the sides of rectangles be $a$ and $b$, the area will be  maximum when a=b. Thus it has to be square for the area to be maximum.\nThus, diagonal of square = diameter of inner circles. $a\\sqrt{2}=70$\nThus $a=35\\sqrt{2}$\nArea = $a^2 = 2450$\nTotal area = $375\\pi +2450$\nCost = $7\\times (375\\pi +2450)$\nCost = $7\\times\\left(375\\left(\\frac{22}{7}\\right)+2450\\right)=8250+17150=25,400$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA circular skating ring has to be formed such that the internal diameter is 70m and the width is 5m. Inside the inner circle of the track, a rectangular ground has to be formed such that its area is the maximum possible. If a contractor charges Rs 7 per $m^2$ of work done for the circular track and rectangular field, how much money will he earn by completing the above-mentioned work. (Take $\\pi = \\frac{22}{7}$)\n\n**Options:**\n- **A**. Rs 21,700\n- **B**. Rs 23,450\n- **C**. Rs 24,500\n- **D**. Rs 25,400 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThe inner radius of the circle will be $\\frac{70}{2} = 35m$ Outer diameter will be 35m+5m = 40m\nArea of skating ring will be = $\\pi\\left(40^2-35^2\\right)=375\\pi$\nLet the sides of rectangles be $a$ and $b$, the area will be  maximum when a=b. Thus it has to be square for the area to be maximum.\nThus, diagonal of square = diameter of inner circles. $a\\sqrt{2}=70$\nThus $a=35\\sqrt{2}$\nArea = $a^2 = 2450$\nTotal area = $375\\pi +2450$\nCost = $7\\times (375\\pi +2450)$\nCost = $7\\times\\left(375\\left(\\frac{22}{7}\\right)+2450\\right)=8250+17150=25,400$"
+    },
+    {
+      "qid": "quant-sectionals-35-8",
+      "passage_text": "",
+      "question_text": "A sphere has a cone of the largest volume inside it, such that the height of the cone is equal to the radius of the cone. What is the percentage of the volume inside the sphere that is not occupied by the cone?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "66.67%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "75%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "80%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "62.75%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "The cross-sectional view looks like this:\nSince the height and the radius are the same, the volume of the cone = $\\frac{1}{3}\\pi\\ r^2h=\\frac{1}{3}\\pi\\ r^3$\nThe volume of the sphere = $\\frac{4}{3}\\pi\\ r^3$\n$\\frac{1}{4}th$ of sphere volume is occupied by cone.\nHence, the sphere still has 75% volume left in it.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA sphere has a cone of the largest volume inside it, such that the height of the cone is equal to the radius of the cone. What is the percentage of the volume inside the sphere that is not occupied by the cone?\n\n**Options:**\n- **A**. 66.67%\n- **B**. 75% ✅\n- **C**. 80%\n- **D**. 62.75%\n\n**Correct Answer:** null\n\n**Solution:**\nThe cross-sectional view looks like this:\nSince the height and the radius are the same, the volume of the cone = $\\frac{1}{3}\\pi\\ r^2h=\\frac{1}{3}\\pi\\ r^3$\nThe volume of the sphere = $\\frac{4}{3}\\pi\\ r^3$\n$\\frac{1}{4}th$ of sphere volume is occupied by cone.\nHence, the sphere still has 75% volume left in it."
+    },
+    {
+      "qid": "quant-sectionals-35-9",
+      "passage_text": "",
+      "question_text": "Ganapati is a resident of Mumbai. Gajanan is a resident of Pune. For Ganesh Chaturdhi, they plan to meet, but were unsure who would be meeting whom. Ganapati drives towards Pune unaware that Gajanan was coming to Mumbai to meet him. They start at their houses at the same time. They both meet at Lonawala and after a brief chat, decide to continue to their trips and interchange their houses. If Ganapati takes 6 hours to go to Pune from Lonawala and Gajanan takes 9 hours to go to Mumbai from Lonawala, what is the speed of Gajanan if the speed of Ganapati was 24km/hr?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1.5 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6.5 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18.5 km/hr",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "19.57 km/hr",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "They travelled for the same amount of time before meeting at Lonawala. So, the total time taken by Ganapati = t + 6 hours\nTotal time taken by Gajanan = t + 9 hours. \nSo, ratio of speeds = d/(t+6):d/(t+9) = (t+9)/(t+6)\nDistance from Lonawala to Mumbai = 24t\nGajanan takes 9 hours to cover this distance. \nHence his speed is 24t/9 = 8t/3\nBut 24: 8t/3 = (t+9)/(t+6) \nSo, t (t+9) = 9(t+6)\n$t^2$ = 54\nThe only positive root of this equation is t = 7.34 hours.\nSo, t = 7.34 hours. \nSo, speed of Gajanan = 7.34 * 8/3 = 19.57 km/hr",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nGanapati is a resident of Mumbai. Gajanan is a resident of Pune. For Ganesh Chaturdhi, they plan to meet, but were unsure who would be meeting whom. Ganapati drives towards Pune unaware that Gajanan was coming to Mumbai to meet him. They start at their houses at the same time. They both meet at Lonawala and after a brief chat, decide to continue to their trips and interchange their houses. If Ganapati takes 6 hours to go to Pune from Lonawala and Gajanan takes 9 hours to go to Mumbai from Lonawala, what is the speed of Gajanan if the speed of Ganapati was 24km/hr?\n\n**Options:**\n- **A**. 1.5 km/hr\n- **B**. 6.5 km/hr\n- **C**. 18.5 km/hr\n- **D**. 19.57 km/hr ✅\n\n**Correct Answer:** null\n\n**Solution:**\nThey travelled for the same amount of time before meeting at Lonawala. So, the total time taken by Ganapati = t + 6 hours\nTotal time taken by Gajanan = t + 9 hours. \nSo, ratio of speeds = d/(t+6):d/(t+9) = (t+9)/(t+6)\nDistance from Lonawala to Mumbai = 24t\nGajanan takes 9 hours to cover this distance. \nHence his speed is 24t/9 = 8t/3\nBut 24: 8t/3 = (t+9)/(t+6) \nSo, t (t+9) = 9(t+6)\n$t^2$ = 54\nThe only positive root of this equation is t = 7.34 hours.\nSo, t = 7.34 hours. \nSo, speed of Gajanan = 7.34 * 8/3 = 19.57 km/hr"
+    },
+    {
+      "qid": "quant-sectionals-35-10",
+      "passage_text": "",
+      "question_text": "In a regular pentagon PQRST, what is the ratio of the area of triangle PRS to the area of the pentagon PQRST?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1 / (sin 72 + 4)",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1 / (cos 72 + 4)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1 / (4 cos 72 + 1)",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1 / (4 sin 72 + 1)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Each angle of a regular pentagon is 108 degrees. In triangle PTS, angle T = 108 degrees, and PT = TS. So, angle TPS = angle TSP = 36 degrees.\nSimilarly, angle QPR = 36 degrees. So, angle SPR = 108 - (36 + 36) = 36 degrees as show below,\nAlso, PS = PR\nArea of triangle PSR = ½ * PS * PR * sin 36\nArea of the pentagon = Sum of areas of the three triangles = Area of triangle PTS + Area of triangle PSR + Area of triangle PQR\n= ½ * PT * PS * sin (angle TPS) + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin (angle QPR)\n= ½ * PT * PS * sin 36 + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin 36\nRequired ratio = ½ * PS * PR * sin 36 / (½ * PT * PS * sin 36 + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin 36)\n= PR / (PT + PR + PQ)\nPT = PQ = SR\nIn triangle PSX,\ncos (angle PSR) = SX/PS = RS/2*PR\nSR = 2 * PR cos (angle PSR) = 2 * PR * cos 72\nRatio = PR / (2 * PR cos 72 + PR + 2 * PR cos 72) = 1 / (4 cos 72 + 1)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn a regular pentagon PQRST, what is the ratio of the area of triangle PRS to the area of the pentagon PQRST?\n\n**Options:**\n- **A**. 1 / (sin 72 + 4)\n- **B**. 1 / (cos 72 + 4)\n- **C**. 1 / (4 cos 72 + 1) ✅\n- **D**. 1 / (4 sin 72 + 1)\n\n**Correct Answer:** null\n\n**Solution:**\nEach angle of a regular pentagon is 108 degrees. In triangle PTS, angle T = 108 degrees, and PT = TS. So, angle TPS = angle TSP = 36 degrees.\nSimilarly, angle QPR = 36 degrees. So, angle SPR = 108 - (36 + 36) = 36 degrees as show below,\nAlso, PS = PR\nArea of triangle PSR = ½ * PS * PR * sin 36\nArea of the pentagon = Sum of areas of the three triangles = Area of triangle PTS + Area of triangle PSR + Area of triangle PQR\n= ½ * PT * PS * sin (angle TPS) + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin (angle QPR)\n= ½ * PT * PS * sin 36 + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin 36\nRequired ratio = ½ * PS * PR * sin 36 / (½ * PT * PS * sin 36 + ½ * PS * PR * sin 36 + ½ * PQ * PR * sin 36)\n= PR / (PT + PR + PQ)\nPT = PQ = SR\nIn triangle PSX,\ncos (angle PSR) = SX/PS = RS/2*PR\nSR = 2 * PR cos (angle PSR) = 2 * PR * cos 72\nRatio = PR / (2 * PR cos 72 + PR + 2 * PR cos 72) = 1 / (4 cos 72 + 1)"
+    },
+    {
+      "qid": "quant-sectionals-35-11",
+      "passage_text": "",
+      "question_text": "A five-digit code 'ABCDE' has to be formed using digits from 1 to 9, where no repetition is allowed, Also, it is known that A and E are consecutive digits and B and D are consecutive digits. How many codes can be formed?",
+      "options": [],
+      "correct_option_data": "840",
+      "solution_text": "The consecutive pairs of numbers from 1 to 9 are (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8) and (8,9).\nFirst let us assume that A and E take values from pair (1,2), in that case, remaining pairs for B and C to select from are: (3,4), (4,5), (5,6), (6,7), (7,8) and (8,9). Count = 6.\nSimilarly, for other values,\nHence, total count = 42\nNow, the number of ways to choose C is 5, since after selecting A, B, D, E, 5 digits remain.\nA and E can arrange in 2! ways, B and D can arrange in 2! ways.\nHence, total number of ways = 42 x 5 x 2 x 2 = 840",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA five-digit code 'ABCDE' has to be formed using digits from 1 to 9, where no repetition is allowed, Also, it is known that A and E are consecutive digits and B and D are consecutive digits. How many codes can be formed?\n\n**Options:**\n\n**Correct Answer:** 840\n\n**Solution:**\nThe consecutive pairs of numbers from 1 to 9 are (1,2), (2,3), (3,4), (4,5), (5,6), (6,7), (7,8) and (8,9).\nFirst let us assume that A and E take values from pair (1,2), in that case, remaining pairs for B and C to select from are: (3,4), (4,5), (5,6), (6,7), (7,8) and (8,9). Count = 6.\nSimilarly, for other values,\nHence, total count = 42\nNow, the number of ways to choose C is 5, since after selecting A, B, D, E, 5 digits remain.\nA and E can arrange in 2! ways, B and D can arrange in 2! ways.\nHence, total number of ways = 42 x 5 x 2 x 2 = 840"
+    },
+    {
+      "qid": "quant-sectionals-35-12",
+      "passage_text": "",
+      "question_text": "A watch which gains uniformly was observed to be 1 minute slow at 8 a.m. on a day. At 6:00 p.m. on the same day, it was 1 minute fast. At what time did the watch show the correct time?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12:00 noon",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2:00 p.m.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1:00 p.m.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3:00 p.m.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "From 8:00 a.m to 6:00 p.m. i.e., in 10 hours the clock gained 2 minutes.\nSo, it gains 1 minute in 5 hours.\nSo it shows the correct time at 1:00 pm on the same day.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA watch which gains uniformly was observed to be 1 minute slow at 8 a.m. on a day. At 6:00 p.m. on the same day, it was 1 minute fast. At what time did the watch show the correct time?\n\n**Options:**\n- **A**. 12:00 noon\n- **B**. 2:00 p.m.\n- **C**. 1:00 p.m. ✅\n- **D**. 3:00 p.m.\n\n**Correct Answer:** null\n\n**Solution:**\nFrom 8:00 a.m to 6:00 p.m. i.e., in 10 hours the clock gained 2 minutes.\nSo, it gains 1 minute in 5 hours.\nSo it shows the correct time at 1:00 pm on the same day."
+    },
+    {
+      "qid": "quant-sectionals-35-13",
+      "passage_text": "",
+      "question_text": "Ram who is a retail seller of rice, buys the product from a whole-seller named Siddharth and then sells it to the customer. Siddharth is a deceitful person. He marks up the price of rice by 20%, and then while selling it to Ram he uses a balance that shows 20% extra weight than the actual weight. Ram marks up the price by 10% and then sells it to the customer. What is the profit/loss % of Ram?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8.33% loss",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8.33% profit",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "32% loss",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "32% profit",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let Siddharth sell the product to Ram at stated rate of Rs 100/kg\nHe uses a faulty weighing machine which shows 20% more reading than the actual.\nIf 1 kg is placed on the machine, the reading will show 1.2 kg. The amount paid by Ram to get  1 kg = Rs 120(Actual cost price)\nWhen Ram is selling the product he marks up the rate by 10%, The selling price would be Rs 110/kg\nThus we see that Ram is making a loss. \nLoss = 120-110 = 10\nLoss% = $\\frac{10}{120}\\times100\\%\\ =\\ 8.33\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam who is a retail seller of rice, buys the product from a whole-seller named Siddharth and then sells it to the customer. Siddharth is a deceitful person. He marks up the price of rice by 20%, and then while selling it to Ram he uses a balance that shows 20% extra weight than the actual weight. Ram marks up the price by 10% and then sells it to the customer. What is the profit/loss % of Ram?\n\n**Options:**\n- **A**. 8.33% loss ✅\n- **B**. 8.33% profit\n- **C**. 32% loss\n- **D**. 32% profit\n\n**Correct Answer:** null\n\n**Solution:**\nLet Siddharth sell the product to Ram at stated rate of Rs 100/kg\nHe uses a faulty weighing machine which shows 20% more reading than the actual.\nIf 1 kg is placed on the machine, the reading will show 1.2 kg. The amount paid by Ram to get  1 kg = Rs 120(Actual cost price)\nWhen Ram is selling the product he marks up the rate by 10%, The selling price would be Rs 110/kg\nThus we see that Ram is making a loss. \nLoss = 120-110 = 10\nLoss% = $\\frac{10}{120}\\times100\\%\\ =\\ 8.33\\%$"
+    },
+    {
+      "qid": "quant-sectionals-35-14",
+      "passage_text": "",
+      "question_text": "How many natural numbers less than 100 have exactly 4 factors?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "32",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "If the prime factorisation of a number, $N$, is $N = p_1^{a_1}* p_2^{a_2} ... * p_n^{a_n} $, then the number of factors of the number is $(a_1+1)*(a_2+1)*...*(a_n+1)$\nIf the number of factors of the number is exactly equal to 4, then it is either of the form $p^3$ for a prime or of the form $p_1*p_2$\nCase 1: N is of the form $p^3$ for a prime. Then the number of such numbers less than 100 is 2 and they are $2^3=8$ and $3^3=27$\nCase 2: N is of the form $p_1*p_2$ for two primes $p_1$ and $p_2$\nIf the smaller prime $p_1=2$, $p_2$ can be one of 3,5,7,11,13,17,19,23,29,31,37,41,43 or 47. 14 cases\nIf the smaller prime $p_1=3$, $p_2$ can be one of 5,7,11,13,17,19,23,29 or 31. 9 cases\nIf the smaller prime $p_1=5$, $p_2$ can be one of 7,11,13,17 or 19. 5 cases\nIf the smaller prime $p_1=7$, $p_2$ can be one of 11 or 13. 2 cases\nTotal number of numbers in this case is 14+9+5+2 = 30\nHence, total numbers equals 2+30=32",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nHow many natural numbers less than 100 have exactly 4 factors?\n\n**Options:**\n- **A**. 20\n- **B**. 24\n- **C**. 36\n- **D**. 32 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nIf the prime factorisation of a number, $N$, is $N = p_1^{a_1}* p_2^{a_2} ... * p_n^{a_n} $, then the number of factors of the number is $(a_1+1)*(a_2+1)*...*(a_n+1)$\nIf the number of factors of the number is exactly equal to 4, then it is either of the form $p^3$ for a prime or of the form $p_1*p_2$\nCase 1: N is of the form $p^3$ for a prime. Then the number of such numbers less than 100 is 2 and they are $2^3=8$ and $3^3=27$\nCase 2: N is of the form $p_1*p_2$ for two primes $p_1$ and $p_2$\nIf the smaller prime $p_1=2$, $p_2$ can be one of 3,5,7,11,13,17,19,23,29,31,37,41,43 or 47. 14 cases\nIf the smaller prime $p_1=3$, $p_2$ can be one of 5,7,11,13,17,19,23,29 or 31. 9 cases\nIf the smaller prime $p_1=5$, $p_2$ can be one of 7,11,13,17 or 19. 5 cases\nIf the smaller prime $p_1=7$, $p_2$ can be one of 11 or 13. 2 cases\nTotal number of numbers in this case is 14+9+5+2 = 30\nHence, total numbers equals 2+30=32"
+    },
+    {
+      "qid": "quant-sectionals-35-15",
+      "passage_text": "",
+      "question_text": "The roots of the quadratic equation $px^2 + qx + r = 0$, are ‘a’ and ‘b’. It is known that $\\frac{1}{a} + \\frac{1}{b} = \\frac{8}{35}$. Moreover, the product of the roots of the equation $rx^2 + qx + p = 0$ is -3/35. Find the sum of the roots of the equation $qx^2 + px + r = 0$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{-8}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{-7}{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{-3}{8}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{-5}{7}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "We have been given that the roots of the first equation are ‘a’ and ‘b’ and\n$\\frac{1}{a} + \\frac{1}{b} = \\frac{8}{35}$ \n=> $\\frac{\\frac{-q}{p}}{\\frac{r}{p}} = \\frac{8}{35}$\n=> $\\frac{-q}{r} = \\frac{8}{35}$\nThe product of the roots of the equation $rx^2 + qx + p = 0$ \n= $\\frac{p}{r}$.\n=> $\\frac{p}{r} = \\frac{-3}{35}$\nThe sum of the roots of the required equation $qx^2 + px + r = 0$\n= $\\frac{-p}{q}$\n=> $\\frac{-p}{q} = \\frac{p}{r}* \\frac{-r}{q} = \\frac{35}{8}*\\frac{-3}{35} = \\frac{-3}{8}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nThe roots of the quadratic equation $px^2 + qx + r = 0$, are ‘a’ and ‘b’. It is known that $\\frac{1}{a} + \\frac{1}{b} = \\frac{8}{35}$. Moreover, the product of the roots of the equation $rx^2 + qx + p = 0$ is -3/35. Find the sum of the roots of the equation $qx^2 + px + r = 0$\n\n**Options:**\n- **A**. $\\frac{-8}{3}$\n- **B**. $\\frac{-7}{5}$\n- **C**. $\\frac{-3}{8}$ ✅\n- **D**. $\\frac{-5}{7}$\n\n**Correct Answer:** null\n\n**Solution:**\nWe have been given that the roots of the first equation are ‘a’ and ‘b’ and\n$\\frac{1}{a} + \\frac{1}{b} = \\frac{8}{35}$ \n=> $\\frac{\\frac{-q}{p}}{\\frac{r}{p}} = \\frac{8}{35}$\n=> $\\frac{-q}{r} = \\frac{8}{35}$\nThe product of the roots of the equation $rx^2 + qx + p = 0$ \n= $\\frac{p}{r}$.\n=> $\\frac{p}{r} = \\frac{-3}{35}$\nThe sum of the roots of the required equation $qx^2 + px + r = 0$\n= $\\frac{-p}{q}$\n=> $\\frac{-p}{q} = \\frac{p}{r}* \\frac{-r}{q} = \\frac{35}{8}*\\frac{-3}{35} = \\frac{-3}{8}$"
+    },
+    {
+      "qid": "quant-sectionals-35-16",
+      "passage_text": "",
+      "question_text": "Arun purchased three different items from a store for Rs 120.25. He observed that the product of the prizes of three items is also 120.25. If one of the item costs Rs 0.25, find the absolute difference between the cost of other two items?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "89.78",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "94.13",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "125.24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "111.69",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the cost of three items be x, y, z. \nx = 0.25\nx+y+z = 120.25\ny+z = 120\nxyz = 120.25\nyz = 481\n$(y-z)^2 = (y+z)^2-4yz$\n$(y-z)^2 = (120)^2-(4*481) = 12476$\ny-z = 111.69",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nArun purchased three different items from a store for Rs 120.25. He observed that the product of the prizes of three items is also 120.25. If one of the item costs Rs 0.25, find the absolute difference between the cost of other two items?\n\n**Options:**\n- **A**. 89.78\n- **B**. 94.13\n- **C**. 125.24\n- **D**. 111.69 ✅\n\n**Correct Answer:** null\n\n**Solution:**\nLet the cost of three items be x, y, z. \nx = 0.25\nx+y+z = 120.25\ny+z = 120\nxyz = 120.25\nyz = 481\n$(y-z)^2 = (y+z)^2-4yz$\n$(y-z)^2 = (120)^2-(4*481) = 12476$\ny-z = 111.69"
+    },
+    {
+      "qid": "quant-sectionals-35-17",
+      "passage_text": "",
+      "question_text": "50% of people residing in town A are adults.15% of the adults are females. What is the number of male adults as a percentage of people who are not adults.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "70%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "85%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "65%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "60%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the total population be 200.\nTherefore, number of adults = 50% of 200 = 100.\nNumber of non-adults = 200-100 =100.\nNumber of female adults = 15% of 100 =15.\nNumber of male adults = 100 -15 = 85.\nRequired percentage = $\\ \\frac{\\ 85}{100}\\times\\ 100\\%\\ =\\ 85\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\n50% of people residing in town A are adults.15% of the adults are females. What is the number of male adults as a percentage of people who are not adults.\n\n**Options:**\n- **A**. 70%\n- **B**. 85% ✅\n- **C**. 65%\n- **D**. 60%\n\n**Correct Answer:** null\n\n**Solution:**\nLet the total population be 200.\nTherefore, number of adults = 50% of 200 = 100.\nNumber of non-adults = 200-100 =100.\nNumber of female adults = 15% of 100 =15.\nNumber of male adults = 100 -15 = 85.\nRequired percentage = $\\ \\frac{\\ 85}{100}\\times\\ 100\\%\\ =\\ 85\\%$"
+    },
+    {
+      "qid": "quant-sectionals-35-18",
+      "passage_text": "",
+      "question_text": "Two candles A and B of same length L are lit simultaneously. After 3 hours length of candle B is double the length of candle A. If after 4 hours candle A is exhausted, what is the length of candle B after 4.5 hours? Assume the rate of exhaustion remains constant for both the candles.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "L/3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "L/2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "L/4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "L/6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Given, the length of two candles be L.\nIf after 4 hours candle A is  exhausted then every hour length of the candle reduce by L/4 candle,  after 3 hours the length of the candle A will be L/4. \nLength of candle B after 3 hours= 2 x L/4= L/2.\nLength of candle B will reduce by L/6 per hour.\nAfter 4.5 hours \nLength of candle B= L- 4.5 L/6= L/4",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nTwo candles A and B of same length L are lit simultaneously. After 3 hours length of candle B is double the length of candle A. If after 4 hours candle A is exhausted, what is the length of candle B after 4.5 hours? Assume the rate of exhaustion remains constant for both the candles.\n\n**Options:**\n- **A**. L/3\n- **B**. L/2\n- **C**. L/4 ✅\n- **D**. L/6\n\n**Correct Answer:** null\n\n**Solution:**\nGiven, the length of two candles be L.\nIf after 4 hours candle A is  exhausted then every hour length of the candle reduce by L/4 candle,  after 3 hours the length of the candle A will be L/4. \nLength of candle B after 3 hours= 2 x L/4= L/2.\nLength of candle B will reduce by L/6 per hour.\nAfter 4.5 hours \nLength of candle B= L- 4.5 L/6= L/4"
+    },
+    {
+      "qid": "quant-sectionals-35-19",
+      "passage_text": "",
+      "question_text": "A certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20 years",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25 years",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Let the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2   =>   $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$  =>   $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nA certain sum of money invested at 10% simple interest per annum for a certain period of time amounts to Rs 600. The same sum of money when invested for the same period of time at 5% simple interest amounts to only Rs 400. What is the time for which the principal was invested?\n\n**Options:**\n- **A**. 15 years\n- **B**. 20 years ✅\n- **C**. 25 years\n- **D**. Cannot be determined\n\n**Correct Answer:** null\n\n**Solution:**\nLet the principal be P and the time for which it was invested be T.\nAt 10% interest rate, $P+P\\cdot T\\cdot\\frac{10}{100}=\\ 600\\ \\ \\longrightarrow\\ \\ $eqn1\nAt 5% interest rate, $P+P\\cdot T\\cdot\\frac{5}{100}=400\\ \\ \\longrightarrow\\ \\ $eqn2\n=> eqn1 - eqn2   =>   $P\\cdot T\\cdot\\frac{5}{100}=200\\ \\ \\longrightarrow\\ \\ $eqn3\nSubstituting eqn 3 in eqn 2, $P+200=400$  =>   $P = 200$\nSubstituting value of P in eqn 3, we get $200\\cdot T\\cdot\\frac{5}{100}=200$\n=> $T = 20$ years"
+    },
+    {
+      "qid": "quant-sectionals-35-20",
+      "passage_text": "",
+      "question_text": "Ram, Shyam and Mohan start working on a project. To finish the project alone, Ram will take 5 days less than Shyam. Shyam and Mohan start working together. They worked for 6 days and finished three-fifth of the project. Then Ram and Mohan finished the rest of the project in 3 more days. Had Mohan worked alone from the beginning of the project, the number of days taken would be",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "45",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume the time taken by Ram to finish the project is x\n=> Time taken by Shyam to finish the project =x+5\nTime taken by Shyam and Mohan to finish the project completely would be $\\frac{6}{0.6}=10$ = 10 (Since they finish three-fifth or 60% of the project in 6 days)\nNow, part of the work done by Mohan in 1 day = $\\frac{1}{10}-\\frac{1}{x+5}$\nRam and Mohan finish 1-$\\frac{3}{5}=\\frac{2}{5}th$ of the work in 3 days.\nHence, $\\frac{2}{5}=\\left(\\frac{1}{10}-\\frac{1}{x+5}+\\frac{1}{x}\\right)3$\n=> $\\frac{2}{15}-\\frac{1}{10}=\\ \\frac{1}{x}-\\frac{1}{x+5}$\n=> $\\frac{5}{5x+x^2}=\\frac{1}{30}$\n=> $x^2+5x-150\\ =\\ 0$ \n=> (x-10)(x+15)=0\nHence, x=10\nHence, part of the work done by Mohan in 1 day = $\\frac{1}{10}-\\frac{1}{x+5}$ = $\\frac{1}{10}-\\frac{1}{10+5}$ = $\\frac{1}{30}$\nHence, time taken by Mohan to finish the project will be 30 days.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nRam, Shyam and Mohan start working on a project. To finish the project alone, Ram will take 5 days less than Shyam. Shyam and Mohan start working together. They worked for 6 days and finished three-fifth of the project. Then Ram and Mohan finished the rest of the project in 3 more days. Had Mohan worked alone from the beginning of the project, the number of days taken would be\n\n**Options:**\n- **A**. 30 ✅\n- **B**. 20\n- **C**. 25\n- **D**. 45\n\n**Correct Answer:** null\n\n**Solution:**\nAssume the time taken by Ram to finish the project is x\n=> Time taken by Shyam to finish the project =x+5\nTime taken by Shyam and Mohan to finish the project completely would be $\\frac{6}{0.6}=10$ = 10 (Since they finish three-fifth or 60% of the project in 6 days)\nNow, part of the work done by Mohan in 1 day = $\\frac{1}{10}-\\frac{1}{x+5}$\nRam and Mohan finish 1-$\\frac{3}{5}=\\frac{2}{5}th$ of the work in 3 days.\nHence, $\\frac{2}{5}=\\left(\\frac{1}{10}-\\frac{1}{x+5}+\\frac{1}{x}\\right)3$\n=> $\\frac{2}{15}-\\frac{1}{10}=\\ \\frac{1}{x}-\\frac{1}{x+5}$\n=> $\\frac{5}{5x+x^2}=\\frac{1}{30}$\n=> $x^2+5x-150\\ =\\ 0$ \n=> (x-10)(x+15)=0\nHence, x=10\nHence, part of the work done by Mohan in 1 day = $\\frac{1}{10}-\\frac{1}{x+5}$ = $\\frac{1}{10}-\\frac{1}{10+5}$ = $\\frac{1}{30}$\nHence, time taken by Mohan to finish the project will be 30 days."
+    },
+    {
+      "qid": "quant-sectionals-35-21",
+      "passage_text": "",
+      "question_text": "In an election, the citizens vote for either candidate A or candidate B. Candidate A got 25% more female votes than candidate B. Candidate B got 50 less male votes than the candidate A. The ratio of the number of females who voted candidate A to the number of male voters of B is 3:2. Find the minimum possible population of the city if at least 1 male and at least 1 female voted to each candidate.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "101",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "97",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "93",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "87",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "Assume, the number of the female voter of B = 4x, then the number of female voters of A = $4x\\left(1+\\frac{25}{100}\\right)\\ =5x$\nAssume the number of the male voter of  A = y, then the number of male voters of B = y-50\nNow, $\\frac{5x}{y-50}=\\frac{3}{2}$\n=> 3y-10x = 150\n=> 3y = 10x+150 => y = $\\frac{\\left(10x+150\\right)}{3}$\nPopulation of the city = 4x+5x+y+y-50 = 9x+2y-50 = 9x+$\\frac{2\\left(10x+150\\right)}{3}$-50\n=100 + $9x+\\frac{20x}{3}$ - 50\nThe minimum value of x can be 3  (x should be multiple of 3)\nHence, the minimum population of the city = 100+9*3+20 -50 = 97",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nIn an election, the citizens vote for either candidate A or candidate B. Candidate A got 25% more female votes than candidate B. Candidate B got 50 less male votes than the candidate A. The ratio of the number of females who voted candidate A to the number of male voters of B is 3:2. Find the minimum possible population of the city if at least 1 male and at least 1 female voted to each candidate.\n\n**Options:**\n- **A**. 101\n- **B**. 97 ✅\n- **C**. 93\n- **D**. 87\n\n**Correct Answer:** null\n\n**Solution:**\nAssume, the number of the female voter of B = 4x, then the number of female voters of A = $4x\\left(1+\\frac{25}{100}\\right)\\ =5x$\nAssume the number of the male voter of  A = y, then the number of male voters of B = y-50\nNow, $\\frac{5x}{y-50}=\\frac{3}{2}$\n=> 3y-10x = 150\n=> 3y = 10x+150 => y = $\\frac{\\left(10x+150\\right)}{3}$\nPopulation of the city = 4x+5x+y+y-50 = 9x+2y-50 = 9x+$\\frac{2\\left(10x+150\\right)}{3}$-50\n=100 + $9x+\\frac{20x}{3}$ - 50\nThe minimum value of x can be 3  (x should be multiple of 3)\nHence, the minimum population of the city = 100+9*3+20 -50 = 97"
+    },
+    {
+      "qid": "quant-sectionals-35-22",
+      "passage_text": "",
+      "question_text": "What is the maximum radius of a sphere that can be inserted into a prism with an equilateral triangle as base, with side length 18 cm and height of the prism as 10 cm?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$3\\sqrt{3}$ cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$4\\sqrt{2}$ cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": null,
+      "solution_text": "When we convert the 3-D figure into 2-D looking from the top of the prism, we get:We know, height of an equilateral triangle is given by $\\ \\frac{\\ s\\sqrt{3\\ }}{2}$, where s= side length= $\\ \\frac{\\ 18\\sqrt{3\\ }}{2}$=$9\\sqrt{3}$r= $\\frac{1}{3}$ of h, where h is the height of the equilateral triangle ('.' in-centre divides the radius in the ratio 2:1)So, r= $3\\sqrt{3}$, which is approximately equal to 5.19 cm.If this be the case, the diameter= 10.38 would not fit in the prism because height of the prism is limited to 10 cm.Therefore, maximum diameter of the sphere that can get inside the prism= 10 cm and hence, radius= 5cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: question-content)\n\n**Passage:**\n\n\nWhat is the maximum radius of a sphere that can be inserted into a prism with an equilateral triangle as base, with side length 18 cm and height of the prism as 10 cm?\n\n**Options:**\n- **A**. $3\\sqrt{3}$ cm\n- **B**. 4 cm\n- **C**. 5 cm ✅\n- **D**. $4\\sqrt{2}$ cm\n\n**Correct Answer:** null\n\n**Solution:**\nWhen we convert the 3-D figure into 2-D looking from the top of the prism, we get:We know, height of an equilateral triangle is given by $\\ \\frac{\\ s\\sqrt{3\\ }}{2}$, where s= side length= $\\ \\frac{\\ 18\\sqrt{3\\ }}{2}$=$9\\sqrt{3}$r= $\\frac{1}{3}$ of h, where h is the height of the equilateral triangle ('.' in-centre divides the radius in the ratio 2:1)So, r= $3\\sqrt{3}$, which is approximately equal to 5.19 cm.If this be the case, the diameter= 10.38 would not fit in the prism because height of the prism is limited to 10 cm.Therefore, maximum diameter of the sphere that can get inside the prism= 10 cm and hence, radius= 5cm"
+    }
+  ]
+}
