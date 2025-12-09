@@ -35,7 +35,7 @@ export default function PracticeTestPage() {
   const examTypeFromUrl = urlParams.get('exam');
 
   const { data: practiceTests, isLoading } = useQuery<PracticeTest[]>({
-    queryKey: [`/api/practice-tests${examTypeFromUrl ? `?exam=${examTypeFromUrl}` : ''}`],
+    queryKey: [`/api/practice-tests${examTypeFromUrl ? `?examType=${examTypeFromUrl}` : ''}`],
   });
 
   const { data: currentTest } = useQuery<PracticeTest>({
@@ -97,8 +97,8 @@ export default function PracticeTestPage() {
   // If test is started and we have a current test, show the test interface
   if (testStarted && currentTest) {
     return (
-      <PracticeTestInterface 
-        test={currentTest} 
+      <PracticeTestInterface
+        test={currentTest}
       />
     );
   }
@@ -106,7 +106,7 @@ export default function PracticeTestPage() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      
+
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
@@ -151,8 +151,8 @@ export default function PracticeTestPage() {
                         <span>{test.subject}</span>
                       </div>
                     </div>
-                    
-                    <Button 
+
+                    <Button
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                       onClick={() => handleStartTest(test.id)}
                       disabled={startTestMutation.isPending}

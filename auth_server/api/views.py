@@ -129,15 +129,20 @@ def practice_test_detail(request, test_id):
 
 def mock_tests(request):
     """
-    Retrieves all mock tests.
+    Retrieves mock tests, optionally filtered by exam type.
 
     Args:
-        request: The HttpRequest object.
+        request: The HttpRequest object. 'examType' can be used as a query
+                 parameter for filtering.
 
     Returns:
-        A JsonResponse containing a list of all mock test objects.
+        A JsonResponse containing a list of mock test objects.
     """
-    data = storage.get_mock_tests()
+    exam_type = request.GET.get('examType')
+    if exam_type:
+        data = storage.get_mock_tests_by_exam_type(exam_type)
+    else:
+        data = storage.get_mock_tests()
     return JsonResponse(data, safe=False)
 
 def mock_test_detail(request, test_id):
@@ -159,15 +164,20 @@ def mock_test_detail(request, test_id):
 
 def sectional_tests(request):
     """
-    Retrieves all sectional tests.
+    Retrieves sectional tests, optionally filtered by exam type.
 
     Args:
-        request: The HttpRequest object.
+        request: The HttpRequest object. 'examType' can be used as a query
+                 parameter for filtering.
 
     Returns:
-        A JsonResponse containing a list of all sectional test objects.
+        A JsonResponse containing a list of sectional test objects.
     """
-    data = storage.get_sectional_tests()
+    exam_type = request.GET.get('examType')
+    if exam_type:
+        data = storage.get_sectional_tests_by_exam_type(exam_type)
+    else:
+        data = storage.get_sectional_tests()
     return JsonResponse(data, safe=False)
 
 def sectional_test_detail(request, test_id):

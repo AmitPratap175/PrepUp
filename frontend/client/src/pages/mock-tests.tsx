@@ -25,12 +25,16 @@ import type { PracticeTest, UserAnswer } from "@shared/schema";
  */
 export default function MockTestsPage() {
   const { isAuthenticated } = useAuth();
-  const [, navigate] = useLocation();
+  const [location, navigate] = useLocation();
   const { toast } = useToast();
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
 
-  const { data: mockTests, isLoading } = useQuery<PracticeTest[]> ({
-    queryKey: ["/api/mock-tests"],
+  // Extract exam type from URL if provided
+  const searchParams = new URLSearchParams(window.location.search);
+  const examTypeFromUrl = searchParams.get('exam');
+
+  const { data: mockTests, isLoading } = useQuery<PracticeTest[]>({
+    queryKey: [`/api/mock-tests${examTypeFromUrl ? `?examType=${examTypeFromUrl}` : ''}`],
   });
 
   const handleStartTest = (testId: string) => {

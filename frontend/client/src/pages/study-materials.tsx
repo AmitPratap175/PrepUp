@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
@@ -22,6 +23,18 @@ export default function StudyMaterials() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedExamType, setSelectedExamType] = useState<string>("all");
   const [selectedSubject, setSelectedSubject] = useState<string>("all");
+  const [location] = useLocation();
+
+  // Sync filter with URL changes
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const examTypeFromUrl = searchParams.get('exam');
+    if (examTypeFromUrl) {
+      setSelectedExamType(examTypeFromUrl);
+    } else {
+      setSelectedExamType("all");
+    }
+  }, [location]);
 
   const { data: allMaterials, isLoading } = useQuery<StudyMaterial[]>({
     queryKey: ["/api/study-materials"],
@@ -30,10 +43,10 @@ export default function StudyMaterials() {
   // Filter materials based on search and filters
   const filteredMaterials = allMaterials?.filter(material => {
     const matchesSearch = material.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         material.description.toLowerCase().includes(searchTerm.toLowerCase());
+      material.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesExamType = selectedExamType === "all" || material.examType === selectedExamType;
     const matchesSubject = selectedSubject === "all" || material.subject === selectedSubject;
-    
+
     return matchesSearch && matchesExamType && matchesSubject;
   }) || [];
 
@@ -60,7 +73,7 @@ export default function StudyMaterials() {
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -110,7 +123,7 @@ export default function StudyMaterials() {
 
           {/* Filter Tabs */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
-            <Button 
+            <Button
               variant={selectedExamType === "all" ? "default" : "outline"}
               onClick={() => setSelectedExamType("all")}
               className={selectedExamType === "all" ? "bg-primary text-primary-foreground" : ""}
@@ -118,7 +131,7 @@ export default function StudyMaterials() {
             >
               All Materials
             </Button>
-            <Button 
+            <Button
               variant={selectedExamType === "cat" ? "default" : "outline"}
               onClick={() => setSelectedExamType("cat")}
               className={selectedExamType === "cat" ? "bg-primary text-primary-foreground" : ""}
@@ -126,7 +139,7 @@ export default function StudyMaterials() {
             >
               CAT Materials
             </Button>
-            <Button 
+            <Button
               variant={selectedExamType === "gate" ? "default" : "outline"}
               onClick={() => setSelectedExamType("gate")}
               className={selectedExamType === "gate" ? "bg-primary text-primary-foreground" : ""}
@@ -143,17 +156,16 @@ export default function StudyMaterials() {
                 <Card key={material.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden hover-elevate">
                   {material.imageUrl && (
                     <div className="relative h-40 overflow-hidden">
-                      <img 
+                      <img
                         src={material.imageUrl}
                         alt={material.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <Badge 
-                        className={`absolute top-3 right-3 ${
-                          material.isPremium 
-                            ? 'bg-primary text-primary-foreground' 
-                            : 'bg-card text-foreground'
-                        }`}
+                      <Badge
+                        className={`absolute top-3 right-3 ${material.isPremium
+                          ? 'bg-primary text-primary-foreground'
+                          : 'bg-card text-foreground'
+                          }`}
                       >
                         {material.isPremium ? 'Premium' : 'Free'}
                       </Badge>
@@ -174,7 +186,7 @@ export default function StudyMaterials() {
                     <CardDescription className="mb-4">
                       {material.description}
                     </CardDescription>
-                    
+
                     <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                       <div className="flex items-center gap-1">
                         <span className="material-symbols-outlined text-sm">description</span>
@@ -185,9 +197,9 @@ export default function StudyMaterials() {
                         <span>{material.rating}.0 ({material.reviewCount} reviews)</span>
                       </div>
                     </div>
-                    
+
                     <a href={material.downloadUrl} download>
-                      <Button 
+                      <Button
                         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                         data-testid={`download-material-${material.id}`}
                       >
@@ -209,8 +221,8 @@ export default function StudyMaterials() {
                     : "Study materials are currently being prepared. Please check back soon!"
                   }
                 </p>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={() => {
                     setSearchTerm("");
                     setSelectedExamType("all");

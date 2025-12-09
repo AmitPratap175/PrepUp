@@ -219,6 +219,20 @@ class MemStorage:
                 "subject": "Essay",
                 "duration": 30,
                 "filePath": "data/xat/essay.json"
+            },
+            {
+                "title": "XAT Static GK",
+                "examType": "xat",
+                "subject": "General Knowledge",
+                "duration": 30,
+                "filePath": "data/xat/static_gk.json"
+            },
+            {
+                "title": "XAT Current Affairs",
+                "examType": "xat",
+                "subject": "General Knowledge",
+                "duration": 30,
+                "filePath": "data/xat/current_affairs_gk.json"
             }
         ]
 
@@ -457,6 +471,18 @@ class MemStorage:
         """
         return self.mock_tests.get(test_id)
 
+    def get_mock_tests_by_exam_type(self, exam_type: str) -> List[Dict]:
+        """
+        Retrieves mock tests filtered by exam type.
+
+        Args:
+            exam_type: The exam type to filter by (e.g., 'cat', 'gate').
+
+        Returns:
+            A list of mock test dictionaries matching the exam type.
+        """
+        return [test for test in self.mock_tests.values() if test.get('examType') == exam_type]
+
     def get_sectional_tests(self) -> List[Dict]:
         """
         Retrieves all sectional tests from the storage.
@@ -465,6 +491,18 @@ class MemStorage:
             A list of all sectional test dictionaries.
         """
         return list(self.sectional_tests.values())
+
+    def get_sectional_tests_by_exam_type(self, exam_type: str) -> List[Dict]:
+        """
+        Retrieves sectional tests filtered by exam type.
+
+        Args:
+            exam_type: The exam type to filter by (e.g., 'cat', 'gate').
+
+        Returns:
+            A list of sectional test dictionaries matching the exam type.
+        """
+        return [test for test in self.sectional_tests.values() if test.get('examType') == exam_type]
 
     def get_sectional_test(self, test_id: str) -> Optional[Dict]:
         """

@@ -25,8 +25,12 @@ export default function SectionalTestsPage() {
   const [, navigate] = useLocation();
   const { toast } = useToast();
 
+  // Extract exam type from URL if provided
+  const searchParams = new URLSearchParams(window.location.search);
+  const examTypeFromUrl = searchParams.get('exam');
+
   const { data: sectionalTests, isLoading } = useQuery<PracticeTest[]>({
-    queryKey: ["/api/sectional-tests"],
+    queryKey: [`/api/sectional-tests${examTypeFromUrl ? `?examType=${examTypeFromUrl}` : ''}`],
   });
 
   const handleStartTest = (testId: string) => {

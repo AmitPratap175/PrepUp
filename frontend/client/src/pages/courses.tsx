@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { AppHeader } from "@/components/app-header";
@@ -24,16 +24,16 @@ export default function Courses() {
   const { toast } = useToast();
   const [selectedExamType, setSelectedExamType] = useState<string>("all");
 
-  // Extract exam type from URL if provided
-  const urlParams = new URLSearchParams(location.split('?')[1] || '');
-  const examTypeFromUrl = urlParams.get('exam');
-
-  // Set initial filter from URL
-  useState(() => {
-    if (examTypeFromUrl && examTypeFromUrl !== selectedExamType) {
+  // Sync filter with URL changes
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const examTypeFromUrl = searchParams.get('exam');
+    if (examTypeFromUrl) {
       setSelectedExamType(examTypeFromUrl);
+    } else {
+      setSelectedExamType("all");
     }
-  });
+  }, [location]);
 
   const { data: allCourses, isLoading } = useQuery<Course[]>({
     queryKey: ["/api/courses"],

@@ -35,9 +35,9 @@ export default function QuizPage() {
   const queryClient = useQueryClient();
 
   // Extract test ID from URL if provided
-  const urlParams = new URLSearchParams(location.split('?')[1] || '');
-  const testIdFromUrl = urlParams.get('testId');
-  const examTypeFromUrl = urlParams.get('exam');
+  const searchParams = new URLSearchParams(window.location.search);
+  const testIdFromUrl = searchParams.get('testId');
+  const examTypeFromUrl = searchParams.get('exam');
 
   const { data: practiceTests, isLoading } = useQuery<PracticeTest[]>({
     queryKey: ["/api/practice-tests", ...(examTypeFromUrl ? [`?examType=${examTypeFromUrl}`] : [])],

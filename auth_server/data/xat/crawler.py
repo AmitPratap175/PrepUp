@@ -324,7 +324,8 @@ async def main():
         "quant": ["quantitative-ability", "quant"],
         "valr": ["verbal-ability-and-logical-reasoning", "verbal-ability-logical-reasoning"],
         "decision_making": ["decision-making"],
-        "essay": ["essay"]
+        "essay": ["essay"],
+        "general_knowledge": ["general-knowledge"]
     }
 
     keyword_to_filename = {}
