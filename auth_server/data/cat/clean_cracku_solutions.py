@@ -103,7 +103,7 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
 
     browser_config = BrowserConfig(
         verbose=True,
-        headless=True,
+        headless=False,
         use_persistent_context=True,
         use_managed_browser=True,
         browser_type="chromium",
@@ -113,8 +113,10 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
         scan_full_page=True,
         js_code=[
             "window.scrollTo(0, document.body.scrollHeight);",
+            "const btn = document.querySelector('button#submit-test'); if(btn) { btn.click(); }"
         ],
-        delay_before_return_html=2.0,
+        # Wait for 6 seconds to ensure the 'Submit Test' action completes and content loads
+        delay_before_return_html=6.0,
     )
     
     categorized_html: Dict[str, List[str]] = {"quant": [], "verbal": [], "reasoning": []}

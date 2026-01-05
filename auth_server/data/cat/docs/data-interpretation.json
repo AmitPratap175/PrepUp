@@ -42114,7 +42114,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "11",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -42123,8 +42123,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "The starting point is shown in the table below. The number of products produced by A is independent of other steps. Hence, we can assume that it runs at full capacity.\n\nFor every other process, it can proceed with only as many units as are delivered to it by the process before it till max capacity is reached. Hence, even though B has capacity to do 3 units from 11-12 noon, it will do only 1 as only 1 is delivered to it from A.\n\nHence, the solution table is as shown. The number in the brackets is the outstanding units in that particular unit.\n\nThe maximum number of units that can be manufactured at 3 pm = 3+3+2+2+1 = 11",
       "image_url": "https://cracku.in/media/uploads/2016/02/26/capture_ABUh4Cn.PNG",
       "full_markdown": "### Question (qid: 32256)\n\n**Passage:**\nThere are 5 stages of manufacturing a product - A, B, C, D, E. The sequence of working for a unit of product is A-B-C-D-E. After this the product is manufactured and transported. Transfer between different stages of production takes negligible time. Transfer of the semi-processed units between any two stages of production occurs at the end of 1-hr shift, and 1-hr is the processing time during each stage. Final products are transferred out of warehouse only at end of day i.e. at 4:00 p.m. Following is the work capacity of cloth manufacturing plant during different shifts of the day:\n\nAt 10:AM A, B, C, D, E stages have 1,1,2,4,3 units respectively. Outstanding' is defined as the number of unfinished units at any stage of production which cannot be processed due to capacity constraint. If capacity permits, the outstanding of any shift can be processed during the next shift.\n\nWhat is the maximum number of products that can be manufactured till 3:00 pm?\n\n**Options:**\n- **A**. 9\n- **B**. 10\n- **C**. 11\n- **D**. 12\n\n**Correct Answer:** null"
     },
@@ -42137,7 +42137,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "12",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -42158,8 +42158,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "A",
+      "solution_text": "The starting point is shown in the table below. The number of products produced by A is independent of other steps. Hence, we can assume that it runs at full capacity.\n\nFor every other process, it can proceed with only as many units as are delivered to it by the process before it till max capacity is reached. Hence, even though B has capacity to do 3 units from 11-12 noon, it will do only 1 as only 1 is delivered to it from A.\n\nHence, the solution table is as shown. The number in the brackets is the outstanding units in that particular unit.\n\nThe maximum number of units that can be manufactured at 4 pm = 3+3+2+2+1+1 = 12",
       "image_url": "https://cracku.in/media/uploads/2016/02/26/capture_ABUh4Cn.PNG",
       "full_markdown": "### Question (qid: 32257)\n\n**Passage:**\nThere are 5 stages of manufacturing a product - A, B, C, D, E. The sequence of working for a unit of product is A-B-C-D-E. After this the product is manufactured and transported. Transfer between different stages of production takes negligible time. Transfer of the semi-processed units between any two stages of production occurs at the end of 1-hr shift, and 1-hr is the processing time during each stage. Final products are transferred out of warehouse only at end of day i.e. at 4:00 p.m. Following is the work capacity of cloth manufacturing plant during different shifts of the day:\n\nAt 10:AM A, B, C, D, E stages have 1,1,2,4,3 units respectively. Outstanding' is defined as the number of unfinished units at any stage of production which cannot be processed due to capacity constraint. If capacity permits, the outstanding of any shift can be processed during the next shift.\n\nWhat is the maximum number of products that can be manufactured till 4:00 pm?\n\n**Options:**\n- **A**. 12\n- **B**. 14\n- **C**. 11\n- **D**. 10\n\n**Correct Answer:** null"
     },
@@ -42190,11 +42190,11 @@
           "data_option": "4",
           "label": "D",
           "option_text": "Both options (a) and (b)",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "D",
+      "solution_text": "The starting point is shown in the table below. The number of products produced by A is independent of other steps. Hence, we can assume that it runs at full capacity.\n\nFor every other process, it can proceed with only as many units as are delivered to it by the process before it till max capacity is reached. Hence, even though B has capacity to do 3 units from 11-12 noon, it will do only 1 as only 1 is delivered to it from A.\n\nHence, the solution table is as shown. The number in the brackets is the outstanding units in that particular unit.\n\nHence, the first outstanding item was witnessed in stages D and E at 11 am-12 noon shift.",
       "image_url": "https://cracku.in/media/uploads/2016/02/26/capture_ABUh4Cn.PNG",
       "full_markdown": "### Question (qid: 32258)\n\n**Passage:**\nThere are 5 stages of manufacturing a product - A, B, C, D, E. The sequence of working for a unit of product is A-B-C-D-E. After this the product is manufactured and transported. Transfer between different stages of production takes negligible time. Transfer of the semi-processed units between any two stages of production occurs at the end of 1-hr shift, and 1-hr is the processing time during each stage. Final products are transferred out of warehouse only at end of day i.e. at 4:00 p.m. Following is the work capacity of cloth manufacturing plant during different shifts of the day:\n\nAt 10:AM A, B, C, D, E stages have 1,1,2,4,3 units respectively. Outstanding' is defined as the number of unfinished units at any stage of production which cannot be processed due to capacity constraint. If capacity permits, the outstanding of any shift can be processed during the next shift.\n\nWhich stage of the production witnessed the first outstanding unit?\n\n**Options:**\n- **A**. D\n- **B**. E\n- **C**. C\n- **D**. Both options (a) and (b)\n\n**Correct Answer:** null"
     },
@@ -42213,7 +42213,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "12",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -42228,8 +42228,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "B",
+      "solution_text": "The solution table is as shown. The number in the brackets is the outstanding units in that particular unit.\nTotal number of units = 7+1+1+1+1+1 = 12",
       "image_url": "https://cracku.in/media/uploads/2016/02/26/capture_ABUh4Cn.PNG",
       "full_markdown": "### Question (qid: 32259)\n\n**Passage:**\nThere are 5 stages of manufacturing a product - A, B, C, D, E. The sequence of working for a unit of product is A-B-C-D-E. After this the product is manufactured and transported. Transfer between different stages of production takes negligible time. Transfer of the semi-processed units between any two stages of production occurs at the end of 1-hr shift, and 1-hr is the processing time during each stage. Final products are transferred out of warehouse only at end of day i.e. at 4:00 p.m. Following is the work capacity of cloth manufacturing plant during different shifts of the day:\n\nAt 10:AM A, B, C, D, E stages have 1,1,2,4,3 units respectively. Outstanding' is defined as the number of unfinished units at any stage of production which cannot be processed due to capacity constraint. If capacity permits, the outstanding of any shift can be processed during the next shift.\n\nHad there been only 2 stages of production - A and then B, what would be the maximum number of units manufactured till 4:00pm?The initial number of units with A and B each is 1 units at 10 AM.\n\n**Options:**\n- **A**. 11\n- **B**. 12\n- **C**. 10\n- **D**. 13\n\n**Correct Answer:** null"
     }

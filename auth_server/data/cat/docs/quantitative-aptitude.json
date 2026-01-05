@@ -66082,8 +66082,8 @@
       "passage_text": "",
       "question_text": "If three sides of a rectangular park have a total length 400 ft, then the area of the park is maximum when the length (in ft) of its longer side is",
       "options": [],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "200",
+      "solution_text": "Let the length and breadth of the park be l,b, l > b\nCase 1: 2l + b = 400\nArea = lb. Area is maximum when 2l * b is maximum, which is maximum when 2l = b (using AM $ \\geq $ GM inequality) => l = 100, b = 200. Which can't happen since l > b\n\nCase 2: l + 2b = 400\nArea = lb. Area is maximum when l *2 b is \nmaximum, which is maximum when l = 2b (using AM $ \\geq $ GM \ninequality) => l = 200, b = 100. \n\nHence length of the longer side is 200 ft",
       "image_url": "",
       "full_markdown": "### Question (qid: 98401)\n\n**Passage:**\nIf three sides of a rectangular park have a total length 400 ft, then the area of the park is maximum when the length (in ft) of its longer side is\n\nIf three sides of a rectangular park have a total length 400 ft, then the area of the park is maximum when the length (in ft) of its longer side is\n\n**Options:**\n\n**Correct Answer:** null"
     },
@@ -66092,8 +66092,8 @@
       "passage_text": "ABCD is a quadrilateral inscribed in a circle with centre O such that O lies inside the quadrilateral. If ∠ C O D = 120 \\angle COD = 120 ∠ C O D = 1 2 0 degrees and ∠ B A C = 30 \\angle BAC = 30 ∠ B A C = 3 0 degrees, then the value of ∠ B C D \\angle BCD ∠ B C D (in degrees) is",
       "question_text": "ABCD is a quadrilateral inscribed in a circle with centre O such that O lies inside the quadrilateral. If $\\angle COD = 120$ degrees and $\\angle BAC = 30$ degrees, then the value of $\\angle BCD$ (in degrees) is",
       "options": [],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "90",
+      "solution_text": "$\\angle COD = 120$ => $\\angle CAD = 120/2 = 60$ (The angle subtended by the chord DC at the major arc is half the angle subtended at the centre of the circle.)\n$\\angle BAC = 30$\n $\\angle BAD = \\angle BAC + \\angle CAD$ = 30 + 60 = 90.\n$\\angle BCD = 180 - \\angle BAD$ = 180 - 90 = 90",
       "image_url": "",
       "full_markdown": "### Question (qid: 98400)\n\n**Passage:**\nABCD is a quadrilateral inscribed in a circle with centre O such that O lies inside the quadrilateral. If ∠ C O D = 120 \\angle COD = 120 ∠ C O D = 1 2 0 degrees and ∠ B A C = 30 \\angle BAC = 30 ∠ B A C = 3 0 degrees, then the value of ∠ B C D \\angle BCD ∠ B C D (in degrees) is\n\nABCD is a quadrilateral inscribed in a circle with centre O such that O lies inside the quadrilateral. If $\\angle COD = 120$ degrees and $\\angle BAC = 30$ degrees, then the value of $\\angle BCD$ (in degrees) is\n\n**Options:**\n\n**Correct Answer:** null"
     },
@@ -66106,7 +66106,7 @@
           "data_option": "1",
           "label": "A",
           "option_text": "1",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "2",
@@ -66127,8 +66127,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "A",
+      "solution_text": "The graph of the given function is as shown below.\n\nWe can see that the shortest distance of the point (1/2, 1) will be 1 unit.",
       "image_url": "",
       "full_markdown": "### Question (qid: 98105)\n\n**Passage:**\nThe shortest distance of the point ( 1 2 , 1 ) (\\frac{1}{2},1) ( 2 1 ​ , 1 ) from the curve y = I x -1I + I x + 1I is\n\n1\n\n0\n\n2 \\sqrt{2} 2 ​\n\n3 2 \\sqrt{\\frac{3}{2}} 2 3 ​ ​\n\nThe shortest distance of the point $(\\frac{1}{2},1)$ from the curve y = I x -1I + I x + 1I is\n\n**Options:**\n- **A**. 1\n- **B**. 0\n- **C**. $\\sqrt{2}$\n- **D**. $\\sqrt{\\frac{3}{2}}$\n\n**Correct Answer:** null"
     },
@@ -66147,7 +66147,7 @@
           "data_option": "2",
           "label": "B",
           "option_text": "(6, 3)",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "3",
@@ -66162,8 +66162,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "B",
+      "solution_text": "Given equation of circle = $x^{2} + y^{2} + 4x - 6y - 3 = 0$\n\nCenter of the circle is (-2,3) and radius of the circle = $\\sqrt{\\ g^2+f^2-c}=\\sqrt{\\ 4+9+3}=4$\n\nLet us assume the point of the intersection of the tangents is ( h,k)\n\nThe angle made by the line joining (h,k) to the centre makes an angle of 30 degrees with the tangent, and sin(30) will be the ratio of the radius and the distance between the center and (h,k)\n\n=> $\\sin\\left(30\\right)=\\dfrac{4}{\\sqrt{\\left(\\ h+2\\right)^2+\\left(k-3\\right)^2}}$\n\nSquaring on both sides:\n\n$\\dfrac{1}{4}=\\dfrac{16}{\\left(h+2\\right)^2+\\left(k-3\\right)^2}$\n\n=> $\\left(h+2\\right)^2+\\left(k-3\\right)^2=64$\n\nWhen x = 6 => h = 6 => $64+\\left(k-3\\right)^2=64$ => k = 3.\n\n=> required point is (6,3)",
       "image_url": "",
       "full_markdown": "### Question (qid: 449499)\n\n**Passage:**\nLet C be the circle x 2 + y 2 + 4 x − 6 y − 3 = 0 x^{2} + y^{2} + 4x - 6y - 3 = 0 x 2 + y 2 + 4 x − 6 y − 3 = 0 and L be the locus of the point of intersection of a pair of tangents to C with the angle between the two tangents equal to 6 0 ∘ 60^{\\circ} 6 0 ∘ . Then, the point at which L touches the line x x x = 6 is\n\n(6, 6)\n\n(6, 3)\n\n(6, 8)\n\n(6, 4)\n\nLet C be the circle $x^{2} + y^{2} + 4x - 6y - 3 = 0$ and L be the locus of the point of intersection of a pair of tangents to C with the angle between the two tangents equal to $60^{\\circ}$. Then, the point at which L touches the line $x$ = 6 is\n\n**Options:**\n- **A**. (6, 6)\n- **B**. (6, 3)\n- **C**. (6, 8)\n- **D**. (6, 4)\n\n**Correct Answer:** null"
     },
@@ -66188,7 +66188,7 @@
           "data_option": "3",
           "label": "C",
           "option_text": "8 : 5",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "data_option": "4",
@@ -66197,8 +66197,8 @@
           "is_correct": false
         }
       ],
-      "correct_option_data": null,
-      "solution_text": null,
+      "correct_option_data": "C",
+      "solution_text": "Given ABCD is a cyclic quadrilateral.\n\nAngle ADB = Angle ACB (Angle subtended by chord on the same side of arc)\n\nAngle DAC = Angle DBC (Angle subtended by chord on the same side of arc)\n\n=> Triangles AED and BEC are similar triangles\n\nSimilarly triangles AEB and DEC are also similar using AA similarity property.\n\nNow, given that AB : CD = 2 : 1 and BC : AD = 5 : 4\n\nAE/BE = AD/BC = 4/5 (Similar Triangles AED and BEC)\n\nBE/CE = AB/CD = 2/1 (Similar Triangles AEB and DEC)\n\nMultiplying both, we get AE/CE = 8/5.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449500)\n\n**Passage:**\nA quadrilateral ABCD is inscribed in a circle such that AB : CD = 2 : 1 and BC : AD = 5 : 4. If AC and BD intersect at the point E, then AE : CE equals\n\n2 : 1\n\n1 : 2\n\n8 : 5\n\n5 : 8\n\nA quadrilateral ABCD is inscribed in a circle such that AB : CD = 2 : 1 and BC : AD = 5 : 4. If AC and BD intersect at the point E, then AE : CE equals\n\n**Options:**\n- **A**. 2 : 1\n- **B**. 1 : 2\n- **C**. 8 : 5\n- **D**. 5 : 8\n\n**Correct Answer:** null"
     }
