@@ -121,9 +121,9 @@ async def test_news_crawl(dt_num: int, daily_num: int) -> Dict[str, List[str]]:
     async with AsyncWebCrawler(config=browser_config) as crawler:
         # URLs are now formatted with the dynamically updated numbers.
         urls = [
-                f"https://cracku.in/dt-verbal-test-{dt_num}",
-                f"https://cracku.in/dt-quant-dailytest-{dt_num}",
-                f"https://cracku.in/dt-reasoning-dailytest-{dt_num}",
+                f"https://cracku.in/dt-verbal-daily-test-{dt_num}",
+                f"https://cracku.in/dt-quant-daily-test-{dt_num}",
+                f"https://cracku.in/dt-reasoning-daily-test-{dt_num}",
                 f"https://gmatpoint.com/gmat-daily-target/verbal-daily-test-{daily_num}",
                 f"https://gmatpoint.com/gmat-daily-target/quant-daily-test-{daily_num}"
                 ]
