@@ -66201,6 +66201,131 @@
       "solution_text": "Given ABCD is a cyclic quadrilateral.\n\nAngle ADB = Angle ACB (Angle subtended by chord on the same side of arc)\n\nAngle DAC = Angle DBC (Angle subtended by chord on the same side of arc)\n\n=> Triangles AED and BEC are similar triangles\n\nSimilarly triangles AEB and DEC are also similar using AA similarity property.\n\nNow, given that AB : CD = 2 : 1 and BC : AD = 5 : 4\n\nAE/BE = AD/BC = 4/5 (Similar Triangles AED and BEC)\n\nBE/CE = AB/CD = 2/1 (Similar Triangles AEB and DEC)\n\nMultiplying both, we get AE/CE = 8/5.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449500)\n\n**Passage:**\nA quadrilateral ABCD is inscribed in a circle such that AB : CD = 2 : 1 and BC : AD = 5 : 4. If AC and BD intersect at the point E, then AE : CE equals\n\n2 : 1\n\n1 : 2\n\n8 : 5\n\n5 : 8\n\nA quadrilateral ABCD is inscribed in a circle such that AB : CD = 2 : 1 and BC : AD = 5 : 4. If AC and BD intersect at the point E, then AE : CE equals\n\n**Options:**\n- **A**. 2 : 1\n- **B**. 1 : 2\n- **C**. 8 : 5\n- **D**. 5 : 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2093",
+      "passage_text": "",
+      "question_text": "A donation box can receive only cheques of ₹100, ₹250, and ₹500. On one good day, the donation box was found to contain exactly 100 cheques amounting to a total sum of ₹15250. Then, the maximum possible number of cheques of ₹500 that the donation box may have contained, is",
+      "options": [],
+      "correct_option_data": "12",
+      "solution_text": "Let the number of 100 cheques, 250 cheques and 500 cheques be x, y and z respectively.\n\nWe need to find the maximum value of z.\n\nx + y + z = 100 ...... (1)\n\n100x + 250y + 500z = 15250\n\n2x + 5y + 10z = 305 ...... (2)\n\n2x + 2y + 2z = 200 ....... (1)\n\n(2) - (1), we get\n\n3y + 8z = 105\n\nAt z = 12, x = 3\n\nTherefore, maximum value z can take is 12.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424132)\n\n**Passage:**\nA donation box can receive only cheques of ₹100, ₹250, and ₹500. On one good day, the donation box was found to contain exactly 100 cheques amounting to a total sum of ₹15250. Then, the maximum possible number of cheques of ₹500 that the donation box may have contained, is\n\nA donation box can receive only cheques of ₹100, ₹250, and ₹500. On one good day, the donation box was found to contain exactly 100 cheques amounting to a total sum of ₹15250. Then, the maximum possible number of cheques of ₹500 that the donation box may have contained, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2094",
+      "passage_text": "",
+      "question_text": "In an examination, there were 75 questions. 3 marks were awarded for each correct answer, 1 mark was deducted for each wrong answer and 1 mark was awarded for each unattempted question. Rayan scored a total of 97 marks in the examination. If the number of unattempted questions was higher than the number of attempted questions, then the maximum number of correct answers that Rayan could have given in the examination is",
+      "options": [],
+      "correct_option_data": "24",
+      "solution_text": "Let the number of questions attempted be x+y out of which x are correct and y are incorrect and the number of questions unattempted be z.\n\nIt is given,\n\nx + y + z = 75 ...... (1)\n\n3x - y + z = 97 ...... (2)\n\n(2)-(1) -> x - y = 11\n\n(1)+(2) -> 2x + z = 86\n\nz > x + y\n\nz > 75 - z\n\nz > 37.5\n\nMinimum possible value of z is 38\n\n2x + 38 = 86\n\n2x = 48\n\nx = 24\n\nThe maximum number of correct answers is 24.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424057)\n\n**Passage:**\nIn an examination, there were 75 questions. 3 marks were awarded for each correct answer, 1 mark was deducted for each wrong answer and 1 mark was awarded for each unattempted question. Rayan scored a total of 97 marks in the examination. If the number of unattempted questions was higher than the number of attempted questions, then the maximum number of correct answers that Rayan could have given in the examination is\n\nIn an examination, there were 75 questions. 3 marks were awarded for each correct answer, 1 mark was deducted for each wrong answer and 1 mark was awarded for each unattempted question. Rayan scored a total of 97 marks in the examination. If the number of unattempted questions was higher than the number of attempted questions, then the maximum number of correct answers that Rayan could have given in the examination is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2095",
+      "passage_text": "The minimum possible value of x 2 − 6 x + 10 3 − x \\frac{x^{2} - 6x + 10}{3-x} 3 − x x 2 − 6 x + 1 0 ​ , for x < 3 x < 3 x < 3 , is\n\n− 1 2 -\\frac{1}{2} − 2 1 ​\n\n2\n\n1 2 \\frac{1}{2} 2 1 ​\n\n-2",
+      "question_text": "The minimum possible value of $\\frac{x^{2} - 6x + 10}{3-x}$, for $x < 3$, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$-\\frac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let $\\frac{x^2-6x+10}{3-x}=p$\n\n$x^2-6x+10=3p-px$\n\n$x^2-\\left(6-p\\right)x+10-3p=0$\n\nSince the equation will have real roots,\n\n$\\left(6-p\\right)^2-4\\times\\left(10-3p\\right)\\ge0$\n\n$p^2-12p+12p+36-40\\ge0$\n\n$p^2\\ge4$\n\n$p\\ge2\\ ,\\ p\\le-2$\n\nNow, when $p=-2$, $x = 4$.  Since it is given that $x<3$, thus this value will be discarded.\n\nNow, $\\frac{1}{2}$ and $-\\frac{1}{2}$ do not come in the mentioned range.\n\nwhen $p=2$, $x = 2$\n\nThus, the minimum possible value of p will be 2.\n\nThus, the correct option is B.\n\nAlternate explanation: \n\nSince $x<3$, \n\n$3-x>0$\n\nLet $3-x=y$. So, $y>0$.\n\nNow, $\\frac{x^2-6x+10}{3-x}=\\frac{x^2-6x+9+1}{3-x}$\n\n=> $\\frac{\\left(3-x\\right)^2+1}{3-x}$\n\nSince $3-x=y$, the equation will transform to $\\frac{y^2+1}{y}$ or $y+\\frac{1}{y}$\n\nThe minimum value of the expression $y+\\frac{1}{y}$ for $y>0$ will at $y=1$\n\ni.e., Minimum value = $1+1=2$\n\nThus, the correct option is B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424131)\n\n**Passage:**\nThe minimum possible value of x 2 − 6 x + 10 3 − x \\frac{x^{2} - 6x + 10}{3-x} 3 − x x 2 − 6 x + 1 0 ​ , for x < 3 x < 3 x < 3 , is\n\n− 1 2 -\\frac{1}{2} − 2 1 ​\n\n2\n\n1 2 \\frac{1}{2} 2 1 ​\n\n-2\n\nThe minimum possible value of $\\frac{x^{2} - 6x + 10}{3-x}$, for $x < 3$, is\n\n**Options:**\n- **A**. $-\\frac{1}{2}$\n- **B**. 2\n- **C**. $\\frac{1}{2}$\n- **D**. -2\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2096",
+      "passage_text": "If ( 3 + 2 2 ) (3+2\\sqrt{2}) ( 3 + 2 2 ​ ) is a root of the equation a x 2 + b x + c = 0 ax^{2}+bx+c=0 a x 2 + b x + c = 0 and ( 4 + 2 3 ) (4+2\\sqrt{3}) ( 4 + 2 3 ​ ) is a root of the equation a y 2 + m y + n = 0 ay^{2}+my+n=0 a y 2 + m y + n = 0 where a, b, c, m and n are integers, then the value of ( b m + c − 2 b n ) (\\frac{b}{m}+\\frac{c-2b}{n}) ( m b ​ + n c − 2 b ​ ) is\n\n0\n\n1\n\n3\n\n4",
+      "question_text": "If $(3+2\\sqrt{2})$ is a root of the equation $ax^{2}+bx+c=0$ and $(4+2\\sqrt{3})$ is a root of the equation $ay^{2}+my+n=0$ where a, b, c, m and n are integers, then the value of $(\\frac{b}{m}+\\frac{c-2b}{n})$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "a, b, c, m and n are integers so if one root is $3+2\\sqrt{2}$ then the other root is $3-2\\sqrt{2}$\n\nSum of roots = 6 = -b/a  or b= -6a\n\nProduct of roots = 1 = c/a  or c=a\n\na, b, c, m and n are integers so if one root is $4+2\\sqrt{3}$ then the other root is $4-2\\sqrt{3}$\n\nSum of roots = 8 = -m/a or m = -8a\n\nproduct of roots = 4 = n/a or n = 4a\n\n$(\\frac{b}{m}+\\frac{c-2b}{n})$\n\n= $\\frac{6a}{8a}+\\frac{\\left(a+12a\\right)}{4a}=\\frac{3}{4}+\\frac{13}{4}=\\frac{16}{4}=4$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424119)\n\n**Passage:**\nIf ( 3 + 2 2 ) (3+2\\sqrt{2}) ( 3 + 2 2 ​ ) is a root of the equation a x 2 + b x + c = 0 ax^{2}+bx+c=0 a x 2 + b x + c = 0 and ( 4 + 2 3 ) (4+2\\sqrt{3}) ( 4 + 2 3 ​ ) is a root of the equation a y 2 + m y + n = 0 ay^{2}+my+n=0 a y 2 + m y + n = 0 where a, b, c, m and n are integers, then the value of ( b m + c − 2 b n ) (\\frac{b}{m}+\\frac{c-2b}{n}) ( m b ​ + n c − 2 b ​ ) is\n\n0\n\n1\n\n3\n\n4\n\nIf $(3+2\\sqrt{2})$ is a root of the equation $ax^{2}+bx+c=0$ and $(4+2\\sqrt{3})$ is a root of the equation $ay^{2}+my+n=0$ where a, b, c, m and n are integers, then the value of $(\\frac{b}{m}+\\frac{c-2b}{n})$ is\n\n**Options:**\n- **A**. 0\n- **B**. 1\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2097",
+      "passage_text": "Suppose k is any integer such that the equation 2 x 2 + k x + 5 = 0 2x^{2}+kx+5=0 2 x 2 + k x + 5 = 0 has no real roots and the equation x 2 + ( k − 5 ) x + 1 = 0 x^{2}+(k-5)x+1=0 x 2 + ( k − 5 ) x + 1 = 0 has two distinct real roots for x. Then, the number of possible values of k is\n\n9\n\n7\n\n8\n\n13",
+      "question_text": "Suppose k is any integer such that the equation $2x^{2}+kx+5=0$ has no real roots and the equation $x^{2}+(k-5)x+1=0$ has two distinct real roots for x. Then, the number of possible values of k is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "13",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "$2x^{2}+kx+5=0$ has no real roots so D<0\n\n$k^2-40\\ <0$\n\n$\\left(k-\\sqrt{40}\\right)\\left(k+\\sqrt{40}\\right)<0$\n\n$k\\in\\left(-\\sqrt{40},\\sqrt{40}\\right)$\n\n$x^{2}+(k-5)x+1=0$ has two distinct real roots so D>0\n\n$\\left(k-5\\right)^2-4>0$\n\n$k^2-10k+21>0$\n\n$\\left(k-3\\right)\\left(k-7\\right)>0$\n\n$k\\in\\left(-\\infty\\ ,3\\right)∪\\left(7,\\infty\\ \\right)$\n\nTherefore possibe value of k are -6, -5, -4, -3, -2, -1, 0, 1, 2\n\nIn 9 total 9 integer values of k are possible.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424115)\n\n**Passage:**\nSuppose k is any integer such that the equation 2 x 2 + k x + 5 = 0 2x^{2}+kx+5=0 2 x 2 + k x + 5 = 0 has no real roots and the equation x 2 + ( k − 5 ) x + 1 = 0 x^{2}+(k-5)x+1=0 x 2 + ( k − 5 ) x + 1 = 0 has two distinct real roots for x. Then, the number of possible values of k is\n\n9\n\n7\n\n8\n\n13\n\nSuppose k is any integer such that the equation $2x^{2}+kx+5=0$ has no real roots and the equation $x^{2}+(k-5)x+1=0$ has two distinct real roots for x. Then, the number of possible values of k is\n\n**Options:**\n- **A**. 9\n- **B**. 7\n- **C**. 8\n- **D**. 13\n\n**Correct Answer:** null"
     }
   ]
 }

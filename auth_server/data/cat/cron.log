@@ -1,0 +1,185 @@
+--- Starting daily question processing (DT Phase) ---
+[BROWSER]. ℹ pre-launch cleanup failed: Command '[['lsof', '-t', '-i:9222']]' 
+returned non-zero exit status 1. 
+[BROWSER]. ℹ Starting browser with args: 
+/home/dspratap/.cache/ms-playwright/chromium-1181/chrome-linux/chrome 
+--remote-debugging-port=9222 
+--user-data-dir=/home/dspratap/snap/chromium/common/chromium/Default 
+--headless=new --disable-gpu --disable-gpu-compositing 
+--disable-software-rasterizer --no-sandbox --disable-dev-shm-usage 
+--no-first-run --no-default-browser-check --disable-infobars 
+--window-position=0,0 --ignore-certificate-errors 
+--ignore-certificate-errors-spki-list 
+--disable-blink-features=AutomationControlled --window-position=400,0 
+--disable-renderer-backgrounding --disable-ipc-flooding-protection 
+--force-color-profile=srgb --mute-audio --disable-background-timer-throttling 
+[INIT].... → Crawl4AI 0.7.4 
+[FETCH]... ↓ https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 4.25s 
+[SCRAPE].. ◆ https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 4.31s 
+[FETCH]... ↓ https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 3.72s 
+[SCRAPE].. ◆ https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 3.78s 
+[FETCH]... ↓ https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 3.81s 
+[SCRAPE].. ◆ https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 3.88s 
+[FETCH]... ↓ https://gmatpoint.com/gmat-daily-target/verbal-daily-test-1        
+| ✓ | ⏱: 3.84s 
+[SCRAPE].. ◆ https://gmatpoint.com/gmat-daily-target/verbal-daily-test-1        
+| ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://gmatpoint.com/gmat-daily-target/verbal-daily-test-1        
+| ✓ | ⏱: 3.92s 
+[FETCH]... ↓ https://gmatpoint.com/gmat-daily-target/quant-daily-test-1         
+| ✓ | ⏱: 3.43s 
+[SCRAPE].. ◆ https://gmatpoint.com/gmat-daily-target/quant-daily-test-1         
+| ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://gmatpoint.com/gmat-daily-target/quant-daily-test-1         
+| ✓ | ⏱: 3.50s 
+Crawled 5 pages successfully.
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/quantitative-aptitude.json
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/verbal-ability.json
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/data-interpretation.json
+--- Running qid cleaning script ---
+Found 3 JSON files to process in /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json.
+Processed 1486 qids in data-interpretation.json
+Processed 2092 qids in quantitative-aptitude.json
+Processed 2106 qids in verbal-ability.json
+--- Finished qid cleaning script ---
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/data-interpretation.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/data-interpretation.json
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/quantitative-aptitude.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/quantitative-aptitude.json
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/verbal-ability.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/verbal-ability.json
+Processing complete.
+Successfully removed temporary directory: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json
+
+--- Starting daily question processing (Solutions Phase) ---
+[BROWSER]. ℹ pre-launch cleanup failed: Command '[['lsof', '-t', '-i:9222']]' 
+returned non-zero exit status 1. 
+[BROWSER]. ℹ Starting browser with args: 
+/home/dspratap/.cache/ms-playwright/chromium-1181/chrome-linux/chrome 
+--remote-debugging-port=9222 
+--user-data-dir=/home/dspratap/snap/chromium/common/chromium/Default 
+--headless=new --disable-gpu --disable-gpu-compositing 
+--disable-software-rasterizer --no-sandbox --disable-dev-shm-usage 
+--no-first-run --no-default-browser-check --disable-infobars 
+--window-position=0,0 --ignore-certificate-errors 
+--ignore-certificate-errors-spki-list 
+--disable-blink-features=AutomationControlled --window-position=400,0 
+--disable-renderer-backgrounding --disable-ipc-flooding-protection 
+--force-color-profile=srgb --mute-audio --disable-background-timer-throttling 
+[INIT].... → Crawl4AI 0.7.4 
+[FETCH]... ↓ https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 8.54s 
+[SCRAPE].. ◆ https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://cracku.in/dt-verbal-daily-test-1                           
+| ✓ | ⏱: 8.59s 
+[FETCH]... ↓ https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 7.87s 
+[SCRAPE].. ◆ https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://cracku.in/dt-quant-daily-test-1                            
+| ✓ | ⏱: 8.01s 
+[FETCH]... ↓ https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 8.13s 
+[SCRAPE].. ◆ https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 0.07s 
+[COMPLETE] ● https://cracku.in/dt-reasoning-daily-test-1                        
+| ✓ | ⏱: 8.20s 
+Crawled 3 pages successfully.
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/quantitative-aptitude.json
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/verbal-ability.json
+Wrote intermediate 0 question(s) to: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/data-interpretation.json
+--- Running qid cleaning script ---
+Found 3 JSON files to process in /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json.
+Processed 1486 qids in data-interpretation.json
+Processed 2092 qids in quantitative-aptitude.json
+Processed 2106 qids in verbal-ability.json
+--- Finished qid cleaning script ---
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/data-interpretation.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/data-interpretation.json
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/quantitative-aptitude.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/quantitative-aptitude.json
+Copied cleaned file: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json/verbal-ability.json -> /home/dspratap/Downloads/PrepUp/auth_server/data/cat/docs/verbal-ability.json
+Processing complete.
+Successfully removed temporary directory: /home/dspratap/Downloads/PrepUp/auth_server/data/temp_json
+podman-compose down
+podman-compose version: 1.0.6
+['podman', '--version', '']
+using podman version: 4.9.3
+** excluding:  set()
+podman stop -t 10 prepup_celery_worker_1
+prepup_celery_worker_1
+exit code: 0
+podman stop -t 10 prepup_frontend_1
+prepup_frontend_1
+exit code: 0
+podman stop -t 10 prepup_auth_server_1
+prepup_auth_server_1
+exit code: 0
+podman stop -t 10 prepup_redis_1
+prepup_redis_1
+exit code: 0
+podman stop -t 10 prepup_postgres_1
+prepup_postgres_1
+exit code: 0
+podman rm prepup_celery_worker_1
+prepup_celery_worker_1
+exit code: 0
+podman rm prepup_frontend_1
+prepup_frontend_1
+exit code: 0
+podman rm prepup_auth_server_1
+prepup_auth_server_1
+exit code: 0
+podman rm prepup_redis_1
+prepup_redis_1
+exit code: 0
+podman rm prepup_postgres_1
+prepup_postgres_1
+exit code: 0
+podman-compose up -d
+podman-compose version: 1.0.6
+['podman', '--version', '']
+using podman version: 4.9.3
+** excluding:  set()
+['podman', 'inspect', '-t', 'image', '-f', '{{.Id}}', 'prepup_auth_server']
+['podman', 'inspect', '-t', 'image', '-f', '{{.Id}}', 'prepup_frontend']
+['podman', 'inspect', '-t', 'image', '-f', '{{.Id}}', 'prepup_celery_worker']
+['podman', 'ps', '--filter', 'label=io.podman.compose.project=prepup', '-a', '--format', '{{ index .Labels "io.podman.compose.config-hash"}}']
+['podman', 'network', 'exists', 'prepup_default']
+podman run --name=prepup_postgres_1 -d --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=postgres -e POSTGRES_DB=auth_db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -v /home/dspratap/Downloads/PrepUp/pg_data_new:/var/lib/postgresql/data/ --net prepup_default --network-alias postgres -p 5432:5432 docker.io/library/postgres:17
+0b62830b0367a7b218ba4d8e95b684b44cc44b91da5939f8787b29b4d798b85f
+exit code: 0
+podman volume inspect prepup_redis_data || podman volume create prepup_redis_data
+['podman', 'volume', 'inspect', 'prepup_redis_data']
+['podman', 'network', 'exists', 'prepup_default']
+podman run --name=prepup_redis_1 -d --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=redis -v prepup_redis_data:/data --net prepup_default --network-alias redis -p 6379:6379 docker.io/library/redis:7-alpine
+f67fb87cb58039426a359a94b54712ca35f942726b1460035bff477ad0c404e0
+exit code: 0
+['podman', 'network', 'exists', 'prepup_default']
+podman run --name=prepup_auth_server_1 -d --requires=prepup_postgres_1 --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=auth_server --env-file /home/dspratap/Downloads/PrepUp/auth_server/.env -e DB_HOST=postgres -e DB_NAME=auth_db -e DB_USER=user -e DB_PASS=password -v /home/dspratap/Downloads/PrepUp/auth_server/data/cat:/app/data/cat:z --net prepup_default --network-alias auth_server -p 8000:8000 prepup_auth_server sh -c 
+  echo 'Waiting for postgres...' &&
+  while ! nc -z postgres 5432; do
+    sleep 0.1;
+  done;
+  echo 'PostgreSQL started';
+  python manage.py migrate &&
+  python manage.py runserver 0.0.0.0:8000
+
+b1c018c55f466ec7b8858c474db11064a7513431c80cee6c15e8bb9fbcb80114
+exit code: 0
+['podman', 'network', 'exists', 'prepup_default']
+podman run --name=prepup_frontend_1 -d --requires=prepup_auth_server_1,prepup_postgres_1 --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=frontend --net prepup_default --network-alias frontend -p 5000:5000 prepup_frontend nginx -g daemon off;
+2fce29cb7730f3ad9ecb33f0f2b23dad2fa210ecafd282bda5ea83dde1e5f8cd
+exit code: 0
+['podman', 'network', 'exists', 'prepup_default']
+podman run --name=prepup_celery_worker_1 -d --requires=prepup_redis_1,prepup_postgres_1 --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=celery_worker --env-file /home/dspratap/Downloads/PrepUp/auth_server/.env -e DB_HOST=postgres -e DB_NAME=auth_db -e DB_USER=user -e DB_PASS=password -v /home/dspratap/Downloads/PrepUp/auth_server/data/cat:/app/data/cat:z --net prepup_default --network-alias celery_worker prepup_celery_worker celery -A auth_project worker -l info
+7ed61b850fafd1b94d7bdbfad4d9dedcc3920ab8374592ff29941b5d541e7e7a
+exit code: 0

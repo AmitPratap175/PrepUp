@@ -42232,6 +42232,146 @@
       "solution_text": "The solution table is as shown. The number in the brackets is the outstanding units in that particular unit.\nTotal number of units = 7+1+1+1+1+1 = 12",
       "image_url": "https://cracku.in/media/uploads/2016/02/26/capture_ABUh4Cn.PNG",
       "full_markdown": "### Question (qid: 32259)\n\n**Passage:**\nThere are 5 stages of manufacturing a product - A, B, C, D, E. The sequence of working for a unit of product is A-B-C-D-E. After this the product is manufactured and transported. Transfer between different stages of production takes negligible time. Transfer of the semi-processed units between any two stages of production occurs at the end of 1-hr shift, and 1-hr is the processing time during each stage. Final products are transferred out of warehouse only at end of day i.e. at 4:00 p.m. Following is the work capacity of cloth manufacturing plant during different shifts of the day:\n\nAt 10:AM A, B, C, D, E stages have 1,1,2,4,3 units respectively. Outstanding' is defined as the number of unfinished units at any stage of production which cannot be processed due to capacity constraint. If capacity permits, the outstanding of any shift can be processed during the next shift.\n\nHad there been only 2 stages of production - A and then B, what would be the maximum number of units manufactured till 4:00pm?The initial number of units with A and B each is 1 units at 10 AM.\n\n**Options:**\n- **A**. 11\n- **B**. 12\n- **C**. 10\n- **D**. 13\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1487",
+      "passage_text": "Abishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.",
+      "question_text": "If the last condition is not given, how many mappings of student-course can be determined accurately?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "From the information, the following can be determined:\n\nAmethyst -> Demo: Maths, Carl: History, Biswas: Physics\n\nPearl -> Abishek:English, Fay: Geography\n\nMoonstone -> Gopal: Computer Science, Einstein: Chemistry or Biology, Harish:Biology or Chemistry\n\nIf the last condition is not given, we can determine the courses of Abishek, Fay, Carl and Biswas, but nothing can be said about the courses of the other 4. Therefore, option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2066)\n\n**Passage:**\nAbishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.\n\nIf the last condition is not given, how many mappings of student-course can be determined accurately?\n\n**Options:**\n- **A**. 6\n- **B**. 5\n- **C**. 4\n- **D**. 3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1488",
+      "passage_text": "Abishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.",
+      "question_text": "In how many ways can a group of 3 be formed, so that there is one student from each department?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18 ways",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10 ways",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "From the information, the following can be determined:\n\nAmethyst -> Demo: Maths, Carl: History, Biswas: Physics\n\nPearl -> Abishek:English, Fay: Geography\n\nMoonstone -> Gopal: Computer Science, Einstein: Chemistry or Biology, Harish:Biology or Chemistry\n\nThe number of people in the three departments is 3,2 and 3. Therefore, a team of 3 consisting of 1 student from each section can be formed in 3C1*2C1*3C1 = 18 ways.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2067)\n\n**Passage:**\nAbishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.\n\nIn how many ways can a group of 3 be formed, so that there is one student from each department?\n\n**Options:**\n- **A**. 18 ways\n- **B**. 16 ways\n- **C**. 10 ways\n- **D**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1489",
+      "passage_text": "Abishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.",
+      "question_text": "Which course does Gopal study?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Computer Science",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "English",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Chemistry",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Maths",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "From the information, the following can be determined:\n\nAmethyst -> Demo: Maths, Carl: History, Biswas: Physics\n\nPearl -> Abishek:English, Fay: Geography\n\nMoonstone -> Gopal: Computer Science, Einstein: Chemistry or Biology, Harish:Biology or Chemistry\n\nFrom the given information, Gopal studies Computer Science.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2068)\n\n**Passage:**\nAbishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.\n\nWhich course does Gopal study?\n\n**Options:**\n- **A**. Computer Science\n- **B**. English\n- **C**. Chemistry\n- **D**. Maths\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1490",
+      "passage_text": "Abishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.",
+      "question_text": "Who studies Chemistry?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Einstein",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Harish",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Gopal",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can’t be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "From the information, the following can be determined:\n\nAmethyst -> Demo: Maths, Carl: History, Biswas: Physics\n\nPearl -> Abishek:English, Fay: Geography\n\nMoonstone -> Gopal: Computer Science, Einstein: Chemistry or Biology, Harish:Biology or Chemistry\n\nBetween Einstein and Harish, one studies Chemistry and the other studies Biology. Nothing more can be said. Hence, option d).",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2069)\n\n**Passage:**\nAbishek, Biswas, Carl, Demo, Einstein, Fay, Gopal and Harish are eight students of a school.\n\nThey belong to three different departments: Pearl, Amethyst and Moonstone with not more than three of them in any department.\n\nEach of them has a different choice of courses among Physics, Chemistry, Geography, Biology, Computer Science, Maths, History and English not necessarily in the same order.\n\nDemo belongs to Amethyst and does not study either Physics or Chemistry. Abishek, who studies English and Fay are the only two students who belong to Pearl. Einstein and Harish do not belong to the same department as Demo. Carl studies History and does not belong to Moonstone. Gopal does not belong to Amethyst and does not study either Chemistry or Biology. One of those who belong to Amethyst studies Physics. The one who studies Geography belongs to Pearl. None of those who belong to Amethyst studies either Biology or Computer Science.\n\nWho studies Chemistry?\n\n**Options:**\n- **A**. Einstein\n- **B**. Harish\n- **C**. Gopal\n- **D**. Can’t be determined\n\n**Correct Answer:** null"
     }
   ]
 }
