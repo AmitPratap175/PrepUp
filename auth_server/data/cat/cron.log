@@ -183,3 +183,146 @@ exit code: 0
 podman run --name=prepup_celery_worker_1 -d --requires=prepup_redis_1,prepup_postgres_1 --label io.podman.compose.config-hash=116a51f23a1c4a0ae373cff818bff55f19d669bf66a18a2d78671013bc5e7ada --label io.podman.compose.project=prepup --label io.podman.compose.version=1.0.6 --label PODMAN_SYSTEMD_UNIT=podman-compose@prepup.service --label com.docker.compose.project=prepup --label com.docker.compose.project.working_dir=/home/dspratap/Downloads/PrepUp --label com.docker.compose.project.config_files=docker-compose.yml --label com.docker.compose.container-number=1 --label com.docker.compose.service=celery_worker --env-file /home/dspratap/Downloads/PrepUp/auth_server/.env -e DB_HOST=postgres -e DB_NAME=auth_db -e DB_USER=user -e DB_PASS=password -v /home/dspratap/Downloads/PrepUp/auth_server/data/cat:/app/data/cat:z --net prepup_default --network-alias celery_worker prepup_celery_worker celery -A auth_project worker -l info
 7ed61b850fafd1b94d7bdbfad4d9dedcc3920ab8374592ff29941b5d541e7e7a
 exit code: 0
+--- Starting daily question processing (DT Phase) ---
+[BROWSER]. ℹ pre-launch cleanup failed: Command '[['lsof', '-t', '-i:9222']]' 
+returned non-zero exit status 1. 
+[BROWSER]. ℹ Starting browser with args: 
+/home/dspratap/.cache/ms-playwright/chromium-1181/chrome-linux/chrome 
+--remote-debugging-port=9222 
+--user-data-dir=/home/dspratap/snap/chromium/common/chromium/Default 
+--disable-gpu --disable-gpu-compositing --disable-software-rasterizer 
+--no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check 
+--disable-infobars --window-position=0,0 --ignore-certificate-errors 
+--ignore-certificate-errors-spki-list 
+--disable-blink-features=AutomationControlled --window-position=400,0 
+--disable-renderer-backgrounding --disable-ipc-flooding-protection 
+--force-color-profile=srgb --mute-audio --disable-background-timer-throttling 
+[ERROR]... × Browser process terminated during startup | Code: 1 | STDOUT:  | 
+STDERR: 
+[22755:22755:0108/120003.193108:ERROR:ui/ozone/platform/x11/ozone_platform_x11.c
+c:249] Missing X server or $DISPLAY
+[22755:22755:0108/120003.193153:ERROR:ui/aura/env.cc:257] The platform failed to
+initialize.  Exiting.
+ 
+Traceback (most recent call last):
+  File "/home/dspratap/Downloads/PrepUp/auth_server/data/cat/run_daily_cracku_pipeline.py", line 605, in <module>
+    categorized_html_dt = asyncio.run(crawl_dt(dt_num, daily_num))
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/dspratap/Downloads/PrepUp/auth_server/data/cat/run_daily_cracku_pipeline.py", line 236, in crawl_dt
+    async with AsyncWebCrawler(config=browser_config) as crawler:
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_webcrawler.py", line 194, in __aenter__
+    return await self.start()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_webcrawler.py", line 177, in start
+    await self.crawler_strategy.__aenter__()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py", line 119, in __aenter__
+    await self.start()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py", line 129, in start
+    await self.browser_manager.start()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/browser_manager.py", line 666, in start
+    self.browser = await self.playwright.chromium.connect_over_cdp(cdp_url)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/async_api/_generated.py", line 14868, in connect_over_cdp
+    await self._impl_obj.connect_over_cdp(
+    ...<4 lines>...
+    )
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 207, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "connectOverCDP", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+
+--- Starting daily question processing (DT Phase) ---
+Updated numbers for 2026-01-09: dt_num=5, daily_num=5
+[BROWSER]. ℹ pre-launch cleanup failed: Command '[['lsof', '-t', '-i:9222']]' 
+returned non-zero exit status 1. 
+[BROWSER]. ℹ Starting browser with args: 
+/home/dspratap/.cache/ms-playwright/chromium-1181/chrome-linux/chrome 
+--remote-debugging-port=9222 
+--user-data-dir=/home/dspratap/snap/chromium/common/chromium/Default 
+--disable-gpu --disable-gpu-compositing --disable-software-rasterizer 
+--no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check 
+--disable-infobars --window-position=0,0 --ignore-certificate-errors 
+--ignore-certificate-errors-spki-list 
+--disable-blink-features=AutomationControlled --window-position=400,0 
+--disable-renderer-backgrounding --disable-ipc-flooding-protection 
+--force-color-profile=srgb --mute-audio --disable-background-timer-throttling 
+[ERROR]... × Browser process terminated during startup | Code: 1 | STDOUT:  | 
+STDERR: 
+[48000:48000:0109/120003.055107:ERROR:ui/ozone/platform/x11/ozone_platform_x11.c
+c:249] Missing X server or $DISPLAY
+[48000:48000:0109/120003.055136:ERROR:ui/aura/env.cc:257] The platform failed to
+initialize.  Exiting.
+ 
+Traceback (most recent call last):
+  File "/home/dspratap/Downloads/PrepUp/auth_server/data/cat/run_daily_cracku_pipeline.py", line 605, in <module>
+    categorized_html_dt = asyncio.run(crawl_dt(dt_num, daily_num))
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/dspratap/.local/share/uv/python/cpython-3.13.5-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/dspratap/Downloads/PrepUp/auth_server/data/cat/run_daily_cracku_pipeline.py", line 236, in crawl_dt
+    async with AsyncWebCrawler(config=browser_config) as crawler:
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_webcrawler.py", line 194, in __aenter__
+    return await self.start()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_webcrawler.py", line 177, in start
+    await self.crawler_strategy.__aenter__()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py", line 119, in __aenter__
+    await self.start()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py", line 129, in start
+    await self.browser_manager.start()
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/crawl4ai/browser_manager.py", line 666, in start
+    self.browser = await self.playwright.chromium.connect_over_cdp(cdp_url)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/async_api/_generated.py", line 14868, in connect_over_cdp
+    await self._impl_obj.connect_over_cdp(
+    ...<4 lines>...
+    )
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 207, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "connectOverCDP", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/dspratap/Downloads/PrepUp/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+

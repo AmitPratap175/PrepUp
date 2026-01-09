@@ -66326,6 +66326,131 @@
       "solution_text": "$2x^{2}+kx+5=0$ has no real roots so D<0\n\n$k^2-40\\ <0$\n\n$\\left(k-\\sqrt{40}\\right)\\left(k+\\sqrt{40}\\right)<0$\n\n$k\\in\\left(-\\sqrt{40},\\sqrt{40}\\right)$\n\n$x^{2}+(k-5)x+1=0$ has two distinct real roots so D>0\n\n$\\left(k-5\\right)^2-4>0$\n\n$k^2-10k+21>0$\n\n$\\left(k-3\\right)\\left(k-7\\right)>0$\n\n$k\\in\\left(-\\infty\\ ,3\\right)∪\\left(7,\\infty\\ \\right)$\n\nTherefore possibe value of k are -6, -5, -4, -3, -2, -1, 0, 1, 2\n\nIn 9 total 9 integer values of k are possible.",
       "image_url": "",
       "full_markdown": "### Question (qid: 424115)\n\n**Passage:**\nSuppose k is any integer such that the equation 2 x 2 + k x + 5 = 0 2x^{2}+kx+5=0 2 x 2 + k x + 5 = 0 has no real roots and the equation x 2 + ( k − 5 ) x + 1 = 0 x^{2}+(k-5)x+1=0 x 2 + ( k − 5 ) x + 1 = 0 has two distinct real roots for x. Then, the number of possible values of k is\n\n9\n\n7\n\n8\n\n13\n\nSuppose k is any integer such that the equation $2x^{2}+kx+5=0$ has no real roots and the equation $x^{2}+(k-5)x+1=0$ has two distinct real roots for x. Then, the number of possible values of k is\n\n**Options:**\n- **A**. 9\n- **B**. 7\n- **C**. 8\n- **D**. 13\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2098",
+      "passage_text": "",
+      "question_text": "At his usual rowing rate, Rahul can travel 12 miles downstream in a certain river in 6 hr less than it takes him to travel the same distance upstream. But if he could double his usual rowing rate for this 24 miles round trip, the downstream 12 miles would then take only 1 hr less than the upstream 12 miles. What is the speed of the current in miles per hour?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{7}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{4}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{5}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{8}{3}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "$12/(R - S) = T$\n$12/(R + S) = T - 6$\n$12/(2R - S) = t$\n$12/(2R + S) = t - 1$\n=> $12/(R - S) - 12/(R + S) = 6$ and $12/(2R - S) - 12/(2R + S) = 1$\n=> $12R + 12S - 12R + 12S = 6R^2 - 6S^2$ and $24R + 12S - 24R + 12S = 4R^2 - S^2$\n=> $24S = 6R^2 - 6S^2 and 24S = 4R^2 - S^2$\n=> $6R^2 - 6S^2 = 4R^2 - S^2$\n=> $2R^2 = 5S^2$\n=> $24S = 10S^2 - S^2 = 9S^2$\n=> $S = 24/9 = 8/3$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 4712)\n\n**Passage:**\nAt his usual rowing rate, Rahul can travel 12 miles downstream in a certain river in 6 hr less than it takes him to travel the same distance upstream. But if he could double his usual rowing rate for this 24 miles round trip, the downstream 12 miles would then take only 1 hr less than the upstream 12 miles. What is the speed of the current in miles per hour?\n\n7 3 \\frac{7}{3} 3 7 ​\n\n4 3 \\frac{4}{3} 3 4 ​\n\n5 3 \\frac{5}{3} 3 5 ​\n\n8 3 \\frac{8}{3} 3 8 ​\n\nAt his usual rowing rate, Rahul can travel 12 miles downstream in a certain river in 6 hr less than it takes him to travel the same distance upstream. But if he could double his usual rowing rate for this 24 miles round trip, the downstream 12 miles would then take only 1 hr less than the upstream 12 miles. What is the speed of the current in miles per hour?\n\n**Options:**\n- **A**. $\\frac{7}{3}$\n- **B**. $\\frac{4}{3}$\n- **C**. $\\frac{5}{3}$\n- **D**. $\\frac{8}{3}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2099",
+      "passage_text": "",
+      "question_text": "Karan and Arjun run a 100-meter race, where Karan beats Arjun 10 metres. To do a favour to Arjun, Karan starts 10 metres behind the starting line in a second 100 metre race. They both run at their earlier speeds. Which of the following is true in connection with the second race?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Karan and Arjun reach the finishing line simultaneously.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Arjun beats Karan by 1 metre",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Arjun beats Karan by 11 metres.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Karan beats Arjun by 1 metre.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The speeds of Karan and Arjun are in the ratio 10:9. Let the speeds be 10s and 9s.\n\nTime taken by Karan to cover 110 m = 110/10s = 11/s\n\nTime taken by Arjun to cover 100 m = 100/9s = 11.11/s\n\nTherefore, Karan reaches the finish line before Arjun. From the options, the only possible answer is d).",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 4454)\n\n**Passage:**\nKaran and Arjun run a 100-meter race, where Karan beats Arjun 10 metres. To do a favour to Arjun, Karan starts 10 metres behind the starting line in a second 100 metre race. They both run at their earlier speeds. Which of the following is true in connection with the second race?\n\nKaran and Arjun reach the finishing line simultaneously.\n\nArjun beats Karan by 1 metre\n\nArjun beats Karan by 11 metres.\n\nKaran beats Arjun by 1 metre.\n\nKaran and Arjun run a 100-meter race, where Karan beats Arjun 10 metres. To do a favour to Arjun, Karan starts 10 metres behind the starting line in a second 100 metre race. They both run at their earlier speeds. Which of the following is true in connection with the second race?\n\n**Options:**\n- **A**. Karan and Arjun reach the finishing line simultaneously.\n- **B**. Arjun beats Karan by 1 metre\n- **C**. Arjun beats Karan by 11 metres.\n- **D**. Karan beats Arjun by 1 metre.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2100",
+      "passage_text": "John takes twice as much time as Jack to finish a job. Jack and Jim together take one-thirds of the time to finish the job than John takes working alone. Moreover, in order to finish the job, John takes three days more than that taken by three of them working together. In how many days will Jim finish the job working alone?",
+      "question_text": "John takes twice as much time as Jack to finish a job. Jack and Jim together take one-thirds of the time to finish the job than John takes working alone. Moreover, in order to finish the job, John takes three days more than that taken by three of them working together. In how many days will Jim finish the job working alone?",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "Let Jack take \"t\" days to complete the work, then John will take \"2t\" days to complete the work. So work done by Jack in one day is (1/t) and John is (1/2t) . \n\nNow let Jim take \"m\" days to complete the work. According to question, $\\frac{1}{t}+\\frac{1}{m}=\\frac{3}{2t}\\ or\\ \\frac{1}{m}=\\frac{1}{2t\\ }or\\ m=2t$ Hence Jim takes \"2t\" time to complete the work.\n\nNow let the three of them complete the work in \"p\" days. Hence John takes \"p+3\" days to complete the work.\n\n$\\frac{1}{2t}\\left(m+3\\right)=\\left(\\frac{4}{2t}\\right)m$\n\n$\\frac{1}{2t}\\left(m+3\\right)=\\left(\\frac{4}{2t}\\right)m$\n\nor m=1. Hence JIm will take (1+3)=4 days to complete the work. Similarly John will also take 4 days to complete the work",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348518)\n\n**Passage:**\nJohn takes twice as much time as Jack to finish a job. Jack and Jim together take one-thirds of the time to finish the job than John takes working alone. Moreover, in order to finish the job, John takes three days more than that taken by three of them working together. In how many days will Jim finish the job working alone?\n\nJohn takes twice as much time as Jack to finish a job. Jack and Jim together take one-thirds of the time to finish the job than John takes working alone. Moreover, in order to finish the job, John takes three days more than that taken by three of them working together. In how many days will Jim finish the job working alone?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2101",
+      "passage_text": "",
+      "question_text": "Three men and eight machines can finish a job in half the time taken by three machines and eight men to finish the same job. If two machines can finish the job in 13 days, then how many men can finish the job in 13 days?",
+      "options": [],
+      "correct_option_data": "13",
+      "solution_text": "Consider the work done by a man in a day = a and that by a machine = b\n\nSince, three men and eight machines can finish a job in half the time taken by three machines and eight men to finish the same job, hence the efficiency will be double.\n\n=> 3a+8b = 2(3b+8a)\n\n=> 13a=2b\n\nHence work done by 13 men in a day = work done by 2 machines in a day.\n\n=> If two machines can finish the job in 13 days, then same work will be done 13 men in 13 days. \n\nHence the required number of men = 13",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277674)\n\n**Passage:**\nThree men and eight machines can finish a job in half the time taken by three machines and eight men to finish the same job. If two machines can finish the job in 13 days, then how many men can finish the job in 13 days?\n\nThree men and eight machines can finish a job in half the time taken by three machines and eight men to finish the same job. If two machines can finish the job in 13 days, then how many men can finish the job in 13 days?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2102",
+      "passage_text": "The minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is\n\n36 11 \\frac{36}{11} 1 1 3 6 ​\n\n2\n\n4\n\n24 11 \\frac{24}{11} 1 1 2 4 ​",
+      "question_text": "The minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{36}{11}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{24}{11}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The given time is 8:48 AM.\n\nAngle made by hours hand w.r.t 12 is 8 * 30 (30 degrees in 1 hour) + 0.5 * 48 (0.5 degree in 1 minute) = 240 + 24 = 264 degrees.\n\nAngle made by minutes hands w.r.t 12 is 48 * 6 = 288 degrees.\n\n=> The angle between them is 288 - 264 = 24 degrees.\n\nThis should further increase by 12 degrees (50% of 24)\n\nAfter m minutes, the further increase in angle = (6 - 0.5)*m = $\\dfrac{11}{2}m=12$ => m = $\\dfrac{24}{11}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449491)\n\n**Passage:**\nThe minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is\n\n36 11 \\frac{36}{11} 1 1 3 6 ​\n\n2\n\n4\n\n24 11 \\frac{24}{11} 1 1 2 4 ​\n\nThe minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is\n\n**Options:**\n- **A**. $\\frac{36}{11}$\n- **B**. 2\n- **C**. 4\n- **D**. $\\frac{24}{11}$\n\n**Correct Answer:** null"
     }
   ]
 }
