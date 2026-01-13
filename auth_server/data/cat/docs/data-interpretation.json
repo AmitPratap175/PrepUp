@@ -42472,6 +42472,271 @@
       "solution_text": "We are given that each box contains three sacks. Each sack has a certain number of coins, between 1 and 9, both inclusive.\n\nThe\n average number of coins per sack in the boxes are all distinct \nintegers. The total number of coins in each row is the same. The total \nnumber of coins in each column is also the same.\n\n=> The total number of coins in a box range from 3 (1 + 1 + 1) to 27 (9 + 9 + 9) \n\nSince, it is given that the average number of coins per\n sack in the boxes are all distinct integers => The total number of \ncoins in a box would be 3, 6, 9, 12, 15, 18, 21, 24, 27 => averages \nof 1, 2, 3, 4,....,9 => Sum = 45.\n\n=> Sum of averages coins in a box in a row or column = 45/3 = 15 [The total number of coins in each row is the same. The total number of coins in each column is also the same.] ==> (1)\n\nLet us represent the final configuration of the sacks in boxes as follows:\n\nAlso a bag (x,y) => bag in xth row and yth column.\n\nWe are given 2 clues => Table-1 & Table-2\n\nConsider bag (3,1)\n\n=>\n From Table-1 => Median = 8 & From Table-2 all 3 sacks have more \nthan 5 coins. Also * => There is a 9 in one of the sacks.\n\n=>\n c, 8, 9 are the coins in bag (3,1), now c > 5 & c + 8 + 9 should\n be a multiple of 3 => c = 7 is the only possiblility.\n\n=> bag (3,1) has 7, 8, 9 coins with average = 8.\n\nConsider bag (2,1)\n\nMedian = 2 and 1 sack has more than 5 coins. Also ** => conditions i & iii should be satisfied.\n\n=> 1, 2, 9 are the coins in bag (2,1) with average = 4\n\nConsider bag (1,2)\n\nMedian = 9 and 2 elements are more than 5. Also * => (9 is present & 1 is not present)\n\n=> c, 9, 9 are the coins in bag (1,2) and c is not equal to 1 and less than 5 => c = 3 for c + 18 to be a multiple of 3.\n\n=> 3, 9, 9 are the coins in bag (1,2) with average = 7.\n\nCapturing this info. in the table:\n\nFrom (1), The average in bag (1,1) is 15 - 4 - 8 = 3.\n\nFrom (1), The average in bag (1,3) is 15 - 3 - 7 = 5.\n\nConsider bag (1,1)\n\nAvg\n = 3, 1 sack has more than 5 and ** => 2 conditions are being \nsatisfied. => (can't be condition-3 => 9 coins as the total sum of\n coins is it self 3*3 = 9)\n\n=> bag (1,1) has 1, 1, 7 coins with average = 3.\n\nConsider bag (1,3)\n\nAvg. = 5 => Sum = 15.\n\nMedian = 6 and 2 sacks have more than 5 and * => (1 condition is satisfied)\n\nNot condition ii as the median is 6 & Not condition iii as the sum of 2 sacks itself will become 6 + 9 = 15\n\n=> 1, 6, c are the coins => For sum = 15 => c = 15 - 1 - 6 = 8\n\n=> bag (1,3) has 1, 6, 8 coins with average = 5.\n\nConsider bag (3,3)\n\n0 sacks have more than 5 coins and ** => conditions i & ii are being satisfied.\n\n=> 1,1,c are the coins. Now c = 1 or 2 or 3 or 4 => c = 1 or 4 for number of coins to be a multiple of 3.\n\nBut\n c = 1 as no other bag has the possibility to get avg. = 1 as bag (2,2) \nshould have 1, b, c coins and b and c should be more than 1 as only 1*\n\n=> bag (3,3) has 1, 1, 1 coins with average = 1.\n\nNow, we can fill the averages in all the bags.\n\nIn bag (2,3) Avg. = 9 => 9, 9, 9 are the coins.\n\nIn bag (2,2) => Avg. = 2 => Sum = 6 and only 1* => smallest elemens=t should be 1.\n\n=>\n 1, b, c are the coins where b + c = 5 and b,c can't be equal to 1 and \nless than 5 => 2 + 3 = 5 is the only possibility.\n\n=> 1, 2, 3 are the coins with average = 2.\n\nConsidering bag (3,2)\n\nAvg. = 6 => Sum = 18.\n\n2 sacks more than 5 coins and ** => 2 sacks have 1 and 9 coins.\n\n=> bag (3,2) has 1, c, 9 coins and c = 18 - 1 - 9 = 8\n\n=> bag (3,2) has 1, 8, 9 coins with average = 6 coins.\n\n==> Final required table, bracket number => average coins per sack in the bag.\n\nBags with different number of coins in all 3 sacks are (2,1), (3,2), (2,2), (3,2), (1,3) => 5 bags.",
       "image_url": "https://cracku.in/media/uploads/Screenshot_3_Q8f8Ouq.png",
       "full_markdown": "### Question (qid: 449467)\n\n**Passage:**\nThere are nine boxes arranged in a 3×3 array as shown in Tables 1 and 2. Each box contains three sacks. Each sack has a certain number of coins, between 1 and 9, both inclusive.\n\nThe average number of coins per sack in the boxes are all distinct integers. The total number of coins in each row is the same. The total number of coins in each column is also the same.\n\nTable 1 gives information regarding the median of the numbers of coins in the three sacks in a box for some of the boxes. In Table 2 each box has a number which represents the number of sacks in that box having more than 5 coins. That number is followed by a * if the sacks in that box satisfy exactly one among the following three conditions, and it is followed by ** if two or more of these conditions are satisfied.\n\ni) The minimum among the numbers of coins in the three sacks in the box is 1. ii) The median of the numbers of coins in the three sacks is 1. iii) The maximum among the numbers of coins in the three sacks in the box is 9.\n\nIn how many boxes do all three sacks contain different numbers of coins?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1496",
+      "passage_text": "In a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.",
+      "question_text": "What was the total number of registrations in April?",
+      "options": [],
+      "correct_option_data": "120",
+      "solution_text": "Given that in every month, both online and offline registration numbers were multiples of 10.\n\nFrom (2), in Jan, the number of offline registrations was twice that of online registrations. \n\n=> If x is number of online registrations => 2x is the number of offline registrations => 3x is the total number of registrations.\n\nAccording to the data given in the table => 3x should lie between the minimum and maximum total number of registrations. => x = 40 (as x should also be a multiple of 10)\n\n=> In Jan => (40,80) are the online and offline registrations respectively.\n\nSimilarly from (3) => In Apr (80,40) are the online and offline registrations respectively.\n\nFrom-5, the number of online registrations is highest in may => In may there are 100 online registrations. The lowest possible number of offline registrations is 30 and maximum possible total registrations is 130 => In May (100,30) are the online and offline registrations respectively.\n\nLet us assume, 'x' to be the number of offline registrations in May = number of online registrations in March.\n\nLet us capture all this data in a table:\n\nFrom the table given in the question, 50 is the median for Offline data\n\n=> x should lie between 50 and 80 (included)\n\nFor 80 to be the median for the online data => y lie between 80 and 100 (included).\n\nNow, consider Feb => Minimum value of y + x = 80 + 50 = 130 (which is the maximum value possible of the total possible registrations)\n\n=> x = 50 and y = 80\n\nSince, 110 is the minimum number of total registrations, the only possibility is in March => 50 + z = 110 => z = 60.\n\nNow, filling the complete table we get,\n\nThe total number of registrations in April is 120.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_2_a6aIplv.png",
+      "full_markdown": "### Question (qid: 449515)\n\n**Passage:**\nIn a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.\n\nWhat was the total number of registrations in April?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1497",
+      "passage_text": "In a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.",
+      "question_text": "What was the number of online registrations in January?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "Given that in every month, both online and offline registration numbers were multiples of 10.\n\nFrom (2), in Jan, the number of offline registrations was twice that of online registrations. \n\n=> If x is number of online registrations => 2x is the number of offline registrations => 3x is the total number of registrations.\n\nAccording to the data given in the table => 3x should lie between the minimum and maximum total number of registrations. => x = 40 (as x should also be a multiple of 10)\n\n=> In Jan => (40,80) are the online and offline registrations respectively.\n\nSimilarly from (3) => In Apr (80,40) are the online and offline registrations respectively.\n\nFrom-5, the number of online registrations is highest in may => In may there are 100 online registrations. The lowest possible number of offline registrations is 30 and maximum possible total registrations is 130 => In May (100,30) are the online and offline registrations respectively.\n\nLet us assume, 'x' to be the number of offline registrations in May = number of online registrations in March.\n\nLet us capture all this data in a table:\n\nFrom the table given in the question, 50 is the median for Offline data\n\n=> x should lie between 50 and 80 (included)\n\nFor 80 to be the median for the online data => y lie between 80 and 100 (included).\n\nNow, consider Feb => Minimum value of y + x = 80 + 50 = 130 (which is the maximum value possible of the total possible registrations)\n\n=> x = 50 and y = 80\n\nSince, 110 is the minimum number of total registrations, the only possibility is in March => 50 + z = 110 => z = 60.\n\nNow, filling the complete table we get,\n\nThe number of online registrations in Jan is 40.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_2_a6aIplv.png",
+      "full_markdown": "### Question (qid: 449516)\n\n**Passage:**\nIn a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.\n\nWhat was the number of online registrations in January?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1498",
+      "passage_text": "In a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.",
+      "question_text": "Which of the following statements can be true?\nI. The number of offline registrations was the smallest in May.\nII. The total number of registrations was the smallest in February.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Both I and II",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only II",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Neither I nor II",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Only I",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Given that in every month, both online and offline registration numbers were multiples of 10.\n\nFrom (2), in Jan, the number of offline registrations was twice that of online registrations. \n\n=> If x is number of online registrations => 2x is the number of offline registrations => 3x is the total number of registrations.\n\nAccording to the data given in the table => 3x should lie between the minimum and maximum total number of registrations. => x = 40 (as x should also be a multiple of 10)\n\n=> In Jan => (40,80) are the online and offline registrations respectively.\n\nSimilarly from (3) => In Apr (80,40) are the online and offline registrations respectively.\n\nFrom-5, the number of online registrations is highest in may => In may there are 100 online registrations. The lowest possible number of offline registrations is 30 and maximum possible total registrations is 130 => In May (100,30) are the online and offline registrations respectively.\n\nLet us assume, 'x' to be the number of offline registrations in May = number of online registrations in March.\n\nLet us capture all this data in a table:\n\nFrom the table given in the question, 50 is the median for Offline data\n\n=> x should lie between 50 and 80 (included)\n\nFor 80 to be the median for the online data => y lie between 80 and 100 (included).\n\nNow, consider Feb => Minimum value of y + x = 80 + 50 = 130 (which is the maximum value possible of the total possible registrations)\n\n=> x = 50 and y = 80\n\nSince, 110 is the minimum number of total registrations, the only possibility is in March => 50 + z = 110 => z = 60.\n\nNow, filling the complete table we get,\n\n1) In May, there are 30 offline registrations (smallest) => True\n\n2) In Mar, we have smallest number of total registrations => False.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_2_a6aIplv.png",
+      "full_markdown": "### Question (qid: 449517)\n\n**Passage:**\nIn a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.\n\nWhich of the following statements can be true?\nI. The number of offline registrations was the smallest in May.\nII. The total number of registrations was the smallest in February.\n\n**Options:**\n- **A**. Both I and II\n- **B**. Only II\n- **C**. Neither I nor II\n- **D**. Only I\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1499",
+      "passage_text": "In a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.",
+      "question_text": "What best can be concluded about the number of offline registrations in February?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50 or 80",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "30 or 50 or 80",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Given that in every month, both online and offline registration numbers were multiples of 10.\n\nFrom (2), in Jan, the number of offline registrations was twice that of online registrations. \n\n=> If x is number of online registrations => 2x is the number of offline registrations => 3x is the total number of registrations.\n\nAccording to the data given in the table => 3x should lie between the minimum and maximum total number of registrations. => x = 40 (as x should also be a multiple of 10)\n\n=> In Jan => (40,80) are the online and offline registrations respectively.\n\nSimilarly from (3) => In Apr (80,40) are the online and offline registrations respectively.\n\nFrom-5, the number of online registrations is highest in may => In may there are 100 online registrations. The lowest possible number of offline registrations is 30 and maximum possible total registrations is 130 => In May (100,30) are the online and offline registrations respectively.\n\nLet us assume, 'x' to be the number of offline registrations in May = number of online registrations in March.\n\nLet us capture all this data in a table:\n\nFrom the table given in the question, 50 is the median for Offline data\n\n=> x should lie between 50 and 80 (included)\n\nFor 80 to be the median for the online data => y lie between 80 and 100 (included).\n\nNow, consider Feb => Minimum value of y + x = 80 + 50 = 130 (which is the maximum value possible of the total possible registrations)\n\n=> x = 50 and y = 80\n\nSince, 110 is the minimum number of total registrations, the only possibility is in March => 50 + z = 110 => z = 60.\n\nNow, filling the complete table we get,\n\nThe number of offline registrations in Feb is 50.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_2_a6aIplv.png",
+      "full_markdown": "### Question (qid: 449518)\n\n**Passage:**\nIn a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.\n\nWhat best can be concluded about the number of offline registrations in February?\n\n**Options:**\n- **A**. 80\n- **B**. 50 or 80\n- **C**. 30 or 50 or 80\n- **D**. 50\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1500",
+      "passage_text": "In a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.",
+      "question_text": "Which pair of months definitely had the same total number of registrations?\nI. January and April\nII. February and May",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Both I and II",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only II",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Neither I nor II",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Given that in every month, both online and offline registration numbers were multiples of 10.\n\nFrom (2), in Jan, the number of offline registrations was twice that of online registrations. \n\n=> If x is number of online registrations => 2x is the number of offline registrations => 3x is the total number of registrations.\n\nAccording to the data given in the table => 3x should lie between the minimum and maximum total number of registrations. => x = 40 (as x should also be a multiple of 10)\n\n=> In Jan => (40,80) are the online and offline registrations respectively.\n\nSimilarly from (3) => In Apr (80,40) are the online and offline registrations respectively.\n\nFrom-5, the number of online registrations is highest in may => In may there are 100 online registrations. The lowest possible number of offline registrations is 30 and maximum possible total registrations is 130 => In May (100,30) are the online and offline registrations respectively.\n\nLet us assume, 'x' to be the number of offline registrations in May = number of online registrations in March.\n\nLet us capture all this data in a table:\n\nFrom the table given in the question, 50 is the median for Offline data\n\n=> x should lie between 50 and 80 (included)\n\nFor 80 to be the median for the online data => y lie between 80 and 100 (included).\n\nNow, consider Feb => Minimum value of y + x = 80 + 50 = 130 (which is the maximum value possible of the total possible registrations)\n\n=> x = 50 and y = 80\n\nSince, 110 is the minimum number of total registrations, the only possibility is in March => 50 + z = 110 => z = 60.\n\nNow, filling the complete table we get,\n\nTotal registrations in Jan = Apr = 120 and Feb = May = 130.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_2_a6aIplv.png",
+      "full_markdown": "### Question (qid: 449519)\n\n**Passage:**\nIn a coaching class, some students register online, and some others register offline. No student registers both online and offline; hence the total registration number is the sum of online and offline registrations. The following facts and table pertain to these registration numbers for the five months - January to May of 2023. The table shows the minimum, maximum, median registration numbers of these five months, separately for online, offline and total number of registrations. The following additional facts are known.\n\n1. In every month, both online and offline registration numbers were multiples of 10. 2. In January, the number of offline registrations was twice that of online registrations. 3. In April, the number of online registrations was twice that of offline registrations. 4. The number of online registrations in March was the same as the number of offline registrations in February. 5. The number of online registrations was the largest in May.\n\nWhich pair of months definitely had the same total number of registrations?\nI. January and April\nII. February and May\n\n**Options:**\n- **A**. Both I and II\n- **B**. Only II\n- **C**. Only I\n- **D**. Neither I nor II\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1501",
+      "passage_text": "In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.",
+      "question_text": "How many individuals in this layout can be reached by just one individual?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "The table represent the platforms and by how many platforms can it be reached. For example, in row 1 and column 1, platform with height 6 can be reached by 3 people.\n\nHence, there are a total of 7 people.",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98130)\n\n**Passage:**\nIn a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.\n\nHow many individuals in this layout can be reached by just one individual?\n\n**Options:**\n- **A**. 3\n- **B**. 5\n- **C**. 7\n- **D**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1502",
+      "passage_text": "In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.",
+      "question_text": "Which of the following is true for any individual at a platform of height 1 m in this layout?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "They can be reached by all the individuals in their own row and column.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "They can be reached by at least 4 individuals.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "They can be reached by at least one individual.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "They cannot be reached by anyone.",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Since, we have been given that a person can be reached only by those who are smaller than him. Hence, 1 cannot be reached by anyone. Thus, option D is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98131)\n\n**Passage:**\nIn a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.\n\nWhich of the following is true for any individual at a platform of height 1 m in this layout?\n\n**Options:**\n- **A**. They can be reached by all the individuals in their own row and column.\n- **B**. They can be reached by at least 4 individuals.\n- **C**. They can be reached by at least one individual.\n- **D**. They cannot be reached by anyone.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1503",
+      "passage_text": "In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.",
+      "question_text": "We can find two individuals who cannot be reached by anyone in",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "the last row.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "the fourth row.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "the fourth column.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "the middle column.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Check out the options.\n\nIn last row, only one individual can't be reached by anyone.\n\nIn the fourth row, only one individual can't be reached by anyone.\n\nIn the middle column, every individual can be reached by atleast another individual.\n\nIn the fourth column, both 1 and 2 cannot be reached by any person. Hence, fourth column is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98132)\n\n**Passage:**\nIn a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.\n\nWe can find two individuals who cannot be reached by anyone in\n\n**Options:**\n- **A**. the last row.\n- **B**. the fourth row.\n- **C**. the fourth column.\n- **D**. the middle column.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1504",
+      "passage_text": "In a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.",
+      "question_text": "Which of the following statements is true about this layout?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Each row has an individual who can be reached by 5 or more individuals.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Each row has an individual who cannot be reached by anyone.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Each row has at least two individuals who can be reached by an equal number of individuals.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "All individuals at the height of 9 m can be reached by at least 5 individuals.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let us go by options.\n\nOption A: In first row, 6 is reached by 3, 1 by none, 2 by none, 4 by 3, 3 by none. Hence, ruled out.\n\nOption B: Third row, every individual is approached by other.\n\nOption D:  In first row, 6 is reached by 3, 1 by none, 2 by none, 4 by 3, 3 by none. Hence, ruled out.\n\nHence, Option C is correct.",
+      "image_url": "https://cracku.in/media/uploads/table.png",
+      "full_markdown": "### Question (qid: 98133)\n\n**Passage:**\nIn a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.\n\nWhich of the following statements is true about this layout?\n\n**Options:**\n- **A**. Each row has an individual who can be reached by 5 or more individuals.\n- **B**. Each row has an individual who cannot be reached by anyone.\n- **C**. Each row has at least two individuals who can be reached by an equal number of individuals.\n- **D**. All individuals at the height of 9 m can be reached by at least 5 individuals.\n\n**Correct Answer:** null"
     }
   ]
 }

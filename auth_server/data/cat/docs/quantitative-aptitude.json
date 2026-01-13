@@ -66451,6 +66451,281 @@
       "solution_text": "The given time is 8:48 AM.\n\nAngle made by hours hand w.r.t 12 is 8 * 30 (30 degrees in 1 hour) + 0.5 * 48 (0.5 degree in 1 minute) = 240 + 24 = 264 degrees.\n\nAngle made by minutes hands w.r.t 12 is 48 * 6 = 288 degrees.\n\n=> The angle between them is 288 - 264 = 24 degrees.\n\nThis should further increase by 12 degrees (50% of 24)\n\nAfter m minutes, the further increase in angle = (6 - 0.5)*m = $\\dfrac{11}{2}m=12$ => m = $\\dfrac{24}{11}$",
       "image_url": "",
       "full_markdown": "### Question (qid: 449491)\n\n**Passage:**\nThe minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is\n\n36 11 \\frac{36}{11} 1 1 3 6 ​\n\n2\n\n4\n\n24 11 \\frac{24}{11} 1 1 2 4 ​\n\nThe minor angle between the hours hand and minutes hand of a clock was observed at 8:48 am. The minimum duration, in minutes, after 8.48 am when this angle increases by 50% is\n\n**Options:**\n- **A**. $\\frac{36}{11}$\n- **B**. 2\n- **C**. 4\n- **D**. $\\frac{24}{11}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2103",
+      "passage_text": "If p, q, r are positive real numbers and are in arithmetic progression and p ∗ q ∗ r p * q * r p ∗ q ∗ r = 8, then the least possible value of q is\n\n2 1 2 2^{\\ \\frac{\\ 1}{2}} 2 2 1 ​\n\n2\n\n2 3 2 2^{\\ \\frac{\\ 3}{2}} 2 2 3 ​\n\n2 1 4 2^{\\ \\frac{\\ 1}{4}} 2 4 1 ​",
+      "question_text": "If p, q, r are positive real numbers and are in arithmetic progression and $p * q * r$ = 8, then the least possible value of q is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2^{\\ \\frac{\\ 1}{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2^{\\ \\frac{\\ 3}{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2^{\\ \\frac{\\ 1}{4}}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "$q$ = $\\frac{p + r}{2}$\n$p * q * r$ = 8\n$p * \\frac{p + r}{2} * r$ = 8\n$(p + r)pr$ = 16\nSince p, q and r are positive real numbers\n$\\frac{p + r}{2}$ $\\geq$ $\\sqrt{pr}$   --- Eq 1\nSo, the least value of q = $\\frac{\\left(p+r\\right)}{2}$ is equal to $\\sqrt{pr}$\nHence, the least value of p+r will be equal to $2\\sqrt{pr}$\nFrom equation 1,\npr($2\\sqrt{pr}$)=16\n2$(pr)^{\\frac{3}{2}}$ = 16\n$(pr)^{\\frac{3}{2}}$ = 8\n$(pr)^{\\frac{3}{2}}$ = $2^3$\n$\\sqrt{\\ pr}\\ =\\ 2$   --- Eq 2\nWe know that q = $\\frac{p + r}{2}$\nFrom Eq 1, 2\nq has to be greater than or equal to 2\n\nB is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 312421)\n\n**Passage:**\nIf p, q, r are positive real numbers and are in arithmetic progression and p ∗ q ∗ r p * q * r p ∗ q ∗ r = 8, then the least possible value of q is\n\n2 1 2 2^{\\ \\frac{\\ 1}{2}} 2 2 1 ​\n\n2\n\n2 3 2 2^{\\ \\frac{\\ 3}{2}} 2 2 3 ​\n\n2 1 4 2^{\\ \\frac{\\ 1}{4}} 2 4 1 ​\n\nIf p, q, r are positive real numbers and are in arithmetic progression and $p * q * r$ = 8, then the least possible value of q is\n\n**Options:**\n- **A**. $2^{\\ \\frac{\\ 1}{2}}$\n- **B**. 2\n- **C**. $2^{\\ \\frac{\\ 3}{2}}$\n- **D**. $2^{\\ \\frac{\\ 1}{4}}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2104",
+      "passage_text": "A lab experiment measures the number of organisms at 8 am every day. Starting with 2 organisms on the first day, the number of organisms on any day is equal to 3 more than twice the number on the previous day. If the number of organisms on the nth day exceeds one million, then the lowest possible value of n is",
+      "question_text": "A lab experiment measures the number of organisms at 8 am every day. Starting with 2 organisms on the first day, the number of organisms on any day is equal to 3 more than twice the number on the previous day. If the number of organisms on the nth day exceeds one million, then the lowest possible value of n is",
+      "options": [],
+      "correct_option_data": "19",
+      "solution_text": "Given on day-1, there are 2 organisms.\n\nOn day-2, there are 2*2 + 3 = 7 and on day-3, there are 2*7 + 3 = 17..\n\nLet us try to form a pattern:\n\n2 = 2 + 0 (n = 1)\n\n7 = 4 + 3 (n = 2)\n\n17 = 8 + 9 [8 + 3*3] (n = 3)\n\n37 = 16 + 21[16 + 3*7] n = 4\n\nT(n) = $2^n+3\\left(2^{n-1}-1\\right)$\n\nWe know that $2^{20}=2^{10}\\times\\ 2^{10}=1024\\times\\ 1024$, which is more than 1 million.\n\nLet us check for n = 19\n\n$2^{19}+3\\left(2^{18}-1\\right)=2^{19}\\ +\\ 3\\cdot2^{18}-3=2\\cdot2^{19}+2^{18}-3=2^{20}+2^{18}-3$, which is more than 1 million.\n\nLet us check for n = 18\n\n=> $2^{18}+3\\left(2^{17}-1\\right)=2^{18}\\ +\\ 3\\cdot2^{17}-3=2\\cdot2^{18}+2^{17}-3=2^{19}+2^{17}-3$ which is not more than a million.\n\n=> n = 19.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449504)\n\n**Passage:**\nA lab experiment measures the number of organisms at 8 am every day. Starting with 2 organisms on the first day, the number of organisms on any day is equal to 3 more than twice the number on the previous day. If the number of organisms on the nth day exceeds one million, then the lowest possible value of n is\n\nA lab experiment measures the number of organisms at 8 am every day. Starting with 2 organisms on the first day, the number of organisms on any day is equal to 3 more than twice the number on the previous day. If the number of organisms on the nth day exceeds one million, then the lowest possible value of n is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2105",
+      "passage_text": "Find the sum of the following series up to 50 terms: 3, 1, -2, -6, -11, -17,....\n\n-22900\n\n-21900\n\n-20000\n\n-21000",
+      "question_text": "Find the sum of the following series up to 50 terms:\n3, 1, -2, -6, -11, -17,....",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "-22900",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-21900",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "-20000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-21000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "The differences between the terms of the series are in AP.\n\n1 - 3 = -2\n\n-2 - 1 = -3\n\n-6 + 2 = -4 and so on.\n\nWe represent such a series as \n\nT(n) = $an^2+bn+c$\n\nSubstituting n = 1,2,3, we get\n\na + b + c = 3 ....(i)\n\n4a + 2b + c = 1 ....(ii)\n\n9a + 3b + c = -2 ....(iii)\n\n(ii) - (i), we get\n\n3a + b = -2\n\n(iii) - (i), we get\n\n8a + 2b = -5\n\nSolving these 2 equations, we get,\n\na = -0.5, b = -0.5\n\nPutting these values in equation (i), we get c = 4.\n\nHence, T(n) = $-0.5n^2-0.5n+4$\n\nS(n) = $-0.5\\frac{n\\left(n+1\\right)\\left(2n+1\\right)}{6}-0.5\\frac{n\\left(n+1\\right)}{2}+4n$\n\nS(n) = $-0.5\\frac{50\\times\\ 51\\times\\ 101}{6}-0.5\\frac{50\\times\\ 51}{2}+4\\times\\ 50=-21900$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 361809)\n\n**Passage:**\nFind the sum of the following series up to 50 terms: 3, 1, -2, -6, -11, -17,....\n\n-22900\n\n-21900\n\n-20000\n\n-21000\n\nFind the sum of the following series up to 50 terms:\n3, 1, -2, -6, -11, -17,....\n\n**Options:**\n- **A**. -22900\n- **B**. -21900\n- **C**. -20000\n- **D**. -21000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2106",
+      "passage_text": "Let a n a_{n} a n ​ and b n b_{n} b n ​ be two sequences such that a n = 13 + 6 ( n − 1 ) a_{n}=13+6(n-1) a n ​ = 1 3 + 6 ( n − 1 ) and b n = 15 + 7 ( n − 1 ) b_{n}=15+7(n-1) b n ​ = 1 5 + 7 ( n − 1 ) for all natural numbers n. Then, the largest three digit integer that is common to both these sequences, is",
+      "question_text": "Let $a_{n}$ and $b_{n}$ be two sequences such that $a_{n}=13+6(n-1)$ and $b_{n}=15+7(n-1)$ for all natural numbers n. Then, the largest three digit integer that is common to both these sequences, is",
+      "options": [],
+      "correct_option_data": "967",
+      "solution_text": "It is given that $a_{n}=13+6(n-1)$, which can be written as $a_n=13+6n-6\\ =\\ 7+6n$\n\nSimilarly, $b_{n}=15+7(n-1)$, which can be written as $b_n=15+7n-7\\ =\\ 8+7n$\n\nThe common differences are 6, and 7, respectively, The common difference of terms that exists in both series is l.c.m (6, 7) = 42\n\nThe first common term of the first two series is 43 (by inspection)\n\nHence, we need to find the mth term, which is less than 1000, and the largest three-digit integer, and exists in both series.\n\n$t_m=a+\\left(m-1\\right)d\\ <\\ 1000$\n\n=> $43+\\left(m-1\\right)42\\ <\\ 1000$\n\n=> $\\left(m-1\\right)42\\ <\\ 957$\n\n=> m-1 < 22.8 => m < 23.8 => m = 23\n\nHence, the 23rd term is $43+22\\times\\ 42\\ =\\ 967$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449568)\n\n**Passage:**\nLet a n a_{n} a n ​ and b n b_{n} b n ​ be two sequences such that a n = 13 + 6 ( n − 1 ) a_{n}=13+6(n-1) a n ​ = 1 3 + 6 ( n − 1 ) and b n = 15 + 7 ( n − 1 ) b_{n}=15+7(n-1) b n ​ = 1 5 + 7 ( n − 1 ) for all natural numbers n. Then, the largest three digit integer that is common to both these sequences, is\n\nLet $a_{n}$ and $b_{n}$ be two sequences such that $a_{n}=13+6(n-1)$ and $b_{n}=15+7(n-1)$ for all natural numbers n. Then, the largest three digit integer that is common to both these sequences, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2107",
+      "passage_text": "For a real number x, if 1 2 , log ⁡ 3 ( 2 x − 9 ) log ⁡ 3 4 \\frac{1}{2}, \\frac{\\log_3(2^x - 9)}{\\log_3 4} 2 1 ​ , l o g 3 ​ 4 l o g 3 ​ ( 2 x − 9 ) ​ , and log ⁡ 5 ( 2 x + 17 2 ) log ⁡ 5 4 \\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4} l o g 5 ​ 4 l o g 5 ​ ( 2 x + 2 1 7 ​ ) ​ are in an arithmetic progression, then the common difference is\n\nlog ⁡ 4 ( 3 2 ) \\log_4\\left(\\frac{3}{2}\\right) lo g 4 ​ ( 2 3 ​ )\n\nlog ⁡ 4 7 \\log_4 7 lo g 4 ​ 7\n\nlog ⁡ 4 ( 23 2 ) \\log_4\\left(\\frac{23}{2}\\right) lo g 4 ​ ( 2 2 3 ​ )\n\nlog ⁡ 4 ( 7 2 ) \\log_4\\left(\\frac{7}{2}\\right) lo g 4 ​ ( 2 7 ​ )",
+      "question_text": "For a real number x, if $\\frac{1}{2}, \\frac{\\log_3(2^x - 9)}{\\log_3 4}$, and $\\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4}$ are in an arithmetic progression, then the common difference is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\log_4\\left(\\frac{3}{2}\\right)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\log_4 7$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\log_4\\left(\\frac{23}{2}\\right)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\log_4\\left(\\frac{7}{2}\\right)$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "It is given that $\\frac{1}{2}, \\frac{\\log_3(2^x - 9)}{\\log_3 4}$, and $\\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4}$ are in an arithmetic progression.\n\n$\\frac{\\log_3(2^x-9)}{\\log_34}$ can be written as $\\log_4\\left(2^x-9\\right)$, and $\\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4}$ can be written as $\\log_4\\left(2^x+\\frac{17}{2}\\right)$ \n\nHence, $2\\log_4\\left(2^x-9\\right)=\\frac{1}{2}+\\log_4\\left(2^x+\\frac{17}{2}\\right)$\n\n$\\frac{1}{2}$ can be written as $\\log_42$.\n\nTherefore, \n\n=> $2\\log_4\\left(2^x-9\\right)=\\log_42+\\log_4\\left(2^x+\\frac{17}{2}\\right)$\n\n=> $\\log_4\\left(2^x-9\\right)^{^2}=\\log_42\\left(2^x+\\frac{17}{2}\\right)$\n\n=> $\\left(2^x-9\\right)^{^2}=2\\left(2^x+\\frac{17}{2}\\right)$\n\n=> $2^{2x}-18\\cdot2^x+81=2\\cdot2^x+17$\n\n=> $2^{2x}-20\\cdot2^x+64=0$\n\n=> $2^{2x}-16\\cdot2^x-4\\cdot2^x+64=0$\n\n=> $2^x\\left(2^x-16\\right)-4\\left(2^x-16\\right)=0$\n\n=> $\\left(2^x-4\\right)\\left(2^x-16\\right)=0$\n\nThe values of $2^x$ can't be 4 (log will be undefined), which implies The value of $2^x$ is 16.\n\nTherefore, the common difference is $\\log_4\\left(2^x-9\\right)-\\log_42$\n\n=> $\\log_47-\\log_42\\ =\\ \\log_4\\left(\\frac{7}{2}\\right)$\n\nThe correct option is D",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449528)\n\n**Passage:**\nFor a real number x, if 1 2 , log ⁡ 3 ( 2 x − 9 ) log ⁡ 3 4 \\frac{1}{2}, \\frac{\\log_3(2^x - 9)}{\\log_3 4} 2 1 ​ , l o g 3 ​ 4 l o g 3 ​ ( 2 x − 9 ) ​ , and log ⁡ 5 ( 2 x + 17 2 ) log ⁡ 5 4 \\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4} l o g 5 ​ 4 l o g 5 ​ ( 2 x + 2 1 7 ​ ) ​ are in an arithmetic progression, then the common difference is\n\nlog ⁡ 4 ( 3 2 ) \\log_4\\left(\\frac{3}{2}\\right) lo g 4 ​ ( 2 3 ​ )\n\nlog ⁡ 4 7 \\log_4 7 lo g 4 ​ 7\n\nlog ⁡ 4 ( 23 2 ) \\log_4\\left(\\frac{23}{2}\\right) lo g 4 ​ ( 2 2 3 ​ )\n\nlog ⁡ 4 ( 7 2 ) \\log_4\\left(\\frac{7}{2}\\right) lo g 4 ​ ( 2 7 ​ )\n\nFor a real number x, if $\\frac{1}{2}, \\frac{\\log_3(2^x - 9)}{\\log_3 4}$, and $\\frac{\\log_5\\left(2^x + \\frac{17}{2}\\right)}{\\log_5 4}$ are in an arithmetic progression, then the common difference is\n\n**Options:**\n- **A**. $\\log_4\\left(\\frac{3}{2}\\right)$\n- **B**. $\\log_4 7$\n- **C**. $\\log_4\\left(\\frac{23}{2}\\right)$\n- **D**. $\\log_4\\left(\\frac{7}{2}\\right)$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2108",
+      "passage_text": "In a right-angled triangle ∆ABC, the altitude AB is 5 cm, and the base BC is 12 cm. P and Q are two points on BC such that the areas of △ A B P , △ A B Q \\triangle ABP, \\triangle ABQ △ A B P , △ A B Q and △ A B C \\triangle ABC △ A B C are in arithmetic progression. If the area of ∆ABC is 1.5 times the area of △ A B P \\triangle ABP △ A B P , the length of PQ, in cm, is",
+      "question_text": "In a right-angled triangle ∆ABC, the altitude AB is 5 cm, and the base BC is 12 cm. P and Q are two points on BC such that the areas of $\\triangle ABP, \\triangle ABQ$ and $\\triangle ABC$ are in arithmetic progression. If the area of ∆ABC is 1.5 times the area of $\\triangle ABP$, the length of PQ, in cm, is",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "Given that ABC is a right-angled triangle with AB = 5 and BC = 12 => Area of the triangle = 0.5 * 5 * 12 = 30.\n\nLet us assume BP = p, BQ = q\n\n=> Area of ABP = 0.5 * 5 * p = 2.5p\n\n=> Area of ABQ = 0.5 * 5 * q = 2.5q\n\nGiven the area of ABC is 1.5 times that of ABP\n\n=> 30 = 1.5 * 2.5p => 20 = 2.5p => p = 8.\n\nGiven Areas of ABP, ABQ and ABC are in A.P. => 2 * 2.5q = 2.5 * 8 + 30 => 5q = 50 => q = 10.\n\nPQ = BQ - BP = q - p = 10 - 8 = 2.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449501)\n\n**Passage:**\nIn a right-angled triangle ∆ABC, the altitude AB is 5 cm, and the base BC is 12 cm. P and Q are two points on BC such that the areas of △ A B P , △ A B Q \\triangle ABP, \\triangle ABQ △ A B P , △ A B Q and △ A B C \\triangle ABC △ A B C are in arithmetic progression. If the area of ∆ABC is 1.5 times the area of △ A B P \\triangle ABP △ A B P , the length of PQ, in cm, is\n\nIn a right-angled triangle ∆ABC, the altitude AB is 5 cm, and the base BC is 12 cm. P and Q are two points on BC such that the areas of $\\triangle ABP, \\triangle ABQ$ and $\\triangle ABC$ are in arithmetic progression. If the area of ∆ABC is 1.5 times the area of $\\triangle ABP$, the length of PQ, in cm, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2109",
+      "passage_text": "",
+      "question_text": "A triangle is drawn with its vertices on the circle C such that one of its sides is a diameter of C and the other two sides have their lengths in the ratio a : b. If the radius of the circle is r, then the area of the triangle is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{abr^{2}}{2(a^{2}+b^{2})}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{2abr^{2}}{a^{2}+b^{2}}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{4abr^{2}}{a^{2}+b^{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{abr^{2}}{a^{2}+b^{2}}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Since BC is the diameter of the circle, which implies angle BAC is 90 degrees. Let AB = a cm, which implies AC = b cm. Hence, $BC\\ =\\ \\sqrt{\\ a^2+b^2}$, which is diameter of the circle (2r).\n\nHence, $2r\\ =\\sqrt{\\ a^2+b^2}$\n\n=> $4r^2=a^2+b^2$\n\nThe area of the triangle is $\\frac{1}{2}\\times\\ a\\times\\ b$, which can be written as \n\n=> $\\ \\frac{\\ a\\cdot b}{2\\left(a^2+b^2\\right)}\\times\\ \\left(a^2+b^2\\right)$\n\n=> $\\frac{\\ a\\cdot b}{2\\left(a^2+b^2\\right)}\\times\\ 4r^2$\n\n=> $\\frac{\\ a\\cdot b}{a^2+b^2}\\times\\ 2r^2$\n\nThe correct option is B",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449563)\n\n**Passage:**\nA triangle is drawn with its vertices on the circle C such that one of its sides is a diameter of C and the other two sides have their lengths in the ratio a : b. If the radius of the circle is r, then the area of the triangle is\n\na b r 2 2 ( a 2 + b 2 ) \\frac{abr^{2}}{2(a^{2}+b^{2})} 2 ( a 2 + b 2 ) a b r 2 ​\n\n2 a b r 2 a 2 + b 2 \\frac{2abr^{2}}{a^{2}+b^{2}} a 2 + b 2 2 a b r 2 ​\n\n4 a b r 2 a 2 + b 2 \\frac{4abr^{2}}{a^{2}+b^{2}} a 2 + b 2 4 a b r 2 ​\n\na b r 2 a 2 + b 2 \\frac{abr^{2}}{a^{2}+b^{2}} a 2 + b 2 a b r 2 ​\n\nA triangle is drawn with its vertices on the circle C such that one of its sides is a diameter of C and the other two sides have their lengths in the ratio a : b. If the radius of the circle is r, then the area of the triangle is\n\n**Options:**\n- **A**. $\\frac{abr^{2}}{2(a^{2}+b^{2})}$\n- **B**. $\\frac{2abr^{2}}{a^{2}+b^{2}}$\n- **C**. $\\frac{4abr^{2}}{a^{2}+b^{2}}$\n- **D**. $\\frac{abr^{2}}{a^{2}+b^{2}}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2110",
+      "passage_text": "",
+      "question_text": "In a rectangle ABCD, AB = 9 cm and BC = 6 cm. P and Q are two points on BC such that the areas of the figures ABP, APQ, and AQCD are in geometric progression. If the area of the figure AQCD is four times the area of triangle ABP, then BP : PQ : QC is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1:2:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:4:1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1:1:2",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "It is given that AB = 9 cm, BC = 6 cm.\n\nIt is also known that the areas of the figures ABP, APQ, and AQCD are in geometric progression.\n\nHence, the area of the ABP, APQ, and AQCD are k, 2k, and 4k respectively.\n\nThe ratio of BP, PQ, QC will be the ratio of the respective triangles. Hence, we can draw a line from point A to point C.\n\nLet the area of triangle AQC be x, which implies the area of triangle ADC = ADQC - AQC = 4k -x, which is equal to the sum of the area of triangle APB, AQP, and ACQ, respectively.\n\nTherefore, 4k-x = 3k+x \n\n=> x = k/2\n\nHence the ratio of BP: PQ: CQ = k:2k: k/2 =2:4:1",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449564)\n\n**Passage:**\nIn a rectangle ABCD, AB = 9 cm and BC = 6 cm. P and Q are two points on BC such that the areas of the figures ABP, APQ, and AQCD are in geometric progression. If the area of the figure AQCD is four times the area of triangle ABP, then BP : PQ : QC is\n\n1:2:4\n\n1:2:1\n\n2:4:1\n\n1:1:2\n\nIn a rectangle ABCD, AB = 9 cm and BC = 6 cm. P and Q are two points on BC such that the areas of the figures ABP, APQ, and AQCD are in geometric progression. If the area of the figure AQCD is four times the area of triangle ABP, then BP : PQ : QC is\n\n**Options:**\n- **A**. 1:2:4\n- **B**. 1:2:1\n- **C**. 2:4:1\n- **D**. 1:1:2\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2111",
+      "passage_text": "",
+      "question_text": "An isosceles triangle is drawn such that the length of the median to the unequal side is equal to the length of the side it bisects. All of the following statements are false except",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "The triangle can be right-angled.",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "The ratio of the lengths of any 2 sides of the triangle will be an integer.",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "The inradius of the triangle can be an integer.",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "The area of the triangle cannot be an integer.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "It has been given that the length of the median is equal to the length of the side it bisects. \nLet the length of the median be $x$.\n\nLet the lengths of the 2 equal sides be $a$. \n\nNow, applying Appollonius theorem, we can say that, \n$2*{x^2+\\frac{x^2}{4}} = a^2 + a^2$\n$2*{\\frac{5x^2}{4}} = 2*a^2$\n$\\frac{5x^2}{4} = a^2$\n$\\frac{\\sqrt{5}*x}{2}=a$\n\nLet us evaluate the options. \n\nOption A:\n\nHad the triangle been right-angled, then the unequal side would have been the hypotenuse. \nApplying Pythagoras theorem, we get,\n$x^2=a^2+a^2$\n$x^2 = 2a^2$\n\nClearly, the relationship we have obtained is different from the relationship between the sides of a right-angled triangle. We can eliminate option A. \n\nOption B:\n\nThe ratio of any 2 sides of the triangle will be an integer. \nFrom the relation $\\frac{\\sqrt{5}*x}{2}=a$, we can see that the ratio of the lengths of unequal side to one of the equal sides will not be an integer. \nWe can eliminate option B as well.\n\nOption D:\n\nThe area of the triangle cannot be an integer.\nWe know that the three sides are $x, \\frac{\\sqrt{5}*x}{2}, \\frac{\\sqrt{5}*x}{2}$\nArea of the triangle = $\\sqrt{s(s-a)(s-b)(s-c)}$, where $s$ is the semi-perimeter. \n$s = \\frac{x+\\sqrt{5}*x}{2}$\nNow, Area = $\\sqrt{\\frac{x+\\sqrt{5}*x}{2}* \\frac{\\sqrt{5}*x-x}{2}*\\frac{x}{2}*\\frac{x}{2}}$\n                = $\\sqrt{\\frac{4x^2}{4}*\\frac{x^2}{4}}$\n                = $\\frac{x^2}{2}$\n\nAs we can see, the area of the triangle can be an integer. Therefore, we can eliminate option D. \n\nOption C:\n\nWe know that $r*s$ = Area of the triangle, where $s$ is the semi-perimeter and $r$ is the inradius. \n\nNow, $s = \\dfrac{x + \\frac{\\sqrt{5}*x}{2} + \\frac{\\sqrt{5}*x}{2}}{2}$\n$s = \\frac{x+\\sqrt{5}x}{2}$\n\n$r*\\frac{x+\\sqrt{5}x}{2} = \\frac{1}{2}*x*x$\n$r = \\dfrac{x^2}{x+\\sqrt{5}x}$\n$r=\\dfrac{x}{1+\\sqrt{5}}$\n\nClearly, when $x$ is of the form $(1+\\sqrt{5})*k$, the inradius will be an integer. Therefore, option C is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 225475)\n\n**Passage:**\nAn isosceles triangle is drawn such that the length of the median to the unequal side is equal to the length of the side it bisects. All of the following statements are false except\n\nThe triangle can be right-angled.\n\nThe ratio of the lengths of any 2 sides of the triangle will be an integer.\n\nThe inradius of the triangle can be an integer.\n\nThe area of the triangle cannot be an integer.\n\nAn isosceles triangle is drawn such that the length of the median to the unequal side is equal to the length of the side it bisects. All of the following statements are false except\n\n**Options:**\n- **A**. The triangle can be right-angled.\n- **B**. The ratio of the lengths of any 2 sides of the triangle will be an integer.\n- **C**. The inradius of the triangle can be an integer.\n- **D**. The area of the triangle cannot be an integer.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2112",
+      "passage_text": "In the figure given below, AB= 3 13 3\\sqrt{13} 3 1 3 ​ cm. AM= 0.75 39 0.75\\sqrt{\\ 39} 0 . 7 5 3 9 ​ cm, is perpendicular to BC. Find the length of the median of the triangle drawn from A onto BC, if angle BAC is 9 0 ∘ 90^{\\circ\\ } 9 0 ∘\n\n6 cm\n\n6 2 6\\sqrt{\\ 2} 6 2 ​ cm\n\n154 \\sqrt{154} 1 5 4 ​ cm.\n\n7 3 7\\sqrt{3} 7 3 ​ cm",
+      "question_text": "In the figure given below, AB= $3\\sqrt{13}$ cm. AM=$0.75\\sqrt{\\ 39}$ cm, is perpendicular to BC. Find the length of the median of the triangle drawn from A onto BC, if angle BAC is $90^{\\circ\\ }$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6 cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$6\\sqrt{\\ 2}$ cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{154}$ cm.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$7\\sqrt{3}$ cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Since AM is perpendicular from A to BC, triangle ABC is similar to triangle MAC. Hence, we have the relation:\n\n$\\frac{AB}{BC}=\\frac{AM}{AC}$\n\nAlso, by pythogoras theorem, $BC=\\sqrt{\\ AB^2+AC^2}$\n\nThus we can write: $\\frac{AB}{\\sqrt{\\ AB^2+AC^2}}=\\frac{AM}{AC}$\n\n$\\frac{AB^2}{AB^2+AC^2}=\\frac{AM^2}{AC^2}$\n\n$\\frac{117}{117+AC^2}=\\frac{0.5625\\times39}{AC^2}$\n\n$3AC^2=0.5625\\left(117+AC^2\\right)$\n\nWe get AC= $3\\sqrt{\\ 3}$. and the hypotenuse of ABC =$\\sqrt{\\ 117+27}=12\\ cm$.\n\nABC is a right angled triangle. Hence the length of the median to the hypotenuse will be half the length of the hypotenuse.\n.'. AD=6 cm.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot%202021-05-25%20at%2012.45.34_gFGdCg6.png",
+      "full_markdown": "### Question (qid: 370101)\n\n**Passage:**\nIn the figure given below, AB= 3 13 3\\sqrt{13} 3 1 3 ​ cm. AM= 0.75 39 0.75\\sqrt{\\ 39} 0 . 7 5 3 9 ​ cm, is perpendicular to BC. Find the length of the median of the triangle drawn from A onto BC, if angle BAC is 9 0 ∘ 90^{\\circ\\ } 9 0 ∘\n\n6 cm\n\n6 2 6\\sqrt{\\ 2} 6 2 ​ cm\n\n154 \\sqrt{154} 1 5 4 ​ cm.\n\n7 3 7\\sqrt{3} 7 3 ​ cm\n\nIn the figure given below, AB= $3\\sqrt{13}$ cm. AM=$0.75\\sqrt{\\ 39}$ cm, is perpendicular to BC. Find the length of the median of the triangle drawn from A onto BC, if angle BAC is $90^{\\circ\\ }$\n\n**Options:**\n- **A**. 6 cm\n- **B**. $6\\sqrt{\\ 2}$ cm\n- **C**. $\\sqrt{154}$ cm.\n- **D**. $7\\sqrt{3}$ cm\n\n**Correct Answer:** null"
     }
   ]
 }
