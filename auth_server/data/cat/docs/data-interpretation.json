@@ -42737,6 +42737,181 @@
       "solution_text": "Let us go by options.\n\nOption A: In first row, 6 is reached by 3, 1 by none, 2 by none, 4 by 3, 3 by none. Hence, ruled out.\n\nOption B: Third row, every individual is approached by other.\n\nOption D:  In first row, 6 is reached by 3, 1 by none, 2 by none, 4 by 3, 3 by none. Hence, ruled out.\n\nHence, Option C is correct.",
       "image_url": "https://cracku.in/media/uploads/table.png",
       "full_markdown": "### Question (qid: 98133)\n\n**Passage:**\nIn a square layout of site 5m ~ 5m 25 equal-sized square platforms of different heights are built. The heights (in metre) of individual platforms are as shown below:\n\nIndividuals (all of same height) are seated on these platforms. We say an individual A can reach individual B, if all the three following conditions are met;\n\n(i) A and B are In the same row or column (ii) A is at a lower height than B (iii) If there is/are any individuals (s) between A and B, such individual(s) must be at a height lower than that of A.\n\nThus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5.\n\nRows in the layout are numbered from top to bottom and columns are numbered from left to right.\n\nWhich of the following statements is true about this layout?\n\n**Options:**\n- **A**. Each row has an individual who can be reached by 5 or more individuals.\n- **B**. Each row has an individual who cannot be reached by anyone.\n- **C**. Each row has at least two individuals who can be reached by an equal number of individuals.\n- **D**. All individuals at the height of 9 m can be reached by at least 5 individuals.\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1505",
+      "passage_text": "The distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.",
+      "question_text": "What is the distance walked by C?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3.63 km",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2.72 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4.45 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2.99 km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the time for which A and B travelled by cycle be '$t_1$', time for which only A travelled by cycle be '$t_2$' and time for which A and C travelled by cycle be '$t_3$'.\n\nB -> For time $t_1$, B travelled by cycle and for the remaining time B walked.\n\nThis implies, $5t_1+2\\left(t_2+t_3\\right)=10$ ...... (1)\n\nA -> A cycled throughout the journey and covered more than 10 km.\n\n$5t_1+5t_2+5t_3=10+2\\left(5t_2\\right)$\n\n$5t_1-5t_2+5t_3=10$ ...... (2)\n\nC -> For time $t_1+t_2$, C walked and for the remaining time A and C travelled by cycle.\n\nThis implies, $\\left(t_1+t_2\\right)2+5t_3=10$ ...... (3)\n\nEquating (1) and (3), we get\n\n$5t_1+2t_2+2t_3=2t_1+2t_2+5t_3$\n\n$3t_1=3t_3$\n\n$t_1=t_3$ ...... (4)\n\nEquating (2) and (3), we get\n\n$5t_1-5t_2+5t_3=2t_1+2t_2+5t_3$\n\n$3t_1=7t_2$ ...... (5)\n\nSolving (1), (4), and (5), we get\n\n$5t_1+2t_2+2t_3=10$\n\n$5t_3+2t_2+2t_3=10$\n\n$7t_3+2\\left(\\frac{3t_3}{7}\\right)=10$\n\n$\\frac{55t_3}{7}=10$\n\n$\\frac{11t_3}{7}=2$\n\n$t_3=\\frac{14}{11}$\n\n$t_3=t_1=\\frac{14}{11}$\n\nFrom eqn (5), $3t_1=7t_2$\n\n$3\\left(\\frac{14}{11}\\right)=7t_2$\n\n$t_2=\\frac{6}{11}$\n\nDistance walked by C = Time*speed = $2\\left(t_1+t_2\\right)=2\\left(\\frac{14}{11}+\\frac{6}{11}\\right)=\\frac{40}{11}=3.63$km\n\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2239)\n\n**Passage:**\nThe distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.\n\nWhat is the distance walked by C?\n\n**Options:**\n- **A**. 3.63 km\n- **B**. 2.72 km\n- **C**. 4.45 km\n- **D**. 2.99 km\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1506",
+      "passage_text": "The distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.",
+      "question_text": "What is the total distance travelled by the cycle?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12.72 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13.57 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14.20 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15.44 km",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the time for which A and B travelled by cycle be '$t_1$', time for which only A travelled by cycle be '$t_2$' and time for which A and C travelled by cycle be '$t_3$'.\n\nB -> For time $t_1$, B travelled by cycle and for the remaining time B walked.\n\nThis implies, $5t_1+2\\left(t_2+t_3\\right)=10$ ...... (1)\n\nA -> A cycled throughout the journey and covered more than 10 km.\n\n$5t_1+5t_2+5t_3=10+2\\left(5t_2\\right)$\n\n$5t_1-5t_2+5t_3=10$ ...... (2)\n\nC -> For time $t_1+t_2$, C walked and for the remaining time A and C travelled by cycle.\n\nThis implies, $\\left(t_1+t_2\\right)2+5t_3=10$ ...... (3)\n\nEquating (1) and (3), we get\n\n$5t_1+2t_2+2t_3=2t_1+2t_2+5t_3$\n\n$3t_1=3t_3$\n\n$t_1=t_3$ ...... (4)\n\nEquating (2) and (3), we get\n\n$5t_1-5t_2+5t_3=2t_1+2t_2+5t_3$\n\n$3t_1=7t_2$ ...... (5)\n\nSolving (1), (4), and (5), we get\n\n$5t_1+2t_2+2t_3=10$\n\n$5t_3+2t_2+2t_3=10$\n\n$7t_3+2\\left(\\frac{3t_3}{7}\\right)=10$\n\n$\\frac{55t_3}{7}=10$\n\n$\\frac{11t_3}{7}=2$\n\n$t_3=\\frac{14}{11}$\n\n$t_3=t_1=\\frac{14}{11}$\n\nFrom eqn (5), $3t_1=7t_2$\n\n$3\\left(\\frac{14}{11}\\right)=7t_2$\n\n$t_2=\\frac{6}{11}$\n\nTotal distance travelled by cycle = Time*speed = $5\\left(t_1+t_2+t_3\\right)=5\\left(\\frac{34}{11}\\right)=\\frac{170}{11}=15.44$km\n\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2240)\n\n**Passage:**\nThe distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.\n\nWhat is the total distance travelled by the cycle?\n\n**Options:**\n- **A**. 12.72 km\n- **B**. 13.57 km\n- **C**. 14.20 km\n- **D**. 15.44 km\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1507",
+      "passage_text": "The distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.",
+      "question_text": "If the three friends start at the school at 4pm, at what time do they reach the playground?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "19:04:48",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "19:05:25",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "19:00:00",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "19:01:42",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the time for which A and B travelled by cycle be '$t_1$', time for which only A travelled by cycle be '$t_2$' and time for which A and C travelled by cycle be '$t_3$'.\n\nB -> For time $t_1$, B travelled by cycle and for the remaining time B walked.\n\nThis implies, $5t_1+2\\left(t_2+t_3\\right)=10$ ...... (1)\n\nA -> A cycled throughout the journey and covered more than 10 km.\n\n$5t_1+5t_2+5t_3=10+2\\left(5t_2\\right)$\n\n$5t_1-5t_2+5t_3=10$ ...... (2)\n\nC -> For time $t_1+t_2$, C walked and for the remaining time A and C travelled by cycle.\n\nThis implies, $\\left(t_1+t_2\\right)2+5t_3=10$ ...... (3)\n\nEquating (1) and (3), we get\n\n$5t_1+2t_2+2t_3=2t_1+2t_2+5t_3$\n\n$3t_1=3t_3$\n\n$t_1=t_3$ ...... (4)\n\nEquating (2) and (3), we get\n\n$5t_1-5t_2+5t_3=2t_1+2t_2+5t_3$\n\n$3t_1=7t_2$ ...... (5)\n\nSolving (1), (4), and (5), we get\n\n$5t_1+2t_2+2t_3=10$\n\n$5t_3+2t_2+2t_3=10$\n\n$7t_3+2\\left(\\frac{3t_3}{7}\\right)=10$\n\n$\\frac{55t_3}{7}=10$\n\n$\\frac{11t_3}{7}=2$\n\n$t_3=\\frac{14}{11}$\n\n$t_3=t_1=\\frac{14}{11}$\n\nFrom eqn (5), $3t_1=7t_2$\n\n$3\\left(\\frac{14}{11}\\right)=7t_2$\n\n$t_2=\\frac{6}{11}$\n\nTotal time taken to reach playground = $t_1+t_2+t_3=\\frac{34}{11}=3.09$hrs\n\n4pm + 3.09 hrs = 4 pm + 3 hr + 5.4 minutes = 19:05:25\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2241)\n\n**Passage:**\nThe distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.\n\nIf the three friends start at the school at 4pm, at what time do they reach the playground?\n\n**Options:**\n- **A**. 19:04:48\n- **B**. 19:05:25\n- **C**. 19:00:00\n- **D**. 19:01:42\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1508",
+      "passage_text": "The distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.",
+      "question_text": "If the three friends start from the school at 4pm, what is the approximate time at which B starts walking?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5:22 PM",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:30 PM",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5:16 PM",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4:45 PM",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the time for which A and B travelled by cycle be '$t_1$', time for which only A travelled by cycle be '$t_2$' and time for which A and C travelled by cycle be '$t_3$'.\n\nB -> For time $t_1$, B travelled by cycle and for the remaining time B walked.\n\nThis implies, $5t_1+2\\left(t_2+t_3\\right)=10$ ...... (1)\n\nA -> A cycled throughout the journey and covered more than 10 km.\n\n$5t_1+5t_2+5t_3=10+2\\left(5t_2\\right)$\n\n$5t_1-5t_2+5t_3=10$ ...... (2)\n\nC -> For time $t_1+t_2$, C walked and for the remaining time A and C travelled by cycle.\n\nThis implies, $\\left(t_1+t_2\\right)2+5t_3=10$ ...... (3)\n\nEquating (1) and (3), we get\n\n$5t_1+2t_2+2t_3=2t_1+2t_2+5t_3$\n\n$3t_1=3t_3$\n\n$t_1=t_3$ ...... (4)\n\nEquating (2) and (3), we get\n\n$5t_1-5t_2+5t_3=2t_1+2t_2+5t_3$\n\n$3t_1=7t_2$ ...... (5)\n\nSolving (1), (4), and (5), we get\n\n$5t_1+2t_2+2t_3=10$\n\n$5t_3+2t_2+2t_3=10$\n\n$7t_3+2\\left(\\frac{3t_3}{7}\\right)=10$\n\n$\\frac{55t_3}{7}=10$\n\n$\\frac{11t_3}{7}=2$\n\n$t_3=\\frac{14}{11}$\n\n$t_3=t_1=\\frac{14}{11}$\n\nFrom eqn (5), $3t_1=7t_2$\n\n$3\\left(\\frac{14}{11}\\right)=7t_2$\n\n$t_2=\\frac{6}{11}$\n\nB starts walking after time $t_1$, i.e. $\\frac{14}{11}=1.27$ hrs\n\n4 pm + 1.27 hrs = 4 pm + 1 hr + 16.2 minutes = 5:16 pm\n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 2242)\n\n**Passage:**\nThe distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.\n\nIf the three friends start from the school at 4pm, what is the approximate time at which B starts walking?\n\n**Options:**\n- **A**. 5:22 PM\n- **B**. 5:30 PM\n- **C**. 5:16 PM\n- **D**. 4:45 PM\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1509",
+      "passage_text": "The distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.",
+      "question_text": "Approximately how far from the school did A drop B?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3.63 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6.36 km",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4.27 km",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the time for which A and B travelled by cycle be '$t_1$', time for which only A travelled by cycle be '$t_2$' and time for which A and C travelled by cycle be '$t_3$'.\n\nB -> For time $t_1$, B travelled by cycle and for the remaining time B walked.\n\nThis implies, $5t_1+2\\left(t_2+t_3\\right)=10$ ...... (1)\n\nA -> A cycled throughout the journey and covered more than 10 km.\n\n$5t_1+5t_2+5t_3=10+2\\left(5t_2\\right)$\n\n$5t_1-5t_2+5t_3=10$ ...... (2)\n\nC -> For time $t_1+t_2$, C walked and for the remaining time A and C travelled by cycle.\n\nThis implies, $\\left(t_1+t_2\\right)2+5t_3=10$ ...... (3)\n\nEquating (1) and (3), we get\n\n$5t_1+2t_2+2t_3=2t_1+2t_2+5t_3$\n\n$3t_1=3t_3$\n\n$t_1=t_3$ ...... (4)\n\nEquating (2) and (3), we get\n\n$5t_1-5t_2+5t_3=2t_1+2t_2+5t_3$\n\n$3t_1=7t_2$ ...... (5)\n\nSolving (1), (4), and (5), we get\n\n$5t_1+2t_2+2t_3=10$\n\n$5t_3+2t_2+2t_3=10$\n\n$7t_3+2\\left(\\frac{3t_3}{7}\\right)=10$\n\n$\\frac{55t_3}{7}=10$\n\n$\\frac{11t_3}{7}=2$\n\n$t_3=\\frac{14}{11}$\n\n$t_3=t_1=\\frac{14}{11}$\n\nFrom eqn (5), $3t_1=7t_2$\n\n$3\\left(\\frac{14}{11}\\right)=7t_2$\n\n$t_2=\\frac{6}{11}$\n\nA dropped B after travelling for time $t_1$. \n\nDistance covered = $\\frac{5\\left(14\\right)}{11}=\\frac{70}{11}=6.36$km\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 429269)\n\n**Passage:**\nThe distance between a school and a playground is 10 km. Three friends start travelling along a straight line from the school to playground such that two of them, A and B are travelling by cycle and the third, C starts walking. A drops B at a certain point along the way and goes back to pick up C. Meanwhile, B starts walking towards the playground as soon as A drops him. All three of them reach the playground at the same time. The speed of the cycle is 5 kmph and the walking speed of any of the three friends is 2kmph.\n\nApproximately how far from the school did A drop B?\n\n**Options:**\n- **A**. 3.63 km\n- **B**. 6.36 km\n- **C**. 5 km\n- **D**. 4.27 km\n\n**Correct Answer:** null"
     }
   ]
 }
