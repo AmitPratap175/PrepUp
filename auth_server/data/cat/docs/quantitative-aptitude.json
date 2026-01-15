@@ -66851,6 +66851,131 @@
       "solution_text": "Initially let's consider A and B as one component\n\nThe volume of the mixture is doubled by adding A(60% alcohol) i.e they are mixed in 1:1 ratio and the resultant mixture has 72% alcohol.\n\nLet the percentage of alcohol in component 1 be 'x'.\n\nUsing allegations , $\\frac{\\left(72-60\\right)}{x-72}=\\frac{1}{1}$ => x= 84\n\nPercentage of alcohol in A = 60% => Let's percentage of alcohol in B = x%\n\nThe resultant mixture has 84% alcohol. ratio = 1:3\n\nUsing allegations , $\\frac{\\left(x-84\\right)}{84-60}=\\frac{1}{3}$\n\n=> x= 92%",
       "image_url": "",
       "full_markdown": "### Question (qid: 348418)\n\n**Passage:**\nTwo alcohol solutions, A and B, are mixed in the proportion 1:3 by volume. The volume of the mixture is then doubled by adding solution A such that the resulting mixture has 72% alcohol. If solution A has 60% alcohol, then the percentage of alcohol in solution B is\n\n90%\n\n94%\n\n92%\n\n89%\n\nTwo alcohol solutions, A and B, are mixed in the proportion 1:3 by volume. The volume of the mixture is then doubled by adding solution A such that the resulting mixture has 72% alcohol. If solution A has 60% alcohol, then the percentage of alcohol in solution B is\n\n**Options:**\n- **A**. 90%\n- **B**. 94%\n- **C**. 92%\n- **D**. 89%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2118",
+      "passage_text": "",
+      "question_text": "Three positive real numbers a, b, c satisfy b - a = c - b and abc = 8, then what is the minimum possible value of b?",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "b - a = c - b =d\n\na=b-d\n\nc=b+d\n\nabc=8\n\nAP>GP\n\n$\\frac{\\left\\{(b-d)+b+(b+d)\\right\\}}{3}\\ge\\ \\sqrt[\\ 3]{abc}$\n\n$b\\ge\\ \\sqrt[\\ 3]{8}$\n\n$b\\ge\\ 2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 312319)\n\n**Passage:**\nThree positive real numbers a, b, c satisfy b - a = c - b and abc = 8, then what is the minimum possible value of b?\n\nThree positive real numbers a, b, c satisfy b - a = c - b and abc = 8, then what is the minimum possible value of b?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2119",
+      "passage_text": "The number of all natural numbers up to 1000 with non-repeating digits is\n\n504\n\n648\n\n738\n\n585",
+      "question_text": "The number of all natural numbers up to 1000 with non-repeating digits is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "504",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "648",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "738",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "585",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "1-digit numbers => We have 1 to 9 => 9\n\n2-digit numbers => x y, we have 9 ways to choose x from 1 to 9 => 9 ways and 9 ways to choose y (0 to 9 except x) => 9*9 = 81\n\n3-digit numbers => x y z, we have 9 ways to choose x, 9 ways to choose y and 8 ways to choose z => 9*9*8 = 648.\n\nTotal numbers till 1000 without digits repeated in them is 9 + 81 + 648 = 738.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449503)\n\n**Passage:**\nThe number of all natural numbers up to 1000 with non-repeating digits is\n\n504\n\n648\n\n738\n\n585\n\nThe number of all natural numbers up to 1000 with non-repeating digits is\n\n**Options:**\n- **A**. 504\n- **B**. 648\n- **C**. 738\n- **D**. 585\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2120",
+      "passage_text": "Let a, b, m and n be natural numbers such that a > 1 a>1 a > 1 and b > 1 b>1 b > 1 . If a m b n = 14 4 145 a^{m}b^{n}=144^{145} a m b n = 1 4 4 1 4 5 , then the largest possible value of n − m n-m n − m is\n\n580\n\n290\n\n289\n\n579",
+      "question_text": "Let a, b, m and n be natural numbers such that $a>1$ and $b>1$. If $a^{m}b^{n}=144^{145}$, then the largest possible value of $n-m$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "580",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "290",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "289",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "579",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "It is given that $a^m\\cdot b^n\\ =\\ 144^{145}$, where $a>1\\ $ and $b>1$.\n\n$144$ can be written as $144\\ =\\ 2^4\\times\\ 3^2$\n\nHence, $a^m\\cdot b^n\\ =\\ 144^{145}$ can be written as $a^m\\cdot b^n\\ =\\ \\left(2^4\\times\\ 3^2\\right)^{^{145}}=2^{580}\\times\\ 3^{290}$\n\nWe know that $3^{290}$ is a natural number, which implies it can be written as $a^1$, where $a\\ >\\ 1$\n\nHence, the least possible value of m is 1. Similarly, the largest value of n is 580.\n\nHence, the largest value of (n-m) is (580-1) = 579\n\nThe correct option is D",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449547)\n\n**Passage:**\nLet a, b, m and n be natural numbers such that a > 1 a>1 a > 1 and b > 1 b>1 b > 1 . If a m b n = 14 4 145 a^{m}b^{n}=144^{145} a m b n = 1 4 4 1 4 5 , then the largest possible value of n − m n-m n − m is\n\n580\n\n290\n\n289\n\n579\n\nLet a, b, m and n be natural numbers such that $a>1$ and $b>1$. If $a^{m}b^{n}=144^{145}$, then the largest possible value of $n-m$ is\n\n**Options:**\n- **A**. 580\n- **B**. 290\n- **C**. 289\n- **D**. 579\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2121",
+      "passage_text": "For any natural numbers m, n, and k, such that k divides both m + 2 n m+2n m + 2 n and 3 m + 4 n 3m+4n 3 m + 4 n , k must be a common divisor of\n\nm and n\n\n2m and 3n\n\nm and 2n\n\n2m and n",
+      "question_text": "For any natural numbers m, n, and k, such that k divides both $m+2n$ and $3m+4n$, k must be a common divisor of",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "m and n",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2m and 3n",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "m and 2n",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2m and n",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "It is given that k divides m+2n and 3m+4n.\n\nSince k divides (m+2n), it implies k will also divide 3(m+2n). Therefore, k divides 3m+6n.\n\nSimilarly, we know that k divides 3m+4n.\n\nWe know that if two numbers a, and b both are divisible by c, then their difference (a-b) is also divisible by c.\n\nBy the same logic, we can say that {(3m+6n)-(3m+4n)} is divisible by k. Hence, 2n is also divisible by k.\n\nNow, (m+2n) is divisible by k, it implies 2(m+2n) =2m+4n is also divisible by k.\n\nHence, {(3m+4n)-(2m+4n)} = m is also divisible by k.\n\nTherefore, m, and 2n are also divisible by k.\n\nThe correct option is C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449549)\n\n**Passage:**\nFor any natural numbers m, n, and k, such that k divides both m + 2 n m+2n m + 2 n and 3 m + 4 n 3m+4n 3 m + 4 n , k must be a common divisor of\n\nm and n\n\n2m and 3n\n\nm and 2n\n\n2m and n\n\nFor any natural numbers m, n, and k, such that k divides both $m+2n$ and $3m+4n$, k must be a common divisor of\n\n**Options:**\n- **A**. m and n\n- **B**. 2m and 3n\n- **C**. m and 2n\n- **D**. 2m and n\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2122",
+      "passage_text": "",
+      "question_text": "The number of positive integers less than 50, having exactly two distinct factors other than 1 and itself, is",
+      "options": [],
+      "correct_option_data": "15",
+      "solution_text": "Since there are two distinct factors other than 1, and itself, which implies the total number of factors of N is 4.\n\nIt can be done in two ways. \n\nFirst case: $N\\ =\\ p^3$ (where p is a prime number)\n\nSecond case: $N\\ =\\ p_1\\times\\ p_2$ (Where $\\ p_1,\\ p_2$ are the prime numbers)\n\nFrom case 1, we can see that the numbers which is a cube of prime and less than 50 are 8, and 27 (2 numbers).\n\nFrom case 2, we will get the numbers in the form (2*3), (2*5), (2*7), (2*11), (2*13), (2*17), (2*19), (2*23), (3*5), (3*7), (3*11), (3*13), (5*7) {(13 numbers)}\n\nHence, the total number of numbers having two distinct factors is (13+2) = 15.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449551)\n\n**Passage:**\nThe number of positive integers less than 50, having exactly two distinct factors other than 1 and itself, is\n\nThe number of positive integers less than 50, having exactly two distinct factors other than 1 and itself, is\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
