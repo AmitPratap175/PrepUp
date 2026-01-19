@@ -66976,6 +66976,112 @@
       "solution_text": "Since there are two distinct factors other than 1, and itself, which implies the total number of factors of N is 4.\n\nIt can be done in two ways. \n\nFirst case: $N\\ =\\ p^3$ (where p is a prime number)\n\nSecond case: $N\\ =\\ p_1\\times\\ p_2$ (Where $\\ p_1,\\ p_2$ are the prime numbers)\n\nFrom case 1, we can see that the numbers which is a cube of prime and less than 50 are 8, and 27 (2 numbers).\n\nFrom case 2, we will get the numbers in the form (2*3), (2*5), (2*7), (2*11), (2*13), (2*17), (2*19), (2*23), (3*5), (3*7), (3*11), (3*13), (5*7) {(13 numbers)}\n\nHence, the total number of numbers having two distinct factors is (13+2) = 15.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449551)\n\n**Passage:**\nThe number of positive integers less than 50, having exactly two distinct factors other than 1 and itself, is\n\nThe number of positive integers less than 50, having exactly two distinct factors other than 1 and itself, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2123",
+      "passage_text": "",
+      "question_text": "Let ABC be a right-angled triangle with BC as the hypotenuse. Lengths of AB and AC are 15 km and 20 km, respectively. The minimum possible time, in minutes, required to reach the hypotenuse from A at a speed of 30 km per hour is",
+      "options": [],
+      "correct_option_data": "24",
+      "solution_text": "The length of the altitude from A to the hypotenuse will be the shortest distance.\n\nThis is a right triangle with sides 3 : 4 : 5. \n\nHence, the hypotenuse = $\\sqrt{20^2+15^2}$ = 25 Km.\n\nLength of the altitude = $\\frac{15 * 20}{25}$ = 12 Km\n\n(This is derived from equating area of triangle, $\\frac{15\\cdot20}{2}\\ =\\ \\frac{25\\cdot\\text{altitude}}{2}$)\n\nThe time taken = $\\frac{12}{30} * 60$ = 24 minutes",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98095)\n\n**Passage:**\nLet ABC be a right-angled triangle with BC as the hypotenuse. Lengths of AB and AC are 15 km and 20 km, respectively. The minimum possible time, in minutes, required to reach the hypotenuse from A at a speed of 30 km per hour is\n\nLet ABC be a right-angled triangle with BC as the hypotenuse. Lengths of AB and AC are 15 km and 20 km, respectively. The minimum possible time, in minutes, required to reach the hypotenuse from A at a speed of 30 km per hour is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2124",
+      "passage_text": "A ball of diameter 4 cm is kept on top of a hollow cylinder standing vertically. The height of the cylinder is 3 cm, while its volume is 9 π 9\\pi 9 π cubic centimeters. Then the vertical distance, in cm, of the topmost point of the ball from the base of the cylinder is",
+      "question_text": "A ball of diameter 4 cm is kept on top of a hollow cylinder standing vertically. The height of the cylinder is 3 cm, while its volume is $9\\pi$ cubic centimeters. Then the vertical distance, in cm, of the topmost point of the ball from the base of the cylinder is",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The volume of a cylinder is $\\pi * r^2 * 3 = 9 \\pi$\n\nr = $\\sqrt{3}$ cm.\n\nRadius of the ball is 2 cm. Hence, the ball will lie on top of the cylinder.\n\nLets draw the figure.\n\nBased on the Pythagoras theorem, the other leg will be 1 cm.\n\nThus, the height will be 3 + 1 + 2 = 6 cm",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98094)\n\n**Passage:**\nA ball of diameter 4 cm is kept on top of a hollow cylinder standing vertically. The height of the cylinder is 3 cm, while its volume is 9 π 9\\pi 9 π cubic centimeters. Then the vertical distance, in cm, of the topmost point of the ball from the base of the cylinder is\n\nA ball of diameter 4 cm is kept on top of a hollow cylinder standing vertically. The height of the cylinder is 3 cm, while its volume is $9\\pi$ cubic centimeters. Then the vertical distance, in cm, of the topmost point of the ball from the base of the cylinder is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2125",
+      "passage_text": "",
+      "question_text": "Let ABC be a right-angled isosceles triangle with hypotenuse BC. Let BQC be a semi-circle, away from A, with diameter BC. Let BPC be an arc of a circle centered at A and lying between BC and BQC. If AB has length 6 cm then the area, in sq cm, of the region enclosed by BPC and BQC is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$9\\pi-18$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$9\\pi$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "The image of the figure is as shown. \n\nAB = AC = 6cm. Thus, BC = $\\sqrt{6^2 + 6^2}$ = 6√2 cm\n\nThe required area = Area of semi-circle BQC - Area of quadrant BPC + Area of triangle ABC\n\nArea of semicircle BQC\n\nDiameter BC = 6√2cm\n\nRadius = 6√2/2 = 3√2 cm\n\nArea = $\\pi r^2 $/2 = $ \\pi$ * $(3 \\sqrt{2})^2 $/2 = 9$\\pi$\n\nArea of quadrant BPC\n\nArea = $\\pi r^2$/4 = $\\pi*(6)^2$/4 = 9$\\pi$\n\nArea of triangle ABC\n\nArea = 1/2 * 6 * 6 = 18\n\nThe required area = Area of semi-circle BQC - Area of quadrant BPC + Area of triangle ABC\n\n= 9$\\pi$ - 9$\\pi$ + 18 = 18",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98092)\n\n**Passage:**\nLet ABC be a right-angled isosceles triangle with hypotenuse BC. Let BQC be a semi-circle, away from A, with diameter BC. Let BPC be an arc of a circle centered at A and lying between BC and BQC. If AB has length 6 cm then the area, in sq cm, of the region enclosed by BPC and BQC is\n\n9 π − 18 9\\pi-18 9 π − 1 8\n\n18\n\n9 π 9\\pi 9 π\n\n9\n\nLet ABC be a right-angled isosceles triangle with hypotenuse BC. Let BQC be a semi-circle, away from A, with diameter BC. Let BPC be an arc of a circle centered at A and lying between BC and BQC. If AB has length 6 cm then the area, in sq cm, of the region enclosed by BPC and BQC is\n\n**Options:**\n- **A**. $9\\pi-18$\n- **B**. 18\n- **C**. $9\\pi$\n- **D**. 9\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2126",
+      "passage_text": "",
+      "question_text": "A and C are two points on the circle with centre O, and B is a point inside the circle. The length of AB is 6 cm, and the length of BC is 2 cm. The angle ABC is a right angle. If C,B and O lie on a straight line, find the square of the difference between the lengths of CA and OB",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2.65",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1.85",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2.82",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "2.25",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let A and C be two points on the circumference of the circle and B be a point in its interior\n\nTriangles ABC and ABO are right-angles triangles\n\nLet the radius of circle be 'r'\n\nIn triangle ABO,\n\n$\\left(r-2\\right)^2+36\\ =\\ r^2$\n\nSolving, we get r = 10 cm\n\nOB = 10-2 = 8 cm\n\nCA = $\\sqrt{\\ 36+4}=\\sqrt{\\ 40}$\n\nOB - CA = 8 - $\\sqrt{\\ 40}$ = 8 - 6.32 = 1.68\n\n$(1.68)^2$ = 2.82 \n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 3140)\n\n**Passage:**\nA and C are two points on the circle with centre O, and B is a point inside the circle. The length of AB is 6 cm, and the length of BC is 2 cm. The angle ABC is a right angle. If C,B and O lie on a straight line, find the square of the difference between the lengths of CA and OB\n\n2.65\n\n1.85\n\n2.82\n\n1.75\n\n2.25\n\nA and C are two points on the circle with centre O, and B is a point inside the circle. The length of AB is 6 cm, and the length of BC is 2 cm. The angle ABC is a right angle. If C,B and O lie on a straight line, find the square of the difference between the lengths of CA and OB\n\n**Options:**\n- **A**. 2.65\n- **B**. 1.85\n- **C**. 2.82\n- **D**. 1.75\n- **E**. 2.25\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2127",
+      "passage_text": "The area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines ∣ x − y ∣ − ∣ x − 5 ∣ = 2 \\mid x-y\\mid-\\mid x-5\\mid=2 ∣ x − y ∣ − ∣ x − 5 ∣ = 2 , is",
+      "question_text": "The area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines $\\mid x-y\\mid-\\mid x-5\\mid=2$, is",
+      "options": [],
+      "correct_option_data": "45",
+      "solution_text": "From the inequality and nature of x, and y, we get the given diagram:\n\nWe need to find the area of the quadrilateral ABDE = area of rectangle ABCD + area of triangle CDE\n\n=> Area of ABCD = (7-3)*5 = 20 units, and the area of triangle CDE = (1/2)*10*5 = 25 units.\n\nHence, the area of the quadrilateral ABDE = (20+25) = 45 units.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449565)\n\n**Passage:**\nThe area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines ∣ x − y ∣ − ∣ x − 5 ∣ = 2 \\mid x-y\\mid-\\mid x-5\\mid=2 ∣ x − y ∣ − ∣ x − 5 ∣ = 2 , is\n\nThe area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines $\\mid x-y\\mid-\\mid x-5\\mid=2$, is\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

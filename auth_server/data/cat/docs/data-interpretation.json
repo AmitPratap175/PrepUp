@@ -43037,6 +43037,146 @@
       "solution_text": "Let us assume, A is the total number of AC's sold\n\n=> From the information that the total number of ACs sold in the city, 25% were of Window variant => Window AC's = A/4 and Split AC's = 3A/4\n\nNow, let us assume B is the total number of inverter ACs \n\n=> From the information that among the Inverter ACs sold, 20% were of Window variant.=> Window Inverter AC's = B/5 and Window Non-Inverter AC's = 4B/5\n\nFrom - Condition-3\n\n=> A/4 - B/5 = 6 and 4B/5 = 36 => B = 46 and A = 60.\n\nNow, from condition-6\n\na) D1 & D4 sold \"0\" window Non-inverter ACs => D2 & D3 sold 6 window non-inverter ACs, it is given that D2 sold twice as many as D3 => D2 sold 4 and D3 sold 2 ACs of this type.\n\nFrom condition-2\n\nb) Let us assume, D1 sold \"x\" window inverter ACs => Number of split inverter ACs sold is 13-x\n\nFrom condition-4\n\nc) Number of split ACs sold by D1 will be \"2x\"\n\nFrom condition-5\n\nd) Let us assume 'y' is the number of window ACs sold by D3 & D4 => D2 sold 3y ACs of this type.\n\nFrom condition-7\n\ne) Let us assume 'z' is the number of split inverter ACs sold by D3 and D4 => D2 sold 2z ACs of this type.\n\nLet us use a, b, c, d, and e make a table:\n\nWe know that the total number of window ACs is 15\n\n=> x + 3y + y + y = 15 => x + 5y = 15, also x and y should be greater than or equal to 2 from condition-1\n\n=> x = 5 and y = 2 is the only solution.\n\nFilling this in the table:\n\nNow, Number of split inverter ACs is 36\n\n=> 8 + 2z + z + z = 36 => 4z = 28 => z = 7.\n\nFilling this and using (5), the number of split AC's sold by D1 is 2*5 = 10.\n\nIf D3 and D4 sold equal number of AC's, the table will look as follows:\n\nNumber of non-inverter ACs sold is 1 + 4 = 5",
       "image_url": "",
       "full_markdown": "### Question (qid: 449509)\n\n**Passage:**\nAn air conditioner (AC) company has four dealers - D1, D2, D3 and D4 in a city. It is evaluating sales performances of these dealers. The company sells two variants of ACs - Window and Split. Both these variants can be either Inverter type or Non-inverter type. It is known that of the total number of ACs sold in the city, 25% were of Window variant, while the rest were of Split variant. Among the Inverter ACs sold, 20% were of Window variant. The following information is also known: 1. Every dealer sold at least two window ACs. 2. D1 sold 13 inverter ACs, while D3 sold 5 Non-inverter ACs. 3. A total of six Window Non-inverter ACs and 36 Split Inverter ACs were sold in the city. 4. The number of Split ACs sold by D1 was twice the number of Window ACs sold by it. 5. D3 and D4 sold an equal number of Window ACs and this number was one-third of the number of similar ACs sold by D2. 6. D2 and D3 were the only ones who sold Window Non-inverter ACs. The number of these ACs sold by D2 was twice the number of these ACs sold by D3. 7. D3 and D4 sold an equal number of Split Inverter ACs. This number was half the number of similar ACs sold by D2.\n\nIf D3 and D4 sold an equal number of ACs, then what was the number of Non-inverter ACs sold by D2?\n\n**Options:**\n- **A**. 4\n- **B**. 5\n- **C**. 7\n- **D**. 6\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1515",
+      "passage_text": "Answer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.",
+      "question_text": "At what time does bus arrive at White cottage stop in round 2?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15:15",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "14:15",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14:30",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15:00",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let one round of the bus take ‘k’ hours. \nSo the second round of the bus will start after k+1 hours. \nIn the second round, the bus doesn’t stop at James park. So the time taken to complete round two will be k-1 hours.\nSo round three will start (k + 1) + (k -1) + 1 = 2k+1 hours after round 1 has started. \nIn the third round, the bus doesn’t stop at stop Blue water. So the time taken to complete round three will be k-1 hours. \nSo round four will start (2k + 1) + (k -1) + 1 = 3k + 1 hours after round 1 has started. \nThus, the total time required to complete three rounds is 3k hours. \nSince, the total time taken in each round is less than 10 hours, time from 4:00 to 1:00 (start of round 1 to end of round 3) must be 21 hours. \nHence 3k = 21 hours\nThus k = 7 hours, i.e. time required to complete 1 round is 7 hours. \nIn round 4 we see the after the bus leaves South town at 2:00 it reaches James park at 3:30. Thus the time required from South town to James park is 1.5 hours. \nThus, in round 1 bus departs from James park at 6:30 and reach White cottage at 8:15. Thus it takes 45 mins for the bus to travel from James park stop to White cottage stop. \nThus, in round 4 bus departs from the White cottage at 6:15 and reaches Blue water at 7:00. Thus bus takes 45 mins to travel from White cottage to Blue water. Now we can complete the entire table as we know the travel tie between the stops. We get,\n\nThus round 4 will be completed at 9:00.\nHence option B is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/di_1.PNG",
+      "full_markdown": "### Question (qid: 84463)\n\n**Passage:**\nAnswer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.\n\nAt what time does bus arrive at White cottage stop in round 2?\n\n**Options:**\n- **A**. 15:15\n- **B**. 14:15\n- **C**. 14:30\n- **D**. 15:00\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1516",
+      "passage_text": "Answer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.",
+      "question_text": "How much time does bus take to reach South town stop once it departs from Blue water stop?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2 hours",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1 hour 30 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "45 minutes",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1 hour",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let one round of the bus take ‘k’ hours.  \n\nSo the second round of the bus will start after k+1 hours.\n\nIn the second round, the bus doesn’t stop at James park. So the time taken to complete round two will be k-1 hours. \n\nSo round three will start (k + 1) + (k -1) + 1 = 2k+1 hours after round 1 has started.  \n\nIn the third round, the bus doesn’t stop at stop Blue water. So the time taken to complete round three will be k-1 hours.  \n\nSo round four will start (2k + 1) + (k -1) + 1 = 3k + 1 hours after round 1 has started.  \n\nThus, the total time required to complete three rounds is 3k hours.  \n\nSince, the total time taken in each round is less than 10 hours, time from 4:00 to 1:00 (start of round 1 to end of round 3) must be 21 hours. \n\nHence 3k = 21 hours Thus k = 7 hours, i.e. time required to complete 1 round is 7 hours.  \n\nIn round 4 we see the after the bus leaves South town at 2:00 it reaches James park at 3:30. \n\nThus the time required from South town to James park is 1.5 hours. \n\nThus, in round 1 bus departs from James park at 6:30 and reach White cottage at 8:15. \n\nThus it takes 45 mins for the bus to travel from James park stop to White cottage stop.\n\nThus, in round 4 bus departs from the White cottage at 6:15 and reaches Blue water at 7:00. \n\nThus bus takes 45 mins to travel from White cottage to Blue water. Now we can complete the entire table as we know the travel tie between the stops. We get,\n\nThus round 4 will be completed at 9:00.\n\nHence option D is the right choice.",
+      "image_url": "https://cracku.in/media/uploads/di_1.PNG",
+      "full_markdown": "### Question (qid: 84464)\n\n**Passage:**\nAnswer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.\n\nHow much time does bus take to reach South town stop once it departs from Blue water stop?\n\n**Options:**\n- **A**. 2 hours\n- **B**. 1 hour 30 minutes\n- **C**. 45 minutes\n- **D**. 1 hour\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1517",
+      "passage_text": "Answer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.",
+      "question_text": "At what time does bus depart from James park stop in round 3?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "22:30",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "21:30",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "22",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let one round of the bus take ‘k’ hours.  \n\nSo the second round of the bus will start after k+1 hours.\n\nIn the second round, the bus doesn’t stop at James park. So the time taken to complete round two will be k-1 hours. \n\nSo round three will start (k + 1) + (k -1) + 1 = 2k+1 hours after round 1 has started.  \n\nIn the third round, the bus doesn’t stop at stop Blue water. So the time taken to complete round three will be k-1 hours.  \n\nSo round four will start (2k + 1) + (k -1) + 1 = 3k + 1 hours after round 1 has started.  \n\nThus, the total time required to complete three rounds is 3k hours.  \n\nSince, the total time taken in each round is less than 10 hours, time from 4:00 to 1:00 (start of round 1 to end of round 3) must be 21 hours. \n\nHence 3k = 21 hours Thus k = 7 hours, i.e. time required to complete 1 round is 7 hours.  \n\nIn round 4 we see the after the bus leaves South town at 2:00 it reaches James park at 3:30. \n\nThus the time required from South town to James park is 1.5 hours. \n\nThus, in round 1 bus departs from James park at 6:30 and reach White cottage at 8:15. \n\nThus it takes 45 mins for the bus to travel from James park stop to White cottage stop.\n\nThus, in round 4 bus departs from the White cottage at 6:15 and reaches Blue water at 7:00. \n\nThus bus takes 45 mins to travel from White cottage to Blue water. Now we can complete the entire table as we know the travel tie between the stops. We get,\n\nThus round 4 will be completed at 9:00.\n\nHence option C is correct.",
+      "image_url": "https://cracku.in/media/uploads/di_1.PNG",
+      "full_markdown": "### Question (qid: 84465)\n\n**Passage:**\nAnswer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.\n\nAt what time does bus depart from James park stop in round 3?\n\n**Options:**\n- **A**. 20\n- **B**. 22:30\n- **C**. 21:30\n- **D**. 22\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1518",
+      "passage_text": "Answer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.",
+      "question_text": "If the bus stops at stop White cottage for 10 minutes more than usual time and stops at stop James park 15 minutes less than usual time, then at what time will bus complete round 2?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "18:05",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "17:55",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "19:05",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "18:55",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let one round of the bus take ‘k’ hours.  \n\nSo the second round of the bus will start after k+1 hours.\n\nIn the second round, the bus doesn’t stop at James park. So the time taken to complete round two will be k-1 hours. \n\nSo round three will start (k + 1) + (k -1) + 1 = 2k+1 hours after round 1 has started.  \n\nIn the third round, the bus doesn’t stop at stop Blue water. So the time taken to complete round three will be k-1 hours.  \n\nSo round four will start (2k + 1) + (k -1) + 1 = 3k + 1 hours after round 1 has started.  \n\nThus, the total time required to complete three rounds is 3k hours.  \n\nSince, the total time taken in each round is less than 10 hours, time from 4:00 to 1:00 (start of round 1 to end of round 3) must be 21 hours. \n\nHence 3k = 21 hours\nThus k = 7 hours, i.e. time required to complete 1 round is 7 hours.  \n\nIn round 4 we see the after the bus leaves South town at 2:00 it reaches James park at 3:30. \n\nThus the time required from South town to James park is 1.5 hours. \n\nThus, in round 1 bus departs from James park at 6:30 and reach White cottage at 8:15. \n\nThus it takes 45 mins for the bus to travel from James park stop to White cottage stop.\n\nThus, in round 4 bus departs from the White cottage at 6:15 and reaches Blue water at 7:00. \n\nThus bus takes 45 mins to travel from White cottage to Blue water. Now we can complete the entire table as we know the travel tie between the stops. We get,\n\nThus round 4 will be completed at 9:00.\n\nIn completing 2 rounds, bus stops at stop White cottage twice and stops at James park once. \n\nSo change in time required to complete round 2 = (2 * 10) + (-15) = 5 minutes more.\nThus at 18:05 the bus will complete round 2. \nHence option A is the correct choice.",
+      "image_url": "https://cracku.in/media/uploads/di_1.PNG",
+      "full_markdown": "### Question (qid: 84466)\n\n**Passage:**\nAnswer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.\n\nIf the bus stops at stop White cottage for 10 minutes more than usual time and stops at stop James park 15 minutes less than usual time, then at what time will bus complete round 2?\n\n**Options:**\n- **A**. 18:05\n- **B**. 17:55\n- **C**. 19:05\n- **D**. 18:55\n\n**Correct Answer:** null"
     }
   ]
 }
