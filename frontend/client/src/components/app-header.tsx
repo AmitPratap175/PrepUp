@@ -63,6 +63,16 @@ const navigation = [
       { title: "Badges", href: "/badges" },
     ]
   },
+  {
+    title: "UPSC",
+    href: "#",
+    items: [
+      { title: "Daily MCQs", href: "/upsc" },
+      { title: "UPSC Courses", href: "/courses?exam=upsc" },
+      { title: "Mock Tests", href: "/mock-tests?exam=upsc" },
+      { title: "Study Materials", href: "/study-materials?exam=upsc" },
+    ]
+  },
   { title: "Leaderboard", href: "/leaderboard" },
   { title: "About Us", href: "/about" },
   { title: "Contact", href: "/contact" },

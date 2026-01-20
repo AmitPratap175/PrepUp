@@ -233,6 +233,13 @@ class MemStorage:
                 "subject": "General Knowledge",
                 "duration": 30,
                 "filePath": "data/xat/current_affairs_gk.json"
+            },
+            {
+                "title": "UPSC Daily Current Affairs MCQs",
+                "examType": "upsc",
+                "subject": "Current Affairs",
+                "duration": 15,
+                "filePath": "data/upsc/daily-mcqs.json"
             }
         ]
 

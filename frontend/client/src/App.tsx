@@ -46,6 +46,8 @@ import DailyTargetsSettingsPage from "@/pages/daily-targets/settings";
 import DailyTargetTestInterface from "@/pages/daily-targets/test-interface";
 import DailyTargetRevision from "@/pages/daily-targets/revision";
 import DailyTargetResultPage from "@/pages/daily-targets/result";
+import UPSCPage from "@/pages/upsc";
+import UPSCQuizPage from "@/pages/upsc/quiz";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -102,6 +104,8 @@ function Router() {
       <Route path="/daily-targets/test/:subject" component={DailyTargetTestInterface} />
       <Route path="/daily-targets/result/:targetId" component={DailyTargetResultPage} />
       <Route path="/daily-targets/revision" component={DailyTargetRevision} />
+      <Route path="/upsc" component={UPSCPage} />
+      <Route path="/upsc/test/:id" component={UPSCQuizPage} />
       <Route component={NotFound} />
     </Switch>
   );
