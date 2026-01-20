@@ -23,17 +23,17 @@ interface TestResultInterfaceProps {
   onReturnToDashboard?: () => void;
 }
 
-export default function TestResultInterface({ 
-    test, 
-    userAnswers,
-    score,
-    accuracy,
-    timeTaken,
-    attemptedQuestions,
-    totalQuestions,
-    correctAnswers,
-    incorrectAnswers,
-    onReturnToDashboard
+export default function TestResultInterface({
+  test,
+  userAnswers,
+  score,
+  accuracy,
+  timeTaken,
+  attemptedQuestions,
+  totalQuestions,
+  correctAnswers,
+  incorrectAnswers,
+  onReturnToDashboard
 }: TestResultInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -79,7 +79,7 @@ export default function TestResultInterface({
       navigateToQuestion(currentQuestionIndex - 1);
     }
   };
-  
+
   const getUserAnswerForCurrentQuestion = () => {
     return userAnswers[currentQuestion?.qid];
   };
@@ -88,33 +88,33 @@ export default function TestResultInterface({
     <div className="flex flex-col h-screen bg-background">
       <div className="bg-muted/50 p-4 border-b border-border flex items-center gap-4">
         <div className="flex-1 min-w-0">
-            <h3 className="text-base sm:text-lg font-bold text-foreground truncate">{test.title} - Results</h3>
-            <p className="text-xs sm:text-sm text-muted-foreground truncate">{test.subject} Section</p>
+          <h3 className="text-base sm:text-lg font-bold text-foreground truncate">{test.title} - Results</h3>
+          <p className="text-xs sm:text-sm text-muted-foreground truncate">{test.subject} Section</p>
         </div>
         <div className="flex items-center gap-4">
-            <div>
-                <p className="text-sm text-muted-foreground">Score</p>
-                <p className="text-lg font-bold">{score}</p>
-            </div>
-            <div>
-                <p className="text-sm text-muted-foreground">Accuracy</p>
-                <p className="text-lg font-bold">{accuracy.toFixed(2)}%</p>
-            </div>
-            <div>
-                <p className="text-sm text-muted-foreground">Time Taken</p>
-                <p className="text-lg font-bold">{timeTaken}</p>
-            </div>
+          <div>
+            <p className="text-sm text-muted-foreground">Score</p>
+            <p className="text-lg font-bold">{score}</p>
+          </div>
+          <div>
+            <p className="text-sm text-muted-foreground">Accuracy</p>
+            <p className="text-lg font-bold">{accuracy.toFixed(2)}%</p>
+          </div>
+          <div>
+            <p className="text-sm text-muted-foreground">Time Taken</p>
+            <p className="text-lg font-bold">{timeTaken}</p>
+          </div>
         </div>
         <div className="w-1/4">
-            <Progress value={(attemptedQuestions / totalQuestions) * 100} />
-            <div className="flex justify-between text-xs text-muted-foreground mt-1">
-                <span>
-                Attempted: {attemptedQuestions}/{totalQuestions}
-                </span>
-                <span>
-                Correct: {correctAnswers} | Incorrect: {incorrectAnswers}
-                </span>
-            </div>
+          <Progress value={(attemptedQuestions / totalQuestions) * 100} />
+          <div className="flex justify-between text-xs text-muted-foreground mt-1">
+            <span>
+              Attempted: {attemptedQuestions}/{totalQuestions}
+            </span>
+            <span>
+              Correct: {correctAnswers} | Incorrect: {incorrectAnswers}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -123,9 +123,8 @@ export default function TestResultInterface({
           variant="outline"
           size="icon"
           onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${
-            isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
-          }`}
+          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
+            }`}
         >
           {isPaletteVisible ? <PanelLeftClose className="h-4 w-4" /> : <PanelRightClose className="h-4 w-4" />}
         </Button>
@@ -137,11 +136,11 @@ export default function TestResultInterface({
                 const status = getQuestionStatus(index);
                 let bgClass = 'bg-gray-400 text-white'; // Not Answered
                 if (status.isCurrent) {
-                    bgClass = 'bg-primary text-primary-foreground';
+                  bgClass = 'bg-primary text-primary-foreground';
                 } else if (status.isCorrect === true) {
-                    bgClass = 'bg-green-500 text-white';
+                  bgClass = 'bg-green-500 text-white';
                 } else if (status.isCorrect === false) {
-                    bgClass = 'bg-red-500 text-white';
+                  bgClass = 'bg-red-500 text-white';
                 }
 
                 return (
@@ -197,12 +196,12 @@ export default function TestResultInterface({
                     const userAnswer = getUserAnswerForCurrentQuestion();
                     const isSelected = userAnswer === option.data_option;
                     const isCorrect = option.is_correct;
-                    
+
                     let bgClass = '';
                     if (isCorrect) {
-                        bgClass = 'bg-green-100 border-green-500';
+                      bgClass = 'bg-green-100 border-green-500';
                     } else if (isSelected && !isCorrect) {
-                        bgClass = 'bg-red-100 border-red-500';
+                      bgClass = 'bg-red-100 border-red-500';
                     }
 
                     return (
@@ -222,13 +221,13 @@ export default function TestResultInterface({
               {currentQuestion?.explanation && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg">
                   <h4 className="font-semibold mb-2">Explanation</h4>
-                  <div className="prose max-w-none"><Latex>{currentQuestion?.explanation}</Latex></div>
+                  <div className="prose max-w-none dark:prose-invert text-foreground"><Latex>{currentQuestion?.explanation}</Latex></div>
                 </div>
               )}
               {currentQuestion?.solution_text && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg">
                   <h4 className="font-semibold mb-2">Solution</h4>
-                  <div className="prose max-w-none"><Latex>{currentQuestion?.solution_text}</Latex></div>
+                  <div className="prose max-w-none dark:prose-invert text-foreground"><Latex>{currentQuestion?.solution_text}</Latex></div>
                 </div>
               )}
             </div>

@@ -352,23 +352,13 @@ export function DailyTargetInterface({
     };
 
     const getOptionClassName = (option: any) => {
-        if (!submittedAnswers.has(currentQuestion?.qid)) return 'hover:bg-accent';
-
-        const isCorrect = option.is_correct;
         const isSelected = answers[currentQuestion?.qid] === option.data_option;
-
-        if (isCorrect) return 'bg-green-200 border-green-500';
-        if (isSelected && !isCorrect) return 'bg-red-200 border-red-500';
+        if (isSelected) return 'bg-primary/20 border-primary';
         return 'hover:bg-accent';
     };
 
     const getTextInputClassName = () => {
-        if (!submittedAnswers.has(currentQuestion?.qid)) return 'bg-input';
-
-        const userAnswer = answers[currentQuestion?.qid];
-        const correctAnswer = currentQuestion.correct_option_data || currentQuestion.solution_text;
-
-        return userAnswer === correctAnswer ? 'bg-green-200 border-green-500' : 'bg-red-200 border-red-500';
+        return 'bg-input';
     };
 
     const handleClosePopup = () => {
@@ -537,9 +527,7 @@ export function DailyTargetInterface({
                                         className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${index === currentQuestionIndex
                                             ? 'bg-primary text-primary-foreground'
                                             : isAnswered
-                                                ? isCorrect
-                                                    ? 'bg-green-500 text-white'
-                                                    : 'bg-red-500 text-white'
+                                                ? 'bg-blue-500 text-white'
                                                 : 'bg-card border border-border text-foreground hover:bg-accent'
                                             }`}
                                         data-testid={`question-nav-${index + 1}`}
@@ -678,18 +666,6 @@ export function DailyTargetInterface({
                                     </div>
                                 )}
                             </div>
-                            {submittedAnswers.has(currentQuestion?.qid) && (
-                                <div className="mt-4 p-4 rounded-lg bg-muted/50">
-                                    <h4 className="font-semibold text-foreground mb-2">Solution</h4>
-                                    <div className="prose max-w-none text-foreground leading-relaxed preserve-whitespace">
-                                        <Latex>
-                                            {currentQuestion?.options.length === 0
-                                                ? `${currentQuestion?.correct_option_data || ''}${currentQuestion?.solution_text ? `${currentQuestion?.solution_text}` : ''}` || "No solution provided."
-                                                : currentQuestion?.solution_text || "No solution provided."}
-                                        </Latex>
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     </div>
 

@@ -287,6 +287,9 @@ class UserDailySettings(models.Model):
     varc_questions = models.IntegerField(default=5)
     dilr_questions = models.IntegerField(default=5)
     qa_questions = models.IntegerField(default=5)
+    varc_offset = models.IntegerField(default=0)
+    dilr_offset = models.IntegerField(default=0)
+    qa_offset = models.IntegerField(default=0)
     time_per_question = models.IntegerField(default=120, help_text="Time in seconds per question")
 
     def __str__(self):

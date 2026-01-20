@@ -1648,7 +1648,7 @@ class DailyTargetView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
-    def _get_random_questions(self, subject, count):
+    def _get_linear_questions(self, subject, count, offset=0):
         all_questions = []
         
         # Collect questions from practice tests
@@ -1662,12 +1662,16 @@ class DailyTargetView(APIView):
             if subject.lower() in test['subject'].lower() or test['subject'].lower() in subject.lower():
                 all_questions.extend(test.get('questions', []))
                 
-        # If we have questions, sample them
+        # If we have questions, slice them linearly
         if all_questions:
-            # removing duplicates based on question text or id if possible? 
-            # For now just sample
-            count = min(len(all_questions), count)
-            return random.sample(all_questions, count)
+            total = len(all_questions)
+            start_index = offset % total
+            
+            questions = []
+            for i in range(count):
+                questions.append(all_questions[(start_index + i) % total])
+            
+            return questions
         
         return []
 
@@ -1716,23 +1720,30 @@ class DailyTargetView(APIView):
                 # Try to find questions for mapped subjects
                 possible_subjects = subject_mapping.get(key, [key])
                 
-                # Helper to find matched subject string in storage
-                # Actually _get_random_questions does loose matching
+                # Get current offset for this subject
+                offset_field = {
+                    'VARC': 'varc_offset',
+                    'DILR': 'dilr_offset',
+                    'Quantitative Aptitude': 'qa_offset'
+                }.get(key)
                 
-                # We need to pick one "canonical" subject to search for, or iterate
-                # Let's try searching for the key itself first, implementation of _get_random_questions handles partial match
-                questions = self._get_random_questions(key, count)
+                current_offset = getattr(settings, offset_field, 0) if offset_field else 0
                 
-                # If no questions found with key, try mapped check inside _get_random_questions logic? 
-                # Let's loop mapping if empty
+                questions = self._get_linear_questions(key, count, offset=current_offset)
+                
                 if not questions:
                     for sub in possible_subjects:
-                        questions = self._get_random_questions(sub, count)
+                        questions = self._get_linear_questions(sub, count, offset=current_offset)
                         if questions:
                             break
                             
                 target.questions = questions
                 target.save()
+
+                # Update offset in settings
+                if offset_field and questions:
+                    setattr(settings, offset_field, current_offset + len(questions))
+                    settings.save()
 
             # Check for sessions
             test_id = f"daily-target-{target.subject}-{target.date}"
@@ -1832,25 +1843,42 @@ class DailyTargetSubmitView(APIView):
         target.score = score
         target.save()
 
-        # Scheduling logic
+        # Scheduling logic & Correctness calculation
         today = datetime.now(timezone.utc).date()
+        processed_answers = []
+        correct_count = 0
         
         for ans in answers:
-            if not ans.get('isCorrect'):
+            question_id = ans.get('questionId')
+            selected = ans.get('selectedAnswer')
+            
+            # Find question in target
+            question_data = next((q for q in target.questions if str(q.get('qid', q.get('id'))) == str(question_id)), None)
+            
+            is_correct = False
+            if question_data:
+                # Check for various forms of correct answer storage
+                correct_val = question_data.get('correct_option_data') or question_data.get('correct_answer')
+                if not correct_val:
+                    # Fallback: check options for is_correct
+                    options = question_data.get('options', [])
+                    correct_opt = next((o for o in options if o.get('is_correct')), None)
+                    if correct_opt:
+                        correct_val = correct_opt.get('data_option')
+                
+                if selected == correct_val:
+                    is_correct = True
+                    correct_count += 1
+            
+            ans['isCorrect'] = is_correct
+            processed_answers.append(ans)
+
+            if not is_correct:
                 # Schedule for revision
-                # Create RevisionSchedule or update existing?
-                # If question already scheduled, what to do? Reset?
-                # Let's create new or reset.
-                
-                # Need question data. 
-                # Ideally 'answers' payload should contain full question or we seek (slow)
-                # Or we look into target.questions
-                question_data = next((q for q in target.questions if str(q.get('id', q.get('qid'))) == str(ans.get('questionId'))), None)
-                
                 if question_data:
                     RevisionSchedule.objects.update_or_create(
                         user=request.user,
-                        question_id=ans.get('questionId'),
+                        question_id=question_id,
                         defaults={
                             'question_data': question_data,
                             'subject': target.subject,
@@ -1861,7 +1889,6 @@ class DailyTargetSubmitView(APIView):
 
         # Finalize TestSession
         test_id = f"daily-target-{target.subject}-{target.date}"
-        correct_count = sum(1 for a in answers if a.get('isCorrect'))
         
         session = TestSession.objects.filter(
             user=request.user,
@@ -1871,7 +1898,7 @@ class DailyTargetSubmitView(APIView):
 
         if session:
             session.score = score
-            session.answers = answers
+            session.answers = processed_answers
             session.correct_answers = correct_count
             session.status = 'completed'
             session.current_question_index = len(target.questions)
@@ -1888,7 +1915,7 @@ class DailyTargetSubmitView(APIView):
                 correct_answers=correct_count,
                 max_score=total_questions * 3,
                 total_questions=total_questions,
-                answers=answers,
+                answers=processed_answers,
                 status='completed',
                 current_question_index=total_questions,
                 start_time=datetime.now(timezone.utc),

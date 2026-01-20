@@ -103,15 +103,18 @@ export default function DailyTargetResultPage() {
         id: resultData.targetId,
         title: `${resultData.subject} Daily Target Result`,
         subject: resultData.subject,
-        questions: resultData.questions.map((q: any) => ({
-            ...q,
-            options: q.options.map((opt: any) => ({
-                ...opt,
-                is_correct: opt.data_option === q.correct_answer
-            })),
-            correct_option_data: q.correct_answer,
-            solution_text: q.explanation
-        }))
+        questions: resultData.questions.map((q: any) => {
+            const correctVal = q.correct_answer || q.correct_option_data || q.options?.find((o: any) => o.is_correct)?.data_option;
+            return {
+                ...q,
+                options: q.options?.map((opt: any) => ({
+                    ...opt,
+                    is_correct: opt.data_option === correctVal
+                })) || [],
+                correct_option_data: correctVal,
+                solution_text: q.explanation || q.solution_text
+            };
+        })
     };
 
     return (
