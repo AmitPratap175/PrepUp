@@ -80,8 +80,10 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion?.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
 
+  const lastAnswersRef = useRef<string>("");
+
   useEffect(() => {
-    if (onProgressUpdate) {
+    if (onProgressUpdate && questions) {
       const userAnswers: UserAnswer[] = questions
         .filter(q => q) // Filter out undefined questions
         .map(question => ({
@@ -90,7 +92,12 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           timeSpent: 0, // This can be enhanced later
           isMarkedForReview: bookmarkedQuestions.has(question?.qid),
         }));
-      onProgressUpdate(userAnswers);
+
+      const currentAnswersStr = JSON.stringify(userAnswers);
+      if (currentAnswersStr !== lastAnswersRef.current) {
+        lastAnswersRef.current = currentAnswersStr;
+        onProgressUpdate(userAnswers);
+      }
     }
   }, [answers, onProgressUpdate, questions, bookmarkedQuestions]);
 
@@ -525,12 +532,12 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
                     key={index}
                     onClick={() => navigateToQuestion(index)}
                     className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${index === currentQuestionIndex
-                        ? 'bg-primary text-primary-foreground'
-                        : isAnswered
-                          ? isCorrect
-                            ? 'bg-green-500 text-white'
-                            : 'bg-red-500 text-white'
-                          : 'bg-card border border-border text-foreground hover:bg-accent'
+                      ? 'bg-primary text-primary-foreground'
+                      : isAnswered
+                        ? isCorrect
+                          ? 'bg-green-500 text-white'
+                          : 'bg-red-500 text-white'
+                        : 'bg-card border border-border text-foreground hover:bg-accent'
                       }`}
                     data-testid={`question-nav-${index + 1}`}
                   >

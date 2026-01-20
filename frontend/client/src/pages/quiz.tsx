@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useLocation, Redirect } from "wouter";
 import { AppHeader } from "@/components/app-header";
@@ -153,7 +153,7 @@ export default function QuizPage() {
     });
   };
 
-  const handleProgressUpdate = (answers: UserAnswer[]) => {
+  const handleProgressUpdate = useCallback((answers: UserAnswer[]) => {
     if (!sessionId || !currentTest) return;
 
     const questions_attempted = answers.filter(a => a.selectedAnswer !== null).length;
@@ -168,15 +168,17 @@ export default function QuizPage() {
       subject: currentTest.subject,
       questions_attempted
     });
-  };
+  }, [sessionId, currentTest, updateSessionMutation, updateProgressMutation]);
 
-  const handleSubmit = (answers: UserAnswer[]) => {
+  const handleSubmit = useCallback((answers: UserAnswer[]) => {
     if (!currentTest || !sessionId) return;
 
     const correctAnswers = answers.filter(answer => {
-      const question = currentTest.questions.find(q => q.qid === answer.questionId);
+      const questions = currentTest.questions as any[] || [];
+      const question = questions.find((q: any) => q.qid === answer.questionId);
       if (!question) return false;
-      const correctOption = question.options.find(o => o.is_correct);
+      const options = question.options as any[] || [];
+      const correctOption = options.find((o: any) => o.is_correct);
       return correctOption && correctOption.data_option === answer.selectedAnswer;
     }).length;
 
@@ -189,21 +191,22 @@ export default function QuizPage() {
     });
 
     handleExitQuiz();
-  };
+  }, [currentTest, sessionId, updateSessionMutation]);
 
-  const handleExitQuiz = () => {
+  const handleExitQuiz = useCallback(() => {
     setQuizStarted(false);
     setSelectedTestId(null);
     setSessionId(null);
     setLocation("/quiz");
-  };
+  }, [setLocation]);
 
-  const navigateToQuestion = (questionIndex: number) => {
-    if (questionIndex >= 0 && currentTest && questionIndex < currentTest.questions.length) {
+  const navigateToQuestion = useCallback((questionIndex: number) => {
+    const questions = currentTest?.questions as any[] || [];
+    if (questionIndex >= 0 && currentTest && questionIndex < questions.length) {
       setCurrentQuestionIndex(questionIndex);
       updateLastQuestion(questionIndex);
     }
-  };
+  }, [currentTest]);
 
   if (!isAuthenticated) {
     return <Redirect to="/login" />;
