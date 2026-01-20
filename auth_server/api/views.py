@@ -1823,6 +1823,25 @@ class DailyTargetStartView(APIView):
         })
 
 
+class DailyTargetRegenerateView(APIView):
+    """
+    Deletes today's daily targets to force regeneration on next fetch.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+        
+        # Delete today's targets
+        deleted_count, _ = DailyTarget.objects.filter(user=user, date=today).delete()
+        
+        return Response({
+            'status': 'success',
+            'message': f'Deleted {deleted_count} targets for today. They will be regenerated on refresh.'
+        })
+
+
 class DailyTargetSubmitView(APIView):
     """
     Handles submission of daily target results.

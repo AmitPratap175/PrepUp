@@ -6,9 +6,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, Calendar, Repeat, ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Loader2, Calendar, Repeat, ArrowRight, CheckCircle2, AlertCircle, RefreshCcw } from 'lucide-react';
 import { useLocation } from "wouter";
 import { format } from 'date-fns';
+
+import { useToast } from "@/hooks/use-toast";
 
 interface DailyTarget {
     id: string;
@@ -35,6 +37,8 @@ interface RevisionItem {
 const DailyTargetsPage: React.FC = () => {
     const [, setLocation] = useLocation();
     const queryClient = useQueryClient();
+    const { toast } = useToast();
+    const [isRegenerating, setIsRegenerating] = useState(false);
 
     const { data: targets, isLoading: isLoadingTargets } = useQuery<DailyTarget[]>({
         queryKey: ['daily-targets'],
@@ -99,6 +103,39 @@ const DailyTargetsPage: React.FC = () => {
         setLocation(`/daily-targets/revision`);
     };
 
+    const handleRegenerate = async () => {
+        if (!confirm("Are you sure you want to regenerate today's targets? This will delete your current progress for today and generate new questions based on your settings.")) {
+            return;
+        }
+
+        setIsRegenerating(true);
+        try {
+            const response = await fetch('/api/daily-targets/regenerate/', {
+                method: 'POST',
+                headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+            });
+
+            if (response.ok) {
+                toast({
+                    title: "Success",
+                    description: "Daily targets regenerated successfully.",
+                });
+                queryClient.invalidateQueries({ queryKey: ['daily-targets'] });
+            } else {
+                throw new Error('Failed to regenerate targets');
+            }
+        } catch (error) {
+            console.error("Error regenerating targets:", error);
+            toast({
+                title: "Error",
+                description: "Failed to regenerate targets.",
+                variant: "destructive",
+            });
+        } finally {
+            setIsRegenerating(false);
+        }
+    };
+
     return (
         <div className="min-h-screen bg-background">
             <AppHeader />
@@ -111,9 +148,20 @@ const DailyTargetsPage: React.FC = () => {
                         </h1>
                         <p className="text-muted-foreground">Stay consistent and track your progress daily.</p>
                     </div>
-                    <Button variant="outline" onClick={() => setLocation('/daily-targets/settings')} className="flex items-center gap-2">
-                        <Repeat className="h-4 w-4" /> Settings
-                    </Button>
+                    <div className="flex gap-2">
+                        <Button
+                            variant="outline"
+                            onClick={handleRegenerate}
+                            disabled={isRegenerating}
+                            className="flex items-center gap-2"
+                        >
+                            {isRegenerating ? <Loader2 className="h-4 w-4 animate-spin" /> : <RefreshCcw className="h-4 w-4" />}
+                            Regenerate
+                        </Button>
+                        <Button variant="outline" onClick={() => setLocation('/daily-targets/settings')} className="flex items-center gap-2">
+                            <Repeat className="h-4 w-4" /> Settings
+                        </Button>
+                    </div>
                 </div>
                 <div className="max-w-4xl mx-auto">
 
