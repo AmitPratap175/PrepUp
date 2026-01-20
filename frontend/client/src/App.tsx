@@ -41,6 +41,11 @@ import LeaderboardPage from "@/pages/leaderboard";
 import AnalyticsDashboardPage from "@/pages/analytics-dashboard";
 import BadgesPage from "@/pages/badges";
 import XatEssayPage from "@/pages/xat-essay";
+import DailyTargetsPage from "@/pages/daily-targets";
+import DailyTargetsSettingsPage from "@/pages/daily-targets/settings";
+import DailyTargetTestInterface from "@/pages/daily-targets/test-interface";
+import DailyTargetRevision from "@/pages/daily-targets/revision";
+import DailyTargetResultPage from "@/pages/daily-targets/result";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -90,7 +95,13 @@ function Router() {
       <Route path="/leaderboard" component={LeaderboardPage} />
       <Route path="/analytics" component={AnalyticsDashboardPage} />
       <Route path="/badges" component={BadgesPage} />
+      <Route path="/badges" component={BadgesPage} />
       <Route path="/xat-essay" component={XatEssayPage} />
+      <Route path="/daily-targets" component={DailyTargetsPage} />
+      <Route path="/daily-targets/settings" component={DailyTargetsSettingsPage} />
+      <Route path="/daily-targets/test/:subject" component={DailyTargetTestInterface} />
+      <Route path="/daily-targets/result/:targetId" component={DailyTargetResultPage} />
+      <Route path="/daily-targets/revision" component={DailyTargetRevision} />
       <Route component={NotFound} />
     </Switch>
   );

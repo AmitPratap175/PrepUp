@@ -28,6 +28,7 @@ const navigation = [
       { title: "Analytics", href: "/analytics" },
       { title: "Badges", href: "/badges" },
       { title: "My Words", href: "/words" },
+      { title: "Daily Targets", href: "/daily-targets" },
     ]
   },
   {

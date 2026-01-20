@@ -15,6 +15,7 @@ class TestSession(models.Model):
     status = models.CharField(max_length=20, default='in-progress')
     subject = models.CharField(max_length=255, null=True, blank=True)
     max_score = models.IntegerField(null=True, blank=True)
+    current_question_index = models.IntegerField(default=0)
 
     def __str__(self):
         return f"Test Session {self.id} for {self.user.email}"
@@ -275,3 +276,60 @@ class EssayReview(models.Model):
     
     def __str__(self):
         return f'Review for {self.essay.title} - Score: {self.overall_score}'
+
+
+class UserDailySettings(models.Model):
+    """
+    Stores user preferences for daily targets.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='daily_settings')
+    varc_questions = models.IntegerField(default=5)
+    dilr_questions = models.IntegerField(default=5)
+    qa_questions = models.IntegerField(default=5)
+    time_per_question = models.IntegerField(default=120, help_text="Time in seconds per question")
+
+    def __str__(self):
+        return f"Daily Settings for {self.user.email}"
+
+
+class DailyTarget(models.Model):
+    """
+    Stores the generated daily questions for a user.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='daily_targets')
+    date = models.DateField()
+    subject = models.CharField(max_length=50)
+    questions = models.JSONField(help_text="List of question objects for this target")
+    is_completed = models.BooleanField(default=False)
+    score = models.IntegerField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user', 'date', 'subject')
+        ordering = ['-date']
+
+    def __str__(self):
+        return f"{self.subject} Target for {self.user.email} on {self.date}"
+
+
+class RevisionSchedule(models.Model):
+    """
+    Tracks questions scheduled for revision based on spaced repetition.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='revision_schedules')
+    question_id = models.CharField(max_length=255)
+    question_data = models.JSONField()
+    subject = models.CharField(max_length=50)
+    next_review_date = models.DateField()
+    review_interval = models.IntegerField(default=2, help_text="Days until next review (2, 4, 6)")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['next_review_date']
+
+    def __str__(self):
+        return f"Revision for {self.user.email} - {self.subject} (Due: {self.next_review_date})"

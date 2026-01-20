@@ -82,6 +82,17 @@ export function useGenerateEssayTopics() {
     });
 }
 
+export function useXATEssayQuestions() {
+    return useQuery<XATEssayQuestion[]>({
+        queryKey: ["xat-essay-questions"],
+        queryFn: async () => {
+            const res = await apiRequest("GET", "/api/essays/xat-questions/");
+            const data = await res.json();
+            return data.questions;
+        },
+    });
+}
+
 // --- Essay Hooks ---
 
 export function useEssays(status?: string) {

@@ -50,4 +50,12 @@ urlpatterns = [
     path('essays/<uuid:essay_id>/', views.EssayDetailView.as_view(), name='essay-detail'),
     path('essays/<uuid:essay_id>/submit/', views.EssaySubmitView.as_view(), name='essay-submit'),
     path('essays/<uuid:essay_id>/review/', views.EssayReviewView.as_view(), name='essay-review'),
+    # Daily Targets & Revision
+    path('daily-targets/settings/', views.UserDailySettingsView.as_view(), name='daily-targets-settings'),
+    path('daily-targets/', views.DailyTargetView.as_view(), name='daily-targets'),
+    path('daily-targets/start/', views.DailyTargetStartView.as_view(), name='daily-targets-start'),
+    path('daily-targets/submit/', views.DailyTargetSubmitView.as_view(), name='daily-targets-submit'),
+    path('daily-targets/reset/<str:subject>/', views.DailyTargetResetView.as_view(), name='daily-targets-reset'),
+    path('daily-targets/session-result/<uuid:session_id>/', views.DailyTargetSessionResultView.as_view(), name='daily-targets-session-result'),
+    path('revision/', views.RevisionView.as_view(), name='revision'),
 ]

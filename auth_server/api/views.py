@@ -363,12 +363,12 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .chatbot_service import invoke_agent
 from rest_framework import status
-from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
-from datetime import datetime, timezone
-from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress
-from datetime import datetime, timezone
+from .models import TestSession, UserQuizState, UserQuizGoal, UserQuizProgress, UserDailySettings, DailyTarget, RevisionSchedule
+from datetime import datetime, timezone, timedelta
 from .storage import storage
 from .services.question_generator import QuestionGenerator
+import random
+
 
 class ChatbotView(APIView):
     """
@@ -1605,3 +1605,438 @@ class EssayReviewView(APIView):
             'improvement_suggestions': review.improvement_suggestions,
             'reviewed_at': review.reviewed_at.isoformat()
         })
+
+
+class UserDailySettingsView(APIView):
+    """
+    Handles fetching and updating user's daily target settings.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        settings, created = UserDailySettings.objects.get_or_create(user=user)
+        return Response({
+            'varcQuestions': settings.varc_questions,
+            'dilrQuestions': settings.dilr_questions,
+            'qaQuestions': settings.qa_questions,
+            'timePerQuestion': settings.time_per_question,
+        })
+
+    def put(self, request):
+        user = request.user
+        data = request.data
+        settings, created = UserDailySettings.objects.get_or_create(user=user)
+
+        settings.varc_questions = data.get('varcQuestions', settings.varc_questions)
+        settings.dilr_questions = data.get('dilrQuestions', settings.dilr_questions)
+        settings.qa_questions = data.get('qaQuestions', settings.qa_questions)
+        settings.time_per_question = data.get('timePerQuestion', settings.time_per_question)
+        settings.save()
+
+        return Response({
+            'varcQuestions': settings.varc_questions,
+            'dilrQuestions': settings.dilr_questions,
+            'qaQuestions': settings.qa_questions,
+            'timePerQuestion': settings.time_per_question,
+        })
+
+
+class DailyTargetView(APIView):
+    """
+    Handles retrieving generated daily targets.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def _get_random_questions(self, subject, count):
+        all_questions = []
+        
+        # Collect questions from practice tests
+        for test in storage.get_practice_tests():
+             # Basic subject matching - can be improved
+            if subject.lower() in test['subject'].lower() or test['subject'].lower() in subject.lower():
+                all_questions.extend(test.get('questions', []))
+        
+        # Collect from sectionals
+        for test in storage.get_sectional_tests():
+            if subject.lower() in test['subject'].lower() or test['subject'].lower() in subject.lower():
+                all_questions.extend(test.get('questions', []))
+                
+        # If we have questions, sample them
+        if all_questions:
+            # removing duplicates based on question text or id if possible? 
+            # For now just sample
+            count = min(len(all_questions), count)
+            return random.sample(all_questions, count)
+        
+        return []
+
+    def get(self, request):
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+        date_str = request.query_params.get('date', str(today))
+        
+        try:
+            target_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+        except ValueError:
+            return Response({'error': 'Invalid date format'}, status=status.HTTP_400_BAD_REQUEST)
+
+        settings, _ = UserDailySettings.objects.get_or_create(user=user)
+        
+        subjects_config = {
+            'VARC': settings.varc_questions,
+            'DILR': settings.dilr_questions,
+            'Quantitative Aptitude': settings.qa_questions # Check exact subject names in storage
+        }
+        
+        # Map simplified keys to storage subject names if needed
+        # Assuming 'VARC', 'DILR', 'Quants' or similar are used. 
+        # Using a mapping based on observation of storage.py
+        subject_mapping = {
+            'VARC': ['VARC', 'Verbal', 'English'],
+            'DILR': ['DILR', 'Data Interpretation', 'Logical Reasoning'],
+            'Quantitative Aptitude': ['Quants', 'Quantitative', 'Math']
+        }
+
+        response_data = []
+
+        for key, count in subjects_config.items():
+            # Check for existing target
+            target, created = DailyTarget.objects.get_or_create(
+                user=user,
+                date=target_date,
+                subject=key,
+                defaults={'questions': []}
+            )
+
+            if created or not target.questions:
+                # Generate questions
+                # Find matching subject in storage
+                questions = []
+                # Try to find questions for mapped subjects
+                possible_subjects = subject_mapping.get(key, [key])
+                
+                # Helper to find matched subject string in storage
+                # Actually _get_random_questions does loose matching
+                
+                # We need to pick one "canonical" subject to search for, or iterate
+                # Let's try searching for the key itself first, implementation of _get_random_questions handles partial match
+                questions = self._get_random_questions(key, count)
+                
+                # If no questions found with key, try mapped check inside _get_random_questions logic? 
+                # Let's loop mapping if empty
+                if not questions:
+                    for sub in possible_subjects:
+                        questions = self._get_random_questions(sub, count)
+                        if questions:
+                            break
+                            
+                target.questions = questions
+                target.save()
+
+            # Check for sessions
+            test_id = f"daily-target-{target.subject}-{target.date}"
+            sessions = TestSession.objects.filter(user=user, test_id=test_id).order_by('-start_time')
+            
+            in_progress_session = sessions.filter(status='in-progress').first()
+            latest_completed_session = sessions.filter(status='completed').first()
+
+            response_data.append({
+                'id': str(target.id),
+                'subject': target.subject,
+                'date': target.date,
+                'isCompleted': target.is_completed,
+                'isInProgress': in_progress_session is not None,
+                'inProgressSessionId': str(in_progress_session.id) if in_progress_session else None,
+                'latestSessionId': str(latest_completed_session.id) if latest_completed_session else (str(in_progress_session.id) if in_progress_session else None),
+                'attemptsCount': sessions.filter(status='completed').count(),
+                'score': target.score,
+                'totalQuestions': len(target.questions),
+                'questions': target.questions if not target.is_completed else [],
+                'timePerQuestion': settings.time_per_question,
+            })
+
+            # If request asks for specific target details (e.g. to start test), we might need another endpoint or param
+            # For now returning list summary + questions. 
+            
+        return Response(response_data)
+
+
+class DailyTargetStartView(APIView):
+    """
+    Starts or resumes a daily target session.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        target_id = request.data.get('targetId')
+        try:
+            target = DailyTarget.objects.get(id=target_id, user=request.user)
+        except DailyTarget.DoesNotExist:
+            return Response({'error': 'Target not found'}, status=404)
+
+        test_id = f"daily-target-{target.subject}-{target.date}"
+        
+        # Check for in-progress session
+        session = TestSession.objects.filter(
+            user=request.user, 
+            test_id=test_id, 
+            status='in-progress'
+        ).first()
+
+        if not session:
+            # Create a new session
+            session = TestSession.objects.create(
+                user=request.user,
+                test_id=test_id,
+                subject=target.subject,
+                start_time=datetime.now(timezone.utc),
+                total_questions=len(target.questions),
+                max_score=len(target.questions) * 3,
+                answers=[],
+                status='in-progress'
+            )
+
+        return Response({
+            'sessionId': str(session.id),
+            'target': {
+                'id': str(target.id),
+                'subject': target.subject,
+                'questions': target.questions,
+                'timePerQuestion': UserDailySettings.objects.get(user=request.user).time_per_question
+            },
+            'progress': {
+                'answers': session.answers,
+                'currentQuestionIndex': session.current_question_index or 0
+            }
+        })
+
+
+class DailyTargetSubmitView(APIView):
+    """
+    Handles submission of daily target results.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        target_id = request.data.get('targetId')
+        answers = request.data.get('answers', []) # List of {questionId, isCorrect, ...}
+        score = request.data.get('score', 0)
+        
+        try:
+            target = DailyTarget.objects.get(id=target_id, user=request.user)
+        except DailyTarget.DoesNotExist:
+             return Response({'error': 'Target not found'}, status=status.HTTP_404_NOT_FOUND)
+
+        target.is_completed = True
+        target.score = score
+        target.save()
+
+        # Scheduling logic
+        today = datetime.now(timezone.utc).date()
+        
+        for ans in answers:
+            if not ans.get('isCorrect'):
+                # Schedule for revision
+                # Create RevisionSchedule or update existing?
+                # If question already scheduled, what to do? Reset?
+                # Let's create new or reset.
+                
+                # Need question data. 
+                # Ideally 'answers' payload should contain full question or we seek (slow)
+                # Or we look into target.questions
+                question_data = next((q for q in target.questions if str(q.get('id', q.get('qid'))) == str(ans.get('questionId'))), None)
+                
+                if question_data:
+                    RevisionSchedule.objects.update_or_create(
+                        user=request.user,
+                        question_id=ans.get('questionId'),
+                        defaults={
+                            'question_data': question_data,
+                            'subject': target.subject,
+                            'next_review_date': today + timedelta(days=2),
+                            'review_interval': 2
+                        }
+                    )
+
+        # Finalize TestSession
+        test_id = f"daily-target-{target.subject}-{target.date}"
+        correct_count = sum(1 for a in answers if a.get('isCorrect'))
+        
+        session = TestSession.objects.filter(
+            user=request.user,
+            test_id=test_id,
+            status='in-progress'
+        ).first()
+
+        if session:
+            session.score = score
+            session.answers = answers
+            session.correct_answers = correct_count
+            session.status = 'completed'
+            session.current_question_index = len(target.questions)
+            session.end_time = datetime.now(timezone.utc)
+            session.save()
+        else:
+            # Fallback if no in-progress session found
+            total_questions = len(target.questions)
+            TestSession.objects.create(
+                user=request.user,
+                test_id=test_id,
+                subject=target.subject,
+                score=score,
+                correct_answers=correct_count,
+                max_score=total_questions * 3,
+                total_questions=total_questions,
+                answers=answers,
+                status='completed',
+                current_question_index=total_questions,
+                start_time=datetime.now(timezone.utc),
+                end_time=datetime.now(timezone.utc)
+            )
+
+        return Response({'status': 'success'})
+
+    
+class DailyTargetResetView(APIView):
+    """
+    Resets a daily target so it can be retaken.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, subject):
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+        
+        # 1. Reset DailyTarget status
+        try:
+            target = DailyTarget.objects.get(
+                user=user, 
+                date=today, 
+                subject=subject
+            )
+            target.is_completed = False
+            target.score = None
+            target.save()
+        except DailyTarget.DoesNotExist:
+            return Response({'error': 'Target not found'}, status=404)
+        
+        # 2. DO NOT delete TestSession records anymore to keep history
+        # We just want to allow a new attempt. 
+        # Existing sessions will be kept. 
+        # The DailyTargetView and StartView will now see no 'in-progress' session and allow starting a new one.
+        pass
+
+        # 3. Clean up UserAnswers (implicitly deleted via CASCADE if linked to Session, but Session is linked to User not UserAnswers explicitly in some models? No, UserAnswer has ForeignKey to Session)
+        # TestSession model: user_answers = models.ForeignKey(TestSession... related_name='user_answers') checks out.
+
+        # Also need to reset RevisionSchedule?
+        # Maybe keep revision items as is, they are beneficial. 
+
+        return Response({'status': 'success'})
+
+
+class DailyTargetSessionResultView(APIView):
+    """
+    Retrieves results for a specific daily target session, including question data.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, session_id):
+        try:
+            session = TestSession.objects.get(id=session_id, user=request.user)
+            
+            # Find the associated DailyTarget to get question details
+            # test_id is daily-target-{subject}-{date}
+            parts = session.test_id.split('-')
+            # daily, target, subject, date
+            # subject might contain dashes if not careful but we use str(target.subject)
+            # Re-constructing target lookup
+            
+            # Better way: find DailyTarget by user and date from session test_id
+            # test_id format: f"daily-target-{target.subject}-{target.date}"
+            # This is a bit brittle if subject has dashes. 
+            # Alternative: Since we know the subject and user, we can try matching.
+            
+            target = DailyTarget.objects.filter(
+                user=request.user,
+                subject=session.subject,
+                # date can be extracted from test_id or just use session.start_time.date()
+                date=session.start_time.date()
+            ).first()
+
+            if not target:
+                 return Response({'error': 'Associated daily target not found'}, status=404)
+
+            return Response({
+                'sessionId': str(session.id),
+                'testId': session.test_id,
+                'subject': session.subject,
+                'score': session.score,
+                'totalQuestions': session.total_questions,
+                'correctAnswers': session.correct_answers,
+                'answers': session.answers,
+                'status': session.status,
+                'startTime': session.start_time,
+                'endTime': session.end_time,
+                'questions': target.questions
+            })
+        except TestSession.DoesNotExist:
+            return Response({'error': 'Session not found'}, status=404)
+
+
+class RevisionView(APIView):
+    """
+    Handles retrieving and submitting revision questions.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        today = datetime.now(timezone.utc).date()
+        
+        # Get pending revisions
+        revisions = RevisionSchedule.objects.filter(user=user, next_review_date__lte=today)
+        
+        data = []
+        for rev in revisions:
+            data.append({
+                'id': str(rev.id),
+                'question': rev.question_data,
+                'subject': rev.subject,
+                'nextReviewDate': rev.next_review_date,
+                'interval': rev.review_interval
+            })
+            
+        return Response(data)
+
+    def post(self, request):
+        # Submitting result for a revision question
+        revision_id = request.data.get('revisionId')
+        is_correct = request.data.get('isCorrect')
+        
+        try:
+            revision = RevisionSchedule.objects.get(id=revision_id, user=request.user)
+        except RevisionSchedule.DoesNotExist:
+             return Response({'error': 'Revision not found'}, status=status.HTTP_404_NOT_FOUND)
+             
+        today = datetime.now(timezone.utc).date()
+
+        if is_correct:
+            # Increase interval
+            new_interval = revision.review_interval + 2
+            if new_interval > 6:
+                # Done with revision for this question
+                revision.delete()
+                return Response({'status': 'completed', 'message': 'Question mastered!'})
+            else:
+                revision.review_interval = new_interval
+                revision.next_review_date = today + timedelta(days=new_interval)
+                revision.save()
+        else:
+            # Reset interval
+            revision.review_interval = 2
+            revision.next_review_date = today + timedelta(days=2)
+            revision.save()
+            
+        return Response({'status': 'scheduled', 'nextDate': revision.next_review_date})

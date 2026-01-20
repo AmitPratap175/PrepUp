@@ -67082,6 +67082,131 @@
       "solution_text": "From the inequality and nature of x, and y, we get the given diagram:\n\nWe need to find the area of the quadrilateral ABDE = area of rectangle ABCD + area of triangle CDE\n\n=> Area of ABCD = (7-3)*5 = 20 units, and the area of triangle CDE = (1/2)*10*5 = 25 units.\n\nHence, the area of the quadrilateral ABDE = (20+25) = 45 units.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449565)\n\n**Passage:**\nThe area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines ∣ x − y ∣ − ∣ x − 5 ∣ = 2 \\mid x-y\\mid-\\mid x-5\\mid=2 ∣ x − y ∣ − ∣ x − 5 ∣ = 2 , is\n\nThe area of the quadrilateral bounded by the Y-axis, the line x = 5, and the lines $\\mid x-y\\mid-\\mid x-5\\mid=2$, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2128",
+      "passage_text": "If f ( x 2 + 2 x + 3 ) = x − 3 x − 4 f\\left(x^2+2x+3\\right)=\\frac{x-3}{x-4} f ( x 2 + 2 x + 3 ) = x − 4 x − 3 ​ , then what is the sum of all the integer values of x for which f(x) is an integer?\n\n6\n\n8\n\n11\n\n56",
+      "question_text": "If $f\\left(x^2+2x+3\\right)=\\frac{x-3}{x-4}$, then what is the sum of all the integer values of x for which f(x) is an integer?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "56",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "For (x-3)/(x-4) to be an integer, let us assume that x-4 = t\n\nHence, (t + 1)/t is an integer, hence 1 + 1/t is an integer.\n\nt is either +1 or -1.\n\nHence, x-4 = 1 or -1.\n\nx = 5 or 3.\n\nSo, \n\n$x^2+2x+3=5^2+10+3$ or $3^2+6+3$ = 38 or 18\n\nHence, for 2 values of x, the value of f(x) is an integer, they are f(18) and f(38).\n\nSum of the values = 38 + 18 = 56.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366909)\n\n**Passage:**\nIf f ( x 2 + 2 x + 3 ) = x − 3 x − 4 f\\left(x^2+2x+3\\right)=\\frac{x-3}{x-4} f ( x 2 + 2 x + 3 ) = x − 4 x − 3 ​ , then what is the sum of all the integer values of x for which f(x) is an integer?\n\n6\n\n8\n\n11\n\n56\n\nIf $f\\left(x^2+2x+3\\right)=\\frac{x-3}{x-4}$, then what is the sum of all the integer values of x for which f(x) is an integer?\n\n**Options:**\n- **A**. 6\n- **B**. 8\n- **C**. 11\n- **D**. 56\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2129",
+      "passage_text": "It is known that x x x satisfies the following inequality x 2 − 7 x + 10 ≤ 0 x^2-7x+10 \\le 0 x 2 − 7 x + 1 0 ≤ 0 and [ x ] 2 = [ x 2 ] [x]^2 = [x^2] [ x ] 2 = [ x 2 ] . Here [x] is the greatest integer less than or equal to x.\n\nThe common solution set is represented by x ∈ [ 2 , p ) ∪ [ 3 , q ) ∪ [ 4 , r ) ∪ { s } x\\ \\in\\left[2,\\sqrt{p}\\right)\\cup\\left[3,\\sqrt{q}\\right)\\cup\\left[4,\\sqrt{r}\\right)\\cup\\left\\{s\\right\\} x ∈ [ 2 , p ​ ) ∪ [ 3 , q ​ ) ∪ [ 4 , r ​ ) ∪ { s } where p,q,r,s are natural numbers.\n\nWhat is the value of p + q - r + s?",
+      "question_text": "It is known that $x$ satisfies the following inequality $x^2-7x+10 \\le 0$ and $[x]^2 = [x^2]$. Here [x] is the greatest integer less than or equal to x.\n\nThe common solution set is represented by $x\\ \\in\\left[2,\\sqrt{p}\\right)\\cup\\left[3,\\sqrt{q}\\right)\\cup\\left[4,\\sqrt{r}\\right)\\cup\\left\\{s\\right\\}$ where p,q,r,s are natural numbers. \n\nWhat is the value of p + q - r + s?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "First let us find the range of $x$\n\nThe inequality can be simplified into $(x-2)(x-5) \\le 0$\n\nThus $x\\in\\left[2,5\\right]$\n\nNow for this range we need to find the value when $[x]^2 = [x^2]$\n\nSince we see that $x\\in\\left[2,5\\right]$, the value of [$x$] can be = 2 or 3 or 4 or 5\n\nCase I: [x] = 2. Then $x\\in\\left[2,3\\right)$\n\nThe equality will change to $2^2=\\left[x^2\\right]$\n\nThus $\\left[x^2\\right]=4$ or $x^2\\ \\in\\left[4,5\\right)$ Thus common value of  $x\\ \\in\\left[2,\\sqrt{5}\\right)$ ....(I)\n\nCase II: [x] = 3. Then $x\\in\\left[3,4\\right)$\n\nThe equality will change to $3^2=\\left[x^2\\right]$\n\nThus $\\left[x^2\\right]=9$ or $x^2\\ \\in\\left[9,10\\right)$ Thus $x\\ \\in\\left[3,\\sqrt{10}\\right)$ ....(II)\n\nCase III: [x] = 4. Then $x\\in\\left[4,5\\right)$\n\nThe equality will change to $4^2=\\left[x^2\\right]$\n\nThus $\\left[x^2\\right]=16$ or $x^2\\ \\in\\left[16,17\\right)$ Thus $x\\ \\in\\left[4,\\sqrt{17}\\right)$ ....(III)\n\nCase IV: [x] = 5. Then $x\\in\\left[5,6\\right)$. But in initial question we are given that $x\\in\\left[2,5\\right]$. Thus we only check for x= 5.\n\nWhen $x=5$ , $[x]^2 = [x^2]= 25$\n\nHence $x=5$ is in the solution. \n\nThe common solution set is $x\\ \\in\\left[2,\\sqrt{5}\\right)\\cup\\left[3,\\sqrt{10}\\right)\\cup\\left[4,\\sqrt{17}\\right)\\cup\\left\\{5\\right\\}$\n\np = 5, q = 10, r = 17 and s = 5\n\np+q-r+s = 5+10-17+5 = 20-17=3",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 368779)\n\n**Passage:**\nIt is known that x x x satisfies the following inequality x 2 − 7 x + 10 ≤ 0 x^2-7x+10 \\le 0 x 2 − 7 x + 1 0 ≤ 0 and [ x ] 2 = [ x 2 ] [x]^2 = [x^2] [ x ] 2 = [ x 2 ] . Here [x] is the greatest integer less than or equal to x.\n\nThe common solution set is represented by x ∈ [ 2 , p ) ∪ [ 3 , q ) ∪ [ 4 , r ) ∪ { s } x\\ \\in\\left[2,\\sqrt{p}\\right)\\cup\\left[3,\\sqrt{q}\\right)\\cup\\left[4,\\sqrt{r}\\right)\\cup\\left\\{s\\right\\} x ∈ [ 2 , p ​ ) ∪ [ 3 , q ​ ) ∪ [ 4 , r ​ ) ∪ { s } where p,q,r,s are natural numbers.\n\nWhat is the value of p + q - r + s?\n\nIt is known that $x$ satisfies the following inequality $x^2-7x+10 \\le 0$ and $[x]^2 = [x^2]$. Here [x] is the greatest integer less than or equal to x.\n\nThe common solution set is represented by $x\\ \\in\\left[2,\\sqrt{p}\\right)\\cup\\left[3,\\sqrt{q}\\right)\\cup\\left[4,\\sqrt{r}\\right)\\cup\\left\\{s\\right\\}$ where p,q,r,s are natural numbers. \n\nWhat is the value of p + q - r + s?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2130",
+      "passage_text": "",
+      "question_text": "'l' is an odd natural number and 'm' is an even natural number. How many solutions are there for the equation lm = 2l + m + 598",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given, lm= 2l+m+598\n\n=> lm-2l-m= 598\n\n=> l(m-2)-1(m-2)= 600\n\n=> (l-1)(m-2)= 600\n\nl-1 is even and m-2 is even.\n\nThe possible values of l-1 and m-2 are- (2,300), (4,150), (6,100), (10,60), (12,50), (20,30) and these values are interchangeable for both l-1 and m-2.\n\nHence 12 possible solutions exists",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 367628)\n\n**Passage:**\n'l' is an odd natural number and 'm' is an even natural number. How many solutions are there for the equation lm = 2l + m + 598\n\n6\n\n24\n\n12\n\n8\n\n'l' is an odd natural number and 'm' is an even natural number. How many solutions are there for the equation lm = 2l + m + 598\n\n**Options:**\n- **A**. 6\n- **B**. 24\n- **C**. 12\n- **D**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2131",
+      "passage_text": "If x 2 − 6 x = 1 x^2-\\sqrt{6}x=1 x 2 − 6 ​ x = 1 , then the value of x 10 − 61 x 6 − 62 x 2 x^{10}-61x^6-62x^2 x 1 0 − 6 1 x 6 − 6 2 x 2 is?\n\n8\n\n16\n\n-8\n\n-62",
+      "question_text": "If $x^2-\\sqrt{6}x=1$,  then the value of $x^{10}-61x^6-62x^2$ is?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "-8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-62",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given $x^2-\\sqrt{6}x=1$.\n\n=> $x^2-1=\\sqrt{6}x$\n\nDividing throughout by x, we get:\n\n$x-\\frac{1}{x}=\\sqrt{6}$\n\nSquaring both sides, we get:\n\n$x^2+\\frac{1}{x^2}-2=6$\n\n=> $x^2+\\frac{1}{x^2}=8$    .... (1)\n\nSquaring both the sides again, we get:\n\n$x^4+\\frac{1}{x^4}+2=64$\n\n=>$x^4+\\frac{1}{x^4}=62$.  ....(2)\n\nNow, we can re-write  $x^{10}-61x^6-62x^2$ as:\n\n$x^{10}-\\left(x^4+\\frac{1}{x^4}-1\\right)x^6-\\left(x^4+\\frac{1}{x^4}\\right)x^2$\n\n=$x^{10}-x^{10}-x^2+x^6-x^6-\\frac{1}{x^2}$\n\n= $-x^2-\\frac{1}{x^2}$= $-\\left(x^2+\\frac{1}{x^2}\\right)$=-8",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366993)\n\n**Passage:**\nIf x 2 − 6 x = 1 x^2-\\sqrt{6}x=1 x 2 − 6 ​ x = 1 , then the value of x 10 − 61 x 6 − 62 x 2 x^{10}-61x^6-62x^2 x 1 0 − 6 1 x 6 − 6 2 x 2 is?\n\n8\n\n16\n\n-8\n\n-62\n\nIf $x^2-\\sqrt{6}x=1$,  then the value of $x^{10}-61x^6-62x^2$ is?\n\n**Options:**\n- **A**. 8\n- **B**. 16\n- **C**. -8\n- **D**. -62\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2132",
+      "passage_text": "Find the sum of integer values of x (|x| <10) satisfying the following inequality:\n\n( x 3 + 2 x 2 − x − 2 ) ( x 3 − x 2 − 17 x − 15 ) x 3 + 4 x 2 − x − 4 ≥ 0 \\frac{\\left(x^3+2x^2-x-2\\right)\\left(x^3-x^2-17x-15\\right)}{x^3+4x^2-x-4}\\ge0 x 3 + 4 x 2 − x − 4 ( x 3 + 2 x 2 − x − 2 ) ( x 3 − x 2 − 1 7 x − 1 5 ) ​ ≥ 0",
+      "question_text": "Find the sum of integer values of x (|x| <10) satisfying the following inequality:\n\n$\\frac{\\left(x^3+2x^2-x-2\\right)\\left(x^3-x^2-17x-15\\right)}{x^3+4x^2-x-4}\\ge0$",
+      "options": [],
+      "correct_option_data": "30",
+      "solution_text": "$\\frac{\\left(x^3+2x^2-x-2\\right)\\left(x^3-x^2-17x-15\\right)}{x^3+4x^2-x-4}\\ge0$\n\nFactorising these terms we get,\n\n$\\frac{\\left(x-1\\right)\\left(x+2\\right)\\left(x+1\\right)\\left(x+1\\right)\\left(x+3\\right)\\left(x-5\\right)}{\\left(x+1\\right)\\left(x-1\\right)\\left(x+4\\right)}\\ge0$\n\n$\\frac{\\left(x+2\\right)\\left(x+1\\right)\\left(x+3\\right)\\left(x-5\\right)}{\\left(x+4\\right)}\\ge0$\n\nHence, possible values are -3, -2, 5, 6, 7, 8, 9.\n\nSum = 30.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366910)\n\n**Passage:**\nFind the sum of integer values of x (|x| <10) satisfying the following inequality:\n\n( x 3 + 2 x 2 − x − 2 ) ( x 3 − x 2 − 17 x − 15 ) x 3 + 4 x 2 − x − 4 ≥ 0 \\frac{\\left(x^3+2x^2-x-2\\right)\\left(x^3-x^2-17x-15\\right)}{x^3+4x^2-x-4}\\ge0 x 3 + 4 x 2 − x − 4 ( x 3 + 2 x 2 − x − 2 ) ( x 3 − x 2 − 1 7 x − 1 5 ) ​ ≥ 0\n\nFind the sum of integer values of x (|x| <10) satisfying the following inequality:\n\n$\\frac{\\left(x^3+2x^2-x-2\\right)\\left(x^3-x^2-17x-15\\right)}{x^3+4x^2-x-4}\\ge0$\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

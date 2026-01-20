@@ -43177,6 +43177,166 @@
       "solution_text": "Let one round of the bus take ‘k’ hours.  \n\nSo the second round of the bus will start after k+1 hours.\n\nIn the second round, the bus doesn’t stop at James park. So the time taken to complete round two will be k-1 hours. \n\nSo round three will start (k + 1) + (k -1) + 1 = 2k+1 hours after round 1 has started.  \n\nIn the third round, the bus doesn’t stop at stop Blue water. So the time taken to complete round three will be k-1 hours.  \n\nSo round four will start (2k + 1) + (k -1) + 1 = 3k + 1 hours after round 1 has started.  \n\nThus, the total time required to complete three rounds is 3k hours.  \n\nSince, the total time taken in each round is less than 10 hours, time from 4:00 to 1:00 (start of round 1 to end of round 3) must be 21 hours. \n\nHence 3k = 21 hours\nThus k = 7 hours, i.e. time required to complete 1 round is 7 hours.  \n\nIn round 4 we see the after the bus leaves South town at 2:00 it reaches James park at 3:30. \n\nThus the time required from South town to James park is 1.5 hours. \n\nThus, in round 1 bus departs from James park at 6:30 and reach White cottage at 8:15. \n\nThus it takes 45 mins for the bus to travel from James park stop to White cottage stop.\n\nThus, in round 4 bus departs from the White cottage at 6:15 and reaches Blue water at 7:00. \n\nThus bus takes 45 mins to travel from White cottage to Blue water. Now we can complete the entire table as we know the travel tie between the stops. We get,\n\nThus round 4 will be completed at 9:00.\n\nIn completing 2 rounds, bus stops at stop White cottage twice and stops at James park once. \n\nSo change in time required to complete round 2 = (2 * 10) + (-15) = 5 minutes more.\nThus at 18:05 the bus will complete round 2. \nHence option A is the correct choice.",
       "image_url": "https://cracku.in/media/uploads/di_1.PNG",
       "full_markdown": "### Question (qid: 84466)\n\n**Passage:**\nAnswer the questions on the basis of the information given below. A bus service runs through a city such that the path of the bus is circular in shape and bus travels at the same speed. A bus starts from the stop 'South town' and covers three other stops - James park, White cottage and Blue water, before coming back to the stop 'South town' (which is one round) and continues again. A bus may or may not stop at a particular stop. The duration for which bus may stop is 1 hour. The table below gives the departure time of bus from some stops. The stations on which the bus doesn’t stop is marked with ‘NS’. For all other time, the bus stops at a particular stop. One round of the bus takes less than 10 hours.\n\nIf the bus stops at stop White cottage for 10 minutes more than usual time and stops at stop James park 15 minutes less than usual time, then at what time will bus complete round 2?\n\n**Options:**\n- **A**. 18:05\n- **B**. 17:55\n- **C**. 19:05\n- **D**. 18:55\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1519",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "Which digit corresponds to the alphabet \"G\"?\n\nEnter -1 if the answer can't be determined.",
+      "options": [],
+      "correct_option_data": "7",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into \n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$  and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9. \n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus  $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is  4738 and 27. We can input the values and get the following\n\nThus we obtain the following allocation",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364249)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\nWhich digit corresponds to the alphabet \"G\"?\n\nEnter -1 if the answer can't be determined.\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1520",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "Which of the following is equal to $ A \\times C$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A $\\times$ F + B",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "C+D+G",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "B+E+F",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "C+D+F",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into \n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$ and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9. \n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is 4738 and 27. We can input the values and get the following\n\nWe know the following\n\n$ A \\times C$ = $ 3 \\times 6$ = 18\n\nC+D+F = 6+8+4 = 18. Option D is correct",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364250)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\nWhich of the following is equal to $ A \\times C$?\n\n**Options:**\n- **A**. A $\\times$ F + B\n- **B**. C+D+G\n- **C**. B+E+F\n- **D**. C+D+F\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1521",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "What is the vale of $\\text{}DEFA\\times\\ FE\\text{}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "AAADCA",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "GGDCGG",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "AADCAA",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "FFHDFF",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into\n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$ and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9.\n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is 4738 and 27. We can input the values and get the following\n\nWe know the following\n\n$\\text{}DEFA\\times\\ FE\\text{}$ = 8143*41 = 333863 = AAADCA",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364251)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\nWhat is the vale of $\\text{}DEFA\\times\\ FE\\text{}$\n\n**Options:**\n- **A**. AAADCA\n- **B**. GGDCGG\n- **C**. AADCAA\n- **D**. FFHDFF\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1522",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "$ H^2-F^2 $ has a total of how many factors?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into\n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$ and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9.\n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is 4738 and 27. We can input the values and get the following\n\nWe know the following\n\n$H^2-F^2$ = = $ 9^2-4^2$ =  $ 5  \\times 13$. Total of 4  factors are possible",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364252)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\n$ H^2-F^2 $ has a total of how many factors?\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 4\n- **D**. 6\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1523",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "What is value of $ E^2+D^3 $?",
+      "options": [],
+      "correct_option_data": "513",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into\n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$ and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9.\n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is 4738 and 27. We can input the values and get the following\n\nWe know the following\n\n$ E^2 +D^3$ = $ 1^2 + 8^3$ = 1+512 = 513",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364253)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\nWhat is value of $ E^2+D^3 $?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1524",
+      "passage_text": "In the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions",
+      "question_text": "Which of the following are in a Geometric Progression?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "E, A and C",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "F, C and H",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "B, A and F",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "B, A and C",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Since none of the digits is divisible by 5, Digits can be 1,2,3,4,6,7,8 and 9 only.\n\nFrom the above we see that $C+0 = 6$. Thus $C =6$.\n\nLooking at the second digit of the product. Unit place of $C+C =B$. Thus unit digit of 6+6(12) is 2. Thus B = 2.\n\nThe product simplifies into\n\nWe observe that unit places of $ D \\times G = 6$ The pair of digits which gives 6 at unit digits on their product are (1,6), (2,3), (2,8), (4,4), (4,9) (6,6) and (7,8). Since we already know that $C =6$, $B=2$ and $ D \\ne G$ only remaining possible pairs are (4,9) and (7,8). \n\nThus (D,G) can be (4,9) or (9,4) or (7,8) or (8,7)\n\nUpon further observation, we see that $FGAD \\times 2 = HFG6$ which is a 4-digit number. Thus the maximum possible value of F = 4 (If $F \\ge 5$ then the product will be at least 5- digit. Thus F = 1 or 3 or 4\n\nWe are given that $ D = 2 \\times F $ Thus F = 4, D= 8 which leaves G =7\n\nThe remaining alphabets are A, E and H. The remaining digits to be allocated are 1,3 and 9.\n\nSince one of the numbers for the product is 27. Thus the final product $E27H26$ should be divisible by 27. Thus it should be divisible by 9 also. For a number to be divisible by 9, the sum of its digits has to be a multiple of 9\n\nThus $ E+2+7+H+2+6 = 9k$ or $ E+H = 9k-17$ or $E+H =9k'+1 $ where $k=k'+2$\n\nThus $E+H = 1 or 10$\n\n$E+H = 1$ is not possible as both are positive digts. Thus $E+H= 10$ and it happens when (E,H) = (1,9) or (9,1). Thus it will mean that A=3 is the only possible scenario. Now we know that the 2 numbers whose product is taken is 4738 and 27. We can input the values and get the following\n\nWe know the following\n\nF, C, H = 4,6,9 are in G.P",
+      "image_url": "https://cracku.in/media/uploads/image_by1OLAe.png",
+      "full_markdown": "### Question (qid: 364254)\n\n**Passage:**\nIn the above multiplication, A, B, C, D, E, F, G and H are the different digits of number such that none of them is divisible by 5.\n\nIf it is known that D is twice that of F, answer the following questions\n\nWhich of the following are in a Geometric Progression?\n\n**Options:**\n- **A**. E, A and C\n- **B**. F, C and H\n- **C**. B, A and F\n- **D**. B, A and C\n\n**Correct Answer:** null"
     }
   ]
 }

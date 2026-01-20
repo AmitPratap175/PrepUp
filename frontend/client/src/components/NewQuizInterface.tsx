@@ -28,6 +28,7 @@ interface QuizInterfaceProps {
   onProgressUpdate: (answers: UserAnswer[]) => void;
   navigateToQuestion: (index: number) => void;
   currentQuestionIndex: number;
+  duration?: number; // Duration in seconds. If provided, timer counts down.
 }
 
 /**
@@ -41,11 +42,11 @@ interface QuizInterfaceProps {
  * @param {QuizInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered quiz interface.
  */
-export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, navigateToQuestion, currentQuestionIndex }: QuizInterfaceProps) {
+export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, navigateToQuestion, currentQuestionIndex, duration }: QuizInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(false);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const [answers, setAnswers] = useState<{[key: string]: string}>({});
+  const [answers, setAnswers] = useState<{ [key: string]: string }>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
@@ -88,7 +89,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           selectedAnswer: answers[question?.qid] || null,
           timeSpent: 0, // This can be enhanced later
           isMarkedForReview: bookmarkedQuestions.has(question?.qid),
-      }));
+        }));
       onProgressUpdate(userAnswers);
     }
   }, [answers, onProgressUpdate, questions, bookmarkedQuestions]);
@@ -210,6 +211,21 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  const getDisplayTime = () => {
+    if (duration) {
+      const remaining = Math.max(0, duration - timeElapsed);
+      return formatTime(remaining);
+    }
+    return formatTime(timeElapsed);
+  };
+
+  // Auto-submit if duration exceeded
+  useEffect(() => {
+    if (duration && timeElapsed >= duration) {
+      handleSubmit();
+    }
+  }, [duration, timeElapsed]);
+
   const handleAnswerSelect = (answer: string) => {
     if (submittedAnswers.has(currentQuestion?.qid)) return;
     setAnswers(prev => ({ ...prev, [currentQuestion.qid]: answer }));
@@ -236,10 +252,10 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
 
   const handleSubmit = () => {
     const userAnswers: UserAnswer[] = questions.map(question => ({
-        questionId: question.qid,
-        selectedAnswer: answers[question.qid] || null,
-        timeSpent: 0, // This can be enhanced later
-        isMarkedForReview: bookmarkedQuestions.has(question.qid),
+      questionId: question.qid,
+      selectedAnswer: answers[question.qid] || null,
+      timeSpent: 0, // This can be enhanced later
+      isMarkedForReview: bookmarkedQuestions.has(question.qid),
     }));
     onSubmit(userAnswers);
   };
@@ -461,8 +477,8 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
             <Button variant="outline" size="icon" onClick={() => setIsCalculatorVisible(!isCalculatorVisible)}>
               <CalculatorIcon className="h-4 w-4" />
             </Button>
-            <Button 
-              variant="destructive" 
+            <Button
+              variant="destructive"
               size="sm"
               onClick={onExit}
             >
@@ -481,9 +497,8 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           variant="outline"
           size="icon"
           onClick={() => setIsPaletteVisible(!isPaletteVisible)}
-          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${
-            isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
-          }`}
+          className={`absolute top-1/2 -translate-y-1/2 z-10 rounded-full transition-all duration-300 ease-in-out hover:bg-card ${isPaletteVisible ? 'left-64 -ml-5' : 'left-1'
+            }`}
         >
           {isPaletteVisible ? <PanelLeftClose className="h-4 w-4" /> : <PanelRightClose className="h-4 w-4" />}
         </Button>
@@ -509,15 +524,14 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
                   <button
                     key={index}
                     onClick={() => navigateToQuestion(index)}
-                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${
-                      index === currentQuestionIndex
+                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate relative ${index === currentQuestionIndex
                         ? 'bg-primary text-primary-foreground'
                         : isAnswered
-                        ? isCorrect
-                          ? 'bg-green-500 text-white'
-                          : 'bg-red-500 text-white'
-                        : 'bg-card border border-border text-foreground hover:bg-accent'
-                    }`}
+                          ? isCorrect
+                            ? 'bg-green-500 text-white'
+                            : 'bg-red-500 text-white'
+                          : 'bg-card border border-border text-foreground hover:bg-accent'
+                      }`}
                     data-testid={`question-nav-${index + 1}`}
                   >
                     {isBookmarked && <Bookmark className="absolute top-0 right-0 h-3 w-3 text-yellow-400" />}
@@ -621,7 +635,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
               <div className="space-y-3">
                 {currentQuestion?.options.length > 0 ? (
                   currentQuestion?.options.map((option) => (
-                    <label 
+                    <label
                       key={option.data_option}
                       className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors ${getOptionClassName(option)}`}
                       onClick={() => handleAnswerSelect(option.data_option)}
@@ -646,7 +660,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
                       data-testid="answer-input"
                       disabled={submittedAnswers.has(currentQuestion?.qid)}
                     />
-                    <Button 
+                    <Button
                       onClick={handleSubmitTextAnswer}
                       disabled={submittedAnswers.has(currentQuestion?.qid)}
                     >
@@ -671,13 +685,13 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           </div>
 
           <div className="flex justify-between pt-6 border-t border-border">
-            <Button 
+            <Button
               onClick={handlePrevious}
               disabled={currentQuestionIndex === 0}
             >
               Previous Question
             </Button>
-            <Button 
+            <Button
               onClick={handleNext}
               disabled={currentQuestionIndex === questions.length - 1}
             >
