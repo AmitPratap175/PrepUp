@@ -17,36 +17,77 @@ async def scrape_upsc_quiz(url: str, page_index: int):
     
     run_config = CrawlerRunConfig(
         js_code=[
-            # Find the submit button and click it
-            "const submitBtn = Array.from(document.querySelectorAll('button')).find(btn => btn.textContent.toLowerCase().includes('submit test'));"
+            # Smart wait: Check for 404 or Submit Button
+            "const checkFor404 = () => {"
+            "  if (document.title.includes('404') || document.body.innerText.includes('Page not found')) return true;"
+            "  if (document.querySelector('.error-link, h1.error-code')) return true;"
+            "  return false;"
+            "};"
+            
+            "if (checkFor404()) return;" # Exit JS if 404 immediately
+            
+            # Poll for submit button (wait up to 5s)
+            "const findBtn = () => Array.from(document.querySelectorAll('button')).find(btn => btn.textContent.toLowerCase().includes('submit test'));"
+            "let submitBtn = findBtn();"
+            "let attempts = 0;"
+            "while (!submitBtn && attempts < 10) {"
+            "  await new Promise(r => setTimeout(r, 500));"
+            "  submitBtn = findBtn();"
+            "  attempts++;"
+            "  if (checkFor404()) return;" # Check if it resolved to 404 while loading
+            "}"
+            
             "if (submitBtn) { submitBtn.click(); }"
-            "await new Promise(r => setTimeout(r, 2000));" # Wait for results to load
+            "await new Promise(r => setTimeout(r, 2500));" # Wait for results/answers to appear
         ],
-        wait_for="div.q-card",
+        wait_for="body", # Wait for body only, handle specific element wait in JS to avoid timeout on 404
         cache_mode=CacheMode.BYPASS
     )
 
     async with AsyncWebCrawler(config=browser_config) as crawler:
-        result = await crawler.arun(url=url, config=run_config)
-        
-        if not (result and result.html):
-            print(f"Failed to retrieve HTML content for {url}")
-            return None # Indicate network/connection failure
+        try:
+            result = await crawler.arun(url=url, config=run_config)
+        except Exception as e:
+            print(f"Crawler error for {url}: {e}")
+            return None
 
-        # Detect 404 or "Page not found"
+        if not result:
+            print(f"No result returned for {url}")
+            return None
+
+        # Detect 404 via Status Code or HTML Content
+        if result.status_code == 404:
+            print(f"HTTP 404 detected for {url}")
+            return "404"
+
+        if not result.html:
+            print(f"Failed to retrieve HTML content for {url}")
+            # If status code wasn't 404 but no HTML, treat as failure
+            return None
+
         soup = BeautifulSoup(result.html, 'html.parser')
+        
+        # Check specific markers again in parsed HTML to be sure
+        is_404 = False
         page_title = soup.title.string if soup.title else ""
-        if "404" in page_title or "Page Not Found" in page_title or "not found" in result.html.lower()[:2000]:
-            # Some sites have custom 404 pages. We check common indicators.
-            if not soup.find('div', class_='q-card'):
-                 print(f"Page not found (404) for {url}")
-                 return "404"
+        error_link = soup.find('a', class_='error-link')
+        error_h1 = soup.find('h1', string=re.compile(r'404', re.I))
+        
+        if "404" in page_title or error_link or error_h1:
+            is_404 = True
+        elif "page not found" in result.html.lower()[:2000]:
+            is_404 = True
+            
+        if is_404:
+             print(f"Confirmed 404 Not Found for {url}")
+             return "404"
 
         q_cards = soup.find_all('div', class_='q-card')
         if not q_cards:
-            # Check if it's actually a 404 based on content if cards are missing
-            if "not found" in soup.get_text().lower() or "404" in soup.get_text().lower():
-                print(f"Page not found (404 - no cards) for {url}")
+            # Re-check text one last time
+            text_content = soup.get_text().lower()
+            if "not found" in text_content or "404" in text_content:
+                print(f"Page not found (404 - text match) for {url}")
                 return "404"
             print(f"No questions found for {url}, but not explicitly a 404.")
             return []
