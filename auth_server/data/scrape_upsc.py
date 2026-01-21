@@ -107,15 +107,16 @@ async def scrape_upsc_quiz(url: str, page_index: int):
                 options = []
                 correct_answer = None
                 
-                for label in labels:
+                for idx, label in enumerate(labels):
                     label_text = label.get_text(strip=True)
                     match = re.match(r'^([A-D])\.(.*)', label_text)
                     if match:
                         opt_label = match.group(1)
                         opt_text = match.group(2).strip()
                     else:
-                        opt_label = label_text[0] if len(label_text) > 0 else "?"
-                        opt_text = label_text[2:].strip() if len(label_text) > 2 else label_text
+                        # Fallback: Use index for label (0->A, 1->B...)
+                        opt_label = chr(65 + idx) # A, B, C...
+                        opt_text = label_text
 
                     is_correct = 'correct' in label.get('class', []) or 'missed-correct' in label.get('class', [])
                     data_option = opt_label
@@ -212,7 +213,7 @@ async def main():
         
         if result == "404":
             print(f"Skipping {url} due to 404.")
-            if url not in failed_urls:
+            if url not in [f.get("url") for f in failed_urls]:
                 failed_urls.append({"url": url, "index": i, "date": str(today), "reason": "404"})
             continue
         elif result is None or (isinstance(result, list) and len(result) == 0):

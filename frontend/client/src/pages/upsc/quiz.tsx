@@ -24,7 +24,7 @@ const UPSCQuizPage: React.FC = () => {
 
     const fetchTest = async () => {
         try {
-            const response = await fetch(`/api/tests/practice/${testId}/`, {
+            const response = await fetch(`/api/practice-tests/${testId}/`, {
                 headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
             });
 

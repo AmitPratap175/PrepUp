@@ -233,13 +233,6 @@ class MemStorage:
                 "subject": "General Knowledge",
                 "duration": 30,
                 "filePath": "data/xat/current_affairs_gk.json"
-            },
-            {
-                "title": "UPSC Daily Current Affairs MCQs",
-                "examType": "upsc",
-                "subject": "Current Affairs",
-                "duration": 15,
-                "filePath": "data/upsc/daily-mcqs.json"
             }
         ]
 
@@ -252,6 +245,50 @@ class MemStorage:
                     "examType": test_data["examType"],
                     "subject": test_data["subject"],
                     "duration": test_data["duration"],
+                    "totalQuestions": len(questions),
+                    "questions": questions
+                }
+                self.practice_tests[practice_test["id"]] = practice_test
+
+        # Seed UPSC Daily MCQs (split into sets)
+        upsc_file_path = os.path.join(self.base_dir, '..', 'data/upsc/daily-mcqs.json')
+        if os.path.exists(upsc_file_path):
+            upsc_questions = self._load_questions_from_file(upsc_file_path)
+            
+            # 1. Master Quiz (All Questions)
+            master_quiz = {
+                "id": "upsc-master-quiz",
+                "title": "UPSC Master Question Bank (All)",
+                "examType": "upsc",
+                "subject": "Current Affairs",
+                "duration": len(upsc_questions) * 2, # 2 mins per question
+                "totalQuestions": len(upsc_questions),
+                "questions": upsc_questions
+            }
+            self.practice_tests[master_quiz["id"]] = master_quiz
+
+            # 2. Daily Quizzes (Split by Set ID)
+            upsc_sets = {}
+            for q in upsc_questions:
+                # Assuming id format 'upsc-SET-QNO' e.g. 'upsc-1-1'
+                parts = q['id'].split('-')
+                if len(parts) >= 2:
+                    set_id = parts[1] # '1'
+                    if set_id not in upsc_sets:
+                        upsc_sets[set_id] = []
+                    upsc_sets[set_id].append(q)
+
+            # Sort sets by ID (assuming numeric)
+            sorted_set_ids = sorted(upsc_sets.keys(), key=lambda x: int(x) if x.isdigit() else x)
+
+            for set_id in sorted_set_ids:
+                questions = upsc_sets[set_id]
+                practice_test = {
+                    "id": str(uuid.uuid4()),
+                    "title": f"UPSC Daily Quiz #{set_id}",
+                    "examType": "upsc",
+                    "subject": "Current Affairs",
+                    "duration": 10, # 2 mins per question approx
                     "totalQuestions": len(questions),
                     "questions": questions
                 }
