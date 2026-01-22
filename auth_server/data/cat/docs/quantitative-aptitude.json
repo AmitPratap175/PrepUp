@@ -67382,6 +67382,205 @@
       "solution_text": "Let us assume the speed of the 1st boat is b, the 2nd boat is s, and the river's speed is r.\n\nLet 'd' be the distance between A and B.\n\n=> d = 2(b+r) and d = 3(b-r)\n\n=> b + r = d/2 and b - r = d/3 => r = d/12 (subtracting both equations).\n\nNow, it is given that \n\n$\\dfrac{d}{s+r}+\\dfrac{d}{s-r}=6$\n\n=> $\\dfrac{d}{s+\\dfrac{d}{12}}+\\dfrac{d}{s-\\dfrac{d}{12}}=6$\n\n=> $2ds=6\\left(s^2-\\dfrac{d^2}{144}\\right)$\n\n=> $144s^2-48ds-d^2=0$\n\nSolving the quadratic equation, we get:\n\n$s=d\\left(\\dfrac{\\left(48+\\sqrt{\\ 48^2+4\\left(144\\right)}\\right)}{2\\times\\ 144}\\right)$\n\n$s=d\\left(\\dfrac{1}{6}+\\dfrac{\\sqrt{\\ 5}}{12}\\right)$\n\n=> Required value of $\\dfrac{d}{s+r}$\n\n= $\\dfrac{d}{\\dfrac{d}{6}+\\dfrac{\\sqrt{5}d}{12}+\\dfrac{d}{12}}$ \n\n= $\\dfrac{12}{3+\\sqrt{\\ 5}}=\\dfrac{\\left(12\\right)\\left(3-\\sqrt{\\ 5}\\right)}{4}$\n\n= $3\\left(3-\\sqrt{\\ 5}\\right)$",
       "image_url": "",
       "full_markdown": "### Question (qid: 449537)\n\n**Passage:**\nA boat takes 2 hours to travel downstream a river from port A to port B, and 3 hours to return to port A. Another boat takes a total of 6 hours to travel from port B to port A and return to port B. If the speeds of the boats and the river are constant, then the time, in hours, taken by the slower boat to travel from port A to port B is\n\n12 ( 5 − 2 ) 12(\\sqrt{5} - 2) 1 2 ( 5 ​ − 2 )\n\n3 ( 3 + 5 ) 3(3 + \\sqrt{5}) 3 ( 3 + 5 ​ )\n\n3 ( 5 − 1 ) 3(\\sqrt{5} - 1) 3 ( 5 ​ − 1 )\n\n3 ( 3 − 5 ) 3(3 - \\sqrt{5}) 3 ( 3 − 5 ​ )\n\nA boat takes 2 hours to travel downstream a river from port A to port B, and 3 hours to return to port A. Another boat takes a total of 6 hours to travel from port B to port A and return to port B. If the speeds of the boats and the river are constant, then the time, in hours, taken by the slower boat to travel from port A to port B is\n\n**Options:**\n- **A**. $12(\\sqrt{5} - 2)$\n- **B**. $3(3 + \\sqrt{5})$\n- **C**. $3(\\sqrt{5} - 1)$\n- **D**. $3(3 - \\sqrt{5})$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2138",
+      "passage_text": "A merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is\n\n4.2%\n\n9.7%\n\n15.5%\n\n16%",
+      "question_text": "A merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4.2%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "9.7%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15.5%",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "16%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "It is given that a merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him.\n\nHence, the cost price of 105 cm clothes is 100 rupees. \n\nIt is also known that he marked the price of 100 cm clothes as 110 rupees, and gave a 5% discount, and he cheated his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers.\n\nHence, the selling price of 95 cm clothes is 110*(19/20) rupees.\n\nTherefore, the selling price of 105 cm clothes is 115.5 rupees.\n\nHence, the profit is 15.5%\n\nThe correct option is C",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449532)\n\n**Passage:**\nA merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is\n\n4.2%\n\n9.7%\n\n15.5%\n\n16%\n\nA merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is\n\n**Options:**\n- **A**. 4.2%\n- **B**. 9.7%\n- **C**. 15.5%\n- **D**. 16%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2139",
+      "passage_text": "",
+      "question_text": "Jose borrowed some money from his friend at simple interest rate of 10% and invested the entire amount in stocks. At the end of the first year, he repaid 1/5th of the principal amount. At the end of the second year, he repaid half of the remaining principal amount. At the end of third year, he repaid the entire remaining principal amount. At the end of the fourth year, he paid the last three years’ interest amount. As there was no principal amount left, his friend did not charge any interest in the fourth year. At the end of fourth year, he sold out all his stocks. Later, he calculated that he gained Rs. 97500 after paying principal and interest amounts to his friend. If his invested amount in the stocks became double at the end of the fourth year, how much money did he borrow from his friend?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "250000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "200000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "150000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "125000",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let the amount Jose borrowed be 'x'. The rate of interest is 10%\n\nInterest occurred on 'x' is = $\\ \\frac{\\ x\\times1\\times\\ \\ 0.1\\ }{5}+\\ \\frac{\\ 2x\\ \\times2\\times\\ \\ 0.1}{5}\\ +\\ \\ \\frac{2x\\times\\ 3\\times\\ 0.1\\ }{5}$\n\n= $\\ \\frac{\\ 1.1x\\ }{5}$\n\nThe invested amount doubled at the end of the fourth year, i.e. 2x.\n\nJose's profit after paying principal and interest amounts to his friend at the end of the fourth year is Rs 97500.\n\ni.e., $\\ 2x-x-\\frac{\\ 1.1x\\ }{5}=97500$\n\n$\\frac{\\ 3.9x}{5}=97500$\n\n$\\ \\ \\ \\ x=125000$\n\nThe amount that Jose borrowed is Rs 1,25,000.\n\nOption (D) is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 428885)\n\n**Passage:**\nJose borrowed some money from his friend at simple interest rate of 10% and invested the entire amount in stocks. At the end of the first year, he repaid 1/5th of the principal amount. At the end of the second year, he repaid half of the remaining principal amount. At the end of third year, he repaid the entire remaining principal amount. At the end of the fourth year, he paid the last three years’ interest amount. As there was no principal amount left, his friend did not charge any interest in the fourth year. At the end of fourth year, he sold out all his stocks. Later, he calculated that he gained Rs. 97500 after paying principal and interest amounts to his friend. If his invested amount in the stocks became double at the end of the fourth year, how much money did he borrow from his friend?\n\n250000\n\n200000\n\n150000\n\n125000\n\nNone of the above\n\nJose borrowed some money from his friend at simple interest rate of 10% and invested the entire amount in stocks. At the end of the first year, he repaid 1/5th of the principal amount. At the end of the second year, he repaid half of the remaining principal amount. At the end of third year, he repaid the entire remaining principal amount. At the end of the fourth year, he paid the last three years’ interest amount. As there was no principal amount left, his friend did not charge any interest in the fourth year. At the end of fourth year, he sold out all his stocks. Later, he calculated that he gained Rs. 97500 after paying principal and interest amounts to his friend. If his invested amount in the stocks became double at the end of the fourth year, how much money did he borrow from his friend?\n\n**Options:**\n- **A**. 250000\n- **B**. 200000\n- **C**. 150000\n- **D**. 125000\n- **E**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2140",
+      "passage_text": "Separately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\nRs. 100000\n\nRs. 120000\n\nRs. 150000\n\nRs. 180000\n\nNone of the above",
+      "question_text": "Separately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs. 100000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs. 120000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs. 150000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs. 180000",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the amount invested by Jack and Sristi be $'x'$.\n\nJack's amount after four months will become $\\frac{x}{2^4}$ and after six months it will become $\\frac{x}{2^6}$.\n\nSristi's amount after four months will become $x-\\left(4\\times\\ 15000\\right)$ and after six months it will become $x-\\left(6\\times\\ 15000\\right)$\n\nFrom the given information,\n\n$\\ \\frac{\\ \\ \\frac{\\ x}{2^4}}{x-\\left(4\\times\\ 15000\\right)}=\\ \\frac{\\ \\ \\frac{\\ x}{2^6}}{x-\\left(6\\times\\ 15000\\right)}$\n\n$\\ \\ \\left(\\ x-\\left(4\\times\\ 15000\\right)\\right)=\\ 2^2\\times\\ \\left(x-\\left(6\\times\\ 15000\\right)\\right)$\n\n$3x\\ =\\ 300000$\n\n$x\\ =\\ 100000$.\n\nThe amount invested by Jack and Sristi is 100000.\n\nOption 'A' is correct.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 428886)\n\n**Passage:**\nSeparately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\nRs. 100000\n\nRs. 120000\n\nRs. 150000\n\nRs. 180000\n\nNone of the above\n\nSeparately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\n**Options:**\n- **A**. Rs. 100000\n- **B**. Rs. 120000\n- **C**. Rs. 150000\n- **D**. Rs. 180000\n- **E**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2141",
+      "passage_text": "",
+      "question_text": "Rajnish bought an item at 25% discount on the printed price. He sold it at 10% discount on the printed price. What is his profit in percentage?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "17.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let printed price be 100.\n\nRajnish bought it at 25% discount, C.P of Rajnish = 75% of 100 = 75.\n\nHe sold it at 10% discount on printed price, S.P of Rajnish = 90% of 100 = 90\n\nHence, Rajnish, profit% = $\\ \\frac{\\ 90-75}{75}\\times\\ 100=20%$.\n\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 428887)\n\n**Passage:**\nRajnish bought an item at 25% discount on the printed price. He sold it at 10% discount on the printed price. What is his profit in percentage?\n\n10\n\n15\n\n17.5\n\n20\n\nNone of the above\n\nRajnish bought an item at 25% discount on the printed price. He sold it at 10% discount on the printed price. What is his profit in percentage?\n\n**Options:**\n- **A**. 10\n- **B**. 15\n- **C**. 17.5\n- **D**. 20\n- **E**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2142",
+      "passage_text": "",
+      "question_text": "Sheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "340",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "600",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "240",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "480",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "380",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "The two types of apples sold A and B are bought in the ratio of 5: 8.\n\nConsidering the weights to be 5x and 8x.\n\nThe cost price of A is 20 percent higher than that of B.\n\nConsidering the cost price of B = y, A = 6y/5.\n\nThe total cost price of A = $\\left(5x\\right)\\cdot\\left(\\frac{6y}{5}\\right)$\n\nThe total cost price of B = $\\left(8x\\right)\\cdot\\left(y\\right)$\n\nTHe total cost price = 8xy + 6xy = 14xy\n\n14xy = 2800.\n\nxy = 200.\n\nTHe cost price of A = 1200.\n\nTHe cost price of B = 1600.\n\nA is sold a profit of 15 percent. 15 percent of 1200 = 180.\n\nB is sold at a profit of 10 percent. 10 percent of 1600 = 160.\n\nThe total profit is 180 + 160\n\n= 340",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 387514)\n\n**Passage:**\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n340\n\n600\n\n240\n\n480\n\n380\n\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n**Options:**\n- **A**. 340\n- **B**. 600\n- **C**. 240\n- **D**. 480\n- **E**. 380\n\n**Correct Answer:** null"
     }
   ]
 }

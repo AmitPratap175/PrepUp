@@ -2041,18 +2041,26 @@ class RevisionView(APIView):
         user = request.user
         today = datetime.now(timezone.utc).date()
         
+        subject = request.query_params.get('subject')
+        # exam_type = request.query_params.get('examType') # Can add if model supports it
+
         # Get pending revisions
         revisions = RevisionSchedule.objects.filter(user=user, next_review_date__lte=today)
         
+        if subject:
+            revisions = revisions.filter(subject=subject)
+        
         data = []
         for rev in revisions:
-            data.append({
-                'id': str(rev.id),
-                'question': rev.question_data,
-                'subject': rev.subject,
-                'nextReviewDate': rev.next_review_date,
-                'interval': rev.review_interval
-            })
+             # Ensure question_data is valid
+             if rev.question_data:
+                data.append({
+                    'id': str(rev.id),
+                    'question': rev.question_data,
+                    'subject': rev.subject,
+                    'nextReviewDate': rev.next_review_date,
+                    'interval': rev.review_interval
+                })
             
         return Response(data)
 
@@ -2071,7 +2079,7 @@ class RevisionView(APIView):
         if is_correct:
             # Increase interval
             new_interval = revision.review_interval + 2
-            if new_interval > 6:
+            if new_interval > 21: # Cap at 21 days for now or delete/archive?
                 # Done with revision for this question
                 revision.delete()
                 return Response({'status': 'completed', 'message': 'Question mastered!'})
@@ -2081,8 +2089,52 @@ class RevisionView(APIView):
                 revision.save()
         else:
             # Reset interval
-            revision.review_interval = 2
-            revision.next_review_date = today + timedelta(days=2)
+            revision.review_interval = 1 # Reset to 1 day for stricter review
+            revision.next_review_date = today + timedelta(days=1)
             revision.save()
             
         return Response({'status': 'scheduled', 'nextDate': revision.next_review_date})
+
+
+class ScheduleRevisionView(APIView):
+    """
+    Bulk schedules questions for revision.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        items = request.data.get('items', [])
+        
+        if not items:
+            return Response({'message': 'No items to schedule'}, status=status.HTTP_200_OK)
+
+        today = datetime.now(timezone.utc).date()
+        created_count = 0
+
+        for item in items:
+            question_id = item.get('questionId')
+            subject = item.get('subject')
+            question_data = item.get('questionData')
+
+            if not question_id or not question_data:
+                continue
+                
+            # If already exists, we might want to update it or ignore?
+            # For simplicity, if it exists, ensure it's active.
+            obj, created = RevisionSchedule.objects.update_or_create(
+                user=user,
+                question_id=question_id,
+                defaults={
+                    'question_data': question_data,
+                    'subject': subject,
+                    # If creating, set immediate review (or tomorrow). If updating, maybe reset logic?
+                    # Let's say if we got it wrong AGAIN in a quiz, we reset it.
+                    'next_review_date': today + timedelta(days=1),
+                    'review_interval': 1
+                }
+            )
+            if created:
+                created_count += 1
+        
+        return Response({'message': f'Scheduled {created_count} items for revision'}, status=status.HTTP_201_CREATED)

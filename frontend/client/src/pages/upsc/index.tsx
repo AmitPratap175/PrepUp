@@ -3,17 +3,69 @@ import { AppHeader } from "@/components/app-header";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, BookOpen, Clock, Brain } from "lucide-react";
-import { Link } from "wouter";
+import { Loader2, BookOpen, Clock, Brain, CheckCircle2, RotateCcw } from "lucide-react";
+import { Link, useLocation } from "wouter";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { PracticeTest } from "@shared/schema";
+import { useAuth } from "@/contexts/auth-context";
+
+interface TestSession {
+    id: string;
+    testId: string;
+    score: number;
+    status: 'completed' | 'in-progress';
+    maxScore: number;
+}
 
 export default function UPSCPage() {
-    const { data: tests, isLoading } = useQuery<PracticeTest[]>({
+    const { user } = useAuth();
+    const [, setLocation] = useLocation();
+
+    const { data: tests, isLoading: isLoadingTests } = useQuery<PracticeTest[]>({
         queryKey: ["/api/practice-tests?examType=upsc"],
     });
 
+    const { data: sessions, isLoading: isLoadingSessions } = useQuery<TestSession[]>({
+        queryKey: ["/api/users/me/test-sessions/"],
+        queryFn: async () => {
+            const response = await fetch(`/api/users/${user?.id}/test-sessions/`, {
+                headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+            });
+            if (!response.ok) return [];
+            return response.json();
+        },
+        enabled: !!user
+    });
+
+    const { data: revisions, isLoading: isLoadingRevisions } = useQuery<any[]>({
+        queryKey: ["/api/revision/?subject=Current Affairs"],
+        queryFn: async () => {
+            const response = await fetch(`/api/revision/?subject=Current Affairs`, {
+                headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+            });
+            if (!response.ok) return [];
+            return response.json();
+        },
+        enabled: !!user
+    });
+
     const upscTests = tests || [];
+    const sessionsMap = new Map(sessions?.map(s => [s.testId, s]));
+
+    const getTestStatus = (testId: string) => {
+        const session = sessionsMap.get(testId);
+        if (!session) return null;
+        return session;
+    }
+
+    const handleStartRevision = () => {
+        setLocation('/upsc/revision');
+    };
+
+    const handleRetake = (testId: string) => {
+        // For now, just link to test, backend/frontend should handle new session creation or overwrite
+        setLocation(`/upsc/test/${testId}`);
+    };
 
     return (
         <div className="min-h-screen bg-background">
@@ -31,6 +83,7 @@ export default function UPSCPage() {
                         <TabsList className="mb-8">
                             <TabsTrigger value="overview">Overview</TabsTrigger>
                             <TabsTrigger value="quizzes">Quizzes</TabsTrigger>
+                            <TabsTrigger value="revision">Revision</TabsTrigger>
                         </TabsList>
 
                         <TabsContent value="overview">
@@ -58,7 +111,15 @@ export default function UPSCPage() {
                                         <CardDescription>Personalized review sessions based on your performance.</CardDescription>
                                     </CardHeader>
                                     <CardContent>
-                                        <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
+                                        <div className="flex justify-between items-end">
+                                            <div>
+                                                <p className="text-3xl font-bold">{revisions?.length || 0}</p>
+                                                <p className="text-sm text-muted-foreground">Pending Reviews</p>
+                                            </div>
+                                            {revisions && revisions.length > 0 && (
+                                                <Button size="sm" onClick={handleStartRevision} >Review Now</Button>
+                                            )}
+                                        </div>
                                     </CardContent>
                                 </Card>
 
@@ -114,7 +175,7 @@ export default function UPSCPage() {
                             {/* Daily Quizzes Section */}
                             <section>
                                 <h2 className="text-2xl font-bold mb-4">Daily Current Affairs Sets</h2>
-                                {isLoading ? (
+                                {isLoadingTests || isLoadingSessions ? (
                                     <div className="flex justify-center py-12">
                                         <Loader2 className="h-8 w-8 animate-spin text-primary" />
                                     </div>
@@ -127,29 +188,59 @@ export default function UPSCPage() {
                                                 const getNum = (s: string) => parseInt(s.match(/#(\d+)/)?.[1] || "0");
                                                 return getNum(a.title) - getNum(b.title);
                                             })
-                                            .map((test) => (
-                                                <Card key={test.id} className="hover-elevate transition-all flex flex-col h-full">
-                                                    <CardHeader className="pb-3">
-                                                        <div className="flex justify-between items-start mb-2">
-                                                            <Badge variant="outline" className="font-mono">SET {test.title.split('#')[1]}</Badge>
-                                                            <Badge variant="secondary" className="bg-green-100 text-green-700 hover:bg-green-100">
-                                                                {test.duration} MINS
-                                                            </Badge>
-                                                        </div>
-                                                        <CardTitle className="text-lg line-clamp-1">{test.title}</CardTitle>
-                                                        <CardDescription className="line-clamp-1">{test.subject}</CardDescription>
-                                                    </CardHeader>
-                                                    <CardContent className="mt-auto pt-0">
-                                                        <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground">
-                                                            <span className="material-symbols-outlined text-base">list_alt</span>
-                                                            <span>{test.totalQuestions} Questions</span>
-                                                        </div>
-                                                        <Link href={`/upsc/test/${test.id}`}>
-                                                            <Button className="w-full" variant="outline">Start Daily Quiz</Button>
-                                                        </Link>
-                                                    </CardContent>
-                                                </Card>
-                                            ))}
+                                            .map((test) => {
+                                                const session = getTestStatus(test.id);
+                                                const isCompleted = session?.status === 'completed' || !!session?.score; // Checking score presence as fallback
+                                                return (
+                                                    <Card key={test.id} className={`hover-elevate transition-all flex flex-col h-full ${isCompleted ? 'border-green-200 bg-green-50/30' : ''}`}>
+                                                        <CardHeader className="pb-3">
+                                                            <div className="flex justify-between items-start mb-2">
+                                                                <Badge variant="outline" className="font-mono">SET {test.title.split('#')[1]}</Badge>
+                                                                {isCompleted ? (
+                                                                    <Badge className="bg-green-100 text-green-700 hover:bg-green-100 flex items-center gap-1">
+                                                                        <CheckCircle2 className="h-3 w-3" /> Done
+                                                                    </Badge>
+                                                                ) : (
+                                                                    <Badge variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-100">
+                                                                        {test.duration} min
+                                                                    </Badge>
+                                                                )}
+                                                            </div>
+                                                            <CardTitle className="text-lg line-clamp-1">{test.title}</CardTitle>
+                                                            <CardDescription className="line-clamp-1">{test.subject}</CardDescription>
+                                                        </CardHeader>
+                                                        <CardContent className="mt-auto pt-0">
+                                                            <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground">
+                                                                <span className="material-symbols-outlined text-base">list_alt</span>
+                                                                <span>{test.totalQuestions} Questions</span>
+                                                                {session && (
+                                                                    <span className="ml-auto font-medium text-foreground">
+                                                                        Score: {session.score}/{test.totalQuestions}
+                                                                    </span>
+                                                                )}
+                                                            </div>
+                                                            <div className="flex gap-2">
+                                                                {isCompleted ? (
+                                                                    <>
+                                                                        <Link href={`/upsc/result/${session.id}`} className="flex-1">
+                                                                            <Button variant="outline" className="w-full">Result</Button>
+                                                                        </Link>
+                                                                        <Button variant="outline" size="icon" onClick={() => handleRetake(test.id)} title="Retake Quiz">
+                                                                            <RotateCcw className="h-4 w-4" />
+                                                                        </Button>
+                                                                    </>
+                                                                ) : (
+                                                                    <Link href={`/upsc/test/${test.id}`} className="w-full">
+                                                                        <Button className="w-full" variant={session ? "secondary" : "default"}>
+                                                                            {session ? "Resume Quiz" : "Start Daily Quiz"}
+                                                                        </Button>
+                                                                    </Link>
+                                                                )}
+                                                            </div>
+                                                        </CardContent>
+                                                    </Card>
+                                                )
+                                            })}
                                     </div>
                                 ) : (
                                     <Card className="p-12 text-center">
@@ -157,6 +248,40 @@ export default function UPSCPage() {
                                     </Card>
                                 )}
                             </section>
+                        </TabsContent>
+
+                        <TabsContent value="revision" className="space-y-4">
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle className="flex items-center gap-2">
+                                        <Brain className="h-5 w-5 text-primary" />
+                                        Spaced Repetition Review
+                                    </CardTitle>
+                                    <CardDescription>
+                                        Review questions you missed previously to strengthen your memory.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    {isLoadingRevisions ? (
+                                        <div className="flex justify-center p-4">
+                                            <Loader2 className="h-8 w-8 animate-spin" />
+                                        </div>
+                                    ) : revisions && revisions.length > 0 ? (
+                                        <div className="text-center py-8">
+                                            <div className="text-4xl font-bold text-primary mb-2">{revisions.length}</div>
+                                            <p className="text-muted-foreground mb-6">Questions pending for review today</p>
+                                            <Button size="lg" onClick={handleStartRevision} className="gap-2">
+                                                <Brain className="h-4 w-4" /> Start Revision Session
+                                            </Button>
+                                        </div>
+                                    ) : (
+                                        <div className="text-center py-8 text-muted-foreground">
+                                            <CheckCircle2 className="h-12 w-12 mx-auto mb-4 text-green-500" />
+                                            <p>All caught up! No questions due for revision today.</p>
+                                        </div>
+                                    )}
+                                </CardContent>
+                            </Card>
                         </TabsContent>
                     </Tabs>
                 </div>

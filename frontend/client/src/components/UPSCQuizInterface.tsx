@@ -57,6 +57,26 @@ export function UPSCQuizInterface({
     const queryClient = useQueryClient();
     const { toast } = useToast();
 
+    // Fetch bookmarks on load
+    useEffect(() => {
+        const fetchBookmarks = async () => {
+            if (!test.subject) return;
+            try {
+                const res = await fetch(`/api/auth/bookmarks/?subject=${test.subject}`, {
+                    headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    const bookmarkedIds = new Set<string>(data.map((b: any) => String(b.question_id)));
+                    setBookmarkedQuestions(bookmarkedIds);
+                }
+            } catch (err) {
+                console.error("Failed to fetch bookmarks", err);
+            }
+        };
+        fetchBookmarks();
+    }, [test.subject]);
+
     const [chatHistories, setChatHistories] = useState<{ [qid: string]: Message[] }>({});
 
     const questions = test.questions as (Question & { image_url?: string })[] | undefined;
@@ -147,13 +167,47 @@ export function UPSCQuizInterface({
         onSubmit(userAnswers);
     };
 
-    const handleBookmarkToggle = (qid: string) => {
+    const handleBookmarkToggle = async (qid: string) => {
+        const isBookmarked = bookmarkedQuestions.has(qid);
+
+        // Optimistic update
         setBookmarkedQuestions(prev => {
             const next = new Set(prev);
-            if (next.has(qid)) next.delete(qid);
+            if (isBookmarked) next.delete(qid);
             else next.add(qid);
             return next;
         });
+
+        try {
+            if (isBookmarked) {
+                // Delete bookmark
+                await fetch(`/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+                });
+            } else {
+                // Create bookmark
+                await fetch('/api/auth/bookmarks/create/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Token ${localStorage.getItem('token')}`
+                    },
+                    body: JSON.stringify({
+                        subject: test.subject,
+                        question_id: qid
+                    })
+                });
+            }
+        } catch (error) {
+            console.error("Failed to toggle bookmark", error);
+            // Revert state on error? For now, we'll just log it. 
+            toast({
+                title: "Error",
+                description: "Failed to update bookmark.",
+                variant: "destructive",
+            });
+        }
     };
 
     const getOptionClassName = (option: any) => {
@@ -273,6 +327,7 @@ export function UPSCQuizInterface({
                                 onHistoryChange={(newHistory) => {
                                     setChatHistories(prev => ({ ...prev, [currentQuestionId]: newHistory }));
                                 }}
+                                onBookmarkChange={() => handleBookmarkToggle(currentQuestionId)}
                             />
                         );
                     })()}

@@ -48,6 +48,8 @@ import DailyTargetRevision from "@/pages/daily-targets/revision";
 import DailyTargetResultPage from "@/pages/daily-targets/result";
 import UPSCPage from "@/pages/upsc";
 import UPSCQuizPage from "@/pages/upsc/quiz";
+import UPSCResultPage from "@/pages/upsc/result";
+import UPSCRevisionPage from "@/pages/upsc/revision";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -106,6 +108,8 @@ function Router() {
       <Route path="/daily-targets/revision" component={DailyTargetRevision} />
       <Route path="/upsc" component={UPSCPage} />
       <Route path="/upsc/test/:id" component={UPSCQuizPage} />
+      <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
+      <Route path="/upsc/revision" component={UPSCRevisionPage} />
       <Route component={NotFound} />
     </Switch>
   );

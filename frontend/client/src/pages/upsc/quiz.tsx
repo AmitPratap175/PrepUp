@@ -16,6 +16,8 @@ const UPSCQuizPage: React.FC = () => {
     const [loading, setLoading] = useState(true);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
+    const [startTime] = useState<string>(new Date().toISOString());
+
     useEffect(() => {
         if (testId) {
             fetchTest();
@@ -53,15 +55,89 @@ const UPSCQuizPage: React.FC = () => {
     const handleSubmit = async (userAnswers: UserAnswer[]) => {
         if (!test) return;
 
-        // In a real app, we would calculate on backend or frontend
-        // For UPSC, we'll just show a success toast and go back to results or landings
-        // Since we don't have a dedicated result page for UPSC yet, let's keep it simple.
+        // Calculate score
+        let totalScore = 0;
+        const questions = (test.questions || []) as any[];
 
-        toast({
-            title: "Success",
-            description: "You have completed the UPSC quiz!",
+        // Prepare answers with correctness
+        const processedAnswers = userAnswers.map(ans => {
+            const question = questions.find((q: any) => (q.qid || q.id) === ans.questionId);
+            if (!question) return ans;
+
+            const isCorrect = ans.selectedAnswer === question.correct_answer;
+            if (isCorrect) totalScore++; // Simple +1 scoring for now matching result page logic
+
+            return {
+                questionId: ans.questionId,
+                selectedAnswer: ans.selectedAnswer,
+                isCorrect
+            };
         });
-        setLocation('/upsc');
+
+        const payload = {
+            testId: test.id,
+            startTime: startTime,
+            totalQuestions: questions.length,
+            answers: processedAnswers,
+            score: totalScore,
+            subject: test.subject,
+            maxScore: questions.length
+        };
+
+        // Schedule revisions for incorrect answers
+        const incorrectAnswers = processedAnswers.filter((a: any) => !a.isCorrect);
+        if (incorrectAnswers.length > 0) {
+            try {
+                const revisionItems = incorrectAnswers.map(ans => {
+                    const question = questions.find((q: any) => (q.qid || q.id) === ans.questionId);
+                    return {
+                        questionId: ans.questionId,
+                        subject: test.subject || "Current Affairs",
+                        questionData: question
+                    };
+                });
+
+                await fetch('/api/revision/schedule/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Token ${localStorage.getItem('token')}`
+                    },
+                    body: JSON.stringify({ items: revisionItems })
+                });
+            } catch (err) {
+                console.error("Failed to schedule revisions:", err);
+            }
+        }
+
+        try {
+            const response = await fetch('/api/test-sessions/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Token ${localStorage.getItem('token')}`
+                },
+                body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                toast({
+                    title: "Success",
+                    description: "Quiz submitted successfully!",
+                });
+                setLocation(`/upsc/result/${data.id}`);
+            } else {
+                throw new Error('Submission failed');
+            }
+        } catch (error) {
+            console.error(error);
+            toast({
+                title: "Error",
+                description: "Failed to submit quiz.",
+                variant: "destructive",
+            });
+        }
     };
 
     if (loading) {

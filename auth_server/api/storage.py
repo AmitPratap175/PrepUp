@@ -711,7 +711,7 @@ class MemStorage:
                 "totalQuestions": session.total_questions,
                 "correctAnswers": session.correct_answers,
                 "answers": session.answers,
-                "isCompleted": session.is_completed,
+                "isCompleted": session.status == 'completed',
                 "subject": session.subject,
                 "maxScore": session.max_score,
             }

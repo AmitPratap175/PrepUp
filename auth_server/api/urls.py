@@ -59,4 +59,5 @@ urlpatterns = [
     path('daily-targets/session-result/<uuid:session_id>/', views.DailyTargetSessionResultView.as_view(), name='daily-targets-session-result'),
     path('daily-targets/regenerate/', views.DailyTargetRegenerateView.as_view(), name='daily-targets-regenerate'),
     path('revision/', views.RevisionView.as_view(), name='revision'),
+    path('revision/schedule/', views.ScheduleRevisionView.as_view(), name='schedule_revision'),
 ]

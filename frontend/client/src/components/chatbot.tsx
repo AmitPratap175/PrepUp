@@ -15,7 +15,7 @@ interface ChatbotProps {
   initialMessage?: string;
   history: Message[];
   onHistoryChange: (history: Message[]) => void;
-  onBookmarkChange: () => void;
+  onBookmarkChange?: () => void;
 }
 
 export interface Message {
@@ -393,7 +393,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, histo
       setMessages(prevMessages => [...prevMessages, botMessage]);
 
       if (data.reply.toLowerCase().includes('bookmark')) {
-        onBookmarkChange();
+        onBookmarkChange?.();
       }
     } catch (error: any) {
       console.error('Error sending message:', error);

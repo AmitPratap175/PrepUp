@@ -43487,6 +43487,121 @@
       "solution_text": "Based on the information, we can infer the following possibilities for each person. Revathi has equal PCB and PCM scores and hence must be either B/D. Nilima’s lowest marks are in Maths and hence she must be either A/E. Pooja scored more in Bio than in any other subject => Bio score should be greater than all other score => Pooja can be A/E. Only C and D cleared the engineering cut-offs => Usha can be C/D.\n\nHence, A/E can be arranged between Pooja and Nilima in 2 ways. The possible variables for (Usha, Lalita, Revathi) are (C,B,D), (C,D,B) and (D,C,B) => 3 ways. Hence, distinct solutions = 2*3=6 solutions.",
       "image_url": "https://cracku.in/media/questionGroup/lr_table.png",
       "full_markdown": "### Question (qid: 2885)\n\n**Passage:**\nStudy the information given below and answer the following questions\n\nThe following table gives the marks of Lalita, Nilima, Pooja, Revathi and Usha, in no particular order, in four subjects in the 12th standard board examinations. Based on these marks, the students can apply for admission to engineering and medical colleges. Engineering colleges require the total score in Physics, Chemistry and Maths (PCM) to be more than 270 and Medical colleges require the total score in Physics, Chemistry and Biology (PCB) to be more than 270.\n\nWe know that\n\nHow many distinct solutions exist for this problem?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1530",
+      "passage_text": "A team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "Which player must necessarily be present in the team if E is included in the team?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "L",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "H",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "I",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "A",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "From point 1, one among A and D must be present in the team, but not both. (A/D)\n\nFrom points 6 and 7, we can say that a team that has both A and E or D and E must necessarily have L. (AE => L and DE => L)\n\nNow, we need to select E in the team, and one among A or D must be present, which implies the combination in the team is either AE or DE.\n\nIn both cases, we must have to select L (Since AE => L and DE => L)\n\nHence, the correct option is A.\n\nAlternate explanation:\nFrom (i), the team must always contain A or D, but not both. Hence, all combinations of batsmen are as follows:\n\nAB\n\nAC\n\nDB\n\nDC\n\nNo other possible combination of batsmen can be present.\n\nWhen D and B are the batsmen, only then can G be the wicketkeeper, in other combinations, G cannot be the wicketkeeper. <From (ii)>.\n\nHence, all combinations of batsman and wicketkeeper are\n\nCombination 1: ABE\n\nCombination 2: ABF\n\nCombination 3: ACE\n\nCombination 4: ACF\n\nCombination 5: DBE\n\nCombination 6: DBF\n\nCombination 7: DBG\n\nCombination 8: DCE\n\nCombination 9: DCF\n\nUsing (iii), from 5 to 9, K is not present\n\nUsing (iv), 3,4,8,9, J is not present.\n\nUsing (v), 2, 4, 6, 9, H is not present.\n\nHence, all possible bowlers we can choose from in the 9 combinations are \n\nNow, as per the hints given under (vi) and (vii), we have to choose L in 1, 3, 5 and 8.\n\nSo, the total number of teams possible\n\nOn observation, we can say that L is necessarily included if E is there in the team.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369889)\n\n**Passage:**\nA team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.\n\nWhich player must necessarily be present in the team if E is included in the team?\n\n**Options:**\n- **A**. L\n- **B**. H\n- **C**. I\n- **D**. A\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1531",
+      "passage_text": "A team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "How many teams have G as the wicketkeeper?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "From (i), the team must always contain A or D, but not both. Hence, all combinations of batsmen are as follows:\n\nAB\n\nAC\n\nDB\n\nDC\n\nNo other possible combination of batsmen can be present.\n\nWhen D and B are the batsmen, only then can G be the wicketkeeper, in other combinations, G cannot be the wicketkeeper. <From (ii)>.\n\nHence, all combinations of batsman and wicketkeeper are\n\nCombination 1: ABE\n\nCombination 2: ABF\n\nCombination 3: ACE\n\nCombination 4: ACF\n\nCombination 5: DBE\n\nCombination 6: DBF\n\nCombination 7: DBG\n\nCombination 8: DCE\n\nCombination 9: DCF\n\nUsing (iii), from 5 to 9, K is not present\n\nUsing (iv), 3,4,8,9, J is not present.\n\nUsing (v), 2, 4, 6, 9, H is not present.\n\nHence, all possible bowlers we can choose from in the 9 combinations are \n\nNow, as per the hints given under (vi) and (vii), we have to choose L in 1, 3, 5 and 8.\n\nSo, the total number of teams possible\n\nOnly combination 7 has G, hence 6 cases are possible.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369890)\n\n**Passage:**\nA team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.\n\nHow many teams have G as the wicketkeeper?\n\n**Options:**\n- **A**. 2\n- **B**. 10\n- **C**. 6\n- **D**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1532",
+      "passage_text": "A team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "How many teams do not have both A and L in them?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "14",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "`From (i), the team must always contain A or D, but not both. Hence, all combinations of batsmen are as follows:\n\nAB\n\nAC\n\nDB\n\nDC\n\nNo other possible combination of batsmen can be present.\n\nWhen D and B are the batsmen, only then can G be the wicketkeeper, in other combinations, G cannot be the wicketkeeper. <From (ii)>.\n\nHence, all combinations of batsman and wicketkeeper are\n\nCombination 1: ABE\n\nCombination 2: ABF\n\nCombination 3: ACE\n\nCombination 4: ACF\n\nCombination 5: DBE\n\nCombination 6: DBF\n\nCombination 7: DBG\n\nCombination 8: DCE\n\nCombination 9: DCF\n\nUsing (iii), from 5 to 9, K is not present\n\nUsing (iv), 3,4,8,9, J is not present.\n\nUsing (v), 2, 4, 6, 9, H is not present.\n\nHence, all possible bowlers we can choose from in the 9 combinations are \n\nNow, as per the hints given under (vi) and (vii), we have to choose L in 1, 3, 5 and 8.\n\nSo, the total number of teams possible\n\nCombinations 1 through 4 are excluded since they have A.\n\nCombinations 9, 5 and 8 are also excluded since they have L.\n\nCombination 6: 1 case where I and J are included.\n\nCombination 7: 3 cases are possible where L is not chosen(3c2).\n\nHence a total of 4 cases.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369891)\n\n**Passage:**\nA team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.\n\nHow many teams do not have both A and L in them?\n\n**Options:**\n- **A**. 5\n- **B**. 4\n- **C**. 6\n- **D**. 14\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1533",
+      "passage_text": "A team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "How many teams can be formed in total?",
+      "options": [],
+      "correct_option_data": "31",
+      "solution_text": "`From (i), the team must always contain A or D, but not both. Hence, all combinations of batsmen are as follows:\n\nAB\n\nAC\n\nDB\n\nDC\n\nNo other possible combination of batsmen can be present.\n\nWhen D and B are the batsmen, only then can G be the wicketkeeper, in other combinations, G cannot be the wicketkeeper. <From (ii)>.\n\nHence, all combinations of batsman and wicketkeeper are\n\nCombination 1: ABE\n\nCombination 2: ABF\n\nCombination 3: ACE\n\nCombination 4: ACF\n\nCombination 5: DBE\n\nCombination 6: DBF\n\nCombination 7: DBG\n\nCombination 8: DCE\n\nCombination 9: DCF\n\nUsing (iii),  from 5 to 9, K is not present\n\nUsing (iv), 3,4,8,9, J is not present.\n\nUsing (v), 2, 4, 6, 9, H is not present.\n\nHence, all possible bowlers we can choose from in the 9 combinations are \n\nNow, as per the hints given under (vi) and (vii), we have to choose L in 1, 3, 5 and 8.\n\nSo, the total number of teams possible\n\nHence, total number of possible teams = 31.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369892)\n\n**Passage:**\nA team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.\n\nHow many teams can be formed in total?\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
