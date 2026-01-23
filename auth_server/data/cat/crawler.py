@@ -294,7 +294,7 @@ async def main():
     """
     Main function to read URLs, categorize them, scrape, and append to JSON files.
     """
-    output_dir = Path("temp")
+    output_dir = Path("docs")
     output_dir.mkdir(exist_ok=True)
 
     category_map = {

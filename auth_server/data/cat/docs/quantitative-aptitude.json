@@ -67532,6 +67532,1782 @@
       "solution_text": "In the given equations the logarithms are defined to base less than 1 and hence a series of decreasing functions and hence we reverse the sign for the functions.\n\n$\\log_{0.33}\\left(x^2-3x+2\\right)\\ \\ \\ $ > $\\log_{0.33}\\left(6\\right)\\ \\ \\ $\n\n$x^2-3x+2<6$\n\n$x^2-3x-4<0$\n\n(x-4)(x+1)<0.\n\nTo satisfy this condition the range x =(-1,4).\n\nx takes values of 0,1,2,3.\n\nIf x = 0  $x^2-3x+2\\ =\\ 2$ and $\\log_{0.33}\\left(2\\right)$ >$\\log_{0.33}\\left(6\\right)$ .\n\nif x = 1  $x^2-3x+2\\ =0$ and $\\log_{0.33}\\left(0\\right)$ is not defined.\n\nif x = 2   $x^2-3x+2\\ =0$ and $\\log_{0.33}\\left(0\\right)$ is not defined.\n\nIf x = 3  $x^2-3x+2\\ =\\ 2$ and $\\log_{0.33}\\left(2\\right)$ >$\\log_{0.33}\\left(6\\right)$.\n\nx = 0,3 are two integral values that satisfy the condition",
       "image_url": "",
       "full_markdown": "### Question (qid: 387514)\n\n**Passage:**\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n340\n\n600\n\n240\n\n480\n\n380\n\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n**Options:**\n- **A**. 340\n- **B**. 600\n- **C**. 240\n- **D**. 480\n- **E**. 380\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "476390",
+      "passage_text": null,
+      "question_text": "A value of $c$ for which the minimum value of $f(x)=x^{2}-4cx+8c$ is greater than the maximum value of $g(x)=-x^{2}+3cx-2c$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{1}{2}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$-\\dfrac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$-2$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nFirst function $f\\left(x\\right)=x^2-4cx+8$\nFor this function $a>0$, so minimum value will occur at $x=-\\dfrac{b}{2a}=-\\left(-\\dfrac{4c}{2}\\right)=2c$\nSo, the minimum value of the function is = $2c^2-4c\\left(2c\\right)+8c=-4c^2+8c$\nSecond function $g(x)=-x^{2}+3cx-2c$\nFor this function $a<0$, so maximum value will occur at $x=-\\dfrac{b}{2a}=-\\dfrac{\\left(-3c\\right)}{2}=\\dfrac{3c}{2}$\nSo, the maximum value of the function is = $-\\left(\\dfrac{3c}{2}\\right)^2+3c\\left(\\dfrac{3c}{2}\\right)-2c=\\dfrac{9c^2}{4}-2c$\nSo, as per the given condition,\n$\\dfrac{9c^2}{4}-2c<-4c^2+8c$\nor, $\\dfrac{9c^2}{4}+4c^2<8c+2c$\nor, $\\dfrac{25c^2}{4}<10c$\nor, $\\dfrac{5c^2}{4}<2c$\nor, $5c^2<8c$\nor, $5c^2-8c<0$\nor, $c\\left(c-\\dfrac{8}{5}\\right)<0$\nor, $0<c<\\dfrac{8}{5}$\nSo, the value of $c$ which lies in this range is $\\dfrac{1}{2}$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476390)"
+    },
+    {
+      "qid": "476391",
+      "passage_text": null,
+      "question_text": "Shruti travels a distance of 224 km in four parts for a total travel time of 3 hours. Her speeds in these four parts follow an arithmetic progression, and the corresponding time taken to cover these four parts follow another arithmetic progression. If she travels at a speed of 960 meters per minute for 30 minutes to cover the first part, then the distance, in meters, she travels in the fourth part is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "76800",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "112000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "96000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "86400",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nAccording to question, Shruti travels a distance of 224 km in four parts for a total travel time of 3 hours.\nGiven, in the first part time required is 30 minutes.\nAlso, the time taken to cover these four parts follow arithmetic progression.\nSo, let us say the times be 30 minutes, (30+d) minutes, (30+2d) minutes and (30+3d) minutes\nSo, $30+\\left(30+d\\right)+\\left(30+2d\\right)+\\left(30+3d\\right)=180$\nor, $6d=180-120$\nor, $6d=60$\nor, $d=\\dfrac{60}{6}=10$ minutes.\nSo, the time required in these four parts are 30 minutes, 40 minutes, 50 minutes and 60 minutes respectively.\nNow, in the first part, speed is 960 metres per minute.\nSpeed in the four parts is also in arithmetic progression.\nLet's say the speeds be $(960+x)$,$(960+2x)$,$(960+3x)$ metres per minute\nSo, total distance covered = $960\\times\\ 30+\\left(960+x\\right)\\times\\ 40+\\left(960+2x\\right)\\times\\ 50+\\left(960+3x\\right)\\times\\ 60$ metres \nSo, $960\\times\\ 30+\\left(960+x\\right)\\times\\ 40+\\left(960+2x\\right)\\times\\ 50+\\left(960+3x\\right)\\times\\ 60=224000$\nor, $960\\left(30+40+50+60\\right)+40x+\\left(2x\\right)\\left(50\\right)+\\left(3x\\right)\\left(60\\right)=224000$\nor, $172800+320x=224000$\nor, $320x=224000-172800=51200$\nor, $x=\\dfrac{51200}{320}=160$\nSo, the speed in the fourth part is $960+3x=960+3\\times\\ 160=1440$ metres per minute\nTime in the fourth part is 60 minutes\nSo, distance covered in the fourth part = $1440\\times\\ 60=86400$ metres\nSo, option D is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476391)"
+    },
+    {
+      "qid": "476392",
+      "passage_text": null,
+      "question_text": "In a 3-digit number N, the digits are non-zero and distinct such that none of the digits is a perfect square, and only one of the digits is a prime number. Then, the number of factors of the minimum possible value of N is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "Solution\n\nAccording to question, in the given 3-digit number N, the digits are non-zero and distinct.\nSo, the possible digits in 3-digit number = $2,3,5,6,7,8$\nIt is also given that only one of the digits is a prime number.\nSo, the minimum possible value of N = 268\n(2 is the smallest prime digit, and the non-prime digits has to be 6 and 8)\nNow, $268=4\\times\\ 67=2^2\\times\\ 67$\nSo, the number of factors = $\\left(2+1\\right)\\left(1+1\\right)=3\\times\\ 2=6$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476392)"
+    },
+    {
+      "qid": "476393",
+      "passage_text": null,
+      "question_text": "Let $3\\leq x\\leq6$ and $\\left[x^{2}\\right] =\\left[x\\right]^{2}$ , where $[x]$ is the greatest integer not exceeding $x$ . If set $S$ represents all feasible values of $x$, then a possible subset of $S$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\left(3,\\sqrt{10}\\right)\\cup \\left[5,\\sqrt{26}\\right)\\cup \\left\\{6\\right\\}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\left[3,\\sqrt{10}\\right] \\cup \\left[5,\\sqrt{26}\\right]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\left[3,\\sqrt{10}\\right]\\cup \\left[4,\\sqrt{17}\\right]\\cup \\left\\{6\\right\\}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\left(4,\\sqrt{18}\\right)\\cup\\left[5,\\sqrt{27}\\right)\\cup\\left\\{6\\right\\}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nFor n=3,4,5 and $x\\in[n,n+1)$ we have $\\lfloor x\\rfloor=n$, so the equation\n$\\lfloor x^2\\rfloor=\\lfloor x\\rfloor^2=n^2$\n$x^2\\in[n^2,n^2+1)$, i.e. $x\\in[n,\\sqrt{n^2+1})$\nThus for $3\\le x\\le6$\n$S=[3,\\sqrt{10})\\ \\cup\\ [4,\\sqrt{17})\\ \\cup\\ [5,\\sqrt{26})\\ \\cup{6}$\n\nOption B and C have $\\sqrt{10}$ included, which is not part of the original set. And Option D has $\\sqrt{18}$. So, it is not possible. \nOption A is the answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476393)"
+    },
+    {
+      "qid": "476394",
+      "passage_text": null,
+      "question_text": "Stocks A, B and C are priced at rupees 120, 90 and 150 per share, respectively. A trader holds a portfolio consisting of 10 shares of stock A, and 20 shares of stocks B and C put together. If the total value of her portfolio is rupees 3300, then the number of shares of stock B that she holds, is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "15",
+      "solution_text": "Solution\n\nLet the number of stocks B hold be $x$\nSo, number of stocks C hold is $20-x$\nSo, $10\\times\\ 120+90\\times\\ x+150\\times\\ \\left(20-x\\right)=3300$\nor, $1200+90\\ x+150\\left(20-x\\right)=3300$\nor, $1200+90\\ x+3000-150x=3300$\nor, $4200-60x=3300$\nor, $60x=900$\nor, $x=\\dfrac{900}{60}=15$\nSo, the number of shares of stock that B hold is 15.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476394)"
+    },
+    {
+      "qid": "476395",
+      "passage_text": null,
+      "question_text": "For any natural number k , let $a_{k}=3^{k}$. The smallest natural number m for which $\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "58",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "59",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "57",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nGiven expression is $\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$,\n$\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}$ = $\\left\\{3^1\\times3^4\\times3^9...\\times3^{400}\\right\\}$\nSum of square of n natural numbers is $\\frac{n\\cdot\\left(n+1\\right)\\cdot\\left(2n+1\\right)}{6}$\n = $3^{\\dfrac{\\left(20\\cdot21\\cdot41\\right)}{6}}$ = $3^{2870}$\nOn right hand side of inequlaity we have $\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$\n = $3^{21}\\times3^{22}\\times...\\times3^{20+m}$ = $3^{21+22+...+20+m}$\nUsing the sum of the first (n) natural numbers,\n$1+2+\\cdots+n = \\frac{n(n+1)}{2}$\n$21 + 22 + \\cdots + (20+m)$\n\n= $1+2+\\cdots+(20+m) - (1+2+\\cdots+20)$\n$1+2+\\cdots+(20+m)=\\frac{(20+m)(21+m)}{2}$\n$1+2+\\cdots+20 = \\frac{20\\cdot21}{2} = 210$\n\nSo, $21+22+\\cdots+(20+m)$\n\n= $\\frac{(20+m)(21+m)}{2} - 210$\n\nExpanding, $(20+m)(21+m)=m^2+41m+420$\n\nThus, $\\frac{m^2+41m+420}{2}-210$\n$= \\frac{m^2+41m}{2}$\nSince the bases are equal, we must compare the powers.\n$2870<\\frac{m^2+41m}{2} \\Rightarrow 5740<m(m+41) $\nHere, we can put in the option to check the minimum value that satisfies the inequality.\n56: We get 5740<5264. This is false\n57: We get 5740<5586. This is false\n58: We get 5740<5742. This is the minimum possible value.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476395)"
+    },
+    {
+      "qid": "476396",
+      "passage_text": null,
+      "question_text": "The number of distinct integers $n$ for which $\\log_{\\frac{1}{4}}({n^{2}-7n+11})>0$,is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "infinite",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "0",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nFor base of log in range $1/4\\in(0,1)$ and $\\log_{1/4}(x)>0$ is true only if 0<x<1. \nFor integer n, $x=n^2-7n+11$ is an integer, so it cannot lie strictly between 0 and 1.\nSo, there is no integer value for which this inequality is satisfied.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476396)"
+    },
+    {
+      "qid": "476397",
+      "passage_text": null,
+      "question_text": "The number of distinct pairs of integers (x, y) satisfying the inequalities $x>y\\geq3 $ and $x+y<14$ is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "16",
+      "solution_text": "Solution\n\nIt is given, $x>y\\geq3 $ and $x+y<14$\nNow for $y=3$, the values of $x$ can be 4,5,6,7,8,9,10  (7 cases)\nThen for $y=4$, the values of $x$ can be 5,6,7,8,9 (5 cases)\nThen for $y=5$, the values of $x$ can be 6,7,8 (3 cases)\nThen for $y=6$, the values of $x$ will be 7 (1 case)\nSo, total number of cases =1+3+5+7=16 cases",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476397)"
+    },
+    {
+      "qid": "476398",
+      "passage_text": null,
+      "question_text": "At a certain simple rate of interest, a given sum amounts to Rs 13920 in 3 years, and to Rs 18960 in 6 years and 6 months. If the same given sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, then the total interest earned, in rupees, would have been nearest to",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3221",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3180",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3150",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3096",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet the principal be ₹ P and rate of interest be r%.\nNow, $13920=P+\\dfrac{P\\times\\ r\\times\\ 3}{100}$\nor, $13920-P=\\dfrac{P\\times\\ r\\times\\ 3}{100}$ ---->(1)\nAlso, $18960=P+\\dfrac{P\\times\\ r\\times\\ 13}{100\\times\\ 2}$\n$18960-P=\\dfrac{P\\times\\ r\\times13}{100\\times\\ 2}$ ----->(2)\nDividing eqn(1) by eqn(2),\n$\\dfrac{13920-P}{18960-P}=\\dfrac{3}{\\frac{12}{2}}=\\dfrac{6}{13}$\nor, $\\left(13920-P\\right)13=\\left(18960-P\\right)6$\nor, $13920\\times\\ 13-13P=18960\\times\\ 6-6P$\nor, $13920\\times\\ 13-18960\\times\\ 6=13P-6P$\nor, $180960-113760=7P$\nor, $67200=7P$\nor, $P=\\dfrac{67200}{7}=9600$\nPutting this in equation (1),\n$13920-9600=\\dfrac{9600\\times\\ r\\times\\ 3}{100}$\nor, $4320=96\\times\\ 3r$\nor, $r=\\dfrac{4320}{96\\times\\ 3}=15$\nSo, rate percent is $15\\%$\nNow if the same sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, amount = $9600\\left(1+\\dfrac{\\frac{15}{2}}{100}\\right)^4=9600\\left(1+\\frac{7.5}{100}\\right)^4$\nSo, interest = $9600\\left(1+\\frac{7.5}{100}\\right)^4-9600$\n= Rs 3220.50\n= Rs 3221\nSo, the total interest earned is Rs 3221.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476398)"
+    },
+    {
+      "qid": "476399",
+      "passage_text": null,
+      "question_text": "A container holds 200 litres of a solution of acid and water, having 30% acid by volume. Atul replaces 20% of this solution with water, then replaces 10% of the resulting solution with acid, and finally replaces 15% of the solution thus obtained, with water. The percentage of acid by volume in the final solution obtained after these three replacements, is nearest to",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "29",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "27",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\n200 L with (30%) acid $\\Rightarrow$ acid = $0.30\\times200=60 L$\n\nReplace 20% with water: remaining acid $=60\\times(1-0.20)=60\\times0.8=48 L$.\n\nReplace 10% with pure acid: After removing 10% of the mixture, the acid becomes $48\\times0.9=43.2 L$, then adding back 20 L pure acid $\\Rightarrow acid =43.2+20=63.2 L$.\n\nReplace 15 with water: acid left $= 63.2\\times(1-0.15)=63.2\\times0.85=53.72 L$.\nFinal concentration $= \\dfrac{53.72}{200}=0.2686\\approx26.86%$.\nThe answer is 27%",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476399)"
+    },
+    {
+      "qid": "476400",
+      "passage_text": null,
+      "question_text": "In a class, there were more than 10 boys and a certain number of girls. After 40% of the girls and 60% of the boys left the class, the remaining number of girls was 8 more than the remaining number of boys. Then, the minimum possible number of students initially in the class was",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "55",
+      "solution_text": "Solution\n\nLet say number of girls be $g$ and number of boys be $b$.\nIf 40% of the girls left, remaining number of girls = $0.6g$\nAlso if 60% of the boys left, remaining number of boys = $0.4b$\nor, $0.6g=0.4b+8$\nor, $6g=4b+80$\nor, $3g=2b+40$\nSo, the possible values of (b,g) are: (13,22),(16,24),(19,26),(22,28),(25,30),.....\nNow, $0.6g$ and $0.4b$ has to be an integer.\nSo, for this $g$ and $b$ has to be a multiple of 5\nSo, $b=25$ and $g=30$\nSo, minimum possible number of students = $25+30=55$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476400)"
+    },
+    {
+      "qid": "476401",
+      "passage_text": null,
+      "question_text": "A cafeteria offers 5 types of sandwiches. Moreover, for each type of sandwich, a customer can choose one of 4 breads and opt for either small or large sized sandwich. Optionally, the customer may also add up to 2 out of 6 available sauces. The number of different ways in which an order can be placed for a sandwich, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "880",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "840",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "800",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "600",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nNumber of ways to choose a sandwich = $^5C_1$ ways\nNumber of ways to choose a bread = $^4C_1$ ways\nNumber of ways to choose bread size = $^2C_1$ ways\nNumber of ways to choose sauces = $^6C_0+^6C_1+^6C_2=1+6+15=22$ ways\nSo, number of different ways = $^5C_1\\times\\ ^4C_1\\times\\ ^2C_1\\times\\ 22=5\\times\\ 4\\times\\ 2\\times\\ 22=880$ ways.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476401)"
+    },
+    {
+      "qid": "476402",
+      "passage_text": null,
+      "question_text": "In the set of consecutive odd numbers $\\left\\{1,3,5,...,57\\right\\}$, there is a number $k$ such that the sum of all the elements less than $k$ is equal to the sum of all the elements greater than $k$ . Then, $k$ equals",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "41",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "39",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "43",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nThe sum of all the elements in the given set = Sum of first 29 odd numbers = $29^2$ = 841\nLet's assume that k is the $m_{th}$ term. Sum of terms less than k = sum of first (m-1) odd numbers = $(m-1)^2$ \n$841-m^2=(m-1)^2$\n$841 - m^2 = m^2 - 2m + 1$\n\n$840 - 2m^2 + 2m = 0$\n\n$m^2 - m - 420 = 0$\n$(m - 21)(m + 20) = 0$\n\nm = 21 -20\n\nm = 20. And the 20th term is 2*m+1 = 41",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476402)"
+    },
+    {
+      "qid": "476403",
+      "passage_text": null,
+      "question_text": "Arun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "38400",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "38880",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "34400",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "47040",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet's assume that Total work = 1\nIf the work is entirely carried by each one of them it would cost \n\nArun: $2160 \\times 24 = 51840$\n\nVarun: $2400 \\times 21 = 50400$\n\nTarun: $2160 \\times 15 = 32400$\nThe cheapest worker is Tarun. He can finish the work in 15 days. But we need the work completed in 10 days.\nTarun does $10 \\times \\frac{1}{15} = \\frac{2}{3}$\n\n$1 - \\frac{2}{3} = \\frac{1}{3}$\n\nComplete the remaining (1/3) work using the next cheapest worker, which is Varun.\nDays needed: $\\frac{x}{21} = \\frac{1}{3} \\quad\\Rightarrow\\quad x = 7$\n\nTotal cost = Amount paid for Tarun + Amount paid for Varun = $10 \\times 2160 + 7 \\times 2400 = 38400$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476403)"
+    },
+    {
+      "qid": "476404",
+      "passage_text": null,
+      "question_text": "Kamala divided her investment of Rs 100000 between stocks, bonds, and gold. Her investment in bonds was 25% of her investment in gold. With annual returns of 10%, 6%, 8% on stocks, bonds, and gold, respectively, she gained a total amount of Rs 8200 in one year. The amount, in rupees, that she gained from the bonds, was",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "900",
+      "solution_text": "Solution\n\nLet the amounts invested in Stocks be S, Bonds B, and, Gold be G\nGiven that  $S + B + G = 100000, B = 0.25G$\n\n$0.10S + 0.06B + 0.08G = 8200$\n\nSubstitute S = 100000 - B - G = 100000 - 1.25G\n $0.10(100000 - 1.25G) + 0.06(0.25G) + 0.08G = 8200$\n$10000 - 0.125G + 0.015G + 0.08G = 8200$\n$10000 - 0.03G = 8200$\n$\n0.03G = 1800 \\Rightarrow G = 60000$\n$B = 0.25G = 15000$\n\nGain from bonds = $0.06 \\times 15000 = 900$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476404)"
+    },
+    {
+      "qid": "476405",
+      "passage_text": null,
+      "question_text": "If $a-6b+6c=4$ and $6a+3b-3c=50$, where a, b and c are real numbers, the value of $2a+3b-3c$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nGiven, $a-6b+6c=4$ --->(1)\nand, $6a+3b-3c=50$ ---->(2)\nMultiplying eqn (1) with $x$, $ax-6bx+6cx=4x$\nAnd multiplying eqn (2) with $y$, $6ay+3by-3cy=50y$\nSo, $x+6y=2$ and $3y-6x=3$\nSo, $x+6y=2$ ---->(3) and $-2x+y=1$ ---->(4)\nMultiplying eqn (4) with 6 and subtracting from eqn (3),\n$13x=-4$\nSo, $x=-\\dfrac{4}{13}$\nPutting the value of $x$ in equation (4),\n$y=\\dfrac{5}{13}$\nSo, the final answer is $4x+5y$\n=$4\\left(-\\frac{4}{13}\\right)+50\\left(\\frac{5}{13}\\right)=-\\frac{16}{13}+\\frac{250}{13}=\\frac{234}{13}=18$\nSo, correct answer is $18$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476405)"
+    },
+    {
+      "qid": "476406",
+      "passage_text": null,
+      "question_text": "The (x, y) coordinates of vertices P, Q and R of a parallelogram PQRS are (-3, -2), (1, -5) and (9, 1), respectively. If the diagonal SQ intersects the x-axis at (a, 0) , then the value of a is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\dfrac{27}{7}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{10}{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{13}{4}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{29}{9}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nGiven (P(-3,-2)), (Q(1,-5)), and (R(9,1)).\nFor parallelogram (PQRS), S = P + R - Q = (-3,-2) + (9,1) - (1,-5) = (5,4)\n\nDiagonal SQ passes through S(5,4) and Q(1,-5).\nSlope m = $\\dfrac{-5-4}{1-5} = \\dfrac{9}{4}$\n\nEquation of SQ is  $y - 4 = \\dfrac{9}{4}(x - 5)$\n\nAt the x-axis, y = 0: $-4 = \\dfrac{9}{4}(a - 5)$\n$-16 = 9(a - 5)$\n$9a = 29$\n$a = \\dfrac{29}{9}$\n\nSo, $a = {\\dfrac{29}{9}}$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476406)"
+    },
+    {
+      "qid": "476407",
+      "passage_text": null,
+      "question_text": "In a circle with center C and radius $6\\sqrt{2}$ cm, PQ and SR are two parallel chords separated by one of the diameters. If $\\angle PQC=45^{0}$, and the ratio of the perpendicular distance of $PQ$ and $SR$ from $C$ is $3:2$, then the area, in sq. cm, of the quadrilateral $PQRS$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$4(3+\\sqrt{14})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$4(3\\sqrt{2}+\\sqrt{7})$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$20(3+\\sqrt{14})$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$20(3\\sqrt{2}+\\sqrt{7})$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nThe radius of the circle is given to be $6\\sqrt{2}$ cm. We are also given that the ratio of CA to CB is 3:2. So, if we assume the value of CA to be 3x, then the value of CB becomes 2x. We are also given that $\\angle PQC=45^{0}$ and since PCQ is an isosceles triangle, $\\angle CPQ=45^{0}$ and $\\angle PCQ=90^{0}$.\n\nSo, the triangle PCQ is right-angled at C. The value of PQ can be calculated using Pythagoras' theorem as,\n$PQ^2\\ =\\ PC^2\\ +\\ QC^2$\n$PQ^2\\ =\\ \\left(6\\sqrt{\\ 2}\\right)^2\\ +\\ \\left(6\\sqrt{\\ 2}\\right)^2\\ =\\ 72\\ +\\ 72\\ =\\ 144$\n$PQ\\ =\\ 12$ cm\n$AQ\\ =\\ \\dfrac{PQ}{2}\\ =\\ \\dfrac{12}{2}\\ =\\ 6$ cm\nIn triangle ACQ,\n$AC^2\\ +\\ AQ^2\\ =\\ CQ^2$\n$\\left(3x\\right)^2\\ +\\ \\left(6\\right)^2\\ =\\ \\left(6\\sqrt{\\ 2}\\right)^2$\n$9x^2\\ +\\ 36\\ =\\ 72$\n$9x^2\\ =\\ 36$\n$x^2\\ =\\ 4$\n$x\\ =\\ 2$\n$CB\\ =\\ 2x\\ =\\ 2\\times2\\ =\\ 4$ cm\nIn triangle BCS,\n$BC^2\\ +\\ BS^2\\ =\\ CS^2$\n$\\left(4\\right)^2\\ +\\ \\left(BS\\right)^2\\ =\\ \\left(6\\sqrt{\\ 2}\\right)^2$\n$16\\ +\\ \\left(BS\\right)^2\\ =\\ 72$\n\n$BS^2\\ =\\ 56$\n$BS\\ =\\ 2\\sqrt{\\ 14}$ cm\n$RS\\ =\\ 2\\times\\ BS\\ =\\ 2\\times\\ 2\\sqrt{\\ 14}\\ =\\ 4\\sqrt{\\ 14}$ cm\nThe area of the quadrilateral PQRS can be calculated as,\n $Area=\\ \\dfrac{1}{2}\\times\\ AB\\ \\times\\ \\left(PQ\\ +\\ RS\\right)\\ =\\ \\dfrac{1}{2}\\times\\ 10\\left(12\\ +\\ 4\\sqrt{\\ 14}\\right)\\ =\\ 20\\left(3\\ +\\ \\sqrt{\\ 14}\\right)cm^2$\nHence, the correct answer is option C.",
+      "solution_image_url": "https://cracku.in/media/uploads/image_H2MTf1N.png",
+      "full_markdown": "### Question (qid: 476407)"
+    },
+    {
+      "qid": "476408",
+      "passage_text": null,
+      "question_text": "The ratio of the number of students in the morning shift and afternoon shift of a school was 13 : 9. After 21 students moved from the morning shift to the afternoon shift, this ratio became 19 : 14. Next, some new students joined the morning and afternoon shifts in the ratio 3 : 8 and then the ratio of the number of students in the morning shift and the afternoon shift became 5 : 4. The number of new students who joined is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "88",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "121",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "99",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nLet M=13k, A=9k. \nAfter 21 students were moved $\\frac{13k-21}{9k+21}=\\frac{19}{14}\\Rightarrow 14(13k-21)=19(9k+21)$\n\nSo $182k-294=171k+399\\Rightarrow 11k=693\\Rightarrow k=63$\n\nSo, the number of students in the morning and afternoon shifts are $819-21=798, 567+21=588$ respectively.\nLet's assume that $3t$ and $8t$ students joined the respective sessions. \n$\\dfrac{798+3t}{588+8t}=\\dfrac{5}{4}\\Rightarrow 4(798+3t)=5(588+8t)$\n\nSo $3192+12t=2940+40t\\Rightarrow 28t=252\\Rightarrow t=9$\nNumber of new students $=11t=99$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476408)"
+    },
+    {
+      "qid": "476409",
+      "passage_text": null,
+      "question_text": "If the length of a side of a rhombus is 36 cm and the area of the rhombus is 396 sq. cm, then the absolute value of the difference between the lengths, in cm, of the diagonals of the rhombus is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "60",
+      "solution_text": "Solution\n\nLet the diagonals of the rhombus be $d_1$ and $d_2$\nWe know that the $\\text{Area} = \\frac{1}{2} d_1 d_2 = 396 \\implies d_1 d_2 = 792$\n\nFor a rhombus with side a=36, the diagonals intersect at right angle. Giving a right-angle triangle with the side as hypotenuse.\n$\\left(\\frac{d_1}{2}\\right)^2 + \\left(\\frac{d_2}{2}\\right)^2 = a^2 \\implies \\frac{d_1^2 + d_2^2}{4} = 36^2 = 1296$\n\n$d_1^2 + d_2^2 = 5184$\n\nWe want $|d_1 - d_2|$ \n$(d_1 - d_2)^2 = d_1^2 + d_2^2 - 2d_1 d_2 = 5184 - 2 \\cdot 792 = 5184 - 1584 = 3600$\n\n$|d_1 - d_2| = \\sqrt{3600} = 60$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476409)"
+    },
+    {
+      "qid": "476410",
+      "passage_text": null,
+      "question_text": "The number of non-negative integer values of k for which the quadratic equation $x^{2}-5x+k=0$ has only integer roots, is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nThe given quadratic equation is $x^2-5x+k=0$\nNow, discriminant $D=5^2-4k=25-4k$\nNow, it is given the equation must have integer roots.\nSo, $25-4k$ has to be a perfect square.\nWe need to find non-negative integer values of $k$\nNow, for $k=0$, $D=25-4\\times\\ 0=25$, is a perfect square\nFor $k=4$, $D=25-4\\times4=25-16=9$, is a perfect square\nFor $k=6$, $D=25-4\\times\\ 6=1$, is a perfect square\nSo, there are three non negative integer values of $k$.\nSo, correct answer is $3$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476410)"
+    },
+    {
+      "qid": "476411",
+      "passage_text": null,
+      "question_text": "A shopkeeper offers a discount of 22% on the marked price of each chair, and gives 13 chairs to a customer for the discounted price of 12 chairs to earn a profit of 26% on the transaction. If the cost price of each chair is Rs 100, then the marked price, in rupees, of each chair is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "175",
+      "solution_text": "Solution\n\nCost price of each chair = 100\n\nFor 13 chairs, total cost = $13 \\times 100 = 1300$\n\nProfit = 26%, so total revenue\n$ 1.26 \\times 1300 = 1638$\nWe were told that this amount is equal to the discounted price of 12 chairs. So the discounted selling price per chair = $\\text{SP}_{\\text{disc}} = \\frac{1638}{12} = 136.5$\nDiscount offered = 22%, so:\nMP = $\\frac{136.5}{0.78}$ = 175",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476411)"
+    },
+    {
+      "qid": "476598",
+      "passage_text": null,
+      "question_text": "If $9^{x^{2}+2x-3}-4(3^{x^{2}+2x-2})+27=0$ then the product of all possible values of x is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nLet's assume that $x^{2}+2x-3 = t$ \n$9^{x^{2}+2x-3}-4(3^{x^{2}+2x-2})+27=0$ can be written as $9^t-4(3^{t+1})+27=0$\n$3^{2t}-12(3^t)+27=0$\nLet's assume that $3^t = y$\n$y^2-12y+27=0$\n$(y-9)(y-3)=0$\ny = 3 or 9 $\\Rightarrow$ t = 1 or 2\nLet's solve when t = 1\n$x^{2}+2x-3 = 1 \\Rightarrow x^{2}+2x-4 = 0$\n$b^2-4ac\\ =\\ 4+16\\ =\\ 20$\nPositive, so the equation has real roots.\nProduct of possible value of x  = -4\nLet's solve for t = 2\n$x^{2}+2x-3 = 2 \\Rightarrow x^{2}+2x-5 = 0$\n$b^2-4ac\\ =\\ 4+20\\ =\\ 24$\nPositive, so the equation has real roots.\nProduct of possible value of x = -5\nThe product of all values = 20",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476598)"
+    },
+    {
+      "qid": "476599",
+      "passage_text": null,
+      "question_text": "The average number of copies of a book sold per day by a shopkeeper is 60 in the initial seven days and 63 in the initial eight days, after the book launch. On the ninth day, she sells 11 copies less than the eighth day, and the average number of copies sold per day from second day to ninth day becomes 66. The number of copies sold on the first day of the book launch is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "49",
+      "solution_text": "Solution\n\nLet the copies sold on days 1 through 9 be $d_1,\\dots,d_9$\nFrom the averages:\n$d_1+\\cdots+d_7=7\\times60=420$\n$d_1+\\cdots+d_8=8\\times63=504$\n\nSo $d_8=504-420=84$. Then $d_9=84-11=73$\nThe sum from day 2 to day 9 is $8\\times66=528$\n$d_2+\\cdots+d_9=(d_1+\\cdots+d_8)-d_1+d_9=504-d_1+73=577-d_1$\n\nThus $577-d_1=528 \\Rightarrow d_1=49$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476599)"
+    },
+    {
+      "qid": "476600",
+      "passage_text": null,
+      "question_text": "The set of all real values of x for which $(x^{2}-\\mid x+9\\mid+x)>0$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$(-\\infty,-3)\\cup (3,\\infty)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(-\\infty,-9)\\cup (3,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$(-9,-3)\\cup (3,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$(-\\infty,-9)\\cup (9,\\infty)$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nWe are asked to solve\n$x^2 - |x+9| + x > 0$\n\nSplit into two cases based on the absolute value.\nCase 1: $x+9 \\ge 0 \\Rightarrow x \\ge -9$\n$|x+9| = x+9$\n Inequality becomes: $x^2 - (x+9) + x > 0 \\implies x^2 - 9 > 0 \\implies (x-3)(x+3) > 0$\n\nSo $x<-3  or  x>3$. Combined with $x\\ge -9$, we get $x\\in [-9,-3) \\cup (3,\\infty)$\nCase 2: $x+9 < 0 \\Rightarrow x < -9$\n$|x+9| = -(x+9) = -x - 9$\n Inequality becomes: $x^2 - (-x-9) + x > 0 \\implies x^2 + 2x + 9 > 0$\n\nThe quadratic $x^2 + 2x + 9$ has discriminant (4-36=-32 <0), so always positive. But in this case (x<-9), so inequality is satisfied. Thus (x < -9) also works.\n$x < -3  \\text{or}  x>3$\n\nSo the solution set is ${(-\\infty,-3) \\cup (3,\\infty)}$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476600)"
+    },
+    {
+      "qid": "476601",
+      "passage_text": null,
+      "question_text": "An item with a cost price of Rs. 1650 is sold at a certain discount on a fixed marked price to earn a profit of 20% on the cost price. If the discount was doubled, the profit would have been Rs. 110. The rate of discount, in percentage, at which the profit percentage would be equal to the rate of discount, is nearest to",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nSure! Here's a clean solution:\nLet the marked price be M and the initial discount rate be d. The cost price is 1650. A profit of 20% means the selling price is\n$SP = 1650 \\times 1.2 = 1980$\nWith discount d,\n$M(1-d) = 1980$\nIf the discount is doubled, the selling price becomes (M(1-2d)), and the profit is 110, so\n$M(1-2d) - 1650 = 110 \\Rightarrow M(1-2d) = 1760$\nSubtracting the two equations:\n$M(1-d) - M(1-2d) = 1980 - 1760 \\Rightarrow Md = 220 \\Rightarrow M = \\frac{220}{d}$\nPlug into the first equation:\n$ \\frac{220}{d}(1-d) = 1980 \\Rightarrow \\frac{1-d}{d} = 9 \\Rightarrow 1-d = 9d \\Rightarrow d = 0.1 $\nSo the initial discount rate is 10% and the marked price is\n$M = \\frac{220}{0.1} = 2200 $\nNow, let the discount rate be (r) such that the profit percentage equals the discount percentage. Then\n$\\frac{2200(1-r) - 1650}{1650} = r$\nSimplify:\n$2200(1-r) - 1650 = 1650 r \\Rightarrow 2200 - 2200r - 1650 = 1650r \\Rightarrow 550 = 3850 r \\Rightarrow r = \\frac{550}{3850} \\approx 0.142857 $\nThus, the required discount rate is approximately 14%",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476601)"
+    },
+    {
+      "qid": "476602",
+      "passage_text": null,
+      "question_text": "If m and n are integers such that $(m+2n)(2m+n)=27$, then the maximum possible value of $2m-3n$ is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "17",
+      "solution_text": "Solution\n\nSure! We can solve it without explicitly introducing new variables for substitution.\nWe are given $(m+2n)(2m+n) = 27$ and we want to maximize $2m-3n$\nBecause m and n are integers, both (m+2n) and (2m+n) are going to be integers.\nFactor pairs of 27 (including negatives) are: $(1,27),(3,9),(9,3),(27,1),(-1,-27),(-3,-9),(-9,-3),(-27,-1)$\nFor each factor pair (a,b), take $a=m+2n$, $b=2m+n$ and solve for integers (m,n).\nIf we notice $a+b=\\left(m+2n\\right)+\\left(2m+n\\right)=3\\left(m+n\\right)$\nSo, basically the sum of the two numbers has to be a multiple of $3$.\nSo, the ordered pairs we will consider are $\\left(3,9\\right),\\left(9,3\\right),\\left(-3,-9\\right),\\left(-9,-3\\right)$\n\nFor $(a,b)=(9,3)$:\n$ m+2n=9,\\quad 2m+n=3 $\nUpon solving, we get $n=5$ and $m=-1$\n\nFor $(a,b)=(3,9)$:\n$ m+2n=3,\\quad 2m+n=9 $\nUpon solving, we get $n=-1$ and $m=5$\nThen $2m-3n=2\\cdot5-3(-1)=10+3=13$ \nFor negative factor pairs, we similarly get integer solutions $(-5,1)$ and $(1,-5)$, giving $2m-3n=-13  \\text{and}  17$, respectively.\nThus, the maximum value of $(2m-3n)$ among all solutions is 17",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476602)"
+    },
+    {
+      "qid": "476603",
+      "passage_text": null,
+      "question_text": "The sum of digits of the number $(625)^{65} \\times (128)^{36}$ is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "25",
+      "solution_text": "Solution\n\n$625=5^4$ and $128=2^7$ \nSo, $(625)^{65},(128)^{36}=5^{260},2^{252}=(2^{252}5^{252})\\cdot5^8=10^{252}\\cdot5^8$\n\nThus, the number equals $5^8$ followed by 252 zeros. Now (5^8=390625), and the sum of the digits of (390625) is\n$\n3+9+0+6+2+5=25.$\n\nZeros add nothing, so the required sum of digits is 25.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476603)"
+    },
+    {
+      "qid": "476604",
+      "passage_text": null,
+      "question_text": "The equations $3x^{2}-5x+p=0$ and $2x^{2}-2x+q=0$ have one common root. The sum of the other roots of this equations is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\frac{8}{3}-p+\\frac{3}{2}q$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{2}{3}-p+\\frac{3}{2}q$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{8}{3}+p+\\frac{1}{3}q$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{2}{3}-2p+\\frac{2}{3}q$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet's assume that the common root is r. \nThe sum of the roots of the first equation is 5/3 and that of the second equation is 1.\nWe want the sum of the other two roots:\n$\n\\text{Sum} = \\left(\\frac{5}{3}-r\\right) + (1-r) = \\frac{8}{3}-2r$\n\nWe now need to express r in terms of p and q.\nSince r is a common root, it satisfies:\n$3r^2 - 5r + p = 0 \\quad (1)$\n$ \n2r^2 - 2r + q = 0 \\quad (2)$ \n\nEliminate $ r^2$ .\nMultiply (2) by 3:\n$ 6r^2 - 6r + 3q = 0$ \n\nMultiply (1) by 2:\n$ 6r^2 - 10r + 2p = 0$ \n\nSubtract:\n$ \n(6r^2 - 6r + 3q) - (6r^2 - 10r + 2p) = 0$\n$ \n4r + 3q - 2p = 0$\n$  r = \\frac{2p - 3q}{4}$ \n\nNow substitute into $ \\frac{8}{3} - 2r$ :\n$ \n\\frac{8}{3} - 2\\left(\\frac{2p - 3q}{4}\\right)$\n$ = \\frac{8}{3} - \\frac{2p - 3q}{2}$\n$ = \\frac{8}{3} - p + \\frac{3}{2}q$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476604)"
+    },
+    {
+      "qid": "476605",
+      "passage_text": null,
+      "question_text": "If $\\log_{64}{x^{2}+\\log_{8}{\\sqrt{y}+3\\log_{512}{(\\sqrt{y}z)}}}=4$, where x,y and z are positive real numbers, then the minimum possible value of $(x+y+z)$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "48",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "96",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\n$64 = 8^2  \\text{and}  512 = 8^3$\n$\\log_{64}{x^{2}+\\log_{8}{\\sqrt{y}+3\\log_{512}{(\\sqrt{y}z)}}}=4$,\nProperty of log: $\\log_{b^m}\\ a^{n\\ }=\\frac{n}{m}\\ \\log_ba$\n$\\log_{8^2}{x^{2}+\\log_{8}{\\sqrt{y}+3\\log_{8^3}{(\\sqrt{y}z)}}}=4$\nUsing the above-mentioned property, the expression becomes $\\log_{8}{x}+\\log_{8}{\\sqrt{y}+\\log_{8}{(\\sqrt{y}z)}}=4$\n$\\log_8x\\sqrt{y}\\cdot(\\sqrt{y}z)=4$\n$\\log_8xyz=4$\n$xyz =8^4=2^{12}$\nUsing AM-GM inequality\n$\\frac{\\left(x+y+z\\right)}{3}\\ge\\sqrt[\\ 3]{xyz}$\n$\\frac{\\left(x+y+z\\right)}{3}\\ge2^4$\n$\\left(x+y+z\\right)\\ge48$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476605)"
+    },
+    {
+      "qid": "476606",
+      "passage_text": null,
+      "question_text": "Rita and Sneha can row a boat at 5 km/h and 6 km/h in still water, respectively. In a river flowing with a constant velocity, Sneha takes 48 minutes more to row 14 km upstream than to row the same distance downstream. If Rita starts from a certain location in the river, and returns downstream to the same location, taking a total of 100 minutes, then the total distance, in km, Rita will cover is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "Solution\n\nLet the river speed be v km/h. For Sneha still-water speed = 6 km/h:\nUpstream speed = (6-v), downstream speed = (6+v).\n\nGiven $\\frac{14}{(6-v)}-\\frac{14}{(6+v)}=48$minutes =0.8 hours. \nSo, $\\frac{14(6+v-6+v)}{36-v^2}=0.8 \\Rightarrow \\frac{28v}{36-v^2}=0.8$\n$28v=0.8(36-v^2)=28.8-0.8v^2 \\Rightarrow 0.8v^2+28v-28.8=0$\n\nMultiply by 5: $4v^2+140v-144=0$\n$v^2+35v-36=0$\nWe get v = 1\nThus, the river speed is 1 km/h. For Rita, the still water speed is 5 km/h:\nUpstream speed = 5-1=4 km/h, Downstream Speed = (5+1=6) km/h.\nIf she rows d km upstream and returns d km downstream, the total time\n$ \\frac{d}{4}+\\frac{d}{6}=d\\Big(\\frac{1}{4}+\\frac{1}{6}\\Big)=d\\cdot\\frac{5}{12}\\ \\text{hours}$\n\nThis equals 100 minutes $=100/60=\\dfrac{5}{3}$ hours. \nSo, $d\\cdot\\frac{5}{12}=\\frac{5}{3}\\ \\Rightarrow\\ d=4\\ \\text{km}$\n\nTotal distance covered 2d=8 km.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476606)"
+    },
+    {
+      "qid": "476607",
+      "passage_text": null,
+      "question_text": "Suppose a,b,c are three distinct natural numbers, such that $3ac=8(a+b)$. Then, the smallest possible value of $3a+2b+c$ is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "12",
+      "solution_text": "Solution\n\nOur task is to minimise $3a+2b+c$.\nHere, the coefficient for $c$ is the minimum. \n$3ac=8(a+b)$\nWe know that a, b, and c are natural numbers. So, the product $ac$ should definately be a multiple of 8.\nCase 1: a = 1, c = 8 and b = 2 $\\Rightarrow$ 3a+2b+c = 15\nCase 2: a = 2, c = 4 and b = 1 $\\Rightarrow$ 3a+2b+c = 12\nSo, 12 is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476607)"
+    },
+    {
+      "qid": "476608",
+      "passage_text": null,
+      "question_text": "Let $f(x)=\\frac{x}{(2x-1)}$ and $g(x)=\\frac{x}{(x-1)}$. Then the domain of the function $h(x)=f(g(x))+g(f(x))$ is all real numbers except",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$-1,\\frac{1}{2}, \\text{and}  1$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{1}{2}, 1, \\text{and}  \\frac{3}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$-\\frac{1}{2},\\frac{1}{2}, \\text{and}  1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{2}, \\text{and}  1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nWe check where $f(x)=\\frac{x}{2x-1}$ or $g(x)=\\frac{x}{x-1}$, or their compositions, become undefined.\nFirst, f(x) is undefined at $x=\\tfrac12$ and g(x) is undefined at $x=1$.\nNext, for $f(g(x)) = \\frac{x}{x+1}$\nSince, the denominator can't be zero, x=-1 must also be excluded.\nFor $g(f(x)) = \\frac{x}{1-x}$\n$\\Rightarrow x=1$ is not possible, which is already excluded.\nSo the values at which $h(x)=f(g(x))+g(f(x))$ is undefined are ${-1,\\ \\tfrac12,\\ 1}$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476608)"
+    },
+    {
+      "qid": "476609",
+      "passage_text": null,
+      "question_text": "A loan of Rs 1000 is fully repaid by two installments of Rs 530 and Rs 594, paid at the end of first and second year, respectively. If the interest is compounded annually, then the rate of interest, in percentage, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nLet the annual interest rate be (r) (in decimal). Discount the two instalments to present value:\n$\\dfrac{530}{1+r}+\\dfrac{594}{(1+r)^2}=1000$\n\nSet $x=\\dfrac{1}{1+r}$. Then\n$594x^2+530x-1000=0$\nDiscriminant = $530^2+4\\cdot594\\cdot1000=280900+2376000=2656900=1630^2$.\n\n$x=\\dfrac{\\ -b\\pm\\sqrt{b^2-4ac}}{2a}$\n\n$x=\\dfrac{-530+1630}{2\\cdot594}=\\frac{1100}{1188}=\\dfrac{275}{297}$\n\nSo $1+r=\\dfrac{297}{275}$\n$r=\\dfrac{297-275}{275}=\\dfrac{22}{275}=\\dfrac{2}{25}=0.08=8\\%$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476609)"
+    },
+    {
+      "qid": "476610",
+      "passage_text": null,
+      "question_text": "Two tangents drawn from a point P and a circle with center O at point Q and R. Point A and B lie on PQ and PR, repectively, such that AB is also a tangent to the same circle. If $\\angle AOB=50^{0}$, then $\\angle APB$, in degrees equals",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "80",
+      "solution_text": "Solution\n\nWe can draw the following diagram as per the given question :\n\nNow, taking $\\triangle AOT$ and $\\triangle AOQ$\nAO is the common side\n\nAT=AQ (Tangents drawn from an external point are equal in length)\nOT=OQ (radius of circle)\nSo, by S.S.S., $\\triangle\\ AOT$ is congruent to $\\triangle\\ AOQ$\nSo, by C.P.C.T., $\\angle\\ AOT=\\angle\\ AOQ$\nSimilarly, for $\\triangle\\ BOT\\ $ and $\\triangle\\ BOR\\ $, we can do the same thing,\nSo, we can say $\\triangle\\ BOT$ and $\\triangle\\ BOR$ will also be congruent\nNow, $\\angle\\ QOR=\\angle\\ AOQ+\\angle\\ AOB+\\angle\\ ROB=\\angle\\ AOT+\\angle\\ AOB+\\angle\\ BOT=2\\angle\\ AOB=2\\times\\ 50^{\\circ\\ }=100^{\\circ\\ }$\nNow, in quadrilateral OQPR,\n$\\angle\\ OQP=\\angle\\ ORP=90^{\\circ\\ }$ (Tangents drawn to a point is perpendicular to the radius drawn at the same point)\nNow, sum of angles of a quadrilateral is $360^{\\circ\\ }$\nSo, $\\angle\\ APB+\\angle\\ QOR=360^{\\circ\\ }-\\left(90^{\\circ\\ }+90^{\\circ\\ }\\right)=180^{\\circ\\ }$\nSo, $\\angle\\ APB=180^{\\circ\\ }-100^{\\circ\\ }=80^{\\circ\\ }$",
+      "solution_image_url": "https://cracku.in/media/uploads/Screenshot%202026-01-07%20144836.png",
+      "full_markdown": "### Question (qid: 476610)"
+    },
+    {
+      "qid": "476611",
+      "passage_text": null,
+      "question_text": "The number of divisors of $(2^{6}\\times 3^{5}\\times 5^{3}\\times 7^{2})$, which are of the form $(3r+1)$, where r is a non-negative integer, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "42",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nThe divisors of the given number will have the form $2^a*3^b*5^c*7^d$ with $0\\le a\\le6,\\ 0\\le b\\le5,\\ 0\\le c\\le3,\\ 0\\le d\\le2$\nBecause the divisors should be in the form 3r+1, it cannot be divisible by 3, so (b=0). \nReduce modulo 3: $2  \\text{mod}  3 = 2, 5  \\text{mod}  3 = 2, 7  \\text{mod}  3 = 1$ \nHence,  $2^a5^c7^d\\equiv 2^{a+c}\\cdot1^d \\equiv 2^{a+c}\\pmod3$\n2^k will be in the form 3r+1 only when K is even. So, we need a+c to be even\n\n$a\\in{0,\\dots,6}$ has 4 even, 3 odd values \n$c\\in{0,\\dots,3}$ has 2 even, 2 odd\n Number of (a,c) with (a+c) even is $4\\cdot2 + 3\\cdot2 = 8+6=14$\n\nFor each such pair, there are 3 choices for d = 0,1,2. Thus, total divisors in the form (3r+1) equals $14\\times3=42$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476611)"
+    },
+    {
+      "qid": "476612",
+      "passage_text": null,
+      "question_text": "Let ABCDEF be a regular hexagon and P and Q be the midpoints of AB and CD, respectively. Then, the ratio of the areas of trapezium PBCQ and hexagon ABCDEF is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "6:19",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:24",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6:25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7:24",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nLet the side of the hexagon be a. \nThe area of the whole hexagon is going to be $\\frac{3\\sqrt{3}a^2}{2}$\n\nWe know that the longest diagonal of a hexagon is 2 times the side of the hexagon.\nPQ = $\\frac{\\left(BC+AD\\right)}{2}= \\frac{\\left(a+2a\\right)}{2} =1.5a$\nThe area of the trapezium =  Average of parllel sides * Height = $\\frac{\\left(BC+PQ\\right)}{2}\\cdot h=\\frac{5}{4}a\\cdot h$\nThe distance between BC and AD will be $\\sqrt{3}a$, that is, the length of diagonal BF.\nThe distance between BC and AD will be $\\frac{\\sqrt{3}a}{2}$ \nAnd the height of the trapezium BCQP will be  $\\frac{\\sqrt{3}a}{4}$ \nArea of trapezium = $\\frac{5}{4}a\\cdot \\frac{\\sqrt{3}a}{4}$ = $\\frac{5\\sqrt{3}a^2}{16}$ \nArea of hexagon ABCDEF = $\\frac{3\\sqrt{3}}{2}a^2$\nWe have to find the ratio  = $\\frac{5\\sqrt{3}a^2}{16}$ : $\\frac{3\\sqrt{3}}{2}a^2$ = 5:24",
+      "solution_image_url": "https://cracku.in/media/uploads/image_I4dff5m.png",
+      "full_markdown": "### Question (qid: 476612)"
+    },
+    {
+      "qid": "476613",
+      "passage_text": null,
+      "question_text": "If a,b,c and d are integers such that their sum is 46, then the minimum possible value of $(a-b)^{2}+(a-c)^{2}+(a-d)^{2}$ is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nGiven expression: $(a-b)^{2}+(a-c)^{2}+(a-d)^{2}$\nThe given expression has just the sum of squares of the terms. So, the minimum value is either zero or positive.\nIf we can make all the values equal, we can get zero. But since all the values are integers and the sum 46 is not divisible by 4, we can't make everything equal. \nSo, the nearest four values are 12, 11, 11, 12.\nWith this, the minimum value is $(12-11)^2+(12-11)^2+(12-12)^2 = 2$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476613)"
+    },
+    {
+      "qid": "476614",
+      "passage_text": null,
+      "question_text": "The ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7:8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet Lakshmi's income = A and expenditure = B.\n\nLet Meenakshi's income = C and expenditure = D.\nFrom B:D = 2:3, take B = 2k and D = 3k.\n\nFrom A:D = 6:7, $A = \\tfrac{6}{7} D = \\tfrac{6}{7}\\cdot 3k = \\tfrac{18}{7}k$.\nLakshmi's saving = $A - B = \\tfrac{18}{7}k - 2k = \\tfrac{4}{7}k$.\n\nLet Meenakshi's saving $= C - D = C - 3k$. Given the savings ratio $\\frac{\\frac{4k}{7}}{C-3k} = \\tfrac{4}{9}$.\nSolve: $\\dfrac{4}{7}k\\cdot\\dfrac{9}{4} = C - 3k \\Rightarrow \\dfrac{9}{7}k = C - 3k \\Rightarrow C = \\dfrac{30}{7}k$\nSo incomes ratio $A:C = \\dfrac{18}{7}k : \\dfrac{30}{7}k = 18:30 = 3:5.$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476614)"
+    },
+    {
+      "qid": "476615",
+      "passage_text": null,
+      "question_text": "Let $a_{n}$ be the $n^{th}$ term of a decreasing infinite geometric progression. If $a_{1}+a_{2}+a_{3}=52$ and $a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624$, then the sum of this geometric progression is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "57",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "54",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "63",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nLet the first term be a and the common ratio be r.\n\nGiven\n$a+a r + a r^2 = 52 \\quad\\text{and}\\quad a^2 r + a^2 r^2 + a^2 r^3 = 624.$\n\nFrom the first equation $a(1+r+r^2)=52$, so $a=\\dfrac{52}{1+r+r^2}$. \nSubstitute into the second:\n$\\frac{52^2}{(1+r+r^2)^2}*(r+r^2+r^3)=624$\n$\\frac{r}{(1+r+r^2)}=\\frac{3}{13}$\n$3r^2-10r+3=0$\n$(3r-1)(r-3)=0$\n\nSimplify to get an equation in (r); its real solutions are $r=\\tfrac{1}{3}$ and $r=3$. For an infinite geometric progression, we must have (|r|<1), so $r=\\dfrac{1}{3}$.\nNow\n$a=\\frac{52}{1+\\tfrac{1}{3}+\\tfrac{1}{9}}=\\frac{52}{13/9}=36$\n\nThe sum of the infinite progression is\n$ S=\\frac{a}{1-r}=\\frac{36}{1-\\tfrac{1}{3}}=\\frac{36}{2/3}=54.$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476615)"
+    },
+    {
+      "qid": "476616",
+      "passage_text": null,
+      "question_text": "A mixture of coffee and cocoa, 16% of which is coffee, costs Rs 240 per kg. Another mixture of coffee and cocoa, of which 36% is coffee, costs Rs 320 per kg. If a new mixture of coffee and cocoa costs Rs 376 per kg, then the quantity, in kg, of coffee in 10 kg of this new mixture is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet coffee price = C Rs/kg and cocoa price = K Rs/kg.\nFrom the two given mixtures:\n$0.16C + 0.84K = 240$\n$0.36C + 0.64K = 320$\n\nMultiply both equations by 100 to remove decimals:\n$16C + 84K = 24000$ \n$36C + 64K = 32000$\nSubtract the first from the second:\n$(36C+64K)-(16C+84K)=32000-24000$\n$20C - 20K = 8000 \\implies C - K = 400$\n\nPut $C=K+400$ into $16C+84K=24000$:\n\n$16(K+400)+84K=24000 $\n$16K+6400+84K=24000 $\n\n$100K = 17600 \\implies K = 176$\n\nSo $C = 176 + 400 = 576$ (Rs/kg).\nFor the new mixture priced at Rs 376/kg, let the coffee fraction be p. Then\n$\np\\cdot 576 + (1-p)\\cdot 176 = 376$\nUpon solving $p = \\tfrac{1}{2}$\n\nThus, coffee is (50%) of the new mixture. In 10 kg of this mixture, coffee = $10\\times 0.5 = 5\\text{kg}$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476616)"
+    },
+    {
+      "qid": "476617",
+      "passage_text": null,
+      "question_text": "In $\\triangle ABC$, points D and E are on the sides BC and AC, respectively. BE and AD intersect at point T such that AD:AT=4:3, and BE:BT=5:4. Point F lies on AC such that DF is parallel to BE. Then, BD:CD is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11:4",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7:4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9:4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nIn the question, it is given $AD:AT=4:3$\nSo,$TD:AT=1:3$\nLet, $TD=x,\\ AT=3x$\nAlso, $BE:BT=5:4$\nSo, $BT:TE=4:1$\nLet, $BT=4y,\\ TE=y$\nGiven, DF is parallel to BE\nSo, DF is parallel to TE\nSo, $\\triangle\\ ATE~\\triangle\\ ADF$ (by A.A., as $\\angle\\ ATE=\\angle\\ ADF$ and $\\angle\\ AET=\\angle\\ AFD$)\nSo, $\\dfrac{AT}{AD}=\\dfrac{TE}{DF}$\nSo, $\\dfrac{3x}{x+3x}=\\dfrac{y}{DF}$\nSo, $DF=\\dfrac{4y}{3}$\nAlso, since DF is parallel to BE,\nSo, $\\triangle\\ CFD~\\triangle\\ CBE$ (by A.A., as $\\angle\\ CFD=\\angle\\ CEB$ and $\\angle\\ CDF=\\angle\\ CBE$)\nSo, $\\dfrac{CD}{BC}=\\dfrac{DF}{BE}$\nSo, $\\dfrac{CD}{BC}=\\dfrac{\\dfrac{4y}{3}}{5y}=\\dfrac{4y}{15y}=\\dfrac{4}{15}$\nSo, $\\dfrac{CD}{BD}=\\dfrac{4}{11}$\nSo, $BD:CD=11:4$",
+      "solution_image_url": "https://cracku.in/media/uploads/Screenshot%202025-12-17%20143424.png",
+      "full_markdown": "### Question (qid: 476617)"
+    },
+    {
+      "qid": "476618",
+      "passage_text": null,
+      "question_text": "Ankita is twice as efficient as Bipin, while Bipin is twice as efficient as Chandan. All three of them start together on a job, and Bipin leaves the job after 20 days. If the job got completed in 60 days, the number of days needed by Chandan to complete the job alone, is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "340",
+      "solution_text": "Solution\n\nLet Chandan’s one-day work = x.\n\nThen Bipin = 2x and Ankita = 4x.\nAll three work together for the first 20 days. Their combined daily work = $x + 2x + 4x = 7x$.\n\nWork done in 20 days = $20\\times7x = 140x$.\nBipin leaves after 20 days; Ankita and Chandan continue for the remaining (60-20=40) days.\n\nTheir combined daily work = $4x + x = 5x$. Work done in 40 days = $40\\times5x = 200x$.\nTotal work = $140x+200x=340x$. \nWe know that Chandan does x work in a day. So, the number of days it takes him to finish the work is 340.\nAnswer: 340 days.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476618)"
+    },
+    {
+      "qid": "476619",
+      "passage_text": null,
+      "question_text": "A certain amount of money was divided among Pinu, Meena, Rinu and Seema. Pinu received 20% of the total amount and Meena received 40% of the remaining amount. If Seema received 20% less than Pinu, the ratio of the amounts received by Pinu and Rinu is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "5:8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8:5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nLet the total amount be 100 units (taking 100 makes percentage calculations easy).\n\nPinu receives 20% of the total, so Pinu gets 20 units.\n\nThe amount left after giving Pinu his share is 100 - 20 = 80 units.\nMeena receives 40% of this remaining amount, so Meena gets 40% of 80 = 32 units.\n\nNow, the amount left for Rinu and Seema together is 80 - 32 = 48 units.\nSeema receives 20% less than Pinu. Since Pinu gets 20 units, Seema gets\n\n20 - 20% of 20 = 20 - 4 = 16 units.\nOut of the 48 units left for Rinu and Seema, Seema’s share is 16 units, so Rinu gets\n\n48 - 16 = 32 units.\nTherefore, Pinu receives 20 units, and Rinu gets 32 units.\n\nThe required ratio of the amounts received by Pinu : Rinu = 20 : 32 = 5 : 8.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476619)"
+    },
+    {
+      "qid": "476571",
+      "passage_text": null,
+      "question_text": "The monthly sales of a product from January to April were 120, 135, 150 and 165 units, respectively. The cost price of the product was Rs. 240 per unit, and a fixed marked price was used for the product in all the four months. Discounts of 20%, 10% and 5% were given on the marked price per unit in January, February and March, respectively, while no discounts were given in April. If the total profit from January to April was Rs. 138825, then the marked price per unit, in rupees, was",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "520",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "525",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "510",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "515",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nThe total number of products is $120+135+150+165= 570$. Therefore, the total cost must have been $570\\times 240 = 136800$\nLet the marked price for the products be $X$. The January, February, March, and April, selling prices would respectively be $0.8X$, $0.9X$, $0.95X$, and $X$; based on the discounts given on each of the months.\nThe revenue earned from selling the products in each of the months would be: $120*0.8X + 135*0.9X + 150*0.95X + 165*X = 525X$.\nThe profit earned would be: Revenue -  Cost, and therefore, \n$525X - 136800 = 138825$\n$525X = 275625$\n$X = \\dfrac{275625}{525} = 525$\nThe correct answer is option B, Rs. 525.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476571)"
+    },
+    {
+      "qid": "476572",
+      "passage_text": null,
+      "question_text": "Teams A, B, and C consist of five, eight, and ten members, respectively, such that every member within a team is equally productive. Working separately, teams A, B, and C can complete a certain job in 40 hours, 50 hours, and 4 hours, respectively. Two members from team A, three members from team B, and one member from team C together start the job, and the member from team C leaves after 23 hours. The number of additional member(s) from team B, that would be required to replace the member from team C, to finish the job in the next one hour, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nLet the per hour productivity of each member from teams A, B, and C, be $a$, $b$, and $c$ units respectively.\nLet $W$ be the total units of work that each of the teams does. We have:\n$W = 40*5*a = 50*8*b = 4*10*c$\nThis gives, $a= \\dfrac{W}{200}$,  $b= \\dfrac{W}{400}$,  and $c = \\dfrac{W}{40}$\nWhen two members from team A, three members from team B, and one member from team C together start the job, the total per hour productivity for the first 23 hours will be;\n$\\dfrac{2W}{200} + \\dfrac{3W}{400} + \\dfrac{W}{40} = \\dfrac{17W}{400}$.\nIn 23 hours, the work done will be $\\dfrac{23*17W}{400} = \\dfrac{391W}{400}$\nThe remaining work, after 23 hours, is $W - \\dfrac{391W}{400} = \\dfrac{9}{400}$\nThe current per hour efficiency of the group that comprises members from only teams A and B, is $\\dfrac{2W}{200} + \\dfrac{3W}{400} = \\dfrac{7W}{400}$\n\nIn the next hour, the members from A and B will finish $\\dfrac{7W}{400}$ units of work and $\\dfrac{9W}{400}-\\dfrac{7W}{400} = \\dfrac{2W}{400}$ units of work would remain.\nThis work has to be finished by newly added members from team B in one hour, therefore, the number of new members required from team B would be $\\dfrac{2W}{400} \\div \\dfrac{W}{400} = 2$\nOption B is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476572)"
+    },
+    {
+      "qid": "476573",
+      "passage_text": null,
+      "question_text": "In a school with 1500 students, each student chooses any one of the streams out of science, arts, and commerce, by paying a fee of Rs 1100, Rs 1000, and Rs 800, respectively. The total fee paid by all the students is Rs 15,50,000. If the number of science students is not more than the number of arts students, then the maximum possible number of science students in the school is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "700",
+      "solution_text": "Solution\n\nLet the total number of students who chose science, arts, and commerce streams be $S$, $A$, and $C$, respectively.\nWe have,\n$S+A+C = 1500$, such that, $C = 1500-S-A$ .....(1)\nAlso, $1100S + 1000A + 800C = 15,50,000$,  which can be simplified by dividing by $100$;\n$11S + 10A + 8C = 15500$ .....(2)\nSubstituting the value of $C$ from equation (1) in equation (2), we have\n$11S + 10A + 8(1500-S-A) = 15500$\n$\\Rightarrow 3S + 2A = 3500$\nSince $S\\leq A$, the maximum value of $S$ (if possible), would occur when $S=A$, therefore,\n$5S = 3500$,  or $S= 700$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476573)"
+    },
+    {
+      "qid": "476574",
+      "passage_text": null,
+      "question_text": "In an arithmetic progression, if the sum of fourth, seventh and tenth terms is 99, and the sum of the first fourteen terms is 497, then the sum of first five terms is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "65",
+      "solution_text": "Solution\n\nLet the first term of the arithmetic progression be $a$, and the common difference be $d$.\nWe have:\n$(a+3d) + (a+6d) + (a+9d) = 99$\n$\\Rightarrow 3a + 18d = 99$  or  $a + 6d = 33$ .....(1)\nWe are also told that the sum of the first fourteen terms is $497$,\n$\\dfrac{14}{2}(2a + (14-1)d) = 497$\n$\\Rightarrow (2a+13d) = \\dfrac{497}{7}$\n$\\Rightarrow 2a+13d = 71$ .....(2)\nSolving equations (1) and (2), we get;\n$a= 3$ and $d=5$\nThe first five terms would therefore be: $3, 8, 13, 18, 23$, and their sum would be $3+8+13+18+23 = 65$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476574)"
+    },
+    {
+      "qid": "476575",
+      "passage_text": null,
+      "question_text": "Ankita walks from A to C through B, and runs back through the same route at a speed that is 40% more than her walking speed. She takes exactly 3 hours 30 minutes to walk from B to C as well as to run from B to A. The total time, in minutes, she would take to walk from A to B and run from B to C, is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "444",
+      "solution_text": "Solution\n\nLet the walking speed of Ankita be $5x$, implying that her running speed (which is $40\\%$ more than her walking speed), is $1.4\\times 5x = 7x$.\nThus, the ratio of her walking and running speeds is $5:7$. Therefore, the ratio of the time taken by Ankita to cover a fixed distance walking and running would by $7:5$.\nShe takes 3 hours 30 minutes, or $3.5$ hours to walk from B to C. Since Ankita is running from B to C in the second scenario, her time will reduce inversely to the ratio of her speed. The time taken by her to run from B to C would be $\\dfrac{3.5}{7}\\times 5 = 2.5$ hours.\nShe takes 3 hours 30 minutes, or $3.5$ hours to run from A to B. Since Ankita is walking from A to B in the second scenario, her time will increase inversely to the ratio of her speed. The time taken by her to walk from A to B would be $\\dfrac{3.5}{5}\\times 7 = 4.9$ hours.\nTherefore, the total time it takes for Ankita in the second scenario is $4.9+2.5 = 7.4$ hours. This gives $7.4*60 = 444$ minutes.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476575)"
+    },
+    {
+      "qid": "476576",
+      "passage_text": null,
+      "question_text": "For a 4-digit number (greater than 1000), sum of the digits in the thousands, hundreds, and tens places is 15. Sum of the digits in the hundreds, tens, and units places is 16. Also, the digit in the tens place is 6 more than the digit in the units place. The difference between the largest and smallest possible value of the number is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "811",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3289",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "735",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4078",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet the thousands, hundreds, tens, and units digits of the number be $a$, $b$, $c$, and $d$, respectively.\nThe sum of the digits in the thousands, hundreds, and tens places is 15;  $a+b+c = 15$ .....(1)\nThe sum of the digits in the hundreds, tens, and units places is 16;  $b+c+d = 16$ .....(2)\nSolving equations (1) and (2), we get $d = a+1$.\nThe digit in the tens place is 6 more than the digit in the units place;  $c=d+6 = a+1+6 = a+7$ .....(3)\nSubstituting the value of $c$ in terms of $a$ in equation (1), we get;  $a+b+a+7 = 15$  or  $b=8-2a$\nThus, the number is:  $\\underline{a}\\text{ }\\underline{8-2a}\\text{ }\\underline{a+7}\\text{ }\\underline{a+1}$\nWe know that since the number is a four digit number, $a\\geq 1$. But all the four digits have to be less than or equal to $9$ but greater than or equal to $0$, thus,\n$8-2a\\geq 0$  gives  $a\\leq 4$  and  $a+7\\leq 9$  gives  $a\\leq 2$.\nThus, $a$ can be $1$ or $2$.\nThe two possible values for the number, therefore, are, $1682$ and $2493$, when we put $a=1$ and $a=2$, respectively.\nThe difference between the only two possible values is, $2493 - 1682 = 811$\nOption A is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476576)"
+    },
+    {
+      "qid": "476577",
+      "passage_text": null,
+      "question_text": "Rahul starts on his journey at 5 pm at a constant speed so that he reaches his destination at 11 pm the same day. However, on his way, he stops for 20 minutes, and after that, increases his speed by 3 km per hour to reach on time. If he had stopped for 10 minutes more, he would have had to increase his speed by 5 km per hour to reach on time. His initial speed, in km per hour, was",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nLet the initial speed of Rahul be $x$ kilometres per hour. Since he travels the distance usually in $6$ hours, (5 pm to 11 pm), the total distance should be $6\\times x = 6x$ kilometres.Let the distance after which Rahul stops for some duration in both scenarios be $y$ kilometres.In the first scenario, he stops for $20$ minutes or $\\dfrac{1}{3}$ hours, therefore, the travel time would be $6-\\dfrac{1}{3} = \\dfrac{17}{3}$ hours. We have, $\\dfrac{k}{x} + \\dfrac{6x-k}{x+3} = \\dfrac{17}{3}$ $\\Rightarrow \\dfrac{6x^2+3k}{x^2+3x} = \\dfrac{17}{3}$\n$\\Rightarrow 18x^2 + 9k = 17x^2 + 51x$\n$\\Rightarrow x^2 = 51x - 9k$ .....(1)Similarly, in the second scenario, he stops for $20+10=30$ minutes or $\\dfrac{1}{2}$ hours, therefore, the travel time would be $6-\\dfrac{1}{2} = \\dfrac{11}{2}$ hours. We have, $\\dfrac{k}{x} + \\dfrac{6x-k}{x+5} = \\dfrac{11}{2}$$\\Rightarrow \\dfrac{6x^2+5k}{x^2+5x} = \\dfrac{11}{2}$\n$\\Rightarrow 12x^2 + 10k = 11x^2 + 55x$\n$\\Rightarrow x^2 = 55x - 10k$ .....(2)From equations (1) and (2), we have;$55x - 10k = 51x - 9k$  or  $4x = k$.Substituting the value of $k$ in equation (1), we have$x^2 = 51x - 36x$  or, since $x$ is positive, $x= 15$. Therefore, option B is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476577)"
+    },
+    {
+      "qid": "476578",
+      "passage_text": null,
+      "question_text": "The rate of water flow through three pipes A, B and C are in the ratio 4 : 9 : 36. An empty tank can be filled up completely by pipe A in 15 hours. If all the three pipes are used simultaneously to fill up this empty tank, the time, in minutes, required to fill up the entire tank completely is nearest to",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "73",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "76",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "71",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nLet the rate of flow of water from pipe A be $4x$ units per hour. From the ratio of the rates of flow of water (4:9:36), we have that the rate of flow of water from pipe B should be $9x$ units per hour, and from pipe C should be $36x$ units per hour.\nSince pipe A fills the empty tank in 15 hours, the capacity of the tank must be $15\\times 4x = 60x$ units.\nWhen all three pipes work together, their combined capacity would be $4x+9x+36x = 49x$ units per hour.\nTherefore, the time it would take for the three pipes to fill the empty tank working together is:  $\\dfrac{60x}{49x}$ hours\nIn minutes, this time is equivalent to $\\dfrac{60x}{49x}\\times 60 \\approx 73.47$ minutes.\nOption A is the closest, and is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476578)"
+    },
+    {
+      "qid": "476579",
+      "passage_text": null,
+      "question_text": "If $f(x)= (x^{2} + 3x)(x^{2}+ 3x+2)$ then the sum of all real roots of the equation $\\sqrt{f(x)+1}= 9701$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "-6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-3",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nLet $(x^2+3x)$ be equal to $k$. We have, \n$f(x)= k(k+2) = k^2+2k$ \nTherefore, $\\sqrt{f(x)+1} = \\sqrt{k^2+2k+1} = \\sqrt{(k+1)^2} = k+1 = 9701$\nWe get $k=9700$.\nThus, $x^2+3x=9700$ or $x^2+3x-9700 = 0$\nSince $x$ is real, the discriminant of the above quadratic has to be greater than or equal to zero.\nWe find that $3^2 + 4*9700 \\geq 0$ and therefore the quadratic has real roots.\nThe sum of the roots will be $-\\dfrac{b}{a} = -\\dfrac{3}{1} = -3$\nOption D is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476579)"
+    },
+    {
+      "qid": "476580",
+      "passage_text": null,
+      "question_text": "For real values of x, the range of the function $f(x)=\\dfrac{2x-3}{2x^{2}+4x-6}$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\left(-\\infty,\\frac{1}{8}\\right] \\cup[1,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\left(-\\infty,\\frac{1}{4}\\right] \\cup[1,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\left(-\\infty,\\frac{1}{8}\\right] \\cup[\\frac{1}{2},\\infty)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\left(-\\infty,\\frac{1}{4}\\right] \\cup[\\frac{1}{2},\\infty)$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nLet $y= \\dfrac{2x-3}{2x^{2}+4x-6}$\n$\\Rightarrow 2yx^2 + 4yx - 6y = 2x - 3$\n$\\Rightarrow 2yx^2 + (4y-2)x - 6y + 3 = 0$ \nEquation (1) is a quadratic in $x$, where $x$ is real. Therefore, the discriminant of the quadratic has to be greater than or equal to zero.\n$(4y-2)^2 + 4\\times 2y\\times (6y-3) \\geq 0$\n$16y^2 + 4 - 16y - 24y + 48y^2 \\geq 0$\n$64y^2 - 40y + 4 \\geq 0$\n$16y^2 - 10y + 1 \\geq 0$ \nThe roots of the quadratic above will be $\\dfrac{10\\pm 6}{32} = \\dfrac{1}{2}$ or $\\dfrac{1}{8}$\nSince the coefficient of $y^2$ is positive, the quadratic will be less than zero in the range $\\left(\\dfrac{1}{8},\\dfrac{1}{2}\\right)$\nThe quadratic will be greater than or equal to zero otherwise.\nTherefore, the domain the quadratic, or possible values of $y$, which is the range of $f(x)$, will be,\n$\\left(-\\infty, \\dfrac{1}{8}\\right] \\cup \\left[\\dfrac{1}{2}, \\infty \\right)$\nOption C is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476580)"
+    },
+    {
+      "qid": "476581",
+      "passage_text": null,
+      "question_text": "The sum of all the digits of the number $(10^{50}+10^{25}-123)$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "212",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "221",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "324",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "255",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\n$(10^{50} + 10^{25} - 123)$ can be written as $10^{50} + (10^{25}-123)$\n$1000-123$ gives $877$. \n$10000-123$ gives $9877$. \n$100000-123$ gives $99877$. \n$1000000-123$ gives $999877$.\nAnd so on.\nConsidering $10^n-123$, which has a total of $n$ digits; in general, of the $n$ total digits; the digit $7$ is repeating $2$ times, digit $8$ is repeating $1$ time, and digit $9$ is repeating $(n-3)$ times.\nAlso, when added to $10^{50}$, the cumulative increase in the sum of the digits of the resultant number would be $1$, which would come from the leftmost digit of the result. All other newly added digits will be zero.\nThus, the sum of the digits of the result will be given by;\n$[7*2] + [1*8] + [(25-3)*9] + [25*0] + [1*1] = 14+8+198+1 = 221$\nThe correct answer is option B.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476581)"
+    },
+    {
+      "qid": "476582",
+      "passage_text": null,
+      "question_text": "A triangle ABC is formed with AB = AC = 50 cm and BC = 80 cm. Then, the sum of the lengths, in cm, of all three altitudes of the triangle ABC is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "126",
+      "solution_text": "Solution\n\nThe altitudes $CM$ and $BN$ will be equal as the triangle $\\triangle ABC$ is isosceles. \nFurther, in $\\triangle AOB$, using Pythagoras Theorem, we have\n$AO^2 + OB^2 = AB^2$, therefore, $AO^2 = 50^2 - 40^2$\nThus, $AO^2 = 900$ or $AO = 30$ cm. \nWe know that the ratio of altitudes in a triangle is the inverse of the ratio of sides; therefore, the ratio of altitudes of the triangle will be;\n$\\dfrac{1}{50} : \\dfrac{1}{50} : \\dfrac{1}{80} = 8 : 8 : 5$\nTherefore, $CM = BN = 8x$ and $AO = 5x$.\nSince $5x = 30$, we have $x= 6$, and the sum of altitudes, in centimetres, will be $8x+8x+5x = 21x = 21*6 = 126$.",
+      "solution_image_url": "https://cracku.in/media/uploads/image_k1CFAR8.png",
+      "full_markdown": "### Question (qid: 476582)"
+    },
+    {
+      "qid": "476583",
+      "passage_text": null,
+      "question_text": "If $\\left( x^{2}+\\frac{1}{x^{2}} \\right)=25$ and $x>0$, then the value of $\\left( x^{7}+\\frac{1}{x^{7}} \\right)$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$44853\\sqrt{3}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$44856\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$44859\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$44850\\sqrt{3}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\n$\\left(x+\\dfrac{1}{x}\\right)^2 = x^2+\\dfrac{1}{x^2} + 2 = 25+2 = 27$\nTherefore, $\\left(x+\\dfrac{1}{x}\\right) = \\sqrt{27} = 3\\sqrt{3}$\nAlso, $\\left(x+\\dfrac{1}{x}\\right)^3 = x^3 + \\dfrac{1}{x^3} + 3\\left(x+\\dfrac{1}{x}\\right)$\nTherefore, $x^3 + \\dfrac{1}{x^3} = (3\\sqrt{3})^3 - 9\\sqrt{3} = 72\\sqrt{3}$\nAlso, $\\left(x^2+\\dfrac{1}{x^2}\\right)^2 = x^4 + \\dfrac{1}{x^4} + 2$\nTherefore, $x^4 + \\dfrac{1}{x^4} = (25)^2 - 2 = 623$\n\nLastly, $\\left(x^4+\\dfrac{1}{x^4}\\right)\\left(x^3+\\dfrac{1}{x^3}\\right) = x^7+\\dfrac{1}{x^7} + x + \\dfrac{1}{x}$\nTherefore, $x^7+\\dfrac{1}{x^7} = 623*( 72\\sqrt{3}) - 3\\sqrt{3} = 44853\\sqrt{3}$\nOption A is the correct answer.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476583)"
+    },
+    {
+      "qid": "476584",
+      "passage_text": null,
+      "question_text": "In a class of 150 students, 75 students chose physics, 111 students chose mathematics and 40 students chose chemistry. All students chose at least one of the three subjects and at least one student chose all three subjects. The number of students who chose both physics and chemistry is equal to the number of students who chose both chemistry and mathematics, and this is half the number of students who chose both physics and mathematics. The maximum possible number of students who chose physics but not mathematics, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "55",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "2",
+      "solution_text": "Solution\n\nBased on the information provided, we can make the following diagram;\n\nWe know that the sum of all entries in the Venn diagram should be $150$. Therefore,\n$111+ 75-2k + 40 - (k-x) - k + 0 = 150$\n$76 = 4k-x$, where $x\\geq 1$\nWe must maximise the number of students who chose Physics but not Mathematics. This number is equal to $75-2k$. To maximise this we must minimise $k$. \nWe have $4k = 76+x$ or $k = 19 + \\dfrac{x}{4}$\nSince $x$ and $k$ are both integers, $x$ should be divisible by $4$. To minimise $k$, we will take the minimum value of $x$, which is $4$.\nTherefore, $k = 19 + \\dfrac{4}{4} = 20$.\nThus, the maximum possible number of students who chose physics but not mathematics, is $75-2*20 = 35$.",
+      "solution_image_url": "https://cracku.in/media/uploads/image_Dna9bZa.png",
+      "full_markdown": "### Question (qid: 476584)"
+    },
+    {
+      "qid": "476585",
+      "passage_text": null,
+      "question_text": "The sum of all possible real values of x for which $\\log_{x-3}{(x^{2}-9)}=\\log_{x-3}{(x+1)}+2$, is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$-3$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{33}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$3$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{3+ \\sqrt{33}}{2}$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "4",
+      "solution_text": "Solution\n\nSince the base of the logarithm has to be greater than zero and cannot be $1$, $x$ has to be greater than $3$ and cannot be $4$. Also, since $x^2-9>0$, $x$ will be greater than $3$.\nThe equation can be rewritten as;\n$\\log_{x-3}{(x^{2}-9)}-\\log_{x-3}{(x+1)} = 2$\nOr,\n$\\log_{x-3}{\\dfrac{x^2-9}{x+1}} = 2$\n$\\Rightarrow \\dfrac{(x+3)(x-3)}{x+1} = (x-3)^2$\n$\\Rightarrow \\dfrac{(x+3)}{x+1} = (x-3)$\n$\\Rightarrow (x+3) = (x-3)(x+1)$\n$\\Rightarrow x+3 = x^2 - 3x + x - 3$\n$\\Rightarrow x^2 - 3x - 6 = 0$\nThe roots of the quadratic above are $\\dfrac{3\\pm \\sqrt{3^2 + 24}}{2}$\nThe negative value of $x$ will not be possible, the positive value that satisfies is $\\dfrac{3+ \\sqrt{33}}{2}$\nThe correct answer is option D.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476585)"
+    },
+    {
+      "qid": "476586",
+      "passage_text": null,
+      "question_text": "The average salary of 5 managers and 25 engineers in a company is 60000 rupees. If each of the managers received 20% salary increase while the salary of the engineers remained unchanged, the average salary of all 30 employees would have increased by 5%. The average salary, in rupees, of the engineers is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "45000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "54000",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "40000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nLet the average salary of managers be $x$ and let the average salary of engineers be $y$. The total salary of all the employees will be $(5+25)*60000 = 1800000$We have, $5x+25y = 1800000$ .... (1)If the average salary of all the employees increases by $5\\%$, the total salary of all the employees will also increase by $5\\%$, because the total number of employees remains the same. The new total salary will be, $1800000\\times 1.05 = 1890000$Also, the average salary of all the managers has increased by $20\\%$ and has become $1.2x$, we have$5*1.2x + 25y = 1890000$,  or  $6x + 25y  = 1890000$ .... (2)Subtracting equation (1) from equation (2), we get,$x = 90000$Which gives $25y = 1800000 - 90000*5$  or  $y = \\dfrac{1350000}{25} = 54000$Therefore, the correct answer is option C.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476586)"
+    },
+    {
+      "qid": "476587",
+      "passage_text": null,
+      "question_text": "ABCD is a trapezium in which AB is parallel to DC, AD is perpendicular to AB, and AB = 3DC. If a circle inscribed in the trapezium touching all the sides has a radius of 3 cm , then the area, in sq. cm, of the trapezium is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$48$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$30\\sqrt{3}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$36\\sqrt{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$54$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "1",
+      "solution_text": "Solution\n\nWe extend $BC$ and $AD$ to meet at $E$, and based on the information provided, can construct the diagram as follows:\n\n$DC = AT =x$ and $BT = 2x$ such that $AB = 3DC$. $\\angle A= 90^{\\circ}$ and triangles $ABE$ and $DCE$ are similar. \nSince $AD$ is equal to the diameter of the circle, and $AE = 3DE$, we get $DE = 3$ cm.\nIn right-angled triangle $DCE$, we have $CE = \\sqrt{x^2+9}$\nIn right-angled triangle $BCT$, we have $BC = \\sqrt{4x^2+36} = 2\\sqrt{x^2+9}$\nSince $BE = BC+CE$, we have $BE = 3\\sqrt{x^2+9}$\nThe radius of the incircle of a right-angled triangle is given by $\\dfrac{s_1 + s_2 - \\text{hypotenuse}}{2}$\nTherefore, $3 = \\dfrac{3x+9-3\\sqrt{x^2+9}}{2}$\nWhich gives,\n$-x-1 = -\\sqrt{x^2+9}$  or  $x^2+2x+1 = x^2 + 9$  or  $x=4$.\nLastly, the area of the trapezium would be $\\dfrac{1}{2}\\times (x+3x) \\times 6 = 12x = 12\\times 4 = 48$ square centimetres.",
+      "solution_image_url": "https://cracku.in/media/uploads/image_qAUkttk.png",
+      "full_markdown": "### Question (qid: 476587)"
+    },
+    {
+      "qid": "476588",
+      "passage_text": null,
+      "question_text": "If $12^{12x}\\times 4^{24x+12}\\times 5^{2y}=8^{4z}\\times 20 ^{12x} \\times 243^{3x-6}$, where x , y and z are\nnatural numbers, then $ x + y + z $ equals",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "112",
+      "solution_text": "Solution\n\n$12^{12x}\\times 4^{24x+12}\\times 5^{2y}=8^{4z}\\times 20 ^{12x} \\times 243^{3x-6}$\nOn rewriting after prime factorisation, we get,\n$\\cancel{2^{24x}}\\times 3^{12x} \\times 2^{48x+24}\\times 5^{2y} = 2^{12z}\\times \\cancel{2^{24x}} \\times 5^{12x} \\times 3^{15x-30}$\nSince LHS = RHS, the corresponding powers must be equal. We have,\nPowers of $3$:  $12x = 15x-30$  or  $x=10$, and\nPowers of $2$:  $48x+24 = 12z$  or  $4x+2 = z$  or  $z = 42$\nPowers of $5$:  $2y = 12x$  or  $y= 6x$  or  $y=60$\nTherefore, $x+y+z = 10+42+60 = 112$",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476588)"
+    },
+    {
+      "qid": "476589",
+      "passage_text": null,
+      "question_text": "In $\\triangle ABC$, $AB =AC= 12$ cm and $D$ is a point on side $BC$ such that $AD= 8$ cm. If $AD$ is extended to a point $E$ such that $\\angle ACB = \\angle AEB$, then the length, in cm, of $AE$ is",
+      "image_url": null,
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "14",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "3",
+      "solution_text": "Solution\n\nBased on the information provided, we can construct the following diagram;We have $AB = AC = 12$ cm, and $AD = 8$ cm.Without loss of generalisation, we take $AD$ as an altitude of $\\triangle ABC$. Therefore, in $\\triangle ACD$, $AC^2 = AD^2 + CD^2$. We get $AC^2 - AD^2 = CD^2$, therefore, $CD^2 = 12^2 - 8^2 = 80$, or $CD = \\sqrt{80}$.Also, $BD = CD$, since $AD$ will also be the new median, being the altitude of the isosceles triangle. And $BD = \\sqrt{80}$In right-angled triangle $\\triangle ACD$, $\\tan C = \\dfrac{AD}{CD} = \\dfrac{8}{\\sqrt{80}}$In right-angled triangle $\\triangle BDE$, $\\tan E = \\dfrac{BD}{DE} = \\dfrac{\\sqrt{80}}{DE}$Since $\\angle C = \\angle E$, we have $\\tan C = \\tan E$, therefore,$\\dfrac{8}{\\sqrt{80}} = \\dfrac{\\sqrt{80}}{DE}$$\\Rightarrow DE = \\dfrac{80}{8} = 10$Since $AE = AD+DE$, we get $AE = 8+10= 18$ cm. The correct answer is option C.",
+      "solution_image_url": "https://cracku.in/media/uploads/image_HRc9FZc.png",
+      "full_markdown": "### Question (qid: 476589)"
+    },
+    {
+      "qid": "476590",
+      "passage_text": null,
+      "question_text": "Vessels A and B contain 60 litres of alcohol and 60 litres of water, respectively. A certain volume is taken out from A and poured into B. After stirring, the same volume is taken out from B and poured into A. If the resultant ratio of alcohol and water in A is 15 : 4, then the volume, in litres, initially taken out from A is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "16",
+      "solution_text": "Solution\n\nVessel A contains $60$ litres of pure alcohol, and Vessel B contains $60$ litres of pure water. Let the amount taken out from vessel A be $x$ litres. The contents in Vessel A now are $60-x$ litres of alcohol, and in Vessel B now are $60$ litres of water and $x$ litres of alcohol.\nAfter mixing, when the same quantity $x$ is taken out from Vessel B, the alcohol that would be taken out would be ${\\left(\\dfrac{x}{60+x}\\right)}^{\\text{th}}$ of $x$, which is $\\dfrac{x^2}{60+x}$ litres.The initial total quantity of $60$ litres has been restored in A after replacement. The total amount of alcohol in Vessel A after the process is complete is:$60 - x + \\dfrac{x^2}{60+x} = \\dfrac{(60+x)(60-x) + x^2}{60+x} = \\dfrac{3600}{60+x}$The total quantity in vessel A is $60$ litres where the ratio of alcohol to total quantity is $\\dfrac{15}{15+4} = \\dfrac{15}{19}$Therefore, $\\dfrac{3600\\div (60+x)}{60} = \\dfrac{15}{19}$$\\Rightarrow \\dfrac{60}{60+x} = \\dfrac{15}{19}$$\\Rightarrow x = 16$Thus, the quantity taken out and replaced in the two iterations is $16$ litres.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476590)"
+    },
+    {
+      "qid": "476591",
+      "passage_text": null,
+      "question_text": "The ratio of the number of coins in boxes A and B was 17:7. After 108 coins were shifted from box A to box B, this ratio became 37:20. The number of coins that needs to be shifted further from A to B, to make this ratio 1:1, is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "272",
+      "solution_text": "Solution\n\nLet the initial total number of coins in box A be $17x$, since the ratio of the number of coins in boxes A and B is $17:7$, the initial total number of coins in box B would be $7x$.After $108$ coins are shifted from box A to box B, the number of coins in box A would be $17x-108$ and in box B would be $7x+108$. We have,$\\dfrac{17x-108}{7x+108} = \\dfrac{37}{20}$$\\Rightarrow 340x - 2160 = 259x + 3996$$\\Rightarrow 81x = 6156$  or  $x= 76$Therefore, the total number of coins in the two boxes combined are $(17+7)*76 = 1824$, half of which is $912$. The number of coins in box B currently is $7*76+108 = 640$. The number of coins needed to make the coins equal in both the boxes is, $912-640 = 272$.Thus, $272$ coins will be transferred from box A to box B to make the number of coins equal (1:1) in both the boxes.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476591)"
+    },
+    {
+      "qid": "476592",
+      "passage_text": null,
+      "question_text": "Let p, q and r be three natural numbers such that their sum is 900, and r is a perfect square whose value lies between 150 and 500. If p is not less than 0.3q and not more than 0.7q, then the sum of the maximum and minimum possible values of p is",
+      "image_url": null,
+      "options": [],
+      "correct_option_data": "397",
+      "solution_text": "Solution\n\nWe have $p+q+r = 900$, and $r$ is a perfect square lying between $150$ and $500$.Let $q$ be a non-variable number that does not have a range.We have $0.3q \\leq p \\leq 0.7q$,  or  $q+0.3q \\leq p+q \\leq q+0.7q$  or  $1.3q \\leq p+q \\leq 1.7q$Also, we can rewrite $p+q = 900-r$Therefore, $1.3q \\leq 900-r \\leq 1.7q$Since the extreme values (maximum and minimum) of $p$ depend on the value of $q$ ($0.3q$ and $0.7q$), we can maximise or minimise $r$ to find the extreme values of $p$.Since $1.3q \\leq 900-r$, the minimum possible value of $q$ would be when $1.3q = 900-r$ and when $r$ is maximum. The maximum value of $r$ is $484$. We get, $1.3q = 900-484$, or $q = 320$.This gives the minimum possible value of $p$ as $0.3\\times 320 = 96$.Since $900-r \\leq 1.7q$. the maximum possible value of $q$ would be when $900-r=1.7q$ and when $r$ is minimum. The minimum value of $r$ is $169$. We get $1.7q = 900-169$ or $q= 430$This gives the maximum possible value of $p$ as $0.7\\times 430 = 301$The sum of the maximum and minimum values of $p$ is $96+301 = 397$.",
+      "solution_image_url": null,
+      "full_markdown": "### Question (qid: 476592)"
     }
   ]
 }
