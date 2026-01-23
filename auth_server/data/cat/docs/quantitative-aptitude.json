@@ -67391,30 +67391,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "4.2%",
+          "option_text": "20",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "9.7%",
+          "option_text": "68",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "15.5%",
+          "option_text": "10",
           "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "16%",
+          "option_text": "11",
           "is_correct": false
         }
       ],
       "correct_option_data": "C",
-      "solution_text": "It is given that a merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him.\n\nHence, the cost price of 105 cm clothes is 100 rupees. \n\nIt is also known that he marked the price of 100 cm clothes as 110 rupees, and gave a 5% discount, and he cheated his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers.\n\nHence, the selling price of 95 cm clothes is 110*(19/20) rupees.\n\nTherefore, the selling price of 105 cm clothes is 115.5 rupees.\n\nHence, the profit is 15.5%\n\nThe correct option is C",
+      "solution_text": "Given, $\\log_{x}(x^2 + 12) = 4$\n\n=> $x^2+12=x^4$\n\n=> $x^4-x^2-12=0$\n\n=> $x^4-4x^2+3x^2-12=0$\n\n=> $x^2\\left(x^2-4\\right)+3\\left(x^2-4\\right)=0$\n\n=> $\\left(x^2-4\\right)\\left(x^2+3\\right)=0$ => since, x is a positive real number (given) => x = 2.\n\nNow, Given $3 \\log_{y} x = 1$\n\n=> $\\log_yx=\\frac{1}{3}$\n\n=> $x=y^{\\frac{1}{3}}$\n\n=> $y=x^3$ => y = 8.\n\n=> x + y = 2 + 8 = 10.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449532)\n\n**Passage:**\nA merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is\n\n4.2%\n\n9.7%\n\n15.5%\n\n16%\n\nA merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is\n\n**Options:**\n- **A**. 4.2%\n- **B**. 9.7%\n- **C**. 15.5%\n- **D**. 16%\n\n**Correct Answer:** null"
     },
@@ -67426,36 +67426,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "250000",
+          "option_text": "$3\\sqrt{31}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "200000",
+          "option_text": "$4\\sqrt{5}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "150000",
-          "is_correct": false
+          "option_text": "$3\\sqrt{7}$",
+          "is_correct": true
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "125000",
-          "is_correct": true
-        },
-        {
-          "data_option": "5",
-          "label": "E",
-          "option_text": "None of the above",
+          "option_text": "$2\\sqrt{7}$",
           "is_correct": false
         }
       ],
-      "correct_option_data": "D",
-      "solution_text": "Let the amount Jose borrowed be 'x'. The rate of interest is 10%\n\nInterest occurred on 'x' is = $\\ \\frac{\\ x\\times1\\times\\ \\ 0.1\\ }{5}+\\ \\frac{\\ 2x\\ \\times2\\times\\ \\ 0.1}{5}\\ +\\ \\ \\frac{2x\\times\\ 3\\times\\ 0.1\\ }{5}$\n\n= $\\ \\frac{\\ 1.1x\\ }{5}$\n\nThe invested amount doubled at the end of the fourth year, i.e. 2x.\n\nJose's profit after paying principal and interest amounts to his friend at the end of the fourth year is Rs 97500.\n\ni.e., $\\ 2x-x-\\frac{\\ 1.1x\\ }{5}=97500$\n\n$\\frac{\\ 3.9x}{5}=97500$\n\n$\\ \\ \\ \\ x=125000$\n\nThe amount that Jose borrowed is Rs 1,25,000.\n\nOption (D) is correct.",
+      "correct_option_data": "C",
+      "solution_text": "Given, $\\sqrt{5x+9} + \\sqrt{5x - 9} = 3(2 + \\sqrt{2})$\n\n=> $\\sqrt{\\ 5x+9}+\\sqrt{\\ 5x-9}=6+3\\sqrt{\\ 2}$\n\n=> $\\sqrt{\\ 5x+9}+\\sqrt{\\ 5x-9}=\\sqrt{\\ 36}+\\sqrt{\\ 18}$\n\nComparing the L.H.S. and R.H.S. \n\n=> $5x+9=36\\ $ => $5x=27$ => $x=\\dfrac{27}{5}$ (can be verified using the second term as well).\n\n=> $\\sqrt{10x+9}$ = $\\sqrt{\\left(10\\times\\dfrac{27}{5}\\right)+9}$ = $\\sqrt{\\ 63}=3\\sqrt{\\ 7}$",
       "image_url": "",
       "full_markdown": "### Question (qid: 428885)\n\n**Passage:**\nJose borrowed some money from his friend at simple interest rate of 10% and invested the entire amount in stocks. At the end of the first year, he repaid 1/5th of the principal amount. At the end of the second year, he repaid half of the remaining principal amount. At the end of third year, he repaid the entire remaining principal amount. At the end of the fourth year, he paid the last three years’ interest amount. As there was no principal amount left, his friend did not charge any interest in the fourth year. At the end of fourth year, he sold out all his stocks. Later, he calculated that he gained Rs. 97500 after paying principal and interest amounts to his friend. If his invested amount in the stocks became double at the end of the fourth year, how much money did he borrow from his friend?\n\n250000\n\n200000\n\n150000\n\n125000\n\nNone of the above\n\nJose borrowed some money from his friend at simple interest rate of 10% and invested the entire amount in stocks. At the end of the first year, he repaid 1/5th of the principal amount. At the end of the second year, he repaid half of the remaining principal amount. At the end of third year, he repaid the entire remaining principal amount. At the end of the fourth year, he paid the last three years’ interest amount. As there was no principal amount left, his friend did not charge any interest in the fourth year. At the end of fourth year, he sold out all his stocks. Later, he calculated that he gained Rs. 97500 after paying principal and interest amounts to his friend. If his invested amount in the stocks became double at the end of the fourth year, how much money did he borrow from his friend?\n\n**Options:**\n- **A**. 250000\n- **B**. 200000\n- **C**. 150000\n- **D**. 125000\n- **E**. None of the above\n\n**Correct Answer:** null"
     },
@@ -67463,40 +67457,9 @@
       "qid": "quant-2140",
       "passage_text": "Separately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\nRs. 100000\n\nRs. 120000\n\nRs. 150000\n\nRs. 180000\n\nNone of the above",
       "question_text": "Separately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?",
-      "options": [
-        {
-          "data_option": "1",
-          "label": "A",
-          "option_text": "Rs. 100000",
-          "is_correct": true
-        },
-        {
-          "data_option": "2",
-          "label": "B",
-          "option_text": "Rs. 120000",
-          "is_correct": false
-        },
-        {
-          "data_option": "3",
-          "label": "C",
-          "option_text": "Rs. 150000",
-          "is_correct": false
-        },
-        {
-          "data_option": "4",
-          "label": "D",
-          "option_text": "Rs. 180000",
-          "is_correct": false
-        },
-        {
-          "data_option": "5",
-          "label": "E",
-          "option_text": "None of the above",
-          "is_correct": false
-        }
-      ],
-      "correct_option_data": "A",
-      "solution_text": "Let the amount invested by Jack and Sristi be $'x'$.\n\nJack's amount after four months will become $\\frac{x}{2^4}$ and after six months it will become $\\frac{x}{2^6}$.\n\nSristi's amount after four months will become $x-\\left(4\\times\\ 15000\\right)$ and after six months it will become $x-\\left(6\\times\\ 15000\\right)$\n\nFrom the given information,\n\n$\\ \\frac{\\ \\ \\frac{\\ x}{2^4}}{x-\\left(4\\times\\ 15000\\right)}=\\ \\frac{\\ \\ \\frac{\\ x}{2^6}}{x-\\left(6\\times\\ 15000\\right)}$\n\n$\\ \\ \\left(\\ x-\\left(4\\times\\ 15000\\right)\\right)=\\ 2^2\\times\\ \\left(x-\\left(6\\times\\ 15000\\right)\\right)$\n\n$3x\\ =\\ 300000$\n\n$x\\ =\\ 100000$.\n\nThe amount invested by Jack and Sristi is 100000.\n\nOption 'A' is correct.",
+      "options": [],
+      "correct_option_data": "7",
+      "solution_text": "It is given that  $\\log_{\\sqrt{3}}{(x)}+\\frac{\\log_{x}{(25)}}{\\log_{x}{(0.008)}}=\\frac{16}{3}$, which can be written as:\n\n=> $2\\log_3x+\\log_{0.008}25\\ =\\ \\frac{16}{3}$\n\n=> $2\\log_3x+\\log_{\\frac{8}{1000}}25\\ =\\ \\frac{16}{3}$\n\n=> $2\\log_3x+\\log_{\\frac{1}{125}}25\\ =\\ \\frac{16}{3}$\n\n=> $2\\log_3x+\\log_{5^{-3}}\\left(5\\right)^2\\ =\\ \\frac{16}{3}$\n\n=> $2\\log_3x-\\frac{2}{3}=\\ \\frac{16}{3}$\n\n=> $2\\log_3x=\\frac{16}{3}+\\frac{2}{3}$\n\n=> $2\\log_3x=6$\n\n=> $\\log_3x^2=6\\ =>\\ x^2\\ =\\ 3^6$\n\nHence, $\\log_3\\left(3\\cdot x^2\\right)\\ =\\ \\log_3\\left(3\\cdot3^6\\right)\\ =\\log_33^7\\ =\\ 7$",
       "image_url": "",
       "full_markdown": "### Question (qid: 428886)\n\n**Passage:**\nSeparately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\nRs. 100000\n\nRs. 120000\n\nRs. 150000\n\nRs. 180000\n\nNone of the above\n\nSeparately, Jack and Sristi invested the same amount of money in a stock market. Jack’s invested amount kept getting reduced by 50% every month. Sristi’s investment also reduced every month, but in an arithmetic progression with a common difference of Rs. 15000. They both withdrew their respective amounts at the end of the sixth month. They observed that if they had withdrawn their respective amounts at the end of the fourth month, the ratio of their amounts would have been the same as the ratio after the sixth month. What amount of money was invested by Jack in the stock market?\n\n**Options:**\n- **A**. Rs. 100000\n- **B**. Rs. 120000\n- **C**. Rs. 150000\n- **D**. Rs. 180000\n- **E**. None of the above\n\n**Correct Answer:** null"
     },
@@ -67508,36 +67471,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "10",
+          "option_text": "$40\\sqrt{5}$",
           "is_correct": false
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "15",
+          "option_text": "$30\\sqrt{5}$",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "17.5",
+          "option_text": "$36\\sqrt{5}$",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "20",
+          "option_text": "$34\\sqrt{5}$",
           "is_correct": true
-        },
-        {
-          "data_option": "5",
-          "label": "E",
-          "option_text": "None of the above",
-          "is_correct": false
         }
       ],
       "correct_option_data": "D",
-      "solution_text": "Let printed price be 100.\n\nRajnish bought it at 25% discount, C.P of Rajnish = 75% of 100 = 75.\n\nHe sold it at 10% discount on printed price, S.P of Rajnish = 90% of 100 = 90\n\nHence, Rajnish, profit% = $\\ \\frac{\\ 90-75}{75}\\times\\ 100=20%$.\n\nThe answer is option D.",
+      "solution_text": "It is given that $x^8 + \\left(\\frac{1}{x}\\right)^8 = 47$, which can be written as:\n\n=> $\\left(x^4\\right)^{^2}+\\left(\\ \\frac{\\ 1}{x^4}\\right)^{^2}=47$\n\n=> $\\left(x^4+\\frac{\\ 1}{x^4}\\right)^{^2}-2\\cdot x^4\\cdot\\frac{1}{x^4}=47$\n\n=> $\\left(x^4+\\frac{\\ 1}{x^4}\\right)^{^2}=49$\n\n=> $x^4+\\frac{\\ 1}{x^4}=7$\n\nSimilarly, $x^4+\\frac{\\ 1}{x^4}=7$ can be expressed as:\n\n=> $\\left(x^2\\right)^{^2}+\\left(\\frac{\\ 1}{x^2}\\right)^{^2}=7$\n\n=> $\\left(x^2+\\frac{\\ 1}{x^2}\\right)^{^2}-2\\cdot x^2\\cdot\\frac{1}{x^2}=7$\n\n=> $\\left(x^2+\\frac{\\ 1}{x^2}\\right)^{^2}=9$\n\n=> $x^2+\\frac{\\ 1}{x^2}=3$\n\nBy the same logic, we get $x+\\frac{1}{x}=\\sqrt{\\ 5}$\n\nNow, $x^3+\\frac{1}{x^3}=\\left(x+\\frac{1}{x}\\right)^{^3}-3\\cdot x\\cdot\\frac{1}{x}\\left(x+\\frac{1}{x}\\right)$\n\n=> $x^3+\\frac{1}{x^3}=\\left(\\sqrt{\\ 5}\\right)^{^3}-3\\sqrt{\\ 5}=2\\sqrt{\\ 5}$\n\nBy the same logic, we can say that \n\n=> $x^9+\\frac{1}{x^9}=\\left(x^3+\\frac{1}{x^3}\\right)^{^3}-3\\cdot x^3\\cdot\\frac{1}{x^3}\\left(x^3+\\frac{1}{x^3}\\right)$\n\n=> $x^9+\\frac{1}{x^9}=\\left(2\\sqrt{\\ 5}\\right)^{^3}-3\\left(2\\sqrt{\\ 5}\\right)$\n\n=> $x^9+\\frac{1}{x^9}=40\\sqrt{\\ 5}-6\\sqrt{\\ 5}=34\\sqrt{\\ 5}$\n\nThe correct option is D",
       "image_url": "",
       "full_markdown": "### Question (qid: 428887)\n\n**Passage:**\nRajnish bought an item at 25% discount on the printed price. He sold it at 10% discount on the printed price. What is his profit in percentage?\n\n10\n\n15\n\n17.5\n\n20\n\nNone of the above\n\nRajnish bought an item at 25% discount on the printed price. He sold it at 10% discount on the printed price. What is his profit in percentage?\n\n**Options:**\n- **A**. 10\n- **B**. 15\n- **C**. 17.5\n- **D**. 20\n- **E**. None of the above\n\n**Correct Answer:** null"
     },
@@ -67549,36 +67506,30 @@
         {
           "data_option": "1",
           "label": "A",
-          "option_text": "340",
+          "option_text": "2",
           "is_correct": true
         },
         {
           "data_option": "2",
           "label": "B",
-          "option_text": "600",
+          "option_text": "3",
           "is_correct": false
         },
         {
           "data_option": "3",
           "label": "C",
-          "option_text": "240",
+          "option_text": "4",
           "is_correct": false
         },
         {
           "data_option": "4",
           "label": "D",
-          "option_text": "480",
-          "is_correct": false
-        },
-        {
-          "data_option": "5",
-          "label": "E",
-          "option_text": "380",
+          "option_text": "0",
           "is_correct": false
         }
       ],
       "correct_option_data": "A",
-      "solution_text": "The two types of apples sold A and B are bought in the ratio of 5: 8.\n\nConsidering the weights to be 5x and 8x.\n\nThe cost price of A is 20 percent higher than that of B.\n\nConsidering the cost price of B = y, A = 6y/5.\n\nThe total cost price of A = $\\left(5x\\right)\\cdot\\left(\\frac{6y}{5}\\right)$\n\nThe total cost price of B = $\\left(8x\\right)\\cdot\\left(y\\right)$\n\nTHe total cost price = 8xy + 6xy = 14xy\n\n14xy = 2800.\n\nxy = 200.\n\nTHe cost price of A = 1200.\n\nTHe cost price of B = 1600.\n\nA is sold a profit of 15 percent. 15 percent of 1200 = 180.\n\nB is sold at a profit of 10 percent. 10 percent of 1600 = 160.\n\nThe total profit is 180 + 160\n\n= 340",
+      "solution_text": "In the given equations the logarithms are defined to base less than 1 and hence a series of decreasing functions and hence we reverse the sign for the functions.\n\n$\\log_{0.33}\\left(x^2-3x+2\\right)\\ \\ \\ $ > $\\log_{0.33}\\left(6\\right)\\ \\ \\ $\n\n$x^2-3x+2<6$\n\n$x^2-3x-4<0$\n\n(x-4)(x+1)<0.\n\nTo satisfy this condition the range x =(-1,4).\n\nx takes values of 0,1,2,3.\n\nIf x = 0  $x^2-3x+2\\ =\\ 2$ and $\\log_{0.33}\\left(2\\right)$ >$\\log_{0.33}\\left(6\\right)$ .\n\nif x = 1  $x^2-3x+2\\ =0$ and $\\log_{0.33}\\left(0\\right)$ is not defined.\n\nif x = 2   $x^2-3x+2\\ =0$ and $\\log_{0.33}\\left(0\\right)$ is not defined.\n\nIf x = 3  $x^2-3x+2\\ =\\ 2$ and $\\log_{0.33}\\left(2\\right)$ >$\\log_{0.33}\\left(6\\right)$.\n\nx = 0,3 are two integral values that satisfy the condition",
       "image_url": "",
       "full_markdown": "### Question (qid: 387514)\n\n**Passage:**\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n340\n\n600\n\n240\n\n480\n\n380\n\nSheela purchases two varieties of apples - A and B - for a total of Rupees 2800. The weights in kg of A and B purchased by Sheela are in the ratio 5 : 8 but the cost per kg of A is 20% more than that of B. Sheela sells A and B with profits of 15% and 10% respectively.\n\nWhat is the overall profit in Rupees?\n\n**Options:**\n- **A**. 340\n- **B**. 600\n- **C**. 240\n- **D**. 480\n- **E**. 380\n\n**Correct Answer:** null"
     }

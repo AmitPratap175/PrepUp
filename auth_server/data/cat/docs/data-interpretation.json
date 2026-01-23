@@ -43602,6 +43602,156 @@
       "solution_text": "`From (i), the team must always contain A or D, but not both. Hence, all combinations of batsmen are as follows:\n\nAB\n\nAC\n\nDB\n\nDC\n\nNo other possible combination of batsmen can be present.\n\nWhen D and B are the batsmen, only then can G be the wicketkeeper, in other combinations, G cannot be the wicketkeeper. <From (ii)>.\n\nHence, all combinations of batsman and wicketkeeper are\n\nCombination 1: ABE\n\nCombination 2: ABF\n\nCombination 3: ACE\n\nCombination 4: ACF\n\nCombination 5: DBE\n\nCombination 6: DBF\n\nCombination 7: DBG\n\nCombination 8: DCE\n\nCombination 9: DCF\n\nUsing (iii),  from 5 to 9, K is not present\n\nUsing (iv), 3,4,8,9, J is not present.\n\nUsing (v), 2, 4, 6, 9, H is not present.\n\nHence, all possible bowlers we can choose from in the 9 combinations are \n\nNow, as per the hints given under (vi) and (vii), we have to choose L in 1, 3, 5 and 8.\n\nSo, the total number of teams possible\n\nHence, total number of possible teams = 31.",
       "image_url": "",
       "full_markdown": "### Question (qid: 369892)\n\n**Passage:**\nA team of 5 players has to be chosen for a 5-a-side cricket match such that there are 2 batsmen, 1 wicket-keeper and 2 bowlers. The players available for selection are as follows:\n\n1. Batsmen - A, B, C, D\n\n2. Wicket-Keepers - E, F, G\n\n3. Bowlers - H, I, J, K, L\n\nAlso, the following constraints need to be followed while choosing the team:\n\n1. Either A or D must be present but not both.\n\n2. If either A or C or both are present in the team, G is not present in the team.\n\n3. If D is there in the team, K is definitely not there in the team.\n\n4. If C is there in the team, J is definitely not there in the team.\n\n5. If F is there in the team, H is not there in the team.\n\n6. A team that has both A and E must necessarily have L.\n\n7. A team that has both D and E must necessarily have L.\n\nBased on the information given above, answer the questions that follow.\n\nHow many teams can be formed in total?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1534",
+      "passage_text": "In an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.",
+      "question_text": "Find the number of people who had only grapes.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "The venn diagram can be represented as follows:\n\nWe know that a+b+c+d+e+f+g = 150, a=32, c=48, f=41\n\nFrom condition 5, 150+g = 4(a+g) +4 = 4(32+g) + 4 \n\n146 + g = 128 + 4g\n\n=> g = 6\n\nHence, 6 people had only grapes\n\nAlternate Explanation:\n\nFrom statement 4 and let us assume the variables as shown in the below Venn diagram.\n\nFrom statement 1: i = n = l = p = 0\nFrom statement 2: f = i = m = n = 0\nFrom statement 3: h = k = 0\nFrom statement 7: a = 32\nFrom statement 8: b = 41\nFrom statement 9: g = 48\n\nFrom statement 5: 150+c= 4+4(32+c)  --- Eq 1\nFrom statement 4,6: 150 = 88+41+d+j\nd+j = 21   ---- Eq 2\nFrom statement 4: 150 = 32+41+d+e+48+j\n150 = 32+41+21+48+e\ne = 8   --- Eq 3\nOn substituting the values of a+j, e in Eq 1, we get\n150 +c = 132+4c\nc = 6\nFinally we get the below values :",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13555)\n\n**Passage:**\nIn an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.\n\nFind the number of people who had only grapes.\n\n**Options:**\n- **A**. 4\n- **B**. 6\n- **C**. 8\n- **D**. 10\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1535",
+      "passage_text": "In an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.",
+      "question_text": "How many persons had grapes?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "55",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "65",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "The venn diagram can be represented as follows:\n\nWe know that a+b+c+d+e+f+g = 150, a=32, c=48, f=41\n\nFrom condition 5, 150+g = 4(a+g) +4 = 4(32+g) + 4 \n\n146 + g = 128 + 4g\n\n=> g = 6\n\nNumber of people who had exactly 2 types of fruit = b + d + f\n\nFrom 6, 150 - 88 = b + d + f => b + d + f = 62\n\nHence 32 + 62 + c + e= 150\n\nc + e = 56\n\nc = 48 => e = 8\n\nHence, the number of people who had grapes = e + f + g = 8 + 41 + 6 = 55\n\nAlternate Explanation:\n\nFrom statement 4 and let us assume the variables as shown in the below Venn diagram.\n\nFrom statement 1: i = n = l = p = 0\nFrom statement 2: f = i = m = n = 0\nFrom statement 3: h = k = 0\nFrom statement 7: a = 32\nFrom statement 8: b = 41\nFrom statement 9: g = 48\n\nFrom statement 5: 150+c= 4+4(32+c)  --- Eq 1\nFrom statement 4,6: 150 = 88+41+d+j\nd+j = 21   ---- Eq 2\nFrom statement 4: 150 = 32+41+d+e+48+j\n150 = 32+41+21+48+e\ne = 8   --- Eq 3\nOn substituting the values of a+j, e in Eq 1, we get\n150 +c = 132+4c\nc = 6\nFinally we get the below values :",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13556)\n\n**Passage:**\nIn an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.\n\nHow many persons had grapes?\n\n**Options:**\n- **A**. 45\n- **B**. 50\n- **C**. 55\n- **D**. 65\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1536",
+      "passage_text": "In an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.",
+      "question_text": "If 56 people had apples and litchis, then how many people had oranges and apples?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "69",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "71",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "73",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "77",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "The venn diagram can be represented as follows:\n\nWe know that a+b+c+d+e+f+g = 150, a=32, c=48, f=41\n\nFrom condition 5, 150+g = 4(a+g) +4 = 4(32+g) + 4\n\n146 + g = 128 + 4g\n\n=> g = 6\n\nNumber of people who had exactly 2 types of fruit = b + d + f\n\nFrom 6, 150 - 88 = b + d + f => b + d + f = 62\n\nHence 32 + 62 + c + e= 150\n\nc + e = 56\n\nc = 48 => e = 8\n\nIf 56 people had apples and litchis, b + c = 56\n\nb = 56 - 48 = 8\n\nd = 62 - 8 - 41 = 13\n\nHence, number of people who had apples and oranges = c + d + e = 48 + 13 + 8 = 69\n\nAlternate Explanation:\n\nFrom statement 4 and let us assume the variables as shown in the below Venn diagram.\n\nFrom statement 1: i = n = l = p = 0\nFrom statement 2: f = i = m = n = 0\nFrom statement 3: h = k = 0\nFrom statement 7: a = 32\nFrom statement 8: b = 41\nFrom statement 9: g = 48\n\nFrom statement 5: 150+c= 4+4(32+c)  --- Eq 1\nFrom statement 4,6: 150 = 88+41+d+j\nd+j = 21   ---- Eq 2\nFrom statement 4: 150 = 32+41+d+e+48+j\n150 = 32+41+21+48+e\ne = 8   --- Eq 3\nOn substituting the values of a+j, e in Eq 1, we get\n150 +c = 132+4c\nc = 6\nFinally we get the below values :",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13557)\n\n**Passage:**\nIn an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.\n\nIf 56 people had apples and litchis, then how many people had oranges and apples?\n\n**Options:**\n- **A**. 69\n- **B**. 71\n- **C**. 73\n- **D**. 77\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1537",
+      "passage_text": "In an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.",
+      "question_text": "If the number of people who had oranges was less than 70 but greater than 65, find the maximum number of people who had litchis.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "59",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "43",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "46",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "The venn diagram can be represented as follows:\n\nWe know that a+b+c+d+e+f+g = 150, a=32, c=48, f=41\n\nFrom condition 5, 150+g = 4(a+g) +4 = 4(32+g) + 4\n\n146 + g = 128 + 4g\n\n=> g = 6\n\nNumber of people who had exactly 2 types of fruit = b + d + f\n\nFrom 6, 150 - 88 = b + d + f => b + d + f = 62\n\nHence 32 + 62 + c + e= 150\n\nc + e = 56\n\nc = 48 => e = 8\n\nb + d + 41 = 62 => b + d = 21\n\nTo maximize the number of people who had litchis while fulfilling the oranges condition all of the 20 must fall in the set of either litchis or oranges. Hence, let there be two error terms m1 and m2 such that m1 + m2 = 20 and m1 is added to b and m2 to c.\n\nCurrently, number of people who had oranges = c + d + e = 56 + d. \n\nHence, 65 < 56 + d + m2 < 70\n\nTo maximize the number of people who had litchis, d should be zero. Hence, minimum value of m2 = 10. Hence, m1= 10\n\nThus c' = c + m2 = 48 + 10 = 58\n\nIf d=0, b=21, b' = b+m1 = 21 + 10 = 31\n\nThus, the number of people who had litchis = b' + c' = 31 + 58 = 89\n\nAlternate Explanation:\n\nFrom statement 4 and let us assume the variables as shown in the below Venn diagram.\n\nFrom statement 1: i = n = l = p = 0\nFrom statement 2: f = i = m = n = 0\nFrom statement 3: h = k = 0\nFrom statement 7: a = 32\nFrom statement 8: b = 41\nFrom statement 9: g = 48\n\nFrom statement 5: 150+c= 4+4(32+c)  --- Eq 1\nFrom statement 4,6: 150 = 88+41+d+j\nd+j = 21   ---- Eq 2\nFrom statement 4: 150 = 32+41+d+e+48+j\n150 = 32+41+21+48+e\ne = 8   --- Eq 3\nOn substituting the values of a+j, e in Eq 1, we get\n150 +c = 132+4c\nc = 6\nFinally we get the below values :\n\nd + j = 21\n\nThe number of people who had Litchi = 48 + j\n\nWe need to maximise the value of j to find maximum number of people who had Litchi.\n\nThe number of people who had oranges = 56 + d = 77 - j\n\nIt is given, the number of people who had oranges is more than 65 and less than 70.\n\nj is maximum when the number of people who had oranges is minimum, i.e. 66\n\n77 - j = 66\n\nj = 11\n\nThe maximum number of people who had Litchi = 48 + 11 = 59\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13558)\n\n**Passage:**\nIn an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.\n\nIf the number of people who had oranges was less than 70 but greater than 65, find the maximum number of people who had litchis.\n\n**Options:**\n- **A**. 60\n- **B**. 59\n- **C**. 43\n- **D**. 46\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1538",
+      "passage_text": "In an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.",
+      "question_text": "What is the difference between the number of people who had Grapes and the maximum number of people who had apples and oranges?",
+      "options": [],
+      "correct_option_data": "22",
+      "solution_text": "The venn diagram can be represented as follows:\n\nWe know that a+b+c+d+e+f+g = 150, a=32, c=48, f=41\n\nFrom condition 5, 150+g = 4(a+g) +4 = 4(32+g) + 4\n\n146 + g = 128 + 4g\n\n=> g = 6\n\nNumber of people who had exactly 2 types of fruit = b + d + f\n\nFrom 6, 150 - 88 = b + d + f => b + d + f = 62\n\nHence 32 + 62 + c + e= 150\n\nc + e = 56\n\nc = 48 => e = 8\n\nIf 56 people had apples and litchis, b + c = 56\n\nb = 56 - 48 = 8\n\nd = 62 - 8 - 41 = 13\n\nHence, number of people who had apples and oranges = c + d + e = 48 + 13 + 8 = 69\n\nAlternate Explanation:\n\nFrom statement 4 and let us assume the variables as shown in the below Venn diagram.\n\nFrom statement 1: i = n = l = p = 0\nFrom statement 2: f = i = m = n = 0\nFrom statement 3: h = k = 0\nFrom statement 7: a = 32\nFrom statement 8: b = 41\nFrom statement 9: g = 48\n\nFrom statement 5: 150+c= 4+4(32+c) --- Eq 1\nFrom statement 4,6: 150 = 88+41+d+j\nd+j = 21 ---- Eq 2\nFrom statement 4: 150 = 32+41+d+e+48+j\n150 = 32+41+21+48+e\ne = 8 --- Eq 3\nOn substituting the values of a+j, e in Eq 1, we get\n150 +c = 132+4c\nc = 6\nFinally we get the below values :\n\nThe number of people who had grapes = 41 + 6 + 8 = 55\n\nThe maximum number of people who had apples and oranges = d + 8 + 48 = 21 + 56 = 77\n\nRequired difference = 77 - 55 = 22",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 429273)\n\n**Passage:**\nIn an event, only four different kinds of fruits, namely apples, grapes, oranges and litchi were arranged for dinner. 1) All the people who had litchis also had apples. 2) All the people who had oranges also had apples. 3) No person who had grapes had litchis. 4) 150 persons had apples. 5) Total number of people who had at least one type of fruit is 4 more than 4 times the number of people who had exactly one type of fruit. 6) Number of people who had apples is 88 more than the number of persons who had exactly two types of fruits. 7) Number of people who had only apples was 32. 8) 41 of those who attended the event had both apples and grapes only. 9) 48 persons had both litchis and oranges.\n\nWhat is the difference between the number of people who had Grapes and the maximum number of people who had apples and oranges?\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }
