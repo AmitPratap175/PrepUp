@@ -1716,6 +1716,25 @@ wheels = [
 ]
 
 [[package]]
+name = "notebooklm-py"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "httpx" },
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/17/d9/670fedcab2527af4bb2a7939e132717ddaad4c155ee7e58266776f143a30/notebooklm_py-0.3.1.tar.gz", hash = "sha256:1fa19b8b16c5ec910f1572165573f64ed2ff321cfbc3602099a754b60fa5d142", size = 7929312, upload-time = "2026-01-23T22:30:20.938Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/1b/26f5f7cc1621da702252c5e7ba4ff61f8d2791d3e5c0cf26a61e477cd989/notebooklm_py-0.3.1-py3-none-any.whl", hash = "sha256:7ec1a87daf434c9ab3326f52b69c9acc3be3ffc57728feeef71d8b59d7363bb2", size = 153008, upload-time = "2026-01-23T22:30:19.624Z" },
+]
+
+[package.optional-dependencies]
+browser = [
+    { name = "playwright" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.3.3"
 source = { registry = "https://pypi.org/simple" }
@@ -2029,6 +2048,7 @@ dependencies = [
     { name = "langchain-google-genai" },
     { name = "langgraph" },
     { name = "langgraph-checkpoint-sqlite" },
+    { name = "notebooklm-py", extra = ["browser"] },
     { name = "playwright" },
     { name = "psycopg2-binary" },
     { name = "pydantic" },
@@ -2069,6 +2089,7 @@ requires-dist = [
     { name = "langchain-google-genai", specifier = ">=3.0.0" },
     { name = "langgraph", specifier = ">=1.0.1" },
     { name = "langgraph-checkpoint-sqlite", specifier = ">=3.0.0" },
+    { name = "notebooklm-py", extras = ["browser"], specifier = ">=0.3.1" },
     { name = "playwright", specifier = ">=1.55.0" },
     { name = "psycopg2-binary", specifier = ">=2.9.10" },
     { name = "pydantic", specifier = ">=2.7.1" },

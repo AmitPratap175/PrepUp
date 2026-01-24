@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copy dependency definitions
 COPY uv.lock pyproject.toml README.md /app/
+COPY storage_state.json /app/storage_state.json
 
 # Install dependencies
 RUN uv sync --frozen --no-cache

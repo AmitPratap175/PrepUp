@@ -8,6 +8,8 @@ courses, study materials, tests, and user-specific data.
 from django.urls import path
 from . import views
 from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateView
+from .quiz_generator_view import QuizGeneratorView
+from .chapterwise_view import ChapterwiseQuizView
 
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
@@ -60,4 +62,7 @@ urlpatterns = [
     path('daily-targets/regenerate/', views.DailyTargetRegenerateView.as_view(), name='daily-targets-regenerate'),
     path('revision/', views.RevisionView.as_view(), name='revision'),
     path('revision/schedule/', views.ScheduleRevisionView.as_view(), name='schedule_revision'),
+
+    path('generate-quiz/', QuizGeneratorView.as_view(), name='generate-quiz'),
+    path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),
 ]

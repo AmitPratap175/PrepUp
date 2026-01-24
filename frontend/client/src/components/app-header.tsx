@@ -71,6 +71,8 @@ const navigation = [
       { title: "UPSC Courses", href: "/courses?exam=upsc" },
       { title: "Mock Tests", href: "/mock-tests?exam=upsc" },
       { title: "Study Materials", href: "/study-materials?exam=upsc" },
+      { title: "PDF Quiz Generator", href: "/quiz-generator" },
+      { title: "Chapterwise Quiz", href: "/chapterwise-quiz" },
     ]
   },
   { title: "Leaderboard", href: "/leaderboard" },
