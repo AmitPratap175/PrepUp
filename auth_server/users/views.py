@@ -763,17 +763,19 @@ class BookmarkPDFExportView(APIView):
             
             options = q.get('options', [])
             for opt in options:
-                # Handle both string options and object options
-                opt_text_raw = opt
+                # Handle various option formats
+                opt_text_raw = ""
                 if isinstance(opt, dict):
-                    opt_text_raw = opt.get('option_text', '')
+                    opt_text_raw = opt.get('option_text') or opt.get('text') or ""
+                else:
+                    opt_text_raw = str(opt)
                 
                 opt_text = self._process_text_with_images(opt_text_raw, temp_dir)
                 content.append(f'    \\item {opt_text}')
             content.append(r'  \end{enumerate}')
             
             # Collect solution if available
-            solution = q.get('solution_text')
+            solution = q.get('solution_text') or q.get('explanation') or q.get('rationale')
             if solution:
                  sol_text = self._process_text_with_images(solution, temp_dir)
                  solutions_list.append(f'\\textbf{{Q.{i+1}:}} {sol_text} \\\\ \\vspace{{0.5cm}}')
@@ -809,7 +811,7 @@ class BookmarkPDFExportView(APIView):
                  for idx, opt in enumerate(options):
                     opt_val = opt
                     if isinstance(opt, dict):
-                        opt_val = opt.get('option_text', '')
+                        opt_val = opt.get('option_text') or opt.get('text') or ''
                     
                     if opt_val == answer:
                         answer_label = chr(65 + idx)
