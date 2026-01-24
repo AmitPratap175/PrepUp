@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { UPSCQuizInterface } from "@/components/UPSCQuizInterface";
 import { LocalResultView } from "@/components/local-result-view";
-import { Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw, Trophy, Eye } from 'lucide-react';
+import { Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw, Trophy, Eye, Download } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -58,9 +58,106 @@ const ChapterwiseQuizPage: React.FC = () => {
     const [revisionCount, setRevisionCount] = useState(0);
     const [latestResult, setLatestResult] = useState<StoredTestResult | null>(null);
 
+    const [completedChapters, setCompletedChapters] = useState<string[]>([]);
+    const [submittingCompletion, setSubmittingCompletion] = useState(false);
+
     useEffect(() => {
         fetchQuizzes();
+        fetchCompletionStatus();
     }, []);
+
+    const fetchCompletionStatus = async () => {
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) return;
+            const res = await fetch('/api/chapter-progress/', {
+                headers: { 'Authorization': `Token ${token}` }
+            });
+            if (res.ok) {
+                const data = await res.json();
+                setCompletedChapters(data);
+            }
+        } catch (e) {
+            console.error("Failed to fetch completion status", e);
+        }
+    };
+
+    const toggleCompletion = async (testId: string, currentStatus: boolean, e: React.MouseEvent) => {
+        e.stopPropagation();
+        setSubmittingCompletion(true);
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) return; // Should likely prompt login
+            const res = await fetch('/api/chapter-progress/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Token ${token}`
+                },
+                body: JSON.stringify({
+                    chapter_id: testId,
+                    is_completed: !currentStatus
+                })
+            });
+
+            if (res.ok) {
+                if (!currentStatus) {
+                    setCompletedChapters(prev => [...prev, testId]);
+                } else {
+                    setCompletedChapters(prev => prev.filter(id => id !== testId));
+                }
+            }
+        } catch (e) {
+            console.error("Failed to toggle completion", e);
+        } finally {
+            setSubmittingCompletion(false);
+        }
+    };
+
+    const [isExporting, setIsExporting] = useState(false);
+
+    const handleExportPDF = async () => {
+        if (!test) return;
+        setIsExporting(true);
+        try {
+            const token = localStorage.getItem("token");
+            if (!token) throw new Error("Not authenticated");
+
+            const response = await fetch('/api/chapterwise-quiz/export-pdf/', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Token ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ chapter_id: test.id }),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || "Failed to generate PDF");
+            }
+
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${test.title.replace(/\s+/g, '_')}_questions.pdf`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        } catch (error) {
+            console.error("Failed to export PDF:", error);
+            alert("Failed to export PDF. Please ensure the backend has LaTeX installed.");
+        } finally {
+            setIsExporting(false);
+        }
+    };
+
+    // ... (rest of the component)
+
+
+
 
     useEffect(() => {
         if (selectedTestId) {
@@ -349,20 +446,31 @@ const ChapterwiseQuizPage: React.FC = () => {
 
                     {!selectedTestId ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {availableTests.map((t, idx) => (
-                                <Card key={t.id} className="hover-elevate cursor-pointer transition-all" onClick={() => handleSelectQuiz(t.id)}>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center gap-2 text-lg">
-                                            <BookOpen className="h-5 w-5 text-primary" />
-                                            {t.title}
-                                        </CardTitle>
-                                        <CardDescription>{t.totalQuestions} Questions • {t.duration} mins</CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <Button className="w-full" variant="secondary">View Chapter</Button>
-                                    </CardContent>
-                                </Card>
-                            ))}
+                            {availableTests.map((t, idx) => {
+                                const isCompleted = completedChapters.includes(t.id);
+                                return (
+                                    <Card key={t.id}
+                                        className={`hover-elevate cursor-pointer transition-all ${isCompleted ? 'border-green-500 bg-green-50/50 dark:bg-green-900/10' : ''}`}
+                                        onClick={() => handleSelectQuiz(t.id)}
+                                    >
+                                        <CardHeader>
+                                            <CardTitle className="flex items-center justify-between text-lg">
+                                                <div className="flex items-center gap-2">
+                                                    <BookOpen className={`h-5 w-5 ${isCompleted ? 'text-green-600' : 'text-primary'}`} />
+                                                    {t.title}
+                                                </div>
+                                                {isCompleted && <CheckCircle2 className="h-5 w-5 text-green-600" />}
+                                            </CardTitle>
+                                            <CardDescription>{t.totalQuestions} Questions • {t.duration} mins</CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <Button className="w-full" variant={isCompleted ? "outline" : "secondary"}>
+                                                {isCompleted ? "Completed" : "View Chapter"}
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                );
+                            })}
                             {availableTests.length === 0 && !loading && !error && (
                                 <div className="col-span-full text-center py-12 text-muted-foreground">
                                     No chapters available. Please verify the backend data location!
@@ -443,6 +551,40 @@ const ChapterwiseQuizPage: React.FC = () => {
                                                 <Button size="lg" className="w-full sm:w-auto" onClick={() => setQuizStarted(true)}>
                                                     {latestResult ? "Retake Quiz" : "Start Quiz Now"}
                                                 </Button>
+
+                                                <Button
+                                                    size="lg"
+                                                    variant="outline"
+                                                    className="w-full sm:w-auto"
+                                                    onClick={handleExportPDF}
+                                                    disabled={isExporting}
+                                                >
+                                                    {isExporting ? (
+                                                        <>
+                                                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                                            Generating PDF...
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <Download className="mr-2 h-4 w-4" />
+                                                            Export PDF
+                                                        </>
+                                                    )}
+                                                </Button>
+
+                                                <Button
+                                                    size="lg"
+                                                    variant="outline"
+                                                    className={`w-full sm:w-auto ${completedChapters.includes(test.id) ? 'text-green-600 border-green-200 hover:bg-green-50' : ''}`}
+                                                    onClick={(e) => toggleCompletion(test.id, completedChapters.includes(test.id), e)}
+                                                    disabled={submittingCompletion}
+                                                >
+                                                    {submittingCompletion ? <Loader2 className="h-4 w-4 animate-spin" /> :
+                                                        completedChapters.includes(test.id) ?
+                                                            <> <CheckCircle2 className="mr-2 h-4 w-4" /> Marked as Completed </> :
+                                                            "Mark as Completed"
+                                                    }
+                                                </Button>
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -481,9 +623,9 @@ const ChapterwiseQuizPage: React.FC = () => {
                         </Tabs>
                     )}
                 </div>
-            </main>
+            </main >
             <AppFooter />
-        </div>
+        </div >
     );
 };
 

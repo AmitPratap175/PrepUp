@@ -336,3 +336,21 @@ class RevisionSchedule(models.Model):
 
     def __str__(self):
         return f"Revision for {self.user.email} - {self.subject} (Due: {self.next_review_date})"
+
+
+class UserChapterProgress(models.Model):
+    """
+    Tracks which chapterwise quizzes a user has marked as completed.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='chapter_progress')
+    chapter_id = models.CharField(max_length=255, help_text="Unique ID for the chapter/quiz")
+    is_completed = models.BooleanField(default=False)
+    completed_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ('user', 'chapter_id')
+        ordering = ['-completed_at']
+
+    def __str__(self):
+        return f"{self.user.email} - {self.chapter_id} - {'Completed' if self.is_completed else 'Incomplete'}"

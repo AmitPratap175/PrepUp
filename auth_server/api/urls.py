@@ -10,6 +10,8 @@ from . import views
 from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateView
 from .quiz_generator_view import QuizGeneratorView
 from .chapterwise_view import ChapterwiseQuizView
+from .chapter_progress_view import ChapterProgressView
+from .pdf_export_view import ChapterPDFExportView
 
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
@@ -65,4 +67,6 @@ urlpatterns = [
 
     path('generate-quiz/', QuizGeneratorView.as_view(), name='generate-quiz'),
     path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),
+    path('chapterwise-quiz/export-pdf/', ChapterPDFExportView.as_view(), name='chapter-export-pdf'),
+    path('chapter-progress/', ChapterProgressView.as_view(), name='chapter-progress'),
 ]

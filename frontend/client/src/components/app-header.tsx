@@ -187,7 +187,7 @@ export function AppHeader() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
               <div className="p-4">
                 <h2 className="text-lg font-semibold mb-4">Menu</h2>
                 <nav className="flex flex-col gap-4">
