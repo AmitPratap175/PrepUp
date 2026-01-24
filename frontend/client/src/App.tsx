@@ -53,6 +53,7 @@ import UPSCRevisionPage from "@/pages/upsc/revision";
 import QuizGeneratorPage from "@/pages/generated-quiz";
 import GeneratedQuizViewerPage from "@/pages/generated-quiz-viewer";
 import ChapterwiseQuizPage from "@/pages/chapterwise-quiz";
+import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 
@@ -113,6 +114,7 @@ function Router() {
       <Route path="/upsc/test/:id" component={UPSCQuizPage} />
       <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
       <Route path="/upsc/revision" component={UPSCRevisionPage} />
+      <Route path="/upsc/bookmarks" component={UPSCBookmarksPage} />
       <Route path="/quiz-generator" component={QuizGeneratorPage} />
       <Route path="/generated-quiz/:id" component={GeneratedQuizViewerPage} />
       <Route path="/chapterwise-quiz" component={ChapterwiseQuizPage} />

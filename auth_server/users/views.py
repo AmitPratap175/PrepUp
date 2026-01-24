@@ -169,6 +169,56 @@ class BookmarkListView(generics.ListAPIView):
     serializer_class = BookmarkSerializer
     permission_classes = [IsAuthenticated]
 
+    def list(self, request, *args, **kwargs):
+        """
+        Lists bookmarks, enriching them with question data for Chapterwise quizzes.
+        """
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        data = serializer.data
+
+        # Enrich data with question details
+        # We need to fetch all practice tests once to avoid repeated IO
+        practice_tests = storage.get_practice_tests()
+        
+        # Create a lookup map for faster access: test_id -> question_id -> question_obj
+        # Note: Chapterwise IDs are like "cw_0_President..."
+        
+        enriched_data = []
+        for item in data:
+            question_id = item['question_id']
+            subject = item['subject']
+            
+            # Simple logic: Try to find the question in the loaded practice tests
+            question_details = None
+            
+            # This search is O(N*M) but N(tests) and M(questions) are relatively small for now.
+            # Optimization: If performance becomes an issue, index questions on startup.
+            for test in practice_tests:
+                # Basic filter by subject if available to narrow down
+                # if test.get('subject') != subject: continue 
+                
+                if test.get('questions'):
+                    for q in test['questions']:
+                        q_id = str(q.get('qid') or q.get('id'))
+                        if q_id == question_id:
+                            question_details = q
+                            break
+                if question_details: break
+            
+            if question_details:
+                # Add necessary fields for rendering
+                item['question_data'] = {
+                    'question': question_details.get('question') or question_details.get('question_text'),
+                    'options': question_details.get('options') or question_details.get('answerOptions'),
+                    'correct_answer': question_details.get('correct_answer') or question_details.get('correctAnswer') or question_details.get('correct_option_data'),
+                    'explanation': question_details.get('explanation') or question_details.get('rationale') or question_details.get('answerOptions', [{}])[0].get('rationale') # Fallback
+                }
+            
+            enriched_data.append(item)
+
+        return Response(enriched_data)
+
     def get_queryset(self):
         """
         Returns the queryset of bookmarks for the current user.

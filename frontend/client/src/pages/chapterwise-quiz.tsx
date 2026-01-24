@@ -136,19 +136,24 @@ const ChapterwiseQuizPage: React.FC = () => {
         const safeTitle = data.title ? data.title.replace(/[^a-zA-Z0-9]/g, '') : `Quiz${index}`;
         const testId = `cw_${index}_${safeTitle}`;
 
-        const questions: any[] = data.questions.map((q, idx) => {
-            const correctOptionIndex = q.answerOptions.findIndex(o => o.isCorrect);
-            const options = q.answerOptions.map((opt, i) => ({
+        const questions: any[] = data.questions.map((q: any, idx) => {
+            const correctOptionIndex = q.answerOptions.findIndex((o: any) => o.isCorrect);
+            const options = q.answerOptions.map((opt: any, i: number) => ({
                 label: String.fromCharCode(97 + i),
                 option_text: opt.text,
                 data_option: String.fromCharCode(97 + i),
                 explanation: opt.rationale,
-                is_correct: opt.isCorrect // Ensure this is mapped!
+                is_correct: opt.isCorrect
             }));
 
+            // Use persistent persistent ID if available (added by backend script)
+            // Fallback to generated ID if missing
+            const persistentId = q.qid || q.id;
+            const finalId = persistentId || `${testId}_q${idx}`;
+
             return {
-                id: `${testId}_q${idx}`,
-                qid: `${testId}_q${idx}`,
+                id: finalId,
+                qid: finalId,
                 index: idx,
                 question_text: q.question,
                 options: options,

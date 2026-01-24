@@ -250,6 +250,48 @@ class MemStorage:
                 }
                 self.practice_tests[practice_test["id"]] = practice_test
 
+        # Seed Chapterwise UPSC Quizzes from quiz.json
+        quiz_json_path = os.path.join(self.base_dir, '..', 'data/quiz.json')
+        if os.path.exists(quiz_json_path):
+            try:
+                with open(quiz_json_path, 'r') as f:
+                    chapters = json.load(f)
+                    
+                for ch_idx, chapter in enumerate(chapters):
+                    questions = chapter.get('questions', [])
+                    processed_questions = []
+                    
+                    for q in questions:
+                        # Trust the ID in the file (inserted by script)
+                        q_id = q.get('id') or q.get('qid')
+                        if not q_id: continue # Skip if no ID (shouldn't happen after script run)
+                        
+                        # Normalize question object for frontend consistency
+                        new_q = q.copy()
+                        new_q['qid'] = q_id
+                        new_q['id'] = q_id
+                        new_q['type'] = 'mcq'
+                        if 'answerOptions' in q and 'options' not in q:
+                             new_q['options'] = q['answerOptions'] # Keep raw structure, view handles mapping
+                        
+                        processed_questions.append(new_q)
+
+                    # Add as a "Practice Test" so it's discoverable by BookmarkListView
+                    test_id = f"cw-test-{ch_idx}"
+                    chapter_test = {
+                        "id": test_id,
+                        "title": chapter.get('title', f"Chapter {ch_idx+1}"),
+                        "examType": "upsc-chapterwise",
+                        "subject": chapter.get('title', "General"), 
+                        "duration": len(processed_questions) * 2,
+                        "totalQuestions": len(processed_questions),
+                        "questions": processed_questions
+                    }
+                    self.practice_tests[test_id] = chapter_test
+                    
+            except (IOError, json.JSONDecodeError) as e:
+                print(f"Failed to load quiz.json: {e}")
+
         # Seed UPSC Daily MCQs (split into sets)
         upsc_file_path = os.path.join(self.base_dir, '..', 'data/upsc/daily-mcqs.json')
         if os.path.exists(upsc_file_path):
