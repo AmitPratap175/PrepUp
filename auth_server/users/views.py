@@ -798,24 +798,34 @@ class BookmarkPDFExportView(APIView):
             options = q.get('options', [])
             
             # Try to determine the label (A, B, C, D)
-            answer_label = str(answer)
+            answer_label = "?"
             
-            # If answer is an index (1-based string or int)
-            if str(answer).isdigit():
-                idx = int(answer) - 1
-                if 0 <= idx < 26:
+            # Priority 1: Check for isCorrect flag in options (UPSC/quiz.json format)
+            found_by_flag = False
+            for idx, opt in enumerate(options):
+                if isinstance(opt, dict) and opt.get('isCorrect') is True:
                     answer_label = chr(65 + idx)
+                    found_by_flag = True
+                    break
             
-            # If answer matches option text
-            else:
-                 for idx, opt in enumerate(options):
-                    opt_val = opt
-                    if isinstance(opt, dict):
-                        opt_val = opt.get('option_text') or opt.get('text') or ''
-                    
-                    if opt_val == answer:
+            if not found_by_flag:
+                # Priority 2: If answer is an index (1-based string or int)
+                if str(answer).isdigit():
+                    idx = int(answer) - 1
+                    if 0 <= idx < 26:
                         answer_label = chr(65 + idx)
-                        break
+                
+                # Priority 3: Match answer text against option text
+                else:
+                     for idx, opt in enumerate(options):
+                        opt_val = opt
+                        if isinstance(opt, dict):
+                            opt_val = opt.get('option_text') or opt.get('text') or ''
+                        
+                        # Loose matching (strip whitespace)
+                        if str(opt_val).strip() == str(answer).strip():
+                            answer_label = chr(65 + idx)
+                            break
 
             content.append(f'{i + 1} & {answer_label} \\\\ \\hline')
 
