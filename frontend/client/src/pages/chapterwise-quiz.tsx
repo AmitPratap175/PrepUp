@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { UPSCQuizInterface } from "@/components/UPSCQuizInterface";
 import { LocalResultView } from "@/components/local-result-view";
-import { Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw } from 'lucide-react';
+import { Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw, Trophy, Eye } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -29,9 +29,24 @@ interface QuizData {
     questions: QuizQuestion[];
 }
 
+interface StoredTestResult {
+    score: number;
+    total: number;
+    accuracy: number;
+    date: string;
+    answers: UserAnswer[];
+}
+
 const ChapterwiseQuizPage: React.FC = () => {
     const [, setLocation] = useLocation();
-    const [test, setTest] = useState<PracticeTest | null>(null);
+
+    // State for multiple quizzes
+    const [availableTests, setAvailableTests] = useState<PracticeTest[]>([]);
+    const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
+
+    // Derived state for current active test
+    const test = availableTests.find(t => t.id === selectedTestId) || null;
+
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -39,42 +54,68 @@ const ChapterwiseQuizPage: React.FC = () => {
     const [quizFinished, setQuizFinished] = useState(false);
     const [finalAnswers, setFinalAnswers] = useState<UserAnswer[]>([]);
 
-    // Revision State
     const [revisionMode, setRevisionMode] = useState(false);
     const [revisionCount, setRevisionCount] = useState(0);
-
-    /* 
-       We use localStorage to simulate backend revision.
-       Key: 'chapterwise_revision_ids' -> Array of Question Indices (since IDs are stable in static JSON)
-    */
+    const [latestResult, setLatestResult] = useState<StoredTestResult | null>(null);
 
     useEffect(() => {
-        fetchQuiz();
-        updateRevisionCount();
+        fetchQuizzes();
     }, []);
 
-    const updateRevisionCount = () => {
+    useEffect(() => {
+        if (selectedTestId) {
+            updateRevisionCount(selectedTestId);
+            loadLatestResult(selectedTestId);
+        }
+    }, [selectedTestId]);
+
+    const getRevisionKey = (testId: string) => `chapterwise_revision_${testId}`;
+    const getResultKey = (testId: string) => `chapterwise_result_${testId}`;
+
+    const updateRevisionCount = (testId: string) => {
         try {
-            const saved = localStorage.getItem('chapterwise_revision_ids');
+            const saved = localStorage.getItem(getRevisionKey(testId));
             if (saved) {
                 const ids = JSON.parse(saved);
                 setRevisionCount(ids.length);
+            } else {
+                setRevisionCount(0);
             }
         } catch (e) {
-            console.error("Error reading revision storage", e);
+            console.error(e);
         }
     };
 
-    const fetchQuiz = async () => {
+    const loadLatestResult = (testId: string) => {
+        try {
+            setLatestResult(null); // clear prev
+            const saved = localStorage.getItem(getResultKey(testId));
+            if (saved) {
+                setLatestResult(JSON.parse(saved));
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    };
+
+    const fetchQuizzes = async () => {
         try {
             const response = await fetch('/api/chapterwise-quiz/', {
                 headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
             });
 
             if (response.ok) {
-                const data: QuizData = await response.json();
-                const convertedTest = convertToPracticeTest(data);
-                setTest(convertedTest);
+                const data = await response.json();
+
+                let quizzes: QuizData[] = [];
+                if (Array.isArray(data)) {
+                    quizzes = data;
+                } else {
+                    quizzes = [data]; // Handle legacy single object if needed
+                }
+
+                const convertedTests = quizzes.map((q, idx) => convertToPracticeTest(q, idx));
+                setAvailableTests(convertedTests);
             } else {
                 if (response.status === 401) {
                     setError("Please log in to access this quiz.");
@@ -90,37 +131,40 @@ const ChapterwiseQuizPage: React.FC = () => {
         }
     };
 
-    const convertToPracticeTest = (data: QuizData): PracticeTest => {
-        const questions: any[] = data.questions.map((q, index) => {
-            const correctOptionIndex = q.answerOptions.findIndex(o => o.isCorrect);
+    const convertToPracticeTest = (data: QuizData, index: number): PracticeTest => {
+        // Generating stable ID based on title
+        const safeTitle = data.title ? data.title.replace(/[^a-zA-Z0-9]/g, '') : `Quiz${index}`;
+        const testId = `cw_${index}_${safeTitle}`;
 
+        const questions: any[] = data.questions.map((q, idx) => {
+            const correctOptionIndex = q.answerOptions.findIndex(o => o.isCorrect);
             const options = q.answerOptions.map((opt, i) => ({
-                label: String.fromCharCode(97 + i), // a, b, c, d
+                label: String.fromCharCode(97 + i),
                 option_text: opt.text,
                 data_option: String.fromCharCode(97 + i),
-                explanation: opt.rationale
+                explanation: opt.rationale,
+                is_correct: opt.isCorrect // Ensure this is mapped!
             }));
 
             return {
-                id: "cw_" + index,
-                qid: "cw_" + index,
-                index: index, // custom field for tracking
+                id: `${testId}_q${idx}`,
+                qid: `${testId}_q${idx}`,
+                index: idx,
                 question_text: q.question,
                 options: options,
                 correct_answer: String.fromCharCode(97 + correctOptionIndex),
                 explanation: q.answerOptions[correctOptionIndex]?.rationale || "",
-                passage_text: null,
                 status: 'active',
                 created_at: new Date().toISOString()
             };
         });
 
         return {
-            id: "chapterwise_polity",
-            title: data.title || "Chapterwise Quiz",
-            description: "Comprehensive Chapterwise Practice for UPSC Prelims.",
+            id: testId,
+            title: data.title || `Chapter ${index + 1}`,
+            // description: "Chapterwise Practice Set", // Removed to fix lint error if not in type
             examType: "upsc",
-            subject: "Polity",
+            subject: "General Studies",
             duration: Math.ceil(questions.length * 1.5),
             totalQuestions: questions.length,
             questions: questions,
@@ -129,82 +173,95 @@ const ChapterwiseQuizPage: React.FC = () => {
         } as PracticeTest;
     };
 
+    const handleSelectQuiz = (testId: string) => {
+        setSelectedTestId(testId);
+        setQuizStarted(false);
+        setQuizFinished(false);
+        setRevisionMode(false);
+    };
+
     const handleQuizSubmit = (answers: UserAnswer[]) => {
+        if (!test) return;
         setFinalAnswers(answers);
         setQuizFinished(true);
         setQuizStarted(false);
 
-        // Identify Incorrect Answers and save to Revision
         const incorrectIndices: number[] = [];
-        const questions = test?.questions as any[];
+        let correctCount = 0;
+        const questions = test.questions as any[];
 
         if (questions) {
             questions.forEach((q, idx) => {
-                const userAns = answers.find(a => a.questionId === q.qid || a.questionId === q.id);
-                // If wrong answer or no answer, add to revision
-                if (!userAns || userAns.selectedAnswer !== q.correct_answer) {
+                const userAns = answers.find(a => a.questionId === q.id || a.questionId === q.qid);
+                if (userAns && userAns.selectedAnswer === q.correct_answer) {
+                    correctCount++;
+                } else {
                     incorrectIndices.push(idx);
                 }
             });
         }
 
-        // Merge with existing
         try {
-            const existingRaw = localStorage.getItem('chapterwise_revision_ids');
+            const key = getRevisionKey(test.id);
+            const existingRaw = localStorage.getItem(key);
             let existing: number[] = existingRaw ? JSON.parse(existingRaw) : [];
-            // Merge unique
             const merged = Array.from(new Set([...existing, ...incorrectIndices]));
-            localStorage.setItem('chapterwise_revision_ids', JSON.stringify(merged));
-            updateRevisionCount();
+            localStorage.setItem(key, JSON.stringify(merged));
+            updateRevisionCount(test.id);
         } catch (e) {
             console.error("Failed to save revision", e);
+        }
+
+        if (!revisionMode) {
+            const result: StoredTestResult = {
+                score: correctCount,
+                total: test.totalQuestions,
+                accuracy: (correctCount / test.totalQuestions) * 100,
+                date: new Date().toISOString(),
+                answers: answers
+            };
+            localStorage.setItem(getResultKey(test.id), JSON.stringify(result));
+            setLatestResult(result);
         }
     };
 
     const startRevision = () => {
         if (!test) return;
-
-        // Filter test to only include revision questions
         try {
-            const saved = localStorage.getItem('chapterwise_revision_ids');
+            const saved = localStorage.getItem(getRevisionKey(test.id));
             if (saved) {
                 const ids: number[] = JSON.parse(saved);
                 const allQuestions = test.questions as any[];
                 const revisionQuestions = allQuestions.filter((_, idx) => ids.includes(idx));
-
                 if (revisionQuestions.length === 0) {
                     alert("No revision questions found!");
                     return;
                 }
-
-                // Create a temporary test object for revision
                 const revisionTest = {
                     ...test,
                     title: `Revision: ${test.title}`,
                     questions: revisionQuestions,
                     totalQuestions: revisionQuestions.length,
-                    duration: Math.ceil(revisionQuestions.length * 2) // More time for revision
+                    duration: Math.ceil(revisionQuestions.length * 2)
                 };
 
-                setTest(revisionTest); // Override current test with revision subset
+                // We are essentially starting a new "temporary" test session.
+                // We rely on 'test' being derived from selectedTestId, 
+                // but we also have 'revisionMode' to alter the logic.
                 setRevisionMode(true);
                 setQuizStarted(true);
                 setCurrentQuestionIndex(0);
             }
-        } catch (e) {
-            console.error(e);
-        }
+        } catch (e) { console.error(e); }
     };
 
     const handleExit = () => {
         if (quizStarted || quizFinished) {
-            // Reload full test if we were in revision mode to reset state
-            if (revisionMode) {
-                window.location.reload(); // Simple way to reset state for now
-            } else {
-                setQuizStarted(false);
-                setQuizFinished(false);
-            }
+            setQuizStarted(false);
+            setQuizFinished(false);
+            setRevisionMode(false);
+        } else if (selectedTestId) {
+            setSelectedTestId(null);
         } else {
             setLocation('/upsc');
         }
@@ -218,14 +275,30 @@ const ChapterwiseQuizPage: React.FC = () => {
         );
     }
 
-    if (quizFinished && test) {
+    // Active test derived logic for Revision Mode override
+    const activeTest = revisionMode && test ? {
+        ...test,
+        title: `Revision: ${test.title}`,
+        questions: (() => {
+            const saved = localStorage.getItem(getRevisionKey(test.id));
+            const ids = saved ? JSON.parse(saved) : [];
+            return (test.questions as any[]).filter((_, i) => ids.includes(i));
+        })(),
+    } : test;
+
+    if (revisionMode && activeTest) {
+        // Re-calculate totals for the active revision test
+        activeTest.totalQuestions = activeTest.questions.length;
+        activeTest.duration = Math.ceil(activeTest.totalQuestions * 2);
+    }
+
+    if (quizFinished && activeTest) {
         return (
             <LocalResultView
-                test={test}
+                test={activeTest}
                 userAnswers={finalAnswers}
                 onExit={handleExit}
                 onRetake={() => {
-                    // Logic to retake same set
                     setQuizFinished(false);
                     setQuizStarted(true);
                     setCurrentQuestionIndex(0);
@@ -235,16 +308,16 @@ const ChapterwiseQuizPage: React.FC = () => {
         );
     }
 
-    if (quizStarted && test) {
+    if (quizStarted && activeTest) {
         return (
             <UPSCQuizInterface
-                test={test}
+                test={activeTest}
                 onExit={handleExit}
                 onSubmit={handleQuizSubmit}
                 onProgressUpdate={() => { }}
                 navigateToQuestion={setCurrentQuestionIndex}
                 currentQuestionIndex={currentQuestionIndex}
-                duration={test.duration * 60}
+                duration={activeTest.duration * 60}
             />
         );
     }
@@ -261,14 +334,42 @@ const ChapterwiseQuizPage: React.FC = () => {
                         </p>
                     </div>
 
-                    {error ? (
+                    {error && (
                         <Alert variant="destructive">
                             <AlertCircle className="h-4 w-4" />
                             <AlertTitle>Error</AlertTitle>
                             <AlertDescription>{error}</AlertDescription>
                         </Alert>
+                    )}
+
+                    {!selectedTestId ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {availableTests.map((t, idx) => (
+                                <Card key={t.id} className="hover-elevate cursor-pointer transition-all" onClick={() => handleSelectQuiz(t.id)}>
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2 text-lg">
+                                            <BookOpen className="h-5 w-5 text-primary" />
+                                            {t.title}
+                                        </CardTitle>
+                                        <CardDescription>{t.totalQuestions} Questions • {t.duration} mins</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Button className="w-full" variant="secondary">View Chapter</Button>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                            {availableTests.length === 0 && !loading && !error && (
+                                <div className="col-span-full text-center py-12 text-muted-foreground">
+                                    No chapters available. Please verify the backend data location!
+                                </div>
+                            )}
+                        </div>
                     ) : test && (
                         <Tabs defaultValue="practice" className="w-full">
+                            <Button variant="ghost" onClick={() => setSelectedTestId(null)} className="mb-4 pl-0 hover:bg-transparent hover:underline text-muted-foreground">
+                                ← Back to Chapters
+                            </Button>
+
                             <TabsList className="mb-8">
                                 <TabsTrigger value="practice">Practice</TabsTrigger>
                                 <TabsTrigger value="revision">Revision</TabsTrigger>
@@ -276,16 +377,17 @@ const ChapterwiseQuizPage: React.FC = () => {
 
                             <TabsContent value="practice" className="space-y-6">
                                 <section>
-                                    <h2 className="text-2xl font-bold mb-4">Available Question Banks</h2>
+                                    <h2 className="text-2xl font-bold mb-4">{test.title}</h2>
                                     <Card className="hover-elevate transition-all border-primary/20 bg-primary/5">
                                         <CardHeader>
                                             <div className="flex justify-between items-start">
                                                 <div>
                                                     <CardTitle className="text-xl flex items-center gap-2">
                                                         <BookOpen className="h-5 w-5 text-primary" />
-                                                        {test.title}
+                                                        Overview
                                                     </CardTitle>
-                                                    <CardDescription>{test.description}</CardDescription>
+                                                    {/* Description removed due to type issue, used generic text instead or custom prop if extended */}
+                                                    <CardDescription>Comprehensive Chapterwise Practice</CardDescription>
                                                 </div>
                                                 <Badge className="bg-primary text-primary-foreground">PREMIUM</Badge>
                                             </div>
@@ -315,12 +417,26 @@ const ChapterwiseQuizPage: React.FC = () => {
                                                 </div>
                                             </div>
 
+                                            {latestResult && (
+                                                <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg flex items-center justify-between">
+                                                    <div className="flex items-center gap-3">
+                                                        <Trophy className="h-6 w-6 text-yellow-600" />
+                                                        <div>
+                                                            <p className="font-semibold text-green-800 dark:text-green-300">Last Attempt Result</p>
+                                                            <p className="text-sm text-green-700 dark:text-green-400">
+                                                                Score: {latestResult.score}/{latestResult.total} ({latestResult.accuracy.toFixed(0)}%)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <Button variant="outline" size="sm" onClick={() => { setFinalAnswers(latestResult.answers); setQuizFinished(true); }} className="gap-2">
+                                                        <Eye className="h-4 w-4" /> View Details
+                                                    </Button>
+                                                </div>
+                                            )}
+
                                             <div className="flex gap-4">
                                                 <Button size="lg" className="w-full sm:w-auto" onClick={() => setQuizStarted(true)}>
-                                                    Start Quiz Now
-                                                </Button>
-                                                <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={handleExit}>
-                                                    Back to UPSC
+                                                    {latestResult ? "Retake Quiz" : "Start Quiz Now"}
                                                 </Button>
                                             </div>
                                         </CardContent>
@@ -336,7 +452,7 @@ const ChapterwiseQuizPage: React.FC = () => {
                                             Smart Revision
                                         </CardTitle>
                                         <CardDescription>
-                                            Revisit questions you answered incorrectly to strengthen your concepts.
+                                            Revisit questions you answered incorrectly in this chapter.
                                         </CardDescription>
                                     </CardHeader>
                                     <CardContent>
@@ -351,7 +467,7 @@ const ChapterwiseQuizPage: React.FC = () => {
                                         ) : (
                                             <div className="text-center py-8 text-muted-foreground">
                                                 <CheckCircle2 className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                                                <p>All caught up! No incorrect questions pending revision.</p>
+                                                <p>All caught up! No incorrect questions pending revision for this chapter.</p>
                                             </div>
                                         )}
                                     </CardContent>
