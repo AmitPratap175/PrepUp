@@ -16,7 +16,7 @@ class QuizDifficulty(Enum):
     HARD = 3
 
 DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/Slides")
-QUIZ_FILE = DATA_DIR / "quiz.json"
+QUIZ_FILE = Path("/home/dspratap/Downloads/PrepUp/auth_server/data/quiz.json")
 STORAGE_PATH = "/home/dspratap/.notebooklm/storage_state.json"
 
 PROMPT = """
@@ -108,6 +108,10 @@ def append_to_master(quiz_data):
         json.dump(master_list, f, indent=2)
     print(f"Appended to {QUIZ_FILE}. Total quizzes: {len(master_list)}")
 
+import re
+
+# ... existing code ...
+
 async def main():
     pdfs = list(DATA_DIR.glob("*.pdf"))
     if not pdfs:
@@ -129,8 +133,25 @@ async def main():
                     if "title" not in quiz_content or not quiz_content["title"]:
                         quiz_content["title"] = pdf.stem.replace("_", " ").title()
                     else:
-                        # Append PDF name to disambiguate
                         quiz_content["title"] = f"{quiz_content['title']} ({pdf.stem})"
+
+                    # Generate Sequential Unique IDs
+                    # Clean filename to create a prefix (e.g., "Polity_Class 11" -> "polity-class-11")
+                    raw_stem = pdf.stem.lower()
+                    prefix = re.sub(r'[^a-z0-9]+', '-', raw_stem).strip('-')
+                    if not prefix: prefix = f"quiz-{i+1}" # Fallback
+
+                    questions = quiz_content.get('questions', [])
+                    for q_idx, q in enumerate(questions, 1):
+                        unique_id = f"cw-{prefix}-{q_idx}"
+                        q['id'] = unique_id
+                        q['qid'] = unique_id
+                        q['type'] = 'mcq'
+                        
+                        # Ensure options structure is standard if needed? 
+                        # The PDF output format is controlled by prompt, but usually reliable.
+                    
+                    print(f"Assigned IDs: {prefix}-1 to {prefix}-{len(questions)}")
 
                     append_to_master(quiz_content)
                     
