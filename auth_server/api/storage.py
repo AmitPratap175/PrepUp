@@ -378,6 +378,27 @@ class MemStorage:
         seed_upsc_topic("upsc_science_tech_pyqs.json", "upsc-science-tech-pyqs", "Science & Tech PYQs", "Science")
         seed_upsc_topic("upsc_misc_current_affairs_pyqs.json", "upsc-misc-pyqs", "Miscellaneous & Current Affairs PYQs", "Current Affairs")
 
+        # Seed Year-wise UPSC Prelims (2015-2025)
+        for year in range(2015, 2026):
+            file_name = f"years/upsc_prelims_{year}.json"
+            test_id = f"upsc-prelims-{year}"
+            title = f"UPSC Prelims {year} GS Paper 1"
+            
+            path = os.path.join(self.base_dir, '..', f'data/upsc/{file_name}')
+            if os.path.exists(path):
+                questions = self._load_questions_from_file(path)
+                if questions:
+                    test = {
+                        "id": test_id,
+                        "title": title,
+                        "examType": "upsc-prelims", # Distinct type for filtering if needed
+                        "subject": f"Prelims {year}",
+                        "duration": 120 * 60, # 2 hours in seconds
+                        "totalQuestions": len(questions),
+                        "questions": questions
+                    }
+                    self.practice_tests[test["id"]] = test
+
 
         # Seed mock tests from JSON files
         mock_test_dir = os.path.join(self.base_dir, '..', 'data/cat/mocks')

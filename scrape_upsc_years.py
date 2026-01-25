@@ -130,7 +130,7 @@ async def scrape_upsc_review(target_url, output_file_path):
             await fetchAllData();
             """
         ],
-        delay_before_return_html=15000.0, # Wait for API fetch loop
+        delay_before_return_html=15.0, # Wait for API fetch loop
         cache_mode=CacheMode.BYPASS
     )
 

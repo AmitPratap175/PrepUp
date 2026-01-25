@@ -57,6 +57,7 @@ import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
 import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
+import UPSCYearWisePage from "@/pages/upsc/pyq-years";
 
 /**
  * Defines the main routing configuration for the application.
@@ -111,8 +112,10 @@ function Router() {
       <Route path="/daily-targets/test/:subject" component={DailyTargetTestInterface} />
       <Route path="/daily-targets/result/:targetId" component={DailyTargetResultPage} />
       <Route path="/daily-targets/revision" component={DailyTargetRevision} />
+
       <Route path="/upsc" component={UPSCPage} />
       <Route path="/upsc/topics" component={UPSCPYQTopicsPage} />
+      <Route path="/upsc/years" component={UPSCYearWisePage} />
       <Route path="/upsc/test/:id" component={UPSCQuizPage} />
       <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
       <Route path="/upsc/revision" component={UPSCRevisionPage} />

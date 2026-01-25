@@ -154,6 +154,21 @@ export default function UPSCPage() {
                                     </CardContent>
                                 </Card>
 
+                                <Card className="bg-cyan-500/5 border-cyan-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <Clock className="h-5 w-5 text-cyan-500" />
+                                            Year-wise Papers
+                                        </CardTitle>
+                                        <CardDescription>Attempt full length Prelims papers (2015-2025).</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/years">
+                                            <Button className="w-full" variant="outline">View Papers</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
                                 <Card className="bg-purple-500/5 border-purple-500/20">
                                     <CardHeader>
                                         <CardTitle className="flex items-center gap-2">
