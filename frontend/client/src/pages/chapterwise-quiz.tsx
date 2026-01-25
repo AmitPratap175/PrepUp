@@ -390,7 +390,7 @@ const ChapterwiseQuizPage: React.FC = () => {
 
     if (revisionMode && activeTest) {
         // Re-calculate totals for the active revision test
-        activeTest.totalQuestions = activeTest.questions.length;
+        activeTest.totalQuestions = (activeTest.questions as any[]).length;
         activeTest.duration = Math.ceil(activeTest.totalQuestions * 2);
     }
 
@@ -450,23 +450,43 @@ const ChapterwiseQuizPage: React.FC = () => {
                                 const isCompleted = completedChapters.includes(t.id);
                                 return (
                                     <Card key={t.id}
-                                        className={`hover-elevate cursor-pointer transition-all ${isCompleted ? 'border-green-500 bg-green-50/50 dark:bg-green-900/10' : ''}`}
+                                        className={`group relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full border-t-4 ${isCompleted ? 'border-t-green-500 bg-green-50/30 dark:bg-green-900/5' : 'border-t-primary/20 hover:border-t-primary'}`}
                                         onClick={() => handleSelectQuiz(t.id)}
                                     >
-                                        <CardHeader>
-                                            <CardTitle className="flex items-center justify-between text-lg">
-                                                <div className="flex items-center gap-2">
-                                                    <BookOpen className={`h-5 w-5 ${isCompleted ? 'text-green-600' : 'text-primary'}`} />
-                                                    {t.title}
+                                        <CardHeader className="flex-none pb-2">
+                                            <div className="flex items-start justify-between gap-4">
+                                                <div className="flex items-start gap-3">
+                                                    <div className={`p-2.5 rounded-xl shrink-0 transition-colors ${isCompleted ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' : 'bg-primary/5 text-primary group-hover:bg-primary group-hover:text-primary-foreground'}`}>
+                                                        <BookOpen className="h-5 w-5" />
+                                                    </div>
+                                                    <div>
+                                                        <CardTitle className="text-lg font-bold leading-tight mb-1 line-clamp-2">
+                                                            {t.title}
+                                                        </CardTitle>
+                                                        <CardDescription className="flex items-center gap-2 text-xs font-medium">
+                                                            <span className="flex items-center gap-1"><List className="h-3 w-3" /> {t.totalQuestions} Qs</span>
+                                                            <span>•</span>
+                                                            <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {t.duration}m</span>
+                                                        </CardDescription>
+                                                    </div>
                                                 </div>
-                                                {isCompleted && <CheckCircle2 className="h-5 w-5 text-green-600" />}
-                                            </CardTitle>
-                                            <CardDescription>{t.totalQuestions} Questions • {t.duration} mins</CardDescription>
+                                                {isCompleted && (
+                                                    <div className="shrink-0 text-green-600 dark:text-green-400 animate-in zoom-in spin-in-12 duration-300">
+                                                        <CheckCircle2 className="h-6 w-6" />
+                                                    </div>
+                                                )}
+                                            </div>
                                         </CardHeader>
-                                        <CardContent>
-                                            <Button className="w-full" variant={isCompleted ? "outline" : "secondary"}>
-                                                {isCompleted ? "Completed" : "View Chapter"}
-                                            </Button>
+                                        <CardContent className="flex-grow flex flex-col justify-end pt-2">
+                                            <div className="w-full h-px bg-border/50 mb-4" />
+                                            <div className="flex items-center justify-between gap-3 text-sm">
+                                                <Button
+                                                    className={`w-full font-semibold shadow-sm ${isCompleted ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-200' : ''}`}
+                                                    variant={isCompleted ? "default" : "secondary"}
+                                                >
+                                                    {isCompleted ? "Review Completed" : "Start Chapter"}
+                                                </Button>
+                                            </div>
                                         </CardContent>
                                     </Card>
                                 );
