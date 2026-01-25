@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, useRoute } from "wouter";
 import TestResultInterface from "@/components/test-result-interface";
 import { Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
 
 interface SessionData {
@@ -115,6 +116,18 @@ export default function UPSCResultPage() {
                     correctAnswers={correctCount}
                     incorrectAnswers={incorrectCount}
                     onReturnToDashboard={() => setLocation("/upsc")}
+                    customActions={
+                        <div className="flex gap-2">
+                            <Button onClick={() => setLocation(`/upsc/test/${session.testId}`)} variant="outline">
+                                Retake Test
+                            </Button>
+                            {incorrectCount > 0 && (
+                                <Button onClick={() => setLocation(`/upsc/review/${session.id}`)} variant="secondary">
+                                    Review Mistakes
+                                </Button>
+                            )}
+                        </div>
+                    }
                 />
             </main>
         </div>

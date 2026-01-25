@@ -7,12 +7,31 @@ import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import type { PracticeTest } from "@shared/schema";
 
+import { useAuth } from "@/contexts/auth-context";
+
 export default function UPSCYearWisePage() {
     const { data: tests, isLoading } = useQuery<PracticeTest[]>({
         queryKey: ["/api/practice-tests?examType=upsc-prelims"],
     });
 
     const years = Array.from({ length: 2025 - 2015 + 1 }, (_, i) => 2025 - i); // 2025 down to 2015
+
+    const { user } = useAuth();
+
+    // Fetch user sessions to check completion status
+    const { data: sessions } = useQuery<any[]>({
+        queryKey: ["/api/users/me/test-sessions/"],
+        queryFn: async () => {
+            const response = await fetch(`/api/users/${user?.id}/test-sessions/`, {
+                headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+            });
+            if (!response.ok) return [];
+            return response.json();
+        },
+        enabled: !!user
+    });
+
+    const sessionsMap = new Map(sessions?.map(s => [s.testId, s]));
 
     return (
         <div className="min-h-screen bg-background">
@@ -37,6 +56,9 @@ export default function UPSCYearWisePage() {
                             const foundTest = tests?.find(t => t.id === testId);
                             const isAvailable = !!foundTest;
                             const count = foundTest?.totalQuestions || 0;
+
+                            const session = sessionsMap.get(testId);
+                            const isCompleted = session?.status === 'completed' || !!session?.score;
 
                             return (
                                 <Card
@@ -66,15 +88,26 @@ export default function UPSCYearWisePage() {
                                                     'Not Scraped'
                                                 )}
                                             </div>
-                                            {isAvailable ? (
-                                                <Link href={`/upsc/test/${testId}`}>
-                                                    <Button className="group-hover:translate-x-1 transition-transform">
-                                                        Start Test <ArrowRight className="ml-2 h-4 w-4" />
-                                                    </Button>
-                                                </Link>
-                                            ) : (
-                                                <Button variant="secondary" disabled size="sm">Coming Soon</Button>
-                                            )}
+                                            <div className="flex gap-2">
+                                                {isAvailable ? (
+                                                    <>
+                                                        {isCompleted ? (
+                                                            <Link href={`/upsc/result/${session.id}`}>
+                                                                <Button size="sm" variant="outline">
+                                                                    Result
+                                                                </Button>
+                                                            </Link>
+                                                        ) : null}
+                                                        <Link href={`/upsc/test/${testId}`}>
+                                                            <Button size="sm" className={!isCompleted ? "group-hover:translate-x-1 transition-transform" : ""} variant={isCompleted ? "secondary" : "default"}>
+                                                                {isCompleted ? "Retake" : "Start Test"} {(!isCompleted) && <ArrowRight className="ml-2 h-4 w-4" />}
+                                                            </Button>
+                                                        </Link>
+                                                    </>
+                                                ) : (
+                                                    <Button variant="secondary" disabled size="sm">Coming Soon</Button>
+                                                )}
+                                            </div>
                                         </div>
                                     </CardContent>
                                 </Card>

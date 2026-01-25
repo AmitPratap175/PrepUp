@@ -21,6 +21,7 @@ interface TestResultInterfaceProps {
   correctAnswers: number;
   incorrectAnswers: number;
   onReturnToDashboard?: () => void;
+  customActions?: React.ReactNode;
 }
 
 export default function TestResultInterface({
@@ -33,7 +34,8 @@ export default function TestResultInterface({
   totalQuestions,
   correctAnswers,
   incorrectAnswers,
-  onReturnToDashboard
+  onReturnToDashboard,
+  customActions
 }: TestResultInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -239,6 +241,7 @@ export default function TestResultInterface({
                 Return to Dashboard
               </Button>
             )}
+            {customActions}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Button variant="outline" onClick={handlePrevious} disabled={currentQuestionIndex === 0}>Previous</Button>
               <Button onClick={handleNext} disabled={currentQuestionIndex === questions.length - 1}>Next</Button>
