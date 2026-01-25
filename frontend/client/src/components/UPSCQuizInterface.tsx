@@ -333,45 +333,51 @@ export function UPSCQuizInterface({
                     })()}
 
                     <div className="flex-1 flex flex-col overflow-y-auto">
-                        <div className="prose max-w-none mb-6">
-                            <div className="text-lg text-foreground leading-relaxed mb-4 preserve-whitespace">
-                                <Latex>{currentQuestion?.question_text}</Latex>
+                        <div className="max-w-5xl mx-auto w-full">
+                            <div className="prose max-w-none mb-8 dark:prose-invert">
+                                <div className="text-lg text-foreground leading-relaxed mb-4 preserve-whitespace">
+                                    <Latex>{currentQuestion?.question_text}</Latex>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="space-y-3 max-w-3xl">
-                            {currentQuestion?.options.map((option) => (
-                                <label
-                                    key={option.data_option}
-                                    className={`flex items-center gap-3 p-4 border border-border rounded-lg cursor-pointer transition-colors ${getOptionClassName(option)}`}
-                                    onClick={() => handleAnswerSelect(option.data_option)}
-                                >
-                                    <div className="w-5 h-5 border-2 border-border rounded-full flex items-center justify-center">
-                                        <div className={`w-2.5 h-2.5 bg-primary rounded-full ${answers[currentQuestion?.qid] === option.data_option ? 'opacity-100' : 'opacity-0'}`}></div>
-                                    </div>
-                                    <span className="font-medium text-foreground">{option.label}.</span>
-                                    <span className="text-foreground">
-                                        <Latex>{option.option_text}</Latex>
-                                    </span>
-                                </label>
-                            ))}
+                            <div className="space-y-4 mb-8">
+                                {currentQuestion?.options.map((option) => (
+                                    <label
+                                        key={option.data_option}
+                                        className={`flex items-center gap-4 p-5 border border-border rounded-xl cursor-pointer transition-all hover:bg-muted/50 ${getOptionClassName(option)}`}
+                                        onClick={() => handleAnswerSelect(option.data_option)}
+                                    >
+                                        <div className="w-6 h-6 border-2 border-border rounded-full flex items-center justify-center shrink-0">
+                                            <div className={`w-3 h-3 bg-primary rounded-full transition-opacity ${answers[currentQuestion?.qid] === option.data_option ? 'opacity-100' : 'opacity-0'}`}></div>
+                                        </div>
+                                        <div className="flex gap-3 w-full">
+                                            <span className="font-semibold text-foreground/80">{option.label}.</span>
+                                            <span className="text-foreground text-lg leading-relaxed">
+                                                <Latex>{option.option_text}</Latex>
+                                            </span>
+                                        </div>
+                                    </label>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
-                    <div className="flex justify-between pt-6 border-t border-border">
-                        <Button onClick={handlePrevious} disabled={currentQuestionIndex === 0} variant="outline">
-                            Previous
-                        </Button>
-                        <div className="flex gap-2">
-                            {currentQuestionIndex === questions.length - 1 ? (
-                                <Button onClick={handleSubmit} className="bg-green-600 hover:bg-green-700">
-                                    Submit Test
-                                </Button>
-                            ) : (
-                                <Button onClick={handleNext}>
-                                    Next Question
-                                </Button>
-                            )}
+                    <div className="pt-6 border-t border-border mt-auto">
+                        <div className="max-w-5xl mx-auto w-full flex justify-between">
+                            <Button onClick={handlePrevious} disabled={currentQuestionIndex === 0} variant="outline" size="lg">
+                                Previous
+                            </Button>
+                            <div className="flex gap-3">
+                                {currentQuestionIndex === questions.length - 1 ? (
+                                    <Button onClick={handleSubmit} className="bg-green-600 hover:bg-green-700" size="lg">
+                                        Submit Test
+                                    </Button>
+                                ) : (
+                                    <Button onClick={handleNext} size="lg">
+                                        Next Question
+                                    </Button>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

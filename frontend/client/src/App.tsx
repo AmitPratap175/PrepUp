@@ -53,6 +53,7 @@ import UPSCRevisionPage from "@/pages/upsc/revision";
 import QuizGeneratorPage from "@/pages/generated-quiz";
 import GeneratedQuizViewerPage from "@/pages/generated-quiz-viewer";
 import ChapterwiseQuizPage from "@/pages/chapterwise-quiz";
+import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
 import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
@@ -111,6 +112,7 @@ function Router() {
       <Route path="/daily-targets/result/:targetId" component={DailyTargetResultPage} />
       <Route path="/daily-targets/revision" component={DailyTargetRevision} />
       <Route path="/upsc" component={UPSCPage} />
+      <Route path="/upsc/topics" component={UPSCPYQTopicsPage} />
       <Route path="/upsc/test/:id" component={UPSCQuizPage} />
       <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
       <Route path="/upsc/revision" component={UPSCRevisionPage} />

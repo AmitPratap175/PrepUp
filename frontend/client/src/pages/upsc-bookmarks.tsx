@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
-import { NewQuizInterface } from "@/components/NewQuizInterface";
+import { UPSCQuizInterface } from "@/components/UPSCQuizInterface";
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -12,10 +11,11 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import type { PracticeTest, Question, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
-import { Redirect } from "wouter";
-import { Loader2, Download } from "lucide-react";
+import { Redirect, Link } from "wouter";
+import { Loader2, Download, Bookmark as BookmarkIcon } from "lucide-react";
 
 interface BookmarkedQuestions {
     [subject: string]: Question[];
@@ -47,55 +47,26 @@ export default function UPSCBookmarksPage() {
         enabled: isAuthenticated,
     });
 
-    const { data: practiceTests } = useQuery<PracticeTest[]>({
+    const { data: practiceTests, isLoading: isLoadingPracticeTests } = useQuery<PracticeTest[]>({
         queryKey: ["/api/practice-tests"],
     });
 
-    const [bookmarkedQuestions, setBookmarkedQuestions] = useState<BookmarkedQuestions>({});
+    const [bookmarkedQuestions, setBookmarkedQuestions] =
+        useState<BookmarkedQuestions>({});
 
     useEffect(() => {
-        if (bookmarks) {
+        if (bookmarks && practiceTests) {
             const groupedBookmarks: BookmarkedQuestions = bookmarks.reduce(
                 (acc, bookmark) => {
                     const { subject, question_id } = bookmark;
+                    // Filter for UPSC subjects if needed, or just show all. 
+                    // Ideally we filter by examType 'upsc', but bookmarks don't store examType directly.
+                    // We can infer from the test it came from.
 
-                    // Only process UPSC Chapterwise bookmarks (cw-...)
-                    if (question_id.startsWith('cw-')) {
-                        let data = (bookmark as any).question_data;
-
-                        // Fallback: Try to find in practiceTests if not enriched
-                        if (!data && practiceTests) {
-                            for (const test of practiceTests) {
-                                if (test.questions) {
-                                    const found = (test.questions as Question[]).find(q => q.qid === question_id || (q as any).id === question_id);
-                                    if (found) {
-                                        data = {
-                                            question: found.question_text,
-                                            options: found.options,
-                                            correctAnswer: found.correct_option_data,
-                                            // Handle various explanation fields
-                                            explanation: (found as any).answer_description || found.solution_text || found.explanation || (found as any).rationale
-                                        };
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-
-                        if (data) {
-                            const question = {
-                                qid: question_id,
-                                question_text: data.question || data.question_text,
-                                options: data.options,
-                                correct_option_data: data.correctAnswer || data.correct_answer,
-                                solution_text: data.explanation,
-                                explanation: data.explanation,
-                                id: question_id,
-                                subject: subject,
-                                images: [],
-                                type: "mcq"
-                            } as unknown as Question;
-
+                    const test = practiceTests.find(p => p.subject === subject);
+                    if (test) {
+                        const question = (test.questions as Question[]).find(q => q.qid === question_id);
+                        if (question) {
                             if (!acc[subject]) {
                                 acc[subject] = [];
                             }
@@ -134,7 +105,7 @@ export default function UPSCBookmarksPage() {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${subject.replace(/\s+/g, '_')}_upsc_bookmarks.pdf`;
+            a.download = `${subject.replace(/\s+/g, '_')}_bookmarks.pdf`;
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
@@ -151,7 +122,7 @@ export default function UPSCBookmarksPage() {
         return <Redirect to="/login" />;
     }
 
-    if (isLoadingBookmarks) {
+    if (isLoadingBookmarks || isLoadingPracticeTests) {
         return (
             <div className="min-h-screen bg-background">
                 <AppHeader />
@@ -164,53 +135,24 @@ export default function UPSCBookmarksPage() {
     }
 
     if (selectedSubject && bookmarkedQuestions[selectedSubject]) {
-        const questions = bookmarkedQuestions[selectedSubject];
-
-        // Mapper for NewQuizInterface
-        const mappedQuestions = questions.map(q => {
-            let mappedOptions = q.options;
-            if (Array.isArray(q.options) && q.options.length > 0) {
-                // If missing data_option, assume it's storage format or raw quiz.json format
-                if ((q.options[0] as any).data_option === undefined) {
-                    mappedOptions = q.options.map((opt: any, idx: number) => ({
-                        data_option: opt.label || String.fromCharCode(65 + idx),
-                        label: opt.label || String.fromCharCode(65 + idx),
-                        option_text: opt.text,
-                        is_correct: (opt.isCorrect !== undefined) ? opt.isCorrect : (opt.label === (q as any).correctAnswer)
-                    }));
-                }
-            }
-
-            return {
-                ...q,
-                // Ensure compatibility
-                qid: (q as any).qid || (q as any).id,
-                question_text: (q as any).question || q.question_text,
-                passage_text: (q as any).passage_text || "",
-                options: mappedOptions,
-                solution_text: (q as any).explanation || (q as any).solution_text || (q as any).rationale,
-                correct_option_data: (q as any).correctAnswer
-            };
-        });
-
         const test: PracticeTest = {
-            id: selectedSubject,
+            id: "bookmarks-session",
             title: `${selectedSubject} Bookmarks`,
-            examType: "upsc-chapterwise",
+            examType: "upsc", // Force UPSC type for layout
             subject: selectedSubject,
             duration: 0,
-            totalQuestions: mappedQuestions.length,
-            questions: mappedQuestions,
+            totalQuestions: bookmarkedQuestions[selectedSubject].length,
+            questions: bookmarkedQuestions[selectedSubject],
         };
 
         const navigateToQuestion = (index: number) => {
-            if (index >= 0 && index < mappedQuestions.length) {
+            if (index >= 0 && index < bookmarkedQuestions[selectedSubject].length) {
                 setCurrentQuestionIndex(index);
             }
         };
 
         return (
-            <NewQuizInterface
+            <UPSCQuizInterface
                 test={test}
                 onExit={() => {
                     setSelectedSubject(null);
@@ -229,13 +171,16 @@ export default function UPSCBookmarksPage() {
             <AppHeader />
 
             <main className="container mx-auto px-4 py-8">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h1 className="text-4xl font-black leading-tight tracking-tighter text-foreground mb-4">
-                            UPSC Bookmarks
-                        </h1>
-                        <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-                            Review your bookmarked UPSC questions by subject.
+                <div className="max-w-6xl mx-auto space-y-8">
+                    <div>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                            <Link href="/upsc" className="hover:text-primary transition-colors">UPSC</Link>
+                            <span>/</span>
+                            <span className="text-foreground font-medium">Bookmarks</span>
+                        </div>
+                        <h1 className="text-4xl font-extrabold tracking-tight mb-4">Bookmarked Questions</h1>
+                        <p className="text-xl text-muted-foreground">
+                            Review and practice questions you saved for later.
                         </p>
                     </div>
 
@@ -244,17 +189,22 @@ export default function UPSCBookmarksPage() {
                             {Object.entries(bookmarkedQuestions).map(([subject, questions]) => (
                                 <Card
                                     key={subject}
-                                    className="hover:shadow-lg transition-all duration-300 hover-elevate border-t-4 border-t-purple-500"
+                                    className="group relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                                 >
                                     <CardHeader>
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                                                <BookmarkIcon className="h-5 w-5" />
+                                            </div>
+                                        </div>
                                         <CardTitle className="text-xl">{subject}</CardTitle>
                                         <CardDescription>
-                                            {questions.length} questions
+                                            {questions.length} saved questions
                                         </CardDescription>
                                     </CardHeader>
                                     <CardContent className="space-y-3">
                                         <Button
-                                            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                                            className="w-full"
                                             onClick={() => setSelectedSubject(subject)}
                                         >
                                             Start Review
@@ -282,19 +232,22 @@ export default function UPSCBookmarksPage() {
                             ))}
                         </div>
                     ) : (
-                        <div className="text-center py-12">
-                            <div className="max-w-md mx-auto">
-                                <span className="material-symbols-outlined text-6xl text-muted-foreground mb-4 block">
-                                    bookmark
-                                </span>
-                                <h3 className="text-xl font-semibold mb-2">
-                                    No UPSC Bookmarks
-                                </h3>
-                                <p className="text-muted-foreground mb-6">
-                                    You haven't bookmarked any UPSC questions yet.
-                                </p>
+                        <Card className="p-12 text-center border-dashed">
+                            <div className="flex justify-center mb-4">
+                                <div className="p-4 bg-muted rounded-full">
+                                    <BookmarkIcon className="h-8 w-8 text-muted-foreground" />
+                                </div>
                             </div>
-                        </div>
+                            <h3 className="text-xl font-semibold mb-2">
+                                No Bookmarked Questions
+                            </h3>
+                            <p className="text-muted-foreground mb-6">
+                                Bookmark questions during quizzes to see them here.
+                            </p>
+                            <Link href="/upsc">
+                                <Button>Go to Quizzes</Button>
+                            </Link>
+                        </Card>
                     )}
                 </div>
             </main>

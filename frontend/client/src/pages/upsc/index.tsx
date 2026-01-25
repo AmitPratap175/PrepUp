@@ -3,7 +3,7 @@ import { AppHeader } from "@/components/app-header";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, BookOpen, Clock, Brain, CheckCircle2, RotateCcw } from "lucide-react";
+import { Loader2, BookOpen, Clock, Brain, CheckCircle2, RotateCcw, List, Bookmark as BookmarkIcon } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { PracticeTest } from "@shared/schema";
@@ -133,6 +133,39 @@ export default function UPSCPage() {
                                     </CardHeader>
                                     <CardContent>
                                         <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
+                                    </CardContent>
+                                    <CardContent>
+                                        <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-amber-500/5 border-amber-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <List className="h-5 w-5 text-amber-500" />
+                                            Topic-wise PYQs
+                                        </CardTitle>
+                                        <CardDescription>Practice past year questions by subject (Polity, History, etc.).</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/topics">
+                                            <Button className="w-full" variant="outline">View Topics</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-purple-500/5 border-purple-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <BookmarkIcon className="h-5 w-5 text-purple-500" />
+                                            Bookmarks
+                                        </CardTitle>
+                                        <CardDescription>Review your saved questions.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/bookmarks">
+                                            <Button className="w-full" variant="outline">Go to Bookmarks</Button>
+                                        </Link>
                                     </CardContent>
                                 </Card>
                             </div>

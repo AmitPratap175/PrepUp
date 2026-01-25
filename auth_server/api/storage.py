@@ -335,6 +335,49 @@ class MemStorage:
                     "questions": questions
                 }
                 self.practice_tests[practice_test["id"]] = practice_test
+        
+        # Seed UPSC Polity PYQs
+        upsc_polity_path = os.path.join(self.base_dir, '..', 'data/upsc/upsc_polity_pyqs.json')
+        if os.path.exists(upsc_polity_path):
+             polity_questions = self._load_questions_from_file(upsc_polity_path)
+             if polity_questions:
+                polity_test = {
+                    "id": "upsc-polity-pyqs-complete",
+                    "title": "UPSC Polity PYQs (Complete)",
+                    "examType": "upsc",
+                    "subject": "Polity",
+                    "duration": len(polity_questions) * 2,
+                    "totalQuestions": len(polity_questions),
+                    "questions": polity_questions
+                }
+                self.practice_tests[polity_test["id"]] = polity_test
+
+        # Helper to seed generic UPSC topic
+        def seed_upsc_topic(file_name, test_id, title, subject):
+            path = os.path.join(self.base_dir, '..', f'data/upsc/{file_name}')
+            if os.path.exists(path):
+                questions = self._load_questions_from_file(path)
+                if questions:
+                    test = {
+                        "id": test_id,
+                        "title": title,
+                        "examType": "upsc",
+                        "subject": subject,
+                        "duration": len(questions) * 2,
+                        "totalQuestions": len(questions),
+                        "questions": questions
+                    }
+                    self.practice_tests[test["id"]] = test
+
+        # Seed other UPSC topics
+        seed_upsc_topic("upsc_ancient_medieval_history_pyqs.json", "upsc-ancient-history-pyqs", "Ancient & Medieval History PYQs", "History")
+        seed_upsc_topic("upsc_modern_history_pyqs.json", "upsc-modern-history-pyqs", "Modern Indian History PYQs", "History")
+        seed_upsc_topic("upsc_geography_pyqs.json", "upsc-geography-pyqs", "Geography PYQs", "Geography")
+        seed_upsc_topic("upsc_economy_pyqs.json", "upsc-economy-pyqs", "Economy PYQs", "Economy")
+        seed_upsc_topic("upsc_environment_pyqs.json", "upsc-environment-pyqs", "Environment & Ecology PYQs", "Environment")
+        seed_upsc_topic("upsc_science_tech_pyqs.json", "upsc-science-tech-pyqs", "Science & Tech PYQs", "Science")
+        seed_upsc_topic("upsc_misc_current_affairs_pyqs.json", "upsc-misc-pyqs", "Miscellaneous & Current Affairs PYQs", "Current Affairs")
+
 
         # Seed mock tests from JSON files
         mock_test_dir = os.path.join(self.base_dir, '..', 'data/cat/mocks')
