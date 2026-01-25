@@ -7,31 +7,40 @@ from bs4 import BeautifulSoup
 
 # Configuration
 # List of (URL, Output Filename) tuples
-# User can fill in the URLs for the remaining subjects
+# User can fill in the URLs for the corresponding years
 SCRAPE_CONFIG = [
-    # 1. Indian Polity
-    # ("https://courses.upscprep.com/exams/review/34512/answers/", "auth_server/data/upsc/upsc_polity_pyqs.json"),
-    
-    # 2. Ancient, Medieval, Art and Culture
-    # ("https://courses.upscprep.com/exams/review/34523/answers/", "auth_server/data/upsc/upsc_ancient_medieval_history_pyqs.json"),
+    # Prelims 2025 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34553/answers/", "auth_server/data/upsc/years/upsc_prelims_2025.json"),
 
-    # 3. Modern Indian History
-    ("https://courses.upscprep.com/exams/review/34524/answers/", "auth_server/data/upsc/upsc_modern_history_pyqs.json"),
+    # Prelims 2024 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34552/answers/", "auth_server/data/upsc/years/upsc_prelims_2024.json"),
 
-    # 4. Geography
-    ("https://courses.upscprep.com/exams/review/34525/answers/", "auth_server/data/upsc/upsc_geography_pyqs.json"),
+    # Prelims 2023 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34551/answers/", "auth_server/data/upsc/years/upsc_prelims_2023.json"),
 
-    # 5. Economy
-    ("https://courses.upscprep.com/exams/review/34526/answers/", "auth_server/data/upsc/upsc_economy_pyqs.json"),
+    # Prelims 2022 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34550/answers/", "auth_server/data/upsc/years/upsc_prelims_2022.json"),
 
-    # 6. Environment and Ecology
-    ("https://courses.upscprep.com/exams/review/34527/answers/", "auth_server/data/upsc/upsc_environment_pyqs.json"),
+    # Prelims 2021 (Attempt online)
+    ("https://courses.upscprep.com/exams/review/34549/answers/", "auth_server/data/upsc/years/upsc_prelims_2021.json"),
 
-    # 7. Science and Technology
-    ("https://courses.upscprep.com/exams/review/34528/answers/", "auth_server/data/upsc/upsc_science_tech_pyqs.json"),
+    # Prelims 2020 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34548/answers/", "auth_server/data/upsc/years/upsc_prelims_2020.json"),
 
-    # 8. Miscellaneous & Current Affairs
-    ("https://courses.upscprep.com/exams/review/34529/answers/", "auth_server/data/upsc/upsc_misc_current_affairs_pyqs.json"),
+    # Prelims 2019 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34547/answers/", "auth_server/data/upsc/years/upsc_prelims_2019.json"),
+
+    # Prelims 2018 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34546/answers/", "auth_server/data/upsc/years/upsc_prelims_2018.json"),
+
+    # Prelims 2017 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34545/answers/", "auth_server/data/upsc/years/upsc_prelims_2017.json"),
+
+    # Prelims 2016 (Attempt Online)
+    ("https://courses.upscprep.com/exams/review/34542/answers/", "auth_server/data/upsc/years/upsc_prelims_2016.json"),
+
+    # Prelims 2015 (Attempt online)
+    ("https://courses.upscprep.com/exams/review/34531/answers/", "auth_server/data/upsc/years/upsc_prelims_2015.json"),
 ]
 
 
@@ -121,7 +130,7 @@ async def scrape_upsc_review(target_url, output_file_path):
             await fetchAllData();
             """
         ],
-        delay_before_return_html=1500000.0, # Wait for API fetch loop
+        delay_before_return_html=15000.0, # Wait for API fetch loop
         cache_mode=CacheMode.BYPASS
     )
 
@@ -140,8 +149,6 @@ async def scrape_upsc_review(target_url, output_file_path):
             
             for idx, item in enumerate(raw_data):
                 # Map API structure to Target Schema
-                # Inspection needed for item structure, assuming based on standard Django DRF pattern
-                # Usually: item['question']['question_html'], item['question']['answers']...
                 
                 q_obj = item.get('question', {})
                 q_id = q_obj.get('id', f"upsc-{idx}")
@@ -153,8 +160,6 @@ async def scrape_upsc_review(target_url, output_file_path):
                 correct_opt_label = None
                 
                 answers = q_obj.get('answers', [])
-                # If answers not in question, maybe in top level item based on user selection?
-                # User's script dump showed `getAnswers(usa)` trying translation then `usa.question.answers`
                 
                 for a_idx, ans in enumerate(answers):
                     label = chr(65 + a_idx)
@@ -178,13 +183,11 @@ async def scrape_upsc_review(target_url, output_file_path):
                 
                 entry = {
                     "qid": f"upsc-{exam_id}-{q_id}",
-                    "passage_text": None, # Handle passage if type is 'M' (Mock/Passage based)?
+                    "passage_text": None, 
                     "question_text": q_text,
                     "image_url": None,
                     "options": options,
-                    "correct_option_data": correct_opt_label, # Uses label (A/B) or ID? Target schema used "1" "2" (data_option) or "A" (label). 
-                                                              # In 'verbal-ability.json', correct_option_data was "1" (the data_option).
-                                                              # Let's use the Index string.
+                    "correct_option_data": correct_opt_label, 
                     "solution_text": solution_text,
                     "solution_image_url": None,
                     "full_markdown": build_full_markdown(q_id, q_text, options, correct_opt_label, solution_text)
@@ -213,15 +216,6 @@ async def scrape_upsc_review(target_url, output_file_path):
 async def main_batch():
     for url, output_file in SCRAPE_CONFIG:
         print(f"\nExample: Starting scrape for {output_file}...")
-        # Update global target for the scraper function (or pass it as arg if refactored, 
-        # but for minimal change we can set the global if the function uses it, 
-        # however, it's better to modify scrape_upsc_review to accept arguments)
-        
-        # Since scrape_upsc_review uses global constants, we need to pass them or refactor.
-        # Let's refactor the call slightly to pass these as arguments to a wrapper or modify the logic.
-        
-        # Actually, looking at the code, `TARGET_URL` and `OUTPUT_FILE` are global.
-        # We should modify the `scrape_upsc_review` signature.
         await scrape_upsc_review(url, output_file)
         print(f"Finished {output_file}")
 
