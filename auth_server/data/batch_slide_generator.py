@@ -3,7 +3,7 @@ import time
 from pathlib import Path
 from notebooklm import NotebookLMClient, SlideDeckFormat, SlideDeckLength
 
-DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/CA_Mag")
+DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/Slides")
 STORAGE_PATH = "/home/dspratap/.notebooklm/storage_state.json"
 
 async def generate_slide_from_pdf(client, pdf_path):
