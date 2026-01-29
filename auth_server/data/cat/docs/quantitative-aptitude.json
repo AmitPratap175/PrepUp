@@ -69638,6 +69638,293 @@
       "solution_text": "Number of ways in which the candidate can secure the cut-offs in all 6 sections = $6C_{6}$ = 1\n\nNumber of ways of securing marks in 6 sections \n\n= $6C_{0} + 6C_{1} + 6C_{2} + 6C_{3} + 6C_{4} + 6C_{5} + 6C_{6}$\n\n= $2^{6}$ = 64\n\nThus, the number of ways in which he fails to secure the cut offs in at least one section = 64 − 1 = 63",
       "image_url": "",
       "full_markdown": "### Question (qid: 84118)\n\n**Passage:**\nIn an MBA entrance examination, a minimum is to be secured in each of the 6 sections to qualify the cut-offs. In how many ways can a candidate fail to secure the cut-offs?\n\n60\n\n61\n\n62\n\n63\n\nIn an MBA entrance examination, a minimum is to be secured in each of the 6 sections to qualify the cut-offs. In how many ways can a candidate fail to secure the cut-offs?\n\n**Options:**\n- **A**. 60\n- **B**. 61\n- **C**. 62\n- **D**. 63\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2219",
+      "passage_text": "",
+      "question_text": "One part of a hostel’s monthly expenses is fixed, and the other part is proportional to the number of its boarders. The hostel collects ₹ 1600 per month from each boarder. When the number of boarders is 50, the profit of the hostel is ₹ 200 per boarder, and when the number of boarders is 75, the profit of the hostel is ₹ 250 per boarder. When the number of boarders is 80, the total profit of the hostel, in INR, will be",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "20200",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "20500",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20800",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Profit per boarder = Total profit / Number of boarders.\n\nLet the number of boarders be n.\n\nProfit/boarder = 1600 - (Total cost/n)\n\nLet the total cost be a + bn, where a = fixed, and b is the variable additional cost per boarder.\n\nProfit/boarder = 1600 - (a + bn)/n\n\nProfit/boarder = 1600 - a/n - b \n\n1600 - a/50 - b = 200\n\n1600 - a/75 - b = 250\n\nSolving, we get a = 7500, and b = 1250\n\nHence, total profit with 80 people = 80 ( 1600 - 7500/80 - 1250) = 80 (350 - 7500/80) = 28000 - 7500 = Rs. 20500",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 386513)\n\n**Passage:**\nOne part of a hostel’s monthly expenses is fixed, and the other part is proportional to the number of its boarders. The hostel collects ₹ 1600 per month from each boarder. When the number of boarders is 50, the profit of the hostel is ₹ 200 per boarder, and when the number of boarders is 75, the profit of the hostel is ₹ 250 per boarder. When the number of boarders is 80, the total profit of the hostel, in INR, will be\n\n20200\n\n20500\n\n20800\n\n20000\n\nOne part of a hostel’s monthly expenses is fixed, and the other part is proportional to the number of its boarders. The hostel collects ₹ 1600 per month from each boarder. When the number of boarders is 50, the profit of the hostel is ₹ 200 per boarder, and when the number of boarders is 75, the profit of the hostel is ₹ 250 per boarder. When the number of boarders is 80, the total profit of the hostel, in INR, will be\n\n**Options:**\n- **A**. 20200\n- **B**. 20500\n- **C**. 20800\n- **D**. 20000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2220",
+      "passage_text": "",
+      "question_text": "The arithmetic mean of scores of 25 students in an examination is 50. Five of these students top the examination with the same score. If the scores of the other students are distinct integers with the lowest being 30, then the maximum possible score of the toppers is",
+      "options": [],
+      "correct_option_data": "92",
+      "solution_text": "Let sum of marks of students be x \nNow therefore x = 25*50 =1250 \nNow to maximize the marks of the toppers \nWe will minimize the marks of 20 students \nso their scores will be (30,31,32.....49 ) \nlet score of toppers be y \nso we get 5y +$\\frac{20}{2}\\left(79\\right)$=1250 \nwe get 5y +790=1250\n5y=460\ny=92 \nSo scores of toppers = 92",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 386512)\n\n**Passage:**\nThe arithmetic mean of scores of 25 students in an examination is 50. Five of these students top the examination with the same score. If the scores of the other students are distinct integers with the lowest being 30, then the maximum possible score of the toppers is\n\nThe arithmetic mean of scores of 25 students in an examination is 50. Five of these students top the examination with the same score. If the scores of the other students are distinct integers with the lowest being 30, then the maximum possible score of the toppers is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2221",
+      "passage_text": "",
+      "question_text": "The total of male and female populations in a city increased by 25% from 1970 to 1980. During the same period, the male population increased by 40% while the female population increased by 20%. From 1980 to 1990, the female population increased by 25%. In 1990, if the female population is twice the male population, then the percentage increase in the total of male and female populations in the city from 1970 to 1990 is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "68.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "68.75",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "68.50",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "69.25",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let us solve this question by assuming values(multiples of 100) and not variables(x).\n\nSince we know that the female population was twice the male population in 1990, let us assume their respective values as 200 and 100.\n\nNote that while assuming numbers, some of the population values might come out as a fraction(which is not possible, since the population needs to be a natural number). However, this would not affect our answer, since the calculations are in ratios and percentages and not real values of the population in any given year.\n\nNow, we know that the female population became 1.25 times itself in 1990 from what it was in 1980.\n\nHence, the female population in 1980 = 200/1.25 = 160\n\nAlso, the female population became 1.2 times itself in 1980 from what it was in 1970.\n\nHence, the female population in 1970 = 160/1.2 = 1600/12 = 400/3\n\nLet the male population in 1970 be x. Hence, the male population in 1980 is 1.4x.\n\nNow, the total population in 1980 = 1.25 times the total population in 1970.\n\nHence, 1.25 (x + 400/3) = 1.4x + 160\n\nHence, x = 400/9.\n\nPopulation change = 300 - 400/9 - 400/3 = 300 - 1600/9 = 1100/9\n\npercentage change = $\\frac{\\frac{1100}{9}}{\\frac{1600}{9}}\\times\\ 100\\ =\\ \\frac{1100}{16}\\%=68.75\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 386510)\n\n**Passage:**\nThe total of male and female populations in a city increased by 25% from 1970 to 1980. During the same period, the male population increased by 40% while the female population increased by 20%. From 1980 to 1990, the female population increased by 25%. In 1990, if the female population is twice the male population, then the percentage increase in the total of male and female populations in the city from 1970 to 1990 is\n\n68.25\n\n68.75\n\n68.50\n\n69.25\n\nThe total of male and female populations in a city increased by 25% from 1970 to 1980. During the same period, the male population increased by 40% while the female population increased by 20%. From 1980 to 1990, the female population increased by 25%. In 1990, if the female population is twice the male population, then the percentage increase in the total of male and female populations in the city from 1970 to 1990 is\n\n**Options:**\n- **A**. 68.25\n- **B**. 68.75\n- **C**. 68.50\n- **D**. 69.25\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2222",
+      "passage_text": "",
+      "question_text": "An alloy is prepared by mixing three metals A, B and C in the proportion 3 : 4 : 7 by volume. Weights of the same volume of the metals A. B and C are in the ratio 5 : 2 : 6. In 130 kg of the alloy, the weight, in kg. of the metal C is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "84",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "96",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the volume of Metals A,B,C we 3x, 4x, 7x\n\nRatio weights of given volume be 5y,2y,6y\n\n.'. 15xy+8xy+42xy=130 => 65xy=130 => xy=2.\n\n.'.`The weight, in kg. of the metal C is 42xy=84.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348341)\n\n**Passage:**\nAn alloy is prepared by mixing three metals A, B and C in the proportion 3 : 4 : 7 by volume. Weights of the same volume of the metals A. B and C are in the ratio 5 : 2 : 6. In 130 kg of the alloy, the weight, in kg. of the metal C is\n\n48\n\n84\n\n70\n\n96\n\nAn alloy is prepared by mixing three metals A, B and C in the proportion 3 : 4 : 7 by volume. Weights of the same volume of the metals A. B and C are in the ratio 5 : 2 : 6. In 130 kg of the alloy, the weight, in kg. of the metal C is\n\n**Options:**\n- **A**. 48\n- **B**. 84\n- **C**. 70\n- **D**. 96\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2223",
+      "passage_text": "",
+      "question_text": "A solution, of volume 40 litres, has dye and water in the proportion 2 : 3. Water is added to the solution to change this proportion to 2 : 5. If one fourths of this diluted solution is taken out, how many litres of dye must be added to the remaining solution to bring the proportion back to 2 : 3?",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "Initially the amount of Dye and Water are 16,24 respectively.\n\nTo make the ratio of Dye to Water to 2:5 the amount of water should be 40l for 16l of Dye=> 16l of water is added.\n\nNow, the Dye and Water arr 16,40 respectively.\n\nAfter removing 1/4th of solution the amount of Dye and Water will be 12,30l respectively.\n\nTo have Dye and Water in the ratio of 2:3, for 30l of water we need 20l of Dye => 8l of Dye should be added.\n\nHence , 8 is correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 348339)\n\n**Passage:**\nA solution, of volume 40 litres, has dye and water in the proportion 2 : 3. Water is added to the solution to change this proportion to 2 : 5. If one fourths of this diluted solution is taken out, how many litres of dye must be added to the remaining solution to bring the proportion back to 2 : 3?\n\nA solution, of volume 40 litres, has dye and water in the proportion 2 : 3. Water is added to the solution to change this proportion to 2 : 5. If one fourths of this diluted solution is taken out, how many litres of dye must be added to the remaining solution to bring the proportion back to 2 : 3?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2224",
+      "passage_text": "Let △ A B C \\triangle ABC △ A B C be an isosceles triangle such that AB and AC are of equal length. AD is the altitude from A on BC and BE is the altitude from B on AC. If AD and BE intersect at O such that ∠ A O B = 10 5 ∘ \\angle AOB = 105^\\circ ∠ A O B = 1 0 5 ∘ , then A D B E \\frac{AD}{BE} B E A D ​ equals\n\nsin ⁡ 1 5 ∘ \\sin 15^\\circ sin 1 5 ∘\n\ncos ⁡ 1 5 ∘ \\cos 15^\\circ cos 1 5 ∘\n\n2 cos ⁡ 1 5 ∘ 2 \\cos 15^\\circ 2 cos 1 5 ∘\n\n2 sin ⁡ 1 5 ∘ 2 \\sin 15^\\circ 2 sin 1 5 ∘",
+      "question_text": "Let $\\triangle ABC$ be an isosceles triangle such that AB and AC are of equal length. AD is the altitude from A on BC and BE is the altitude from B on AC. If AD and BE intersect at O such that $\\angle AOB = 105^\\circ$, then $\\frac{AD}{BE}$ equals",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sin 15^\\circ$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\cos 15^\\circ$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$2 \\cos 15^\\circ$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$2 \\sin 15^\\circ$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given that AB = AC => Angle C = Angle B (1)\n\nAD and BE are altitudes => they make 90 degrees with the sides\n\nAngle AOB = 105 => Angle EOD = 105 (Vertically Opposite Angles)\n\nIn quadrilateral DOEC\n\nAngle C = 360 - 105 - 90 - 90 = 75 => Angle B = 75 (from 1)\n\nWe know that from the area of the triangle AD * BC = BE * AC\n\n=> $\\dfrac{AD}{BE}=\\dfrac{AC}{BC}=\\dfrac{2R\\sin B}{2R\\sin A}=\\dfrac{\\sin\\left(75\\right)}{\\sin\\left(30\\right)}=2\\sin\\left(75\\right)$ = 2cos(15)\n\n[sin(x) = cos(90-x)]",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449541)\n\n**Passage:**\nLet △ A B C \\triangle ABC △ A B C be an isosceles triangle such that AB and AC are of equal length. AD is the altitude from A on BC and BE is the altitude from B on AC. If AD and BE intersect at O such that ∠ A O B = 10 5 ∘ \\angle AOB = 105^\\circ ∠ A O B = 1 0 5 ∘ , then A D B E \\frac{AD}{BE} B E A D ​ equals\n\nsin ⁡ 1 5 ∘ \\sin 15^\\circ sin 1 5 ∘\n\ncos ⁡ 1 5 ∘ \\cos 15^\\circ cos 1 5 ∘\n\n2 cos ⁡ 1 5 ∘ 2 \\cos 15^\\circ 2 cos 1 5 ∘\n\n2 sin ⁡ 1 5 ∘ 2 \\sin 15^\\circ 2 sin 1 5 ∘\n\nLet $\\triangle ABC$ be an isosceles triangle such that AB and AC are of equal length. AD is the altitude from A on BC and BE is the altitude from B on AC. If AD and BE intersect at O such that $\\angle AOB = 105^\\circ$, then $\\frac{AD}{BE}$ equals\n\n**Options:**\n- **A**. $\\sin 15^\\circ$\n- **B**. $\\cos 15^\\circ$\n- **C**. $2 \\cos 15^\\circ$\n- **D**. $2 \\sin 15^\\circ$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2225",
+      "passage_text": "",
+      "question_text": "A rectangle with the largest possible area is drawn inside a semicircle of radius 2 cm. Then, the ratio of the lengths of the largest to the smallest side of this rectangle is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2 : 1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1 : 1",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{5} : 1$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{2} : 1$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us assume the length of the rectangle is 'l' and breadth of the rectangle is 'b'.\n\nThe radius, l/2 and b in the above diagram form a right-angled triangle.\n\n=> $\\left(\\frac{l}{2}\\right)^2+b^2=2^2$\n\nWe know that the area of the rectangle is l*b, which can be obtained by considering 2 times the geometric mean of $\\left(\\frac{l}{2}\\right)^2$ and $b^2$.\n\nTherefore, for the maximum area, the equality condition of AM-GM inequality should be satisfied\n\n=> $\\left(\\frac{l}{2}\\right)^2=b^2$ => l = 2b.\n=> l/b = 2/1.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449542)\n\n**Passage:**\nA rectangle with the largest possible area is drawn inside a semicircle of radius 2 cm. Then, the ratio of the lengths of the largest to the smallest side of this rectangle is\n\n2 : 1\n\n1 : 1\n\n5 : 1 \\sqrt{5} : 1 5 ​ : 1\n\n2 : 1 \\sqrt{2} : 1 2 ​ : 1\n\nA rectangle with the largest possible area is drawn inside a semicircle of radius 2 cm. Then, the ratio of the lengths of the largest to the smallest side of this rectangle is\n\n**Options:**\n- **A**. 2 : 1\n- **B**. 1 : 1\n- **C**. $\\sqrt{5} : 1$\n- **D**. $\\sqrt{2} : 1$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2226",
+      "passage_text": "",
+      "question_text": "In a regular polygon, any interior angle exceeds the exterior angle by 120 degrees. Then, the number of diagonals of this polygon is",
+      "options": [],
+      "correct_option_data": "54",
+      "solution_text": "The sum of the interior angles of a polygon of 'n' sides is given by $\\left(2n-4\\right)\\times\\ 90$, and the sum of the exterior angles of a polygon is 360 degrees.\n\nSo, the difference between them will be 120 * n\n\n=> $\\left(2n-4\\right)90-360=120n$\n\n=> 60n = 720 => n = 12.\n\nWe know that the number of diagonals of a regular polygon is nC2 - n = 12C2 - 12 = 66 - 12 = 54.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449543)\n\n**Passage:**\nIn a regular polygon, any interior angle exceeds the exterior angle by 120 degrees. Then, the number of diagonals of this polygon is\n\nIn a regular polygon, any interior angle exceeds the exterior angle by 120 degrees. Then, the number of diagonals of this polygon is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2227",
+      "passage_text": "Find the value of sin ⁡ 6 1 5 ∘ + sin ⁡ 6 7 5 ∘ + 6 sin ⁡ 2 1 5 ∘ sin ⁡ 2 7 5 ∘ sin ⁡ 4 1 5 ∘ + sin ⁡ 4 7 5 ∘ + 5 sin ⁡ 2 1 5 ∘ sin ⁡ 2 7 5 ∘ \\frac{\\sin^{6}15^{\\circ} + \\sin^{6}75^{\\circ} + 6\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}{\\sin^{4}15^{\\circ} + \\sin^{4}75^{\\circ} + 5\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}} s i n 4 1 5 ∘ + s i n 4 7 5 ∘ + 5 s i n 2 1 5 ∘ s i n 2 7 5 ∘ s i n 6 1 5 ∘ + s i n 6 7 5 ∘ + 6 s i n 2 1 5 ∘ s i n 2 7 5 ∘ ​\n\nsin ⁡ 1 5 ∘ + sin ⁡ 7 5 ∘ \\sin 15^{\\circ} + \\sin 75^{\\circ} sin 1 5 ∘ + sin 7 5 ∘\n\n6 5 \\frac{6}{5} 5 6 ​\n\n1\n\nsin ⁡ 1 5 ∘ cos ⁡ 1 5 ∘ \\sin 15^{\\circ} \\cos 15^{\\circ} sin 1 5 ∘ cos 1 5 ∘\n\nNone of the above",
+      "question_text": "Find the value of \n$\\frac{\\sin^{6}15^{\\circ} + \\sin^{6}75^{\\circ} + 6\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}{\\sin^{4}15^{\\circ} + \\sin^{4}75^{\\circ} + 5\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sin 15^{\\circ} + \\sin 75^{\\circ}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{6}{5}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sin 15^{\\circ} \\cos 15^{\\circ}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "None of the above",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "$Let\\ \\sin^215^{\\circ}\\ =a\\ and\\ \\sin^275^{\\circ}\\ =\\ b\\ $\n\nThen the given equation becomes,\n\n$\\ \\frac{\\ a^3+b^3+6ab}{a^2+b^2+5ab}$ \n\n=$\\ \\frac{\\ \\left(a+b\\right)^3-3ab\\left(a+b\\right)+6ab}{\\left(a+b\\right)^2-2ab+5ab}$     $\\ \\therefore\\ \\ a^3+b^3=\\left(a+b\\right)^3-3ab\\left(a+b\\right)$ , $\\ \\therefore\\ \\ a^2+b^2=\\left(a+b\\right)^2-2ab$\n\nUsing $\\sin\\left(\\theta\\right)\\ =\\cos\\left(90-\\theta\\ \\ \\right)$\n\nwe get, $\\sin^275^{\\circ\\ }=\\cos^215^{\\circ\\ }$\n\nnow, a+b = $\\sin^215^{\\circ\\ }+\\sin^275^{\\circ\\ }$ = $\\sin^215^{\\circ\\ }+\\cos^215^{\\circ\\ }$ = 1.\n\nThe equation becomes, $=\\ \\frac{\\ 1-3ab+6ab}{1-2ab+5ab}\\ =\\ \\frac{\\ 1+3ab}{1+3ab}\\ =1\\ $",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 428881)\n\n**Passage:**\nFind the value of sin ⁡ 6 1 5 ∘ + sin ⁡ 6 7 5 ∘ + 6 sin ⁡ 2 1 5 ∘ sin ⁡ 2 7 5 ∘ sin ⁡ 4 1 5 ∘ + sin ⁡ 4 7 5 ∘ + 5 sin ⁡ 2 1 5 ∘ sin ⁡ 2 7 5 ∘ \\frac{\\sin^{6}15^{\\circ} + \\sin^{6}75^{\\circ} + 6\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}{\\sin^{4}15^{\\circ} + \\sin^{4}75^{\\circ} + 5\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}} s i n 4 1 5 ∘ + s i n 4 7 5 ∘ + 5 s i n 2 1 5 ∘ s i n 2 7 5 ∘ s i n 6 1 5 ∘ + s i n 6 7 5 ∘ + 6 s i n 2 1 5 ∘ s i n 2 7 5 ∘ ​\n\nsin ⁡ 1 5 ∘ + sin ⁡ 7 5 ∘ \\sin 15^{\\circ} + \\sin 75^{\\circ} sin 1 5 ∘ + sin 7 5 ∘\n\n6 5 \\frac{6}{5} 5 6 ​\n\n1\n\nsin ⁡ 1 5 ∘ cos ⁡ 1 5 ∘ \\sin 15^{\\circ} \\cos 15^{\\circ} sin 1 5 ∘ cos 1 5 ∘\n\nNone of the above\n\nFind the value of \n$\\frac{\\sin^{6}15^{\\circ} + \\sin^{6}75^{\\circ} + 6\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}{\\sin^{4}15^{\\circ} + \\sin^{4}75^{\\circ} + 5\\sin^{2}15^{\\circ}\\sin^{2}75^{\\circ}}$\n\n**Options:**\n- **A**. $\\sin 15^{\\circ} + \\sin 75^{\\circ}$\n- **B**. $\\frac{6}{5}$\n- **C**. 1\n- **D**. $\\sin 15^{\\circ} \\cos 15^{\\circ}$\n- **E**. None of the above\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2228",
+      "passage_text": "ABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of A B 2 − A E 2 + 6 C D AB^2 - AE^2 + 6CD A B 2 − A E 2 + 6 C D is:\n\n5\n\n10\n\n14\n\n18\n\n21",
+      "question_text": "ABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of $AB^2 - AE^2 + 6CD$ is:",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "21",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "E",
+      "solution_text": "Given that, $AD\\bot\\ BC$\n\n$BE=3$\n\n$BC=5$\n\nUsing Pythagoras' theorem,\n\n$AD^2+BD^2=AB^2$ .....(1)\n\n$AD^2+DE^2=AE^2$......(2)\n\n$AD^2+DC^2=AC^2$......(3)\n\n(1) - (2) gives\n\n$BD^2+DE^2=AB^2-AE^2$\n\n$x^2-\\left(3-x\\right)^2=AB^2-AE^2$\n\n$AB^2-AE^2=6x-9$\n\n$AB^2-AE^2+6CD=6x-9+6\\left(5-x\\right)$       ($CD=\\left(5-x\\right)$)\n\n$AB^2-AE^2+6CD=6x-9+30-6x$\n\n$AB^2-AE^2+6CD=21$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 428884)\n\n**Passage:**\nABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of A B 2 − A E 2 + 6 C D AB^2 - AE^2 + 6CD A B 2 − A E 2 + 6 C D is:\n\n5\n\n10\n\n14\n\n18\n\n21\n\nABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of $AB^2 - AE^2 + 6CD$ is:\n\n**Options:**\n- **A**. 5\n- **B**. 10\n- **C**. 14\n- **D**. 18\n- **E**. 21\n\n**Correct Answer:** null"
     }
   ]
 }

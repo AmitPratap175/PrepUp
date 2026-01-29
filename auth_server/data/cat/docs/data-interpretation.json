@@ -45558,6 +45558,210 @@
       "solution_text": "Option A: Box B and Box C\n\nTotal number of unit grids = 49\n\nThe number of grids covered by B and C is 3 and 6 respectively.\n\nAny combination of B and C will be a multiple of 3 and the number of grids is 49(not a multiple of 3).\n\nThus Option A is incorrect.\n\nOption B: Box C and Box D\n\nThe number of grids covered by C and D is 6 and 4 respectively.\n\nAny combination of D and C will be a multiple of 2 and the number of grids is 49(not a multiple of 2).\n\nThus Option B is incorrect.\n\nOption C: Box F and Box E\n\nThe number of grids covered by F and E is 2 and 9 respectively.\n\nWe can arrange the boxes as given below:\n\nOption D: Box F and Box D\n\nThe number of grids covered by F and D is 2 and 4 respectively.\n\nAny combination of B and C will be a multiple of 2 and the number of grids is 49(not a multiple of 2).\n\nThus Option D is incorrect.\n\nOption C is the correct option.",
       "image_url": "https://cracku.in/media/uploads/B1_EYmZpPa.PNG",
       "full_markdown": "### Question (qid: 296129)\n\n**Passage:**\nA delivery service company, Go Delivery, bought standard vans to deliver parcels all around the city.\n\nThe Van's parcel grid plan is given below A1- G7:\n\nA1, A2.....G7 are individually called unit grid cells and the Box A will take 7 grid cells, whereas the Box E will take 9 grid cells of the Van.\n\nA, B, C, D, E and F are different sizes of boxes which the Van carries.\n\nOn each box, the amount for the whole box charged by the company for the delivery is given.\n\nThe boxes cannot be placed on the top of each other.\n\nWhich of the following two types of boxes can make a combination to fill the grid completely?\n\n**Options:**\n- **A**. Box B and Box C\n- **B**. Box C and Box D\n- **C**. Box F and Box E\n- **D**. Box F and Box D\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1613",
+      "passage_text": "The following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.",
+      "question_text": "Which digit does the letter A represent?",
+      "options": [],
+      "correct_option_data": "1",
+      "solution_text": "The value of F can only be 0 as F+F=F can only hold if F=0.\n\nAlso, A can only be 1(in the second column) because to get a carry of more than 1, B has to be a double-digit number which is not possible. (A carry is a digit that is transferred from one column of digits to another column of more significant digits.)\n\nSo the data can be tabulated as follows:\n\nSince the last row in the third column is 0, the carry to the second column must have been 1, Hence B+1+1=11  => B=9\n\nIn the 4th column, H+H = 10 since a carry 1 has gone to the 3rd column. Hence H=5.\n\nG+K must be 11 and the carry 1 goes to the next column, so C=1+1=2.\n\nNow, G,K can take values (3,8), (4,7) and (5,6) in any order.\n\nFrom 5th column G=J+1  => J=G-1\n\nCase: G=3 and K=8, here J =2 which is not possible as C =2\n\nCase: G=8 and K=3, J=7, a possible case.\n\nCase: G=4 and K=7, J=3 possible\n\nCase: G=7 and K=4, J=6 possible\n\nCase: G=5 and K=6, J=4 not possible as H =5.\n\nCase: G=6 and K=5, J=5 both J and K are same, not possible.\n\nHence the cases can be tabulated as follows:\n\nThe letter A represents 1.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_14_o4GbNJC.png",
+      "full_markdown": "### Question (qid: 277624)\n\n**Passage:**\nThe following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.\n\nWhich digit does the letter A represent?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1614",
+      "passage_text": "The following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.",
+      "question_text": "Which digit does the letter B represent?",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": "The value of F can only be 0 as F+F=F can only hold if F=0.\n\nAlso, A can only be 1(in the second column) because to get a carry of more than 1, B has to be a double-digit number which is not possible. (A carry is a digit that is transferred from one column of digits to another column of more significant digits.)\n\nSo the data can be tabulated as follows:\n\nSince the last row in the third column is 0, the carry to the second column must have been 1, Hence B+1+1=11  => B=9\n\nIn the 4th column, H+H = 10 since a carry 1 has gone to the 3rd column. Hence H=5.\n\nG+K must be 11 and the carry 1 goes to the next column, so C=1+1=2.\n\nNow, G,K can take values (3,8), (4,7) and (5,6) in any order.\n\nFrom 5th column G=J+1  => J=G-1\n\nCase: G=3 and K=8, here J =2 which is not possible as C =2\n\nCase: G=8 and K=3, J=7, a possible case.\n\nCase: G=4 and K=7, J=3 possible\n\nCase: G=7 and K=4, J=6 possible\n\nCase: G=5 and K=6, J=4 not possible as H =5.\n\nCase: G=6 and K=5, J=5 both J and K are same, not possible.\n\nHence the cases can be tabulated as follows:\n\nThe letter B represents 9.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_14_o4GbNJC.png",
+      "full_markdown": "### Question (qid: 277625)\n\n**Passage:**\nThe following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.\n\nWhich digit does the letter B represent?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1615",
+      "passage_text": "The following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.",
+      "question_text": "Which among the digits 3, 4, 6 and 7 cannot be represented by the letter D?",
+      "options": [],
+      "correct_option_data": "7",
+      "solution_text": "The value of F can only be 0 as F+F=F can only hold if F=0.\n\nAlso, A can only be 1(in the second column) because to get a carry of more than 1, B has to be a double-digit number which is not possible. (A carry is a digit that is transferred from one column of digits to another column of more significant digits.)\n\nSo the data can be tabulated as follows:\n\nSince the last row in the third column is 0, the carry to the second column must have been 1, Hence B+1+1=11  => B=9\n\nIn the 4th column, H+H = 10 since a carry 1 has gone to the 3rd column. Hence H=5.\n\nG+K must be 11 and the carry 1 goes to the next column, so C=1+1=2.\n\nNow, G,K can take values (3,8), (4,7) and (5,6) in any order.\n\nFrom 5th column G=J+1  => J=G-1\n\nCase: G=3 and K=8, here J =2 which is not possible as C =2\n\nCase: G=8 and K=3, J=7, a possible case.\n\nCase: G=4 and K=7, J=3 possible\n\nCase: G=7 and K=4, J=6 possible\n\nCase: G=5 and K=6, J=4 not possible as H =5.\n\nCase: G=6 and K=5, J=5 both J and K are same, not possible.\n\nHence the cases can be tabulated as follows:\n\nIn all possible cases 7 is already represented by a letter other than D. Hence 7 is the answer.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_14_o4GbNJC.png",
+      "full_markdown": "### Question (qid: 277626)\n\n**Passage:**\nThe following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.\n\nWhich among the digits 3, 4, 6 and 7 cannot be represented by the letter D?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1616",
+      "passage_text": "The following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.",
+      "question_text": "Which among the digits 4, 6, 7 and 8 cannot be represented by the letter G?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "The value of F can only be 0 as F+F=F can only hold if F=0.\n\nAlso, A can only be 1(in the second column) because to get a carry of more than 1, B has to be a double-digit number which is not possible. (A carry is a digit that is transferred from one column of digits to another column of more significant digits.)\n\nSo the data can be tabulated as follows:\n\nSince the last row in the third column is 0, the carry to the second column must have been 1, Hence B+1+1=11  => B=9\n\nIn the 4th column, H+H = 10 since a carry 1 has gone to the 3rd column. Hence H=5.\n\nG+K must be 11 and the carry 1 goes to the next column, so C=1+1=2.\n\nNow, G,K can take values (3,8), (4,7) and (5,6) in any order.\n\nFrom 5th column G=J+1  => J=G-1\n\nCase: G=3 and K=8, here J =2 which is not possible as C =2\n\nCase: G=8 and K=3, J=7, a possible case.\n\nCase: G=4 and K=7, J=3 possible\n\nCase: G=7 and K=4, J=6 possible\n\nCase: G=5 and K=6, J=4 not possible as H =5.\n\nCase: G=6 and K=5, J=5 both J and K are same, not possible.\n\nHence the cases can be tabulated as follows:\n\nFrom the table it is clear that 6 cannot be represented by G.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_14_o4GbNJC.png",
+      "full_markdown": "### Question (qid: 277627)\n\n**Passage:**\nThe following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.\n\nWhich among the digits 4, 6, 7 and 8 cannot be represented by the letter G?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1617",
+      "passage_text": "Read the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)",
+      "question_text": "Abhay invested his entire amount in Litecoin, Bitcoin and Dash in Jan 2017. He sold the entire crypto currencies with him in Nov 2017. If the investment in Litecoin, Bitcoin and Dash were in the ratio 3:3:2 then what would be the approximate profit/loss made by him in the entire transaction?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Profit 850 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Profit 1000 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Profit 900 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Loss 1 %",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "Profit 750 %",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "E",
+      "solution_text": "Before we start with solving the given question, let us first tabulate the prices of each of the given currency in Rupees for each of the given months. This will make it easier for us to solve the questions. For example, in Jan, Ether costs 12 ripple and each ripple costs 25 Rupees. So each ether must be costing 25*12 = 300 rupees. Similarly, each iota must be costing 25*3 = 75 rupees. Hence, each litecoin will cost 75*55 = 4125 rupees. Each Dash will be cost 150 rupees and each Bitcoin will cost 433125 rupees. Similarly, we can obtain these values for each of the given months. These values have been tabulated in the following table:\n\nHe had Rupees 800000 with him at the start of the year, he invested in the ratio 3:3:2. Hence, he must have invested 300000 in Litecoin, 3 lacs in Bitcoin and 2 lacs in Dash. Thus, the quantity of each currency in Nov 2017 will be\nLitecoin = 300000*28800/4125 = 2094545 approx\nBitcoin = 300000*3024000/433125 = 2094545 approx\nDash = 200000*1950/150 = 2600000\nThus, we can see that the final amount with him will be approximately 42 + 26 = 68 lacs. Hence, the amount would have grown by 60 lacs. There percentage change = 60*100/8 = 750 %.",
+      "image_url": "https://cracku.in/media/uploads/38_0iUaKZF.PNG",
+      "full_markdown": "### Question (qid: 103638)\n\n**Passage:**\nRead the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)\n\nAbhay invested his entire amount in Litecoin, Bitcoin and Dash in Jan 2017. He sold the entire crypto currencies with him in Nov 2017. If the investment in Litecoin, Bitcoin and Dash were in the ratio 3:3:2 then what would be the approximate profit/loss made by him in the entire transaction?\n\n**Options:**\n- **A**. Profit 850 %\n- **B**. Profit 1000 %\n- **C**. Profit 900 %\n- **D**. Loss 1 %\n- **E**. Profit 750 %\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1618",
+      "passage_text": "Read the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)",
+      "question_text": "If Abhay wants to invest the entire amount in only 1 currency(in Jan 2017) and he will withdraw the amount only in Dec 2017, then which currency will be most profitable to invest in?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bitcoin",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Iota",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Dash",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Ripple",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "Etherium",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Before we start with solving the given question, let us first tabulate the prices of each of the given currency in Rupees for each of the given months. This will make it easier for us to solve the questions. For example, in Jan, Ether costs 12 ripple and each ripple costs 25 Rupees. So each ether must be costing 25*12 = 300 rupees. Similarly, each iota must be costing 25*3 = 75 rupees. Hence, each litecoin will cost 75*55 = 4125 rupees. Each Dash will be cost 150 rupees and each Bitcoin will cost 433125 rupees. Similarly, we can obtain these values for each of the given months. These values have been tabulated in the following table:\n\nThe most profitable currency will be the one which has grown by maximum percentage from Jan to Dec. From carefully observing the given table, we can see that Dash has seen the greatest percentage change from Jan to Dec as 2880/150 = 19.2. For none of the other currencies, the multiplying factor is this high. Hence, Dash is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/38_0iUaKZF.PNG",
+      "full_markdown": "### Question (qid: 103639)\n\n**Passage:**\nRead the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)\n\nIf Abhay wants to invest the entire amount in only 1 currency(in Jan 2017) and he will withdraw the amount only in Dec 2017, then which currency will be most profitable to invest in?\n\n**Options:**\n- **A**. Bitcoin\n- **B**. Iota\n- **C**. Dash\n- **D**. Ripple\n- **E**. Etherium\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1619",
+      "passage_text": "Read the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)",
+      "question_text": "If Abhay plans to buy some currency in June 2017 and then sell it in Dec 2017, then which currency will be most profitable for him to buy?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Ripple",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Iota",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Bitcoin",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Dash",
+          "is_correct": false
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "Ether",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Before we start with solving the given question, let us first tabulate the prices of each of the given currency in Rupees for each of the given months. This will make it easier for us to solve the questions. For example, in Jan, Ether costs 12 ripple and each ripple costs 25 Rupees. So each ether must be costing 25*12 = 300 rupees. Similarly, each iota must be costing 25*3 = 75 rupees. Hence, each litecoin will cost 75*55 = 4125 rupees. Each Dash will be cost 150 rupees and each Bitcoin will cost 433125 rupees. Similarly, we can obtain these values for each of the given months. These values have been tabulated in the following table:\n\nWe can see from the given table that iota will be the most profitable currency to buy as it has increased more than 3 times during the given period.",
+      "image_url": "https://cracku.in/media/uploads/38_0iUaKZF.PNG",
+      "full_markdown": "### Question (qid: 103640)\n\n**Passage:**\nRead the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)\n\nIf Abhay plans to buy some currency in June 2017 and then sell it in Dec 2017, then which currency will be most profitable for him to buy?\n\n**Options:**\n- **A**. Ripple\n- **B**. Iota\n- **C**. Bitcoin\n- **D**. Dash\n- **E**. Ether\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1620",
+      "passage_text": "Read the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)",
+      "question_text": "In which of the given months was the value of bitcoin (in rupees) the second highest?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "October",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "August",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "September",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "December",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "November",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Before we start with solving the given question, let us first tabulate the prices of each of the given currency in Rupees for each of the given months. This will make it easier for us to solve the questions. For example, in Jan, Ether costs 12 ripple and each ripple costs 25 Rupees. So each ether must be costing 25*12 = 300 rupees. Similarly, each iota must be costing 25*3 = 75 rupees. Hence, each litecoin will cost 75*55 = 4125 rupees. Each Dash will be cost 150 rupees and each Bitcoin will cost 433125 rupees. Similarly, we can obtain these values for each of the given months. These values have been tabulated in the following table:\n\nFrom the table, we can see that the value is second highest in December. Hence, option D is correct.",
+      "image_url": "https://cracku.in/media/uploads/38_0iUaKZF.PNG",
+      "full_markdown": "### Question (qid: 103641)\n\n**Passage:**\nRead the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)\n\nIn which of the given months was the value of bitcoin (in rupees) the second highest?\n\n**Options:**\n- **A**. October\n- **B**. August\n- **C**. September\n- **D**. December\n- **E**. November\n\n**Correct Answer:** null"
     }
   ]
 }

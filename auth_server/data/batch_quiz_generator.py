@@ -15,7 +15,7 @@ class QuizDifficulty(Enum):
     MEDIUM = 2
     HARD = 3
 
-DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/CA_Mag")
+DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/Slides/New")
 QUIZ_FILE = Path("/home/dspratap/Downloads/PrepUp/auth_server/data/quiz_mag.json")
 STORAGE_PATH = "/home/dspratap/.notebooklm/storage_state.json"
 
