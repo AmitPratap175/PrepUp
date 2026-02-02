@@ -45762,6 +45762,286 @@
       "solution_text": "Before we start with solving the given question, let us first tabulate the prices of each of the given currency in Rupees for each of the given months. This will make it easier for us to solve the questions. For example, in Jan, Ether costs 12 ripple and each ripple costs 25 Rupees. So each ether must be costing 25*12 = 300 rupees. Similarly, each iota must be costing 25*3 = 75 rupees. Hence, each litecoin will cost 75*55 = 4125 rupees. Each Dash will be cost 150 rupees and each Bitcoin will cost 433125 rupees. Similarly, we can obtain these values for each of the given months. These values have been tabulated in the following table:\n\nFrom the table, we can see that the value is second highest in December. Hence, option D is correct.",
       "image_url": "https://cracku.in/media/uploads/38_0iUaKZF.PNG",
       "full_markdown": "### Question (qid: 103641)\n\n**Passage:**\nRead the following information carefully and answer the questions which follow.\n\nIn Jan 2017, Abhay decided to invest Rupees 800000 in crypto currencies. The currencies in which he planned to invest were Bitcoin, Ether, Litecoin, Ripple, Iota and Dash. Transactions are allowed only at the beginning of any month and the prices remain constant for the entire month after that. The currency prices in Indian rupees at the beginning of few months are given below. Some of the prices are given in terms of other crypto currencies.\n\n(ltc and ether are abbreviations for litecoin and etherium respectively)\n\nIn which of the given months was the value of bitcoin (in rupees) the second highest?\n\n**Options:**\n- **A**. October\n- **B**. August\n- **C**. September\n- **D**. December\n- **E**. November\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1621",
+      "passage_text": "A college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.",
+      "question_text": "On which day did the 5 sections together spend the maximum amount ordering the Pizzas?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Monday",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Thursday",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us start by tabulating the information available.\n\nThe number of students studying in sections A, B, C, D, and E is 16, 20, 18, 10, and 12 respectively.\nThe prices of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200.\n\nThe amount spent by sections D and E on Monday was equal. \n\nLet us assume that the cost of pizzas ordered by sections D and E are Rs. (x+25) and Rs.x\n10*(x+25) = 12*x\n10x + 250 = 12x\n=> x = 125\n\nThe cost of pizza ordered on Monday by sections D and E can be Rs.125 and Rs.150.\n\nLet us assume that the prices differ by Rs.50\n10*(x+50) = 12*x\n10x + 500 = 12x\n=> 2x = 500 or x = Rs.250\nAs we can see, x falls outside the required range and hence, the prices of the pizzas cannot differ by more than Rs.25. \n\nThe amount spent by section B on Thursday was equal to the amount spent by section D on Friday.\n\nSection B has 20 students and section D has 10 students. Therefore, the cost of the pizzas ordered should be in the ratio 1:2. In the given range of values, only Rs.100 and Rs.200 satisfy this condition.\n\nThe amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. Again, we can see that the number of students in section B is twice the number of students in section D. Therefore, the cost of the pizza ordered by section B on Tuesday should be equal to the cost of the pizza ordered by section D on Thursday. \n\nThe amounts spent by B on Monday and Wednesday were in the ratio 4:3. Therefore, B should have spent Rs.200 on Monday and Rs.150 on Wednesday.\n\n’a’ cannot be 200, 100, or 150.  ‘a’ can be Rs.125 or Rs.175.\n\nThe difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50.\n\nIf a is Rs.175, then section B should have ordered the pizza that costs Rs.125 on Friday. However, in this case, the difference between the prices of pizza ordered by section B on any pair of consecutive days will not exceed Rs.50. Therefore, ‘a’ should be equal to Rs.125.\n\nThe amounts spent by sections C and E on Tuesday were equal. \n\nThe number of students in sections C and E are in the ratio 3:2 (18:12). Therefore, the prices of the pizzas ordered should be in the ratio 2:3. Therefore, the prices of the pizzas ordered should be Rs.100 and Rs.150 respectively.\n\nThe remaining cells can be filled similar to a SuDoKu. A should have ordered the pizza costing Rs.100 on Monday (since C has ordered the pizza costing Rs.100 on Tuesday). D should have ordered the pizza costing Rs.175 on Tuesday). Filling all the cells that can be filled, we get the following table.\n\nNow, it has been given that C ordered farm fresh on Friday. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. Therefore, the price of pizzas ordered by section C on Friday should be equal to the price of the pizza ordered by section A on Wednesday or Thursday.\n\nThe cost of the pizza ordered by section C on Friday can be either Rs.125 or Rs.150. \n\nIt has been given that section A did not order the pizza that costs Rs.125 on Friday. Therefore, section C should have ordered the pizza that costs Rs.125 and section A should have ordered the pizza that costs Rs.150. \n\nFarm fresh costs Rs.125.\n\nSection A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. \n=> Peporoni costs Rs.200 and Margherita costs Rs.100.\n\nSection D did not order Vegetariana pizza on Monday. Therefore, Vegetariana should cost Rs.175 and Mexicana should cost Rs.150.\n\nMargherita - 100\nFarm fresh - 125\nMexicana  - 150\nVegetariana - 175\nPeperoni   - 200\n\nThe following table gives the amount spent by the sections on each day (Amount spent = cost of pizza * number of students in the section).\n\nThe sections spent maximum amount ordering pizzas on Monday. Therefore, option A is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 212054)\n\n**Passage:**\nA college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.\n\nOn which day did the 5 sections together spend the maximum amount ordering the Pizzas?\n\n**Options:**\n- **A**. Monday\n- **B**. Tuesday\n- **C**. Wednesday\n- **D**. Thursday\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1622",
+      "passage_text": "A college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.",
+      "question_text": "On which day was the order for the maximum number of Margherita pizzas placed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Thursday",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let us start by tabulating the information available.\n\nThe number of students studying in sections A, B, C, D, and E is 16, 20, 18, 10, and 12 respectively.\nThe prices of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200.\n\nThe amount spent by sections D and E on Monday was equal. \n\nLet us assume that the cost of pizzas ordered by sections D and E are Rs. (x+25) and Rs.x\n10*(x+25) = 12*x\n10x + 250 = 12x\n=> x = 125\n\nThe cost of pizza ordered on Monday by sections D and E can be Rs.125 and Rs.150.\n\nLet us assume that the prices differ by Rs.50\n10*(x+50) = 12*x\n10x + 500 = 12x\n=> 2x = 500 or x = Rs.250\nAs we can see, x falls outside the required range and hence, the prices of the pizzas cannot differ by more than Rs.25. \n\nThe amount spent by section B on Thursday was equal to the amount spent by section D on Friday.\n\nSection B has 20 students and section D has 10 students. Therefore, the cost of the pizzas ordered should be in the ratio 1:2. In the given range of values, only Rs.100 and Rs.200 satisfy this condition.\n\nThe amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. Again, we can see that the number of students in section B is twice the number of students in section D. Therefore, the cost of the pizza ordered by section B on Tuesday should be equal to the cost of the pizza ordered by section D on Thursday. \n\nThe amounts spent by B on Monday and Wednesday were in the ratio 4:3. Therefore, B should have spent Rs.200 on Monday and Rs.150 on Wednesday.\n\n’a’ cannot be 200, 100, or 150.  ‘a’ can be Rs.125 or Rs.175.\n\nThe difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50.\n\nIf a is Rs.175, then section B should have ordered the pizza that costs Rs.125 on Friday. However, in this case, the difference between the prices of pizza ordered by section B on any pair of consecutive days will not exceed Rs.50. Therefore, ‘a’ should be equal to Rs.125.\n\nThe amounts spent by sections C and E on Tuesday were equal. \n\nThe number of students in sections C and E are in the ratio 3:2 (18:12). Therefore, the prices of the pizzas ordered should be in the ratio 2:3. Therefore, the prices of the pizzas ordered should be Rs.100 and Rs.150 respectively.\n\nThe remaining cells can be filled similar to a SuDoKu. A should have ordered the pizza costing Rs.100 on Monday (since C has ordered the pizza costing Rs.100 on Tuesday). D should have ordered the pizza costing Rs.175 on Tuesday). Filling all the cells that can be filled, we get the following table.\n\nNow, it has been given that C ordered farm fresh on Friday. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. Therefore, the price of pizzas ordered by section C on Friday should be equal to the price of the pizza ordered by section A on Wednesday or Thursday.\n\nThe cost of the pizza ordered by section C on Friday can be either Rs.125 or Rs.150. \n\nIt has been given that section A did not order the pizza that costs Rs.125 on Friday. Therefore, section C should have ordered the pizza that costs Rs.125 and section A should have ordered the pizza that costs Rs.150. \n\nFarm fresh costs Rs.125.\n\nSection A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. \n=> Peporoni costs Rs.200 and Margherita costs Rs.100.\n\nSection D did not order Vegetariana pizza on Monday. Therefore, Vegetariana should cost Rs.175 and Mexicana should cost Rs.150.\n\nMargherita - 100\nFarm fresh - 125\nMexicana  - 150\nVegetariana - 175\nPeperoni   - 200\n\nThe following table gives the amount spent by the sections on each day (Amount spent = cost of pizza * number of students in the section).\n\nSection B placed the order for Margherita pizzas on Thursday. Section B contains the maximum number of people. Therefore, option D is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 212055)\n\n**Passage:**\nA college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.\n\nOn which day was the order for the maximum number of Margherita pizzas placed?\n\n**Options:**\n- **A**. Monday\n- **B**. Wednesday\n- **C**. Tuesday\n- **D**. Thursday\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1623",
+      "passage_text": "A college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.",
+      "question_text": "Which variety of Pizza is the costliest among the five?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Margherita",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Mexicana",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Peperoni",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Vegetariana",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let us start by tabulating the information available.\n\nThe number of students studying in sections A, B, C, D, and E is 16, 20, 18, 10, and 12 respectively.\nThe prices of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200.\n\nThe amount spent by sections D and E on Monday was equal. \n\nLet us assume that the cost of pizzas ordered by sections D and E are Rs. (x+25) and Rs.x\n10*(x+25) = 12*x\n10x + 250 = 12x\n=> x = 125\n\nThe cost of pizza ordered on Monday by sections D and E can be Rs.125 and Rs.150.\n\nLet us assume that the prices differ by Rs.50\n10*(x+50) = 12*x\n10x + 500 = 12x\n=> 2x = 500 or x = Rs.250\nAs we can see, x falls outside the required range and hence, the prices of the pizzas cannot differ by more than Rs.25. \n\nThe amount spent by section B on Thursday was equal to the amount spent by section D on Friday.\n\nSection B has 20 students and section D has 10 students. Therefore, the cost of the pizzas ordered should be in the ratio 1:2. In the given range of values, only Rs.100 and Rs.200 satisfy this condition.\n\nThe amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. Again, we can see that the number of students in section B is twice the number of students in section D. Therefore, the cost of the pizza ordered by section B on Tuesday should be equal to the cost of the pizza ordered by section D on Thursday. \n\nThe amounts spent by B on Monday and Wednesday were in the ratio 4:3. Therefore, B should have spent Rs.200 on Monday and Rs.150 on Wednesday.\n\n’a’ cannot be 200, 100, or 150.  ‘a’ can be Rs.125 or Rs.175.\n\nThe difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50.\n\nIf a is Rs.175, then section B should have ordered the pizza that costs Rs.125 on Friday. However, in this case, the difference between the prices of pizza ordered by section B on any pair of consecutive days will not exceed Rs.50. Therefore, ‘a’ should be equal to Rs.125.\n\nThe amounts spent by sections C and E on Tuesday were equal. \n\nThe number of students in sections C and E are in the ratio 3:2 (18:12). Therefore, the prices of the pizzas ordered should be in the ratio 2:3. Therefore, the prices of the pizzas ordered should be Rs.100 and Rs.150 respectively.\n\nThe remaining cells can be filled similar to a SuDoKu. A should have ordered the pizza costing Rs.100 on Monday (since C has ordered the pizza costing Rs.100 on Tuesday). D should have ordered the pizza costing Rs.175 on Tuesday). Filling all the cells that can be filled, we get the following table.\n\nNow, it has been given that C ordered farm fresh on Friday. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. Therefore, the price of pizzas ordered by section C on Friday should be equal to the price of the pizza ordered by section A on Wednesday or Thursday.\n\nThe cost of the pizza ordered by section C on Friday can be either Rs.125 or Rs.150. \n\nIt has been given that section A did not order the pizza that costs Rs.125 on Friday. Therefore, section C should have ordered the pizza that costs Rs.125 and section A should have ordered the pizza that costs Rs.150. \n\nFarm fresh costs Rs.125.\n\nSection A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. \n=> Peporoni costs Rs.200 and Margherita costs Rs.100.\n\nSection D did not order Vegetariana pizza on Monday. Therefore, Vegetariana should cost Rs.175 and Mexicana should cost Rs.150.\n\nMargherita - 100\nFarm fresh - 125\nMexicana  - 150\nVegetariana - 175\nPeperoni   - 200\n\nThe following table gives the amount spent by the sections on each day (Amount spent = cost of pizza * number of students in the section).\n\nPeperoni costs the most (Rs.200) and hence, option C is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 212056)\n\n**Passage:**\nA college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.\n\nWhich variety of Pizza is the costliest among the five?\n\n**Options:**\n- **A**. Margherita\n- **B**. Mexicana\n- **C**. Peperoni\n- **D**. Vegetariana\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1624",
+      "passage_text": "A college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.",
+      "question_text": "On how many days did section E spend more than section D?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let us start by tabulating the information available.\n\nThe number of students studying in sections A, B, C, D, and E is 16, 20, 18, 10, and 12 respectively.\nThe prices of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200.\n\nThe amount spent by sections D and E on Monday was equal. \n\nLet us assume that the cost of pizzas ordered by sections D and E are Rs. (x+25) and Rs.x\n10*(x+25) = 12*x\n10x + 250 = 12x\n=> x = 125\n\nThe cost of pizza ordered on Monday by sections D and E can be Rs.125 and Rs.150.\n\nLet us assume that the prices differ by Rs.50\n10*(x+50) = 12*x\n10x + 500 = 12x\n=> 2x = 500 or x = Rs.250\nAs we can see, x falls outside the required range and hence, the prices of the pizzas cannot differ by more than Rs.25. \n\nThe amount spent by section B on Thursday was equal to the amount spent by section D on Friday.\n\nSection B has 20 students and section D has 10 students. Therefore, the cost of the pizzas ordered should be in the ratio 1:2. In the given range of values, only Rs.100 and Rs.200 satisfy this condition.\n\nThe amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. Again, we can see that the number of students in section B is twice the number of students in section D. Therefore, the cost of the pizza ordered by section B on Tuesday should be equal to the cost of the pizza ordered by section D on Thursday. \n\nThe amounts spent by B on Monday and Wednesday were in the ratio 4:3. Therefore, B should have spent Rs.200 on Monday and Rs.150 on Wednesday.\n\n’a’ cannot be 200, 100, or 150.  ‘a’ can be Rs.125 or Rs.175.\n\nThe difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50.\n\nIf a is Rs.175, then section B should have ordered the pizza that costs Rs.125 on Friday. However, in this case, the difference between the prices of pizza ordered by section B on any pair of consecutive days will not exceed Rs.50. Therefore, ‘a’ should be equal to Rs.125.\n\nThe amounts spent by sections C and E on Tuesday were equal. \n\nThe number of students in sections C and E are in the ratio 3:2 (18:12). Therefore, the prices of the pizzas ordered should be in the ratio 2:3. Therefore, the prices of the pizzas ordered should be Rs.100 and Rs.150 respectively.\n\nThe remaining cells can be filled similar to a SuDoKu. A should have ordered the pizza costing Rs.100 on Monday (since C has ordered the pizza costing Rs.100 on Tuesday). D should have ordered the pizza costing Rs.175 on Tuesday). Filling all the cells that can be filled, we get the following table.\n\nNow, it has been given that C ordered farm fresh on Friday. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. Therefore, the price of pizzas ordered by section C on Friday should be equal to the price of the pizza ordered by section A on Wednesday or Thursday.\n\nThe cost of the pizza ordered by section C on Friday can be either Rs.125 or Rs.150. \n\nIt has been given that section A did not order the pizza that costs Rs.125 on Friday. Therefore, section C should have ordered the pizza that costs Rs.125 and section A should have ordered the pizza that costs Rs.150. \n\nFarm fresh costs Rs.125.\n\nSection A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza. \n=> Peporoni costs Rs.200 and Margherita costs Rs.100.\n\nSection D did not order Vegetariana pizza on Monday. Therefore, Vegetariana should cost Rs.175 and Mexicana should cost Rs.150.\n\nMargherita - 100\nFarm fresh - 125\nMexicana  - 150\nVegetariana - 175\nPeperoni   - 200\n\nThe following table gives the amount spent by the sections on each day (Amount spent = cost of pizza * number of students in the section).\n\nSection E spent more than section D on 3 days (Tuesday, Wednesday, and Thursday) and hence, option C is the right answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 212057)\n\n**Passage:**\nA college has 5 sections - A, B, C, D, and E and the number of students studying in these 5 sections are 16, 20, 18, 10, and 12 respectively. From Monday to Friday in a particular week, each section hosts some event and hence, they order pizzas from the college canteen. Dharma, the canteen owner, supplies 5 different types of Pizzas - Farm fresh, Margherita, Peperoni, Mexicana, and Vegetariana and the cost of the pizzas are Rs.100, Rs.125, Rs.150, Rs.175, and Rs.200, in any order. Each section ordered exacty one variety of Pizza everyday and no 2 sections ordered the same variety of Pizza on the same day. The number of pizzas ordered is equal to the number of students studying in the section. Also, no section ordered the same variety of pizza for more than one day.\n\nFurther, the following information is known.\n\nSection A did not order the pizza that costs Rs.125 on Friday. Section C ordered Farm fresh on Friday. Section D did not order Vegetariana pizza on Monday. The amount spent by sections D and E on Monday was equal. The amount spent by section B on Thursday was equal to the amount spent by section D on Friday. The amount spent by section B on Tuesday is twice the amount spent by section D on Thursday. The amounts spent by B on Monday, and Wednesday were in the ratio 4:3. The difference between the prices of the Pizza ordered by section B on at least one pair of consecutive days was more than Rs.50. The amounts spent by sections C and E on Tuesday were equal. Section A ordered Peperoni after it ordered Margherita but before it ordered Farm fresh pizza.\n\nOn how many days did section E spend more than section D?\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1625",
+      "passage_text": "Answer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh",
+      "question_text": "What was the share of rural upper middle class households in total households in the year 2013-14?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "0.025%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "0.0025%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": ".0017%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": ".017%",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Rural upper middle class households in the year 2013-14 = 90-30= 60\nTotal households in 2013-14 is 250000 + 102000 = 352000\nSo the required share is $\\frac{60}{352000}*100$ = 0.017%\nHence option d is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/2016/07/29/2.PNG",
+      "full_markdown": "### Question (qid: 39801)\n\n**Passage:**\nAnswer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh\n\nWhat was the share of rural upper middle class households in total households in the year 2013-14?\n\n**Options:**\n- **A**. 0.025%\n- **B**. 0.0025%\n- **C**. .0017%\n- **D**. .017%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1626",
+      "passage_text": "Answer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh",
+      "question_text": "During the year 2014-15, which bank had predicted the number of upper middle-class people most accurately?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "SBI",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "PNB",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "BOI",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "UBI",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Actual upper middle-class population in 2014-15\n= 38000 + 10000 = 48000\nThe bank which has predicted it most accurately is PNB.",
+      "image_url": "https://cracku.in/media/uploads/2016/07/29/2.PNG",
+      "full_markdown": "### Question (qid: 39802)\n\n**Passage:**\nAnswer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh\n\nDuring the year 2014-15, which bank had predicted the number of upper middle-class people most accurately?\n\n**Options:**\n- **A**. SBI\n- **B**. PNB\n- **C**. BOI\n- **D**. UBI\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1627",
+      "passage_text": "Answer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh",
+      "question_text": "In the year 2014-15, if one household can have at most 1 bank account, then at least how many middle-class households did not have a bank account?(Assume that there are no banks other than the given 5 banks.)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "174400",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "110400",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "136400",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "158400",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Number of middle-class people who had bank accounts in the year 2014-15 = \n25600.\nTotal number of middle class households in the year 2014-15 = 1360*100 = 136000.\nSo the number of middle-class people who did not have a bank account = 136000-25600 = 110400",
+      "image_url": "https://cracku.in/media/uploads/2016/07/29/2.PNG",
+      "full_markdown": "### Question (qid: 39803)\n\n**Passage:**\nAnswer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh\n\nIn the year 2014-15, if one household can have at most 1 bank account, then at least how many middle-class households did not have a bank account?(Assume that there are no banks other than the given 5 banks.)\n\n**Options:**\n- **A**. 174400\n- **B**. 110400\n- **C**. 136400\n- **D**. 158400\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1628",
+      "passage_text": "Answer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh",
+      "question_text": "In which year is the ratio of middle-class households to the total number of people the greatest?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2012-13",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2013-14",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2014-15",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "It is same for two years.",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "The ratio of middle class households to the total number of people for each of the years is as follows.\n2012-13 = $\\frac{55000}{336000} $\n2013-14 = $\\frac{92000}{352000} $\n2014-15 = $\\frac{136000}{366000} $\nClearly we can see that the ratio is largest for the year 2014-15",
+      "image_url": "https://cracku.in/media/uploads/2016/07/29/2.PNG",
+      "full_markdown": "### Question (qid: 39804)\n\n**Passage:**\nAnswer the questions on the basis of the information given below\n\nTable 1 gives the distribution of the number of households by income and table 2 gives the details about the customers of some banks and some estimates given by different banks. The data given in table 2 is for the year 2014-2015\n\nMiddle class households 10 lakh < Income (pa) ≤ 20 lakh\n\nUpper middle class households 20 lakh < Income (pa) ≤ 50 lakh\n\nRich households Income (pa) > 50 lakh\n\nIn which year is the ratio of middle-class households to the total number of people the greatest?\n\n**Options:**\n- **A**. 2012-13\n- **B**. 2013-14\n- **C**. 2014-15\n- **D**. It is same for two years.\n\n**Correct Answer:** null"
     }
   ]
 }

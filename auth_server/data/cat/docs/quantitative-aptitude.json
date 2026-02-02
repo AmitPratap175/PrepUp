@@ -69925,6 +69925,306 @@
       "solution_text": "Given that, $AD\\bot\\ BC$\n\n$BE=3$\n\n$BC=5$\n\nUsing Pythagoras' theorem,\n\n$AD^2+BD^2=AB^2$ .....(1)\n\n$AD^2+DE^2=AE^2$......(2)\n\n$AD^2+DC^2=AC^2$......(3)\n\n(1) - (2) gives\n\n$BD^2+DE^2=AB^2-AE^2$\n\n$x^2-\\left(3-x\\right)^2=AB^2-AE^2$\n\n$AB^2-AE^2=6x-9$\n\n$AB^2-AE^2+6CD=6x-9+6\\left(5-x\\right)$       ($CD=\\left(5-x\\right)$)\n\n$AB^2-AE^2+6CD=6x-9+30-6x$\n\n$AB^2-AE^2+6CD=21$",
       "image_url": "",
       "full_markdown": "### Question (qid: 428884)\n\n**Passage:**\nABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of A B 2 − A E 2 + 6 C D AB^2 - AE^2 + 6CD A B 2 − A E 2 + 6 C D is:\n\n5\n\n10\n\n14\n\n18\n\n21\n\nABC is a triangle with BC=5. D is the foot of the perpendicular from A on BC.\n\nE is a point on CD such that BE=3. The value of $AB^2 - AE^2 + 6CD$ is:\n\n**Options:**\n- **A**. 5\n- **B**. 10\n- **C**. 14\n- **D**. 18\n- **E**. 21\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2229",
+      "passage_text": "The product of the distinct roots of ∣ x 2 − x − 6 ∣ = x + 2 \\mid x^2 - x - 6 \\mid = x + 2 ∣ x 2 − x − 6 ∣ = x + 2 is\n\n−16\n\n-4\n\n-24\n\n-8",
+      "question_text": "The product of the distinct roots of $\\mid x^2 - x - 6 \\mid = x + 2$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "−16",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "-4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "-24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "-8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "We have, $\\mid x^2 - x - 6 \\mid = x + 2$\n\n=> |(x-3)(x+2)|=x+2\n\nFor x<-2, (3-x)(-x-2)=x+2\n\n=> x-3=1   =>x=4 (Rejected as x<-2)\n\nFor -2$\\le\\ $x<3, (3-x)(x+2)=x+2    =>x=2,-2\n\nFor x$\\ge\\ $3, (x-3)(x+2)=x+2   =>x=4\n\nHence the product =4*-2*2=-16",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277654)\n\n**Passage:**\nThe product of the distinct roots of ∣ x 2 − x − 6 ∣ = x + 2 \\mid x^2 - x - 6 \\mid = x + 2 ∣ x 2 − x − 6 ∣ = x + 2 is\n\n−16\n\n-4\n\n-24\n\n-8\n\nThe product of the distinct roots of $\\mid x^2 - x - 6 \\mid = x + 2$ is\n\n**Options:**\n- **A**. −16\n- **B**. -4\n- **C**. -24\n- **D**. -8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2230",
+      "passage_text": "If a and b are integers such that 2 x 2 − a x + 2 > 0 2x^2−ax+2>0 2 x 2 − a x + 2 > 0 and x 2 − b x + 8 ≥ 0 x^2−bx+8≥0 x 2 − b x + 8 ≥ 0 for all real numbers x x x , then the largest possible value of 2 a − 6 b 2a−6b 2 a − 6 b is",
+      "question_text": "If a and b are integers such that $2x^2−ax+2>0$ and $x^2−bx+8≥0$ for all real numbers $x$, then the largest possible value of $2a−6b$ is",
+      "options": [],
+      "correct_option_data": "36",
+      "solution_text": "Let f(x) = $2x^2−ax+2$. We can see that f(x) is a quadratic function. \n\nFor, f(x) > 0, Discriminant (D) < 0\n\n$\\Rightarrow$ $(-a)^2-4*2*2<0$\n\n$\\Rightarrow$ (a-4)(a+4)<0\n\n$\\Rightarrow$ a $\\epsilon$ (-4, 4)\n\nTherefore, integer values that 'a' can take = {-3, -2, -1, 0, 1, 2, 3}\n\nLet g(x) = $x^2−bx+8$. We can see that g(x) is also a quadratic function. \n\nFor, g(x)≥0, Discriminant (D) $\\leq$ 0\n\n$\\Rightarrow$ $(-b)^2-4*8*1<0$\n\n$\\Rightarrow$ $(b-\\sqrt{32})(b+\\sqrt{32})<0$\n\n$\\Rightarrow$ b $\\epsilon$ (-$\\sqrt{32}$, $\\sqrt{32}$)\n\nTherefore, integer values that 'b' can take = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}\n\nWe have to find out the largest possible value of $2a−6b$. The largest possible value will occur when 'a' is maximum and 'b' is minimum. \n\na$_{max}$ = 3, b$_{min}$ = -5\n\nTherefore, the largest possible value of $2a−6b$ = 2*3 - 6*(-5) = 36.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177866)\n\n**Passage:**\nIf a and b are integers such that 2 x 2 − a x + 2 > 0 2x^2−ax+2>0 2 x 2 − a x + 2 > 0 and x 2 − b x + 8 ≥ 0 x^2−bx+8≥0 x 2 − b x + 8 ≥ 0 for all real numbers x x x , then the largest possible value of 2 a − 6 b 2a−6b 2 a − 6 b is\n\nIf a and b are integers such that $2x^2−ax+2>0$ and $x^2−bx+8≥0$ for all real numbers $x$, then the largest possible value of $2a−6b$ is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2231",
+      "passage_text": "If U 2 + ( U − 2 V − 1 ) 2 U^{2}+(U-2V-1)^{2} U 2 + ( U − 2 V − 1 ) 2 = − 4 V ( U + V ) 4V(U+V) 4 V ( U + V ) , then what is the value of U + 3 V U+3V U + 3 V ?\n\n0 0 0\n\n1 2 \\dfrac{1}{2} 2 1 ​\n\n− 1 4 \\dfrac{-1}{4} 4 − 1 ​\n\n1 4 \\dfrac{1}{4} 4 1 ​",
+      "question_text": "If $U^{2}+(U-2V-1)^{2}$= −$4V(U+V)$ , then what is the value of $U+3V$ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$0$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\dfrac{1}{2}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\dfrac{-1}{4}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\dfrac{1}{4}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given that $U^{2}+(U-2V-1)^{2}$= −$4V(U+V)$ \n\n$\\Rightarrow$ $U^{2}+(U-2V-1)(U-2V-1)$= −$4V(U+V)$ \n\n$\\Rightarrow$ $U^{2}+(U^2-2UV-U-2UV+4V^2+2V-U+2V+1)$ = −$4V(U+V)$ \n\n$\\Rightarrow$ $U^{2}+(U^2-4UV-2U+4V^2+4V+1)$ = −$4V(U+V)$ \n\n$\\Rightarrow$ $2U^2-4UV-2U+4V^2+4V+1=−4UV-4V^2$\n\n$\\Rightarrow$ $2U^2-2U+8V^2+4V+1=0$\n\n$\\Rightarrow$ $2[U^2-U+\\dfrac{1}{4}]+8[V^2+\\dfrac{V}{2}+\\dfrac{1}{16}]=0$\n\n$\\Rightarrow$ $2(U-\\dfrac{1}{2})^2+8(V+\\dfrac{1}{4})^2=0$\n\nSum of two square terms is zero i.e. individual square term is equal to zero. \n\n$U-\\dfrac{1}{2}$ = 0 and $V+\\dfrac{1}{4}$ = 0\n\nU = $\\dfrac{1}{2}$ and V = $-\\dfrac{1}{4}$\n\nTherefore, $U+3V$ = $\\dfrac{1}{2}$+$\\dfrac{-1*3}{4}$ = $\\dfrac{-1}{4}$. Hence, option C is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177765)\n\n**Passage:**\nIf U 2 + ( U − 2 V − 1 ) 2 U^{2}+(U-2V-1)^{2} U 2 + ( U − 2 V − 1 ) 2 = − 4 V ( U + V ) 4V(U+V) 4 V ( U + V ) , then what is the value of U + 3 V U+3V U + 3 V ?\n\n0 0 0\n\n1 2 \\dfrac{1}{2} 2 1 ​\n\n− 1 4 \\dfrac{-1}{4} 4 − 1 ​\n\n1 4 \\dfrac{1}{4} 4 1 ​\n\nIf $U^{2}+(U-2V-1)^{2}$= −$4V(U+V)$ , then what is the value of $U+3V$ ?\n\n**Options:**\n- **A**. $0$\n- **B**. $\\dfrac{1}{2}$\n- **C**. $\\dfrac{-1}{4}$\n- **D**. $\\dfrac{1}{4}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2232",
+      "passage_text": "If 5 x − 3 y = 13438 5^x - 3^y = 13438 5 x − 3 y = 1 3 4 3 8 and 5 x − 1 + 3 y + 1 = 9686 5^{x - 1} + 3^{y + 1} = 9686 5 x − 1 + 3 y + 1 = 9 6 8 6 , then x + y equals",
+      "question_text": "If $5^x - 3^y = 13438$ and $5^{x - 1} + 3^{y + 1} = 9686$, then x + y equals",
+      "options": [],
+      "correct_option_data": "13",
+      "solution_text": "$5^x - 3^y = 13438$ and $5^{x - 1} + 3^{y + 1} = 9686$\n\n$5^{x} + 3^{y}*15 = 9686*5$\n\n$5^{x} + 3^{y}*15 = 48430$\n\n16*$3^y$=34992\n\n$3^y$ = 2187\n\ny = 7\n\n$5^x$=13438+2187=15625\n\nx=6\n\nx+y = 13",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 276634)\n\n**Passage:**\nIf 5 x − 3 y = 13438 5^x - 3^y = 13438 5 x − 3 y = 1 3 4 3 8 and 5 x − 1 + 3 y + 1 = 9686 5^{x - 1} + 3^{y + 1} = 9686 5 x − 1 + 3 y + 1 = 9 6 8 6 , then x + y equals\n\nIf $5^x - 3^y = 13438$ and $5^{x - 1} + 3^{y + 1} = 9686$, then x + y equals\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2233",
+      "passage_text": "The number of solutions ( x , y , z ) (x, y, z) ( x , y , z ) to the equation x − y − z = 25 x - y - z = 25 x − y − z = 2 5 , where x, y, and z are positive integers such that x ≤ 40 , y ≤ 12 x\\leq40,y\\leq12 x ≤ 4 0 , y ≤ 1 2 , and z ≤ 12 z\\leq12 z ≤ 1 2 is\n\n101\n\n99\n\n87\n\n105",
+      "question_text": "The number of solutions $(x, y, z)$ to the equation $x - y - z = 25$, where x, y, and z are positive integers such that $x\\leq40,y\\leq12$, and $z\\leq12$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "101",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "99",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "87",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "105",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "x - y - z = 25 and $x\\leq40,y\\leq12$, $z\\leq12$\nIf x = 40 then y + z = 15. Now since both y and z are natural numbers less than 12, so y can range from 3 to 12 giving us a total of 10 solutions.Similarly, if x = 39, then y + z = 14. Now y can range from 2 to 12 giving us a total of 11 solutions.\nIf x = 38, then y + z = 13. Now y can range from 1 to 12 giving us a total of 12 solutions.\nIf x = 37 then y + z = 12 which will give 11 solutions.\nSimilarly on proceeding in the same manner the number of solutions will be 10, 9, 8, 7 and so on till 1.\nHence, required number of solutions will be (1 + 2 + 3 + 4 . . . . + 12) + 10 + 11\n= 12*13/2 + 21\n78 + 21 = 99",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 98100)\n\n**Passage:**\nThe number of solutions ( x , y , z ) (x, y, z) ( x , y , z ) to the equation x − y − z = 25 x - y - z = 25 x − y − z = 2 5 , where x, y, and z are positive integers such that x ≤ 40 , y ≤ 12 x\\leq40,y\\leq12 x ≤ 4 0 , y ≤ 1 2 , and z ≤ 12 z\\leq12 z ≤ 1 2 is\n\n101\n\n99\n\n87\n\n105\n\nThe number of solutions $(x, y, z)$ to the equation $x - y - z = 25$, where x, y, and z are positive integers such that $x\\leq40,y\\leq12$, and $z\\leq12$ is\n\n**Options:**\n- **A**. 101\n- **B**. 99\n- **C**. 87\n- **D**. 105\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2234",
+      "passage_text": "",
+      "question_text": "AB is the diameter of the given circle, while points C and D lie on the circumference as shown. If AB is 15 cm, AC is 12 cm and BD is 9 cm, find the area of the quadrilateral ACBD.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "54sq. cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "216sq. cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "162sq. cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "None of these",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Since ACBD is cyclic quadrilateral with diagonals as AB = 15 ad CD.\n\nSo area = $\\frac{1}{2} \\times (AB) \\times (CD)$                  eq.(1)\n\nTriangle ACB and ABD is right angled triangle\n\nLet's say angle CBA = $\\theta$\n\nso $CD = 2 \\times (9 sin\\theta)$  (Where  $sin\\theta$ = $\\frac{12}{15}$)\n\nCD = $\\frac{72}{5}$\n\nPutting values in eq. (1) , we will get area = 108 sq.cm.\n\nHence answer will be D)",
+      "image_url": "https://cracku.in/media/uploads/2015/08/17/untitled.png",
+      "full_markdown": "### Question (qid: 12083)\n\n**Passage:**\nAB is the diameter of the given circle, while points C and D lie on the circumference as shown. If AB is 15 cm, AC is 12 cm and BD is 9 cm, find the area of the quadrilateral ACBD.\n\n54sq. cm\n\n216sq. cm\n\n162sq. cm\n\nNone of these\n\nAB is the diameter of the given circle, while points C and D lie on the circumference as shown. If AB is 15 cm, AC is 12 cm and BD is 9 cm, find the area of the quadrilateral ACBD.\n\n**Options:**\n- **A**. 54sq. cm\n- **B**. 216sq. cm\n- **C**. 162sq. cm\n- **D**. None of these\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2235",
+      "passage_text": "In triangleABC, ∠B is a right angle, AC = 6 cm, and D is the mid-point of AC. The length of BD is\n\n4cm\n\n6 cm\n\n3cm\n\n3.5cm",
+      "question_text": "In triangleABC, ∠B is a right angle, AC = 6 cm, and D is the mid-point of AC. \nThe length of BD is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6 cm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3cm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3.5cm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "A circle is circumscribed to triangle ABC.\n\nFor this circle D will be centre of circle, and AD , DC , BD will radius of this circle.\n\nHence AD=BD=DC=3 cm",
+      "image_url": "https://cracku.in/media/uploads/2015/08/17/untitled.png",
+      "full_markdown": "### Question (qid: 11895)\n\n**Passage:**\nIn triangleABC, ∠B is a right angle, AC = 6 cm, and D is the mid-point of AC. The length of BD is\n\n4cm\n\n6 cm\n\n3cm\n\n3.5cm\n\nIn triangleABC, ∠B is a right angle, AC = 6 cm, and D is the mid-point of AC. \nThe length of BD is\n\n**Options:**\n- **A**. 4cm\n- **B**. 6 cm\n- **C**. 3cm\n- **D**. 3.5cm\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2236",
+      "passage_text": "",
+      "question_text": "If ABCD is a square and BCE is an equilateral triangle, what is the measure of ∠DEC?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "15°",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "20°",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "45°",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "According to given diagram, as triangle BCE is equilateral CE=BE=DC\n\nHence angle CDE = angle CED\n\nSo angle DEC = $\\frac{180-150}{2} = 15$",
+      "image_url": "https://cracku.in/media/uploads/2015/08/11/untitled_3_wsoA32i.png",
+      "full_markdown": "### Question (qid: 11883)\n\n**Passage:**\nIf ABCD is a square and BCE is an equilateral triangle, what is the measure of ∠DEC?\n\n15°\n\n30°\n\n20°\n\n45°\n\nIf ABCD is a square and BCE is an equilateral triangle, what is the measure of ∠DEC?\n\n**Options:**\n- **A**. 15°\n- **B**. 30°\n- **C**. 20°\n- **D**. 45°\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2237",
+      "passage_text": "",
+      "question_text": "A one rupee coin is placed on a table. The maximum number of similar one rupee coins which can be placed on the table, around it, with each one of them touching it and only two others is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Considering the centre coin which is denoted by  C1.\n\nThe surrounding coins are of equal radius as the centre coin. Since each coin is placed next to each other and considering the total number of coins = n.\n\nThe pairs formed by the coins which touch the consecutive coins is given by :\n\n(1, 2) , (2, 3) ........... (n, 1)\n\nThe triangles formed by joining the centres of all the consecutive circles at the centre of C1 = 360 degrees.\n\nIf we join centres of 2 outer circles with the centre circle, it will make an equilateral triangle.\n\nA single pair forms 60 degrees as it forms an equilateral triangle. Hence $\\frac{360}{n}=\\ 60$\n\nn = 6",
+      "image_url": "https://cracku.in/media/uploads/2015/08/11/untitled_3_wsoA32i.png",
+      "full_markdown": "### Question (qid: 11581)\n\n**Passage:**\nA one rupee coin is placed on a table. The maximum number of similar one rupee coins which can be placed on the table, around it, with each one of them touching it and only two others is\n\n8\n\n6\n\n10\n\n4\n\nA one rupee coin is placed on a table. The maximum number of similar one rupee coins which can be placed on the table, around it, with each one of them touching it and only two others is\n\n**Options:**\n- **A**. 8\n- **B**. 6\n- **C**. 10\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2238",
+      "passage_text": "",
+      "question_text": "Let the consecutive vertices of a square S be A,B,C &D. Let E,F & G be the mid-points of the sides AB, BC & AD respectively of the square. Then the ratio of the area of the quadrilateral EFDG to that of the square S is nearest to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1/8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the side of the square be 1 cm\n\nSo, area of triangle AGE = 1/2 * 1/2 * 1/2 = 1/8\n\nSimilarly, area of triangle EBF = 1/8\n\nArea of triangle DFC = 1/2 * 1 * 1/2 = 1/4\n\nArea of the square = 1*1 = 1\n\nSo, area of the quadrilateral = 1 - (1/8 + 1/8 + 1/4) = 1 - 1/2 = 1/2\n\nOption a) is the correct answer.",
+      "image_url": "https://cracku.in/media/uploads/2015/08/11/untitled_3_wsoA32i.png",
+      "full_markdown": "### Question (qid: 11562)\n\n**Passage:**\nLet the consecutive vertices of a square S be A,B,C &D. Let E,F & G be the mid-points of the sides AB, BC & AD respectively of the square. Then the ratio of the area of the quadrilateral EFDG to that of the square S is nearest to\n\n1/2\n\n1/3\n\n1/4\n\n1/8\n\nLet the consecutive vertices of a square S be A,B,C &D. Let E,F & G be the mid-points of the sides AB, BC & AD respectively of the square. Then the ratio of the area of the quadrilateral EFDG to that of the square S is nearest to\n\n**Options:**\n- **A**. 1/2\n- **B**. 1/3\n- **C**. 1/4\n- **D**. 1/8\n\n**Correct Answer:** null"
     }
   ]
 }

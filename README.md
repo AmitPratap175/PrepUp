@@ -28,8 +28,9 @@ PrepUp is more than just a question bank. It's a suite of powerful tools designe
     *   **Sectional Tests:** Focus on specific sections (e.g., Verbal Ability) to build strength in weaker areas.
     *   **Practice Quizzes:** Short, topic-wise quizzes for quick revision and concept reinforcement.
 
-#### 2. Personalized Dashboard & Analytics
+#### 2. Personalized Dashboard & Advanced Analytics
 *   **Progress Tracking:** Visualize your performance over time with intuitive charts and graphs. Track your scores, accuracy, and time management skills across different subjects.
+*   **Topic-Wise Breakdown:** Go beyond overall scores. See detailed accuracy and time-spent analytics for specific topics (e.g., Algebra vs. Geometry), helping you identify precise areas for improvement.
 *   **Attempt History:** Review every question from your past attempts, analyze your answers, and understand detailed solutions.
 *   **Performance Metrics:** Get insights into your strengths and weaknesses, helping you to focus your study efforts where they are needed most.
 
@@ -43,7 +44,32 @@ Our integrated chatbot is a sophisticated study companion powered by Google's Ge
 
 #### 4. Customization and Accessibility
 *   **User Settings:** Adjust the theme (light/dark mode), text size, and other display settings to create a comfortable study environment.
-*   **Responsive Design:** The platform is fully responsive and works seamlessly on desktops, tablets, and mobile phones, so you can study anytime, anywhere.
+*   **Responsive Design:** The platform is fully responsive and works seamlessly on desktops, tablets, and mobile phones.
+
+#### 5. AI-Powered Essay Assistant (MBA Focus)
+*   **Contextual Thesaurus:** Enhance your writing with AI-suggested synonyms that fit the specific context of your essay.
+*   **Automated Grading:** Get instant feedback on your essays with scoring based on grammar, coherence, and relevance.
+*   **Revision Modules:** Specialized tools to help you rewrite and polsh specific sections of your essay.
+*   **XAT Essay Interviewer:** A unique AI agent that simulates an interview based on your essay topic, helping you prepare for the defense.
+
+#### 6. Specialized Exam Modules
+*   **UPSC Preparation:**
+    *   **Dedicated Interface:** A distraction-free reading and quiz interface tailored for UPSC aspirants.
+    *   **Smart Bookmarks:** enhanced bookmarking system to organize vast amounts of study material.
+    *   **Mistake Review:** An intelligent system that automatically filters your incorrect answers from past sessions and compiles them into a custom "Revision Test". This allows you to specifically target your weak points without re-taking the entire exam.
+    *   **Revision Schedule:** (In Development) Adaptive scheduling of review sessions based on spaced repetition principles.
+*   **XAT General Knowledge:**
+    *   **Automated Content:** The system auto-generates static and current affairs GK questions to keep material fresh.
+    *   **Targeted Practice:** Specific modules for the unique GK section of the XAT exam.
+
+#### 7. Gamification & Study Management
+*   **Leaderboards:** Compete with peers on Global and Test-specific leaderboards. Rankings are calculated based on score accuracy and speed.
+*   **Badges & Achievements:** A robust achievement system with over 10 unique badges to earn:
+    *   **Streak Master:** Maintain a 30-day study streak.
+    *   **Early Bird:** consistently study in the early morning hours.
+    *   **High Scorer:** Score above 90% in mock tests.
+    *   **Champion:** Reach the #1 spot on any leaderboard.
+*   **Daily Targets:** Set and track structured daily goals (e.g., "Solve 20 Quant questions," "Read 1 Editorial") to maintain discipline and momentum.
 
 ---
 
@@ -57,6 +83,7 @@ PrepUp is built on a modern, decoupled architecture, with a clear separation bet
     *   Processing user answers and calculating scores.
     *   Managing user-specific data like bookmarks, saved words, and test progress.
     *   Interfacing with the PostgreSQL database.
+    *   **Asynchronous Task Queue (Celery):** Handles background processes like leaderboard recalculation, AI report generation, and daily maintenance tasks to ensure the main application remains responsive.
 
 *   **Frontend (React + Vite):** The frontend is a dynamic single-page application (SPA) built with React and TypeScript, located in the `frontend/` directory. It is responsible for:
     *   Rendering the user interface and all interactive components.
@@ -79,6 +106,7 @@ This guide will walk you through setting up the project on your local machine fo
 #### Prerequisites
 *   [Docker](https://www.docker.com/get-started)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
+*   (Optional) Redis (for Celery tasks, usually handled by Docker Compose)
 
 #### Setup and Execution
 1.  **Clone the Repository:**
