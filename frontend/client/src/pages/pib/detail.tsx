@@ -40,8 +40,10 @@ function MainsQuestionsCard({ questions, releaseId }: { questions: any[], releas
         setLoadingIndex(idx);
         try {
             const res = await apiRequest("POST", `/api/pib/start-essay/${releaseId}/`, { question_index: idx });
-            const data = await res.json();
-            setLocation(`/xat-essay/${data.essay_id}`);
+            if (res.ok) {
+                const data = await res.json();
+                setLocation(`/mains-answer/${data.essay_id}`);
+            }
         } catch (e) {
             console.error(e);
         } finally {

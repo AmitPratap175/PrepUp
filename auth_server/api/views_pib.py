@@ -94,3 +94,54 @@ class ScrapePIBView(APIView):
             import traceback
             traceback.print_exc()
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+class PIBQuestionsListView(APIView):
+    def get(self, request):
+        """
+        Returns a list of all PIB Mains questions with status for the current user.
+        """
+        from .models import PIBRelease, Essay
+        
+        # Optimize fetch: Get all PIB releases with mains_questions
+        releases = PIBRelease.objects.exclude(mains_questions__isnull=True).exclude(mains_questions=[])
+        
+        # Get user essays for status check (if authenticated)
+        user_essay_map = {}
+        if request.user.is_authenticated:
+            # Fetch essays that look like PIB essays (title starts with "Answer: PIB:")
+            # Or better, filter by topic title if we can rely on that.
+            # But we need to match specific questions.
+            # Topic title format: "PIB: {release.title[:60]}... - Q{question_index + 1}"
+            
+            # Let's fetch all essays for the user and process in python for flexibility
+            # Optimally we would have a better link, but this works for now.
+            user_essays = Essay.objects.filter(user=request.user, topic__title__startswith="PIB:")
+            for essay in user_essays:
+                if essay.topic and essay.topic.title:
+                    user_essay_map[essay.topic.title] = essay.status
+
+        all_questions = []
+        for release in releases:
+            if not release.mains_questions:
+                continue
+                
+            for idx, q_data in enumerate(release.mains_questions):
+                # Reconstruct the deterministic topic title to check status
+                # Must match logic in PIBStartEssayView
+                topic_title = f"PIB: {release.title[:60]}... - Q{idx + 1}"
+                
+                status = user_essay_map.get(topic_title, 'pending')
+                
+                all_questions.append({
+                    "release_id": str(release.id),
+                    "release_title": release.title,
+                    "release_date": release.date,
+                    "question_index": idx,
+                    "question": q_data.get('question', ''),
+                    "answer": q_data.get('answer', ''),
+                    "status": status
+                })
+        
+        # Sort by date desc
+        all_questions.sort(key=lambda x: x['release_date'], reverse=True)
+        
+        return Response({"questions": all_questions})

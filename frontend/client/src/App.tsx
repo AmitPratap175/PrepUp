@@ -62,6 +62,7 @@ import UPSCReviewMistakesPage from "@/pages/upsc/review-mistakes";
 import PIBListPage from "@/pages/pib/list";
 import PIBDetailPage from "@/pages/pib/detail";
 import PIBQuizPage from "@/pages/pib/quiz";
+import MainsAnswerPage from "@/pages/mains-answer";
 
 /**
  * Defines the main routing configuration for the application.
@@ -131,6 +132,7 @@ function Router() {
       <Route path="/upsc/pib" component={PIBListPage} />
       <Route path="/upsc/pib/:id" component={PIBDetailPage} />
       <Route path="/upsc/pib/:id/quiz" component={PIBQuizPage} />
+      <Route path="/mains-answer/:essayId?" component={MainsAnswerPage} />
       <Route path="/quiz-generator" component={QuizGeneratorPage} />
       <Route path="/generated-quiz/:id" component={GeneratedQuizViewerPage} />
       <Route path="/chapterwise-quiz" component={ChapterwiseQuizPage} />

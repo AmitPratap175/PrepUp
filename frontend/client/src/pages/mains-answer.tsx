@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { AppHeader } from "@/components/app-header";
+import ReactMarkdown from "react-markdown";
 import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
@@ -38,13 +39,13 @@ const DOMAINS = [
     { value: "current_affairs", label: "Current Affairs" },
 ];
 
-export default function XatEssayPage() {
+export default function MainsAnswerPage() {
     const { toast } = useToast();
     const [location, setLocation] = useLocation();
-    const [, params] = useRoute("/xat-essay/:essayId?");
+    const [, params] = useRoute("/mains-answer/:essayId?");
     const essayId = params?.essayId;
 
-    const [selectedDomain, setSelectedDomain] = useState<string>("philosophy");
+    const [selectedDomain, setSelectedDomain] = useState<string>("current_affairs");
     const [activeTab, setActiveTab] = useState<"topics" | "questions" | "write" | "review" | "history">("topics");
     const [selectedTopic, setSelectedTopic] = useState<EssayTopic | null>(null);
     const [selectedXATQuestion, setSelectedXATQuestion] = useState<XATEssayQuestion | null>(null);
@@ -204,10 +205,10 @@ export default function XatEssayPage() {
                     <div>
 
                         <h1 className="text-3xl font-bold tracking-tight">
-                            XAT Essay Prep
+                            Mains Answer Writing
                         </h1>
                         <p className="text-muted-foreground mt-1">
-                            Practice essay writing with AI-generated topics and get instant feedback.
+                            Practice answer writing for UPSC Mains with AI review.
                         </p>
                     </div>
 
@@ -526,13 +527,17 @@ export default function XatEssayPage() {
                                 <CardContent className="space-y-4">
                                     <div>
                                         <h4 className="font-semibold mb-1">Context</h4>
-                                        <p className="text-sm text-muted-foreground">{selectedTopic.context}</p>
+                                        <div className="text-sm text-muted-foreground prose dark:prose-invert max-w-none">
+                                            <ReactMarkdown>{selectedTopic.context}</ReactMarkdown>
+                                        </div>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold mb-1">Key Points to Address</h4>
                                         <ul className="list-disc list-inside text-sm text-muted-foreground">
                                             {selectedTopic.key_points.map((point, i) => (
-                                                <li key={i}>{point}</li>
+                                                <li key={i} className="prose dark:prose-invert max-w-none">
+                                                    <ReactMarkdown>{point}</ReactMarkdown>
+                                                </li>
                                             ))}
                                         </ul>
                                     </div>

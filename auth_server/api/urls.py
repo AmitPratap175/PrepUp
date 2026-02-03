@@ -74,5 +74,6 @@ urlpatterns = [
     path('pib/releases/', views_pib.PIBReleaseList.as_view(), name='pib-releases-list'),
     path('pib/releases/<uuid:id>/', views_pib.PIBReleaseDetail.as_view(), name='pib-releases-detail'),
     path('pib/start-essay/<uuid:id>/', views_pib.PIBStartEssayView.as_view(), name='pib-start-essay'),
+    path('pib/questions/', views_pib.PIBQuestionsListView.as_view(), name='pib-questions-list'),
     path('pib/scrape/', views_pib.ScrapePIBView.as_view(), name='pib-scrape'),
 ]
