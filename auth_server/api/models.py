@@ -354,3 +354,26 @@ class UserChapterProgress(models.Model):
 
     def __str__(self):
         return f"{self.user.email} - {self.chapter_id} - {'Completed' if self.is_completed else 'Incomplete'}"
+
+
+class PIBRelease(models.Model):
+    """
+    Stores PIB releases scraped from pib.gov.in.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    prid = models.CharField(max_length=50, unique=True, help_text="Release ID from PIB (PRID query param)")
+    title = models.CharField(max_length=500)
+    ministry = models.CharField(max_length=255, null=True, blank=True)
+    date = models.DateTimeField(null=True, blank=True)
+    content = models.TextField()
+    summary = models.TextField(null=True, blank=True)
+    quiz_data = models.JSONField(null=True, blank=True, help_text="Generated quiz questions")
+    mains_questions = models.JSONField(null=True, blank=True, help_text="Generated Mains Q&A")
+    original_url = models.URLField(max_length=1000)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date', '-created_at']
+
+    def __str__(self):
+        return f"{self.title} ({self.prid})"

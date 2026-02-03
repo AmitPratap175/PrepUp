@@ -4997,5 +4997,590 @@
         "type": "mcq"
       }
     ]
+  },
+  {
+    "title": "President Quiz (MLaxmikant_President)",
+    "questions": [
+      {
+        "question": "Consider the following statements regarding the Electoral College for the Presidential election:\n\n1. It includes the elected members of both Houses of Parliament.\n2. It includes the nominated members of the Legislative Assemblies of Delhi and Puducherry.\n3. It includes the elected members of the Legislative Councils in bicameral states.\n\nWhich of the statements given above is/are correct?",
+        "answerOptions": [
+          {
+            "text": "1 only",
+            "isCorrect": true,
+            "rationale": "Only elected members of the Parliament and State Legislative Assemblies (including Delhi and Puducherry) participate; nominated members and members of Legislative Councils are excluded."
+          },
+          {
+            "text": "1 and 2 only",
+            "isCorrect": false,
+            "rationale": "Nominated members of any house or assembly are strictly excluded from the Electoral College."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "Members of Legislative Councils, whether elected or nominated, have no role in the election of the President."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "The exclusion criteria for the Electoral College are very specific regarding nominated members and Legislative Councils."
+          }
+        ],
+        "hint": "Focus on the distinction between 'elected' and 'nominated' members, and the specific types of state-level houses included.",
+        "id": "cw-mlaxmikant-president-1",
+        "qid": "cw-mlaxmikant-president-1",
+        "type": "mcq"
+      },
+      {
+        "question": "In the context of the value of votes in a Presidential election, consider the following formula:\n\nValue of the vote of an MLA = $\\frac{\\text{Total population of state}}{\\text{Total number of elected members in the state legislative assembly}} \\times \\frac{1}{X}$\n\nWhat does '$X$' represent in this constitutional formula?",
+        "answerOptions": [
+          {
+            "text": "1000",
+            "isCorrect": true,
+            "rationale": "The formula specifically uses a multiple of one thousand in the quotient to determine the scale of representation."
+          },
+          {
+            "text": "100",
+            "isCorrect": false,
+            "rationale": "Using one hundred would result in much larger vote values, which is not the scale prescribed by the Constitution."
+          },
+          {
+            "text": "500",
+            "isCorrect": false,
+            "rationale": "The quotient is divided by one thousand, not five hundred, to maintain parity and manageable figures."
+          },
+          {
+            "text": "Total number of MPs",
+            "isCorrect": false,
+            "rationale": "The number of MPs is used in a different formula to determine the value of an MP's vote, not an MLA's vote."
+          }
+        ],
+        "hint": "Recall the specific multiple used to obtain the quotient for state-level representation.",
+        "id": "cw-mlaxmikant-president-2",
+        "qid": "cw-mlaxmikant-president-2",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following statements regarding the impeachment of the President of India:\n\n1. The charges for impeachment can be initiated by either House of Parliament.\n2. The resolution must be passed by a majority of two-thirds of the members present and voting.\n3. Nominated members of either House of Parliament can participate in the impeachment process.\n\nWhich of the statements given above are correct?",
+        "answerOptions": [
+          {
+            "text": "1 and 3 only",
+            "isCorrect": true,
+            "rationale": "Impeachment requires a majority of two-thirds of the 'total membership' of the House, and unlike the election, nominated members do participate."
+          },
+          {
+            "text": "1 and 2 only",
+            "isCorrect": false,
+            "rationale": "UPSC often swaps 'total membership' with 'present and voting'; the latter is an incorrect requirement for impeachment."
+          },
+          {
+            "text": "2 and 3 only",
+            "isCorrect": false,
+            "rationale": "The majority requirement is based on the total strength of the house, not just those present."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "Statement 2 is incorrect because it uses the 'present and voting' threshold instead of 'total membership'."
+          }
+        ],
+        "hint": "Pay close attention to the specific type of majority required and the participation of nominated members compared to the election process.",
+        "id": "cw-mlaxmikant-president-3",
+        "qid": "cw-mlaxmikant-president-3",
+        "type": "mcq"
+      },
+      {
+        "question": "Arrange the following Presidents of India in the correct chronological order of their first election to the office:\n\n1. Giani Zail Singh\n2. V.V. Giri\n3. Dr. Zakir Husain\n4. Fakhruddin Ali Ahmed",
+        "answerOptions": [
+          {
+            "text": "3-2-4-1",
+            "isCorrect": true,
+            "rationale": "Dr. Zakir Husain was elected in 1967, V.V. Giri in 1969, Fakhruddin Ali Ahmed in 1974, and Giani Zail Singh in 1982."
+          },
+          {
+            "text": "2-3-4-1",
+            "isCorrect": false,
+            "rationale": "This order incorrectly places V.V. Giri before Dr. Zakir Husain."
+          },
+          {
+            "text": "3-2-1-4",
+            "isCorrect": false,
+            "rationale": "This order incorrectly places Giani Zail Singh before Fakhruddin Ali Ahmed."
+          },
+          {
+            "text": "4-3-2-1",
+            "isCorrect": false,
+            "rationale": "This order reverses most of the historical sequence of these specific terms."
+          }
+        ],
+        "hint": "One of these individuals was the victorious candidate in the famous 1969 election, while another served during the Emergency (1975-77).",
+        "id": "cw-mlaxmikant-president-4",
+        "qid": "cw-mlaxmikant-president-4",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following statements regarding the ordinance-making power of the President:\n\n1. An ordinance can be issued only when both Houses of Parliament are not in session.\n2. The President's satisfaction in issuing an ordinance is beyond judicial review as per the current constitutional status.\n3. An ordinance cannot be used to amend the Constitution.\n\nWhich of the statements given above is/are correct?",
+        "answerOptions": [
+          {
+            "text": "3 only",
+            "isCorrect": true,
+            "rationale": "Ordinances can be issued if even one House is not in session; the 44th Amendment made the President's satisfaction justiciable, but ordinances cannot amend the Constitution."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "An ordinance can be issued if only one house is in session because a law requires both houses; statement 1 is too restrictive."
+          },
+          {
+            "text": "2 and 3 only",
+            "isCorrect": false,
+            "rationale": "The 44th Amendment (1978) deleted the provision that made the President's satisfaction final, making it subject to judicial review."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "Statements 1 and 2 contain common misconceptions regarding the legislative necessity and the scope of judicial review."
+          }
+        ],
+        "hint": "Check the validity of an ordinance when only one House is in session and look for the impact of the $44^{th}$ Constitutional Amendment Act.",
+        "id": "cw-mlaxmikant-president-5",
+        "qid": "cw-mlaxmikant-president-5",
+        "type": "mcq"
+      },
+      {
+        "question": "Which of the following describes the 'Commutation' power of the President under Article 72?",
+        "answerOptions": [
+          {
+            "text": "Substitution of one form of punishment for a lighter form.",
+            "isCorrect": true,
+            "rationale": "Commutation specifically refers to changing the nature of the punishment to a lighter category, such as death sentence to rigorous imprisonment."
+          },
+          {
+            "text": "Reducing the period of sentence without changing its character.",
+            "isCorrect": false,
+            "rationale": "This describes 'Remission', where the duration is shortened but the type of punishment remains the same."
+          },
+          {
+            "text": "Awarding a lesser sentence due to some special fact like pregnancy.",
+            "isCorrect": false,
+            "rationale": "This describes 'Respite', which is triggered by specific physical or situational conditions of the convict."
+          },
+          {
+            "text": "Stay of the execution of a sentence for a temporary period.",
+            "isCorrect": false,
+            "rationale": "This describes 'Reprieve', usually used to provide time for the convict to seek a pardon."
+          }
+        ],
+        "hint": "Think of a process where the 'nature' of the penalty is modified to be less severe.",
+        "id": "cw-mlaxmikant-president-6",
+        "qid": "cw-mlaxmikant-president-6",
+        "type": "mcq"
+      },
+      {
+        "question": "Match the following sets of Veto powers with their correct descriptions:\n\nSet A (Veto Type):\nI. Absolute Veto\nII. Suspensive Veto\nIII. Pocket Veto\n\nSet B (Description):\n1. Taking no action on the bill passed by the legislature.\n2. Withholding of assent to the bill passed by the legislature.\n3. Overridden by the legislature with an ordinary majority.\n\nSelect the correct code:",
+        "answerOptions": [
+          {
+            "text": "I-2, II-3, III-1",
+            "isCorrect": true,
+            "rationale": "Absolute Veto means withholding assent, Suspensive Veto involves returning the bill for reconsideration (overridden by ordinary majority), and Pocket Veto is inaction."
+          },
+          {
+            "text": "I-1, II-2, III-3",
+            "isCorrect": false,
+            "rationale": "This incorrectly matches Absolute Veto with inaction and Pocket Veto with ordinary majority overrides."
+          },
+          {
+            "text": "I-2, II-1, III-3",
+            "isCorrect": false,
+            "rationale": "This incorrectly suggests that a Suspensive Veto is characterized by taking no action."
+          },
+          {
+            "text": "I-3, II-2, III-1",
+            "isCorrect": false,
+            "rationale": "Absolute Veto is not overridden by an ordinary majority; that is the characteristic of the Suspensive Veto."
+          }
+        ],
+        "hint": "Focus on identifying which veto allows the President to simply 'keep the bill in their pocket' indefinitely.",
+        "id": "cw-mlaxmikant-president-7",
+        "qid": "cw-mlaxmikant-president-7",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following statements regarding the President's power over state legislation:\n\n1. If a bill is returned by the President for reconsideration of the state legislature and passed again, the President is bound to give his assent.\n2. The Governor must reserve a bill for the President's consideration if it endangers the position of the State High Court.\n3. The President can exercise pocket veto in respect of state legislation.\n\nWhich of the statements given above are correct?",
+        "answerOptions": [
+          {
+            "text": "2 and 3 only",
+            "isCorrect": true,
+            "rationale": "Unlike Central legislation, the President is NOT bound to give assent to a state bill even if it is passed a second time by the state legislature."
+          },
+          {
+            "text": "1 and 2 only",
+            "isCorrect": false,
+            "rationale": "Statement 1 is a common trap; the President's power over state bills is more absolute than over Parliament's bills."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "The requirement for mandatory assent upon re-passage only applies to Central bills under Article 111, not state bills under Article 201."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "One of these statements incorrectly assumes that the state legislature can override a Presidential veto."
+          }
+        ],
+        "hint": "Compare the President's authority over a bill passed by Parliament versus a bill passed by a State Legislature that has been reserved for their consideration.",
+        "id": "cw-mlaxmikant-president-8",
+        "qid": "cw-mlaxmikant-president-8",
+        "type": "mcq"
+      },
+      {
+        "question": "Regarding the qualifications for the election of the President, which of the following statements is INCORRECT?",
+        "answerOptions": [
+          {
+            "text": "He/she should be qualified for election as a member of the Rajya Sabha.",
+            "isCorrect": true,
+            "rationale": "The Constitution requires the candidate to be qualified for election as a member of the Lok Sabha, not the Rajya Sabha."
+          },
+          {
+            "text": "He/she should have completed 35 years of age.",
+            "isCorrect": false,
+            "rationale": "The age requirement is indeed 35 years as per Article 58."
+          },
+          {
+            "text": "He/she should be a citizen of India.",
+            "isCorrect": false,
+            "rationale": "Citizenship is a fundamental requirement for the office."
+          },
+          {
+            "text": "A minister of the Union is not deemed to hold an office of profit for this purpose.",
+            "isCorrect": false,
+            "rationale": "The Constitution explicitly exempts Ministers, Governors, and the VP from the 'office of profit' disqualification for the candidacy."
+          }
+        ],
+        "hint": "The President is the head of the state, but their qualifications are linked specifically to one of the two houses of Parliament.",
+        "id": "cw-mlaxmikant-president-9",
+        "qid": "cw-mlaxmikant-president-9",
+        "type": "mcq"
+      },
+      {
+        "question": "If a vacancy occurs in the office of the President due to expiration of the term, and the election of the new President is delayed, who discharges the functions of the President?",
+        "answerOptions": [
+          {
+            "text": "The outgoing President continues to hold office.",
+            "isCorrect": true,
+            "rationale": "To prevent an 'interregnum', the Constitution provides that the outgoing President stays until the successor assumes charge; the VP does not act in this specific case."
+          },
+          {
+            "text": "The Vice-President of India.",
+            "isCorrect": false,
+            "rationale": "The VP only acts as President if the vacancy is due to resignation, removal, death, or disability, not the end of a 5-year term."
+          },
+          {
+            "text": "The Chief Justice of India.",
+            "isCorrect": false,
+            "rationale": "The CJI only steps in if both the President and Vice-President offices are vacant simultaneously due to reasons other than term expiry."
+          },
+          {
+            "text": "The Speaker of the Lok Sabha.",
+            "isCorrect": false,
+            "rationale": "The Speaker is not in the line of succession for the functions of the President."
+          }
+        ],
+        "hint": "The Constitution aims to avoid an 'interregnum' and has a specific rule for when a 5-year term ends before a successor is ready.",
+        "id": "cw-mlaxmikant-president-10",
+        "qid": "cw-mlaxmikant-president-10",
+        "type": "mcq"
+      },
+      {
+        "question": "Which of the following bills REQUIRES the prior recommendation of the President before introduction in Parliament?\n\n1. A bill for the alteration of boundaries of states.\n2. A Money Bill.\n3. A Constitutional Amendment Bill.\n4. A bill involving expenditure from the Consolidated Fund of India.\n\nSelect the correct code:",
+        "answerOptions": [
+          {
+            "text": "1, 2 and 4 only",
+            "isCorrect": true,
+            "rationale": "Constitutional Amendment bills do not require prior recommendation, though other financial and federal-structure bills do."
+          },
+          {
+            "text": "1, 2 and 3 only",
+            "isCorrect": false,
+            "rationale": "Constitutional Amendment bills can be introduced without the President's prior permission."
+          },
+          {
+            "text": "2 and 4 only",
+            "isCorrect": false,
+            "rationale": "Alteration of state boundaries also requires prior recommendation under the legislative powers of the President."
+          },
+          {
+            "text": "1, 2, 3 and 4",
+            "isCorrect": false,
+            "rationale": "Including Constitutional Amendment bills is incorrect as they follow a different introductory procedure."
+          }
+        ],
+        "hint": "One of these bills is specifically governed by Article 368 and does not need the President's 'green light' to be introduced.",
+        "id": "cw-mlaxmikant-president-11",
+        "qid": "cw-mlaxmikant-president-11",
+        "type": "mcq"
+      },
+      {
+        "question": "The 'Electoral Quota' in a Presidential election is determined by which of the following mathematical expressions?",
+        "answerOptions": [
+          {
+            "text": "$\\left( \\frac{\\text{Total number of valid votes polled}}{1 + 1} \\right) + 1$",
+            "isCorrect": true,
+            "rationale": "The formula ensures an absolute majority by dividing total valid votes by 2 (number of candidates to be elected + 1) and adding 1 to the quotient."
+          },
+          {
+            "text": "$\\frac{\\text{Total number of valid votes polled}}{2} + 1$",
+            "isCorrect": false,
+            "rationale": "While mathematically similar to the result, the formal constitutional expression specifically uses the $(1+1)$ format to denote (seats + 1)."
+          },
+          {
+            "text": "$\\frac{\\text{Total population of all states}}{\\text{Total number of elected MPs}}$",
+            "isCorrect": false,
+            "rationale": "This formula relates to the value of an MP's vote, not the final quota needed to win the election."
+          },
+          {
+            "text": "$\\left( \\frac{\\text{Total value of votes of all MLAs}}{2} \\right) + 1$",
+            "isCorrect": false,
+            "rationale": "The quota must consider all valid votes in the electoral college, including those from MPs."
+          }
+        ],
+        "hint": "The formula involves dividing the total valid votes by the number of vacancies plus one, and then adding one to that result.",
+        "id": "cw-mlaxmikant-president-12",
+        "qid": "cw-mlaxmikant-president-12",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following statements regarding the President's pardoning power:\n\n1. The President can pardon a death sentence, but a Governor cannot.\n2. The President is required to give an oral hearing to the petitioner for mercy.\n3. The exercise of this power by the President is not subject to judicial review under any circumstances.\n\nWhich of the statements given above is/are correct?",
+        "answerOptions": [
+          {
+            "text": "1 only",
+            "isCorrect": true,
+            "rationale": "The Governor cannot pardon a death sentence (only suspend/commute); there is no right to an oral hearing; and the power is subject to limited judicial review (irrationality/mala fide)."
+          },
+          {
+            "text": "1 and 2 only",
+            "isCorrect": false,
+            "rationale": "The Supreme Court in the Kehar Singh case explicitly stated that a petitioner has no right to an oral hearing by the President."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "Judicial review is applicable if the decision is found to be discriminatory, irrational, or mala fide."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "Statements 2 and 3 contradict the legal principles laid down by the Supreme Court regarding Article 72."
+          }
+        ],
+        "hint": "Think about the Supreme Court's ruling in the Kehar Singh case and the distinction between Presidential and Gubernatorial powers over the ultimate penalty.",
+        "id": "cw-mlaxmikant-president-13",
+        "qid": "cw-mlaxmikant-president-13",
+        "type": "mcq"
+      },
+      {
+        "question": "Who among the following administers the oath of office to the President of India?",
+        "answerOptions": [
+          {
+            "text": "The Chief Justice of India",
+            "isCorrect": true,
+            "rationale": "Article 60 mandates that the oath be administered by the CJI or, in their absence, the senior-most judge of the Supreme Court."
+          },
+          {
+            "text": "The outgoing President",
+            "isCorrect": false,
+            "rationale": "While the outgoing President welcomes the new one, they do not have the constitutional authority to administer the oath."
+          },
+          {
+            "text": "The Vice-President of India",
+            "isCorrect": false,
+            "rationale": "The Vice-President's oath is administered by the President, but not vice versa."
+          },
+          {
+            "text": "The Speaker of the Lok Sabha",
+            "isCorrect": false,
+            "rationale": "The Speaker does not have a role in the inauguration or oath-taking of the President."
+          }
+        ],
+        "hint": "This individual is the highest-ranking member of the third branch of the government.",
+        "id": "cw-mlaxmikant-president-14",
+        "qid": "cw-mlaxmikant-president-14",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following statements regarding the constitutional position of the President:\n\n1. The 42nd Amendment Act made the President bound by the advice of the council of ministers.\n2. The 44th Amendment Act authorized the President to return the advice for reconsideration once.\n3. The President has constitutional discretion in the appointment of the Prime Minister when no party has a clear majority.\n\nWhich of the statements given above is/are correct?",
+        "answerOptions": [
+          {
+            "text": "1 and 2 only",
+            "isCorrect": true,
+            "rationale": "Statement 3 is tricky; the President has 'situational' discretion, not 'constitutional' discretion, as the Constitution does not explicitly provide for discretionary acts like it does for Governors."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "The distinction between situational and constitutional discretion is vital; the President only has the former."
+          },
+          {
+            "text": "2 and 3 only",
+            "isCorrect": false,
+            "rationale": "The 42nd Amendment was the primary act that legally codified the binding nature of the advice."
+          },
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": false,
+            "rationale": "UPSC often tests the technical difference between 'Constitutional discretion' and 'Situational discretion'."
+          }
+        ],
+        "hint": "Check the exact terminology used to describe the President's ability to act without ministerial advice in specific scenarios.",
+        "id": "cw-mlaxmikant-president-15",
+        "qid": "cw-mlaxmikant-president-15",
+        "type": "mcq"
+      },
+      {
+        "question": "The President's 'Pocket Veto' is considered 'bigger' than that of the American President because:",
+        "answerOptions": [
+          {
+            "text": "The Indian Constitution does not prescribe any time-limit for the President to take action on a bill.",
+            "isCorrect": true,
+            "rationale": "In the US, the President must return a bill within 10 days, whereas the Indian President can keep it pending indefinitely."
+          },
+          {
+            "text": "The Indian President can reject any bill passed by the Parliament.",
+            "isCorrect": false,
+            "rationale": "The President cannot reject a Constitutional Amendment bill; this is not why the 'pocket' is considered bigger."
+          },
+          {
+            "text": "The Indian President's veto cannot be overridden by the Parliament.",
+            "isCorrect": false,
+            "rationale": "Parliament can override a Suspensive Veto with an ordinary majority; the 'pocket' aspect refers specifically to the timeline."
+          },
+          {
+            "text": "The Indian President can exercise this veto even for Money Bills.",
+            "isCorrect": false,
+            "rationale": "The President is generally expected to give assent to Money Bills as they are introduced with their recommendation."
+          }
+        ],
+        "hint": "Look for a difference in the specific 'time-limit' constraints between the two nations.",
+        "id": "cw-mlaxmikant-president-16",
+        "qid": "cw-mlaxmikant-president-16",
+        "type": "mcq"
+      },
+      {
+        "question": "Consider the following events and identify the one that led to the exercise of 'Absolute Veto' by a President of India:",
+        "answerOptions": [
+          {
+            "text": "PEPSU Appropriation Bill in 1954",
+            "isCorrect": true,
+            "rationale": "Dr. Rajendra Prasad withheld assent because the President's Rule in PEPSU was revoked by the time the bill reached him."
+          },
+          {
+            "text": "Indian Post Office (Amendment) Bill in 1986",
+            "isCorrect": false,
+            "rationale": "This was the famous instance of the 'Pocket Veto' exercised by Giani Zail Singh."
+          },
+          {
+            "text": "National Front Government dropping a bill in 1989",
+            "isCorrect": false,
+            "rationale": "This refers to the aftermath of a pocket vetoed bill being sent back for reconsideration, not the absolute veto itself."
+          },
+          {
+            "text": "The 24th Constitutional Amendment Act",
+            "isCorrect": false,
+            "rationale": "This act actually removed the veto power regarding constitutional amendments."
+          }
+        ],
+        "hint": "This event involved a state under President's Rule and was the first recorded use of this specific veto type.",
+        "id": "cw-mlaxmikant-president-17",
+        "qid": "cw-mlaxmikant-president-17",
+        "type": "mcq"
+      },
+      {
+        "question": "Which Constitutional Amendment Act made it obligatory for the President to give assent to a Constitutional Amendment Bill?",
+        "answerOptions": [
+          {
+            "text": "24th Constitutional Amendment Act of 1971",
+            "isCorrect": true,
+            "rationale": "This specific amendment took away the President's veto power concerning changes to the Constitution."
+          },
+          {
+            "text": "42nd Constitutional Amendment Act of 1976",
+            "isCorrect": false,
+            "rationale": "This amendment focused on making the advice of the Council of Ministers binding, not specifically on the assent to amendment bills."
+          },
+          {
+            "text": "44th Constitutional Amendment Act of 1978",
+            "isCorrect": false,
+            "rationale": "This amendment provided for a one-time reconsideration of advice but did not initiate the rule on amendment bill assent."
+          },
+          {
+            "text": "104th Constitutional Amendment Act of 2019",
+            "isCorrect": false,
+            "rationale": "This act dealt with the removal of the Anglo-Indian nomination provision."
+          }
+        ],
+        "hint": "This amendment was passed in the early 1970s and drastically curtailed the President's discretion regarding Art 368.",
+        "id": "cw-mlaxmikant-president-18",
+        "qid": "cw-mlaxmikant-president-18",
+        "type": "mcq"
+      },
+      {
+        "question": "In the election of the President, if the Legislative Assembly of a State is dissolved, what is the status of its members regarding the vote?",
+        "answerOptions": [
+          {
+            "text": "They cease to be qualified to vote in the presidential election.",
+            "isCorrect": true,
+            "rationale": "Dissolution of an assembly disqualifies its members from voting, even if fresh elections have not yet been held."
+          },
+          {
+            "text": "They can still vote if fresh elections have not been held.",
+            "isCorrect": false,
+            "rationale": "The Constitution is clear that membership in a currently functioning house is a prerequisite for voting."
+          },
+          {
+            "text": "They are represented by the Governor of that state.",
+            "isCorrect": false,
+            "rationale": "The Governor has no role in the Electoral College; it consists only of elected representatives."
+          },
+          {
+            "text": "Their votes are cast by the members of Parliament from that state.",
+            "isCorrect": false,
+            "rationale": "There is no provision for proxy voting or transfer of voting rights in the Electoral College."
+          }
+        ],
+        "hint": "Consider the impact of 'ceasing to be a member' of a legislative body on the right to participate in the Electoral College.",
+        "id": "cw-mlaxmikant-president-19",
+        "qid": "cw-mlaxmikant-president-19",
+        "type": "mcq"
+      },
+      {
+        "question": "Regarding the financial powers of the President, consider the following:\n\n1. No demand for a grant can be made except on his/her recommendation.\n2. The President constitutes a Finance Commission every five years.\n3. The President can make advances out of the Contingency Fund of India to meet unforeseen expenditure.\n\nWhich of the statements given above are correct?",
+        "answerOptions": [
+          {
+            "text": "1, 2 and 3",
+            "isCorrect": true,
+            "rationale": "All three are core financial functions/powers of the President as the nominal head of the Union's finances."
+          },
+          {
+            "text": "1 and 2 only",
+            "isCorrect": false,
+            "rationale": "This omits the President's role in managing the Contingency Fund of India."
+          },
+          {
+            "text": "2 and 3 only",
+            "isCorrect": false,
+            "rationale": "This omits the critical requirement for recommendations for demands for grants."
+          },
+          {
+            "text": "1 and 3 only",
+            "isCorrect": false,
+            "rationale": "This omits the President's duty to constitute the Finance Commission under Article 280."
+          }
+        ],
+        "hint": "These powers range from the budget process to institutional appointments and emergency funding.",
+        "id": "cw-mlaxmikant-president-20",
+        "qid": "cw-mlaxmikant-president-20",
+        "type": "mcq"
+      }
+    ]
   }
 ]

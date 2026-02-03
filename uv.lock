@@ -2030,6 +2030,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "adrf" },
     { name = "asgiref" },
+    { name = "beautifulsoup4" },
     { name = "celery" },
     { name = "crawl4ai" },
     { name = "deepagents" },
@@ -2071,6 +2072,7 @@ dependencies = [
 requires-dist = [
     { name = "adrf", specifier = ">=0.1.12" },
     { name = "asgiref", specifier = ">=3.8.1" },
+    { name = "beautifulsoup4", specifier = ">=4.13.5" },
     { name = "celery", specifier = ">=5.5.3" },
     { name = "crawl4ai", specifier = ">=0.7.4" },
     { name = "deepagents", specifier = ">=0.2.4" },

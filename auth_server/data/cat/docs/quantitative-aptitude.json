@@ -70225,6 +70225,162 @@
       "solution_text": "Let the side of the square be 1 cm\n\nSo, area of triangle AGE = 1/2 * 1/2 * 1/2 = 1/8\n\nSimilarly, area of triangle EBF = 1/8\n\nArea of triangle DFC = 1/2 * 1 * 1/2 = 1/4\n\nArea of the square = 1*1 = 1\n\nSo, area of the quadrilateral = 1 - (1/8 + 1/8 + 1/4) = 1 - 1/2 = 1/2\n\nOption a) is the correct answer.",
       "image_url": "https://cracku.in/media/uploads/2015/08/11/untitled_3_wsoA32i.png",
       "full_markdown": "### Question (qid: 11562)\n\n**Passage:**\nLet the consecutive vertices of a square S be A,B,C &D. Let E,F & G be the mid-points of the sides AB, BC & AD respectively of the square. Then the ratio of the area of the quadrilateral EFDG to that of the square S is nearest to\n\n1/2\n\n1/3\n\n1/4\n\n1/8\n\nLet the consecutive vertices of a square S be A,B,C &D. Let E,F & G be the mid-points of the sides AB, BC & AD respectively of the square. Then the ratio of the area of the quadrilateral EFDG to that of the square S is nearest to\n\n**Options:**\n- **A**. 1/2\n- **B**. 1/3\n- **C**. 1/4\n- **D**. 1/8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2239",
+      "passage_text": "",
+      "question_text": "Ramesh and Ganesh can together complete a work in 16 days. After seven days of working together, Ramesh got sick and his eﬃciency fell by 30%. As a result, they completed the work in 17 days instead of 16 days. If Ganesh had worked alone after Ramesh got sick, in how many days would he have completed the remaining work?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "14.5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "13.5",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let 'R' and 'G' be the amount of work that Ramesh and Ganesh can complete in a day. \n\nIt is given that they can together complete a work in 16 days. Hence, total amount of work = 16(R+G) ... (1)\n\nFor first 7 days both of them worked together. From 8th day, Ramesh worked at 70% of his original efficiency whereas Ganesh worked at his original efficiency. It took them 17 days to finish the same work. i.e. Ramesh worked at 70% of his original efficiency for 10 days.\n\n$\\Rightarrow$ 16(R+G) = 7(R+G)+10(0.7R+G)\n\n$\\Rightarrow$ 16(R+G) = 14R+17G\n\n$\\Rightarrow$ R = 0.5G ... (2) \n\nTotal amount of work left when Ramesh got sick = 16(R+G) - 7(R+G) = 9(R+G) = 9(0.5+G) = 13.5G\n\nTherefore, time taken by Ganesh to complete the remaining work = $\\dfrac{13.5G}{G}$ = 13.5 days.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177870)\n\n**Passage:**\nRamesh and Ganesh can together complete a work in 16 days. After seven days of working together, Ramesh got sick and his eﬃciency fell by 30%. As a result, they completed the work in 17 days instead of 16 days. If Ganesh had worked alone after Ramesh got sick, in how many days would he have completed the remaining work?\n\n14.5\n\n11\n\n13.5\n\n12\n\nRamesh and Ganesh can together complete a work in 16 days. After seven days of working together, Ramesh got sick and his eﬃciency fell by 30%. As a result, they completed the work in 17 days instead of 16 days. If Ganesh had worked alone after Ramesh got sick, in how many days would he have completed the remaining work?\n\n**Options:**\n- **A**. 14.5\n- **B**. 11\n- **C**. 13.5\n- **D**. 12\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2240",
+      "passage_text": "",
+      "question_text": "A tank is emptied everyday at a fixed time point. Immediately thereafter, either pump A or pump B or both start working until the tank is full. On Monday, A alone completed ﬁlling the tank at 8 pm. On Tuesday, B alone completed filling the tank at 6 pm. On Wednesday, A alone worked till 5 pm, and then B worked alone from 5 pm to 7 pm, to fill the tank. At what time was the tank ﬁlled on Thursday if both pumps were used simultaneously all along?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4:48 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4:12 pm",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "4:24 pm",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4:36 pm",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let 't' pm be the time when the tank is emptied everyday. Let 'a' and 'b' be the liters/hr filled by pump A and pump B respectively.\n\nOn Monday, A alone completed ﬁlling the tank at 8 pm. Therefore, we can say that pump A worked for (8 - t) hours. Hence, the volume of the tank = a*(8 - t) liters. \n\nSimilarly, on Tuesday, B alone completed ﬁlling the tank at 6 pm. Therefore, we can say that pump B worked for (6 - t) hours. Hence, the volume of the tank = b*(6 - t) liters. \n\nOn Wednesday, A alone worked till 5 pm, and then B worked alone from 5 pm to 7 pm, to fill the tank. Therefore, we can say that pump A worked for (5 - t) hours  and pump B worked for 2 hours. Hence, the volume of the tank = a*(5 - t)+2b liters. \n\nWe can say that  a*(8 - t) =  b*(6 - t) =  a*(5 - t) + 2b\n\na*(8 - t) = a*(5 - t) + 2b\n\n$\\Rightarrow$ 3a = 2b   ... (1)\n\na*(8 - t) =  b*(6 - t)\n\nUsing equation (1), we can say that \n\n$a*(8-t)=\\dfrac{3a}{2}\\times(6-t)$\n\n$t = 2$\n\nTherefore, we can say that the tank gets emptied at 2 pm daily. We can see that A takes 6 hours and pump B takes 4 hours alone. \n\nHence, working together both can fill the tank in = \\dfrac{6*4}{6+4} = 2.4 hours or 2 hours and 24 minutes. \n\nThe pumps started filling the tank at 2:00 pm. Hence, the tank will be filled by 4:24 pm.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177855)\n\n**Passage:**\nA tank is emptied everyday at a fixed time point. Immediately thereafter, either pump A or pump B or both start working until the tank is full. On Monday, A alone completed ﬁlling the tank at 8 pm. On Tuesday, B alone completed filling the tank at 6 pm. On Wednesday, A alone worked till 5 pm, and then B worked alone from 5 pm to 7 pm, to fill the tank. At what time was the tank ﬁlled on Thursday if both pumps were used simultaneously all along?\n\n4:48 pm\n\n4:12 pm\n\n4:24 pm\n\n4:36 pm\n\nA tank is emptied everyday at a fixed time point. Immediately thereafter, either pump A or pump B or both start working until the tank is full. On Monday, A alone completed ﬁlling the tank at 8 pm. On Tuesday, B alone completed filling the tank at 6 pm. On Wednesday, A alone worked till 5 pm, and then B worked alone from 5 pm to 7 pm, to fill the tank. At what time was the tank ﬁlled on Thursday if both pumps were used simultaneously all along?\n\n**Options:**\n- **A**. 4:48 pm\n- **B**. 4:12 pm\n- **C**. 4:24 pm\n- **D**. 4:36 pm\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2241",
+      "passage_text": "",
+      "question_text": "Gautam and Suhani, working together, can finish a job in 20 days. If Gautam does only 60% of his usual work on a day, Suhani must do 150% of her usual work on that day to exactly make up for it. Then, the number of days required by the faster worker to complete the job working alone is",
+      "options": [],
+      "correct_option_data": "36",
+      "solution_text": "Let 'g' and 's' be the efficiencies of Gautam and Suhani. Let W is the total amount of work.\n\n=> g + s = W/20 (1 day work) ----(1)\n\nAlso Gautam doing only 60% => 3g/5 and Suhani doing 150% => 3s/2\n\n=> 3g/5 + 3s/2 = W/20 (1 day work)\n\n=> $g+s=\\dfrac{3g}{5}+\\dfrac{3s}{2}$\n\n=> $\\dfrac{s}{g}=\\dfrac{4}{5}$ => Gautam is the more efficient person.\n\nNow, from the 1st equation\n\n=> $g+\\dfrac{4g}{5}=\\dfrac{W}{20}$\n\n=> $\\dfrac{9}{5}g=\\dfrac{W}{20}$\n\n=> $g=\\dfrac{W}{36}$\n\n=> Gautam takes 36 days to finish the complete work.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449540)\n\n**Passage:**\nGautam and Suhani, working together, can finish a job in 20 days. If Gautam does only 60% of his usual work on a day, Suhani must do 150% of her usual work on that day to exactly make up for it. Then, the number of days required by the faster worker to complete the job working alone is\n\nGautam and Suhani, working together, can finish a job in 20 days. If Gautam does only 60% of his usual work on a day, Suhani must do 150% of her usual work on that day to exactly make up for it. Then, the number of days required by the faster worker to complete the job working alone is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2242",
+      "passage_text": "",
+      "question_text": "Kim’s wristwatch always shows the correct time, including ‘am’ and ‘pm’. Jim’s watch is identical to Kim’s watch in all aspects except its pace, which is slower than the pace of Kim’s watch. At 12 noon on January 1st, Jim sets his watch to the correct time, but an hour later, it shows 12:57 pm. At 12 noon on the next June 1st, Jim resets his watch to the correct time.\n\nOn how many instances between, and including 12 noon on the two dates mentioned, do Jim’s and Kim’s watches show the exact same time, including the ‘am’ and the ‘pm’?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "data_option": "5",
+          "label": "E",
+          "option_text": "17",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The pace of Jim's watch is slower by 3 minutes in comparison with Kim's watch for every one hour. The difference increases as the hours pass by.\n\nThe time and \"am\" and \"pm\" of the watch coincide when the difference between the two clocks reduces to 24 hours. The two clocks display the same time including am and pm.\n\nFor a difference of 24 hours, the clock needs to lag by 1440 minutes.\n\nFor every one hour, the clock lags by 3 minutes. Hence in order to have a difference of 1440 minutes, it takes $\\frac{1440}{3}=\\ 480\\ hours$. This is equivalent to 20 days of time.\n\nHence for every twenty days, they display the same time.\n\nIn the period of Jan 1 and June 1, there are 150 days which includes 7, 20-day intervals. Along with the 7 times once on Jan 1st and once on June 1st, they display the same time.\n\nA total of 9 times.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 387534)\n\n**Passage:**\nKim’s wristwatch always shows the correct time, including ‘am’ and ‘pm’. Jim’s watch is identical to Kim’s watch in all aspects except its pace, which is slower than the pace of Kim’s watch. At 12 noon on January 1st, Jim sets his watch to the correct time, but an hour later, it shows 12:57 pm. At 12 noon on the next June 1st, Jim resets his watch to the correct time.\n\nOn how many instances between, and including 12 noon on the two dates mentioned, do Jim’s and Kim’s watches show the exact same time, including the ‘am’ and the ‘pm’?\n\n10\n\n7\n\n15\n\n9\n\n17\n\nKim’s wristwatch always shows the correct time, including ‘am’ and ‘pm’. Jim’s watch is identical to Kim’s watch in all aspects except its pace, which is slower than the pace of Kim’s watch. At 12 noon on January 1st, Jim sets his watch to the correct time, but an hour later, it shows 12:57 pm. At 12 noon on the next June 1st, Jim resets his watch to the correct time.\n\nOn how many instances between, and including 12 noon on the two dates mentioned, do Jim’s and Kim’s watches show the exact same time, including the ‘am’ and the ‘pm’?\n\n**Options:**\n- **A**. 10\n- **B**. 7\n- **C**. 15\n- **D**. 9\n- **E**. 17\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2243",
+      "passage_text": "Brishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of x x x km till then, where x x x is a whole number and is palindromic, i.e., x x x remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was\n\n110\n\n90\n\n100\n\n80",
+      "question_text": "Brishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of $x$ km till then, where $x$ is a whole number and is palindromic, i.e., $x$ remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "80",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given the total number of kilometres travelled, including the trip = is 26862 Km, and the duration of the trip is 8 hrs.\n\nIf avg. speed of the car during the trip is 's' => the km travelled till just before the trip is 26862 - 8s, which should also be a palindrome.\n\n=> From the options if s = 110 => The reading will be 26862 - 110*8 = 25982 (Not a palindrome)\n\n=> If s = 100 => The reading will be 26862 - 100*8 = 26062 => It is a palindrome.\n\n=> s = 100 is the correct option.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449493)\n\n**Passage:**\nBrishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of x x x km till then, where x x x is a whole number and is palindromic, i.e., x x x remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was\n\n110\n\n90\n\n100\n\n80\n\nBrishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of $x$ km till then, where $x$ is a whole number and is palindromic, i.e., $x$ remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was\n\n**Options:**\n- **A**. 110\n- **B**. 90\n- **C**. 100\n- **D**. 80\n\n**Correct Answer:** null"
     }
   ]
 }

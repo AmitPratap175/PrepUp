@@ -15,8 +15,8 @@ class QuizDifficulty(Enum):
     MEDIUM = 2
     HARD = 3
 
-DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/Slides/New")
-QUIZ_FILE = Path("/home/dspratap/Downloads/PrepUp/auth_server/data/quiz_mag.json")
+DATA_DIR = Path("/home/dspratap/Downloads/PrepUp/UPSC/Slides")
+QUIZ_FILE = Path("/home/dspratap/Downloads/PrepUp/auth_server/data/quiz.json")
 STORAGE_PATH = "/home/dspratap/.notebooklm/storage_state.json"
 
 PROMPT = """
@@ -51,6 +51,13 @@ async def generate_quiz_from_pdf(client, pdf_path):
         # Add source
         print("Uploading source...")
         await client.sources.add_file(nb.id, pdf_path, wait=True)
+
+        # Identify Subject
+        print("Identifying subject...")
+        subject_prompt = "Classify this document into one of the following subjects: Polity, Geography, History, Economy, Environment, Science, Current Affairs, or Others. Return ONLY the subject name in all lower case."
+        chat_result = await client.chat.ask(nb.id, subject_prompt)
+        subject = chat_result.answer.strip()
+        print(f"Identified subject: {subject}")
         
         # Generate Quiz
         print("Generating quiz...")
@@ -67,11 +74,11 @@ async def generate_quiz_from_pdf(client, pdf_path):
         await client.artifacts.download_quiz(nb.id, str(temp_file), output_format="json")
         print(f"Quiz saved to {temp_file}")
         
-        return temp_file
+        return temp_file, subject
         
     except Exception as e:
         print(f"Error processing {pdf_path.name}: {e}")
-        return None
+        return None, None
     finally:
         # Cleanup notebook if needed, or leave it for history. 
         # Deleting might be safer to avoid clutter if run frequently.
@@ -122,12 +129,16 @@ async def main():
 
     async with await NotebookLMClient.from_storage(STORAGE_PATH) as client:
         for i, pdf in enumerate(pdfs):
-            temp_file = await generate_quiz_from_pdf(client, pdf)
+            temp_file, subject = await generate_quiz_from_pdf(client, pdf)
             
             if temp_file and temp_file.exists():
                 try:
                     with open(temp_file, 'r') as f:
                         quiz_content = json.load(f)
+                    
+                    # Inject identified subject
+                    if subject:
+                        quiz_content["subject"] = subject
                     
                     # Ensure title matches PDF if generic
                     if "title" not in quiz_content or not quiz_content["title"]:

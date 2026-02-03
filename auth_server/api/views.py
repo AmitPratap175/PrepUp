@@ -1332,6 +1332,7 @@ class EssayListCreateView(APIView):
             essays_data.append({
                 'id': str(essay.id),
                 'title': essay.title,
+                'content': essay.content,
                 'topic_id': str(essay.topic.id) if essay.topic else None,
                 'topic_title': essay.topic.title if essay.topic else None,
                 'word_count': essay.word_count,

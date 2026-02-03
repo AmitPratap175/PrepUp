@@ -74,6 +74,7 @@ const navigation = [
       { title: "Bookmarks", href: "/upsc/bookmarks" },
       { title: "PDF Quiz Generator", href: "/quiz-generator" },
       { title: "Chapterwise Quiz", href: "/chapterwise-quiz" },
+      { title: "PIB Releases", href: "/upsc/pib" },
     ]
   },
   { title: "Leaderboard", href: "/leaderboard" },

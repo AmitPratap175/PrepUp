@@ -11,7 +11,9 @@ from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateVie
 from .quiz_generator_view import QuizGeneratorView
 from .chapterwise_view import ChapterwiseQuizView
 from .chapter_progress_view import ChapterProgressView
+from .chapter_progress_view import ChapterProgressView
 from .pdf_export_view import ChapterPDFExportView
+from . import views_pib
 
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
@@ -69,4 +71,8 @@ urlpatterns = [
     path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),
     path('chapterwise-quiz/export-pdf/', ChapterPDFExportView.as_view(), name='chapter-export-pdf'),
     path('chapter-progress/', ChapterProgressView.as_view(), name='chapter-progress'),
+    path('pib/releases/', views_pib.PIBReleaseList.as_view(), name='pib-releases-list'),
+    path('pib/releases/<uuid:id>/', views_pib.PIBReleaseDetail.as_view(), name='pib-releases-detail'),
+    path('pib/start-essay/<uuid:id>/', views_pib.PIBStartEssayView.as_view(), name='pib-start-essay'),
+    path('pib/scrape/', views_pib.ScrapePIBView.as_view(), name='pib-scrape'),
 ]

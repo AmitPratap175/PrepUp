@@ -19,7 +19,7 @@ import {
     XATEssayQuestion,
     Essay
 } from "@/services/essay";
-import { useLocation } from "wouter";
+import { useLocation, useRoute } from "wouter";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 // Froala Editor
@@ -41,6 +41,9 @@ const DOMAINS = [
 export default function XatEssayPage() {
     const { toast } = useToast();
     const [location, setLocation] = useLocation();
+    const [, params] = useRoute("/xat-essay/:essayId?");
+    const essayId = params?.essayId;
+
     const [selectedDomain, setSelectedDomain] = useState<string>("philosophy");
     const [activeTab, setActiveTab] = useState<"topics" | "questions" | "write" | "review" | "history">("topics");
     const [selectedTopic, setSelectedTopic] = useState<EssayTopic | null>(null);
@@ -57,6 +60,16 @@ export default function XatEssayPage() {
     const createEssayMutation = useCreateEssay();
     const updateEssayMutation = useUpdateEssay();
     const submitEssayMutation = useSubmitEssay();
+
+    // Auto-load essay from URL
+    useEffect(() => {
+        if (essayId && essays && !isLoadingEssays) {
+            const found = essays.find(e => e.id === essayId);
+            if (found && found.id !== currentEssay?.id) {
+                handleContinueEssay(found);
+            }
+        }
+    }, [essayId, essays, isLoadingEssays]);
 
     // Review query (only enabled if we have a submitted essay)
     const { data: review, isLoading: isLoadingReview } = useEssayReview(currentEssay?.id || "");
@@ -189,9 +202,16 @@ export default function XatEssayPage() {
             <main className="flex-1 container mx-auto py-8 px-4">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight">XAT Essay Prep</h1>
+
+                        <h1 className="text-3xl font-bold tracking-tight">
+                            {currentEssay?.title?.includes("PIB:") || selectedTopic?.title?.includes("PIB:")
+                                ? "Mains Answer Writing"
+                                : "XAT Essay Prep"}
+                        </h1>
                         <p className="text-muted-foreground mt-1">
-                            Practice essay writing with AI-generated topics and get instant feedback.
+                            {currentEssay?.title?.includes("PIB:") || selectedTopic?.title?.includes("PIB:")
+                                ? "Practice answer writing for UPSC Mains with AI review."
+                                : "Practice essay writing with AI-generated topics and get instant feedback."}
                         </p>
                     </div>
 

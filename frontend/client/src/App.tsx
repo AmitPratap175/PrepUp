@@ -59,15 +59,18 @@ import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 import UPSCYearWisePage from "@/pages/upsc/pyq-years";
 import UPSCReviewMistakesPage from "@/pages/upsc/review-mistakes";
+import PIBListPage from "@/pages/pib/list";
+import PIBDetailPage from "@/pages/pib/detail";
+import PIBQuizPage from "@/pages/pib/quiz";
 
 /**
  * Defines the main routing configuration for the application.
  *
  * This component uses `wouter` to map URL paths to their corresponding page components,
  * covering all major sections of the application from static pages to dynamic quiz
- * and test interfaces.
+  * and test interfaces.
  *
- * @returns {JSX.Element} The router switch component.
+ * @returns { JSX.Element } The router switch component.
  */
 function Router() {
   return (
@@ -107,7 +110,7 @@ function Router() {
       <Route path="/analytics" component={AnalyticsDashboardPage} />
       <Route path="/badges" component={BadgesPage} />
       <Route path="/badges" component={BadgesPage} />
-      <Route path="/xat-essay" component={XatEssayPage} />
+      <Route path="/xat-essay/:essayId?" component={XatEssayPage} />
       <Route path="/daily-targets" component={DailyTargetsPage} />
       <Route path="/daily-targets/settings" component={DailyTargetsSettingsPage} />
       <Route path="/daily-targets/test/:subject" component={DailyTargetTestInterface} />
@@ -125,6 +128,9 @@ function Router() {
       <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
       <Route path="/upsc/revision" component={UPSCRevisionPage} />
       <Route path="/upsc/bookmarks" component={UPSCBookmarksPage} />
+      <Route path="/upsc/pib" component={PIBListPage} />
+      <Route path="/upsc/pib/:id" component={PIBDetailPage} />
+      <Route path="/upsc/pib/:id/quiz" component={PIBQuizPage} />
       <Route path="/quiz-generator" component={QuizGeneratorPage} />
       <Route path="/generated-quiz/:id" component={GeneratedQuizViewerPage} />
       <Route path="/chapterwise-quiz" component={ChapterwiseQuizPage} />
