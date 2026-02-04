@@ -52,7 +52,13 @@ class PIBStartEssayView(APIView):
         if not request.user.is_authenticated:
             return Response({"error": "Authentication required"}, status=status.HTTP_401_UNAUTHORIZED)
             
-        existing_essay = Essay.objects.filter(user=request.user, topic=topic).first()
+        force_new = request.data.get('force_new', False)
+        
+        # If force_new is False, check for existing draft
+        existing_essay = None
+        if not force_new:
+            # We want to find the latest essay for this topic
+            existing_essay = Essay.objects.filter(user=request.user, topic=topic).order_by('-created_at').first()
         
         if existing_essay:
             essay = existing_essay

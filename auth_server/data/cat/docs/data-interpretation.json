@@ -46192,6 +46192,131 @@
       "solution_text": "It is given that student appears in all rounds. Hence he/she will get at least one question correct in each round so as to move to the next round.\n\nHence, the 2nd least minimum score is 5.",
       "image_url": "",
       "full_markdown": "### Question (qid: 433884)\n\n**Passage:**\nThe CEE (Common Entrance Exam) in Philippines has 4 levels. A candidate clears a level and proceeds to the next level only if he gets at least one question correct in that level. Candidates have to attempt all the questions in each level. Each level consists of 3 questions but the number of questions in subsequent levels can be increased based on the performance of a candidate in this level as follows:\n\nEach question is awarded 3 marks if answered correctly and -1 mark if answered incorrectly. 4 friends - A, B, C, D who took the CEE are comparing their experiences.\n\nWhat is the second least total score, given that he/she gets atleast one question correct in all the rounds?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1634",
+      "passage_text": "A city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.",
+      "question_text": "How many natives do not like any of the three magazines? (-1 if cannot be determined)",
+      "options": [],
+      "correct_option_data": "3000",
+      "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who do not like any magazine = 80000 - 77000 = 3000\n\nThe answer is 3000.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 14672)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nHow many natives do not like any of the three magazines? (-1 if cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1635",
+      "passage_text": "A city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.",
+      "question_text": "Find the minimum number of natives who like at least one of the three FMCG brands?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "48000",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "52000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "55000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who like all FMCG brands is 30000.\n\nThe number of natives who like P&G = The number of natives who like IT + 42% of those who like TW but not IT = 37000 + 0.42(25000) = 47500\n\nThe number of natives who like HUL = 0.375(42000) + 0.5(47000) = 39250\n\nThe number of natives who like RB = 39250\n\nS + D + T  + N = 80000 ...... (1)\n\nS + 2D + 3T = 47500+2(39250) = 126000 ...... (2)\n\nS + 2D = 36000\n\nTo find the minimum number of natives who like at least one of the three FMCG brands, we need to maximise the number of natives who do not like any FMCG brand, i.e. maximise N.\n\n(2)-(1) -> D + 2T - N = 46000\n\nN - D = 14000\n\nN = 14000 + D\n\nMaximum value D can take is 18000\n\nTherefore, maximum value N can take is 32000\n\nThe minimum number of natives who like at least one of the three FMCG brands = 80000 - 32000 = 48000\n\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 14673)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nFind the minimum number of natives who like at least one of the three FMCG brands?\n\n**Options:**\n- **A**. 48000\n- **B**. 52000\n- **C**. 55000\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1636",
+      "passage_text": "A city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.",
+      "question_text": "What is the minimum number of natives who do not like any FMCG company?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "10000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14000",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who like all FMCG brands is 30000.\n\nThe number of natives who like P&G = The number of natives who like IT + 42% of those who like TW but not IT = 37000 + 0.42(25000) = 47500\n\nThe number of natives who like HUL = 0.375(42000) + 0.5(47000) = 39250\n\nThe number of natives who like RB = 39250\n\nS + D + T + N = 80000 ...... (1)\n\nS + 2D + 3T = 47500+2(39250) = 126000 ...... (2)\n\nS + 2D = 36000\n\n(2)-(1) -> D + 2T - N = 46000\n\nN - D = 14000\n\nN = 14000 + D\n\nMinimum value of N is 14000 when D = 0\n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 14674)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nWhat is the minimum number of natives who do not like any FMCG company?\n\n**Options:**\n- **A**. 10000\n- **B**. 12000\n- **C**. 14000\n- **D**. 8000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1637",
+      "passage_text": "A city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.",
+      "question_text": "Find the total number of people who like only one of the FMCG brand if the total number of people who like only 2 FMCG brands is 15000.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "6000",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "10000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who like all FMCG brands is 30000.\n\nThe number of natives who like P&G = The number of natives who like IT + 42% of those who like TW but not IT = 37000 + 0.42(25000) = 47500\n\nThe number of natives who like HUL = 0.375(42000) + 0.5(47000) = 39250\n\nThe number of natives who like RB = 39250\n\nIt is given that the total number of people who like only 2 FMCG brands is 15000, i.e. D = 15000\n\nS + D + T + N = 80000 ...... (1)\n\nS + 2D + 3T = 47500+2(39250) = 126000 ...... (2)\n\nS + 2D = 36000\n\nS + 2(15000) = 36000\n\nS = 6000\n\nTthe total number of people who like only 1 FMCG brand is 6000.\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 14675)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nFind the total number of people who like only one of the FMCG brand if the total number of people who like only 2 FMCG brands is 15000.\n\n**Options:**\n- **A**. 4000\n- **B**. 6000\n- **C**. 10000\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1638",
+      "passage_text": "A city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.",
+      "question_text": "If it is known that none of the natives liked exactly one FMCG brands, find the number of natives who liked P&G and HUL?",
+      "options": [],
+      "correct_option_data": "38750",
+      "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who like all FMCG brands is 30000.\n\nThe number of natives who like P&G = The number of natives who like IT + 42% of those who like TW but not IT = 37000 + 0.42(25000) = 47500\n\nThe number of natives who like HUL = 0.375(42000) + 0.5(47000) = 39250\n\nThe number of natives who like RB = 39250\n\nS + D + T + N = 80000 ...... (1)\n\nS + 2D + 3T = 47500+2(39250) = 126000 ...... (2)\n\nS + 2D = 36000\n\nIt is given, S = 0, i.e. a = b = c = 0\n\nD = d + e + f = 18000 ...... (3)\n\nd + e = 17500 ...... (4)\n\n(3)-(4) -> f = 500\n\nHUL = 39250\n\nd + b + f + 30000 = 39250\n\nd = 8750\n\nSimilarly, we get e = 8750\n\nThe number of natives who liked P&G and HUL = 30000 + 8750 = 38750",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 429356)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nIf it is known that none of the natives liked exactly one FMCG brands, find the number of natives who liked P&G and HUL?\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

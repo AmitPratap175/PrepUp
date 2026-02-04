@@ -70381,6 +70381,156 @@
       "solution_text": "Given the total number of kilometres travelled, including the trip = is 26862 Km, and the duration of the trip is 8 hrs.\n\nIf avg. speed of the car during the trip is 's' => the km travelled till just before the trip is 26862 - 8s, which should also be a palindrome.\n\n=> From the options if s = 110 => The reading will be 26862 - 110*8 = 25982 (Not a palindrome)\n\n=> If s = 100 => The reading will be 26862 - 100*8 = 26062 => It is a palindrome.\n\n=> s = 100 is the correct option.",
       "image_url": "",
       "full_markdown": "### Question (qid: 449493)\n\n**Passage:**\nBrishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of x x x km till then, where x x x is a whole number and is palindromic, i.e., x x x remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was\n\n110\n\n90\n\n100\n\n80\n\nBrishti went on an 8-hour trip in a car. Before the trip, the car had travelled a total of $x$ km till then, where $x$ is a whole number and is palindromic, i.e., $x$ remains unchanged when its digits are reversed. At the end of the trip, the car had travelled a total of 26862 km till then, this number again being palindromic. If Brishti never drove at more than 110 km/h, then the greatest possible average speed at which she drove during the trip, in km/h, was\n\n**Options:**\n- **A**. 110\n- **B**. 90\n- **C**. 100\n- **D**. 80\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2244",
+      "passage_text": "",
+      "question_text": "Suppose f(x, y) is a real-valued function such that f(3x + 2y, 2x - 5y) = 19x, for all real numbers x and y. The value of x for which f(x, 2x) = 27, is",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "Given that f(3x + 2y, 2x - 5y) = 19x.\n\nLet us assume the function f(a,b) is a linear combination of a and b.\n\n=> f(3x+2y, 2x-5y) = m(3x+2y) + n(2x-5y) = 19x\n\n=> 3m + 2n = 19 and 2m - 5n = 0\n\nSolving we get m = 5 and n = 2\n\n=> f(a,b) = 5a+2b\n\n=> f(x,2x) = 5x + 2(2x) = 9x = 27 => x = 3.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 449546)\n\n**Passage:**\nSuppose f(x, y) is a real-valued function such that f(3x + 2y, 2x - 5y) = 19x, for all real numbers x and y. The value of x for which f(x, 2x) = 27, is\n\nSuppose f(x, y) is a real-valued function such that f(3x + 2y, 2x - 5y) = 19x, for all real numbers x and y. The value of x for which f(x, 2x) = 27, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2245",
+      "passage_text": "If f( x 2 − x x^2-x x 2 − x ) = x 4 − 2 x 3 + 3 x 2 − 2 x − 3 x^4-2x^3+3x^2-2x-3 x 4 − 2 x 3 + 3 x 2 − 2 x − 3 , find the value of\n\nf ( f ( 6 ) ) f ( 5 ) \\frac{f\\left(f\\left(6\\right)\\right)}{f\\left(5\\right)} f ( 5 ) f ( f ( 6 ) ) ​\n\n44\n\n66\n\n88\n\n132",
+      "question_text": "If f($x^2-x$) = $x^4-2x^3+3x^2-2x-3$, find the value of\n\n$\\frac{f\\left(f\\left(6\\right)\\right)}{f\\left(5\\right)}$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "66",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "88",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "132",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "f($x^2-x$) = $x^4-2x^3+3x^2-2x-3$\n\nf($x^2-x$) = $x^4-2x^3+x^2+2x^2-2x-3$\n\nf($x^2-x$) = $\\left(x^2-x\\right)^2+2\\left(x^2-x\\right)-3$\n\nf(x) =$x^2+2x-3$ = (x+3)(x-1)\n\n$\\frac{f\\left(f\\left(x\\right)\\right)}{f\\left(y\\right)}=\\frac{\\left(x^2+2x-3+3\\right)\\left(x^2+2x-3-1\\right)}{y^2+2y-3}$\n\n$\\frac{f\\left(f\\left(6\\right)\\right)}{f\\left(5\\right)}=\\frac{48\\times\\ 44}{32}=66$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366180)\n\n**Passage:**\nIf f( x 2 − x x^2-x x 2 − x ) = x 4 − 2 x 3 + 3 x 2 − 2 x − 3 x^4-2x^3+3x^2-2x-3 x 4 − 2 x 3 + 3 x 2 − 2 x − 3 , find the value of\n\nf ( f ( 6 ) ) f ( 5 ) \\frac{f\\left(f\\left(6\\right)\\right)}{f\\left(5\\right)} f ( 5 ) f ( f ( 6 ) ) ​\n\n44\n\n66\n\n88\n\n132\n\nIf f($x^2-x$) = $x^4-2x^3+3x^2-2x-3$, find the value of\n\n$\\frac{f\\left(f\\left(6\\right)\\right)}{f\\left(5\\right)}$\n\n**Options:**\n- **A**. 44\n- **B**. 66\n- **C**. 88\n- **D**. 132\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2246",
+      "passage_text": "Find the product of all possible real values of x satisfying\n\n∣ x + 5 ∣ x − 7 ∣ ∣ + ∣ 6 x + 7 ∣ x − 7 ∣ ∣ = 79 \\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79 ∣ x + 5 ∣ x − 7 ∣ ∣ + ∣ 6 x + 7 ∣ x − 7 ∣ ∣ = 7 9\n\n1\n\n163/19\n\n121/13\n\n1334/5",
+      "question_text": "Find the product of all possible real values of x satisfying\n\n$\\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "163/19",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "121/13",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1334/5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "$\\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79$\n\nCase 1: x >= 7,\n\n$\\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79$\n\n$\\left|x+5x-35\\right|+\\left|6x+7x-49\\right|=79$\n\n$\\left|6x-35\\right|+\\left|13x-49\\right|=79$\n\n$6x-35+13x-49=79$\n\n$19x=163$\n\nx= 163/19\n\nCase 2: x < 7,\n\n$\\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79$\n\n$\\left|x-5x+35\\right|+\\left|6x-7x+49\\right|=79$\n\n$\\left|35-4x\\right|+\\left|49-x\\right|=79$\n\n$35-4x+49-x=79$\n\n$5\\times\\ x=5$\n\nx = 1\n\nProduct = 163/19",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366179)\n\n**Passage:**\nFind the product of all possible real values of x satisfying\n\n∣ x + 5 ∣ x − 7 ∣ ∣ + ∣ 6 x + 7 ∣ x − 7 ∣ ∣ = 79 \\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79 ∣ x + 5 ∣ x − 7 ∣ ∣ + ∣ 6 x + 7 ∣ x − 7 ∣ ∣ = 7 9\n\n1\n\n163/19\n\n121/13\n\n1334/5\n\nFind the product of all possible real values of x satisfying\n\n$\\left|x+5\\left|x-7\\right|\\right|+\\left|6x+7\\left|x-7\\right|\\right|=79$\n\n**Options:**\n- **A**. 1\n- **B**. 163/19\n- **C**. 121/13\n- **D**. 1334/5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2247",
+      "passage_text": "Find the minimum value of the following function:\n\nf(x) = max( x 2 − 5 x + 6 x^2-5x+6 x 2 − 5 x + 6 , x 2 x^2 x 2 )\n\n36/25\n\n25/16\n\n64/25\n\n81/16",
+      "question_text": "Find the minimum value of the following function:\n\nf(x) = max($x^2-5x+6$,$x^2$)",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "36/25",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "25/16",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "64/25",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "81/16",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "f(x) = max($x^2-5x+6$,$x^2$)\n\nThe difference between the 2 expressions is -5x + 6.\n\nWhenever this part is greater than or equal to 0, f(x) is the first function, else, the second function.\n\n-5x + 6 >= 0\n\nx <= 6/5\n\nHence, for x <= 6/5, f(x) = $x^2-5x+6$\n\nFor x > 6/5, f(x) = $x^2$\n\nSince they both are quadratic, they will have the same value at x = 6/5.\n\nAlso, at x < 6/5, f(x) is the left side of a U - shaped quadratic curve(part of the quadratic curve before the leftmost root)\n\nAt x >= 6/5, f(x) is the right side of a U - shaped quadratic curve (part of the quadratic curve after the rightmost root)\n\nHence, the minimum value of the function is at x = 6/5.\n\nValue = $x^2$ = 36/25",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 365545)\n\n**Passage:**\nFind the minimum value of the following function:\n\nf(x) = max( x 2 − 5 x + 6 x^2-5x+6 x 2 − 5 x + 6 , x 2 x^2 x 2 )\n\n36/25\n\n25/16\n\n64/25\n\n81/16\n\nFind the minimum value of the following function:\n\nf(x) = max($x^2-5x+6$,$x^2$)\n\n**Options:**\n- **A**. 36/25\n- **B**. 25/16\n- **C**. 64/25\n- **D**. 81/16\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2248",
+      "passage_text": "If a polynomial function exists such that f ( x ) f ( 1 x ) = f ( x ) + f ( 1 x ) f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x}) f ( x ) f ( x 1 ​ ) = f ( x ) + f ( x 1 ​ ) . If f(-2) = 9, what is the absolute value of f(4)?\n\n63\n\n65\n\n1 63 \\frac{1}{63} 6 3 1 ​\n\n1 65 \\frac{1}{65} 6 5 1 ​",
+      "question_text": "If a polynomial function exists such that $f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$. If f(-2) = 9, what is the absolute value of f(4)?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "63",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "65",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\frac{1}{63}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\frac{1}{65}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "If $f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$ then f(x) has to be of form\n\n$f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$ this can be written as\n\nf(x) = $\\frac{f\\left(\\frac{1}{\\left(x\\right)}\\right)}{f\\left(\\frac{1}{x}\\right)-1}$.    (1)\n\n$f\\left(\\frac{1}{x}\\right)\\ =\\ \\frac{f\\left(x\\right)}{f\\left(x\\right)-1}$.          (2)\n\nMultiplying 1 and 2 we get \n\n$\\left(f\\left(x\\right)-1\\right)\\left(f\\left(\\frac{1}{x}\\right)-1\\right)\\ =\\ 1$.\n\nAssuming f(x)-1 = g(x) gives us $f\\left(\\frac{1}{x}\\right)-1\\ =g\\left(\\frac{1}{x}\\right)$.\n\nAs per the conditions $g\\left(x\\right)g\\left(\\frac{1}{x}\\right)\\ =\\ 1$.\n\nSince f(x) is a polynomial function g(x) is a polynomial function.\n\ng(x) can be satisfied only by $\\pm\\ x^n$\n\nHence f(x) = $1\\pm\\ x^n$\n\nf(-2) = $1\\pm\\left(-2\\right)^n=9$ or $\\pm\\left(-2\\right)^n=8$\n\nThus n=3 and function has to be $1-x^3$\n\nf(4) = $1-4^3$ = 1-64 = -63\n\nModulus value = 63",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 365200)\n\n**Passage:**\nIf a polynomial function exists such that f ( x ) f ( 1 x ) = f ( x ) + f ( 1 x ) f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x}) f ( x ) f ( x 1 ​ ) = f ( x ) + f ( x 1 ​ ) . If f(-2) = 9, what is the absolute value of f(4)?\n\n63\n\n65\n\n1 63 \\frac{1}{63} 6 3 1 ​\n\n1 65 \\frac{1}{65} 6 5 1 ​\n\nIf a polynomial function exists such that $f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$. If f(-2) = 9, what is the absolute value of f(4)?\n\n**Options:**\n- **A**. 63\n- **B**. 65\n- **C**. $\\frac{1}{63}$\n- **D**. $\\frac{1}{65}$\n\n**Correct Answer:** null"
     }
   ]
 }

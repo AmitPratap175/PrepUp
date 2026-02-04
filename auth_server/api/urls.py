@@ -56,6 +56,7 @@ urlpatterns = [
     path('essays/<uuid:essay_id>/', views.EssayDetailView.as_view(), name='essay-detail'),
     path('essays/<uuid:essay_id>/submit/', views.EssaySubmitView.as_view(), name='essay-submit'),
     path('essays/<uuid:essay_id>/review/', views.EssayReviewView.as_view(), name='essay-review'),
+    path('essays/<uuid:essay_id>/model-answer/', views.EssayModelAnswerView.as_view(), name='essay-model-answer'),
     # Daily Targets & Revision
     path('daily-targets/settings/', views.UserDailySettingsView.as_view(), name='daily-targets-settings'),
     path('daily-targets/', views.DailyTargetView.as_view(), name='daily-targets'),

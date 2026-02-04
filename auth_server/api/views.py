@@ -2138,4 +2138,45 @@ class ScheduleRevisionView(APIView):
             if created:
                 created_count += 1
         
+        
         return Response({'message': f'Scheduled {created_count} items for revision'}, status=status.HTTP_201_CREATED)
+
+class EssayModelAnswerView(AsyncAPIView):
+    """
+    Generates a model answer for a given essay topic.
+    """
+    permission_classes = [IsAuthenticated]
+
+    async def post(self, request, essay_id):
+        from api.models import Essay, EssayTopic, XATEssayQuestion
+        from api.services.model_answer_generator import ModelAnswerGenerator
+        
+        try:
+            essay = await Essay.objects.aget(id=essay_id, user=request.user)
+        except Essay.DoesNotExist:
+            return Response({'error': 'Essay not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+        topic_title = essay.title
+        context = ""
+        
+        # Determine topic and context
+        if essay.topic_id:
+            try:
+                topic = await EssayTopic.objects.aget(id=essay.topic_id)
+                topic_title = topic.title
+                context = topic.context
+            except EssayTopic.DoesNotExist:
+                pass
+        elif essay.xat_question_id:
+             # Fallback for old XAT questions if any remain
+            try:
+                q = await XATEssayQuestion.objects.aget(qid=essay.xat_question_id)
+                topic_title = q.question_text
+                context = q.passage_text
+            except XATEssayQuestion.DoesNotExist:
+                pass
+        
+        generator = ModelAnswerGenerator()
+        model_answer = await generator.generate_model_answer(topic_title, context)
+        
+        return Response({'model_answer': model_answer})

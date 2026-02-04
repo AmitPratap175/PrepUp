@@ -29,19 +29,19 @@ class EssayTopicGenerator:
             List of topic dictionaries
         """
         prompt = f"""
-        Research and generate {count} current, relevant essay topics for XAT (Xavier Aptitude Test) preparation in the domain of {domain}.
+        Research and generate {count} current, relevant essay topics for UPSC Civil Services Mains preparation in the domain of {domain}.
         
         Requirements for each topic:
-        - Must be current and relevant (within last 6 months)
-        - Suitable for a 500-800 word analytical essay
-        - Thought-provoking and suitable for management aptitude testing
-        - Should test critical thinking and analytical skills
+        - Must be current, analytical, and highly relevant to Indian Administration/Society/Geo-politics 
+        - Suitable for a 1000-1200 word essay (UPSC Standard)
+        - Can be a mix of Philosophical (abstract) and Content-based topics
+        - Should test critical thinking, multidimensional analysis, and ethical reasoning
         
         For each topic, provide:
-        1. title: A concise, engaging title
-        2. description: 2-3 sentences describing what the essay should address
-        3. context: Background information (3-4 sentences)
-        4. key_points: Array of 3-5 key points that should be addressed
+        1. title: A concise, engaging title (UPSC style question)
+        2. description: 2-3 sentences describing what the essay should address (the demand of the question)
+        3. context: Background information (3-4 sentences) including why it is relevant now
+        4. key_points: Array of 3-5 key dimensions/points that must be covered
         5. difficulty: "easy", "medium", or "hard"
         
         Return ONLY a JSON array of topic objects. No markdown formatting.
@@ -49,7 +49,7 @@ class EssayTopicGenerator:
         
         # try:
         response = await self.client.aio.models.generate_content(
-            model="gemini-2.5-flash-lite",
+            model="gemini-2.5-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
@@ -108,7 +108,7 @@ class EssayTopicGenerator:
         
         try:
             response = await self.client.aio.models.generate_content(
-                model="gemini-2.0-flash-exp",
+                model="gemini-1.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     temperature=0.7
