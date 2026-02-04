@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { apiRequest } from "@/lib/queryClient";
 import { useLocation } from 'wouter';
 import { UPSCQuizInterface } from "@/components/UPSCQuizInterface";
 import { LocalResultView } from "@/components/local-result-view";
@@ -31,6 +32,15 @@ interface QuizData {
 }
 
 // ... existing interfaces ...
+interface StoredTestResult {
+    score: number;
+    total: number;
+    accuracy: number;
+    date: string;
+    answers: UserAnswer[];
+}
+
+const getRevisionKey = (testId: string) => `revision_${testId}`;
 
 const ChapterwiseQuizPage: React.FC = () => {
     const [, setLocation] = useLocation();
@@ -125,6 +135,185 @@ const ChapterwiseQuizPage: React.FC = () => {
     };
 
     // ... existing handlers ...
+    const fetchQuizzes = async () => {
+        try {
+            setLoading(true);
+            const response = await fetch('/api/chapterwise-quiz/');
+            if (!response.ok) throw new Error('Failed to fetch quizzes');
+            const data: QuizData[] = await response.json();
+
+            const tests = data.map((quiz, index) => convertToPracticeTest(quiz, index));
+            setAvailableTests(tests);
+            setLoading(false);
+        } catch (err) {
+            console.error(err);
+            setError(err instanceof Error ? err.message : 'Failed to load quizzes');
+            setLoading(false);
+        }
+    };
+
+
+
+    // ... existing imports
+
+    const fetchCompletionStatus = async () => {
+        try {
+            const res = await apiRequest("GET", '/api/chapter-progress/');
+            if (res.ok) {
+                const data = await res.json();
+                // Assuming data returns list of objects with chapter_id
+                if (Array.isArray(data)) {
+                    // Check format. If explicit chapter_id field exists
+                    if (data.length > 0 && data[0].chapter_id) {
+                        setCompletedChapters(data.map((c: any) => c.chapter_id));
+                    } else {
+                        // Fallback if it returns list of strings
+                        setCompletedChapters(data);
+                    }
+                }
+            }
+        } catch (e) {
+            console.error("Failed to fetch progress", e);
+        }
+    };
+
+    // ... existing functions
+
+    const toggleCompletion = async (testId: string, currentStatus: boolean, e: React.MouseEvent) => {
+        e.stopPropagation();
+        setSubmittingCompletion(true);
+        const newStatus = !currentStatus;
+        if (newStatus) setCompletedChapters(prev => [...prev, testId]);
+        else setCompletedChapters(prev => prev.filter(id => id !== testId));
+
+        try {
+            await apiRequest("POST", '/api/chapter-progress/', { chapter_id: testId, is_completed: newStatus });
+        } catch (err) {
+            if (newStatus) setCompletedChapters(prev => prev.filter(id => id !== testId));
+            else setCompletedChapters(prev => [...prev, testId]);
+        } finally {
+            setSubmittingCompletion(false);
+        }
+    };
+
+    const handleSelectQuiz = (testId: string) => {
+        setSelectedTestId(testId);
+        setQuizStarted(false);
+        setQuizFinished(false);
+        setRevisionMode(false);
+        setLatestResult(null);
+
+        const stored = localStorage.getItem(`upsc_result_${testId}`);
+        if (stored) {
+            setLatestResult(JSON.parse(stored));
+        }
+
+        // Calculate revision count
+        const revKey = getRevisionKey(testId);
+        const savedRev = localStorage.getItem(revKey);
+        setRevisionCount(savedRev ? JSON.parse(savedRev).length : 0);
+    };
+
+    const handleExit = () => {
+        setQuizStarted(false);
+        setQuizFinished(false);
+        setSelectedTestId(null);
+        setLatestResult(null);
+    };
+
+    const handleQuizSubmit = (answers: UserAnswer[]) => {
+        setFinalAnswers(answers);
+        setQuizFinished(true);
+        setQuizStarted(false);
+
+        if (activeTest) {
+            let score = 0;
+            const incorrectIndices: number[] = [];
+
+            answers.forEach(ans => {
+                const questions = activeTest.questions as any[];
+                const q = questions.find(q => q.id === ans.questionId);
+                // Note: activeTest.questions might be filtered in revision mode.
+                // But we need original index for revision key? 
+                // Wait, revision key stores indices of ORIGINAL questions list.
+                // If we are in revision mode, "index" prop on question should be original index.
+                // Let's rely on question.index if available.
+
+                if (q) {
+                    if (q.correct_answer === ans.selectedAnswer) {
+                        score++;
+                    } else {
+                        if (q.index !== undefined) incorrectIndices.push(q.index);
+                    }
+                }
+            });
+
+            const result: StoredTestResult = {
+                score,
+                total: activeTest.totalQuestions,
+                accuracy: activeTest.totalQuestions > 0 ? (score / activeTest.totalQuestions) * 100 : 0,
+                date: new Date().toISOString(),
+                answers
+            };
+
+            localStorage.setItem(`upsc_result_${activeTest.id}`, JSON.stringify(result));
+            setLatestResult(result);
+
+            // Update revision list
+            // If manual revision mode, we might remove correct ones from list.
+            // Implemenation detail: update revision store.
+            const revKey = getRevisionKey(activeTest.id);
+            // If strictly adding incorrect ones:
+            if (incorrectIndices.length > 0) {
+                const existing = JSON.parse(localStorage.getItem(revKey) || '[]');
+                const combined = Array.from(new Set([...existing, ...incorrectIndices]));
+                localStorage.setItem(revKey, JSON.stringify(combined));
+            }
+
+            // Auto-mark completed if score > 0
+            if (!completedChapters.includes(activeTest.id)) {
+                // For now user manually marks, or we can auto mark.
+                // toggleCompletion(activeTest.id, false, { stopPropagation: () => {} } as any);
+            }
+            // toggleCompletion(activeTest.id, false, { stopPropagation: () => {} } as any);
+        }
+    }
+
+
+    const startRevision = () => {
+        setRevisionMode(true);
+        setQuizStarted(true);
+    };
+
+
+
+    const [isExporting, setIsExporting] = useState(false);
+    const handleExportPDF = async () => {
+        if (!activeTest) return;
+        setIsExporting(true);
+        try {
+            const res = await fetch('/api/chapterwise-quiz/export-pdf/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chapter_id: activeTest.id })
+            });
+            if (res.ok) {
+                const blob = await res.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${activeTest.title}.pdf`;
+                a.click();
+            } else {
+                throw new Error("Export failed");
+            }
+        } catch (e) {
+            console.error(e);
+            setError("Failed to export PDF");
+        } finally {
+            setIsExporting(false);
+        }
+    };
 
     if (loading) {
         // ... existing loading ...
