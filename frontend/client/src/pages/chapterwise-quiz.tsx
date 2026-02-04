@@ -292,9 +292,15 @@ const ChapterwiseQuizPage: React.FC = () => {
         if (!activeTest) return;
         setIsExporting(true);
         try {
+            const token = localStorage.getItem("token");
+            if (!token) throw new Error("Not authenticated");
+
             const res = await fetch('/api/chapterwise-quiz/export-pdf/', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Token ${token}`
+                },
                 body: JSON.stringify({ chapter_id: activeTest.id })
             });
             if (res.ok) {

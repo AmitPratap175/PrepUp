@@ -1,6 +1,9 @@
 import os
 import json
+import base64
 import asyncio
+import uuid
+import re
 from datetime import datetime
 from pathlib import Path
 from rest_framework.views import APIView
@@ -8,109 +11,37 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import MultiPartParser, FormParser
 from adrf.views import APIView as AsyncAPIView
-from notebooklm import NotebookLMClient, QuizQuantity, QuizDifficulty
 from django.conf import settings
-
-# Prompt from test_notebooklm.py
-UPSC_PROMPT = """
-Act as a strict Union Public Service Commission (UPSC) paper setter. Your goal is to exhaustively test my knowledge of the uploaded document by generating a high-volume Question Bank (at least 50 questions).
-Using ONLY the information provided in this document, generate questions in the following specific UPSC formats:
-
-**1. The 'Statement-Based' Trap (20 Questions):**
-
-Create questions with 2-3 statements (e.g., 'Consider the following statements regarding [Topic]...').
-Intentionally include common UPSC traps: swap dates, change 'Constitutional' to 'Statutory', or use extreme words like 'only', 'always', or 'mandatorily' to test precision.
-Options must be: (a) 1 only, (b) 2 only, (c) Both 1 and 2, (d) Neither 1 nor 2.
-
-**2. Chronology & Sequencing (10 Questions):**
-
-Select 4 events, acts, or steps mentioned in the text and ask to arrange them in correct chronological order.
-
-**3. Match the Following (10 Questions):**
-
-Create pairs matching specific terms, personalities, committees, or articles with their correct descriptions or years.
-
-**4. Assertion-Reasoning (5 Questions):**
-
-Provide two statements: an Assertion (A) and a Reason (R). Ask if both are true and if R is the correct explanation of A.
-
-**5. Rapid Fire Fact-Check (15 Questions):**
-
-Direct questions focusing on specific numbers, data points, 'First' occurrences, and definitions mentioned in the text.
-
-**Output Rules:**
-
-Do not summarize. Go straight to the questions.
-Cover the entire document from the first page to the last, ensuring no small fact or footnote is ignored.
-Answer Key: Provide a separate Answer Key at the very end. For every answer, provide a brief 'Explanation' citing the specific logic or fact from the text.
-"""
+from google import genai
+from google.genai import types
 
 class QuizGeneratorView(AsyncAPIView):
     parser_classes = (MultiPartParser, FormParser)
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.api_key = os.environ.get("GEMINI_API_KEY")
+        if not self.api_key:
+             print("GEMINI_API_KEY not found in environment")
+        self.client = genai.Client(api_key=self.api_key)
 
     async def post(self, request, *args, **kwargs):
         uploaded_file = request.FILES.get('file')
         if not uploaded_file:
             return Response({"error": "No file uploaded"}, status=status.HTTP_400_BAD_REQUEST)
 
-        # Save the file temporarily
-        temp_dir = Path(settings.BASE_DIR) / "data" / "temp_uploads"
-        temp_dir.mkdir(parents=True, exist_ok=True)
-        file_path = temp_dir / uploaded_file.name
-
         try:
-            with open(file_path, 'wb+') as destination:
-                for chunk in uploaded_file.chunks():
-                    destination.write(chunk)
+            # Read file content
+            file_content = uploaded_file.read()
+            # Encode to base64
+            file_base64 = base64.b64encode(file_content).decode('utf-8')
+            mime_type = uploaded_file.content_type or "application/pdf"
+
+            # 1. Identify Subject
+            subject = await self.identify_subject(file_base64, mime_type)
             
-            # NotebookLM Logic
-            # TODO: Make the storage path configurable or consistent with Dockerfile
-            storage_path = Path("/app/storage_state.json")
-            if not storage_path.exists():
-                # Fallback to local dev path if not in container/mapped
-                storage_path = Path("/home/dspratap/.notebooklm/storage_state.json")
-
-            if not storage_path.exists():
-                 return Response({"error": "NotebookLM storage state not found. Auth required."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-            quiz_data = None
-            async with await NotebookLMClient.from_storage(str(storage_path)) as client:
-                # Create a new notebook for this session
-                # Timestamp to make it unique or just "Quiz Gen"
-                nb_title = f"QuizGen_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-                nb = await client.notebooks.create(nb_title)
-                
-                # Upload source
-                await client.sources.add_file(nb.id, file_path, wait=True)
-
-                # Generate Quiz
-                quiz_status = await client.artifacts.generate_quiz(
-                    nb.id,
-                    instructions=UPSC_PROMPT,
-                    quantity=QuizQuantity.MORE,
-                    difficulty=QuizDifficulty.HARD
-                )
-                await client.artifacts.wait_for_completion(nb.id, quiz_status.task_id)
-                
-                # Download Quiz
-                # We can download to a string or temp file. library saves to file.
-                output_json_path = temp_dir / f"quiz_{nb.id}.json"
-                await client.artifacts.download_quiz(nb.id, str(output_json_path), output_format="json")
-
-                # Read the generated JSON
-                if output_json_path.exists():
-                    with open(output_json_path, 'r') as f:
-                        quiz_content = json.load(f)
-                    quiz_data = quiz_content
-                    
-                    # Clean up the specific quiz file
-                    output_json_path.unlink()
-                
-                # Cleanup Notebook? (Optional, maybe keep for history or delete to save space)
-                # await client.notebooks.delete(nb.id) 
-
-            if not quiz_data:
-                return Response({"error": "Failed to generate quiz data"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            # 2. Generate Quiz
+            quiz_data = await self.generate_exhaustive_quiz(file_base64, mime_type, uploaded_file.name, subject)
 
             # Persist to generated_quizzes.json
             persistence_path = Path(settings.BASE_DIR) / "data" / "generated_quizzes.json"
@@ -122,10 +53,13 @@ class QuizGeneratorView(AsyncAPIView):
                 except json.JSONDecodeError:
                     all_quizzes = []
             
+            # Generate a unique notebook_id (using UUID as we are not using NotebookLM anymore)
+            notebook_id = str(uuid.uuid4())
+
             new_entry = {
                 "source": uploaded_file.name,
                 "generated_at": datetime.now().isoformat(),
-                "notebook_id": nb.id, # Keep ID ref
+                "notebook_id": notebook_id,
                 "quiz_data": quiz_data
             }
             all_quizzes.append(new_entry)
@@ -133,16 +67,161 @@ class QuizGeneratorView(AsyncAPIView):
             with open(persistence_path, 'w') as f:
                 json.dump(all_quizzes, f, indent=2)
 
-            # Cleanup Uploaded File
-            file_path.unlink()
-
             return Response(new_entry, status=status.HTTP_201_CREATED)
 
         except Exception as e:
-            # Cleanup on error
-            if file_path.exists():
-                file_path.unlink()
+            import traceback
+            traceback.print_exc()
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    async def identify_subject(self, file_base64, mime_type):
+        try:
+            response = await self.client.aio.models.generate_content(
+                model='gemini-2.5-flash',
+                contents={
+                    'parts': [
+                        {'inline_data': {'data': file_base64, 'mime_type': mime_type}},
+                        {'text': "Classify this document into one of the following subjects: Polity, Geography, History, Economy, Environment, Science, Current Affairs, or Others. Return ONLY the subject name in all lower case."}
+                    ]
+                }
+            )
+            return response.text.strip() if response.text else "others"
+        except Exception as e:
+            print(f"Error identifying subject: {e}")
+            return "others"
+
+    async def generate_exhaustive_quiz(self, file_base64, mime_type, filename, subject):
+        safe_filename = re.sub(r'[^a-z0-9]', '-', filename.lower())
+        prompt = f"""
+Act as a strict Union Public Service Commission (UPSC) paper setter and expert educator. Your goal is to EXHAUSTIVELY test the user on the uploaded document.
+
+**MANDATORY REQUIREMENTS:**
+1. **QUANTITY:** You must generate a MINIMUM of 50 questions. There is NO upper limit—if the document contains 100 facts, generate 100 questions.
+2. **FACT RECALL (Min. 20 Questions):** At least 20 questions must be direct 'Fact-Recall' questions. These are one-liners or simple identification questions designed to ensure the user remembers specific names, dates, articles, places, or data points exactly as they appear.
+3. **UPSC FORMATS (Remaining Questions):** The rest should be high-difficulty UPSC formats:
+    - **'Statement-Based' Traps:** 2-3 statements with traps (swapping dates, swapping 'Constitutional' vs 'Statutory', using 'only/always'). Options: (a) 1 only, (b) 2 only, (c) Both 1 and 2, (d) Neither 1 nor 2.
+    - **Chronology & Sequencing:** Arrange 4+ events in order.
+    - **Match the Following:** Terms/Personalities matched with descriptions.
+
+**Output Rules:**
+1. **EXHAUSTIVE COVERAGE:** Do not leave out a single relevant fact. If a minor committee or a specific sub-clause is mentioned, create a question for it.
+2. **RATIONALE:** Provide a deep, pedagogical explanation for every answer.
+3. **ID GENERATION:** Use prefix "cw-{safe_filename}-" with sequential numbers.
+4. **FORMAT:** Return ONLY a JSON object matching the provided schema.
+"""
+
+        # Try using the Thinking model first as per original logic
+        try:
+            # Note: The original logic used 'gemini-3-pro-preview' which likely maps
+            # to the latest thinking experimental model available.
+            # We try 'gemini-2.0-flash-thinking-exp-01-21' which supports thinking config.
+            response = await self.client.aio.models.generate_content(
+                model='gemini-2.0-flash-thinking-exp-01-21',
+                contents={
+                    'parts': [
+                        {'inline_data': {'data': file_base64, 'mime_type': mime_type}},
+                        {'text': prompt}
+                    ]
+                },
+                config=types.GenerateContentConfig(
+                    thinking_config={"thinking_budget": 1024}, # Adjusted budget for safety, source had 32k
+                    response_mime_type="application/json",
+                    response_schema={
+                        "type": "OBJECT",
+                        "properties": {
+                            "title": {"type": "STRING"},
+                            "subject": {"type": "STRING"},
+                            "questions": {
+                                "type": "ARRAY",
+                                "items": {
+                                    "type": "OBJECT",
+                                    "properties": {
+                                        "question": {"type": "STRING"},
+                                        "answerOptions": {
+                                            "type": "ARRAY",
+                                            "items": {
+                                                "type": "OBJECT",
+                                                "properties": {
+                                                    "text": {"type": "STRING"},
+                                                    "isCorrect": {"type": "BOOLEAN"},
+                                                    "rationale": {"type": "STRING"}
+                                                },
+                                                "required": ["text", "isCorrect", "rationale"]
+                                            }
+                                        },
+                                        "hint": {"type": "STRING"},
+                                        "qid": {"type": "STRING"},
+                                        "id": {"type": "STRING"}
+                                    },
+                                    "required": ["question", "answerOptions", "hint", "qid", "id"]
+                                }
+                            }
+                        },
+                        "required": ["title", "subject", "questions"]
+                    }
+                )
+            )
+            
+            text_response = response.text or "{}"
+            parsed = json.loads(text_response)
+        except Exception as e:
+            print(f"Thinking model failed: {e}. Falling back to standard Flash model.")
+            # Fallback to standard Flash model without thinking config
+            response = await self.client.aio.models.generate_content(
+                model='gemini-2.5-flash',
+                contents={
+                    'parts': [
+                        {'inline_data': {'data': file_base64, 'mime_type': mime_type}},
+                        {'text': prompt}
+                    ]
+                },
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema={
+                        "type": "OBJECT",
+                        "properties": {
+                            "title": {"type": "STRING"},
+                            "subject": {"type": "STRING"},
+                            "questions": {
+                                "type": "ARRAY",
+                                "items": {
+                                    "type": "OBJECT",
+                                    "properties": {
+                                        "question": {"type": "STRING"},
+                                        "answerOptions": {
+                                            "type": "ARRAY",
+                                            "items": {
+                                                "type": "OBJECT",
+                                                "properties": {
+                                                    "text": {"type": "STRING"},
+                                                    "isCorrect": {"type": "BOOLEAN"},
+                                                    "rationale": {"type": "STRING"}
+                                                },
+                                                "required": ["text", "isCorrect", "rationale"]
+                                            }
+                                        },
+                                        "hint": {"type": "STRING"},
+                                        "qid": {"type": "STRING"},
+                                        "id": {"type": "STRING"}
+                                    },
+                                    "required": ["question", "answerOptions", "hint", "qid", "id"]
+                                }
+                            }
+                        },
+                        "required": ["title", "subject", "questions"]
+                    }
+                )
+            )
+            text_response = response.text or "{}"
+            parsed = json.loads(text_response)
+
+        try:
+            if not parsed.get("subject") or parsed["subject"].lower() == "others":
+                parsed["subject"] = subject.title()
+            return parsed
+        except Exception as e:
+             print(f"Failed to generate/parse quiz: {e}")
+             raise e
 
     async def get(self, request, *args, **kwargs):
         """
@@ -162,7 +241,6 @@ class QuizGeneratorView(AsyncAPIView):
                 all_quizzes = json.load(f)
             
             # Find the quiz with the matching notebook_id
-            # The 'notebook_id' was saved in the POST method as 'nb.id'
             found_quiz = next((q for q in all_quizzes if q.get('notebook_id') == quiz_id), None)
             
             if found_quiz:
