@@ -70531,6 +70531,131 @@
       "solution_text": "If $f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$ then f(x) has to be of form\n\n$f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$ this can be written as\n\nf(x) = $\\frac{f\\left(\\frac{1}{\\left(x\\right)}\\right)}{f\\left(\\frac{1}{x}\\right)-1}$.    (1)\n\n$f\\left(\\frac{1}{x}\\right)\\ =\\ \\frac{f\\left(x\\right)}{f\\left(x\\right)-1}$.          (2)\n\nMultiplying 1 and 2 we get \n\n$\\left(f\\left(x\\right)-1\\right)\\left(f\\left(\\frac{1}{x}\\right)-1\\right)\\ =\\ 1$.\n\nAssuming f(x)-1 = g(x) gives us $f\\left(\\frac{1}{x}\\right)-1\\ =g\\left(\\frac{1}{x}\\right)$.\n\nAs per the conditions $g\\left(x\\right)g\\left(\\frac{1}{x}\\right)\\ =\\ 1$.\n\nSince f(x) is a polynomial function g(x) is a polynomial function.\n\ng(x) can be satisfied only by $\\pm\\ x^n$\n\nHence f(x) = $1\\pm\\ x^n$\n\nf(-2) = $1\\pm\\left(-2\\right)^n=9$ or $\\pm\\left(-2\\right)^n=8$\n\nThus n=3 and function has to be $1-x^3$\n\nf(4) = $1-4^3$ = 1-64 = -63\n\nModulus value = 63",
       "image_url": "",
       "full_markdown": "### Question (qid: 365200)\n\n**Passage:**\nIf a polynomial function exists such that f ( x ) f ( 1 x ) = f ( x ) + f ( 1 x ) f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x}) f ( x ) f ( x 1 ​ ) = f ( x ) + f ( x 1 ​ ) . If f(-2) = 9, what is the absolute value of f(4)?\n\n63\n\n65\n\n1 63 \\frac{1}{63} 6 3 1 ​\n\n1 65 \\frac{1}{65} 6 5 1 ​\n\nIf a polynomial function exists such that $f(x) f(\\frac{1}{x}) = f(x) + f(\\frac{1}{x})$. If f(-2) = 9, what is the absolute value of f(4)?\n\n**Options:**\n- **A**. 63\n- **B**. 65\n- **C**. $\\frac{1}{63}$\n- **D**. $\\frac{1}{65}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2249",
+      "passage_text": "A = log ⁡ 5 4 + log ⁡ 5 3 16 + log ⁡ 5 9 256 + . . . . . . . . . . . \\log_54+\\log_{5^3}16+\\log_{5^9}256+........... lo g 5 ​ 4 + lo g 5 3 ​ 1 6 + lo g 5 9 ​ 2 5 6 + . . . . . . . . . . .\n\nB = log ⁡ 4 5 + log ⁡ 16 5 + log ⁡ 256 5 + . . . . . . . . . . . \\log_45+\\log_{16}5+\\log_{256}5+........... lo g 4 ​ 5 + lo g 1 6 ​ 5 + lo g 2 5 6 ​ 5 + . . . . . . . . . . .\n\nWhat is the value of A × B A\\times B A × B ?\n\n2 log ⁡ 4 25 2\\log_425 2 lo g 4 ​ 2 5\n\n3 log ⁡ 4 25 3\\log_425 3 lo g 4 ​ 2 5\n\n3\n\n6",
+      "question_text": "A =  $\\log_54+\\log_{5^3}16+\\log_{5^9}256+...........$\n\nB = $\\log_45+\\log_{16}5+\\log_{256}5+...........$\n\nWhat is the value of $A\\times B$?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$2\\log_425$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$3\\log_425$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "6",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let us start with simplifying A,\n\nA = $\\log_54+\\log_{5^3}16+\\log_{5^9}256+...........$\n\nA = $\\log_52^2+\\log_{5^3}2^4+\\log_{5^9}2^8+...........$\n\nA = $2\\log_52+\\frac{4}{3}\\log_52+\\frac{8}{9}\\log_52+...........$\n\nA = $\\left(2+\\frac{4}{3}+\\frac{8}{9}....\\right)\\log_52$\n\nIt is a GP with first term = 2 and common ratio = 2/3\n\nThus A = $\\left(\\frac{2}{1-\\frac{2}{3}}\\right)\\log_52=6\\log_52$\n\nLet us calculate the value of B now,\n\nB = $\\log_45+\\log_{16}5+\\log_{256}5+...........$\n\nB = $\\log_{2^2}5+\\log_{2^4}5+\\log_{2^8}5+...........$\n\nB = $\\frac{1}{2}\\log_25+\\frac{1}{4}\\log_25+\\frac{1}{8}\\log_25+...........$\n\nB = $\\left(\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}...\\right)\\log_25$\n\nIt is a GP with first term = 1/2 and common ratio = 1/2\n\nB = $\\log_25$\n\n$A \\times B$ = $6\\log_52\\times\\log_25=6$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 370873)\n\n**Passage:**\nA = log ⁡ 5 4 + log ⁡ 5 3 16 + log ⁡ 5 9 256 + . . . . . . . . . . . \\log_54+\\log_{5^3}16+\\log_{5^9}256+........... lo g 5 ​ 4 + lo g 5 3 ​ 1 6 + lo g 5 9 ​ 2 5 6 + . . . . . . . . . . .\n\nB = log ⁡ 4 5 + log ⁡ 16 5 + log ⁡ 256 5 + . . . . . . . . . . . \\log_45+\\log_{16}5+\\log_{256}5+........... lo g 4 ​ 5 + lo g 1 6 ​ 5 + lo g 2 5 6 ​ 5 + . . . . . . . . . . .\n\nWhat is the value of A × B A\\times B A × B ?\n\n2 log ⁡ 4 25 2\\log_425 2 lo g 4 ​ 2 5\n\n3 log ⁡ 4 25 3\\log_425 3 lo g 4 ​ 2 5\n\n3\n\n6\n\nA =  $\\log_54+\\log_{5^3}16+\\log_{5^9}256+...........$\n\nB = $\\log_45+\\log_{16}5+\\log_{256}5+...........$\n\nWhat is the value of $A\\times B$?\n\n**Options:**\n- **A**. $2\\log_425$\n- **B**. $3\\log_425$\n- **C**. 3\n- **D**. 6\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2250",
+      "passage_text": "If f ( x + 1 ) = log ⁡ x 2 + 4 x − 21 x 2 + x − 20 f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20 f ( x + 1 ) = lo g x 2 + 4 x − 2 1 ​ x 2 + x − 2 0 , find the value of f(-7) x f(6).\n\nGiven: log ⁡ 3 4 = 1.26 , log ⁡ 10 11 = 1.04 \\log_34=1.26,\\log_{10}11=1.04 lo g 3 ​ 4 = 1 . 2 6 , lo g 1 0 ​ 1 1 = 1 . 0 4\n\n1.084\n\n2.014\n\n1.264\n\n1.184",
+      "question_text": "If $f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20$, find the value of f(-7) x f(6).\n\nGiven: $\\log_34=1.26,\\log_{10}11=1.04$",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1.084",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2.014",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1.264",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1.184",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "$f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20$\n\n$f\\left(x+1\\right)=\\log_{\\left(x+7\\right)\\left(x-3\\right)}\\left(x+5\\right)\\left(x-4\\right)$\n\nHence,\n\n$f\\left(x\\right)=\\log_{\\left(x+6\\right)\\left(x-4\\right)}\\left(x+4\\right)\\left(x-5\\right)$\n\n$f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\log_{\\left(-1\\right)\\left(-11\\right)}\\left(-3\\right)\\left(-12\\right)\\times\\ \\log_{\\left(12\\right)\\left(2\\right)}\\left(10\\right)\\left(1\\right)$\n\n$f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\log_{11}36\\times\\ \\log_{24}10$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{\\log36}{\\log11}\\times\\ \\frac{\\log10}{\\log24}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{\\log36}{\\log24}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{\\log12+\\log3}{\\log12+\\log2}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{1+\\log_{12}3}{1+\\log_{12}2}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{1+\\frac{\\log3}{\\log3+\\log4}}{1+\\frac{\\log2}{\\log2+\\log6}}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{1+\\frac{1}{1+\\log_34}}{1+\\frac{1}{1+\\log_26}}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{2+\\log_34}{1+\\log_34}\\times\\ \\frac{1+\\log_26}{2+\\log_26}\\times\\ \\frac{\\log10}{\\log11}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{2+\\log_34}{1+\\log_34}\\times\\ \\frac{2+\\log_23}{3+\\log_23}\\times\\ \\frac{1}{\\log_{10}11}$\n\n$\\log_34=1.26,\\log_{10}11=1.04$\n\nHence, $\\ \\log_23=\\frac{1}{log_32}=\\frac{1}{0.5*log_34}=1.58$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{2+1.26}{1+1.26}\\times\\ \\frac{2+1.58}{3+1.58}\\times\\ \\frac{1}{1.04}$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{3.26}{2.26}\\times\\ \\frac{3.58}{4.58}\\times\\ \\frac{1}{1.04}=1.084$  \n\nAlternatively :\n\n$f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20$\n\n$f\\left(x+1\\right)=\\log_{\\left(x+7\\right)\\left(x-3\\right)}\\left(x+5\\right)\\left(x-4\\right)$\n\nHence,\n\n$f\\left(x\\right)=\\log_{\\left(x+6\\right)\\left(x-4\\right)}\\left(x+4\\right)\\left(x-5\\right)$\n\n$f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\log_{\\left(-1\\right)\\left(-11\\right)}\\left(-3\\right)\\left(-12\\right)\\times\\ \\log_{\\left(12\\right)\\left(2\\right)}\\left(10\\right)\\left(1\\right)$\n\n$f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\log_{11}36\\times\\ \\log_{24}10$\n\n=> $f\\left(-7\\right)\\times\\ f\\left(6\\right)=\\frac{\\log36}{\\log11}\\times\\ \\frac{\\log10}{\\log24}$\n\nSince $\\log\\ 10\\ =\\ 1\\ and\\ \\log_{10}11\\ =\\ 1.04$\n\nTaking them apart we are left with :\n\n$\\frac{\\left(\\log36\\ \\right)}{\\left(\\log\\ 24\\right)}$.\n\n= $\\frac{\\left(\\log36\\ \\right)}{\\left(\\log\\ 24\\right)}=\\frac{\\left(2\\log2+2\\log3\\right)}{\\left(3\\ \\log2\\ +\\log3\\right)}$.\n\nDividing the numerator and denominator of the fraction with log3 we get :$\\frac{\\left(\\log36\\ \\right)}{\\left(\\log\\ 24\\right)}=\\frac{\\left(\\frac{2\\left(\\log2\\right)}{\\log3}+\\frac{2\\left(\\log3\\right)}{\\log\\ 3}\\right)}{\\left(\\left(3\\ \\frac{\\left(\\log2\\right)}{\\log3}\\ +\\frac{\\left(\\log3\\right)}{\\log\\ 3}\\right)\\right)}$.\n\n= $\\frac{\\left(\\log36\\ \\right)}{\\left(\\log\\ 24\\right)}=\\frac{\\left(2\\cdot\\log_3\\ 2+2\\right)}{\\left(3\\cdot\\log_32\\ +\\ 1\\right)}$\n\nSince $\\log_34\\ =\\ 2\\cdot\\left(\\log_32\\right)$.\n\n$\\left(\\log_32\\right)=\\ 0.63\\ and\\ substituting\\ this\\ $ we have :\n\n(2*0.63 + 2)/(3*0.63+1) = $\\frac{3.26}{2.89}\\ =\\frac{1.128}{\\log\\ 11}=\\ \\frac{1.128}{1.04}=\\ 1.08$\n\nHope this helps",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369540)\n\n**Passage:**\nIf f ( x + 1 ) = log ⁡ x 2 + 4 x − 21 x 2 + x − 20 f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20 f ( x + 1 ) = lo g x 2 + 4 x − 2 1 ​ x 2 + x − 2 0 , find the value of f(-7) x f(6).\n\nGiven: log ⁡ 3 4 = 1.26 , log ⁡ 10 11 = 1.04 \\log_34=1.26,\\log_{10}11=1.04 lo g 3 ​ 4 = 1 . 2 6 , lo g 1 0 ​ 1 1 = 1 . 0 4\n\n1.084\n\n2.014\n\n1.264\n\n1.184\n\nIf $f\\left(x+1\\right)=\\log_{x^2+4x-21}x^2+x-20$, find the value of f(-7) x f(6).\n\nGiven: $\\log_34=1.26,\\log_{10}11=1.04$\n\n**Options:**\n- **A**. 1.084\n- **B**. 2.014\n- **C**. 1.264\n- **D**. 1.184\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2251",
+      "passage_text": "Find the value of\n\n[ log ⁡ 2 200 ] + [ log ⁡ 3 199 ] + [ log ⁡ 4 198 ] + . . . . + [ log ⁡ 200 2 ] \\left[\\sqrt{\\ \\log_2200}\\right]+\\left[\\sqrt{\\ \\log_3199}\\right]+\\left[\\sqrt{\\ \\log_4198}\\right]+....+\\left[\\sqrt{\\ \\log_{200}2}\\right] [ lo g 2 ​ 2 0 0 ​ ] + [ lo g 3 ​ 1 9 9 ​ ] + [ lo g 4 ​ 1 9 8 ​ ] + . . . . + [ lo g 2 0 0 ​ 2 ​ ] ,\n\nwhere [x] represents the greatest integer less than or equal to x.\n\n96\n\n102\n\n48\n\n99",
+      "question_text": "Find the value of\n\n$\\left[\\sqrt{\\ \\log_2200}\\right]+\\left[\\sqrt{\\ \\log_3199}\\right]+\\left[\\sqrt{\\ \\log_4198}\\right]+....+\\left[\\sqrt{\\ \\log_{200}2}\\right]$,\n\nwhere [x] represents the greatest integer less than or equal to x.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "96",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "102",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "99",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "$\\left[\\sqrt{\\ \\log_2200}\\right]+\\left[\\sqrt{\\ \\log_3199}\\right]+\\left[\\sqrt{\\ \\log_4198}\\right]+....+\\left[\\sqrt{\\ \\log_{200}2}\\right]$\n\n$\\left[\\sqrt{\\ \\log_2200}\\right]=\\left[\\sqrt{\\ 7.xx}\\right]=2$\n\n$\\left[\\sqrt{\\ \\log_3199}\\right]=\\left[\\sqrt{\\ 4.xx}\\right]=2$\n\n$\\left[\\sqrt{\\ \\log_4198}\\right]=\\left[\\sqrt{\\ 3.xx}\\right]=1$\n\nSimilarly till base 101, values will be 1.\n\nThereafter, the values will be zero because the base is lesser, and hence the value under the square root is less than 1.\n\nSum = 2 + 2 + (101 - 3) = 102.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 369288)\n\n**Passage:**\nFind the value of\n\n[ log ⁡ 2 200 ] + [ log ⁡ 3 199 ] + [ log ⁡ 4 198 ] + . . . . + [ log ⁡ 200 2 ] \\left[\\sqrt{\\ \\log_2200}\\right]+\\left[\\sqrt{\\ \\log_3199}\\right]+\\left[\\sqrt{\\ \\log_4198}\\right]+....+\\left[\\sqrt{\\ \\log_{200}2}\\right] [ lo g 2 ​ 2 0 0 ​ ] + [ lo g 3 ​ 1 9 9 ​ ] + [ lo g 4 ​ 1 9 8 ​ ] + . . . . + [ lo g 2 0 0 ​ 2 ​ ] ,\n\nwhere [x] represents the greatest integer less than or equal to x.\n\n96\n\n102\n\n48\n\n99\n\nFind the value of\n\n$\\left[\\sqrt{\\ \\log_2200}\\right]+\\left[\\sqrt{\\ \\log_3199}\\right]+\\left[\\sqrt{\\ \\log_4198}\\right]+....+\\left[\\sqrt{\\ \\log_{200}2}\\right]$,\n\nwhere [x] represents the greatest integer less than or equal to x.\n\n**Options:**\n- **A**. 96\n- **B**. 102\n- **C**. 48\n- **D**. 99\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2252",
+      "passage_text": "If 10! is resented in base 7. What will be the number of digits of that number?. It is given that l o g 10 2 = 0.301 log_{10}2 = 0.301 l o g 1 0 ​ 2 = 0 . 3 0 1 , l o g 10 3 = 0.4771 log_{10}3 = 0.4771 l o g 1 0 ​ 3 = 0 . 4 7 7 1 and l o g 10 7 = 0.845 log_{10}7 = 0.845 l o g 1 0 ​ 7 = 0 . 8 4 5",
+      "question_text": "If 10! is resented in base 7. What will be the number of digits of that number?. It is given that $log_{10}2 = 0.301$, $log_{10}3 = 0.4771$ and $log_{10}7 = 0.845$",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "Let N = 10!$\\log_7N\\ =\\ \\log_71+\\log_72+\\log_73.....\\ +\\log_710$\n\nTaking  log of base 7 both sides:\n\n$\\log_7N\\ =\\ \\log_7\\left(1\\times\\ 2\\times\\ 3...\\times\\ 9\\times\\ 10\\right)$\n\n$\\log_7N\\ =\\ 1+8\\log_72+4\\log_73+2\\log_75$...(I)\n\nWe now need to input the value of $log_72$ , $log_73$ and $log_75$\n\n$\\log_72=\\frac{\\log_{10}2}{\\log_{10}7}=\\frac{0.301}{0.845}=0.3562$\n\n$\\log_73=\\frac{\\log_{10}3}{\\log_{10}7}=\\frac{0.4771}{0.845}=0.5646$\n\n$\\log_75=\\frac{\\log_{10}5}{\\log_{10}7}=\\frac{1-\\log_{10}2}{\\log_{10}7}=\\frac{1-0.301}{0.845}=0.8272$\n\nPutting all the values in (I)\n\n$\\log_7N=1+8\\left(0.3562\\right)+4\\left(0.5646\\right)+2\\left(0.8272\\right)$\n\n$\\log_7N=1+2.8496+2.2584+1.6544=7.7624$\n\nThus there will be overall 8 digits",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 368134)\n\n**Passage:**\nIf 10! is resented in base 7. What will be the number of digits of that number?. It is given that l o g 10 2 = 0.301 log_{10}2 = 0.301 l o g 1 0 ​ 2 = 0 . 3 0 1 , l o g 10 3 = 0.4771 log_{10}3 = 0.4771 l o g 1 0 ​ 3 = 0 . 4 7 7 1 and l o g 10 7 = 0.845 log_{10}7 = 0.845 l o g 1 0 ​ 7 = 0 . 8 4 5\n\nIf 10! is resented in base 7. What will be the number of digits of that number?. It is given that $log_{10}2 = 0.301$, $log_{10}3 = 0.4771$ and $log_{10}7 = 0.845$\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2253",
+      "passage_text": "Solve for x:\n\nlog ⁡ 10 [ log ⁡ 10 ( 2 + log ⁡ 2 ( x + 2 ) ) ] = 0 \\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ lo g 1 0 ​ [ lo g 1 0 ​ ( 2 + lo g 2 ​ ( x + 2 ) ) ] = 0",
+      "question_text": "Solve for x:\n\n$\\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ $",
+      "options": [],
+      "correct_option_data": "254",
+      "solution_text": "$\\log\\left[\\log\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ $\n\n'.' RHS=0, $\\left[\\log\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=1\\ $, which means:\n\n$2+\\log_2\\left(x+2\\right)=10$\n\n=> $\\log_2\\left(x+2\\right)=8$\n\n=>$\\left(x+2\\right)=2^8$\n\n.'. x= 256-2= 254",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 367627)\n\n**Passage:**\nSolve for x:\n\nlog ⁡ 10 [ log ⁡ 10 ( 2 + log ⁡ 2 ( x + 2 ) ) ] = 0 \\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ lo g 1 0 ​ [ lo g 1 0 ​ ( 2 + lo g 2 ​ ( x + 2 ) ) ] = 0\n\nSolve for x:\n\n$\\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ $\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

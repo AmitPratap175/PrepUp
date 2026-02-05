@@ -46317,6 +46317,146 @@
       "solution_text": "In the question, it is given that 37000 natives like IT, 12000 natives like only TW, 12000 natives like IT and FL but not TW, and 7000 natives like all three magazines.\n\nIn the question, it is given that the number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. Therefore, the number of natives who like exactly two magazines = 5*7000 = 35000\nIt is given, 22,000 natives like IT and exactly one more magazine.\n\n(only IT and TW) + (only IT and FL) = 22000\n\nonly IT and TW = 22000 - 12000 = 10000\n\nThe number of natives who like exactly two magazines is 35000\n\nTherefore, only TW and FL = 35000 - 12000 - 10000 = 13000\n\nIt is given that 28,000 natives do not like IT but like FL.\n\n(only FL) + (only FL and TW) = 28000\n\nonly FL = 28000 - 13000 = 15000\n\nFinal arrangement:\n\nThe number of natives who like all FMCG brands is 30000.\n\nThe number of natives who like P&G = The number of natives who like IT + 42% of those who like TW but not IT = 37000 + 0.42(25000) = 47500\n\nThe number of natives who like HUL = 0.375(42000) + 0.5(47000) = 39250\n\nThe number of natives who like RB = 39250\n\nS + D + T + N = 80000 ...... (1)\n\nS + 2D + 3T = 47500+2(39250) = 126000 ...... (2)\n\nS + 2D = 36000\n\nIt is given, S = 0, i.e. a = b = c = 0\n\nD = d + e + f = 18000 ...... (3)\n\nd + e = 17500 ...... (4)\n\n(3)-(4) -> f = 500\n\nHUL = 39250\n\nd + b + f + 30000 = 39250\n\nd = 8750\n\nSimilarly, we get e = 8750\n\nThe number of natives who liked P&G and HUL = 30000 + 8750 = 38750",
       "image_url": "",
       "full_markdown": "### Question (qid: 429356)\n\n**Passage:**\nA city consisting of 80000 people were surveyed for 3 magazines- India Today(IT), The Week(TW), Frontline(FL). These people were also surveyed for 3 FMCG brands- P&G, HUL and RB. A) The number of natives in the city who like exactly two magazines is five times the number of natives who like all the magazines. B) The sum of the number of natives who like IT and 42% of those who like TW but not IT is equal to the number of natives who like P&G. C) The number of natives who like HUL is equal to the sum of 37.5% of the number of natives who like TW and 50% of those who like FL. D) 30,000 natives like all the FMCG brands and 7,000 like all the magazines. E) 37,000 natives like IT. F) 28,000 natives do not like IT but like FL. G) 22,000 natives like IT and exactly one more magazine. H) 12,000 natives like only TW and the same number of natives like IT and FL but not TW. I) The number of natives who like RB is same as the number of natives who like HUL.\n\nIf it is known that none of the natives liked exactly one FMCG brands, find the number of natives who liked P&G and HUL?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1639",
+      "passage_text": "Two players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "If a = A and n = 5, what should the player starting the game choose initially so that he will definitely win the game?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "E",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us think of it this way. The alphabets from A to Z can be thought of as numbers from 1 to 26 from which the two players pick.\n\nIf the player starting the game wants to win, he has to make sure that the other one is left with only one number, i.e the last number 26, in his last chance, which he has to pick necessarily.\n\nNow let us consider a consecutive pair of chances. Whichever number a player picks from the n different choices, the second player can always pick a number such that to adjust it and make a sum of n + 1.\n\nSo, suppose, n = 6. If the first player chooses 3, the second player can choose 4 to make the sum 7.\n\nSo, \n\nThe sum of all numbers should be the total number of characters, that is the alphabet representing 'a' to the alphabet 'Z'. In this case, \n\n26 - ( 3 x 7 + 1) = 4, i.e D.\n\nIn this question,\n\nIf a = A, this means a = 1.\n\nn = 5.\n\nn + 1 = 6\n\nTotal number of alphabets = 26\n\nSo, he should choose, \n\n26 - ( 6 x 4 + 1) = 26 - 25 = 1\n\nHence, A.\n\nAlternate explanation:\n\nLet the player who starts be P1 and the other be P2. We have to figure out which starting positions are definite losing positions.\n\nZ is a losing position. If only Z is left, you have to pick Z and lose.\n\nY is a winning position as you will pick Y leaving opponent with Z which is a losing position. \n\nAny starting position from U to Y, you pick Y ensuring opponent loses.\n\nHence U-Y -> winning positions.\n\nT is a losing position as no matter what you pick, opponent's starting position will fall in U-Y which are winning positions.\n\nSimilarly, O-S are winning positions as you should always choose S, putting opponent on T.\n\nSo we see the pattern that Z, T, N, H, B are losing positions. The corresponding numbers are 26, 20, 14, 8, 2. \n\nAs B is definitely losing position, the first player should choose A to put the opponent on B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366760)\n\n**Passage:**\nTwo players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.\n\nIf a = A and n = 5, what should the player starting the game choose initially so that he will definitely win the game?\n\n**Options:**\n- **A**. A\n- **B**. B\n- **C**. D\n- **D**. E\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1640",
+      "passage_text": "Two players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "If the game is being played between Simon and Billy, and Simon gets the first chance, what should he pick in the first chance so that he wins the game definitely? a = D, n = 8.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "E",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "F",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "G",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "H",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let us think of it this way. The alphabets from A to Z can be thought of as numbers from 1 to 26 from which the two players pick.\n\nIf the player starting the game wants to win, he has to make sure that the other one is left with only one number, i.e the last number 26, in his last chance, which he has to pick necessarily.\n\nNow let us consider a consecutive pair of chances. Whichever number a player picks from the n different choices, the second player can always pick a number such that to adjust it and make a sum of n + 1.\n\nSo, suppose, n = 6. If the first player chooses 3, the second player can choose 4 to make the sum 7.\n\nSo, \n\nThe sum of all numbers should be the total number of characters, that is the alphabet representing 'a' to the alphabet 'Z'. In this case, \n\n26 - ( 3 x 7 + 1) = 4, i.e D.\n\nIn this question,\n\nIf a = D, this means a = 4.\n\nn = 8.\n\nn + 1 = 9\n\nTotal number of alphabets = 26 - 4 + 1 = 23\n\nSo, he should choose, \n\n23 - ( 9 x 2 + 1) = 23 - 19 = 4\n\nHence, D + 4 - 1 = G.\n\nAlternate explanation:\n\nWe have to figure out which starting positions are definite losing positions.\n\nZ is a losing position. If only Z is left, you have to pick Z and lose.\n\nY is a winning position as you will pick Y leaving the opponent with Z which is a losing position. \n\nAny starting position from R to Y, you pick Y ensuring the opponent loses.\n\nHence R-Y -> winning positions.\n\nQ is a losing position as no matter what you pick, the opponent's starting position will fall in R-Y which are winning positions.\n\nSimilarly, I-P are winning positions as you should always choose P, putting the opponent on Q.\n\nSo we see the pattern that Z, Q, H are losing positions. The corresponding numbers are 26, 17, 8. \n\nAs H is definitely losing position, the first player should choose G to put the opponent on H.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366761)\n\n**Passage:**\nTwo players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.\n\nIf the game is being played between Simon and Billy, and Simon gets the first chance, what should he pick in the first chance so that he wins the game definitely? a = D, n = 8.\n\n**Options:**\n- **A**. E\n- **B**. F\n- **C**. G\n- **D**. H\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1641",
+      "passage_text": "Two players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "If the game is played between Sheldon and Howard and Sheldon gets to start the game, in which of the following games does Sheldon not get to win, no matter which alphabet he picks in the first chance?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "a = E, n = 6",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "a = A, n = 3",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "a = A, n = 7",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "a = C, n = 5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us think of it this way. The alphabets from A to Z can be thought of as numbers from 1 to 26 from which the two players pick.\n\nIf the player starting the game wants to win, he has to make sure that the other one is left with only one number, i.e the last number 26, in his last chance, which he has to pick necessarily.\n\nNow let us consider a consecutive pair of chances. Whichever number a player picks from the n different choices, the second player can always pick a number such that to adjust it and make a sum of n + 1.\n\nSo, suppose, n = 6. If the first player chooses 3, the second player can choose 4 to make the sum 7.\n\nSo, \n\nThe sum of all numbers should be the total number of characters, that is the alphabet representing 'a' to the alphabet 'Z'. In this case, \n\n26 - ( 3 x 7 + 1) = 4, i.e D.\n\nIn this question, \n\nIt has been asked when can the player starting the game never win.\n\nSuppose the number of characters is x.\n\nIf the player starting the game has to lose, he has to be left with no other choice but Z in his last chance.\n\nHence, m( n + 1 ) + 1 = x\n\nwhere m is a natural number.\n\nOption 1: x = 22, n = 6, n + 1 = 7 -> 7 x 3 + 1 = 22, hence this satisfies the equation m( n + 1 ) + 1 = x\n\nOption 2: x = 26, n = 3, n + 1 = 4 -> 4 x 6 + 2 = 26, this does not satisfy the equation m( n + 1 ) + 1 = x\n\nOption 3: x = 26, n = 7, n + 1 = 8 -> 8 x 3 + 2 = 26, this does not satisfy the equation m( n + 1 ) + 1 = x\n\nOption 4: x = 24, n = 5, n + 1 = 6 -> 6 x 3 + 6  = 24, this does not satisfy the equation m( n + 1 ) + 1 = x\n\nHence, Option 1.\n\nAlternate Solution:\n\nWe have to figure out which starting positions are definite losing positions.\n\nZ is a losing position. If only Z is left, you have to pick Z and lose.\n\nY is a winning position as you will pick Y leaving the opponent with Z which is a losing position. \n\nIf n=6, any starting position from T to Y, you pick Y ensuring the opponent loses.\n\nHence T-Y -> winning positions.\n\nS is a losing position as no matter what you pick, the opponent's starting position will fall in T-Y which are winning positions.\n\nSimilarly, M-R are winning positions as you should always choose R, putting the opponent on S.\n\nSo we see the pattern that Z, S, L, E are losing positions. The corresponding numbers are 26, 19, 12, 5. \n\nAs E is definitely losing position for n=6, Sheldon should choose E to definitely lose the game.\n\nHence, Option(A) is right.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366762)\n\n**Passage:**\nTwo players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.\n\nIf the game is played between Sheldon and Howard and Sheldon gets to start the game, in which of the following games does Sheldon not get to win, no matter which alphabet he picks in the first chance?\n\n**Options:**\n- **A**. a = E, n = 6\n- **B**. a = A, n = 3\n- **C**. a = A, n = 7\n- **D**. a = C, n = 5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1642",
+      "passage_text": "Two players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.",
+      "question_text": "Suppose the rules of the game are changed such that the one who picks Z wins. What should the player who is starting the game pick in his first chance so that he definitely wins? a = A, n = 4.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "D",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us think of it this way. The alphabets from A to Z can be thought of as numbers from 1 to 26 from which the two players pick.\n\nIf the player starting the game wants to win, he has to make sure that he is left with only one number, i.e the last number 26, in his last chance, which he has to pick necessarily.\n\nNow let us consider a consecutive pair of chances. Whichever number a player picks from the n different choices, the second player can always pick a number such that to adjust it and make a sum of n + 1.\n\nSo, suppose, n = 6. If the first player chooses 3, the second player can choose 4 to make the sum 7.\n\nSo, \n\nThe sum of all numbers should be the total number of characters, that is the alphabet representing 'a' to the alphabet 'Z'. In this case, \n\n26 - ( 3 x 7 ) = 5, i.e E.\n\nIn this question,\n\nIf a = A, this means a = 1.\n\nn = 4\n\nn + 1 = 5\n\nTotal number of alphabets = 26\n\nSo, he should choose, \n\n26 - ( 5 x 5 ) = 26 - 25 = 1\n\nHence, A.\n\nAlternate Solution:\n\nLet the player who starts be P1 and the other be P2. We have to figure out which starting positions are definite losing positions.\n\nZ is a winning position. \n\nAny starting position from W to Z, you pick Z ensuring that you win.\n\nV is a losing position because the opponent will fall in the winning position W-Z.\n\nR-U are winning positions because the opponent has to choose V which is a losing position.\n\nSo we see the pattern that V, Q, L, G, B are losing positions. The corresponding numbers are 22, 17, 12, 7, 2. \n\nAs B is definitely losing position, the first player should choose A to put the opponent on B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 366763)\n\n**Passage:**\nTwo players are playing a game called 'Pick an alpha'. In this game, there are 2 variables, the first one is 'a', the starting alphabet, and the second one 'n' the maximum range of alphabets starting from 'a'. The game proceeds as follows. One of the players picks an alphabet from the first n alphabets starting from 'a', say 'm', now the second player has to pick an alphabet from the first n alphabets starting from the alphabet just after 'm', and in a similar way, it continues till one player picks the alphabet Z. The player to choose Z loses the game. If at any point during the game, less than n alphabets remain, the player has to choose from these remaining alphabets. Both the players pick alphabets that maximise their chance to win.\n\nSuppose, the value of 'a' is G and the value of n is 3. So, the first player has to pick an alphabet among G, H, I. Suppose he picks I. Then the second player has to pick among J, K and L. It continues in a similar fashion.\n\nBased on the information given above, answer the questions that follow.\n\nSuppose the rules of the game are changed such that the one who picks Z wins. What should the player who is starting the game pick in his first chance so that he definitely wins? a = A, n = 4.\n\n**Options:**\n- **A**. A\n- **B**. B\n- **C**. C\n- **D**. D\n\n**Correct Answer:** null"
     }
   ]
 }

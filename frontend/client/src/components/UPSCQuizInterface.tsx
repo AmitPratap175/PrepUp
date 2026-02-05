@@ -336,7 +336,7 @@ export function UPSCQuizInterface({
                         <div className="max-w-5xl mx-auto w-full">
                             <div className="prose max-w-none mb-8 dark:prose-invert">
                                 <div className="text-lg text-foreground leading-relaxed mb-4 preserve-whitespace">
-                                    <Latex>{currentQuestion?.question_text}</Latex>
+                                    <Latex>{currentQuestion?.question_text || ""}</Latex>
                                 </div>
                             </div>
 
@@ -353,7 +353,7 @@ export function UPSCQuizInterface({
                                         <div className="flex gap-3 w-full">
                                             <span className="font-semibold text-foreground/80">{option.label}.</span>
                                             <span className="text-foreground text-lg leading-relaxed">
-                                                <Latex>{option.option_text}</Latex>
+                                                <Latex>{option.option_text || ""}</Latex>
                                             </span>
                                         </div>
                                     </label>
