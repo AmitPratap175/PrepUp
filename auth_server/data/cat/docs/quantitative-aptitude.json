@@ -70656,6 +70656,281 @@
       "solution_text": "$\\log\\left[\\log\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ $\n\n'.' RHS=0, $\\left[\\log\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=1\\ $, which means:\n\n$2+\\log_2\\left(x+2\\right)=10$\n\n=> $\\log_2\\left(x+2\\right)=8$\n\n=>$\\left(x+2\\right)=2^8$\n\n.'. x= 256-2= 254",
       "image_url": "",
       "full_markdown": "### Question (qid: 367627)\n\n**Passage:**\nSolve for x:\n\nlog ⁡ 10 [ log ⁡ 10 ( 2 + log ⁡ 2 ( x + 2 ) ) ] = 0 \\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ lo g 1 0 ​ [ lo g 1 0 ​ ( 2 + lo g 2 ​ ( x + 2 ) ) ] = 0\n\nSolve for x:\n\n$\\log_{10}\\left[\\log_{10}\\left(2+\\log_2\\left(x+2\\right)\\right)\\right]=0\\ $\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2254",
+      "passage_text": "",
+      "question_text": "A dishonest shopkeeper adulterates the black pepper with papaya seeds. For each 1000 grams of real pepper, he adds 100 grams of papaya seeds. On top of that, he markups the price by 20% and then offers a discount of 15%. What is his profit % from the resulting sales?\n\nAssume that the cost of papaya seeds is negligible.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16.25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "12.2%",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "8.4%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "14.4%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the actual cost price for the Pepper be Rs$x$ / kg\n\nHe marks up the price by 20% and then give 15% discount. Thus the mentioned selling rate will be $\\left(1.2\\right)\\left(0.85\\right)x=1.02x$\n\nIn reality, 1000 grams of pepper has 100 grams of papaya seeds.\n\nThus the 1100 grams of the mixture will have 1000 gram of real pepper\n\n1kgbof the mixture will have $\\frac{10}{11}$ kg of real pepper.\n\nIf the shopkeeper sells 1 kg of the mixture\n\nActual cost price for shopkeeper = $\\frac{10}{11}x$\n\nActual selling price = $1.02x$\n\nProfit = $1.02x-\\frac{10}{11}x=\\frac{1.22x}{11}$\n\nProfit% = $\\frac{\\left(\\frac{1.22x}{11}\\right)}{\\frac{10x}{11}}\\times\\ 100\\%\\ =\\frac{1.22}{10}\\times\\ 100\\%=12.2\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 364470)\n\n**Passage:**\nA dishonest shopkeeper adulterates the black pepper with papaya seeds. For each 1000 grams of real pepper, he adds 100 grams of papaya seeds. On top of that, he markups the price by 20% and then offers a discount of 15%. What is his profit % from the resulting sales?\n\nAssume that the cost of papaya seeds is negligible.\n\n16.25%\n\n12.2%\n\n8.4%\n\n14.4%\n\nA dishonest shopkeeper adulterates the black pepper with papaya seeds. For each 1000 grams of real pepper, he adds 100 grams of papaya seeds. On top of that, he markups the price by 20% and then offers a discount of 15%. What is his profit % from the resulting sales?\n\nAssume that the cost of papaya seeds is negligible.\n\n**Options:**\n- **A**. 16.25%\n- **B**. 12.2%\n- **C**. 8.4%\n- **D**. 14.4%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2255",
+      "passage_text": "Ananth wanted to buy a car. The cost of the car was Rs 4,50,000. He was supposed to make 8 equal instalments divided uniformly in 2 years and was charged 16% per annum compounded quarterly. What is the approximate amount he has to pay in each instalments?\n\nRs 58,505\n\nRs 65,250\n\nRs 66,847\n\nRs 56,250",
+      "question_text": "Ananth wanted to buy a car. The cost of the car was Rs 4,50,000. He was supposed to make 8 equal instalments divided uniformly in 2 years and was charged 16% per annum compounded quarterly. What is the approximate amount he has to pay in each instalments?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Rs 58,505",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Rs 65,250",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Rs 66,847",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Rs 56,250",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the installements be $y$\n\nThen, $450000\\left(1+4\\%\\right)^8=y\\left(1+4\\%\\right)^7+y\\left(1+4\\%\\right)^6.....y\\left(1+4\\%\\right)+y$\n\nUpon simplifying\n\n$450000\\left(1.04\\right)^8=\\frac{y\\left(1.04^8-1\\right)}{1.04-1}$\n\n$450000\\left(1.3685\\right)=9.2125y$\n\n$y=\\frac{450000\\left(1.3685\\right)}{9.2125}=66846.67$\n\nOption C is closest",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 364469)\n\n**Passage:**\nAnanth wanted to buy a car. The cost of the car was Rs 4,50,000. He was supposed to make 8 equal instalments divided uniformly in 2 years and was charged 16% per annum compounded quarterly. What is the approximate amount he has to pay in each instalments?\n\nRs 58,505\n\nRs 65,250\n\nRs 66,847\n\nRs 56,250\n\nAnanth wanted to buy a car. The cost of the car was Rs 4,50,000. He was supposed to make 8 equal instalments divided uniformly in 2 years and was charged 16% per annum compounded quarterly. What is the approximate amount he has to pay in each instalments?\n\n**Options:**\n- **A**. Rs 58,505\n- **B**. Rs 65,250\n- **C**. Rs 66,847\n- **D**. Rs 56,250\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2256",
+      "passage_text": "",
+      "question_text": "A merchant purchases goods at the rate of 14 for Rs 105, marks them at the rate of 7 for Rs 140. If he offers 2 successive discounts on the marked price, d1% and d2%, such that d1 is one-fifth the markup percentage and d2 is half that of the value of d1, what is the profit/loss made by selling 90 goods?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Profit of Rs 325",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Loss of Rs 325",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Profit of Rs 225",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Profit of Rs 250",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "CP of 1 good = 105/14 = Rs. 7.5\n\nMP of 1 good = 140/7 = Rs. 20\n\nHence, markup % = 12.5/7.5 x 100 = 500/3 %\n\nHence, d1 = 100/3% = 1/3\n\nd2 = 50/3% = 1/6\n\nHence, SP of 1 good = $20\\times\\ \\left(1-\\frac{1}{3}\\right)\\left(1-\\frac{1}{6}\\right)=20\\times\\ \\frac{2}{3}\\times\\ \\frac{5}{6}=20\\times\\ \\frac{5}{9}=\\frac{100}{9}$\n\nProfit on one good = $\\frac{100}{9}-\\frac{15}{2}=\\frac{65}{18}$\n\nHence, profit on 90 goods = 65 x 5 = Rs 325.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 365548)\n\n**Passage:**\nA merchant purchases goods at the rate of 14 for Rs 105, marks them at the rate of 7 for Rs 140. If he offers 2 successive discounts on the marked price, d1% and d2%, such that d1 is one-fifth the markup percentage and d2 is half that of the value of d1, what is the profit/loss made by selling 90 goods?\n\nProfit of Rs 325\n\nLoss of Rs 325\n\nProfit of Rs 225\n\nProfit of Rs 250\n\nA merchant purchases goods at the rate of 14 for Rs 105, marks them at the rate of 7 for Rs 140. If he offers 2 successive discounts on the marked price, d1% and d2%, such that d1 is one-fifth the markup percentage and d2 is half that of the value of d1, what is the profit/loss made by selling 90 goods?\n\n**Options:**\n- **A**. Profit of Rs 325\n- **B**. Loss of Rs 325\n- **C**. Profit of Rs 225\n- **D**. Profit of Rs 250\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2257",
+      "passage_text": "A dishonest cloth merchant marks up the price of his cloth by 20%, and does not offer any discount unless asked for. Also, while selling, he uses a metre scale, whose actual length is 80cm. One fine day, an old woman visits his shop to buy some cloth. She is good at bargaining and consequently manages to buy the cloth at a price such that the merchant's net profit or loss is zero. What is the discount percentage she managed to get on the marked price while buying the cloth?\n\n33.33%\n\n66.67%\n\n25%\n\n50%",
+      "question_text": "A dishonest cloth merchant marks up the price of his cloth by 20%, and does not offer any discount unless asked for. Also, while selling, he uses a metre scale, whose actual length is 80cm. One fine day, an old woman visits his shop to buy some cloth. She is good at bargaining and consequently manages to buy the cloth at a price such that the merchant's net profit or loss is zero. What is the discount percentage she managed to get on the marked price while buying the cloth?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "33.33%",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "66.67%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "50%",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the CP of 1 cm of cloth be Rs. 1.\n\nHence MP of 1 metre cloth = Rs. 100 x 1.2 = Rs 120\n\nCP of the same amount of cloth = CP for 80cm cloth = Rs 80\n\nSince there was no profit or no loss, SP = Rs 80.\n\nHence, discount = MP - SP = 120 - 80 = 40\n\nHence, discount % = $\\frac{40}{120}\\times\\ 100=33.33\\%$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 364475)\n\n**Passage:**\nA dishonest cloth merchant marks up the price of his cloth by 20%, and does not offer any discount unless asked for. Also, while selling, he uses a metre scale, whose actual length is 80cm. One fine day, an old woman visits his shop to buy some cloth. She is good at bargaining and consequently manages to buy the cloth at a price such that the merchant's net profit or loss is zero. What is the discount percentage she managed to get on the marked price while buying the cloth?\n\n33.33%\n\n66.67%\n\n25%\n\n50%\n\nA dishonest cloth merchant marks up the price of his cloth by 20%, and does not offer any discount unless asked for. Also, while selling, he uses a metre scale, whose actual length is 80cm. One fine day, an old woman visits his shop to buy some cloth. She is good at bargaining and consequently manages to buy the cloth at a price such that the merchant's net profit or loss is zero. What is the discount percentage she managed to get on the marked price while buying the cloth?\n\n**Options:**\n- **A**. 33.33%\n- **B**. 66.67%\n- **C**. 25%\n- **D**. 50%\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2258",
+      "passage_text": "Ram bought pens from a wholesaler at Rs. 200 per pen. For every additional pen sold by Ram after the first one, the selling price of the pen becomes Rs.5 less than the selling price of the previous pen. Using this strategy, Ram makes a 145% profit by selling 5 pens. What is the maximum number of pens a customer can buy in a single transaction such that Ram makes a profit on every pen sold?",
+      "question_text": "Ram bought pens from a wholesaler at Rs. 200 per pen. For every additional pen sold by Ram after the first one, the selling price of the pen becomes Rs.5 less than the selling price of the previous pen. Using this strategy, Ram makes a 145% profit by selling 5 pens. What is the maximum number of pens a customer can buy in a single transaction such that Ram makes a profit on every pen sold?",
+      "options": [],
+      "correct_option_data": "60",
+      "solution_text": "Let the cost of the pen be Rs $x$ and the marked price be $y$\n\nThe cost of 5 pen  = $5x$\n\nSelling price of 5 pens = $ y +(y-5)+(y-10)+(y-15)+(y-20)$ = 5y - 50\n\nAs per question\n\n$\\left(1+145\\%\\right)5x\\ =\\ 5y-50$\n\nOr $2.45x\\ =\\ y-10$...(I)\n\nPutting  $x=200$  gives, $y=500$\n\nThe selling price of the $n^{th} $ pen is = $ 500 -(n-1)5$\n\nTo make the sure that profit is obtained on every pen sold\n\nSP > CP\n\n$ 500 -(n-1)5 >200$\n\n$ 500 -5n +5 > 200$\n\n$ 305 > 5n $ or $ n <61$\n\nThus maximum possible pens he can sell is 60",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 364471)\n\n**Passage:**\nRam bought pens from a wholesaler at Rs. 200 per pen. For every additional pen sold by Ram after the first one, the selling price of the pen becomes Rs.5 less than the selling price of the previous pen. Using this strategy, Ram makes a 145% profit by selling 5 pens. What is the maximum number of pens a customer can buy in a single transaction such that Ram makes a profit on every pen sold?\n\nRam bought pens from a wholesaler at Rs. 200 per pen. For every additional pen sold by Ram after the first one, the selling price of the pen becomes Rs.5 less than the selling price of the previous pen. Using this strategy, Ram makes a 145% profit by selling 5 pens. What is the maximum number of pens a customer can buy in a single transaction such that Ram makes a profit on every pen sold?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2259",
+      "passage_text": "",
+      "question_text": "In a class, there were more than 10 boys and a certain number of girls. After 40% of the girls and 60% of the boys left the class, the remaining number of girls was 8 more than the remaining number of boys. Then, the minimum possible number of students initially in the class was",
+      "options": [],
+      "correct_option_data": "55",
+      "solution_text": "Let say number of girls be $g$ and number of boys be $b$.\n\nIf 40% of the girls left, remaining number of girls = $0.6g$\n\nAlso if 60% of the boys left, remaining number of boys = $0.4b$\n\nor, $0.6g=0.4b+8$\n\nor, $6g=4b+80$\n\nor, $3g=2b+40$\n\nSo, the possible values of (b,g) are: (13,22),(16,24),(19,26),(22,28),(25,30),.....\n\nNow, $0.6g$ and $0.4b$ has to be an integer.\n\nSo, for this $g$ and $b$ has to be a multiple of 5\n\nSo, $b=25$ and $g=30$\n\nSo, minimum possible number of students = $25+30=55$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476400)\n\n**Passage:**\nIn a class, there were more than 10 boys and a certain number of girls. After 40% of the girls and 60% of the boys left the class, the remaining number of girls was 8 more than the remaining number of boys. Then, the minimum possible number of students initially in the class was\n\nIn a class, there were more than 10 boys and a certain number of girls. After 40% of the girls and 60% of the boys left the class, the remaining number of girls was 8 more than the remaining number of boys. Then, the minimum possible number of students initially in the class was\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2260",
+      "passage_text": "The ratio of the number of students in the morning shift and afternoon shift of a school was 13 : 9. After 21 students moved from the morning shift to the afternoon shift, this ratio became 19 : 14. Next, some new students joined the morning and afternoon shifts in the ratio 3 : 8 and then the ratio of the number of students in the morning shift and the afternoon shift became 5 : 4. The number of new students who joined is\n\n110\n\n88\n\n121\n\n99",
+      "question_text": "The ratio of the number of students in the morning shift and afternoon shift of a school was 13 : 9. After 21 students moved from the morning shift to the afternoon shift, this ratio became 19 : 14. Next, some new students joined the morning and afternoon shifts in the ratio 3 : 8 and then the ratio of the number of students in the morning shift and the afternoon shift became 5 : 4. The number of new students who joined is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "88",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "121",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "99",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Let M=13k, A=9k. \n\nAfter 21 students were moved $\\frac{13k-21}{9k+21}=\\frac{19}{14}\\Rightarrow 14(13k-21)=19(9k+21)$\n\nSo $182k-294=171k+399\\Rightarrow 11k=693\\Rightarrow k=63$\n\nSo, the number of students in the morning and afternoon shifts are $819-21=798, 567+21=588$ respectively.\n\nLet's assume that $3t$ and $8t$ students joined the respective sessions. \n\n$\\dfrac{798+3t}{588+8t}=\\dfrac{5}{4}\\Rightarrow 4(798+3t)=5(588+8t)$\n\nSo $3192+12t=2940+40t\\Rightarrow 28t=252\\Rightarrow t=9$\n\nNumber of new students $=11t=99$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476408)\n\n**Passage:**\nThe ratio of the number of students in the morning shift and afternoon shift of a school was 13 : 9. After 21 students moved from the morning shift to the afternoon shift, this ratio became 19 : 14. Next, some new students joined the morning and afternoon shifts in the ratio 3 : 8 and then the ratio of the number of students in the morning shift and the afternoon shift became 5 : 4. The number of new students who joined is\n\n110\n\n88\n\n121\n\n99\n\nThe ratio of the number of students in the morning shift and afternoon shift of a school was 13 : 9. After 21 students moved from the morning shift to the afternoon shift, this ratio became 19 : 14. Next, some new students joined the morning and afternoon shifts in the ratio 3 : 8 and then the ratio of the number of students in the morning shift and the afternoon shift became 5 : 4. The number of new students who joined is\n\n**Options:**\n- **A**. 110\n- **B**. 88\n- **C**. 121\n- **D**. 99\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2261",
+      "passage_text": "",
+      "question_text": "The average salary of 5 managers and 25 engineers in a company is 60000 rupees. If each of the managers received 20% salary increase while the salary of the engineers remained unchanged, the average salary of all 30 employees would have increased by 5%. The average salary, in rupees, of the engineers is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "45000",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "50000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "54000",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "40000",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let the average salary of managers be $x$ and let the average salary of engineers be $y$. The total salary of all the employees will be $(5+25)*60000 = 1800000$\n\nWe have, $5x+25y = 1800000$ .... (1)\n\nIf the average salary of all the employees increases by $5\\%$, the total salary of all the employees will also increase by $5\\%$, because the total number of employees remains the same. The new total salary will be, $1800000\\times 1.05 = 1890000$\n\nAlso, the average salary of all the managers has increased by $20\\%$ and has become $1.2x$, we have\n\n$5*1.2x + 25y = 1890000$,  or  $6x + 25y  = 1890000$ .... (2)\n\nSubtracting equation (1) from equation (2), we get,\n\n$x = 90000$\n\nWhich gives $25y = 1800000 - 90000*5$  or  $y = \\dfrac{1350000}{25} = 54000$\n\nTherefore, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476586)\n\n**Passage:**\nThe average salary of 5 managers and 25 engineers in a company is 60000 rupees. If each of the managers received 20% salary increase while the salary of the engineers remained unchanged, the average salary of all 30 employees would have increased by 5%. The average salary, in rupees, of the engineers is\n\n45000\n\n50000\n\n54000\n\n40000\n\nThe average salary of 5 managers and 25 engineers in a company is 60000 rupees. If each of the managers received 20% salary increase while the salary of the engineers remained unchanged, the average salary of all 30 employees would have increased by 5%. The average salary, in rupees, of the engineers is\n\n**Options:**\n- **A**. 45000\n- **B**. 50000\n- **C**. 54000\n- **D**. 40000\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2262",
+      "passage_text": "",
+      "question_text": "The ratio of the number of coins in boxes A and B was 17:7. After 108 coins were shifted from box A to box B, this ratio became 37:20. The number of coins that needs to be shifted further from A to B, to make this ratio 1:1, is",
+      "options": [],
+      "correct_option_data": "272",
+      "solution_text": "Let the initial total number of coins in box A be $17x$, since the ratio of the number of coins in boxes A and B is $17:7$, the initial total number of coins in box B would be $7x$.\n\nAfter $108$ coins are shifted from box A to box B, the number of coins in box A would be $17x-108$ and in box B would be $7x+108$. We have,\n\n$\\dfrac{17x-108}{7x+108} = \\dfrac{37}{20}$\n\n$\\Rightarrow 340x - 2160 = 259x + 3996$\n\n$\\Rightarrow 81x = 6156$  or  $x= 76$\n\nTherefore, the total number of coins in the two boxes combined are $(17+7)*76 = 1824$, half of which is $912$. The number of coins in box B currently is $7*76+108 = 640$. The number of coins needed to make the coins equal in both the boxes is, $912-640 = 272$.\n\nThus, $272$ coins will be transferred from box A to box B to make the number of coins equal (1:1) in both the boxes.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476591)\n\n**Passage:**\nThe ratio of the number of coins in boxes A and B was 17:7. After 108 coins were shifted from box A to box B, this ratio became 37:20. The number of coins that needs to be shifted further from A to B, to make this ratio 1:1, is\n\nThe ratio of the number of coins in boxes A and B was 17:7. After 108 coins were shifted from box A to box B, this ratio became 37:20. The number of coins that needs to be shifted further from A to B, to make this ratio 1:1, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2263",
+      "passage_text": "",
+      "question_text": "The ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3:5",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "5:6",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "7:8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let Lakshmi's income = A and expenditure = B.\n\nLet Meenakshi's income = C and expenditure = D.\n\nFrom B:D = 2:3, take B = 2k and D = 3k.\n\nFrom A:D = 6:7, $A = \\tfrac{6}{7} D = \\tfrac{6}{7}\\cdot 3k = \\tfrac{18}{7}k$.\n\nLakshmi's saving = $A - B = \\tfrac{18}{7}k - 2k = \\tfrac{4}{7}k$.\n\nLet Meenakshi's saving $= C - D = C - 3k$. Given the savings ratio $\\frac{\\frac{4k}{7}}{C-3k} = \\tfrac{4}{9}$.\n\nSolve: $\\dfrac{4}{7}k\\cdot\\dfrac{9}{4} = C - 3k \\Rightarrow \\dfrac{9}{7}k = C - 3k \\Rightarrow C = \\dfrac{30}{7}k$\n\nSo incomes ratio $A:C = \\dfrac{18}{7}k : \\dfrac{30}{7}k = 18:30 = 3:5.$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476614)\n\n**Passage:**\nThe ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is\n\n3:5\n\n5:6\n\n2:1\n\n7:8\n\nThe ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is\n\n**Options:**\n- **A**. 3:5\n- **B**. 5:6\n- **C**. 2:1\n- **D**. 7:8\n\n**Correct Answer:** null"
     }
   ]
 }

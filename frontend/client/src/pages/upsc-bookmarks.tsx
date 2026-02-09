@@ -12,7 +12,8 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { PracticeTest, Question, Bookmark } from "@shared/schema";
+import { LocalResultView } from "@/components/local-result-view";
+import type { PracticeTest, Question, Bookmark, UserAnswer } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect, Link } from "wouter";
 import { Loader2, Download, Bookmark as BookmarkIcon } from "lucide-react";
@@ -21,11 +22,35 @@ interface BookmarkedQuestions {
     [subject: string]: Question[];
 }
 
+// Define interfaces for Chapterwise Quiz Data
+interface QuizOption {
+    text: string;
+    isCorrect: boolean;
+    rationale: string;
+}
+
+interface QuizQuestion {
+    question: string;
+    answerOptions: QuizOption[];
+    hint: string;
+    id?: string;
+    qid?: string;
+}
+
+interface QuizData {
+    title: string;
+    questions: QuizQuestion[];
+    subject?: string;
+}
+
 export default function UPSCBookmarksPage() {
     const { isAuthenticated } = useAuth();
     const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [isExporting, setIsExporting] = useState<string | null>(null);
+
+    // State to store answers upon submission
+    const [submittedAnswers, setSubmittedAnswers] = useState<UserAnswer[] | null>(null);
 
     const { data: bookmarks, isLoading: isLoadingBookmarks } = useQuery<Bookmark[]>({
         queryKey: ["bookmarks"],
@@ -51,26 +76,100 @@ export default function UPSCBookmarksPage() {
         queryKey: ["/api/practice-tests"],
     });
 
+    // Fetch UPSC Chapterwise Quizzes
+    const { data: chapterwiseQuizzes, isLoading: isLoadingChapterwise } = useQuery<QuizData[]>({
+        queryKey: ["/api/chapterwise-quiz/"],
+        queryFn: async () => {
+            const response = await fetch('/api/chapterwise-quiz/');
+            if (!response.ok) throw new Error('Failed to fetch quizzes');
+            return response.json();
+        }
+    });
+
     const [bookmarkedQuestions, setBookmarkedQuestions] =
         useState<BookmarkedQuestions>({});
 
+    // Helper to convert chapterwise data to PracticeTest format
+    const convertToPracticeTest = (data: QuizData, index: number): PracticeTest => {
+        // Generating stable ID based on title
+        const safeTitle = data.title ? data.title.replace(/[^a-zA-Z0-9]/g, '') : `Quiz${index}`;
+        const testId = `cw_${index}_${safeTitle}`;
+
+        const questions: any[] = data.questions.map((q: any, idx) => {
+            const correctOptionIndex = q.answerOptions.findIndex((o: any) => o.isCorrect);
+            const options = q.answerOptions.map((opt: any, i: number) => ({
+                label: String.fromCharCode(97 + i),
+                option_text: opt.text || "Option text missing",
+                data_option: String.fromCharCode(97 + i),
+                explanation: opt.rationale,
+                is_correct: opt.isCorrect
+            }));
+
+            const persistentId = q.qid || q.id;
+            const finalId = persistentId || `${testId}_q${idx}`;
+
+            return {
+                id: finalId,
+                qid: finalId,
+                index: idx,
+                question_text: q.question || "Question text missing",
+                options: options,
+                correct_answer: String.fromCharCode(97 + correctOptionIndex),
+                explanation: q.answerOptions[correctOptionIndex]?.rationale || "",
+                status: 'active',
+                created_at: new Date().toISOString()
+            };
+        });
+
+        // Heuristic to clean subject if it comes in mixed case
+        let subject = data.subject || "General Studies";
+        // Capitalize first letter of each word
+        subject = subject.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+
+        return {
+            id: testId,
+            title: data.title || `Chapter ${index + 1}`,
+            examType: "upsc",
+            subject: subject,
+            duration: Math.ceil(questions.length * 1.5),
+            totalQuestions: questions.length,
+            questions: questions,
+            is_full_length: false,
+            created_at: new Date().toISOString()
+        } as PracticeTest;
+    };
+
+
     useEffect(() => {
-        if (bookmarks && practiceTests) {
+        if (bookmarks) {
+            let allTests: PracticeTest[] = [];
+
+            // Prioritize Chapterwise Quizzes for UPSC bookmarks
+            if (chapterwiseQuizzes) {
+                const convertedTests = chapterwiseQuizzes.map((quiz, index) => convertToPracticeTest(quiz, index));
+                allTests = [...allTests, ...convertedTests];
+            }
+
+            if (practiceTests) {
+                allTests = [...allTests, ...practiceTests];
+            }
+
             const groupedBookmarks: BookmarkedQuestions = bookmarks.reduce(
                 (acc, bookmark) => {
                     const { subject, question_id } = bookmark;
-                    // Filter for UPSC subjects if needed, or just show all. 
-                    // Ideally we filter by examType 'upsc', but bookmarks don't store examType directly.
-                    // We can infer from the test it came from.
 
-                    const test = practiceTests.find(p => p.subject === subject);
+                    const test = allTests.find(p => p.subject === subject || (p.questions as any[]).some(q => q.qid === question_id || q.id === question_id));
+
                     if (test) {
-                        const question = (test.questions as Question[]).find(q => q.qid === question_id);
+                        const question = (test.questions as any[]).find(q => q.qid === question_id || q.id === question_id);
                         if (question) {
                             if (!acc[subject]) {
                                 acc[subject] = [];
                             }
-                            acc[subject].push(question);
+                            // Avoid duplicates
+                            if (!acc[subject].some(q => q.qid === question.qid)) {
+                                acc[subject].push(question);
+                            }
                         }
                     }
                     return acc;
@@ -79,7 +178,7 @@ export default function UPSCBookmarksPage() {
             );
             setBookmarkedQuestions(groupedBookmarks);
         }
-    }, [bookmarks, practiceTests]);
+    }, [bookmarks, practiceTests, chapterwiseQuizzes]);
 
     const handleExportPDF = async (subject: string) => {
         setIsExporting(subject);
@@ -122,7 +221,7 @@ export default function UPSCBookmarksPage() {
         return <Redirect to="/login" />;
     }
 
-    if (isLoadingBookmarks || isLoadingPracticeTests) {
+    if (isLoadingBookmarks || (isLoadingPracticeTests && isLoadingChapterwise)) {
         return (
             <div className="min-h-screen bg-background">
                 <AppHeader />
@@ -145,6 +244,24 @@ export default function UPSCBookmarksPage() {
             questions: bookmarkedQuestions[selectedSubject],
         };
 
+        if (submittedAnswers) {
+            return (
+                <LocalResultView
+                    test={test}
+                    userAnswers={submittedAnswers}
+                    onExit={() => {
+                        setSelectedSubject(null);
+                        setSubmittedAnswers(null);
+                        setCurrentQuestionIndex(0);
+                    }}
+                    onRetake={() => {
+                        setSubmittedAnswers(null);
+                        setCurrentQuestionIndex(0);
+                    }}
+                />
+            );
+        }
+
         const navigateToQuestion = (index: number) => {
             if (index >= 0 && index < bookmarkedQuestions[selectedSubject].length) {
                 setCurrentQuestionIndex(index);
@@ -158,7 +275,9 @@ export default function UPSCBookmarksPage() {
                     setSelectedSubject(null);
                     setCurrentQuestionIndex(0);
                 }}
-                onSubmit={() => { }}
+                onSubmit={(answers) => {
+                    setSubmittedAnswers(answers);
+                }}
                 onProgressUpdate={() => { }}
                 navigateToQuestion={navigateToQuestion}
                 currentQuestionIndex={currentQuestionIndex}

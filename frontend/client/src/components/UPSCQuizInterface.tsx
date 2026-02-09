@@ -140,9 +140,22 @@ export function UPSCQuizInterface({
     }, [duration, timeElapsed]);
 
     const handleAnswerSelect = (answer: string) => {
-        if (submittedAnswers.has(currentQuestion?.qid)) return;
         setAnswers(prev => ({ ...prev, [currentQuestion.qid]: answer }));
         setSubmittedAnswers(prev => new Set(prev).add(currentQuestion.qid));
+    };
+
+    const handleClearResponse = () => {
+        if (!currentQuestion?.qid) return;
+        setAnswers(prev => {
+            const newAnswers = { ...prev };
+            delete newAnswers[currentQuestion.qid];
+            return newAnswers;
+        });
+        setSubmittedAnswers(prev => {
+            const newSubmitted = new Set(prev);
+            newSubmitted.delete(currentQuestion.qid);
+            return newSubmitted;
+        });
     };
 
     const handleNext = () => {
@@ -367,7 +380,18 @@ export function UPSCQuizInterface({
                             <Button onClick={handlePrevious} disabled={currentQuestionIndex === 0} variant="outline" size="lg">
                                 Previous
                             </Button>
+
                             <div className="flex gap-3">
+                                <Button
+                                    onClick={handleClearResponse}
+                                    disabled={!answers[currentQuestion?.qid]}
+                                    variant="ghost"
+                                    size="lg"
+                                    className="text-muted-foreground hover:text-destructive"
+                                >
+                                    Clear Response
+                                </Button>
+
                                 {currentQuestionIndex === questions.length - 1 ? (
                                     <Button onClick={handleSubmit} className="bg-green-600 hover:bg-green-700" size="lg">
                                         Submit Test
