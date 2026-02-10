@@ -53,10 +53,26 @@ async def generate_quiz_from_pdf(client, pdf_path):
         await client.sources.add_file(nb.id, pdf_path, wait=True)
 
         # Identify Subject
+        # Identify Subject with Retry
         print("Identifying subject...")
-        subject_prompt = "Classify this document into one of the following subjects: Polity, Geography, History, Economy, Environment, Science, Current Affairs, or Others. Return ONLY the subject name in all lower case."
-        chat_result = await client.chat.ask(nb.id, subject_prompt)
-        subject = chat_result.answer.strip()
+        subject = ""
+        for attempt in range(3):
+            try:
+                subject_prompt = "Classify this document into one of the following subjects: Polity, Geography, History, Economy, Environment, Science, Current Affairs, or Others. Return ONLY the subject name in all lower case."
+                chat_result = await client.chat.ask(nb.id, subject_prompt)
+                subject = chat_result.answer.strip()
+                if subject:
+                    break
+                print(f"Subject detection attempt {attempt+1} return empty. Retrying...")
+                await asyncio.sleep(2)
+            except Exception as e:
+                print(f"Subject detection attempt {attempt+1} failed: {e}")
+                await asyncio.sleep(2)
+        
+        if not subject:
+            print("Failed to identify subject after retries. Defaulting to 'economy' (safe fallback).")
+            subject = "economy"
+
         print(f"Identified subject: {subject}")
         
         # Generate Quiz
@@ -82,8 +98,12 @@ async def generate_quiz_from_pdf(client, pdf_path):
     finally:
         # Cleanup notebook if needed, or leave it for history. 
         # Deleting might be safer to avoid clutter if run frequently.
-        await client.notebooks.delete(nb.id)
-        print("Notebook deleted.")
+        try:
+             if 'nb' in locals():
+                 await client.notebooks.delete(nb.id)
+                 print("Notebook deleted.")
+        except Exception as e:
+             print(f"Failed to delete notebook (ignored): {e}")
 
 def load_master_quiz_list():
     if not QUIZ_FILE.exists():
@@ -100,7 +120,8 @@ def load_master_quiz_list():
             else:
                 return []
     except json.JSONDecodeError:
-        return []
+        print(f"ERROR: {QUIZ_FILE} is invalid JSON. Cannot append.")
+        raise
 
 def append_to_master(quiz_data):
     master_list = load_master_quiz_list()
@@ -125,10 +146,39 @@ async def main():
         print("No PDFs found in data directory.")
         return
 
-    print(f"Found {len(pdfs)} PDFs. Starting batch generation...")
+    print(f"Found {len(pdfs)} PDFs.")
+    
+    # Sort naturally (e.g., Chapter 2 comes before Chapter 10)
+    def natural_key(path):
+        import re
+        return [int(text) if text.isdigit() else text.lower()
+                for text in re.split(r'(\d+)', path.name)]
+    
+    pdfs.sort(key=natural_key)
+    print("Starting batch generation in sorted order...")
 
     async with await NotebookLMClient.from_storage(STORAGE_PATH) as client:
+        # Load existing quizzes once
+        existing_quizzes = load_master_quiz_list()
+        existing_titles = set()
+        for q in existing_quizzes:
+            if "title" in q:
+                existing_titles.add(q["title"])
+
         for i, pdf in enumerate(pdfs):
+            # Check if pdf.stem is in any existing title
+            # The title format is usually "Generic Title (PDF Stem)" or just "PDF Stem"
+            # We search if the stem is present in any existing title to be safe
+            is_processed = False
+            for title in existing_titles:
+                if pdf.stem in title:
+                    is_processed = True
+                    break
+            
+            if is_processed:
+                print(f"Skipping {pdf.name} (Already in quiz.json)")
+                continue
+
             temp_file, subject = await generate_quiz_from_pdf(client, pdf)
             
             if temp_file and temp_file.exists():
@@ -137,8 +187,12 @@ async def main():
                         quiz_content = json.load(f)
                     
                     # Inject identified subject
+                    # Ensure subject is never empty
                     if subject:
                         quiz_content["subject"] = subject
+                    elif "subject" not in quiz_content or not quiz_content["subject"]:
+                         # Double safe fallback
+                         quiz_content["subject"] = "economy"
                     
                     # Ensure title matches PDF if generic
                     if "title" not in quiz_content or not quiz_content["title"]:

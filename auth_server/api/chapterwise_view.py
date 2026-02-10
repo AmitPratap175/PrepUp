@@ -20,10 +20,12 @@ class ChapterwiseQuizView(APIView):
             return Response({"error": "Chapterwise quiz data not found"}, status=status.HTTP_404_NOT_FOUND)
 
         try:
-            with open(file_path, 'r') as f:
+            with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             return Response(data)
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            print(f"JSON Error in {file_path}: {e}")
             return Response({"error": "Invalid JSON format in quiz file"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         except Exception as e:
+            print(f"Error loading {file_path}: {e}")
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
