@@ -70931,6 +70931,131 @@
       "solution_text": "Let Lakshmi's income = A and expenditure = B.\n\nLet Meenakshi's income = C and expenditure = D.\n\nFrom B:D = 2:3, take B = 2k and D = 3k.\n\nFrom A:D = 6:7, $A = \\tfrac{6}{7} D = \\tfrac{6}{7}\\cdot 3k = \\tfrac{18}{7}k$.\n\nLakshmi's saving = $A - B = \\tfrac{18}{7}k - 2k = \\tfrac{4}{7}k$.\n\nLet Meenakshi's saving $= C - D = C - 3k$. Given the savings ratio $\\frac{\\frac{4k}{7}}{C-3k} = \\tfrac{4}{9}$.\n\nSolve: $\\dfrac{4}{7}k\\cdot\\dfrac{9}{4} = C - 3k \\Rightarrow \\dfrac{9}{7}k = C - 3k \\Rightarrow C = \\dfrac{30}{7}k$\n\nSo incomes ratio $A:C = \\dfrac{18}{7}k : \\dfrac{30}{7}k = 18:30 = 3:5.$",
       "image_url": "",
       "full_markdown": "### Question (qid: 476614)\n\n**Passage:**\nThe ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is\n\n3:5\n\n5:6\n\n2:1\n\n7:8\n\nThe ratio of expenditures of Lakshmi and Meenakshi is 2 : 3, and the ratio of income of Lakshmi to expenditure of Meenakshi is 6 : 7. If excess of income over expenditure is saved by Lakshmi and Meenakshi, and the ratio of their savings is 4 : 9, then the ratio of their incomes is\n\n**Options:**\n- **A**. 3:5\n- **B**. 5:6\n- **C**. 2:1\n- **D**. 7:8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2264",
+      "passage_text": "The number of divisors of ( 2 6 × 3 5 × 5 3 × 7 2 ) (2^{6}\\times 3^{5}\\times 5^{3}\\times 7^{2}) ( 2 6 × 3 5 × 5 3 × 7 2 ) , which are of the form ( 3 r + 1 ) (3r+1) ( 3 r + 1 ) , where r is a non-negative integer, is\n\n36\n\n56\n\n24\n\n42",
+      "question_text": "The number of divisors of $(2^{6}\\times 3^{5}\\times 5^{3}\\times 7^{2})$, which are of the form $(3r+1)$, where r is a non-negative integer, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "42",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "The divisors of the given number will have the form $2^a*3^b*5^c*7^d$ with $0\\le a\\le6,\\ 0\\le b\\le5,\\ 0\\le c\\le3,\\ 0\\le d\\le2$\n\nBecause the divisors should be in the form 3r+1, it cannot be divisible by 3, so (b=0). \n\nReduce modulo 3: $2  \\text{mod}  3 = 2, 5  \\text{mod}  3 = 2, 7  \\text{mod}  3 = 1$ \n\nHence,  $2^a5^c7^d\\equiv 2^{a+c}\\cdot1^d \\equiv 2^{a+c}\\pmod3$\n\n2^k will be in the form 3r+1 only when K is even. So, we need a+c to be even\n\n$a\\in{0,\\dots,6}$ has 4 even, 3 odd values \n\n$c\\in{0,\\dots,3}$ has 2 even, 2 odd\n\nNumber of (a,c) with (a+c) even is $4\\cdot2 + 3\\cdot2 = 8+6=14$\n\nFor each such pair, there are 3 choices for d = 0,1,2. Thus, total divisors in the form (3r+1) equals $14\\times3=42$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476611)\n\n**Passage:**\nThe number of divisors of ( 2 6 × 3 5 × 5 3 × 7 2 ) (2^{6}\\times 3^{5}\\times 5^{3}\\times 7^{2}) ( 2 6 × 3 5 × 5 3 × 7 2 ) , which are of the form ( 3 r + 1 ) (3r+1) ( 3 r + 1 ) , where r is a non-negative integer, is\n\n36\n\n56\n\n24\n\n42\n\nThe number of divisors of $(2^{6}\\times 3^{5}\\times 5^{3}\\times 7^{2})$, which are of the form $(3r+1)$, where r is a non-negative integer, is\n\n**Options:**\n- **A**. 36\n- **B**. 56\n- **C**. 24\n- **D**. 42\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2265",
+      "passage_text": "",
+      "question_text": "A school has less than 5000 students and if the students are divided equally into teams of either 9 or 10 or 12 or 25 each, exactly 4 are always left out. However, if they are divided into teams of 11 each, no one is left out. The maximum number of teams of 12 each that can be formed out of the students in the school is",
+      "options": [],
+      "correct_option_data": "150",
+      "solution_text": "Since the total number of students, when divided by either 9 or 10 or 12 or 25 each, gives a remainder of 4, the number will be in the form of LCM(9,10,12,25)k + 4 = 900k + 4.\n\nIt is given that the value of 900k + 4 is less than 5000.\n\nAlso, it is given that 900k + 4 is divided by 11.\n\nIt is only possible when k = 2 and total students = 1804.\n\nSo, the number of 12 students group = 1800/12 = 150.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424130)\n\n**Passage:**\nA school has less than 5000 students and if the students are divided equally into teams of either 9 or 10 or 12 or 25 each, exactly 4 are always left out. However, if they are divided into teams of 11 each, no one is left out. The maximum number of teams of 12 each that can be formed out of the students in the school is\n\nA school has less than 5000 students and if the students are divided equally into teams of either 9 or 10 or 12 or 25 each, exactly 4 are always left out. However, if they are divided into teams of 11 each, no one is left out. The maximum number of teams of 12 each that can be formed out of the students in the school is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2266",
+      "passage_text": "",
+      "question_text": "For some natural number n, assume that (15,000)! is divisible by (n!)!. The largest possible value of n is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "To find the largest possible value of n, we need to find the value of n such that n! is less than 15000.\n\n7! = 5040\n\n8! = 40320 > 15000\n\nThis implies 15000! is not divisible by 40320!\n\nTherefore, maximum value n can take is 7.\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424062)\n\n**Passage:**\nFor some natural number n, assume that (15,000)! is divisible by (n!)!. The largest possible value of n is\n\n4\n\n7\n\n6\n\n5\n\nFor some natural number n, assume that (15,000)! is divisible by (n!)!. The largest possible value of n is\n\n**Options:**\n- **A**. 4\n- **B**. 7\n- **C**. 6\n- **D**. 5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2267",
+      "passage_text": "Let A be the largest positive integer that divides all the numbers of the form 3 k + 4 k + 5 k 3^k + 4^k + 5^k 3 k + 4 k + 5 k , and B be the largest positive integer that divides all the numbers of the form 4 k + 3 ( 4 k ) + 4 k + 2 4^k + 3(4^k) + 4^{k + 2} 4 k + 3 ( 4 k ) + 4 k + 2 , where k is any positive integer. Then (A + B) equals",
+      "question_text": "Let A be the largest positive integer that divides all the numbers of the form $3^k + 4^k + 5^k$, and B be the largest positive integer that divides all the numbers of the form $4^k + 3(4^k) + 4^{k + 2}$ , where k is any positive integer. Then (A + B) equals",
+      "options": [],
+      "correct_option_data": "82",
+      "solution_text": "A is the HCF of $3^k+4^k+5^k$ for different values of k.\n\nFor k = 1, value is 12\n\nFor k = 2, value is 50\n\nFor k = 3, value is 216\n\nHCF is 2. Therefore, A = 2\n\n$4^k+3\\left(4^k\\right)+4^{k+2}=4^k\\left(1+3\\right)+4^{k+2}=4^{k+1}+4^{k+2}=4^{k+1}\\left(1+4\\right)=5\\cdot4^{k+1}$\n\nHCF of the values is when k = 1, i.e. 5*16 = 80\n\nTherefore, B = 80\n\nA + B = 82",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 423989)\n\n**Passage:**\nLet A be the largest positive integer that divides all the numbers of the form 3 k + 4 k + 5 k 3^k + 4^k + 5^k 3 k + 4 k + 5 k , and B be the largest positive integer that divides all the numbers of the form 4 k + 3 ( 4 k ) + 4 k + 2 4^k + 3(4^k) + 4^{k + 2} 4 k + 3 ( 4 k ) + 4 k + 2 , where k is any positive integer. Then (A + B) equals\n\nLet A be the largest positive integer that divides all the numbers of the form $3^k + 4^k + 5^k$, and B be the largest positive integer that divides all the numbers of the form $4^k + 3(4^k) + 4^{k + 2}$ , where k is any positive integer. Then (A + B) equals\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2268",
+      "passage_text": "",
+      "question_text": "The product of two positive numbers is 616. If the ratio of the difference of their cubes to the cube of their difference is 157:3, then the sum of the two numbers is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "58",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "85",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "95",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Assume the numbers are a and b, then ab=616\n\nWe have, $\\ \\ \\frac{\\ a^3-b^3}{\\left(a-b\\right)^3}$ = $\\ \\frac{\\ 157}{3}$\n\n=> $\\ 3\\left(a^3-b^3\\right)\\ =\\ 157\\left(a^3-b^3+3ab\\left(b-a\\right)\\right)$\n\n=> $154\\left(a^3-b^3\\right)+3*157*ab\\left(b-a\\right)$ = 0\n\n=> $154\\left(a^3-b^3\\right)+3*616*157\\left(b-a\\right)$ = 0        (ab=616)\n\n=>$a^3-b^3+\\left(3\\times\\ 4\\times\\ 157\\left(b-a\\right)\\right)$    (154*4=616)\n\n=> $\\left(a-b\\right)\\left(a^2+b^2+ab\\right)\\ =\\ 3\\times\\ 4\\times\\ 157\\left(a-b\\right)$\n\n=> $a^2+b^2+ab\\ =\\ 3\\times\\ 4\\times\\ 157$\n\nAdding ab=616 on both sides, we get\n\n$a^2+b^2+ab\\ +ab=\\ 3\\times\\ 4\\times\\ 157+616$\n\n=> $\\left(a+b\\right)^2=\\ 3\\times\\ 4\\times\\ 157+616$ = 2500\n\n=> a+b=50",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277660)\n\n**Passage:**\nThe product of two positive numbers is 616. If the ratio of the difference of their cubes to the cube of their difference is 157:3, then the sum of the two numbers is\n\n58\n\n85\n\n50\n\n95\n\nThe product of two positive numbers is 616. If the ratio of the difference of their cubes to the cube of their difference is 157:3, then the sum of the two numbers is\n\n**Options:**\n- **A**. 58\n- **B**. 85\n- **C**. 50\n- **D**. 95\n\n**Correct Answer:** null"
     }
   ]
 }

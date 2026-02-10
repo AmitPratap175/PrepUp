@@ -46747,6 +46747,146 @@
       "solution_text": "Representing Ananya Raga, Bhaskar Tala, Charu Veena, and Devendra Sur as A, B, C and D, respectively, for easy usage. Also using PM, US, and AR for Pandit Meghnath, Ustad Samiran, and Acharya Raghunath, respectively, for easy reference.\n\nWe are given that AR did not train during the periods of 2015-2018 and 2021-2024. \n\nOther information provided is that PM, US, and AR had a span of 2, 3, and 4 consecutive years for each student, in some order. We also know that all the gurus trained each of the students for exactly one span.\n\nIn clue 4, we are given that A started the training in 2013 under PM, and B started training in 2013 under US.\n\nPutting all the known information in the table, we get,\n\nNow, if we look at the table, we can see that AR is training for only 4 years, with two years each, separated by a few years. Therefore, the span of AR must be 2 years because we know that he is not teaching continuously for 3 or 4 years.\n\nSince we know that each guru taught all the students, and AR only has 4 years to teach all the students, he must definitely teach 2 students at a time each year, as we are told that no guru taught more than 2 students in a single year. We also know that A and B were taught by PM and US in 2013, respectively. Therefore, we can conclude that C and D were taught by AR during both 2013 and 2014, as AR's span is 2 years.\n\nWe can also conclude that A and B were taught by AR during both 2019 and 2020, as AR's span is 2 years, and they were the only students left for AR's class.\n\nWe are also given in clue 1 that US did not train more than 1 student in any year, and there are a total of 12 years from 2013 to 2024. If the span of US is 4 years, then he would need a total of 16 years to teach every student, as he is not teaching more than 1 student in any year, but he only taught for 12 years, so the only possibility is for US to have a span of 3 years and PM to have a span of 4 years. We can also conclude that US taught B from 2013 to 2015, as he has a span of 3 years.\n\nWe are also given that A, D and B, C were never Gurubhai, and all the other pairs were Gurubhai for exactly 2 years. Therefore, there must be two years each of {A, B}, {A, C}, {B, D}, and {C, D} with classes together. We have already completed the 2 years of {A, B} and {C, D}, so the ones left are two years of {A, C} and {B, D}. We know that the US did not take classes of 2 students together, and we have already filled the schedule of AR, so the only one left is PM, and he must have the other two left.\n\nSince the span of PM is 4, he taught A from 2013 to 2016 and during this span, there must be 2 years of {A, C}, as we know that A will not be taught again after 2016. To have an exact span of 2 years together, C must start in 2015, as it is the only possibility, and he will teach C until 2018, as he has a span of 4 years.\n\nThere must be 2 years of {B, D} in the remaining time period of PM. In 2019, A and B were already enrolled with AR, and C had already completed his time with PM. So, the only person possible to have class in 2019 with PM is D, and D will have classes with PM until 2022. Now for 2 years of {B, D}, D must have his classes start from 2021, as it is the only possibility.\n\nThere cannot be any gap in the case of US, and in 2016, the only possibility is D as A, C were having classes with PM, and B already had his classes with US. D had classes from 2016 to 2018. In 2019, A, B and D were already having classes, so the only possibility is for C to have classes with US from 2019 to 2021, and finally A will have his classes from 2022 to 2024 with US, as he is the only person left to have classes with US.\n\nThe final table looks like,\n\nBetween 2013 and 2024, the years 2017, 2018, 2023, and 2024 were the only years when only two of these four musicians were training under these three Gurus.\n\nHence, the correct answer is 4.",
       "image_url": "",
       "full_markdown": "### Question (qid: 476457)\n\n**Passage:**\nAnanya Raga, Bhaskar Tala, Charu Veena, and Devendra Sur are four musicians. Each of them started and completed their training as students under each of three Gurus — Pandit Meghnath, Ustad Samiran, and Acharya Raghunath between 2013 and 2024, including both the years. Each Guru trains any student for consecutive years only, for a span of 2, 3, or 4 years, with each Guru having a different span. During some of these years, a student may not have trained under these Gurus; however, they never trained under multiple Gurus in the same year. In none of these years, any of these Gurus trained more than two of these students at the same time. When two students train under the same Guru at the same time, they are referred to as Gurubhai, irrespective of their gender. The following additional facts are known. 1. Ustad Samiran never trained more than one of these students in the same year. 2. Acharya Raghunath did not train any of these students during 2015-2018, as well as during 2021-24. 3. Ananya and Devendra were never Gurubhai; neither were Bhaskar and Charu. All other pairs of musicians were Gurubhai for exactly 2 years. 4. In 2013, Ananya and Bhaskar started their trainings under Pandit Meghnath and under Ustad Samiran, respectively.\n\nIn how many of the years between 2013-24, were only two of these four musicians training under these three Gurus?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1652",
+      "passage_text": "Five players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.",
+      "question_text": "What was the rating of A just after he drew the match against D?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2100",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2600",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2800",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2700",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "First, let us tabulate the results of the matches in a way easy to interpret:\n\nA won the match between A and B. \n\nTherefore, A’s new rating will be 2800 + (2800-1200)/4 = 2800 + 400 = 3200.\nB’s new rating = 1200 - 1600/4 = 1200 - 400 = 800.\n\nA lost the match against C.\nTherefore, A’s rating will become 3200 - (3200 - 1600)/4 = 3200 - 400 = 2800\nC’s new rating will be 1600 + (3200-1600)/4 = 2000.\n\nA drew the match against D. Their ratings are also different. \nTherefore, A’s new rating will be 2800 - (2800 - 2000)/8 = 2800-100 = 2700\nD’s new rating will be 2000 + 100 = 2100.\n\nJust after A draws the match, his rating would have been 2700. Therefore, option D is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/t1_wIxbp1o.JPG",
+      "full_markdown": "### Question (qid: 112645)\n\n**Passage:**\nFive players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.\n\nWhat was the rating of A just after he drew the match against D?\n\n**Options:**\n- **A**. 2100\n- **B**. 2600\n- **C**. 2800\n- **D**. 2700\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1653",
+      "passage_text": "Five players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.",
+      "question_text": "What is the rating of A by the end of the tournament?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "2650",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2625",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "2825",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2775",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "First, let us tabulate the results of the matches in a way easy to interpret:\n\nA won the match between A and B. \nTherefore, A’s new rating will be 2800 + (2800-1200)/4 = 2800 + 400 = 3200.\nB’s new rating = 1200 - 1600/4 = 1200 - 400 = 800.\n\nA lost the match against C.\nTherefore, A’s rating will become 3200 - (3200 - 1600)/4 = 3200 - 400 = 2800\nC’s new rating will be 1600 + (3200-1600)/4 = 2000.\n\nA drew the match against D. Their ratings are also different. \nTherefore, A’s new rating will be 2800 - (2800 - 2000)/8 = 2800-100 = 2700\nD’s new rating will be 2000 + 100 = 2100.\n\nA managed to win the match against E.\nTherefore, A’s rating after playing E will be 2700 + (2700 - 2400)/4 = 2700 + 75 = 2775.\nE’s rating after playing A will be 2400 - 75 = 2325.\n\nAfter playing A, the rating of all the players will be as follows:\n\nA - 2775\nB - 800\nC - 2000\nD - 2100\nE - 2325\n\nA’s rating will remain unchanged till the end of the tournament as he does not have any other matches to play. Therefore, A’s rating by the end of the tournament will be 2775. Therefore, option D is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/t1_wIxbp1o.JPG",
+      "full_markdown": "### Question (qid: 112646)\n\n**Passage:**\nFive players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.\n\nWhat is the rating of A by the end of the tournament?\n\n**Options:**\n- **A**. 2650\n- **B**. 2625\n- **C**. 2825\n- **D**. 2775\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1654",
+      "passage_text": "Five players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.",
+      "question_text": "What is the rating of B by the end of the tournament?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1106.25",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1146.25",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1068.75",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "1478.75",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "First, let us tabulate the results of the matches in a way easy to interpret:\n\nA won the match between A and B. \nTherefore, A’s new rating will be 2800 + (2800-1200)/4 = 2800 + 400 = 3200.\nB’s new rating = 1200 - 1600/4 = 1200 - 400 = 800.\n\nA lost the match against C.\nTherefore, A’s rating will become 3200 - (3200 - 1600)/4 = 3200 - 400 = 2800\nC’s new rating will be 1600 + (3200-1600)/4 = 2000.\n\nA drew the match against D. Their ratings are also different. \nTherefore, A’s new rating will be 2800 - (2800 - 2000)/8 = 2800-100 = 2700\nD’s new rating will be 2000 + 100 = 2100.\n\nA managed to win the match against E.\nTherefore, A’s rating after playing E will be 2700 + (2700 - 2400)/4 = 2700 + 75 = 2775.\nE’s rating after playing A will be 2400 - 75 = 2325.\n\nAfter playing A, the rating of all the players will be as follows:\n\nA - 2775\nB - 800\nC - 2000\nD - 2100\nE - 2325\n\nA’s rating will remain unchanged till the end of the tournament as he does not have any other matches to play.\n\nB won the match against C.\nTherefore, rating of B after the match = 800 + (2000-800)/4 = 1100\nC’s rating after the match = 2000 - 300 = 1700.\n\nB managed to win the match against D.\nRating of B after the match = 1100 + (2100 -1100)/4 = 1350\nRating of D after the match = 2100 - 250 = 1850\n\nB lost the match against E.\nB’s rating after the match = 1350 - (2325-1350)/4 = 1350 - 243.75 = 1106.25\nE’s rating after the match = 2325 + 243.75 = 2568.75\n\nTherefore, B’s rating by the end of the tournament will be 1106.25.\nHence, option A is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/t1_wIxbp1o.JPG",
+      "full_markdown": "### Question (qid: 112647)\n\n**Passage:**\nFive players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.\n\nWhat is the rating of B by the end of the tournament?\n\n**Options:**\n- **A**. 1106.25\n- **B**. 1146.25\n- **C**. 1068.75\n- **D**. 1478.75\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1655",
+      "passage_text": "Five players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.",
+      "question_text": "What was the rating of D just after he lost the match against B?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1950",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "1700",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1850",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "2100",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "First, let us tabulate the results of the matches in a way easy to interpret:\n\nA won the match between A and B. \nTherefore, A’s new rating will be 2800 + (2800-1200)/4 = 2800 + 400 = 3200.\nB’s new rating = 1200 - 1600/4 = 1200 - 400 = 800.\n\nA lost the match against C.\nTherefore, A’s rating will become 3200 - (3200 - 1600)/4 = 3200 - 400 = 2800\nC’s new rating will be 1600 + (3200-1600)/4 = 2000.\n\nA drew the match against D. Their ratings are also different. \nTherefore, A’s new rating will be 2800 - (2800 - 2000)/8 = 2800-100 = 2700\nD’s new rating will be 2000 + 100 = 2100.\n\nA managed to win the match against E.\nTherefore, A’s rating after playing E will be 2700 + (2700 - 2400)/4 = 2700 + 75 = 2775.\nE’s rating after playing A will be 2400 - 75 = 2325.\n\nAfter playing A, the rating of all the players will be as follows:\n\nA - 2775\nB - 800\nC - 2000\nD - 2100\nE - 2325\n\nA’s rating will remain unchanged till the end of the tournament as he does not have any other matches to play.\n\nB won the match against C.\nTherefore, rating of B after the match = 800 + (2000-800)/4 = 1100\nC’s rating after the match = 2000 - 300 = 1700.\n\nB managed to win the match against D.\nRating of B after the match = 1100 + (2100 -1100)/4 = 1350\nRating of D after the match = 2100 - 250 = 1850\n\nD’s rating just after playing B was 1850. Therefore, option C is the right answer.",
+      "image_url": "https://cracku.in/media/uploads/t1_wIxbp1o.JPG",
+      "full_markdown": "### Question (qid: 112648)\n\n**Passage:**\nFive players A, B, C, D, and E participate in a round-robin tournament. Each of them plays against each other exactly once.\n\nEach one of them is assigned an arbitrary rating (before the tournament started) based on his strength.\n\nAfter the end of each match, the rating of the players are recalculated and the latest rating is used for each match.\n\nIf a match ended in a draw between 2 equally rated players, then their ratings will remain unchanged. If a match ended in a draw between 2 unequally rated players, then the new ratings will be calculated as follows:\n\nNew rating of the higher rated player = Old rating - (Difference between the ratings of the 2 players/8) New rating of the lower rated player = Old rating + (Difference between the ratings of the 2 players /8)\n\nIf the match ended in a win-loss situation between 2 equally rated players, then the winner gains 100 points and the loser loses 100 points.\n\nIf the match ended with a definite result (win-loss) between 2 unequally rated players, then the following procedure is to be adopted to calculate the new ratings.\n\nNew rating of the winner = Old rating + (Difference between the rating of the 2 players / 4) New rating of the loser = Old rating - (Difference between the rating of the 2 players/4).\n\nThe rating of the players were calculated by the end of each match.\n\nThe results of the matches were as follows. A ‘1’ in the table indicates a win for the person indicated in the row, a ‘0’ indicates a loss and a ‘d’ represents a draw. For eg) A won the first match against B.\n\nFurther, the order in which the matches took place is as follows:\n\nFirst, A played against B, C, D and E in that order. Then, B played against C, D and E in that order. Then, C played against D and E in that order. Finally, D played against E.\n\nWhat was the rating of D just after he lost the match against B?\n\n**Options:**\n- **A**. 1950\n- **B**. 1700\n- **C**. 1850\n- **D**. 2100\n\n**Correct Answer:** null"
     }
   ]
 }
