@@ -34,6 +34,7 @@ Select 4 events mentioned in the text and ask to arrange them in correct chronol
 **3. Match the Following:**
 Create pairs matching specific terms/personalities with descriptions.
 
+Also generate atleast 50 questions of hard type.
 **Output Rules:**
 Cover the entire document.
 Provide a separate Answer Key at the end. For every answer, provide a brief 'Explanation'.
