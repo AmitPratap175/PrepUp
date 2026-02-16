@@ -71206,6 +71206,131 @@
       "solution_text": "Let's assume that the common root is r. \n\nThe sum of the roots of the first equation is 5/3 and that of the second equation is 1.\n\nWe want the sum of the other two roots:\n\n$\n\\text{Sum} = \\left(\\frac{5}{3}-r\\right) + (1-r) = \\frac{8}{3}-2r$\n\nWe now need to express r in terms of p and q.\n\nSince r is a common root, it satisfies:\n\n$3r^2 - 5r + p = 0 \\quad (1)$\n\n$ \n2r^2 - 2r + q = 0 \\quad (2)$ \n\nEliminate $ r^2$ .\n\nMultiply (2) by 3:\n\n$ 6r^2 - 6r + 3q = 0$ \n\nMultiply (1) by 2:\n\n$ 6r^2 - 10r + 2p = 0$ \n\nSubtract:\n\n$ \n(6r^2 - 6r + 3q) - (6r^2 - 10r + 2p) = 0$\n\n$ \n4r + 3q - 2p = 0$\n\n$  r = \\frac{2p - 3q}{4}$ \n\nNow substitute into $ \\frac{8}{3} - 2r$ :\n\n$ \n\\frac{8}{3} - 2\\left(\\frac{2p - 3q}{4}\\right)$\n\n$ = \\frac{8}{3} - \\frac{2p - 3q}{2}$\n\n$ = \\frac{8}{3} - p + \\frac{3}{2}q$",
       "image_url": "",
       "full_markdown": "### Question (qid: 476604)\n\n**Passage:**\nThe equations 3 x 2 − 5 x + p = 0 3x^{2}-5x+p=0 3 x 2 − 5 x + p = 0 and 2 x 2 − 2 x + q = 0 2x^{2}-2x+q=0 2 x 2 − 2 x + q = 0 have one common root. The sum of the other roots of this equations is\n\n8 3 − p + 3 2 q \\frac{8}{3}-p+\\frac{3}{2}q 3 8 ​ − p + 2 3 ​ q\n\n2 3 − p + 3 2 q \\frac{2}{3}-p+\\frac{3}{2}q 3 2 ​ − p + 2 3 ​ q\n\n8 3 + p + 1 3 q \\frac{8}{3}+p+\\frac{1}{3}q 3 8 ​ + p + 3 1 ​ q\n\n2 3 − 2 p + 2 3 q \\frac{2}{3}-2p+\\frac{2}{3}q 3 2 ​ − 2 p + 3 2 ​ q\n\nThe equations $3x^{2}-5x+p=0$ and $2x^{2}-2x+q=0$ have one common root. The sum of the other roots of this equations is\n\n**Options:**\n- **A**. $\\frac{8}{3}-p+\\frac{3}{2}q$\n- **B**. $\\frac{2}{3}-p+\\frac{3}{2}q$\n- **C**. $\\frac{8}{3}+p+\\frac{1}{3}q$\n- **D**. $\\frac{2}{3}-2p+\\frac{2}{3}q$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2274",
+      "passage_text": "",
+      "question_text": "Shruti travels a distance of 224 km in four parts for a total travel time of 3 hours. Her speeds in these four parts follow an arithmetic progression, and the corresponding time taken to cover these four parts follow another arithmetic progression. If she travels at a speed of 960 meters per minute for 30 minutes to cover the first part, then the distance, in meters, she travels in the fourth part is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "76800",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "112000",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "96000",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "86400",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "According to question, Shruti travels a distance of 224 km in four parts for a total travel time of 3 hours.\n\nGiven, in the first part time required is 30 minutes.\n\nAlso, the time taken to cover these four parts follow arithmetic progression.\n\nSo, let us say the times be 30 minutes, (30+d) minutes, (30+2d) minutes and (30+3d) minutes\n\nSo, $30+\\left(30+d\\right)+\\left(30+2d\\right)+\\left(30+3d\\right)=180$\n\nor, $6d=180-120$\n\nor, $6d=60$\n\nor, $d=\\dfrac{60}{6}=10$ minutes.\n\nSo, the time required in these four parts are 30 minutes, 40 minutes, 50 minutes and 60 minutes respectively.\n\nNow, in the first part, speed is 960 metres per minute.\n\nSpeed in the four parts is also in arithmetic progression.\n\nLet's say the speeds be $(960+x)$,$(960+2x)$,$(960+3x)$ metres per minute\n\nSo, total distance covered = $960\\times\\ 30+\\left(960+x\\right)\\times\\ 40+\\left(960+2x\\right)\\times\\ 50+\\left(960+3x\\right)\\times\\ 60$ metres \n\nSo, $960\\times\\ 30+\\left(960+x\\right)\\times\\ 40+\\left(960+2x\\right)\\times\\ 50+\\left(960+3x\\right)\\times\\ 60=224000$\n\nor, $960\\left(30+40+50+60\\right)+40x+\\left(2x\\right)\\left(50\\right)+\\left(3x\\right)\\left(60\\right)=224000$\n\nor, $172800+320x=224000$\n\nor, $320x=224000-172800=51200$\n\nor, $x=\\dfrac{51200}{320}=160$\n\nSo, the speed in the fourth part is $960+3x=960+3\\times\\ 160=1440$ metres per minute\n\nTime in the fourth part is 60 minutes\n\nSo, distance covered in the fourth part = $1440\\times\\ 60=86400$ metres\n\nSo, option D is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476391)\n\n**Passage:**\nShruti travels a distance of 224 km in four parts for a total travel time of 3 hours. Her speeds in these four parts follow an arithmetic progression, and the corresponding time taken to cover these four parts follow another arithmetic progression. If she travels at a speed of 960 meters per minute for 30 minutes to cover the first part, then the distance, in meters, she travels in the fourth part is\n\n76800\n\n112000\n\n96000\n\n86400\n\nShruti travels a distance of 224 km in four parts for a total travel time of 3 hours. Her speeds in these four parts follow an arithmetic progression, and the corresponding time taken to cover these four parts follow another arithmetic progression. If she travels at a speed of 960 meters per minute for 30 minutes to cover the first part, then the distance, in meters, she travels in the fourth part is\n\n**Options:**\n- **A**. 76800\n- **B**. 112000\n- **C**. 96000\n- **D**. 86400\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2275",
+      "passage_text": "",
+      "question_text": "Ankita walks from A to C through B, and runs back through the same route at a speed that is 40% more than her walking speed. She takes exactly 3 hours 30 minutes to walk from B to C as well as to run from B to A. The total time, in minutes, she would take to walk from A to B and run from B to C, is",
+      "options": [],
+      "correct_option_data": "444",
+      "solution_text": "Let the walking speed of Ankita be $5x$, implying that her running speed (which is $40\\%$ more than her walking speed), is $1.4\\times 5x = 7x$.\n\nThus, the ratio of her walking and running speeds is $5:7$. Therefore, the ratio of the time taken by Ankita to cover a fixed distance walking and running would by $7:5$.\n\nShe takes 3 hours 30 minutes, or $3.5$ hours to walk from B to C. Since Ankita is running from B to C in the second scenario, her time will reduce inversely to the ratio of her speed. The time taken by her to run from B to C would be $\\dfrac{3.5}{7}\\times 5 = 2.5$ hours.\n\nShe takes 3 hours 30 minutes, or $3.5$ hours to run from A to B. Since Ankita is walking from A to B in the second scenario, her time will increase inversely to the ratio of her speed. The time taken by her to walk from A to B would be $\\dfrac{3.5}{5}\\times 7 = 4.9$ hours.\n\nTherefore, the total time it takes for Ankita in the second scenario is $4.9+2.5 = 7.4$ hours. This gives $7.4*60 = 444$ minutes.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476575)\n\n**Passage:**\nAnkita walks from A to C through B, and runs back through the same route at a speed that is 40% more than her walking speed. She takes exactly 3 hours 30 minutes to walk from B to C as well as to run from B to A. The total time, in minutes, she would take to walk from A to B and run from B to C, is\n\nAnkita walks from A to C through B, and runs back through the same route at a speed that is 40% more than her walking speed. She takes exactly 3 hours 30 minutes to walk from B to C as well as to run from B to A. The total time, in minutes, she would take to walk from A to B and run from B to C, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2276",
+      "passage_text": "",
+      "question_text": "Rahul starts on his journey at 5 pm at a constant speed so that he reaches his destination at 11 pm the same day. However, on his way, he stops for 20 minutes, and after that, increases his speed by 3 km per hour to reach on time. If he had stopped for 10 minutes more, he would have had to increase his speed by 5 km per hour to reach on time. His initial speed, in km per hour, was",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the initial speed of Rahul be $x$ kilometres per hour. Since he travels the distance usually in $6$ hours, (5 pm to 11 pm), the total distance should be $6\\times x = 6x$ kilometres.\n\nLet the distance after which Rahul stops for some duration in both scenarios be $y$ kilometres.\n\nIn the first scenario, he stops for $20$ minutes or $\\dfrac{1}{3}$ hours, therefore, the travel time would be $6-\\dfrac{1}{3} = \\dfrac{17}{3}$ hours. We have, \n\n$\\dfrac{k}{x} + \\dfrac{6x-k}{x+3} = \\dfrac{17}{3}$ \n\n$\\Rightarrow \\dfrac{6x^2+3k}{x^2+3x} = \\dfrac{17}{3}$\n\n$\\Rightarrow 18x^2 + 9k = 17x^2 + 51x$\n\n$\\Rightarrow x^2 = 51x - 9k$ .....(1)\n\nSimilarly, in the second scenario, he stops for $20+10=30$ minutes or $\\dfrac{1}{2}$ hours, therefore, the travel time would be $6-\\dfrac{1}{2} = \\dfrac{11}{2}$ hours. We have, \n\n$\\dfrac{k}{x} + \\dfrac{6x-k}{x+5} = \\dfrac{11}{2}$\n\n$\\Rightarrow \\dfrac{6x^2+5k}{x^2+5x} = \\dfrac{11}{2}$\n\n$\\Rightarrow 12x^2 + 10k = 11x^2 + 55x$\n\n$\\Rightarrow x^2 = 55x - 10k$ .....(2)\n\nFrom equations (1) and (2), we have;\n\n$55x - 10k = 51x - 9k$  or  \n\n$4x = k$.\n\nSubstituting the value of $k$ in equation (1), we have\n\n$x^2 = 51x - 36x$  or, since $x$ is positive, $x= 15$. Therefore, option B is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476577)\n\n**Passage:**\nRahul starts on his journey at 5 pm at a constant speed so that he reaches his destination at 11 pm the same day. However, on his way, he stops for 20 minutes, and after that, increases his speed by 3 km per hour to reach on time. If he had stopped for 10 minutes more, he would have had to increase his speed by 5 km per hour to reach on time. His initial speed, in km per hour, was\n\n12\n\n15\n\n18\n\n20\n\nRahul starts on his journey at 5 pm at a constant speed so that he reaches his destination at 11 pm the same day. However, on his way, he stops for 20 minutes, and after that, increases his speed by 3 km per hour to reach on time. If he had stopped for 10 minutes more, he would have had to increase his speed by 5 km per hour to reach on time. His initial speed, in km per hour, was\n\n**Options:**\n- **A**. 12\n- **B**. 15\n- **C**. 18\n- **D**. 20\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2277",
+      "passage_text": "",
+      "question_text": "Rita and Sneha can row a boat at 5 km/h and 6 km/h in still water, respectively. In a river flowing with a constant velocity, Sneha takes 48 minutes more to row 14 km upstream than to row the same distance downstream. If Rita starts from a certain location in the river, and returns downstream to the same location, taking a total of 100 minutes, then the total distance, in km, Rita will cover is",
+      "options": [],
+      "correct_option_data": "8",
+      "solution_text": "Let the river speed be v km/h. For Sneha still-water speed = 6 km/h:\n\nUpstream speed = (6-v), downstream speed = (6+v).\n\nGiven $\\frac{14}{(6-v)}-\\frac{14}{(6+v)}=48$minutes =0.8 hours. \n\nSo, $\\frac{14(6+v-6+v)}{36-v^2}=0.8 \\Rightarrow \\frac{28v}{36-v^2}=0.8$\n\n$28v=0.8(36-v^2)=28.8-0.8v^2 \\Rightarrow 0.8v^2+28v-28.8=0$\n\nMultiply by 5: $4v^2+140v-144=0$\n\n$v^2+35v-36=0$\n\nWe get v = 1\n\nThus, the river speed is 1 km/h. For Rita, the still water speed is 5 km/h:\nUpstream speed = 5-1=4 km/h, Downstream Speed = (5+1=6) km/h.\n\nIf she rows d km upstream and returns d km downstream, the total time\n\n$ \\frac{d}{4}+\\frac{d}{6}=d\\Big(\\frac{1}{4}+\\frac{1}{6}\\Big)=d\\cdot\\frac{5}{12}\\ \\text{hours}$\n\nThis equals 100 minutes $=100/60=\\dfrac{5}{3}$ hours. \n\nSo, $d\\cdot\\frac{5}{12}=\\frac{5}{3}\\ \\Rightarrow\\ d=4\\ \\text{km}$\n\nTotal distance covered 2d=8 km.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476606)\n\n**Passage:**\nRita and Sneha can row a boat at 5 km/h and 6 km/h in still water, respectively. In a river flowing with a constant velocity, Sneha takes 48 minutes more to row 14 km upstream than to row the same distance downstream. If Rita starts from a certain location in the river, and returns downstream to the same location, taking a total of 100 minutes, then the total distance, in km, Rita will cover is\n\nRita and Sneha can row a boat at 5 km/h and 6 km/h in still water, respectively. In a river flowing with a constant velocity, Sneha takes 48 minutes more to row 14 km upstream than to row the same distance downstream. If Rita starts from a certain location in the river, and returns downstream to the same location, taking a total of 100 minutes, then the total distance, in km, Rita will cover is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2278",
+      "passage_text": "",
+      "question_text": "Arun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "38400",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "38880",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "34400",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "47040",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let's assume that Total work = 1\n\nIf the work is entirely carried by each one of them it would cost \n\nArun: $2160 \\times 24 = 51840$\n\nVarun: $2400 \\times 21 = 50400$\n\nTarun: $2160 \\times 15 = 32400$\n\nThe cheapest worker is Tarun. He can finish the work in 15 days. But we need the work completed in 10 days.\n\nTarun does $10 \\times \\frac{1}{15} = \\frac{2}{3}$\n\n$1 - \\frac{2}{3} = \\frac{1}{3}$\n\nComplete the remaining (1/3) work using the next cheapest worker, which is Varun.\n\nDays needed: $\\frac{x}{21} = \\frac{1}{3} \\quad\\Rightarrow\\quad x = 7$\n\nTotal cost = Amount paid for Tarun + Amount paid for Varun = $10 \\times 2160 + 7 \\times 2400 = 38400$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476403)\n\n**Passage:**\nArun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is\n\n38400\n\n38880\n\n34400\n\n47040\n\nArun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is\n\n**Options:**\n- **A**. 38400\n- **B**. 38880\n- **C**. 34400\n- **D**. 47040\n\n**Correct Answer:** null"
     }
   ]
 }

@@ -47051,6 +47051,121 @@
       "solution_text": "We know that the shopkeeper made a loss by selling the car and the machete. Hence, the CP of any of them cannot be 500.\n\nAlso, the CP of the car and the machete is same. Hence, the CP of the car cannot be 750. \n\nThe CP of the doll cannot be 750 as the CP of the doll is less than that of the grenade.\n\nSince the profit cannot be 50, the CP of the grenade cannot be 700, 500 or 750 (grenade made a profit).\n\nThis implies, the CP of the doll cannot be 700 or 600 also.\n\nThe profit or loss cannot be 150. So the CP of the Car cannot be 600.\n\nLet’s draw the table,\n\nOnly the gun or machete can have a CP of 750.\n\nIf the gun has a CP of 750, it is not possible for grenade and doll to have distinct profits.\n\nThus, machete should have a CP of 750.\n\nThe car will therefore have a CP of 550. The SP of the machete will be 550.\n\nThe grenade’s CP will be 600 and the doll’s CP will be 500.\n\nThe gun will have a CP of 700.\n\nCar makes a loss. Thus, the SP can only be 500.\n\nSince the profit cannot be 150, the SP of grenade should be 700.\n\nThe SP of doll and gun should be 750 and 600 respectively.",
       "image_url": "",
       "full_markdown": "### Question (qid: 104376)\n\n**Passage:**\nA shopkeeper has 5 toys - a machete, a car, a grenade, a doll and a gun. The selling price and cost price of them is one among Rs. 500, Rs. 550, Rs. 600, Rs. 700 and Rs. 750. He sells all of them. The cost price of each article is different. The selling price of each article is also different. Further, the following information is known: 1. The cost price of the car is equal to the selling price of the machete. 2. The shopkeeper made a profit on exactly two articles. 3. The shopkeeper made a loss on selling the car and the machete separately. 4. The profit or loss on any article is not 150. 5. The shopkeeper made a profit selling the grenade and the cost price of grenade was greater than that of the doll. 6. The profit incurred on any two articles is not same. 7. The loss incurred on any two articles is not the same. 8. The profit made on any article is greater than 50.\n\nWhich toy had the maximum loss percentage?\n\n**Options:**\n- **A**. grenade\n- **B**. gun\n- **C**. doll\n- **D**. machete\n- **E**. car\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1660",
+      "passage_text": "A survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.",
+      "question_text": "Find the total number of MBBS students surveyed?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "130",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "140",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "115",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "From statement 1, we can infer that 45 students from Btech voted for Y. Among 45 students, 20 would prefer further studies.This infers remaining 25 students prefer job.\n\nFrom statement 2, we can infer that 50 voted for X and wanted to do job. Among 50 students, 35 students are pursuing Btech. This implies remaining 15 students are pursuing MBBS.\n\nFrom statement 4, we can infer that 30 students are pursuing Btech and wanted to go for further studies. From above table, we know that 20 students pursuing Btech voted Y preferred further studies. This implies remaining 10 students voted X.\n\nFrom statement 5, we can infer that 45 students are pursuing MBBS and wanted to go for job. Among these 15 students voted for Y. This implies remaining 30 students voted for X.\n\nIn statement 3, it is given that 105 students voted X and 115 students voted Y.\n\nFinal table:\n\nTotal number of MBBS students = 60 + 70 = 130\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13096)\n\n**Passage:**\nA survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.\n\nFind the total number of MBBS students surveyed?\n\n**Options:**\n- **A**. 120\n- **B**. 130\n- **C**. 140\n- **D**. 115\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1661",
+      "passage_text": "A survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.",
+      "question_text": "How many students from MBBS voted Y and chose to do further studies?",
+      "options": [],
+      "correct_option_data": "40",
+      "solution_text": "From statement 1, we can infer that 45 students from Btech voted for Y. Among 45 students, 20 would prefer further studies.This infers remaining 25 students prefer job.\n\nFrom statement 2, we can infer that 50 voted for X and wanted to do job. Among 50 students, 35 students are pursuing Btech. This implies remaining 15 students are pursuing MBBS.\n\nFrom statement 4, we can infer that 30 students are pursuing Btech and wanted to go for further studies. From above table, we know that 20 students pursuing Btech voted Y preferred further studies. This implies remaining 10 students voted X.\n\nFrom statement 5, we can infer that 45 students are pursuing MBBS and wanted to go for job. Among these 15 students voted for Y. This implies remaining 30 students voted for X.\n\nIn statement 3, it is given that 105 students voted X and 115 students voted Y.\n\nFinal table:\n\nThe number of students from MBBS voted Y and chose to do further studies is 40.\n\nThe answer is 40.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13097)\n\n**Passage:**\nA survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.\n\nHow many students from MBBS voted Y and chose to do further studies?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1662",
+      "passage_text": "A survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.",
+      "question_text": "Find the total number of BTech students?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "90",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "110",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "From statement 1, we can infer that 45 students from Btech voted for Y. Among 45 students, 20 would prefer further studies.This infers remaining 25 students prefer job.\n\nFrom statement 2, we can infer that 50 voted for X and wanted to do job. Among 50 students, 35 students are pursuing Btech. This implies remaining 15 students are pursuing MBBS.\n\nFrom statement 4, we can infer that 30 students are pursuing Btech and wanted to go for further studies. From above table, we know that 20 students pursuing Btech voted Y preferred further studies. This implies remaining 10 students voted X.\n\nFrom statement 5, we can infer that 45 students are pursuing MBBS and wanted to go for job. Among these 15 students voted for Y. This implies remaining 30 students voted for X.\n\nIn statement 3, it is given that 105 students voted X and 115 students voted Y.\n\nFinal table:\n\nTotal number of Btech students = 45 + 45 = 90\n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13098)\n\n**Passage:**\nA survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.\n\nFind the total number of BTech students?\n\n**Options:**\n- **A**. 120\n- **B**. 100\n- **C**. 90\n- **D**. 110\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1663",
+      "passage_text": "A survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.",
+      "question_text": "Find the total number of students who want to go for a job after their studies.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "105",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "95",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "From statement 1, we can infer that 45 students from Btech voted for Y. Among 45 students, 20 would prefer further studies.This infers remaining 25 students prefer job.\n\nFrom statement 2, we can infer that 50 voted for X and wanted to do job. Among 50 students, 35 students are pursuing Btech. This implies remaining 15 students are pursuing MBBS.\n\nFrom statement 4, we can infer that 30 students are pursuing Btech and wanted to go for further studies. From above table, we know that 20 students pursuing Btech voted Y preferred further studies. This implies remaining 10 students voted X.\n\nFrom statement 5, we can infer that 45 students are pursuing MBBS and wanted to go for job. Among these 15 students voted for Y. This implies remaining 30 students voted for X.\n\nIn statement 3, it is given that 105 students voted X and 115 students voted Y.\n\nFinal table:\n\nTotal number of students who want to go for a job after their studies = 35 + 15 + 25 + 30 = 105\n\nThe answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 13099)\n\n**Passage:**\nA survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.\n\nFind the total number of students who want to go for a job after their studies.\n\n**Options:**\n- **A**. 110\n- **B**. 105\n- **C**. 100\n- **D**. 95\n\n**Correct Answer:** null"
     }
   ]
 }
