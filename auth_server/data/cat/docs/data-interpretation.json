@@ -47166,6 +47166,321 @@
       "solution_text": "From statement 1, we can infer that 45 students from Btech voted for Y. Among 45 students, 20 would prefer further studies.This infers remaining 25 students prefer job.\n\nFrom statement 2, we can infer that 50 voted for X and wanted to do job. Among 50 students, 35 students are pursuing Btech. This implies remaining 15 students are pursuing MBBS.\n\nFrom statement 4, we can infer that 30 students are pursuing Btech and wanted to go for further studies. From above table, we know that 20 students pursuing Btech voted Y preferred further studies. This implies remaining 10 students voted X.\n\nFrom statement 5, we can infer that 45 students are pursuing MBBS and wanted to go for job. Among these 15 students voted for Y. This implies remaining 30 students voted for X.\n\nIn statement 3, it is given that 105 students voted X and 115 students voted Y.\n\nFinal table:\n\nTotal number of students who want to go for a job after their studies = 35 + 15 + 25 + 30 = 105\n\nThe answer is option B.",
       "image_url": "",
       "full_markdown": "### Question (qid: 13099)\n\n**Passage:**\nA survey was conducted in a college to determine the preference of students between X and Y for the post of the director. Of the students surveyed, some are from BTech department while others are from MBBS department. Each Student would either go for a job or further studies after completing the degree. The number of students in each category is different. Further each student can vote for one person only. i) Chirag and 44 others were from BTech and voted for Y. Of these Chirag and 19 others would go for further studies. ii) Anil and 49 others voted for X and wanted to go for a job after their studies. Of these Anil and 34 others are pursuing BTech. iii) Total No. of votes for X was 105 and total No. of votes for Y is 115. iv) Dheeraj and 29 others were pursuing BTech and wanted to go for further studies. v) Esha and 44 others were pursuing MBBS and would go for a job.\n\nFind the total number of students who want to go for a job after their studies.\n\n**Options:**\n- **A**. 110\n- **B**. 105\n- **C**. 100\n- **D**. 95\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1664",
+      "passage_text": "There are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.",
+      "question_text": "Which academy is located at Hitec city?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Austin",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Brisk",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Chirel",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Given information\n\n(1)There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. \n\n(2)Effco, which is neither Silver nor Gold rated, is in Gachibowli. \n\n(3)Python is not taught at the academies located in Hitec city and Hafeezpet. \n\n(4)Java is taught by minimum number of academies. \n\n(5)Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. \n\n(6)The number of academies, at which Ruby language is taught, is not 3. \n\n(7)Dunsyre, which is in Kukatpally is Bronze rated academy. \n\n(8)One of the language taught at Platinum rated academy is 'R’. \n\n(9)Austin, which is not in Hafeezpet, doesn’t not teach PHP.\n\nWe know that each academy teaches only 3 languages. If exactly 3 languages out of the five that are taught at exactly three academies each, then remaining 2 language will be taught at 2 and 4 academies.\n\nFrom statement 4 it is evident that Java will be taught by 2 academies and from statement 6 we can say that Ruby will be taught by 4 academies. Rest 'R', PHP and Python will be taught at 3 academies each.\n\nDrawing the table and using information from statement 2, 5, 7.\n\nEffco is not a silver and gold rated academy hence it can be Diamond, Bronze and Platinum. But from 5 and 7 it is evident that Effco can be platinum rated academy only. \n\nFrom statement 9 it is clear that Austin is located in Hitec city and also PHP is not taught here.\n\nHence Chirel is located at Hafeezpet.\n\nFrom statement 8 it is clear that 'R' will be taught by Effco academy.\n\nFrom statement 3, we can say that Python will not be taught at Austin and Chirel. So it will definitely taught at remaining 3 academies. a\n\nNow we can easily fill the table by keeping in mind that each academy will teach only 3 languages and 'Ruby' will be taught be 4 academies. \n\nNow we can answer all the quastions.\n\nWe can clearly see from the table that Austin is located at Hitec city. (Answer :A)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 129854)\n\n**Passage:**\nThere are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.\n\nWhich academy is located at Hitec city?\n\n**Options:**\n- **A**. Austin\n- **B**. Brisk\n- **C**. Chirel\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1665",
+      "passage_text": "There are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.",
+      "question_text": "Which of the languages are not taught at the academy that is in Gachibowli?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "R and Java",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Java and PHP",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "PHP and Ruby",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Java and Ruby",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Given information\n\n(1)There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. \n\n(2)Effco, which is neither Silver nor Gold rated, is in Gachibowli. \n\n(3)Python is not taught at the academies located in Hitec city and Hafeezpet. \n\n(4)Java is taught by minimum number of academies. \n\n(5)Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. \n\n(6)The number of academies, at which Ruby language is taught, is not 3. \n\n(7)Dunsyre, which is in Kukatpally is Bronze rated academy. \n\n(8)One of the language taught at Platinum rated academy is 'R’. \n\n(9)Austin, which is not in Hafeezpet, doesn’t not teach PHP.\n\nWe know that each academy teaches only 3 languages. If exactly 3 languages out of the five that are taught at exactly three academies each, then remaining 2 language will be taught at 2 and 4 academies.\n\nFrom statement 4 it is evident that Java will be taught by 2 academies and from statement 6 we can say that Ruby will be taught by 4 academies. Rest 'R', PHP and Python will be taught at 3 academies each.\n\nDrawing the table and using information from statement 2, 5, 7.\n\nEffco is not a silver and gold rated academy hence it can be Diamond, Bronze and Platinum. But from 5 and 7 it is evident that Effco can be platinum rated academy only. \n\nFrom statement 9 it is clear that Austin is located in Hitec city and also PHP is not taught here.\n\nHence Chirel is located at Hafeezpet.\n\nFrom statement 8 it is clear that 'R' will be taught by Effco academy.\n\nFrom statement 3, we can say that Python will not be taught at Austin and Chirel. So it will definitely taught at remaining 3 academies. a\n\nNow we can easily fill the table by keeping in mind that each academy will teach only 3 languages and 'Ruby' will be taught be 4 academies. \n\nNow we can answer all the quastions.\n\nWe can clearly see from the table that Java and PHP are not taught by Effco which is located at Gachibowli. (Answer:B)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 129855)\n\n**Passage:**\nThere are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.\n\nWhich of the languages are not taught at the academy that is in Gachibowli?\n\n**Options:**\n- **A**. R and Java\n- **B**. Java and PHP\n- **C**. PHP and Ruby\n- **D**. Java and Ruby\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1666",
+      "passage_text": "There are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.",
+      "question_text": "The rating of Austin academy is _______?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bronze",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Silver",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Gold",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Given information\n\n(1)There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. \n\n(2)Effco, which is neither Silver nor Gold rated, is in Gachibowli. \n\n(3)Python is not taught at the academies located in Hitec city and Hafeezpet. \n\n(4)Java is taught by minimum number of academies. \n\n(5)Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. \n\n(6)The number of academies, at which Ruby language is taught, is not 3. \n\n(7)Dunsyre, which is in Kukatpally is Bronze rated academy. \n\n(8)One of the language taught at Platinum rated academy is 'R’. \n\n(9)Austin, which is not in Hafeezpet, doesn’t not teach PHP.\n\nWe know that each academy teaches only 3 languages. If exactly 3 languages out of the five that are taught at exactly three academies each, then remaining 2 language will be taught at 2 and 4 academies.\n\nFrom statement 4 it is evident that Java will be taught by 2 academies and from statement 6 we can say that Ruby will be taught by 4 academies. Rest 'R', PHP and Python will be taught at 3 academies each.\n\nDrawing the table and using information from statement 2, 5, 7.\n\nEffco is not a silver and gold rated academy hence it can be Diamond, Bronze and Platinum. But from 5 and 7 it is evident that Effco can be platinum rated academy only. \n\nFrom statement 9 it is clear that Austin is located in Hitec city and also PHP is not taught here.\n\nHence Chirel is located at Hafeezpet.\n\nFrom statement 8 it is clear that 'R' will be taught by Effco academy.\n\nFrom statement 3, we can say that Python will not be taught at Austin and Chirel. So it will definitely taught at remaining 3 academies. a\n\nNow we can easily fill the table by keeping in mind that each academy will teach only 3 languages and 'Ruby' will be taught be 4 academies. \n\nNow we can answer all the quastions.\n\nWe can clearly see from the table that rating of Austin academy can not be uniquely determined. It can be either Silver or Gold.(Answer :D)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 129856)\n\n**Passage:**\nThere are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.\n\nThe rating of Austin academy is _______?\n\n**Options:**\n- **A**. Bronze\n- **B**. Silver\n- **C**. Gold\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1667",
+      "passage_text": "There are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.",
+      "question_text": "The languages taught at Brisk academy are______________ ?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Java, R, Ruby",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Python, R, Java",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "R, Python, PHP",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Given information\n\n(1)There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. \n\n(2)Effco, which is neither Silver nor Gold rated, is in Gachibowli. \n\n(3)Python is not taught at the academies located in Hitec city and Hafeezpet. \n\n(4)Java is taught by minimum number of academies. \n\n(5)Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. \n\n(6)The number of academies, at which Ruby language is taught, is not 3. \n\n(7)Dunsyre, which is in Kukatpally is Bronze rated academy. \n\n(8)One of the language taught at Platinum rated academy is 'R’. \n\n(9)Austin, which is not in Hafeezpet, doesn’t not teach PHP.\n\nWe know that each academy teaches only 3 languages. If exactly 3 languages out of the five that are taught at exactly three academies each, then remaining 2 language will be taught at 2 and 4 academies.\n\nFrom statement 4 it is evident that Java will be taught by 2 academies and from statement 6 we can say that Ruby will be taught by 4 academies. Rest 'R', PHP and Python will be taught at 3 academies each.\n\nDrawing the table and using information from statement 2, 5, 7.\n\nEffco is not a silver and gold rated academy hence it can be Diamond, Bronze and Platinum. But from 5 and 7 it is evident that Effco can be platinum rated academy only. \n\nFrom statement 9 it is clear that Austin is located in Hitec city and also PHP is not taught here.\n\nHence Chirel is located at Hafeezpet.\n\nFrom statement 8 it is clear that 'R' will be taught by Effco academy.\n\nFrom statement 3, we can say that Python will not be taught at Austin and Chirel. So it will definitely taught at remaining 3 academies. a\n\nNow we can easily fill the table by keeping in mind that each academy will teach only 3 languages and 'Ruby' will be taught be 4 academies. \n\nNow we can answer all the quastions.\n\nWe can clearly see from the table that the languages taught at Brisk academy are 'R', 'Python' and 'PHP'. (Answer :C)",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 129857)\n\n**Passage:**\nThere are five academies in Hyderabad - Austin, Brisk, Chirel, Dunsyre and Effco. Each of these academies teaches three programming languages out of Java, R, Python, PHP, Ruby. Each of these academies has a different rating out of Diamond, Platinum, Gold, Silver, Bronze not necessarily in the same order and these academies are in different part of the city namely Kondapur, Kukatpally, Gachibowli, Hitec city and Hafeezpet not necessarily in the same order. No two academies teach the same set of the three languages. There are exactly 3 languages out of the five that are taught at exactly three academies each, and each language is taught in at least two academies. Effco, which is neither Silver nor Gold rated, is in Gachibowli. Python is not taught at the academies located in Hitec city and Hafeezpet. Java is taught by a minimum number of academies. Two of three languages taught by Brisk, which is Diamond rated academy in Kondapur, are R and PHP. The number of academies, at which Ruby language is taught, is not 3. Dunsyre, which is in Kukatpally is the Bronze-rated academy. One of the languages taught at Platinum rated academy is 'R’. Austin, which is not in Hafeezpet, doesn’t teach PHP.\n\nThe languages taught at Brisk academy are______________ ?\n\n**Options:**\n- **A**. Java, R, Ruby\n- **B**. Python, R, Java\n- **C**. R, Python, PHP\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1668",
+      "passage_text": "The two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.",
+      "question_text": "In the year 2011 - 2012, which class had the highest number of failures?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "class 6",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "class 7",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "class 8",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "class 9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nFrom the above table, it can be seen that the highest number of failures(3) was in class 8 in the session of 2011-12.\nThe correct option is C.",
+      "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
+      "full_markdown": "### Question (qid: 2392)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nIn the year 2011 - 2012, which class had the highest number of failures?\n\n**Options:**\n- **A**. class 6\n- **B**. class 7\n- **C**. class 8\n- **D**. class 9\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1669",
+      "passage_text": "The two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.",
+      "question_text": "What is the pass percentage of the school in the year 2013-2014?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "93.62%",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "95.84%",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "91.79%",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can’t be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nTo determine the number of failed students in 2013-14, we needed to have the total number of students in 2014-15.\n\nSince we do not have that data, the answer to this question cannot be determined.\n\nThe correct option is D.",
+      "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
+      "full_markdown": "### Question (qid: 2393)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nWhat is the pass percentage of the school in the year 2013-2014?\n\n**Options:**\n- **A**. 93.62%\n- **B**. 95.84%\n- **C**. 91.79%\n- **D**. Can’t be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1670",
+      "passage_text": "The two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.",
+      "question_text": "What is the total number of students who failed in class 7 from 2009-10 to 2012-13?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Can’t be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nThe total number of students failed in class 7 = 2 + 4 + 2 + 5 = 13\n\nThe correct option is B.",
+      "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
+      "full_markdown": "### Question (qid: 2394)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nWhat is the total number of students who failed in class 7 from 2009-10 to 2012-13?\n\n**Options:**\n- **A**. 12\n- **B**. 13\n- **C**. 14\n- **D**. Can’t be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1671",
+      "passage_text": "The two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.",
+      "question_text": "What is the minimum number of students who started in class 6 in the year 2009-10 and entered class 10 in the year 2013-14?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "49",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "47",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "52",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nSince we have to find the minimum number of students who started in class 6 and entered class 10, no student who joined in that batch in subsequent years failed in any of the years.\n\nThe minimum number of students is therefore, 58 - 2 - 4 - 3 - 2 = 58 - 11 = 47.\n\nThe correct option is C.",
+      "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
+      "full_markdown": "### Question (qid: 2395)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nWhat is the minimum number of students who started in class 6 in the year 2009-10 and entered class 10 in the year 2013-14?\n\n**Options:**\n- **A**. 49\n- **B**. 45\n- **C**. 47\n- **D**. 52\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1672",
+      "passage_text": "The two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.",
+      "question_text": "What is the ratio of the pass percentage of class 7 in 2010-2011 to the fail percentage of class 8 in 2012-13.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30.13",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "29.83",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "22.9",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "25.69",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nThe total number of students in class 7 in 2010-2011 = 59.\n\nThe pass percentage of class 7 in 2010-11 = $\\frac{59-4}{59}\\times\\ 100=\\ 93.22\\%$......(1)\n\nThe total number of students in class 8 in 2012-2013 = 64.\n\nThe fail percentage of students in class 8 in 2012-2013 = $\\frac{2}{64}\\times\\ 100=\\ 3.125\\%$......(2)\n\nThe ratio of the Pass percentage of class 7 in 2010-2011 to the fail percentage of class 8 in 2012-13 = $\\frac{93.22}{3.125}=29.83$\n\nThe answer is option (B)",
+      "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
+      "full_markdown": "### Question (qid: 433966)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nWhat is the ratio of the pass percentage of class 7 in 2010-2011 to the fail percentage of class 8 in 2012-13.\n\n**Options:**\n- **A**. 30.13\n- **B**. 29.83\n- **C**. 22.9\n- **D**. 25.69\n\n**Correct Answer:** null"
     }
   ]
 }

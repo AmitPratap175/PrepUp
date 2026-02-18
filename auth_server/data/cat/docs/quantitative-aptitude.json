@@ -71331,6 +71331,231 @@
       "solution_text": "Let's assume that Total work = 1\n\nIf the work is entirely carried by each one of them it would cost \n\nArun: $2160 \\times 24 = 51840$\n\nVarun: $2400 \\times 21 = 50400$\n\nTarun: $2160 \\times 15 = 32400$\n\nThe cheapest worker is Tarun. He can finish the work in 15 days. But we need the work completed in 10 days.\n\nTarun does $10 \\times \\frac{1}{15} = \\frac{2}{3}$\n\n$1 - \\frac{2}{3} = \\frac{1}{3}$\n\nComplete the remaining (1/3) work using the next cheapest worker, which is Varun.\n\nDays needed: $\\frac{x}{21} = \\frac{1}{3} \\quad\\Rightarrow\\quad x = 7$\n\nTotal cost = Amount paid for Tarun + Amount paid for Varun = $10 \\times 2160 + 7 \\times 2400 = 38400$",
       "image_url": "",
       "full_markdown": "### Question (qid: 476403)\n\n**Passage:**\nArun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is\n\n38400\n\n38880\n\n34400\n\n47040\n\nArun, Varun and Tarun, if working alone, can complete a task in 24, 21, and 15 days, respectively. They charge Rs 2160, Rs 2400, and Rs 2160 per day, respectively, even if they are employed for a partial day. On any given day, any of the workers may or may not be employed to work. If the task needs to be completed in 10 days or less, then the minimum possible amount, in rupees, required to be paid for the entire task is\n\n**Options:**\n- **A**. 38400\n- **B**. 38880\n- **C**. 34400\n- **D**. 47040\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2279",
+      "passage_text": "Let 3 ≤ x ≤ 6 3\\leq x\\leq6 3 ≤ x ≤ 6 and [ x 2 ] = [ x ] 2 \\left[x^{2}\\right] =\\left[x\\right]^{2} [ x 2 ] = [ x ] 2 , where [ x ] [x] [ x ] is the greatest integer not exceeding x x x . If set S S S represents all feasible values of x x x , then a possible subset of S S S is\n\n( 3 , 10 ) ∪ [ 5 , 26 ) ∪ { 6 } \\left(3,\\sqrt{10}\\right)\\cup \\left[5,\\sqrt{26}\\right)\\cup \\left\\{6\\right\\} ( 3 , 1 0 ​ ) ∪ [ 5 , 2 6 ​ ) ∪ { 6 }\n\n[ 3 , 10 ] ∪ [ 5 , 26 ] \\left[3,\\sqrt{10}\\right] \\cup \\left[5,\\sqrt{26}\\right] [ 3 , 1 0 ​ ] ∪ [ 5 , 2 6 ​ ]\n\n[ 3 , 10 ] ∪ [ 4 , 17 ] ∪ { 6 } \\left[3,\\sqrt{10}\\right]\\cup \\left[4,\\sqrt{17}\\right]\\cup \\left\\{6\\right\\} [ 3 , 1 0 ​ ] ∪ [ 4 , 1 7 ​ ] ∪ { 6 }\n\n( 4 , 18 ) ∪ [ 5 , 27 ) ∪ { 6 } \\left(4,\\sqrt{18}\\right)\\cup\\left[5,\\sqrt{27}\\right)\\cup\\left\\{6\\right\\} ( 4 , 1 8 ​ ) ∪ [ 5 , 2 7 ​ ) ∪ { 6 }",
+      "question_text": "Let $3\\leq x\\leq6$ and $\\left[x^{2}\\right] =\\left[x\\right]^{2}$ , where $[x]$ is the greatest integer not exceeding $x$ . If set $S$ represents all feasible values of $x$, then a possible subset of $S$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\left(3,\\sqrt{10}\\right)\\cup \\left[5,\\sqrt{26}\\right)\\cup \\left\\{6\\right\\}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\left[3,\\sqrt{10}\\right] \\cup \\left[5,\\sqrt{26}\\right]$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\left[3,\\sqrt{10}\\right]\\cup \\left[4,\\sqrt{17}\\right]\\cup \\left\\{6\\right\\}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\left(4,\\sqrt{18}\\right)\\cup\\left[5,\\sqrt{27}\\right)\\cup\\left\\{6\\right\\}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "For n=3,4,5 and $x\\in[n,n+1)$ we have $\\lfloor x\\rfloor=n$, so the equation\n\n$\\lfloor x^2\\rfloor=\\lfloor x\\rfloor^2=n^2$\n\n$x^2\\in[n^2,n^2+1)$, i.e. $x\\in[n,\\sqrt{n^2+1})$\n\nThus for $3\\le x\\le6$\n\n$S=[3,\\sqrt{10})\\ \\cup\\ [4,\\sqrt{17})\\ \\cup\\ [5,\\sqrt{26})\\ \\cup{6}$\n\nOption B and C have $\\sqrt{10}$ included, which is not part of the original set. And Option D has $\\sqrt{18}$. So, it is not possible. \n\nOption A is the answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476393)\n\n**Passage:**\nLet 3 ≤ x ≤ 6 3\\leq x\\leq6 3 ≤ x ≤ 6 and [ x 2 ] = [ x ] 2 \\left[x^{2}\\right] =\\left[x\\right]^{2} [ x 2 ] = [ x ] 2 , where [ x ] [x] [ x ] is the greatest integer not exceeding x x x . If set S S S represents all feasible values of x x x , then a possible subset of S S S is\n\n( 3 , 10 ) ∪ [ 5 , 26 ) ∪ { 6 } \\left(3,\\sqrt{10}\\right)\\cup \\left[5,\\sqrt{26}\\right)\\cup \\left\\{6\\right\\} ( 3 , 1 0 ​ ) ∪ [ 5 , 2 6 ​ ) ∪ { 6 }\n\n[ 3 , 10 ] ∪ [ 5 , 26 ] \\left[3,\\sqrt{10}\\right] \\cup \\left[5,\\sqrt{26}\\right] [ 3 , 1 0 ​ ] ∪ [ 5 , 2 6 ​ ]\n\n[ 3 , 10 ] ∪ [ 4 , 17 ] ∪ { 6 } \\left[3,\\sqrt{10}\\right]\\cup \\left[4,\\sqrt{17}\\right]\\cup \\left\\{6\\right\\} [ 3 , 1 0 ​ ] ∪ [ 4 , 1 7 ​ ] ∪ { 6 }\n\n( 4 , 18 ) ∪ [ 5 , 27 ) ∪ { 6 } \\left(4,\\sqrt{18}\\right)\\cup\\left[5,\\sqrt{27}\\right)\\cup\\left\\{6\\right\\} ( 4 , 1 8 ​ ) ∪ [ 5 , 2 7 ​ ) ∪ { 6 }\n\nLet $3\\leq x\\leq6$ and $\\left[x^{2}\\right] =\\left[x\\right]^{2}$ , where $[x]$ is the greatest integer not exceeding $x$ . If set $S$ represents all feasible values of $x$, then a possible subset of $S$ is\n\n**Options:**\n- **A**. $\\left(3,\\sqrt{10}\\right)\\cup \\left[5,\\sqrt{26}\\right)\\cup \\left\\{6\\right\\}$\n- **B**. $\\left[3,\\sqrt{10}\\right] \\cup \\left[5,\\sqrt{26}\\right]$\n- **C**. $\\left[3,\\sqrt{10}\\right]\\cup \\left[4,\\sqrt{17}\\right]\\cup \\left\\{6\\right\\}$\n- **D**. $\\left(4,\\sqrt{18}\\right)\\cup\\left[5,\\sqrt{27}\\right)\\cup\\left\\{6\\right\\}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2280",
+      "passage_text": "The number of distinct pairs of integers (x, y) satisfying the inequalities x > y ≥ 3 x>y\\geq3 x > y ≥ 3 and x + y < 14 x+y<14 x + y < 1 4 is",
+      "question_text": "The number of distinct pairs of integers (x, y) satisfying the inequalities $x>y\\geq3 $ and $x+y<14$ is",
+      "options": [],
+      "correct_option_data": "16",
+      "solution_text": "It is given, $x>y\\geq3 $ and $x+y<14$\n\nNow for $y=3$, the values of $x$ can be 4,5,6,7,8,9,10  (7 cases)\n\nThen for $y=4$, the values of $x$ can be 5,6,7,8,9 (5 cases)\n\nThen for $y=5$, the values of $x$ can be 6,7,8 (3 cases)\n\nThen for $y=6$, the values of $x$ will be 7 (1 case)\n\nSo, total number of cases =1+3+5+7=16 cases",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476397)\n\n**Passage:**\nThe number of distinct pairs of integers (x, y) satisfying the inequalities x > y ≥ 3 x>y\\geq3 x > y ≥ 3 and x + y < 14 x+y<14 x + y < 1 4 is\n\nThe number of distinct pairs of integers (x, y) satisfying the inequalities $x>y\\geq3 $ and $x+y<14$ is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2281",
+      "passage_text": "",
+      "question_text": "Let p, q and r be three natural numbers such that their sum is 900, and r is a perfect square whose value lies between 150 and 500. If p is not less than 0.3q and not more than 0.7q, then the sum of the maximum and minimum possible values of p is",
+      "options": [],
+      "correct_option_data": "397",
+      "solution_text": "We have $p+q+r = 900$, and $r$ is a perfect square lying between $150$ and $500$.\n\nLet $q$ be a non-variable number that does not have a range.\n\nWe have $0.3q \\leq p \\leq 0.7q$,  or  $q+0.3q \\leq p+q \\leq q+0.7q$  or  $1.3q \\leq p+q \\leq 1.7q$\n\nAlso, we can rewrite $p+q = 900-r$\n\nTherefore, $1.3q \\leq 900-r \\leq 1.7q$\n\nSince the extreme values (maximum and minimum) of $p$ depend on the value of $q$ ($0.3q$ and $0.7q$), we can maximise or minimise $r$ to find the extreme values of $p$.\n\nSince $1.3q \\leq 900-r$, the minimum possible value of $q$ would be when $1.3q = 900-r$ and when $r$ is maximum. The maximum value of $r$ is $484$. We get, $1.3q = 900-484$, or $q = 320$.\n\nThis gives the minimum possible value of $p$ as $0.3\\times 320 = 96$.\n\nSince $900-r \\leq 1.7q$. the maximum possible value of $q$ would be when $900-r=1.7q$ and when $r$ is minimum. The minimum value of $r$ is $169$. We get $1.7q = 900-169$ or $q= 430$\n\nThis gives the maximum possible value of $p$ as $0.7\\times 430 = 301$\n\nThe sum of the maximum and minimum values of $p$ is $96+301 = 397$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476592)\n\n**Passage:**\nLet p, q and r be three natural numbers such that their sum is 900, and r is a perfect square whose value lies between 150 and 500. If p is not less than 0.3q and not more than 0.7q, then the sum of the maximum and minimum possible values of p is\n\nLet p, q and r be three natural numbers such that their sum is 900, and r is a perfect square whose value lies between 150 and 500. If p is not less than 0.3q and not more than 0.7q, then the sum of the maximum and minimum possible values of p is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2282",
+      "passage_text": "The set of all real values of x for which ( x 2 − ∣ x + 9 ∣ + x ) > 0 (x^{2}-\\mid x+9\\mid+x)>0 ( x 2 − ∣ x + 9 ∣ + x ) > 0 , is\n\n( − ∞ , − 3 ) ∪ ( 3 , ∞ ) (-\\infty,-3)\\cup (3,\\infty) ( − ∞ , − 3 ) ∪ ( 3 , ∞ )\n\n( − ∞ , − 9 ) ∪ ( 3 , ∞ ) (-\\infty,-9)\\cup (3,\\infty) ( − ∞ , − 9 ) ∪ ( 3 , ∞ )\n\n( − 9 , − 3 ) ∪ ( 3 , ∞ ) (-9,-3)\\cup (3,\\infty) ( − 9 , − 3 ) ∪ ( 3 , ∞ )\n\n( − ∞ , − 9 ) ∪ ( 9 , ∞ ) (-\\infty,-9)\\cup (9,\\infty) ( − ∞ , − 9 ) ∪ ( 9 , ∞ )",
+      "question_text": "The set of all real values of x for which $(x^{2}-\\mid x+9\\mid+x)>0$, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$(-\\infty,-3)\\cup (3,\\infty)$",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$(-\\infty,-9)\\cup (3,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$(-9,-3)\\cup (3,\\infty)$",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$(-\\infty,-9)\\cup (9,\\infty)$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "We are asked to solve\n\n$x^2 - |x+9| + x > 0$\n\nSplit into two cases based on the absolute value.\n\nCase 1: $x+9 \\ge 0 \\Rightarrow x \\ge -9$\n\n$|x+9| = x+9$\n\nInequality becomes: $x^2 - (x+9) + x > 0 \\implies x^2 - 9 > 0 \\implies (x-3)(x+3) > 0$\n\nSo $x<-3  or  x>3$. Combined with $x\\ge -9$, we get $x\\in [-9,-3) \\cup (3,\\infty)$\n\nCase 2: $x+9 < 0 \\Rightarrow x < -9$\n\n$|x+9| = -(x+9) = -x - 9$\n\nInequality becomes: $x^2 - (-x-9) + x > 0 \\implies x^2 + 2x + 9 > 0$\n\nThe quadratic $x^2 + 2x + 9$ has discriminant (4-36=-32 <0), so always positive. But in this case (x<-9), so inequality is satisfied. Thus (x < -9) also works.\n\n$x < -3  \\text{or}  x>3$\n\nSo the solution set is ${(-\\infty,-3) \\cup (3,\\infty)}$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476600)\n\n**Passage:**\nThe set of all real values of x for which ( x 2 − ∣ x + 9 ∣ + x ) > 0 (x^{2}-\\mid x+9\\mid+x)>0 ( x 2 − ∣ x + 9 ∣ + x ) > 0 , is\n\n( − ∞ , − 3 ) ∪ ( 3 , ∞ ) (-\\infty,-3)\\cup (3,\\infty) ( − ∞ , − 3 ) ∪ ( 3 , ∞ )\n\n( − ∞ , − 9 ) ∪ ( 3 , ∞ ) (-\\infty,-9)\\cup (3,\\infty) ( − ∞ , − 9 ) ∪ ( 3 , ∞ )\n\n( − 9 , − 3 ) ∪ ( 3 , ∞ ) (-9,-3)\\cup (3,\\infty) ( − 9 , − 3 ) ∪ ( 3 , ∞ )\n\n( − ∞ , − 9 ) ∪ ( 9 , ∞ ) (-\\infty,-9)\\cup (9,\\infty) ( − ∞ , − 9 ) ∪ ( 9 , ∞ )\n\nThe set of all real values of x for which $(x^{2}-\\mid x+9\\mid+x)>0$, is\n\n**Options:**\n- **A**. $(-\\infty,-3)\\cup (3,\\infty)$\n- **B**. $(-\\infty,-9)\\cup (3,\\infty)$\n- **C**. $(-9,-3)\\cup (3,\\infty)$\n- **D**. $(-\\infty,-9)\\cup (9,\\infty)$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2283",
+      "passage_text": "If a,b,c and d are integers such that their sum is 46, then the minimum possible value of ( a − b ) 2 + ( a − c ) 2 + ( a − d ) 2 (a-b)^{2}+(a-c)^{2}+(a-d)^{2} ( a − b ) 2 + ( a − c ) 2 + ( a − d ) 2 is",
+      "question_text": "If a,b,c and d are integers such that their sum is 46, then the minimum possible value of $(a-b)^{2}+(a-c)^{2}+(a-d)^{2}$ is",
+      "options": [],
+      "correct_option_data": "2",
+      "solution_text": "Given expression: $(a-b)^{2}+(a-c)^{2}+(a-d)^{2}$\n\nThe given expression has just the sum of squares of the terms. So, the minimum value is either zero or positive.\n\nIf we can make all the values equal, we can get zero. But since all the values are integers and the sum 46 is not divisible by 4, we can't make everything equal. \n\nSo, the nearest four values are 12, 11, 11, 12.\n\nWith this, the minimum value is $(12-11)^2+(12-11)^2+(12-12)^2 = 2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476613)\n\n**Passage:**\nIf a,b,c and d are integers such that their sum is 46, then the minimum possible value of ( a − b ) 2 + ( a − c ) 2 + ( a − d ) 2 (a-b)^{2}+(a-c)^{2}+(a-d)^{2} ( a − b ) 2 + ( a − c ) 2 + ( a − d ) 2 is\n\nIf a,b,c and d are integers such that their sum is 46, then the minimum possible value of $(a-b)^{2}+(a-c)^{2}+(a-d)^{2}$ is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2284",
+      "passage_text": "For any natural number k , let a k = 3 k a_{k}=3^{k} a k ​ = 3 k . The smallest natural number m for which { ( a 1 ) 1 × ( a 2 ) 2 × . . . × ( a 20 ) 20 } < { a 21 × a 22 × . . . × a 20 + m } \\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\} { ( a 1 ​ ) 1 × ( a 2 ​ ) 2 × . . . × ( a 2 0 ​ ) 2 0 } < { a 2 1 ​ × a 2 2 ​ × . . . × a 2 0 + m ​ } , is\n\n58\n\n59\n\n56\n\n57",
+      "question_text": "For any natural number k , let $a_{k}=3^{k}$. The smallest natural number m for which $\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "58",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "59",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "57",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Given expression is $\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$,\n\n$\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}$ = $\\left\\{3^1\\times3^4\\times3^9...\\times3^{400}\\right\\}$\n\nSum of square of n natural numbers is $\\frac{n\\cdot\\left(n+1\\right)\\cdot\\left(2n+1\\right)}{6}$\n\n= $3^{\\dfrac{\\left(20\\cdot21\\cdot41\\right)}{6}}$ = $3^{2870}$\n\nOn right hand side of inequlaity we have $\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$\n\n= $3^{21}\\times3^{22}\\times...\\times3^{20+m}$ = $3^{21+22+...+20+m}$\n\nUsing the sum of the first (n) natural numbers,\n\n$1+2+\\cdots+n = \\frac{n(n+1)}{2}$\n\n$21 + 22 + \\cdots + (20+m)$\n\n= $1+2+\\cdots+(20+m) - (1+2+\\cdots+20)$\n\n$1+2+\\cdots+(20+m)=\\frac{(20+m)(21+m)}{2}$\n\n$1+2+\\cdots+20 = \\frac{20\\cdot21}{2} = 210$\n\nSo, $21+22+\\cdots+(20+m)$\n\n= $\\frac{(20+m)(21+m)}{2} - 210$\n\nExpanding, $(20+m)(21+m)=m^2+41m+420$\n\nThus, $\\frac{m^2+41m+420}{2}-210$\n\n$= \\frac{m^2+41m}{2}$\n\nSince the bases are equal, we must compare the powers.\n\n$2870<\\frac{m^2+41m}{2} \\Rightarrow 5740<m(m+41) $\n\nHere, we can put in the option to check the minimum value that satisfies the inequality.\n\n56: We get 5740<5264. This is false\n\n57: We get 5740<5586. This is false\n\n58: We get 5740<5742. This is the minimum possible value.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476395)\n\n**Passage:**\nFor any natural number k , let a k = 3 k a_{k}=3^{k} a k ​ = 3 k . The smallest natural number m for which { ( a 1 ) 1 × ( a 2 ) 2 × . . . × ( a 20 ) 20 } < { a 21 × a 22 × . . . × a 20 + m } \\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\} { ( a 1 ​ ) 1 × ( a 2 ​ ) 2 × . . . × ( a 2 0 ​ ) 2 0 } < { a 2 1 ​ × a 2 2 ​ × . . . × a 2 0 + m ​ } , is\n\n58\n\n59\n\n56\n\n57\n\nFor any natural number k , let $a_{k}=3^{k}$. The smallest natural number m for which $\\left\\{(a_{1})^{1}\\times(a_{2})^{2}\\times...\\times(a_{20})^{20}\\right\\}<\\left\\{a_{21}\\times a_{22}\\times...\\times a_{20+m}\\right\\}$, is\n\n**Options:**\n- **A**. 58\n- **B**. 59\n- **C**. 56\n- **D**. 57\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2285",
+      "passage_text": "In the set of consecutive odd numbers { 1 , 3 , 5 , . . . , 57 } \\left\\{1,3,5,...,57\\right\\} { 1 , 3 , 5 , . . . , 5 7 } , there is a number k k k such that the sum of all the elements less than k k k is equal to the sum of all the elements greater than k k k . Then, k k k equals\n\n41\n\n39\n\n43\n\n37",
+      "question_text": "In the set of consecutive odd numbers $\\left\\{1,3,5,...,57\\right\\}$, there is a number $k$ such that the sum of all the elements less than $k$ is equal to the sum of all the elements greater than $k$ . Then, $k$ equals",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "41",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "39",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "43",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "37",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "The sum of all the elements in the given set = Sum of first 29 odd numbers = $29^2$ = 841\n\nLet's assume that k is the $m_{th}$ term. Sum of terms less than k = sum of first (m-1) odd numbers = $(m-1)^2$ \n\n$841-m^2=(m-1)^2$\n\n$841 - m^2 = m^2 - 2m + 1$\n\n$840 - 2m^2 + 2m = 0$\n\n$m^2 - m - 420 = 0$\n\n$(m - 21)(m + 20) = 0$\n\nm = 21 -20\n\nm = 20. And the 20th term is 2*m+1 = 41",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476402)\n\n**Passage:**\nIn the set of consecutive odd numbers { 1 , 3 , 5 , . . . , 57 } \\left\\{1,3,5,...,57\\right\\} { 1 , 3 , 5 , . . . , 5 7 } , there is a number k k k such that the sum of all the elements less than k k k is equal to the sum of all the elements greater than k k k . Then, k k k equals\n\n41\n\n39\n\n43\n\n37\n\nIn the set of consecutive odd numbers $\\left\\{1,3,5,...,57\\right\\}$, there is a number $k$ such that the sum of all the elements less than $k$ is equal to the sum of all the elements greater than $k$ . Then, $k$ equals\n\n**Options:**\n- **A**. 41\n- **B**. 39\n- **C**. 43\n- **D**. 37\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2286",
+      "passage_text": "",
+      "question_text": "In an arithmetic progression, if the sum of fourth, seventh and tenth terms is 99, and the sum of the first fourteen terms is 497, then the sum of first five terms is",
+      "options": [],
+      "correct_option_data": "65",
+      "solution_text": "Let the first term of the arithmetic progression be $a$, and the common difference be $d$.\n\nWe have:\n\n$(a+3d) + (a+6d) + (a+9d) = 99$\n\n$\\Rightarrow 3a + 18d = 99$  or  $a + 6d = 33$ .....(1)\n\nWe are also told that the sum of the first fourteen terms is $497$,\n\n$\\dfrac{14}{2}(2a + (14-1)d) = 497$\n\n$\\Rightarrow (2a+13d) = \\dfrac{497}{7}$\n\n$\\Rightarrow 2a+13d = 71$ .....(2)\n\nSolving equations (1) and (2), we get;\n\n$a= 3$ and $d=5$\n\nThe first five terms would therefore be: $3, 8, 13, 18, 23$, and their sum would be $3+8+13+18+23 = 65$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476574)\n\n**Passage:**\nIn an arithmetic progression, if the sum of fourth, seventh and tenth terms is 99, and the sum of the first fourteen terms is 497, then the sum of first five terms is\n\nIn an arithmetic progression, if the sum of fourth, seventh and tenth terms is 99, and the sum of the first fourteen terms is 497, then the sum of first five terms is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2287",
+      "passage_text": "",
+      "question_text": "The average number of copies of a book sold per day by a shopkeeper is 60 in the initial seven days and 63 in the initial eight days, after the book launch. On the ninth day, she sells 11 copies less than the eighth day, and the average number of copies sold per day from second day to ninth day becomes 66. The number of copies sold on the first day of the book launch is",
+      "options": [],
+      "correct_option_data": "49",
+      "solution_text": "Let the copies sold on days 1 through 9 be $d_1,\\dots,d_9$\n\nFrom the averages:\n\n$d_1+\\cdots+d_7=7\\times60=420$\n\n$d_1+\\cdots+d_8=8\\times63=504$\n\nSo $d_8=504-420=84$. Then $d_9=84-11=73$\n\nThe sum from day 2 to day 9 is $8\\times66=528$\n\n$d_2+\\cdots+d_9=(d_1+\\cdots+d_8)-d_1+d_9=504-d_1+73=577-d_1$\n\nThus $577-d_1=528 \\Rightarrow d_1=49$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476599)\n\n**Passage:**\nThe average number of copies of a book sold per day by a shopkeeper is 60 in the initial seven days and 63 in the initial eight days, after the book launch. On the ninth day, she sells 11 copies less than the eighth day, and the average number of copies sold per day from second day to ninth day becomes 66. The number of copies sold on the first day of the book launch is\n\nThe average number of copies of a book sold per day by a shopkeeper is 60 in the initial seven days and 63 in the initial eight days, after the book launch. On the ninth day, she sells 11 copies less than the eighth day, and the average number of copies sold per day from second day to ninth day becomes 66. The number of copies sold on the first day of the book launch is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2288",
+      "passage_text": "Let a n a_{n} a n ​ be the n t h n^{th} n t h term of a decreasing infinite geometric progression. If a 1 + a 2 + a 3 = 52 a_{1}+a_{2}+a_{3}=52 a 1 ​ + a 2 ​ + a 3 ​ = 5 2 and a 1 a 2 + a 2 a 3 + a 3 a 1 = 624 a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624 a 1 ​ a 2 ​ + a 2 ​ a 3 ​ + a 3 ​ a 1 ​ = 6 2 4 , then the sum of this geometric progression is\n\n57\n\n54\n\n60\n\n63",
+      "question_text": "Let $a_{n}$ be the $n^{th}$ term of a decreasing infinite geometric progression. If $a_{1}+a_{2}+a_{3}=52$ and $a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624$, then the sum of this geometric progression is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "57",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "54",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "63",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Let the first term be a and the common ratio be r.\n\nGiven\n\n$a+a r + a r^2 = 52 \\quad\\text{and}\\quad a^2 r + a^2 r^2 + a^2 r^3 = 624.$\n\nFrom the first equation $a(1+r+r^2)=52$, so $a=\\dfrac{52}{1+r+r^2}$. \n\nSubstitute into the second:\n\n$\\frac{52^2}{(1+r+r^2)^2}*(r+r^2+r^3)=624$\n\n$\\frac{r}{(1+r+r^2)}=\\frac{3}{13}$\n\n$3r^2-10r+3=0$\n\n$(3r-1)(r-3)=0$\n\nSimplify to get an equation in (r); its real solutions are $r=\\tfrac{1}{3}$ and $r=3$. For an infinite geometric progression, we must have (|r|<1), so $r=\\dfrac{1}{3}$.\n\nNow\n$a=\\frac{52}{1+\\tfrac{1}{3}+\\tfrac{1}{9}}=\\frac{52}{13/9}=36$\n\nThe sum of the infinite progression is\n\n$ S=\\frac{a}{1-r}=\\frac{36}{1-\\tfrac{1}{3}}=\\frac{36}{2/3}=54.$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476615)\n\n**Passage:**\nLet a n a_{n} a n ​ be the n t h n^{th} n t h term of a decreasing infinite geometric progression. If a 1 + a 2 + a 3 = 52 a_{1}+a_{2}+a_{3}=52 a 1 ​ + a 2 ​ + a 3 ​ = 5 2 and a 1 a 2 + a 2 a 3 + a 3 a 1 = 624 a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624 a 1 ​ a 2 ​ + a 2 ​ a 3 ​ + a 3 ​ a 1 ​ = 6 2 4 , then the sum of this geometric progression is\n\n57\n\n54\n\n60\n\n63\n\nLet $a_{n}$ be the $n^{th}$ term of a decreasing infinite geometric progression. If $a_{1}+a_{2}+a_{3}=52$ and $a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624$, then the sum of this geometric progression is\n\n**Options:**\n- **A**. 57\n- **B**. 54\n- **C**. 60\n- **D**. 63\n\n**Correct Answer:** null"
     }
   ]
 }
