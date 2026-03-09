@@ -71556,6 +71556,256 @@
       "solution_text": "Let the first term be a and the common ratio be r.\n\nGiven\n\n$a+a r + a r^2 = 52 \\quad\\text{and}\\quad a^2 r + a^2 r^2 + a^2 r^3 = 624.$\n\nFrom the first equation $a(1+r+r^2)=52$, so $a=\\dfrac{52}{1+r+r^2}$. \n\nSubstitute into the second:\n\n$\\frac{52^2}{(1+r+r^2)^2}*(r+r^2+r^3)=624$\n\n$\\frac{r}{(1+r+r^2)}=\\frac{3}{13}$\n\n$3r^2-10r+3=0$\n\n$(3r-1)(r-3)=0$\n\nSimplify to get an equation in (r); its real solutions are $r=\\tfrac{1}{3}$ and $r=3$. For an infinite geometric progression, we must have (|r|<1), so $r=\\dfrac{1}{3}$.\n\nNow\n$a=\\frac{52}{1+\\tfrac{1}{3}+\\tfrac{1}{9}}=\\frac{52}{13/9}=36$\n\nThe sum of the infinite progression is\n\n$ S=\\frac{a}{1-r}=\\frac{36}{1-\\tfrac{1}{3}}=\\frac{36}{2/3}=54.$",
       "image_url": "",
       "full_markdown": "### Question (qid: 476615)\n\n**Passage:**\nLet a n a_{n} a n ​ be the n t h n^{th} n t h term of a decreasing infinite geometric progression. If a 1 + a 2 + a 3 = 52 a_{1}+a_{2}+a_{3}=52 a 1 ​ + a 2 ​ + a 3 ​ = 5 2 and a 1 a 2 + a 2 a 3 + a 3 a 1 = 624 a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624 a 1 ​ a 2 ​ + a 2 ​ a 3 ​ + a 3 ​ a 1 ​ = 6 2 4 , then the sum of this geometric progression is\n\n57\n\n54\n\n60\n\n63\n\nLet $a_{n}$ be the $n^{th}$ term of a decreasing infinite geometric progression. If $a_{1}+a_{2}+a_{3}=52$ and $a_{1}a_{2}+a_{2}a_{3}+a_{3}a_{1}=624$, then the sum of this geometric progression is\n\n**Options:**\n- **A**. 57\n- **B**. 54\n- **C**. 60\n- **D**. 63\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2289",
+      "passage_text": "",
+      "question_text": "A shopkeeper offers a discount of 22% on the marked price of each chair, and gives 13 chairs to a customer for the discounted price of 12 chairs to earn a profit of 26% on the transaction. If the cost price of each chair is Rs 100, then the marked price, in rupees, of each chair is",
+      "options": [],
+      "correct_option_data": "175",
+      "solution_text": "Cost price of each chair = 100\n\nFor 13 chairs, total cost = $13 \\times 100 = 1300$\n\nProfit = 26%, so total revenue\n\n$ 1.26 \\times 1300 = 1638$\n\nWe were told that this amount is equal to the discounted price of 12 chairs. So the discounted selling price per chair = $\\text{SP}_{\\text{disc}} = \\frac{1638}{12} = 136.5$\n\nDiscount offered = 22%, so:\n\nMP = $\\frac{136.5}{0.78}$ = 175",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476411)\n\n**Passage:**\nA shopkeeper offers a discount of 22% on the marked price of each chair, and gives 13 chairs to a customer for the discounted price of 12 chairs to earn a profit of 26% on the transaction. If the cost price of each chair is Rs 100, then the marked price, in rupees, of each chair is\n\nA shopkeeper offers a discount of 22% on the marked price of each chair, and gives 13 chairs to a customer for the discounted price of 12 chairs to earn a profit of 26% on the transaction. If the cost price of each chair is Rs 100, then the marked price, in rupees, of each chair is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2290",
+      "passage_text": "",
+      "question_text": "The monthly sales of a product from January to April were 120, 135, 150 and 165 units, respectively. The cost price of the product was Rs. 240 per unit, and a fixed marked price was used for the product in all the four months. Discounts of 20%, 10% and 5% were given on the marked price per unit in January, February and March, respectively, while no discounts were given in April. If the total profit from January to April was Rs. 138825, then the marked price per unit, in rupees, was",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "520",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "525",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "510",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "515",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "The total number of products is $120+135+150+165= 570$. Therefore, the total cost must have been $570\\times 240 = 136800$\n\nLet the marked price for the products be $X$. The January, February, March, and April, selling prices would respectively be $0.8X$, $0.9X$, $0.95X$, and $X$; based on the discounts given on each of the months.\n\nThe revenue earned from selling the products in each of the months would be: $120*0.8X + 135*0.9X + 150*0.95X + 165*X = 525X$.\n\nThe profit earned would be: Revenue -  Cost, and therefore, \n\n$525X - 136800 = 138825$\n\n$525X = 275625$\n\n$X = \\dfrac{275625}{525} = 525$\n\nThe correct answer is option B, Rs. 525.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476571)\n\n**Passage:**\nThe monthly sales of a product from January to April were 120, 135, 150 and 165 units, respectively. The cost price of the product was Rs. 240 per unit, and a fixed marked price was used for the product in all the four months. Discounts of 20%, 10% and 5% were given on the marked price per unit in January, February and March, respectively, while no discounts were given in April. If the total profit from January to April was Rs. 138825, then the marked price per unit, in rupees, was\n\n520\n\n525\n\n510\n\n515\n\nThe monthly sales of a product from January to April were 120, 135, 150 and 165 units, respectively. The cost price of the product was Rs. 240 per unit, and a fixed marked price was used for the product in all the four months. Discounts of 20%, 10% and 5% were given on the marked price per unit in January, February and March, respectively, while no discounts were given in April. If the total profit from January to April was Rs. 138825, then the marked price per unit, in rupees, was\n\n**Options:**\n- **A**. 520\n- **B**. 525\n- **C**. 510\n- **D**. 515\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2291",
+      "passage_text": "An item with a cost price of Rs. 1650 is sold at a certain discount on a fixed marked price to earn a profit of 20% on the cost price. If the discount was doubled, the profit would have been Rs. 110. The rate of discount, in percentage, at which the profit percentage would be equal to the rate of discount, is nearest to\n\n16\n\n18\n\n14\n\n12",
+      "question_text": "An item with a cost price of Rs. 1650 is sold at a certain discount on a fixed marked price to earn a profit of 20% on the cost price. If the discount was doubled, the profit would have been Rs. 110. The rate of discount, in percentage, at which the profit percentage would be equal to the rate of discount, is nearest to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "14",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Sure! Here's a clean solution:\n\nLet the marked price be M and the initial discount rate be d. The cost price is 1650. A profit of 20% means the selling price is\n\n$SP = 1650 \\times 1.2 = 1980$\n\nWith discount d,\n\n$M(1-d) = 1980$\n\nIf the discount is doubled, the selling price becomes (M(1-2d)), and the profit is 110, so\n\n$M(1-2d) - 1650 = 110 \\Rightarrow M(1-2d) = 1760$\n\nSubtracting the two equations:\n\n$M(1-d) - M(1-2d) = 1980 - 1760 \\Rightarrow Md = 220 \\Rightarrow M = \\frac{220}{d}$\n\nPlug into the first equation:\n\n$ \\frac{220}{d}(1-d) = 1980 \\Rightarrow \\frac{1-d}{d} = 9 \\Rightarrow 1-d = 9d \\Rightarrow d = 0.1 $\n\nSo the initial discount rate is 10% and the marked price is\n\n$M = \\frac{220}{0.1} = 2200 $\n\nNow, let the discount rate be (r) such that the profit percentage equals the discount percentage. Then\n\n$\\frac{2200(1-r) - 1650}{1650} = r$\n\nSimplify:\n\n$2200(1-r) - 1650 = 1650 r \\Rightarrow 2200 - 2200r - 1650 = 1650r \\Rightarrow 550 = 3850 r \\Rightarrow r = \\frac{550}{3850} \\approx 0.142857 $\n\nThus, the required discount rate is approximately 14%",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476601)\n\n**Passage:**\nAn item with a cost price of Rs. 1650 is sold at a certain discount on a fixed marked price to earn a profit of 20% on the cost price. If the discount was doubled, the profit would have been Rs. 110. The rate of discount, in percentage, at which the profit percentage would be equal to the rate of discount, is nearest to\n\n16\n\n18\n\n14\n\n12\n\nAn item with a cost price of Rs. 1650 is sold at a certain discount on a fixed marked price to earn a profit of 20% on the cost price. If the discount was doubled, the profit would have been Rs. 110. The rate of discount, in percentage, at which the profit percentage would be equal to the rate of discount, is nearest to\n\n**Options:**\n- **A**. 16\n- **B**. 18\n- **C**. 14\n- **D**. 12\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2292",
+      "passage_text": "",
+      "question_text": "At a certain simple rate of interest, a given sum amounts to Rs 13920 in 3 years, and to Rs 18960 in 6 years and 6 months. If the same given sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, then the total interest earned, in rupees, would have been nearest to",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3221",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "3180",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3150",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "3096",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let the principal be ₹ P and rate of interest be r%.\n\nNow, $13920=P+\\dfrac{P\\times\\ r\\times\\ 3}{100}$\n\nor, $13920-P=\\dfrac{P\\times\\ r\\times\\ 3}{100}$ ---->(1)\n\nAlso, $18960=P+\\dfrac{P\\times\\ r\\times\\ 13}{100\\times\\ 2}$\n\n$18960-P=\\dfrac{P\\times\\ r\\times13}{100\\times\\ 2}$ ----->(2)\n\nDividing eqn(1) by eqn(2),\n\n$\\dfrac{13920-P}{18960-P}=\\dfrac{3}{\\frac{12}{2}}=\\dfrac{6}{13}$\n\nor, $\\left(13920-P\\right)13=\\left(18960-P\\right)6$\n\nor, $13920\\times\\ 13-13P=18960\\times\\ 6-6P$\n\nor, $13920\\times\\ 13-18960\\times\\ 6=13P-6P$\n\nor, $180960-113760=7P$\n\nor, $67200=7P$\n\nor, $P=\\dfrac{67200}{7}=9600$\n\nPutting this in equation (1),\n\n$13920-9600=\\dfrac{9600\\times\\ r\\times\\ 3}{100}$\n\nor, $4320=96\\times\\ 3r$\n\nor, $r=\\dfrac{4320}{96\\times\\ 3}=15$\n\nSo, rate percent is $15\\%$\n\nNow if the same sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, amount = $9600\\left(1+\\dfrac{\\frac{15}{2}}{100}\\right)^4=9600\\left(1+\\frac{7.5}{100}\\right)^4$\n\nSo, interest = $9600\\left(1+\\frac{7.5}{100}\\right)^4-9600$\n\n= Rs 3220.50\n\n= Rs 3221\n\nSo, the total interest earned is Rs 3221.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476398)\n\n**Passage:**\nAt a certain simple rate of interest, a given sum amounts to Rs 13920 in 3 years, and to Rs 18960 in 6 years and 6 months. If the same given sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, then the total interest earned, in rupees, would have been nearest to\n\n3221\n\n3180\n\n3150\n\n3096\n\nAt a certain simple rate of interest, a given sum amounts to Rs 13920 in 3 years, and to Rs 18960 in 6 years and 6 months. If the same given sum had been invested for 2 years at the same rate as before but with interest compounded every 6 months, then the total interest earned, in rupees, would have been nearest to\n\n**Options:**\n- **A**. 3221\n- **B**. 3180\n- **C**. 3150\n- **D**. 3096\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2293",
+      "passage_text": "Kamala divided her investment of Rs 100000 between stocks, bonds, and gold. Her investment in bonds was 25% of her investment in gold. With annual returns of 10%, 6%, 8% on stocks, bonds, and gold, respectively, she gained a total amount of Rs 8200 in one year. The amount, in rupees, that she gained from the bonds, was",
+      "question_text": "Kamala divided her investment of Rs 100000 between stocks, bonds, and gold. Her investment in bonds was 25% of her investment in gold. With annual returns of 10%, 6%, 8% on stocks, bonds, and gold, respectively, she gained a total amount of Rs 8200 in one year. The amount, in rupees, that she gained from the bonds, was",
+      "options": [],
+      "correct_option_data": "900",
+      "solution_text": "Let the amounts invested in Stocks be S, Bonds B, and, Gold be G\n\nGiven that  $S + B + G = 100000, B = 0.25G$\n\n$0.10S + 0.06B + 0.08G = 8200$\n\nSubstitute S = 100000 - B - G = 100000 - 1.25G\n\n$0.10(100000 - 1.25G) + 0.06(0.25G) + 0.08G = 8200$\n\n$10000 - 0.125G + 0.015G + 0.08G = 8200$\n\n$10000 - 0.03G = 8200$\n\n$\n0.03G = 1800 \\Rightarrow G = 60000$\n\n$B = 0.25G = 15000$\n\nGain from bonds = $0.06 \\times 15000 = 900$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476404)\n\n**Passage:**\nKamala divided her investment of Rs 100000 between stocks, bonds, and gold. Her investment in bonds was 25% of her investment in gold. With annual returns of 10%, 6%, 8% on stocks, bonds, and gold, respectively, she gained a total amount of Rs 8200 in one year. The amount, in rupees, that she gained from the bonds, was\n\nKamala divided her investment of Rs 100000 between stocks, bonds, and gold. Her investment in bonds was 25% of her investment in gold. With annual returns of 10%, 6%, 8% on stocks, bonds, and gold, respectively, she gained a total amount of Rs 8200 in one year. The amount, in rupees, that she gained from the bonds, was\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2294",
+      "passage_text": "Consider the arithmetic progression 3, 7, 11, ... and let A n A_n A n ​ denote the sum of the first n terms of this progression. Then the value of 1 25 ∑ n = 1 25 A n \\frac{1}{25} \\sum_{n=1}^{25} A_{n} 2 5 1 ​ ∑ n = 1 2 5 ​ A n ​ is\n\n455\n\n442\n\n415\n\n404",
+      "question_text": "Consider the arithmetic progression 3, 7, 11, ... and let $A_n$ denote the sum of the first n terms of this progression. Then the value of $\\frac{1}{25} \\sum_{n=1}^{25} A_{n}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "455",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "442",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "415",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "404",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Sum of n terms in an A.P = $\\dfrac{n}{2}\\left(2a+\\left(n-1\\right)d\\right)$\n\n$A_n=\\dfrac{n}{2}\\left(6+\\left(n-1\\right)4\\right)=n\\left(2n+1\\right)$\n\n$\\Sigma\\ A_n=\\Sigma\\ n\\left(2n+1\\right)=2\\Sigma\\ n^2+\\Sigma\\ n=\\ \\dfrac{\\ 2n\\left(n+1\\right)\\left(2n+1\\right)}{6}+\\ \\dfrac{\\ n\\left(n+1\\right)}{2}$\n\nSubstituting n = 25, we get\n\n$\\dfrac{1}{25} \\sum_{n=1}^{25} A_{n}$ = $\\dfrac{1}{25}\\left(\\ \\dfrac{\\ 2\\left(25\\right)\\left(25+1\\right)\\left(50+1\\right)}{6}+\\ \\dfrac{\\ 25\\left(25+1\\right)}{2}\\right)$\n\n$\\dfrac{1}{25} \\sum_{n=1}^{25} A_{n}$ = $\\ 26\\left(17\\right)+13$ = 455\n\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424065)\n\n**Passage:**\nConsider the arithmetic progression 3, 7, 11, ... and let A n A_n A n ​ denote the sum of the first n terms of this progression. Then the value of 1 25 ∑ n = 1 25 A n \\frac{1}{25} \\sum_{n=1}^{25} A_{n} 2 5 1 ​ ∑ n = 1 2 5 ​ A n ​ is\n\n455\n\n442\n\n415\n\n404\n\nConsider the arithmetic progression 3, 7, 11, ... and let $A_n$ denote the sum of the first n terms of this progression. Then the value of $\\frac{1}{25} \\sum_{n=1}^{25} A_{n}$ is\n\n**Options:**\n- **A**. 455\n- **B**. 442\n- **C**. 415\n- **D**. 404\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2295",
+      "passage_text": "The average of a non-decreasing sequence of N numbers a 1 , a 2 , . . . , a N a_{1},a_{2}, ... , a_{N} a 1 ​ , a 2 ​ , . . . , a N ​ is 300. If a 1 a_1 a 1 ​ , is replaced by 6 a 1 6a_{1} 6 a 1 ​ , the new average becomes 400. Then, the number of possible values of a 1 a_{1 } a 1 ​ , is",
+      "question_text": "The average of a non-decreasing sequence of N numbers $a_{1},a_{2}, ... , a_{N}$ is 300. If $a_1$, is replaced by $6a_{1}$ , the new average becomes 400. Then, the number of possible values of $a_{1 }$, is",
+      "options": [],
+      "correct_option_data": "14",
+      "solution_text": "$a_1+a_2+.....+a_N=300N$\n\n$6a_1+a_2+.....+a_N=400N$\n\n$5a_1=100N$\n\n$a_1=20N$\n\nAs the given sequence of numbers is non-decreasing sequence, N can take values from 2 to 15.\n\nN is not equal to 1, if N = 1, then average of N numbers is 300 wouldn't satisfy.\n\nTherefore, N can take values from 2 to 15, i.e. 14 values.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424049)\n\n**Passage:**\nThe average of a non-decreasing sequence of N numbers a 1 , a 2 , . . . , a N a_{1},a_{2}, ... , a_{N} a 1 ​ , a 2 ​ , . . . , a N ​ is 300. If a 1 a_1 a 1 ​ , is replaced by 6 a 1 6a_{1} 6 a 1 ​ , the new average becomes 400. Then, the number of possible values of a 1 a_{1 } a 1 ​ , is\n\nThe average of a non-decreasing sequence of N numbers $a_{1},a_{2}, ... , a_{N}$ is 300. If $a_1$, is replaced by $6a_{1}$ , the new average becomes 400. Then, the number of possible values of $a_{1 }$, is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2296",
+      "passage_text": "For any natural number n, suppose the sum of the first n terms of an arithmetic progression is ( n + 2 n 2 ) (n + 2n^2) ( n + 2 n 2 ) . If the n t h n^{th} n t h term of the progression is divisible by 9, then the smallest possible value of n is\n\n9\n\n4\n\n7\n\n8",
+      "question_text": "For any natural number n, suppose the sum of the first n terms of an arithmetic progression is $(n + 2n^2)$. If the $n^{th}$ term of the progression is divisible by 9, then the smallest possible value of n is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "It is given,\n\n$S_n=2n^2+n$\n\n$S_{n-1}=2\\left(n-1\\right)^2+\\left(n-1\\right)$\n\n$S_{n-1}=2n^2-3n+1$\n\n$T_n=S_n-S_{n-1}=2n^2+n-2n^2+3n-1=4n-1$\n\n$T_n=4n-1$\n\nThe terms are 3, 7, 11, 15, 19, 23, 27,......\n\n27 is the first term in the series divisible by 9.\n\n27 is the 7th term.\n\nTherefore, the least possible value of n is 7.\n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 423984)\n\n**Passage:**\nFor any natural number n, suppose the sum of the first n terms of an arithmetic progression is ( n + 2 n 2 ) (n + 2n^2) ( n + 2 n 2 ) . If the n t h n^{th} n t h term of the progression is divisible by 9, then the smallest possible value of n is\n\n9\n\n4\n\n7\n\n8\n\nFor any natural number n, suppose the sum of the first n terms of an arithmetic progression is $(n + 2n^2)$. If the $n^{th}$ term of the progression is divisible by 9, then the smallest possible value of n is\n\n**Options:**\n- **A**. 9\n- **B**. 4\n- **C**. 7\n- **D**. 8\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2297",
+      "passage_text": "A sequence { x n } \\left\\{x_n \\right\\} { x n ​ } of real numbers is defined as follows:\n\nx 0 = 1 , x 1 = 2 , x_0 = 1, x_1 = 2, x 0 ​ = 1 , x 1 ​ = 2 , and x n = 1 + x n − 1 x n − 2 x_n = \\frac{1 + x_{n - 1}}{x_{n - 2}} x n ​ = x n − 2 ​ 1 + x n − 1 ​ ​ for n = 2, 3, 4 ... It follows that x 2018 x_{2018} x 2 0 1 8 ​ is\n\n1\n\n2\n\n3\n\n4",
+      "question_text": "A sequence $\\left\\{x_n \\right\\}$ of real numbers is defined as follows:\n\n$x_0 = 1, x_1 = 2,$ and $x_n = \\frac{1 + x_{n - 1}}{x_{n - 2}}$ for n = 2, 3, 4 ...\nIt follows that $x_{2018}$ is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Given that $x_0=1\\ and\\ x_1=2\\ $\n\nFrom above formula we get $x_2=3,\\ x_3=2,\\ x_4=1,\\ x_5\\ =\\ 1\\ and\\ x_6=2$\n\nWe see that the pattern repeats itself in the period of five with $x_{5k}=1,\\ x_{5k+1}=2,\\ x_{5k+2}=3,\\ x_{5k+3}\\ =\\ 2\\ and\\ x_{5k+4}=1$\n\n2018 is of form 5k+3 hence $x_{2018}=2$",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 286979)\n\n**Passage:**\nA sequence { x n } \\left\\{x_n \\right\\} { x n ​ } of real numbers is defined as follows:\n\nx 0 = 1 , x 1 = 2 , x_0 = 1, x_1 = 2, x 0 ​ = 1 , x 1 ​ = 2 , and x n = 1 + x n − 1 x n − 2 x_n = \\frac{1 + x_{n - 1}}{x_{n - 2}} x n ​ = x n − 2 ​ 1 + x n − 1 ​ ​ for n = 2, 3, 4 ... It follows that x 2018 x_{2018} x 2 0 1 8 ​ is\n\n1\n\n2\n\n3\n\n4\n\nA sequence $\\left\\{x_n \\right\\}$ of real numbers is defined as follows:\n\n$x_0 = 1, x_1 = 2,$ and $x_n = \\frac{1 + x_{n - 1}}{x_{n - 2}}$ for n = 2, 3, 4 ...\nIt follows that $x_{2018}$ is\n\n**Options:**\n- **A**. 1\n- **B**. 2\n- **C**. 3\n- **D**. 4\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2298",
+      "passage_text": "If a 1 + a 2 + a 3 + . . . . + a n = 3 ( 2 n + 1 − 2 ) a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2) a 1 ​ + a 2 ​ + a 3 ​ + . . . . + a n ​ = 3 ( 2 n + 1 − 2 ) , for every n ≥ 1 n \\geq 1 n ≥ 1 , then a 11 a_{11} a 1 1 ​ equals",
+      "question_text": "If $a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2)$, for every $n \\geq 1$, then $a_{11}$ equals",
+      "options": [],
+      "correct_option_data": "6144",
+      "solution_text": "11th term of series = $a_{11}$ = Sum of 11 terms - Sum of 10 terms = $3(2^{11 + 1} - 2)$-3$(2^{10 + 1} - 2)$ \n\n= 3$(2^{12} - 2-2^{11} +2)$=3$(2^{11})(2-1)$= 3*$2^{11}$ = 6144",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277665)\n\n**Passage:**\nIf a 1 + a 2 + a 3 + . . . . + a n = 3 ( 2 n + 1 − 2 ) a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2) a 1 ​ + a 2 ​ + a 3 ​ + . . . . + a n ​ = 3 ( 2 n + 1 − 2 ) , for every n ≥ 1 n \\geq 1 n ≥ 1 , then a 11 a_{11} a 1 1 ​ equals\n\nIf $a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2)$, for every $n \\geq 1$, then $a_{11}$ equals\n\n**Options:**\n\n**Correct Answer:** null"
     }
   ]
 }

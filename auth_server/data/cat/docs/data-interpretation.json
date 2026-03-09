@@ -47481,6 +47481,211 @@
       "solution_text": "In 2009-10, the total number of students in class 6 was 58. These students were supposed to advance to class 7 in 2010-11. \nIt is given that the total number of new joinees in 2010-11 in class 7 is 3, and the total strength of class 7 is 59. \nIf all 58 students had passed the exam in 2009-10, the total strength of class 7 in 2010-11 would have been 58 + 3 = 61.\n\nThus, the number of students who failed in class 6 in 2009-10 = 61 - 59 = 2.\n\nSimilarly, the number of students who failed in other classes in all the years can be found.\n\nThe table consisting of all the failed students is as follows:\n\nThe total number of students in class 7 in 2010-2011 = 59.\n\nThe pass percentage of class 7 in 2010-11 = $\\frac{59-4}{59}\\times\\ 100=\\ 93.22\\%$......(1)\n\nThe total number of students in class 8 in 2012-2013 = 64.\n\nThe fail percentage of students in class 8 in 2012-2013 = $\\frac{2}{64}\\times\\ 100=\\ 3.125\\%$......(2)\n\nThe ratio of the Pass percentage of class 7 in 2010-2011 to the fail percentage of class 8 in 2012-13 = $\\frac{93.22}{3.125}=29.83$\n\nThe answer is option (B)",
       "image_url": "https://cracku.in/media/questionGroup/Screenshot_2014-10-17_23.29.31.png",
       "full_markdown": "### Question (qid: 433966)\n\n**Passage:**\nThe two tables show the number of students studying in a class and the number of new students joining a particular class in each of the academic years. Admissions in the school start from class 6 and students who fail in a particular class in a particular academic year are dropped for the next academic year, except for class 6, where they are retained. Answer the questions based on the given data.\n\nWhat is the ratio of the pass percentage of class 7 in 2010-2011 to the fail percentage of class 8 in 2012-13.\n\n**Options:**\n- **A**. 30.13\n- **B**. 29.83\n- **C**. 22.9\n- **D**. 25.69\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1673",
+      "passage_text": "In a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.",
+      "question_text": "The number of students going for only Hindi tuition.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "0",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let d, a,c,e the number of students going for all three tuitions, only maths, only Hindi, only math and social. \n\nIt is given that 70 students don't go for Math tuition => 30+30-d+c+30=70 => d-c=20 => c=d-20\n\nthe number of students going for more than one tuition= e+10+30-d+d = 40+e\n\nGiven, 40+e=2d => e=2d-40\n\nNumber of students going for social tuition= 30+30-d+e+d=60\n\n.'.e=0.\n\n2d=40 => d=20\n\nc=d-20 => c=0.\n\nNumber of students going for only Hindi tuition = 0",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 323396)\n\n**Passage:**\nIn a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.\n\nThe number of students going for only Hindi tuition.\n\n**Options:**\n- **A**. 5\n- **B**. 10\n- **C**. 0\n- **D**. Cannot be determined\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1674",
+      "passage_text": "In a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.",
+      "question_text": "The Number of students going for only Math and Social tuitions is: (type -1 if cannot be determined)",
+      "options": [],
+      "correct_option_data": "0",
+      "solution_text": "Let d, a,c,e the number of students going for all three tuitions, only maths, only Hindi, only math and social. \n\nIt is given that 70 students don't go for Math tuition => 30+30-d+c+30=70 => d-c=20 => c=d-20\n\nthe number of students going for more than one tuition= e+10+30-d+d = 40+e\n\nGiven, 40+e=2d => e=2d-40\n\nNumber of students going for social tuition= 30+30-d+e+d=60\n\n.'.e=0.\n\n2d=40 => d=20\n\nc=d-20 => c=0.\n\nNumber of students going for only Math and social = 0",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 323397)\n\n**Passage:**\nIn a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.\n\nThe Number of students going for only Math and Social tuitions is: (type -1 if cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1675",
+      "passage_text": "In a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.",
+      "question_text": "If the number of students going for Maths tuition is greater than the number of students going for Hindi but less than the number of students going for social, then what is the range of the number of students going only for Maths tuitions.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "(10,30)",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "(5,25)",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "(8,28)",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "(15,25)",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let d, a,c,e the number of students going for all three tuitions, only maths, only Hindi, only math and social. \n\nIt is given that 70 students don't go for Math tuition => 30+30-d+c+30=70 => d-c=20 => c=d-20\n\nthe number of students going for more than one tuition= e+10+30-d+d = 40+e\n\nGiven, 40+e=2d => e=2d-40\n\nNumber of students going for social tuition= 30+30-d+e+d=60\n\n.'.e=0.\n\n2d=40 => d=20\n\nc=d-20 => c=0.\n\nNumber of students going for math tuitions= a+30\n\ngiven, 40<a+30<60 => 10<a<30",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 323398)\n\n**Passage:**\nIn a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.\n\nIf the number of students going for Maths tuition is greater than the number of students going for Hindi but less than the number of students going for social, then what is the range of the number of students going only for Maths tuitions.\n\n**Options:**\n- **A**. (10,30)\n- **B**. (5,25)\n- **C**. (8,28)\n- **D**. (15,25)\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1676",
+      "passage_text": "In a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.",
+      "question_text": "What can be the maximum number of students surveyed? (type -1 if the answer is infinity or it cannot be determined)",
+      "options": [],
+      "correct_option_data": "-1",
+      "solution_text": "Let d, a,c,e the number of students going for all three tuitions, only maths, only Hindi, only math and social. \n\nIt is given that 70 students don't go for Math tuition => 30+30-d+c+30=70 => d-c=20 => c=d-20\n\nthe number of students going for more than one tuition= e+10+30-d+d = 40+e\n\nGiven, 40+e=2d => e=2d-40\n\nNumber of students going for social tuition= 30+30-d+e+d=60\n\n.'.e=0.\n\n2d=40 => d=20\n\nc=d-20 => c=0.\n\nTotal number of students= 100+a \nThere are no boundaries for a, so the maximum number of students surveyed cannot be determined.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 323399)\n\n**Passage:**\nIn a survey, it is found that students of a residential colony in Hyderabad go for tuitions for three subjects Maths, Social, Hindi. In the survey it is also found that 60 students go for Social tuition, 70 students don’t go for Math tuition, 40 students go for Hindi tuition, 30 students don’t go for any of the tuition, 30 students go for only social tuition, the number of students going for more than one tuition is twice the number of students going for all the three tuitions, 30 students go for both Social and Hindi tuition, 10 students go for only Math and Hindi tuitions.\n\nWhat can be the maximum number of students surveyed? (type -1 if the answer is infinity or it cannot be determined)\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1677",
+      "passage_text": "A round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.",
+      "question_text": "What is the number of the chair initially occupied by Bashir?",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "Based on the information about the initial positions of Aslam and Chhavi sitting next to each other, while Bashir and Davies have empty chairs on either side of their seats, the possible combinations are,\n\nThis has 4 possible combinations.\n\nWe are also given that Davies occupies Chair 2 after Turn 1 and Chhavi occupies Chair 7 after Turn 2. We know that the positions of Davies and Chhavi won't be changing after turn 2, as we know that in those turns, only the positions of Aslam and Bashir are being changed in the first 2 turns. Therefore, we can determine that Davies' initial position is chair 2, and Chhavi's initial position is chair 7. \n\nOut of the 4 possible combinations, Davies on chair 2 and Chhavi on chair 7 are only possible in one case, which is,\n\nSo, Bashir's initial position is chair 4.\n\nHence, the correct answer is 4.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476412)\n\n**Passage:**\nA round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.\n\nWhat is the number of the chair initially occupied by Bashir?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1678",
+      "passage_text": "A round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.",
+      "question_text": "Who sits on the chair numbered 4 at the end of Turn 3?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Bashir",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Chhavi",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Davies",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "No one",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Based on the information about the initial positions of Aslam and Chhavi sitting next to each other, while Bashir and Davies have empty chairs on either side of their seats, the possible combinations are,\n\nThis has 4 possible combinations.\n\nWe are also given that Davies occupies Chair 2 after Turn 1 and Chhavi occupies Chair 7 after Turn 2. We know that the positions of Davies and Chhavi won't be changing after turn 2, as we know that in those turns, only the positions of Aslam and Bashir are being changed in the first 2 turns. Therefore, we can determine that Davies' initial position is chair 2, and Chhavi's initial position is chair 7. \n\nOut of the 4 possible combinations, Davies on chair 2 and Chhavi on chair 7 are only possible in one case, which is,\n\nWe now have the initial position, and we are told that all the members are adjacent only after turn 2 and turn 6.\n\nWe know that A changed his position in turn 1.\n\nTurn 1: Aslam moves\n\nIf A changed his position anticlockwise, he would go to chair 5, and if he changed his position clockwise, he would go to chair 1.\n\nIf A ends in chair 5 after turn 1, then it is not possible for all of them to be adjacent to each other after B changes his position in turn 2.\n\nSo, A has to end in chair 1 after turn 1, so that B will have a chance in turn 2 for all of them to be adjacent.\n\nTurn 2: Bashir moves\n\nFor all of them to be adjacent after turn 2, B must change his position anticlockwise, and after turn 2, he would end up on chair 3.\n\nTurn 3: Chhavi moves\n\nWe are given that Davies occupies chair 4 after turn 5, and for this to happen, chair 4 must be empty and cannot be occupied by anyone who does not move before turn 5. So, in turn 3, C must go anticlockwise and occupy chair 6, as if he goes clockwise, he would occupy chair 4, which must be empty for Davies.\n\nTurn 4: Davies moves\n\nDavies will not move in turn 5, and for him to occupy chair 4 after turn 5, he must occupy it on turn 4. So, D has to go clockwise in turn 4 and must occupy chair 4.\n\nTurn 5: Aslam moves\n\nWe know that all of them are again adjacent after turn 6. If A goes clockwise in turn 5, then he will occupy the chair 2, and in that case, it is not possible for them to be adjacent after turn 6 in either of the cases of B going clockwise or anticlockwise.\n\nSo, A must go anticlockwise and occupy chair 7 for them to be adjacent after turn 6.\n\nTurn 6: Bashir moves\n\nNow, for them to be adjacent after turn 6, B must go clockwise and must occupy chair 5.\n\nTurn 7: Chavvi moves\n\nWe do not have any information to determine whether C went clockwise or anticlockwise. So, both cases are possible after turn 7.\n\nAfter turn 3, chair 4 is occupied by no one.\n\nHence, the correct answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476413)\n\n**Passage:**\nA round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.\n\nWho sits on the chair numbered 4 at the end of Turn 3?\n\n**Options:**\n- **A**. Bashir\n- **B**. Chhavi\n- **C**. Davies\n- **D**. No one\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1679",
+      "passage_text": "A round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.",
+      "question_text": "Which of the chairs are occupied at the end of Turn 6?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Chairs numbered 4, 5, 6, and 7",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Chairs numbered 1, 2, 3, and 4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Chairs numbered 2, 3, 4, and 5",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Chairs numbered 1, 2, 6, and 7",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Based on the information about the initial positions of Aslam and Chhavi sitting next to each other, while Bashir and Davies have empty chairs on either side of their seats, the possible combinations are,\n\nThis has 4 possible combinations.\n\nWe are also given that Davies occupies Chair 2 after Turn 1 and Chhavi occupies Chair 7 after Turn 2. We know that the positions of Davies and Chhavi won't be changing after turn 2, as we know that in those turns, only the positions of Aslam and Bashir are being changed in the first 2 turns. Therefore, we can determine that Davies' initial position is chair 2, and Chhavi's initial position is chair 7.\n\nOut of the 4 possible combinations, Davies on chair 2 and Chhavi on chair 7 are only possible in one case, which is,\n\nWe now have the initial position, and we are told that all the members are adjacent only after turn 2 and turn 6.\n\nWe know that A changed his position in turn 1.\n\nTurn 1: Aslam moves\n\nIf A changed his position anticlockwise, he would go to chair 5, and if he changed his position clockwise, he would go to chair 1.\n\nIf A ends in chair 5 after turn 1, then it is not possible for all of them to be adjacent to each other after B changes his position in turn 2.\n\nSo, A has to end in chair 1 after turn 1, so that B will have a chance in turn 2 for all of them to be adjacent.\n\nTurn 2: Bashir moves\n\nFor all of them to be adjacent after turn 2, B must change his position anticlockwise, and after turn 2, he would end up on chair 3.\n\nTurn 3: Chhavi moves\n\nWe are given that Davies occupies chair 4 after turn 5, and for this to happen, chair 4 must be empty and cannot be occupied by anyone who does not move before turn 5. So, in turn 3, C must go anticlockwise and occupy chair 6, as if he goes clockwise, he would occupy chair 4, which must be empty for Davies.\n\nTurn 4: Davies moves\n\nDavies will not move in turn 5, and for him to occupy chair 4 after turn 5, he must occupy it on turn 4. So, D has to go clockwise in turn 4 and must occupy chair 4.\n\nTurn 5: Aslam moves\n\nWe know that all of them are again adjacent after turn 6. If A goes clockwise in turn 5, then he will occupy the chair 2, and in that case, it is not possible for them to be adjacent after turn 6 in either of the cases of B going clockwise or anticlockwise.\n\nSo, A must go anticlockwise and occupy chair 7 for them to be adjacent after turn 6.\n\nTurn 6: Bashir moves\n\nNow, for them to be adjacent after turn 6, B must go clockwise and must occupy chair 5.\n\nTurn 7: Chavvi moves\n\nWe do not have any information to determine whether C went clockwise or anticlockwise. So, both cases are possible after turn 7.\n\nThe chairs occupied after turn 6 are 4, 5, 6 and 7.\n\nHence, the correct answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476414)\n\n**Passage:**\nA round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.\n\nWhich of the chairs are occupied at the end of Turn 6?\n\n**Options:**\n- **A**. Chairs numbered 4, 5, 6, and 7\n- **B**. Chairs numbered 1, 2, 3, and 4\n- **C**. Chairs numbered 2, 3, 4, and 5\n- **D**. Chairs numbered 1, 2, 6, and 7\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1680",
+      "passage_text": "A round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.",
+      "question_text": "Which of the following BEST describes the friends sitting on chairs adjacent to the one occupied by Bashir at the end of Turn 7?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Chhavi only",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Davies only",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Chhavi and Davies",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Aslam and Chhavi",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Based on the information about the initial positions of Aslam and Chhavi sitting next to each other, while Bashir and Davies have empty chairs on either side of their seats, the possible combinations are,\n\nThis has 4 possible combinations.\n\nWe are also given that Davies occupies Chair 2 after Turn 1 and Chhavi occupies Chair 7 after Turn 2. We know that the positions of Davies and Chhavi won't be changing after turn 2, as we know that in those turns, only the positions of Aslam and Bashir are being changed in the first 2 turns. Therefore, we can determine that Davies' initial position is chair 2, and Chhavi's initial position is chair 7.\n\nOut of the 4 possible combinations, Davies on chair 2 and Chhavi on chair 7 are only possible in one case, which is,\n\nWe now have the initial position, and we are told that all the members are adjacent only after turn 2 and turn 6.\n\nWe know that A changed his position in turn 1.\n\nTurn 1: Aslam moves\n\nIf A changed his position anticlockwise, he would go to chair 5, and if he changed his position clockwise, he would go to chair 1.\n\nIf A ends in chair 5 after turn 1, then it is not possible for all of them to be adjacent to each other after B changes his position in turn 2.\n\nSo, A has to end in chair 1 after turn 1, so that B will have a chance in turn 2 for all of them to be adjacent.\n\nTurn 2: Bashir moves\n\nFor all of them to be adjacent after turn 2, B must change his position anticlockwise, and after turn 2, he would end up on chair 3.\n\nTurn 3: Chhavi moves\n\nWe are given that Davies occupies chair 4 after turn 5, and for this to happen, chair 4 must be empty and cannot be occupied by anyone who does not move before turn 5. So, in turn 3, C must go anticlockwise and occupy chair 6, as if he goes clockwise, he would occupy chair 4, which must be empty for Davies.\n\nTurn 4: Davies moves\n\nDavies will not move in turn 5, and for him to occupy chair 4 after turn 5, he must occupy it on turn 4. So, D has to go clockwise in turn 4 and must occupy chair 4.\n\nTurn 5: Aslam moves\n\nWe know that all of them are again adjacent after turn 6. If A goes clockwise in turn 5, then he will occupy the chair 2, and in that case, it is not possible for them to be adjacent after turn 6 in either of the cases of B going clockwise or anticlockwise.\n\nSo, A must go anticlockwise and occupy chair 7 for them to be adjacent after turn 6.\n\nTurn 6: Bashir moves\n\nNow, for them to be adjacent after turn 6, B must go clockwise and must occupy chair 5.\n\nTurn 7: Chavvi moves\n\nWe do not have any information to determine whether C went clockwise or anticlockwise. So, both cases are possible after turn 7.\n\nIn either of the cases after turn 7, the seat adjacent to Bashir is occupied only by Davies, and the other one is empty.\n\nHence, the correct answer is option B.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476415)\n\n**Passage:**\nA round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.\n\nWhich of the following BEST describes the friends sitting on chairs adjacent to the one occupied by Bashir at the end of Turn 7?\n\n**Options:**\n- **A**. Chhavi only\n- **B**. Davies only\n- **C**. Chhavi and Davies\n- **D**. Aslam and Chhavi\n\n**Correct Answer:** null"
     }
   ]
 }
