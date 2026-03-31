@@ -47686,6 +47686,211 @@
       "solution_text": "Based on the information about the initial positions of Aslam and Chhavi sitting next to each other, while Bashir and Davies have empty chairs on either side of their seats, the possible combinations are,\n\nThis has 4 possible combinations.\n\nWe are also given that Davies occupies Chair 2 after Turn 1 and Chhavi occupies Chair 7 after Turn 2. We know that the positions of Davies and Chhavi won't be changing after turn 2, as we know that in those turns, only the positions of Aslam and Bashir are being changed in the first 2 turns. Therefore, we can determine that Davies' initial position is chair 2, and Chhavi's initial position is chair 7.\n\nOut of the 4 possible combinations, Davies on chair 2 and Chhavi on chair 7 are only possible in one case, which is,\n\nWe now have the initial position, and we are told that all the members are adjacent only after turn 2 and turn 6.\n\nWe know that A changed his position in turn 1.\n\nTurn 1: Aslam moves\n\nIf A changed his position anticlockwise, he would go to chair 5, and if he changed his position clockwise, he would go to chair 1.\n\nIf A ends in chair 5 after turn 1, then it is not possible for all of them to be adjacent to each other after B changes his position in turn 2.\n\nSo, A has to end in chair 1 after turn 1, so that B will have a chance in turn 2 for all of them to be adjacent.\n\nTurn 2: Bashir moves\n\nFor all of them to be adjacent after turn 2, B must change his position anticlockwise, and after turn 2, he would end up on chair 3.\n\nTurn 3: Chhavi moves\n\nWe are given that Davies occupies chair 4 after turn 5, and for this to happen, chair 4 must be empty and cannot be occupied by anyone who does not move before turn 5. So, in turn 3, C must go anticlockwise and occupy chair 6, as if he goes clockwise, he would occupy chair 4, which must be empty for Davies.\n\nTurn 4: Davies moves\n\nDavies will not move in turn 5, and for him to occupy chair 4 after turn 5, he must occupy it on turn 4. So, D has to go clockwise in turn 4 and must occupy chair 4.\n\nTurn 5: Aslam moves\n\nWe know that all of them are again adjacent after turn 6. If A goes clockwise in turn 5, then he will occupy the chair 2, and in that case, it is not possible for them to be adjacent after turn 6 in either of the cases of B going clockwise or anticlockwise.\n\nSo, A must go anticlockwise and occupy chair 7 for them to be adjacent after turn 6.\n\nTurn 6: Bashir moves\n\nNow, for them to be adjacent after turn 6, B must go clockwise and must occupy chair 5.\n\nTurn 7: Chavvi moves\n\nWe do not have any information to determine whether C went clockwise or anticlockwise. So, both cases are possible after turn 7.\n\nIn either of the cases after turn 7, the seat adjacent to Bashir is occupied only by Davies, and the other one is empty.\n\nHence, the correct answer is option B.",
       "image_url": "",
       "full_markdown": "### Question (qid: 476415)\n\n**Passage:**\nA round table has seven chairs around it. The chairs are numbered 1 through 7 in a clockwise direction. Four friends, Aslam, Bashir, Chhavi, and Davies, sit on four of the chairs. In the starting position, Aslam and Chhavi are sitting next to each other, while for Bashir as well as Davies, there are empty chairs on either side of the chairs that are sitting on.\n\nThe friends take turns moving either clockwise or counterclockwise from their chair. The friend who has to move in a turn occupies the first empty chair in whichever direction (s)he chooses to move. Aslam moves first (Turn 1), followed by Bashir, Chhavi, and Davies (Turns 2, 3, and 4, respectively). Then Aslam moves again followed by Bashir, and Chhavi (Turns 5, 6, and 7, respectively).\n\nThe following information is known 1. The four friends occupy adjacent chairs only at the end of Turn 2 and Turn 6. 2. Davies occupies Chair 2 after Turn 1 and Chair 4 after Turn 5, and Chhavi occupies Chair 7 after Turn 2.\n\nWhich of the following BEST describes the friends sitting on chairs adjacent to the one occupied by Bashir at the end of Turn 7?\n\n**Options:**\n- **A**. Chhavi only\n- **B**. Davies only\n- **C**. Chhavi and Davies\n- **D**. Aslam and Chhavi\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1681",
+      "passage_text": "The following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.",
+      "question_text": "What was the total number of two-author and three-author papers written by Brajen?",
+      "options": [],
+      "correct_option_data": "4",
+      "solution_text": "If all the two-author-type books are counted for both authors separately, then we get the sum to be 4 * 2 = 8.\n\nIf all the three-author-type books are counted for all three authors separately, then we get the sum to be 3 * 3 = 9.\n\nIf all the four-author-type books are counted for all four authors separately, then we get the sum to be 4 * 2 = 8.\n\nWe are given that there are 2 four-author books, so there are exactly two books for each that are of the four-author type.\n\nPutting the values in the table, we get,\n\nWe are given that each author has at least one book of each type. In the case of Arman, there are three books left to be assigned, and there are 3 types of books left, so each of them has to be equal to 1 for the above condition to be satisfied.\n\nIn the case of Brajen, we are told that he had an equal number of single-author and two-author books. \n\nCase 1: If the equal number is 1, then the three-author type books become 4, and we are given that both Chintan and Devon had more three-author books than Brajen, which is not possible in this case, as both of them combined will be left with 5 books together and whaterver we split 5 books there wont be a case of both of them having more books than Brajen.\n\nCase 2: If the equal number is 2, then the three-author type books become 2, and we are given that both Chintan and Devon had more three-author books than Brajen, which is possible in this case, as both of them combined will be left with 6 books together and the only way to split 6 books such that both of them are greater than 2 is to split them into 3, 3 and it is the only possible way.\n\nCase 3: If the equal number is greater than or equal to 3, then the three-author type books become 0 or negative, which can directly be eliminated, as we are given that all authors wrote at least 1 book of each type. \n\nSo, we can eliminate both cases 1 and 3, and we will be left with the case of Brajen having 2 books each of Single-author, Two-author, and Three-author types. Chintan and Devon have three books each of the three-author type.\n\nFilling up the table with these values, we get,\n\nWe are given that each author has a different number of single-author type books. The only possibilities for the single-author books of Chintan and Devon are 3 and 4 in some order. \n\nIf the single-author books of Chintan are 3, then the double-author books of Chintan become 4, the single-author books of Devon become 4, and the double-author books of Devon become 1.\n\nIf the single-author books of Chintan are 4, then the double-author books of Chintan become 3, the single-author books of Devon become 3, and the double-author books of Devon become 2.\n\nPlacing both possibilities in the table, we get,\n\nThe total number of two-author and three-author papers written by Brajen = 2 + 2 = 4.\n\nHence, the correct answer is 4.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_5_8PGeyw3.png",
+      "full_markdown": "### Question (qid: 476458)\n\n**Passage:**\nThe following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.\n\nWhat was the total number of two-author and three-author papers written by Brajen?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1682",
+      "passage_text": "The following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.",
+      "question_text": "Which of the following statements is/are NECESSARILY true?\n\ni. Chintan wrote exactly three two-author papers.\nii. Chintan wrote more single-author papers than Devon.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Neither i nor ii",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Only i",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Only ii",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Both i and ii",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "If all the two-author-type books are counted for both authors separately, then we get the sum to be 4 * 2 = 8.\n\nIf all the three-author-type books are counted for all three authors separately, then we get the sum to be 3 * 3 = 9.\n\nIf all the four-author-type books are counted for all four authors separately, then we get the sum to be 4 * 2 = 8.\n\nWe are given that there are 2 four-author books, so there are exactly two books for each that are of the four-author type.\n\nPutting the values in the table, we get,\n\nWe are given that each author has at least one book of each type. In the case of Arman, there are three books left to be assigned, and there are 3 types of books left, so each of them has to be equal to 1 for the above condition to be satisfied.\n\nIn the case of Brajen, we are told that he had an equal number of single-author and two-author books. \n\nCase 1: If the equal number is 1, then the three-author type books become 4, and we are given that both Chintan and Devon had more three-author books than Brajen, which is not possible in this case, as both of them combined will be left with 5 books together and whaterver we split 5 books there wont be a case of both of them having more books than Brajen.\n\nCase 2: If the equal number is 2, then the three-author type books become 2, and we are given that both Chintan and Devon had more three-author books than Brajen, which is possible in this case, as both of them combined will be left with 6 books together and the only way to split 6 books such that both of them are greater than 2 is to split them into 3, 3 and it is the only possible way.\n\nCase 3: If the equal number is greater than or equal to 3, then the three-author type books become 0 or negative, which can directly be eliminated, as we are given that all authors wrote at least 1 book of each type. \n\nSo, we can eliminate both cases 1 and 3, and we will be left with the case of Brajen having 2 books each of Single-author, Two-author, and Three-author types. Chintan and Devon have three books each of the three-author type.\n\nFilling up the table with these values, we get,\n\nWe are given that each author has a different number of single-author type books. The only possibilities for the single-author books of Chintan and Devon are 3 and 4 in some order. \n\nIf the single-author books of Chintan are 3, then the double-author books of Chintan become 4, the single-author books of Devon become 4, and the double-author books of Devon become 1.\n\nIf the single-author books of Chintan are 4, then the double-author books of Chintan become 3, the single-author books of Devon become 3, and the double-author books of Devon become 2.\n\nPlacing both possibilities in the table, we get,\n\nStatement 1: Chintan wrote exactly three two-author papers.\n\nThis is not necessarily true, as he could have written four books as well.\n\nStatement 2: Chintan wrote more single-author papers than Devon.\n\nThis is not necessarily true, as the opposite can be possible.\n\nSo, neither I nor 2 is necessarily true.\n\nHence, the correct answer is option A.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_5_8PGeyw3.png",
+      "full_markdown": "### Question (qid: 476459)\n\n**Passage:**\nThe following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.\n\nWhich of the following statements is/are NECESSARILY true?\n\ni. Chintan wrote exactly three two-author papers.\nii. Chintan wrote more single-author papers than Devon.\n\n**Options:**\n- **A**. Neither i nor ii\n- **B**. Only i\n- **C**. Only ii\n- **D**. Both i and ii\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1683",
+      "passage_text": "The following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.",
+      "question_text": "Which of the following statements is/are NECESSARILY true?\n\ni. Arman wrote three-author papers only with Chintan and Devon.\nii. Brajen wrote three-author papers only with Chintan and Devon.",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Only ii",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Both i and ii",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Only i",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "Neither i or ii",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "If all the two-author-type books are counted for both authors separately, then we get the sum to be 4 * 2 = 8.\n\nIf all the three-author-type books are counted for all three authors separately, then we get the sum to be 3 * 3 = 9.\n\nIf all the four-author-type books are counted for all four authors separately, then we get the sum to be 4 * 2 = 8.\n\nWe are given that there are 2 four-author books, so there are exactly two books for each that are of the four-author type.\n\nPutting the values in the table, we get,\n\nWe are given that each author has at least one book of each type. In the case of Arman, there are three books left to be assigned, and there are 3 types of books left, so each of them has to be equal to 1 for the above condition to be satisfied.\n\nIn the case of Brajen, we are told that he had an equal number of single-author and two-author books.\n\nCase 1: If the equal number is 1, then the three-author type books become 4, and we are given that both Chintan and Devon had more three-author books than Brajen, which is not possible in this case, as both of them combined will be left with 5 books together and whaterver we split 5 books there wont be a case of both of them having more books than Brajen.\n\nCase 2: If the equal number is 2, then the three-author type books become 2, and we are given that both Chintan and Devon had more three-author books than Brajen, which is possible in this case, as both of them combined will be left with 6 books together and the only way to split 6 books such that both of them are greater than 2 is to split them into 3, 3 and it is the only possible way.\n\nCase 3: If the equal number is greater than or equal to 3, then the three-author type books become 0 or negative, which can directly be eliminated, as we are given that all authors wrote at least 1 book of each type.\n\nSo, we can eliminate both cases 1 and 3, and we will be left with the case of Brajen having 2 books each of Single-author, Two-author, and Three-author types. Chintan and Devon have three books each of the three-author type.\n\nFilling up the table with these values, we get,\n\nWe are given that each author has a different number of single-author type books. The only possibilities for the single-author books of Chintan and Devon are 3 and 4 in some order.\n\nIf the single-author books of Chintan are 3, then the double-author books of Chintan become 4, the single-author books of Devon become 4, and the double-author books of Devon become 1.\n\nIf the single-author books of Chintan are 4, then the double-author books of Chintan become 3, the single-author books of Devon become 3, and the double-author books of Devon become 2.\n\nPlacing both possibilities in the table, we get,\n\nStatement 1: Arman wrote three-author papers only with Chintan and Devon.\n\nThere are in total 3 three-author books, and Chintan and Devon are authors of all three of them according to the table. So, Arman wrote the three-author papers only with Chintan and Devon. So, the statement is necessarily true\n\nStatement 2: Brajen wrote three-author papers only with Chintan and Devon.\n\nThere are in total 3 three-author books, and Chintan and Devon are authors of all three of them according to the table. So, Brajen wrote the three-author papers only with Chintan and Devon. So, the statement is necessarily true.\n\nSo, both I and 2 are necessarily true.\n\nHence, the correct answer is option B.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_5_8PGeyw3.png",
+      "full_markdown": "### Question (qid: 476460)\n\n**Passage:**\nThe following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.\n\nWhich of the following statements is/are NECESSARILY true?\n\ni. Arman wrote three-author papers only with Chintan and Devon.\nii. Brajen wrote three-author papers only with Chintan and Devon.\n\n**Options:**\n- **A**. Only ii\n- **B**. Both i and ii\n- **C**. Only i\n- **D**. Neither i or ii\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1684",
+      "passage_text": "The following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.",
+      "question_text": "If Devon wrote more than one two-author papers, then how many two-author papers did Chintan write?",
+      "options": [],
+      "correct_option_data": "3",
+      "solution_text": "If all the two-author-type books are counted for both authors separately, then we get the sum to be 4 * 2 = 8.\n\nIf all the three-author-type books are counted for all three authors separately, then we get the sum to be 3 * 3 = 9.\n\nIf all the four-author-type books are counted for all four authors separately, then we get the sum to be 4 * 2 = 8.\n\nWe are given that there are 2 four-author books, so there are exactly two books for each that are of the four-author type.\n\nPutting the values in the table, we get,\n\nWe are given that each author has at least one book of each type. In the case of Arman, there are three books left to be assigned, and there are 3 types of books left, so each of them has to be equal to 1 for the above condition to be satisfied.\n\nIn the case of Brajen, we are told that he had an equal number of single-author and two-author books.\n\nCase 1: If the equal number is 1, then the three-author type books become 4, and we are given that both Chintan and Devon had more three-author books than Brajen, which is not possible in this case, as both of them combined will be left with 5 books together and whaterver we split 5 books there wont be a case of both of them having more books than Brajen.\n\nCase 2: If the equal number is 2, then the three-author type books become 2, and we are given that both Chintan and Devon had more three-author books than Brajen, which is possible in this case, as both of them combined will be left with 6 books together and the only way to split 6 books such that both of them are greater than 2 is to split them into 3, 3 and it is the only possible way.\n\nCase 3: If the equal number is greater than or equal to 3, then the three-author type books become 0 or negative, which can directly be eliminated, as we are given that all authors wrote at least 1 book of each type.\n\nSo, we can eliminate both cases 1 and 3, and we will be left with the case of Brajen having 2 books each of Single-author, Two-author, and Three-author types. Chintan and Devon have three books each of the three-author type.\n\nFilling up the table with these values, we get,\n\nWe are given that each author has a different number of single-author type books. The only possibilities for the single-author books of Chintan and Devon are 3 and 4 in some order.\n\nIf the single-author books of Chintan are 3, then the double-author books of Chintan become 4, the single-author books of Devon become 4, and the double-author books of Devon become 1.\n\nIf the single-author books of Chintan are 4, then the double-author books of Chintan become 3, the single-author books of Devon become 3, and the double-author books of Devon become 2.\n\nPlacing both possibilities in the table, we get,\n\nIf Devon wrote more than one two-author paper, he would have written 2 papers, making the number of two-author papers written by Chintan 3.\n\nHence, the correct answer is 3.",
+      "image_url": "https://cracku.in/media/uploads/Screenshot_5_8PGeyw3.png",
+      "full_markdown": "### Question (qid: 476461)\n\n**Passage:**\nThe following charts depict details of research papers written by four authors, Arman, Brajen, Chintan, and Devon. The papers were of four types, single-author, two-author, three-author, and four-author, that is, written by one, two, three, or all four of these authors, respectively. No other authors were involved in writing these papers.\n\nThe following additional facts are known. 1. Each of the authors wrote at least one of each of the four types of papers. 2. The four authors wrote different numbers of single-author papers. 3. Both Chintan and Devon wrote more three-author papers than Brajen. 4. The number of single-author and two-author papers written by Brajen were the same.\n\nIf Devon wrote more than one two-author papers, then how many two-author papers did Chintan write?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1685",
+      "passage_text": "There are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.",
+      "question_text": "What was the total number of pings made by B1, B2, and B3?",
+      "options": [],
+      "correct_option_data": "6",
+      "solution_text": "Let us try to arrange the hoops and the spheres in increasing order of their diameter according to the information given,\n\nIn clue 1, we are given that B1 and B6 made a ping on H4, and B5 did not.\n\nSo, we can definitely say that,\n\n(B1, B6) < H4 < B5  --(1)\n\nIn clue 2, we are given that B4 made a ping on H3, but B1 did not.\n\nSo, we can definitely say that,\n\nB4 < H3 < B1 --(2)\n\nIn clue 3, we are given that all balls, except B3, made pings on H1.\n\nSo, we can definitely say that,\n\n(B1, B2, B4, B5, B6) < H1 < B3 --(3)\n\nIn clue 4, we are given that none of the balls, except B2, made a ping on H2.\n\nSo, we can definitely say that,\n\nB2 < H2 < (B1, B3, B4, B5, B6) --(4)\n\nCombining (1) and (2), we can definitely say that\n\nB4 < H3 < B1 < H4 < B5 --(5)\n\nThe only ball that we do not have enough information is about B6, as it can be either less than H3 or greater than H3 and less than H4.\n\nCombining (3), (4) and (5), we get,\n\nB2 < H2 < B4 < H3 < B1 < H4 < B5 < H1 < B3\n\nThe sphere B6 can be placed in 2 positions, giving us two possible inequalities, which are\n\nB2 < H2 < (B4, B6) < H3 < B1 < H4 < B5 < H1 < B3\n\nB2 < H2 < B4 < H3 < (B1,B6) < H4 < B5 < H1 < B3\n\nThe position of B6 is not clear, and except for that, all the positions are fixed.\n\nPings made by B1 = H4, H1 = 2\n\nPings made by B2 = H2, H3, H4, H1 = 4\n\nPings made by B3 = 0\n\nTotal number of pings by B1, B2 and B3 = 2 + 4 + 0 = 6.\n\nHence, the correct answer is 6.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476462)\n\n**Passage:**\nThere are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.\n\nWhat was the total number of pings made by B1, B2, and B3?\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1686",
+      "passage_text": "There are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.",
+      "question_text": "Which of the following statements about the relative sizes of the balls is NOT NECESSARILY true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "B4 < B5 < B3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "B2 < B1 < B5",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "B1 < B6 < B3",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "B1 < B5 < B3",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Let us try to arrange the hoops and the spheres in increasing order of their diameter according to the information given,\n\nIn clue 1, we are given that B1 and B6 made a ping on H4, and B5 did not.\n\nSo, we can definitely say that,\n\n(B1, B6) < H4 < B5 --(1)\n\nIn clue 2, we are given that B4 made a ping on H3, but B1 did not.\n\nSo, we can definitely say that,\n\nB4 < H3 < B1 --(2)\n\nIn clue 3, we are given that all balls, except B3, made pings on H1.\n\nSo, we can definitely say that,\n\n(B1, B2, B4, B5, B6) < H1 < B3 --(3)\n\nIn clue 4, we are given that none of the balls, except B2, made a ping on H2.\n\nSo, we can definitely say that,\n\nB2 < H2 < (B1, B3, B4, B5, B6) --(4)\n\nCombining (1) and (2), we can definitely say that\n\nB4 < H3 < B1 < H4 < B5 --(5)\n\nThe only ball for which we do not have enough information is about B6, as it can be either less than H3 or greater than H3 and less than H4.\n\nCombining (3), (4) and (5), we get,\n\nB2 < H2 < B4 < H3 < B1 < H4 < B5 < H1 < B3\n\nThe sphere B6 can be placed in 2 positions, giving us two possible inequalities, which are\n\nB2 < H2 < (B4, B6) < H3 < B1 < H4 < B5 < H1 < B3\n\nB2 < H2 < B4 < H3 < (B1,B6) < H4 < B5 < H1 < B3\n\nThe position of B6 is unclear, and except for that, all the other positions are fixed.\n\nOption A) B4 < B5 < B3. This is definitely true.\n\nOption B) B2 < B1 < B5. This is definitely true.\n\nOption C) B1 < B6 < B3. This need not be true, as we do not know which of B1 and B6 has the larger diameter.\n\nOption D) B1 < B5 < B3. This is definitely true.\n\nHence, the correct answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476463)\n\n**Passage:**\nThere are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.\n\nWhich of the following statements about the relative sizes of the balls is NOT NECESSARILY true?\n\n**Options:**\n- **A**. B4 < B5 < B3\n- **B**. B2 < B1 < B5\n- **C**. B1 < B6 < B3\n- **D**. B1 < B5 < B3\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1687",
+      "passage_text": "There are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.",
+      "question_text": "Which of the following statements about the relative sizes of the hoops is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "H2 < H3 < H4 < H1",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "H1 < H3 < H4 < H2",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "H1 < H4 < H3 < H2",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "H2 < H4 < H3 < H1",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us try to arrange the hoops and the spheres in increasing order of their diameter according to the information given,\n\nIn clue 1, we are given that B1 and B6 made a ping on H4, and B5 did not.\n\nSo, we can definitely say that,\n\n(B1, B6) < H4 < B5 --(1)\n\nIn clue 2, we are given that B4 made a ping on H3, but B1 did not.\n\nSo, we can definitely say that,\n\nB4 < H3 < B1 --(2)\n\nIn clue 3, we are given that all balls, except B3, made pings on H1.\n\nSo, we can definitely say that,\n\n(B1, B2, B4, B5, B6) < H1 < B3 --(3)\n\nIn clue 4, we are given that none of the balls, except B2, made a ping on H2.\n\nSo, we can definitely say that,\n\nB2 < H2 < (B1, B3, B4, B5, B6) --(4)\n\nCombining (1) and (2), we can definitely say that\n\nB4 < H3 < B1 < H4 < B5 --(5)\n\nThe only ball for which we do not have enough information is about B6, as it can be either less than H3 or greater than H3 and less than H4.\n\nCombining (3), (4) and (5), we get,\n\nB2 < H2 < B4 < H3 < B1 < H4 < B5 < H1 < B3\n\nThe sphere B6 can be placed in 2 positions, giving us two possible inequalities, which are\n\nB2 < H2 < (B4, B6) < H3 < B1 < H4 < B5 < H1 < B3\n\nB2 < H2 < B4 < H3 < (B1,B6) < H4 < B5 < H1 < B3\n\nThe position of B6 is unclear, and except for that, all the other positions are fixed.\n\nWe know the correct order of the diameters of the hoops is H2 < H3 < H4 < H1.\n\nHence, the correct answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476464)\n\n**Passage:**\nThere are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.\n\nWhich of the following statements about the relative sizes of the hoops is true?\n\n**Options:**\n- **A**. H2 < H3 < H4 < H1\n- **B**. H1 < H3 < H4 < H2\n- **C**. H1 < H4 < H3 < H2\n- **D**. H2 < H4 < H3 < H1\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "dilr-1688",
+      "passage_text": "There are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.",
+      "question_text": "What BEST can be said about the total number of pings from all the tests undertaken?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "12 or 13",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "13 or 14",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "12 or 13 or 14",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "At least 9",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let us try to arrange the hoops and the spheres in increasing order of their diameter according to the information given,\n\nIn clue 1, we are given that B1 and B6 made a ping on H4, and B5 did not.\n\nSo, we can definitely say that,\n\n(B1, B6) < H4 < B5 --(1)\n\nIn clue 2, we are given that B4 made a ping on H3, but B1 did not.\n\nSo, we can definitely say that,\n\nB4 < H3 < B1 --(2)\n\nIn clue 3, we are given that all balls, except B3, made pings on H1.\n\nSo, we can definitely say that,\n\n(B1, B2, B4, B5, B6) < H1 < B3 --(3)\n\nIn clue 4, we are given that none of the balls, except B2, made a ping on H2.\n\nSo, we can definitely say that,\n\nB2 < H2 < (B1, B3, B4, B5, B6) --(4)\n\nCombining (1) and (2), we can definitely say that\n\nB4 < H3 < B1 < H4 < B5 --(5)\n\nThe only ball for which we do not have enough information is about B6, as it can be either less than H3 or greater than H3 and less than H4.\n\nCombining (3), (4) and (5), we get,\n\nB2 < H2 < B4 < H3 < B1 < H4 < B5 < H1 < B3\n\nThe sphere B6 can be placed in 2 positions, giving us two possible inequalities, which are\n\nB2 < H2 < (B4, B6) < H3 < B1 < H4 < B5 < H1 < B3\n\nB2 < H2 < B4 < H3 < (B1,B6) < H4 < B5 < H1 < B3\n\nThe position of B6 is unclear, and except for that, all the other positions are fixed.\n\nIn the first case, the number of pings possible can be calculated as 4 for B2, 3 for B4, 3 for B6, 2 for B1, 1 for B5 and 0 for B3. In total, the number of pings possible in the 1st case is 4 + 3 + 3 + 2 + 1 = 13.\n\nIn the second case, the number of pings possible can be calculated as 4 for B2, 3 for B4, 2 for B6, 2 for B1, 1 for B5 and 0 for B3. In total, the number of pings possible in the 2nd case is 4 + 3 + 2 + 2 + 1 = 12.\n\nSo, the total number of pings can be 12 or 13.\n\nHence, the correct answer is Option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476465)\n\n**Passage:**\nThere are six spherical balls, B1, B2, B3, B4, B5, and B6, and four circular hoops H1, H2, H3, and H4.\n\nEach ball was tested on each hoop once, by attempting to pass the ball through the hoop. If the diameter of a ball is not larger than the diameter of the hoop, the ball passes through the hoop and makes a “ping”. Any ball having a diameter larger than that of the hoop gets stuck on that hoop and does not make a ping.\n\nThe following additional information is known: 1. B1 and B6 each made a ping on H4, but B5 did not. 2. B4 made a ping on H3, but B1 did not. 3. All balls, except B3, made pings on H1. 4. None of the balls, except B2, made a ping on H2.\n\nWhat BEST can be said about the total number of pings from all the tests undertaken?\n\n**Options:**\n- **A**. 12 or 13\n- **B**. 13 or 14\n- **C**. 12 or 13 or 14\n- **D**. At least 9\n\n**Correct Answer:** null"
     }
   ]
 }

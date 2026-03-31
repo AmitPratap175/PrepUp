@@ -71806,6 +71806,281 @@
       "solution_text": "11th term of series = $a_{11}$ = Sum of 11 terms - Sum of 10 terms = $3(2^{11 + 1} - 2)$-3$(2^{10 + 1} - 2)$ \n\n= 3$(2^{12} - 2-2^{11} +2)$=3$(2^{11})(2-1)$= 3*$2^{11}$ = 6144",
       "image_url": "",
       "full_markdown": "### Question (qid: 277665)\n\n**Passage:**\nIf a 1 + a 2 + a 3 + . . . . + a n = 3 ( 2 n + 1 − 2 ) a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2) a 1 ​ + a 2 ​ + a 3 ​ + . . . . + a n ​ = 3 ( 2 n + 1 − 2 ) , for every n ≥ 1 n \\geq 1 n ≥ 1 , then a 11 a_{11} a 1 1 ​ equals\n\nIf $a_1 + a_2 + a_3 + .... + a_n = 3(2^{n + 1} - 2)$, for every $n \\geq 1$, then $a_{11}$ equals\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2299",
+      "passage_text": "",
+      "question_text": "In a class of 150 students, 75 students chose physics, 111 students chose mathematics and 40 students chose chemistry. All students chose at least one of the three subjects and at least one student chose all three subjects. The number of students who chose both physics and chemistry is equal to the number of students who chose both chemistry and mathematics, and this is half the number of students who chose both physics and mathematics. The maximum possible number of students who chose physics but not mathematics, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "55",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "B",
+      "solution_text": "Based on the information provided, we can make the following diagram;\n\nWe know that the sum of all entries in the Venn diagram should be $150$. Therefore,\n\n$111+ 75-2k + 40 - (k-x) - k + 0 = 150$\n\n$76 = 4k-x$, where $x\\geq 1$\n\nWe must maximise the number of students who chose Physics but not Mathematics. This number is equal to $75-2k$. To maximise this we must minimise $k$. \n\nWe have $4k = 76+x$ or $k = 19 + \\dfrac{x}{4}$\n\nSince $x$ and $k$ are both integers, $x$ should be divisible by $4$. To minimise $k$, we will take the minimum value of $x$, which is $4$.\n\nTherefore, $k = 19 + \\dfrac{4}{4} = 20$.\n\nThus, the maximum possible number of students who chose physics but not mathematics, is $75-2*20 = 35$.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 476584)\n\n**Passage:**\nIn a class of 150 students, 75 students chose physics, 111 students chose mathematics and 40 students chose chemistry. All students chose at least one of the three subjects and at least one student chose all three subjects. The number of students who chose both physics and chemistry is equal to the number of students who chose both chemistry and mathematics, and this is half the number of students who chose both physics and mathematics. The maximum possible number of students who chose physics but not mathematics, is\n\n30\n\n35\n\n40\n\n55\n\nIn a class of 150 students, 75 students chose physics, 111 students chose mathematics and 40 students chose chemistry. All students chose at least one of the three subjects and at least one student chose all three subjects. The number of students who chose both physics and chemistry is equal to the number of students who chose both chemistry and mathematics, and this is half the number of students who chose both physics and mathematics. The maximum possible number of students who chose physics but not mathematics, is\n\n**Options:**\n- **A**. 30\n- **B**. 35\n- **C**. 40\n- **D**. 55\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2300",
+      "passage_text": "",
+      "question_text": "In a class of 100 students, 73 like coffee, 80 like tea and 52 like lemonade. It may be possible that some students do not like any of these three drinks. Then the difference between the maximum and minimum possible number of students who like all the three drinks is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "47",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "53",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "48",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "Let n, s, d and t be the number of students who likes none of the drinks, exactly one drink, exactly 2 drinks and all three drinks, respectively.\n\nIt is given, \n\nn + s + d + t = 100 ...... (1)\n\ns + 2d + 3t = 73 + 80 + 52\n\ns + 2d + 3t = 205 ...... (2)\n\n(2)-(1), we get\n\nd + 2t - n = 105\n\nMaximum value t can take is 52, i.e. t = 52, d = 1 and n = 0\n\nMinimum value t can take is 5, i.e. t = 5, d = 95 and n = 0 (This also satisfies equation (1))\n\nDifference = 52 - 5 = 47\n\nThe answer is option A.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 423998)\n\n**Passage:**\nIn a class of 100 students, 73 like coffee, 80 like tea and 52 like lemonade. It may be possible that some students do not like any of these three drinks. Then the difference between the maximum and minimum possible number of students who like all the three drinks is\n\n47\n\n53\n\n52\n\n48\n\nIn a class of 100 students, 73 like coffee, 80 like tea and 52 like lemonade. It may be possible that some students do not like any of these three drinks. Then the difference between the maximum and minimum possible number of students who like all the three drinks is\n\n**Options:**\n- **A**. 47\n- **B**. 53\n- **C**. 52\n- **D**. 48\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2301",
+      "passage_text": "",
+      "question_text": "A club has 256 members of whom 144 can play football, 123 can play tennis, and 132 can play cricket. Moreover, 58 members can play both football and tennis, 25 can play both cricket and tennis, while 63 can play both football and cricket. If every member can play at least one game, then the number of members who can play only tennis is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "43",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Assume the number of members who can play exactly 1 game = I\n\nThe number of members who can play exactly 2 game = II\n\nThe number of members who can play exactly 3 game = III\n\nI+2II+3III=144+123+132=399....(1)\n\nI+II+III=256......(2)\n\nsubtracting (1) from (2), we get\n\n=> II+2III=143.....(3)\n\nAlso, II+3III=58+25+63=146 ......(4)\n\nsubtracting (3) from (4), we get\n\n=> III = 3 (From 3 and 4)\n\n=> II =137\n\n=> I = 116\n\nThe members who play only tennis = 123-58-25+3 = 43",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 277664)\n\n**Passage:**\nA club has 256 members of whom 144 can play football, 123 can play tennis, and 132 can play cricket. Moreover, 58 members can play both football and tennis, 25 can play both cricket and tennis, while 63 can play both football and cricket. If every member can play at least one game, then the number of members who can play only tennis is\n\n38\n\n32\n\n45\n\n43\n\nA club has 256 members of whom 144 can play football, 123 can play tennis, and 132 can play cricket. Moreover, 58 members can play both football and tennis, 25 can play both cricket and tennis, while 63 can play both football and cricket. If every member can play at least one game, then the number of members who can play only tennis is\n\n**Options:**\n- **A**. 38\n- **B**. 32\n- **C**. 45\n- **D**. 43\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2302",
+      "passage_text": "If A = { 6 2 n − 35 n − 1 6^{2n} -35n - 1 6 2 n − 3 5 n − 1 }, where n n n = 1,2,3,... and B = {35( n n n -1)}, where n n n = 1,2,3,... then which of the following is true?\n\nEvery member of A is in B and at least one member of B is not in A\n\nNeither every member of A is in B nor every member of B is in A\n\nEvery member of B is in A.\n\nAt least one member of A is not in B",
+      "question_text": "If A = {$6^{2n} -35n - 1$}, where $n$ = 1,2,3,... and B = {35($n$-1)}, where $n$ = 1,2,3,... then which of the following is true?",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "Every member of A is in B and at least one member of B is not in A",
+          "is_correct": true
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "Neither every member of A is in B nor every member of B is in A",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "Every member of B is in A.",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "At least one member of A is not in B",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "A",
+      "solution_text": "If we carefully observe set A, then we find that $6^{2n} -35n - 1$ is divisible by 35. So, set A contains multiples of 35. However, not all the multiples of 35 are there in set A, for different values of $n$.\nFor $n = 1$, the value is 0, for $n = 2$, the value is 1225 which is the 35th multiple of 3.\nIf we observe set B, it consists of all the multiples of 35 including 0.\nSo, we can say that every member of set A will be in B while every member of set B will not necessarily be in set A.\nHence, option A is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177863)\n\n**Passage:**\nIf A = { 6 2 n − 35 n − 1 6^{2n} -35n - 1 6 2 n − 3 5 n − 1 }, where n n n = 1,2,3,... and B = {35( n n n -1)}, where n n n = 1,2,3,... then which of the following is true?\n\nEvery member of A is in B and at least one member of B is not in A\n\nNeither every member of A is in B nor every member of B is in A\n\nEvery member of B is in A.\n\nAt least one member of A is not in B\n\nIf A = {$6^{2n} -35n - 1$}, where $n$ = 1,2,3,... and B = {35($n$-1)}, where $n$ = 1,2,3,... then which of the following is true?\n\n**Options:**\n- **A**. Every member of A is in B and at least one member of B is not in A\n- **B**. Neither every member of A is in B nor every member of B is in A\n- **C**. Every member of B is in A.\n- **D**. At least one member of A is not in B\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2303",
+      "passage_text": "",
+      "question_text": "For two sets A and B, let AΔB denote the set of elements which belong to A or B but not both. If P = {1,2,3,4}, Q = {2,3,5,6}, R = {1,3,7,8,9}, S = {2,4,9,10}, then the number of elements in (PΔQ)Δ(RΔS) is",
+      "options": [],
+      "correct_option_data": "7",
+      "solution_text": "P = {1,2,3,4} and  Q = {2,3,5,6,}\nPΔQ = {1, 4, 5, 6}\nR = {1,3,7,8,9} and S = {2,4,9,10}\nRΔS = {1, 2, 3, 4, 7, 8, 10}\n(PΔQ)Δ(RΔS) = {2, 3, 5, 6, 7, 8, 10}\nThus, there are 7 elements in (PΔQ)Δ(RΔS) .\nhence, 7 is the correct answer.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 177847)\n\n**Passage:**\nFor two sets A and B, let AΔB denote the set of elements which belong to A or B but not both. If P = {1,2,3,4}, Q = {2,3,5,6}, R = {1,3,7,8,9}, S = {2,4,9,10}, then the number of elements in (PΔQ)Δ(RΔS) is\n\nFor two sets A and B, let AΔB denote the set of elements which belong to A or B but not both. If P = {1,2,3,4}, Q = {2,3,5,6}, R = {1,3,7,8,9}, S = {2,4,9,10}, then the number of elements in (PΔQ)Δ(RΔS) is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2304",
+      "passage_text": "",
+      "question_text": "The lengths of all four sides of a quadrilateral are integer valued. If three of its sides are of length 1 cm, 2 cm and 4 cm, then the total number of possible lengths of the fourth side is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "5",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "Sum of the three sides of a quadrilateral is greater than the fourth side.\n\nTherefore, let the fourth side be\n\n1+2+4>d or d<7\n\n1+2+d>4 or d>1\n\nPossible values of d are 2, 3, 4, 5 and 6.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424125)\n\n**Passage:**\nThe lengths of all four sides of a quadrilateral are integer valued. If three of its sides are of length 1 cm, 2 cm and 4 cm, then the total number of possible lengths of the fourth side is\n\n3\n\n4\n\n6\n\n5\n\nThe lengths of all four sides of a quadrilateral are integer valued. If three of its sides are of length 1 cm, 2 cm and 4 cm, then the total number of possible lengths of the fourth side is\n\n**Options:**\n- **A**. 3\n- **B**. 4\n- **C**. 6\n- **D**. 5\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2305",
+      "passage_text": "",
+      "question_text": "Suppose the medians BD and CE of a triangle ABC intersect at a point O. If area of triangle ABC is 108 sq. cm., then, the area of the triangle EOD, in sq. cm., is",
+      "options": [],
+      "correct_option_data": "9",
+      "solution_text": "Area of ABD : Area of BDC = 1:1\n\nTherefore, area of ABD = 54\n\nArea of ADE : Area of EDB = 1:1\n\nTherefore, area of ADE = 27\n\nO is the centroid and it divides the medians in the ratio of 2:1\n\nArea of BEO : Area of EOD = 2:1\n\nArea of EOD = 9",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424118)\n\n**Passage:**\nSuppose the medians BD and CE of a triangle ABC intersect at a point O. If area of triangle ABC is 108 sq. cm., then, the area of the triangle EOD, in sq. cm., is\n\nSuppose the medians BD and CE of a triangle ABC intersect at a point O. If area of triangle ABC is 108 sq. cm., then, the area of the triangle EOD, in sq. cm., is\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2306",
+      "passage_text": "",
+      "question_text": "The length of each side of an equilateral triangle ABC is 3 cm. Let D be a point on BC such that the area of triangle ADC is half the area of triangle ABD. Then the length of AD, in cm, is",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{8}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\sqrt{6}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "$\\sqrt{7}$",
+          "is_correct": true
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{5}$",
+          "is_correct": false
+        }
+      ],
+      "correct_option_data": "C",
+      "solution_text": "Area of triangle ABD is twice the area of triangle ACD\n\n$\\angle\\ ADB=\\theta\\ $\n\n$\\frac{1}{2}\\left(AD\\right)\\left(BD\\right)\\sin\\theta\\ =2\\left(\\frac{1}{2}\\left(AD\\left(CD\\right)\\sin\\left(180-\\theta\\ \\right)\\right)\\right)$\n\n$BD\\ =2CD$\n\nTherefore, BD = 2 and CD = 1\n\n$\\angle\\ ABC=\\angle\\ ACB=60^{\\circ\\ }$\n\nApplying cosine rule in triangle ADC, we get\n\n$\\cos\\angle\\ ACD=\\ \\frac{\\ AC^2+CD^2-AD^2}{2\\left(AC\\right)\\left(CD\\right)}$\n\n$\\frac{1}{2}=\\ \\frac{\\ 9+1-AD^2}{6}$\n\n$AD^2=7$\n\n$AD=\\sqrt{\\ 7}$\n\nThe answer is option C.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424069)\n\n**Passage:**\nThe length of each side of an equilateral triangle ABC is 3 cm. Let D be a point on BC such that the area of triangle ADC is half the area of triangle ABD. Then the length of AD, in cm, is\n\n8 \\sqrt{8} 8 ​\n\n6 \\sqrt{6} 6 ​\n\n7 \\sqrt{7} 7 ​\n\n5 \\sqrt{5} 5 ​\n\nThe length of each side of an equilateral triangle ABC is 3 cm. Let D be a point on BC such that the area of triangle ADC is half the area of triangle ABD. Then the length of AD, in cm, is\n\n**Options:**\n- **A**. $\\sqrt{8}$\n- **B**. $\\sqrt{6}$\n- **C**. $\\sqrt{7}$\n- **D**. $\\sqrt{5}$\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2307",
+      "passage_text": "",
+      "question_text": "Regular polygons A and B have number of sides in the ratio 1 : 2 and interior angles in the ratio 3 : 4. Then the number of sides of B equals",
+      "options": [],
+      "correct_option_data": "10",
+      "solution_text": "Let the number of sides of polygons A and B be n and 2n, respectively.\n\n$\\ \\dfrac{\\ \\ \\dfrac{\\ \\left(n-2\\right)180}{n}}{\\ \\dfrac{\\ \\left(2n-2\\right)180}{2n}}=\\dfrac{3}{4}$\n\n$\\ \\dfrac{\\ \\ \\ n-2}{\\ \\ n-1}=\\dfrac{3}{4}$\n\n$\\ \\ \\ \\ 4n-8=3n-3$\n\n$n=5$\n\nThe number of sides of polygon B is 2*5, i.e. 10.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424058)\n\n**Passage:**\nRegular polygons A and B have number of sides in the ratio 1 : 2 and interior angles in the ratio 3 : 4. Then the number of sides of B equals\n\nRegular polygons A and B have number of sides in the ratio 1 : 2 and interior angles in the ratio 3 : 4. Then the number of sides of B equals\n\n**Options:**\n\n**Correct Answer:** null"
+    },
+    {
+      "qid": "quant-2308",
+      "passage_text": "In triangle ABC, altitudes AD and BE are drawn to the corresponding bases. If ∠ B A C = 4 5 ∘ \\angle BAC = 45^{\\circ} ∠ B A C = 4 5 ∘ and ∠ A B C = θ \\angle ABC=\\theta\\ ∠ A B C = θ , then A D B E \\frac{AD}{BE} B E A D ​ equals\n\n2 cos ⁡ θ \\sqrt{2} \\cos \\theta 2 ​ cos θ\n\n( sin ⁡ θ + cos ⁡ θ ) 2 \\frac{(\\sin \\theta + \\cos \\theta)}{\\sqrt{2}} 2 ​ ( s i n θ + c o s θ ) ​\n\n1\n\n2 sin ⁡ θ \\sqrt{2} \\sin \\theta 2 ​ sin θ",
+      "question_text": "In triangle ABC, altitudes AD and BE are drawn to the corresponding bases. If $\\angle BAC = 45^{\\circ}$ and $\\angle ABC=\\theta\\ $, then $\\frac{AD}{BE}$ equals",
+      "options": [
+        {
+          "data_option": "1",
+          "label": "A",
+          "option_text": "$\\sqrt{2} \\cos \\theta$",
+          "is_correct": false
+        },
+        {
+          "data_option": "2",
+          "label": "B",
+          "option_text": "$\\frac{(\\sin \\theta + \\cos \\theta)}{\\sqrt{2}}$",
+          "is_correct": false
+        },
+        {
+          "data_option": "3",
+          "label": "C",
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "data_option": "4",
+          "label": "D",
+          "option_text": "$\\sqrt{2} \\sin \\theta$",
+          "is_correct": true
+        }
+      ],
+      "correct_option_data": "D",
+      "solution_text": "It is given, Angle BAE = 45 degrees\n\nThis implies AE = BE\n\nLet AE = BE = x \n\nIn right-angled triangle ABD, it is given $\\angle ABC=\\theta\\ $\n\n$\\sin\\theta=\\frac{AD}{AB}\\ $\n\n$\\sin\\theta=\\frac{AD}{x\\sqrt{\\ 2}}\\ $\n\n$\\sqrt{\\ 2}\\sin\\theta=\\frac{AD}{BE}\\ $\n\nThe answer is option D.",
+      "image_url": "",
+      "full_markdown": "### Question (qid: 424052)\n\n**Passage:**\nIn triangle ABC, altitudes AD and BE are drawn to the corresponding bases. If ∠ B A C = 4 5 ∘ \\angle BAC = 45^{\\circ} ∠ B A C = 4 5 ∘ and ∠ A B C = θ \\angle ABC=\\theta\\ ∠ A B C = θ , then A D B E \\frac{AD}{BE} B E A D ​ equals\n\n2 cos ⁡ θ \\sqrt{2} \\cos \\theta 2 ​ cos θ\n\n( sin ⁡ θ + cos ⁡ θ ) 2 \\frac{(\\sin \\theta + \\cos \\theta)}{\\sqrt{2}} 2 ​ ( s i n θ + c o s θ ) ​\n\n1\n\n2 sin ⁡ θ \\sqrt{2} \\sin \\theta 2 ​ sin θ\n\nIn triangle ABC, altitudes AD and BE are drawn to the corresponding bases. If $\\angle BAC = 45^{\\circ}$ and $\\angle ABC=\\theta\\ $, then $\\frac{AD}{BE}$ equals\n\n**Options:**\n- **A**. $\\sqrt{2} \\cos \\theta$\n- **B**. $\\frac{(\\sin \\theta + \\cos \\theta)}{\\sqrt{2}}$\n- **C**. 1\n- **D**. $\\sqrt{2} \\sin \\theta$\n\n**Correct Answer:** null"
     }
   ]
 }

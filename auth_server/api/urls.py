@@ -10,6 +10,7 @@ from . import views
 from .views import ResetTestProgressView, UserQuizProgressView, UserQuizStateView
 from .quiz_generator_view import QuizGeneratorView
 from .chapterwise_view import ChapterwiseQuizView
+from .ncert_view import NcertTopicwiseQuizView
 from .chapter_progress_view import ChapterProgressView
 from .chapter_progress_view import ChapterProgressView
 from .pdf_export_view import ChapterPDFExportView
@@ -71,6 +72,7 @@ urlpatterns = [
     path('generate-quiz/', QuizGeneratorView.as_view(), name='generate-quiz'),
     path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),
     path('chapterwise-quiz/export-pdf/', ChapterPDFExportView.as_view(), name='chapter-export-pdf'),
+    path('ncert-quiz/', NcertTopicwiseQuizView.as_view(), name='ncert-quiz'),
     path('chapter-progress/', ChapterProgressView.as_view(), name='chapter-progress'),
     path('pib/releases/', views_pib.PIBReleaseList.as_view(), name='pib-releases-list'),
     path('pib/releases/<uuid:id>/', views_pib.PIBReleaseDetail.as_view(), name='pib-releases-detail'),
