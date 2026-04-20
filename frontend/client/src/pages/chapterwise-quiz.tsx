@@ -66,7 +66,7 @@ const ChapterwiseQuizPage: React.FC = () => {
     const [completedChapters, setCompletedChapters] = useState<string[]>([]);
     const [submittingCompletion, setSubmittingCompletion] = useState(false);
 
-    // Track expanded state for each subject section
+    // Track expanded state for each subject section. By default, sections are collapsed.
     const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
 
     const toggleSection = (subject: string) => {
@@ -85,7 +85,7 @@ const ChapterwiseQuizPage: React.FC = () => {
     const groupedQuizzes = React.useMemo(() => {
         const groups: Record<string, PracticeTest[]> = {};
         availableTests.forEach(test => {
-            const subj = test.subject || "General Studies";
+            const subj = test.subject || "General";
             if (!groups[subj]) groups[subj] = [];
             groups[subj].push(test);
         });
@@ -127,7 +127,7 @@ const ChapterwiseQuizPage: React.FC = () => {
         });
 
         // Heuristic to clean subject if it comes in mixed case
-        let subject = data.subject || "General Studies";
+        let subject = data.subject || "General";
         // Capitalize first letter of each word
         subject = subject.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 
@@ -419,10 +419,10 @@ const ChapterwiseQuizPage: React.FC = () => {
                                         className="flex items-center gap-2 pb-2 border-b border-border/60 cursor-pointer hover:bg-accent/5 transition-colors rounded-t-lg p-2"
                                         onClick={() => toggleSection(subject)}
                                     >
-                                        {!expandedSections[subject] ? (
-                                            <ChevronRight className="h-5 w-5 text-muted-foreground" />
-                                        ) : (
+                                        {expandedSections[subject] ? (
                                             <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                                        ) : (
+                                            <ChevronRight className="h-5 w-5 text-muted-foreground" />
                                         )}
                                         <Badge variant="outline" className="text-lg font-semibold px-3 py-1 bg-primary/5 border-primary/20 text-primary">
                                             {subject}

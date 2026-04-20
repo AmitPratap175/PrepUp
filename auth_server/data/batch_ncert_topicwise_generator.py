@@ -58,13 +58,24 @@ class QuizDifficulty(Enum):
     HARD = 3
 
 NB_PROMPT = """
-Act as a strict Union Public Service Commission (UPSC) paper setter. Your goal is to exhaustively test my knowledge of the uploaded NCERT document by generating a high-volume Question Bank (at least 50 questions).
-Also generate at least 50 questions of hard type.
+Act as a strict Union Public Service Commission (UPSC) paper setter. Your goal is to exhaustively test my knowledge of the uploaded document by generating a high-volume Question Bank (at least 20 questions).
 Using ONLY the information provided in this document, generate questions in the following specific UPSC formats:
-1. The 'Statement-Based' Trap: Create questions with 2-3 statements. Include traps. Options: (a) 1 only ...
-2. Chronology & Sequencing.
-3. Match the Following.
-Output Rules: Cover the entire document. Provide Answer Key with Explanation.
+
+**1. The 'Statement-Based' Trap:**
+Create questions with 2-3 statements (e.g., 'Consider the following statements regarding [Topic]...').
+Intentionally include common UPSC traps: swap dates, change 'Constitutional' to 'Statutory', or use extreme words like 'only', 'always', or 'mandatorily' to test precision.
+Options: (a) 1 only, (b) 2 only, (c) Both 1 and 2, (d) Neither 1 nor 2.
+
+**2. Chronology & Sequencing:**
+Select 4 events mentioned in the text and ask to arrange them in correct chronological order.
+
+**3. Match the Following:**
+Create pairs matching specific terms/personalities with descriptions.
+
+Also generate atleast 50 questions of hard type.
+**Output Rules:**
+Cover the entire document. Hve the quizzes cover every facts and idea in the document.
+Provide a separate Answer Key at the end. For every answer, provide a detailed 'Explanation'.
 """
 
 GEMINI_PROMPT_TEMPLATE = """
@@ -309,10 +320,11 @@ async def main():
 
             print(f"  - Document classified as: Class: {class_name}, Subject: {subject}")
             
-            gemini_qs = await generate_via_gemini(file_base64, mime_type, pdf.name, subject)
+            # gemini_qs = await generate_via_gemini(file_base64, mime_type, pdf.name, subject)
             nb_qs = await generate_via_notebooklm(nb_client, pdf)
             
-            combined_qs = gemini_qs + nb_qs
+            # combined_qs = gemini_qs + nb_qs
+            combined_qs = nb_qs
             
             if not combined_qs:
                 print("  - Failed to generate questions from both sources. Skipping.")
@@ -345,7 +357,8 @@ async def main():
             with open(PROCESSED_LOG_PATH, 'w') as f:
                  json.dump(list(processed_files), f, indent=2)
             
-            print(f"  - Saved {len(combined_qs)} questions (Gemini: {len(gemini_qs)}, NotebookLM: {len(nb_qs)}).")
+            # print(f"  - Saved {len(combined_qs)} questions (Gemini: {len(gemini_qs)}, NotebookLM: {len(nb_qs)}).")
+            print(f"  - Saved {len(combined_qs)} questions (NotebookLM: {len(nb_qs)}).")
             
             if i < len(pdfs) - 1:
                 print("  - Cooling down for 60 seconds...")

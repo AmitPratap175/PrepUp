@@ -54,6 +54,7 @@ import QuizGeneratorPage from "@/pages/generated-quiz";
 import GeneratedQuizViewerPage from "@/pages/generated-quiz-viewer";
 import ChapterwiseQuizPage from "@/pages/chapterwise-quiz";
 import NcertTopicwiseQuizPage from "@/pages/ncert-topicwise-quiz";
+import DailyPracticeQuestionsPage from "@/pages/daily-practice-questions";
 import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
 import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
 import { useEffect } from "react";
@@ -138,6 +139,7 @@ function Router() {
       <Route path="/generated-quiz/:id" component={GeneratedQuizViewerPage} />
       <Route path="/chapterwise-quiz" component={ChapterwiseQuizPage} />
       <Route path="/ncert-topicwise-quiz" component={NcertTopicwiseQuizPage} />
+      <Route path="/upsc/daily-practice-questions" component={DailyPracticeQuestionsPage} />
       <Route component={NotFound} />
     </Switch>
   );

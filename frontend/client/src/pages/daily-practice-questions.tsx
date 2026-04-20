@@ -31,7 +31,6 @@ interface QuizData {
     subject?: string;
 }
 
-// ... existing interfaces ...
 interface StoredTestResult {
     score: number;
     total: number;
@@ -42,7 +41,7 @@ interface StoredTestResult {
 
 const getRevisionKey = (testId: string) => `revision_${testId}`;
 
-const NcertTopicwiseQuizPage: React.FC = () => {
+const DailyPracticeQuestionsPage: React.FC = () => {
     const [, setLocation] = useLocation();
 
     // State for multiple quizzes
@@ -92,15 +91,12 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         return groups;
     }, [availableTests]);
 
-    // ... existing functions ...
-
     const convertToPracticeTest = (data: QuizData, index: number): PracticeTest => {
         // Generating stable ID based on title
         const safeTitle = data.title ? data.title.replace(/[^a-zA-Z0-9]/g, '') : `Quiz${index}`;
         const testId = `cw_${index}_${safeTitle}`;
 
         const questions: any[] = data.questions.map((q: any, idx) => {
-            // ... existing question mapping ...
             const correctOptionIndex = q.answerOptions.findIndex((o: any) => o.isCorrect);
             const options = q.answerOptions.map((opt: any, i: number) => ({
                 label: String.fromCharCode(97 + i),
@@ -144,11 +140,10 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         } as PracticeTest;
     };
 
-    // ... existing handlers ...
     const fetchQuizzes = async () => {
         try {
             setLoading(true);
-            const response = await fetch('/api/ncert-quiz/');
+            const response = await fetch('/data/dpq_questions.json');
             if (!response.ok) throw new Error('Failed to fetch quizzes');
             const data: QuizData[] = await response.json();
 
@@ -162,22 +157,15 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         }
     };
 
-
-
-    // ... existing imports
-
     const fetchCompletionStatus = async () => {
         try {
             const res = await apiRequest("GET", '/api/chapter-progress/');
             if (res.ok) {
                 const data = await res.json();
-                // Assuming data returns list of objects with chapter_id
                 if (Array.isArray(data)) {
-                    // Check format. If explicit chapter_id field exists
                     if (data.length > 0 && data[0].chapter_id) {
                         setCompletedChapters(data.map((c: any) => c.chapter_id));
                     } else {
-                        // Fallback if it returns list of strings
                         setCompletedChapters(data);
                     }
                 }
@@ -186,8 +174,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
             console.error("Failed to fetch progress", e);
         }
     };
-
-    // ... existing functions
 
     const toggleCompletion = async (testId: string, currentStatus: boolean, e: React.MouseEvent) => {
         e.stopPropagation();
@@ -218,7 +204,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
             setLatestResult(JSON.parse(stored));
         }
 
-        // Calculate revision count
         const revKey = getRevisionKey(testId);
         const savedRev = localStorage.getItem(revKey);
         setRevisionCount(savedRev ? JSON.parse(savedRev).length : 0);
@@ -243,11 +228,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
             answers.forEach(ans => {
                 const questions = activeTest.questions as any[];
                 const q = questions.find(q => q.id === ans.questionId);
-                // Note: activeTest.questions might be filtered in revision mode.
-                // But we need original index for revision key? 
-                // Wait, revision key stores indices of ORIGINAL questions list.
-                // If we are in revision mode, "index" prop on question should be original index.
-                // Let's rely on question.index if available.
 
                 if (q) {
                     if (q.correct_answer === ans.selectedAnswer) {
@@ -269,70 +249,21 @@ const NcertTopicwiseQuizPage: React.FC = () => {
             localStorage.setItem(`upsc_result_${activeTest.id}`, JSON.stringify(result));
             setLatestResult(result);
 
-            // Update revision list
-            // If manual revision mode, we might remove correct ones from list.
-            // Implemenation detail: update revision store.
             const revKey = getRevisionKey(activeTest.id);
-            // If strictly adding incorrect ones:
             if (incorrectIndices.length > 0) {
                 const existing = JSON.parse(localStorage.getItem(revKey) || '[]');
                 const combined = Array.from(new Set([...existing, ...incorrectIndices]));
                 localStorage.setItem(revKey, JSON.stringify(combined));
             }
-
-            // Auto-mark completed if score > 0
-            if (!completedChapters.includes(activeTest.id)) {
-                // For now user manually marks, or we can auto mark.
-                // toggleCompletion(activeTest.id, false, { stopPropagation: () => {} } as any);
-            }
-            // toggleCompletion(activeTest.id, false, { stopPropagation: () => {} } as any);
         }
-    }
-
+    };
 
     const startRevision = () => {
         setRevisionMode(true);
         setQuizStarted(true);
     };
 
-
-
-    const [isExporting, setIsExporting] = useState(false);
-    const handleExportPDF = async () => {
-        if (!activeTest) return;
-        setIsExporting(true);
-        try {
-            const token = localStorage.getItem("token");
-            if (!token) throw new Error("Not authenticated");
-
-            const res = await fetch('/api/chapterwise-quiz/export-pdf/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Token ${token}`
-                },
-                body: JSON.stringify({ chapter_id: activeTest.id })
-            });
-            if (res.ok) {
-                const blob = await res.blob();
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${activeTest.title}.pdf`;
-                a.click();
-            } else {
-                throw new Error("Export failed");
-            }
-        } catch (e) {
-            console.error(e);
-            setError("Failed to export PDF");
-        } finally {
-            setIsExporting(false);
-        }
-    };
-
     if (loading) {
-        // ... existing loading ...
         return (
             <div className="flex items-center justify-center min-h-screen bg-background">
                 <Loader2 className="h-8 w-8 animate-spin" />
@@ -340,10 +271,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         );
     }
 
-    // ... existing activeTest/result logic ...
-
-    // Copy the active test logic from original file here or ensure it falls through
-    // Active test derived logic for Revision Mode override
     const activeTest = revisionMode && test ? {
         ...test,
         title: `Revision: ${test.title}`,
@@ -355,7 +282,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
     } : test;
 
     if (revisionMode && activeTest) {
-        // Re-calculate totals for the active revision test
         activeTest.totalQuestions = (activeTest.questions as any[]).length;
         activeTest.duration = Math.ceil(activeTest.totalQuestions * 2);
     }
@@ -390,16 +316,15 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         );
     }
 
-
     return (
         <div className="min-h-screen bg-background">
             <AppHeader />
             <main className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-8 max-w-5xl mx-auto">
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight mb-2">NCERT Topicwise Practice</h1>
+                        <h1 className="text-3xl font-bold tracking-tight mb-2">Daily Practice Questions</h1>
                         <p className="text-xl text-muted-foreground">
-                            Master your NCERT subjects with our topicwise question banks.
+                            Master your UPSC preparation with our Daily Practice Questions.
                         </p>
                     </div>
 
@@ -438,7 +363,7 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                                     <Card key={t.id}
                                                         className={`group relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full border-t-4 ${isCompleted ? 'border-t-green-500 bg-green-50/30 dark:bg-green-900/5' : 'border-t-primary/20 hover:border-t-primary'}`}
                                                         onClick={(e) => {
-                                                            e.stopPropagation(); // Prevent section toggle when clicking card
+                                                            e.stopPropagation();
                                                             handleSelectQuiz(t.id);
                                                         }}
                                                     >
@@ -472,7 +397,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                                                 <Button
                                                                     className={`w-full font-semibold shadow-sm ${isCompleted ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-200' : ''}`}
                                                                     variant={isCompleted ? "default" : "secondary"}
-                                                                // onClick is handled by parent Card
                                                                 >
                                                                     {isCompleted ? "Review Completed" : "Start Chapter"}
                                                                 </Button>
@@ -493,7 +417,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                             )}
                         </div>
                     ) : test && (
-                        // ... existing Tabs/Quiz View code ...
                         <Tabs defaultValue="practice" className="w-full">
                             <Button variant="ghost" onClick={() => setSelectedTestId(null)} className="mb-4 pl-0 hover:bg-transparent hover:underline text-muted-foreground">
                                 ← Back to Chapters
@@ -515,7 +438,7 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                                         <BookOpen className="h-5 w-5 text-primary" />
                                                         Overview
                                                     </CardTitle>
-                                                    <CardDescription>Comprehensive NCERT Topicwise Practice</CardDescription>
+                                                    <CardDescription>Comprehensive Daily Practice</CardDescription>
                                                 </div>
                                                 <Badge className="bg-primary text-primary-foreground">PREMIUM</Badge>
                                             </div>
@@ -566,8 +489,6 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                                 <Button size="lg" className="w-full sm:w-auto" onClick={() => setQuizStarted(true)}>
                                                     {latestResult ? "Retake Quiz" : "Start Quiz Now"}
                                                 </Button>
-
-
 
                                                 <Button
                                                     size="lg"
@@ -621,10 +542,10 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                     )
                     }
                 </div>
-            </main >
+            </main>
             <AppFooter />
-        </div >
+        </div>
     );
 };
 
-export default NcertTopicwiseQuizPage;
+export default DailyPracticeQuestionsPage;

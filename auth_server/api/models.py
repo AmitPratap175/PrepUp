@@ -377,3 +377,28 @@ class PIBRelease(models.Model):
 
     def __str__(self):
         return f"{self.title} ({self.prid})"
+
+
+class NewsArticle(models.Model):
+    """
+    Stores news articles scraped from sources like The Hindu via NewsAPI.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    article_id = models.CharField(max_length=255, unique=True, help_text="Unique identifier (URL or hash)")
+    title = models.CharField(max_length=500)
+    source = models.CharField(max_length=255)
+    author = models.CharField(max_length=255, null=True, blank=True)
+    date = models.DateTimeField(null=True, blank=True)
+    content = models.TextField(help_text="Full or partial content of the article")
+    summary = models.TextField(null=True, blank=True)
+    quiz_data = models.JSONField(null=True, blank=True, help_text="Generated quiz questions")
+    mains_questions = models.JSONField(null=True, blank=True, help_text="Generated Mains Q&A")
+    original_url = models.URLField(max_length=1000)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date', '-created_at']
+
+    def __str__(self):
+        return f"{self.title} ({self.source})"
+

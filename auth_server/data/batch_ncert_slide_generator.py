@@ -58,7 +58,7 @@ async def generate_slide_from_pdf(client, pdf_path, class_name, subject_name):
 
     if output_path.exists():
         print(f"  - ⏩ Skipping {pdf_path.name} (already exists at {output_path})")
-        return False
+        return "SKIPPED"
 
     # Create notebook
     nb_title = f"NCERT Slide Gen: {pdf_path.stem}"
@@ -82,15 +82,19 @@ async def generate_slide_from_pdf(client, pdf_path, class_name, subject_name):
         print(f"  - Downloading slides to {output_path}...")
         await client.artifacts.download_slide_deck(nb.id, str(output_path))
         
-        print(f"  - ✅ Slides saved to {output_path}")
-        return True
+        if output_path.exists():
+            print(f"  - ✅ Slides saved to {output_path}")
+            return "GENERATED"
+        else:
+            print(f"  - ❌ Error: Slide generation completed but file {output_path} not found.")
+            return "ERROR"
         
     except Exception as e:
         if "SourceTimeoutError" in type(e).__name__ or "Timeout" in type(e).__name__:
             print(f"  - ❌ Source processing timed out. Skipping slides for this file.")
         else:
             print(f"  - ❌ Error processing {pdf_path.name}: {e}")
-        return False
+        return "ERROR"
     finally:
         try:
             await client.notebooks.delete(nb.id)
@@ -119,25 +123,36 @@ async def main():
 
     async with await NotebookLMClient.from_storage(STORAGE_PATH) as client:
         for i, pdf in enumerate(pdfs):
+            class_name, subject = parse_class_and_subject(pdf, DATA_DIR)
+            
+            pdf_title = pdf.stem.replace("_", " ").title()
+            safe_title = f"{class_name} - {subject} - {pdf_title}"
+            expected_path = SLIDES_OUT_DIR / class_name / subject / f"{safe_title}.pdf"
+
             if pdf.name in processed_files:
-                print(f"Skipping ({i+1}/{len(pdfs)}): {pdf.name} (Already Processed)")
-                continue
+                if expected_path.exists():
+                    print(f"Skipping ({i+1}/{len(pdfs)}): {pdf.name} (Already Processed)")
+                    continue
+                else:
+                    print(f"File {pdf.name} is marked processed but slide is missing. Retrying...")
+                    processed_files.remove(pdf.name)
+                    with open(PROCESSED_LOG_PATH, 'w') as f:
+                         json.dump(list(processed_files), f, indent=2)
 
             print(f"Processing ({i+1}/{len(pdfs)}): {pdf.name} (Path: {pdf.relative_to(DATA_DIR)})")
             
-            class_name, subject = parse_class_and_subject(pdf, DATA_DIR)
-
             print(f"  - Document classified as: Class: {class_name}, Subject: {subject}")
             
-            did_work = await generate_slide_from_pdf(client, pdf, class_name, subject)
+            status = await generate_slide_from_pdf(client, pdf, class_name, subject)
             
-            processed_files.add(pdf.name)
-            with open(PROCESSED_LOG_PATH, 'w') as f:
-                 json.dump(list(processed_files), f, indent=2)
+            if status in ["GENERATED", "SKIPPED"]:
+                processed_files.add(pdf.name)
+                with open(PROCESSED_LOG_PATH, 'w') as f:
+                     json.dump(list(processed_files), f, indent=2)
             
-            if did_work and i < len(pdfs) - 1:
+            if status == "GENERATED" and i < len(pdfs) - 1:
                 print("  - Cooling down for 120 seconds...")
-                # await asyncio.sleep(120)
+                await asyncio.sleep(120)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -53,6 +53,12 @@ def generate_pib_content_ai(text):
     try:
         response = chain.invoke({"text": text})
         content = response.content
+        
+        # Handle list of blocks (LangChain new format)
+        if isinstance(content, list):
+            texts = [c["text"] if isinstance(c, dict) and "text" in c else str(c) for c in content]
+            content = "".join(texts)
+            
         # Clean markdown code blocks if present
         if "```json" in content:
             content = content.split("```json")[1].split("```")[0].strip()
@@ -60,7 +66,6 @@ def generate_pib_content_ai(text):
              content = content.split("```")[1].split("```")[0].strip()
         
         print(f"DEBUG_AG: Content Type: {type(content)}")
-        print(f"DEBUG_AG: Content: {content}")
         
         data = json.loads(content)
         return data.get("summary"), data.get("quiz"), data.get("mains_questions")

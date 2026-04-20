@@ -15,7 +15,7 @@ from .chapter_progress_view import ChapterProgressView
 from .chapter_progress_view import ChapterProgressView
 from .pdf_export_view import ChapterPDFExportView
 from . import views_pib
-
+from . import views_news
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
     path('courses/', views.courses, name='courses'),
@@ -79,4 +79,8 @@ urlpatterns = [
     path('pib/start-essay/<uuid:id>/', views_pib.PIBStartEssayView.as_view(), name='pib-start-essay'),
     path('pib/questions/', views_pib.PIBQuestionsListView.as_view(), name='pib-questions-list'),
     path('pib/scrape/', views_pib.ScrapePIBView.as_view(), name='pib-scrape'),
+    path('news/articles/', views_news.NewsArticleList.as_view(), name='news-articles-list'),
+    path('news/articles/<uuid:id>/', views_news.NewsArticleDetail.as_view(), name='news-articles-detail'),
+    path('news/articles/<uuid:id>/analyze/', views_news.AnalyzeNewsArticleView.as_view(), name='news-articles-analyze'),
+    path('news/scrape/', views_news.ScrapeNewsView.as_view(), name='news-scrape'),
 ]
