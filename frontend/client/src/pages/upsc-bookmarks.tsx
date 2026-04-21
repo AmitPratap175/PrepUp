@@ -86,6 +86,35 @@ export default function UPSCBookmarksPage() {
         }
     });
 
+    // --- Independent code for new sections ---
+    const { data: monthlyMcqs, isLoading: isLoadingMonthly } = useQuery<QuizData[]>({
+        queryKey: ["/data/monthly_mcq_questions.json"],
+        queryFn: async () => {
+            const response = await fetch('/data/monthly_mcq_questions.json');
+            if (!response.ok) throw new Error('Failed to fetch quizzes');
+            return response.json();
+        }
+    });
+
+    const { data: dpqQuizzes, isLoading: isLoadingDpq } = useQuery<QuizData[]>({
+        queryKey: ["/data/dpq_questions.json"],
+        queryFn: async () => {
+            const response = await fetch('/data/dpq_questions.json');
+            if (!response.ok) throw new Error('Failed to fetch quizzes');
+            return response.json();
+        }
+    });
+
+    const { data: ncertQuizzes, isLoading: isLoadingNcert } = useQuery<QuizData[]>({
+        queryKey: ["/api/ncert-quiz/"],
+        queryFn: async () => {
+            const response = await fetch('/api/ncert-quiz/');
+            if (!response.ok) throw new Error('Failed to fetch quizzes');
+            return response.json();
+        }
+    });
+    // ----------------------------------------
+
     const [bookmarkedQuestions, setBookmarkedQuestions] =
         useState<BookmarkedQuestions>({});
 
@@ -154,6 +183,23 @@ export default function UPSCBookmarksPage() {
                 allTests = [...allTests, ...practiceTests];
             }
 
+            // --- Independent code for Monthly, DPQ, NCERT ---
+            if (monthlyMcqs) {
+                const convertedTests = monthlyMcqs.map((quiz, index) => convertToPracticeTest(quiz, index));
+                allTests = [...allTests, ...convertedTests];
+            }
+
+            if (dpqQuizzes) {
+                const convertedTests = dpqQuizzes.map((quiz, index) => convertToPracticeTest(quiz, index));
+                allTests = [...allTests, ...convertedTests];
+            }
+
+            if (ncertQuizzes) {
+                const convertedTests = ncertQuizzes.map((quiz, index) => convertToPracticeTest(quiz, index));
+                allTests = [...allTests, ...convertedTests];
+            }
+            // ------------------------------------------------
+
             const groupedBookmarks: BookmarkedQuestions = bookmarks.reduce(
                 (acc, bookmark) => {
                     const { subject, question_id } = bookmark;
@@ -178,7 +224,7 @@ export default function UPSCBookmarksPage() {
             );
             setBookmarkedQuestions(groupedBookmarks);
         }
-    }, [bookmarks, practiceTests, chapterwiseQuizzes]);
+    }, [bookmarks, practiceTests, chapterwiseQuizzes, monthlyMcqs, dpqQuizzes, ncertQuizzes]);
 
     const handleExportPDF = async (subject: string) => {
         setIsExporting(subject);
@@ -221,7 +267,7 @@ export default function UPSCBookmarksPage() {
         return <Redirect to="/login" />;
     }
 
-    if (isLoadingBookmarks || (isLoadingPracticeTests && isLoadingChapterwise)) {
+    if (isLoadingBookmarks || (isLoadingPracticeTests && isLoadingChapterwise && isLoadingMonthly && isLoadingDpq && isLoadingNcert)) {
         return (
             <div className="min-h-screen bg-background">
                 <AppHeader />
