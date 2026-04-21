@@ -18,47 +18,47 @@ class ChapterPDFExportView(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
+        questions_payload = request.data.get('questions')
+        subject_payload = request.data.get('subject')
         chapter_id = request.data.get('chapter_id')
-        if not chapter_id:
-            return Response({'error': 'Chapter ID is required'}, status=status.HTTP_400_BAD_REQUEST)
 
-        # Frontend generates ID as: cw_{index}_{safeTitle}
-        # We need to load quiz.json and match this ID logic
-        import json
-        from django.conf import settings
-        from pathlib import Path
-
-        file_path = Path(settings.BASE_DIR) / "data" / "quiz.json"
-        
         selected_chapter = None
         selected_subject = None
-        
-        if file_path.exists():
-            try:
-                with open(file_path, 'r') as f:
-                    chapters = json.load(f)
-                    
-                    for idx, chapter in enumerate(chapters):
-                        title = chapter.get('title', f"Chapter {idx + 1}")
-                        safe_title = re.sub(r'[^a-zA-Z0-9]', '', title)
-                        # Match the ID generation logic from frontend
-                        generated_id = f"cw_{idx}_{safe_title}"
-                        
-                        if generated_id == chapter_id:
-                            selected_chapter = chapter
-                            selected_subject = title
-                            break
-                            
-                        # Fallback: Also check if strict index match works (if ID format changes)
-                        # or if generated_id is just index based on legacy
-                        if str(chapter_id) == str(idx):  # simple index match
-                             selected_chapter = chapter
-                             selected_subject = title
-                             break
-            except Exception as e:
-                print(f"Error reading quiz.json: {e}")
+
+        if questions_payload and subject_payload:
+            selected_chapter = {'questions': questions_payload}
+            selected_subject = subject_payload
+        elif not chapter_id:
+            return Response({'error': 'Chapter ID or questions payload is required'}, status=status.HTTP_400_BAD_REQUEST)
 
         if not selected_chapter:
+            # Frontend generates ID as: cw_{index}_{safeTitle}
+            # We need to load quiz.json and match this ID logic
+            import json
+            from django.conf import settings
+            from pathlib import Path
+
+            file_path = Path(settings.BASE_DIR) / "data" / "quiz.json"
+            
+            if file_path.exists():
+                try:
+                    with open(file_path, 'r') as f:
+                        chapters = json.load(f)
+                        
+                        for idx, chapter in enumerate(chapters):
+                            title = chapter.get('title', f"Chapter {idx + 1}")
+                            safe_title = re.sub(r'[^a-zA-Z0-9]', '', title)
+                            # Match the ID generation logic from frontend
+                            generated_id = f"cw_{idx}_{safe_title}"
+                            
+                            if generated_id == chapter_id or str(chapter_id) == str(idx):
+                                selected_chapter = chapter
+                                selected_subject = title
+                                break
+                except Exception as e:
+                    print(f"Error reading quiz.json: {e}")
+
+        if not selected_chapter and chapter_id:
              # Try storage fallback just in case
              practice_tests = storage.get_practice_tests()
              for test in practice_tests:
@@ -172,7 +172,8 @@ class ChapterPDFExportView(APIView):
                            .replace('%', '\\%')
                 part = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', part)
                 part = re.sub(r'\*(.*?)\*', r'\\textit{\1}', part)
-                part = part.replace('\n', ' \\\\ \n')
+                part = re.sub(r'\n{2,}', r' \\par ', part)
+                part = part.replace('\n', ' ')
                 processed_parts.append(part)
         return ''.join(processed_parts)
 
@@ -210,9 +211,12 @@ class ChapterPDFExportView(APIView):
             passage = q.get('passage_text')
             if passage:
                 passage_text = self._process_text_with_images(passage, temp_dir)
-                item_content += f'\\textbf{{Passage:}} {passage_text} \\\\ \\vspace{{0.2cm}}\n'
+                item_content += f'\\textbf{{Passage:}} {passage_text} \\par \\vspace{{0.2cm}}\n'
             
-            q_text = self._process_text_with_images(q.get('question', '') or q.get('question_text', ''), temp_dir)
+            raw_q_text = q.get('question', '') or q.get('question_text', '')
+            if isinstance(raw_q_text, str):
+                raw_q_text = re.sub(r'^(?:Q\.?\s*\d+|\d+)\.\s*', '', raw_q_text.strip(), flags=re.IGNORECASE)
+            q_text = self._process_text_with_images(raw_q_text, temp_dir)
             item_content += f"{{\\bfseries {q_text}}}"
             
             image_url_raw = q.get('image_url')
@@ -222,7 +226,7 @@ class ChapterPDFExportView(APIView):
                     filename = self._download_image(url, temp_dir)
                     if filename:
                         image_latex = f'\\begin{{figure}}[H] \\centering \\includegraphics[width=0.8\\linewidth]{{{filename}}} \\caption{{Question Image}} \\end{{figure}}'
-                        item_content += f" \\\\ {image_latex}"
+                        item_content += f" \\par {image_latex}"
 
             content.append(f'  \\item {item_content}')
             content.append(r'  \begin{enumerate}[label=(\Alph*)]')
@@ -246,7 +250,7 @@ class ChapterPDFExportView(APIView):
             solution = q.get('solution_text') or q.get('explanation') or q.get('rationale')
             if solution:
                  sol_text = self._process_text_with_images(solution, temp_dir)
-                 solutions_list.append(f'\\textbf{{Q.{i+1}:}} {sol_text} \\\\ \\vspace{{0.5cm}}')
+                 solutions_list.append(f'\\textbf{{Q.{i+1}:}} {sol_text} \\par \\vspace{{0.5cm}}')
             
             content.append(r'  \vspace{0.5cm}')
 
@@ -261,7 +265,7 @@ class ChapterPDFExportView(APIView):
         content.append(r'\endhead')
         
         for i, q in enumerate(questions):
-            answer = q.get('correctAnswer') or q.get('correct_option_data') or ''
+            answer = q.get('correctAnswer') or q.get('correct_option_data') or q.get('correct_answer') or ''
             options = q.get('options', [])
             if options and isinstance(options[0], str):
                  options = [{"text": o} for o in options]
@@ -269,7 +273,7 @@ class ChapterPDFExportView(APIView):
             answer_label = "?"
             found_by_flag = False
             for idx, opt in enumerate(options):
-                if isinstance(opt, dict) and opt.get('isCorrect') is True:
+                if isinstance(opt, dict) and (opt.get('isCorrect') is True or opt.get('is_correct') is True):
                     answer_label = chr(65 + idx)
                     found_by_flag = True
                     break
@@ -279,6 +283,8 @@ class ChapterPDFExportView(APIView):
                     idx = int(answer) - 1
                     if 0 <= idx < 26:
                         answer_label = chr(65 + idx)
+                elif len(str(answer)) == 1 and str(answer).isalpha():
+                    answer_label = str(answer).upper()
                 else:
                      for idx, opt in enumerate(options):
                         opt_val = opt.get('option_text') or opt.get('text') or ''
@@ -317,6 +323,15 @@ class ChapterPDFExportView(APIView):
         
         pdf_file = os.path.join(temp_dir, 'document.pdf')
         if not os.path.exists(pdf_file):
-            raise Exception("PDF file was not generated")
+            out = process.stdout.decode('utf-8', errors='ignore')
+            lines = out.split('\n')
+            err_msg = ""
+            for i, line in enumerate(lines):
+                if line.startswith('! '):
+                    err_msg = "\n".join(lines[max(0, i-5):i+15])
+                    break
+            if not err_msg:
+                err_msg = out[-1000:] # fallback to last 1000 chars
+            raise Exception(f"PDF file was not generated.\nLaTeX Transcript:\n{err_msg}")
         
         return pdf_file

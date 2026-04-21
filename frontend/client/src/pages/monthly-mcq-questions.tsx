@@ -39,9 +39,9 @@ interface StoredTestResult {
     answers: UserAnswer[];
 }
 
-const getRevisionKey = (testId: string) => `revision_${testId}`;
+const getRevisionKey = (testId: string) => `monthly_mcq_revision_${testId}`;
 
-const DailyPracticeQuestionsPage: React.FC = () => {
+const MonthlyMcqQuestionsPage: React.FC = () => {
     const [, setLocation] = useLocation();
 
     // State for multiple quizzes
@@ -94,7 +94,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
     const convertToPracticeTest = (data: QuizData, index: number): PracticeTest => {
         // Generating stable ID based on title
         const safeTitle = data.title ? data.title.replace(/[^a-zA-Z0-9]/g, '') : `Quiz${index}`;
-        const testId = `cw_${index}_${safeTitle}`;
+        const testId = `monthly_mcq_${index}_${safeTitle}`;
 
         const questions: any[] = data.questions.map((q: any, idx) => {
             const correctOptionIndex = q.answerOptions.findIndex((o: any) => o.isCorrect);
@@ -143,7 +143,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
     const fetchQuizzes = async () => {
         try {
             setLoading(true);
-            const response = await fetch('/data/dpq_questions.json');
+            const response = await fetch('/data/monthly_mcq_questions.json');
             if (!response.ok) throw new Error('Failed to fetch quizzes');
             const data: QuizData[] = await response.json();
 
@@ -199,7 +199,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
         setRevisionMode(false);
         setLatestResult(null);
 
-        const stored = localStorage.getItem(`upsc_result_${testId}`);
+        const stored = localStorage.getItem(`monthly_mcq_result_${testId}`);
         if (stored) {
             setLatestResult(JSON.parse(stored));
         }
@@ -246,7 +246,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
                 answers
             };
 
-            localStorage.setItem(`upsc_result_${activeTest.id}`, JSON.stringify(result));
+            localStorage.setItem(`monthly_mcq_result_${activeTest.id}`, JSON.stringify(result));
             setLatestResult(result);
 
             const revKey = getRevisionKey(activeTest.id);
@@ -280,7 +280,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
                 body: JSON.stringify({ 
                     chapter_id: activeTest.id,
                     questions: activeTest.questions,
-                    subject: activeTest.title
+                    subject: activeTest.title 
                 })
             });
             if (res.ok) {
@@ -302,6 +302,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
     };
 
     const [exportingSubject, setExportingSubject] = useState<string | null>(null);
+
     const handleExportSubjectPDF = async (subject: string, tests: PracticeTest[]) => {
         setExportingSubject(subject);
         try {
@@ -317,18 +318,17 @@ const DailyPracticeQuestionsPage: React.FC = () => {
                     'Authorization': `Token ${token}`
                 },
                 body: JSON.stringify({ 
-                    chapter_id: `export_${subject.replace(/[^a-zA-Z0-9]/g, '')}`,
+                    chapter_id: `export_${subject.replace(/[^a-zA-Z0-9]/g, '')}_${new Date().getTime()}`,
                     questions: allQuestions,
-                    subject: `Daily Practice - ${subject}` 
+                    subject: `Monthly MCQs - ${subject}` 
                 })
             });
-            
             if (res.ok) {
                 const blob = await res.blob();
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = `Daily_Practice_${subject}.pdf`;
+                a.download = `Monthly_MCQs_${subject}.pdf`;
                 a.click();
             } else {
                 throw new Error("Export failed");
@@ -400,9 +400,9 @@ const DailyPracticeQuestionsPage: React.FC = () => {
             <main className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-8 max-w-5xl mx-auto">
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight mb-2">Daily Practice Questions</h1>
+                        <h1 className="text-3xl font-bold tracking-tight mb-2">Monthly MCQ Questions</h1>
                         <p className="text-xl text-muted-foreground">
-                            Master your UPSC preparation with our Daily Practice Questions.
+                            Master your UPSC preparation with our Monthly MCQ Questions.
                         </p>
                     </div>
 
@@ -534,7 +534,7 @@ const DailyPracticeQuestionsPage: React.FC = () => {
                                                         <BookOpen className="h-5 w-5 text-primary" />
                                                         Overview
                                                     </CardTitle>
-                                                    <CardDescription>Comprehensive Daily Practice</CardDescription>
+                                                    <CardDescription>Comprehensive Monthly Practice</CardDescription>
                                                 </div>
                                                 <Badge className="bg-primary text-primary-foreground">PREMIUM</Badge>
                                             </div>
@@ -589,12 +589,21 @@ const DailyPracticeQuestionsPage: React.FC = () => {
                                                 <Button
                                                     size="lg"
                                                     variant="outline"
-                                                    className="w-full sm:w-auto gap-2"
+                                                    className="w-full sm:w-auto"
                                                     onClick={handleExportPDF}
                                                     disabled={isExporting}
                                                 >
-                                                    {isExporting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
-                                                    Export PDF
+                                                    {isExporting ? (
+                                                        <>
+                                                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                                            Generating PDF...
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <Download className="mr-2 h-4 w-4" />
+                                                            Export PDF
+                                                        </>
+                                                    )}
                                                 </Button>
 
                                                 <Button
@@ -655,4 +664,4 @@ const DailyPracticeQuestionsPage: React.FC = () => {
     );
 };
 
-export default DailyPracticeQuestionsPage;
+export default MonthlyMcqQuestionsPage;

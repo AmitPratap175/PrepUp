@@ -102,6 +102,21 @@ export default function UPSCPage() {
                                     </CardContent>
                                 </Card>
 
+                                <Card className="bg-indigo-500/5 border-indigo-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <List className="h-5 w-5 text-indigo-500" />
+                                            Monthly MCQs
+                                        </CardTitle>
+                                        <CardDescription>Comprehensive monthly current affairs tests.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/monthly-mcq-questions">
+                                            <Button className="w-full" variant="outline">View Topics</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
                                 <Card className="bg-blue-500/5 border-blue-500/20">
                                     <CardHeader>
                                         <CardTitle className="flex items-center gap-2">

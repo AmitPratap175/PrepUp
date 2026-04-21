@@ -311,7 +311,11 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                     'Content-Type': 'application/json',
                     'Authorization': `Token ${token}`
                 },
-                body: JSON.stringify({ chapter_id: activeTest.id })
+                body: JSON.stringify({ 
+                    chapter_id: activeTest.id,
+                    questions: activeTest.questions,
+                    subject: activeTest.title 
+               })
             });
             if (res.ok) {
                 const blob = await res.blob();
@@ -328,6 +332,46 @@ const NcertTopicwiseQuizPage: React.FC = () => {
             setError("Failed to export PDF");
         } finally {
             setIsExporting(false);
+        }
+    };
+
+    const [exportingSubject, setExportingSubject] = useState<string | null>(null);
+    const handleExportSubjectPDF = async (subject: string, tests: PracticeTest[]) => {
+        setExportingSubject(subject);
+        try {
+            const token = localStorage.getItem("token");
+            if (!token) throw new Error("Not authenticated");
+
+            const allQuestions = tests.flatMap(t => t.questions);
+
+            const res = await fetch('/api/chapterwise-quiz/export-pdf/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Token ${token}`
+                },
+                body: JSON.stringify({ 
+                    chapter_id: `export_${subject.replace(/[^a-zA-Z0-9]/g, '')}`,
+                    questions: allQuestions,
+                    subject: `NCERT Topicwise - ${subject}` 
+                })
+            });
+            
+            if (res.ok) {
+                const blob = await res.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `NCERT_Topicwise_${subject}.pdf`;
+                a.click();
+            } else {
+                throw new Error("Export failed");
+            }
+        } catch (e) {
+            console.error(e);
+            setError(`Failed to export PDF for ${subject}`);
+        } finally {
+            setExportingSubject(null);
         }
     };
 
@@ -428,6 +472,24 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                             {subject}
                                         </Badge>
                                         <span className="text-muted-foreground text-sm font-medium">({tests.length} chapters)</span>
+                                        <div className="ml-auto">
+                                            <Button 
+                                                variant="outline" 
+                                                size="sm"
+                                                className="gap-2"
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    handleExportSubjectPDF(subject, tests);
+                                                }}
+                                                disabled={exportingSubject === subject}
+                                            >
+                                                {exportingSubject === subject ? (
+                                                    <><Loader2 className="h-4 w-4 animate-spin" /> Exporting...</>
+                                                ) : (
+                                                    <><Download className="h-4 w-4" /> Download All</>
+                                                )}
+                                            </Button>
+                                        </div>
                                     </div>
 
                                     {expandedSections[subject] && (
@@ -567,7 +629,16 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                                                     {latestResult ? "Retake Quiz" : "Start Quiz Now"}
                                                 </Button>
 
-
+                                                <Button
+                                                    size="lg"
+                                                    variant="outline"
+                                                    className="w-full sm:w-auto gap-2"
+                                                    onClick={handleExportPDF}
+                                                    disabled={isExporting}
+                                                >
+                                                    {isExporting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
+                                                    Export PDF
+                                                </Button>
 
                                                 <Button
                                                     size="lg"

@@ -76,6 +76,7 @@ const navigation = [
       { title: "Chapterwise Quiz", href: "/chapterwise-quiz" },
       { title: "NCERT Topicwise Quiz", href: "/ncert-topicwise-quiz" },
       { title: "Daily Practice Questions", href: "/upsc/daily-practice-questions" },
+      { title: "Monthly MCQ Questions", href: "/upsc/monthly-mcq-questions" },
       { title: "PIB Releases", href: "/upsc/pib" },
       { title: "Mains Answer", href: "/mains-answer" },
     ]
