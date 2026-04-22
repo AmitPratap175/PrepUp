@@ -66,6 +66,7 @@ import PIBListPage from "@/pages/pib/list";
 import PIBDetailPage from "@/pages/pib/detail";
 import PIBQuizPage from "@/pages/pib/quiz";
 import MainsAnswerPage from "@/pages/mains-answer";
+import MapMasterPage from "@/pages/map-master";
 
 /**
  * Defines the main routing configuration for the application.
@@ -142,6 +143,7 @@ function Router() {
       <Route path="/ncert-topicwise-quiz" component={NcertTopicwiseQuizPage} />
       <Route path="/upsc/daily-practice-questions" component={DailyPracticeQuestionsPage} />
       <Route path="/upsc/monthly-mcq-questions" component={MonthlyMcqQuestionsPage} />
+      <Route path="/upsc/map-master" component={MapMasterPage} />
       <Route component={NotFound} />
     </Switch>
   );

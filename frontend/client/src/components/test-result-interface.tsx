@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Latex from "react-latex-next";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import type { PracticeTest, Question } from "@shared/schema";
-import { PanelLeftClose, PanelRightClose } from "lucide-react";
+import { PanelLeftClose, PanelRightClose, Bookmark } from "lucide-react";
 
 interface ResultQuestionStatus {
   isCorrect: boolean | null;
@@ -39,6 +39,59 @@ export default function TestResultInterface({
 }: TestResultInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
+
+  // Fetch bookmarks on load
+  useEffect(() => {
+      const fetchBookmarks = async () => {
+          if (!test.subject) return;
+          try {
+              const res = await fetch(`/api/auth/bookmarks/?subject=${test.subject}`, {
+                  headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+              });
+              if (res.ok) {
+                  const data = await res.json();
+                  const bookmarkedIds = new Set<string>(data.map((b: any) => String(b.question_id)));
+                  setBookmarkedQuestions(bookmarkedIds);
+              }
+          } catch (err) {
+              console.error("Failed to fetch bookmarks", err);
+          }
+      };
+      fetchBookmarks();
+  }, [test.subject]);
+
+  const handleBookmarkToggle = async (qid: string) => {
+      if (!qid) return;
+      const isBookmarked = bookmarkedQuestions.has(qid);
+      
+      setBookmarkedQuestions(prev => {
+          const next = new Set(prev);
+          if (isBookmarked) next.delete(qid);
+          else next.add(qid);
+          return next;
+      });
+
+      try {
+          if (isBookmarked) {
+              await fetch(`/api/auth/bookmarks/delete/${qid}/?subject=${test.subject}`, {
+                  method: 'DELETE',
+                  headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+              });
+          } else {
+              await fetch('/api/auth/bookmarks/create/', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'Authorization': `Token ${localStorage.getItem('token')}`
+                  },
+                  body: JSON.stringify({ subject: test.subject, question_id: qid })
+              });
+          }
+      } catch (error) {
+          console.error("Failed to toggle bookmark", error);
+      }
+  };
 
   const questions = test.questions as (Question & { image_url?: string })[];
   const currentQuestion = questions[currentQuestionIndex];
@@ -134,8 +187,9 @@ export default function TestResultInterface({
           <div className="w-64 bg-muted/30 p-4 sm:p-6 border-b lg:border-b-0 lg:border-r border-border overflow-y-auto">
             <h4 className="font-semibold text-foreground mb-4">Question Palette</h4>
             <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-5 gap-2 mb-6">
-              {questions.map((_, index) => {
+              {questions.map((question, index) => {
                 const status = getQuestionStatus(index);
+                const isBookmarked = bookmarkedQuestions.has(question?.qid);
                 let bgClass = 'bg-gray-400 text-white'; // Not Answered
                 if (status.isCurrent) {
                   bgClass = 'bg-primary text-primary-foreground';
@@ -149,8 +203,9 @@ export default function TestResultInterface({
                   <button
                     key={index}
                     onClick={() => navigateToQuestion(index)}
-                    className={`w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${bgClass}`}
+                    className={`relative w-8 h-8 rounded text-xs font-semibold transition-colors hover-elevate ${bgClass}`}
                   >
+                    {isBookmarked && <Bookmark className="absolute top-0 right-0 h-3 w-3 text-yellow-400" />}
                     {index + 1}
                   </button>
                 );
@@ -167,9 +222,14 @@ export default function TestResultInterface({
 
         <div className="flex-1 flex flex-col p-4 sm:p-6 lg:p-8 overflow-hidden">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-sm font-medium text-muted-foreground">
-              Question {currentQuestionIndex + 1} of {test.totalQuestions}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-muted-foreground">
+                Question {currentQuestionIndex + 1} of {test.totalQuestions}
+              </span>
+              <Button variant="ghost" size="icon" onClick={() => handleBookmarkToggle(currentQuestion?.qid)}>
+                <Bookmark className={`h-5 w-5 ${bookmarkedQuestions.has(currentQuestion?.qid) ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'}`} />
+              </Button>
+            </div>
           </div>
 
           <div className="flex-1 flex flex-col xl:flex-row overflow-hidden gap-4">

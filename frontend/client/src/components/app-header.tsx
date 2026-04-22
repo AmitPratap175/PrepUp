@@ -79,6 +79,7 @@ const navigation = [
       { title: "Monthly MCQ Questions", href: "/upsc/monthly-mcq-questions" },
       { title: "PIB Releases", href: "/upsc/pib" },
       { title: "Mains Answer", href: "/mains-answer" },
+      { title: "Map Master", href: "/upsc/map-master" },
     ]
   },
   { title: "Leaderboard", href: "/leaderboard" },
