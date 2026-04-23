@@ -58,6 +58,7 @@ import DailyPracticeQuestionsPage from "@/pages/daily-practice-questions";
 import MonthlyMcqQuestionsPage from "@/pages/monthly-mcq-questions";
 import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
 import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
+import OdishaTopicwisePracticePage from "@/pages/odisha-topicwise-practice";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 import UPSCYearWisePage from "@/pages/upsc/pyq-years";
@@ -144,6 +145,7 @@ function Router() {
       <Route path="/upsc/daily-practice-questions" component={DailyPracticeQuestionsPage} />
       <Route path="/upsc/monthly-mcq-questions" component={MonthlyMcqQuestionsPage} />
       <Route path="/upsc/map-master" component={MapMasterPage} />
+      <Route path="/odisha/practice" component={OdishaTopicwisePracticePage} />
       <Route component={NotFound} />
     </Switch>
   );
