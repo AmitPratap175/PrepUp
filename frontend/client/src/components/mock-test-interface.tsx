@@ -17,10 +17,10 @@ import { ConfirmationDialog } from "./ui/ConfirmationDialog";
 interface MockTestInterfaceProps {
   test: PracticeTest;
   onSubmit: (answers: UserAnswer[], timeSpent: number, startTime?: number) => void;
+  onExit?: () => void;
 }
 
-const SECTIONS = ["varc", "dilr", "quants"];
-const SECTION_TIME = 40 * 60; // 40 minutes in seconds
+const DEFAULT_SECTION_TIME = 40 * 60; // 40 minutes in seconds
 
 /**
  * Renders a full mock test interface, divided into timed sections.
@@ -33,15 +33,36 @@ const SECTION_TIME = 40 * 60; // 40 minutes in seconds
  * @param {MockTestInterfaceProps} props - The props for the component.
  * @returns {JSX.Element} The rendered mock test interface.
  */
-export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceProps) {
+export default function MockTestInterface({ test, onSubmit, onExit }: MockTestInterfaceProps) {
   const [isPaletteVisible, setIsPaletteVisible] = useState(true);
   const [isCalculatorVisible, setIsCalculatorVisible] = useState(false);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+
+  const sections = useMemo(() => {
+    const examType = test.examType?.toLowerCase();
+    if (examType === 'cat') return ["varc", "dilr", "quants"];
+    
+    const foundSections = new Set<string>();
+    (test.questions as any[]).forEach(q => {
+      const s = q.type || q.section;
+      if (s) foundSections.add(s);
+    });
+    
+    return foundSections.size > 0 ? Array.from(foundSections) : ["General"];
+  }, [test.questions, test.examType]);
+
+  const sectionTime = useMemo(() => {
+    if (test.duration) {
+        return (test.duration * 60) / sections.length;
+    }
+    return DEFAULT_SECTION_TIME;
+  }, [test.duration, sections]);
+
   const [testState, setTestState] = useState<TestState>({
     currentQuestionIndex: 0,
     answers: {},
     markedForReview: new Set(),
-    timeRemaining: SECTION_TIME,
+    timeRemaining: sectionTime,
     isCompleted: false,
     startTime: undefined,
   });
@@ -53,10 +74,14 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
   });
 
   const questions = useMemo(() => {
-    return (test.questions as (Question & { type: string })[]).filter(
-      (q) => q.type === SECTIONS[currentSectionIndex]
+    const qList = test.questions as (Question & { type?: string; section?: string })[];
+    if (sections.length === 1 && sections[0] === "General") {
+        return qList;
+    }
+    return qList.filter(
+      (q) => (q.type === sections[currentSectionIndex] || q.section === sections[currentSectionIndex])
     );
-  }, [test.questions, currentSectionIndex]);
+  }, [test.questions, currentSectionIndex, sections]);
 
   const currentQuestion = questions[testState.currentQuestionIndex];
   const hasPassage = currentQuestion?.passage_text && currentQuestion?.passage_text !== "For the following questions answer them individually";
@@ -67,12 +92,12 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
 
   useEffect(() => {
     if (testState.timeRemaining <= 0) {
-      if (currentSectionIndex < SECTIONS.length - 1) {
+      if (currentSectionIndex < sections.length - 1) {
         setCurrentSectionIndex(currentSectionIndex + 1);
         setTestState((prev) => ({
           ...prev,
           currentQuestionIndex: 0,
-          timeRemaining: SECTION_TIME,
+          timeRemaining: sectionTime,
         }));
       } else {
         handleSubmit();
@@ -99,6 +124,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
       visited: questionIndex <= testState.currentQuestionIndex,
       markedForReview: testState.markedForReview.has(questionId),
       isCurrent: questionIndex === testState.currentQuestionIndex,
+      isLastAttempted: false, // Defaulting for SSC/general quizzes
     };
   };
 
@@ -158,12 +184,12 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
         startTime: new Date(resultData.startTime).toISOString(),
         endTime: new Date().toISOString(),
         score: resultData.score,
-        totalQuestions: test.questions.length,
+        totalQuestions: (test.questions as Question[]).length,
         correctAnswers: resultData.correctAnswers,
         answers: resultData.answers,
         isCompleted: true,
         subject: test.subject,
-        maxScore: test.questions.length,
+        maxScore: (test.questions as Question[]).length,
       };
 
       try {
@@ -207,12 +233,12 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
 
   const handleNextSectionClick = () => {
     const onConfirm = () => {
-      if (currentSectionIndex < SECTIONS.length - 1) {
+      if (currentSectionIndex < sections.length - 1) {
         setCurrentSectionIndex(currentSectionIndex + 1);
         setTestState((prev) => ({
           ...prev,
           currentQuestionIndex: 0,
-          timeRemaining: SECTION_TIME,
+          timeRemaining: sectionTime,
         }));
       } else {
         handleSubmit();
@@ -221,7 +247,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
 
     setConfirmDialogProps({
       title: "Are you sure?",
-      description: currentSectionIndex < SECTIONS.length - 1
+      description: currentSectionIndex < sections.length - 1
         ? "You will not be able to return to this section."
         : "This will submit the test. Are you sure you want to continue?",
       onConfirm,
@@ -253,7 +279,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
         <div className="flex flex-row items-center justify-between gap-2 sm:gap-4">
           <div className="flex-1 min-w-0">
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground truncate">{test.title}</h3>
-            <p className="text-xs sm:text-sm text-muted-foreground truncate">{SECTIONS[currentSectionIndex].toUpperCase()} Section</p>
+            <p className="text-xs sm:text-sm text-muted-foreground truncate">{sections[currentSectionIndex].toUpperCase()} Section</p>
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
 
@@ -278,7 +304,7 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
               onClick={handleNextSectionClick}
               data-testid="button-next-section"
             >
-              {currentSectionIndex < SECTIONS.length - 1 ? "Next Section" : "Submit Test"}
+              {currentSectionIndex < sections.length - 1 ? "Next Section" : "Submit Test"}
             </Button>
             <Button
               variant="destructive"
@@ -392,8 +418,8 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
               </div>
 
               <div className="space-y-3">
-                {currentQuestion?.options.length > 0 ? (
-                  currentQuestion?.options.map((option) => {
+                {currentQuestion && (currentQuestion.options as any[]).length > 0 ? (
+                  (currentQuestion.options as any[]).map((option) => {
                     const isSelected = testState.answers[currentQuestion?.qid] === option.data_option;
                     return (
                       <label
@@ -415,9 +441,19 @@ export default function MockTestInterface({ test, onSubmit }: MockTestInterfaceP
                           <div className={`w-2.5 h-2.5 bg-primary rounded-full ${isSelected ? 'opacity-100' : 'opacity-0'}`}></div>
                         </div>
                         <span className="font-medium text-foreground">{option.label}.</span>
-                        <span className="text-foreground preserve-whitespace">
-                          <Latex>{option.option_text}</Latex>
-                        </span>
+                        <div className="flex flex-col gap-2 flex-grow">
+                          <span className="text-foreground preserve-whitespace">
+                            <Latex>{option.option_text}</Latex>
+                          </span>
+                          {option.option_image_url && (
+                            <img
+                              src={option.option_image_url}
+                              alt={`Option ${option.label}`}
+                              className="max-h-48 object-contain rounded-md border border-border bg-white mt-1"
+                              loading="lazy"
+                            />
+                          )}
+                        </div>
                       </label>
                     );
                   })

@@ -28,8 +28,8 @@ STORAGE_PATH  = "/home/dspratap/.notebooklm/storage_state.json"
 PIB_ALL_REL   = "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1"
 
 # --- Run Configuration ---
-START_DATE          = datetime(2026, 4, 18)
-END_DATE            = datetime(2026, 4, 24)
+START_DATE          = datetime(2026, 4, 24)
+END_DATE            = datetime(2026, 4, 25)
 LIMIT_PER_DAY       = 100
 SLEEP_BETWEEN_ITEMS = 10
 SLEEP_BETWEEN_DATES = 5

@@ -142,6 +142,7 @@ export interface QuestionOption {
   label: string;
   option_text: string;
   is_correct: boolean;
+  option_image_url?: string;
 }
 
 // Question interface matching JSON format

@@ -79,7 +79,17 @@ const navigation = [
       { title: "Monthly MCQ Questions", href: "/upsc/monthly-mcq-questions" },
       { title: "PIB Releases", href: "/upsc/pib" },
       { title: "Mains Answer", href: "/mains-answer" },
+      { title: "151 Essays", href: "/upsc/essays" },
       { title: "Map Master", href: "/upsc/map-master" },
+    ]
+  },
+  {
+    title: "SSC",
+    href: "#",
+    items: [
+      { title: "SSC Mock Tests", href: "/ssc" },
+      { title: "Year-wise PYQs", href: "/ssc/years" },
+      { title: "Bookmarks", href: "/ssc/bookmarks" },
     ]
   },
   { title: "Leaderboard", href: "/leaderboard" },

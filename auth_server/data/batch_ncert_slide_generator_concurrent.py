@@ -3,6 +3,8 @@ import asyncio
 import re
 import time
 import json
+import socket
+from functools import wraps
 from pathlib import Path
 
 # Third-party imports
@@ -41,6 +43,25 @@ def parse_class_and_subject(pdf_path, root_dir):
     except ValueError:
         return "Unknown Class", "General"
 
+def with_retry(retries=5, backoff=2):
+    def decorator(func):
+        @wraps(func)
+        async def wrapper(*args, **kwargs):
+            last_err = None
+            for i in range(retries):
+                try:
+                    return await func(*args, **kwargs)
+                except (socket.gaierror, asyncio.TimeoutError, Exception) as e:
+                    last_err = e
+                    err_msg = str(e)
+                    print(f"      [Retry {i+1}/{retries}] Error calling {func.__name__}: {err_msg}")
+                    if i < retries - 1:
+                        sleep_time = backoff ** i
+                        await asyncio.sleep(sleep_time)
+            raise last_err
+        return wrapper
+    return decorator
+
 async def process_pdf_concurrently(client, nb_id, pdf, source_id, class_name, subject_name):
     # Determine output filename
     pdf_title = pdf.stem.replace("_", " ").title()
@@ -60,18 +81,36 @@ async def process_pdf_concurrently(client, nb_id, pdf, source_id, class_name, su
     print(f"  - [⚙️ generating] {pdf.name}")
     try:
         # Generate slides for this specific source
-        status = await client.artifacts.generate_slide_deck(
-            nb_id,
-            source_ids=[source_id],
-            slide_format=SlideDeckFormat.DETAILED_DECK,
-            slide_length=SlideDeckLength.DEFAULT
-        )
+        @with_retry()
+        async def gen_deck():
+            return await client.artifacts.generate_slide_deck(
+                nb_id,
+                source_ids=[source_id],
+                slide_format=SlideDeckFormat.DETAILED_DECK,
+                slide_length=SlideDeckLength.DEFAULT
+            )
+        status = await gen_deck()
         
-        # Wait for completion
-        await client.artifacts.wait_for_completion(nb_id, status.task_id, timeout=12000)
+        # Wait for completion with logging
+        start_wait = time.time()
+        while True:
+            try:
+                await client.artifacts.wait_for_completion(nb_id, status.task_id, timeout=60)
+                break
+            except asyncio.TimeoutError:
+                elapsed = int(time.time() - start_wait)
+                print(f"    ... {pdf.name} still generating ({elapsed}s elapsed)")
+                if elapsed > 1200:
+                    raise Exception(f"Generation for {pdf.name} timed out")
+            except Exception as e:
+                print(f"    ... {pdf.name} wait error: {e}. Retrying check.")
+                await asyncio.sleep(10)
 
         # Download Slide Deck
-        await client.artifacts.download_slide_deck(nb_id, str(output_path), artifact_id=status.task_id)
+        @with_retry()
+        async def download_deck():
+            return await client.artifacts.download_slide_deck(nb_id, str(output_path), artifact_id=status.task_id)
+        await download_deck()
         
         print(f"  - ✅ [💾 Saved] slides to {output_path}")
         return True, pdf.name
@@ -113,18 +152,27 @@ async def main():
     async with await NotebookLMClient.from_storage(STORAGE_PATH) as client:
         nb_title = f"NCERT Slide Gen Batch {int(time.time())}"
         print(f"Creating single notebook: {nb_title}")
-        nb = await client.notebooks.create(nb_title)
+        
+        @with_retry()
+        async def create_nb():
+            return await client.notebooks.create(nb_title)
+            
+        nb = await create_nb()
         
         try:
             print("Uploading documents concurrently...")
             # Limit concurrent uploads to prevent overwhelming the API / name resolution errors
-            sem_upload = asyncio.Semaphore(5)
+            sem_upload = asyncio.Semaphore(3)
             
             async def bound_upload(pdf):
                 async with sem_upload:
                     print(f"  - [Uploading] {pdf.name}...")
                     try:
-                        source = await client.sources.add_file(nb.id, pdf, wait=True, wait_timeout=600.0)
+                        @with_retry()
+                        async def add_src():
+                            return await client.sources.add_file(nb.id, pdf, wait=True, wait_timeout=600.0)
+                        
+                        source = await add_src()
                         class_name, subject = parse_class_and_subject(pdf, DATA_DIR)
                         print(f"  - [✅ Uploaded] {pdf.name}")
                         return (pdf, source.id, class_name, subject)

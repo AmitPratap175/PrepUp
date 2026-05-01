@@ -59,6 +59,11 @@ import MonthlyMcqQuestionsPage from "@/pages/monthly-mcq-questions";
 import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
 import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
 import OdishaTopicwisePracticePage from "@/pages/odisha-topicwise-practice";
+import SSCPage from "@/pages/ssc/index";
+import SSCQuizPage from "@/pages/ssc/quiz";
+import SSCResultPage from "@/pages/ssc/result";
+import SSCYearWisePage from "@/pages/ssc/pyq-years";
+import SSCBookmarksPage from "@/pages/ssc/bookmarks";
 import { useEffect } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 import UPSCYearWisePage from "@/pages/upsc/pyq-years";
@@ -68,6 +73,8 @@ import PIBDetailPage from "@/pages/pib/detail";
 import PIBQuizPage from "@/pages/pib/quiz";
 import MainsAnswerPage from "@/pages/mains-answer";
 import MapMasterPage from "@/pages/map-master";
+import EssaysListPage from "@/pages/upsc/essays-list";
+import EssayDailyReadPage from "@/pages/upsc/essay-daily-read";
 
 /**
  * Defines the main routing configuration for the application.
@@ -145,7 +152,16 @@ function Router() {
       <Route path="/upsc/daily-practice-questions" component={DailyPracticeQuestionsPage} />
       <Route path="/upsc/monthly-mcq-questions" component={MonthlyMcqQuestionsPage} />
       <Route path="/upsc/map-master" component={MapMasterPage} />
+      <Route path="/upsc/essays" component={EssaysListPage} />
+      <Route path="/upsc/essays/:id" component={EssayDailyReadPage} />
       <Route path="/odisha/practice" component={OdishaTopicwisePracticePage} />
+      
+      {/* SSC Routes */}
+      <Route path="/ssc" component={SSCPage} />
+      <Route path="/ssc/years" component={SSCYearWisePage} />
+      <Route path="/ssc/test/:id" component={SSCQuizPage} />
+      <Route path="/ssc/result/:id" component={SSCResultPage} />
+      <Route path="/ssc/bookmarks" component={SSCBookmarksPage} />
       <Route component={NotFound} />
     </Switch>
   );

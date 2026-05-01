@@ -3,6 +3,8 @@ import asyncio
 import re
 import time
 import json
+import socket
+from functools import wraps
 from pathlib import Path
 
 # Third-party imports
@@ -42,6 +44,26 @@ def parse_class_and_subject(pdf_path, root_dir):
     except ValueError:
         return "Unknown Class", "General"
 
+def with_retry(retries=5, backoff=2):
+    def decorator(func):
+        @wraps(func)
+        async def wrapper(*args, **kwargs):
+            last_err = None
+            for i in range(retries):
+                try:
+                    return await func(*args, **kwargs)
+                except (socket.gaierror, asyncio.TimeoutError, Exception) as e:
+                    last_err = e
+                    # Filter for connection/DNS related errors if not a generic Exception
+                    err_msg = str(e)
+                    print(f"      [Retry {i+1}/{retries}] Error calling {func.__name__}: {err_msg}")
+                    if i < retries - 1:
+                        sleep_time = backoff ** i
+                        await asyncio.sleep(sleep_time)
+            raise last_err
+        return wrapper
+    return decorator
+
 async def generate_slide_from_pdf(client, pdf_path, class_name, subject_name):
     print(f"  - Generating slide for {pdf_path.name}...")
     
@@ -62,25 +84,55 @@ async def generate_slide_from_pdf(client, pdf_path, class_name, subject_name):
 
     # Create notebook
     nb_title = f"NCERT Slide Gen: {pdf_path.stem}"
-    nb = await client.notebooks.create(nb_title)
+    
+    @with_retry()
+    async def create_nb():
+        return await client.notebooks.create(nb_title)
+        
+    nb = await create_nb()
 
     try:
         # Add source
         print("  - Uploading source...")
-        await client.sources.add_file(nb.id, pdf_path, wait=True, wait_timeout=600.0)
+        @with_retry()
+        async def add_src():
+            return await client.sources.add_file(nb.id, pdf_path, wait=True, wait_timeout=600.0)
+        await add_src()
 
         # Generate Slides
         print("  - Generating slides...")
-        status = await client.artifacts.generate_slide_deck(
-            nb.id,
-            slide_format=SlideDeckFormat.DETAILED_DECK,
-            slide_length=SlideDeckLength.DEFAULT
-        )
-        await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=12000)
+        @with_retry()
+        async def gen_deck():
+            return await client.artifacts.generate_slide_deck(
+                nb.id,
+                slide_format=SlideDeckFormat.DETAILED_DECK,
+                slide_length=SlideDeckLength.DEFAULT
+            )
+        status = await gen_deck()
+        
+        # Wait for completion with per-minute logging
+        print("  - Waiting for completion (can take several minutes)...")
+        start_wait = time.time()
+        while True:
+            try:
+                # wait_for_completion might handle its own wait, but let's check status
+                await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=60)
+                break
+            except asyncio.TimeoutError:
+                elapsed = int(time.time() - start_wait)
+                print(f"    ... still generating ({elapsed}s elapsed)")
+                if elapsed > 1200: # 20 minutes total timeout
+                    raise Exception("Slide generation timed out after 20 minutes")
+            except Exception as e:
+                print(f"    ... error waiting: {e}. Retrying status check...")
+                await asyncio.sleep(10)
 
         # Download Slide Deck
         print(f"  - Downloading slides to {output_path}...")
-        await client.artifacts.download_slide_deck(nb.id, str(output_path))
+        @with_retry()
+        async def download_deck():
+            return await client.artifacts.download_slide_deck(nb.id, str(output_path))
+        await download_deck()
         
         if output_path.exists():
             print(f"  - ✅ Slides saved to {output_path}")

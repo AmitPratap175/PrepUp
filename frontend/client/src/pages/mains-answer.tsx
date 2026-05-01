@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AppHeader } from "@/components/app-header";
 import ReactMarkdown from "react-markdown";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { getQueryFn, apiRequest } from "@/lib/queryClient";
 import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
@@ -58,12 +58,12 @@ export default function MainsAnswerPage() {
     const essayId = params?.essayId;
 
     const [selectedDomain, setSelectedDomain] = useState<string>("current_affairs");
-    const [activeTabRaw, setActiveTabRaw] = useState<"topics" | "questions" | "write" | "review" | "history" | "pib_questions">("pib_questions");
+    const [activeTabRaw, setActiveTabRaw] = useState<"topics" | "questions" | "write" | "review" | "history" | "pib_questions" | "151_essays">("pib_questions");
 
     const activeTab = activeTabRaw;
-    const setActiveTab = (tab: "topics" | "questions" | "write" | "review" | "history" | "pib_questions") => {
+    const setActiveTab = (tab: "topics" | "questions" | "write" | "review" | "history" | "pib_questions" | "151_essays") => {
         // Clear essay state when switching to independent list views
-        if (tab === "topics" || tab === "pib_questions" || tab === "history") {
+        if (tab === "topics" || tab === "pib_questions" || tab === "history" || tab === "151_essays") {
             setCurrentEssay(null);
             setSelectedTopic(null);
             setSelectedXATQuestion(null);
@@ -83,6 +83,7 @@ export default function MainsAnswerPage() {
     const { data: essays, isLoading: isLoadingEssays } = useEssays();
     const generateTopicsMutation = useGenerateEssayTopics();
     const createEssayMutation = useCreateEssay();
+    const queryClient = useQueryClient();
     const updateEssayMutation = useUpdateEssay();
     const submitEssayMutation = useSubmitEssay();
 
@@ -91,6 +92,14 @@ export default function MainsAnswerPage() {
         queryFn: getQueryFn({ on401: "throw" }),
     });
     const pibQuestions = pibQuestionsData?.questions;
+
+    const { data: essays151Data, isLoading: isLoading151 } = useQuery<{ id: string, number: number, title: string, content: string }[]>({
+        queryKey: ["151_essays_json"],
+        queryFn: async () => {
+            const res = await fetch("/data/151_essays.json");
+            return res.json();
+        }
+    });
 
     // Auto-load essay from URL
     useEffect(() => {
@@ -124,6 +133,26 @@ export default function MainsAnswerPage() {
         createEssayMutation.mutate({
             title: topic.title,
             topic_id: topic.id,
+            content: ""
+        }, {
+            onSuccess: (essay) => {
+                setCurrentEssay(essay);
+                setEditorContent("");
+                setActiveTab("write");
+                toast({ title: "Essay Started", description: "You can now start writing." });
+            },
+            onError: () => {
+                toast({ title: "Error", description: "Failed to start essay.", variant: "destructive" });
+            }
+        });
+    };
+
+    // Handle starting a 151 essay
+    const handleStart151Essay = (essayData: {id: string, title: string}) => {
+        setSelectedTopic(null);
+        setSelectedXATQuestion(null);
+        createEssayMutation.mutate({
+            title: essayData.title,
             content: ""
         }, {
             onSuccess: (essay) => {
@@ -258,6 +287,14 @@ export default function MainsAnswerPage() {
                         >
                             <BookOpen className="w-4 h-4 mr-2" />
                             PIB Questions
+                        </Button>
+                        <Button
+                            variant={activeTab === "151_essays" ? "default" : "ghost"}
+                            size="sm"
+                            onClick={() => setActiveTab("151_essays")}
+                        >
+                            <BookOpen className="w-4 h-4 mr-2" />
+                            151 Essays
                         </Button>
 
                         <Button
@@ -453,6 +490,7 @@ export default function MainsAnswerPage() {
                                                         });
                                                         if (res.ok) {
                                                             const data = await res.json();
+                                                            await queryClient.invalidateQueries({ queryKey: ["essays"] });
                                                             setLocation(`/mains-answer/${data.essay_id}`);
                                                         }
                                                     } catch (e) {
@@ -478,6 +516,7 @@ export default function MainsAnswerPage() {
                                                             });
                                                             if (res.ok) {
                                                                 const data = await res.json();
+                                                                await queryClient.invalidateQueries({ queryKey: ["essays"] });
                                                                 setLocation(`/mains-answer/${data.essay_id}`);
                                                             }
                                                         } catch (e) {
@@ -500,7 +539,51 @@ export default function MainsAnswerPage() {
                     </div>
                 )}
 
+                {/* 151 ESSAYS TAB */}
+                {activeTab === "151_essays" && (
+                    <div className="space-y-6">
+                        <div className="flex justify-between items-center">
+                            <div>
+                                <h2 className="text-2xl font-bold">151 Essays for UPSC</h2>
+                                <p className="text-muted-foreground">Practice writing essays from the "151 Essays" book.</p>
+                            </div>
+                        </div>
 
+                        {isLoading151 ? (
+                            <div className="flex justify-center py-12">
+                                <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                            </div>
+                        ) : essays151Data && essays151Data.length > 0 ? (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {essays151Data.map((essay) => (
+                                    <Card key={essay.id} className="flex flex-col">
+                                        <CardHeader>
+                                            <CardTitle className="text-lg leading-tight">Essay {essay.number}</CardTitle>
+                                            <CardDescription className="line-clamp-2">{essay.title}</CardDescription>
+                                        </CardHeader>
+                                        <CardFooter className="flex gap-2 mt-auto">
+                                            <Button className="w-full" onClick={() => handleStart151Essay(essay)}>
+                                                {essays?.some(e => e.title === essay.title) ? "Rewrite Answer" : "Start Writing"}
+                                            </Button>
+                                            {essays?.some(e => e.title === essay.title) && (
+                                                <Button variant="outline" onClick={() => {
+                                                    const latestEssay = essays.filter(e => e.title === essay.title).sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())[0];
+                                                    if (latestEssay) handleContinueEssay(latestEssay);
+                                                }}>
+                                                    View Latest
+                                                </Button>
+                                            )}
+                                        </CardFooter>
+                                    </Card>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="text-center py-12 text-muted-foreground">
+                                No 151 essays data found!
+                            </div>
+                        )}
+                    </div>
+                )}
 
                 {/* HISTORY TAB */}
                 {activeTab === "history" && (

@@ -4,6 +4,7 @@ from .storage import storage
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
+from users.models import User
 import uuid
 
 def subjects(request):
@@ -1111,7 +1112,7 @@ class TestSessionAnalyticsView(AsyncAPIView):
         from api.models import TestSession, UserAnswer
         
         try:
-            session = TestSession.objects.get(id=session_id, user=request.user)
+            session = await TestSession.objects.aget(id=session_id, user=request.user)
         except TestSession.DoesNotExist:
             return Response(
                 {'error': 'Session not found'},
@@ -1119,7 +1120,8 @@ class TestSessionAnalyticsView(AsyncAPIView):
             )
         
         # Get all user answers for this session
-        user_answers = UserAnswer.objects.filter(session=session).order_by('id')
+        user_answers_qs = UserAnswer.objects.filter(session=session).order_by('id')
+        user_answers = [a async for a in user_answers_qs]
         
         # Calculate topic-wise performance
         topic_stats = {}

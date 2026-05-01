@@ -269,7 +269,16 @@ export default function TestResultInterface({
                     return (
                       <div key={option.data_option} className={`flex items-center gap-3 p-4 border rounded-lg ${bgClass}`}>
                         <div className="font-medium text-foreground">{option.label}.</div>
-                        <div className="text-foreground preserve-whitespace"><Latex>{option.option_text}</Latex></div>
+                        <div className="flex flex-col gap-2 flex-grow">
+                          <div className="text-foreground preserve-whitespace"><Latex>{option.option_text}</Latex></div>
+                          {option.option_image_url && (
+                            <img
+                              src={option.option_image_url}
+                              alt={`Option ${option.label}`}
+                              className="max-w-[200px] h-auto rounded border border-border"
+                            />
+                          )}
+                        </div>
                       </div>
                     );
                   })

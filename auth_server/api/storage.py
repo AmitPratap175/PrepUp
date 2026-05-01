@@ -399,6 +399,31 @@ class MemStorage:
                     }
                     self.practice_tests[test["id"]] = test
 
+        # Seed SSC practice tests from ssc_docs
+        ssc_docs_dir = os.path.join(self.base_dir, '..', 'data/ssc/ssc_docs')
+        if os.path.exists(ssc_docs_dir):
+            for year_dir in os.listdir(ssc_docs_dir):
+                year_path = os.path.join(ssc_docs_dir, year_dir)
+                if os.path.isdir(year_path):
+                    for file_name in os.listdir(year_path):
+                        if file_name.endswith('.json'):
+                            file_path = os.path.join(year_path, file_name)
+                            questions = self._load_questions_from_file(file_path)
+                            if questions:
+                                # Create a title from filename: shift-1_tier-1-14th-july.json -> Shift 1 Tier 1 14th July 2023
+                                pretty_name = file_name.replace('.json', '').replace('-', ' ').replace('_', ' ').title()
+                                test_id = f"ssc-{year_dir}-{file_name.replace('.json', '')}"
+                                ssc_test = {
+                                    "id": test_id,
+                                    "title": f"SSC CGL {year_dir} - {pretty_name}",
+                                    "examType": "ssc",
+                                    "subject": f"SSC {year_dir}",
+                                    "duration": 60, # SSC Tier 1 is usually 60 mins
+                                    "totalQuestions": len(questions),
+                                    "questions": questions
+                                }
+                                self.practice_tests[ssc_test["id"]] = ssc_test
+
 
         # Seed mock tests from JSON files
         mock_test_dir = os.path.join(self.base_dir, '..', 'data/cat/mocks')
