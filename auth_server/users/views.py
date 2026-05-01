@@ -700,7 +700,7 @@ class BookmarkPDFExportView(APIView):
                            .replace('%', '\\%')
                 part = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', part)
                 part = re.sub(r'\*(.*?)\*', r'\\textit{\1}', part)
-                part = part.replace('\n', ' \\\\ \n')
+                part = re.sub(r'\n+', r' \\par \n', part)
                 processed_parts.append(part)
         
         return ''.join(processed_parts)
