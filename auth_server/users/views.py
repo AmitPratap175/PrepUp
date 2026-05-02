@@ -555,6 +555,7 @@ class BookmarkPDFExportView(APIView):
 
     def post(self, request, *args, **kwargs):
         subject = request.data.get('subject')
+        include_answers = request.data.get('include_answers', False)
         if not subject:
             return Response({'error': 'Subject is required'}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -584,7 +585,7 @@ class BookmarkPDFExportView(APIView):
 
         try:
             with tempfile.TemporaryDirectory() as temp_dir:
-                latex_content = self._generate_latex(subject, questions, temp_dir)
+                latex_content = self._generate_latex(subject, questions, temp_dir, include_answers)
                 pdf_path = self._compile_latex(latex_content, temp_dir)
                 
                 # Copy PDF to a safe location before temp_dir is deleted
@@ -705,7 +706,7 @@ class BookmarkPDFExportView(APIView):
         
         return ''.join(processed_parts)
 
-    def _generate_latex(self, subject, questions, temp_dir):
+    def _generate_latex(self, subject, questions, temp_dir, include_answers=False):
         content = [
             r'\documentclass[12pt]{article}',
             r'\usepackage[utf8]{inputenc}',
@@ -774,6 +775,32 @@ class BookmarkPDFExportView(APIView):
                 content.append(f'    \\item {opt_text}')
             content.append(r'  \end{enumerate}')
             
+            if include_answers:
+                answer = q.get('correctAnswer') or q.get('correct_option_data') or q.get('correct_answer') or ''
+                answer_label = "?"
+                found_by_flag = False
+                for idx, opt in enumerate(options):
+                    if isinstance(opt, dict) and (opt.get('isCorrect') is True or opt.get('is_correct') is True):
+                        answer_label = chr(65 + idx)
+                        found_by_flag = True
+                        break
+                if not found_by_flag:
+                    if str(answer).isdigit():
+                        idx = int(answer) - 1
+                        if 0 <= idx < 26:
+                            answer_label = chr(65 + idx)
+                    else:
+                         for idx, opt in enumerate(options):
+                            opt_val = opt
+                            if isinstance(opt, dict):
+                                opt_val = opt.get('option_text') or opt.get('text') or ''
+                            if str(opt_val).strip() == str(answer).strip():
+                                answer_label = chr(65 + idx)
+                                break
+                if answer_label == "?" and answer:
+                    answer_label = str(answer)[:10]
+                content.append(f'  \\vspace{{0.1cm}} \\par \\textbf{{Answer:}} {answer_label}')
+
             # Collect solution if available
             solution = q.get('solution_text') or q.get('explanation') or q.get('rationale')
             if solution:

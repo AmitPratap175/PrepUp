@@ -9,6 +9,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
@@ -75,6 +77,8 @@ const ChapterwiseQuizPage: React.FC = () => {
             [subject]: !prev[subject]
         }));
     };
+
+    const [includeAnswersInPdf, setIncludeAnswersInPdf] = useState(false);
 
     useEffect(() => {
         fetchQuizzes();
@@ -314,7 +318,8 @@ const ChapterwiseQuizPage: React.FC = () => {
                 body: JSON.stringify({ 
                     chapter_id: activeTest.id,
                     questions: activeTest.questions,
-                    subject: activeTest.title 
+                    subject: activeTest.title,
+                    include_answers: includeAnswersInPdf
                })
             });
             if (res.ok) {
@@ -353,7 +358,8 @@ const ChapterwiseQuizPage: React.FC = () => {
                 body: JSON.stringify({ 
                     chapter_id: `export_${subject.replace(/[^a-zA-Z0-9]/g, '')}`,
                     questions: allQuestions,
-                    subject: `UPSC Topicwise - ${subject}` 
+                    subject: `UPSC Topicwise - ${subject}`,
+                    include_answers: includeAnswersInPdf
                 })
             });
             
@@ -445,6 +451,17 @@ const ChapterwiseQuizPage: React.FC = () => {
                         <p className="text-xl text-muted-foreground">
                             Deep dive into specific subjects with our curated question banks.
                         </p>
+                    </div>
+
+                    <div className="flex items-center space-x-2 bg-muted/30 p-3 rounded-lg border w-fit">
+                        <Checkbox 
+                            id="include-answers" 
+                            checked={includeAnswersInPdf} 
+                            onCheckedChange={(checked) => setIncludeAnswersInPdf(checked as boolean)} 
+                        />
+                        <Label htmlFor="include-answers" className="cursor-pointer font-medium text-sm">
+                            Include answers below questions in exported PDFs
+                        </Label>
                     </div>
 
                     {error && (

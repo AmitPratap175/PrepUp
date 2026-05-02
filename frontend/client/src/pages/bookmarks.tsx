@@ -16,6 +16,8 @@ import type { PracticeTest, Question, Bookmark } from "@shared/schema";
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect } from "wouter";
 import { Loader2, Download } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 
 /**
  * @interface BookmarkedQuestions
@@ -39,6 +41,7 @@ export default function BookmarksPage() {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isExporting, setIsExporting] = useState<string | null>(null);
+  const [includeAnswersInPdf, setIncludeAnswersInPdf] = useState(false);
 
   const { data: bookmarks, isLoading: isLoadingBookmarks } = useQuery<Bookmark[]>({
     queryKey: ["bookmarks"],
@@ -102,7 +105,7 @@ export default function BookmarksPage() {
           'Authorization': `Token ${token}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ subject }),
+        body: JSON.stringify({ subject, include_answers: includeAnswersInPdf }),
       });
 
       if (!response.ok) {
@@ -193,6 +196,17 @@ export default function BookmarksPage() {
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
               Review your bookmarked questions by subject.
             </p>
+          </div>
+
+          <div className="flex items-center justify-center space-x-2 bg-muted/30 p-3 rounded-lg border w-fit mx-auto mb-8">
+              <Checkbox 
+                  id="include-answers" 
+                  checked={includeAnswersInPdf} 
+                  onCheckedChange={(checked) => setIncludeAnswersInPdf(checked as boolean)} 
+              />
+              <Label htmlFor="include-answers" className="cursor-pointer font-medium text-sm">
+                  Include answers below questions in exported PDFs
+              </Label>
           </div>
 
           {Object.keys(bookmarkedQuestions).length > 0 ? (

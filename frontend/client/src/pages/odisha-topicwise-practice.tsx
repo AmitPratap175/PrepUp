@@ -9,6 +9,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
@@ -77,6 +79,8 @@ const OdishaTopicwisePracticePage: React.FC = () => {
             [subject]: !prev[subject]
         }));
     };
+
+    const [includeAnswersInPdf, setIncludeAnswersInPdf] = useState(false);
 
     useEffect(() => {
         fetchQuizzes();
@@ -282,8 +286,9 @@ const OdishaTopicwisePracticePage: React.FC = () => {
                 body: JSON.stringify({ 
                     chapter_id: activeTest.id,
                     questions: activeTest.questions,
-                    subject: activeTest.title
-                })
+                    subject: activeTest.title,
+                    include_answers: includeAnswersInPdf
+               })
             });
             if (res.ok) {
                 const blob = await res.blob();
@@ -321,7 +326,8 @@ const OdishaTopicwisePracticePage: React.FC = () => {
                 body: JSON.stringify({ 
                     chapter_id: `export_${subject.replace(/[^a-zA-Z0-9]/g, '')}`,
                     questions: allQuestions,
-                    subject: `Odisha Practice - ${subject}` 
+                    subject: `Odisha Topicwise - ${subject}`,
+                    include_answers: includeAnswersInPdf
                 })
             });
             
@@ -402,10 +408,21 @@ const OdishaTopicwisePracticePage: React.FC = () => {
             <main className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-8 max-w-5xl mx-auto">
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight mb-2">Odisha State Practice Questions</h1>
+                        <h1 className="text-3xl font-bold tracking-tight mb-2">Odisha State Practice</h1>
                         <p className="text-xl text-muted-foreground">
-                            Master your Odisha specific preparation with our topic-wise question banks.
+                            Master your Odisha specific topics with our curated question banks.
                         </p>
+                    </div>
+
+                    <div className="flex items-center space-x-2 bg-muted/30 p-3 rounded-lg border w-fit">
+                        <Checkbox 
+                            id="include-answers" 
+                            checked={includeAnswersInPdf} 
+                            onCheckedChange={(checked) => setIncludeAnswersInPdf(checked as boolean)} 
+                        />
+                        <Label htmlFor="include-answers" className="cursor-pointer font-medium text-sm">
+                            Include answers below questions in exported PDFs
+                        </Label>
                     </div>
 
                     {error && (

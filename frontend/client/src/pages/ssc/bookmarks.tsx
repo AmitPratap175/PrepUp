@@ -17,6 +17,8 @@ import type { PracticeTest, Question, Bookmark, UserAnswer } from "@shared/schem
 import { useAuth } from "@/contexts/auth-context";
 import { Redirect, Link, useLocation } from "wouter";
 import { Loader2, Download, Bookmark as BookmarkIcon, ChevronLeft } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 
 interface BookmarkedQuestions {
     [subject: string]: Question[];
@@ -28,6 +30,7 @@ export default function SSCBookmarksPage() {
     const [submittedAnswers, setSubmittedAnswers] = useState<UserAnswer[] | null>(null);
     const [, setLocation] = useLocation();
     const [bookmarkedQuestions, setBookmarkedQuestions] = useState<BookmarkedQuestions>({});
+    const [includeAnswersInPdf, setIncludeAnswersInPdf] = useState(false);
 
     const { data: bookmarks, isLoading: isLoadingBookmarks } = useQuery<Bookmark[]>({
         queryKey: ["bookmarks"],
@@ -100,7 +103,7 @@ export default function SSCBookmarksPage() {
                     'Authorization': `Token ${token}`,
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ subject }),
+                body: JSON.stringify({ subject, include_answers: includeAnswersInPdf }),
             });
 
             if (!response.ok) throw new Error("Failed to generate PDF");
@@ -191,6 +194,17 @@ export default function SSCBookmarksPage() {
                         <p className="text-xl text-muted-foreground">
                             Review your saved SSC practice questions.
                         </p>
+                    </div>
+
+                    <div className="flex items-center space-x-2 bg-muted/30 p-3 rounded-lg border w-fit">
+                        <Checkbox 
+                            id="include-answers" 
+                            checked={includeAnswersInPdf} 
+                            onCheckedChange={(checked) => setIncludeAnswersInPdf(checked as boolean)} 
+                        />
+                        <Label htmlFor="include-answers" className="cursor-pointer font-medium text-sm">
+                            Include answers below questions in exported PDFs
+                        </Label>
                     </div>
 
                     {Object.keys(bookmarkedQuestions).length > 0 ? (

@@ -21,6 +21,7 @@ class ChapterPDFExportView(APIView):
         questions_payload = request.data.get('questions')
         subject_payload = request.data.get('subject')
         chapter_id = request.data.get('chapter_id')
+        include_answers = request.data.get('include_answers', False)
 
         selected_chapter = None
         selected_subject = None
@@ -83,7 +84,7 @@ class ChapterPDFExportView(APIView):
 
         try:
             with tempfile.TemporaryDirectory() as temp_dir:
-                latex_content = self._generate_latex(selected_subject, questions, temp_dir)
+                latex_content = self._generate_latex(selected_subject, questions, temp_dir, include_answers)
                 pdf_path = self._compile_latex(latex_content, temp_dir)
                 
                 # Copy PDF to a safe location before temp_dir is deleted
@@ -176,7 +177,7 @@ class ChapterPDFExportView(APIView):
                 processed_parts.append(part)
         return ''.join(processed_parts)
 
-    def _generate_latex(self, subject, questions, temp_dir):
+    def _generate_latex(self, subject, questions, temp_dir, include_answers=False):
         # Escape special characters in subject for proper LaTeX display
         safe_subject = self._markdown_to_latex(subject)
         
@@ -246,6 +247,32 @@ class ChapterPDFExportView(APIView):
                 content.append(f'    \\item {opt_text}')
             content.append(r'  \end{enumerate}')
             
+            if include_answers:
+                answer = q.get('correctAnswer') or q.get('correct_option_data') or q.get('correct_answer') or ''
+                answer_label = "?"
+                found_by_flag = False
+                for idx, opt in enumerate(options):
+                    if isinstance(opt, dict) and (opt.get('isCorrect') is True or opt.get('is_correct') is True):
+                        answer_label = chr(65 + idx)
+                        found_by_flag = True
+                        break
+                if not found_by_flag:
+                    if str(answer).isdigit():
+                        idx = int(answer) - 1
+                        if 0 <= idx < 26:
+                            answer_label = chr(65 + idx)
+                    elif len(str(answer)) == 1 and str(answer).isalpha():
+                        answer_label = str(answer).upper()
+                    else:
+                         for idx, opt in enumerate(options):
+                            opt_val = opt.get('option_text') or opt.get('text') or ''
+                            if str(opt_val).strip() == str(answer).strip():
+                                answer_label = chr(65 + idx)
+                                break
+                if answer_label == "?" and answer:
+                    answer_label = str(answer)[:10]
+                content.append(f'  \\vspace{{0.1cm}} \\par \\textbf{{Answer:}} {answer_label}')
+
             solution = q.get('solution_text') or q.get('explanation') or q.get('rationale')
             if solution:
                  sol_text = self._process_text_with_images(solution, temp_dir)
