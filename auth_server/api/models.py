@@ -402,3 +402,16 @@ class NewsArticle(models.Model):
     def __str__(self):
         return f"{self.title} ({self.source})"
 
+
+class UPSCMasteryState(models.Model):
+    """
+    Stores the complete state for the UPSC 2027 Mastery application (tasks, history, settings).
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='upsc_mastery_state')
+    state_data = models.JSONField(default=dict)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"UPSC Mastery State for {self.user.email}"
+

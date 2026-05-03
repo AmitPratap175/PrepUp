@@ -2182,3 +2182,30 @@ class EssayModelAnswerView(AsyncAPIView):
         model_answer = await generator.generate_model_answer(topic_title, context)
         
         return Response({'model_answer': model_answer})
+
+class UPSCMasteryStateView(APIView):
+    """
+    GET: Fetch the user's UPSC Mastery State data.
+    PUT: Update or create the user's UPSC Mastery State data.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        from api.models import UPSCMasteryState
+        try:
+            mastery_state = UPSCMasteryState.objects.get(user=request.user)
+            return Response(mastery_state.state_data, status=status.HTTP_200_OK)
+        except UPSCMasteryState.DoesNotExist:
+            return Response({}, status=status.HTTP_200_OK)
+
+    def put(self, request):
+        from api.models import UPSCMasteryState
+        try:
+            state_data = request.data
+            mastery_state, created = UPSCMasteryState.objects.update_or_create(
+                user=request.user,
+                defaults={'state_data': state_data}
+            )
+            return Response({'status': 'success', 'created': created}, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)

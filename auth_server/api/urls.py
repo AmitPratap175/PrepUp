@@ -68,6 +68,7 @@ urlpatterns = [
     path('daily-targets/regenerate/', views.DailyTargetRegenerateView.as_view(), name='daily-targets-regenerate'),
     path('revision/', views.RevisionView.as_view(), name='revision'),
     path('revision/schedule/', views.ScheduleRevisionView.as_view(), name='schedule_revision'),
+    path('upsc/mastery-state/', views.UPSCMasteryStateView.as_view(), name='upsc_mastery_state'),
 
     path('generate-quiz/', QuizGeneratorView.as_view(), name='generate-quiz'),
     path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),

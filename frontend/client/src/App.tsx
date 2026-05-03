@@ -75,6 +75,7 @@ import MainsAnswerPage from "@/pages/mains-answer";
 import MapMasterPage from "@/pages/map-master";
 import EssaysListPage from "@/pages/upsc/essays-list";
 import EssayDailyReadPage from "@/pages/upsc/essay-daily-read";
+import UPSCMastery2027Page from "@/pages/upsc/mastery-2027/App";
 
 /**
  * Defines the main routing configuration for the application.
@@ -152,6 +153,7 @@ function Router() {
       <Route path="/upsc/daily-practice-questions" component={DailyPracticeQuestionsPage} />
       <Route path="/upsc/monthly-mcq-questions" component={MonthlyMcqQuestionsPage} />
       <Route path="/upsc/map-master" component={MapMasterPage} />
+      <Route path="/upsc/mastery-2027" component={UPSCMastery2027Page} />
       <Route path="/upsc/essays" component={EssaysListPage} />
       <Route path="/upsc/essays/:id" component={EssayDailyReadPage} />
       <Route path="/odisha/practice" component={OdishaTopicwisePracticePage} />

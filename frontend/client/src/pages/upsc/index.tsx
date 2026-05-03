@@ -213,6 +213,21 @@ export default function UPSCPage() {
                                         </Link>
                                     </CardContent>
                                 </Card>
+
+                                <Card className="bg-emerald-500/5 border-emerald-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <Brain className="h-5 w-5 text-emerald-500" />
+                                            UPSC 2027 Mastery
+                                        </CardTitle>
+                                        <CardDescription>Comprehensive tracking, execution hub, and backlog management.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/mastery-2027">
+                                            <Button className="w-full" variant="outline">Open Dashboard</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
                             </div>
                         </TabsContent>
 

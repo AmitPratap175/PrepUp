@@ -81,6 +81,7 @@ const navigation = [
       { title: "Mains Answer", href: "/mains-answer" },
       { title: "151 Essays", href: "/upsc/essays" },
       { title: "Map Master", href: "/upsc/map-master" },
+      { title: "UPSC 2027 Mastery", href: "/upsc/mastery-2027" },
     ]
   },
   {
