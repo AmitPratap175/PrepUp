@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useUPSC } from '../UPSCContext';
-import { Save, Clock, Moon, Coffee, Calendar, Plus, Trash2, Edit3, Bell, BellOff } from 'lucide-react';
-import { Task, Subject } from '../lib/utils';
+import { Save, Clock, Moon, Coffee, Calendar, Plus, Trash2, Edit3, Bell, BellOff, Music } from 'lucide-react';
+import { Task, Subject, SOUNDS } from '../lib/utils';
 import { format, addDays, parseISO } from 'date-fns';
 import { getDayData } from '../lib/scheduleData';
 
@@ -155,6 +155,26 @@ export const YogaSettings: React.FC = () => {
                 >
                     <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${state.settings.soundEnabled ? 'translate-x-6' : 'translate-x-1'}`} />
                 </button>
+            </div>
+            <div className="flex items-center justify-between bg-muted p-4 rounded-xl mt-2">
+                <div className="flex items-center gap-3">
+                    <Music size={18} className="text-primary" />
+                    <div>
+                        <p className="text-sm font-semibold text-foreground">Loop Sound</p>
+                        <p className="text-xs text-muted-foreground">Ambient sound played during focus</p>
+                    </div>
+                </div>
+                <select 
+                    value={state.settings.selectedSound || ''}
+                    onChange={(e) => updateSettings({ selectedSound: e.target.value })}
+                    className="bg-background border-none rounded-lg p-2 text-xs font-semibold text-foreground max-w-[150px]"
+                >
+                    {SOUNDS.map(s => (
+                        <option key={s} value={s}>
+                            {s.replace('mixkit-', '').replace('.wav', '').replace(/-/g, ' ')}
+                        </option>
+                    ))}
+                </select>
             </div>
           </section>
 

@@ -3,10 +3,11 @@ import { useUPSC } from '../UPSCContext';
 import { format, parse, isWithinInterval, addMinutes, subDays } from 'date-fns';
 import { Play, Pause, RotateCcw, CheckCircle2, Circle, Clock, Flame, Brain, Target, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { cn } from '../lib/utils';
+import { cn, SOUNDS } from '../lib/utils';
+import { Volume2, VolumeX, Music } from 'lucide-react';
 
 export const ExecutionView: React.FC = () => {
-  const { state, updateTask, markTaskComplete } = useUPSC();
+  const { state, updateTask, markTaskComplete, updateSettings } = useUPSC();
   const [activeTab, setActiveTab] = useState<'tracker' | 'timer'>('tracker');
   const [viewDate, setViewDate] = useState(format(new Date(), 'yyyy-MM-dd'));
   const dayData = state.history[viewDate];
@@ -23,6 +24,32 @@ export const ExecutionView: React.FC = () => {
   const [currentSlotTask, setCurrentSlotTask] = useState<string | null>(null);
   
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Looping audio logic
+  useEffect(() => {
+    if (isActive && !isBreak && state.settings.soundEnabled && state.settings.selectedSound) {
+      if (!audioRef.current) {
+        audioRef.current = new Audio(`/sounds/${state.settings.selectedSound}`);
+        audioRef.current.loop = true;
+      } else if (audioRef.current.src !== window.location.origin + `/sounds/${state.settings.selectedSound}`) {
+        audioRef.current.pause();
+        audioRef.current = new Audio(`/sounds/${state.settings.selectedSound}`);
+        audioRef.current.loop = true;
+      }
+      audioRef.current.play().catch(e => console.error("Audio loop failed", e));
+    } else {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    }
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    };
+  }, [isActive, isBreak, state.settings.soundEnabled, state.settings.selectedSound]);
 
   // Active Slot Detection
   const [activeSlotName, setActiveSlotName] = useState<string | null>(null);
@@ -330,6 +357,21 @@ export const ExecutionView: React.FC = () => {
               >
                 Exit
               </button>
+
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
+                <Music size={14} className="text-white/40" />
+                <select 
+                  value={state.settings.selectedSound || ''}
+                  onChange={(e) => updateSettings({ selectedSound: e.target.value })}
+                  className="bg-transparent text-white/60 text-[10px] uppercase tracking-wider font-bold focus:outline-none cursor-pointer max-w-[150px]"
+                >
+                  {SOUNDS.map(s => (
+                    <option key={s} value={s} className="bg-slate-900 text-white">
+                      {s.replace('mixkit-', '').replace('.wav', '').replace(/-/g, ' ')}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
           </motion.div>
         )}
