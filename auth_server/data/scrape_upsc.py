@@ -12,7 +12,7 @@ async def scrape_upsc_quiz(url: str, page_index: int):
     
     browser_config = BrowserConfig(
         verbose=True,
-        headless=False,
+        headless=True,
     )
     
     run_config = CrawlerRunConfig(

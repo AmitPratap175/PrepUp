@@ -321,8 +321,8 @@ if __name__ == "__main__":
         description="Stream PDFs from a Telegram channel into Google Drive one at a time."
     )
     parser.add_argument(
-        "--channel-id", type=str, default=str(CHANNEL_ID_DEFAULT),
-        help=f"Telegram channel ID or username (default: {CHANNEL_ID_DEFAULT}).",
+        "--channel-id", type=str, default=str(-1003789903113),
+        help=f"Telegram channel ID or username (default: {-1003789903113}).",
     )
     parser.add_argument(
         "--drive-folder-id", type=str, required=True,

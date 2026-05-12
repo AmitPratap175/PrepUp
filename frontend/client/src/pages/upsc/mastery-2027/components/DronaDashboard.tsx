@@ -28,17 +28,17 @@ export const DronaDashboard: React.FC = () => {
   const getHeatColor = (date: Date) => {
     const dateStr = format(date, 'yyyy-MM-dd');
     const dayData = state.history[dateStr];
-    if (!dayData) return 'bg-slate-100';
+    if (!dayData) return 'bg-muted';
     
     const completed = dayData.tasks.filter(t => t.completed).length;
     const total = dayData.tasks.length;
-    if (total === 0) return 'bg-slate-100';
+    if (total === 0) return 'bg-muted';
     
     const ratio = completed / total;
-    if (ratio >= 1) return 'bg-blue-600';
-    if (ratio > 0.5) return 'bg-blue-400';
-    if (ratio > 0) return 'bg-blue-200';
-    return 'bg-slate-200';
+    if (ratio >= 1) return 'bg-primary';
+    if (ratio > 0.5) return 'bg-primary/70';
+    if (ratio > 0) return 'bg-primary/30';
+    return 'bg-muted/80';
   };
 
   const currentStreak = useMemo(() => {
@@ -87,17 +87,17 @@ export const DronaDashboard: React.FC = () => {
       </div>
 
       {/* Heatmap */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+      <div className="bg-card p-6 rounded-2xl border border-border shadow-sm">
         <div className="flex items-center justify-between mb-6">
-          <h3 className="font-bold text-slate-800 flex items-center gap-2">
-            <Calendar size={20} className="text-blue-600" /> Consistency Mandala
+          <h3 className="font-bold text-foreground flex items-center gap-2">
+            <Calendar size={20} className="text-primary" /> Consistency Mandala
           </h3>
-          <div className="flex gap-2 text-[10px] items-center text-slate-400">
+          <div className="flex gap-2 text-[10px] items-center text-muted-foreground">
             <span>Less</span>
-            <div className="w-3 h-3 bg-slate-100 rounded-sm"></div>
-            <div className="w-3 h-3 bg-blue-200 rounded-sm"></div>
-            <div className="w-3 h-3 bg-blue-400 rounded-sm"></div>
-            <div className="w-3 h-3 bg-blue-600 rounded-sm"></div>
+            <div className="w-3 h-3 bg-muted rounded-sm"></div>
+            <div className="w-3 h-3 bg-primary/30 rounded-sm"></div>
+            <div className="w-3 h-3 bg-primary/70 rounded-sm"></div>
+            <div className="w-3 h-3 bg-primary rounded-sm"></div>
             <span>More</span>
           </div>
         </div>
@@ -114,44 +114,44 @@ export const DronaDashboard: React.FC = () => {
             />
           ))}
         </div>
-        <p className="text-center text-slate-400 text-xs mt-4">Last 90 days of dedicated tapasya.</p>
+        <p className="text-center text-muted-foreground text-xs mt-4">Last 90 days of dedicated tapasya.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Progress Detailed */}
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
-          <h3 className="font-bold text-slate-800">Syllabus Ascension</h3>
+        <div className="bg-card p-6 rounded-2xl border border-border shadow-sm space-y-6">
+          <h3 className="font-bold text-foreground">Syllabus Ascension</h3>
           
           <div className="space-y-6">
             <div 
-              className="cursor-pointer hover:bg-slate-50 p-2 -mx-2 rounded-xl transition-colors group"
+              className="cursor-pointer hover:bg-muted p-2 -mx-2 rounded-xl transition-colors group"
               onClick={() => handleUpdateProgress('math', state.mathProgress)}
               title="Click to update progression"
             >
               <div className="flex justify-between text-xs mb-2">
-                <span className="font-bold text-slate-600 group-hover:text-blue-600 transition-colors">Mathematics Optional</span>
-                <span className="text-slate-400 font-mono bg-white px-2 py-0.5 rounded shadow-sm border border-slate-100">{state.mathProgress}%</span>
+                <span className="font-bold text-muted-foreground group-hover:text-primary transition-colors">Mathematics Optional</span>
+                <span className="text-foreground font-mono bg-background px-2 py-0.5 rounded shadow-sm border border-border">{state.mathProgress}%</span>
               </div>
-              <div className="h-4 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-4 bg-muted rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-blue-500 rounded-full transition-all duration-1000 shadow-lg shadow-blue-200"
+                  className="h-full bg-primary rounded-full transition-all duration-1000 shadow-lg shadow-primary/20"
                   style={{ width: `${state.mathProgress}%` }}
                 />
               </div>
             </div>
 
             <div 
-              className="cursor-pointer hover:bg-slate-50 p-2 -mx-2 rounded-xl transition-colors group"
+              className="cursor-pointer hover:bg-muted p-2 -mx-2 rounded-xl transition-colors group"
               onClick={() => handleUpdateProgress('gs', state.gsProgress)}
               title="Click to update progression"
             >
               <div className="flex justify-between text-xs mb-2">
-                <span className="font-bold text-slate-600 group-hover:text-emerald-600 transition-colors">GS Phase (Advance)</span>
-                <span className="text-slate-400 font-mono bg-white px-2 py-0.5 rounded shadow-sm border border-slate-100">{state.gsProgress}%</span>
+                <span className="font-bold text-muted-foreground group-hover:text-emerald-500 transition-colors">GS Phase (Advance)</span>
+                <span className="text-foreground font-mono bg-background px-2 py-0.5 rounded shadow-sm border border-border">{state.gsProgress}%</span>
               </div>
-              <div className="h-4 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-4 bg-muted rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-emerald-500 rounded-full transition-all duration-1000 shadow-lg shadow-emerald-200"
+                  className="h-full bg-emerald-500 rounded-full transition-all duration-1000 shadow-lg shadow-emerald-500/20"
                   style={{ width: `${state.gsProgress}%` }}
                 />
               </div>
@@ -160,8 +160,8 @@ export const DronaDashboard: React.FC = () => {
         </div>
 
         {/* Weekly Analysis (Mock data for UI) */}
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-[300px]">
-            <h3 className="font-bold text-slate-800 mb-6">Execution Velocity</h3>
+        <div className="bg-card p-6 rounded-2xl border border-border shadow-sm h-[300px]">
+            <h3 className="font-bold text-foreground mb-6">Execution Velocity</h3>
             <ResponsiveContainer width="100%" height="80%">
                 <BarChart data={[
                     { day: 'M', poms: 8 },
@@ -173,11 +173,18 @@ export const DronaDashboard: React.FC = () => {
                     { day: 'S', poms: 4 },
                 ]}>
                     <Tooltip 
-                        contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                        cursor={{ fill: '#f8fafc' }}
+                        contentStyle={{ 
+                          backgroundColor: 'hsl(var(--card))', 
+                          borderRadius: '12px', 
+                          border: '1px solid hsl(var(--border))', 
+                          boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                          color: 'hsl(var(--foreground))'
+                        }}
+                        itemStyle={{ color: 'hsl(var(--foreground))' }}
+                        cursor={{ fill: 'hsl(var(--muted))' }}
                     />
-                    <Bar dataKey="poms" fill="#2563eb" radius={[4, 4, 0, 0]} />
-                    <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#94a3b8' }} />
+                    <Bar dataKey="poms" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                    <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }} />
                 </BarChart>
             </ResponsiveContainer>
         </div>

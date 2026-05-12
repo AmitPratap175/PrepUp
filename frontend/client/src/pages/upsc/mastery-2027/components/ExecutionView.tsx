@@ -272,7 +272,7 @@ export const ExecutionView: React.FC = () => {
   if (!dayData) return <div>Initializing today...</div>;
 
   return (
-    <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto p-4 md:p-6 text-slate-800 h-full">
+    <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto p-4 md:p-6 text-foreground h-full">
       <AnimatePresence>
         {isFocusMode && (
           <motion.div
@@ -335,17 +335,17 @@ export const ExecutionView: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 sm:gap-0 border-b border-slate-200 pb-4">
+      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 sm:gap-0 border-b border-border pb-4">
         <div className="space-y-1">
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold tracking-tight text-slate-900">
-              UPSC 2027 <span className="font-normal text-slate-400">/ PREP TRACKER</span>
+            <h1 className="text-2xl font-bold tracking-tight text-foreground">
+              UPSC 2027 <span className="font-normal text-muted-foreground">/ PREP TRACKER</span>
             </h1>
             <input 
                type="date"
                value={viewDate}
                onChange={(e) => setViewDate(e.target.value)}
-               className="bg-slate-100 border-none rounded-lg px-3 py-1.5 text-sm font-bold text-slate-700 cursor-pointer hover:bg-slate-200 transition-colors"
+               className="bg-muted border-none rounded-lg px-3 py-1.5 text-sm font-bold text-foreground cursor-pointer hover:bg-muted/80 transition-colors"
             />
           </div>
           <p className="text-sm text-slate-500 font-medium">
@@ -353,10 +353,10 @@ export const ExecutionView: React.FC = () => {
           </p>
         </div>
         <div className="text-left sm:text-right space-y-1">
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{streakCount} DAY STREAK</p>
+          <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">{streakCount} DAY STREAK</p>
           <div className="flex items-center sm:justify-end gap-1.5">
-            <Flame className={cn(streakCount > 0 ? "text-orange-500" : "text-slate-300")} size={16} fill="currentColor" />
-            <span className={cn("font-bold text-sm", streakCount > 0 ? "text-slate-700" : "text-slate-400")}>
+            <Flame className={cn(streakCount > 0 ? "text-orange-500" : "text-muted-foreground")} size={16} fill="currentColor" />
+            <span className={cn("font-bold text-sm", streakCount > 0 ? "text-foreground" : "text-muted-foreground")}>
               {streakCount > 0 ? "Active Streak" : "Start a Streak"}
             </span>
           </div>
@@ -365,29 +365,29 @@ export const ExecutionView: React.FC = () => {
 
       <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 flex-grow content-start">
         <section className="lg:col-span-12">
-          <div className="bg-slate-900 rounded-2xl p-5 shadow-lg flex flex-col md:flex-row gap-6 relative overflow-hidden">
+          <div className="bg-card/40 backdrop-blur rounded-2xl p-5 shadow-lg flex flex-col md:flex-row gap-6 relative overflow-hidden border border-border">
              <div className="absolute top-0 right-0 opacity-5 pointer-events-none transform translate-x-4 -translate-y-4">
                 <BookOpen size={160} />
              </div>
              <div className="flex-1 z-10 relative space-y-2">
-                <h3 className="text-xs font-bold text-emerald-400 uppercase tracking-widest">GS / Core</h3>
-                <p className="text-slate-200 text-sm whitespace-pre-line leading-relaxed">
+                <h3 className="text-xs font-bold text-emerald-500 uppercase tracking-widest">GS / Core</h3>
+                <p className="text-foreground text-sm whitespace-pre-line leading-relaxed">
                    {(dayData.tasks.find(t => t.subject.includes('General Studies') && t.startTime < '15:00')?.title || '').replace(/\\n/g, '\n')}
                 </p>
              </div>
-             <div className="w-px bg-slate-700 hidden md:block"></div>
+             <div className="w-px bg-border hidden md:block"></div>
              <div className="flex-1 z-10 relative space-y-2">
-                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-widest">Mathematics</h3>
-                <p className="text-slate-200 text-sm whitespace-pre-line leading-relaxed">
+                <h3 className="text-xs font-bold text-primary uppercase tracking-widest">Mathematics</h3>
+                <p className="text-foreground text-sm whitespace-pre-line leading-relaxed">
                    {(dayData.tasks.find(t => t.subject.includes('Math'))?.title || '').replace(/\\n/g, '\n')}
                 </p>
              </div>
-             <div className="w-px bg-slate-700 hidden md:block"></div>
+             <div className="w-px bg-border hidden md:block"></div>
              <div className="flex-1 z-10 relative space-y-2">
-                <h3 className="text-xs font-bold text-purple-400 uppercase tracking-widest">Evening / Night</h3>
-                <div className="text-slate-200 text-sm whitespace-pre-line leading-relaxed space-y-2">
+                <h3 className="text-xs font-bold text-purple-500 uppercase tracking-widest">Evening / Night</h3>
+                <div className="text-foreground text-sm whitespace-pre-line leading-relaxed space-y-2">
                    {dayData.tasks.filter(t => t.startTime >= '18:00' || t.startTime < '04:00').map(t => (
-                       <div key={t.id}><span className="text-purple-300 font-semibold">{t.subject}:</span> {t.title.replace(/\\n/g, '\n')}</div>
+                       <div key={t.id}><span className="text-purple-500 font-semibold">{t.subject}:</span> {t.title.replace(/\\n/g, '\n')}</div>
                    ))}
                 </div>
              </div>
@@ -395,10 +395,10 @@ export const ExecutionView: React.FC = () => {
         </section>
 
         <section className="lg:col-span-7 flex flex-col gap-6">
-          <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm flex flex-col gap-4">
+          <div className="bg-card rounded-2xl border border-border p-6 shadow-sm flex flex-col gap-4">
             <div className="flex justify-between items-center">
-              <h2 className="text-xs uppercase tracking-widest font-bold text-slate-400">Active Execution</h2>
-              <span className="px-2 py-1 bg-blue-50 text-blue-700 text-[10px] font-bold rounded uppercase flex items-center gap-1">
+              <h2 className="text-xs uppercase tracking-widest font-bold text-muted-foreground">Active Execution</h2>
+              <span className="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase flex items-center gap-1">
                 <Clock size={12} /> {activeSlotName || 'Rest Break'}
               </span>
             </div>
@@ -416,8 +416,8 @@ export const ExecutionView: React.FC = () => {
                   transition={{ duration: 0.3 }}
                   className={cn(
                     "p-4 rounded-r-xl transition-all cursor-pointer group flex flex-col sm:flex-row sm:items-center justify-between border-l-4 gap-4 sm:gap-0",
-                    task.completed ? "border-emerald-500 bg-emerald-50/50" : 
-                    currentSlotTask === task.id ? "border-blue-500 bg-blue-50/50" : "border-slate-200 bg-white shadow-sm border border-t-slate-100 border-r-slate-100 border-b-slate-100"
+                    task.completed ? "border-emerald-500 bg-emerald-500/10" : 
+                    currentSlotTask === task.id ? "border-primary bg-primary/10" : "border-border bg-card shadow-sm border"
                   )}
                 >
                   <div className="flex items-start gap-3">
@@ -428,7 +428,7 @@ export const ExecutionView: React.FC = () => {
                       }}
                       className={cn(
                         "mt-0.5 shrink-0 transition-colors",
-                        task.completed ? "text-emerald-500" : "text-slate-300 hover:text-slate-400"
+                        task.completed ? "text-emerald-500" : "text-muted-foreground/30 hover:text-muted-foreground/50"
                       )}
                     >
                       {task.completed ? (
@@ -445,23 +445,23 @@ export const ExecutionView: React.FC = () => {
                     </button>
                     <div className="space-y-1">
                       <div className="flex items-center gap-2">
-                        <h3 className={cn("text-sm font-bold", task.completed ? "text-slate-400 line-through" : "text-slate-800")}>
+                        <h3 className={cn("text-sm font-bold", task.completed ? "text-muted-foreground line-through" : "text-foreground")}>
                           {task.subject}
                         </h3>
                         {task.needsRevision && (
-                          <span className="px-2 py-0.5 bg-orange-100 text-orange-600 text-[10px] font-bold uppercase rounded flex items-center">
+                          <span className="px-2 py-0.5 bg-orange-500/10 text-orange-500 text-[10px] font-bold uppercase rounded flex items-center">
                             To-Revise
                           </span>
                         )}
                       </div>
-                      <p className={cn("text-xs whitespace-pre-line leading-relaxed", task.completed ? "text-slate-400" : "text-slate-500")}>
+                      <p className={cn("text-xs whitespace-pre-line leading-relaxed", task.completed ? "text-muted-foreground" : "text-muted-foreground/80")}>
                         {task.title.replace(/\\n/g, '\n')}
                       </p>
                     </div>
                   </div>
-                  <div className="flex sm:flex-col items-center sm:items-end gap-2 sm:gap-1 text-xs font-mono font-semibold text-slate-400 shrink-0 ml-8 sm:ml-0">
+                  <div className="flex sm:flex-col items-center sm:items-end gap-2 sm:gap-1 text-xs font-mono font-semibold text-muted-foreground shrink-0 ml-8 sm:ml-0">
                     <span>{task.startTime}-{task.endTime}</span>
-                    <span className="flex items-center justify-center gap-1 bg-white px-2 py-0.5 rounded shadow-sm border border-slate-100 w-full sm:w-auto">
+                    <span className="flex items-center justify-center gap-1 bg-background px-2 py-0.5 rounded shadow-sm border border-border w-full sm:w-auto">
                         <Target size={10} /> {task.pomodorosDone}/{task.pomodorosRequired}
                     </span>
                   </div>
@@ -472,8 +472,8 @@ export const ExecutionView: React.FC = () => {
         </section>
 
         <section className="lg:col-span-5 flex flex-col gap-6">
-          <div className="bg-slate-900 rounded-2xl p-6 shadow-xl text-white flex flex-col justify-center items-center gap-6 relative overflow-hidden h-[340px] sticky top-6">
-            <div className="absolute top-[-15%] right-[-10%] p-4 opacity-5 pointer-events-none">
+          <div className="bg-primary text-primary-foreground rounded-2xl p-6 shadow-xl flex flex-col justify-center items-center gap-6 relative overflow-hidden h-[340px] sticky top-6">
+            <div className="absolute top-[-15%] right-[-10%] p-4 opacity-10 pointer-events-none">
                 <Target size={240} />
             </div>
             
@@ -481,7 +481,7 @@ export const ExecutionView: React.FC = () => {
               <div className="flex items-center justify-between w-full mb-4 px-2">
                  <span className={cn(
                     "px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest",
-                    isBreak ? "bg-emerald-500/20 text-emerald-300" : "bg-blue-500/20 text-blue-300"
+                    isBreak ? "bg-emerald-500/20 text-emerald-100" : "bg-white/20 text-white"
                   )}>
                   {isBreak ? "Rest Phase" : "Focus Phase"}
                 </span>
@@ -493,7 +493,7 @@ export const ExecutionView: React.FC = () => {
               <span className="text-7xl font-bold tracking-tighter tabular-nums font-mono">
                 {formatTime(timerSeconds)}
               </span>
-              <span className="text-sm font-medium text-slate-400 mt-2 text-center px-4 line-clamp-2">
+              <span className="text-sm font-medium opacity-70 mt-2 text-center px-4 line-clamp-2">
                 {currentSlotTask ? dayData.tasks.find(t => t.id === currentSlotTask)?.subject : "Select a task to begin"}
               </span>
             </div>
@@ -513,7 +513,7 @@ export const ExecutionView: React.FC = () => {
               }}
               className={cn(
                   "w-full py-4 rounded-xl font-bold tracking-wide uppercase transition-all shadow-lg text-sm relative z-10",
-                  isActive ? "bg-slate-800 text-white hover:bg-slate-700" : "bg-white text-slate-900 hover:bg-slate-100 ring-2 ring-white/20 ring-offset-2 ring-offset-slate-900 hover:scale-[1.02]"
+                  isActive ? "bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" : "bg-primary-foreground text-primary hover:bg-primary-foreground/90 ring-2 ring-white/20 ring-offset-2 ring-offset-primary hover:scale-[1.02]"
               )}
             >
               {isActive ? "PAUSE FOCUS" : "START FOCUS"}

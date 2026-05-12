@@ -46,36 +46,36 @@ export const SyllabusView: React.FC = () => {
     const gsDates = Object.keys(gsByDate).sort();
 
     return (
-        <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto p-4 md:p-6 text-slate-800 h-full">
-            <header className="flex flex-col border-b border-slate-200 pb-4">
-                <h1 className="text-2xl font-bold tracking-tight text-slate-900">
-                    Syllabus <span className="font-normal text-slate-400">/ STRATEGY & TOPICS</span>
+        <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto p-4 md:p-6 text-foreground h-full">
+            <header className="flex flex-col border-b border-border pb-4">
+                <h1 className="text-2xl font-bold tracking-tight text-foreground">
+                    Syllabus <span className="font-normal text-muted-foreground">/ STRATEGY & TOPICS</span>
                 </h1>
-                <p className="text-sm text-slate-500 font-medium">
+                <p className="text-sm text-muted-foreground font-medium">
                     Comprehensive overview of the 2027 Study Plan
                 </p>
             </header>
 
-            <div className="flex gap-2 p-1 bg-slate-100 rounded-xl max-w-fit">
+            <div className="flex gap-2 p-1 bg-muted rounded-xl max-w-fit">
                 <button
                 onClick={() => setActiveTab('overview')}
                 className={cn(
                     "px-4 py-2 rounded-lg text-sm font-bold transition-colors",
-                    activeTab === 'overview' ? "bg-white text-slate-900 shadow-sm" : "text-slate-500 hover:text-slate-700"
+                    activeTab === 'overview' ? "bg-background text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
                 )}
                 ><Map size={16} className="inline mr-2" />Overview & Strategy</button>
                 <button
                 onClick={() => setActiveTab('math')}
                 className={cn(
                     "px-4 py-2 rounded-lg text-sm font-bold transition-colors",
-                    activeTab === 'math' ? "bg-white text-blue-700 shadow-sm" : "text-slate-500 hover:text-slate-700"
+                    activeTab === 'math' ? "bg-background text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
                 )}
                 ><GraduationCap size={16} className="inline mr-2" />Math Per Day</button>
                 <button
                 onClick={() => setActiveTab('gs')}
                 className={cn(
                     "px-4 py-2 rounded-lg text-sm font-bold transition-colors",
-                    activeTab === 'gs' ? "bg-white text-emerald-700 shadow-sm" : "text-slate-500 hover:text-slate-700"
+                    activeTab === 'gs' ? "bg-background text-emerald-500 shadow-sm" : "text-muted-foreground hover:text-foreground"
                 )}
                 ><BookOpen size={16} className="inline mr-2" />GS Per Day</button>
             </div>
@@ -91,24 +91,24 @@ export const SyllabusView: React.FC = () => {
                     {activeTab === 'overview' && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10">
                             <div>
-                                <h3 className="text-lg font-bold text-slate-800 border-b border-slate-200 pb-2 mb-4">Mathematics 22-Week Topic Map</h3>
+                                <h3 className="text-lg font-bold text-foreground border-b border-border pb-2 mb-4">Mathematics 22-Week Topic Map</h3>
                                 <div className="space-y-2">
                                     {appendixA.map((str, i) => (
-                                        <div key={i} className="text-sm text-slate-600 bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
+                                        <div key={i} className="text-sm text-muted-foreground bg-card p-3 rounded-lg border border-border shadow-sm">
                                             {str}
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             <div>
-                                <h3 className="text-lg font-bold text-slate-800 border-b border-slate-200 pb-2 mb-4">Language Paper Strategy</h3>
+                                <h3 className="text-lg font-bold text-foreground border-b border-border pb-2 mb-4">Language Paper Strategy</h3>
                                 <div className="space-y-6">
                                     {appendixB.map((s, i) => (
                                         <div key={i}>
-                                            <h4 className="font-bold text-slate-700 mb-3">{s.label}</h4>
+                                            <h4 className="font-bold text-muted-foreground mb-3">{s.label}</h4>
                                             <ul className="space-y-2">
                                                 {s.details.map((l, j) => (
-                                                    <li key={j} className="text-sm text-slate-600 bg-white p-3 rounded-lg border border-slate-100 shadow-sm list-inside list-disc">
+                                                    <li key={j} className="text-sm text-muted-foreground bg-card p-3 rounded-lg border border-border shadow-sm list-inside list-disc">
                                                         <span className="ml-[-10px]">{l}</span>
                                                     </li>
                                                 ))}
@@ -117,27 +117,27 @@ export const SyllabusView: React.FC = () => {
                                     ))}
                                 </div>
 
-                                <div className="mt-8 bg-emerald-50 border border-emerald-100 p-5 rounded-xl">
-                                    <h4 className="font-bold text-emerald-800 mb-2">TARGET</h4>
-                                    <p className="text-sm text-emerald-700 font-medium">Both qualifying papers – score 50–60% of marks comfortably. 90-100/300 is sufficient to qualify.</p>
+                                <div className="mt-8 bg-emerald-500/10 border border-emerald-500/20 p-5 rounded-xl">
+                                    <h4 className="font-bold text-emerald-500 mb-2">TARGET</h4>
+                                    <p className="text-sm text-emerald-600/80 font-medium">Both qualifying papers – score 50–60% of marks comfortably. 90-100/300 is sufficient to qualify.</p>
                                 </div>
                             </div>
                         </div>
                     )}
 
                     {activeTab === 'math' && (
-                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-                            <div className="p-4 bg-slate-50 border-b border-slate-200 text-sm font-bold text-slate-700 flex justify-between">
+                        <div className="bg-card rounded-xl border border-border shadow-sm overflow-hidden">
+                            <div className="p-4 bg-muted border-b border-border text-sm font-bold text-muted-foreground flex justify-between">
                                 <span>Day Number</span>
                                 <span>Mathematics Topic</span>
                             </div>
-                            <div className="divide-y divide-slate-100">
+                            <div className="divide-y divide-border/50">
                                 {Array.from({length: 157}, (_, i) => i + 1).map(day => (
-                                    <div key={day} className="p-4 flex flex-col sm:flex-row sm:items-start gap-4 hover:bg-slate-50 transition-colors">
-                                        <div className="text-sm font-bold text-blue-600 min-w-[80px]">
+                                    <div key={day} className="p-4 flex flex-col sm:flex-row sm:items-start gap-4 hover:bg-muted/50 transition-colors">
+                                        <div className="text-sm font-bold text-primary min-w-[80px]">
                                             Day {day}
                                         </div>
-                                        <div className="text-sm text-slate-700 whitespace-pre-line leading-relaxed">
+                                        <div className="text-sm text-foreground/80 whitespace-pre-line leading-relaxed">
                                             {mathByDay[day] ? mathByDay[day].replace(/\\n/g, '\n') : 'Revision / Practice'}
                                         </div>
                                     </div>
@@ -147,18 +147,18 @@ export const SyllabusView: React.FC = () => {
                     )}
 
                     {activeTab === 'gs' && (
-                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden pb-10">
-                            <div className="p-4 bg-slate-50 border-b border-slate-200 text-sm font-bold text-slate-700 flex justify-between">
+                        <div className="bg-card rounded-xl border border-border shadow-sm overflow-hidden pb-10">
+                            <div className="p-4 bg-muted border-b border-border text-sm font-bold text-muted-foreground flex justify-between">
                                 <span>Date</span>
                                 <span>GS Topic</span>
                             </div>
-                            <div className="divide-y divide-slate-100">
+                            <div className="divide-y divide-border/50">
                                 {gsDates.map(date => (
-                                    <div key={date} className="p-4 flex flex-col sm:flex-row sm:items-start gap-4 hover:bg-slate-50 transition-colors">
-                                        <div className="text-sm font-bold text-emerald-600 min-w-[100px]">
+                                    <div key={date} className="p-4 flex flex-col sm:flex-row sm:items-start gap-4 hover:bg-muted/50 transition-colors">
+                                        <div className="text-sm font-bold text-emerald-500 min-w-[100px]">
                                             {date}
                                         </div>
-                                        <div className="text-sm text-slate-700 whitespace-pre-line leading-relaxed">
+                                        <div className="text-sm text-foreground/80 whitespace-pre-line leading-relaxed">
                                             {gsByDate[date].replace(/\\n/g, '\n')}
                                         </div>
                                     </div>
