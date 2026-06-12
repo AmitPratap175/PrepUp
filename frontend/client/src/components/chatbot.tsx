@@ -13,8 +13,8 @@ import { createBlob, decode, decodeAudioData } from '@/lib/audio-utils';
 interface ChatbotProps {
   onClose: () => void;
   initialMessage?: string;
-  history: Message[];
-  onHistoryChange: (history: Message[]) => void;
+  history?: Message[];
+  onHistoryChange?: (history: Message[]) => void;
   onBookmarkChange?: () => void;
 }
 
@@ -23,7 +23,13 @@ export interface Message {
   sender: 'user' | 'bot';
 }
 
-export const Chatbot: React.FC<ChatbotProps> = ({ onClose, initialMessage, history, onHistoryChange, onBookmarkChange }) => {
+export const Chatbot: React.FC<ChatbotProps> = ({ 
+  onClose, 
+  initialMessage, 
+  history = [], 
+  onHistoryChange = () => {}, 
+  onBookmarkChange 
+}) => {
   const [messages, setMessages] = useState<Message[]>(history);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);

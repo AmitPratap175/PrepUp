@@ -3,8 +3,10 @@ from django.contrib.auth import get_user_model
 from rest_framework.authtoken.models import Token
 from django.urls import reverse
 import json
-from unittest.mock import patch, AsyncMock
+from unittest.mock import patch, AsyncMock, MagicMock
 from asgiref.sync import async_to_sync
+
+from langchain_core.messages import AIMessage
 
 User = get_user_model()
 
@@ -18,13 +20,18 @@ class ChatbotAPITestCase(APITestCase):
         self.token = Token.objects.create(user=self.user)
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
 
-    @patch('langchain_google_genai.chat_models.ChatGoogleGenerativeAI')
-    def test_chatbot_view_post(self, mock_chat_google_genai):
+    @patch('api.chatbot.graph.utils.chains.get_chat_model')
+    def test_chatbot_view_post(self, mock_get_chat_model):
         """
         Tests the chatbot endpoint with a POST request.
         """
         # Configure the mock
-        mock_chat_google_genai.return_value.invoke.return_value.content = "This is a mock reply."
+        mock_model = MagicMock()
+        aimsg = AIMessage(content="This is a mock reply.")
+        mock_model.bind_tools.return_value = mock_model
+        mock_model.invoke.return_value = aimsg
+        mock_model.return_value = aimsg
+        mock_get_chat_model.return_value = mock_model
 
         url = reverse('chatbot')
 

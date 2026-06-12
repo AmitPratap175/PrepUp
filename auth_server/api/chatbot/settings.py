@@ -16,9 +16,9 @@ class Settings(BaseSettings):
     SUPPORT_PHONE: str = "+91-6370698003"
 
 
-    TEXT_MODEL_NAME: str = "gemini-2.0-flash"
+    TEXT_MODEL_NAME: str = "gemini-2.5-flash"
     SMALL_TEXT_MODEL_NAME: str = "gemma2-9b-it"
-    STT_MODEL_NAME: str = "gemini-2.0-flash"
+    STT_MODEL_NAME: str = "gemini-2.5-flash"
     TTS_MODEL_NAME: str = "gemini-2.5-flash-preview-tts"
     ITT_MODEL_NAME: str = "gemini-2.0-flash"
     TTI_MODEL_NAME: str = "models/gemini-2.0-flash-exp-image-generation"

@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -31,7 +31,7 @@ import SectionalTestsPage from "@/pages/sectional-tests";
 import SectionalTestPage from "@/pages/sectional-test-page";
 import SectionalTestResultPage from "@/pages/sectional-test-result";
 import PracticeTestResultPage from "@/pages/practice-test-result";
-import { AuthProvider } from "@/contexts/auth-context";
+import { AuthProvider, useAuth } from "@/contexts/auth-context";
 import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
 import AddQuestionPage from "@/pages/AddQuestion";
 import SettingsPage from "./pages/Settings";
@@ -64,8 +64,10 @@ import SSCQuizPage from "@/pages/ssc/quiz";
 import SSCResultPage from "@/pages/ssc/result";
 import SSCYearWisePage from "@/pages/ssc/pyq-years";
 import SSCBookmarksPage from "@/pages/ssc/bookmarks";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
+import { Chatbot } from "@/components/chatbot";
+import { MessageSquare } from "lucide-react";
 import UPSCYearWisePage from "@/pages/upsc/pyq-years";
 import UPSCReviewMistakesPage from "@/pages/upsc/review-mistakes";
 import PIBListPage from "@/pages/pib/list";
@@ -180,6 +182,9 @@ function Router() {
 function App() {
   const { settings } = useSettings();
   useStudyTracker();
+  const [location] = useLocation();
+  const { isAuthenticated } = useAuth();
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
   useEffect(() => {
     if (settings) {
@@ -198,10 +203,42 @@ function App() {
     }
   }, [settings]);
 
+  // Determine if we are on a UPSC page
+  const isUPSCSection = location.includes('/upsc') || 
+                        location.startsWith('/mains-answer') || 
+                        location.startsWith('/pib') || 
+                        location.startsWith('/quiz-generator') || 
+                        location.startsWith('/chapterwise-quiz') || 
+                        location.startsWith('/ncert-topicwise-quiz');
+
   return (
     <>
       <Toaster />
       <Router />
+      
+      {isAuthenticated && isUPSCSection && (
+        <>
+          {/* Floating trigger button */}
+          <div className="fixed bottom-6 right-6 z-40">
+            <Button
+              onClick={() => setIsChatbotOpen(!isChatbotOpen)}
+              className="h-14 w-14 rounded-full shadow-2xl bg-primary hover:bg-primary/90 text-primary-foreground flex items-center justify-center transition-all duration-300 hover:scale-105"
+              title="Open PrepUp Assistant"
+            >
+              <MessageSquare className="h-6 w-6" />
+            </Button>
+          </div>
+
+          {/* Floating Chatbot overlay */}
+          {isChatbotOpen && (
+            <div className="fixed inset-0 z-50 pointer-events-none">
+              <div className="pointer-events-auto">
+                <Chatbot onClose={() => setIsChatbotOpen(false)} />
+              </div>
+            </div>
+          )}
+        </>
+      )}
     </>
   );
 }
