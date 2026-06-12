@@ -79,11 +79,27 @@ export function CustomMapQuiz({ onStartCustomVectorQuiz }: CustomMapQuizProps) {
   const processImage = async (file: File, base64: string) => {
     setIsProcessing(true);
     try {
+      let apiKey = import.meta.env.VITE_GEMINI_API_KEY || API_KEY;
+      try {
+        const token = localStorage.getItem('token');
+        const response = await fetch('/api/chatbot/config/', {
+          headers: { 'Authorization': `Token ${token}` }
+        });
+        const data = await response.json();
+        if (data.api_key) {
+          apiKey = data.api_key;
+        }
+      } catch (e) {
+        console.error("Failed to fetch runtime API key for custom map upload", e);
+      }
+
+      const aiClient = new GoogleGenAI({ apiKey: apiKey });
+
       const typeInstruction = targetType === 'auto' 
         ? `2. Identify the type of map. It must be exactly one of these: "political" (states/countries), "physical" (mountains/deserts), "climatic", "capitals", "rivers".`
         : `2. The type of map is strictly "${targetType}". Do not auto-detect.`;
 
-      const response = await ai.models.generateContent({
+      const response = await aiClient.models.generateContent({
         model: "gemini-2.5-pro",
         contents: [
           {

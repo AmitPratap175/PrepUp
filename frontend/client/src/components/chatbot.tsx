@@ -255,11 +255,26 @@ export const Chatbot: React.FC<ChatbotProps> = ({
     });
   };
 
-  const initClient = () => {
+  const initClient = async () => {
     initAudio();
     setAgentState('connecting');
+    
+    let apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('/api/chatbot/config/', {
+        headers: { 'Authorization': `Token ${token}` }
+      });
+      const data = await response.json();
+      if (data.api_key) {
+        apiKey = data.api_key;
+      }
+    } catch (e) {
+      console.error("Failed to fetch runtime API key, falling back to build env key", e);
+    }
+
     client.current = new GoogleGenAI({
-      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+      apiKey: apiKey,
     });
     outputNode.current?.connect(outputAudioContext.current!.destination);
     initSession();

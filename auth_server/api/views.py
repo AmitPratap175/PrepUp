@@ -431,6 +431,17 @@ class ChatbotView(APIView):
 
         return Response({"reply": reply})
 
+class ChatbotConfigView(APIView):
+    """
+    Returns the configured Google/Gemini API key for authenticated users.
+    Allows frontend components to load the key dynamically.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        from .chatbot.settings import settings
+        return Response({"api_key": settings.GOOGLE_API_KEY})
+
 class ResetTestProgressView(APIView):
     """
     Resets the test progress for the authenticated user.

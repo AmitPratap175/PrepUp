@@ -43,6 +43,7 @@ urlpatterns = [
     path('generate-questions/', views.GenerateQuestionsView.as_view(), name='generate-questions'),
     path('chatbot/tools/', views.ChatbotToolsView.as_view(), name='chatbot-tools'),
     path('chatbot/execute-tool/', views.ChatbotToolExecutionView.as_view(), name='chatbot-execute-tool'),
+    path('chatbot/config/', views.ChatbotConfigView.as_view(), name='chatbot-config'),
     path('leaderboard/', views.LeaderboardView.as_view(), name='leaderboard'),
     path('analytics/', views.PerformanceAnalyticsView.as_view(), name='analytics'),
     path('leaderboards/mock-test/<str:test_id>/', views.MockTestLeaderboardView.as_view(), name='mock-test-leaderboard'),
