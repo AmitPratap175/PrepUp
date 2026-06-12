@@ -410,10 +410,23 @@ export const Chatbot: React.FC<ChatbotProps> = ({
       }
 
       const data = await response.json();
-      const botMessage: Message = { text: data.reply, sender: 'bot' };
+      let replyText = '';
+      if (typeof data.reply === 'string') {
+        replyText = data.reply;
+      } else if (Array.isArray(data.reply)) {
+        replyText = data.reply.map((part: any) => {
+          if (typeof part === 'string') return part;
+          if (part && typeof part === 'object' && part.type === 'text') return part.text || '';
+          return '';
+        }).join('');
+      } else {
+        replyText = String(data.reply || '');
+      }
+
+      const botMessage: Message = { text: replyText, sender: 'bot' };
       setMessages(prevMessages => [...prevMessages, botMessage]);
 
-      if (data.reply.toLowerCase().includes('bookmark')) {
+      if (replyText.toLowerCase().includes('bookmark')) {
         onBookmarkChange?.();
       }
     } catch (error: any) {

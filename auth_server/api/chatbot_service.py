@@ -19,7 +19,16 @@ async def _invoke_agent_async(session_id: str, message: str, token: str = None):
         if final_state and 'messages' in final_state and final_state['messages']:
             # The last message is the response from the AI
             last_message = final_state['messages'][-1]
-            return last_message.content
+            content = last_message.content
+            if isinstance(content, list):
+                text_parts = []
+                for part in content:
+                    if isinstance(part, dict) and part.get('type') == 'text':
+                        text_parts.append(part.get('text', ''))
+                    elif isinstance(part, str):
+                        text_parts.append(part)
+                return "".join(text_parts)
+            return str(content)
         return "Sorry, I couldn't process your request."
 
 def invoke_agent(session_id: str, message: str, token: str = None) -> str:
