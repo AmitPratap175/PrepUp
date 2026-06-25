@@ -1,0 +1,106 @@
+client/src/components/TodaySchedule.tsx(127,19): error TS2322: Type '{ value: number; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & Omit<ProgressProps & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & Omit<ProgressProps & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>'.
+client/src/components/chatbot.tsx(117,7): error TS2353: Object literal may only specify known properties, and 'tools' does not exist in type 'LiveConnectParameters'.
+client/src/components/chatbot.tsx(135,32): error TS18048: 'toolCalls' is possibly 'undefined'.
+client/src/components/chatbot.tsx(169,25): error TS18048: 'message.serverContent.modelTurn.parts' is possibly 'undefined'.
+client/src/components/chatbot.tsx(179,22): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+client/src/components/chatbot.tsx(198,38): error TS18048: 'message.serverContent' is possibly 'undefined'.
+client/src/components/chatbot.tsx(198,38): error TS18048: 'message.serverContent.inputTranscription' is possibly 'undefined'.
+client/src/components/chatbot.tsx(206,38): error TS18048: 'message.serverContent' is possibly 'undefined'.
+client/src/components/chatbot.tsx(206,38): error TS18048: 'message.serverContent.outputTranscription' is possibly 'undefined'.
+client/src/components/chatbot.tsx(512,14): error TS2304: Cannot find name 'Bot'.
+client/src/components/chatbot.tsx(617,56): error TS2304: Cannot find name 'handleVoiceButtonClick'.
+client/src/components/practice-test-interface.tsx(81,5): error TS2741: Property 'isLastAttempted' is missing in type '{ answered: boolean; visited: boolean; markedForReview: boolean; isCurrent: boolean; }' but required in type 'QuestionStatus'.
+client/src/components/sectional-test-interface.tsx(65,27): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{}'.
+  No index signature with a parameter of type 'number' was found on type '{}'.
+client/src/components/sectional-test-interface.tsx(135,51): error TS2339: Property 'map' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(135,55): error TS7006: Parameter 'question' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(167,35): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(172,29): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(218,24): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{}'.
+  No index signature with a parameter of type 'number' was found on type '{}'.
+client/src/components/sectional-test-interface.tsx(277,57): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(284,52): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(350,65): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(402,26): error TS2339: Property 'map' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(402,31): error TS7006: Parameter '_' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(402,34): error TS7006: Parameter 'index' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(454,75): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(473,67): error TS7006: Parameter 'url' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(473,72): error TS7006: Parameter 'i' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(491,49): error TS7006: Parameter 'option' implicitly has an 'any' type.
+client/src/components/sectional-test-interface.tsx(568,72): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/components/sectional-test-interface.tsx(571,63): error TS2339: Property 'length' does not exist on type '{}'.
+client/src/pages/AddQuestion.tsx(25,11): error TS2339: Property 'token' does not exist on type 'AuthContextType'.
+client/src/pages/home.tsx(462,24): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+client/src/pages/map-master.tsx(12,8): error TS7016: Could not find a declaration file for module 'react-simple-maps'. '/home/dspratap/Downloads/PrepUp/frontend/node_modules/react-simple-maps/dist/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-simple-maps` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-simple-maps';`
+client/src/pages/map-master.tsx(531,64): error TS2339: Property 'features' does not exist on type 'Feature<Point, GeoJsonProperties>'.
+client/src/pages/map-master.tsx(1898,25): error TS7031: Binding element 'geographies' implicitly has an 'any' type.
+client/src/pages/map-master.tsx(1920,27): error TS7031: Binding element 'geographies' implicitly has an 'any' type.
+client/src/pages/map-master.tsx(1939,27): error TS7031: Binding element 'geographies' implicitly has an 'any' type.
+client/src/pages/map-master.tsx(1995,35): error TS7006: Parameter 'e' implicitly has an 'any' type.
+client/src/pages/mock-test-result.tsx(42,7): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/mock-test-result.tsx(42,25): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/mock-test-result.tsx(48,56): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/mock-test-result.tsx(63,30): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/mock-test-result.tsx(118,3): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/mock-test-result.tsx(118,21): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/mock-test-result.tsx(124,52): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/mock-test-result.tsx(139,26): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/practice-test-result.tsx(43,7): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/practice-test-result.tsx(43,25): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/practice-test-result.tsx(49,56): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/practice-test-result.tsx(64,30): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/practice-test-result.tsx(119,3): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/practice-test-result.tsx(119,21): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/practice-test-result.tsx(125,52): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/practice-test-result.tsx(140,26): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/sectional-test-result.tsx(43,7): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/sectional-test-result.tsx(43,25): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/sectional-test-result.tsx(49,56): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/sectional-test-result.tsx(64,30): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/sectional-test-result.tsx(119,3): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/sectional-test-result.tsx(119,21): error TS7006: Parameter 'q' implicitly has an 'any' type.
+client/src/pages/sectional-test-result.tsx(125,52): error TS7006: Parameter 'o' implicitly has an 'any' type.
+client/src/pages/sectional-test-result.tsx(140,26): error TS18046: 'questions' is of type 'unknown'.
+client/src/pages/study-materials.tsx(201,24): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+client/src/pages/upsc/mastery-2027/UPSCContext.tsx(392,21): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'SetStateAction<string | null>'.
+  Type 'undefined' is not assignable to type 'SetStateAction<string | null>'.
+client/src/pages/upsc/mastery-2027/components/SyllabusView.tsx(141,46): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+  No index signature with a parameter of type 'number' was found on type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+client/src/pages/upsc/mastery-2027/components/SyllabusView.tsx(141,63): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+  No index signature with a parameter of type 'number' was found on type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+client/src/pages/upsc/mastery-2027/components/SyllabusView.tsx(162,46): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ '2026-05-04': string; '2026-05-05': string; '2026-05-06': string; '2026-05-07': string; '2026-05-08': string; '2026-05-09': string; '2026-05-10': string; '2026-05-11': string; '2026-05-12': string; '2026-05-13': string; ... 375 more ...; '2027-06-30': string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ '2026-05-04': string; '2026-05-05': string; '2026-05-06': string; '2026-05-07': string; '2026-05-08': string; '2026-05-09': string; '2026-05-10': string; '2026-05-11': string; '2026-05-12': string; '2026-05-13': string; ... 375 more ...; '2027-06-30': string; }'.
+client/src/pages/upsc/mastery-2027/lib/scheduleData.ts(11,15): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ '2026-05-04': string; '2026-05-05': string; '2026-05-06': string; '2026-05-07': string; '2026-05-08': string; '2026-05-09': string; '2026-05-10': string; '2026-05-11': string; '2026-05-12': string; '2026-05-13': string; ... 375 more ...; '2027-06-30': string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ '2026-05-04': string; '2026-05-05': string; '2026-05-06': string; '2026-05-07': string; '2026-05-08': string; '2026-05-09': string; '2026-05-10': string; '2026-05-11': string; '2026-05-12': string; '2026-05-13': string; ... 375 more ...; '2027-06-30': string; }'.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(13,19): error TS7006: Parameter 'monthNum' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(196,18): error TS7006: Parameter 'topic' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(196,25): error TS7006: Parameter 'dayStr' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(597,18): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(597,21): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(597,24): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(601,19): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(601,22): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(601,25): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(607,18): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(607,21): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(607,24): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(638,25): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(638,28): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(638,31): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(641,33): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+  No index signature with a parameter of type 'number' was found on type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(641,56): error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+  No index signature with a parameter of type 'number' was found on type '{ 1: string; 2: string; 3: string; 4: string; 5: string; 6: string; 7: string; 8: string; 9: string; 10: string; 11: string; 12: string; 13: string; 14: string; 15: string; 16: string; 17: string; 18: string; 19: string; ... 137 more ...; 157: string; }'.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(650,21): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(650,24): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(650,27): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(676,19): error TS7006: Parameter 'y' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(676,22): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(676,25): error TS7006: Parameter 'd' implicitly has an 'any' type.
+client/src/pages/upsc/mastery-2027/lib/timetable.ts(676,28): error TS7006: Parameter 'monthNum' implicitly has an 'any' type.

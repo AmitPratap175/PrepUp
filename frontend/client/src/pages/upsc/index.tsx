@@ -49,6 +49,18 @@ export default function UPSCPage() {
         enabled: !!user
     });
 
+    const { data: testRevisions, isLoading: isLoadingTestRevisions } = useQuery<any[]>({
+        queryKey: ["/api/revision/?subject=UPSC 2027 Prelims"],
+        queryFn: async () => {
+            const response = await fetch(`/api/revision/?subject=UPSC 2027 Prelims`, {
+                headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
+            });
+            if (!response.ok) return [];
+            return response.json();
+        },
+        enabled: !!user
+    });
+
     const upscTests = tests || [];
     const sessionsMap = new Map(sessions?.map(s => [s.testId, s]));
 
@@ -59,7 +71,7 @@ export default function UPSCPage() {
     }
 
     const handleStartRevision = () => {
-        setLocation('/upsc/revision');
+        setLocation('/upsc/revision?subject=Current Affairs');
     };
 
     const handleRetake = (testId: string) => {
@@ -83,7 +95,8 @@ export default function UPSCPage() {
                         <TabsList className="mb-8">
                             <TabsTrigger value="overview">Overview</TabsTrigger>
                             <TabsTrigger value="quizzes">Quizzes</TabsTrigger>
-                            <TabsTrigger value="revision">Revision</TabsTrigger>
+                            <TabsTrigger value="revision">Daily Revision</TabsTrigger>
+                            <TabsTrigger value="tests-revision">Tests Revision</TabsTrigger>
                         </TabsList>
 
                         <TabsContent value="overview">
@@ -132,7 +145,7 @@ export default function UPSCPage() {
                                                 <p className="text-sm text-muted-foreground">Pending Reviews</p>
                                             </div>
                                             {revisions && revisions.length > 0 && (
-                                                <Button size="sm" onClick={handleStartRevision} >Review Now</Button>
+                                                <Button size="sm" onClick={() => setLocation('/upsc/revision')} >Review Now</Button>
                                             )}
                                         </div>
                                     </CardContent>
@@ -225,6 +238,21 @@ export default function UPSCPage() {
                                     <CardContent>
                                         <Link href="/upsc/mastery-2027">
                                             <Button className="w-full" variant="outline">Open Dashboard</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-indigo-500/5 border-indigo-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <BookOpen className="h-5 w-5 text-indigo-500" />
+                                            2027 Test Series
+                                        </CardTitle>
+                                        <CardDescription>Full length mock tests and practice tests for 2027 Prelims.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/2027-tests">
+                                            <Button className="w-full" variant="outline">Take Tests</Button>
                                         </Link>
                                     </CardContent>
                                 </Card>
@@ -348,10 +376,10 @@ export default function UPSCPage() {
                                 <CardHeader>
                                     <CardTitle className="flex items-center gap-2">
                                         <Brain className="h-5 w-5 text-primary" />
-                                        Spaced Repetition Review
+                                        Daily Spaced Repetition
                                     </CardTitle>
                                     <CardDescription>
-                                        Review questions you missed previously to strengthen your memory.
+                                        Review questions you missed from Daily Current Affairs to strengthen your memory.
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -370,7 +398,41 @@ export default function UPSCPage() {
                                     ) : (
                                         <div className="text-center py-8 text-muted-foreground">
                                             <CheckCircle2 className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                                            <p>All caught up! No questions due for revision today.</p>
+                                            <p>All caught up! No daily questions due for revision today.</p>
+                                        </div>
+                                    )}
+                                </CardContent>
+                            </Card>
+                        </TabsContent>
+
+                        <TabsContent value="tests-revision" className="space-y-4">
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle className="flex items-center gap-2">
+                                        <Brain className="h-5 w-5 text-blue-500" />
+                                        2027 Tests Spaced Revision
+                                    </CardTitle>
+                                    <CardDescription>
+                                        Review questions you missed in your UPSC 2027 Prelims Mock Tests.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    {isLoadingTestRevisions ? (
+                                        <div className="flex justify-center p-4">
+                                            <Loader2 className="h-8 w-8 animate-spin" />
+                                        </div>
+                                    ) : testRevisions && testRevisions.length > 0 ? (
+                                        <div className="text-center py-8">
+                                            <div className="text-4xl font-bold text-blue-500 mb-2">{testRevisions.length}</div>
+                                            <p className="text-muted-foreground mb-6">Questions pending for review today</p>
+                                            <Button size="lg" onClick={() => setLocation('/upsc/revision?subject=UPSC%202027%20Prelims')} className="gap-2">
+                                                <Brain className="h-4 w-4" /> Start Tests Revision
+                                            </Button>
+                                        </div>
+                                    ) : (
+                                        <div className="text-center py-8 text-muted-foreground">
+                                            <CheckCircle2 className="h-12 w-12 mx-auto mb-4 text-green-500" />
+                                            <p>All caught up! No mock test questions due for revision today.</p>
                                         </div>
                                     )}
                                 </CardContent>

@@ -75,6 +75,7 @@ const navigation = [
       { title: "PDF Quiz Generator", href: "/quiz-generator" },
       { title: "Chapterwise Quiz", href: "/chapterwise-quiz" },
       { title: "NCERT Topicwise Quiz", href: "/ncert-topicwise-quiz" },
+      { title: "Daily Revision", href: "/upsc/daily-revision" },
       { title: "Daily Practice Questions", href: "/upsc/daily-practice-questions" },
       { title: "Monthly MCQ Questions", href: "/upsc/monthly-mcq-questions" },
       { title: "PIB Releases", href: "/upsc/pib" },
@@ -82,6 +83,7 @@ const navigation = [
       { title: "151 Essays", href: "/upsc/essays" },
       { title: "Map Master", href: "/upsc/map-master" },
       { title: "UPSC 2027 Mastery", href: "/upsc/mastery-2027" },
+      { title: "Math Optional Evaluation", href: "/upsc/math-evaluation" },
     ]
   },
   {

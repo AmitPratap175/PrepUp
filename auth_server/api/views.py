@@ -557,10 +557,61 @@ class TestSessionDetailView(APIView):
                 session.end_time = data.get('endTime')
 
             session.save()
+            
+            # If the session just completed, trigger SRS flashcards for incorrect answers
+            if session.status == 'completed' and 'status' in data:
+                from api.tasks import generate_flashcard_task
+                for ans in session.answers:
+                    # 'isCorrect' or 'status' == 'incorrect' depending on frontend schema
+                    is_incorrect = ans.get('isCorrect') is False or ans.get('status') == 'incorrect'
+                    
+                    if is_incorrect:
+                        # We need the question data. We'll pass the whole ans dictionary.
+                        question_id = ans.get('id') or ans.get('question_id') or ans.get('qid')
+                        user_answer = ans.get('selectedAnswer') or ans.get('user_answer')
+                        subject = session.subject or 'upsc'
+                        
+                        if question_id and user_answer:
+                            from api.models import RevisionSchedule
+                            from datetime import datetime, timedelta
+                            from django.utils import timezone
+                            
+                            # Create RevisionSchedule sync to get ID
+                            revision, _ = RevisionSchedule.objects.get_or_create(
+                                user=request.user,
+                                question_id=question_id,
+                                defaults={
+                                    'question_data': ans,
+                                    'subject': subject,
+                                    'next_review_date': datetime.now(timezone.utc).date() + timedelta(days=2),
+                                    'review_interval': 2,
+                                    'exam_target': 'upsc'
+                                }
+                            )
+                            # Reset interval if it already existed
+                            if not _:
+                                revision.review_interval = 2
+                                revision.next_review_date = datetime.now(timezone.utc).date() + timedelta(days=2)
+                                revision.save()
+                                
+                            # Trigger the async task (Note: celery 5.x doesn't officially support async tasks natively,
+                            # but we can use asyncio.run to call it or dispatch it as a regular celery task if we configure it.
+                            # For simplicity, we'll import and run it as an asyncio task if it's an async def,
+                            # or just run it via delay() if celery is running)
+                            import asyncio
+                            try:
+                                # For demonstration, run it in background asyncio task
+                                asyncio.create_task(generate_flashcard_task(revision.id, ans, user_answer))
+                            except RuntimeError:
+                                # Fallback if no event loop is running (e.g., standard Django sync view)
+                                pass # We'll need a better way to trigger async from sync view
+
             return Response({'id': str(session.id)}, status=status.HTTP_200_OK)
         except TestSession.DoesNotExist:
             return Response({'error': 'Test session not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
+            import traceback
+            traceback.print_exc()
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class UserQuizGoalView(APIView):
@@ -1580,6 +1631,73 @@ class EssaySubmitView(AsyncAPIView):
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
+class DueRevisionsView(APIView):
+    """
+    Returns flashcards that are due for revision today or earlier.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        from api.models import RevisionSchedule
+        from django.utils import timezone
+        
+        today = timezone.now().date()
+        
+        # Get revisions due today or earlier that have an AI flashcard generated
+        due_revisions = RevisionSchedule.objects.filter(
+            user=request.user,
+            next_review_date__lte=today,
+            ai_flashcard_content__isnull=False
+        ).order_by('next_review_date')[:50]
+        
+        revisions_data = []
+        for rev in due_revisions:
+            revisions_data.append({
+                'id': str(rev.id),
+                'question_id': rev.question_id,
+                'subject': rev.subject,
+                'flashcard': rev.ai_flashcard_content,
+                'next_review_date': rev.next_review_date.isoformat(),
+            })
+            
+        return Response({'revisions': revisions_data})
+
+
+class ReviewFlashcardView(APIView):
+    """
+    Updates the revision schedule after a user reviews a flashcard.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, revision_id):
+        from api.models import RevisionSchedule
+        from datetime import timedelta
+        from django.utils import timezone
+        
+        difficulty = request.data.get('difficulty') # "hard", "good", "easy"
+        if not difficulty in ["hard", "good", "easy"]:
+            return Response({'error': 'Invalid difficulty'}, status=status.HTTP_400_BAD_REQUEST)
+            
+        try:
+            revision = RevisionSchedule.objects.get(id=revision_id, user=request.user)
+            
+            # Simple SRS Logic
+            if difficulty == "hard":
+                revision.review_interval = 1
+            elif difficulty == "good":
+                revision.review_interval = max(2, int(revision.review_interval * 1.5))
+            elif difficulty == "easy":
+                revision.review_interval = max(3, int(revision.review_interval * 2.5))
+                
+            revision.next_review_date = timezone.now().date() + timedelta(days=revision.review_interval)
+            revision.save()
+            
+            return Response({'status': 'success', 'next_review_date': revision.next_review_date.isoformat()})
+            
+        except RevisionSchedule.DoesNotExist:
+            return Response({'error': 'Revision not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
 
 class EssayReviewView(APIView):
     """
@@ -2220,3 +2338,128 @@ class UPSCMasteryStateView(APIView):
             return Response({'status': 'success', 'created': created}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdateQuestionExplanationView(APIView):
+    """
+    POST: Update the solution explanation and correct option for a UPSC question.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        question_id = request.data.get('question_id')
+        explanation = request.data.get('explanation')
+        correct_option = request.data.get('correct_option') # e.g. "A", "B", "C", "D" or "1", "2", "3", "4"
+
+        if not question_id or not explanation:
+            return Response({'error': 'question_id and explanation are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Map correct option label to data value
+        mapped_value = None
+        if correct_option:
+            option_mapping = {'A': '1', 'B': '2', 'C': '3', 'D': '4'}
+            if correct_option in option_mapping:
+                mapped_value = option_mapping[correct_option]
+            elif correct_option in ['1', '2', '3', '4']:
+                mapped_value = correct_option
+            else:
+                return Response({'error': f'Invalid correct_option: {correct_option}. Must be A, B, C, D or 1, 2, 3, 4'}, status=status.HTTP_400_BAD_REQUEST)
+
+        import os
+        import json
+        
+        # Base dir of auth_server data
+        base_upsc_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data/upsc')
+        found_on_disk = False
+        saved_file = None
+
+        # Helper to search and update in a file
+        def update_file_questions(file_path):
+            nonlocal found_on_disk, saved_file
+            if not os.path.exists(file_path):
+                return False
+            try:
+                with open(file_path, 'r') as f:
+                    data = json.load(f)
+                
+                questions = data.get('questions', [])
+                file_modified = False
+                for q in questions:
+                    if q.get('qid') == question_id:
+                        q['solution_text'] = explanation
+                        if mapped_value:
+                            q['correct_option_data'] = mapped_value
+                            for opt in q.get('options', []):
+                                opt['is_correct'] = (opt.get('data_option') == mapped_value)
+                        
+                        # Rebuild full_markdown
+                        full_markdown = f"### Question (qid: {q.get('qid', '')})\n\n{q.get('question_text', '')}\n\n**Options:**\n"
+                        correct_label = ""
+                        for opt in q.get('options', []):
+                            label = opt.get('label', '')
+                            opt_text = opt.get('option_text', '')
+                            is_corr = opt.get('is_correct', False)
+                            mark = " ✅" if is_corr else ""
+                            full_markdown += f"- **{label}**. {opt_text}{mark}\n"
+                            if is_corr:
+                                correct_label = label
+                        full_markdown += f"\n**Correct Answer:** {correct_label}\n\n**Solution:**\n{explanation}\n"
+                        q["full_markdown"] = full_markdown
+                        
+                        file_modified = True
+                        found_on_disk = True
+                        saved_file = file_path
+                        break
+                
+                if file_modified:
+                    with open(file_path, 'w') as f:
+                        json.dump(data, f, indent=2)
+                    return True
+            except Exception as e:
+                print(f"Error updating file {file_path}: {e}")
+            return False
+
+        # Scan base_upsc_dir and subdirectories
+        if os.path.exists(base_upsc_dir):
+            for root, dirs, files in os.walk(base_upsc_dir):
+                for file in files:
+                    if file.endswith('.json'):
+                        file_path = os.path.join(root, file)
+                        if update_file_questions(file_path):
+                            break
+                if found_on_disk:
+                    break
+
+        # Also update in active memory storage
+        found_in_mem = False
+        for test in storage.practice_tests.values():
+            for q_mem in test.get('questions', []):
+                if q_mem.get('qid') == question_id:
+                    q_mem['solution_text'] = explanation
+                    if mapped_value:
+                        q_mem['correct_option_data'] = mapped_value
+                        for opt in q_mem.get('options', []):
+                            opt['is_correct'] = (opt.get('data_option') == mapped_value)
+                    
+                    # Build full markdown
+                    full_markdown = f"### Question (qid: {q_mem.get('qid', '')})\n\n{q_mem.get('question_text', '')}\n\n**Options:**\n"
+                    correct_label = ""
+                    for opt in q_mem.get('options', []):
+                        label = opt.get('label', '')
+                        opt_text = opt.get('option_text', '')
+                        is_corr = opt.get('is_correct', False)
+                        mark = " ✅" if is_corr else ""
+                        full_markdown += f"- **{label}**. {opt_text}{mark}\n"
+                        if is_corr:
+                            correct_label = label
+                    full_markdown += f"\n**Correct Answer:** {correct_label}\n\n**Solution:**\n{explanation}\n"
+                    q_mem["full_markdown"] = full_markdown
+                    
+                    found_in_mem = True
+
+        return Response({
+            'status': 'success',
+            'found_on_disk': found_on_disk,
+            'saved_file': os.path.basename(saved_file) if saved_file else None,
+            'found_in_mem': found_in_mem
+        }, status=status.HTTP_200_OK)

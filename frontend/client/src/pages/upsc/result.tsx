@@ -41,7 +41,10 @@ export default function UPSCResultPage() {
             setSession(sessionData);
 
             // 2. Fetch Test Details (for questions and solutions)
-            const testRes = await fetch(`/api/practice-tests/${sessionData.testId}/`, { headers });
+            let testRes = await fetch(`/api/practice-tests/${sessionData.testId}/`, { headers });
+            if (!testRes.ok) {
+                testRes = await fetch(`/api/upsc/2027-tests/${sessionData.testId}/`, { headers });
+            }
             if (!testRes.ok) throw new Error("Failed to fetch test");
             const testData: PracticeTest = await testRes.json();
             setTest(testData);
@@ -91,7 +94,10 @@ export default function UPSCResultPage() {
     questions.forEach((q: any) => {
         const userAns = userAnswersMap[q.id || q.qid];
         if (userAns) {
-            if (userAns === q.correct_answer) {
+            const correctOption = q.options?.find((o: any) => o.is_correct || o.label === q.correct_option_data);
+            const isCorrect = correctOption ? userAns === correctOption.label : userAns === q.correct_answer;
+            
+            if (isCorrect) {
                 correctCount++;
             } else {
                 incorrectCount++;

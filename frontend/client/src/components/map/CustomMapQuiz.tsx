@@ -93,14 +93,13 @@ export function CustomMapQuiz({ onStartCustomVectorQuiz }: CustomMapQuizProps) {
         console.error("Failed to fetch runtime API key for custom map upload", e);
       }
 
-      const aiClient = new GoogleGenAI({ apiKey: apiKey });
-
       const typeInstruction = targetType === 'auto' 
         ? `2. Identify the type of map. It must be exactly one of these: "political" (states/countries), "physical" (mountains/deserts), "climatic", "capitals", "rivers".`
         : `2. The type of map is strictly "${targetType}". Do not auto-detect.`;
 
-      const response = await aiClient.models.generateContent({
-        model: "gemini-2.5-pro",
+      const genAI = new GoogleGenAI({ apiKey });
+      const response = await genAI.models.generateContent({
+        model: "gemini-2.5-flash",
         contents: [
           {
             role: "user",
@@ -250,12 +249,28 @@ Only return the JSON object.` }
         {/* Map Area */}
         <div className="flex-1 bg-[#FDFCF8] p-6 flex items-center justify-center overflow-auto relative">
           {imageSrc ? (
-            <div className="relative inline-block shadow-2xl rounded-xl overflow-hidden border border-[#1A1A1A]/10 bg-white">
-              <img 
-                src={imageSrc} 
-                alt="Uploaded Map" 
-                className="max-w-full max-h-[800px] object-contain block"
-              />
+            <div className={cn(
+              "relative shadow-2xl rounded-xl overflow-hidden border border-[#1A1A1A]/10 bg-white",
+              imageSrc.startsWith('data:application/pdf') ? "w-full h-[800px]" : "inline-block"
+            )}>
+              {imageSrc.startsWith('data:application/pdf') ? (
+                <object
+                  data={imageSrc}
+                  type="application/pdf"
+                  className="w-full h-full block"
+                >
+                  <div className="flex flex-col items-center justify-center h-full p-8 text-center text-[#1A1A1A]/60">
+                    <p className="font-medium text-lg">PDF Document Processed</p>
+                    <p className="text-sm mt-2">Preview is not available in this browser view.</p>
+                  </div>
+                </object>
+              ) : (
+                <img 
+                  src={imageSrc} 
+                  alt="Uploaded Map" 
+                  className="max-w-full max-h-[800px] object-contain block"
+                />
+              )}
             </div>
           ) : (
             <div className="text-center text-[#1A1A1A]/40 max-w-md">

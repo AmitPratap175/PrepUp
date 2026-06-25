@@ -16,6 +16,9 @@ from .chapter_progress_view import ChapterProgressView
 from .pdf_export_view import ChapterPDFExportView
 from . import views_pib
 from . import views_news
+from . import views_evaluation
+from . import views_upsc_2027
+
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
     path('courses/', views.courses, name='courses'),
@@ -44,6 +47,7 @@ urlpatterns = [
     path('chatbot/tools/', views.ChatbotToolsView.as_view(), name='chatbot-tools'),
     path('chatbot/execute-tool/', views.ChatbotToolExecutionView.as_view(), name='chatbot-execute-tool'),
     path('chatbot/config/', views.ChatbotConfigView.as_view(), name='chatbot-config'),
+    path('questions/update-explanation/', views.UpdateQuestionExplanationView.as_view(), name='update-question-explanation'),
     path('leaderboard/', views.LeaderboardView.as_view(), name='leaderboard'),
     path('analytics/', views.PerformanceAnalyticsView.as_view(), name='analytics'),
     path('leaderboards/mock-test/<str:test_id>/', views.MockTestLeaderboardView.as_view(), name='mock-test-leaderboard'),
@@ -70,19 +74,34 @@ urlpatterns = [
     path('revision/', views.RevisionView.as_view(), name='revision'),
     path('revision/schedule/', views.ScheduleRevisionView.as_view(), name='schedule_revision'),
     path('upsc/mastery-state/', views.UPSCMasteryStateView.as_view(), name='upsc_mastery_state'),
+    
+    # UPSC 2027 Test Series
+    path('upsc/2027-tests/', views_upsc_2027.UPSC2027TestsListView.as_view(), name='upsc_2027_tests_list'),
+    path('upsc/2027-tests/<str:test_id>/', views_upsc_2027.UPSC2027TestDetailView.as_view(), name='upsc_2027_test_detail'),
 
     path('generate-quiz/', QuizGeneratorView.as_view(), name='generate-quiz'),
     path('chapterwise-quiz/', ChapterwiseQuizView.as_view(), name='chapterwise-quiz'),
     path('chapterwise-quiz/export-pdf/', ChapterPDFExportView.as_view(), name='chapter-export-pdf'),
     path('ncert-quiz/', NcertTopicwiseQuizView.as_view(), name='ncert-quiz'),
     path('chapter-progress/', ChapterProgressView.as_view(), name='chapter-progress'),
+    path('pib/dates/', views_pib.PIBDatesList.as_view(), name='pib-dates-list'),
     path('pib/releases/', views_pib.PIBReleaseList.as_view(), name='pib-releases-list'),
-    path('pib/releases/<uuid:id>/', views_pib.PIBReleaseDetail.as_view(), name='pib-releases-detail'),
-    path('pib/start-essay/<uuid:id>/', views_pib.PIBStartEssayView.as_view(), name='pib-start-essay'),
+    path('pib/releases/<str:id>/', views_pib.PIBReleaseDetail.as_view(), name='pib-releases-detail'),
+    path('pib/start-essay/<str:id>/', views_pib.PIBStartEssayView.as_view(), name='pib-start-essay'),
     path('pib/questions/', views_pib.PIBQuestionsListView.as_view(), name='pib-questions-list'),
+    path('pib/bookmarks/', views_pib.PIBBookmarksView.as_view(), name='pib-bookmarks'),
     path('pib/scrape/', views_pib.ScrapePIBView.as_view(), name='pib-scrape'),
     path('news/articles/', views_news.NewsArticleList.as_view(), name='news-articles-list'),
     path('news/articles/<uuid:id>/', views_news.NewsArticleDetail.as_view(), name='news-articles-detail'),
     path('news/articles/<uuid:id>/analyze/', views_news.AnalyzeNewsArticleView.as_view(), name='news-articles-analyze'),
     path('news/scrape/', views_news.ScrapeNewsView.as_view(), name='news-scrape'),
+    
+    # SRS Flashcards
+    path('revisions/due/', views.DueRevisionsView.as_view(), name='revisions-due'),
+    path('revisions/<uuid:revision_id>/review/', views.ReviewFlashcardView.as_view(), name='revisions-review'),
+    
+    # Optional Subject Evaluation
+    path('evaluation/math/upload/', views_evaluation.MathEvaluationUploadView.as_view(), name='math-evaluation-upload'),
+    path('evaluation/math/sessions/', views_evaluation.MathEvaluationsListView.as_view(), name='math-evaluation-list'),
+    path('evaluation/math/sessions/<uuid:session_id>/', views_evaluation.MathEvaluationDetailView.as_view(), name='math-evaluation-detail'),
 ]

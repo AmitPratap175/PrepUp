@@ -99,6 +99,19 @@ export default function UPSCBookmarksPage() {
         }
     });
 
+    const { data: upsc2027Tests, isLoading: isLoading2027Tests } = useQuery<PracticeTest[]>({
+        queryKey: ["/api/upsc/2027-tests/?include_questions=true"],
+        queryFn: async () => {
+            const token = localStorage.getItem("token");
+            const response = await fetch('/api/upsc/2027-tests/?include_questions=true', {
+                headers: { Authorization: `Token ${token}` }
+            });
+            if (!response.ok) throw new Error('Failed to fetch 2027 tests');
+            return response.json();
+        },
+        enabled: isAuthenticated,
+    });
+
     const { data: dpqQuizzes, isLoading: isLoadingDpq } = useQuery<QuizData[]>({
         queryKey: ["/data/dpq_questions.json"],
         queryFn: async () => {
@@ -203,6 +216,10 @@ export default function UPSCBookmarksPage() {
             }
             // ------------------------------------------------
 
+            if (upsc2027Tests) {
+                allTests = [...allTests, ...upsc2027Tests];
+            }
+
             const groupedBookmarks: BookmarkedQuestions = bookmarks.reduce(
                 (acc, bookmark) => {
                     const { subject, question_id } = bookmark;
@@ -227,7 +244,7 @@ export default function UPSCBookmarksPage() {
             );
             setBookmarkedQuestions(groupedBookmarks);
         }
-    }, [bookmarks, practiceTests, chapterwiseQuizzes, monthlyMcqs, dpqQuizzes, ncertQuizzes]);
+    }, [bookmarks, practiceTests, chapterwiseQuizzes, monthlyMcqs, dpqQuizzes, ncertQuizzes, upsc2027Tests]);
 
     const handleExportPDF = async (subject: string) => {
         setIsExporting(subject);

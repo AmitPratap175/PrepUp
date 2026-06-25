@@ -9,6 +9,7 @@ import { BarVisualizer, AgentState } from "@/components/ui/bar-visualizer";
 import 'katex/dist/katex.min.css';
 import { GoogleGenAI, LiveServerMessage, Modality, Session } from '@google/genai';
 import { createBlob, decode, decodeAudioData } from '@/lib/audio-utils';
+import { Bot } from "lucide-react";
 
 interface ChatbotProps {
   onClose: () => void;
@@ -26,11 +27,22 @@ export interface Message {
 export const Chatbot: React.FC<ChatbotProps> = ({ 
   onClose, 
   initialMessage, 
-  history = [], 
-  onHistoryChange = () => {}, 
+  history, 
+  onHistoryChange, 
   onBookmarkChange 
 }) => {
-  const [messages, setMessages] = useState<Message[]>(history);
+  const loadInitialMessages = (): Message[] => {
+    if (history) return history;
+    try {
+      const saved = localStorage.getItem('chatbot_history');
+      if (saved) return JSON.parse(saved);
+    } catch (e) {
+      console.error('Failed to load chatbot history', e);
+    }
+    return [];
+  };
+
+  const [messages, setMessages] = useState<Message[]>(loadInitialMessages);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
@@ -212,7 +224,7 @@ export const Chatbot: React.FC<ChatbotProps> = ({
             if (newMessages.length > 0) {
               setMessages(prev => {
                 const updatedMessages = [...prev, ...newMessages];
-                onHistoryChange(updatedMessages);
+                if (onHistoryChange) onHistoryChange(updatedMessages);
                 return updatedMessages;
               });
             }
@@ -375,12 +387,21 @@ export const Chatbot: React.FC<ChatbotProps> = ({
   }, [messages, isRecording, currentInputTranscription, currentOutputTranscription]);
 
   useEffect(() => {
-    setMessages(history);
+    if (history) {
+      setMessages(history);
+    }
   }, [history]);
 
   useEffect(() => {
-    onHistoryChange(messages);
-  }, [messages]);
+    if (onHistoryChange) {
+      onHistoryChange(messages);
+    }
+    try {
+      localStorage.setItem('chatbot_history', JSON.stringify(messages));
+    } catch (e) {
+      console.error('Failed to save chatbot history', e);
+    }
+  }, [messages, onHistoryChange]);
 
   const handleSendMessage = async (messageToSend: string) => {
     if (messageToSend.trim() === '' || isLoading || isRecording) return;

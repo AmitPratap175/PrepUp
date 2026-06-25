@@ -24,32 +24,113 @@ export const ExecutionView: React.FC = () => {
   const [currentSlotTask, setCurrentSlotTask] = useState<string | null>(null);
   
   const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const sourceNodeRef = useRef<AudioBufferSourceNode | null>(null);
+  const gainNodeRef = useRef<GainNode | null>(null);
+  const bufferCacheRef = useRef<Record<string, AudioBuffer>>({});
+  const currentSoundRef = useRef<string | null>(null);
 
-  // Looping audio logic
+  // Looping audio logic using Web Audio API for gapless playback
   useEffect(() => {
-    if (isActive && !isBreak && state.settings.soundEnabled && state.settings.selectedSound) {
-      if (!audioRef.current) {
-        audioRef.current = new Audio(`/sounds/${state.settings.selectedSound}`);
-        audioRef.current.loop = true;
-      } else if (audioRef.current.src !== window.location.origin + `/sounds/${state.settings.selectedSound}`) {
-        audioRef.current.pause();
-        audioRef.current = new Audio(`/sounds/${state.settings.selectedSound}`);
-        audioRef.current.loop = true;
-      }
-      audioRef.current.play().catch(e => console.error("Audio loop failed", e));
-    } else {
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-    }
+    const handleLoop = async () => {
+      const soundName = state.settings.selectedSound;
+      const isEnabled = state.settings.soundEnabled;
 
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
+      if (isActive && !isBreak && isEnabled && soundName) {
+        // If sound changed or context doesn't exist, start fresh
+        if (currentSoundRef.current !== soundName || !sourceNodeRef.current) {
+          await startLoop(soundName);
+        }
+      } else {
+        await stopLoop();
       }
     };
+
+    handleLoop();
+
+    return () => {
+      stopLoop();
+    };
   }, [isActive, isBreak, state.settings.soundEnabled, state.settings.selectedSound]);
+
+  const startLoop = async (soundName: string) => {
+    try {
+      if (!audioContextRef.current) {
+        audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
+      }
+      
+      const ctx = audioContextRef.current;
+      if (ctx.state === 'suspended') {
+        await ctx.resume();
+      }
+
+      // Stop previous if exists
+      if (sourceNodeRef.current) {
+        const oldGain = gainNodeRef.current;
+        const oldSource = sourceNodeRef.current;
+        if (oldGain) {
+          oldGain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+          setTimeout(() => {
+            oldSource.stop();
+            oldSource.disconnect();
+          }, 500);
+        } else {
+          oldSource.stop();
+          oldSource.disconnect();
+        }
+      }
+
+      let buffer = bufferCacheRef.current[soundName];
+      if (!buffer) {
+        const response = await fetch(`/sounds/${soundName}`);
+        const arrayBuffer = await response.arrayBuffer();
+        buffer = await ctx.decodeAudioData(arrayBuffer);
+        bufferCacheRef.current[soundName] = buffer;
+      }
+
+      const source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.loop = true;
+      
+      const gain = ctx.createGain();
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.4, ctx.currentTime + 1.5); // Smooth fade-in
+      
+      source.connect(gain);
+      gain.connect(ctx.destination);
+      
+      source.start(0);
+      sourceNodeRef.current = source;
+      gainNodeRef.current = gain;
+      currentSoundRef.current = soundName;
+    } catch (e) {
+      console.error("Gapless playback failed", e);
+    }
+  };
+
+  const stopLoop = () => {
+    if (sourceNodeRef.current && audioContextRef.current) {
+      const ctx = audioContextRef.current;
+      const gain = gainNodeRef.current;
+      const source = sourceNodeRef.current;
+      
+      if (gain) {
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+        setTimeout(() => {
+          try {
+            source.stop();
+            source.disconnect();
+          } catch (e) {}
+        }, 800);
+      } else {
+        source.stop();
+        source.disconnect();
+      }
+      sourceNodeRef.current = null;
+      gainNodeRef.current = null;
+      currentSoundRef.current = null;
+    }
+  };
 
   // Active Slot Detection
   const [activeSlotName, setActiveSlotName] = useState<string | null>(null);

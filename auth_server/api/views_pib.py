@@ -16,11 +16,15 @@ class PIBStartEssayView(APIView):
         
         try:
             question_index = int(question_index)
-            release = PIBRelease.objects.get(id=id)
-        except (ValueError, PIBRelease.DoesNotExist):
+            # Find the release in JSON data
+            data = load_pib_data()
+            release = next((item for item in data if item['id'] == str(id)), None)
+            if not release:
+                raise ValueError("Release not found")
+        except ValueError:
              return Response({"error": "Invalid ID or index"}, status=status.HTTP_400_BAD_REQUEST)
              
-        mains_questions = release.mains_questions or []
+        mains_questions = release.get('mains_questions', [])
         if question_index < 0 or question_index >= len(mains_questions):
              return Response({"error": "Invalid question index"}, status=status.HTTP_400_BAD_REQUEST)
              
@@ -30,10 +34,12 @@ class PIBStartEssayView(APIView):
         
         # Create or Get EssayTopic
         # We use a deterministic title to find it again
-        topic_title = f"PIB: {release.title[:60]}... - Q{question_index + 1}"
+        topic_title = f"PIB: {release.get('title', '')[:60]}... - Q{question_index + 1}"
         
         # Extract keywords for context if needed, or just use summary
-        context_text = release.summary if release.summary else (release.content[:2000] + "...")
+        summary = release.get('summary', '')
+        content = release.get('content', '')
+        context_text = summary if summary else (content[:2000] + "...")
         
         topic, _ = EssayTopic.objects.get_or_create(
             title=topic_title,
@@ -78,16 +84,111 @@ class PIBReleaseSerializer(serializers.ModelSerializer):
         model = PIBRelease
         fields = '__all__'
 
-class PIBReleaseList(generics.ListAPIView):
-    queryset = PIBRelease.objects.all()
-    serializer_class = PIBReleaseSerializer
-    filterset_fields = ['ministry']
-    search_fields = ['title', 'content', 'summary']
+import json
+import os
 
-class PIBReleaseDetail(generics.RetrieveAPIView):
-    queryset = PIBRelease.objects.all()
-    serializer_class = PIBReleaseSerializer
-    lookup_field = 'id'
+def load_pib_data():
+    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'pib_combined_data.json')
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                
+            formatted_data = []
+            for item in data:
+                if not isinstance(item, dict):
+                    continue
+                # Transform to what frontend expects
+                ai_content = item.get("ai_content", {})
+                questions = ai_content.get("questions", []) if isinstance(ai_content, dict) else []
+                quiz_data = []
+                
+                if isinstance(questions, list):
+                    for q in questions:
+                        if not isinstance(q, dict):
+                            continue
+                        
+                        answer_options = q.get("answerOptions", [])
+                        if not isinstance(answer_options, list):
+                            continue
+                            
+                        options = []
+                        correct = ""
+                        explanation = ""
+                        
+                        for opt in answer_options:
+                            if isinstance(opt, dict):
+                                options.append(opt.get("text", ""))
+                                if opt.get("isCorrect"):
+                                    correct = opt.get("text", "")
+                                    explanation = opt.get("rationale", "")
+                            elif isinstance(opt, str):
+                                options.append(opt)
+                        
+                        quiz_data.append({
+                            "question": q.get("question", ""),
+                            "options": options,
+                            "correct_answer": correct,
+                            "explanation": explanation
+                        })
+                
+                content = item.get("content", "")
+                
+                # Check if there is an explicit summary field (not title)
+                summary = ai_content.get("summary", "") if isinstance(ai_content, dict) else ""
+                
+                # If no explicit summary, generate a preview from content
+                if not summary and content:
+                    summary = content[:300] + "..." if len(content) > 300 else content
+
+                formatted_data.append({
+                    "id": item.get("prid"),
+                    "title": item.get("title", ""),
+                    "ministry": "Ministry of Information & Broadcasting", # Default or extract
+                    "date": item.get("date"),
+                    "original_url": item.get("url", ""),
+                    "summary": summary,
+                    "content": content,
+                    "quiz_data": quiz_data,
+                    "mains_questions": item.get("mains_questions", []),
+                    "tags": item.get("tags", [])
+                })
+            
+            # Sort by date descending
+            formatted_data.sort(key=lambda x: x.get('date') or "", reverse=True)
+            return formatted_data
+        except Exception as e:
+            import traceback
+            tb = traceback.format_exc()
+            print(f"Error loading pib_combined_data.json: {e}")
+            return [{"error": str(e), "traceback": tb}]
+    return []
+
+class PIBReleaseList(APIView):
+    def get(self, request):
+        data = load_pib_data()
+        date_str = request.query_params.get('date')
+        if date_str:
+            data = [item for item in data if item['date'] == date_str]
+        return Response(data)
+
+class PIBDatesList(APIView):
+    def get(self, request):
+        data = load_pib_data()
+        valid_dates = [item['date'] for item in data if item.get('date')]
+        unique_dates = []
+        for d in valid_dates:
+            if d not in unique_dates:
+                unique_dates.append(d)
+        return Response(unique_dates)
+
+class PIBReleaseDetail(APIView):
+    def get(self, request, id):
+        data = load_pib_data()
+        for item in data:
+            if item['id'] == str(id):
+                return Response(item)
+        return Response({"error": "Not found"}, status=status.HTTP_404_NOT_FOUND)
 
 class ScrapePIBView(APIView):
     def post(self, request):
@@ -105,49 +206,91 @@ class PIBQuestionsListView(APIView):
         """
         Returns a list of all PIB Mains questions with status for the current user.
         """
-        from .models import PIBRelease, Essay
+        from .models import Essay
         
         # Optimize fetch: Get all PIB releases with mains_questions
-        releases = PIBRelease.objects.exclude(mains_questions__isnull=True).exclude(mains_questions=[])
+        data = load_pib_data()
+        releases = [item for item in data if item.get('mains_questions')]
         
-        # Get user essays for status check (if authenticated)
-        user_essay_map = {}
+        user_essays = {}
         if request.user.is_authenticated:
-            # Fetch essays that look like PIB essays (title starts with "Answer: PIB:")
-            # Or better, filter by topic title if we can rely on that.
-            # But we need to match specific questions.
-            # Topic title format: "PIB: {release.title[:60]}... - Q{question_index + 1}"
-            
-            # Let's fetch all essays for the user and process in python for flexibility
-            # Optimally we would have a better link, but this works for now.
-            user_essays = Essay.objects.filter(user=request.user, topic__title__startswith="PIB:")
-            for essay in user_essays:
-                if essay.topic and essay.topic.title:
-                    user_essay_map[essay.topic.title] = essay.status
+            # Fetch essays that look like PIB essays and map by topic title for easy lookup
+            user_essays = {e.topic.title: e for e in Essay.objects.filter(user=request.user, topic__title__startswith="PIB:")}
 
-        all_questions = []
+        results = []
         for release in releases:
-            if not release.mains_questions:
-                continue
+            mains_questions = release.get('mains_questions', [])
+            for index, q_data in enumerate(mains_questions):
+                # Build topic title exactly as in PIBStartEssayView
+                topic_title = f"PIB: {release.get('title', '')[:60]}... - Q{index + 1}"
                 
-            for idx, q_data in enumerate(release.mains_questions):
-                # Reconstruct the deterministic topic title to check status
-                # Must match logic in PIBStartEssayView
-                topic_title = f"PIB: {release.title[:60]}... - Q{idx + 1}"
+                status = 'unattempted'
+                essay_id = None
                 
-                status = user_essay_map.get(topic_title, 'pending')
+                if topic_title in user_essays:
+                    status = user_essays[topic_title].status
+                    essay_id = user_essays[topic_title].id
                 
-                all_questions.append({
-                    "release_id": str(release.id),
-                    "release_title": release.title,
-                    "release_date": release.date,
-                    "question_index": idx,
-                    "question": q_data.get('question', ''),
-                    "answer": q_data.get('answer', ''),
-                    "status": status
+                results.append({
+                    "id": f"{release.get('id')}-{index}", # Unique ID for UI
+                    "release_id": release.get('id'),
+                    "release_title": release.get('title', ''),
+                    "release_date": release.get('date'),
+                    "question_index": index,
+                    "question_text": q_data.get('question', ''),
+                    "status": status,
+                    "essay_id": essay_id
                 })
+                
+        return Response(results)
+
+def get_bookmarks_path():
+    return os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'pib_bookmarks.json')
+
+def load_bookmarks():
+    path = get_bookmarks_path()
+    if os.path.exists(path):
+        try:
+            with open(path, 'r') as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+def save_bookmarks(data):
+    path = get_bookmarks_path()
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=2)
+
+class PIBBookmarksView(APIView):
+    def get(self, request):
+        if not request.user.is_authenticated:
+            return Response([])
+        data = load_bookmarks()
+        user_id = str(request.user.id)
+        return Response(data.get(user_id, []))
+
+    def post(self, request):
+        if not request.user.is_authenticated:
+            return Response({"error": "Unauthorized"}, status=401)
         
-        # Sort by date desc
-        all_questions.sort(key=lambda x: x['release_date'], reverse=True)
+        prid = request.data.get("prid")
+        if not prid:
+            return Response({"error": "PRID required"}, status=400)
+            
+        data = load_bookmarks()
+        user_id = str(request.user.id)
         
-        return Response({"questions": all_questions})
+        if user_id not in data:
+            data[user_id] = []
+            
+        if prid in data[user_id]:
+            data[user_id].remove(prid)
+            bookmarked = False
+        else:
+            data[user_id].append(prid)
+            bookmarked = True
+            
+        save_bookmarks(data)
+        return Response({"prid": prid, "bookmarked": bookmarked})
+

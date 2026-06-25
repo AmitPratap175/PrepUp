@@ -5,16 +5,26 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.conf import settings
 from rest_framework.permissions import AllowAny
+from django.http import HttpResponse
 
 class NcertTopicwiseQuizView(APIView):
     authentication_classes = []
     permission_classes = [AllowAny]
+    
+    _cached_json_response = None
     
     """
     Serves the static ncert topicwise quiz data from auth_server/data/ncert_*_quiz.json.
     Reads all available ncert subject files and combines them into one array.
     """
     def get(self, request):
+        clear_cache = request.GET.get('clear_cache', 'false').lower() == 'true'
+        if clear_cache:
+            NcertTopicwiseQuizView._cached_json_response = None
+
+        if NcertTopicwiseQuizView._cached_json_response is not None:
+            return HttpResponse(NcertTopicwiseQuizView._cached_json_response, content_type='application/json')
+
         data_dir = Path(settings.BASE_DIR) / "data"
         combined_data = []
 
@@ -36,7 +46,9 @@ class NcertTopicwiseQuizView(APIView):
                 except Exception as e:
                     print(f"Error loading {file_path}: {e}")
             
-            return Response(combined_data)
+            json_string = json.dumps(combined_data)
+            NcertTopicwiseQuizView._cached_json_response = json_string
+            return HttpResponse(json_string, content_type='application/json')
                 
         except Exception as e:
             print(f"Error aggregating NCERT quizzes: {e}")

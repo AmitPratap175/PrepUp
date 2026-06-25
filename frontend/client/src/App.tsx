@@ -3,82 +3,87 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import Home from "@/pages/home";
-import PracticeTest from "@/pages/practice-test";
-import MockTestsPage from "@/pages/mock-tests";
-import MockTestPage from "@/pages/mock-test";
-import MockTestResultPage from "@/pages/mock-test-result";
-import QuizPage from "@/pages/quiz";
-import Dashboard from "@/pages/dashboard";
-import StudyMaterials from "@/pages/study-materials";
-import Courses from "@/pages/courses";
-import About from "@/pages/about";
-import Contact from "@/pages/contact";
-import Help from "@/pages/help";
-import Careers from "@/pages/careers";
-import Privacy from "@/pages/privacy";
-import Terms from "@/pages/terms";
-import Cookies from "@/pages/cookies";
-import Refund from "@/pages/refund";
-import LoginPage from "@/pages/login";
-import SignupPage from "@/pages/signup";
-import BookmarksPage from "@/pages/bookmarks";
-import WordsPage from "@/pages/words";
-import CurrentAffairsPage from "@/pages/current-affairs";
-import CurrentAffairsArticlePage from "@/pages/current-affairs-article";
-import SectionalTestsPage from "@/pages/sectional-tests";
-import SectionalTestPage from "@/pages/sectional-test-page";
-import SectionalTestResultPage from "@/pages/sectional-test-result";
-import PracticeTestResultPage from "@/pages/practice-test-result";
+const NotFound = lazy(() => import("@/pages/not-found"));
+const Home = lazy(() => import("@/pages/home"));
+const PracticeTest = lazy(() => import("@/pages/practice-test"));
+const MockTestsPage = lazy(() => import("@/pages/mock-tests"));
+const MockTestPage = lazy(() => import("@/pages/mock-test"));
+const MockTestResultPage = lazy(() => import("@/pages/mock-test-result"));
+const QuizPage = lazy(() => import("@/pages/quiz"));
+const Dashboard = lazy(() => import("@/pages/dashboard"));
+const StudyMaterials = lazy(() => import("@/pages/study-materials"));
+const Courses = lazy(() => import("@/pages/courses"));
+const About = lazy(() => import("@/pages/about"));
+const Contact = lazy(() => import("@/pages/contact"));
+const Help = lazy(() => import("@/pages/help"));
+const Careers = lazy(() => import("@/pages/careers"));
+const Privacy = lazy(() => import("@/pages/privacy"));
+const Terms = lazy(() => import("@/pages/terms"));
+const Cookies = lazy(() => import("@/pages/cookies"));
+const Refund = lazy(() => import("@/pages/refund"));
+const LoginPage = lazy(() => import("@/pages/login"));
+const SignupPage = lazy(() => import("@/pages/signup"));
+const BookmarksPage = lazy(() => import("@/pages/bookmarks"));
+const WordsPage = lazy(() => import("@/pages/words"));
+const CurrentAffairsPage = lazy(() => import("@/pages/current-affairs"));
+const CurrentAffairsArticlePage = lazy(() => import("@/pages/current-affairs-article"));
+const SectionalTestsPage = lazy(() => import("@/pages/sectional-tests"));
+const SectionalTestPage = lazy(() => import("@/pages/sectional-test-page"));
+const SectionalTestResultPage = lazy(() => import("@/pages/sectional-test-result"));
+const PracticeTestResultPage = lazy(() => import("@/pages/practice-test-result"));
 import { AuthProvider, useAuth } from "@/contexts/auth-context";
 import { SettingsProvider, useSettings } from "./contexts/SettingsContext";
-import AddQuestionPage from "@/pages/AddQuestion";
+const AddQuestionPage = lazy(() => import("@/pages/AddQuestion"));
 import SettingsPage from "./pages/Settings";
-import SopForgePage from "@/pages/sopforge";
-import SmartPracticePage from "@/pages/smart-practice";
-import LeaderboardPage from "@/pages/leaderboard";
-import AnalyticsDashboardPage from "@/pages/analytics-dashboard";
-import BadgesPage from "@/pages/badges";
-import XatEssayPage from "@/pages/xat-essay";
-import DailyTargetsPage from "@/pages/daily-targets";
-import DailyTargetsSettingsPage from "@/pages/daily-targets/settings";
-import DailyTargetTestInterface from "@/pages/daily-targets/test-interface";
-import DailyTargetRevision from "@/pages/daily-targets/revision";
-import DailyTargetResultPage from "@/pages/daily-targets/result";
-import UPSCPage from "@/pages/upsc";
-import UPSCQuizPage from "@/pages/upsc/quiz";
-import UPSCResultPage from "@/pages/upsc/result";
-import UPSCRevisionPage from "@/pages/upsc/revision";
-import QuizGeneratorPage from "@/pages/generated-quiz";
-import GeneratedQuizViewerPage from "@/pages/generated-quiz-viewer";
-import ChapterwiseQuizPage from "@/pages/chapterwise-quiz";
-import NcertTopicwiseQuizPage from "@/pages/ncert-topicwise-quiz";
-import DailyPracticeQuestionsPage from "@/pages/daily-practice-questions";
-import MonthlyMcqQuestionsPage from "@/pages/monthly-mcq-questions";
-import UPSCPYQTopicsPage from "@/pages/upsc/pyq-topics";
-import UPSCBookmarksPage from "@/pages/upsc-bookmarks";
-import OdishaTopicwisePracticePage from "@/pages/odisha-topicwise-practice";
-import SSCPage from "@/pages/ssc/index";
-import SSCQuizPage from "@/pages/ssc/quiz";
-import SSCResultPage from "@/pages/ssc/result";
-import SSCYearWisePage from "@/pages/ssc/pyq-years";
-import SSCBookmarksPage from "@/pages/ssc/bookmarks";
+const SopForgePage = lazy(() => import("@/pages/sopforge"));
+const SmartPracticePage = lazy(() => import("@/pages/smart-practice"));
+const LeaderboardPage = lazy(() => import("@/pages/leaderboard"));
+const AnalyticsDashboardPage = lazy(() => import("@/pages/analytics-dashboard"));
+const BadgesPage = lazy(() => import("@/pages/badges"));
+const XatEssayPage = lazy(() => import("@/pages/xat-essay"));
+const DailyTargetsPage = lazy(() => import("@/pages/daily-targets"));
+const DailyTargetsSettingsPage = lazy(() => import("@/pages/daily-targets/settings"));
+const DailyTargetTestInterface = lazy(() => import("@/pages/daily-targets/test-interface"));
+const DailyTargetRevision = lazy(() => import("@/pages/daily-targets/revision"));
+const DailyTargetResultPage = lazy(() => import("@/pages/daily-targets/result"));
+const UPSCPage = lazy(() => import("@/pages/upsc"));
+const UPSCQuizPage = lazy(() => import("@/pages/upsc/quiz"));
+const UPSCResultPage = lazy(() => import("@/pages/upsc/result"));
+const UPSCRevisionPage = lazy(() => import("@/pages/upsc/revision"));
+const QuizGeneratorPage = lazy(() => import("@/pages/generated-quiz"));
+const GeneratedQuizViewerPage = lazy(() => import("@/pages/generated-quiz-viewer"));
+const ChapterwiseQuizPage = lazy(() => import("@/pages/chapterwise-quiz"));
+const NcertTopicwiseQuizPage = lazy(() => import("@/pages/ncert-topicwise-quiz"));
+const DailyPracticeQuestionsPage = lazy(() => import("@/pages/daily-practice-questions"));
+const MonthlyMcqQuestionsPage = lazy(() => import("@/pages/monthly-mcq-questions"));
+const UPSCPYQTopicsPage = lazy(() => import("@/pages/upsc/pyq-topics"));
+const UPSCBookmarksPage = lazy(() => import("@/pages/upsc-bookmarks"));
+const OdishaTopicwisePracticePage = lazy(() => import("@/pages/odisha-topicwise-practice"));
+const DailyRevisionPage = lazy(() => import("@/pages/daily-revision"));
+const SSCPage = lazy(() => import("@/pages/ssc/index"));
+const SSCQuizPage = lazy(() => import("@/pages/ssc/quiz"));
+const SSCResultPage = lazy(() => import("@/pages/ssc/result"));
+const SSCYearWisePage = lazy(() => import("@/pages/ssc/pyq-years"));
+const SSCBookmarksPage = lazy(() => import("@/pages/ssc/bookmarks"));
 import { useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
 import { useStudyTracker } from "./hooks/useStudyTracker";
 import { Chatbot } from "@/components/chatbot";
-import { MessageSquare } from "lucide-react";
-import UPSCYearWisePage from "@/pages/upsc/pyq-years";
-import UPSCReviewMistakesPage from "@/pages/upsc/review-mistakes";
-import PIBListPage from "@/pages/pib/list";
-import PIBDetailPage from "@/pages/pib/detail";
-import PIBQuizPage from "@/pages/pib/quiz";
-import MainsAnswerPage from "@/pages/mains-answer";
-import MapMasterPage from "@/pages/map-master";
-import EssaysListPage from "@/pages/upsc/essays-list";
-import EssayDailyReadPage from "@/pages/upsc/essay-daily-read";
-import UPSCMastery2027Page from "@/pages/upsc/mastery-2027/App";
-
+import { MessageSquare, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+const UPSCYearWisePage = lazy(() => import("@/pages/upsc/pyq-years"));
+const UPSCReviewMistakesPage = lazy(() => import("@/pages/upsc/review-mistakes"));
+const PIBListPage = lazy(() => import("@/pages/pib/list"));
+const PIBDetailPage = lazy(() => import("@/pages/pib/detail"));
+const PIBQuizPage = lazy(() => import("@/pages/pib/quiz"));
+const MainsAnswerPage = lazy(() => import("@/pages/mains-answer"));
+const MapMasterPage = lazy(() => import("@/pages/map-master"));
+const EssaysListPage = lazy(() => import("@/pages/upsc/essays-list"));
+const EssayDailyReadPage = lazy(() => import("@/pages/upsc/essay-daily-read"));
+const MathEvaluationPage = lazy(() => import("@/pages/upsc/math-evaluation"));
+const UPSCMastery2027Page = lazy(() => import("@/pages/upsc/mastery-2027/App"));
+const UPSC2027TestSeriesList = lazy(() => import("@/pages/upsc/test-series-2027-list"));
+const UPSC2027TestTakePage = lazy(() => import("@/pages/upsc/test-series-2027-take"));
 /**
  * Defines the main routing configuration for the application.
  *
@@ -90,7 +95,8 @@ import UPSCMastery2027Page from "@/pages/upsc/mastery-2027/App";
  */
 function Router() {
   return (
-    <Switch>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>}>
+      <Switch>
       <Route path="/" component={Home} />
       <Route path="/practice-test/result/:testId" component={PracticeTestResultPage} />
       <Route path="/practice-test/:testId?" component={PracticeTest} />
@@ -133,16 +139,16 @@ function Router() {
       <Route path="/daily-targets/result/:targetId" component={DailyTargetResultPage} />
       <Route path="/daily-targets/revision" component={DailyTargetRevision} />
 
-      import UPSCReviewMistakesPage from "@/pages/upsc/review-mistakes";
-
-      // ... (inside Router switch)
       <Route path="/upsc" component={UPSCPage} />
       <Route path="/upsc/topics" component={UPSCPYQTopicsPage} />
       <Route path="/upsc/years" component={UPSCYearWisePage} />
       <Route path="/upsc/review/:sessionId" component={UPSCReviewMistakesPage} />
       <Route path="/upsc/test/:id" component={UPSCQuizPage} />
+      <Route path="/upsc/2027-tests" component={UPSC2027TestSeriesList} />
+      <Route path="/upsc/2027-tests/:id" component={UPSC2027TestTakePage} />
       <Route path="/upsc/result/:sessionId" component={UPSCResultPage} />
       <Route path="/upsc/revision" component={UPSCRevisionPage} />
+      <Route path="/upsc/daily-revision" component={DailyRevisionPage} />
       <Route path="/upsc/bookmarks" component={UPSCBookmarksPage} />
       <Route path="/upsc/pib" component={PIBListPage} />
       <Route path="/upsc/pib/:id" component={PIBDetailPage} />
@@ -158,6 +164,7 @@ function Router() {
       <Route path="/upsc/mastery-2027" component={UPSCMastery2027Page} />
       <Route path="/upsc/essays" component={EssaysListPage} />
       <Route path="/upsc/essays/:id" component={EssayDailyReadPage} />
+      <Route path="/upsc/math-evaluation" component={MathEvaluationPage} />
       <Route path="/odisha/practice" component={OdishaTopicwisePracticePage} />
       
       {/* SSC Routes */}
@@ -167,7 +174,8 @@ function Router() {
       <Route path="/ssc/result/:id" component={SSCResultPage} />
       <Route path="/ssc/bookmarks" component={SSCBookmarksPage} />
       <Route component={NotFound} />
-    </Switch>
+      </Switch>
+    </Suspense>
   );
 }
 

@@ -25,15 +25,22 @@ interface RevisionItem {
     interval: number;
 }
 
+import { AppFooter } from "@/components/app-footer";
+import { Link } from "wouter";
+
 const UPSCRevisionPage: React.FC = () => {
     const [, setLocation] = useLocation();
+    const [allRevisions, setAllRevisions] = useState<RevisionItem[]>([]);
     const [revisions, setRevisions] = useState<RevisionItem[]>([]);
+    const [groupedRevisions, setGroupedRevisions] = useState<Record<string, RevisionItem[]>>({});
     const [loading, setLoading] = useState(true);
+    const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showAnswer, setShowAnswer] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState<string>('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [completedCount, setCompletedCount] = useState(0);
+    const [renderTrigger, setRenderTrigger] = useState(0);
 
     useEffect(() => {
         fetchRevisions();
@@ -41,12 +48,29 @@ const UPSCRevisionPage: React.FC = () => {
 
     const fetchRevisions = async () => {
         try {
-            const response = await fetch('/api/revision/?subject=Current Affairs', {
+            const url = '/api/revision/';
+            const response = await fetch(url, {
                 headers: { 'Authorization': `Token ${localStorage.getItem('token')}` }
             });
             if (response.ok) {
-                const data = await response.json();
-                setRevisions(data);
+                const data: RevisionItem[] = await response.json();
+                setAllRevisions(data);
+                
+                // Group by subject
+                const grouped = data.reduce((acc, item) => {
+                    const subj = item.subject || 'General';
+                    if (!acc[subj]) acc[subj] = [];
+                    acc[subj].push(item);
+                    return acc;
+                }, {} as Record<string, RevisionItem[]>);
+                
+                setGroupedRevisions(grouped);
+
+                const searchParams = new URLSearchParams(window.location.search);
+                const querySubject = searchParams.get('subject');
+                if (querySubject && grouped[querySubject]) {
+                    startRevisionForSubject(querySubject, grouped[querySubject]);
+                }
             } else {
                 throw new Error('Failed to fetch revisions');
             }
@@ -60,6 +84,15 @@ const UPSCRevisionPage: React.FC = () => {
         } finally {
             setLoading(false);
         }
+    };
+
+    const startRevisionForSubject = (subject: string, subjectRevisions: RevisionItem[]) => {
+        setSelectedSubject(subject);
+        setRevisions(subjectRevisions);
+        setCurrentIndex(0);
+        setCompletedCount(0);
+        setShowAnswer(false);
+        setSelectedAnswer('');
     };
 
     const handleSubmitAnswer = async (isCorrectOverride?: boolean) => {
@@ -128,6 +161,28 @@ const UPSCRevisionPage: React.FC = () => {
         }
     };
 
+    const currentItem = revisions[currentIndex];
+    const q = currentItem?.question;
+
+    useEffect(() => {
+        if (q?.qid) {
+            (window as any).__currentQuestionId = q.qid;
+            (window as any).__onUpdateExplanation = (explanation: string, correctOption?: string) => {
+                q.explanation = explanation;
+                if (correctOption) {
+                    const optionMapping: { [key: string]: string } = {'A': '1', 'B': '2', 'C': '3', 'D': '4'};
+                    const mappedVal = optionMapping[correctOption] || correctOption;
+                    q.correct_answer = mappedVal;
+                }
+                setRenderTrigger(prev => prev + 1);
+            };
+        }
+        return () => {
+            delete (window as any).__currentQuestionId;
+            delete (window as any).__onUpdateExplanation;
+        };
+    }, [q?.qid, renderTrigger]);
+
     if (loading) {
         return (
             <div className="flex items-center justify-center min-h-screen bg-background">
@@ -158,18 +213,92 @@ const UPSCRevisionPage: React.FC = () => {
         );
     }
 
-    const currentItem = revisions[currentIndex];
-    const q = currentItem.question;
+    // (moved up)
+
+    if (!selectedSubject) {
+        return (
+            <div className="min-h-screen bg-background">
+                <AppHeader />
+                <main className="container mx-auto px-4 py-8 flex-1">
+                    <div className="max-w-6xl mx-auto space-y-8">
+                        <div>
+                            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                                <Link href="/upsc" className="hover:text-primary transition-colors">UPSC</Link>
+                                <span>/</span>
+                                <span className="text-foreground font-medium">Spaced Revision</span>
+                            </div>
+                            <h1 className="text-4xl font-extrabold tracking-tight mb-4">Spaced Revision</h1>
+                            <p className="text-xl text-muted-foreground">
+                                Review your mistakes from tests using our spaced repetition algorithm.
+                            </p>
+                        </div>
+
+                        {Object.keys(groupedRevisions).length > 0 ? (
+                            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                {Object.entries(groupedRevisions).map(([subject, items]) => (
+                                    <Card
+                                        key={subject}
+                                        className="group relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                                    >
+                                        <CardHeader>
+                                            <div className="flex items-center gap-3 mb-2">
+                                                <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                                                    <Brain className="h-5 w-5" />
+                                                </div>
+                                            </div>
+                                            <CardTitle className="text-xl">{subject}</CardTitle>
+                                            <CardDescription>
+                                                {items.length} questions pending review
+                                            </CardDescription>
+                                        </CardHeader>
+                                        <CardContent className="space-y-3">
+                                            <Button
+                                                className="w-full"
+                                                onClick={() => startRevisionForSubject(subject, items)}
+                                            >
+                                                Start Review
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                            </div>
+                        ) : (
+                            <Card className="p-12 text-center border-dashed">
+                                <div className="flex justify-center mb-4">
+                                    <div className="p-4 bg-muted rounded-full">
+                                        <Brain className="h-8 w-8 text-muted-foreground" />
+                                    </div>
+                                </div>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    No Pending Revisions
+                                </h3>
+                                <p className="text-muted-foreground mb-6">
+                                    You don't have any pending revisions for your mock tests. Great job!
+                                </p>
+                                <Link href="/upsc">
+                                    <Button>Go to Tests</Button>
+                                </Link>
+                            </Card>
+                        )}
+                    </div>
+                </main>
+                <AppFooter />
+            </div>
+        );
+    }
 
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <AppHeader />
             <main className="container mx-auto px-4 py-8 flex-1 flex flex-col items-center">
                 <div className="w-full max-w-3xl">
+                    <Button variant="ghost" onClick={() => setSelectedSubject(null)} className="mb-4 pl-0 hover:bg-transparent hover:underline text-muted-foreground">
+                        ← Back to Subjects
+                    </Button>
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center gap-2">
                             <Brain className="h-5 w-5 text-primary" />
-                            <span className="font-semibold">Revision Session</span>
+                            <span className="font-semibold">{selectedSubject} Revision</span>
                         </div>
                         <span className="text-sm text-muted-foreground">
                             {currentIndex + 1} of {revisions.length}
@@ -262,6 +391,7 @@ const UPSCRevisionPage: React.FC = () => {
                     )}
                 </div>
             </main>
+            <AppFooter />
         </div>
     );
 };

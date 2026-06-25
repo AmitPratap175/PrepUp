@@ -19,7 +19,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./auth_server/data/cat:/app/data/cat:z
+      - ./auth_server/data:/app/data:z
     env_file:
       - ./auth_server/.env
     environment:
@@ -67,7 +67,7 @@ services:
       context: .
       dockerfile: auth_server/Dockerfile
     volumes:
-      - ./auth_server/data/cat:/app/data/cat:z
+      - ./auth_server/data:/app/data:z
     env_file:
       - ./auth_server/.env
     environment:

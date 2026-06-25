@@ -9,6 +9,7 @@ from urllib.parse import urljoin, urlparse, parse_qs
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from notebooklm import NotebookLMClient, QuizQuantity, QuizDifficulty
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Load environment variables
 env_path = Path(__file__).resolve().parent.parent.parent / ".env"
@@ -143,12 +144,34 @@ async def generate_via_notebooklm(nb_client, title, content):
         temp_json = DATA_OUT_DIR / f"temp_nb_pib_{datetime.now().timestamp()}.json"
         await nb_client.artifacts.download_quiz(nb.id, str(temp_json), output_format="json")
         
+        # Now generate a summary using NotebookLM Briefing Doc
+        from notebooklm.rpc.types import ReportFormat
+        status_report = await nb_client.artifacts.generate_report(
+            nb.id,
+            report_format=ReportFormat.BRIEFING_DOC
+        )
+        await nb_client.artifacts.wait_for_completion(nb.id, status_report.task_id)
+        
+        temp_txt = DATA_OUT_DIR / f"temp_nb_pib_report_{datetime.now().timestamp()}.md"
+        await nb_client.artifacts.download_report(nb.id, str(temp_txt), artifact_id=status_report.task_id)
+        
+        await nb_client.notebooks.delete(nb.id)
+        
+        data = None
         if temp_json.exists():
-            with open(temp_json, 'r') as f:
-                data = json.load(f)
-            temp_json.unlink()
-            return data
-        return None
+            try:
+                with open(temp_json, 'r') as f:
+                    data = json.load(f)
+                temp_json.unlink()
+                
+                if temp_txt.exists():
+                    with open(temp_txt, 'r') as f:
+                        data["summary"] = f.read()
+                    temp_txt.unlink()
+            except Exception as e:
+                print(f"Failed to parse quiz JSON: {e}")
+                
+        return data
 
     except Exception as e:
         print(f"  - [NotebookLM] Generation failed: {e}")
@@ -202,14 +225,39 @@ async def main():
                 continue
             
             nb_data = await generate_via_notebooklm(nb_client, item["title"], content)
-            
             if nb_data:
+                # Generate Tags and Mains Questions using standard Gemini model
+                tags = []
+                mains_questions = []
+                try:
+                    from langchain_google_genai import ChatGoogleGenerativeAI
+                    from pydantic import BaseModel, Field
+                    class MainsQuestion(BaseModel):
+                        question: str = Field(description="The UPSC Mains question")
+                        answer: str = Field(description="The model answer structure in markdown")
+                    class TagsOutput(BaseModel):
+                        tags: list[str] = Field(description='List of UPSC GS Paper Tags (e.g. GS-1: History, GS-2: Polity, GS-3: Economy, GS-3: Environment)')
+                        mains_questions: list[MainsQuestion] = Field(description='List of exactly 2 UPSC Mains questions with model answers')
+                        
+                    model = ChatGoogleGenerativeAI(model='gemini-2.5-flash', temperature=0.1).with_structured_output(TagsOutput)
+                    prompt = f'Task 1: Categorize this PIB release with up to 3 relevant UPSC General Studies tags.\nTask 2: Generate 2 UPSC Mains questions relevant to this release, with a model answer structure.\nHere is the content:\n\n{content[:4000]}'
+                    res = model.invoke(prompt)
+                    if res:
+                        if hasattr(res, 'tags'): tags = res.tags
+                        if hasattr(res, 'mains_questions'): mains_questions = [q.dict() for q in res.mains_questions]
+                        print(f"  - Generated Tags: {tags}")
+                except Exception as e:
+                    print(f"  - Failed to generate tags/mains: {e}")
+
                 entry = {
                     "prid": prid,
                     "title": item["title"],
                     "url": item["url"],
                     "date": datetime.now().strftime("%Y-%m-%d") if not test_day else f"{test_year}-{test_month}-{test_day}",
-                    "ai_content": nb_data
+                    "content": content,
+                    "ai_content": nb_data,
+                    "tags": tags,
+                    "mains_questions": mains_questions
                 }
                 final_data.append(entry)
                 
@@ -221,7 +269,7 @@ async def main():
                 with open(OUTPUT_FILE, 'w') as f:
                     json.dump(final_data, f, indent=2)
                 
-                print(f"  - Successfully processed and saved {prid}")
+                print(f"  - Successfully processed and saved {prid} to JSON")
             else:
                 print(f"  - Failed to generate content for {prid}")
             

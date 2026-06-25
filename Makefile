@@ -3,6 +3,7 @@ build:
 
 reset:
 	podman-compose down
+	podman image prune -f
 	podman-compose up --build
 
 reset_cron:

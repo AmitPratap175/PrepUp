@@ -50,6 +50,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
   const [submittedAnswers, setSubmittedAnswers] = useState<Set<string>>(new Set());
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState<Set<string>>(new Set());
+  const [renderTrigger, setRenderTrigger] = useState(0);
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
@@ -79,6 +80,29 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
 
   const currentQuestion = questions[currentQuestionIndex];
   const hasPassage = currentQuestion?.passage_text && currentQuestion.passage_text !== "For the following questions answer them individually";
+
+  useEffect(() => {
+    const qid = currentQuestion?.qid || (currentQuestion as any)?.id;
+    if (qid) {
+      (window as any).__currentQuestionId = qid;
+      (window as any).__onUpdateExplanation = (explanation: string, correctOption?: string) => {
+        currentQuestion.solution_text = explanation;
+        if (correctOption) {
+          const optionMapping: { [key: string]: string } = {'A': '1', 'B': '2', 'C': '3', 'D': '4'};
+          const mappedVal = optionMapping[correctOption] || correctOption;
+          currentQuestion.correct_option_data = mappedVal;
+          currentQuestion.options.forEach(opt => {
+            opt.is_correct = (opt.data_option === mappedVal);
+          });
+        }
+        setRenderTrigger(prev => prev + 1);
+      };
+    }
+    return () => {
+      delete (window as any).__currentQuestionId;
+      delete (window as any).__onUpdateExplanation;
+    };
+  }, [currentQuestion?.qid, (currentQuestion as any)?.id, renderTrigger]);
 
   const lastAnswersRef = useRef<string>("");
 
@@ -570,7 +594,7 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
           </div>
 
           {isChatbotOpen && (() => {
-            const currentQuestionId = currentQuestion?.qid;
+            const currentQuestionId = currentQuestion?.qid || (currentQuestion as any)?.id;
             const currentChatHistory = chatHistories[currentQuestionId] || [];
             const initialMessage = `Explain the following question and its options, and help me understand the answer.\n**Subject:**${test.subject}\n**qid:**${currentQuestion?.qid}\n**Passage:**\n${currentQuestion?.passage_text}\n\n**Question:**\n${currentQuestion?.question_text}\n\n**Options:**\n${currentQuestion?.options.map((o) => `- ${o.label}: ${o.option_text}`).join('\n')}`;
 
@@ -584,6 +608,21 @@ export function NewQuizInterface({ test, onExit, onSubmit, onProgressUpdate, nav
                     ...prev,
                     [currentQuestionId]: newHistory,
                   }));
+                }}
+                currentQuestionId={currentQuestionId}
+                onUpdateExplanation={(explanation, correctOption) => {
+                  if (currentQuestion) {
+                    currentQuestion.solution_text = explanation;
+                    if (correctOption) {
+                      const optionMapping: { [key: string]: string } = {'A': '1', 'B': '2', 'C': '3', 'D': '4'};
+                      const mappedVal = optionMapping[correctOption] || correctOption;
+                      currentQuestion.correct_option_data = mappedVal;
+                      currentQuestion.options.forEach(opt => {
+                        opt.is_correct = (opt.data_option === mappedVal);
+                      });
+                    }
+                    setRenderTrigger(prev => prev + 1);
+                  }
                 }}
                 onBookmarkChange={() => {
                   // Refetch bookmarks when the chatbot indicates a change

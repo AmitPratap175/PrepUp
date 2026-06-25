@@ -34,7 +34,10 @@ export default function UPSCReviewMistakesPage() {
             const sessionData = await sessionRes.json();
 
             // 2. Fetch Test
-            const testRes = await fetch(`/api/practice-tests/${sessionData.testId}/`, { headers });
+            let testRes = await fetch(`/api/practice-tests/${sessionData.testId}/`, { headers });
+            if (!testRes.ok) {
+                testRes = await fetch(`/api/upsc/2027-tests/${sessionData.testId}/`, { headers });
+            }
             if (!testRes.ok) throw new Error("Failed to fetch test");
             const testData: PracticeTest = await testRes.json();
 
@@ -55,7 +58,10 @@ export default function UPSCReviewMistakesPage() {
                 // Actually, let's include WRONG only.
                 // Skipped questions result in userAns being undefined.
                 // Correct answer check:
-                if (userAns && userAns !== q.correct_answer) {
+                const correctOption = q.options?.find((o: any) => o.is_correct || o.label === q.correct_option_data);
+                const isCorrect = correctOption ? userAns === correctOption.label : userAns === q.correct_answer;
+                
+                if (userAns && !isCorrect) {
                     incorrectQuestions.push(q);
                     incorrectAnswers.push({
                         questionId: q.id || q.qid,

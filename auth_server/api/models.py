@@ -328,6 +328,8 @@ class RevisionSchedule(models.Model):
     subject = models.CharField(max_length=50)
     next_review_date = models.DateField()
     review_interval = models.IntegerField(default=2, help_text="Days until next review (2, 4, 6)")
+    ai_flashcard_content = models.JSONField(null=True, blank=True, help_text="AI generated flashcard with mnemonic, explanation, etc.")
+    exam_target = models.CharField(max_length=50, default='upsc', help_text="Target exam (e.g., upsc, cat)")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -415,3 +417,73 @@ class UPSCMasteryState(models.Model):
     def __str__(self):
         return f"UPSC Mastery State for {self.user.email}"
 
+
+class TopicAbility(models.Model):
+    """
+    IRT User Ability (Theta) for a specific topic/subject.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='irt_abilities')
+    topic = models.CharField(max_length=255)
+    theta = models.FloatField(default=0.0, help_text="Estimated user ability")
+    standard_error = models.FloatField(default=1.0, help_text="Standard error of the estimate")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ('user', 'topic')
+        
+    def __str__(self):
+        return f"Ability for {self.user.email} in {self.topic}: {self.theta}"
+
+
+class QuestionIRTParameter(models.Model):
+    """
+    IRT parameters for a specific question.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    question_id = models.CharField(max_length=255, unique=True)
+    difficulty = models.FloatField(default=0.0, help_text="Parameter b: Difficulty of the question")
+    discrimination = models.FloatField(default=1.0, help_text="Parameter a: How well it discriminates ability")
+    guessing = models.FloatField(default=0.2, help_text="Parameter c: Probability of guessing correctly")
+    exposure_count = models.IntegerField(default=0)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"IRT Params for Q: {self.question_id}"
+
+
+class OptionalEvaluationSession(models.Model):
+    """
+    Stores an optional subject (e.g. Mathematics) evaluation session where user uploads a PDF/Image of answers.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=255, default='mathematics')
+    # Save files to media/evaluations/
+    uploaded_file = models.FileField(upload_to='evaluations/', null=True, blank=True)
+    status = models.CharField(max_length=20, default='pending') # pending, processing, completed, failed
+    total_score = models.FloatField(null=True, blank=True)
+    max_score = models.FloatField(null=True, blank=True)
+    overall_feedback = models.TextField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    completed_at = models.DateTimeField(null=True, blank=True)
+    gemini_insights = models.JSONField(null=True, blank=True, help_text="Insights regarding trends, weak topics, and which questions to attempt more")
+
+    def __str__(self):
+        return f"{self.user.email} - {self.subject} - {self.created_at.date()}"
+
+class OptionalEvaluationQuestion(models.Model):
+    """
+    Stores the detailed evaluation for each question in an OptionalEvaluationSession.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    session = models.ForeignKey(OptionalEvaluationSession, on_delete=models.CASCADE, related_name='evaluated_questions')
+    question_number = models.CharField(max_length=20)
+    topic = models.CharField(max_length=255, null=True, blank=True)
+    extracted_question_text = models.TextField(null=True, blank=True, help_text="The actual math problem text extracted from the PDF")
+    marks_obtained = models.FloatField(null=True, blank=True)
+    max_marks = models.FloatField(null=True, blank=True)
+    feedback = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Session {self.session.id} - Q{self.question_number}"

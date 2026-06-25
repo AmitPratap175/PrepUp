@@ -578,11 +578,6 @@ const ChapterwiseQuizPage: React.FC = () => {
                                 ← Back to Chapters
                             </Button>
 
-                            <TabsList className="mb-8">
-                                <TabsTrigger value="practice">Practice</TabsTrigger>
-                                <TabsTrigger value="revision">Revision</TabsTrigger>
-                            </TabsList>
-
                             <TabsContent value="practice" className="space-y-6">
                                 <section>
                                     <h2 className="text-2xl font-bold mb-4">{test.title}</h2>
@@ -676,35 +671,6 @@ const ChapterwiseQuizPage: React.FC = () => {
                                 </section>
                             </TabsContent>
 
-                            <TabsContent value="revision" className="space-y-4">
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center gap-2">
-                                            <Brain className="h-5 w-5 text-primary" />
-                                            Smart Revision
-                                        </CardTitle>
-                                        <CardDescription>
-                                            Revisit questions you answered incorrectly in this chapter.
-                                        </CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        {revisionCount > 0 ? (
-                                            <div className="text-center py-8">
-                                                <div className="text-4xl font-bold text-primary mb-2">{revisionCount}</div>
-                                                <p className="text-muted-foreground mb-6">Questions pending for review</p>
-                                                <Button size="lg" onClick={startRevision} className="gap-2">
-                                                    <RotateCcw className="h-4 w-4" /> Start Revision Session
-                                                </Button>
-                                            </div>
-                                        ) : (
-                                            <div className="text-center py-8 text-muted-foreground">
-                                                <CheckCircle2 className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                                                <p>All caught up! No incorrect questions pending revision for this chapter.</p>
-                                            </div>
-                                        )}
-                                    </CardContent>
-                                </Card>
-                            </TabsContent>
                         </Tabs>
                     )
                     }
