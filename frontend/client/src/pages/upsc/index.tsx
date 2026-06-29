@@ -3,7 +3,7 @@ import { AppHeader } from "@/components/app-header";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, BookOpen, Clock, Brain, CheckCircle2, RotateCcw, List, Bookmark as BookmarkIcon, Map as MapIcon } from "lucide-react";
+import { Loader2, BookOpen, Clock, Brain, CheckCircle2, RotateCcw, List, Bookmark as BookmarkIcon, Map as MapIcon, FileText, Newspaper, Calculator, Layers, PenTool } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { PracticeTest } from "@shared/schema";
@@ -162,8 +162,80 @@ export default function UPSCPage() {
                                     <CardContent>
                                         <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
                                     </CardContent>
+                                </Card>
+
+                                <Card className="bg-sky-500/5 border-sky-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <Newspaper className="h-5 w-5 text-sky-500" />
+                                            PIB Releases
+                                        </CardTitle>
+                                        <CardDescription>Daily Press Information Bureau summaries & targeted MCQs.</CardDescription>
+                                    </CardHeader>
                                     <CardContent>
-                                        <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
+                                        <Link href="/upsc/pib">
+                                            <Button className="w-full" variant="outline">Read Releases</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-fuchsia-500/5 border-fuchsia-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <FileText className="h-5 w-5 text-fuchsia-500" />
+                                            151 Essays
+                                        </CardTitle>
+                                        <CardDescription>Practice UPSC essay topics with structures and sample essays.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/essays">
+                                            <Button className="w-full" variant="outline">Browse Essays</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-violet-500/5 border-violet-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <Calculator className="h-5 w-5 text-violet-500" />
+                                            Math Optional Evaluation
+                                        </CardTitle>
+                                        <CardDescription>Submit subjective mathematics answers for dynamic AI feedback.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/math-evaluation">
+                                            <Button className="w-full" variant="outline">Evaluate Answers</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-emerald-500/5 border-emerald-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <PenTool className="h-5 w-5 text-emerald-500" />
+                                            Mains Subjective Evaluation
+                                        </CardTitle>
+                                        <CardDescription>Submit descriptive answers for GS I-IV papers to get AI grading and structural feedback.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/mains-evaluation">
+                                            <Button className="w-full" variant="outline">Practice Mains</Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="bg-teal-500/5 border-teal-500/20">
+                                    <CardHeader>
+                                        <CardTitle className="flex items-center gap-2">
+                                            <Layers className="h-5 w-5 text-teal-500" />
+                                            Daily Practice (DPQ)
+                                        </CardTitle>
+                                        <CardDescription>Daily high-yield question cards for active revision.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <Link href="/upsc/daily-practice-questions">
+                                            <Button className="w-full" variant="outline">Practice DPQ</Button>
+                                        </Link>
                                     </CardContent>
                                 </Card>
 

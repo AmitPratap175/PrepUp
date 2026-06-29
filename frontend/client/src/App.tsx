@@ -81,6 +81,7 @@ const MapMasterPage = lazy(() => import("@/pages/map-master"));
 const EssaysListPage = lazy(() => import("@/pages/upsc/essays-list"));
 const EssayDailyReadPage = lazy(() => import("@/pages/upsc/essay-daily-read"));
 const MathEvaluationPage = lazy(() => import("@/pages/upsc/math-evaluation"));
+const MainsEvaluationPage = lazy(() => import("@/pages/upsc/mains-evaluation"));
 const UPSCMastery2027Page = lazy(() => import("@/pages/upsc/mastery-2027/App"));
 const UPSC2027TestSeriesList = lazy(() => import("@/pages/upsc/test-series-2027-list"));
 const UPSC2027TestTakePage = lazy(() => import("@/pages/upsc/test-series-2027-take"));
@@ -165,6 +166,7 @@ function Router() {
       <Route path="/upsc/essays" component={EssaysListPage} />
       <Route path="/upsc/essays/:id" component={EssayDailyReadPage} />
       <Route path="/upsc/math-evaluation" component={MathEvaluationPage} />
+      <Route path="/upsc/mains-evaluation" component={MainsEvaluationPage} />
       <Route path="/odisha/practice" component={OdishaTopicwisePracticePage} />
       
       {/* SSC Routes */}

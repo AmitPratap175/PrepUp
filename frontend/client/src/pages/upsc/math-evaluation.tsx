@@ -30,7 +30,11 @@ interface EvaluationSession {
 }
 
 export default function MathEvaluationPage() {
-  const { isAuthenticated, getAuthHeaders } = useAuth();
+  const { isAuthenticated } = useAuth();
+  const getAuthHeaders = () => {
+    const token = localStorage.getItem('token');
+    return token ? { 'Authorization': `Token ${token}` } : {};
+  };
   const { toast } = useToast();
   const [file, setFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);

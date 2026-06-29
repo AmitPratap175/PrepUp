@@ -49,7 +49,7 @@ import { feature } from 'topojson-client';
 import Markdown from 'react-markdown';
 import { AreaChart, Area, XAxis, YAxis, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
 import { cn } from '@/lib/utils';
-import { MAP_SOURCES, QUESTIONS, MapScope, MapType, Question, RIVER_SOURCES, LAKE_SOURCES } from '@/data/maps';
+import { MAP_SOURCES, QUESTIONS, MapScope, MapType, Question, RIVER_SOURCES, LAKE_SOURCES, LANDMARKS, LandmarkLocation, GEOGUESSER_LOCATIONS } from '@/data/maps';
 
 const RegionLabel = memo(({ geo, name, scope, isVisible }: { geo: any, name: string, scope: string, isVisible?: boolean }) => {
   const { projection } = useMapContext();
@@ -114,29 +114,31 @@ const MemoizedGeography = memo(({
   colors, 
   onMouseEnter, 
   onMouseLeave, 
-  onClick 
+  onClick,
+  type
 }: any) => {
+  const isGeoguesser = type === 'geoguesser';
   const style = useMemo(() => ({
     default: {
-      fill: isSelected ? colors.selected : (isDragging && isHovered ? colors.hover : defaultFill),
+      fill: defaultFill,
       stroke: "#1A1A1A",
       strokeWidth: strokeW,
       outline: "none",
     },
     hover: {
-      fill: colors.hover,
+      fill: isGeoguesser ? defaultFill : colors.hover,
       stroke: "#1A1A1A",
-      strokeWidth: strokeW * 1.5,
+      strokeWidth: isGeoguesser ? strokeW : strokeW * 1.5,
       outline: "none",
-      cursor: "pointer",
+      cursor: isGeoguesser ? "default" : "pointer",
     },
     pressed: {
-      fill: colors.selected,
+      fill: isGeoguesser ? defaultFill : colors.selected,
       stroke: "#1A1A1A",
-      strokeWidth: strokeW * 1.5,
+      strokeWidth: isGeoguesser ? strokeW : strokeW * 1.5,
       outline: "none",
     },
-  }), [isSelected, isHovered, isDragging, defaultFill, strokeW, colors]);
+  }), [isSelected, isHovered, isDragging, defaultFill, strokeW, colors, isGeoguesser]);
 
   const handleMouseEnter = useCallback(() => {
     if (onMouseEnter) onMouseEnter(geoName, geoId, geo);
@@ -330,6 +332,7 @@ const GeographyList = memo(({
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onClick={handleGeographyClick}
+              type={type}
             />
             <RegionLabel 
               geo={geo} 
@@ -474,6 +477,8 @@ export default function MapMasterPage() {
   const [feedbackPos, setFeedbackPos] = useState<{ x: number; y: number } | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
   const [gameStatus, setGameStatus] = useState<GameStatus>('idle');
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [geoguesserAnswers, setGeoguesserAnswers] = useState<Record<string, { attemptedAnswer: string; isCorrect: boolean }>>({});
   const [practiceInfo, setPracticeInfo] = useState<{ name: string; id: string } | null>(null);
   const [gameMode, setGameMode] = useState<'click' | 'drag'>('click');
   const [selectedGeoId, setSelectedGeoId] = useState<string | null>(null);
@@ -848,7 +853,27 @@ export default function MapMasterPage() {
     }
 
     let baseQuestions = [];
-    if (type === 'political' || type === 'rivers') {
+    if (['national_parks', 'ramsar_sites', 'biosphere_reserves'].includes(type)) {
+      const landmarksList = LANDMARKS[type as 'national_parks' | 'ramsar_sites' | 'biosphere_reserves'] || [];
+      baseQuestions = landmarksList.map((loc) => ({
+        id: loc.id,
+        targetId: loc.name,
+        targetName: loc.name,
+        text: `Locate ${loc.name}`,
+        category: type,
+        hint: loc.description || `Find ${loc.name} on the map.`
+      }));
+    } else if (type === 'geoguesser') {
+      const geoList = (scope === 'world' || scope === 'india') ? GEOGUESSER_LOCATIONS[scope] : [];
+      baseQuestions = geoList.map((loc) => ({
+        id: loc.id,
+        targetId: loc.name,
+        targetName: loc.name,
+        text: loc.description || `Locate the region described: ${loc.name}`,
+        category: type,
+        hint: loc.hint || `Find ${loc.name} on the map.`
+      }));
+    } else if (type === 'political' || type === 'rivers') {
       baseQuestions = dynamicQuestions;
     } else {
       baseQuestions = QUESTIONS[scope]?.filter(q => q.category === type) || [];
@@ -923,13 +948,14 @@ export default function MapMasterPage() {
   const currentQuestion = currentQuestions[currentQuestionIndex];
 
   const handleMouseEnter = useCallback((name: string, id: string, geo: any) => {
+    if (type === 'geoguesser' && gameStatus === 'playing') return;
     setHoveredGeoName(name);
     setHoveredGeoId(id);
     (window as any)._hoveredGeo = geo;
     if (gameStatus === 'practice') {
       setPracticeInfo({ name, id });
     }
-  }, [gameStatus]);
+  }, [gameStatus, type]);
 
   const handleMouseLeave = useCallback(() => {
     setHoveredGeoName(null);
@@ -958,6 +984,19 @@ export default function MapMasterPage() {
                       normalize(geo.properties?.NAME_EN || "") === targetNorm ||
                       geoId === currentQuestion.targetId;
 
+    if (type === 'geoguesser') {
+      setGeoguesserAnswers(prev => {
+        if (prev[currentQuestion.id]) return prev;
+        return {
+          ...prev,
+          [currentQuestion.id]: {
+            attemptedAnswer: geoName || geoId || 'Unknown',
+            isCorrect: isCorrect
+          }
+        };
+      });
+    }
+
     if (isCorrect) {
       setScore(s => s + 1);
       setFeedback({ correct: true, message: `Correct! That is ${geoName}.` });
@@ -985,9 +1024,10 @@ export default function MapMasterPage() {
         }
       }
     }, 2000);
-  }, [currentQuestion, currentQuestionIndex, currentQuestions.length, gameMode, keepLabelsOnDrop]);
+  }, [currentQuestion, currentQuestionIndex, currentQuestions.length, gameMode, keepLabelsOnDrop, type]);
 
   const handleGeographyClick = useCallback((geo: any, e: React.MouseEvent) => {
+    if (type === 'geoguesser') return;
     if (activeTool === 'elevation') {
       const centroid = geoCentroid(geo);
       if (centroid && !isNaN(centroid[0]) && !isNaN(centroid[1])) {
@@ -1008,7 +1048,7 @@ export default function MapMasterPage() {
     if (gameStatus !== 'playing' || feedback || gameMode === 'drag') return;
     setFeedbackPos({ x: e.clientX, y: e.clientY });
     processAnswer(geo);
-  }, [gameStatus, feedback, gameMode, processAnswer, activeTool]);
+  }, [gameStatus, feedback, gameMode, processAnswer, activeTool, type]);
 
   const handleDragEnd = (geo: any) => {
     if (gameStatus !== 'playing' || feedback || !geo) return;
@@ -1018,6 +1058,19 @@ export default function MapMasterPage() {
   const skipQuestion = () => {
     if (gameStatus !== 'playing' || feedback || !currentQuestion) return;
     
+    if (type === 'geoguesser') {
+      setGeoguesserAnswers(prev => {
+        if (prev[currentQuestion.id]) return prev;
+        return {
+          ...prev,
+          [currentQuestion.id]: {
+            attemptedAnswer: 'Skipped',
+            isCorrect: false
+          }
+        };
+      });
+    }
+
     // Highlight the correct answer
     setSelectedGeoId(currentQuestion.targetId);
     setFeedback({ 
@@ -1045,12 +1098,45 @@ export default function MapMasterPage() {
 
   const submitQuiz = () => {
     if (gameStatus !== 'playing') return;
+
+    if (type === 'geoguesser') {
+      setGeoguesserAnswers(prev => {
+        const updated = { ...prev };
+        currentQuestions.forEach(q => {
+          if (!updated[q.id]) {
+            updated[q.id] = {
+              attemptedAnswer: 'Unanswered',
+              isCorrect: false
+            };
+          }
+        });
+        return updated;
+      });
+    }
     
     // Find all correct geographies for all questions in the current quiz
     const allLabels = currentQuestions.map(q => {
       let foundGeo = null;
       if (customQuizLocations && customQuizLocations.length > 0) {
         const loc = customQuizLocations.find(l => l.name === q.targetId);
+        if (loc) {
+          foundGeo = {
+            properties: { name: loc.name, id: loc.name },
+            geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+          };
+        }
+      } else if (['national_parks', 'ramsar_sites', 'biosphere_reserves'].includes(type)) {
+        const landmarksList = LANDMARKS[type as 'national_parks' | 'ramsar_sites' | 'biosphere_reserves'] || [];
+        const loc = landmarksList.find(l => l.name === q.targetId);
+        if (loc) {
+          foundGeo = {
+            properties: { name: loc.name, id: loc.name },
+            geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+          };
+        }
+      } else if (type === 'geoguesser') {
+        const geoList = GEOGUESSER_LOCATIONS[scope as 'world' | 'india'] || [];
+        const loc = geoList.find(l => l.name === q.targetId);
         if (loc) {
           foundGeo = {
             properties: { name: loc.name, id: loc.name },
@@ -1162,6 +1248,89 @@ export default function MapMasterPage() {
     setSelectedPracticeRegion(null);
   };
 
+  const startSession = async () => {
+    const token = localStorage.getItem('token');
+    if (!token) return;
+    try {
+      const response = await fetch('/api/test-sessions/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Token ${token}`,
+        },
+        body: JSON.stringify({
+          testId: `map-master-geoguesser-${scope}`,
+          startTime: new Date().toISOString(),
+          totalQuestions: currentQuestions.length,
+          subject: "Map Master - Geoguesser",
+          maxScore: currentQuestions.length,
+          answers: []
+        }),
+      });
+      const data = await response.json();
+      if (data.id) {
+        setSessionId(data.id);
+      }
+    } catch (error) {
+      console.error("Failed to start session:", error);
+    }
+  };
+
+  useEffect(() => {
+    if (gameStatus === 'finished' && type === 'geoguesser' && sessionId) {
+      const finalizeSession = async () => {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const answersList = currentQuestions.map(q => {
+          const attempt = geoguesserAnswers[q.id] || { attemptedAnswer: 'Unanswered', isCorrect: false };
+          return {
+            id: q.id,
+            question_id: q.id,
+            qid: q.id,
+            selectedAnswer: attempt.attemptedAnswer,
+            user_answer: attempt.attemptedAnswer,
+            isCorrect: attempt.isCorrect,
+            status: attempt.isCorrect ? 'correct' : 'incorrect',
+            text: q.text,
+            correct_answer: q.targetName,
+            explanation: q.hint || `The correct location is ${q.targetName}.`
+          };
+        });
+
+        const correctCount = answersList.filter(a => a.isCorrect).length;
+
+        try {
+          await fetch(`/api/test-sessions/${sessionId}/`, {
+            method: 'PATCH',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Token ${token}`,
+            },
+            body: JSON.stringify({
+              answers: answersList,
+              score: correctCount,
+              correctAnswers: correctCount,
+              status: 'completed',
+              endTime: new Date().toISOString()
+            }),
+          });
+          console.log("Geoguesser session submitted successfully.");
+        } catch (error) {
+          console.error("Failed to finalize geoguesser session:", error);
+        }
+      };
+
+      finalizeSession();
+    }
+  }, [gameStatus, type, sessionId, currentQuestions, geoguesserAnswers]);
+
+  useEffect(() => {
+    if (type === 'geoguesser') {
+      setGameMode('click');
+    }
+  }, [type]);
+
   const startGame = () => {
     if (currentQuestions.length === 0) return;
     setScore(0);
@@ -1169,6 +1338,10 @@ export default function MapMasterPage() {
     setGameStatus('playing');
     setFeedback(null);
     setDroppedLabels([]);
+    if (type === 'geoguesser') {
+      setGeoguesserAnswers({});
+      startSession();
+    }
   };
 
   const resetGame = () => {
@@ -1322,15 +1495,20 @@ export default function MapMasterPage() {
                 </button>
                 <button
                   onClick={() => { setGameMode('drag'); if (gameStatus !== 'practice') resetGame(); }}
+                  disabled={type === 'geoguesser'}
                   className={cn(
                     "flex-1 py-2 text-xs font-bold rounded-lg transition-all",
+                    type === 'geoguesser' && "opacity-50 cursor-not-allowed",
                     gameMode === 'drag' ? "bg-[#1A1A1A] text-white" : "text-[#1A1A1A]/60 hover:bg-[#F5F5F0]"
                   )}
                 >
                   Drag & Drop
                 </button>
               </div>
-              {gameMode === 'drag' && (
+              {type === 'geoguesser' && (
+                <p className="text-[10px] text-purple-600 font-semibold px-2">Geoguesser requires Point & Click pinpointing.</p>
+              )}
+              {gameMode === 'drag' && type !== 'geoguesser' && (
                 <label className="flex items-center gap-2 px-2 cursor-pointer">
                   <input 
                     type="checkbox" 
@@ -1352,6 +1530,9 @@ export default function MapMasterPage() {
                   onClick={() => { 
                     setScope(s); 
                     setCustomQuizLocations(null);
+                    if (s !== 'world' && s !== 'india' && type === 'geoguesser') {
+                      setType('political');
+                    }
                     if (gameStatus !== 'practice') {
                       resetGame(); 
                     } else {
@@ -1388,6 +1569,14 @@ export default function MapMasterPage() {
                 { id: 'climatic', icon: CloudSun, label: 'Climatic' },
                 { id: 'capitals', icon: Landmark, label: 'Capitals' },
                 { id: 'rivers', icon: Compass, label: 'Rivers' },
+                ...(scope === 'world' || scope === 'india' ? [
+                  { id: 'geoguesser', icon: Globe, label: 'Geoguesser AI 🎯' }
+                ] : []),
+                ...(scope === 'india' ? [
+                  { id: 'national_parks', icon: Mountain, label: 'National Parks 🏞️' },
+                  { id: 'ramsar_sites', icon: CloudRain, label: 'Ramsar Sites 🦆' },
+                  { id: 'biosphere_reserves', icon: Compass, label: 'Biosphere Reserves 🌳' }
+                ] : [])
               ].map((l) => (
                 <button
                   key={l.id}
@@ -1986,6 +2175,129 @@ export default function MapMasterPage() {
                       )}
                     </>
                   )}
+
+                  {['national_parks', 'ramsar_sites', 'biosphere_reserves'].includes(type) && 
+                    (LANDMARKS[type as 'national_parks' | 'ramsar_sites' | 'biosphere_reserves'] || []).map((loc, idx) => (
+                      <Marker 
+                        key={`landmark-loc-${type}-${idx}`} 
+                        coordinates={[loc.lng, loc.lat]}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (gameStatus === 'playing' && !feedback) {
+                            setFeedbackPos({ x: e.clientX, y: e.clientY });
+                            processAnswer({ 
+                              properties: { name: loc.name, id: loc.name },
+                              geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+                            });
+                          }
+                        }}
+                        onMouseEnter={() => {
+                          handleMouseEnter(loc.name, loc.name, {
+                            properties: { name: loc.name, id: loc.name },
+                            geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+                          });
+                        }}
+                        onMouseLeave={handleMouseLeave}
+                        style={{ cursor: gameStatus === 'playing' ? 'pointer' : 'default' }}
+                      >
+                        <circle 
+                          r={hoveredGeoId === loc.name ? 8 : 5} 
+                          fill={selectedGeoId === loc.name ? (feedback?.correct ? "#10B981" : "#EF4444") : (hoveredGeoId === loc.name ? "#F59E0B" : "#3B82F6")} 
+                          stroke="#FFFFFF" 
+                          strokeWidth={1.5} 
+                          className="transition-all duration-200 shadow-sm"
+                        />
+                        {(gameStatus !== 'playing' || (feedback && selectedGeoId === loc.name) || droppedLabels.some(l => l.id === loc.name)) && (
+                          <text 
+                            textAnchor="middle" 
+                            y={-12} 
+                            style={{ 
+                              fontFamily: "system-ui", 
+                              fill: "#1A1A1A", 
+                              fontSize: "9px", 
+                              fontWeight: "bold",
+                              pointerEvents: "none",
+                              opacity: hoveredGeoId === loc.name || selectedGeoId === loc.name ? 1 : 0.8,
+                              textShadow: "1px 1px 0px rgba(255,255,255,0.9), -1px -1px 0px rgba(255,255,255,0.9), 1px -1px 0px rgba(255,255,255,0.9), -1px 1px 0px rgba(255,255,255,0.9)"
+                            }}
+                          >
+                            {loc.name}
+                          </text>
+                        )}
+                      </Marker>
+                    ))
+                  }
+
+                  {type === 'geoguesser' && (scope === 'world' || scope === 'india') &&
+                    (GEOGUESSER_LOCATIONS[scope] || []).map((loc, idx) => {
+                      let fill = "#8B5CF6";
+                      const isSelected = selectedGeoId === loc.name;
+                      const hasDroppedLabel = droppedLabels.some(l => l.id === loc.name);
+                      
+                      if (isSelected) {
+                        if (feedback) {
+                          fill = feedback.correct ? "#10B981" : "#EF4444";
+                        } else {
+                          fill = "#F59E0B";
+                        }
+                      } else if (gameStatus === 'finished') {
+                        const attempt = geoguesserAnswers[loc.id];
+                        fill = (attempt && attempt.isCorrect) ? "#10B981" : "#EF4444";
+                      }
+                      
+                      return (
+                        <Marker 
+                          key={`geoguesser-loc-${idx}`} 
+                          coordinates={[loc.lng, loc.lat]}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (gameStatus === 'playing' && !feedback) {
+                              setFeedbackPos({ x: e.clientX, y: e.clientY });
+                              processAnswer({ 
+                                properties: { name: loc.name, id: loc.name },
+                                geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+                              });
+                            }
+                          }}
+                          onMouseEnter={() => {
+                            if (gameStatus !== 'playing') {
+                              handleMouseEnter(loc.name, loc.name, {
+                                properties: { name: loc.name, id: loc.name },
+                                geometry: { type: "Point", coordinates: [loc.lng, loc.lat] }
+                              });
+                            }
+                          }}
+                          onMouseLeave={handleMouseLeave}
+                          style={{ cursor: gameStatus === 'playing' ? 'pointer' : 'default' }}
+                        >
+                          <circle 
+                            r={hoveredGeoId === loc.name ? 8 : 5} 
+                            fill={fill} 
+                            stroke="#FFFFFF" 
+                            strokeWidth={1.5} 
+                            className="transition-all duration-200 shadow-sm"
+                          />
+                          {(gameStatus !== 'playing' || (feedback && selectedGeoId === loc.name) || hasDroppedLabel) && (
+                            <text 
+                              textAnchor="middle" 
+                              y={-12} 
+                              style={{ 
+                                fontFamily: "system-ui", 
+                                fill: "#1A1A1A", 
+                                fontSize: "9px", 
+                                fontWeight: "bold",
+                                pointerEvents: "none",
+                                opacity: hoveredGeoId === loc.name || selectedGeoId === loc.name || hasDroppedLabel ? 1 : 0.8,
+                                textShadow: "1px 1px 0px rgba(255,255,255,0.9), -1px -1px 0px rgba(255,255,255,0.9), 1px -1px 0px rgba(255,255,255,0.9), -1px 1px 0px rgba(255,255,255,0.9)"
+                              }}
+                            >
+                              {loc.name}
+                            </text>
+                          )}
+                        </Marker>
+                      );
+                    })
+                  }
 
                   {customQuizLocations && customQuizLocations.map((loc, idx) => (
                     loc.lat !== undefined && loc.lng !== undefined && (

@@ -9,7 +9,7 @@ import { BarVisualizer, AgentState } from "@/components/ui/bar-visualizer";
 import 'katex/dist/katex.min.css';
 import { GoogleGenAI, LiveServerMessage, Modality, Session } from '@google/genai';
 import { createBlob, decode, decodeAudioData } from '@/lib/audio-utils';
-import { Bot } from "lucide-react";
+import { Bot, Volume2, VolumeX } from "lucide-react";
 
 interface ChatbotProps {
   onClose: () => void;
@@ -17,6 +17,8 @@ interface ChatbotProps {
   history?: Message[];
   onHistoryChange?: (history: Message[]) => void;
   onBookmarkChange?: () => void;
+  currentQuestionId?: string;
+  onUpdateExplanation?: (explanation: string, correctOption?: string) => void;
 }
 
 export interface Message {
@@ -29,7 +31,9 @@ export const Chatbot: React.FC<ChatbotProps> = ({
   initialMessage, 
   history, 
   onHistoryChange, 
-  onBookmarkChange 
+  onBookmarkChange,
+  currentQuestionId,
+  onUpdateExplanation
 }) => {
   const loadInitialMessages = (): Message[] => {
     if (history) return history;
@@ -51,6 +55,28 @@ export const Chatbot: React.FC<ChatbotProps> = ({
   const [visualizerStream, setVisualizerStream] = useState<MediaStream | null>(null);
   const [agentState, setAgentState] = useState<AgentState>('initializing');
   const chatContainerRef = useRef<HTMLDivElement>(null);
+
+  const [speakingMessageIndex, setSpeakingMessageIndex] = useState<number | null>(null);
+
+  const handleSpeak = (text: string, index: number) => {
+    if (!('speechSynthesis' in window)) return;
+
+    if (speakingMessageIndex === index) {
+      window.speechSynthesis.cancel();
+      setSpeakingMessageIndex(null);
+    } else {
+      window.speechSynthesis.cancel();
+      const cleanText = text
+        .replace(/[*#`_\-]/g, '')
+        .replace(/\$.*?\$/g, '')
+        .trim();
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.onend = () => setSpeakingMessageIndex(null);
+      utterance.onerror = () => setSpeakingMessageIndex(null);
+      setSpeakingMessageIndex(index);
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   const client = useRef<GoogleGenAI | null>(null);
   const sessionPromise = useRef<Promise<Session> | null>(null);
@@ -77,6 +103,9 @@ export const Chatbot: React.FC<ChatbotProps> = ({
     return () => {
       if (isRecordingRef.current) {
         stopRecording();
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
       }
       sessionPromise.current?.then((session) => session.close());
     };
@@ -109,12 +138,16 @@ export const Chatbot: React.FC<ChatbotProps> = ({
       console.error("Failed to fetch tools", e);
     }
 
+    const baseInstruction = "You are PrepUp's voice assistant. You help students prepare for exams like CAT and GATE. You can access tools to get quizzes, check dictionary, etc. Be concise and helpful. When a user asks for a quiz, use the get_quiz_question tool.";
+    const questionContext = initialMessage ? `\n\nAdditionally, the user is currently looking at this question:\n${initialMessage}\n\nPlease discuss and explain this question/options/answer conversationally if asked.` : "";
+    const systemInstructionText = `${baseInstruction}${questionContext}`;
+
     sessionPromise.current = client.current.live.connect({
       model: model,
       tools: tools,
       systemInstruction: {
         parts: [{
-          text: "You are PrepUp's voice assistant. You help students prepare for exams like CAT and GATE. You can access tools to get quizzes, check dictionary, etc. Be concise and helpful. When a user asks for a quiz, use the get_quiz_question tool."
+          text: systemInstructionText
         }]
       },
       callbacks: {
@@ -481,10 +514,10 @@ export const Chatbot: React.FC<ChatbotProps> = ({
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+              className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'} items-end gap-1.5`}
             >
               <div
-                className={`p-2 rounded-lg w-fit max-w-[85%] prose ${message.sender === 'user'
+                className={`p-2.5 rounded-lg w-fit max-w-[85%] prose ${message.sender === 'user'
                   ? 'bg-primary text-primary-foreground'
                   : 'bg-muted text-foreground dark:prose-invert'
                   }`}
@@ -493,6 +526,20 @@ export const Chatbot: React.FC<ChatbotProps> = ({
                   {message.text}
                 </ReactMarkdown>
               </div>
+              {message.sender === 'bot' && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-7 w-7 text-muted-foreground hover:text-foreground shrink-0 rounded-full"
+                  onClick={() => handleSpeak(message.text, index)}
+                >
+                  {speakingMessageIndex === index ? (
+                    <VolumeX className="h-4 w-4 text-primary animate-pulse" />
+                  ) : (
+                    <Volume2 className="h-4 w-4" />
+                  )}
+                </Button>
+              )}
             </div>
           ))}
           {currentInputTranscription && (
@@ -531,7 +578,28 @@ export const Chatbot: React.FC<ChatbotProps> = ({
           </div>
         )}
       </CardContent>
-      <div className="p-4 border-t relative">
+      <div className="p-4 border-t relative flex flex-col gap-2">
+        {initialMessage && (
+          <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none max-w-full">
+            {[
+              { label: "Why is correct?", prompt: "Can you explain why the correct answer is the right option?" },
+              { label: "Option breakdown", prompt: "Could you break down each option and explain why it is correct or incorrect?" },
+              { label: "Mnemonic/Trick", prompt: "Do you have any mnemonic or shortcut/trick to remember this concept easily?" },
+              { label: "Key takeaway", prompt: "What is the most important concept or key takeaway to remember from this question?" }
+            ].map((qp, idx) => (
+              <Button
+                key={idx}
+                variant="outline"
+                size="sm"
+                className="whitespace-nowrap rounded-full text-[11px] h-7 px-2.5 bg-background border-muted-foreground/30 hover:border-primary text-muted-foreground hover:text-foreground"
+                onClick={() => handleSendMessage(qp.prompt)}
+                disabled={isLoading || isRecording}
+              >
+                {qp.label}
+              </Button>
+            ))}
+          </div>
+        )}
         <div className="flex items-center space-x-2">
           <Input
             type="text"

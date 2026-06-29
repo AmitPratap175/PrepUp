@@ -18,6 +18,7 @@ from . import views_pib
 from . import views_news
 from . import views_evaluation
 from . import views_upsc_2027
+from . import views_mains
 
 urlpatterns = [
     path('subjects/', views.subjects, name='subjects'),
@@ -59,6 +60,8 @@ urlpatterns = [
     path('essays/topics/', views.EssayTopicListView.as_view(), name='essay-topics-list'),
     path('essays/xat-questions/', views.XATEssayQuestionListView.as_view(), name='essay-xat-questions-list'),
     path('essays/', views.EssayListCreateView.as_view(), name='essays-list-create'),
+    path('essays/evaluate-outline/', views.EssayEvaluateOutlineView.as_view(), name='essay-evaluate-outline'),
+    path('essays/transcribe-handwriting/', views.EssayTranscribeHandwritingView.as_view(), name='essay-transcribe-handwriting'),
     path('essays/<uuid:essay_id>/', views.EssayDetailView.as_view(), name='essay-detail'),
     path('essays/<uuid:essay_id>/submit/', views.EssaySubmitView.as_view(), name='essay-submit'),
     path('essays/<uuid:essay_id>/review/', views.EssayReviewView.as_view(), name='essay-review'),
@@ -104,4 +107,11 @@ urlpatterns = [
     path('evaluation/math/upload/', views_evaluation.MathEvaluationUploadView.as_view(), name='math-evaluation-upload'),
     path('evaluation/math/sessions/', views_evaluation.MathEvaluationsListView.as_view(), name='math-evaluation-list'),
     path('evaluation/math/sessions/<uuid:session_id>/', views_evaluation.MathEvaluationDetailView.as_view(), name='math-evaluation-detail'),
+
+    # UPSC Mains Subjective Evaluation
+    path('upsc/mains/questions/', views_mains.MainsQuestionsListView.as_view(), name='mains-questions-list'),
+    path('upsc/mains/questions/<uuid:question_id>/', views_mains.MainsQuestionDetailView.as_view(), name='mains-question-detail'),
+    path('upsc/mains/questions/<uuid:question_id>/evaluate/', views_mains.MainsEvaluateAnswerView.as_view(), name='mains-evaluate-answer'),
+    path('upsc/mains/evaluations/', views_mains.MainsEvaluationsListView.as_view(), name='mains-evaluations-list'),
+    path('upsc/mains/evaluations/<uuid:evaluation_id>/', views_mains.MainsEvaluationDetailView.as_view(), name='mains-evaluation-detail'),
 ]

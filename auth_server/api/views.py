@@ -426,8 +426,18 @@ class ChatbotView(APIView):
 
         # print(f"\n\nMessage received: {message}\n\n")
 
-        # Call the synchronous invoke_agent function directly
-        reply = invoke_agent(session_id=session_id, message=message, token=token)
+        # Call the synchronous invoke_agent function directly with error handling
+        try:
+            reply = invoke_agent(session_id=session_id, message=message, token=token)
+        except Exception as e:
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.exception("Error in chatbot execution")
+            err_msg = str(e)
+            if "ResourceExhausted" in err_msg or "429" in err_msg or "quota" in err_msg.lower():
+                reply = "⚠️ I have temporarily exceeded my Gemini API rate limit quota. Please try again in a minute!"
+            else:
+                reply = f"Sorry, I encountered an error: {err_msg}"
 
         return Response({"reply": reply})
 
@@ -2463,3 +2473,142 @@ class UpdateQuestionExplanationView(APIView):
             'saved_file': os.path.basename(saved_file) if saved_file else None,
             'found_in_mem': found_in_mem
         }, status=status.HTTP_200_OK)
+
+
+class EssayEvaluateOutlineView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        essay_title = request.data.get('essay_title', '')
+        intro_hook = request.data.get('intro_hook', '')
+        arguments = request.data.get('arguments', '')
+        evidence = request.data.get('evidence', '')
+        conclusion = request.data.get('conclusion', '')
+
+        if not essay_title:
+            return Response({"error": "Essay title is required"}, status=status.HTTP_400_BAD_REQUEST)
+
+        prompt = f"""
+        You are an expert UPSC Civil Services Essay evaluator. Evaluate this essay outline draft based on the topic.
+        
+        Essay Topic: {essay_title}
+        
+        Outline Draft Details:
+        1. Introduction Hook:
+        {intro_hook}
+        
+        2. Main Dimensional Arguments (e.g., Social, Economic, Political, Environmental, Ethical, Historical):
+        {arguments}
+        
+        3. Key Quotes, Case Studies & Examples:
+        {evidence}
+        
+        4. Conclusion Theme:
+        {conclusion}
+        
+        Evaluate the outline on these aspects:
+        1. Introduction Hook effectiveness.
+        2. Coverage of diverse dimensions (is it multi-dimensional? e.g., PEESTLE - Political, Economic, Environmental, Social, Technological, Legal, Ethical).
+        3. Strength and relevance of quotes, cases, and examples.
+        4. Conclusion flow and strength.
+        
+        Provide constructive feedback, suggestions for additional dimensions (e.g. historical, ethical, environmental), and recommend 2-3 specific quotes, Supreme Court cases, or data points that would strengthen this essay.
+        
+        Provide your response as JSON with this structure:
+        {{
+            "intro_feedback": "...",
+            "dimensions_feedback": "...",
+            "evidence_feedback": "...",
+            "conclusion_feedback": "...",
+            "recommended_quotes_and_cases": ["...", "..."],
+            "cohesion_rating": 8,
+            "suggestions": ["...", "..."]
+        }}
+        """
+
+        try:
+            from google import genai
+            from google.genai import types
+            import os
+            import json
+
+            api_key = os.environ.get("GEMINI_API_KEY")
+            client = genai.Client(api_key=api_key)
+            
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.7
+                )
+            )
+
+            if response.text:
+                result = json.loads(response.text)
+                return Response(result)
+            else:
+                return Response({"error": "Failed to get response from AI"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as e:
+            print(f"Error evaluating outline: {e}")
+            err_msg = str(e)
+            if "ResourceExhausted" in err_msg or "429" in err_msg or "quota" in err_msg.lower():
+                return Response({"error": "⚠️ Gemini API rate limit quota exceeded. Please try again in a minute!"}, status=status.HTTP_429_TOO_MANY_REQUESTS)
+            return Response({"error": f"AI Outline Evaluation failed: {err_msg}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class EssayTranscribeHandwritingView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        files = request.FILES.getlist('images')
+        if not files:
+            return Response({"error": "No images uploaded"}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            from google import genai
+            from google.genai import types
+            import os
+
+            api_key = os.environ.get("GEMINI_API_KEY")
+            client = genai.Client(api_key=api_key)
+            
+            transcriptions = []
+            for file_index, uploaded_file in enumerate(files):
+                uploaded_file.seek(0)
+                image_bytes = uploaded_file.read()
+                mime_type = uploaded_file.content_type or "image/jpeg"
+                
+                part = types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
+                prompt = """
+                You are an expert handwriting transcriber. Transcribe the handwritten text from this image precisely.
+                Rules:
+                1. Provide ONLY the transcribed text. Do not add any conversational remarks, intros, or summaries.
+                2. Maintain paragraph breaks where the writer started a new paragraph.
+                3. If a word or phrase is completely illegible, transcribe it as "[illegible]" instead of guessing.
+                4. Output the raw text precisely as written.
+                """
+
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=[part, prompt],
+                    config=types.GenerateContentConfig(
+                        temperature=0.2
+                    )
+                )
+                
+                if response.text:
+                    transcriptions.append(response.text.strip())
+                else:
+                    transcriptions.append(f"[Transcription failed for page {file_index + 1}]")
+            
+            full_text = "\n\n".join(transcriptions)
+            return Response({"transcription": full_text})
+        except Exception as e:
+            print(f"Error transcribing handwriting: {e}")
+            err_msg = str(e)
+            if "ResourceExhausted" in err_msg or "429" in err_msg or "quota" in err_msg.lower():
+                return Response({"error": "⚠️ Gemini API rate limit quota exceeded. Please try again in a minute!"}, status=status.HTTP_429_TOO_MANY_REQUESTS)
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+

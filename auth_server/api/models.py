@@ -487,3 +487,34 @@ class OptionalEvaluationQuestion(models.Model):
 
     def __str__(self):
         return f"Session {self.session.id} - Q{self.question_number}"
+
+
+class MainsQuestion(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    gs_paper = models.IntegerField(choices=[(1, 'GS-I'), (2, 'GS-II'), (3, 'GS-III'), (4, 'GS-IV')])
+    syllabus_topic = models.CharField(max_length=500)
+    question_text = models.TextField()
+    model_answer = models.TextField()
+    key_points = models.JSONField(default=list, help_text="Expected keywords, articles, or cases")
+
+    def __str__(self):
+        return f"GS-{self.gs_paper} - {self.syllabus_topic[:30]}... - Q: {self.question_text[:50]}"
+
+
+class MainsEvaluation(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mains_evaluations')
+    question = models.ForeignKey(MainsQuestion, on_delete=models.CASCADE, related_name='evaluations')
+    user_answer = models.TextField()
+    intro_score = models.IntegerField(help_text="Out of 10")
+    body_score = models.IntegerField(help_text="Out of 10")
+    conclusion_score = models.IntegerField(help_text="Out of 10")
+    structure_score = models.IntegerField(help_text="Out of 10")
+    factual_feedback = models.JSONField(default=list, help_text="List of missing articles/amendments/data")
+    structural_feedback = models.TextField()
+    overall_score = models.FloatField(default=0.0, help_text="Out of 10")
+    evaluated_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Eval: {self.user.email} - GS-{self.question.gs_paper} - Score: {self.overall_score}"
+

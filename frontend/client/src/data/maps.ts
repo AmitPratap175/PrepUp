@@ -10,7 +10,7 @@ export const MAP_SOURCES: Record<MapScope, string> = {
   odisha: "https://raw.githubusercontent.com/HindustanTimesLabs/shapefiles/master/state_ut/odisha/district/odisha_district.json"
 };
 
-export type MapType = "political" | "physical" | "climatic" | "capitals" | "rivers";
+export type MapType = "political" | "physical" | "climatic" | "capitals" | "rivers" | "national_parks" | "ramsar_sites" | "biosphere_reserves" | "geoguesser";
 export type MapScope = "world" | "asia" | "africa" | "europe" | "north-america" | "south-america" | "oceania" | "india" | "odisha";
 
 export const RIVER_SOURCES: Partial<Record<MapScope, string>> = {
@@ -437,7 +437,222 @@ export const QUESTIONS: Record<MapScope, Question[]> = {
     // Capitals (Headquarters)
     { id: "ocap1", text: "Locate Bhubaneswar (HQ of Khordha)", targetId: "20", targetName: "Khordha", category: "capitals" },
     { id: "ocap2", text: "Locate Chhatrapur (HQ of Ganjam)", targetId: "16", targetName: "Ganjam", category: "capitals" },
-    { id: "ocap3", text: "Locate Baripada (HQ of Mayurbhanj)", targetId: "22", targetName: "Mayurbhanj", category: "capitals" },
-    { id: "ocap4", text: "Locate Bhawanipatna (HQ of Kalahandi)", targetId: "17", targetName: "Kalahandi", category: "capitals" },
+    {id: "ocap3", text: "Locate Baripada (HQ of Mayurbhanj)", targetId: "22", targetName: "Mayurbhanj", category: "capitals"},
+    {id: "ocap4", text: "Locate Bhawanipatna (HQ of Kalahandi)", targetId: "17", targetName: "Kalahandi", category: "capitals"},
   ]
 };
+
+export interface LandmarkLocation {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+  description?: string;
+}
+
+export const LANDMARKS: Record<"national_parks" | "ramsar_sites" | "biosphere_reserves", LandmarkLocation[]> = {
+  national_parks: [
+    { id: "np1", name: "Jim Corbett National Park", lat: 29.5300, lng: 78.7747, description: "India's oldest national park, famous for Bengal tigers. Located in Uttarakhand." },
+    { id: "np2", name: "Kaziranga National Park", lat: 26.5775, lng: 93.1711, description: "Home to the world's largest population of great Indian one-horned rhinoceroses. Located in Assam." },
+    { id: "np3", name: "Gir National Park", lat: 21.1243, lng: 70.6276, description: "The only natural habitat of Asiatic lions. Located in Gujarat." },
+    { id: "np4", name: "Keibul Lamjao National Park", lat: 24.5300, lng: 93.9000, description: "The world's only floating national park, home to the endangered Sangai deer. Located on Loktak Lake, Manipur." },
+    { id: "np5", name: "Hemis National Park", lat: 33.9900, lng: 77.3700, description: "India's largest national park, famous for snow leopards. Located in Ladakh." },
+    { id: "np6", name: "Silent Valley National Park", lat: 11.1300, lng: 76.4300, description: "Famous for the lion-tailed macaque and pristine tropical rainforests. Located in Kerala." },
+    { id: "np7", name: "Ranthambore National Park", lat: 26.0173, lng: 76.5026, description: "Renowned for its Bengal tiger population and historical fort. Located in Rajasthan." },
+    { id: "np8", name: "Kanha National Park", lat: 22.3300, lng: 80.6000, description: "Inspiration for Rudyard Kipling's Jungle Book; famous for Barasingha (swamp deer). Located in Madhya Pradesh." },
+    { id: "np9", name: "Bandipur National Park", lat: 11.6600, lng: 76.6300, description: "Part of the Nilgiri Biosphere Reserve, famous for tigers and elephants. Located in Karnataka." },
+    { id: "np10", name: "Namdapha National Park", lat: 27.5000, lng: 96.2500, description: "Famous for harboring four big cat species: tiger, leopard, snow leopard, and clouded leopard. Located in Arunachal Pradesh." }
+  ],
+  ramsar_sites: [
+    { id: "rs1", name: "Chilika Lake", lat: 19.6700, lng: 85.2000, description: "India's largest brackish water lagoon and first Ramsar site. Located in Odisha." },
+    { id: "rs2", name: "Vembanad Kol Wetland", lat: 9.6000, lng: 76.4000, description: "The longest lake in India and the largest wetland system in Kerala." },
+    { id: "rs3", name: "Loktak Lake", lat: 24.5200, lng: 93.9200, description: "Famous for floatable phumdis and Keibul Lamjao floating park. Located in Manipur." },
+    { id: "rs4", name: "Wular Lake", lat: 34.4200, lng: 74.6000, description: "One of the largest freshwater lakes in Asia, fed by the Jhelum River. Located in Jammu & Kashmir." },
+    { id: "rs5", name: "Bhitarkanika Mangroves", lat: 20.7300, lng: 86.8700, description: "Known for salt-water crocodiles, olive ridley turtles, and diverse mangroves. Located in Odisha." },
+    { id: "rs6", name: "Keoladeo National Park", lat: 27.1800, lng: 77.5200, description: "A man-made wetland sanctuary and famous wintering area for migratory birds. Located in Rajasthan." },
+    { id: "rs7", name: "Deepor Beel", lat: 26.1300, lng: 91.6600, description: "A permanent freshwater lake and significant staging site for migratory birds. Located in Assam." },
+    { id: "rs8", name: "East Kolkata Wetlands", lat: 22.5600, lng: 88.4500, description: "World-famous organic sewage treatment system supporting fisheries and agriculture. Located in West Bengal." },
+    { id: "rs9", name: "Point Calimere Wildlife Sanctuary", lat: 10.2800, lng: 79.8500, description: "A coastal wetland habitat supporting large migratory waterbird populations. Located in Tamil Nadu." },
+    { id: "rs10", name: "Tso Moriri", lat: 32.9000, lng: 78.3000, description: "A high-altitude, oligotrophic lake breeding black-necked cranes. Located in Ladakh." }
+  ],
+  biosphere_reserves: [
+    { id: "br1", name: "Nilgiri Biosphere Reserve", lat: 11.5000, lng: 76.5000, description: "India's first biosphere reserve, spanning TN, Kerala, and Karnataka. Famous for Nilgiri Tahr." },
+    { id: "br2", name: "Gulf of Mannar", lat: 9.0500, lng: 79.3000, description: "Spans coasts of India and Sri Lanka. Famous for coral reefs and Dugong (sea cow). Located in Tamil Nadu." },
+    { id: "br3", name: "Sundarbans Biosphere Reserve", lat: 22.0000, lng: 88.6000, description: "World's largest mangrove forest and home of the Royal Bengal Tiger. Located in West Bengal." },
+    { id: "br4", name: "Nanda Devi Biosphere Reserve", lat: 30.4300, lng: 79.8400, description: "UNESCO World Heritage Site, located in the high Himalayas. Located in Uttarakhand." },
+    { id: "br5", name: "Similipal Biosphere Reserve", lat: 21.9300, lng: 86.3300, description: "Known for tigers, elephants, red silk cotton trees, and waterfalls. Located in Odisha." },
+    { id: "br6", name: "Great Rann of Kutch", lat: 23.8000, lng: 69.9000, description: "India's largest biosphere reserve by area, famous for Indian wild ass. Located in Gujarat." },
+    { id: "br7", name: "Manas Biosphere Reserve", lat: 26.7000, lng: 91.0000, description: "Famous for endangered species like golden langur and pygmy hog. Located in Assam." },
+    { id: "br8", name: "Nokrek Biosphere Reserve", lat: 25.5000, lng: 90.3000, description: "Home of red pandas and wild varieties of citrus fruits. Located in Meghalaya." },
+    { id: "br9", name: "Pachmarhi Biosphere Reserve", lat: 22.4600, lng: 78.4300, description: "Located in the Satpura Range, rich in flora and fauna like flying squirrel. Located in Madhya Pradesh." },
+    { id: "br10", name: "Cold Desert", lat: 32.2000, lng: 78.1000, description: "High-altitude biosphere reserve preserving snow leopards. Spans Spiti/Pin Valley, Himachal Pradesh." }
+  ]
+};
+
+export const GEOGUESSER_LOCATIONS: Record<"world" | "india", LandmarkLocation[]> = {
+  world: [
+    {
+      id: "geo_w1",
+      name: "Gaza Strip",
+      lat: 31.3547,
+      lng: 34.3088,
+      description: "This narrow coastal enclave in the Middle East has been the focus of intense global attention, humanitarian crises, and geopolitical conflict since late 2023.",
+      hint: "Narrow coastal enclave in the Levant region of the Middle East."
+    },
+    {
+      id: "geo_w2",
+      name: "Bab-el-Mandeb Strait",
+      lat: 12.5833,
+      lng: 43.3333,
+      description: "Meaning 'Gate of Tears' in Arabic, this strategic strait connects the Red Sea to the Gulf of Aden and has faced shipping disruptions due to drone and missile attacks on merchant vessels.",
+      hint: "Strategic chokepoint between Yemen, Djibouti, and Eritrea."
+    },
+    {
+      id: "geo_w3",
+      name: "Taiwan Strait",
+      lat: 24.0000,
+      lng: 119.5000,
+      description: "This 180-kilometer-wide strait separates the island of Taiwan from continental Asia and is one of the world's most heavily monitored maritime zones.",
+      hint: "Strait connecting the East China Sea and South China Sea."
+    },
+    {
+      id: "geo_w4",
+      name: "Zaporizhzhia",
+      lat: 47.5119,
+      lng: 34.5864,
+      description: "Europe's largest nuclear power plant, situated on the Dnieper River in southern Ukraine, which has been under occupation and a source of global radiation safety concerns.",
+      hint: "Major power site along the Dnieper River."
+    },
+    {
+      id: "geo_w5",
+      name: "Chabahar Port",
+      lat: 25.2943,
+      lng: 60.6133,
+      description: "Located in southeastern Iran, this port is India's gateway to landlocked Afghanistan and Central Asia, bypassing Pakistan.",
+      hint: "Deep-sea port on the Gulf of Oman."
+    },
+    {
+      id: "geo_w6",
+      name: "Spratly Islands",
+      lat: 8.6300,
+      lng: 111.9200,
+      description: "An archipelago of contested islands and reefs in a strategic body of water where multiple East Asian nations assert competing territorial claims.",
+      hint: "Disputed reef network in the South China Sea."
+    },
+    {
+      id: "geo_w7",
+      name: "Suez Canal",
+      lat: 30.0800,
+      lng: 32.5800,
+      description: "This artificial sea-level waterway in Egypt connects the Mediterranean Sea to the Red Sea, serving as the shortest maritime route between Europe and Asia.",
+      hint: "Sinaitic maritime canal linking Mediterranean and Red seas."
+    },
+    {
+      id: "geo_w8",
+      name: "Malacca Strait",
+      lat: 1.4300,
+      lng: 102.8900,
+      description: "This narrow stretch of water between the Malay Peninsula and Sumatra is the primary shipping channel between the Indian and Pacific Oceans.",
+      hint: "Chokepoint controlling global oil and shipping flow in Southeast Asia."
+    },
+    {
+      id: "geo_w9",
+      name: "Reykjanes Peninsula",
+      lat: 63.8800,
+      lng: -22.3700,
+      description: "This southwestern peninsula in Iceland has experienced frequent volcanic eruptions since 2021, leading to evacuations of Grindavík.",
+      hint: "Volcanic hotspot in southwestern Iceland."
+    },
+    {
+      id: "geo_w10",
+      name: "Panama Canal",
+      lat: 9.1200,
+      lng: -79.7200,
+      description: "This lock-based interoceanic canal experienced severe shipping restrictions in 2023-2024 due to drought-induced low water levels in Gatun Lake.",
+      hint: "Canal connecting Pacific and Atlantic oceans across Central America."
+    }
+  ],
+  india: [
+    {
+      id: "geo_i1",
+      name: "Galwan Valley",
+      lat: 34.7500,
+      lng: 78.1800,
+      description: "Located in eastern Ladakh along the Line of Actual Control (LAC), this river valley was the site of a high-altitude military clash in June 2020.",
+      hint: "Strategic high-altitude valley along the China-India boundary in Ladakh."
+    },
+    {
+      id: "geo_i2",
+      name: "Kuno National Park",
+      lat: 25.6000,
+      lng: 77.3000,
+      description: "Located in Madhya Pradesh, this wildlife sanctuary was selected for the historic Cheetah Reintroduction Project from Namibia and South Africa.",
+      hint: "Central Indian wildlife preserve where wild cheetahs were released."
+    },
+    {
+      id: "geo_i3",
+      name: "Majuli Island",
+      lat: 26.9500,
+      lng: 94.1700,
+      description: "Situated in the Brahmaputra River in Assam, this is the world's largest river island and India's first island district, facing severe soil erosion.",
+      hint: "Vast riverine island known for neo-Vaishnavite culture in Assam."
+    },
+    {
+      id: "geo_i4",
+      name: "Silkyara Tunnel",
+      lat: 30.7300,
+      lng: 78.2700,
+      description: "Located in Uttarkashi district of Uttarakhand, this tunnel was the site of a dramatic 17-day rescue operation in November 2023 for 41 trapped workers.",
+      hint: "Site of the Char Dham highway tunnel collapse rescue."
+    },
+    {
+      id: "geo_i5",
+      name: "Dholavira",
+      lat: 23.8786,
+      lng: 70.2181,
+      description: "An Harappan city located on Khadir Bet in the Rann of Kutch, Gujarat, designated as a UNESCO World Heritage Site in 2021 for its advanced water conservation systems.",
+      hint: "Ancient Indus Valley Civilization ruins in the salt flats of Gujarat."
+    },
+    {
+      id: "geo_i6",
+      name: "Great Nicobar Island",
+      lat: 7.0000,
+      lng: 93.8000,
+      description: "The southernmost island of India, containing Indira Point, which is the center of a controversial mega-infrastructure transshipment port development project.",
+      hint: "Home to the Galathea Bay shipping port project and Indira Point."
+    },
+    {
+      id: "geo_i7",
+      name: "Lipulekh Pass",
+      lat: 30.2200,
+      lng: 81.0300,
+      description: "A Himalayan pass at the border of Uttarakhand and Tibet/China, which is a key route for the Kailash Mansarovar Yatra and a point of boundary dispute between India and Nepal.",
+      hint: "Himalayan pass connecting Uttarakhand to Tibet's Purang County."
+    },
+    {
+      id: "geo_i8",
+      name: "Kattupalli Port",
+      lat: 13.3100,
+      lng: 80.3300,
+      description: "A private port located north of Chennai in Tamil Nadu, facing intense environmental opposition due to its proximity to Pulicat Lake and estuary ecosystems.",
+      hint: "Coastal seaport project facing protests near Tamil Nadu-Andhra border."
+    },
+    {
+      id: "geo_i9",
+      name: "Pangong Tso",
+      lat: 33.7500,
+      lng: 78.6700,
+      description: "An endorheic lake extending from Ladakh, India to Tibet, China. Its northern bank features 'finger' ridges that have been contested zones.",
+      hint: "Saltwater lake situated at an altitude of 4,225m in Ladakh."
+    },
+    {
+      id: "geo_i10",
+      name: "Kala Amb",
+      lat: 30.4300,
+      lng: 77.2000,
+      description: "An industrial town in Himachal Pradesh near the Haryana border, often in the news due to pollution in the Markanda River and environmental compliance issues.",
+      hint: "Industrial area under NGT scrutiny near Sirmaur district boundary."
+    }
+  ]
+};
+

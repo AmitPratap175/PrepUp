@@ -80,6 +80,7 @@ const navigation = [
       { title: "Monthly MCQ Questions", href: "/upsc/monthly-mcq-questions" },
       { title: "PIB Releases", href: "/upsc/pib" },
       { title: "Mains Answer", href: "/mains-answer" },
+      { title: "Mains Answer Evaluation", href: "/upsc/mains-evaluation" },
       { title: "151 Essays", href: "/upsc/essays" },
       { title: "Map Master", href: "/upsc/map-master" },
       { title: "UPSC 2027 Mastery", href: "/upsc/mastery-2027" },

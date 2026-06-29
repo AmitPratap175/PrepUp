@@ -3,7 +3,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { useLocation } from 'wouter';
 import { UPSCQuizInterface } from "@/components/UPSCQuizInterface";
 import { LocalResultView } from "@/components/local-result-view";
-import { Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw, Trophy, Eye, Download, ChevronDown, ChevronRight } from 'lucide-react';
+import { Search, Loader2, AlertCircle, BookOpen, Clock, Brain, CheckCircle2, List, RotateCcw, Trophy, Eye, Download, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import { AppHeader } from "@/components/app-header";
 import { AppFooter } from "@/components/app-footer";
 import type { PracticeTest, UserAnswer } from "@shared/schema";
@@ -85,16 +86,57 @@ const NcertTopicwiseQuizPage: React.FC = () => {
         fetchCompletionStatus();
     }, []);
 
+    const [searchQuery, setSearchQuery] = useState('');
+    const [activeTab, setActiveTab] = useState<'all' | 'ncert' | 'arihant' | 'manohar' | 'odisha'>('all');
+
+    // Filtered list based on active tab and search query
+    const filteredTests = React.useMemo(() => {
+        let list = availableTests;
+        
+        // Filter by Tab source
+        if (activeTab === 'ncert') {
+            list = list.filter(t => {
+                const s = (t.subject || "").toLowerCase();
+                return s.includes("geography") || s.includes("history") || s.includes("polity") || s.includes("economics") || s.includes("general") || s.includes("combined") || s.includes("constitutional") || s.includes("spectrum");
+            });
+        } else if (activeTab === 'arihant') {
+            list = list.filter(t => (t.subject || "").toLowerCase().includes("arihant"));
+        } else if (activeTab === 'manohar') {
+            list = list.filter(t => (t.subject || "").toLowerCase().includes("manohar pandey"));
+        } else if (activeTab === 'odisha') {
+            list = list.filter(t => (t.subject || "").toLowerCase().includes("odisha"));
+        }
+
+        // Filter by Search Query
+        if (!searchQuery.trim()) return list;
+        const query = searchQuery.toLowerCase();
+        return list.filter(t => 
+            (t.title && t.title.toLowerCase().includes(query)) ||
+            (t.subject && t.subject.toLowerCase().includes(query))
+        );
+    }, [availableTests, activeTab, searchQuery]);
+
     // Derived state for grouping
     const groupedQuizzes = React.useMemo(() => {
         const groups: Record<string, PracticeTest[]> = {};
-        availableTests.forEach(test => {
+        filteredTests.forEach(test => {
             const subj = test.subject || "General";
             if (!groups[subj]) groups[subj] = [];
             groups[subj].push(test);
         });
         return groups;
-    }, [availableTests]);
+    }, [filteredTests]);
+
+    // Expand matching categories automatically when searching
+    useEffect(() => {
+        if (searchQuery.trim()) {
+            const newExpanded: Record<string, boolean> = {};
+            Object.keys(groupedQuizzes).forEach(subject => {
+                newExpanded[subject] = true;
+            });
+            setExpandedSections(newExpanded);
+        }
+    }, [searchQuery, groupedQuizzes]);
 
     // ... existing functions ...
 
@@ -451,6 +493,38 @@ const NcertTopicwiseQuizPage: React.FC = () => {
                         <p className="text-xl text-muted-foreground">
                             Master your NCERT subjects with our topicwise question banks.
                         </p>
+                    </div>
+
+                    <div className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center bg-card p-4 rounded-xl border shadow-sm">
+                        <div className="flex flex-wrap gap-2 w-full md:w-auto">
+                            {[
+                                { id: 'all', label: 'All Sources' },
+                                { id: 'ncert', label: 'NCERT & Spectrum' },
+                                { id: 'arihant', label: 'Arihant MCQs' },
+                                { id: 'manohar', label: 'Manohar Pandey 14K+' },
+                                { id: 'odisha', label: 'Odisha State' }
+                            ].map(tab => (
+                                <Button
+                                    key={tab.id}
+                                    variant={activeTab === tab.id ? "default" : "outline"}
+                                    size="sm"
+                                    onClick={() => setActiveTab(tab.id as any)}
+                                    className="rounded-full font-medium"
+                                >
+                                    {tab.label}
+                                </Button>
+                            ))}
+                        </div>
+                        <div className="relative w-full md:w-80">
+                            <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                            <Input
+                                type="text"
+                                placeholder="Search chapters or subjects..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="pl-9 h-9 text-sm rounded-lg"
+                            />
+                        </div>
                     </div>
 
                     <div className="flex items-center space-x-2 bg-muted/30 p-3 rounded-lg border w-fit">

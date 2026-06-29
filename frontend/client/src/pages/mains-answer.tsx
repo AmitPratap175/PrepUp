@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, BookOpen, PenTool, CheckCircle, AlertCircle, RefreshCw, Save } from "lucide-react";
+import { Loader2, BookOpen, PenTool, CheckCircle, AlertCircle, RefreshCw, Save, Camera, UploadCloud, X, Image, Sparkles, Info } from "lucide-react";
 import {
     useEssayTopics,
     useGenerateEssayTopics,
@@ -76,6 +76,11 @@ export default function MainsAnswerPage() {
     const [currentEssay, setCurrentEssay] = useState<Essay | null>(null);
     const [editorContent, setEditorContent] = useState("");
     const [viewSolution, setViewSolution] = useState<XATEssayQuestion | null>(null);
+    
+    // Handwriting Scan States
+    const [writeMode, setWriteMode] = useState<"type" | "scan">("type");
+    const [selectedImages, setSelectedImages] = useState<File[]>([]);
+    const [transcribing, setTranscribing] = useState(false);
 
     // Queries & Mutations
     const { data: topics, isLoading: isLoadingTopics } = useEssayTopics(selectedDomain);
@@ -253,6 +258,60 @@ export default function MainsAnswerPage() {
                 toast({ title: "Error", description: "Failed to submit essay.", variant: "destructive" });
             }
         });
+    };
+
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files) {
+            const filesArray = Array.from(e.target.files);
+            const images = filesArray.filter(file => file.type.startsWith('image/'));
+            if (images.length === 0) {
+                toast({ title: "Invalid File Type", description: "Please upload image files only (PNG/JPG/WEBP).", variant: "destructive" });
+                return;
+            }
+            setSelectedImages(prev => [...prev, ...images]);
+        }
+    };
+
+    const handleRemoveImage = (index: number) => {
+        setSelectedImages(prev => prev.filter((_, i) => i !== index));
+    };
+
+    const handleTranscribeHandwriting = async () => {
+        if (selectedImages.length === 0) return;
+        setTranscribing(true);
+
+        const formData = new FormData();
+        selectedImages.forEach(img => {
+            formData.append('images', img);
+        });
+
+        try {
+            const response = await fetch('/api/essays/transcribe-handwriting/', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Token ${localStorage.getItem('token')}`
+                },
+                body: formData
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.error || "Failed to transcribe handwriting");
+            }
+
+            const data = await response.json();
+            const formattedText = data.transcription.replace(/\n\n/g, '<br/><br/>').replace(/\n/g, '<br/>');
+            setEditorContent(prev => prev ? prev + "<br/><br/>" + formattedText : formattedText);
+            
+            setWriteMode("type");
+            setSelectedImages([]);
+            toast({ title: "Transcription Successful!", description: "Handwriting has been transcribed and synced to your editor.", variant: "default" });
+        } catch (e: any) {
+            console.error(e);
+            toast({ title: "Transcription Failed", description: e.message || "An error occurred.", variant: "destructive" });
+        } finally {
+            setTranscribing(false);
+        }
     };
 
     return (
@@ -668,29 +727,141 @@ export default function MainsAnswerPage() {
                                     </div>
                                 </div>
                             </CardHeader>
-                            <CardContent>
-                                <div className="prose-editor">
-                                    <FroalaEditorComponent
-                                        tag="textarea"
-                                        model={editorContent}
-                                        onModelChange={setEditorContent}
-                                        config={{
-                                            placeholderText: "Start writing your essay here...",
-                                            charCounterCount: true,
-                                            toolbarButtons: [
-                                                'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|',
-                                                'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|',
-                                                'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-',
-                                                'insertLink', 'insertTable', '|',
-                                                'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|',
-                                                'print', 'help', 'html', '|',
-                                                'undo', 'redo'
-                                            ],
-                                            heightMin: 400,
-                                            heightMax: 600,
-                                        }}
-                                    />
+                            <CardContent className="space-y-4">
+                                <div className="flex border-b border-border pb-3 justify-between items-center">
+                                    <div className="flex gap-2">
+                                        <Button
+                                            variant={writeMode === "type" ? "default" : "outline"}
+                                            size="sm"
+                                            onClick={() => setWriteMode("type")}
+                                            className="h-9 px-4 font-semibold text-xs gap-1.5"
+                                        >
+                                            <PenTool className="h-3.5 w-3.5" /> Type Answer
+                                        </Button>
+                                        <Button
+                                            variant={writeMode === "scan" ? "default" : "outline"}
+                                            size="sm"
+                                            onClick={() => setWriteMode("scan")}
+                                            className="h-9 px-4 font-semibold text-xs gap-1.5 bg-gradient-to-r from-primary/10 to-indigo-500/10 hover:from-primary/20 hover:to-indigo-500/20 text-foreground border border-primary/20"
+                                        >
+                                            <Camera className="h-3.5 w-3.5 text-primary animate-pulse" /> Scan / Upload Handwriting
+                                        </Button>
+                                    </div>
+                                    <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold">
+                                        Writing Method
+                                    </span>
                                 </div>
+
+                                {writeMode === "type" ? (
+                                    <div className="prose-editor">
+                                        <FroalaEditorComponent
+                                            tag="textarea"
+                                            model={editorContent}
+                                            onModelChange={setEditorContent}
+                                            config={{
+                                                placeholderText: "Start writing your essay here...",
+                                                charCounterCount: true,
+                                                toolbarButtons: [
+                                                    'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|',
+                                                    'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|',
+                                                    'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-',
+                                                    'insertLink', 'insertTable', '|',
+                                                    'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|',
+                                                    'print', 'help', 'html', '|',
+                                                    'undo', 'redo'
+                                                ],
+                                                heightMin: 400,
+                                                heightMax: 600,
+                                            }}
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="space-y-6 py-2">
+                                        <div className="border-2 border-dashed border-border/80 hover:border-primary/50 transition-all rounded-xl p-8 text-center bg-muted/[0.02] relative">
+                                            <input
+                                                type="file"
+                                                accept="image/*"
+                                                multiple
+                                                onChange={handleImageChange}
+                                                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                                disabled={transcribing}
+                                            />
+                                            <div className="space-y-3 max-w-md mx-auto">
+                                                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto text-primary">
+                                                    <UploadCloud className="h-6 w-6" />
+                                                </div>
+                                                <h3 className="font-bold text-sm text-foreground">Upload Handwriting Images</h3>
+                                                <p className="text-xs text-muted-foreground leading-relaxed">
+                                                    Drag and drop or click to upload photos of your written answer sheets. Upload multiple pages in chronological order.
+                                                </p>
+                                                <Badge variant="outline" className="text-[10px] text-primary bg-primary/5 border-primary/20">
+                                                    Supports PNG, JPG, WEBP
+                                                </Badge>
+                                            </div>
+                                        </div>
+
+                                        {selectedImages.length > 0 && (
+                                            <div className="space-y-3">
+                                                <h4 className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+                                                    <Image className="h-4 w-4 text-primary" />
+                                                    Selected Pages ({selectedImages.length})
+                                                </h4>
+                                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                                    {selectedImages.map((file, idx) => (
+                                                        <div key={idx} className="relative group border rounded-lg overflow-hidden bg-background p-2 aspect-[3/4] flex flex-col justify-between shadow-sm">
+                                                            <div className="absolute top-1 right-1 z-10">
+                                                                <Button
+                                                                    variant="destructive"
+                                                                    size="icon"
+                                                                    className="h-5 w-5 rounded-full"
+                                                                    onClick={() => handleRemoveImage(idx)}
+                                                                    disabled={transcribing}
+                                                                >
+                                                                    <X className="h-3 w-3" />
+                                                                </Button>
+                                                            </div>
+                                                            <div className="flex-1 flex items-center justify-center p-2">
+                                                                <img
+                                                                    src={URL.createObjectURL(file)}
+                                                                    alt={`Page ${idx + 1}`}
+                                                                    className="max-h-full object-contain rounded"
+                                                                />
+                                                            </div>
+                                                            <div className="text-[10px] text-center font-medium bg-muted py-1 border-t truncate text-muted-foreground">
+                                                                Page {idx + 1} ({Math.round(file.size / 1024)} KB)
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+
+                                                <Button
+                                                    onClick={handleTranscribeHandwriting}
+                                                    disabled={transcribing}
+                                                    className="w-full h-11 text-xs font-bold gap-2 bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/95 hover:to-indigo-600/95 shadow-sm text-primary-foreground mt-4"
+                                                >
+                                                    {transcribing ? (
+                                                        <><Loader2 className="h-4 w-4 animate-spin mr-1" /> OCR Transcription in Progress...</>
+                                                    ) : (
+                                                        <><Sparkles className="h-4 w-4 mr-1 text-yellow-300 fill-yellow-300" /> Transcribe Handwriting to Editor</>
+                                                    )}
+                                                </Button>
+                                            </div>
+                                        )}
+
+                                        <div className="border border-border/40 rounded-xl p-4 bg-muted/10 space-y-2.5 text-xs text-muted-foreground leading-normal">
+                                            <h4 className="font-semibold text-foreground flex items-center gap-1">
+                                                <Info className="h-4 w-4 text-primary shrink-0" />
+                                                Tips for Best Transcription Quality
+                                            </h4>
+                                            <ul className="list-disc pl-4 space-y-1">
+                                                <li><strong>Flat sheet</strong>: Ensure your pages are laid flat with no curls or shadows.</li>
+                                                <li><strong>Good Lighting</strong>: Take the photo under clear, uniform lighting. Avoid camera shadows.</li>
+                                                <li><strong>Order Matters</strong>: Upload your sheets in chronological order (Page 1 first, then Page 2).</li>
+                                                <li><strong>Clean handwriting</strong>: Clean legibility ensures 99%+ accuracy in transcription.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                )}
                             </CardContent>
                         </Card>
 

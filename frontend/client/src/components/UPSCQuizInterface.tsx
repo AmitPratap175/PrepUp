@@ -78,7 +78,23 @@ export function UPSCQuizInterface({
         fetchBookmarks();
     }, [test.subject]);
 
-    const [chatHistories, setChatHistories] = useState<{ [qid: string]: Message[] }>({});
+    const [chatHistories, setChatHistories] = useState<{ [qid: string]: Message[] }>(() => {
+        try {
+            const saved = localStorage.getItem(`chat_histories_${test.id}`);
+            return saved ? JSON.parse(saved) : {};
+        } catch (e) {
+            console.error("Failed to load chat histories", e);
+            return {};
+        }
+    });
+
+    useEffect(() => {
+        try {
+            localStorage.setItem(`chat_histories_${test.id}`, JSON.stringify(chatHistories));
+        } catch (e) {
+            console.error("Failed to save chat histories", e);
+        }
+    }, [chatHistories, test.id]);
 
     const questions = test.questions as (Question & { image_url?: string })[] | undefined;
 
